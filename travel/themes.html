@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korea Themed Travel | 한국어 학교</title>
+  <meta name="description" content="Themed travel guides for South Korea — food tours, festivals, sightseeing, coastal walks, river bike routes, and mountain hike trails." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">한</div>
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+        <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+        <li><a href="index.html" class="active"><span class="nav-icon">🗺️</span> Travel</a></li>
+        <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+        <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search…" autocomplete="off" aria-label="Search site content" />
+        </div>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme">🌙</button>
+        <button class="icon-btn lang-toggle-btn" id="lang-toggle" data-ja-url="ja/themes.html" aria-label="Switch language">🇺🇸 EN</button>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Open mobile menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <aside class="sidebar">
+    <div class="travel-sidebar-header">
+      <div class="travel-sidebar-title">Travel Guide · 여행 안내</div>
+      <div class="travel-sidebar-subtitle">South Korea</div>
+    </div>
+    <a class="sidebar-accordion-btn" href="itineraries.html" data-accordion="travel-days">
+      <span class="link-icon">📅</span> By Days · 일수별 <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-days">
+      <a class="sidebar-link" href="itineraries.html#1day">1 Day Trip · 당일치기</a>
+      <a class="sidebar-link" href="itineraries.html#2days">2 Days · 1박 2일</a>
+      <a class="sidebar-link" href="itineraries.html#3days">3 Days · 2박 3일</a>
+      <a class="sidebar-link" href="itineraries.html#5days">5 Days · 4박 5일</a>
+      <a class="sidebar-link" href="itineraries.html#week">1 Week · 일주일</a>
+      <a class="sidebar-link" href="itineraries.html#10days">10 Days</a>
+      <a class="sidebar-link" href="itineraries.html#14days">2 Weeks · 2주</a>
+      <a class="sidebar-link" href="itineraries.html#1month">1 Month+ · 한달</a>
+    </div>
+    <a class="sidebar-accordion-btn" href="cities.html" data-accordion="travel-city">
+      <span class="link-icon">🏙️</span> By City · 도시별 <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-city">
+      <a class="sidebar-link" href="cities.html#seoul">Seoul · 서울</a>
+      <a class="sidebar-link" href="cities.html#incheon">Incheon · 인천</a>
+      <a class="sidebar-link" href="cities.html#busan">Busan · 부산</a>
+      <a class="sidebar-link" href="cities.html#suwon">Suwon · 수원</a>
+      <a class="sidebar-link" href="cities.html#jeju">Jeju · 제주도</a>
+      <a class="sidebar-link" href="cities.html#gyeongju">Gyeongju · 경주</a>
+      <a class="sidebar-link" href="cities.html#other">Other Cities</a>
+    </div>
+    <a class="sidebar-accordion-btn open active" href="themes.html" data-accordion="travel-theme">
+      <span class="link-icon">🎯</span> By Theme · 테마별 <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="accordion-travel-theme">
+      <a class="sidebar-link active" href="#food">Food Tour · 음식 여행</a>
+      <a class="sidebar-link" href="#events">Events &amp; Festivals · 이벤트</a>
+      <a class="sidebar-link" href="#sightseeing">Sightseeing · 관광</a>
+      <a class="sidebar-link" href="#crosscountry">Cross-Country · 장거리</a>
+    </div>
+    <a class="travel-sidebar-planner" href="planner.html">📋 Trip Planner · 여행 계획표</a>
+  </aside>
+
+
+  <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px);">
+    <div class="lesson-wrap">
+
+      <div class="animate-on-scroll" style="margin-bottom:40px;">
+        <div class="section-eyebrow">BY THEME · 테마별</div>
+        <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:12px;">
+          Themed <span class="grad-text">Travel</span> in Korea
+        </h1>
+        <p class="section-desc" style="margin:0;max-width:680px;">
+          Travel by passion — whether you're a food lover, festival-hopper, history buff, or outdoor adventurer. Korea has a dedicated route for every type of traveller.
+        </p>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           FOOD TOUR
+      ═══════════════════════════════════ -->
+      <div id="food" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">1</span> Food Tour · 음식 여행</h2>
+
+        <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:24px;">
+          Korean cuisine is one of the world's greatest — and the best way to experience it is to eat like a local. From dawn market breakfasts to midnight 포장마차 (street stalls), every meal is an event.
+        </p>
+
+        <div class="city-section-label">🍳 Meals & Street Food Vocabulary · 식사 어휘</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>English</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">맛집</td><td class="rom-cell">Matjip</td><td class="eng-cell">Famous / delicious restaurant (literally "taste place")</td></tr>
+            <tr><td class="kor-cell">포장마차</td><td class="rom-cell">Pojangmacha</td><td class="eng-cell">Covered street food stall — tent-style, open late</td></tr>
+            <tr><td class="kor-cell">야시장</td><td class="rom-cell">Yasijang</td><td class="eng-cell">Night market</td></tr>
+            <tr><td class="kor-cell">시장</td><td class="rom-cell">Sijang</td><td class="eng-cell">Traditional market</td></tr>
+            <tr><td class="kor-cell">한식</td><td class="rom-cell">Hansik</td><td class="eng-cell">Korean cuisine</td></tr>
+            <tr><td class="kor-cell">분식</td><td class="rom-cell">Bunsik</td><td class="eng-cell">Snack food — tteokbokki, kimbap, ramen</td></tr>
+            <tr><td class="kor-cell">반찬</td><td class="rom-cell">Banchan</td><td class="eng-cell">Side dishes served free with every Korean meal</td></tr>
+            <tr><td class="kor-cell">리필</td><td class="rom-cell">Ripil</td><td class="eng-cell">Refill (banchan is always free refill)</td></tr>
+          </tbody>
+        </table>
+
+        <div class="city-section-label">🗺️ Best Food Cities · 음식 도시</div>
+        <div class="city-attractions-grid">
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏙️</span><div class="city-attraction-name">서울</div><div class="city-attraction-eng">Everything + 먹방 culture</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🍚</span><div class="city-attraction-name">전주</div><div class="city-attraction-eng">Bibimbap origin city</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🐟</span><div class="city-attraction-name">부산</div><div class="city-attraction-eng">Seafood capital</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🦀</span><div class="city-attraction-name">인천</div><div class="city-attraction-eng">Chinatown + port seafood</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌋</span><div class="city-attraction-name">제주</div><div class="city-attraction-eng">Black pig + sea urchin</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🥩</span><div class="city-attraction-name">수원</div><div class="city-attraction-eng">King Galbi capital</div></div>
+        </div>
+
+        <div class="city-section-label">🌏 Seasonal Foods · 계절 음식</div>
+        <div class="month-calendar">
+          <div class="month-cell"><div class="month-name">Spring · 봄</div><div class="month-event"><span class="month-event-icon">🌸</span>쑥 (mugwort) 떡</div><div class="month-event"><span class="month-event-icon">🐙</span>주꾸미 (spicy octopus)</div><div class="month-event"><span class="month-event-icon">🌿</span>봄나물 (spring greens)</div></div>
+          <div class="month-cell"><div class="month-name">Summer · 여름</div><div class="month-event"><span class="month-event-icon">🍧</span>팥빙수 (shaved ice)</div><div class="month-event"><span class="month-event-icon">🐔</span>삼계탕 (ginseng chicken)</div><div class="month-event"><span class="month-event-icon">🍺</span>치맥 at Han River</div></div>
+          <div class="month-cell"><div class="month-name">Autumn · 가을</div><div class="month-event"><span class="month-event-icon">🦀</span>꽃게 (blue crab)</div><div class="month-event"><span class="month-event-icon">🌰</span>군밤 (roasted chestnuts)</div><div class="month-event"><span class="month-event-icon">🍠</span>군고구마 (sweet potato)</div></div>
+          <div class="month-cell"><div class="month-name">Winter · 겨울</div><div class="month-event"><span class="month-event-icon">🥟</span>만두 (dumplings)</div><div class="month-event"><span class="month-event-icon">🍲</span>찜닭 (braised chicken)</div><div class="month-event"><span class="month-event-icon">🥘</span>부대찌개 (army stew)</div></div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">Food Tour Korean Phrases 음식 투어 표현</div>
+            <div class="tip-text">
+              <strong>이 집 유명해요?</strong> (I jip yumyeonghaeyo?) — Is this place famous? ·
+              <strong>추천 메뉴가 뭐예요?</strong> (Chucheon menyuga mwoyeyo?) — What's the recommended dish? ·
+              <strong>덜 맵게 해주세요</strong> (Deol maepge haejuseyo) — Please make it less spicy ·
+              <strong>맛있어요!</strong> (Massisseoyo!) — It's delicious!
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           EVENTS & FESTIVALS
+      ═══════════════════════════════════ -->
+      <div id="events" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">2</span> Events &amp; Festivals · 이벤트</h2>
+
+        <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:24px;">
+          Korea's festival calendar is packed year-round. Some of the world's most extraordinary cultural events happen here — from mud wrestling to lantern-lit rivers, cherry blossom seasons, and ancestral ceremonies unchanged for 500 years.
+        </p>
+
+        <div class="city-section-label">📅 Annual Festival Calendar · 연간 축제 달력</div>
+        <div class="month-calendar">
+          <div class="month-cell"><div class="month-name">January</div><div class="month-event"><span class="month-event-icon">🧊</span>화천 산천어 축제 (Ice fishing festival, Hwacheon)</div></div>
+          <div class="month-cell"><div class="month-name">February</div><div class="month-event"><span class="month-event-icon">🏮</span>정월대보름 (First full moon festival)</div><div class="month-event"><span class="month-event-icon">🎭</span>대관령 눈꽃축제 (Snow festival, Daegwallyeong)</div></div>
+          <div class="month-cell"><div class="month-name">March–April</div><div class="month-event"><span class="month-event-icon">🌸</span>벚꽃 축제 (Cherry blossom festivals — Jinhae, Yeouido)</div><div class="month-event"><span class="month-event-icon">🌷</span>제주 유채꽃 (Jeju canola flower fields)</div></div>
+          <div class="month-cell"><div class="month-name">May</div><div class="month-event"><span class="month-event-icon">🏮</span>연등회 (Lotus Lantern Festival, Seoul — UNESCO ICH)</div><div class="month-event"><span class="month-event-icon">⛵</span>강진 청자 축제 (Celadon pottery festival)</div></div>
+          <div class="month-cell"><div class="month-name">June–July</div><div class="month-event"><span class="month-event-icon">💧</span>보령 머드 축제 (Boryeong Mud Festival — Korea's biggest foreigner festival)</div><div class="month-event"><span class="month-event-icon">🎵</span>펜타포트 록 페스티벌 (Pentaport Rock, Incheon)</div></div>
+          <div class="month-cell"><div class="month-name">August</div><div class="month-event"><span class="month-event-icon">🏖️</span>해운대 모래축제 (Haeundae Sand Festival, Busan)</div><div class="month-event"><span class="month-event-icon">🎶</span>지산 록 페스티벌 (Jisan Rock Festival)</div></div>
+          <div class="month-cell"><div class="month-name">September</div><div class="month-event"><span class="month-event-icon">🌕</span>추석 (Chuseok — Korean Thanksgiving, national holiday)</div><div class="month-event"><span class="month-event-icon">🎬</span>부산국제영화제 (BIFF — Busan Int'l Film Festival)</div></div>
+          <div class="month-cell"><div class="month-name">October</div><div class="month-event"><span class="month-event-icon">🍂</span>단풍 시즌 (Autumn foliage — Seoraksan, Naejangsan)</div><div class="month-event"><span class="month-event-icon">🏛️</span>경주 문화유산 축제 (Gyeongju Heritage Festival)</div></div>
+          <div class="month-cell"><div class="month-name">November</div><div class="month-event"><span class="month-event-icon">🏮</span>청도 소싸움 (Traditional bull-fighting, Cheongdo)</div><div class="month-event"><span class="month-event-icon">🌊</span>여수 낭만포차 야시장 (Yeosu Night Market)</div></div>
+          <div class="month-cell"><div class="month-name">December</div><div class="month-event"><span class="month-event-icon">🎄</span>서울 크리스마스 (Seoul Christmas markets)</div><div class="month-event"><span class="month-event-icon">🎆</span>해넘이 행사 (New Year's Eve celebrations)</div></div>
+        </div>
+
+        <div class="city-section-label">🌟 Major Festivals in Detail · 주요 축제</div>
+
+        <div class="festival-grid">
+          <div class="festival-card">
+            <div class="festival-month">April · 4월</div>
+            <div class="festival-name">🌸 진해 군항제</div>
+            <div class="festival-name-eng">Jinhae Cherry Blossom Festival</div>
+            <div class="festival-desc">Korea's largest cherry blossom festival — 360,000 trees bloom across the naval city of Jinhae. One of Asia's most spectacular spring events. Free entry, train access from Masan.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">May · 5월</div>
+            <div class="festival-name">🏮 연등회</div>
+            <div class="festival-name-eng">Lotus Lantern Festival (UNESCO)</div>
+            <div class="festival-desc">Thousands of glowing lanterns parade through Seoul's Jongno for Buddha's Birthday. UNESCO Intangible Cultural Heritage since 2020. The lantern parade and folk performances are free.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">July · 7월</div>
+            <div class="festival-name">💧 보령 머드 축제</div>
+            <div class="festival-name-eng">Boryeong Mud Festival</div>
+            <div class="festival-desc">Korea's most famous festival for international visitors — wallow in the famous Boryeong grey mud at Daecheon Beach. K-pop concerts, mud wrestling, and waterslides. Runs 10 days in mid-July.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">September · 9월</div>
+            <div class="festival-name">🌕 추석</div>
+            <div class="festival-name-eng">Chuseok — Korean Thanksgiving</div>
+            <div class="festival-desc">Korea's most important traditional holiday — a 3-day harvest celebration with ancestral rites, 송편 (rice cake) making, and traditional games. Many restaurants close; families gather. Gyeongbokgung is free during Chuseok.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">October · 10월</div>
+            <div class="festival-name">🎬 부산국제영화제</div>
+            <div class="festival-name-eng">Busan International Film Festival</div>
+            <div class="festival-desc">Asia's premier film festival — held for 10 days at Haeundae and BIFF Square. Korean films, world premieres, and K-star sightings. Tickets available online from late September.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">November · 11월</div>
+            <div class="festival-name">🍂 단풍 시즌</div>
+            <div class="festival-name-eng">Autumn Foliage Season</div>
+            <div class="festival-desc">Korea's mountains explode in crimson and gold. Best spots: Seoraksan (설악산, late Oct), Naejangsan (내장산, early Nov), Gyeryongsan (계룡산, mid Nov). Book accommodation months ahead.</div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">Festival Korean Phrases 축제 표현</div>
+            <div class="tip-text">
+              <strong>축제가 언제예요?</strong> (Chukjega eonjeyeyo?) — When is the festival? ·
+              <strong>입장료가 있어요?</strong> (Ipjangnyoga isseoyo?) — Is there an entry fee? ·
+              <strong>사진 같이 찍어요!</strong> (Sajin gachi jjikeoyo!) — Let's take a photo together! ·
+              <strong>정말 신나요!</strong> (Jeongmal sinnayo!) — This is really exciting!
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           SIGHTSEEING
+      ═══════════════════════════════════ -->
+      <div id="sightseeing" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">3</span> Sightseeing · 관광</h2>
+
+        <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:24px;">
+          Korea's sightseeing ranges from 1,300-year-old Buddhist temples to space-age architecture. The country has 15 UNESCO World Heritage Sites and hundreds of national treasures. Here's the essential guide.
+        </p>
+
+        <div class="city-section-label">🏛️ UNESCO World Heritage Sites · 유네스코 세계유산</div>
+        <div class="festival-grid">
+          <div class="festival-card">
+            <div class="festival-month">경주 · UNESCO</div>
+            <div class="festival-name">🛕 불국사 & 석굴암</div>
+            <div class="festival-name-eng">Bulguksa Temple + Seokguram Grotto</div>
+            <div class="festival-desc">Two masterpieces of 8th-century Buddhist architecture. The stone pagodas of Bulguksa and the serene granite Buddha of Seokguram are considered Korea's finest artistic achievements.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">수원 · UNESCO</div>
+            <div class="festival-name">🏰 화성</div>
+            <div class="festival-name-eng">Hwaseong Fortress</div>
+            <div class="festival-desc">A 5.7 km fortress wall incorporating scientific military innovations of the 18th century. Built in just 28 months (1794–1796) by King Jeongjo. Walkable in 2 hours with spectacular views.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">창덕궁 · UNESCO</div>
+            <div class="festival-name">🌿 창덕궁 후원</div>
+            <div class="festival-name-eng">Changdeokgung Secret Garden</div>
+            <div class="festival-desc">A Joseon palace built in 1405 with a stunning 300-year-old landscaped garden. The Secret Garden (후원) tour is guided and limited — book ahead. Best in autumn when the foliage is golden.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">제주 · UNESCO</div>
+            <div class="festival-name">🌋 제주 화산섬과 용암동굴</div>
+            <div class="festival-name-eng">Jeju Volcanic Island & Lava Tubes</div>
+            <div class="festival-desc">Hallasan volcano, Seongsan Ilchulbong crater, and Manjanggul lava tube — all in one. Korea's only natural UNESCO World Heritage Site. The 9.6 km lava tube is one of the world's longest.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">서울 · UNESCO</div>
+            <div class="festival-name">🏯 조선 왕릉</div>
+            <div class="festival-name-eng">Royal Tombs of Joseon Dynasty</div>
+            <div class="festival-desc">40 royal tombs spread across the Seoul metropolitan area — serene forested grounds where Korea's kings rest. Seleon (선릉), Heonneung (헌릉), and Donggu Neung (동구릉) are the most accessible.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">안동 · UNESCO</div>
+            <div class="festival-name">🏘️ 하회마을</div>
+            <div class="festival-name-eng">Hahoe Folk Village</div>
+            <div class="festival-desc">A living Joseon-era village where descendants of the Ryu clan still reside in 600-year-old thatched and tile-roofed homes. Traditional mask dances (하회탈) performed on weekends.</div>
+          </div>
+        </div>
+
+        <div class="city-section-label">🏗️ Must-See Modern Architecture · 현대 건축</div>
+        <div class="city-attractions-grid">
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏢</span><div class="city-attraction-name">DDP 동대문</div><div class="city-attraction-eng">Dongdaemun Design Plaza (Zaha Hadid)</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌿</span><div class="city-attraction-name">아모레퍼시픽</div><div class="city-attraction-eng">Amorepacific HQ (David Chipperfield)</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌉</span><div class="city-attraction-name">광안대교</div><div class="city-attraction-eng">Gwangan Bridge, Busan</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏙️</span><div class="city-attraction-name">롯데월드타워</div><div class="city-attraction-eng">Lotte World Tower (555m)</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌊</span><div class="city-attraction-name">반포 달빛무지개분수</div><div class="city-attraction-eng">Banpo Bridge Rainbow Fountain</div></div>
+        </div>
+
+        <div class="city-section-label">💬 Sightseeing Phrases · 관광 표현</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>English</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">이곳이 어디예요?</td><td class="rom-cell">Igosi eodiyeyo?</td><td class="eng-cell">What place is this?</td></tr>
+            <tr><td class="kor-cell">가이드 투어 있어요?</td><td class="rom-cell">Gaideu tuyeo isseoyo?</td><td class="eng-cell">Is there a guided tour?</td></tr>
+            <tr><td class="kor-cell">몇 시에 문 닫아요?</td><td class="rom-cell">Myeot-sie mun dadayo?</td><td class="eng-cell">What time does it close?</td></tr>
+            <tr><td class="kor-cell">화장실이 어디예요?</td><td class="rom-cell">Hwajangsili eodiyeyo?</td><td class="eng-cell">Where is the restroom?</td></tr>
+            <tr><td class="kor-cell">오디오 가이드 빌릴 수 있어요?</td><td class="rom-cell">Odio gaideu billil su isseoyo?</td><td class="eng-cell">Can I borrow an audio guide?</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           CROSS-COUNTRY
+      ═══════════════════════════════════ -->
+      <div id="crosscountry" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">4</span> Cross-Country · 장거리</h2>
+
+        <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:24px;">
+          Korea's terrain is 70% mountains and laced with rivers and coastline — making it a paradise for walkers, cyclists, and hikers. The government has invested billions in long-distance trails and dedicated bicycle paths.
+        </p>
+
+        <!-- WALKING -->
+        <div class="city-section-label">🚶 Walking Routes · 도보 여행</div>
+
+        <div class="route-card">
+          <div class="route-header">
+            <span class="route-icon">🧱</span>
+            <div>
+              <div class="route-name">한양도성 순성길</div>
+              <div class="route-name-eng">Hanyang City Wall Trail — Seoul</div>
+              <div class="route-badges">
+                <span class="route-badge">18.6 km</span>
+                <span class="route-badge">Full day</span>
+                <span class="route-badge">Easy–Moderate</span>
+              </div>
+            </div>
+          </div>
+          <div class="route-desc">
+            Walk the full circumference of Seoul's 600-year-old Joseon city wall — from Gyeongbokgung through Bugaksan mountain, down to Heunginjimun gate, around Namsan, and back. Four sections can be walked separately. The Bugaksan section offers the best Seoul panoramas. Free entry.
+          </div>
+          <div class="route-stops">
+            <div class="route-stop"><div class="route-stop-dot">1</div><div class="route-stop-name">광화문</div><div class="route-stop-eng">Gwanghwamun</div></div>
+            <div class="route-stop"><div class="route-stop-dot">2</div><div class="route-stop-name">북악산</div><div class="route-stop-eng">Bugaksan Peak</div></div>
+            <div class="route-stop"><div class="route-stop-dot">3</div><div class="route-stop-name">낙산</div><div class="route-stop-eng">Naksan Park</div></div>
+            <div class="route-stop"><div class="route-stop-dot">4</div><div class="route-stop-name">흥인지문</div><div class="route-stop-eng">East Great Gate</div></div>
+            <div class="route-stop"><div class="route-stop-dot">5</div><div class="route-stop-name">남산</div><div class="route-stop-eng">Namsan Summit</div></div>
+          </div>
+        </div>
+
+        <div class="route-card">
+          <div class="route-header">
+            <span class="route-icon">🌊</span>
+            <div>
+              <div class="route-name">제주 올레길</div>
+              <div class="route-name-eng">Jeju Olle Trail — Complete Jeju Circumnavigation</div>
+              <div class="route-badges">
+                <span class="route-badge">437 km total</span>
+                <span class="route-badge">26 sections</span>
+                <span class="route-badge">Any difficulty</span>
+              </div>
+            </div>
+          </div>
+          <div class="route-desc">
+            Korea's most famous long-distance trail — 26 sections circling all of Jeju Island through volcanic coastline, bamboo forests, haenyeo villages, and 오름 craters. Each section is 10–20 km and can be done independently. Section 7 (서귀포 오름 코스) is the most dramatic. Olle Guide offices stamp your passport at each start.
+          </div>
+          <div class="tip-box" style="margin-top:12px;">
+            <span class="tip-icon">💡</span>
+            <div class="tip-content">
+              <div class="tip-label">Olle Phrase 올레 표현</div>
+              <div class="tip-text"><strong>올레 코스 몇 번이 좋아요?</strong> (Olle koseu myeot beoni joayo?) — Which Olle route is best?</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CYCLING -->
+        <div class="city-section-label">🚲 Bicycle Routes · 자전거 여행</div>
+
+        <div class="route-card">
+          <div class="route-header">
+            <span class="route-icon">🚲</span>
+            <div>
+              <div class="route-name">국토종주 자전거길</div>
+              <div class="route-name-eng">4 Rivers Cross-Country Bike Path</div>
+              <div class="route-badges">
+                <span class="route-badge">633 km</span>
+                <span class="route-badge">Incheon → Busan</span>
+                <span class="route-badge">7–10 days</span>
+              </div>
+            </div>
+          </div>
+          <div class="route-desc">
+            Korea's ultimate cycling achievement — a dedicated, paved bicycle path from Incheon on the Yellow Sea all the way to Busan on the South Sea, following the Han, Nakdong, Geum, and Yeongsan rivers. Stamping stations at each major waypoint. Completing the full route earns an official certificate and medal from the Korea Tourism Organization.
+          </div>
+          <div class="route-stops">
+            <div class="route-stop"><div class="route-stop-dot">시작</div><div class="route-stop-name">인천</div><div class="route-stop-eng">Start: Incheon</div></div>
+            <div class="route-stop"><div class="route-stop-dot">2</div><div class="route-stop-name">서울</div><div class="route-stop-eng">Seoul</div></div>
+            <div class="route-stop"><div class="route-stop-dot">3</div><div class="route-stop-name">충주호</div><div class="route-stop-eng">Chungju Lake</div></div>
+            <div class="route-stop"><div class="route-stop-dot">4</div><div class="route-stop-name">상주</div><div class="route-stop-eng">Sangju</div></div>
+            <div class="route-stop"><div class="route-stop-dot">종점</div><div class="route-stop-name">부산</div><div class="route-stop-eng">End: Busan</div></div>
+          </div>
+        </div>
+
+        <div class="route-card">
+          <div class="route-header">
+            <span class="route-icon">🌊</span>
+            <div>
+              <div class="route-name">한강 자전거도로</div>
+              <div class="route-name-eng">Han River Bike Path — Seoul</div>
+              <div class="route-badges">
+                <span class="route-badge">150 km network</span>
+                <span class="route-badge">Flat</span>
+                <span class="route-badge">Beginner-friendly</span>
+              </div>
+            </div>
+          </div>
+          <div class="route-desc">
+            Seoul's Han River has 40 km of dedicated bike paths on both banks — flat, paved, and fully separated from traffic. Rent a bike at any of the 10+ riverside parks (₩3,000/hr). The stretch from Yeouido to Ttukseom is most scenic with sunset views of the city bridges.
+          </div>
+        </div>
+
+        <!-- HIKING -->
+        <div class="city-section-label">⛰️ Mountain Hikes · 등산</div>
+
+        <div class="festival-grid">
+          <div class="festival-card">
+            <div class="festival-month">제주 · 1,950m</div>
+            <div class="festival-name">🏔️ 한라산</div>
+            <div class="festival-name-eng">Hallasan — Jeju's Sleeping Volcano</div>
+            <div class="festival-desc">Korea's highest peak. Seongpanak trail (13.5 km, 6–8 hrs round trip) reaches the crater lake 백록담. Eorimok trail (8.6 km, 4–5 hrs) is shorter. Summit closes at 12:00 PM — start early.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">속초 · 1,708m</div>
+            <div class="festival-name">🗻 설악산</div>
+            <div class="festival-name-eng">Seoraksan — Granite Giant</div>
+            <div class="festival-desc">Korea's most dramatic mountain — jagged granite peaks, waterfalls, and the Ulsanbawi rock formation (873 stone steps). Autumn foliage is extraordinary. Biseondae Valley trail is superb for day hikers.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">서울 · 836m</div>
+            <div class="festival-name">🌲 도봉산</div>
+            <div class="festival-name-eng">Dobongsan — Seoul's Granite Crown</div>
+            <div class="festival-desc">Only 40 minutes by subway from central Seoul. Jagged granite peaks visible from much of the city. The Uiam trail leads to Jaunbong peak (740m) with stunning views over the entire Seoul basin.</div>
+          </div>
+          <div class="festival-card">
+            <div class="festival-month">전남 · 1,915m</div>
+            <div class="festival-name">⛰️ 지리산</div>
+            <div class="festival-name-eng">Jirisan — Korea's Spiritual Mountain</div>
+            <div class="festival-desc">Korea's first national park (designated 1967) and longest ridge walk — 25 km connecting 10 peaks along the Baekdu-daegan spine. The two-day Cheonwangbong summit hike (1,915m) is a rite of passage for Korean hikers.</div>
+          </div>
+        </div>
+
+        <div class="city-section-label">💬 Hiking Phrases · 등산 표현</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>English</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">등산로가 어디예요?</td><td class="rom-cell">Deungsanro ga eodiyeyo?</td><td class="eng-cell">Where is the hiking trail?</td></tr>
+            <tr><td class="kor-cell">정상까지 얼마나 걸려요?</td><td class="rom-cell">Jeongsang kkaji eolmana geollyeoyo?</td><td class="eng-cell">How long to the summit?</td></tr>
+            <tr><td class="kor-cell">이 길이 어렵나요?</td><td class="rom-cell">I gili eoryeomnayo?</td><td class="eng-cell">Is this trail difficult?</td></tr>
+            <tr><td class="kor-cell">조심하세요!</td><td class="rom-cell">Josimhaseyo!</td><td class="eng-cell">Be careful!</td></tr>
+            <tr><td class="kor-cell">파이팅!</td><td class="rom-cell">Paiting!</td><td class="eng-cell">You can do it! / Keep going!</td></tr>
+          </tbody>
+        </table>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">Hiking Culture in Korea 등산 문화</div>
+            <div class="tip-text">Koreans take hiking seriously — brightly coloured technical gear is mandatory fashion. Mountain huts (산장) serve 막걸리 (rice wine), ramen, and 김밥 at the top of most peaks. Many trails are well-marked with distance and time signs in both Korean and English. National parks charge a small entrance fee (₩1,000–3,500).</div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="animate-on-scroll" style="text-align:center;padding:40px 0;">
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <a href="itineraries.html" class="btn btn-primary btn-lg">📅 Browse Itineraries →</a>
+          <a href="planner.html" class="btn btn-secondary btn-lg">📋 Plan Your Trip</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-mark">한</div>
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+            <li><a href="../learn/grammar.html">Grammar</a></li>
+            <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="../culture/index.html">K-Culture</a></li>
+            <li><a href="index.html">Travel Guide</a></li>
+            <li><a href="../news/index.html">Korean News</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+        <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,809 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pronunciation Guide | 발음 규칙 — 한국어 학교</title>
+  <meta name="description" content="Master Korean pronunciation rules — batchim, liaison, nasal assimilation, tensification, and the ㄹ sound. Audio examples throughout." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* Japanese: widen ローマ字 column in the ㅎ Between Vowels table */
+    body.lang-ja #h-vowels-table th:nth-child(3),
+    body.lang-ja #h-vowels-table td:nth-child(3) { width: 18%; min-width: 88px; }
+    /* Japanese: double ローマ字 column in the Tensification table */
+    body.lang-ja #tensification-table th:nth-child(3),
+    body.lang-ja #tensification-table td:nth-child(3) { width: 20%; }
+  </style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══════════════════════════════════════ -->
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="hangul.html" class="active"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search lessons..." autocomplete="off" aria-label="Search" />
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+
+<!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div id="lesson-progress-grid"></div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">Getting Started</div>
+    <a href="../index.html" class="sidebar-link"><span class="link-icon">🏠</span> Introduction</a>
+    <a href="hangul.html" class="sidebar-link"><span class="link-icon">✏️</span> Hangul Alphabet</a>
+    <a href="syllable-blocks.html" class="sidebar-link"><span class="link-icon">🔷</span> Syllable Blocks</a>
+    <a href="pronunciation.html" class="sidebar-link active"><span class="link-icon">🔊</span> Pronunciation Guide</a>
+    <div class="sidebar-section">Beginner</div>
+    <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> Vocab <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-vocab">
+      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
+      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
+      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
+      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
+      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
+      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
+      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
+      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
+      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
+      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
+      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
+      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
+      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
+      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
+      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
+      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
+      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
+      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
+      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
+      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
+      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
+    </div>
+    <a href="pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> Pronouns <span class="link-badge badge-beginner">Beginner</span></a>
+    <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> Common Nouns <span class="link-badge badge-beginner">Beginner</span></a>
+    <button class="sidebar-accordion-btn" data-accordion="grammar"><span class="link-icon">📝</span> Grammar <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-grammar">
+      <a href="grammar.html#sentence-structure" class="sidebar-link" data-level="intermediate"><span class="link-icon">📐</span> Sentence Structure <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#particles" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔗</span> Korean Particles <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#conjugation" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏰</span> Verb Conjugation <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#questions" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Question Forms <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#connectors" class="sidebar-link" data-level="beginner"><span class="link-icon">🔗</span> Connectors <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#and-with" class="sidebar-link" data-level="beginner"><span class="link-icon">➕</span> And, With <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#to-from" class="sidebar-link" data-level="beginner"><span class="link-icon">📨</span> To/From Someone <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#telling-time" class="sidebar-link" data-level="beginner"><span class="link-icon">🕐</span> Telling Time <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#counters" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Counters <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#progressive" class="sidebar-link" data-level="beginner"><span class="link-icon">▶️</span> Present Progressive <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#self-intro" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Self Introduction <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#dates" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Dates and Months <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#adverbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">💯</span> Degree Adverbs <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#nominalizer" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔤</span> Nominalizer -는 것 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#comparatives" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚖️</span> Comparatives <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#good-like" class="sidebar-link" data-level="intermediate"><span class="link-icon">❤️</span> Like: 좋다 vs 좋아하다 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#still-already" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏳</span> Still, Already <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#indefinite" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Someone, Something <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">📢</span> Imperative -(으)세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#negative-imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">🚫</span> Don't: -지 마세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#method" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛤️</span> Method: -(으)로 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#good-bad-at" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎯</span> Good/Poor At <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#all-more" class="sidebar-link" data-level="advanced"><span class="link-icon">📦</span> All, More: 다, 더 <span class="link-badge badge-advanced">Advanced</span></a>
+      <a href="grammar.html#do-part2" class="sidebar-link" data-level="advanced"><span class="link-icon">✳️</span> -도 Advanced Uses <span class="link-badge badge-advanced">Advanced</span></a>
+    </div>
+    <div class="sidebar-section">Intermediate</div>
+    <a href="speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> Formal vs Informal <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <a href="emotions.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">😊</span> Expressing Emotions <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <a href="shopping.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛒</span> Shopping Phrases <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <div class="sidebar-section">Advanced</div>
+    <a href="writing-essays.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📝</span> Writing Essays <span class="link-badge badge-advanced">Advanced</span></a>
+    <a href="business-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">💼</span> Business Korean <span class="link-badge badge-advanced">Advanced</span></a>
+    <a href="classical-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Classical Korean <span class="link-badge badge-advanced">Advanced</span></a>
+    <div class="sidebar-section">Tools</div>
+    <a href="dialogues.html" class="sidebar-link"><span class="link-icon">💬</span> Korean Dialogues</a>
+    <a href="flashcard.html" class="sidebar-link"><span class="link-icon">📇</span> Flashcards</a>
+  </nav>
+</aside>
+
+<!-- ═══ MAIN CONTENT ═══════════════════════════════════ -->
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <!-- Breadcrumb -->
+    <div class="lesson-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">›</span>
+      <a href="hangul.html">Learn</a>
+      <span class="sep">›</span>
+      <span>Pronunciation Guide</span>
+    </div>
+
+    <!-- Lesson Header -->
+    <div class="lesson-header">
+      <div class="lesson-tag">🔊 Beginner · Lesson 3</div>
+      <h1 class="lesson-title">Pronunciation Guide: <span class="grad-text">발음 규칙</span></h1>
+      <p class="lesson-meta">
+        <span>🔊 8 Sound Change Rules</span>
+        <span>📊 Beginner–Intermediate</span>
+        <span>🔖 Pronunciation</span>
+        <span>🎵 Phonetic System</span>
+      </p>
+    </div>
+
+    <div class="lesson-intro">
+      <p>Korean is highly phonetic — once you know the rules, you can read and pronounce any word correctly. However, Korean has several <strong>sound change rules</strong> that apply when syllables combine. Spelling and pronunciation often differ, and this lesson covers the eight most important rules every learner needs to know.</p>
+    </div>
+
+    <!-- ─── SECTION 1: Batchim ─── -->
+    <div class="lesson-section animate-on-scroll" id="batchim">
+      <h2><span class="section-num">1</span> Batchim — Syllable-Final Consonants (받침)</h2>
+      <p>A <strong>batchim</strong> (받침, literally "support") is a consonant placed at the bottom of a Korean syllable block. For example, in the syllable <strong class="kor-cell">강</strong>, the ㅇ at the bottom is the batchim. Not all syllables have a batchim — many end with just the vowel.</p>
+      <p>Although many consonants can appear as batchim in spelling, they all reduce to <strong>7 possible sounds</strong> when pronounced. This is called the "7 rules of batchim" (받침 7종성).</p>
+
+      <table class="vocab-table">
+        <thead>
+          <tr>
+            <th>Sound Group</th>
+            <th>Written As</th>
+            <th>Pronounced As</th>
+            <th>Example Word</th>
+            <th>Listen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kor-cell">ㄱ-group</td>
+            <td class="kor-cell">ㄱ, ㄲ, ㅋ, ㄳ, ㄺ</td>
+            <td class="rom-cell">k (unreleased)</td>
+            <td class="kor-cell">국 (soup), 닭 (chicken)</td>
+            <td>
+              <button class="hangul-sound-btn" onclick="speakKorean('국')" aria-label="Play 국">🔊</button>
+              <button class="hangul-sound-btn" onclick="speakKorean('닭')" aria-label="Play 닭">🔊</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="kor-cell">ㄴ-group</td>
+            <td class="kor-cell">ㄴ, ㄵ, ㄶ</td>
+            <td class="rom-cell">n</td>
+            <td class="kor-cell">산 (mountain), 앉다 (to sit)</td>
+            <td>
+              <button class="hangul-sound-btn" onclick="speakKorean('산')" aria-label="Play 산">🔊</button>
+              <button class="hangul-sound-btn" onclick="speakKorean('앉다')" aria-label="Play 앉다">🔊</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="kor-cell">ㄷ-group</td>
+            <td class="kor-cell">ㄷ, ㅅ, ㅆ, ㅈ, ㅊ, ㅌ, ㅎ</td>
+            <td class="rom-cell">t (unreleased)</td>
+            <td class="kor-cell">옷 (clothes), 꽃 (flower), 낮 (daytime)</td>
+            <td>
+              <button class="hangul-sound-btn" onclick="speakKorean('옷')" aria-label="Play 옷">🔊</button>
+              <button class="hangul-sound-btn" onclick="speakKorean('꽃')" aria-label="Play 꽃">🔊</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="kor-cell">ㄹ-group</td>
+            <td class="kor-cell">ㄹ, ㄼ, ㄽ, ㄾ, ㅀ</td>
+            <td class="rom-cell">l</td>
+            <td class="kor-cell">달 (moon), 말 (horse / speech)</td>
+            <td>
+              <button class="hangul-sound-btn" onclick="speakKorean('달')" aria-label="Play 달">🔊</button>
+              <button class="hangul-sound-btn" onclick="speakKorean('말')" aria-label="Play 말">🔊</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="kor-cell">ㅁ-group</td>
+            <td class="kor-cell">ㅁ, ㄻ</td>
+            <td class="rom-cell">m</td>
+            <td class="kor-cell">밤 (night / chestnut), 삶 (life)</td>
+            <td>
+              <button class="hangul-sound-btn" onclick="speakKorean('밤')" aria-label="Play 밤">🔊</button>
+              <button class="hangul-sound-btn" onclick="speakKorean('삶')" aria-label="Play 삶">🔊</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="kor-cell">ㅂ-group</td>
+            <td class="kor-cell">ㅂ, ㅍ, ㄿ, ㄼ</td>
+            <td class="rom-cell">p (unreleased)</td>
+            <td class="kor-cell">입 (mouth), 앞 (front)</td>
+            <td>
+              <button class="hangul-sound-btn" onclick="speakKorean('입')" aria-label="Play 입">🔊</button>
+              <button class="hangul-sound-btn" onclick="speakKorean('앞')" aria-label="Play 앞">🔊</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="kor-cell">ㅇ-group</td>
+            <td class="kor-cell">ㅇ</td>
+            <td class="rom-cell">ng</td>
+            <td class="kor-cell">강 (river), 방 (room), 영어 (English)</td>
+            <td>
+              <button class="hangul-sound-btn" onclick="speakKorean('강')" aria-label="Play 강">🔊</button>
+              <button class="hangul-sound-btn" onclick="speakKorean('방')" aria-label="Play 방">🔊</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Unreleased stops</div>
+          <div class="tip-text">The k, t, and p batchim sounds are "unreleased" — your mouth forms the position but does not release the air. Think of the final "p" in the English word "cup" when you hold it in: <strong>cup_</strong>. Korean batchim ㅂ/ㄷ/ㄱ work the same way — position formed, no air puff out.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SECTION 2: Liaison ─── -->
+    <div class="lesson-section animate-on-scroll" id="liaison">
+      <h2><span class="section-num">2</span> Liaison — Linking Sound (연음화)</h2>
+      <p>When a syllable ending in a batchim is <em>immediately followed</em> by a syllable that <strong>begins with the silent ㅇ</strong>, the batchim consonant moves forward and becomes the initial consonant of the next syllable. The spelling stays the same; only the pronunciation shifts.</p>
+      <p>This rule makes spoken Korean sound flowing and connected. It is one of the most frequent pronunciation phenomena you will hear.</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>🔗 Liaison in Action (연음화 예시)</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">먹어요 <button class="hangul-sound-btn" onclick="speakKorean('먹어요')" aria-label="Play 먹어요">🔊</button></div>
+            <div class="rom-line">Spelling: meog-eo-yo → Pronounced: meo-geo-yo</div>
+            <div class="eng-line">I eat / am eating — ㄱ batchim moves to next syllable</div>
+          </div>
+          <div class="korean-example">
+            <div class="kor-line">밥을 먹어요 <button class="hangul-sound-btn" onclick="speakKorean('밥을 먹어요')" aria-label="Play 밥을 먹어요">🔊</button></div>
+            <div class="rom-line">Spelling: bab-eul → Pronounced: ba-beul</div>
+            <div class="eng-line">I eat rice — ㅂ batchim of 밥 moves into 을</div>
+          </div>
+          <div class="korean-example">
+            <div class="kor-line">좋아요 <button class="hangul-sound-btn" onclick="speakKorean('좋아요')" aria-label="Play 좋아요">🔊</button></div>
+            <div class="rom-line">Spelling: joh-a-yo → Pronounced: jo-a-yo</div>
+            <div class="eng-line">It is good / I like it — ㅎ batchim weakens and moves (see ㅎ section)</div>
+          </div>
+          <div class="korean-example">
+            <div class="kor-line">한국어 <button class="hangul-sound-btn" onclick="speakKorean('한국어')" aria-label="Play 한국어">🔊</button></div>
+            <div class="rom-line">Spelling: han-gug-eo → Pronounced: han-gu-geo</div>
+            <div class="eng-line">Korean language — ㄱ batchim of 국 moves into 어</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <span class="tip-icon">ℹ️</span>
+        <div class="tip-content">
+          <div class="tip-label">Why does liaison happen?</div>
+          <div class="tip-text">Korean syllable structure strongly prefers the pattern <strong>consonant + vowel</strong>. When a vowel-initial syllable follows a batchim, it is phonetically "easier" for the consonant to attach to that vowel's slot. The result is a more natural, connected flow of speech. This is not slang or lazy pronunciation — it is standard Korean.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SECTION 3: Nasal Assimilation ─── -->
+    <div class="lesson-section animate-on-scroll" id="nasal-assimilation">
+      <h2><span class="section-num">3</span> Nasal Assimilation (비음화)</h2>
+      <p>When a stop consonant batchim (ㄱ, ㄷ, ㅂ group) is followed by the nasal consonants <strong class="kor-cell">ㄴ</strong> or <strong class="kor-cell">ㅁ</strong>, it assimilates and changes to its corresponding nasal sound. This is purely articulatory — nasal consonants require the velum to lower, which pulls nearby stops into nasal territory.</p>
+
+      <table class="vocab-table">
+        <thead>
+          <tr>
+            <th>Rule</th>
+            <th>Written Form</th>
+            <th>Pronounced As</th>
+            <th>Romanized Pronunciation</th>
+            <th>Listen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="eng-cell">ㅂ + ㄴ/ㅁ → ㅁ</td>
+            <td class="kor-cell">입니다</td>
+            <td class="kor-cell">임니다</td>
+            <td class="rom-cell">imnida</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('입니다')" aria-label="Play 입니다">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="eng-cell">ㄱ + ㄴ/ㅁ → ㅇ</td>
+            <td class="kor-cell">국물</td>
+            <td class="kor-cell">궁물</td>
+            <td class="rom-cell">gungmul</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('국물')" aria-label="Play 국물">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="eng-cell">ㄱ + ㄴ/ㅁ → ㅇ</td>
+            <td class="kor-cell">학년</td>
+            <td class="kor-cell">항년</td>
+            <td class="rom-cell">hangnyeon</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('학년')" aria-label="Play 학년">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="eng-cell">ㄷ + ㄴ/ㅁ → ㄴ</td>
+            <td class="kor-cell">걷는다</td>
+            <td class="kor-cell">건는다</td>
+            <td class="rom-cell">geonneunda</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('걷는다')" aria-label="Play 걷는다">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="eng-cell">ㅂ + ㄴ/ㅁ → ㅁ</td>
+            <td class="kor-cell">앞마당</td>
+            <td class="kor-cell">암마당</td>
+            <td class="rom-cell">ammadang</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('앞마당')" aria-label="Play 앞마당">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">The pattern is always the same</div>
+          <div class="tip-text">The assimilation always goes in the same direction: the stop becomes nasal, not the other way around. Think of it as the nasal consonant "infecting" the previous sound. ㅂ → ㅁ, ㄷ → ㄴ, ㄱ → ㅇ. Spot the pattern: each pair shares the same place of articulation in the mouth (lips, teeth ridge, throat).</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SECTION 4: Tensification ─── -->
+    <div class="lesson-section animate-on-scroll" id="tensification">
+      <h2><span class="section-num">4</span> Tensification (경음화)</h2>
+      <p>After certain batchim consonants, the following consonant becomes tensed (doubled). This happens most predictably after unreleased stop batchim sounds — the ㄱ, ㄷ, and ㅂ groups. The written form does not change; only the pronunciation shifts.</p>
+
+      <table class="vocab-table" id="tensification-table">
+        <thead>
+          <tr>
+            <th>Word (Spelling)</th>
+            <th>Actual Pronunciation</th>
+            <th>Romanized</th>
+            <th>Meaning</th>
+            <th>Listen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kor-cell">학교</td>
+            <td class="kor-cell">학꾜</td>
+            <td class="rom-cell">hak-kkyo</td>
+            <td class="eng-cell">school</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('학교')" aria-label="Play 학교">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">식당</td>
+            <td class="kor-cell">식땅</td>
+            <td class="rom-cell">sik-ttang</td>
+            <td class="eng-cell">restaurant</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('식당')" aria-label="Play 식당">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">국밥</td>
+            <td class="kor-cell">국빱</td>
+            <td class="rom-cell">guk-ppap</td>
+            <td class="eng-cell">rice soup</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('국밥')" aria-label="Play 국밥">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">입구</td>
+            <td class="kor-cell">입꾸</td>
+            <td class="rom-cell">ip-kku</td>
+            <td class="eng-cell">entrance</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('입구')" aria-label="Play 입구">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">닫다</td>
+            <td class="kor-cell">닫따</td>
+            <td class="rom-cell">dat-tta</td>
+            <td class="eng-cell">to close</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('닫다')" aria-label="Play 닫다">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="info-box">
+        <span class="tip-icon">ℹ️</span>
+        <div class="tip-content">
+          <div class="tip-label">Why tensification happens</div>
+          <div class="tip-text">After an unreleased stop, the vocal tract is already in a tense, closed position. When you start the next consonant from this state, extra muscular tension carries over — creating the tensed sound automatically. Tensification is not deliberate; it is a natural articulatory consequence. Once you hear it in real speech, you cannot unhear it.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SECTION 5: ㅎ Weakening ─── -->
+    <div class="lesson-section animate-on-scroll" id="h-weakening">
+      <h2><span class="section-num">5</span> ㅎ Weakening (ㅎ 약화)</h2>
+      <p>The consonant <strong class="kor-cell">ㅎ</strong> is one of Korean's most unstable sounds. It weakens significantly — often to near-silence — when it appears between vowels. In other positions, it combines with adjacent consonants to create aspirated sounds.</p>
+
+      <h3 style="color:var(--text);margin-top:1.5rem">ㅎ Between Vowels → Nearly Silent</h3>
+      <table class="vocab-table" id="h-vowels-table">
+        <thead>
+          <tr>
+            <th>Spelling</th>
+            <th>Pronunciation</th>
+            <th>Romanized</th>
+            <th>Meaning</th>
+            <th>Listen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kor-cell">좋아요</td>
+            <td class="kor-cell">조아요</td>
+            <td class="rom-cell">jo-a-yo</td>
+            <td class="eng-cell">It is good / I like it</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('좋아요')" aria-label="Play 좋아요">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">많아요</td>
+            <td class="kor-cell">마나요</td>
+            <td class="rom-cell">ma-na-yo</td>
+            <td class="eng-cell">There is a lot</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('많아요')" aria-label="Play 많아요">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">넣어요</td>
+            <td class="kor-cell">너어요</td>
+            <td class="rom-cell">neo-eo-yo</td>
+            <td class="eng-cell">I put it in</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('넣어요')" aria-label="Play 넣어요">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">어떻게</td>
+            <td class="kor-cell">어떠케</td>
+            <td class="rom-cell">eo-ddeo-ke</td>
+            <td class="eng-cell">How? In what way?</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('어떻게')" aria-label="Play 어떻게">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="color:var(--text);margin-top:1.5rem">ㅎ + Consonant → Aspiration</h3>
+      <p>When <strong class="kor-cell">ㅎ</strong> batchim meets the next syllable's consonant (or vice versa), the two merge into a single aspirated consonant.</p>
+      <table class="vocab-table">
+        <thead>
+          <tr>
+            <th>Spelling</th>
+            <th>Pronunciation</th>
+            <th>Rule Applied</th>
+            <th>Meaning</th>
+            <th>Listen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kor-cell">놓다</td>
+            <td class="kor-cell">노타</td>
+            <td class="eng-cell">ㅎ + ㄷ → ㅌ</td>
+            <td class="eng-cell">to let go / to place</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('놓다')" aria-label="Play 놓다">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">착하다</td>
+            <td class="kor-cell">차카다</td>
+            <td class="eng-cell">ㄱ + ㅎ → ㅋ</td>
+            <td class="eng-cell">to be kind / good-natured</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('착하다')" aria-label="Play 착하다">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">입학</td>
+            <td class="kor-cell">이팍</td>
+            <td class="eng-cell">ㅂ + ㅎ → ㅍ</td>
+            <td class="eng-cell">school enrollment</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('입학')" aria-label="Play 입학">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">못해요</td>
+            <td class="kor-cell">모태요</td>
+            <td class="eng-cell">ㅅ(→ㄷ) + ㅎ → ㅌ</td>
+            <td class="eng-cell">I can't do it</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('못해요')" aria-label="Play 못해요">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ─── SECTION 6: Palatalization ─── -->
+    <div class="lesson-section animate-on-scroll" id="palatalization">
+      <h2><span class="section-num">6</span> Palatalization (구개음화)</h2>
+      <p>When the consonants <strong class="kor-cell">ㄷ</strong> or <strong class="kor-cell">ㅌ</strong> appear as batchim and are followed by the vowel <strong class="kor-cell">이</strong> (i), they change into <strong class="kor-cell">ㅈ</strong> and <strong class="kor-cell">ㅊ</strong> respectively. This shift is called palatalization — the consonant moves from the tooth ridge to the palate to anticipate the front vowel.</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>🗣️ Palatalization Examples (구개음화 예시)</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">같이 <button class="hangul-sound-btn" onclick="speakKorean('같이')" aria-label="Play 같이">🔊</button></div>
+            <div class="rom-line">Spelling: gat-i → Pronounced: ga-chi</div>
+            <div class="eng-line">together — ㅌ + 이 → ㅊ이 → 치</div>
+          </div>
+          <div class="korean-example">
+            <div class="kor-line">굳이 <button class="hangul-sound-btn" onclick="speakKorean('굳이')" aria-label="Play 굳이">🔊</button></div>
+            <div class="rom-line">Spelling: gut-i → Pronounced: gu-ji</div>
+            <div class="eng-line">deliberately / stubbornly — ㄷ + 이 → ㅈ이 → 지</div>
+          </div>
+          <div class="korean-example">
+            <div class="kor-line">해돋이 <button class="hangul-sound-btn" onclick="speakKorean('해돋이')" aria-label="Play 해돋이">🔊</button></div>
+            <div class="rom-line">Spelling: hae-dot-i → Pronounced: hae-do-ji</div>
+            <div class="eng-line">sunrise — ㄷ + 이 → 지</div>
+          </div>
+          <div class="korean-example">
+            <div class="kor-line">미닫이 <button class="hangul-sound-btn" onclick="speakKorean('미닫이')" aria-label="Play 미닫이">🔊</button></div>
+            <div class="rom-line">Spelling: mi-dat-i → Pronounced: mi-da-ji</div>
+            <div class="eng-line">sliding door — ㄷ + 이 → 지</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Palatalization is morpheme-internal only</div>
+          <div class="tip-text">This rule applies only within the same word or when a grammatical suffix beginning with 이 attaches. It does not apply across word boundaries. So <strong class="kor-cell">같이 (together)</strong> triggers palatalization because 이 is part of the same word, but in a phrase like <strong class="kor-cell">옷 입어요</strong> (putting on clothes), 이 starts a separate word and different rules apply.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SECTION 7: The ㄹ Sound ─── -->
+    <div class="lesson-section animate-on-scroll" id="r-l-sound">
+      <h2><span class="section-num">7</span> The ㄹ Sound (리을)</h2>
+      <p>The Korean consonant <strong class="kor-cell">ㄹ</strong> is often described as "between r and l" — and that is precisely correct. Its exact realisation depends on position within the syllable. Mastering ㄹ is one of the first major pronunciation goals for learners.</p>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">The tongue-tap technique</div>
+          <div class="tip-text">When ㄹ appears <strong>between two vowels</strong>, produce it with a single fast tap of the tongue tip against the ridge just behind the upper teeth — the same motion as the American English "r" in <em>butter</em> or <em>water</em>. Do not roll it (no Spanish r-trill) and do not use an English "l" shape. At the end of a syllable or before a consonant, hold the tongue lightly at that ridge for a gentle "l" sound.</div>
+        </div>
+      </div>
+
+      <table class="vocab-table">
+        <thead>
+          <tr>
+            <th style="width:30%">Word</th>
+            <th>ㄹ Position</th>
+            <th>Sound</th>
+            <th>Meaning</th>
+            <th>Listen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kor-cell">라면<br><span class="rom-cell" style="display:block;font-size:0.83em">ra-myeon</span></td>
+            <td class="eng-cell">Initial (before vowel)</td>
+            <td class="eng-cell">r-tap</td>
+            <td class="eng-cell">instant noodles</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('라면')" aria-label="Play 라면">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">달<br><span class="rom-cell" style="display:block;font-size:0.83em">dal</span></td>
+            <td class="eng-cell">Final batchim</td>
+            <td class="eng-cell">l (held)</td>
+            <td class="eng-cell">moon</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('달')" aria-label="Play 달">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">말해요<br><span class="rom-cell" style="display:block;font-size:0.83em">mal-hae-yo</span></td>
+            <td class="eng-cell">Batchim before consonant</td>
+            <td class="eng-cell">l (held)</td>
+            <td class="eng-cell">I speak / please speak</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('말해요')" aria-label="Play 말해요">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">빨리<br><span class="rom-cell" style="display:block;font-size:0.83em">ppal-li</span></td>
+            <td class="eng-cell">Between vowels (doubled)</td>
+            <td class="eng-cell">ll (held, then tap)</td>
+            <td class="eng-cell">quickly, fast</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('빨리')" aria-label="Play 빨리">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">한국어<br><span class="rom-cell" style="display:block;font-size:0.83em">han-gu-geo</span></td>
+            <td class="eng-cell">No ㄹ — contrast check</td>
+            <td class="eng-cell">—</td>
+            <td class="eng-cell">Korean language</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('한국어')" aria-label="Play 한국어">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell">사랑해요<br><span class="rom-cell" style="display:block;font-size:0.83em">sa-rang-hae-yo</span></td>
+            <td class="eng-cell">Between vowels</td>
+            <td class="eng-cell">r-tap</td>
+            <td class="eng-cell">I love you</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('사랑해요')" aria-label="Play 사랑해요">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="info-box">
+        <span class="tip-icon">ℹ️</span>
+        <div class="tip-content">
+          <div class="tip-label">ㄹ + ㄴ or ㄴ + ㄹ → ㄹㄹ</div>
+          <div class="tip-text">When ㄹ and ㄴ appear adjacent across syllables, they both become ㄹ — called <strong>lateralisation (유음화)</strong>. Example: <strong class="kor-cell">신라</strong> (Silla dynasty) is pronounced <strong class="kor-cell">실라</strong> (silla), not sin-ra. Similarly <strong class="kor-cell">연락</strong> (contact) is pronounced <strong class="kor-cell">열락</strong> (yeollak).</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── SECTION 8: Common Mistakes ─── -->
+    <div class="lesson-section animate-on-scroll" id="common-mistakes">
+      <h2><span class="section-num">8</span> Common Mistakes for English Speakers</h2>
+      <p>Korean and English have very different phonological systems. Below are the six most common pronunciation errors made by English speakers — with clear explanations of how to correct them.</p>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Mistake 1: Pronouncing ㅡ (eu) like "oo"</div>
+          <div class="tip-text"><strong class="kor-cell">ㅡ</strong> has no English equivalent. It is a <em>back unrounded</em> vowel — your tongue is in the "oo" position but your lips are completely flat and unrounded, as if you are saying "uh" with a stiff mouth. Words like <strong class="kor-cell">으, 크다, 든지</strong> all use this sound. <button class="hangul-sound-btn" onclick="speakKorean('으크든')" aria-label="Play ㅡ examples">🔊</button></div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Mistake 2: Treating ㅓ (eo) like English "er"</div>
+          <div class="tip-text"><strong class="kor-cell">ㅓ</strong> is often transcribed as "eo" or "uh" — but it is NOT the American English "er" (which has an r-colouring). Korean <strong class="kor-cell">ㅓ</strong> is a mid-back unrounded vowel. Think of the British English "uh" in <em>but</em> or <em>cup</em>. No rounding, no r-sound. <button class="hangul-sound-btn" onclick="speakKorean('어머니')" aria-label="Play 어머니">🔊</button></div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Mistake 3: Puffing air on double consonants</div>
+          <div class="tip-text">English speakers naturally add aspiration to stops. Korean tensed (double) consonants <strong class="kor-cell">ㄲ, ㄸ, ㅃ, ㅆ, ㅉ</strong> are <em>never</em> aspirated. Hold a piece of paper in front of your mouth — it should not move when you say <strong class="kor-cell">까, 따, 빠, 싸, 짜</strong>. <button class="hangul-sound-btn" onclick="speakKorean('까따빠싸짜')" aria-label="Play tensed consonants">🔊</button></div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Mistake 4: Rising intonation on all questions</div>
+          <div class="tip-text">In English, rising intonation signals a question. In Korean, intonation rules differ: <strong>yes/no questions</strong> do use a slight rise at the end, but <strong>wh-questions</strong> (who/what/where/when/why/how) typically use a falling or neutral intonation — not rising. Overusing rising intonation makes speech sound uncertain or unnatural in Korean.</div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Mistake 5: Pronouncing ㅅ as "s" before i-vowels</div>
+          <div class="tip-text">Before the vowels <strong class="kor-cell">이, 야, 여, 요, 유</strong>, the consonant <strong class="kor-cell">ㅅ</strong> is pronounced like English "sh". So <strong class="kor-cell">시</strong> is "shi" not "si", <strong class="kor-cell">셔츠</strong> (shirt) begins with "sh". This also applies to <strong class="kor-cell">씨</strong> (tensed) → "sshi". <button class="hangul-sound-btn" onclick="speakKorean('시작합시다')" aria-label="Play 시작합시다">🔊</button></div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Mistake 6: Pronouncing the ㅎ in 좋아요</div>
+          <div class="tip-text">Beginners often say "jo-ha-yo" for <strong class="kor-cell">좋아요</strong>, treating ㅎ as a clear h-sound. But due to ㅎ weakening between vowels, the actual pronunciation is <strong class="kor-cell">조아요</strong> (jo-a-yo) — the ㅎ nearly disappears. This applies broadly: <strong class="kor-cell">많아요 → 마나요</strong>, <strong class="kor-cell">낳아요 → 나아요</strong>. <button class="hangul-sound-btn" onclick="speakKorean('좋아요')" aria-label="Play 좋아요">🔊</button></div>
+        </div>
+      </div>
+
+      <div class="example-box">
+        <div class="example-header"><span>🎯 Quick Pronunciation Checklist</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%;table-layout:fixed">
+            <thead>
+              <tr>
+                <th style="width:12%">Sound</th>
+                <th style="width:26%">Wrong Approach</th>
+                <th style="width:32%">Correct Approach</th>
+                <th style="width:30%">Practice Word</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="kor-cell">ㅡ</td>
+                <td class="eng-cell">Round lips like "oo"</td>
+                <td class="eng-cell">Flat spread lips, tongue back</td>
+                <td><span class="kor-cell">그래요</span> <button class="hangul-sound-btn" onclick="speakKorean('그래요')" aria-label="Play 그래요">🔊</button></td>
+              </tr>
+              <tr>
+                <td class="kor-cell">ㅓ</td>
+                <td class="eng-cell">r-coloured "er" sound</td>
+                <td class="eng-cell">Pure "uh" — no r, no rounding</td>
+                <td><span class="kor-cell">저예요</span> <button class="hangul-sound-btn" onclick="speakKorean('저예요')" aria-label="Play 저예요">🔊</button></td>
+              </tr>
+              <tr>
+                <td class="kor-cell">ㄲ/ㄸ/ㅃ</td>
+                <td class="eng-cell">Strong air puff</td>
+                <td class="eng-cell">Tight muscles, no air</td>
+                <td><span class="kor-cell">빨리</span> <button class="hangul-sound-btn" onclick="speakKorean('빨리')" aria-label="Play 빨리">🔊</button></td>
+              </tr>
+              <tr>
+                <td class="kor-cell">ㅅ + 이</td>
+                <td class="eng-cell">"si" with clear s</td>
+                <td class="eng-cell">"shi" — palatalised</td>
+                <td><span class="kor-cell">시간</span> <button class="hangul-sound-btn" onclick="speakKorean('시간')" aria-label="Play 시간">🔊</button></td>
+              </tr>
+              <tr>
+                <td class="kor-cell">좋아요</td>
+                <td class="eng-cell">jo-HA-yo</td>
+                <td class="eng-cell">jo-a-yo (ㅎ silent)</td>
+                <td><span class="kor-cell">좋아요</span> <button class="hangul-sound-btn" onclick="speakKorean('좋아요')" aria-label="Play 좋아요">🔊</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lesson Complete -->
+    <div class="lesson-complete animate-on-scroll">
+      <button class="btn btn-primary btn-lg" data-lesson-complete="pronunciation">
+        Mark Lesson Complete ✓
+      </button>
+    </div>
+
+    <!-- Lesson Nav Footer -->
+    <div class="lesson-nav-footer">
+      <a href="vowels-consonants.html" class="lesson-nav-btn">
+        <span>←</span>
+        <div>
+          <span class="lesson-nav-label">Previous</span>
+          <span class="lesson-nav-title">Vowels &amp; Consonants</span>
+        </div>
+      </a>
+      <a href="vocabulary.html" class="lesson-nav-btn next">
+        <span>→</span>
+        <div>
+          <span class="lesson-nav-label">Next</span>
+          <span class="lesson-nav-title">Basic Greetings</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- ═══ FOOTER ═══════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform for learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="hangul.html">Hangul Alphabet</a></li>
+          <li><a href="grammar.html">Grammar</a></li>
+          <li><a href="vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요!</span>
+    </div>
+  </div>
+</footer>
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

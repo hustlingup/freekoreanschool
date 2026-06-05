@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>만두 가이드 · Korean Dumpling Guide | 한국어 학교</title>
+  <meta name="description" content="The complete Korean mandu (만두) guide — every dumpling type, brand, cooking method, and cultural meaning explained with vocabulary." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html" class="active"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-icon">🎵</div>
+      <div class="sidebar-brand-text">K-Culture <span>한국 문화</span></div>
+    </div>
+    <p class="sidebar-brand-desc">K-Pop, K-Drama, food, beauty, fashion, gaming, sports &amp; traditions.</p>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">CATEGORIES · 카테고리</div>
+    <a href="kpop.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎵</span> K-Pop <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kpop">
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📜</span> K-Pop History</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🏢</span> Agencies</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">⭐</span> Generations</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎼</span> Genres</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📺</span> Variety Shows</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎬</span> Film &amp; Acting</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">💬</span> Idol Phrases</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🔥</span> Fan Slang</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📣</span> Fan Chants</a>
+    </div>
+    <a href="kdrama.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Drama <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kdrama">
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📺</span> Drama History</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎬</span> Drama Genres</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Dramas</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎯</span> K-Drama Tropes</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💡</span> Speech Levels</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🗣️</span> Fan Culture &amp; Slang</a>
+    </div>
+    <a href="kmovie.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Movie <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kmovie">
+      <a href="kmovie.html#kmovie-history" class="sidebar-link"><span class="link-icon">📽️</span> Movie History</a>
+      <a href="kmovie.html#kmovie-genres" class="sidebar-link"><span class="link-icon">🎬</span> Movie Genres</a>
+      <a href="kmovie.html#kmovie-films" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Films</a>
+      <a href="kmovie.html#kmovie-directors" class="sidebar-link"><span class="link-icon">🎖️</span> Directors</a>
+      <a href="kmovie.html#kmovie-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kmovie.html#kmovie-dialogue" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kmovie.html#kmovie-lines" class="sidebar-link"><span class="link-icon">🗣️</span> Iconic Lines</a>
+      <a href="kmovie.html#kmovie-fanculture" class="sidebar-link"><span class="link-icon">🍿</span> Fan Culture</a>
+    </div>
+    <a href="kfood.html" class="sidebar-accordion-btn active open">
+      <span class="link-icon">🍜</span> K-Food <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="cat-acc-kfood">
+      <a href="kfood.html#kfood-global" class="sidebar-link"><span class="link-icon">🌍</span> K-Food Goes Global</a>
+      <a href="kfood.html#kfood-spotlight" class="sidebar-link"><span class="link-icon">🔥</span> Foods That Went Global</a>
+      <a href="kfood.html#kfood-timeline" class="sidebar-link"><span class="link-icon">📅</span> K-Food Timeline</a>
+      <a href="kfood.html#kfood-dishes" class="sidebar-link"><span class="link-icon">🍽️</span> Essential Dishes</a>
+      <a href="kfood.html#kfood-chefs" class="sidebar-link"><span class="link-icon">👨‍🍳</span> World-Famous Chefs</a>
+      <a href="kfood.html#kfood-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kfood.html#kfood-ordering" class="sidebar-link"><span class="link-icon">🏪</span> Ordering &amp; Dining</a>
+      <a href="kfood.html#kfood-street" class="sidebar-link"><span class="link-icon">🌶️</span> Street Food</a>
+      <a href="kfood.html#kfood-culture" class="sidebar-link"><span class="link-icon">🏮</span> Food Culture &amp; Drinking</a>
+      <div class="sidebar-section" style="font-size:0.62rem;margin:10px 0 4px;padding-left:4px;">DEEP DIVES · 심층 탐구</div>
+      <a href="ramyeon.html" class="sidebar-link"><span class="link-icon">🍜</span> Ramyeon Guide</a>
+      <a href="mandu.html" class="sidebar-link active"><span class="link-icon">🥟</span> Mandu Guide</a>
+      <a href="kchicken.html" class="sidebar-link"><span class="link-icon">🍗</span> Chicken Guide</a>
+      <a href="kbbq.html" class="sidebar-link"><span class="link-icon">🥩</span> K-BBQ Guide</a>
+      <a href="kimchi.html" class="sidebar-link"><span class="link-icon">🥬</span> Kimchi Guide</a>
+    </div>
+    <a href="kbeauty.html" class="sidebar-accordion-btn">
+      <span class="link-icon">✨</span> K-Beauty <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kbeauty">
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Beauty Goes Global</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">⏳</span> K-Beauty Timeline</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">📖</span> Beauty Vocabulary</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🧴</span> 10-Step Skincare</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌿</span> Key Ingredients</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">✨</span> Beauty Trends</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💄</span> Makeup Philosophy</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏥</span> Skin Clinic Culture</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💬</span> K-Beauty Dialogue</a>
+    </div>
+    <a href="kfashion.html" class="sidebar-accordion-btn">
+      <span class="link-icon">👗</span> K-Fashion <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kfashion">
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Fashion Global</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👑</span> Fashion Icons</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⏳</span> Fashion Timeline</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🎨</span> Style Aesthetics</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⭐</span> Idol Fashion</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🗓️</span> Seoul Fashion Week</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">📖</span> Fashion Vocabulary</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏙️</span> Fashion Districts</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👘</span> Hanbok &amp; Traditional Fashion</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">💬</span> Shopping Dialogue</a>
+    </div>
+    <a href="koreanthing.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🇰🇷</span> Korean Thing <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-koreanthing">
+      <a href="koreanthing.html#bap" class="sidebar-link"><span class="link-icon">🍚</span> Rice Obsession</a>
+      <a href="koreanthing.html#chokbeop" class="sidebar-link"><span class="link-icon">👶</span> Youth Protection Laws</a>
+      <a href="koreanthing.html#delivery" class="sidebar-link"><span class="link-icon">🛵</span> Fast Delivery Culture</a>
+      <a href="koreanthing.html#ecology" class="sidebar-link"><span class="link-icon">🦌</span> Invasive Species Crisis</a>
+      <a href="koreanthing.html#table" class="sidebar-link"><span class="link-icon">🔔</span> Table Call Culture</a>
+      <a href="koreanthing.html#transport" class="sidebar-link"><span class="link-icon">🚌</span> Public Transport</a>
+      <a href="koreanthing.html#jjimjilbang" class="sidebar-link"><span class="link-icon">♨️</span> Jjimjilbang</a>
+      <a href="koreanthing.html#surgery" class="sidebar-link"><span class="link-icon">💉</span> Plastic Surgery Culture</a>
+      <a href="koreanthing.html#outdoor-drinking" class="sidebar-link"><span class="link-icon">🍺</span> Outdoor Drinking</a>
+      <a href="koreanthing.html#jeonse" class="sidebar-link"><span class="link-icon">🏠</span> Jeonse Housing</a>
+      <a href="koreanthing.html#traditions" class="sidebar-link"><span class="link-icon">🏮</span> Traditions &amp; Holidays</a>
+      <a href="koreanthing.html#sodams" class="sidebar-link"><span class="link-icon">📜</span> 100 Korean Proverbs</a>
+    </div>
+    <a href="kgaming.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎮</span> K-Gaming <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kgaming">
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📊</span> K-Gaming Stats</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">⏳</span> Gaming Timeline</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🌟</span> Gaming Legends</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🎮</span> Iconic Games</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📺</span> Streaming Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏪</span> PC Bang Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏆</span> Esports Leagues</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">💬</span> Gamer Slang</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📖</span> Gaming Vocabulary</a>
+    </div>
+    <a href="ksports.html" class="sidebar-accordion-btn">
+      <span class="link-icon">⚽</span> K-Sports <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-ksports">
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📊</span> Sports Overview</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚽</span> Football Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚾</span> Baseball Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🏃</span> Marathon Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🌟</span> Individual Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🥋</span> Traditional Sports</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📣</span> Cheer Chants</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+    </div>
+  </nav>
+</aside>
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="food-page-hero">
+      <div class="section-eyebrow">K-FOOD · 한국 음식</div>
+      <h1>만두 가이드 <span class="grad-text">Korean Dumplings</span></h1>
+      <p>Mandu (만두) is Korea's dumpling — steamed, fried, boiled, or simmered in broth. From the ceremonial dumpling soup (만두국) served at Lunar New Year to the addictive frozen Bibigo king dumplings (비비고 왕교자) cooked at midnight, mandu sits at the heart of Korean comfort food culture.</p>
+      <div class="kr-trans" style="margin-top:10px;">만두는 한국의 전통 요리입니다 — 찌거나, 굽거나, 삶거나, 국물에 넣어 끓입니다. 설날에 먹는 의례적인 만두국부터 한밤중에 익혀 먹는 비비고 왕교자까지, 만두는 한국 위안 음식의 중심에 있습니다.</div>
+      <div class="food-stat-row">
+        <div class="food-stat"><div class="food-stat-val">14C</div><div class="food-stat-label">History in Korea</div></div>
+        <div class="food-stat"><div class="food-stat-val">30+</div><div class="food-stat-label">Regional varieties</div></div>
+        <div class="food-stat"><div class="food-stat-val">설날</div><div class="food-stat-label">Eaten at New Year</div></div>
+        <div class="food-stat"><div class="food-stat-val">#1</div><div class="food-stat-label">Bibigo: global K-food brand</div></div>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-top:24px;">
+      <span class="tip-icon">📖</span>
+      <div class="tip-content">
+        <div class="tip-label">만두의 역사 · History of Korean Mandu (만두)</div>
+        <div class="tip-text">Korean mandu was introduced during the Goryeo Dynasty through the Yuan (Mongol) Empire, with its first written record appearing in the Goryeosa (고려사). Initially a prestigious royal court dish, it gradually became everyday food through the modern era — first spreading via Chinese immigrant communities, then transformed by the mass production of frozen dumplings in the 1980s. Korea once had countless street-side mandu shops, but as Bibigo frozen mandu rose to dominance, there is a saying that every mandu shop making a less tasty product than Bibigo has since had to shut its doors.
+          <div class="kr-trans" style="margin-top:8px;">한국 만두는 고려시대 원나라를 통해 전래되었습니다. 고려사에 첫 기록이 등장하며, 초기에는 고급 궁중 음식으로 취급되었습니다. 근현대에 들어 중국 화교 유입과 1980년대 냉동만두 대량 생산을 거쳐 현재의 대중적인 주식 및 간식으로 자리 잡았습니다. 한국에서는 길거리에서 만두를 파는 가게들이 많았지만, 비비고 냉동 만두가 인기를 끌면서 비비고 냉동 만두보다 맛없는 만두 가게는 모두 문을 닫았다는 말도 있습니다. <button class="hangul-sound-btn" onclick="speakKorean('한국 만두는 고려시대 원나라를 통해 전래된 전통 음식입니다')" aria-label="Listen">🔊</button></div></div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <span class="tip-icon">💡</span>
+      <div class="tip-content">
+        <div class="tip-label">The Gongal Mandu (공갈만두) Legend</div>
+        <div class="tip-text">Gongal mandu (공갈만두) is a hollow mandu — the wrapper is big, the inside is nearly empty. It was traditionally sold by street vendors who deceived customers with large-looking dumplings containing minimal filling. Today, "gongal mandu" (공갈만두) is used as slang for anything that looks impressive but is hollow inside. Learning this word impresses any Korean.
+        <div class="kr-trans" style="margin-top:8px;">공갈만두는 껍질만 크고 속이 거의 없는 만두입니다. 전통적으로 속을 거의 채우지 않은 채 큰 만두처럼 보이게 팔던 노점 상인들에서 유래했습니다. 오늘날 '공갈만두'는 겉만 번지르르하고 속이 빈 무언가를 표현하는 속어로 쓰입니다. 이 단어를 알면 한국인에게 인상을 줄 수 있습니다. <button class="hangul-sound-btn" onclick="speakKorean('공갈만두는 속이 비어있는 만두를 뜻하며, 겉만 화려한 것을 비유할 때도 씁니다.')" aria-label="Listen">🔊</button></div>
+      </div>
+      </div>
+    </div>
+
+    <!-- COOKING METHODS -->
+    <div class="food-cat-header">🍳 조리법별 종류 By Cooking Method <span class="food-cat-count">6 types</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">The same dumpling filling transforms completely depending on how it's cooked. Each method brings out different textures and flavors from the same mandu.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">같은 만두 속재료도 조리 방법에 따라 완전히 다른 식감과 맛이 납니다. 각각의 조리법은 같은 만두에서 서로 다른 매력을 이끌어냅니다. <button class="hangul-sound-btn" onclick="speakKorean('같은 만두라도 조리 방법에 따라 맛과 식감이 달라집니다.')" aria-label="Listen">🔊</button></div>
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🥟
+          <span class="food-card-brand-badge">Pan-Fried</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">군만두 <button class="hangul-sound-btn" onclick="speakKorean('군만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Gunmandu</div>
+          <div class="food-card-meta">Pan-Fried Dumpling · 굽다 = to grill/fry</div>
+          <p class="food-card-desc">Pan-fried until the bottom is golden and crispy while the top stays soft and chewy. The most popular preparation — the contrast between crispy base and tender filling is the defining characteristic. Found at all bunsikjib (분식집: casual Korean snack bars).</p>
+          <div class=kr-trans>바닥을 바삭하게 굽고 위는 부드럽게 유지하는 팬에 구운 만두입니다. 바삭한 바닥과 부드러운 속재료의 대비가 특징이며, 모든 분식집에서 찾을 수 있습니다. <button class=hangul-sound-btn onclick=speakKorean('군만두는 바닥이 바삭하고 위는 부드러운 팬에 구운 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Most Popular</span><span class="food-tag">Crispy Bottom</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">♨️
+          <span class="food-card-brand-badge">Steamed</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">찐만두 <button class="hangul-sound-btn" onclick="speakKorean('찐만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Jjin Mandu</div>
+          <div class="food-card-meta">Steamed Dumpling · 찌다 = to steam</div>
+          <p class="food-card-desc">Steamed in a bamboo or metal steamer — soft, plump, juicy. The gentlest cooking method — preserves the most filling moisture and delicate flavor. Often served with soy dipping sauce and ginger.</p>
+          <div class=kr-trans>대나무 또는 금속 찜기에 쪄낸 만두로 부드럽고 통통하며 촉촉합니다. 가장 순한 조리법으로 속재료의 수분과 섬세한 맛을 가장 잘 보존합니다. <button class=hangul-sound-btn onclick=speakKorean('찐만두는 찜기에 쪄낸 부드럽고 촉촉한 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Soft</span><span class="food-tag">Healthy</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">💧
+          <span class="food-card-brand-badge">Boiled</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">물만두 <button class="hangul-sound-btn" onclick="speakKorean('물만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Mul Mandu</div>
+          <div class="food-card-meta">Boiled Dumpling · 물 = water</div>
+          <p class="food-card-desc">Boiled in water until translucent and tender. Lighter and cleaner than fried versions. Often served with a seasoned soy dipping sauce. Pulmuone's 물만두 is one of Korea's best-loved frozen products.</p>
+          <div class=kr-trans>물에 삶아 속이 비칠 정도로 부드럽게 익힌 만두입니다. 튀긴 것보다 가볍고 깔끔하며, 풀무원의 물만두는 한국에서 가장 사랑받는 냉동 제품 중 하나입니다. <button class=hangul-sound-btn onclick=speakKorean('물만두는 물에 삶아 부드럽고 가벼운 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Light</span><span class="food-tag">Transparent Skin</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🛢️
+          <span class="food-card-brand-badge">Deep-Fried</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">튀김만두 <button class="hangul-sound-btn" onclick="speakKorean('튀김만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Twigim Mandu</div>
+          <div class="food-card-meta">Deep-Fried Dumpling · 튀기다 = to deep-fry</div>
+          <p class="food-card-desc">Completely submerged and deep-fried until shatteringly crispy all over. The most indulgent form — maximum crunch, rich golden exterior. A street food staple. Often served at gilgeori (길거리: street) stalls and bunsikjib (분식집: casual Korean snack bars).</p>
+          <div class=kr-trans>완전히 기름에 잠겨 전체가 바삭하게 튀겨진 만두입니다. 가장 진한 식감으로 최대의 바삭함과 풍부한 황금색 겉면이 특징입니다. 길거리와 분식집의 대표 음식입니다. <button class=hangul-sound-btn onclick=speakKorean('튀김만두는 기름에 튀겨 전체가 바삭바삭한 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Street Food</span><span class="food-tag">All Crispy</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu" style="font-size:2.5rem;">🍲
+          <span class="food-card-brand-badge">Soup</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">만두국 <button class="hangul-sound-btn" onclick="speakKorean('만두국')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Manduguk</div>
+          <div class="food-card-meta">Dumpling Soup · 국 = soup</div>
+          <p class="food-card-desc">Mandu cooked in a clear beef or anchovy broth. The ultimate winter and New Year dish — eaten on 설날 (Lunar New Year) for luck. Adding tteok (떡) makes it 떡만둣국. Garnished with egg strips and seaweed.</p>
+          <div class=kr-trans>맑은 소고기 또는 멸치 육수에 만두를 끓인 요리입니다. 설날에 먹는 겨울 대표 음식으로, 떡을 추가하면 떡만둣국이 됩니다. 달걀 지단과 김으로 장식합니다. <button class=hangul-sound-btn onclick=speakKorean('만두국은 맑은 육수에 만두를 넣어 끓인 따뜻한 국입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">New Year Ritual</span><span class="food-tag">Warm Soup</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🔥
+          <span class="food-card-brand-badge">Hotpot</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">전골만두 <button class="hangul-sound-btn" onclick="speakKorean('전골만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Jeongol Mandu</div>
+          <div class="food-card-meta">Hot Pot Mandu · 전골 = table-top hot pot</div>
+          <p class="food-card-desc">Mandu cooked in a spicy jeongol (전골: table-top hot pot) with vegetables, mushrooms, and glass noodles. A communal eating experience — the broth becomes richer as more ingredients are added. A cold-weather favorite.</p>
+          <div class=kr-trans>채소, 버섯, 당면과 함께 매운 전골 냄비에 끓인 만두입니다. 재료가 추가될수록 육수가 깊어지는 공동 식사 경험이며 추운 날씨에 특히 인기입니다. <button class=hangul-sound-btn onclick=speakKorean('전골만두는 매운 전골 냄비에 채소와 함께 끓인 만두 요리입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Spicy</span><span class="food-tag">Group Dining</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BY FILLING -->
+    <div class="food-cat-header">🥩 소에 따른 종류 By Filling <span class="food-cat-count">12 varieties</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">What's inside a mandu defines its identity. Korea has developed dozens of filling combinations, from simple pork-cabbage to vegan temple versions.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">만두 속재료가 만두의 정체성을 결정합니다. 한국은 단순한 돼지고기-배추 속부터 사찰식 채식 만두까지 수십 가지 속재료 조합을 발전시켜 왔습니다. <button class="hangul-sound-btn" onclick="speakKorean('만두의 속재료가 만두의 종류를 결정합니다. 돼지고기, 김치, 채소 등 다양합니다.')" aria-label="Listen">🔊</button></div>
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🥩
+          <span class="food-card-brand-badge">Pork</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">고기만두 <button class="hangul-sound-btn" onclick="speakKorean('고기만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Gogi Mandu</div>
+          <div class="food-card-meta">Meat Dumpling · 고기 = meat (pork)</div>
+          <p class="food-card-desc">The classic — ground pork mixed with tofu, glass noodles, garlic, ginger, scallions, and sesame oil. Balanced and rich. The default "mandu" most Koreans think of. Bibiogo's version dominates the frozen market.</p>
+          <div class=kr-trans>두부, 당면, 마늘, 생강, 파, 참기름을 섞은 돼지고기 만두입니다. 균형 잡힌 맛으로 대부분의 한국인이 만두라고 하면 떠올리는 기본 만두입니다. <button class=hangul-sound-btn onclick=speakKorean('고기만두는 돼지고기와 두부를 섞은 한국의 기본 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">The Classic</span><span class="food-tag">Pork + Tofu</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-kimchi">🥬
+          <span class="food-card-brand-badge">Kimchi</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">김치만두 <button class="hangul-sound-btn" onclick="speakKorean('김치만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Kimchi Mandu</div>
+          <div class="food-card-meta">Kimchi Dumpling · 김치 filling</div>
+          <p class="food-card-desc">Fermented kimchi mixed with pork and tofu — tangy, slightly sour, deeply savory. The fermentation adds complexity that plain pork mandu lacks. Best in winter when kimchi is perfectly aged. A national favorite.</p>
+          <div class=kr-trans>잘 익은 김치에 돼지고기와 두부를 섞은 만두입니다. 발효의 복합적인 맛이 더해져 겨울에 김치가 완벽하게 숙성되었을 때 가장 맛있습니다. <button class=hangul-sound-btn onclick=speakKorean('김치만두는 잘 익은 김치와 돼지고기를 넣은 새콤하고 맛있는 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Spicy</span><span class="food-tag">Fermented</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-beef">🥩
+          <span class="food-card-brand-badge">Galbi</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">갈비만두 <button class="hangul-sound-btn" onclick="speakKorean('갈비만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Galbi Mandu</div>
+          <div class="food-card-meta">Short Rib Dumpling · 갈비 = short rib</div>
+          <p class="food-card-desc">Premium mandu filled with braised short rib (갈비) meat. Rich, deeply savory, slightly sweet from the soy marinade. More expensive than standard mandu — considered an upscale restaurant version. Intensely satisfying.</p>
+          <div class=kr-trans>갈비찜 고기를 속에 채운 프리미엄 만두입니다. 진하고 깊은 감칠맛과 간장 양념의 은은한 단맛이 특징이며 일반 만두보다 비싼 고급 식당 버전입니다. <button class=hangul-sound-btn onclick=speakKorean('갈비만두는 갈비 고기를 속재료로 사용한 고급 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-premium">Premium</span><span class="food-tag">Short Rib</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🦐
+          <span class="food-card-brand-badge">Shrimp</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">새우만두 <button class="hangul-sound-btn" onclick="speakKorean('새우만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Saewu Mandu</div>
+          <div class="food-card-meta">Shrimp Dumpling · 새우 = shrimp</div>
+          <p class="food-card-desc">Minced shrimp mixed with pork and chives — the seafood cousin of standard gogi mandu. The shrimp adds sweetness and a springy bite. Common at Chinese-Korean (중국집) restaurants and upscale mandu shops.</p>
+          <div class=kr-trans>돼지고기와 부추를 섞은 다진 새우 만두입니다. 새우의 달콤함과 탄력 있는 식감이 더해져, 중화요리 식당과 고급 만두 전문점에서 흔히 볼 수 있습니다. <button class=hangul-sound-btn onclick=speakKorean('새우만두는 새우를 주재료로 한 달콤하고 탄력 있는 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag">Seafood</span><span class="food-tag">Sweet Shrimp</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🌊
+          <span class="food-card-brand-badge">Seafood</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">해물만두 <button class="hangul-sound-btn" onclick="speakKorean('해물만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Haemul Mandu</div>
+          <div class="food-card-meta">Seafood Dumpling · 해물 = seafood</div>
+          <p class="food-card-desc">Mixed seafood filling — crab, shrimp, squid, and sometimes clams bound with pork and vegetables. Ocean umami in dumpling form. Heavier and richer than shrimp mandu alone. Popular in coastal cities like Busan.</p>
+          <div class=kr-trans>게살, 새우, 오징어, 조개 등 다양한 해산물을 돼지고기와 채소에 섞은 만두입니다. 바다의 감칠맛이 풍부하며 부산 같은 해안 도시에서 인기입니다. <button class=hangul-sound-btn onclick=speakKorean('해물만두는 새우, 오징어, 게살 등 해산물이 가득한 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag">Mixed Seafood</span><span class="food-tag">Coastal Style</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🥦
+          <span class="food-card-brand-badge">Veggie</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">채소만두 <button class="hangul-sound-btn" onclick="speakKorean('채소만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Chaesu Mandu</div>
+          <div class="food-card-meta">Vegetable Dumpling · 채소 = vegetable</div>
+          <p class="food-card-desc">All-vegetable filling — usually tofu, glass noodles, spinach, mushrooms, chives, and seasoned well. Popular with vegetarians (채식주의자). Lighter than meat versions — a good choice for those watching fat intake.</p>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Veggie</span><span class="food-tag">Lighter</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">⬜
+          <span class="food-card-brand-badge">Tofu</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">두부만두 <button class="hangul-sound-btn" onclick="speakKorean('두부만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Dubu Mandu</div>
+          <div class="food-card-meta">Tofu Dumpling · 두부 = tofu</div>
+          <p class="food-card-desc">Tofu-dominant filling — crumbled tofu with seasonings, garlic, scallion, and sesame oil. Subtle and clean in flavor. Often preferred for its lighter protein. A temple food (사찰음식) variant omits even scallions.</p>
+          <div class=kr-trans>두부를 주재료로 마늘, 파, 참기름으로 양념한 만두입니다. 맛이 담백하고 깔끔하며, 사찰 음식 버전은 파와 마늘도 생략합니다. <button class=hangul-sound-btn onclick=speakKorean('두부만두는 두부를 주재료로 한 담백하고 깔끔한 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag">Temple Style</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🫙
+          <span class="food-card-brand-badge">Glass Noodle</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">당면만두 <button class="hangul-sound-btn" onclick="speakKorean('당면만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Dangmyeon Mandu</div>
+          <div class="food-card-meta">Glass Noodle Dumpling · 당면 = glass noodles</div>
+          <p class="food-card-desc">Glass noodles (당면) as the primary filling along with pork and vegetables. The noodles add a chewy, slippery texture and absorb all the seasoning oil. A popular budget-friendly mandu sold by street stalls.</p>
+          <div class=kr-trans>당면을 주재료로 돼지고기와 채소를 곁들인 만두입니다. 당면이 쫄깃하고 미끄러운 식감을 더하며 양념 기름을 흡수합니다. 인기 있는 저렴한 길거리 만두입니다. <button class=hangul-sound-btn onclick=speakKorean('당면만두는 당면을 주재료로 한 쫄깃하고 저렴한 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Chewy</span><span class="food-tag">Street Food</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-beef">🦞
+          <span class="food-card-brand-badge">Crab</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">게살만두 <button class="hangul-sound-btn" onclick="speakKorean('게살만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Gesal Mandu</div>
+          <div class="food-card-meta">Crab Meat Dumpling · 게살 = crab meat</div>
+          <p class="food-card-desc">Imitation or real crab meat mixed with cream cheese or light mayonnaise. A modern, restaurant-style creation. Often shaped differently (white, thin-skinned) to distinguish from traditional mandu. Delicate and rich.</p>
+          <div class=kr-trans>게살 또는 모조 게살에 크림치즈나 마요네즈를 섞은 현대식 만두입니다. 하얗고 얇은 껍질이 특징이며 섬세하고 풍부한 맛의 레스토랑 스타일 창작 만두입니다. <button class=hangul-sound-btn onclick=speakKorean('게살만두는 게살을 주재료로 한 현대적인 고급 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-premium">Premium</span><span class="food-tag">Modern Style</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🫕
+          <span class="food-card-brand-badge">Pork Belly</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">삼겹살만두 <button class="hangul-sound-btn" onclick="speakKorean('삼겹살만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Samgyeopsal Mandu</div>
+          <div class="food-card-meta">Pork Belly Dumpling · 삼겹살 = pork belly</div>
+          <p class="food-card-desc">Diced 삼겹살 (pork belly) as the star filling — extra fatty, rich, and indulgent. Often paired with kimchi for balance. A premium street food item — thicker filling, bolder flavor than standard 고기만두.</p>
+          <div class=kr-trans>삼겹살 조각을 주재료로 한 만두로 지방이 풍부하고 진한 맛이 납니다. 균형을 위해 김치와 함께 제공되는 경우가 많으며, 일반 고기만두보다 속이 두껍고 맛이 진합니다. <button class=hangul-sound-btn onclick=speakKorean('삼겹살만두는 삼겹살을 속재료로 한 진하고 풍부한 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-premium">Premium</span><span class="food-tag">Pork Belly</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🍚
+          <span class="food-card-brand-badge">Rice</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">밥만두 <button class="hangul-sound-btn" onclick="speakKorean('밥만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Bap Mandu</div>
+          <div class="food-card-meta">Rice Dumpling · 밥 = rice</div>
+          <p class="food-card-desc">Rice mixed with seasoned ingredients inside the wrapper. A filling and hearty variant popular in the military (군대) and school cafeterias (학교 급식). Hearty, carb-dense, and satisfying for those who want substance.</p>
+          <div class=kr-trans>만두피 안에 양념된 밥을 채운 푸짐한 만두입니다. 군대와 학교 급식에서 인기 있는 버전으로 탄수화물이 풍부하고 든든합니다. <button class=hangul-sound-btn onclick=speakKorean('밥만두는 밥을 속재료로 한 든든하고 포만감 있는 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Filling</span><span class="food-tag">Cafeteria</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🫠
+          <span class="food-card-brand-badge">Open</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">개방만두 <button class="hangul-sound-btn" onclick="speakKorean('개방만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Open-Face Mandu</div>
+          <div class="food-card-meta">Open Dumpling · Modern Restaurant Style</div>
+          <p class="food-card-desc">Modern restaurant-style mandu left partially open at the top so the filling is visible — a Chinese-influenced shumai (슈마이) style. Steamed, with a decorative element like a shrimp or mushroom on top.</p>
+          <div class=kr-trans>속재료가 보이도록 윗부분을 열어둔 현대식 레스토랑 스타일 만두입니다. 중국의 슈마이 스타일에서 영향을 받은 찜 만두로 위에 새우나 버섯으로 장식합니다. <button class=hangul-sound-btn onclick=speakKorean('개방만두는 위가 열려 속재료가 보이는 현대적인 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-new">Modern</span><span class="food-tag">Restaurant Style</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BRANDS -->
+    <div class="food-cat-header">🏪 주요 브랜드 Major Brands <span class="food-cat-count">10 brands</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">Korea's frozen mandu market is dominated by a handful of brands — the most globally successful being CJ's 비비고, which became the #1 frozen dumpling brand in the US, China, and Southeast Asia.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">한국 냉동 만두 시장은 몇 개의 브랜드가 장악하고 있습니다 — 그 중 CJ의 비비고가 가장 글로벌하게 성공해, 미국·중국·동남아시아에서 냉동 만두 브랜드 1위가 되었습니다. <button class="hangul-sound-btn" onclick="speakKorean('비비고는 한국 냉동 만두 시장의 대표 브랜드로 미국과 아시아에서 1위를 차지하고 있습니다.')" aria-label="Listen">🔊</button></div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">👑
+          <span class="food-card-brand-badge">CJ 비비고</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">비비고 왕교자 <button class="hangul-sound-btn" onclick="speakKorean('비비고 왕교자')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Bibigo Wang Gyoja</div>
+          <div class="food-card-meta">CJ CheilJedang · CJ제일제당 · Global #1</div>
+          <p class="food-card-desc">CJ's flagship product — the large (왕 = king) gyoza-style dumpling with juicy pork, tofu, and chive filling. Became the #1 dumpling brand in multiple countries. The thin, chewy skin is the key. Available at Costco worldwide.</p>
+          <div class=kr-trans>CJ의 대표 상품인 크고 즙이 많은 교자 스타일 만두입니다. 돼지고기, 두부, 부추 속재료로 여러 나라에서 만두 브랜드 1위가 되었습니다. 얇고 쫄깃한 껍질이 핵심이며 전 세계 코스트코에서 판매됩니다. <button class=hangul-sound-btn onclick=speakKorean('비비고 왕교자는 전 세계적으로 사랑받는 한국 대표 냉동 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Global #1</span><span class="food-tag food-tag-premium">Thin Skin</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-kimchi">🥬
+          <span class="food-card-brand-badge">CJ 비비고</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">비비고 김치만두 <button class="hangul-sound-btn" onclick="speakKorean('비비고 김치만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Bibigo Kimchi Mandu</div>
+          <div class="food-card-meta">CJ CheilJedang · CJ제일제당</div>
+          <p class="food-card-desc">Bibigo's kimchi dumpling — perfectly fermented kimchi filling balanced with pork and tofu. The tangy punch of kimchi works beautifully inside a dumpling skin. A fan favorite for those who want bold flavor.</p>
+          <div class=kr-trans>비비고의 김치 만두로 잘 숙성된 김치 속재료에 돼지고기와 두부를 균형 있게 배합했습니다. 김치의 새콤함이 만두피 안에서 잘 어우러지는 진한 맛의 만두입니다. <button class=hangul-sound-btn onclick=speakKorean('비비고 김치만두는 잘 익은 김치로 속을 채운 맛있는 냉동 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Spicy</span><span class="food-tag">Kimchi</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🌿
+          <span class="food-card-brand-badge">풀무원</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">풀무원 물만두 <button class="hangul-sound-btn" onclick="speakKorean('풀무원 물만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Pulmuone Mul Mandu</div>
+          <div class="food-card-meta">Pulmuone · 풀무원 · Clean Ingredients</div>
+          <p class="food-card-desc">Pulmuone's health-focused boiled dumpling — cleaner ingredients, no artificial preservatives. The brand is known for organic and natural products. The 물만두 is soft, light, and less fatty than competitor versions.</p>
+          <div class=kr-trans>풀무원의 건강 지향 삶은 만두로 깔끔한 재료에 인공 방부제가 없습니다. 유기농 자연 제품으로 유명한 브랜드이며 경쟁사 버전보다 부드럽고 가볍습니다. <button class=hangul-sound-btn onclick=speakKorean('풀무원 물만두는 건강한 재료로 만든 부드럽고 가벼운 삶은 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Clean</span><span class="food-tag">No Preservatives</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🏠
+          <span class="food-card-brand-badge">해태</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">해태 고향만두 고향만두 <button class="hangul-sound-btn" onclick="speakKorean('해태 고향만두 고향만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Haitai Gohyang Mandu</div>
+          <div class="food-card-meta">Haitai · 해태제과 · Nostalgia Brand</div>
+          <p class="food-card-desc">고향 means "hometown" — Haitai's mandu evokes nostalgia for homemade dumplings. A longtime Korean market staple that pre-dates the Bibigo era. Beloved by older generations for its familiar, home-style flavor profile.</p>
+          <div class=kr-trans>고향은 고향이라는 뜻으로, 해태 만두는 집에서 만든 만두의 향수를 불러일으킵니다. 비비고 시대 이전부터 있던 오랜 시장 필수품으로 윗세대에게 친숙한 가정식 맛으로 사랑받습니다. <button class=hangul-sound-btn onclick=speakKorean('해태 고향만두는 할머니 손맛 같은 정겨운 한국 전통 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Nostalgic</span><span class="food-tag">Hometown Taste</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🎯
+          <span class="food-card-brand-badge">동원</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">동원 개성만두 개성만두 <button class="hangul-sound-btn" onclick="speakKorean('동원 개성만두 개성만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Dongwon Gaeseong Mandu</div>
+          <div class="food-card-meta">Dongwon · 동원 · Gaeseong Style</div>
+          <p class="food-card-desc">Styled after the historical Gaeseong (개성) mandu tradition from North Korea — known for large size, rich pork filling, and distinctive half-moon shape. Gaeseong was historically the mandu capital of Korea.</p>
+          <div class=kr-trans>북한 역사 도시 개성의 만두 전통을 본뜬 만두입니다. 큰 크기, 풍부한 돼지고기 속재료, 뚜렷한 반달 모양이 특징이며 개성은 역사적으로 한국 만두의 수도였습니다. <button class=hangul-sound-btn onclick=speakKorean('동원 개성만두는 고려 시대 개성 만두 전통을 계승한 크고 풍성한 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Gaeseong Historic</span><span class="food-tag">Large Size</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🏪
+          <span class="food-card-brand-badge">사조</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">사조 대림 만두 사조만두 <button class="hangul-sound-btn" onclick="speakKorean('사조 대림 만두 사조만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Sajo Daerim Mandu</div>
+          <div class="food-card-meta">Sajo Daerim · 사조대림 · Budget Staple</div>
+          <p class="food-card-desc">Sajo's budget-friendly mandu line — excellent value for money. A staple for Korean households that want large quantities at low cost. Consistent quality and widely available at discount supermarkets and 창고형 stores.</p>
+          <div class=kr-trans>사조의 가성비 좋은 만두 라인으로 많은 양을 저렴하게 원하는 한국 가정의 필수품입니다. 일관된 품질로 할인 마트와 창고형 매장에서 널리 구할 수 있습니다. <button class=hangul-sound-btn onclick=speakKorean('사조 대림 만두는 가성비 좋고 대용량으로 구매할 수 있는 실속 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag">Budget Friendly</span><span class="food-tag food-tag-classic">Bulk Buy</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🏆
+          <span class="food-card-brand-badge">손만두</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">할매손만두 <button class="hangul-sound-btn" onclick="speakKorean('할매손만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Halmae Sonmandu</div>
+          <div class="food-card-meta">Grandmother's Hand-Made Style</div>
+          <p class="food-card-desc">Small-batch, handmade-style mandu sold at traditional markets (재래시장) — "할매" means grandmother. Often made fresh and sold in large quantities at markets like Gwangjang Market (광장시장) in Seoul. Thicker skins, more rustic.</p>
+          <div class=kr-trans>전통 재래시장에서 판매되는 소량 수제 스타일 만두입니다. 할매는 할머니를 뜻하며 서울 광장시장 같은 곳에서 신선하게 만들어 판매됩니다. 껍질이 두껍고 더 투박한 맛이 특징입니다. <button class=hangul-sound-btn onclick=speakKorean('할매손만두는 할머니의 손맛을 살린 전통 재래시장 수제 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Market Fresh</span><span class="food-tag">Hand-Made</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">👑
+          <span class="food-card-brand-badge">왕만두</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">왕만두 <button class="hangul-sound-btn" onclick="speakKorean('왕만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Wang Mandu (King Dumpling)</div>
+          <div class="food-card-meta">Multiple Brands · 왕 = King (oversized)</div>
+          <p class="food-card-desc">Any oversized mandu — 왕 (king) denotes extra-large size. The filling is denser and more generous. Found at convenience stores (편의점) and bunsikjib (분식집) everywhere. A quick, filling meal in one piece. Street vendors make these fresh to order.</p>
+          <div class=kr-trans>왕은 특대형 크기를 뜻합니다. 속재료가 더 밀도 있고 풍성하며 편의점과 분식집 어디에서나 찾을 수 있습니다. 한 개로 든든한 식사가 되며 길거리 상인들이 즉석에서 만들어 줍니다. <button class=hangul-sound-btn onclick=speakKorean('왕만두는 속이 가득 찬 대형 만두로 편의점과 분식집에서 쉽게 찾을 수 있습니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Huge Size</span><span class="food-tag">Street Food</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🫙
+          <span class="food-card-brand-badge">군만두집</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">납작만두 <button class="hangul-sound-btn" onclick="speakKorean('납작만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Napjak Mandu (Flat Dumpling)</div>
+          <div class="food-card-meta">Regional Style · Flat &amp; Pan-Fried</div>
+          <p class="food-card-desc">납작 = flat. A thinner, wider shape that maximizes crispy surface area when pan-fried. Popular in certain regions. Used in 납작만두볶음 (stir-fried flat mandu) — a popular street snack with tteokbokki sauce.</p>
+          <div class=kr-trans>납작은 평평하다는 뜻입니다. 팬에 구울 때 바삭한 표면적을 최대화하는 더 얇고 넓은 모양이며, 떡볶이 소스를 곁들인 납작만두볶음으로 먹는 인기 길거리 간식입니다. <button class=hangul-sound-btn onclick=speakKorean('납작만두는 납작하게 만들어 팬에 구운 바삭한 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag">Flat Style</span><span class="food-tag food-tag-classic">Max Crispy</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">😂
+          <span class="food-card-brand-badge">공갈만두</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">공갈만두 <button class="hangul-sound-btn" onclick="speakKorean('공갈만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Gongal Mandu (Hollow Dumpling)</div>
+          <div class="food-card-meta">Cultural Legend · Street Food Deception</div>
+          <p class="food-card-desc">The infamous "fake" mandu — enormous wrapper concealing almost no filling inside. Sold by street vendors to deceive hungry customers. Now a cultural joke. "공갈" means bluffing or deceiving. Used as modern slang for anything all-show-no-substance.</p>
+          <div class=kr-trans>악명 높은 가짜 만두로 거대한 껍질 안에 거의 아무것도 없습니다. 공갈은 허풍이나 속임을 뜻하며 겉만 번지르르한 모든 것에 쓰이는 현대 속어입니다. 길거리 상인들이 허기진 손님을 속이기 위해 팔았습니다. <button class=hangul-sound-btn onclick=speakKorean('공갈만두는 껍질만 크고 속이 텅 빈 만두로, 겉치레를 비유하는 속어입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-viral">Slang Origin</span><span class="food-tag">Cultural Joke</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SPECIAL / HOLIDAY -->
+    <div class="food-cat-header">🎊 특별한 만두 Special &amp; Seasonal <span class="food-cat-count">4 varieties</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">These mandu carry deep cultural or historical significance — from Goryeo dynasty origins to UNESCO-recognized holiday traditions.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">이 만두들은 고려 시대의 기원부터 유네스코 등재 명절 전통까지 깊은 문화적·역사적 의미를 담고 있습니다. <button class="hangul-sound-btn" onclick="speakKorean('이 만두들은 깊은 역사와 문화적 의미를 가지고 있습니다.')" aria-label="Listen">🔊</button></div>
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🎊
+          <span class="food-card-brand-badge">설날</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">떡만둣국 <button class="hangul-sound-btn" onclick="speakKorean('떡만둣국')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Tteok Mandutguk</div>
+          <div class="food-card-meta">Lunar New Year Soup · 설날 Ritual</div>
+          <p class="food-card-desc">Rice cake (떡) + mandu (만두) in clear broth — the definitive Lunar New Year (설날) dish. Eating a bowl on New Year's Day is believed to add one year of age and bring good fortune. Garnished with egg strips, nori, and sesame.</p>
+          <div class=kr-trans>맑은 육수에 떡과 만두를 함께 넣은 설날의 대표 음식입니다. 새해 당일에 먹으면 한 살을 더 먹고 행운을 가져온다고 믿습니다. 달걀 지단, 김, 참깨로 장식합니다. <button class=hangul-sound-btn onclick=speakKorean('떡만둣국은 설날에 먹는 전통 국물 요리로 떡과 만두가 함께 들어갑니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">설날 Ritual</span><span class="food-tag">New Year</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🌸
+          <span class="food-card-brand-badge">봄</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">봄나물만두 <button class="hangul-sound-btn" onclick="speakKorean('봄나물만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Spring Herb Mandu</div>
+          <div class="food-card-meta">Spring Seasonal · Wild Spring Greens</div>
+          <p class="food-card-desc">Spring edition featuring seasonal wild herbs — 달래 (wild chive), 쑥 (mugwort), 냉이 (shepherd's purse). Made at home during spring when herbs are freshest. A seasonal tradition in many Korean households.</p>
+          <div class=kr-trans>달래, 쑥, 냉이 등 제철 야생 봄나물을 속재료로 넣은 봄 한정 만두입니다. 나물이 가장 신선한 봄철 집에서 만드는 계절 전통 음식입니다. <button class=hangul-sound-btn onclick=speakKorean('봄나물만두는 봄철 제철 야생 나물을 넣어 만드는 계절 한정 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-new">Spring Only</span><span class="food-tag">Wild Herbs</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🐟
+          <span class="food-card-brand-badge">사찰</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">사찰만두 <button class="hangul-sound-btn" onclick="speakKorean('사찰만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Temple Mandu</div>
+          <div class="food-card-meta">Buddhist Temple Food · No 오신채</div>
+          <p class="food-card-desc">Buddhist temple cuisine mandu — absolutely no meat, no garlic, no onion, no chive, no leek (the five pungent vegetables 오신채 are forbidden). Uses mushroom, tofu, and seasonal vegetables only. Pure, delicate, and spiritual.</p>
+          <div class=kr-trans>불교 사찰 음식 만두로 고기, 마늘, 양파, 부추, 파 등 오신채가 일절 없습니다. 버섯, 두부, 제철 채소만 사용하며 순수하고 섬세하며 영적인 음식입니다. <button class=hangul-sound-btn onclick=speakKorean('사찰만두는 불교 사찰 음식으로 육류와 오신채 없이 만든 순수한 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Vegan</span><span class="food-tag">Temple Food</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-mandu">🏔️
+          <span class="food-card-brand-badge">개성</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">개성만두 <button class="hangul-sound-btn" onclick="speakKorean('개성만두')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Gaeseong Mandu</div>
+          <div class="food-card-meta">North Korean Style · Historical Capital</div>
+          <p class="food-card-desc">The most historically prestigious Korean mandu style — from Gaeseong (개성), the Goryeo dynasty capital now in North Korea. Very large, thicker wrapper, rich pork and kimchi filling, crescent moon shape. Considered the ancestor of all Korean mandu.</p>
+          <div class=kr-trans>가장 역사적으로 권위 있는 한국 만두 스타일로 고려 왕조의 수도였던 개성에서 유래했습니다. 크기가 매우 크고 껍질이 두꺼우며 돼지고기와 김치 속재료에 초승달 모양이 특징입니다. 모든 한국 만두의 조상으로 여겨집니다. <button class=hangul-sound-btn onclick=speakKorean('개성만두는 고려 왕조의 수도 개성에서 유래한 가장 전통적인 한국 만두입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Historical</span><span class="food-tag">Goryeo Origin</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VOCAB -->
+    <div class="culture-sub-heading" style="margin-top:40px;">📖 만두 어휘 · Mandu Vocabulary</div>
+    <table class="vocab-table">
+      <thead><tr><th>Korean</th><th>Romanization</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td class="kor-cell">만두</td><td class="rom-cell">mandu</td><td class="eng-cell">Korean dumpling</td></tr>
+        <tr><td class="kor-cell">만두피</td><td class="rom-cell">mandubi</td><td class="eng-cell">dumpling wrapper/skin</td></tr>
+        <tr><td class="kor-cell">만두소 / 속</td><td class="rom-cell">manduso / sok</td><td class="eng-cell">dumpling filling</td></tr>
+        <tr><td class="kor-cell">군만두</td><td class="rom-cell">gunmandu</td><td class="eng-cell">pan-fried dumpling</td></tr>
+        <tr><td class="kor-cell">찐만두</td><td class="rom-cell">jjin mandu</td><td class="eng-cell">steamed dumpling</td></tr>
+        <tr><td class="kor-cell">물만두</td><td class="rom-cell">mul mandu</td><td class="eng-cell">boiled dumpling</td></tr>
+        <tr><td class="kor-cell">튀김만두</td><td class="rom-cell">twigim mandu</td><td class="eng-cell">deep-fried dumpling</td></tr>
+        <tr><td class="kor-cell">왕만두</td><td class="rom-cell">wang mandu</td><td class="eng-cell">king-size dumpling</td></tr>
+        <tr><td class="kor-cell">만두국</td><td class="rom-cell">manduguk</td><td class="eng-cell">dumpling soup</td></tr>
+        <tr><td class="kor-cell">떡만둣국</td><td class="rom-cell">tteok mandutguk</td><td class="eng-cell">rice cake &amp; dumpling soup (New Year)</td></tr>
+        <tr><td class="kor-cell">공갈만두</td><td class="rom-cell">gongal mandu</td><td class="eng-cell">hollow mandu (slang: all show, no substance)</td></tr>
+        <tr><td class="kor-cell">접다</td><td class="rom-cell">jeopda</td><td class="eng-cell">to fold (as in fold a dumpling)</td></tr>
+        <tr><td class="kor-cell">주름</td><td class="rom-cell">jureum</td><td class="eng-cell">pleats/folds on the wrapper</td></tr>
+        <tr><td class="kor-cell">찍어 먹다</td><td class="rom-cell">jjigeo meokda</td><td class="eng-cell">to dip and eat</td></tr>
+        <tr><td class="kor-cell">간장 소스</td><td class="rom-cell">ganjang soseu</td><td class="eng-cell">soy dipping sauce</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+          <li><a href="../learn/grammar.html">Grammar</a></li>
+          <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

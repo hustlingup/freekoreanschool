@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-Culture · 한국 문화 | 한국어 학교</title>
+  <meta name="description" content="Explore Korean culture — K-Pop, K-Drama, K-Movie, K-Food, K-Beauty, K-Fashion, gaming, sports, and the unique things that make Korea, Korea." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html" class="active"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-icon">🎵</div>
+      <div class="sidebar-brand-text">K-Culture <span>한국 문화</span></div>
+    </div>
+    <p class="sidebar-brand-desc">K-Pop, K-Drama, food, beauty, fashion, gaming, sports &amp; traditions.</p>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">CATEGORIES · 카테고리</div>
+
+    <a href="index.html" class="sidebar-link active" style="font-weight:600;padding-left:12px;">
+      <span class="link-icon">🗂️</span> Overview · 전체 보기
+    </a>
+
+    <a href="kpop.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎵</span> K-Pop <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kpop">
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📜</span> K-Pop History</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🏢</span> Agencies</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">⭐</span> Generations</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎼</span> Genres</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📺</span> Variety Shows</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎬</span> Film &amp; Acting</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">💬</span> Idol Phrases</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🔥</span> Fan Slang</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📣</span> Fan Chants</a>
+    </div>
+    <a href="kdrama.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Drama <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kdrama">
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📺</span> Drama History</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎬</span> Drama Genres</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Dramas</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎯</span> K-Drama Tropes</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💡</span> Speech Levels</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🗣️</span> Fan Culture &amp; Slang</a>
+    </div>
+    <a href="kmovie.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Movie <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kmovie">
+      <a href="kmovie.html#kmovie-history" class="sidebar-link"><span class="link-icon">📽️</span> Movie History</a>
+      <a href="kmovie.html#kmovie-genres" class="sidebar-link"><span class="link-icon">🎬</span> Movie Genres</a>
+      <a href="kmovie.html#kmovie-films" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Films</a>
+      <a href="kmovie.html#kmovie-directors" class="sidebar-link"><span class="link-icon">🎖️</span> Directors</a>
+      <a href="kmovie.html#kmovie-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kmovie.html#kmovie-dialogue" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kmovie.html#kmovie-lines" class="sidebar-link"><span class="link-icon">🗣️</span> Iconic Lines</a>
+      <a href="kmovie.html#kmovie-fanculture" class="sidebar-link"><span class="link-icon">🍿</span> Fan Culture</a>
+    </div>
+    <a href="kfood.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🍜</span> K-Food <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kfood">
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Food Goes Global</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🔥</span> Foods That Went Global</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">📅</span> K-Food Timeline</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🍽️</span> Essential Dishes</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">👨‍🍳</span> World-Famous Chefs</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🏪</span> Ordering &amp; Dining</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🌶️</span> Street Food</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🏮</span> Food Culture &amp; Drinking</a>
+      <div class="sidebar-section" style="font-size:0.62rem;margin:10px 0 4px;padding-left:4px;">DEEP DIVES · 심층 탐구</div>
+      <a href="ramyeon.html" class="sidebar-link"><span class="link-icon">🍜</span> 라면 가이드</a>
+      <a href="mandu.html" class="sidebar-link"><span class="link-icon">🥟</span> 만두 가이드</a>
+      <a href="kchicken.html" class="sidebar-link"><span class="link-icon">🍗</span> 치킨 가이드</a>
+      <a href="kbbq.html" class="sidebar-link"><span class="link-icon">🥩</span> K-BBQ 가이드</a>
+      <a href="kimchi.html" class="sidebar-link"><span class="link-icon">🥬</span> 김치 가이드</a>
+    </div>
+    <a href="kbeauty.html" class="sidebar-accordion-btn">
+      <span class="link-icon">✨</span> K-Beauty <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kbeauty">
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Beauty Goes Global</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">⏳</span> K-Beauty Timeline</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">📖</span> Beauty Vocabulary</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🧴</span> 10-Step Skincare</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌿</span> Key Ingredients</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">✨</span> Beauty Trends</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💄</span> Makeup Philosophy</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏥</span> 피부과 Culture</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💬</span> K-Beauty Dialogue</a>
+    </div>
+    <a href="kfashion.html" class="sidebar-accordion-btn">
+      <span class="link-icon">👗</span> K-Fashion <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kfashion">
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Fashion Global</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👑</span> Fashion Icons</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⏳</span> Fashion Timeline</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🎨</span> Style Aesthetics</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⭐</span> Idol Fashion</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🗓️</span> Seoul Fashion Week</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">📖</span> Fashion Vocabulary</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏙️</span> Fashion Districts</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👘</span> 한복 &amp; 전통 의상</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">💬</span> Shopping Dialogue</a>
+    </div>
+    <a href="koreanthing.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🇰🇷</span> Korean Thing <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-koreanthing">
+      <a href="koreanthing.html#bap" class="sidebar-link"><span class="link-icon">🍚</span> 밥에 미친 민족</a>
+      <a href="koreanthing.html#chokbeop" class="sidebar-link"><span class="link-icon">👶</span> 미성년자 과잉보호</a>
+      <a href="koreanthing.html#delivery" class="sidebar-link"><span class="link-icon">🛵</span> 빠른 배달</a>
+      <a href="koreanthing.html#ecology" class="sidebar-link"><span class="link-icon">🦌</span> 생태계 교란종</a>
+      <a href="koreanthing.html#table" class="sidebar-link"><span class="link-icon">🔔</span> 테이블 문화</a>
+      <a href="koreanthing.html#transport" class="sidebar-link"><span class="link-icon">🚌</span> 대중교통</a>
+      <a href="koreanthing.html#jjimjilbang" class="sidebar-link"><span class="link-icon">♨️</span> 찜질방</a>
+      <a href="koreanthing.html#surgery" class="sidebar-link"><span class="link-icon">💉</span> 성형 문화</a>
+      <a href="koreanthing.html#outdoor-drinking" class="sidebar-link"><span class="link-icon">🍺</span> 야외음주</a>
+      <a href="koreanthing.html#jeonse" class="sidebar-link"><span class="link-icon">🏠</span> 전세 제도</a>
+      <a href="koreanthing.html#traditions" class="sidebar-link"><span class="link-icon">🏮</span> 전통 문화</a>
+      <a href="koreanthing.html#sodams" class="sidebar-link"><span class="link-icon">📜</span> 속담 100선</a>
+      <a href="koreanthing.html#mbti" class="sidebar-link"><span class="link-icon">🧠</span> MBTI 열풍</a>
+      <a href="koreanthing.html#military" class="sidebar-link"><span class="link-icon">🪖</span> 군대 문화</a>
+    </div>
+    <a href="kgaming.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎮</span> K-Gaming <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kgaming">
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📊</span> K-Gaming Stats</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">⏳</span> Gaming Timeline</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🌟</span> Gaming Legends</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🎮</span> Iconic Games</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📺</span> Streaming Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏪</span> PC방 Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏆</span> Esports Leagues</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">💬</span> Gamer Slang</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📖</span> Gaming Vocabulary</a>
+    </div>
+    <a href="ksports.html" class="sidebar-accordion-btn">
+      <span class="link-icon">⚽</span> K-Sports <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-ksports">
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📊</span> Sports Overview</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚽</span> Football Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚾</span> Baseball Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🏃</span> Marathon Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🌟</span> Individual Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🥋</span> Traditional Sports</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📣</span> Cheer Chants</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+    </div>
+  </nav>
+</aside>
+
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 0px);">
+
+  <!-- HERO -->
+  <section class="travel-hero">
+    <div class="travel-hero-content">
+      <div class="hero-eyebrow animate-fade-up" style="margin-bottom:20px; display:inline-flex;">
+        <span class="dot"></span>
+        🇰🇷 · K-Culture · 한국 문화
+      </div>
+      <h1 class="travel-hero-title animate-fade-up">
+        한국 문화
+        <span class="grad-text" style="display:block; font-family:var(--font-sans);">Korean Culture Hub</span>
+      </h1>
+      <p class="travel-hero-sub animate-fade-up">
+        From K-Pop idols to spicy street food — explore the culture that's captivating the world and learn the Korean language through it.
+      </p>
+      <div class="travel-hero-stats animate-fade-up">
+        <div class="travel-hero-stat">
+          <span class="travel-hero-stat-value">9</span>
+          <span class="travel-hero-stat-label">Culture Topics</span>
+        </div>
+        <div class="travel-hero-stat">
+          <span class="travel-hero-stat-value">15+</span>
+          <span class="travel-hero-stat-label">Deep-dive Guides</span>
+        </div>
+        <div class="travel-hero-stat">
+          <span class="travel-hero-stat-value">100+</span>
+          <span class="travel-hero-stat-label">Countries Reached</span>
+        </div>
+        <div class="travel-hero-stat">
+          <span class="travel-hero-stat-value">한류</span>
+          <span class="travel-hero-stat-label">Korean Wave</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY GRID -->
+  <section class="travel-section">
+    <div class="container">
+
+      <div class="text-center mb-32 animate-on-scroll">
+        <div class="section-eyebrow">EXPLORE · 탐색하기</div>
+        <h2 class="section-title">All K-Culture Topics</h2>
+        <p class="section-desc" style="margin:0 auto;">
+          Pick a topic and dive deep — each guide covers history, vocabulary, dialogues, and cultural context to help you learn real Korean.
+        </p>
+      </div>
+
+      <div class="travel-promo-grid animate-on-scroll">
+
+        <a href="kpop.html" class="travel-promo-card">
+          <span class="travel-promo-icon">🎵</span>
+          <div>
+            <div class="travel-promo-label">Music · 음악</div>
+            <div class="travel-promo-title">K-Pop</div>
+            <div class="travel-promo-desc">History, idols, agencies, generations, fan chants, slang, and vocabulary — learn Korean through the music the world loves.</div>
+            <div class="kr-trans">K-팝의 역사, 아이돌, 기획사, 세대, 팬 응원가, 슬랭, 어휘까지 — 세계가 사랑하는 음악으로 한국어를 배워보세요.</div>
+          </div>
+          <span class="travel-promo-arrow">›</span>
+        </a>
+
+        <a href="kdrama.html" class="travel-promo-card">
+          <span class="travel-promo-icon">🎬</span>
+          <div>
+            <div class="travel-promo-label">Television · 드라마</div>
+            <div class="travel-promo-title">K-Drama</div>
+            <div class="travel-promo-desc">Drama history, genres, must-watch titles, speech levels, dialogue practice, and the fan culture behind Korea's biggest TV export.</div>
+            <div class="kr-trans">드라마 역사, 장르, 필수 작품, 말투 수준, 대화 연습, 그리고 한국 최대 TV 수출품 뒤의 팬 문화까지.</div>
+          </div>
+          <span class="travel-promo-arrow">›</span>
+        </a>
+
+        <a href="kmovie.html" class="travel-promo-card">
+          <span class="travel-promo-icon">🎬</span>
+          <div>
+            <div class="travel-promo-label">Cinema · 영화</div>
+            <div class="travel-promo-title">K-Movie</div>
+            <div class="travel-promo-desc">From Parasite to Train to Busan — discover Korean cinema's directors, iconic films, genres, and the vocabulary to talk about them.</div>
+            <div class="kr-trans">기생충부터 부산행까지 — 한국 영화의 감독, 명작, 장르, 그리고 이를 논할 어휘를 탐구해보세요.</div>
+          </div>
+          <span class="travel-promo-arrow">›</span>
+        </a>
+
+        <a href="kfood.html" class="travel-promo-card">
+          <span class="travel-promo-icon">🍜</span>
+          <div>
+            <div class="travel-promo-label">Food · 음식</div>
+            <div class="travel-promo-title">K-Food</div>
+            <div class="travel-promo-desc">Essential dishes, world-famous chefs, ordering phrases, street food, and 5 deep-dive guides: 라면, 만두, 치킨, K-BBQ, 김치.</div>
+            <div class="kr-trans">필수 음식, 세계적 셰프, 주문 표현, 길거리 음식, 그리고 5가지 심층 가이드: 라면, 만두, 치킨, K-BBQ, 김치.</div>
+          </div>
+          <span class="travel-promo-arrow">›</span>
+        </a>
+
+        <a href="kbeauty.html" class="travel-promo-card">
+          <span class="travel-promo-icon">✨</span>
+          <div>
+            <div class="travel-promo-label">Beauty · 뷰티</div>
+            <div class="travel-promo-title">K-Beauty</div>
+            <div class="travel-promo-desc">The 10-step skincare routine, iconic brands, key ingredients, beauty trends, 피부과 culture, and shopping phrases.</div>
+            <div class="kr-trans">10단계 스킨케어 루틴, 아이코닉 브랜드, 핵심 성분, 뷰티 트렌드, 피부과 문화, 쇼핑 표현까지.</div>
+          </div>
+          <span class="travel-promo-arrow">›</span>
+        </a>
+
+        <a href="kfashion.html" class="travel-promo-card">
+          <span class="travel-promo-icon">👗</span>
+          <div>
+            <div class="travel-promo-label">Fashion · 패션</div>
+            <div class="travel-promo-title">K-Fashion</div>
+            <div class="travel-promo-desc">Idol fashion, street-style aesthetics, Seoul Fashion Week, iconic brands, fashion districts, 한복, and shopping vocabulary.</div>
+            <div class="kr-trans">아이돌 패션, 스트리트 스타일, 서울 패션 위크, 아이코닉 브랜드, 패션 거리, 한복, 쇼핑 어휘까지.</div>
+          </div>
+          <span class="travel-promo-arrow">›</span>
+        </a>
+
+        <a href="koreanthing.html" class="travel-promo-card">
+          <span class="travel-promo-icon">🇰🇷</span>
+          <div>
+            <div class="travel-promo-label">Culture · 한국 문화</div>
+            <div class="travel-promo-title">Korean Thing</div>
+            <div class="travel-promo-desc">밥 obsession, 빠른 배달, 찜질방, MBTI fever, 군대 culture, 전세, outdoor drinking, and 100 essential Korean proverbs.</div>
+            <div class="kr-trans">밥 집착, 빠른 배달, 찜질방, MBTI 열풍, 군대 문화, 전세 제도, 야외음주, 속담 100선까지.</div>
+          </div>
+          <span class="travel-promo-arrow">›</span>
+        </a>
+
+        <a href="kgaming.html" class="travel-promo-card">
+          <span class="travel-promo-icon">🎮</span>
+          <div>
+            <div class="travel-promo-label">Gaming · 게임</div>
+            <div class="travel-promo-title">K-Gaming</div>
+            <div class="travel-promo-desc">PC방 culture, esports legends, iconic games, streaming culture, esports leagues, gamer slang, and gaming vocabulary.</div>
+            <div class="kr-trans">PC방 문화, e스포츠 레전드, 아이코닉 게임, 스트리밍 문화, e스포츠 리그, 게이머 슬랭, 게임 어휘까지.</div>
+          </div>
+          <span class="travel-promo-arrow">›</span>
+        </a>
+
+        <a href="ksports.html" class="travel-promo-card">
+          <span class="travel-promo-icon">⚽</span>
+          <div>
+            <div class="travel-promo-label">Sports · 스포츠</div>
+            <div class="travel-promo-title">K-Sports</div>
+            <div class="travel-promo-desc">Football and baseball heroes, marathon legends, traditional sports like taekwondo and ssireum, cheer chants, and vocabulary.</div>
+            <div class="kr-trans">축구·야구 영웅, 마라톤 전설, 태권도·씨름 같은 전통 스포츠, 응원 구호, 스포츠 어휘까지.</div>
+          </div>
+          <span class="travel-promo-arrow">›</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+          <li><a href="../learn/grammar.html">Grammar</a></li>
+          <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+    </div>
+  </div>
+</footer>
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korea City Guides | 한국어 학교</title>
+  <meta name="description" content="Deep-dive city guides for Seoul, Busan, Jeju, Gyeongju, Incheon, Suwon and more — attractions, food, transport, where to stay, and essential Korean phrases." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">한</div>
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+        <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+        <li><a href="index.html" class="active"><span class="nav-icon">🗺️</span> Travel</a></li>
+        <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+        <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search…" autocomplete="off" aria-label="Search site content" />
+        </div>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme">🌙</button>
+        <button class="icon-btn lang-toggle-btn" id="lang-toggle" data-ja-url="ja/cities.html" aria-label="Switch language">🇺🇸 EN</button>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Open mobile menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <aside class="sidebar">
+    <div class="travel-sidebar-header">
+      <div class="travel-sidebar-title">Travel Guide · 여행 안내</div>
+      <div class="travel-sidebar-subtitle">South Korea</div>
+    </div>
+    <a class="sidebar-accordion-btn" href="itineraries.html" data-accordion="travel-days">
+      <span class="link-icon">📅</span> By Days · 일수별 <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-days">
+      <a class="sidebar-link" href="itineraries.html#1day">1 Day Trip · 당일치기</a>
+      <a class="sidebar-link" href="itineraries.html#2days">2 Days · 1박 2일</a>
+      <a class="sidebar-link" href="itineraries.html#3days">3 Days · 2박 3일</a>
+      <a class="sidebar-link" href="itineraries.html#5days">5 Days · 4박 5일</a>
+      <a class="sidebar-link" href="itineraries.html#week">1 Week · 일주일</a>
+      <a class="sidebar-link" href="itineraries.html#10days">10 Days</a>
+      <a class="sidebar-link" href="itineraries.html#14days">2 Weeks · 2주</a>
+      <a class="sidebar-link" href="itineraries.html#1month">1 Month+ · 한달</a>
+    </div>
+    <a class="sidebar-accordion-btn open active" href="cities.html" data-accordion="travel-city">
+      <span class="link-icon">🏙️</span> By City · 도시별 <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="accordion-travel-city">
+      <a class="sidebar-link active" href="#seoul">Seoul · 서울</a>
+      <a class="sidebar-link" href="#incheon">Incheon · 인천</a>
+      <a class="sidebar-link" href="#busan">Busan · 부산</a>
+      <a class="sidebar-link" href="#suwon">Suwon · 수원</a>
+      <a class="sidebar-link" href="#jeju">Jeju · 제주도</a>
+      <a class="sidebar-link" href="#gyeongju">Gyeongju · 경주</a>
+      <a class="sidebar-link" href="#other">Other Cities</a>
+    </div>
+    <a class="sidebar-accordion-btn" href="themes.html" data-accordion="travel-theme">
+      <span class="link-icon">🎯</span> By Theme · 테마별 <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-theme">
+      <a class="sidebar-link" href="themes.html#food">Food Tour · 음식 여행</a>
+      <a class="sidebar-link" href="themes.html#events">Events &amp; Festivals · 이벤트</a>
+      <a class="sidebar-link" href="themes.html#sightseeing">Sightseeing · 관광</a>
+      <a class="sidebar-link" href="themes.html#crosscountry">Cross-Country · 장거리</a>
+    </div>
+    <a class="travel-sidebar-planner" href="planner.html">📋 Trip Planner · 여행 계획표</a>
+  </aside>
+
+
+  <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px);">
+    <div class="lesson-wrap">
+
+      <div class="animate-on-scroll" style="margin-bottom:40px;">
+        <div class="section-eyebrow">BY CITY · 도시별</div>
+        <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:12px;">
+          Korea <span class="grad-text">City Guides</span>
+        </h1>
+        <p class="section-desc" style="margin:0;max-width:680px;">
+          In-depth guides for every major destination — top attractions, must-eat food, getting there, where to stay, and Korean phrases to use in each city.
+        </p>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           SEOUL
+      ═══════════════════════════════════ -->
+      <div id="seoul" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">1</span> Seoul · 서울</h2>
+
+        <div class="city-hero-block">
+          <div class="city-emoji">🏙️</div>
+          <div>
+            <div class="city-name-kor">서울</div>
+            <div class="city-name-eng">Seoul — Capital of South Korea</div>
+            <div class="city-tagline">Where ancient palaces stand in the shadow of glass skyscrapers. A city of 10 million that never sleeps — futuristic, traditional, and endlessly fascinating.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🗓️</span><span class="city-stat-val">Spring &amp; Autumn</span><span class="city-stat-lbl"> best season</span></div>
+              <div class="city-stat"><span class="city-stat-icon">💰</span><span class="city-stat-val">₩80,000–150,000</span><span class="city-stat-lbl"> avg/day</span></div>
+              <div class="city-stat"><span class="city-stat-icon">✈️</span><span class="city-stat-val">Incheon / Gimpo</span><span class="city-stat-lbl"> airports</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🚇</span><span class="city-stat-val">9 subway lines</span><span class="city-stat-lbl"> full coverage</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-section-label">🏛️ Top Attractions · 관광명소</div>
+        <div class="city-attractions-grid">
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏯</span><div class="city-attraction-name">경복궁</div><div class="city-attraction-eng">Gyeongbokgung Palace</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🎨</span><div class="city-attraction-name">북촌 한옥마을</div><div class="city-attraction-eng">Bukchon Hanok Village</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🗼</span><div class="city-attraction-name">남산타워</div><div class="city-attraction-eng">N Seoul Tower</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌿</span><div class="city-attraction-name">청계천</div><div class="city-attraction-eng">Cheonggyecheon Stream</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🎵</span><div class="city-attraction-name">홍대</div><div class="city-attraction-eng">Hongdae Arts District</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🛍️</span><div class="city-attraction-name">명동</div><div class="city-attraction-eng">Myeongdong Shopping</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌊</span><div class="city-attraction-name">한강공원</div><div class="city-attraction-eng">Han River Park</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏢</span><div class="city-attraction-name">DDP</div><div class="city-attraction-eng">Dongdaemun Design Plaza</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌸</span><div class="city-attraction-name">창덕궁 후원</div><div class="city-attraction-eng">Secret Garden</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏘️</span><div class="city-attraction-name">이태원</div><div class="city-attraction-eng">Itaewon International</div></div>
+        </div>
+
+        <div class="city-section-label">🍽️ Must-Eat Food · 서울 대표 음식</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>What It Is</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">설렁탕</td><td class="rom-cell">Seolleongtang</td><td class="eng-cell">Slow-simmered ox bone milky broth — Seoul's soul food</td></tr>
+            <tr><td class="kor-cell">삼겹살</td><td class="rom-cell">Samgyeopsal</td><td class="eng-cell">Grilled pork belly — eaten with lettuce, garlic, ssamjang paste</td></tr>
+            <tr><td class="kor-cell">치맥</td><td class="rom-cell">Chimaek</td><td class="eng-cell">Fried chicken (치킨) + beer (맥주) — the Han River combo</td></tr>
+            <tr><td class="kor-cell">떡볶이</td><td class="rom-cell">Tteokbokki</td><td class="eng-cell">Spicy rice cakes — iconic street food found everywhere</td></tr>
+            <tr><td class="kor-cell">순대국밥</td><td class="rom-cell">Sundae-gukbap</td><td class="eng-cell">Blood sausage soup with rice — hearty winter comfort food</td></tr>
+          </tbody>
+        </table>
+
+        <div class="city-section-label">🚇 Getting Around · 서울 교통</div>
+        <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin:10px 0;">
+          Seoul's subway covers the entire city and beyond. Get a <strong>T-Money card</strong> (티머니) at any convenience store — top it up and use it on all buses, subways, and some convenience stores. Standard fare is ₩1,400–2,000 per trip. Taxis start at ₩4,800 base fare. KakaoTaxi is the easiest way to hail one.
+        </p>
+
+        <div class="city-section-label">🏨 Where to Stay · 숙박</div>
+        <div class="stay-grid">
+          <div class="stay-card"><div class="stay-tier stay-tier-budget">Budget</div><div class="stay-area">종로 · 신촌</div><div class="stay-desc">Jongno guesthouses and Sinchon hostels ₩20,000–40,000/night. Walking distance to palaces and Hongdae.</div></div>
+          <div class="stay-card"><div class="stay-tier stay-tier-mid">Mid-Range</div><div class="stay-area">명동 · 이태원</div><div class="stay-desc">Myeongdong boutique hotels ₩80,000–150,000. Central location for shopping and dining.</div></div>
+          <div class="stay-card"><div class="stay-tier stay-tier-luxury">Luxury</div><div class="stay-area">강남 · 여의도</div><div class="stay-desc">Gangnam 5-star hotels ₩300,000+. Lotte, Shilla, Four Seasons — world-class service.</div></div>
+        </div>
+
+        <div class="city-section-label">💬 Seoul Phrases · 서울 필수 표현</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>When to Use</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">이 역이 경복궁이에요?</td><td class="rom-cell">I yeogi Gyeongbokgungi-eyo?</td><td class="eng-cell">Is this station Gyeongbokgung?</td></tr>
+            <tr><td class="kor-cell">환승하면 어디로 가요?</td><td class="rom-cell">Hwanseunghamyeon eodiro gayo?</td><td class="eng-cell">Where do I transfer?</td></tr>
+            <tr><td class="kor-cell">한복 입어보고 싶어요</td><td class="rom-cell">Hanbok ibeobo-go sipeoyo</td><td class="eng-cell">I want to try wearing a hanbok</td></tr>
+            <tr><td class="kor-cell">사진 찍어도 돼요?</td><td class="rom-cell">Sajin jjik-eodo daeyo?</td><td class="eng-cell">May I take a photo?</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           INCHEON
+      ═══════════════════════════════════ -->
+      <div id="incheon" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">2</span> Incheon · 인천</h2>
+
+        <div class="city-hero-block">
+          <div class="city-emoji">✈️</div>
+          <div>
+            <div class="city-name-kor">인천</div>
+            <div class="city-name-eng">Incheon — Korea's Gateway City</div>
+            <div class="city-tagline">Home to the world's best airport (Incheon International), a vibrant Chinatown, and the futuristic Songdo smart city. Only 30 km from Seoul — perfect for half-day excursions.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🗓️</span><span class="city-stat-val">Year-round</span><span class="city-stat-lbl"> good to visit</span></div>
+              <div class="city-stat"><span class="city-stat-icon">💰</span><span class="city-stat-val">₩50,000–100,000</span><span class="city-stat-lbl"> avg/day</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🚇</span><span class="city-stat-val">Airport Express</span><span class="city-stat-lbl"> 43 min to Seoul</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-section-label">🏛️ Top Attractions · 관광명소</div>
+        <div class="city-attractions-grid">
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏮</span><div class="city-attraction-name">차이나타운</div><div class="city-attraction-eng">Chinatown</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏙️</span><div class="city-attraction-name">송도 국제도시</div><div class="city-attraction-eng">Songdo Smart City</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌊</span><div class="city-attraction-name">월미도</div><div class="city-attraction-eng">Wolmido Island</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🎨</span><div class="city-attraction-name">개항로 골목</div><div class="city-attraction-eng">Open Port Historic District</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌅</span><div class="city-attraction-name">을왕리 해수욕장</div><div class="city-attraction-eng">Eurwangni Beach</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏛️</span><div class="city-attraction-name">인천 도호부청사</div><div class="city-attraction-eng">Incheon Government Office</div></div>
+        </div>
+
+        <div class="city-section-label">🍽️ Must-Eat in Incheon · 인천 음식</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>What It Is</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">짜장면</td><td class="rom-cell">Jjajangmyeon</td><td class="eng-cell">Black bean noodles — a Korean-Chinese staple, best eaten in Chinatown</td></tr>
+            <tr><td class="kor-cell">탕수육</td><td class="rom-cell">Tangsuyuk</td><td class="eng-cell">Sweet-and-sour pork — served in Chinatown, crispy and addictive</td></tr>
+            <tr><td class="kor-cell">공화춘 냉채</td><td class="rom-cell">Gonghwachun naengchae</td><td class="eng-cell">Cold vegetable noodle salad from Incheon's oldest Chinese restaurant</td></tr>
+          </tbody>
+        </table>
+
+        <div class="city-section-label">💬 Incheon Airport Phrases · 공항 표현</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>English</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">탑승 게이트가 어디예요?</td><td class="rom-cell">Tapseung geiteu ga eodiyeyo?</td><td class="eng-cell">Where is the boarding gate?</td></tr>
+            <tr><td class="kor-cell">수하물 찾는 곳이 어디예요?</td><td class="rom-cell">Suhamul chantneun gosi eodiyeyo?</td><td class="eng-cell">Where is baggage claim?</td></tr>
+            <tr><td class="kor-cell">환전소가 어디예요?</td><td class="rom-cell">Hwanjeonso ga eodiyeyo?</td><td class="eng-cell">Where is the currency exchange?</td></tr>
+            <tr><td class="kor-cell">공항버스 어디서 타요?</td><td class="rom-cell">Gonghangbeoseu eodiseo tayo?</td><td class="eng-cell">Where do I board the airport bus?</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           BUSAN
+      ═══════════════════════════════════ -->
+      <div id="busan" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">3</span> Busan · 부산</h2>
+
+        <div class="city-hero-block">
+          <div class="city-emoji">🏖️</div>
+          <div>
+            <div class="city-name-kor">부산</div>
+            <div class="city-name-eng">Busan — Coastal Metropolis</div>
+            <div class="city-tagline">Korea's second-largest city, squeezed between mountains and sea. Famous for beaches, seafood, colourful hillside villages, and a laid-back coastal energy unlike anywhere else in Korea.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🗓️</span><span class="city-stat-val">Summer &amp; Autumn</span><span class="city-stat-lbl"> best season</span></div>
+              <div class="city-stat"><span class="city-stat-icon">💰</span><span class="city-stat-val">₩70,000–130,000</span><span class="city-stat-lbl"> avg/day</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🚄</span><span class="city-stat-val">2h 15min KTX</span><span class="city-stat-lbl"> from Seoul</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🌊</span><span class="city-stat-val">7 beaches</span><span class="city-stat-lbl"> in the city</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-section-label">🏛️ Top Attractions · 관광명소</div>
+        <div class="city-attractions-grid">
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏖️</span><div class="city-attraction-name">해운대</div><div class="city-attraction-eng">Haeundae Beach</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🎨</span><div class="city-attraction-name">감천문화마을</div><div class="city-attraction-eng">Gamcheon Culture Village</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🐟</span><div class="city-attraction-name">자갈치 시장</div><div class="city-attraction-eng">Jagalchi Fish Market</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌉</span><div class="city-attraction-name">광안대교</div><div class="city-attraction-eng">Gwangan Bridge</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🛕</span><div class="city-attraction-name">해동 용궁사</div><div class="city-attraction-eng">Haedong Yonggungsa</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">⛰️</span><div class="city-attraction-name">범어사</div><div class="city-attraction-eng">Beomeosa Temple</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🎬</span><div class="city-attraction-name">BIFF 광장</div><div class="city-attraction-eng">BIFF Film Square</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏙️</span><div class="city-attraction-name">해리단길</div><div class="city-attraction-eng">Haeridangil Café Street</div></div>
+        </div>
+
+        <div class="city-section-label">🍽️ Must-Eat in Busan · 부산 음식</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>What It Is</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">돼지국밥</td><td class="rom-cell">Dwaeji-gukbap</td><td class="eng-cell">Pork bone soup with rice — Busan's most iconic dish, eaten at dawn</td></tr>
+            <tr><td class="kor-cell">밀면</td><td class="rom-cell">Milmyeon</td><td class="eng-cell">Cold wheat noodles — Busan's answer to Pyongyang naengmyeon</td></tr>
+            <tr><td class="kor-cell">씨앗호떡</td><td class="rom-cell">Ssiat-hotteok</td><td class="eng-cell">Street pancakes filled with sunflower seeds, nuts, and honey</td></tr>
+            <tr><td class="kor-cell">곰장어</td><td class="rom-cell">Gomjangeo</td><td class="eng-cell">Grilled eel — chewy and charred, best at the eel alleys near Jagalchi</td></tr>
+            <tr><td class="kor-cell">납작만두</td><td class="rom-cell">Napjak-mandu</td><td class="eng-cell">Flat dumplings pan-fried crispy — Busan street food icon</td></tr>
+          </tbody>
+        </table>
+
+        <div class="city-section-label">🏨 Where to Stay · 숙박</div>
+        <div class="stay-grid">
+          <div class="stay-card"><div class="stay-tier stay-tier-budget">Budget</div><div class="stay-area">부산역 · 남포동</div><div class="stay-desc">Hostels near Busan Station from ₩20,000/night. Close to Gukje Market and Jagalchi.</div></div>
+          <div class="stay-card"><div class="stay-tier stay-tier-mid">Mid-Range</div><div class="stay-area">해운대 · 광안리</div><div class="stay-desc">Beach-area hotels ₩80,000–160,000. Ocean view rooms worth the extra cost.</div></div>
+          <div class="stay-card"><div class="stay-tier stay-tier-luxury">Luxury</div><div class="stay-area">해운대 특급호텔</div><div class="stay-desc">Signiel Busan, Park Hyatt — beachfront 5-star from ₩350,000.</div></div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           SUWON
+      ═══════════════════════════════════ -->
+      <div id="suwon" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">4</span> Suwon · 수원</h2>
+
+        <div class="city-hero-block">
+          <div class="city-emoji">🏰</div>
+          <div>
+            <div class="city-name-kor">수원</div>
+            <div class="city-name-eng">Suwon — Fortress City</div>
+            <div class="city-tagline">30 minutes from Seoul, Suwon contains one of Korea's greatest architectural achievements — the 18th-century Hwaseong Fortress, a UNESCO World Heritage site that encircles an entire city.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🗓️</span><span class="city-stat-val">Spring &amp; Autumn</span><span class="city-stat-lbl"> stunning cherry blossoms</span></div>
+              <div class="city-stat"><span class="city-stat-icon">💰</span><span class="city-stat-val">₩30,000–80,000</span><span class="city-stat-lbl"> avg/day</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🚇</span><span class="city-stat-val">50 min subway</span><span class="city-stat-lbl"> from Seoul</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-section-label">🏛️ Top Attractions · 관광명소</div>
+        <div class="city-attractions-grid">
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏰</span><div class="city-attraction-name">화성 성곽</div><div class="city-attraction-eng">Hwaseong Fortress</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌊</span><div class="city-attraction-name">화홍문 수문</div><div class="city-attraction-eng">Hwahongmun Water Gate</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🎎</span><div class="city-attraction-name">한국민속촌</div><div class="city-attraction-eng">Korean Folk Village</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏛️</span><div class="city-attraction-name">행궁동 벽화마을</div><div class="city-attraction-eng">Haenggungdong Mural Village</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌸</span><div class="city-attraction-name">팔달산</div><div class="city-attraction-eng">Paldal Mountain</div></div>
+        </div>
+
+        <div class="city-section-label">🍽️ Must-Eat in Suwon · 수원 음식</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>What It Is</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">수원 왕갈비</td><td class="rom-cell">Suwon wang-galbi</td><td class="eng-cell">Suwon-style king beef short ribs — enormous, grilled at the table</td></tr>
+            <tr><td class="kor-cell">순대타운 순대</td><td class="rom-cell">Sundae-taun sundae</td><td class="eng-cell">Blood sausage variety market — uniquely concentrated in Suwon</td></tr>
+          </tbody>
+        </table>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">Fortress Walk Tip 화성 산책 팁</div>
+            <div class="tip-text">The full 5.7 km fortress wall walk takes about 2 hours at a relaxed pace. Start from Paldalmun Gate (팔달문) and walk counter-clockwise for the best light. The 화성열차 (Hwaseong Train) also does a circuit for those who prefer not to walk. Entry: ₩1,500.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           JEJU
+      ═══════════════════════════════════ -->
+      <div id="jeju" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">5</span> Jeju Island · 제주도</h2>
+
+        <div class="city-hero-block">
+          <div class="city-emoji">🌋</div>
+          <div>
+            <div class="city-name-kor">제주도</div>
+            <div class="city-name-eng">Jeju Island — Korea's Volcanic Paradise</div>
+            <div class="city-tagline">A UNESCO Triple Crown (Biosphere Reserve, World Natural Heritage, Global Geopark) — volcanic craters, lava tube caves, black sand beaches, and haenyeo sea-diving women. Fly from Seoul in 1 hour.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🗓️</span><span class="city-stat-val">Spring &amp; Autumn</span><span class="city-stat-lbl"> best season</span></div>
+              <div class="city-stat"><span class="city-stat-icon">💰</span><span class="city-stat-val">₩100,000–200,000</span><span class="city-stat-lbl"> avg/day</span></div>
+              <div class="city-stat"><span class="city-stat-icon">✈️</span><span class="city-stat-val">1h flight</span><span class="city-stat-lbl"> from Seoul</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🚗</span><span class="city-stat-val">Rent a car</span><span class="city-stat-lbl"> highly recommended</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-section-label">🏛️ Top Attractions · 관광명소</div>
+        <div class="city-attractions-grid">
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏔️</span><div class="city-attraction-name">한라산</div><div class="city-attraction-eng">Hallasan (1,950m)</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌅</span><div class="city-attraction-name">성산일출봉</div><div class="city-attraction-eng">Seongsan Ilchulbong</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🕳️</span><div class="city-attraction-name">만장굴</div><div class="city-attraction-eng">Manjanggul Lava Tube</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌊</span><div class="city-attraction-name">협재 해수욕장</div><div class="city-attraction-eng">Hyeopjae Beach</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌿</span><div class="city-attraction-name">오설록 차밭</div><div class="city-attraction-eng">O'Sulloc Tea Fields</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">⛰️</span><div class="city-attraction-name">오름</div><div class="city-attraction-eng">Volcanic Craters (368!)</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🏊</span><div class="city-attraction-name">해녀</div><div class="city-attraction-eng">Haenyeo Diving Women</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🦴</span><div class="city-attraction-name">산방산</div><div class="city-attraction-eng">Sanbangsan Mountain</div></div>
+        </div>
+
+        <div class="city-section-label">🍽️ Must-Eat on Jeju · 제주 음식</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>What It Is</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">흑돼지 구이</td><td class="rom-cell">Heukdwaeji-gui</td><td class="eng-cell">Jeju black pig BBQ — gamier, richer than mainland pork, unmissable</td></tr>
+            <tr><td class="kor-cell">성게국수</td><td class="rom-cell">Seongge-guksu</td><td class="eng-cell">Sea urchin noodle soup — creamy golden broth, surprisingly mild</td></tr>
+            <tr><td class="kor-cell">전복죽</td><td class="rom-cell">Jeonbok-juk</td><td class="eng-cell">Abalone porridge — silky, rich, and deeply comforting</td></tr>
+            <tr><td class="kor-cell">갈치조림</td><td class="rom-cell">Galchi-jorim</td><td class="eng-cell">Braised hairtail fish in spicy sauce — Jeju specialty</td></tr>
+            <tr><td class="kor-cell">한라봉</td><td class="rom-cell">Hallabong</td><td class="eng-cell">Jeju mandarin orange — sweet, seedless, larger than regular tangerines</td></tr>
+          </tbody>
+        </table>
+
+        <div class="city-section-label">🚗 Getting Around Jeju · 제주 교통</div>
+        <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin:10px 0;">
+          Renting a car is by far the best way to explore Jeju — attractions are spread across the island and buses are infrequent. International driving licence accepted. Motorbike and e-bike rentals are also popular. For hiking Hallasan: the Seongpanak trail (13.5 km round trip) is most scenic; the shorter Eorimok trail (8.6 km) is suitable for beginners.
+        </p>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">Hallasan Hiking 한라산 등산</div>
+            <div class="tip-text">Summit access (윗세오름 crater) via Seongpanak trail closes at 12:00 PM — arrive before 8:00 AM. Bring warm layers (even in summer), 2L water, and snacks. Entry is free. The crater lake 백록담 is spectacular.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           GYEONGJU
+      ═══════════════════════════════════ -->
+      <div id="gyeongju" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">6</span> Gyeongju · 경주</h2>
+
+        <div class="city-hero-block">
+          <div class="city-emoji">🏯</div>
+          <div>
+            <div class="city-name-kor">경주</div>
+            <div class="city-name-eng">Gyeongju — Museum Without Walls</div>
+            <div class="city-tagline">The ancient capital of the Silla Kingdom (57 BCE–935 CE), Gyeongju is an open-air museum unlike anywhere else — royal burial mounds rise from the city streets, temples dot mountain slopes, and every corner holds 1,000 years of history.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🗓️</span><span class="city-stat-val">Spring &amp; Autumn</span><span class="city-stat-lbl"> best season</span></div>
+              <div class="city-stat"><span class="city-stat-icon">💰</span><span class="city-stat-val">₩50,000–90,000</span><span class="city-stat-lbl"> avg/day</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🚄</span><span class="city-stat-val">2h KTX</span><span class="city-stat-lbl"> from Seoul</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🚲</span><span class="city-stat-val">Bicycle</span><span class="city-stat-lbl"> ideal transport</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-section-label">🏛️ Top Attractions · 관광명소</div>
+        <div class="city-attractions-grid">
+          <div class="city-attraction-card"><span class="city-attraction-icon">🛕</span><div class="city-attraction-name">불국사</div><div class="city-attraction-eng">Bulguksa Temple (UNESCO)</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🗿</span><div class="city-attraction-name">석굴암</div><div class="city-attraction-eng">Seokguram Grotto (UNESCO)</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">⛰️</span><div class="city-attraction-name">대릉원</div><div class="city-attraction-eng">Tumuli Park Royal Tombs</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🔭</span><div class="city-attraction-name">첨성대</div><div class="city-attraction-eng">Cheomseongdae Observatory</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🌊</span><div class="city-attraction-name">안압지</div><div class="city-attraction-eng">Anapji Pond (Donggung)</div></div>
+          <div class="city-attraction-card"><span class="city-attraction-icon">🍞</span><div class="city-attraction-name">황리단길</div><div class="city-attraction-eng">Hwangridangil Café Street</div></div>
+        </div>
+
+        <div class="city-section-label">🍽️ Must-Eat in Gyeongju · 경주 음식</div>
+        <table class="vocab-table">
+          <thead><tr><th>Korean</th><th>Romanisation</th><th>What It Is</th></tr></thead>
+          <tbody>
+            <tr><td class="kor-cell">황남빵</td><td class="rom-cell">Hwangnam-ppang</td><td class="eng-cell">Traditional red bean pastry — made since 1939, the souvenir of Gyeongju</td></tr>
+            <tr><td class="kor-cell">쌈밥</td><td class="rom-cell">Ssam-bap</td><td class="eng-cell">Rice eaten wrapped in fresh leaves with side dishes — wholesome local set</td></tr>
+            <tr><td class="kor-cell">경주법주</td><td class="rom-cell">Gyeongju beopju</td><td class="eng-cell">Traditional rice wine from Korea's oldest documented brewery</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           OTHER CITIES
+      ═══════════════════════════════════ -->
+      <div id="other" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">7</span> Other Cities · 기타 도시</h2>
+
+        <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:24px;">
+          Korea rewards travellers who venture beyond the classic route. These four cities each offer a distinct experience that few tourists discover.
+        </p>
+
+        <div class="city-hero-block" style="margin-bottom:20px;">
+          <div class="city-emoji">🏮</div>
+          <div>
+            <div class="city-name-kor">전주</div>
+            <div class="city-name-eng">Jeonju — Birthplace of Bibimbap</div>
+            <div class="city-tagline">Korea's designated slow-food city. Home to the nation's largest intact 한옥 village, the best bibimbap (비빔밥) in the country, and extraordinary 막걸리 (rice wine) bars. The Friday/Saturday night market is a bucket-list food experience.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🚌</span><span class="city-stat-val">2.5h bus</span><span class="city-stat-lbl"> from Seoul</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🏘️</span><span class="city-stat-val">735 hanok homes</span><span class="city-stat-lbl"> in the village</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-hero-block" style="margin-bottom:20px;">
+          <div class="city-emoji">🌊</div>
+          <div>
+            <div class="city-name-kor">속초</div>
+            <div class="city-name-eng">Sokcho — Gateway to Seoraksan</div>
+            <div class="city-tagline">A small coastal city that serves as the launching point for Seoraksan National Park (설악산) — Korea's most dramatic mountain landscape with granite peaks, waterfalls, and ancient temples. The waterfront seafood market is exceptional.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🚌</span><span class="city-stat-val">2.5h express bus</span><span class="city-stat-lbl"> from Seoul</span></div>
+              <div class="city-stat"><span class="city-stat-icon">⛰️</span><span class="city-stat-val">1,708m peak</span><span class="city-stat-lbl"> Daecheongbong summit</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-hero-block" style="margin-bottom:20px;">
+          <div class="city-emoji">🌿</div>
+          <div>
+            <div class="city-name-kor">담양</div>
+            <div class="city-name-eng">Damyang — Bamboo Forest Town</div>
+            <div class="city-tagline">Famous for its vast 메타세쿼이아 (metasequoia) tree-lined road and Korea's most celebrated bamboo grove (죽녹원). The slow-food village serves 대통밥 (bamboo tube rice) and fresh rice noodles. Only 30 minutes from Gwangju.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🚌</span><span class="city-stat-val">30 min</span><span class="city-stat-lbl"> from Gwangju</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🌲</span><span class="city-stat-val">Bamboo forest</span><span class="city-stat-lbl"> + tree avenue</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city-hero-block">
+          <div class="city-emoji">⚓</div>
+          <div>
+            <div class="city-name-kor">통영</div>
+            <div class="city-name-eng">Tongyeong — Korea's Naples</div>
+            <div class="city-tagline">A stunning harbour city on Korea's southern coast — islands scattered in turquoise water, fresh oysters by the kilo, and cable cars up to panoramic ocean views. The birthplace of composer Yun I-sang and painter Jeon Hyuk-lim.</div>
+            <div class="city-stats">
+              <div class="city-stat"><span class="city-stat-icon">🚌</span><span class="city-stat-val">3.5h express bus</span><span class="city-stat-lbl"> from Seoul</span></div>
+              <div class="city-stat"><span class="city-stat-icon">🦪</span><span class="city-stat-val">Oyster capital</span><span class="city-stat-lbl"> of Korea</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="animate-on-scroll" style="text-align:center;padding:40px 0;">
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <a href="itineraries.html" class="btn btn-primary btn-lg">📅 View Itineraries →</a>
+          <a href="planner.html" class="btn btn-secondary btn-lg">📋 Plan Your Trip</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-mark">한</div>
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+            <li><a href="../learn/grammar.html">Grammar</a></li>
+            <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="../culture/index.html">K-Culture</a></li>
+            <li><a href="index.html">Travel Guide</a></li>
+            <li><a href="../news/index.html">Korean News</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+        <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

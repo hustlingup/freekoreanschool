@@ -1,0 +1,768 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>韓国旅行ガイド | 한국어 학교</title>
+  <meta name="description" content="ソウルから済州島まで韓国を旅する — 旅行のヒント、必須韓国語フレーズ、文化マナー、グルメ、交通ガイド。" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../../index.html" class="logo">
+        <div class="logo-mark">한</div>
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../../learn/hangul.html"><span class="nav-icon">📚</span> 学ぶ</a></li>
+        <li><a href="../../culture/index.html"><span class="nav-icon">🎵</span> K-カルチャー</a></li>
+        <li><a href="index.html" class="active"><span class="nav-icon">🗺️</span> 旅行</a></li>
+        <li><a href="../../news/index.html"><span class="nav-icon">📰</span> ニュース</a></li>
+        <li><a href="../../quiz.html"><span class="nav-icon">📝</span> クイズ</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="検索…" autocomplete="off" aria-label="サイト内検索" />
+        </div>
+        <button id="theme-toggle" class="icon-btn" aria-label="ダーク/ライトテーマ切替">🌙</button>
+        <a href="../index.html" class="icon-btn lang-toggle-btn" style="text-decoration:none;">🇯🇵 日本語</a>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="メニューを開く">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <aside class="sidebar">
+
+    <div class="travel-sidebar-header">
+      <div class="travel-sidebar-title">旅行ガイド · 여행 안내</div>
+      <div class="travel-sidebar-subtitle">韓国</div>
+    </div>
+
+    <a class="sidebar-accordion-btn open" href="itineraries.html" data-accordion="travel-days">
+      <span class="link-icon">📅</span>
+      日数別 · 일수별
+      <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="accordion-travel-days">
+      <a class="sidebar-link" href="itineraries.html#1day">日帰り旅行 · 당일치기</a>
+      <a class="sidebar-link" href="itineraries.html#2days">2日間 · 1박 2일</a>
+      <a class="sidebar-link" href="itineraries.html#3days">3日間 · 2박 3일</a>
+      <a class="sidebar-link" href="itineraries.html#5days">5日間 · 4박 5일</a>
+      <a class="sidebar-link" href="itineraries.html#week">1週間 · 일주일</a>
+      <a class="sidebar-link" href="itineraries.html#10days">10日間</a>
+      <a class="sidebar-link" href="itineraries.html#14days">2週間 · 2주</a>
+      <a class="sidebar-link" href="itineraries.html#1month">1ヶ月以上 · 한달</a>
+    </div>
+
+    <a class="sidebar-accordion-btn" href="cities.html" data-accordion="travel-city">
+      <span class="link-icon">🏙️</span>
+      都市別 · 도시별
+      <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-city">
+      <a class="sidebar-link" href="cities.html#seoul">ソウル · 서울</a>
+      <a class="sidebar-link" href="cities.html#incheon">仁川 · 인천</a>
+      <a class="sidebar-link" href="cities.html#busan">釜山 · 부산</a>
+      <a class="sidebar-link" href="cities.html#suwon">水原 · 수원</a>
+      <a class="sidebar-link" href="cities.html#jeju">済州島 · 제주도</a>
+      <a class="sidebar-link" href="cities.html#gyeongju">慶州 · 경주</a>
+      <a class="sidebar-link" href="cities.html#other">その他の都市</a>
+    </div>
+
+    <a class="sidebar-accordion-btn" href="themes.html" data-accordion="travel-theme">
+      <span class="link-icon">🎯</span>
+      テーマ別 · 테마별
+      <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-theme">
+      <a class="sidebar-link" href="themes.html#food">グルメツアー · 음식 여행</a>
+      <a class="sidebar-link" href="themes.html#events">イベント・祭り · 이벤트</a>
+      <a class="sidebar-link" href="themes.html#sightseeing">観光 · 관광</a>
+      <a class="sidebar-link" href="themes.html#crosscountry">長距離旅行 · 장거리</a>
+    </div>
+
+    <a class="travel-sidebar-planner" href="planner.html">
+      📋 旅行プランナー · 여행 계획표
+    </a>
+
+  </aside>
+
+
+  <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 0px);">
+
+    <!-- HERO -->
+    <section class="travel-hero">
+      <div class="travel-hero-content">
+        <div class="hero-eyebrow animate-fade-up" style="margin-bottom:20px; display:inline-flex;">
+          <span class="dot"></span>
+          🇰🇷 · 韓国旅行ガイド · 여행 안내
+        </div>
+        <h1 class="travel-hero-title animate-fade-up">
+          여행 안내
+          <span class="grad-text" style="display:block; font-family:var(--font-sans);">韓国旅行ガイド</span>
+        </h1>
+        <p class="travel-hero-sub animate-fade-up">
+          「朝の静寂の国」を探索しよう — 近未来的なソウルから絶景の済州島まで。
+          旅行に役立つ韓国語を学んで、現地人のように旅しよう。
+        </p>
+        <div class="travel-hero-stats animate-fade-up">
+          <div class="travel-hero-stat">
+            <span class="travel-hero-stat-value">51M</span>
+            <span class="travel-hero-stat-label">人口</span>
+          </div>
+          <div class="travel-hero-stat">
+            <span class="travel-hero-stat-value">15</span>
+            <span class="travel-hero-stat-label">ユネスコ遺産</span>
+          </div>
+          <div class="travel-hero-stat">
+            <span class="travel-hero-stat-value">一年中</span>
+            <span class="travel-hero-stat-label">訪問に最適</span>
+          </div>
+          <div class="travel-hero-stat">
+            <span class="travel-hero-stat-value">🇰🇷 100+</span>
+            <span class="travel-hero-stat-label">ビザ免除国</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- EXPLORE THE GUIDES -->
+    <section class="travel-section">
+      <div class="container">
+
+        <div class="text-center mb-32 animate-on-scroll">
+          <div class="section-eyebrow">ガイドを探索 · 가이드 탐색</div>
+          <h2 class="section-title">完璧な韓国旅行を計画しよう</h2>
+          <p class="section-desc" style="margin:0 auto;">
+            1日でも1ヶ月でも、特定の都市でもテーマでも —
+            詳細なガイドを参考に、あなただけの旅程を組み立てよう。
+          </p>
+        </div>
+
+        <div class="travel-promo-grid animate-on-scroll">
+          <a href="itineraries.html" class="travel-promo-card">
+            <span class="travel-promo-icon">📅</span>
+            <div>
+              <div class="travel-promo-label">日数別 · 일수별</div>
+              <div class="travel-promo-title">日程別旅程</div>
+              <div class="travel-promo-desc">日帰り旅行から1ヶ月の全国縦断まで — 時間割付きの完全プランをご用意。</div>
+              <div class="kr-trans">하루 짧은 도심 여행부터 1개월 전국 여행까지 — 완전히 계획된 시간표로 여행을 즐기세요.</div>
+            </div>
+            <span class="travel-promo-arrow">›</span>
+          </a>
+          <a href="cities.html" class="travel-promo-card">
+            <span class="travel-promo-icon">🏙️</span>
+            <div>
+              <div class="travel-promo-label">都市別 · 도시별</div>
+              <div class="travel-promo-title">都市旅行ガイド</div>
+              <div class="travel-promo-desc">ソウル、釜山、済州島、慶州、仁川、水原の詳細ガイド — 観光地、グルメ、交通、宿泊まで。</div>
+              <div class="kr-trans">서울, 부산, 제주, 경주, 인천, 수원 등 심층 가이드 — 관광 명소, 음식, 교통, 숙소까지 상세하게.</div>
+            </div>
+            <span class="travel-promo-arrow">›</span>
+          </a>
+          <a href="themes.html" class="travel-promo-card">
+            <span class="travel-promo-icon">🎯</span>
+            <div>
+              <div class="travel-promo-label">テーマ別 · 테마별</div>
+              <div class="travel-promo-title">テーマ別旅行</div>
+              <div class="travel-promo-desc">グルメツアー、祭り、観光スポット、海岸散策、川沿いサイクリング、登山コース。</div>
+              <div class="kr-trans">음식 투어, 축제, 관광 명소, 해안 산책, 강변 자전거, 산악 트레킹 등 테마별 여행 안내.</div>
+            </div>
+            <span class="travel-promo-arrow">›</span>
+          </a>
+          <a href="planner.html" class="travel-promo-card">
+            <span class="travel-promo-icon">📋</span>
+            <div>
+              <div class="travel-promo-label">旅行プランナー · 여행 계획</div>
+              <div class="travel-promo-title">スケジュールを作成・印刷</div>
+              <div class="travel-promo-desc">インタラクティブなタイムブロックツール — フライト、食事、観光、宿泊を追加して計画を出力。</div>
+              <div class="kr-trans">대화형 시간 계획 도구 — 항공편, 식사, 관광, 숙박을 추가하고 계획을 내보내거나 인쇄하세요.</div>
+            </div>
+            <span class="travel-promo-arrow">›</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TOP DESTINATIONS -->
+    <section class="travel-section-alt">
+      <div class="container">
+
+        <div class="text-center mb-32 animate-on-scroll">
+          <div class="section-eyebrow">人気の旅行先 · 인기 여행지</div>
+          <h2 class="section-title">どこを探索しますか？</h2>
+          <p class="section-desc" style="margin:0 auto;">
+            古代の宮殿から火山島まで — コンパクトで交通の便が良い韓国に、
+            一生かけても尽きない発見が詰まっています。
+          </p>
+        </div>
+
+        <div class="destinations-grid">
+
+          <div class="place-card animate-on-scroll">
+            <div class="place-image" style="background:linear-gradient(135deg,#0d0d2e,#1a1a4e);">
+              <div class="place-image-overlay"></div>
+              <span style="font-size:5rem;position:relative;z-index:1;">🏙️</span>
+              <div class="place-image-label">서울</div>
+            </div>
+            <div class="place-body">
+              <div class="place-name">ソウル · 서울</div>
+              <p class="place-desc">韓国の活気ある首都 — 古宮、屋台グルメ、K-POP、最先端テクノロジーが融合した特別な都市。</p>
+              <div class="kr-trans">한국의 활기찬 수도 — 고궁, 길거리 음식, K팝, 최첨단 기술이 모두 모인 특별한 도시.</div>
+              <div class="place-highlights">
+                <span class="place-highlight">🏯 景福宮</span>
+                <span class="place-highlight">🎵 弘大</span>
+                <span class="place-highlight">🛍️ 明洞</span>
+                <span class="place-highlight">🌊 漢江</span>
+              </div>
+              <div class="place-phrase">
+                <span class="phrase-kor">지하철 어디예요?</span>
+                <span class="phrase-eng">Jihacheol eodiyeyo? — 地下鉄はどこですか？</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-card animate-on-scroll">
+            <div class="place-image" style="background:linear-gradient(135deg,#0a1a2e,#0a2a4e);">
+              <div class="place-image-overlay"></div>
+              <span style="font-size:5rem;position:relative;z-index:1;">🏖️</span>
+              <div class="place-image-label">부산</div>
+            </div>
+            <div class="place-body">
+              <div class="place-name">釜山 · 부산</div>
+              <p class="place-desc">韓国第2の都市 — 山と海に挟まれた美しい海岸線、海鮮市場、カラフルな山腹の集落。</p>
+              <div class="kr-trans">한국 제2의 도시 — 산과 바다 사이, 아름다운 해안과 해산물 시장, 알록달록한 산동네 마을.</div>
+              <div class="place-highlights">
+                <span class="place-highlight">🏖️ 海雲台ビーチ</span>
+                <span class="place-highlight">🎨 甘川文化村</span>
+                <span class="place-highlight">🐟 チャガルチ市場</span>
+                <span class="place-highlight">🌉 広安大橋</span>
+              </div>
+              <div class="place-phrase">
+                <span class="phrase-kor">해수욕장이 어디예요?</span>
+                <span class="phrase-eng">Haesuryokjangi eodiyeyo? — 海水浴場はどこですか？</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-card animate-on-scroll">
+            <div class="place-image" style="background:linear-gradient(135deg,#0a2a0a,#0f3d0f);">
+              <div class="place-image-overlay"></div>
+              <span style="font-size:5rem;position:relative;z-index:1;">🌋</span>
+              <div class="place-image-label">제주도</div>
+            </div>
+            <div class="place-body">
+              <div class="place-name">済州島 · 제주도</div>
+              <p class="place-desc">韓国の火山島楽園 — ユネスコ世界遺産の景観、美しいビーチ、海女の文化。</p>
+              <div class="kr-trans">한국의 화산섬 낙원 — 유네스코 세계유산 경관, 청정 해변, 해녀 잠수 문화.</div>
+              <div class="place-highlights">
+                <span class="place-highlight">🏔️ 漢拏山</span>
+                <span class="place-highlight">🌅 城山日出峰</span>
+                <span class="place-highlight">🕳️ 万丈窟</span>
+                <span class="place-highlight">🐷 黒豚BBQ</span>
+              </div>
+              <div class="place-phrase">
+                <span class="phrase-kor">한라산 등산하고 싶어요</span>
+                <span class="phrase-eng">Hallasan deungsanhago sipeoyo — 漢拏山に登りたいです</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-card animate-on-scroll">
+            <div class="place-image" style="background:linear-gradient(135deg,#1a0e00,#3d2200);">
+              <div class="place-image-overlay"></div>
+              <span style="font-size:5rem;position:relative;z-index:1;">🏯</span>
+              <div class="place-image-label">경주</div>
+            </div>
+            <div class="place-body">
+              <div class="place-name">慶州 · 경주</div>
+              <p class="place-desc">韓国の古代都市 — 王陵、寺院、新羅王朝の宝物が溢れる野外博物館。</p>
+              <div class="kr-trans">한국의 고대 수도 — 왕릉, 사찰, 신라 왕조의 보물이 가득한 야외 박물관.</div>
+              <div class="place-highlights">
+                <span class="place-highlight">🛕 仏国寺</span>
+                <span class="place-highlight">🔭 瞻星台</span>
+                <span class="place-highlight">⛰️ 大陵苑</span>
+              </div>
+              <div class="place-phrase">
+                <span class="phrase-kor">불국사는 어떻게 가요?</span>
+                <span class="phrase-eng">Bulguksaneun eotteoke gayo? — 仏国寺にはどう行きますか？</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-card animate-on-scroll">
+            <div class="place-image" style="background:linear-gradient(135deg,#0d1a2e,#152a50);">
+              <div class="place-image-overlay"></div>
+              <span style="font-size:5rem;position:relative;z-index:1;">✈️</span>
+              <div class="place-image-label">인천</div>
+            </div>
+            <div class="place-body">
+              <div class="place-name">仁川 · 인천</div>
+              <p class="place-desc">韓国の玄関口 — 未来都市・松島スマートシティ、活気あふれるチャイナタウン、世界最高水準の仁川国際空港。</p>
+              <div class="kr-trans">한국의 관문 도시 — 미래적인 송도 스마트시티, 활기찬 차이나타운, 세계 최고 수준의 인천국제공항.</div>
+              <div class="place-highlights">
+                <span class="place-highlight">🏙️ 松島</span>
+                <span class="place-highlight">🏮 チャイナタウン</span>
+                <span class="place-highlight">✈️ 世界最高空港</span>
+                <span class="place-highlight">🌊 月尾島</span>
+              </div>
+              <div class="place-phrase">
+                <span class="phrase-kor">차이나타운이 어디예요?</span>
+                <span class="phrase-eng">Chainatauneuni eodiyeyo? — チャイナタウンはどこですか？</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-card animate-on-scroll">
+            <div class="place-image" style="background:linear-gradient(135deg,#1a0a1a,#2e1a3d);">
+              <div class="place-image-overlay"></div>
+              <span style="font-size:5rem;position:relative;z-index:1;">🏰</span>
+              <div class="place-image-label">수원</div>
+            </div>
+            <div class="place-body">
+              <div class="place-name">水原 · 수원</div>
+              <p class="place-desc">ユネスコ世界遺産・華城城郭の城下町 — 名物の수원 갈비（ウシショートリブBBQ）でも有名。</p>
+              <div class="kr-trans">유네스코 세계유산인 웅장한 화성이 있는 도시 — 수원 갈비 바비큐로도 유명.</div>
+              <div class="place-highlights">
+                <span class="place-highlight">🏰 華城城郭</span>
+                <span class="place-highlight">🥩 水原カルビ</span>
+                <span class="place-highlight">🎎 韓国民俗村</span>
+              </div>
+              <div class="place-phrase">
+                <span class="phrase-kor">화성이 어디예요?</span>
+                <span class="phrase-eng">Hwaseongi eodiyeyo? — 華城はどこですか？</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ESSENTIAL PHRASES -->
+    <section class="travel-section">
+      <div class="container">
+
+        <div class="text-center mb-32 animate-on-scroll">
+          <div class="section-eyebrow">必須フレーズ · 필수 표현</div>
+          <h2 class="section-title">旅行韓国語フレーズブック</h2>
+          <p class="section-desc" style="margin:0 auto;">
+            場面別に整理した必須フレーズ30選 — 仁川到着から삼겹살の注文まで。
+          </p>
+        </div>
+
+        <div class="vocab-section-label animate-on-scroll">✈️ 到着 · 도착</div>
+        <div class="vocab-wrapper animate-on-scroll">
+          <table class="vocab-table">
+            <thead><tr><th>韓国語 · 한국어</th><th>日本語訳 · 번역</th></tr></thead>
+            <tbody>
+              <tr><td class="kor-cell">여권 주세요<span class="rom-text">Yeogwon juseyo</span></td><td class="eng-cell"><span class="kor-trans">입국 심사 시 사용</span>パスポートをください（入国審査で）</td></tr>
+              <tr><td class="kor-cell">관광비자 신청합니다<span class="rom-text">Gwangwangbija sincheonghabnida</span></td><td class="eng-cell"><span class="kor-trans">비자 신청할 때</span>観光ビザを申請します</td></tr>
+              <tr><td class="kor-cell">한국어를 배우고 있어요<span class="rom-text">Hangugeo reul baeugo isseoyo</span></td><td class="eng-cell"><span class="kor-trans">자기소개할 때</span>韓国語を勉強しています</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="vocab-section-label animate-on-scroll" style="margin-top:28px;">🚇 交通 · 교통</div>
+        <div class="vocab-wrapper animate-on-scroll">
+          <table class="vocab-table">
+            <thead><tr><th>韓国語 · 한국어</th><th>日本語訳 · 번역</th></tr></thead>
+            <tbody>
+              <tr><td class="kor-cell">이 주소로 가주세요<span class="rom-text">I jusoro gajuseyo</span></td><td class="eng-cell"><span class="kor-trans">택시 탈 때</span>この住所まで行ってください（タクシーで）</td></tr>
+              <tr><td class="kor-cell">지하철역이 어디예요?<span class="rom-text">Jihacheoryeogi eodiyeyo?</span></td><td class="eng-cell"><span class="kor-trans">지하철 이용 시</span>地下鉄の駅はどこですか？</td></tr>
+              <tr><td class="kor-cell">버스 정류장이 어디예요?<span class="rom-text">Beoseu jeongnyujangi eodiyeyo?</span></td><td class="eng-cell"><span class="kor-trans">버스 이용 시</span>バス停はどこですか？</td></tr>
+              <tr><td class="kor-cell">얼마예요?<span class="rom-text">Eolmayeyo?</span></td><td class="eng-cell"><span class="kor-trans">요금이나 가격 물을 때</span>いくらですか？</td></tr>
+              <tr><td class="kor-cell">택시 불러주세요<span class="rom-text">Taeksi bulleojuseyo</span></td><td class="eng-cell"><span class="kor-trans">택시 호출 요청</span>タクシーを呼んでください</td></tr>
+              <tr><td class="kor-cell">여기서 내려주세요<span class="rom-text">Yeogiseo naeryeojuseyo</span></td><td class="eng-cell"><span class="kor-trans">하차 위치 알릴 때</span>ここで降ろしてください</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="vocab-section-label animate-on-scroll" style="margin-top:28px;">🍜 食事 · 식사</div>
+        <div class="vocab-wrapper animate-on-scroll">
+          <table class="vocab-table">
+            <thead><tr><th>韓国語 · 한국어</th><th>日本語訳 · 번역</th></tr></thead>
+            <tbody>
+              <tr><td class="kor-cell">맛있어요!<span class="rom-text">Massisseoyo!</span></td><td class="eng-cell"><span class="kor-trans">음식 칭찬할 때</span>美味しいです！</td></tr>
+              <tr><td class="kor-cell">메뉴 주세요<span class="rom-text">Menyu juseyo</span></td><td class="eng-cell"><span class="kor-trans">메뉴판 요청</span>メニューをください</td></tr>
+              <tr><td class="kor-cell">채식주의자예요<span class="rom-text">Chaesigjuuijayeyo</span></td><td class="eng-cell"><span class="kor-trans">식이 제한 알릴 때</span>ベジタリアンです</td></tr>
+              <tr><td class="kor-cell">맵지 않게 해주세요<span class="rom-text">Maepji ange haejuseyo</span></td><td class="eng-cell"><span class="kor-trans">맵기 조절 요청</span>辛くしないでください</td></tr>
+              <tr><td class="kor-cell">계산서 주세요<span class="rom-text">Gyesanseo juseyo</span></td><td class="eng-cell"><span class="kor-trans">식사 후 계산 요청</span>お会計をお願いします</td></tr>
+              <tr><td class="kor-cell">이거 포장해 주세요<span class="rom-text">Igeo pojanghaejuseyo</span></td><td class="eng-cell"><span class="kor-trans">남은 음식 포장 요청</span>これを包んでください（テイクアウト）</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="vocab-section-label animate-on-scroll" style="margin-top:28px;">🛍️ ショッピング · 쇼핑</div>
+        <div class="vocab-wrapper animate-on-scroll">
+          <table class="vocab-table">
+            <thead><tr><th>韓国語 · 한국어</th><th>日本語訳 · 번역</th></tr></thead>
+            <tbody>
+              <tr><td class="kor-cell">이거 얼마예요?<span class="rom-text">Igeo eolmayeyo?</span></td><td class="eng-cell"><span class="kor-trans">가격 물어볼 때</span>これはいくらですか？</td></tr>
+              <tr><td class="kor-cell">좀 싸게 해주세요<span class="rom-text">Jom ssage haejuseyo</span></td><td class="eng-cell"><span class="kor-trans">할인 요청할 때</span>少し安くしてください</td></tr>
+              <tr><td class="kor-cell">영수증 주세요<span class="rom-text">Yeongsujeung juseyo</span></td><td class="eng-cell"><span class="kor-trans">영수증 요청</span>レシートをください</td></tr>
+              <tr><td class="kor-cell">신용카드 되나요?<span class="rom-text">Sinyongkadeu doenayo?</span></td><td class="eng-cell"><span class="kor-trans">결제 방법 확인</span>クレジットカードは使えますか？</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="vocab-section-label animate-on-scroll" style="margin-top:28px;">🚨 緊急 · 비상</div>
+        <div class="vocab-wrapper animate-on-scroll">
+          <table class="vocab-table">
+            <thead><tr><th>韓国語 · 한국어</th><th>日本語訳 · 번역</th></tr></thead>
+            <tbody>
+              <tr><td class="kor-cell">도와주세요!<span class="rom-text">Dowajuseyo!</span></td><td class="eng-cell"><span class="kor-trans">긴급 도움 요청</span>助けてください！</td></tr>
+              <tr><td class="kor-cell">경찰을 불러주세요<span class="rom-text">Gyeongchal bulleojuseyo</span></td><td class="eng-cell"><span class="kor-trans">경찰 신고 요청</span>警察を呼んでください</td></tr>
+              <tr><td class="kor-cell">병원이 어디예요?<span class="rom-text">Byeongwoni eodiyeyo?</span></td><td class="eng-cell"><span class="kor-trans">병원 위치 찾기</span>病院はどこですか？</td></tr>
+              <tr><td class="kor-cell">약이 필요해요<span class="rom-text">Yagi piryohaeyo</span></td><td class="eng-cell"><span class="kor-trans">약 구매가 필요할 때</span>薬が必要です</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="vocab-section-label animate-on-scroll" style="margin-top:28px;">🏨 ホテル · 호텔</div>
+        <div class="vocab-wrapper animate-on-scroll">
+          <table class="vocab-table">
+            <thead><tr><th>韓国語 · 한국어</th><th>日本語訳 · 번역</th></tr></thead>
+            <tbody>
+              <tr><td class="kor-cell">체크인 하고 싶어요<span class="rom-text">Chekeu-in hago sipeoyo</span></td><td class="eng-cell"><span class="kor-trans">호텔 체크인 시</span>チェックインしたいです</td></tr>
+              <tr><td class="kor-cell">방이 있나요?<span class="rom-text">Bangi innayo?</span></td><td class="eng-cell"><span class="kor-trans">객실 예약 가능 여부</span>部屋はありますか？</td></tr>
+              <tr><td class="kor-cell">와이파이 비밀번호가 뭐예요?<span class="rom-text">Waipai bimilbeonhoga mwoyeyo?</span></td><td class="eng-cell"><span class="kor-trans">와이파이 연결 시</span>WiFiのパスワードは何ですか？</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TRANSPORTATION -->
+    <section class="travel-section-alt">
+      <div class="container">
+
+        <div class="text-center mb-32 animate-on-scroll">
+          <div class="section-eyebrow">交通 · 교통</div>
+          <h2 class="section-title">韓国の交通手段</h2>
+          <p class="section-desc" style="margin:0 auto;">
+            韓国は世界最高水準の公共交通機関を誇ります。
+            自信を持って移動するために必要な情報をまとめました。
+          </p>
+        </div>
+
+        <div class="transport-grid">
+
+          <div class="transport-card animate-on-scroll">
+            <span class="transport-icon">🚇</span>
+            <span class="transport-name-kor">지하철</span>
+            <span class="transport-name-eng">地下鉄</span>
+            <p class="transport-desc">ソウルの地下鉄は9路線で都市圏全域をカバー — 清潔で安全、1分単位で正確です。釜山、大邱、仁川でも運行しています。</p>
+            <div class="kr-trans">서울 지하철은 9개 노선으로 수도권 전체를 연결합니다 — 깨끗하고 안전하며 분 단위로 정확합니다.</div>
+            <div class="transport-tip">💳 <strong>T-Moneyカード</strong>（티머니）をコンビニで購入すると全交通機関でキャッシュレス決済ができます</div>
+          </div>
+
+          <div class="transport-card animate-on-scroll">
+            <span class="transport-icon">🚄</span>
+            <span class="transport-name-kor">KTX 고속열차</span>
+            <span class="transport-name-eng">KTX高速鉄道</span>
+            <p class="transport-desc">韓国高速鉄道（KTX）はソウル-釜山間を最高時速305kmで2時間15分で結びます。KORAILアプリで予約可。</p>
+            <div class="kr-trans">한국고속철도(KTX)는 서울-부산을 최고 시속 305km로 2시간 15분 만에 연결합니다.</div>
+            <div class="transport-tip">🎫 <strong>Korail.com</strong> または KORAIL Talkアプリで予約 — 少なくとも1日前に</div>
+          </div>
+
+          <div class="transport-card animate-on-scroll">
+            <span class="transport-icon">🚌</span>
+            <span class="transport-name-kor">버스</span>
+            <span class="transport-name-eng">バス</span>
+            <p class="transport-desc">고속버스（高速バス）は全主要都市を手頃な価格で結びます。市内バスは地下鉄が届かない場所を補完 — T-Moneyで支払い。</p>
+            <div class="kr-trans">고속버스는 모든 주요 도시를 저렴하게 연결합니다.</div>
+            <div class="transport-tip">📱 <strong>KakaoMap</strong>でリアルタイムのバス到着時刻を確認できます（英語対応）</div>
+          </div>
+
+          <div class="transport-card animate-on-scroll">
+            <span class="transport-icon">🚕</span>
+            <span class="transport-name-kor">택시</span>
+            <span class="transport-name-eng">タクシー</span>
+            <p class="transport-desc">韓国のタクシーはメーター制で手頃な価格、台数も豊富。黒いタクシー（모범택시）はプレミアム。KakaoTaxiで簡単に呼べます。</p>
+            <div class="kr-trans">한국 택시는 미터제, 합리적 요금, 넉넉한 대수를 자랑합니다.</div>
+            <div class="transport-tip">📲 <strong>KakaoTaxi</strong> — 英語対応、カード払い可、夜間の移動に最適</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOD TOUR -->
+    <section class="travel-section">
+      <div class="container">
+
+        <div class="text-center mb-32 animate-on-scroll">
+          <div class="section-eyebrow">グルメツアー · 음식 여행</div>
+          <h2 class="section-title">地域別韓国料理</h2>
+          <p class="section-desc" style="margin:0 auto;">
+            韓国料理は地域によって大きく異なります。各都市にはそれぞれ名物料理があり、
+            地元の食語彙を知ることで毎食が冒険に変わります。
+          </p>
+        </div>
+
+        <div class="food-grid">
+
+          <div class="food-card animate-on-scroll">
+            <div class="food-card-header">
+              <span class="food-card-emoji">🏙️</span>
+              <div><span class="food-card-city-kor">서울</span><span class="food-card-city-eng">ソウル</span></div>
+            </div>
+            <div class="food-card-body">
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">설렁탕</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — 長時間煮込んだ牛骨スープ</span></div></div>
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">삼겹살</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — 豚バラ焼き、サンチュに包んで食べる</span></div></div>
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">치맥</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — フライドチキン（치킨）＋ビール（맥주）</span></div></div>
+              <div class="kr-trans">오래 끓인 도가니 육수 설렁탕, 상추에 싸 먹는 삼겹살 구이, 치맥 — 서울의 대표 음식들.</div>
+            </div>
+          </div>
+
+          <div class="food-card animate-on-scroll">
+            <div class="food-card-header">
+              <span class="food-card-emoji">🏖️</span>
+              <div><span class="food-card-city-kor">부산</span><span class="food-card-city-eng">釜山</span></div>
+            </div>
+            <div class="food-card-body">
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">돼지국밥</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — 豚骨ご飯スープ、釜山の定番</span></div></div>
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">밀면</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — 冷製小麦麺、辛口か普通口</span></div></div>
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">씨앗호떡</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — ひまわりの種入り甘いパンケーキ（屋台の名物）</span></div></div>
+              <div class="kr-trans">돼지고기 쌀국수 돼지국밥, 차갑게 먹는 밀면, 씨앗호떡 — 부산의 대표 음식들.</div>
+            </div>
+          </div>
+
+          <div class="food-card animate-on-scroll">
+            <div class="food-card-header">
+              <span class="food-card-emoji">🌋</span>
+              <div><span class="food-card-city-kor">제주</span><span class="food-card-city-eng">済州島</span></div>
+            </div>
+            <div class="food-card-body">
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">흑돼지</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — 済州黒豚BBQ、必食</span></div></div>
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">성게국수</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — ウニ麺スープ</span></div></div>
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">갈치조림</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — タチウオの辛煮付け</span></div></div>
+              <div class="kr-trans">필수 코스인 제주 흑돼지 구이, 진한 성게국수, 갈치조림 — 제주의 대표 음식들.</div>
+            </div>
+          </div>
+
+          <div class="food-card animate-on-scroll">
+            <div class="food-card-header">
+              <span class="food-card-emoji">🏯</span>
+              <div><span class="food-card-city-kor">경주</span><span class="food-card-city-eng">慶州</span></div>
+            </div>
+            <div class="food-card-body">
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">황남빵</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — あんこ入りの伝統菓子（1939年から）</span></div></div>
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">쌈밥</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — 新鮮な葉野菜で包んで食べるご飯定食</span></div></div>
+              <div class="food-item"><span class="food-item-dot">●</span><div><span class="food-item-name">경주법주</span><span style="font-size:0.82rem;color:var(--text-secondary);"> — 古都伝統の米マッコリ</span></div></div>
+              <div class="kr-trans">1939년부터 이어온 황남빵, 쌈밥, 경주법주 — 경주의 대표 음식들.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CULTURAL TIPS -->
+    <section class="travel-section-alt">
+      <div class="container">
+
+        <div class="text-center mb-32 animate-on-scroll">
+          <div class="section-eyebrow">文化的エチケット · 예절</div>
+          <h2 class="section-title">韓国文化のヒント</h2>
+          <p class="section-desc" style="margin:0 auto;">
+            韓国のマナーを知ることは敬意の表れ、現地の人からの温かい歓迎に繋がります。
+            訪問者が知っておくべき8つのポイント。
+          </p>
+        </div>
+
+        <div class="culture-tips-grid">
+          <div class="culture-tip-card animate-on-scroll">
+            <span class="culture-tip-icon">🙇</span>
+            <span class="culture-tip-kor">인사</span>
+            <span class="culture-tip-eng">お辞儀</span>
+            <p class="culture-tip-desc">挨拶の際は必ずお辞儀をしましょう。15度はカジュアル、45度は深い敬意を示します。韓国人は小さな努力も高く評価します。</p>
+            <div class="kr-trans">항상 인사할 때 고개를 숙이세요. 15° 가볍게 끄덕이면 일상적 인사, 45° 인사는 깊은 존경을 나타냅니다.</div>
+          </div>
+          <div class="culture-tip-card animate-on-scroll">
+            <span class="culture-tip-icon">🎂</span>
+            <span class="culture-tip-kor">나이</span>
+            <span class="culture-tip-eng">年齢</span>
+            <p class="culture-tip-desc">韓国人は初対面後すぐに年齢を聞くことがあります — 失礼ではありません。年齢によって言葉遣い（존댓말 vs 반말）が決まります。</p>
+            <div class="kr-trans">한국인들은 처음 만나고 얼마 안 있어 나이를 물어보는 경우가 많습니다 — 실례가 아닙니다.</div>
+          </div>
+          <div class="culture-tip-card animate-on-scroll">
+            <span class="culture-tip-icon">👟</span>
+            <span class="culture-tip-kor">신발</span>
+            <span class="culture-tip-eng">靴</span>
+            <p class="culture-tip-desc">韓国の家庭、多くのゲストハウス、一部の伝統的なレストランに入る際は必ず靴を脱ぎましょう。靴棚を探してみてください。</p>
+            <div class="kr-trans">한국 가정, 많은 게스트하우스, 일부 전통 식당에 들어갈 때는 반드시 신발을 벗으세요.</div>
+          </div>
+          <div class="culture-tip-card animate-on-scroll">
+            <span class="culture-tip-icon">🤲</span>
+            <span class="culture-tip-kor">두 손</span>
+            <span class="culture-tip-eng">両手</span>
+            <p class="culture-tip-desc">お金、プレゼント、名刺を渡す・受け取る際は、両手か右手を左手で支えながら行いましょう。</p>
+            <div class="kr-trans">돈, 선물, 명함 등을 주거나 받을 때는 양손을 사용하거나 왼손으로 오른쪽 팔목을 받쳐주세요.</div>
+          </div>
+          <div class="culture-tip-card animate-on-scroll">
+            <span class="culture-tip-icon">🍚</span>
+            <span class="culture-tip-kor">식사</span>
+            <span class="culture-tip-eng">食事</span>
+            <p class="culture-tip-desc">テーブルで最年長者がスプーンを持ってから食事を始めましょう — 韓国の儒教式食事マナーの基本です。</p>
+            <div class="kr-trans">먹기 전에 자리에서 가장 어른이 숟가락을 드실 때까지 기다리세요.</div>
+          </div>
+          <div class="culture-tip-card animate-on-scroll">
+            <span class="culture-tip-icon">🍶</span>
+            <span class="culture-tip-kor">음주</span>
+            <span class="culture-tip-eng">飲酒</span>
+            <p class="culture-tip-desc">自分のグラスには絶対に自分で注がないこと — 常に相手のグラスを先に満たしましょう。誰かが注いでくれる時は両手でグラスを持って。</p>
+            <div class="kr-trans">절대 자신의 잔을 직접 채우지 마세요 — 항상 다른 사람의 잔을 먼저 채워주세요.</div>
+          </div>
+          <div class="culture-tip-card animate-on-scroll">
+            <span class="culture-tip-icon">🤫</span>
+            <span class="culture-tip-kor">조용함</span>
+            <span class="culture-tip-eng">静粛</span>
+            <p class="culture-tip-desc">地下鉄では声を小さくしましょう — 静かな車両で大声で話したり電話に出るのは失礼にあたります。</p>
+            <div class="kr-trans">지하철에서는 목소리를 낮추세요 — 조용한 칸에서 큰 소리로 말하거나 전화를 받는 것은 무례합니다.</div>
+          </div>
+          <div class="culture-tip-card animate-on-scroll">
+            <span class="culture-tip-icon">💳</span>
+            <span class="culture-tip-kor">팁</span>
+            <span class="culture-tip-eng">チップ</span>
+            <p class="culture-tip-desc">韓国ではチップを渡すことは一般的でも期待されてもいません — むしろ気まずい場面になることも。サービス料は含まれています。</p>
+            <div class="kr-trans">한국에서는 팁을 주는 것이 일반적이지도, 기대하지도 않습니다 — 오히려 어색함을 유발할 수 있습니다.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- USEFUL APPS -->
+    <section class="travel-section">
+      <div class="container">
+
+        <div class="text-center mb-32 animate-on-scroll">
+          <div class="section-eyebrow">旅行アプリ · 여행 앱</div>
+          <h2 class="section-title">韓国旅行に必須のアプリ</h2>
+          <p class="section-desc" style="margin:0 auto;">
+            到着前にダウンロードしておこう — これらのアプリが旅を劇的に変えます。
+          </p>
+        </div>
+
+        <div class="apps-grid">
+          <div class="app-card animate-on-scroll">
+            <span class="app-icon">🗺️</span>
+            <span class="app-name">KakaoMap</span>
+            <p class="app-desc">韓国で最も正確な地図アプリ — リアルタイム交通、徒歩ルート、英語対応</p>
+            <div class="kr-trans">한국에서 가장 정확한 지도 앱 — 실시간 대중교통, 도보 경로, 영어 지원.</div>
+          </div>
+          <div class="app-card animate-on-scroll">
+            <span class="app-icon">🌐</span>
+            <span class="app-name">Papago</span>
+            <p class="app-desc">NaverのAI翻訳アプリ — 韓国語ではGoogle翻訳より遥かに正確。メニューのカメラ翻訳機能あり。</p>
+            <div class="kr-trans">네이버의 AI 번역기 — 한국어에서는 구글 번역보다 훨씬 정확합니다.</div>
+          </div>
+          <div class="app-card animate-on-scroll">
+            <span class="app-icon">🚕</span>
+            <span class="app-name">KakaoTaxi</span>
+            <p class="app-desc">韓国の定番配車アプリ — 安全でメーター制、英語対応、カード払い可</p>
+            <div class="kr-trans">한국의 대표 차량 호출 앱 — 안전하고 미터제, 영어 지원, 카드 결제 가능.</div>
+          </div>
+          <div class="app-card animate-on-scroll">
+            <span class="app-icon">🍱</span>
+            <span class="app-name">Coupang Eats</span>
+            <p class="app-desc">韓国最大のフードデリバリーアプリ — ホテルへの出前にも最適</p>
+            <div class="kr-trans">한국 최고의 음식 배달 앱 — 언제든 호텔로 주문하기 완벽합니다.</div>
+          </div>
+          <div class="app-card animate-on-scroll">
+            <span class="app-icon">📍</span>
+            <span class="app-name">Naver Map</span>
+            <p class="app-desc">詳細な屋内地図、レストランのレビュー、公共交通の時刻表</p>
+            <div class="kr-trans">상세한 실내 지도, 식당 리뷰, 대중교통 시간표 제공.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="travel-section-alt">
+      <div class="container">
+        <div class="card card-primary animate-on-scroll" style="text-align:center;padding:60px 40px;max-width:800px;margin:0 auto;position:relative;overflow:hidden;">
+          <div style="position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(232,0,61,0.12),transparent 70%);top:-100px;right:-100px;pointer-events:none;"></div>
+          <div style="position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(0,52,120,0.12),transparent 70%);bottom:-60px;left:-60px;pointer-events:none;"></div>
+          <div style="position:relative;z-index:1;">
+            <div class="section-eyebrow" style="justify-content:center;margin-bottom:16px;">学習を始めましょう！</div>
+            <h2 class="section-title" style="margin-bottom:16px;">今日から韓国語を話そう</h2>
+            <p style="max-width:500px;margin:0 auto 32px;color:var(--text-secondary);font-size:1rem;line-height:1.7;">
+              このページのすべてのフレーズが上達への第一歩です。まずはハングル（한글） — 韓国語のアルファベット — から始めましょう。1週間でソウルの看板が読めるようになります。
+            </p>
+            <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+              <a href="../../learn/hangul.html" class="btn btn-primary btn-lg">📚 韓国語の学習を始める →</a>
+              <a href="planner.html" class="btn btn-secondary btn-lg">📋 旅行を計画する</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="logo">
+            <div class="logo-mark">한</div>
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>無料の韓国語学習プラットフォーム — 言語学習とK-カルチャー、旅行ガイド、実践練習を組み合わせた、あらゆるレベルの学習者向けのサービスです。</p>
+        </div>
+        <div>
+          <div class="footer-heading">学ぶ</div>
+          <ul class="footer-links">
+            <li><a href="../../learn/hangul.html">ハングルアルファベット</a></li>
+            <li><a href="../../learn/grammar.html">文法</a></li>
+            <li><a href="../../learn/vocabulary.html">語彙</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">探索</div>
+          <ul class="footer-links">
+            <li><a href="../../culture/index.html">K-カルチャー</a></li>
+            <li><a href="index.html">旅行ガイド</a></li>
+            <li><a href="../../news/index.html">韓国ニュース</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">会社情報</div>
+          <ul class="footer-links">
+            <li><a href="../../ja/about.html">私たちについて</a></li>
+            <li><a href="../../ja/contact.html">お問い合わせ</a></li>
+            <li><a href="../../ja/privacy.html">プライバシーポリシー</a></li>
+            <li><a href="../../ja/terms.html">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. 世界中の韓国語学習者のために ❤️</span>
+        <span>🇰🇷 학습을 즐기세요！（学習を楽しんでください！）</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/app.js"></script>
+</body>
+</html>

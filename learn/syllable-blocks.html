@@ -1,0 +1,1071 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syllable Blocks | 한국어 학교</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="hangul.html" class="active"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search lessons..." autocomplete="off" aria-label="Search">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div id="lesson-progress-grid"></div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">Getting Started</div>
+    <a href="../index.html" class="sidebar-link"><span class="link-icon">🏠</span> Introduction</a>
+    <a href="hangul.html" class="sidebar-link"><span class="link-icon">✏️</span> Hangul Alphabet</a>
+    <a href="syllable-blocks.html" class="sidebar-link active"><span class="link-icon">🔷</span> Syllable Blocks</a>
+    <a href="pronunciation.html" class="sidebar-link"><span class="link-icon">🔊</span> Pronunciation Guide</a>
+    <div class="sidebar-section">Beginner</div>
+    <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> Vocab <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-vocab">
+      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
+      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
+      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
+      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
+      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
+      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
+      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
+      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
+      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
+      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
+      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
+      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
+      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
+      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
+      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
+      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
+      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
+      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
+      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
+      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
+      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
+    </div>
+    <a href="pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> Pronouns <span class="link-badge badge-beginner">Beginner</span></a>
+    <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> Common Nouns <span class="link-badge badge-beginner">Beginner</span></a>
+    <button class="sidebar-accordion-btn" data-accordion="grammar"><span class="link-icon">📝</span> Grammar <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-grammar">
+      <a href="grammar.html#sentence-structure" class="sidebar-link" data-level="intermediate"><span class="link-icon">📐</span> Sentence Structure <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#particles" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔗</span> Korean Particles <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#conjugation" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏰</span> Verb Conjugation <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#questions" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Question Forms <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#connectors" class="sidebar-link" data-level="beginner"><span class="link-icon">🔗</span> Connectors <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#and-with" class="sidebar-link" data-level="beginner"><span class="link-icon">➕</span> And, With <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#to-from" class="sidebar-link" data-level="beginner"><span class="link-icon">📨</span> To/From Someone <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#telling-time" class="sidebar-link" data-level="beginner"><span class="link-icon">🕐</span> Telling Time <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#counters" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Counters <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#progressive" class="sidebar-link" data-level="beginner"><span class="link-icon">▶️</span> Present Progressive <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#self-intro" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Self Introduction <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#dates" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Dates and Months <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#adverbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">💯</span> Degree Adverbs <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#nominalizer" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔤</span> Nominalizer -는 것 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#comparatives" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚖️</span> Comparatives <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">📢</span> Imperative -(으)세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#negative-imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">🚫</span> Don't: -지 마세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#method" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛤️</span> Method: -(으)로 <span class="link-badge badge-intermediate">Intermediate</span></a>
+    </div>
+    <div class="sidebar-section">Intermediate</div>
+    <a href="speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> Formal vs Informal <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <a href="emotions.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">😊</span> Expressing Emotions <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <a href="shopping.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛒</span> Shopping Phrases <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <div class="sidebar-section">Advanced</div>
+    <a href="writing-essays.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📝</span> Writing Essays <span class="link-badge badge-advanced">Advanced</span></a>
+    <a href="business-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">💼</span> Business Korean <span class="link-badge badge-advanced">Advanced</span></a>
+    <a href="classical-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Classical Korean <span class="link-badge badge-advanced">Advanced</span></a>
+    <div class="sidebar-section">Tools</div>
+    <a href="dialogues.html" class="sidebar-link"><span class="link-icon">💬</span> Korean Dialogues</a>
+    <a href="flashcard.html" class="sidebar-link"><span class="link-icon">📇</span> Flashcards</a>
+  </nav>
+</aside>
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="lesson-header animate-on-scroll">
+      <div class="lesson-breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <a href="hangul.html">Learn</a>
+        <span>›</span>
+        <span>Syllable Blocks</span>
+      </div>
+      <div class="lesson-tag">🔷 Beginner · Lesson 2</div>
+      <h1 class="lesson-title">Korean Syllable Blocks: <span class="grad-text">음절 구조</span></h1>
+      <div class="lesson-meta">
+        <span>🔲 Block Structure Rules</span>
+        <span>📊 Beginner</span>
+        <span>🔖 Writing System</span>
+        <span class="tag tag-beginner">Beginner</span>
+        <span>✏️ Interactive Writing</span>
+      </div>
+      <p class="lesson-intro">In Korean, every syllable is written as a compact square block — not in a horizontal line like English. Understanding how these blocks are assembled is the key to reading and writing Korean fluently. Once you master syllable block structure, you can sound out any Korean word!</p>
+    </div>
+
+    <!-- Section 1: What Is a Syllable Block? -->
+    <div class="lesson-section animate-on-scroll">
+      <h2><span class="section-num">1</span> What Is a Syllable Block? <span style="font-family:var(--font-korean)">음절이란?</span></h2>
+      <p>Every Korean syllable is written inside an invisible square block. Unlike English where letters go left to right in a row, Korean stacks consonants and vowels together into compact, visually balanced blocks. Each block represents exactly one syllable — one unit of sound.</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>🔷 How Syllable Blocks Are Built</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line" style="font-size:2.2rem">한 국 어</div>
+            <div class="rom-line">Han · Guk · Eo</div>
+            <div class="eng-line">Korean (language)</div>
+          </div>
+          <div style="margin-top:1.2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;text-align:center">
+            <div class="card card-glass" style="padding:1rem">
+              <div style="font-family:var(--font-korean);font-size:2rem;font-weight:700;color:var(--primary)">한</div>
+              <div style="margin-top:.4rem;font-size:.85rem;color:var(--text-secondary)">ㅎ + ㅏ + ㄴ</div>
+              <div style="font-size:.8rem;color:var(--text-muted)">h + a + n</div>
+            </div>
+            <div class="card card-glass" style="padding:1rem">
+              <div style="font-family:var(--font-korean);font-size:2rem;font-weight:700;color:var(--secondary)">국</div>
+              <div style="margin-top:.4rem;font-size:.85rem;color:var(--text-secondary)">ㄱ + ㅜ + ㄱ</div>
+              <div style="font-size:.8rem;color:var(--text-muted)">g + u + k</div>
+            </div>
+            <div class="card card-glass" style="padding:1rem">
+              <div style="font-family:var(--font-korean);font-size:2rem;font-weight:700;color:var(--accent)">어</div>
+              <div style="margin-top:.4rem;font-size:.85rem;color:var(--text-secondary)">ㅇ + ㅓ</div>
+              <div style="font-size:.8rem;color:var(--text-muted)">silent + eo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:1.5rem">Here are 10 common single syllables broken into their components:</p>
+
+      <table class="vocab-table" style="width:100%;table-layout:fixed">
+        <thead>
+          <tr><th style="width:14%">Block</th><th style="width:38%">Components</th><th style="width:28%">Sound</th><th>Listen</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">가</td>
+            <td>ㄱ + ㅏ</td>
+            <td>ga</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('가')" aria-label="Pronounce 가">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">나</td>
+            <td>ㄴ + ㅏ</td>
+            <td>na</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('나')" aria-label="Pronounce 나">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">다</td>
+            <td>ㄷ + ㅏ</td>
+            <td>da</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('다')" aria-label="Pronounce 다">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">라</td>
+            <td>ㄹ + ㅏ</td>
+            <td>ra</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('라')" aria-label="Pronounce 라">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">마</td>
+            <td>ㅁ + ㅏ</td>
+            <td>ma</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('마')" aria-label="Pronounce 마">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">바</td>
+            <td>ㅂ + ㅏ</td>
+            <td>ba</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('바')" aria-label="Pronounce 바">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">사</td>
+            <td>ㅅ + ㅏ</td>
+            <td>sa</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('사')" aria-label="Pronounce 사">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">아</td>
+            <td>ㅇ + ㅏ</td>
+            <td>a</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('아')" aria-label="Pronounce 아">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">자</td>
+            <td>ㅈ + ㅏ</td>
+            <td>ja</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('자')" aria-label="Pronounce 자">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.5rem">하</td>
+            <td>ㅎ + ㅏ</td>
+            <td>ha</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('하')" aria-label="Pronounce 하">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="info-box" style="margin-top:1.5rem">
+        <span class="tip-icon">ℹ️</span>
+        <div class="tip-content">
+          <div class="tip-label">Did you know?</div>
+          <div class="tip-text">Each syllable block always has exactly one vowel. It may have 0, 1, or 2 consonants — but never more than one vowel.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: The Three Positions -->
+    <div class="lesson-section animate-on-scroll">
+      <h2><span class="section-num">2</span> The Three Positions <span style="font-family:var(--font-korean)">세 가지 자리</span></h2>
+      <p>Every Korean syllable block has three named positions. Two are required (initial consonant and medial vowel) and one is optional (the final consonant). Learning these positions by name is essential — Korean grammar references them constantly.</p>
+
+      <table class="vocab-table" style="width:100%;table-layout:fixed">
+        <thead>
+          <tr><th style="width:18%">Position</th><th style="width:20%">Korean Name</th><th style="width:38%">Role</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Initial</strong></td>
+            <td class="kor-cell">초성</td>
+            <td>First consonant — required</td>
+            <td class="kor-cell">ㅎ in 한</td>
+          </tr>
+          <tr>
+            <td><strong>Medial</strong></td>
+            <td class="kor-cell">중성</td>
+            <td>Vowel — always exactly one</td>
+            <td class="kor-cell">ㅏ in 한</td>
+          </tr>
+          <tr>
+            <td><strong>Final</strong></td>
+            <td class="kor-cell">종성 / 받침</td>
+            <td>Last consonant — optional</td>
+            <td class="kor-cell">ㄴ in 한</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="example-box" style="margin-top:1.5rem">
+        <div class="example-header"><span>🔷 Visual Block Structure</span></div>
+        <div class="example-body">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start">
+            <div>
+              <p style="margin-bottom:.8rem;font-weight:600;color:var(--text-secondary)">With a vertical vowel (e.g., ㅏ)</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:4px;max-width:140px;border:1px solid var(--border);border-radius:8px;overflow:hidden">
+                <div style="background:var(--glass);padding:12px;text-align:center;font-family:var(--font-korean);font-size:1.4rem;color:var(--primary);font-weight:700">ㅎ</div>
+                <div style="background:var(--glass);padding:12px;text-align:center;font-family:var(--font-korean);font-size:1.4rem;color:var(--secondary);font-weight:700">ㅏ</div>
+                <div style="background:var(--glass);padding:12px;text-align:center;font-family:var(--font-korean);font-size:1.4rem;color:var(--accent);font-weight:700;grid-column:span 2">ㄴ</div>
+              </div>
+              <div style="margin-top:.6rem;font-size:.8rem;color:var(--text-muted)">
+                <span style="color:var(--primary)">■</span> 초성 &nbsp;
+                <span style="color:var(--secondary)">■</span> 중성 &nbsp;
+                <span style="color:var(--accent)">■</span> 받침
+              </div>
+            </div>
+            <div>
+              <p style="margin-bottom:.8rem;font-weight:600;color:var(--text-secondary)">With a horizontal vowel (e.g., ㅜ)</p>
+              <div style="display:grid;grid-template-columns:1fr;grid-template-rows:auto auto auto;gap:4px;max-width:80px;border:1px solid var(--border);border-radius:8px;overflow:hidden">
+                <div style="background:var(--glass);padding:12px;text-align:center;font-family:var(--font-korean);font-size:1.4rem;color:var(--primary);font-weight:700">ㄱ</div>
+                <div style="background:var(--glass);padding:12px;text-align:center;font-family:var(--font-korean);font-size:1.4rem;color:var(--secondary);font-weight:700">ㅜ</div>
+                <div style="background:var(--glass);padding:12px;text-align:center;font-family:var(--font-korean);font-size:1.4rem;color:var(--accent);font-weight:700">ㄱ</div>
+              </div>
+              <div style="margin-top:.6rem;font-size:.8rem;color:var(--text-muted)">Result: <span style="font-family:var(--font-korean);font-size:1.1rem;font-weight:700">국</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-box" style="margin-top:1.5rem">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Tip</div>
+          <div class="tip-text">For vertical vowels like ㅏ, ㅓ, and ㅣ: the initial consonant sits to the <strong>left</strong>, the vowel to the <strong>right</strong>. For horizontal vowels like ㅗ, ㅜ, and ㅡ: the initial consonant sits <strong>on top</strong>, the vowel <strong>below</strong>.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Four Syllable Block Patterns -->
+    <div class="lesson-section animate-on-scroll">
+      <h2><span class="section-num">3</span> Four Syllable Block Patterns <span style="font-family:var(--font-korean)">네 가지 음절 패턴</span></h2>
+      <p>Korean syllables follow four basic structural patterns depending on whether a final consonant (받침) is present and whether the syllable begins with a vowel or consonant.</p>
+
+      <table class="vocab-table" style="width:100%;table-layout:fixed">
+        <thead>
+          <tr><th style="width:10%">Pattern</th><th style="width:28%">Structure</th><th style="width:16%">Example</th><th style="width:32%">Meaning</th><th>Listen</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>CV</strong></td>
+            <td>Consonant + Vowel</td>
+            <td class="kor-cell" style="font-size:1.4rem">가 <span style="font-size:.85rem;font-family:inherit">(ㄱ+ㅏ)</span></td>
+            <td>go / to go</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('가')" aria-label="Pronounce 가">🔊</button></td>
+          </tr>
+          <tr>
+            <td><strong>V only</strong></td>
+            <td>ㅇ (silent) + Vowel</td>
+            <td class="kor-cell" style="font-size:1.4rem">아 <span style="font-size:.85rem;font-family:inherit">(ㅇ+ㅏ)</span></td>
+            <td>ah / younger sibling</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('아')" aria-label="Pronounce 아">🔊</button></td>
+          </tr>
+          <tr>
+            <td><strong>CVC</strong></td>
+            <td>Consonant + Vowel + Final</td>
+            <td class="kor-cell" style="font-size:1.4rem">간 <span style="font-size:.85rem;font-family:inherit">(ㄱ+ㅏ+ㄴ)</span></td>
+            <td>went / liver</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('간')" aria-label="Pronounce 간">🔊</button></td>
+          </tr>
+          <tr>
+            <td><strong>VC</strong></td>
+            <td>ㅇ (silent) + Vowel + Final</td>
+            <td class="kor-cell" style="font-size:1.4rem">안 <span style="font-size:.85rem;font-family:inherit">(ㅇ+ㅏ+ㄴ)</span></td>
+            <td>inside / no</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('안')" aria-label="Pronounce 안">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box" style="margin-top:1.5rem">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">The ㅇ Placeholder Rule</div>
+          <div class="tip-text">When a syllable starts with a vowel sound, you <strong>must</strong> write ㅇ as a placeholder in the initial position. ㅇ is completely silent at the start of a syllable — it simply signals that the block begins with a vowel. Examples: <span style="font-family:var(--font-korean);font-weight:700">아</span> = ㅇ+ㅏ &nbsp; <span style="font-family:var(--font-korean);font-weight:700">이</span> = ㅇ+ㅣ &nbsp; <span style="font-family:var(--font-korean);font-weight:700">우</span> = ㅇ+ㅜ</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Vertical vs Horizontal Vowels -->
+    <div class="lesson-section animate-on-scroll">
+      <h2><span class="section-num">4</span> Vertical vs Horizontal Vowels <span style="font-family:var(--font-korean)">세로 vs 가로 모음</span></h2>
+      <p>The shape of the vowel determines where the initial consonant goes inside the block. Tall, vertical vowels push the consonant to the left; wide, horizontal vowels push it to the top. This is what gives Korean its distinctive square appearance.</p>
+
+      <p style="font-weight:600;color:var(--text)">Vertical vowels — initial consonant goes <span class="grad-text">LEFT</span>, vowel goes RIGHT</p>
+      <table class="vocab-table" style="width:100%;table-layout:fixed">
+        <thead>
+          <tr><th style="width:12%">Vowel</th><th style="width:10%">Sound</th><th style="width:28%">Example block</th><th style="width:16%">Result</th><th>Listen</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅏ</td>
+            <td>a</td>
+            <td>ㄱ + ㅏ</td>
+            <td class="kor-cell" style="font-size:1.5rem">가</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('가')" aria-label="Pronounce 가">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅓ</td>
+            <td>eo</td>
+            <td>ㄴ + ㅓ</td>
+            <td class="kor-cell" style="font-size:1.5rem">너</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('너')" aria-label="Pronounce 너">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅣ</td>
+            <td>i</td>
+            <td>ㅅ + ㅣ</td>
+            <td class="kor-cell" style="font-size:1.5rem">시</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('시')" aria-label="Pronounce 시">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅑ</td>
+            <td>ya</td>
+            <td>ㄷ + ㅑ</td>
+            <td class="kor-cell" style="font-size:1.5rem">댜</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('댜')" aria-label="Pronounce 댜">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅕ</td>
+            <td>yeo</td>
+            <td>ㄴ + ㅕ</td>
+            <td class="kor-cell" style="font-size:1.5rem">녀</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('녀')" aria-label="Pronounce 녀">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅐ</td>
+            <td>ae</td>
+            <td>ㅂ + ㅐ</td>
+            <td class="kor-cell" style="font-size:1.5rem">배</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('배')" aria-label="Pronounce 배">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅔ</td>
+            <td>e</td>
+            <td>ㄱ + ㅔ</td>
+            <td class="kor-cell" style="font-size:1.5rem">게</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('게')" aria-label="Pronounce 게">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="font-weight:600;color:var(--text);margin-top:1.5rem">Horizontal vowels — initial consonant goes <span class="grad-text-2">ON TOP</span>, vowel goes BELOW</p>
+      <table class="vocab-table" style="width:100%;table-layout:fixed">
+        <thead>
+          <tr><th style="width:12%">Vowel</th><th style="width:10%">Sound</th><th style="width:28%">Example block</th><th style="width:16%">Result</th><th>Listen</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅗ</td>
+            <td>o</td>
+            <td>ㄱ + ㅗ</td>
+            <td class="kor-cell" style="font-size:1.5rem">고</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('고')" aria-label="Pronounce 고">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅜ</td>
+            <td>u</td>
+            <td>ㄴ + ㅜ</td>
+            <td class="kor-cell" style="font-size:1.5rem">누</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('누')" aria-label="Pronounce 누">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅡ</td>
+            <td>eu</td>
+            <td>ㄱ + ㅡ</td>
+            <td class="kor-cell" style="font-size:1.5rem">그</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('그')" aria-label="Pronounce 그">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅛ</td>
+            <td>yo</td>
+            <td>ㅅ + ㅛ</td>
+            <td class="kor-cell" style="font-size:1.5rem">쇼</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('쇼')" aria-label="Pronounce 쇼">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.3rem">ㅠ</td>
+            <td>yu</td>
+            <td>ㄴ + ㅠ</td>
+            <td class="kor-cell" style="font-size:1.5rem">뉴</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('뉴')" aria-label="Pronounce 뉴">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box" style="margin-top:1.5rem">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Quick Visual Trick</div>
+          <div class="tip-text">When you see a <strong>tall vowel</strong> (ㅏ, ㅓ, ㅣ and their variants), the initial consonant sits to its <strong>left</strong>. When you see a <strong>wide vowel</strong> (ㅗ, ㅜ, ㅡ and their variants), the initial consonant sits <strong>above</strong> it. Compound vowels like ㅘ, ㅝ, ㅚ behave like vertical vowels — consonant goes left.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5: Building Your First Syllables -->
+    <div class="lesson-section animate-on-scroll">
+      <h2><span class="section-num">5</span> Building Your First Syllables <span style="font-family:var(--font-korean)">첫 번째 음절 만들기</span></h2>
+      <p>Now let's practice building simple CV syllables — consonant + vowel, no batchim. These are the easiest blocks to read and write. Listen to each one and try to produce the sound yourself.</p>
+
+      <p style="font-weight:600;color:var(--text-secondary);margin-bottom:.8rem">With vowel ㅏ (a)</p>
+      <div class="hangul-grid">
+        <div class="hangul-card">
+          <div class="hangul-char">가</div>
+          <div class="hangul-rom">ga</div>
+          <div class="hangul-name">ㄱ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('가')" aria-label="Pronounce 가">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">나</div>
+          <div class="hangul-rom">na</div>
+          <div class="hangul-name">ㄴ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('나')" aria-label="Pronounce 나">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">다</div>
+          <div class="hangul-rom">da</div>
+          <div class="hangul-name">ㄷ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('다')" aria-label="Pronounce 다">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">라</div>
+          <div class="hangul-rom">ra</div>
+          <div class="hangul-name">ㄹ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('라')" aria-label="Pronounce 라">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">마</div>
+          <div class="hangul-rom">ma</div>
+          <div class="hangul-name">ㅁ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('마')" aria-label="Pronounce 마">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">바</div>
+          <div class="hangul-rom">ba</div>
+          <div class="hangul-name">ㅂ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('바')" aria-label="Pronounce 바">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">사</div>
+          <div class="hangul-rom">sa</div>
+          <div class="hangul-name">ㅅ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('사')" aria-label="Pronounce 사">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">아</div>
+          <div class="hangul-rom">a</div>
+          <div class="hangul-name">ㅇ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('아')" aria-label="Pronounce 아">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">자</div>
+          <div class="hangul-rom">ja</div>
+          <div class="hangul-name">ㅈ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('자')" aria-label="Pronounce 자">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">하</div>
+          <div class="hangul-rom">ha</div>
+          <div class="hangul-name">ㅎ+ㅏ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('하')" aria-label="Pronounce 하">🔊</button>
+        </div>
+      </div>
+
+      <p style="font-weight:600;color:var(--text-secondary);margin-top:1.5rem;margin-bottom:.8rem">With vowel ㅗ (o)</p>
+      <div class="hangul-grid">
+        <div class="hangul-card">
+          <div class="hangul-char">고</div>
+          <div class="hangul-rom">go</div>
+          <div class="hangul-name">ㄱ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('고')" aria-label="Pronounce 고">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">노</div>
+          <div class="hangul-rom">no</div>
+          <div class="hangul-name">ㄴ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('노')" aria-label="Pronounce 노">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">도</div>
+          <div class="hangul-rom">do</div>
+          <div class="hangul-name">ㄷ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('도')" aria-label="Pronounce 도">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">로</div>
+          <div class="hangul-rom">ro</div>
+          <div class="hangul-name">ㄹ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('로')" aria-label="Pronounce 로">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">모</div>
+          <div class="hangul-rom">mo</div>
+          <div class="hangul-name">ㅁ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('모')" aria-label="Pronounce 모">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">보</div>
+          <div class="hangul-rom">bo</div>
+          <div class="hangul-name">ㅂ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('보')" aria-label="Pronounce 보">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">소</div>
+          <div class="hangul-rom">so</div>
+          <div class="hangul-name">ㅅ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('소')" aria-label="Pronounce 소">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">오</div>
+          <div class="hangul-rom">o</div>
+          <div class="hangul-name">ㅇ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('오')" aria-label="Pronounce 오">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">조</div>
+          <div class="hangul-rom">jo</div>
+          <div class="hangul-name">ㅈ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('조')" aria-label="Pronounce 조">🔊</button>
+        </div>
+        <div class="hangul-card">
+          <div class="hangul-char">호</div>
+          <div class="hangul-rom">ho</div>
+          <div class="hangul-name">ㅎ+ㅗ</div>
+          <button class="hangul-sound-btn" onclick="speakKorean('호')" aria-label="Pronounce 호">🔊</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 6: Adding Batchim -->
+    <div class="lesson-section animate-on-scroll">
+      <h2><span class="section-num">6</span> Adding Batchim — The Final Consonant <span style="font-family:var(--font-korean)">받침 추가</span></h2>
+      <p>When you add a consonant at the bottom of a block, that consonant becomes the <strong>받침 (batchim)</strong> — the final consonant. Batchim is what gives many Korean words their rich, resonant endings. Watch how adding batchim transforms simple syllables into real words.</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>🔷 Batchim Progressions</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">가 → 각</div>
+            <div class="rom-line">ga → gak</div>
+            <div class="eng-line">Add ㄱ at the bottom of 가</div>
+          </div>
+          <div class="korean-example" style="margin-top:1rem">
+            <div class="kor-line">나 → 난</div>
+            <div class="rom-line">na → nan</div>
+            <div class="eng-line">Add ㄴ at the bottom of 나</div>
+          </div>
+          <div class="korean-example" style="margin-top:1rem">
+            <div class="kor-line">사 → 산</div>
+            <div class="rom-line">sa → san</div>
+            <div class="eng-line">Add ㄴ at the bottom of 사 — mountain! <button class="hangul-sound-btn" onclick="speakKorean('산')" aria-label="Pronounce 산">🔊</button></div>
+          </div>
+          <div class="korean-example" style="margin-top:1rem">
+            <div class="kor-line">보 → 봄</div>
+            <div class="rom-line">bo → bom</div>
+            <div class="eng-line">Add ㅁ at the bottom of 보 — spring! <button class="hangul-sound-btn" onclick="speakKorean('봄')" aria-label="Pronounce 봄">🔊</button></div>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:1.5rem">Here are 12 everyday Korean words built with batchim:</p>
+
+      <table class="vocab-table" style="width:100%;table-layout:fixed">
+        <thead>
+          <tr><th style="width:12%">Korean</th><th style="width:18%">Romanization</th><th style="width:32%">Meaning</th><th style="width:12%">Batchim</th><th>Listen</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">산</td>
+            <td>san</td>
+            <td>mountain</td>
+            <td class="kor-cell">ㄴ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('산')" aria-label="Pronounce 산">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">달</td>
+            <td>dal</td>
+            <td>moon / month</td>
+            <td class="kor-cell">ㄹ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('달')" aria-label="Pronounce 달">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">밥</td>
+            <td>bap</td>
+            <td>rice / meal</td>
+            <td class="kor-cell">ㅂ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('밥')" aria-label="Pronounce 밥">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">손</td>
+            <td>son</td>
+            <td>hand</td>
+            <td class="kor-cell">ㄴ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('손')" aria-label="Pronounce 손">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">문</td>
+            <td>mun</td>
+            <td>door</td>
+            <td class="kor-cell">ㄴ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('문')" aria-label="Pronounce 문">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">길</td>
+            <td>gil</td>
+            <td>road / way</td>
+            <td class="kor-cell">ㄹ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('길')" aria-label="Pronounce 길">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">물</td>
+            <td>mul</td>
+            <td>water</td>
+            <td class="kor-cell">ㄹ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('물')" aria-label="Pronounce 물">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">별</td>
+            <td>byeol</td>
+            <td>star</td>
+            <td class="kor-cell">ㄹ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('별')" aria-label="Pronounce 별">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">봄</td>
+            <td>bom</td>
+            <td>spring (season)</td>
+            <td class="kor-cell">ㅁ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('봄')" aria-label="Pronounce 봄">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">숲</td>
+            <td>sup</td>
+            <td>forest</td>
+            <td class="kor-cell">ㅍ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('숲')" aria-label="Pronounce 숲">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">꿈</td>
+            <td>kkum</td>
+            <td>dream</td>
+            <td class="kor-cell">ㅁ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('꿈')" aria-label="Pronounce 꿈">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="kor-cell" style="font-size:1.4rem">힘</td>
+            <td>him</td>
+            <td>strength / power</td>
+            <td class="kor-cell">ㅁ</td>
+            <td><button class="hangul-sound-btn" onclick="speakKorean('힘')" aria-label="Pronounce 힘">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box" style="margin-top:1.5rem">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">Tip</div>
+          <div class="tip-text">Syllable blocks with batchim are slightly compressed vertically to make room at the bottom. The batchim consonant sits below both the initial consonant and the vowel, completing the square shape of the block.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 7: Reading Real Korean Words -->
+    <div class="lesson-section animate-on-scroll">
+      <h2><span class="section-num">7</span> Reading Real Korean Words <span style="font-family:var(--font-korean)">실제 한국어 단어 읽기</span></h2>
+      <p>You now have everything you need to decode real Korean words. Let's break down 10 essential words syllable by syllable, identifying each component. Tap the speaker buttons to hear the words spoken aloud.</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>🇰🇷 한국 — Korea</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">한국</div>
+            <div class="rom-line">Han · guk</div>
+            <div class="eng-line">Korea &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('한국')" aria-label="Pronounce 한국">🔊</button></div>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">한</span> = ㅎ + ㅏ + ㄴ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">국</span> = ㄱ + ㅜ + ㄱ
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1rem">
+        <div class="example-header"><span>👤 사람 — Person</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">사람</div>
+            <div class="rom-line">Sa · ram</div>
+            <div class="eng-line">person &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('사람')" aria-label="Pronounce 사람">🔊</button></div>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">사</span> = ㅅ + ㅏ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">람</span> = ㄹ + ㅏ + ㅁ
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1rem">
+        <div class="example-header"><span>🏫 학교 — School</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">학교</div>
+            <div class="rom-line">Hak · gyo</div>
+            <div class="eng-line">school &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('학교')" aria-label="Pronounce 학교">🔊</button></div>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">학</span> = ㅎ + ㅏ + ㄱ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">교</span> = ㄱ + ㅛ
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1rem">
+        <div class="example-header"><span>👋 안녕 — Hello / Peace</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">안녕</div>
+            <div class="rom-line">An · nyeong</div>
+            <div class="eng-line">hello / peace &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('안녕')" aria-label="Pronounce 안녕">🔊</button></div>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">안</span> = ㅇ + ㅏ + ㄴ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">녕</span> = ㄴ + ㅕ + ㅇ
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1rem">
+        <div class="example-header"><span>🙏 감사 — Gratitude / Thank you</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">감사</div>
+            <div class="rom-line">Gam · sa</div>
+            <div class="eng-line">gratitude / thank you &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('감사')" aria-label="Pronounce 감사">🔊</button></div>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">감</span> = ㄱ + ㅏ + ㅁ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">사</span> = ㅅ + ㅏ
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1rem">
+        <div class="example-header"><span>❤️ 사랑 — Love</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">사랑</div>
+            <div class="rom-line">Sa · rang</div>
+            <div class="eng-line">love &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('사랑')" aria-label="Pronounce 사랑">🔊</button></div>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">사</span> = ㅅ + ㅏ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">랑</span> = ㄹ + ㅏ + ㅇ
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1rem">
+        <div class="example-header"><span>🎵 음악 — Music</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">음악</div>
+            <div class="rom-line">Eum · ak</div>
+            <div class="eng-line">music &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('음악')" aria-label="Pronounce 음악">🔊</button></div>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">음</span> = ㅇ + ㅡ + ㅁ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">악</span> = ㅇ + ㅏ + ㄱ
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1rem">
+        <div class="example-header"><span>🤝 친구 — Friend</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">친구</div>
+            <div class="rom-line">Chin · gu</div>
+            <div class="eng-line">friend &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('친구')" aria-label="Pronounce 친구">🔊</button></td>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">친</span> = ㅊ + ㅣ + ㄴ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">구</span> = ㄱ + ㅜ
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1rem">
+        <div class="example-header"><span>👨‍👩‍👧 가족 — Family</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">가족</div>
+            <div class="rom-line">Ga · jok</div>
+            <div class="eng-line">family &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('가족')" aria-label="Pronounce 가족">🔊</button></td>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">가</span> = ㄱ + ㅏ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">족</span> = ㅈ + ㅗ + ㄱ
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1rem">
+        <div class="example-header"><span>🌊 바다 — Sea / Ocean</span></div>
+        <div class="example-body">
+          <div class="korean-example">
+            <div class="kor-line">바다</div>
+            <div class="rom-line">Ba · da</div>
+            <div class="eng-line">sea / ocean &nbsp;<button class="hangul-sound-btn" onclick="speakKorean('바다')" aria-label="Pronounce 바다">🔊</button></td>
+          </div>
+          <div style="margin-top:.8rem;font-size:.9rem;color:var(--text-secondary)">
+            <span style="font-family:var(--font-korean);font-weight:700">바</span> = ㅂ + ㅏ &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span style="font-family:var(--font-korean);font-weight:700">다</span> = ㄷ + ㅏ
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 8: Practice & Summary -->
+    <div class="lesson-section animate-on-scroll">
+      <h2><span class="section-num">8</span> Practice &amp; Summary <span style="font-family:var(--font-korean)">연습</span></h2>
+      <p>Congratulations — you have learned the core structure of Korean syllable blocks! Here is a quick summary of the five rules that govern every syllable in the Korean writing system.</p>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">5 Rules for Korean Syllable Blocks</div>
+          <div class="tip-text">
+            <ol style="margin:0;padding-left:1.2rem;line-height:2">
+              <li>Every block has <strong>exactly one vowel</strong> (중성 / Jungseong)</li>
+              <li>Vowel-initial syllables use <strong>silent ㅇ</strong> as a placeholder initial consonant</li>
+              <li><strong>Tall vowels</strong> (ㅏ, ㅓ, ㅣ) — initial consonant sits to the <strong>left</strong>, vowel to the right</li>
+              <li><strong>Wide vowels</strong> (ㅗ, ㅜ, ㅡ) — initial consonant sits <strong>on top</strong>, vowel below</li>
+              <li>Optional <strong>받침 (batchim)</strong> sits at the <strong>bottom</strong> of the block, below everything else</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box" style="margin-top:1.5rem">
+        <div class="example-header"><span>📝 Self-Test: Identify the Components</span></div>
+        <div class="example-body">
+          <p style="margin-bottom:1rem;color:var(--text-secondary)">For each syllable below, identify the initial (초성), medial (중성), and final (종성) components. Try it yourself before reading the answers!</p>
+
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.2rem">
+            <div style="text-align:center;padding:.6rem 1rem;background:var(--glass);border-radius:8px;border:1px solid var(--border)">
+              <div style="font-family:var(--font-korean);font-size:2rem;font-weight:700">밥</div>
+              <button class="hangul-sound-btn" onclick="speakKorean('밥')" aria-label="Pronounce 밥" style="margin-top:.2rem">🔊</button>
+            </div>
+            <div style="text-align:center;padding:.6rem 1rem;background:var(--glass);border-radius:8px;border:1px solid var(--border)">
+              <div style="font-family:var(--font-korean);font-size:2rem;font-weight:700">한</div>
+              <button class="hangul-sound-btn" onclick="speakKorean('한')" aria-label="Pronounce 한" style="margin-top:.2rem">🔊</button>
+            </div>
+            <div style="text-align:center;padding:.6rem 1rem;background:var(--glass);border-radius:8px;border:1px solid var(--border)">
+              <div style="font-family:var(--font-korean);font-size:2rem;font-weight:700">이</div>
+              <button class="hangul-sound-btn" onclick="speakKorean('이')" aria-label="Pronounce 이" style="margin-top:.2rem">🔊</button>
+            </div>
+            <div style="text-align:center;padding:.6rem 1rem;background:var(--glass);border-radius:8px;border:1px solid var(--border)">
+              <div style="font-family:var(--font-korean);font-size:2rem;font-weight:700">국</div>
+              <button class="hangul-sound-btn" onclick="speakKorean('국')" aria-label="Pronounce 국" style="margin-top:.2rem">🔊</button>
+            </div>
+            <div style="text-align:center;padding:.6rem 1rem;background:var(--glass);border-radius:8px;border:1px solid var(--border)">
+              <div style="font-family:var(--font-korean);font-size:2rem;font-weight:700">물</div>
+              <button class="hangul-sound-btn" onclick="speakKorean('물')" aria-label="Pronounce 물" style="margin-top:.2rem">🔊</button>
+            </div>
+          </div>
+
+          <table class="vocab-table" style="width:100%;table-layout:fixed">
+            <thead>
+              <tr><th style="width:12%">Syllable</th><th style="width:22%">초성 (Initial)</th><th style="width:22%">중성 (Medial)</th><th style="width:22%">종성 (Final)</th><th>Pattern</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="kor-cell" style="font-size:1.4rem">밥</td>
+                <td class="kor-cell">ㅂ</td>
+                <td class="kor-cell">ㅏ</td>
+                <td class="kor-cell">ㅂ</td>
+                <td>CVC</td>
+              </tr>
+              <tr>
+                <td class="kor-cell" style="font-size:1.4rem">한</td>
+                <td class="kor-cell">ㅎ</td>
+                <td class="kor-cell">ㅏ</td>
+                <td class="kor-cell">ㄴ</td>
+                <td>CVC</td>
+              </tr>
+              <tr>
+                <td class="kor-cell" style="font-size:1.4rem">이</td>
+                <td class="kor-cell">ㅇ (silent)</td>
+                <td class="kor-cell">ㅣ</td>
+                <td>— (none)</td>
+                <td>V only</td>
+              </tr>
+              <tr>
+                <td class="kor-cell" style="font-size:1.4rem">국</td>
+                <td class="kor-cell">ㄱ</td>
+                <td class="kor-cell">ㅜ</td>
+                <td class="kor-cell">ㄱ</td>
+                <td>CVC</td>
+              </tr>
+              <tr>
+                <td class="kor-cell" style="font-size:1.4rem">물</td>
+                <td class="kor-cell">ㅁ</td>
+                <td class="kor-cell">ㅜ</td>
+                <td class="kor-cell">ㄹ</td>
+                <td>CVC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="lesson-complete-wrap" style="margin-top:2rem;text-align:center">
+        <button class="btn btn-primary btn-lg" data-lesson-complete="syllable-blocks">
+          Mark Lesson Complete ✓
+        </button>
+      </div>
+    </div>
+
+    <div class="lesson-nav-footer">
+      <a href="hangul.html" class="lesson-nav-btn">
+        <span>←</span>
+        <div>
+          <span class="lesson-nav-label">Previous</span>
+          <span class="lesson-nav-title">Hangul Alphabet</span>
+        </div>
+      </a>
+      <a href="vowels-consonants.html" class="lesson-nav-btn next">
+        <span>→</span>
+        <div>
+          <span class="lesson-nav-label">Next</span>
+          <span class="lesson-nav-title">Vowels &amp; Consonants</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform for learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="hangul.html">Hangul Alphabet</a></li>
+          <li><a href="grammar.html">Grammar</a></li>
+          <li><a href="vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요!</span>
+    </div>
+  </div>
+</footer>
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,763 @@
+{
+  "indexed": [
+
+    
+
+    {
+      "id": "travel-seoul",
+      "svgPath": "assets/images/travel/seoul.svg",
+      "page": "travel/index.html",
+      "element": "place-image",
+      "elementIndex": 0,
+      "alt": "Seoul city skyline at night",
+      "isSample": true,
+      "prompt": "Create a minimal flat-design SVG illustration of Seoul South Korea at night. Include: N Seoul Tower on a hill silhouette (thin tapering tower with small observation deck), Han River as a wide horizontal blue band, a row of skyscraper rectangles of varied heights in the background, small white circle stars in the sky. Colors: deep navy sky #07071F, midnight blue buildings #0D1A3D, golden yellow tower lights #FFD700, Korean red accent dots #E8003D, pale blue river #1A3A6E. Flat geometric shapes only. viewBox=\"0 0 800 400\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "travel-busan",
+      "svgPath": "assets/images/travel/busan.svg",
+      "page": "travel/index.html",
+      "element": "place-image",
+      "elementIndex": 1,
+      "alt": "Busan seascape with Gwangan Bridge",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Busan South Korea at sunset. Include: Gwangan Diamond Bridge as two tall suspension-cable arcs over the sea, gentle ocean waves at the bottom as horizontal bands, mountain silhouette on the right, glowing orange-pink sunset sky. Colors: warm orange sky #FF6B35, deep coral sunset #E8003D, sea blue #0A2A4E, bridge grey-white #C8D8E8, mountain dark #0D1A2E. Flat geometric shapes. viewBox=\"0 0 800 400\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "travel-jeju",
+      "svgPath": "assets/images/travel/jeju.svg",
+      "page": "travel/index.html",
+      "element": "place-image",
+      "elementIndex": 2,
+      "alt": "Jeju Island with Hallasan mountain",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Jeju Island South Korea. Include: Hallasan mountain as a large gentle volcanic cone in the center, black lava rocks (irregular dark circles) at the base, two tangerine orange trees with round fruits on the sides, clear teal sea visible behind the mountain. Colors: sky blue #87CEEB, mountain green #2D6A4F, dark lava #1A1A2E, tangerine orange #FF8C00, teal sea #006994, grass green #52B788. Flat geometric shapes. viewBox=\"0 0 800 400\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "travel-gyeongju",
+      "svgPath": "assets/images/travel/gyeongju.svg",
+      "page": "travel/index.html",
+      "element": "place-image",
+      "elementIndex": 3,
+      "alt": "Gyeongju historic pagoda and cherry blossoms",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Gyeongju South Korea. Include: a traditional Korean three-tiered pagoda (cheomseongdae-inspired round stone tower or multi-story pagoda) in the center, pink cherry blossom trees with round petal clusters on both sides, a soft hill in the background. Colors: twilight sky #1A1A4E with pink-purple, pagoda stone #8B7355, cherry pink #FFB7C5, green hill #2D5A27, ancient brown #6B4226. Flat geometric shapes. viewBox=\"0 0 800 400\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "travel-incheon",
+      "svgPath": "assets/images/travel/incheon.svg",
+      "page": "travel/index.html",
+      "element": "place-image",
+      "elementIndex": 4,
+      "alt": "Incheon International Airport and ocean gateway",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Incheon South Korea as a gateway city. Include: a sleek airport terminal silhouette with curved roof arcs, an airplane taking off at a 20-degree angle on the right, the sea as a blue horizontal band below, navigation lights as small colored dots. Colors: deep navy sky #07071F, terminal white-grey #C8D8E8, airplane silver #A0B0C0, sea blue #003478, runway lights #FFD700 and #E8003D. Flat geometric shapes. viewBox=\"0 0 800 400\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "travel-suwon",
+      "svgPath": "assets/images/travel/suwon.svg",
+      "page": "travel/index.html",
+      "element": "place-image",
+      "elementIndex": 5,
+      "alt": "Suwon Hwaseong Fortress walls and gate",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Suwon Hwaseong Fortress South Korea. Include: a traditional Korean fortress gate (haenggung style) with curved upturned roof edges and red pillars, long stone walls extending to both sides with battlements on top, a full moon in the dark sky behind the gate. Colors: night sky #07071F, stone walls #6B5A45, gate roof dark tile #1A1A1A with upturned tips, red pillars #E8003D, full moon #FFF5DC, wall battlements #8B7355. Flat geometric shapes. viewBox=\"0 0 800 400\". Output ONLY valid SVG code starting with <svg."
+    },
+
+    
+
+    {
+      "id": "kpop-norebang",
+      "svgPath": "assets/images/culture/kpop/norebang.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 0,
+      "alt": "Korean norebang karaoke room with microphone",
+      "isSample": true,
+      "prompt": "Create a minimal flat-design SVG illustration of a Korean norebang (karaoke) room. Include: a large microphone stand center-stage, a tambourine floating to the side, colorful stage lights shining down as colored beams (pink, purple, yellow), song lyrics screen as a glowing rectangle in the background. Colors: dark room #0A0A1E, purple stage light #6B21A8, pink light #DB2777, gold tambourine #FFD700, white microphone #F0F0FC, screen glow #1A3A6E. Flat geometric shapes with slight glow effect. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-cultural-bridge",
+      "svgPath": "assets/images/culture/kpop/cultural-bridge.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 1,
+      "alt": "K-pop cultural bridge connecting East and West",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of K-pop as a cultural bridge. Include: a world map outline as a simple flat shape, musical notes and colorful sound waves radiating outward from Korea (a star dot on the Korean peninsula), a bridge arc connecting East to West. Colors: deep space background #07071F, map outline teal #0EA5E9, Korea star #E8003D, sound wave purple #6B21A8, bridge gold #FFD700. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-song-room",
+      "svgPath": "assets/images/culture/kpop/song-room.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 2,
+      "alt": "K-pop song room culture with recording studio",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of a Korean music recording studio. Include: a mixing board (rows of small rectangles and sliders) on a desk, studio monitor speakers on both sides, a glowing waveform display on a screen, sound-absorbing foam panels on the walls as a grid pattern. Colors: studio dark #0F0F1A, amber glow #F59E0B, speaker black #1C1917, waveform green #22C55E, foam panel grey #2D2D3A. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-history-featured",
+      "svgPath": "assets/images/culture/kpop/history-featured.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 3,
+      "alt": "K-pop history timeline from 1992 to global stage",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of K-pop's rise from 1992 to global fame. Include: a horizontal timeline line with milestone dots, a small Korean flag (태극기 simplified: white rectangle, red-blue yin-yang circle, black trigrams as squares), concert crowd silhouettes growing larger to the right, globe outline on the far right. Colors: deep background #0A0A1A, Korean red #E8003D, Korean blue #003478, white #F0F0FC, gold milestone dots #FFD700, crowd dark #1A1A2E. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-psy-gangnam",
+      "svgPath": "assets/images/culture/kpop/psy-gangnam.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 4,
+      "alt": "PSY Gangnam Style 2012 global viral moment",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of the Gangnam Style viral moment. Include: a silhouette doing the horse-riding dance pose on a stage, a massive crowd of small silhouettes in the background, bright stage spotlights creating columns of light, a YouTube play button symbol floating above. Colors: vibrant stage #0F0020, spotlight white #F0F0FC, crowd dark purple #1A0042, stage light gold #FFD700, YouTube red #E8003D. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-bts-un",
+      "svgPath": "assets/images/culture/kpop/bts-un.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 5,
+      "alt": "BTS speaking at the United Nations 2018",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of a historic K-pop speech moment. Include: a UN podium (rounded rectangular lectern) with the UN emblem circle, purple spotlights beaming down from above, rows of purple lightsticks glowing in a dark audience below, world flags as small colored rectangles in the background. Colors: dark hall #0C1445, podium grey #2A3A5A, UN blue #1E3A8A, purple lights #7C3AED, lightstick purple #A855F7, gold podium accent #FFD700. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-global",
+      "svgPath": "assets/images/culture/kpop/global.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 6,
+      "alt": "K-pop global conquest world stage",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of K-pop's global reach. Include: a simplified globe outline, concert venue icons (small stadium shapes) placed at different continents, radiating circle rings expanding outward from Korea, music notes orbiting the globe. Colors: space dark #0D1117, globe outline teal #0EA5E9, Korea point #E8003D, concert gold #FFD700, music note white #F0F0FC, expansion rings blue #1F2937. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-1stgen",
+      "svgPath": "assets/images/culture/kpop/1stgen.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 7,
+      "alt": "First generation K-pop pioneers 1990s",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of 1990s K-pop first generation era. Include: a retro cassette tape in the center (two spools visible), VHS tape design elements, a retro TV set showing a performance, crown motif at the top, warm golden retro color palette. Colors: retro warm background #1A1200, cassette brown #78350F, tape gold #F59E0B, TV screen warm #FCD34D, crown gold #FFD700, shadow dark #0A0800. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-army",
+      "svgPath": "assets/images/culture/kpop/army.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 8,
+      "alt": "BTS ARMY concert with purple lightsticks",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of a massive K-pop concert audience. Include: hundreds of small oval/diamond lightstick shapes in various shades of purple filling the bottom half, a large stage with bright white and purple LED screens in the upper half, fog smoke effects at the stage base, purple laser beams shooting upward. Colors: dark venue #0C1445, lightstick purple #A855F7, deep purple #6D28D9, stage screen #E0D0FF, laser beam #C084FC, smoke grey #374151. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-4thgen",
+      "svgPath": "assets/images/culture/kpop/4thgen.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 9,
+      "alt": "4th generation K-pop fresh pastel aesthetics",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of 4th generation K-pop aesthetic. Include: a retro MP3 player or iPod shape with earbuds, butterfly wings spread wide, four-leaf clover motif, soft dreamy clouds, Y2K decorative stars and hearts scattered. Colors: pastel mint background #0A1A0A, fresh green #86EFAC, soft white #F0F0FC, butterfly teal #14B8A6, star gold #FFD700, heart pink #F9A8D4. Flat geometric pastel shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-variety",
+      "svgPath": "assets/images/culture/kpop/variety.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 10,
+      "alt": "Korean variety TV show studio set",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of a Korean TV variety show studio. Include: a bright TV studio stage with colorful backdrop panels, a game show podium with three stations and buttons, studio audience seats as rows of small rectangles in the foreground, TV camera on a tripod on the side. Colors: studio bright #0F172A, backdrop yellow #F59E0B and blue #1E3A8A, stage white #F0F0FC, podium gold #FFD700, camera dark #374151, audience dark seats #1A1A2E. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-running-man",
+      "svgPath": "assets/images/culture/kpop/running-man.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 11,
+      "alt": "Running Man Korean variety show race track",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of a Korean variety show race. Include: a running track oval outline, two human silhouettes mid-run, team color flags on the sides (red and blue), name tag stickers as rectangles with torn effect, starting gun confetti burst. Colors: dark track #1A0010, track lane white lines, red team #E8003D, blue team #003478, name tag white #F0F0FC, confetti multi-color. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-survival",
+      "svgPath": "assets/images/culture/kpop/survival.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 12,
+      "alt": "K-pop survival show competition stage",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of a K-pop survival show. Include: a harsh single spotlight beam from above illuminating a small stage area, contestant silhouettes standing in a line under the light, a large vote counter display on the side as a digital number board, eliminated X marks floating around. Colors: near-black stage #0A0A0A, spotlight cone #F0F0FC, contestant silhouettes #1A1A2E, vote counter #22C55E on dark screen, X mark #E8003D. Flat geometric shapes with high contrast. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-idol-actor",
+      "svgPath": "assets/images/culture/kpop/idol-actor.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 13,
+      "alt": "K-pop idol transitioning to actor film career",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of K-pop crossover to cinema. Include: a film camera (boxy professional camera with lens circle) on the left, a split composition showing a microphone stand on the right, a film clapperboard in the center, stars scattered in the background. Colors: dark background #0F172A, camera indigo #312E81, microphone purple #7C3AED, clapperboard white #F0F0FC with black stripes, film reel gold #FFD700, star white. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-cannes",
+      "svgPath": "assets/images/culture/kpop/cannes.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 14,
+      "alt": "Korean cinema at Cannes Film Festival 2022",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Korean cinema's Cannes Film Festival triumph. Include: a golden Palme d'Or award (palm frond shape with long stem on a base), a film reel disc with spokes, red carpet steps leading up to a screen, small star shapes scattered. Colors: dark elegant #1C1917, Palme gold #FFD700, red carpet #7C2D12, film reel bronze #92400E, screen glow #EA580C glow, background deep #0F0F1A. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kpop-drama-crossover",
+      "svgPath": "assets/images/culture/kpop/drama-crossover.svg",
+      "page": "culture/kpop.html",
+      "element": "photo-frame",
+      "elementIndex": 15,
+      "alt": "K-pop drama musical crossover stage",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of K-pop crossover to drama and musicals. Include: theatre stage curtains parted to reveal a spotlight, a drama script/book, musical notes floating upward, the comedy/tragedy theatre masks as simple circle faces, stars shining. Colors: deep stage #042F2E, curtain teal #065F46, spotlight #10B981, script white #F0F0FC, notes gold #FFD700, masks white and dark. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+
+    
+
+    {
+      "id": "kfood-photo-0",
+      "svgPath": "assets/images/culture/kfood/ramyeon-export.svg",
+      "page": "culture/kfood.html",
+      "element": "photo-frame",
+      "elementIndex": 0,
+      "alt": "Korean ramyeon noodles global export",
+      "isSample": true,
+      "prompt": "Create a minimal flat-design SVG illustration of Korean ramyeon noodles. Include: a deep red bowl seen from a 3/4 angle with wavy noodles piled high, steam wisps rising as curved lines, a soft-boiled egg halved showing orange yolk, chopsticks resting across the bowl. Colors: dark background #3B0000, bowl red #7F1D1D, noodle yellow #FEF3C7, broth red-orange #DC2626, egg white #F0F0FC, yolk orange #F97316, steam white wisp. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-photo-1",
+      "svgPath": "assets/images/culture/kfood/mandu-export.svg",
+      "page": "culture/kfood.html",
+      "element": "photo-frame",
+      "elementIndex": 1,
+      "alt": "Korean mandu dumplings global export",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Korean mandu dumplings. Include: a bamboo steamer basket with hexagonal weave pattern, several plump half-moon dumplings with pleated edges visible inside, steam rising through the lid gaps, a soy dipping sauce dish. Colors: navy background #0A1628, steamer bamboo #78350F, dumpling skin white-cream #FEF9EC, pleats detailed pale, sauce dish dark with soy brown #92400E, steam white. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-photo-2",
+      "svgPath": "assets/images/culture/kfood/chicken-export.svg",
+      "page": "culture/kfood.html",
+      "element": "photo-frame",
+      "elementIndex": 2,
+      "alt": "Korean fried chicken global franchise",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Korean fried chicken franchise. Include: a paper bucket/box of golden fried chicken pieces, a store-front sign (rectangular with a chicken silhouette), delivery scooter silhouette, small Korean characters as decorative shop name. Colors: orange background #1A0F00, chicken golden #F59E0B, bucket red #E8003D, store sign orange #EA580C, scooter dark #431407, highlight gold #FFD700. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+
+    
+
+    {
+      "id": "kfood-chef-0",
+      "svgPath": "assets/images/culture/kfood/chef-0.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 0,
+      "alt": "Michelin 3-star fine Korean dining",
+      "isSample": true,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: an elegant plated dish seen from above (small components arranged artistically on a white plate circle), three Michelin star shapes in gold, subtle chopsticks. Colors: rich dark background #1A0A00, plate white circle, food accents warm brown #7C2D12, Michelin gold stars #FBBF24, chopstick dark. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-1",
+      "svgPath": "assets/images/culture/kfood/chef-1.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 1,
+      "alt": "Modern Korean fine dining restaurant",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a modern plating with circular sauce swirls on a square plate, three star shapes, a skyline silhouette (NYC and Seoul) in the background. Colors: navy background #0A1628, plate white, sauce blue #3B82F6, stars gold, skyline dark blue #1E3A8A. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-2",
+      "svgPath": "assets/images/culture/kfood/chef-2.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 2,
+      "alt": "Korean cuisine restaurant award winner",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a chef's knife and wooden spoon crossed in an X formation, one star above, Korean chopsticks on the side, subtle indigo hexagon pattern in background. Colors: dark indigo background #0F0F1A, knife silver #E2E8F0, star gold #FFD700, chopstick dark wood #1E1B4B, accent indigo #6366F1. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-3",
+      "svgPath": "assets/images/culture/kfood/chef-3.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 3,
+      "alt": "Korean-American fusion cuisine",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a BBQ grill grate with meat pieces on top, trophy/award cup on the right, a small Korean flag and US flag side by side. Colors: green dark background #0A1A0A, grill dark metal #374151, meat gold-brown #D97706, trophy gold #FFD700, flag Korean red and blue, flag US red #E8003D. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-4",
+      "svgPath": "assets/images/culture/kfood/chef-4.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 4,
+      "alt": "Asia's 50 Best chef award",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a sprout/leaf growing out of a bowl (sustainable cuisine symbol), Asia map outline silhouette, award ribbon shape on the right. Colors: warm dark background #1A0F00, leaf green #86EFAC, bowl earthy #92400E, ribbon orange #F97316, map outline pale #C4B5FD. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-5",
+      "svgPath": "assets/images/culture/kfood/chef-5.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 5,
+      "alt": "Korean cooking competition season 1 winner",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a competition trophy cup (large central gold cup), flames licking upward behind it, a pizza/pasta motif (Napoli mafia concept - Italian-Korean fusion), one large star above. Colors: dramatic dark red #1A0000, trophy gold #FFD700, flames orange #DC2626, napoli blue-white accent, star gold. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-6",
+      "svgPath": "assets/images/culture/kfood/chef-6.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 6,
+      "alt": "Korean cooking competition season 2 winner",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a stylized braised dish in a purple earthenware pot (glazed Korean ceramic jangdok shape), first place medal hanging, steam wisps. Colors: purple dark background #1A0F2E, pot purple #7C3AED, gold medal #FFD700, steam white, accent lavender #A78BFA. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-7",
+      "svgPath": "assets/images/culture/kfood/chef-7.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 7,
+      "alt": "Korean cooking competition runner-up",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: an elegant plating on a slate board seen from above, second place silver medal, fork and knife crossed. Colors: dark slate background #0F172A, plate white, food accent dark #334155, silver medal #94A3B8, utensil silver #CBD5E1. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-8",
+      "svgPath": "assets/images/culture/kfood/chef-8.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 8,
+      "alt": "French-Korean fusion cuisine chef",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: an Eiffel Tower silhouette (small, on the left) and a Korean traditional gate silhouette (on the right), a fusion dish plate in the center with French and Korean elements, TV camera icon. Colors: navy background #001840, Eiffel blue #1D4ED8, Korean gate orange, plate white, camera dark, accent sky blue #60A5FA. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-9",
+      "svgPath": "assets/images/culture/kfood/chef-9.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 9,
+      "alt": "Korean food entrepreneur with 1299 restaurant branches",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a Korean noodle bowl icon, a map with many location pins spread across it, Korean red storefront sign simplified as a rectangle. Colors: dark red background #1A0000, bowl outline red #EF4444, pins red #E8003D, map outline dark #7F1D1D, accent white highlights. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfood-chef-10",
+      "svgPath": "assets/images/culture/kfood/chef-10.svg",
+      "page": "culture/kfood.html",
+      "element": "chef-banner",
+      "elementIndex": 10,
+      "alt": "Korean webtoon chef and food personality",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a comic panel border (speech bubble outline), a vintage Korean cookbook cover shape, a pen/quill drawing a food illustration, frying pan silhouette. Colors: warm dark background #0F0F00, cookbook brown #451A03, speech bubble outline amber #F59E0B, pen dark, pan outline #92400E, accent gold #FFD700. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+
+    
+
+    {
+      "id": "kdrama-history",
+      "svgPath": "assets/images/culture/kdrama/history.svg",
+      "page": "culture/kdrama.html",
+      "element": "photo-frame",
+      "elementIndex": 0,
+      "alt": "Korean broadcast TV history since 1962",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Korean TV broadcasting history. Include: a vintage 1960s TV set (boxy with rounded corners, two knobs, rabbit ears antenna), a broadcast tower silhouette, radio waves emanating outward. Colors: warm brown background #1A0A00, TV warm wood #92400E, screen warm white, broadcast tower amber #F59E0B, waves gold #FFD700, knobs dark #431407. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kdrama-winter-sonata",
+      "svgPath": "assets/images/culture/kdrama/winter-sonata.svg",
+      "page": "culture/kdrama.html",
+      "element": "photo-frame",
+      "elementIndex": 1,
+      "alt": "Korean Winter Sonata drama 2002 romance",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of a classic Korean romance drama aesthetic. Include: two silhouettes facing each other under falling snowflakes, bare winter tree branches on the sides, a soft glowing full moon behind, snow on the ground as white horizontal curves. Colors: cold blue-night sky #0F172A, couple silhouettes dark #1E3A5F, snowflakes white #F0F0FC, moon pale #EFF6FF, tree branches dark #1C1917, snow ground white. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kdrama-thriller",
+      "svgPath": "assets/images/culture/kdrama/thriller.svg",
+      "page": "culture/kdrama.html",
+      "element": "photo-frame",
+      "elementIndex": 2,
+      "alt": "Korean dramatic thriller K-drama 2021",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of a high-tension Korean thriller drama. Include: a dark cinematic framing with neon corridor lighting in the background, a masked/uniformed guard silhouette, bold number 456 displayed on a panel, geometric shapes suggesting a dangerous game set. Colors: near-black #0A0A0A, neon pink accent #E8003D, dark teal #0A1A1A, uniform dark, number display white on black panel, corridor walls dark grey #1A1A1A. Flat geometric shapes, cinematic. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kdrama-production",
+      "svgPath": "assets/images/culture/kdrama/production.svg",
+      "page": "culture/kdrama.html",
+      "element": "photo-frame",
+      "elementIndex": 3,
+      "alt": "Korean drama live production broadcast system",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of a Korean broadcast production studio. Include: multiple monitor screens showing different camera feeds (rectangles with colored content), a production desk with dials and buttons, broadcasting signal tower visible through a window. Colors: dark studio #0D1B0D, monitors green glow #16A34A, desk dark #1A3A1A, signal tower lime #4ADE80, window frame dark green #14532D. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kdrama-ost",
+      "svgPath": "assets/images/culture/kdrama/ost.svg",
+      "page": "culture/kdrama.html",
+      "element": "photo-frame",
+      "elementIndex": 4,
+      "alt": "Korean drama OST music soundtrack",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Korean drama OST music. Include: a vinyl record spinning with musical note etched in the grooves, larger music notes floating around, sound waves expanding outward, small romantic rose silhouette. Colors: deep purple background #1A0A2E, vinyl dark #3B1F6E, notes light purple #A78BFA, sound wave purple glow, rose red #E8003D, star sparkles #FFD700. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kdrama-webtoon",
+      "svgPath": "assets/images/culture/kdrama/webtoon.svg",
+      "page": "culture/kdrama.html",
+      "element": "photo-frame",
+      "elementIndex": 5,
+      "alt": "Korean webtoon adapted to drama series",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration of Korean webtoon-to-drama adaptation. Include: a comic panel grid (3 rectangular panels arranged in sequence) with stylized illustration marks (halftone dots, speed lines), a smartphone showing a webtoon panel, drama clapperboard. Colors: deep teal background #0F2027, panel borders white #F0F0FC, comic dot pattern blue #2C5364, smartphone dark #203A43, clapperboard dark stripes. Flat geometric shapes. viewBox=\"0 0 800 450\". Output ONLY valid SVG code starting with <svg."
+    },
+
+    
+
+    {
+      "id": "kbeauty-banner-0",
+      "svgPath": "assets/images/culture/kbeauty/brand-0.svg",
+      "page": "culture/kbeauty.html",
+      "element": "chef-banner",
+      "elementIndex": 0,
+      "alt": "Amorepacific K-beauty conglomerate brand",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: stylized cherry blossom petals floating, an elegant perfume/skincare bottle silhouette in the center, Korean character accent. Colors: deep Korean red background #1A0014, blossom pink #F9A8D4, bottle white outline, petal dark rose #C2185B, accent white #F0F0FC. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kbeauty-banner-1",
+      "svgPath": "assets/images/culture/kbeauty/brand-1.svg",
+      "page": "culture/kbeauty.html",
+      "element": "chef-banner",
+      "elementIndex": 1,
+      "alt": "COSRX viral K-beauty snail skincare brand",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a snail shell spiral as the central motif (elegant geometric spiral curve), serum drops (oval droplet shapes) floating around, a clean white minimalist product tube. Colors: natural green background #001A00, snail shell green #10B981, serum drop clear-white, tube white, accent emerald #064E3B. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kbeauty-banner-2",
+      "svgPath": "assets/images/culture/kbeauty/brand-2.svg",
+      "page": "culture/kbeauty.html",
+      "element": "chef-banner",
+      "elementIndex": 2,
+      "alt": "Laneige water brand lip mask skincare",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a large water droplet shape as the central element, a sleeping mask/lip mask jar oval, gentle water ripple rings expanding outward. Colors: clear blue background #001428, droplet sky blue #38BDF8, mask jar white, ripple blue #1E3A8A, highlight light blue #BAE6FD. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kbeauty-banner-3",
+      "svgPath": "assets/images/culture/kbeauty/brand-3.svg",
+      "page": "culture/kbeauty.html",
+      "element": "chef-banner",
+      "elementIndex": 3,
+      "alt": "Sulwhasoo luxury Korean herbal hanbang skincare",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a traditional Korean ceramic vase (onggi pot with intricate geometric border pattern), ginseng root shape, plum blossom flower. Colors: rich pink-purple background #1A0014, ceramic white-ivory #FFF5DC, ginseng gold-brown #D97706, blossom pink #EC4899, pattern dark rose #6B1A3A. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kbeauty-banner-4",
+      "svgPath": "assets/images/culture/kbeauty/brand-4.svg",
+      "page": "culture/kbeauty.html",
+      "element": "chef-banner",
+      "elementIndex": 4,
+      "alt": "Beauty of Joseon hanbang heritage skincare",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a Joseon-era ceramic jar (round earthenware onggi with crackle glaze pattern), honey drizzle drops, hanji paper texture as subtle background lines. Colors: antique warm background #1A1200, ceramic caramel #D97706, honey gold #F59E0B, jar outline dark #78350F, paper texture amber #92400E. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kbeauty-banner-5",
+      "svgPath": "assets/images/culture/kbeauty/brand-5.svg",
+      "page": "culture/kbeauty.html",
+      "element": "chef-banner",
+      "elementIndex": 5,
+      "alt": "rom&nd Korean makeup 40 shades color palette",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a lipstick bullet angled at 45 degrees with a glossy tip, color swatch dots in a row (40 small circles in various shades from pink to red to purple), sparkle stars. Colors: purple dark background #1A001A, lipstick pink #F9A8D4, swatch dots various pinks/reds/purples, sparkle gold #FFD700, accent bright pink #E879F9. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+
+    
+
+    {
+      "id": "kfashion-banner-0",
+      "svgPath": "assets/images/culture/kfashion/brand-0.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 0,
+      "alt": "Seo Taiji Korean pop culture fashion pioneer",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a retro flame icon with a speaker grille, Korean rap era street clothes (oversized hoodie silhouette), cassette tape. Colors: fire orange background #1A0A00, flame orange-red #F97316, hoodie outline dark #7C2D12, cassette amber #F59E0B, accent bright fire #EA580C. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-1",
+      "svgPath": "assets/images/culture/kfashion/brand-1.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 1,
+      "alt": "Andre Kim Korean haute couture white fashion",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: flowing white fabric draped elegantly (wavy curved shapes), a needle and thread motif, delicate star sparkles, minimalist fashion sketch lines. Colors: deep purple-black background #0F0F1A, fabric pure white #F0F0FC, thread silver #A5B4FC, sparkle white-gold, needle outline silver #E2E8F0. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-2",
+      "svgPath": "assets/images/culture/kfashion/brand-2.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 2,
+      "alt": "Ryu Seung-bum Korean actor street style fashion",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a pair of cool sunglasses, a denim jacket outline (collar, buttons, pockets visible), a casual cap shape. Colors: cool green dark background #0A1A14, sunglasses outline teal #34D399, denim jacket blue-grey, cap dark green #065F46, accent bright green #10B981. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-3",
+      "svgPath": "assets/images/culture/kfashion/brand-3.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 3,
+      "alt": "G-Dragon K-pop avant-garde fashion icon",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a large stylized crown shape (ornate king's crown), designer sunglasses silhouette, abstract brush stroke mark in background, dragonfly motif (GD reference). Colors: deep purple background #1A0042, crown gold #FFD700, sunglasses outline purple #A78BFA, dragonfly violet #7C3AED, brushstroke light purple #C4B5FD. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-4",
+      "svgPath": "assets/images/culture/kfashion/brand-4.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 4,
+      "alt": "Jeong Hyeong-don casual Korean fashion comedian",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a casual dad-hat cap, a large smiley face icon, comfortable wide-leg pants silhouette, laugh bubble. Colors: warm gold background #1A1200, hat tan #92400E, smiley yellow #FBBF24, pants outline amber #D97706, laugh bubble outline white. Simple flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-5",
+      "svgPath": "assets/images/culture/kfashion/brand-5.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 5,
+      "alt": "Ader Error minimalist Korean fashion label",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: clean geometric shapes (a circle within a square within a triangle, very minimal), a simple garment tag outline, clean architectural lines in the background. Colors: indigo dark background #0A0A1A, shape outlines clean white #F0F0FC, tag white, line accents blue #4338CA, background deep indigo #1E1B4B. Ultra-minimal flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-6",
+      "svgPath": "assets/images/culture/kfashion/brand-6.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 6,
+      "alt": "Pushbutton Y2K eclectic Korean fashion",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a colorful eclectic collage of Y2K elements (star, heart, butterfly, crown), layered outfit silhouette, glitter sparkles. Colors: purple-gold background #1A0042, crown purple #7C3AED, gold stars #F59E0B, heart pink #F472B6, butterfly accent, sparkle white #F0F0FC. Playful flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-7",
+      "svgPath": "assets/images/culture/kfashion/brand-7.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 7,
+      "alt": "Gentle Monster architectural eyewear brand",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a bold geometric oversized sunglasses frame (futuristic large rectangular lens shape), minimalist architectural column shapes in the background. Colors: deep green-black background #0A1A0A, glasses frame gold-outline #22C55E accent, lens dark smoked, column shapes dark green #052E16, accent bright #16A34A. Architectural minimalist flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-8",
+      "svgPath": "assets/images/culture/kfashion/brand-8.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 8,
+      "alt": "Stylenanda 3CE Korean fashion and makeup brand",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: bold lips shape with vivid pink-red lipstick, fashion clothing rack silhouette, cosmetic product bottles row. Colors: pink-red background #1A0014, lips pink #EC4899, rack dark outline, bottles white outline, background magenta #831843, accent hot pink #F472B6. Bold flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-9",
+      "svgPath": "assets/images/culture/kfashion/brand-9.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 9,
+      "alt": "Blindness dark minimalist Korean fashion",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a single white geometric cross/plus shape on pure black, blindfold strip shape, minimal fashion sketch lines. Colors: near-black background #0A0A0A, cross white #F0F0FC, blindfold dark grey #1C1C1C, sketch lines grey #525252, accent off-white #E5E7EB. Extreme minimalism. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-10",
+      "svgPath": "assets/images/culture/kfashion/brand-10.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 10,
+      "alt": "Beyond Closet Korean preppy streetwear brand",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a cute bear face (round head with small ears, simple dot eyes and nose), plaid/checkered pattern stripes in the background, sneaker sole shape. Colors: blue-orange background #001428, bear outline dark blue #1E3A8A, sneaker orange #F97316, plaid blue and white lines, accent sky #60A5FA. Preppy flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-11",
+      "svgPath": "assets/images/culture/kfashion/brand-11.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 11,
+      "alt": "Musinsa Korean fashion platform marketplace",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a shopping bag shape with fashion items peeking out (shoe shape, clothing tag), a grid of small brand icons as squares, a fashion platform interface hint. Colors: near-dark background #0A0A14, shopping bag outline grey #374151, items inside white, grid squares varying dark tones #111827, accent light grey #6B7280. Clean minimal flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-12",
+      "svgPath": "assets/images/culture/kfashion/brand-12.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 12,
+      "alt": "Bean Pole classic Korean preppy fashion",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a polo shirt collar and button outline (preppy classic style), a small bean/pole plant sprout, plaid pattern accent stripes. Colors: fresh green background #0A1A06, polo shirt outline white #F0F0FC, sprout leaf green #4ADE80, plaid stripes emerald #14532D, accent lime #86EFAC. Classic preppy flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "kfashion-banner-13",
+      "svgPath": "assets/images/culture/kfashion/brand-13.svg",
+      "page": "culture/kfashion.html",
+      "element": "chef-banner",
+      "elementIndex": 13,
+      "alt": "Basic House Korean casual essentials fashion",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG banner (wide, short). Include: a simple folded knit sweater shape, a knitting needle pair crossed, yarn ball with trailing thread. Colors: warm brown background #1A0A00, sweater caramel #D97706, knitting needles amber #92400E, yarn gold #F59E0B, thread accent warm orange #C2410C. Cozy flat shapes. viewBox=\"0 0 560 160\". Output ONLY valid SVG code starting with <svg."
+    }
+  ],
+
+  "foodBg": [
+
+    
+
+    {
+      "id": "food-bg-nongshim",
+      "svgPath": "assets/images/food/bg-nongshim.svg",
+      "bgClass": "bg-nongshim",
+      "alt": "Korean Nongshim ramyeon noodles bowl",
+      "isSample": true,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: a classic Korean instant noodle bowl (red bowl from slight above-angle), wavy yellow noodles inside, red broth, steam wisps. Colors: Nongshim red background #CD2E3A, bowl dark red #7F1D1D, noodles yellow #FEF3C7, steam white, broth red accent #991B1B. Fill the viewBox fully with a centered composition. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-samyang",
+      "svgPath": "assets/images/food/bg-samyang.svg",
+      "bgClass": "bg-samyang",
+      "alt": "Samyang buldak fire noodles spicy",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: intense orange flames licking upward, a spicy noodle fork shape, fire sparks. Colors: deep orange-red background #FF6400, flames bright orange #FF8C00, noodle fork orange-gold #FFB347, sparks yellow #FFD700, smoke dark base #1A0A00. Fill viewBox with centered composition. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-ottogi",
+      "svgPath": "assets/images/food/bg-ottogi.svg",
+      "bgClass": "bg-ottogi",
+      "alt": "Ottogi Korean noodles warm golden broth",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: a warm soup bowl with golden broth visible, noodle swirls, subtle steam, simple warm tones. Colors: warm gold background #FFB400, bowl amber #78350F, broth golden #F59E0B, noodle pale #FEF3C7, steam soft white. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-paldo",
+      "svgPath": "assets/images/food/bg-paldo.svg",
+      "bgClass": "bg-paldo",
+      "alt": "Paldo bibim noodles cold tangy sauce",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: cold noodles in a bowl with vibrant red sauce coating, cucumber slice garnish, sesame seeds as tiny dots. Colors: Paldo navy background #003478, bowl dark blue #1E3A8A, noodles pale yellow #FEF9C3, sauce vivid red #DC2626, cucumber green #16A34A, sesame white dots. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-beef",
+      "svgPath": "assets/images/food/bg-beef.svg",
+      "bgClass": "bg-beef",
+      "alt": "Korean BBQ beef on grill with smoke",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: Korean BBQ grill grate (parallel dark lines), marbled beef slices sizzling on top with grill marks, smoke wisps rising, charcoal embers glowing red-orange at the bottom. Colors: dark red background #B41E1E, grill dark #374151, beef red-brown #92400E, grill marks dark, smoke white, ember glow #EF4444. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-pork",
+      "svgPath": "assets/images/food/bg-pork.svg",
+      "bgClass": "bg-pork",
+      "alt": "Korean samgyeopsal pork belly on grill",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: thick pork belly strips (samgyeopsal) with visible fat-meat layers, grill grate underneath, lettuce leaf for wrapping on the side, sesame oil drizzle. Colors: pink-red background #FF7864, pork pink-white strips #FECDD3, fat white layers #F0F0FC, grill dark #374151, lettuce green #4ADE80, oil drizzle gold. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-chicken",
+      "svgPath": "assets/images/food/bg-chicken.svg",
+      "bgClass": "bg-chicken",
+      "alt": "Korean fried chicken golden crispy",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: crispy golden fried chicken pieces (drumstick and wing shapes), honey drizzle lines, sesame seeds, crispy crust texture as dotted pattern. Colors: golden yellow background #FFC832, chicken golden #D97706, crust brown #92400E, honey drizzle #F59E0B, sesame white dots, highlight pale yellow. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-duck",
+      "svgPath": "assets/images/food/bg-duck.svg",
+      "bgClass": "bg-duck",
+      "alt": "Korean grilled duck with savory glaze",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: sliced duck meat with rich dark skin, a simple grill setting, green onion (대파) strips, savory brown glaze. Colors: blue-grey duck background #508CB4, duck skin dark brown #451A03, meat rosy #FECDD3, grill dark, green onion #4ADE80, glaze amber #D97706. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-offal",
+      "svgPath": "assets/images/food/bg-offal.svg",
+      "bgClass": "bg-offal",
+      "alt": "Korean gopchang grilled offal spicy",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: coiled Korean offal (gopchang) on a hot iron grill, red spicy sauce glaze, chili pepper shapes, smoky steam. Colors: purple dark background #643C8C, grill dark iron #374151, offal coils dark red-brown #7C2D12, sauce red #DC2626, chili red #EF4444, steam white wisps. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-kimchi",
+      "svgPath": "assets/images/food/bg-kimchi.svg",
+      "bgClass": "bg-kimchi",
+      "alt": "Korean kimchi fermented cabbage red chili",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: chunky napa cabbage kimchi pieces coated in vibrant red gochugaru paste, a Korean ceramic kimchi jar (onggi pot) in the background, garlic and ginger shapes. Colors: Korean red background #E8003D, cabbage leaves pale #E8F5E9, gochugaru red-orange #DC2626, jar dark brown #7C2D12, garlic white, ginger gold. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-white-kimchi",
+      "svgPath": "assets/images/food/bg-white-kimchi.svg",
+      "bgClass": "bg-white-kimchi",
+      "alt": "Korean white kimchi baek kimchi mild",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: pale white napa cabbage leaves (baek kimchi) with light seasoning, translucent broth, sliced radish daikon rounds, green onion strips. Colors: pale blue-white background #C8DCF0, cabbage pale #F0F0FC, radish white circles, broth clear light blue, green onion green #86EFAC, subtle grey accents. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-water-kimchi",
+      "svgPath": "assets/images/food/bg-water-kimchi.svg",
+      "bgClass": "bg-water-kimchi",
+      "alt": "Korean mul kimchi water kimchi clear broth",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: clear refreshing broth in a glass bowl, floating vegetable pieces (small radish circles, cucumber slices), water droplet motif, cool refreshing visual. Colors: clear water blue background #64B4DC, bowl light blue #BAE6FD, broth clear #E0F7FA, vegetable white circles, cucumber pale green, droplets blue #0EA5E9. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-mandu",
+      "svgPath": "assets/images/food/bg-mandu.svg",
+      "bgClass": "bg-mandu",
+      "alt": "Korean mandu dumplings steamed golden",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: plump Korean mandu dumplings (half-moon shapes with pleated edges), bamboo steamer basket in the background, steam clouds rising, a soy sauce dish. Colors: warm orange background #FFA050, dumpling cream #FEF9EC, pleats detail grey, steamer bamboo #92400E, steam white, sauce dish dark. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    },
+    {
+      "id": "food-bg-chicken2",
+      "svgPath": "assets/images/food/bg-chicken2.svg",
+      "bgClass": "bg-chicken2",
+      "alt": "Korean yangnyeom fried chicken with spicy sauce",
+      "isSample": false,
+      "prompt": "Create a minimal flat-design SVG illustration for a food card background. Include: Korean yangnyeom fried chicken pieces coated in shiny red-gold sauce, sesame seeds scattered, a beer glass (chimaek concept), glossy sauce drips. Colors: gold background #FFAA00, chicken red-sauce #DC2626, glaze shiny #F97316, sesame white dots, beer glass amber #D97706, sauce drips red. Fill viewBox fully. viewBox=\"0 0 400 200\". Output ONLY valid SVG code starting with <svg."
+    }
+  ]
+}

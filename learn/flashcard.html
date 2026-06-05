@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards | 한국어 학교</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ═══ HEADER ═══════════════════════════════════════ -->
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="hangul.html" class="active"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+
+<!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div id="lesson-progress-grid"></div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">Getting Started</div>
+    <a href="../index.html" class="sidebar-link"><span class="link-icon">🏠</span> Introduction</a>
+    <a href="hangul.html" class="sidebar-link"><span class="link-icon">✏️</span> Hangul Alphabet</a>
+    <a href="syllable-blocks.html" class="sidebar-link"><span class="link-icon">🔷</span> Syllable Blocks</a>
+    <a href="pronunciation.html" class="sidebar-link"><span class="link-icon">🔊</span> Pronunciation Guide</a>
+    <div class="sidebar-section">Beginner</div>
+    <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> Vocab <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-vocab">
+      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
+      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
+      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
+      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
+      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
+      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
+      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
+      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
+      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
+      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
+      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
+      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
+      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
+      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
+      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
+      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
+      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
+      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
+      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
+      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
+      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
+    </div>
+    <a href="pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> Pronouns <span class="link-badge badge-beginner">Beginner</span></a>
+    <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> Common Nouns <span class="link-badge badge-beginner">Beginner</span></a>
+    <button class="sidebar-accordion-btn" data-accordion="grammar"><span class="link-icon">📝</span> Grammar <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-grammar">
+      <a href="grammar.html#sentence-structure" class="sidebar-link" data-level="intermediate"><span class="link-icon">📐</span> Sentence Structure <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#particles" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔗</span> Korean Particles <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#conjugation" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏰</span> Verb Conjugation <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#questions" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Question Forms <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#connectors" class="sidebar-link" data-level="beginner"><span class="link-icon">🔗</span> Connectors <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#and-with" class="sidebar-link" data-level="beginner"><span class="link-icon">➕</span> And, With <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#to-from" class="sidebar-link" data-level="beginner"><span class="link-icon">📨</span> To/From Someone <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#telling-time" class="sidebar-link" data-level="beginner"><span class="link-icon">🕐</span> Telling Time <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#counters" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Counters <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#progressive" class="sidebar-link" data-level="beginner"><span class="link-icon">▶️</span> Present Progressive <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#self-intro" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Self Introduction <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#dates" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Dates and Months <span class="link-badge badge-beginner">Beginner</span></a>
+      <a href="grammar.html#adverbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">💯</span> Degree Adverbs <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#nominalizer" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔤</span> Nominalizer -는 것 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#comparatives" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚖️</span> Comparatives <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#good-like" class="sidebar-link" data-level="intermediate"><span class="link-icon">❤️</span> Like: 좋다 vs 좋아하다 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#still-already" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏳</span> Still, Already <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#indefinite" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Someone, Something <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">📢</span> Imperative -(으)세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#negative-imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">🚫</span> Don't: -지 마세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#method" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛤️</span> Method: -(으)로 <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#good-bad-at" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎯</span> Good/Poor At <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#all-more" class="sidebar-link" data-level="advanced"><span class="link-icon">📦</span> All, More: 다, 더 <span class="link-badge badge-advanced">Advanced</span></a>
+      <a href="grammar.html#do-part2" class="sidebar-link" data-level="advanced"><span class="link-icon">✳️</span> -도 Advanced Uses <span class="link-badge badge-advanced">Advanced</span></a>
+    </div>
+    <div class="sidebar-section">Intermediate</div>
+    <a href="speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> Formal vs Informal <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <a href="emotions.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">😊</span> Expressing Emotions <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <a href="shopping.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛒</span> Shopping Phrases <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <div class="sidebar-section">Advanced</div>
+    <a href="writing-essays.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📝</span> Writing Essays <span class="link-badge badge-advanced">Advanced</span></a>
+    <a href="business-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">💼</span> Business Korean <span class="link-badge badge-advanced">Advanced</span></a>
+    <a href="classical-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Classical Korean <span class="link-badge badge-advanced">Advanced</span></a>
+    <div class="sidebar-section">Tools</div>
+    <a href="dialogues.html" class="sidebar-link"><span class="link-icon">💬</span> Korean Dialogues</a>
+    <a href="flashcard.html" class="sidebar-link active"><span class="link-icon">📇</span> Flashcards</a>
+  </nav>
+</aside>
+
+<!-- ═══ MAIN CONTENT ═══════════════════════════════════ -->
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="lesson-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">›</span>
+      <a href="hangul.html">Learn</a>
+      <span class="sep">›</span>
+      <a href="vocabulary.html">Vocabulary</a>
+      <span class="sep">›</span>
+      <span>Flashcards</span>
+    </div>
+
+    <div class="lesson-header">
+      <div class="lesson-tag">📇 Study Tool</div>
+      <h1 class="lesson-title">Flash<span class="grad-text">cards</span> — 단어 카드</h1>
+      <p class="lesson-meta">
+        <span>📇 One card at a time</span>
+        <span>🔊 Audio pronunciation</span>
+        <span>⭐ Save your words</span>
+        <span>🎲 Random sets</span>
+      </p>
+    </div>
+
+    <!-- Set info bar -->
+    <div class="fc-set-info" style="margin-bottom:8px">
+      <span id="fc-set-name" style="font-size:1.1rem;font-weight:700;color:var(--text)">My Words</span>
+      <span id="fc-set-count" style="font-size:0.85rem;color:var(--text-muted)">0 cards</span>
+    </div>
+
+    <!-- Empty state (shown when no cards in deck) -->
+    <div id="fc-empty" class="fc-empty" style="display:none">
+      <div class="fc-empty-icon">⭐</div>
+      <div class="fc-empty-title">No cards in this set</div>
+      <div class="fc-empty-desc">
+        Go to <a href="vocabulary.html" style="color:var(--primary)">Vocabulary</a> and click <strong>☆</strong> on any word to add it here.<br>
+        Or choose a built-in set from the sidebar.
+      </div>
+      <a href="vocabulary.html" class="btn btn-primary">Browse Vocabulary →</a>
+    </div>
+
+    <!-- Flashcard stage -->
+    <div id="fc-stage" class="fc-stage">
+
+      <!-- The card -->
+      <div id="fc-card" class="fc-card" role="button" aria-label="Flip card">
+        <div class="fc-card-inner">
+          <div class="fc-card-face fc-card-front">
+            <div id="fc-front-kor" class="fc-front-kor">—</div>
+            <div class="fc-front-hint">click to flip · 뒤집기</div>
+          </div>
+          <div class="fc-card-face fc-card-back">
+            <div id="fc-back-eng" class="fc-back-eng">—</div>
+            <div id="fc-back-rom" class="fc-back-rom"></div>
+            <div id="fc-back-theme" class="fc-back-theme"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress -->
+      <div class="fc-progress-wrap">
+        <div class="fc-progress-track">
+          <div id="fc-progress-fill" class="fc-progress-fill" style="width:0%"></div>
+        </div>
+        <div class="fc-progress-text">
+          <span id="fc-progress-counter">0 / 0</span>
+          <span class="fc-kb-hint"><kbd>←</kbd> <kbd>→</kbd> navigate &nbsp; <kbd>Space</kbd> flip</span>
+        </div>
+      </div>
+
+      <!-- Navigation controls -->
+      <div class="fc-controls">
+        <button id="fc-prev" class="btn btn-outline btn-sm">← Prev</button>
+        <button id="fc-flip-btn" class="btn btn-secondary">Flip Card</button>
+        <button id="fc-next" class="btn btn-primary">Next →</button>
+      </div>
+
+      <!-- Action controls -->
+      <div class="fc-actions">
+        <button id="fc-speak" class="btn btn-outline btn-sm">🔊 Speak</button>
+        <button id="fc-shuffle" class="btn btn-outline btn-sm">🔀 Shuffle</button>
+        <button id="fc-restart" class="btn btn-outline btn-sm">↩ Restart</button>
+        <button id="fc-bookmark-btn" class="btn btn-outline btn-sm bookmark-btn">☆ Add to My Words</button>
+      </div>
+
+    </div><!-- /fc-stage -->
+
+    <!-- Tip -->
+    <div class="tip-box animate-on-scroll" style="margin-top:40px">
+      <span class="tip-icon">💡</span>
+      <div class="tip-content">
+        <div class="tip-label">How to build your deck</div>
+        <div class="tip-text">Visit the <a href="vocabulary.html" style="color:var(--accent)">Vocabulary page</a> and click <strong>☆</strong> on any word to save it to <em>My Words</em>. Use the sidebar sets for instant practice — no setup needed. Theme sets and random sets load automatically from your vocabulary cache.</div>
+      </div>
+    </div>
+
+  </div><!-- /lesson-wrap -->
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="hangul.html">Hangul Alphabet</a></li>
+          <li><a href="grammar.html">Grammar</a></li>
+          <li><a href="vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+    </div>
+  </div>
+</footer>
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

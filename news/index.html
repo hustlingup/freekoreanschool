@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korean News | 한국어 학교</title>
+  <meta name="description" content="Read AI-generated Korea news daily — bilingual English and Korean, at beginner to advanced levels. Learn Korean naturally through real news." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body data-page="news-index">
+
+  <!-- ══════════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">한</div>
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+        <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+        <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+        <li><a href="../news/index.html" class="active"><span class="nav-icon">📰</span> News</a></li>
+        <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search news…" autocomplete="off" aria-label="Search" />
+        </div>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════════
+       PAGE HERO
+  ══════════════════════════════════════════════ -->
+  <section class="news-page-hero">
+    <div class="container">
+      <div class="news-page-hero-inner">
+        <div class="section-eyebrow animate-fade-up">📰 · Korean News · 한국 뉴스</div>
+        <h1 class="news-page-hero-title animate-fade-up">
+          한국 뉴스 — <span class="grad-text">Korean School Daily</span>
+        </h1>
+        <p class="news-page-hero-sub animate-fade-up">
+          AI-generated bilingual news from South Korea, published every morning at 8AM KST.
+          Read at your level — Beginner to Advanced — and learn Korean naturally.
+        </p>
+        <p class="animate-fade-up" style="margin-top:0.75rem;font-size:0.83rem;color:var(--text-secondary,#aaa);line-height:1.65;text-align:left;">
+          <strong style="color:#f5c842;">⚠ AI-Generated Content Notice</strong><br>
+          These news articles are created by AI for Korean language learning purposes only. Content may be inaccurate or hallucinated — AI makes mistakes. If you want to read real news, search in Korean using what you've learned here: <a href="https://www.google.com/search?q=한국+뉴스" target="_blank" rel="noopener" style="color:#f5c842;text-decoration:underline;">Google</a> · <a href="https://news.naver.com" target="_blank" rel="noopener" style="color:#f5c842;text-decoration:underline;">Naver News</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       MAIN CONTENT
+  ══════════════════════════════════════════════ -->
+  <main>
+    <div class="container" style="padding-top: 40px;">
+
+      <!-- Daily AI Summary Bar -->
+      <div class="news-summary-bar animate-on-scroll" id="news-summary-bar">
+        <div class="news-summary-flag">🇰🇷</div>
+        <div class="news-summary-content">
+          <div class="news-summary-eyebrow" id="news-summary-date">TODAY'S KOREA · 오늘의 한국</div>
+          <div class="news-summary-cols">
+            <div class="news-summary-col-en" id="news-summary-en">
+              <div class="news-skeleton" style="height:16px;width:90%;margin-bottom:6px;"></div>
+              <div class="news-skeleton" style="height:16px;width:75%;"></div>
+            </div>
+            <div class="news-summary-col-ko" id="news-summary-ko">
+              <div class="news-skeleton" style="height:16px;width:90%;margin-bottom:6px;"></div>
+              <div class="news-skeleton" style="height:16px;width:70%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="news-filter-wrap animate-on-scroll" style="position:sticky;top:64px;z-index:50;background:var(--bg);padding:10px 0 4px;margin-bottom:24px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);">
+        <div class="news-filter-bar" id="news-topic-tabs" role="group" aria-label="Filter by topic">
+          <button class="news-tab active" data-topic="all">All 전체</button>
+          <button class="news-tab" data-topic="kpop">🎵 K-Pop</button>
+          <button class="news-tab" data-topic="tech">💻 Tech</button>
+          <button class="news-tab" data-topic="food">🍜 Food</button>
+          <button class="news-tab" data-topic="sports">⚽ Sports</button>
+          <button class="news-tab" data-topic="culture">🎬 Culture</button>
+          <button class="news-tab" data-topic="society">🏙️ Society</button>
+          <button class="news-tab" data-topic="education">📚 Education</button>
+          <button class="news-tab" data-topic="fashion">👗 Fashion</button>
+          <button class="news-tab" data-topic="travel">✈️ Travel</button>
+          <button class="news-tab" data-topic="economy">📈 Economy</button>
+          <button class="news-tab" data-topic="politics">🏛️ Politics</button>
+        </div>
+      </div>
+
+      <!-- Latest Articles Grid -->
+      <div class="animate-on-scroll" style="margin-top:48px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px;">
+          <div>
+            <div class="section-eyebrow">TODAY · 오늘의 기사</div>
+            <h2 class="section-title" style="margin-bottom:0;">Today's Korean News</h2>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <a href="board.html" class="btn btn-outline btn-sm">📋 All Articles</a>
+            <a href="admin.html" class="btn btn-outline btn-sm" style="opacity:0.5;font-size:0.75rem;">Admin ⚙️</a>
+          </div>
+        </div>
+        <div class="news-articles-grid" id="news-articles-grid">
+          <!-- Populated by NewsPage.renderGrid() -->
+        </div>
+        <div class="load-more-wrap">
+          <button class="load-more-btn" id="news-load-more" disabled>
+            <span id="news-load-more-text">더 보기 — Load More</span>
+          </button>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Weekly Top Stories -->
+    <section class="news-weekly-section animate-on-scroll">
+      <div class="container">
+        <div class="section-eyebrow">THIS WEEK'S TOP STORIES · 이번 주 인기 뉴스</div>
+        <h2 class="section-title">Most Read This Week</h2>
+        <div class="news-weekly-strip" id="news-weekly-strip">
+          <!-- Populated by NewsPage.renderWeeklyTop() -->
+          <div class="news-weekly-item" style="pointer-events:none;"><div class="news-weekly-thumb"><div class="news-skeleton" style="position:absolute;inset:0;"></div></div><div class="news-weekly-body"><div class="news-skeleton" style="height:12px;width:40%;margin-bottom:6px;"></div><div class="news-skeleton" style="height:16px;width:90%;"></div></div></div>
+          <div class="news-weekly-item" style="pointer-events:none;"><div class="news-weekly-thumb"><div class="news-skeleton" style="position:absolute;inset:0;"></div></div><div class="news-weekly-body"><div class="news-skeleton" style="height:12px;width:40%;margin-bottom:6px;"></div><div class="news-skeleton" style="height:16px;width:90%;"></div></div></div>
+          <div class="news-weekly-item" style="pointer-events:none;"><div class="news-weekly-thumb"><div class="news-skeleton" style="position:absolute;inset:0;"></div></div><div class="news-weekly-body"><div class="news-skeleton" style="height:12px;width:40%;margin-bottom:6px;"></div><div class="news-skeleton" style="height:16px;width:90%;"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Vocabulary Spotlight (static — always visible) -->
+    <section class="animate-on-scroll" style="padding:80px 0; background:var(--bg);">
+      <div class="container">
+        <div class="text-center mb-32">
+          <div class="section-eyebrow">VOCABULARY SPOTLIGHT · 핵심 어휘</div>
+          <h2 class="section-title">Key News Vocabulary</h2>
+          <p class="section-desc" style="margin:0 auto;">10 essential Korean words that appear most in Korea's daily news.</p>
+        </div>
+        <div class="hangul-grid" style="grid-template-columns:repeat(5,1fr);">
+          <div class="hangul-card"><div class="hangul-char">뉴스</div><div class="hangul-rom">Nyuseu</div><div class="hangul-name">News</div><button class="hangul-sound-btn" onclick="speakKorean('뉴스')" aria-label="Pronounce 뉴스">🔊</button></div>
+          <div class="hangul-card"><div class="hangul-char">경제</div><div class="hangul-rom">Gyeongje</div><div class="hangul-name">Economy</div><button class="hangul-sound-btn" onclick="speakKorean('경제')" aria-label="Pronounce 경제">🔊</button></div>
+          <div class="hangul-card"><div class="hangul-char">정치</div><div class="hangul-rom">Jeongchi</div><div class="hangul-name">Politics</div><button class="hangul-sound-btn" onclick="speakKorean('정치')" aria-label="Pronounce 정치">🔊</button></div>
+          <div class="hangul-card"><div class="hangul-char">사회</div><div class="hangul-rom">Sahoe</div><div class="hangul-name">Society</div><button class="hangul-sound-btn" onclick="speakKorean('사회')" aria-label="Pronounce 사회">🔊</button></div>
+          <div class="hangul-card"><div class="hangul-char">문화</div><div class="hangul-rom">Munhwa</div><div class="hangul-name">Culture</div><button class="hangul-sound-btn" onclick="speakKorean('문화')" aria-label="Pronounce 문화">🔊</button></div>
+          <div class="hangul-card"><div class="hangul-char">스포츠</div><div class="hangul-rom">Seupotseu</div><div class="hangul-name">Sports</div><button class="hangul-sound-btn" onclick="speakKorean('스포츠')" aria-label="Pronounce 스포츠">🔊</button></div>
+          <div class="hangul-card"><div class="hangul-char">과학</div><div class="hangul-rom">Gwahak</div><div class="hangul-name">Science</div><button class="hangul-sound-btn" onclick="speakKorean('과학')" aria-label="Pronounce 과학">🔊</button></div>
+          <div class="hangul-card"><div class="hangul-char">환경</div><div class="hangul-rom">Hwangyeong</div><div class="hangul-name">Environment</div><button class="hangul-sound-btn" onclick="speakKorean('환경')" aria-label="Pronounce 환경">🔊</button></div>
+          <div class="hangul-card"><div class="hangul-char">교육</div><div class="hangul-rom">Gyoyuk</div><div class="hangul-name">Education</div><button class="hangul-sound-btn" onclick="speakKorean('교육')" aria-label="Pronounce 교육">🔊</button></div>
+          <div class="hangul-card"><div class="hangul-char">국제</div><div class="hangul-rom">Gukje</div><div class="hangul-name">International</div><button class="hangul-sound-btn" onclick="speakKorean('국제')" aria-label="Pronounce 국제">🔊</button></div>
+        </div>
+        <div class="text-center mt-32">
+          <a href="../learn/vocabulary.html" class="btn btn-secondary btn-lg">📖 Full Vocabulary Lists →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-mark">한</div>
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+            <li><a href="../learn/grammar.html">Grammar</a></li>
+            <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="../culture/index.html">K-Culture</a></li>
+            <li><a href="../travel/index.html">Travel Guide</a></li>
+            <li><a href="../news/index.html">Korean News</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+        <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/lang-ja.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

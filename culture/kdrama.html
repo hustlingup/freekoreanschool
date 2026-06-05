@@ -1,0 +1,1120 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-Drama · 한국 드라마 | 한국어 학교</title>
+  <meta name="description" content="Explore K-Drama history, must-watch dramas, speech levels, and vocabulary — learn Korean through the world's most beloved dramas." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .ja-kana { display: none; font-size: 0.85em; color: var(--text-secondary); }
+    body.lang-ja .ja-kana { display: inline; }
+    .kata { display: none; font-size: 0.82em; color: var(--text-secondary); }
+    body.lang-ja .kata { display: block; }
+    .ja-block { display: none; }
+    body.lang-ja .ja-block { display: block; }
+    body.lang-ja .no-ja { display: none; }
+    .drama-kor-ja { font-size: 0.85em; color: var(--text-secondary); margin-top: 2px; }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html" class="active"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-icon">🎵</div>
+      <div class="sidebar-brand-text">K-Culture <span>한국 문화</span></div>
+    </div>
+    <p class="sidebar-brand-desc">K-Pop, K-Drama, food, beauty, fashion, gaming, sports &amp; traditions.</p>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">CATEGORIES · 카테고리</div>
+
+    <a href="kpop.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎵</span> K-Pop <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kpop">
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📜</span> K-Pop History</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🏢</span> Agencies</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">⭐</span> Generations</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎼</span> Genres</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📺</span> Variety Shows</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎬</span> Film &amp; Acting</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">💬</span> Idol Phrases</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🔥</span> Fan Slang</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📣</span> Fan Chants</a>
+    </div>
+    <a href="kdrama.html" class="sidebar-accordion-btn active open">
+      <span class="link-icon">🎬</span> K-Drama <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="cat-acc-kdrama">
+      <a href="#kdrama-history" class="sidebar-link"><span class="link-icon">📺</span> Drama History</a>
+      <a href="#kdrama-genres" class="sidebar-link"><span class="link-icon">🎬</span> Drama Genres</a>
+      <a href="#kdrama-dramas" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Dramas</a>
+      <a href="#kdrama-tropes" class="sidebar-link"><span class="link-icon">🎯</span> K-Drama Tropes</a>
+      <a href="#kdrama-speech" class="sidebar-link"><span class="link-icon">💡</span> Speech Levels</a>
+      <a href="#kdrama-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="#kdrama-dialogue" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="#kdrama-fanculture" class="sidebar-link"><span class="link-icon">🗣️</span> Fan Culture &amp; Slang</a>
+    </div>
+    <a href="kmovie.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Movie <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kmovie">
+      <a href="kmovie.html#kmovie-history" class="sidebar-link"><span class="link-icon">📽️</span> Movie History</a>
+      <a href="kmovie.html#kmovie-genres" class="sidebar-link"><span class="link-icon">🎬</span> Movie Genres</a>
+      <a href="kmovie.html#kmovie-films" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Films</a>
+      <a href="kmovie.html#kmovie-directors" class="sidebar-link"><span class="link-icon">🎖️</span> Directors</a>
+      <a href="kmovie.html#kmovie-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kmovie.html#kmovie-dialogue" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kmovie.html#kmovie-lines" class="sidebar-link"><span class="link-icon">🗣️</span> Iconic Lines</a>
+      <a href="kmovie.html#kmovie-fanculture" class="sidebar-link"><span class="link-icon">🍿</span> Fan Culture</a>
+    </div>
+    <a href="kfood.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🍜</span> K-Food <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kfood">
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Food Goes Global</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🔥</span> Foods That Went Global</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">📅</span> K-Food Timeline</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🍽️</span> Essential Dishes</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">👨‍🍳</span> World-Famous Chefs</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🏪</span> Ordering &amp; Dining</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🌶️</span> Street Food</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🏮</span> Food Culture &amp; Drinking</a>
+    </div>
+    <a href="kbeauty.html" class="sidebar-accordion-btn">
+      <span class="link-icon">✨</span> K-Beauty <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kbeauty">
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Beauty Goes Global</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">⏳</span> K-Beauty Timeline</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">📖</span> Beauty Vocabulary</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🧴</span> 10-Step Skincare</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌿</span> Key Ingredients</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">✨</span> Beauty Trends</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💄</span> Makeup Philosophy</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏥</span> 피부과 Culture</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💬</span> K-Beauty Dialogue</a>
+    </div>
+    <a href="kfashion.html" class="sidebar-accordion-btn">
+      <span class="link-icon">👗</span> K-Fashion <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kfashion">
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Fashion Global</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👑</span> Fashion Icons</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⏳</span> Fashion Timeline</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🎨</span> Style Aesthetics</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⭐</span> Idol Fashion</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🗓️</span> Seoul Fashion Week</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">📖</span> Fashion Vocabulary</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏙️</span> Fashion Districts</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👘</span> 한복 &amp; 전통 의상</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">💬</span> Shopping Dialogue</a>
+    </div>
+    <a href="koreanthing.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🇰🇷</span> Korean Thing <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-koreanthing">
+      <a href="koreanthing.html#bap" class="sidebar-link"><span class="link-icon">🍚</span> 밥에 미친 민족</a>
+      <a href="koreanthing.html#chokbeop" class="sidebar-link"><span class="link-icon">👶</span> 미성년자 과잉보호</a>
+      <a href="koreanthing.html#delivery" class="sidebar-link"><span class="link-icon">🛵</span> 빠른 배달</a>
+      <a href="koreanthing.html#ecology" class="sidebar-link"><span class="link-icon">🦌</span> 생태계 교란종</a>
+      <a href="koreanthing.html#table" class="sidebar-link"><span class="link-icon">🔔</span> 테이블 문화</a>
+      <a href="koreanthing.html#transport" class="sidebar-link"><span class="link-icon">🚌</span> 대중교통</a>
+      <a href="koreanthing.html#jjimjilbang" class="sidebar-link"><span class="link-icon">♨️</span> 찜질방</a>
+      <a href="koreanthing.html#surgery" class="sidebar-link"><span class="link-icon">💉</span> 성형 문화</a>
+      <a href="koreanthing.html#outdoor-drinking" class="sidebar-link"><span class="link-icon">🍺</span> 야외음주</a>
+      <a href="koreanthing.html#jeonse" class="sidebar-link"><span class="link-icon">🏠</span> 전세 제도</a>
+      <a href="koreanthing.html#traditions" class="sidebar-link"><span class="link-icon">🏮</span> 전통 문화</a>
+      <a href="koreanthing.html#sodams" class="sidebar-link"><span class="link-icon">📜</span> 속담 100선</a>
+    </div>
+    <a href="kgaming.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎮</span> K-Gaming <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kgaming">
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📊</span> K-Gaming Stats</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">⏳</span> Gaming Timeline</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🌟</span> Gaming Legends</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🎮</span> Iconic Games</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📺</span> Streaming Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏪</span> PC방 Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏆</span> Esports Leagues</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">💬</span> Gamer Slang</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📖</span> Gaming Vocabulary</a>
+    </div>
+    <a href="ksports.html" class="sidebar-accordion-btn">
+      <span class="link-icon">⚽</span> K-Sports <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-ksports">
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📊</span> Sports Overview</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚽</span> Football Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚾</span> Baseball Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🏃</span> Marathon Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🌟</span> Individual Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🥋</span> Traditional Sports</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📣</span> Cheer Chants</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+    </div>
+  </nav>
+</aside>
+
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+      <div class="culture-section-header">
+        <div class="section-eyebrow">K-CULTURE · 한국 문화</div>
+        <h2>🎬 K-Drama <span class="grad-text-2">한국 드라마</span></h2>
+        <p style="font-size:0.96rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">From <em>Squid Game</em> to <em>Crash Landing on You</em> — K-Dramas have captivated global streaming audiences and built one of the most passionate fandoms on Earth. Learn the language, history, genres, and fan culture behind Korean television's remarkable global rise.</p>
+        <div class="kr-trans" style="margin-bottom:20px;">《오징어 게임》부터 《사랑의 불시착》까지 — K-드라마는 전 세계 스트리밍 시청자들의 마음을 사로잡으며 지구상에서 가장 열정적인 팬덤 중 하나를 탄생시켰습니다. 한국 텔레비전의 놀라운 글로벌 성장 뒤에 숨은 언어, 역사, 장르, 팬 문화를 배워보세요.</div>
+      </div>
+
+      <!-- HISTORY -->
+      <div class="culture-sub-heading" id="kdrama-history">📺 K-Drama History · 드라마 역사</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">Korean drama has evolved from government-regulated broadcast programming into a global entertainment industry worth billions. From the first black-and-white soap operas of the 1960s to Netflix's first non-English #1 series, each decade brought a transformation that shaped the Korean Wave.</p>
+      <div class="kr-trans" style="margin-bottom:20px;">한국 드라마는 정부 규제 방송 프로그램에서 수십억 달러 규모의 글로벌 엔터테인먼트 산업으로 발전했습니다. 1960년대 최초의 흑백 연속극부터 넷플릭스 비영어권 최초의 1위 시리즈까지, 10년마다 한국 드라마는 한류를 형성하는 변혁을 이뤄냈습니다.</div>
+
+      <div class="photo-grid">
+        <div class="photo-card">
+          <div class="photo-frame" style="background:linear-gradient(135deg,#1a0a00,#4a2000,#92400e)">
+            <span class="photo-frame-emoji">📺</span>
+            <span class="photo-frame-label">KBS 개국 · 1962</span>
+          </div>
+          <div class="photo-caption">
+            <div class="photo-caption-title">The Golden Age of Korean Broadcast</div>
+            <div class="photo-caption-kr">한국 방송의 황금기 <button class="hangul-sound-btn" onclick="speakKorean('한국 방송의 황금기')" aria-label="듣기">🔊</button></div>
+            <div class="photo-caption-text">KBS launched in 1962, followed by MBC in 1969 and SBS in 1991. These three networks remain the backbone of Korean drama production, airing new episodes twice a week in "miniseries" format — typically 16 episodes per season.</div>
+            <div class="kr-trans">KBS(한국방송공사)는 1962년 개국했으며 1969년 MBC, 1991년 SBS가 뒤를 이었습니다. 이 세 방송국은 여전히 한국 드라마 제작의 근간으로, 보통 16부작 미니시리즈 형식으로 주 2회 새 에피소드를 방영합니다.</div>
+          </div>
+        </div>
+        <div class="photo-card">
+          <div class="photo-frame" style="background:linear-gradient(135deg,#0f172a,#1e3a5f,#2563eb)">
+            <span class="photo-frame-emoji">❄️</span>
+            <span class="photo-frame-label">겨울연가 · 2002</span>
+          </div>
+          <div class="photo-caption">
+            <div class="photo-caption-title">Winter Sonata &amp; the Hallyu Wave</div>
+            <div class="photo-caption-kr">겨울연가와 한류 <button class="hangul-sound-btn" onclick="speakKorean('겨울연가와 한류')" aria-label="듣기">🔊</button></div>
+            <div class="photo-caption-text">겨울연가<span class="ja-kana">（冬のソナタ）</span> (Winter Sonata, 2002) starring Bae Yong-joon ignited Korean drama fever across Japan when it aired on NHK. Middle-aged Japanese fans — nicknamed "욘사마 팬" — sparked a Korean cultural tourism boom that forever changed Korea's global image.</div>
+            <div class="kr-trans">배용준 주연의 《겨울연가》(2002)는 NHK 방영으로 일본 전역에 한국 드라마 열풍을 일으켰습니다. '욘사마 팬'으로 불린 일본 팬들이 한국 문화 관광 붐을 촉발해 한국의 글로벌 이미지를 영원히 바꿔놓았습니다.</div>
+          </div>
+        </div>
+        <div class="photo-card">
+          <div class="photo-frame" style="background:linear-gradient(135deg,#0a0a0a,#1a1a2e,#e8003d)">
+            <span class="photo-frame-emoji">🦑</span>
+            <span class="photo-frame-label">오징어 게임 · 2021</span>
+          </div>
+          <div class="photo-caption">
+            <div class="photo-caption-title">Squid Game Goes Global</div>
+            <div class="photo-caption-kr">오징어 게임의 세계적 성공 <button class="hangul-sound-btn" onclick="speakKorean('오징어 게임의 세계적 성공')" aria-label="듣기">🔊</button></div>
+            <div class="photo-caption-text">오징어 게임 (Squid Game, 2021) became Netflix's most-watched series ever — 1.65 billion viewing hours in its first 28 days, #1 in 94 countries. It won Emmy Awards and showed that Korean content could resonate deeply with audiences worldwide without dubbing.</div>
+            <div class="kr-trans">《오징어 게임》(2021)은 첫 28일간 16억 5천만 시간을 기록하며 넷플릭스 역대 최다 시청 시리즈가 됐고 94개국에서 1위를 차지했습니다. 에미상을 수상하며 더빙 없이도 한국 콘텐츠가 전 세계 시청자들과 깊이 공감할 수 있음을 보여줬습니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="culture-sub-heading" id="kdrama-timeline">🏆 K-Drama History Timeline · 역사 타임라인</div>
+      <div class="kpop-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">1962</div>
+          <div class="timeline-title">KBS Founded — Korean TV Begins <span class="timeline-title-kr">· KBS 개국</span></div>
+          <div class="timeline-desc">The Korean Broadcasting System launches Korea's first official television station. Early dramas are short, government-supervised productions focused on social and moral themes. Black-and-white TV reaches only a small percentage of households.</div>
+          <div class="kr-trans">한국방송공사(KBS)가 한국 최초의 공식 텔레비전 방송국을 개국했습니다. 초기 드라마는 사회적·도덕적 주제에 집중한 정부 감독 단편 작품이었습니다. 흑백 TV는 소수 가정에만 보급됐습니다.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">1980s</div>
+          <div class="timeline-title">Daily Dramas &amp; Family Serials Dominate <span class="timeline-title-kr">· 일일 드라마의 시대</span></div>
+          <div class="timeline-desc">Korean households gather around nightly soap operas airing 5–6 days a week. Family dramas (가족 드라마) dealing with generational conflict, marriage, and in-law relationships become the dominant genre. The formula still survives on morning broadcasts today.</div>
+          <div class="kr-trans">한국 가정이 매일 저녁 주 5~6회 방영되는 연속극 주위에 모였습니다. 세대 갈등, 결혼, 시집 관계를 다룬 가족 드라마가 지배적인 장르가 됐습니다. 이 공식은 오늘날 아침 방송에도 살아남아 있습니다.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot milestone"></div>
+          <div class="timeline-year milestone-yr">1992</div>
+          <div class="timeline-title">질투 — The First Modern Romance Drama <span class="timeline-title-kr">· 현대 로맨스 드라마의 탄생</span></div>
+          <div class="timeline-desc">질투 (Jealousy, 1992) introduces the modern K-Drama romance formula: young urban professionals, will-they-won't-they tension, and stylish cinematography. This marks a shift from family serials to youth-targeted melodrama — a template still used today.</div>
+          <div class="kr-trans">《질투》(1992)는 현대 K-드라마 로맨스 공식을 탄생시켰습니다: 젊은 도시 전문직, 이어질 듯 말 듯한 긴장감, 세련된 영상미. 가족 연속극에서 청년 타깃 멜로드라마로의 전환을 알렸으며 오늘날에도 사용되는 공식입니다.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">1997–2002</div>
+          <div class="timeline-title">Hallyu Drama Wave Begins in Asia <span class="timeline-title-kr">· 아시아 한류 드라마 열풍</span></div>
+          <div class="timeline-desc">별은 내 가슴에<span class="ja-kana">（星は私の胸に）</span> (Star in My Heart, 1997) and 가을동화<span class="ja-kana">（秋の童話）</span> (Autumn in My Heart, 2000) export to China, Vietnam, and Southeast Asia, triggering the first Korean Wave. Audiences fall in love with Korean actors, fashion, and music through drama OSTs.</div>
+          <div class="kr-trans">《별은 내 가슴에》(1997)와 《가을동화》(2000)가 중국, 베트남, 동남아시아에 수출되며 최초의 한류를 일으켰습니다. 드라마 OST를 통해 아시아 전역 시청자들이 한국 배우, 패션, 음악과 사랑에 빠졌습니다.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot milestone"></div>
+          <div class="timeline-year milestone-yr">2002</div>
+          <div class="timeline-title">겨울연가 — Korea Wins Hearts in Japan <span class="timeline-title-kr">· 일본을 사로잡은 겨울연가</span></div>
+          <div class="timeline-desc">겨울연가<span class="ja-kana">（冬のソナタ）</span> (Winter Sonata) airs on NHK Japan and becomes a cultural phenomenon. Bae Yong-joon becomes "욘사마" overnight. The drama sparks a Korean cultural tourism explosion — hundreds of thousands of Japanese fans travel to filming locations. Korea's soft power strategy is born.</div>
+          <div class="kr-trans">《겨울연가》가 일본 NHK에서 방영되며 문화적 현상이 됐습니다. 배용준은 하룻밤 사이 슈퍼스타 '욘사마'가 됐습니다. 수십만 명의 일본 팬이 촬영지를 방문하기 위해 한국을 찾았고, 한국의 소프트파워 전략이 탄생했습니다.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2003–2008</div>
+          <div class="timeline-title">Historical Dramas Dominate — Daejanggeum Era <span class="timeline-title-kr">· 사극의 전성기</span></div>
+          <div class="timeline-desc">대장금<span class="ja-kana">（宮廷女官 チャングムの誓い）</span> (Jewel in the Palace, 2003) achieves 57% domestic ratings and exports to 90+ countries, introducing Korean culture through Joseon-era food and palace life. 주몽<span class="ja-kana">（朱蒙）</span> (Jumong, 2006) breaks records in China and the Middle East, expanding Hallyu beyond romance.</div>
+          <div class="kr-trans">《대장금》(2003)은 국내 시청률 57%를 달성하고 90여 개국에 수출되며 조선시대 음식과 궁중 생활로 한국 문화를 알렸습니다. 《주몽》(2006)은 중국과 중동에서 기록을 세우며 한류를 로맨스 너머로 확장했습니다.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2013–2014</div>
+          <div class="timeline-title">별에서 온 그대 — China Boom <span class="timeline-title-kr">· 중국 드라마 열풍</span></div>
+          <div class="timeline-desc">별에서 온 그대<span class="ja-kana">（星から来たあなた）</span> (My Love from the Star, 2013) becomes a massive hit in China. The "치맥" (chicken + beer) scene single-handedly boosted Korean chicken restaurant exports to China. Korean drama product placement becomes a billion-dollar industry.</div>
+          <div class="kr-trans">《별에서 온 그대》(2013)가 중국에서 폭발적인 인기를 얻었습니다. '치맥'(치킨+맥주) 장면 하나가 중국으로의 한국 치킨 레스토랑 수출을 폭발적으로 늘렸습니다. 한국 드라마 PPL이 수십억 달러 산업이 됐습니다.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot milestone"></div>
+          <div class="timeline-year milestone-yr">2019–2020</div>
+          <div class="timeline-title">Netflix Era — 사랑의 불시착 &amp; 이태원 클라쓰 <span class="timeline-title-kr">· 넷플릭스 시대의 개막</span></div>
+          <div class="timeline-desc">Netflix begins licensing and co-producing K-Dramas, giving global audiences simultaneous access with subtitles in 30+ languages. 사랑의 불시착<span class="ja-kana">（愛の不時着）</span> and 이태원 클라쓰<span class="ja-kana">（梨泰院クラス）</span> reach audiences in over 100 countries without any broadcast adaptation.</div>
+          <div class="kr-trans">넷플릭스가 K-드라마 라이선스 계약과 공동 제작을 시작하며 30개 이상의 언어 자막으로 전 세계 동시 시청이 가능해졌습니다. 《사랑의 불시착》과 《이태원 클라쓰》는 별도의 방송 편집 없이 100개 이상의 국가 시청자에게 닿았습니다.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot milestone"></div>
+          <div class="timeline-year milestone-yr">2021</div>
+          <div class="timeline-title">오징어 게임 — History Is Made <span class="timeline-title-kr">· 역사가 된 오징어 게임</span></div>
+          <div class="timeline-desc">오징어 게임 premieres September 17, 2021. It becomes Netflix's most-watched series ever — 1.65 billion hours in its first 28 days, #1 in 94 countries. It wins Emmy Awards for directing and acting (Lee Jung-jae). The word 달고나 (dalgona) trends worldwide.</div>
+          <div class="kr-trans">《오징어 게임》이 2021년 9월 17일 공개됐습니다. 첫 28일 동안 16억 5천만 시간을 기록하며 넷플릭스 역대 최다 시청 시리즈가 됐고 94개국에서 동시 1위를 차지했습니다. 연출과 연기(이정재) 부문 에미상을 수상했으며 '달고나'라는 단어가 전 세계 검색어 1위에 올랐습니다.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2022–Present</div>
+          <div class="timeline-title">The Global K-Drama Era <span class="timeline-title-kr">· 글로벌 K-드라마 시대</span></div>
+          <div class="timeline-desc">더 글로리<span class="ja-kana">（ザ・グローリー）</span> (The Glory), 무빙<span class="ja-kana">（MOVING ムービング）</span> (Moving), 마스크걸<span class="ja-kana">（マスクガール）</span> (Mask Girl), and 경성크리처<span class="ja-kana">（京城クリーチャー）</span> demonstrate the breadth of Korean storytelling — revenge melodrama to monster horror. Netflix, Disney+, and Apple TV+ all compete for K-Drama content deals.</div>
+          <div class="kr-trans">《더 글로리》, 《무빙》, 《마스크걸》, 《경성크리처》가 한국 스토리텔링의 폭을 보여줬습니다 — 복수 멜로드라마부터 몬스터 호러까지. 넷플릭스, 디즈니+, 애플TV+가 모두 K-드라마 계약을 위해 경쟁하고 있습니다.</div>
+        </div>
+      </div>
+
+      <!-- HOW K-DRAMAS ARE MADE -->
+      <div class="culture-sub-heading">🎬 How K-Dramas Are Made · 드라마 제작 방식</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">Korean drama production is unlike Hollywood. Most dramas are shot while airing — writers and directors respond to audience reactions in real time. Understanding this system explains why K-Dramas feel so immediate and emotionally unpredictable.</p>
+      <div class="kr-trans" style="margin-bottom:16px;">한국 드라마 제작 방식은 할리우드와 다릅니다. 대부분의 드라마는 방영 중에 촬영됩니다 — 즉 작가와 감독이 실시간으로 시청자 반응에 반응한다는 의미입니다. 이 시스템을 이해하면 K-드라마가 왜 그렇게 즉각적이고 감정적으로 예측 불가능하게 느껴지는지 알 수 있습니다.</div>
+
+      <div class="photo-grid">
+        <div class="photo-card">
+          <div class="photo-frame" style="background:linear-gradient(135deg,#0d1b0d,#1a3a1a,#16a34a)">
+            <span class="photo-frame-emoji">📡</span>
+            <span class="photo-frame-label">생방송 제작 시스템</span>
+          </div>
+          <div class="photo-caption">
+            <div class="photo-caption-title">The Live-Shoot System 생방송 제작</div>
+            <div class="photo-caption-kr">생방송 제작 <button class="hangul-sound-btn" onclick="speakKorean('생방송 제작')" aria-label="듣기">🔊</button></div>
+            <div class="photo-caption-text">Unlike American TV which films entire seasons before broadcast, most K-Dramas film episodes days — sometimes hours — before they air. Writers can change storylines based on viewer ratings, fan comments, and trending social media reactions. Actors have been known to receive scripts the night before filming.</div>
+            <div class="kr-trans">방영 전에 전 시즌을 촬영하는 미국 TV와 달리, 대부분의 K-드라마는 방영 며칠 전 — 때로는 몇 시간 전 — 에 촬영합니다. 작가가 시청률, 팬 댓글, 소셜미디어 반응에 따라 스토리를 바꿀 수 있습니다. 배우들이 촬영 전날 밤 대본을 받는 경우도 있습니다.</div>
+          </div>
+        </div>
+        <div class="photo-card">
+          <div class="photo-frame" style="background:linear-gradient(135deg,#1a0a2e,#3b1f6e,#7c3aed)">
+            <span class="photo-frame-emoji">🎵</span>
+            <span class="photo-frame-label">드라마 OST</span>
+          </div>
+          <div class="photo-caption">
+            <div class="photo-caption-title">Drama OSTs — Music That Sells Emotion</div>
+            <div class="photo-caption-kr">드라마 OST의 힘 <button class="hangul-sound-btn" onclick="speakKorean('드라마 오에스티')" aria-label="듣기">🔊</button></div>
+            <div class="photo-caption-text">K-Drama OSTs are chart-topping releases in their own right. Major artists like IU, Taeyeon, Baekhyun, and Paul Kim<span class="ja-kana">（ポール・キム）</span> record drama songs that become national hits. OST songs replay during emotional scenes so frequently that hearing the song outside the drama instantly triggers the emotional memory.</div>
+            <div class="kr-trans">K-드라마 OST는 그 자체로 차트 1위에 오르는 음악입니다. 아이유, 태연, 백현, 폴킴 같은 대형 아티스트들이 국민 히트곡이 되는 드라마 OST를 녹음합니다. 감동적인 장면에서 OST가 반복 재생되어 드라마 밖에서 그 노래를 들으면 즉시 감동의 기억이 떠오릅니다.</div>
+          </div>
+        </div>
+        <div class="photo-card">
+          <div class="photo-frame" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364)">
+            <span class="photo-frame-emoji">📱</span>
+            <span class="photo-frame-label">웹툰 원작 드라마</span>
+          </div>
+          <div class="photo-caption">
+            <div class="photo-caption-title">Webtoon Adaptations — Comics to Screen</div>
+            <div class="photo-caption-kr">웹툰 원작 드라마 <button class="hangul-sound-btn" onclick="speakKorean('웹툰 원작 드라마')" aria-label="듣기">🔊</button></div>
+            <div class="photo-caption-text">Korean webtoons (vertical-scroll digital comics) have become a primary source for drama scripts. 이태원 클라쓰<span class="ja-kana">（梨泰院クラス）</span>, 유미의 세포들<span class="ja-kana">（ユミの細胞たち）</span>, 무빙<span class="ja-kana">（MOVING）</span>, 지금 우리 학교는<span class="ja-kana">（今、私たちの学校は）</span>, and 스위트홈<span class="ja-kana">（スウィートホーム）</span> all began as Naver Webtoon series. Reading the webtoon before watching is a popular Korean fan activity.</div>
+            <div class="kr-trans">한국 웹툰(세로 스크롤 디지털 만화)은 드라마 대본의 주요 원천이 됐습니다. 《이태원 클라쓰》, 《유미의 세포들》, 《무빙》, 《지금 우리 학교는》, 《스위트홈》 모두 네이버 웹툰 연재작입니다. 드라마 시청 전에 웹툰을 읽는 것은 한국 팬들에게 인기 있는 활동입니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="culture-sub-heading">🌍 K-Drama vs American TV vs J-Drama</div>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="th-kr">🇰🇷 K-Drama</th>
+            <th class="th-us">🇺🇸 American TV</th>
+            <th class="th-jp">🇯🇵 J-Drama</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Episodes per season</td><td>Usually 16 (range: 6–32)</td><td>13–24 (or unlimited seasons)</td><td>Usually 10–12</td></tr>
+          <tr><td>Production style</td><td>Live-shoot (filming airs in days)</td><td>Pre-produced (months ahead)</td><td>Semi-live (2–3 weeks ahead)</td></tr>
+          <tr><td>Seasons / Continuity</td><td>Mostly single-season complete stories</td><td>Multi-season with returning casts</td><td>Usually single-season; sequels rare</td></tr>
+          <tr><td>Romance pacing</td><td>Slow burn — confession often episode 14+</td><td>Fast relationship progression</td><td>Very slow; physical distance common</td></tr>
+          <tr><td>OST / Music role</td><td>Central; released as standalone hits</td><td>Background; licensing-driven</td><td>J-Pop tie-ins common</td></tr>
+          <tr><td>Platform</td><td>KBS, MBC, SBS, tvN + Netflix</td><td>Netflix, HBO, ABC, NBC, etc.</td><td>Fuji TV, TBS + Netflix</td></tr>
+          <tr><td>Fan influence on plot</td><td>Very high — can change storylines</td><td>Some (petition campaigns)</td><td>Moderate</td></tr>
+        </tbody>
+      </table>
+      <div class="kr-trans">이 표는 한국 드라마, 미국 드라마, 일본 드라마를 에피소드 수, 제작 방식, 시즌 구조, 로맨스 전개 속도, OST 역할, 방영 플랫폼, 팬 영향력 면에서 비교합니다. 연습 문장: <b>한국 드라마는 보통 몇 부작이에요?</b> (How many episodes does a K-Drama usually have?)</div>
+
+      <!-- DRAMA GENRES -->
+      <div class="culture-sub-heading" id="kdrama-genres">🎭 Drama Genres · 드라마 장르</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">K-Drama spans far beyond romance. From epic historical costume dramas to brutal revenge thrillers, Korean television has perfected every genre. Each genre carries its own vocabulary, character archetypes, and emotional language patterns.</p>
+      <div class="kr-trans" style="margin-bottom:16px;">K-드라마는 로맨스를 훨씬 넘어섭니다. 웅장한 사극부터 치열한 복수 스릴러까지, 한국 텔레비전은 모든 장르를 완성했습니다. 각 장르는 고유한 어휘, 인물 원형, 감정 언어 패턴을 가지고 있습니다.</div>
+      <div class="genre-grid">
+        <div class="genre-card">
+          <span class="genre-icon">💕</span>
+          <div class="genre-name">Romance <span class="genre-name-kr">로맨스 <button class="hangul-sound-btn" onclick="speakKorean('로맨스')" aria-label="듣기">🔊</button></span></div>
+          <div class="genre-desc">The backbone of K-Drama. Slow-burn attraction, misunderstandings, and an emotionally satisfying confession are the formula. Often paired with another genre (fantasy romance, medical romance, office romance).</div>
+          <div class="kr-trans">K-드라마의 근간입니다. 느린 전개의 끌림, 오해, 감동적인 고백이 공식입니다. 다른 장르와 결합되는 경우가 많습니다(판타지 로맨스, 의학 로맨스, 직장 로맨스).</div>
+          <div class="genre-artists">Notable: 사랑의 불시착, 도깨비, 별에서 온 그대</div>
+        </div>
+        <div class="genre-card">
+          <span class="genre-icon">👑</span>
+          <div class="genre-name">Historical / Sageuk <span class="genre-name-kr">사극 <button class="hangul-sound-btn" onclick="speakKorean('사극')" aria-label="듣기">🔊</button></span></div>
+          <div class="genre-desc">Set in Joseon Dynasty (1392–1897) or earlier kingdoms. Features elaborate costumes, palace politics, and formal Korean speech (존댓말). One of Korea's most exported genres — audiences worldwide love the epic scale.</div>
+          <div class="kr-trans">조선 시대(1392~1897) 또는 그 이전 왕조를 배경으로 합니다. 정교한 의상, 궁중 정치, 격식체 한국어(존댓말)가 특징입니다. 한국에서 가장 많이 수출되는 장르 중 하나로 전 세계 시청자가 사랑합니다.</div>
+          <div class="genre-artists">Notable: 대장금, 주몽, 미스터 션샤인, 킹덤</div>
+        </div>
+        <div class="genre-card">
+          <span class="genre-icon">🔪</span>
+          <div class="genre-name">Thriller / Mystery <span class="genre-name-kr">스릴러 / 미스터리 <button class="hangul-sound-btn" onclick="speakKorean('스릴러')" aria-label="듣기">🔊</button></span></div>
+          <div class="genre-desc">Known for tight plotting, morally complex villains, and social commentary. Often exposes dark sides of Korean society — class divide, corporate corruption, family secrets. Cliffhangers are especially brutal in this genre.</div>
+          <div class="kr-trans">탄탄한 구성, 도덕적으로 복잡한 악당, 사회 비판으로 유명합니다. 계층 격차, 기업 부패, 가족의 비밀 등 한국 사회의 어두운 면을 자주 드러냅니다. 이 장르의 클리프행어는 특히 잔인합니다.</div>
+          <div class="genre-artists">Notable: 오징어 게임, 빈센조, 더 글로리, 비밀의 숲</div>
+        </div>
+        <div class="genre-card">
+          <span class="genre-icon">✨</span>
+          <div class="genre-name">Fantasy <span class="genre-name-kr">판타지 <button class="hangul-sound-btn" onclick="speakKorean('판타지')" aria-label="듣기">🔊</button></span></div>
+          <div class="genre-desc">Combines supernatural elements with romance and emotion. Gods, goblins, time travelers, and immortals fall in love with humans. Fantasy dramas often have the most iconic OSTs and visual storytelling in the entire genre.</div>
+          <div class="kr-trans">초자연적 요소를 로맨스와 감동과 결합합니다. 신, 도깨비, 시간 여행자, 불사의 존재가 인간과 사랑에 빠집니다. 판타지 드라마는 종종 장르 내에서 가장 상징적인 OST와 시각적 스토리텔링을 가집니다.</div>
+          <div class="genre-artists">Notable: 도깨비, 별에서 온 그대, 호텔 델루나, 무빙</div>
+        </div>
+        <div class="genre-card">
+          <span class="genre-icon">🏥</span>
+          <div class="genre-name">Medical Drama <span class="genre-name-kr">의학 드라마 <button class="hangul-sound-btn" onclick="speakKorean('의학 드라마')" aria-label="듣기">🔊</button></span></div>
+          <div class="genre-desc">Korean medical dramas blend high-stakes surgery scenes with office romance and ethical dilemmas. Also great for learning medical and formal Korean vocabulary in context. Hospital settings allow natural speech level mixing.</div>
+          <div class="kr-trans">한국 의학 드라마는 긴박한 수술 장면을 직장 로맨스, 윤리적 딜레마와 혼합합니다. 의학 및 격식체 한국어 어휘를 맥락 속에서 배우기에도 좋습니다. 병원 환경은 자연스러운 말투 혼합을 가능하게 합니다.</div>
+          <div class="genre-artists">Notable: 슬기로운 의사생활, 낭만닥터 김사부, 뷰티 인사이드</div>
+        </div>
+        <div class="genre-card">
+          <span class="genre-icon">⚖️</span>
+          <div class="genre-name">Legal / Crime Drama <span class="genre-name-kr">법정 / 범죄 드라마 <button class="hangul-sound-btn" onclick="speakKorean('법정 드라마')" aria-label="듣기">🔊</button></span></div>
+          <div class="genre-desc">Lawyers, prosecutors, and detectives navigating a justice system that often favors the powerful. Korean legal dramas frequently target corruption and social inequality — making them both entertaining and politically resonant.</div>
+          <div class="kr-trans">강자에게 유리한 사법 시스템을 헤쳐나가는 변호사, 검사, 형사들의 이야기입니다. 한국 법정 드라마는 자주 부패와 사회적 불평등을 다루어 오락과 정치적 공감을 동시에 제공합니다.</div>
+          <div class="genre-artists">Notable: 빈센조, 이상한 변호사 우영우, 비밀의 숲, 악의 꽃</div>
+        </div>
+        <div class="genre-card">
+          <span class="genre-icon">👨‍👩‍👧</span>
+          <div class="genre-name">Family Drama <span class="genre-name-kr">가족 드라마 <button class="hangul-sound-btn" onclick="speakKorean('가족 드라마')" aria-label="듣기">🔊</button></span></div>
+          <div class="genre-desc">The oldest and most consistently popular K-Drama genre. Multi-generational stories about family conflict, inheritance, marriage, and reconciliation. The best examples of natural Korean speech — especially polite speech between family members of different ages.</div>
+          <div class="kr-trans">가장 오래되고 꾸준히 인기 있는 K-드라마 장르입니다. 가족 갈등, 상속, 결혼, 화해에 관한 다세대 이야기입니다. 특히 연령차가 있는 가족 구성원 간의 공손한 말투 등 자연스러운 한국어의 최고 예시를 보여줍니다.</div>
+          <div class="genre-artists">Notable: 응답하라 1988, 스카이 캐슬, 나의 아저씨</div>
+        </div>
+        <div class="genre-card">
+          <span class="genre-icon">🎒</span>
+          <div class="genre-name">Youth / Coming-of-Age <span class="genre-name-kr">청춘 드라마 <button class="hangul-sound-btn" onclick="speakKorean('청춘 드라마')" aria-label="듣기">🔊</button></span></div>
+          <div class="genre-desc">School settings, first loves, college entrance exams, and the pressures of Korean youth culture. Excellent for beginners — the vocabulary is everyday and relatable. Characters speak natural 반말 (casual speech) among peers.</div>
+          <div class="kr-trans">학교를 배경으로 첫사랑, 대학 입시, 한국 청소년 문화의 압박을 다룹니다. 일상적이고 공감 가는 어휘로 초급 학습자에게 훌륭합니다. 등장인물들이 또래 사이에서 자연스러운 반말을 사용합니다.</div>
+          <div class="genre-artists">Notable: 응답하라 1988, 학교 2015, 지금 우리 학교는</div>
+        </div>
+      </div>
+
+      <!-- MUST-WATCH DRAMAS -->
+      <div class="culture-sub-heading" id="kdrama-dramas">🎭 Must-Watch K-Dramas · 필수 드라마</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">These dramas defined K-Drama history, broke viewership records, or represent the best entry points for Korean learners. Each one teaches different vocabulary, speech styles, and cultural context.</p>
+      <div class="kr-trans" style="margin-bottom:16px;">이 드라마들은 K-드라마 역사를 정의하고 시청률 기록을 경신했거나, 한국어 학습자에게 최고의 진입점을 제공합니다. 각 드라마는 서로 다른 어휘, 말투, 문화적 맥락을 가르쳐줍니다.</div>
+      <div class="drama-list">
+        <div class="drama-item">
+          <div class="drama-num">1</div>
+          <div class="drama-info">
+            <div class="drama-title">Crash Landing on You <button class="hangul-sound-btn" onclick="speakKorean('사랑의 불시착')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">사랑의 불시착</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 愛の不時着</div>
+            <div class="drama-desc">A South Korean heiress paragliding accident crash-lands her in North Korea, where she falls for a military officer. One of the highest-rated K-dramas of all time. Excellent for hearing both South and North Korean speech differences.</div>
+            <div class="kr-trans">패러글라이딩 사고로 북한에 불시착한 한국 재벌 상속녀가 군인과 사랑에 빠집니다. 역대 최고 시청률 K-드라마 중 하나입니다. 남북한 말투 차이를 비교하며 듣기에 훌륭합니다.</div>
+            <div class="drama-tags"><span class="tag tag-beginner">Romance</span><span class="tag tag-culture">Netflix</span><span class="tag tag-beginner">Best for Learners</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">2</div>
+          <div class="drama-info">
+            <div class="drama-title">Squid Game <button class="hangul-sound-btn" onclick="speakKorean('오징어 게임')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">오징어 게임</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 イカゲーム</div>
+            <div class="drama-desc">Debt-ridden contestants play deadly children's games for ₩45.6 billion. Netflix's most-watched series ever. Teaches raw, colloquial, working-class Korean alongside sharp social commentary on Korea's wealth gap.</div>
+            <div class="kr-trans">빚에 시달리는 참가자들이 456억 원을 위해 목숨을 건 어린이 게임을 합니다. 넷플릭스 역대 최다 시청 시리즈입니다. 한국의 빈부격차에 대한 사회 비판과 함께 날 것의 구어체 서민 한국어를 가르쳐줍니다.</div>
+            <div class="drama-tags"><span class="tag tag-advanced">Thriller</span><span class="tag tag-culture">Netflix</span><span class="tag tag-advanced">Colloquial Korean</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">3</div>
+          <div class="drama-info">
+            <div class="drama-title">Goblin <button class="hangul-sound-btn" onclick="speakKorean('도깨비')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">도깨비 (쓸쓸하고 찬란하神)</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 トッケビ〜君がくれた愛しい日々〜</div>
+            <div class="drama-desc">An immortal goblin seeks a human bride to end his eternal life. Stunning OST and breathtaking cinematography shot in Quebec. Gong Yoo's delivery is a masterclass in formal-to-casual Korean speech transitions.</div>
+            <div class="kr-trans">영생을 끝내기 위해 인간 신부를 찾는 불사의 도깨비 이야기입니다. 아름다운 OST와 캐나다 퀘벡의 숨막히는 영상미가 돋보입니다. 공유의 연기는 격식체에서 비격식체로의 한국어 말투 전환의 걸작입니다.</div>
+            <div class="drama-tags"><span class="tag tag-intermediate">Fantasy</span><span class="tag tag-culture">Classic</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">4</div>
+          <div class="drama-info">
+            <div class="drama-title">Reply 1988 <button class="hangul-sound-btn" onclick="speakKorean('응답하라 1988')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">응답하라 1988</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 恋のスケッチ〜応答せよ1988〜</div>
+            <div class="drama-desc">Five families on the same alley in Dobong-gu, Seoul in 1988. The most beloved K-Drama among Koreans themselves — a nostalgic portrait of neighborhood culture and family warmth. Best drama for learning natural, everyday Korean speech.</div>
+            <div class="kr-trans">1988년 서울 도봉구 한 골목에 사는 다섯 가족의 이야기입니다. 한국인 스스로가 가장 사랑하는 K-드라마로 동네 문화와 가족의 따뜻함을 그립니다. 자연스러운 일상 한국어를 배우기에 최고의 드라마입니다.</div>
+            <div class="drama-tags"><span class="tag tag-beginner">Family</span><span class="tag tag-culture">Classic</span><span class="tag tag-beginner">Best for Learners</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">5</div>
+          <div class="drama-info">
+            <div class="drama-title">My Love from the Star <button class="hangul-sound-btn" onclick="speakKorean('별에서 온 그대')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">별에서 온 그대</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 星から来たあなた</div>
+            <div class="drama-desc">An alien who landed on Earth during the Joseon era falls in love with a top actress 400 years later. Sparked an enormous Korean drama boom in China — the "치맥" (chicken + beer) scene became a food export phenomenon.</div>
+            <div class="kr-trans">조선 시대에 지구에 착륙한 외계인이 400년 후 최고의 여배우와 사랑에 빠집니다. 중국에서 엄청난 한국 드라마 열풍을 일으켰으며 '치맥' 장면은 식품 수출 현상이 됐습니다.</div>
+            <div class="drama-tags"><span class="tag tag-intermediate">Romance</span><span class="tag tag-culture">Classic</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">6</div>
+          <div class="drama-info">
+            <div class="drama-title">Descendants of the Sun <button class="hangul-sound-btn" onclick="speakKorean('태양의 후예')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">태양의 후예</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 太陽の末裔 Love Under The Sun</div>
+            <div class="drama-desc">A soldier and a doctor fall in love amid conflict zones and humanitarian crises. Sparked the Korean Wave across China and Southeast Asia. Taught global audiences Korean military courtesy speech — 충성! (loyalty!).</div>
+            <div class="kr-trans">분쟁 지역과 인도주의적 위기 속에서 군인과 의사가 사랑에 빠집니다. 중국과 동남아시아 전역의 한류를 촉발했습니다. 전 세계 시청자들에게 한국 군대 경어를 가르쳤습니다 — 충성!</div>
+            <div class="drama-tags"><span class="tag tag-intermediate">Romance</span><span class="tag tag-culture">Classic</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">7</div>
+          <div class="drama-info">
+            <div class="drama-title">It's Okay to Not Be Okay <button class="hangul-sound-btn" onclick="speakKorean('사이코지만 괜찮아')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">사이코지만 괜찮아</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 サイコだけど大丈夫</div>
+            <div class="drama-desc">A psychiatric ward caregiver and a children's book author with antisocial personality disorder heal each other. A rare drama openly discussing mental health in Korean society. Rich, poetic Korean vocabulary throughout.</div>
+            <div class="kr-trans">정신병원 보호사와 반사회적 성격장애를 가진 동화 작가가 서로를 치유합니다. 한국 사회에서 정신 건강을 공개적으로 다루는 드문 드라마입니다. 풍부하고 시적인 한국어 어휘가 가득합니다.</div>
+            <div class="drama-tags"><span class="tag tag-intermediate">Melodrama</span><span class="tag tag-culture">Netflix</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">8</div>
+          <div class="drama-info">
+            <div class="drama-title">Vincenzo <button class="hangul-sound-btn" onclick="speakKorean('빈센조')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">빈센조</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 ヴィンチェンツォ</div>
+            <div class="drama-desc">A Korean-Italian mafia consigliere returns to Korea and battles corrupt conglomerates. Teaches Korean legal vocabulary, corporate speech, and sharp dark humor. 송중기's Italian-Korean code-switching is iconic.</div>
+            <div class="kr-trans">한국계 이탈리아 마피아 법률 고문이 한국으로 돌아와 부패한 대기업과 싸웁니다. 한국 법률 어휘, 기업 말투, 날카로운 블랙 유머를 가르쳐줍니다. 송중기의 이탈리아어-한국어 코드 스위칭은 전설적입니다.</div>
+            <div class="drama-tags"><span class="tag tag-advanced">Crime</span><span class="tag tag-culture">Netflix</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">9</div>
+          <div class="drama-info">
+            <div class="drama-title">The Glory <button class="hangul-sound-btn" onclick="speakKorean('더 글로리')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">더 글로리</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 ザ・グローリー〜輝かしき復讐〜</div>
+            <div class="drama-desc">A woman who suffered brutal school bullying orchestrates a meticulous 20-year revenge plan. One of the most-watched K-Dramas on Netflix globally in 2023. Teaches formal, cold, calculated Korean — and social dynamics vocabulary.</div>
+            <div class="kr-trans">학창 시절 극심한 학교폭력을 당한 여성이 20년에 걸친 치밀한 복수를 계획합니다. 2023년 넷플릭스 전 세계에서 가장 많이 시청된 K-드라마 중 하나입니다. 격식적이고 냉정하고 계산적인 한국어와 사회 역학 어휘를 가르쳐줍니다.</div>
+            <div class="drama-tags"><span class="tag tag-advanced">Thriller</span><span class="tag tag-culture">Netflix</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">10</div>
+          <div class="drama-info">
+            <div class="drama-title">Extraordinary Attorney Woo <button class="hangul-sound-btn" onclick="speakKorean('이상한 변호사 우영우')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">이상한 변호사 우영우</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 ウ・ヨンウ弁護士は天才肌</div>
+            <div class="drama-desc">A brilliant autistic lawyer navigates the Korean legal system and human connection. Became a global phenomenon — #2 on Netflix worldwide in 2022. Features exceptionally clear, precise Korean speech ideal for intermediate learners.</div>
+            <div class="kr-trans">자폐 스펙트럼을 가진 천재 변호사가 한국 법조계와 인간관계를 헤쳐나갑니다. 2022년 넷플릭스 전 세계 2위를 기록한 글로벌 현상이 됐습니다. 중급 학습자에게 이상적인 매우 명확하고 정확한 한국어 말하기가 특징입니다.</div>
+            <div class="drama-tags"><span class="tag tag-intermediate">Legal</span><span class="tag tag-culture">Netflix</span><span class="tag tag-intermediate">Best for Learners</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">11</div>
+          <div class="drama-info">
+            <div class="drama-title">Hospital Playlist <button class="hangul-sound-btn" onclick="speakKorean('슬기로운 의사생활')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">슬기로운 의사생활</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 賢い医師生活</div>
+            <div class="drama-desc">Five doctors who've been friends since medical school navigate hospital life, friendship, and love. Warm ensemble storytelling with one of the best soundtracks in K-Drama history. Excellent for learning Korean medical vocabulary and friendship speech patterns.</div>
+            <div class="kr-trans">의대 동기인 다섯 의사가 병원 생활, 우정, 사랑을 헤쳐나갑니다. K-드라마 역사상 최고의 사운드트랙 중 하나를 갖춘 따뜻한 앙상블 스토리텔링입니다. 한국 의학 어휘와 우정 언어 패턴을 배우기에 훌륭합니다.</div>
+            <div class="drama-tags"><span class="tag tag-intermediate">Medical</span><span class="tag tag-culture">tvN</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">12</div>
+          <div class="drama-info">
+            <div class="drama-title">Kingdom <button class="hangul-sound-btn" onclick="speakKorean('킹덤')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">킹덤</div>
+            <div class="drama-kor-ja ja-block">🇯🇵 キングダム</div>
+            <div class="drama-desc">A zombie plague during the Joseon Dynasty threatens the kingdom as the Crown Prince races to uncover a conspiracy. Netflix's first Korean original series. Combines historical Korean (사극체) with modern production values.</div>
+            <div class="kr-trans">조선 시대 좀비 역병이 왕국을 위협하는 가운데 세자가 음모를 밝히기 위해 달립니다. 넷플릭스 최초의 한국 오리지널 시리즈입니다. 사극체 한국어를 현대적 제작 수준과 결합했습니다.</div>
+            <div class="drama-tags"><span class="tag tag-advanced">Historical</span><span class="tag tag-culture">Netflix</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- K-DRAMA TROPES -->
+      <div class="culture-sub-heading" id="kdrama-tropes">🎯 K-Drama Tropes &amp; Clichés · 드라마 클리셰</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">K-Drama viewers around the world have come to love — and lovingly mock — the genre's recurring storytelling devices. Knowing these tropes helps you predict what's coming, laugh along with Korean fans, and learn the specific vocabulary each one brings.</p>
+      <div class="kr-trans" style="margin-bottom:16px;">전 세계 K-드라마 팬들은 장르의 반복적인 스토리텔링 장치를 사랑하고 또 애정 어린 눈으로 비웃기도 합니다. 이 클리셰를 알면 다음 장면을 예측하고 한국 팬들과 함께 웃고 특정 어휘를 배울 수 있습니다.</div>
+      <div class="gen-grid">
+        <div class="gen-card">
+          <div class="gen-bg-num">💰</div>
+          <div class="gen-label">Trope · 클리셰</div>
+          <div class="gen-name">재벌남 <span class="gen-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('재벌남')" aria-label="듣기">🔊</button></span></div>
+          <div class="gen-years">Chaebol Male Lead</div>
+          <div class="gen-desc">The arrogant but secretly warm CEO or heir of a massive Korean conglomerate who falls for an ordinary woman. His cold exterior melts slowly across 14 episodes. Often drives a black Porsche, lives in a penthouse, and has an evil mother.</div>
+          <div class="kr-trans">거대한 한국 재벌 기업의 오만하지만 속으로는 따뜻한 CEO 또는 상속인이 평범한 여성과 사랑에 빠집니다. 차가운 외면이 14회에 걸쳐 천천히 녹습니다. 자주 검은 포르쉐를 타고 펜트하우스에 살며 악한 어머니가 있습니다.</div>
+        </div>
+        <div class="gen-card">
+          <div class="gen-bg-num">🤱</div>
+          <div class="gen-label">Trope · 클리셰</div>
+          <div class="gen-name">출생의 비밀 <span class="gen-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('출생의 비밀')" aria-label="듣기">🔊</button></span></div>
+          <div class="gen-years">Birth Secret</div>
+          <div class="gen-desc">A character discovers they are not who they thought — adopted, secretly royalty, or the lost child of a villain. This revelation always arrives at a dramatically convenient moment, usually just as the romance was going well.</div>
+          <div class="kr-trans">한 인물이 자신이 생각했던 사람이 아님을 발견합니다 — 입양, 비밀 왕족, 또는 악당의 잃어버린 자녀. 이 폭로는 항상 극적으로 편리한 순간, 보통 로맨스가 잘 풀리던 바로 그때 옵니다.</div>
+        </div>
+        <div class="gen-card">
+          <div class="gen-bg-num">🧠</div>
+          <div class="gen-label">Trope · 클리셰</div>
+          <div class="gen-name">기억상실 <span class="gen-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('기억상실')" aria-label="듣기">🔊</button></span></div>
+          <div class="gen-years">Amnesia</div>
+          <div class="gen-desc">A character loses all memory of the love story — often triggered by a car accident, trauma, or magical curse. Forces the couple to fall in love all over again. Teaches vocabulary for hospitals, emotions of loss, and gentle reintroduction scenes.</div>
+          <div class="kr-trans">교통사고, 트라우마, 또는 마법의 저주로 한 인물이 사랑 이야기에 대한 모든 기억을 잃습니다. 커플이 다시 사랑에 빠지도록 강요합니다. 병원 어휘, 상실의 감정, 부드러운 재소개 장면의 어휘를 가르칩니다.</div>
+        </div>
+        <div class="gen-card">
+          <div class="gen-bg-num">☔</div>
+          <div class="gen-label">Trope · 클리셰</div>
+          <div class="gen-name">우산 씬 <span class="gen-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('우산 씬')" aria-label="듣기">🔊</button></span></div>
+          <div class="gen-years">Umbrella Scene</div>
+          <div class="gen-desc">Two characters share an umbrella in the rain — one covers the other, getting wet themselves. This selfless act signals romantic interest more clearly than any words. If the male lead gets wet protecting the female lead, viewers know it's serious.</div>
+          <div class="kr-trans">두 인물이 빗속에서 우산을 나눕니다 — 한 명이 다른 명을 가려주고 자신은 젖습니다. 이 이타적인 행동은 어떤 말보다 명확하게 로맨틱한 관심을 신호합니다. 남주가 여주를 보호하다 젖는다면 시청자들은 진지한 관계임을 압니다.</div>
+        </div>
+        <div class="gen-card">
+          <div class="gen-bg-num">👐</div>
+          <div class="gen-label">Trope · 클리셰</div>
+          <div class="gen-name">손목잡기 <span class="gen-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('손목잡기')" aria-label="듣기">🔊</button></span></div>
+          <div class="gen-years">Wrist Grab</div>
+          <div class="gen-desc">The lead grabs the other character's wrist and pulls them away from danger or toward a confession. A classic K-Drama substitute for handholding — more dramatic, more urgent. Key lines for these scenes: 잠깐만요! (Wait!) and 어디 가요? (Where are you going?)</div>
+          <div class="kr-trans">주인공이 상대방의 손목을 잡고 위험에서 멀어지거나 고백으로 끌어당깁니다. 손을 잡는 것의 고전적인 K-드라마 대체 행동 — 더 극적이고 더 긴박합니다. 이 장면의 핵심 대사: 잠깐만요!(Wait!)와 어디 가요?(Where are you going?)</div>
+        </div>
+        <div class="gen-card">
+          <div class="gen-bg-num">💔</div>
+          <div class="gen-label">Trope · 클리셰</div>
+          <div class="gen-name">오해와 화해 <span class="gen-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('오해와 화해')" aria-label="듣기">🔊</button></span></div>
+          <div class="gen-years">Misunderstanding &amp; Reconciliation</div>
+          <div class="gen-desc">A misunderstanding tears the couple apart near the finale. They spend 2 episodes in cold silence before reconciling. Key Korean for the reunion scene: 미안해 (I'm sorry) + 보고 싶었어 (I missed you).</div>
+          <div class="kr-trans">오해가 피날레 직전에 커플을 갈라놓습니다. 화해 전 2회에 걸쳐 냉랭한 침묵이 흐릅니다. 재회 장면의 한국어 표현: 미안해(미안해) + 보고 싶었어(보고 싶었어).</div>
+        </div>
+        <div class="gen-card">
+          <div class="gen-bg-num">😤</div>
+          <div class="gen-label">Trope · 클리셰</div>
+          <div class="gen-name">시어머니 갈등 <span class="gen-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('시어머니 갈등')" aria-label="듣기">🔊</button></span></div>
+          <div class="gen-years">Mother-in-Law Conflict</div>
+          <div class="gen-desc">The male lead's mother opposes the relationship because the female lead is from a lower social class. This conflict drives half of all K-Drama plots. Great for learning hierarchical Korean speech — formal vs informal language signaling respect, defiance, or submission.</div>
+          <div class="kr-trans">여주의 낮은 사회적 계층을 이유로 남주의 어머니(시어머니)가 관계에 반대합니다. 이 갈등이 모든 K-드라마 플롯의 절반을 이끕니다. 위계적인 한국어 말하기를 배우기에 좋습니다 — 존중, 반항, 복종을 표현하는 격식체와 비격식체의 사용.</div>
+        </div>
+        <div class="gen-card">
+          <div class="gen-bg-num">🏃</div>
+          <div class="gen-label">Trope · 클리셰</div>
+          <div class="gen-name">공항 러닝 씬 <span class="gen-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('공항 러닝 씬')" aria-label="듣기">🔊</button></span></div>
+          <div class="gen-years">Airport Running Scene</div>
+          <div class="gen-desc">A character races through Incheon Airport to stop their love from leaving Korea forever — barely catching them at the gate. Classic K-Drama finale material. Key vocabulary: 가지 마세요! (Don't go!), 사랑해! (I love you!), 잠깐만요! (Wait!)</div>
+          <div class="kr-trans">한 인물이 인천공항을 달려 자신의 사랑이 한국을 영원히 떠나는 것을 막습니다 — 게이트에서 간신히 붙잡습니다. 고전적인 한국 드라마 피날레 소재입니다. 핵심 어휘: 가지 마세요!, 사랑해!, 잠깐만요!</div>
+        </div>
+      </div>
+
+      <!-- SPEECH LEVELS -->
+      <div class="culture-sub-heading" id="kdrama-speech">💡 Speech Levels in K-Dramas · 드라마 속 말투</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">Korean has multiple speech levels (경어법). K-Dramas are a living classroom for seeing how speech changes based on relationship, hierarchy, and emotional state. When a character switches speech levels, it is always a storytelling moment.</p>
+      <div class="kr-trans" style="margin-bottom:16px;">한국어에는 여러 경어법이 있습니다. K-드라마는 관계, 위계, 감정 상태에 따라 말투가 어떻게 변하는지 볼 수 있는 살아있는 교실입니다. 인물이 말투를 바꾸는 것은 항상 스토리텔링의 순간입니다.</div>
+      <div class="show-list">
+        <div class="show-item">
+          <div class="show-thumb" style="background:rgba(0,52,120,0.2);">🎩</div>
+          <div class="show-info">
+            <div class="show-name">합쇼체 <span class="speech-badge formal">Formal</span><span class="show-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('합쇼체')" aria-label="듣기">🔊</button></span></div>
+            <div class="show-desc">The most formal speech level. Used in news broadcasts, military, official settings, and when addressing strangers with maximum respect. Example: <span style="font-family:var(--font-korean)">어디 가십니까?</span> (Where are you going? — very formal). Used heavily in 사극 (historical dramas).</div>
+            <div class="kr-trans">가장 격식 있는 말투입니다. 뉴스 방송, 군대, 공식 자리, 그리고 낯선 사람을 최대한 존중하여 대할 때 사용됩니다. 예: 어디 가십니까? — 사극에서 많이 사용됩니다.</div>
+          </div>
+        </div>
+        <div class="show-item">
+          <div class="show-thumb" style="background:rgba(16,185,129,0.15);">🙂</div>
+          <div class="show-info">
+            <div class="show-name">해요체 <span class="speech-badge polite">Polite</span><span class="show-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('해요체')" aria-label="듣기">🔊</button></span></div>
+            <div class="show-desc">The most common drama speech level. Polite but not stiff — used between coworkers, acquaintances, and characters who haven't yet become close. Ends in -아요/어요/해요. Example: <span style="font-family:var(--font-korean)">괜찮아요?</span> (Are you okay?). Beginners should learn this level first.</div>
+            <div class="kr-trans">가장 일반적인 드라마 말투입니다. 공손하지만 딱딱하지 않으며, 아직 친해지지 않은 직장 동료, 지인 사이에 사용됩니다. -아요/어요/해요로 끝납니다. 예: 괜찮아요? 초급 학습자는 이 말투를 먼저 배워야 합니다.</div>
+          </div>
+        </div>
+        <div class="show-item">
+          <div class="show-thumb" style="background:rgba(232,0,61,0.12);">😊</div>
+          <div class="show-info">
+            <div class="show-name">해체 / 반말 <span class="speech-badge casual">Casual</span><span class="show-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('반말')" aria-label="듣기">🔊</button></span></div>
+            <div class="show-desc">Casual speech used among close friends, couples, or older speaking to younger. In dramas, characters switching from 해요체 to 반말 is a major romantic milestone — signaling "we're close now." Example: <span style="font-family:var(--font-korean)">괜찮아?</span> — shorter, warmer, more intimate.</div>
+            <div class="kr-trans">친한 친구, 연인, 또는 연장자가 연하에게 사용하는 비격식체입니다. 드라마에서 인물이 해요체에서 반말로 전환하는 것은 중요한 로맨틱 이정표입니다 — "우리 이제 친해졌어"를 신호합니다. 예: 괜찮아? — 더 짧고 더 친밀합니다.</div>
+          </div>
+        </div>
+        <div class="show-item">
+          <div class="show-thumb" style="background:rgba(255,215,0,0.1);">⚡</div>
+          <div class="show-info">
+            <div class="show-name">Speech Level Switching · 말 놓기 <span class="show-name-kr"><button class="hangul-sound-btn" onclick="speakKorean('우리 말 놓을까요')" aria-label="듣기">🔊</button></span></div>
+            <div class="show-desc">When a drama couple switches from 해요체 to 반말, it is a cinematic event. Often preceded by: <span style="font-family:var(--font-korean)">우리 말 놓을까요?</span> (Shall we drop formal speech?) — meaning "shall we become closer?" The answer yes signals a relationship turning point.</div>
+            <div class="kr-trans">드라마 커플이 해요체에서 반말로 전환하는 것은 영화적 사건입니다. 흔히 공식적인 요청이 선행됩니다: 우리 말 놓을까요? — "우리 더 친해질까요?"를 의미합니다. 긍정적인 대답은 관계의 전환점을 신호합니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grammar-box">
+        <div class="grammar-box-title">📘 Speech Level Conversion — Same Sentence, Four Registers</div>
+        <div class="grammar-row">
+          <div class="grammar-pattern" style="font-size:0.75rem;">합쇼체</div>
+          <div class="grammar-meaning"><b>가십니까?</b> — "Are you leaving?" (formal / military / news)</div>
+        </div>
+        <div class="grammar-row">
+          <div class="grammar-pattern" style="font-size:0.75rem;">해요체</div>
+          <div class="grammar-meaning"><b>가세요? / 가요?</b> — "Are you leaving?" (polite, everyday)</div>
+        </div>
+        <div class="grammar-row">
+          <div class="grammar-pattern" style="font-size:0.75rem;">해체</div>
+          <div class="grammar-meaning"><b>가?</b> — "You leaving?" (casual, friends / couples)</div>
+        </div>
+        <div class="grammar-row">
+          <div class="grammar-pattern" style="font-size:0.75rem;">해라체</div>
+          <div class="grammar-meaning"><b>가라!</b> — "Get out!" / "Go!" (commanding, angry — drama villain territory)</div>
+        </div>
+      </div>
+
+      <!-- VOCABULARY -->
+      <div class="culture-sub-heading" id="kdrama-vocab">📖 Essential Drama Vocabulary · 드라마 핵심 어휘</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">K-Dramas are one of the best ways to absorb natural Korean. The vocabulary below covers the story terms, character names, and emotional language you'll hear in almost every drama.</p>
+      <div class="kr-trans" style="margin-bottom:16px;">K-드라마는 자연스러운 한국어를 흡수하는 최고의 방법 중 하나입니다. 아래 어휘는 거의 모든 드라마에서 들을 수 있는 이야기 용어, 인물 명칭, 감정 언어를 다룹니다.</div>
+
+      <div class="vocab-cat-label">📺 이야기 · Story &amp; Plot</div>
+      <table class="vocab-table">
+        <thead><tr><th>Korean</th><th>Translation · 번역</th><th>🔊</th></tr></thead>
+        <tbody>
+          <tr><td class="kor-cell">드라마<span class="rom-text">deu-ra-ma<span class="ja-kana"> ドラマ</span></span></td><td class="eng-cell"><span class="kor-trans">TV 드라마 시리즈</span>TV drama / series</td><td><button class="hangul-sound-btn" onclick="speakKorean('드라마')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">에피소드<span class="rom-text">e-pi-so-deu<span class="ja-kana"> エピソドゥ</span></span></td><td class="eng-cell"><span class="kor-trans">드라마의 각 회차</span>Episode</td><td><button class="hangul-sound-btn" onclick="speakKorean('에피소드')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">결말<span class="rom-text">gyeol-mal<span class="ja-kana"> キョルマル</span></span></td><td class="eng-cell"><span class="kor-trans">이야기의 마지막 결론</span>Ending / conclusion</td><td><button class="hangul-sound-btn" onclick="speakKorean('결말')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">복선<span class="rom-text">bok-seon<span class="ja-kana"> ポクソン</span></span></td><td class="eng-cell"><span class="kor-trans">나중에 드러날 사건의 암시</span>Foreshadowing</td><td><button class="hangul-sound-btn" onclick="speakKorean('복선')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">반전<span class="rom-text">ban-jeon<span class="ja-kana"> バンジョン</span></span></td><td class="eng-cell"><span class="kor-trans">예상치 못한 줄거리 뒤집기</span>Plot twist / reversal</td><td><button class="hangul-sound-btn" onclick="speakKorean('반전')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">클리프행어<span class="rom-text">keullipeu-haengeo<span class="ja-kana"> クルリプヘンゴ</span></span></td><td class="eng-cell"><span class="kor-trans">긴장감 넘치는 미해결 결말</span>Cliffhanger</td><td><button class="hangul-sound-btn" onclick="speakKorean('클리프행어')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">플래시백<span class="rom-text">peul-lae-si-baek<span class="ja-kana"> プルレシベク</span></span></td><td class="eng-cell"><span class="kor-trans">과거 장면으로 돌아가는 장치</span>Flashback</td><td><button class="hangul-sound-btn" onclick="speakKorean('플래시백')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">촬영지<span class="rom-text">chwal-lyeong-ji<span class="ja-kana"> チュァルリョンジ</span></span></td><td class="eng-cell"><span class="kor-trans">드라마를 찍은 실제 장소</span>Filming location</td><td><button class="hangul-sound-btn" onclick="speakKorean('촬영지')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">OST<span class="rom-text">o-es-ti<span class="ja-kana"> オエスティ</span></span></td><td class="eng-cell"><span class="kor-trans">드라마 삽입곡 / 사운드트랙</span>Original Soundtrack (drama songs)</td><td><button class="hangul-sound-btn" onclick="speakKorean('오에스티')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">사극<span class="rom-text">sa-geuk<span class="ja-kana"> サグク</span></span></td><td class="eng-cell"><span class="kor-trans">역사 배경의 시대극</span>Historical drama</td><td><button class="hangul-sound-btn" onclick="speakKorean('사극')" aria-label="듣기">🔊</button></td></tr>
+        </tbody>
+      </table>
+
+      <div class="vocab-cat-label">👥 인물 · Characters &amp; Relationships</div>
+      <table class="vocab-table">
+        <thead><tr><th>Korean</th><th>Translation · 번역</th><th>🔊</th></tr></thead>
+        <tbody>
+          <tr><td class="kor-cell">주인공<span class="rom-text">ju-in-gong<span class="ja-kana"> チュインゴン</span></span></td><td class="eng-cell"><span class="kor-trans">이야기의 중심 인물</span>Protagonist / main character</td><td><button class="hangul-sound-btn" onclick="speakKorean('주인공')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">남주 (남자 주인공)<span class="rom-text">nam-ju<span class="ja-kana"> ナムジュ</span></span></td><td class="eng-cell"><span class="kor-trans">남자 주인공의 줄임말</span>Male lead</td><td><button class="hangul-sound-btn" onclick="speakKorean('남주')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">여주 (여자 주인공)<span class="rom-text">yeo-ju<span class="ja-kana"> ヨジュ</span></span></td><td class="eng-cell"><span class="kor-trans">여자 주인공의 줄임말</span>Female lead</td><td><button class="hangul-sound-btn" onclick="speakKorean('여주')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">조연<span class="rom-text">jo-yeon<span class="ja-kana"> チョヨン</span></span></td><td class="eng-cell"><span class="kor-trans">주연을 돕는 보조 역할</span>Supporting actor / side character</td><td><button class="hangul-sound-btn" onclick="speakKorean('조연')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">악역<span class="rom-text">ak-yeok<span class="ja-kana"> アギョク</span></span></td><td class="eng-cell"><span class="kor-trans">나쁜 역할을 맡은 인물</span>Villain / antagonist role</td><td><button class="hangul-sound-btn" onclick="speakKorean('악역')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">재벌<span class="rom-text">jae-beol<span class="ja-kana"> チェボル</span></span></td><td class="eng-cell"><span class="kor-trans">거대 기업 소유 부유층 가문</span>Chaebol / wealthy conglomerate heir</td><td><button class="hangul-sound-btn" onclick="speakKorean('재벌')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">삼각관계<span class="rom-text">sam-gak-gwan-gye<span class="ja-kana"> サムガクグァンゲ</span></span></td><td class="eng-cell"><span class="kor-trans">세 사람 사이의 복잡한 사랑</span>Love triangle</td><td><button class="hangul-sound-btn" onclick="speakKorean('삼각관계')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">첫사랑<span class="rom-text">cheot-sa-rang<span class="ja-kana"> チョッサラン</span></span></td><td class="eng-cell"><span class="kor-trans">처음으로 느끼는 사랑의 감정</span>First love</td><td><button class="hangul-sound-btn" onclick="speakKorean('첫사랑')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">짝사랑<span class="rom-text">jjak-sa-rang<span class="ja-kana"> チャクサラン</span></span></td><td class="eng-cell"><span class="kor-trans">혼자서만 하는 이루어지지 않는 사랑</span>One-sided / unrequited love</td><td><button class="hangul-sound-btn" onclick="speakKorean('짝사랑')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">운명<span class="rom-text">un-myeong<span class="ja-kana"> ウンミョン</span></span></td><td class="eng-cell"><span class="kor-trans">미리 정해진 삶의 흐름</span>Fate / destiny</td><td><button class="hangul-sound-btn" onclick="speakKorean('운명')" aria-label="듣기">🔊</button></td></tr>
+        </tbody>
+      </table>
+
+      <div class="vocab-cat-label">💗 감정 · Emotions &amp; Feelings</div>
+      <table class="vocab-table">
+        <thead><tr><th>Korean</th><th>Translation · 번역</th><th>🔊</th></tr></thead>
+        <tbody>
+          <tr><td class="kor-cell">설레다<span class="rom-text">seol-le-da<span class="ja-kana"> ソルレダ</span></span></td><td class="eng-cell"><span class="kor-trans">두근거리는 기대와 설렘의 감정</span>Heart flutters with excitement (no direct English equivalent)</td><td><button class="hangul-sound-btn" onclick="speakKorean('설레다')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">두근두근<span class="rom-text">du-geun-du-geun<span class="ja-kana"> トゥグントゥグン</span></span></td><td class="eng-cell"><span class="kor-trans">빠르게 뛰는 심장 소리 표현</span>Thump-thump (heartbeat sound — nervous or excited)</td><td><button class="hangul-sound-btn" onclick="speakKorean('두근두근')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">눈물<span class="rom-text">nun-mul<span class="ja-kana"> ヌンムル</span></span></td><td class="eng-cell"><span class="kor-trans">슬프거나 감동받을 때 흘리는 것</span>Tears / crying</td><td><button class="hangul-sound-btn" onclick="speakKorean('눈물')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">그리움<span class="rom-text">geu-ri-um<span class="ja-kana"> クリウム</span></span></td><td class="eng-cell"><span class="kor-trans">보고 싶은 사람이나 것에 대한 사무침</span>Longing / deep yearning for someone</td><td><button class="hangul-sound-btn" onclick="speakKorean('그리움')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">오해<span class="rom-text">o-hae<span class="ja-kana"> オヘ</span></span></td><td class="eng-cell"><span class="kor-trans">잘못 이해하는 것</span>Misunderstanding</td><td><button class="hangul-sound-btn" onclick="speakKorean('오해')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">거짓말<span class="rom-text">geo-jit-mal<span class="ja-kana"> コジンマル</span></span></td><td class="eng-cell"><span class="kor-trans">사실이 아닌 것을 말하는 것</span>Lie / deception</td><td><button class="hangul-sound-btn" onclick="speakKorean('거짓말')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">용서<span class="rom-text">yong-seo<span class="ja-kana"> ヨンソ</span></span></td><td class="eng-cell"><span class="kor-trans">잘못을 이해하고 넘어가는 것</span>Forgiveness</td><td><button class="hangul-sound-btn" onclick="speakKorean('용서')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">복수<span class="rom-text">bok-su<span class="ja-kana"> ポクス</span></span></td><td class="eng-cell"><span class="kor-trans">받은 나쁜 행동에 되갚는 것</span>Revenge</td><td><button class="hangul-sound-btn" onclick="speakKorean('복수')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">상처<span class="rom-text">sang-cheo<span class="ja-kana"> サンチョ</span></span></td><td class="eng-cell"><span class="kor-trans">마음에 남는 아픔</span>Emotional wound / hurt</td><td><button class="hangul-sound-btn" onclick="speakKorean('상처')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">치유<span class="rom-text">chi-yu<span class="ja-kana"> チユ</span></span></td><td class="eng-cell"><span class="kor-trans">상처나 아픔이 회복되는 것</span>Healing / recovery</td><td><button class="hangul-sound-btn" onclick="speakKorean('치유')" aria-label="듣기">🔊</button></td></tr>
+        </tbody>
+      </table>
+
+      <div class="grammar-box">
+        <div class="grammar-box-title">📘 Grammar Pattern: Expressing Emotions in K-Dramas</div>
+        <div class="grammar-row">
+          <div class="grammar-pattern">-고 싶다</div>
+          <div class="grammar-meaning">Want to do ~ &nbsp;|&nbsp; <b>보고 싶어</b> = "I miss you" (lit. "I want to see you") — the most iconic drama confession line</div>
+        </div>
+        <div class="grammar-row">
+          <div class="grammar-pattern">-잖아요</div>
+          <div class="grammar-meaning">You know that ~ &nbsp;|&nbsp; <b>걱정했잖아요</b> = "I was worried, you know" — adds emotional weight</div>
+        </div>
+        <div class="grammar-row">
+          <div class="grammar-pattern">-는 거야?</div>
+          <div class="grammar-meaning">Are you really ~ing? &nbsp;|&nbsp; <b>떠나는 거야?</b> = "Are you really leaving?" — shocked accusation</div>
+        </div>
+        <div class="grammar-row">
+          <div class="grammar-pattern">왜 이래</div>
+          <div class="grammar-meaning">"Why are you acting like this?" — drama staple in conflict scenes with hurt or frustration</div>
+        </div>
+      </div>
+
+      <!-- DIALOGUE PRACTICE -->
+      <div class="culture-sub-heading" id="kdrama-dialogue">💬 Dialogue Practice · 대사 연습</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">Read, listen, and shadow these drama-style conversations. Each scene uses a different speech level and emotional register — from tense first meeting to sweet confession.</p>
+      <div class="kr-trans" style="margin-bottom:16px;">드라마 스타일의 대화를 읽고 듣고 따라 말해보세요. 각 장면은 긴장된 첫 만남에서 달콤한 고백까지 서로 다른 말투와 감정적 톤을 사용합니다.</div>
+
+      <div class="dialogue-scene">
+        <div class="dialogue-scene-title">☔ 비 오는 밤에 — A rainy night (해요체 · Polite)</div>
+        <div class="dialogue-bubble">
+          <div class="dialogue-avatar">👨</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">오늘 왜 이렇게 늦었어요? <button class="hangul-sound-btn" onclick="speakKorean('오늘 왜 이렇게 늦었어요')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Oneul wae ireoke neuj-eosseoyo?<span class="ja-kana"> オヌル ウェ イロケ ヌジョッソヨ?</span></div>
+            <div class="dialogue-eng">Why are you so late today?</div>
+          </div>
+        </div>
+        <div class="dialogue-bubble right">
+          <div class="dialogue-avatar">👩</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">죄송해요. 비가 너무 많이 왔어요. <button class="hangul-sound-btn" onclick="speakKorean('죄송해요. 비가 너무 많이 왔어요')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Joesonghaeyo. Biga neomu manhi wasseoyo.<span class="ja-kana"> チェソンヘヨ。ビガ ノム マニ ワッソヨ。</span></div>
+            <div class="dialogue-eng">I'm sorry. The rain was too heavy.</div>
+          </div>
+        </div>
+        <div class="dialogue-bubble">
+          <div class="dialogue-avatar">👨</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">걱정했잖아요. <button class="hangul-sound-btn" onclick="speakKorean('걱정했잖아요')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Geokjeonghaejtjanayo.<span class="ja-kana"> コクチョンヘッチャナヨ。</span></div>
+            <div class="dialogue-eng">I was worried about you, you know.</div>
+          </div>
+        </div>
+        <div class="dialogue-bubble right">
+          <div class="dialogue-avatar">👩</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">그 말이 더 무서워요. <button class="hangul-sound-btn" onclick="speakKorean('그 말이 더 무서워요')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Geu mali deo museowo yo.<span class="ja-kana"> ク マリ ド ムソウォヨ。</span></div>
+            <div class="dialogue-eng">Those words scare me more.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialogue-scene" style="margin-top:16px;">
+        <div class="dialogue-scene-title">🏢 회사에서 첫 만남 — First meeting at the office (해요체 · Polite)</div>
+        <div class="dialogue-bubble">
+          <div class="dialogue-avatar">👩</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">안녕하세요. 오늘부터 이 팀에서 일하게 됐어요. <button class="hangul-sound-btn" onclick="speakKorean('안녕하세요. 오늘부터 이 팀에서 일하게 됐어요')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Annyeonghaseyo. Oneulbuteo i tim-eseo ilhage dwaesseoyo.<span class="ja-kana"> アンニョンハセヨ。オヌルブト イ チムエソ イラゲ ドゥェッソヨ。</span></div>
+            <div class="dialogue-eng">Hello. Starting today, I'll be working on this team.</div>
+          </div>
+        </div>
+        <div class="dialogue-bubble right">
+          <div class="dialogue-avatar">👨</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">반갑습니다. 잘 부탁드립니다. <button class="hangul-sound-btn" onclick="speakKorean('반갑습니다. 잘 부탁드립니다')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Bangapseumnida. Jal butakdeurimnida.<span class="ja-kana"> バンガプスムニダ。チャル ブタクトゥリムニダ。</span></div>
+            <div class="dialogue-eng">Nice to meet you. I look forward to working with you.</div>
+          </div>
+        </div>
+        <div class="dialogue-bubble">
+          <div class="dialogue-avatar">👩</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">혹시 이 근처에 좋은 식당 알아요? <button class="hangul-sound-btn" onclick="speakKorean('혹시 이 근처에 좋은 식당 알아요')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Hoksi i geuncheo-e jo-eun sikdang arayo?<span class="ja-kana"> ホクシ イ クンチョエ チョウン シクタン アラヨ?</span></div>
+            <div class="dialogue-eng">By any chance, do you know a good restaurant nearby?</div>
+          </div>
+        </div>
+        <div class="dialogue-bubble right">
+          <div class="dialogue-avatar">👨</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">같이 가실래요? 제가 안내해 드릴게요. <button class="hangul-sound-btn" onclick="speakKorean('같이 가실래요? 제가 안내해 드릴게요')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Gachi gasillaeyo? Jega annaehae deurilgeyo.<span class="ja-kana"> カチ ガシルレヨ? チェガ アンネヘ トゥリルゲヨ。</span></div>
+            <div class="dialogue-eng">Would you like to go together? I'll show you the way.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialogue-scene" style="margin-top:16px;">
+        <div class="dialogue-scene-title">💕 고백 장면 — The confession (반말 · Casual)</div>
+        <div class="dialogue-bubble">
+          <div class="dialogue-avatar">👨</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">나 할 말이 있어. <button class="hangul-sound-btn" onclick="speakKorean('나 할 말이 있어')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Na hal mali isseo.<span class="ja-kana"> ナ ハル マリ イッソ。</span></div>
+            <div class="dialogue-eng">I have something to tell you.</div>
+          </div>
+        </div>
+        <div class="dialogue-bubble right">
+          <div class="dialogue-avatar">👩</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">뭔데? 무슨 일이야? <button class="hangul-sound-btn" onclick="speakKorean('뭔데? 무슨 일이야?')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Mwonde? Museun iriya?<span class="ja-kana"> ムォンデ? ムスン イリヤ?</span></div>
+            <div class="dialogue-eng">What is it? What's the matter?</div>
+          </div>
+        </div>
+        <div class="dialogue-bubble">
+          <div class="dialogue-avatar">👨</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">나... 너 좋아해. 많이. <button class="hangul-sound-btn" onclick="speakKorean('나 너 좋아해. 많이.')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Na... neo joahae. Manhi.<span class="ja-kana"> ナ… ノ チョアヘ。マニ。</span></div>
+            <div class="dialogue-eng">I... like you. A lot.</div>
+          </div>
+        </div>
+        <div class="dialogue-bubble right">
+          <div class="dialogue-avatar">👩</div>
+          <div class="dialogue-content">
+            <div class="dialogue-kor">나도. 나도 좋아해. <button class="hangul-sound-btn" onclick="speakKorean('나도. 나도 좋아해.')" aria-label="듣기">🔊</button></div>
+            <div class="dialogue-rom">Nado. Nado joahae.<span class="ja-kana"> ナド。ナド チョアヘ。</span></div>
+            <div class="dialogue-eng">Me too. I like you too.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ICONIC LINES -->
+      <div class="culture-sub-heading" id="kdrama-lines">🗣️ Iconic Korean Drama Lines · 드라마 명대사</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">These are the lines that made Korean drama fans cry, gasp, and immediately screenshot their screens. Learn them as complete sentences — each teaches grammar, emotion vocabulary, and real Korean speech patterns.</p>
+      <div class="kr-trans" style="margin-bottom:16px;">이 대사들은 한국 드라마 팬들을 울리고 숨을 멎게 하고 즉시 스크린샷을 찍게 만든 대사들입니다. 완전한 문장으로 배우세요 — 각 대사는 문법, 감정 어휘, 실제 한국어 말하기 패턴을 가르쳐 줍니다.</div>
+      <div class="phrase-grid">
+        <div class="phrase-card">
+          <div class="phrase-kor">보고 싶었어. <button class="hangul-sound-btn" onclick="speakKorean('보고 싶었어')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Bo-go si-peo-sseo.<span class="ja-kana"> ボゴ シポッソ。</span></div>
+          <div class="phrase-eng">I missed you. (lit. "I wanted to see you.")</div>
+          <div class="phrase-context">반말 · The most iconic K-Drama line. Used in reunions, confessions, and final scenes. Formal version: 보고 싶었어요.</div>
+          <div class="phrase-breakdown"><b>보고</b> (to see) + <b>싶었어</b> (wanted to) — -고 싶다 is the grammar pattern for expressing desire</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">내가 지켜줄게. <button class="hangul-sound-btn" onclick="speakKorean('내가 지켜줄게')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Naega ji-kyeo-jul-ge.<span class="ja-kana"> ネガ チキョジュルゲ。</span></div>
+          <div class="phrase-eng">I'll protect you.</div>
+          <div class="phrase-context">반말 · Said by the male lead during a crisis. A promise of protection and devotion rolled into one sentence.</div>
+          <div class="phrase-breakdown"><b>지키다</b> (protect) + <b>-어 주다</b> (do for someone) + <b>-ㄹ게</b> (I will / promise) = "I'll protect (you)"</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">그냥 내 곁에 있어줘. <button class="hangul-sound-btn" onclick="speakKorean('그냥 내 곁에 있어줘')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Geunyang nae gyeote isseo-jwo.<span class="ja-kana"> クニャン ネ キョテ イッソジョ。</span></div>
+          <div class="phrase-eng">Just stay by my side.</div>
+          <div class="phrase-context">반말 · Said when a character is emotionally vulnerable, asking for presence over promises. Extremely common at emotional peaks.</div>
+          <div class="phrase-breakdown"><b>그냥</b> (just) + <b>내 곁에</b> (by my side) + <b>있어줘</b> (please stay for me)</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">왜 이제야 나타났어? <button class="hangul-sound-btn" onclick="speakKorean('왜 이제야 나타났어')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Wae i-je-ya na-ta-na-sseo?<span class="ja-kana"> ウェ イジェヤ ナタナッソ?</span></div>
+          <div class="phrase-eng">Why did you only appear in my life now?</div>
+          <div class="phrase-context">반말 · Said with joy and bittersweet regret. The word 이제야 carries a unique "only now, after so long" nuance English can't fully capture.</div>
+          <div class="phrase-breakdown"><b>왜</b> (why) + <b>이제야</b> (only now, finally) + <b>나타났어</b> (appeared) — 이제야 carries regret at timing</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">미안해. 정말 미안해. <button class="hangul-sound-btn" onclick="speakKorean('미안해. 정말 미안해.')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Mi-an-hae. Jeong-mal mi-an-hae.<span class="ja-kana"> ミアネ。チョンマル ミアネ。</span></div>
+          <div class="phrase-eng">I'm sorry. I'm really sorry.</div>
+          <div class="phrase-context">반말 · The reconciliation scene staple. Repetition in Korean adds emotional weight. Formal version: 죄송해요.</div>
+          <div class="phrase-breakdown"><b>미안하다</b> = to feel apologetic (internal) vs <b>죄송하다</b> = formal apology (respect-based)</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">나 좀 잊어. <button class="hangul-sound-btn" onclick="speakKorean('나 좀 잊어')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Na jom ij-eo.<span class="ja-kana"> ナ チョム イジョ。</span></div>
+          <div class="phrase-eng">Forget me.</div>
+          <div class="phrase-context">반말 · The tragic self-sacrifice line. A character pushing away the one they love for their protection. Korean audiences know: the angst is just beginning.</div>
+          <div class="phrase-breakdown"><b>나</b> (me) + <b>좀</b> (please / softener) + <b>잊어</b> (forget, casual imperative) — 좀 softens harsh commands into pleas</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">운명인가 봐. <button class="hangul-sound-btn" onclick="speakKorean('운명인가 봐')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Un-myeong-in-ga bwa.<span class="ja-kana"> ウンミョンインガ ブァ。</span></div>
+          <div class="phrase-eng">It must be fate. / Seems like destiny.</div>
+          <div class="phrase-context">반말 · Said after a coincidence feels too perfect to be accidental. -인가 봐 expresses speculation based on evidence.</div>
+          <div class="phrase-breakdown"><b>운명</b> (fate) + <b>-인가 봐</b> (it seems it must be) — -인가 보다 = deducing or speculating</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">괜찮아. 나 괜찮아. <button class="hangul-sound-btn" onclick="speakKorean('괜찮아. 나 괜찮아.')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Gwaen-chan-a. Na gwaen-chan-a.<span class="ja-kana"> グェンチャナ。ナ グェンチャナ。</span></div>
+          <div class="phrase-eng">I'm okay. I'm fine.</div>
+          <div class="phrase-context">반말 · Said while clearly not being okay. One of the most used lines in K-Drama — a quiet denial of pain. When a Korean drama character says this, cry harder.</div>
+          <div class="phrase-breakdown"><b>괜찮다</b> = to be okay — when repeated, it signals the opposite: deep pain being suppressed</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">그때 그 사람이 당신이었군요. <button class="hangul-sound-btn" onclick="speakKorean('그때 그 사람이 당신이었군요')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Geuttae geu sa-ram-i dang-sin-i-eoss-gun-yo.<span class="ja-kana"> クッテ ク サラミ タンシニオッグニョ。</span></div>
+          <div class="phrase-eng">So it was you, all along, back then.</div>
+          <div class="phrase-context">해요체 · The grand revelation line — when a character realizes the mystery person from their past is standing right in front of them.</div>
+          <div class="phrase-breakdown"><b>그때</b> (back then) + <b>그 사람</b> (that person) + <b>당신이었군요</b> (was you — -군요 shows surprise / realization)</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">사랑해. 많이. <button class="hangul-sound-btn" onclick="speakKorean('사랑해. 많이.')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Sa-rang-hae. Man-hi.<span class="ja-kana"> サランヘ。マニ。</span></div>
+          <div class="phrase-eng">I love you. A lot.</div>
+          <div class="phrase-context">반말 · The most direct confession in K-Drama. 사랑해 is reserved for deep romantic love. 많이 (a lot) added after a pause makes it more vulnerable.</div>
+          <div class="phrase-breakdown"><b>사랑하다</b> = to love (romantic) · <b>좋아하다</b> = to like / have feelings for · In K-Drama, 좋아해 always precedes 사랑해 by several episodes</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">행복해야 해. 알았지? <button class="hangul-sound-btn" onclick="speakKorean('행복해야 해. 알았지?')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Haeng-bo-kae-ya hae. A-rat-ji?<span class="ja-kana"> ヘンボケヤ ヘ。アラッジ?</span></div>
+          <div class="phrase-eng">You have to be happy. You understand?</div>
+          <div class="phrase-context">반말 · Said during a goodbye scene — a desperate wish for the other person's happiness when they can no longer be together.</div>
+          <div class="phrase-breakdown"><b>행복하다</b> (to be happy) + <b>-야 해</b> (must / have to) + <b>알았지?</b> (you got it?) — -야 해 expresses obligation or strong wish</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">나한테 왜 이래요? <button class="hangul-sound-btn" onclick="speakKorean('나한테 왜 이래요?')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Na-han-te wae i-rae-yo?<span class="ja-kana"> ナハンテ ウェ イレヨ?</span></div>
+          <div class="phrase-eng">Why are you doing this to me?</div>
+          <div class="phrase-context">해요체 · Emotional confrontation. Confusion, hurt, and accusation combined. Can be romantic frustration or genuine anger depending on context.</div>
+          <div class="phrase-breakdown"><b>나한테</b> (to me) + <b>왜</b> (why) + <b>이래요</b> (are you like this / doing this) — 이래요 is casual-polite for "acting like this"</div>
+        </div>
+      </div>
+
+      <!-- DRAMA FAN CULTURE -->
+      <div class="culture-sub-heading" id="kdrama-fanculture">🍿 Drama Fan Culture &amp; Slang · 드라마 팬 문화</div>
+      <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.75;margin-bottom:8px;">K-Drama has built a dedicated global fan culture with its own vocabulary. Korean fans invented many of these terms, and they've spread globally through social media. Knowing them lets you talk about dramas like a native speaker.</p>
+      <div class="kr-trans" style="margin-bottom:16px;">K-드라마는 고유한 어휘를 가진 열정적인 글로벌 팬 문화를 구축했습니다. 한국 팬들이 이 용어들을 만들었고 소셜미디어를 통해 전 세계로 퍼졌습니다. 이 용어들을 알면 원어민처럼 드라마에 대해 이야기할 수 있습니다.</div>
+      <div class="phrase-grid">
+        <div class="phrase-card">
+          <div class="phrase-kor">정주행 <button class="hangul-sound-btn" onclick="speakKorean('정주행')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">jeong-ju-haeng<span class="ja-kana"> チョンジュヘン</span></div>
+          <div class="phrase-eng">Binge-watching from episode 1 to the end in order</div>
+          <div class="phrase-context">Literally "straight-through run." Binge-watching in sequence without skipping. The opposite is 역주행 (rewatching old content that's gone viral).</div>
+          <div class="phrase-breakdown"><span style="font-family:var(--font-korean)">오늘 밤에 빈센조 정주행할 거야.</span> — "I'm going to binge Vincenzo tonight from start to finish."</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">본방사수 <button class="hangul-sound-btn" onclick="speakKorean('본방사수')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">bon-bang-sa-su<span class="ja-kana"> ボンバンサス</span></div>
+          <div class="phrase-eng">Watching a broadcast live in real time</div>
+          <div class="phrase-context">Literally "protect the main broadcast." Die-hard fans 본방사수 to boost live ratings, which directly affect production decisions including script changes and episode counts.</div>
+          <div class="phrase-breakdown"><span style="font-family:var(--font-korean)">오늘 밤 본방사수해야 해!</span> — "I have to watch it live tonight!" — reflects how ratings still matter in Korean TV culture.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">케미 <button class="hangul-sound-btn" onclick="speakKorean('케미')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">ke-mi<span class="ja-kana"> ケミ</span></div>
+          <div class="phrase-eng">Chemistry (between actors / characters)</div>
+          <div class="phrase-context">From English "chemistry." 케미가 좋다 (great chemistry) vs 케미가 없다 (no chemistry). Also used for bromance / friendship pairs between same-sex costars.</div>
+          <div class="phrase-breakdown"><span style="font-family:var(--font-korean)">두 사람 케미 미쳤다!</span> — "Their chemistry is insane!" — a standard comment under any good drama clip.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">이불킥 <button class="hangul-sound-btn" onclick="speakKorean('이불킥')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">i-bul-kik<span class="ja-kana"> イブルキク</span></div>
+          <div class="phrase-eng">Cringe / second-hand embarrassment (blanket kick)</div>
+          <div class="phrase-context">Literally "blanket kick" — the physical act of kicking your blanket from cringe/embarrassment while watching alone. A uniquely Korean expression for vicarious embarrassment.</div>
+          <div class="phrase-breakdown"><span style="font-family:var(--font-korean)">이 장면 볼 때마다 이불킥한다.</span> — "Every time I watch this scene I cringe so hard (blanket-kick)."</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">2호선 증후군 <button class="hangul-sound-btn" onclick="speakKorean('이호선 증후군')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">i-ho-seon jeung-hu-gun<span class="ja-kana"> イホソン チュンフグン</span></div>
+          <div class="phrase-eng">Second Lead Syndrome — rooting for the "wrong" guy</div>
+          <div class="phrase-context">The heartbreaking condition of falling in love with the secondary male lead who treats the female lead perfectly — but loses to the main lead. Named after subway Line 2. An extremely common K-Drama fan experience.</div>
+          <div class="phrase-breakdown"><span style="font-family:var(--font-korean)">2호선 증후군 왔어...</span> — "I've caught Second Lead Syndrome..." — said with tragic resignation.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">드라마 투어 <button class="hangul-sound-btn" onclick="speakKorean('드라마 투어')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">deu-ra-ma tu-eo<span class="ja-kana"> トゥラマ トゥオ</span></div>
+          <div class="phrase-eng">Drama filming location tourism</div>
+          <div class="phrase-context">Visiting the actual locations where famous dramas were filmed. A massive Korean tourism driver — 겨울연가 filming locations on 남이섬 still draw tourists 20+ years later.</div>
+          <div class="phrase-breakdown">Famous locations: 남이섬 (Nami Island · 겨울연가), 광화문 (Gwanghwamun · 도깨비), 인천 차이나타운 (빈센조 filming area)</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">명장면 <button class="hangul-sound-btn" onclick="speakKorean('명장면')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">myeong-jang-myeon<span class="ja-kana"> ミョンジャンミョン</span></div>
+          <div class="phrase-eng">An iconic / legendary scene</div>
+          <div class="phrase-context">Literally "famous great scene." K-Drama fan culture is built around discussing 명장면 — the umbrella scene, the rooftop confession, the wrist grab. Also used sarcastically for hilariously bad scenes.</div>
+          <div class="phrase-breakdown"><span style="font-family:var(--font-korean)">이 장면이 바로 역대 명장면이지.</span> — "This is a legendary scene for the ages."</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">쉽 (배 젓다) <button class="hangul-sound-btn" onclick="speakKorean('커플링')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">syip / keo-peul-ring<span class="ja-kana"> シプ / コプルリン</span></div>
+          <div class="phrase-eng">Shipping a romantic pairing (rooting for a couple)</div>
+          <div class="phrase-context">쉽 (from English "ship") is now widely used. 커플링 (coupling) is the original Korean fan term. Fans debate endlessly whether the leads should end up together or whether the second lead deserves the win.</div>
+          <div class="phrase-breakdown"><span style="font-family:var(--font-korean)">나는 이 커플링 진심으로 응원해.</span> — "I genuinely ship this couple."</div>
+        </div>
+      </div>
+
+      <div class="tip-box" style="margin-top:20px;">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">드라마로 한국어 공부하기 — How to Study Korean with K-Dramas</div>
+          <div class="tip-text">The most effective method is <strong>active watching</strong> — pause when you hear an unfamiliar word, rewind and listen again, then shadow (repeat aloud) the line. Korean subtitles (한국어 자막) train your reading speed. Start with <strong>응답하라 1988</strong> for natural everyday Korean, then <strong>이상한 변호사 우영우</strong> for clear, precise speech at intermediate level.</div>
+          <div class="kr-trans">가장 효과적인 방법은 '능동적 시청'입니다 — 낯선 단어가 들리면 일시정지하고 다시 되감아 듣고 대사를 소리 내어 따라 말하세요(섀도잉). 한국어 자막은 독해 속도를 훈련시킵니다. 일상 한국어를 위해 《응답하라 1988》로 시작한 다음, 중급 수준의 명확하고 정확한 말하기를 위해 《이상한 변호사 우영우》로 넘어가세요.</div>
+        </div>
+      </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+          <li><a href="../learn/grammar.html">Grammar</a></li>
+          <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+    </div>
+  </div>
+</footer>
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

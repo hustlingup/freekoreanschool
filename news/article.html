@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="seo-title">Korean News Article 기사 | 한국어 학교</title>
+  <meta id="seo-desc" name="description" content="Read bilingual Korean news — English and Korean side by side, at your level." />
+  <meta id="seo-keywords" name="keywords" content="Korean news, 한국어, bilingual" />
+  <!-- Open Graph -->
+  <meta id="og-title" property="og:title" content="Korean News Article | 한국어 학교" />
+  <meta id="og-desc" property="og:description" content="Read bilingual Korean news." />
+  <meta id="og-img" property="og:image" content="" />
+  <meta id="og-url" property="og:url" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="한국어 학교" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta id="tw-title" name="twitter:title" content="Korean News Article | 한국어 학교" />
+  <meta id="tw-desc" name="twitter:description" content="Read bilingual Korean news." />
+  <meta id="tw-img" name="twitter:image" content="" />
+  <!-- Canonical -->
+  <link id="canonical" rel="canonical" href="" />
+  <!-- JSON-LD -->
+  <script id="json-ld" type="application/ld+json"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body data-page="news-article">
+
+  <!-- ══════════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">한</div>
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+        <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+        <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+        <li><a href="../news/index.html" class="active"><span class="nav-icon">📰</span> News</a></li>
+        <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search news…" autocomplete="off" aria-label="Search" />
+        </div>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════════
+       ARTICLE CONTENT
+  ══════════════════════════════════════════════ -->
+  <main>
+    <div id="article-root" class="article-page">
+
+      <!-- Breadcrumb -->
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="article-breadcrumb-sep">›</span>
+        <a href="index.html">📰 News</a>
+        <span class="article-breadcrumb-sep">›</span>
+        <span id="article-topic-crumb">Article</span>
+      </nav>
+
+      <!-- Article Header -->
+      <header class="article-header">
+        <div class="article-tags-row" id="article-tags">
+          <div class="news-skeleton" style="height:24px;width:80px;border-radius:99px;"></div>
+          <div class="news-skeleton" style="height:24px;width:90px;border-radius:99px;"></div>
+        </div>
+        <h1 class="article-title-ko" id="article-title-ko">
+          <div class="news-skeleton" style="height:36px;width:80%;margin-bottom:8px;"></div>
+          <div class="news-skeleton" style="height:36px;width:65%;"></div>
+        </h1>
+        <p class="article-title-en" id="article-title-en">
+          <span class="news-skeleton" style="height:22px;width:75%;display:block;"></span>
+        </p>
+        <div class="article-meta-bar" id="article-meta">
+          <div class="news-skeleton" style="height:14px;width:120px;"></div>
+          <div class="news-skeleton" style="height:14px;width:80px;"></div>
+          <div class="news-skeleton" style="height:14px;width:80px;"></div>
+          <div class="news-skeleton" style="height:14px;width:70px;"></div>
+        </div>
+      </header>
+
+      <!-- Thumbnail -->
+      <div class="article-thumb-wrap" id="article-thumb">
+        <div class="news-skeleton" style="position:absolute;inset:0;border-radius:0;"></div>
+      </div>
+      <div class="image-caption-row" id="article-thumb-caption-row" style="display:none;">
+        <span class="image-caption" id="article-thumb-caption"></span>
+        <span class="image-source" id="article-thumb-source"></span>
+      </div>
+
+      <!-- AI Notice -->
+      <div style="margin:1.5rem 0;padding:0.875rem 1.125rem;background:rgba(255,200,0,0.07);border:1px solid rgba(255,200,0,0.28);border-radius:10px;font-size:0.83rem;color:var(--text-secondary,#aaa);line-height:1.65;">
+        <strong style="color:#f5c842;">⚠ AI-Generated Content Notice</strong><br>
+        These news articles are created by AI for Korean language learning purposes only. Content may be inaccurate or hallucinated — AI makes mistakes. If you want to read real news, search in Korean using what you've learned here: <a href="https://www.google.com/search?q=한국+뉴스" target="_blank" rel="noopener" style="color:#f5c842;text-decoration:underline;">Google</a> · <a href="https://news.naver.com" target="_blank" rel="noopener" style="color:#f5c842;text-decoration:underline;">Naver News</a>
+      </div>
+
+      <!-- Bilingual Body -->
+      <div class="article-bilingual" id="article-body">
+        <div class="article-col-en" id="article-col-en">
+          <div class="news-skeleton" style="height:16px;width:100%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:92%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:97%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:85%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:100%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:78%;"></div>
+        </div>
+        <div class="article-col-ko" id="article-col-ko">
+          <div class="news-skeleton" style="height:16px;width:100%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:88%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:95%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:90%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:100%;margin-bottom:10px;"></div>
+          <div class="news-skeleton" style="height:16px;width:72%;"></div>
+        </div>
+      </div>
+
+      <!-- Extra Images (JS appends grid here) -->
+      <div id="article-images-section"></div>
+
+      <!-- Prev / Next Navigation -->
+      <nav class="article-nav" id="article-nav" style="display:none;" aria-label="Article navigation">
+        <a class="article-nav-btn" id="article-prev" href="#">
+          <span>←</span>
+          <div>
+            <span class="article-nav-btn-label">Previous</span>
+            <span class="article-nav-btn-title" id="article-prev-title"></span>
+          </div>
+        </a>
+        <a class="article-nav-btn" id="article-next" href="#">
+          <div style="text-align:right;">
+            <span class="article-nav-btn-label">Next</span>
+            <span class="article-nav-btn-title" id="article-next-title"></span>
+          </div>
+          <span>→</span>
+        </a>
+      </nav>
+
+    </div><!-- /#article-root -->
+
+
+    <!-- Related Articles -->
+    <section class="animate-on-scroll" id="article-related" style="display:none; padding:60px 0;">
+      <div class="container">
+        <div class="section-eyebrow">RELATED · 관련 기사</div>
+        <h2 class="section-title" style="margin-bottom:24px;">More Like This</h2>
+        <div class="article-related-grid" id="article-related-grid"></div>
+      </div>
+    </section>
+
+
+    <!-- Weekly Top Strip -->
+    <section class="news-weekly-section animate-on-scroll" id="article-weekly-section">
+      <div class="container">
+        <div class="section-eyebrow">THIS WEEK'S TOP STORIES · 이번 주 인기 뉴스</div>
+        <h2 class="section-title">Most Read This Week</h2>
+        <div class="news-weekly-strip" id="article-weekly-strip">
+          <div class="news-weekly-item" style="pointer-events:none;"><div class="news-weekly-thumb"><div class="news-skeleton" style="position:absolute;inset:0;"></div></div><div class="news-weekly-body"><div class="news-skeleton" style="height:12px;width:40%;margin-bottom:6px;"></div><div class="news-skeleton" style="height:16px;width:90%;"></div></div></div>
+          <div class="news-weekly-item" style="pointer-events:none;"><div class="news-weekly-thumb"><div class="news-skeleton" style="position:absolute;inset:0;"></div></div><div class="news-weekly-body"><div class="news-skeleton" style="height:12px;width:40%;margin-bottom:6px;"></div><div class="news-skeleton" style="height:16px;width:90%;"></div></div></div>
+          <div class="news-weekly-item" style="pointer-events:none;"><div class="news-weekly-thumb"><div class="news-skeleton" style="position:absolute;inset:0;"></div></div><div class="news-weekly-body"><div class="news-skeleton" style="height:12px;width:40%;margin-bottom:6px;"></div><div class="news-skeleton" style="height:16px;width:90%;"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-mark">한</div>
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+            <li><a href="../learn/grammar.html">Grammar</a></li>
+            <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="../culture/index.html">K-Culture</a></li>
+            <li><a href="../travel/index.html">Travel Guide</a></li>
+            <li><a href="../news/index.html">Korean News</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+        <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/lang-ja.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

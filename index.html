@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korean School 한국어 학교 — Free Korean Learning</title>
+  <meta name="description" content="Free Korean language learning — lessons, culture, travel, and news.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<!-- ═══ HEADER ═══════════════════════════════════════════ -->
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search lessons, vocabulary…">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ HERO ══════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+  </div>
+  <div id="floating-chars" class="floating-chars"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">🇰🇷 · Free · For Every Level</div>
+      <h1 class="hero-title">
+        <span id="hero-typewriter" class="grad-text">한국어를 배우세요</span>
+      </h1>
+      <p class="hero-sub">Discover the beauty of Korea through language, culture, K-pop, travel, and cuisine — with free lessons designed for learners worldwide.</p>
+      <div class="hero-actions">
+        <a href="learn/hangul.html" class="btn btn-primary btn-lg">Start Learning</a>
+        <a href="culture/index.html" class="btn btn-outline btn-lg">Explore K-Culture</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value"><span data-counter="5000" data-suffix="+">0</span></div>
+          <div class="hero-stat-label">Vocabulary Words</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value"><span data-counter="42" data-suffix="+">0</span></div>
+          <div class="hero-stat-label">Lessons</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value"><span data-counter="12000" data-suffix="+">0</span></div>
+          <div class="hero-stat-label">Active Learners</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value"><span data-counter="100" data-suffix="%">0</span></div>
+          <div class="hero-stat-label">% Free</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURES ════════════════════════════════════════ -->
+<section style="padding:80px 0">
+  <div class="container">
+    <div class="section-eyebrow">FEATURES</div>
+    <h2 class="section-title">Everything You Need to Learn Korean</h2>
+    <div class="bento-grid mt-32">
+
+      <div class="bento-card bento-8">
+        <div class="bento-card-inner" style="flex-direction:row;align-items:center;gap:40px">
+          <div style="flex:1">
+            <div class="bento-label">Hangul Basics · 한글 기초</div>
+            <h3 class="bento-title" style="font-size:1.6rem;margin-bottom:12px">Start with 한글</h3>
+            <p class="bento-desc">Learn the Korean alphabet in just 2 hours. 한글 (Hangul) is remarkably logical — once you know the 24 basic letters, you can read anything.</p>
+            <a href="learn/hangul.html" class="btn btn-primary mt-24">Learn Hangul Now →</a>
+          </div>
+          <div style="font-family:var(--font-korean);font-size:4rem;font-weight:900;opacity:0.15;letter-spacing:-0.05em;user-select:none;flex-shrink:0">가나다라마바사</div>
+        </div>
+      </div>
+
+      <div class="bento-card bento-4">
+        <div class="bento-card-inner">
+          <div class="bento-label">K-Pop Lyrics · 가사</div>
+          <h3 class="bento-title">K-Pop Lyrics Learning</h3>
+          <p class="bento-desc">Learn Korean naturally through your favourite songs. Line-by-line breakdowns with vocabulary, grammar notes, and pronunciation guides.</p>
+          <a href="culture/kpop.html" class="btn btn-outline mt-16">Read →</a>
+        </div>
+      </div>
+
+      <div class="bento-card bento-4">
+        <div class="bento-card-inner">
+          <div class="bento-label">K-Drama · 드라마</div>
+          <h3 class="bento-title">K-Drama Vocabulary</h3>
+          <p class="bento-desc">Pick up everyday Korean from your favourite dramas. Contextual vocabulary lists organised by show, genre, and proficiency level.</p>
+          <a href="culture/kdrama.html" class="btn btn-outline mt-16">Read →</a>
+        </div>
+      </div>
+
+      <div class="bento-card bento-4">
+        <div class="bento-card-inner">
+          <div class="bento-label">Korean Food · 음식</div>
+          <h3 class="bento-title">Korean Food Dictionary</h3>
+          <p class="bento-desc">From 김치 (kimchi) to 삼겹살 (samgyeopsal) — explore the rich vocabulary of Korean cuisine with pronunciation and cultural context.</p>
+          <a href="culture/kfood.html" class="btn btn-outline mt-16">Read →</a>
+        </div>
+      </div>
+
+      <div class="bento-card bento-4">
+        <div class="bento-card-inner">
+          <div class="bento-label">Daily Vocabulary · 오늘의 단어</div>
+          <h3 class="bento-title">Word of the Day</h3>
+          <div id="word-of-day" style="text-align:center;padding:16px 0;flex:1">
+            <div style="font-size:2.2rem;font-family:var(--font-korean);margin-bottom:6px">안녕하세요</div>
+            <div style="color:var(--text-muted);font-size:0.85rem">annyeonghaseyo</div>
+            <div style="font-weight:600;margin-top:6px;font-size:0.9rem">Hello / Good day</div>
+            <button onclick="speakKorean('안녕하세요')" class="btn btn-outline btn-sm" style="margin-top:12px">Hear It</button>
+          </div>
+          <button class="btn btn-outline" style="width:100%;margin-top:8px">More Words</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LEARNING PATHS ═════════════════════════════════ -->
+<section style="padding:80px 0;background:var(--bg-2)">
+  <div class="container">
+    <div class="section-eyebrow">STRUCTURED PATHS · 학습 경로</div>
+    <h2 class="section-title">Choose Your Learning Path</h2>
+    <p class="section-desc">Whether you are just starting or aiming for fluency, we have a clear roadmap to take you there step by step.</p>
+    <div class="grid grid-3 gap-24 mt-32">
+
+      <div class="card">
+        <div style="font-size:2.5rem;margin-bottom:16px">🌱</div>
+        <div style="font-weight:700;font-size:1.15rem;margin-bottom:16px">Beginner</div>
+        <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+          <li>✓ Hangul Alphabet</li>
+          <li>✓ Basic Vowels &amp; Consonants</li>
+          <li>✓ Syllable Blocks</li>
+          <li>✓ Essential Vocabulary</li>
+          <li>✓ Basic Greetings</li>
+        </ul>
+        <a href="learn/hangul.html" class="btn btn-primary" style="width:100%">Start Beginner Path →</a>
+      </div>
+
+      <div class="card card-glass">
+        <div style="font-size:2.5rem;margin-bottom:16px">📈</div>
+        <div style="font-weight:700;font-size:1.15rem;margin-bottom:16px">Intermediate <span class="badge-intermediate" style="font-size:0.65rem;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle">POPULAR</span></div>
+        <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+          <li>✓ Korean Grammar (SOV)</li>
+          <li>✓ Particles &amp; Conjugation</li>
+          <li>✓ Speech Levels</li>
+          <li>✓ 300+ Vocabulary Words</li>
+          <li>✓ Real Dialogues</li>
+        </ul>
+        <a href="learn/grammar.html" class="btn btn-primary" style="width:100%">Start Intermediate Path →</a>
+      </div>
+
+      <div class="card">
+        <div style="font-size:2.5rem;margin-bottom:16px">🎓</div>
+        <div style="font-weight:700;font-size:1.15rem;margin-bottom:16px">Advanced</div>
+        <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:8px;font-size:0.875rem;color:var(--text-secondary)">
+          <li>✓ Business Korean</li>
+          <li>✓ Classical Korean</li>
+          <li>✓ Essay Writing</li>
+          <li>✓ TOPIK Preparation</li>
+          <li>✓ Idiomatic Expressions</li>
+        </ul>
+        <a href="learn/business-korean.html" class="btn btn-primary" style="width:100%">Start Advanced Path →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ K-CULTURE ═════════════════════════════════════ -->
+<section style="padding:80px 0">
+  <div class="container">
+    <div class="section-eyebrow">K-CULTURE · 한국 문화</div>
+    <h2 class="section-title">Experience Korea Beyond Language</h2>
+    <p class="section-desc">Language is the gateway — immerse yourself in Korean pop culture, food, and beauty to supercharge your learning.</p>
+    <div class="grid grid-4 gap-16 mt-32">
+
+      <article class="article-card">
+        <div class="article-thumb">
+          <div class="article-thumb-grad"></div>
+          🎵
+        </div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag tag-kpop">K-Pop Lyrics · 가사</span></div>
+          <h3 class="article-title">K-Pop Stars' Korean Phrases You Need to Know</h3>
+          <p class="article-excerpt">From BTS to BLACKPINK — the most common Korean words and phrases used by your favourite K-Pop artists, with pronunciation guides.</p>
+          <div class="article-footer">
+            <a href="culture/kpop.html">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-thumb">
+          <div class="article-thumb-grad"></div>
+          🎬
+        </div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag tag-culture">K-Drama · 드라마</span></div>
+          <h3 class="article-title">Master Korean Emotions Through K-Drama</h3>
+          <p class="article-excerpt">Korean dramas are packed with emotional vocabulary. Learn how characters express joy, sadness, anger, and love in authentic Korean.</p>
+          <div class="article-footer">
+            <a href="culture/kdrama.html">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-thumb">
+          <div class="article-thumb-grad"></div>
+          🍜
+        </div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag tag-culture">Korean Food · 음식</span></div>
+          <h3 class="article-title">Order Like a Local: Restaurant Korean</h3>
+          <p class="article-excerpt">Essential phrases for ordering food, asking for the bill, and navigating a Korean restaurant menu with confidence.</p>
+          <div class="article-footer">
+            <a href="culture/kfood.html">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-thumb">
+          <div class="article-thumb-grad"></div>
+          ✨
+        </div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag tag-kpop">K-Beauty · 뷰티</span></div>
+          <h3 class="article-title">Beauty &amp; Skincare Vocabulary in Korean</h3>
+          <p class="article-excerpt">Explore the world of K-Beauty with essential vocabulary for skincare routines, cosmetics, and Korean beauty trends.</p>
+          <div class="article-footer">
+            <a href="culture/kbeauty.html">Read →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="culture/index.html" class="btn btn-outline btn-lg">Explore All K-Culture Content →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRAVEL ════════════════════════════════════════ -->
+<section style="padding:80px 0;background:var(--bg-2)">
+  <div class="container">
+    <div class="section-eyebrow">TRAVEL · 여행</div>
+    <h2 class="section-title">Explore Korea</h2>
+    <p class="section-desc">Learn the language of every destination. From bustling Seoul to the serene shores of Jeju — your AI travel guide is ready.</p>
+    <div class="grid grid-3 gap-24 mt-32">
+
+      <div class="place-card">
+        <div class="place-image">
+          🏙️
+          <div class="place-image-overlay"></div>
+          <div class="place-image-label">서울</div>
+        </div>
+        <div class="place-body">
+          <div class="place-name">Seoul</div>
+          <p class="place-desc">South Korea's dazzling capital — from the ancient palaces of Gyeongbokgung to the neon streets of Gangnam and Hongdae.</p>
+          <a href="travel/index.html" class="btn btn-outline btn-sm mt-12">Explore →</a>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <div class="place-image">
+          🏖️
+          <div class="place-image-overlay"></div>
+          <div class="place-image-label">부산</div>
+        </div>
+        <div class="place-body">
+          <div class="place-name">Busan</div>
+          <p class="place-desc">Korea's vibrant port city with stunning beaches, fresh seafood markets, and a unique dialect worth discovering.</p>
+          <a href="travel/index.html" class="btn btn-outline btn-sm mt-12">Explore →</a>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <div class="place-image">
+          🌋
+          <div class="place-image-overlay"></div>
+          <div class="place-image-label">제주</div>
+        </div>
+        <div class="place-body">
+          <div class="place-name">Jeju Island</div>
+          <p class="place-desc">Korea's paradise island — volcanic landscapes, pristine beaches, tangerine groves, and the famous haenyeo diving culture.</p>
+          <a href="travel/index.html" class="btn btn-outline btn-sm mt-12">Explore →</a>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="travel/index.html" class="btn btn-outline btn-lg">View Full Travel Guide →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRACTICE QUIZ ══════════════════════════════════ -->
+<section style="padding:80px 0;text-align:center">
+  <div class="container">
+    <div class="section-eyebrow">PRACTICE · 연습</div>
+    <h2 class="section-title">Test Your Korean</h2>
+    <p class="section-desc" style="margin:0 auto">10 progressive levels · multiple choice · covers Hangul, Grammar &amp; Vocabulary</p>
+    <div style="margin-top:32px">
+      <a href="quiz.html" class="btn btn-primary btn-lg">Choose a Level</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn · 학습</div>
+        <ul class="footer-links">
+          <li><a href="learn/hangul.html">Hangul Alphabet</a></li>
+          <li><a href="learn/grammar.html">Grammar</a></li>
+          <li><a href="learn/vocabulary.html">Vocabulary</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">K-Culture · 문화</div>
+        <ul class="footer-links">
+          <li><a href="culture/kpop.html">K-Pop</a></li>
+          <li><a href="culture/kdrama.html">K-Drama</a></li>
+          <li><a href="culture/kfood.html">K-Food</a></li>
+          <li><a href="culture/kbeauty.html">K-Beauty</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company · 회사</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/lang-ja.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

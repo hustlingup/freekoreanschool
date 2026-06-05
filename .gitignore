@@ -1,0 +1,10 @@
+# Secret config — copy from *.example files and fill in your values
+js/config.js
+scripts/.env
+
+# Node
+node_modules/
+scripts/node_modules/
+
+# Claude Code local settings
+.claude/

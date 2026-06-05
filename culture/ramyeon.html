@@ -1,0 +1,1085 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>라면 가이드 · Korean Ramyeon Bible | 한국어 학교</title>
+  <meta name="description" content="The complete Korean ramyeon guide — 50+ instant noodles from Nongshim, Samyang, Ottogi, and Paldo. Spice levels, flavor profiles, and cultural history." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html" class="active"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-icon">🎵</div>
+      <div class="sidebar-brand-text">K-Culture <span>한국 문화</span></div>
+    </div>
+    <p class="sidebar-brand-desc">K-Pop, K-Drama, food, beauty, fashion, gaming, sports &amp; traditions.</p>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">CATEGORIES · 카테고리</div>
+    <a href="kpop.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎵</span> K-Pop <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kpop">
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📜</span> K-Pop History</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🏢</span> Agencies</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">⭐</span> Generations</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎼</span> Genres</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📺</span> Variety Shows</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎬</span> Film &amp; Acting</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">💬</span> Idol Phrases</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🔥</span> Fan Slang</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📣</span> Fan Chants</a>
+    </div>
+    <a href="kdrama.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Drama <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kdrama">
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📺</span> Drama History</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎬</span> Drama Genres</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Dramas</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎯</span> K-Drama Tropes</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💡</span> Speech Levels</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🗣️</span> Fan Culture &amp; Slang</a>
+    </div>
+    <a href="kmovie.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Movie <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kmovie">
+      <a href="kmovie.html#kmovie-history" class="sidebar-link"><span class="link-icon">📽️</span> Movie History</a>
+      <a href="kmovie.html#kmovie-genres" class="sidebar-link"><span class="link-icon">🎬</span> Movie Genres</a>
+      <a href="kmovie.html#kmovie-films" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Films</a>
+      <a href="kmovie.html#kmovie-directors" class="sidebar-link"><span class="link-icon">🎖️</span> Directors</a>
+      <a href="kmovie.html#kmovie-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kmovie.html#kmovie-dialogue" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kmovie.html#kmovie-lines" class="sidebar-link"><span class="link-icon">🗣️</span> Iconic Lines</a>
+      <a href="kmovie.html#kmovie-fanculture" class="sidebar-link"><span class="link-icon">🍿</span> Fan Culture</a>
+    </div>
+    <a href="kfood.html" class="sidebar-accordion-btn active open">
+      <span class="link-icon">🍜</span> K-Food <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="cat-acc-kfood">
+      <a href="kfood.html#kfood-global" class="sidebar-link"><span class="link-icon">🌍</span> K-Food Goes Global</a>
+      <a href="kfood.html#kfood-spotlight" class="sidebar-link"><span class="link-icon">🔥</span> Foods That Went Global</a>
+      <a href="kfood.html#kfood-timeline" class="sidebar-link"><span class="link-icon">📅</span> K-Food Timeline</a>
+      <a href="kfood.html#kfood-dishes" class="sidebar-link"><span class="link-icon">🍽️</span> Essential Dishes</a>
+      <a href="kfood.html#kfood-chefs" class="sidebar-link"><span class="link-icon">👨‍🍳</span> World-Famous Chefs</a>
+      <a href="kfood.html#kfood-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kfood.html#kfood-ordering" class="sidebar-link"><span class="link-icon">🏪</span> Ordering &amp; Dining</a>
+      <a href="kfood.html#kfood-street" class="sidebar-link"><span class="link-icon">🌶️</span> Street Food</a>
+      <a href="kfood.html#kfood-culture" class="sidebar-link"><span class="link-icon">🏮</span> Food Culture &amp; Drinking</a>
+      <div class="sidebar-section" style="font-size:0.62rem;margin:10px 0 4px;padding-left:4px;">DEEP DIVES · 심층 탐구</div>
+      <a href="ramyeon.html" class="sidebar-link active"><span class="link-icon">🍜</span> Ramyeon Guide</a>
+      <a href="mandu.html" class="sidebar-link"><span class="link-icon">🥟</span> Mandu Guide</a>
+      <a href="kchicken.html" class="sidebar-link"><span class="link-icon">🍗</span> Chicken Guide</a>
+      <a href="kbbq.html" class="sidebar-link"><span class="link-icon">🥩</span> K-BBQ Guide</a>
+      <a href="kimchi.html" class="sidebar-link"><span class="link-icon">🥬</span> Kimchi Guide</a>
+    </div>
+    <a href="kbeauty.html" class="sidebar-accordion-btn">
+      <span class="link-icon">✨</span> K-Beauty <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kbeauty">
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Beauty Goes Global</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">⏳</span> K-Beauty Timeline</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">📖</span> Beauty Vocabulary</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🧴</span> 10-Step Skincare</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌿</span> Key Ingredients</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">✨</span> Beauty Trends</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💄</span> Makeup Philosophy</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏥</span> Skin Clinic Culture</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💬</span> K-Beauty Dialogue</a>
+    </div>
+    <a href="kfashion.html" class="sidebar-accordion-btn">
+      <span class="link-icon">👗</span> K-Fashion <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kfashion">
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Fashion Global</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👑</span> Fashion Icons</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⏳</span> Fashion Timeline</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🎨</span> Style Aesthetics</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⭐</span> Idol Fashion</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🗓️</span> Seoul Fashion Week</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">📖</span> Fashion Vocabulary</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏙️</span> Fashion Districts</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👘</span> Hanbok &amp; Traditional Fashion</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">💬</span> Shopping Dialogue</a>
+    </div>
+    <a href="koreanthing.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🇰🇷</span> Korean Thing <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-koreanthing">
+      <a href="koreanthing.html#bap" class="sidebar-link"><span class="link-icon">🍚</span> Rice Obsession</a>
+      <a href="koreanthing.html#chokbeop" class="sidebar-link"><span class="link-icon">👶</span> Youth Protection Laws</a>
+      <a href="koreanthing.html#delivery" class="sidebar-link"><span class="link-icon">🛵</span> Fast Delivery Culture</a>
+      <a href="koreanthing.html#ecology" class="sidebar-link"><span class="link-icon">🦌</span> Invasive Species Crisis</a>
+      <a href="koreanthing.html#table" class="sidebar-link"><span class="link-icon">🔔</span> Table Call Culture</a>
+      <a href="koreanthing.html#transport" class="sidebar-link"><span class="link-icon">🚌</span> Public Transport</a>
+      <a href="koreanthing.html#jjimjilbang" class="sidebar-link"><span class="link-icon">♨️</span> Jjimjilbang</a>
+      <a href="koreanthing.html#surgery" class="sidebar-link"><span class="link-icon">💉</span> Plastic Surgery Culture</a>
+      <a href="koreanthing.html#outdoor-drinking" class="sidebar-link"><span class="link-icon">🍺</span> Outdoor Drinking</a>
+      <a href="koreanthing.html#jeonse" class="sidebar-link"><span class="link-icon">🏠</span> Jeonse Housing</a>
+      <a href="koreanthing.html#traditions" class="sidebar-link"><span class="link-icon">🏮</span> Traditions &amp; Holidays</a>
+      <a href="koreanthing.html#sodams" class="sidebar-link"><span class="link-icon">📜</span> 100 Korean Proverbs</a>
+    </div>
+    <a href="kgaming.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎮</span> K-Gaming <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kgaming">
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📊</span> K-Gaming Stats</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">⏳</span> Gaming Timeline</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🌟</span> Gaming Legends</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🎮</span> Iconic Games</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📺</span> Streaming Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏪</span> PC Bang Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏆</span> Esports Leagues</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">💬</span> Gamer Slang</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📖</span> Gaming Vocabulary</a>
+    </div>
+    <a href="ksports.html" class="sidebar-accordion-btn">
+      <span class="link-icon">⚽</span> K-Sports <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-ksports">
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📊</span> Sports Overview</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚽</span> Football Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚾</span> Baseball Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🏃</span> Marathon Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🌟</span> Individual Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🥋</span> Traditional Sports</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📣</span> Cheer Chants</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+    </div>
+  </nav>
+</aside>
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="food-page-hero">
+      <div class="section-eyebrow">K-FOOD · 한국 음식</div>
+      <h1>라면 가이드 <span class="grad-text">Ramyeon Bible</span></h1>
+      <p>Korea's ramyeon (라면) culture goes far beyond instant noodles — it's a national obsession, a late-night ritual, a hangover cure, and a comfort that crosses every social class. From the original Samyang Ramyeon (삼양라면, 1963) to the globally viral Buldak Bokkeummyeon (불닭볶음면), every packet tells a story.</p>
+      <div class="kr-trans" style="margin-top:10px;">한국의 라면 문화는 단순한 인스턴트 음식을 넘어섭니다 — 국민적인 집착, 야식 의식, 해장식, 그리고 모든 사회 계층을 초월하는 위로입니다. 1963년 최초의 삼양라면부터 전 세계적으로 바이럴 된 불닭볶음면까지, 모든 봉지에 이야기가 담겨 있습니다.</div>
+      <div class="food-stat-row">
+        <div class="food-stat"><div class="food-stat-val">3.6B</div><div class="food-stat-label">Packs sold yearly</div></div>
+        <div class="food-stat"><div class="food-stat-val">1963</div><div class="food-stat-label">First Korean ramyeon</div></div>
+        <div class="food-stat"><div class="food-stat-val">75%</div><div class="food-stat-label">Koreans eat weekly</div></div>
+        <div class="food-stat"><div class="food-stat-val">₩800</div><div class="food-stat-label">Average price per pack</div></div>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-top:24px;">
+      <span class="tip-icon">📖</span>
+      <div class="tip-content">
+        <div class="tip-label">삼양라면의 탄생 · The Birth of Korean Ramyeon (1963)</div>
+        <div class="tip-text">The late Chairman Jeon Joong-yoon, founder of Samyang Foods (삼양식품), developed Korea's first instant noodle — Samyang Ramyeon (삼양라면) — in 1963, after receiving manufacturing technology and equipment from Japan's Myojo Foods (明星食品) entirely free of charge. Driven by a mission to ease the food shortage facing hungry Koreans, Chairman Jeon approached Japan's leading ramen companies for a technology partnership but was turned away by every one of them. It was only through a meeting with Myojo Foods president Okui Kiyosumi — who understood and shared his humanitarian intent — that a breakthrough came: Myojo provided not only the full production process but even the closely guarded soup seasoning formula, all without demanding any royalties.
+          <div class="kr-trans" style="margin-top:8px;">삼양라면(삼양식품)의 창업주인 고 전중윤 회장은 1960년대 초 일본의 '묘조(明星)식품'으로부터 라면 제조 기술과 설비를 무상으로 전수받아 1963년 국내 최초의 인스턴트 라면인 '삼양라면'을 개발했습니다. 배고픈 한국 국민의 식량난을 해결하려 했던 전 회장은 당시 일본의 대표적인 라면 기업들에 기술 제휴를 요청했으나 거절당했습니다. 그러다 일본 묘조식품의 오쿠이 기요스미 사장을 만나 그 취지에 공감대를 형성하였고, 묘조식품의 전폭적인 도움 덕분에 제조 기술은 물론 핵심 기밀이었던 스프 배합 비율까지 아무런 로열티 없이 전수받을 수 있었습니다. <button class="hangul-sound-btn" onclick="speakKorean('삼양라면은 1963년 묘조식품의 도움으로 탄생한 한국 최초의 인스턴트 라면입니다')" aria-label="Listen">🔊</button></div></div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <span class="tip-icon">💡</span>
+      <div class="tip-content">
+        <div class="tip-label">How Koreans Actually Cook Ramyeon</div>
+        <div class="tip-text">Real Korean ramyeon is never made with just water. Common upgrades: add an egg (계란), slice of processed cheese (치즈), kimchi (김치), spam, tteok (떡), or leftover rice. The soggy noodle is intentional — 불어도 맛있다 ("even soggy it's good"). The broth left over after eating is called gukmal (국물), and many Koreans add rice to finish it off.
+        <div class="kr-trans" style="margin-top:8px;">진짜 한국 라면은 물만으로 끓이지 않습니다. 흔한 업그레이드: 계란, 치즈 한 장, 김치, 스팸, 떡, 또는 남은 밥을 넣습니다. 불어도 맛있다는 것은 한국 라면 문화의 특징입니다. 먹고 남은 국물에 밥을 말아 먹는 것도 정석입니다. <button class="hangul-sound-btn" onclick="speakKorean('한국 라면은 계란, 치즈, 김치 등을 넣어 끓입니다. 불어도 맛있습니다.')" aria-label="Listen">🔊</button></div>
+      </div>
+      </div>
+    </div>
+
+    <!-- NONGSHIM -->
+    <div class="food-cat-header">🔴 농심 (Nongshim) <span class="food-cat-count">18 products</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">Founded 1965. Korea's #1 instant noodle brand, holding ~60% market share. Exports to 100+ countries. The red packet of Shin Ramyun (신라면) is one of the most recognized food packages in Asia.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">1965년 창업. 한국 1위 인스턴트 라면 브랜드로 약 60%의 시장 점유율을 보유합니다. 100개국 이상에 수출하며, 신라면 빨간 봉지는 아시아에서 가장 인지도 높은 식품 패키지 중 하나입니다. <button class="hangul-sound-btn" onclick="speakKorean('농심은 1965년 창업한 한국 1위 라면 브랜드입니다.')" aria-label="Listen">🔊</button></div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🍜
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">🥇 신라면 <button class="hangul-sound-btn" onclick="speakKorean('신라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Shin Ramyun</div>
+          <div class="food-card-meta">Nongshim · 농심 · Since 1986</div>
+          <p class="food-card-desc">Korea's #1 best-selling instant noodle and cultural icon. Fiery beef-bone broth with mushrooms and chewy noodles. The red packet is instantly recognizable worldwide. Available in 100+ countries.</p><div class="kr-trans">한국 1위 베스트셀러 인스턴트 라면이자 문화적 아이콘. 버섯과 쫄깃한 면이 든 매콤한 소고기 사골 육수. 빨간 봉지는 전 세계에서 즉시 알아볼 수 있습니다. 100개국 이상에서 판매 중. <button class="hangul-sound-btn" onclick="speakKorean('신라면은 한국 1위 베스트셀러 인스턴트 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Spicy</span><span class="food-tag food-tag-classic">Iconic</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🍲
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">신라면 블랙 <button class="hangul-sound-btn" onclick="speakKorean('신라면 블랙')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Shin Ramyun Black</div>
+          <div class="food-card-meta">Nongshim · 농심 · Since 2011</div>
+          <p class="food-card-desc">Premium upgrade of the original. Richer bone broth (사골), thicker noodles, dehydrated egg. Positioned as a premium product — costs ~3× more than standard. Won a NY Times taste test in 2014.</p><div class="kr-trans">원조의 프리미엄 업그레이드. 더 진한 사골 육수, 두꺼운 면, 건조 계란 포함. 일반 제품보다 약 3배 비싸게 포지셔닝. 2014년 뉴욕타임스 미각 테스트 우승. <button class="hangul-sound-btn" onclick="speakKorean('신라면 블랙은 사골 육수를 사용한 프리미엄 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Spicy</span><span class="food-tag food-tag-premium">Premium</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🦞
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">너구리 <button class="hangul-sound-btn" onclick="speakKorean('너구리')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Neoguri (Raccoon)</div>
+          <div class="food-card-meta">Nongshim · 농심 · Since 1982</div>
+          <p class="food-card-desc">Udon-style thick noodles in a spicy seafood broth with kombu (다시마). One half of the famous Chapaguri (짜파구리, "Ram-don") combo from the Oscar-winning film Parasite (기생충, 2019).</p><div class="kr-trans">다시마가 들어간 매콤한 해물 육수의 우동 스타일 두꺼운 면. 오스카 수상작 기생충(2019)에 등장한 짜파구리("램돈")의 한 재료입니다. <button class="hangul-sound-btn" onclick="speakKorean('너구리는 다시마가 든 우동 스타일 라면으로 기생충 영화에 등장했습니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Med-Spicy</span><span class="food-tag food-tag-viral">Parasite 🎬</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">⬛
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">⬜</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">🥉 짜파게티 <button class="hangul-sound-btn" onclick="speakKorean('짜파게티')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Chapagetti</div>
+          <div class="food-card-meta">Nongshim · 농심 · Since 1984</div>
+          <p class="food-card-desc">Black bean (짜장) instant noodle — a portmanteau of jjajangmyeon (짜장면) + spaghetti. The other half of Chapaguri (짜파구리). Rich, savory black bean sauce with onion and pork flavoring. A beloved comfort food.</p><div class="kr-trans">짜장면과 스파게티의 합성어인 블랙빈(짜장) 인스턴트 면. 짜파구리의 또 다른 재료. 양파와 돼지고기 향의 진하고 고소한 블랙빈 소스. 사랑받는 위로 음식. <button class="hangul-sound-btn" onclick="speakKorean('짜파게티는 짜장면과 스파게티의 합성어로 블랙빈 소스 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">No Heat</span><span class="food-tag food-tag-viral">Parasite 🎬</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🍵
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">6️⃣ 안성탕면 <button class="hangul-sound-btn" onclick="speakKorean('안성탕면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Ansungtangmyun</div>
+          <div class="food-card-meta">Nongshim · 농심 · Since 1983</div>
+          <p class="food-card-desc">Korea's long-running classic comfort ramyeon. Mild, savory broth with a gentle warmth. Tagline: "안성맞춤!" (Perfectly fitting!). Popular with children and those who prefer lighter flavors.</p><div class="kr-trans">오랫동안 사랑받아온 한국의 클래식 컴포트 라면. 부드럽고 구수한 육수에 은은한 따뜻함. 슬로건: "안성맞춤!" 어린이와 순한 맛을 선호하는 이들에게 인기. <button class="hangul-sound-btn" onclick="speakKorean('안성탕면은 오랫동안 사랑받아온 순한 클래식 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag food-tag-classic">Classic</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🥤
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">🔟 육개장 사발면 <button class="hangul-sound-btn" onclick="speakKorean('육개장 사발면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Yukgaejang Cup Noodle</div>
+          <div class="food-card-meta">Nongshim · 농심 · Cup Noodle</div>
+          <p class="food-card-desc">The #1 best-selling cup noodle in Korea. Inspired by 육개장 (spicy shredded beef soup). Deep red broth, glass noodle texture, strong umami. A Korean convenience store staple.</p><div class="kr-trans">한국 1위 베스트셀러 컵라면. 육개장(매콤한 쇠고기 채 수프)에서 영감받음. 짙은 붉은 국물, 당면 식감, 강한 우마미. 편의점 필수 아이템. <button class="hangul-sound-btn" onclick="speakKorean('육개장 사발면은 한국에서 가장 많이 팔리는 컵라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Spicy</span><span class="food-tag food-tag-cup">Cup</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🦑
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">오징어짬뽕 <button class="hangul-sound-btn" onclick="speakKorean('오징어짬뽕')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Squid Jjambbong</div>
+          <div class="food-card-meta">Nongshim · 농심 · Seafood Spicy</div>
+          <p class="food-card-desc">Spicy squid-based seafood broth modeled on Chinese-Korean 짬뽕 (champon). Deep red, heavy seafood umami, chewy noodles. Popular with those who want spicy seafood over beef.</p><div class="kr-trans">중국-한국식 짬뽕에서 영감받은 오징어 기반 해물 육수. 짙은 붉은색, 강한 해물 우마미, 쫄깃한 면. 소고기보다 매콤한 해물을 원하는 분들에게 인기. <button class="hangul-sound-btn" onclick="speakKorean('오징어짬뽕은 오징어 해물 육수의 매콤한 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Spicy</span><span class="food-tag">Seafood</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🔴
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">신라면 더 레드 <button class="hangul-sound-btn" onclick="speakKorean('신라면 더 레드')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Shin Ramyun The Red</div>
+          <div class="food-card-meta">Nongshim · 농심 · Since 2021 · ~7,500 SHU</div>
+          <p class="food-card-desc">Nongshim's premium ultra-spicy answer to the fire noodle era. Launched in 2021 at ~7,500 SHU — nearly double the original Shin Ramyun (신라면). Same signature beef umami base but with amplified chili heat. Available in bag and cup formats.</p>
+          <div class="kr-trans">농심의 프리미엄 초매운 라면. 2021년 출시, 약 7,500 SHU로 원조 신라면의 거의 두 배. 시그니처 소고기 우마미는 그대로에 고추 매운맛을 극대화했습니다. 봉지면과 컵 모두 출시. <button class="hangul-sound-btn" onclick="speakKorean('신라면 더 레드는 2021년 출시된 농심의 초매운 프리미엄 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️🌶️ Very Hot</span><span class="food-tag food-tag-new">2021</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🍤
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">새우탕 <button class="hangul-sound-btn" onclick="speakKorean('새우탕')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Saewootang (Shrimp Soup)</div>
+          <div class="food-card-meta">Nongshim · 농심 · Seafood</div>
+          <p class="food-card-desc">Mild shrimp-flavored broth with a clean, light profile. Compared to spicy options, Saewootang (새우탕) is the "gentle giant" — popular with those who like seafood umami without chili heat.</p><div class="kr-trans">깔끔하고 가벼운 새우 향의 순한 육수. 매운 제품들에 비해 새우탕은 "온화한 거인" — 고추 열기 없이 해물 우마미를 즐기는 이들에게 인기. <button class="hangul-sound-btn" onclick="speakKorean('새우탕은 깔끔하고 순한 새우 향의 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag">Seafood</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🍝
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">⬜</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">스파게티 <button class="hangul-sound-btn" onclick="speakKorean('스파게티')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Spaghetti</div>
+          <div class="food-card-meta">Nongshim · 농심 · Italian-Korean Fusion</div>
+          <p class="food-card-desc">Korean interpretation of pasta — a dry sauce (stir-fry style) with tomato and bacon flavoring over spaghetti-shaped noodles. Unique in the Korean instant noodle world for its non-soup format.</p><div class="kr-trans">파스타의 한국식 해석 — 스파게티 모양 면에 토마토와 베이컨 향의 드라이 소스(볶음 스타일). 국물 없는 형식으로 한국 인스턴트 면 세계에서 독특한 존재. <button class="hangul-sound-btn" onclick="speakKorean('스파게티라면은 국물 없는 볶음 스타일의 독특한 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">No Heat</span><span class="food-tag">Dry (Stir)</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🍜
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">⬜</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">생생우동 <button class="hangul-sound-btn" onclick="speakKorean('생생우동')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Saeng-saeng Udon</div>
+          <div class="food-card-meta">Nongshim · 농심 · Fresh Udon</div>
+          <p class="food-card-desc">Soft, fresh-style udon noodles in a mild dashi broth. Unlike most ramyeon, uses a softer noodle texture to mimic real udon. Light and easy on the stomach — great for late-night or recovery eating.</p><div class="kr-trans">담백한 다시 육수에 부드러운 신선 스타일의 우동 면. 대부분의 라면과 달리 진짜 우동을 흉내 낸 부드러운 면 식감. 가볍고 소화에 부담 없음 — 야식이나 회복식으로 좋음. <button class="hangul-sound-btn" onclick="speakKorean('생생우동은 부드러운 우동 면의 담백한 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag">Udon Style</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🍜
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">⬜</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">튀김우동 <button class="hangul-sound-btn" onclick="speakKorean('튀김우동')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Twigim Udon</div>
+          <div class="food-card-meta">Nongshim · 농심 · Fried Udon</div>
+          <p class="food-card-desc">Fried (튀김) udon-style noodles with a tempura-esque crunch on the dehydrated toppings. Mild, savory dashi broth. The crispy toppings are what make this one unique — add them at the end.</p><div class="kr-trans">건조 토핑에 튀김 같은 바삭함이 있는 튀긴 우동 스타일 면. 담백하고 고소한 다시 육수. 바삭한 토핑이 이 제품을 특별하게 만듦 — 마지막에 넣을 것. <button class="hangul-sound-btn" onclick="speakKorean('튀김우동은 바삭한 튀김 토핑이 특징인 우동 스타일 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag">Udon Style</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🍲
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">보글보글 부대찌개면 <button class="hangul-sound-btn" onclick="speakKorean('보글보글 부대찌개면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Budae Jjigae Ramyeon</div>
+          <div class="food-card-meta">Nongshim · 농심 · Army Stew</div>
+          <p class="food-card-desc">Inspired by 부대찌개 (Army Base Stew) — the post-Korean-War fusion of American military surplus (SPAM, hot dogs) with Korean kimchi and gochujang. Rich, complex, slightly sweet spicy.</p><div class="kr-trans">부대찌개에서 영감 — 한국전쟁 후 미군 PX 물품(스팸, 핫도그)을 한국 김치와 고추장과 융합한 퓨전. 진하고 복잡하며 달콤하게 매운 맛. <button class="hangul-sound-btn" onclick="speakKorean('보글보글 부대찌개면은 부대찌개에서 영감받은 달콤 매콤한 퓨전 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag">Fusion</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">❄️
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">⬜</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">둥지냉면 <button class="hangul-sound-btn" onclick="speakKorean('둥지냉면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Dungji Cold Noodle</div>
+          <div class="food-card-meta">Nongshim · 농심 · Cold Noodle</div>
+          <p class="food-card-desc">Korea's best-known instant cold noodle. Nest-shaped (둥지 = nest) noodles in a tangy, sweet-savory broth served cold or at room temp. A summer staple — refreshing and light.</p><div class="kr-trans">한국에서 가장 유명한 인스턴트 냉면. 둥지 모양(둥지 = 새 둥지) 면을 새콤달콤한 육수에 차갑게 먹음. 여름 필수품 — 상쾌하고 가벼운 맛. <button class="hangul-sound-btn" onclick="speakKorean('둥지냉면은 새콤달콤한 한국의 대표 인스턴트 냉면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Cold · No Heat</span><span class="food-tag">Summer</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🏅
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">신라면 건면 <button class="hangul-sound-btn" onclick="speakKorean('신라면 건면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Shin Ramyun Dehydrated</div>
+          <div class="food-card-meta">Nongshim · 농심 · Lower Calorie</div>
+          <p class="food-card-desc">Air-dried (건면) version of 신라면 — lower fat than fried noodles. Same spicy broth flavor. Recommended for health-conscious ramyeon lovers. Texture is slightly different but broth is identical.</p><div class="kr-trans">신라면의 에어 건조(건면) 버전 — 튀긴 면보다 지방 함량 낮음. 동일한 매콤한 육수 맛. 건강을 신경 쓰는 라면 마니아에게 추천. 식감은 약간 다르지만 육수는 동일. <button class="hangul-sound-btn" onclick="speakKorean('신라면 건면은 칼로리가 낮은 건강형 신라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️ Spicy</span><span class="food-tag">Healthier</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🌊
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">해물탕면 <button class="hangul-sound-btn" onclick="speakKorean('해물탕면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Haemul Tang Myeon</div>
+          <div class="food-card-meta">Nongshim · 농심 · Seafood Hot Pot</div>
+          <p class="food-card-desc">Inspired by Korean seafood hot pot (해물탕). Rich, complex seafood broth with shrimp, clams, and octopus flavoring. Deep umami, moderate heat. A favorite for seafood lovers who want substance.</p><div class="kr-trans">한국 해물탕에서 영감. 새우, 조개, 문어 향의 진하고 복잡한 해물 육수. 깊은 우마미, 보통 정도의 매운맛. 알찬 해물 요리를 원하는 마니아의 최애. <button class="hangul-sound-btn" onclick="speakKorean('해물탕면은 새우와 조개 향의 진한 해물 육수 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Spicy</span><span class="food-tag">Seafood</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">⬛
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">사천짜파게티 <button class="hangul-sound-btn" onclick="speakKorean('사천짜파게티')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Sichuan Chapagetti</div>
+          <div class="food-card-meta">Nongshim · 농심 · Spicy Black Bean</div>
+          <p class="food-card-desc">The spicy upgrade of 짜파게티 — black bean sauce with Sichuan-inspired heat. A bold fusion: Korean 짜장 flavors meet Chinese 마라 (mala) spice. Dry stir-fry style.</p><div class="kr-trans">짜파게티의 매운 업그레이드 — 사천 스타일의 매운 블랙빈 소스. 한국 짜장 풍미와 중국 마라 향신료의 대담한 퓨전. 드라이 볶음 스타일. <button class="hangul-sound-btn" onclick="speakKorean('사천짜파게티는 마라 향신료를 더한 매운 짜장 볶음 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag">Dry (Stir)</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🥢
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">⬜</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">짜파구리 <button class="hangul-sound-btn" onclick="speakKorean('짜파구리')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Chapaguri (Ram-don)</div>
+          <div class="food-card-meta">농심 Combo · 짜파게티 + 너구리</div>
+          <p class="food-card-desc">Not an official product — a DIY mix of Chapagetti (짜파게티) + Neoguri (너구리), cooked together. Made famous globally by the 2019 film Parasite (기생충). Western media coined it "Ram-don." Top with a seared sirloin steak as in the film.</p><div class="kr-trans">공식 제품이 아님 — 짜파게티 + 너구리를 함께 요리하는 DIY 조합. 2019년 영화 기생충으로 전 세계에 유명해짐. 서양 언론은 "램돈"이라 불렀음. 영화처럼 구운 등심 스테이크를 올려 완성. <button class="hangul-sound-btn" onclick="speakKorean('짜파구리는 짜파게티와 너구리를 섞어 만드는 기생충 영화의 램돈입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-viral">Parasite 🎬</span><span class="food-tag">DIY Combo</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SAMYANG -->
+    <div class="food-cat-header">🔥 삼양 (Samyang) <span class="food-cat-count">11 products</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">Founded 1961 — makers of Korea's very first instant noodle (삼양라면, 1963). Later became globally famous for Buldak Bokkeummyeon (불닭볶음면), which spawned an entire "fire challenge" viral movement on YouTube and TikTok.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">1961년 창업 — 한국 최초의 인스턴트 라면(삼양라면, 1963)을 만든 회사입니다. 이후 불닭볶음면으로 유튜브와 틱톡에서 전 세계적인 파이어 챌린지 바이럴 열풍을 일으키며 글로벌 명성을 얻었습니다. <button class="hangul-sound-btn" onclick="speakKorean('삼양은 1961년 창업했으며 불닭볶음면으로 전 세계에 알려진 브랜드입니다.')" aria-label="Listen">🔊</button></div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🏆
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">5️⃣ 삼양라면 <button class="hangul-sound-btn" onclick="speakKorean('삼양라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Original Samyang Ramyun</div>
+          <div class="food-card-meta">Samyang · 삼양 · Korea's First (1963)</div>
+          <p class="food-card-desc">The first instant noodle in Korean history, introduced in 1963. Light, savory broth with a nostalgic simplicity. Many older Koreans grew up on this — it represents an era when instant noodles were a luxury and a lifeline.</p><div class="kr-trans">1963년 한국 역사 최초의 인스턴트 라면. 향수를 자아내는 단순하고 담백한 구수한 육수. 많은 한국 어르신들이 이 라면으로 자랐음 — 인스턴트 라면이 사치품이자 생명줄이었던 시대를 상징합니다. <button class="hangul-sound-btn" onclick="speakKorean('삼양라면은 1963년에 탄생한 한국 최초의 인스턴트 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag food-tag-classic">Historic 1963</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🐔
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️🌶️🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">4️⃣ 불닭볶음면 <button class="hangul-sound-btn" onclick="speakKorean('불닭볶음면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Buldak Bokkeummyeon</div>
+          <div class="food-card-meta">Samyang · 삼양 · Since 2012 · 4,404 SHU</div>
+          <p class="food-card-desc">The "Fire Chicken Noodle" — 4,404 Scoville. Started the global K-food spice challenge on YouTube. Dry stir-fry style with sweet-spicy chicken sauce. Now exported worldwide. The chicken (닭) mascot is beloved.</p><div class="kr-trans">"불닭볶음면" — 4,404 스코빌. 유튜브에서 전 세계적인 K-푸드 매운맛 챌린지를 시작했습니다. 달콤하고 매운 닭 소스의 드라이 볶음 스타일. 현재 전 세계에 수출 중. 닭 마스코트는 큰 사랑을 받고 있습니다. <button class="hangul-sound-btn" onclick="speakKorean('불닭볶음면은 4404 스코빌의 매운 닭 볶음 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️🌶️🌶️ Extreme</span><span class="food-tag food-tag-viral">Global Viral</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🍝
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">까르보불닭볶음면 <button class="hangul-sound-btn" onclick="speakKorean('까르보불닭볶음면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Carbonara Buldak</div>
+          <div class="food-card-meta">Samyang · 삼양 · Creamy Spicy</div>
+          <p class="food-card-desc">The most popular 불닭 variant globally. Creamy carbonara sauce cut with the signature buldak heat — milder than original but with a rich, addictive creaminess. A favorite for people who find original too hot.</p><div class="kr-trans">전 세계에서 가장 인기 있는 불닭 변형. 시그니처 불닭 매운맛이 가미된 크리미한 카르보나라 소스 — 원조보다 순하지만 풍부하고 중독적인 크림감. 원조가 너무 매운 분들의 최애. <button class="hangul-sound-btn" onclick="speakKorean('까르보불닭볶음면은 크림 카르보나라와 불닭을 결합한 가장 인기 있는 변형입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️ Spicy</span><span class="food-tag food-tag-viral">Most Popular Variant</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">💀
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️🌶️🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">2배매운 핵불닭볶음면 <button class="hangul-sound-btn" onclick="speakKorean('2배매운 핵불닭볶음면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Nuclear Buldak (2× Spicy)</div>
+          <div class="food-card-meta">Samyang · 삼양 · 8,706 SHU</div>
+          <p class="food-card-desc">Double the Scoville of original 불닭 — 8,706 SHU. This is the noodle that made Korean medical staff shake their heads. Used in extreme food challenges. Not recommended for spice beginners or people with stomach issues.</p><div class="kr-trans">원조 불닭의 두 배 스코빌 — 8,706 SHU. 한국 의료진도 고개를 절레절레 흔들게 만든 라면. 극한 음식 챌린지에 사용됩니다. 매운맛 초보자나 위장 문제가 있는 분들에게는 비추천. <button class="hangul-sound-btn" onclick="speakKorean('핵불닭볶음면은 8706 스코빌의 극한 매운 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">💀 Nuclear</span><span class="food-tag food-tag-viral">Challenge Level</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🧀
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">치즈불닭볶음면 <button class="hangul-sound-btn" onclick="speakKorean('치즈불닭볶음면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Cheese Buldak</div>
+          <div class="food-card-meta">Samyang · 삼양 · Spicy + Cheesy</div>
+          <p class="food-card-desc">Buldak heat balanced by a cheese powder topping. The dairy fat tones down the spice, making this one of the more approachable 불닭 variants. Mix the cheese in fully before eating — it binds everything together.</p><div class="kr-trans">치즈 파우더 토핑으로 불닭 매운맛을 완화. 유지방이 매운맛을 낮춰 불닭 변형 중 가장 접근하기 쉬운 편. 먹기 전 치즈를 충분히 섞어야 함 — 전체를 하나로 결합시켜 줍니다. <button class="hangul-sound-btn" onclick="speakKorean('치즈불닭볶음면은 치즈로 매운맛을 완화한 불닭 변형입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️ Spicy</span><span class="food-tag">Cheese</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">⬛
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">짜장불닭볶음면 <button class="hangul-sound-btn" onclick="speakKorean('짜장불닭볶음면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Black Bean Buldak</div>
+          <div class="food-card-meta">Samyang · 삼양 · Dark + Spicy</div>
+          <p class="food-card-desc">Black bean sauce meets buldak fire — dark, savory, and spicy. The blackness of the sauce makes it visually striking. Less well-known internationally but a hit with fans who want 짜장 flavors with a kick.</p><div class="kr-trans">블랙빈 소스에 불닭 화력 — 어둡고 고소하며 매운 맛. 소스의 검은색이 시각적으로 인상적. 국제적으로는 덜 알려졌지만 짜장 풍미에 매운맛을 원하는 팬들에게 인기. <button class="hangul-sound-btn" onclick="speakKorean('짜장불닭볶음면은 블랙빈 소스와 불닭을 결합한 매운 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️ Spicy</span><span class="food-tag">Black Bean</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🟡
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">커리불닭볶음면 <button class="hangul-sound-btn" onclick="speakKorean('커리불닭볶음면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Curry Buldak</div>
+          <div class="food-card-meta">Samyang · 삼양 · Yellow Curry Spicy</div>
+          <p class="food-card-desc">Buldak heat infused with curry spice — a warm, aromatic twist on the fire chicken formula. Yellow-orange color. The curry aroma softens the impact slightly while adding turmeric depth.</p><div class="kr-trans">커리 향신료가 가미된 불닭 — 파이어 치킨 공식에 따뜻하고 향기로운 변형. 노란-주황색. 커리 향이 충격을 약간 부드럽게 하면서 강황 깊이를 더합니다. <button class="hangul-sound-btn" onclick="speakKorean('커리불닭볶음면은 커리 향신료를 더한 불닭의 변형입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️ Spicy</span><span class="food-tag">Curry</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🍜
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️🌶️🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">불닭볶음탕면 <button class="hangul-sound-btn" onclick="speakKorean('불닭볶음탕면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Buldak Bokkeumtangmyeon</div>
+          <div class="food-card-meta">Samyang · 삼양 · Soup Version</div>
+          <p class="food-card-desc">The soup (탕) version of 불닭 — all the fire chicken flavor in a broth format. The spice feels even more intense as it's distributed through liquid. Korea's spiciest mainstream soup ramyeon.</p><div class="kr-trans">불닭의 국물(탕) 버전 — 모든 파이어 치킨 맛이 국물 형태로. 액체에 분산되어 매운맛이 더욱 강렬하게 느껴집니다. 한국에서 가장 매운 주류 국물 라면. <button class="hangul-sound-btn" onclick="speakKorean('불닭볶음탕면은 국물 형태의 불닭 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️🌶️🌶️ Extreme</span><span class="food-tag">Soup</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🌸
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">로제불닭볶음면 <button class="hangul-sound-btn" onclick="speakKorean('로제불닭볶음면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Rosé Buldak</div>
+          <div class="food-card-meta">Samyang · 삼양 · Pink Creamy Spicy</div>
+          <p class="food-card-desc">The trendy rosé pasta-inspired 불닭 — tomato cream meets buldak fire. Pink-orange color, rich and slightly sweet. Very popular with younger audiences riding the rosé pasta trend from K-drama culture.</p><div class="kr-trans">트렌디한 로제 파스타에서 영감받은 불닭 — 토마토 크림에 불닭 화력. 핑크-오렌지색, 풍부하고 살짝 달콤. K-드라마 문화의 로제 파스타 트렌드를 타는 젊은 층에게 매우 인기. <button class="hangul-sound-btn" onclick="speakKorean('로제불닭볶음면은 로제 파스타에서 영감받은 크리미한 불닭입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag food-tag-new">Trending</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🍱
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">맛있는라면 <button class="hangul-sound-btn" onclick="speakKorean('맛있는라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Masissnun Ramyun</div>
+          <div class="food-card-meta">Samyang · 삼양 · Everyday Mild</div>
+          <p class="food-card-desc">"Delicious Ramyun" — exactly what it says. A simple, everyday mild ramyeon with clean beef broth and balanced flavor. No gimmicks. For times you want classic comfort without spice.</p><div class="kr-trans">"맛있는 라면" — 이름 그대로입니다. 깔끔한 소고기 육수와 균형 잡힌 맛의 단순한 일상 순한 라면. 특별한 것 없음. 매운맛 없이 클래식한 위로가 필요할 때. <button class="hangul-sound-btn" onclick="speakKorean('맛있는라면은 담백하고 균형 잡힌 일상 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag food-tag-classic">Everyday</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🌊
+          <span class="food-card-brand-badge">삼양</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">나가사키짬뽕 <button class="hangul-sound-btn" onclick="speakKorean('나가사키짬뽕')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Nagasaki Champon</div>
+          <div class="food-card-meta">Samyang · 삼양 · Japanese-Korean Fusion</div>
+          <p class="food-card-desc">Inspired by the Nagasaki champon (champuru) dish — a Japanese-Korean-Chinese seafood noodle fusion. Lighter, thicker broth than standard Korean jjambbong. A niche but beloved option for those who like creamy seafood.</p><div class="kr-trans">나가사키 챰뽕(챔푸루)에서 영감 — 일본-한국-중국 해물 면 퓨전. 표준 한국 짬뽕보다 가볍고 두꺼운 육수. 크리미한 해물을 좋아하는 분들에게 사랑받는 틈새 제품. <button class="hangul-sound-btn" onclick="speakKorean('나가사키짬뽕은 일본 챰뽕에서 영감받은 크리미한 해물 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag">Fusion</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- OTTOGI -->
+    <div class="food-cat-header">🟡 오뚜기 (Ottogi) <span class="food-cat-count">11 products</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">Founded 1969. Known for quality at affordable prices. Jin Ramyun (진라면) is Korea's #2 best-selling ramyeon after Shin Ramyun (신라면) and holds a devoted following for its full, rounded flavor. Ottogi also makes bibimmyeon (비빔면), Korea's definitive cold mixed noodle.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">1969년 창업. 합리적인 가격의 품질로 유명합니다. 진라면은 신라면에 이어 한국 라면 판매 2위로 풍부하고 균형 잡힌 맛으로 마니아층이 두텁습니다. 오뚜기는 한국 대표 차가운 비빔면인 비빔면도 제조합니다. <button class="hangul-sound-btn" onclick="speakKorean('오뚜기는 1969년 창업했으며 진라면과 비빔면이 대표 제품입니다.')" aria-label="Listen">🔊</button></div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🍜
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">🥈 진라면 매운맛 <button class="hangul-sound-btn" onclick="speakKorean('진라면 매운맛')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Jin Ramyun Spicy</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Since 1988 · #2 Best-Seller</div>
+          <p class="food-card-desc">Korea's #2 best-selling ramyeon. Rich, complex spicy broth with a deep umami that many prefer over Shin Ramyun (신라면). Famous for the tagline "진한 라면의 표준" (The standard of rich ramyeon). The yellow packet is iconic.</p><div class="kr-trans">한국 2위 베스트셀러 라면. 신라면보다 선호하는 이들도 많은 풍부하고 복잡한 매콤한 육수. "진한 라면의 표준" 태그라인으로 유명합니다. 노란 봉지가 상징적. <button class="hangul-sound-btn" onclick="speakKorean('진라면 매운맛은 한국 2위 베스트셀러의 진하고 매콤한 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️ Spicy</span><span class="food-tag food-tag-classic">#2 National</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🍵
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">진라면 순한맛 <button class="hangul-sound-btn" onclick="speakKorean('진라면 순한맛')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Jin Ramyun Mild</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Mild Version</div>
+          <p class="food-card-desc">The mild counterpart to Jin Ramyun Spicy (진라면 매운맛) — same deep, savory broth with virtually no heat. Recommended for children, sensitive stomachs, and foreigners new to Korean ramyeon. Just as flavorful, minus the fire.</p><div class="kr-trans">진라면 매운맛의 순한 버전 — 같은 깊고 구수한 육수지만 열기 없음. 어린이, 민감한 위, 한국 라면을 처음 접하는 외국인에게 추천합니다. 풍미는 그대로, 매운맛만 뺐습니다. <button class="hangul-sound-btn" onclick="speakKorean('진라면 순한맛은 매운맛 없이 진한 풍미를 즐길 수 있는 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">No Heat</span><span class="food-tag">Family-Friendly</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🍝
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">⬜</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">비빔면 <button class="hangul-sound-btn" onclick="speakKorean('비빔면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Bibimmyeon</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Cold Mixed Noodle</div>
+          <p class="food-card-desc">A summer institution — cold chewy noodles tossed in a sweet-tangy-spicy gochujang sauce. Drain the noodles, add ice, mix with sauce. Most Koreans argue about 오뚜기 vs. 팔도 비빔면. Ottogi's is slightly sweeter.</p><div class="kr-trans">여름의 명물 — 달콤하고 새콤하며 매운 고추장 소스에 쫄깃한 냉면을 비빔. 면을 건져 얼음과 함께 소스에 비빕니다. 대부분의 한국인은 오뚜기 vs 팔도 비빔면을 놓고 논쟁을 벌임. 오뚜기는 약간 더 달콤. <button class="hangul-sound-btn" onclick="speakKorean('비빔면은 여름에 먹는 새콤달콤한 냉비빔면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Cold</span><span class="food-tag">Summer Ritual</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🌰
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">참깨라면 <button class="hangul-sound-btn" onclick="speakKorean('참깨라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Chamkkae Ramyun</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Sesame Broth</div>
+          <p class="food-card-desc">Sesame (참깨)-flavored broth — nutty, warm, and subtly rich. A distinctive option in the Korean instant noodle world. The sesame flavor is pronounced and pairs well with a soft-boiled egg and spinach.</p><div class="kr-trans">참깨 향의 육수 — 고소하고 따뜻하며 은은하게 풍부합니다. 한국 인스턴트 면 세계에서 독특한 선택. 참깨 향이 뚜렷하고 반숙 계란과 시금치와 잘 어울립니다. <button class="hangul-sound-btn" onclick="speakKorean('참깨라면은 고소한 참깨 향의 독특한 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag">Sesame</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🔥
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">🌶️🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">열라면 <button class="hangul-sound-btn" onclick="speakKorean('열라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Yeol Ramyun (Ottogi)</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Extra Spicy</div>
+          <p class="food-card-desc">Ottogi's extra-spicy entry — competes with Nongshim's Yeol Ramyun (농심 열라면). Known for a different kind of heat: more capsaicin-forward with less of the umami base. Often used in hot food challenges alongside 불닭.</p>
+          <div class="kr-trans">오뚜기의 초매운 라면 — 농심 열라면과 경쟁합니다. 다른 종류의 매운맛으로 유명: 우마미보다 캡사이신이 강조됩니다. 불닭과 함께 핫 푸드 챌린지에 자주 사용됩니다. <button class="hangul-sound-btn" onclick="speakKorean('열라면은 오뚜기의 캡사이신 강조형 초매운 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️🌶️ Very Hot</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🦑
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">7️⃣ 진짬뽕 <button class="hangul-sound-btn" onclick="speakKorean('진짬뽕')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Jin Jjambbong</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Since 2015 · Top 10</div>
+          <p class="food-card-desc">Ottogi's flagship seafood jjambbong ramyeon — launched in 2015 and became an instant bestseller, challenging Nongshim's market dominance. Rich, deep-red spicy broth packed with shrimp, squid, and shellfish umami. Bold, satisfying, and consistently ranked in Korea's top 10.</p>
+          <div class="kr-trans">오뚜기의 대표 해물 짬뽕 라면 — 2015년 출시 후 즉각 베스트셀러가 되어 농심의 시장 우위에 도전했습니다. 새우, 오징어, 조개 우마미가 가득한 진하고 붉은 매콤한 육수. 묵직하고 든든하며 꾸준히 한국 TOP 10에 선정됩니다. <button class="hangul-sound-btn" onclick="speakKorean('진짬뽕은 오뚜기의 대표 해물 짬뽕 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️ Spicy</span><span class="food-tag">Seafood</span><span class="food-tag food-tag-classic">Top 10</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🫕
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">오동통면 <button class="hangul-sound-btn" onclick="speakKorean('오동통면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Odongtong Myeon</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Thick Noodle</div>
+          <p class="food-card-desc">Thick, chewy noodles (오동통 = plump/chubby) in a hearty broth. The noodle itself is the main attraction — wider and more substantial than standard ramyeon. Satisfying and filling with a solid chew.</p><div class="kr-trans">두껍고 쫄깃한 면(오동통 = 통통함)이 든든한 육수에. 면 자체가 주인공 — 표준 라면보다 넓고 알찹니다. 든든하고 포만감 있는 씹는 맛. <button class="hangul-sound-btn" onclick="speakKorean('오동통면은 두껍고 쫄깃한 면이 특징인 든든한 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag">Thick Noodle</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🏆
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">⬜</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">짜슐랭 <button class="hangul-sound-btn" onclick="speakKorean('짜슐랭')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Jjasulaeng</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Premium Black Bean</div>
+          <p class="food-card-desc">A punny name (짜장 + Michelin) — premium instant black bean noodle positioned as a gourmet option. Rich, complex black bean sauce with notes of sesame and pork. Often cited as the best instant jjajangmyeon (짜장면) available.</p><div class="kr-trans">언어유희 이름(짜장 + 미슐랭) — 미식 옵션으로 포지셔닝된 프리미엄 인스턴트 블랙빈 면. 참깨와 돼지고기 향의 진하고 복잡한 블랙빈 소스. 최고의 인스턴트 짜장면으로 자주 언급됩니다. <button class="hangul-sound-btn" onclick="speakKorean('짜슐랭은 짜장과 미슐랭을 결합한 이름의 프리미엄 짜장 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">No Heat</span><span class="food-tag food-tag-premium">Premium</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🥛
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">크림진라면 <button class="hangul-sound-btn" onclick="speakKorean('크림진라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Cream Jin Ramyun</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Creamy Upgrade</div>
+          <p class="food-card-desc">A creamy, indulgent twist on the beloved 진라면 base. Add cream or milk for a luscious finish — the packaging even suggests adding a splash of milk. Rich, smooth, and less intense than the original.</p><div class="kr-trans">사랑받는 진라면을 기반으로 한 크리미한 변형. 크림이나 우유를 추가하면 더욱 풍성해짐 — 패키지에도 우유 한 스플래시 추가를 권장합니다. 풍부하고 부드러우며 원조보다 덜 강렬. <button class="hangul-sound-btn" onclick="speakKorean('크림진라면은 우유를 넣어 크리미하게 즐기는 진라면 변형입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild-Med</span><span class="food-tag food-tag-new">Trendy</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🍄
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">팽이버섯라면 <button class="hangul-sound-btn" onclick="speakKorean('팽이버섯라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Enoki Mushroom Ramyun</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Mushroom Broth</div>
+          <p class="food-card-desc">Enoki mushroom (팽이버섯)-based broth — earthy, light, and savory. One of the more health-conscious Ottogi options. The umami from mushrooms creates a surprisingly deep broth without heavy seasoning.</p><div class="kr-trans">팽이버섯 기반 육수 — 흙향기 나고 가볍고 구수합니다. 오뚜기의 건강 지향 옵션 중 하나. 버섯의 우마미가 과도한 조미 없이 놀라울 정도로 깊은 육수를 만들어냅니다. <button class="hangul-sound-btn" onclick="speakKorean('팽이버섯라면은 팽이버섯 우마미의 건강한 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag">Mushroom</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">📦
+          <span class="food-card-brand-badge">오뚜기</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">컵누들 <button class="hangul-sound-btn" onclick="speakKorean('컵누들')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Cup Noodle</div>
+          <div class="food-card-meta">Ottogi · 오뚜기 · Light Cup</div>
+          <p class="food-card-desc">Ottogi's lightweight cup noodle — thin noodles, light broth, quick prep. Designed for the office desk, convenience store, or anywhere you need a fast, fuss-free meal. Comes in multiple flavors.</p><div class="kr-trans">오뚜기의 가벼운 컵라면 — 얇은 면, 가벼운 육수, 빠른 조리. 사무실 책상, 편의점, 어디서나 빠르고 간편한 식사가 필요할 때. 다양한 맛으로 출시. <button class="hangul-sound-btn" onclick="speakKorean('컵누들은 빠르고 간편한 오뚜기의 가벼운 컵라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Light</span><span class="food-tag food-tag-cup">Cup</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PALDO -->
+    <div class="food-cat-header">🔵 팔도 (Paldo) <span class="food-cat-count">6 products</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">Founded 1983. Paldo is known for the iconic Paldo Bibimmyeon (팔도비빔면), often declared the best instant cold noodle in Korea, and for Wang Ttukkeong (왕뚜껑) — the giant-lid cup noodle that Koreans use as both a meal and a cooking vessel on road trips.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">1983년 창업. 팔도비빔면은 한국 최고의 인스턴트 차가운 비빔면으로 자주 꼽히며, 왕뚜껑은 뚜껑이 커서 그릇 대신 쓸 수 있는 컵라면으로 여행 필수템으로 유명합니다. <button class="hangul-sound-btn" onclick="speakKorean('팔도는 1983년 창업했으며 팔도비빔면과 왕뚜껑이 대표 제품입니다.')" aria-label="Listen">🔊</button></div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-paldo">🥢
+          <span class="food-card-brand-badge">팔도</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">9️⃣ 팔도비빔면 <button class="hangul-sound-btn" onclick="speakKorean('팔도비빔면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Paldo Bibimmyeon</div>
+          <div class="food-card-meta">Paldo · 팔도 · Since 1984 · Summer Legend</div>
+          <p class="food-card-desc">THE original instant bibimmyeon — created in 1984 and still considered the gold standard. Chewy noodles, a sweet-tangy-spicy gochujang sauce. The bibimmyeon debate (팔도 vs 오뚜기) is Korea's greatest food argument.</p><div class="kr-trans">1984년 탄생한 오리지널 인스턴트 비빔면 — 지금도 최고의 기준으로 인정받습니다. 쫄깃한 면과 달콤하고 새콤하며 매운 고추장 소스. 팔도 vs 오뚜기 비빔면 논쟁은 한국 최대의 음식 논쟁입니다. <button class="hangul-sound-btn" onclick="speakKorean('팔도비빔면은 1984년 탄생한 한국 최초의 인스턴트 비빔면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Cold · Mild Heat</span><span class="food-tag food-tag-classic">Summer 1984</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-paldo">👑
+          <span class="food-card-brand-badge">팔도</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">왕뚜껑 <button class="hangul-sound-btn" onclick="speakKorean('왕뚜껑')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Wangttukkeong (King Lid)</div>
+          <div class="food-card-meta">Paldo · 팔도 · Cup Noodle Icon</div>
+          <p class="food-card-desc">Korea's most famous cup noodle — the lid (뚜껑) is oversized (왕 = king) to be used as a plate. Spicy seafood broth with thick noodles. A highway rest-stop and camping staple. The lid-as-bowl hack is universally known.</p><div class="kr-trans">한국에서 가장 유명한 컵라면 — 뚜껑(뚜껑)이 지나치게 커서(왕 = 왕) 그릇으로 사용 가능. 두꺼운 면이 든 매콤한 해물 육수. 고속도로 휴게소와 캠핑 필수품. 뚜껑을 그릇으로 활용하는 방법은 누구나 압니다. <button class="hangul-sound-btn" onclick="speakKorean('왕뚜껑은 뚜껑이 그릇 역할을 하는 한국의 국민 컵라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag food-tag-classic">Road Trip Icon</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-paldo">🌊
+          <span class="food-card-brand-badge">팔도</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">일품해물라면 <button class="hangul-sound-btn" onclick="speakKorean('일품해물라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Ilpum Haemul Ramyun</div>
+          <div class="food-card-meta">Paldo · 팔도 · Premium Seafood</div>
+          <p class="food-card-desc">일품 (First-class) seafood ramyeon — premium positioning with a richer, cleaner seafood broth than most competitors. Shrimp, clams, and squid base. Paldo's most upscale offering in the instant category.</p><div class="kr-trans">일품(일류) 해물 라면 — 대부분의 경쟁사보다 더 진하고 깔끔한 해물 육수로 프리미엄 포지셔닝. 새우, 조개, 오징어 기반. 팔도 인스턴트 중 가장 고급스러운 옵션. <button class="hangul-sound-btn" onclick="speakKorean('일품해물라면은 팔도의 프리미엄 해물 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag food-tag-premium">Premium</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-paldo">📦
+          <span class="food-card-brand-badge">팔도</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">팔도라면 <button class="hangul-sound-btn" onclick="speakKorean('팔도라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Original Paldo Ramyun</div>
+          <div class="food-card-meta">Paldo · 팔도 · Classic</div>
+          <p class="food-card-desc">Paldo's original classic ramyeon — a mild, clean beef broth with straightforward noodles. Less well-known than Shin Ramyun (신라면) or Jin Ramyun (진라면) but appreciated for its simplicity. A local staple in certain regions of Korea.</p><div class="kr-trans">팔도의 오리지널 클래식 라면 — 담백하고 깔끔한 소고기 육수에 기본 면. 신라면이나 진라면보다 덜 알려졌지만 단순함으로 사랑받습니다. 한국 특정 지역의 지역 필수품. <button class="hangul-sound-btn" onclick="speakKorean('팔도라면은 담백하고 깔끔한 팔도의 오리지널 클래식 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag food-tag-classic">Classic</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-paldo">🦊
+          <span class="food-card-brand-badge">팔도</span>
+          <span class="food-card-spice">🌶️🌶️🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">괄도 네넴띤 <button class="hangul-sound-btn" onclick="speakKorean('괄도 네넴띤')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Gwaldo Nenenttin (Gyeongsang Accent)</div>
+          <div class="food-card-meta">Paldo · 팔도 · Viral Spicy Bibimmyeon</div>
+          <p class="food-card-desc">A limited-edition ultra-spicy bibimmyeon written in the Gyeongsang (경상도) dialect — 팔도비빔면 = 괄도네넴띤 in regional pronunciation. Became a massive viral sensation in 2019. Twice as spicy as the original.</p><div class="kr-trans">경상도 방언으로 쓰인 한정판 초매운 비빔면 — 팔도비빔면 = 경상도 발음으로 괄도네넴띤. 2019년 대규모 바이럴 센세이션이 됐습니다. 원조보다 두 배 매운맛. <button class="hangul-sound-btn" onclick="speakKorean('괄도 네넴띤은 경상도 방언으로 쓰인 초매운 비빔면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️🌶️🌶️ Nuclear</span><span class="food-tag food-tag-viral">Viral 2019</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-paldo">🍤
+          <span class="food-card-brand-badge">팔도</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">킹뚜껑 <button class="hangul-sound-btn" onclick="speakKorean('킹뚜껑')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">King Ttukkeong</div>
+          <div class="food-card-meta">Paldo · 팔도 · XL Cup</div>
+          <p class="food-card-desc">Even bigger than Wang Ttukkeong (왕뚜껑) — the XL version for truly hungry people. Larger portion, extra noodles, same spicy seafood broth. A camping and festival favorite when you need a seriously filling cup noodle.</p><div class="kr-trans">왕뚜껑보다 더 큰 — 진정으로 배고픈 이들을 위한 XL 버전. 더 큰 용량, 추가 면, 같은 매콤한 해물 육수. 진짜 든든한 컵라면이 필요할 때 캠핑과 축제 애용 제품. <button class="hangul-sound-btn" onclick="speakKorean('킹뚜껑은 왕뚜껑보다 더 큰 XL 컵라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag food-tag-cup">XL Cup</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- OTHER / SPECIALTY -->
+    <div class="food-cat-header">✨ 기타 Special &amp; Trending <span class="food-cat-count">7 products</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">Beyond the big four brands — specialty instant noodles, collaboration products, and emerging trends in Korea's constantly evolving ramyeon market.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">4대 브랜드 너머에 — 특수 인스턴트 라면, 컬래버레이션 제품, 그리고 끊임없이 진화하는 한국 라면 시장의 새로운 트렌드입니다. <button class="hangul-sound-btn" onclick="speakKorean('4대 브랜드 외에도 다양한 특수 라면과 신제품이 있습니다.')" aria-label="Listen">🔊</button></div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-paldo">🌶️
+          <span class="food-card-brand-badge">틈새라면</span>
+          <span class="food-card-spice">🌶️🌶️🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">8️⃣ 틈새라면 <button class="hangul-sound-btn" onclick="speakKorean('틈새라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Gap Noodle / Tumsae Ramyun</div>
+          <div class="food-card-meta">Tumsae · 틈새 · Restaurant Brand → Instant</div>
+          <p class="food-card-desc">Started as a restaurant chain famous for extreme spice (틈새 = gap/niche). Became an instant product. Known as one of the spiciest mainstream instant noodles available. Not for the faint-hearted.</p><div class="kr-trans">극도의 매운맛으로 유명한 음식점 체인에서 시작(틈새 = 틈새). 인스턴트 제품이 됐습니다. 시중에서 구입 가능한 가장 매운 인스턴트 면 중 하나로 알려짐. 겁쟁이는 사절. <button class="hangul-sound-btn" onclick="speakKorean('틈새라면은 극한 매운맛으로 유명한 라면 브랜드입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️🌶️🌶️ Extreme</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🇨🇳
+          <span class="food-card-brand-badge">마라탕면</span>
+          <span class="food-card-spice">🌶️🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">마라탕면 <button class="hangul-sound-btn" onclick="speakKorean('마라탕면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Mala Tang Myeon</div>
+          <div class="food-card-meta">Various Brands · 마라 Trend · Since ~2018</div>
+          <p class="food-card-desc">Sichuan mala (마라) spice meets Korean ramyeon — numbing + spicy. The 마라 trend swept Korea from 2018 onward. Multiple brands released versions. The distinctive Sichuan pepper numbness is the key experience.</p><div class="kr-trans">사천 마라 향신료가 한국 라면을 만남 — 저린맛 + 매운맛. 마라 트렌드가 2018년부터 한국을 휩쓸었습니다. 여러 브랜드가 버전을 출시. 독특한 사천 고추의 마비감이 핵심 경험. <button class="hangul-sound-btn" onclick="speakKorean('마라탕면은 사천 마라 향신료의 저린 매운맛이 특징입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️ Spicy</span><span class="food-tag food-tag-new">Mala Trend</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🍤
+          <span class="food-card-brand-badge">공화춘</span>
+          <span class="food-card-spice">⬜</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">공화춘 짜장면 <button class="hangul-sound-btn" onclick="speakKorean('공화춘 짜장면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Gonghwachun Jjajangmyeon</div>
+          <div class="food-card-meta">Paldo x Gonghwachun · Premium Collab</div>
+          <p class="food-card-desc">Collaboration between Paldo and Gonghwachun — Incheon's oldest Chinese-Korean restaurant (founded 1905). Uses the historic black bean sauce recipe. Positioned as premium instant 짜장면. A collector's item in Korean food culture.</p><div class="kr-trans">팔도와 공화춘(1905년 설립된 인천 최고(最古)의 중화-한국 음식점) 협업. 역사적인 블랙빈 소스 레시피 사용. 프리미엄 인스턴트 짜장면으로 포지셔닝. 한국 식문화의 수집가 아이템. <button class="hangul-sound-btn" onclick="speakKorean('공화춘 짜장면은 인천 최고 음식점 공화춘과 팔도의 협업 프리미엄 짜장라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">No Heat</span><span class="food-tag food-tag-collab">Collab</span><span class="food-tag food-tag-premium">Premium</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-ottogi">🍳
+          <span class="food-card-brand-badge">라볶이</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">라볶이 <button class="hangul-sound-btn" onclick="speakKorean('라볶이')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Rabokki</div>
+          <div class="food-card-meta">Various · Ramen + Tteokbokki Hybrid</div>
+          <p class="food-card-desc">Not a brand — a cooking method: ramyeon (라면) + tteokbokki (떡볶이) cooked together in gochujang sauce. Available as a dedicated product or made at home. Sweet-spicy with dual textures — chewy rice cakes and springy noodles.</p><div class="kr-trans">브랜드가 아닌 조리법 — 라면(라면) + 떡볶이(떡볶이)를 고추장 소스에 함께 요리. 전용 제품으로 출시되거나 집에서 만들 수 있습니다. 달콤하고 매운 이중 식감 — 쫄깃한 떡과 탱탱한 면. <button class="hangul-sound-btn" onclick="speakKorean('라볶이는 라면과 떡볶이를 함께 끓인 달콤 매콤한 음식입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag">Rice Cake Combo</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-nongshim">🦞
+          <span class="food-card-brand-badge">CJ</span>
+          <span class="food-card-spice">🌶️🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">비비고 왕교자라면 <button class="hangul-sound-btn" onclick="speakKorean('비비고 왕교자라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Bibigo Dumpling Ramyun</div>
+          <div class="food-card-meta">CJ Bibigo · Premium Collab</div>
+          <p class="food-card-desc">Collaboration between CJ's 비비고 dumpling brand and ramyeon culture. Comes with actual freeze-dried 왕교자 (king dumplings). One of the most filling and decadent instant noodle products on the market.</p><div class="kr-trans">CJ 비비고 만두 브랜드와 라면 문화의 콜라보. 실제 동결건조 왕교자(왕만두)가 함께 제공됩니다. 시중에서 구할 수 있는 가장 든든하고 화려한 인스턴트 면 제품 중 하나. <button class="hangul-sound-btn" onclick="speakKorean('비비고 왕교자라면은 실제 왕교자가 들어간 프리미엄 협업 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Med</span><span class="food-tag food-tag-premium">Premium</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-samyang">🍅
+          <span class="food-card-brand-badge">농심</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">크림 새우라면 <button class="hangul-sound-btn" onclick="speakKorean('크림 새우라면')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Cream Shrimp Ramyun</div>
+          <div class="food-card-meta">Various · Creamy Seafood Trend</div>
+          <p class="food-card-desc">The creamy shrimp trend — rich, bisque-style shrimp broth meets instant convenience. Inspired by the global cream-based food trend that hit Korea in the early 2020s. Luxurious and subtle.</p><div class="kr-trans">크리미한 새우 트렌드 — 진한 비스크 스타일의 새우 육수와 인스턴트 편리함의 만남. 2020년대 초반 한국을 강타한 글로벌 크림 기반 음식 트렌드에서 영감. 호화롭고 은은한 맛. <button class="hangul-sound-btn" onclick="speakKorean('크림 새우라면은 크리미한 새우 비스크 스타일의 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag food-tag-new">2020s Trend</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-paldo">🌿
+          <span class="food-card-brand-badge">풀무원</span>
+          <span class="food-card-spice">🌶️</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">풀무원 생면식감 <button class="hangul-sound-btn" onclick="speakKorean('풀무원 생면식감')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Pulmuone Fresh-Texture Ramyun</div>
+          <div class="food-card-meta">Pulmuone · 풀무원 · Fresh Concept</div>
+          <p class="food-card-desc">Pulmuone's health-oriented instant ramyeon — uses fresh-style noodles (non-fried), cleaner broth, and natural ingredients. Popular with health-conscious consumers. Available in multiple flavors including 생면 udon and 비빔면.</p><div class="kr-trans">풀무원의 건강 지향 인스턴트 라면 — 신선 스타일 면(비튀김), 더 깔끔한 육수, 천연 재료 사용. 건강을 신경 쓰는 소비자에게 인기. 생면 우동과 비빔면 등 다양한 맛으로 출시. <button class="hangul-sound-btn" onclick="speakKorean('풀무원 생면식감은 비튀김 신선 면의 건강한 인스턴트 라면입니다.')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Mild</span><span class="food-tag">Fresh Noodle</span><span class="food-tag">Healthier</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VOCAB TABLE -->
+    <div class="culture-sub-heading" style="margin-top:40px;">📖 라면 어휘 · Ramyeon Vocabulary</div>
+    <table class="vocab-table">
+      <thead><tr><th>Korean</th><th>Romanization</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td class="kor-cell">라면</td><td class="rom-cell">ramyeon</td><td class="eng-cell">instant noodle (soup type)</td></tr>
+        <tr><td class="kor-cell">봉지라면</td><td class="rom-cell">bongji ramyeon</td><td class="eng-cell">bag/packet noodle</td></tr>
+        <tr><td class="kor-cell">컵라면</td><td class="rom-cell">keop ramyeon</td><td class="eng-cell">cup noodle</td></tr>
+        <tr><td class="kor-cell">볶음면</td><td class="rom-cell">bokkeum-myeon</td><td class="eng-cell">stir-fry (dry) noodle</td></tr>
+        <tr><td class="kor-cell">비빔면</td><td class="rom-cell">bibim-myeon</td><td class="eng-cell">cold mixed noodle</td></tr>
+        <tr><td class="kor-cell">매운맛</td><td class="rom-cell">mae-un mat</td><td class="eng-cell">spicy flavor</td></tr>
+        <tr><td class="kor-cell">순한맛</td><td class="rom-cell">sun-han mat</td><td class="eng-cell">mild flavor</td></tr>
+        <tr><td class="kor-cell">국물</td><td class="rom-cell">gukmal</td><td class="eng-cell">broth / soup base</td></tr>
+        <tr><td class="kor-cell">면발</td><td class="rom-cell">myeonbal</td><td class="eng-cell">noodle strands</td></tr>
+        <tr><td class="kor-cell">불어도 맛있다</td><td class="rom-cell">bureodo masitda</td><td class="eng-cell">even soggy, it's delicious</td></tr>
+        <tr><td class="kor-cell">야식</td><td class="rom-cell">ya-sik</td><td class="eng-cell">late-night snack/meal</td></tr>
+        <tr><td class="kor-cell">해장</td><td class="rom-cell">hae-jang</td><td class="eng-cell">hangover cure food</td></tr>
+        <tr><td class="kor-cell">스코빌</td><td class="rom-cell">seukobil</td><td class="eng-cell">Scoville (heat unit)</td></tr>
+        <tr><td class="kor-cell">짜파구리</td><td class="rom-cell">jjapagoori</td><td class="eng-cell">짜파게티 + 너구리 mix (Ram-don)</td></tr>
+        <tr><td class="kor-cell">라볶이</td><td class="rom-cell">rabokki</td><td class="eng-cell">ramyeon + tteokbokki mix</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+          <li><a href="../learn/grammar.html">Grammar</a></li>
+          <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

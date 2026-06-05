@@ -1,0 +1,908 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-Gaming · 한국 게임 | 한국어 학교</title>
+  <meta name="description" content="Explore Korea's gaming culture, PC방, esports legends, iconic games, and gaming vocabulary — learn Korean through gaming." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html" class="active"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-icon">🎵</div>
+      <div class="sidebar-brand-text">K-Culture <span>한국 문화</span></div>
+    </div>
+    <p class="sidebar-brand-desc">K-Pop, K-Drama, food, beauty, fashion, gaming, sports &amp; traditions.</p>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">CATEGORIES · 카테고리</div>
+
+    <a href="kpop.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎵</span> K-Pop <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kpop">
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📜</span> K-Pop History</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🏢</span> Agencies</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">⭐</span> Generations</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎼</span> Genres</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📺</span> Variety Shows</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎬</span> Film &amp; Acting</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">💬</span> Idol Phrases</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🔥</span> Fan Slang</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📣</span> Fan Chants</a>
+    </div>
+    <a href="kdrama.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Drama <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kdrama">
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📺</span> Drama History</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎬</span> Drama Genres</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Dramas</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎯</span> K-Drama Tropes</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💡</span> Speech Levels</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🗣️</span> Fan Culture &amp; Slang</a>
+    </div>
+    <a href="kmovie.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Movie <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kmovie">
+      <a href="kmovie.html#kmovie-history" class="sidebar-link"><span class="link-icon">📽️</span> Movie History</a>
+      <a href="kmovie.html#kmovie-genres" class="sidebar-link"><span class="link-icon">🎬</span> Movie Genres</a>
+      <a href="kmovie.html#kmovie-films" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Films</a>
+      <a href="kmovie.html#kmovie-directors" class="sidebar-link"><span class="link-icon">🎖️</span> Directors</a>
+      <a href="kmovie.html#kmovie-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kmovie.html#kmovie-dialogue" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kmovie.html#kmovie-lines" class="sidebar-link"><span class="link-icon">🗣️</span> Iconic Lines</a>
+      <a href="kmovie.html#kmovie-fanculture" class="sidebar-link"><span class="link-icon">🍿</span> Fan Culture</a>
+    </div>
+    <a href="kfood.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🍜</span> K-Food <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kfood">
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Food Goes Global</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🔥</span> Foods That Went Global</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">📅</span> K-Food Timeline</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🍽️</span> Essential Dishes</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">👨‍🍳</span> World-Famous Chefs</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🏪</span> Ordering &amp; Dining</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🌶️</span> Street Food</a>
+      <a href="kfood.html" class="sidebar-link"><span class="link-icon">🏮</span> Food Culture &amp; Drinking</a>
+    </div>
+    <a href="kbeauty.html" class="sidebar-accordion-btn">
+      <span class="link-icon">✨</span> K-Beauty <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kbeauty">
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Beauty Goes Global</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">⏳</span> K-Beauty Timeline</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">📖</span> Beauty Vocabulary</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🧴</span> 10-Step Skincare</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌿</span> Key Ingredients</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">✨</span> Beauty Trends</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💄</span> Makeup Philosophy</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏥</span> 피부과 Culture</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💬</span> K-Beauty Dialogue</a>
+    </div>
+    <a href="kfashion.html" class="sidebar-accordion-btn">
+      <span class="link-icon">👗</span> K-Fashion <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kfashion">
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Fashion Global</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👑</span> Fashion Icons</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⏳</span> Fashion Timeline</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🎨</span> Style Aesthetics</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⭐</span> Idol Fashion</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🗓️</span> Seoul Fashion Week</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">📖</span> Fashion Vocabulary</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏙️</span> Fashion Districts</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👘</span> 한복 &amp; 전통 의상</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">💬</span> Shopping Dialogue</a>
+    </div>
+    <a href="koreanthing.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🇰🇷</span> Korean Thing <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-koreanthing">
+      <a href="koreanthing.html#bap" class="sidebar-link"><span class="link-icon">🍚</span> 밥에 미친 민족</a>
+      <a href="koreanthing.html#chokbeop" class="sidebar-link"><span class="link-icon">👶</span> 미성년자 과잉보호</a>
+      <a href="koreanthing.html#delivery" class="sidebar-link"><span class="link-icon">🛵</span> 빠른 배달</a>
+      <a href="koreanthing.html#ecology" class="sidebar-link"><span class="link-icon">🦌</span> 생태계 교란종</a>
+      <a href="koreanthing.html#table" class="sidebar-link"><span class="link-icon">🔔</span> 테이블 문화</a>
+      <a href="koreanthing.html#transport" class="sidebar-link"><span class="link-icon">🚌</span> 대중교통</a>
+      <a href="koreanthing.html#jjimjilbang" class="sidebar-link"><span class="link-icon">♨️</span> 찜질방</a>
+      <a href="koreanthing.html#surgery" class="sidebar-link"><span class="link-icon">💉</span> 성형 문화</a>
+      <a href="koreanthing.html#outdoor-drinking" class="sidebar-link"><span class="link-icon">🍺</span> 야외음주</a>
+      <a href="koreanthing.html#jeonse" class="sidebar-link"><span class="link-icon">🏠</span> 전세 제도</a>
+      <a href="koreanthing.html#traditions" class="sidebar-link"><span class="link-icon">🏮</span> 전통 문화</a>
+      <a href="koreanthing.html#sodams" class="sidebar-link"><span class="link-icon">📜</span> 속담 100선</a>
+    </div>
+    <a href="kgaming.html" class="sidebar-accordion-btn active open">
+      <span class="link-icon">🎮</span> K-Gaming <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="cat-acc-kgaming">
+      <a href="#kgaming-stats" class="sidebar-link"><span class="link-icon">📊</span> K-Gaming Stats</a>
+      <a href="#kgaming-timeline" class="sidebar-link"><span class="link-icon">⏳</span> Gaming Timeline</a>
+      <a href="#kgaming-legends" class="sidebar-link"><span class="link-icon">🌟</span> Gaming Legends</a>
+      <a href="#kgaming-iconic" class="sidebar-link"><span class="link-icon">🎮</span> Iconic Games</a>
+      <a href="#kgaming-streaming" class="sidebar-link"><span class="link-icon">📺</span> Streaming Culture</a>
+      <a href="#kgaming-pcbang" class="sidebar-link"><span class="link-icon">🏪</span> PC방 Culture</a>
+      <a href="#kgaming-esports" class="sidebar-link"><span class="link-icon">🏆</span> Esports Leagues</a>
+      <a href="#kgaming-slang" class="sidebar-link"><span class="link-icon">💬</span> Gamer Slang</a>
+      <a href="#kgaming-vocab" class="sidebar-link"><span class="link-icon">📖</span> Gaming Vocabulary</a>
+    </div>
+    <a href="ksports.html" class="sidebar-accordion-btn">
+      <span class="link-icon">⚽</span> K-Sports <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-ksports">
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📊</span> Sports Overview</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚽</span> Football Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚾</span> Baseball Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🏃</span> Marathon Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🌟</span> Individual Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🥋</span> Traditional Sports</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📣</span> Cheer Chants</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+    </div>
+  </nav>
+</aside>
+
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+      <div class="culture-section-header">
+        <div class="section-eyebrow">K-CULTURE · 한국 문화</div>
+        <h2>🎮 K-Gaming <span class="grad-text">한국 게임 문화</span></h2>
+        <p>South Korea invented competitive gaming culture. The PC방, professional esports, and the greatest players in the world — this is where gaming became a national sport.</p>
+        <div class="kr-trans">대한민국은 e스포츠 문화를 세계 최초로 만들어낸 나라입니다. PC방, 프로 게임 리그, 세계 최고의 선수들 — 한국에서 게임은 진짜 스포츠가 되었습니다.</div>
+      </div>
+
+      <!-- Stats -->
+      <div id="kgaming-stats" class="kbeauty-stats" style="margin-bottom:32px;">
+        <div class="kbeauty-stat">
+          <div class="kbeauty-stat-num">$8B+</div>
+          <div class="kbeauty-stat-label">Korean game market value<br><span style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-korean)">한국 게임 시장 규모</span></div>
+        </div>
+        <div class="kbeauty-stat">
+          <div class="kbeauty-stat-num">31K+</div>
+          <div class="kbeauty-stat-label">PC방 nationwide<br><span style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-korean)">전국 PC방 수</span></div>
+        </div>
+        <div class="kbeauty-stat">
+          <div class="kbeauty-stat-num">#1</div>
+          <div class="kbeauty-stat-label">LoL World Championship wins<br><span style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-korean)">롤드컵 최다 우승국</span></div>
+        </div>
+        <div class="kbeauty-stat">
+          <div class="kbeauty-stat-num">4×</div>
+          <div class="kbeauty-stat-label">Faker World titles<br><span style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-korean)">페이커 세계 우승 횟수</span></div>
+        </div>
+        <div class="kbeauty-stat">
+          <div class="kbeauty-stat-num">2000</div>
+          <div class="kbeauty-stat-label">Year pro gaming was born<br><span style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-korean)">프로 e스포츠 원년</span></div>
+        </div>
+        <div class="kbeauty-stat">
+          <div class="kbeauty-stat-num">73%</div>
+          <div class="kbeauty-stat-label">Koreans who game regularly<br><span style="font-size:0.7rem;color:var(--text-muted);font-family:var(--font-korean)">한국 게이머 인구 비율</span></div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div id="kgaming-timeline" class="culture-sub-heading">⏳ K-Gaming Timeline · 한국 게임의 역사</div>
+      <div class="kpop-timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">1994–1996 · 인터넷 혁명의 전야</div>
+          <div class="timeline-content">
+            <div class="timeline-title">Korea Builds the World's Fastest Internet <button class="hangul-sound-btn" onclick="speakKorean('초고속 인터넷')" aria-label="듣기">🔊</button></div>
+            <div class="timeline-desc">Korea's government launches a national broadband initiative. By the mid-1990s, Korea has one of the world's fastest and most affordable internet infrastructures — laying the technological foundation for an entire gaming culture. Without this, there is no PC방, no StarCraft, no Faker.</div>
+            <div class="kr-trans">한국 정부의 초고속 인터넷 보급 정책으로 1990년대 중반 한국은 세계 최고 수준의 인터넷 인프라를 갖추게 됩니다. PC방, 스타크래프트, 페이커 — 이 모든 것은 여기서 시작됩니다.</div>
+          </div>
+        </div>
+        <div class="timeline-item timeline-milestone">
+          <div class="timeline-date">1997–1998 · IMF 위기와 PC방의 탄생</div>
+          <div class="timeline-content">
+            <div class="timeline-title">🏆 IMF Crisis Accidentally Creates PC방 Culture <button class="hangul-sound-btn" onclick="speakKorean('PC방')" aria-label="듣기">🔊</button></div>
+            <div class="timeline-desc">The 1997 Asian Financial Crisis devastated Korea. Hundreds of thousands lost their jobs overnight. To survive, unemployed Koreans converted underground spaces into PC방 — charging ₩1,000/hour. Then Blizzard released StarCraft in 1998. The perfect storm: cheap broadband PCs, desperate entrepreneurs, and a game that rewarded pure skill. PC방 count exploded from hundreds to over 20,000 within two years.</div>
+            <div class="kr-trans">1997년 IMF 외환위기로 수십만 명이 일자리를 잃었습니다. 생계를 위해 지하실과 빈 점포를 PC방으로 바꿨습니다. 1998년 블리자드가 스타크래프트를 출시하면서 저렴한 초고속 인터넷, 실업자들의 창업 열기, 실력 기반의 전략 게임이 맞물려 PC방이 2년 만에 전국 20,000개 이상으로 폭발적으로 증가했습니다.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1999 · 온게임넷 개국</div>
+          <div class="timeline-content">
+            <div class="timeline-title">OGN — The World's First Esports TV Channel <button class="hangul-sound-btn" onclick="speakKorean('온게임넷')" aria-label="듣기">🔊</button></div>
+            <div class="timeline-desc">OGN (OnGameNet) launches as the world's first cable TV channel dedicated entirely to competitive gaming. StarCraft matches are broadcast with full sports-production quality — commentary, slow-motion replays, player close-ups. Korean pro gamers become celebrities appearing in ads and teen magazines. A decade before Twitch, Korea invented livestreamed gaming as entertainment.</div>
+            <div class="kr-trans">온게임넷(OGN)이 세계 최초의 e스포츠 전문 케이블 채널로 개국합니다. 스타크래프트 경기를 스포츠 중계 수준으로 제작 — 해설, 슬로모션 리플레이, 선수 클로즈업. 프로게이머들이 광고에 등장하는 연예인이 됩니다. 트위치보다 10년 앞서 게임 방송 문화를 만든 것입니다.</div>
+          </div>
+        </div>
+        <div class="timeline-item timeline-milestone">
+          <div class="timeline-date">2000 · KeSPA 설립 — 프로게이머의 탄생</div>
+          <div class="timeline-content">
+            <div class="timeline-title">🏆 Korea Creates the World's First Professional Gaming Association <button class="hangul-sound-btn" onclick="speakKorean('프로게이머')" aria-label="듣기">🔊</button></div>
+            <div class="timeline-desc">The Korea e-Sports Association (KeSPA / 한국e스포츠협회) is founded, officially recognizing esports as a profession. For the first time anywhere in the world, video game players have signed contracts, monthly salaries, team houses, coaches, and regulated competition rules. Korea becomes the first country on Earth to treat competitive gaming as a legitimate career.</div>
+            <div class="kr-trans">한국e스포츠협회(KeSPA)가 설립되어 e스포츠를 공식 직업으로 인정합니다. 세계 최초로 게임 선수들이 정식 계약서, 월급, 팀 숙소, 코치진을 갖추게 됩니다. 한국은 세계 최초로 게임을 정식 직업으로 인정한 나라가 됩니다.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2004 · 임요환과 홍진호 — 스타리그 전성기</div>
+          <div class="timeline-content">
+            <div class="timeline-title">테란의 황제 vs. 폭풍 저그 <span class="timeline-title-kr">— Emperor of Terran vs. Storm Zerg</span> <button class="hangul-sound-btn" onclick="speakKorean('테란의 황제 대 폭풍 저그')" aria-label="듣기">🔊</button></div>
+            <div class="timeline-desc">임요환 (테란의 황제 — Emperor of Terran) and 홍진호 (폭풍 저그 — Storm Zerg) become Korea's first true gaming celebrities — appearing on variety shows, making cosmetics ads, and selling out stadiums. 홍진호's perennial runner-up career earns him the affectionate title 콩라인 (second-place curse) — a meme still used in Korean internet culture today. Fan clubs of tens of thousands gather for every match.</div>
+            <div class="kr-trans">임요환(테란의 황제)과 홍진호(폭풍 저그)는 한국 최초의 게임 스타가 됩니다. TV 예능 출연, 화장품 광고, 스타디움 매진. 홍진호의 만년 준우승 커리어는 '콩라인'이라는 밈을 탄생시켰고 오늘날도 쓰입니다.</div>
+          </div>
+        </div>
+        <div class="timeline-item timeline-milestone">
+          <div class="timeline-date">2013 · 페이커 데뷔</div>
+          <div class="timeline-content">
+            <div class="timeline-title">🏆 Faker Debuts at 16 — "The Unkillable Demon King" <button class="hangul-sound-btn" onclick="speakKorean('페이커')" aria-label="듣기">🔊</button></div>
+            <div class="timeline-desc">Lee Sang-hyeok (이상혁), 16 years old, debuts for SKT T1 in the LCK — and wins the World Championship in his very first season. His skill earns him the title 불멸의 악마왕 (Unkillable Demon King), coined by a Chinese caster who failed to kill him during a match and named him on the spot. The debate about the greatest esports player of all time begins — and largely ends — with Faker.</div>
+            <div class="kr-trans">이상혁(페이커), 만 16세에 SKT T1으로 LCK에 데뷔해 첫 시즌에 바로 세계 챔피언이 됩니다. '불멸의 악마왕' 칭호는 대회에서 그를 잡으려다 실패한 중국 캐스터가 붙여준 이름입니다. 역사상 최고의 e스포츠 선수 논쟁은 페이커에서 시작해 페이커에서 끝납니다.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2017 · 배틀그라운드 출시</div>
+          <div class="timeline-content">
+            <div class="timeline-title">PUBG — Korea Defines the Battle Royale Genre <button class="hangul-sound-btn" onclick="speakKorean('배틀그라운드')" aria-label="듣기">🔊</button></div>
+            <div class="timeline-desc">Krafton releases PUBG: Battlegrounds — one of the highest-selling PC games of all time, peaking at 3.2 million concurrent players. The battle royale format (100 players, shrinking map, one winner) is now a global design standard, directly inspiring Fortnite, Apex Legends, and dozens of successors. Korean game development proves it can define global genres.</div>
+            <div class="kr-trans">크래프톤이 배틀그라운드(PUBG)를 출시합니다. 동시접속자 320만 명을 기록하며 역대 최다 판매 PC 게임 중 하나가 됩니다. 100인 생존, 수축하는 맵이라는 배틀로얄 장르를 창시해 포트나이트, 에이펙스 레전드 등 수많은 후계작에 직접적 영향을 줍니다.</div>
+          </div>
+        </div>
+        <div class="timeline-item timeline-milestone">
+          <div class="timeline-date">2023 · 페이커의 4번째 우승</div>
+          <div class="timeline-content">
+            <div class="timeline-title">🏆 Faker Wins His Fourth World Title — At Home in Seoul <button class="hangul-sound-btn" onclick="speakKorean('이상혁')" aria-label="듣기">🔊</button></div>
+            <div class="timeline-desc">The 2023 World Championship final is held at Gocheok Sky Dome (고척 스카이돔) in Seoul. Faker, now 27, leads T1 to a fourth world title. The roar of the home crowd is deafening. Korean media covers it like a national sporting moment. The greatest player in the game's history, at the biggest match of his career, in his home city, winning his fourth championship. A moment that transcended esports.</div>
+            <div class="kr-trans">2023년 롤드컵 결승전이 서울 고척 스카이돔에서 개최됩니다. 27세의 페이커가 T1을 이끌어 4번째 세계 우승을 달성합니다. 역대 최고 선수가 홈에서 4번째 우승을 거두는 — e스포츠를 초월한 순간이었습니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gaming Legends -->
+      <div id="kgaming-legends" class="culture-sub-heading">🌟 Korean Gaming Legends · 한국 게임 영웅들</div>
+      <div class="info-box" style="margin-bottom:20px;">
+        <span class="tip-icon">ℹ️</span>
+        <div class="tip-content">
+          <div class="tip-label">Why Korean Gamers Are Different · 연습 벌레 문화</div>
+          <div class="tip-text">Korean pro gamers live and train together in 팀 하우스 (team houses), grinding 12–14 hours daily. The culture of 연습 벌레 (practice obsessive) is not just dedication — it is a national identity. Korea's gaming legends are not just athletes; they are cultural icons with fan clubs, national media coverage, and the same celebrity status as K-pop idols.</div>
+          <div class="kr-trans">한국 프로게이머들은 팀 하우스에서 함께 생활하며 매일 12~14시간 연습합니다. '연습 벌레' 문화는 단순한 노력이 아니라 국가적 정체성입니다. 한국의 게임 영웅들은 운동선수이자 K-팝 아이돌과 동등한 팬클럽을 거느린 문화 아이콘입니다.</div>
+        </div>
+      </div>
+      <div class="chef-grid">
+        <div class="chef-card">
+          <div class="chef-banner" style="background:linear-gradient(135deg,#1a0042,#4c1d95,#7c3aed)">
+            <div class="chef-banner-emoji">👑</div>
+            <div class="chef-banner-label">이상혁 (Faker)</div>
+            <div class="chef-banner-sub">T1 · LoL Mid · 불멸의 악마왕</div>
+          </div>
+          <div class="chef-body">
+            <div class="chef-name">이상혁 · Faker</div>
+            <div class="chef-name-kr">페이커 <button class="hangul-sound-btn" onclick="speakKorean('페이커')" aria-label="듣기">🔊</button></div>
+            <div class="chef-restaurant">T1 · League of Legends Mid Laner</div>
+            <div class="chef-desc">The universally acknowledged greatest esports player who ever lived. Debuted for SKT T1 at 16 and won his first World Championship that same year. Four total titles (2013, 2015, 2016, 2023) — a record that may never be broken. His alias "불멸의 악마왕" (Unkillable Demon King) was coined by a Chinese caster who tried to kill him during a tournament and failed. Appeared in TIME's 100 Most Influential People. When T1 won in Seoul in 2023, his childhood neighbourhood held a street festival in his honour.</div>
+            <div class="kr-trans">역사상 가장 위대한 e스포츠 선수로 공인됩니다. 16세에 데뷔해 첫 해에 세계 챔피언이 됩니다. 4번의 우승(2013·2015·2016·2023)은 깨지기 어려운 기록입니다. '불멸의 악마왕'은 대회에서 그를 잡으려다 실패한 중국 캐스터가 붙여준 이름입니다. 타임 100인에 선정, 2023년 서울 우승 때 고향 동네에서 길거리 축제가 열렸습니다.</div>
+            <div class="chef-tags"><span class="chef-tag">#4×WorldChampion</span><span class="chef-tag">#GOAT</span><span class="chef-tag">#불멸의악마왕</span></div>
+          </div>
+        </div>
+        <div class="chef-card">
+          <div class="chef-banner" style="background:linear-gradient(135deg,#1a0f00,#78350f,#f59e0b)">
+            <div class="chef-banner-emoji">👑</div>
+            <div class="chef-banner-label">임요환</div>
+            <div class="chef-banner-sub">StarCraft Terran · 황제 The Emperor</div>
+          </div>
+          <div class="chef-body">
+            <div class="chef-name">임요환 · Lim Yo-hwan</div>
+            <div class="chef-name-kr">황제 <button class="hangul-sound-btn" onclick="speakKorean('황제')" aria-label="듣기">🔊</button></div>
+            <div class="chef-restaurant">SKT T1 · StarCraft: Brood War Terran</div>
+            <div class="chef-desc">The original superstar of Korean esports — nicknamed 황제 (The Emperor). Lim Yo-hwan was the blueprint for what a gaming celebrity could be: cosmetics ads, brand endorsements, variety TV appearances, and over 500,000 fan cafe members. He also served in the Korean Air Force Esports Team (공군 ACE) as his mandatory military service — staying competitive while in uniform. The pioneer who made it possible for Faker to exist.</div>
+            <div class="kr-trans">한국 e스포츠 최초의 슈퍼스타 '황제'. 화장품 광고, 대형 브랜드 계약, TV 예능 출연, 50만 명의 팬카페 회원. 공군 ACE 소속으로 군복무를 이행하면서도 프로 경기를 지속했습니다. 페이커가 존재할 수 있게 만든 선구자입니다.</div>
+            <div class="chef-tags"><span class="chef-tag">#황제</span><span class="chef-tag">#StarCraft</span><span class="chef-tag">#공군ACE</span></div>
+          </div>
+        </div>
+        <div class="chef-card">
+          <div class="chef-banner" style="background:linear-gradient(135deg,#0f2600,#166534,#4ade80)">
+            <div class="chef-banner-emoji">⚡</div>
+            <div class="chef-banner-label">홍진호</div>
+            <div class="chef-banner-sub">StarCraft Zerg · 폭풍 저그 Storm Zerg</div>
+          </div>
+          <div class="chef-body">
+            <div class="chef-name">홍진호 · Hong Jin-ho</div>
+            <div class="chef-name-kr">폭풍 저그 <button class="hangul-sound-btn" onclick="speakKorean('홍진호')" aria-label="듣기">🔊</button></div>
+            <div class="chef-restaurant">SKT T1 · StarCraft: Brood War Zerg</div>
+            <div class="chef-desc">Perhaps the most beloved player in Korean esports — not for winning, but for a legend of glorious eternal second place. Despite being one of the most gifted Zerg players ever, 홍진호 finished runner-up 3 times in the OSL and became the face of 콩라인 (Bean Line — Second-Place Curse). 콩라인 is still widely used in Korean internet culture to describe anyone cursed to always finish second. After retiring he became a beloved variety show personality and content creator.</div>
+            <div class="kr-trans">한국 e스포츠에서 가장 사랑받는 선수 중 하나 — 우승이 아닌 영원한 준우승의 전설 때문입니다. OSL 3회 준우승으로 '콩라인'의 얼굴이 됐습니다. 콩라인은 오늘날도 항상 2등인 사람을 뜻하는 인터넷 용어로 쓰입니다. 은퇴 후 예능인과 콘텐츠 크리에이터로 활약 중입니다.</div>
+            <div class="chef-tags"><span class="chef-tag">#콩라인</span><span class="chef-tag">#StarCraft</span><span class="chef-tag">#예능인</span></div>
+          </div>
+        </div>
+        <div class="chef-card">
+          <div class="chef-banner" style="background:linear-gradient(135deg,#1a1a1a,#374151,#9ca3af)">
+            <div class="chef-banner-emoji">⚔️</div>
+            <div class="chef-banner-label">이영호 (Flash)</div>
+            <div class="chef-banner-sub">StarCraft Terran · 완성형 테란 Final Boss</div>
+          </div>
+          <div class="chef-body">
+            <div class="chef-name">이영호 · Lee Young-ho "Flash"</div>
+            <div class="chef-name-kr">이영호 <button class="hangul-sound-btn" onclick="speakKorean('이영호')" aria-label="듣기">🔊</button></div>
+            <div class="chef-restaurant">KT Rolster · StarCraft: Brood War Terran</div>
+            <div class="chef-desc">Known as the 완성형 테란 (Complete Terran) and often considered the greatest StarCraft: Brood War player ever. Flash's APM routinely exceeded 400, with mechanical precision rarely seen before or since. 4 OSL titles and 3 MSL titles — the most decorated individual in StarCraft history. Korean gamers say: "임요환 made you want to become a gamer; Flash made you want to quit because you'd never be as good."</div>
+            <div class="kr-trans">스타크래프트 브루드워 역사상 최고의 선수로 꼽힙니다. APM 400을 초과하는 완벽한 기계적 정밀함으로 '완성형 테란'이라는 별명을 얻었습니다. OSL 4회·MSL 3회 우승으로 스타크래프트 역대 최다 타이틀 보유자입니다. "임요환은 게임을 하고 싶게 만들고, 이영호는 게임을 그만두고 싶게 만든다"는 말이 있습니다.</div>
+            <div class="chef-tags"><span class="chef-tag">#완성형테란</span><span class="chef-tag">#FinalBoss</span><span class="chef-tag">#KT롤스터</span></div>
+          </div>
+        </div>
+        <div class="chef-card">
+          <div class="chef-banner" style="background:linear-gradient(135deg,#001840,#1d4ed8,#60a5fa)">
+            <div class="chef-banner-emoji">🎯</div>
+            <div class="chef-banner-label">김혁규 (Deft)</div>
+            <div class="chef-banner-sub">DRX · LoL ADC · 10년의 여정</div>
+          </div>
+          <div class="chef-body">
+            <div class="chef-name">김혁규 · Deft</div>
+            <div class="chef-name-kr">데프트 <button class="hangul-sound-btn" onclick="speakKorean('데프트')" aria-label="듣기">🔊</button></div>
+            <div class="chef-restaurant">DRX · League of Legends ADC</div>
+            <div class="chef-desc">For ten years, Deft was considered one of the world's best ADC players — but never a World Champion. A veteran of near-misses. Then in 2022, leading underdog DRX — who had even needed to qualify through the play-in stage — he won the World Championship at age 26. In the post-match interview, his voice broke: "I never gave up." The entire Korean esports community wept with him.</div>
+            <div class="kr-trans">10년간 세계 최고의 원딜로 꼽혔지만 단 한 번도 세계 챔피언이 되지 못했습니다. 2022년, 예선부터 시작한 언더독 팀 DRX를 이끌고 우승을 차지했습니다. 26세. 인터뷰에서 "포기한 적 없다"는 말에 한국 e스포츠 팬 전체가 눈물을 흘렸습니다.</div>
+            <div class="chef-tags"><span class="chef-tag">#2022WorldChampion</span><span class="chef-tag">#DRX</span><span class="chef-tag">#포기안해</span></div>
+          </div>
+        </div>
+        <div class="chef-card">
+          <div class="chef-banner" style="background:linear-gradient(135deg,#1a0000,#7f1d1d,#dc2626)">
+            <div class="chef-banner-emoji">🔥</div>
+            <div class="chef-banner-label">이제동 (Jaedong)</div>
+            <div class="chef-banner-sub">StarCraft Zerg · 저그의 황제 King of Zerg</div>
+          </div>
+          <div class="chef-body">
+            <div class="chef-name">이제동 · Lee Jae-dong "Jaedong"</div>
+            <div class="chef-name-kr">이제동 <button class="hangul-sound-btn" onclick="speakKorean('이제동')" aria-label="듣기">🔊</button></div>
+            <div class="chef-restaurant">Hwaseung OZ · StarCraft: Brood War Zerg</div>
+            <div class="chef-desc">저그의 황제 (King of Zerg) — the most dominant Zerg player in StarCraft history. Known for revolutionary aggression and multi-pronged attacks that redefined how Zerg could be played. Alongside Flash he formed one of the greatest rivalries in esports — the two dominated the entire Brood War era between them. Often described as the most gifted natural talent the game produced, combining Flash-level mechanics with unpredictability no opponent could fully prepare for.</div>
+            <div class="kr-trans">스타크래프트 역사상 가장 지배적인 저그 플레이어 '저그의 황제'. 혁신적인 공격성과 다방면 압박으로 저그의 가능성을 재정의했습니다. 이영호(Flash)와 함께 e스포츠 역사상 최고의 라이벌 구도를 형성하며 브루드워 말기를 양분했습니다.</div>
+            <div class="chef-tags"><span class="chef-tag">#저그의황제</span><span class="chef-tag">#StarCraft</span><span class="chef-tag">#화승OZ</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Iconic Games -->
+      <div id="kgaming-iconic" class="culture-sub-heading">🎮 Iconic Korean Games & Franchises · 한국을 대표하는 게임들</div>
+      <div class="drama-list">
+        <div class="drama-item">
+          <div class="drama-num">1</div>
+          <div class="drama-info">
+            <div class="drama-title">StarCraft <button class="hangul-sound-btn" onclick="speakKorean('스타크래프트')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">스타크래프트 <span style="font-size:0.8rem;color:var(--text-muted)">Blizzard, 1998</span></div>
+            <div class="drama-desc">The game that created Korean esports. Released in 1998, StarCraft became a cultural phenomenon — a national sport. The strategic depth between Terran, Zerg, and Protoss at elite APM levels elevated it to a mind sport comparable to chess. OGN and MBC Game broadcast StarCraft 24/7 for over a decade. 스타리그 matches sold out arenas. Pro players had fan clubs, CF appearances, and action figures.</div>
+            <div class="kr-trans">한국 e스포츠를 만든 게임. 1998년 출시 직후 국가적 현상이 됐습니다. 테란·저그·프로토스의 전략적 깊이는 체스에 버금가는 마인드 스포츠로 평가받습니다. OGN과 MBC게임이 10여 년간 24시간 방송했으며 스타리그 경기는 경기장을 매진시켰습니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">Esports Pioneer</span><span class="tag tag-beginner">국민 게임</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">2</div>
+          <div class="drama-info">
+            <div class="drama-title">League of Legends <button class="hangul-sound-btn" onclick="speakKorean('리그 오브 레전드')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">리그 오브 레전드 / 롤 <span style="font-size:0.8rem;color:var(--text-muted)">Riot Games, 2009</span></div>
+            <div class="drama-desc">The current home of Korean esports dominance. Korean teams have won more World Championships than any other country. The LCK (League Champions Korea) is the world's most prestigious esports league. T1 with Faker is the most successful team in esports history. Korean training methods became the global standard — every region imports Korean coaches and players. "한국 서버" (Korean server) is synonymous with the highest skill level on Earth.</div>
+            <div class="kr-trans">현재 한국 e스포츠 지배의 중심. 한국 팀이 롤드컵에서 가장 많은 우승을 차지했습니다. LCK는 세계에서 가장 권위 있는 e스포츠 리그입니다. 페이커의 T1은 e스포츠 역사상 가장 성공적인 팀이며 한국식 훈련 방법이 글로벌 표준이 됐습니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">LCK</span><span class="tag tag-beginner">T1 Dynasty</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">3</div>
+          <div class="drama-info">
+            <div class="drama-title">Lineage (리니지) <button class="hangul-sound-btn" onclick="speakKorean('리니지')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">리니지 <span style="font-size:0.8rem;color:var(--text-muted)">NCSOFT, 1998</span></div>
+            <div class="drama-desc">Korea's defining domestic MMORPG — a clan-war medieval fantasy where player kingdoms rise and fall. Lineage introduced blood pledge clan systems and open-world PvP so intense that real-world court cases occurred over in-game territory disputes. Its mobile successors 리니지M and 리니지2M became multi-billion-dollar franchises. Lineage's clan politics inspired a generation of Korean online game design.</div>
+            <div class="kr-trans">한국 대표 국산 MMORPG — 혈맹 클랜 전쟁과 공성전이 특징입니다. 게임 내 영토 분쟁이 실제 법정 다툼으로 이어질 만큼 치열한 PvP 문화를 만들었습니다. 모바일 후속작 리니지M·리니지2M은 수조 원 규모 프랜차이즈로 성장했습니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">NCSOFT</span><span class="tag tag-beginner">MMORPG Pioneer</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">4</div>
+          <div class="drama-info">
+            <div class="drama-title">MapleStory (메이플스토리) <button class="hangul-sound-btn" onclick="speakKorean('메이플스토리')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">메이플스토리 <span style="font-size:0.8rem;color:var(--text-muted)">Nexon, 2003</span></div>
+            <div class="drama-desc">Korea's most nostalgic game — a 2D side-scrolling MMORPG that captured an entire generation. For Korean millennials, 메이플스토리 is the ultimate childhood memory: mushroom dungeons at Henesys, grinding for hours in PC방 after school. Still actively maintained with 180 million registered accounts globally. The franchise expanded into mobile and spinoffs. Nexon is now a global gaming conglomerate worth billions.</div>
+            <div class="kr-trans">한국 밀레니얼 세대의 추억 1위 게임. 2003년 출시된 2D 횡스크롤 MMORPG로 헤네시스 버섯 던전, 방과 후 PC방 파밍이 한 세대의 기억을 대표합니다. 현재도 운영 중이며 글로벌 가입자 1억 8천만 명을 보유합니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">Nexon</span><span class="tag tag-beginner">Nostalgic Classic</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">5</div>
+          <div class="drama-info">
+            <div class="drama-title">PUBG: Battlegrounds (배틀그라운드) <button class="hangul-sound-btn" onclick="speakKorean('배틀그라운드')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">배틀그라운드 / 배그 <span style="font-size:0.8rem;color:var(--text-muted)">Krafton, 2017</span></div>
+            <div class="drama-desc">Krafton's PUBG popularized battle royale globally — the template Fortnite, Apex Legends, and Warzone were built from. Peak concurrent players: 3.2 million. Krafton IPO'd in 2021 at over ₩24 trillion valuation. The in-game victory message "치킨 먹자" (let's eat chicken = let's win) became a cultural export. PUBG Mobile dominates Southeast Asian mobile markets.</div>
+            <div class="kr-trans">크래프톤의 PUBG는 배틀로얄 장르를 창시해 포트나이트·에이펙스·워존의 원형이 됐습니다. 동시접속 최대 320만 명. 2021년 24조 원 이상으로 상장됐습니다. '치킨 먹자'라는 게임 내 승리 문구가 문화 수출품이 됐습니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">Krafton</span><span class="tag tag-beginner">Battle Royale 창시</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">6</div>
+          <div class="drama-info">
+            <div class="drama-title">Dungeon Fighter Online (던전앤파이터) <button class="hangul-sound-btn" onclick="speakKorean('던전앤파이터')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">던전앤파이터 / 던파 <span style="font-size:0.8rem;color:var(--text-muted)">Neople/Nexon, 2005</span></div>
+            <div class="drama-desc">Officially the highest-grossing PC game in history — over $20 billion in lifetime revenue, surpassing World of Warcraft. A 2D beat-em-up MMORPG with deep class systems. Wildly dominant in China (地下城与勇士), where Chinese servers account for most of its revenue. Despite enormous financial success, it remains little-known in Western gaming — the quintessential invisible giant of Korean game development.</div>
+            <div class="kr-trans">공식 역대 최고 수익 PC 게임 — 누적 매출 200억 달러 이상으로 월드오브워크래프트를 넘어섭니다. 2D 횡스크롤 액션 MMORPG로 중국에서 폭발적 인기를 끌며 매출 대부분을 창출합니다. 서구권에서 잘 알려지지 않은 한국 게임 개발의 '보이지 않는 거인'입니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">Nexon/Neople</span><span class="tag tag-beginner">역대 최고 수익</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">7</div>
+          <div class="drama-info">
+            <div class="drama-title">KartRider (카트라이더) <button class="hangul-sound-btn" onclick="speakKorean('카트라이더')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">카트라이더 <span style="font-size:0.8rem;color:var(--text-muted)">Nexon, 2004</span></div>
+            <div class="drama-desc">Korea's beloved mascot racer — often called the "Korean Mario Kart" but with deeper cultural roots in East Asia. The PC game of Korean elementary students throughout the 2000s, played endlessly in PC방 with friends. Its Korean-designed characters and drifting mechanics made it a cultural institution broadcast on OGN. 카트라이더: 드리프트 (2023) relaunched the franchise globally. Its character 다오 is one of Korea's most recognizable game icons.</div>
+            <div class="kr-trans">흔히 '한국의 마리오카트'로 불리지만 동아시아에서 더 큰 문화적 의미를 지닙니다. 2000년대 한국 초등학생들이 PC방에서 즐긴 대표 게임으로 OGN에서 대회가 방송됐습니다. 2023년 글로벌 리마스터 출시. 캐릭터 다오는 한국에서 가장 상징적인 게임 캐릭터 중 하나입니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">Nexon</span><span class="tag tag-beginner">Childhood Classic</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">8</div>
+          <div class="drama-info">
+            <div class="drama-title">Kingdom of the Winds (바람의 나라) <button class="hangul-sound-btn" onclick="speakKorean('바람의 나라')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">바람의 나라 <span style="font-size:0.8rem;color:var(--text-muted)">NCSoft/Nexon, 1996</span></div>
+            <div class="drama-desc">Officially certified by Guinness World Records as the world's longest-running commercial MMORPG — and it predates Ultima Online, commonly mislabeled as the "first MMORPG." Based on cartoonist Kim Jin's (김진) manhwa set in the Goguryeo Kingdom era, 바람의 나라 launched in 1996 and is still running in 2026 — 30 years and counting. It introduced the foundational systems of online RPGs: persistent world, player-driven economy, guild communities, and leveling progression. Every MMORPG that came after owed a debt to this Korean creation.</div>
+            <div class="kr-trans">기네스 세계 기록 공식 인증 세계 최장수 상용 MMORPG. 흔히 '최초의 MMORPG'로 불리는 울티마 온라인보다 앞선 게임입니다. 만화가 김진의 고구려 시대 만화를 원작으로 1996년 출시됐으며 2026년 현재 30년째 운영 중입니다. 지속 세계, 플레이어 경제, 길드 시스템, 레벨링 구조 등 MMORPG의 기본 틀을 만든 한국의 창조물입니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">NCSoft/Nexon</span><span class="tag tag-beginner">기네스 세계 기록</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">9</div>
+          <div class="drama-info">
+            <div class="drama-title">Fortress 2 Blue (포트리스 2 블루) <button class="hangul-sound-btn" onclick="speakKorean('포트리스')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">포트리스 2 블루 <span style="font-size:0.8rem;color:var(--text-muted)">CCR, 2000</span></div>
+            <div class="drama-desc">Korea's beloved artillery cult classic — a free-to-play turn-based multiplayer game where players aim cannon shots across terrain, calculating wind direction and gravity to destroy each other's tanks. In PC방 of the early 2000s, 포트리스 was the "in-between game" — played in 20-minute sessions between StarCraft matches. Its physics-based aiming system created fierce competition despite simple graphics, and its free-to-play model was a decade ahead of the industry. The concept predates Angry Birds by ten years. A classic of the 아포칼립스 era, it remains one of Korea's most nostalgic gaming memories.</div>
+            <div class="kr-trans">한국의 전설적인 포병 게임. 바람과 중력을 계산해 탱크를 맞히는 무료 멀티플레이어 게임으로 앵그리버드보다 10년 앞선 물리 기반 게임입니다. 2000년대 초 PC방에서 스타크래프트 경기 사이의 '쉬는 게임'으로 즐겨졌으며 단순한 그래픽에도 치열한 경쟁을 만들었습니다. 무료 플레이 모델은 당시로서는 혁신적이었습니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">CCR</span><span class="tag tag-beginner">PC방 아이콘</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">10</div>
+          <div class="drama-info">
+            <div class="drama-title">Crazy Arcade BnB (크레이지아케이드 BnB) <button class="hangul-sound-btn" onclick="speakKorean('크레이지아케이드')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">크레이지아케이드 BnB <span style="font-size:0.8rem;color:var(--text-muted)">Nexon, 2001</span></div>
+            <div class="drama-desc">Nexon's colorful bubble-shooting multiplayer — trap your opponents in bubbles before they trap you. 크레이지아케이드 BnB was Korea's great equalizer: the entry-point game for kids who found StarCraft overwhelming, for girls who were told "games aren't for you," and for anyone wanting quick fun in PC방. At its peak it had millions of concurrent Korean players. Its cheerful OST became meme material decades later, and the game's community-chat culture — mixing competition with friendship — was unlike anything else. It remains the gateway game of 2000s Korean childhood nostalgia.</div>
+            <div class="kr-trans">넥슨의 버블 슈팅 멀티플레이어 게임. 스타크래프트가 어려운 초등학생, 여성 게이머의 입문 게임이 됐습니다. 최전성기에 수백만 명이 동시접속했으며 경쟁과 친목이 공존하는 채팅 문화가 특징이었습니다. 경쾌한 OST는 수십 년이 지난 지금도 밈으로 소환됩니다. 2000년대 한국 어린 시절 추억의 대명사입니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">Nexon</span><span class="tag tag-beginner">캐주얼 국민 게임</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">11</div>
+          <div class="drama-info">
+            <div class="drama-title">Diablo II (디아블로 2) <button class="hangul-sound-btn" onclick="speakKorean('디아블로 2')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">디아블로 2 <span style="font-size:0.8rem;color:var(--text-muted)">Blizzard, 2000</span></div>
+            <div class="drama-desc">Made in California, spiritually belonging to Korea. Diablo II was arguably more culturally embedded in Korean PC방 than anywhere else on Earth. The phrase "배틀넷 하러 가자" (let's go on Battle.net) was near-synonymous with Diablo II. Korean players pioneered the power-leveling and item-trading markets that predated modern gaming black economies. The 소서리스 (Sorceress) and 팔라딘 (Paladin) build debates were the subject of serious PC방 discussions. Its 2021 remaster Diablo II: Resurrected sold massively in Korea — 20 years of nostalgia had not faded in the slightest.</div>
+            <div class="kr-trans">캘리포니아에서 만들어졌지만 정신적 고향은 한국. '배틀넷 하러 가자'는 사실상 디아블로 2의 대명사였습니다. 한국 플레이어들은 대리 레벨업과 아이템 거래 시장을 개척해 현대 게임 경제의 선구자가 됐습니다. 소서리스·팔라딘 빌드 토론은 PC방의 진지한 담론이었고 2021년 리마스터 D2R도 한국에서 폭발적으로 팔렸습니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">Blizzard</span><span class="tag tag-beginner">배틀넷 문화</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">12</div>
+          <div class="drama-info">
+            <div class="drama-title">Ragnarok Online (라그나로크 온라인) <button class="hangul-sound-btn" onclick="speakKorean('라그나로크 온라인')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">라그나로크 온라인 <span style="font-size:0.8rem;color:var(--text-muted)">Gravity, 2002</span></div>
+            <div class="drama-desc">The Korean MMORPG that conquered Southeast Asia. Gravity's Ragnarok Online — based on Lee Myung-Jin's (이명진) manhwa — brought bright 2D sprite aesthetics and European medieval fantasy to Korean online gaming, a distinct shift from Lineage's darker world. Its 공성전 (Castle Siege) guild-vs-guild PvP, where guilds fight to control castle ownership for economic bonuses, became a defining Korean game mechanic copied by dozens of successors. Ragnarok Online exported Korean gaming culture to the Philippines, Thailand, Indonesia, and Brazil — where it built active communities that persist to this day.</div>
+            <div class="kr-trans">동남아시아를 정복한 한국 MMORPG. 이명진의 만화를 원작으로 밝은 2D 스프라이트와 중세 유럽 판타지를 선보였습니다. 길드 간 성을 쟁탈하는 '공성전' PvP 시스템은 수많은 후속작들이 복제한 한국 게임의 상징적 메커닉이 됐습니다. 필리핀·태국·인도네시아·브라질까지 한국 게임 문화를 수출한 선구적 성공작입니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">Gravity</span><span class="tag tag-beginner">동남아 수출 성공</span></div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">13</div>
+          <div class="drama-info">
+            <div class="drama-title">Sudden Attack (서든어택) <button class="hangul-sound-btn" onclick="speakKorean('서든어택')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">서든어택 <span style="font-size:0.8rem;color:var(--text-muted)">GameHi/Nexon, 2005</span></div>
+            <div class="drama-desc">Korea's homegrown FPS powerhouse — at its peak, 서든어택 was played in more Korean PC방 than Counter-Strike. Developed by GameHi and published by Nexon, it offered a PC방-optimized Korean FPS experience: fast matchmaking, Korean-specific maps, and a 클랜 시스템 (clan system) with 명예 계급 (honor ranks) that created deep community loyalty. The game's distinctly Korean FPS culture — dramatic callouts, high-APM aim, clan tournaments at 오락실-style local events — shaped a generation of Korean FPS players. Though now largely retired, veterans of 서든어택 form a significant portion of Korea's professional FPS talent pipeline.</div>
+            <div class="kr-trans">한국산 FPS의 자존심. 전성기에는 국내 PC방에서 카운터스트라이크보다 더 많이 플레이됐습니다. 빠른 매치메이킹, 클랜 시스템, 명예 계급이 강한 커뮤니티 충성도를 만들었습니다. 현재 대부분 은퇴했지만 서든어택 출신 게이머가 한국 프로 FPS 선수풀의 상당 부분을 차지하며 그 유산은 이어지고 있습니다.</div>
+            <div class="drama-tags"><span class="tag tag-culture">GameHi/Nexon</span><span class="tag tag-beginner">한국 FPS 강자</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Streaming Culture -->
+      <div id="kgaming-streaming" class="culture-sub-heading">📺 Korean Game Streaming Culture · 인터넷 방송 문화</div>
+      <div class="info-box" style="margin-bottom:20px;">
+        <span class="tip-icon">ℹ️</span>
+        <div class="tip-content">
+          <div class="tip-label">Korea Invented Game Streaming — Before Twitch Existed</div>
+          <div class="tip-text">아프리카TV (AfreecaTV) launched in 2006 — four years before Twitch — as the world's first platform built around live video streaming. Its donation currency 별풍선 (star balloons) is the direct ancestor of Twitch Bits and YouTube Super Chats. The culture of BJ (Broadcasting Jockey) — a solo streamer earning income through fan donations — was entirely a Korean invention.</div>
+          <div class="kr-trans">아프리카TV는 2006년 트위치보다 4년 앞서 세계 최초의 라이브 스트리밍 플랫폼으로 출시됐습니다. 별풍선 후원 시스템은 트위치 비츠와 유튜브 슈퍼챗의 직접적 원형입니다. 개인 방송으로 팬 후원을 받아 생계를 유지하는 'BJ 문화'는 한국이 만든 개념입니다.</div>
+        </div>
+      </div>
+      <div class="genre-grid">
+        <div class="genre-card">
+          <div class="genre-emoji" style="font-size:2rem;margin-bottom:10px;">📡</div>
+          <div class="genre-name">아프리카TV (AfreecaTV)</div>
+          <div class="genre-desc">Korea's original live-streaming platform (2006). Home of BJ culture — personal broadcasters who build audiences through personality and skill. 아프리카 = "Any Free Cast." Dominated Korean gaming streaming through the 2010s. Known for epic StarCraft and LoL marathon sessions, 먹방 eating broadcasts, and legendary 별풍선 donation moments.</div>
+          <div class="kr-trans">한국 최초의 라이브 스트리밍 플랫폼(2006). 아프리카 = Any Free Cast. BJ 문화의 발원지입니다. 2010년대 한국 게임 방송을 석권했으며 스타크래프트·롤 마라톤 방송, 먹방, 전설적인 별풍선 순간들로 유명합니다.</div>
+          <div class="genre-tags"><span class="genre-tag">BJ문화</span><span class="genre-tag">별풍선</span><span class="genre-tag">2006</span></div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-emoji" style="font-size:2rem;margin-bottom:10px;">🟢</div>
+          <div class="genre-name">치지직 (Chzzk — Naver)</div>
+          <div class="genre-desc">Naver's 2023 streaming platform that rapidly became AfreecaTV's main rival, winning top streamers with better revenue splits. The name 치지직 mimics the sound of TV static — a clever onomatopoeia. Within one year it attracted top-tier Korean streamers including LCK pro players during off-season. A sign that Korea's streaming market remains fiercely competitive.</div>
+          <div class="kr-trans">네이버가 2023년 론칭한 스트리밍 플랫폼으로 아프리카TV의 최대 라이벌이 됐습니다. '치지직'은 TV 노이즈 소리의 의성어입니다. 론칭 1년 만에 LCK 프로 선수들을 포함한 최상급 스트리머 다수를 유치했습니다.</div>
+          <div class="genre-tags"><span class="genre-tag">Naver</span><span class="genre-tag">2023</span><span class="genre-tag">의성어</span></div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-emoji" style="font-size:2rem;margin-bottom:10px;">⭐</div>
+          <div class="genre-name">별풍선 (Star Balloon)</div>
+          <div class="genre-desc">AfreecaTV's donation currency — virtual star balloons purchased with real money and gifted to BJs live. Each 별풍선 is worth ~₩100 to the broadcaster. Top BJs earn tens of millions of won per session. Invented by Afreeca in 2006, the 별풍선 system directly inspired Twitch Bits, channel points, and YouTube Super Chat. Korea monetized live streaming patronage before the world knew what a streamer was.</div>
+          <div class="kr-trans">아프리카TV의 후원 화폐 — 실제 돈으로 구매해 방송 중 BJ에게 선물하는 가상 별풍선입니다. 방송당 수천만 원을 버는 BJ도 있습니다. 2006년 아프리카가 발명한 별풍선 시스템은 트위치 비츠, 유튜브 슈퍼챗의 직접적 원형입니다.</div>
+          <div class="genre-tags"><span class="genre-tag">아프리카TV</span><span class="genre-tag">후원문화</span><span class="genre-tag">Twitch원조</span></div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-emoji" style="font-size:2rem;margin-bottom:10px;">🎙️</div>
+          <div class="genre-name">BJ 문화 (Broadcasting Jockey)</div>
+          <div class="genre-desc">BJ (Broadcasting Jockey) is Korea's term for a live-streamer — predating "streamer" by years. A successful BJ earns celebrity-level income. 인터넷 방송인 (internet broadcaster) is now a recognized career path. Some of Korea's most famous BJs have crossed into mainstream media. The dark side: 자극적 방송 (shock content) and regulatory debates about platform responsibility remain ongoing.</div>
+          <div class="kr-trans">BJ(방송 자키)는 한국의 라이브 스트리머를 가리키는 용어로 영어 '스트리머'보다 수년 앞서 생긴 개념입니다. 성공한 BJ는 연예인급 수입을 얻습니다. '인터넷 방송인'은 공인된 직업입니다. 일부 유명 BJ는 주류 미디어로 전향했으며 자극적 방송에 대한 규제 논쟁도 계속됩니다.</div>
+          <div class="genre-tags"><span class="genre-tag">인터넷방송인</span><span class="genre-tag">직업</span><span class="genre-tag">별풍선</span></div>
+        </div>
+      </div>
+
+      <!-- Esports Leagues & Teams -->
+      <div id="kgaming-esports" class="culture-sub-heading">🏆 Esports Leagues & Teams · e스포츠 리그와 팀</div>
+      <div class="district-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr));">
+        <div class="district-card">
+          <div class="district-emoji">🏆</div>
+          <div class="district-name">LCK — League Champions Korea</div>
+          <div class="district-kor">리그 챔피언스 코리아 <button class="hangul-sound-btn" onclick="speakKorean('리그 챔피언스 코리아')" aria-label="듣기">🔊</button></div>
+          <div class="district-desc">The world's most prestigious LoL league. 10 teams compete in Spring and Summer splits. Broadcast globally with English and Korean commentary. LCK pros train 12+ hours daily in team facilities with full coaching, nutrition, and mental health staff. Korean teams routinely dominate international events — Worlds and MSI.</div>
+          <div class="kr-trans">세계에서 가장 권위 있는 LoL 리그. 10개 팀이 스프링·서머 시즌을 겨루며 전 세계에 한국어·영어로 중계됩니다. LCK 선수들은 코칭·영양·멘탈 관리 시스템을 갖춘 팀 시설에서 매일 12시간 이상 훈련합니다.</div>
+        </div>
+        <div class="district-card">
+          <div class="district-emoji">⚡</div>
+          <div class="district-name">T1 (SKT T1)</div>
+          <div class="district-kor">T1 · 티원 <button class="hangul-sound-btn" onclick="speakKorean('티원')" aria-label="듣기">🔊</button></div>
+          <div class="district-desc">The most successful LoL team in history — 4 World titles. Founded by SK Telecom and now a standalone esports org. Faker is its franchise player. T1 has expanded into VALORANT, Fortnite, and more. Its games consistently break viewership records. Comparable to the Yankees or Real Madrid in their sport.</div>
+          <div class="kr-trans">롤드컵 4회 우승으로 LoL 역사상 가장 성공적인 팀. SK텔레콤이 설립하고 현재 독립 e스포츠 법인으로 운영됩니다. 페이커가 프랜차이즈 스타입니다. T1의 브랜드는 스포츠에서 뉴욕 양키스나 레알 마드리드에 비견됩니다.</div>
+        </div>
+        <div class="district-card">
+          <div class="district-emoji">🔵</div>
+          <div class="district-name">Gen.G (젠지)</div>
+          <div class="district-kor">젠지 e스포츠 <button class="hangul-sound-btn" onclick="speakKorean('젠지')" aria-label="듣기">🔊</button></div>
+          <div class="district-desc">Originally Samsung Galaxy — 2017 World Champions. Rebranded as Gen.G in 2018 with US investment. Consistently a top-2 Korean team. Gen.G has partnered with Puma, Red Bull, and global brands. Operates one of Korea's most advanced training facilities and is deeply invested in youth development programmes.</div>
+          <div class="kr-trans">원래 삼성 갤럭시(2017 롤드컵 우승)로 2018년 미국 투자를 받아 젠지로 리브랜딩했습니다. 한국 최상위 팀 중 하나로 푸마·레드불과 파트너십을 체결하고 최고 수준의 훈련 시설을 보유합니다.</div>
+        </div>
+        <div class="district-card">
+          <div class="district-emoji">🎯</div>
+          <div class="district-name">KT Rolster</div>
+          <div class="district-kor">KT 롤스터 <button class="hangul-sound-btn" onclick="speakKorean('KT 롤스터')" aria-label="듣기">🔊</button></div>
+          <div class="district-desc">Korea's oldest esports organisation — founded in 1999 by telecom giant KT. Home to StarCraft legend Flash (이영호). In LoL, KT has reached the World Championship semifinals multiple times but never won — creating its own 콩라인 reputation. Their rivalry with T1 is one of esports' most historic.</div>
+          <div class="kr-trans">KT가 1999년 창단한 한국에서 가장 역사 깊은 e스포츠 팀. 이영호(Flash)를 포함한 스타크래프트 전설들의 고향. LoL에서는 롤드컵 4강 여러 번이지만 우승 없는 '팀 콩라인' 명성이 있습니다. T1과의 라이벌 구도는 e스포츠 역사상 가장 유명한 팀 라이벌 중 하나입니다.</div>
+        </div>
+        <div class="district-card">
+          <div class="district-emoji">🛡️</div>
+          <div class="district-name">공군 ACE · Air Force Esports</div>
+          <div class="district-kor">대한민국 공군 ACE <button class="hangul-sound-btn" onclick="speakKorean('공군 에이스')" aria-label="듣기">🔊</button></div>
+          <div class="district-desc">A real military unit where top pro gamers serve their mandatory service while continuing to compete. Korea's conscription law requires all men to serve — rather than losing stars for two years, the Air Force created a competitive gaming unit. 임요환 served here. The only military esports unit in the world.</div>
+          <div class="kr-trans">대한민국 공군의 e스포츠 팀 — 프로게이머들이 군복무 의무를 이행하면서도 경기를 계속할 수 있는 실제 군부대입니다. 임요환도 공군 ACE 소속으로 복무했습니다. 세계 유일의 군 게임 부대입니다.</div>
+        </div>
+        <div class="district-card">
+          <div class="district-emoji">🌍</div>
+          <div class="district-name">Korea's Global Coaching Export</div>
+          <div class="district-kor">한국인 코치의 세계 진출 <button class="hangul-sound-btn" onclick="speakKorean('한국인 코치')" aria-label="듣기">🔊</button></div>
+          <div class="district-desc">Almost every major LoL team in North America, Europe, and China employs Korean head coaches or analysts. Korean "bootcamps" — where international teams travel to Korea to train against the LCK — are standard competitive preparation. The KeSPA model (full-time coaches, psychologists, nutritionists, housing) has been copied worldwide.</div>
+          <div class="kr-trans">북미·유럽·중국의 거의 모든 주요 LoL 팀이 한국인 감독이나 분석가를 보유합니다. 국제 팀들이 LCK 메타에서 훈련하기 위해 한국 부트캠프를 진행하는 것이 표준 경쟁 준비 방식입니다.</div>
+        </div>
+      </div>
+
+      <!-- PC방 Culture (expanded) -->
+      <div id="kgaming-pcbang" class="culture-sub-heading">🏪 PC방 Culture · 피씨방 문화</div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">What is a PC방 (피씨방)?</div>
+          <div class="tip-text">PC방 (pi-ssi-bang) are internet cafés open 24 hours with high-spec gaming PCs, fast fiber internet, and full food service. Born from the 1997 IMF crisis — unemployed Koreans converted basements into gaming businesses just as StarCraft arrived. Prices: ₩1,000–1,500/hour. In Korea, PC방 is not just a place to game — it is where friendships are made, all-nighters are pulled, and professional careers begin.</div>
+          <div class="kr-trans">PC방은 24시간 운영되는 고사양 PC, 초고속 인터넷, 음식 서비스를 갖춘 인터넷 카페입니다. 1997년 IMF 위기 때 실직자들이 지하실을 게임 사업장으로 바꾸면서 탄생했습니다. 시간당 1,000~1,500원. 한국에서 PC방은 단순한 게임 장소가 아닙니다 — 우정이 쌓이고, 밤을 새우고, 프로 커리어가 시작되는 곳입니다.</div>
+        </div>
+      </div>
+      <div class="etiquette-grid" style="margin:20px 0;">
+        <div class="etiquette-card">
+          <span class="etiquette-icon">🍜</span>
+          <div class="etiquette-title">PC방 Food Culture</div>
+          <div class="etiquette-kor">PC방 음식 <button class="hangul-sound-btn" onclick="speakKorean('PC방 음식')" aria-label="듣기">🔊</button></div>
+          <div class="etiquette-desc">Most PC방 have full kitchen service. The classic order: 컵라면, 삼각김밥, 토스트, 치킨. You order via a desktop menu system without leaving your seat. The smell of instant ramen mixed with PC hum is a core memory for Korean millennials. Some premium PC방 now serve proper meal sets.</div>
+        </div>
+        <div class="etiquette-card">
+          <span class="etiquette-icon">🛋️</span>
+          <div class="etiquette-title">1인실 (Private Booths)</div>
+          <div class="etiquette-kor">일인실 <button class="hangul-sound-btn" onclick="speakKorean('일인실')" aria-label="듣기">🔊</button></div>
+          <div class="etiquette-desc">Premium PC방 offer 1인실 — private enclosed booths with reclining chairs and personal AC. A trend from the 2010s driven by demand for privacy. Costs slightly more (₩1,500–2,000/hour). Some high-end PC방 feel closer to a luxury pod hotel than an internet café.</div>
+        </div>
+        <div class="etiquette-card">
+          <span class="etiquette-icon">⭐</span>
+          <div class="etiquette-title">PC방 점수 시스템</div>
+          <div class="etiquette-kor">PC방 점수 <button class="hangul-sound-btn" onclick="speakKorean('PC방 점수')" aria-label="듣기">🔊</button></div>
+          <div class="etiquette-desc">Many Korean games reward players who play from a registered PC방 with bonus XP, items, or event currency. This "PC방 advantage" means your account literally improves faster from PC방. Games like LoL and MapleStory integrate PC방 partnerships directly into their reward systems.</div>
+        </div>
+        <div class="etiquette-card">
+          <span class="etiquette-icon">🌃</span>
+          <div class="etiquette-title">밤샘 PC방 문화</div>
+          <div class="etiquette-kor">밤새 게임 <button class="hangul-sound-btn" onclick="speakKorean('밤새 게임')" aria-label="듣기">🔊</button></div>
+          <div class="etiquette-desc">Missing the last subway (막차) means staying in PC방 until morning — a rite of passage for every Korean youth. PC방 are safe and open at 3 AM. Groups game, eat ramen, sleep in chairs, and emerge bleary-eyed at dawn. 밤새 게임했어 (I gamed all night) is said with both exhaustion and pride.</div>
+        </div>
+      </div>
+      <div class="info-box" style="margin:20px 0 12px;">
+        <span class="tip-icon">ℹ️</span>
+        <div class="tip-content">
+          <div class="tip-label">키오스크 시대 — No More Counter Ordering</div>
+          <div class="tip-text">Modern PC방 are fully self-service via 키오스크 (kiosk) touchscreen terminals at the entrance. You select your seat, set your time, order food, and pay — all without speaking to staff. The old phrases "자리 있어요?", "한 시간 주세요", or "라면 시켜도 돼요?" are effectively extinct — everything is done on-screen. The staff's main job is now bringing food to your seat and cleaning up.</div>
+          <div class="kr-trans">요즘 PC방은 입구의 키오스크로 모든 것이 해결됩니다. 자리 선택, 시간 설정, 음식 주문, 결제까지 — 직원과 한마디도 안 해도 됩니다. "자리 있어요?", "한 시간 주세요", "라면 시켜도 돼요?" 같은 말은 이제 사라진 표현입니다. 직원의 주 업무는 음식 서빙과 청소입니다.</div>
+        </div>
+      </div>
+      <div class="phrase-grid" style="margin-top:4px;">
+        <div class="phrase-card">
+          <div class="phrase-kor">같이 게임할래요? <button class="hangul-sound-btn" onclick="speakKorean('같이 게임할래요')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Gachi geimhalraeyo?</div>
+          <div class="phrase-eng">Do you want to game together?</div>
+          <div class="phrase-context">💡 Still human — asking a stranger next to you. Rare, but magic when it happens.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">1인실 있어요? <button class="hangul-sound-btn" onclick="speakKorean('일인실 있어요')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Irinsil isseoyo?</div>
+          <div class="phrase-eng">Are there private booths available?</div>
+          <div class="phrase-context">💡 Sometimes you still ask staff if private booths are free — not shown on kiosk.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">밤새 게임했어. <button class="hangul-sound-btn" onclick="speakKorean('밤새 게임했어')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Bamsae geimhaesseo.</div>
+          <div class="phrase-eng">I gamed all night.</div>
+          <div class="phrase-context">💡 Said with both exhaustion and pride. A badge of honour in Korean gaming culture.</div>
+        </div>
+      </div>
+
+      <!-- PC방 Fun Facts -->
+      <div class="culture-sub-heading" style="margin-top:28px;">☕ PC방 Inside Stories · 피씨방 뒷이야기</div>
+      <div class="drama-list">
+        <div class="drama-item">
+          <div class="drama-num">💁</div>
+          <div class="drama-info">
+            <div class="drama-title">이쁜 알바 고용 문화 <button class="hangul-sound-btn" onclick="speakKorean('이쁜 알바')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">외모로 뽑는 PC방 알바 <span style="font-size:0.8rem;color:var(--text-muted)">A very Korean phenomenon</span></div>
+            <div class="drama-desc">It is an open secret in Korea that PC방 preferentially hire attractive part-time staff (알바). The logic: attractive staff attract more customers — particularly male gamers — who come back for the ambience as much as the bandwidth. Some PC방 even market themselves by the reputation of their staff's looks. This reflects Korea's broader 외모지상주의 (lookism) culture bleeding into everyday commerce. The phenomenon is casually discussed online without the controversy it would generate in other countries.</div>
+            <div class="kr-trans">한국 PC방에서 이쁜 알바를 선호해서 고용하는 것은 공공연한 비밀입니다. 이쁜 알바가 있으면 손님(특히 남성 게이머)이 더 많이 방문한다는 논리입니다. 일부 PC방은 아예 알바 외모를 마케팅 포인트로 사용하기도 합니다. 한국의 외모지상주의 문화가 일상 상권에도 스며든 사례로, 인터넷에서 별 논란 없이 가볍게 이야기됩니다.</div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">🍜</div>
+          <div class="drama-info">
+            <div class="drama-title">라면 잘 끓이는 알바의 가치 <button class="hangul-sound-btn" onclick="speakKorean('라면 잘 끓이는 알바')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">단골 만드는 라면 실력 <span style="font-size:0.8rem;color:var(--text-muted)">The ramen-talent economy</span></div>
+            <div class="drama-desc">In the serious business of PC방 customer loyalty, the ability to cook 라면 and 짜파게티 well is a genuine competitive advantage. A PC방 where the staff cook instant noodles to perfection — right firmness, right broth ratio, perfectly timed — builds regulars who return specifically for the food. Online communities discuss which PC방 near which subway station has the "라면 맛있는 PC방" (PC방 with good ramen). It sounds absurd until you realize how much time Koreans spend in PC방 and how important the ramen break is to the ritual.</div>
+            <div class="kr-trans">PC방 단골을 만드는 데 라면·짜파게티를 잘 끓이는 알바의 존재는 진짜 경쟁력입니다. 면 탄력, 국물 비율, 타이밍이 완벽한 라면을 내오는 PC방에는 라면 때문에 다시 찾는 단골이 생깁니다. 인터넷 커뮤니티에서 "어느 역 근처 라면 맛있는 PC방"을 추천하는 글이 심심찮게 올라옵니다. PC방에서 보내는 시간이 얼마나 많은지, 라면 타임이 그 의식에서 얼마나 중요한지를 생각하면 납득이 됩니다.</div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">👨‍👩‍👦</div>
+          <div class="drama-info">
+            <div class="drama-title">e스포츠 강국의 아이러니 — 부모님은 아직도 반대 <button class="hangul-sound-btn" onclick="speakKorean('게임하지 마')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">게임하면 인생 망한다는 부모님 <span style="font-size:0.8rem;color:var(--text-muted)">Even in Korea's esports paradise</span></div>
+            <div class="drama-desc">Here is the great Korean gaming paradox: the country that invented professional esports, that built PC방 on every corner, that produces the world's greatest players — and yet, the overwhelming majority of Korean parents still believe that gaming will ruin their child's life. 공부해! (Study!) remains the battle cry. Telling your parents "I want to be a pro gamer" is still one of the most anxiety-inducing statements a Korean teenager can make. Faker's own parents reportedly did not support his gaming career early on. The generation gap between Korea's gaming culture and its Confucian parenting values creates a specific and very Korean tension that has yet to fully resolve — even in 2025.</div>
+            <div class="kr-trans">한국의 위대한 게임 역설: e스포츠를 창시하고, 골목마다 PC방을 세우고, 세계 최고의 선수를 배출한 나라 — 그런데도 한국 부모님 대다수는 여전히 "게임하면 인생 망한다"고 믿습니다. "공부해!"는 변함없는 구호입니다. 부모님께 "프로게이머가 되고 싶어요"라는 말은 아직도 한국 십대에게 가장 꺼내기 어려운 말 중 하나입니다. 페이커도 초기에 부모님이 게임 커리어를 지지하지 않았다고 합니다. 한국의 게임 문화와 유교적 교육관 사이의 세대 갈등은 2025년에도 완전히 해소되지 않았습니다.</div>
+          </div>
+        </div>
+        <div class="drama-item">
+          <div class="drama-num">⚖️</div>
+          <div class="drama-info">
+            <div class="drama-title">게임 사전검열 & 게임물관리위원회 <button class="hangul-sound-btn" onclick="speakKorean('게임물관리위원회')" aria-label="듣기">🔊</button></div>
+            <div class="drama-kor">e스포츠 강국의 시대착오적 규제 <span style="font-size:0.8rem;color:var(--text-muted)">G식백과 · 김성회</span></div>
+            <div class="drama-desc">Despite being the world's leading esports nation, Korea operates one of the most opaque and criticised game rating and censorship systems in the developed world. The 게임물관리위원회 (Game Rating and Administration Committee / GRAC) controls which games can be sold or played in Korea — and has repeatedly drawn fire for inconsistent, unpredictable, and arguably politically motivated decisions. YouTuber 김성회 (channel: 김성회의 G식백과) has become one of Korea's most prominent voices exposing the system's absurdities: the vague standards that allow one game through while blocking a near-identical one; the pre-censorship model (games must be approved before release, not after); and the real economic harm caused by delayed approvals. His channel is essential viewing for anyone interested in Korean game policy. The irony is not lost: the country that professionalized gaming is also the country that still treats game content like a public health hazard requiring bureaucratic approval.</div>
+            <div class="kr-trans">세계 최고의 e스포츠 강국이면서도 한국은 선진국 중 가장 불투명하고 비판받는 게임 심의 시스템을 운영하고 있습니다. 게임물관리위원회는 한국에서 판매·서비스될 수 있는 게임을 통제하며, 비일관적이고 불예측적인 심의로 반복적으로 비판받습니다. 유튜버 김성회(김성회의 G식백과)는 이 시스템의 불합리성을 가장 날카롭게 파헤치는 목소리입니다 — 유사한 두 게임 중 하나만 통과하는 모호한 기준, 출시 전 사전검열 모델, 지연 심의로 인한 실제 경제적 피해. 게임을 직업으로 만든 나라가 동시에 게임 콘텐츠를 관료적 승인이 필요한 공중보건 위협으로 여기는 나라라는 아이러니는 여전히 현재진행형입니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gamer Slang -->
+      <div id="kgaming-slang" class="culture-sub-heading">💬 Korean Gamer Slang · 게이머 은어</div>
+      <div class="phrase-grid">
+        <div class="phrase-card">
+          <div class="phrase-kor">고수 <button class="hangul-sound-btn" onclick="speakKorean('고수')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Go-su</div>
+          <div class="phrase-eng">Expert / skilled player</div>
+          <div class="phrase-context">💡 Opposite: 하수 (ha-su). 고수 = upper stream; 하수 = lower stream — a poetic skill metaphor.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">캐리 <button class="hangul-sound-btn" onclick="speakKorean('캐리')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Kae-ri</div>
+          <div class="phrase-eng">Carry (win it for the team)</div>
+          <div class="phrase-context">💡 캐리해줘 = Please carry us. Said with faith — or total surrender.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">트롤 <button class="hangul-sound-btn" onclick="speakKorean('트롤')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Teu-rol</div>
+          <div class="phrase-eng">Troll / intentionally ruining the game</div>
+          <div class="phrase-context">💡 트롤 짓 하지 마 = Stop trolling. 트롤러 = a troll player. The ultimate insult.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">탈주 <button class="hangul-sound-btn" onclick="speakKorean('탈주')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Tal-ju</div>
+          <div class="phrase-eng">Rage quit / deserter</div>
+          <div class="phrase-context">💡 탈주범 = habitual quitter. From 탈주 (escape/desertion). Causes rank ban. Universally hated.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">솔랭 <button class="hangul-sound-btn" onclick="speakKorean('솔랭')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Sol-laeng</div>
+          <div class="phrase-eng">Solo ranked queue</div>
+          <div class="phrase-context">💡 Short for 솔로 랭크 게임. The true measure of individual skill — no friends to blame.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">정글차이 <button class="hangul-sound-btn" onclick="speakKorean('정글차이')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Jeong-geul-cha-i</div>
+          <div class="phrase-eng">Jungle difference (blaming the jungler)</div>
+          <div class="phrase-context">💡 정글 + 차이 (gap). 정글차이야 = "It's the jungler's fault." Korea's most common LoL excuse.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">롤드컵 <button class="hangul-sound-btn" onclick="speakKorean('롤드컵')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Rol-deu-keop</div>
+          <div class="phrase-eng">LoL World Championship</div>
+          <div class="phrase-context">💡 Short for 리그 오브 레전드 월드 챔피언십. Autumn = 롤드컵 시즌 = everyone watches together.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">핵쟁이 <button class="hangul-sound-btn" onclick="speakKorean('핵쟁이')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Haek-jaeng-i</div>
+          <div class="phrase-eng">Hacker / cheater (accusation)</div>
+          <div class="phrase-context">💡 핵 (hack) + 쟁이 (person suffix). 핵쟁이야! = "You're hacking!" The go-to when someone is much better than you.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">치킨 먹자 <button class="hangul-sound-btn" onclick="speakKorean('치킨 먹자')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Chi-kin meok-ja</div>
+          <div class="phrase-eng">Let's eat chicken — we won</div>
+          <div class="phrase-context">💡 PUBG's Korean victory screen phrase. 치킨 먹었다 = "We ate chicken" = we won. Now used for any decisive win.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">ㅋㅋㅋ <button class="hangul-sound-btn" onclick="speakKorean('크크크')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Keu-keu-keu</div>
+          <div class="phrase-eng">Lol / haha (chat laugh)</div>
+          <div class="phrase-context">💡 ㅋ = chuckle. ㅋㅋ = actual laugh. ㅋㅋㅋㅋㅋ = losing it. The most Korean sound in digital text.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">운빨 <button class="hangul-sound-btn" onclick="speakKorean('운빨')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Un-ppal</div>
+          <div class="phrase-eng">Lucky win (not skill, just luck)</div>
+          <div class="phrase-context">💡 운 (luck) + 빨 (speed/force). 운빨로 이겼다 = "You only won by luck." The ultimate insult to a winner.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">ㅂㅂ <button class="hangul-sound-btn" onclick="speakKorean('바이바이')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Ba-i ba-i</div>
+          <div class="phrase-eng">Bye bye (post-game chat)</div>
+          <div class="phrase-context">💡 gg ㅂㅂ = "Good game, bye." A rare moment of civility in competitive gaming.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">ㅈㅈ <button class="hangul-sound-btn" onclick="speakKorean('지지')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Ji-ji (GG)</div>
+          <div class="phrase-eng">GG / I give up / game over</div>
+          <div class="phrase-context">💡 Short for 지지 (GG). Typed in all-chat to signal surrender or acknowledge defeat. ㅈㅈ 치다 = to type GG = to give up. Also used in real life: "오늘 시험 ㅈㅈ쳤어" = "I bombed today's exam."</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">고인물 <button class="hangul-sound-btn" onclick="speakKorean('고인물')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Go-in-mul</div>
+          <div class="phrase-eng">Veteran who never left (stagnant water)</div>
+          <div class="phrase-context">💡 고인물 literally means "stagnant water" — water that has been sitting so long it stops flowing. In gaming: someone who has played the same game for so many years they are deeply skilled but also deeply entrenched, unable to adapt or move on. Unlike 고수 (pure admiration), 고인물 has a faintly mocking edge — they've been here too long. "저 사람 완전 고인물이야" = "That person is a total veteran fossil."</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">배린이 <button class="hangul-sound-btn" onclick="speakKorean('배린이')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Bae-ri-ni</div>
+          <div class="phrase-eng">PUBG newbie (배그 + 어린이)</div>
+          <div class="phrase-context">💡 배그 (PUBG / 배틀그라운드) + 어린이 (child) = 배린이. The Korean internet loves this suffix pattern: 골린이 (golf newbie), 헬린이 (gym newbie), 주린이 (stock market newbie). Any hobbyist domain + 린이 = a beginner in that field. "나 배린이라 아직 치킨 못 먹었어" = "I'm a PUBG newbie, I still haven't won a chicken."</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">부모님 안부 <button class="hangul-sound-btn" onclick="speakKorean('부모님 안부')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Bu-mo-nim an-bu</div>
+          <div class="phrase-eng">"How are your parents?" — extreme trash talk</div>
+          <div class="phrase-context">💡 Literally "greetings to your parents" — but in gaming, typing 부모님 안부 여쭤봐 after destroying someone is one of the most cutting insults possible. The subtext: "You played so badly I feel sorry for your parents." In Korean culture where parents are deeply respected, weaponizing them as trash talk hits harder than any direct insult. Guaranteed to cause rage. Use with caution.</div>
+        </div>
+        <div class="phrase-card">
+          <div class="phrase-kor">현피 <button class="hangul-sound-btn" onclick="speakKorean('현피')" aria-label="듣기">🔊</button></div>
+          <div class="phrase-rom">Hyeon-pi</div>
+          <div class="phrase-eng">Real-life fight after online conflict</div>
+          <div class="phrase-context">💡 현실 (reality) + PK (Player Kill). When an online argument escalates to "let's settle this IRL." 현피 뜨자 = "Let's meet up and fight for real." Born from the Lineage 혈맹 clan wars era where territorial disputes were so intense players actually tracked down opponents offline. Rare in modern gaming but the word remains — a testament to how seriously Koreans once took their online games.</div>
+        </div>
+      </div>
+
+      <!-- Gaming Vocabulary -->
+      <div id="kgaming-vocab" class="culture-sub-heading">📖 Gaming Vocabulary · 게임 어휘</div>
+      <table class="vocab-table">
+        <thead><tr><th>Korean</th><th>Translation · 번역</th><th>🔊</th></tr></thead>
+        <tbody>
+          <tr><td class="kor-cell">게임<span class="rom-text">ge-im</span></td><td class="eng-cell"><span class="kor-trans">컴퓨터나 모바일로 즐기는 놀이</span>Game</td><td><button class="hangul-sound-btn" onclick="speakKorean('게임')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">피씨방<span class="rom-text">pi-ssi-bang</span></td><td class="eng-cell"><span class="kor-trans">컴퓨터 게임을 즐기는 실내 공간</span>PC Bang (internet café)</td><td><button class="hangul-sound-btn" onclick="speakKorean('피씨방')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">캐릭터<span class="rom-text">kae-rik-teo</span></td><td class="eng-cell"><span class="kor-trans">게임 속 내 분신 인물</span>Character</td><td><button class="hangul-sound-btn" onclick="speakKorean('캐릭터')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">아이템<span class="rom-text">a-i-tem</span></td><td class="eng-cell"><span class="kor-trans">게임 속 장비나 도구</span>Item / in-game equipment</td><td><button class="hangul-sound-btn" onclick="speakKorean('아이템')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">레벨업<span class="rom-text">re-bel-eop</span></td><td class="eng-cell"><span class="kor-trans">게임에서 등급이 올라가는 것</span>Level up</td><td><button class="hangul-sound-btn" onclick="speakKorean('레벨업')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">클리어<span class="rom-text">keul-li-eo</span></td><td class="eng-cell"><span class="kor-trans">단계나 미션을 성공적으로 끝내는 것</span>Clear (complete a stage)</td><td><button class="hangul-sound-btn" onclick="speakKorean('클리어')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">던전<span class="rom-text">deon-jeon</span></td><td class="eng-cell"><span class="kor-trans">게임 속 지하 탐험 공간</span>Dungeon</td><td><button class="hangul-sound-btn" onclick="speakKorean('던전')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">공격<span class="rom-text">gong-gyeok</span></td><td class="eng-cell"><span class="kor-trans">적에게 피해를 입히는 행동</span>Attack</td><td><button class="hangul-sound-btn" onclick="speakKorean('공격')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">방어<span class="rom-text">bang-eo</span></td><td class="eng-cell"><span class="kor-trans">적의 공격을 막는 행동</span>Defense</td><td><button class="hangul-sound-btn" onclick="speakKorean('방어')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">스킬<span class="rom-text">seu-kil</span></td><td class="eng-cell"><span class="kor-trans">캐릭터의 특수 능력</span>Skill / ability</td><td><button class="hangul-sound-btn" onclick="speakKorean('스킬')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">팀원<span class="rom-text">tim-won</span></td><td class="eng-cell"><span class="kor-trans">같은 팀의 동료 플레이어</span>Teammate</td><td><button class="hangul-sound-btn" onclick="speakKorean('팀원')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">프로게이머<span class="rom-text">peu-ro-ge-i-meo</span></td><td class="eng-cell"><span class="kor-trans">게임을 직업으로 하는 선수</span>Professional gamer</td><td><button class="hangul-sound-btn" onclick="speakKorean('프로게이머')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">연습<span class="rom-text">yeon-seup</span></td><td class="eng-cell"><span class="kor-trans">실력 향상을 위한 반복 훈련</span>Practice</td><td><button class="hangul-sound-btn" onclick="speakKorean('연습')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">대회<span class="rom-text">dae-hoe</span></td><td class="eng-cell"><span class="kor-trans">실력을 겨루는 공식 경기</span>Tournament / competition</td><td><button class="hangul-sound-btn" onclick="speakKorean('대회')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">랭킹<span class="rom-text">raeng-king</span></td><td class="eng-cell"><span class="kor-trans">점수나 실력에 따른 순위</span>Ranking</td><td><button class="hangul-sound-btn" onclick="speakKorean('랭킹')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">게임방송<span class="rom-text">ge-im-bang-song</span></td><td class="eng-cell"><span class="kor-trans">게임하는 모습을 보여주는 방송</span>Game streaming / broadcast</td><td><button class="hangul-sound-btn" onclick="speakKorean('게임방송')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">버그<span class="rom-text">beo-geu</span></td><td class="eng-cell"><span class="kor-trans">게임 속 오류나 결함</span>Bug / glitch</td><td><button class="hangul-sound-btn" onclick="speakKorean('버그')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">패치<span class="rom-text">pae-chi</span></td><td class="eng-cell"><span class="kor-trans">게임을 수정하는 업데이트</span>Patch / game update</td><td><button class="hangul-sound-btn" onclick="speakKorean('패치')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">인터넷 방송인<span class="rom-text">in-teo-net bang-song-in</span></td><td class="eng-cell"><span class="kor-trans">인터넷 방송을 하는 크리에이터</span>Internet broadcaster / streamer</td><td><button class="hangul-sound-btn" onclick="speakKorean('인터넷 방송인')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">별풍선<span class="rom-text">byeol-pung-seon</span></td><td class="eng-cell"><span class="kor-trans">아프리카TV 후원 아이템</span>Star balloon (streaming donation)</td><td><button class="hangul-sound-btn" onclick="speakKorean('별풍선')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">e스포츠<span class="rom-text">i-seu-po-cheu</span></td><td class="eng-cell"><span class="kor-trans">전자 스포츠 / 게임 경기</span>Esports</td><td><button class="hangul-sound-btn" onclick="speakKorean('e스포츠')" aria-label="듣기">🔊</button></td></tr>
+          <tr><td class="kor-cell">팀 하우스<span class="rom-text">tim ha-u-seu</span></td><td class="eng-cell"><span class="kor-trans">프로 선수들이 함께 사는 숙소</span>Team house (player residence)</td><td><button class="hangul-sound-btn" onclick="speakKorean('팀 하우스')" aria-label="듣기">🔊</button></td></tr>
+        </tbody>
+      </table>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+          <li><a href="../learn/grammar.html">Grammar</a></li>
+          <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+    </div>
+  </div>
+</footer>
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

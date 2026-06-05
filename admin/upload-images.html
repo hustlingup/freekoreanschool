@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Upload — Korean School Admin</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #07071F; color: #c8d0e8; font-size: 13px; line-height: 1.5; }
+    a { color: inherit; }
+
+    header { background: #0d0d30; border-bottom: 1px solid #1a1a50; padding: 14px 24px; display: flex; align-items: baseline; gap: 14px; }
+    header h1 { font-size: 17px; font-weight: 700; color: #e8e8ff; }
+    header .sub { font-size: 12px; color: #4a5568; }
+
+    .container { max-width: 1440px; margin: 0 auto; padding: 18px 24px; }
+
+    .panel { background: #0d0d30; border: 1px solid #1a1a50; border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; }
+    .panel-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: #4a5568; margin-bottom: 10px; }
+    .config-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .config-row label { font-size: 12px; color: #9ca3af; white-space: nowrap; }
+    input[type="password"], input[type="text"] {
+      background: #1a1a3e; border: 1px solid #2a2a5e; border-radius: 5px;
+      color: #e8e8ff; padding: 5px 10px; font-size: 12px; font-family: monospace;
+      width: 340px; outline: none;
+    }
+    input[type="password"]:focus, input[type="text"]:focus { border-color: #4a4a9e; }
+
+    button { padding: 5px 13px; border-radius: 5px; font-size: 12px; font-weight: 600; cursor: pointer; border: 1px solid transparent; transition: all .15s; }
+    .btn-primary { background: #E8003D; color: #fff; border-color: #E8003D; font-size: 13px; padding: 7px 18px; }
+    .btn-primary:hover:not(:disabled) { background: #c0002f; }
+    .btn-primary:disabled { background: #4a0018; color: #6b7280; cursor: not-allowed; }
+    .btn-ghost { background: #1a1a3e; color: #c8d0e8; border-color: #2a2a5e; }
+    .btn-ghost:hover { background: #22224e; }
+
+    .actions-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+    .rl { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #9ca3af; cursor: pointer; }
+    .summary { margin-left: auto; font-size: 12px; color: #4a5568; }
+
+    .progress-wrap { background: #0d0d30; border: 1px solid #1a1a50; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; display: none; }
+    .progress-wrap.visible { display: block; }
+    .progress-track { background: #1a1a3e; border-radius: 999px; height: 7px; overflow: hidden; margin-bottom: 5px; }
+    .progress-fill { background: #E8003D; height: 100%; border-radius: 999px; width: 0%; transition: width .25s; }
+    .progress-label { font-size: 11px; color: #6b7280; }
+
+    .table-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid #1a1a50; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    thead { background: #0d0d30; position: sticky; top: 0; z-index: 10; }
+    th { padding: 9px 11px; text-align: left; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: #4a5568; border-bottom: 1px solid #1a1a50; white-space: nowrap; }
+    td { padding: 7px 11px; border-bottom: 1px solid #0f0f2e; vertical-align: middle; }
+    tr.data-row:hover td { background: rgba(255,255,255,0.015); }
+    tr.cat-header td { background: #0b0b25; color: #4a5568; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; padding: 5px 11px; border-top: 1px solid #1a1a50; border-bottom: 1px solid #1a1a50; }
+
+    .td-num { width: 36px; color: #2a2a5e; font-size: 11px; }
+    .td-id { min-width: 170px; }
+    .td-desc { min-width: 210px; color: #c8d0e8; }
+    .td-type { min-width: 110px; }
+    .td-size { min-width: 95px; font-family: monospace; font-size: 11px; color: #6b7280; white-space: nowrap; }
+    .td-target { min-width: 175px; }
+    .td-file { min-width: 90px; }
+    .td-preview { width: 56px; }
+    .td-status { min-width: 115px; }
+
+    code { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; background: #111130; padding: 1px 5px; border-radius: 3px; color: #a5b4fc; }
+
+    .tbadge { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 3px; white-space: nowrap; }
+    .t-place { background: rgba(0,52,120,.35); color: #60a5fa; border: 1px solid rgba(0,52,120,.55); }
+    .t-photo { background: rgba(232,0,61,.2); color: #f87171; border: 1px solid rgba(232,0,61,.3); }
+    .t-chef  { background: rgba(255,215,0,.13); color: #fbbf24; border: 1px solid rgba(255,215,0,.22); }
+    .t-food  { background: rgba(34,197,94,.13); color: #4ade80; border: 1px solid rgba(34,197,94,.2); }
+
+    .badge { font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 3px; white-space: nowrap; display: inline-block; }
+    .b-none { background: #111130; color: #2a3050; }
+    .b-ready { background: rgba(59,130,246,.18); color: #60a5fa; border: 1px solid rgba(59,130,246,.28); }
+    .b-uploading { background: rgba(245,158,11,.18); color: #fbbf24; border: 1px solid rgba(245,158,11,.28); }
+    .b-success { background: rgba(34,197,94,.18); color: #4ade80; border: 1px solid rgba(34,197,94,.28); }
+    .b-error { background: rgba(239,68,68,.18); color: #f87171; border: 1px solid rgba(239,68,68,.28); }
+
+    input[type="file"] { font-size: 11px; color: #9ca3af; max-width: 130px; }
+    input[type="file"]::file-selector-button {
+      padding: 3px 7px; background: #1a1a3e; border: 1px solid #2a2a5e;
+      border-radius: 3px; color: #c8d0e8; font-size: 10px; cursor: pointer; margin-right: 5px;
+    }
+    input[type="file"]::file-selector-button:hover { background: #22224e; }
+
+    .prev-img { display: none; height: 34px; border-radius: 3px; border: 1px solid #2a2a5e; object-fit: cover; }
+    input[type="checkbox"] { accent-color: #E8003D; }
+
+    .hint-box { margin-top: 14px; padding: 12px 16px; background: #0d0d30; border: 1px solid #1a1a50; border-radius: 8px; font-size: 11px; color: #4a5568; line-height: 1.9; }
+    .hint-box strong { color: #9ca3af; }
+    .size-hint { font-size: 10px; color: #4a5568; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Korean School — Image Upload Admin</h1>
+  <span class="sub">Convert &amp; upload images to Supabase &nbsp;·&nbsp; 76 image slots</span>
+</header>
+
+<div class="container">
+
+  <div class="panel">
+    <div class="panel-title">Supabase Configuration</div>
+    <div class="config-row">
+      <label>Service Role Key</label>
+      <input type="password" id="service-key" placeholder="eyJhbGci… (Settings → API → service_role)" autocomplete="off">
+      <button class="btn-ghost" onclick="saveKey()">Save to browser</button>
+      <button class="btn-ghost" onclick="toggleKeyVisibility()">Show</button>
+      <button class="btn-ghost" onclick="createBucket()">Create bucket</button>
+      <span id="bucket-msg" style="font-size:11px;color:#6b7280;"></span>
+    </div>
+    <div style="margin-top:8px;font-size:11px;color:#2a3050;">
+      URL: <code>https://juhkgpgrbueaijgfvwoa.supabase.co</code>&nbsp;&nbsp;Bucket: <code>site-images</code>
+    </div>
+  </div>
+
+  <div class="actions-bar">
+    <button class="btn-primary" id="upload-btn" onclick="uploadAll()">Upload All (with files)</button>
+    <label class="rl"><input type="checkbox" id="reupload"> Re-upload already uploaded</label>
+    <span class="summary" id="summary">0 / 76 files selected</span>
+  </div>
+
+  <div class="progress-wrap" id="progress-wrap">
+    <div class="progress-track"><div class="progress-fill" id="pfill"></div></div>
+    <div class="progress-label" id="plabel">0 / 0</div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="td-num">#</th>
+          <th class="td-id">ID</th>
+          <th class="td-desc">Description</th>
+          <th class="td-type">Card Type</th>
+          <th class="td-size">Rec. Size</th>
+          <th class="td-target">Page / Target</th>
+          <th class="td-file">File</th>
+          <th class="td-preview">Preview</th>
+          <th class="td-status">Status</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="hint-box">
+    <strong>How to use:</strong>&nbsp;
+    1. Enter your <strong>service role key</strong> (Supabase → Settings → API → service_role key) and click <em>Save to browser</em>.&nbsp;
+    2. Click <em>Create bucket</em> once to create the <code>site-images</code> public bucket.&nbsp;
+    3. For each row, click <em>Choose File</em> and pick an image (any format, any size — it will be resized and converted automatically).&nbsp;
+    4. Click <em>Upload All</em>.&nbsp;
+    5. After all rows show green, run: <code>node scripts/update-html-images.js --supabase</code>
+    <br><br>
+    <strong>Recommended sizes</strong> (shown per row) are the maximum dimensions before WebP conversion.
+    Larger source images are downscaled to fit. Quality: 0.88.
+  </div>
+
+</div>
+
+<script>
+const SUPABASE_URL = 'https://juhkgpgrbueaijgfvwoa.supabase.co';
+const BUCKET = 'site-images';
+
+const REC = {
+  'place-image': { w: 700, h: 400 },
+  'photo-frame':  { w: 640, h: 360 },
+  'chef-banner':  { w: 560, h: 120 },
+  'food-card-bg': { w: 400, h: 240 },
+};
+
+// ── Compact manifest (no prompts) ─────────────────────────────────────────────
+const INDEXED = [
+  // Travel — place-image
+  { id:'travel-seoul',         alt:'Seoul city skyline at night',                    element:'place-image', page:'travel/index.html', idx:0,  svg:'assets/images/travel/seoul.svg' },
+  { id:'travel-busan',         alt:'Busan seascape with Gwangan Bridge',             element:'place-image', page:'travel/index.html', idx:1,  svg:'assets/images/travel/busan.svg' },
+  { id:'travel-jeju',          alt:'Jeju Island with Hallasan mountain',             element:'place-image', page:'travel/index.html', idx:2,  svg:'assets/images/travel/jeju.svg' },
+  { id:'travel-gyeongju',      alt:'Gyeongju historic pagoda and cherry blossoms',   element:'place-image', page:'travel/index.html', idx:3,  svg:'assets/images/travel/gyeongju.svg' },
+  { id:'travel-incheon',       alt:'Incheon International Airport and ocean gateway',element:'place-image', page:'travel/index.html', idx:4,  svg:'assets/images/travel/incheon.svg' },
+  { id:'travel-suwon',         alt:'Suwon Hwaseong Fortress walls and gate',         element:'place-image', page:'travel/index.html', idx:5,  svg:'assets/images/travel/suwon.svg' },
+  // K-pop — photo-frame
+  { id:'kpop-norebang',        alt:'Korean norebang karaoke room with microphone',   element:'photo-frame', page:'culture/kpop.html', idx:0,  svg:'assets/images/culture/kpop/norebang.svg' },
+  { id:'kpop-cultural-bridge', alt:'K-pop cultural bridge connecting East and West', element:'photo-frame', page:'culture/kpop.html', idx:1,  svg:'assets/images/culture/kpop/cultural-bridge.svg' },
+  { id:'kpop-song-room',       alt:'K-pop song room culture with recording studio',  element:'photo-frame', page:'culture/kpop.html', idx:2,  svg:'assets/images/culture/kpop/song-room.svg' },
+  { id:'kpop-history-featured',alt:'K-pop history timeline from 1992 to global stage',element:'photo-frame',page:'culture/kpop.html', idx:3,  svg:'assets/images/culture/kpop/history-featured.svg' },
+  { id:'kpop-psy-gangnam',     alt:'PSY Gangnam Style 2012 global viral moment',     element:'photo-frame', page:'culture/kpop.html', idx:4,  svg:'assets/images/culture/kpop/psy-gangnam.svg' },
+  { id:'kpop-bts-un',          alt:'BTS speaking at the United Nations 2018',        element:'photo-frame', page:'culture/kpop.html', idx:5,  svg:'assets/images/culture/kpop/bts-un.svg' },
+  { id:'kpop-global',          alt:'K-pop global conquest world stage',              element:'photo-frame', page:'culture/kpop.html', idx:6,  svg:'assets/images/culture/kpop/global.svg' },
+  { id:'kpop-1stgen',          alt:'First generation K-pop pioneers 1990s',          element:'photo-frame', page:'culture/kpop.html', idx:7,  svg:'assets/images/culture/kpop/1stgen.svg' },
+  { id:'kpop-army',            alt:'BTS ARMY concert with purple lightsticks',       element:'photo-frame', page:'culture/kpop.html', idx:8,  svg:'assets/images/culture/kpop/army.svg' },
+  { id:'kpop-4thgen',          alt:'4th generation K-pop fresh pastel aesthetics',   element:'photo-frame', page:'culture/kpop.html', idx:9,  svg:'assets/images/culture/kpop/4thgen.svg' },
+  { id:'kpop-variety',         alt:'Korean variety TV show studio set',              element:'photo-frame', page:'culture/kpop.html', idx:10, svg:'assets/images/culture/kpop/variety.svg' },
+  { id:'kpop-running-man',     alt:'Running Man Korean variety show race track',     element:'photo-frame', page:'culture/kpop.html', idx:11, svg:'assets/images/culture/kpop/running-man.svg' },
+  { id:'kpop-survival',        alt:'K-pop survival show competition stage',          element:'photo-frame', page:'culture/kpop.html', idx:12, svg:'assets/images/culture/kpop/survival.svg' },
+  { id:'kpop-idol-actor',      alt:'K-pop idol transitioning to actor film career',  element:'photo-frame', page:'culture/kpop.html', idx:13, svg:'assets/images/culture/kpop/idol-actor.svg' },
+  { id:'kpop-cannes',          alt:'Korean cinema at Cannes Film Festival 2022',     element:'photo-frame', page:'culture/kpop.html', idx:14, svg:'assets/images/culture/kpop/cannes.svg' },
+  { id:'kpop-drama-crossover', alt:'K-pop drama musical crossover stage',            element:'photo-frame', page:'culture/kpop.html', idx:15, svg:'assets/images/culture/kpop/drama-crossover.svg' },
+  // K-food — photo-frame
+  { id:'kfood-photo-0',        alt:'Korean ramyeon noodles global export',           element:'photo-frame', page:'culture/kfood.html', idx:0, svg:'assets/images/culture/kfood/ramyeon-export.svg' },
+  { id:'kfood-photo-1',        alt:'Korean mandu dumplings global export',           element:'photo-frame', page:'culture/kfood.html', idx:1, svg:'assets/images/culture/kfood/mandu-export.svg' },
+  { id:'kfood-photo-2',        alt:'Korean fried chicken global franchise',          element:'photo-frame', page:'culture/kfood.html', idx:2, svg:'assets/images/culture/kfood/chicken-export.svg' },
+  // K-food — chef-banner
+  { id:'kfood-chef-0',         alt:'Michelin 3-star fine Korean dining',             element:'chef-banner', page:'culture/kfood.html', idx:0,  svg:'assets/images/culture/kfood/chef-0.svg' },
+  { id:'kfood-chef-1',         alt:'Modern Korean fine dining restaurant',           element:'chef-banner', page:'culture/kfood.html', idx:1,  svg:'assets/images/culture/kfood/chef-1.svg' },
+  { id:'kfood-chef-2',         alt:'Korean cuisine restaurant award winner',         element:'chef-banner', page:'culture/kfood.html', idx:2,  svg:'assets/images/culture/kfood/chef-2.svg' },
+  { id:'kfood-chef-3',         alt:'Korean-American fusion cuisine',                 element:'chef-banner', page:'culture/kfood.html', idx:3,  svg:'assets/images/culture/kfood/chef-3.svg' },
+  { id:'kfood-chef-4',         alt:"Asia's 50 Best chef award",                     element:'chef-banner', page:'culture/kfood.html', idx:4,  svg:'assets/images/culture/kfood/chef-4.svg' },
+  { id:'kfood-chef-5',         alt:'Korean cooking competition season 1 winner',     element:'chef-banner', page:'culture/kfood.html', idx:5,  svg:'assets/images/culture/kfood/chef-5.svg' },
+  { id:'kfood-chef-6',         alt:'Korean cooking competition season 2 winner',     element:'chef-banner', page:'culture/kfood.html', idx:6,  svg:'assets/images/culture/kfood/chef-6.svg' },
+  { id:'kfood-chef-7',         alt:'Korean cooking competition runner-up',           element:'chef-banner', page:'culture/kfood.html', idx:7,  svg:'assets/images/culture/kfood/chef-7.svg' },
+  { id:'kfood-chef-8',         alt:'French-Korean fusion cuisine chef',              element:'chef-banner', page:'culture/kfood.html', idx:8,  svg:'assets/images/culture/kfood/chef-8.svg' },
+  { id:'kfood-chef-9',         alt:'Korean food entrepreneur with 1299 restaurant branches', element:'chef-banner', page:'culture/kfood.html', idx:9, svg:'assets/images/culture/kfood/chef-9.svg' },
+  { id:'kfood-chef-10',        alt:'Korean webtoon chef and food personality',       element:'chef-banner', page:'culture/kfood.html', idx:10, svg:'assets/images/culture/kfood/chef-10.svg' },
+  // K-drama — photo-frame
+  { id:'kdrama-history',       alt:'Korean broadcast TV history since 1962',         element:'photo-frame', page:'culture/kdrama.html', idx:0, svg:'assets/images/culture/kdrama/history.svg' },
+  { id:'kdrama-winter-sonata', alt:'Korean Winter Sonata drama 2002 romance',        element:'photo-frame', page:'culture/kdrama.html', idx:1, svg:'assets/images/culture/kdrama/winter-sonata.svg' },
+  { id:'kdrama-thriller',      alt:'Korean dramatic thriller K-drama 2021',          element:'photo-frame', page:'culture/kdrama.html', idx:2, svg:'assets/images/culture/kdrama/thriller.svg' },
+  { id:'kdrama-production',    alt:'Korean drama live production broadcast system',  element:'photo-frame', page:'culture/kdrama.html', idx:3, svg:'assets/images/culture/kdrama/production.svg' },
+  { id:'kdrama-ost',           alt:'Korean drama OST music soundtrack',              element:'photo-frame', page:'culture/kdrama.html', idx:4, svg:'assets/images/culture/kdrama/ost.svg' },
+  { id:'kdrama-webtoon',       alt:'Korean webtoon adapted to drama series',         element:'photo-frame', page:'culture/kdrama.html', idx:5, svg:'assets/images/culture/kdrama/webtoon.svg' },
+  // K-beauty — chef-banner (brand banners)
+  { id:'kbeauty-banner-0',     alt:'Amorepacific K-beauty conglomerate brand',       element:'chef-banner', page:'culture/kbeauty.html', idx:0, svg:'assets/images/culture/kbeauty/brand-0.svg' },
+  { id:'kbeauty-banner-1',     alt:'COSRX viral K-beauty snail skincare brand',      element:'chef-banner', page:'culture/kbeauty.html', idx:1, svg:'assets/images/culture/kbeauty/brand-1.svg' },
+  { id:'kbeauty-banner-2',     alt:'Laneige water brand lip mask skincare',          element:'chef-banner', page:'culture/kbeauty.html', idx:2, svg:'assets/images/culture/kbeauty/brand-2.svg' },
+  { id:'kbeauty-banner-3',     alt:'Sulwhasoo luxury Korean herbal hanbang skincare',element:'chef-banner', page:'culture/kbeauty.html', idx:3, svg:'assets/images/culture/kbeauty/brand-3.svg' },
+  { id:'kbeauty-banner-4',     alt:'Beauty of Joseon hanbang heritage skincare',     element:'chef-banner', page:'culture/kbeauty.html', idx:4, svg:'assets/images/culture/kbeauty/brand-4.svg' },
+  { id:'kbeauty-banner-5',     alt:'rom&nd Korean makeup 40 shades color palette',   element:'chef-banner', page:'culture/kbeauty.html', idx:5, svg:'assets/images/culture/kbeauty/brand-5.svg' },
+  // K-fashion — chef-banner (brand banners)
+  { id:'kfashion-banner-0',    alt:'Seo Taiji Korean pop culture fashion pioneer',   element:'chef-banner', page:'culture/kfashion.html', idx:0,  svg:'assets/images/culture/kfashion/brand-0.svg' },
+  { id:'kfashion-banner-1',    alt:'Andre Kim Korean haute couture white fashion',   element:'chef-banner', page:'culture/kfashion.html', idx:1,  svg:'assets/images/culture/kfashion/brand-1.svg' },
+  { id:'kfashion-banner-2',    alt:'Ryu Seung-bum Korean actor street style fashion',element:'chef-banner', page:'culture/kfashion.html', idx:2,  svg:'assets/images/culture/kfashion/brand-2.svg' },
+  { id:'kfashion-banner-3',    alt:'G-Dragon K-pop avant-garde fashion icon',        element:'chef-banner', page:'culture/kfashion.html', idx:3,  svg:'assets/images/culture/kfashion/brand-3.svg' },
+  { id:'kfashion-banner-4',    alt:'Jeong Hyeong-don casual Korean fashion comedian',element:'chef-banner', page:'culture/kfashion.html', idx:4,  svg:'assets/images/culture/kfashion/brand-4.svg' },
+  { id:'kfashion-banner-5',    alt:'Ader Error minimalist Korean fashion label',     element:'chef-banner', page:'culture/kfashion.html', idx:5,  svg:'assets/images/culture/kfashion/brand-5.svg' },
+  { id:'kfashion-banner-6',    alt:'Pushbutton Y2K eclectic Korean fashion',         element:'chef-banner', page:'culture/kfashion.html', idx:6,  svg:'assets/images/culture/kfashion/brand-6.svg' },
+  { id:'kfashion-banner-7',    alt:'Gentle Monster architectural eyewear brand',     element:'chef-banner', page:'culture/kfashion.html', idx:7,  svg:'assets/images/culture/kfashion/brand-7.svg' },
+  { id:'kfashion-banner-8',    alt:'Stylenanda 3CE Korean fashion and makeup brand', element:'chef-banner', page:'culture/kfashion.html', idx:8,  svg:'assets/images/culture/kfashion/brand-8.svg' },
+  { id:'kfashion-banner-9',    alt:'Blindness dark minimalist Korean fashion',       element:'chef-banner', page:'culture/kfashion.html', idx:9,  svg:'assets/images/culture/kfashion/brand-9.svg' },
+  { id:'kfashion-banner-10',   alt:'Beyond Closet Korean preppy streetwear brand',   element:'chef-banner', page:'culture/kfashion.html', idx:10, svg:'assets/images/culture/kfashion/brand-10.svg' },
+  { id:'kfashion-banner-11',   alt:'Musinsa Korean fashion platform marketplace',    element:'chef-banner', page:'culture/kfashion.html', idx:11, svg:'assets/images/culture/kfashion/brand-11.svg' },
+  { id:'kfashion-banner-12',   alt:'Bean Pole classic Korean preppy fashion',        element:'chef-banner', page:'culture/kfashion.html', idx:12, svg:'assets/images/culture/kfashion/brand-12.svg' },
+  { id:'kfashion-banner-13',   alt:'Basic House Korean casual essentials fashion',   element:'chef-banner', page:'culture/kfashion.html', idx:13, svg:'assets/images/culture/kfashion/brand-13.svg' },
+];
+
+const FOOD_BG = [
+  { id:'food-bg-nongshim',     alt:'Korean Nongshim ramyeon noodles bowl',           bg:'bg-nongshim',    svg:'assets/images/food/bg-nongshim.svg' },
+  { id:'food-bg-samyang',      alt:'Samyang buldak fire noodles spicy',              bg:'bg-samyang',     svg:'assets/images/food/bg-samyang.svg' },
+  { id:'food-bg-ottogi',       alt:'Ottogi Korean noodles warm golden broth',        bg:'bg-ottogi',      svg:'assets/images/food/bg-ottogi.svg' },
+  { id:'food-bg-paldo',        alt:'Paldo bibim noodles cold tangy sauce',           bg:'bg-paldo',       svg:'assets/images/food/bg-paldo.svg' },
+  { id:'food-bg-beef',         alt:'Korean BBQ beef on grill with smoke',            bg:'bg-beef',        svg:'assets/images/food/bg-beef.svg' },
+  { id:'food-bg-pork',         alt:'Korean samgyeopsal pork belly on grill',         bg:'bg-pork',        svg:'assets/images/food/bg-pork.svg' },
+  { id:'food-bg-chicken',      alt:'Korean fried chicken golden crispy',             bg:'bg-chicken',     svg:'assets/images/food/bg-chicken.svg' },
+  { id:'food-bg-duck',         alt:'Korean grilled duck with savory glaze',          bg:'bg-duck',        svg:'assets/images/food/bg-duck.svg' },
+  { id:'food-bg-offal',        alt:'Korean gopchang grilled offal spicy',            bg:'bg-offal',       svg:'assets/images/food/bg-offal.svg' },
+  { id:'food-bg-kimchi',       alt:'Korean kimchi fermented cabbage red chili',      bg:'bg-kimchi',      svg:'assets/images/food/bg-kimchi.svg' },
+  { id:'food-bg-white-kimchi', alt:'Korean white kimchi baek kimchi mild',           bg:'bg-white-kimchi',svg:'assets/images/food/bg-white-kimchi.svg' },
+  { id:'food-bg-water-kimchi', alt:'Korean mul kimchi water kimchi clear broth',     bg:'bg-water-kimchi',svg:'assets/images/food/bg-water-kimchi.svg' },
+  { id:'food-bg-mandu',        alt:'Korean mandu dumplings steamed golden',          bg:'bg-mandu',       svg:'assets/images/food/bg-mandu.svg' },
+  { id:'food-bg-chicken2',     alt:'Korean yangnyeom fried chicken with spicy sauce',bg:'bg-chicken2',    svg:'assets/images/food/bg-chicken2.svg' },
+];
+
+// ── Build rows ────────────────────────────────────────────────────────────────
+const rows = [];
+for (const e of INDEXED) {
+  rows.push({
+    id: e.id,
+    alt: e.alt,
+    type: e.element,
+    targetLabel: shortPage(e.page) + ' [' + e.idx + ']',
+    svg: e.svg,
+  });
+}
+for (const e of FOOD_BG) {
+  rows.push({
+    id: e.id,
+    alt: e.alt,
+    type: 'food-card-bg',
+    targetLabel: '.' + e.bg,
+    svg: e.svg,
+  });
+}
+
+function shortPage(page) {
+  return page.replace('culture/', '').replace('/index.html', '/index');
+}
+
+function storagePath(svg) {
+  return svg.replace('assets/images/', '').replace(/\.svg$/, '.webp');
+}
+
+function getCategory(id) {
+  if (id.startsWith('travel-'))        return 'Travel — Place Images  (travel/index.html)';
+  if (id.startsWith('kpop-'))          return 'K-pop — Photo Frames  (culture/kpop.html)';
+  if (id.startsWith('kfood-photo-'))   return 'K-food — Photo Frames  (culture/kfood.html)';
+  if (id.startsWith('kfood-chef-'))    return 'K-food — Chef Banners  (culture/kfood.html)';
+  if (id.startsWith('kdrama-'))        return 'K-drama — Photo Frames  (culture/kdrama.html)';
+  if (id.startsWith('kbeauty-'))       return 'K-beauty — Brand Banners  (culture/kbeauty.html)';
+  if (id.startsWith('kfashion-'))      return 'K-fashion — Brand Banners  (culture/kfashion.html)';
+  if (id.startsWith('food-bg-'))       return 'Food Card Backgrounds — shared across ramyeon / kbbq / kimchi / kchicken / mandu pages';
+  return 'Other';
+}
+
+function typeBadgeHTML(type) {
+  const map = {
+    'place-image':  ['t-place', 'place-image'],
+    'photo-frame':  ['t-photo', 'photo-frame'],
+    'chef-banner':  ['t-chef',  'chef-banner'],
+    'food-card-bg': ['t-food',  'food-card-bg'],
+  };
+  const [cls, label] = map[type] || ['t-food', type];
+  return `<span class="tbadge ${cls}">${label}</span>`;
+}
+
+function recSizeLabel(type) {
+  const s = REC[type] || { w: 640, h: 360 };
+  return `${s.w} × ${s.h} px`;
+}
+
+// ── Render table ──────────────────────────────────────────────────────────────
+const tbody = document.getElementById('tbody');
+let currentCat = null;
+let rowNum = 0;
+
+rows.forEach((row, i) => {
+  const cat = getCategory(row.id);
+  if (cat !== currentCat) {
+    currentCat = cat;
+    const sep = document.createElement('tr');
+    sep.className = 'cat-header';
+    sep.innerHTML = `<td colspan="9">${cat}</td>`;
+    tbody.appendChild(sep);
+  }
+
+  rowNum++;
+  const tr = document.createElement('tr');
+  tr.className = 'data-row';
+  tr.id = `row-${i}`;
+  tr.innerHTML = `
+    <td class="td-num">${rowNum}</td>
+    <td class="td-id"><code>${row.id}</code></td>
+    <td class="td-desc">${row.alt}</td>
+    <td class="td-type">${typeBadgeHTML(row.type)}</td>
+    <td class="td-size">${recSizeLabel(row.type)}</td>
+    <td class="td-target"><code>${row.targetLabel}</code></td>
+    <td class="td-file"><input type="file" accept="image/*" id="f-${i}" onchange="onFileSelect(${i})"></td>
+    <td class="td-preview"><img class="prev-img" id="prev-${i}" alt=""></td>
+    <td class="td-status"><span class="badge b-none" id="st-${i}" data-state="none">—</span></td>
+  `;
+  tbody.appendChild(tr);
+});
+
+// ── State helpers ─────────────────────────────────────────────────────────────
+function setStatus(i, state, text) {
+  const el = document.getElementById(`st-${i}`);
+  el.className = `badge b-${state}`;
+  el.dataset.state = state;
+  el.textContent = text;
+}
+
+function onFileSelect(i) {
+  const file = document.getElementById(`f-${i}`).files[0];
+  if (!file) return;
+  const prev = document.getElementById(`prev-${i}`);
+  prev.src = URL.createObjectURL(file);
+  prev.style.display = 'block';
+  const kb = (file.size / 1024).toFixed(0);
+  setStatus(i, 'ready', `${kb} KB`);
+  updateSummary();
+}
+
+function updateSummary() {
+  let count = 0;
+  for (let i = 0; i < rows.length; i++) {
+    if (document.getElementById(`f-${i}`).files.length > 0) count++;
+  }
+  document.getElementById('summary').textContent = `${count} / ${rows.length} files selected`;
+}
+
+// ── Config ────────────────────────────────────────────────────────────────────
+function saveKey() {
+  const k = document.getElementById('service-key').value.trim();
+  if (!k) { alert('Key is empty'); return; }
+  localStorage.setItem('sb_service_key', k);
+  alert('Service role key saved to localStorage.');
+}
+
+function toggleKeyVisibility() {
+  const inp = document.getElementById('service-key');
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+}
+
+function getClient() {
+  const key = document.getElementById('service-key').value.trim() || localStorage.getItem('sb_service_key') || '';
+  if (!key) throw new Error('Enter service role key first');
+  return supabase.createClient(SUPABASE_URL, key, { auth: { persistSession: false, autoRefreshToken: false } });
+}
+
+async function createBucket() {
+  const msg = document.getElementById('bucket-msg');
+  msg.textContent = 'Creating…';
+  try {
+    const client = getClient();
+    const { error } = await client.storage.createBucket(BUCKET, { public: true });
+    if (error && !error.message.toLowerCase().includes('already')) throw error;
+    msg.textContent = error ? 'Bucket already exists.' : 'Bucket created successfully.';
+    msg.style.color = '#4ade80';
+  } catch (e) {
+    msg.textContent = 'Error: ' + e.message;
+    msg.style.color = '#f87171';
+  }
+}
+
+// ── WebP conversion ───────────────────────────────────────────────────────────
+async function toWebP(file, maxW, maxH, quality = 0.88) {
+  let bitmap;
+  try {
+    bitmap = await createImageBitmap(file);
+  } catch {
+    // fallback for formats createImageBitmap can't handle
+    return file;
+  }
+  const scale = Math.min(1, maxW / bitmap.width, maxH / bitmap.height);
+  const w = Math.round(bitmap.width * scale);
+  const h = Math.round(bitmap.height * scale);
+  const canvas = document.createElement('canvas');
+  canvas.width = w;
+  canvas.height = h;
+  canvas.getContext('2d').drawImage(bitmap, 0, 0, w, h);
+  bitmap.close();
+  return new Promise((res, rej) => {
+    canvas.toBlob(blob => blob ? res(blob) : rej(new Error('WebP conversion failed')), 'image/webp', quality);
+  });
+}
+
+// ── Upload all ────────────────────────────────────────────────────────────────
+async function uploadAll() {
+  let client;
+  try { client = getClient(); } catch (e) { alert(e.message); return; }
+
+  const reupload = document.getElementById('reupload').checked;
+  const queue = rows.map((row, i) => ({ row, i })).filter(({ i }) => {
+    const hasFile = document.getElementById(`f-${i}`).files.length > 0;
+    const alreadyDone = document.getElementById(`st-${i}`).dataset.state === 'success';
+    return hasFile && (reupload || !alreadyDone);
+  });
+
+  if (queue.length === 0) { alert('No files selected (or all already uploaded — check Re-upload).'); return; }
+
+  const btn = document.getElementById('upload-btn');
+  btn.disabled = true;
+
+  const wrap = document.getElementById('progress-wrap');
+  wrap.classList.add('visible');
+  let done = 0;
+  updateProgress(0, queue.length);
+
+  for (const { row, i } of queue) {
+    const file = document.getElementById(`f-${i}`).files[0];
+    const size = REC[row.type] || { w: 640, h: 360 };
+
+    setStatus(i, 'uploading', 'Converting…');
+    try {
+      const blob = await toWebP(file, size.w, size.h);
+      const path = storagePath(row.svg);
+      setStatus(i, 'uploading', 'Uploading…');
+      const { error } = await client.storage.from(BUCKET).upload(path, blob, {
+        contentType: 'image/webp',
+        upsert: true,
+      });
+      if (error) throw error;
+      const kbOut = (blob.size / 1024).toFixed(0);
+      setStatus(i, 'success', `Done  ${kbOut} KB`);
+    } catch (e) {
+      setStatus(i, 'error', e.message.slice(0, 50));
+    }
+
+    done++;
+    updateProgress(done, queue.length);
+  }
+
+  btn.disabled = false;
+
+  const successes = queue.filter(({ i }) => document.getElementById(`st-${i}`).dataset.state === 'success').length;
+  alert(`Upload complete: ${successes} / ${queue.length} successful.\n\nIf all rows are green, run:\nnode scripts/update-html-images.js --supabase`);
+}
+
+function updateProgress(done, total) {
+  const pct = total > 0 ? Math.round(done / total * 100) : 0;
+  document.getElementById('pfill').style.width = pct + '%';
+  document.getElementById('plabel').textContent = `${done} / ${total} uploaded  (${pct}%)`;
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('sb_service_key');
+  if (saved) document.getElementById('service-key').value = saved;
+});
+</script>
+</body>
+</html>

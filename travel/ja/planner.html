@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>韓国旅行プランナー | 한국어 학교</title>
+  <meta name="description" content="インタラクティブな韓国旅行プランナー — 時間とイベントの種類ごとにスケジュールを組み立て、印刷またはエクスポート。" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../../index.html" class="logo">
+        <div class="logo-mark">한</div>
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../../learn/hangul.html"><span class="nav-icon">📚</span> 学ぶ</a></li>
+        <li><a href="../../culture/index.html"><span class="nav-icon">🎵</span> K-カルチャー</a></li>
+        <li><a href="index.html" class="active"><span class="nav-icon">🗺️</span> 旅行</a></li>
+        <li><a href="../../news/index.html"><span class="nav-icon">📰</span> ニュース</a></li>
+        <li><a href="../../quiz.html"><span class="nav-icon">📝</span> クイズ</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="検索…" autocomplete="off" aria-label="サイト内検索" />
+        </div>
+        <button id="theme-toggle" class="icon-btn" aria-label="ダーク/ライトテーマ切替">🌙</button>
+        <a href="../planner.html" class="icon-btn lang-toggle-btn" style="text-decoration:none;">🇯🇵 日本語</a>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="メニューを開く">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <aside class="sidebar">
+    <div class="travel-sidebar-header">
+      <div class="travel-sidebar-title">旅行ガイド · 여행 안내</div>
+      <div class="travel-sidebar-subtitle">韓国</div>
+    </div>
+    <a class="sidebar-accordion-btn" href="itineraries.html" data-accordion="travel-days">
+      <span class="link-icon">📅</span> 日数別 · 일수별 <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-days">
+      <a class="sidebar-link" href="itineraries.html#1day">日帰り旅行 · 당일치기</a>
+      <a class="sidebar-link" href="itineraries.html#2days">2日間 · 1박 2일</a>
+      <a class="sidebar-link" href="itineraries.html#3days">3日間 · 2박 3일</a>
+      <a class="sidebar-link" href="itineraries.html#5days">5日間 · 4박 5일</a>
+      <a class="sidebar-link" href="itineraries.html#week">1週間 · 일주일</a>
+      <a class="sidebar-link" href="itineraries.html#10days">10日間</a>
+      <a class="sidebar-link" href="itineraries.html#14days">2週間 · 2주</a>
+      <a class="sidebar-link" href="itineraries.html#1month">1ヶ月以上 · 한달</a>
+    </div>
+    <a class="sidebar-accordion-btn" href="cities.html" data-accordion="travel-city">
+      <span class="link-icon">🏙️</span> 都市別 · 도시별 <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-city">
+      <a class="sidebar-link" href="cities.html#seoul">ソウル · 서울</a>
+      <a class="sidebar-link" href="cities.html#incheon">仁川 · 인천</a>
+      <a class="sidebar-link" href="cities.html#busan">釜山 · 부산</a>
+      <a class="sidebar-link" href="cities.html#suwon">水原 · 수원</a>
+      <a class="sidebar-link" href="cities.html#jeju">済州島 · 제주도</a>
+      <a class="sidebar-link" href="cities.html#gyeongju">慶州 · 경주</a>
+      <a class="sidebar-link" href="cities.html#other">その他の都市</a>
+    </div>
+    <a class="sidebar-accordion-btn" href="themes.html" data-accordion="travel-theme">
+      <span class="link-icon">🎯</span> テーマ別 · 테마별 <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-theme">
+      <a class="sidebar-link" href="themes.html#food">グルメツアー · 음식 여행</a>
+      <a class="sidebar-link" href="themes.html#events">イベント・祭り · 이벤트</a>
+      <a class="sidebar-link" href="themes.html#sightseeing">観光 · 관광</a>
+      <a class="sidebar-link" href="themes.html#crosscountry">長距離旅行 · 장거리</a>
+    </div>
+    <a class="travel-sidebar-planner active" href="planner.html">📋 旅行プランナー · 여행 계획표</a>
+  </aside>
+
+
+  <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 0px);">
+    <div class="planner-page">
+
+      <div style="margin-bottom:24px;">
+        <div class="section-eyebrow" style="margin-bottom:6px;">旅行プランナー · 여행 계획표</div>
+        <h1 style="font-size:1.8rem;font-weight:900;color:var(--text);margin:0 0 6px;">
+          韓国のスケジュールを作ろう
+        </h1>
+        <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;">
+          時間とイベントの種類を指定して追加。ブラウザに自動保存。準備ができたら印刷またはエクスポート。
+        </p>
+      </div>
+
+      <!-- Toolbar -->
+      <div class="planner-toolbar" id="planner-toolbar">
+        <div class="planner-field">
+          <label class="planner-field-label" for="trip-title">旅行名</label>
+          <input class="planner-input" type="text" id="trip-title" placeholder="私の韓国旅行" style="min-width:200px;" />
+        </div>
+        <div class="planner-field">
+          <label class="planner-field-label" for="trip-start">開始日</label>
+          <input class="planner-input" type="date" id="trip-start" />
+        </div>
+        <div class="planner-field">
+          <label class="planner-field-label" for="trip-days">日数</label>
+          <input class="planner-input" type="number" id="trip-days" min="1" max="30" value="3" style="min-width:100px;" />
+        </div>
+        <div class="planner-field">
+          <label class="planner-field-label" for="trip-city">都市・テーマ</label>
+          <input class="planner-input" type="text" id="trip-city" placeholder="ソウル、釜山、済州島…" style="min-width:180px;" />
+        </div>
+        <div class="planner-toolbar-actions">
+          <button class="planner-btn planner-btn-outline" id="planner-reset-btn" aria-label="全イベントを削除">🗑️ 全削除</button>
+          <button class="planner-btn planner-btn-outline" id="planner-export-btn" aria-label="JSONでエクスポート">⬇️ エクスポート</button>
+          <button class="planner-btn planner-btn-outline" id="planner-import-btn" aria-label="JSONからインポート">⬆️ インポート</button>
+          <input type="file" id="planner-import-file" accept=".json" style="display:none;" />
+          <button class="planner-btn planner-btn-primary" id="planner-print-btn" aria-label="スケジュールを印刷">🖨️ 印刷</button>
+        </div>
+      </div>
+
+      <!-- Event type legend -->
+      <div class="planner-legend" id="planner-legend">
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#ef4444;"></div>✈️ 空港・フライト</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#3b82f6;"></div>🚄 交通</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#eab308;"></div>☀️ 起床</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#f97316;"></div>🍳 朝食</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#22c55e;"></div>🍱 昼食</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#8b5cf6;"></div>🍽️ 夕食</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#ec4899;"></div>🧁 おやつ</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#1e40af;"></div>🏨 宿泊・ホテル</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#14b8a6;"></div>🏛️ 観光</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#d946ef;"></div>🛍️ ショッピング</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#64748b;"></div>🗺️ 自由時間</div>
+        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#94a3b8;"></div>📝 メモ</div>
+      </div>
+
+      <!-- Planner grid rendered by JS -->
+      <div id="planner-grid-wrapper" style="overflow-x:auto;">
+        <div id="planner-grid" class="planner-grid"></div>
+      </div>
+
+      <!-- Print title (only visible when printing) -->
+      <div id="print-title" style="display:none;padding:16px 0 8px;font-size:1.4rem;font-weight:900;color:#000;font-family:sans-serif;"></div>
+
+    </div>
+  </main>
+
+
+  <!-- Add-event modal -->
+  <div class="planner-modal-overlay" id="event-modal" role="dialog" aria-modal="true" aria-label="イベントを追加">
+    <div class="planner-modal">
+      <div class="planner-modal-title">イベントを追加 · 일정 추가</div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-label">イベント名</label>
+        <input class="planner-input" type="text" id="event-label" placeholder="例: 景福宮" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-time">時間</label>
+        <input class="planner-input" type="time" id="event-time" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label">イベントの種類</label>
+        <div class="planner-type-grid" id="event-type-grid">
+          <button class="planner-type-btn" data-type="airport">✈️<br>空港</button>
+          <button class="planner-type-btn" data-type="transport">🚄<br>交通</button>
+          <button class="planner-type-btn" data-type="wake">☀️<br>起床</button>
+          <button class="planner-type-btn" data-type="breakfast">🍳<br>朝食</button>
+          <button class="planner-type-btn" data-type="lunch">🍱<br>昼食</button>
+          <button class="planner-type-btn" data-type="dinner">🍽️<br>夕食</button>
+          <button class="planner-type-btn" data-type="snack">🧁<br>おやつ</button>
+          <button class="planner-type-btn" data-type="sleep">🏨<br>宿泊</button>
+          <button class="planner-type-btn" data-type="sight">🏛️<br>観光</button>
+          <button class="planner-type-btn" data-type="shopping">🛍️<br>買い物</button>
+          <button class="planner-type-btn" data-type="free">🗺️<br>自由時間</button>
+          <button class="planner-type-btn" data-type="note">📝<br>メモ</button>
+        </div>
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-notes">メモ（任意）</label>
+        <input class="planner-input" type="text" id="event-notes" placeholder="例: 要事前予約、入場料₩1,500" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <input type="hidden" id="event-day-idx" />
+
+      <div class="planner-modal-actions">
+        <button class="planner-btn planner-btn-outline" id="modal-cancel-btn">キャンセル</button>
+        <button class="planner-btn planner-btn-primary" id="modal-save-btn">追加する</button>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer" id="planner-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="logo">
+            <div class="logo-mark">한</div>
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>無料の韓国語学習プラットフォーム — 言語学習とK-カルチャー、旅行ガイド、実践練習を組み合わせたサービスです。</p>
+        </div>
+        <div>
+          <div class="footer-heading">学ぶ</div>
+          <ul class="footer-links">
+            <li><a href="../../learn/hangul.html">ハングルアルファベット</a></li>
+            <li><a href="../../learn/grammar.html">文法</a></li>
+            <li><a href="../../learn/vocabulary.html">語彙</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">探索</div>
+          <ul class="footer-links">
+            <li><a href="../../culture/index.html">K-カルチャー</a></li>
+            <li><a href="index.html">旅行ガイド</a></li>
+            <li><a href="../../news/index.html">韓国ニュース</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">会社情報</div>
+          <ul class="footer-links">
+            <li><a href="../../ja/about.html">私たちについて</a></li>
+            <li><a href="../../ja/contact.html">お問い合わせ</a></li>
+            <li><a href="../../ja/privacy.html">プライバシーポリシー</a></li>
+            <li><a href="../../ja/terms.html">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. 世界中の韓国語学習者のために ❤️</span>
+        <span>🇰🇷 학습을 즐기세요！（学習を楽しんでください！）</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/app.js"></script>
+</body>
+</html>

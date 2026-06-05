@@ -1,0 +1,12 @@
+{
+  "name": "korean-school-news-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daily AI news generation script for Korean School — runs in GitHub Actions",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@supabase/supabase-js": "^2.47.0",
+    "dotenv": "^16.0.0"
+  }
+}

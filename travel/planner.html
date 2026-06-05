@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korea Trip Planner | 한국어 학교</title>
+  <meta name="description" content="Interactive South Korea trip planner — build your daily schedule by time and event type, then print or export your plan." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">한</div>
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+        <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+        <li><a href="index.html" class="active"><span class="nav-icon">🗺️</span> Travel</a></li>
+        <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+        <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search…" autocomplete="off" aria-label="Search site content" />
+        </div>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme">🌙</button>
+        <button class="icon-btn lang-toggle-btn" id="lang-toggle" data-ja-url="ja/planner.html" aria-label="Switch language">🇺🇸 EN</button>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Open mobile menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main-content planner-main" style="margin-left:0;max-width:100%;padding-top:calc(var(--header-height) + 0px);">
+    <div class="planner-page">
+
+      <!-- Page Title -->
+      <div style="margin-bottom:24px;">
+        <div class="section-eyebrow" style="margin-bottom:6px;">TRIP PLANNER · 여행 계획표</div>
+        <h1 style="font-size:1.8rem;font-weight:900;color:var(--text);margin:0 0 6px;">
+          Build Your Korea Schedule
+        </h1>
+        <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;">
+          Add events by time and type. Auto-saved in your browser. Print or export when ready.
+        </p>
+      </div>
+
+      <!-- Layout: 80% planner content + 20% ad zone -->
+      <div class="planner-layout">
+
+        <div class="planner-content">
+
+          <!-- Toolbar -->
+          <div class="planner-toolbar" id="planner-toolbar">
+            <div class="planner-field">
+              <label class="planner-field-label" for="trip-start">Start Date</label>
+              <input class="planner-input" type="date" id="trip-start" />
+            </div>
+            <div class="planner-field">
+              <label class="planner-field-label" for="trip-days">Number of Days</label>
+              <input class="planner-input" type="number" id="trip-days" min="1" max="30" value="3" style="min-width:100px;" />
+            </div>
+            <div class="planner-toolbar-actions">
+              <button class="planner-btn planner-btn-outline" id="legend-emoji-toggle">No Emojis</button>
+              <button class="planner-btn planner-btn-outline" id="planner-reset-btn" aria-label="Clear all events">🗑️ Clear All</button>
+              <button class="planner-btn planner-btn-primary" id="planner-print-btn" aria-label="Print schedule">🖨️ Print</button>
+            </div>
+          </div>
+
+          <!-- Planner body: grid + legend side by side -->
+          <div class="planner-body">
+
+            <!-- Planner grid rendered by JS -->
+            <div id="planner-grid-wrapper" style="flex:1;min-width:0;overflow:hidden;">
+              <div id="planner-grid" class="planner-grid"></div>
+            </div>
+
+            <!-- Event type legend (vertical, right side) -->
+            <div class="planner-legend" id="planner-legend">
+              <div class="planner-legend-drag-hint">Drag to left</div>
+              <div class="planner-legend-group-label">Start / End</div>
+              <div class="planner-legend-item" data-type="wake"><div class="planner-legend-dot" style="background:#eab308;"></div><span class="legend-emoji">☀️</span> Wake Up</div>
+              <div class="planner-legend-item" data-type="sleep"><div class="planner-legend-dot" style="background:#1e40af;"></div><span class="legend-emoji">🌙</span> Sleep</div>
+              <div class="planner-legend-item" data-type="arrive"><div class="planner-legend-dot" style="background:#ef4444;"></div><span class="legend-emoji">🛬</span> Arrival</div>
+              <div class="planner-legend-item" data-type="depart"><div class="planner-legend-dot" style="background:#f97316;"></div><span class="legend-emoji">🛫</span> Departure</div>
+              <div class="planner-legend-group-label">Food</div>
+              <div class="planner-legend-item" data-type="breakfast"><div class="planner-legend-dot" style="background:#f97316;"></div><span class="legend-emoji">🍳</span> Breakfast</div>
+              <div class="planner-legend-item" data-type="lunch"><div class="planner-legend-dot" style="background:#22c55e;"></div><span class="legend-emoji">🍱</span> Lunch</div>
+              <div class="planner-legend-item" data-type="dinner"><div class="planner-legend-dot" style="background:#8b5cf6;"></div><span class="legend-emoji">🍽️</span> Dinner</div>
+              <div class="planner-legend-item" data-type="snack"><div class="planner-legend-dot" style="background:#ec4899;"></div><span class="legend-emoji">🧁</span> Snack</div>
+              <div class="planner-legend-group-label">Activities</div>
+              <div class="planner-legend-item" data-type="sight"><div class="planner-legend-dot" style="background:#14b8a6;"></div><span class="legend-emoji">🏛️</span> Sightseeing</div>
+              <div class="planner-legend-item" data-type="shopping"><div class="planner-legend-dot" style="background:#d946ef;"></div><span class="legend-emoji">🛍️</span> Shopping</div>
+              <div class="planner-legend-item" data-type="event"><div class="planner-legend-dot" style="background:#f59e0b;"></div><span class="legend-emoji">🎟️</span> Event</div>
+              <div class="planner-legend-item" data-type="experience"><div class="planner-legend-dot" style="background:#10b981;"></div><span class="legend-emoji">🎭</span> Experience</div>
+              <div class="planner-legend-item" data-type="free"><div class="planner-legend-dot" style="background:#64748b;"></div><span class="legend-emoji">🗺️</span> Free Time</div>
+              <div class="planner-legend-item" data-type="note"><div class="planner-legend-dot" style="background:#94a3b8;"></div><span class="legend-emoji">📝</span> Note</div>
+              <div class="planner-legend-group-label">Transport</div>
+              <div class="planner-legend-item" data-type="taxi"><div class="planner-legend-dot" style="background:#fbbf24;"></div><span class="legend-emoji">🚕</span> Taxi</div>
+              <div class="planner-legend-item" data-type="bus"><div class="planner-legend-dot" style="background:#84cc16;"></div><span class="legend-emoji">🚌</span> Bus</div>
+              <div class="planner-legend-item" data-type="train"><div class="planner-legend-dot" style="background:#38bdf8;"></div><span class="legend-emoji">🚄</span> Train</div>
+              <div class="planner-legend-item" data-type="subway"><div class="planner-legend-dot" style="background:#818cf8;"></div><span class="legend-emoji">🚇</span> Subway</div>
+              <div class="planner-legend-item" data-type="motorbike"><div class="planner-legend-dot" style="background:#f472b6;"></div><span class="legend-emoji">🛵</span> Motorbike</div>
+              <div class="planner-legend-item" data-type="walk"><div class="planner-legend-dot" style="background:#a78bfa;"></div><span class="legend-emoji">🚶</span> Walk</div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Ad zone (20% — reserved for Google AdSense) -->
+        <aside class="planner-ad-zone" aria-label="Advertisement"></aside>
+
+      </div>
+
+      <!-- Print title (only visible when printing) -->
+      <div id="print-title" style="display:none;padding:16px 0 8px;font-size:1.4rem;font-weight:900;color:#000;font-family:sans-serif;"></div>
+
+    </div>
+  </main>
+
+
+  <!-- Add-event modal -->
+  <div class="planner-modal-overlay" id="event-modal" role="dialog" aria-modal="true" aria-label="Add event">
+    <div class="planner-modal">
+      <div class="planner-modal-title">Add Event · 일정 추가</div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-label">Event Name</label>
+        <input class="planner-input" type="text" id="event-label" placeholder="e.g. Gyeongbokgung Palace" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-time">Time</label>
+        <input class="planner-input" type="time" id="event-time" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label">Event Type</label>
+        <div class="planner-type-grid" id="event-type-grid">
+          <div class="planner-type-group-label">Start / End</div>
+          <button class="planner-type-btn" data-type="wake">☀️<br>Wake Up</button>
+          <button class="planner-type-btn" data-type="sleep">🌙<br>Sleep</button>
+          <button class="planner-type-btn" data-type="arrive">🛬<br>Arrival</button>
+          <button class="planner-type-btn" data-type="depart">🛫<br>Departure</button>
+          <div class="planner-type-group-label">Food</div>
+          <button class="planner-type-btn" data-type="breakfast">🍳<br>Breakfast</button>
+          <button class="planner-type-btn" data-type="lunch">🍱<br>Lunch</button>
+          <button class="planner-type-btn" data-type="dinner">🍽️<br>Dinner</button>
+          <button class="planner-type-btn" data-type="snack">🧁<br>Snack</button>
+          <div class="planner-type-group-label">Activities</div>
+          <button class="planner-type-btn" data-type="sight">🏛️<br>Sightseeing</button>
+          <button class="planner-type-btn" data-type="shopping">🛍️<br>Shopping</button>
+          <button class="planner-type-btn" data-type="event">🎟️<br>Event</button>
+          <button class="planner-type-btn" data-type="experience">🎭<br>Experience</button>
+          <button class="planner-type-btn" data-type="free">🗺️<br>Free Time</button>
+          <button class="planner-type-btn" data-type="note">📝<br>Note</button>
+          <div class="planner-type-group-label">Transport</div>
+          <button class="planner-type-btn" data-type="taxi">🚕<br>Taxi</button>
+          <button class="planner-type-btn" data-type="bus">🚌<br>Bus</button>
+          <button class="planner-type-btn" data-type="train">🚄<br>Train</button>
+          <button class="planner-type-btn" data-type="subway">🚇<br>Subway</button>
+          <button class="planner-type-btn" data-type="motorbike">🛵<br>Motorbike</button>
+          <button class="planner-type-btn" data-type="walk">🚶<br>Walk</button>
+        </div>
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-notes">Notes (optional)</label>
+        <input class="planner-input" type="text" id="event-notes" placeholder="e.g. Book in advance, ₩1,500 entry" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <input type="hidden" id="event-day-idx" />
+      <input type="hidden" id="event-edit-id" />
+      <input type="hidden" id="event-orig-time" />
+
+      <div class="planner-modal-actions">
+        <button class="planner-btn planner-btn-outline" id="modal-cancel-btn">Cancel</button>
+        <button class="planner-btn planner-btn-danger" id="modal-delete-btn" style="display:none;">🗑️ Delete</button>
+        <button class="planner-btn planner-btn-primary" id="modal-save-btn">Add Event</button>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer" id="planner-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-mark">한</div>
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+            <li><a href="../learn/grammar.html">Grammar</a></li>
+            <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="../culture/index.html">K-Culture</a></li>
+            <li><a href="index.html">Travel Guide</a></li>
+            <li><a href="../news/index.html">Korean News</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+        <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

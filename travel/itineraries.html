@@ -1,0 +1,771 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korea Travel Itineraries | 한국어 학교</title>
+  <meta name="description" content="Day-by-day South Korea travel itineraries — from 1-day Seoul dashes to month-long cross-country adventures, fully planned with times and Korean phrases." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark">한</div>
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+        <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+        <li><a href="index.html" class="active"><span class="nav-icon">🗺️</span> Travel</a></li>
+        <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+        <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search…" autocomplete="off" aria-label="Search site content" />
+        </div>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme">🌙</button>
+        <button class="icon-btn lang-toggle-btn" id="lang-toggle" data-ja-url="ja/itineraries.html" aria-label="Switch language">🇺🇸 EN</button>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Open mobile menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <aside class="sidebar">
+
+    <div class="travel-sidebar-header">
+      <div class="travel-sidebar-title">Travel Guide · 여행 안내</div>
+      <div class="travel-sidebar-subtitle">South Korea</div>
+    </div>
+
+    <a class="sidebar-accordion-btn open active" href="itineraries.html" data-accordion="travel-days">
+      <span class="link-icon">📅</span>
+      By Days · 일수별
+      <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="accordion-travel-days">
+      <a class="sidebar-link active" href="#1day">1 Day Trip · 당일치기</a>
+      <a class="sidebar-link" href="#2days">2 Days · 1박 2일</a>
+      <a class="sidebar-link" href="#3days">3 Days · 2박 3일</a>
+      <a class="sidebar-link" href="#5days">5 Days · 4박 5일</a>
+      <a class="sidebar-link" href="#week">1 Week · 일주일</a>
+      <a class="sidebar-link" href="#10days">10 Days</a>
+      <a class="sidebar-link" href="#14days">2 Weeks · 2주</a>
+      <a class="sidebar-link" href="#1month">1 Month+ · 한달</a>
+    </div>
+
+    <a class="sidebar-accordion-btn" href="cities.html" data-accordion="travel-city">
+      <span class="link-icon">🏙️</span>
+      By City · 도시별
+      <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-city">
+      <a class="sidebar-link" href="cities.html#seoul">Seoul · 서울</a>
+      <a class="sidebar-link" href="cities.html#incheon">Incheon · 인천</a>
+      <a class="sidebar-link" href="cities.html#busan">Busan · 부산</a>
+      <a class="sidebar-link" href="cities.html#suwon">Suwon · 수원</a>
+      <a class="sidebar-link" href="cities.html#jeju">Jeju · 제주도</a>
+      <a class="sidebar-link" href="cities.html#gyeongju">Gyeongju · 경주</a>
+      <a class="sidebar-link" href="cities.html#other">Other Cities</a>
+    </div>
+
+    <a class="sidebar-accordion-btn" href="themes.html" data-accordion="travel-theme">
+      <span class="link-icon">🎯</span>
+      By Theme · 테마별
+      <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-theme">
+      <a class="sidebar-link" href="themes.html#food">Food Tour · 음식 여행</a>
+      <a class="sidebar-link" href="themes.html#events">Events &amp; Festivals · 이벤트</a>
+      <a class="sidebar-link" href="themes.html#sightseeing">Sightseeing · 관광</a>
+      <a class="sidebar-link" href="themes.html#crosscountry">Cross-Country · 장거리</a>
+    </div>
+
+    <a class="travel-sidebar-planner" href="planner.html">
+      📋 Trip Planner · 여행 계획표
+    </a>
+
+  </aside>
+
+
+  <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px);">
+    <div class="lesson-wrap">
+
+      <!-- Page Header -->
+      <div class="animate-on-scroll" style="margin-bottom:40px;">
+        <div class="section-eyebrow">BY DAYS · 일수별</div>
+        <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:12px;">
+          Korea Travel <span class="grad-text">Itineraries</span>
+        </h1>
+        <p class="section-desc" style="margin:0;max-width:680px;">
+          Fully planned day-by-day schedules from a quick Seoul day trip to an epic month-long journey through all of Korea.
+          Each itinerary includes times, transport tips, meal recommendations, and a Korean phrase to use at each stop.
+        </p>
+        <div style="margin-top:16px;">
+          <a href="planner.html" class="btn btn-outline btn-sm">📋 Build your own schedule →</a>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           1 DAY
+      ═══════════════════════════════════ -->
+      <div id="1day" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">1</span> 1-Day Seoul Highlights · 당일치기</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">1</span>
+            <span class="itinerary-day-label">DAY</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">당일치기 서울 핵심 코스</div>
+            <div class="itinerary-title">Best of Seoul in One Day</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-easy">Easy</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩30,000–60,000 / day</span>
+              <span class="itinerary-badge itinerary-badge-moderate">Subway only</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">5 stops</div><div class="itinerary-stat-lbl">Key sites</div></div>
+            <div><div class="itinerary-stat-val">~10 km</div><div class="itinerary-stat-lbl">Walking</div></div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header">
+            <span class="day-block-num">Day 1</span>
+            <span class="day-block-title">Seoul Full Day</span>
+          </div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">☀️</span>08:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Breakfast at Gwangjang Market · 광장시장</div>
+                <div class="schedule-activity-kor">광장시장 아침 식사</div>
+                <div class="schedule-detail">Korea's oldest traditional market. Try 빈대떡 (mung bean pancakes) and 마약 김밥 (addictive kimbap) — iconic Seoul street breakfast.</div>
+                <div class="schedule-phrase">Say: <strong>빈대떡 하나 주세요</strong> (Bindaetteok hana juseyo) — One mung bean pancake please</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏯</span>09:30</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Gyeongbokgung Palace · 경복궁</div>
+                <div class="schedule-activity-kor">경복궁 관람 및 수문장 교대식</div>
+                <div class="schedule-detail">Arrive early for the 10:00 Royal Guard Changing Ceremony (수문장 교대식). Rent a 한복 (hanbok) at the palace gate and entry is free — stunning photo opportunity.</div>
+                <div class="schedule-phrase">Say: <strong>입장료가 얼마예요?</strong> (Ipjangnyo ga eolmayeyo?) — How much is admission?</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎨</span>11:30</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Bukchon Hanok Village · 북촌 한옥마을</div>
+                <div class="schedule-activity-kor">북촌 한옥마을 산책</div>
+                <div class="schedule-detail">Walk 15 minutes from Gyeongbokgung through Seoul's most photogenic traditional village — 600-year-old hanok houses on winding alleys. Please be quiet for residents.</div>
+                <div class="schedule-phrase">Say: <strong>조용히 해주세요</strong> (Joyonghi haejuseyo) — Please be quiet</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🍱</span>13:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Lunch in Insadong · 인사동 점심</div>
+                <div class="schedule-activity-kor">인사동 한정식 또는 비빔밥</div>
+                <div class="schedule-detail">Head to Insadong for lunch. Try a 한정식 (Korean set meal) or a bowl of 비빔밥 in one of the traditional restaurants. Browse the craft shops afterward.</div>
+                <div class="schedule-phrase">Say: <strong>비빔밥 하나 주세요</strong> (Bibimbap hana juseyo) — One bibimbap please</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🗼</span>15:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">N Seoul Tower · 남산타워</div>
+                <div class="schedule-activity-kor">남산타워 전망대</div>
+                <div class="schedule-detail">Take the cable car up Namsan mountain for panoramic Seoul views. The Love Lock fence at the base is iconic. Observatory entry is optional — the free outdoor deck is excellent.</div>
+                <div class="schedule-phrase">Say: <strong>케이블카 타는 곳이 어디예요?</strong> (Keibeuulka taneun gosi eodiyeyo?) — Where do I board the cable car?</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🛍️</span>17:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Myeongdong Shopping · 명동 쇼핑</div>
+                <div class="schedule-activity-kor">명동 거리 쇼핑 및 간식</div>
+                <div class="schedule-detail">Hit Myeongdong for K-Beauty shopping and street food snacks — 호떡 (sweet pancake), 떡볶이 (spicy rice cakes), and 닭꼬치 (chicken skewers). All under ₩5,000 each.</div>
+                <div class="schedule-phrase">Say: <strong>이거 써도 돼요?</strong> (Igeo sseo-do daeyo?) — Can I try this?</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌃</span>19:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Dinner & Han River · 한강 저녁</div>
+                <div class="schedule-activity-kor">한강 치맥</div>
+                <div class="schedule-detail">Join locals for the ultimate Seoul evening: 치맥 (fried chicken + beer) at Han River Park. Order delivery via 배달의민족 app or buy from the riverside kiosks at Yeouido or Banpo Park.</div>
+                <div class="schedule-phrase">Say: <strong>치킨 한 마리 주세요</strong> (Chikin han mari juseyo) — One whole chicken please</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">T-Money Card 티머니</div>
+            <div class="tip-text">Buy a T-Money card (₩4,000) at any convenience store (GS25, CU, 7-Eleven) and charge it to pay for subway, bus, and even some convenience stores. Saves time at every stop.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           2 DAYS
+      ═══════════════════════════════════ -->
+      <div id="2days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">2</span> 2 Days: Seoul Essentials · 1박 2일</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">2</span>
+            <span class="itinerary-day-label">DAYS</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">서울 1박 2일 알짜 코스</div>
+            <div class="itinerary-title">Seoul Highlights + Day Trip</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-easy">Easy</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩80,000–150,000 total</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">1 night</div><div class="itinerary-stat-lbl">Stay</div></div>
+            <div><div class="itinerary-stat-val">Seoul</div><div class="itinerary-stat-lbl">Base city</div></div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header">
+            <span class="day-block-num">Day 1</span>
+            <span class="day-block-title">Palace Row + Hongdae Night</span>
+          </div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏯</span>09:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Changdeokgung Palace & Secret Garden · 창덕궁 후원</div>
+                <div class="schedule-detail">Book the Secret Garden tour (비원) in advance — the guided walk through 300-year-old landscaped gardens runs hourly and is absolutely stunning. English tours available.</div>
+                <div class="schedule-phrase">Say: <strong>후원 투어 예약했어요</strong> (Huwon tuyeo yeyakhaesseoyo) — I reserved the Secret Garden tour</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🍱</span>12:30</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Jongno Lunch · 종로 점심</div>
+                <div class="schedule-detail">Try 삼계탕 (ginseng chicken soup) at one of the famous restaurants near Anguk station — hearty, healthy, and iconic for first-time visitors.</div>
+                <div class="schedule-phrase">Say: <strong>삼계탕 한 그릇 주세요</strong> (Samgyetang han geureut juseyo) — One bowl of ginseng chicken soup please</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌿</span>14:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Cheonggyecheon Stream Walk · 청계천</div>
+                <div class="schedule-detail">Walk along Seoul's beautiful urban stream from Gwanghwamun toward Dongdaemun — 5.8 km of peaceful greenery cutting through the heart of the city.</div>
+                <div class="schedule-phrase">Say: <strong>청계천이 어디에 있어요?</strong> (Cheonggyecheoni eodie isseoyo?) — Where is Cheonggyecheon?</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎵</span>18:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Hongdae Evening · 홍대 저녁</div>
+                <div class="schedule-detail">Hongdae is Seoul's youth arts and nightlife hub. Street performers fill the squares from 7 PM. Eat dinner at a Korean BBQ restaurant, then explore clubs, indie cafés, and arcade bars.</div>
+                <div class="schedule-phrase">Say: <strong>삼겹살 2인분 주세요</strong> (Samgyeopsal i-inbun juseyo) — Two portions of pork belly please</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header">
+            <span class="day-block-num">Day 2</span>
+            <span class="day-block-title">Suwon Fortress Day Trip</span>
+          </div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚄</span>09:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Train to Suwon · 수원행 기차</div>
+                <div class="schedule-detail">Take the 1호선 (Line 1) subway from Seoul Station — 50 minutes to Suwon Station. Or catch a train on the Gyeongbu line (35 minutes). No reservation needed.</div>
+                <div class="schedule-phrase">Say: <strong>수원 가는 열차가 몇 번이에요?</strong> (Suwon ganeun yeolcha ga myeot beonieyo?) — Which platform for the Suwon train?</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏰</span>10:30</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Hwaseong Fortress Wall Walk · 화성 성곽길</div>
+                <div class="schedule-detail">Walk the full 5.7 km UNESCO fortress wall — took 28 months to build in 1796. Amazing views of the old city. The Hwahongmun water gate is the best photo spot.</div>
+                <div class="schedule-phrase">Say: <strong>성곽 걷는 길이 어디예요?</strong> (Seonggwak geotneun giri eodiyeyo?) — Where is the fortress wall path?</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🥩</span>13:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Suwon Galbi Lunch · 수원 갈비</div>
+                <div class="schedule-detail">Suwon is famous for 왕갈비 (king galbi) — huge beef short ribs grilled tableside. Head to the Hyanggyo-gil galbi alley for authentic restaurants that have been operating for decades.</div>
+                <div class="schedule-phrase">Say: <strong>갈비 1인분에 얼마예요?</strong> (Galbi il-inbuneseo eolmayeyo?) — How much is one portion of galbi?</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎎</span>15:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Korean Folk Village · 한국민속촌</div>
+                <div class="schedule-detail">30 minutes by bus from Suwon — a living museum of 260 traditional structures from the Joseon period. Craftsmen demonstrate weaving, pottery, and tightrope walking. Magical at sunset.</div>
+                <div class="schedule-phrase">Say: <strong>민속촌 가는 버스가 뭐예요?</strong> (Minsokcchon ganeun beoseu ga mwoyeyo?) — Which bus goes to the Folk Village?</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           3 DAYS
+      ═══════════════════════════════════ -->
+      <div id="3days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">3</span> 3 Days: Seoul + Gyeongju · 2박 3일</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">3</span>
+            <span class="itinerary-day-label">DAYS</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">서울 + 경주 2박 3일</div>
+            <div class="itinerary-title">Modern Capital + Ancient Kingdom</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-moderate">Moderate</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩250,000–400,000 total</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">2 nights</div><div class="itinerary-stat-lbl">1 Seoul, 1 Gyeongju</div></div>
+            <div><div class="itinerary-stat-val">KTX</div><div class="itinerary-stat-lbl">Seoul↔Gyeongju</div></div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">Day 1</span><span class="day-block-title">Seoul: Palace + Markets + Nightlife</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏯</span>09:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Gyeongbokgung + Bukchon</div><div class="schedule-detail">Royal palace (with guard ceremony at 10:00) followed by the hanok village walk toward Samcheongdong café street.</div><div class="schedule-phrase">Say: <strong>한복 빌릴 수 있어요?</strong> (Hanbok billil su isseoyo?) — Can I rent a hanbok?</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🍜</span>13:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Lunch: Naengmyeon at Ojang-dong</div><div class="schedule-detail">Try 함흥냉면 (Hamheung cold noodles) — chewy buckwheat noodles in a spicy or broth base. A summer staple that's served all year.</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌸</span>14:30</div>
+              <div class="schedule-content"><div class="schedule-activity">Namsan Park Hike · 남산 산책</div><div class="schedule-detail">Walk up Namsan from Myeongdong via the forest path (45 min). N Seoul Tower at the summit. Excellent city panorama — especially as dusk approaches.</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🛍️</span>17:30</div>
+              <div class="schedule-content"><div class="schedule-activity">Dongdaemun Design Plaza · DDP</div><div class="schedule-detail">Zaha Hadid's futuristic landmark glows at night. The surrounding fashion market opens from 8 PM — wholesale and retail clothing at excellent prices.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">Day 2</span><span class="day-block-title">KTX to Gyeongju: Temples + Tombs</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚄</span>07:30</div>
+              <div class="schedule-content"><div class="schedule-activity">KTX Seoul → Gyeongju</div><div class="schedule-detail">2-hour journey on KTX. Book at least the day before via Korail app. Alight at 신경주 (Singyeongju) station, then local bus to the city centre (30 min).</div><div class="schedule-phrase">Say: <strong>신경주 가는 KTX 표 주세요</strong> (Singyeongju ganeun KTX pyo juseyo) — One KTX ticket to Singyeongju please</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🛕</span>10:30</div>
+              <div class="schedule-content"><div class="schedule-activity">Bulguksa Temple · 불국사</div><div class="schedule-detail">One of Korea's most important Buddhist temples — UNESCO World Heritage. Built in 751, it sits halfway up Tohamsan mountain. The stone pagodas Dabotap and Seokgatap are extraordinary.</div><div class="schedule-phrase">Say: <strong>불국사까지 얼마나 걸려요?</strong> (Bulguksakkaji eolmana geollyeoyo?) — How long does it take to get to Bulguksa?</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">⛰️</span>12:30</div>
+              <div class="schedule-content"><div class="schedule-activity">Seokguram Grotto · 석굴암</div><div class="schedule-detail">15-minute bus above Bulguksa. The 8th-century granite Buddha statue inside the artificial cave is one of Korea's greatest artistic achievements. Serene and deeply moving.</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🍱</span>14:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Lunch + 황남빵 · 경주 전통 점심</div><div class="schedule-detail">Eat near Bulguksa then head to 황리단길 (Hwangridangil) — Gyeongju's trendy café street lined with traditional hanok buildings. Buy the famous 황남빵 red bean pastries.</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏛️</span>15:30</div>
+              <div class="schedule-content"><div class="schedule-activity">Tumuli Park Royal Tombs · 대릉원</div><div class="schedule-detail">Walk among the vast burial mounds of Silla kings — some over 20 meters high. Enter Cheonmachong tomb to see the original royal burial goods. Magic hour light is stunning here.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">Day 3</span><span class="day-block-title">Gyeongju Countryside + Return</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌅</span>07:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Sunrise at Cheomseongdae · 첨성대</div><div class="schedule-detail">The world's oldest surviving astronomical observatory (built 632 AD) is surrounded by flower fields — spectacular at sunrise before tour buses arrive.</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚲</span>09:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Bicycle Tour · 자전거 여행</div><div class="schedule-detail">Rent a bicycle near Gyeongju city centre (₩3,000/hr) and pedal through the UNESCO historic zone past tombs, temples, and lotus ponds. The route to Anapji Pond is flat and beautiful.</div><div class="schedule-phrase">Say: <strong>자전거 빌릴 수 있어요?</strong> (Jajeongeo billil su isseoyo?) — Can I rent a bicycle?</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚄</span>14:00</div>
+              <div class="schedule-content"><div class="schedule-activity">KTX Back to Seoul</div><div class="schedule-detail">Afternoon train returns you to Seoul in 2 hours. Enough time for a final bowl of 삼겹살 in the evening before departure.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           5 DAYS
+      ═══════════════════════════════════ -->
+      <div id="5days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">4</span> 5 Days: Seoul + Busan · 4박 5일</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">5</span>
+            <span class="itinerary-day-label">DAYS</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">서울 + 부산 4박 5일</div>
+            <div class="itinerary-title">Capital to Coast — Korea's Two Cities</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-moderate">Moderate</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩500,000–800,000 total</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">4 nights</div><div class="itinerary-stat-lbl">2 Seoul, 2 Busan</div></div>
+            <div><div class="itinerary-stat-val">KTX 2h15</div><div class="itinerary-stat-lbl">City transfer</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">5-Day Structure Overview</div>
+            <div class="tip-text">Days 1–2: Seoul (palaces, markets, Han River, Hongdae) → Day 3: KTX to Busan AM + Gamcheon Village PM → Day 4: Haeundae Beach + Jagalchi Market + Gwangalli night → Day 5: BIFF Square + Beomeosa Temple + evening train home</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">Day 3</span><span class="day-block-title">KTX to Busan + Gamcheon Village</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚄</span>07:30</div>
+              <div class="schedule-content"><div class="schedule-activity">KTX Seoul → Busan (2h 15min)</div><div class="schedule-detail">Book in advance. Grab 김밥 (kimbap) from the station convenience store for the train. Arrive at 부산역 (Busan Station) by 10:00.</div><div class="schedule-phrase">Say: <strong>부산역까지 KTX 주세요</strong> (Busanyeok kkaji KTX juseyo) — KTX to Busan Station please</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎨</span>10:30</div>
+              <div class="schedule-content"><div class="schedule-activity">Gamcheon Culture Village · 감천문화마을</div><div class="schedule-detail">Pastel-painted houses cascade down a hillside — Korea's most colourful neighbourhood. Art installations, tiny cafés, and murals around every turn. Arrive before noon to beat crowds.</div><div class="schedule-phrase">Say: <strong>감천문화마을에 어떻게 가요?</strong> (Gamcheon munhwa maeule eotteoke gayo?) — How do I get to Gamcheon Village?</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🐟</span>14:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Jagalchi Fish Market · 자갈치 시장</div><div class="schedule-detail">Korea's largest seafood market. Buy raw seafood on the ground floor and have it cooked upstairs for a small fee. Try 꽃게 (blue crab), 전복 (abalone), or 성게 (sea urchin).</div><div class="schedule-phrase">Say: <strong>이거 구워주세요</strong> (Igeo guwojuseyo) — Please grill this for me</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌉</span>19:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Gwangalli Beach at Night · 광안리 야경</div><div class="schedule-detail">Gwangalli is famous for the illuminated Gwangan Bridge reflected in the sea. Eat 돼지국밥 (pork rice soup) at a nearby restaurant before settling on the beach with a beer.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">Days 4–5</span><span class="day-block-title">Busan: Beach + Temple + Culture</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏖️</span>08:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Haeundae Beach · 해운대 해수욕장</div><div class="schedule-detail">Korea's most famous beach. Morning walk before crowds. Nearby 해리단길 (Haeridangil) has great breakfast cafés. Try 씨앗호떡 (seed pancakes) from street vendors.</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🛕</span>11:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Haedong Yonggungsa Temple · 해동 용궁사</div><div class="schedule-detail">Korea's only seaside Buddhist temple — dramatically set on coastal rocks with waves crashing below. Accessible by bus from Haeundae (40 min). Free entry.</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎬</span>14:00</div>
+              <div class="schedule-content"><div class="schedule-activity">BIFF Square + Gukje Market · 국제시장</div><div class="schedule-detail">Walk Busan International Film Festival Square — embedded with handprints of Korean stars. Gukje Market next door sells street food, antiques, and local goods at great prices.</div><div class="schedule-phrase">Say: <strong>씨앗호떡 얼마예요?</strong> (Ssiat hotteok eolmayeyo?) — How much are the seed pancakes?</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚆</span>17:00</div>
+              <div class="schedule-content"><div class="schedule-activity">Return KTX to Seoul (Day 5)</div><div class="schedule-detail">Late afternoon KTX has plenty of seats. Stop at Lotteria inside Busan Station for a final 돈카츠 (tonkatsu) or grab convenience store kimbap for the ride home.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           1 WEEK
+      ═══════════════════════════════════ -->
+      <div id="week" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">5</span> 1 Week: Golden Triangle · 일주일</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">7</span>
+            <span class="itinerary-day-label">DAYS</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">일주일 황금 삼각지대 코스</div>
+            <div class="itinerary-title">Seoul · Gyeongju · Busan · Jeju</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-moderate">Moderate</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩800,000–1,300,000 total</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">6 nights</div><div class="itinerary-stat-lbl">Stay</div></div>
+            <div><div class="itinerary-stat-val">4 cities</div><div class="itinerary-stat-lbl">+ 1 island</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">7-Day Route Overview</div>
+            <div class="tip-text">
+              <strong>D1–2</strong> Seoul (palaces, markets, Hongdae) →
+              <strong>D3</strong> KTX to Gyeongju (Bulguksa, tombs, Cheomseongdae) →
+              <strong>D4</strong> Busan (Gamcheon, Jagalchi, Haeundae) →
+              <strong>D5</strong> Fly to Jeju (Seongsan Ilchulbong sunrise, black pig dinner) →
+              <strong>D6</strong> Jeju (Hallasan hike or Manjanggul cave + O'Sulloc tea fields) →
+              <strong>D7</strong> Fly Jeju → Seoul, depart
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">Jeju Tip 제주 팁</div>
+            <div class="tip-text">Book Jeju domestic flights at least 2–3 weeks ahead (via Air Seoul, Jeju Air, or T'way). Rental cars are essential on Jeju — public buses are slow. International licence accepted.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           10 DAYS
+      ═══════════════════════════════════ -->
+      <div id="10days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">6</span> 10 Days: Korea Deep Dive</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">10</span>
+            <span class="itinerary-day-label">DAYS</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">10일 한국 심층 여행</div>
+            <div class="itinerary-title">Seoul · Jeonju · Gyeongju · Busan · Jeju</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-active">Active</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩1,200,000–2,000,000 total</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">9 nights</div><div class="itinerary-stat-lbl">Stay</div></div>
+            <div><div class="itinerary-stat-val">5 cities</div><div class="itinerary-stat-lbl">+ 1 island</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">10-Day Route Overview</div>
+            <div class="tip-text">
+              <strong>D1–3</strong> Seoul (all highlights + DMZ day trip option) →
+              <strong>D4</strong> KTX to Jeonju (hanok village, bibimbap, makgeolli bars) →
+              <strong>D5</strong> Bus to Gyeongju (temples, tombs, bicycle tour) →
+              <strong>D6–7</strong> Busan (beaches, markets, Haedong temple, Beomeosa) →
+              <strong>D8–9</strong> Jeju (Hallasan hike, Seongsan, west coast drive, 오름 volcano) →
+              <strong>D10</strong> Fly Jeju → home or Seoul depart
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">Jeonju 전주 — Don't Miss It</div>
+            <div class="tip-text">Jeonju is the birthplace of 비빔밥 (bibimbap) and has Korea's largest intact 한옥 (hanok) village. The night market (남부시장 야시장) every Friday and Saturday is extraordinary. Stay one night in a hanok guesthouse.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           2 WEEKS
+      ═══════════════════════════════════ -->
+      <div id="14days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">7</span> 2 Weeks: Full Korea · 2주</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">14</span>
+            <span class="itinerary-day-label">DAYS</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">2주 한국 완전 정복</div>
+            <div class="itinerary-title">North to South — Complete Korea Experience</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-active">Active</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩2,000,000–3,500,000 total</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">13 nights</div><div class="itinerary-stat-lbl">Stay</div></div>
+            <div><div class="itinerary-stat-val">8+ cities</div><div class="itinerary-stat-lbl">Full circuit</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">2-Week Route Overview</div>
+            <div class="tip-text">
+              <strong>D1–4</strong> Seoul + DMZ + Incheon (Chinatown, Songdo) →
+              <strong>D5</strong> KTX to Jeonju (hanok, bibimbap origin) →
+              <strong>D6</strong> Namwon + Gurye (Jirisan national park) →
+              <strong>D7</strong> Gwangju (5·18 Memorial, art district) →
+              <strong>D8</strong> Bus to Gyeongju →
+              <strong>D9</strong> Gyeongju temples + tombs →
+              <strong>D10–11</strong> Busan (all highlights) →
+              <strong>D12–13</strong> Jeju Island →
+              <strong>D14</strong> Fly home or Seoul depart
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">KORAIL Pass 코레일 패스</div>
+            <div class="tip-text">For 2-week travellers, consider the KORAIL Pass — unlimited KTX travel for a fixed period. Available for 2, 3, 4, or 5 days within a month. Saves significantly versus individual tickets. Purchase before arriving in Korea.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           1 MONTH
+      ═══════════════════════════════════ -->
+      <div id="1month" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">8</span> 1 Month+: The Long Stay · 한달살기</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">30</span>
+            <span class="itinerary-day-label">DAYS+</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">한달살기 — 진짜 한국 경험</div>
+            <div class="itinerary-title">Live Like a Korean — Month-Long Immersion</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-active">Immersive</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩3,500,000–7,000,000+ total</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">30+ nights</div><div class="itinerary-stat-lbl">Extended stay</div></div>
+            <div><div class="itinerary-stat-val">All Korea</div><div class="itinerary-stat-lbl">Every region</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">Month-Long Structure (Sample)</div>
+            <div class="tip-text">
+              <strong>Week 1</strong> Seoul base — neighbourhood deep dives (Itaewon, Seongsu, Mangwon, Yeonnam, Jamsil) →
+              <strong>Week 2</strong> Slow travel north — DMZ, Sokcho (Seoraksan hike), Gangneung (coffee street), Gangwondo coast →
+              <strong>Week 3</strong> Jeonju → Damyang (bamboo forest) → Yeosu → Tongyeong (Korea's Naples) → Busan →
+              <strong>Week 4</strong> Gyeongju bicycle circuit → Jeju Island (rent a scooter, visit all 오름 craters) → final days Seoul
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">한달살기 (Handalsal-gi) — Monthly Living Tips</div>
+            <div class="tip-text">Rent a 고시원 (goshiwon, ₩300,000–500,000/month) or 에어비앤비 monthly for budget stays. Use 당근마켓 (Carrot Market) app to buy/sell second-hand goods. Get a Korean SIM card at Incheon Airport for unlimited data. Open a 카카오뱅크 (Kakao Bank) account for local bank transfers. Enrol in a neighbourhood 어학당 (language school) for structured Korean lessons.</div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">Visa Note 비자 안내</div>
+            <div class="tip-text">Most nationalities get 90 days visa-free. For longer stays: apply for a Working Holiday Visa (18–30 years old, available for 24+ countries), a Language Study Visa (D-4), or a Digital Nomad Visa (introduced 2024). Check the Korean Embassy website for current requirements.</div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- CTA -->
+      <div class="animate-on-scroll" style="text-align:center;padding:40px 0;">
+        <p style="color:var(--text-secondary);margin-bottom:20px;">Ready to build your own schedule? Use our interactive trip planner.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <a href="planner.html" class="btn btn-primary btn-lg">📋 Open Trip Planner →</a>
+          <a href="cities.html" class="btn btn-secondary btn-lg">🏙️ Browse City Guides</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-mark">한</div>
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Learn</div>
+          <ul class="footer-links">
+            <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+            <li><a href="../learn/grammar.html">Grammar</a></li>
+            <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="../culture/index.html">K-Culture</a></li>
+            <li><a href="index.html">Travel Guide</a></li>
+            <li><a href="../news/index.html">Korean News</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+        <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

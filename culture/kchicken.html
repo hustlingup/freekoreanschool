@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>치킨 가이드 · Korean Fried Chicken Guide | 한국어 학교</title>
+  <meta name="description" content="The complete Korean fried chicken guide — every major chain, signature menu, and fried chicken culture from 교촌 to 60계. Learn Korean through 치킨 culture." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../learn/hangul.html"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html" class="active"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-icon">🎵</div>
+      <div class="sidebar-brand-text">K-Culture <span>한국 문화</span></div>
+    </div>
+    <p class="sidebar-brand-desc">K-Pop, K-Drama, food, beauty, fashion, gaming, sports &amp; traditions.</p>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">CATEGORIES · 카테고리</div>
+    <a href="kpop.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎵</span> K-Pop <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kpop">
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📜</span> K-Pop History</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🏢</span> Agencies</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">⭐</span> Generations</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎼</span> Genres</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📺</span> Variety Shows</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🎬</span> Film &amp; Acting</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">💬</span> Idol Phrases</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">🔥</span> Fan Slang</a>
+      <a href="kpop.html" class="sidebar-link"><span class="link-icon">📣</span> Fan Chants</a>
+    </div>
+    <a href="kdrama.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Drama <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kdrama">
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📺</span> Drama History</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎬</span> Drama Genres</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Dramas</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🎯</span> K-Drama Tropes</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💡</span> Speech Levels</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kdrama.html" class="sidebar-link"><span class="link-icon">🗣️</span> Fan Culture &amp; Slang</a>
+    </div>
+    <a href="kmovie.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎬</span> K-Movie <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kmovie">
+      <a href="kmovie.html#kmovie-history" class="sidebar-link"><span class="link-icon">📽️</span> Movie History</a>
+      <a href="kmovie.html#kmovie-genres" class="sidebar-link"><span class="link-icon">🎬</span> Movie Genres</a>
+      <a href="kmovie.html#kmovie-films" class="sidebar-link"><span class="link-icon">🎭</span> Must-Watch Films</a>
+      <a href="kmovie.html#kmovie-directors" class="sidebar-link"><span class="link-icon">🎖️</span> Directors</a>
+      <a href="kmovie.html#kmovie-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kmovie.html#kmovie-dialogue" class="sidebar-link"><span class="link-icon">💬</span> Dialogue Practice</a>
+      <a href="kmovie.html#kmovie-lines" class="sidebar-link"><span class="link-icon">🗣️</span> Iconic Lines</a>
+      <a href="kmovie.html#kmovie-fanculture" class="sidebar-link"><span class="link-icon">🍿</span> Fan Culture</a>
+    </div>
+    <a href="kfood.html" class="sidebar-accordion-btn active open">
+      <span class="link-icon">🍜</span> K-Food <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="cat-acc-kfood">
+      <a href="kfood.html#kfood-global" class="sidebar-link"><span class="link-icon">🌍</span> K-Food Goes Global</a>
+      <a href="kfood.html#kfood-spotlight" class="sidebar-link"><span class="link-icon">🔥</span> Foods That Went Global</a>
+      <a href="kfood.html#kfood-timeline" class="sidebar-link"><span class="link-icon">📅</span> K-Food Timeline</a>
+      <a href="kfood.html#kfood-dishes" class="sidebar-link"><span class="link-icon">🍽️</span> Essential Dishes</a>
+      <a href="kfood.html#kfood-chefs" class="sidebar-link"><span class="link-icon">👨‍🍳</span> World-Famous Chefs</a>
+      <a href="kfood.html#kfood-vocab" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+      <a href="kfood.html#kfood-ordering" class="sidebar-link"><span class="link-icon">🏪</span> Ordering &amp; Dining</a>
+      <a href="kfood.html#kfood-street" class="sidebar-link"><span class="link-icon">🌶️</span> Street Food</a>
+      <a href="kfood.html#kfood-culture" class="sidebar-link"><span class="link-icon">🏮</span> Food Culture &amp; Drinking</a>
+      <div class="sidebar-section" style="font-size:0.62rem;margin:10px 0 4px;padding-left:4px;">DEEP DIVES · 심층 탐구</div>
+      <a href="ramyeon.html" class="sidebar-link"><span class="link-icon">🍜</span> Ramyeon Guide</a>
+      <a href="mandu.html" class="sidebar-link"><span class="link-icon">🥟</span> Mandu Guide</a>
+      <a href="kchicken.html" class="sidebar-link active"><span class="link-icon">🍗</span> Chicken Guide</a>
+      <a href="kbbq.html" class="sidebar-link"><span class="link-icon">🥩</span> K-BBQ Guide</a>
+      <a href="kimchi.html" class="sidebar-link"><span class="link-icon">🥬</span> Kimchi Guide</a>
+    </div>
+    <a href="kbeauty.html" class="sidebar-accordion-btn">
+      <span class="link-icon">✨</span> K-Beauty <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kbeauty">
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Beauty Goes Global</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">⏳</span> K-Beauty Timeline</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">📖</span> Beauty Vocabulary</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🧴</span> 10-Step Skincare</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🌿</span> Key Ingredients</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">✨</span> Beauty Trends</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💄</span> Makeup Philosophy</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🏥</span> Skin Clinic Culture</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kbeauty.html" class="sidebar-link"><span class="link-icon">💬</span> K-Beauty Dialogue</a>
+    </div>
+    <a href="kfashion.html" class="sidebar-accordion-btn">
+      <span class="link-icon">👗</span> K-Fashion <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kfashion">
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🌍</span> K-Fashion Global</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👑</span> Fashion Icons</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⏳</span> Fashion Timeline</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏢</span> Iconic Brands</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🎨</span> Style Aesthetics</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">⭐</span> Idol Fashion</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🗓️</span> Seoul Fashion Week</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">📖</span> Fashion Vocabulary</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🏙️</span> Fashion Districts</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">🛍️</span> Shopping Phrases</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">👘</span> Hanbok &amp; Traditional Fashion</a>
+      <a href="kfashion.html" class="sidebar-link"><span class="link-icon">💬</span> Shopping Dialogue</a>
+    </div>
+    <a href="koreanthing.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🇰🇷</span> Korean Thing <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-koreanthing">
+      <a href="koreanthing.html#bap" class="sidebar-link"><span class="link-icon">🍚</span> Rice Obsession</a>
+      <a href="koreanthing.html#chokbeop" class="sidebar-link"><span class="link-icon">👶</span> Youth Protection Laws</a>
+      <a href="koreanthing.html#delivery" class="sidebar-link"><span class="link-icon">🛵</span> Fast Delivery Culture</a>
+      <a href="koreanthing.html#ecology" class="sidebar-link"><span class="link-icon">🦌</span> Invasive Species Crisis</a>
+      <a href="koreanthing.html#table" class="sidebar-link"><span class="link-icon">🔔</span> Table Call Culture</a>
+      <a href="koreanthing.html#transport" class="sidebar-link"><span class="link-icon">🚌</span> Public Transport</a>
+      <a href="koreanthing.html#jjimjilbang" class="sidebar-link"><span class="link-icon">♨️</span> Jjimjilbang</a>
+      <a href="koreanthing.html#surgery" class="sidebar-link"><span class="link-icon">💉</span> Plastic Surgery Culture</a>
+      <a href="koreanthing.html#outdoor-drinking" class="sidebar-link"><span class="link-icon">🍺</span> Outdoor Drinking</a>
+      <a href="koreanthing.html#jeonse" class="sidebar-link"><span class="link-icon">🏠</span> Jeonse Housing</a>
+      <a href="koreanthing.html#traditions" class="sidebar-link"><span class="link-icon">🏮</span> Traditions &amp; Holidays</a>
+      <a href="koreanthing.html#sodams" class="sidebar-link"><span class="link-icon">📜</span> 100 Korean Proverbs</a>
+    </div>
+    <a href="kgaming.html" class="sidebar-accordion-btn">
+      <span class="link-icon">🎮</span> K-Gaming <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-kgaming">
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📊</span> K-Gaming Stats</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">⏳</span> Gaming Timeline</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🌟</span> Gaming Legends</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🎮</span> Iconic Games</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📺</span> Streaming Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏪</span> PC Bang Culture</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">🏆</span> Esports Leagues</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">💬</span> Gamer Slang</a>
+      <a href="kgaming.html" class="sidebar-link"><span class="link-icon">📖</span> Gaming Vocabulary</a>
+    </div>
+    <a href="ksports.html" class="sidebar-accordion-btn">
+      <span class="link-icon">⚽</span> K-Sports <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="cat-acc-ksports">
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📊</span> Sports Overview</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚽</span> Football Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">⚾</span> Baseball Heroes</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🏃</span> Marathon Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🌟</span> Individual Legends</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">🥋</span> Traditional Sports</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📣</span> Cheer Chants</a>
+      <a href="ksports.html" class="sidebar-link"><span class="link-icon">📖</span> Vocabulary</a>
+    </div>
+  </nav>
+</aside>
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="food-page-hero">
+      <div class="section-eyebrow">K-FOOD · 한국 음식</div>
+      <h1>치킨 가이드 <span class="grad-text">Korean Fried Chicken</span></h1>
+      <p>Korea's fried chicken (치킨) is not American fried chicken. It's double-fried for maximum crunch, coated in sweet-spicy glazes, and delivered within 30 minutes to your door at 11 PM. With 87,000+ chicken restaurants in Korea (more than McDonald's worldwide), this is a national religion.</p>
+      <div class="kr-trans" style="margin-top:10px;">한국 치킨은 미국식 프라이드치킨이 아닙니다. 최대한의 바삭함을 위해 두 번 튀기고, 달콤 매콤한 소스를 입히며, 밤 11시에도 30분 안에 배달됩니다. 한국에는 87,000개 이상의 치킨집이 있습니다 — 전 세계 맥도날드보다 많습니다. 이것은 국가적 종교입니다.</div>
+      <div class="food-stat-row">
+        <div class="food-stat"><div class="food-stat-val">87K+</div><div class="food-stat-label">Chicken shops in Korea</div></div>
+        <div class="food-stat"><div class="food-stat-val">치맥</div><div class="food-stat-label">치킨 + 맥주 (beer) combo</div></div>
+        <div class="food-stat"><div class="food-stat-val">2x</div><div class="food-stat-label">Double-fried for crunch</div></div>
+        <div class="food-stat"><div class="food-stat-val">30분</div><div class="food-stat-label">Average delivery time</div></div>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-top:24px;">
+      <span class="tip-icon">📖</span>
+      <div class="tip-content">
+        <div class="tip-label">한국 치킨의 역사 · How Korean Fried Chicken Was Born</div>
+        <div class="tip-text"><strong>1. The Birth of Tongdak: Electric Roasting &amp; Frying (1960s–70s)</strong><br>In 1960, 'Myeongdong Yeongyang Center' in Seoul became the first to serve electric-oven-roasted whole chicken (전기구이 통닭). By the 1970s, cheap cooking oils made deep-fried old-style whole fried chicken (옛날 통닭) widely popular. In 1977, Korea's first chicken franchise, Lim's Chicken (림스치킨), opened at Myeongdong's Shinsegae Department Store, introducing the practice of cutting chicken into pieces before frying.<br><br><strong>2. K-Chicken Perfected: The Birth of Yangnyeom Chicken (1980s)</strong><br>To suit Korean palates less accustomed to plain fried chicken, a sweet-spicy sauce of gochujang and garlic was tossed over freshly fried chicken — and seasoned chicken (양념치킨) was born. As chains like Mexicana Chicken (맥시칸치킨) expanded through the 1980s, the custom of pairing chicken with pickled radish cubes (무) became standard, giving rise to today's iconic chimaek (치맥) culture — the beloved chicken-and-beer combo.
+          <div class="kr-trans" style="margin-top:8px;"><strong>1. 통닭의 시작: 전기구이와 튀김 (1960~70년대)</strong><br>전기구이 통닭의 등장: 1960년 서울 명동에 문을 연 '명동 영양센터'가 전기 오븐으로 닭을 구워낸 '전기구이 통닭'을 처음으로 선보였습니다. 프라이드 치킨의 도입: 1970년대 들어 콩기름 등 저렴한 식용유가 대량 생산되면서 닭을 통째로 기름에 튀긴 '옛날 통닭'이 대중화되었습니다. 1977년에는 명동 신세계백화점에 국내 최초의 치킨 프랜차이즈인 '림스치킨'이 생기며 닭을 조각내어 튀기는 방식이 도입되었습니다.<br><br><strong>2. K-치킨의 완성: 양념치킨의 탄생 (1980년대)</strong><br>프라이드치킨에 익숙하지 않던 한국인의 입맛에 맞춰, 고추장과 마늘 등을 베이스로 한 매콤달콤한 소스를 닭튀김에 버무린 '양념치킨'이 탄생했습니다. 1980년대 맥시칸치킨 등 다양한 프랜차이즈가 등장하며 치킨에 무를 곁들여 먹는 방식이 정립되었고, 오늘날의 '치맥(치킨+맥주)' 문화로 발전했습니다. <button class="hangul-sound-btn" onclick="speakKorean('한국 치킨은 1960년대 통닭에서 시작해 양념치킨과 치맥 문화로 발전했습니다')" aria-label="Listen">🔊</button></div></div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <span class="tip-icon">💡</span>
+      <div class="tip-content">
+        <div class="tip-label">Chimaek (치맥) Culture</div>
+        <div class="tip-text">Chimaek (치맥) = chicken (치킨) + beer (맥주). This is Korea's most beloved food pairing — cold beer with hot crispy chicken, usually ordered for delivery. Eating chimaek (치맥) while watching football (축구), baseball (야구), or a K-drama is considered one of life's peak experiences by many Koreans. The combination became globally known through the drama "My Love From the Star" (별에서 온 그대, 2013).
+        <div class="kr-trans" style="margin-top:8px;">치맥은 치킨과 맥주의 합성어입니다. 차가운 맥주와 뜨겁고 바삭한 치킨의 조합은 한국인들이 가장 사랑하는 음식 페어링으로, 주로 배달로 주문합니다. 축구·야구·드라마를 보면서 치맥 먹기는 많은 한국인에게 삶의 최고 경험 중 하나입니다. 《별에서 온 그대》(2013)를 통해 전 세계적으로 유명해졌습니다. <button class="hangul-sound-btn" onclick="speakKorean('치맥은 치킨과 맥주를 함께 즐기는 한국의 대표 음식 문화입니다.')" aria-label="Listen">🔊</button></div>
+      </div>
+      </div>
+    </div>
+
+    <!-- BIG CHAINS -->
+    <div class="food-cat-header">🏆 프랜차이즈 Top Chicken Chains <span class="food-cat-count">15 chains</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">Each chain has its own signature flavor identity, sauce philosophy, and loyal fanbase. Choosing the "best" chicken franchise is a deeply personal matter that Koreans debate seriously.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">각 브랜드마다 고유한 대표 맛, 소스 철학, 충성스러운 팬층이 있습니다. '최고의' 치킨 브랜드를 고르는 것은 한국인들이 진지하게 토론하는 아주 개인적인 문제입니다. <button class="hangul-sound-btn" onclick="speakKorean('각 치킨 브랜드마다 고유한 맛과 팬층이 있습니다.')" aria-label="Listen">🔊</button></div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🍗
+          <span class="food-card-brand-badge">교촌</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">교촌치킨 <button class="hangul-sound-btn" onclick="speakKorean('교촌치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Kyochon Chicken</div>
+          <div class="food-card-meta">교촌에프앤비 · Founded 1991 · Daegu · Global</div>
+          <p class="food-card-desc">Korea's most prestigious chicken chain — famous for the Kyochon Honey Combo (교촌 허니콤보) and soy sauce (간장) base. Not sweet-spicy like most chains — instead, a sophisticated soy-garlic glaze. Higher price point, considered premium. Has stores in the US, China, Malaysia.</p>
+          <div class=kr-trans>한국에서 가장 권위 있는 치킨 체인으로 허니콤보와 간장 베이스로 유명합니다. 달콤 매콤하지 않은 세련된 간장 마늘 글레이즈가 특징이며 미국, 중국, 말레이시아에도 매장이 있습니다. <button class=hangul-sound-btn onclick=speakKorean('교촌치킨은 간장 마늘 글레이즈로 유명한 한국 최고 프리미엄 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-premium">Premium</span><span class="food-tag">Soy Garlic</span><span class="food-tag food-tag-classic">Honey Combo</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🌟
+          <span class="food-card-brand-badge">BBQ</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">BBQ치킨 <button class="hangul-sound-btn" onclick="speakKorean('BBQ치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">BB.Q Chicken</div>
+          <div class="food-card-meta">제너시스BBQ · Founded 1995 · Global Expansion</div>
+          <p class="food-card-desc">BBQ stands for "Best of the Best Quality." Famous for Golden Olive Chicken (황금올리브치킨) — fried in pure olive oil. The most internationally expanded Korean chicken chain, with 57+ countries. Also known for the Crispy Goldking flavor.</p>
+          <div class=kr-trans>BBQ는 최고 중의 최고 품질의 약자입니다. 순 올리브유에 튀긴 황금올리브치킨으로 유명하며 57개국 이상에 진출한 가장 국제적으로 확장된 한국 치킨 체인입니다. <button class=hangul-sound-btn onclick=speakKorean('BBQ치킨은 황금올리브치킨으로 유명한 한국 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Golden Olive</span><span class="food-tag">57+ Countries</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🔥
+          <span class="food-card-brand-badge">BHC</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">BHC치킨 <button class="hangul-sound-btn" onclick="speakKorean('BHC치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">BHC Chicken</div>
+          <div class="food-card-meta">BHC그룹 · Founded 1993 · Delivery King</div>
+          <p class="food-card-desc">Famous for two viral menu items: Ppuringkle (뿌링클: cheesy powder coating) and Matzokking (맛초킹: crispy spicy). Both consistently rank as Korea's most-ordered delivery chicken. The 뿌링클 cheese powder has its own cult following.</p>
+          <div class=kr-trans>두 가지 바이럴 메뉴로 유명합니다: 뿌링클(치즈 파우더)과 맛초킹(바삭 매운). 두 메뉴 모두 한국에서 가장 많이 주문되는 배달 치킨으로 꾸준히 상위권을 차지합니다. <button class=hangul-sound-btn onclick=speakKorean('BHC치킨은 뿌링클과 맛초킹으로 유명한 배달 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-viral">뿌링클 Viral</span><span class="food-tag">맛초킹</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">♨️
+          <span class="food-card-brand-badge">굽네</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">굽네치킨 <button class="hangul-sound-btn" onclick="speakKorean('굽네치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Goobne Chicken</div>
+          <div class="food-card-meta">굽네 · Founded 2003 · Oven-Baked Pioneer</div>
+          <p class="food-card-desc">Korea's leader in oven-baked (오븐에 구운) chicken — not fried at all. Lower fat, cleaner flavor, crispy through slow oven cooking. The signature Volcano (볼케이노) spicy sauce is a classic. Popular with health-conscious consumers.</p>
+          <div class=kr-trans>한국 오븐 치킨의 선두 주자로 튀기지 않습니다. 지방이 적고 깔끔한 맛으로 대표 메뉴인 볼케이노 매운 소스가 클래식입니다. 건강을 의식하는 소비자들에게 인기 있습니다. <button class=hangul-sound-btn onclick=speakKorean('굽네치킨은 오븐에 구운 건강한 치킨 전문 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Oven-Baked</span><span class="food-tag food-tag-hot">🌶️ Volcano</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🌶️
+          <span class="food-card-brand-badge">처갓집</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">처갓집양념치킨 처갓집 <button class="hangul-sound-btn" onclick="speakKorean('처갓집양념치킨 처갓집')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Cheogajip Yangnyeom Chicken</div>
+          <div class="food-card-meta">처갓집 · Founded 1985 · Original Yangnyeom</div>
+          <p class="food-card-desc">처갓집 is credited with inventing or popularizing sweet-spicy sauce chicken (양념치킨) — the style that defines Korean fried chicken internationally. The original bright red gochujang glaze. A foundational pillar of Korean chicken culture.</p>
+          <div class=kr-trans>처갓집은 양념치킨을 한국에 처음 보급한 브랜드로 인정받습니다. 국제적으로 한국 치킨을 대표하는 달콤 매콤한 소스 치킨의 원조입니다. 한국 치킨 문화의 근간입니다. <button class=hangul-sound-btn onclick=speakKorean('처갓집양념치킨은 달콤 매콤한 양념치킨의 원조 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Spicy</span><span class="food-tag food-tag-classic">양념 Pioneer</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🌮
+          <span class="food-card-brand-badge">멕시칸</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">멕시칸치킨 <button class="hangul-sound-btn" onclick="speakKorean('멕시칸치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Mexican Chicken</div>
+          <div class="food-card-meta">멕시칸 · Founded 1982 · Long-Running Classic</div>
+          <p class="food-card-desc">One of Korea's longest-running chicken chains — despite the name, it's 100% Korean chicken style. Known for crispy texture and a balanced sweet-spicy sauce. A nostalgic choice for Koreans who grew up in the 1980s and 90s.</p>
+          <div class=kr-trans>한국에서 가장 오래 운영된 치킨 체인 중 하나로, 이름과 달리 100% 한국식 치킨입니다. 바삭한 식감과 달콤 매콤한 소스로 유명하며 1980-90년대에 자란 세대에게 추억의 맛입니다. <button class=hangul-sound-btn onclick=speakKorean('멕시칸치킨은 1982년부터 한국인의 사랑을 받아온 오래된 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Since 1982</span><span class="food-tag">Nostalgic</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🌮
+          <span class="food-card-brand-badge">멕시카나</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">멕시카나치킨 멕시카나 <button class="hangul-sound-btn" onclick="speakKorean('멕시카나치킨 멕시카나')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Mexicana Chicken</div>
+          <div class="food-card-meta">멕시카나 · Founded 1989 · Similar Name, Different Brand</div>
+          <p class="food-card-desc">Often confused with 멕시칸치킨 — these are entirely separate chains. 멕시카나 has its own signature spicy paste recipe and loyal regional following. Known for hand-pressed marinade applied before frying — results in deeper flavor penetration.</p>
+          <div class=kr-trans>멕시칸치킨과 자주 혼동되지만 완전히 다른 브랜드입니다. 고유한 매운 양념 레시피와 충성스러운 지역 팬층이 있습니다. 튀기기 전 손으로 눌러 양념하는 방식으로 더 깊은 맛을 냅니다. <button class=hangul-sound-btn onclick=speakKorean('멕시카나치킨은 손으로 양념을 눌러 넣는 독자적인 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Spicy</span><span class="food-tag food-tag-classic">Hand-Pressed</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🐦
+          <span class="food-card-brand-badge">페리카나</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">페리카나치킨 페리카나 <button class="hangul-sound-btn" onclick="speakKorean('페리카나치킨 페리카나')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Pelicana Chicken</div>
+          <div class="food-card-meta">페리카나 · Founded 1982 · Soy Sauce Legend</div>
+          <p class="food-card-desc">One of Korea's oldest chicken chains — founded the same year as 멕시칸. Famous for 간장치킨 (soy sauce chicken) before it became mainstream. A regional stronghold brand with fierce loyalty in certain neighborhoods. Classic, no-frills, reliable.</p>
+          <div class=kr-trans>한국에서 가장 오래된 치킨 체인 중 하나로 1982년 창립했습니다. 간장치킨이 대중화되기 전부터 간장치킨으로 유명했습니다. 특정 동네에서 강한 충성도를 가진 지역 강자 브랜드입니다. <button class=hangul-sound-btn onclick=speakKorean('페리카나치킨은 간장치킨의 원조로 알려진 오래된 한국 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Since 1982</span><span class="food-tag">Soy Sauce OG</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🍖
+          <span class="food-card-brand-badge">지코바</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">지코바닭갈비 지코바 <button class="hangul-sound-btn" onclick="speakKorean('지코바닭갈비 지코바')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Jikoba Dak Galbi</div>
+          <div class="food-card-meta">지코바 · Stir-Fried Not Fried · Unique</div>
+          <p class="food-card-desc">Unlike every other chain — this is not fried chicken. 지코바 specializes in dak-galbi (닭갈비), marinated chicken ribs stir-fried in a spicy gochujang sauce on a tabletop griddle. A completely different Korean chicken experience. Hugely popular for groups.</p>
+          <div class=kr-trans>다른 모든 체인과 달리 튀긴 치킨이 아닙니다. 닭갈비 전문 체인으로 양념한 닭을 고추장 소스, 떡, 채소와 함께 테이블 그리들에서 볶습니다. 완전히 다른 한국 치킨 경험으로 그룹 식사에 매우 인기 있습니다. <button class=hangul-sound-btn onclick=speakKorean('지코바닭갈비는 튀기지 않고 볶아내는 닭갈비 전문 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Spicy</span><span class="food-tag">Stir-Fried · Not Fried</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">😺
+          <span class="food-card-brand-badge">네네</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">네네치킨 <button class="hangul-sound-btn" onclick="speakKorean('네네치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Nene Chicken</div>
+          <div class="food-card-meta">네네 · Founded 1999 · Fun Brand</div>
+          <p class="food-card-desc">One of Korea's top 5 chicken chains by outlet count. Known for fun branding, vibrant visual identity, and consistent quality. Famous for Snow Cheese Chicken (눈꽃치즈치킨) — a creamy, cheesy powder coating that became a major trend in the 2010s.</p>
+          <div class=kr-trans>매장 수 기준 한국 5대 치킨 체인 중 하나입니다. 재미있는 브랜딩과 생동감 있는 비주얼로 유명하며 2010년대 큰 트렌드가 된 눈꽃치즈치킨이 대표 메뉴입니다. <button class=hangul-sound-btn onclick=speakKorean('네네치킨은 눈꽃치즈치킨으로 유명한 한국 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-new">Snow Cheese</span><span class="food-tag">Fun Brand</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">6️⃣0️⃣
+          <span class="food-card-brand-badge">60계</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">60계치킨 <button class="hangul-sound-btn" onclick="speakKorean('60계치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">60 Gye Chicken</div>
+          <div class="food-card-meta">60계 · 60 Days Marination · Premium Quality</div>
+          <p class="food-card-desc">Named for their claim that chickens are raised 60 days — the name signals quality sourcing. Known for using fresher, more carefully sourced chicken than standard chains. Less sweet than competitors, more emphasis on natural chicken flavor. Beloved by purists.</p>
+          <div class=kr-trans>닭을 60일간 키운다는 점을 브랜드명에 담아 품질 원산지를 강조합니다. 경쟁사보다 더 신선하게 엄선된 닭을 사용하며 달콤함보다 닭고기 본연의 맛을 강조합니다. 치킨 순수주의자들에게 사랑받습니다. <button class=hangul-sound-btn onclick=speakKorean('60계치킨은 신선한 닭고기 본연의 맛을 강조하는 프리미엄 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-premium">60-Day Bird</span><span class="food-tag">Quality-Focused</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🟡
+          <span class="food-card-brand-badge">노란통닭</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">노란통닭 <button class="hangul-sound-btn" onclick="speakKorean('노란통닭')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Yellow Whole Chicken</div>
+          <div class="food-card-meta">노란통닭 · Whole Chicken Style · Retro</div>
+          <p class="food-card-desc">노란 = yellow. Specializes in whole fried chickens (통닭) with a signature yellow curry-spiced coating. Retro aesthetic and concept — harks back to the 1970s–80s era of Korean roadside chicken shops. The whole chicken format gives a different eating experience.</p>
+          <div class=kr-trans>노란은 노란색을 의미합니다. 노란 카레 향신료 옷을 입힌 통닭 전문점입니다. 레트로 감성으로 1970-80년대 한국 길거리 통닭집을 떠올리게 합니다. 통닭 형식은 색다른 식사 경험을 제공합니다. <button class=hangul-sound-btn onclick=speakKorean('노란통닭은 레트로 감성의 노란 카레 통닭 전문 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag">Whole Chicken</span><span class="food-tag">Retro Style</span><span class="food-tag">Curry-Spiced</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">2️⃣
+          <span class="food-card-brand-badge">호식이</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">호식이두마리치킨 호식이두마리 <button class="hangul-sound-btn" onclick="speakKorean('호식이두마리치킨 호식이두마리')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Hosiki Two Chickens</div>
+          <div class="food-card-meta">호식이두마리치킨 · 2 for 1 Value Brand</div>
+          <p class="food-card-desc">두마리 = two chickens. The core proposition: buy one order, get two whole chickens for approximately the price of one at premium chains. Budget-focused, high-volume brand loved by students, families, and those who need a LOT of chicken. No frills, maximum quantity.</p>
+          <div class=kr-trans>두마리는 닭 두 마리를 의미합니다. 프리미엄 체인 한 마리 가격으로 통닭 두 마리를 드립니다. 학생, 가족, 치킨을 많이 먹고 싶은 사람들에게 사랑받는 최강 가성비 브랜드입니다. <button class=hangul-sound-btn onclick=speakKorean('호식이두마리치킨은 한 가격에 두 마리를 받을 수 있는 가성비 최강 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag">2 Chickens</span><span class="food-tag">Best Value</span><span class="food-tag">Budget King</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🌿
+          <span class="food-card-brand-badge">바른</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">바른치킨 <button class="hangul-sound-btn" onclick="speakKorean('바른치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Baleun Chicken (Right/Proper Chicken)</div>
+          <div class="food-card-meta">바른치킨 · Health-Focused · Air-Fried</div>
+          <p class="food-card-desc">바른 = right/proper/upright. Positions itself as the "clean eating" chicken choice — uses better quality oil, air-frying methods, and natural seasoning. Less greasy than competitors. Popular with 30–40 year old health-conscious consumers.</p>
+          <div class=kr-trans>바른은 올바른이라는 뜻으로 더 좋은 품질의 기름, 에어프라이 방식, 천연 양념을 사용하는 클린 이팅 치킨을 지향합니다. 경쟁사보다 기름기가 적으며 건강을 의식하는 30-40대에게 인기 있습니다. <button class=hangul-sound-btn onclick=speakKorean('바른치킨은 건강한 재료와 에어프라이로 만든 클린 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Healthier</span><span class="food-tag">Air-Fried Option</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🔥
+          <span class="food-card-brand-badge">푸라닭</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">푸라닭치킨 푸라닭 <button class="hangul-sound-btn" onclick="speakKorean('푸라닭치킨 푸라닭')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Puradak Chicken</div>
+          <div class="food-card-meta">푸라닭 · Founded 2006 · Spicy Specialist</div>
+          <p class="food-card-desc">Famous for bold, intense flavor profiles — especially their 블랙후추 (Black Pepper) and 불닭갈릭 (Buldak Garlic) flavors. Appeals to adventurous eaters who want more complex seasoning than typical sweet-red-sauce chains. Growing rapidly in 2020s.</p>
+          <div class=kr-trans>블랙후추와 불닭갈릭 등 굵고 강렬한 맛으로 유명합니다. 전형적인 달콤 매운 소스 체인보다 더 복잡한 양념을 원하는 모험적인 미식가에게 어필합니다. 2020년대에 빠르게 성장하고 있습니다. <button class=hangul-sound-btn onclick=speakKorean('푸라닭치킨은 블랙후추와 불닭갈릭 등 강렬한 맛의 치킨 브랜드입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Spicy</span><span class="food-tag">Bold Flavors</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CHICKEN TYPES -->
+    <div class="food-cat-header">🍗 치킨 종류 Chicken Styles <span class="food-cat-count">10 styles</span></div>
+    <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:6px;line-height:1.7;">Korean fried chicken goes far beyond "fried chicken" — the style, sauce, and format vary dramatically between orders. Knowing these terms lets you order exactly what you want.</p>
+    <div class="kr-trans" style="margin-bottom:18px;">한국 치킨은 단순한 프라이드치킨을 훨씬 뛰어넘습니다 — 스타일, 소스, 형태가 주문마다 크게 다릅니다. 이 용어들을 알면 원하는 것을 정확하게 주문할 수 있습니다. <button class="hangul-sound-btn" onclick="speakKorean('한국 치킨은 스타일과 소스가 매우 다양합니다.')" aria-label="Listen">🔊</button></div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🍗
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">후라이드치킨 후라이드 <button class="hangul-sound-btn" onclick="speakKorean('후라이드치킨 후라이드')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Heuraid Chicken (Plain Fried)</div>
+          <div class="food-card-meta">Classic Fried · No Sauce</div>
+          <p class="food-card-desc">Plain double-fried chicken — no sauce. The purest Korean fried chicken experience. Double-fried (두 번 튀긴) creates a shattering, crackling crust that's lighter than American fried chicken. The gold standard for judging a chicken shop's oil quality and technique.</p>
+          <div class=kr-trans>소스 없이 두 번 튀긴 순수한 한국 치킨입니다. 두 번 튀기면 미국 프라이드치킨보다 가볍고 바삭한 껍질이 생깁니다. 치킨집의 기름 품질과 기술을 판단하는 기준이 됩니다. <button class=hangul-sound-btn onclick=speakKorean('후라이드치킨은 소스 없이 두 번 튀긴 순수한 한국식 프라이드치킨입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Double-Fried</span><span class="food-tag">No Sauce</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🌶️
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">양념치킨 <button class="hangul-sound-btn" onclick="speakKorean('양념치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Yangnyeom Chicken</div>
+          <div class="food-card-meta">Sweet-Spicy Glazed · Korean Iconic</div>
+          <p class="food-card-desc">The Korean fried chicken that changed everything — fried chicken tossed in a sweet-spicy gochujang glaze. Sticky, finger-licking, addictive. Often ordered as "half-and-half" (반반) with plain fried (후라이드) so you get both styles in one order.</p>
+          <div class=kr-trans>모든 것을 바꾼 한국 프라이드치킨입니다. 고추장 글레이즈에 버무린 달콤 매콤한 치킨으로 끈적하고 손가락을 핥게 됩니다. 한 번에 두 스타일을 즐기기 위해 후라이드와 반반으로 주문하는 경우가 많습니다. <button class=hangul-sound-btn onclick=speakKorean('양념치킨은 달콤 매콤한 고추장 글레이즈로 버무린 한국 대표 치킨입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Sweet-Spicy</span><span class="food-tag food-tag-classic">Korean Icon</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🧄
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">간장치킨 <button class="hangul-sound-btn" onclick="speakKorean('간장치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Ganjang Chicken</div>
+          <div class="food-card-meta">Soy Sauce Glazed · Savory-Sweet</div>
+          <p class="food-card-desc">Soy sauce (간장), garlic, and sugar glaze — savory, slightly sweet, deeply umami. No chili heat. The sophisticated alternative to 양념. Used by premium chains like 교촌 as their flagship style. Often paired with beer for a cleaner-flavored 치맥.</p>
+          <div class=kr-trans>간장, 마늘, 설탕 글레이즈로 감칠맛 있고 은은하게 달콤합니다. 고추 열기가 없습니다. 교촌 같은 프리미엄 체인에서 대표 스타일로 사용하며 더 깔끔한 맛의 치맥을 위해 맥주와 자주 즐깁니다. <button class=hangul-sound-btn onclick=speakKorean('간장치킨은 간장과 마늘 글레이즈로 감칠맛 나는 치킨입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">No Heat</span><span class="food-tag food-tag-premium">Soy Garlic</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🧀
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">치즈치킨 <button class="hangul-sound-btn" onclick="speakKorean('치즈치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Cheese Chicken</div>
+          <div class="food-card-meta">Cheese Fondue Dip or Powder</div>
+          <p class="food-card-desc">Either dipped in a cheese fondue, coated in cheese powder (뿌링클 style), or served with a cheese sauce side. The sweet-salty cheese complements the fry perfectly. Korea's cheese obsession + chicken obsession combined into one.</p>
+          <div class=kr-trans>치즈 퐁듀에 찍거나, 치즈 파우더를 입히거나, 치즈 소스와 함께 제공됩니다. 달콤하고 짭짤한 치즈가 튀김과 완벽하게 어울립니다. 한국의 치즈 사랑과 치킨 사랑이 하나로 합쳐진 메뉴입니다. <button class=hangul-sound-btn onclick=speakKorean('치즈치킨은 치즈 소스나 파우더를 곁들인 달콤한 한국 치킨입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">No Heat</span><span class="food-tag">Cheese</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🍯
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">허니콤보 <button class="hangul-sound-btn" onclick="speakKorean('허니콤보')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Honey Combo</div>
+          <div class="food-card-meta">Honey-Glazed · Kyochon Signature</div>
+          <p class="food-card-desc">Originated at 교촌 — a honey glaze on soy-marinated chicken. Sweet, sticky, caramelized. Now referenced as a style across multiple chains. Pairs perfectly with pickled radish (치킨무). One of the most reordered Korean chicken menus.</p>
+          <div class=kr-trans>교촌에서 시작된 간장 양념 치킨에 꿀 글레이즈를 입힌 메뉴입니다. 달콤하고 끈적하며 캐러멜라이즈됩니다. 이제 여러 체인에서 허니 스타일로 참조하며 치킨무와 함께 완벽하게 어울립니다. <button class=hangul-sound-btn onclick=speakKorean('허니콤보는 간장 양념 치킨에 꿀 글레이즈를 입힌 교촌치킨의 대표 메뉴입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">Sweet</span><span class="food-tag food-tag-premium">Honey Glaze</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🌿
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">갈릭치킨 <button class="hangul-sound-btn" onclick="speakKorean('갈릭치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Garlic Chicken</div>
+          <div class="food-card-meta">Garlic Cream Sauce · Savory</div>
+          <p class="food-card-desc">Roasted garlic cream sauce — rich, savory, aromatic. Became a major trend in the mid-2010s. The thick cream base makes this one of the most indulgent styles. Often combined with cheese for maximum richness. Best eaten fresh, not reheated.</p>
+          <div class=kr-trans>구운 마늘 크림 소스로 진하고 감칠맛 있으며 향긋합니다. 2010년대 중반 큰 트렌드가 되었습니다. 두꺼운 크림 베이스로 가장 진한 스타일 중 하나이며 치즈와 결합하면 더욱 풍부합니다. 식으면 맛이 떨어지니 신선할 때 드세요. <button class=hangul-sound-btn onclick=speakKorean('갈릭치킨은 구운 마늘 크림 소스로 진하고 향긋한 치킨입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-mild">No Heat</span><span class="food-tag">Garlic Cream</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🍖
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">닭갈비 <button class="hangul-sound-btn" onclick="speakKorean('닭갈비')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Dak Galbi</div>
+          <div class="food-card-meta">Spicy Stir-Fried Chicken Ribs · Chuncheon</div>
+          <p class="food-card-desc">Not fried — marinated chicken ribs stir-fried on a flat griddle with gochujang, garlic, rice cakes (떡), and cabbage. A Chuncheon (춘천) regional specialty now loved nationwide. Often ordered communally, cooked at the table. Add 볶음밥 (fried rice) to finish.</p>
+          <div class=kr-trans>튀기지 않은 요리로, 고추장, 마늘, 떡, 양배추와 함께 평판 그리들에서 볶은 양념 닭갈비입니다. 전국적으로 사랑받는 춘천 지역 특산물이며 주로 함께 먹으며 테이블에서 조리합니다. 마지막에 볶음밥을 추가해 마무리합니다. <button class=hangul-sound-btn onclick=speakKorean('닭갈비는 고추장 양념으로 볶은 춘천 대표 음식입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️ Spicy</span><span class="food-tag">Stir-Fry</span><span class="food-tag food-tag-classic">Chuncheon</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🐓
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">반반치킨 <button class="hangul-sound-btn" onclick="speakKorean('반반치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Ban Ban Chicken (Half-Half)</div>
+          <div class="food-card-meta">Half 후라이드 + Half 양념 · Best Combo</div>
+          <p class="food-card-desc">반반 = half-half. Split order of plain fried (후라이드) and sweet-spicy glazed (양념) in one box. The most popular way to order chicken in Korea. Always served with pickled white radish cubes (치킨무) and sweet-spicy sauce on the side.</p>
+          <div class=kr-trans>반반은 절반 절반을 의미합니다. 한 박스에 후라이드와 양념이 반반 들어갑니다. 한국에서 가장 인기 있는 치킨 주문 방식으로 항상 치킨무와 양념 소스가 함께 제공됩니다. <button class=hangul-sound-btn onclick=speakKorean('반반치킨은 후라이드와 양념을 한 박스에 반반씩 담은 가장 인기 있는 주문 방식입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-classic">Most Ordered Style</span><span class="food-tag">Best of Both</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🌸
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">로제치킨 <button class="hangul-sound-btn" onclick="speakKorean('로제치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Rosé Chicken</div>
+          <div class="food-card-meta">Tomato Cream + Spicy · 2020s Trend</div>
+          <p class="food-card-desc">The rosé pasta trend hit chicken — tomato cream sauce with a subtle chili kick. Pink-orange color, creamy and rich. Swept Korean food delivery apps in 2021–2022. A younger demographic favorite. Less common now but still available at trend-conscious chains.</p>
+          <div class=kr-trans>로제 파스타 트렌드가 치킨에 적용된 메뉴로, 은은한 고추 향의 토마토 크림 소스입니다. 분홍 오렌지색으로 크리미하고 진합니다. 2021-22년 한국 배달 앱을 휩쓸었습니다. 지금은 덜 흔하지만 트렌드에 민감한 체인에서 여전히 찾을 수 있습니다. <button class=hangul-sound-btn onclick=speakKorean('로제치킨은 토마토 크림 소스를 입힌 분홍빛의 인기 치킨 스타일입니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️ Mild</span><span class="food-tag food-tag-new">2020s Trend</span></div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <div class="food-card-img bg-chicken2">🌶️
+          <span class="food-card-brand-badge">Style</span>
+        </div>
+        <div class="food-card-body">
+          <div class="food-card-name">매운치킨 <button class="hangul-sound-btn" onclick="speakKorean('매운치킨')" aria-label="Listen">🔊</button></div>
+          <div class="food-card-rom">Spicy Chicken (Extra Hot)</div>
+          <div class="food-card-meta">Extra Spicy · Challenge Level</div>
+          <p class="food-card-desc">Each chain's dedicated "extra spicy" version — using ghost pepper, habanero, or concentrated gochugaru extract. 굽네 볼케이노, 교촌 레드콤보, BHC 맛초킹 all fall in this category. Ordered for spice tolerance bragging rights.</p>
+          <div class=kr-trans>각 체인의 초매운 버전으로 고스트 페퍼, 하바네로, 또는 고춧가루 추출물을 사용합니다. 굽네 볼케이노, 교촌 레드콤보, BHC 맛초킹이 이 카테고리에 속합니다. 매운 것을 잘 먹는다고 자랑하기 위해 주문합니다. <button class=hangul-sound-btn onclick=speakKorean('매운치킨은 초고도 매운 버전으로 매운 것을 잘 먹는 사람들이 도전합니다.') aria-label=Listen>🔊</button></div>
+          <div class="food-card-tags"><span class="food-tag food-tag-hot">🌶️🌶️🌶️🌶️ Very Hot</span><span class="food-tag">Bragging Rights</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VOCAB -->
+    <div class="culture-sub-heading" style="margin-top:40px;">📖 치킨 어휘 · Chicken Vocabulary</div>
+    <table class="vocab-table">
+      <thead><tr><th>Korean</th><th>Romanization</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td class="kor-cell">치킨</td><td class="rom-cell">chikin</td><td class="eng-cell">Korean fried chicken</td></tr>
+        <tr><td class="kor-cell">치맥</td><td class="rom-cell">chimaek</td><td class="eng-cell">chicken + beer (치킨 + 맥주)</td></tr>
+        <tr><td class="kor-cell">후라이드</td><td class="rom-cell">heuraid</td><td class="eng-cell">plain fried (from "fried")</td></tr>
+        <tr><td class="kor-cell">양념치킨</td><td class="rom-cell">yangnyeom chikin</td><td class="eng-cell">sweet-spicy glazed chicken</td></tr>
+        <tr><td class="kor-cell">간장치킨</td><td class="rom-cell">ganjang chikin</td><td class="eng-cell">soy sauce glazed chicken</td></tr>
+        <tr><td class="kor-cell">반반</td><td class="rom-cell">ban-ban</td><td class="eng-cell">half-and-half (two styles)</td></tr>
+        <tr><td class="kor-cell">통닭</td><td class="rom-cell">tongdak</td><td class="eng-cell">whole chicken</td></tr>
+        <tr><td class="kor-cell">닭갈비</td><td class="rom-cell">dak-galbi</td><td class="eng-cell">spicy stir-fried chicken ribs</td></tr>
+        <tr><td class="kor-cell">치킨무</td><td class="rom-cell">chikin-mu</td><td class="eng-cell">pickled radish served with chicken</td></tr>
+        <tr><td class="kor-cell">배달</td><td class="rom-cell">baedal</td><td class="eng-cell">delivery</td></tr>
+        <tr><td class="kor-cell">배달의민족</td><td class="rom-cell">baedalui minjok</td><td class="eng-cell">Baemin (Korea's #1 delivery app)</td></tr>
+        <tr><td class="kor-cell">두 번 튀기다</td><td class="rom-cell">du beon twigida</td><td class="eng-cell">to double-fry</td></tr>
+        <tr><td class="kor-cell">바삭바삭</td><td class="rom-cell">basak-basak</td><td class="eng-cell">crispy, crunchy (texture sound word)</td></tr>
+        <tr><td class="kor-cell">치킨집</td><td class="rom-cell">chikin-jip</td><td class="eng-cell">chicken restaurant/shop</td></tr>
+        <tr><td class="kor-cell">맥주 한 캔</td><td class="rom-cell">maekju han kaen</td><td class="eng-cell">one can of beer</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="../learn/hangul.html">Hangul Alphabet</a></li>
+          <li><a href="../learn/grammar.html">Grammar</a></li>
+          <li><a href="../learn/vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1689 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korean Dialogues 대화 | 한국어 학교</title>
+  <meta name="description" content="40 real-world Korean dialogues — introductions, shopping, dating, work, food, health, and transport with audio and romanization.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .ja-kana  { display:none; font-size:.85em; color:var(--text-secondary); }
+    body.lang-ja .ja-kana  { display:inline; }
+    .kata     { display:none; font-size:.82em; color:var(--text-secondary); }
+    body.lang-ja .kata     { display:block; }
+    .ja-block { display:none; }
+    body.lang-ja .ja-block { display:block; }
+    body.lang-ja .no-ja    { display:none; }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div class="logo-mark">한</div>
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="hangul.html" class="active"><span class="nav-icon">📚</span> Learn</a></li>
+      <li><a href="../culture/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+      <li><a href="../travel/index.html"><span class="nav-icon">🗺️</span> Travel</a></li>
+      <li><a href="../news/index.html"><span class="nav-icon">📰</span> News</a></li>
+      <li><a href="../quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search lessons...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div id="lesson-progress-grid"></div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">Getting Started</div>
+    <a href="../index.html" class="sidebar-link"><span class="link-icon">🏠</span> Introduction</a>
+    <a href="hangul.html" class="sidebar-link"><span class="link-icon">✏️</span> Hangul Alphabet</a>
+    <a href="syllable-blocks.html" class="sidebar-link"><span class="link-icon">🔷</span> Syllable Blocks</a>
+    <a href="pronunciation.html" class="sidebar-link"><span class="link-icon">🔊</span> Pronunciation Guide</a>
+    <div class="sidebar-section">Beginner</div>
+    <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> Vocab <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-vocab">
+      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
+      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
+      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
+      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
+      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
+      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
+      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
+      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
+      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
+      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
+      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
+      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
+      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
+      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
+      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
+      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
+      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
+      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
+      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
+      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
+      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
+    </div>
+    <a href="pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> Pronouns <span class="link-badge badge-beginner">Beginner</span></a>
+    <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> Common Nouns <span class="link-badge badge-beginner">Beginner</span></a>
+    <button class="sidebar-accordion-btn" data-accordion="grammar"><span class="link-icon">📝</span> Grammar <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-grammar">
+      <a href="grammar.html#sentence-structure" class="sidebar-link" data-level="intermediate"><span class="link-icon">📐</span> Sentence Structure <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#particles" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔗</span> Korean Particles <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#conjugation" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏰</span> Verb Conjugation <span class="link-badge badge-intermediate">Intermediate</span></a>
+      <a href="grammar.html#questions" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Question Forms <span class="link-badge badge-intermediate">Intermediate</span></a>
+    </div>
+    <div class="sidebar-section">Intermediate</div>
+    <a href="speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> Formal vs Informal <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <a href="emotions.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">😊</span> Expressing Emotions <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <a href="shopping.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛒</span> Shopping Phrases <span class="link-badge badge-intermediate">Intermediate</span></a>
+    <div class="sidebar-section">Advanced</div>
+    <a href="writing-essays.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📝</span> Writing Essays <span class="link-badge badge-advanced">Advanced</span></a>
+    <a href="business-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">💼</span> Business Korean <span class="link-badge badge-advanced">Advanced</span></a>
+    <a href="classical-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Classical Korean <span class="link-badge badge-advanced">Advanced</span></a>
+    <div class="sidebar-section">Tools</div>
+    <a href="dialogues.html" class="sidebar-link active"><span class="link-icon">💬</span> Korean Dialogues</a>
+    <a href="flashcard.html" class="sidebar-link"><span class="link-icon">📇</span> Flashcards</a>
+  </nav>
+</aside>
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="lesson-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">›</span>
+      <a href="hangul.html">Learn</a>
+      <span class="sep">›</span>
+      <span>Korean Dialogues</span>
+    </div>
+
+    <div class="lesson-header">
+      <div class="lesson-tag">💬 All Levels · 40 Dialogues</div>
+      <h1 class="lesson-title">Korean Dialogues: <span class="grad-text">대화 연습</span></h1>
+      <p class="lesson-meta">
+        <span>💬 40 Full Dialogues</span>
+        <span>📊 All Levels</span>
+        <span>🔖 Real-world Korean</span>
+        <span>🔊 Audio on Every Line</span>
+      </p>
+    </div>
+
+    <div class="lesson-intro">
+      <p>Forty complete, authentic Korean conversations across everyday situations — from self-introductions to job interviews, first dates to hospital visits. Every dialogue includes Korean text, romanization, and English. Audio buttons let you hear each line spoken naturally. Study them as scripts, then use them as templates for real conversations.</p>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         1. INTRODUCTIONS
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="introductions">
+      <h2><span class="section-num">1</span> Introductions (소개)</h2>
+      <p>The first words you say in Korean matter. Learn to introduce yourself naturally and exchange contact info the way Koreans actually do.</p>
+
+      <!-- Dialogue 1 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #1 · Self-Introductions</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민준 Minjun</div>
+            <div class="kor-line">안녕하세요! 처음 뵙겠습니다. 저는 김민준이라고 해요. <button class="hangul-sound-btn" onclick="speakKorean('안녕하세요! 처음 뵙겠습니다. 저는 김민준이라고 해요.')">🔊</button></div>
+            <div class="rom-line">Annyeonghaseyo! Cheoeum boepgesseumnida. Jeoneun Kim Minjun-irago haeyo.</div>
+            <div class="eng-line">Hello! Nice to meet you. My name is Kim Minjun.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지우 Jiwoo</div>
+            <div class="kor-line">반갑습니다! 저는 박지우예요. 어디서 오셨어요? <button class="hangul-sound-btn" onclick="speakKorean('반갑습니다! 저는 박지우예요. 어디서 오셨어요?')">🔊</button></div>
+            <div class="rom-line">Bangapseumnida! Jeoneun Bak Jiwoo-yeyo. Eodiseo osyeosseoyo?</div>
+            <div class="eng-line">Nice to meet you! I'm Park Jiwoo. Where are you from?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민준 Minjun</div>
+            <div class="kor-line">저는 미국에서 왔어요. 지우 씨는요? <button class="hangul-sound-btn" onclick="speakKorean('저는 미국에서 왔어요. 지우 씨는요?')">🔊</button></div>
+            <div class="rom-line">Jeoneun miguk-eseo wasseoyo. Jiwoo ssi-neunyo?</div>
+            <div class="eng-line">I'm from the United States. What about you, Jiwoo?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지우 Jiwoo</div>
+            <div class="kor-line">저는 서울 출신이에요. 한국에는 언제 오셨어요? <button class="hangul-sound-btn" onclick="speakKorean('저는 서울 출신이에요. 한국에는 언제 오셨어요?')">🔊</button></div>
+            <div class="rom-line">Jeoneun Seoul chulsin-ieyo. Hanguk-eneun eonje osyeosseoyo?</div>
+            <div class="eng-line">I'm from Seoul. When did you come to Korea?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민준 Minjun</div>
+            <div class="kor-line">지난달에 왔어요. 아직 한국어를 열심히 공부 중이에요. <button class="hangul-sound-btn" onclick="speakKorean('지난달에 왔어요. 아직 한국어를 열심히 공부 중이에요.')">🔊</button></div>
+            <div class="rom-line">Jinandal-e wasseoyo. Ajik hangugeo-reul yeolsimhi gongbu jung-ieyo.</div>
+            <div class="eng-line">I came last month. I'm still diligently studying Korean.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지우 Jiwoo</div>
+            <div class="kor-line">한국어 정말 잘 하시네요! 앞으로 잘 부탁드려요. <button class="hangul-sound-btn" onclick="speakKorean('한국어 정말 잘 하시네요! 앞으로 잘 부탁드려요.')">🔊</button></div>
+            <div class="rom-line">Hangugeo jeongmal jal hasineyo! Ap-euro jal butakdeuryeoyo.</div>
+            <div class="eng-line">Your Korean is really good! I look forward to getting to know you.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 2 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #2 · Exchanging Numbers</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민준 Minjun</div>
+            <div class="kor-line">저기, 연락처 교환해도 될까요? <button class="hangul-sound-btn" onclick="speakKorean('저기, 연락처 교환해도 될까요?')">🔊</button></div>
+            <div class="rom-line">Jeogi, yeollakcheo gyohwan-haedo doelkkayo?</div>
+            <div class="eng-line">Hey, would it be okay to exchange contact info?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지우 Jiwoo</div>
+            <div class="kor-line">물론이죠! 카카오톡 쓰세요? <button class="hangul-sound-btn" onclick="speakKorean('물론이죠! 카카오톡 쓰세요?')">🔊</button></div>
+            <div class="rom-line">Mullon-ijyo! Kakao-tok sseuseyo?</div>
+            <div class="eng-line">Of course! Do you use KakaoTalk?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민준 Minjun</div>
+            <div class="kor-line">네, 써요. 카카오톡 아이디가 어떻게 되세요? <button class="hangul-sound-btn" onclick="speakKorean('네, 써요. 카카오톡 아이디가 어떻게 되세요?')">🔊</button></div>
+            <div class="rom-line">Ne, sseoyo. Kakao-tok aidiga eotteoke doeseyo?</div>
+            <div class="eng-line">Yes, I do. What's your KakaoTalk ID?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지우 Jiwoo</div>
+            <div class="kor-line">제 아이디는 jiwoo1234예요. 친구 추가해 주세요! <button class="hangul-sound-btn" onclick="speakKorean('제 아이디는 jiwoo1234예요. 친구 추가해 주세요!')">🔊</button></div>
+            <div class="rom-line">Je aidineun jiwoo1234-yeyo. Chingu chugahae juseyo!</div>
+            <div class="eng-line">My ID is jiwoo1234. Please add me as a friend!</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민준 Minjun</div>
+            <div class="kor-line">방금 추가했어요. 나중에 연락해요! <button class="hangul-sound-btn" onclick="speakKorean('방금 추가했어요. 나중에 연락해요!')">🔊</button></div>
+            <div class="rom-line">Banggeum chugahaesseoyo. Najunge yeollak-haeyo!</div>
+            <div class="eng-line">Just added you. Let's keep in touch!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         2. FRIENDS
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="friends">
+      <h2><span class="section-num">2</span> Friends (친구)</h2>
+      <p>Casual Korean between friends uses informal speech (반말). These dialogues show how Koreans catch up and make plans together.</p>
+
+      <!-- Dialogue 3 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #3 · How Are You?</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">야, 오랜만이야! 잘 지냈어? <button class="hangul-sound-btn" onclick="speakKorean('야, 오랜만이야! 잘 지냈어?')">🔊</button></div>
+            <div class="rom-line">Ya, oraenman-iya! Jal jinaesseo?</div>
+            <div class="eng-line">Hey, long time no see! Have you been well?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">응, 그냥 그랬어. 요즘 많이 바빴거든. 너는? <button class="hangul-sound-btn" onclick="speakKorean('응, 그냥 그랬어. 요즘 많이 바빴거든. 너는?')">🔊</button></div>
+            <div class="rom-line">Eung, geunyang geulaesseo. Yojeum mani bapasseogdeon. Neoneun?</div>
+            <div class="eng-line">Eh, so-so. I've been really busy lately. What about you?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">나도. 새 직장 다니기 시작했어. <button class="hangul-sound-btn" onclick="speakKorean('나도. 새 직장 다니기 시작했어.')">🔊</button></div>
+            <div class="rom-line">Nado. Sae jikjang danigi sijakaesseo.</div>
+            <div class="eng-line">Me too. I started a new job.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">어, 진짜? 어디? 어때? <button class="hangul-sound-btn" onclick="speakKorean('어, 진짜? 어디? 어때?')">🔊</button></div>
+            <div class="rom-line">Eo, jinjja? Eodi? Eottae?</div>
+            <div class="eng-line">Oh, really? Where? How is it?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">강남에 있는 IT 회사야. 힘들지만 재밌어. 나중에 밥 한번 먹자! <button class="hangul-sound-btn" onclick="speakKorean('강남에 있는 IT 회사야. 힘들지만 재밌어. 나중에 밥 한번 먹자!')">🔊</button></div>
+            <div class="rom-line">Gangnam-e inneun IT hoesaya. Himdeulji-man jaemisseo. Najunge bap hanbeon meokja!</div>
+            <div class="eng-line">It's an IT company in Gangnam. It's tough but fun. Let's grab food sometime!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 4 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #4 · Plans</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">이번 주말에 뭐 해? <button class="hangul-sound-btn" onclick="speakKorean('이번 주말에 뭐 해?')">🔊</button></div>
+            <div class="rom-line">Ibeon jumal-e mwo hae?</div>
+            <div class="eng-line">What are you doing this weekend?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">아직 계획 없어. 왜? <button class="hangul-sound-btn" onclick="speakKorean('아직 계획 없어. 왜?')">🔊</button></div>
+            <div class="rom-line">Ajik gyehoek eopseo. Wae?</div>
+            <div class="eng-line">No plans yet. Why?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">한강 공원에 같이 가지 않을래? 날씨 좋을 것 같아. <button class="hangul-sound-btn" onclick="speakKorean('한강 공원에 같이 가지 않을래? 날씨 좋을 것 같아.')">🔊</button></div>
+            <div class="rom-line">Han-gang gongwon-e gachi gaji anheullae? Nalssi jo-eul geot gata.</div>
+            <div class="eng-line">Want to go to Han River Park together? The weather looks like it'll be nice.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">좋아! 몇 시에 만날까? <button class="hangul-sound-btn" onclick="speakKorean('좋아! 몇 시에 만날까?')">🔊</button></div>
+            <div class="rom-line">Joa! Myeot si-e mannalka?</div>
+            <div class="eng-line">Sounds good! What time should we meet?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">오후 3시 어때? 여의도역에서 만나자. <button class="hangul-sound-btn" onclick="speakKorean('오후 3시 어때? 여의도역에서 만나자.')">🔊</button></div>
+            <div class="rom-line">Ohu sesi eottae? Yeouido-yeok-eseo mannaja.</div>
+            <div class="eng-line">How about 3 PM? Let's meet at Yeouido Station.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         3. INVITATIONS
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="invitations">
+      <h2><span class="section-num">3</span> Invitations (초대)</h2>
+      <p>Inviting someone to dinner or a wedding requires specific polite phrasing. Note how speech formality shifts between close friends and acquaintances.</p>
+
+      <!-- Dialogue 5 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #5 · Dinner Invitation</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민준 Minjun</div>
+            <div class="kor-line">이번 금요일에 저녁 같이 먹을래요? <button class="hangul-sound-btn" onclick="speakKorean('이번 금요일에 저녁 같이 먹을래요?')">🔊</button></div>
+            <div class="rom-line">Ibeon geum-yo-il-e jeonyeok gachi meogeullaeyo?</div>
+            <div class="eng-line">Would you like to have dinner together this Friday?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지우 Jiwoo</div>
+            <div class="kor-line">좋아요! 어디서요? <button class="hangul-sound-btn" onclick="speakKorean('좋아요! 어디서요?')">🔊</button></div>
+            <div class="rom-line">Joayo! Eodiseoyo?</div>
+            <div class="eng-line">Sounds good! Where?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민준 Minjun</div>
+            <div class="kor-line">강남역 근처에 맛있는 삼겹살집이 있어요. <button class="hangul-sound-btn" onclick="speakKorean('강남역 근처에 맛있는 삼겹살집이 있어요.')">🔊</button></div>
+            <div class="rom-line">Gangnam-yeok geuncheo-e massinneun samgyeopsal-jib-i isseoyo.</div>
+            <div class="eng-line">There's a great samgyeopsal place near Gangnam Station.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지우 Jiwoo</div>
+            <div class="kor-line">삼겹살 너무 좋아해요! 몇 시예요? <button class="hangul-sound-btn" onclick="speakKorean('삼겹살 너무 좋아해요! 몇 시예요?')">🔊</button></div>
+            <div class="rom-line">Samgyeopsal neomu joahaeyo! Myeot si-yeyo?</div>
+            <div class="eng-line">I love samgyeopsal! What time?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민준 Minjun</div>
+            <div class="kor-line">저녁 7시 괜찮아요? 제가 예약할게요. <button class="hangul-sound-btn" onclick="speakKorean('저녁 7시 괜찮아요? 제가 예약할게요.')">🔊</button></div>
+            <div class="rom-line">Jeonyeok il-gop-si gwaenchanayo? Jega yeyak-halgeyo.</div>
+            <div class="eng-line">Is 7 PM okay? I'll make the reservation.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 6 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #6 · Wedding Invitation</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">이거 청첩장이에요. 다음 달에 결혼해요! <button class="hangul-sound-btn" onclick="speakKorean('이거 청첩장이에요. 다음 달에 결혼해요!')">🔊</button></div>
+            <div class="rom-line">Igeo cheongheopjang-ieyo. Daeum dal-e gyeolhon-haeyo!</div>
+            <div class="eng-line">This is a wedding invitation. I'm getting married next month!</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14pm;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0" style="padding:10px 14px">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지우 Jiwoo</div>
+            <div class="kor-line">와, 정말요? 축하해요! 누구랑요? <button class="hangul-sound-btn" onclick="speakKorean('와, 정말요? 축하해요! 누구랑요?')">🔊</button></div>
+            <div class="rom-line">Wa, jeongmal-yo? Chukahaeyo! Nugu-rang-yo?</div>
+            <div class="eng-line">Wow, really? Congratulations! Who with?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">작년에 소개팅에서 만난 사람이에요. 꼭 와 주세요! <button class="hangul-sound-btn" onclick="speakKorean('작년에 소개팅에서 만난 사람이에요. 꼭 와 주세요!')">🔊</button></div>
+            <div class="rom-line">Jangnyeon-e sogaeting-eseo mannan saram-ieyo. Kkok wa juseyo!</div>
+            <div class="eng-line">It's someone I met at a blind date last year. Please definitely come!</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지우 Jiwoo</div>
+            <div class="kor-line">당연하죠! 식장이 어디예요? 선물은 뭐가 좋아요? <button class="hangul-sound-btn" onclick="speakKorean('당연하죠! 식장이 어디예요? 선물은 뭐가 좋아요?')">🔊</button></div>
+            <div class="rom-line">Dangyeon-hajyo! Sikjang-i eodieyo? Seonmul-eun mwoga joayo?</div>
+            <div class="eng-line">Of course! Where is the venue? What would be a good gift?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">강남 웨딩홀이에요, 오전 11시. 축의금만 있으면 충분해요! <button class="hangul-sound-btn" onclick="speakKorean('강남 웨딩홀이에요, 오전 11시. 축의금만 있으면 충분해요!')">🔊</button></div>
+            <div class="rom-line">Gangnam weding-hol-ieyo, ojeon yeolhansi. Chug-ui-geum-man isseumyeon chungbun-haeyo!</div>
+            <div class="eng-line">It's the Gangnam Wedding Hall, at 11 AM. Just a cash gift is plenty!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         4. FAMILY
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="family">
+      <h2><span class="section-num">4</span> Family (가족)</h2>
+      <p>Family interactions are central to Korean daily life. These dialogues reflect the natural, warm informality of home conversations.</p>
+
+      <!-- Dialogue 7 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #7 · Coming Home</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">아들 Son</div>
+            <div class="kor-line">다녀왔습니다! <button class="hangul-sound-btn" onclick="speakKorean('다녀왔습니다!')">🔊</button></div>
+            <div class="rom-line">Danyeowasseumnida!</div>
+            <div class="eng-line">I'm home! (lit. "I've been out and returned")</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">엄마 Mom</div>
+            <div class="kor-line">어서 와! 오늘 학교 어땠어? <button class="hangul-sound-btn" onclick="speakKorean('어서 와! 오늘 학교 어땠어?')">🔊</button></div>
+            <div class="rom-line">Eoseo wa! Oneul hakgyo eottaesseo?</div>
+            <div class="eng-line">Welcome back! How was school today?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">아들 Son</div>
+            <div class="kor-line">괜찮았어요. 근데 배고파요. 밥 있어요? <button class="hangul-sound-btn" onclick="speakKorean('괜찮았어요. 근데 배고파요. 밥 있어요?')">🔊</button></div>
+            <div class="rom-line">Gwaenchanasseoyo. Geunde baegopayo. Bap isseoyo?</div>
+            <div class="eng-line">It was fine. But I'm hungry. Is there food?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">엄마 Mom</div>
+            <div class="kor-line">응, 제육볶음 해 놨어. 먼저 씻고 나서 먹어. <button class="hangul-sound-btn" onclick="speakKorean('응, 제육볶음 해 놨어. 먼저 씻고 나서 먹어.')">🔊</button></div>
+            <div class="rom-line">Eung, jeyukbokkeum hae nwasseo. Meonjeo ssikgo naseo meogeo.</div>
+            <div class="eng-line">Yeah, I made spicy pork. Wash up first, then eat.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">아들 Son</div>
+            <div class="kor-line">네! 오늘 숙제 많아서 일찍 잘 것 같아요. <button class="hangul-sound-btn" onclick="speakKorean('네! 오늘 숙제 많아서 일찍 잘 것 같아요.')">🔊</button></div>
+            <div class="rom-line">Ne! Oneul sukje manaseo iljjik jal geot gatayo.</div>
+            <div class="eng-line">Okay! I have a lot of homework today, so I'll probably sleep early.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 8 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #8 · Waking Up</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">엄마 Mom</div>
+            <div class="kor-line">일어나! 학교 늦겠다! <button class="hangul-sound-btn" onclick="speakKorean('일어나! 학교 늦겠다!')">🔊</button></div>
+            <div class="rom-line">Ireona! Hakgyo neutgessdda!</div>
+            <div class="eng-line">Get up! You'll be late for school!</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">아들 Son</div>
+            <div class="kor-line">조금만 더요... 몇 시예요? <button class="hangul-sound-btn" onclick="speakKorean('조금만 더요... 몇 시예요?')">🔊</button></div>
+            <div class="rom-line">Jogeumman deoyo... Myeot si-yeyo?</div>
+            <div class="eng-line">Just a little more... What time is it?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">엄마 Mom</div>
+            <div class="kor-line">벌써 7시 반이야. 빨리 일어나서 씻어. <button class="hangul-sound-btn" onclick="speakKorean('벌써 7시 반이야. 빨리 일어나서 씻어.')">🔊</button></div>
+            <div class="rom-line">Beolsseo ilgop-si ban-iya. Ppalli ireonaseo ssiseo.</div>
+            <div class="eng-line">It's already 7:30. Get up quickly and wash.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">아들 Son</div>
+            <div class="kor-line">아, 진짜요? (일어나며) 밥은요? <button class="hangul-sound-btn" onclick="speakKorean('아, 진짜요? 밥은요?')">🔊</button></div>
+            <div class="rom-line">A, jinjjayo? (ireona-myeo) Babeunyo?</div>
+            <div class="eng-line">Oh, really? (getting up) What about breakfast?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">엄마 Mom</div>
+            <div class="kor-line">식탁에 있어. 빨리 먹고 나가. 오늘 저녁 늦어? <button class="hangul-sound-btn" onclick="speakKorean('식탁에 있어. 빨리 먹고 나가. 오늘 저녁 늦어?')">🔊</button></div>
+            <div class="rom-line">Siktak-e isseo. Ppalli meokgo naga. Oneul jeonyeok neujeoo?</div>
+            <div class="eng-line">It's on the dining table. Eat quickly and go. Will you be late tonight?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         5. SHOPPING
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="shopping">
+      <h2><span class="section-num">5</span> Shopping (쇼핑)</h2>
+      <p>Korean shopping culture spans traditional markets, department stores, and online apps. These 7 dialogues cover the most common retail situations.</p>
+
+      <!-- Dialogue 9 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #9 · Marketplace (전통시장)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">아저씨, 이 사과 얼마예요? <button class="hangul-sound-btn" onclick="speakKorean('아저씨, 이 사과 얼마예요?')">🔊</button></div>
+            <div class="rom-line">Ajeossi, i sagwa eolmaeyo?</div>
+            <div class="eng-line">Sir, how much are these apples?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">상인 Vendor</div>
+            <div class="kor-line">열 개에 오천 원이에요. <button class="hangul-sound-btn" onclick="speakKorean('열 개에 오천 원이에요.')">🔊</button></div>
+            <div class="rom-line">Yeol gae-e ocheon won-ieyo.</div>
+            <div class="eng-line">5,000 won for ten.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">좀 깎아 주시면 안 돼요? <button class="hangul-sound-btn" onclick="speakKorean('좀 깎아 주시면 안 돼요?')">🔊</button></div>
+            <div class="rom-line">Jom kkakka jushimyeon an dwaeyo?</div>
+            <div class="eng-line">Could you give me a little discount?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">상인 Vendor</div>
+            <div class="kor-line">에이, 이미 싸게 드리는 거예요. 그럼 열두 개에 오천 원! <button class="hangul-sound-btn" onclick="speakKorean('에이, 이미 싸게 드리는 거예요. 그럼 열두 개에 오천 원!')">🔊</button></div>
+            <div class="rom-line">Ei, imi ssage deulineun geoyeyo. Geureom yeoldu gae-e ocheon won!</div>
+            <div class="eng-line">Hey, I'm already giving it to you cheap. Okay, twelve for 5,000 won!</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">감사합니다! 딸기도 한 박스 주세요. <button class="hangul-sound-btn" onclick="speakKorean('감사합니다! 딸기도 한 박스 주세요.')">🔊</button></div>
+            <div class="rom-line">Gamsahamnida! Ttalgi-do han bakseu juseyo.</div>
+            <div class="eng-line">Thank you! And one box of strawberries too, please.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 10 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #10 · Clothing Store</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">이 재킷 입어 봐도 돼요? <button class="hangul-sound-btn" onclick="speakKorean('이 재킷 입어 봐도 돼요?')">🔊</button></div>
+            <div class="rom-line">I jaeket ibeo bwado dwaeyo?</div>
+            <div class="eng-line">May I try on this jacket?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">점원 Staff</div>
+            <div class="kor-line">물론이죠! 사이즈가 어떻게 되세요? <button class="hangul-sound-btn" onclick="speakKorean('물론이죠! 사이즈가 어떻게 되세요?')">🔊</button></div>
+            <div class="rom-line">Mullon-ijyo! Saijeu-ga eotteoke doeseyo?</div>
+            <div class="eng-line">Of course! What's your size?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">보통 M 사이즈예요. (after trying) 좀 커요. S 있어요? <button class="hangul-sound-btn" onclick="speakKorean('보통 M 사이즈예요. 좀 커요. S 있어요?')">🔊</button></div>
+            <div class="rom-line">Botong M saijeu-yeyo. Jom keoyo. S isseoyo?</div>
+            <div class="eng-line">Usually size M. (after trying) It's a bit big. Do you have S?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">점원 Staff</div>
+            <div class="kor-line">네, 잠깐만요. 다른 색깔도 보여 드릴까요? 검정이랑 흰색 있어요. <button class="hangul-sound-btn" onclick="speakKorean('네, 잠깐만요. 다른 색깔도 보여 드릴까요? 검정이랑 흰색 있어요.')">🔊</button></div>
+            <div class="rom-line">Ne, jamkkanman-yo. Dareun saekkaldo boyeo deurilkkayo? Geomjeong-irang hinsaek isseoyo.</div>
+            <div class="eng-line">Yes, one moment. Shall I show you other colors? We have black and white.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 11 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #11 · Shoe Store</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">이 운동화 신어 봐도 돼요? 발 사이즈는 265예요. <button class="hangul-sound-btn" onclick="speakKorean('이 운동화 신어 봐도 돼요? 발 사이즈는 265예요.')">🔊</button></div>
+            <div class="rom-line">I undonghwa sineo bwado dwaeyo? Bal saijeu-neun i-baek-yukship-o-yeyo.</div>
+            <div class="eng-line">May I try these sneakers? My foot size is 265.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">점원 Staff</div>
+            <div class="kor-line">잠깐만요... 여기 있어요. 신어 보세요. <button class="hangul-sound-btn" onclick="speakKorean('잠깐만요... 여기 있어요. 신어 보세요.')">🔊</button></div>
+            <div class="rom-line">Jamkkanman-yo... Yeogi isseoyo. Sineo boseyo.</div>
+            <div class="eng-line">One moment... Here you go. Please try them on.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">발볼이 좀 불편해요. 더 넓은 거 있어요? <button class="hangul-sound-btn" onclick="speakKorean('발볼이 좀 불편해요. 더 넓은 거 있어요?')">🔊</button></div>
+            <div class="rom-line">Balbori jom bulpyeon-haeyo. Deo neolbeun geo isseoyo?</div>
+            <div class="eng-line">The toe box is a bit uncomfortable. Do you have a wider option?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">점원 Staff</div>
+            <div class="kor-line">같은 디자인으로 와이드 버전이 있어요. 가져다 드릴게요. <button class="hangul-sound-btn" onclick="speakKorean('같은 디자인으로 와이드 버전이 있어요. 가져다 드릴게요.')">🔊</button></div>
+            <div class="rom-line">Gateun dijain-euro waideu beojeon-i isseoyo. Gajyeoda deurilgeyo.</div>
+            <div class="eng-line">We have a wide version of the same design. I'll bring it for you.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 12 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #12 · Electronics Store</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">핸드폰 바꾸려는데요, 추천해 주실 수 있어요? 예산은 100만 원 정도예요. <button class="hangul-sound-btn" onclick="speakKorean('핸드폰 바꾸려는데요, 추천해 주실 수 있어요? 예산은 100만 원 정도예요.')">🔊</button></div>
+            <div class="rom-line">Haendeupon bakkeuryeoneundeyo, chucheon-hae jusil su isseoyo? Yesan-eun baengman won jeongdo-yeyo.</div>
+            <div class="eng-line">I'd like to change my phone. Can you recommend one? My budget is around 1,000,000 won.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">점원 Staff</div>
+            <div class="kor-line">그럼 갤럭시 S25 어떠세요? 카메라가 정말 좋고 배터리도 오래가요. <button class="hangul-sound-btn" onclick="speakKorean('그럼 갤럭시 S25 어떠세요? 카메라가 정말 좋고 배터리도 오래가요.')">🔊</button></div>
+            <div class="rom-line">Geureom Galaxy S25 eotteoseyo? Kamera-ga jeongmal joko baeteori-do orae-gayo.</div>
+            <div class="eng-line">How about the Galaxy S25? The camera is great and the battery lasts long.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">할부 가능해요? <button class="hangul-sound-btn" onclick="speakKorean('할부 가능해요?')">🔊</button></div>
+            <div class="rom-line">Halbu ganeung-haeyo?</div>
+            <div class="eng-line">Is installment payment available?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">점원 Staff</div>
+            <div class="kor-line">네, 24개월 무이자 할부 가능해요. <button class="hangul-sound-btn" onclick="speakKorean('네, 24개월 무이자 할부 가능해요.')">🔊</button></div>
+            <div class="rom-line">Ne, seumsa gaewol mu-ija halbu ganeung-haeyo.</div>
+            <div class="eng-line">Yes, 24-month interest-free installment is available.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 13 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #13 · Furniture Store</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">책상 찾고 있는데요. 심플하고 서랍 있는 걸로요. <button class="hangul-sound-btn" onclick="speakKorean('책상 찾고 있는데요. 심플하고 서랍 있는 걸로요.')">🔊</button></div>
+            <div class="rom-line">Chaeksang chatgo inneundeyo. Simpeul-hago seorap inneun geollo-yo.</div>
+            <div class="eng-line">I'm looking for a desk. Something simple with drawers.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">점원 Staff</div>
+            <div class="kor-line">요즘 이 스타일이 인기예요. 배송도 무료예요. <button class="hangul-sound-btn" onclick="speakKorean('요즘 이 스타일이 인기예요. 배송도 무료예요.')">🔊</button></div>
+            <div class="rom-line">Yojeum i seutail-i inggi-yeyo. Baesong-do muryo-yeyo.</div>
+            <div class="eng-line">This style is popular lately. Delivery is also free.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">조립도 돼요? 저 혼자 못 할 것 같아서요. <button class="hangul-sound-btn" onclick="speakKorean('조립도 돼요? 저 혼자 못 할 것 같아서요.')">🔊</button></div>
+            <div class="rom-line">Jorip-do dwaeyo? Jeo honja mot hal geot gatasseoyo.</div>
+            <div class="eng-line">Is assembly available too? I don't think I can do it alone.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">점원 Staff</div>
+            <div class="kor-line">네, 조립 서비스는 3만 원 추가예요. <button class="hangul-sound-btn" onclick="speakKorean('네, 조립 서비스는 3만 원 추가예요.')">🔊</button></div>
+            <div class="rom-line">Ne, jorip seobiseu-neun samman won chuga-yeyo.</div>
+            <div class="eng-line">Yes, the assembly service is an extra 30,000 won.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 14 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #14 · Cosmetics Store</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">지성 피부에 맞는 선크림 찾고 있어요. <button class="hangul-sound-btn" onclick="speakKorean('지성 피부에 맞는 선크림 찾고 있어요.')">🔊</button></div>
+            <div class="rom-line">Jiseong pibu-e manneun seonkeurim chatgo isseoyo.</div>
+            <div class="eng-line">I'm looking for a sunscreen suited for oily skin.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Staff</div>
+            <div class="kor-line">이게 요즘 잘 나가요. 기름기 없이 산뜻해요. 테스터 써 보실래요? <button class="hangul-sound-btn" onclick="speakKorean('이게 요즘 잘 나가요. 기름기 없이 산뜻해요. 테스터 써 보실래요?')">🔊</button></div>
+            <div class="rom-line">Ige yojeum jal nagayo. Gireum-gi eopsi sandeutaheyo. Teseuteo sseo bosillaeyo?</div>
+            <div class="eng-line">This one is selling well lately. It's light without greasiness. Would you like to try the tester?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">좋네요! 얼마예요? <button class="hangul-sound-btn" onclick="speakKorean('좋네요! 얼마예요?')">🔊</button></div>
+            <div class="rom-line">Jonneyo! Eolmaeyo?</div>
+            <div class="eng-line">It's nice! How much is it?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Staff</div>
+            <div class="kor-line">3만 원이에요. 지금 하나 사시면 하나 더 드려요! <button class="hangul-sound-btn" onclick="speakKorean('3만 원이에요. 지금 하나 사시면 하나 더 드려요!')">🔊</button></div>
+            <div class="rom-line">Samman won-ieyo. Jigeum hana ashi-myeon hana deo deuryeoyo!</div>
+            <div class="eng-line">It's 30,000 won. Buy one now and we'll give you another one free!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 15 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #15 · Bookstore</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">혹시 외국인용 한국어 문법 책 있어요? <button class="hangul-sound-btn" onclick="speakKorean('혹시 외국인용 한국어 문법 책 있어요?')">🔊</button></div>
+            <div class="rom-line">Hoksi oeguginyong hangugeo munbeop chaek isseoyo?</div>
+            <div class="eng-line">Do you by any chance have Korean grammar books for foreigners?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Staff</div>
+            <div class="kor-line">네, 외국어 학습 코너가 2층에 있어요. <button class="hangul-sound-btn" onclick="speakKorean('네, 외국어 학습 코너가 2층에 있어요.')">🔊</button></div>
+            <div class="rom-line">Ne, oegungo haksseup koneo-ga ichung-e isseoyo.</div>
+            <div class="eng-line">Yes, the foreign language learning section is on the 2nd floor.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">감사해요. 그리고 이 소설 최신판 재고 있어요? <button class="hangul-sound-btn" onclick="speakKorean('감사해요. 그리고 이 소설 최신판 재고 있어요?')">🔊</button></div>
+            <div class="rom-line">Gamsahaeyo. Geurigo i soseol choesinpan jaego isseoyo?</div>
+            <div class="eng-line">Thanks. Also, do you have stock of the latest edition of this novel?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Staff</div>
+            <div class="kor-line">죄송하지만 지금은 품절이에요. 주문하시면 3~5일 걸려요. <button class="hangul-sound-btn" onclick="speakKorean('죄송하지만 지금은 품절이에요. 주문하시면 3~5일 걸려요.')">🔊</button></div>
+            <div class="rom-line">Joesonghajiman jigeum-eun pumjeol-ieyo. Jumun-hashimyeon sam-o-il geollyeoyo.</div>
+            <div class="eng-line">I'm sorry, it's sold out right now. If you order it, it'll take 3–5 days.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         6. ON A DATE
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="date">
+      <h2><span class="section-num">6</span> On a Date (데이트)</h2>
+      <p>Korean dating culture has its own rich vocabulary — from the blind date (소개팅) to confessing feelings (고백). These dialogues cover the full arc.</p>
+
+      <!-- Dialogue 16 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #16 · Blind Date (소개팅)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">안녕하세요! 저는 이준혁이에요. 많이 기다리셨어요? <button class="hangul-sound-btn" onclick="speakKorean('안녕하세요! 저는 이준혁이에요. 많이 기다리셨어요?')">🔊</button></div>
+            <div class="rom-line">Annyeonghaseyo! Jeoneun Lee Junhyuk-ieyo. Mani gidarisyeosseoyo?</div>
+            <div class="eng-line">Hello! I'm Lee Junhyuk. Did I keep you waiting long?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">아니에요! 저도 방금 왔어요. 저는 최수아예요. <button class="hangul-sound-btn" onclick="speakKorean('아니에요! 저도 방금 왔어요. 저는 최수아예요.')">🔊</button></div>
+            <div class="rom-line">Anieyo! Jeodo banggeum wasseoyo. Jeoneun Choi Sua-yeyo.</div>
+            <div class="eng-line">Not at all! I just got here too. I'm Choi Sua.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">여기 분위기 좋네요. 뭐 마실 거예요? <button class="hangul-sound-btn" onclick="speakKorean('여기 분위기 좋네요. 뭐 마실 거예요?')">🔊</button></div>
+            <div class="rom-line">Yeogi bunwigi jonneyo. Mwo masil geoyeyo?</div>
+            <div class="eng-line">The atmosphere here is nice. What will you have to drink?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">아이스 아메리카노요. 그런데 직업이 어떻게 되세요? <button class="hangul-sound-btn" onclick="speakKorean('아이스 아메리카노요. 그런데 직업이 어떻게 되세요?')">🔊</button></div>
+            <div class="rom-line">Aiseu Americano-yo. Geureonde jigeop-i eotteoke doeseyo?</div>
+            <div class="eng-line">Iced Americano for me. By the way, what do you do for work?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">디자이너예요. 수아 씨는요? <button class="hangul-sound-btn" onclick="speakKorean('디자이너예요. 수아 씨는요?')">🔊</button></div>
+            <div class="rom-line">Dijaineoye-yo. Sua ssi-neun-yo?</div>
+            <div class="eng-line">I'm a designer. What about you, Sua?</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 17 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #17 · Movie Date</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">무슨 영화 볼까요? <button class="hangul-sound-btn" onclick="speakKorean('무슨 영화 볼까요?')">🔊</button></div>
+            <div class="rom-line">Museun yeonghwa bolkkayo?</div>
+            <div class="eng-line">Which movie shall we watch?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">이 로맨스 영화 어때요? 평점이 높던데요. <button class="hangul-sound-btn" onclick="speakKorean('이 로맨스 영화 어때요? 평점이 높던데요.')">🔊</button></div>
+            <div class="rom-line">I romaenseu yeonghwa eottaeyo? Pyeongjeom-i nopdeonde-yo.</div>
+            <div class="eng-line">How about this romance film? I heard the ratings are high.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">좋아요! 팝콘도 사요? <button class="hangul-sound-btn" onclick="speakKorean('좋아요! 팝콘도 사요?')">🔊</button></div>
+            <div class="rom-line">Joayo! Papkon-do sayo?</div>
+            <div class="eng-line">Sounds good! Shall we get popcorn too?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">당연하죠! 버터 팝콘이랑 콜라 주세요. 제가 살게요. <button class="hangul-sound-btn" onclick="speakKorean('당연하죠! 버터 팝콘이랑 콜라 주세요. 제가 살게요.')">🔊</button></div>
+            <div class="rom-line">Dangyeon-hajyo! Beoteo papkon-irang kolla juseyo. Jega salgeyo.</div>
+            <div class="eng-line">Of course! Butter popcorn and cola, please. I'll pay.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 18 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #18 · Park</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">벚꽃이 이렇게 예쁠 줄 몰랐어요. 자주 와요? <button class="hangul-sound-btn" onclick="speakKorean('벚꽃이 이렇게 예쁠 줄 몰랐어요. 자주 와요?')">🔊</button></div>
+            <div class="rom-line">Beotkkochi ireoke yeppul jul mollasseoyo. Jaju wayo?</div>
+            <div class="eng-line">I didn't know the cherry blossoms would be this beautiful. Do you come here often?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">봄마다 와요. 산책할 때 스트레스가 풀려요. 준혁 씨도 산책 좋아해요? <button class="hangul-sound-btn" onclick="speakKorean('봄마다 와요. 산책할 때 스트레스가 풀려요. 준혁 씨도 산책 좋아해요?')">🔊</button></div>
+            <div class="rom-line">Bommada wayo. Sanchaekhal ttae seuteureseu-ga pullyeoyo. Junhyuk ssi-do sanchaek joahaeyo?</div>
+            <div class="eng-line">I come every spring. Walking relieves my stress. Do you like walking too, Junhyuk?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">네, 특히 한강에서요. 다음에 한강 피크닉 같이 해요! <button class="hangul-sound-btn" onclick="speakKorean('네, 특히 한강에서요. 다음에 한강 피크닉 같이 해요!')">🔊</button></div>
+            <div class="rom-line">Ne, teugi Han-gang-eseoyo. Daeume Han-gang pikeunik gachi haeyo!</div>
+            <div class="eng-line">Yes, especially along the Han River. Let's do a Han River picnic together next time!</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">기대돼요! <button class="hangul-sound-btn" onclick="speakKorean('기대돼요!')">🔊</button></div>
+            <div class="rom-line">Gidae-dwaeyo!</div>
+            <div class="eng-line">I'm looking forward to it!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 19 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #19 · Confessing (고백)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">수아 씨, 사실 드릴 말씀이 있어요. <button class="hangul-sound-btn" onclick="speakKorean('수아 씨, 사실 드릴 말씀이 있어요.')">🔊</button></div>
+            <div class="rom-line">Sua ssi, sasil deuril malsseum-i isseoyo.</div>
+            <div class="eng-line">Sua, there's actually something I'd like to tell you.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">뭔데요? 표정이 왜 그래요? <button class="hangul-sound-btn" onclick="speakKorean('뭔데요? 표정이 왜 그래요?')">🔊</button></div>
+            <div class="rom-line">Mwondeyo? Pyojeong-i wae geulaeyo?</div>
+            <div class="eng-line">What is it? Why do you have that expression?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">처음 만난 날부터 좋았어요. 저랑 사귀어 주실래요? <button class="hangul-sound-btn" onclick="speakKorean('처음 만난 날부터 좋았어요. 저랑 사귀어 주실래요?')">🔊</button></div>
+            <div class="rom-line">Cheoeum mannan nalbuto joasseoyo. Jeong-ang sagwieeo jushillaeyo?</div>
+            <div class="eng-line">I've liked you since the day we first met. Will you go out with me?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수아 Sua</div>
+            <div class="kor-line">저도... 준혁 씨 좋아했어요. 좋아요! <button class="hangul-sound-btn" onclick="speakKorean('저도... 준혁 씨 좋아했어요. 좋아요!')">🔊</button></div>
+            <div class="rom-line">Jeodo... Junhyuk ssi joahaesseoyo. Joayo!</div>
+            <div class="eng-line">I... liked you too, Junhyuk. Yes!</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">준혁 Junhyuk</div>
+            <div class="kor-line">진짜요? 너무 기뻐요! 앞으로 잘 부탁드려요. <button class="hangul-sound-btn" onclick="speakKorean('진짜요? 너무 기뻐요! 앞으로 잘 부탁드려요.')">🔊</button></div>
+            <div class="rom-line">Jinjjayo? Neomu gippeoyo! Ap-euro jal butakdeuryeoyo.</div>
+            <div class="eng-line">Really? I'm so happy! I look forward to being with you.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 20 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #20 · Rejection (거절)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민수 Minsu</div>
+            <div class="kor-line">지은 씨, 사실 좋아해요. 사귀어 줄 수 있어요? <button class="hangul-sound-btn" onclick="speakKorean('지은 씨, 사실 좋아해요. 사귀어 줄 수 있어요?')">🔊</button></div>
+            <div class="rom-line">Jieun ssi, sasil joahaeyo. Saguieo jul su isseoyo?</div>
+            <div class="eng-line">Jieun, I actually like you. Would you go out with me?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지은 Jieun</div>
+            <div class="kor-line">고마워요. 근데 저는 지금 연애할 생각이 없어요. 죄송해요. <button class="hangul-sound-btn" onclick="speakKorean('고마워요. 근데 저는 지금 연애할 생각이 없어요. 죄송해요.')">🔊</button></div>
+            <div class="rom-line">Gomaweoyo. Geunde jeoneun jigeum yeonaehul saenggak-i eopseoyo. Joesonghaeyo.</div>
+            <div class="eng-line">Thank you. But I'm not thinking about dating right now. I'm sorry.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">민수 Minsu</div>
+            <div class="kor-line">괜찮아요. 솔직하게 말해 줘서 고마워요. 그래도 친구로 지낼 수 있죠? <button class="hangul-sound-btn" onclick="speakKorean('괜찮아요. 솔직하게 말해 줘서 고마워요. 그래도 친구로 지낼 수 있죠?')">🔊</button></div>
+            <div class="rom-line">Gwaenchanayo. Soljik-age malhae jwoseo gomaweoyo. Geuraedo chingu-ro jinaelsu itjyo?</div>
+            <div class="eng-line">It's okay. Thank you for being honest. We can still be friends, right?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지은 Jieun</div>
+            <div class="kor-line">물론이죠. 불편하지 않다면요. <button class="hangul-sound-btn" onclick="speakKorean('물론이죠. 불편하지 않다면요.')">🔊</button></div>
+            <div class="rom-line">Mullon-ijyo. Bulpyeonhaji anhdamyeon-yo.</div>
+            <div class="eng-line">Of course. As long as it's not uncomfortable for you.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         7. AT WORK
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="work">
+      <h2><span class="section-num">7</span> At Work (직장에서)</h2>
+      <p>Korean workplace culture is formal and hierarchical. These dialogues reflect real office conversations — from meetings to job interviews to the all-important company dinner (회식).</p>
+
+      <!-- Dialogue 21 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #21 · Overtime Work (야근)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">팀장 Team Lead</div>
+            <div class="kor-line">오늘도 야근이에요? <button class="hangul-sound-btn" onclick="speakKorean('오늘도 야근이에요?')">🔊</button></div>
+            <div class="rom-line">Oneuldo yakeun-ieyo?</div>
+            <div class="eng-line">Are you working overtime again today?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Employee</div>
+            <div class="kor-line">네, 내일 발표가 있어서요. 팀장님, 이 자료 검토 좀 해 주시겠어요? <button class="hangul-sound-btn" onclick="speakKorean('네, 내일 발표가 있어서요. 팀장님, 이 자료 검토 좀 해 주시겠어요?')">🔊</button></div>
+            <div class="rom-line">Ne, naeil balpyo-ga isseoseoyo. Timjang-nim, i jaryo geomto jom hae jushigeseoyo?</div>
+            <div class="eng-line">Yes, I have a presentation tomorrow. Team lead, could you review these materials?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">팀장 Team Lead</div>
+            <div class="kor-line">잠깐 봐줄게. (reviews) 3페이지에 오타 있어. 수정해. <button class="hangul-sound-btn" onclick="speakKorean('잠깐 봐줄게. 3페이지에 오타 있어. 수정해.')">🔊</button></div>
+            <div class="rom-line">Jamkkan bwajulge. Sampeyiji-e ota isseo. Sujeong-hae.</div>
+            <div class="eng-line">Let me take a quick look. (reviews) There's a typo on page 3. Fix it.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Employee</div>
+            <div class="kor-line">감사합니다! 내일 발표 너무 걱정돼요. <button class="hangul-sound-btn" onclick="speakKorean('감사합니다! 내일 발표 너무 걱정돼요.')">🔊</button></div>
+            <div class="rom-line">Gamsahamnida! Naeil balpyo neomu geokjeong-dwaeyo.</div>
+            <div class="eng-line">Thank you! I'm really worried about tomorrow's presentation.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">팀장 Team Lead</div>
+            <div class="kor-line">잘 할 수 있어. 준비 많이 했잖아. 파이팅! <button class="hangul-sound-btn" onclick="speakKorean('잘 할 수 있어. 준비 많이 했잖아. 파이팅!')">🔊</button></div>
+            <div class="rom-line">Jal hal su isseo. Junbi mani haetjanha. Paiting!</div>
+            <div class="eng-line">You can do it. You've prepared a lot. Fighting!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 22 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #22 · Meeting (회의)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">부장 Manager</div>
+            <div class="kor-line">자, 회의 시작하겠습니다. 지난주 매출 결과 발표해 주세요. <button class="hangul-sound-btn" onclick="speakKorean('자, 회의 시작하겠습니다. 지난주 매출 결과 발표해 주세요.')">🔊</button></div>
+            <div class="rom-line">Ja, hoeui sijakaghesseumnida. Jinanju maeul gyeolgwa balpyo-hae juseyo.</div>
+            <div class="eng-line">Alright, let's start the meeting. Please present last week's sales results.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Employee</div>
+            <div class="kor-line">네. 지난주 매출이 전주 대비 15% 증가했습니다. <button class="hangul-sound-btn" onclick="speakKorean('네. 지난주 매출이 전주 대비 15% 증가했습니다.')">🔊</button></div>
+            <div class="rom-line">Ne. Jinanju maeul-i jeonju daebi sibo-peurosento jeunggahaessseumnida.</div>
+            <div class="eng-line">Yes. Last week's sales increased by 15% compared to the previous week.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">부장 Manager</div>
+            <div class="kor-line">잘 됐네요. 이번 달 목표는 어떻게 잡을 건가요? <button class="hangul-sound-btn" onclick="speakKorean('잘 됐네요. 이번 달 목표는 어떻게 잡을 건가요?')">🔊</button></div>
+            <div class="rom-line">Jal dwaenneyo. Ibeon dal mokpyo-neun eotteoke jabeul geongayo?</div>
+            <div class="eng-line">Well done. What target are we setting for this month?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Employee</div>
+            <div class="kor-line">20% 성장을 목표로 하겠습니다. 진행 상황은 매주 보고 드리겠습니다. <button class="hangul-sound-btn" onclick="speakKorean('20% 성장을 목표로 하겠습니다. 진행 상황은 매주 보고 드리겠습니다.')">🔊</button></div>
+            <div class="rom-line">Isipiro seongjang-eul mokpyo-ro haghessseumnida. Jinhaeng sanghwang-eun maeju bogo deurigessseumnida.</div>
+            <div class="eng-line">We'll target 20% growth. I'll report the progress every week.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 23 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #23 · Work Schedule</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">선배 Senior</div>
+            <div class="kor-line">이번 주 일정이 어떻게 돼요? <button class="hangul-sound-btn" onclick="speakKorean('이번 주 일정이 어떻게 돼요?')">🔊</button></div>
+            <div class="rom-line">Ibeon ju iljeong-i eotteoke dwaeyo?</div>
+            <div class="eng-line">What does your schedule look like this week?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">후배 Junior</div>
+            <div class="kor-line">월요일엔 팀 미팅, 수요일엔 외부 미팅이 있어요. 오후는 비교적 여유 있어요. <button class="hangul-sound-btn" onclick="speakKorean('월요일엔 팀 미팅, 수요일엔 외부 미팅이 있어요. 오후는 비교적 여유 있어요.')">🔊</button></div>
+            <div class="rom-line">Woryoil-en tim miting, suyoil-en oebu miting-i isseoyo. Ohu-neun bigyojeok yeoyu isseoyo.</div>
+            <div class="eng-line">Monday I have a team meeting, Wednesday an external meeting. Afternoons are relatively free.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">선배 Senior</div>
+            <div class="kor-line">화요일 오전에 자료 검토 같이 하면 어때요? 10시요. <button class="hangul-sound-btn" onclick="speakKorean('화요일 오전에 자료 검토 같이 하면 어때요? 10시요.')">🔊</button></div>
+            <div class="rom-line">Hwayoil ojeon-e jaryo geomto gachi hamyeon eottaeyo? Yeolsi-yo.</div>
+            <div class="eng-line">How about reviewing the documents together on Tuesday morning? At 10?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">후배 Junior</div>
+            <div class="kor-line">네, 괜찮아요. 알겠습니다. <button class="hangul-sound-btn" onclick="speakKorean('네, 괜찮아요. 알겠습니다.')">🔊</button></div>
+            <div class="rom-line">Ne, gwaenchanayo. Algesseumnida.</div>
+            <div class="eng-line">Yes, that works. Understood.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 24 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #24 · Getting a Job (취업 면접)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">면접관 Interviewer</div>
+            <div class="kor-line">자기소개 해 주시겠어요? <button class="hangul-sound-btn" onclick="speakKorean('자기소개 해 주시겠어요?')">🔊</button></div>
+            <div class="rom-line">Jagisogae hae jushigeseoyo?</div>
+            <div class="eng-line">Could you introduce yourself?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지원자 Applicant</div>
+            <div class="kor-line">네. 저는 김민준이라고 합니다. 마케팅 분야에서 3년 경력이 있습니다. <button class="hangul-sound-btn" onclick="speakKorean('네. 저는 김민준이라고 합니다. 마케팅 분야에서 3년 경력이 있습니다.')">🔊</button></div>
+            <div class="rom-line">Ne. Jeoneun Kim Minjun-irago hamnida. Maketing bunya-eseo samnyeon gyeongnyeok-i isseumnida.</div>
+            <div class="eng-line">Yes. My name is Kim Minjun. I have 3 years of experience in marketing.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">면접관 Interviewer</div>
+            <div class="kor-line">왜 저희 회사에 지원하셨어요? <button class="hangul-sound-btn" onclick="speakKorean('왜 저희 회사에 지원하셨어요?')">🔊</button></div>
+            <div class="rom-line">Wae jeohi hoesa-e jiwon-hasheosseoyo?</div>
+            <div class="eng-line">Why did you apply to our company?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지원자 Applicant</div>
+            <div class="kor-line">귀사의 혁신적인 문화와 글로벌 프로젝트에 기여하고 싶었습니다. <button class="hangul-sound-btn" onclick="speakKorean('귀사의 혁신적인 문화와 글로벌 프로젝트에 기여하고 싶었습니다.')">🔊</button></div>
+            <div class="rom-line">Gwisa-ui hyeoksinjeogin munhwa-wa geullobeol peurojeoteu-e giyeo-hago sipeossseumnida.</div>
+            <div class="eng-line">I wanted to contribute to your company's innovative culture and global projects.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">면접관 Interviewer</div>
+            <div class="kor-line">마지막으로 궁금한 것 있으세요? <button class="hangul-sound-btn" onclick="speakKorean('마지막으로 궁금한 것 있으세요?')">🔊</button></div>
+            <div class="rom-line">Majimageuro gunggeumhan geot isseuseoyo?</div>
+            <div class="eng-line">Finally, do you have any questions?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지원자 Applicant</div>
+            <div class="kor-line">입사 후 교육 과정이 어떻게 되는지 여쭤봐도 될까요? <button class="hangul-sound-btn" onclick="speakKorean('입사 후 교육 과정이 어떻게 되는지 여쭤봐도 될까요?')">🔊</button></div>
+            <div class="rom-line">Ibsa hu gyoyuk gwajeong-i eotteoke doeneun-ji yeojwobwado doelkkayo?</div>
+            <div class="eng-line">May I ask what the training program looks like after joining?</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 25 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #25 · Company Dinner (회식)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">부장 Manager</div>
+            <div class="kor-line">오늘 수고 많았어요. 다 같이 회식해요! <button class="hangul-sound-btn" onclick="speakKorean('오늘 수고 많았어요. 다 같이 회식해요!')">🔊</button></div>
+            <div class="rom-line">Oneul sugo manasseoyo. Da gachi hoesinghaeyo!</div>
+            <div class="eng-line">Great work today everyone. Let's all go out for team dinner!</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Employee</div>
+            <div class="kor-line">좋아요! 어디로 가요? <button class="hangul-sound-btn" onclick="speakKorean('좋아요! 어디로 가요?')">🔊</button></div>
+            <div class="rom-line">Joayo! Eodiro gayo?</div>
+            <div class="eng-line">Sounds good! Where are we going?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">부장 Manager</div>
+            <div class="kor-line">근처 삼겹살집 어때요? 제가 쏠게요! <button class="hangul-sound-btn" onclick="speakKorean('근처 삼겹살집 어때요? 제가 쏠게요!')">🔊</button></div>
+            <div class="rom-line">Geuncheo samgyeopsal-jib eottaeyo? Jega ssolgeyo!</div>
+            <div class="eng-line">How about the samgyeopsal place nearby? My treat!</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원들 All</div>
+            <div class="kor-line">감사합니다! 건배! <button class="hangul-sound-btn" onclick="speakKorean('감사합니다! 건배!')">🔊</button></div>
+            <div class="rom-line">Gamsahamnida! Geonbae!</div>
+            <div class="eng-line">Thank you! Cheers!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         8. SCHOOL
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="school">
+      <h2><span class="section-num">8</span> School (학교)</h2>
+      <p>Academic Korean involves specific polite forms when speaking to teachers and the informal speech used between classmates.</p>
+
+      <!-- Dialogue 26 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #26 · Class</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">학생 Student</div>
+            <div class="kor-line">선생님, 이 문법 다시 설명해 주시겠어요? 헷갈려요. <button class="hangul-sound-btn" onclick="speakKorean('선생님, 이 문법 다시 설명해 주시겠어요? 헷갈려요.')">🔊</button></div>
+            <div class="rom-line">Seonsaengnim, i munbeop dasi seolmyeong-hae jushigeseoyo? Hetgallyeoyo.</div>
+            <div class="eng-line">Teacher, could you explain this grammar again? I'm confused.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">선생님 Teacher</div>
+            <div class="kor-line">물론이죠. 어떤 부분이 어려워요? <button class="hangul-sound-btn" onclick="speakKorean('물론이죠. 어떤 부분이 어려워요?')">🔊</button></div>
+            <div class="rom-line">Mullon-ijyo. Eotteon bupun-i eoryeowo-yo?</div>
+            <div class="eng-line">Of course. Which part is difficult?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">학생 Student</div>
+            <div class="kor-line">-아/어서 랑 -(으)니까 차이가 헷갈려요. <button class="hangul-sound-btn" onclick="speakKorean('-아/어서 랑 -으니까 차이가 헷갈려요.')">🔊</button></div>
+            <div class="rom-line">-a/eoseo-rang -(eu)nikka chai-ga hetgallyeoyo.</div>
+            <div class="eng-line">I'm confused about the difference between -아/어서 and -(으)니까.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">선생님 Teacher</div>
+            <div class="kor-line">좋은 질문이에요. -아/어서는 순서나 객관적 이유, -(으)니까는 더 주관적인 이유에 써요. <button class="hangul-sound-btn" onclick="speakKorean('좋은 질문이에요. -아/어서는 순서나 객관적 이유, -(으)니까는 더 주관적인 이유에 써요.')">🔊</button></div>
+            <div class="rom-line">Joeun jilmun-ieyo. -a/eoseo-neun sunseo-na gaekgwanjeok iyu, -(eu)nikka-neun deo jukgwanjeok-in iyu-e sseoyo.</div>
+            <div class="eng-line">Great question. -아/어서 is for sequence or objective reasons; -(으)니까 is for more subjective reasons.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">학생 Student</div>
+            <div class="kor-line">아, 이제 이해했어요! 감사합니다. <button class="hangul-sound-btn" onclick="speakKorean('아, 이제 이해했어요! 감사합니다.')">🔊</button></div>
+            <div class="rom-line">A, ije ihahaesseoyo! Gamsahamnida.</div>
+            <div class="eng-line">Ah, I understand now! Thank you.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 27 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #27 · Exam (시험)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">어제 시험 어땠어? <button class="hangul-sound-btn" onclick="speakKorean('어제 시험 어땠어?')">🔊</button></div>
+            <div class="rom-line">Eoje siheom eottaesseo?</div>
+            <div class="eng-line">How was yesterday's exam?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">너무 어려웠어. 마지막 문제 못 풀었어. 너는? <button class="hangul-sound-btn" onclick="speakKorean('너무 어려웠어. 마지막 문제 못 풀었어. 너는?')">🔊</button></div>
+            <div class="rom-line">Neomu eoryeowosseo. Majimak munje mot pureosseo. Neoneun?</div>
+            <div class="eng-line">It was so hard. I couldn't solve the last problem. What about you?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">나도. 열심히 했는데 막상 시험장에서 긴장했어. <button class="hangul-sound-btn" onclick="speakKorean('나도. 열심히 했는데 막상 시험장에서 긴장했어.')">🔊</button></div>
+            <div class="rom-line">Nado. Yeolsimhi haessneunde mak-sang siheomjang-eseo ginjang-haesseo.</div>
+            <div class="eng-line">Me too. I studied hard, but I got nervous at the actual test site.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">점수 언제 나와? 기다리는 게 더 힘들다. <button class="hangul-sound-btn" onclick="speakKorean('점수 언제 나와? 기다리는 게 더 힘들다.')">🔊</button></div>
+            <div class="rom-line">Jeomsu eonje nawa? Gidarineun ge deo himdulda.</div>
+            <div class="eng-line">When do the results come out? Waiting is even harder.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">다음 주 금요일이래. 그냥 잊어버리고 주말 즐기자. <button class="hangul-sound-btn" onclick="speakKorean('다음 주 금요일이래. 그냥 잊어버리고 주말 즐기자.')">🔊</button></div>
+            <div class="rom-line">Daeum ju geumyo-il-irae. Geunyang ijeo-beorigo jumal jeulgija.</div>
+            <div class="eng-line">I heard next Friday. Let's just forget about it and enjoy the weekend.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         9. FOOD
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="food">
+      <h2><span class="section-num">9</span> Food (음식)</h2>
+      <p>Eating is a social ritual in Korea. From ordering in a restaurant to cooking with friends and calling in a delivery, these dialogues cover every food situation.</p>
+
+      <!-- Dialogue 28 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #28 · Restaurant</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">여기요! 주문해도 될까요? <button class="hangul-sound-btn" onclick="speakKorean('여기요! 주문해도 될까요?')">🔊</button></div>
+            <div class="rom-line">Yeogiyo! Jumun-haedo doelkkayo?</div>
+            <div class="eng-line">Excuse me! May we order?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Staff</div>
+            <div class="kor-line">네, 뭐로 드릴까요? <button class="hangul-sound-btn" onclick="speakKorean('네, 뭐로 드릴까요?')">🔊</button></div>
+            <div class="rom-line">Ne, mworo deurilkkayo?</div>
+            <div class="eng-line">Yes, what will you have?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">된장찌개 하나랑 제육볶음 하나 주세요. 공기밥 두 개도요. <button class="hangul-sound-btn" onclick="speakKorean('된장찌개 하나랑 제육볶음 하나 주세요. 공기밥 두 개도요.')">🔊</button></div>
+            <div class="rom-line">Doenjang-jjigae hana-rang jeyukbokkeum hana juseyo. Gonggibap du gae-do-yo.</div>
+            <div class="eng-line">One doenjang-jjigae and one spicy pork, please. And two bowls of rice too.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">직원 Staff</div>
+            <div class="kor-line">알겠습니다. 잠시만 기다려 주세요. <button class="hangul-sound-btn" onclick="speakKorean('알겠습니다. 잠시만 기다려 주세요.')">🔊</button></div>
+            <div class="rom-line">Algesseumnida. Jamsi-man gidaryo juseyo.</div>
+            <div class="eng-line">Understood. Please wait a moment.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 29 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #29 · Coffee Shop</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">바리스타 Barista</div>
+            <div class="kor-line">안녕하세요! 주문하시겠어요? <button class="hangul-sound-btn" onclick="speakKorean('안녕하세요! 주문하시겠어요?')">🔊</button></div>
+            <div class="rom-line">Annyeonghaseyo! Jumun-hashigeseoyo?</div>
+            <div class="eng-line">Hello! What would you like to order?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">아이스 카페라떼 톨 사이즈 하나 주세요. 설탕 빼고요. <button class="hangul-sound-btn" onclick="speakKorean('아이스 카페라떼 톨 사이즈 하나 주세요. 설탕 빼고요.')">🔊</button></div>
+            <div class="rom-line">Aiseu kapelatte tol saijeu hana juseyo. Seoltang bbaego-yo.</div>
+            <div class="eng-line">One tall iced café latte, please. Without sugar.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">바리스타 Barista</div>
+            <div class="kor-line">매장에서 드시나요, 테이크아웃이에요? 성함이 어떻게 되세요? <button class="hangul-sound-btn" onclick="speakKorean('매장에서 드시나요, 테이크아웃이에요? 성함이 어떻게 되세요?')">🔊</button></div>
+            <div class="rom-line">Maejang-eseo deushinnayo, teikeuaot-ieyo? Seongham-i eotteoke doeseyo?</div>
+            <div class="eng-line">For here or takeaway? What's your name?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">매장에서 먹을게요. 이름은 민수예요. <button class="hangul-sound-btn" onclick="speakKorean('매장에서 먹을게요. 이름은 민수예요.')">🔊</button></div>
+            <div class="rom-line">Maejang-eseo meogeulgeyo. Ireum-eun Minsu-yeyo.</div>
+            <div class="eng-line">For here, please. My name is Minsu.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 30 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #30 · Friend's House</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung (Host)</div>
+            <div class="kor-line">어서 와! 오랜만이야. 들어와. <button class="hangul-sound-btn" onclick="speakKorean('어서 와! 오랜만이야. 들어와.')">🔊</button></div>
+            <div class="rom-line">Eoseo wa! Oraenman-iya. Deureo-wa.</div>
+            <div class="eng-line">Come in! Long time no see. Come inside.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin (Guest)</div>
+            <div class="kor-line">고마워. 집 완전 예쁘다! 새로 꾸몄어? 이거 사 왔어. <button class="hangul-sound-btn" onclick="speakKorean('고마워. 집 완전 예쁘다! 새로 꾸몄어? 이거 사 왔어.')">🔊</button></div>
+            <div class="rom-line">Gomaweo. Jip wanjeon yeppeudda! Saero kkumyeosseo? Igeo sa wasseo.</div>
+            <div class="eng-line">Thanks. Your place is so pretty! Did you redecorate? I brought this for you.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">고마워! 배고프지? 잡채랑 갈비찜 해 놨어. <button class="hangul-sound-btn" onclick="speakKorean('고마워! 배고프지? 잡채랑 갈비찜 해 놨어.')">🔊</button></div>
+            <div class="rom-line">Gomaweo! Baegopeuji? Japchae-rang galbijjim hae nwasseo.</div>
+            <div class="eng-line">Thanks! Are you hungry? I made japchae and braised short ribs.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">와, 냄새만 맡아도 맛있겠다! 잘 먹겠습니다. <button class="hangul-sound-btn" onclick="speakKorean('와, 냄새만 맡아도 맛있겠다! 잘 먹겠습니다.')">🔊</button></div>
+            <div class="rom-line">Wa, naemsae-man matado masitgessdda! Jal meokgesseumnida.</div>
+            <div class="eng-line">Wow, it smells amazing just from here! Thanks for the meal.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 31 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #31 · Cooking Together</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">오늘 뭐 요리할까? <button class="hangul-sound-btn" onclick="speakKorean('오늘 뭐 요리할까?')">🔊</button></div>
+            <div class="rom-line">Oneul mwo yorihalkka?</div>
+            <div class="eng-line">What should we cook today?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">비빔밥 어때? 채소 다 있을 것 같은데. <button class="hangul-sound-btn" onclick="speakKorean('비빔밥 어때? 채소 다 있을 것 같은데.')">🔊</button></div>
+            <div class="rom-line">Bibimbap eottae? Chaeso da isseul geot gateunde.</div>
+            <div class="eng-line">How about bibimbap? I think we have all the vegetables.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">좋아! 당근이랑 시금치 썰어 줄 수 있어? 나는 고추장 소스 만들게. <button class="hangul-sound-btn" onclick="speakKorean('좋아! 당근이랑 시금치 썰어 줄 수 있어? 나는 고추장 소스 만들게.')">🔊</button></div>
+            <div class="rom-line">Joa! Danggeun-irang sigeumchi sseoreo jul su isseo? Naneun gochujang soseu mandeulge.</div>
+            <div class="eng-line">Great! Can you slice the carrots and spinach? I'll make the gochujang sauce.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">응! 계란 후라이도 얹으면 더 맛있겠다! <button class="hangul-sound-btn" onclick="speakKorean('응! 계란 후라이도 얹으면 더 맛있겠다!')">🔊</button></div>
+            <div class="rom-line">Eung! Gyeran hurai-do eonjeu-myeon deo masitgessdda!</div>
+            <div class="eng-line">Sure! It'll be even tastier with a fried egg on top!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 32 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #32 · Ordering Delivery (배달 주문)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">뭐 시켜 먹을까? 배달의민족 열어봐. <button class="hangul-sound-btn" onclick="speakKorean('뭐 시켜 먹을까? 배달의민족 열어봐.')">🔊</button></div>
+            <div class="rom-line">Mwo sikyeo meogeulkka? Baedaluiminjeok yeoreobwa.</div>
+            <div class="eng-line">What should we order? Open Baemin (delivery app).</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">피자 어때? 불고기 피자랑 치킨 세트. <button class="hangul-sound-btn" onclick="speakKorean('피자 어때? 불고기 피자랑 치킨 세트.')">🔊</button></div>
+            <div class="rom-line">Pija eottae? Bulgogi pija-rang chikin seteu.</div>
+            <div class="eng-line">How about pizza? Bulgogi pizza and a chicken set.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">최소 주문 금액 맞춰야 해. 콜라도 추가하자. <button class="hangul-sound-btn" onclick="speakKorean('최소 주문 금액 맞춰야 해. 콜라도 추가하자.')">🔊</button></div>
+            <div class="rom-line">Choeso jumun geumek matchueo-ya hae. Kolla-do chuga-haja.</div>
+            <div class="eng-line">We need to meet the minimum order amount. Let's add a cola too.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">오케이! 배달 시간이 40분이래. 빨리 시키자, 배고파! <button class="hangul-sound-btn" onclick="speakKorean('오케이! 배달 시간이 40분이래. 빨리 시키자, 배고파!')">🔊</button></div>
+            <div class="rom-line">Okei! Baedal sigan-i sasip bun-irae. Ppalli sikija, baegopal!</div>
+            <div class="eng-line">Okay! Delivery is 40 minutes they say. Let's order quickly, I'm hungry!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         10. HEALTH
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="health">
+      <h2><span class="section-num">10</span> Health (건강)</h2>
+      <p>Medical Korean can be critical in an emergency. Learn to describe symptoms clearly at a pharmacy, hospital, and when telling a friend you're unwell.</p>
+
+      <!-- Dialogue 33 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #33 · Pharmacy (약국)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">두통약 있어요? 머리도 아프고 콧물도 나요. <button class="hangul-sound-btn" onclick="speakKorean('두통약 있어요? 머리도 아프고 콧물도 나요.')">🔊</button></div>
+            <div class="rom-line">Dutong-yak isseoyo? Meori-do apeugo konmul-do nayo.</div>
+            <div class="eng-line">Do you have headache medicine? I have a headache and runny nose.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">약사 Pharmacist</div>
+            <div class="kor-line">그럼 종합 감기약이 더 나을 것 같아요. 이게 잘 들어요. <button class="hangul-sound-btn" onclick="speakKorean('그럼 종합 감기약이 더 나을 것 같아요. 이게 잘 들어요.')">🔊</button></div>
+            <div class="rom-line">Geureom jonghap gamgiyak-i deo naeul geot gatayo. Ige jal deureoyo.</div>
+            <div class="eng-line">Then a general cold medicine would be better. This one works well.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">손님 Customer</div>
+            <div class="kor-line">하루에 몇 번 먹어요? <button class="hangul-sound-btn" onclick="speakKorean('하루에 몇 번 먹어요?')">🔊</button></div>
+            <div class="rom-line">Haru-e myeot beon meogeoyeo?</div>
+            <div class="eng-line">How many times a day should I take it?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">약사 Pharmacist</div>
+            <div class="kor-line">하루 세 번, 식후 30분에 드세요. 물 많이 드시고요. <button class="hangul-sound-btn" onclick="speakKorean('하루 세 번, 식후 30분에 드세요. 물 많이 드시고요.')">🔊</button></div>
+            <div class="rom-line">Haru se beon, sikhu samsip-bun-e deuseyo. Mul mani deushigo-yo.</div>
+            <div class="eng-line">Three times a day, 30 minutes after meals. And drink plenty of water.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 34 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #34 · Hospital (병원)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">환자 Patient</div>
+            <div class="kor-line">3일 전부터 목이 너무 아파요. 오늘 진찰 받을 수 있을까요? <button class="hangul-sound-btn" onclick="speakKorean('3일 전부터 목이 너무 아파요. 오늘 진찰 받을 수 있을까요?')">🔊</button></div>
+            <div class="rom-line">Samill jeonbuteo mok-i neomu apayo. Oneul jinchal badeul su isseulkkayo?</div>
+            <div class="eng-line">My throat has been very sore for 3 days. Can I be seen today?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">의사 Doctor</div>
+            <div class="kor-line">열은 있었어요? 다른 증상은요? <button class="hangul-sound-btn" onclick="speakKorean('열은 있었어요? 다른 증상은요?')">🔊</button></div>
+            <div class="rom-line">Yeol-eun isseosseoyo? Dareun jeungsang-eunyo?</div>
+            <div class="eng-line">Have you had a fever? Any other symptoms?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">환자 Patient</div>
+            <div class="kor-line">어제부터 미열이 있어요. 38도 정도요. 기침도 조금 나요. <button class="hangul-sound-btn" onclick="speakKorean('어제부터 미열이 있어요. 38도 정도요. 기침도 조금 나요.')">🔊</button></div>
+            <div class="rom-line">Eojebuteo miyeol-i isseoyo. Samsippal-do jeongdo-yo. Gichim-do jogeum nayo.</div>
+            <div class="eng-line">I've had a mild fever since yesterday. Around 38 degrees. A slight cough too.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">의사 Doctor</div>
+            <div class="kor-line">편도가 많이 부었네요. 항생제 처방해 드릴게요. 이틀은 쉬시는 게 좋겠어요. <button class="hangul-sound-btn" onclick="speakKorean('편도가 많이 부었네요. 항생제 처방해 드릴게요. 이틀은 쉬시는 게 좋겠어요.')">🔊</button></div>
+            <div class="rom-line">Pyeondo-ga mani bueonneyo. Hangsaengje cheobang-hae deurilgeyo. Iteul-eun shwishineun ge jogessseoyo.</div>
+            <div class="eng-line">Your tonsils are very swollen. I'll prescribe antibiotics. You should rest for two days.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 35 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #35 · Not Feeling Well</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">야, 얼굴이 안 좋아 보여. 괜찮아? <button class="hangul-sound-btn" onclick="speakKorean('야, 얼굴이 안 좋아 보여. 괜찮아?')">🔊</button></div>
+            <div class="rom-line">Ya, eolgul-i an joa boyeo. Gwaenchana?</div>
+            <div class="eng-line">Hey, you don't look well. Are you okay?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">아니, 아침부터 머리가 너무 아프고 속이 울렁거려. <button class="hangul-sound-btn" onclick="speakKorean('아니, 아침부터 머리가 너무 아프고 속이 울렁거려.')">🔊</button></div>
+            <div class="rom-line">Ani, achimbuteo meori-ga neomu apeugo sogi ulleonggeoryeo.</div>
+            <div class="eng-line">No, I've had a terrible headache since this morning and feel nauseous.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">수진 Sujin</div>
+            <div class="kor-line">밥은 먹었어? 약은 있어? 내가 편의점 다녀올까? <button class="hangul-sound-btn" onclick="speakKorean('밥은 먹었어? 약은 있어? 내가 편의점 다녀올까?')">🔊</button></div>
+            <div class="rom-line">Bab-eun meogeosseo? Yag-eun isseo? Naega pyeonuijeom danyeoolkka?</div>
+            <div class="eng-line">Did you eat? Do you have medicine? Should I run to the convenience store?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">지영 Jiyoung</div>
+            <div class="kor-line">괜찮아, 그냥 좀 쉬면 나을 것 같아. 챙겨줘서 고마워. <button class="hangul-sound-btn" onclick="speakKorean('괜찮아, 그냥 좀 쉬면 나을 것 같아. 챙겨줘서 고마워.')">🔊</button></div>
+            <div class="rom-line">Gwaenchana, geunyang jom shwimyeon naeul geot gata. Chaenggyeojwoseo gomaweo.</div>
+            <div class="eng-line">It's okay, I think I'll be fine with a bit of rest. Thanks for looking out for me.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box">
+        <div class="example-header"><span>📋 Common Symptom Phrases</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%">
+            <thead>
+              <tr>
+                <th style="white-space:nowrap;width:1%">Korean</th>
+                <th style="white-space:nowrap;width:1%">Romanization</th>
+                <th>Meaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="kor-cell" style="white-space:nowrap">머리가 아파요 <button class="hangul-sound-btn" onclick="speakKorean('머리가 아파요')">🔊</button></td><td style="white-space:nowrap">meori-ga apayo</td><td>I have a headache</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">목이 아파요 <button class="hangul-sound-btn" onclick="speakKorean('목이 아파요')">🔊</button></td><td style="white-space:nowrap">mok-i apayo</td><td>My throat hurts</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">열이 있어요 <button class="hangul-sound-btn" onclick="speakKorean('열이 있어요')">🔊</button></td><td style="white-space:nowrap">yeol-i isseoyo</td><td>I have a fever</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">기침이 나요 <button class="hangul-sound-btn" onclick="speakKorean('기침이 나요')">🔊</button></td><td style="white-space:nowrap">gichim-i nayo</td><td>I have a cough</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">속이 울렁거려요 <button class="hangul-sound-btn" onclick="speakKorean('속이 울렁거려요')">🔊</button></td><td style="white-space:nowrap">sogi ulleonggeoryeoyo</td><td>I feel nauseous / My stomach is unsettled</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">여기가 아파요 <button class="hangul-sound-btn" onclick="speakKorean('여기가 아파요')">🔊</button></td><td style="white-space:nowrap">yeogi-ga apayo</td><td>It hurts here (point to the area)</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">알레르기가 있어요 <button class="hangul-sound-btn" onclick="speakKorean('알레르기가 있어요')">🔊</button></td><td style="white-space:nowrap">allereugi-ga isseoyo</td><td>I have an allergy</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         11. TRANSPORTATION
+    ════════════════════════════════════════ -->
+    <div class="lesson-section animate-on-scroll" id="transportation">
+      <h2><span class="section-num">11</span> Transportation (교통)</h2>
+      <p>Korea's transport system is world-class. Whether you're in a taxi, on the subway, or boarding a plane, these dialogues prepare you for every journey.</p>
+
+      <!-- Dialogue 36 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #36 · Taxi</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객 Passenger</div>
+            <div class="kor-line">기사님, 인사동까지 가 주세요. <button class="hangul-sound-btn" onclick="speakKorean('기사님, 인사동까지 가 주세요.')">🔊</button></div>
+            <div class="rom-line">Gisanim, Insadong-kkaji ga juseyo.</div>
+            <div class="eng-line">Driver, please take me to Insadong.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">기사 Driver</div>
+            <div class="kor-line">네, 알겠습니다. 지금 막히지 않으면 15분 정도요. <button class="hangul-sound-btn" onclick="speakKorean('네, 알겠습니다. 지금 막히지 않으면 15분 정도요.')">🔊</button></div>
+            <div class="rom-line">Ne, algesseumnida. Jigeum makhiji aneummyeon sipobun jeongdo-yo.</div>
+            <div class="eng-line">Yes, understood. About 15 minutes if there's no traffic.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객 Passenger</div>
+            <div class="kor-line">카드 되나요? <button class="hangul-sound-btn" onclick="speakKorean('카드 되나요?')">🔊</button></div>
+            <div class="rom-line">Kadeu doenayo?</div>
+            <div class="eng-line">Do you accept card payment?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">기사 Driver</div>
+            <div class="kor-line">네, 됩니다. (arrives) 다 왔어요. <button class="hangul-sound-btn" onclick="speakKorean('네, 됩니다. 다 왔어요.')">🔊</button></div>
+            <div class="rom-line">Ne, doebnida. Da wasseoyo.</div>
+            <div class="eng-line">Yes, we do. (arrives) We're here.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객 Passenger</div>
+            <div class="kor-line">감사합니다, 기사님! 수고하세요. <button class="hangul-sound-btn" onclick="speakKorean('감사합니다, 기사님! 수고하세요.')">🔊</button></div>
+            <div class="rom-line">Gamsahamnida, gisanim! Sugo-haseyo.</div>
+            <div class="eng-line">Thank you, driver! Keep up the good work.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 37 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #37 · Bus</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객 Passenger</div>
+            <div class="kor-line">저기요, 이 버스 명동 가요? <button class="hangul-sound-btn" onclick="speakKorean('저기요, 이 버스 명동 가요?')">🔊</button></div>
+            <div class="rom-line">Jeogiyo, i beoseu Myeongdong gayo?</div>
+            <div class="eng-line">Excuse me, does this bus go to Myeongdong?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객2 Other Passenger</div>
+            <div class="kor-line">아니요, 이건 종로 방향이에요. 저쪽 정류장에서 402번 타세요. <button class="hangul-sound-btn" onclick="speakKorean('아니요, 이건 종로 방향이에요. 저쪽 정류장에서 402번 타세요.')">🔊</button></div>
+            <div class="rom-line">Aniyo, igeon Jongno banghyang-ieyo. Jeojjok jeongryujang-eseo sabongi-beon taseyo.</div>
+            <div class="eng-line">No, this goes toward Jongno. Take bus 402 from that stop over there.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객 Passenger</div>
+            <div class="kor-line">버스 자주 와요? <button class="hangul-sound-btn" onclick="speakKorean('버스 자주 와요?')">🔊</button></div>
+            <div class="rom-line">Beoseu jaju wayo?</div>
+            <div class="eng-line">Does the bus come frequently?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객2 Other Passenger</div>
+            <div class="kor-line">10분마다 와요. 금방 올 거예요. <button class="hangul-sound-btn" onclick="speakKorean('10분마다 와요. 금방 올 거예요.')">🔊</button></div>
+            <div class="rom-line">Sipbun-mada wayo. Geumbang ol geoyeyo.</div>
+            <div class="eng-line">It comes every 10 minutes. It'll be here soon.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 38 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #38 · Subway (지하철)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객 Passenger</div>
+            <div class="kor-line">홍대입구역 가려면 어떻게 해요? <button class="hangul-sound-btn" onclick="speakKorean('홍대입구역 가려면 어떻게 해요?')">🔊</button></div>
+            <div class="rom-line">Hongdae-ipgu-yeok garyeomyeon eotteoke haeyo?</div>
+            <div class="eng-line">How do I get to Hongdae Entrance Station?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">역무원 Station Staff</div>
+            <div class="kor-line">2호선 타시면 돼요. 세 정거장이에요. 9번 출구로 나오세요. <button class="hangul-sound-btn" onclick="speakKorean('2호선 타시면 돼요. 세 정거장이에요. 9번 출구로 나오세요.')">🔊</button></div>
+            <div class="rom-line">Ihoseon tashimyeon dwaeyo. Se jeonggeojang-ieyo. Gubon chulguro naoaseyo.</div>
+            <div class="eng-line">Take Line 2. It's three stops. Exit through exit 9.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객 Passenger</div>
+            <div class="kor-line">교통카드 없으면 어떻게 해요? <button class="hangul-sound-btn" onclick="speakKorean('교통카드 없으면 어떻게 해요?')">🔊</button></div>
+            <div class="rom-line">Gyotong-kadeu eopseumyeon eotteoke haeyo?</div>
+            <div class="eng-line">What if I don't have a transit card?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">역무원 Station Staff</div>
+            <div class="kor-line">저쪽 발권기에서 현금으로 1회용 교통카드 구매하시면 돼요. <button class="hangul-sound-btn" onclick="speakKorean('저쪽 발권기에서 현금으로 1회용 교통카드 구매하시면 돼요.')">🔊</button></div>
+            <div class="rom-line">Jeojjok balkwonggi-eseo hyeongeumero ilhoeyong gyotong-kadeu gumaehashimyeon dwaeyo.</div>
+            <div class="eng-line">You can buy a single-use transit card with cash at the ticket machine over there.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 39 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #39 · Airplane (비행기)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객 Passenger</div>
+            <div class="kor-line">저기요, 이어폰이 안 되는 것 같아요. 바꿔 주실 수 있어요? <button class="hangul-sound-btn" onclick="speakKorean('저기요, 이어폰이 안 되는 것 같아요. 바꿔 주실 수 있어요?')">🔊</button></div>
+            <div class="rom-line">Jeogiyo, ieopon-i an doeneun geot gatayo. Bakkwo jusil su isseoyo?</div>
+            <div class="eng-line">Excuse me, I think my earphones aren't working. Can you replace them?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승무원 Flight Attendant</div>
+            <div class="kor-line">죄송합니다. 바로 가져다 드릴게요. 음료는요? <button class="hangul-sound-btn" onclick="speakKorean('죄송합니다. 바로 가져다 드릴게요. 음료는요?')">🔊</button></div>
+            <div class="rom-line">Joesonghamnida. Baro gajyeoda deurilgeyo. Eumlyo-neunyo?</div>
+            <div class="eng-line">I'm sorry. I'll bring one right away. And a drink?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승객 Passenger</div>
+            <div class="kor-line">오렌지 주스 주세요. 그리고 담요도 하나 더 주시면 감사하겠어요. <button class="hangul-sound-btn" onclick="speakKorean('오렌지 주스 주세요. 그리고 담요도 하나 더 주시면 감사하겠어요.')">🔊</button></div>
+            <div class="rom-line">Orenji juseu juseyo. Geurigo damyo-do hana deo jushimyeon gamsahageesseoyo.</div>
+            <div class="eng-line">Orange juice, please. And I'd appreciate an extra blanket too.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">승무원 Flight Attendant</div>
+            <div class="kor-line">물론이죠. 잠시만 기다려 주세요. <button class="hangul-sound-btn" onclick="speakKorean('물론이죠. 잠시만 기다려 주세요.')">🔊</button></div>
+            <div class="rom-line">Mullonjyo. Jamsiman gidaryo juseyo.</div>
+            <div class="eng-line">Of course. Please wait a moment.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue 40 -->
+      <div class="example-box">
+        <div class="example-header"><span>💬 Dialogue #40 · Bicycle (자전거)</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">관광객 Tourist</div>
+            <div class="kor-line">자전거 빌릴 수 있는 곳이 어디예요? <button class="hangul-sound-btn" onclick="speakKorean('자전거 빌릴 수 있는 곳이 어디예요?')">🔊</button></div>
+            <div class="rom-line">Jajeongeo billil su inneun goshi eodieyo?</div>
+            <div class="eng-line">Where can I rent a bicycle?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">현지인 Local</div>
+            <div class="kor-line">따릉이 이용해 본 적 있어요? 서울 공공 자전거예요. 앱으로 대여할 수 있어요. <button class="hangul-sound-btn" onclick="speakKorean('따릉이 이용해 본 적 있어요? 서울 공공 자전거예요. 앱으로 대여할 수 있어요.')">🔊</button></div>
+            <div class="rom-line">Ttareungi iyonghae bon jeok isseoyo? Seoul gonggong jajeongeo-yeyo. Aeburo daeyeo-hal su isseoyo.</div>
+            <div class="eng-line">Have you tried Ttareungi? It's Seoul's public bicycle system. You can rent through an app.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--primary);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">관광객 Tourist</div>
+            <div class="kor-line">얼마예요? 하루 종일 빌릴 수 있어요? <button class="hangul-sound-btn" onclick="speakKorean('얼마예요? 하루 종일 빌릴 수 있어요?')">🔊</button></div>
+            <div class="rom-line">Eolmaeyo? Haru jonggil billil su isseoyo?</div>
+            <div class="eng-line">How much is it? Can I rent it for the whole day?</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;padding:10px 14px;border-left:3px solid var(--accent,#10b981);background:var(--surface-alt);border-radius:0 var(--radius-md) var(--radius-md) 0">
+            <div style="font-size:0.72rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em">현지인 Local</div>
+            <div class="kor-line">처음 30분은 천 원이고 하루 권도 있어요. 반납은 아무 정류소나 괜찮아요. <button class="hangul-sound-btn" onclick="speakKorean('처음 30분은 천 원이고 하루 권도 있어요. 반납은 아무 정류소나 괜찮아요.')">🔊</button></div>
+            <div class="rom-line">Cheoeum samsip-bun-eun cheon won-igo haru kwon-do isseoyo. Bannab-eun amu jeongryuso-na gwaenchanayo.</div>
+            <div class="eng-line">The first 30 min is 1,000 won, and there's also a day pass. You can return it to any station.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box">
+        <div class="example-header"><span>📋 Key Transport Vocabulary</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%">
+            <thead>
+              <tr>
+                <th style="white-space:nowrap;width:1%">Korean</th>
+                <th style="white-space:nowrap;width:1%">Romanization</th>
+                <th>Meaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="kor-cell" style="white-space:nowrap">__역 <button class="hangul-sound-btn" onclick="speakKorean('역')">🔊</button></td><td style="white-space:nowrap">__yeok</td><td>__ Station (attach station name)</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">__번 출구 <button class="hangul-sound-btn" onclick="speakKorean('출구')">🔊</button></td><td style="white-space:nowrap">__beon chulgu</td><td>Exit number __ (e.g., 3번 출구 = Exit 3)</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">환승 <button class="hangul-sound-btn" onclick="speakKorean('환승')">🔊</button></td><td style="white-space:nowrap">hwanseung</td><td>Transfer (between lines or modes)</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">정류장 <button class="hangul-sound-btn" onclick="speakKorean('정류장')">🔊</button></td><td style="white-space:nowrap">jeongnyujang</td><td>Bus / bicycle stop / station</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">막히다 <button class="hangul-sound-btn" onclick="speakKorean('막히다')">🔊</button></td><td style="white-space:nowrap">makhida</td><td>To be congested / stuck in traffic</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">내리다 <button class="hangul-sound-btn" onclick="speakKorean('내리다')">🔊</button></td><td style="white-space:nowrap">naerida</td><td>To get off (bus / subway / taxi)</td></tr>
+              <tr><td class="kor-cell" style="white-space:nowrap">타다 <button class="hangul-sound-btn" onclick="speakKorean('타다')">🔊</button></td><td style="white-space:nowrap">tada</td><td>To board / ride (any vehicle)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-32">
+      <button class="btn btn-primary btn-lg" data-lesson-complete="dialogues">
+        ✓ Mark Dialogues Complete
+      </button>
+    </div>
+
+    <div class="lesson-nav-footer">
+      <a href="classical-korean.html" class="lesson-nav-btn">
+        <span style="font-size:1.2rem">←</span>
+        <div>
+          <span class="lesson-nav-label">Previous</span>
+          <span class="lesson-nav-title">Classical Korean</span>
+        </div>
+      </a>
+      <a href="flashcard.html" class="lesson-nav-btn next">
+        <span style="font-size:1.2rem">→</span>
+        <div>
+          <span class="lesson-nav-label">Next</span>
+          <span class="lesson-nav-title">Flashcards</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">한</div>
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Learn</div>
+        <ul class="footer-links">
+          <li><a href="hangul.html">Hangul Alphabet</a></li>
+          <li><a href="grammar.html">Grammar</a></li>
+          <li><a href="vocabulary.html">Vocabulary</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <ul class="footer-links">
+          <li><a href="../culture/index.html">K-Culture</a></li>
+          <li><a href="../travel/index.html">Travel Guide</a></li>
+          <li><a href="../news/index.html">Korean News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/lang-ja.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

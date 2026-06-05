@@ -1,0 +1,770 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>韓国旅行旅程 | 한국어 학교</title>
+  <meta name="description" content="韓国旅行の日程別旅程 — 日帰りソウル観光から1ヶ月の全国縦断まで、時間・交通・食事・フレーズ付きで完全計画。" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../../index.html" class="logo">
+        <div class="logo-mark">한</div>
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../../learn/hangul.html"><span class="nav-icon">📚</span> 学ぶ</a></li>
+        <li><a href="../../culture/index.html"><span class="nav-icon">🎵</span> K-カルチャー</a></li>
+        <li><a href="index.html" class="active"><span class="nav-icon">🗺️</span> 旅行</a></li>
+        <li><a href="../../news/index.html"><span class="nav-icon">📰</span> ニュース</a></li>
+        <li><a href="../../quiz.html"><span class="nav-icon">📝</span> クイズ</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="検索…" autocomplete="off" aria-label="サイト内検索" />
+        </div>
+        <button id="theme-toggle" class="icon-btn" aria-label="ダーク/ライトテーマ切替">🌙</button>
+        <a href="../itineraries.html" class="icon-btn lang-toggle-btn" style="text-decoration:none;">🇯🇵 日本語</a>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="メニューを開く">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <aside class="sidebar">
+
+    <div class="travel-sidebar-header">
+      <div class="travel-sidebar-title">旅行ガイド · 여행 안내</div>
+      <div class="travel-sidebar-subtitle">韓国</div>
+    </div>
+
+    <a class="sidebar-accordion-btn open active" href="itineraries.html" data-accordion="travel-days">
+      <span class="link-icon">📅</span>
+      日数別 · 일수별
+      <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content open" id="accordion-travel-days">
+      <a class="sidebar-link active" href="#1day">日帰り旅行 · 당일치기</a>
+      <a class="sidebar-link" href="#2days">2日間 · 1박 2일</a>
+      <a class="sidebar-link" href="#3days">3日間 · 2박 3일</a>
+      <a class="sidebar-link" href="#5days">5日間 · 4박 5일</a>
+      <a class="sidebar-link" href="#week">1週間 · 일주일</a>
+      <a class="sidebar-link" href="#10days">10日間</a>
+      <a class="sidebar-link" href="#14days">2週間 · 2주</a>
+      <a class="sidebar-link" href="#1month">1ヶ月以上 · 한달</a>
+    </div>
+
+    <a class="sidebar-accordion-btn" href="cities.html" data-accordion="travel-city">
+      <span class="link-icon">🏙️</span>
+      都市別 · 도시별
+      <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-city">
+      <a class="sidebar-link" href="cities.html#seoul">ソウル · 서울</a>
+      <a class="sidebar-link" href="cities.html#incheon">仁川 · 인천</a>
+      <a class="sidebar-link" href="cities.html#busan">釜山 · 부산</a>
+      <a class="sidebar-link" href="cities.html#suwon">水原 · 수원</a>
+      <a class="sidebar-link" href="cities.html#jeju">済州島 · 제주도</a>
+      <a class="sidebar-link" href="cities.html#gyeongju">慶州 · 경주</a>
+      <a class="sidebar-link" href="cities.html#other">その他の都市</a>
+    </div>
+
+    <a class="sidebar-accordion-btn" href="themes.html" data-accordion="travel-theme">
+      <span class="link-icon">🎯</span>
+      テーマ別 · 테마별
+      <span class="accordion-arrow">▶</span>
+    </a>
+    <div class="sidebar-accordion-content" id="accordion-travel-theme">
+      <a class="sidebar-link" href="themes.html#food">グルメツアー · 음식 여행</a>
+      <a class="sidebar-link" href="themes.html#events">イベント・祭り · 이벤트</a>
+      <a class="sidebar-link" href="themes.html#sightseeing">観光 · 관광</a>
+      <a class="sidebar-link" href="themes.html#crosscountry">長距離旅行 · 장거리</a>
+    </div>
+
+    <a class="travel-sidebar-planner" href="planner.html">
+      📋 旅行プランナー · 여행 계획표
+    </a>
+
+  </aside>
+
+
+  <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px);">
+    <div class="lesson-wrap">
+
+      <div class="animate-on-scroll" style="margin-bottom:40px;">
+        <div class="section-eyebrow">日数別 · 일수별</div>
+        <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:12px;">
+          韓国旅行 <span class="grad-text">旅程</span>
+        </h1>
+        <p class="section-desc" style="margin:0;max-width:680px;">
+          日帰りソウル観光から1ヶ月の全国縦断まで、完全な日程別スケジュール。
+          各旅程には時間割、交通のヒント、食事のおすすめ、各スポットで使える韓国語フレーズを収録。
+        </p>
+        <div style="margin-top:16px;">
+          <a href="planner.html" class="btn btn-outline btn-sm">📋 自分のスケジュールを作る →</a>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           1 DAY
+      ═══════════════════════════════════ -->
+      <div id="1day" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">1</span> 日帰りソウルハイライト · 당일치기</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">1</span>
+            <span class="itinerary-day-label">日</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">당일치기 서울 핵심 코스</div>
+            <div class="itinerary-title">1日でめぐるソウルのベスト</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-easy">簡単</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩30,000–60,000 / 日</span>
+              <span class="itinerary-badge itinerary-badge-moderate">地下鉄のみ</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">5スポット</div><div class="itinerary-stat-lbl">主要観光地</div></div>
+            <div><div class="itinerary-stat-val">約10km</div><div class="itinerary-stat-lbl">徒歩距離</div></div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header">
+            <span class="day-block-num">1日目</span>
+            <span class="day-block-title">ソウル終日</span>
+          </div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">☀️</span>08:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">広蔵市場で朝食 · 광장시장</div>
+                <div class="schedule-activity-kor">광장시장 아침 식사</div>
+                <div class="schedule-detail">韓国最古の伝統市場。빈대떡（緑豆チヂミ）と마약 김밥（クセになるキンパブ）をお試しあれ — ソウルを代表する朝の屋台グルメ。</div>
+                <div class="schedule-phrase">フレーズ: <strong>빈대떡 하나 주세요</strong> (Bindaetteok hana juseyo) — 緑豆チヂミを1枚ください</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏯</span>09:30</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">景福宮 · 경복궁</div>
+                <div class="schedule-activity-kor">경복궁 관람 및 수문장 교대식</div>
+                <div class="schedule-detail">10:00の王宮守門将交代式（수문장 교대식）に合わせて早めに到着。宮殿門近くで韓服（한복）をレンタルすると入場無料 — 最高の撮影チャンス。</div>
+                <div class="schedule-phrase">フレーズ: <strong>입장료가 얼마예요?</strong> (Ipjangnyo ga eolmayeyo?) — 入場料はいくらですか？</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎨</span>11:30</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">北村韓屋村 · 북촌 한옥마을</div>
+                <div class="schedule-activity-kor">북촌 한옥마을 산책</div>
+                <div class="schedule-detail">景福宮から徒歩15分。600年前の韓屋が並ぶ路地を散策。ソウルで最も絵になる伝統的な街並み。住民のために静かにお願いします。</div>
+                <div class="schedule-phrase">フレーズ: <strong>조용히 해주세요</strong> (Joyonghi haejuseyo) — 静かにしてください</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🍱</span>13:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">仁寺洞で昼食 · 인사동 점심</div>
+                <div class="schedule-activity-kor">인사동 한정식 또는 비빔밥</div>
+                <div class="schedule-detail">仁寺洞に移動してランチ。한정식（韓国定食）か一杯の비빔밥を伝統的なレストランで。食後は工芸品店をのぞいてみましょう。</div>
+                <div class="schedule-phrase">フレーズ: <strong>비빔밥 하나 주세요</strong> (Bibimbap hana juseyo) — ビビンバを1杯ください</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🗼</span>15:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">Nソウルタワー · 남산타워</div>
+                <div class="schedule-activity-kor">남산타워 전망대</div>
+                <div class="schedule-detail">南山ロープウェイで山頂へ。ソウル360度のパノラマビュー。麓のラブロック柵は名所。展望台は有料ですが、屋外デッキは無料で十分楽しめます。</div>
+                <div class="schedule-phrase">フレーズ: <strong>케이블카 타는 곳이 어디예요?</strong> — ロープウェイ乗り場はどこですか？</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🛍️</span>17:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">明洞ショッピング · 명동 쇼핑</div>
+                <div class="schedule-activity-kor">명동 거리 쇼핑 및 간식</div>
+                <div class="schedule-detail">明洞でK-ビューティーショッピングと屋台グルメ — 호떡（甘いパンケーキ）、떡볶이（辛い餅炒め）、닭꼬치（チキンスケワー）はどれも₩5,000以下。</div>
+                <div class="schedule-phrase">フレーズ: <strong>이거 써도 돼요?</strong> (Igeo sseo-do daeyo?) — これを試してもいいですか？</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌃</span>19:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">夕食と漢江 · 한강 저녁</div>
+                <div class="schedule-activity-kor">한강 치맥</div>
+                <div class="schedule-detail">ソウルの夜を地元の人と楽しむ定番：漢江公園で치맥（フライドチキン＋ビール）。배달의민족アプリで出前するか、汝矣島や盤浦公園の川沿いキオスクで購入できます。</div>
+                <div class="schedule-phrase">フレーズ: <strong>치킨 한 마리 주세요</strong> (Chikin han mari juseyo) — チキン1羽ください</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">T-Moneyカード 티머니</div>
+            <div class="tip-text">コンビニ（GS25、CU、7-Eleven）でT-Moneyカード（₩4,000）を購入してチャージすると、地下鉄・バス・一部コンビニで使えます。各スポットでの時間を大幅に節約できます。</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           2 DAYS
+      ═══════════════════════════════════ -->
+      <div id="2days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">2</span> 2日間：ソウル充実コース · 1박 2일</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">2</span>
+            <span class="itinerary-day-label">日間</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">서울 1박 2일 알짜 코스</div>
+            <div class="itinerary-title">ソウルハイライト＋日帰り観光</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-easy">簡単</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩80,000–150,000 合計</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">1泊</div><div class="itinerary-stat-lbl">滞在</div></div>
+            <div><div class="itinerary-stat-val">ソウル</div><div class="itinerary-stat-lbl">拠点都市</div></div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header">
+            <span class="day-block-num">1日目</span>
+            <span class="day-block-title">宮殿めぐり＋弘大の夜</span>
+          </div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏯</span>09:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">昌徳宮と秘苑 · 창덕궁 후원</div>
+                <div class="schedule-detail">事前予約必須の秘苑ツアー（비원）— 300年の庭園の中を案内付きで1時間歩く。英語ツアーも毎時あり。紅葉の秋が特に美しい。</div>
+                <div class="schedule-phrase">フレーズ: <strong>후원 투어 예약했어요</strong> — 秘苑ツアーを予約しました</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🍱</span>12:30</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">鍾路で昼食 · 종로 점심</div>
+                <div class="schedule-detail">安国駅近くの有名店で삼계탕（参鶏湯）を — 初訪問者に定番のガッツリ系・滋養たっぷりのスープ。</div>
+                <div class="schedule-phrase">フレーズ: <strong>삼계탕 한 그릇 주세요</strong> — 参鶏湯を1杯ください</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌿</span>14:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">清渓川散策 · 청계천</div>
+                <div class="schedule-detail">光化門から東大門まで、ソウル都心を貫く美しい都市河川沿いを歩く — 5.8kmの緑豊かな癒しの遊歩道。</div>
+                <div class="schedule-phrase">フレーズ: <strong>청계천이 어디에 있어요?</strong> — 清渓川はどこにありますか？</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎵</span>18:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">弘大の夜 · 홍대 저녁</div>
+                <div class="schedule-detail">弘大はソウルの若者文化・アート・ナイトライフの中心。午後7時から広場では大道芸が始まります。韓国BBQで夕食を取り、インディーカフェやアーケードバーを探索。</div>
+                <div class="schedule-phrase">フレーズ: <strong>삼겹살 2인분 주세요</strong> — 豚バラ2人分ください</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header">
+            <span class="day-block-num">2日目</span>
+            <span class="day-block-title">水原城郭 日帰りトリップ</span>
+          </div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚄</span>09:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">水原へ電車で · 수원행 기차</div>
+                <div class="schedule-detail">ソウル駅から1号線で50分または京釜線で35分。予約不要。</div>
+                <div class="schedule-phrase">フレーズ: <strong>수원 가는 열차가 몇 번이에요?</strong> — 水原行きの電車は何番ホームですか？</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏰</span>10:30</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">華城城郭散策 · 화성 성곽길</div>
+                <div class="schedule-detail">全長5.7kmのユネスコ城壁を歩く — 1796年に28ヶ月で建設。旧市街の絶景が広がります。华虹門水門が最高の撮影スポット。</div>
+                <div class="schedule-phrase">フレーズ: <strong>성곽 걷는 길이 어디예요?</strong> — 城壁の遊歩道はどこですか？</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🥩</span>13:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">水原カルビで昼食 · 수원 갈비</div>
+                <div class="schedule-detail">水原名物の왕갈비（キング牛カルビ）— 巨大なリブをテーブルで炭焼き。向校洞カルビ横丁には数十年続く老舗店が揃っています。</div>
+                <div class="schedule-phrase">フレーズ: <strong>갈비 1인분에 얼마예요?</strong> — カルビ1人前はいくらですか？</div>
+              </div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎎</span>15:00</div>
+              <div class="schedule-content">
+                <div class="schedule-activity">韓国民俗村 · 한국민속촌</div>
+                <div class="schedule-detail">水原からバスで30分 — 朝鮮時代の260棟の伝統建築が残るリビングミュージアム。職人が機織り・陶芸・綱渡りを実演。夕暮れが特に幻想的。</div>
+                <div class="schedule-phrase">フレーズ: <strong>민속촌 가는 버스가 뭐예요?</strong> — 民俗村行きのバスはどれですか？</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           3 DAYS
+      ═══════════════════════════════════ -->
+      <div id="3days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">3</span> 3日間：ソウル＋慶州 · 2박 3일</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">3</span>
+            <span class="itinerary-day-label">日間</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">서울 + 경주 2박 3일</div>
+            <div class="itinerary-title">現代の首都＋古代王国</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-moderate">普通</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩250,000–400,000 合計</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">2泊</div><div class="itinerary-stat-lbl">ソウル1泊 慶州1泊</div></div>
+            <div><div class="itinerary-stat-val">KTX</div><div class="itinerary-stat-lbl">ソウル↔慶州</div></div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">1日目</span><span class="day-block-title">ソウル：宮殿＋市場＋夜遊び</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏯</span>09:00</div>
+              <div class="schedule-content"><div class="schedule-activity">景福宮＋北村</div><div class="schedule-detail">宮殿観光（10:00の交代式）、その後韓屋村散策から三清洞カフェ通りへ。</div><div class="schedule-phrase">フレーズ: <strong>한복 빌릴 수 있어요?</strong> — 韓服を借りられますか？</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🍜</span>13:00</div>
+              <div class="schedule-content"><div class="schedule-activity">昼食：五壮洞で冷麺</div><div class="schedule-detail">함흥냉면（咸興冷麺）— コシのあるそば粉麺を辛口または出汁スープで。夏でも通年食べられる定番。</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌸</span>14:30</div>
+              <div class="schedule-content"><div class="schedule-activity">南山公園ハイク · 남산 산책</div><div class="schedule-detail">明洞から森の小道を登る（45分）。山頂のNソウルタワー。夕暮れが近づくとソウルの全景が特に美しい。</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🛍️</span>17:30</div>
+              <div class="schedule-content"><div class="schedule-activity">東大門デザインプラザ · DDP</div><div class="schedule-detail">ザハ・ハディドの未来的なランドマークが夜に輝く。周辺のファッション市場は午後8時オープン — 良質の衣料品が格安で。</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">2日目</span><span class="day-block-title">KTXで慶州へ：寺院と王陵</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚄</span>07:30</div>
+              <div class="schedule-content"><div class="schedule-activity">KTX ソウル→慶州</div><div class="schedule-detail">所要2時間。前日までにKORAILアプリで予約。新慶州（신경주）駅で下車、市内中心部まで路線バスで30分。</div><div class="schedule-phrase">フレーズ: <strong>신경주 가는 KTX 표 주세요</strong> — 新慶州行きKTXのチケットをください</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🛕</span>10:30</div>
+              <div class="schedule-content"><div class="schedule-activity">仏国寺 · 불국사</div><div class="schedule-detail">韓国最重要の仏教寺院のひとつ — ユネスコ世界遺産。751年建立、吐含山中腹。石塔・多宝塔と釈迦塔は圧巻。</div><div class="schedule-phrase">フレーズ: <strong>불국사까지 얼마나 걸려요?</strong> — 仏国寺まで何分かかりますか？</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">⛰️</span>12:30</div>
+              <div class="schedule-content"><div class="schedule-activity">石窟庵 · 석굴암</div><div class="schedule-detail">仏国寺からバスで15分上がった先。8世紀の花崗岩の仏像が納まる人工洞窟は韓国最高の芸術的成就のひとつ。静謐で深く感動的。</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🍱</span>14:00</div>
+              <div class="schedule-content"><div class="schedule-activity">昼食＋황남빵 · 경주 전통 점심</div><div class="schedule-detail">仏国寺近くで昼食後、황리단길（ファンリダンギル）へ — 慶州のおしゃれカフェ通り。伝統あんこ菓子の황남빵はお土産に必須。</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏛️</span>15:30</div>
+              <div class="schedule-content"><div class="schedule-activity">大陵苑 · 대릉원</div><div class="schedule-detail">新羅王の巨大な古墳が並ぶ公園を散策 — 高さ20m超のものも。天馬塚内部で本物の王朝副葬品を見学できます。黄金時間の光が絶景。</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">3日目</span><span class="day-block-title">慶州田園地帯＋帰還</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌅</span>07:00</div>
+              <div class="schedule-content"><div class="schedule-activity">瞻星台の夜明け · 첨성대</div><div class="schedule-detail">世界最古の現存天文台（632年建立）は花畑に囲まれています — 観光バスが来る前の夜明けが最も美しい。</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚲</span>09:00</div>
+              <div class="schedule-content"><div class="schedule-activity">自転車ツアー · 자전거 여행</div><div class="schedule-detail">慶州市内近くでレンタサイクル（₩3,000/時）を借りてユネスコ歴史地区を自転車でめぐる。古墳・寺院・蓮池を経由した雁鴨池へのルートは平坦で美しい。</div><div class="schedule-phrase">フレーズ: <strong>자전거 빌릴 수 있어요?</strong> — 自転車を借りられますか？</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚄</span>14:00</div>
+              <div class="schedule-content"><div class="schedule-activity">KTXでソウルへ帰還</div><div class="schedule-detail">午後の列車で2時間。夜に삼겹살を食べてから翌日出発する時間も十分あります。</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           5 DAYS
+      ═══════════════════════════════════ -->
+      <div id="5days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">4</span> 5日間：ソウル＋釜山 · 4박 5일</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">5</span>
+            <span class="itinerary-day-label">日間</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">서울 + 부산 4박 5일</div>
+            <div class="itinerary-title">首都から海岸へ — 韓国2大都市</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-moderate">普通</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩500,000–800,000 合計</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">4泊</div><div class="itinerary-stat-lbl">ソウル2泊 釜山2泊</div></div>
+            <div><div class="itinerary-stat-val">KTX 2h15</div><div class="itinerary-stat-lbl">都市間移動</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">5日間の概要</div>
+            <div class="tip-text">1〜2日目：ソウル（宮殿、市場、漢江、弘大）→ 3日目：KTXで釜山へ＋甘川文化村 → 4日目：海雲台ビーチ＋チャガルチ市場＋広安里の夜 → 5日目：BIFF広場＋梵魚寺＋夕方のKTXで帰宅</div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">3日目</span><span class="day-block-title">KTXで釜山へ＋甘川文化村</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚄</span>07:30</div>
+              <div class="schedule-content"><div class="schedule-activity">KTX ソウル→釜山（2時間15分）</div><div class="schedule-detail">事前予約推奨。駅のコンビニでキンパブを買って車中のお供に。釜山駅に10:00到着。</div><div class="schedule-phrase">フレーズ: <strong>부산역까지 KTX 주세요</strong> — 釜山駅までのKTXをください</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎨</span>10:30</div>
+              <div class="schedule-content"><div class="schedule-activity">甘川文化村 · 감천문화마을</div><div class="schedule-detail">パステルカラーの家々が丘の斜面を彩る — 韓国で最もカラフルな街並み。アートインスタレーション、小さなカフェ、壁画が路地のあちこちに。正午前到着がおすすめ。</div><div class="schedule-phrase">フレーズ: <strong>감천문화마을에 어떻게 가요?</strong> — 甘川文化村にはどう行きますか？</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🐟</span>14:00</div>
+              <div class="schedule-content"><div class="schedule-activity">チャガルチ魚市場 · 자갈치 시장</div><div class="schedule-detail">韓国最大の海鮮市場。1階で生鮮魚介を購入し、2階で少額の調理費を払って調理してもらえます。꽃게（花蟹）、전복（アワビ）、성게（ウニ）がおすすめ。</div><div class="schedule-phrase">フレーズ: <strong>이거 구워주세요</strong> — これを焼いてください</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🌉</span>19:00</div>
+              <div class="schedule-content"><div class="schedule-activity">広安里ビーチの夜景 · 광안리 야경</div><div class="schedule-detail">広安里は海に映えるライトアップされた広安大橋で有名。近くのレストランで돼지국밥（豚骨スープご飯）を食べてからビーチでビールを楽しんで。</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-block">
+          <div class="day-block-header"><span class="day-block-num">4〜5日目</span><span class="day-block-title">釜山：ビーチ＋寺院＋文化</span></div>
+          <div class="day-schedule">
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🏖️</span>08:00</div>
+              <div class="schedule-content"><div class="schedule-activity">海雲台ビーチ · 해운대 해수욕장</div><div class="schedule-detail">韓国最有名なビーチ。混雑前の朝の散歩がベスト。近くのヘリダンギルには朝食に良いカフェが多い。屋台の씨앗호떡（種入りパンケーキ）も忘れずに。</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🛕</span>11:00</div>
+              <div class="schedule-content"><div class="schedule-activity">海東龍宮寺 · 해동 용궁사</div><div class="schedule-detail">韓国唯一の海辺の仏教寺院 — 波が砕ける岩礁の上にドラマチックに立つ。海雲台からバスで40分。入場無料。</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🎬</span>14:00</div>
+              <div class="schedule-content"><div class="schedule-activity">BIFF広場＋国際市場 · 국제시장</div><div class="schedule-detail">釜山国際映画祭広場 — 韓国スターの手形が埋め込まれています。隣の国際市場では屋台グルメ、骨董品、地元グッズが好価格で。</div><div class="schedule-phrase">フレーズ: <strong>씨앗호떡 얼마예요?</strong> — 씨앗호떡はいくらですか？</div></div>
+            </div>
+            <div class="schedule-slot">
+              <div class="schedule-time"><span class="schedule-time-icon">🚆</span>17:00</div>
+              <div class="schedule-content"><div class="schedule-activity">KTXでソウルへ帰還（5日目）</div><div class="schedule-detail">午後のKTXは席に余裕があります。釜山駅内のロッテリアで돈카츠（トンカツ）、または帰り道のコンビニでキンパブを。</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           1 WEEK
+      ═══════════════════════════════════ -->
+      <div id="week" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">5</span> 1週間：黄金三角コース · 일주일</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">7</span>
+            <span class="itinerary-day-label">日間</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">일주일 황금 삼각지대 코스</div>
+            <div class="itinerary-title">ソウル · 慶州 · 釜山 · 済州島</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-moderate">普通</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩800,000–1,300,000 合計</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">6泊</div><div class="itinerary-stat-lbl">滞在</div></div>
+            <div><div class="itinerary-stat-val">4都市</div><div class="itinerary-stat-lbl">＋1島</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">7日間ルート概要</div>
+            <div class="tip-text">
+              <strong>1〜2日目</strong> ソウル（宮殿、市場、弘大）→
+              <strong>3日目</strong> KTXで慶州へ（仏国寺、王陵、瞻星台）→
+              <strong>4日目</strong> 釜山（甘川、チャガルチ、海雲台）→
+              <strong>5日目</strong> 済州島へフライト（城山日出峰の日の出、黒豚ディナー）→
+              <strong>6日目</strong> 済州島（漢拏山ハイクまたは万丈窟＋オソルロック茶畑）→
+              <strong>7日目</strong> 済州→ソウルへフライト、帰国
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">済州島のヒント 제주 팁</div>
+            <div class="tip-text">済州島の国内線フライトは少なくとも2〜3週間前に予約（エアソウル、チェジュ航空、ティーウェイ航空経由）。済州ではレンタカーが必須 — 公共バスは本数が少ない。国際免許証が使えます。</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           10 DAYS
+      ═══════════════════════════════════ -->
+      <div id="10days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">6</span> 10日間：韓国深掘り</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">10</span>
+            <span class="itinerary-day-label">日間</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">10일 한국 심층 여행</div>
+            <div class="itinerary-title">ソウル · 全州 · 慶州 · 釜山 · 済州島</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-active">アクティブ</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩1,200,000–2,000,000 合計</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">9泊</div><div class="itinerary-stat-lbl">滞在</div></div>
+            <div><div class="itinerary-stat-val">5都市</div><div class="itinerary-stat-lbl">＋1島</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">10日間ルート概要</div>
+            <div class="tip-text">
+              <strong>1〜3日目</strong> ソウル（全ハイライト＋DMZ日帰りオプション）→
+              <strong>4日目</strong> KTXで全州へ（韓屋村、ビビンバ、マッコリバー）→
+              <strong>5日目</strong> バスで慶州へ（寺院、王陵、自転車ツアー）→
+              <strong>6〜7日目</strong> 釜山（ビーチ、市場、海東龍宮寺、梵魚寺）→
+              <strong>8〜9日目</strong> 済州島（漢拏山ハイク、城山、西海岸ドライブ、오름火山）→
+              <strong>10日目</strong> 済州から帰国またはソウル出発
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">全州 전주 — 必ず立ち寄って</div>
+            <div class="tip-text">全州はビビンバ（비빔밥）の発祥地で、韓国最大の韓屋村があります。毎週金・土曜の夜市（남부시장 야시장）は格別。韓屋ゲストハウスに1泊してみましょう。</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           2 WEEKS
+      ═══════════════════════════════════ -->
+      <div id="14days" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">7</span> 2週間：韓国完全制覇 · 2주</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">14</span>
+            <span class="itinerary-day-label">日間</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">2주 한국 완전 정복</div>
+            <div class="itinerary-title">北から南へ — 完全な韓国体験</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-active">アクティブ</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩2,000,000–3,500,000 合計</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">13泊</div><div class="itinerary-stat-lbl">滞在</div></div>
+            <div><div class="itinerary-stat-val">8都市以上</div><div class="itinerary-stat-lbl">完全周遊</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">2週間ルート概要</div>
+            <div class="tip-text">
+              <strong>1〜4日目</strong> ソウル＋DMZ＋仁川（チャイナタウン、松島）→
+              <strong>5日目</strong> KTXで全州へ（韓屋、ビビンバ発祥）→
+              <strong>6日目</strong> 南原＋求礼（智異山国立公園）→
+              <strong>7日目</strong> 光州（5·18記念館、アート地区）→
+              <strong>8日目</strong> バスで慶州へ →
+              <strong>9日目</strong> 慶州の寺院と王陵 →
+              <strong>10〜11日目</strong> 釜山（全ハイライト）→
+              <strong>12〜13日目</strong> 済州島 →
+              <strong>14日目</strong> 帰国またはソウル出発
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">KORAILパス 코레일 패스</div>
+            <div class="tip-text">2週間旅行者にはKORAILパスが便利 — 一定期間KTX乗り放題。2・3・4・5日間の選択肢あり（1ヶ月以内に利用）。個別購入よりかなりお得。韓国到着前に購入してください。</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══════════════════════════════════
+           1 MONTH
+      ═══════════════════════════════════ -->
+      <div id="1month" class="lesson-section animate-on-scroll">
+        <h2><span class="section-num">8</span> 1ヶ月以上：長期滞在 · 한달살기</h2>
+
+        <div class="itinerary-hero">
+          <div class="itinerary-day-badge">
+            <span class="itinerary-day-num">30</span>
+            <span class="itinerary-day-label">日以上</span>
+          </div>
+          <div>
+            <div class="itinerary-kor">한달살기 — 진짜 한국 경험</div>
+            <div class="itinerary-title">韓国人のように暮らす — 長期滞在プログラム</div>
+            <div class="itinerary-badges">
+              <span class="itinerary-badge itinerary-badge-active">完全没入</span>
+              <span class="itinerary-badge itinerary-badge-budget">₩3,500,000–7,000,000+ 合計</span>
+            </div>
+          </div>
+          <div class="itinerary-stats">
+            <div><div class="itinerary-stat-val">30泊以上</div><div class="itinerary-stat-lbl">長期滞在</div></div>
+            <div><div class="itinerary-stat-val">韓国全土</div><div class="itinerary-stat-lbl">全地域</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">1ヶ月間の構成例</div>
+            <div class="tip-text">
+              <strong>第1週</strong> ソウル拠点 — エリア深掘り（梨泰院、聖水洞、望遠洞、延南洞、蚕室）→
+              <strong>第2週</strong> のんびり北上 — DMZ、束草（雪岳山ハイク）、江陵（コーヒー通り）、江原道海岸 →
+              <strong>第3週</strong> 全州 → 潭陽（竹の森）→ 麗水 → 統営（韓国のナポリ）→ 釜山 →
+              <strong>第4週</strong> 慶州自転車周遊 → 済州島（スクーターレンタル、全오름制覇）→ 最終日ソウル
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-box">
+          <span class="tip-icon">💡</span>
+          <div class="tip-content">
+            <div class="tip-label">한달살기（1ヶ月生活）のヒント</div>
+            <div class="tip-text">고시원（コシウォン、₩300,000〜500,000/月）またはエアビーのマンスリーが予算旅行者向き。당근마켓（カロットマーケット）アプリで中古品の売買が可能。仁川空港でSIMカードを購入してデータ無制限に。카카오뱅크（カカオバンク）口座で現地振込みが楽に。語学力向上には近隣の어학당（語学学校）への入学がおすすめ。</div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="tip-icon">ℹ️</span>
+          <div class="tip-content">
+            <div class="tip-label">ビザについて 비자 안내</div>
+            <div class="tip-text">ほとんどの国籍は90日ビザ免除。長期滞在の場合：ワーキングホリデービザ（18〜30歳、24ヶ国以上が対象）、語学留学ビザ（D-4）、またはデジタルノマドビザ（2024年導入）が利用できます。最新情報は韓国大使館のウェブサイトをご確認ください。</div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- CTA -->
+      <div class="animate-on-scroll" style="text-align:center;padding:40px 0;">
+        <p style="color:var(--text-secondary);margin-bottom:20px;">自分だけのスケジュールを作りたい方は、インタラクティブ旅行プランナーをご利用ください。</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <a href="planner.html" class="btn btn-primary btn-lg">📋 旅行プランナーを開く →</a>
+          <a href="cities.html" class="btn btn-secondary btn-lg">🏙️ 都市ガイドを見る</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="logo">
+            <div class="logo-mark">한</div>
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>無料の韓国語学習プラットフォーム — 言語学習とK-カルチャー、旅行ガイド、実践練習を組み合わせた、あらゆるレベルの学習者向けのサービスです。</p>
+        </div>
+        <div>
+          <div class="footer-heading">学ぶ</div>
+          <ul class="footer-links">
+            <li><a href="../../learn/hangul.html">ハングルアルファベット</a></li>
+            <li><a href="../../learn/grammar.html">文法</a></li>
+            <li><a href="../../learn/vocabulary.html">語彙</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">探索</div>
+          <ul class="footer-links">
+            <li><a href="../../culture/index.html">K-カルチャー</a></li>
+            <li><a href="index.html">旅行ガイド</a></li>
+            <li><a href="../../news/index.html">韓国ニュース</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">会社情報</div>
+          <ul class="footer-links">
+            <li><a href="../../ja/about.html">私たちについて</a></li>
+            <li><a href="../../ja/contact.html">お問い合わせ</a></li>
+            <li><a href="../../ja/privacy.html">プライバシーポリシー</a></li>
+            <li><a href="../../ja/terms.html">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. 世界中の韓国語学習者のために ❤️</span>
+        <span>🇰🇷 학습을 즐기세요！（学習を楽しんでください！）</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/app.js"></script>
+</body>
+</html>
