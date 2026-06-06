@@ -256,7 +256,7 @@ function _googleTTS(text, speed) {
   if (speed && speed < 1) params.set('speed', speed);
   const audio = new Audio('/api/tts?' + params);
   _currentAudio = audio;
-  audio.play().catch(() => { _speakFallback(text, speed < 1 ? speed : 0.9); });
+  audio.play().catch(() => {});
 }
 
 function _speakFallback(text, rate) {

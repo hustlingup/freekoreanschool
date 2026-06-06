@@ -2019,7 +2019,8 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
   .sidebar.open { transform: translateX(0); }
   .sidebar + .main-content { margin-left: 0; }
   .sidebar ~ .footer { margin-left: 0; }
-  .main-content { padding: 24px 20px; max-width: 100%; }
+  /* !important needed to override inline style="margin-left:var(--sidebar-width)" on <main> */
+  .main-content { margin-left: 0 !important; padding: 24px 20px; max-width: 100%; }
   .nav-links { display: none; }
   .mobile-menu-btn { display: flex; }
   .bento-1, .bento-2, .bento-3, .bento-4, .bento-5, .bento-6, .bento-7 { grid-column: span 12; }
