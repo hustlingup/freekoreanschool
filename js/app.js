@@ -252,13 +252,11 @@ function _googleTTS(text, speed) {
   }
   window.speechSynthesis && window.speechSynthesis.cancel();
 
-  const url = 'https://translate.google.com/translate_tts?ie=UTF-8' +
-    '&q=' + encodeURIComponent(text) +
-    '&tl=ko&client=tw-ob' +
-    (speed && speed < 1 ? '&ttsspeed=' + speed : '');
-  const audio = new Audio(url);
+  const params = new URLSearchParams({ text });
+  if (speed && speed < 1) params.set('speed', speed);
+  const audio = new Audio('/api/tts?' + params);
   _currentAudio = audio;
-  audio.play().catch(() => {});
+  audio.play().catch(() => { _speakFallback(text, speed < 1 ? speed : 0.9); });
 }
 
 function _speakFallback(text, rate) {

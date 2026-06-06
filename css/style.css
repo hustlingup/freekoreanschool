@@ -724,6 +724,11 @@ code, kbd {
   min-height: calc(100vh - var(--header-height));
 }
 
+/* ── Remove default mobile tap highlight ────────────── */
+button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* ── Buttons ────────────────────────────────────────── */
 .btn {
   display: inline-flex;
@@ -2021,13 +2026,52 @@ code, kbd {
   .quiz-options { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .lesson-nav-footer { flex-direction: column; }
-  .hero-stats { gap: 20px; }
   .search-bar { display: none; }
+
+  /* ── Hero ── */
+  .hero-content { padding: 40px 0; }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 28px;
+  }
+  .hero-stat-value { font-size: 1.6rem; }
+
+  /* ── Bento ── */
+  .bento-card-inner { padding: 20px; }
+  .bento-8 .bento-card-inner { flex-direction: column !important; gap: 16px; }
+
+  /* ── Hangul grid ── */
+  .hangul-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 10px; }
+  .hangul-card { padding: 14px 10px; gap: 6px; }
+  .hangul-char { font-size: 2.2rem; }
+  .hangul-sound-btn { width: 44px; height: 44px; font-size: 1rem; margin-top: 4px; }
+
+  /* ── Vocabulary flashcards ── */
+  .flashcard-grid { grid-template-columns: repeat(2, 1fr); }
+  .flashcard .speak { width: 38px; height: 38px; font-size: 0.85rem; top: 6px; right: 6px; }
+
+  /* ── Vocab table speak button ── */
+  .kr-speak-btn { padding: 8px 12px; min-height: 40px; font-size: 0.85rem; }
+
+  /* ── Active / touch feedback ── */
+  .hangul-sound-btn:active { transform: scale(0.88); opacity: 0.75; background: var(--grad-primary); color: white; border-color: transparent; }
+  .flashcard .speak:active { transform: scale(0.88); opacity: 0.75; background: var(--grad-primary); border-color: transparent; }
+  .hangul-card:active { transform: scale(0.97); border-color: var(--primary); }
+  .kr-speak-btn:active { opacity: 1; border-color: var(--primary); transform: scale(0.96); }
+  .btn:active { transform: scale(0.97); opacity: 0.9; }
+  .icon-btn:active { transform: scale(0.92); }
 }
 
 @media (max-width: 480px) {
-  .hangul-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
   .container { padding: 0 16px; }
+  /* Hangul: fixed 3 columns on very small phones */
+  .hangul-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .hangul-card { padding: 12px 8px; }
+  .hangul-char { font-size: 2rem; }
+  /* Flashcards: 2 columns stays fine even at 320px */
+  .flashcard-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ── Syllable Builder Layout ─────────────────────── */
