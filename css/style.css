@@ -2002,6 +2002,78 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--border-hover); }
 
+/* ── Mobile Nav Panel (non-sidebar pages) ────────────── */
+.mobile-nav-panel {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 280px;
+  max-width: 85vw;
+  height: calc(100% - var(--header-height));
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  z-index: var(--z-sidebar);
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+.mobile-nav-panel.open { transform: translateX(0); }
+
+.mobile-nav-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg-sidebar);
+}
+.mobile-nav-panel-title { font-weight: 700; font-size: 0.95rem; color: var(--text); }
+
+.mobile-nav-panel-links {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 2px;
+}
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+.mobile-nav-link:hover,
+.mobile-nav-link.active { background: var(--bg-sidebar-active); color: var(--primary-light); }
+
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.mobile-nav-overlay.open { opacity: 1; pointer-events: auto; }
+
+/* ── Sidebar close button (mobile only) ─────────────── */
+.sidebar-close-btn { display: none; }
+
+/* ── Table scroll wrapper ────────────────────────────── */
+.table-scroll-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-md);
+}
+
 /* ── Mobile nav toggle ──────────────────────────────── */
 .mobile-menu-btn { display: none; }
 
@@ -2023,6 +2095,26 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
   .main-content { margin-left: 0 !important; padding: 24px 20px; max-width: 100%; }
   .nav-links { display: none; }
   .mobile-menu-btn { display: flex; }
+
+  /* lesson-meta: allow wrapping on mobile */
+  .lesson-meta { flex-wrap: wrap; gap: 10px 16px; font-size: 0.78rem; }
+
+  /* Table: reduce padding, unblock eng-cell min-width */
+  .vocab-table th { padding: 8px 10px; }
+  .vocab-table td { padding: 8px 10px; }
+  .vocab-table .eng-cell { min-width: 0; }
+
+  /* Grid utility responsive overrides */
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+
+  /* Touch target size */
+  .icon-btn { width: 44px; height: 44px; }
+
+  /* Sidebar close button */
+  .sidebar-header { display: flex; align-items: center; justify-content: space-between; }
+  .sidebar-close-btn { display: flex; }
+
   .bento-1, .bento-2, .bento-3, .bento-4, .bento-5, .bento-6, .bento-7 { grid-column: span 12; }
   .quiz-options { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
@@ -2067,12 +2159,71 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
 
 @media (max-width: 480px) {
   .container { padding: 0 16px; }
+
+  /* Grid utility: full-width on small phones */
+  .grid-4 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+
   /* Hangul: fixed 3 columns on very small phones */
   .hangul-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .hangul-card { padding: 12px 8px; }
   .hangul-char { font-size: 2rem; }
   /* Flashcards: 2 columns stays fine even at 320px */
   .flashcard-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Stacked card table layout (small phones) ───────── */
+@media (max-width: 600px) {
+  .vocab-table,
+  .vocab-table thead,
+  .vocab-table tbody,
+  .vocab-table tr,
+  .vocab-table th,
+  .vocab-table td { display: block; }
+
+  .vocab-table { min-width: 0 !important; border: none; }
+  .vocab-table colgroup { display: none; }
+  .vocab-table thead tr { display: none; }
+
+  .vocab-table tbody tr {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 14px;
+    margin-bottom: 10px;
+  }
+
+  .vocab-table td {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 6px 0;
+    border-bottom: none;
+    border-top: 1px solid var(--border);
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .vocab-table td:first-child { border-top: none; }
+
+  .vocab-table td::before {
+    content: attr(data-label);
+    font-size: 0.63rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--text-muted);
+    min-width: 80px;
+    flex-shrink: 0;
+    padding-top: 3px;
+    line-height: 1.4;
+  }
+  .vocab-table td[data-label=""]::before { display: none; }
+
+  .vocab-table .kor-cell { width: auto !important; font-size: 1.1rem; }
+  .vocab-table .rom-cell { width: auto !important; }
+  .vocab-table .eng-cell { min-width: 0 !important; width: auto !important; }
+  .vocab-table tbody tr:hover { background: var(--bg-card); }
 }
 
 /* ── Syllable Builder Layout ─────────────────────── */

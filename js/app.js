@@ -102,8 +102,20 @@ const MobileSidebar = (() => {
     `;
     document.body.appendChild(overlay);
 
+    // Inject close button into sidebar header on mobile
+    const sidebarHeader = sidebar.querySelector('.sidebar-header');
+    if (sidebarHeader && !sidebarHeader.querySelector('.sidebar-close-btn')) {
+      const closeBtn = document.createElement('button');
+      closeBtn.className = 'icon-btn sidebar-close-btn';
+      closeBtn.setAttribute('aria-label', 'Close menu');
+      closeBtn.textContent = '✕';
+      closeBtn.addEventListener('click', close);
+      sidebarHeader.appendChild(closeBtn);
+    }
+
     btn.addEventListener('click', open);
     overlay.addEventListener('click', close);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
   }
 
   function open() {
@@ -118,6 +130,61 @@ const MobileSidebar = (() => {
     sidebar?.classList.remove('open');
     overlay.style.display = 'none';
     document.body.style.overflow = '';
+  }
+
+  return { init };
+})();
+
+/* ── Mobile Nav (non-sidebar pages) ─────────────────── */
+const MobileNav = (() => {
+  let panel, overlay;
+
+  function buildPanel() {
+    const links = Array.from(document.querySelectorAll('.nav-links a'));
+    const items = links.map(a =>
+      `<a href="${a.getAttribute('href')}" class="mobile-nav-link${a.classList.contains('active') ? ' active' : ''}">${a.innerHTML}</a>`
+    ).join('');
+
+    panel = document.createElement('div');
+    panel.className = 'mobile-nav-panel';
+    panel.innerHTML = `
+      <div class="mobile-nav-panel-head">
+        <span class="mobile-nav-panel-title">Menu</span>
+        <button class="icon-btn" id="mobile-nav-close" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="mobile-nav-panel-links">${items}</nav>
+    `;
+
+    overlay = document.createElement('div');
+    overlay.className = 'mobile-nav-overlay';
+
+    document.body.appendChild(overlay);
+    document.body.appendChild(panel);
+
+    document.getElementById('mobile-nav-close').addEventListener('click', close);
+    overlay.addEventListener('click', close);
+    panel.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  }
+
+  function open() {
+    panel.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    if (!panel) return;
+    panel.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function init() {
+    const btn = document.getElementById('mobile-menu-btn');
+    if (!btn || document.querySelector('.sidebar')) return;
+    buildPanel();
+    btn.addEventListener('click', open);
   }
 
   return { init };
@@ -817,6 +884,27 @@ window.QUIZ_DATA = {
 };
 
 
+/* ── Mobile Table: data-label + scroll wrap ──────────── */
+function initMobileTables() {
+  document.querySelectorAll('.vocab-table, .compare-table').forEach(table => {
+    const headers = Array.from(table.querySelectorAll('thead th'))
+      .map(th => th.textContent.trim());
+    if (headers.length) {
+      table.querySelectorAll('tbody tr').forEach(row => {
+        row.querySelectorAll('td').forEach((td, i) => {
+          td.setAttribute('data-label', headers[i] || '');
+        });
+      });
+    }
+    if (!table.parentElement.classList.contains('table-scroll-wrap')) {
+      const wrap = document.createElement('div');
+      wrap.className = 'table-scroll-wrap';
+      table.parentNode.insertBefore(wrap, table);
+      wrap.appendChild(table);
+    }
+  });
+}
+
 /* ── Search ─────────────────────────────────────────── */
 function initSearch() {
   const searchInput = document.getElementById('search-input');
@@ -1423,6 +1511,8 @@ document.addEventListener('DOMContentLoaded', () => {
   FloatingChars.init('floating-chars');
   ScrollAnimator.init();
   MobileSidebar.init();
+  MobileNav.init();
+  initMobileTables();
   HangulQuiz.init();
   AgentChat.init();
   LessonProgressGrid.init();
