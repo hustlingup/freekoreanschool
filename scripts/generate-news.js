@@ -38,7 +38,18 @@ const supabase  = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY);
 
 const TODAY      = new Date().toISOString().slice(0, 10);
 const MODEL      = 'claude-sonnet-4-6';
-const MAX_TOKENS = 3000;
+const MAX_TOKENS = 4000;
+
+// ── Article angle pool ────────────────────────────────────────────────────
+const ARTICLE_ANGLES = [
+  'current events — report what is happening right now in a clear, neutral tone',
+  'historical context — explain how this topic developed over time in Korea',
+  'daily life impact — focus on how this affects ordinary Koreans day-to-day',
+  'comparison — contrast the Korean situation with trends in other countries',
+  'debate and diverse views — present at least two contrasting perspectives',
+  'practical guide — give learners actionable cultural or language insight',
+  'human interest — focus on a specific community or group affected by this topic',
+];
 
 // ── Google News RSS search queries per topic slug ─────────────────────────
 const TOPIC_RSS_QUERIES = {
@@ -108,6 +119,7 @@ async function fetchRealNews(topicSlug) {
 async function generateArticle(topic) {
   const newsItems = await fetchRealNews(topic.slug);
   const hasRealNews = newsItems.length > 0;
+  const angle = ARTICLE_ANGLES[Math.floor(Math.random() * ARTICLE_ANGLES.length)];
 
   let newsContext;
   if (hasRealNews) {
@@ -133,13 +145,19 @@ async function generateArticle(topic) {
       `Do NOT invent specific events, statistics, or named individuals not supported by the headlines.`
     : `Write a factual, educational piece based only on verifiable information about Korea in this topic area.`;
 
-  const prompt = `You are a journalist writing for a Korean language-learning website. Readers are learning Korean and benefit from clear, factual writing.
+  const prompt = `You are creating educational content for a Korean language-learning website. Your goal is to inform and engage learners about real Korean life — not to market Korea. Write like a curious, balanced reporter.
 
 Today's date: ${TODAY}
+Assigned article angle: "${angle}"
 
 ${newsContext}
 
 ${factInstruction}
+
+REQUIREMENTS:
+1. BALANCED: include both positives AND challenges, debates, or critical perspectives. Avoid promotional language.
+2. LEARNER-FOCUSED: explain context that a non-Korean reader needs. Do not assume cultural familiarity.
+3. VOCABULARY: identify 4-5 key Korean words or phrases that naturally appear in the Korean content. Pick words that are useful, interesting, or topic-specific.
 
 Return ONLY valid JSON with exactly these fields:
 {
@@ -152,6 +170,16 @@ Return ONLY valid JSON with exactly these fields:
   "content_en": "Full article in English, 3-4 paragraphs separated by \\n\\n",
   "content_ko": "Full article in Korean, 3-4 paragraphs separated by \\n\\n",
   "content_ja": "Full article in Japanese, 3-4 paragraphs separated by \\n\\n",
+  "vocabulary": [
+    {
+      "word": "Korean word in Hangul",
+      "reading": "romanization (e.g. ban-do-che)",
+      "part_of_speech": "noun / verb / adjective / phrase",
+      "definition_en": "concise English definition",
+      "example_ko": "Short Korean example sentence using the word",
+      "example_en": "English translation of the example"
+    }
+  ],
   "seo_description": "Meta description under 155 chars",
   "seo_keywords": "5-7 comma-separated keywords",
   "level": "beginner or intermediate or advanced",
@@ -162,9 +190,10 @@ Return ONLY valid JSON with exactly these fields:
 
 Guidelines:
 - "level": beginner = everyday simple words; intermediate = common news vocabulary; advanced = technical or political terms
-- content_en, content_ko, and content_ja cover the same story but are NOT word-for-word translations
+- content_en, content_ko, and content_ja cover the same story but are NOT word-for-word translations; Japanese must use natural phrasing — not a translation of the English
 - Korean text must use actual Hangul characters — not romanization
 - Japanese text must use actual Kanji/Hiragana/Katakana — not romanization
+- No trailing commas after the last item in any array or object
 - Return only the JSON object — no markdown fences, no extra text`;
 
   const message = await anthropic.messages.create({
@@ -173,13 +202,19 @@ Guidelines:
     messages: [{ role: 'user', content: prompt }],
   });
 
-  const raw = message.content[0].text.trim();
+  return parseJSON(message.content[0].text.trim(), topic.slug);
+}
+
+function parseJSON(raw, context) {
+  const cleaned = raw.replace(/```(?:json)?\s*/g, '').trim();
   try {
-    return JSON.parse(raw);
+    return JSON.parse(cleaned);
   } catch {
-    const match = raw.match(/\{[\s\S]*\}/);
-    if (match) return JSON.parse(match[0]);
-    throw new Error(`JSON parse failed for ${topic.slug}: ${raw.slice(0, 200)}`);
+    const match = cleaned.match(/\{[\s\S]*\}/);
+    if (match) {
+      try { return JSON.parse(match[0]); } catch { /* fall through */ }
+    }
+    throw new Error(`JSON parse failed for ${context}: ${raw.slice(0, 200)}`);
   }
 }
 
@@ -191,23 +226,22 @@ async function generateDailySummary(articles) {
 Today's Korea news stories:
 ${headlines}
 
-Write a 1-2 sentence editorial summary highlighting the most interesting themes. Be confident and engaging.
+Write a brief, engaging editorial summary (2-3 sentences) that:
+1. Highlights the most interesting or contrasting themes across today's stories — avoid listing topics one by one
+2. Includes ONE useful Korean word or phrase (with its English meaning in parentheses) that connects to today's news
 
 Return ONLY valid JSON:
-{ "summary_en": "1-2 sentence English summary", "summary_ko": "1-2 sentence Korean summary (Hangul)", "summary_ja": "1-2 sentence Japanese summary (Kanji/Hiragana)" }`;
+{ "summary_en": "2-3 sentence English summary with one Korean term and translation", "summary_ko": "2-3 sentence Korean summary (Hangul)", "summary_ja": "2-3 sentence Japanese summary (Kanji/Hiragana)" }`;
 
   const message = await anthropic.messages.create({
     model: MODEL,
-    max_tokens: 400,
+    max_tokens: 1200,
     messages: [{ role: 'user', content: prompt }],
   });
 
-  const raw = message.content[0].text.trim();
   try {
-    return JSON.parse(raw);
+    return parseJSON(message.content[0].text.trim(), 'daily-summary');
   } catch {
-    const match = raw.match(/\{[\s\S]*\}/);
-    if (match) return JSON.parse(match[0]);
     return {
       summary_en: 'Korea news summary unavailable today.',
       summary_ko: '오늘의 한국 뉴스 요약을 불러올 수 없습니다.',
@@ -259,6 +293,7 @@ async function saveArticle(article, topic) {
     reading_time_en: article.reading_time_en || 3,
     reading_time_ko: article.reading_time_ko || 4,
     reading_time_ja: article.reading_time_ja || 4,
+    vocabulary:      article.vocabulary || [],
     status:          'published',
     ai_generated:    true,
     published_at:    new Date().toISOString(),
@@ -285,6 +320,7 @@ async function updateArticle(articleId, article, topicSlug) {
     reading_time_en: article.reading_time_en || 3,
     reading_time_ko: article.reading_time_ko || 4,
     reading_time_ja: article.reading_time_ja || 4,
+    vocabulary:      article.vocabulary || [],
     updated_at:      new Date().toISOString(),
   }).eq('id', articleId);
   if (error) throw new Error(`Update failed for [${topicSlug}] (${articleId}): ${error.message}`);

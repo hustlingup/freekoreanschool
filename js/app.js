@@ -323,6 +323,21 @@ function _googleTTS(text, speed) {
   if (speed && speed < 1) params.set('speed', speed);
   const audio = new Audio('/api/tts?' + params);
   _currentAudio = audio;
+
+  // If the proxy isn't available (localhost, file://, etc.), retry with direct Google TTS.
+  // Uses 'error' event (not play().catch) to avoid dual-playback — the error fires only
+  // after the proxy request fails, so the two engines never run simultaneously.
+  audio.addEventListener('error', () => {
+    if (_currentAudio !== audio) return;
+    const direct = new Audio(
+      'https://translate.google.com/translate_tts?ie=UTF-8' +
+      '&q=' + encodeURIComponent(text) + '&tl=ko&client=tw-ob' +
+      (speed && parseFloat(speed) < 1 ? '&ttsspeed=' + speed : '')
+    );
+    _currentAudio = direct;
+    direct.play().catch(() => {});
+  }, { once: true });
+
   audio.play().catch(() => {});
 }
 
@@ -3014,6 +3029,7 @@ const ArticlePage = (() => {
     renderMeta(article);
     renderHeader(article);
     renderThumbnail(article);
+    renderVocabulary(article);
     renderBody(article);
     renderImages(article);
     loadWeeklyStrip();
@@ -3097,6 +3113,34 @@ const ArticlePage = (() => {
       const src = document.getElementById('article-thumb-source');
       if (src && a.thumbnail_source) src.textContent = `Source: ${a.thumbnail_source}`;
     }
+  }
+
+  function renderVocabulary(a) {
+    const vocab = Array.isArray(a.vocabulary) ? a.vocabulary : [];
+    const section = document.getElementById('article-vocabulary-section');
+    if (!section || !vocab.length) return;
+    section.innerHTML = `
+      <div class="vocab-section">
+        <div class="vocab-section-header">
+          <span class="vocab-section-icon">📖</span>
+          <h3 class="vocab-section-title">Key Vocabulary · 주요 단어</h3>
+          <span class="vocab-section-sub">Words from this article</span>
+        </div>
+        <div class="vocab-grid">
+          ${vocab.map(v => `
+            <div class="vocab-card">
+              <div class="vocab-word">${newsEscape(v.word || '')}</div>
+              <div class="vocab-reading">${newsEscape(v.reading || '')}</div>
+              <div class="vocab-pos">${newsEscape(v.part_of_speech || '')}</div>
+              <div class="vocab-definition">${newsEscape(v.definition_en || '')}</div>
+              <div class="vocab-examples">
+                <div class="vocab-ex-ko">${newsEscape(v.example_ko || '')}</div>
+                <div class="vocab-ex-en">${newsEscape(v.example_en || '')}</div>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>`;
+    section.style.display = 'block';
   }
 
   function renderBody(a) {

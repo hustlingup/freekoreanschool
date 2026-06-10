@@ -2155,6 +2155,35 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
   .kr-speak-btn:active { opacity: 1; border-color: var(--primary); transform: scale(0.96); }
   .btn:active { transform: scale(0.97); opacity: 0.9; }
   .icon-btn:active { transform: scale(0.92); }
+
+  /* ── Card text readability boosts (mobile) ── */
+  .bento-desc { font-size: 0.9rem; line-height: 1.7; }
+  .article-title { font-size: 1.05rem; }
+  .article-excerpt { font-size: 0.9rem; line-height: 1.75; }
+  .place-desc { font-size: 0.9rem; line-height: 1.72; }
+  .hangul-rom { font-size: 0.84rem; }
+  .hangul-name { font-size: 0.76rem; }
+  .flashcard .rom { font-size: 0.82rem; }
+  .flashcard .en { font-size: 0.84rem; line-height: 1.55; }
+  .culture-tip-desc { font-size: 0.91rem; }
+  .transport-desc { font-size: 0.91rem; }
+  .app-desc { font-size: 0.84rem; line-height: 1.65; }
+  .travel-promo-desc { font-size: 0.9rem; line-height: 1.68; }
+  .food-item { font-size: 0.9rem; }
+  .kt-issue-body { font-size: 0.91rem; }
+  .sodam-meaning { font-size: 0.88rem; }
+  .bap-eng, .bap-kor { font-size: 0.86rem; }
+  .ecology-desc, .table-culture-desc, .surgery-desc, .drinking-desc { font-size: 0.88rem; }
+  .mil-branch-desc { font-size: 0.83rem; }
+  .mbti-reason-body, .mbti-pole-desc { font-size: 0.86rem; }
+  .bloodtype-trait { font-size: 0.84rem; }
+  .bloodtype-kor-trait { font-size: 0.82rem; }
+
+  /* ── Card padding tightened for narrow screens ── */
+  .transport-card { padding: 20px 16px; }
+  .culture-tip-card { padding: 16px; }
+  .travel-promo-card { flex-direction: column; padding: 20px 16px; gap: 12px; }
+  .travel-promo-arrow { display: none; }
 }
 
 @media (max-width: 480px) {
@@ -2169,8 +2198,13 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
   .hangul-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .hangul-card { padding: 12px 8px; }
   .hangul-char { font-size: 2rem; }
-  /* Flashcards: 2 columns stays fine even at 320px */
-  .flashcard-grid { grid-template-columns: repeat(2, 1fr); }
+  /* Flashcards: 1 column at 480px so text has room to breathe */
+  .flashcard-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 360px) {
+  .apps-grid { grid-template-columns: 1fr; }
+  .container { padding: 0 12px; }
 }
 
 /* ── Stacked card table layout (small phones) ───────── */
@@ -2195,10 +2229,8 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
   }
 
   .vocab-table td {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 6px 0;
+    display: block;
+    padding: 8px 0;
     border-bottom: none;
     border-top: 1px solid var(--border);
     width: 100% !important;
@@ -2208,15 +2240,13 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
 
   .vocab-table td::before {
     content: attr(data-label);
-    font-size: 0.63rem;
+    display: block;
+    font-size: 0.6rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.09em;
     color: var(--text-muted);
-    min-width: 80px;
-    flex-shrink: 0;
-    padding-top: 3px;
-    line-height: 1.4;
+    margin-bottom: 3px;
   }
   .vocab-table td[data-label=""]::before { display: none; }
 
@@ -4673,6 +4703,23 @@ kbd {
 .vocab-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: rgba(232,0,61,0.08); border: 1px solid rgba(232,0,61,0.2); border-radius: var(--radius-full); font-size: 0.78rem; font-weight: 600; color: var(--primary-light); }
 .vocab-pill .vocab-kor { font-family: var(--font-korean); font-weight: 700; }
 .vocab-pill .vocab-eng { color: var(--text-muted); font-weight: 400; }
+
+/* ── Article Vocabulary Cards ─────────────────────────── */
+.vocab-section { margin: 1.5rem 0 2rem; }
+.vocab-section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+.vocab-section-icon { font-size: 1.3rem; }
+.vocab-section-title { font-size: 1rem; font-weight: 700; margin: 0; }
+.vocab-section-sub { font-size: 0.78rem; color: var(--text-muted); margin-left: auto; }
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.vocab-card { background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 14px 16px; transition: border-color var(--transition); }
+.vocab-card:hover { border-color: var(--border-hover); }
+.vocab-word { font-family: var(--font-korean); font-size: 1.2rem; font-weight: 700; color: var(--primary-light); margin-bottom: 2px; }
+.vocab-reading { font-size: 0.78rem; color: var(--text-muted); font-style: italic; margin-bottom: 2px; }
+.vocab-pos { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+.vocab-definition { font-size: 0.87rem; font-weight: 600; line-height: 1.4; margin-bottom: 10px; }
+.vocab-examples { border-top: 1px solid var(--border); padding-top: 8px; }
+.vocab-ex-ko { font-family: var(--font-korean); font-size: 0.82rem; margin-bottom: 2px; }
+.vocab-ex-en { font-size: 0.76rem; color: var(--text-muted); font-style: italic; }
 
 .article-related { margin-bottom: 48px; }
 .article-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }

@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <title>Hangul Alphabet 한글 | 한국어 학교</title>
   <meta name="description" content="Learn the Korean alphabet — Hangul. 14 consonants, 21 vowels, syllable blocks. Most learners read Korean in 2 hours.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,25 +120,21 @@
 <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
   <div class="lesson-wrap">
 
-    <div class="lesson-breadcrumb">
-      <a href="../index.html">Home</a>
-      <span class="sep">›</span>
-      <span>Hangul Alphabet</span>
-    </div>
-
-    <div class="lesson-header">
+    <div class="lesson-header animate-on-scroll">
+      <div class="lesson-breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <span>Hangul Alphabet</span>
+      </div>
       <div class="lesson-tag">✏️ Starter · Lesson 1</div>
       <h1 class="lesson-title">Hangul Alphabet: <span class="grad-text">한글</span></h1>
-      <p class="lesson-meta">
+      <div class="lesson-meta">
         <span>🔤 40 Letters &amp; Combinations</span>
         <span>📊 Beginner</span>
         <span>🔖 Hangul Basics · 한글 기초</span>
         <span>📅 Created 1443 AD</span>
-      </p>
-    </div>
-
-    <div class="lesson-intro">
-      <p>Hangul (한글) is the official writing system of South Korea, created in 1443 by King Sejong the Great (세종대왕). Unlike Chinese characters, Hangul is a phonetic alphabet — each symbol represents a sound. This lesson covers the complete alphabet: all 10 basic vowels, 11 compound vowels, 14 consonants, tensed and aspirated variants, vowel harmony, and how syllables are built. Most learners can read and write basic Hangul within a few hours!</p>
+      </div>
+      <p class="lesson-intro">Hangul (한글) is the official writing system of South Korea, created in 1443 by King Sejong the Great (세종대왕). Unlike Chinese characters, Hangul is a phonetic alphabet — each symbol represents a sound. This lesson covers the complete alphabet: all 10 basic vowels, 11 compound vowels, 14 consonants, tensed and aspirated variants, vowel harmony, and how syllables are built. Most learners can read and write basic Hangul within a few hours!</p>
     </div>
 
     <!-- Section 1: About Hangul -->
@@ -575,11 +576,27 @@
       </div>
     </div>
 
-    <!-- Lesson Navigation -->
-    <div class="lesson-nav" style="display:flex;gap:8px;margin-top:40px;padding-top:24px;border-top:1px solid var(--border);align-items:center">
-      <a href="../index.html" class="lesson-nav-btn lesson-nav-prev" style="flex:1;min-width:0;white-space:nowrap">← Home</a>
-      <button class="btn btn-primary" style="flex:1.5;white-space:nowrap;min-width:0" data-lesson-complete="hangul-basics">Mark as Complete ✓</button>
-      <a href="syllable-blocks.html" class="lesson-nav-btn lesson-nav-next" style="flex:1;min-width:0;white-space:nowrap;justify-content:flex-end">Syllable Blocks →</a>
+    <div class="lesson-complete-wrap" style="margin-top:2rem;text-align:center">
+      <button class="btn btn-primary btn-lg" data-lesson-complete="hangul-basics">
+        Mark Lesson Complete ✓
+      </button>
+    </div>
+
+    <div class="lesson-nav-footer">
+      <a href="../index.html" class="lesson-nav-btn">
+        <span>←</span>
+        <div>
+          <span class="lesson-nav-label">Previous</span>
+          <span class="lesson-nav-title">Home</span>
+        </div>
+      </a>
+      <a href="syllable-blocks.html" class="lesson-nav-btn next">
+        <span>→</span>
+        <div>
+          <span class="lesson-nav-label">Next</span>
+          <span class="lesson-nav-title">Syllable Blocks</span>
+        </div>
+      </a>
     </div>
 
   </div>
