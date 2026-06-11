@@ -47,8 +47,9 @@ for (const [pagePath, entries] of Object.entries(byPage)) {
     const svgRelative = imgSrc(entry.svgPath, pageDir);
     const cls = entry.element;
 
-    // Find the Nth <div with this class
-    const regex = new RegExp(`<div([^>]*\\bclass="[^"]*\\b${cls}\\b[^"]*"[^>]*)>`, 'g');
+    // Find the Nth <div with this exact class (use negative lookahead/behind to avoid
+    // matching subclasses like place-image-overlay when looking for place-image)
+    const regex = new RegExp(`<div([^>]*\\bclass="[^"]*(?<![\\w-])${cls}(?![\\w-])[^"]*"[^>]*)>`, 'g');
     let found = null;
     let count = 0;
     let m;
