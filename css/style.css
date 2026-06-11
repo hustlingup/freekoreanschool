@@ -234,16 +234,11 @@ code, kbd {
 .logo-mark {
   width: 36px;
   height: 36px;
-  background: var(--grad-primary);
   border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-korean);
-  font-size: 1.1rem;
-  font-weight: 900;
-  color: white;
+  object-fit: cover;
   box-shadow: var(--shadow-primary);
+  display: block;
+  flex-shrink: 0;
 }
 
 .logo-text {
