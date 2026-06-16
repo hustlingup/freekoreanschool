@@ -1,0 +1,216 @@
+{
+  "lesson": "vocab-weather",
+  "totalSteps": 20,
+  "stages": [
+    { "id": 1, "name": "Weather", "name_kr": "날씨", "first_step": 1, "last_step": 20, "time_minutes": 12 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Weather in Korean",
+      "title_kr": "날씨",
+      "body": "Korea has four distinct seasons: spring (봄), summer (여름), autumn (가을), and winter (겨울). Summers are hot and humid with a rainy season (장마, jangma), while winters can be very cold and dry. Checking the weather is the first topic in many Korean conversations.",
+      "tip": { "icon": "🌤️", "label": "The four seasons", "text": "봄(spring) → 여름(summer) → 가을(autumn) → 겨울(winter). Korea's autumn foliage and spring cherry blossoms are world-famous. Typhoons hit in late summer — 태풍 조심하세요! (Watch out for typhoons!)" }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["날", "씨"],
+      "romanization": "nalsi",
+      "katakana": "ナルシ",
+      "audio": "날씨",
+      "meaning": "Weather — 날씨 어때요? = How is the weather?",
+      "meaning_ja": "天気 ― 날씨 어때요？（天気はどうですか？）"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["맑", "다"],
+      "romanization": "makda",
+      "katakana": "マクタ",
+      "audio": "맑다",
+      "meaning": "Clear / sunny — 오늘 맑아요 = It's clear today",
+      "meaning_ja": "晴れている ― 오늘 맑아요（今日は晴れています）"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["흐", "리", "다"],
+      "romanization": "heurida",
+      "katakana": "フリダ",
+      "audio": "흐리다",
+      "meaning": "Cloudy / overcast — 날씨가 흐려요 = The weather is cloudy",
+      "meaning_ja": "曇っている ― 날씨가 흐려요（天気が曇っています）"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["비"],
+      "romanization": "bi",
+      "katakana": "ピ",
+      "audio": "비",
+      "meaning": "Rain — 비가 와요 = It's raining (lit. rain comes)",
+      "meaning_ja": "雨 ― 비가 와요（雨が降っています）"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["눈"],
+      "romanization": "nun",
+      "katakana": "ヌン",
+      "audio": "눈",
+      "meaning": "Snow — 눈이 와요 = It's snowing (also means 'eye')",
+      "meaning_ja": "雪 ― 눈이 와요（雪が降っています）「目」も눈"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["바", "람"],
+      "romanization": "baram",
+      "katakana": "パラム",
+      "audio": "바람",
+      "meaning": "Wind — 바람이 많이 불어요 = It's very windy",
+      "meaning_ja": "風 ― 바람이 많이 불어요（風がとても強いです）"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["덥", "다"],
+      "romanization": "deopda",
+      "katakana": "トプタ",
+      "audio": "덥다",
+      "meaning": "Hot — 너무 더워요 = It's too hot",
+      "meaning_ja": "暑い ― 너무 더워요（暑すぎます）"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["춥", "다"],
+      "romanization": "chupda",
+      "katakana": "チュプタ",
+      "audio": "춥다",
+      "meaning": "Cold — 너무 추워요 = It's too cold",
+      "meaning_ja": "寒い ― 너무 추워요（寒すぎます）"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["시", "원", "하", "다"],
+      "romanization": "siwonhada",
+      "katakana": "シウォナダ",
+      "audio": "시원하다",
+      "meaning": "Cool / refreshing — ideal autumn weather in Korea",
+      "meaning_ja": "涼しい / 爽やか ― 韓国の秋にぴったりの天気"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["따", "뜻", "하", "다"],
+      "romanization": "ttatteuthada",
+      "katakana": "タトゥタダ",
+      "audio": "따뜻하다",
+      "meaning": "Warm — perfect spring weather description",
+      "meaning_ja": "暖かい ― 春の天気を表す定番の言葉"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["우", "산"],
+      "romanization": "usan",
+      "katakana": "ウサン",
+      "audio": "우산",
+      "meaning": "Umbrella — 우산 가져왔어요? = Did you bring an umbrella?",
+      "meaning_ja": "傘 ― 우산 가져왔어요？（傘を持ってきましたか？）"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["태", "풍"],
+      "romanization": "taepung",
+      "katakana": "テプン",
+      "audio": "태풍",
+      "meaning": "Typhoon — hits Korea in late summer (July-September)",
+      "meaning_ja": "台風 ― 韓国には夏末（7〜9月）に来る"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["안", "개"],
+      "romanization": "angae",
+      "katakana": "アンゲ",
+      "audio": "안개",
+      "meaning": "Fog — 안개가 짙어요 = The fog is thick",
+      "meaning_ja": "霧 ― 안개가 짙어요（霧が濃いです）"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["황", "사"],
+      "romanization": "hwangsa",
+      "katakana": "ファンサ",
+      "audio": "황사",
+      "meaning": "Yellow dust / sand storm — seasonal dust from China, a major concern in spring",
+      "meaning_ja": "黄砂 ― 中国から来る砂塵、春に特にひどい"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["장", "마"],
+      "romanization": "jangma",
+      "katakana": "チャンマ",
+      "audio": "장마",
+      "meaning": "Rainy season — Korea's monsoon period in June-July",
+      "meaning_ja": "梅雨 / 雨季 ― 韓国の梅雨は6〜7月"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "It's raining. How do you say this in Korean?",
+      "choices": ["눈이 와요", "비가 와요", "바람이 불어요", "날씨가 맑아요"],
+      "correct": "비가 와요"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "The weather is 따뜻해요. What is it like?",
+      "choices": ["Hot", "Cold", "Warm", "Windy"],
+      "correct": "Warm"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Korea's seasonal dust storms blowing in from China are called...",
+      "choices": ["장마 (jangma)", "황사 (hwangsa)", "태풍 (taepung)", "안개 (angae)"],
+      "correct": "황사 (hwangsa)"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Weather Complete!",
+      "title_kr": "날씨 완성!",
+      "message": "날씨 이야기를 해봐요! (Let's talk about the weather!) Weather is the universal conversation opener. Now you can discuss Korea's dramatic four seasons, complain about humidity in summer (더워 죽겠어요!), and marvel at the first snow (첫눈).",
+      "next_url": "vocabulary.html?cat=verbs"
+    }
+  ]
+}

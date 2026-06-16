@@ -1,0 +1,548 @@
+{
+  "lesson": "speech-levels",
+  "totalSteps": 33,
+  "stages": [
+    {
+      "id": 1,
+      "name": "합쇼체 (Formal)",
+      "name_kr": "합쇼체",
+      "first_step": 1,
+      "last_step": 9,
+      "time_minutes": 8
+    },
+    {
+      "id": 2,
+      "name": "해요체 (Polite)",
+      "name_kr": "해요체",
+      "first_step": 10,
+      "last_step": 18,
+      "time_minutes": 8
+    },
+    {
+      "id": 3,
+      "name": "반말 (Casual)",
+      "name_kr": "반말",
+      "first_step": 19,
+      "last_step": 26,
+      "time_minutes": 7
+    },
+    {
+      "id": 4,
+      "name": "Choosing a Level",
+      "name_kr": "레벨 선택",
+      "first_step": 27,
+      "last_step": 33,
+      "time_minutes": 6
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Korean Speech Levels Overview",
+      "title_kr": "높임말 개요",
+      "body": "Korean has a system of speech levels (높임말) that determines how formal or polite your language is. The level you choose depends on the social relationship, age, rank, and context of the conversation. The three levels you'll encounter most are: 합쇼체 (formal polite, used in presentations, military, and customer service), 해요체 (everyday polite, the default for adults talking to non-close acquaintances), and 반말 (casual speech, used with close friends and younger people). Getting the level wrong can come across as rude, cold, or over-familiar.",
+      "tip": {
+        "icon": "🇰🇷",
+        "label": "Why speech levels matter in Korea",
+        "text": "Korea is a hierarchical society shaped by Confucian values — age, rank, and relationship all determine how you speak. Using 반말 (casual speech) with a stranger or senior is rude. Using over-formal 합쇼체 with a friend can feel stiff and distant. Matching the right level is a key social skill."
+      },
+      "body_ja": "韓国語には 높임말（敬語システム）という言葉遣いのレベルがあり、言語がどのくらいフォーマル・丁寧かを決めます。どのレベルを選ぶかは、社会的な関係・年齢・地位・会話の状況によります。最もよく使う3つのレベルは：합쇼체（フォーマルな敬語、プレゼン・軍・接客業で使用）、해요체（日常的な丁寧語、初対面の大人同士のデフォルト）、반말（カジュアルな話し方、親しい友人や年下に使用）です。レベルを間違えると、無礼・冷たい・または馴れ馴れしい印象を与えることがあります。",
+      "tip_ja": {
+        "label": "韓国で言葉遣いのレベルが重要な理由",
+        "text": "韓国は儒教的価値観によって形成された階層社会です——年齢・地位・関係性がすべて話し方を決めます。見知らぬ人や目上の人に반말（カジュアルな話し方）を使うのは失礼です。友人に합쇼체を使いすぎると距離感が生まれます。適切なレベルを選ぶことは重要な社会的スキルです。"
+      }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "합쇼체 — The Formal Register",
+      "title_kr": "합쇼체",
+      "body": "합쇼체 is the highest formal speech level in Korean. It is used in TV news broadcasts, military orders, formal presentations, hotel/airline staff speech, and customer service. Verb endings change to -ㅂ니다 / -습니다 for statements and -ㅂ니까? / -습니까? for questions. The vocabulary also shifts — 밥 (food) becomes 식사, 있어요 becomes 있습니다. This level signals maximum respect and professionalism.",
+      "tip": {
+        "icon": "📺",
+        "label": "Where to hear 합쇼체",
+        "text": "Turn on Korean news (KBS, MBC, SBS) and you'll hear 합쇼체 throughout. Hotel staff, airline announcements, formal ceremonies, and military settings all use this level. It's also the level used in written formal documents, though pure written style (문어체) differs slightly."
+      },
+      "body_ja": "합쇼체は韓国語で最も高い格式のある言葉遣いです。TVニュース、軍の命令、フォーマルなプレゼン、ホテル・航空会社のスタッフの言葉、接客業で使われます。動詞の語尾が陳述文では -ㅂ니다/-습니다 に、疑問文では -ㅂ니까?/-습니까? に変わります。語彙も変化します——밥（ご飯）は 식사 に、있어요 は 있습니다 になります。このレベルは最大限の敬意とプロフェッショナリズムを示します。",
+      "tip_ja": {
+        "label": "합쇼체を聞く場面",
+        "text": "韓国のニュース（KBS・MBC・SBS）をつけると합쇼체があちこちで聞けます。ホテルスタッフ・機内アナウンス・式典・軍の場面でもすべてこのレベルが使われます。正式な文書の書き言葉にも使われますが、純粋な書き言葉スタイル（문어체）は若干異なります。"
+      }
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "입",
+        "니",
+        "다"
+      ],
+      "romanization": "im-ni-da",
+      "audio": "입니다",
+      "meaning": "is / am / are — formal statement ending",
+      "meaning_ja": "です / であります（フォーマル文末）",
+      "katakana": "イムニダ"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "감",
+        "사",
+        "합",
+        "니",
+        "다"
+      ],
+      "romanization": "gam-sa-ham-ni-da",
+      "audio": "감사합니다",
+      "meaning": "Thank you (formal)",
+      "meaning_ja": "ありがとうございます（フォーマル）",
+      "katakana": "カムサハムニダ"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "안",
+        "녕",
+        "하",
+        "십",
+        "니",
+        "까"
+      ],
+      "romanization": "an-nyeong-ha-sim-ni-kka",
+      "audio": "안녕하십니까",
+      "meaning": "Hello? / How do you do? (formal greeting, question form)",
+      "meaning_ja": "こんにちは？（フォーマルな挨拶・疑問形）",
+      "katakana": "アンニョンハシムニッカ"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "합쇼체 is best described as…",
+      "choices": [
+        "casual speech",
+        "the most formal speech level",
+        "informal polite",
+        "slang"
+      ],
+      "correct": "the most formal speech level"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "합쇼체 Verb Endings (-ㅂ니다/-습니다)",
+      "title_kr": "-ㅂ니다/-습니다",
+      "body": "The hallmark of 합쇼체 is the -ㅂ니다 / -습니다 ending. Use -ㅂ니다 after verb stems ending in a vowel: 가다 → 갑니다 (I go). Use -습니다 after stems ending in a consonant: 먹다 → 먹습니다 (I eat). For questions, the ending changes to -ㅂ니까? / -습니까?: 가다 → 갑니까? (Are you going?). The pronunciation note: 갑니다 is pronounced [감니다] due to nasal assimilation.",
+      "tip": {
+        "icon": "🔤",
+        "label": "Pronunciation shift in -ㅂ니다",
+        "text": "갑니다 (I go) is spelled 갑니다 but pronounced 감니다. This is because ㅂ before ㄴ changes to ㅁ by nasal assimilation (same mouth position, nasal airflow). This pattern appears throughout 합쇼체 forms."
+      },
+      "body_ja": "합쇼체の特徴は -ㅂ니다/-습니다 語尾です。母音で終わる動詞語幹には -ㅂ니다 を使います：가다 → 갑니다（行きます）。子音で終わる語幹には -습니다 を使います：먹다 → 먹습니다（食べます）。疑問文では語尾が -ㅂ니까?/-습니까? に変わります：가다 → 갑니까?（行きますか?）。発音メモ：갑니다 は鼻音同化により [감니다] と発音されます。",
+      "tip_ja": {
+        "label": "-ㅂ니다の発音変化",
+        "text": "갑니다（行きます）は갑니다と書かれますが[감니다]と発音されます。これはㅂがㄴの前に来るとき鼻音同化によりㅁに変わるためです（同じ口の形で鼻から息が抜ける）。このパターンは합쇼체の語形全体に現れます。"
+      }
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "먹",
+        "습",
+        "니",
+        "다"
+      ],
+      "romanization": "meok-seum-ni-da",
+      "audio": "먹습니다",
+      "meaning": "I eat / am eating (formal)",
+      "meaning_ja": "食べます（フォーマル）",
+      "katakana": "モクスムニダ"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "갑",
+        "니",
+        "다"
+      ],
+      "romanization": "gam-ni-da",
+      "audio": "갑니다",
+      "meaning": "I go / am going (formal) — pronounced 감니다",
+      "meaning_ja": "行きます（フォーマル）",
+      "katakana": "カムニダ"
+    },
+    {
+      "id": 10,
+      "stage": 2,
+      "type": "reading_card",
+      "title": "해요체 — Everyday Polite Speech",
+      "title_kr": "해요체",
+      "body": "해요체 is the speech level you will use most in daily Korean life. It is polite enough for strangers and acquaintances but warm enough to feel natural. The ending -아요 / -어요 / -해요 is added to the verb stem. 해요체 is used in shops, with coworkers you're not extremely close to, with adults you're meeting for the first time, and in most learner-to-native interactions. It is the 'default polite' of Korean.",
+      "tip": {
+        "icon": "😊",
+        "label": "해요체 is your default setting",
+        "text": "When in doubt, use 해요체. It's the safest, most universally appropriate level in Korea. You can never go wrong being politely respectful. Switching to 합쇼체 or 반말 should only happen when the situation clearly calls for it."
+      },
+      "body_ja": "해요체 は韓国の日常生活で最もよく使う言葉遣いです。初対面の人や知り合いには十分丁寧で、かつ自然な温かみがあります。語尾 -아요/-어요/-해요 を動詞語幹に付けます。해요체 は、お店・それほど親しくない同僚・初対面の大人・ほとんどの学習者と母語話者のやりとりで使われます。韓国語における「基本の丁寧語」です。",
+      "tip_ja": {
+        "label": "해요체 はデフォルト設定",
+        "text": "迷ったら해요체を使いましょう。韓国で最も安全かつ普遍的に適切なレベルです。丁寧さで損することは決してありません。합쇼체や반말への切り替えは、状況が明らかにそれを求めるときだけにしましょう。"
+      }
+    },
+    {
+      "id": 11,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "안",
+        "녕",
+        "하",
+        "세",
+        "요"
+      ],
+      "romanization": "an-nyeong-ha-se-yo",
+      "audio": "안녕하세요",
+      "meaning": "Hello / Good day (polite, everyday greeting)",
+      "meaning_ja": "こんにちは（丁寧・日常的）",
+      "katakana": "アンニョンハセヨ"
+    },
+    {
+      "id": 12,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "감",
+        "사",
+        "해",
+        "요"
+      ],
+      "romanization": "gam-sa-hae-yo",
+      "audio": "감사해요",
+      "meaning": "Thank you (polite, less formal than 감사합니다)",
+      "meaning_ja": "ありがとうございます（丁寧・やや軽め）",
+      "katakana": "カムサヘヨ"
+    },
+    {
+      "id": 13,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "먹",
+        "어",
+        "요"
+      ],
+      "romanization": "meo-geo-yo",
+      "audio": "먹어요",
+      "meaning": "I eat / am eating (polite)",
+      "meaning_ja": "食べます（丁寧）",
+      "katakana": "モゴヨ"
+    },
+    {
+      "id": 14,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "가",
+        "요"
+      ],
+      "romanization": "ga-yo",
+      "audio": "가요",
+      "meaning": "I go / am going (polite)",
+      "meaning_ja": "行きます（丁寧）",
+      "katakana": "カヨ"
+    },
+    {
+      "id": 15,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "해요체 is best described as…",
+      "choices": [
+        "very formal / broadcast Korean",
+        "the most casual form",
+        "everyday polite / default adult speech",
+        "archaic honorific"
+      ],
+      "correct": "everyday polite / default adult speech"
+    },
+    {
+      "id": 16,
+      "stage": 2,
+      "type": "reading_card",
+      "title": "-아요 / -어요 Pattern",
+      "title_kr": "-아요/-어요 패턴",
+      "body": "The 해요체 ending rule: add -아요 if the last vowel of the stem is ㅏ or ㅗ (bright vowels), and add -어요 for all other vowels. 하다 verbs use -해요 instead. Examples: 가다 → 가 + 아요 = 가요 (contracted). 먹다 → 먹 + 어요 = 먹어요. 공부하다 → 공부해요. In practice, 아/어 often contract with the stem's final vowel: 가 + 아요 → 가요, 오 + 아요 → 와요.",
+      "tip": {
+        "icon": "📋",
+        "label": "Quick chart",
+        "text": "가다 → 가요. 오다 → 와요. 먹다 → 먹어요. 마시다 → 마셔요. 하다 → 해요. 보다 → 봐요. 자다 → 자요. The endings follow a vowel harmony pattern — try to recognize the bright/dark vowel distinction in the stem."
+      },
+      "body_ja": "해요체 語尾のルール：語幹の最後の母音が ㅏ か ㅗ（明るい母音）なら -아요 を、それ以外の母音なら -어요 を付けます。하다 動詞は代わりに -해요 を使います。例：가다 → 가 + 아요 = 가요（縮約）。먹다 → 먹 + 어요 = 먹어요。공부하다 → 공부해요。実際には아/어が語幹末尾の母音と縮約されることが多いです：가 + 아요 → 가요、오 + 아요 → 와요。",
+      "tip_ja": {
+        "label": "活用早見表",
+        "text": "가다 → 가요。오다 → 와요。먹다 → 먹어요。마시다 → 마셔요。하다 → 해요。보다 → 봐요。자다 → 자요。語尾は母音調和パターンに従います——語幹の明るい/暗い母音の区別を意識して覚えてみましょう。"
+      }
+    },
+    {
+      "id": 17,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "좋",
+        "아",
+        "요"
+      ],
+      "romanization": "jo-a-yo",
+      "audio": "좋아요",
+      "meaning": "It's good / I like it (polite present)",
+      "meaning_ja": "いいです / 好きです（丁寧）",
+      "katakana": "チョアヨ"
+    },
+    {
+      "id": 18,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "Which form of 'I go' is 해요체 (everyday polite)?",
+      "choices": [
+        "가",
+        "갑니다",
+        "가요",
+        "가라"
+      ],
+      "correct": "가요"
+    },
+    {
+      "id": 19,
+      "stage": 3,
+      "type": "reading_card",
+      "title": "반말 — Casual Speech",
+      "title_kr": "반말",
+      "body": "반말 (ban-mal, literally 'half-speech') is the casual register used among close friends of similar age, with younger people, and within family. It drops the -요 from 해요체 endings: 가요 → 가, 먹어요 → 먹어, 좋아요 → 좋아. 반말 can sound rude if used with someone older or with a stranger — always start with 해요체 and switch to 반말 only if the other person initiates or explicitly suggests it. In K-dramas, characters switching from 해요체 to 반말 signals a big shift in closeness.",
+      "tip": {
+        "icon": "🤝",
+        "label": "Getting permission to use 반말",
+        "text": "A natural way to ask permission: '말 놓아도 돼요?' (Can I speak casually?) or '반말해도 돼요?' (Is it okay to use 반말?). You can also wait for the other person to naturally switch first — that's your invitation."
+      },
+      "body_ja": "반말（字義通り「半分の言葉」）は、年齢が近い親しい友人同士・年下の人・家族間で使われるカジュアルな話し方です。해요체の語尾から -요 を省略します：가요 → 가、먹어요 → 먹어、좋아요 → 좋아。年上の人や見知らぬ人に 반말 を使うと失礼になります——常に 해요체 で始め、相手が先に 반말 を使ったり明示的に提案したりした場合のみ切り替えましょう。Kドラマでは、キャラクターが 해요체 から 반말 に切り替えるシーンは、関係性の大きな変化を表します。",
+      "tip_ja": {
+        "label": "반말の許可を得る",
+        "text": "許可を求める自然な言い方：「말 놓아도 돼요?」（カジュアルに話していいですか?）または「반말해도 돼요?」（반말を使っても大丈夫ですか?）。相手が先に自然に반말に切り替えるのを待つのもよい方法です——それがあなたへの招待です。"
+      }
+    },
+    {
+      "id": 20,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "안",
+        "녕"
+      ],
+      "romanization": "an-nyeong",
+      "audio": "안녕",
+      "meaning": "Hi / Bye (casual greeting and farewell)",
+      "meaning_ja": "やあ / じゃあね（カジュアル）",
+      "katakana": "アンニョン"
+    },
+    {
+      "id": 21,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "고",
+        "마",
+        "워"
+      ],
+      "romanization": "go-ma-wo",
+      "audio": "고마워",
+      "meaning": "Thanks (casual)",
+      "meaning_ja": "ありがとう（カジュアル）",
+      "katakana": "コマウォ"
+    },
+    {
+      "id": 22,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "먹",
+        "어"
+      ],
+      "romanization": "meo-geo",
+      "audio": "먹어",
+      "meaning": "eat / I eat (casual)",
+      "meaning_ja": "食べる / 食べよう（カジュアル）",
+      "katakana": "モゴ"
+    },
+    {
+      "id": 23,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "가"
+      ],
+      "romanization": "ga",
+      "audio": "가",
+      "meaning": "go / I go (casual)",
+      "meaning_ja": "行く / 行こう（カジュアル）",
+      "katakana": "カ"
+    },
+    {
+      "id": 24,
+      "stage": 3,
+      "type": "match_quiz",
+      "prompt": "Which greeting is 반말 (casual)?",
+      "choices": [
+        "안녕하세요",
+        "안녕하십니까",
+        "안녕",
+        "반갑습니다"
+      ],
+      "correct": "안녕"
+    },
+    {
+      "id": 25,
+      "stage": 3,
+      "type": "reading_card",
+      "title": "When to Use 반말 (and When NOT to)",
+      "title_kr": "반말 사용 규칙",
+      "body": "Use 반말 with: close friends of similar age, younger siblings, younger students, or children. Do NOT use 반말 with: strangers, anyone older than you, your boss or teacher, service staff, or people you've just met (even if they seem similar in age). The mistake many Korean learners make is assuming that because someone is friendly, 반말 is appropriate. Friendliness and speech-level permission are separate — always wait for a signal.",
+      "tip": {
+        "icon": "⚠️",
+        "label": "One exception: self-talk",
+        "text": "When Koreans talk to themselves, mutter, or write diary entries, they use 반말 or even a neutral style without any endings. This is natural and not directed at anyone — so no politeness is needed. This is also why drama monologues and internal thoughts are in 반말."
+      },
+      "body_ja": "반말を使っていい相手：年齢が近い親しい友人、年下の兄弟・姉妹、後輩の学生、子供。반말を使ってはいけない相手：見知らぬ人、自分より年上の人、上司・先生、店員・サービス業の人、または初対面の人（同年代に見えても）。多くの韓国語学習者が犯すミスは、相手が友好的だから 반말 を使っていいと思うことです。親しみやすさと 반말 の許可は別物です——必ずサインを待ちましょう。",
+      "tip_ja": {
+        "label": "例外：独り言",
+        "text": "韓国人が独り言を言うとき・ぶつぶつ言うとき・日記を書くときは、반말またはニュートラルなスタイルを使います。誰かに向けた言葉ではないので敬語は不要です。Kドラマの独白や心の声が반말であるのはこのためです。"
+      }
+    },
+    {
+      "id": 26,
+      "stage": 3,
+      "type": "match_quiz",
+      "prompt": "You're talking to a stranger your same age on the street. Which level should you use?",
+      "choices": [
+        "반말",
+        "해요체",
+        "both are fine",
+        "합쇼체 only"
+      ],
+      "correct": "해요체"
+    },
+    {
+      "id": 27,
+      "stage": 4,
+      "type": "reading_card",
+      "title": "문어체 — Written/Formal Style",
+      "title_kr": "문어체",
+      "body": "문어체 (mun-eo-che, 'written language style') is used in formal writing — academic papers, news articles, legal documents, and literature. The verb ending is -다 (the plain dictionary form): 가다, 먹는다, 했다. It sounds unnatural in spoken conversation but appears everywhere in written Korean. Learners encounter this when reading Korean text and may wonder why it differs from what they've been taught — that's because textbooks teach spoken registers, while reading requires recognizing 문어체.",
+      "tip": {
+        "icon": "📝",
+        "label": "문어체 vs 합쇼체",
+        "text": "Both are formal, but 합쇼체 is for speech (speaker to listener) and 문어체 is for writing (no specific listener). A news anchor speaks in 합쇼체. A newspaper article is in 문어체. In K-dramas, you'll hear 문어체 when characters read aloud from books or letters."
+      },
+      "body_ja": "문어체（「書き言葉スタイル」）はフォーマルな文章——学術論文・ニュース記事・法律文書・文学作品——で使われます。動詞語尾は -다（辞書形のまま）です：가다、먹는다、했다。話し言葉では不自然に聞こえますが、韓国語の文章のあちこちに登場します。学習者は韓国語のテキストを読んでいて「教わった内容と違う」と感じることがあります——それはテキストブックが話し言葉を教え、読書では 문어체 の認識が必要なためです。",
+      "tip_ja": {
+        "label": "문어체 vs 합쇼체",
+        "text": "どちらもフォーマルですが、합쇼체は話し言葉（話者から聞き手へ）で、문어체は書き言葉（特定の聞き手なし）です。ニュースアンカーは합쇼체で話します。新聞記事は문어체です。Kドラマでは、キャラクターが本や手紙を音読する場面で문어체が聞けます。"
+      }
+    },
+    {
+      "id": 28,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "이",
+        "다"
+      ],
+      "romanization": "i-da",
+      "audio": "이다",
+      "meaning": "to be (copula, written/dictionary form)",
+      "meaning_ja": "だ（書き言葉・辞書形）",
+      "katakana": "イダ"
+    },
+    {
+      "id": 29,
+      "stage": 4,
+      "type": "reading_card",
+      "title": "Speech Level Comparison Chart",
+      "title_kr": "높임말 비교표",
+      "body": "Here is how the same idea looks across speech levels. 'I eat': 먹습니다 (formal 합쇼체) → 먹어요 (polite 해요체) → 먹어 (casual 반말) → 먹는다 (written 문어체). 'Thank you': 감사합니다 (formal) → 감사해요 (polite) → 고마워 (casual). 'I go': 갑니다 (formal) → 가요 (polite) → 가 (casual) → 간다 (written). Noticing these patterns will help you identify which level a speaker is using when you watch Korean dramas or listen to native speech.",
+      "tip": {
+        "icon": "🎬",
+        "label": "Use K-dramas to train your ear",
+        "text": "K-dramas are a gold mine for speech level practice. Bosses speak in 합쇼체 to their team. Friends switch to 반말 with each other. Scenes in hospitals or offices use 해요체. If you notice a sudden change in speech level between characters — that's a dramatic moment."
+      },
+      "body_ja": "同じ内容をすべての言葉遣いレベルで比較してみましょう。「食べる」：먹습니다（フォーマル 합쇼체）→ 먹어요（丁寧語 해요체）→ 먹어（カジュアル 반말）→ 먹는다（書き言葉 문어체）。「ありがとう」：감사합니다（フォーマル）→ 감사해요（丁寧語）→ 고마워（カジュアル）。「行く」：갑니다（フォーマル）→ 가요（丁寧語）→ 가（カジュアル）→ 간다（書き言葉）。これらのパターンに気づくことで、韓国ドラマを見たり母語話者の話を聞いたりするときにどのレベルが使われているかが分かります。",
+      "tip_ja": {
+        "label": "Kドラマで耳を鍛える",
+        "text": "Kドラマは言葉遣いレベルの練習に最適の教材です。上司はチームに합쇼체で話します。友人同士は반말に切り替えます。病院やオフィスのシーンは해요체です。キャラクター間で言葉遣いレベルが急に変わる場面——それはドラマ上の重要な瞬間です。"
+      }
+    },
+    {
+      "id": 30,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "감사합니다 is the ___ form of 'thank you'",
+      "choices": [
+        "반말",
+        "해요체",
+        "합쇼체",
+        "문어체"
+      ],
+      "correct": "합쇼체"
+    },
+    {
+      "id": 31,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "In a job interview in Korea, which speech level should you use?",
+      "choices": [
+        "반말",
+        "해요체",
+        "합쇼체",
+        "문어체"
+      ],
+      "correct": "합쇼체"
+    },
+    {
+      "id": 32,
+      "stage": 4,
+      "type": "reading_card",
+      "title": "Mixing Speech Levels — A Common Mistake",
+      "title_kr": "높임말 혼용 주의",
+      "body": "One of the most common learner mistakes is mixing speech levels — using 먹어요 (해요체) in one sentence and 먹습니다 (합쇼체) in the next. Native speakers notice this immediately. It sounds like mixing formal and casual in the same breath. Choose one level for the conversation and stick to it. The only exception is intentional switching for rhetorical effect (like a business email that opens formally and ends warmly), but even this follows clear patterns.",
+      "tip": {
+        "icon": "❌",
+        "label": "Don't mix endings mid-sentence",
+        "text": "Wrong: 저는 학생이에요. 공부합니다. (Mixed 해요체 and 합쇼체). Correct: 저는 학생이에요. 공부해요. (All 해요체). Or: 저는 학생입니다. 공부합니다. (All 합쇼체). Consistency within a conversation signals fluency and social awareness."
+      },
+      "body_ja": "最もよくある学習者のミスの一つが言葉遣いレベルの混用です——ある文では 먹어요（해요체）を使いながら、次の文では 먹습니다（합쇼체）を使うなど。母語話者はすぐに気づきます。フォーマルとカジュアルを同じ文脈で混ぜているように聞こえます。会話では一つのレベルを選んで統一しましょう。例外は、修辞的な効果のための意図的な切り替え（フォーマルに始まり温かく終わるビジネスメールなど）ですが、これも明確なパターンに従います。",
+      "tip_ja": {
+        "label": "語尾を混ぜない",
+        "text": "誤り：저는 학생이에요. 공부합니다.（해요체と합쇼체が混在）。正解：저는 학생이에요. 공부해요.（すべて해요체）。または：저는 학생입니다. 공부합니다.（すべて합쇼체）。一つのレベルを統一することが流暢さと社会的センスを示します。"
+      }
+    },
+    {
+      "id": 33,
+      "stage": 4,
+      "type": "lesson_complete",
+      "title": "Speech Levels Complete!",
+      "title_kr": "높임말 완료!",
+      "message": "You've mastered the Korean speech level system — formal 합쇼체, everyday 해요체, casual 반말, and written 문어체. You're now equipped to read social situations and speak at the right level.",
+      "next_url": "emotions.html"
+    }
+  ]
+}

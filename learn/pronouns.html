@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -8,18 +8,12 @@
   <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>Korean Pronouns | 한국어 학교</title>
-  <meta name="description" content="Learn Korean pronouns (대명사) — first, second, and third person, demonstratives, reflexives, and question pronouns. Beginner Korean lesson.">
+  <title>Korean Pronouns — 대명사 | 한국어 학교</title>
+  <meta name="description" content="Learn Korean pronouns — first person, second person, we/our, demonstratives, and question words. Interactive lessons with audio and quizzes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .ja-kana  { display: none; font-size: 0.85em; color: var(--text-secondary); }
-    body.lang-ja .ja-kana  { display: inline; }
-    .kata     { display: none; font-size: 0.82em; color: var(--text-secondary); }
-    body.lang-ja .kata     { display: block; }
-    .ja-block { display: none; }
-    body.lang-ja .ja-block { display: block; }
-    body.lang-ja .no-ja   { display: none; }
-  </style>
 </head>
 <body>
 
@@ -40,7 +34,7 @@
     <div class="header-actions">
       <div class="search-bar">
         <span class="search-icon">🔍</span>
-        <input type="text" id="search-input" placeholder="Search lessons..." autocomplete="off" aria-label="Search">
+        <input type="text" id="search-input" placeholder="Search lessons...">
       </div>
       <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
       <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
@@ -49,7 +43,8 @@
   </div>
 </header>
 
-<!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+<!-- XP Badge (fixed top-right) -->
+<div class="xp-badge" id="xp-badge" aria-live="polite">⚡ 0 XP</div>
 
 <!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
 <aside class="sidebar" id="sidebar">
@@ -65,27 +60,27 @@
     <div class="sidebar-section">Beginner</div>
     <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> Vocab <span class="accordion-arrow">▶</span></button>
     <div class="sidebar-accordion-content" id="accordion-vocab">
-      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
-      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
-      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
-      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
-      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
-      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
-      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
-      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
-      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
-      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
-      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
-      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
-      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
-      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
-      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
-      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
-      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
-      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
-      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
-      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
-      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
+      <a href="vocabulary.html?cat=greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
+      <a href="vocabulary.html?cat=numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
+      <a href="vocabulary.html?cat=family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
+      <a href="vocabulary.html?cat=food-drink" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
+      <a href="vocabulary.html?cat=colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
+      <a href="vocabulary.html?cat=days-time" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
+      <a href="vocabulary.html?cat=places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
+      <a href="vocabulary.html?cat=emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
+      <a href="vocabulary.html?cat=body-parts" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
+      <a href="vocabulary.html?cat=travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
+      <a href="vocabulary.html?cat=shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
+      <a href="vocabulary.html?cat=weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
+      <a href="vocabulary.html?cat=verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
+      <a href="vocabulary.html?cat=adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
+      <a href="vocabulary.html?cat=workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
+      <a href="vocabulary.html?cat=health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
+      <a href="vocabulary.html?cat=media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
+      <a href="vocabulary.html?cat=proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
+      <a href="vocabulary.html?cat=academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
+      <a href="vocabulary.html?cat=news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
+      <a href="vocabulary.html?cat=konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
     </div>
     <a href="pronouns.html" class="sidebar-link active" data-level="beginner"><span class="link-icon">👥</span> Pronouns <span class="link-badge badge-beginner">Beginner</span></a>
     <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> Common Nouns <span class="link-badge badge-beginner">Beginner</span></a>
@@ -106,15 +101,9 @@
       <a href="grammar.html#adverbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">💯</span> Degree Adverbs <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#nominalizer" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔤</span> Nominalizer -는 것 <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#comparatives" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚖️</span> Comparatives <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#good-like" class="sidebar-link" data-level="intermediate"><span class="link-icon">❤️</span> Like: 좋다 vs 좋아하다 <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#still-already" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏳</span> Still, Already <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#indefinite" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Someone, Something <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">📢</span> Imperative -(으)세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#negative-imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">🚫</span> Don't: -지 마세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#method" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛤️</span> Method: -(으)로 <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#good-bad-at" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎯</span> Good/Poor At <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#all-more" class="sidebar-link" data-level="advanced"><span class="link-icon">📦</span> All, More: 다, 더 <span class="link-badge badge-advanced">Advanced</span></a>
-      <a href="grammar.html#do-part2" class="sidebar-link" data-level="advanced"><span class="link-icon">✳️</span> -도 Advanced Uses <span class="link-badge badge-advanced">Advanced</span></a>
     </div>
     <div class="sidebar-section">Intermediate</div>
     <a href="speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> Formal vs Informal <span class="link-badge badge-intermediate">Intermediate</span></a>
@@ -134,700 +123,43 @@
 <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
   <div class="lesson-wrap">
 
-    <!-- Breadcrumb -->
-    <div class="lesson-breadcrumb">
-      <a href="../index.html">Home</a>
-      <span class="sep">›</span>
-      <a href="hangul.html">Learn</a>
-      <span class="sep">›</span>
-      <span>Pronouns</span>
-    </div>
-
-    <!-- Lesson Header -->
-    <div class="lesson-header">
-      <div class="lesson-tag">👥 Beginner · Lesson 5</div>
-      <h1 class="lesson-title">Korean Pronouns: <span class="grad-text">대명사</span></h1>
-      <p class="lesson-meta">
-        <span>👥 Formality Levels</span>
+    <div class="lesson-header animate-on-scroll">
+      <div class="lesson-breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <a href="hangul.html">Learn</a>
+        <span>›</span>
+        <span>Pronouns</span>
+      </div>
+      <div class="lesson-tag">👥 Beginner · Lesson 4</div>
+      <h1 class="lesson-title">Korean <span class="grad-text">Pronouns</span> — 대명사</h1>
+      <div class="lesson-meta">
         <span>📊 Beginner</span>
-        <span>🔖 Grammar</span>
-        <span>🔄 Context-Based Omission</span>
-      </p>
-    </div>
-
-    <div class="lesson-intro">
-      <p>Korean pronouns work very differently from English. The language has distinct levels of formality built into its pronoun system — who you're talking to determines which words you use. You'll also find that Korean often <strong>omits pronouns entirely</strong> when context makes them clear. This lesson covers every pronoun category you need to communicate naturally in Korean.</p>
-    </div>
-
-    <!-- ─── Section 1: First Person ─── -->
-    <div class="lesson-section animate-on-scroll" id="first-person">
-      <h2><span class="section-num">1</span> First Person Pronouns — I/Me (1인칭)</h2>
-      <p>Korean has two words for "I": <strong style="font-family:var(--font-korean)">나</strong> (na) for casual speech and <strong style="font-family:var(--font-korean)">저</strong> (jeo) for polite speech. Choosing the wrong one signals disrespect — or sounds overly stiff with close friends. Each pronoun changes form depending on its grammatical role in the sentence.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr>
-            <th style="width:14%">Korean</th>
-            <th style="width:22%">Romanization</th>
-            <th style="width:32%">English</th>
-            <th style="width:16%">Register</th>
-            <th>Listen</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">나</td>
-            <td class="rom-cell">na<span class="ja-kana"> ナ</span></td>
-            <td class="eng-cell">I / me (subject, casual)</td>
-            <td>Casual</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('나')" aria-label="Pronounce 나">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">나를 / 날</td>
-            <td class="rom-cell">na-reul / nal<span class="ja-kana"> ナルル / ナル</span></td>
-            <td class="eng-cell">me (object, casual)</td>
-            <td>Casual</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('나를')" aria-label="Pronounce 나를">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">나의 / 내</td>
-            <td class="rom-cell">na-ui / nae<span class="ja-kana"> ナウィ / ネ</span></td>
-            <td class="eng-cell">my (possessive, casual)</td>
-            <td>Casual</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('나의')" aria-label="Pronounce 나의">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">나에게 / 나한테</td>
-            <td class="rom-cell">na-ege / na-hante<span class="ja-kana"> ナエゲ / ナハンテ</span></td>
-            <td class="eng-cell">to me / for me (casual)</td>
-            <td>Casual</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('나에게')" aria-label="Pronounce 나에게">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">저</td>
-            <td class="rom-cell">jeo<span class="ja-kana"> チョ</span></td>
-            <td class="eng-cell">I / me (subject, polite)</td>
-            <td>Polite</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('저')" aria-label="Pronounce 저">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">저를 / 절</td>
-            <td class="rom-cell">jeo-reul / jeol<span class="ja-kana"> チョルル / チョル</span></td>
-            <td class="eng-cell">me (object, polite)</td>
-            <td>Polite</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('저를')" aria-label="Pronounce 저를">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">저의 / 제</td>
-            <td class="rom-cell">jeo-ui / je<span class="ja-kana"> チョウィ / チェ</span></td>
-            <td class="eng-cell">my (possessive, polite)</td>
-            <td>Polite</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('저의')" aria-label="Pronounce 저의">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">저에게 / 저한테</td>
-            <td class="rom-cell">jeo-ege / jeo-hante<span class="ja-kana"> チョエゲ / チョハンテ</span></td>
-            <td class="eng-cell">to me / for me (polite)</td>
-            <td>Polite</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('저에게')" aria-label="Pronounce 저에게">🔊</button></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="tip-box">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">Formality Tip</div>
-          <div class="tip-text">Use <strong style="font-family:var(--font-korean)">저</strong> (jeo) when speaking to strangers, elders, teachers, bosses, or anyone you want to show respect to. Use <strong style="font-family:var(--font-korean)">나</strong> (na) with close friends, family members younger than you, or people of equal or lower social standing. When in doubt — use 저.</div>
-        </div>
+        <span>⏱ 28 min</span>
+        <span>🔊 Audio on every word</span>
+        <span>⚡ XP + Streak system</span>
       </div>
+      <ul class="lesson-intro-bullets">
+        <li>Learn polite 저 vs casual 나, and why Korean often drops pronouns entirely</li>
+        <li>Understand why 당신 is rarely used and how to address people naturally</li>
+        <li>Master 우리 (our/my), demonstratives (이것·그것·저것), and question words</li>
+        <li>4 stages with listen-and-repeat audio and quizzes throughout</li>
+      </ul>
+    </div>
 
-      <div class="example-box">
-        <div class="example-header"><span>📘 나 vs 저 in Context</span></div>
-        <div class="example-body">
-          <div class="korean-example">
-            <div class="kor-line">나는 학생이야.</div>
-            <div class="rom-line">Naneun haksaengiya.</div>
-            <div class="eng-line no-ja">I'm a student. (casual — said to a friend)</div>
-            <div class="eng-line ja-block">私は学生です。（カジュアル — 友達に言う）</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">저는 학생이에요.</div>
-            <div class="rom-line">Jeoneun haksaengieyo.</div>
-            <div class="eng-line no-ja">I'm a student. (polite — said to a teacher or stranger)</div>
-            <div class="eng-line ja-block">私は学生です。（丁寧 — 先生や見知らぬ人に言う）</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">내 이름은 민준이야.</div>
-            <div class="rom-line">Nae ireumeun Minjuniya.</div>
-            <div class="eng-line no-ja">My name is Minjun. (casual)</div>
-            <div class="eng-line ja-block">私の名前はミンジュンです。（カジュアル）</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">제 이름은 민준이에요.</div>
-            <div class="rom-line">Je ireumeun Minjunieyo.</div>
-            <div class="eng-line no-ja">My name is Minjun. (polite)</div>
-            <div class="eng-line ja-block">私の名前はミンジュンです。（丁寧）</div>
-          </div>
-        </div>
+    <!-- ── Step-Runner Shell ─────────────────────────── -->
+    <div id="step-shell">
+      <div style="text-align:center;padding:60px 20px;color:var(--text-muted)">
+        Loading lesson…
       </div>
     </div>
 
-    <!-- ─── Section 2: Second Person ─── -->
-    <div class="lesson-section animate-on-scroll" id="second-person">
-      <h2><span class="section-num">2</span> Second Person Pronouns — You (2인칭)</h2>
-      <p>This is one of the most important differences between Korean and English: <strong>Korean speakers almost never say "you" directly.</strong> Instead, they use the listener's name, their title, or a respectful term. Direct use of "you" can easily sound cold or even rude.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr>
-            <th style="width:18%">Korean</th>
-            <th style="width:22%">Romanization</th>
-            <th style="width:26%">English</th>
-            <th style="width:22%">Usage</th>
-            <th>Listen</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">너</td>
-            <td class="rom-cell">neo<span class="ja-kana"> ノ</span></td>
-            <td class="eng-cell">you (very casual)</td>
-            <td>With close friends / children only</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('너')" aria-label="Pronounce 너">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">당신</td>
-            <td class="rom-cell">dangshin<span class="ja-kana"> タンシン</span></td>
-            <td class="eng-cell">you (formal / literary)</td>
-            <td>Songs, formal writing, spouses</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('당신')" aria-label="Pronounce 당신">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">그쪽</td>
-            <td class="rom-cell">geujjok<span class="ja-kana"> クッチョク</span></td>
-            <td class="eng-cell">"that side" — polite you</td>
-            <td>Politely addressing a stranger</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('그쪽')" aria-label="Pronounce 그쪽">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">[이름] + 씨</td>
-            <td class="rom-cell">[name] + ssi<span class="ja-kana"> [이름] + ッシ</span></td>
-            <td class="eng-cell">Mr./Ms. [Name] — polite</td>
-            <td>Professional / semi-formal settings</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('민준씨')" aria-label="Pronounce 씨">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">선생님</td>
-            <td class="rom-cell">seonsaengnim<span class="ja-kana"> ソンセンニム</span></td>
-            <td class="eng-cell">teacher (used as "you")</td>
-            <td>Addressing a teacher directly</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('선생님')" aria-label="Pronounce 선생님">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">언니 / 오빠 / 누나 / 형</td>
-            <td class="rom-cell">eonni / oppa / nuna / hyeong<span class="ja-kana"> オンニ / オッパ / ヌナ / ヒョン</span></td>
-            <td class="eng-cell">older sister / older brother (used as "you")</td>
-            <td>Addressing older friends as family</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('언니')" aria-label="Pronounce 언니">🔊</button></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="info-box">
-        <span class="tip-icon">ℹ️</span>
-        <div class="tip-content">
-          <div class="tip-label">Did you know?</div>
-          <div class="tip-text"><strong style="font-family:var(--font-korean)">당신</strong> (dangshin) appears frequently in K-Pop lyrics and love songs, but using it in everyday conversation can sound cold, confrontational, or even combative. Between married couples it can be affectionate, but in other contexts it may feel like a challenge. Stick to names and titles in real conversation.</div>
-        </div>
-      </div>
-
-      <div class="example-box">
-        <div class="example-header"><span>📘 Addressing Someone Without Saying "You"</span></div>
-        <div class="example-body">
-          <div class="korean-example">
-            <div class="kor-line">선생님, 질문 있어요.</div>
-            <div class="rom-line">Seonsaengnim, jilmun isseoyo.</div>
-            <div class="eng-line no-ja">Teacher, I have a question. (NOT: "Do you have a moment?")</div>
-            <div class="eng-line ja-block">先生、質問があります。（「今お時間ありますか？」ではなく）</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">민준 씨, 지금 바빠요?</div>
-            <div class="rom-line">Minjun ssi, jigeum bappayo?</div>
-            <div class="eng-line no-ja">Minjun, are you busy right now?</div>
-            <div class="eng-line ja-block">ミンジュンさん、今お忙しいですか？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">그쪽은 어디서 오셨어요?</div>
-            <div class="rom-line">Geujjogeun eodiseo osyeosseoyo?</div>
-            <div class="eng-line no-ja">Where are you from? (politely, to a stranger)</div>
-            <div class="eng-line ja-block">どちらからいらっしゃいましたか？（見知らぬ人に丁寧に）</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ─── Section 3: Third Person ─── -->
-    <div class="lesson-section animate-on-scroll" id="third-person">
-      <h2><span class="section-num">3</span> Third Person — He / She / They (3인칭)</h2>
-      <p>Just as with "you," Korean speakers rarely use third-person pronouns in spoken conversation. Instead they use names, titles, or demonstrative expressions like <strong style="font-family:var(--font-korean)">이분</strong> (this person) and <strong style="font-family:var(--font-korean)">저분</strong> (that person over there). The words 그 and 그녀 exist mainly in translated literature.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr>
-            <th style="width:18%">Korean</th>
-            <th style="width:20%">Romanization</th>
-            <th style="width:28%">English</th>
-            <th style="width:22%">Usage</th>
-            <th>Listen</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">그</td>
-            <td class="rom-cell">geu<span class="ja-kana"> ク</span></td>
-            <td class="eng-cell">he / that person</td>
-            <td>Written / literary</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('그')" aria-label="Pronounce 그">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">그녀</td>
-            <td class="rom-cell">geunyeo<span class="ja-kana"> クニョ</span></td>
-            <td class="eng-cell">she (literary)</td>
-            <td>Written only — rare in speech</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('그녀')" aria-label="Pronounce 그녀">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">그들</td>
-            <td class="rom-cell">geudeul<span class="ja-kana"> クドゥル</span></td>
-            <td class="eng-cell">they</td>
-            <td>Written / formal contexts</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('그들')" aria-label="Pronounce 그들">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">그것 / 그거</td>
-            <td class="rom-cell">geugeot / geugeo<span class="ja-kana"> クゴッ / クゴ</span></td>
-            <td class="eng-cell">it / that thing</td>
-            <td>Common in speech</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('그것')" aria-label="Pronounce 그것">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">이분</td>
-            <td class="rom-cell">ibun<span class="ja-kana"> イブン</span></td>
-            <td class="eng-cell">this person (formal)</td>
-            <td>Introducing someone respectfully</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('이분')" aria-label="Pronounce 이분">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">저분</td>
-            <td class="rom-cell">jeobun<span class="ja-kana"> チョブン</span></td>
-            <td class="eng-cell">that person over there (formal)</td>
-            <td>Pointing to someone at a distance</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('저분')" aria-label="Pronounce 저분">🔊</button></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="tip-box">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">Speaking Tip</div>
-          <div class="tip-text"><strong style="font-family:var(--font-korean)">그</strong> and <strong style="font-family:var(--font-korean)">그녀</strong> are mostly encountered in book translations from English. In natural spoken Korean, you would say the person's name, use <strong style="font-family:var(--font-korean)">이분 / 저분</strong>, or simply omit the pronoun entirely if context is clear.</div>
-        </div>
-      </div>
-
-      <div class="example-box">
-        <div class="example-header"><span>📘 Third Person in Natural Korean</span></div>
-        <div class="example-body">
-          <div class="korean-example">
-            <div class="kor-line">이분이 저희 선생님이세요.</div>
-            <div class="rom-line">Ibuni jeohui seonsaengnimiseyo.</div>
-            <div class="eng-line no-ja">This person is our teacher. (formal introduction)</div>
-            <div class="eng-line ja-block">この方が私たちの先生です。（フォーマルな紹介）</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">저분은 누구예요?</div>
-            <div class="rom-line">Jeobun-eun nuguyeyo?</div>
-            <div class="eng-line no-ja">Who is that person over there?</div>
-            <div class="eng-line ja-block">あちらの方はどなたですか？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">민준이가 어제 왔어요.</div>
-            <div class="rom-line">Minjuni-ga eoje wasseoyo.</div>
-            <div class="eng-line no-ja">Minjun came yesterday. (name used, no "he")</div>
-            <div class="eng-line ja-block">ミンジュンが昨日来ました。（名前を使い、「彼」は省略）</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ─── Section 4: We / Our ─── -->
-    <div class="lesson-section animate-on-scroll" id="we-our">
-      <h2><span class="section-num">4</span> We / Our (우리)</h2>
-      <p>The word <strong style="font-family:var(--font-korean)">우리</strong> (uri) literally means "we" or "our," but Koreans use it where English speakers would say "my." This reflects a cultural emphasis on collective identity — family, relationships, and belonging are expressed communally even when one person is speaking.</p>
-
-      <div class="info-box">
-        <span class="tip-icon">ℹ️</span>
-        <div class="tip-content">
-          <div class="tip-label">Cultural Note</div>
-          <div class="tip-text">In Korean, saying <strong style="font-family:var(--font-korean)">나의 엄마</strong> ("my mom") can sound distant or cold. The natural expression is <strong style="font-family:var(--font-korean)">우리 엄마</strong> ("our mom"), even when talking about your own individual mother. The same applies to your home (<strong style="font-family:var(--font-korean)">우리 집</strong>), your school (<strong style="font-family:var(--font-korean)">우리 학교</strong>), and your country (<strong style="font-family:var(--font-korean)">우리 나라</strong>). This reflects how deeply Koreans value communal bonds.</div>
-        </div>
-      </div>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr>
-            <th style="width:18%">Korean</th>
-            <th style="width:25%">Romanization</th>
-            <th>English</th>
-            <th style="width:16%">Listen</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">우리</td>
-            <td class="rom-cell">uri<span class="ja-kana"> ウリ</span></td>
-            <td class="eng-cell">we / our / my (collective)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('우리')" aria-label="Pronounce 우리">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">저희</td>
-            <td class="rom-cell">jeohui<span class="ja-kana"> チョヒ</span></td>
-            <td class="eng-cell">our / we (humble, polite)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('저희')" aria-label="Pronounce 저희">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">여러분</td>
-            <td class="rom-cell">yeoreobun<span class="ja-kana"> ヨロブン</span></td>
-            <td class="eng-cell">everyone / ladies and gentlemen</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('여러분')" aria-label="Pronounce 여러분">🔊</button></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="example-box">
-        <div class="example-header"><span>📘 우리 Used for "My"</span></div>
-        <div class="example-body">
-          <div class="korean-example">
-            <div class="kor-line">우리 엄마가 요리를 잘해요.</div>
-            <div class="rom-line">Uri eommaga yorireul jalhaeyo.</div>
-            <div class="eng-line no-ja">My mom cooks well. (lit. "our mom cooks well")</div>
-            <div class="eng-line ja-block">お母さんの料理は上手です。（直訳：「うちのお母さんの料理は上手」）</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">우리 집에 오세요.</div>
-            <div class="rom-line">Uri jibe oseyo.</div>
-            <div class="eng-line no-ja">Please come to my house. (lit. "our house")</div>
-            <div class="eng-line ja-block">うちに来てください。（直訳：「우리 집」）</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">우리 나라는 한국이에요.</div>
-            <div class="rom-line">Uri naraneun Hangugeyo.</div>
-            <div class="eng-line no-ja">Our country is Korea.</div>
-            <div class="eng-line ja-block">私たちの国は韓国です。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">여러분, 안녕하세요!</div>
-            <div class="rom-line">Yeoreobun, annyeonghaseyo!</div>
-            <div class="eng-line no-ja">Hello everyone!</div>
-            <div class="eng-line ja-block">皆さん、こんにちは！</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ─── Section 5: Demonstrative Pronouns ─── -->
-    <div class="lesson-section animate-on-scroll" id="demonstrative">
-      <h2><span class="section-num">5</span> Demonstrative Pronouns — This / That (지시대명사)</h2>
-      <p>Korean uses a three-way demonstrative system built on the roots <strong style="font-family:var(--font-korean)">이</strong> (near the speaker), <strong style="font-family:var(--font-korean)">그</strong> (near the listener or previously mentioned), and <strong style="font-family:var(--font-korean)">저</strong> (far from both). These roots combine with nouns like 것 (thing), 분 (person), and 곳 (place).</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr>
-            <th style="width:18%">Korean</th>
-            <th style="width:26%">Romanization</th>
-            <th>English</th>
-            <th style="width:16%">Listen</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">이것 / 이거</td>
-            <td class="rom-cell">igeot / igeo<span class="ja-kana"> イゴッ / イゴ</span></td>
-            <td class="eng-cell">this (thing near speaker)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('이것')" aria-label="Pronounce 이것">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">그것 / 그거</td>
-            <td class="rom-cell">geugeot / geugeo<span class="ja-kana"> クゴッ / クゴ</span></td>
-            <td class="eng-cell">that (near listener / previously mentioned)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('그것')" aria-label="Pronounce 그것">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">저것 / 저거</td>
-            <td class="rom-cell">jeogeot / jeogeo<span class="ja-kana"> チョゴッ / チョゴ</span></td>
-            <td class="eng-cell">that (far from both, over there)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('저것')" aria-label="Pronounce 저것">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">이분</td>
-            <td class="rom-cell">ibun<span class="ja-kana"> イブン</span></td>
-            <td class="eng-cell">this person (formal)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('이분')" aria-label="Pronounce 이분">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">그분</td>
-            <td class="rom-cell">geubun<span class="ja-kana"> クブン</span></td>
-            <td class="eng-cell">that person / he / she (formal)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('그분')" aria-label="Pronounce 그분">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">이곳</td>
-            <td class="rom-cell">igot<span class="ja-kana"> イゴッ</span></td>
-            <td class="eng-cell">this place / here</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('이곳')" aria-label="Pronounce 이곳">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">저곳</td>
-            <td class="rom-cell">jeogot<span class="ja-kana"> チョゴッ</span></td>
-            <td class="eng-cell">that place over there</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('저곳')" aria-label="Pronounce 저곳">🔊</button></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="example-box">
-        <div class="example-header"><span>📘 Demonstrative Dialogue</span></div>
-        <div class="example-body">
-          <div class="korean-example">
-            <div class="kor-line">이거 뭐예요?</div>
-            <div class="rom-line">Igeo mwoyeyo?</div>
-            <div class="eng-line no-ja">What is this?</div>
-            <div class="eng-line ja-block">これは何ですか？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">그거 제 가방이에요.</div>
-            <div class="rom-line">Geugeo je gabangieeyo.</div>
-            <div class="eng-line no-ja">That is my bag.</div>
-            <div class="eng-line ja-block">それは私のバッグです。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">저거 뭐예요? 저기 봐요!</div>
-            <div class="rom-line">Jeogeo mwoyeyo? Jeogi bwayo!</div>
-            <div class="eng-line no-ja">What is that over there? Look over there!</div>
-            <div class="eng-line ja-block">あれは何ですか？あちらを見て！</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ─── Section 6: Reflexive Pronouns ─── -->
-    <div class="lesson-section animate-on-scroll" id="reflexive">
-      <h2><span class="section-num">6</span> Reflexive Pronouns (재귀대명사)</h2>
-      <p>Reflexive pronouns in Korean express actions done by oneself, to oneself, or independently. They are used when the subject and object of a sentence are the same, or to emphasize independent action.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr>
-            <th style="width:18%">Korean</th>
-            <th style="width:25%">Romanization</th>
-            <th>English</th>
-            <th style="width:16%">Listen</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">자신</td>
-            <td class="rom-cell">jashin<span class="ja-kana"> チャシン</span></td>
-            <td class="eng-cell">oneself / himself / herself</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('자신')" aria-label="Pronounce 자신">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">스스로</td>
-            <td class="rom-cell">seuseuro<span class="ja-kana"> ススロ</span></td>
-            <td class="eng-cell">by oneself / on one's own</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('스스로')" aria-label="Pronounce 스스로">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">혼자</td>
-            <td class="rom-cell">honja<span class="ja-kana"> ホンジャ</span></td>
-            <td class="eng-cell">alone / by oneself</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('혼자')" aria-label="Pronounce 혼자">🔊</button></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="example-box">
-        <div class="example-header"><span>📘 Reflexive Pronouns in Sentences</span></div>
-        <div class="example-body">
-          <div class="korean-example">
-            <div class="kor-line">저는 스스로 공부해요.</div>
-            <div class="rom-line">Jeoneun seuseuro gongbuhaeyo.</div>
-            <div class="eng-line no-ja">I study by myself / on my own.</div>
-            <div class="eng-line ja-block">私は自分で勉強します。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">혼자 갔어요.</div>
-            <div class="rom-line">Honja gasseoyo.</div>
-            <div class="eng-line no-ja">I went alone.</div>
-            <div class="eng-line ja-block">一人で行きました。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">자신을 믿으세요.</div>
-            <div class="rom-line">Jashin-eul mideusaeyo.</div>
-            <div class="eng-line no-ja">Believe in yourself.</div>
-            <div class="eng-line ja-block">自分を信じてください。</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ─── Section 7: Question Pronouns ─── -->
-    <div class="lesson-section animate-on-scroll" id="question-pronouns">
-      <h2><span class="section-num">7</span> Question Pronouns (의문대명사)</h2>
-      <p>Question pronouns are the "who, what, which, where, when" words of Korean. Unlike English, Korean question words stay in the same position as the noun they replace — they do not move to the front of the sentence.</p>
-
-      <div class="hangul-grid">
-        <div class="hangul-card">
-          <div class="hangul-char">누구</div>
-          <div class="rom-cell" style="font-size:0.85rem;margin-top:0.3rem">nugu<span class="ja-kana"> ヌグ</span></div>
-          <div class="hangul-name">who</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('누구')" aria-label="Pronounce 누구">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">뭐</div>
-          <div class="rom-cell" style="font-size:0.85rem;margin-top:0.3rem">mwo<span class="ja-kana"> ムォ</span></div>
-          <div class="hangul-name">what (casual)</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('뭐')" aria-label="Pronounce 뭐">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">무엇</div>
-          <div class="rom-cell" style="font-size:0.85rem;margin-top:0.3rem">mueot<span class="ja-kana"> ムオッ</span></div>
-          <div class="hangul-name">what (formal)</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('무엇')" aria-label="Pronounce 무엇">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">어느</div>
-          <div class="rom-cell" style="font-size:0.85rem;margin-top:0.3rem">eoneu<span class="ja-kana"> オヌ</span></div>
-          <div class="hangul-name">which</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('어느')" aria-label="Pronounce 어느">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">어디</div>
-          <div class="rom-cell" style="font-size:0.85rem;margin-top:0.3rem">eodi<span class="ja-kana"> オディ</span></div>
-          <div class="hangul-name">where</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('어디')" aria-label="Pronounce 어디">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">언제</div>
-          <div class="rom-cell" style="font-size:0.85rem;margin-top:0.3rem">eonje<span class="ja-kana"> オンジェ</span></div>
-          <div class="hangul-name">when</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('언제')" aria-label="Pronounce 언제">🔊</button>
-        </div>
-      </div>
-
-      <div class="example-box">
-        <div class="example-header"><span>📘 Question Pronouns in Sentences</span></div>
-        <div class="example-body">
-          <div class="korean-example">
-            <div class="kor-line">이게 누구 거예요?</div>
-            <div class="rom-line">Ige nugu geoyeyo?</div>
-            <div class="eng-line no-ja">Whose is this? (lit. This — whose thing is it?)</div>
-            <div class="eng-line ja-block">これは誰のですか？（直訳：これ — 誰のものですか？）</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">지금 뭐 먹어요?</div>
-            <div class="rom-line">Jigeum mwo meogeoyo?</div>
-            <div class="eng-line no-ja">What are you eating right now?</div>
-            <div class="eng-line ja-block">今何を食べていますか？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">어느 나라에서 왔어요?</div>
-            <div class="rom-line">Eoneu naraeseo wasseoyo?</div>
-            <div class="eng-line no-ja">Which country did you come from?</div>
-            <div class="eng-line ja-block">どの国から来ましたか？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">언제 한국에 가요?</div>
-            <div class="rom-line">Eonje Hanguge gayo?</div>
-            <div class="eng-line no-ja">When are you going to Korea?</div>
-            <div class="eng-line ja-block">いつ韓国に行きますか？</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ─── Section 8: Plural Marker -들 ─── -->
-    <div class="lesson-section animate-on-scroll" id="plural">
-      <h2><span class="section-num">8</span> Plural Marker — 들</h2>
-      <p>Korean nouns and pronouns do not change form for plural by default. To explicitly mark something as plural, you attach the suffix <strong style="font-family:var(--font-korean)">-들</strong> (-deul). However, this suffix is often optional — Korean speakers rely on context, numbers, or quantity words to indicate plural meaning.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr>
-            <th style="width:18%">Korean</th>
-            <th style="width:25%">Romanization</th>
-            <th>English</th>
-            <th style="width:16%">Listen</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">사람들</td>
-            <td class="rom-cell">saramdeul<span class="ja-kana"> サラムドゥル</span></td>
-            <td class="eng-cell">people (plural of 사람)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('사람들')" aria-label="Pronounce 사람들">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">학생들</td>
-            <td class="rom-cell">haksaengdeul<span class="ja-kana"> ハクセンドゥル</span></td>
-            <td class="eng-cell">students (plural)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('학생들')" aria-label="Pronounce 학생들">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">친구들</td>
-            <td class="rom-cell">chingudeul<span class="ja-kana"> チングドゥル</span></td>
-            <td class="eng-cell">friends (plural)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('친구들')" aria-label="Pronounce 친구들">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">그것들</td>
-            <td class="rom-cell">geugeotdeul<span class="ja-kana"> クゴッドゥル</span></td>
-            <td class="eng-cell">those things (plural)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('그것들')" aria-label="Pronounce 그것들">🔊</button></td>
-          </tr>
-          <tr>
-            <td class="kor-cell">우리들</td>
-            <td class="rom-cell">urideul<span class="ja-kana"> ウリドゥル</span></td>
-            <td class="eng-cell">we / us (emphasised plural)</td>
-            <td><button class="hangul-sound-btn" onclick="speakKorean('우리들')" aria-label="Pronounce 우리들">🔊</button></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="tip-box">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">Grammar Tip</div>
-          <div class="tip-text"><strong style="font-family:var(--font-korean)">-들</strong> is optional in Korean. You can say <strong style="font-family:var(--font-korean)">학생</strong> and it can mean "student" or "students" — context will usually make the number clear. Adding -들 simply emphasises that you mean more than one. It can even be attached to verbs and adverbs for a colloquial flavour: <strong style="font-family:var(--font-korean)">잘들 지내세요?</strong> (Are you all doing well?)</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Lesson Complete -->
-    <div class="lesson-complete-wrap animate-on-scroll">
-      <button class="btn btn-primary btn-lg" data-lesson-complete="pronouns">
-        Mark Lesson Complete ✓
-      </button>
-    </div>
-
-    <!-- Lesson Nav Footer -->
     <div class="lesson-nav-footer">
-      <a href="vocabulary.html#numbers" class="lesson-nav-btn">
+      <a href="vocabulary.html" class="lesson-nav-btn">
         <span>←</span>
         <div>
           <span class="lesson-nav-label">Previous</span>
-          <span class="lesson-nav-title">Numbers</span>
+          <span class="lesson-nav-title">Vocabulary</span>
         </div>
       </a>
       <a href="nouns.html" class="lesson-nav-btn next">
@@ -851,7 +183,7 @@
           <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
           <div class="logo-text">Korean School <span>한국어 학교</span></div>
         </a>
-        <p>A free Korean language learning platform for learners of every level, worldwide.</p>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
       </div>
       <div>
         <div class="footer-heading">Learn</div>
@@ -875,16 +207,22 @@
           <li><a href="../about.html">About Us</a></li>
           <li><a href="../contact.html">Contact</a></li>
           <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
-      <span>🇰🇷 학습을 즐기세요!</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
     </div>
   </div>
 </footer>
+
 <script src="../js/lang-ja.js"></script>
 <script src="../js/app.js"></script>
+<script src="../js/step-runner.js"></script>
+<script>
+  StepRunner.init('/learn/data/pronouns.json');
+</script>
 </body>
 </html>

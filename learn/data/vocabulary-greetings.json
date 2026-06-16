@@ -1,0 +1,175 @@
+{
+  "lesson": "vocab-greetings",
+  "totalSteps": 16,
+  "stages": [
+    { "id": 1, "name": "Greetings", "name_kr": "인사말", "first_step": 1, "last_step": 16, "time_minutes": 10 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Greetings in Korean",
+      "title_kr": "한국어 인사말",
+      "body": "Korean greetings change depending on who you are talking to and the situation. The most important distinction is formal vs. casual speech. Use formal forms with strangers, elders, and in professional settings. Casual forms are for friends and people younger than you.",
+      "tip": { "icon": "💡", "label": "Key rule: when in doubt, be formal", "text": "Koreans appreciate effort. Using the formal 하세요 ending is always safe with people you just met. Switching to casual 안녕 with a close friend shows warmth." }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["안", "녕", "하", "세", "요"],
+      "romanization": "Annyeonghaseyo",
+      "katakana": "アンニョンハセヨ",
+      "audio": "안녕하세요",
+      "meaning": "Hello — formal, the most common greeting",
+      "meaning_ja": "こんにちは（丁寧）― 最もよく使われる挨拶"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["안", "녕"],
+      "romanization": "Annyeong",
+      "katakana": "アンニョン",
+      "audio": "안녕",
+      "meaning": "Hi / Bye (casual) — used with friends",
+      "meaning_ja": "やあ / バイバイ（カジュアル）― 友達に使う"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["감", "사", "합", "니", "다"],
+      "romanization": "Gamsahamnida",
+      "katakana": "カムサハムニダ",
+      "audio": "감사합니다",
+      "meaning": "Thank you — formal, very polite",
+      "meaning_ja": "ありがとうございます（最敬語）"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["고", "마", "워", "요"],
+      "romanization": "Gomawoyo",
+      "katakana": "コマウォヨ",
+      "audio": "고마워요",
+      "meaning": "Thank you — polite but less formal",
+      "meaning_ja": "ありがとう（丁寧・カジュアル）"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["죄", "송", "합", "니", "다"],
+      "romanization": "Joesonghamnida",
+      "katakana": "チェソンハムニダ",
+      "audio": "죄송합니다",
+      "meaning": "I'm sorry — formal apology",
+      "meaning_ja": "申し訳ありません（丁寧なお詫び）"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["괜", "찮", "아", "요"],
+      "romanization": "Gwaenchanayo",
+      "katakana": "クェンチャナヨ",
+      "audio": "괜찮아요",
+      "meaning": "It's okay / Are you okay? — very versatile phrase",
+      "meaning_ja": "大丈夫です / 大丈夫ですか？（多用途）"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["반", "갑", "습", "니", "다"],
+      "romanization": "Bangapseumnida",
+      "katakana": "パンガプスムニダ",
+      "audio": "반갑습니다",
+      "meaning": "Nice to meet you — formal first meeting",
+      "meaning_ja": "はじめまして（丁寧）― 初対面で"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["안", "녕", "히", "가", "세", "요"],
+      "romanization": "Annyeonghi gaseyo",
+      "katakana": "アンニョンヒ カセヨ",
+      "audio": "안녕히 가세요",
+      "meaning": "Goodbye — said to the person who is leaving",
+      "meaning_ja": "お気をつけて ― 去る人を見送る側が言う"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["안", "녕", "히", "계", "세", "요"],
+      "romanization": "Annyeonghi gyeseyo",
+      "katakana": "アンニョンヒ キェセヨ",
+      "audio": "안녕히 계세요",
+      "meaning": "Goodbye — said by the person who is leaving",
+      "meaning_ja": "ごきげんよう ― 自分がその場を去るときに言う"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["화", "이", "팅"],
+      "romanization": "Hwaiting",
+      "katakana": "ファイティン",
+      "audio": "화이팅",
+      "meaning": "Fighting! / You can do it! — a cheer of encouragement",
+      "meaning_ja": "頑張れ！― 応援の掛け声"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["처", "음", "뵙", "겠", "습", "니", "다"],
+      "romanization": "Cheoeum boepgesseumnida",
+      "katakana": "チョウム ポプケッスムニダ",
+      "audio": "처음 뵙겠습니다",
+      "meaning": "How do you do — very formal first introduction",
+      "meaning_ja": "はじめまして（最敬語）― 正式な自己紹介で"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["잘", "부", "탁", "드", "립", "니", "다"],
+      "romanization": "Jal butakdeurimnida",
+      "katakana": "チャル プタクトゥリムニダ",
+      "audio": "잘 부탁드립니다",
+      "meaning": "Please take care of me — said when starting a new relationship",
+      "meaning_ja": "よろしくお願いします ― 新しい関係を始めるときに"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Which phrase means 'Hello' in the most formal way?",
+      "choices": ["안녕", "안녕하세요", "화이팅", "괜찮아요"],
+      "correct": "안녕하세요"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "How do you say 'Thank you' in the most formal Korean?",
+      "choices": ["고마워요", "미안해요", "감사합니다", "잘 있어요"],
+      "correct": "감사합니다"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Greetings Complete!",
+      "title_kr": "인사말 완성!",
+      "message": "You've learned 12 essential Korean greetings — from formal hellos to cheerful goodbyes. These phrases alone will make a huge impression on Korean speakers you meet.",
+      "next_url": "vocabulary.html?cat=numbers"
+    }
+  ]
+}

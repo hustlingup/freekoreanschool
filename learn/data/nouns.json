@@ -1,0 +1,542 @@
+{
+  "lesson": "nouns",
+  "totalSteps": 34,
+  "stages": [
+    {
+      "id": 1,
+      "name": "People & Family",
+      "name_kr": "사람·가족",
+      "first_step": 1,
+      "last_step": 10,
+      "time_minutes": 8
+    },
+    {
+      "id": 2,
+      "name": "Places & Time",
+      "name_kr": "장소·시간",
+      "first_step": 11,
+      "last_step": 19,
+      "time_minutes": 8
+    },
+    {
+      "id": 3,
+      "name": "Objects & Counters",
+      "name_kr": "사물·수사",
+      "first_step": 20,
+      "last_step": 27,
+      "time_minutes": 8
+    },
+    {
+      "id": 4,
+      "name": "Possessives",
+      "name_kr": "소유격·마무리",
+      "first_step": 28,
+      "last_step": 34,
+      "time_minutes": 6
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Korean Nouns (명사)",
+      "title_kr": "명사",
+      "body": "Korean nouns (명사) do not change based on gender or number. The same word 사람 means 'person', 'people', 'a person', and 'the person'. Plurality is understood from context or added separately with words like 들 (들 is a plural suffix, e.g. 사람들 = people). There are no articles like 'a' or 'the'. This makes Korean nouns very easy to learn — you just have to know the word itself.",
+      "tip": {
+        "icon": "💡",
+        "label": "Plural suffix 들",
+        "text": "들 softly adds plurality: 친구들 (friends), 학생들 (students). You can attach 들 to people or animals, but it is optional and often skipped when context is clear."
+      },
+      "body_ja": "韓国語の名詞（명사）は、性や数によって変化しません。同じ単語「사람」が「人」「人々」「ある人」「その人」すべてを意味します。複数は文脈で理解するか、들（複数接尾語、例：사람들＝人々）で表します。「a」や「the」のような冠詞はありません。そのため韓国語の名詞はとても覚えやすく、単語そのものを知るだけでよいのです。",
+      "tip_ja": {
+        "label": "複数接尾語 들",
+        "text": "들は複数を緩やかに表します：친구들（友達たち）、학생들（生徒たち）。들は人や動物に付けられますが任意であり、文脈が明らかな場合はよく省略されます。"
+      }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "사",
+        "람"
+      ],
+      "romanization": "sa-ram",
+      "audio": "사람",
+      "meaning": "person / human",
+      "meaning_ja": "人 / 人間",
+      "katakana": "サラム"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "남",
+        "자"
+      ],
+      "romanization": "nam-ja",
+      "audio": "남자",
+      "meaning": "man / boy",
+      "meaning_ja": "男性 / 男の子",
+      "katakana": "ナムジャ"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "여",
+        "자"
+      ],
+      "romanization": "yeo-ja",
+      "audio": "여자",
+      "meaning": "woman / girl",
+      "meaning_ja": "女性 / 女の子",
+      "katakana": "ヨジャ"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "아",
+        "이"
+      ],
+      "romanization": "a-i",
+      "audio": "아이",
+      "meaning": "child / kid",
+      "meaning_ja": "子ども",
+      "katakana": "アイ"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "친",
+        "구"
+      ],
+      "romanization": "chin-gu",
+      "audio": "친구",
+      "meaning": "friend",
+      "meaning_ja": "友達",
+      "katakana": "チング"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Which word means 'friend'?",
+      "choices": [
+        "남자",
+        "여자",
+        "친구",
+        "아이"
+      ],
+      "correct": "친구"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Family Nouns (가족 명사)",
+      "title_kr": "가족 명사",
+      "body": "Korean family terms often differ depending on the speaker's gender. 오빠 (oppa) is what a female speaker calls her older brother, while 형 (hyung) is what a male speaker calls his older brother. Similarly, 언니 (unni) = older sister (female speaker) and 누나 (nuna) = older sister (male speaker). For parents, 아버지 / 어머니 are the formal terms, while 아빠 / 엄마 are the casual equivalents.",
+      "tip": {
+        "icon": "👨‍👩‍👧",
+        "label": "Gender-specific address",
+        "text": "Unlike English, Korean has no single word 'sibling'. Whether you say 오빠/형 or 언니/누나 depends entirely on your own gender and the relative age of the sibling. This is core to Korean family vocabulary."
+      },
+      "body_ja": "韓国の家族の呼び方は、話者の性別によって異なることがあります。오빠（オッパ）は女性が男の兄を呼ぶ言い方で、형（ヒョン）は男性が男の兄を呼ぶ言い方です。同様に、언니（オンニ）は女性が女の姉を呼ぶ言い方、누나（ヌナ）は男性が女の姉を呼ぶ言い方です。親の場合、아버지・어머니が改まった呼び方で、아빠・엄마がカジュアルな言い方です。",
+      "tip_ja": {
+        "label": "性別で変わる呼び方",
+        "text": "英語と違い、韓国語には「きょうだい」を意味する一語がありません。오빠/형か 언니/누나のどちらを使うかは、自分の性別ときょうだいとの年齢関係によって完全に決まります。これは韓国語の家族語彙の核心です。"
+      }
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "아",
+        "버",
+        "지"
+      ],
+      "romanization": "a-beo-ji",
+      "audio": "아버지",
+      "meaning": "father (formal)",
+      "meaning_ja": "父（フォーマル）",
+      "katakana": "アボジ"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "어",
+        "머",
+        "니"
+      ],
+      "romanization": "eo-meo-ni",
+      "audio": "어머니",
+      "meaning": "mother (formal)",
+      "meaning_ja": "母（フォーマル）",
+      "katakana": "オモニ"
+    },
+    {
+      "id": 11,
+      "stage": 2,
+      "type": "reading_card",
+      "title": "Place Nouns (장소 명사)",
+      "title_kr": "장소 명사",
+      "body": "Korean place nouns follow the same no-article rule as all other nouns. 학교 means 'school', 'a school', or 'the school' — context tells you which. When giving directions or stating location, Korean adds the particle 에 (at/in) after the place noun: 학교에 가요 (I go to school). Place nouns are among the most practical words to learn early.",
+      "tip": {
+        "icon": "📍",
+        "label": "Location particle 에",
+        "text": "Attach 에 to a place noun to mean 'at', 'in', or 'to': 집에 (at home), 학교에 (to school), 식당에 (at the restaurant). 에서 means 'from' or 'at (doing something)': 학교에서 공부해요 (I study at school)."
+      },
+      "body_ja": "韓国語の場所の名詞は、他の名詞と同じく冠詞なしのルールに従います。학교は「学校」「ある学校」「その学校」のすべてを意味し、どれかは文脈で分かります。場所や位置を伝えるとき、韓国語は場所の名詞に助詞 에（〜で/〜に）を付けます：학교에 가요（学校に行きます）。場所の名詞は早い段階で覚えると実用的です。",
+      "tip_ja": {
+        "label": "場所の助詞 에",
+        "text": "場所の名詞に에を付けて「〜で」「〜に」「〜へ」を表します：집에（家に）、학교에（学校へ）、식당에（レストランで）。에서は「〜から」または「〜で（何かをしている）」を意味します：학교에서 공부해요（学校で勉強します）。"
+      }
+    },
+    {
+      "id": 12,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "집"
+      ],
+      "romanization": "jip",
+      "audio": "집",
+      "meaning": "house / home",
+      "meaning_ja": "家 / 自宅",
+      "katakana": "ジプ"
+    },
+    {
+      "id": 13,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "학",
+        "교"
+      ],
+      "romanization": "hak-gyo",
+      "audio": "학교",
+      "meaning": "school",
+      "meaning_ja": "学校",
+      "katakana": "ハッキョ"
+    },
+    {
+      "id": 14,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "식",
+        "당"
+      ],
+      "romanization": "sik-dang",
+      "audio": "식당",
+      "meaning": "restaurant / dining hall",
+      "meaning_ja": "食堂 / レストラン",
+      "katakana": "シクタン"
+    },
+    {
+      "id": 15,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "병",
+        "원"
+      ],
+      "romanization": "byeong-won",
+      "audio": "병원",
+      "meaning": "hospital / clinic",
+      "meaning_ja": "病院 / クリニック",
+      "katakana": "ビョンウォン"
+    },
+    {
+      "id": 16,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "Which word means 'school'?",
+      "choices": [
+        "집",
+        "식당",
+        "병원",
+        "학교"
+      ],
+      "correct": "학교"
+    },
+    {
+      "id": 17,
+      "stage": 2,
+      "type": "reading_card",
+      "title": "Time Nouns (시간 명사)",
+      "title_kr": "시간 명사",
+      "body": "Time nouns in Korean work independently — no conjugation needed. You simply state the time word at the start of a sentence: 오늘 가요 (I'm going today), 내일 만나요 (Let's meet tomorrow). Korean time expressions use Sino-Korean numbers for hours and native Korean numbers for minutes. The most essential time words are 오늘 (today), 내일 (tomorrow), 어제 (yesterday), and 지금 (now).",
+      "tip": {
+        "icon": "🕐",
+        "label": "Time words as sentence openers",
+        "text": "Korean is very flexible with word order, but time expressions usually come early in the sentence — before the subject or right after it. '오늘 학교에 가요' and '학교에 오늘 가요' are both correct, though the first is more natural."
+      },
+      "body_ja": "韓国語の時間の名詞は単独で機能し、活用は不要です。文の冒頭に時間の語を置くだけでよいのです：오늘 가요（今日行きます）、내일 만나요（明日会いましょう）。韓国語の時間表現は、時間にはシノ・コリアン数詞を、分にはネイティブ韓国語数詞を使います。最も重要な時間語は오늘（今日）、내일（明日）、어제（昨日）、지금（今）です。",
+      "tip_ja": {
+        "label": "時間語を文の先頭に",
+        "text": "韓国語は語順がとても柔軟ですが、時間表現は通常文の早い位置に来ます——主語の前か直後に。「오늘 학교에 가요」と「학교에 오늘 가요」はどちらも正しいですが、前者のほうが自然です。"
+      }
+    },
+    {
+      "id": 18,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "오",
+        "늘"
+      ],
+      "romanization": "o-neul",
+      "audio": "오늘",
+      "meaning": "today",
+      "meaning_ja": "今日",
+      "katakana": "オヌル"
+    },
+    {
+      "id": 19,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "Which word means 'today'?",
+      "choices": [
+        "내일",
+        "어제",
+        "오늘",
+        "지금"
+      ],
+      "correct": "오늘"
+    },
+    {
+      "id": 20,
+      "stage": 3,
+      "type": "reading_card",
+      "title": "Object Nouns (사물 명사)",
+      "title_kr": "사물 명사",
+      "body": "Everyday objects are among the most immediately useful Korean words. Korean has both native Korean words and Sino-Korean (Chinese-origin) words for objects, and in many cases Konglish (loan words from English) is used: 커피 (coffee), 핸드폰 (hand phone / cell phone). When the object is the direct receiver of a verb, add 을/를 after the noun: 책을 읽어요 (I read a book). This is the object-marking particle.",
+      "tip": {
+        "icon": "📱",
+        "label": "Object particle 을/를",
+        "text": "Use 을 after a noun ending in a consonant: 책을. Use 를 after a noun ending in a vowel: 가방을. In casual speech, this particle is often dropped entirely."
+      },
+      "body_ja": "日常の物は、すぐに役立つ韓国語語彙の筆頭です。韓国語にはネイティブ韓国語と漢語系（中国語起源）の語が両方あり、多くの場合コングリッシュ（英語からの借用語）が使われます：커피（コーヒー）、핸드폰（携帯電話）。その物が動詞の直接目的語になるときは、名詞の後に을/를を付けます：책을 읽어요（本を読みます）。これが目的格助詞です。",
+      "tip_ja": {
+        "label": "目的格助詞 을/를",
+        "text": "子音で終わる名詞には을を使います：책을。母音で終わる名詞には를を使います：가방을。カジュアルな会話ではこの助詞はよく省略されます。"
+      }
+    },
+    {
+      "id": 21,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "책"
+      ],
+      "romanization": "chaek",
+      "audio": "책",
+      "meaning": "book",
+      "meaning_ja": "本",
+      "katakana": "チェク"
+    },
+    {
+      "id": 22,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "가",
+        "방"
+      ],
+      "romanization": "ga-bang",
+      "audio": "가방",
+      "meaning": "bag / backpack",
+      "meaning_ja": "バッグ / リュック",
+      "katakana": "カバン"
+    },
+    {
+      "id": 23,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "돈"
+      ],
+      "romanization": "don",
+      "audio": "돈",
+      "meaning": "money",
+      "meaning_ja": "お金",
+      "katakana": "トン"
+    },
+    {
+      "id": 24,
+      "stage": 3,
+      "type": "match_quiz",
+      "prompt": "Which word means 'money'?",
+      "choices": [
+        "책",
+        "가방",
+        "돈",
+        "핸드폰"
+      ],
+      "correct": "돈"
+    },
+    {
+      "id": 25,
+      "stage": 3,
+      "type": "reading_card",
+      "title": "Korean Counters (수사)",
+      "title_kr": "수사",
+      "body": "Korean uses counting words called counters (수사) that attach to numbers when counting specific things. The counter 개 is used for general objects: 한 개 (one thing), 세 개 (three things). 명 is used for counting people: 두 명 (two people). 잔 is used for cups/glasses: 한 잔 (one cup). The pattern is: number + counter, placed right before or after the noun. Korean numbers for counters use the native Korean set: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5).",
+      "tip": {
+        "icon": "🔢",
+        "label": "Native numbers with counters",
+        "text": "When combining native Korean numbers with counters, the number changes slightly: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네. So it is 한 개 (not 하나 개), 두 명 (not 둘 명)."
+      },
+      "body_ja": "韓国語では助数詞（수사）と呼ばれる数え言葉を使い、特定の物を数えるときに数詞と組み合わせます。개は一般的な物に使います：한 개（1つ）、세 개（3つ）。명は人を数えます：두 명（2人）。잔はカップ・グラスに使います：한 잔（1杯）。パターンは「数詞＋助数詞」で名詞の直前または直後に置きます。助数詞ではネイティブ韓国語の数詞を使います：하나(1)、둘(2)、셋(3)、넷(4)、다섯(5)。",
+      "tip_ja": {
+        "label": "助数詞とネイティブ数詞",
+        "text": "ネイティブ韓国語の数詞を助数詞と組み合わせるとき、数字が少し変化します：하나 → 한、둘 → 두、셋 → 세、넷 → 네。なので 한 개（하나 개ではなく）、두 명（둘 명ではなく）になります。"
+      }
+    },
+    {
+      "id": 26,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "사",
+        "람",
+        " ",
+        "세",
+        " ",
+        "명"
+      ],
+      "romanization": "sa-ram se myeong",
+      "audio": "사람 세 명",
+      "meaning": "three people (명 = person counter)",
+      "meaning_ja": "3人（명：人数カウンター）",
+      "katakana": "サラム セ ミョン"
+    },
+    {
+      "id": 27,
+      "stage": 3,
+      "type": "match_quiz",
+      "prompt": "Which counter is used for people (counting persons)?",
+      "choices": [
+        "개",
+        "명",
+        "잔",
+        "권"
+      ],
+      "correct": "명"
+    },
+    {
+      "id": 28,
+      "stage": 4,
+      "type": "reading_card",
+      "title": "Possessive Marker 의",
+      "title_kr": "소유격 의",
+      "body": "The possessive marker 의 (ui, often pronounced '에') attaches to a noun to show ownership, like English 's. 저의 가방 = my bag, 친구의 집 = friend's house. In everyday speech, 의 is commonly dropped: 제 가방 (my bag, polite) or 내 가방 (my bag, casual). The pronouns 저 and 나 have special possessive forms: 제 (polite, my) and 내 (casual, my).",
+      "tip": {
+        "icon": "🔑",
+        "label": "제 vs 내",
+        "text": "제 is the polite/humble possessive 'my' (from 저 = I, polite). 내 is the casual possessive 'my' (from 나 = I, casual). Use 제 with strangers or seniors, 내 with close friends."
+      },
+      "body_ja": "所有格助詞 의（ui、しばしば「에」と発音）は名詞に付いて所有を示し、英語の 's に相当します。저의 가방＝私のバッグ、친구의 집＝友達の家。日常会話では 의 がよく省略されます：제 가방（丁寧な「私のバッグ」）や 내 가방（カジュアルな「私のバッグ」）。代名詞 저 と 나 には特別な所有格形があります：제（丁寧、私の）と 내（カジュアル、私の）。",
+      "tip_ja": {
+        "label": "제 vs 내",
+        "text": "제は丁寧・謙譲の「私の」（저 = 私・丁寧から）。내はカジュアルの「私の」（나 = 私・カジュアルから）。見知らぬ人や目上の人には제を、親しい友人には내を使います。"
+      }
+    },
+    {
+      "id": 29,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "제",
+        " ",
+        "가",
+        "방"
+      ],
+      "romanization": "je ga-bang",
+      "audio": "제 가방",
+      "meaning": "my bag (polite)",
+      "meaning_ja": "私のバッグ（丁寧）",
+      "katakana": "チェ カバン"
+    },
+    {
+      "id": 30,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "내",
+        " ",
+        "친",
+        "구"
+      ],
+      "romanization": "nae chin-gu",
+      "audio": "내 친구",
+      "meaning": "my friend (casual)",
+      "meaning_ja": "私の友達（カジュアル）",
+      "katakana": "ネ チング"
+    },
+    {
+      "id": 31,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "How do you say 'my bag' in polite Korean?",
+      "choices": [
+        "내 가방",
+        "저의 책",
+        "제 가방",
+        "나의 집"
+      ],
+      "correct": "제 가방"
+    },
+    {
+      "id": 32,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "친",
+        "구",
+        "의",
+        " ",
+        "집"
+      ],
+      "romanization": "chin-gu-ui jip",
+      "audio": "친구의 집",
+      "meaning": "friend's house",
+      "meaning_ja": "友達の家",
+      "katakana": "チングエ ジプ"
+    },
+    {
+      "id": 33,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "의 is the Korean possessive marker. What does it correspond to in English?",
+      "choices": [
+        "subject marker",
+        "'s (possession)",
+        "object marker",
+        "plural suffix"
+      ],
+      "correct": "'s (possession)"
+    },
+    {
+      "id": 34,
+      "stage": 4,
+      "type": "lesson_complete",
+      "title": "Nouns Complete!",
+      "title_kr": "명사 완료!",
+      "message": "You've covered the essential Korean nouns — people, places, objects, time words, counters, and possessives. Keep going with Pronouns next.",
+      "next_url": "pronouns.html"
+    }
+  ]
+}

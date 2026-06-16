@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -8,17 +8,12 @@
   <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>Expressing Emotions in Korean | 한국어 학교</title>
+  <title>Expressing Emotions in Korean — 감정 표현 | 한국어 학교</title>
+  <meta name="description" content="Learn how to express emotions in Korean — from basic feelings to culturally unique words like 그립다, 뿌듯하다, and 설레다. Interactive audio lessons with quizzes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
-  <style>
-  .ja-kana  { display: none; font-size: 0.85em; color: var(--text-secondary); }
-  body.lang-ja .ja-kana  { display: inline; }
-  .kata     { display: none; font-size: 0.82em; color: var(--text-secondary); }
-  body.lang-ja .kata     { display: block; }
-  .ja-block { display: none; }
-  body.lang-ja .ja-block { display: block; }
-  body.lang-ja .no-ja   { display: none; }
-  </style>
 </head>
 <body>
 
@@ -39,7 +34,7 @@
     <div class="header-actions">
       <div class="search-bar">
         <span class="search-icon">🔍</span>
-        <input type="text" id="search-input" placeholder="Search lessons..." autocomplete="off" aria-label="Search">
+        <input type="text" id="search-input" placeholder="Search lessons...">
       </div>
       <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
       <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
@@ -48,7 +43,8 @@
   </div>
 </header>
 
-<!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+<!-- XP Badge (fixed top-right) -->
+<div class="xp-badge" id="xp-badge" aria-live="polite">⚡ 0 XP</div>
 
 <!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
 <aside class="sidebar" id="sidebar">
@@ -64,27 +60,27 @@
     <div class="sidebar-section">Beginner</div>
     <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> Vocab <span class="accordion-arrow">▶</span></button>
     <div class="sidebar-accordion-content" id="accordion-vocab">
-      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
-      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
-      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
-      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
-      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
-      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
-      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
-      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
-      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
-      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
-      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
-      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
-      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
-      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
-      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
-      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
-      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
-      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
-      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
-      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
-      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
+      <a href="vocabulary.html?cat=greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
+      <a href="vocabulary.html?cat=numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
+      <a href="vocabulary.html?cat=family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
+      <a href="vocabulary.html?cat=food-drink" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
+      <a href="vocabulary.html?cat=colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
+      <a href="vocabulary.html?cat=days-time" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
+      <a href="vocabulary.html?cat=places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
+      <a href="vocabulary.html?cat=emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
+      <a href="vocabulary.html?cat=body-parts" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
+      <a href="vocabulary.html?cat=travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
+      <a href="vocabulary.html?cat=shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
+      <a href="vocabulary.html?cat=weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
+      <a href="vocabulary.html?cat=verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
+      <a href="vocabulary.html?cat=adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
+      <a href="vocabulary.html?cat=workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
+      <a href="vocabulary.html?cat=health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
+      <a href="vocabulary.html?cat=media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
+      <a href="vocabulary.html?cat=proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
+      <a href="vocabulary.html?cat=academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
+      <a href="vocabulary.html?cat=news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
+      <a href="vocabulary.html?cat=konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
     </div>
     <a href="pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> Pronouns <span class="link-badge badge-beginner">Beginner</span></a>
     <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> Common Nouns <span class="link-badge badge-beginner">Beginner</span></a>
@@ -105,15 +101,9 @@
       <a href="grammar.html#adverbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">💯</span> Degree Adverbs <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#nominalizer" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔤</span> Nominalizer -는 것 <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#comparatives" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚖️</span> Comparatives <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#good-like" class="sidebar-link" data-level="intermediate"><span class="link-icon">❤️</span> Like: 좋다 vs 좋아하다 <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#still-already" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏳</span> Still, Already <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#indefinite" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Someone, Something <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">📢</span> Imperative -(으)세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#negative-imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">🚫</span> Don't: -지 마세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#method" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛤️</span> Method: -(으)로 <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#good-bad-at" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎯</span> Good/Poor At <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#all-more" class="sidebar-link" data-level="advanced"><span class="link-icon">📦</span> All, More: 다, 더 <span class="link-badge badge-advanced">Advanced</span></a>
-      <a href="grammar.html#do-part2" class="sidebar-link" data-level="advanced"><span class="link-icon">✳️</span> -도 Advanced Uses <span class="link-badge badge-advanced">Advanced</span></a>
     </div>
     <div class="sidebar-section">Intermediate</div>
     <a href="speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> Formal vs Informal <span class="link-badge badge-intermediate">Intermediate</span></a>
@@ -133,737 +123,37 @@
 <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
   <div class="lesson-wrap">
 
-    <!-- Breadcrumb -->
-    <div class="lesson-breadcrumb">
-      <a href="../index.html">Home</a>
-      <span class="sep">›</span>
-      <a href="hangul.html">Learn</a>
-      <span class="sep">›</span>
-      <span>Expressing Emotions</span>
-    </div>
-
-    <!-- Lesson Header -->
-    <div class="lesson-header">
-      <div class="lesson-tag">😊 Intermediate · Lesson 9</div>
-      <h1 class="lesson-title">Expressing Emotions: <span class="grad-text">감정 표현</span></h1>
-      <p class="lesson-meta">
-        <span>💭 Untranslatable Words</span>
+    <div class="lesson-header animate-on-scroll">
+      <div class="lesson-breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <a href="hangul.html">Learn</a>
+        <span>›</span>
+        <span>Expressing Emotions</span>
+      </div>
+      <div class="lesson-tag">😊 Intermediate · Lesson 7</div>
+      <h1 class="lesson-title">Expressing <span class="grad-text">Emotions</span> — 감정 표현</h1>
+      <div class="lesson-meta">
         <span>📊 Intermediate</span>
-        <span>🔖 Vocabulary &amp; Expression</span>
-        <span>🎭 K-Drama Phrases</span>
-      </p>
-    </div>
-
-    <div class="lesson-intro">
-      <p class="no-ja">Emotions are at the heart of authentic communication. Whether you are watching a K-Drama, texting a Korean friend, or navigating a real conversation, knowing how to express and respond to feelings is essential. Korean has a rich emotional vocabulary — many feelings even have words that have no direct English equivalent, like <strong style="font-family:var(--font-korean)">설레다</strong> (the fluttery excitement of anticipating something wonderful) or <strong style="font-family:var(--font-korean)">그립다</strong> (a longing nostalgia for something or someone missed).</p>
-      <p class="ja-block">感情は本物のコミュニケーションの中心です。K-ドラマを見るとき、韓국語を話す友達にテキストを送るとき、実際の会話をするとき、感情を表現し応じる方法を知ることは不可欠です。韓国語には豊かな感情語彙があります — 多くの感情には日本語に直接相当する言葉がなく、例えば<strong style="font-family:var(--font-korean)">설레다</strong>（素晴らしいことを期待するときのドキドキした興奮）や<strong style="font-family:var(--font-korean)">그립다</strong>（失ったものや人への懐かしい郷愁）などがあります。</p>
-    </div>
-
-    <!-- Section 1 -->
-    <div class="lesson-section animate-on-scroll" id="basic-emotions">
-      <h2><span class="section-num">1</span> Basic Emotion Vocabulary (기본 감정 어휘)</h2>
-      <p>Korean emotion words are primarily <strong>adjectives (형용사)</strong>. You conjugate them just like descriptive verbs — not as nouns. This means you say <span style="font-family:var(--font-korean)">기뻐요</span> (I am happy), not <span style="font-family:var(--font-korean)">나는 기쁨이에요</span>. The cards below show the dictionary (base) form; conjugation is covered in the next section.</p>
-
-      <div class="hangul-grid">
-        <div class="hangul-card">
-          <div class="hangul-char">기쁘다</div>
-          <div class="hangul-rom">gippeuda</div>
-          <div class="hangul-name">happy / joyful</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('기뻐요')" aria-label="Play 기뻐요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">슬프다</div>
-          <div class="hangul-rom">seulpeuda</div>
-          <div class="hangul-name">sad</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('슬퍼요')" aria-label="Play 슬퍼요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">화나다</div>
-          <div class="hangul-rom">hwanada</div>
-          <div class="hangul-name">angry</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('화났어요')" aria-label="Play 화났어요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">무섭다</div>
-          <div class="hangul-rom">museopda</div>
-          <div class="hangul-name">scared / frightening</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('무서워요')" aria-label="Play 무서워요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">놀랍다</div>
-          <div class="hangul-rom">nollapda</div>
-          <div class="hangul-name">surprised / amazing</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('놀라워요')" aria-label="Play 놀라워요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">외롭다</div>
-          <div class="hangul-rom">oeroeopda</div>
-          <div class="hangul-name">lonely</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('외로워요')" aria-label="Play 외로워요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">피곤하다</div>
-          <div class="hangul-rom">pigonhada</div>
-          <div class="hangul-name">tired / fatigued</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('피곤해요')" aria-label="Play 피곤해요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">행복하다</div>
-          <div class="hangul-rom">haengbokhada</div>
-          <div class="hangul-name">happy / content</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('행복해요')" aria-label="Play 행복해요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">걱정되다</div>
-          <div class="hangul-rom">geokjeongdoeda</div>
-          <div class="hangul-name">worried / anxious</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('걱정돼요')" aria-label="Play 걱정돼요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">부끄럽다</div>
-          <div class="hangul-rom">bukkeureupda</div>
-          <div class="hangul-name">embarrassed / shy</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('부끄러워요')" aria-label="Play 부끄러워요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">그립다</div>
-          <div class="hangul-rom">geuripda</div>
-          <div class="hangul-name">miss / nostalgic</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('그리워요')" aria-label="Play 그리워요">🔊</button>
-        </div>
-        <div class="hangul-card">
-          <div class="hangul-char">설레다</div>
-          <div class="hangul-rom">seolleda</div>
-          <div class="hangul-name">excited / heart flutter</div>
-          <button class="hangul-sound-btn" onclick="speakKorean('설레요')" aria-label="Play 설레요">🔊</button>
-        </div>
+        <span>⏱ 30 min</span>
+        <span>🔊 Audio on every word</span>
+        <span>⚡ XP + Streak system</span>
       </div>
+      <ul class="lesson-intro-bullets">
+        <li>Learn how Korean emotion adjectives conjugate directly — no 'am/is/are' needed</li>
+        <li>Discover culturally unique Korean emotion words like 그립다, 뿌듯하다, and 설레다</li>
+        <li>Master key emotion phrases: 보고 싶어요, 감동받았어요, 괜찮아요</li>
+        <li>4 stages with listen-and-repeat audio and quizzes throughout</li>
+      </ul>
+    </div>
 
-      <div class="tip-box">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">Adjectives, Not Nouns</div>
-          <div class="tip-text">Korean emotion words are adjectives (형용사), so they conjugate like verbs. Say <strong style="font-family:var(--font-korean)">기뻐요</strong> (I'm happy), <strong style="font-family:var(--font-korean)">슬퍼요</strong> (I'm sad). Do not say <span style="font-family:var(--font-korean);color:var(--text-muted)">나는 기쁨이에요</span> — this is unnatural. The noun form (기쁨 = joy) exists but is used differently, as in <strong style="font-family:var(--font-korean)">기쁨이 넘쳐요</strong> (joy overflows).</div>
-        </div>
+    <!-- ── Step-Runner Shell ─────────────────────────── -->
+    <div id="step-shell">
+      <div style="text-align:center;padding:60px 20px;color:var(--text-muted)">
+        Loading lesson…
       </div>
     </div>
 
-    <!-- Section 2 -->
-    <div class="lesson-section animate-on-scroll" id="how-to-express">
-      <h2><span class="section-num">2</span> How to Express "I Feel..." (감정 표현 방법)</h2>
-      <p>There are three main patterns for expressing emotions in Korean. Each has slightly different nuance and is used in different contexts.</p>
-
-      <div class="example-box">
-        <div class="example-header"><span>📐 Three Expression Patterns</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:16px">
-          <div>
-            <div style="font-weight:700;color:var(--text);margin-bottom:6px">Pattern A — Direct: Emotion adjective + 아요/어요</div>
-            <div class="korean-example">
-              <div class="kor-line">기뻐요. / 슬퍼요. / 화났어요.</div>
-              <div class="rom-line">Gippeoyo. / Seulpeoyo. / Hwanasseoyo.</div>
-              <div class="eng-line no-ja">I'm happy. / I'm sad. / I'm angry.</div>
-              <div class="eng-line ja-block">嬉しいです。/ 悲しいです。/ 怒っています。</div>
-            </div>
-          </div>
-          <div>
-            <div style="font-weight:700;color:var(--text);margin-bottom:6px">Pattern B — Via 기분: 기분이 + adjective/noun</div>
-            <div class="korean-example">
-              <div class="kor-line">기분이 좋아요. / 기분이 안 좋아요.</div>
-              <div class="rom-line">Gibuni joayo. / Gibuni an joayo.</div>
-              <div class="eng-line no-ja">I feel good. / I don't feel well (mood-wise).</div>
-              <div class="eng-line ja-block">気分がいいです。/ 気分がよくないです。</div>
-            </div>
-          </div>
-          <div>
-            <div style="font-weight:700;color:var(--text);margin-bottom:6px">Pattern C — Softer expression: ~(으)ㄴ 것 같아요 (seems / I think I feel)</div>
-            <div class="korean-example">
-              <div class="kor-line">슬픈 것 같아요. / 외로운 것 같아요.</div>
-              <div class="rom-line">Seulpeun geot gatayo. / Oerooun geot gatayo.</div>
-              <div class="eng-line no-ja">I think I feel sad. / I seem to feel lonely.</div>
-              <div class="eng-line ja-block">悲しい気がします。/ 寂しい気がします。</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p style="margin-top:20px">Below is a full conjugation chart for all 12 emotions in 해요체 (present and past tense):</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:20%">Dictionary Form</th><th style="width:24%">해요체 (Present)</th><th style="width:24%">해요체 (Past)</th><th><span class="no-ja">English</span><span class="ja-kana">日本語</span></th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">기쁘다</td>
-            <td class="kor-cell">기뻐요</td>
-            <td class="kor-cell">기뻤어요</td>
-            <td class="eng-cell">happy / joyful</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">슬프다</td>
-            <td class="kor-cell">슬퍼요</td>
-            <td class="kor-cell">슬펐어요</td>
-            <td class="eng-cell">sad</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">화나다</td>
-            <td class="kor-cell">화났어요</td>
-            <td class="kor-cell">화났었어요</td>
-            <td class="eng-cell">angry</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">무섭다</td>
-            <td class="kor-cell">무서워요</td>
-            <td class="kor-cell">무서웠어요</td>
-            <td class="eng-cell">scared</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">놀랍다</td>
-            <td class="kor-cell">놀라워요</td>
-            <td class="kor-cell">놀라웠어요</td>
-            <td class="eng-cell">surprised</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">외롭다</td>
-            <td class="kor-cell">외로워요</td>
-            <td class="kor-cell">외로웠어요</td>
-            <td class="eng-cell">lonely</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">피곤하다</td>
-            <td class="kor-cell">피곤해요</td>
-            <td class="kor-cell">피곤했어요</td>
-            <td class="eng-cell">tired</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">행복하다</td>
-            <td class="kor-cell">행복해요</td>
-            <td class="kor-cell">행복했어요</td>
-            <td class="eng-cell">happy / content</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">걱정되다</td>
-            <td class="kor-cell">걱정돼요</td>
-            <td class="kor-cell">걱정됐어요</td>
-            <td class="eng-cell">worried</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">부끄럽다</td>
-            <td class="kor-cell">부끄러워요</td>
-            <td class="kor-cell">부끄러웠어요</td>
-            <td class="eng-cell">embarrassed</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">그립다</td>
-            <td class="kor-cell">그리워요</td>
-            <td class="kor-cell">그리웠어요</td>
-            <td class="eng-cell">miss / nostalgic</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">설레다</td>
-            <td class="kor-cell">설레요</td>
-            <td class="kor-cell">설렜어요</td>
-            <td class="eng-cell">fluttery excitement</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- Section 3 -->
-    <div class="lesson-section animate-on-scroll" id="intensifiers">
-      <h2><span class="section-num">3</span> Intensifying Emotions (강조 표현)</h2>
-      <p>Korean uses adverbs placed directly before the emotion adjective to intensify or soften the feeling. These intensifiers work with any emotion word and significantly expand your expressive range.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:14%">Intensifier</th><th style="width:26%">Romanization</th><th style="width:28%">Meaning</th><th>Example</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">정말</td>
-            <td class="rom-cell">jeongmal<span class="ja-kana"> ジョンマル</span></td>
-            <td class="eng-cell">really / truly</td>
-            <td class="kor-cell">정말 기뻐요</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">너무</td>
-            <td class="rom-cell">neomu<span class="ja-kana"> ノム</span></td>
-            <td class="eng-cell">so / too (very)</td>
-            <td class="kor-cell">너무 슬퍼요</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">굉장히</td>
-            <td class="rom-cell">goengjanghí<span class="ja-kana"> グェンジャンヒ</span></td>
-            <td class="eng-cell">extremely</td>
-            <td class="kor-cell">굉장히 피곤해요</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">엄청</td>
-            <td class="rom-cell">eomcheong<span class="ja-kana"> オムチョン</span></td>
-            <td class="eng-cell">incredibly / insanely</td>
-            <td class="kor-cell">엄청 무서워요</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">조금</td>
-            <td class="rom-cell">jogeum<span class="ja-kana"> チョグム</span></td>
-            <td class="eng-cell">a little / slightly</td>
-            <td class="kor-cell">조금 걱정돼요</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">별로</td>
-            <td class="rom-cell">byeollo<span class="ja-kana"> ピョルロ</span></td>
-            <td class="eng-cell">not really (with negation)</td>
-            <td class="kor-cell">별로 안 기뻐요</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="example-box">
-        <div class="example-header"><span>🔊 Intensified Emotion Sentences</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:12px">
-          <div class="korean-example">
-            <div class="kor-line">오늘 시험에 합격해서 정말 기뻐요!</div>
-            <div class="rom-line">Oneul siheome hapgyeokaeseo jeongmal gippeoyo!</div>
-            <div class="eng-line no-ja">I passed today's exam — I'm really happy!</div>
-            <div class="eng-line ja-block">今日の試験に合格して、本当に嬉しいです！</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">그 영화가 너무 슬펐어요. 많이 울었어요.</div>
-            <div class="rom-line">Geu yeonghwaga neomu seulpeosseoyo. Mani ureosseoyo.</div>
-            <div class="eng-line no-ja">That movie was so sad. I cried a lot.</div>
-            <div class="eng-line ja-block">あの映画はとても悲しかったです。たくさん泣きました。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">요즘 일이 많아서 굉장히 피곤해요.</div>
-            <div class="rom-line">Yojeum iri manaseo goengjanghi pigonhaeyo.</div>
-            <div class="eng-line no-ja">I've been extremely tired lately because of all the work.</div>
-            <div class="eng-line ja-block">最近仕事が多くて、ものすごく疲れています。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">별로 안 걱정돼요. 잘 될 거예요.</div>
-            <div class="rom-line">Byeollo an geokjeongdwaeyo. Jal doel geoyeyo.</div>
-            <div class="eng-line no-ja">I'm not really worried. It'll work out fine.</div>
-            <div class="eng-line ja-block">あまり心配していません。うまくいくと思います。</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tip-box">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">너무 — Overused in a Good Way</div>
-          <div class="tip-text">Traditionally 너무 means "too much" (negative connotation), but in modern spoken Korean it is widely used as a simple intensifier meaning "so" or "very" — <strong style="font-family:var(--font-korean)">너무 좋아요</strong> (I love it so much!) is extremely common and completely natural.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 4 -->
-    <div class="lesson-section animate-on-scroll" id="asking-feelings">
-      <h2><span class="section-num">4</span> Asking About Feelings (기분 묻기)</h2>
-      <p>Asking how someone feels is a fundamental social skill. Korean has several phrases ranging from casual check-ins to more concerned inquiries. The correct choice depends on context and your relationship with the person.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:18%">Korean</th><th style="width:24%">Romanization</th><th style="width:26%"><span class="no-ja">English</span><span class="ja-kana">日本語</span></th><th>When to Use</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">어때요?</td>
-            <td class="rom-cell">Eottaeyo?<span class="ja-kana"> オッテヨ</span></td>
-            <td class="eng-cell">How is it? / How are things?</td>
-            <td>General check-in about a situation</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">기분이 어때요?</td>
-            <td class="rom-cell">Gibuni eottaeyo?<span class="ja-kana"> キブニ オッテヨ</span></td>
-            <td class="eng-cell">How do you feel? / What's your mood?</td>
-            <td>Asking directly about someone's emotional state</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">왜 그래요?</td>
-            <td class="rom-cell">Wae euraeyo?<span class="ja-kana"> ウェ グレヨ</span></td>
-            <td class="eng-cell">Why are you acting like that? / What's wrong?</td>
-            <td>When you notice someone behaving unusually or upset</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">무슨 일 있어요?</td>
-            <td class="rom-cell">Museun il isseoyo?<span class="ja-kana"> ムスン イル イッソヨ</span></td>
-            <td class="eng-cell">Did something happen? / Is something going on?</td>
-            <td>When you sense something is wrong or different</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">괜찮아요?</td>
-            <td class="rom-cell">Gwaenchanayo?<span class="ja-kana"> クェンチャナヨ</span></td>
-            <td class="eng-cell">Are you okay? / Are you alright?</td>
-            <td>Expressing concern; also used to offer comfort</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="example-box">
-        <div class="example-header"><span>💬 Checking In — Dialogue</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:12px">
-          <div class="korean-example">
-            <div class="kor-line">A: 표정이 안 좋아 보여요. 무슨 일 있어요?</div>
-            <div class="rom-line">A: Pyojeungi an joa boyeoyo. Museun il isseoyo?</div>
-            <div class="eng-line no-ja">A: You look like something's wrong. Did something happen?</div>
-            <div class="eng-line ja-block">A: 何かあったみたいな顔してるよ。どうかしたの？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">B: 오늘 시험을 못 봐서 좀 속상해요.</div>
-            <div class="rom-line">B: Oneul siheomeul mot bwaseo jom soksanghaeyo.</div>
-            <div class="eng-line no-ja">B: I did badly on today's exam, so I feel a bit upset.</div>
-            <div class="eng-line ja-block">B: 今日の試験がうまくいかなくて、ちょっと落ち込んでいます。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">A: 아이고, 괜찮아요? 다음엔 잘 될 거예요.</div>
-            <div class="rom-line">A: Aigo, gwaenchanayo? Daeumen jal doel geoyeyo.</div>
-            <div class="eng-line no-ja">A: Oh no, are you okay? It'll go better next time.</div>
-            <div class="eng-line ja-block">A: えっ、大丈夫？次はきっとうまくいくよ。</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 5 -->
-    <div class="lesson-section animate-on-scroll" id="empathy">
-      <h2><span class="section-num">5</span> Responding to Others' Emotions (공감 표현)</h2>
-      <p>Showing empathy and reacting appropriately to others' feelings is a core social skill in any language. These phrases will help you comfort, celebrate, and connect with Korean speakers authentically.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:22%">Korean</th><th style="width:30%">Romanization</th><th><span class="no-ja">English</span><span class="ja-kana">日本語</span></th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">저도요!</td>
-            <td class="rom-cell">Jeodouyo!<span class="ja-kana"> チョドウヨ</span></td>
-            <td class="eng-cell">Me too!</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">힘내세요! / 힘내!</td>
-            <td class="rom-cell">Himnaeseyo! / Himnae!<span class="ja-kana"> ヒムネセヨ / ヒムネ</span></td>
-            <td class="eng-cell">Cheer up! / You've got this! (Fighting!)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">걱정하지 마세요.</td>
-            <td class="rom-cell">Geokjeongháji maseyo.<span class="ja-kana"> ゴクジョンハジ マセヨ</span></td>
-            <td class="eng-cell">Don't worry.</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">잘 될 거예요.</td>
-            <td class="rom-cell">Jal doel geoyeyo.<span class="ja-kana"> チャル デル ゴエヨ</span></td>
-            <td class="eng-cell">It'll work out. / It'll be fine.</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">안됐네요.</td>
-            <td class="rom-cell">Andoennaeyo.<span class="ja-kana"> アンドェンネヨ</span></td>
-            <td class="eng-cell">That's too bad. / I'm sorry to hear that.</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">축하해요!</td>
-            <td class="rom-cell">Chukhahaeyo!<span class="ja-kana"> チュカヘヨ</span></td>
-            <td class="eng-cell">Congratulations!</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">대박이에요!</td>
-            <td class="rom-cell">Daebagieyo!<span class="ja-kana"> テバギエヨ</span></td>
-            <td class="eng-cell">That's amazing! / Jackpot! (colloquial)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">진짜요?</td>
-            <td class="rom-cell">Jinjjayo?<span class="ja-kana"> チンッチャヨ</span></td>
-            <td class="eng-cell">Really? / For real?</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">그랬어요?</td>
-            <td class="rom-cell">Geuraesseoyo?<span class="ja-kana"> グレッソヨ</span></td>
-            <td class="eng-cell">Did that happen? / Is that so?</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="info-box">
-        <span class="tip-icon">ℹ️</span>
-        <div class="tip-content">
-          <div class="tip-label">Culture Note — 힘내세요</div>
-          <div class="tip-text"><strong style="font-family:var(--font-korean)">힘내세요</strong> (literally "draw out your strength") is the Korean equivalent of cheering someone on. You will also hear <strong style="font-family:var(--font-korean)">화이팅!</strong> (from English "fighting") used interchangeably — it is one of the most iconic expressions in Korean culture, heard in K-Dramas, at sports events, and between friends before an exam.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 6 -->
-    <div class="lesson-section animate-on-scroll" id="idioms">
-      <h2><span class="section-num">6</span> Emotion Idioms and Expressions (감정 관용어)</h2>
-      <p>Korean has a vivid set of idiomatic expressions rooted in physical sensations. Many describe emotions through body metaphors — the heart, stomach, eyes, and breath all carry emotional meaning. These appear constantly in K-Dramas and literary Korean.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:22%">Korean Idiom</th><th style="width:30%">Literal Meaning</th><th>Actual Meaning</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">마음이 무겁다</td>
-            <td>heart (mind) is heavy</td>
-            <td class="eng-cell">feel burdened / weighed down</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">속이 상하다</td>
-            <td>inside is hurt / damaged</td>
-            <td class="eng-cell">feel emotionally hurt / upset</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">눈이 맞다</td>
-            <td>eyes meet / match</td>
-            <td class="eng-cell">fall for each other / make eye contact romantically</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">마음이 통하다</td>
-            <td>hearts connect / pass through</td>
-            <td class="eng-cell">understand each other deeply / be on the same wavelength</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">가슴이 두근거리다</td>
-            <td>chest pounds / throbs</td>
-            <td class="eng-cell">heart racing from excitement or nervousness</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">눈물이 나다</td>
-            <td>tears come out</td>
-            <td class="eng-cell">start crying / tears well up</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">기가 막히다</td>
-            <td>breath / spirit is blocked</td>
-            <td class="eng-cell">speechless (from shock, absurdity, or amazement)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">신나다</td>
-            <td>spirit rises / energy comes out</td>
-            <td class="eng-cell">excited / thrilled / pumped up</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="example-box">
-        <div class="example-header"><span>🎭 Idioms in Context</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:12px">
-          <div class="korean-example">
-            <div class="kor-line">그 소식을 듣고 가슴이 두근거렸어요.</div>
-            <div class="rom-line">Geu soshigeul deutgo gaseumi dugeungeoryeosseoyo.</div>
-            <div class="eng-line no-ja">My heart was pounding when I heard that news.</div>
-            <div class="eng-line ja-block">そのニュースを聞いて、胸がドキドキしました。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">진짜 기가 막혀요. 어떻게 그럴 수가 있어요?</div>
-            <div class="rom-line">Jinjja giga makhyeoyo. Eotteoke geureol suga isseoyo?</div>
-            <div class="eng-line no-ja">I'm speechless. How could something like that happen?</div>
-            <div class="eng-line ja-block">言葉が出ません。どうしてそんなことが起きるんですか？</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 7 -->
-    <div class="lesson-section animate-on-scroll" id="dialogues">
-      <h2><span class="section-num">7</span> Practice Dialogues (연습 대화)</h2>
-      <p>Study these three mini-dialogues to see emotion vocabulary working naturally in real conversational situations.</p>
-
-      <div class="example-box">
-        <div class="example-header"><span>🎓 Dialogue 1 — Good News About University Admission</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:12px">
-          <div class="korean-example">
-            <div class="kor-line">A: 나 서울대학교에 합격했어!</div>
-            <div class="rom-line">A: Na Seoul Daehakgyoe hapgyeokaesseo!</div>
-            <div class="eng-line no-ja">A: I got accepted to Seoul National University!</div>
-            <div class="eng-line ja-block">A: 私、ソウル大学に合格したよ！</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">B: 진짜? 대박이야! 축하해!</div>
-            <div class="rom-line">B: Jinjja? Daebagia! Chukhahae!</div>
-            <div class="eng-line no-ja">B: Really? That's incredible! Congratulations!</div>
-            <div class="eng-line ja-block">B: 本当に？すごい！おめでとう！</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">A: 너무 기뻐서 눈물이 나려고 해.</div>
-            <div class="rom-line">A: Neomu gippeo seo nunmuri naryeogo hae.</div>
-            <div class="eng-line no-ja">A: I'm so happy I'm about to cry.</div>
-            <div class="eng-line ja-block">A: 嬉しすぎて泣きそうです。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">B: 당연하지! 네가 얼마나 열심히 했는데. 정말 자랑스러워.</div>
-            <div class="rom-line">B: Dangyeonhaji! Nega eolmana yeolssimhi haenneunde. Jeongmal jarangseureoeo.</div>
-            <div class="eng-line no-ja">B: Of course! You worked so hard for this. I'm truly proud of you.</div>
-            <div class="eng-line ja-block">B: 当然だよ！あなたがどれだけ一生懸命頑張ったか。本当に誇りに思います。</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="example-box">
-        <div class="example-header"><span>🫂 Dialogue 2 — Comforting a Sad Friend</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:12px">
-          <div class="korean-example">
-            <div class="kor-line">A: 왜 그래? 표정이 안 좋아 보여.</div>
-            <div class="rom-line">A: Wae geurae? Pyojeungi an joa boyeo.</div>
-            <div class="eng-line no-ja">A: What's wrong? You look upset.</div>
-            <div class="eng-line ja-block">A: どうしたの？顔色悪いよ。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">B: 남자친구랑 헤어졌어. 너무 슬프고 외로워.</div>
-            <div class="rom-line">B: Namjachingurang heeojyeosseo. Neomu seulpeugo oerowo.</div>
-            <div class="eng-line no-ja">B: I broke up with my boyfriend. I'm so sad and lonely.</div>
-            <div class="eng-line ja-block">B: 彼氏と別れました。とても悲しくて寂しいです。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">A: 아이고, 많이 속상하겠다. 안됐다.</div>
-            <div class="rom-line">A: Aigo, mani soksanghagetda. Andwaessda.</div>
-            <div class="eng-line no-ja">A: Oh no, you must be feeling really hurt. I'm sorry to hear that.</div>
-            <div class="eng-line ja-block">A: ああ、かなりつらいね。それはかわいそうに。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">B: 마음이 너무 무거워.</div>
-            <div class="rom-line">B: Maeumi neomu mugeoeo.</div>
-            <div class="eng-line no-ja">B: My heart feels so heavy.</div>
-            <div class="eng-line ja-block">B: 心がとても重いです。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">A: 걱정하지 마. 시간이 지나면 다 괜찮아질 거야. 힘내!</div>
-            <div class="rom-line">A: Geokjeongháji ma. Sigani jinamyeon da gwaenchanajil geoya. Himnae!</div>
-            <div class="eng-line no-ja">A: Don't worry. With time, everything will be okay. Hang in there!</div>
-            <div class="eng-line ja-block">A: 心配しないで。時間が経てば全部大丈夫になるよ。頑張って！</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="example-box">
-        <div class="example-header"><span>🎤 Dialogue 3 — Nervousness Before a Performance</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:12px">
-          <div class="korean-example">
-            <div class="kor-line">A: 괜찮아? 많이 떨려 보여.</div>
-            <div class="rom-line">A: Gwaenchana? Mani tteollyeo boyeo.</div>
-            <div class="eng-line no-ja">A: Are you okay? You look really nervous.</div>
-            <div class="eng-line ja-block">A: 大丈夫？すごく緊張してるように見えるよ。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">B: 응, 가슴이 두근거려서 무서워. 무대 공포증이 있어.</div>
-            <div class="rom-line">B: Eung, gaseumi dugeungeoryeoseo museowo. Mudae gongpocheungi isseo.</div>
-            <div class="eng-line no-ja">B: Yeah, my heart is pounding and I'm scared. I have stage fright.</div>
-            <div class="eng-line ja-block">B: うん、心臓がドキドキして怖いです。舞台恐怖症があります。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">A: 에이, 설레는 거야. 넌 잘할 수 있어. 화이팅!</div>
-            <div class="rom-line">A: Ei, seolleneun geoya. Neon jalhal su isseo. Hwaiting!</div>
-            <div class="eng-line no-ja">A: Hey, it's just excitement! You can do it. Fighting!</div>
-            <div class="eng-line ja-block">A: それはただのドキドキだよ！あなたならできる。ファイティング！</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">B: 고마워. 이제 좀 설레기도 하네. 신난다!</div>
-            <div class="rom-line">B: Gomawo. Ije jom seollegido hane. Sinnanda!</div>
-            <div class="eng-line no-ja">B: Thanks. Now I'm starting to feel excited too. Let's go!</div>
-            <div class="eng-line ja-block">B: ありがとう。今ちょっとワクワクしてきた。やるぞ！</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 8 -->
-    <div class="lesson-section animate-on-scroll" id="kpop-phrases">
-      <h2><span class="section-num">8</span> K-Pop &amp; K-Drama Emotion Phrases</h2>
-      <p>If you have been watching Korean dramas or listening to K-Pop, you have already been absorbing emotional vocabulary without realizing it. These ten phrases appear in countless songs and dramatic scenes — knowing them will deepen your enjoyment of Korean content and help you understand lyrics and dialogue immediately.</p>
-
-      <div class="info-box">
-        <span class="tip-icon">ℹ️</span>
-        <div class="tip-content">
-          <div class="tip-label">Culture Note — Learning Through K-Media</div>
-          <div class="tip-text">K-Pop lyrics and K-Drama dialogue are excellent learning tools because they use emotional, conversational Korean rather than textbook-formal language. Pay attention to which speech level each phrase uses: 보고 싶어 and 사랑해 are 반말 (casual) — typical in romantic contexts. 괜찮아요 is 해요체 (polite). Mixing these up would sound strange in context.</div>
-        </div>
-      </div>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:20%">Korean Phrase</th><th style="width:24%">Romanization</th><th style="width:28%"><span class="no-ja">English</span><span class="ja-kana">日本語</span></th><th>Context</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('보고 싶어')" aria-label="Play 보고 싶어">🔊</button> 보고 싶어</td>
-            <td class="rom-cell">bogo sipeo<span class="ja-kana"> ポゴ シポ</span></td>
-            <td class="eng-cell">I miss you</td>
-            <td>Romantic songs, longing scenes</td>
-          </tr>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('사랑해')" aria-label="Play 사랑해">🔊</button> 사랑해</td>
-            <td class="rom-cell">saranghae<span class="ja-kana"> サランヘ</span></td>
-            <td class="eng-cell">I love you (casual)</td>
-            <td>Confessions, romantic K-Dramas</td>
-          </tr>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('힘들어')" aria-label="Play 힘들어">🔊</button> 힘들어</td>
-            <td class="rom-cell">himdeulleo<span class="ja-kana"> ヒムドゥルロ</span></td>
-            <td class="eng-cell">It's hard / I'm struggling</td>
-            <td>Emotional ballads, vulnerable moments</td>
-          </tr>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('괜찮아')" aria-label="Play 괜찮아">🔊</button> 괜찮아</td>
-            <td class="rom-cell">gwaenchana<span class="ja-kana"> クェンチャナ</span></td>
-            <td class="eng-cell">It's okay / I'm fine</td>
-            <td>Comforting others, reassuring self</td>
-          </tr>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('미안해')" aria-label="Play 미안해">🔊</button> 미안해</td>
-            <td class="rom-cell">mianhae<span class="ja-kana"> ミアンヘ</span></td>
-            <td class="eng-cell">I'm sorry (casual)</td>
-            <td>Apologies between close people</td>
-          </tr>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('고마워')" aria-label="Play 고마워">🔊</button> 고마워</td>
-            <td class="rom-cell">gomawo<span class="ja-kana"> コマウォ</span></td>
-            <td class="eng-cell">Thank you (casual)</td>
-            <td>Heartfelt gratitude in informal settings</td>
-          </tr>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('설레')" aria-label="Play 설레">🔊</button> 설레</td>
-            <td class="rom-cell">seolle<span class="ja-kana"> ソルレ</span></td>
-            <td class="eng-cell">I'm fluttery / excited (casual)</td>
-            <td>Romantic tension, anticipation in K-Pop</td>
-          </tr>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('떠나지 마')" aria-label="Play 떠나지 마">🔊</button> 떠나지 마</td>
-            <td class="rom-cell">tteonaji ma<span class="ja-kana"> ットナジ マ</span></td>
-            <td class="eng-cell">Don't leave</td>
-            <td>Emotional breakup scenes, sad ballads</td>
-          </tr>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('혼자가 아니야')" aria-label="Play 혼자가 아니야">🔊</button> 혼자가 아니야</td>
-            <td class="rom-cell">honjaga aniya<span class="ja-kana"> ホンジャガ アニヤ</span></td>
-            <td class="eng-cell">You're not alone</td>
-            <td>Fan songs, comforting lyrics</td>
-          </tr>
-          <tr>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('잊지 마')" aria-label="Play 잊지 마">🔊</button> 잊지 마</td>
-            <td class="rom-cell">itji ma<span class="ja-kana"> イッチ マ</span></td>
-            <td class="eng-cell">Don't forget</td>
-            <td>Parting scenes, nostalgic lyrics</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="tip-box">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">Learning Tip — Shadowing</div>
-          <div class="tip-text">Pick one K-Pop song you love and look up the Korean lyrics with romanization. Identify the emotion words from this lesson. Try to sing along — this "shadowing" technique dramatically improves pronunciation and helps emotional vocabulary stick in memory far better than flashcards alone.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Completion Button -->
-    <div style="text-align:center;margin:40px 0 20px">
-      <button class="btn btn-primary btn-lg" data-lesson-complete="emotions">
-        ✅ Mark Lesson Complete
-      </button>
-    </div>
-
-    <!-- Lesson Nav Footer -->
     <div class="lesson-nav-footer">
       <a href="speech-levels.html" class="lesson-nav-btn">
         <span>←</span>
@@ -873,11 +163,11 @@
         </div>
       </a>
       <a href="shopping.html" class="lesson-nav-btn next">
+        <span>→</span>
         <div>
           <span class="lesson-nav-label">Next</span>
           <span class="lesson-nav-title">Shopping Phrases</span>
         </div>
-        <span>→</span>
       </a>
     </div>
 
@@ -893,7 +183,7 @@
           <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
           <div class="logo-text">Korean School <span>한국어 학교</span></div>
         </a>
-        <p>A free Korean language learning platform for learners of every level, worldwide.</p>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
       </div>
       <div>
         <div class="footer-heading">Learn</div>
@@ -917,16 +207,22 @@
           <li><a href="../about.html">About Us</a></li>
           <li><a href="../contact.html">Contact</a></li>
           <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
-      <span>🇰🇷 학습을 즐기세요!</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
     </div>
   </div>
 </footer>
+
 <script src="../js/lang-ja.js"></script>
 <script src="../js/app.js"></script>
+<script src="../js/step-runner.js"></script>
+<script>
+  StepRunner.init('/learn/data/emotions.json');
+</script>
 </body>
 </html>

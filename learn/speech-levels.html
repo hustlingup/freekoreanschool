@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -8,17 +8,12 @@
   <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>Formal vs Informal Korean | 한국어 학교</title>
+  <title>Korean Speech Levels — Formal vs Informal 높임말 | 한국어 학교</title>
+  <meta name="description" content="Master Korean speech levels — formal 합쇼체, everyday 해요체, casual 반말, and written 문어체. Interactive lessons with audio and quizzes to know when to use each.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
-  <style>
-  .ja-kana  { display: none; font-size: 0.85em; color: var(--text-secondary); }
-  body.lang-ja .ja-kana  { display: inline; }
-  .kata     { display: none; font-size: 0.82em; color: var(--text-secondary); }
-  body.lang-ja .kata     { display: block; }
-  .ja-block { display: none; }
-  body.lang-ja .ja-block { display: block; }
-  body.lang-ja .no-ja   { display: none; }
-  </style>
 </head>
 <body>
 
@@ -39,7 +34,7 @@
     <div class="header-actions">
       <div class="search-bar">
         <span class="search-icon">🔍</span>
-        <input type="text" id="search-input" placeholder="Search lessons..." autocomplete="off" aria-label="Search">
+        <input type="text" id="search-input" placeholder="Search lessons...">
       </div>
       <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
       <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
@@ -48,7 +43,8 @@
   </div>
 </header>
 
-<!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+<!-- XP Badge (fixed top-right) -->
+<div class="xp-badge" id="xp-badge" aria-live="polite">⚡ 0 XP</div>
 
 <!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
 <aside class="sidebar" id="sidebar">
@@ -64,27 +60,27 @@
     <div class="sidebar-section">Beginner</div>
     <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> Vocab <span class="accordion-arrow">▶</span></button>
     <div class="sidebar-accordion-content" id="accordion-vocab">
-      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
-      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
-      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
-      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
-      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
-      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
-      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
-      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
-      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
-      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
-      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
-      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
-      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
-      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
-      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
-      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
-      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
-      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
-      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
-      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
-      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
+      <a href="vocabulary.html?cat=greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Greetings</a>
+      <a href="vocabulary.html?cat=numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Numbers</a>
+      <a href="vocabulary.html?cat=family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Family</a>
+      <a href="vocabulary.html?cat=food-drink" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Food &amp; Drink</a>
+      <a href="vocabulary.html?cat=colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Colors</a>
+      <a href="vocabulary.html?cat=days-time" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Days &amp; Time</a>
+      <a href="vocabulary.html?cat=places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Places</a>
+      <a href="vocabulary.html?cat=emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emotions</a>
+      <a href="vocabulary.html?cat=body-parts" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Body Parts</a>
+      <a href="vocabulary.html?cat=travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Travel</a>
+      <a href="vocabulary.html?cat=shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Shopping</a>
+      <a href="vocabulary.html?cat=weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Weather</a>
+      <a href="vocabulary.html?cat=verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Verbs &amp; Actions</a>
+      <a href="vocabulary.html?cat=adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Adjectives</a>
+      <a href="vocabulary.html?cat=workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Workplace</a>
+      <a href="vocabulary.html?cat=health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Health &amp; Medicine</a>
+      <a href="vocabulary.html?cat=media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media &amp; K-Culture</a>
+      <a href="vocabulary.html?cat=proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Proverbs &amp; Idioms</a>
+      <a href="vocabulary.html?cat=academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Academic Korean</a>
+      <a href="vocabulary.html?cat=news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> News &amp; Society</a>
+      <a href="vocabulary.html?cat=konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
     </div>
     <a href="pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> Pronouns <span class="link-badge badge-beginner">Beginner</span></a>
     <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> Common Nouns <span class="link-badge badge-beginner">Beginner</span></a>
@@ -105,15 +101,9 @@
       <a href="grammar.html#adverbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">💯</span> Degree Adverbs <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#nominalizer" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔤</span> Nominalizer -는 것 <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#comparatives" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚖️</span> Comparatives <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#good-like" class="sidebar-link" data-level="intermediate"><span class="link-icon">❤️</span> Like: 좋다 vs 좋아하다 <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#still-already" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏳</span> Still, Already <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#indefinite" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Someone, Something <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">📢</span> Imperative -(으)세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#negative-imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">🚫</span> Don't: -지 마세요 <span class="link-badge badge-intermediate">Intermediate</span></a>
       <a href="grammar.html#method" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛤️</span> Method: -(으)로 <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#good-bad-at" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎯</span> Good/Poor At <span class="link-badge badge-intermediate">Intermediate</span></a>
-      <a href="grammar.html#all-more" class="sidebar-link" data-level="advanced"><span class="link-icon">📦</span> All, More: 다, 더 <span class="link-badge badge-advanced">Advanced</span></a>
-      <a href="grammar.html#do-part2" class="sidebar-link" data-level="advanced"><span class="link-icon">✳️</span> -도 Advanced Uses <span class="link-badge badge-advanced">Advanced</span></a>
     </div>
     <div class="sidebar-section">Intermediate</div>
     <a href="speech-levels.html" class="sidebar-link active" data-level="intermediate"><span class="link-icon">🗣️</span> Formal vs Informal <span class="link-badge badge-intermediate">Intermediate</span></a>
@@ -133,761 +123,51 @@
 <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
   <div class="lesson-wrap">
 
-    <!-- Breadcrumb -->
-    <div class="lesson-breadcrumb">
-      <a href="../index.html">Home</a>
-      <span class="sep">›</span>
-      <a href="hangul.html">Learn</a>
-      <span class="sep">›</span>
-      <span>Formal vs Informal</span>
-    </div>
-
-    <!-- Lesson Header -->
-    <div class="lesson-header">
-      <div class="lesson-tag">🗣️ Intermediate · Lesson 8</div>
-      <h1 class="lesson-title">Formal vs Informal Korean: <span class="grad-text">존댓말과 반말</span></h1>
-      <p class="lesson-meta">
-        <span>🗣️ 6 Speech Levels</span>
+    <div class="lesson-header animate-on-scroll">
+      <div class="lesson-breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <a href="hangul.html">Learn</a>
+        <span>›</span>
+        <span>Formal vs Informal</span>
+      </div>
+      <div class="lesson-tag">🗣️ Intermediate · Lesson 6</div>
+      <h1 class="lesson-title">Korean <span class="grad-text">Speech Levels</span> — 높임말</h1>
+      <div class="lesson-meta">
         <span>📊 Intermediate</span>
-        <span>🔖 Speech Levels</span>
-        <span>👑 Formality System</span>
-      </p>
-    </div>
-
-    <div class="lesson-intro">
-      <p>One of the most important — and uniquely Korean — aspects of the language is its <strong>grammaticalized politeness system</strong>. Unlike English, where politeness is mostly about vocabulary choice ("Can you help me?" vs "Help me!"), Korean encodes social relationships directly into verb endings. Knowing <em>when</em> to use each speech level is just as critical as knowing <em>how</em>.</p>
-    </div>
-
-    <!-- Section 1 -->
-    <div class="lesson-section animate-on-scroll" id="why-speech-levels">
-      <h2><span class="section-num">1</span> Why Korean Has Speech Levels (왜 존댓말이 필요한가)</h2>
-      <p>Korean society places great importance on hierarchy, age, and social relationships. These values are reflected directly in the language — the verb endings you choose signal whether you respect someone, see them as a peer, or hold authority over them. Using the wrong speech level is not merely awkward; it can be genuinely offensive. A learner who speaks 반말 (casual speech) to a new Korean acquaintance older than them will immediately be seen as rude, regardless of intent.</p>
-      <p>This system is called <strong>경어법 (gyeong-eo-beop)</strong> — the honorific speech system. Korean linguists traditionally recognize six speech levels, though in modern everyday speech, three dominate: 합쇼체, 해요체, and 해체.</p>
-
-      <div class="info-box">
-        <span class="tip-icon">ℹ️</span>
-        <div class="tip-content">
-          <div class="tip-label">The 6 Korean Speech Levels — Overview</div>
-          <div class="tip-text">
-            <table class="vocab-table" style="width:100%;margin-top:12px;table-layout:fixed">
-              <thead>
-                <tr><th style="width:14%">Level Name</th><th style="width:20%">Also Called</th><th>When Used</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="kor-cell">합쇼체</td>
-                  <td>합니다체 / Formal Polite</td>
-                  <td>News anchors, military, first meeting with seniors, formal presentations, customer service scripts</td>
-                </tr>
-                <tr>
-                  <td class="kor-cell">해요체</td>
-                  <td>Informal Polite</td>
-                  <td>Daily default for most situations — strangers, coworkers, elders you know, service industry</td>
-                </tr>
-                <tr>
-                  <td class="kor-cell">해체</td>
-                  <td>반말 / Casual</td>
-                  <td>Very close friends of same age, adults speaking to young children, older to younger in close relationship</td>
-                </tr>
-                <tr>
-                  <td class="kor-cell">해라체</td>
-                  <td>Plain / Literary</td>
-                  <td>Written text, novels, newspapers, commands, song lyrics, formal written instructions</td>
-                </tr>
-                <tr>
-                  <td class="kor-cell">하게체</td>
-                  <td>Middle Formal</td>
-                  <td>Elderly speaking to a younger adult — relatively rare in modern speech</td>
-                </tr>
-                <tr>
-                  <td class="kor-cell">하오체</td>
-                  <td>Archaic</td>
-                  <td>Rarely used today — occasionally in historical dramas or formal documents</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+        <span>⏱ 29 min</span>
+        <span>🔊 Audio on every form</span>
+        <span>⚡ XP + Streak system</span>
       </div>
-
-      <div class="tip-box">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">Learner Focus</div>
-          <div class="tip-text">As a learner, focus on mastering <strong>해요체</strong> first (your everyday default), then <strong>합쇼체</strong> (for formal settings), and finally <strong>반말</strong> (only when a Korean friend invites you to use it). The remaining three levels appear mainly in literature and historical contexts.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 2 -->
-    <div class="lesson-section animate-on-scroll" id="formal-polite">
-      <h2><span class="section-num">2</span> Formal Polite — 합쇼체 (합니다체)</h2>
-      <p>합쇼체 is the most formal speech level in everyday use. It conveys maximum respect and professionalism. You will hear it constantly on Korean news broadcasts, in corporate settings, in the military, and when meeting someone of significantly higher status for the first time.</p>
-
-      <p><strong>Key endings:</strong></p>
-      <ul style="margin:12px 0 16px 20px;line-height:2">
-        <li><strong style="font-family:var(--font-korean)">-습니다 / -ㅂ니다</strong> — statement (declarative)</li>
-        <li><strong style="font-family:var(--font-korean)">-습니까? / -ㅂ니까?</strong> — question (interrogative)</li>
-        <li><strong style="font-family:var(--font-korean)">-(으)십시오</strong> — polite command / request</li>
+      <ul class="lesson-intro-bullets">
+        <li>Learn the 4 Korean speech levels: formal 합쇼체, polite 해요체, casual 반말, written 문어체</li>
+        <li>Understand when to use each level — who you're talking to and why it matters</li>
+        <li>Compare the same phrases across all levels side by side</li>
+        <li>4 stages with listen-and-repeat audio and quizzes throughout</li>
       </ul>
-      <p>The rule: if the verb stem ends in a consonant, use <strong style="font-family:var(--font-korean)">-습니다</strong>; if it ends in a vowel or <strong style="font-family:var(--font-korean)">ㄹ</strong>, use <strong style="font-family:var(--font-korean)">-ㅂ니다</strong> (and drop the ㄹ first).</p>
+    </div>
 
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:20%">Dictionary Form</th><th style="width:26%">합쇼체 (Statement)</th><th style="width:26%">합쇼체 (Question)</th><th><span class="no-ja">English</span><span class="ja-kana">日本語</span></th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">가다</td>
-            <td class="kor-cell">갑니다</td>
-            <td class="kor-cell">갑니까?</td>
-            <td class="eng-cell">to go</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">오다</td>
-            <td class="kor-cell">옵니다</td>
-            <td class="kor-cell">옵니까?</td>
-            <td class="eng-cell">to come</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">먹다</td>
-            <td class="kor-cell">먹습니다</td>
-            <td class="kor-cell">먹습니까?</td>
-            <td class="eng-cell">to eat</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">마시다</td>
-            <td class="kor-cell">마십니다</td>
-            <td class="kor-cell">마십니까?</td>
-            <td class="eng-cell">to drink</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">공부하다</td>
-            <td class="kor-cell">공부합니다</td>
-            <td class="kor-cell">공부합니까?</td>
-            <td class="eng-cell">to study</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">있다</td>
-            <td class="kor-cell">있습니다</td>
-            <td class="kor-cell">있습니까?</td>
-            <td class="eng-cell">to exist / to have</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">없다</td>
-            <td class="kor-cell">없습니다</td>
-            <td class="kor-cell">없습니까?</td>
-            <td class="eng-cell">to not exist / to not have</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">이다</td>
-            <td class="kor-cell">입니다</td>
-            <td class="kor-cell">입니까?</td>
-            <td class="eng-cell">to be (copula)</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="example-box">
-        <div class="example-header"><span>🎙️ 합쇼체 — Formal Sentences</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:12px">
-          <div class="korean-example">
-            <div class="kor-line">안녕하십니까?</div>
-            <div class="rom-line">Annyeonghashimnikka?</div>
-            <div class="eng-line no-ja">How do you do? / Good day. (very formal greeting)</div>
-            <div class="eng-line ja-block">いかがお過ごしですか？（非常にフォーマルな挨拶）</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">만나서 반갑습니다.</div>
-            <div class="rom-line">Mannaseo bangapseumnida.</div>
-            <div class="eng-line no-ja">I am pleased to meet you.</div>
-            <div class="eng-line ja-block">お会いできて光栄です。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">잠시 기다려 주십시오.</div>
-            <div class="rom-line">Jamsi gidaryeo jusipsio.</div>
-            <div class="eng-line no-ja">Please wait a moment. (formal command)</div>
-            <div class="eng-line ja-block">少々お待ちください。（フォーマルな命令）</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-box">
-        <span class="tip-icon">ℹ️</span>
-        <div class="tip-content">
-          <div class="tip-label">When to Use 합쇼체</div>
-          <div class="tip-text">Use 합쇼체 in: news broadcasts and weather reports, military commands and briefings, formal business presentations, meeting someone's parents or bosses for the first time, public announcements (airports, subway), customer service scripts in banks and government offices.</div>
-        </div>
+    <!-- ── Step-Runner Shell ─────────────────────────── -->
+    <div id="step-shell">
+      <div style="text-align:center;padding:60px 20px;color:var(--text-muted)">
+        Loading lesson…
       </div>
     </div>
 
-    <!-- Section 3 -->
-    <div class="lesson-section animate-on-scroll" id="informal-polite">
-      <h2><span class="section-num">3</span> Informal Polite — 해요체</h2>
-      <p>해요체 is the everyday workhorse of Korean politeness. It is polite enough to use with strangers and elders, yet relaxed enough for general adult conversation. Most Korean textbooks teach this level first, and for good reason — if you learn one speech level, make it this one.</p>
-
-      <p><strong>Key endings:</strong></p>
-      <ul style="margin:12px 0 16px 20px;line-height:2">
-        <li><strong style="font-family:var(--font-korean)">-아요 / -어요</strong> — statement or question (distinguished by intonation: rising = question)</li>
-        <li><strong style="font-family:var(--font-korean)">-(으)세요</strong> — polite request or command</li>
-      </ul>
-      <p>To form 해요체: find the verb stem, check the last vowel. If the last vowel is <strong style="font-family:var(--font-korean)">아</strong> or <strong style="font-family:var(--font-korean)">오</strong>, add <strong style="font-family:var(--font-korean)">-아요</strong>. All other vowels take <strong style="font-family:var(--font-korean)">-어요</strong>. Irregular verbs (하다 → 해요, 오다 → 와요) must be memorized.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:20%">Dictionary Form</th><th style="width:22%">해요체</th><th style="width:22%">Past (해요체)</th><th><span class="no-ja">English</span><span class="ja-kana">日本語</span></th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">가다</td>
-            <td class="kor-cell">가요</td>
-            <td class="kor-cell">갔어요</td>
-            <td class="eng-cell">to go</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">오다</td>
-            <td class="kor-cell">와요</td>
-            <td class="kor-cell">왔어요</td>
-            <td class="eng-cell">to come</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">먹다</td>
-            <td class="kor-cell">먹어요</td>
-            <td class="kor-cell">먹었어요</td>
-            <td class="eng-cell">to eat</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">마시다</td>
-            <td class="kor-cell">마셔요</td>
-            <td class="kor-cell">마셨어요</td>
-            <td class="eng-cell">to drink</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">하다</td>
-            <td class="kor-cell">해요</td>
-            <td class="kor-cell">했어요</td>
-            <td class="eng-cell">to do</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">보다</td>
-            <td class="kor-cell">봐요</td>
-            <td class="kor-cell">봤어요</td>
-            <td class="eng-cell">to see / to watch</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">쉬다</td>
-            <td class="kor-cell">쉬어요</td>
-            <td class="kor-cell">쉬었어요</td>
-            <td class="eng-cell">to rest</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">자다</td>
-            <td class="kor-cell">자요</td>
-            <td class="kor-cell">잤어요</td>
-            <td class="eng-cell">to sleep</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">읽다</td>
-            <td class="kor-cell">읽어요</td>
-            <td class="kor-cell">읽었어요</td>
-            <td class="eng-cell">to read</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">좋아하다</td>
-            <td class="kor-cell">좋아해요</td>
-            <td class="kor-cell">좋아했어요</td>
-            <td class="eng-cell">to like</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="tip-box">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">Start Here</div>
-          <div class="tip-text">해요체 is what most Korean textbooks (TTMIK, Sogang, Yonsei) teach from day one. It's polite enough for strangers, natural enough for adults, and flexible enough for almost any situation. Master 해요체 before worrying about the other levels.</div>
-        </div>
-      </div>
-
-      <div class="example-box">
-        <div class="example-header"><span>💬 해요체 — Daily Conversation</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:12px">
-          <div class="korean-example">
-            <div class="kor-line">어디 가요?</div>
-            <div class="rom-line">Eodi gayo?</div>
-            <div class="eng-line no-ja">Where are you going?</div>
-            <div class="eng-line ja-block">どこへ行くの？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">저는 학생이에요.</div>
-            <div class="rom-line">Jeoneun haksaengieyo.</div>
-            <div class="eng-line no-ja">I am a student.</div>
-            <div class="eng-line ja-block">私は学生です。</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">뭐 먹어요?</div>
-            <div class="rom-line">Mwo meogeoyo?</div>
-            <div class="eng-line no-ja">What are you eating?</div>
-            <div class="eng-line ja-block">何を食べているの？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">천천히 말해 주세요.</div>
-            <div class="rom-line">Cheoncheonhi malhae juseyo.</div>
-            <div class="eng-line no-ja">Please speak slowly.</div>
-            <div class="eng-line ja-block">ゆっくり話してください。</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 4 -->
-    <div class="lesson-section animate-on-scroll" id="casual-banmal">
-      <h2><span class="section-num">4</span> Casual Speech — 반말 (해체)</h2>
-      <p>반말 (literally "half-speech") is the informal, casual register used between close friends of the same age, from adults to young children, and between older and younger people in very close relationships. Forming 반말 is simple: take the 해요체 form and drop the 요.</p>
-
-      <p><strong>Core rule:</strong> <span style="font-family:var(--font-korean)">해요체</span> → drop <span style="font-family:var(--font-korean)">요</span> = <span style="font-family:var(--font-korean)">반말</span></p>
-      <p>For the copula "to be" (이다): use <strong style="font-family:var(--font-korean)">야</strong> after a vowel, <strong style="font-family:var(--font-korean)">이야</strong> after a consonant.</p>
-
-      <div class="tip-box" style="border-color:var(--primary)">
-        <span class="tip-icon">⚠️</span>
-        <div class="tip-content">
-          <div class="tip-label">Social Warning</div>
-          <div class="tip-text">Never use 반말 with someone older than you unless they have explicitly invited you to (<strong style="font-family:var(--font-korean)">"말 놓아도 돼요"</strong> — "you can speak casually"). Using 반말 uninvited is a serious social mistake that signals disrespect. When in doubt, always default to 해요체.</div>
-        </div>
-      </div>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:20%">Dictionary Form</th><th style="width:22%">해요체 (Polite)</th><th style="width:22%">반말 (Casual)</th><th><span class="no-ja">English</span><span class="ja-kana">日本語</span></th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">가다</td>
-            <td class="kor-cell">가요</td>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('가')" aria-label="Play 가">🔊</button> 가</td>
-            <td class="eng-cell">go</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">오다</td>
-            <td class="kor-cell">와요</td>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('와')" aria-label="Play 와">🔊</button> 와</td>
-            <td class="eng-cell">come</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">먹다</td>
-            <td class="kor-cell">먹어요</td>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('먹어')" aria-label="Play 먹어">🔊</button> 먹어</td>
-            <td class="eng-cell">eat</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">마시다</td>
-            <td class="kor-cell">마셔요</td>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('마셔')" aria-label="Play 마셔">🔊</button> 마셔</td>
-            <td class="eng-cell">drink</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">하다</td>
-            <td class="kor-cell">해요</td>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('해')" aria-label="Play 해">🔊</button> 해</td>
-            <td class="eng-cell">do</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">보다</td>
-            <td class="kor-cell">봐요</td>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('봐')" aria-label="Play 봐">🔊</button> 봐</td>
-            <td class="eng-cell">see / watch</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">자다</td>
-            <td class="kor-cell">자요</td>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('자')" aria-label="Play 자">🔊</button> 자</td>
-            <td class="eng-cell">sleep</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">좋아하다</td>
-            <td class="kor-cell">좋아해요</td>
-            <td class="kor-cell"><button class="hangul-sound-btn" onclick="speakKorean('좋아해')" aria-label="Play 좋아해">🔊</button> 좋아해</td>
-            <td class="eng-cell">like</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="example-box">
-        <div class="example-header"><span>👫 반말 — Close Friends Dialogue</span></div>
-        <div class="example-body" style="display:flex;flex-direction:column;gap:12px">
-          <div class="korean-example">
-            <div class="kor-line">A: 야, 지금 뭐 해?</div>
-            <div class="rom-line">A: Ya, jigeum mwo hae?</div>
-            <div class="eng-line no-ja">A: Hey, what are you doing right now?</div>
-            <div class="eng-line ja-block">A: ねえ、今何してる？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">B: 그냥 집에 있어. 왜?</div>
-            <div class="rom-line">B: Geunyang jibe isseo. Wae?</div>
-            <div class="eng-line no-ja">B: Just home. Why?</div>
-            <div class="eng-line ja-block">B: 家にいるだけ。どうして？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">A: 같이 밥 먹을래?</div>
-            <div class="rom-line">A: Gachi bap meogeullae?</div>
-            <div class="eng-line no-ja">A: Want to eat together?</div>
-            <div class="eng-line ja-block">A: 一緒にご飯食べない？</div>
-          </div>
-          <div class="korean-example">
-            <div class="kor-line">B: 좋아! 어디서 먹어?</div>
-            <div class="rom-line">B: Joa! Eodiseo meogeo?</div>
-            <div class="eng-line no-ja">B: Great! Where are we eating?</div>
-            <div class="eng-line ja-block">B: いいね！どこで食べる？</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 5 -->
-    <div class="lesson-section animate-on-scroll" id="comparison-table">
-      <h2><span class="section-num">5</span> Full Conjugation Comparison</h2>
-      <p>Use this table as your reference chart. Notice how the three main speech levels share the same stem — only the ending changes.</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:17%">Verb (Dictionary)</th><th style="width:18%">합쇼체 (Formal)</th><th style="width:17%">해요체 (Polite)</th><th style="width:17%">반말 (Casual)</th><th><span class="no-ja">English</span><span class="ja-kana">日本語</span></th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">가다</td>
-            <td class="kor-cell">갑니다</td>
-            <td class="kor-cell">가요</td>
-            <td class="kor-cell">가</td>
-            <td class="eng-cell">go</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">먹다</td>
-            <td class="kor-cell">먹습니다</td>
-            <td class="kor-cell">먹어요</td>
-            <td class="kor-cell">먹어</td>
-            <td class="eng-cell">eat</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">하다</td>
-            <td class="kor-cell">합니다</td>
-            <td class="kor-cell">해요</td>
-            <td class="kor-cell">해</td>
-            <td class="eng-cell">do</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">오다</td>
-            <td class="kor-cell">옵니다</td>
-            <td class="kor-cell">와요</td>
-            <td class="kor-cell">와</td>
-            <td class="eng-cell">come</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">보다</td>
-            <td class="kor-cell">봅니다</td>
-            <td class="kor-cell">봐요</td>
-            <td class="kor-cell">봐</td>
-            <td class="eng-cell">see / watch</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">마시다</td>
-            <td class="kor-cell">마십니다</td>
-            <td class="kor-cell">마셔요</td>
-            <td class="kor-cell">마셔</td>
-            <td class="eng-cell">drink</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">공부하다</td>
-            <td class="kor-cell">공부합니다</td>
-            <td class="kor-cell">공부해요</td>
-            <td class="kor-cell">공부해</td>
-            <td class="eng-cell">study</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">자다</td>
-            <td class="kor-cell">잡니다</td>
-            <td class="kor-cell">자요</td>
-            <td class="kor-cell">자</td>
-            <td class="eng-cell">sleep</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">읽다</td>
-            <td class="kor-cell">읽습니다</td>
-            <td class="kor-cell">읽어요</td>
-            <td class="kor-cell">읽어</td>
-            <td class="eng-cell">read</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">이다</td>
-            <td class="kor-cell">입니다</td>
-            <td class="kor-cell">이에요 / 예요</td>
-            <td class="kor-cell">이야 / 야</td>
-            <td class="eng-cell">to be (copula)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- Section 6 -->
-    <div class="lesson-section animate-on-scroll" id="tense">
-      <h2><span class="section-num">6</span> Tense Across Speech Levels</h2>
-      <p>Tense endings stack onto the speech level endings. The structure is always: <strong>verb stem + tense marker + speech level ending</strong>. Here is how past and future tenses work across the three main speech levels.</p>
-
-      <div class="info-box">
-        <span class="tip-icon">ℹ️</span>
-        <div class="tip-content">
-          <div class="tip-label">Tense Marker Rules</div>
-          <div class="tip-text no-ja">
-            <strong>Past:</strong> add <span style="font-family:var(--font-korean)">-았-</span> (bright vowels: 아/오) or <span style="font-family:var(--font-korean)">-었-</span> (all other vowels) before the speech level ending.<br>
-            <strong>Future/Intent:</strong> add <span style="font-family:var(--font-korean)">-(으)ㄹ 거-</span> or use <span style="font-family:var(--font-korean)">-겠-</span> (formal intent/will) before the speech level ending.
-          </div>
-          <div class="tip-text ja-block">
-            <strong>過去：</strong><span style="font-family:var(--font-korean)">-았-</span>（明るい母音：아/오）または<span style="font-family:var(--font-korean)">-었-</span>（その他の母音）を敬語レベル語尾の前に付けます。<br>
-            <strong>未来/意図：</strong><span style="font-family:var(--font-korean)">-(으)ㄹ 거-</span>または<span style="font-family:var(--font-korean)">-겠-</span>（公式な意志/意図）を敬語レベル語尾の前に付けます。
-          </div>
-        </div>
-      </div>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:14%">Tense</th><th style="width:29%">합쇼체 (Formal)</th><th style="width:29%">해요체 (Polite)</th><th>반말 (Casual)</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="font-weight:700;color:var(--text)" colspan="4" style="font-size:0.85rem">가다 (to go)</td>
-          </tr>
-          <tr>
-            <td>Present</td>
-            <td class="kor-cell">갑니다</td>
-            <td class="kor-cell">가요</td>
-            <td class="kor-cell">가</td>
-          </tr>
-          <tr>
-            <td>Past</td>
-            <td class="kor-cell">갔습니다</td>
-            <td class="kor-cell">갔어요</td>
-            <td class="kor-cell">갔어</td>
-          </tr>
-          <tr>
-            <td>Future</td>
-            <td class="kor-cell">가겠습니다</td>
-            <td class="kor-cell">갈 거예요</td>
-            <td class="kor-cell">갈 거야</td>
-          </tr>
-          <tr>
-            <td style="font-weight:700;color:var(--text)" colspan="4" style="font-size:0.85rem">먹다 (to eat)</td>
-          </tr>
-          <tr>
-            <td>Present</td>
-            <td class="kor-cell">먹습니다</td>
-            <td class="kor-cell">먹어요</td>
-            <td class="kor-cell">먹어</td>
-          </tr>
-          <tr>
-            <td>Past</td>
-            <td class="kor-cell">먹었습니다</td>
-            <td class="kor-cell">먹었어요</td>
-            <td class="kor-cell">먹었어</td>
-          </tr>
-          <tr>
-            <td>Future</td>
-            <td class="kor-cell">먹겠습니다</td>
-            <td class="kor-cell">먹을 거예요</td>
-            <td class="kor-cell">먹을 거야</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="tip-box">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">-겠- vs -(으)ㄹ 거예요</div>
-          <div class="tip-text"><strong style="font-family:var(--font-korean)">-겠습니다</strong> expresses the speaker's strong will or determination — common in formal contexts ("I will certainly..."). <strong style="font-family:var(--font-korean)">-ㄹ 거예요</strong> expresses a plan or prediction — more natural in everyday speech ("I'm going to..."). Both are "future," but the nuance differs.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 7 -->
-    <div class="lesson-section animate-on-scroll" id="honorific-vocab">
-      <h2><span class="section-num">7</span> Honorific Vocabulary (특수 경어)</h2>
-      <p class="no-ja">Beyond verb endings, Korean has a set of entirely different vocabulary items used when speaking <em>to</em> or <em>about</em> honored people. These are called <strong>높임말 (nopimmal)</strong> — literally "high words." Using a regular word for a respected person (e.g., saying 먹어요 about your teacher's eating) is considered impolite even if your verb ending is formal.</p>
-      <p class="ja-block">動詞語尾に加え、韓国語には敬うべき人々に対して・について話すときに使う、全く異なる語彙があります。これらは<strong>높임말（ノピッマル）</strong> — 文字通り「高い言葉」と呼ばれます。敬うべき人に普通の言葉を使うことは（例：先生の食事について「먹어요」と言う）、動詞語尾が丁寧でも失礼と見なされます。</p>
-
-      <table class="vocab-table" style="width:100%;table-layout:fixed">
-        <thead>
-          <tr><th style="width:20%">Regular Word</th><th style="width:20%">Honorific Form</th><th style="width:24%">Romanization</th><th><span class="no-ja">English</span><span class="ja-kana">日本語</span></th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kor-cell">먹다 / 마시다</td>
-            <td class="kor-cell">드시다 / 잡수시다</td>
-            <td class="rom-cell">deusida / jabsusida<span class="ja-kana"> ドゥシダ / チャプスシダ</span></td>
-            <td class="eng-cell">to eat / to drink (honorific)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">자다</td>
-            <td class="kor-cell">주무시다</td>
-            <td class="rom-cell">jumusida<span class="ja-kana"> チュムシダ</span></td>
-            <td class="eng-cell">to sleep (honorific)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">있다</td>
-            <td class="kor-cell">계시다</td>
-            <td class="rom-cell">gyesida<span class="ja-kana"> ケシダ</span></td>
-            <td class="eng-cell">to be / to exist (honorific)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">아프다</td>
-            <td class="kor-cell">편찮으시다</td>
-            <td class="rom-cell">pyeonchanheusida<span class="ja-kana"> ピョンチャヌシダ</span></td>
-            <td class="eng-cell">to be ill (honorific)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">말하다</td>
-            <td class="kor-cell">말씀하시다</td>
-            <td class="rom-cell">malsseum hasida<span class="ja-kana"> マルスムハシダ</span></td>
-            <td class="eng-cell">to speak / to say (honorific)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">죽다</td>
-            <td class="kor-cell">돌아가시다</td>
-            <td class="rom-cell">doragasida<span class="ja-kana"> トラガシダ</span></td>
-            <td class="eng-cell">to pass away (honorific)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">집</td>
-            <td class="kor-cell">댁</td>
-            <td class="rom-cell">daek<span class="ja-kana"> テク</span></td>
-            <td class="eng-cell">home / house (honorific)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">이름</td>
-            <td class="kor-cell">성함</td>
-            <td class="rom-cell">seongham<span class="ja-kana"> ソンハム</span></td>
-            <td class="eng-cell">name (honorific)</td>
-          </tr>
-          <tr>
-            <td class="kor-cell">나이</td>
-            <td class="kor-cell">연세</td>
-            <td class="rom-cell">yeonse<span class="ja-kana"> ヨンセ</span></td>
-            <td class="eng-cell">age (honorific)</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="info-box">
-        <span class="tip-icon">ℹ️</span>
-        <div class="tip-content">
-          <div class="tip-label">Always Use Honorific Vocabulary For...</div>
-          <div class="tip-text no-ja">Use 높임말 vocabulary whenever speaking <em>to</em> or <em>about</em>: grandparents and elderly relatives, teachers and professors, bosses and senior colleagues, customers (in business contexts), and anyone noticeably older than you. For example: 할머니께서 진지를 드세요 (Grandmother is eating) — NOT 할머니가 밥을 먹어요.</div>
-          <div class="tip-text ja-block">높임말語彙は以下の人々に対して・について話すときは必ず使います：祖父母・年配の親族・教師・教授・上司・先輩・お客様（ビジネス）・自分より明らかに年上の方。例：할머니께서 진지를 드세요（おばあさんがお食事されています）— 할머니가 밥을 먹어요ではありません。</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 8 -->
-    <div class="lesson-section animate-on-scroll" id="real-life-scenarios">
-      <h2><span class="section-num">8</span> Real-Life Speech Level Scenarios</h2>
-      <p>Knowing which speech level to use comes with practice and cultural awareness. These four scenarios illustrate the most common real-world situations you will encounter as a Korean learner.</p>
-
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px">
-
-        <div class="card card-glass">
-          <div style="font-size:1.5rem;margin-bottom:8px">🏠</div>
-          <div style="font-weight:700;color:var(--text);margin-bottom:4px">Meeting Your Partner's Parents</div>
-          <div style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:12px">Speech level: <strong>합쇼체</strong></div>
-          <div class="example-box" style="margin:0">
-            <div class="example-body" style="display:flex;flex-direction:column;gap:8px">
-              <div class="korean-example" style="padding:8px 0">
-                <div class="kor-line" style="font-size:1rem">처음 뵙겠습니다. 잘 부탁드립니다.</div>
-                <div class="rom-line" style="font-size:0.78rem">Cheoeum boepgessseumnida. Jal butakdeurimnida.</div>
-                <div class="eng-line no-ja" style="font-size:0.78rem">It is a pleasure to meet you. Please take care of me.</div>
-                <div class="eng-line ja-block" style="font-size:0.78rem">はじめまして。よろしくお願いいたします。</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-glass">
-          <div style="font-size:1.5rem;margin-bottom:8px">📱</div>
-          <div style="font-weight:700;color:var(--text);margin-bottom:4px">Texting a Same-Age Friend</div>
-          <div style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:12px">Speech level: <strong>반말</strong></div>
-          <div class="example-box" style="margin:0">
-            <div class="example-body" style="display:flex;flex-direction:column;gap:8px">
-              <div class="korean-example" style="padding:8px 0">
-                <div class="kor-line" style="font-size:1rem">야, 나 오늘 완전 피곤해. 일찍 잘 거야.</div>
-                <div class="rom-line" style="font-size:0.78rem">Ya, na oneul wanjeon pigonhae. Iljjik jal geoya.</div>
-                <div class="eng-line no-ja" style="font-size:0.78rem">Hey, I'm so tired today. I'm going to sleep early.</div>
-                <div class="eng-line ja-block" style="font-size:0.78rem">ねえ、今日すごく疲れた。早く寝るね。</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-glass">
-          <div style="font-size:1.5rem;margin-bottom:8px">☕</div>
-          <div style="font-weight:700;color:var(--text);margin-bottom:4px">Ordering at a Café</div>
-          <div style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:12px">Speech level: <strong>해요체</strong></div>
-          <div class="example-box" style="margin:0">
-            <div class="example-body" style="display:flex;flex-direction:column;gap:8px">
-              <div class="korean-example" style="padding:8px 0">
-                <div class="kor-line" style="font-size:1rem">아메리카노 한 잔 주세요. 얼마예요?</div>
-                <div class="rom-line" style="font-size:0.78rem">Amerikano han jan juseyo. Eolmayeyo?</div>
-                <div class="eng-line no-ja" style="font-size:0.78rem">One Americano, please. How much is it?</div>
-                <div class="eng-line ja-block" style="font-size:0.78rem">アメリカーノ一杯ください。おいくらですか？</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-glass">
-          <div style="font-size:1.5rem;margin-bottom:8px">📊</div>
-          <div style="font-weight:700;color:var(--text);margin-bottom:4px">Company Presentation</div>
-          <div style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:12px">Speech level: <strong>합쇼체</strong></div>
-          <div class="example-box" style="margin:0">
-            <div class="example-body" style="display:flex;flex-direction:column;gap:8px">
-              <div class="korean-example" style="padding:8px 0">
-                <div class="kor-line" style="font-size:1rem">오늘 발표를 시작하겠습니다. 잘 부탁드립니다.</div>
-                <div class="rom-line" style="font-size:0.78rem">Oneul balpyoreul sijakagessseumnida. Jal butakdeurimnida.</div>
-                <div class="eng-line no-ja" style="font-size:0.78rem">I will begin today's presentation. Thank you for your attention.</div>
-                <div class="eng-line ja-block" style="font-size:0.78rem">ただいまから本日の発表を始めます。よろしくお願いいたします。</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="tip-box" style="margin-top:24px">
-        <span class="tip-icon">💡</span>
-        <div class="tip-content">
-          <div class="tip-label">Golden Rule</div>
-          <div class="tip-text">When uncertain, always go one level more formal than you think necessary. Koreans will appreciate the respect, and a native speaker will often invite you to be more casual (<strong style="font-family:var(--font-korean)">"편하게 말해요"</strong> — "speak comfortably"). The reverse — being too casual — is much harder to recover from.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Completion Button -->
-    <div style="text-align:center;margin:40px 0 20px">
-      <button class="btn btn-primary btn-lg" data-lesson-complete="speech-levels">
-        ✅ Mark Lesson Complete
-      </button>
-    </div>
-
-    <!-- Lesson Nav Footer -->
     <div class="lesson-nav-footer">
-      <a href="grammar.html#questions" class="lesson-nav-btn">
+      <a href="nouns.html" class="lesson-nav-btn">
         <span>←</span>
         <div>
           <span class="lesson-nav-label">Previous</span>
-          <span class="lesson-nav-title">Question Forms</span>
+          <span class="lesson-nav-title">Common Nouns</span>
         </div>
       </a>
       <a href="emotions.html" class="lesson-nav-btn next">
+        <span>→</span>
         <div>
           <span class="lesson-nav-label">Next</span>
           <span class="lesson-nav-title">Expressing Emotions</span>
         </div>
-        <span>→</span>
       </a>
     </div>
 
@@ -903,7 +183,7 @@
           <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
           <div class="logo-text">Korean School <span>한국어 학교</span></div>
         </a>
-        <p>A free Korean language learning platform for learners of every level, worldwide.</p>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice. For learners of every level, worldwide.</p>
       </div>
       <div>
         <div class="footer-heading">Learn</div>
@@ -927,16 +207,22 @@
           <li><a href="../about.html">About Us</a></li>
           <li><a href="../contact.html">Contact</a></li>
           <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Use</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 한국어 학교. Made with ❤️ for Korean learners worldwide.</span>
-      <span>🇰🇷 학습을 즐기세요!</span>
+      <span>🇰🇷 학습을 즐기세요! (Enjoy your learning!)</span>
     </div>
   </div>
 </footer>
+
 <script src="../js/lang-ja.js"></script>
 <script src="../js/app.js"></script>
+<script src="../js/step-runner.js"></script>
+<script>
+  StepRunner.init('/learn/data/speech-levels.json');
+</script>
 </body>
 </html>

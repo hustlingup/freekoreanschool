@@ -1,0 +1,235 @@
+{
+  "lesson": "vocab-konglish",
+  "totalSteps": 22,
+  "stages": [
+    { "id": 1, "name": "Konglish", "name_kr": "콩글리시", "first_step": 1, "last_step": 22, "time_minutes": 13 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Konglish — Korean + English",
+      "title_kr": "콩글리시",
+      "body": "Konglish (콩글리시) refers to English loanwords adapted into Korean pronunciation and sometimes with shifted meanings. Korea has adopted thousands of English words, making them sound Korean. The trick: if you know the English word, you can often guess the Korean by applying Korean pronunciation patterns — replace 'r' with 'ㄹ', add vowels between consonants, and end with a vowel.",
+      "tip": { "icon": "🌐", "label": "Pronunciation key", "text": "English 'f' → ㅍ (p sound): file → 파일. English 'v' → ㅂ (b sound): video → 비디오. Final consonant clusters get a vowel: desk → 데스크, style → 스타일. Once you know the pattern, hundreds of words unlock instantly!" }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["컴", "퓨", "터"],
+      "romanization": "keompyuteo",
+      "katakana": "コンピュトゥ",
+      "audio": "컴퓨터",
+      "meaning": "Computer — from English 'computer'",
+      "meaning_ja": "コンピュータ ― 英語 'computer' より"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["스", "마", "트", "폰"],
+      "romanization": "seumateupon",
+      "katakana": "スマトゥポン",
+      "audio": "스마트폰",
+      "meaning": "Smartphone — from English 'smartphone'",
+      "meaning_ja": "スマートフォン ― 英語 'smartphone' より"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["인", "터", "넷"],
+      "romanization": "inteonet",
+      "katakana": "インタネッ",
+      "audio": "인터넷",
+      "meaning": "Internet — from English 'internet'",
+      "meaning_ja": "インターネット ― 英語 'internet' より"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["소", "파"],
+      "romanization": "sopa",
+      "katakana": "ソパ",
+      "audio": "소파",
+      "meaning": "Sofa — from English 'sofa'",
+      "meaning_ja": "ソファ ― 英語 'sofa' より"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["아", "파", "트"],
+      "romanization": "apateu",
+      "katakana": "アパトゥ",
+      "audio": "아파트",
+      "meaning": "Apartment — from English 'apartment'",
+      "meaning_ja": "アパート / マンション ― 英語 'apartment' より"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["피", "자"],
+      "romanization": "pija",
+      "katakana": "ピジャ",
+      "audio": "피자",
+      "meaning": "Pizza — from Italian/English 'pizza'",
+      "meaning_ja": "ピザ ― イタリア語/英語 'pizza' より"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["초", "콜", "릿"],
+      "romanization": "chokollit",
+      "katakana": "チョコルリッ",
+      "audio": "초콜릿",
+      "meaning": "Chocolate — from English 'chocolate'",
+      "meaning_ja": "チョコレート ― 英語 'chocolate' より"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["아", "이", "스", "크", "림"],
+      "romanization": "aiseukeurim",
+      "katakana": "アイスクリム",
+      "audio": "아이스크림",
+      "meaning": "Ice cream — from English 'ice cream'",
+      "meaning_ja": "アイスクリーム ― 英語 'ice cream' より"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["스", "트", "레", "스"],
+      "romanization": "seuteuresseu",
+      "katakana": "ストゥレス",
+      "audio": "스트레스",
+      "meaning": "Stress — 스트레스 받아요 (I'm stressed / receiving stress)",
+      "meaning_ja": "ストレス ― 스트레스 받아요（ストレスを受けています）"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["셀", "카"],
+      "romanization": "selka",
+      "katakana": "セルカ",
+      "audio": "셀카",
+      "meaning": "Selfie — short for 셀프카메라 (self-camera)",
+      "meaning_ja": "セルフィー ― 셀프카메라（セルフカメラ）の略"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["에", "어", "컨"],
+      "romanization": "eokon",
+      "katakana": "エオコン",
+      "audio": "에어컨",
+      "meaning": "Air conditioning — from English 'air conditioner'",
+      "meaning_ja": "エアコン ― 英語 'air conditioner' より"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["리", "모", "컨"],
+      "romanization": "rimokon",
+      "katakana": "リモコン",
+      "audio": "리모컨",
+      "meaning": "Remote control — from English 'remote control'",
+      "meaning_ja": "リモコン ― 英語 'remote control' より"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["아", "르", "바", "이", "트"],
+      "romanization": "areubaiteu",
+      "katakana": "アルバイトゥ",
+      "audio": "아르바이트",
+      "meaning": "Part-time job — from German 'Arbeit' (work), shortened to 알바",
+      "meaning_ja": "アルバイト ― ドイツ語 'Arbeit' より、알바 と略すことも"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["서", "비", "스"],
+      "romanization": "seobiseu",
+      "katakana": "ソビス",
+      "audio": "서비스",
+      "meaning": "Freebie / complimentary item — originally 'service' but now means free extras given by shops",
+      "meaning_ja": "無料サービス / おまけ ― 元は英語 'service' だが、お店がくれる無料のおまけを指す"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["핸", "드", "폰"],
+      "romanization": "haendeuppon",
+      "katakana": "ヘンドゥポン",
+      "audio": "핸드폰",
+      "meaning": "Cell phone / mobile phone — from 'hand phone' (unique Konglish)",
+      "meaning_ja": "携帯電話 ― 'hand phone' からの独自コングリッシュ"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["원", "피", "스"],
+      "romanization": "wonpiseu",
+      "katakana": "ウォンピス",
+      "audio": "원피스",
+      "meaning": "Dress (one-piece) — from English 'one-piece'",
+      "meaning_ja": "ワンピース ― 英語 'one-piece' より"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "아파트 (apateu) is which English loanword?",
+      "choices": ["Avenue", "Apartment", "Apparatus", "Airport"],
+      "correct": "Apartment"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "서비스 in Konglish means...",
+      "choices": ["Customer service", "A free extra given by a shop", "Delivery service", "Repair service"],
+      "correct": "A free extra given by a shop"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "아르바이트 comes from German 'Arbeit' and means...",
+      "choices": ["Overtime", "Part-time job", "Work meeting", "Salary"],
+      "correct": "Part-time job"
+    },
+    {
+      "id": 21,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "핸드폰 is unique Konglish. In English we say...",
+      "choices": ["Hand phone", "Mobile phone / cell phone", "Smartphone", "Pay phone"],
+      "correct": "Mobile phone / cell phone"
+    },
+    {
+      "id": 22,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Konglish Complete!",
+      "title_kr": "콩글리시 완성!",
+      "message": "Incredible! You've completed all 21 vocabulary categories! Konglish shows how global Korean has become. Now you have a massive vocabulary foundation — keep building with grammar lessons to start forming full sentences. 대단해요! (You're amazing!)",
+      "next_url": "pronouns.html"
+    }
+  ]
+}

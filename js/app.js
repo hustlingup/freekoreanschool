@@ -324,18 +324,11 @@ function _googleTTS(text, speed) {
   const audio = new Audio('/api/tts?' + params);
   _currentAudio = audio;
 
-  // If the proxy isn't available (localhost, file://, etc.), retry with direct Google TTS.
-  // Uses 'error' event (not play().catch) to avoid dual-playback — the error fires only
-  // after the proxy request fails, so the two engines never run simultaneously.
+  // If the proxy isn't available (localhost, etc.), fall back to Web Speech API.
   audio.addEventListener('error', () => {
     if (_currentAudio !== audio) return;
-    const direct = new Audio(
-      'https://translate.google.com/translate_tts?ie=UTF-8' +
-      '&q=' + encodeURIComponent(text) + '&tl=ko&client=tw-ob' +
-      (speed && parseFloat(speed) < 1 ? '&ttsspeed=' + speed : '')
-    );
-    _currentAudio = direct;
-    direct.play().catch(() => {});
+    _currentAudio = null;
+    _speakFallback(text, speed < 1 ? 0.7 : 0.9);
   }, { once: true });
 
   audio.play().catch(() => {});
@@ -374,6 +367,73 @@ function speakSyllable(text) {
   if (!text) return;
   _googleTTS(text, 0.7);
 }
+
+/* ── Dopamine: Ding (Web Audio API) ─────────────────── */
+function playDing() {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc  = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.frequency.value = 880;
+    osc.type = 'sine';
+    gain.gain.setValueAtTime(0.4, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.4);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.4);
+  } catch (_) {}
+}
+
+/* ── Dopamine: Confetti burst ───────────────────────── */
+function spawnConfetti(anchorEl) {
+  const colors = ['#E8003D', '#0055CC', '#FFD700', '#28c864', '#FF6B8A'];
+  const rect = anchorEl ? anchorEl.getBoundingClientRect() : { left: window.innerWidth / 2, top: window.innerHeight / 2, width: 0 };
+  const cx = rect.left + rect.width / 2;
+  const cy = rect.top;
+
+  for (let i = 0; i < 24; i++) {
+    const piece = document.createElement('div');
+    piece.className = 'confetti-piece';
+    piece.style.left = Math.max(4, Math.min(window.innerWidth - 12, cx + (Math.random() - 0.5) * 120)) + 'px';
+    piece.style.top  = cy + 'px';
+    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.animationDelay = Math.random() * 0.2 + 's';
+    document.body.appendChild(piece);
+    piece.addEventListener('animationend', () => piece.remove(), { once: true });
+  }
+}
+
+/* ── Audio Cache (prefetch + cache-first playback) ──── */
+const AudioCache = (() => {
+  const _cache = {};
+
+  async function prefetch(textArray) {
+    for (const text of textArray) {
+      if (!text || _cache[text]) continue;
+      fetch(`/api/tts?text=${encodeURIComponent(text)}&speed=1`)
+        .then(r => r.ok ? r.arrayBuffer() : Promise.reject())
+        .then(buf => { _cache[text] = buf; })
+        .catch(() => {});
+    }
+  }
+
+  async function play(text) {
+    if (!text) return;
+    const buf = _cache[text];
+    if (!buf) { speakKorean(text); return; }
+    try {
+      const ctx = new AudioContext();
+      const decoded = await ctx.decodeAudioData(buf.slice(0));
+      const src = ctx.createBufferSource();
+      src.buffer = decoded;
+      src.connect(ctx.destination);
+      src.start();
+    } catch (_) { speakKorean(text); }
+  }
+
+  return { prefetch, play };
+})();
 
 function showCharModal(char, romanization) {
   const existing = document.getElementById('char-modal');
@@ -1456,15 +1516,21 @@ function initVocabTabs() {
 /* ── Active Nav Highlight ───────────────────────────── */
 function highlightActiveNav() {
   const currentPath = window.location.pathname;
+  const currentParams = new URLSearchParams(window.location.search);
   document.querySelectorAll('.nav-links a, .sidebar-link').forEach(a => {
     const linkHref = a.getAttribute('href');
     if (!linkHref) return;
     if (linkHref.indexOf('#') >= 0) return; // skip anchor links — active state set in HTML
     try {
-      const resolved = new URL(linkHref, window.location.href).pathname;
-      if (resolved === currentPath) {
-        a.classList.add('active');
+      const resolved = new URL(linkHref, window.location.href);
+      if (resolved.pathname !== currentPath) return;
+      // When the link has query params, every param must match the current URL
+      if (resolved.search) {
+        for (const [key, val] of new URLSearchParams(resolved.search)) {
+          if (currentParams.get(key) !== val) return;
+        }
       }
+      a.classList.add('active');
     } catch (e) {}
   });
 }

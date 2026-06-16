@@ -1,0 +1,216 @@
+{
+  "lesson": "vocab-workplace",
+  "totalSteps": 20,
+  "stages": [
+    { "id": 1, "name": "Workplace", "name_kr": "직장", "first_step": 1, "last_step": 20, "time_minutes": 12 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Workplace Korean",
+      "title_kr": "직장 한국어",
+      "body": "Korean workplace culture has unique characteristics — hierarchical titles, after-work drinking culture (회식, hoesik), and a strong work ethic. Addressing colleagues correctly by their title (직함) is extremely important. Calling someone by their first name at work is generally inappropriate unless given explicit permission.",
+      "tip": { "icon": "💼", "label": "Titles at work", "text": "Koreans use job titles instead of names: 김부장님 (Manager Kim), 이과장님 (Deputy Manager Lee). 님 is the honorific suffix added to any title. Always use 님 with superiors." }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["회", "사"],
+      "romanization": "hoesa",
+      "katakana": "フェサ",
+      "audio": "회사",
+      "meaning": "Company / office — 회사 다녀요? (Do you work at a company?)",
+      "meaning_ja": "会社 ― 회사 다녀요？（会社に勤めていますか？）"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["사", "무", "실"],
+      "romanization": "samusil",
+      "katakana": "サムシル",
+      "audio": "사무실",
+      "meaning": "Office (room) — 사무실에 있어요 (I'm in the office)",
+      "meaning_ja": "オフィス / 事務室 ― 사무실에 있어요（オフィスにいます）"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["직", "원"],
+      "romanization": "jigwon",
+      "katakana": "チグォン",
+      "audio": "직원",
+      "meaning": "Employee / staff member",
+      "meaning_ja": "社員 / 従業員"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["상", "사"],
+      "romanization": "sangsa",
+      "katakana": "サンサ",
+      "audio": "상사",
+      "meaning": "Superior / boss — treat with 존댓말 (formal speech) always",
+      "meaning_ja": "上司 ― 常に존댓말（敬語）を使う"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["동", "료"],
+      "romanization": "dongnyo",
+      "katakana": "トンリョ",
+      "audio": "동료",
+      "meaning": "Colleague / coworker",
+      "meaning_ja": "同僚"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["회", "의"],
+      "romanization": "hoeui",
+      "katakana": "フェイ",
+      "audio": "회의",
+      "meaning": "Meeting — 회의가 있어요 (I have a meeting)",
+      "meaning_ja": "会議 ― 회의가 있어요（会議があります）"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["업", "무"],
+      "romanization": "eomu",
+      "katakana": "オムム",
+      "audio": "업무",
+      "meaning": "Work duties / tasks — 업무가 많아요 (I have a lot of work)",
+      "meaning_ja": "業務 / 仕事 ― 업무가 많아요（仕事が多いです）"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["월", "급"],
+      "romanization": "wolgeup",
+      "katakana": "ウォルグプ",
+      "audio": "월급",
+      "meaning": "Monthly salary — 월급이 올랐어요 (My salary went up)",
+      "meaning_ja": "月給 ― 월급이 올랐어요（給料が上がりました）"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["출", "근"],
+      "romanization": "chulgeun",
+      "katakana": "チュルグン",
+      "audio": "출근",
+      "meaning": "Going to work — 출근 시간 = commute time",
+      "meaning_ja": "出勤 ― 출근 시간（通勤時間）"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["퇴", "근"],
+      "romanization": "toegeun",
+      "katakana": "トェグン",
+      "audio": "퇴근",
+      "meaning": "Leaving work — 퇴근했어요? (Have you left work?)",
+      "meaning_ja": "退勤 ― 퇴근했어요？（もう退勤しましたか？）"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["야", "근"],
+      "romanization": "yageun",
+      "katakana": "ヤグン",
+      "audio": "야근",
+      "meaning": "Overtime / working late — 오늘 야근해요 (I'm working overtime today)",
+      "meaning_ja": "残業 ― 오늘 야근해요（今日は残業します）"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["회", "식"],
+      "romanization": "hoesik",
+      "katakana": "フェシク",
+      "audio": "회식",
+      "meaning": "Company dinner / after-work drinks — a central part of Korean work culture",
+      "meaning_ja": "会食（飲み会）― 韓国の職場文化の核心"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["보", "고", "서"],
+      "romanization": "bogoseo",
+      "katakana": "ポゴソ",
+      "audio": "보고서",
+      "meaning": "Report (document) — 보고서 제출했어요? (Did you submit the report?)",
+      "meaning_ja": "報告書 ― 보고서 제출했어요？（報告書を提出しましたか？）"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["마", "감"],
+      "romanization": "magam",
+      "katakana": "マガム",
+      "audio": "마감",
+      "meaning": "Deadline — 마감이 언제예요? (When is the deadline?)",
+      "meaning_ja": "締め切り ― 마감이 언제예요？（締め切りはいつですか？）"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["프", "로", "젝", "트"],
+      "romanization": "peurojekteu",
+      "katakana": "プロジェクトゥ",
+      "audio": "프로젝트",
+      "meaning": "Project — 새 프로젝트 시작해요 (We're starting a new project)",
+      "meaning_ja": "プロジェクト ― 새 프로젝트 시작해요（新しいプロジェクトを始めます）"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "In Korea, the after-work team dinner/drinks event is called...",
+      "choices": ["야근 (yageun)", "회식 (hoesik)", "회의 (hoeui)", "출근 (chulgeun)"],
+      "correct": "회식 (hoesik)"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "퇴근 is the opposite of 출근. What does 퇴근 mean?",
+      "choices": ["Going to work", "Leaving work", "Working overtime", "Having a meeting"],
+      "correct": "Leaving work"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "마감이 언제예요? This question asks...",
+      "choices": ["When does the meeting start?", "When is the salary paid?", "When is the deadline?", "When does the project begin?"],
+      "correct": "When is the deadline?"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Workplace Complete!",
+      "title_kr": "직장 완성!",
+      "message": "수고하셨습니다! (You've worked hard!) This phrase is one of the most important at a Korean workplace — said to colleagues at the end of the workday. You now understand Korean office culture vocabulary.",
+      "next_url": "vocabulary.html?cat=health"
+    }
+  ]
+}

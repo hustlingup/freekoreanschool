@@ -1,0 +1,238 @@
+{
+  "lesson": "vocab-food-drink",
+  "totalSteps": 22,
+  "stages": [
+    { "id": 1, "name": "Food & Drink", "name_kr": "음식·음료", "first_step": 1, "last_step": 22, "time_minutes": 13 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Korean Food Culture",
+      "title_kr": "한국 음식 문화",
+      "body": "Food is central to Korean culture. Meals are shared communally, with multiple side dishes (반찬, banchan) served alongside rice (밥) and soup (국). Koreans often greet each other with '밥 먹었어요?' (Did you eat?) — showing how deeply food is woven into daily life.",
+      "tip": { "icon": "🍜", "label": "The rice is the center", "text": "In Korean culture, 밥 (bap) means both 'cooked rice' and 'a meal.' When Koreans say they haven't eaten, they say 밥을 못 먹었어요 — rice is so fundamental that it stands in for any meal." }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["밥"],
+      "romanization": "bap",
+      "katakana": "パプ",
+      "audio": "밥",
+      "meaning": "Cooked rice / meal — the cornerstone of Korean eating",
+      "meaning_ja": "ご飯 / 食事 ― 韓国食文化の中心"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["김", "치"],
+      "romanization": "gimchi",
+      "katakana": "キムチ",
+      "audio": "김치",
+      "meaning": "Kimchi — fermented vegetables, the iconic Korean side dish",
+      "meaning_ja": "キムチ ― 発酵野菜、韓国の代表的なおかず"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["불", "고", "기"],
+      "romanization": "bulgogi",
+      "katakana": "プルコギ",
+      "audio": "불고기",
+      "meaning": "Bulgogi — marinated grilled beef, beloved worldwide",
+      "meaning_ja": "プルコギ ― 甘辛いタレの焼き肉"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["비", "빔", "밥"],
+      "romanization": "bibimbap",
+      "katakana": "ピビンパプ",
+      "audio": "비빔밥",
+      "meaning": "Bibimbap — mixed rice bowl with vegetables and gochujang sauce",
+      "meaning_ja": "ビビンバ ― 野菜とコチュジャンを混ぜたご飯"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["떡", "볶", "이"],
+      "romanization": "tteokbokki",
+      "katakana": "トッポッキ",
+      "audio": "떡볶이",
+      "meaning": "Tteokbokki — spicy rice cakes, the most popular Korean street food",
+      "meaning_ja": "トッポッキ ― 辛い餅料理、最人気の屋台グルメ"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["삼", "겹", "살"],
+      "romanization": "samgyeopsal",
+      "katakana": "サムギョプサル",
+      "audio": "삼겹살",
+      "meaning": "Samgyeopsal — grilled pork belly, the classic Korean BBQ cut",
+      "meaning_ja": "サムギョプサル ― 豚バラ肉の焼き肉"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["냉", "면"],
+      "romanization": "naengmyeon",
+      "katakana": "ネンミョン",
+      "audio": "냉면",
+      "meaning": "Naengmyeon — cold noodles, a summer favorite",
+      "meaning_ja": "冷麺 ― 夏の定番、冷たい麺料理"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["순", "두", "부", "찌", "개"],
+      "romanization": "sundubu jjigae",
+      "katakana": "スンドゥブチゲ",
+      "audio": "순두부찌개",
+      "meaning": "Sundubu jjigae — soft tofu stew, often served bubbling hot",
+      "meaning_ja": "スンドゥブチゲ ― やわらかい豆腐の鍋"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["라", "면"],
+      "romanization": "ramyeon",
+      "katakana": "ラミョン",
+      "audio": "라면",
+      "meaning": "Ramyeon — Korean instant noodles, a comfort food staple",
+      "meaning_ja": "ラーメン（インスタント）― 韓国のソウルフード"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["잡", "채"],
+      "romanization": "japchae",
+      "katakana": "チャプチェ",
+      "audio": "잡채",
+      "meaning": "Japchae — glass noodles stir-fried with vegetables and beef",
+      "meaning_ja": "チャプチェ ― 野菜と春雨の炒め物"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["물"],
+      "romanization": "mul",
+      "katakana": "ムル",
+      "audio": "물",
+      "meaning": "Water — served free at every Korean restaurant",
+      "meaning_ja": "水 ― 韓国の飲食店では無料で提供される"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["커", "피"],
+      "romanization": "keopi",
+      "katakana": "コーピ",
+      "audio": "커피",
+      "meaning": "Coffee — Korea has one of the world's highest café densities",
+      "meaning_ja": "コーヒー ― 韓国はカフェ密度が世界トップクラス"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["소", "주"],
+      "romanization": "soju",
+      "katakana": "ソジュ",
+      "audio": "소주",
+      "meaning": "Soju — Korea's signature distilled spirit, the world's best-selling liquor",
+      "meaning_ja": "焼酎 ― 韓国の代表的な蒸留酒、世界一売れる洋酒"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["맥", "주"],
+      "romanization": "maekju",
+      "katakana": "メクチュ",
+      "audio": "맥주",
+      "meaning": "Beer — often mixed with soju to make 소맥 (somaek)",
+      "meaning_ja": "ビール ― 소주と混ぜると소맥（ソメク）になる"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["막", "걸", "리"],
+      "romanization": "makgeolli",
+      "katakana": "マッコリ",
+      "audio": "막걸리",
+      "meaning": "Makgeolli — traditional milky rice wine, slightly sweet and fizzy",
+      "meaning_ja": "マッコリ ― 伝統的な米酒、甘くて少し炭酸がある"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["반", "찬"],
+      "romanization": "banchan",
+      "katakana": "パンチャン",
+      "audio": "반찬",
+      "meaning": "Banchan — small side dishes served with every Korean meal",
+      "meaning_ja": "おかず（バンチャン）― 韓国の食事に必ず出る小皿料理"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["국"],
+      "romanization": "guk",
+      "katakana": "クク",
+      "audio": "국",
+      "meaning": "Soup / broth — a separate soup dish served at most Korean meals",
+      "meaning_ja": "スープ / 汁物 ― ほとんどの韓国料理に付いてくる"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "What is 떡볶이?",
+      "choices": ["Grilled pork belly", "Spicy rice cakes", "Cold noodles", "Fermented vegetables"],
+      "correct": "Spicy rice cakes"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Korea's most famous distilled spirit, also the world's best-selling liquor, is called...",
+      "choices": ["맥주 (maekju)", "막걸리 (makgeolli)", "소주 (soju)", "커피 (keopi)"],
+      "correct": "소주 (soju)"
+    },
+    {
+      "id": 21,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "What does 밥 mean?",
+      "choices": ["Kimchi", "Cooked rice / meal", "Soup", "Noodles"],
+      "correct": "Cooked rice / meal"
+    },
+    {
+      "id": 22,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Food & Drink Complete!",
+      "title_kr": "음식·음료 완성!",
+      "message": "맛있게 드세요! (Bon appétit!) You've mastered essential Korean food and drink vocabulary. Food is one of the best conversation starters with Koreans — try asking 무슨 음식 좋아해요? (What food do you like?)",
+      "next_url": "vocabulary.html?cat=colors"
+    }
+  ]
+}

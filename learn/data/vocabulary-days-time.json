@@ -1,0 +1,249 @@
+{
+  "lesson": "vocab-days-time",
+  "totalSteps": 23,
+  "stages": [
+    { "id": 1, "name": "Days & Time", "name_kr": "날짜·시간", "first_step": 1, "last_step": 23, "time_minutes": 14 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Days and Time in Korean",
+      "title_kr": "날짜와 시간",
+      "body": "Korean days of the week follow the Chinese five elements system: 월 (moon/Monday), 화 (fire/Tuesday), 수 (water/Wednesday), 목 (wood/Thursday), 금 (metal/Friday), 토 (earth/Saturday), 일 (sun/Sunday). Time uses Sino-Korean numbers for minutes and native Korean for hours.",
+      "tip": { "icon": "📅", "label": "Time mixing", "text": "To say 3:30, Koreans say 세 시 삼십 분 — 세 시 uses native Korean (세 = three), but 삼십 분 uses Sino-Korean (삼십 = thirty). You must mix both systems when telling time!" }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["월", "요", "일"],
+      "romanization": "woryoil",
+      "katakana": "ウォリョイル",
+      "audio": "월요일",
+      "meaning": "Monday — 월 means 'moon/month'",
+      "meaning_ja": "月曜日 ― 월 は「月」の意味"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["화", "요", "일"],
+      "romanization": "hwayoil",
+      "katakana": "ファヨイル",
+      "audio": "화요일",
+      "meaning": "Tuesday — 화 means 'fire'",
+      "meaning_ja": "火曜日 ― 화 は「火」の意味"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["수", "요", "일"],
+      "romanization": "suyoil",
+      "katakana": "スヨイル",
+      "audio": "수요일",
+      "meaning": "Wednesday — 수 means 'water'",
+      "meaning_ja": "水曜日 ― 수 は「水」の意味"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["목", "요", "일"],
+      "romanization": "mogyoil",
+      "katakana": "モギョイル",
+      "audio": "목요일",
+      "meaning": "Thursday — 목 means 'wood/tree'",
+      "meaning_ja": "木曜日 ― 목 は「木」の意味"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["금", "요", "일"],
+      "romanization": "geumyoil",
+      "katakana": "クミョイル",
+      "audio": "금요일",
+      "meaning": "Friday — 금 means 'gold/metal'",
+      "meaning_ja": "金曜日 ― 금 は「金・金属」の意味"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["토", "요", "일"],
+      "romanization": "toyoil",
+      "katakana": "トヨイル",
+      "audio": "토요일",
+      "meaning": "Saturday — 토 means 'earth/soil'",
+      "meaning_ja": "土曜日 ― 토 は「土」の意味"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["일", "요", "일"],
+      "romanization": "ilyoil",
+      "katakana": "イリョイル",
+      "audio": "일요일",
+      "meaning": "Sunday — 일 means 'sun/day'",
+      "meaning_ja": "日曜日 ― 일 は「太陽・日」の意味"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "금요일 contains 금, meaning 'gold.' Which day is it?",
+      "choices": ["Monday", "Wednesday", "Friday", "Sunday"],
+      "correct": "Friday"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["오", "늘"],
+      "romanization": "oneul",
+      "katakana": "オヌル",
+      "audio": "오늘",
+      "meaning": "Today",
+      "meaning_ja": "今日"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["내", "일"],
+      "romanization": "naeil",
+      "katakana": "ネイル",
+      "audio": "내일",
+      "meaning": "Tomorrow",
+      "meaning_ja": "明日"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["어", "제"],
+      "romanization": "eoje",
+      "katakana": "オジェ",
+      "audio": "어제",
+      "meaning": "Yesterday",
+      "meaning_ja": "昨日"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["지", "금"],
+      "romanization": "jigeum",
+      "katakana": "チグム",
+      "audio": "지금",
+      "meaning": "Now / right now",
+      "meaning_ja": "今 / 今すぐ"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["아", "침"],
+      "romanization": "achim",
+      "katakana": "アチム",
+      "audio": "아침",
+      "meaning": "Morning — also means 'breakfast'",
+      "meaning_ja": "朝 ― 朝食の意味もある"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["점", "심"],
+      "romanization": "jeomsim",
+      "katakana": "チョムシム",
+      "audio": "점심",
+      "meaning": "Noon / lunch",
+      "meaning_ja": "昼 / 昼食"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["저", "녁"],
+      "romanization": "jeonyeok",
+      "katakana": "チョニョク",
+      "audio": "저녁",
+      "meaning": "Evening — also means 'dinner'",
+      "meaning_ja": "夕方 ― 夕食の意味もある"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["밤"],
+      "romanization": "bam",
+      "katakana": "パム",
+      "audio": "밤",
+      "meaning": "Night — also means 'chestnut' (same spelling, different meaning)",
+      "meaning_ja": "夜 ― 栗（バム）と同じ綴り"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["주", "말"],
+      "romanization": "jumal",
+      "katakana": "チュマル",
+      "audio": "주말",
+      "meaning": "Weekend — 주 (week) + 말 (end)",
+      "meaning_ja": "週末 ― 주（週）+ 말（終わり）"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["시", "간"],
+      "romanization": "sigan",
+      "katakana": "シガン",
+      "audio": "시간",
+      "meaning": "Time / hour — 한 시간 = one hour",
+      "meaning_ja": "時間 ― 한 시간（1時間）"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["분"],
+      "romanization": "bun",
+      "katakana": "プン",
+      "audio": "분",
+      "meaning": "Minute — uses Sino-Korean numbers (십 분 = 10 minutes)",
+      "meaning_ja": "分 ― 漢字語の数字と使う（십 분 = 10分）"
+    },
+    {
+      "id": 21,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Which word means 'tomorrow'?",
+      "choices": ["어제", "오늘", "내일", "지금"],
+      "correct": "내일"
+    },
+    {
+      "id": 22,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "아침 means both 'morning' and...",
+      "choices": ["Lunch", "Dinner", "Breakfast", "Midnight"],
+      "correct": "Breakfast"
+    },
+    {
+      "id": 23,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Days & Time Complete!",
+      "title_kr": "날짜·시간 완성!",
+      "message": "You can now navigate time in Korean! Days of the week and time expressions unlock scheduling, making plans, and understanding K-drama episode schedules. 주말에 뭐 해요? (What are you doing this weekend?)",
+      "next_url": "vocabulary.html?cat=places"
+    }
+  ]
+}

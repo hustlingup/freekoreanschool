@@ -1,0 +1,497 @@
+{
+  "lesson": "pronouns",
+  "totalSteps": 32,
+  "stages": [
+    {
+      "id": 1,
+      "name": "First & Second Person",
+      "name_kr": "1·2인칭",
+      "first_step": 1,
+      "last_step": 9,
+      "time_minutes": 8
+    },
+    {
+      "id": 2,
+      "name": "Third Person & We",
+      "name_kr": "3인칭·우리",
+      "first_step": 10,
+      "last_step": 17,
+      "time_minutes": 7
+    },
+    {
+      "id": 3,
+      "name": "Demonstratives",
+      "name_kr": "지시대명사",
+      "first_step": 18,
+      "last_step": 25,
+      "time_minutes": 7
+    },
+    {
+      "id": 4,
+      "name": "Question Pronouns",
+      "name_kr": "의문대명사",
+      "first_step": 26,
+      "last_step": 32,
+      "time_minutes": 6
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Korean Pronouns Overview",
+      "title_kr": "대명사 개요",
+      "body": "Korean has two registers for first-person pronouns: polite and casual. 저 (jeo) is the polite 'I', used with strangers, seniors, and in formal settings. 나 (na) is the casual 'I', used with close friends and younger people. Crucially, Korean very often drops the subject pronoun entirely when context is clear — 어디 가요? can mean 'Where are you going?' without any pronoun at all. Mastering when NOT to use a pronoun is as important as knowing the pronouns themselves.",
+      "tip": {
+        "icon": "🔇",
+        "label": "Pro-drop language",
+        "text": "Korean is a pro-drop language — when the subject is obvious from context or was mentioned recently, drop the pronoun. Leaving it in can sound unnatural or even slightly rude (overly direct). 저 괜찮아요 and 괜찮아요 both mean 'I'm fine', but the shorter form is more natural."
+      },
+      "body_ja": "韓国語の一人称代名詞には2つのレジスターがあります：丁寧形とカジュアル形。저（jeo）は丁寧な「私」で、初対面の人・目上の人・フォーマルな場面で使います。나（na）はカジュアルな「私」で、親しい友人や年下の人に使います。重要なのは、文脈が明らかな場合、韓国語では主語の代名詞をほぼ省略するという点です。어디 가요?は代名詞なしで「どこへ行くの?」を意味します。代名詞を使わないタイミングを知ることも、代名詞そのものを覚えるのと同じくらい大切です。",
+      "tip_ja": {
+        "label": "代名詞省略言語",
+        "text": "韓国語は主語省略言語です——文脈から主語が明らかだったり最近言及された場合、代名詞は省略します。そのまま言うと不自然に聞こえたり、やや失礼に聞こえることもあります。저 괜찮아요と괜찮아요はどちらも「大丈夫です」ですが、短い形のほうが自然です。"
+      }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "저"
+      ],
+      "romanization": "jeo",
+      "audio": "저",
+      "meaning": "I / me (polite)",
+      "meaning_ja": "私（丁寧）",
+      "katakana": "チョ"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "나"
+      ],
+      "romanization": "na",
+      "audio": "나",
+      "meaning": "I / me (casual)",
+      "meaning_ja": "私（カジュアル）",
+      "katakana": "ナ"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "제",
+        "가"
+      ],
+      "romanization": "je-ga",
+      "audio": "제가",
+      "meaning": "I (subject, polite) — 저 + subject marker 가 → 제가",
+      "meaning_ja": "私が（丁寧・主格）",
+      "katakana": "チェガ"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "너"
+      ],
+      "romanization": "neo",
+      "audio": "너",
+      "meaning": "you (casual) — rarely said to adults",
+      "meaning_ja": "あなた（カジュアル）",
+      "katakana": "ノ"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Which pronoun is the polite form of 'I'?",
+      "choices": [
+        "나",
+        "너",
+        "저",
+        "당신"
+      ],
+      "correct": "저"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Saying 'You' in Korean",
+      "title_kr": "'당신'과 호칭",
+      "body": "Korean avoids the direct pronoun 'you' (당신) in most everyday speech — it can sound cold, confrontational, or overly formal depending on context. Instead, Koreans use the person's name, title, or relationship term. A teacher would be called 선생님 (teacher), not 당신. A friend would be called by name. The pronoun 당신 appears in songs, poetry, and formal writing but is uncommon in daily conversation.",
+      "tip": {
+        "icon": "💬",
+        "label": "How to address people without 당신",
+        "text": "Use the person's name + 씨 for adults you don't know well: 김민준씨. Use their job title: 사장님 (boss), 과장님 (manager). Use relationship terms: 언니, 오빠, 아저씨. These are far more natural than 당신."
+      },
+      "body_ja": "韓国語は日常会話で直接的な「あなた」（당신）をほぼ使いません。文脈によっては冷たく・対立的・または過度にフォーマルに聞こえるからです。代わりに、相手の名前・肩書き・関係を示す言葉を使います。先生は선생님（先生）と呼ぶのであって、당신とは言いません。友達は名前で呼びます。당신は歌・詩・フォーマルな文章には登場しますが、日常会話ではほとんど使われません。",
+      "tip_ja": {
+        "label": "당신を使わずに呼びかける方法",
+        "text": "あまり親しくない大人には名前 + 씨を使います：김민준씨。職業の肩書きを使います：사장님（社長・上司）、과장님（課長）。関係を示す語を使います：언니、오빠、아저씨。これらは당신よりはるかに自然です。"
+      }
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "저",
+        "는"
+      ],
+      "romanization": "jeo-neun",
+      "audio": "저는",
+      "meaning": "I (topic, polite) — 저 + topic marker 는 → 저는",
+      "meaning_ja": "私は（丁寧・主題格）",
+      "katakana": "チョヌン"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Why do Koreans rarely say 당신 in conversation?",
+      "choices": [
+        "It means 'enemy'",
+        "It can sound cold or confrontational",
+        "It only works in writing",
+        "It is too casual"
+      ],
+      "correct": "It can sound cold or confrontational"
+    },
+    {
+      "id": 10,
+      "stage": 2,
+      "type": "reading_card",
+      "title": "Third Person & We (그·그녀·우리)",
+      "title_kr": "그·그녀·우리",
+      "body": "Korean rarely uses he/she pronouns in speech. Instead, Koreans say the person's name or use demonstratives: 그 사람 (that person), 이 사람 (this person). 그 (geu) and 그녀 (geunyeo) do exist — he/she — but they appear mostly in writing and translation. 우리 (uri) means 'we' or 'our'. Interestingly, Koreans use 우리 where English uses 'my': 우리 엄마 (my mom, literally 'our mom') — this reflects a collectivist cultural sense of shared family.",
+      "tip": {
+        "icon": "🏠",
+        "label": "우리 = my (for family & country)",
+        "text": "우리 나라 (our country), 우리 집 (my/our house), 우리 엄마 (my mom) — these are natural and common. Using 나의 나라 or 나의 집 instead sounds unnatural, almost cold."
+      },
+      "body_ja": "韓国語は会話で三人称代名詞をほとんど使いません。代わりに、相手の名前や指示語を使います：그 사람（その人）、이 사람（この人）。그（geu）と 그녀（geunyeo）という「彼/彼女」の代名詞は存在しますが、ほとんど文章や翻訳文で使われます。우리（uri）は「私たち」または「私たちの」を意味します。興味深いことに、韓国人は英語で「私の」と言う場面で 우리 を使います：우리 엄마（私のお母さん、直訳「私たちのお母さん」）——これは家族を共有するという集団主義的な文化を反映しています。",
+      "tip_ja": {
+        "label": "우리 ＝ 私の（家族・国）",
+        "text": "うり 나라（私たちの国）、우리 집（私の/私たちの家）、우리 엄마（私のお母さん）——これらは自然でよく使われます。代わりに 나의 나라 や 나의 집 を使うと不自然で、やや冷たく聞こえます。"
+      }
+    },
+    {
+      "id": 11,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "우",
+        "리"
+      ],
+      "romanization": "u-ri",
+      "audio": "우리",
+      "meaning": "we / our (often used as 'my' for shared things)",
+      "meaning_ja": "私たち / 私たちの（「私の」にも使う）",
+      "katakana": "ウリ"
+    },
+    {
+      "id": 12,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "저",
+        "희"
+      ],
+      "romanization": "jeo-hui",
+      "audio": "저희",
+      "meaning": "we / our (humble, polite form of 우리)",
+      "meaning_ja": "私ども（謙譲語）",
+      "katakana": "チョヒ"
+    },
+    {
+      "id": 13,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "그",
+        " ",
+        "사",
+        "람"
+      ],
+      "romanization": "geu sa-ram",
+      "audio": "그 사람",
+      "meaning": "that person (= he / she, informal way)",
+      "meaning_ja": "その人（非公式の三人称）",
+      "katakana": "グ サラム"
+    },
+    {
+      "id": 14,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "그",
+        "들"
+      ],
+      "romanization": "geu-deul",
+      "audio": "그들",
+      "meaning": "they / them (written form)",
+      "meaning_ja": "彼ら・彼女ら（書き言葉）",
+      "katakana": "グドゥル"
+    },
+    {
+      "id": 15,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "우리 엄마 literally means 'our mom' but is used to mean…",
+      "choices": [
+        "someone else's mom",
+        "my mom",
+        "the teacher",
+        "a stranger"
+      ],
+      "correct": "my mom"
+    },
+    {
+      "id": 16,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "우",
+        "리",
+        " ",
+        "나",
+        "라"
+      ],
+      "romanization": "u-ri na-ra",
+      "audio": "우리 나라",
+      "meaning": "my/our country (Korea) — literally 'our country'",
+      "meaning_ja": "私たちの国（韓国）",
+      "katakana": "ウリ ナラ"
+    },
+    {
+      "id": 17,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "Which form of 'we' is more humble and polite, used toward seniors?",
+      "choices": [
+        "우리",
+        "저희",
+        "그들",
+        "너희"
+      ],
+      "correct": "저희"
+    },
+    {
+      "id": 18,
+      "stage": 3,
+      "type": "reading_card",
+      "title": "Demonstrative Pronouns (이·그·저)",
+      "title_kr": "지시대명사 이·그·저",
+      "body": "Korean has three levels of demonstratives based on spatial distance. 이 (i) = near the speaker. 그 (geu) = near the listener or previously mentioned. 저 (jeo) = far from both speaker and listener. These attach to 것 (geot, 'thing') to form pronouns: 이것 (this), 그것 (that), 저것 (that over there). In casual speech these are shortened: 이거, 그거, 저거. The same 이/그/저 roots also work with place words: 여기 (here), 거기 (there), 저기 (over there).",
+      "tip": {
+        "icon": "👆",
+        "label": "이/그/저 vs 여기/거기/저기",
+        "text": "이/그/저 + 것 = this/that thing. 이/그/저 + -(e)gi = here/there. So 여기 (yeo-gi) = here (near speaker), 거기 (geo-gi) = there (near listener), 저기 (jeo-gi) = over there (far from both)."
+      },
+      "body_ja": "韓国語には空間的な距離に基づく3段階の指示語があります。이（i）＝話者の近く。그（geu）＝聞き手の近く、または以前に言及した物事。저（jeo）＝話者・聞き手両方から遠い。これらは 것（geot、「もの」）に付いて代名詞を形成します：이것（これ）、그것（それ）、저것（あれ）。カジュアルな会話では短縮されます：이거、그거、저거。同じ이/그/저は場所の語とも組み合わせられます：여기（ここ）、거기（そこ）、저기（あそこ）。",
+      "tip_ja": {
+        "label": "이/그/저 vs 여기/거기/저기",
+        "text": "이/그/저 + 것 ＝ これ/それ/あれ（もの）。이/그/저 + -(e)gi ＝ ここ/そこ/あそこ（場所）。なので 여기（yeo-gi）＝ ここ（話者の近く）、거기（geo-gi）＝ そこ（聞き手の近く）、저기（jeo-gi）＝ あそこ（両者から遠い）。"
+      }
+    },
+    {
+      "id": 19,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "이",
+        "것"
+      ],
+      "romanization": "i-geot",
+      "audio": "이것",
+      "meaning": "this (thing) — near speaker",
+      "meaning_ja": "これ（話者の近く）",
+      "katakana": "イゴッ"
+    },
+    {
+      "id": 20,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "그",
+        "것"
+      ],
+      "romanization": "geu-geot",
+      "audio": "그것",
+      "meaning": "that (thing) — near listener or already mentioned",
+      "meaning_ja": "それ（聞き手の近くまたは既出）",
+      "katakana": "グゴッ"
+    },
+    {
+      "id": 21,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "저",
+        "것"
+      ],
+      "romanization": "jeo-geot",
+      "audio": "저것",
+      "meaning": "that thing over there — far from both",
+      "meaning_ja": "あれ（両者から遠い）",
+      "katakana": "チョゴッ"
+    },
+    {
+      "id": 22,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "이",
+        "거"
+      ],
+      "romanization": "i-geo",
+      "audio": "이거",
+      "meaning": "this one (casual form of 이것)",
+      "meaning_ja": "これ（カジュアル）",
+      "katakana": "イゴ"
+    },
+    {
+      "id": 23,
+      "stage": 3,
+      "type": "match_quiz",
+      "prompt": "Which demonstrative refers to something far from BOTH the speaker AND the listener?",
+      "choices": [
+        "이것",
+        "그것",
+        "저것",
+        "어떤 것"
+      ],
+      "correct": "저것"
+    },
+    {
+      "id": 24,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "여",
+        "기"
+      ],
+      "romanization": "yeo-gi",
+      "audio": "여기",
+      "meaning": "here (near speaker)",
+      "meaning_ja": "ここ（話者の近く）",
+      "katakana": "ヨギ"
+    },
+    {
+      "id": 25,
+      "stage": 3,
+      "type": "match_quiz",
+      "prompt": "저것 is the formal version. What is the casual version?",
+      "choices": [
+        "이거",
+        "그거",
+        "저거",
+        "뭐"
+      ],
+      "correct": "저거"
+    },
+    {
+      "id": 26,
+      "stage": 4,
+      "type": "reading_card",
+      "title": "Question Pronouns (의문대명사)",
+      "title_kr": "의문대명사",
+      "body": "Korean question words are placed in the same sentence position as the word they replace — unlike English, which moves 'what' and 'where' to the front. Compare: 영화 봐요? (You watch a movie?) vs 뭐 봐요? (What do you watch?). The question word simply swaps into the original slot. The main question pronouns are: 누구 (who), 무엇/뭐 (what), 어디 (where), 언제 (when), 왜 (why), 어떻게 (how), 얼마 (how much).",
+      "tip": {
+        "icon": "❓",
+        "label": "No question inversion needed",
+        "text": "English moves the question word to the front and inverts subject-verb order: 'What are you doing?' Korean keeps the word order the same as a statement and just swaps in the question word: 뭐 해요? (What [are you] doing?) — literally 'what do?'"
+      },
+      "body_ja": "韓国語の疑問語は、置き換える語と同じ文の位置に置きます。英語では「what」や「where」を文頭に移動させますが、韓国語は異なります。比較：영화 봐요?（映画を見ますか?）対 뭐 봐요?（何を見ますか?）。疑問語は元の位置にそのまま置き換えられます。主な疑問代名詞：누구（誰）、무엇/뭐（何）、어디（どこ）、언제（いつ）、왜（なぜ）、어떻게（どのように）、얼마（いくら）。",
+      "tip_ja": {
+        "label": "疑問の倒置は不要",
+        "text": "英語では疑問語を文頭に移動し主語と動詞の順序を倒置させます：「What are you doing?」。韓国語では平叙文と同じ語順のまま疑問語を置き換えます：뭐 해요?（何していますか?）——文字通り「何する?」。"
+      }
+    },
+    {
+      "id": 27,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "누",
+        "구"
+      ],
+      "romanization": "nu-gu",
+      "audio": "누구",
+      "meaning": "who",
+      "meaning_ja": "誰",
+      "katakana": "ヌグ"
+    },
+    {
+      "id": 28,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "무",
+        "엇"
+      ],
+      "romanization": "mu-eot",
+      "audio": "무엇",
+      "meaning": "what (formal)",
+      "meaning_ja": "何（フォーマル）",
+      "katakana": "ムオッ"
+    },
+    {
+      "id": 29,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "뭐"
+      ],
+      "romanization": "mwo",
+      "audio": "뭐",
+      "meaning": "what (casual, very common)",
+      "meaning_ja": "何（カジュアル・よく使う）",
+      "katakana": "ムォ"
+    },
+    {
+      "id": 30,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "어",
+        "디"
+      ],
+      "romanization": "eo-di",
+      "audio": "어디",
+      "meaning": "where",
+      "meaning_ja": "どこ",
+      "katakana": "オディ"
+    },
+    {
+      "id": 31,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "Which question pronoun means 'who'?",
+      "choices": [
+        "뭐",
+        "어디",
+        "누구",
+        "왜"
+      ],
+      "correct": "누구"
+    },
+    {
+      "id": 32,
+      "stage": 4,
+      "type": "lesson_complete",
+      "title": "Pronouns Complete!",
+      "title_kr": "대명사 완료!",
+      "message": "You've mastered Korean pronouns — from polite 저 to casual 나, from 우리 (our/my), to demonstratives and question words. Great progress!",
+      "next_url": "nouns.html"
+    }
+  ]
+}

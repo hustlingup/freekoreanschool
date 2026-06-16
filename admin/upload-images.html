@@ -3,11 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
   <title>Image Upload — Korean School Admin</title>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
   <style>
@@ -407,9 +402,10 @@ async function createBucket() {
   msg.textContent = 'Creating…';
   try {
     const client = getClient();
-    const { error } = await client.storage.createBucket(BUCKET, { public: true });
+    const { data, error } = await client.storage.createBucket(BUCKET, { public: true });
+    console.log('createBucket response:', { data, error });
     if (error && !error.message.toLowerCase().includes('already')) throw error;
-    msg.textContent = error ? 'Bucket already exists.' : 'Bucket created successfully.';
+    msg.textContent = error ? 'Bucket already exists ✓' : 'Bucket created ✓';
     msg.style.color = '#4ade80';
   } catch (e) {
     msg.textContent = 'Error: ' + e.message;
@@ -478,7 +474,9 @@ async function uploadAll() {
       const kbOut = (blob.size / 1024).toFixed(0);
       setStatus(i, 'success', `Done  ${kbOut} KB`);
     } catch (e) {
-      setStatus(i, 'error', e.message.slice(0, 50));
+      console.error(`Upload failed [${row.id}]:`, e);
+      const msg = e?.message || e?.error_description || JSON.stringify(e);
+      setStatus(i, 'error', msg.slice(0, 80));
     }
 
     done++;

@@ -1,0 +1,227 @@
+{
+  "lesson": "vocab-academic",
+  "totalSteps": 21,
+  "stages": [
+    { "id": 1, "name": "Academic Korean", "name_kr": "학문 한국어", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Academic Korean",
+      "title_kr": "학문 한국어",
+      "body": "Korea places enormous emphasis on education (교육열 — literally 'education fever'). Academic vocabulary is essential whether you're studying at a Korean university, taking a TOPIK exam, or reading academic materials. The education system is highly competitive, with 대학교 (university) entrance being a major life milestone.",
+      "tip": { "icon": "🎓", "label": "TOPIK & University", "text": "TOPIK (Test of Proficiency in Korean) is the official Korean language exam used worldwide for university admission and job applications. Academic vocabulary appears heavily in TOPIK Level 3+. Learning these words boosts your reading comprehension significantly." }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["대", "학", "교"],
+      "romanization": "daehakgyo",
+      "katakana": "テハッキョ",
+      "audio": "대학교",
+      "meaning": "University — 서울대학교 (Seoul National University)",
+      "meaning_ja": "大学 ― 서울대학교（ソウル大学）"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["교", "수"],
+      "romanization": "gyosu",
+      "katakana": "キョス",
+      "audio": "교수",
+      "meaning": "Professor — 교수님께 질문이 있어요 (I have a question for the professor)",
+      "meaning_ja": "教授 ― 교수님께 질문이 있어요（教授に質問があります）"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["강", "의"],
+      "romanization": "gangi",
+      "katakana": "カンイ",
+      "audio": "강의",
+      "meaning": "Lecture / class — 강의가 재미있어요 (The lecture is interesting)",
+      "meaning_ja": "講義 ― 강의가 재미있어요（講義が面白いです）"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["수", "업"],
+      "romanization": "sueop",
+      "katakana": "スオプ",
+      "audio": "수업",
+      "meaning": "Class / lesson — 수업 있어요? (Do you have class?)",
+      "meaning_ja": "授業 ― 수업 있어요？（授業がありますか？）"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["과", "제"],
+      "romanization": "gwaje",
+      "katakana": "クァジェ",
+      "audio": "과제",
+      "meaning": "Assignment / homework — 과제 마감이 언제예요? (When is the assignment due?)",
+      "meaning_ja": "課題 / 宿題 ― 과제 마감이 언제예요？（課題の締め切りはいつですか？）"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["시", "험"],
+      "romanization": "siheom",
+      "katakana": "シホム",
+      "audio": "시험",
+      "meaning": "Exam / test — 시험 잘 봤어요? (Did you do well on the exam?)",
+      "meaning_ja": "試験 ― 시험 잘 봤어요？（試験はうまくいきましたか？）"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["점", "수"],
+      "romanization": "jeomssu",
+      "katakana": "チョムス",
+      "audio": "점수",
+      "meaning": "Score / grade — 점수가 잘 나왔어요 (My score came out well)",
+      "meaning_ja": "点数 / 成績 ― 점수가 잘 나왔어요（点数がよく出ました）"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["전", "공"],
+      "romanization": "jeongong",
+      "katakana": "チョンゴン",
+      "audio": "전공",
+      "meaning": "Major (field of study) — 전공이 뭐예요? (What is your major?)",
+      "meaning_ja": "専攻 ― 전공이 뭐예요？（専攻は何ですか？）"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["입", "학"],
+      "romanization": "iphak",
+      "katakana": "イパク",
+      "audio": "입학",
+      "meaning": "Enrollment / matriculation — 입학 축하해요! (Congratulations on your enrollment!)",
+      "meaning_ja": "入学 ― 입학 축하해요！（入学おめでとうございます！）"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["졸", "업"],
+      "romanization": "joreop",
+      "katakana": "チョロプ",
+      "audio": "졸업",
+      "meaning": "Graduation — 졸업을 축하해요! (Congratulations on your graduation!)",
+      "meaning_ja": "卒業 ― 졸업을 축하해요！（卒業おめでとうございます！）"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["장", "학", "금"],
+      "romanization": "janghakgeum",
+      "katakana": "チャンハックム",
+      "audio": "장학금",
+      "meaning": "Scholarship — 장학금을 받았어요 (I received a scholarship)",
+      "meaning_ja": "奨学金 ― 장학금을 받았어요（奨学金をもらいました）"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["도", "서", "관"],
+      "romanization": "doseogwan",
+      "katakana": "トソグァン",
+      "audio": "도서관",
+      "meaning": "Library — 도서관에서 공부해요 (I study at the library)",
+      "meaning_ja": "図書館 ― 도서관에서 공부해요（図書館で勉強します）"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["연", "구"],
+      "romanization": "yeongu",
+      "katakana": "ヨング",
+      "audio": "연구",
+      "meaning": "Research — 연구 주제가 뭐예요? (What is your research topic?)",
+      "meaning_ja": "研究 ― 연구 주제가 뭐예요？（研究テーマは何ですか？）"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["논", "문"],
+      "romanization": "nonmun",
+      "katakana": "ノンムン",
+      "audio": "논문",
+      "meaning": "Academic paper / thesis — 논문 쓰고 있어요 (I'm writing my thesis)",
+      "meaning_ja": "論文 ― 논문 쓰고 있어요（論文を書いています）"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["학", "생"],
+      "romanization": "haksaeng",
+      "katakana": "ハクセン",
+      "audio": "학생",
+      "meaning": "Student — 대학생 = university student",
+      "meaning_ja": "学生 ― 대학생（大学生）"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["기", "숙", "사"],
+      "romanization": "gisuksa",
+      "katakana": "キスクサ",
+      "audio": "기숙사",
+      "meaning": "Dormitory — 기숙사에 살아요 (I live in the dorm)",
+      "meaning_ja": "寮 ― 기숙사에 살아요（寮に住んでいます）"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "You received money to help pay for your studies. What do you call it?",
+      "choices": ["과제 (gwaje)", "점수 (jeomssu)", "장학금 (janghakgeum)", "강의 (gangi)"],
+      "correct": "장학금 (janghakgeum)"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "전공이 뭐예요? is asking...",
+      "choices": ["What year are you in?", "What is your major?", "Where is your university?", "When do you graduate?"],
+      "correct": "What is your major?"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Korea's official Korean language proficiency exam is called...",
+      "choices": ["수능 (Suneung)", "TOPIK", "SAT", "한검"],
+      "correct": "TOPIK"
+    },
+    {
+      "id": 21,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Academic Korean Complete!",
+      "title_kr": "학문 완성!",
+      "message": "Excellent work! Academic Korean opens doors to Korean universities, TOPIK certification, and intellectual conversations. 열심히 공부하세요! (Study hard!)",
+      "next_url": "vocabulary.html?cat=news"
+    }
+  ]
+}

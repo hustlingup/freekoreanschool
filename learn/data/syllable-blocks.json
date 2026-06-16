@@ -1,0 +1,128 @@
+{
+  "lesson": "syllable-blocks",
+  "totalSteps": 61,
+  "stages": [
+    { "id": 1, "name": "Block Basics",  "name_kr": "블록 기초",    "first_step": 1,  "last_step": 13, "time_minutes": 12 },
+    { "id": 2, "name": "Vowel Shapes",  "name_kr": "모음 방향",    "first_step": 14, "last_step": 24, "time_minutes": 10 },
+    { "id": 3, "name": "Build It",      "name_kr": "음절 만들기",  "first_step": 25, "last_step": 33, "time_minutes": 8  },
+    { "id": 4, "name": "Batchim",       "name_kr": "받침",          "first_step": 34, "last_step": 44, "time_minutes": 10 },
+    { "id": 5, "name": "Read Words",    "name_kr": "단어 읽기",    "first_step": 45, "last_step": 61, "time_minutes": 15 }
+  ],
+  "steps": [
+
+    { "id": 1, "stage": 1, "type": "reading_card",
+      "title": "What Is a Syllable Block?", "title_kr": "음절이란?",
+      "body": "Every Korean syllable is written inside an invisible square block. Unlike English where letters go left to right in a row, Korean stacks consonants and vowels together into compact, visually balanced blocks. Each block represents exactly one syllable — one unit of sound.",
+      "tip": { "icon": "💡", "label": "Did you know?", "text": "Each syllable block always has exactly one vowel. It may have 0, 1, or 2 consonants — but never more than one vowel." } },
+
+    { "id": 2, "stage": 1, "type": "reading_card",
+      "title": "The Three Positions", "title_kr": "세 가지 자리",
+      "body": "Every Korean syllable block has three named positions. Two are required (initial consonant and medial vowel) and one is optional (the final consonant). Learning these positions by name is essential — Korean grammar references them constantly.",
+      "tip": { "icon": "📐", "label": "Tip", "text": "For vertical vowels like ㅏ, ㅓ, and ㅣ: the initial consonant sits to the left, the vowel to the right. For horizontal vowels like ㅗ, ㅜ, and ㅡ: the initial consonant sits on top, the vowel below." } },
+
+    { "id": 3, "stage": 1, "type": "reading_card",
+      "title": "Four Syllable Block Patterns", "title_kr": "네 가지 음절 패턴",
+      "body": "Korean syllables follow four basic structural patterns depending on whether a final consonant (받침) is present and whether the syllable begins with a vowel or consonant.",
+      "patterns": [
+        { "name": "CV",  "char": "가", "jamo": "ㄱ + ㅏ",      "label": "initial + vowel" },
+        { "name": "V",   "char": "아", "jamo": "ㅇ + ㅏ",      "label": "silent ㅇ + vowel" },
+        { "name": "CVC", "char": "간", "jamo": "ㄱ + ㅏ + ㄴ", "label": "initial + vowel + 받침" },
+        { "name": "VC",  "char": "안", "jamo": "ㅇ + ㅏ + ㄴ", "label": "silent ㅇ + vowel + 받침" }
+      ],
+      "tip": { "icon": "🔵", "label": "The ㅇ Placeholder Rule", "text": "When a syllable starts with a vowel sound, you must write ㅇ as a placeholder in the initial position. ㅇ is completely silent at the start of a syllable — it simply signals that the block begins with a vowel. Examples: 아 = ㅇ+ㅏ   이 = ㅇ+ㅣ   우 = ㅇ+ㅜ" } },
+
+    { "id": 4,  "stage": 1, "type": "card_reveal",  "char": "한", "jamo": "ㅎ + ㅏ + ㄴ", "romanization": "han", "audio": "한", "example_word": "한국",   "example_meaning": "Korea",           "hint": "Every syllable is a square block — initial consonant, vowel, and optional final consonant." },
+    { "id": 5,  "stage": 1, "type": "card_reveal",  "char": "국", "jamo": "ㄱ + ㅜ + ㄱ", "romanization": "guk", "audio": "국", "example_word": "한국",   "example_meaning": "Korea",           "hint": "This block has all three positions: 초성 (ㄱ) + 중성 (ㅜ) + 받침 (ㄱ)." },
+    { "id": 6,  "stage": 1, "type": "card_reveal",  "char": "어", "jamo": "ㅇ + ㅓ",     "romanization": "eo",  "audio": "어", "example_word": "한국어", "example_meaning": "Korean language", "hint": "Vowel-initial syllables use silent ㅇ as a placeholder. The ㅇ here makes no sound." },
+    { "id": 7,  "stage": 1, "type": "match_quiz",   "prompt": "Every Korean syllable block contains exactly how many vowels?", "choices": ["Zero", "Exactly one", "One or two", "As many as needed"], "correct": "Exactly one" },
+    { "id": 8,  "stage": 1, "type": "match_quiz",   "prompt": "The INITIAL consonant position (first consonant) is called…", "choices": ["받침", "중성", "초성", "모음"], "correct": "초성" },
+    { "id": 9,  "stage": 1, "type": "match_quiz",   "prompt": "When a syllable starts with a VOWEL sound, you write __ as a placeholder initial consonant.", "choices": ["ㄱ", "ㄴ", "ㄹ", "ㅇ"], "correct": "ㅇ" },
+    { "id": 10, "stage": 1, "type": "card_reveal",  "char": "가", "jamo": "ㄱ + ㅏ",     "romanization": "ga",  "audio": "가", "example_word": "가다",   "example_meaning": "to go",           "hint": "CV pattern — the simplest block type. Just an initial consonant and a vowel." },
+    { "id": 11, "stage": 1, "type": "card_reveal",  "char": "아", "jamo": "ㅇ + ㅏ",     "romanization": "a",   "audio": "아", "example_word": "아기",   "example_meaning": "baby",            "hint": "V-only pattern — silent ㅇ in the initial position, vowel only sounds." },
+    { "id": 12, "stage": 1, "type": "card_reveal",  "char": "간", "jamo": "ㄱ + ㅏ + ㄴ", "romanization": "gan", "audio": "간", "example_word": "간",     "example_meaning": "liver / went",    "hint": "CVC pattern — initial consonant + vowel + final consonant (받침). Three parts." },
+    { "id": 13, "stage": 1, "type": "match_quiz",   "prompt": "안 (inside / no) — what structural pattern is this?", "choices": ["CV", "CVC", "VC (silent ㅇ + vowel + final)", "V only"], "correct": "VC (silent ㅇ + vowel + final)" },
+
+    { "id": 14, "stage": 2, "type": "reading_card",
+      "title": "Vertical vs Horizontal Vowels", "title_kr": "세로 vs 가로 모음",
+      "body": "The shape of the vowel determines where the initial consonant goes inside the block. Tall, vertical vowels push the consonant to the left; wide, horizontal vowels push it to the top. This is what gives Korean its distinctive square appearance.",
+      "tip": { "icon": "💡", "label": "Quick Visual Trick", "text": "When you see a tall vowel (ㅏ, ㅓ, ㅣ and their variants), the initial consonant sits to its left. When you see a wide vowel (ㅗ, ㅜ, ㅡ and their variants), the initial consonant sits above it. Compound vowels like ㅘ, ㅝ, ㅚ behave like vertical vowels — consonant goes left." } },
+
+    { "id": 15, "stage": 2, "type": "card_reveal",  "char": "가", "jamo": "ㄱ  ←  ㅏ",   "romanization": "ga",  "audio": "가", "hint": "ㅏ is a TALL vertical vowel. The initial consonant sits to its LEFT." },
+    { "id": 16, "stage": 2, "type": "card_reveal",  "char": "너", "jamo": "ㄴ  ←  ㅓ",   "romanization": "neo", "audio": "너", "example_word": "너",     "example_meaning": "you (informal)",  "hint": "ㅓ is also a tall vertical vowel — consonant LEFT, vowel RIGHT." },
+    { "id": 17, "stage": 2, "type": "card_reveal",  "char": "시", "jamo": "ㅅ  ←  ㅣ",   "romanization": "si",  "audio": "시", "example_word": "시간",   "example_meaning": "time",            "hint": "ㅣ is the tallest vowel. Consonant always goes to its left." },
+    { "id": 18, "stage": 2, "type": "card_reveal",  "char": "고", "jamo": "ㄱ\n↑\nㅗ",   "romanization": "go",  "audio": "고", "example_word": "고마워", "example_meaning": "thank you",       "hint": "ㅗ is a WIDE horizontal vowel. The initial consonant sits ON TOP of the vowel." },
+    { "id": 19, "stage": 2, "type": "card_reveal",  "char": "누", "jamo": "ㄴ\n↑\nㅜ",   "romanization": "nu",  "audio": "누", "example_word": "누구",   "example_meaning": "who",             "hint": "ㅜ is a wide horizontal vowel — consonant on top, vowel below. The line points DOWN." },
+    { "id": 20, "stage": 2, "type": "card_reveal",  "char": "그", "jamo": "ㄱ\n↑\nㅡ",   "romanization": "geu", "audio": "그", "example_word": "그리고", "example_meaning": "and",             "hint": "ㅡ is a flat horizontal vowel — the consonant sits above it." },
+    { "id": 21, "stage": 2, "type": "match_quiz",   "prompt": "With a TALL vowel like ㅏ, ㅓ, or ㅣ — where does the initial consonant go?", "choices": ["On top", "To the left", "To the right", "At the bottom"], "correct": "To the left" },
+    { "id": 22, "stage": 2, "type": "match_quiz",   "prompt": "With a WIDE vowel like ㅗ, ㅜ, or ㅡ — where does the initial consonant go?", "choices": ["To the left", "To the right", "On top", "At the bottom"], "correct": "On top" },
+    { "id": 23, "stage": 2, "type": "match_quiz",   "prompt": "배 (stomach / ship) contains ㅐ — which type of vowel is ㅐ?", "choices": ["Wide horizontal", "Tall vertical", "Compound wide", "Silent"], "correct": "Tall vertical" },
+    { "id": 24, "stage": 2, "type": "match_quiz",   "prompt": "Which of these is a WIDE (horizontal) vowel?", "choices": ["ㅏ", "ㅓ", "ㅣ", "ㅜ"], "correct": "ㅜ" },
+
+    { "id": 25, "stage": 3, "type": "reading_card",
+      "title": "Building Your First Syllables", "title_kr": "첫 번째 음절 만들기",
+      "body": "Now let's practice building simple CV syllables — consonant + vowel, no batchim. These are the easiest blocks to read and write. Listen to each one and try to produce the sound yourself." },
+
+    { "id": 26, "stage": 3, "type": "syllable_builder", "consonant": "ㅂ", "vowel": "ㅏ", "result": "바", "audio": "바", "meaning": "ba — 바나나 (banana)" },
+    { "id": 27, "stage": 3, "type": "syllable_builder", "consonant": "ㄴ", "vowel": "ㅏ", "result": "나", "audio": "나", "meaning": "na — 나 (I / me)" },
+    { "id": 28, "stage": 3, "type": "syllable_builder", "consonant": "ㅅ", "vowel": "ㅏ", "result": "사", "audio": "사", "meaning": "sa — 사랑 (love)" },
+    { "id": 29, "stage": 3, "type": "syllable_builder", "consonant": "ㅎ", "vowel": "ㅏ", "result": "하", "audio": "하", "meaning": "ha — 하늘 (sky)" },
+    { "id": 30, "stage": 3, "type": "syllable_builder", "consonant": "ㄱ", "vowel": "ㅗ", "result": "고", "audio": "고", "meaning": "go — 고마워 (thank you, informal)" },
+    { "id": 31, "stage": 3, "type": "syllable_builder", "consonant": "ㄴ", "vowel": "ㅜ", "result": "누", "audio": "누", "meaning": "nu — 누구 (who)" },
+    { "id": 32, "stage": 3, "type": "syllable_builder", "consonant": "ㅁ", "vowel": "ㅣ", "result": "미", "audio": "미", "meaning": "mi — 미래 (future)" },
+    { "id": 33, "stage": 3, "type": "syllable_builder", "consonant": "ㄱ", "vowel": "ㅣ", "result": "기", "audio": "기", "meaning": "gi — 기다리다 (to wait)" },
+
+    { "id": 34, "stage": 4, "type": "reading_card",
+      "title": "Adding Batchim — The Final Consonant", "title_kr": "받침 추가",
+      "body": "When you add a consonant at the bottom of a block, that consonant becomes the 받침 (batchim) — the final consonant. Batchim is what gives many Korean words their rich, resonant endings. Watch how adding batchim transforms simple syllables into real words.",
+      "tip": { "icon": "💡", "label": "Tip", "text": "Syllable blocks with batchim are slightly compressed vertically to make room at the bottom. The batchim consonant sits below both the initial consonant and the vowel, completing the square shape of the block." } },
+
+    { "id": 35, "stage": 4, "type": "card_reveal",  "char": "산", "jamo": "ㅅ + ㅏ + ㄴ", "romanization": "san", "audio": "산", "example_word": "산",     "example_meaning": "mountain",        "hint": "ㄴ is the 받침 here — it sits at the bottom of the block below ㅅ and ㅏ." },
+    { "id": 36, "stage": 4, "type": "card_reveal",  "char": "달", "jamo": "ㄷ + ㅏ + ㄹ", "romanization": "dal", "audio": "달", "example_word": "달",     "example_meaning": "moon / month",    "hint": "ㄹ 받침 — tongue taps the roof of your mouth lightly to produce the ending." },
+    { "id": 37, "stage": 4, "type": "card_reveal",  "char": "밥", "jamo": "ㅂ + ㅏ + ㅂ", "romanization": "bap", "audio": "밥", "example_word": "밥",     "example_meaning": "rice / meal",     "hint": "ㅂ받침 — lips close at the end without releasing. The 'p' is unreleased." },
+    { "id": 38, "stage": 4, "type": "card_reveal",  "char": "봄", "jamo": "ㅂ + ㅗ + ㅁ", "romanization": "bom", "audio": "봄", "example_word": "봄",     "example_meaning": "spring (season)", "hint": "ㅁ 받침 — lips close gently at the end. A nasal resonant ending." },
+    { "id": 39, "stage": 4, "type": "card_reveal",  "char": "길", "jamo": "ㄱ + ㅣ + ㄹ", "romanization": "gil", "audio": "길", "example_word": "길",     "example_meaning": "road / way",      "hint": "ㄹ 받침 again — the tongue lingers against the palate. Sounds like a soft 'l'." },
+    { "id": 40, "stage": 4, "type": "match_quiz",   "prompt": "밥 (rice) — what is its 받침 (batchim)?", "choices": ["ㅏ", "ㅂ", "ㄴ", "ㄱ"], "correct": "ㅂ" },
+    { "id": 41, "stage": 4, "type": "match_quiz",   "prompt": "달 (moon) ends with which consonant sound?", "choices": ["n", "m", "l/r", "k"], "correct": "l/r" },
+    { "id": 42, "stage": 4, "type": "match_quiz",   "prompt": "In a CVC syllable block, where does the 받침 (batchim) sit?", "choices": ["Above the vowel", "To the right of the vowel", "At the bottom, below everything", "Beside the initial consonant"], "correct": "At the bottom, below everything" },
+    { "id": 43, "stage": 4, "type": "match_quiz",   "prompt": "Which of these words has NO 받침?", "choices": ["산", "달", "가", "봄"], "correct": "가" },
+    { "id": 44, "stage": 4, "type": "match_quiz",   "prompt": "봄 (spring) = ㅂ + ㅗ + ? — what is the batchim?", "choices": ["ㄴ", "ㄱ", "ㅁ", "ㄹ"], "correct": "ㅁ" },
+
+    { "id": 45, "stage": 5, "type": "reading_card",
+      "title": "Reading Real Korean Words", "title_kr": "실제 한국어 단어 읽기",
+      "body": "You now have everything you need to decode real Korean words. Let's break down 10 essential words syllable by syllable, identifying each component. Tap the speaker buttons to hear the words spoken aloud." },
+
+    { "id": 46, "stage": 5, "type": "listen_repeat", "word": "한국",   "romanization": "han·guk",   "meaning": "Korea",         "audio": "한국",   "syllables": ["한", "국"] },
+    { "id": 47, "stage": 5, "type": "listen_repeat", "word": "사람",   "romanization": "sa·ram",    "meaning": "person",        "audio": "사람",   "syllables": ["사", "람"] },
+    { "id": 48, "stage": 5, "type": "listen_repeat", "word": "학교",   "romanization": "hak·gyo",   "meaning": "school",        "audio": "학교",   "syllables": ["학", "교"] },
+    { "id": 49, "stage": 5, "type": "listen_repeat", "word": "안녕",   "romanization": "an·nyeong", "meaning": "hello / peace", "audio": "안녕",   "syllables": ["안", "녕"] },
+    { "id": 50, "stage": 5, "type": "listen_repeat", "word": "감사",   "romanization": "gam·sa",    "meaning": "gratitude",     "audio": "감사",   "syllables": ["감", "사"] },
+    { "id": 51, "stage": 5, "type": "listen_repeat", "word": "사랑",   "romanization": "sa·rang",   "meaning": "love",          "audio": "사랑",   "syllables": ["사", "랑"] },
+    { "id": 52, "stage": 5, "type": "listen_repeat", "word": "음악",   "romanization": "eum·ak",    "meaning": "music",         "audio": "음악",   "syllables": ["음", "악"] },
+    { "id": 53, "stage": 5, "type": "listen_repeat", "word": "친구",   "romanization": "chin·gu",   "meaning": "friend",        "audio": "친구",   "syllables": ["친", "구"] },
+    { "id": 54, "stage": 5, "type": "listen_repeat", "word": "가족",   "romanization": "ga·jok",    "meaning": "family",        "audio": "가족",   "syllables": ["가", "족"] },
+    { "id": 55, "stage": 5, "type": "listen_repeat", "word": "바다",   "romanization": "ba·da",     "meaning": "sea / ocean",   "audio": "바다",   "syllables": ["바", "다"] },
+    { "id": 56, "stage": 5, "type": "listen_repeat", "word": "꿈",     "romanization": "kkum",      "meaning": "dream",         "audio": "꿈",     "syllables": ["꿈"] },
+
+    { "id": 57, "stage": 5, "type": "reading_card",
+      "title": "Practice & Summary", "title_kr": "연습",
+      "body": "Congratulations — you have learned the core structure of Korean syllable blocks! Here is a quick summary of the five rules that govern every syllable in the Korean writing system.",
+      "rules": [
+        "Every block has exactly one vowel (중성 / Jungseong)",
+        "Vowel-initial syllables use silent ㅇ as a placeholder initial consonant",
+        "Tall vowels (ㅏ, ㅓ, ㅣ) — initial consonant sits to the left, vowel to the right",
+        "Wide vowels (ㅗ, ㅜ, ㅡ) — initial consonant sits on top, vowel below",
+        "Optional 받침 (batchim) sits at the bottom of the block, below everything else"
+      ],
+      "tip": { "icon": "📝", "label": "Self-Test coming up!", "text": "Three quick questions below to confirm you've got this. Identify the components of each syllable." } },
+
+    { "id": 58, "stage": 5, "type": "match_quiz", "prompt": "남 (south) — what is its 초성 (initial consonant)?", "choices": ["ㄴ", "ㅏ", "ㅁ", "ㄱ"], "correct": "ㄴ" },
+    { "id": 59, "stage": 5, "type": "match_quiz", "prompt": "달 (moon) — identify the 받침 (batchim / final consonant).", "choices": ["ㄷ", "ㅏ", "ㄹ", "ㄴ"], "correct": "ㄹ" },
+    { "id": 60, "stage": 5, "type": "match_quiz", "prompt": "봄 (spring) — what are all three components in order?", "choices": ["ㅂ + ㅗ + ㅁ", "ㅂ + ㅜ + ㄴ", "ㅍ + ㅗ + ㄴ", "ㅂ + ㅗ + ㄴ"], "correct": "ㅂ + ㅗ + ㅁ" },
+
+    { "id": 61, "stage": 5, "type": "lesson_complete",
+      "title": "You can read Korean syllable blocks!",
+      "title_kr": "이제 한국어 음절을 읽을 수 있어요!",
+      "message": "You've mastered the building blocks of all Korean writing — 5 stages, 61 steps. Every Korean word is made of exactly these blocks. 화이팅!",
+      "next_url": "pronunciation.html" }
+  ]
+}

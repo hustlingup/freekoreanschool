@@ -1,0 +1,224 @@
+{
+  "lesson": "vocab-shopping",
+  "totalSteps": 21,
+  "stages": [
+    { "id": 1, "name": "Shopping", "name_kr": "쇼핑", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Shopping in Korean",
+      "title_kr": "쇼핑",
+      "body": "Korea is a shopper's paradise — from Dongdaemun's 24-hour fashion markets to sleek duty-free department stores and Olive Young K-beauty chains. The most important phrase: 얼마예요? (How much is it?). Most stores accept card payments, and bargaining is possible at traditional markets.",
+      "tip": { "icon": "🛒", "label": "Market culture", "text": "At traditional markets (시장, sijang), asking 깎아 주세요 (Please lower the price) is expected and welcome. At department stores, prices are fixed. Knowing the difference avoids awkward moments." }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["얼", "마", "예", "요"],
+      "romanization": "eolmayeyo",
+      "katakana": "オルマエヨ",
+      "audio": "얼마예요",
+      "meaning": "How much is it? — the most essential shopping phrase",
+      "meaning_ja": "いくらですか？― ショッピングで最重要フレーズ"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["사", "다"],
+      "romanization": "sada",
+      "katakana": "サダ",
+      "audio": "사다",
+      "meaning": "To buy — 이거 살게요 = I'll buy this",
+      "meaning_ja": "買う ― 이거 살게요（これを買います）"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["팔", "다"],
+      "romanization": "palda",
+      "katakana": "パルダ",
+      "audio": "팔다",
+      "meaning": "To sell — 뭐 파세요? = What do you sell?",
+      "meaning_ja": "売る ― 뭐 파세요？（何を売っていますか？）"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["싸", "다"],
+      "romanization": "ssada",
+      "katakana": "サダ",
+      "audio": "싸다",
+      "meaning": "Cheap / inexpensive — 너무 싸요! = It's so cheap!",
+      "meaning_ja": "安い ― 너무 싸요！（すごく安い！）"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["비", "싸", "다"],
+      "romanization": "bissada",
+      "katakana": "ピサダ",
+      "audio": "비싸다",
+      "meaning": "Expensive — 너무 비싸요 = It's too expensive",
+      "meaning_ja": "高い（価格）― 너무 비싸요（高すぎます）"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["계", "산"],
+      "romanization": "gyesan",
+      "katakana": "ケサン",
+      "audio": "계산",
+      "meaning": "Payment / checkout — 계산해주세요 = Please ring this up",
+      "meaning_ja": "お会計 / 支払い ― 계산해주세요（お会計をお願いします）"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["카", "드"],
+      "romanization": "kadeu",
+      "katakana": "カドゥ",
+      "audio": "카드",
+      "meaning": "Card (credit/debit) — 카드 돼요? = Do you accept card?",
+      "meaning_ja": "カード（クレジット/デビット）― 카드 돼요？（カードは使えますか？）"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["현", "금"],
+      "romanization": "hyeongeum",
+      "katakana": "ヒョングム",
+      "audio": "현금",
+      "meaning": "Cash — 현금밖에 없어요 = I only have cash",
+      "meaning_ja": "現金 ― 현금밖에 없어요（現金しかありません）"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["영", "수", "증"],
+      "romanization": "yeongsujeung",
+      "katakana": "ヨンスジュン",
+      "audio": "영수증",
+      "meaning": "Receipt — 영수증 주세요 = Please give me a receipt",
+      "meaning_ja": "レシート ― 영수증 주세요（レシートをください）"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["할", "인"],
+      "romanization": "harin",
+      "katakana": "ハリン",
+      "audio": "할인",
+      "meaning": "Discount — 할인 있어요? = Is there a discount?",
+      "meaning_ja": "割引 ― 할인 있어요？（割引はありますか？）"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["교", "환"],
+      "romanization": "gyohwan",
+      "katakana": "キョファン",
+      "audio": "교환",
+      "meaning": "Exchange (product) — 교환할 수 있어요? = Can I exchange this?",
+      "meaning_ja": "交換（商品）― 교환할 수 있어요？（交換できますか？）"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["환", "불"],
+      "romanization": "hwanbul",
+      "katakana": "ファンブル",
+      "audio": "환불",
+      "meaning": "Refund — 환불해 주세요 = Please give me a refund",
+      "meaning_ja": "返金 ― 환불해 주세요（返金してください）"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["사", "이", "즈"],
+      "romanization": "saijeu",
+      "katakana": "サイジュ",
+      "audio": "사이즈",
+      "meaning": "Size — 이 사이즈 있어요? = Do you have this size?",
+      "meaning_ja": "サイズ ― 이 사이즈 있어요？（このサイズはありますか？）"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["깎", "아", "주", "세", "요"],
+      "romanization": "kkakka juseyo",
+      "katakana": "カッカ チュセヨ",
+      "audio": "깎아 주세요",
+      "meaning": "Please lower the price — the essential market bargaining phrase",
+      "meaning_ja": "値引きしてください ― 市場での値段交渉フレーズ"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["포", "장"],
+      "romanization": "pojang",
+      "katakana": "ポジャン",
+      "audio": "포장",
+      "meaning": "Wrapping / takeaway — 포장해 주세요 = Please wrap it / I'll take it to go",
+      "meaning_ja": "包装 / 持ち帰り ― 포장해 주세요（包んでください／持ち帰りで）"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "You want to know the price. What do you say?",
+      "choices": ["사이즈 있어요?", "얼마예요?", "영수증 주세요", "할인 있어요?"],
+      "correct": "얼마예요?"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "At a traditional market, which phrase can you use to negotiate?",
+      "choices": ["영수증 주세요", "깎아 주세요", "포장해 주세요", "환불해 주세요"],
+      "correct": "깎아 주세요"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "The item doesn't fit. You want to swap it for a different one. You ask for...",
+      "choices": ["할인 (discount)", "환불 (refund)", "교환 (exchange)", "계산 (payment)"],
+      "correct": "교환 (exchange)"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "비싸다 means...",
+      "choices": ["Cheap", "Expensive", "Free", "On sale"],
+      "correct": "Expensive"
+    },
+    {
+      "id": 21,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Shopping Complete!",
+      "title_kr": "쇼핑 완성!",
+      "message": "쇼핑 즐기세요! You're ready to shop in Korea — from bargaining at Namdaemun Market to smoothly paying at a department store. Your wallet will thank you for knowing 비싸요 and 싸요!",
+      "next_url": "vocabulary.html?cat=weather"
+    }
+  ]
+}

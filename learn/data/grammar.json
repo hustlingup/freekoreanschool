@@ -1,0 +1,763 @@
+{
+  "lesson": "grammar",
+  "stages": [
+    { "id": 1,  "name": "Sentence",     "name_kr": "문장",       "first_step": 1  },
+    { "id": 2,  "name": "Particles",    "name_kr": "조사",       "first_step": 4  },
+    { "id": 3,  "name": "Conjugation",  "name_kr": "활용",       "first_step": 11 },
+    { "id": 4,  "name": "Negation",     "name_kr": "부정문",     "first_step": 21 },
+    { "id": 5,  "name": "Questions",    "name_kr": "의문문",     "first_step": 23 },
+    { "id": 6,  "name": "Patterns",     "name_kr": "문형",       "first_step": 26 },
+    { "id": 7,  "name": "Connectors",   "name_kr": "접속사",     "first_step": 28 },
+    { "id": 8,  "name": "And/With",     "name_kr": "와/랑",      "first_step": 31 },
+    { "id": 9,  "name": "To/From",      "name_kr": "한테",       "first_step": 32 },
+    { "id": 10, "name": "Time",         "name_kr": "시간",       "first_step": 33 },
+    { "id": 11, "name": "Counters",     "name_kr": "단위",       "first_step": 36 },
+    { "id": 12, "name": "Progressive",  "name_kr": "진행형",     "first_step": 39 },
+    { "id": 13, "name": "Self-Intro",   "name_kr": "자기소개",   "first_step": 42 },
+    { "id": 14, "name": "Dates",        "name_kr": "날짜",       "first_step": 43 },
+    { "id": 15, "name": "Adverbs",      "name_kr": "부사",       "first_step": 44 },
+    { "id": 16, "name": "Nominalizer",  "name_kr": "명사화",     "first_step": 47 },
+    { "id": 17, "name": "Comparatives", "name_kr": "비교",       "first_step": 50 },
+    { "id": 18, "name": "Like",         "name_kr": "좋다/좋아하다", "first_step": 53 },
+    { "id": 19, "name": "Still/Already","name_kr": "아직/이미",  "first_step": 54 },
+    { "id": 20, "name": "Indefinite",   "name_kr": "막연",       "first_step": 56 },
+    { "id": 21, "name": "Imperative",   "name_kr": "명령형",     "first_step": 58 },
+    { "id": 22, "name": "Don't",        "name_kr": "금지형",     "first_step": 59 },
+    { "id": 23, "name": "Method",       "name_kr": "방법",       "first_step": 62 },
+    { "id": 24, "name": "Good/Poor",    "name_kr": "잘함/못함",  "first_step": 63 },
+    { "id": 25, "name": "All/More",     "name_kr": "다/더",      "first_step": 65 },
+    { "id": 26, "name": "-도 Advanced", "name_kr": "도",         "first_step": 67 }
+  ],
+  "steps": [
+
+    {
+      "id": 1, "stage": 1, "type": "reading_card",
+      "title": "Word Order — SOV",
+      "title_kr": "어순",
+      "body": "Korean follows Subject → Object → Verb (SOV) order. The verb always comes LAST.",
+      "rules": [
+        "English (SVO): I eat rice.",
+        "Korean (SOV): 나는 밥을 먹어요. (I rice eat.)",
+        "Tip: Listen for the final word — that's the verb, the action!"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Grammar Tip",
+        "text": "Once you know the verb comes last, everything clicks. The rest of the sentence can rearrange — Korean speakers use particles to keep things clear."
+      }
+    },
+    {
+      "id": 2, "stage": 1, "type": "listen_repeat",
+      "audio": "나는 밥을 먹어요",
+      "syllables": ["나는", " ", "밥을", " ", "먹어요"],
+      "romanization": "na-neun bab-eul meog-eo-yo",
+      "meaning": "I eat rice. (Subject + Object + Verb)",
+      "meaning_ja": "私はご飯を食べます。（主語＋目的語＋動詞）",
+      "katakana": "ナヌン パブル モゴヨ"
+    },
+    {
+      "id": 3, "stage": 1, "type": "match_quiz",
+      "prompt": "In a Korean sentence, the verb always comes...",
+      "choices": ["Last", "First", "Second", "Anywhere"],
+      "correct": "Last"
+    },
+
+    {
+      "id": 4, "stage": 2, "type": "reading_card",
+      "title": "Korean Particles",
+      "title_kr": "조사",
+      "body": "Particles attach to nouns to show their role: topic, subject, object, location. They replace fixed word order.",
+      "rules": [
+        "은/는 → Topic marker (은 after consonant, 는 after vowel)",
+        "이/가 → Subject marker (이 after consonant, 가 after vowel)",
+        "을/를 → Object marker (을 after consonant, 를 after vowel)",
+        "에 → Location / Direction",
+        "에서 → Location of action",
+        "의 → Possessive ('s / of)"
+      ]
+    },
+    {
+      "id": 5, "stage": 2, "type": "listen_repeat",
+      "audio": "나는 학생이에요",
+      "syllables": ["나는", " ", "학생이에요"],
+      "romanization": "na-neun hak-saeng-i-e-yo",
+      "meaning": "I am a student. (는 = topic marker)",
+      "meaning_ja": "私は学生です。（는 = トピックマーカー）",
+      "katakana": "ナヌン ハクセンイエヨ"
+    },
+    {
+      "id": 6, "stage": 2, "type": "match_quiz",
+      "prompt": "은/는 marks the ___",
+      "choices": ["Topic", "Subject", "Object", "Location"],
+      "correct": "Topic"
+    },
+    {
+      "id": 7, "stage": 2, "type": "listen_repeat",
+      "audio": "비가 와요",
+      "syllables": ["비가", " ", "와요"],
+      "romanization": "bi-ga wa-yo",
+      "meaning": "Rain comes. / It's raining. (가 = subject marker)",
+      "meaning_ja": "雨が来ます。（雨が降っています）（가 = 主語マーカー）",
+      "katakana": "ピガ ワヨ"
+    },
+    {
+      "id": 8, "stage": 2, "type": "match_quiz",
+      "prompt": "To mark 밥 (rice) as the OBJECT: 밥___ 먹어요",
+      "choices": ["을", "는", "가", "에"],
+      "correct": "을"
+    },
+    {
+      "id": 9, "stage": 2, "type": "listen_repeat",
+      "audio": "카페에서 커피를 마셔요",
+      "syllables": ["카페에서", " ", "커피를", " ", "마셔요"],
+      "romanization": "ka-pe-e-seo keo-pi-reul ma-syeo-yo",
+      "meaning": "I drink coffee at the café. (에서 = location of action)",
+      "meaning_ja": "カフェでコーヒーを飲みます。（에서 = 動作の場所）",
+      "katakana": "カペエソ コピルル マショヨ"
+    },
+    {
+      "id": 10, "stage": 2, "type": "match_quiz",
+      "prompt": "에서 marks...",
+      "choices": ["Location of action", "Destination", "Topic", "Object"],
+      "correct": "Location of action"
+    },
+
+    {
+      "id": 11, "stage": 3, "type": "reading_card",
+      "title": "Verbs — Dictionary Form",
+      "title_kr": "동사 기본형",
+      "body": "All Korean verbs in dictionary form end in 다 (da). Remove 다 to get the verb stem, then add an ending.",
+      "rules": [
+        "가다 (to go) → stem: 가-",
+        "먹다 (to eat) → stem: 먹-",
+        "공부하다 (to study) → stem: 공부하-",
+        "하다 (to do) → stem: 하-"
+      ]
+    },
+    {
+      "id": 12, "stage": 3, "type": "reading_card",
+      "title": "Present Tense: -아요 / -어요",
+      "title_kr": "현재형",
+      "body": "Add -아요 after ㅏ or ㅗ stems. Add -어요 for all others. 하다 verbs use -해요.",
+      "rules": [
+        "가다 → 가요 (go · ㅏ stem)",
+        "오다 → 와요 (come · ㅗ stem)",
+        "먹다 → 먹어요 (eat · other)",
+        "마시다 → 마셔요 (drink · other)",
+        "공부하다 → 공부해요 (study · 하다)"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Vowel Rule",
+        "text": "ㅏ and ㅗ are 'bright' vowels → -아요. All other vowels are 'dark' → -어요. Once you know the stem vowel, conjugation is automatic."
+      }
+    },
+    {
+      "id": 13, "stage": 3, "type": "listen_repeat",
+      "audio": "가요",
+      "syllables": ["가요"],
+      "romanization": "ga-yo",
+      "meaning": "I go / Let's go. (가다 → 가요, polite present)",
+      "meaning_ja": "行きます / 行きましょう。（가다 → 가요、丁寧な現在形）",
+      "katakana": "カヨ"
+    },
+    {
+      "id": 14, "stage": 3, "type": "listen_repeat",
+      "audio": "먹어요",
+      "syllables": ["먹어요"],
+      "romanization": "meog-eo-yo",
+      "meaning": "I eat / eating. (먹다 → 먹어요, polite present)",
+      "meaning_ja": "食べます。（먹다 → 먹어요、丁寧な現在形）",
+      "katakana": "モゴヨ"
+    },
+    {
+      "id": 15, "stage": 3, "type": "match_quiz",
+      "prompt": "가다 (to go) → polite present form?",
+      "choices": ["가요", "가아요", "가어요", "갔어요"],
+      "correct": "가요"
+    },
+    {
+      "id": 16, "stage": 3, "type": "reading_card",
+      "title": "Past Tense: -았어요 / -었어요",
+      "title_kr": "과거형",
+      "body": "Add -았어요 after ㅏ/ㅗ stems and -었어요 for others. 하다 → 했어요.",
+      "rules": [
+        "가다 → 갔어요 (went)",
+        "오다 → 왔어요 (came)",
+        "먹다 → 먹었어요 (ate)",
+        "마시다 → 마셨어요 (drank)",
+        "공부하다 → 공부했어요 (studied)"
+      ]
+    },
+    {
+      "id": 17, "stage": 3, "type": "listen_repeat",
+      "audio": "서울에 갔어요",
+      "syllables": ["서울에", " ", "갔어요"],
+      "romanization": "seo-ul-e gass-eo-yo",
+      "meaning": "I went to Seoul.",
+      "meaning_ja": "ソウルに行きました。",
+      "katakana": "ソウレ カッソヨ"
+    },
+    {
+      "id": 18, "stage": 3, "type": "match_quiz",
+      "prompt": "Past tense of 먹다 (to eat)?",
+      "choices": ["먹었어요", "먹아요", "먹어요", "먹을 거예요"],
+      "correct": "먹었어요"
+    },
+    {
+      "id": 19, "stage": 3, "type": "reading_card",
+      "title": "Future Tense: -(으)ㄹ 거예요",
+      "title_kr": "미래형",
+      "body": "Add -(으)ㄹ 거예요 to the verb stem to talk about future plans or predictions.",
+      "rules": [
+        "가다 → 갈 거예요 (will go)",
+        "먹다 → 먹을 거예요 (will eat)",
+        "공부하다 → 공부할 거예요 (will study)"
+      ]
+    },
+    {
+      "id": 20, "stage": 3, "type": "match_quiz",
+      "prompt": "가다 (to go) → future tense?",
+      "choices": ["갈 거예요", "갔어요", "가요", "가지 마세요"],
+      "correct": "갈 거예요"
+    },
+
+    {
+      "id": 21, "stage": 4, "type": "reading_card",
+      "title": "Making Sentences Negative",
+      "title_kr": "부정문",
+      "body": "Short negation: 안 + verb. Long negation: verb stem + 지 않아요. Cannot: 못 + verb.",
+      "rules": [
+        "안 먹어요 (don't eat — short form)",
+        "먹지 않아요 (don't eat — long form)",
+        "못 가요 (can't go — unable to)"
+      ]
+    },
+    {
+      "id": 22, "stage": 4, "type": "match_quiz",
+      "prompt": "'I don't eat' — short negation form",
+      "choices": ["안 먹어요", "먹지 않아요", "못 먹어요", "안 가요"],
+      "correct": "안 먹어요"
+    },
+
+    {
+      "id": 23, "stage": 5, "type": "reading_card",
+      "title": "Forming Questions",
+      "title_kr": "의문문",
+      "body": "Korean questions use the SAME word order as statements — just add rising intonation (↑) or a question mark.",
+      "rules": [
+        "뭐 / 무엇 — What",
+        "누구 — Who",
+        "어디 — Where",
+        "언제 — When",
+        "왜 — Why",
+        "어떻게 — How",
+        "얼마 — How much",
+        "몇 — How many"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Grammar Tip",
+        "text": "밥을 먹어요 = I eat rice. 밥을 먹어요? = Do you eat rice? Same words — just a rising tone at the end. No word inversion like English!"
+      }
+    },
+    {
+      "id": 24, "stage": 5, "type": "listen_repeat",
+      "audio": "이름이 뭐예요?",
+      "syllables": ["이름이", " ", "뭐예요?"],
+      "romanization": "i-reum-i mwo-ye-yo?",
+      "meaning": "What is your name?",
+      "meaning_ja": "お名前は何ですか？",
+      "katakana": "イルミ ムォイェヨ？"
+    },
+    {
+      "id": 25, "stage": 5, "type": "match_quiz",
+      "prompt": "'Where' in Korean?",
+      "choices": ["어디", "뭐", "왜", "언제"],
+      "correct": "어디"
+    },
+
+    {
+      "id": 26, "stage": 6, "type": "reading_card",
+      "title": "Essential Sentence Patterns",
+      "title_kr": "핵심 문형",
+      "body": "Master these 6 patterns to express the most common ideas in Korean conversations.",
+      "rules": [
+        "~이에요/예요 — is/am/are (noun): 학생이에요 (I'm a student)",
+        "~고 싶어요 — want to: 한국에 가고 싶어요 (I want to go to Korea)",
+        "~ㄹ/을 수 있어요 — can: 한국어를 할 수 있어요 (I can speak Korean)",
+        "~아/어야 해요 — must: 공부해야 해요 (I must study)",
+        "~(으)면 — if/when: 비가 오면 집에 있어요 (If it rains, I stay home)",
+        "~때문에 — because of: 비 때문에 못 가요 (Can't go because of rain)"
+      ]
+    },
+    {
+      "id": 27, "stage": 6, "type": "match_quiz",
+      "prompt": "Pattern for 'I want to go to Korea': 한국에 ___",
+      "choices": ["가고 싶어요", "가야 해요", "갈 거예요", "갈 수 있어요"],
+      "correct": "가고 싶어요"
+    },
+
+    {
+      "id": 28, "stage": 7, "type": "reading_card",
+      "title": "Connectors",
+      "title_kr": "접속사",
+      "body": "These 4 conjunctions connect sentences. Place them at the START of the second sentence.",
+      "rules": [
+        "그리고 — And / And then (adds information or sequence)",
+        "그래서 — So / Therefore (cause → result)",
+        "그렇지만 — But / However (strong contrast, formal)",
+        "그런데 — But / By the way (soft contrast, casual — most common!)"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Usage Tip",
+        "text": "그런데 is one of the most common words in spoken Korean — it softens contrast and shifts topics smoothly. 그렇지만 is stronger and more formal."
+      }
+    },
+    {
+      "id": 29, "stage": 7, "type": "listen_repeat",
+      "audio": "비가 왔어요. 그래서 집에 있었어요.",
+      "syllables": ["비가 왔어요.", " ", "그래서", " ", "집에 있었어요."],
+      "romanization": "bi-ga wass-eo-yo. geu-rae-seo jib-e iss-eoss-eo-yo.",
+      "meaning": "It rained. So I stayed home.",
+      "meaning_ja": "雨が降りました。だから家にいました。",
+      "katakana": "ピガ ワッソヨ。クレソ チベ イッソッソヨ。"
+    },
+    {
+      "id": 30, "stage": 7, "type": "match_quiz",
+      "prompt": "Soft contrast or topic shift — most common in spoken Korean?",
+      "choices": ["그런데", "그렇지만", "그래서", "그리고"],
+      "correct": "그런데"
+    },
+
+    {
+      "id": 31, "stage": 8, "type": "reading_card",
+      "title": "And, With",
+      "title_kr": "-하고, -(이)랑, 와/과",
+      "body": "Use these particles between nouns (not sentences) to mean 'and' or 'with'.",
+      "rules": [
+        "-하고 — after any noun, neutral/casual: 친구하고 갔어요 (went with a friend)",
+        "-(이)랑 — 이랑 (consonant) / 랑 (vowel), very casual: 오빠랑 놀았어요 (played with older brother)",
+        "-와/과 — 와 (vowel) / 과 (consonant), formal/written: 선생님과 상담했어요 (consulted with teacher)"
+      ]
+    },
+
+    {
+      "id": 32, "stage": 9, "type": "reading_card",
+      "title": "To/From Someone",
+      "title_kr": "-한테, -한테서",
+      "body": "Use person-directional particles when giving to or receiving from people, not places.",
+      "rules": [
+        "-한테 — to (a person): 친구한테 전화했어요 (called my friend)",
+        "-한테서 — from (a person): 선생님한테서 배웠어요 (learned from teacher)",
+        "-에게 / -에게서 — formal equivalents",
+        "-께 — to (honorific, for elders): 선생님께 드렸어요"
+      ]
+    },
+
+    {
+      "id": 33, "stage": 10, "type": "reading_card",
+      "title": "Telling Time",
+      "title_kr": "시간 말하기",
+      "body": "Use NATIVE Korean numbers for hours (시) and SINO-KOREAN numbers for minutes (분). AM = 오전, PM = 오후.",
+      "rules": [
+        "Hours (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시",
+        "Minutes (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분",
+        "Half past: 반 — 세 시 반 = 3:30",
+        "Example: 오후 두 시 삼십 분 = 2:30 PM"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Key Pattern",
+        "text": "Hours use Native Korean numbers (한, 두, 세...). Minutes use Sino-Korean numbers (일, 이, 삼...). Half past = 반. AM = 오전, PM = 오후."
+      }
+    },
+    {
+      "id": 34, "stage": 10, "type": "listen_repeat",
+      "audio": "지금 몇 시예요?",
+      "syllables": ["지금", " ", "몇 시예요?"],
+      "romanization": "ji-geum myeot si-ye-yo?",
+      "meaning": "What time is it now?",
+      "meaning_ja": "今、何時ですか？",
+      "katakana": "チグム ミョッ シイェヨ？"
+    },
+    {
+      "id": 35, "stage": 10, "type": "match_quiz",
+      "prompt": "Hours in Korean time use which number system?",
+      "choices": ["Native Korean (한, 두, 세...)", "Sino-Korean (일, 이, 삼...)", "Either one", "Arabic numerals"],
+      "correct": "Native Korean (한, 두, 세...)"
+    },
+
+    {
+      "id": 36, "stage": 11, "type": "reading_card",
+      "title": "Counters",
+      "title_kr": "단위 명사",
+      "body": "Korean uses specific counters after [Noun] + [Number]. Native Korean numbers (한, 두, 세...) are used with most counters.",
+      "rules": [
+        "개 — general objects: 사과 세 개 (3 apples)",
+        "명 — people (neutral): 학생 두 명 (2 students)",
+        "분 — people (honorific): 손님 두 분 (2 guests)",
+        "마리 — animals: 고양이 한 마리 (1 cat)",
+        "권 — books: 책 세 권 (3 books)",
+        "잔 — cups/drinks: 커피 두 잔 (2 coffees)",
+        "번 — times/turns: 세 번 (3 times)"
+      ]
+    },
+    {
+      "id": 37, "stage": 11, "type": "listen_repeat",
+      "audio": "사과 세 개 주세요",
+      "syllables": ["사과", " ", "세 개", " ", "주세요"],
+      "romanization": "sa-gwa se gae ju-se-yo",
+      "meaning": "Please give me three apples.",
+      "meaning_ja": "りんごを3つください。",
+      "katakana": "サグァ セ ゲ チュセヨ"
+    },
+    {
+      "id": 38, "stage": 11, "type": "match_quiz",
+      "prompt": "Counter for people (neutral)?",
+      "choices": ["명", "개", "마리", "잔"],
+      "correct": "명"
+    },
+
+    {
+      "id": 39, "stage": 12, "type": "reading_card",
+      "title": "Present Progressive",
+      "title_kr": "-고 있어요",
+      "body": "Add -고 있어요 to the verb stem to say someone IS CURRENTLY doing something (the Korean '-ing' form).",
+      "rules": [
+        "먹다 → 먹고 있어요 (is eating)",
+        "가다 → 가고 있어요 (is going)",
+        "공부하다 → 공부하고 있어요 (is studying)",
+        "읽다 → 읽고 있어요 (is reading)"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Progressive vs Simple",
+        "text": "먹어요 = I eat (general or right now, context-dependent). 먹고 있어요 = I am eating (specifically in progress at this moment). The progressive adds 'currently in action.'"
+      }
+    },
+    {
+      "id": 40, "stage": 12, "type": "listen_repeat",
+      "audio": "지금 밥을 먹고 있어요",
+      "syllables": ["지금", " ", "밥을", " ", "먹고 있어요"],
+      "romanization": "ji-geum bab-eul meok-go iss-eo-yo",
+      "meaning": "I am eating right now.",
+      "meaning_ja": "今、ご飯を食べています。",
+      "katakana": "チグム パブル モッコ イッソヨ"
+    },
+    {
+      "id": 41, "stage": 12, "type": "match_quiz",
+      "prompt": "'is studying' → 공부하다 + -고 있어요 =",
+      "choices": ["공부하고 있어요", "공부고 있어요", "공부하고 있다", "공부해요"],
+      "correct": "공부하고 있어요"
+    },
+
+    {
+      "id": 42, "stage": 13, "type": "reading_card",
+      "title": "Self Introduction",
+      "title_kr": "자기소개",
+      "body": "Key vocabulary: 이름 (name), 나이 (age), 나라 (country), 직업 (job), 취미 (hobby), 고향 (hometown).",
+      "rules": [
+        "안녕하세요! 저는 [name]이에요/예요.",
+        "저는 [나라]에서 왔어요. (I'm from [country].)",
+        "저는 [직업]이에요. (I'm a [job].)",
+        "제 취미는 [hobby]예요. (My hobby is [hobby].)",
+        "잘 부탁드려요! (Nice to meet you!)"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Template",
+        "text": "Use 안녕하세요 + 잘 부탁드려요 for formal settings. With friends or peers: 안녕! + 잘 부탁해! Always bow slightly when introducing yourself in person."
+      }
+    },
+
+    {
+      "id": 43, "stage": 14, "type": "reading_card",
+      "title": "Dates and Months",
+      "title_kr": "날짜",
+      "body": "Korean dates use Sino-Korean numbers in Year → Month → Day order. June = 유월, October = 시월 (exceptions).",
+      "rules": [
+        "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
+        "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
+        "Date format: 2026년 6월 16일 (June 16, 2026)",
+        "오늘이 며칠이에요? — What is today's date?"
+      ]
+    },
+
+    {
+      "id": 44, "stage": 15, "type": "reading_card",
+      "title": "Degree Adverbs",
+      "title_kr": "정도 부사",
+      "body": "Degree adverbs go directly before the word they modify: 조금 (a little), 정말 (really), 아주 (very), 많이 (a lot).",
+      "rules": [
+        "조금 / 좀 — a little (좀 is softer/casual)",
+        "정말 — really / truly (neutral)",
+        "진짜 — really (casual, stronger feel)",
+        "아주 — very",
+        "많이 — a lot / much",
+        "별로 + negative — not really (별로 안 좋아요 = I don't really like it)",
+        "전혀 + negative — not at all (전혀 모르겠어요 = I have no idea at all)"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Negative Adverbs",
+        "text": "별로 and 전혀 MUST be used with a negative verb (안, 못, 없다, 모르다). Saying 별로 좋아요 (without negation) is ungrammatical. Think of them as 'not really' and 'not at all'."
+      }
+    },
+    {
+      "id": 45, "stage": 15, "type": "listen_repeat",
+      "audio": "정말 맛있어요",
+      "syllables": ["정말", " ", "맛있어요"],
+      "romanization": "jeong-mal mas-iss-eo-yo",
+      "meaning": "It's really delicious!",
+      "meaning_ja": "本当においしいです！",
+      "katakana": "チョンマル マシッソヨ"
+    },
+    {
+      "id": 46, "stage": 15, "type": "match_quiz",
+      "prompt": "별로 and 전혀 must be used with...",
+      "choices": ["A negative verb", "A positive verb", "An adjective only", "Past tense only"],
+      "correct": "A negative verb"
+    },
+
+    {
+      "id": 47, "stage": 16, "type": "reading_card",
+      "title": "Nominalizer: -는 것",
+      "title_kr": "-는 것",
+      "body": "Adding -는 것 to a verb stem creates a noun phrase — 'the act of doing ~'. It makes verbs act like nouns.",
+      "rules": [
+        "먹는 것 — the act of eating",
+        "배우는 것 — the act of learning",
+        "한국어를 배우는 것이 재미있어요 — Learning Korean is interesting",
+        "요리하는 것을 좋아해요 — I like cooking (the act of cooking)"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Tense Forms",
+        "text": "-는 것 (present/habitual) · -(으)ㄴ 것 (past/completed) · -(으)ㄹ 것 (future/planned). The present form is the most common in daily speech."
+      }
+    },
+    {
+      "id": 48, "stage": 16, "type": "listen_repeat",
+      "audio": "한국어를 배우는 것이 재미있어요",
+      "syllables": ["한국어를", " ", "배우는 것이", " ", "재미있어요"],
+      "romanization": "han-gug-eo-reul bae-u-neun geot-i jae-mi-iss-eo-yo",
+      "meaning": "Learning Korean is interesting.",
+      "meaning_ja": "韓国語を学ぶことは面白いです。",
+      "katakana": "ハングゴルル ペウヌン ゴシ チェミイッソヨ"
+    },
+    {
+      "id": 49, "stage": 16, "type": "match_quiz",
+      "prompt": "-는 것 turns a verb into...",
+      "choices": ["A noun phrase", "Past tense", "Future tense", "A question"],
+      "correct": "A noun phrase"
+    },
+
+    {
+      "id": 50, "stage": 17, "type": "reading_card",
+      "title": "Comparatives",
+      "title_kr": "비교 표현",
+      "body": "Structure: [A]이/가 [B]보다 더 [adjective]. 보다 means 'than' and 더 means 'more'.",
+      "rules": [
+        "한국어가 영어보다 더 어려워요 — Korean is harder than English",
+        "오늘이 어제보다 더 더워요 — Today is hotter than yesterday",
+        "더 can be dropped in casual speech: 한국어가 영어보다 어려워요"
+      ]
+    },
+    {
+      "id": 51, "stage": 17, "type": "listen_repeat",
+      "audio": "한국어가 일본어보다 어려워요",
+      "syllables": ["한국어가", " ", "일본어보다", " ", "어려워요"],
+      "romanization": "han-gug-eo-ga il-bon-eo-bo-da eo-ryeo-wo-yo",
+      "meaning": "Korean is harder than Japanese.",
+      "meaning_ja": "韓国語は日本語より難しいです。",
+      "katakana": "ハングゴガ イルボノボダ オリョウォヨ"
+    },
+    {
+      "id": 52, "stage": 17, "type": "match_quiz",
+      "prompt": "How to say 'more' in a Korean comparison?",
+      "choices": ["더", "많이", "아주", "보다"],
+      "correct": "더"
+    },
+
+    {
+      "id": 53, "stage": 18, "type": "reading_card",
+      "title": "좋다 vs 좋아하다",
+      "title_kr": "좋다 vs 좋아하다",
+      "body": "좋다 uses subject particle (이/가): 한국어가 좋아요. 좋아하다 uses object particle (을/를): 한국어를 좋아해요.",
+      "rules": [
+        "좋다 — to be good / feel good (state): 커피가 좋아요 (I like coffee / Coffee is good)",
+        "좋아하다 — to like (active preference): 커피를 좋아해요 (I like coffee)",
+        "Both translate as 'I like' but 좋다 focuses on the feeling, 좋아하다 on the preference"
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Key Difference",
+        "text": "좋아요 → subject particle (이/가) precedes it. 좋아해요 → object particle (을/를) precedes it. When in doubt, 좋아해요 sounds more natural for expressing preferences."
+      }
+    },
+
+    {
+      "id": 54, "stage": 19, "type": "reading_card",
+      "title": "Still & Already",
+      "title_kr": "아직 · 이미 · 벌써",
+      "body": "아직 + negative verb = still not. 벌써 = already (sooner than expected). 이미 = already (neutral, formal).",
+      "rules": [
+        "아직 안 먹었어요 — Haven't eaten yet (still not)",
+        "아직 여기 있어요 — Still here (ongoing)",
+        "벌써 도착했어요? — Already arrived? (surprised)",
+        "이미 알아요 — I already know (neutral)"
+      ]
+    },
+    {
+      "id": 55, "stage": 19, "type": "match_quiz",
+      "prompt": "'아직' means?",
+      "choices": ["Still / Not yet", "Already", "Even", "More"],
+      "correct": "Still / Not yet"
+    },
+
+    {
+      "id": 56, "stage": 20, "type": "reading_card",
+      "title": "Someone, Something",
+      "title_kr": "막연한 대상",
+      "body": "Combine question words with context to express indefinite ideas like 'someone' or 'nothing'.",
+      "rules": [
+        "누군가 — someone: 누군가 왔어요 (Someone came)",
+        "무언가 / 뭔가 — something: 뭔가 이상해요 (Something is strange)",
+        "어딘가 — somewhere: 어딘가에 있어요 (It's somewhere)",
+        "아무도 + negative — no one: 아무도 없어요 (No one is here)",
+        "아무것도 + negative — nothing: 아무것도 몰라요 (I know nothing)"
+      ]
+    },
+    {
+      "id": 57, "stage": 20, "type": "match_quiz",
+      "prompt": "'No one is here' — 아무도 ___",
+      "choices": ["없어요", "있어요", "알아요", "와요"],
+      "correct": "없어요"
+    },
+
+    {
+      "id": 58, "stage": 21, "type": "reading_card",
+      "title": "Imperative: -(으)세요",
+      "title_kr": "명령형",
+      "body": "Add -(으)세요 to a verb stem to make a polite request or command.",
+      "rules": [
+        "가다 → 가세요 (please go)",
+        "앉다 → 앉으세요 (please sit)",
+        "먹다 → 드세요 (please eat — honorific)"
+      ]
+    },
+
+    {
+      "id": 59, "stage": 22, "type": "reading_card",
+      "title": "Don't: -지 마세요",
+      "title_kr": "금지형",
+      "body": "Add -지 마세요 to a verb stem to politely tell someone NOT to do something.",
+      "rules": [
+        "말하다 → 말하지 마세요 (please don't speak)",
+        "가다 → 가지 마세요 (please don't go)",
+        "먹다 → 먹지 마세요 (please don't eat)"
+      ]
+    },
+    {
+      "id": 60, "stage": 22, "type": "listen_repeat",
+      "audio": "천천히 말해 주세요",
+      "syllables": ["천천히", " ", "말해", " ", "주세요"],
+      "romanization": "cheon-cheon-hi mal-hae ju-se-yo",
+      "meaning": "Please speak slowly.",
+      "meaning_ja": "ゆっくり話してください。",
+      "katakana": "チョンチョニ マレ チュセヨ"
+    },
+    {
+      "id": 61, "stage": 22, "type": "match_quiz",
+      "prompt": "'Please don't speak' in Korean?",
+      "choices": ["말하지 마세요", "말해 주세요", "말하세요", "말 안 해요"],
+      "correct": "말하지 마세요"
+    },
+
+    {
+      "id": 62, "stage": 23, "type": "reading_card",
+      "title": "Method: -(으)로",
+      "title_kr": "방법",
+      "body": "-(으)로 marks method or means — 'by' or 'with' a tool/way of doing something.",
+      "rules": [
+        "-(으)로 after consonant, -로 after vowel: 버스로 가요 (go by bus)",
+        "지하철로 와요 (come by subway)",
+        "한국어로 말해요 (speak in Korean)"
+      ]
+    },
+
+    {
+      "id": 63, "stage": 24, "type": "reading_card",
+      "title": "Good/Poor At",
+      "title_kr": "잘하다 · 못하다",
+      "body": "잘하다 = good at. 못하다 = poor at. Both attach after the object particle 을/를.",
+      "rules": [
+        "한국어를 잘해요 (good at Korean)",
+        "수학을 못해요 (bad at math)",
+        "수영을 잘 못해요 (not very good at swimming)"
+      ]
+    },
+    {
+      "id": 64, "stage": 24, "type": "match_quiz",
+      "prompt": "'good at Korean' — 한국어를 ___",
+      "choices": ["잘해요", "못해요", "좋아해요", "잘 못해요"],
+      "correct": "잘해요"
+    },
+
+    {
+      "id": 65, "stage": 25, "type": "reading_card",
+      "title": "All, More: 다, 더",
+      "title_kr": "다 · 더",
+      "body": "다 = all/everything. 더 = more. Both are simple adverbs placed before the verb.",
+      "rules": [
+        "다 먹었어요 — ate everything / all of it",
+        "더 주세요 — please give (me) more",
+        "다 더 다르게 쓰여요 — both are used very differently in context"
+      ]
+    },
+    {
+      "id": 66, "stage": 25, "type": "match_quiz",
+      "prompt": "'Please give me more' — ___ 주세요",
+      "choices": ["더", "다", "좀", "잘"],
+      "correct": "더"
+    },
+
+    {
+      "id": 67, "stage": 26, "type": "reading_card",
+      "title": "All, More & -도",
+      "title_kr": "-도 응용",
+      "body": "-도 has 4 advanced uses beyond simple 'also': emphasis, emphatic negation, and 'both...and'.",
+      "rules": [
+        "아이도 알아요 — even children know (emphasis: unexpected inclusion)",
+        "하나도 없어요 — not even one (emphatic negation: 하나도 + negative)",
+        "먹기도 해요 — sometimes eats / also eats (-기도 하다)",
+        "좋기도 하고 나쁘기도 해요 — both good and bad"
+      ]
+    },
+    {
+      "id": 68, "stage": 26, "type": "listen_repeat",
+      "audio": "한국어가 어렵기도 하고 재미있기도 해요",
+      "syllables": ["한국어가", " ", "어렵기도 하고", " ", "재미있기도 해요"],
+      "romanization": "han-gug-eo-ga eo-ryeop-gi-do ha-go jae-mi-iss-gi-do hae-yo",
+      "meaning": "Korean is both difficult and interesting.",
+      "meaning_ja": "韓国語は難しくもあり、面白くもあります。",
+      "katakana": "ハングゴガ オリョッキド ハゴ チェミイッキド ヘヨ"
+    },
+    {
+      "id": 69, "stage": 26, "type": "match_quiz",
+      "prompt": "'Even children know' — which -도 use?",
+      "choices": ["아이도 알아요", "아이가 알아요", "아이를 알아요", "아이는 알아요"],
+      "correct": "아이도 알아요"
+    },
+    {
+      "id": 70, "stage": 26, "type": "lesson_complete",
+      "title": "Grammar Complete!",
+      "title_kr": "문법 완료!",
+      "message": "You've mastered all 26 grammar stages — from SOV word order and particles to advanced -도 patterns. Start applying these in real conversations!",
+      "next_url": "vocabulary.html"
+    }
+
+  ]
+}

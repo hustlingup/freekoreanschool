@@ -1,0 +1,216 @@
+{
+  "lesson": "vocab-colors",
+  "totalSteps": 20,
+  "stages": [
+    { "id": 1, "name": "Colors", "name_kr": "색깔", "first_step": 1, "last_step": 20, "time_minutes": 12 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Colors in Korean",
+      "title_kr": "색깔",
+      "body": "Korean has two ways to express colors. Descriptive adjectives end in -다 (e.g., 빨갛다 = to be red) and are used in sentences. Color nouns end in -색 (color) and are used to name the color itself. Both forms are widely used.",
+      "tip": { "icon": "🎨", "label": "-색 vs. adjective form", "text": "빨간색 (the color red) vs. 빨개요 (it is red). For naming a color outright, use the -색 form. For describing something, use the adjective form: 이 셔츠는 빨개요 (This shirt is red)." }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["빨", "간", "색"],
+      "romanization": "ppalgan saek",
+      "katakana": "パルガンセク",
+      "audio": "빨간색",
+      "meaning": "Red — 빨강 is the short form",
+      "meaning_ja": "赤 ― 빨강 が短縮形"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["파", "란", "색"],
+      "romanization": "paran saek",
+      "katakana": "パランセク",
+      "audio": "파란색",
+      "meaning": "Blue — also used for 'green' traffic lights in everyday speech",
+      "meaning_ja": "青 ― 信号の「青」も파란 と言う"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["노", "란", "색"],
+      "romanization": "noran saek",
+      "katakana": "ノランセク",
+      "audio": "노란색",
+      "meaning": "Yellow",
+      "meaning_ja": "黄色"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["초", "록", "색"],
+      "romanization": "chorok saek",
+      "katakana": "チョロクセク",
+      "audio": "초록색",
+      "meaning": "Green — from 초록 (verdant green)",
+      "meaning_ja": "緑"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["흰", "색"],
+      "romanization": "huin saek",
+      "katakana": "フィンセク",
+      "audio": "흰색",
+      "meaning": "White — 하얀색 is an equally common alternative",
+      "meaning_ja": "白 ― 하얀색 とも言う"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["검", "은", "색"],
+      "romanization": "geomeun saek",
+      "katakana": "コムンセク",
+      "audio": "검은색",
+      "meaning": "Black — 까만색 is also widely used",
+      "meaning_ja": "黒 ― 까만색 とも言う"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["보", "라", "색"],
+      "romanization": "bora saek",
+      "katakana": "ポラセク",
+      "audio": "보라색",
+      "meaning": "Purple / violet",
+      "meaning_ja": "紫"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["주", "황", "색"],
+      "romanization": "juhwang saek",
+      "katakana": "チュファンセク",
+      "audio": "주황색",
+      "meaning": "Orange",
+      "meaning_ja": "オレンジ色"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["분", "홍", "색"],
+      "romanization": "bunhong saek",
+      "katakana": "プンホンセク",
+      "audio": "분홍색",
+      "meaning": "Pink — 핑크색 (pinkeu saek) is the Konglish alternative",
+      "meaning_ja": "ピンク ― 핑크색 というコングリッシュもある"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["갈", "색"],
+      "romanization": "gal saek",
+      "katakana": "カルセク",
+      "audio": "갈색",
+      "meaning": "Brown",
+      "meaning_ja": "茶色"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["하", "늘", "색"],
+      "romanization": "haneul saek",
+      "katakana": "ハヌルセク",
+      "audio": "하늘색",
+      "meaning": "Sky blue — literally 'sky color' (하늘 = sky)",
+      "meaning_ja": "空色（水色）― 하늘（空）の色"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["회", "색"],
+      "romanization": "hoe saek",
+      "katakana": "フェセク",
+      "audio": "회색",
+      "meaning": "Grey",
+      "meaning_ja": "グレー"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["금", "색"],
+      "romanization": "geum saek",
+      "katakana": "クムセク",
+      "audio": "금색",
+      "meaning": "Gold — 금 (geum) means 'gold' or 'money'",
+      "meaning_ja": "金色 ― 금（金）は「金・お金」の意味"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["은", "색"],
+      "romanization": "eun saek",
+      "katakana": "ウンセク",
+      "audio": "은색",
+      "meaning": "Silver — 은 (eun) means 'silver'",
+      "meaning_ja": "銀色 ― 은（銀）は「銀」の意味"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["색", "깔"],
+      "romanization": "saekkal",
+      "katakana": "セッカル",
+      "audio": "색깔",
+      "meaning": "Color — the general word for color",
+      "meaning_ja": "色 ― 色全般を指す言葉"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "What color is 파란색?",
+      "choices": ["Red", "Yellow", "Blue", "Green"],
+      "correct": "Blue"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "하늘색 literally means 'sky color.' Which color is it?",
+      "choices": ["Dark blue", "Sky blue", "Purple", "Teal"],
+      "correct": "Sky blue"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Pink in Korean is...",
+      "choices": ["보라색", "분홍색", "갈색", "주황색"],
+      "correct": "분홍색"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Colors Complete!",
+      "title_kr": "색깔 완성!",
+      "message": "훌륭해요! You now know the Korean color palette. Colors come up in shopping, describing objects, and K-drama fashion conversations. Try using one today: 무슨 색 좋아해요? (What color do you like?)",
+      "next_url": "vocabulary.html?cat=days-time"
+    }
+  ]
+}

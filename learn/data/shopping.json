@@ -1,0 +1,555 @@
+{
+  "lesson": "shopping",
+  "totalSteps": 33,
+  "stages": [
+    {
+      "id": 1,
+      "name": "Shopping Vocabulary",
+      "name_kr": "쇼핑 단어",
+      "first_step": 1,
+      "last_step": 9,
+      "time_minutes": 8
+    },
+    {
+      "id": 2,
+      "name": "In the Store",
+      "name_kr": "가게에서",
+      "first_step": 10,
+      "last_step": 18,
+      "time_minutes": 8
+    },
+    {
+      "id": 3,
+      "name": "Prices & Numbers",
+      "name_kr": "가격·숫자",
+      "first_step": 19,
+      "last_step": 26,
+      "time_minutes": 7
+    },
+    {
+      "id": 4,
+      "name": "Transactions",
+      "name_kr": "거래·마무리",
+      "first_step": 27,
+      "last_step": 33,
+      "time_minutes": 6
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Shopping in Korea (쇼핑)",
+      "title_kr": "쇼핑",
+      "body": "Korea has a rich shopping culture — from traditional outdoor markets (시장) to high-end department stores (백화점) to 24-hour convenience stores (편의점) on every corner. Bargaining is normal at traditional markets but not at chain stores or malls. Learning to ask prices, compare items, and complete transactions in Korean will make your shopping experience much smoother and more personal. The key question you'll use constantly is 얼마예요? (How much is it?)",
+      "tip": {
+        "icon": "🛒",
+        "label": "Gwangjang Market vs department store",
+        "text": "At traditional markets like 광장시장 (Gwangjang Market) in Seoul, you can bargain — especially if buying multiple items. At 롯데백화점 (Lotte Department Store) or any chain, prices are fixed. Watch for 세일 (sale) signs and 할인 (discount) promotions."
+      },
+      "body_ja": "韓国は豊かなショッピング文化を持っています——伝統的な屋外の市場（시장）から高級デパート（백화점）、24時間コンビニ（편의점）まであらゆる場所にあります。値引き交渉は伝統市場では普通ですが、チェーン店やモールでは行いません。価格を尋ね・商品を比較し・会計を韓国語でこなせると、ショッピング体験がより快適でパーソナルなものになります。常に使う核心フレーズは 얼마예요?（いくらですか?）です。",
+      "tip_ja": {
+        "label": "광장시장 vs デパート",
+        "text": "ソウルの광장시장（広蔵市場）のような伝統市場では値引き交渉ができます——特に複数点購入するときは。롯데백화점（ロッテデパート）やチェーン店では価格は固定です。세일（セール）のサインや할인（値引き）プロモーションを見逃さずに。"
+      }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "가",
+        "게"
+      ],
+      "romanization": "ga-ge",
+      "audio": "가게",
+      "meaning": "store / shop",
+      "meaning_ja": "お店 / 店",
+      "katakana": "カゲ"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "시",
+        "장"
+      ],
+      "romanization": "si-jang",
+      "audio": "시장",
+      "meaning": "market (traditional outdoor)",
+      "meaning_ja": "市場 / マーケット",
+      "katakana": "シジャン"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "백",
+        "화",
+        "점"
+      ],
+      "romanization": "baek-hwa-jeom",
+      "audio": "백화점",
+      "meaning": "department store",
+      "meaning_ja": "デパート / 百貨店",
+      "katakana": "ペッファジョム"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "편",
+        "의",
+        "점"
+      ],
+      "romanization": "pyeon-ui-jeom",
+      "audio": "편의점",
+      "meaning": "convenience store",
+      "meaning_ja": "コンビニ",
+      "katakana": "ピョニジョム"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Which word means 'market' (traditional outdoor market)?",
+      "choices": [
+        "가게",
+        "백화점",
+        "시장",
+        "편의점"
+      ],
+      "correct": "시장"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Shopping Item Words (쇼핑 물건)",
+      "title_kr": "쇼핑 물건",
+      "body": "Korean uses many loanwords for modern products — 핸드폰 (cell phone), 노트북 (laptop), 티셔츠 (T-shirt). Native Korean and Sino-Korean words cover traditional items: 옷 (clothes), 신발 (shoes), 가방 (bag). When shopping, you'll often point to something and say 이거 (this one) — a simple and effective strategy. Sizes are often given in free-size (프리 사이즈), small (S), medium (M), and large (L/XL).",
+      "tip": {
+        "icon": "👕",
+        "label": "이거 주세요 — your shopping lifeline",
+        "text": "이거 주세요 (I'll take this one, please) + 얼마예요? (How much?) will get you through most Korean shopping scenarios even if you know little else. Point, say these two phrases, and you're set."
+      },
+      "body_ja": "韓国語は現代の商品に多くの借用語を使います——핸드폰（携帯電話）、노트북（ノートパソコン）、티셔츠（Tシャツ）。伝統的な品物にはネイティブ韓国語や漢語系語彙が使われます：옷（服）、신발（靴）、가방（バッグ）。買い物では、何かを指さして 이거（これ）と言うのが簡単で効果的な方法です。サイズはフリーサイズ（프리 사이즈）、スモール（S）、ミディアム（M）、ラージ（L/XL）で表示されることが多いです。",
+      "tip_ja": {
+        "label": "いごじゅせよ——買い物の合言葉",
+        "text": "いご 주세요（이거 주세요：これをください）＋ 얼마예요?（いくらですか?）があれば、韓国の買い物シーンのほとんどを乗り切れます。指差してこの2フレーズを言えばOKです。"
+      }
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "옷"
+      ],
+      "romanization": "ot",
+      "audio": "옷",
+      "meaning": "clothes / outfit",
+      "meaning_ja": "服 / 衣類",
+      "katakana": "オッ"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "신",
+        "발"
+      ],
+      "romanization": "sin-bal",
+      "audio": "신발",
+      "meaning": "shoes / footwear",
+      "meaning_ja": "靴",
+      "katakana": "シンバル"
+    },
+    {
+      "id": 10,
+      "stage": 2,
+      "type": "reading_card",
+      "title": "Key Shopping Phrases (쇼핑 표현)",
+      "title_kr": "쇼핑 표현",
+      "body": "A few essential phrases cover almost every shopping interaction. 얼마예요? (How much is it?) works for any price enquiry. 이거 주세요 (Please give me this) completes a purchase. 더 싸게 해 주세요 (Please make it cheaper) is used for bargaining at traditional markets. 있어요? (Do you have...?) + the item name asks if something is in stock. 없어요 means it's out of stock or unavailable.",
+      "tip": {
+        "icon": "🗣️",
+        "label": "Polite shopping tone",
+        "text": "In Korean shops, staff will often greet you with 어서 오세요! (Welcome!). Respond with a nod or 안녕하세요. When you've finished shopping, 감사합니다 (thank you) is always appreciated. Shouting across the store is rare — get close before speaking."
+      },
+      "body_ja": "いくつかの必須フレーズで、ほぼすべての買い物の場面に対応できます。얼마예요?（いくらですか?）はどんな価格照会にも使えます。이거 주세요（これをください）で購入を完了します。더 싸게 해 주세요（もっと安くしてください）は伝統市場での値引き交渉に使います。있어요?（〜はありますか?）＋品物の名前で在庫を確認します。없어요は在庫切れや品切れを意味します。",
+      "tip_ja": {
+        "label": "丁寧な買い物スタイル",
+        "text": "韓国の店では어서 오세요!（いらっしゃいませ!）と迎えられることが多いです。会釈か안녕하세요で応えましょう。買い物が終わったら감사합니다（ありがとうございます）は必ず喜ばれます。店内で大声を出すのは珍しいので、話しかける前に近寄りましょう。"
+      }
+    },
+    {
+      "id": 11,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "얼",
+        "마",
+        "예",
+        "요"
+      ],
+      "romanization": "eol-ma-ye-yo",
+      "audio": "얼마예요",
+      "meaning": "How much is it?",
+      "meaning_ja": "いくらですか？",
+      "katakana": "オルマエヨ"
+    },
+    {
+      "id": 12,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "이",
+        "거",
+        " ",
+        "주",
+        "세",
+        "요"
+      ],
+      "romanization": "i-geo ju-se-yo",
+      "audio": "이거 주세요",
+      "meaning": "Please give me this / I'll take this",
+      "meaning_ja": "これをください",
+      "katakana": "イゴ チュセヨ"
+    },
+    {
+      "id": 13,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "더",
+        " ",
+        "싸",
+        "게",
+        " ",
+        "해",
+        " ",
+        "주",
+        "세",
+        "요"
+      ],
+      "romanization": "deo ssa-ge hae ju-se-yo",
+      "audio": "더 싸게 해 주세요",
+      "meaning": "Please make it cheaper / Can you give me a discount?",
+      "meaning_ja": "もっと安くしてください",
+      "katakana": "テオ ッサゲ ヘ チュセヨ"
+    },
+    {
+      "id": 14,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "How do you ask 'How much is it?' in Korean?",
+      "choices": [
+        "이거 주세요",
+        "얼마예요?",
+        "감사합니다",
+        "있어요?"
+      ],
+      "correct": "얼마예요?"
+    },
+    {
+      "id": 15,
+      "stage": 2,
+      "type": "reading_card",
+      "title": "Asking About Availability (있어요? / 없어요)",
+      "title_kr": "있어요? / 없어요",
+      "body": "있어요? (Is there? / Do you have?) and 없어요 (There isn't / We don't have it) are two of the most useful words in Korean shopping. Attach an item before 있어요?: 이거 있어요? (Do you have this?), 더 큰 사이즈 있어요? (Do you have a bigger size?). 없어요 is the reply if it's sold out. You can also say 다 팔렸어요 (All sold out) in more detail.",
+      "tip": {
+        "icon": "📦",
+        "label": "있다 vs 없다",
+        "text": "있다 = to exist / to have. 없다 = to not exist / to not have. 있어요? alone at the end of a sentence = Do you have...? 없어요. = We don't. These two words appear in almost every Korean sentence that discusses possessing, location, or availability."
+      },
+      "body_ja": "있어요?（〜はありますか?）と 없어요（ありません/品切れ）は韓国語のショッピングで最も役立つ表現の2つです。있어요?の前に品物名を付けます：이거 있어요?（これはありますか?）、더 큰 사이즈 있어요?（大きいサイズはありますか?）。없어요は売り切れの返答です。より詳しく言うときは 다 팔렸어요（全部売り切れました）も使えます。",
+      "tip_ja": {
+        "label": "있다 vs 없다",
+        "text": "있다 ＝ 存在する/持っている。없다 ＝ 存在しない/持っていない。있어요?だけで文末に置くと「〜はありますか?」。없어요. ＝ ありません。これら2つの語は所有・場所・在庫を話すほぼすべての韓国語の文に登場します。"
+      }
+    },
+    {
+      "id": 16,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "있",
+        "어",
+        "요"
+      ],
+      "romanization": "iss-eo-yo",
+      "audio": "있어요",
+      "meaning": "There is / I have / We have (polite)",
+      "meaning_ja": "あります / あります",
+      "katakana": "イッソヨ"
+    },
+    {
+      "id": 17,
+      "stage": 2,
+      "type": "listen_repeat",
+      "syllables": [
+        "없",
+        "어",
+        "요"
+      ],
+      "romanization": "eop-seo-yo",
+      "audio": "없어요",
+      "meaning": "There isn't / We don't have it / Sold out",
+      "meaning_ja": "ありません / 売り切れ",
+      "katakana": "オプソヨ"
+    },
+    {
+      "id": 18,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "없어요 means…",
+      "choices": [
+        "We have it",
+        "How much?",
+        "There isn't any / We don't have it",
+        "Yes please"
+      ],
+      "correct": "There isn't any / We don't have it"
+    },
+    {
+      "id": 19,
+      "stage": 3,
+      "type": "reading_card",
+      "title": "Korean Money & Prices (원)",
+      "title_kr": "원·가격",
+      "body": "The Korean currency is the 원 (won, ₩). Prices can look large because 1,000 won ≈ 0.75 USD. A coffee might be 4,500원, a meal 8,000~12,000원. 비싸다 (expensive) and 싸다 (cheap) are the key opinion words. When you receive change, the amount back is 거스름돈. Prices at traditional markets are often negotiable — 깎아 주세요 (Please give me a discount) or 더 싸게요? (Can it be cheaper?) opens bargaining.",
+      "tip": {
+        "icon": "💰",
+        "label": "Reading Korean prices",
+        "text": "Korean uses Sino-Korean numbers for prices: 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10,000. So 삼만 오천 원 = 35,000 won. Cashiers often show you the amount on a calculator or screen to avoid confusion — pointing at numbers works perfectly well."
+      },
+      "body_ja": "韓国の通貨は 원（ウォン、₩）です。1,000ウォン ≈ 0.75ドルのため、価格の数字は大きく見えます。コーヒーは4,500원、食事は8,000〜12,000원ほどです。비싸다（高い）と 싸다（安い）は価格に対する意見を表す重要な語です。おつりは 거스름돈 です。伝統市場の価格は交渉可能なことが多く——깎아 주세요（値引きしてください）や 더 싸게요?（もう少し安くなりますか?）で交渉が始まります。",
+      "tip_ja": {
+        "label": "韓国語の価格の読み方",
+        "text": "韓国語の価格にはシノ・コリアン数詞を使います：일(1) 이(2) 삼(3) 사(4) 오(5)。만 ＝ 10,000。なので 삼만 오천 원 ＝ 35,000ウォン。レジスタッフが電卓や画面で金額を見せてくれることが多いので、数字を指差すだけで十分です。"
+      }
+    },
+    {
+      "id": 20,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "원"
+      ],
+      "romanization": "won",
+      "audio": "원",
+      "meaning": "won — Korean currency (₩)",
+      "meaning_ja": "ウォン（韓国通貨）",
+      "katakana": "ウォン"
+    },
+    {
+      "id": 21,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "비",
+        "싸",
+        "다"
+      ],
+      "romanization": "bi-ssa-da",
+      "audio": "비싸다",
+      "meaning": "to be expensive",
+      "meaning_ja": "高い（値段）",
+      "katakana": "ピッサダ"
+    },
+    {
+      "id": 22,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "싸",
+        "다"
+      ],
+      "romanization": "ssa-da",
+      "audio": "싸다",
+      "meaning": "to be cheap / inexpensive",
+      "meaning_ja": "安い（値段）",
+      "katakana": "ッサダ"
+    },
+    {
+      "id": 23,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "할",
+        "인"
+      ],
+      "romanization": "ha-rin",
+      "audio": "할인",
+      "meaning": "discount / sale",
+      "meaning_ja": "割引 / セール",
+      "katakana": "ハリン"
+    },
+    {
+      "id": 24,
+      "stage": 3,
+      "type": "match_quiz",
+      "prompt": "비싸다 means…",
+      "choices": [
+        "to be cheap",
+        "to be free",
+        "to be expensive",
+        "to be on sale"
+      ],
+      "correct": "to be expensive"
+    },
+    {
+      "id": 25,
+      "stage": 3,
+      "type": "listen_repeat",
+      "syllables": [
+        "거",
+        "스",
+        "름",
+        "돈"
+      ],
+      "romanization": "geo-seu-reum-don",
+      "audio": "거스름돈",
+      "meaning": "change (money returned after paying)",
+      "meaning_ja": "お釣り",
+      "katakana": "コスルムドン"
+    },
+    {
+      "id": 26,
+      "stage": 3,
+      "type": "match_quiz",
+      "prompt": "Which word means 'change' (money returned to you after paying)?",
+      "choices": [
+        "거스름돈",
+        "비싸다",
+        "할인",
+        "원"
+      ],
+      "correct": "거스름돈"
+    },
+    {
+      "id": 27,
+      "stage": 4,
+      "type": "reading_card",
+      "title": "Payment Methods (결제 방법)",
+      "title_kr": "결제 방법",
+      "body": "Korea is a highly cashless society — most places accept credit cards (신용카드) or debit cards (체크카드), and mobile payment via apps like KakaoPay and Samsung Pay is extremely common. Cash (현금) is still accepted everywhere but is used less often. When paying, you may be asked 카드요, 현금이요? (Card or cash?). Requesting a receipt is 영수증 주세요. Tax refund signs (Tax Refund) at stores mean you can claim VAT back at the airport as a tourist.",
+      "tip": {
+        "icon": "📱",
+        "label": "카카오페이 & 삼성페이",
+        "text": "KakaoPay (카카오페이) and Samsung Pay (삼성페이) are the dominant mobile payment apps in Korea. Tourists can use international credit cards almost everywhere. Look for the contactless payment symbol — Korea's adoption of contactless payment is among the highest in the world."
+      },
+      "body_ja": "韓国はキャッシュレス社会——ほとんどの場所でクレジットカード（신용카드）やデビットカード（체크카드）が使え、KakaoPayやSamsung Payなどのモバイル決済も非常に普及しています。現金（현금）もどこでも使えますが、使用頻度は低くなっています。会計時に 카드요, 현금이요?（カードですか、現金ですか?）と聞かれることがあります。レシートは 영수증 주세요 でもらえます。店頭のTax Refundマークがあれば、旅行者として空港でVATの払い戻しを受けられます。",
+      "tip_ja": {
+        "label": "カカオペイ & サムスンペイ",
+        "text": "KakaoPay（카카오페이）とSamsung Pay（삼성페이）は韓国で最もよく使われるモバイル決済アプリです。外国人旅行者はほぼどこでも国際クレジットカードが使えます。タッチ決済マークを探してください——韓国のキャッシュレス決済の普及率は世界最高レベルです。"
+      }
+    },
+    {
+      "id": 28,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "카",
+        "드",
+        "로",
+        " ",
+        "할",
+        "게",
+        "요"
+      ],
+      "romanization": "ka-deu-ro hal-ge-yo",
+      "audio": "카드로 할게요",
+      "meaning": "I'll pay by card",
+      "meaning_ja": "カードで支払います",
+      "katakana": "カドゥロ ハルゲヨ"
+    },
+    {
+      "id": 29,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "현",
+        "금",
+        "으",
+        "로",
+        " ",
+        "드",
+        "릴",
+        "게",
+        "요"
+      ],
+      "romanization": "hyeon-geum-eu-ro deu-ril-ge-yo",
+      "audio": "현금으로 드릴게요",
+      "meaning": "I'll pay in cash (humble form)",
+      "meaning_ja": "現金でお支払いします（謙譲表現）",
+      "katakana": "ヒョングムロ ドゥリルゲヨ"
+    },
+    {
+      "id": 30,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "영",
+        "수",
+        "증",
+        " ",
+        "주",
+        "세",
+        "요"
+      ],
+      "romanization": "yeong-su-jeung ju-se-yo",
+      "audio": "영수증 주세요",
+      "meaning": "Please give me a receipt",
+      "meaning_ja": "領収書をください",
+      "katakana": "ヨンスジュン チュセヨ"
+    },
+    {
+      "id": 31,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "How do you say 'I'll pay by card'?",
+      "choices": [
+        "현금으로 드릴게요",
+        "카드로 할게요",
+        "거스름돈 주세요",
+        "결제해 주세요"
+      ],
+      "correct": "카드로 할게요"
+    },
+    {
+      "id": 32,
+      "stage": 4,
+      "type": "listen_repeat",
+      "syllables": [
+        "깎",
+        "아",
+        " ",
+        "주",
+        "세",
+        "요"
+      ],
+      "romanization": "kka-ka ju-se-yo",
+      "audio": "깎아 주세요",
+      "meaning": "Please give me a discount / Please reduce the price",
+      "meaning_ja": "値引きしてください",
+      "katakana": "ッカッカ チュセヨ"
+    },
+    {
+      "id": 33,
+      "stage": 4,
+      "type": "lesson_complete",
+      "title": "Shopping Complete!",
+      "title_kr": "쇼핑 완료!",
+      "message": "You're ready to shop in Korea! You know the key vocabulary, phrases for asking prices, bargaining, checking availability, and completing payment transactions.",
+      "next_url": "speech-levels.html"
+    }
+  ]
+}

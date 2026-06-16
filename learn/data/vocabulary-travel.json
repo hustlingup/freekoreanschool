@@ -1,0 +1,216 @@
+{
+  "lesson": "vocab-travel",
+  "totalSteps": 20,
+  "stages": [
+    { "id": 1, "name": "Travel", "name_kr": "여행", "first_step": 1, "last_step": 20, "time_minutes": 12 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Travel Korean",
+      "title_kr": "여행 한국어",
+      "body": "Korea is one of the most travel-friendly countries in Asia — excellent public transit, abundant signage in English, and incredibly safe streets. Knowing key travel vocabulary makes navigating airports, trains, hotels, and tourist sites much smoother and opens doors to richer local interactions.",
+      "tip": { "icon": "✈️", "label": "T-money card", "text": "The 티머니 (T-money) card works on all Seoul subway lines, buses, and even taxis. Top it up at any convenience store. Essential travel vocabulary: 충전 (charge/top-up), 환승 (transfer), 출구 (exit)." }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["여", "권"],
+      "romanization": "yeogwon",
+      "katakana": "ヨグォン",
+      "audio": "여권",
+      "meaning": "Passport — 여권을 보여주세요 = please show your passport",
+      "meaning_ja": "パスポート ― 여권을 보여주세요（パスポートを見せてください）"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["비", "행", "기"],
+      "romanization": "bihaenggi",
+      "katakana": "ピヘンギ",
+      "audio": "비행기",
+      "meaning": "Airplane — 비행기 표 = plane ticket",
+      "meaning_ja": "飛行機 ― 비행기 표（飛行機のチケット）"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["기", "차"],
+      "romanization": "gicha",
+      "katakana": "キチャ",
+      "audio": "기차",
+      "meaning": "Train — KTX 고속열차 is Korea's high-speed rail",
+      "meaning_ja": "電車 / 列車 ― KTX は韓国の新幹線"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["버", "스"],
+      "romanization": "beoseu",
+      "katakana": "ポス",
+      "audio": "버스",
+      "meaning": "Bus — city buses and express intercity buses",
+      "meaning_ja": "バス ― 市内バスと高速バス"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["택", "시"],
+      "romanization": "taeksi",
+      "katakana": "テクシ",
+      "audio": "택시",
+      "meaning": "Taxi — 택시 잡아줄 수 있어요? = Can you get me a taxi?",
+      "meaning_ja": "タクシー"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["지", "하", "철"],
+      "romanization": "jihacheol",
+      "katakana": "チハチョル",
+      "audio": "지하철",
+      "meaning": "Subway — Seoul's subway is one of the world's best",
+      "meaning_ja": "地下鉄 ― ソウルの地下鉄は世界最高レベル"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["예", "약"],
+      "romanization": "yeyak",
+      "katakana": "イェヤク",
+      "audio": "예약",
+      "meaning": "Reservation / booking — 예약했어요 = I have a reservation",
+      "meaning_ja": "予約 ― 예약했어요（予約しています）"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["체", "크", "인"],
+      "romanization": "chekeu in",
+      "katakana": "チェクイン",
+      "audio": "체크인",
+      "meaning": "Check-in — used at hotels and airports",
+      "meaning_ja": "チェックイン ― ホテルと空港で使う"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["관", "광"],
+      "romanization": "gwangwang",
+      "katakana": "クァングァン",
+      "audio": "관광",
+      "meaning": "Sightseeing / tourism — 관광지 = tourist spot",
+      "meaning_ja": "観光 ― 관광지（観光地）"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["지", "도"],
+      "romanization": "jido",
+      "katakana": "チド",
+      "audio": "지도",
+      "meaning": "Map — 지도 있어요? = Do you have a map?",
+      "meaning_ja": "地図 ― 지도 있어요？（地図はありますか？）"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["환", "전"],
+      "romanization": "hwanjeon",
+      "katakana": "ファンジョン",
+      "audio": "환전",
+      "meaning": "Currency exchange — 환전하고 싶어요 = I want to exchange money",
+      "meaning_ja": "両替 ― 환전하고 싶어요（両替したいです）"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["출", "구"],
+      "romanization": "chulgu",
+      "katakana": "チュルグ",
+      "audio": "출구",
+      "meaning": "Exit — 몇 번 출구예요? = Which exit number?",
+      "meaning_ja": "出口 ― 몇 번 출구예요？（何番出口ですか？）"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["입", "구"],
+      "romanization": "ipgu",
+      "katakana": "イプグ",
+      "audio": "입구",
+      "meaning": "Entrance — 입구가 어디예요? = Where is the entrance?",
+      "meaning_ja": "入口 ― 입구가 어디예요？（入口はどこですか？）"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["짐"],
+      "romanization": "jim",
+      "katakana": "チム",
+      "audio": "짐",
+      "meaning": "Luggage / baggage — 짐이 너무 무거워요 = the luggage is too heavy",
+      "meaning_ja": "荷物 ― 짐이 너무 무거워요（荷物が重すぎます）"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["여", "행"],
+      "romanization": "yeohaeng",
+      "katakana": "ヨヘン",
+      "audio": "여행",
+      "meaning": "Travel / trip — 여행 좋아해요? = Do you like travelling?",
+      "meaning_ja": "旅行 ― 여행 좋아해요？（旅行が好きですか？）"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "You need to exchange your dollars to Korean won. What do you look for?",
+      "choices": ["예약 (reservation)", "환전 (currency exchange)", "출구 (exit)", "지도 (map)"],
+      "correct": "환전 (currency exchange)"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "You're at the subway exit. Which word describes where you are?",
+      "choices": ["입구", "출구", "환승", "예약"],
+      "correct": "출구"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Which transport is Korea's high-speed rail called?",
+      "choices": ["버스", "기차 / KTX", "지하철", "택시"],
+      "correct": "기차 / KTX"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Travel Complete!",
+      "title_kr": "여행 완성!",
+      "message": "여행을 즐기세요! (Enjoy your travels!) You now have the vocabulary to navigate Korea's outstanding transportation system, book hotels, and explore tourist sites confidently.",
+      "next_url": "vocabulary.html?cat=shopping"
+    }
+  ]
+}

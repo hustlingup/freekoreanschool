@@ -1,0 +1,409 @@
+{
+  "lesson": "vocabulary",
+  "totalSteps": 80,
+  "stages": [
+    { "id": 1, "name": "Greetings",      "name_kr": "인사말",    "first_step": 1,  "last_step": 12, "time_minutes": 10 },
+    { "id": 2, "name": "Numbers",        "name_kr": "숫자",      "first_step": 13, "last_step": 26, "time_minutes": 12 },
+    { "id": 3, "name": "Family & Body",  "name_kr": "가족·신체", "first_step": 27, "last_step": 40, "time_minutes": 12 },
+    { "id": 4, "name": "Food & Colors",  "name_kr": "음식·색깔", "first_step": 41, "last_step": 53, "time_minutes": 11 },
+    { "id": 5, "name": "Places & Travel","name_kr": "장소·여행", "first_step": 54, "last_step": 66, "time_minutes": 11 },
+    { "id": 6, "name": "Verbs & Adj.",   "name_kr": "동사·형용사","first_step": 67, "last_step": 80, "time_minutes": 12 }
+  ],
+  "steps": [
+
+    { "id": 1, "stage": 1, "type": "reading_card",
+      "title": "Greetings in Korean", "title_kr": "한국어 인사말",
+      "body": "Korean greetings change depending on who you are talking to and the situation. The most important distinction is formal vs. casual speech. Use formal forms with strangers, elders, and in professional settings. Casual forms are for friends and people younger than you.",
+      "tip": { "icon": "💡", "label": "Key rule: when in doubt, be formal",
+        "text": "Koreans appreciate effort. Using the formal 하세요 ending is always safe with people you just met. Switching to casual 안녕 with a close friend shows warmth." } },
+
+    { "id": 2, "stage": 1, "type": "listen_repeat",
+      "syllables": ["안", "녕", "하", "세", "요"],
+      "romanization": "Annyeonghaseyo", "audio": "안녕하세요",
+      "meaning": "Hello — formal, the most common greeting" },
+
+    { "id": 3, "stage": 1, "type": "listen_repeat",
+      "syllables": ["안", "녕"],
+      "romanization": "Annyeong", "audio": "안녕",
+      "meaning": "Hi / Bye (casual) — used with friends" },
+
+    { "id": 4, "stage": 1, "type": "listen_repeat",
+      "syllables": ["감", "사", "합", "니", "다"],
+      "romanization": "Gamsahamnida", "audio": "감사합니다",
+      "meaning": "Thank you — formal, very polite" },
+
+    { "id": 5, "stage": 1, "type": "listen_repeat",
+      "syllables": ["고", "마", "워", "요"],
+      "romanization": "Gomawoyo", "audio": "고마워요",
+      "meaning": "Thank you — polite but less formal than 감사합니다" },
+
+    { "id": 6, "stage": 1, "type": "listen_repeat",
+      "syllables": ["죄", "송", "합", "니", "다"],
+      "romanization": "Joesonghamnida", "audio": "죄송합니다",
+      "meaning": "I'm sorry — formal apology" },
+
+    { "id": 7, "stage": 1, "type": "listen_repeat",
+      "syllables": ["괜", "찮", "아", "요"],
+      "romanization": "Gwaenchanayo", "audio": "괜찮아요",
+      "meaning": "It's okay / Are you okay? — very versatile phrase" },
+
+    { "id": 8, "stage": 1, "type": "listen_repeat",
+      "syllables": ["반", "갑", "습", "니", "다"],
+      "romanization": "Bangapseumnida", "audio": "반갑습니다",
+      "meaning": "Nice to meet you — used when meeting someone for the first time" },
+
+    { "id": 9, "stage": 1, "type": "match_quiz",
+      "prompt": "Which phrase means 'Hello' in the most formal way?",
+      "choices": ["안녕", "안녕하세요", "화이팅", "괜찮아요"],
+      "correct": "안녕하세요" },
+
+    { "id": 10, "stage": 1, "type": "match_quiz",
+      "prompt": "How do you say 'Thank you' in the most formal Korean?",
+      "choices": ["고마워", "미안해요", "감사합니다", "잘 있어요"],
+      "correct": "감사합니다" },
+
+    { "id": 11, "stage": 1, "type": "listen_repeat",
+      "syllables": ["안", "녕", "히", "가", "세", "요"],
+      "romanization": "Annyeonghi gaseyo", "audio": "안녕히 가세요",
+      "meaning": "Goodbye — said to the person who is leaving" },
+
+    { "id": 12, "stage": 1, "type": "listen_repeat",
+      "syllables": ["화", "이", "팅"],
+      "romanization": "Hwaiting", "audio": "화이팅",
+      "meaning": "Fighting! / You can do it! — a Korean cheer of encouragement" },
+
+    { "id": 13, "stage": 2, "type": "reading_card",
+      "title": "Two Number Systems", "title_kr": "두 가지 숫자 체계",
+      "body": "Korean uses two separate number systems: Native Korean numbers (고유어) and Sino-Korean numbers (한자어). You must know both — they are used in different situations.",
+      "rules": [
+        "Native Korean: use for counting items (개), age (살), and hours of the clock (시) — e.g., 하나, 둘, 셋",
+        "Sino-Korean: use for money (원), minutes (분), dates, phone numbers, and addresses — e.g., 일, 이, 삼",
+        "Large numbers always use Sino-Korean — 백 (100), 천 (1,000), 만 (10,000)"
+      ],
+      "tip": { "icon": "🔢", "label": "Quick memory trick",
+        "text": "Think: Native = natural body rhythms (heartbeat, age, counting on your fingers). Sino = systematic/official contexts (clocks, money, calendars)." } },
+
+    { "id": 14, "stage": 2, "type": "card_reveal",
+      "char": "하나", "romanization": "hana", "audio": "하나",
+      "example_word": "사과 하나 주세요", "example_meaning": "Please give me one apple · Native Korean 1" },
+
+    { "id": 15, "stage": 2, "type": "card_reveal",
+      "char": "둘", "romanization": "dul", "audio": "둘",
+      "example_word": "친구 둘", "example_meaning": "Two friends · Native Korean 2" },
+
+    { "id": 16, "stage": 2, "type": "card_reveal",
+      "char": "셋", "romanization": "set", "audio": "셋",
+      "example_word": "셋을 세요", "example_meaning": "Count to three · Native Korean 3" },
+
+    { "id": 17, "stage": 2, "type": "card_reveal",
+      "char": "열", "romanization": "yeol", "audio": "열",
+      "example_word": "열 시", "example_meaning": "10 o'clock · Native Korean 10 (used for hours)" },
+
+    { "id": 18, "stage": 2, "type": "card_reveal",
+      "char": "일", "romanization": "il", "audio": "일",
+      "example_word": "일월 일일", "example_meaning": "January 1st · Sino-Korean 1" },
+
+    { "id": 19, "stage": 2, "type": "card_reveal",
+      "char": "십", "romanization": "sip", "audio": "십",
+      "example_word": "십 분", "example_meaning": "Ten minutes · Sino-Korean 10 (used for minutes)" },
+
+    { "id": 20, "stage": 2, "type": "card_reveal",
+      "char": "백", "romanization": "baek", "audio": "백",
+      "example_word": "백 원", "example_meaning": "100 won · Sino-Korean 100" },
+
+    { "id": 21, "stage": 2, "type": "card_reveal",
+      "char": "천", "romanization": "cheon", "audio": "천",
+      "example_word": "천 원", "example_meaning": "1,000 won · Sino-Korean 1,000" },
+
+    { "id": 22, "stage": 2, "type": "match_quiz",
+      "prompt": "You are telling someone your age in Korean. Which number system do you use?",
+      "choices": ["Sino-Korean (일, 이, 삼)", "Native Korean (하나, 둘, 셋)", "Either one is fine", "Neither — use English numbers"],
+      "correct": "Native Korean (하나, 둘, 셋)" },
+
+    { "id": 23, "stage": 2, "type": "reading_card",
+      "title": "Korean Counters", "title_kr": "단위 명사",
+      "body": "Korean numbers must be paired with counters (단위명사) — special words that indicate what kind of thing you are counting. The counter comes after the number.",
+      "rules": [
+        "개 (gae) — general objects: 사과 두 개 (two apples)",
+        "명 (myeong) — people (formal): 학생 세 명 (three students)",
+        "분 (bun) — people (honorific): 선생님 두 분 (two teachers)",
+        "살 (sal) — age: 스물다섯 살 (25 years old)",
+        "권 (gwon) — books: 책 한 권 (one book)",
+        "잔 (jan) — cups / glasses: 커피 한 잔 (one cup of coffee)"
+      ] },
+
+    { "id": 24, "stage": 2, "type": "card_reveal",
+      "char": "개", "romanization": "-gae", "audio": "개",
+      "example_word": "사탕 세 개", "example_meaning": "Three candies · general objects counter" },
+
+    { "id": 25, "stage": 2, "type": "card_reveal",
+      "char": "명", "romanization": "-myeong", "audio": "명",
+      "example_word": "친구 두 명", "example_meaning": "Two friends · people counter (formal)" },
+
+    { "id": 26, "stage": 2, "type": "match_quiz",
+      "prompt": "Which counter do you use for books (책)?",
+      "choices": ["개 (gae)", "명 (myeong)", "권 (gwon)", "잔 (jan)"],
+      "correct": "권 (gwon)" },
+
+    { "id": 27, "stage": 3, "type": "reading_card",
+      "title": "Family in Korean", "title_kr": "가족",
+      "body": "Korean has different words for family members depending on your gender and theirs. For example, an older brother is 형 if the speaker is male, but 오빠 if the speaker is female. This reflects Korean culture's emphasis on relative seniority.",
+      "tip": { "icon": "👨‍👩‍👧", "label": "Honorific family titles",
+        "text": "Koreans often address even non-relatives with family titles as a mark of respect: 언니 (older sister) to a woman you know, 아저씨 (middle-aged man) to a stranger. It's warmer than using names." } },
+
+    { "id": 28, "stage": 3, "type": "card_reveal",
+      "char": "아버지", "romanization": "abeoji", "audio": "아버지",
+      "example_word": "아빠 (appa)", "example_meaning": "Father · 아빠 is the casual form (Dad)" },
+
+    { "id": 29, "stage": 3, "type": "card_reveal",
+      "char": "어머니", "romanization": "eomeoni", "audio": "어머니",
+      "example_word": "엄마 (eomma)", "example_meaning": "Mother · 엄마 is the casual form (Mom)" },
+
+    { "id": 30, "stage": 3, "type": "card_reveal",
+      "char": "형 / 오빠", "romanization": "hyeong / oppa", "audio": "형",
+      "example_word": "오빠가 왔어요", "example_meaning": "Older brother · 형 for male speakers, 오빠 for female speakers" },
+
+    { "id": 31, "stage": 3, "type": "card_reveal",
+      "char": "누나 / 언니", "romanization": "nuna / eonni", "audio": "언니",
+      "example_word": "언니 보고 싶어요", "example_meaning": "Older sister · 누나 for male speakers, 언니 for female speakers" },
+
+    { "id": 32, "stage": 3, "type": "card_reveal",
+      "char": "할아버지", "romanization": "harabeoji", "audio": "할아버지",
+      "example_word": "할아버지 건강하세요?", "example_meaning": "Grandfather (paternal) · Are you well, grandfather?" },
+
+    { "id": 33, "stage": 3, "type": "card_reveal",
+      "char": "할머니", "romanization": "halmeoni", "audio": "할머니",
+      "example_word": "할머니 댁에 가요", "example_meaning": "Grandmother · I'm going to grandmother's house" },
+
+    { "id": 34, "stage": 3, "type": "match_quiz",
+      "prompt": "A female speaker calls her older brother ___.",
+      "choices": ["형 (hyeong)", "오빠 (oppa)", "언니 (eonni)", "남동생 (namdongsaeng)"],
+      "correct": "오빠 (oppa)" },
+
+    { "id": 35, "stage": 3, "type": "reading_card",
+      "title": "Body Parts", "title_kr": "신체 부위",
+      "body": "Knowing body parts is essential for describing pain at a clinic, understanding directions, or describing someone's appearance. Many Korean body-part words are also used idiomatically — for example, 눈이 높다 (literally 'high eyes') means 'having high standards.'" },
+
+    { "id": 36, "stage": 3, "type": "card_reveal",
+      "char": "머리", "romanization": "meori", "audio": "머리",
+      "example_word": "머리가 아파요", "example_meaning": "Head / Hair · I have a headache" },
+
+    { "id": 37, "stage": 3, "type": "card_reveal",
+      "char": "눈", "romanization": "nun", "audio": "눈",
+      "example_word": "눈이 커요", "example_meaning": "Eyes · (Their) eyes are big — 눈 also means 'snow'!" },
+
+    { "id": 38, "stage": 3, "type": "card_reveal",
+      "char": "손", "romanization": "son", "audio": "손",
+      "example_word": "손을 씻어요", "example_meaning": "Hand(s) · Wash your hands" },
+
+    { "id": 39, "stage": 3, "type": "card_reveal",
+      "char": "발", "romanization": "bal", "audio": "발",
+      "example_word": "발이 아파요", "example_meaning": "Foot / Feet · My feet hurt" },
+
+    { "id": 40, "stage": 3, "type": "match_quiz",
+      "prompt": "Which Korean word means 'ear'?",
+      "choices": ["코 (ko)", "귀 (gwi)", "입 (ip)", "목 (mok)"],
+      "correct": "귀 (gwi)" },
+
+    { "id": 41, "stage": 4, "type": "reading_card",
+      "title": "Korean Food", "title_kr": "한국 음식",
+      "body": "Food is central to Korean culture. A meal almost always comes with 반찬 (banchan) — small side dishes served alongside the main dish. The table phrase 잘 먹겠습니다 (jal meokgesseumnida) is said before eating; 잘 먹었습니다 (jal meogeosseumnida) is said after.",
+      "tip": { "icon": "🍜", "label": "Must-know K-food vocabulary",
+        "text": "밥 (bap) means both 'rice' and 'meal' — so 밥 먹었어요? (did you eat?) is a common greeting among Koreans, similar to asking 'how are you?'" } },
+
+    { "id": 42, "stage": 4, "type": "listen_repeat",
+      "syllables": ["밥"],
+      "romanization": "bap", "audio": "밥",
+      "meaning": "Rice / Meal — the cornerstone of Korean cuisine" },
+
+    { "id": 43, "stage": 4, "type": "listen_repeat",
+      "syllables": ["김", "치"],
+      "romanization": "gimchi", "audio": "김치",
+      "meaning": "Kimchi — fermented vegetables, Korea's most iconic side dish" },
+
+    { "id": 44, "stage": 4, "type": "listen_repeat",
+      "syllables": ["비", "빔", "밥"],
+      "romanization": "bibimbap", "audio": "비빔밥",
+      "meaning": "Bibimbap — mixed rice bowl with vegetables, egg, and gochujang" },
+
+    { "id": 45, "stage": 4, "type": "listen_repeat",
+      "syllables": ["삼", "겹", "살"],
+      "romanization": "samgyeopsal", "audio": "삼겹살",
+      "meaning": "Samgyeopsal — grilled pork belly, a classic Korean BBQ cut" },
+
+    { "id": 46, "stage": 4, "type": "listen_repeat",
+      "syllables": ["떡", "볶", "이"],
+      "romanization": "tteokbokki", "audio": "떡볶이",
+      "meaning": "Tteokbokki — spicy rice cakes, a beloved Korean street food" },
+
+    { "id": 47, "stage": 4, "type": "match_quiz",
+      "prompt": "What is 불고기 (bulgogi)?",
+      "choices": ["Spicy tofu stew", "Korean BBQ beef", "Cold noodles", "Grilled pork belly"],
+      "correct": "Korean BBQ beef" },
+
+    { "id": 48, "stage": 4, "type": "reading_card",
+      "title": "Colors", "title_kr": "색깔",
+      "body": "Korean color words end in 색 (saek), meaning 'color.' For example: 빨간색 (ppalgansaek) = red color. In everyday speech, 색 is often dropped — 빨간 (ppalgan) is also used as an adjective. Some colors have poetic native Korean forms alongside the Sino-Korean -색 compounds.",
+      "tip": { "icon": "🎨", "label": "Adjective form",
+        "text": "To say 'a red bag', drop 색: 빨간 가방 (red bag). Add the noun directly after the color adjective — no extra particle needed." } },
+
+    { "id": 49, "stage": 4, "type": "card_reveal",
+      "char": "빨간색", "romanization": "ppalgansaek", "audio": "빨간색",
+      "example_word": "빨간 사과", "example_meaning": "Red · a red apple" },
+
+    { "id": 50, "stage": 4, "type": "card_reveal",
+      "char": "파란색", "romanization": "paransaek", "audio": "파란색",
+      "example_word": "파란 하늘", "example_meaning": "Blue · a blue sky" },
+
+    { "id": 51, "stage": 4, "type": "card_reveal",
+      "char": "노란색", "romanization": "noransaek", "audio": "노란색",
+      "example_word": "노란 바나나", "example_meaning": "Yellow · a yellow banana" },
+
+    { "id": 52, "stage": 4, "type": "card_reveal",
+      "char": "초록색", "romanization": "choroksaek", "audio": "초록색",
+      "example_word": "초록 나무", "example_meaning": "Green · a green tree" },
+
+    { "id": 53, "stage": 4, "type": "match_quiz",
+      "prompt": "흰색 (huinsaek) is which color?",
+      "choices": ["Black", "Gray", "White", "Silver"],
+      "correct": "White" },
+
+    { "id": 54, "stage": 5, "type": "reading_card",
+      "title": "Places in Korea", "title_kr": "장소",
+      "body": "Korea is famous for its convenience — 편의점 (convenience stores) are open 24/7 on nearly every block. Learning the names of common places helps you navigate cities, ask for directions, and understand public signs.",
+      "tip": { "icon": "🏙️", "label": "Essential city places",
+        "text": "Two uniquely Korean places: 노래방 (noraebang) — private karaoke rooms where you sing with friends, not strangers. 찜질방 (jjimjilbang) — Korean sauna and communal rest space, open 24h." } },
+
+    { "id": 55, "stage": 5, "type": "card_reveal",
+      "char": "학교", "romanization": "hakgyo", "audio": "학교",
+      "example_word": "학교에 가요", "example_meaning": "School · I'm going to school" },
+
+    { "id": 56, "stage": 5, "type": "card_reveal",
+      "char": "병원", "romanization": "byeongwon", "audio": "병원",
+      "example_word": "병원에 가야 해요", "example_meaning": "Hospital · I need to go to the hospital" },
+
+    { "id": 57, "stage": 5, "type": "card_reveal",
+      "char": "편의점", "romanization": "pyeonuijeom", "audio": "편의점",
+      "example_word": "편의점에서 샀어요", "example_meaning": "Convenience store · I bought it at the convenience store" },
+
+    { "id": 58, "stage": 5, "type": "card_reveal",
+      "char": "지하철역", "romanization": "jihacheol yeok", "audio": "지하철역",
+      "example_word": "지하철역이 어디예요?", "example_meaning": "Subway station · Where is the subway station?" },
+
+    { "id": 59, "stage": 5, "type": "match_quiz",
+      "prompt": "Where do you go in Korea to buy medicine?",
+      "choices": ["은행 (eunhaeng)", "약국 (yakguk)", "백화점 (baekhwajeom)", "노래방 (noraebang)"],
+      "correct": "약국 (yakguk)" },
+
+    { "id": 60, "stage": 5, "type": "reading_card",
+      "title": "Travel Vocabulary", "title_kr": "여행 어휘",
+      "body": "Whether you're booking a trip or navigating an airport, these travel words are essential. Korean airports and transit systems display signs in Korean and English, but knowing the Korean terms helps you ask questions confidently.",
+      "rules": [
+        "여권 (yeogwon) — passport",
+        "예약 (yeyak) — reservation / booking",
+        "환전 (hwanjeon) — currency exchange",
+        "도착 (dochak) — arrival",
+        "출발 (chulbal) — departure",
+        "수하물 (suhamul) — luggage / baggage"
+      ] },
+
+    { "id": 61, "stage": 5, "type": "listen_repeat",
+      "syllables": ["여", "권"],
+      "romanization": "yeogwon", "audio": "여권",
+      "meaning": "Passport — keep it with you at all times when traveling" },
+
+    { "id": 62, "stage": 5, "type": "listen_repeat",
+      "syllables": ["예", "약"],
+      "romanization": "yeyak", "audio": "예약",
+      "meaning": "Reservation / Booking — used for hotels, restaurants, flights" },
+
+    { "id": 63, "stage": 5, "type": "listen_repeat",
+      "syllables": ["도", "착"],
+      "romanization": "dochak", "audio": "도착",
+      "meaning": "Arrival — displayed on airport arrival boards" },
+
+    { "id": 64, "stage": 5, "type": "listen_repeat",
+      "syllables": ["출", "발"],
+      "romanization": "chulbal", "audio": "출발",
+      "meaning": "Departure — displayed on airport departure boards" },
+
+    { "id": 65, "stage": 5, "type": "match_quiz",
+      "prompt": "How do you say 'airport' in Korean?",
+      "choices": ["기차역 (gicha yeok)", "공항 (gonghang)", "버스터미널 (beosu terminal)", "항구 (hanggu)"],
+      "correct": "공항 (gonghang)" },
+
+    { "id": 66, "stage": 5, "type": "listen_repeat",
+      "syllables": ["얼", "마", "예", "요"],
+      "romanization": "Eolmayeyo?", "audio": "얼마예요",
+      "meaning": "How much is it? — essential shopping phrase" },
+
+    { "id": 67, "stage": 6, "type": "reading_card",
+      "title": "Korean Verbs", "title_kr": "동사",
+      "body": "All Korean verbs end in 다 (da) in their dictionary form — this is called the infinitive. When speaking, verbs are conjugated by replacing 다 with endings that show tense, formality, and mood. The polite present tense uses 아요 / 어요 endings.",
+      "rules": [
+        "가다 → 가요 (to go → goes/going)",
+        "먹다 → 먹어요 (to eat → eats/eating)",
+        "공부하다 → 공부해요 (to study → studies/studying)"
+      ],
+      "tip": { "icon": "⚡", "label": "Start with these 5 essential verbs",
+        "text": "가다 (go) · 오다 (come) · 먹다 (eat) · 보다 (see/watch) · 하다 (do). 하다 is the most versatile — it attaches to nouns to make verbs: 공부하다 (study), 일하다 (work), 사랑하다 (love)." } },
+
+    { "id": 68, "stage": 6, "type": "card_reveal",
+      "char": "가다", "romanization": "gada", "audio": "가다",
+      "example_word": "학교에 가요", "example_meaning": "To go · (I) go to school" },
+
+    { "id": 69, "stage": 6, "type": "card_reveal",
+      "char": "먹다", "romanization": "meokda", "audio": "먹다",
+      "example_word": "밥을 먹어요", "example_meaning": "To eat · (I) eat rice" },
+
+    { "id": 70, "stage": 6, "type": "card_reveal",
+      "char": "말하다", "romanization": "malhada", "audio": "말하다",
+      "example_word": "한국어로 말해요", "example_meaning": "To speak / say · (I) speak in Korean" },
+
+    { "id": 71, "stage": 6, "type": "card_reveal",
+      "char": "공부하다", "romanization": "gongbuhada", "audio": "공부하다",
+      "example_word": "한국어를 공부해요", "example_meaning": "To study · (I) study Korean" },
+
+    { "id": 72, "stage": 6, "type": "card_reveal",
+      "char": "좋아하다", "romanization": "joahada", "audio": "좋아하다",
+      "example_word": "음악을 좋아해요", "example_meaning": "To like · (I) like music" },
+
+    { "id": 73, "stage": 6, "type": "match_quiz",
+      "prompt": "Which verb means 'to drink'?",
+      "choices": ["먹다 (meokda)", "마시다 (masida)", "보다 (boda)", "듣다 (deutda)"],
+      "correct": "마시다 (masida)" },
+
+    { "id": 74, "stage": 6, "type": "reading_card",
+      "title": "Korean Adjectives", "title_kr": "형용사",
+      "body": "In Korean, adjectives work like verbs — they conjugate for tense and formality. The dictionary form ends in 다, just like verbs. In the polite present: 좋다 → 좋아요 (it's good), 크다 → 커요 (it's big). This is very different from English where adjectives never conjugate.",
+      "tip": { "icon": "✨", "label": "Pairs to learn together",
+        "text": "Learn opposites as pairs: 크다 / 작다 (big/small), 빠르다 / 느리다 (fast/slow), 쉽다 / 어렵다 (easy/hard), 좋다 / 나쁘다 (good/bad). Pairs halve your memorization effort." } },
+
+    { "id": 75, "stage": 6, "type": "card_reveal",
+      "char": "좋다", "romanization": "jota", "audio": "좋다",
+      "example_word": "날씨가 좋아요", "example_meaning": "Good / Nice · The weather is nice" },
+
+    { "id": 76, "stage": 6, "type": "card_reveal",
+      "char": "맛있다", "romanization": "masitda", "audio": "맛있다",
+      "example_word": "김치가 맛있어요", "example_meaning": "Delicious · The kimchi is delicious" },
+
+    { "id": 77, "stage": 6, "type": "card_reveal",
+      "char": "재미있다", "romanization": "jaemiitda", "audio": "재미있다",
+      "example_word": "한국어가 재미있어요", "example_meaning": "Interesting / Fun · Korean is fun" },
+
+    { "id": 78, "stage": 6, "type": "card_reveal",
+      "char": "크다", "romanization": "keuda", "audio": "크다",
+      "example_word": "서울은 도시가 커요", "example_meaning": "Big / Large · Seoul is a big city" },
+
+    { "id": 79, "stage": 6, "type": "match_quiz",
+      "prompt": "Which adjective means 'difficult' or 'hard'?",
+      "choices": ["쉽다 (swipda)", "어렵다 (eobyeopda)", "느리다 (neurida)", "나쁘다 (nappeuda)"],
+      "correct": "어렵다 (eobyeopda)" },
+
+    { "id": 80, "stage": 6, "type": "lesson_complete",
+      "title": "Vocabulary Complete!", "title_kr": "어휘 완성!",
+      "message": "You've covered 6 vocabulary categories — greetings, numbers, family, food, places, and verbs. Keep building your word bank and you'll be having Korean conversations sooner than you think.",
+      "next_url": "pronouns.html" }
+
+  ]
+}

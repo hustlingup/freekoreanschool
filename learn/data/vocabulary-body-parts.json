@@ -1,0 +1,230 @@
+{
+  "lesson": "vocab-body-parts",
+  "totalSteps": 21,
+  "stages": [
+    { "id": 1, "name": "Body Parts", "name_kr": "신체", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Body Parts in Korean",
+      "title_kr": "신체 부위",
+      "body": "Body vocabulary is essential for medical visits, describing pain, sports, and everyday health conversations. At a Korean clinic, you'll need to point to where it hurts and name the body part. Korean has specific terms for body parts that English combines into one word.",
+      "tip": { "icon": "🫁", "label": "Describing pain", "text": "To say something hurts, add -이/가 아파요 after the body part: 머리가 아파요 (My head hurts), 배가 아파요 (My stomach hurts). This pattern works for almost every body part!" }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["머", "리"],
+      "romanization": "meori",
+      "katakana": "モリ",
+      "audio": "머리",
+      "meaning": "Head / hair — context determines which meaning",
+      "meaning_ja": "頭 / 髪 ― 文脈によって意味が変わる"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["눈"],
+      "romanization": "nun",
+      "katakana": "ヌン",
+      "audio": "눈",
+      "meaning": "Eye(s) — also means 'snow' (same spelling)",
+      "meaning_ja": "目 ― 「雪」も눈（同じ綴り）"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["코"],
+      "romanization": "ko",
+      "katakana": "コ",
+      "audio": "코",
+      "meaning": "Nose",
+      "meaning_ja": "鼻"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["입"],
+      "romanization": "ip",
+      "katakana": "イプ",
+      "audio": "입",
+      "meaning": "Mouth",
+      "meaning_ja": "口"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["귀"],
+      "romanization": "gwi",
+      "katakana": "クィ",
+      "audio": "귀",
+      "meaning": "Ear(s)",
+      "meaning_ja": "耳"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["목"],
+      "romanization": "mok",
+      "katakana": "モク",
+      "audio": "목",
+      "meaning": "Neck / throat — 목이 아파요 = my throat hurts",
+      "meaning_ja": "首 / 喉 ― 목이 아파요（喉が痛いです）"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["어", "깨"],
+      "romanization": "eokkae",
+      "katakana": "オッケ",
+      "audio": "어깨",
+      "meaning": "Shoulder(s)",
+      "meaning_ja": "肩"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["팔"],
+      "romanization": "pal",
+      "katakana": "パル",
+      "audio": "팔",
+      "meaning": "Arm — also the number 8 in native Korean",
+      "meaning_ja": "腕 ― 固有語の8とも同じ綴り"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["손"],
+      "romanization": "son",
+      "katakana": "ソン",
+      "audio": "손",
+      "meaning": "Hand(s)",
+      "meaning_ja": "手"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["손", "가", "락"],
+      "romanization": "songarak",
+      "katakana": "ソンガラク",
+      "audio": "손가락",
+      "meaning": "Finger — 손 (hand) + 가락 (strip/piece)",
+      "meaning_ja": "指 ― 손（手）+ 가락（細い棒）"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["가", "슴"],
+      "romanization": "gaseum",
+      "katakana": "カスム",
+      "audio": "가슴",
+      "meaning": "Chest — used for both physical chest and emotional heart in poetry",
+      "meaning_ja": "胸 ― 体の胸・詩では心の意味にも使う"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["배"],
+      "romanization": "bae",
+      "katakana": "ペ",
+      "audio": "배",
+      "meaning": "Stomach / belly — 배가 아파요 = my stomach hurts",
+      "meaning_ja": "お腹 / 胃 ― 배가 아파요（お腹が痛いです）"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["등"],
+      "romanization": "deung",
+      "katakana": "トゥン",
+      "audio": "등",
+      "meaning": "Back — 등이 아파요 = my back hurts",
+      "meaning_ja": "背中 ― 등이 아파요（背中が痛いです）"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["허", "리"],
+      "romanization": "heori",
+      "katakana": "ホリ",
+      "audio": "허리",
+      "meaning": "Lower back / waist — 허리가 아파요 = my back/waist hurts",
+      "meaning_ja": "腰 ― 허리가 아파요（腰が痛いです）"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["다", "리"],
+      "romanization": "dari",
+      "katakana": "タリ",
+      "audio": "다리",
+      "meaning": "Leg — also means 'bridge' (same spelling, different meaning)",
+      "meaning_ja": "足（脚）― 「橋」も다리（同じ綴り）"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["무", "릎"],
+      "romanization": "mureup",
+      "katakana": "ムルプ",
+      "audio": "무릎",
+      "meaning": "Knee",
+      "meaning_ja": "膝"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": ["발"],
+      "romanization": "bal",
+      "katakana": "パル",
+      "audio": "발",
+      "meaning": "Foot / feet",
+      "meaning_ja": "足（足先）"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "At the doctor, you say 머리가 아파요. You are saying...",
+      "choices": ["My throat hurts", "My stomach hurts", "My head hurts", "My back hurts"],
+      "correct": "My head hurts"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "눈 means 'eye' — but it also means...",
+      "choices": ["Rain", "Snow", "Wind", "Cloud"],
+      "correct": "Snow"
+    },
+    {
+      "id": 21,
+      "stage": 1,
+      "type": "lesson_complete",
+      "title": "Body Parts Complete!",
+      "title_kr": "신체 완성!",
+      "message": "You now know essential Korean body vocabulary! At your next clinic visit in Korea, you'll be able to say exactly where it hurts. 건강하세요! (Stay healthy!)",
+      "next_url": "vocabulary.html?cat=travel"
+    }
+  ]
+}
