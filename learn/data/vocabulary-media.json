@@ -2,7 +2,14 @@
   "lesson": "vocab-media",
   "totalSteps": 21,
   "stages": [
-    { "id": 1, "name": "Media & K-Culture", "name_kr": "미디어·한류", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Media & K-Culture",
+      "name_kr": "미디어·한류",
+      "first_step": 1,
+      "last_step": 21,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,26 @@
       "title": "K-Culture Media Vocabulary",
       "title_kr": "한류 미디어 어휘",
       "body": "The Korean Wave (한류, Hallyu) has spread Korean pop culture worldwide through music, dramas, films, and beauty. Understanding media vocabulary lets you discuss K-pop, K-dramas, and Korean entertainment in Korean — the native context where these words live.",
-      "tip": { "icon": "🎬", "label": "Fan culture vocabulary", "text": "Korean fan culture has its own rich vocabulary: 팬 (fan), 팬덤 (fandom), 덕후/덕 (passionate fan/otaku), 최애 (favorite/number one), 스밍 (streaming for chart rankings). These words are used daily on social media." }
+      "tip": {
+        "icon": "🎬",
+        "label": "Fan culture vocabulary",
+        "text": "Korean fan culture has its own rich vocabulary: 팬 (fan), 팬덤 (fandom), 덕후/덕 (passionate fan/otaku), 최애 (favorite/number one), 스밍 (streaming for chart rankings). These words are used daily on social media."
+      },
+      "body_ja": "韓流（한류、ハルリュ）は音楽・ドラマ・映画・美容を通じて世界にK-ポップカルチャーを広めました。メディア語彙を理解すれば、K-ポップ・K-ドラマ・韓国エンターテインメントについて韓国語で語れるようになります。",
+      "tip_ja": {
+        "label": "ファン文化の語彙",
+        "text": "韓国ファン文化には独自の豊かな語彙があります：팬（ファン）・팬덤（ファンダム）・덕후/덕（オタク）・최애（最推し）・스밍（チャートのためのストリーミング）。これらの言葉はSNSで毎日使われています。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["드", "라", "마"],
+      "syllables": [
+        "드",
+        "라",
+        "마"
+      ],
       "romanization": "deurama",
       "katakana": "トゥラマ",
       "audio": "드라마",
@@ -29,7 +49,10 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["음", "악"],
+      "syllables": [
+        "음",
+        "악"
+      ],
       "romanization": "eumak",
       "katakana": "ウマク",
       "audio": "음악",
@@ -40,7 +63,11 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "이", "돌"],
+      "syllables": [
+        "아",
+        "이",
+        "돌"
+      ],
       "romanization": "aidol",
       "katakana": "アイドル",
       "audio": "아이돌",
@@ -51,7 +78,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["노", "래"],
+      "syllables": [
+        "노",
+        "래"
+      ],
       "romanization": "norae",
       "katakana": "ノレ",
       "audio": "노래",
@@ -62,7 +92,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["영", "화"],
+      "syllables": [
+        "영",
+        "화"
+      ],
       "romanization": "yeonghwa",
       "katakana": "ヨンファ",
       "audio": "영화",
@@ -73,7 +106,10 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["배", "우"],
+      "syllables": [
+        "배",
+        "우"
+      ],
       "romanization": "baeu",
       "katakana": "ペウ",
       "audio": "배우",
@@ -84,7 +120,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["감", "독"],
+      "syllables": [
+        "감",
+        "독"
+      ],
       "romanization": "gamdok",
       "katakana": "カムドク",
       "audio": "감독",
@@ -95,7 +134,9 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["팬"],
+      "syllables": [
+        "팬"
+      ],
       "romanization": "paen",
       "katakana": "ペン",
       "audio": "팬",
@@ -106,7 +147,11 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["콘", "서", "트"],
+      "syllables": [
+        "콘",
+        "서",
+        "트"
+      ],
       "romanization": "konseoteu",
       "katakana": "コンソトゥ",
       "audio": "콘서트",
@@ -117,7 +162,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["무", "대"],
+      "syllables": [
+        "무",
+        "대"
+      ],
       "romanization": "mudae",
       "katakana": "ムデ",
       "audio": "무대",
@@ -128,7 +176,10 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["한", "류"],
+      "syllables": [
+        "한",
+        "류"
+      ],
       "romanization": "hallyu",
       "katakana": "ハルリュ",
       "audio": "한류",
@@ -139,7 +190,10 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["인", "기"],
+      "syllables": [
+        "인",
+        "기"
+      ],
       "romanization": "ingi",
       "katakana": "インギ",
       "audio": "인기",
@@ -150,7 +204,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["사", "진"],
+      "syllables": [
+        "사",
+        "진"
+      ],
       "romanization": "sajin",
       "katakana": "サジン",
       "audio": "사진",
@@ -161,7 +218,11 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["팬", "미", "팅"],
+      "syllables": [
+        "팬",
+        "미",
+        "팅"
+      ],
       "romanization": "paenmiting",
       "katakana": "ペンミティン",
       "audio": "팬미팅",
@@ -172,7 +233,10 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["최", "애"],
+      "syllables": [
+        "최",
+        "애"
+      ],
       "romanization": "choeae",
       "katakana": "チェエ",
       "audio": "최애",
@@ -184,32 +248,80 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "노래방 literally means 'song room.' What is it?",
-      "choices": ["Concert hall", "Recording studio", "Karaoke room", "Music store"],
-      "correct": "Karaoke room"
+      "choices": [
+        "Concert hall",
+        "Recording studio",
+        "Karaoke room",
+        "Music store"
+      ],
+      "choices_ja": [
+        "コンサートホール",
+        "録音スタジオ",
+        "カラオケルーム",
+        "音楽ショップ"
+      ],
+      "correct": "Karaoke room",
+      "prompt_ja": "노래방は文字通り「歌の部屋」を意味します。何ですか？"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "한류 refers to...",
-      "choices": ["Korean weather", "The Korean Wave (global spread of Korean culture)", "Korean government policy", "Korean food culture"],
-      "correct": "The Korean Wave (global spread of Korean culture)"
+      "choices": [
+        "Korean weather",
+        "The Korean Wave (global spread of Korean culture)",
+        "Korean government policy",
+        "Korean food culture"
+      ],
+      "choices_ja": [
+        "韓国の天気",
+        "韓流（韓国文化の世界的広がり）",
+        "韓国の政府政策",
+        "韓国の食文化"
+      ],
+      "correct": "The Korean Wave (global spread of Korean culture)",
+      "prompt_ja": "한류とは？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "최애 (choeae) is a K-fan term meaning...",
-      "choices": ["New release", "Biggest fan", "Favorite (person/thing)", "Fan club"],
-      "correct": "Favorite (person/thing)"
+      "choices": [
+        "New release",
+        "Biggest fan",
+        "Favorite (person/thing)",
+        "Fan club"
+      ],
+      "choices_ja": [
+        "新リリース",
+        "最大のファン",
+        "推し（お気に入りの人やもの）",
+        "ファンクラブ"
+      ],
+      "correct": "Favorite (person/thing)",
+      "prompt_ja": "K-ファン用語の최애（チェエ）の意味は？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "봉준호 감독 is a famous film...",
-      "choices": ["Actor", "Singer", "Director", "Producer"],
-      "correct": "Director"
+      "choices": [
+        "Actor",
+        "Singer",
+        "Director",
+        "Producer"
+      ],
+      "choices_ja": [
+        "俳優",
+        "歌手",
+        "監督",
+        "プロデューサー"
+      ],
+      "correct": "Director",
+      "prompt_ja": "봉준호 감독は有名な映画？"
     },
     {
       "id": 21,
@@ -218,7 +330,8 @@
       "title": "Media & K-Culture Complete!",
       "title_kr": "미디어·한류 완성!",
       "message": "한류를 즐기세요! Now you can talk about your favorite K-dramas, K-pop groups, and Korean films in Korean! Watching content in Korean is one of the fastest ways to level up your language skills.",
-      "next_url": "vocabulary.html?cat=proverbs"
+      "next_url": "vocabulary.html?cat=proverbs",
+      "message_ja": "한류를 즐기세요！好きなK-ドラマ・K-ポップグループ・韓国映画について韓国語で話せるようになりました！韓国語コンテンツを視聴することは言語力を最も早く伸ばす方法のひとつです。"
     }
   ]
 }

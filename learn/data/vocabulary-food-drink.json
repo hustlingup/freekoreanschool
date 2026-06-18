@@ -2,7 +2,14 @@
   "lesson": "vocab-food-drink",
   "totalSteps": 22,
   "stages": [
-    { "id": 1, "name": "Food & Drink", "name_kr": "음식·음료", "first_step": 1, "last_step": 22, "time_minutes": 13 }
+    {
+      "id": 1,
+      "name": "Food & Drink",
+      "name_kr": "음식·음료",
+      "first_step": 1,
+      "last_step": 22,
+      "time_minutes": 13
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,24 @@
       "title": "Korean Food Culture",
       "title_kr": "한국 음식 문화",
       "body": "Food is central to Korean culture. Meals are shared communally, with multiple side dishes (반찬, banchan) served alongside rice (밥) and soup (국). Koreans often greet each other with '밥 먹었어요?' (Did you eat?) — showing how deeply food is woven into daily life.",
-      "tip": { "icon": "🍜", "label": "The rice is the center", "text": "In Korean culture, 밥 (bap) means both 'cooked rice' and 'a meal.' When Koreans say they haven't eaten, they say 밥을 못 먹었어요 — rice is so fundamental that it stands in for any meal." }
+      "tip": {
+        "icon": "🍜",
+        "label": "The rice is the center",
+        "text": "In Korean culture, 밥 (bap) means both 'cooked rice' and 'a meal.' When Koreans say they haven't eaten, they say 밥을 못 먹었어요 — rice is so fundamental that it stands in for any meal."
+      },
+      "body_ja": "食は韓国文化の中心です。食事は共有形式で、ご飯（밥）・スープ（국）と一緒に複数のおかず（반찬、パンチャン）が出されます。韓国では「밥 먹었어요？（ご飯食べた？）」と挨拶することも―食が日常にいかに溶け込んでいるかがわかります。",
+      "tip_ja": {
+        "label": "ご飯が中心",
+        "text": "韓国文化では밥（パプ）は「炊いたご飯」と「食事」の両方を意味します。韓国人が食べていないと言うとき、밥을 못 먹었어요と言います―ご飯はあらゆる食事の代名詞です。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["밥"],
+      "syllables": [
+        "밥"
+      ],
       "romanization": "bap",
       "katakana": "パプ",
       "audio": "밥",
@@ -29,7 +47,10 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["김", "치"],
+      "syllables": [
+        "김",
+        "치"
+      ],
       "romanization": "gimchi",
       "katakana": "キムチ",
       "audio": "김치",
@@ -40,7 +61,11 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["불", "고", "기"],
+      "syllables": [
+        "불",
+        "고",
+        "기"
+      ],
       "romanization": "bulgogi",
       "katakana": "プルコギ",
       "audio": "불고기",
@@ -51,7 +76,11 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["비", "빔", "밥"],
+      "syllables": [
+        "비",
+        "빔",
+        "밥"
+      ],
       "romanization": "bibimbap",
       "katakana": "ピビンパプ",
       "audio": "비빔밥",
@@ -62,7 +91,11 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["떡", "볶", "이"],
+      "syllables": [
+        "떡",
+        "볶",
+        "이"
+      ],
       "romanization": "tteokbokki",
       "katakana": "トッポッキ",
       "audio": "떡볶이",
@@ -73,7 +106,11 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["삼", "겹", "살"],
+      "syllables": [
+        "삼",
+        "겹",
+        "살"
+      ],
       "romanization": "samgyeopsal",
       "katakana": "サムギョプサル",
       "audio": "삼겹살",
@@ -84,7 +121,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["냉", "면"],
+      "syllables": [
+        "냉",
+        "면"
+      ],
       "romanization": "naengmyeon",
       "katakana": "ネンミョン",
       "audio": "냉면",
@@ -95,7 +135,13 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["순", "두", "부", "찌", "개"],
+      "syllables": [
+        "순",
+        "두",
+        "부",
+        "찌",
+        "개"
+      ],
       "romanization": "sundubu jjigae",
       "katakana": "スンドゥブチゲ",
       "audio": "순두부찌개",
@@ -106,7 +152,10 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["라", "면"],
+      "syllables": [
+        "라",
+        "면"
+      ],
       "romanization": "ramyeon",
       "katakana": "ラミョン",
       "audio": "라면",
@@ -117,7 +166,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["잡", "채"],
+      "syllables": [
+        "잡",
+        "채"
+      ],
       "romanization": "japchae",
       "katakana": "チャプチェ",
       "audio": "잡채",
@@ -128,7 +180,9 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["물"],
+      "syllables": [
+        "물"
+      ],
       "romanization": "mul",
       "katakana": "ムル",
       "audio": "물",
@@ -139,7 +193,10 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["커", "피"],
+      "syllables": [
+        "커",
+        "피"
+      ],
       "romanization": "keopi",
       "katakana": "コーピ",
       "audio": "커피",
@@ -150,7 +207,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["소", "주"],
+      "syllables": [
+        "소",
+        "주"
+      ],
       "romanization": "soju",
       "katakana": "ソジュ",
       "audio": "소주",
@@ -161,7 +221,10 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["맥", "주"],
+      "syllables": [
+        "맥",
+        "주"
+      ],
       "romanization": "maekju",
       "katakana": "メクチュ",
       "audio": "맥주",
@@ -172,7 +235,11 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["막", "걸", "리"],
+      "syllables": [
+        "막",
+        "걸",
+        "리"
+      ],
       "romanization": "makgeolli",
       "katakana": "マッコリ",
       "audio": "막걸리",
@@ -183,7 +250,10 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["반", "찬"],
+      "syllables": [
+        "반",
+        "찬"
+      ],
       "romanization": "banchan",
       "katakana": "パンチャン",
       "audio": "반찬",
@@ -194,7 +264,9 @@
       "id": 18,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["국"],
+      "syllables": [
+        "국"
+      ],
       "romanization": "guk",
       "katakana": "クク",
       "audio": "국",
@@ -206,24 +278,60 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "What is 떡볶이?",
-      "choices": ["Grilled pork belly", "Spicy rice cakes", "Cold noodles", "Fermented vegetables"],
-      "correct": "Spicy rice cakes"
+      "choices": [
+        "Grilled pork belly",
+        "Spicy rice cakes",
+        "Cold noodles",
+        "Fermented vegetables"
+      ],
+      "choices_ja": [
+        "サムギョプサル（豚バラ焼き）",
+        "トッポッキ（辛いもちトック）",
+        "ネンミョン（冷麺）",
+        "キムチ（発酵野菜）"
+      ],
+      "correct": "Spicy rice cakes",
+      "prompt_ja": "떡볶이とは何ですか？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Korea's most famous distilled spirit, also the world's best-selling liquor, is called...",
-      "choices": ["맥주 (maekju)", "막걸리 (makgeolli)", "소주 (soju)", "커피 (keopi)"],
-      "correct": "소주 (soju)"
+      "choices": [
+        "맥주 (maekju)",
+        "막걸리 (makgeolli)",
+        "소주 (soju)",
+        "커피 (keopi)"
+      ],
+      "choices_ja": [
+        "맥주（ビール）",
+        "막걸리（マッコリ）",
+        "소주（焼酎）",
+        "커피（コーヒー）"
+      ],
+      "correct": "소주 (soju)",
+      "prompt_ja": "韓国の有名な蒸留酒で、世界一売れているお酒の名前は？"
     },
     {
       "id": 21,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "What does 밥 mean?",
-      "choices": ["Kimchi", "Cooked rice / meal", "Soup", "Noodles"],
-      "correct": "Cooked rice / meal"
+      "choices": [
+        "Kimchi",
+        "Cooked rice / meal",
+        "Soup",
+        "Noodles"
+      ],
+      "choices_ja": [
+        "キムチ",
+        "ご飯（食事）",
+        "スープ",
+        "麺"
+      ],
+      "correct": "Cooked rice / meal",
+      "prompt_ja": "밥はどういう意味ですか？"
     },
     {
       "id": 22,
@@ -232,7 +340,8 @@
       "title": "Food & Drink Complete!",
       "title_kr": "음식·음료 완성!",
       "message": "맛있게 드세요! (Bon appétit!) You've mastered essential Korean food and drink vocabulary. Food is one of the best conversation starters with Koreans — try asking 무슨 음식 좋아해요? (What food do you like?)",
-      "next_url": "vocabulary.html?cat=colors"
+      "next_url": "vocabulary.html?cat=colors",
+      "message_ja": "맛있게 드세요！食べ物と飲み物の必須語彙をマスターしました。食べ物は韓国人との最高の会話の入り口―무슨 음식 좋아해요？（どんな料理が好きですか？）と聞いてみましょう！"
     }
   ]
 }

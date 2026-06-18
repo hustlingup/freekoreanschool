@@ -2,106 +2,1136 @@
   "lesson": "hangul",
   "totalSteps": 84,
   "stages": [
-    { "id": 1, "name": "Vowels", "name_kr": "기본 모음", "first_step": 1, "last_step": 15, "time_minutes": 15 },
-    { "id": 2, "name": "Consonants", "name_kr": "기본 자음", "first_step": 16, "last_step": 36, "time_minutes": 21 },
-    { "id": 3, "name": "Syllables", "name_kr": "음절", "first_step": 37, "last_step": 42, "time_minutes": 6 },
-    { "id": 4, "name": "Special", "name_kr": "쌍자음 · 거센소리", "first_step": 43, "last_step": 57, "time_minutes": 15 },
-    { "id": 5, "name": "Compound Vowels", "name_kr": "복합 모음", "first_step": 58, "last_step": 73, "time_minutes": 16 },
-    { "id": 6, "name": "Read Words", "name_kr": "단어 읽기", "first_step": 74, "last_step": 84, "time_minutes": 11 }
+    {
+      "id": 1,
+      "name": "Consonants",
+      "name_kr": "기본 자음",
+      "first_step": 1,
+      "last_step": 21,
+      "time_minutes": 21
+    },
+    {
+      "id": 2,
+      "name": "Vowels",
+      "name_kr": "기본 모음",
+      "first_step": 22,
+      "last_step": 36,
+      "time_minutes": 15
+    },
+    {
+      "id": 3,
+      "name": "Syllables",
+      "name_kr": "음절",
+      "first_step": 37,
+      "last_step": 42,
+      "time_minutes": 6
+    },
+    {
+      "id": 4,
+      "name": "Special",
+      "name_kr": "쌍자음 · 거센소리",
+      "first_step": 43,
+      "last_step": 57,
+      "time_minutes": 15
+    },
+    {
+      "id": 5,
+      "name": "Compound Vowels",
+      "name_kr": "복합 모음",
+      "first_step": 58,
+      "last_step": 73,
+      "time_minutes": 16
+    },
+    {
+      "id": 6,
+      "name": "Read Words",
+      "name_kr": "단어 읽기",
+      "first_step": 74,
+      "last_step": 84,
+      "time_minutes": 11
+    }
   ],
   "steps": [
-    { "id": 1, "stage": 1, "type": "card_reveal", "char": "아", "jamo": "ㅏ", "romanization": "a", "audio": "아", "hint": "Open your mouth wide, like saying 'ah' at the doctor." },
-    { "id": 2, "stage": 1, "type": "card_reveal", "char": "야", "jamo": "ㅑ", "romanization": "ya", "audio": "야", "hint": "Like 'ya' in 'yard'. The extra stroke means a 'y' is added." },
-    { "id": 3, "stage": 1, "type": "card_reveal", "char": "어", "jamo": "ㅓ", "romanization": "eo", "audio": "어", "hint": "Similar to 'uh' or 'o' in 'the other'. Lips slightly rounded." },
-    { "id": 4, "stage": 1, "type": "card_reveal", "char": "여", "jamo": "ㅕ", "romanization": "yeo", "audio": "여", "hint": "Like 'yuh' with rounded lips. Two strokes = 'y' prefix." },
-    { "id": 5, "stage": 1, "type": "card_reveal", "char": "오", "jamo": "ㅗ", "romanization": "o", "audio": "오", "hint": "Like 'o' in 'more'. Round your lips as if blowing a candle." },
-    { "id": 6, "stage": 1, "type": "card_reveal", "char": "요", "jamo": "ㅛ", "romanization": "yo", "audio": "요", "hint": "Like 'yo!' — two strokes add the 'y'. Used a lot in speech." },
-    { "id": 7, "stage": 1, "type": "card_reveal", "char": "우", "jamo": "ㅜ", "romanization": "u", "audio": "우", "hint": "Like 'oo' in 'boot'. The line points DOWN — mouth drops." },
-    { "id": 8, "stage": 1, "type": "card_reveal", "char": "유", "jamo": "ㅠ", "romanization": "yu", "audio": "유", "hint": "Like 'you'. Two downward strokes signal the 'y' prefix." },
-    { "id": 9, "stage": 1, "type": "card_reveal", "char": "으", "jamo": "ㅡ", "romanization": "eu", "audio": "으", "hint": "Like the 'e' sound when you're unsatisfied: 'euugh'. Flat lips." },
-    { "id": 10, "stage": 1, "type": "card_reveal", "char": "이", "jamo": "ㅣ", "romanization": "i", "audio": "이", "hint": "Like 'ee' in 'bee'. A simple vertical stroke — pure high front vowel." },
-
-    { "id": 11, "stage": 1, "type": "match_quiz", "prompt": "Which vowel sounds like 'a' (as in 'father')?", "choices": ["ㅏ", "ㅗ", "ㅜ", "ㅣ"], "correct": "ㅏ" },
-    { "id": 12, "stage": 1, "type": "match_quiz", "prompt": "Which vowel sounds like 'o' (as in 'more')?", "choices": ["ㅓ", "ㅗ", "ㅡ", "ㅑ"], "correct": "ㅗ" },
-    { "id": 13, "stage": 1, "type": "match_quiz", "prompt": "Which vowel sounds like 'ee' (as in 'bee')?", "choices": ["ㅓ", "ㅛ", "ㅣ", "ㅠ"], "correct": "ㅣ" },
-    { "id": 14, "stage": 1, "type": "match_quiz", "prompt": "ㅠ romanizes as…", "choices": ["u", "eu", "yo", "yu"], "correct": "yu" },
-    { "id": 15, "stage": 1, "type": "match_quiz", "prompt": "ㅡ sounds like…", "choices": ["ya", "i", "eu", "yo"], "correct": "eu" },
-
-    { "id": 16, "stage": 2, "type": "card_reveal", "char": "ㄱ", "jamo": "ㄱ", "romanization": "g / k", "audio": "기역", "example_word": "가다", "example_meaning": "to go", "hint": "Shaped like the back of the throat blocking airflow." },
-    { "id": 17, "stage": 2, "type": "card_reveal", "char": "ㄴ", "jamo": "ㄴ", "romanization": "n", "audio": "니은", "example_word": "나", "example_meaning": "I / me", "hint": "Shaped like a tongue tip touching the roof of the mouth." },
-    { "id": 18, "stage": 2, "type": "card_reveal", "char": "ㄷ", "jamo": "ㄷ", "romanization": "d / t", "audio": "디귿", "example_word": "다", "example_meaning": "all / every", "hint": "Like ㄴ with a roof — tongue fully blocks the palate." },
-    { "id": 19, "stage": 2, "type": "card_reveal", "char": "ㄹ", "jamo": "ㄹ", "romanization": "r / l", "audio": "리을", "example_word": "리", "example_meaning": "reason (prefix)", "hint": "A flap — between English 'r' and 'l'. Tongue taps the palate." },
-    { "id": 20, "stage": 2, "type": "card_reveal", "char": "ㅁ", "jamo": "ㅁ", "romanization": "m", "audio": "미음", "example_word": "마음", "example_meaning": "heart / mind", "hint": "Shaped like closed lips pressing together to make 'm'." },
-    { "id": 21, "stage": 2, "type": "card_reveal", "char": "ㅂ", "jamo": "ㅂ", "romanization": "b / p", "audio": "비읍", "example_word": "밥", "example_meaning": "rice / meal", "hint": "Shaped like lips opening to release the 'b' or 'p' sound." },
-    { "id": 22, "stage": 2, "type": "card_reveal", "char": "ㅅ", "jamo": "ㅅ", "romanization": "s", "audio": "시옷", "example_word": "사람", "example_meaning": "person", "hint": "Shaped like two teeth — air hisses through for the 's' sound." },
-    { "id": 23, "stage": 2, "type": "card_reveal", "char": "ㅇ", "jamo": "ㅇ", "romanization": "ng / silent", "audio": "이응", "example_word": "아이", "example_meaning": "child", "hint": "Silent at the start of a syllable. Sounds like 'ng' at the end." },
-    { "id": 24, "stage": 2, "type": "card_reveal", "char": "ㅈ", "jamo": "ㅈ", "romanization": "j", "audio": "지읒", "example_word": "지금", "example_meaning": "now", "hint": "Like 'j' in 'juice'. Tongue presses behind upper teeth." },
-    { "id": 25, "stage": 2, "type": "card_reveal", "char": "ㅊ", "jamo": "ㅊ", "romanization": "ch", "audio": "치읓", "example_word": "차", "example_meaning": "tea / car", "hint": "Aspirated 'ch' — a puff of air comes out. Like 'ch' in 'cheese'." },
-    { "id": 26, "stage": 2, "type": "card_reveal", "char": "ㅋ", "jamo": "ㅋ", "romanization": "k", "audio": "키읔", "example_word": "커피", "example_meaning": "coffee", "hint": "Aspirated 'k' — strong puff of air. Hold a tissue and it flutters." },
-    { "id": 27, "stage": 2, "type": "card_reveal", "char": "ㅌ", "jamo": "ㅌ", "romanization": "t", "audio": "티읕", "example_word": "타다", "example_meaning": "to ride", "hint": "Aspirated 't' — like 't' in 'ten' (at word start). Strong burst." },
-    { "id": 28, "stage": 2, "type": "card_reveal", "char": "ㅍ", "jamo": "ㅍ", "romanization": "p", "audio": "피읖", "example_word": "파", "example_meaning": "green onion", "hint": "Aspirated 'p' — like 'p' in 'pot'. Lips pop apart with air." },
-    { "id": 29, "stage": 2, "type": "card_reveal", "char": "ㅎ", "jamo": "ㅎ", "romanization": "h", "audio": "히읗", "example_word": "하늘", "example_meaning": "sky", "hint": "A breathy 'h' — like exhaling warmth onto your hand." },
-
-    { "id": 30, "stage": 2, "type": "match_quiz", "prompt": "ㄱ romanizes as…", "choices": ["n", "g/k", "d/t", "m"], "correct": "g/k" },
-    { "id": 31, "stage": 2, "type": "match_quiz", "prompt": "Which consonant is SILENT at the start of a syllable?", "choices": ["ㄱ", "ㄴ", "ㅇ", "ㅅ"], "correct": "ㅇ" },
-    { "id": 32, "stage": 2, "type": "match_quiz", "prompt": "ㄴ romanizes as…", "choices": ["r/l", "m", "n", "b/p"], "correct": "n" },
-    { "id": 33, "stage": 2, "type": "match_quiz", "prompt": "Which consonant sounds like 'j' in 'juice'?", "choices": ["ㅂ", "ㅈ", "ㅅ", "ㄷ"], "correct": "ㅈ" },
-    { "id": 34, "stage": 2, "type": "match_quiz", "prompt": "ㅁ romanizes as…", "choices": ["b", "n", "m", "h"], "correct": "m" },
-    { "id": 35, "stage": 2, "type": "match_quiz", "prompt": "ㄹ romanizes as…", "choices": ["n", "d/t", "r/l", "s"], "correct": "r/l" },
-    { "id": 36, "stage": 2, "type": "match_quiz", "prompt": "밥 (rice) starts with which consonant?", "choices": ["ㅂ", "ㅍ", "ㅁ", "ㅂ"], "correct": "ㅂ" },
-
-    { "id": 37, "stage": 3, "type": "syllable_builder", "consonant": "ㅂ", "vowel": "ㅏ", "result": "바", "audio": "바", "meaning": "ba — as in 바나나 (banana)" },
-    { "id": 38, "stage": 3, "type": "syllable_builder", "consonant": "ㄴ", "vowel": "ㅏ", "result": "나", "audio": "나", "meaning": "na — as in 나 (me)" },
-    { "id": 39, "stage": 3, "type": "syllable_builder", "consonant": "ㅅ", "vowel": "ㅏ", "result": "사", "audio": "사", "meaning": "sa — as in 사랑 (love)" },
-    { "id": 40, "stage": 3, "type": "syllable_builder", "consonant": "ㄱ", "vowel": "ㅗ", "result": "고", "audio": "고", "meaning": "go — as in 고마워 (thank you)" },
-    { "id": 41, "stage": 3, "type": "syllable_builder", "consonant": "ㅎ", "vowel": "ㅏ", "result": "하", "audio": "하", "meaning": "ha — as in 하늘 (sky)" },
-    { "id": 42, "stage": 3, "type": "syllable_builder", "consonant": "ㅁ", "vowel": "ㅜ", "result": "무", "audio": "무", "meaning": "mu — as in 무엇 (what)" },
-
-    { "id": 43, "stage": 4, "type": "card_reveal", "char": "ㄲ", "jamo": "ㄲ", "romanization": "kk", "audio": "쌍기역", "hint": "Tense 'k' — hold your breath then release. No air puff." },
-    { "id": 44, "stage": 4, "type": "card_reveal", "char": "ㄸ", "jamo": "ㄸ", "romanization": "tt", "audio": "쌍디귿", "hint": "Tense 't' — throat tightens before releasing. Distinct from ㄷ and ㅌ." },
-    { "id": 45, "stage": 4, "type": "card_reveal", "char": "ㅃ", "jamo": "ㅃ", "romanization": "pp", "audio": "쌍비읍", "hint": "Tense 'p' — lips press hard before popping open. No air escapes." },
-    { "id": 46, "stage": 4, "type": "card_reveal", "char": "ㅆ", "jamo": "ㅆ", "romanization": "ss", "audio": "쌍시옷", "hint": "Tense 's' — a sharp, tight hiss. Used in 있다 (to exist / to have)." },
-    { "id": 47, "stage": 4, "type": "card_reveal", "char": "ㅉ", "jamo": "ㅉ", "romanization": "jj", "audio": "쌍지읒", "hint": "Tense 'j' — sharper and more abrupt than ㅈ. No air burst." },
-    { "id": 48, "stage": 4, "type": "card_reveal", "char": "ㅋ", "jamo": "ㅋ", "romanization": "k (aspirated)", "audio": "키읔", "hint": "Aspirated — a strong burst of air follows the consonant." },
-    { "id": 49, "stage": 4, "type": "card_reveal", "char": "ㅌ", "jamo": "ㅌ", "romanization": "t (aspirated)", "audio": "티읕", "hint": "Aspirated — tongue snaps off the palate with a puff of air." },
-    { "id": 50, "stage": 4, "type": "card_reveal", "char": "ㅍ", "jamo": "ㅍ", "romanization": "p (aspirated)", "audio": "피읖", "hint": "Aspirated — lips burst open with a pop of air. Like 'pot'." },
-    { "id": 51, "stage": 4, "type": "card_reveal", "char": "ㅊ", "jamo": "ㅊ", "romanization": "ch (aspirated)", "audio": "치읓", "hint": "Aspirated 'ch' — like 'cheese' at the start. Air comes out." },
-    { "id": 52, "stage": 4, "type": "card_reveal", "char": "ㅎ", "jamo": "ㅎ", "romanization": "h (breathy)", "audio": "히읗", "hint": "A breathy aspirated consonant. The most air of any Korean consonant." },
-
-    { "id": 53, "stage": 4, "type": "match_quiz", "prompt": "ㄲ romanizes as…", "choices": ["k", "kk", "g/k", "ng"], "correct": "kk" },
-    { "id": 54, "stage": 4, "type": "match_quiz", "prompt": "Which is a TENSE consonant (쌍자음)?", "choices": ["ㅋ", "ㅌ", "ㅆ", "ㅊ"], "correct": "ㅆ" },
-    { "id": 55, "stage": 4, "type": "match_quiz", "prompt": "ㅃ romanizes as…", "choices": ["b", "p", "pp", "bb"], "correct": "pp" },
-    { "id": 56, "stage": 4, "type": "match_quiz", "prompt": "Aspirated consonants are produced with…", "choices": ["No air", "A strong puff of air", "A tense throat", "A nasal sound"], "correct": "A strong puff of air" },
-    { "id": 57, "stage": 4, "type": "match_quiz", "prompt": "ㅉ romanizes as…", "choices": ["ss", "ch", "jj", "tt"], "correct": "jj" },
-
-    { "id": 58, "stage": 5, "type": "card_reveal", "char": "애", "jamo": "ㅐ", "romanization": "ae", "audio": "애", "hint": "ㅏ + ㅣ combined. Like 'e' in 'bed'. Modern Korean = same as 에." },
-    { "id": 59, "stage": 5, "type": "card_reveal", "char": "에", "jamo": "ㅔ", "romanization": "e", "audio": "에", "hint": "ㅓ + ㅣ combined. Like 'e' in 'bed'. Sounds the same as 애 today." },
-    { "id": 60, "stage": 5, "type": "card_reveal", "char": "얘", "jamo": "ㅒ", "romanization": "yae", "audio": "얘", "hint": "ㅑ + ㅣ. Rare — appears in 얘 (this child, colloquial)." },
-    { "id": 61, "stage": 5, "type": "card_reveal", "char": "예", "jamo": "ㅖ", "romanization": "ye", "audio": "예", "hint": "ㅕ + ㅣ. Like 'ye' in 'yes'. 예쁘다 = beautiful." },
-    { "id": 62, "stage": 5, "type": "card_reveal", "char": "와", "jamo": "ㅘ", "romanization": "wa", "audio": "와", "hint": "ㅗ + ㅏ. Like 'wa' in 'water'. 와! = Wow!" },
-    { "id": 63, "stage": 5, "type": "card_reveal", "char": "왜", "jamo": "ㅙ", "romanization": "wae", "audio": "왜", "hint": "ㅗ + ㅐ. Sounds like 'wae'. 왜 = why." },
-    { "id": 64, "stage": 5, "type": "card_reveal", "char": "외", "jamo": "ㅚ", "romanization": "oe", "audio": "외", "hint": "ㅗ + ㅣ. Like 'we'. 외국인 = foreigner." },
-    { "id": 65, "stage": 5, "type": "card_reveal", "char": "워", "jamo": "ㅝ", "romanization": "wo", "audio": "워", "hint": "ㅜ + ㅓ. Like 'wuh'. 뭐 = what (colloquial)." },
-    { "id": 66, "stage": 5, "type": "card_reveal", "char": "웨", "jamo": "ㅞ", "romanization": "we", "audio": "웨", "hint": "ㅜ + ㅔ. Like 'we'. Very rare in Korean." },
-    { "id": 67, "stage": 5, "type": "card_reveal", "char": "위", "jamo": "ㅟ", "romanization": "wi", "audio": "위", "hint": "ㅜ + ㅣ. Like 'wee'. 위 = above / stomach." },
-    { "id": 68, "stage": 5, "type": "card_reveal", "char": "의", "jamo": "ㅢ", "romanization": "ui", "audio": "의", "hint": "ㅡ + ㅣ. A unique glide. 의사 = doctor. Used as possessive particle 의." },
-
-    { "id": 69, "stage": 5, "type": "match_quiz", "prompt": "ㅘ romanizes as…", "choices": ["wo", "wa", "wae", "oe"], "correct": "wa" },
-    { "id": 70, "stage": 5, "type": "match_quiz", "prompt": "왜 means…", "choices": ["what", "who", "why", "where"], "correct": "why" },
-    { "id": 71, "stage": 5, "type": "match_quiz", "prompt": "ㅢ romanizes as…", "choices": ["wi", "ui", "we", "eu"], "correct": "ui" },
-    { "id": 72, "stage": 5, "type": "match_quiz", "prompt": "Which compound vowel uses ㅗ + ㅣ?", "choices": ["ㅘ", "ㅙ", "ㅚ", "ㅝ"], "correct": "ㅚ" },
-    { "id": 73, "stage": 5, "type": "match_quiz", "prompt": "예 romanizes as…", "choices": ["yae", "ye", "ae", "e"], "correct": "ye" },
-
-    { "id": 74, "stage": 6, "type": "listen_repeat", "word": "안녕", "romanization": "annyeong", "meaning": "hello / goodbye (informal)", "audio": "안녕", "syllables": ["안", "녕"] },
-    { "id": 75, "stage": 6, "type": "listen_repeat", "word": "학교", "romanization": "hakgyo", "meaning": "school", "audio": "학교", "syllables": ["학", "교"] },
-    { "id": 76, "stage": 6, "type": "listen_repeat", "word": "한국", "romanization": "hanguk", "meaning": "Korea", "audio": "한국", "syllables": ["한", "국"] },
-    { "id": 77, "stage": 6, "type": "listen_repeat", "word": "사랑", "romanization": "sarang", "meaning": "love", "audio": "사랑", "syllables": ["사", "랑"] },
-    { "id": 78, "stage": 6, "type": "listen_repeat", "word": "물", "romanization": "mul", "meaning": "water", "audio": "물", "syllables": ["물"] },
-    { "id": 79, "stage": 6, "type": "listen_repeat", "word": "밥", "romanization": "bap", "meaning": "rice / meal", "audio": "밥", "syllables": ["밥"] },
-    { "id": 80, "stage": 6, "type": "listen_repeat", "word": "사람", "romanization": "saram", "meaning": "person", "audio": "사람", "syllables": ["사", "람"] },
-    { "id": 81, "stage": 6, "type": "listen_repeat", "word": "친구", "romanization": "chingu", "meaning": "friend", "audio": "친구", "syllables": ["친", "구"] },
-    { "id": 82, "stage": 6, "type": "listen_repeat", "word": "하늘", "romanization": "haneul", "meaning": "sky", "audio": "하늘", "syllables": ["하", "늘"] },
-    { "id": 83, "stage": 6, "type": "listen_repeat", "word": "고마워", "romanization": "gomawo", "meaning": "thank you (informal)", "audio": "고마워", "syllables": ["고", "마", "워"] },
-    { "id": 84, "stage": 6, "type": "lesson_complete", "title": "You can read Korean!", "title_kr": "이제 한글을 읽을 수 있어요!", "message": "Incredible work — you've completed all 6 stages of Hangul. You can now read and write every character in the Korean alphabet. 화이팅!" }
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㄱ",
+      "jamo": "ㄱ",
+      "romanization": "g / k",
+      "audio": "기역",
+      "example_word": "가다",
+      "example_meaning": "to go",
+      "hint": "Shaped like the back of the throat blocking airflow.",
+      "katakana": "カダ",
+      "hint_ja": "喉の奥で気流を止める形をした文字です",
+      "example_meaning_ja": "行く"
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㄴ",
+      "jamo": "ㄴ",
+      "romanization": "n",
+      "audio": "니은",
+      "example_word": "나",
+      "example_meaning": "I / me",
+      "hint": "Shaped like a tongue tip touching the roof of the mouth.",
+      "katakana": "ナ",
+      "hint_ja": "舌先が口の天井に触れる形をした文字です",
+      "example_meaning_ja": "私"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㄷ",
+      "jamo": "ㄷ",
+      "romanization": "d / t",
+      "audio": "디귿",
+      "example_word": "다",
+      "example_meaning": "all / every",
+      "hint": "Like ㄴ with a roof — tongue fully blocks the palate.",
+      "katakana": "タ",
+      "hint_ja": "ㄴに屋根を加えた形で、舌が口蓋全体をふさぎます",
+      "example_meaning_ja": "すべて・全部"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㄹ",
+      "jamo": "ㄹ",
+      "romanization": "r / l",
+      "audio": "리을",
+      "example_word": "리",
+      "example_meaning": "reason (prefix)",
+      "hint": "A flap — between English 'r' and 'l'. Tongue taps the palate.",
+      "katakana": "リ",
+      "hint_ja": "英語のrとlの中間音で、舌が口蓋を軽くはじきます",
+      "example_meaning_ja": "理（接頭辞）"
+    },
+    {
+      "id": 5,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅁ",
+      "jamo": "ㅁ",
+      "romanization": "m",
+      "audio": "미음",
+      "example_word": "마음",
+      "example_meaning": "heart / mind",
+      "hint": "Shaped like closed lips pressing together to make 'm'.",
+      "katakana": "マウム",
+      "hint_ja": "唇をぴったり閉じる形で、mの音を作ります",
+      "example_meaning_ja": "心・気持ち"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅂ",
+      "jamo": "ㅂ",
+      "romanization": "b / p",
+      "audio": "비읍",
+      "example_word": "밥",
+      "example_meaning": "rice / meal",
+      "hint": "Shaped like lips opening to release the 'b' or 'p' sound.",
+      "katakana": "バプ",
+      "hint_ja": "唇が開いてbまたはpの音を出す形をしています",
+      "example_meaning_ja": "ご飯・食事"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅅ",
+      "jamo": "ㅅ",
+      "romanization": "s",
+      "audio": "시옷",
+      "example_word": "사람",
+      "example_meaning": "person",
+      "hint": "Shaped like two teeth — air hisses through for the 's' sound.",
+      "katakana": "サラム",
+      "hint_ja": "歯のような形で、sの音が歯の間から漏れます",
+      "example_meaning_ja": "人"
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅇ",
+      "jamo": "ㅇ",
+      "romanization": "ng / silent",
+      "audio": "이응",
+      "example_word": "아이",
+      "example_meaning": "child",
+      "hint": "Silent at the start of a syllable. Sounds like 'ng' at the end.",
+      "katakana": "アイ",
+      "hint_ja": "音節の先頭では無音。末尾ではngの音になります",
+      "example_meaning_ja": "子供"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅈ",
+      "jamo": "ㅈ",
+      "romanization": "j",
+      "audio": "지읒",
+      "example_word": "지금",
+      "example_meaning": "now",
+      "hint": "Like 'j' in 'juice'. Tongue presses behind upper teeth.",
+      "katakana": "チグム",
+      "hint_ja": "英語のjに似た音で、舌が前歯の裏に押し当てられます",
+      "example_meaning_ja": "今"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅊ",
+      "jamo": "ㅊ",
+      "romanization": "ch",
+      "audio": "치읓",
+      "example_word": "차",
+      "example_meaning": "tea / car",
+      "hint": "Aspirated 'ch' — a puff of air comes out. Like 'ch' in 'cheese'.",
+      "katakana": "チャ",
+      "hint_ja": "気息を伴うch音で、息が強く出ます",
+      "example_meaning_ja": "お茶・車"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅋ",
+      "jamo": "ㅋ",
+      "romanization": "k",
+      "audio": "키읔",
+      "example_word": "커피",
+      "example_meaning": "coffee",
+      "hint": "Aspirated 'k' — strong puff of air. Hold a tissue and it flutters.",
+      "katakana": "コピ",
+      "hint_ja": "気息を伴うk音で、息が強く出ます",
+      "example_meaning_ja": "コーヒー"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅌ",
+      "jamo": "ㅌ",
+      "romanization": "t",
+      "audio": "티읕",
+      "example_word": "타다",
+      "example_meaning": "to ride",
+      "hint": "Aspirated 't' — like 't' in 'ten' (at word start). Strong burst.",
+      "katakana": "タダ",
+      "hint_ja": "気息を伴うt音で、語頭ではtenのtのように強い破裂音です",
+      "example_meaning_ja": "乗る"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅍ",
+      "jamo": "ㅍ",
+      "romanization": "p",
+      "audio": "피읖",
+      "example_word": "파",
+      "example_meaning": "green onion",
+      "hint": "Aspirated 'p' — like 'p' in 'pot'. Lips pop apart with air.",
+      "katakana": "パ",
+      "hint_ja": "気息を伴うp音で、potのpのように唇が弾けます",
+      "example_meaning_ja": "ネギ"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "card_reveal",
+      "char": "ㅎ",
+      "jamo": "ㅎ",
+      "romanization": "h",
+      "audio": "히읗",
+      "example_word": "하늘",
+      "example_meaning": "sky",
+      "hint": "A breathy 'h' — like exhaling warmth onto your hand.",
+      "katakana": "ハヌル",
+      "hint_ja": "息を吐くようなh音で、手に温かい息をかけるように発音します",
+      "example_meaning_ja": "空"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "ㄱ romanizes as…",
+      "choices": [
+        "n",
+        "g/k",
+        "d/t",
+        "m"
+      ],
+      "correct": "g/k"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Which consonant is SILENT at the start of a syllable?",
+      "choices": [
+        "ㄱ",
+        "ㄴ",
+        "ㅇ",
+        "ㅅ"
+      ],
+      "correct": "ㅇ"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "ㄴ romanizes as…",
+      "choices": [
+        "r/l",
+        "m",
+        "n",
+        "b/p"
+      ],
+      "correct": "n"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Which consonant sounds like 'j' in 'juice'?",
+      "choices": [
+        "ㅂ",
+        "ㅈ",
+        "ㅅ",
+        "ㄷ"
+      ],
+      "correct": "ㅈ"
+    },
+    {
+      "id": 19,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "ㅁ romanizes as…",
+      "choices": [
+        "b",
+        "n",
+        "m",
+        "h"
+      ],
+      "correct": "m"
+    },
+    {
+      "id": 20,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "ㄹ romanizes as…",
+      "choices": [
+        "n",
+        "d/t",
+        "r/l",
+        "s"
+      ],
+      "correct": "r/l"
+    },
+    {
+      "id": 21,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "밥 (rice) starts with which consonant?",
+      "choices": [
+        "ㅂ",
+        "ㅍ",
+        "ㅁ",
+        "ㅂ"
+      ],
+      "correct": "ㅂ"
+    },
+    {
+      "id": 22,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "아",
+      "jamo": "ㅏ",
+      "romanization": "a",
+      "audio": "아",
+      "hint": "Open your mouth wide, like saying 'ah' at the doctor.",
+      "katakana": "ア",
+      "hint_ja": "口を大きく開けて「ア」と言う感じです（医者に診てもらうときのように）"
+    },
+    {
+      "id": 23,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "야",
+      "jamo": "ㅑ",
+      "romanization": "ya",
+      "audio": "야",
+      "hint": "Like 'ya' in 'yard'. The extra stroke means a 'y' is added.",
+      "katakana": "ヤ",
+      "hint_ja": "「ヤ」の音です。余分な画はy音の追加を意味します"
+    },
+    {
+      "id": 24,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "어",
+      "jamo": "ㅓ",
+      "romanization": "eo",
+      "audio": "어",
+      "hint": "Similar to 'uh' or 'o' in 'the other'. Lips slightly rounded.",
+      "katakana": "オ",
+      "hint_ja": "「オ」に近い音で、唇をわずかに丸めます"
+    },
+    {
+      "id": 25,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "여",
+      "jamo": "ㅕ",
+      "romanization": "yeo",
+      "audio": "여",
+      "hint": "Like 'yuh' with rounded lips. Two strokes = 'y' prefix.",
+      "katakana": "ヨ",
+      "hint_ja": "唇を丸めた「ヨ」の音です。二本の画がyの接頭を示します"
+    },
+    {
+      "id": 26,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "오",
+      "jamo": "ㅗ",
+      "romanization": "o",
+      "audio": "오",
+      "hint": "Like 'o' in 'more'. Round your lips as if blowing a candle.",
+      "katakana": "オ",
+      "hint_ja": "「オ」の音で、唇を丸めてロウソクを吹き消すように"
+    },
+    {
+      "id": 27,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "요",
+      "jamo": "ㅛ",
+      "romanization": "yo",
+      "audio": "요",
+      "hint": "Like 'yo!' — two strokes add the 'y'. Used a lot in speech.",
+      "katakana": "ヨ",
+      "hint_ja": "「ヨ！」の音です。二本の画がyを追加します"
+    },
+    {
+      "id": 28,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "우",
+      "jamo": "ㅜ",
+      "romanization": "u",
+      "audio": "우",
+      "hint": "Like 'oo' in 'boot'. The line points DOWN — mouth drops.",
+      "katakana": "ウ",
+      "hint_ja": "「ウ」の音です。画が下向き——口を下げます"
+    },
+    {
+      "id": 29,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "유",
+      "jamo": "ㅠ",
+      "romanization": "yu",
+      "audio": "유",
+      "hint": "Like 'you'. Two downward strokes signal the 'y' prefix.",
+      "katakana": "ユ",
+      "hint_ja": "「ユ」の音です。下向きの二本の画がyの接頭を示します"
+    },
+    {
+      "id": 30,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "으",
+      "jamo": "ㅡ",
+      "romanization": "eu",
+      "audio": "으",
+      "hint": "Like the 'e' sound when you're unsatisfied: 'euugh'. Flat lips.",
+      "katakana": "ウ",
+      "hint_ja": "「ウ」に似た音で、唇を平らにして不満そうに「うぅ」という感じです"
+    },
+    {
+      "id": 31,
+      "stage": 2,
+      "type": "card_reveal",
+      "char": "이",
+      "jamo": "ㅣ",
+      "romanization": "i",
+      "audio": "이",
+      "hint": "Like 'ee' in 'bee'. A simple vertical stroke — pure high front vowel.",
+      "katakana": "イ",
+      "hint_ja": "「イ」の音です。縦一本の画——高く前よりの純粋な母音"
+    },
+    {
+      "id": 32,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "Which vowel sounds like 'a' (as in 'father')?",
+      "choices": [
+        "ㅏ",
+        "ㅗ",
+        "ㅜ",
+        "ㅣ"
+      ],
+      "correct": "ㅏ"
+    },
+    {
+      "id": 33,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "Which vowel sounds like 'o' (as in 'more')?",
+      "choices": [
+        "ㅓ",
+        "ㅗ",
+        "ㅡ",
+        "ㅑ"
+      ],
+      "correct": "ㅗ"
+    },
+    {
+      "id": 34,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "Which vowel sounds like 'ee' (as in 'bee')?",
+      "choices": [
+        "ㅓ",
+        "ㅛ",
+        "ㅣ",
+        "ㅠ"
+      ],
+      "correct": "ㅣ"
+    },
+    {
+      "id": 35,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "ㅠ romanizes as…",
+      "choices": [
+        "u",
+        "eu",
+        "yo",
+        "yu"
+      ],
+      "correct": "yu"
+    },
+    {
+      "id": 36,
+      "stage": 2,
+      "type": "match_quiz",
+      "prompt": "ㅡ sounds like…",
+      "choices": [
+        "ya",
+        "i",
+        "eu",
+        "yo"
+      ],
+      "correct": "eu"
+    },
+    {
+      "id": 37,
+      "stage": 3,
+      "type": "syllable_builder",
+      "consonant": "ㅂ",
+      "vowel": "ㅏ",
+      "result": "바",
+      "audio": "바",
+      "meaning": "ba — as in 바나나 (banana)",
+      "meaning_ja": "ba — 바나나（バナナ）"
+    },
+    {
+      "id": 38,
+      "stage": 3,
+      "type": "syllable_builder",
+      "consonant": "ㄴ",
+      "vowel": "ㅏ",
+      "result": "나",
+      "audio": "나",
+      "meaning": "na — as in 나 (me)",
+      "meaning_ja": "na — 나（私）"
+    },
+    {
+      "id": 39,
+      "stage": 3,
+      "type": "syllable_builder",
+      "consonant": "ㅅ",
+      "vowel": "ㅏ",
+      "result": "사",
+      "audio": "사",
+      "meaning": "sa — as in 사랑 (love)",
+      "meaning_ja": "sa — 사랑（愛）"
+    },
+    {
+      "id": 40,
+      "stage": 3,
+      "type": "syllable_builder",
+      "consonant": "ㄱ",
+      "vowel": "ㅗ",
+      "result": "고",
+      "audio": "고",
+      "meaning": "go — as in 고마워 (thank you)",
+      "meaning_ja": "go — 고마워（ありがとう）"
+    },
+    {
+      "id": 41,
+      "stage": 3,
+      "type": "syllable_builder",
+      "consonant": "ㅎ",
+      "vowel": "ㅏ",
+      "result": "하",
+      "audio": "하",
+      "meaning": "ha — as in 하늘 (sky)",
+      "meaning_ja": "ha — 하늘（空）"
+    },
+    {
+      "id": 42,
+      "stage": 3,
+      "type": "syllable_builder",
+      "consonant": "ㅁ",
+      "vowel": "ㅜ",
+      "result": "무",
+      "audio": "무",
+      "meaning": "mu — as in 무엇 (what)",
+      "meaning_ja": "mu — 무엇（何）"
+    },
+    {
+      "id": 43,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㄲ",
+      "jamo": "ㄲ",
+      "romanization": "kk",
+      "audio": "쌍기역",
+      "hint": "Tense 'k' — hold your breath then release. No air puff.",
+      "katakana": "ッカ",
+      "hint_ja": "緊張音のk——息を止めてから解放します。息は出ません"
+    },
+    {
+      "id": 44,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㄸ",
+      "jamo": "ㄸ",
+      "romanization": "tt",
+      "audio": "쌍디귿",
+      "hint": "Tense 't' — throat tightens before releasing. Distinct from ㄷ and ㅌ.",
+      "katakana": "ッタ",
+      "hint_ja": "緊張音のt——喉を絞めてから解放します。ㄷやㅌと区別します"
+    },
+    {
+      "id": 45,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㅃ",
+      "jamo": "ㅃ",
+      "romanization": "pp",
+      "audio": "쌍비읍",
+      "hint": "Tense 'p' — lips press hard before popping open. No air escapes.",
+      "katakana": "ッパ",
+      "hint_ja": "緊張音のp——唇を強く押し当ててから開きます。息は出ません"
+    },
+    {
+      "id": 46,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㅆ",
+      "jamo": "ㅆ",
+      "romanization": "ss",
+      "audio": "쌍시옷",
+      "hint": "Tense 's' — a sharp, tight hiss. Used in 있다 (to exist / to have).",
+      "katakana": "ッサ",
+      "hint_ja": "緊張音のs——鋭い短い息の音です。있다（ある・いる）に使われます"
+    },
+    {
+      "id": 47,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㅉ",
+      "jamo": "ㅉ",
+      "romanization": "jj",
+      "audio": "쌍지읒",
+      "hint": "Tense 'j' — sharper and more abrupt than ㅈ. No air burst.",
+      "katakana": "ッチャ",
+      "hint_ja": "緊張音のj——ㅈより鋭く突然な音です。息の破裂はありません"
+    },
+    {
+      "id": 48,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㅋ",
+      "jamo": "ㅋ",
+      "romanization": "k (aspirated)",
+      "audio": "키읔",
+      "hint": "Aspirated — a strong burst of air follows the consonant.",
+      "katakana": "カ",
+      "hint_ja": "気息音——子音の後に強い息の破裂が続きます"
+    },
+    {
+      "id": 49,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㅌ",
+      "jamo": "ㅌ",
+      "romanization": "t (aspirated)",
+      "audio": "티읕",
+      "hint": "Aspirated — tongue snaps off the palate with a puff of air.",
+      "katakana": "タ",
+      "hint_ja": "気息音——舌が口蓋から離れると息が出ます"
+    },
+    {
+      "id": 50,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㅍ",
+      "jamo": "ㅍ",
+      "romanization": "p (aspirated)",
+      "audio": "피읖",
+      "hint": "Aspirated — lips burst open with a pop of air. Like 'pot'.",
+      "katakana": "パ",
+      "hint_ja": "気息音——唇がパッと開いて息が出ます。potのpのように"
+    },
+    {
+      "id": 51,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㅊ",
+      "jamo": "ㅊ",
+      "romanization": "ch (aspirated)",
+      "audio": "치읓",
+      "hint": "Aspirated 'ch' — like 'cheese' at the start. Air comes out.",
+      "katakana": "チャ",
+      "hint_ja": "気息のch——語頭の「チーズ」のように。息が出ます"
+    },
+    {
+      "id": 52,
+      "stage": 4,
+      "type": "card_reveal",
+      "char": "ㅎ",
+      "jamo": "ㅎ",
+      "romanization": "h (breathy)",
+      "audio": "히읗",
+      "hint": "A breathy aspirated consonant. The most air of any Korean consonant.",
+      "katakana": "ハ",
+      "hint_ja": "息を吐くような気息音。韓国語の子音の中で最も息が出ます"
+    },
+    {
+      "id": 53,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "ㄲ romanizes as…",
+      "choices": [
+        "k",
+        "kk",
+        "g/k",
+        "ng"
+      ],
+      "correct": "kk"
+    },
+    {
+      "id": 54,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "Which is a TENSE consonant (쌍자음)?",
+      "choices": [
+        "ㅋ",
+        "ㅌ",
+        "ㅆ",
+        "ㅊ"
+      ],
+      "correct": "ㅆ"
+    },
+    {
+      "id": 55,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "ㅃ romanizes as…",
+      "choices": [
+        "b",
+        "p",
+        "pp",
+        "bb"
+      ],
+      "correct": "pp"
+    },
+    {
+      "id": 56,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "Aspirated consonants are produced with…",
+      "choices": [
+        "No air",
+        "A strong puff of air",
+        "A tense throat",
+        "A nasal sound"
+      ],
+      "correct": "A strong puff of air"
+    },
+    {
+      "id": 57,
+      "stage": 4,
+      "type": "match_quiz",
+      "prompt": "ㅉ romanizes as…",
+      "choices": [
+        "ss",
+        "ch",
+        "jj",
+        "tt"
+      ],
+      "correct": "jj"
+    },
+    {
+      "id": 58,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "애",
+      "jamo": "ㅐ",
+      "romanization": "ae",
+      "audio": "애",
+      "hint": "ㅏ + ㅣ combined. Like 'e' in 'bed'. Modern Korean = same as 에.",
+      "katakana": "エ",
+      "hint_ja": "ㅏ+ㅣの合成。「エ」の音。現代韓国語ではエと同じ発音"
+    },
+    {
+      "id": 59,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "에",
+      "jamo": "ㅔ",
+      "romanization": "e",
+      "audio": "에",
+      "hint": "ㅓ + ㅣ combined. Like 'e' in 'bed'. Sounds the same as 애 today.",
+      "katakana": "エ",
+      "hint_ja": "ㅓ+ㅣの合成。「エ」の音。現代ではㅐと同じ発音"
+    },
+    {
+      "id": 60,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "얘",
+      "jamo": "ㅒ",
+      "romanization": "yae",
+      "audio": "얘",
+      "hint": "ㅑ + ㅣ. Rare — appears in 얘 (this child, colloquial).",
+      "katakana": "イェ",
+      "hint_ja": "ㅑ+ㅣ。まれな母音——얘（この子、口語）に見られます"
+    },
+    {
+      "id": 61,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "예",
+      "jamo": "ㅖ",
+      "romanization": "ye",
+      "audio": "예",
+      "hint": "ㅕ + ㅣ. Like 'ye' in 'yes'. 예쁘다 = beautiful.",
+      "katakana": "イェ",
+      "hint_ja": "ㅕ+ㅣ。yesのyeのような音。예쁘다＝かわいい"
+    },
+    {
+      "id": 62,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "와",
+      "jamo": "ㅘ",
+      "romanization": "wa",
+      "audio": "와",
+      "hint": "ㅗ + ㅏ. Like 'wa' in 'water'. 와! = Wow!",
+      "katakana": "ワ",
+      "hint_ja": "ㅗ+ㅏ。waterのwaのような音。와！＝ワオ！"
+    },
+    {
+      "id": 63,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "왜",
+      "jamo": "ㅙ",
+      "romanization": "wae",
+      "audio": "왜",
+      "hint": "ㅗ + ㅐ. Sounds like 'wae'. 왜 = why.",
+      "katakana": "ウェ",
+      "hint_ja": "ㅗ+ㅐ。「ウェ」の音。왜＝なぜ"
+    },
+    {
+      "id": 64,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "외",
+      "jamo": "ㅚ",
+      "romanization": "oe",
+      "audio": "외",
+      "hint": "ㅗ + ㅣ. Like 'we'. 외국인 = foreigner.",
+      "katakana": "ウェ",
+      "hint_ja": "ㅗ+ㅣ。「ウェ」に似た音。외국인＝外国人"
+    },
+    {
+      "id": 65,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "워",
+      "jamo": "ㅝ",
+      "romanization": "wo",
+      "audio": "워",
+      "hint": "ㅜ + ㅓ. Like 'wuh'. 뭐 = what (colloquial).",
+      "katakana": "ウォ",
+      "hint_ja": "ㅜ+ㅓ。「ウォ」のような音。뭐＝何（口語）"
+    },
+    {
+      "id": 66,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "웨",
+      "jamo": "ㅞ",
+      "romanization": "we",
+      "audio": "웨",
+      "hint": "ㅜ + ㅔ. Like 'we'. Very rare in Korean.",
+      "katakana": "ウェ",
+      "hint_ja": "ㅜ+ㅔ。「ウェ」のような音。韓国語では非常にまれ"
+    },
+    {
+      "id": 67,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "위",
+      "jamo": "ㅟ",
+      "romanization": "wi",
+      "audio": "위",
+      "hint": "ㅜ + ㅣ. Like 'wee'. 위 = above / stomach.",
+      "katakana": "ウィ",
+      "hint_ja": "ㅜ+ㅣ。「ウィ」のような音。위＝上・胃"
+    },
+    {
+      "id": 68,
+      "stage": 5,
+      "type": "card_reveal",
+      "char": "의",
+      "jamo": "ㅢ",
+      "romanization": "ui",
+      "audio": "의",
+      "hint": "ㅡ + ㅣ. A unique glide. 의사 = doctor. Used as possessive particle 의.",
+      "katakana": "ウィ",
+      "hint_ja": "ㅡ+ㅣ。独特の二重母音。의사＝医者。所有格助詞の의にも使われます"
+    },
+    {
+      "id": 69,
+      "stage": 5,
+      "type": "match_quiz",
+      "prompt": "ㅘ romanizes as…",
+      "choices": [
+        "wo",
+        "wa",
+        "wae",
+        "oe"
+      ],
+      "correct": "wa"
+    },
+    {
+      "id": 70,
+      "stage": 5,
+      "type": "match_quiz",
+      "prompt": "왜 means…",
+      "choices": [
+        "what",
+        "who",
+        "why",
+        "where"
+      ],
+      "correct": "why"
+    },
+    {
+      "id": 71,
+      "stage": 5,
+      "type": "match_quiz",
+      "prompt": "ㅢ romanizes as…",
+      "choices": [
+        "wi",
+        "ui",
+        "we",
+        "eu"
+      ],
+      "correct": "ui"
+    },
+    {
+      "id": 72,
+      "stage": 5,
+      "type": "match_quiz",
+      "prompt": "Which compound vowel uses ㅗ + ㅣ?",
+      "choices": [
+        "ㅘ",
+        "ㅙ",
+        "ㅚ",
+        "ㅝ"
+      ],
+      "correct": "ㅚ"
+    },
+    {
+      "id": 73,
+      "stage": 5,
+      "type": "match_quiz",
+      "prompt": "예 romanizes as…",
+      "choices": [
+        "yae",
+        "ye",
+        "ae",
+        "e"
+      ],
+      "correct": "ye"
+    },
+    {
+      "id": 74,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "안녕",
+      "romanization": "annyeong",
+      "meaning": "hello / goodbye (informal)",
+      "audio": "안녕",
+      "syllables": [
+        "안",
+        "녕"
+      ],
+      "katakana": "アンニョン"
+    },
+    {
+      "id": 75,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "학교",
+      "romanization": "hakgyo",
+      "meaning": "school",
+      "audio": "학교",
+      "syllables": [
+        "학",
+        "교"
+      ],
+      "katakana": "ハッキョ"
+    },
+    {
+      "id": 76,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "한국",
+      "romanization": "hanguk",
+      "meaning": "Korea",
+      "audio": "한국",
+      "syllables": [
+        "한",
+        "국"
+      ],
+      "katakana": "ハングク"
+    },
+    {
+      "id": 77,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "사랑",
+      "romanization": "sarang",
+      "meaning": "love",
+      "audio": "사랑",
+      "syllables": [
+        "사",
+        "랑"
+      ],
+      "katakana": "サラン"
+    },
+    {
+      "id": 78,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "물",
+      "romanization": "mul",
+      "meaning": "water",
+      "audio": "물",
+      "syllables": [
+        "물"
+      ],
+      "katakana": "ムル"
+    },
+    {
+      "id": 79,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "밥",
+      "romanization": "bap",
+      "meaning": "rice / meal",
+      "audio": "밥",
+      "syllables": [
+        "밥"
+      ],
+      "katakana": "バプ"
+    },
+    {
+      "id": 80,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "사람",
+      "romanization": "saram",
+      "meaning": "person",
+      "audio": "사람",
+      "syllables": [
+        "사",
+        "람"
+      ],
+      "katakana": "サラム"
+    },
+    {
+      "id": 81,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "친구",
+      "romanization": "chingu",
+      "meaning": "friend",
+      "audio": "친구",
+      "syllables": [
+        "친",
+        "구"
+      ],
+      "katakana": "チング"
+    },
+    {
+      "id": 82,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "하늘",
+      "romanization": "haneul",
+      "meaning": "sky",
+      "audio": "하늘",
+      "syllables": [
+        "하",
+        "늘"
+      ],
+      "katakana": "ハヌル"
+    },
+    {
+      "id": 83,
+      "stage": 6,
+      "type": "listen_repeat",
+      "word": "고마워",
+      "romanization": "gomawo",
+      "meaning": "thank you (informal)",
+      "audio": "고마워",
+      "syllables": [
+        "고",
+        "마",
+        "워"
+      ],
+      "katakana": "コマウォ"
+    },
+    {
+      "id": 84,
+      "stage": 6,
+      "type": "lesson_complete",
+      "title": "You can read Korean!",
+      "title_kr": "이제 한글을 읽을 수 있어요!",
+      "message": "Incredible work — you've completed all 6 stages of Hangul. You can now read and write every character in the Korean alphabet. 화이팅!"
+    }
   ]
 }

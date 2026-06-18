@@ -2,7 +2,14 @@
   "lesson": "vocab-news",
   "totalSteps": 21,
   "stages": [
-    { "id": 1, "name": "News & Society", "name_kr": "뉴스·사회", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "News & Society",
+      "name_kr": "뉴스·사회",
+      "first_step": 1,
+      "last_step": 21,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,25 @@
       "title": "News & Society Vocabulary",
       "title_kr": "뉴스와 사회 어휘",
       "body": "Korean news vocabulary bridges formal education and real-world fluency. Major Korean news outlets like KBS, MBC, and JTBC use precise, formal vocabulary. Understanding news language accelerates TOPIK preparation and helps you understand the society you are learning about.",
-      "tip": { "icon": "📰", "label": "Sino-Korean in news", "text": "News vocabulary in Korean is heavily Sino-Korean (한자어). Words like 정치 (politics), 경제 (economy), and 사회 (society) all come from Chinese characters. Learning their characters helps you predict meanings across related words." }
+      "tip": {
+        "icon": "📰",
+        "label": "Sino-Korean in news",
+        "text": "News vocabulary in Korean is heavily Sino-Korean (한자어). Words like 정치 (politics), 경제 (economy), and 사회 (society) all come from Chinese characters. Learning their characters helps you predict meanings across related words."
+      },
+      "body_ja": "韓国語のニュース語彙は、正式な教育と実践的な流暢さをつなぐ橋です。KBS・MBC・JTBCなどの主要メディアは正確なフォーマル語彙を使います。ニュース言語を理解すればTOPIK対策が加速し、学んでいる社会への理解も深まります。",
+      "tip_ja": {
+        "label": "ニュースの漢字語",
+        "text": "韓国語のニュース語彙は漢字語（한자어）が多く使われます。정치（政治）・경제（経済）・사회（社会）はすべて漢字由来です。漢字を学ぶと関連語の意味が予測できるようになります。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["뉴", "스"],
+      "syllables": [
+        "뉴",
+        "스"
+      ],
       "romanization": "nyuseu",
       "katakana": "ニュス",
       "audio": "뉴스",
@@ -29,7 +48,10 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["기", "사"],
+      "syllables": [
+        "기",
+        "사"
+      ],
       "romanization": "gisa",
       "katakana": "キサ",
       "audio": "기사",
@@ -40,7 +62,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["정", "치"],
+      "syllables": [
+        "정",
+        "치"
+      ],
       "romanization": "jeongchi",
       "katakana": "チョンチ",
       "audio": "정치",
@@ -51,7 +76,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["경", "제"],
+      "syllables": [
+        "경",
+        "제"
+      ],
       "romanization": "gyeongje",
       "katakana": "キョンジェ",
       "audio": "경제",
@@ -62,7 +90,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["사", "회"],
+      "syllables": [
+        "사",
+        "회"
+      ],
       "romanization": "sahoe",
       "katakana": "サフェ",
       "audio": "사회",
@@ -73,7 +104,10 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["환", "경"],
+      "syllables": [
+        "환",
+        "경"
+      ],
       "romanization": "hwangyeong",
       "katakana": "ファンギョン",
       "audio": "환경",
@@ -84,7 +118,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["교", "육"],
+      "syllables": [
+        "교",
+        "육"
+      ],
       "romanization": "gyoyuk",
       "katakana": "キョユク",
       "audio": "교육",
@@ -95,7 +132,10 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["과", "학"],
+      "syllables": [
+        "과",
+        "학"
+      ],
       "romanization": "gwahak",
       "katakana": "クァハク",
       "audio": "과학",
@@ -106,7 +146,10 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["선", "거"],
+      "syllables": [
+        "선",
+        "거"
+      ],
       "romanization": "seongeo",
       "katakana": "ソンゴ",
       "audio": "선거",
@@ -117,7 +160,11 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["대", "통", "령"],
+      "syllables": [
+        "대",
+        "통",
+        "령"
+      ],
       "romanization": "daetongnyeong",
       "katakana": "テトンリョン",
       "audio": "대통령",
@@ -128,7 +175,10 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["국", "회"],
+      "syllables": [
+        "국",
+        "회"
+      ],
       "romanization": "gukhoe",
       "katakana": "ククフェ",
       "audio": "국회",
@@ -139,7 +189,9 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["법"],
+      "syllables": [
+        "법"
+      ],
       "romanization": "beop",
       "katakana": "ポプ",
       "audio": "법",
@@ -150,7 +202,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["정", "책"],
+      "syllables": [
+        "정",
+        "책"
+      ],
       "romanization": "jeongchaek",
       "katakana": "チョンチェク",
       "audio": "정책",
@@ -161,7 +216,10 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["시", "민"],
+      "syllables": [
+        "시",
+        "민"
+      ],
       "romanization": "simin",
       "katakana": "シミン",
       "audio": "시민",
@@ -172,7 +230,10 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["인", "구"],
+      "syllables": [
+        "인",
+        "구"
+      ],
       "romanization": "ingu",
       "katakana": "イング",
       "audio": "인구",
@@ -183,7 +244,10 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["국", "제"],
+      "syllables": [
+        "국",
+        "제"
+      ],
       "romanization": "gukje",
       "katakana": "ククジェ",
       "audio": "국제",
@@ -195,24 +259,60 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "선거일 is...",
-      "choices": ["Election day", "National holiday", "Press conference", "Parliament day"],
-      "correct": "Election day"
+      "choices": [
+        "Election day",
+        "National holiday",
+        "Press conference",
+        "Parliament day"
+      ],
+      "choices_ja": [
+        "選挙日",
+        "祝日",
+        "記者会見",
+        "議会の日"
+      ],
+      "correct": "Election day",
+      "prompt_ja": "선거일とは？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Korea's parliament is called...",
-      "choices": ["대통령 (daetongnyeong)", "국회 (gukhoe)", "정책 (jeongchaek)", "사회 (sahoe)"],
-      "correct": "국회 (gukhoe)"
+      "choices": [
+        "대통령 (daetongnyeong)",
+        "국회 (gukhoe)",
+        "정책 (jeongchaek)",
+        "사회 (sahoe)"
+      ],
+      "choices_ja": [
+        "대통령（大統領）",
+        "국회（国会）",
+        "정책（政策）",
+        "사회（社会）"
+      ],
+      "correct": "국회 (gukhoe)",
+      "prompt_ja": "韓国の国会は何と呼ばれますか？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "교육열 literally means 'education fever.' The word 교육 means...",
-      "choices": ["Competition", "Education", "Studying abroad", "Graduation"],
-      "correct": "Education"
+      "choices": [
+        "Competition",
+        "Education",
+        "Studying abroad",
+        "Graduation"
+      ],
+      "choices_ja": [
+        "競争",
+        "教育",
+        "留学",
+        "卒業"
+      ],
+      "correct": "Education",
+      "prompt_ja": "교육열は「教育熱」を意味します。교육の意味は？"
     },
     {
       "id": 21,
@@ -221,7 +321,8 @@
       "title": "News & Society Complete!",
       "title_kr": "뉴스·사회 완성!",
       "message": "뉴스 한국어 완성! News vocabulary is the gateway to understanding Korean society, politics, and culture at the deepest level. Reading Korean news articles will now feel much more accessible.",
-      "next_url": "vocabulary.html?cat=konglish"
+      "next_url": "vocabulary.html?cat=konglish",
+      "message_ja": "뉴스 한국어 완성！ニュース語彙は韓国の社会・政治・文化を最も深いレベルで理解する鍵です。韓国語のニュース記事がずっと読みやすくなるでしょう。"
     }
   ]
 }

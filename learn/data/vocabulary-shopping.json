@@ -2,7 +2,14 @@
   "lesson": "vocab-shopping",
   "totalSteps": 21,
   "stages": [
-    { "id": 1, "name": "Shopping", "name_kr": "쇼핑", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Shopping",
+      "name_kr": "쇼핑",
+      "first_step": 1,
+      "last_step": 21,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,27 @@
       "title": "Shopping in Korean",
       "title_kr": "쇼핑",
       "body": "Korea is a shopper's paradise — from Dongdaemun's 24-hour fashion markets to sleek duty-free department stores and Olive Young K-beauty chains. The most important phrase: 얼마예요? (How much is it?). Most stores accept card payments, and bargaining is possible at traditional markets.",
-      "tip": { "icon": "🛒", "label": "Market culture", "text": "At traditional markets (시장, sijang), asking 깎아 주세요 (Please lower the price) is expected and welcome. At department stores, prices are fixed. Knowing the difference avoids awkward moments." }
+      "tip": {
+        "icon": "🛒",
+        "label": "Market culture",
+        "text": "At traditional markets (시장, sijang), asking 깎아 주세요 (Please lower the price) is expected and welcome. At department stores, prices are fixed. Knowing the difference avoids awkward moments."
+      },
+      "body_ja": "韓国は買い物天国―東大門の24時間ファッションマーケットから洗練された免税デパート、オリーブヤングのK-ビューティーチェーンまで。最重要フレーズ：얼마예요？（いくらですか？）。ほとんどの店でカード払い可能で、伝統市場では値引き交渉もできます。",
+      "tip_ja": {
+        "label": "市場文化",
+        "text": "伝統市場（시장）では깎아 주세요（値引きしてください）と言うのが当然でむしろ歓迎されます。デパートは定価制です。違いを知ることで気まずい思いをしません。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["얼", "마", "예", "요"],
+      "syllables": [
+        "얼",
+        "마",
+        "예",
+        "요"
+      ],
       "romanization": "eolmayeyo",
       "katakana": "オルマエヨ",
       "audio": "얼마예요",
@@ -29,7 +50,10 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["사", "다"],
+      "syllables": [
+        "사",
+        "다"
+      ],
       "romanization": "sada",
       "katakana": "サダ",
       "audio": "사다",
@@ -40,7 +64,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["팔", "다"],
+      "syllables": [
+        "팔",
+        "다"
+      ],
       "romanization": "palda",
       "katakana": "パルダ",
       "audio": "팔다",
@@ -51,7 +78,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["싸", "다"],
+      "syllables": [
+        "싸",
+        "다"
+      ],
       "romanization": "ssada",
       "katakana": "サダ",
       "audio": "싸다",
@@ -62,7 +92,11 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["비", "싸", "다"],
+      "syllables": [
+        "비",
+        "싸",
+        "다"
+      ],
       "romanization": "bissada",
       "katakana": "ピサダ",
       "audio": "비싸다",
@@ -73,7 +107,10 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["계", "산"],
+      "syllables": [
+        "계",
+        "산"
+      ],
       "romanization": "gyesan",
       "katakana": "ケサン",
       "audio": "계산",
@@ -84,7 +121,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["카", "드"],
+      "syllables": [
+        "카",
+        "드"
+      ],
       "romanization": "kadeu",
       "katakana": "カドゥ",
       "audio": "카드",
@@ -95,7 +135,10 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["현", "금"],
+      "syllables": [
+        "현",
+        "금"
+      ],
       "romanization": "hyeongeum",
       "katakana": "ヒョングム",
       "audio": "현금",
@@ -106,7 +149,11 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["영", "수", "증"],
+      "syllables": [
+        "영",
+        "수",
+        "증"
+      ],
       "romanization": "yeongsujeung",
       "katakana": "ヨンスジュン",
       "audio": "영수증",
@@ -117,7 +164,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["할", "인"],
+      "syllables": [
+        "할",
+        "인"
+      ],
       "romanization": "harin",
       "katakana": "ハリン",
       "audio": "할인",
@@ -128,7 +178,10 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["교", "환"],
+      "syllables": [
+        "교",
+        "환"
+      ],
       "romanization": "gyohwan",
       "katakana": "キョファン",
       "audio": "교환",
@@ -139,7 +192,10 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["환", "불"],
+      "syllables": [
+        "환",
+        "불"
+      ],
       "romanization": "hwanbul",
       "katakana": "ファンブル",
       "audio": "환불",
@@ -150,7 +206,11 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["사", "이", "즈"],
+      "syllables": [
+        "사",
+        "이",
+        "즈"
+      ],
       "romanization": "saijeu",
       "katakana": "サイジュ",
       "audio": "사이즈",
@@ -161,7 +221,13 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["깎", "아", "주", "세", "요"],
+      "syllables": [
+        "깎",
+        "아",
+        "주",
+        "세",
+        "요"
+      ],
       "romanization": "kkakka juseyo",
       "katakana": "カッカ チュセヨ",
       "audio": "깎아 주세요",
@@ -172,7 +238,10 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["포", "장"],
+      "syllables": [
+        "포",
+        "장"
+      ],
       "romanization": "pojang",
       "katakana": "ポジャン",
       "audio": "포장",
@@ -184,32 +253,68 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You want to know the price. What do you say?",
-      "choices": ["사이즈 있어요?", "얼마예요?", "영수증 주세요", "할인 있어요?"],
-      "correct": "얼마예요?"
+      "choices": [
+        "사이즈 있어요?",
+        "얼마예요?",
+        "영수증 주세요",
+        "할인 있어요?"
+      ],
+      "correct": "얼마예요?",
+      "prompt_ja": "値段を聞きたいとき、何と言いますか？"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "At a traditional market, which phrase can you use to negotiate?",
-      "choices": ["영수증 주세요", "깎아 주세요", "포장해 주세요", "환불해 주세요"],
-      "correct": "깎아 주세요"
+      "choices": [
+        "영수증 주세요",
+        "깎아 주세요",
+        "포장해 주세요",
+        "환불해 주세요"
+      ],
+      "correct": "깎아 주세요",
+      "prompt_ja": "伝統市場で値引き交渉に使えるフレーズは？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "The item doesn't fit. You want to swap it for a different one. You ask for...",
-      "choices": ["할인 (discount)", "환불 (refund)", "교환 (exchange)", "계산 (payment)"],
-      "correct": "교환 (exchange)"
+      "choices": [
+        "할인 (discount)",
+        "환불 (refund)",
+        "교환 (exchange)",
+        "계산 (payment)"
+      ],
+      "choices_ja": [
+        "할인（割引）",
+        "환불（返金）",
+        "교환（交換）",
+        "계산（支払い）"
+      ],
+      "correct": "교환 (exchange)",
+      "prompt_ja": "サイズが合いません。別のものと交換したいときに頼む言葉は？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "비싸다 means...",
-      "choices": ["Cheap", "Expensive", "Free", "On sale"],
-      "correct": "Expensive"
+      "choices": [
+        "Cheap",
+        "Expensive",
+        "Free",
+        "On sale"
+      ],
+      "choices_ja": [
+        "安い",
+        "高い",
+        "無料",
+        "セール中"
+      ],
+      "correct": "Expensive",
+      "prompt_ja": "비싸다はどういう意味ですか？"
     },
     {
       "id": 21,
@@ -218,7 +323,8 @@
       "title": "Shopping Complete!",
       "title_kr": "쇼핑 완성!",
       "message": "쇼핑 즐기세요! You're ready to shop in Korea — from bargaining at Namdaemun Market to smoothly paying at a department store. Your wallet will thank you for knowing 비싸요 and 싸요!",
-      "next_url": "vocabulary.html?cat=weather"
+      "next_url": "vocabulary.html?cat=weather",
+      "message_ja": "쇼핑 즐기세요！韓国でのショッピングの準備ができました―南大門市場での値引き交渉からデパートでのスムーズな決済まで。비싸요と싸요を知っていれば財布も助かります！"
     }
   ]
 }

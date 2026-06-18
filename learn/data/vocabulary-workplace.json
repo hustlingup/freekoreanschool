@@ -2,7 +2,14 @@
   "lesson": "vocab-workplace",
   "totalSteps": 20,
   "stages": [
-    { "id": 1, "name": "Workplace", "name_kr": "직장", "first_step": 1, "last_step": 20, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Workplace",
+      "name_kr": "직장",
+      "first_step": 1,
+      "last_step": 20,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,25 @@
       "title": "Workplace Korean",
       "title_kr": "직장 한국어",
       "body": "Korean workplace culture has unique characteristics — hierarchical titles, after-work drinking culture (회식, hoesik), and a strong work ethic. Addressing colleagues correctly by their title (직함) is extremely important. Calling someone by their first name at work is generally inappropriate unless given explicit permission.",
-      "tip": { "icon": "💼", "label": "Titles at work", "text": "Koreans use job titles instead of names: 김부장님 (Manager Kim), 이과장님 (Deputy Manager Lee). 님 is the honorific suffix added to any title. Always use 님 with superiors." }
+      "tip": {
+        "icon": "💼",
+        "label": "Titles at work",
+        "text": "Koreans use job titles instead of names: 김부장님 (Manager Kim), 이과장님 (Deputy Manager Lee). 님 is the honorific suffix added to any title. Always use 님 with superiors."
+      },
+      "body_ja": "韓国の職場文化には独特の特徴があります―階層的な敬称・会社の飲み会文化（회식、ホェシク）・強い勤勉さ。同僚を肩書きで正確に呼ぶことは非常に重要です。上司に明確な許可を得ない限り、職場では名前で呼ぶのは基本的に不適切です。",
+      "tip_ja": {
+        "label": "職場での肩書き",
+        "text": "韓国人は名前ではなく肩書きを使います：김부장님（金部長）、이과장님（李課長）。님は敬意を示す接尾辞で、どんな肩書きにも付けます。上司には必ず님を使いましょう。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["회", "사"],
+      "syllables": [
+        "회",
+        "사"
+      ],
       "romanization": "hoesa",
       "katakana": "フェサ",
       "audio": "회사",
@@ -29,7 +48,11 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["사", "무", "실"],
+      "syllables": [
+        "사",
+        "무",
+        "실"
+      ],
       "romanization": "samusil",
       "katakana": "サムシル",
       "audio": "사무실",
@@ -40,7 +63,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["직", "원"],
+      "syllables": [
+        "직",
+        "원"
+      ],
       "romanization": "jigwon",
       "katakana": "チグォン",
       "audio": "직원",
@@ -51,7 +77,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["상", "사"],
+      "syllables": [
+        "상",
+        "사"
+      ],
       "romanization": "sangsa",
       "katakana": "サンサ",
       "audio": "상사",
@@ -62,7 +91,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["동", "료"],
+      "syllables": [
+        "동",
+        "료"
+      ],
       "romanization": "dongnyo",
       "katakana": "トンリョ",
       "audio": "동료",
@@ -73,7 +105,10 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["회", "의"],
+      "syllables": [
+        "회",
+        "의"
+      ],
       "romanization": "hoeui",
       "katakana": "フェイ",
       "audio": "회의",
@@ -84,7 +119,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["업", "무"],
+      "syllables": [
+        "업",
+        "무"
+      ],
       "romanization": "eomu",
       "katakana": "オムム",
       "audio": "업무",
@@ -95,7 +133,10 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["월", "급"],
+      "syllables": [
+        "월",
+        "급"
+      ],
       "romanization": "wolgeup",
       "katakana": "ウォルグプ",
       "audio": "월급",
@@ -106,7 +147,10 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["출", "근"],
+      "syllables": [
+        "출",
+        "근"
+      ],
       "romanization": "chulgeun",
       "katakana": "チュルグン",
       "audio": "출근",
@@ -117,7 +161,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["퇴", "근"],
+      "syllables": [
+        "퇴",
+        "근"
+      ],
       "romanization": "toegeun",
       "katakana": "トェグン",
       "audio": "퇴근",
@@ -128,7 +175,10 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["야", "근"],
+      "syllables": [
+        "야",
+        "근"
+      ],
       "romanization": "yageun",
       "katakana": "ヤグン",
       "audio": "야근",
@@ -139,7 +189,10 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["회", "식"],
+      "syllables": [
+        "회",
+        "식"
+      ],
       "romanization": "hoesik",
       "katakana": "フェシク",
       "audio": "회식",
@@ -150,7 +203,11 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["보", "고", "서"],
+      "syllables": [
+        "보",
+        "고",
+        "서"
+      ],
       "romanization": "bogoseo",
       "katakana": "ポゴソ",
       "audio": "보고서",
@@ -161,7 +218,10 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["마", "감"],
+      "syllables": [
+        "마",
+        "감"
+      ],
       "romanization": "magam",
       "katakana": "マガム",
       "audio": "마감",
@@ -172,7 +232,12 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["프", "로", "젝", "트"],
+      "syllables": [
+        "프",
+        "로",
+        "젝",
+        "트"
+      ],
       "romanization": "peurojekteu",
       "katakana": "プロジェクトゥ",
       "audio": "프로젝트",
@@ -184,24 +249,60 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "In Korea, the after-work team dinner/drinks event is called...",
-      "choices": ["야근 (yageun)", "회식 (hoesik)", "회의 (hoeui)", "출근 (chulgeun)"],
-      "correct": "회식 (hoesik)"
+      "choices": [
+        "야근 (yageun)",
+        "회식 (hoesik)",
+        "회의 (hoeui)",
+        "출근 (chulgeun)"
+      ],
+      "choices_ja": [
+        "야근（夜勤）",
+        "회식（会食）",
+        "회의（会議）",
+        "출근（出勤）"
+      ],
+      "correct": "회식 (hoesik)",
+      "prompt_ja": "韓国で仕事後のチームディナー/飲み会のことを？"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "퇴근 is the opposite of 출근. What does 퇴근 mean?",
-      "choices": ["Going to work", "Leaving work", "Working overtime", "Having a meeting"],
-      "correct": "Leaving work"
+      "choices": [
+        "Going to work",
+        "Leaving work",
+        "Working overtime",
+        "Having a meeting"
+      ],
+      "choices_ja": [
+        "出勤する",
+        "退勤する",
+        "残業する",
+        "会議をする"
+      ],
+      "correct": "Leaving work",
+      "prompt_ja": "퇴근は출근の反対です。퇴근の意味は？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "마감이 언제예요? This question asks...",
-      "choices": ["When does the meeting start?", "When is the salary paid?", "When is the deadline?", "When does the project begin?"],
-      "correct": "When is the deadline?"
+      "choices": [
+        "When does the meeting start?",
+        "When is the salary paid?",
+        "When is the deadline?",
+        "When does the project begin?"
+      ],
+      "choices_ja": [
+        "会議はいつ始まりますか？",
+        "給料はいつ払われますか？",
+        "締め切りはいつですか？",
+        "プロジェクトはいつ始まりますか？"
+      ],
+      "correct": "When is the deadline?",
+      "prompt_ja": "마감이 언제예요？この質問は何を聞いていますか？"
     },
     {
       "id": 20,
@@ -210,7 +311,8 @@
       "title": "Workplace Complete!",
       "title_kr": "직장 완성!",
       "message": "수고하셨습니다! (You've worked hard!) This phrase is one of the most important at a Korean workplace — said to colleagues at the end of the workday. You now understand Korean office culture vocabulary.",
-      "next_url": "vocabulary.html?cat=health"
+      "next_url": "vocabulary.html?cat=health",
+      "message_ja": "수고하셨습니다！（お疲れ様でした！）この言葉は韓国の職場で最も重要なフレーズのひとつで、仕事終わりに同僚に言います。韓国のオフィス文化の語彙を理解しました。"
     }
   ]
 }

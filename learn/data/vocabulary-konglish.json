@@ -2,7 +2,14 @@
   "lesson": "vocab-konglish",
   "totalSteps": 22,
   "stages": [
-    { "id": 1, "name": "Konglish", "name_kr": "콩글리시", "first_step": 1, "last_step": 22, "time_minutes": 13 }
+    {
+      "id": 1,
+      "name": "Konglish",
+      "name_kr": "콩글리시",
+      "first_step": 1,
+      "last_step": 22,
+      "time_minutes": 13
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,26 @@
       "title": "Konglish — Korean + English",
       "title_kr": "콩글리시",
       "body": "Konglish (콩글리시) refers to English loanwords adapted into Korean pronunciation and sometimes with shifted meanings. Korea has adopted thousands of English words, making them sound Korean. The trick: if you know the English word, you can often guess the Korean by applying Korean pronunciation patterns — replace 'r' with 'ㄹ', add vowels between consonants, and end with a vowel.",
-      "tip": { "icon": "🌐", "label": "Pronunciation key", "text": "English 'f' → ㅍ (p sound): file → 파일. English 'v' → ㅂ (b sound): video → 비디오. Final consonant clusters get a vowel: desk → 데스크, style → 스타일. Once you know the pattern, hundreds of words unlock instantly!" }
+      "tip": {
+        "icon": "🌐",
+        "label": "Pronunciation key",
+        "text": "English 'f' → ㅍ (p sound): file → 파일. English 'v' → ㅂ (b sound): video → 비디오. Final consonant clusters get a vowel: desk → 데스크, style → 스타일. Once you know the pattern, hundreds of words unlock instantly!"
+      },
+      "body_ja": "コングリッシュ（콩글리시）は英語の外来語を韓国語の発音に合わせて取り入れたものです。意味がずれる場合もあります。韓国語は英語から数千の単語を取り入れており、韓国語らしく聞こえます。コツ：英語の単語がわかれば韓国語の発音ルールを当てはめて推測できます―「r」はㄹに、子音の間に母音を入れ、語末に母音を付ける。",
+      "tip_ja": {
+        "label": "発音の鍵",
+        "text": "英語の「f」→ㅍ（p音）：file→파일。「v」→ㅂ（b音）：video→비디오。語末の子音クラスターには母音を加えます：desk→데스크、style→스타일。パターンを覚えれば何百もの単語が一気に解錠されます！"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["컴", "퓨", "터"],
+      "syllables": [
+        "컴",
+        "퓨",
+        "터"
+      ],
       "romanization": "keompyuteo",
       "katakana": "コンピュトゥ",
       "audio": "컴퓨터",
@@ -29,7 +49,12 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["스", "마", "트", "폰"],
+      "syllables": [
+        "스",
+        "마",
+        "트",
+        "폰"
+      ],
       "romanization": "seumateupon",
       "katakana": "スマトゥポン",
       "audio": "스마트폰",
@@ -40,7 +65,11 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["인", "터", "넷"],
+      "syllables": [
+        "인",
+        "터",
+        "넷"
+      ],
       "romanization": "inteonet",
       "katakana": "インタネッ",
       "audio": "인터넷",
@@ -51,7 +80,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["소", "파"],
+      "syllables": [
+        "소",
+        "파"
+      ],
       "romanization": "sopa",
       "katakana": "ソパ",
       "audio": "소파",
@@ -62,7 +94,11 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "파", "트"],
+      "syllables": [
+        "아",
+        "파",
+        "트"
+      ],
       "romanization": "apateu",
       "katakana": "アパトゥ",
       "audio": "아파트",
@@ -73,7 +109,10 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["피", "자"],
+      "syllables": [
+        "피",
+        "자"
+      ],
       "romanization": "pija",
       "katakana": "ピジャ",
       "audio": "피자",
@@ -84,7 +123,11 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["초", "콜", "릿"],
+      "syllables": [
+        "초",
+        "콜",
+        "릿"
+      ],
       "romanization": "chokollit",
       "katakana": "チョコルリッ",
       "audio": "초콜릿",
@@ -95,7 +138,13 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "이", "스", "크", "림"],
+      "syllables": [
+        "아",
+        "이",
+        "스",
+        "크",
+        "림"
+      ],
       "romanization": "aiseukeurim",
       "katakana": "アイスクリム",
       "audio": "아이스크림",
@@ -106,7 +155,12 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["스", "트", "레", "스"],
+      "syllables": [
+        "스",
+        "트",
+        "레",
+        "스"
+      ],
       "romanization": "seuteuresseu",
       "katakana": "ストゥレス",
       "audio": "스트레스",
@@ -117,7 +171,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["셀", "카"],
+      "syllables": [
+        "셀",
+        "카"
+      ],
       "romanization": "selka",
       "katakana": "セルカ",
       "audio": "셀카",
@@ -128,7 +185,11 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["에", "어", "컨"],
+      "syllables": [
+        "에",
+        "어",
+        "컨"
+      ],
       "romanization": "eokon",
       "katakana": "エオコン",
       "audio": "에어컨",
@@ -139,7 +200,11 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["리", "모", "컨"],
+      "syllables": [
+        "리",
+        "모",
+        "컨"
+      ],
       "romanization": "rimokon",
       "katakana": "リモコン",
       "audio": "리모컨",
@@ -150,7 +215,13 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "르", "바", "이", "트"],
+      "syllables": [
+        "아",
+        "르",
+        "바",
+        "이",
+        "트"
+      ],
       "romanization": "areubaiteu",
       "katakana": "アルバイトゥ",
       "audio": "아르바이트",
@@ -161,7 +232,11 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["서", "비", "스"],
+      "syllables": [
+        "서",
+        "비",
+        "스"
+      ],
       "romanization": "seobiseu",
       "katakana": "ソビス",
       "audio": "서비스",
@@ -172,7 +247,11 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["핸", "드", "폰"],
+      "syllables": [
+        "핸",
+        "드",
+        "폰"
+      ],
       "romanization": "haendeuppon",
       "katakana": "ヘンドゥポン",
       "audio": "핸드폰",
@@ -183,7 +262,11 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["원", "피", "스"],
+      "syllables": [
+        "원",
+        "피",
+        "스"
+      ],
       "romanization": "wonpiseu",
       "katakana": "ウォンピス",
       "audio": "원피스",
@@ -195,32 +278,80 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "아파트 (apateu) is which English loanword?",
-      "choices": ["Avenue", "Apartment", "Apparatus", "Airport"],
-      "correct": "Apartment"
+      "choices": [
+        "Avenue",
+        "Apartment",
+        "Apparatus",
+        "Airport"
+      ],
+      "choices_ja": [
+        "大通り（アベニュー）",
+        "アパート",
+        "装置・機器",
+        "空港"
+      ],
+      "correct": "Apartment",
+      "prompt_ja": "아파트（アパトゥ）は何の英語外来語ですか？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "서비스 in Konglish means...",
-      "choices": ["Customer service", "A free extra given by a shop", "Delivery service", "Repair service"],
-      "correct": "A free extra given by a shop"
+      "choices": [
+        "Customer service",
+        "A free extra given by a shop",
+        "Delivery service",
+        "Repair service"
+      ],
+      "choices_ja": [
+        "カスタマーサービス",
+        "おまけ（店からのプレゼント）",
+        "配達サービス",
+        "修理サービス"
+      ],
+      "correct": "A free extra given by a shop",
+      "prompt_ja": "コングリッシュで서비스の意味は？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "아르바이트 comes from German 'Arbeit' and means...",
-      "choices": ["Overtime", "Part-time job", "Work meeting", "Salary"],
-      "correct": "Part-time job"
+      "choices": [
+        "Overtime",
+        "Part-time job",
+        "Work meeting",
+        "Salary"
+      ],
+      "choices_ja": [
+        "残業",
+        "アルバイト",
+        "仕事の会議",
+        "給料"
+      ],
+      "correct": "Part-time job",
+      "prompt_ja": "아르바이트はドイツ語の「Arbeit」に由来します。意味は？"
     },
     {
       "id": 21,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "핸드폰 is unique Konglish. In English we say...",
-      "choices": ["Hand phone", "Mobile phone / cell phone", "Smartphone", "Pay phone"],
-      "correct": "Mobile phone / cell phone"
+      "choices": [
+        "Hand phone",
+        "Mobile phone / cell phone",
+        "Smartphone",
+        "Pay phone"
+      ],
+      "choices_ja": [
+        "携帯（手で持つ電話）",
+        "携帯電話・スマートフォン",
+        "スマートフォン",
+        "公衆電話"
+      ],
+      "correct": "Mobile phone / cell phone",
+      "prompt_ja": "핸드폰は独特なコングリッシュです。英語では何と言いますか？"
     },
     {
       "id": 22,
@@ -229,7 +360,8 @@
       "title": "Konglish Complete!",
       "title_kr": "콩글리시 완성!",
       "message": "Incredible! You've completed all 21 vocabulary categories! Konglish shows how global Korean has become. Now you have a massive vocabulary foundation — keep building with grammar lessons to start forming full sentences. 대단해요! (You're amazing!)",
-      "next_url": "pronouns.html"
+      "next_url": "pronouns.html",
+      "message_ja": "すごい！全21カテゴリーの語彙を完了しました！コングリッシュは韓国語がいかにグローバルになったかを示しています。これで大きな語彙の土台ができました―文法レッスンで完全な文を作り始めましょう。대단해요！（あなたは素晴らしい！）"
     }
   ]
 }

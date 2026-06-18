@@ -64,8 +64,12 @@ const HangulFreeBuilder = (() => {
     selectedVow  = null;
     selectedBat  = '';
 
+    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+
     const batchimSection = batchimMode ? `
-      <p class="syl-builder-label">Pick a 받침 <span style="font-weight:400;opacity:.7">(optional final consonant):</span></p>
+      <p class="syl-builder-label">${isJa
+        ? '받침を選ぶ <span style="font-weight:400;opacity:.7">（任意の終声）：</span>'
+        : 'Pick a 받침 <span style="font-weight:400;opacity:.7">(optional final consonant):</span>'}</p>
       <div class="syl-builder-row" id="sb-batchim">
         ${batchimList.map(b =>
           `<button class="syl-picker-btn${b === '' ? ' active' : ''}" data-char="${b}" onclick="HangulFreeBuilder.pickBat('${b}', this)">${b === '' ? '—' : b}</button>`
@@ -78,13 +82,17 @@ const HangulFreeBuilder = (() => {
 
     el.innerHTML = `
       <div class="syl-builder-widget">
-        <p class="syl-builder-label">Pick a consonant${batchimMode ? ' <span style="font-weight:400;opacity:.7">(초성)</span>' : ''}:</p>
+        <p class="syl-builder-label">${isJa
+          ? `子音を選ぶ${batchimMode ? '（초성）：' : '：'}`
+          : `Pick a consonant${batchimMode ? ' <span style="font-weight:400;opacity:.7">(초성)</span>' : ''}:`}</p>
         <div class="syl-builder-row" id="sb-consonants">
           ${consonants.map(c =>
             `<button class="syl-picker-btn" data-char="${c}" onclick="HangulFreeBuilder.pickCons('${c}', this)">${c}</button>`
           ).join('')}
         </div>
-        <p class="syl-builder-label">Pick a vowel${batchimMode ? ' <span style="font-weight:400;opacity:.7">(중성)</span>' : ''}:</p>
+        <p class="syl-builder-label">${isJa
+          ? `母音を選ぶ${batchimMode ? '（중성）：' : '：'}`
+          : `Pick a vowel${batchimMode ? ' <span style="font-weight:400;opacity:.7">(중성)</span>' : ''}:`}</p>
         <div class="syl-builder-row" id="sb-vowels">
           ${vowels.map(v =>
             `<button class="syl-picker-btn" data-char="${v}" onclick="HangulFreeBuilder.pickVow('${v}', this)">${v}</button>`

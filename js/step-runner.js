@@ -65,6 +65,7 @@ const StepRunner = (() => {
   function buildShell() {
     const wrap = document.getElementById('step-shell');
     if (!wrap) return;
+    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
 
     wrap.innerHTML = `
       <div class="hangul-progress" id="hangul-progress">
@@ -79,9 +80,9 @@ const StepRunner = (() => {
       <div class="step-content" id="step-content" aria-live="polite"></div>
 
       <div class="step-nav" id="step-nav">
-        <button class="step-nav-btn" id="btn-prev" aria-label="Previous step">← Prev</button>
+        <button class="step-nav-btn" id="btn-prev" aria-label="${isJa ? '前のステップ' : 'Previous step'}">← ${isJa ? '前へ' : 'Prev'}</button>
         <div class="step-counter" id="step-counter"></div>
-        <button class="step-nav-btn step-nav-next" id="btn-next" aria-label="Next step">Next →</button>
+        <button class="step-nav-btn step-nav-next" id="btn-next" aria-label="${isJa ? '次のステップ' : 'Next step'}">${isJa ? '次へ' : 'Next'} →</button>
       </div>
 
       <div class="ad-slot" id="ad-slot-lesson" aria-hidden="true"></div>
@@ -216,23 +217,24 @@ const StepRunner = (() => {
 
   /* reading_card */
   function renderReadingCard(step) {
+    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+
     const patternsHtml = step.patterns ? `
       <div class="sr-pattern-grid">
-        ${step.patterns.map(p => `
+        ${step.patterns.map((p, i) => `
           <div class="sr-pattern-card">
             <div class="sr-pattern-name">${esc(p.name)} Pattern</div>
             <div class="sr-pattern-char">${esc(p.char)}</div>
             <div class="sr-pattern-jamo">${esc(p.jamo)}</div>
-            <div class="sr-pattern-label">${esc(p.label)}</div>
+            <div class="sr-pattern-label">${esc(isJa && step.patterns_label_ja && step.patterns_label_ja[i] ? step.patterns_label_ja[i] : p.label)}</div>
           </div>`).join('')}
       </div>` : '';
 
-    const rulesHtml = step.rules ? `
+    const activeRules = isJa && step.rules_ja ? step.rules_ja : step.rules;
+    const rulesHtml = activeRules ? `
       <ul class="sr-reading-rules">
-        ${step.rules.map((r, i) => `<li><span class="sr-rule-num">${i + 1}</span> ${esc(r)}</li>`).join('')}
+        ${activeRules.map((r, i) => `<li><span class="sr-rule-num">${i + 1}</span> ${esc(r)}</li>`).join('')}
       </ul>` : '';
-
-    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
     const tip = step.tip;
     const tipHtml = tip ? `
       <div class="tip-box" style="margin-top:20px">
@@ -268,27 +270,33 @@ const StepRunner = (() => {
             <span class="sr-divider">·</span>
             <span class="sr-rom">${esc(step.romanization)}</span>
           </div>
-          ${step.example_word ? `<div class="sr-example">${esc(step.example_word)} · ${esc(step.example_meaning)}</div>` : ''}
+          ${step.katakana ? `<div class="kata">${esc(step.katakana)}</div>` : ''}
+          ${step.example_word ? `<div class="sr-example">${esc(step.example_word)} · ${esc(window.LangManager && window.LangManager.getLang() === 'ja' && step.example_meaning_ja ? step.example_meaning_ja : step.example_meaning)}</div>` : ''}
         </div>
-        ${step.hint ? `<div class="sr-hint">💡 ${esc(step.hint)}</div>` : ''}
+        ${step.hint ? `<div class="sr-hint">💡 ${esc(window.LangManager && window.LangManager.getLang() === 'ja' && step.hint_ja ? step.hint_ja : step.hint)}</div>` : ''}
         <button class="btn btn-primary sr-audio-btn" onclick="${audioFn}">
-          🔊 Hear it
+          🔊 ${window.LangManager && window.LangManager.getLang() === 'ja' ? '聴く' : 'Hear it'}
         </button>
       </div>`;
   }
 
   /* match_quiz */
   function renderMatchQuiz(step) {
-    const shuffled = [...step.choices].sort(() => Math.random() - 0.5);
-    const opts = shuffled.map(c => `
+    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+    const indices = step.choices.map((_, i) => i).sort(() => Math.random() - 0.5);
+    const opts = indices.map(i => {
+      const c = step.choices[i];
+      const display = isJa && step.choices_ja && step.choices_ja[i] ? step.choices_ja[i] : c;
+      return `
       <button class="quiz-option sr-quiz-opt" data-value="${esc(c)}"
         onclick="StepRunner.handleQuizAnswer(this)"
-        aria-label="${esc(c)}">
-        ${esc(c)}
-      </button>`).join('');
+        aria-label="${esc(display)}">
+        ${esc(display)}
+      </button>`;
+    }).join('');
     return `
       <div class="sr-quiz" data-correct="${esc(step.correct)}">
-        <p class="sr-quiz-prompt">${esc(step.prompt)}</p>
+        <p class="sr-quiz-prompt">${esc(isJa && step.prompt_ja ? step.prompt_ja : step.prompt)}</p>
         <div class="sr-quiz-opts">${opts}</div>
         <div class="sr-quiz-feedback" id="sr-quiz-feedback" aria-live="polite"></div>
       </div>`;
@@ -296,11 +304,12 @@ const StepRunner = (() => {
 
   /* syllable_builder */
   function renderSyllableBuilder(step) {
+    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
     return `
       <div class="sr-syllable-builder" data-consonant="${esc(step.consonant)}"
         data-vowel="${esc(step.vowel)}" data-result="${esc(step.result)}"
         data-audio="${esc(step.audio)}">
-        <p class="sr-quiz-prompt">Combine these pieces into a syllable block:</p>
+        <p class="sr-quiz-prompt">${isJa ? 'これらのピースを音節ブロックに組み合わせてください：' : 'Combine these pieces into a syllable block:'}</p>
         <div class="syl-pieces">
           <div class="syl-piece syl-consonant" data-type="consonant">${esc(step.consonant)}</div>
           <div class="syl-plus">+</div>
@@ -310,14 +319,15 @@ const StepRunner = (() => {
         </div>
         <button class="btn btn-primary sr-reveal-btn" id="syl-reveal-btn"
           onclick="StepRunner.revealSyllable(this)">
-          Reveal Syllable
+          ${isJa ? '音節を表示' : 'Reveal Syllable'}
         </button>
-        <div class="sr-hint" id="syl-meaning" style="display:none">${esc(step.meaning)}</div>
+        <div class="sr-hint" id="syl-meaning" style="display:none">${esc(isJa && step.meaning_ja ? step.meaning_ja : step.meaning)}</div>
       </div>`;
   }
 
   /* listen_repeat */
   function renderListenRepeat(step) {
+    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
     const syllableHtml = step.syllables.map(s =>
       `<span class="lr-syllable">${esc(s)}</span>`
     ).join('');
@@ -326,23 +336,24 @@ const StepRunner = (() => {
       : `speakKorean('${esc(step.audio)}')`;
     return `
       <div class="sr-listen-repeat">
-        <div class="lr-word">${syllableHtml}</div>
+        <div class="lr-word" data-count="${step.syllables.length}">${syllableHtml}</div>
         <div class="lr-rom">${esc(step.romanization)}</div>
         ${step.katakana ? `<div class="kata">${esc(step.katakana)}</div>` : ''}
         <div class="lr-meaning lr-meaning-en">${esc(step.meaning)}</div>
         ${step.meaning_ja ? `<div class="lr-meaning lr-meaning-ja">${esc(step.meaning_ja)}</div>` : ''}
         <button class="btn btn-primary sr-audio-btn" onclick="${audioFn}">
-          🔊 Listen
+          🔊 ${isJa ? '聴く' : 'Listen'}
         </button>
         <button class="btn btn-secondary sr-said-btn" id="sr-said-btn"
           onclick="StepRunner.confirmRepeat(this)">
-          🗣️ I said it — Next
+          🗣️ ${isJa ? '言えた — 次へ' : 'I said it — Next'}
         </button>
       </div>`;
   }
 
   /* lesson_complete */
   function renderLessonComplete(step) {
+    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
     const totalXP = loadProgress().xp || xp;
     markLessonComplete();
     return `
@@ -351,14 +362,14 @@ const StepRunner = (() => {
         <div class="complete-icon">🎉</div>
         <h2 class="complete-title">${esc(step.title)}</h2>
         <p class="complete-title-kr">${esc(step.title_kr)}</p>
-        <p class="complete-msg">${esc(step.message)}</p>
-        <div class="complete-xp">⚡ ${totalXP} XP earned</div>
+        <p class="complete-msg">${esc(isJa && step.message_ja ? step.message_ja : step.message)}</p>
+        <div class="complete-xp">⚡ ${totalXP} ${isJa ? 'XP 獲得' : 'XP earned'}</div>
         <div class="complete-ad-slot">
           <div class="ad-slot ad-complete" id="ad-slot-complete" aria-label="Advertisement"></div>
         </div>
         <div class="complete-actions">
-          <button class="btn btn-primary" onclick="StepRunner.restart()">Start Again</button>
-          ${step.next_url ? `<a href="${esc(step.next_url)}" class="btn btn-secondary">Next Lesson →</a>` : ''}
+          <button class="btn btn-primary" onclick="StepRunner.restart()">${isJa ? 'もう一度' : 'Start Again'}</button>
+          ${step.next_url ? `<a href="${esc(step.next_url)}" class="btn btn-secondary">${isJa ? '次のレッスン →' : 'Next Lesson →'}</a>` : ''}
         </div>
       </div>`;
   }
@@ -391,14 +402,18 @@ const StepRunner = (() => {
       el.classList.add('correct-pop');
       if (window.playDing) playDing();
       if (window.spawnConfetti) spawnConfetti(el);
-      if (feedback) feedback.textContent = `✓ Correct! +${earned} XP${streak >= 3 ? ' 🔥 Streak x' + streak : ''}`;
+      const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+      if (feedback) feedback.textContent = isJa
+        ? `✓ 正解！ +${earned} XP${streak >= 3 ? ' 🔥 連続 x' + streak : ''}`
+        : `✓ Correct! +${earned} XP${streak >= 3 ? ' 🔥 Streak x' + streak : ''}`;
 
       setTimeout(() => nextStep(), 1400);
     } else {
       streak = 0;
       el.disabled = true;
       el.classList.add('wrong', 'wrong-shake');
-      if (feedback) feedback.textContent = `✗ Not quite — try again!`;
+      const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+      if (feedback) feedback.textContent = isJa ? '✗ 惜しい — もう一度！' : '✗ Not quite — try again!';
       setTimeout(() => el.classList.remove('wrong-shake'), 400);
     }
   }
@@ -421,7 +436,8 @@ const StepRunner = (() => {
     if (window.AudioCache) AudioCache.play(audio);
     else if (window.speakKorean) speakKorean(audio);
 
-    btn.textContent = 'Next →';
+    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+    btn.textContent = isJa ? '次へ →' : 'Next →';
     btn.onclick = nextStep;
 
     streak++;

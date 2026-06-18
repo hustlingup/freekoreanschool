@@ -2,7 +2,14 @@
   "lesson": "vocab-places",
   "totalSteps": 21,
   "stages": [
-    { "id": 1, "name": "Places", "name_kr": "장소", "first_step": 1, "last_step": 21, "time_minutes": 13 }
+    {
+      "id": 1,
+      "name": "Places",
+      "name_kr": "장소",
+      "first_step": 1,
+      "last_step": 21,
+      "time_minutes": 13
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,25 @@
       "title": "Places in Korean",
       "title_kr": "장소",
       "body": "Korean place vocabulary is essential for navigating cities, giving and receiving directions, and daily life. Korea has excellent public transportation — knowing 지하철역 (subway station), 버스정류장 (bus stop), and 공항 (airport) will take you far.",
-      "tip": { "icon": "🏙️", "label": "Asking for directions", "text": "The most useful phrase: 어디예요? (Where is it?) or 어떻게 가요? (How do I get there?). Combine with place names: 지하철역이 어디예요? (Where is the subway station?)" }
+      "tip": {
+        "icon": "🏙️",
+        "label": "Asking for directions",
+        "text": "The most useful phrase: 어디예요? (Where is it?) or 어떻게 가요? (How do I get there?). Combine with place names: 지하철역이 어디예요? (Where is the subway station?)"
+      },
+      "body_ja": "場所の語彙は、都市のナビゲート・道の教え方・日常生活に欠かせません。韓国は公共交通が発達しており、지하철역（地下鉄駅）・버스정류장（バス停）・공항（空港）を知っていれば大抵どこへでも行けます。",
+      "tip_ja": {
+        "label": "道を聞く",
+        "text": "最も使える表現：어디예요？（どこですか？）または어떻게 가요？（どうやって行きますか？）。場所名と組み合わせて：지하철역이 어디예요？（地下鉄駅はどこですか？）"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["학", "교"],
+      "syllables": [
+        "학",
+        "교"
+      ],
       "romanization": "hakgyo",
       "katakana": "ハッキョ",
       "audio": "학교",
@@ -29,7 +48,10 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["병", "원"],
+      "syllables": [
+        "병",
+        "원"
+      ],
       "romanization": "byeongwon",
       "katakana": "ピョンウォン",
       "audio": "병원",
@@ -40,7 +62,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["은", "행"],
+      "syllables": [
+        "은",
+        "행"
+      ],
       "romanization": "eunhaeng",
       "katakana": "ウンヘン",
       "audio": "은행",
@@ -51,7 +76,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["식", "당"],
+      "syllables": [
+        "식",
+        "당"
+      ],
       "romanization": "sikdang",
       "katakana": "シクタン",
       "audio": "식당",
@@ -62,7 +90,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["카", "페"],
+      "syllables": [
+        "카",
+        "페"
+      ],
       "romanization": "kape",
       "katakana": "カペ",
       "audio": "카페",
@@ -73,7 +104,11 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["편", "의", "점"],
+      "syllables": [
+        "편",
+        "의",
+        "점"
+      ],
       "romanization": "pyeonuijeom",
       "katakana": "ピョニジョム",
       "audio": "편의점",
@@ -84,7 +119,11 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["도", "서", "관"],
+      "syllables": [
+        "도",
+        "서",
+        "관"
+      ],
       "romanization": "doseogwan",
       "katakana": "トソグァン",
       "audio": "도서관",
@@ -95,7 +134,10 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["공", "항"],
+      "syllables": [
+        "공",
+        "항"
+      ],
       "romanization": "gonghang",
       "katakana": "コンハン",
       "audio": "공항",
@@ -106,7 +148,12 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["지", "하", "철", "역"],
+      "syllables": [
+        "지",
+        "하",
+        "철",
+        "역"
+      ],
       "romanization": "jihacheol yeok",
       "katakana": "チハチョルリョク",
       "audio": "지하철역",
@@ -117,7 +164,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["공", "원"],
+      "syllables": [
+        "공",
+        "원"
+      ],
       "romanization": "gongwon",
       "katakana": "コンウォン",
       "audio": "공원",
@@ -128,7 +178,11 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["백", "화", "점"],
+      "syllables": [
+        "백",
+        "화",
+        "점"
+      ],
       "romanization": "baekhwajeom",
       "katakana": "ペクァジョム",
       "audio": "백화점",
@@ -139,7 +193,10 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["약", "국"],
+      "syllables": [
+        "약",
+        "국"
+      ],
       "romanization": "yakguk",
       "katakana": "ヤックク",
       "audio": "약국",
@@ -150,7 +207,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["마", "트"],
+      "syllables": [
+        "마",
+        "트"
+      ],
       "romanization": "mateu",
       "katakana": "マトゥ",
       "audio": "마트",
@@ -161,7 +221,9 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["집"],
+      "syllables": [
+        "집"
+      ],
       "romanization": "jip",
       "katakana": "チプ",
       "audio": "집",
@@ -172,7 +234,11 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["화", "장", "실"],
+      "syllables": [
+        "화",
+        "장",
+        "실"
+      ],
       "romanization": "hwajangsil",
       "katakana": "ファジャンシル",
       "audio": "화장실",
@@ -183,7 +249,10 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["호", "텔"],
+      "syllables": [
+        "호",
+        "텔"
+      ],
       "romanization": "hotel",
       "katakana": "ホテル",
       "audio": "호텔",
@@ -195,24 +264,54 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You need medicine. Which place do you go to?",
-      "choices": ["은행 (bank)", "약국 (pharmacy)", "도서관 (library)", "카페 (café)"],
-      "correct": "약국 (pharmacy)"
+      "choices": [
+        "은행 (bank)",
+        "약국 (pharmacy)",
+        "도서관 (library)",
+        "카페 (café)"
+      ],
+      "choices_ja": [
+        "은행（銀行）",
+        "약국（薬局）",
+        "도서관（図書館）",
+        "카페（カフェ）"
+      ],
+      "correct": "약국 (pharmacy)",
+      "prompt_ja": "薬が必要です。どこへ行きますか？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "편의점 is a...",
-      "choices": ["Department store", "Hospital", "Convenience store", "Subway station"],
-      "correct": "Convenience store"
+      "choices": [
+        "Department store",
+        "Hospital",
+        "Convenience store",
+        "Subway station"
+      ],
+      "choices_ja": [
+        "デパート",
+        "病院",
+        "コンビニ",
+        "地下鉄の駅"
+      ],
+      "correct": "Convenience store",
+      "prompt_ja": "편의점とは？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "How do you say 'Where is the bathroom?' in Korean?",
-      "choices": ["도서관이 어디예요?", "화장실이 어디예요?", "집이 어디예요?", "공원이 어디예요?"],
-      "correct": "화장실이 어디예요?"
+      "choices": [
+        "도서관이 어디예요?",
+        "화장실이 어디예요?",
+        "집이 어디예요?",
+        "공원이 어디예요?"
+      ],
+      "correct": "화장실이 어디예요?",
+      "prompt_ja": "「お手洗いはどこですか？」は韓国語でどう言いますか？"
     },
     {
       "id": 21,
@@ -221,7 +320,8 @@
       "title": "Places Complete!",
       "title_kr": "장소 완성!",
       "message": "You can now navigate Korean cities! With place vocabulary, you can ask directions, find restaurants, and get around. Try your next adventure: 편의점 어디예요? (Where is the convenience store?)",
-      "next_url": "vocabulary.html?cat=emotions"
+      "next_url": "vocabulary.html?cat=emotions",
+      "message_ja": "韓国の都市をナビできるようになりました！場所の語彙で道を聞き、レストランを探し、移動できます。次の冒険を試みましょう：편의점 어디예요？（コンビニはどこですか？）"
     }
   ]
 }

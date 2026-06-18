@@ -2,7 +2,14 @@
   "lesson": "vocab-adjectives",
   "totalSteps": 21,
   "stages": [
-    { "id": 1, "name": "Adjectives", "name_kr": "형용사", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Adjectives",
+      "name_kr": "형용사",
+      "first_step": 1,
+      "last_step": 21,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,25 @@
       "title": "Korean Adjectives",
       "title_kr": "형용사",
       "body": "Korean adjectives (형용사) behave like verbs — they conjugate with tense and politeness endings, and come at the end of a sentence. The dictionary form ends in -다. To describe a noun directly, use the -ㄴ/은 form: 작은 고양이 (a small cat). To make a statement, use -아요/어요: 고양이가 작아요 (The cat is small).",
-      "tip": { "icon": "✨", "label": "Adjective + noun", "text": "크다 (big) → 큰 + noun: 큰 도시 (a big city). 작다 (small) → 작은 + noun: 작은 가방 (a small bag). 예쁘다 (pretty) → 예쁜 + noun: 예쁜 꽃 (a pretty flower)." }
+      "tip": {
+        "icon": "✨",
+        "label": "Adjective + noun",
+        "text": "크다 (big) → 큰 + noun: 큰 도시 (a big city). 작다 (small) → 작은 + noun: 작은 가방 (a small bag). 예쁘다 (pretty) → 예쁜 + noun: 예쁜 꽃 (a pretty flower)."
+      },
+      "body_ja": "韓国語の形容詞（형용사）は動詞のように振る舞います―時制・丁寧さの語尾で活用し、文末に来ます。辞書形は-다で終わります。名詞を直接修飾するには-ㄴ/은形を使います：작은 고양이（小さな猫）。述語として使うには-아요/어요：고양이가 작아요（猫は小さい）。",
+      "tip_ja": {
+        "label": "形容詞 + 名詞",
+        "text": "크다（大きい）→큰＋名詞：큰 도시（大きな都市）。작다（小さい）→작은＋名詞：작은 가방（小さなバッグ）。예쁘다（きれい）→예쁜＋名詞：예쁜 꽃（きれいな花）。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["크", "다"],
+      "syllables": [
+        "크",
+        "다"
+      ],
       "romanization": "keuda",
       "katakana": "クダ",
       "audio": "크다",
@@ -29,7 +48,10 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["작", "다"],
+      "syllables": [
+        "작",
+        "다"
+      ],
       "romanization": "jakda",
       "katakana": "チャクタ",
       "audio": "작다",
@@ -40,7 +62,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["많", "다"],
+      "syllables": [
+        "많",
+        "다"
+      ],
       "romanization": "manta",
       "katakana": "マンタ",
       "audio": "많다",
@@ -51,7 +76,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["적", "다"],
+      "syllables": [
+        "적",
+        "다"
+      ],
       "romanization": "jeokda",
       "katakana": "チョクタ",
       "audio": "적다",
@@ -62,7 +90,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["좋", "다"],
+      "syllables": [
+        "좋",
+        "다"
+      ],
       "romanization": "jota",
       "katakana": "チョタ",
       "audio": "좋다",
@@ -73,7 +104,11 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["나", "쁘", "다"],
+      "syllables": [
+        "나",
+        "쁘",
+        "다"
+      ],
       "romanization": "nappeuda",
       "katakana": "ナップダ",
       "audio": "나쁘다",
@@ -84,7 +119,11 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["예", "쁘", "다"],
+      "syllables": [
+        "예",
+        "쁘",
+        "다"
+      ],
       "romanization": "yeppeuda",
       "katakana": "イェップダ",
       "audio": "예쁘다",
@@ -95,7 +134,12 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["잘", "생", "기", "다"],
+      "syllables": [
+        "잘",
+        "생",
+        "기",
+        "다"
+      ],
       "romanization": "jalsaengida",
       "katakana": "チャルセンギダ",
       "audio": "잘생기다",
@@ -106,7 +150,11 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["맛", "있", "다"],
+      "syllables": [
+        "맛",
+        "있",
+        "다"
+      ],
       "romanization": "masitda",
       "katakana": "マシッタ",
       "audio": "맛있다",
@@ -117,7 +165,12 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["재", "미", "있", "다"],
+      "syllables": [
+        "재",
+        "미",
+        "있",
+        "다"
+      ],
       "romanization": "jaemiitda",
       "katakana": "チェミイッタ",
       "audio": "재미있다",
@@ -128,7 +181,11 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["어", "렵", "다"],
+      "syllables": [
+        "어",
+        "렵",
+        "다"
+      ],
       "romanization": "eolyeopda",
       "katakana": "オリョプタ",
       "audio": "어렵다",
@@ -139,7 +196,10 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["쉽", "다"],
+      "syllables": [
+        "쉽",
+        "다"
+      ],
       "romanization": "swipda",
       "katakana": "シプタ",
       "audio": "쉽다",
@@ -150,7 +210,11 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["빠", "르", "다"],
+      "syllables": [
+        "빠",
+        "르",
+        "다"
+      ],
       "romanization": "ppareuda",
       "katakana": "パルダ",
       "audio": "빠르다",
@@ -161,7 +225,11 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["느", "리", "다"],
+      "syllables": [
+        "느",
+        "리",
+        "다"
+      ],
       "romanization": "neurida",
       "katakana": "ヌリダ",
       "audio": "느리다",
@@ -172,7 +240,11 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["귀", "엽", "다"],
+      "syllables": [
+        "귀",
+        "엽",
+        "다"
+      ],
       "romanization": "gwiyeopda",
       "katakana": "クィヨプタ",
       "audio": "귀엽다",
@@ -184,32 +256,68 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "How do you say 'It's delicious!' in Korean?",
-      "choices": ["재미있어요!", "예뻐요!", "맛있어요!", "좋아요!"],
-      "correct": "맛있어요!"
+      "choices": [
+        "재미있어요!",
+        "예뻐요!",
+        "맛있어요!",
+        "좋아요!"
+      ],
+      "correct": "맛있어요!",
+      "prompt_ja": "「おいしい！」は韓国語でどう言いますか？"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "The opposite of 크다 (big) is...",
-      "choices": ["많다", "작다", "적다", "느리다"],
-      "correct": "작다"
+      "choices": [
+        "많다",
+        "작다",
+        "적다",
+        "느리다"
+      ],
+      "correct": "작다",
+      "prompt_ja": "크다（大きい）の反対語は？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "귀엽다 means...",
-      "choices": ["Handsome", "Pretty", "Cute", "Smart"],
-      "correct": "Cute"
+      "choices": [
+        "Handsome",
+        "Pretty",
+        "Cute",
+        "Smart"
+      ],
+      "choices_ja": [
+        "ハンサムです",
+        "きれいです",
+        "かわいいです",
+        "賢いです"
+      ],
+      "correct": "Cute",
+      "prompt_ja": "귀엽다はどういう意味ですか？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "한국어 어려워요? This sentence asks...",
-      "choices": ["Do you like Korean?", "Is Korean interesting?", "Is Korean difficult?", "Are you learning Korean?"],
-      "correct": "Is Korean difficult?"
+      "choices": [
+        "Do you like Korean?",
+        "Is Korean interesting?",
+        "Is Korean difficult?",
+        "Are you learning Korean?"
+      ],
+      "choices_ja": [
+        "韓国語は好きですか？",
+        "韓国語は面白いですか？",
+        "韓国語は難しいですか？",
+        "韓国語を勉強していますか？"
+      ],
+      "correct": "Is Korean difficult?",
+      "prompt_ja": "한국어 어려워요？この文は何を聞いていますか？"
     },
     {
       "id": 21,
@@ -218,7 +326,8 @@
       "title": "Adjectives Complete!",
       "title_kr": "형용사 완성!",
       "message": "대단해요! Korean adjectives let you express opinions, describe the world around you, and give compliments. Try using one today: 오늘 날씨 좋아요! (The weather is nice today!)",
-      "next_url": "vocabulary.html?cat=workplace"
+      "next_url": "vocabulary.html?cat=workplace",
+      "message_ja": "대단해요！韓国語の形容詞で意見・周りの描写・褒め言葉が表現できます。今日使ってみましょう：오늘 날씨 좋아요！（今日は天気がいいです！）"
     }
   ]
 }

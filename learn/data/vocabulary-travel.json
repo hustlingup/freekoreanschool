@@ -2,7 +2,14 @@
   "lesson": "vocab-travel",
   "totalSteps": 20,
   "stages": [
-    { "id": 1, "name": "Travel", "name_kr": "여행", "first_step": 1, "last_step": 20, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Travel",
+      "name_kr": "여행",
+      "first_step": 1,
+      "last_step": 20,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,25 @@
       "title": "Travel Korean",
       "title_kr": "여행 한국어",
       "body": "Korea is one of the most travel-friendly countries in Asia — excellent public transit, abundant signage in English, and incredibly safe streets. Knowing key travel vocabulary makes navigating airports, trains, hotels, and tourist sites much smoother and opens doors to richer local interactions.",
-      "tip": { "icon": "✈️", "label": "T-money card", "text": "The 티머니 (T-money) card works on all Seoul subway lines, buses, and even taxis. Top it up at any convenience store. Essential travel vocabulary: 충전 (charge/top-up), 환승 (transfer), 출구 (exit)." }
+      "tip": {
+        "icon": "✈️",
+        "label": "T-money card",
+        "text": "The 티머니 (T-money) card works on all Seoul subway lines, buses, and even taxis. Top it up at any convenience store. Essential travel vocabulary: 충전 (charge/top-up), 환승 (transfer), 출구 (exit)."
+      },
+      "body_ja": "韓国はアジアで最も旅行しやすい国のひとつ―優れた公共交通、英語の案内表示、驚くほど安全な街並み。旅行語彙を知っていれば、空港・電車・ホテル・観光地でのナビゲーションがスムーズになり、地元との交流も豊かになります。",
+      "tip_ja": {
+        "label": "Tマネーカード",
+        "text": "ティマネー（T-money）カードはソウルの全地下鉄路線・バス・タクシーでも使えます。コンビニでチャージ可能。必須語彙：충전（チャージ）・환승（乗り換え）・출구（出口）。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["여", "권"],
+      "syllables": [
+        "여",
+        "권"
+      ],
       "romanization": "yeogwon",
       "katakana": "ヨグォン",
       "audio": "여권",
@@ -29,7 +48,11 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["비", "행", "기"],
+      "syllables": [
+        "비",
+        "행",
+        "기"
+      ],
       "romanization": "bihaenggi",
       "katakana": "ピヘンギ",
       "audio": "비행기",
@@ -40,7 +63,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["기", "차"],
+      "syllables": [
+        "기",
+        "차"
+      ],
       "romanization": "gicha",
       "katakana": "キチャ",
       "audio": "기차",
@@ -51,7 +77,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["버", "스"],
+      "syllables": [
+        "버",
+        "스"
+      ],
       "romanization": "beoseu",
       "katakana": "ポス",
       "audio": "버스",
@@ -62,7 +91,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["택", "시"],
+      "syllables": [
+        "택",
+        "시"
+      ],
       "romanization": "taeksi",
       "katakana": "テクシ",
       "audio": "택시",
@@ -73,7 +105,11 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["지", "하", "철"],
+      "syllables": [
+        "지",
+        "하",
+        "철"
+      ],
       "romanization": "jihacheol",
       "katakana": "チハチョル",
       "audio": "지하철",
@@ -84,7 +120,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["예", "약"],
+      "syllables": [
+        "예",
+        "약"
+      ],
       "romanization": "yeyak",
       "katakana": "イェヤク",
       "audio": "예약",
@@ -95,7 +134,11 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["체", "크", "인"],
+      "syllables": [
+        "체",
+        "크",
+        "인"
+      ],
       "romanization": "chekeu in",
       "katakana": "チェクイン",
       "audio": "체크인",
@@ -106,7 +149,10 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["관", "광"],
+      "syllables": [
+        "관",
+        "광"
+      ],
       "romanization": "gwangwang",
       "katakana": "クァングァン",
       "audio": "관광",
@@ -117,7 +163,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["지", "도"],
+      "syllables": [
+        "지",
+        "도"
+      ],
       "romanization": "jido",
       "katakana": "チド",
       "audio": "지도",
@@ -128,7 +177,10 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["환", "전"],
+      "syllables": [
+        "환",
+        "전"
+      ],
       "romanization": "hwanjeon",
       "katakana": "ファンジョン",
       "audio": "환전",
@@ -139,7 +191,10 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["출", "구"],
+      "syllables": [
+        "출",
+        "구"
+      ],
       "romanization": "chulgu",
       "katakana": "チュルグ",
       "audio": "출구",
@@ -150,7 +205,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["입", "구"],
+      "syllables": [
+        "입",
+        "구"
+      ],
       "romanization": "ipgu",
       "katakana": "イプグ",
       "audio": "입구",
@@ -161,7 +219,9 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["짐"],
+      "syllables": [
+        "짐"
+      ],
       "romanization": "jim",
       "katakana": "チム",
       "audio": "짐",
@@ -172,7 +232,10 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["여", "행"],
+      "syllables": [
+        "여",
+        "행"
+      ],
       "romanization": "yeohaeng",
       "katakana": "ヨヘン",
       "audio": "여행",
@@ -184,24 +247,48 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You need to exchange your dollars to Korean won. What do you look for?",
-      "choices": ["예약 (reservation)", "환전 (currency exchange)", "출구 (exit)", "지도 (map)"],
-      "correct": "환전 (currency exchange)"
+      "choices": [
+        "예약 (reservation)",
+        "환전 (currency exchange)",
+        "출구 (exit)",
+        "지도 (map)"
+      ],
+      "choices_ja": [
+        "예약（予約）",
+        "환전（両替）",
+        "출구（出口）",
+        "지도（地図）"
+      ],
+      "correct": "환전 (currency exchange)",
+      "prompt_ja": "ドルを韓国ウォンに両替したいとき、何を探しますか？"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You're at the subway exit. Which word describes where you are?",
-      "choices": ["입구", "출구", "환승", "예약"],
-      "correct": "출구"
+      "choices": [
+        "입구",
+        "출구",
+        "환승",
+        "예약"
+      ],
+      "correct": "출구",
+      "prompt_ja": "地下鉄の出口にいます。あなたがいる場所を示す単語は？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Which transport is Korea's high-speed rail called?",
-      "choices": ["버스", "기차 / KTX", "지하철", "택시"],
-      "correct": "기차 / KTX"
+      "choices": [
+        "버스",
+        "기차 / KTX",
+        "지하철",
+        "택시"
+      ],
+      "correct": "기차 / KTX",
+      "prompt_ja": "韓国の高速鉄道の名前は？"
     },
     {
       "id": 20,
@@ -210,7 +297,8 @@
       "title": "Travel Complete!",
       "title_kr": "여행 완성!",
       "message": "여행을 즐기세요! (Enjoy your travels!) You now have the vocabulary to navigate Korea's outstanding transportation system, book hotels, and explore tourist sites confidently.",
-      "next_url": "vocabulary.html?cat=shopping"
+      "next_url": "vocabulary.html?cat=shopping",
+      "message_ja": "여행을 즐기세요！（旅を楽しんでください！）韓国の優れた交通システムのナビゲート・ホテルの予約・観光地の探索に必要な語彙を手に入れました。"
     }
   ]
 }

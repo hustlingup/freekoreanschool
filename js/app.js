@@ -2719,7 +2719,6 @@ function newsRenderCard(article) {
   return `
     <a class="article-card" href="${newsArticleURL(article.slug)}" style="text-decoration:none;color:inherit;">
       <div class="article-thumb" style="background:var(--bg-2);height:180px;aspect-ratio:unset;position:relative;">
-        <div class="article-thumb-grad"></div>
         ${newsThumbHTML(article, '3rem')}
       </div>
       <div class="article-body">
@@ -2860,8 +2859,8 @@ const NewsPage = (() => {
     const enEl = document.getElementById('news-summary-en');
     const koEl = document.getElementById('news-summary-ko');
     if (!summary) {
-      if (enEl) enEl.textContent = 'No summary available for today.';
-      if (koEl) koEl.textContent = '오늘의 요약이 없습니다.';
+      const bar = document.getElementById('news-summary-bar');
+      if (bar) bar.style.display = 'none';
       return;
     }
     const d = new Date(summary.date);
@@ -3182,26 +3181,32 @@ const ArticlePage = (() => {
   }
 
   function renderVocabulary(a) {
-    const vocab = Array.isArray(a.vocabulary) ? a.vocabulary : [];
+    let vocab = a.vocabulary;
+    if (typeof vocab === 'string') { try { vocab = JSON.parse(vocab); } catch (_) { vocab = []; } }
+    if (!Array.isArray(vocab)) vocab = [];
     const section = document.getElementById('article-vocabulary-section');
     if (!section || !vocab.length) return;
+    const lang = window.LangManager?.getLang() || 'en';
+    const isJa = lang === 'ja';
+    const title = isJa ? 'キーボキャブラリー · 주요 단어' : 'Key Vocabulary · 주요 단어';
+    const sub = isJa ? 'この記事の単語' : 'Words from this article';
     section.innerHTML = `
-      <div class="vocab-section">
-        <div class="vocab-section-header">
-          <span class="vocab-section-icon">📖</span>
-          <h3 class="vocab-section-title">Key Vocabulary · 주요 단어</h3>
-          <span class="vocab-section-sub">Words from this article</span>
+      <div class="news-vocab-block">
+        <div class="news-vocab-block-header">
+          <span class="news-vocab-block-icon">📖</span>
+          <h3 class="news-vocab-block-title">${title}</h3>
+          <span class="news-vocab-block-sub">${sub}</span>
         </div>
         <div class="vocab-grid">
           ${vocab.map(v => `
             <div class="vocab-card">
               <div class="vocab-word">${newsEscape(v.word || '')}</div>
-              <div class="vocab-reading">${newsEscape(v.reading || '')}</div>
+              <div class="vocab-reading">${newsEscape(isJa ? (v.reading_ja || v.reading || '') : (v.reading || ''))}</div>
               <div class="vocab-pos">${newsEscape(v.part_of_speech || '')}</div>
-              <div class="vocab-definition">${newsEscape(v.definition_en || '')}</div>
+              <div class="vocab-definition">${newsEscape(isJa ? (v.definition_ja || v.definition_en || '') : (v.definition_en || ''))}</div>
               <div class="vocab-examples">
                 <div class="vocab-ex-ko">${newsEscape(v.example_ko || '')}</div>
-                <div class="vocab-ex-en">${newsEscape(v.example_en || '')}</div>
+                <div class="vocab-ex-en">${newsEscape(isJa ? (v.example_ja || v.example_en || '') : (v.example_en || ''))}</div>
               </div>
             </div>`).join('')}
         </div>

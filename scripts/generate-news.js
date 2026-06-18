@@ -174,10 +174,13 @@ Return ONLY valid JSON with exactly these fields:
     {
       "word": "Korean word in Hangul",
       "reading": "romanization (e.g. ban-do-che)",
+      "reading_ja": "katakana reading of the Korean pronunciation (e.g. パンドチェ)",
       "part_of_speech": "noun / verb / adjective / phrase",
       "definition_en": "concise English definition",
+      "definition_ja": "concise Japanese definition",
       "example_ko": "Short Korean example sentence using the word",
-      "example_en": "English translation of the example"
+      "example_en": "English translation of the example",
+      "example_ja": "Japanese translation of the example"
     }
   ],
   "seo_description": "Meta description under 155 chars",

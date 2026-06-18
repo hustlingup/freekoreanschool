@@ -2,7 +2,14 @@
   "lesson": "vocab-family",
   "totalSteps": 20,
   "stages": [
-    { "id": 1, "name": "Family", "name_kr": "가족", "first_step": 1, "last_step": 20, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Family",
+      "name_kr": "가족",
+      "first_step": 1,
+      "last_step": 20,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,26 @@
       "title": "Family in Korean",
       "title_kr": "가족",
       "body": "Korean family vocabulary is more detailed than English — it distinguishes not just the relationship, but whether you are older or younger, and whether you are male or female. For example, 'older brother' has different words depending on whether you are a boy (형) or a girl (오빠).",
-      "tip": { "icon": "👨‍👩‍👧", "label": "Gender matters here", "text": "Male speakers use 형 (older brother) and 누나 (older sister). Female speakers use 오빠 (older brother) and 언니 (older sister). This is one of Korean's most distinctive features." }
+      "tip": {
+        "icon": "👨‍👩‍👧",
+        "label": "Gender matters here",
+        "text": "Male speakers use 형 (older brother) and 누나 (older sister). Female speakers use 오빠 (older brother) and 언니 (older sister). This is one of Korean's most distinctive features."
+      },
+      "body_ja": "韓国語の家族語彙は英語より詳細で、関係だけでなく年上か年下か、男性か女性かも区別します。例えば「兄」には話し手が男性か女性かで異なる単語があります（형 vs 오빠）。",
+      "tip_ja": {
+        "label": "性別によって変わる",
+        "text": "男性話者は兄に형、姉に누나を使います。女性話者は兄に오빠、姉に언니を使います。これは韓国語の最も独特な特徴のひとつです。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "버", "지"],
+      "syllables": [
+        "아",
+        "버",
+        "지"
+      ],
       "romanization": "abeoji",
       "katakana": "アボジ",
       "audio": "아버지",
@@ -29,7 +49,11 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["어", "머", "니"],
+      "syllables": [
+        "어",
+        "머",
+        "니"
+      ],
       "romanization": "eomeoni",
       "katakana": "オモニ",
       "audio": "어머니",
@@ -40,7 +64,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "빠"],
+      "syllables": [
+        "아",
+        "빠"
+      ],
       "romanization": "appa",
       "katakana": "アッパ",
       "audio": "아빠",
@@ -51,7 +78,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["엄", "마"],
+      "syllables": [
+        "엄",
+        "마"
+      ],
       "romanization": "eomma",
       "katakana": "オンマ",
       "audio": "엄마",
@@ -62,7 +92,9 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["형"],
+      "syllables": [
+        "형"
+      ],
       "romanization": "hyeong",
       "katakana": "ヒョン",
       "audio": "형",
@@ -73,7 +105,10 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["오", "빠"],
+      "syllables": [
+        "오",
+        "빠"
+      ],
       "romanization": "oppa",
       "katakana": "オッパ",
       "audio": "오빠",
@@ -84,7 +119,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["누", "나"],
+      "syllables": [
+        "누",
+        "나"
+      ],
       "romanization": "nuna",
       "katakana": "ヌナ",
       "audio": "누나",
@@ -95,7 +133,10 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["언", "니"],
+      "syllables": [
+        "언",
+        "니"
+      ],
       "romanization": "eonni",
       "katakana": "オンニ",
       "audio": "언니",
@@ -106,7 +147,11 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["남", "동", "생"],
+      "syllables": [
+        "남",
+        "동",
+        "생"
+      ],
       "romanization": "namdongsaeng",
       "katakana": "ナムドンセン",
       "audio": "남동생",
@@ -117,7 +162,11 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["여", "동", "생"],
+      "syllables": [
+        "여",
+        "동",
+        "생"
+      ],
       "romanization": "yeodongsaeng",
       "katakana": "ヨドンセン",
       "audio": "여동생",
@@ -128,7 +177,12 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["할", "아", "버", "지"],
+      "syllables": [
+        "할",
+        "아",
+        "버",
+        "지"
+      ],
       "romanization": "harabeoji",
       "katakana": "ハラボジ",
       "audio": "할아버지",
@@ -139,7 +193,11 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["할", "머", "니"],
+      "syllables": [
+        "할",
+        "머",
+        "니"
+      ],
       "romanization": "halmeoni",
       "katakana": "ハルモニ",
       "audio": "할머니",
@@ -150,7 +208,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["남", "편"],
+      "syllables": [
+        "남",
+        "편"
+      ],
       "romanization": "nampyeon",
       "katakana": "ナムピョン",
       "audio": "남편",
@@ -161,7 +222,10 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "내"],
+      "syllables": [
+        "아",
+        "내"
+      ],
       "romanization": "anae",
       "katakana": "アネ",
       "audio": "아내",
@@ -172,7 +236,10 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "들"],
+      "syllables": [
+        "아",
+        "들"
+      ],
       "romanization": "adeul",
       "katakana": "アドゥル",
       "audio": "아들",
@@ -183,7 +250,9 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["딸"],
+      "syllables": [
+        "딸"
+      ],
       "romanization": "ddal",
       "katakana": "タル",
       "audio": "딸",
@@ -195,16 +264,34 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "A female speaker calls her older brother...",
-      "choices": ["형 (hyeong)", "오빠 (oppa)", "누나 (nuna)", "언니 (eonni)"],
-      "correct": "오빠 (oppa)"
+      "choices": [
+        "형 (hyeong)",
+        "오빠 (oppa)",
+        "누나 (nuna)",
+        "언니 (eonni)"
+      ],
+      "choices_ja": [
+        "형（ヒョン）",
+        "오빠（オッパ）",
+        "누나（ヌナ）",
+        "언니（オンニ）"
+      ],
+      "correct": "오빠 (oppa)",
+      "prompt_ja": "女性が自分の兄を呼ぶときは？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "How do you say 'grandmother' in Korean?",
-      "choices": ["할아버지", "엄마", "할머니", "아내"],
-      "correct": "할머니"
+      "choices": [
+        "할아버지",
+        "엄마",
+        "할머니",
+        "아내"
+      ],
+      "correct": "할머니",
+      "prompt_ja": "韓国語で「おばあさん」はどう言いますか？"
     },
     {
       "id": 20,
@@ -213,7 +300,8 @@
       "title": "Family Complete!",
       "title_kr": "가족 완성!",
       "message": "You've learned Korean family vocabulary — one of the most uniquely Korean aspects of the language. The gender-based distinctions for siblings are even used between close friends in Korean culture!",
-      "next_url": "vocabulary.html?cat=food-drink"
+      "next_url": "vocabulary.html?cat=food-drink",
+      "message_ja": "韓国語の家族語彙を習得しました―言語の中でも最も韓国らしい部分のひとつです。兄弟間の性別による呼び分けは、親しい友人間でも使われる文化があります！"
     }
   ]
 }

@@ -2,7 +2,14 @@
   "lesson": "vocab-days-time",
   "totalSteps": 23,
   "stages": [
-    { "id": 1, "name": "Days & Time", "name_kr": "날짜·시간", "first_step": 1, "last_step": 23, "time_minutes": 14 }
+    {
+      "id": 1,
+      "name": "Days & Time",
+      "name_kr": "날짜·시간",
+      "first_step": 1,
+      "last_step": 23,
+      "time_minutes": 14
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,26 @@
       "title": "Days and Time in Korean",
       "title_kr": "날짜와 시간",
       "body": "Korean days of the week follow the Chinese five elements system: 월 (moon/Monday), 화 (fire/Tuesday), 수 (water/Wednesday), 목 (wood/Thursday), 금 (metal/Friday), 토 (earth/Saturday), 일 (sun/Sunday). Time uses Sino-Korean numbers for minutes and native Korean for hours.",
-      "tip": { "icon": "📅", "label": "Time mixing", "text": "To say 3:30, Koreans say 세 시 삼십 분 — 세 시 uses native Korean (세 = three), but 삼십 분 uses Sino-Korean (삼십 = thirty). You must mix both systems when telling time!" }
+      "tip": {
+        "icon": "📅",
+        "label": "Time mixing",
+        "text": "To say 3:30, Koreans say 세 시 삼십 분 — 세 시 uses native Korean (세 = three), but 삼십 분 uses Sino-Korean (삼십 = thirty). You must mix both systems when telling time!"
+      },
+      "body_ja": "韓国語の曜日は中国の五行説に基づきます：월（月曜）・화（火曜）・수（水曜）・목（木曜）・금（金曜）・토（土曜）・일（日曜）。時刻は分に漢数字、時に固有語を使います。",
+      "tip_ja": {
+        "label": "数体系の混合",
+        "text": "3時30分は「세 시 삼십 분」と言います―세 시は固有語（세＝3）、삼십 분は漢数字（삼십＝30）。時刻を言うときは2つの数体系を混ぜて使います！"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["월", "요", "일"],
+      "syllables": [
+        "월",
+        "요",
+        "일"
+      ],
       "romanization": "woryoil",
       "katakana": "ウォリョイル",
       "audio": "월요일",
@@ -29,7 +49,11 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["화", "요", "일"],
+      "syllables": [
+        "화",
+        "요",
+        "일"
+      ],
       "romanization": "hwayoil",
       "katakana": "ファヨイル",
       "audio": "화요일",
@@ -40,7 +64,11 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["수", "요", "일"],
+      "syllables": [
+        "수",
+        "요",
+        "일"
+      ],
       "romanization": "suyoil",
       "katakana": "スヨイル",
       "audio": "수요일",
@@ -51,7 +79,11 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["목", "요", "일"],
+      "syllables": [
+        "목",
+        "요",
+        "일"
+      ],
       "romanization": "mogyoil",
       "katakana": "モギョイル",
       "audio": "목요일",
@@ -62,7 +94,11 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["금", "요", "일"],
+      "syllables": [
+        "금",
+        "요",
+        "일"
+      ],
       "romanization": "geumyoil",
       "katakana": "クミョイル",
       "audio": "금요일",
@@ -73,7 +109,11 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["토", "요", "일"],
+      "syllables": [
+        "토",
+        "요",
+        "일"
+      ],
       "romanization": "toyoil",
       "katakana": "トヨイル",
       "audio": "토요일",
@@ -84,7 +124,11 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["일", "요", "일"],
+      "syllables": [
+        "일",
+        "요",
+        "일"
+      ],
       "romanization": "ilyoil",
       "katakana": "イリョイル",
       "audio": "일요일",
@@ -96,14 +140,29 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "금요일 contains 금, meaning 'gold.' Which day is it?",
-      "choices": ["Monday", "Wednesday", "Friday", "Sunday"],
-      "correct": "Friday"
+      "choices": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Sunday"
+      ],
+      "choices_ja": [
+        "月曜日",
+        "水曜日",
+        "金曜日",
+        "日曜日"
+      ],
+      "correct": "Friday",
+      "prompt_ja": "금요일の「금」は「金」を意味します。何曜日ですか？"
     },
     {
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["오", "늘"],
+      "syllables": [
+        "오",
+        "늘"
+      ],
       "romanization": "oneul",
       "katakana": "オヌル",
       "audio": "오늘",
@@ -114,7 +173,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["내", "일"],
+      "syllables": [
+        "내",
+        "일"
+      ],
       "romanization": "naeil",
       "katakana": "ネイル",
       "audio": "내일",
@@ -125,7 +187,10 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["어", "제"],
+      "syllables": [
+        "어",
+        "제"
+      ],
       "romanization": "eoje",
       "katakana": "オジェ",
       "audio": "어제",
@@ -136,7 +201,10 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["지", "금"],
+      "syllables": [
+        "지",
+        "금"
+      ],
       "romanization": "jigeum",
       "katakana": "チグム",
       "audio": "지금",
@@ -147,7 +215,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "침"],
+      "syllables": [
+        "아",
+        "침"
+      ],
       "romanization": "achim",
       "katakana": "アチム",
       "audio": "아침",
@@ -158,7 +229,10 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["점", "심"],
+      "syllables": [
+        "점",
+        "심"
+      ],
       "romanization": "jeomsim",
       "katakana": "チョムシム",
       "audio": "점심",
@@ -169,7 +243,10 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["저", "녁"],
+      "syllables": [
+        "저",
+        "녁"
+      ],
       "romanization": "jeonyeok",
       "katakana": "チョニョク",
       "audio": "저녁",
@@ -180,7 +257,9 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["밤"],
+      "syllables": [
+        "밤"
+      ],
       "romanization": "bam",
       "katakana": "パム",
       "audio": "밤",
@@ -191,7 +270,10 @@
       "id": 18,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["주", "말"],
+      "syllables": [
+        "주",
+        "말"
+      ],
       "romanization": "jumal",
       "katakana": "チュマル",
       "audio": "주말",
@@ -202,7 +284,10 @@
       "id": 19,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["시", "간"],
+      "syllables": [
+        "시",
+        "간"
+      ],
       "romanization": "sigan",
       "katakana": "シガン",
       "audio": "시간",
@@ -213,7 +298,9 @@
       "id": 20,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["분"],
+      "syllables": [
+        "분"
+      ],
       "romanization": "bun",
       "katakana": "プン",
       "audio": "분",
@@ -225,16 +312,34 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Which word means 'tomorrow'?",
-      "choices": ["어제", "오늘", "내일", "지금"],
-      "correct": "내일"
+      "choices": [
+        "어제",
+        "오늘",
+        "내일",
+        "지금"
+      ],
+      "correct": "내일",
+      "prompt_ja": "「明日」はどの単語ですか？"
     },
     {
       "id": 22,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "아침 means both 'morning' and...",
-      "choices": ["Lunch", "Dinner", "Breakfast", "Midnight"],
-      "correct": "Breakfast"
+      "choices": [
+        "Lunch",
+        "Dinner",
+        "Breakfast",
+        "Midnight"
+      ],
+      "choices_ja": [
+        "昼食",
+        "夕食",
+        "朝食",
+        "深夜"
+      ],
+      "correct": "Breakfast",
+      "prompt_ja": "아침は「朝」と同時に何を意味しますか？"
     },
     {
       "id": 23,
@@ -243,7 +348,8 @@
       "title": "Days & Time Complete!",
       "title_kr": "날짜·시간 완성!",
       "message": "You can now navigate time in Korean! Days of the week and time expressions unlock scheduling, making plans, and understanding K-drama episode schedules. 주말에 뭐 해요? (What are you doing this weekend?)",
-      "next_url": "vocabulary.html?cat=places"
+      "next_url": "vocabulary.html?cat=places",
+      "message_ja": "韓国語で時間を表現できるようになりました！曜日と時間表現で、約束・スケジュール・K-ドラマのエピソード確認ができます。주말에 뭐 해요？（週末は何をしますか？）"
     }
   ]
 }

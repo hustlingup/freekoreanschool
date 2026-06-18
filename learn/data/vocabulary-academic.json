@@ -2,7 +2,14 @@
   "lesson": "vocab-academic",
   "totalSteps": 21,
   "stages": [
-    { "id": 1, "name": "Academic Korean", "name_kr": "학문 한국어", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Academic Korean",
+      "name_kr": "학문 한국어",
+      "first_step": 1,
+      "last_step": 21,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,26 @@
       "title": "Academic Korean",
       "title_kr": "학문 한국어",
       "body": "Korea places enormous emphasis on education (교육열 — literally 'education fever'). Academic vocabulary is essential whether you're studying at a Korean university, taking a TOPIK exam, or reading academic materials. The education system is highly competitive, with 대학교 (university) entrance being a major life milestone.",
-      "tip": { "icon": "🎓", "label": "TOPIK & University", "text": "TOPIK (Test of Proficiency in Korean) is the official Korean language exam used worldwide for university admission and job applications. Academic vocabulary appears heavily in TOPIK Level 3+. Learning these words boosts your reading comprehension significantly." }
+      "tip": {
+        "icon": "🎓",
+        "label": "TOPIK & University",
+        "text": "TOPIK (Test of Proficiency in Korean) is the official Korean language exam used worldwide for university admission and job applications. Academic vocabulary appears heavily in TOPIK Level 3+. Learning these words boosts your reading comprehension significantly."
+      },
+      "body_ja": "韓国は教育を非常に重視しています（교육열―文字通り「教育熱」）。韓国の大学で学ぶ・TOPIK試験を受ける・学術資料を読む際には、アカデミックな語彙が欠かせません。教育システムは競争が激しく、大学入試（대학교）は人生の大きな節目です。",
+      "tip_ja": {
+        "label": "TOPIKと大学",
+        "text": "TOPIK（韓国語能力試験）は大学入学や就職に世界中で使われる公式試験です。アカデミックな語彙はTOPIKレベル3以上に多く登場します。これらの単語を覚えると読解力が大幅に上がります。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["대", "학", "교"],
+      "syllables": [
+        "대",
+        "학",
+        "교"
+      ],
       "romanization": "daehakgyo",
       "katakana": "テハッキョ",
       "audio": "대학교",
@@ -29,7 +49,10 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["교", "수"],
+      "syllables": [
+        "교",
+        "수"
+      ],
       "romanization": "gyosu",
       "katakana": "キョス",
       "audio": "교수",
@@ -40,7 +63,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["강", "의"],
+      "syllables": [
+        "강",
+        "의"
+      ],
       "romanization": "gangi",
       "katakana": "カンイ",
       "audio": "강의",
@@ -51,7 +77,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["수", "업"],
+      "syllables": [
+        "수",
+        "업"
+      ],
       "romanization": "sueop",
       "katakana": "スオプ",
       "audio": "수업",
@@ -62,7 +91,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["과", "제"],
+      "syllables": [
+        "과",
+        "제"
+      ],
       "romanization": "gwaje",
       "katakana": "クァジェ",
       "audio": "과제",
@@ -73,7 +105,10 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["시", "험"],
+      "syllables": [
+        "시",
+        "험"
+      ],
       "romanization": "siheom",
       "katakana": "シホム",
       "audio": "시험",
@@ -84,7 +119,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["점", "수"],
+      "syllables": [
+        "점",
+        "수"
+      ],
       "romanization": "jeomssu",
       "katakana": "チョムス",
       "audio": "점수",
@@ -95,7 +133,10 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["전", "공"],
+      "syllables": [
+        "전",
+        "공"
+      ],
       "romanization": "jeongong",
       "katakana": "チョンゴン",
       "audio": "전공",
@@ -106,7 +147,10 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["입", "학"],
+      "syllables": [
+        "입",
+        "학"
+      ],
       "romanization": "iphak",
       "katakana": "イパク",
       "audio": "입학",
@@ -117,7 +161,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["졸", "업"],
+      "syllables": [
+        "졸",
+        "업"
+      ],
       "romanization": "joreop",
       "katakana": "チョロプ",
       "audio": "졸업",
@@ -128,7 +175,11 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["장", "학", "금"],
+      "syllables": [
+        "장",
+        "학",
+        "금"
+      ],
       "romanization": "janghakgeum",
       "katakana": "チャンハックム",
       "audio": "장학금",
@@ -139,7 +190,11 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["도", "서", "관"],
+      "syllables": [
+        "도",
+        "서",
+        "관"
+      ],
       "romanization": "doseogwan",
       "katakana": "トソグァン",
       "audio": "도서관",
@@ -150,7 +205,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["연", "구"],
+      "syllables": [
+        "연",
+        "구"
+      ],
       "romanization": "yeongu",
       "katakana": "ヨング",
       "audio": "연구",
@@ -161,7 +219,10 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["논", "문"],
+      "syllables": [
+        "논",
+        "문"
+      ],
       "romanization": "nonmun",
       "katakana": "ノンムン",
       "audio": "논문",
@@ -172,7 +233,10 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["학", "생"],
+      "syllables": [
+        "학",
+        "생"
+      ],
       "romanization": "haksaeng",
       "katakana": "ハクセン",
       "audio": "학생",
@@ -183,7 +247,11 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["기", "숙", "사"],
+      "syllables": [
+        "기",
+        "숙",
+        "사"
+      ],
       "romanization": "gisuksa",
       "katakana": "キスクサ",
       "audio": "기숙사",
@@ -195,24 +263,54 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You received money to help pay for your studies. What do you call it?",
-      "choices": ["과제 (gwaje)", "점수 (jeomssu)", "장학금 (janghakgeum)", "강의 (gangi)"],
-      "correct": "장학금 (janghakgeum)"
+      "choices": [
+        "과제 (gwaje)",
+        "점수 (jeomssu)",
+        "장학금 (janghakgeum)",
+        "강의 (gangi)"
+      ],
+      "choices_ja": [
+        "과제（課題）",
+        "점수（点数）",
+        "장학금（奨学金）",
+        "강의（講義）"
+      ],
+      "correct": "장학금 (janghakgeum)",
+      "prompt_ja": "勉強費用の補助として受け取るお金を何と言いますか？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "전공이 뭐예요? is asking...",
-      "choices": ["What year are you in?", "What is your major?", "Where is your university?", "When do you graduate?"],
-      "correct": "What is your major?"
+      "choices": [
+        "What year are you in?",
+        "What is your major?",
+        "Where is your university?",
+        "When do you graduate?"
+      ],
+      "choices_ja": [
+        "何年生ですか？",
+        "専攻は何ですか？",
+        "大学はどこですか？",
+        "いつ卒業しますか？"
+      ],
+      "correct": "What is your major?",
+      "prompt_ja": "전공이 뭐예요？は何を聞いていますか？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Korea's official Korean language proficiency exam is called...",
-      "choices": ["수능 (Suneung)", "TOPIK", "SAT", "한검"],
-      "correct": "TOPIK"
+      "choices": [
+        "수능 (Suneung)",
+        "TOPIK",
+        "SAT",
+        "한검"
+      ],
+      "correct": "TOPIK",
+      "prompt_ja": "韓国の公式韓国語能力試験は？"
     },
     {
       "id": 21,
@@ -221,7 +319,8 @@
       "title": "Academic Korean Complete!",
       "title_kr": "학문 완성!",
       "message": "Excellent work! Academic Korean opens doors to Korean universities, TOPIK certification, and intellectual conversations. 열심히 공부하세요! (Study hard!)",
-      "next_url": "vocabulary.html?cat=news"
+      "next_url": "vocabulary.html?cat=news",
+      "message_ja": "素晴らしい！アカデミック韓国語は韓国の大学・TOPIK合格・知的な会話への扉を開きます。열심히 공부하세요！（一生懸命勉強しましょう！）"
     }
   ]
 }

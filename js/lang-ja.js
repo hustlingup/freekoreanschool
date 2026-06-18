@@ -233,6 +233,39 @@ const LangManager = (() => {
     '60 min read': '60分読了',
     'Alphabet': 'アルファベット',
 
+    // ── grammar.html lesson-tag & lesson-meta ──────────────────
+    '📐 Intermediate · Lesson 5': '📐 中級 · レッスン 5',
+    '🎯 26 Stages · 70 Steps': '🎯 26段階 · 70ステップ',
+    '📊 Beginner–Advanced': '📊 初級〜上級',
+    '⏱️ ~90 min': '⏱️ 約90分',
+    '⚡ XP + Streak system': '⚡ XP + 連続学習システム',
+
+    // ── writing-essays.html lesson-tag & lesson-meta ───────────
+    '📝 Advanced · Lesson 12': '📝 上級 · レッスン 12',
+    '✍️ Essay Structure Guide': '✍️ 作文構成ガイド',
+    '📊 Advanced': '📊 上級',
+    '🔖 Writing': '🔖 作文',
+    '🔗 Connective Grammar': '🔗 接続文法',
+
+    // ── business-korean.html lesson-tag & lesson-meta ──────────
+    '💼 Advanced · Lesson 13': '💼 上級 · レッスン 13',
+    '🏢 Workplace Expressions': '🏢 職場表現',
+    '🔖 Professional': '🔖 プロフェッショナル',
+    '🤝 Business Etiquette': '🤝 ビジネスマナー',
+
+    // ── classical-korean.html lesson-tag & lesson-meta ─────────
+    '📜 Advanced · Lesson 14': '📜 上級 · レッスン 14',
+    '📜 Hanja (한자) Roots': '📜 漢字（한자）の語源',
+    '🔖 History & Literature': '🔖 歴史と文学',
+    '🏛️ Historical Korean Texts': '🏛️ 韓国古典文献',
+
+    // ── dialogues.html lesson-tag & lesson-meta ────────────────
+    '💬 All Levels · 40 Dialogues': '💬 全レベル · 40の会話',
+    '💬 40 Full Dialogues': '💬 40本の完全な会話',
+    '📊 All Levels': '📊 全レベル',
+    '🔖 Real-world Korean': '🔖 実践韓国語',
+    '🔊 Audio on Every Line': '🔊 全行に音声付き',
+
     // ── Hangul page headings ────────────────────────────────────
     'What is Hangul? (한글이란?)': 'ハングルとは？（한글이란？）',
     'Basic Vowels (기본 모음)': '基本母音（기본 모음）',

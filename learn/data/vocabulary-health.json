@@ -2,7 +2,14 @@
   "lesson": "vocab-health",
   "totalSteps": 21,
   "stages": [
-    { "id": 1, "name": "Health & Medicine", "name_kr": "건강·의학", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Health & Medicine",
+      "name_kr": "건강·의학",
+      "first_step": 1,
+      "last_step": 21,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,25 @@
       "title": "Health & Medicine",
       "title_kr": "건강과 의학",
       "body": "Korea has an excellent healthcare system and affordable clinics (의원). A clinic visit in Korea is fast and affordable — you simply present your health insurance card and pay a small co-pay. Knowing health vocabulary helps you describe symptoms accurately and understand instructions from medical staff.",
-      "tip": { "icon": "🏥", "label": "아파요 (I'm in pain/sick)", "text": "The phrase '아파요' (it hurts / I'm sick) is your most important health word. Combine it with body parts: 머리가 아파요 (My head hurts), 배가 아파요 (My stomach hurts). Point and say 여기가 아파요 (It hurts here)." }
+      "tip": {
+        "icon": "🏥",
+        "label": "아파요 (I'm in pain/sick)",
+        "text": "The phrase '아파요' (it hurts / I'm sick) is your most important health word. Combine it with body parts: 머리가 아파요 (My head hurts), 배가 아파요 (My stomach hurts). Point and say 여기가 아파요 (It hurts here)."
+      },
+      "body_ja": "韓国は優れた医療システムと手頃な診療所（의원）があります。診察は早くて安価で、保険証を提示して少額の自己負担で受診できます。症状を正確に説明し、医療スタッフの指示を理解するために健康語彙が役立ちます。",
+      "tip_ja": {
+        "label": "아파요（痛い/具合が悪い）",
+        "text": "「아파요」（痛い/具合が悪い）は最も重要な健康語です。体の部位と組み合わせて：머리가 아파요（頭が痛いです）、배가 아파요（お腹が痛いです）。여기가 아파요（ここが痛いです）と指して言いましょう。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["건", "강"],
+      "syllables": [
+        "건",
+        "강"
+      ],
       "romanization": "geongang",
       "katakana": "コンガン",
       "audio": "건강",
@@ -29,7 +48,11 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["아", "프", "다"],
+      "syllables": [
+        "아",
+        "프",
+        "다"
+      ],
       "romanization": "apeuda",
       "katakana": "アプダ",
       "audio": "아프다",
@@ -40,7 +63,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["병", "원"],
+      "syllables": [
+        "병",
+        "원"
+      ],
       "romanization": "byeongwon",
       "katakana": "ピョンウォン",
       "audio": "병원",
@@ -51,7 +77,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["의", "사"],
+      "syllables": [
+        "의",
+        "사"
+      ],
       "romanization": "uisa",
       "katakana": "ウィサ",
       "audio": "의사",
@@ -62,7 +91,11 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["간", "호", "사"],
+      "syllables": [
+        "간",
+        "호",
+        "사"
+      ],
       "romanization": "ganhosa",
       "katakana": "カノサ",
       "audio": "간호사",
@@ -73,7 +106,9 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["약"],
+      "syllables": [
+        "약"
+      ],
       "romanization": "yak",
       "katakana": "ヤク",
       "audio": "약",
@@ -84,7 +119,11 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["처", "방", "전"],
+      "syllables": [
+        "처",
+        "방",
+        "전"
+      ],
       "romanization": "cheobangjeon",
       "katakana": "チョバンジョン",
       "audio": "처방전",
@@ -95,7 +134,10 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["두", "통"],
+      "syllables": [
+        "두",
+        "통"
+      ],
       "romanization": "dutong",
       "katakana": "トゥトン",
       "audio": "두통",
@@ -106,7 +148,9 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["열"],
+      "syllables": [
+        "열"
+      ],
       "romanization": "yeol",
       "katakana": "ヨル",
       "audio": "열",
@@ -117,7 +161,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["기", "침"],
+      "syllables": [
+        "기",
+        "침"
+      ],
       "romanization": "gichim",
       "katakana": "キチム",
       "audio": "기침",
@@ -128,7 +175,10 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["콧", "물"],
+      "syllables": [
+        "콧",
+        "물"
+      ],
       "romanization": "konmul",
       "katakana": "コンムル",
       "audio": "콧물",
@@ -139,7 +189,12 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["알", "레", "르", "기"],
+      "syllables": [
+        "알",
+        "레",
+        "르",
+        "기"
+      ],
       "romanization": "allereugi",
       "katakana": "アルレルギ",
       "audio": "알레르기",
@@ -150,7 +205,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["수", "술"],
+      "syllables": [
+        "수",
+        "술"
+      ],
       "romanization": "susul",
       "katakana": "ススル",
       "audio": "수술",
@@ -161,7 +219,10 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["운", "동"],
+      "syllables": [
+        "운",
+        "동"
+      ],
       "romanization": "undong",
       "katakana": "ウンドン",
       "audio": "운동",
@@ -172,7 +233,10 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["쉬", "다"],
+      "syllables": [
+        "쉬",
+        "다"
+      ],
       "romanization": "swida",
       "katakana": "シュイダ",
       "audio": "쉬다",
@@ -184,32 +248,74 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You have a fever. In Korean you say...",
-      "choices": ["두통이 있어요", "기침이 나요", "열이 나요", "콧물이 나요"],
-      "correct": "열이 나요"
+      "choices": [
+        "두통이 있어요",
+        "기침이 나요",
+        "열이 나요",
+        "콧물이 나요"
+      ],
+      "correct": "열이 나요",
+      "prompt_ja": "熱があります。韓国語でどう言いますか？"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "After your doctor visit, you go next door to pick up your 처방전. What is it?",
-      "choices": ["A receipt", "A prescription", "Medicine", "An appointment card"],
-      "correct": "A prescription"
+      "choices": [
+        "A receipt",
+        "A prescription",
+        "Medicine",
+        "An appointment card"
+      ],
+      "choices_ja": [
+        "領収書",
+        "処方箋",
+        "薬",
+        "診察券"
+      ],
+      "correct": "A prescription",
+      "prompt_ja": "診察後、隣の窓口で처방전を受け取ります。それは何ですか？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "A Korean friend tells you 푹 쉬세요. What are they saying?",
-      "choices": ["Exercise more", "Eat well", "Please get some rest", "Go to the doctor"],
-      "correct": "Please get some rest"
+      "choices": [
+        "Exercise more",
+        "Eat well",
+        "Please get some rest",
+        "Go to the doctor"
+      ],
+      "choices_ja": [
+        "もっと運動してください",
+        "よく食べてください",
+        "ゆっくり休んでください",
+        "病院へ行ってください"
+      ],
+      "correct": "Please get some rest",
+      "prompt_ja": "韓国人の友人に「푹 쉬세요」と言われました。何を言われていますか？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "What is 약국?",
-      "choices": ["Hospital", "Pharmacy", "Clinic", "Emergency room"],
-      "correct": "Pharmacy"
+      "choices": [
+        "Hospital",
+        "Pharmacy",
+        "Clinic",
+        "Emergency room"
+      ],
+      "choices_ja": [
+        "病院",
+        "薬局",
+        "クリニック",
+        "救急室"
+      ],
+      "correct": "Pharmacy",
+      "prompt_ja": "약국とは何ですか？"
     },
     {
       "id": 21,
@@ -218,7 +324,8 @@
       "title": "Health Complete!",
       "title_kr": "건강 완성!",
       "message": "건강하세요! (Stay healthy!) You can now describe symptoms, understand medical advice, and navigate Korea's excellent healthcare system. Remember: 몸이 좋지 않으면 병원에 가세요 (If you don't feel well, go to the clinic).",
-      "next_url": "vocabulary.html?cat=media"
+      "next_url": "vocabulary.html?cat=media",
+      "message_ja": "건강하세요！（健康でいてください！）症状の説明・医療アドバイスの理解・韓国の優れた医療システムの利用ができるようになりました。体調が悪いときは：몸이 좋지 않으면 병원에 가세요（具合が悪ければ病院へ）。"
     }
   ]
 }

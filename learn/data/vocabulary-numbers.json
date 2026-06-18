@@ -2,7 +2,14 @@
   "lesson": "vocab-numbers",
   "totalSteps": 24,
   "stages": [
-    { "id": 1, "name": "Numbers", "name_kr": "숫자", "first_step": 1, "last_step": 24, "time_minutes": 14 }
+    {
+      "id": 1,
+      "name": "Numbers",
+      "name_kr": "숫자",
+      "first_step": 1,
+      "last_step": 24,
+      "time_minutes": 14
+    }
   ],
   "steps": [
     {
@@ -17,13 +24,25 @@
         "Sino-Korean: use for money (원), minutes (분), dates, phone numbers, and addresses — e.g., 일, 이, 삼",
         "Large numbers always use Sino-Korean — 백 (100), 천 (1,000), 만 (10,000)"
       ],
-      "tip": { "icon": "🔢", "label": "Quick memory trick", "text": "Think: Native = natural body rhythms (heartbeat, age, counting on your fingers). Sino = systematic/official contexts (clocks, money, calendars)." }
+      "tip": {
+        "icon": "🔢",
+        "label": "Quick memory trick",
+        "text": "Think: Native = natural body rhythms (heartbeat, age, counting on your fingers). Sino = systematic/official contexts (clocks, money, calendars)."
+      },
+      "body_ja": "韓国語には2つの数体系があります：固有語（고유어）と漢数字（한자어）。両方必ず覚えましょう。使う場面が異なるためです。",
+      "tip_ja": {
+        "label": "記憶のコツ",
+        "text": "固有語＝体のリズム（心拍数・年齢・指で数える）。漢数字＝公式な場面（時計・お金・カレンダー）と覚えましょう。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["하", "나"],
+      "syllables": [
+        "하",
+        "나"
+      ],
       "romanization": "hana",
       "katakana": "ハナ",
       "audio": "하나",
@@ -34,7 +53,9 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["둘"],
+      "syllables": [
+        "둘"
+      ],
       "romanization": "dul",
       "katakana": "トゥル",
       "audio": "둘",
@@ -45,7 +66,9 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["셋"],
+      "syllables": [
+        "셋"
+      ],
       "romanization": "set",
       "katakana": "セッ",
       "audio": "셋",
@@ -56,7 +79,9 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["넷"],
+      "syllables": [
+        "넷"
+      ],
       "romanization": "net",
       "katakana": "ネッ",
       "audio": "넷",
@@ -67,7 +92,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["다", "섯"],
+      "syllables": [
+        "다",
+        "섯"
+      ],
       "romanization": "daseot",
       "katakana": "タソッ",
       "audio": "다섯",
@@ -78,7 +106,10 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["여", "섯"],
+      "syllables": [
+        "여",
+        "섯"
+      ],
       "romanization": "yeoseot",
       "katakana": "ヨソッ",
       "audio": "여섯",
@@ -89,7 +120,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["일", "곱"],
+      "syllables": [
+        "일",
+        "곱"
+      ],
       "romanization": "ilgop",
       "katakana": "イルゴプ",
       "audio": "일곱",
@@ -100,7 +134,10 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["여", "덟"],
+      "syllables": [
+        "여",
+        "덟"
+      ],
       "romanization": "yeodeol",
       "katakana": "ヨドル",
       "audio": "여덟",
@@ -111,7 +148,9 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["열"],
+      "syllables": [
+        "열"
+      ],
       "romanization": "yeol",
       "katakana": "ヨル",
       "audio": "열",
@@ -123,8 +162,20 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You are telling someone your age in Korean. Which number system do you use?",
-      "choices": ["Sino-Korean (일, 이, 삼)", "Native Korean (하나, 둘, 셋)", "Either one is fine", "Neither — use English numbers"],
-      "correct": "Native Korean (하나, 둘, 셋)"
+      "choices": [
+        "Sino-Korean (일, 이, 삼)",
+        "Native Korean (하나, 둘, 셋)",
+        "Either one is fine",
+        "Neither — use English numbers"
+      ],
+      "choices_ja": [
+        "漢数字（일、이、삼）",
+        "固有語（하나、둘、셋）",
+        "どちらでもいい",
+        "どちらも使わない（英語を使う）"
+      ],
+      "correct": "Native Korean (하나, 둘, 셋)",
+      "prompt_ja": "韓国語で年齢を伝えるとき、どの数体系を使いますか？"
     },
     {
       "id": 12,
@@ -137,13 +188,16 @@
         "일(1), 이(2), 삼(3), 사(4), 오(5), 육(6), 칠(7), 팔(8), 구(9), 십(10)",
         "백 (100), 천 (1,000), 만 (10,000)",
         "Price: 오천 원 (5,000 won), 이만 원 (20,000 won)"
-      ]
+      ],
+      "body_ja": "漢数字（한자어）は漢字（한자）に由来します。お金・分・日付・電話番号・フロア数・大きな数量に使われます。"
     },
     {
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["일"],
+      "syllables": [
+        "일"
+      ],
       "romanization": "il",
       "katakana": "イル",
       "audio": "일",
@@ -154,7 +208,9 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["오"],
+      "syllables": [
+        "오"
+      ],
       "romanization": "o",
       "katakana": "オ",
       "audio": "오",
@@ -165,7 +221,9 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["십"],
+      "syllables": [
+        "십"
+      ],
       "romanization": "sip",
       "katakana": "シプ",
       "audio": "십",
@@ -176,7 +234,9 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["백"],
+      "syllables": [
+        "백"
+      ],
       "romanization": "baek",
       "katakana": "ペク",
       "audio": "백",
@@ -187,7 +247,9 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["천"],
+      "syllables": [
+        "천"
+      ],
       "romanization": "cheon",
       "katakana": "チョン",
       "audio": "천",
@@ -198,7 +260,9 @@
       "id": 18,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["만"],
+      "syllables": [
+        "만"
+      ],
       "romanization": "man",
       "katakana": "マン",
       "audio": "만",
@@ -219,13 +283,16 @@
         "권 (gwon) — books: 책 한 권 (one book)",
         "잔 (jan) — cups / glasses: 커피 한 잔 (one cup of coffee)",
         "번 (beon) — number order / times: 두 번 (two times)"
-      ]
+      ],
+      "body_ja": "韓国語の数字には助数詞（단위명사）が必要です。数えるものの種類を示す特別な語が数字の後に来ます。"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["개"],
+      "syllables": [
+        "개"
+      ],
       "romanization": "gae",
       "katakana": "ケ",
       "audio": "개",
@@ -236,7 +303,9 @@
       "id": 21,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["명"],
+      "syllables": [
+        "명"
+      ],
       "romanization": "myeong",
       "katakana": "ミョン",
       "audio": "명",
@@ -247,7 +316,9 @@
       "id": 22,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["번"],
+      "syllables": [
+        "번"
+      ],
       "romanization": "beon",
       "katakana": "ポン",
       "audio": "번",
@@ -259,8 +330,20 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Which counter do you use for books (책)?",
-      "choices": ["개 (gae)", "명 (myeong)", "권 (gwon)", "잔 (jan)"],
-      "correct": "권 (gwon)"
+      "choices": [
+        "개 (gae)",
+        "명 (myeong)",
+        "권 (gwon)",
+        "잔 (jan)"
+      ],
+      "choices_ja": [
+        "개（ケ）",
+        "명（ミョン）",
+        "권（クォン）",
+        "잔（チャン）"
+      ],
+      "correct": "권 (gwon)",
+      "prompt_ja": "本（책）を数えるときの助数詞は？"
     },
     {
       "id": 24,
@@ -269,7 +352,8 @@
       "title": "Numbers Complete!",
       "title_kr": "숫자 완성!",
       "message": "You've mastered both Korean number systems and key counters. Numbers unlock a huge part of daily life — telling time, shopping, giving your age, and more.",
-      "next_url": "vocabulary.html?cat=family"
+      "next_url": "vocabulary.html?cat=family",
+      "message_ja": "韓国語の2つの数体系と主要な助数詞をマスターしました！数は日常生活の大部分を解錠します―時刻・買い物・年齢の伝え方など。"
     }
   ]
 }

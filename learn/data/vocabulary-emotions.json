@@ -2,7 +2,14 @@
   "lesson": "vocab-emotions",
   "totalSteps": 20,
   "stages": [
-    { "id": 1, "name": "Emotions", "name_kr": "감정", "first_step": 1, "last_step": 20, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Emotions",
+      "name_kr": "감정",
+      "first_step": 1,
+      "last_step": 20,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,25 @@
       "title": "Emotions in Korean",
       "title_kr": "감정 표현",
       "body": "Korean emotion words often come as adjective-verbs ending in -다. To say 'I am happy,' you say 행복해요 (not 'I am 행복'). Many emotion words pair naturally with -하다 (to do/be) to form verbs. K-dramas are a great way to hear emotions used naturally in context.",
-      "tip": { "icon": "😊", "label": "Emotion + 해요", "text": "행복하다 → 행복해요 (I'm happy), 슬프다 → 슬퍼요 (I'm sad), 화나다 → 화났어요 (I got angry). The -아/어요 ending makes them polite present-tense statements." }
+      "tip": {
+        "icon": "😊",
+        "label": "Emotion + 해요",
+        "text": "행복하다 → 행복해요 (I'm happy), 슬프다 → 슬퍼요 (I'm sad), 화나다 → 화났어요 (I got angry). The -아/어요 ending makes them polite present-tense statements."
+      },
+      "body_ja": "韓国語の感情語は多くが-다で終わる形容詞動詞です。「嬉しい」は행복해요と言います（「I am 행복」ではありません）。多くの感情語は-하다（する/ある）と自然に組み合わさります。K-ドラマで感情表現を生きた文脈で聴くのがおすすめです。",
+      "tip_ja": {
+        "label": "感情 + 해요",
+        "text": "행복하다 → 행복해요（嬉しい）、슬프다 → 슬퍼요（悲しい）、화나다 → 화났어요（怒った）。-아/어요の語尾で丁寧な現在形の文になります。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["행", "복"],
+      "syllables": [
+        "행",
+        "복"
+      ],
       "romanization": "haengbok",
       "katakana": "ヘンボク",
       "audio": "행복",
@@ -29,7 +48,10 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["슬", "픔"],
+      "syllables": [
+        "슬",
+        "픔"
+      ],
       "romanization": "seulpeum",
       "katakana": "スルプム",
       "audio": "슬픔",
@@ -40,7 +62,9 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["화"],
+      "syllables": [
+        "화"
+      ],
       "romanization": "hwa",
       "katakana": "ファ",
       "audio": "화",
@@ -51,7 +75,11 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["무", "서", "움"],
+      "syllables": [
+        "무",
+        "서",
+        "움"
+      ],
       "romanization": "museoum",
       "katakana": "ムソウム",
       "audio": "무서움",
@@ -62,7 +90,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["피", "곤"],
+      "syllables": [
+        "피",
+        "곤"
+      ],
       "romanization": "pigon",
       "katakana": "ピゴン",
       "audio": "피곤",
@@ -73,7 +104,11 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["배", "고", "픔"],
+      "syllables": [
+        "배",
+        "고",
+        "픔"
+      ],
       "romanization": "baegopeum",
       "katakana": "ペゴプム",
       "audio": "배고픔",
@@ -84,7 +119,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["걱", "정"],
+      "syllables": [
+        "걱",
+        "정"
+      ],
       "romanization": "geokjeong",
       "katakana": "コクチョン",
       "audio": "걱정",
@@ -95,7 +133,10 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["설", "렘"],
+      "syllables": [
+        "설",
+        "렘"
+      ],
       "romanization": "seollem",
       "katakana": "ソルレム",
       "audio": "설렘",
@@ -106,7 +147,11 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["외", "로", "움"],
+      "syllables": [
+        "외",
+        "로",
+        "움"
+      ],
       "romanization": "oeroum",
       "katakana": "ウェロウム",
       "audio": "외로움",
@@ -117,7 +162,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["창", "피"],
+      "syllables": [
+        "창",
+        "피"
+      ],
       "romanization": "changpi",
       "katakana": "チャンピ",
       "audio": "창피",
@@ -128,7 +176,10 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["실", "망"],
+      "syllables": [
+        "실",
+        "망"
+      ],
       "romanization": "silmang",
       "katakana": "シルマン",
       "audio": "실망",
@@ -139,7 +190,11 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["지", "루", "함"],
+      "syllables": [
+        "지",
+        "루",
+        "함"
+      ],
       "romanization": "jiruham",
       "katakana": "チルハム",
       "audio": "지루함",
@@ -150,7 +205,11 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["그", "리", "움"],
+      "syllables": [
+        "그",
+        "리",
+        "움"
+      ],
       "romanization": "geurium",
       "katakana": "クリウム",
       "audio": "그리움",
@@ -161,7 +220,10 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["놀", "람"],
+      "syllables": [
+        "놀",
+        "람"
+      ],
       "romanization": "nollam",
       "katakana": "ノルラム",
       "audio": "놀람",
@@ -172,7 +234,11 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["뿌", "듯", "함"],
+      "syllables": [
+        "뿌",
+        "듯",
+        "함"
+      ],
       "romanization": "ppudeukham",
       "katakana": "プドゥカム",
       "audio": "뿌듯함",
@@ -184,24 +250,48 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "How do you say 'I'm tired' in Korean?",
-      "choices": ["행복해요", "피곤해요", "배고파요", "슬퍼요"],
-      "correct": "피곤해요"
+      "choices": [
+        "행복해요",
+        "피곤해요",
+        "배고파요",
+        "슬퍼요"
+      ],
+      "correct": "피곤해요",
+      "prompt_ja": "「疲れた」は韓国語でどう言いますか？"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "설렘 is the unique Korean word for...",
-      "choices": ["Loneliness", "Embarrassment", "Excitement / anticipatory flutter", "Boredom"],
-      "correct": "Excitement / anticipatory flutter"
+      "choices": [
+        "Loneliness",
+        "Embarrassment",
+        "Excitement / anticipatory flutter",
+        "Boredom"
+      ],
+      "choices_ja": [
+        "孤独感",
+        "恥ずかしさ",
+        "ときめき（期待感）",
+        "退屈"
+      ],
+      "correct": "Excitement / anticipatory flutter",
+      "prompt_ja": "설렘は韓国語の独特な感情で、意味は？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You accomplished something and feel proud. The Korean word for this warm proud feeling is...",
-      "choices": ["그리움", "놀람", "뿌듯함", "걱정"],
-      "correct": "뿌듯함"
+      "choices": [
+        "그리움",
+        "놀람",
+        "뿌듯함",
+        "걱정"
+      ],
+      "correct": "뿌듯함",
+      "prompt_ja": "何かを達成して誇りに思う気持ち。この温かい誇りの感覚を表す韓国語は？"
     },
     {
       "id": 20,
@@ -210,7 +300,8 @@
       "title": "Emotions Complete!",
       "title_kr": "감정 완성!",
       "message": "감정을 표현하세요! Expressing emotions in Korean unlocks deeper connections. K-dramas taught the world 설렘 and 그리움 — feelings so specific Korean has dedicated words for them.",
-      "next_url": "vocabulary.html?cat=body-parts"
+      "next_url": "vocabulary.html?cat=body-parts",
+      "message_ja": "감정을 표현하세요！韓国語で感情を表現することで、より深いつながりが生まれます。K-ドラマは설렘や그리움を世界に広めました―韓国語にしかない繊細な感情です。"
     }
   ]
 }

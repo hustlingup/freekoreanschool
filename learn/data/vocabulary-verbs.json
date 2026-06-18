@@ -2,7 +2,14 @@
   "lesson": "vocab-verbs",
   "totalSteps": 22,
   "stages": [
-    { "id": 1, "name": "Verbs & Actions", "name_kr": "동사", "first_step": 1, "last_step": 22, "time_minutes": 13 }
+    {
+      "id": 1,
+      "name": "Verbs & Actions",
+      "name_kr": "동사",
+      "first_step": 1,
+      "last_step": 22,
+      "time_minutes": 13
+    }
   ],
   "steps": [
     {
@@ -18,13 +25,25 @@
         "하다 → 해요 (do → I do / am doing)",
         "오다 → 와요 (come → I come / am coming)"
       ],
-      "tip": { "icon": "⚡", "label": "하다 verbs", "text": "Hundreds of Korean verbs are made by adding 하다 (to do) to a noun: 공부 (study) + 하다 = 공부하다 (to study). Learning 하다 unlocks an enormous vocabulary instantly." }
+      "tip": {
+        "icon": "⚡",
+        "label": "하다 verbs",
+        "text": "Hundreds of Korean verbs are made by adding 하다 (to do) to a noun: 공부 (study) + 하다 = 공부하다 (to study). Learning 하다 unlocks an enormous vocabulary instantly."
+      },
+      "body_ja": "韓国語の動詞は常に文末に来て、語尾を付けて活用します。辞書（基本）形は-다で終わります。丁寧な現在形にするには-다を-아요または-어요に変えます。この語尾が丁寧さのレベルと時制を決めます。",
+      "tip_ja": {
+        "label": "하다動詞",
+        "text": "韓国語の動詞の多くは、名詞に하다（する/ある）を加えて作られます：공부（勉強）＋하다＝공부하다（勉強する）。하다を覚えると膨大な語彙が一気に使えるようになります。"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["먹", "다"],
+      "syllables": [
+        "먹",
+        "다"
+      ],
       "romanization": "meokda",
       "katakana": "モクタ",
       "audio": "먹다",
@@ -35,7 +54,11 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["마", "시", "다"],
+      "syllables": [
+        "마",
+        "시",
+        "다"
+      ],
       "romanization": "masida",
       "katakana": "マシダ",
       "audio": "마시다",
@@ -46,7 +69,10 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["자", "다"],
+      "syllables": [
+        "자",
+        "다"
+      ],
       "romanization": "jada",
       "katakana": "チャダ",
       "audio": "자다",
@@ -57,7 +83,10 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["가", "다"],
+      "syllables": [
+        "가",
+        "다"
+      ],
       "romanization": "gada",
       "katakana": "カダ",
       "audio": "가다",
@@ -68,7 +97,10 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["오", "다"],
+      "syllables": [
+        "오",
+        "다"
+      ],
       "romanization": "oda",
       "katakana": "オダ",
       "audio": "오다",
@@ -79,7 +111,10 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["보", "다"],
+      "syllables": [
+        "보",
+        "다"
+      ],
       "romanization": "boda",
       "katakana": "ポダ",
       "audio": "보다",
@@ -90,7 +125,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["듣", "다"],
+      "syllables": [
+        "듣",
+        "다"
+      ],
       "romanization": "deutda",
       "katakana": "トゥッタ",
       "audio": "듣다",
@@ -101,7 +139,11 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["말", "하", "다"],
+      "syllables": [
+        "말",
+        "하",
+        "다"
+      ],
       "romanization": "malhada",
       "katakana": "マラダ",
       "audio": "말하다",
@@ -112,7 +154,10 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["읽", "다"],
+      "syllables": [
+        "읽",
+        "다"
+      ],
       "romanization": "ikda",
       "katakana": "イクタ",
       "audio": "읽다",
@@ -123,7 +168,10 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["쓰", "다"],
+      "syllables": [
+        "쓰",
+        "다"
+      ],
       "romanization": "sseuda",
       "katakana": "スダ",
       "audio": "쓰다",
@@ -134,7 +182,12 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["공", "부", "하", "다"],
+      "syllables": [
+        "공",
+        "부",
+        "하",
+        "다"
+      ],
       "romanization": "gongbuhada",
       "katakana": "コンブハダ",
       "audio": "공부하다",
@@ -145,7 +198,11 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["일", "하", "다"],
+      "syllables": [
+        "일",
+        "하",
+        "다"
+      ],
       "romanization": "ilhada",
       "katakana": "イラダ",
       "audio": "일하다",
@@ -156,7 +213,10 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["놀", "다"],
+      "syllables": [
+        "놀",
+        "다"
+      ],
       "romanization": "nolda",
       "katakana": "ノルダ",
       "audio": "놀다",
@@ -167,7 +227,11 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["만", "들", "다"],
+      "syllables": [
+        "만",
+        "들",
+        "다"
+      ],
       "romanization": "mandeulda",
       "katakana": "マンドゥルダ",
       "audio": "만들다",
@@ -178,7 +242,12 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["좋", "아", "하", "다"],
+      "syllables": [
+        "좋",
+        "아",
+        "하",
+        "다"
+      ],
       "romanization": "joahada",
       "katakana": "チョアハダ",
       "audio": "좋아하다",
@@ -189,7 +258,10 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["알", "다"],
+      "syllables": [
+        "알",
+        "다"
+      ],
       "romanization": "alda",
       "katakana": "アルダ",
       "audio": "알다",
@@ -201,32 +273,74 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Which verb means 'to eat'?",
-      "choices": ["마시다", "먹다", "보다", "듣다"],
-      "correct": "먹다"
+      "choices": [
+        "마시다",
+        "먹다",
+        "보다",
+        "듣다"
+      ],
+      "correct": "먹다",
+      "prompt_ja": "「食べる」を意味する動詞はどれですか？"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "한국어 공부해요. This means...",
-      "choices": ["I eat Korean food", "I watch Korean dramas", "I study Korean", "I like Korea"],
-      "correct": "I study Korean"
+      "choices": [
+        "I eat Korean food",
+        "I watch Korean dramas",
+        "I study Korean",
+        "I like Korea"
+      ],
+      "choices_ja": [
+        "韓国料理を食べます",
+        "韓国ドラマを観ます",
+        "韓国語を勉強します",
+        "韓国が好きです"
+      ],
+      "correct": "I study Korean",
+      "prompt_ja": "한국어 공부해요。これはどういう意味ですか？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Hundreds of Korean verbs are formed by adding 하다 to a noun. This type of verb is called...",
-      "choices": ["A compound verb", "A 하다 verb", "A batchim verb", "A passive verb"],
-      "correct": "A 하다 verb"
+      "choices": [
+        "A compound verb",
+        "A 하다 verb",
+        "A batchim verb",
+        "A passive verb"
+      ],
+      "choices_ja": [
+        "複合動詞",
+        "하다 動詞",
+        "パッチム動詞",
+        "受動態動詞"
+      ],
+      "correct": "A 하다 verb",
+      "prompt_ja": "名詞に하다を加えて作る動詞は何と呼ばれますか？"
     },
     {
       "id": 21,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "놀다 means...",
-      "choices": ["To work", "To sleep", "To play / hang out", "To eat"],
-      "correct": "To play / hang out"
+      "choices": [
+        "To work",
+        "To sleep",
+        "To play / hang out",
+        "To eat"
+      ],
+      "choices_ja": [
+        "働く",
+        "寝る",
+        "遊ぶ・一緒に過ごす",
+        "食べる"
+      ],
+      "correct": "To play / hang out",
+      "prompt_ja": "놀다はどういう意味ですか？"
     },
     {
       "id": 22,
@@ -235,7 +349,8 @@
       "title": "Verbs Complete!",
       "title_kr": "동사 완성!",
       "message": "훌륭해요! Korean verbs are the engine of the language. With 하다 verbs, you now have access to thousands of compound verbs. 계속 공부하세요! (Keep studying!)",
-      "next_url": "vocabulary.html?cat=adjectives"
+      "next_url": "vocabulary.html?cat=adjectives",
+      "message_ja": "훌륭해요！韓国語の動詞は言語のエンジンです。하다動詞で数千の複合動詞が使えるようになりました。계속 공부하세요！（勉強を続けましょう！）"
     }
   ]
 }

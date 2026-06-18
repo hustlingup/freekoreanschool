@@ -2,7 +2,14 @@
   "lesson": "vocab-body-parts",
   "totalSteps": 21,
   "stages": [
-    { "id": 1, "name": "Body Parts", "name_kr": "신체", "first_step": 1, "last_step": 21, "time_minutes": 12 }
+    {
+      "id": 1,
+      "name": "Body Parts",
+      "name_kr": "신체",
+      "first_step": 1,
+      "last_step": 21,
+      "time_minutes": 12
+    }
   ],
   "steps": [
     {
@@ -12,13 +19,25 @@
       "title": "Body Parts in Korean",
       "title_kr": "신체 부위",
       "body": "Body vocabulary is essential for medical visits, describing pain, sports, and everyday health conversations. At a Korean clinic, you'll need to point to where it hurts and name the body part. Korean has specific terms for body parts that English combines into one word.",
-      "tip": { "icon": "🫁", "label": "Describing pain", "text": "To say something hurts, add -이/가 아파요 after the body part: 머리가 아파요 (My head hurts), 배가 아파요 (My stomach hurts). This pattern works for almost every body part!" }
+      "tip": {
+        "icon": "🫁",
+        "label": "Describing pain",
+        "text": "To say something hurts, add -이/가 아파요 after the body part: 머리가 아파요 (My head hurts), 배가 아파요 (My stomach hurts). This pattern works for almost every body part!"
+      },
+      "body_ja": "体の語彙は、病院の受診・痛みの表現・スポーツ・日常の健康会話に欠かせません。韓国の病院では、どこが痛いかを指して部位の名前を言う必要があります。英語では1語でまとめる部位も、韓国語では専用の単語があります。",
+      "tip_ja": {
+        "label": "痛みの表現",
+        "text": "何かが痛いときは、体の部位の後に-이/가 아파요を付けます：머리가 아파요（頭が痛いです）、배가 아파요（お腹が痛いです）。ほぼすべての体の部位に使えるパターンです！"
+      }
     },
     {
       "id": 2,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["머", "리"],
+      "syllables": [
+        "머",
+        "리"
+      ],
       "romanization": "meori",
       "katakana": "モリ",
       "audio": "머리",
@@ -29,7 +48,9 @@
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["눈"],
+      "syllables": [
+        "눈"
+      ],
       "romanization": "nun",
       "katakana": "ヌン",
       "audio": "눈",
@@ -40,7 +61,9 @@
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["코"],
+      "syllables": [
+        "코"
+      ],
       "romanization": "ko",
       "katakana": "コ",
       "audio": "코",
@@ -51,7 +74,9 @@
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["입"],
+      "syllables": [
+        "입"
+      ],
       "romanization": "ip",
       "katakana": "イプ",
       "audio": "입",
@@ -62,7 +87,9 @@
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["귀"],
+      "syllables": [
+        "귀"
+      ],
       "romanization": "gwi",
       "katakana": "クィ",
       "audio": "귀",
@@ -73,7 +100,9 @@
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["목"],
+      "syllables": [
+        "목"
+      ],
       "romanization": "mok",
       "katakana": "モク",
       "audio": "목",
@@ -84,7 +113,10 @@
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["어", "깨"],
+      "syllables": [
+        "어",
+        "깨"
+      ],
       "romanization": "eokkae",
       "katakana": "オッケ",
       "audio": "어깨",
@@ -95,7 +127,9 @@
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["팔"],
+      "syllables": [
+        "팔"
+      ],
       "romanization": "pal",
       "katakana": "パル",
       "audio": "팔",
@@ -106,7 +140,9 @@
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["손"],
+      "syllables": [
+        "손"
+      ],
       "romanization": "son",
       "katakana": "ソン",
       "audio": "손",
@@ -117,7 +153,11 @@
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["손", "가", "락"],
+      "syllables": [
+        "손",
+        "가",
+        "락"
+      ],
       "romanization": "songarak",
       "katakana": "ソンガラク",
       "audio": "손가락",
@@ -128,7 +168,10 @@
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["가", "슴"],
+      "syllables": [
+        "가",
+        "슴"
+      ],
       "romanization": "gaseum",
       "katakana": "カスム",
       "audio": "가슴",
@@ -139,7 +182,9 @@
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["배"],
+      "syllables": [
+        "배"
+      ],
       "romanization": "bae",
       "katakana": "ペ",
       "audio": "배",
@@ -150,7 +195,9 @@
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["등"],
+      "syllables": [
+        "등"
+      ],
       "romanization": "deung",
       "katakana": "トゥン",
       "audio": "등",
@@ -161,7 +208,10 @@
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["허", "리"],
+      "syllables": [
+        "허",
+        "리"
+      ],
       "romanization": "heori",
       "katakana": "ホリ",
       "audio": "허리",
@@ -172,7 +222,10 @@
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["다", "리"],
+      "syllables": [
+        "다",
+        "리"
+      ],
       "romanization": "dari",
       "katakana": "タリ",
       "audio": "다리",
@@ -183,7 +236,10 @@
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["무", "릎"],
+      "syllables": [
+        "무",
+        "릎"
+      ],
       "romanization": "mureup",
       "katakana": "ムルプ",
       "audio": "무릎",
@@ -194,7 +250,9 @@
       "id": 18,
       "stage": 1,
       "type": "listen_repeat",
-      "syllables": ["발"],
+      "syllables": [
+        "발"
+      ],
       "romanization": "bal",
       "katakana": "パル",
       "audio": "발",
@@ -206,16 +264,40 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "At the doctor, you say 머리가 아파요. You are saying...",
-      "choices": ["My throat hurts", "My stomach hurts", "My head hurts", "My back hurts"],
-      "correct": "My head hurts"
+      "choices": [
+        "My throat hurts",
+        "My stomach hurts",
+        "My head hurts",
+        "My back hurts"
+      ],
+      "choices_ja": [
+        "喉が痛いです",
+        "お腹が痛いです",
+        "頭が痛いです",
+        "背中が痛いです"
+      ],
+      "correct": "My head hurts",
+      "prompt_ja": "病院で「머리가 아파요」と言うのは？"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "눈 means 'eye' — but it also means...",
-      "choices": ["Rain", "Snow", "Wind", "Cloud"],
-      "correct": "Snow"
+      "choices": [
+        "Rain",
+        "Snow",
+        "Wind",
+        "Cloud"
+      ],
+      "choices_ja": [
+        "雨",
+        "雪",
+        "風",
+        "雲"
+      ],
+      "correct": "Snow",
+      "prompt_ja": "눈は「目」を意味しますが、もう一つの意味は？"
     },
     {
       "id": 21,
@@ -224,7 +306,8 @@
       "title": "Body Parts Complete!",
       "title_kr": "신체 완성!",
       "message": "You now know essential Korean body vocabulary! At your next clinic visit in Korea, you'll be able to say exactly where it hurts. 건강하세요! (Stay healthy!)",
-      "next_url": "vocabulary.html?cat=travel"
+      "next_url": "vocabulary.html?cat=travel",
+      "message_ja": "韓国語の体の部位語彙を習得しました！次に韓国の病院を訪れたとき、どこが痛いかをきちんと伝えられます。건강하세요！（健康でいてください！）"
     }
   ]
 }
