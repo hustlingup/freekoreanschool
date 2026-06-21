@@ -259,7 +259,7 @@
       if (!slug) { location.href = 'index.html'; return; }
 
       // Update EN link to point to same article
-      document.getElementById('en-link').href = `../article.html?slug=${encodeURIComponent(slug)}`;
+      document.getElementById('en-link').href = `/news/article.html?slug=${encodeURIComponent(slug)}`;
 
       const [{ data: article }, { data: topicList }] = await Promise.all([
         sb.from('articles').select('*').eq('slug', slug).eq('status', 'published').maybeSingle(),
@@ -356,7 +356,7 @@
           const ri = TOPIC_ICONS[rt.slug] || '📰';
           const rc = TOPIC_COLORS[rt.slug] || 'tag-news';
           const rTitle = r.title_ja || r.title_en;
-          return `<a class="news-card" href="article.html?slug=${encodeURIComponent(r.slug)}">
+          return `<a class="news-card" href="/news/ja/article.html?slug=${encodeURIComponent(r.slug)}">
             <div class="news-card-thumb">${r.thumbnail_url ? `<img src="${r.thumbnail_url}" alt="${rTitle}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />` : `<span style="font-size:2.5rem;">${ri}</span>`}</div>
             <div class="news-card-body">
               <div class="news-card-tags"><span class="news-tag ${rc}">${ri} ${rt.name_ja || rt.name_en || ''}</span></div>
@@ -380,7 +380,7 @@
           const wt = topics[w.topic_id] || {};
           const wi = TOPIC_ICONS[wt.slug] || '📰';
           const wTitle = w.title_ja || w.title_en;
-          return `<a class="news-weekly-item" href="article.html?slug=${encodeURIComponent(w.slug)}">
+          return `<a class="news-weekly-item" href="/news/ja/article.html?slug=${encodeURIComponent(w.slug)}">
             <div class="news-weekly-thumb">${w.thumbnail_url ? `<img src="${w.thumbnail_url}" alt="${wTitle}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />` : `<span style="font-size:2rem;">${wi}</span>`}</div>
             <div class="news-weekly-body">
               <div class="news-weekly-topic">${wi} ${wt.name_ja || wt.name_en || ''}</div>
@@ -402,13 +402,13 @@
         const prevBtn = document.getElementById('article-prev');
         const nextBtn = document.getElementById('article-next');
         if (prev) {
-          prevBtn.href = `article.html?slug=${encodeURIComponent(prev.slug)}`;
+          prevBtn.href = `/news/ja/article.html?slug=${encodeURIComponent(prev.slug)}`;
           document.getElementById('article-prev-title').textContent = prev.title_ja || prev.title_en;
         } else {
           prevBtn.style.visibility = 'hidden';
         }
         if (next) {
-          nextBtn.href = `article.html?slug=${encodeURIComponent(next.slug)}`;
+          nextBtn.href = `/news/ja/article.html?slug=${encodeURIComponent(next.slug)}`;
           document.getElementById('article-next-title').textContent = next.title_ja || next.title_en;
         } else {
           nextBtn.style.visibility = 'hidden';

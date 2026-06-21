@@ -311,7 +311,7 @@
       const topicName = t.name_ja || t.name_en || slug;
       const readTime = a.reading_time_ja || a.reading_time_en || 3;
 
-      return `<a class="news-card" href="article.html?slug=${encodeURIComponent(a.slug)}">
+      return `<a class="news-card" href="/news/ja/article.html?slug=${encodeURIComponent(a.slug)}">
         <div class="news-card-thumb">${thumb}</div>
         <div class="news-card-body">
           <div class="news-card-tags">
@@ -337,7 +337,7 @@
       const thumb = a.thumbnail_url
         ? `<img src="${a.thumbnail_url}" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />`
         : `<span style="font-size:2rem;">${icon}</span>`;
-      return `<a class="news-weekly-item" href="article.html?slug=${encodeURIComponent(a.slug)}">
+      return `<a class="news-weekly-item" href="/news/ja/article.html?slug=${encodeURIComponent(a.slug)}">
         <div class="news-weekly-thumb">${thumb}</div>
         <div class="news-weekly-body">
           <div class="news-weekly-topic">${icon} ${topicName}</div>

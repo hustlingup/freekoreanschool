@@ -227,6 +227,7 @@ const LangManager = (() => {
     'Lettuce wrap style': 'サンチュ包みスタイル',
 
     // ── Lesson header meta ─────────────────────────────────────
+    'About this lesson': 'このレッスンについて',
     'Korean Grammar': '韓国語文法',
     '✏️ Beginner · Lesson 1': '✏️ 初級 · レッスン 1',
     '📐 Intermediate · Lesson 7': '📐 中級 · レッスン 7',

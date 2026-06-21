@@ -256,7 +256,7 @@
         const tr = document.createElement('tr');
         tr.innerHTML = `
           <td style="max-width:400px;">
-            <a href="article.html?slug=${encodeURIComponent(a.slug)}" style="font-weight:600;color:var(--text);text-decoration:none;line-height:1.4;display:block;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text)'">
+            <a href="/news/ja/article.html?slug=${encodeURIComponent(a.slug)}" style="font-weight:600;color:var(--text);text-decoration:none;line-height:1.4;display:block;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text)'">
               ${title}
             </a>
             ${a.title_ko ? `<span style="font-size:0.78rem;color:var(--text-muted);font-family:var(--font-ko);">${a.title_ko}</span>` : ''}
@@ -265,7 +265,7 @@
           <td><span class="news-tag tag-level-${a.level}">${level}</span></td>
           <td style="white-space:nowrap;color:var(--text-muted);font-size:0.82rem;">${fmtDate(a.published_at)}</td>
           <td style="color:var(--text-muted);font-size:0.82rem;">${a.view_count || 0}</td>
-          <td><a href="article.html?slug=${encodeURIComponent(a.slug)}" class="btn btn-outline btn-sm" style="white-space:nowrap;">読む →</a></td>`;
+          <td><a href="/news/ja/article.html?slug=${encodeURIComponent(a.slug)}" class="btn btn-outline btn-sm" style="white-space:nowrap;">読む →</a></td>`;
         tbody.appendChild(tr);
       });
 

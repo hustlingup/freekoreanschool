@@ -1572,6 +1572,102 @@ function initSidebarScrollSpy() {
   });
 }
 
+/* ── Lesson Header: mobile nav row (back · tag · xp) ──── */
+function initLessonNavRow() {
+  const header  = document.querySelector('.lesson-header');
+  if (!header) return;
+
+  const tag     = header.querySelector(':scope > .lesson-tag');
+  const crumb   = document.querySelector('.lesson-breadcrumb');
+  const xpBadge = document.getElementById('xp-badge');
+  if (!tag) return;
+
+  const row = document.createElement('div');
+  row.className = 'lesson-nav-row';
+
+  // Left: back link from breadcrumb's first <a>
+  const srcLink = crumb?.querySelector('a');
+  const back = document.createElement('a');
+  back.href = srcLink?.href || '../index.html';
+  back.className = 'lesson-nav-back';
+  back.innerHTML =
+    '<span class="en-only">← Home</span>' +
+    '<span class="ja-only">← ホーム</span>';
+  row.appendChild(back);
+
+  // Center: cloned tag (original hidden on mobile via CSS class)
+  const tagClone = tag.cloneNode(true);
+  row.appendChild(tagClone);
+  tag.classList.add('lesson-tag--in-nav');
+
+  // Right: XP value — mirrors fixed badge, hides fixed badge on mobile
+  if (xpBadge) {
+    const xp = document.createElement('div');
+    xp.className = 'lesson-nav-xp';
+    xp.textContent = xpBadge.textContent;
+    new MutationObserver(() => { xp.textContent = xpBadge.textContent; })
+      .observe(xpBadge, { childList: true, characterData: true, subtree: true });
+    row.appendChild(xp);
+    xpBadge.classList.add('xp-badge--in-nav');
+  }
+
+  header.prepend(row);
+  if (crumb) crumb.classList.add('lesson-breadcrumb--in-nav');
+
+  if (document.body.classList.contains('lang-ja')) {
+    window.LangManager?.translateNode(row);
+  }
+}
+
+/* ── Lesson Header: mobile progressive-reveal accordion ── */
+function initLessonHeaderAccordion() {
+  const header = document.querySelector('.lesson-header');
+  if (!header) return;
+
+  const meta    = header.querySelector('.lesson-meta');
+  const bullets = header.querySelector('.lesson-intro-bullets');
+  const metaSpans = meta ? Array.from(meta.querySelectorAll(':scope > span')) : [];
+
+  // Nothing to collapse
+  if (metaSpans.length < 3 && !bullets) return;
+
+  // Build button
+  const btn = document.createElement('button');
+  btn.className = 'lesson-details-btn';
+  btn.setAttribute('aria-expanded', 'false');
+  btn.innerHTML =
+    '<span class="en-only">About this lesson</span>' +
+    '<span class="ja-only">このレッスンについて</span>' +
+    '<span class="lesson-details-caret" aria-hidden="true">▼</span>';
+
+  // Build body wrapper
+  const body  = document.createElement('div');
+  body.className = 'lesson-details-body';
+  const inner = document.createElement('div');
+  inner.className = 'lesson-details-body-inner';
+  body.appendChild(inner);
+
+  // Move bullets into accordion body (hidden on mobile, always visible on desktop via max-height rule)
+  if (bullets) inner.appendChild(bullets);
+
+  // Insert after meta (or after title if no meta)
+  const anchor = meta || header.querySelector('.lesson-title');
+  if (!anchor) return;
+  anchor.after(btn, body);
+
+  // If already in Japanese mode, apply lang-ja visibility rules to new nodes
+  if (document.body.classList.contains('lang-ja')) {
+    window.LangManager?.translateNode(btn);
+  }
+
+  // Toggle
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    header.classList.toggle('lesson-header--expanded', !expanded);
+  });
+}
+
 /* ── Init All ───────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   FlashcardManager.cacheAllVocab(); // must run before LangManager.init() translates DOM text
@@ -1609,6 +1705,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initVocabBookmarks();
   initFlashcardPage();
   initSidebarAccordions();
+  initLessonNavRow();
+  initLessonHeaderAccordion();
   initKrTransSpeakButtons();
   highlightActiveNav();
   initSidebarScrollSpy();
@@ -2693,14 +2791,14 @@ function newsTopicIcon(slug) {
 
 function newsThumbHTML(article, size) {
   if (article.thumbnail_url) {
-    return `<img src="${newsEscape(article.thumbnail_url)}" alt="${newsEscape(article.thumbnail_alt || article.title_en)}" loading="lazy" />`;
+    return `<img src="${newsEscape(article.thumbnail_url)}" alt="${newsEscape(article.thumbnail_alt || article.title_en)}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />`;
   }
   const icon = article.topics ? newsTopicIcon(article.topics.slug) : '📰';
   return `<span style="font-size:${size || '3rem'};position:relative;z-index:1;">${icon}</span>`;
 }
 
 function newsArticleURL(slug) {
-  return `article.html?slug=${encodeURIComponent(slug)}`;
+  return `/news/article.html?slug=${encodeURIComponent(slug)}`;
 }
 
 function newsRenderCard(article) {
@@ -2718,7 +2816,7 @@ function newsRenderCard(article) {
   const readLink = lang === 'ja' ? '読む →' : 'Read →';
   return `
     <a class="article-card" href="${newsArticleURL(article.slug)}" style="text-decoration:none;color:inherit;">
-      <div class="article-thumb" style="background:var(--bg-2);height:180px;aspect-ratio:unset;position:relative;">
+      <div class="news-card-thumb">
         ${newsThumbHTML(article, '3rem')}
       </div>
       <div class="article-body">
