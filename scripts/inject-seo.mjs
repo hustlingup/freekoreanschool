@@ -300,58 +300,7 @@ for (const page of PAGES) {
 
 console.log(`\nDone: ${updated} updated, ${skipped} skipped, ${missing} not found.\n`);
 
-// ─── Generate sitemap.xml ─────────────────────────────────────────────────────
-
-const NOW = new Date().toISOString().slice(0, 10);
-
-function priority(page) {
-  if (page.canonical === '/') return '1.0';
-  if (['/culture', '/travel', '/news'].includes(page.canonical)) return '0.9';
-  if ((page.lang || 'en') === 'ja') return '0.6';
-  if (['/privacy', '/terms', '/contact', '/about', '/quiz'].includes(page.canonical)) return '0.6';
-  return '0.8';
-}
-
-function changefreq(page) {
-  if (page.schema === 'newsarticle' || page.canonical === '/news') return 'daily';
-  if (page.schema === 'article' || page.schema === 'course') return 'monthly';
-  return 'weekly';
-}
-
-const sitemapPages = PAGES.filter(p => !p.noSitemap);
-
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${sitemapPages.map(p => {
-  const url = `${BASE}${p.canonical}`;
-  const lang = p.lang || 'en';
-  const altEn = p.en ? `${BASE}${p.en}` : null;
-  const altJa = p.ja ? `${BASE}${p.ja}` : null;
-
-  const alts = [];
-  if (altEn) {
-    alts.push(`    <xhtml:link rel="alternate" hreflang="en" href="${altEn}"/>`);
-    alts.push(`    <xhtml:link rel="alternate" hreflang="ja" href="${url}"/>`);
-    alts.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${altEn}"/>`);
-  } else if (altJa) {
-    alts.push(`    <xhtml:link rel="alternate" hreflang="en" href="${url}"/>`);
-    alts.push(`    <xhtml:link rel="alternate" hreflang="ja" href="${altJa}"/>`);
-    alts.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${url}"/>`);
-  }
-
-  return [
-    `  <url>`,
-    `    <loc>${url}</loc>`,
-    `    <lastmod>${NOW}</lastmod>`,
-    `    <changefreq>${changefreq(p)}</changefreq>`,
-    `    <priority>${priority(p)}</priority>`,
-    ...alts,
-    `  </url>`,
-  ].join('\n');
-}).join('\n')}
-</urlset>
-`;
-
-fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap, 'utf-8');
-console.log(`✅  sitemap.xml  (${sitemapPages.length} URLs)`);
+// sitemap.xml is generated separately by scripts/gen-sitemap.cjs, which scans
+// the real per-language file inventory across all 9 locales. This script only
+// covers EN+JA and would silently truncate the other 7 languages if it wrote
+// sitemap.xml itself — do not restore that behavior here.

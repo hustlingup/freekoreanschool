@@ -35,8 +35,14 @@ node scripts/gen-lesson-manifest.cjs
 # all-language meanings for the search bar; rerun after editing learn/data/*.json
 node scripts/gen-search-words.cjs
 
-# SEO metadata injection
+# SEO metadata injection (canonical/OG/hreflang/Schema.org into EN+JA pages —
+# does NOT touch sitemap.xml)
 node scripts/inject-seo.mjs
+
+# sitemap.xml — single source of truth, scans real file inventory across all
+# 9 locales (en + ja/zh-tw/es/de/fr/vi/th/id). Rerun after adding/removing any
+# learn/culture/travel/news/root page in any language.
+node scripts/gen-sitemap.cjs
 ```
 
 **Do not run** `gen-content-mirrors.cjs`, `gen-root-mirrors.cjs`, or any language-specific `gen-*-site.cjs` scripts during Phase 2 translation work — they overwrite translated prose with English source.
