@@ -1,14 +1,15 @@
 {
   "lesson": "vocab-body-parts",
-  "totalSteps": 21,
+  "totalSteps": 22,
   "stages": [
     {
       "id": 1,
       "name": "Body Parts",
-      "name_kr": "신체",
+      "name_kr": "신체 부위",
       "first_step": 1,
-      "last_step": 21,
-      "time_minutes": 12
+      "last_step": 22,
+      "time_minutes": 13,
+      "name_es": "Partes del Cuerpo"
     }
   ],
   "steps": [
@@ -18,16 +19,28 @@
       "type": "reading_card",
       "title": "Body Parts in Korean",
       "title_kr": "신체 부위",
-      "body": "Body vocabulary is essential for medical visits, describing pain, sports, and everyday health conversations. At a Korean clinic, you'll need to point to where it hurts and name the body part. Korean has specific terms for body parts that English combines into one word.",
+      "title_zh_tw": "韓語身體部位",
+      "body": "Knowing body-part vocabulary is essential for doctor visits, describing symptoms, and everyday conversation. Korean body-part names are mostly native Korean words, though medical terminology often uses Sino-Korean.",
+      "body_zh_tw": "學會身體部位詞彙對看醫生、描述症狀和日常對話都至關重要。韓語身體部位名稱大多是固有語，但醫學術語通常使用漢字語。",
       "tip": {
-        "icon": "🫁",
-        "label": "Describing pain",
-        "text": "To say something hurts, add -이/가 아파요 after the body part: 머리가 아파요 (My head hurts), 배가 아파요 (My stomach hurts). This pattern works for almost every body part!"
+        "icon": "🩺",
+        "label": "Useful at the clinic",
+        "text": "If you feel pain, say: [body part] 아파요 (it hurts). E.g., 머리 아파요 = My head hurts. 배 아파요 = My stomach hurts."
       },
-      "body_ja": "体の語彙は、病院の受診・痛みの表現・スポーツ・日常の健康会話に欠かせません。韓国の病院では、どこが痛いかを指して部位の名前を言う必要があります。英語では1語でまとめる部位も、韓国語では専用の単語があります。",
+      "tip_zh_tw": {
+        "label": "看診時很有用",
+        "text": "如果你感到疼痛，說：[身體部位] 아파요（很痛）。例：머리 아파요＝我頭痛。배 아파요＝我肚子痛。"
+      },
+      "body_ja": "体の部位の語彙は、病院・症状の説明・日常会話に欠かせません。韓国語の体の名称はほとんど固有語ですが、医学用語には漢数字が多く使われます。",
       "tip_ja": {
-        "label": "痛みの表現",
-        "text": "何かが痛いときは、体の部位の後に-이/가 아파요を付けます：머리가 아파요（頭が痛いです）、배가 아파요（お腹が痛いです）。ほぼすべての体の部位に使えるパターンです！"
+        "label": "クリニックで役立つ",
+        "text": "痛みがある場合：[体の部位] 아파요（痛いです）。例：머리 아파요（頭が痛い）、배 아파요（お腹が痛い）。"
+      },
+      "title_es": "Partes del Cuerpo en Coreano",
+      "body_es": "Conocer el vocabulario de partes del cuerpo es esencial para visitas al médico, describir síntomas y la conversación diaria. Los nombres coreanos son en su mayoría palabras nativas, aunque la terminología médica suele usar el coreano sino-coreano.",
+      "tip_es": {
+        "label": "Útil en la clínica",
+        "text": "Si sientes dolor, di: [parte del cuerpo] 아파요 (duele). Ej: 머리 아파요 = Me duele la cabeza. 배 아파요 = Me duele el estómago."
       }
     },
     {
@@ -39,78 +52,113 @@
         "리"
       ],
       "romanization": "meori",
+      "zhuyin": "ㄇㄜ·ㄌㄧ",
       "katakana": "モリ",
       "audio": "머리",
-      "meaning": "Head / hair — context determines which meaning",
-      "meaning_ja": "頭 / 髪 ― 文脈によって意味が変わる"
+      "meaning": "Head / hair — 머리카락 is specifically 'hair strand'",
+      "meaning_zh_tw": "頭 / 頭髮——머리카락 特指「頭髮絲」",
+      "meaning_ja": "頭・髪 ― 머리카락 は「髪の毛」を指す",
+      "meaning_es": "Cabeza / cabello — 머리카락 es específicamente \"hebra de cabello\""
     },
     {
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "눈"
+        "얼",
+        "굴"
       ],
-      "romanization": "nun",
-      "katakana": "ヌン",
-      "audio": "눈",
-      "meaning": "Eye(s) — also means 'snow' (same spelling)",
-      "meaning_ja": "目 ― 「雪」も눈（同じ綴り）"
+      "romanization": "eolgul",
+      "zhuyin": "ㄜㄌ·ㄍㄨㄌ",
+      "katakana": "オルグル",
+      "audio": "얼굴",
+      "meaning": "Face",
+      "meaning_zh_tw": "臉",
+      "meaning_ja": "顔",
+      "meaning_es": "Cara"
     },
     {
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "코"
+        "눈"
       ],
-      "romanization": "ko",
-      "katakana": "コ",
-      "audio": "코",
-      "meaning": "Nose",
-      "meaning_ja": "鼻"
+      "romanization": "nun",
+      "zhuyin": "ㄋㄨㄣ",
+      "katakana": "ヌン",
+      "audio": "눈",
+      "meaning": "Eye / snow — same word! Context determines the meaning",
+      "meaning_zh_tw": "眼睛 / 雪——同一個詞！由語境決定意思",
+      "meaning_ja": "目 / 雪 ― 同じ単語！文脈で意味が変わる",
+      "meaning_es": "Ojo / nieve — ¡la misma palabra! El contexto determina el significado"
     },
     {
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "입"
+        "코"
       ],
-      "romanization": "ip",
-      "katakana": "イプ",
-      "audio": "입",
-      "meaning": "Mouth",
-      "meaning_ja": "口"
+      "romanization": "ko",
+      "zhuyin": "ㄎㄛ",
+      "katakana": "コ",
+      "audio": "코",
+      "meaning": "Nose",
+      "meaning_zh_tw": "鼻子",
+      "meaning_ja": "鼻",
+      "meaning_es": "Nariz"
     },
     {
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "귀"
+        "입"
       ],
-      "romanization": "gwi",
-      "katakana": "クィ",
-      "audio": "귀",
-      "meaning": "Ear(s)",
-      "meaning_ja": "耳"
+      "romanization": "ip",
+      "zhuyin": "ㄧ",
+      "katakana": "イプ",
+      "audio": "입",
+      "meaning": "Mouth",
+      "meaning_zh_tw": "嘴巴",
+      "meaning_ja": "口",
+      "meaning_es": "Boca"
     },
     {
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "목"
+        "귀"
       ],
-      "romanization": "mok",
-      "katakana": "モク",
-      "audio": "목",
-      "meaning": "Neck / throat — 목이 아파요 = my throat hurts",
-      "meaning_ja": "首 / 喉 ― 목이 아파요（喉が痛いです）"
+      "romanization": "gwi",
+      "zhuyin": "ㄍㄨㄟ",
+      "katakana": "クィ",
+      "audio": "귀",
+      "meaning": "Ear",
+      "meaning_zh_tw": "耳朵",
+      "meaning_ja": "耳",
+      "meaning_es": "Oreja"
     },
     {
       "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "목"
+      ],
+      "romanization": "mok",
+      "zhuyin": "ㄇㄛ",
+      "katakana": "モク",
+      "audio": "목",
+      "meaning": "Neck / throat — 목이 아파요 = sore throat",
+      "meaning_zh_tw": "脖子 / 喉嚨——목이 아파요＝喉嚨痛",
+      "meaning_ja": "首・喉 ― 목이 아파요（喉が痛い）",
+      "meaning_es": "Cuello / garganta — 목이 아파요 = dolor de garganta"
+    },
+    {
+      "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -118,39 +166,48 @@
         "깨"
       ],
       "romanization": "eokkae",
+      "zhuyin": "ㄜ·ㄍㄝ",
       "katakana": "オッケ",
       "audio": "어깨",
-      "meaning": "Shoulder(s)",
-      "meaning_ja": "肩"
-    },
-    {
-      "id": 9,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "팔"
-      ],
-      "romanization": "pal",
-      "katakana": "パル",
-      "audio": "팔",
-      "meaning": "Arm — also the number 8 in native Korean",
-      "meaning_ja": "腕 ― 固有語の8とも同じ綴り"
+      "meaning": "Shoulder",
+      "meaning_zh_tw": "肩膀",
+      "meaning_ja": "肩",
+      "meaning_es": "Hombro"
     },
     {
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "손"
+        "팔"
       ],
-      "romanization": "son",
-      "katakana": "ソン",
-      "audio": "손",
-      "meaning": "Hand(s)",
-      "meaning_ja": "手"
+      "romanization": "pal",
+      "zhuyin": "ㄆㄚㄌ",
+      "katakana": "パル",
+      "audio": "팔",
+      "meaning": "Arm",
+      "meaning_zh_tw": "手臂",
+      "meaning_ja": "腕",
+      "meaning_es": "Brazo"
     },
     {
       "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "손"
+      ],
+      "romanization": "son",
+      "zhuyin": "ㄙㄨㄣ",
+      "katakana": "ソン",
+      "audio": "손",
+      "meaning": "Hand",
+      "meaning_zh_tw": "手",
+      "meaning_ja": "手",
+      "meaning_es": "Mano"
+    },
+    {
+      "id": 12,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -159,24 +216,13 @@
         "락"
       ],
       "romanization": "songarak",
+      "zhuyin": "ㄙㄨㄣ·ㄍㄚ·ㄌㄚ",
       "katakana": "ソンガラク",
       "audio": "손가락",
-      "meaning": "Finger — 손 (hand) + 가락 (strip/piece)",
-      "meaning_ja": "指 ― 손（手）+ 가락（細い棒）"
-    },
-    {
-      "id": 12,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "가",
-        "슴"
-      ],
-      "romanization": "gaseum",
-      "katakana": "カスム",
-      "audio": "가슴",
-      "meaning": "Chest — used for both physical chest and emotional heart in poetry",
-      "meaning_ja": "胸 ― 体の胸・詩では心の意味にも使う"
+      "meaning": "Finger — literally 'hand branch'",
+      "meaning_zh_tw": "手指——字面意思是「手的枝杈」",
+      "meaning_ja": "指 ― 文字通り「手の枝」",
+      "meaning_es": "Dedo — literalmente \"rama de la mano\""
     },
     {
       "id": 13,
@@ -186,10 +232,13 @@
         "배"
       ],
       "romanization": "bae",
+      "zhuyin": "ㄅㄝ",
       "katakana": "ペ",
       "audio": "배",
-      "meaning": "Stomach / belly — 배가 아파요 = my stomach hurts",
-      "meaning_ja": "お腹 / 胃 ― 배가 아파요（お腹が痛いです）"
+      "meaning": "Stomach / belly / boat / pear — very polysemous",
+      "meaning_zh_tw": "肚子 / 腹部 / 船 / 梨——一詞多義",
+      "meaning_ja": "お腹・腹・船・梨 ― 多義語",
+      "meaning_es": "Estómago / barriga / barco / pera — muy polisémico"
     },
     {
       "id": 14,
@@ -199,27 +248,16 @@
         "등"
       ],
       "romanization": "deung",
+      "zhuyin": "ㄉㄜㄥ",
       "katakana": "トゥン",
       "audio": "등",
-      "meaning": "Back — 등이 아파요 = my back hurts",
-      "meaning_ja": "背中 ― 등이 아파요（背中が痛いです）"
+      "meaning": "Back (of the body)",
+      "meaning_zh_tw": "背部",
+      "meaning_ja": "背中",
+      "meaning_es": "Espalda (del cuerpo)"
     },
     {
       "id": 15,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "허",
-        "리"
-      ],
-      "romanization": "heori",
-      "katakana": "ホリ",
-      "audio": "허리",
-      "meaning": "Lower back / waist — 허리가 아파요 = my back/waist hurts",
-      "meaning_ja": "腰 ― 허리가 아파요（腰が痛いです）"
-    },
-    {
-      "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -227,68 +265,130 @@
         "리"
       ],
       "romanization": "dari",
+      "zhuyin": "ㄉㄚ·ㄌㄧ",
       "katakana": "タリ",
       "audio": "다리",
-      "meaning": "Leg — also means 'bridge' (same spelling, different meaning)",
-      "meaning_ja": "足（脚）― 「橋」も다리（同じ綴り）"
+      "meaning": "Leg / bridge — 다리 아파요 = my leg hurts",
+      "meaning_zh_tw": "腿 / 橋——다리 아파요＝我腿痛",
+      "meaning_ja": "足・橋 ― 다리 아파요（足が痛い）",
+      "meaning_es": "Pierna / puente — 다리 아파요 = me duele la pierna"
     },
     {
-      "id": 17,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "무",
-        "릎"
-      ],
-      "romanization": "mureup",
-      "katakana": "ムルプ",
-      "audio": "무릎",
-      "meaning": "Knee",
-      "meaning_ja": "膝"
-    },
-    {
-      "id": 18,
+      "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
         "발"
       ],
       "romanization": "bal",
+      "zhuyin": "ㄅㄚㄌ",
       "katakana": "パル",
       "audio": "발",
-      "meaning": "Foot / feet",
-      "meaning_ja": "足（足先）"
+      "meaning": "Foot",
+      "meaning_zh_tw": "腳",
+      "meaning_ja": "足（足首から下）",
+      "meaning_es": "Pie"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "심",
+        "장"
+      ],
+      "romanization": "simjang",
+      "zhuyin": "ㄙㄧㄇ·ㄓㄤ",
+      "katakana": "シムジャン",
+      "audio": "심장",
+      "meaning": "Heart (the organ) — 마음 is 'heart' (emotions)",
+      "meaning_zh_tw": "心臟（器官）——마음 是「心」（情感上的）",
+      "meaning_ja": "心臓（臓器）― 気持ちの「心」は마음",
+      "meaning_es": "Corazón (el órgano) — 마음 es el \"corazón\" de las emociones"
+    },
+    {
+      "id": 18,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "이"
+      ],
+      "romanization": "i",
+      "zhuyin": "ㄧ",
+      "katakana": "イ",
+      "audio": "이",
+      "meaning": "Tooth — 치아 is the more formal/medical word",
+      "meaning_zh_tw": "牙齒——치아 是較正式的醫學用語",
+      "meaning_ja": "歯 ― 치아 がより丁寧・医学的な語",
+      "meaning_es": "Diente — 치아 es el término más formal/médico"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "At the doctor, you say 머리가 아파요. You are saying...",
+      "prompt": "Which word means both 'leg' AND 'bridge' in Korean?",
+      "prompt_zh_tw": "哪個韓語單詞同時有「腿」和「橋」兩個意思？",
       "choices": [
-        "My throat hurts",
-        "My stomach hurts",
-        "My head hurts",
-        "My back hurts"
+        "다리",
+        "발",
+        "팔",
+        "손"
       ],
-      "choices_ja": [
-        "喉が痛いです",
-        "お腹が痛いです",
-        "頭が痛いです",
-        "背中が痛いです"
-      ],
-      "correct": "My head hurts",
-      "prompt_ja": "病院で「머리가 아파요」と言うのは？"
+      "correct": "다리",
+      "prompt_ja": "「足」と「橋」の両方の意味を持つ韓国語は？",
+      "prompt_es": "¿Qué palabra significa \"pierna\" Y \"puente\" en coreano?"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "눈 means 'eye' — but it also means...",
+      "prompt": "머리 아파요 means...",
+      "prompt_zh_tw": "머리 아파요 的意思是……",
+      "choices": [
+        "My stomach hurts",
+        "I have a headache",
+        "My leg hurts",
+        "I have a sore throat"
+      ],
+      "choices_zh_tw": [
+        "我肚子痛",
+        "我頭痛",
+        "我腿痛",
+        "我喉嚨痛"
+      ],
+      "choices_ja": [
+        "お腹が痛い",
+        "頭が痛い",
+        "足が痛い",
+        "喉が痛い"
+      ],
+      "correct": "I have a headache",
+      "prompt_ja": "머리 아파요 はどういう意味ですか？",
+      "prompt_es": "머리 아파요 significa...",
+      "choices_es": [
+        "Me duele el estómago",
+        "Me duele la cabeza",
+        "Me duele la pierna",
+        "Me duele la garganta"
+      ]
+    },
+    {
+      "id": 21,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "눈 can mean 'eye' and also what?",
+      "prompt_zh_tw": "눈 可以表示「眼睛」，還可以表示什麼？",
       "choices": [
         "Rain",
         "Snow",
         "Wind",
         "Cloud"
+      ],
+      "choices_zh_tw": [
+        "雨",
+        "雪",
+        "風",
+        "雲"
       ],
       "choices_ja": [
         "雨",
@@ -297,17 +397,28 @@
         "雲"
       ],
       "correct": "Snow",
-      "prompt_ja": "눈は「目」を意味しますが、もう一つの意味は？"
+      "prompt_ja": "눈は「目」以外に何を意味しますか？",
+      "prompt_es": "눈 puede significar \"ojo\" y también...",
+      "choices_es": [
+        "Lluvia",
+        "Nieve",
+        "Viento",
+        "Nube"
+      ]
     },
     {
-      "id": 21,
+      "id": 22,
       "stage": 1,
       "type": "lesson_complete",
       "title": "Body Parts Complete!",
-      "title_kr": "신체 완성!",
-      "message": "You now know essential Korean body vocabulary! At your next clinic visit in Korea, you'll be able to say exactly where it hurts. 건강하세요! (Stay healthy!)",
-      "next_url": "vocabulary.html?cat=travel",
-      "message_ja": "韓国語の体の部位語彙を習得しました！次に韓国の病院を訪れたとき、どこが痛いかをきちんと伝えられます。건강하세요！（健康でいてください！）"
+      "title_kr": "신체 부위 완성!",
+      "title_zh_tw": "身體部位完成！",
+      "message": "Great work! You can now point to body parts and describe aches and pains in Korean. Remember: [body part] + 아파요 is your shortcut for every doctor visit.",
+      "message_zh_tw": "太棒了！你現在可以用韓語指出身體部位並描述疼痛了。記住：[身體部位] + 아파요 是看診時的萬用句型。",
+      "next_url": "vocabulary.html?cat=health",
+      "message_ja": "よくできました！体の部位を指差して、韓国語で症状を伝えられるようになりました。[体の部位] + 아파요 が病院での合言葉です。",
+      "title_es": "¡Partes del Cuerpo Completadas!",
+      "message_es": "¡Buen trabajo! Ahora puedes señalar partes del cuerpo y describir dolores en coreano. Recuerda: [parte del cuerpo] + 아파요 es tu atajo para cualquier visita al médico."
     }
   ]
 }

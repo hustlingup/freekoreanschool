@@ -4,11 +4,12 @@
   "stages": [
     {
       "id": 1,
-      "name": "News & Society",
-      "name_kr": "뉴스·사회",
+      "name": "News & Current Events",
+      "name_kr": "뉴스와 시사",
       "first_step": 1,
       "last_step": 21,
-      "time_minutes": 12
+      "time_minutes": 13,
+      "name_es": "Noticias y Actualidad"
     }
   ],
   "steps": [
@@ -16,18 +17,30 @@
       "id": 1,
       "stage": 1,
       "type": "reading_card",
-      "title": "News & Society Vocabulary",
-      "title_kr": "뉴스와 사회 어휘",
-      "body": "Korean news vocabulary bridges formal education and real-world fluency. Major Korean news outlets like KBS, MBC, and JTBC use precise, formal vocabulary. Understanding news language accelerates TOPIK preparation and helps you understand the society you are learning about.",
+      "title": "Korean News Vocabulary",
+      "title_kr": "한국어 뉴스 어휘",
+      "title_zh_tw": "韓語新聞詞彙",
+      "body": "Reading or watching Korean news is an excellent way to build advanced vocabulary and stay connected to Korean society. Korean news uses formal speech levels (합쇼체) and many Sino-Korean terms. Understanding these words will help you follow Korean news programs, podcasts, and newspapers.",
+      "body_zh_tw": "閱讀或觀看韓語新聞是積累進階詞彙、保持與韓國社會連結的絕佳方式。韓語新聞使用正式語體（합쇼체）和大量漢字語詞彙。理解這些詞彙將幫助你跟上韓語新聞節目、播客和報紙。",
       "tip": {
         "icon": "📰",
-        "label": "Sino-Korean in news",
-        "text": "News vocabulary in Korean is heavily Sino-Korean (한자어). Words like 정치 (politics), 경제 (economy), and 사회 (society) all come from Chinese characters. Learning their characters helps you predict meanings across related words."
+        "label": "News vocabulary strategy",
+        "text": "Start with YouTube news channels — visuals help with comprehension. 뉴스 (news) programs often have Korean subtitles available. Common news openers: 오늘 뉴스입니다 (Here is today's news) and 보도에 따르면 (According to reports)."
       },
-      "body_ja": "韓国語のニュース語彙は、正式な教育と実践的な流暢さをつなぐ橋です。KBS・MBC・JTBCなどの主要メディアは正確なフォーマル語彙を使います。ニュース言語を理解すればTOPIK対策が加速し、学んでいる社会への理解も深まります。",
+      "tip_zh_tw": {
+        "label": "新聞詞彙學習策略",
+        "text": "從YouTube新聞頻道開始——畫面有助於理解。뉴스（新聞）節目通常提供韓語字幕。常見的新聞開場語：오늘 뉴스입니다（今天的新聞）和보도에 따르면（根據報導）。"
+      },
+      "body_ja": "韓国語のニュースを読んだり見たりすることは、上級語彙を増やして韓国社会とつながる絶好の方法です。韓国語ニュースは格式体（합쇼체）と多くの漢字語を使います。これらの語彙を知ると、ニュース番組・ポッドキャスト・新聞が理解できるようになります。",
       "tip_ja": {
-        "label": "ニュースの漢字語",
-        "text": "韓国語のニュース語彙は漢字語（한자어）が多く使われます。정치（政治）・경제（経済）・사회（社会）はすべて漢字由来です。漢字を学ぶと関連語の意味が予測できるようになります。"
+        "label": "ニュース語彙の攻略法",
+        "text": "YouTubeのニュースチャンネルから始めましょう―映像があると理解しやすい。뉴스番組には韓国語字幕が付いていることも多い。よくある冒頭：오늘 뉴스입니다（本日のニュースです）、보도에 따르면（報道によれば）。"
+      },
+      "title_es": "Vocabulario de Noticias en Coreano",
+      "body_es": "Leer o ver las noticias en coreano es una excelente forma de desarrollar vocabulario avanzado y mantenerse conectado con la sociedad coreana. Las noticias coreanas usan niveles formales del habla (합쇼체) y muchos términos sino-coreanos. Entender estas palabras te ayudará a seguir programas de noticias, podcasts y periódicos coreanos.",
+      "tip_es": {
+        "label": "Estrategia para el vocabulario de noticias",
+        "text": "Empieza con canales de noticias en YouTube — las imágenes ayudan a la comprensión. Los programas de 뉴스 (noticias) suelen tener subtítulos en coreano. Frases comunes de apertura: 오늘 뉴스입니다 (Estas son las noticias de hoy) y 보도에 따르면 (Según informes)."
       }
     },
     {
@@ -39,10 +52,13 @@
         "스"
       ],
       "romanization": "nyuseu",
+      "zhuyin": "ㄋㄩ·ㄙㄜ",
       "katakana": "ニュス",
       "audio": "뉴스",
-      "meaning": "News — 뉴스 봐요? (Do you watch the news?)",
-      "meaning_ja": "ニュース ― 뉴스 봐요？（ニュースを見ますか？）"
+      "meaning": "News — from English 'news'",
+      "meaning_zh_tw": "新聞——來自英語「news」",
+      "meaning_ja": "ニュース ― 英語 news から",
+      "meaning_es": "Noticias — del inglés \"news\""
     },
     {
       "id": 3,
@@ -50,41 +66,50 @@
       "type": "listen_repeat",
       "syllables": [
         "기",
-        "사"
+        "자"
       ],
-      "romanization": "gisa",
-      "katakana": "キサ",
-      "audio": "기사",
-      "meaning": "Article / news story — 기사 읽었어요? (Did you read the article?)",
-      "meaning_ja": "記事 ― 기사 읽었어요？（記事を読みましたか？）"
+      "romanization": "gija",
+      "zhuyin": "ㄍㄧ·ㄓㄚ",
+      "katakana": "キジャ",
+      "audio": "기자",
+      "meaning": "Reporter / journalist",
+      "meaning_zh_tw": "記者",
+      "meaning_ja": "記者",
+      "meaning_es": "Periodista / reportero"
     },
     {
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "정",
-        "치"
+        "신",
+        "문"
       ],
-      "romanization": "jeongchi",
-      "katakana": "チョンチ",
-      "audio": "정치",
-      "meaning": "Politics — 정치 얘기는 어렵죠 (Politics talk is difficult, isn't it)",
-      "meaning_ja": "政治 ― 정치 얘기는 어렵죠（政治の話は難しいですね）"
+      "romanization": "sinmun",
+      "zhuyin": "ㄙㄧㄣ·ㄇㄨㄣ",
+      "katakana": "シンムン",
+      "audio": "신문",
+      "meaning": "Newspaper",
+      "meaning_zh_tw": "報紙",
+      "meaning_ja": "新聞",
+      "meaning_es": "Periódico / diario"
     },
     {
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "경",
-        "제"
+        "방",
+        "송"
       ],
-      "romanization": "gyeongje",
-      "katakana": "キョンジェ",
-      "audio": "경제",
-      "meaning": "Economy — 경제가 어려워요 (The economy is tough)",
-      "meaning_ja": "経済 ― 경제가 어려워요（経済が厳しいです）"
+      "romanization": "bangsong",
+      "zhuyin": "ㄅㄤ·ㄙㄨㄥ",
+      "katakana": "パンソン",
+      "audio": "방송",
+      "meaning": "Broadcast / broadcasting",
+      "meaning_zh_tw": "播出／廣播",
+      "meaning_ja": "放送",
+      "meaning_es": "Transmisión / emisión"
     },
     {
       "id": 6,
@@ -92,156 +117,70 @@
       "type": "listen_repeat",
       "syllables": [
         "사",
-        "회"
+        "건"
       ],
-      "romanization": "sahoe",
-      "katakana": "サフェ",
-      "audio": "사회",
-      "meaning": "Society — 사회 문제 (social issues)",
-      "meaning_ja": "社会 ― 사회 문제（社会問題）"
+      "romanization": "sageon",
+      "zhuyin": "ㄙㄚ·ㄍㄜㄣ",
+      "katakana": "サゴン",
+      "audio": "사건",
+      "meaning": "Incident / event / case",
+      "meaning_zh_tw": "事件／案件",
+      "meaning_ja": "事件・出来事",
+      "meaning_es": "Incidente / suceso / caso"
     },
     {
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "환",
-        "경"
+        "정",
+        "치"
       ],
-      "romanization": "hwangyeong",
-      "katakana": "ファンギョン",
-      "audio": "환경",
-      "meaning": "Environment — 환경 문제 (environmental issues)",
-      "meaning_ja": "環境 ― 환경 문제（環境問題）"
+      "romanization": "jeongchi",
+      "zhuyin": "ㄓㄥ·ㄔㄧ",
+      "katakana": "チョンチ",
+      "audio": "정치",
+      "meaning": "Politics — 정치인 = politician",
+      "meaning_zh_tw": "政治——정치인＝政治人物",
+      "meaning_ja": "政治 ― 정치인（政治家）",
+      "meaning_es": "Política — 정치인 = político"
     },
     {
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "교",
-        "육"
+        "경",
+        "제"
       ],
-      "romanization": "gyoyuk",
-      "katakana": "キョユク",
-      "audio": "교육",
-      "meaning": "Education — 교육열 (education fever) is a Korean cultural phenomenon",
-      "meaning_ja": "教育 ― 교육열（教育熱）は韓国の文化的現象"
+      "romanization": "gyeongje",
+      "zhuyin": "ㄍㄧㄥ·ㄓㄝ",
+      "katakana": "キョンジェ",
+      "audio": "경제",
+      "meaning": "Economy / economics",
+      "meaning_zh_tw": "經濟",
+      "meaning_ja": "経済",
+      "meaning_es": "Economía"
     },
     {
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "과",
-        "학"
+        "사",
+        "회"
       ],
-      "romanization": "gwahak",
-      "katakana": "クァハク",
-      "audio": "과학",
-      "meaning": "Science — 과학 기술 (science and technology)",
-      "meaning_ja": "科学 ― 과학 기술（科学技術）"
+      "romanization": "sahoe",
+      "zhuyin": "ㄙㄚ·ㄏㄨㄟ",
+      "katakana": "サフェ",
+      "audio": "사회",
+      "meaning": "Society / social affairs",
+      "meaning_zh_tw": "社會",
+      "meaning_ja": "社会",
+      "meaning_es": "Sociedad / asuntos sociales"
     },
     {
       "id": 10,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "선",
-        "거"
-      ],
-      "romanization": "seongeo",
-      "katakana": "ソンゴ",
-      "audio": "선거",
-      "meaning": "Election — 선거일 (election day)",
-      "meaning_ja": "選挙 ― 선거일（選挙日）"
-    },
-    {
-      "id": 11,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "대",
-        "통",
-        "령"
-      ],
-      "romanization": "daetongnyeong",
-      "katakana": "テトンリョン",
-      "audio": "대통령",
-      "meaning": "President — 대통령 선거 (presidential election)",
-      "meaning_ja": "大統領 ― 대통령 선거（大統領選挙）"
-    },
-    {
-      "id": 12,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "국",
-        "회"
-      ],
-      "romanization": "gukhoe",
-      "katakana": "ククフェ",
-      "audio": "국회",
-      "meaning": "National Assembly (parliament) — 국회의원 = member of parliament",
-      "meaning_ja": "国会（議会）― 국회의원（国会議員）"
-    },
-    {
-      "id": 13,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "법"
-      ],
-      "romanization": "beop",
-      "katakana": "ポプ",
-      "audio": "법",
-      "meaning": "Law — 법을 지키세요 (Please follow the law)",
-      "meaning_ja": "法律 ― 법을 지키세요（法律を守ってください）"
-    },
-    {
-      "id": 14,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "정",
-        "책"
-      ],
-      "romanization": "jeongchaek",
-      "katakana": "チョンチェク",
-      "audio": "정책",
-      "meaning": "Policy — 정부 정책 (government policy)",
-      "meaning_ja": "政策 ― 정부 정책（政府の政策）"
-    },
-    {
-      "id": 15,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "시",
-        "민"
-      ],
-      "romanization": "simin",
-      "katakana": "シミン",
-      "audio": "시민",
-      "meaning": "Citizen — 시민 사회 (civil society)",
-      "meaning_ja": "市民 ― 시민 사회（市民社会）"
-    },
-    {
-      "id": 16,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "인",
-        "구"
-      ],
-      "romanization": "ingu",
-      "katakana": "イング",
-      "audio": "인구",
-      "meaning": "Population — 한국 인구 (Korean population)",
-      "meaning_ja": "人口 ― 한국 인구（韓国の人口）"
-    },
-    {
-      "id": 17,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -249,80 +188,249 @@
         "제"
       ],
       "romanization": "gukje",
-      "katakana": "ククジェ",
+      "zhuyin": "ㄍㄨ·ㄓㄝ",
+      "katakana": "ククチェ",
       "audio": "국제",
-      "meaning": "International — 국제 관계 (international relations)",
-      "meaning_ja": "国際 ― 국제 관계（国際関係）"
+      "meaning": "International — 국제 뉴스 = international news",
+      "meaning_zh_tw": "國際——국제 뉴스＝國際新聞",
+      "meaning_ja": "国際 ― 국제 뉴스（国際ニュース）",
+      "meaning_es": "Internacional — 국제 뉴스 = noticias internacionales"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "환",
+        "경"
+      ],
+      "romanization": "hwangyeong",
+      "zhuyin": "ㄏㄨㄢ·ㄍㄧㄥ",
+      "katakana": "ファンギョン",
+      "audio": "환경",
+      "meaning": "Environment — 환경 문제 = environmental issues",
+      "meaning_zh_tw": "環境——환경 문제＝環境問題",
+      "meaning_ja": "環境 ― 환경 문제（環境問題）",
+      "meaning_es": "Medio ambiente — 환경 문제 = problemas medioambientales"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "선",
+        "거"
+      ],
+      "romanization": "seongeo",
+      "zhuyin": "ㄙㄜㄣ·ㄍㄜ",
+      "katakana": "ソンゴ",
+      "audio": "선거",
+      "meaning": "Election",
+      "meaning_zh_tw": "選舉",
+      "meaning_ja": "選挙",
+      "meaning_es": "Elección"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "인",
+        "터",
+        "뷰"
+      ],
+      "romanization": "inteobbyu",
+      "zhuyin": "ㄧㄣ·ㄊㄜ·ㄅㄩ",
+      "katakana": "インタビュ",
+      "audio": "인터뷰",
+      "meaning": "Interview — from English 'interview'",
+      "meaning_zh_tw": "採訪／訪問——來自英語「interview」",
+      "meaning_ja": "インタビュー ― 英語 interview から",
+      "meaning_es": "Entrevista — del inglés \"interview\""
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "통",
+        "계"
+      ],
+      "romanization": "tonggye",
+      "zhuyin": "ㄊㄨㄥ·ㄍㄧㄝ",
+      "katakana": "トンゲ",
+      "audio": "통계",
+      "meaning": "Statistics / data",
+      "meaning_zh_tw": "統計數據",
+      "meaning_ja": "統計",
+      "meaning_es": "Estadísticas / datos"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "속",
+        "보"
+      ],
+      "romanization": "sokbo",
+      "zhuyin": "ㄙㄨ·ㄅㄛ",
+      "katakana": "ソクポ",
+      "audio": "속보",
+      "meaning": "Breaking news — 속보입니다 = This is breaking news",
+      "meaning_zh_tw": "即時新聞——속보입니다＝這是即時新聞",
+      "meaning_ja": "速報 ― 속보입니다（速報です）",
+      "meaning_es": "Noticias de última hora — 속보입니다 = Esto es una noticia de última hora"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "여",
+        "론"
+      ],
+      "romanization": "yeolon",
+      "zhuyin": "ㄧㄜ·ㄌㄨㄣ",
+      "katakana": "ヨロン",
+      "audio": "여론",
+      "meaning": "Public opinion",
+      "meaning_zh_tw": "民意",
+      "meaning_ja": "世論",
+      "meaning_es": "Opinión pública"
+    },
+    {
+      "id": 17,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "보",
+        "도"
+      ],
+      "romanization": "bodo",
+      "zhuyin": "ㄅㄛ·ㄉㄛ",
+      "katakana": "ポド",
+      "audio": "보도",
+      "meaning": "Report / news coverage — 보도에 따르면 = according to reports",
+      "meaning_zh_tw": "報導——보도에 따르면＝根據報導",
+      "meaning_ja": "報道 ― 보도에 따르면（報道によると）",
+      "meaning_es": "Informe / cobertura noticiosa — 보도에 따르면 = según los informes"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "선거일 is...",
+      "prompt": "속보입니다 is said at the start of...",
+      "prompt_zh_tw": "속보입니다 是在什麼時候說的？",
       "choices": [
-        "Election day",
-        "National holiday",
-        "Press conference",
-        "Parliament day"
+        "A variety show",
+        "Breaking news",
+        "A documentary",
+        "An interview"
+      ],
+      "choices_zh_tw": [
+        "綜藝節目",
+        "即時新聞",
+        "紀錄片",
+        "採訪"
       ],
       "choices_ja": [
-        "選挙日",
-        "祝日",
-        "記者会見",
-        "議会の日"
+        "バラエティ番組",
+        "速報",
+        "ドキュメンタリー",
+        "インタビュー"
       ],
-      "correct": "Election day",
-      "prompt_ja": "선거일とは？"
+      "correct": "Breaking news",
+      "prompt_ja": "속보입니다 はいつ言いますか？",
+      "prompt_es": "속보입니다 se dice al comienzo de...",
+      "choices_es": [
+        "Un programa de variedades",
+        "Noticias de última hora",
+        "Un documental",
+        "Una entrevista"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Korea's parliament is called...",
+      "prompt": "Which section of the news covers international stories?",
+      "prompt_zh_tw": "新聞的哪個版塊涵蓋國際報導？",
       "choices": [
-        "대통령 (daetongnyeong)",
-        "국회 (gukhoe)",
-        "정책 (jeongchaek)",
-        "사회 (sahoe)"
+        "사회 (society)",
+        "경제 (economy)",
+        "국제 (international)",
+        "연예 (entertainment)"
+      ],
+      "choices_zh_tw": [
+        "사회（社會）",
+        "경제（經濟）",
+        "국제（國際）",
+        "연예（娛樂）"
       ],
       "choices_ja": [
-        "대통령（大統領）",
-        "국회（国会）",
-        "정책（政策）",
-        "사회（社会）"
+        "사회（社会）",
+        "경제（経済）",
+        "국제（国際）",
+        "연예（芸能）"
       ],
-      "correct": "국회 (gukhoe)",
-      "prompt_ja": "韓国の国会は何と呼ばれますか？"
+      "correct": "국제 (international)",
+      "prompt_ja": "国際ニュースを扱うコーナーは？",
+      "prompt_es": "¿Qué sección del noticiero cubre noticias internacionales?",
+      "choices_es": [
+        "사회 (sociedad)",
+        "경제 (economía)",
+        "국제 (internacional)",
+        "연예 (entretenimiento)"
+      ]
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "교육열 literally means 'education fever.' The word 교육 means...",
+      "prompt": "기자 is the Korean word for...",
+      "prompt_zh_tw": "기자 的韓語意思是……",
       "choices": [
-        "Competition",
-        "Education",
-        "Studying abroad",
-        "Graduation"
+        "Politician",
+        "Reporter",
+        "Broadcaster",
+        "Editor"
+      ],
+      "choices_zh_tw": [
+        "政治人物",
+        "記者",
+        "廣播員",
+        "編輯"
       ],
       "choices_ja": [
-        "競争",
-        "教育",
-        "留学",
-        "卒業"
+        "政治家",
+        "記者",
+        "アナウンサー",
+        "編集者"
       ],
-      "correct": "Education",
-      "prompt_ja": "교육열は「教育熱」を意味します。교육の意味は？"
+      "correct": "Reporter",
+      "prompt_ja": "기자 の意味は？",
+      "prompt_es": "기자 es la palabra coreana para...",
+      "choices_es": [
+        "Político",
+        "Periodista",
+        "Locutor",
+        "Editor"
+      ]
     },
     {
       "id": 21,
       "stage": 1,
       "type": "lesson_complete",
-      "title": "News & Society Complete!",
-      "title_kr": "뉴스·사회 완성!",
-      "message": "뉴스 한국어 완성! News vocabulary is the gateway to understanding Korean society, politics, and culture at the deepest level. Reading Korean news articles will now feel much more accessible.",
-      "next_url": "vocabulary.html?cat=konglish",
-      "message_ja": "뉴스 한국어 완성！ニュース語彙は韓国の社会・政治・文化を最も深いレベルで理解する鍵です。韓国語のニュース記事がずっと読みやすくなるでしょう。"
+      "title": "News Complete!",
+      "title_kr": "뉴스 완성!",
+      "title_zh_tw": "新聞詞彙完成！",
+      "message": "이제 한국 뉴스를 이해할 수 있어요! You now have the vocabulary to follow Korean news. Current events in Korean will deepen your language skills and cultural understanding simultaneously — two for one!",
+      "message_zh_tw": "이제 한국 뉴스를 이해할 수 있어요！你現在擁有跟上韓語新聞的詞彙。閱讀韓語時事能同時提升你的語言能力和文化理解——一舉兩得！",
+      "next_url": "vocabulary.html?cat=proverbs",
+      "message_ja": "이제 한국 뉴스를 이해할 수 있어요！韓国語のニュースを理解するための語彙が揃いました。韓国語で時事ニュースを追うと、言語力と文化理解が同時に深まります―一石二鳥！",
+      "title_es": "¡Noticias Completadas!",
+      "message_es": "이제 한국 뉴스를 이해할 수 있어요! Ahora tienes el vocabulario para seguir las noticias coreanas. La actualidad en coreano profundizará tu dominio del idioma y tu comprensión cultural al mismo tiempo — ¡dos por uno!"
     }
   ]
 }

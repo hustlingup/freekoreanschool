@@ -8,7 +8,8 @@
       "name_kr": "콩글리시",
       "first_step": 1,
       "last_step": 22,
-      "time_minutes": 13
+      "time_minutes": 13,
+      "name_es": "Konglish"
     }
   ],
   "steps": [
@@ -18,35 +19,32 @@
       "type": "reading_card",
       "title": "Konglish — Korean + English",
       "title_kr": "콩글리시",
-      "body": "Konglish (콩글리시) refers to English loanwords adapted into Korean pronunciation and sometimes with shifted meanings. Korea has adopted thousands of English words, making them sound Korean. The trick: if you know the English word, you can often guess the Korean by applying Korean pronunciation patterns — replace 'r' with 'ㄹ', add vowels between consonants, and end with a vowel.",
+      "title_zh_tw": "韓式英語——韓語＋英語",
+      "body": "Konglish (콩글리시) refers to English loanwords adapted into Korean. These words are pronounced differently and sometimes have different meanings from the original English. Learning Konglish is a fast track to a large vocabulary, since many modern Korean words are derived from English.",
+      "body_zh_tw": "韓式英語（콩글리시）指的是融入韓語的英語借用詞。這些詞的發音不同，有時含義也與原英語有所差異。學習韓式英語是快速累積大量詞彙的捷徑，因為許多現代韓語詞彙源自英語。",
       "tip": {
-        "icon": "🌐",
-        "label": "Pronunciation key",
-        "text": "English 'f' → ㅍ (p sound): file → 파일. English 'v' → ㅂ (b sound): video → 비디오. Final consonant clusters get a vowel: desk → 데스크, style → 스타일. Once you know the pattern, hundreds of words unlock instantly!"
+        "icon": "🔤",
+        "label": "Sound rules",
+        "text": "English consonant clusters are broken up with vowels: 'stress' → 스트레스 (seuteureseu). Final consonants get a vowel added: 'cake' → 케이크 (keikeu). 'r' and 'l' both become ㄹ: 'rice' → 라이스, 'lemon' → 레몬."
       },
-      "body_ja": "コングリッシュ（콩글리시）は英語の外来語を韓国語の発音に合わせて取り入れたものです。意味がずれる場合もあります。韓国語は英語から数千の単語を取り入れており、韓国語らしく聞こえます。コツ：英語の単語がわかれば韓国語の発音ルールを当てはめて推測できます―「r」はㄹに、子音の間に母音を入れ、語末に母音を付ける。",
+      "tip_zh_tw": {
+        "label": "音韻規則",
+        "text": "英語輔音叢用母音拆開：'stress'→스트레스（seuteureseu）。詞末輔音加母音：'cake'→케이크（keikeu）。'r'和'l'都變成ㄹ：'rice'→라이스，'lemon'→레몬。"
+      },
+      "body_ja": "コングリッシュ（콩글리시）とは、韓国語に取り入れられた英語の外来語です。発音が異なり、時に元の英語と意味も変わります。多くの現代韓国語が英語由来なので、コングリッシュを学ぶと語彙が一気に増えます。",
       "tip_ja": {
-        "label": "発音の鍵",
-        "text": "英語の「f」→ㅍ（p音）：file→파일。「v」→ㅂ（b音）：video→비디오。語末の子音クラスターには母音を加えます：desk→데스크、style→스타일。パターンを覚えれば何百もの単語が一気に解錠されます！"
+        "label": "発音ルール",
+        "text": "英語の子音連続は母音で区切る：stress→스트레스。語末の子音にも母音を追加：cake→케이크。r・lはどちらもㄹ：rice→라이스、lemon→레몬。"
+      },
+      "title_es": "Konglish — Coreano + Inglés",
+      "body_es": "El Konglish (콩글리시) se refiere a palabras del inglés adaptadas al coreano. Estas palabras se pronuncian de forma diferente y a veces tienen significados distintos del inglés original. Aprender Konglish es una vía rápida para adquirir un gran vocabulario, ya que muchas palabras coreanas modernas derivan del inglés.",
+      "tip_es": {
+        "label": "Reglas fonéticas",
+        "text": "Los grupos consonánticos del inglés se separan con vocales: \"stress\" → 스트레스 (seuteureseu). Las consonantes finales reciben una vocal: \"cake\" → 케이크 (keikeu). \"r\" y \"l\" ambas se convierten en ㄹ: \"rice\" → 라이스, \"lemon\" → 레몬."
       }
     },
     {
       "id": 2,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "컴",
-        "퓨",
-        "터"
-      ],
-      "romanization": "keompyuteo",
-      "katakana": "コンピュトゥ",
-      "audio": "컴퓨터",
-      "meaning": "Computer — from English 'computer'",
-      "meaning_ja": "コンピュータ ― 英語 'computer' より"
-    },
-    {
-      "id": 3,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -56,10 +54,31 @@
         "폰"
       ],
       "romanization": "seumateupon",
+      "zhuyin": "ㄙㄜ·ㄇㄚ·ㄊㄜ·ㄆㄨㄣ",
       "katakana": "スマトゥポン",
       "audio": "스마트폰",
-      "meaning": "Smartphone — from English 'smartphone'",
-      "meaning_ja": "スマートフォン ― 英語 'smartphone' より"
+      "meaning": "Smartphone — from English 'smart phone'",
+      "meaning_zh_tw": "智慧型手機——來自英語「smart phone」",
+      "meaning_ja": "スマートフォン ― 英語 smart phone から",
+      "meaning_es": "Teléfono inteligente — del inglés \"smart phone\""
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "컴",
+        "퓨",
+        "터"
+      ],
+      "romanization": "keompyuteo",
+      "zhuyin": "ㄎㄜㄇ·ㄆㄩ·ㄊㄜ",
+      "katakana": "コムピュト",
+      "audio": "컴퓨터",
+      "meaning": "Computer — from English 'computer'",
+      "meaning_zh_tw": "電腦——來自英語「computer」",
+      "meaning_ja": "コンピュータ ― 英語 computer から",
+      "meaning_es": "Computadora / Ordenador — del inglés \"computer\""
     },
     {
       "id": 4,
@@ -71,24 +90,33 @@
         "넷"
       ],
       "romanization": "inteonet",
+      "zhuyin": "ㄧㄣ·ㄊㄜ·ㄋㄝ",
       "katakana": "インタネッ",
       "audio": "인터넷",
       "meaning": "Internet — from English 'internet'",
-      "meaning_ja": "インターネット ― 英語 'internet' より"
+      "meaning_zh_tw": "網路——來自英語「internet」",
+      "meaning_ja": "インターネット ― 英語 internet から",
+      "meaning_es": "Internet — del inglés \"internet\""
     },
     {
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "소",
-        "파"
+        "아",
+        "이",
+        "스",
+        "크",
+        "림"
       ],
-      "romanization": "sopa",
-      "katakana": "ソパ",
-      "audio": "소파",
-      "meaning": "Sofa — from English 'sofa'",
-      "meaning_ja": "ソファ ― 英語 'sofa' より"
+      "romanization": "aiseukeurim",
+      "zhuyin": "ㄚ·ㄧ·ㄙㄜ·ㄎㄜ·ㄌㄧㄇ",
+      "katakana": "アイスクリム",
+      "audio": "아이스크림",
+      "meaning": "Ice cream — from English 'ice cream'",
+      "meaning_zh_tw": "冰淇淋——來自英語「ice cream」",
+      "meaning_ja": "アイスクリーム ― 英語 ice cream から",
+      "meaning_es": "Helado — del inglés \"ice cream\""
     },
     {
       "id": 6,
@@ -100,72 +128,83 @@
         "트"
       ],
       "romanization": "apateu",
+      "zhuyin": "ㄚ·ㄆㄚ·ㄊㄜ",
       "katakana": "アパトゥ",
       "audio": "아파트",
-      "meaning": "Apartment — from English 'apartment'",
-      "meaning_ja": "アパート / マンション ― 英語 'apartment' より"
+      "meaning": "Apartment — from English 'apartment'; refers specifically to high-rise apartments",
+      "meaning_zh_tw": "公寓——來自英語「apartment」；特指高層公寓",
+      "meaning_ja": "アパート ― 英語 apartment から。特に高層集合住宅を指す",
+      "meaning_es": "Apartamento — del inglés \"apartment\"; se refiere específicamente a edificios de altura"
     },
     {
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "피",
-        "자"
+        "핸",
+        "드",
+        "폰"
       ],
-      "romanization": "pija",
-      "katakana": "ピジャ",
-      "audio": "피자",
-      "meaning": "Pizza — from Italian/English 'pizza'",
-      "meaning_ja": "ピザ ― イタリア語/英語 'pizza' より"
+      "romanization": "haendeupon",
+      "zhuyin": "ㄏㄝㄣ·ㄉㄜ·ㄆㄨㄣ",
+      "katakana": "ヘンドゥポン",
+      "audio": "핸드폰",
+      "meaning": "Mobile phone — Konglish 'hand phone'; also 휴대폰",
+      "meaning_zh_tw": "手機——韓式英語「hand phone」；也說휴대폰",
+      "meaning_ja": "携帯電話 ― コングリッシュ「hand phone」。휴대폰とも言う",
+      "meaning_es": "Teléfono móvil — Konglish \"hand phone\"; también se dice 휴대폰"
     },
     {
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "초",
-        "콜",
-        "릿"
+        "사",
+        "인"
       ],
-      "romanization": "chokollit",
-      "katakana": "チョコルリッ",
-      "audio": "초콜릿",
-      "meaning": "Chocolate — from English 'chocolate'",
-      "meaning_ja": "チョコレート ― 英語 'chocolate' より"
+      "romanization": "sain",
+      "zhuyin": "ㄙㄚ·ㄧㄣ",
+      "katakana": "サイン",
+      "audio": "사인",
+      "meaning": "Signature / autograph — from English 'sign'; used where English would say 'signature'",
+      "meaning_zh_tw": "簽名——來自英語「sign」；用於英語說「signature」的場合",
+      "meaning_ja": "サイン（署名・サイン） ― 英語 sign から",
+      "meaning_es": "Firma / autógrafo — del inglés \"sign\"; se usa donde en inglés se diría \"signature\""
     },
     {
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "아",
-        "이",
-        "스",
-        "크",
-        "림"
+        "원",
+        "피",
+        "스"
       ],
-      "romanization": "aiseukeurim",
-      "katakana": "アイスクリム",
-      "audio": "아이스크림",
-      "meaning": "Ice cream — from English 'ice cream'",
-      "meaning_ja": "アイスクリーム ― 英語 'ice cream' より"
+      "romanization": "wonpiseu",
+      "zhuyin": "ㄨㄣ·ㄆㄧ·ㄙㄜ",
+      "katakana": "ウォンピス",
+      "audio": "원피스",
+      "meaning": "Dress — Konglish 'one piece'; refers to a full dress",
+      "meaning_zh_tw": "連身裙——韓式英語「one piece」；指連衣裙",
+      "meaning_ja": "ワンピース ― コングリッシュ「one piece」。ドレス全体を指す",
+      "meaning_es": "Vestido — Konglish \"one piece\"; se refiere a un vestido entero"
     },
     {
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "스",
-        "트",
-        "레",
-        "스"
+        "바",
+        "지"
       ],
-      "romanization": "seuteuresseu",
-      "katakana": "ストゥレス",
-      "audio": "스트레스",
-      "meaning": "Stress — 스트레스 받아요 (I'm stressed / receiving stress)",
-      "meaning_ja": "ストレス ― 스트레스 받아요（ストレスを受けています）"
+      "romanization": "baji",
+      "zhuyin": "ㄅㄚ·ㄐㄧ",
+      "katakana": "パジ",
+      "audio": "바지",
+      "meaning": "Pants / trousers — native Korean word",
+      "meaning_zh_tw": "褲子——固有韓語詞",
+      "meaning_ja": "ズボン・パンツ ― 固有語",
+      "meaning_es": "Pantalones — palabra nativa coreana"
     },
     {
       "id": 11,
@@ -176,13 +215,34 @@
         "카"
       ],
       "romanization": "selka",
+      "zhuyin": "ㄙㄝㄌ·ㄎㄚ",
       "katakana": "セルカ",
       "audio": "셀카",
-      "meaning": "Selfie — short for 셀프카메라 (self-camera)",
-      "meaning_ja": "セルフィー ― 셀프카메라（セルフカメラ）の略"
+      "meaning": "Selfie — Konglish abbreviation of 셀프 카메라 (self camera)",
+      "meaning_zh_tw": "自拍——韓式英語縮寫「셀프 카메라（self camera）」",
+      "meaning_ja": "自撮り ― コングリッシュ略語「셀프 카메라（self camera）」",
+      "meaning_es": "Selfie — abreviatura Konglish de 셀프 카메라 (self camera)"
     },
     {
       "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "노",
+        "트",
+        "북"
+      ],
+      "romanization": "noteubuk",
+      "zhuyin": "ㄋㄛ·ㄊㄜ·ㄅㄨ",
+      "katakana": "ノトゥブク",
+      "audio": "노트북",
+      "meaning": "Laptop computer — Konglish 'notebook'",
+      "meaning_zh_tw": "筆記型電腦——韓式英語「notebook」",
+      "meaning_ja": "ノートパソコン ― コングリッシュ「notebook」",
+      "meaning_es": "Portátil / Laptop — Konglish \"notebook\""
+    },
+    {
+      "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -190,14 +250,17 @@
         "어",
         "컨"
       ],
-      "romanization": "eokon",
+      "romanization": "eeocon",
+      "zhuyin": "ㄝ·ㄜ·ㄎㄜㄣ",
       "katakana": "エオコン",
       "audio": "에어컨",
-      "meaning": "Air conditioning — from English 'air conditioner'",
-      "meaning_ja": "エアコン ― 英語 'air conditioner' より"
+      "meaning": "Air conditioner — abbreviated Konglish from 'air conditioner'",
+      "meaning_zh_tw": "冷氣——英語「air conditioner」的縮寫式韓式英語",
+      "meaning_ja": "エアコン ― 英語 air conditioner を縮略",
+      "meaning_es": "Aire acondicionado — Konglish abreviado de \"air conditioner\""
     },
     {
-      "id": 13,
+      "id": 14,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -206,27 +269,13 @@
         "컨"
       ],
       "romanization": "rimokon",
+      "zhuyin": "ㄌㄧ·ㄇㄛ·ㄎㄜㄣ",
       "katakana": "リモコン",
       "audio": "리모컨",
-      "meaning": "Remote control — from English 'remote control'",
-      "meaning_ja": "リモコン ― 英語 'remote control' より"
-    },
-    {
-      "id": 14,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "아",
-        "르",
-        "바",
-        "이",
-        "트"
-      ],
-      "romanization": "areubaiteu",
-      "katakana": "アルバイトゥ",
-      "audio": "아르바이트",
-      "meaning": "Part-time job — from German 'Arbeit' (work), shortened to 알바",
-      "meaning_ja": "アルバイト ― ドイツ語 'Arbeit' より、알바 と略すことも"
+      "meaning": "Remote control — from 'remote control', abbreviated",
+      "meaning_zh_tw": "遙控器——來自英語「remote control」的縮寫",
+      "meaning_ja": "リモコン ― 英語 remote control を縮略",
+      "meaning_es": "Mando a distancia — de \"remote control\", abreviado"
     },
     {
       "id": 15,
@@ -238,120 +287,185 @@
         "스"
       ],
       "romanization": "seobiseu",
+      "zhuyin": "ㄙㄜ·ㄅㄧ·ㄙㄜ",
       "katakana": "ソビス",
       "audio": "서비스",
-      "meaning": "Freebie / complimentary item — originally 'service' but now means free extras given by shops",
-      "meaning_ja": "無料サービス / おまけ ― 元は英語 'service' だが、お店がくれる無料のおまけを指す"
+      "meaning": "Service / a freebie — in Korean, 서비스 often means something given for free by a shop",
+      "meaning_zh_tw": "服務／贈品——在韓語中，서비스 常指店家贈送的免費物品",
+      "meaning_ja": "サービス・おまけ ― 韓国語では「店が無料でくれるもの」の意味でよく使う",
+      "meaning_es": "Servicio / regalo / extra — en coreano, 서비스 suele significar algo dado gratis por una tienda"
     },
     {
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "핸",
-        "드",
-        "폰"
+        "파",
+        "이",
+        "팅"
       ],
-      "romanization": "haendeuppon",
-      "katakana": "ヘンドゥポン",
-      "audio": "핸드폰",
-      "meaning": "Cell phone / mobile phone — from 'hand phone' (unique Konglish)",
-      "meaning_ja": "携帯電話 ― 'hand phone' からの独自コングリッシュ"
+      "romanization": "paiting",
+      "zhuyin": "ㄆㄚ·ㄧ·ㄊㄧㄥ",
+      "katakana": "パイティン",
+      "audio": "파이팅",
+      "meaning": "Fighting! / Go for it! — a Korean cheer, different meaning from English",
+      "meaning_zh_tw": "加油！——韓國的鼓勵語，與英語含義不同",
+      "meaning_ja": "頑張れ！ ― 韓国の応援語。英語の fighting とは意味が違う",
+      "meaning_es": "¡Ánimo! / ¡Tú puedes! — grito de aliento coreano, diferente del significado en inglés"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "원",
-        "피",
-        "스"
+        "핫",
+        "도",
+        "그"
       ],
-      "romanization": "wonpiseu",
-      "katakana": "ウォンピス",
-      "audio": "원피스",
-      "meaning": "Dress (one-piece) — from English 'one-piece'",
-      "meaning_ja": "ワンピース ― 英語 'one-piece' より"
+      "romanization": "hatdogeu",
+      "zhuyin": "ㄏㄚ·ㄉㄛ·ㄍㄜ",
+      "katakana": "ハットグ",
+      "audio": "핫도그",
+      "meaning": "Corn dog — in Korea, 핫도그 refers to the corn dog, not a hot dog bun",
+      "meaning_zh_tw": "玉米熱狗——在韓國，핫도그 是指炸玉米熱狗，不是夾麵包的熱狗",
+      "meaning_ja": "コーンドッグ ― 韓国では핫도그 はコーンドッグを指す（パンに挟むホットドッグではない）",
+      "meaning_es": "Perrito frito / Corn dog — en Corea, 핫도그 se refiere al corn dog, no al hot dog en pan"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "아파트 (apateu) is which English loanword?",
+      "prompt": "셀카 is a Konglish word for...",
+      "prompt_zh_tw": "셀카 是韓式英語，意指……",
       "choices": [
-        "Avenue",
-        "Apartment",
-        "Apparatus",
-        "Airport"
+        "A selfie",
+        "A cell phone",
+        "A camera brand",
+        "A TV show"
+      ],
+      "choices_zh_tw": [
+        "自拍",
+        "手機",
+        "相機品牌",
+        "電視節目"
       ],
       "choices_ja": [
-        "大通り（アベニュー）",
-        "アパート",
-        "装置・機器",
-        "空港"
+        "自撮り",
+        "携帯電話",
+        "カメラブランド",
+        "テレビ番組"
       ],
-      "correct": "Apartment",
-      "prompt_ja": "아파트（アパトゥ）は何の英語外来語ですか？"
+      "correct": "A selfie",
+      "prompt_ja": "셀카 というコングリッシュの意味は？",
+      "prompt_es": "셀카 es una palabra Konglish que significa...",
+      "choices_es": [
+        "Una selfie",
+        "Un móvil",
+        "Una marca de cámara",
+        "Un programa de TV"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "서비스 in Konglish means...",
+      "prompt": "서비스 in Korean often means...",
+      "prompt_zh_tw": "韓語中서비스 常常意指……",
       "choices": [
-        "Customer service",
-        "A free extra given by a shop",
-        "Delivery service",
-        "Repair service"
+        "A service charge",
+        "A freebie from the shop",
+        "An online service",
+        "A delivery fee"
+      ],
+      "choices_zh_tw": [
+        "服務費",
+        "店家贈品",
+        "線上服務",
+        "配送費"
       ],
       "choices_ja": [
-        "カスタマーサービス",
-        "おまけ（店からのプレゼント）",
-        "配達サービス",
-        "修理サービス"
+        "サービス料",
+        "店からのおまけ",
+        "オンラインサービス",
+        "配達料"
       ],
-      "correct": "A free extra given by a shop",
-      "prompt_ja": "コングリッシュで서비스の意味は？"
+      "correct": "A freebie from the shop",
+      "prompt_ja": "韓국語の서비스 がよく意味するのは？",
+      "prompt_es": "서비스 en coreano a menudo significa...",
+      "choices_es": [
+        "Un cargo de servicio",
+        "Un regalo / extra de la tienda",
+        "Un servicio en línea",
+        "Un costo de entrega"
+      ]
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "아르바이트 comes from German 'Arbeit' and means...",
+      "prompt": "What does 에어컨 mean?",
+      "prompt_zh_tw": "에어컨 是什麼意思？",
       "choices": [
-        "Overtime",
-        "Part-time job",
-        "Work meeting",
-        "Salary"
+        "Air freshener",
+        "Air conditioner",
+        "Air purifier",
+        "Air mattress"
+      ],
+      "choices_zh_tw": [
+        "空氣清香劑",
+        "冷氣",
+        "空氣清淨機",
+        "充氣床墊"
       ],
       "choices_ja": [
-        "残業",
-        "アルバイト",
-        "仕事の会議",
-        "給料"
+        "空気清浄剤",
+        "エアコン",
+        "空気清浄機",
+        "エアマット"
       ],
-      "correct": "Part-time job",
-      "prompt_ja": "아르바이트はドイツ語の「Arbeit」に由来します。意味は？"
+      "correct": "Air conditioner",
+      "prompt_ja": "에어컨 はどういう意味ですか？",
+      "prompt_es": "¿Qué significa 에어컨?",
+      "choices_es": [
+        "Ambientador",
+        "Aire acondicionado",
+        "Purificador de aire",
+        "Colchón hinchable"
+      ]
     },
     {
       "id": 21,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "핸드폰 is unique Konglish. In English we say...",
+      "prompt": "What does 파이팅 mean in Korean?",
+      "prompt_zh_tw": "파이팅 在韓語中是什麼意思？",
       "choices": [
-        "Hand phone",
-        "Mobile phone / cell phone",
-        "Smartphone",
-        "Pay phone"
+        "I am fighting",
+        "A boxing term",
+        "Let's go! / You can do it!",
+        "I am angry"
+      ],
+      "choices_zh_tw": [
+        "我在打架",
+        "拳擊術語",
+        "加油！／你可以的！",
+        "我很生氣"
       ],
       "choices_ja": [
-        "携帯（手で持つ電話）",
-        "携帯電話・スマートフォン",
-        "スマートフォン",
-        "公衆電話"
+        "けんかしている",
+        "ボクシング用語",
+        "頑張れ！",
+        "怒っている"
       ],
-      "correct": "Mobile phone / cell phone",
-      "prompt_ja": "핸드폰は独特なコングリッシュです。英語では何と言いますか？"
+      "correct": "Let's go! / You can do it!",
+      "prompt_ja": "韓国語で파이팅 の意味は？",
+      "prompt_es": "¿Qué significa 파이팅 en coreano?",
+      "choices_es": [
+        "Estoy peleando",
+        "Un término de boxeo",
+        "¡Vamos! / ¡Tú puedes!",
+        "Estoy enojado/a"
+      ]
     },
     {
       "id": 22,
@@ -359,9 +473,13 @@
       "type": "lesson_complete",
       "title": "Konglish Complete!",
       "title_kr": "콩글리시 완성!",
-      "message": "Incredible! You've completed all 21 vocabulary categories! Konglish shows how global Korean has become. Now you have a massive vocabulary foundation — keep building with grammar lessons to start forming full sentences. 대단해요! (You're amazing!)",
-      "next_url": "pronouns.html",
-      "message_ja": "すごい！全21カテゴリーの語彙を完了しました！コングリッシュは韓国語がいかにグローバルになったかを示しています。これで大きな語彙の土台ができました―文法レッスンで完全な文を作り始めましょう。대단해요！（あなたは素晴らしい！）"
+      "title_zh_tw": "韓式英語完成！",
+      "message": "짱이에요! (Awesome!) Konglish is your secret shortcut to Korean fluency. If you already speak English, you already know hundreds of Korean words — you just need to Korean-ify the pronunciation. 화이팅!",
+      "message_zh_tw": "짱이에요！（太棒了！）韓式英語是你通往韓語流利的秘密捷徑。如果你已經會說英語，你已經認識了數百個韓語詞彙——只需要把發音「韓語化」就好。화이팅！",
+      "next_url": "vocabulary.html?cat=media",
+      "message_ja": "짱이에요！（最高！）コングリッシュは韓国語習得への秘密の近道です。英語が話せる人はすでに何百もの韓国語単語を知っているも同然―発音を韓国語風にするだけです。화이팅！",
+      "title_es": "¡Konglish Completado!",
+      "message_es": "짱이에요! (¡Genial!) El Konglish es tu atajo secreto hacia la fluidez en coreano. Si ya hablas inglés, ya conoces cientos de palabras coreanas — solo necesitas \"coreano-izar\" la pronunciación. ¡화이팅!"
     }
   ]
 }

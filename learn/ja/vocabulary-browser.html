@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>単語ブラウザ — フラッシュカードに追加 | 한국어 학교</title>
+  <meta name="description" content="韓国語の単語を全カテゴリから検索し、フラッシュカードデッキに追加。韓国語・英語・ローマ字で絞り込み可能。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="canonical" href="https://freekoreanschool.com/learn/ja/vocabulary-browser">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="単語ブラウザ — フラッシュカードに追加 | 한국어 학교">
+  <meta property="og:description" content="韓国語の単語を全カテゴリから検索し、フラッシュカードデッキに追加。">
+  <meta property="og:url" content="https://freekoreanschool.com/learn/ja/vocabulary-browser">
+  <meta property="og:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <meta property="og:site_name" content="Korean School 한국어 학교">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="単語ブラウザ — フラッシュカードに追加 | 한국어 학교">
+  <meta name="twitter:description" content="韓国語の単語を全カテゴリから検索し、フラッシュカードデッキに追加。">
+  <meta name="twitter:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/learn/ja/vocabulary-browser">
+  <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/learn/vocabulary-browser">
+  <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/learn/vocabulary-browser">
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"単語ブラウザ — フラッシュカードに追加 | 한국어 학교","description":"韓国語の単語を全カテゴリから検索し、フラッシュカードデッキに追加。","url":"https://freekoreanschool.com/learn/ja/vocabulary-browser","inLanguage":"ja","isPartOf":{"@type":"WebSite","name":"Korean School 한국어 학교","url":"https://freekoreanschool.com"}}
+  </script>
+  <meta name="google-adsense-account" content="ca-pub-6791974364232767">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791974364232767" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D94KSYG9DE"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D94KSYG9DE');</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../../index.html" class="logo">
+      <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../hangul.html" class="active"><span class="nav-icon">📚</span> 学ぶ</a></li>
+      <li><a href="../../culture/index.html"><span class="nav-icon">🎵</span> K-カルチャー</a></li>
+      <li><a href="../../travel/index.html"><span class="nav-icon">🗺️</span> 旅行</a></li>
+      <li><a href="../../news/index.html"><span class="nav-icon">📰</span> ニュース</a></li>
+      <li><a href="../../quiz.html"><span class="nav-icon">📝</span> クイズ</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar"><span class="search-icon">🔍</span><input type="text" id="search-input" placeholder="検索…"></div>
+      <button class="icon-btn" id="theme-toggle" aria-label="ダーク/ライトテーマ切替">🌙</button>
+      <div class="lang-picker" id="lang-picker">
+        <button class="icon-btn lang-picker-btn" id="lang-picker-btn" aria-label="言語を変える">🌐</button>
+        <div class="lang-dropdown" id="lang-dropdown" hidden>
+          <a class="lang-option" href="../../learn/vocabulary-browser.html">🇺🇸 English</a>
+          <span class="lang-option active">🇯🇵 日本語</span>
+        </div>
+      </div>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="メニューを開く">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header"><div id="lesson-progress-grid"></div></div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">始め方</div>
+    <a href="../../index.html" class="sidebar-link"><span class="link-icon">🏠</span> はじめに</a>
+    <a href="../hangul.html" class="sidebar-link"><span class="link-icon">✏️</span> ハングルアルファベット</a>
+    <a href="../syllable-blocks.html" class="sidebar-link"><span class="link-icon">🔷</span> 音節ブロック</a>
+    <a href="../pronunciation.html" class="sidebar-link"><span class="link-icon">🔊</span> 発音ガイド</a>
+    <div class="sidebar-section">初級</div>
+    <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> 語彙 <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-vocab">
+      <a href="../vocabulary.html?cat=greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> あいさつ</a>
+      <a href="../vocabulary.html?cat=numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> 数字</a>
+      <a href="../vocabulary.html?cat=family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> 家族</a>
+      <a href="../vocabulary.html?cat=food-drink" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> 食べ物・飲み物</a>
+      <a href="../vocabulary.html?cat=colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> 色</a>
+      <a href="../vocabulary.html?cat=days-time" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> 曜日・時間</a>
+      <a href="../vocabulary.html?cat=places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> 場所</a>
+      <a href="../vocabulary.html?cat=emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> 感情</a>
+      <a href="../vocabulary.html?cat=body-parts" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> 体の部位</a>
+      <a href="../vocabulary.html?cat=travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> 旅行</a>
+      <a href="../vocabulary.html?cat=shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> 買い物</a>
+      <a href="../vocabulary.html?cat=weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> 天気</a>
+      <a href="../vocabulary.html?cat=verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> 動詞・動作</a>
+      <a href="../vocabulary.html?cat=adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> 形容詞</a>
+      <a href="../vocabulary.html?cat=workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> 職場</a>
+      <a href="../vocabulary.html?cat=health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> 健康・医療</a>
+      <a href="../vocabulary.html?cat=media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> メディア・K-カルチャー</a>
+      <a href="../vocabulary.html?cat=proverbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">📜</span> ことわざ・慣用句</a>
+      <a href="../vocabulary.html?cat=academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> アカデミック韓国語</a>
+      <a href="../vocabulary.html?cat=news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> ニュース・社会</a>
+      <a href="../vocabulary.html?cat=konglish" class="sidebar-link"><span class="link-icon">🌐</span> コングリッシュ</a>
+    </div>
+    <a href="../pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> 代名詞 <span class="link-badge badge-beginner">初級</span></a>
+    <a href="../nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> 一般名詞 <span class="link-badge badge-beginner">初級</span></a>
+    <button class="sidebar-accordion-btn" data-accordion="grammar"><span class="link-icon">📝</span> 文法 <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-grammar">
+      <a href="../grammar.html#sentence-structure" class="sidebar-link" data-level="intermediate"><span class="link-icon">📐</span> 文の構造 <span class="link-badge badge-intermediate">中級</span></a>
+      <a href="../grammar.html#particles" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔗</span> 助詞 <span class="link-badge badge-intermediate">中級</span></a>
+      <a href="../grammar.html#conjugation" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏰</span> 動詞の活用 <span class="link-badge badge-intermediate">中級</span></a>
+      <a href="../grammar.html#questions" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> 疑問文の形 <span class="link-badge badge-intermediate">中級</span></a>
+    </div>
+    <div class="sidebar-section">中級</div>
+    <a href="../speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> フォーマル vs インフォーマル <span class="link-badge badge-intermediate">中級</span></a>
+    <a href="../emotions.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">😊</span> 感情を表現する <span class="link-badge badge-intermediate">中級</span></a>
+    <a href="../shopping.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛒</span> 買い物フレーズ <span class="link-badge badge-intermediate">中級</span></a>
+    <div class="sidebar-section">上級</div>
+    <a href="../business-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">💼</span> ビジネス韓国語 <span class="link-badge badge-advanced">上級</span></a>
+    <a href="../classical-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> 古典韓国語 <span class="link-badge badge-advanced">上級</span></a>
+    <div class="sidebar-section">ツール</div>
+    <a href="../dialogues.html" class="sidebar-link"><span class="link-icon">💬</span> 韓国語の会話</a>
+    <a href="vocabulary-browser.html" class="sidebar-link active"><span class="link-icon">⭐</span> 単語ブラウザ</a>
+    <a href="../flashcard.html" class="sidebar-link"><span class="link-icon">📇</span> フラッシュカード</a>
+  </nav>
+</aside>
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="lesson-breadcrumb">
+      <a href="../../index.html">ホーム</a>
+      <span class="sep">›</span>
+      <a href="../hangul.html">学ぶ</a>
+      <span class="sep">›</span>
+      <a href="../vocabulary.html">語彙</a>
+      <span class="sep">›</span>
+      <span>単語ブラウザ</span>
+    </div>
+
+    <div class="lesson-header">
+      <div class="lesson-tag">⭐ 学習ツール</div>
+      <h1 class="lesson-title">単語 <span class="grad-text">ブラウザ</span> — 단어 고르기</h1>
+      <p class="lesson-meta">
+        <span>📚 21 カテゴリ</span>
+        <span>⭐ ☆ をクリックして保存</span>
+        <span>📇 フラッシュカードで練習</span>
+        <span>🔍 単語を検索</span>
+      </p>
+    </div>
+
+    <div class="vb-toolbar">
+      <input type="search" id="vb-search" class="vb-search" placeholder="韓国語・英語・ローマ字で検索…" aria-label="語彙を検索">
+      <span id="vb-fc-count" class="vb-fc-count">0 件フラッシュカードに保存済み</span>
+      <button id="vb-add-all" class="btn btn-outline btn-sm">★ このカテゴリを全て追加</button>
+      <a href="../flashcard.html" class="btn btn-primary btn-sm">📇 練習 →</a>
+    </div>
+
+    <div id="vb-tabs" class="vb-tabs" role="tablist" aria-label="語彙カテゴリ"></div>
+
+    <div id="vb-list" class="vb-list">
+      <div class="vb-loading">読み込み中…</div>
+    </div>
+
+    <div class="tip-box animate-on-scroll" style="margin-top:40px">
+      <span class="tip-icon">💡</span>
+      <div class="tip-content">
+        <div class="tip-label">フラッシュカードデッキの作り方</div>
+        <div class="tip-text">単語の <strong>☆</strong> をクリックするとフラッシュカードデッキに保存されます。<strong>★ このカテゴリを全て追加</strong> でカテゴリ内の全単語を一括追加。その後 <a href="../flashcard.html" style="color:var(--accent)">練習 →</a> で間隔反復法を使って効率よく覚えましょう。</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="ad-zone ad-zone--bottom">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-6791974364232767"
+         data-ad-slot="9704719339"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../../index.html" class="logo">
+          <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>無料の韓国語学習プラットフォーム — 言語学習とK-カルチャー、旅行ガイド、実践練習を組み合わせた、あらゆるレベルの学習者向けのサービスです。</p>
+      </div>
+      <div><div class="footer-heading">学ぶ</div><ul class="footer-links"><li><a href="../hangul.html">ハングルアルファベット</a></li><li><a href="../grammar.html">文法</a></li><li><a href="../vocabulary.html">語彙</a></li></ul></div>
+      <div><div class="footer-heading">探索</div><ul class="footer-links"><li><a href="../../culture/index.html">K-カルチャー</a></li><li><a href="../../travel/index.html">旅行ガイド</a></li><li><a href="../../news/index.html">韓国ニュース</a></li></ul></div>
+      <div><div class="footer-heading">会社情報</div><ul class="footer-links"><li><a href="../../ja/about.html">私たちについて</a></li><li><a href="../../ja/contact.html">お問い合わせ</a></li><li><a href="../../ja/privacy.html">プライバシーポリシー</a></li><li><a href="../../ja/terms.html">利用規約</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. 世界中の韓国語学習者のために ❤️ を込めて。</span>
+      <span>🇰🇷 학습을 즐기세요！（学習を楽しんでください！）</span>
+    </div>
+  </div>
+</footer>
+<script src="../../js/lang-core.js"></script>
+<script src="../../js/app.js"></script>
+<script defer src="../../js/ads.js"></script>
+</body>
+</html>

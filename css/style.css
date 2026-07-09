@@ -3,7 +3,7 @@
    Multi-Agent Korean Learning Platform
 ═══════════════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
 
 /* ── Design Tokens ─────────────────────────────────── */
 :root {
@@ -692,6 +692,70 @@ code, kbd {
   border-color: var(--primary) !important;
   box-shadow: 0 0 0 2px rgba(232,0,61,0.2);
 }
+.lpg-block.lpg-started {
+  /* real per-lesson progress: bottom-fill proportional to --p (0–100%) */
+  background:
+    linear-gradient(to top, rgba(34,197,94,0.28) var(--p, 0%), rgba(255,255,255,0.05) var(--p, 0%));
+  border-color: rgba(34,197,94,0.35);
+  color: var(--text-secondary);
+}
+[data-theme="light"] .lpg-block.lpg-started {
+  background:
+    linear-gradient(to top, rgba(34,197,94,0.3) var(--p, 0%), rgba(0,0,0,0.04) var(--p, 0%));
+}
+.lpg-streak {
+  margin-right: 7px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.lpg-resume {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(232,0,61,0.35);
+  border-radius: 8px;
+  background: rgba(232,0,61,0.08);
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition);
+}
+.lpg-resume:hover {
+  background: rgba(232,0,61,0.16);
+  border-color: var(--primary);
+}
+.lpg-resume-play {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lpg-resume-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.lpg-resume-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+}
+.lpg-resume-lesson {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .lpg-check {
   position: absolute;
   top: -4px;
@@ -1114,6 +1178,13 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
   background: var(--grad-primary);
   color: white;
   border-color: transparent;
+}
+
+.hangul-sound-btn[data-speak-orig],
+.btn[data-speak-orig] {
+  background: rgba(232,0,61,0.12);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 /* ── Lesson Content (W3Schools style) ───────────────── */
@@ -1584,13 +1655,6 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.article-thumb-grad {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
-  opacity: 0.85;
 }
 
 /* News page card thumbnail — full-bleed image cover */
@@ -2861,6 +2925,9 @@ kbd {
     .genre-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin: 20px 0; }
     .genre-card { background: var(--glass); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; transition: all var(--transition); }
     .genre-card:hover { transform: translateY(-2px); border-color: rgba(232,0,61,0.3); }
+    .genre-img { margin: -20px -20px 16px -20px; aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius-md) var(--radius-md) 0 0; background: #1a1a2e; }
+    .genre-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .genre-card:hover .genre-img img { transform: scale(1.04); }
     .genre-icon { font-size: 2.2rem; margin-bottom: 10px; display: block; }
     .genre-emoji { font-size: 2rem; margin-bottom: 10px; display: block; }
     .genre-name { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 3px; display: flex; align-items: center; gap: 8px; }
@@ -2944,6 +3011,7 @@ kbd {
     .kr-trans-text { flex: 1; }
     .kr-speak-btn { flex-shrink: 0; background: none; border: 1px solid rgba(232,0,61,0.22); border-radius: 6px; color: var(--primary); font-size: 0.78rem; padding: 3px 7px; cursor: pointer; opacity: 0.7; transition: opacity 0.2s, border-color 0.2s; line-height: 1.4; margin-top: 2px; }
     .kr-speak-btn:hover { opacity: 1; border-color: var(--primary); }
+    .kr-speak-btn[data-speak-orig] { opacity: 1; background: rgba(232,0,61,0.08); border-color: var(--primary); color: var(--primary); }
     /* Food spotlight cards */
     .food-spotlight-card { display: flex; gap: 20px; background: var(--glass); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px; margin-bottom: 16px; transition: all var(--transition); }
     .food-spotlight-card:hover { border-color: rgba(232,0,61,0.3); background: rgba(232,0,61,0.03); transform: translateX(4px); }
@@ -3901,6 +3969,11 @@ kbd {
   color: var(--text-muted);
   opacity: 0.35;
 }
+/* Pre-approval: the dashed placeholder box holds no real ad unit and reads as
+   under-construction to AdSense review — hide it and give content full width.
+   Re-enable with a real ad unit post-approval. */
+.planner-layout { grid-template-columns: 1fr; }
+.planner-ad-zone { display: none; }
 
 .planner-toolbar {
   background: var(--glass);
@@ -5442,6 +5515,14 @@ kbd {
 .lang-hero-btn:hover { border-color: var(--primary); transform: translateY(-2px); }
 .lang-hero-btn.active { border-color: var(--primary); color: var(--primary); }
 
+/* ── Flag SVG icons (Windows renders flag emoji as letters) ── */
+.ks-flag {
+  display: inline-block; width: 1.35em; height: 0.9em;
+  vertical-align: -0.1em; border-radius: 2px; overflow: hidden;
+  box-shadow: 0 0 0 1px var(--border); flex: none;
+}
+.ks-flag svg { display: block; width: 100%; height: 100%; }
+
 /* ── Language Toggle Dropdown ─────────────────────────── */
 .lang-toggle-wrap { position: relative; display: inline-flex; }
 .lang-dropdown {
@@ -5452,7 +5533,7 @@ kbd {
   z-index: 1000; min-width: 130px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
-.lang-dropdown.open { display: flex; }
+.lang-dropdown.open { display: flex !important; }
 .lang-dropdown-item {
   display: flex; align-items: center; gap: 8px;
   padding: 8px 12px; border: none; border-radius: var(--radius);
@@ -5465,11 +5546,61 @@ kbd {
 .lang-dropdown-item.active { color: var(--primary); font-weight: 700; }
 
 /* ── Language Toggle Button ───────────────────────────── */
-.lang-toggle-btn { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.03em; padding: 4px 8px; min-width: 64px; white-space: nowrap; }
+.lang-toggle-btn { font-size: 1.1rem; }
+
+/* ── Language Modal ──────────────────────────────────── */
+.lang-modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.55); backdrop-filter: blur(4px);
+  z-index: var(--z-modal);
+  align-items: center; justify-content: center;
+}
+.lang-modal-overlay.open { display: flex; }
+.lang-modal {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius-xl); padding: 24px;
+  min-width: 260px; max-width: 320px; width: 90%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  display: flex; flex-direction: column; gap: 6px;
+}
+.lang-modal-title {
+  font-size: 0.75rem; font-weight: 600; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px;
+}
+.lang-modal-item {
+  display: flex; align-items: center; gap: 10px; width: 100%;
+  padding: 11px 14px; border: none; border-radius: var(--radius-md);
+  background: transparent; color: var(--text);
+  font-size: 0.95rem; font-weight: 500; cursor: pointer; text-align: left;
+  transition: background var(--transition-fast);
+}
+.lang-modal-item:hover { background: var(--glass-md); }
+.lang-modal-item.active { color: var(--primary); font-weight: 700; }
+.lang-modal-item.active::after { content: '✓'; margin-left: auto; font-size: 0.85rem; }
+
+/* ── Traditional Chinese (Taiwan) ────────────────────── */
+body.lang-zh-tw { font-family: 'Noto Sans TC', 'Noto Sans KR', 'Inter', sans-serif; }
+
+/* ── Spanish ─────────────────────────────────────────── */
+body.lang-es { font-family: 'Inter', 'Noto Sans KR', sans-serif; }
+
+/* ── French ──────────────────────────────────────────── */
+body.lang-fr { font-family: 'Inter', 'Noto Sans KR', sans-serif; }
+
+/* ── German ──────────────────────────────────────────── */
+body.lang-de { font-family: 'Inter', 'Noto Sans KR', sans-serif; }
+
+/* ── Vietnamese ──────────────────────────────────────── */
+body.lang-vi { font-family: 'Inter', 'Noto Sans KR', sans-serif; }
+
+/* ── Thai ────────────────────────────────────────────── */
+body.lang-th { font-family: 'Noto Sans Thai', 'Noto Sans KR', 'Inter', sans-serif; }
+
+/* ── Indonesian ────────────────────────────────────────── */
+body.lang-id { font-family: 'Inter', 'Noto Sans KR', sans-serif; }
 
 @media (max-width: 600px) {
   .lang-hero-picker { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .lang-toggle-btn { font-size: 0.65rem; min-width: 50px; padding: 4px 6px; }
 }
 
 /* ── Vocabulary Page ─────────────────────────────────── */
@@ -5512,10 +5643,52 @@ kbd {
 body.lang-ja .ja-only { display: block; }
 span.ja-only { display: none; }
 body.lang-ja span.ja-only { display: inline; }
+.zh-tw-only { display: none; }
+body.lang-zh-tw .zh-tw-only { display: block; }
+span.zh-tw-only { display: none; }
+body.lang-zh-tw span.zh-tw-only { display: inline; }
+.es-only { display: none; }
+body.lang-es .es-only { display: block; }
+span.es-only { display: none; }
+body.lang-es span.es-only { display: inline; }
+.fr-only { display: none; }
+body.lang-fr .fr-only { display: block; }
+span.fr-only { display: none; }
+body.lang-fr span.fr-only { display: inline; }
+.de-only { display: none; }
+body.lang-de .de-only { display: block; }
+span.de-only { display: none; }
+body.lang-de span.de-only { display: inline; }
+.vi-only { display: none; }
+body.lang-vi .vi-only { display: block; }
+span.vi-only { display: none; }
+body.lang-vi span.vi-only { display: inline; }
+.th-only { display: none; }
+body.lang-th .th-only { display: block; }
+span.th-only { display: none; }
+body.lang-th span.th-only { display: inline; }
+.id-only { display: none; }
+body.lang-id .id-only { display: block; }
+span.id-only { display: none; }
+body.lang-id span.id-only { display: inline; }
 .en-only { display: block; }
 body.lang-ja .en-only { display: none; }
+body.lang-zh-tw .en-only { display: none; }
+body.lang-es .en-only { display: none; }
+body.lang-fr .en-only { display: none; }
+body.lang-de .en-only { display: none; }
+body.lang-vi .en-only { display: none; }
+body.lang-th .en-only { display: none; }
+body.lang-id .en-only { display: none; }
 span.en-only { display: inline; }
 body.lang-ja span.en-only { display: none; }
+body.lang-zh-tw span.en-only { display: none; }
+body.lang-es span.en-only { display: none; }
+body.lang-fr span.en-only { display: none; }
+body.lang-de span.en-only { display: none; }
+body.lang-vi span.en-only { display: none; }
+body.lang-th span.en-only { display: none; }
+body.lang-id span.en-only { display: none; }
 
 /* ═══════════════════════════════════════════════════════
    Step-Runner — Micro-interaction lesson engine styles
@@ -6082,6 +6255,27 @@ body.lang-ja .kata { display: block; }
 .lr-meaning-ja { display: none; }
 body.lang-ja .lr-meaning-en { display: none; }
 body.lang-ja .lr-meaning-ja { display: block; }
+.lr-meaning-zh-tw { display: none; }
+body.lang-zh-tw .lr-meaning-en { display: none; }
+body.lang-zh-tw .lr-meaning-zh-tw { display: block; }
+.lr-meaning-es { display: none; }
+body.lang-es .lr-meaning-en { display: none; }
+body.lang-es .lr-meaning-es { display: block; }
+.lr-meaning-fr { display: none; }
+body.lang-fr .lr-meaning-en { display: none; }
+body.lang-fr .lr-meaning-fr { display: block; }
+.lr-meaning-de { display: none; }
+body.lang-de .lr-meaning-en { display: none; }
+body.lang-de .lr-meaning-de { display: block; }
+.lr-meaning-vi { display: none; }
+body.lang-vi .lr-meaning-en { display: none; }
+body.lang-vi .lr-meaning-vi { display: block; }
+.lr-meaning-th { display: none; }
+body.lang-th .lr-meaning-en { display: none; }
+body.lang-th .lr-meaning-th { display: block; }
+.lr-meaning-id { display: none; }
+body.lang-id .lr-meaning-en { display: none; }
+body.lang-id .lr-meaning-id { display: block; }
 .sr-said-btn {
   min-width: 180px;
 }
@@ -6114,11 +6308,26 @@ body.lang-ja .lr-meaning-ja { display: block; }
   max-width: 500px;
   margin: 0;
 }
-.complete-xp {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--accent);
+.complete-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 16px 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.04);
 }
+[data-theme="light"] .complete-stats { background: rgba(0,0,0,0.03); }
+.complete-stat {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.complete-stat-icon { font-size: 1.05rem; }
 .complete-ad-slot {
   width: 100%;
   max-width: 400px;
@@ -6179,9 +6388,106 @@ body.lang-ja .lr-meaning-ja { display: block; }
   z-index: 9999;
 }
 
+/* ── Vocabulary Browser ─────────────────────────────── */
+.vb-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.vb-search {
+  flex: 1;
+  min-width: 180px;
+  padding: 8px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+.vb-search:focus { outline: none; border-color: var(--primary); }
+.vb-fc-count { font-size: 0.85rem; color: var(--text-muted); white-space: nowrap; }
+.vb-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.vb-tab {
+  padding: 6px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.vb-tab:hover { border-color: var(--primary); color: var(--primary); }
+.vb-tab.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+.vb-list { display: flex; flex-direction: column; gap: 4px; }
+.vb-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  transition: background 0.15s;
+}
+.vb-row:hover { background: var(--surface-raised); }
+.vb-kor {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  min-width: 90px;
+}
+.vb-rom { font-size: 0.8rem; color: var(--text-muted); min-width: 130px; }
+.vb-eng { flex: 1; font-size: 0.9rem; color: var(--text); }
+.vb-row .bookmark-btn {
+  margin-left: auto;
+  flex-shrink: 0;
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.15s;
+}
+.vb-row .bookmark-btn:hover { border-color: var(--primary); color: var(--primary); }
+.vb-row .bookmark-btn.saved { background: var(--primary); border-color: var(--primary); color: #fff; }
+.vb-empty-msg, .vb-loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+.sr-bookmark-btn {
+  display: inline-block;
+  margin-top: 12px;
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.15s;
+}
+.sr-bookmark-btn:hover { border-color: var(--primary); color: var(--primary); }
+.sr-bookmark-btn.saved { background: var(--primary); border-color: var(--primary); color: #fff; }
+
 /* ── Mobile ────────────────────────────────────────── */
 @media (max-width: 600px) {
   .lesson-intro-bullets { grid-template-columns: 1fr; }
+  .vb-row { flex-wrap: wrap; gap: 8px; }
+  .vb-kor { min-width: 70px; }
+  .vb-rom { min-width: 0; }
   .sr-char { font-size: 4.5rem; }
   .sr-quiz-opts { grid-template-columns: 1fr 1fr; }
   .sr-quiz-opt { font-size: 1.2rem; padding: 12px 8px; min-height: 56px; }
@@ -6197,3 +6503,147 @@ body.lang-ja .lr-meaning-ja { display: block; }
   .xp-badge { font-size: 0.7rem; padding: 4px 10px; }
 }
 
+
+/* ── Ad zones ───────────────────────────────────────── */
+.ad-zone { margin: 32px 0; text-align: center; }
+.ad-zone::before {
+  content: "Advertisements";          /* exact wording per AdSense label policy; CSS content — invisible to translation audit */
+  display: block; font-size: 0.65rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px;
+}
+.ad-zone .adsbygoogle { display: block; min-height: 90px; }
+.ad-zone--mid .adsbygoogle { min-height: 250px; }        /* CLS reservation */
+/* Not-yet-rendered: collapse to zero height but keep layout width measurable —
+   display:none here would make ads.js skip the push (offsetParent null) and the
+   slot could never render. Confirmed-unfilled collapses fully. */
+.ad-zone:has(.adsbygoogle:not([data-ad-status])) { height: 0; overflow: hidden; margin: 0; }
+.ad-zone:has(.adsbygoogle[data-ad-status="unfilled"]) { display: none; }
+
+.ad-rail { display: none; }
+@media (min-width: 1500px) {
+  .ad-rail {
+    display: block; width: 300px; flex-shrink: 0; padding: 40px 24px 40px 0;
+  }
+  .ad-rail .ad-zone { position: sticky; top: calc(var(--header-height) + 24px); margin: 0; }
+}
+
+/* ── Content rail (desktop utility rail, JS-injected) ── */
+.content-shell { display: flex; align-items: flex-start; gap: 36px; }
+.content-shell .lesson-wrap { flex: 1 1 auto; min-width: 0; }
+
+.content-rail { display: none; }
+
+@media (min-width: 1280px) {
+  .content-rail {
+    display: flex; flex-direction: column; gap: 18px;
+    width: 300px; flex-shrink: 0;
+    position: sticky; top: calc(var(--header-height) + 32px);
+  }
+}
+
+.rail-widget {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-xl); padding: 18px 20px;
+}
+.rail-widget[hidden] { display: none; }
+.rail-widget-title {
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--text-muted); margin-bottom: 12px;
+}
+.rail-wod-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.rail-wod-korean { font-size: 1.65rem; font-weight: 800; color: var(--text); line-height: 1.3; }
+.rail-wod-roman { font-size: 0.85rem; color: var(--primary-light); margin: 2px 0 6px; }
+.rail-wod-meaning { font-size: 0.87rem; color: var(--text-secondary); line-height: 1.55; }
+.rail-speak-btn {
+  flex: none; width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--glass);
+  cursor: pointer; font-size: 0.88rem; color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+.rail-speak-btn:hover { border-color: var(--primary); color: var(--primary); }
+.rail-links { display: flex; flex-direction: column; gap: 2px; }
+.rail-link {
+  display: flex; align-items: center; gap: 8px;
+  padding: 7px 10px; margin: 0 -10px;
+  border-radius: var(--radius-sm); font-size: 0.88rem;
+  color: var(--text-secondary); text-decoration: none;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.rail-link:hover { background: var(--bg-sidebar-active); color: var(--text); }
+.ad-zone--rail { margin: 0; }
+.ad-zone--rail .adsbygoogle { min-height: 250px; }
+
+/* In-feed ad row inside the news card grid — spans the full row */
+.ad-zone--infeed { grid-column: 1 / -1; margin: 8px 0; }
+.ad-zone--infeed .adsbygoogle { min-height: 120px; }
+
+/* In-article ad between the two bilingual body halves */
+.ad-zone--inarticle { margin: 8px 0 24px; }
+
+/* ── Article summary (TL;DR) box ────────────────────── */
+.article-summary-box {
+  display: grid; gap: 10px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius); padding: 16px 20px; margin: 20px 0;
+}
+.article-summary-label {
+  font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--primary-light);
+}
+.article-summary-text { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7; margin: 0; }
+.article-summary-ko { font-family: var(--font-korean); font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin: 0; }
+
+/* ── Vocab card extras: jamo breakdown + speak button ── */
+.vocab-word-row { display: flex; align-items: center; gap: 8px; }
+.vocab-jamo {
+  font-family: var(--font-korean); font-size: 0.74rem; color: var(--text-muted);
+  letter-spacing: 0.04em; margin-top: 2px;
+}
+
+/* ── Article mini quiz ──────────────────────────────── */
+.article-quiz {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-xl); padding: 22px 24px; margin: 28px 0;
+}
+.article-quiz-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; }
+.article-quiz-title { font-size: 1.05rem; font-weight: 800; color: var(--text); margin: 0; }
+.article-quiz-sub { font-size: 0.78rem; color: var(--text-muted); }
+.article-quiz-q { margin-bottom: 18px; }
+.article-quiz-q:last-child { margin-bottom: 0; }
+.article-quiz-prompt { font-size: 0.92rem; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+.article-quiz-prompt .quiz-word { font-family: var(--font-korean); color: var(--primary-light); font-size: 1.05rem; }
+.article-quiz-opts { display: grid; gap: 8px; }
+@media (min-width: 720px) { .article-quiz-opts { grid-template-columns: 1fr 1fr; } }
+.article-quiz-opt {
+  text-align: left; padding: 10px 14px; font-size: 0.85rem; line-height: 1.5;
+  background: var(--glass); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); color: var(--text-secondary); cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+.article-quiz-opt:hover:not(:disabled) { border-color: var(--primary); color: var(--text); }
+.article-quiz-opt.correct { border-color: #2E9E5B; background: rgba(46,158,91,0.12); color: var(--text); }
+.article-quiz-opt.wrong { border-color: var(--primary); background: rgba(232,0,61,0.10); }
+.article-quiz-opt:disabled { cursor: default; opacity: 0.85; }
+.article-quiz-result { margin-top: 6px; font-size: 0.78rem; font-weight: 700; }
+.article-quiz-result.ok { color: #2E9E5B; }
+.article-quiz-result.no { color: var(--primary-light); }
+
+/* ── Keep-learning links under an article ───────────── */
+.article-learn-links {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  margin: 24px 0; padding: 16px 20px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+}
+.article-learn-links-label {
+  font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--text-muted); margin-right: 4px;
+}
+.article-learn-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 14px; font-size: 0.82rem; font-weight: 700;
+  border: 1px solid var(--border); border-radius: 99px;
+  color: var(--text-secondary); text-decoration: none;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+.article-learn-link:hover { border-color: var(--primary); color: var(--primary-light); }

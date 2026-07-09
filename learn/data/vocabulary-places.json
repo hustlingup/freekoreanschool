@@ -8,7 +8,8 @@
       "name_kr": "장소",
       "first_step": 1,
       "last_step": 21,
-      "time_minutes": 13
+      "time_minutes": 13,
+      "name_es": "Lugares"
     }
   ],
   "steps": [
@@ -18,16 +19,28 @@
       "type": "reading_card",
       "title": "Places in Korean",
       "title_kr": "장소",
-      "body": "Korean place vocabulary is essential for navigating cities, giving and receiving directions, and daily life. Korea has excellent public transportation — knowing 지하철역 (subway station), 버스정류장 (bus stop), and 공항 (airport) will take you far.",
+      "title_zh_tw": "韓語地點詞彙",
+      "body": "Knowing place names lets you navigate cities, ask for directions, and tell people where you are going. These words are also key building blocks in Korean sentences — many verbs are built around locations.",
+      "body_zh_tw": "學會地點名稱讓你能在城市中導航、問路和告訴別人你要去哪裡。這些詞也是韓語句子的重要組成部分——許多動詞都圍繞地點構成。",
       "tip": {
-        "icon": "🏙️",
-        "label": "Asking for directions",
-        "text": "The most useful phrase: 어디예요? (Where is it?) or 어떻게 가요? (How do I get there?). Combine with place names: 지하철역이 어디예요? (Where is the subway station?)"
+        "icon": "📍",
+        "label": "Asking where something is",
+        "text": "[Place] 어디예요? = Where is the [place]? E.g., 화장실 어디예요? = Where is the restroom? Simple pattern, huge daily utility."
       },
-      "body_ja": "場所の語彙は、都市のナビゲート・道の教え方・日常生活に欠かせません。韓国は公共交通が発達しており、지하철역（地下鉄駅）・버스정류장（バス停）・공항（空港）を知っていれば大抵どこへでも行けます。",
+      "tip_zh_tw": {
+        "label": "詢問地點",
+        "text": "[地點] 어디예요？＝[地點]在哪裡？例：화장실 어디예요？＝洗手間在哪裡？簡單句型，日常超實用。"
+      },
+      "body_ja": "場所の語彙は都市での移動・道案内・行き先を伝えるのに役立ちます。これらの単語は韓国語の文の重要な構成要素で、多くの動詞が場所と組み合わせて使われます。",
       "tip_ja": {
-        "label": "道を聞く",
-        "text": "最も使える表現：어디예요？（どこですか？）または어떻게 가요？（どうやって行きますか？）。場所名と組み合わせて：지하철역이 어디예요？（地下鉄駅はどこですか？）"
+        "label": "場所を尋ねる",
+        "text": "[場所] 어디예요？（[場所]はどこですか？）例：화장실 어디예요？（トイレはどこですか？）シンプルで毎日使えるフレーズ。"
+      },
+      "title_es": "Lugares en Coreano",
+      "body_es": "Conocer nombres de lugares te permite moverte por ciudades, pedir indicaciones y decirle a la gente adónde vas. Estas palabras también son bloques de construcción clave en las oraciones coreanas — muchos verbos se construyen alrededor de ubicaciones.",
+      "tip_es": {
+        "label": "Preguntar dónde está algo",
+        "text": "[Lugar] 어디예요? = ¿Dónde está [el lugar]? Ej: 화장실 어디예요? = ¿Dónde está el baño? Patrón simple, enorme utilidad diaria."
       }
     },
     {
@@ -39,10 +52,13 @@
         "교"
       ],
       "romanization": "hakgyo",
+      "zhuyin": "ㄏㄚ·ㄍㄧㄠ",
       "katakana": "ハッキョ",
       "audio": "학교",
-      "meaning": "School — 대학교 = university, 고등학교 = high school",
-      "meaning_ja": "学校 ― 대학교（大学）、고등학교（高校）"
+      "meaning": "School",
+      "meaning_zh_tw": "學校",
+      "meaning_ja": "学校",
+      "meaning_es": "Escuela / colegio"
     },
     {
       "id": 3,
@@ -53,13 +69,33 @@
         "원"
       ],
       "romanization": "byeongwon",
+      "zhuyin": "ㄅㄧㄥ·ㄨㄣ",
       "katakana": "ピョンウォン",
       "audio": "병원",
       "meaning": "Hospital / clinic",
-      "meaning_ja": "病院 / クリニック"
+      "meaning_zh_tw": "醫院 / 診所",
+      "meaning_ja": "病院・クリニック",
+      "meaning_es": "Hospital / clínica"
     },
     {
       "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "약",
+        "국"
+      ],
+      "romanization": "yakguk",
+      "zhuyin": "ㄧㄚ·ㄍㄨ",
+      "katakana": "ヤックク",
+      "audio": "약국",
+      "meaning": "Pharmacy — 약 (medicine) + 국 (place)",
+      "meaning_zh_tw": "藥局——약（藥）+ 국（場所）",
+      "meaning_ja": "薬局 ― 약（薬）+ 국（場所）",
+      "meaning_es": "Farmacia — 약 (medicina) + 국 (lugar)"
+    },
+    {
+      "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -67,38 +103,30 @@
         "행"
       ],
       "romanization": "eunhaeng",
-      "katakana": "ウンヘン",
+      "zhuyin": "ㄣ·ㄏㄝㄥ",
+      "katakana": "ウネン",
       "audio": "은행",
-      "meaning": "Bank — 은 (silver) + 행 (go), originally 'silver trade office'",
-      "meaning_ja": "銀行 ― 은（銀）+ 행（行）"
-    },
-    {
-      "id": 5,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "식",
-        "당"
-      ],
-      "romanization": "sikdang",
-      "katakana": "シクタン",
-      "audio": "식당",
-      "meaning": "Restaurant — 식 (food) + 당 (hall)",
-      "meaning_ja": "レストラン ― 식（食）+ 당（堂）"
+      "meaning": "Bank — 은 (silver) + 행 (go) = where silver flows",
+      "meaning_zh_tw": "銀行——은（銀）+ 행（流通）＝銀流通的地方",
+      "meaning_ja": "銀行 ― 은（銀）+ 행（流通）= 銀が流れる場所",
+      "meaning_es": "Banco — 은 (plata) + 행 (fluir) = donde fluye la plata"
     },
     {
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "카",
-        "페"
+        "마",
+        "트"
       ],
-      "romanization": "kape",
-      "katakana": "カペ",
-      "audio": "카페",
-      "meaning": "Café — Korea has more cafés per capita than almost any country",
-      "meaning_ja": "カフェ ― 韓国はカフェの数が人口比で世界トップ"
+      "romanization": "mateu",
+      "zhuyin": "ㄇㄚ·ㄊㄜ",
+      "katakana": "マトゥ",
+      "audio": "마트",
+      "meaning": "Mart / supermarket — from English 'mart'",
+      "meaning_zh_tw": "超市——來自英語「mart」",
+      "meaning_ja": "スーパー・マート ― 英語の mart から",
+      "meaning_es": "Supermercado — del inglés \"mart\""
     },
     {
       "id": 7,
@@ -110,55 +138,65 @@
         "점"
       ],
       "romanization": "pyeonuijeom",
+      "zhuyin": "ㄆㄧㄢ·ㄧ·ㄓㄜㄇ",
       "katakana": "ピョニジョム",
       "audio": "편의점",
-      "meaning": "Convenience store — open 24/7, incredibly central to Korean life",
-      "meaning_ja": "コンビニ ― 24時間営業、生活の中心"
+      "meaning": "Convenience store — 24/7 and everywhere in Korea",
+      "meaning_zh_tw": "便利商店——韓國24小時隨處可見",
+      "meaning_ja": "コンビニ ― 韓国では24時間どこでもある",
+      "meaning_es": "Tienda de conveniencia — abierta 24/7 y en todas partes de Corea"
     },
     {
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "도",
-        "서",
-        "관"
+        "지",
+        "하",
+        "철"
       ],
-      "romanization": "doseogwan",
-      "katakana": "トソグァン",
-      "audio": "도서관",
-      "meaning": "Library",
-      "meaning_ja": "図書館"
+      "romanization": "jihacheol",
+      "zhuyin": "ㄐㄧ·ㄏㄚ·ㄔㄜㄌ",
+      "katakana": "チハチョル",
+      "audio": "지하철",
+      "meaning": "Subway — 지하 (underground) + 철 (iron/rail)",
+      "meaning_zh_tw": "地鐵——지하（地下）+ 철（鐵軌）",
+      "meaning_ja": "地下鉄 ― 지하（地下）+ 철（鉄道）",
+      "meaning_es": "Metro / subterráneo — 지하 (subterráneo) + 철 (hierro/vía)"
     },
     {
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "공",
-        "항"
+        "버",
+        "스"
       ],
-      "romanization": "gonghang",
-      "katakana": "コンハン",
-      "audio": "공항",
-      "meaning": "Airport — 인천공항 is Seoul's main international airport",
-      "meaning_ja": "空港 ― 인천공항 がソウルの国際空港"
+      "romanization": "beoseu",
+      "zhuyin": "ㄅㄜ·ㄙㄜ",
+      "katakana": "ポス",
+      "audio": "버스",
+      "meaning": "Bus — from English 'bus'",
+      "meaning_zh_tw": "公車——來自英語「bus」",
+      "meaning_ja": "バス ― 英語の bus から",
+      "meaning_es": "Autobús — del inglés \"bus\""
     },
     {
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "지",
-        "하",
-        "철",
-        "역"
+        "택",
+        "시"
       ],
-      "romanization": "jihacheol yeok",
-      "katakana": "チハチョルリョク",
-      "audio": "지하철역",
-      "meaning": "Subway station — 역 (yeok) = station",
-      "meaning_ja": "地下鉄駅 ― 역（역）= 駅"
+      "romanization": "taeksi",
+      "zhuyin": "ㄊㄝ·ㄙㄧ",
+      "katakana": "テクシ",
+      "audio": "택시",
+      "meaning": "Taxi — from English 'taxi'",
+      "meaning_zh_tw": "計程車——來自英語「taxi」",
+      "meaning_ja": "タクシー ― 英語の taxi から",
+      "meaning_es": "Taxi — del inglés \"taxi\""
     },
     {
       "id": 11,
@@ -166,69 +204,85 @@
       "type": "listen_repeat",
       "syllables": [
         "공",
-        "원"
+        "항"
       ],
-      "romanization": "gongwon",
-      "katakana": "コンウォン",
-      "audio": "공원",
-      "meaning": "Park — Seoul has many large parks along the Han River",
-      "meaning_ja": "公園 ― ソウルの漢江沿いに大きな公園が多い"
+      "romanization": "gonghang",
+      "zhuyin": "ㄍㄨㄥ·ㄏㄤ",
+      "katakana": "コンハン",
+      "audio": "공항",
+      "meaning": "Airport — 공 (public/empty) + 항 (port)",
+      "meaning_zh_tw": "機場——공（公共）+ 항（港口）",
+      "meaning_ja": "空港 ― 공（公共）+ 항（港）",
+      "meaning_es": "Aeropuerto — 공 (público) + 항 (puerto)"
     },
     {
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "백",
-        "화",
-        "점"
+        "기",
+        "차",
+        "역"
       ],
-      "romanization": "baekhwajeom",
-      "katakana": "ペクァジョム",
-      "audio": "백화점",
-      "meaning": "Department store — literally '100 goods store'",
-      "meaning_ja": "デパート ― 直訳「百貨の店」"
+      "romanization": "gichayeok",
+      "zhuyin": "ㄍㄧ·ㄔㄚ·ㄧㄝ",
+      "katakana": "キチャヨク",
+      "audio": "기차역",
+      "meaning": "Train station — 기차 (train) + 역 (station)",
+      "meaning_zh_tw": "火車站——기차（火車）+ 역（站）",
+      "meaning_ja": "電車の駅 ― 기차（電車）+ 역（駅）",
+      "meaning_es": "Estación de tren — 기차 (tren) + 역 (estación)"
     },
     {
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "약",
-        "국"
+        "식",
+        "당"
       ],
-      "romanization": "yakguk",
-      "katakana": "ヤックク",
-      "audio": "약국",
-      "meaning": "Pharmacy — 약 (medicine) + 국 (house/place)",
-      "meaning_ja": "薬局 ― 약（薬）+ 국（所）"
+      "romanization": "sikdang",
+      "zhuyin": "ㄙㄧ·ㄉㄤ",
+      "katakana": "シクタン",
+      "audio": "식당",
+      "meaning": "Restaurant — 식 (eat/food) + 당 (hall/place)",
+      "meaning_zh_tw": "餐廳——식（食）+ 당（堂）",
+      "meaning_ja": "食堂・レストラン ― 식（食）+ 당（堂）",
+      "meaning_es": "Restaurante — 식 (comer/comida) + 당 (sala/lugar)"
     },
     {
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "마",
-        "트"
+        "카",
+        "페"
       ],
-      "romanization": "mateu",
-      "katakana": "マトゥ",
-      "audio": "마트",
-      "meaning": "Supermarket (mart) — short for 슈퍼마켓",
-      "meaning_ja": "スーパーマーケット ― 슈퍼마켓 の省略"
+      "romanization": "kape",
+      "zhuyin": "ㄎㄚ·ㄆㄝ",
+      "katakana": "カペ",
+      "audio": "카페",
+      "meaning": "Café — Korea has a café culture second to none",
+      "meaning_zh_tw": "咖啡廳——韓國的咖啡文化舉世無雙",
+      "meaning_ja": "カフェ ― 韓国のカフェ文化は世界随一",
+      "meaning_es": "Café — Corea tiene una cultura de cafeterías sin igual"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "집"
+        "호",
+        "텔"
       ],
-      "romanization": "jip",
-      "katakana": "チプ",
-      "audio": "집",
-      "meaning": "Home / house — 집에 가요 (I'm going home)",
-      "meaning_ja": "家 / 自宅 ― 집에 가요（家に帰ります）"
+      "romanization": "hotel",
+      "zhuyin": "ㄏㄛ·ㄊㄝㄌ",
+      "katakana": "ホテル",
+      "audio": "호텔",
+      "meaning": "Hotel",
+      "meaning_zh_tw": "飯店",
+      "meaning_ja": "ホテル",
+      "meaning_es": "Hotel"
     },
     {
       "id": 16,
@@ -240,78 +294,114 @@
         "실"
       ],
       "romanization": "hwajangsil",
+      "zhuyin": "ㄏㄨㄚ·ㄓㄤ·ㄙㄧㄌ",
       "katakana": "ファジャンシル",
       "audio": "화장실",
-      "meaning": "Bathroom / restroom — one of the most useful words!",
-      "meaning_ja": "トイレ / お手洗い ― 最重要単語のひとつ！"
+      "meaning": "Restroom / toilet — literally 'makeup room'",
+      "meaning_zh_tw": "廁所 / 洗手間——字面意思是「化妝室」",
+      "meaning_ja": "トイレ・洗面所 ― 文字通り「化粧室」",
+      "meaning_es": "Baño / aseo — literalmente \"sala de maquillaje\""
     },
     {
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "호",
-        "텔"
+        "공",
+        "원"
       ],
-      "romanization": "hotel",
-      "katakana": "ホテル",
-      "audio": "호텔",
-      "meaning": "Hotel — Konglish from English 'hotel'",
-      "meaning_ja": "ホテル ― 英語 'hotel' から"
+      "romanization": "gongwon",
+      "zhuyin": "ㄍㄨㄥ·ㄨㄣ",
+      "katakana": "コンウォン",
+      "audio": "공원",
+      "meaning": "Park — Korean parks are well-maintained and popular",
+      "meaning_zh_tw": "公園——韓國公園維護完善且廣受歡迎",
+      "meaning_ja": "公園 ― よく整備されていて人気が高い",
+      "meaning_es": "Parque — los parques coreanos están bien mantenidos y son muy populares"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "You need medicine. Which place do you go to?",
+      "prompt": "화장실 어디예요? means...",
+      "prompt_zh_tw": "화장실 어디예요？的意思是……",
       "choices": [
-        "은행 (bank)",
-        "약국 (pharmacy)",
-        "도서관 (library)",
-        "카페 (café)"
+        "Where is the bank?",
+        "Where is the subway?",
+        "Where is the restroom?",
+        "Where is the café?"
+      ],
+      "choices_zh_tw": [
+        "銀行在哪裡？",
+        "地鐵在哪裡？",
+        "洗手間在哪裡？",
+        "咖啡廳在哪裡？"
       ],
       "choices_ja": [
-        "은행（銀行）",
-        "약국（薬局）",
-        "도서관（図書館）",
-        "카페（カフェ）"
+        "銀行はどこですか？",
+        "地下鉄はどこですか？",
+        "トイレはどこですか？",
+        "カフェはどこですか？"
       ],
-      "correct": "약국 (pharmacy)",
-      "prompt_ja": "薬が必要です。どこへ行きますか？"
+      "correct": "Where is the restroom?",
+      "prompt_ja": "화장실 어디예요？はどういう意味ですか？",
+      "prompt_es": "화장실 어디예요? significa...",
+      "choices_es": [
+        "¿Dónde está el banco?",
+        "¿Dónde está el metro?",
+        "¿Dónde está el baño?",
+        "¿Dónde está la cafetería?"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "편의점 is a...",
+      "prompt": "지하철 literally means...",
+      "prompt_zh_tw": "지하철 的字面意思是……",
       "choices": [
-        "Department store",
-        "Hospital",
-        "Convenience store",
-        "Subway station"
+        "Sky train",
+        "Underground iron (subway)",
+        "Public bus",
+        "High-speed rail"
+      ],
+      "choices_zh_tw": [
+        "天空列車",
+        "地下鐵（地鐵）",
+        "公共巴士",
+        "高速鐵路"
       ],
       "choices_ja": [
-        "デパート",
-        "病院",
-        "コンビニ",
-        "地下鉄の駅"
+        "空中鉄道",
+        "地下の鉄道（地下鉄）",
+        "公共バス",
+        "高速鉄道"
       ],
-      "correct": "Convenience store",
-      "prompt_ja": "편의점とは？"
+      "correct": "Underground iron (subway)",
+      "prompt_ja": "지하철 の文字通りの意味は？",
+      "prompt_es": "지하철 literalmente significa...",
+      "choices_es": [
+        "Tren aéreo",
+        "Hierro subterráneo (metro)",
+        "Autobús público",
+        "Tren de alta velocidad"
+      ]
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "How do you say 'Where is the bathroom?' in Korean?",
+      "prompt": "Which place is open 24 hours and is famous for being everywhere in Korea?",
+      "prompt_zh_tw": "哪個地方24小時營業，且在韓國隨處可見而著名？",
       "choices": [
-        "도서관이 어디예요?",
-        "화장실이 어디예요?",
-        "집이 어디예요?",
-        "공원이 어디예요?"
+        "마트",
+        "편의점",
+        "은행",
+        "약국"
       ],
-      "correct": "화장실이 어디예요?",
-      "prompt_ja": "「お手洗いはどこですか？」は韓国語でどう言いますか？"
+      "correct": "편의점",
+      "prompt_ja": "韓国中に24時間営業で至るところにある場所は？",
+      "prompt_es": "¿Qué lugar está abierto 24 horas y es famoso por estar en todas partes de Corea?"
     },
     {
       "id": 21,
@@ -319,9 +409,13 @@
       "type": "lesson_complete",
       "title": "Places Complete!",
       "title_kr": "장소 완성!",
-      "message": "You can now navigate Korean cities! With place vocabulary, you can ask directions, find restaurants, and get around. Try your next adventure: 편의점 어디예요? (Where is the convenience store?)",
-      "next_url": "vocabulary.html?cat=emotions",
-      "message_ja": "韓国の都市をナビできるようになりました！場所の語彙で道を聞き、レストランを探し、移動できます。次の冒険を試みましょう：편의점 어디예요？（コンビニはどこですか？）"
+      "title_zh_tw": "地點詞彙完成！",
+      "message": "You can now navigate Korean cities with confidence. Remember: [Place] + 어디예요? is your go-to question for any navigation challenge you'll face in Korea.",
+      "message_zh_tw": "你現在可以自信地在韓國城市中導航了。記住：[地點] + 어디예요？是你在韓國遇到任何導航問題時的萬用句型。",
+      "next_url": "vocabulary.html?cat=travel",
+      "message_ja": "韓国の都市を自信を持ってナビできるようになりました！[場所] + 어디예요？が道に迷ったときの合言葉です。",
+      "title_es": "¡Lugares Completados!",
+      "message_es": "Ahora puedes moverte por las ciudades coreanas con confianza. Recuerda: [Lugar] + 어디예요? es tu pregunta estrella para cualquier desafío de navegación en Corea."
     }
   ]
 }

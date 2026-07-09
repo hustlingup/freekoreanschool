@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Kartu Hafalan | 한국어 학교</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="canonical" href="https://freekoreanschool.com/learn/flashcard">
+  <link rel="alternate" hreflang="id" href="https://freekoreanschool.com/learn/flashcard">
+  <link rel="alternate" hreflang="zh-TW" href="https://freekoreanschool.com/learn/zh-tw/flashcard">
+  <link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/learn/ja/flashcard">
+  <link rel="alternate" hreflang="fr" href="https://freekoreanschool.com/learn/fr/flashcard">
+  <link rel="alternate" hreflang="de" href="https://freekoreanschool.com/learn/de/flashcard">
+  <link rel="alternate" hreflang="vi" href="https://freekoreanschool.com/learn/vi/flashcard.html">
+  <link rel="alternate" hreflang="es" href="https://freekoreanschool.com/learn/es/flashcard">
+  <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/learn/flashcard">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kartu Hafalan | 한국어 학교">
+  <meta property="og:description" content="Korean flashcard practice — review vocabulary and grammar with spaced-repetition flashcards.">
+  <meta property="og:url" content="https://freekoreanschool.com/learn/flashcard">
+  <meta property="og:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <meta property="og:site_name" content="Korean School 한국어 학교">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kartu Hafalan | 한국어 학교">
+  <meta name="twitter:description" content="Korean flashcard practice — review vocabulary and grammar with spaced-repetition flashcards.">
+  <meta name="twitter:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Kartu Hafalan | 한국어 학교",
+  "description": "Korean flashcard practice — review vocabulary and grammar with spaced-repetition flashcards.",
+  "url": "https://freekoreanschool.com/learn/flashcard",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Korean School 한국어 학교",
+    "url": "https://freekoreanschool.com"
+  }
+}
+  </script>
+
+  <meta name="google-adsense-account" content="ca-pub-6791974364232767">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791974364232767" crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D94KSYG9DE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D94KSYG9DE');
+  </script>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══════════════════════════════════════ -->
+<header class="header">
+  <div class="header-inner">
+    <a href="../../id/index.html" class="logo">
+      <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="hangul.html" class="active"><span class="nav-icon">📚</span> Belajar</a></li>
+      <li><a href="../../culture/id/index.html"><span class="nav-icon">🎵</span> K-Budaya</a></li>
+      <li><a href="../../travel/id/index.html"><span class="nav-icon">🗺️</span> Wisata</a></li>
+      <li><a href="../../news/id/index.html"><span class="nav-icon">📰</span> Berita</a></li>
+      <li><a href="../../id/quiz.html"><span class="nav-icon">📝</span> Kuis</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Ganti tampilan">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Ganti bahasa">🇮🇩 ID</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+
+<!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div id="lesson-progress-grid"></div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">Memulai</div>
+    <a href="../../id/index.html" class="sidebar-link"><span class="link-icon">🏠</span> Pengantar</a>
+    <a href="hangul.html" class="sidebar-link"><span class="link-icon">✏️</span> Alfabet Hangul</a>
+    <a href="syllable-blocks.html" class="sidebar-link"><span class="link-icon">🔷</span> Blok Suku Kata</a>
+    <a href="pronunciation.html" class="sidebar-link"><span class="link-icon">🔊</span> Panduan Pelafalan</a>
+    <div class="sidebar-section">Pemula</div>
+    <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> Kosakata <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-vocab">
+      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Salam</a>
+      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Angka</a>
+      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> Keluarga</a>
+      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> Makanan & Minuman</a>
+      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> Warna</a>
+      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Hari & Waktu</a>
+      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> Tempat</a>
+      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> Emosi</a>
+      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> Bagian Tubuh</a>
+      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> Wisata</a>
+      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> Belanja</a>
+      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> Cuaca</a>
+      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> Kata Kerja & Aksi</a>
+      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> Kata Sifat</a>
+      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> Tempat Kerja</a>
+      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> Kesehatan & Obat-obatan</a>
+      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> Media & K-Budaya</a>
+      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Peribahasa & Idiom</a>
+      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> Bahasa Korea Akademik</a>
+      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> Berita & Masyarakat</a>
+      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> Konglish</a>
+    </div>
+    <a href="pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> Kata Ganti <span class="link-badge badge-beginner">Pemula</span></a>
+    <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> Kata Benda Umum <span class="link-badge badge-beginner">Pemula</span></a>
+    <button class="sidebar-accordion-btn" data-accordion="grammar"><span class="link-icon">📝</span> Tata Bahasa <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-grammar">
+      <a href="grammar.html#sentence-structure" class="sidebar-link" data-level="intermediate"><span class="link-icon">📐</span> Struktur Kalimat <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#particles" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔗</span> Partikel Bahasa Korea <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#conjugation" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏰</span> Konjugasi Kata Kerja <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#questions" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Bentuk Pertanyaan <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#connectors" class="sidebar-link" data-level="beginner"><span class="link-icon">🔗</span> Kata Sambung <span class="link-badge badge-beginner">Pemula</span></a>
+      <a href="grammar.html#and-with" class="sidebar-link" data-level="beginner"><span class="link-icon">➕</span> Dan, Dengan <span class="link-badge badge-beginner">Pemula</span></a>
+      <a href="grammar.html#to-from" class="sidebar-link" data-level="beginner"><span class="link-icon">📨</span> Kepada/Dari Seseorang <span class="link-badge badge-beginner">Pemula</span></a>
+      <a href="grammar.html#telling-time" class="sidebar-link" data-level="beginner"><span class="link-icon">🕐</span> Menyebutkan Waktu <span class="link-badge badge-beginner">Pemula</span></a>
+      <a href="grammar.html#counters" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> Kata Bantu Bilangan <span class="link-badge badge-beginner">Pemula</span></a>
+      <a href="grammar.html#progressive" class="sidebar-link" data-level="beginner"><span class="link-icon">▶️</span> Bentuk Sedang Berlangsung <span class="link-badge badge-beginner">Pemula</span></a>
+      <a href="grammar.html#self-intro" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> Perkenalan Diri <span class="link-badge badge-beginner">Pemula</span></a>
+      <a href="grammar.html#dates" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> Tanggal dan Bulan <span class="link-badge badge-beginner">Pemula</span></a>
+      <a href="grammar.html#adverbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">💯</span> Kata Keterangan Derajat <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#nominalizer" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔤</span> Nominalisasi -는 것 <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#comparatives" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚖️</span> Perbandingan <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#good-like" class="sidebar-link" data-level="intermediate"><span class="link-icon">❤️</span> Like: 좋다 vs 좋아하다 <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#still-already" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏳</span> Still, Already <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#indefinite" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> Someone, Something <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">📢</span> Perintah -(으)세요 <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#negative-imperative" class="sidebar-link" data-level="intermediate"><span class="link-icon">🚫</span> Jangan: -지 마세요 <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#method" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛤️</span> Cara: -(으)로 <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#good-bad-at" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎯</span> Good/Poor At <span class="link-badge badge-intermediate">Menengah</span></a>
+      <a href="grammar.html#all-more" class="sidebar-link" data-level="advanced"><span class="link-icon">📦</span> All, More: 다, 더 <span class="link-badge badge-advanced">Mahir</span></a>
+      <a href="grammar.html#do-part2" class="sidebar-link" data-level="advanced"><span class="link-icon">✳️</span> -도 Mahir Uses <span class="link-badge badge-advanced">Mahir</span></a>
+    </div>
+    <div class="sidebar-section">Menengah</div>
+    <a href="speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> Formal vs Santai <span class="link-badge badge-intermediate">Menengah</span></a>
+    <a href="emotions.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">😊</span> Mengungkapkan Emosi <span class="link-badge badge-intermediate">Menengah</span></a>
+    <a href="shopping.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛒</span> Frasa Belanja <span class="link-badge badge-intermediate">Menengah</span></a>
+    <div class="sidebar-section">Mahir</div>
+    <a href="writing-essays.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📝</span> Menulis Esai <span class="link-badge badge-advanced">Mahir</span></a>
+    <a href="business-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">💼</span> Bahasa Korea Bisnis <span class="link-badge badge-advanced">Mahir</span></a>
+    <a href="classical-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Bahasa Korea Klasik <span class="link-badge badge-advanced">Mahir</span></a>
+    <div class="sidebar-section">Alat Bantu</div>
+    <a href="dialogues.html" class="sidebar-link"><span class="link-icon">💬</span> Dialog Bahasa Korea</a>
+    <a href="vocabulary-browser.html" class="sidebar-link"><span class="link-icon">⭐</span> Penjelajah Kosakata</a>
+    <a href="flashcard.html" class="sidebar-link active"><span class="link-icon">📇</span> Kartu Hafalan</a>
+  </nav>
+</aside>
+
+<!-- ═══ MAIN CONTENT ═══════════════════════════════════ -->
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="lesson-breadcrumb">
+      <a href="../../id/index.html">Beranda</a>
+      <span class="sep">›</span>
+      <a href="hangul.html">Belajar</a>
+      <span class="sep">›</span>
+      <a href="vocabulary.html">Kosakata</a>
+      <span class="sep">›</span>
+      <span>Kartu Hafalan</span>
+    </div>
+
+    <div class="lesson-header">
+      <div class="lesson-tag">📇 Study Tool</div>
+      <h1 class="lesson-title">Flash<span class="grad-text">cards</span> — 단어 카드</h1>
+      <p class="lesson-meta">
+        <span>📇 One card at a time</span>
+        <span>🔊 Audio pronunciation</span>
+        <span>⭐ Save your words</span>
+        <span>🎲 Random sets</span>
+      </p>
+    </div>
+
+    <!-- Set info bar -->
+    <div class="fc-set-info" style="margin-bottom:8px">
+      <span id="fc-set-name" style="font-size:1.1rem;font-weight:700;color:var(--text)">My Words</span>
+      <span id="fc-set-count" style="font-size:0.85rem;color:var(--text-muted)">0 cards</span>
+    </div>
+
+    <!-- Empty state (shown when no cards in deck) -->
+    <div id="fc-empty" class="fc-empty" style="display:none">
+      <div class="fc-empty-icon">⭐</div>
+      <div class="fc-empty-title">No cards in this set</div>
+      <div class="fc-empty-desc">
+        Go to <a href="vocabulary.html" style="color:var(--primary)">Kosakata</a> and click <strong>☆</strong> on any word to add it here.<br>
+        Or choose a built-in set from the sidebar.
+      </div>
+      <a href="vocabulary-browser.html" class="btn btn-primary">Browse &amp; Add Words →</a>
+    </div>
+
+    <!-- Flashcard stage -->
+    <div id="fc-stage" class="fc-stage">
+
+      <!-- The card -->
+      <div id="fc-card" class="fc-card" role="button" aria-label="Flip card">
+        <div class="fc-card-inner">
+          <div class="fc-card-face fc-card-front">
+            <div id="fc-front-kor" class="fc-front-kor">—</div>
+            <div class="fc-front-hint">click to flip · 뒤집기</div>
+          </div>
+          <div class="fc-card-face fc-card-back">
+            <div id="fc-back-eng" class="fc-back-eng">—</div>
+            <div id="fc-back-rom" class="fc-back-rom"></div>
+            <div id="fc-back-theme" class="fc-back-theme"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress -->
+      <div class="fc-progress-wrap">
+        <div class="fc-progress-track">
+          <div id="fc-progress-fill" class="fc-progress-fill" style="width:0%"></div>
+        </div>
+        <div class="fc-progress-text">
+          <span id="fc-progress-counter">0 / 0</span>
+          <span class="fc-kb-hint"><kbd>←</kbd> <kbd>→</kbd> navigate &nbsp; <kbd>Space</kbd> flip</span>
+        </div>
+      </div>
+
+      <!-- Navigation controls -->
+      <div class="fc-controls">
+        <button id="fc-prev" class="btn btn-outline btn-sm">← Prev</button>
+        <button id="fc-flip-btn" class="btn btn-secondary">Flip Card</button>
+        <button id="fc-next" class="btn btn-primary">Next →</button>
+      </div>
+
+      <!-- Action controls -->
+      <div class="fc-actions">
+        <button id="fc-speak" class="btn btn-outline btn-sm">🔊 Speak</button>
+        <button id="fc-shuffle" class="btn btn-outline btn-sm">🔀 Shuffle</button>
+        <button id="fc-restart" class="btn btn-outline btn-sm">↩ Restart</button>
+        <button id="fc-bookmark-btn" class="btn btn-outline btn-sm bookmark-btn">☆ Add to My Words</button>
+      </div>
+
+    </div><!-- /fc-stage -->
+
+    <!-- Tip -->
+    <div class="tip-box animate-on-scroll" style="margin-top:40px">
+      <span class="tip-icon">💡</span>
+      <div class="tip-content">
+        <div class="tip-label">How to build your deck</div>
+        <div class="tip-text">Visit the <a href="vocabulary.html" style="color:var(--accent)">Kosakata page</a> and click <strong>☆</strong> on any word to save it to <em>My Words</em>. Use the sidebar sets for instant practice — no setup needed. Theme sets and random sets load automatically from your vocabulary cache.</div>
+      </div>
+    </div>
+
+  </div><!-- /lesson-wrap -->
+  <div class="ad-zone ad-zone--bottom">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-6791974364232767"
+         data-ad-slot="9704719339"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../../id/index.html" class="logo">
+          <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>Platform belajar bahasa Korea gratis — menggabungkan pembelajaran bahasa dengan K-budaya, panduan wisata, dan praktik dunia nyata. Untuk pembelajar semua level, di seluruh dunia.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Belajar</div>
+        <ul class="footer-links">
+          <li><a href="hangul.html">Alfabet Hangul</a></li>
+          <li><a href="grammar.html">Tata Bahasa</a></li>
+          <li><a href="vocabulary.html">Kosakata</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Jelajahi</div>
+        <ul class="footer-links">
+          <li><a href="../../culture/id/index.html">K-Budaya</a></li>
+          <li><a href="../../travel/id/index.html">Panduan Wisata</a></li>
+          <li><a href="../../news/id/index.html">Berita Korea</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Perusahaan</div>
+        <ul class="footer-links">
+          <li><a href="../../id/about.html">Tentang Kami</a></li>
+          <li><a href="../../id/contact.html">Kontak</a></li>
+          <li><a href="../../id/privacy.html">Kebijakan Privasi</a></li>
+          <li><a href="../../id/terms.html">Ketentuan Penggunaan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. Dibuat dengan ❤️ untuk pembelajar bahasa Korea di seluruh dunia.</span>
+      <span>🇰🇷 학습을 즐기세요! (Selamat belajar!)</span>
+    </div>
+  </div>
+</footer>
+<script src="../../js/lang-core.js"></script>
+<script src="../../js/app.js"></script>
+<script defer src="../../js/ads.js"></script>
+</body>
+</html>

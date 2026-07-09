@@ -4,11 +4,12 @@
   "stages": [
     {
       "id": 1,
-      "name": "Academic Korean",
-      "name_kr": "학문 한국어",
+      "name": "Academic",
+      "name_kr": "학업",
       "first_step": 1,
       "last_step": 21,
-      "time_minutes": 12
+      "time_minutes": 13,
+      "name_es": "Académico"
     }
   ],
   "steps": [
@@ -17,21 +18,50 @@
       "stage": 1,
       "type": "reading_card",
       "title": "Academic Korean",
-      "title_kr": "학문 한국어",
-      "body": "Korea places enormous emphasis on education (교육열 — literally 'education fever'). Academic vocabulary is essential whether you're studying at a Korean university, taking a TOPIK exam, or reading academic materials. The education system is highly competitive, with 대학교 (university) entrance being a major life milestone.",
+      "title_kr": "학업 한국어",
+      "title_zh_tw": "韓語學術詞彙",
+      "body": "Korea places enormous emphasis on education — 교육열 (educational fever) drives students to study intensely. University entrance exams (수능) are a national event. Whether you are a student, teacher, or lifelong learner, this vocabulary will help you navigate academic settings in Korean.",
+      "body_zh_tw": "韓國極為重視教育——교육열（教育熱）驅使學生刻苦學習。大學入學考試（수능）是一項全國性大事。無論你是學生、教師還是終身學習者，這些詞彙都能幫助你應對韓國的學術環境。",
       "tip": {
-        "icon": "🎓",
-        "label": "TOPIK & University",
-        "text": "TOPIK (Test of Proficiency in Korean) is the official Korean language exam used worldwide for university admission and job applications. Academic vocabulary appears heavily in TOPIK Level 3+. Learning these words boosts your reading comprehension significantly."
+        "icon": "📚",
+        "label": "Education culture",
+        "text": "수능 (Suneung) is Korea's college entrance exam, held every November — the entire country adapts its schedule around it. Airlines delay flights so exam halls aren't disturbed. It's the most culturally significant academic event in Korea."
       },
-      "body_ja": "韓国は教育を非常に重視しています（교육열―文字通り「教育熱」）。韓国の大学で学ぶ・TOPIK試験を受ける・学術資料を読む際には、アカデミックな語彙が欠かせません。教育システムは競争が激しく、大学入試（대학교）は人生の大きな節目です。",
+      "tip_zh_tw": {
+        "label": "教育文化",
+        "text": "수능（修能）是韓國的大學入學考試，每年11月舉行——全國都會配合考試調整時程。為了不打擾考場，甚至有航班會延誤。這是韓國文化意義最重大的學術活動。"
+      },
+      "body_ja": "韓国は教育を非常に重視しています―교육열（教育熱）が学生を激しい勉強に駆り立てます。大学入試（수능）は国家的な行事です。学生・教師・生涯学習者を問わず、この語彙で韓国の教育の場を乗り切れます。",
       "tip_ja": {
-        "label": "TOPIKと大学",
-        "text": "TOPIK（韓国語能力試験）は大学入学や就職に世界中で使われる公式試験です。アカデミックな語彙はTOPIKレベル3以上に多く登場します。これらの単語を覚えると読解力が大幅に上がります。"
+        "label": "教育文化",
+        "text": "수능（修能）は11月に行われる大学入試で、国全体がそのスケジュールに合わせます。試験中に騒音が出ないよう航空機の発着時刻さえ変更されます。韓国で最も文化的に重要な学術イベントです。"
+      },
+      "title_es": "Coreano Académico",
+      "body_es": "Corea concede una enorme importancia a la educación — la 교육열 (fiebre educativa) impulsa a los estudiantes a estudiar intensamente. Los exámenes de ingreso universitario (수능) son un acontecimiento nacional. Tanto si eres estudiante, profesor o aprendiz de por vida, este vocabulario te ayudará en entornos académicos coreanos.",
+      "tip_es": {
+        "label": "Cultura educativa",
+        "text": "El 수능 (Suneung) es el examen de acceso universitario de Corea, celebrado cada noviembre — todo el país adapta su horario a él. Las aerolíneas retrasan vuelos para no perturbar las salas de examen. Es el evento académico culturalmente más significativo de Corea."
       }
     },
     {
       "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "학",
+        "교"
+      ],
+      "romanization": "hakgyo",
+      "zhuyin": "ㄏㄚ·ㄍㄧㄠ",
+      "katakana": "ハッキョ",
+      "audio": "학교",
+      "meaning": "School",
+      "meaning_zh_tw": "學校",
+      "meaning_ja": "学校",
+      "meaning_es": "Escuela"
+    },
+    {
+      "id": 3,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -40,154 +70,84 @@
         "교"
       ],
       "romanization": "daehakgyo",
+      "zhuyin": "ㄉㄝ·ㄏㄚ·ㄍㄧㄠ",
       "katakana": "テハッキョ",
       "audio": "대학교",
-      "meaning": "University — 서울대학교 (Seoul National University)",
-      "meaning_ja": "大学 ― 서울대학교（ソウル大学）"
-    },
-    {
-      "id": 3,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "교",
-        "수"
-      ],
-      "romanization": "gyosu",
-      "katakana": "キョス",
-      "audio": "교수",
-      "meaning": "Professor — 교수님께 질문이 있어요 (I have a question for the professor)",
-      "meaning_ja": "教授 ― 교수님께 질문이 있어요（教授に質問があります）"
+      "meaning": "University — 대학 is the shorter form",
+      "meaning_zh_tw": "大學——대학 是縮寫形式",
+      "meaning_ja": "大学 ― 대학 が短縮形",
+      "meaning_es": "Universidad — 대학 es la forma abreviada"
     },
     {
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "강",
-        "의"
+        "선",
+        "생",
+        "님"
       ],
-      "romanization": "gangi",
-      "katakana": "カンイ",
-      "audio": "강의",
-      "meaning": "Lecture / class — 강의가 재미있어요 (The lecture is interesting)",
-      "meaning_ja": "講義 ― 강의가 재미있어요（講義が面白いです）"
+      "romanization": "seonsaengnim",
+      "zhuyin": "ㄙㄜㄣ·ㄙㄝㄥ·ㄋㄧㄇ",
+      "katakana": "ソンセンニム",
+      "audio": "선생님",
+      "meaning": "Teacher — -님 is the respectful suffix; never use without it",
+      "meaning_zh_tw": "老師——-님 是尊稱後綴；不能省略",
+      "meaning_ja": "先生 ― -님 は必須の敬称。省いてはいけない",
+      "meaning_es": "Profesor/a — -님 es el sufijo de respeto; nunca se omite"
     },
     {
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "수",
-        "업"
+        "학",
+        "생"
       ],
-      "romanization": "sueop",
-      "katakana": "スオプ",
-      "audio": "수업",
-      "meaning": "Class / lesson — 수업 있어요? (Do you have class?)",
-      "meaning_ja": "授業 ― 수업 있어요？（授業がありますか？）"
+      "romanization": "haksaeng",
+      "zhuyin": "ㄏㄚ·ㄙㄝㄥ",
+      "katakana": "ハクセン",
+      "audio": "학생",
+      "meaning": "Student",
+      "meaning_zh_tw": "學生",
+      "meaning_ja": "学生",
+      "meaning_es": "Estudiante"
     },
     {
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "과",
-        "제"
+        "교",
+        "실"
       ],
-      "romanization": "gwaje",
-      "katakana": "クァジェ",
-      "audio": "과제",
-      "meaning": "Assignment / homework — 과제 마감이 언제예요? (When is the assignment due?)",
-      "meaning_ja": "課題 / 宿題 ― 과제 마감이 언제예요？（課題の締め切りはいつですか？）"
+      "romanization": "gyosil",
+      "zhuyin": "ㄍㄧㄠ·ㄙㄧㄌ",
+      "katakana": "キョシル",
+      "audio": "교실",
+      "meaning": "Classroom",
+      "meaning_zh_tw": "教室",
+      "meaning_ja": "教室",
+      "meaning_es": "Aula / Salón de clases"
     },
     {
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "시",
-        "험"
+        "책"
       ],
-      "romanization": "siheom",
-      "katakana": "シホム",
-      "audio": "시험",
-      "meaning": "Exam / test — 시험 잘 봤어요? (Did you do well on the exam?)",
-      "meaning_ja": "試験 ― 시험 잘 봤어요？（試験はうまくいきましたか？）"
+      "romanization": "chaek",
+      "zhuyin": "ㄔㄝ",
+      "katakana": "チェク",
+      "audio": "책",
+      "meaning": "Book",
+      "meaning_zh_tw": "書",
+      "meaning_ja": "本",
+      "meaning_es": "Libro"
     },
     {
       "id": 8,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "점",
-        "수"
-      ],
-      "romanization": "jeomssu",
-      "katakana": "チョムス",
-      "audio": "점수",
-      "meaning": "Score / grade — 점수가 잘 나왔어요 (My score came out well)",
-      "meaning_ja": "点数 / 成績 ― 점수가 잘 나왔어요（点数がよく出ました）"
-    },
-    {
-      "id": 9,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "전",
-        "공"
-      ],
-      "romanization": "jeongong",
-      "katakana": "チョンゴン",
-      "audio": "전공",
-      "meaning": "Major (field of study) — 전공이 뭐예요? (What is your major?)",
-      "meaning_ja": "専攻 ― 전공이 뭐예요？（専攻は何ですか？）"
-    },
-    {
-      "id": 10,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "입",
-        "학"
-      ],
-      "romanization": "iphak",
-      "katakana": "イパク",
-      "audio": "입학",
-      "meaning": "Enrollment / matriculation — 입학 축하해요! (Congratulations on your enrollment!)",
-      "meaning_ja": "入学 ― 입학 축하해요！（入学おめでとうございます！）"
-    },
-    {
-      "id": 11,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "졸",
-        "업"
-      ],
-      "romanization": "joreop",
-      "katakana": "チョロプ",
-      "audio": "졸업",
-      "meaning": "Graduation — 졸업을 축하해요! (Congratulations on your graduation!)",
-      "meaning_ja": "卒業 ― 졸업을 축하해요！（卒業おめでとうございます！）"
-    },
-    {
-      "id": 12,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "장",
-        "학",
-        "금"
-      ],
-      "romanization": "janghakgeum",
-      "katakana": "チャンハックム",
-      "audio": "장학금",
-      "meaning": "Scholarship — 장학금을 받았어요 (I received a scholarship)",
-      "meaning_ja": "奨学金 ― 장학금을 받았어요（奨学金をもらいました）"
-    },
-    {
-      "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -196,38 +156,133 @@
         "관"
       ],
       "romanization": "doseogwan",
+      "zhuyin": "ㄉㄛ·ㄙㄜ·ㄍㄨㄢ",
       "katakana": "トソグァン",
       "audio": "도서관",
-      "meaning": "Library — 도서관에서 공부해요 (I study at the library)",
-      "meaning_ja": "図書館 ― 도서관에서 공부해요（図書館で勉強します）"
+      "meaning": "Library",
+      "meaning_zh_tw": "圖書館",
+      "meaning_ja": "図書館",
+      "meaning_es": "Biblioteca"
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "시",
+        "험"
+      ],
+      "romanization": "siheom",
+      "zhuyin": "ㄙㄧ·ㄏㄜㄇ",
+      "katakana": "シホム",
+      "audio": "시험",
+      "meaning": "Exam / test — 시험을 보다 = to take an exam",
+      "meaning_zh_tw": "考試——시험을 보다＝參加考試",
+      "meaning_ja": "試験 ― 시험을 보다（試験を受ける）",
+      "meaning_es": "Examen / prueba — 시험을 보다 = hacer un examen"
+    },
+    {
+      "id": 10,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "숙",
+        "제"
+      ],
+      "romanization": "sukje",
+      "zhuyin": "ㄙㄨ·ㄓㄝ",
+      "katakana": "スクチェ",
+      "audio": "숙제",
+      "meaning": "Homework",
+      "meaning_zh_tw": "作業",
+      "meaning_ja": "宿題",
+      "meaning_es": "Tarea / deberes"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "성",
+        "적"
+      ],
+      "romanization": "seongjeok",
+      "zhuyin": "ㄙㄜㄥ·ㄓㄜ",
+      "katakana": "ソンジョク",
+      "audio": "성적",
+      "meaning": "Grade / academic record",
+      "meaning_zh_tw": "成績",
+      "meaning_ja": "成績",
+      "meaning_es": "Calificación / expediente académico"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "전",
+        "공"
+      ],
+      "romanization": "jeongong",
+      "zhuyin": "ㄓㄜㄣ·ㄍㄨㄥ",
+      "katakana": "チョンゴン",
+      "audio": "전공",
+      "meaning": "Major / area of study — 전공이 뭐예요? = What's your major?",
+      "meaning_zh_tw": "主修——전공이 뭐예요？＝你的主修是什麼？",
+      "meaning_ja": "専攻 ― 전공이 뭐예요？（専攻は何ですか？）",
+      "meaning_es": "Especialidad / carrera — 전공이 뭐예요? = ¿Cuál es tu especialidad?"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "강",
+        "의"
+      ],
+      "romanization": "gangui",
+      "zhuyin": "ㄍㄤ·ㄧ",
+      "katakana": "カンイ",
+      "audio": "강의",
+      "meaning": "Lecture / class session",
+      "meaning_zh_tw": "講課／課程",
+      "meaning_ja": "講義",
+      "meaning_es": "Clase / conferencia"
     },
     {
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "연",
-        "구"
+        "졸",
+        "업"
       ],
-      "romanization": "yeongu",
-      "katakana": "ヨング",
-      "audio": "연구",
-      "meaning": "Research — 연구 주제가 뭐예요? (What is your research topic?)",
-      "meaning_ja": "研究 ― 연구 주제가 뭐예요？（研究テーマは何ですか？）"
+      "romanization": "joreop",
+      "zhuyin": "ㄓㄛㄌ·ㄜ",
+      "katakana": "チョロプ",
+      "audio": "졸업",
+      "meaning": "Graduation — 졸업했어요 = I graduated",
+      "meaning_zh_tw": "畢業——졸업했어요＝我畢業了",
+      "meaning_ja": "卒業 ― 졸업했어요（卒業しました）",
+      "meaning_es": "Graduación — 졸업했어요 = Me gradué"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "논",
-        "문"
+        "장",
+        "학",
+        "금"
       ],
-      "romanization": "nonmun",
-      "katakana": "ノンムン",
-      "audio": "논문",
-      "meaning": "Academic paper / thesis — 논문 쓰고 있어요 (I'm writing my thesis)",
-      "meaning_ja": "論文 ― 논문 쓰고 있어요（論文を書いています）"
+      "romanization": "janghakgeum",
+      "zhuyin": "ㄓㄤ·ㄏㄚ·ㄍㄜㄇ",
+      "katakana": "チャンハックム",
+      "audio": "장학금",
+      "meaning": "Scholarship",
+      "meaning_zh_tw": "獎學金",
+      "meaning_ja": "奨学金",
+      "meaning_es": "Beca"
     },
     {
       "id": 16,
@@ -235,92 +290,137 @@
       "type": "listen_repeat",
       "syllables": [
         "학",
-        "생"
+        "원"
       ],
-      "romanization": "haksaeng",
-      "katakana": "ハクセン",
-      "audio": "학생",
-      "meaning": "Student — 대학생 = university student",
-      "meaning_ja": "学生 ― 대학생（大学生）"
+      "romanization": "hagwon",
+      "zhuyin": "ㄏㄚ·ㄨㄣ",
+      "katakana": "ハグォン",
+      "audio": "학원",
+      "meaning": "Private tutoring school (cram school) — a defining feature of Korean education",
+      "meaning_zh_tw": "補習班——韓國教育的標誌性特色",
+      "meaning_ja": "塾（ハグォン）― 韓国教育を特徴付ける私塾",
+      "meaning_es": "Academia / clases particulares — rasgo definitorio de la educación coreana"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "기",
-        "숙",
-        "사"
+        "수",
+        "능"
       ],
-      "romanization": "gisuksa",
-      "katakana": "キスクサ",
-      "audio": "기숙사",
-      "meaning": "Dormitory — 기숙사에 살아요 (I live in the dorm)",
-      "meaning_ja": "寮 ― 기숙사에 살아요（寮に住んでいます）"
+      "romanization": "suneung",
+      "zhuyin": "ㄙㄨ·ㄋㄜㄥ",
+      "katakana": "スヌン",
+      "audio": "수능",
+      "meaning": "CSAT — Korea's national college entrance exam",
+      "meaning_zh_tw": "修能——韓國全國大學入學考試",
+      "meaning_ja": "修能 ― 韓国の大学入学共通試験",
+      "meaning_es": "CSAT — examen nacional de ingreso universitario de Corea"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "You received money to help pay for your studies. What do you call it?",
+      "prompt": "What is 학원?",
+      "prompt_zh_tw": "학원 是什麼？",
       "choices": [
-        "과제 (gwaje)",
-        "점수 (jeomssu)",
-        "장학금 (janghakgeum)",
-        "강의 (gangi)"
+        "Library",
+        "University",
+        "Private cram school",
+        "Classroom"
+      ],
+      "choices_zh_tw": [
+        "圖書館",
+        "大學",
+        "補習班",
+        "教室"
       ],
       "choices_ja": [
-        "과제（課題）",
-        "점수（点数）",
-        "장학금（奨学金）",
-        "강의（講義）"
+        "図書館",
+        "大学",
+        "塾（ハグォン）",
+        "教室"
       ],
-      "correct": "장학금 (janghakgeum)",
-      "prompt_ja": "勉強費用の補助として受け取るお金を何と言いますか？"
+      "correct": "Private cram school",
+      "prompt_ja": "학원 とは何ですか？",
+      "prompt_es": "¿Qué es un 학원?",
+      "choices_es": [
+        "Biblioteca",
+        "Universidad",
+        "Academia de refuerzo",
+        "Aula"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "전공이 뭐예요? is asking...",
+      "prompt": "전공이 뭐예요? means...",
+      "prompt_zh_tw": "전공이 뭐예요？的意思是……",
       "choices": [
-        "What year are you in?",
-        "What is your major?",
-        "Where is your university?",
+        "What's your grade?",
+        "What's your major?",
+        "What school do you go to?",
         "When do you graduate?"
       ],
+      "choices_zh_tw": [
+        "你的成績怎麼樣？",
+        "你的主修是什麼？",
+        "你讀哪所學校？",
+        "你什麼時候畢業？"
+      ],
       "choices_ja": [
-        "何年生ですか？",
+        "成績は？",
         "専攻は何ですか？",
-        "大学はどこですか？",
+        "どの学校ですか？",
         "いつ卒業しますか？"
       ],
-      "correct": "What is your major?",
-      "prompt_ja": "전공이 뭐예요？は何を聞いていますか？"
+      "correct": "What's your major?",
+      "prompt_ja": "전공이 뭐예요？はどういう意味ですか？",
+      "prompt_es": "전공이 뭐예요? significa...",
+      "choices_es": [
+        "¿Cuál es tu nota?",
+        "¿Cuál es tu especialidad?",
+        "¿A qué escuela vas?",
+        "¿Cuándo te gradúas?"
+      ]
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Korea's official Korean language proficiency exam is called...",
+      "prompt": "Which word means 'scholarship'?",
+      "prompt_zh_tw": "哪個詞表示「獎學金」？",
       "choices": [
-        "수능 (Suneung)",
-        "TOPIK",
-        "SAT",
-        "한검"
+        "성적",
+        "수능",
+        "졸업",
+        "장학금"
       ],
-      "correct": "TOPIK",
-      "prompt_ja": "韓国の公式韓国語能力試験は？"
+      "correct": "장학금",
+      "prompt_ja": "「奨学金」を意味する言葉はどれですか？",
+      "prompt_es": "¿Qué palabra significa \"beca\"?",
+      "choices_es": [
+        "성적",
+        "수능",
+        "졸업",
+        "장학금"
+      ]
     },
     {
       "id": 21,
       "stage": 1,
       "type": "lesson_complete",
-      "title": "Academic Korean Complete!",
-      "title_kr": "학문 완성!",
-      "message": "Excellent work! Academic Korean opens doors to Korean universities, TOPIK certification, and intellectual conversations. 열심히 공부하세요! (Study hard!)",
-      "next_url": "vocabulary.html?cat=news",
-      "message_ja": "素晴らしい！アカデミック韓国語は韓国の大学・TOPIK合格・知的な会話への扉を開きます。열심히 공부하세요！（一生懸命勉強しましょう！）"
+      "title": "Academic Complete!",
+      "title_kr": "학업 완성!",
+      "title_zh_tw": "學術詞彙完成！",
+      "message": "공부 잘했어요! You've learned academic Korean — a vocabulary that reveals just how seriously Korea takes education. From 학원 to 수능, you now understand the words that shape millions of Korean students' lives.",
+      "message_zh_tw": "공부 잘했어요！你已學會韓語學術詞彙——這些詞彙揭示了韓國對教育的高度重視。從학원到수능，你現在理解了塑造數百萬韓國學生生活的詞語。",
+      "next_url": "vocabulary.html?cat=konglish",
+      "message_ja": "공부 잘했어요！韓国語の学業語彙をマスターしました。학원からスヌンまで、韓国の学生たちの生活を形作る言葉が分かりました。",
+      "title_es": "¡Académico Completado!",
+      "message_es": "공부 잘했어요! Has aprendido el coreano académico — un vocabulario que revela la seriedad con la que Corea toma la educación. Desde el 학원 hasta el 수능, ahora entiendes las palabras que dan forma a la vida de millones de estudiantes coreanos."
     }
   ]
 }

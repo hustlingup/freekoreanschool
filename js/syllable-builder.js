@@ -64,11 +64,19 @@ const HangulFreeBuilder = (() => {
     selectedVow  = null;
     selectedBat  = '';
 
-    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+    const _htmlLang = document.documentElement.lang.toLowerCase();
+    const _lmLang   = window.LangManager ? window.LangManager.getLang() : 'en';
+    const _lang     = _lmLang !== 'en' ? _lmLang
+                    : _htmlLang.startsWith('zh') ? 'zh-tw'
+                    : _htmlLang === 'ja' ? 'ja' : 'en';
+    const isJa   = _lang === 'ja';
+    const isZhTw = _lang === 'zh-tw';
 
     const batchimSection = batchimMode ? `
       <p class="syl-builder-label">${isJa
         ? '받침を選ぶ <span style="font-weight:400;opacity:.7">（任意の終声）：</span>'
+        : isZhTw
+        ? '選擇收尾音 받침 <span style="font-weight:400;opacity:.7">（可選尾音）：</span>'
         : 'Pick a 받침 <span style="font-weight:400;opacity:.7">(optional final consonant):</span>'}</p>
       <div class="syl-builder-row" id="sb-batchim">
         ${batchimList.map(b =>
@@ -84,6 +92,8 @@ const HangulFreeBuilder = (() => {
       <div class="syl-builder-widget">
         <p class="syl-builder-label">${isJa
           ? `子音を選ぶ${batchimMode ? '（초성）：' : '：'}`
+          : isZhTw
+          ? `選擇子音${batchimMode ? '（초성）：' : '：'}`
           : `Pick a consonant${batchimMode ? ' <span style="font-weight:400;opacity:.7">(초성)</span>' : ''}:`}</p>
         <div class="syl-builder-row" id="sb-consonants">
           ${consonants.map(c =>
@@ -92,6 +102,8 @@ const HangulFreeBuilder = (() => {
         </div>
         <p class="syl-builder-label">${isJa
           ? `母音を選ぶ${batchimMode ? '（중성）：' : '：'}`
+          : isZhTw
+          ? `選擇母音${batchimMode ? '（중성）：' : '：'}`
           : `Pick a vowel${batchimMode ? ' <span style="font-weight:400;opacity:.7">(중성)</span>' : ''}:`}</p>
         <div class="syl-builder-row" id="sb-vowels">
           ${vowels.map(v =>

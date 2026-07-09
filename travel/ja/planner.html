@@ -24,6 +24,7 @@
   <meta name="twitter:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
   <link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/travel/ja/planner">
   <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/travel/planner">
+  <link rel="alternate" hreflang="es" href="https://freekoreanschool.com/travel/es/planner">
   <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/travel/planner">
   <script type="application/ld+json">
 {
@@ -72,59 +73,17 @@
           <input type="text" id="search-input" placeholder="検索…" autocomplete="off" aria-label="サイト内検索" />
         </div>
         <button id="theme-toggle" class="icon-btn" aria-label="ダーク/ライトテーマ切替">🌙</button>
-        <a href="../planner.html" class="icon-btn lang-toggle-btn" style="text-decoration:none;">🇯🇵 日本語</a>
+        <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🌐</button>
         <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="メニューを開く">☰</button>
       </div>
     </div>
   </header>
 
 
-  <aside class="sidebar">
-    <div class="travel-sidebar-header">
-      <div class="travel-sidebar-title">旅行ガイド · 여행 안내</div>
-      <div class="travel-sidebar-subtitle">韓国</div>
-    </div>
-    <a class="sidebar-accordion-btn" href="itineraries.html" data-accordion="travel-days">
-      <span class="link-icon">📅</span> 日数別 · 일수별 <span class="accordion-arrow">▶</span>
-    </a>
-    <div class="sidebar-accordion-content" id="accordion-travel-days">
-      <a class="sidebar-link" href="itineraries.html#1day">日帰り旅行 · 당일치기</a>
-      <a class="sidebar-link" href="itineraries.html#2days">2日間 · 1박 2일</a>
-      <a class="sidebar-link" href="itineraries.html#3days">3日間 · 2박 3일</a>
-      <a class="sidebar-link" href="itineraries.html#5days">5日間 · 4박 5일</a>
-      <a class="sidebar-link" href="itineraries.html#week">1週間 · 일주일</a>
-      <a class="sidebar-link" href="itineraries.html#10days">10日間</a>
-      <a class="sidebar-link" href="itineraries.html#14days">2週間 · 2주</a>
-      <a class="sidebar-link" href="itineraries.html#1month">1ヶ月以上 · 한달</a>
-    </div>
-    <a class="sidebar-accordion-btn" href="cities.html" data-accordion="travel-city">
-      <span class="link-icon">🏙️</span> 都市別 · 도시별 <span class="accordion-arrow">▶</span>
-    </a>
-    <div class="sidebar-accordion-content" id="accordion-travel-city">
-      <a class="sidebar-link" href="cities.html#seoul">ソウル · 서울</a>
-      <a class="sidebar-link" href="cities.html#incheon">仁川 · 인천</a>
-      <a class="sidebar-link" href="cities.html#busan">釜山 · 부산</a>
-      <a class="sidebar-link" href="cities.html#suwon">水原 · 수원</a>
-      <a class="sidebar-link" href="cities.html#jeju">済州島 · 제주도</a>
-      <a class="sidebar-link" href="cities.html#gyeongju">慶州 · 경주</a>
-      <a class="sidebar-link" href="cities.html#other">その他の都市</a>
-    </div>
-    <a class="sidebar-accordion-btn" href="themes.html" data-accordion="travel-theme">
-      <span class="link-icon">🎯</span> テーマ別 · 테마별 <span class="accordion-arrow">▶</span>
-    </a>
-    <div class="sidebar-accordion-content" id="accordion-travel-theme">
-      <a class="sidebar-link" href="themes.html#food">グルメツアー · 음식 여행</a>
-      <a class="sidebar-link" href="themes.html#events">イベント・祭り · 이벤트</a>
-      <a class="sidebar-link" href="themes.html#sightseeing">観光 · 관광</a>
-      <a class="sidebar-link" href="themes.html#crosscountry">長距離旅行 · 장거리</a>
-    </div>
-    <a class="travel-sidebar-planner active" href="planner.html">📋 旅行プランナー · 여행 계획표</a>
-  </aside>
-
-
-  <main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 0px);">
+  <main class="main-content planner-main" style="margin-left:0;max-width:100%;padding-top:calc(var(--header-height) + 0px);">
     <div class="planner-page">
 
+      <!-- Page Title -->
       <div style="margin-bottom:24px;">
         <div class="section-eyebrow" style="margin-bottom:6px;">旅行プランナー · 여행 계획표</div>
         <h1 style="font-size:1.8rem;font-weight:900;color:var(--text);margin:0 0 6px;">
@@ -135,57 +94,84 @@
         </p>
       </div>
 
-      <!-- Toolbar -->
-      <div class="planner-toolbar" id="planner-toolbar">
-        <div class="planner-field">
-          <label class="planner-field-label" for="trip-title">旅行名</label>
-          <input class="planner-input" type="text" id="trip-title" placeholder="私の韓国旅行" style="min-width:200px;" />
-        </div>
-        <div class="planner-field">
-          <label class="planner-field-label" for="trip-start">開始日</label>
-          <input class="planner-input" type="date" id="trip-start" />
-        </div>
-        <div class="planner-field">
-          <label class="planner-field-label" for="trip-days">日数</label>
-          <input class="planner-input" type="number" id="trip-days" min="1" max="30" value="3" style="min-width:100px;" />
-        </div>
-        <div class="planner-field">
-          <label class="planner-field-label" for="trip-city">都市・テーマ</label>
-          <input class="planner-input" type="text" id="trip-city" placeholder="ソウル、釜山、済州島…" style="min-width:180px;" />
-        </div>
-        <div class="planner-toolbar-actions">
-          <button class="planner-btn planner-btn-outline" id="planner-reset-btn" aria-label="全イベントを削除">🗑️ 全削除</button>
-          <button class="planner-btn planner-btn-outline" id="planner-export-btn" aria-label="JSONでエクスポート">⬇️ エクスポート</button>
-          <button class="planner-btn planner-btn-outline" id="planner-import-btn" aria-label="JSONからインポート">⬆️ インポート</button>
-          <input type="file" id="planner-import-file" accept=".json" style="display:none;" />
-          <button class="planner-btn planner-btn-primary" id="planner-print-btn" aria-label="スケジュールを印刷">🖨️ 印刷</button>
-        </div>
-      </div>
+      <!-- Layout: 80% planner content + 20% ad zone -->
+      <div class="planner-layout">
 
-      <!-- Event type legend -->
-      <div class="planner-legend" id="planner-legend">
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#ef4444;"></div>✈️ 空港・フライト</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#3b82f6;"></div>🚄 交通</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#eab308;"></div>☀️ 起床</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#f97316;"></div>🍳 朝食</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#22c55e;"></div>🍱 昼食</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#8b5cf6;"></div>🍽️ 夕食</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#ec4899;"></div>🧁 おやつ</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#1e40af;"></div>🏨 宿泊・ホテル</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#14b8a6;"></div>🏛️ 観光</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#d946ef;"></div>🛍️ ショッピング</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#64748b;"></div>🗺️ 自由時間</div>
-        <div class="planner-legend-item"><div class="planner-legend-dot" style="background:#94a3b8;"></div>📝 メモ</div>
-      </div>
+        <div class="planner-content">
 
-      <!-- Planner grid rendered by JS -->
-      <div id="planner-grid-wrapper" style="overflow-x:auto;">
-        <div id="planner-grid" class="planner-grid"></div>
+          <!-- Toolbar -->
+          <div class="planner-toolbar" id="planner-toolbar">
+            <div class="planner-field">
+              <label class="planner-field-label" for="trip-start">開始日</label>
+              <input class="planner-input" type="date" id="trip-start" />
+            </div>
+            <div class="planner-field">
+              <label class="planner-field-label" for="trip-days">日数</label>
+              <input class="planner-input" type="number" id="trip-days" min="1" max="30" value="3" style="min-width:100px;" />
+            </div>
+            <div class="planner-toolbar-actions">
+              <button class="planner-btn planner-btn-outline" id="legend-emoji-toggle">絵文字なし</button>
+              <button class="planner-btn planner-btn-outline" id="planner-reset-btn" aria-label="全イベントを削除">🗑️ 全削除</button>
+              <button class="planner-btn planner-btn-primary" id="planner-print-btn" aria-label="スケジュールを印刷">🖨️ 印刷</button>
+            </div>
+          </div>
+
+          <!-- Planner body: grid + legend side by side -->
+          <div class="planner-body">
+
+            <!-- Planner grid rendered by JS -->
+            <div id="planner-grid-wrapper" style="flex:1;min-width:0;overflow:hidden;">
+              <div id="planner-grid" class="planner-grid"></div>
+            </div>
+
+            <!-- Event type legend (vertical, right side) -->
+            <div class="planner-legend" id="planner-legend">
+              <div class="planner-legend-drag-hint">左にドラッグ</div>
+              <div class="planner-legend-group-label">開始・終了</div>
+              <div class="planner-legend-item" data-type="wake"><div class="planner-legend-dot" style="background:#eab308;"></div><span class="legend-emoji">☀️</span> 起床</div>
+              <div class="planner-legend-item" data-type="sleep"><div class="planner-legend-dot" style="background:#1e40af;"></div><span class="legend-emoji">🌙</span> 就寝</div>
+              <div class="planner-legend-item" data-type="arrive"><div class="planner-legend-dot" style="background:#ef4444;"></div><span class="legend-emoji">🛬</span> 到着</div>
+              <div class="planner-legend-item" data-type="depart"><div class="planner-legend-dot" style="background:#f97316;"></div><span class="legend-emoji">🛫</span> 出発</div>
+              <div class="planner-legend-group-label">食事</div>
+              <div class="planner-legend-item" data-type="breakfast"><div class="planner-legend-dot" style="background:#f97316;"></div><span class="legend-emoji">🍳</span> 朝食</div>
+              <div class="planner-legend-item" data-type="lunch"><div class="planner-legend-dot" style="background:#22c55e;"></div><span class="legend-emoji">🍱</span> 昼食</div>
+              <div class="planner-legend-item" data-type="dinner"><div class="planner-legend-dot" style="background:#8b5cf6;"></div><span class="legend-emoji">🍽️</span> 夕食</div>
+              <div class="planner-legend-item" data-type="snack"><div class="planner-legend-dot" style="background:#ec4899;"></div><span class="legend-emoji">🧁</span> おやつ</div>
+              <div class="planner-legend-group-label">アクティビティ</div>
+              <div class="planner-legend-item" data-type="sight"><div class="planner-legend-dot" style="background:#14b8a6;"></div><span class="legend-emoji">🏛️</span> 観光</div>
+              <div class="planner-legend-item" data-type="shopping"><div class="planner-legend-dot" style="background:#d946ef;"></div><span class="legend-emoji">🛍️</span> ショッピング</div>
+              <div class="planner-legend-item" data-type="event"><div class="planner-legend-dot" style="background:#f59e0b;"></div><span class="legend-emoji">🎟️</span> イベント</div>
+              <div class="planner-legend-item" data-type="experience"><div class="planner-legend-dot" style="background:#10b981;"></div><span class="legend-emoji">🎭</span> 体験</div>
+              <div class="planner-legend-item" data-type="free"><div class="planner-legend-dot" style="background:#64748b;"></div><span class="legend-emoji">🗺️</span> 自由時間</div>
+              <div class="planner-legend-item" data-type="note"><div class="planner-legend-dot" style="background:#94a3b8;"></div><span class="legend-emoji">📝</span> メモ</div>
+              <div class="planner-legend-group-label">交通</div>
+              <div class="planner-legend-item" data-type="taxi"><div class="planner-legend-dot" style="background:#fbbf24;"></div><span class="legend-emoji">🚕</span> タクシー</div>
+              <div class="planner-legend-item" data-type="bus"><div class="planner-legend-dot" style="background:#84cc16;"></div><span class="legend-emoji">🚌</span> バス</div>
+              <div class="planner-legend-item" data-type="train"><div class="planner-legend-dot" style="background:#38bdf8;"></div><span class="legend-emoji">🚄</span> 電車</div>
+              <div class="planner-legend-item" data-type="subway"><div class="planner-legend-dot" style="background:#818cf8;"></div><span class="legend-emoji">🚇</span> 地下鉄</div>
+              <div class="planner-legend-item" data-type="motorbike"><div class="planner-legend-dot" style="background:#f472b6;"></div><span class="legend-emoji">🛵</span> バイク</div>
+              <div class="planner-legend-item" data-type="walk"><div class="planner-legend-dot" style="background:#a78bfa;"></div><span class="legend-emoji">🚶</span> 徒歩</div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Ad zone (20% — reserved for Google AdSense) -->
+        <aside class="planner-ad-zone" aria-label="広告"></aside>
+
       </div>
 
       <!-- Print title (only visible when printing) -->
       <div id="print-title" style="display:none;padding:16px 0 8px;font-size:1.4rem;font-weight:900;color:#000;font-family:sans-serif;"></div>
 
+    </div>
+    <div class="ad-zone ad-zone--bottom">
+      <ins class="adsbygoogle" style="display:block"
+           data-ad-client="ca-pub-6791974364232767"
+           data-ad-slot="9704719339"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
     </div>
   </main>
 
@@ -208,18 +194,30 @@
       <div class="planner-modal-field">
         <label class="planner-modal-label">イベントの種類</label>
         <div class="planner-type-grid" id="event-type-grid">
-          <button class="planner-type-btn" data-type="airport">✈️<br>空港</button>
-          <button class="planner-type-btn" data-type="transport">🚄<br>交通</button>
+          <div class="planner-type-group-label">開始・終了</div>
           <button class="planner-type-btn" data-type="wake">☀️<br>起床</button>
+          <button class="planner-type-btn" data-type="sleep">🌙<br>就寝</button>
+          <button class="planner-type-btn" data-type="arrive">🛬<br>到着</button>
+          <button class="planner-type-btn" data-type="depart">🛫<br>出発</button>
+          <div class="planner-type-group-label">食事</div>
           <button class="planner-type-btn" data-type="breakfast">🍳<br>朝食</button>
           <button class="planner-type-btn" data-type="lunch">🍱<br>昼食</button>
           <button class="planner-type-btn" data-type="dinner">🍽️<br>夕食</button>
           <button class="planner-type-btn" data-type="snack">🧁<br>おやつ</button>
-          <button class="planner-type-btn" data-type="sleep">🏨<br>宿泊</button>
+          <div class="planner-type-group-label">アクティビティ</div>
           <button class="planner-type-btn" data-type="sight">🏛️<br>観光</button>
-          <button class="planner-type-btn" data-type="shopping">🛍️<br>買い物</button>
+          <button class="planner-type-btn" data-type="shopping">🛍️<br>ショッピング</button>
+          <button class="planner-type-btn" data-type="event">🎟️<br>イベント</button>
+          <button class="planner-type-btn" data-type="experience">🎭<br>体験</button>
           <button class="planner-type-btn" data-type="free">🗺️<br>自由時間</button>
           <button class="planner-type-btn" data-type="note">📝<br>メモ</button>
+          <div class="planner-type-group-label">交通</div>
+          <button class="planner-type-btn" data-type="taxi">🚕<br>タクシー</button>
+          <button class="planner-type-btn" data-type="bus">🚌<br>バス</button>
+          <button class="planner-type-btn" data-type="train">🚄<br>電車</button>
+          <button class="planner-type-btn" data-type="subway">🚇<br>地下鉄</button>
+          <button class="planner-type-btn" data-type="motorbike">🛵<br>バイク</button>
+          <button class="planner-type-btn" data-type="walk">🚶<br>徒歩</button>
         </div>
       </div>
 
@@ -229,9 +227,12 @@
       </div>
 
       <input type="hidden" id="event-day-idx" />
+      <input type="hidden" id="event-edit-id" />
+      <input type="hidden" id="event-orig-time" />
 
       <div class="planner-modal-actions">
         <button class="planner-btn planner-btn-outline" id="modal-cancel-btn">キャンセル</button>
+        <button class="planner-btn planner-btn-danger" id="modal-delete-btn" style="display:none;">🗑️ 削除</button>
         <button class="planner-btn planner-btn-primary" id="modal-save-btn">追加する</button>
       </div>
     </div>
@@ -281,6 +282,8 @@
     </div>
   </footer>
 
+  <script src="../../js/lang-core.js"></script>
   <script src="../../js/app.js"></script>
+<script defer src="../../js/ads.js"></script>
 </body>
 </html>

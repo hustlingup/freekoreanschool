@@ -8,7 +8,8 @@
       "name_kr": "직장",
       "first_step": 1,
       "last_step": 20,
-      "time_minutes": 12
+      "time_minutes": 12,
+      "name_es": "Lugar de Trabajo"
     }
   ],
   "steps": [
@@ -18,16 +19,28 @@
       "type": "reading_card",
       "title": "Workplace Korean",
       "title_kr": "직장 한국어",
-      "body": "Korean workplace culture has unique characteristics — hierarchical titles, after-work drinking culture (회식, hoesik), and a strong work ethic. Addressing colleagues correctly by their title (직함) is extremely important. Calling someone by their first name at work is generally inappropriate unless given explicit permission.",
+      "title_zh_tw": "韓語職場詞彙",
+      "body": "Korean workplace culture (직장 문화) is uniquely hierarchical — titles, seniority, and formal language matter enormously. Knowing the right words for meetings, introductions, and business settings will set you apart. Many professional Korean terms are Sino-Korean (한자어) in origin.",
+      "body_zh_tw": "韓國職場文化（직장 문화）具有獨特的階層性——頭銜、資歷和正式語言極為重要。掌握會議、介紹及商業場合的正確詞彙將使你與眾不同。許多韓語專業詞彙源自漢字語（한자어）。",
       "tip": {
         "icon": "💼",
-        "label": "Titles at work",
-        "text": "Koreans use job titles instead of names: 김부장님 (Manager Kim), 이과장님 (Deputy Manager Lee). 님 is the honorific suffix added to any title. Always use 님 with superiors."
+        "label": "Workplace hierarchy",
+        "text": "사장님 (CEO) → 부장님 (department head) → 과장님 (section chief) → 대리님 (assistant manager) → 사원 (staff). Using -님 (nim) after a title shows respect and is essential. Never call a senior by name alone."
       },
-      "body_ja": "韓国の職場文化には独特の特徴があります―階層的な敬称・会社の飲み会文化（회식、ホェシク）・強い勤勉さ。同僚を肩書きで正確に呼ぶことは非常に重要です。上司に明確な許可を得ない限り、職場では名前で呼ぶのは基本的に不適切です。",
+      "tip_zh_tw": {
+        "label": "職場階層",
+        "text": "사장님（執行長）→부장님（部長）→과장님（科長）→대리님（代理）→사원（員工）。在職稱後加-님（nim）表示尊重，這一點至關重要。絕不能只叫上司的名字。"
+      },
+      "body_ja": "韓国の職場文化（직장 문화）は独特の階層性があります―肩書き・年功・丁寧語が非常に重要です。会議・自己紹介・ビジネス場面に適した語彙を知ることが差別化につながります。多くのビジネス用語は漢字語（한자어）由来です。",
       "tip_ja": {
-        "label": "職場での肩書き",
-        "text": "韓国人は名前ではなく肩書きを使います：김부장님（金部長）、이과장님（李課長）。님は敬意を示す接尾辞で、どんな肩書きにも付けます。上司には必ず님を使いましょう。"
+        "label": "職場の階層",
+        "text": "사장님（社長）→부장님（部長）→과장님（課長）→대리님（代理）→사원（社員）。肩書きに-님を付けることが尊重の証で必須です。上司を名前だけで呼ぶのはNGです。"
+      },
+      "title_es": "Coreano en el Trabajo",
+      "body_es": "La cultura laboral coreana (직장 문화) es notablemente jerárquica — los títulos, la antigüedad y el lenguaje formal importan enormemente. Conocer las palabras correctas para reuniones, presentaciones y entornos empresariales marcará la diferencia. Muchos términos profesionales coreanos son de origen sino-coreano (한자어).",
+      "tip_es": {
+        "label": "Jerarquía laboral",
+        "text": "사장님 (director general) → 부장님 (jefe de departamento) → 과장님 (jefe de sección) → 대리님 (subdirector) → 사원 (empleado). Usar -님 (nim) después del título muestra respeto y es esencial. Nunca llames a un superior solo por su nombre."
       }
     },
     {
@@ -35,57 +48,70 @@
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "회",
-        "사"
+        "직",
+        "장"
       ],
-      "romanization": "hoesa",
-      "katakana": "フェサ",
-      "audio": "회사",
-      "meaning": "Company / office — 회사 다녀요? (Do you work at a company?)",
-      "meaning_ja": "会社 ― 회사 다녀요？（会社に勤めていますか？）"
+      "romanization": "jikjang",
+      "zhuyin": "ㄐㄧ·ㄓㄤ",
+      "katakana": "チクチャン",
+      "audio": "직장",
+      "meaning": "Workplace / job",
+      "meaning_zh_tw": "職場／工作",
+      "meaning_ja": "職場・仕事",
+      "meaning_es": "Lugar de trabajo / empleo"
     },
     {
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "사",
-        "무",
-        "실"
+        "회",
+        "사"
       ],
-      "romanization": "samusil",
-      "katakana": "サムシル",
-      "audio": "사무실",
-      "meaning": "Office (room) — 사무실에 있어요 (I'm in the office)",
-      "meaning_ja": "オフィス / 事務室 ― 사무실에 있어요（オフィスにいます）"
+      "romanization": "hoesa",
+      "zhuyin": "ㄏㄨㄟ·ㄙㄚ",
+      "katakana": "フェサ",
+      "audio": "회사",
+      "meaning": "Company / firm",
+      "meaning_zh_tw": "公司",
+      "meaning_ja": "会社",
+      "meaning_es": "Empresa / compañía"
     },
     {
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "직",
-        "원"
+        "사",
+        "장",
+        "님"
       ],
-      "romanization": "jigwon",
-      "katakana": "チグォン",
-      "audio": "직원",
-      "meaning": "Employee / staff member",
-      "meaning_ja": "社員 / 従業員"
+      "romanization": "sajangnim",
+      "zhuyin": "ㄙㄚ·ㄓㄤ·ㄋㄧㄇ",
+      "katakana": "サジャンニム",
+      "audio": "사장님",
+      "meaning": "CEO / company president — -님 is a respectful suffix",
+      "meaning_zh_tw": "執行長／總裁——-님 是尊敬後綴",
+      "meaning_ja": "社長 ― -님 は敬称の接尾辞",
+      "meaning_es": "Director general / presidente — -님 es un sufijo de respeto"
     },
     {
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "상",
-        "사"
+        "부",
+        "장",
+        "님"
       ],
-      "romanization": "sangsa",
-      "katakana": "サンサ",
-      "audio": "상사",
-      "meaning": "Superior / boss — treat with 존댓말 (formal speech) always",
-      "meaning_ja": "上司 ― 常に존댓말（敬語）を使う"
+      "romanization": "bujangnim",
+      "zhuyin": "ㄅㄨ·ㄓㄤ·ㄋㄧㄇ",
+      "katakana": "プジャンニム",
+      "audio": "부장님",
+      "meaning": "Department head / general manager",
+      "meaning_zh_tw": "部長／部門主管",
+      "meaning_ja": "部長",
+      "meaning_es": "Jefe de departamento / gerente general"
     },
     {
       "id": 6,
@@ -95,11 +121,14 @@
         "동",
         "료"
       ],
-      "romanization": "dongnyo",
+      "romanization": "dongrio",
+      "zhuyin": "ㄉㄨㄥ·ㄌㄧㄠ",
       "katakana": "トンリョ",
       "audio": "동료",
-      "meaning": "Colleague / coworker",
-      "meaning_ja": "同僚"
+      "meaning": "Colleague / co-worker",
+      "meaning_zh_tw": "同事",
+      "meaning_ja": "同僚",
+      "meaning_es": "Colega / compañero de trabajo"
     },
     {
       "id": 7,
@@ -110,66 +139,83 @@
         "의"
       ],
       "romanization": "hoeui",
+      "zhuyin": "ㄏㄨㄟ·ㄧ",
       "katakana": "フェイ",
       "audio": "회의",
-      "meaning": "Meeting — 회의가 있어요 (I have a meeting)",
-      "meaning_ja": "会議 ― 회의가 있어요（会議があります）"
+      "meaning": "Meeting — 회의가 있어요 = I have a meeting",
+      "meaning_zh_tw": "會議——회의가 있어요＝我有一個會議",
+      "meaning_ja": "会議 ― 회의가 있어요（会議があります）",
+      "meaning_es": "Reunión — 회의가 있어요 = Tengo una reunión"
     },
     {
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "업",
-        "무"
+        "보",
+        "고",
+        "서"
       ],
-      "romanization": "eomu",
-      "katakana": "オムム",
-      "audio": "업무",
-      "meaning": "Work duties / tasks — 업무가 많아요 (I have a lot of work)",
-      "meaning_ja": "業務 / 仕事 ― 업무가 많아요（仕事が多いです）"
+      "romanization": "bogoseo",
+      "zhuyin": "ㄅㄛ·ㄍㄛ·ㄙㄜ",
+      "katakana": "ポゴソ",
+      "audio": "보고서",
+      "meaning": "Report — 보고서를 쓰다 = to write a report",
+      "meaning_zh_tw": "報告——보고서를 쓰다＝寫報告",
+      "meaning_ja": "報告書 ― 보고서를 쓰다（報告書を書く）",
+      "meaning_es": "Informe / reporte — 보고서를 쓰다 = escribir un informe"
     },
     {
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "월",
-        "급"
+        "이",
+        "메",
+        "일"
       ],
-      "romanization": "wolgeup",
-      "katakana": "ウォルグプ",
-      "audio": "월급",
-      "meaning": "Monthly salary — 월급이 올랐어요 (My salary went up)",
-      "meaning_ja": "月給 ― 월급이 올랐어요（給料が上がりました）"
+      "romanization": "imeil",
+      "zhuyin": "ㄧ·ㄇㄝ·ㄧㄌ",
+      "katakana": "イメイル",
+      "audio": "이메일",
+      "meaning": "Email — from English",
+      "meaning_zh_tw": "電子郵件——來自英語",
+      "meaning_ja": "メール ― 英語由来",
+      "meaning_es": "Correo electrónico — del inglés \"email\""
     },
     {
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "출",
-        "근"
+        "마",
+        "감"
       ],
-      "romanization": "chulgeun",
-      "katakana": "チュルグン",
-      "audio": "출근",
-      "meaning": "Going to work — 출근 시간 = commute time",
-      "meaning_ja": "出勤 ― 출근 시간（通勤時間）"
+      "romanization": "magam",
+      "zhuyin": "ㄇㄚ·ㄍㄚㄇ",
+      "katakana": "マガム",
+      "audio": "마감",
+      "meaning": "Deadline — 마감이 언제예요? = When is the deadline?",
+      "meaning_zh_tw": "截止日——마감이 언제예요？＝截止日是什麼時候？",
+      "meaning_ja": "締め切り ― 마감이 언제예요？（締め切りはいつですか？）",
+      "meaning_es": "Fecha límite / plazo — 마감이 언제예요? = ¿Cuándo es el plazo?"
     },
     {
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "퇴",
-        "근"
+        "월",
+        "급"
       ],
-      "romanization": "toegeun",
-      "katakana": "トェグン",
-      "audio": "퇴근",
-      "meaning": "Leaving work — 퇴근했어요? (Have you left work?)",
-      "meaning_ja": "退勤 ― 퇴근했어요？（もう退勤しましたか？）"
+      "romanization": "wolggeup",
+      "zhuyin": "ㄨㄜㄌ·ㄍㄜ",
+      "katakana": "ウォルグプ",
+      "audio": "월급",
+      "meaning": "Monthly salary — 월 (month) + 급 (pay)",
+      "meaning_zh_tw": "月薪——월（月）＋급（薪資）",
+      "meaning_ja": "月給 ― 월（月）+급（給与）",
+      "meaning_es": "Sueldo mensual — 월 (mes) + 급 (pago)"
     },
     {
       "id": 12,
@@ -180,129 +226,183 @@
         "근"
       ],
       "romanization": "yageun",
+      "zhuyin": "ㄧㄚ·ㄍㄜㄣ",
       "katakana": "ヤグン",
       "audio": "야근",
-      "meaning": "Overtime / working late — 오늘 야근해요 (I'm working overtime today)",
-      "meaning_ja": "残業 ― 오늘 야근해요（今日は残業します）"
+      "meaning": "Overtime / working late — a well-known part of Korean work culture",
+      "meaning_zh_tw": "加班——韓國職場文化中眾所周知的一部分",
+      "meaning_ja": "残業 ― 韓国の職場文化でよく知られている",
+      "meaning_es": "Horas extra / trabajar hasta tarde — una parte conocida de la cultura laboral coreana"
     },
     {
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "회",
-        "식"
+        "휴",
+        "가"
       ],
-      "romanization": "hoesik",
-      "katakana": "フェシク",
-      "audio": "회식",
-      "meaning": "Company dinner / after-work drinks — a central part of Korean work culture",
-      "meaning_ja": "会食（飲み会）― 韓国の職場文化の核心"
+      "romanization": "hyuga",
+      "zhuyin": "ㄏㄩ·ㄍㄚ",
+      "katakana": "ヒュガ",
+      "audio": "휴가",
+      "meaning": "Vacation / leave — 휴가를 내다 = to take a day off",
+      "meaning_zh_tw": "休假——휴가를 내다＝請假",
+      "meaning_ja": "休暇 ― 휴가를 내다（休暇を取る）",
+      "meaning_es": "Vacaciones / permiso — 휴가를 내다 = tomarse un día libre"
     },
     {
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "보",
-        "고",
-        "서"
+        "명",
+        "함"
       ],
-      "romanization": "bogoseo",
-      "katakana": "ポゴソ",
-      "audio": "보고서",
-      "meaning": "Report (document) — 보고서 제출했어요? (Did you submit the report?)",
-      "meaning_ja": "報告書 ― 보고서 제출했어요？（報告書を提出しましたか？）"
+      "romanization": "myeongham",
+      "zhuyin": "ㄇㄧㄥ·ㄏㄚㄇ",
+      "katakana": "ミョンハム",
+      "audio": "명함",
+      "meaning": "Business card — exchanged at first meetings with both hands",
+      "meaning_zh_tw": "名片——初次見面時用雙手交換",
+      "meaning_ja": "名刺 ― 初対面では両手で渡す",
+      "meaning_es": "Tarjeta de visita — se intercambia en los primeros encuentros con ambas manos"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "마",
-        "감"
+        "취",
+        "직"
       ],
-      "romanization": "magam",
-      "katakana": "マガム",
-      "audio": "마감",
-      "meaning": "Deadline — 마감이 언제예요? (When is the deadline?)",
-      "meaning_ja": "締め切り ― 마감이 언제예요？（締め切りはいつですか？）"
+      "romanization": "chwijek",
+      "zhuyin": "ㄔㄨㄟ·ㄐㄧ",
+      "katakana": "チュィジク",
+      "audio": "취직",
+      "meaning": "Getting a job / employment — 취직했어요 = I got a job",
+      "meaning_zh_tw": "就業——취직했어요＝我找到工作了",
+      "meaning_ja": "就職 ― 취직했어요（就職しました）",
+      "meaning_es": "Conseguir trabajo / empleo — 취직했어요 = Conseguí trabajo"
     },
     {
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "프",
-        "로",
-        "젝",
-        "트"
+        "발",
+        "표"
       ],
-      "romanization": "peurojekteu",
-      "katakana": "プロジェクトゥ",
-      "audio": "프로젝트",
-      "meaning": "Project — 새 프로젝트 시작해요 (We're starting a new project)",
-      "meaning_ja": "プロジェクト ― 새 프로젝트 시작해요（新しいプロジェクトを始めます）"
+      "romanization": "balpyo",
+      "zhuyin": "ㄅㄚㄌ·ㄆㄧㄠ",
+      "katakana": "パルピョ",
+      "audio": "발표",
+      "meaning": "Presentation / announcement",
+      "meaning_zh_tw": "簡報／發表",
+      "meaning_ja": "発表・プレゼン",
+      "meaning_es": "Presentación / anuncio"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "In Korea, the after-work team dinner/drinks event is called...",
+      "prompt": "Which title refers to the CEO of a company?",
+      "prompt_zh_tw": "哪個稱謂是指公司執行長？",
       "choices": [
-        "야근 (yageun)",
-        "회식 (hoesik)",
-        "회의 (hoeui)",
-        "출근 (chulgeun)"
+        "동료",
+        "사장님",
+        "사원",
+        "과장님"
+      ],
+      "choices_zh_tw": [
+        "同事",
+        "執行長",
+        "員工",
+        "科長"
       ],
       "choices_ja": [
-        "야근（夜勤）",
-        "회식（会食）",
-        "회의（会議）",
-        "출근（出勤）"
+        "同僚",
+        "社長",
+        "社員",
+        "課長"
       ],
-      "correct": "회식 (hoesik)",
-      "prompt_ja": "韓国で仕事後のチームディナー/飲み会のことを？"
+      "correct": "사장님",
+      "prompt_ja": "会社の社長を指す肩書きはどれですか？",
+      "prompt_es": "¿Qué título se refiere al director general de una empresa?",
+      "choices_es": [
+        "동료 (colega)",
+        "사장님 (director)",
+        "사원 (empleado)",
+        "과장님 (jefe de sección)"
+      ]
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "퇴근 is the opposite of 출근. What does 퇴근 mean?",
+      "prompt": "마감 means...",
+      "prompt_zh_tw": "마감 的意思是……",
       "choices": [
-        "Going to work",
-        "Leaving work",
-        "Working overtime",
-        "Having a meeting"
+        "Monthly salary",
+        "Business card",
+        "Deadline",
+        "Overtime"
+      ],
+      "choices_zh_tw": [
+        "月薪",
+        "名片",
+        "截止日",
+        "加班"
       ],
       "choices_ja": [
-        "出勤する",
-        "退勤する",
-        "残業する",
-        "会議をする"
+        "月給",
+        "名刺",
+        "締め切り",
+        "残業"
       ],
-      "correct": "Leaving work",
-      "prompt_ja": "퇴근は출근の反対です。퇴근の意味は？"
+      "correct": "Deadline",
+      "prompt_ja": "마감 の意味は？",
+      "prompt_es": "마감 significa...",
+      "choices_es": [
+        "Sueldo mensual",
+        "Tarjeta de visita",
+        "Fecha límite",
+        "Horas extra"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "마감이 언제예요? This question asks...",
+      "prompt": "야근 means working late / overtime. The polite way to turn it down is...",
+      "prompt_zh_tw": "야근 意指加班。有禮貌地拒絕的說法是……",
       "choices": [
-        "When does the meeting start?",
-        "When is the salary paid?",
-        "When is the deadline?",
-        "When does the project begin?"
+        "Today is busy",
+        "I have vacation",
+        "I have a prior commitment",
+        "I'm going home"
+      ],
+      "choices_zh_tw": [
+        "今天很忙",
+        "我在休假",
+        "我有事先約好的事",
+        "我要回家了"
       ],
       "choices_ja": [
-        "会議はいつ始まりますか？",
-        "給料はいつ払われますか？",
-        "締め切りはいつですか？",
-        "プロジェクトはいつ始まりますか？"
+        "今日は忙しい",
+        "休暇中です",
+        "先約があります",
+        "帰ります"
       ],
-      "correct": "When is the deadline?",
-      "prompt_ja": "마감이 언제예요？この質問は何を聞いていますか？"
+      "correct": "I have a prior commitment",
+      "prompt_ja": "야근（残業）を丁寧に断うには？",
+      "prompt_es": "야근 significa trabajar hasta tarde. La forma educada de rechazarlo es...",
+      "choices_es": [
+        "Hoy estoy ocupado",
+        "Estoy de vacaciones",
+        "Tengo un compromiso previo",
+        "Me voy a casa"
+      ]
     },
     {
       "id": 20,
@@ -310,9 +410,13 @@
       "type": "lesson_complete",
       "title": "Workplace Complete!",
       "title_kr": "직장 완성!",
-      "message": "수고하셨습니다! (You've worked hard!) This phrase is one of the most important at a Korean workplace — said to colleagues at the end of the workday. You now understand Korean office culture vocabulary.",
-      "next_url": "vocabulary.html?cat=health",
-      "message_ja": "수고하셨습니다！（お疲れ様でした！）この言葉は韓国の職場で最も重要なフレーズのひとつで、仕事終わりに同僚に言います。韓国のオフィス文化の語彙を理解しました。"
+      "title_zh_tw": "職場詞彙完成！",
+      "message": "수고하셨습니다! (Great work!) You've learned workplace Korean — vocabulary that's essential for understanding Korean professional culture. Even if you work with Korean colleagues remotely, these words and titles will show incredible cultural awareness.",
+      "message_zh_tw": "수고하셨습니다！（辛苦了！）你已學會韓語職場詞彙——這些詞彙對於理解韓國職業文化至關重要。即使你與韓國同事遠端合作，這些詞彙和稱謂也能展現出驚人的文化敏感度。",
+      "next_url": "vocabulary.html?cat=academic",
+      "message_ja": "수고하셨습니다！（お疲れ様でした！）韓国語の職場語彙をマスターしました。韓国人の同僚とリモートで働く場合でも、これらの言葉と肩書きを知っていると文化的な配慮が伝わります。",
+      "title_es": "¡Trabajo Completado!",
+      "message_es": "수고하셨습니다! (¡Buen trabajo!) Has aprendido coreano para el lugar de trabajo — vocabulario esencial para entender la cultura profesional coreana. Incluso si trabajas con colegas coreanos de forma remota, estas palabras y títulos mostrarán una increíble conciencia cultural."
     }
   ]
 }

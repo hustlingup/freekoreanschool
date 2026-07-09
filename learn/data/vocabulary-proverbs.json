@@ -4,11 +4,12 @@
   "stages": [
     {
       "id": 1,
-      "name": "Proverbs & Idioms",
-      "name_kr": "속담·관용어",
+      "name": "Proverbs",
+      "name_kr": "속담",
       "first_step": 1,
       "last_step": 17,
-      "time_minutes": 14
+      "time_minutes": 12,
+      "name_es": "Proverbios"
     }
   ],
   "steps": [
@@ -16,18 +17,30 @@
       "id": 1,
       "stage": 1,
       "type": "reading_card",
-      "title": "Korean Proverbs & Idioms",
-      "title_kr": "속담과 관용어",
-      "body": "Korean proverbs (속담, sokdam) contain centuries of wisdom and cultural values. Learning them gives you insight into Korean thinking — about perseverance, relationships, and humility. Using even one proverb correctly impresses native speakers enormously.",
+      "title": "Korean Proverbs (속담)",
+      "title_kr": "한국 속담",
+      "title_zh_tw": "韓國諺語（속담）",
+      "body": "Korean proverbs (속담) offer a window into the values, wisdom, and humor of Korean culture. These sayings have been passed down for centuries and are still used in everyday conversation. Understanding them will make you sound like a native — and reveal the soul of the language.",
+      "body_zh_tw": "韓國諺語（속담）是了解韓國文化價值觀、智慧和幽默的窗口。這些諺語流傳了數百年，至今仍在日常對話中使用。理解它們不僅讓你聽起來像母語者，更能讓你領略到語言的靈魂。",
       "tip": {
-        "icon": "📜",
-        "label": "Why learn proverbs?",
-        "text": "Proverbs appear in K-dramas, news, and everyday conversation. When a Korean grandparent or mentor says 고생 끝에 낙이 온다, they are offering deep encouragement. Understanding this shows genuine cultural appreciation."
+        "icon": "🌿",
+        "label": "How Koreans use proverbs",
+        "text": "Koreans drop proverbs into conversation to make a point concisely. When someone works incredibly hard, you might hear: 낮말은 새가 듣고 밤말은 쥐가 들어 (Birds hear your day words; mice hear your night words — be careful what you say). Mastering even 5 proverbs will impress any Korean speaker."
       },
-      "body_ja": "韓国語のことわざ（속담、ソクダム）には数百年の知恵と文化的価値観が込められています。ことわざを学ぶことで、忍耐・人間関係・謙虚さなど韓国人の考え方への洞察が得られます。一つでも正しく使えると、ネイティブを大いに驚かせます。",
+      "tip_zh_tw": {
+        "label": "韓國人如何使用諺語",
+        "text": "韓國人在對話中引用諺語來簡潔地表達觀點。看到有人非常努力工作時，你可能會聽到：낮말은 새가 듣고 밤말은 쥐가 들어（白天說的話鳥兒聽，夜裡說的話老鼠聽——說話要小心）。掌握哪怕5個諺語，都能讓任何韓語母語者印象深刻。"
+      },
+      "body_ja": "韓国のことわざ（속담）は、韓国文化の価値観・知恵・ユーモアを知る窓口です。何世紀も受け継がれ、今も日常会話で使われます。理解するとネイティブのように聞こえ、言語の魂が見えてきます。",
       "tip_ja": {
-        "label": "なぜことわざを学ぶの？",
-        "text": "ことわざはK-ドラマ・ニュース・日常会話に登場します。韓国の祖父母や先生が고생 끝에 낙이 온다と言うとき、深い励ましを贈っています。理解できることで本物の文化的理解を示せます。"
+        "label": "韓国人のことわざの使い方",
+        "text": "韓国人は会話でことわざを引用して要点を手短に伝えます。誰かが懸命に働いているとき：낮말은 새가 듣고 밤말은 쥐가 들어（昼は鳥が聞き、夜はネズミが聞く―言葉には気をつけよ）。5つでもことわざを知っていると韓国語話者を驚かせられます。"
+      },
+      "title_es": "Proverbios Coreanos (속담)",
+      "body_es": "Los proverbios coreanos (속담) ofrecen una ventana a los valores, la sabiduría y el humor de la cultura coreana. Estos dichos se han transmitido durante siglos y aún se usan en la conversación cotidiana. Entenderlos hará que suenes como un nativo — y revelará el alma del idioma.",
+      "tip_es": {
+        "label": "Cómo usan los coreanos los proverbios",
+        "text": "Los coreanos insertan proverbios en la conversación para expresar un punto de forma concisa. Cuando alguien trabaja increíblemente duro, puedes escuchar: 낮말은 새가 듣고 밤말은 쥐가 들어 (Las palabras del día las escuchan los pájaros; las de la noche, los ratones — ten cuidado con lo que dices). Dominar aunque sea 5 proverbios impresionará a cualquier hablante de coreano."
       }
     },
     {
@@ -35,276 +48,477 @@
       "stage": 1,
       "type": "reading_card",
       "title": "가는 말이 고와야 오는 말이 곱다",
-      "title_kr": "속담 1",
-      "body": "Literal meaning: 'For words going out to be beautiful, words coming back must be beautiful.' English equivalent: 'Treat others as you want to be treated.' This is one of the most commonly used Korean proverbs about kindness and respect in conversation.",
-      "tip": {
-        "icon": "💬",
-        "label": "When to use it",
-        "text": "Use this proverb when someone complains about being treated rudely: 가는 말이 고와야 오는 말이 곱잖아요 — meaning 'you get what you give in conversation.'"
-      },
-      "body_ja": "直訳：「出て行く言葉が美しければ、返ってくる言葉も美しい」。英語の「自分がされたいようにしなさい」に相当します。会話における親切と敬意についての最も一般的なことわざのひとつです。",
-      "tip_ja": {
-        "label": "使うタイミング",
-        "text": "誰かが粗雑に扱われたと愚痴を言うときにこのことわざを使います：가는 말이 고와야 오는 말이 곱잖아요―「与えたものが返ってくる」という意味です。"
-      }
+      "title_kr": "가는 말이 고와야 오는 말이 곱다",
+      "title_zh_tw": "出言要溫柔，回應才甜蜜",
+      "body": "Meaning: If your words going out are kind, the words coming back will be kind. English equivalent: 'You reap what you sow.'",
+      "body_zh_tw": "含義：你說出去的話溫柔，回來的話也會溫柔。英語對應：「一分耕耘，一分收穫」，或「種什麼因，得什麼果」。",
+      "rules": [
+        "가는 말 = words going out / what you say",
+        "오는 말 = words coming back / what you receive",
+        "곱다 = to be beautiful / kind (speech)",
+        "Lesson: treat others as you want to be treated"
+      ],
+      "rules_zh_tw": [
+        "가는 말＝說出去的話",
+        "오는 말＝回來的話",
+        "곱다＝美麗的／溫柔的（言語）",
+        "啟示：己所欲，施於人"
+      ],
+      "body_ja": "意味：発する言葉が美しければ、返ってくる言葉も美しい。英語のことわざ：「You reap what you sow.（まいた種は自分で刈る）」",
+      "title_es": "Las palabras amables generan palabras amables",
+      "body_es": "Significado: Si tus palabras son amables, las que recibirás también lo serán. Equivalente en español: \"Siembra vientos y recogerás tempestades\" (versión positiva) / \"Trata a los demás como quieres que te traten\".",
+      "rules_es": [
+        "ganeun mal = las palabras que salen / lo que dices",
+        "oneun mal = las palabras que vuelven / lo que recibes",
+        "gopda = ser hermoso / amable (en el habla)",
+        "Lección: trata a los demás como quieres que te traten"
+      ]
     },
     {
       "id": 3,
       "stage": 1,
       "type": "reading_card",
-      "title": "고생 끝에 낙이 온다",
-      "title_kr": "속담 2",
-      "body": "Literal meaning: 'At the end of hardship, joy comes.' English equivalent: 'No pain, no gain' / 'After the storm comes the calm.' This proverb encourages someone going through difficulty — hardship is temporary, and reward follows perseverance.",
-      "tip": {
-        "icon": "💪",
-        "label": "Encouragement",
-        "text": "Koreans say this to students before exams, workers during tough projects, or anyone facing difficulty. It reflects the Korean cultural value of endurance (인내). A short form: 고진감래 (苦盡甘來) — the Sino-Korean version."
-      },
-      "body_ja": "直訳：「苦労の末に楽がやってくる」。英語の「苦あれば楽あり」に相当します。困難な時期にある人を励ますことわざ―苦労は一時的で、忍耐の後に報いが来ます。",
-      "tip_ja": {
-        "label": "励まし",
-        "text": "試験前の学生・大変なプロジェクト中の社員・困難に直面している人に言います。韓国の文化的価値観である忍耐（인내）を反映しています。短縮形：고진감래（苦盡甘來）―漢字語版。"
-      }
+      "title": "호랑이도 제 말 하면 온다",
+      "title_kr": "호랑이도 제 말 하면 온다",
+      "title_zh_tw": "說曹操，曹操到",
+      "body": "Meaning: Even a tiger will appear if you talk about it. English equivalent: 'Speak of the devil and he shall appear.'",
+      "body_zh_tw": "含義：就算是老虎，如果你提到牠，牠也會出現。英語對應：「說到魔鬼，魔鬼就到」。",
+      "rules": [
+        "호랑이 = tiger (the feared animal in Korean folklore)",
+        "제 말 하면 = if you talk about it",
+        "온다 = comes / appears",
+        "Used when someone appears right after you mention their name"
+      ],
+      "rules_zh_tw": [
+        "호랑이＝老虎（韓國民間傳說中令人畏懼的動物）",
+        "제 말 하면＝如果你提到牠",
+        "온다＝來了／出現了",
+        "用於剛提到某人名字，那人就出現的場合"
+      ],
+      "body_ja": "意味：虎の話をすれば虎が現れる。英語のことわざ：「Speak of the devil.（噂をすれば影）」",
+      "title_es": "Hablando del rey de Roma...",
+      "body_es": "Significado: Incluso un tigre aparecerá si hablas de él. Equivalente en español: \"Hablando del rey de Roma, por la puerta asoma.\"",
+      "rules_es": [
+        "horangi = tigre (animal temido en el folclore coreano)",
+        "je mal hamyeon = si hablas de él",
+        "onda = viene / aparece",
+        "Se usa cuando alguien aparece justo después de que mencionas su nombre"
+      ]
     },
     {
       "id": 4,
       "stage": 1,
       "type": "reading_card",
-      "title": "세 살 버릇 여든까지 간다",
-      "title_kr": "속담 3",
-      "body": "Literal meaning: 'Habits formed at age three last until eighty.' English equivalent: 'Old habits die hard.' This proverb warns about the importance of good habits formed in childhood.",
-      "tip": {
-        "icon": "👶",
-        "label": "Parenting & education",
-        "text": "Often said by parents or teachers to children. It emphasizes that character and habits formed early in life are extremely persistent. The number 여든 (80) symbolizes 'a very long time' in Korean culture."
-      },
-      "body_ja": "直訳：「三歳の癖は八十まで続く」。英語の「三つ子の魂百まで」に相当します。幼少期に形成された良い習慣の重要性を警告することわざです。",
-      "tip_ja": {
-        "label": "子育てと教育",
-        "text": "親や教師が子供に言うことが多いです。幼い頃に形成された性格や習慣は非常に根強く持続することを強調します。여든（80）は韓国文化で「非常に長い時間」を象徴します。"
-      }
+      "title": "백지장도 맞들면 낫다",
+      "title_kr": "백지장도 맞들면 낫다",
+      "title_zh_tw": "眾人拾柴火焰高",
+      "body": "Meaning: Even a sheet of white paper is better lifted together. English equivalent: 'Two heads are better than one' / 'Many hands make light work.'",
+      "body_zh_tw": "含義：就算是一張白紙，兩人一起抬也更輕鬆。英語對應：「兩個頭腦勝過一個」／「人多好辦事」。",
+      "rules": [
+        "백지장 = sheet of white paper",
+        "맞들면 = if you lift it together",
+        "낫다 = to be better",
+        "Emphasizes collaboration over individual effort"
+      ],
+      "rules_zh_tw": [
+        "백지장＝一張白紙",
+        "맞들면＝如果一起抬",
+        "낫다＝更好",
+        "強調合作勝於個人努力"
+      ],
+      "body_ja": "意味：白紙一枚も二人で持てばよい。英語のことわざ：「Two heads are better than one.（二頭は一頭に勝る）」",
+      "title_es": "Dos cabezas piensan mejor que una",
+      "body_es": "Significado: Incluso una hoja de papel blanco es mejor levantarla entre dos. Equivalente en español: \"Dos cabezas piensan mejor que una\" / \"El trabajo en equipo hace el trabajo más liviano\".",
+      "rules_es": [
+        "baekjijang = hoja de papel blanco",
+        "matdeulmyeon = si la levantan juntos",
+        "natda = ser mejor",
+        "Enfatiza la colaboración sobre el esfuerzo individual"
+      ]
     },
     {
       "id": 5,
       "stage": 1,
       "type": "reading_card",
-      "title": "등잔 밑이 어둡다",
-      "title_kr": "속담 4",
-      "body": "Literal meaning: 'It's dark under the lamp.' English equivalent: 'You can't see what's right in front of you.' Used when someone misses something obvious that's close to them.",
-      "tip": {
-        "icon": "💡",
-        "label": "Used for irony",
-        "text": "This proverb is used humorously when someone searches everywhere for something only to find it right in front of them, or misses an obvious answer in a conversation."
-      },
-      "body_ja": "直訳：「灯台下暗し」。英語の「足元を見ろ」に相当します。身近にある明らかなものを見落とすときに使われます。",
-      "tip_ja": {
-        "label": "皮肉として使う",
-        "text": "このことわざは、どこを探してもなかったものが目の前にあったと判明したとき、または会話で明らかな答えを見逃したときに笑いを交えて使われます。"
-      }
+      "title": "천 리 길도 한 걸음부터",
+      "title_kr": "천 리 길도 한 걸음부터",
+      "title_zh_tw": "千里之行，始於足下",
+      "body": "Meaning: Even a journey of a thousand li (Korean miles) begins with a single step. Korean equivalent of the famous Lao Tzu saying.",
+      "body_zh_tw": "含義：就算是千里之路，也是從第一步開始。韓語版老子名言。",
+      "rules": [
+        "천 리 = one thousand li (Korean unit of distance, ~400 km)",
+        "한 걸음 = one step",
+        "부터 = starting from",
+        "Used to encourage someone starting a big goal"
+      ],
+      "rules_zh_tw": [
+        "천 리＝一千里（韓國里，約400公里）",
+        "한 걸음＝一步",
+        "부터＝從……開始",
+        "用於鼓勵正在開始大目標的人"
+      ],
+      "body_ja": "意味：千里の道も一歩から。老子のことわざの韓国語版と同じ意味合い。",
+      "title_es": "El camino de mil li comienza con un paso",
+      "body_es": "Significado: Incluso un viaje de mil li (millas coreanas) comienza con un solo paso. El equivalente coreano del famoso dicho de Lao Tzu.",
+      "rules_es": [
+        "cheon li = mil li (unidad de distancia coreana, ~400 km)",
+        "han georeum = un paso",
+        "buteo = comenzando desde",
+        "Se usa para animar a alguien que comienza un gran objetivo"
+      ]
     },
     {
       "id": 6,
       "stage": 1,
       "type": "reading_card",
-      "title": "눈이 높다",
-      "title_kr": "관용어 1",
-      "body": "Literal meaning: 'Eyes are high.' Idiomatic meaning: 'To have high standards' — especially used about romantic preferences or taste in general. Someone who only likes very attractive or high-quality things is said to have 눈이 높다.",
-      "tip": {
-        "icon": "👁️",
-        "label": "Dating culture",
-        "text": "This idiom appears frequently in K-dramas when a character is too picky about romantic partners. 눈을 낮춰요 (Lower your standards!) is the common response."
-      },
-      "body_ja": "直訳：「目が高い」。慣用的な意味：「目が肥えている」―特に恋愛の好みや趣味全般について使われます。非常に魅力的なものや高品質なものしか好まない人を指します。",
-      "tip_ja": {
-        "label": "恋愛文化",
-        "text": "このイディオムはK-ドラマで、キャラクターが恋愛相手にこだわりすぎるときによく登場します。눈을 낮춰요（目を下げなさい！）が一般的な返し言葉です。"
-      }
+      "title": "낮말은 새가 듣고 밤말은 쥐가 듣는다",
+      "title_kr": "낮말은 새가 듣고 밤말은 쥐가 듣는다",
+      "title_zh_tw": "言多必失，口風要嚴",
+      "body": "Meaning: Birds hear your day words; mice hear your night words. Always speak carefully — there are no truly secret conversations.",
+      "body_zh_tw": "含義：白天說的話鳥兒聽，夜裡說的話老鼠聽。說話要謹慎——沒有真正秘密的對話。",
+      "rules": [
+        "낮말 = day words / things said in daytime",
+        "밤말 = night words / things said at night",
+        "새 = bird | 쥐 = mouse/rat",
+        "Reminder: be careful what you say about others"
+      ],
+      "rules_zh_tw": [
+        "낮말＝白天說的話",
+        "밤말＝夜裡說的話",
+        "새＝鳥 | 쥐＝老鼠",
+        "提醒：說別人閒話要謹慎"
+      ],
+      "body_ja": "意味：昼に話すと鳥が聞き、夜に話すとネズミが聞く。どこで何を話しても誰かが聞いている―秘密の会話はない。",
+      "title_es": "Las paredes oyen",
+      "body_es": "Significado: Los pájaros escuchan tus palabras de día; los ratones, las de noche. Habla siempre con cuidado — no hay conversaciones verdaderamente secretas.",
+      "rules_es": [
+        "nanmal = palabras del día / lo que se dice durante el día",
+        "bammal = palabras de la noche / lo que se dice de noche",
+        "sae = pájaro | jwi = ratón",
+        "Recordatorio: ten cuidado con lo que dices de los demás"
+      ]
     },
     {
       "id": 7,
       "stage": 1,
       "type": "reading_card",
-      "title": "발이 넓다",
-      "title_kr": "관용어 2",
-      "body": "Literal meaning: 'Feet are wide.' Idiomatic meaning: 'To have a wide social network / to know a lot of people.' The opposite, 발이 좁다 (narrow feet), means you don't know many people.",
-      "tip": {
-        "icon": "🤝",
-        "label": "Networking culture",
-        "text": "In Korean business culture, 발이 넓다 is a compliment. Networking (인맥) is highly valued, and people with wide connections can open many doors."
-      },
-      "body_ja": "直訳：「足が広い」。慣用的な意味：「顔が広い」―多くの人を知っている・人脈が広いという意味。反対の발이 좁다（足が狭い）は人脈が少ないことを意味します。",
-      "tip_ja": {
-        "label": "ネットワーキング文化",
-        "text": "韓国のビジネス文化では발이 넓다は褒め言葉です。人脈（인맥）は非常に重視されており、幅広いつながりを持つ人は多くの扉を開くことができます。"
-      }
+      "title": "고생 끝에 낙이 온다",
+      "title_kr": "고생 끝에 낙이 온다",
+      "title_zh_tw": "苦盡甘來",
+      "body": "Meaning: After hardship comes joy. English equivalent: 'Every cloud has a silver lining' / 'No pain, no gain.'",
+      "body_zh_tw": "含義：苦盡甘來。英語對應：「每朵烏雲都有銀邊」／「沒有付出，就沒有收穫」。",
+      "rules": [
+        "고생 = hardship / suffering",
+        "끝에 = at the end of",
+        "낙 = joy / pleasure / reward",
+        "A very common expression of encouragement in Korean"
+      ],
+      "rules_zh_tw": [
+        "고생＝艱辛／苦難",
+        "끝에＝在……之後",
+        "낙＝喜悅／樂趣／回報",
+        "韓語中非常常用的鼓勵表達"
+      ],
+      "body_ja": "意味：苦労の果てに喜びが来る。英語のことわざ：「No pain, no gain.」「Every cloud has a silver lining.」",
+      "title_es": "Tras el sufrimiento viene la alegría",
+      "body_es": "Significado: Después de las dificultades viene la alegría. Equivalente en español: \"No hay mal que por bien no venga\" / \"A mal tiempo, buena cara\".",
+      "rules_es": [
+        "goesaeng = dificultades / sufrimiento",
+        "kkute = al final de",
+        "nak = alegría / placer / recompensa",
+        "Expresión de aliento muy común en coreano"
+      ]
     },
     {
       "id": 8,
       "stage": 1,
       "type": "reading_card",
-      "title": "배보다 배꼽이 더 크다",
-      "title_kr": "속담 5",
-      "body": "Literal meaning: 'The navel is bigger than the belly.' English equivalent: 'The tail wags the dog.' Used when secondary costs or efforts are bigger than the main thing itself.",
-      "tip": {
-        "icon": "🔄",
-        "label": "When to use",
-        "text": "Used when service fees are higher than the item purchased, or when preparing for an event takes more time than the event itself: 준비하는 게 배보다 배꼽이 더 크네요 (The prep is bigger than the actual event)."
-      },
-      "body_ja": "直訳：「腹よりへそが大きい」。英語の「本末転倒」に相当します。付随するコストや労力が本体より大きくなるときに使われます。",
-      "tip_ja": {
-        "label": "使うタイミング",
-        "text": "サービス料金が商品より高いとき、またはイベントの準備がイベント本体より時間がかかるときに使います：준비하는 게 배보다 배꼽이 더 크네요（準備がイベント本体より大きいですね）。"
-      }
+      "title": "빈 수레가 요란하다",
+      "title_kr": "빈 수레가 요란하다",
+      "title_zh_tw": "空桶響聲大",
+      "body": "Meaning: An empty cart makes the most noise. English equivalent: 'Empty vessels make the most noise' / 'All bark, no bite.'",
+      "body_zh_tw": "含義：空車最嘈雜。英語對應：「空桶響聲大」／「雷聲大，雨點小」。",
+      "rules": [
+        "빈 = empty",
+        "수레 = cart / wagon",
+        "요란하다 = to be noisy / loud",
+        "Said about boastful or loud people who lack substance"
+      ],
+      "rules_zh_tw": [
+        "빈＝空的",
+        "수레＝車輛／貨車",
+        "요란하다＝吵鬧的",
+        "用於形容誇誇其談、缺乏實質的人"
+      ],
+      "body_ja": "意味：空の荷車ほどうるさい。英語のことわざ：「Empty vessels make the most noise.（空き缶はよく鳴る）」",
+      "title_es": "Perro que ladra no muerde",
+      "body_es": "Significado: El carro vacío hace más ruido. Equivalente en español: \"Perro que ladra no muerde\" / \"Mucho ruido y pocas nueces\".",
+      "rules_es": [
+        "bin = vacío",
+        "sure = carro / carreta",
+        "yoranhada = ser ruidoso / escandaloso",
+        "Se dice de personas fanfarronas o ruidosas que carecen de sustancia"
+      ]
     },
     {
       "id": 9,
       "stage": 1,
       "type": "reading_card",
-      "title": "하늘이 무너져도 솟아날 구멍이 있다",
-      "title_kr": "속담 6",
-      "body": "Literal meaning: 'Even if the sky falls, there is a hole to escape through.' English equivalent: 'Where there's a will, there's a way' / 'Every cloud has a silver lining.' Used to encourage someone in a seemingly hopeless situation.",
-      "tip": {
-        "icon": "🌟",
-        "label": "Ultimate encouragement",
-        "text": "When someone feels completely stuck, this proverb offers the deepest reassurance. It implies that no situation is truly without hope — there is always a way out if you look for it."
-      },
-      "body_ja": "直訳：「空が落ちても逃げる穴がある」。英語の「天は二物を与えず」「雨降って地固まる」に相当します。絶望的に見える状況にある人を励ますときに使われます。",
-      "tip_ja": {
-        "label": "究極の励まし",
-        "text": "完全に行き詰まっていると感じている人に、このことわざは最も深い安心感を与えます。本当に希望のない状況など存在しない―探せば必ず抜け道があるという意味です。"
-      }
+      "title": "세 살 버릇 여든까지 간다",
+      "title_kr": "세 살 버릇 여든까지 간다",
+      "title_zh_tw": "三歲習性，八十猶存",
+      "body": "Meaning: Habits learned at age three last until eighty. English equivalent: 'Old habits die hard' / 'As the twig is bent, so grows the tree.'",
+      "body_zh_tw": "含義：三歲的習慣能持續到八十歲。英語對應：「舊習難改」／「樹苗怎麼彎，大樹就怎麼長」。",
+      "rules": [
+        "세 살 = three years old",
+        "버릇 = habit",
+        "여든 = eighty",
+        "까지 = until; 간다 = goes",
+        "Often said to explain why upbringing matters"
+      ],
+      "rules_zh_tw": [
+        "세 살＝三歲",
+        "버릇＝習慣",
+        "여든＝八十",
+        "까지＝直到；간다＝延續",
+        "常用來說明童年教育的重要性"
+      ],
+      "body_ja": "意味：3歳のくせは80まで続く。英語のことわざ：「Old habits die hard.（古い習慣はなかなか直らない）」",
+      "title_es": "Genio y figura hasta la sepultura",
+      "body_es": "Significado: Los hábitos aprendidos a los tres años duran hasta los ochenta. Equivalente en español: \"Genio y figura hasta la sepultura\" / \"Árbol que crece torcido, nunca su tronco endereza\".",
+      "rules_es": [
+        "se sal = tres años",
+        "beoreut = hábito",
+        "yeodeun = ochenta",
+        "kkaji = hasta; ganda = continúa",
+        "Se suele decir para explicar por qué la crianza importa"
+      ]
     },
     {
       "id": 10,
       "stage": 1,
       "type": "reading_card",
-      "title": "입이 가볍다 / 입이 무겁다",
-      "title_kr": "관용어 3",
-      "body": "입이 가볍다 = 'The mouth is light' = someone who can't keep secrets and talks too much. 입이 무겁다 = 'The mouth is heavy' = a discreet person who keeps secrets and speaks carefully. These contrasting idioms use the mouth's metaphorical 'weight' to describe speech habits.",
-      "tip": {
-        "icon": "🤫",
-        "label": "Who to trust",
-        "text": "When you need to share a secret, find someone whose 입이 무거워요 (mouth is heavy). Telling someone with 입이 가벼워요 (light mouth) guarantees the secret spreads."
-      },
-      "body_ja": "입이 가볍다＝「口が軽い」＝秘密を守れず多く話す人。입이 무겁다＝「口が重い」＝秘密を守り慎重に話す思慮深い人。口の比喩的な「重さ」で話し方の癖を表す対照的な慣用表現です。",
-      "tip_ja": {
-        "label": "誰を信頼するか",
-        "text": "秘密を共有したいときは입이 무거워요（口が重い）人を探しましょう。입이 가벼워요（口が軽い）人に話せば秘密は必ず広まります。"
-      }
+      "title": "원숭이도 나무에서 떨어진다",
+      "title_kr": "원숭이도 나무에서 떨어진다",
+      "title_zh_tw": "智者千慮，必有一失",
+      "body": "Meaning: Even a monkey falls from a tree. English equivalent: 'Nobody's perfect' / 'Even the best make mistakes.'",
+      "body_zh_tw": "含義：就算是猴子也會從樹上跌下來。英語對應：「人無完人」／「即使最優秀的人也會犯錯」。",
+      "rules": [
+        "원숭이 = monkey",
+        "나무에서 = from a tree",
+        "떨어진다 = falls",
+        "Said to comfort someone who made a mistake at something they're good at"
+      ],
+      "rules_zh_tw": [
+        "원숭이＝猴子",
+        "나무에서＝從樹上",
+        "떨어진다＝跌落",
+        "用於安慰在自己擅長的事情上犯了錯的人"
+      ],
+      "body_ja": "意味：猿も木から落ちる。英語のことわざ：「Nobody's perfect.（完璧な人はいない）」",
+      "title_es": "Nadie es perfecto",
+      "body_es": "Significado: Incluso un mono se cae de un árbol. Equivalente en español: \"Nadie es perfecto\" / \"El mejor escribano echa un borrón\".",
+      "rules_es": [
+        "wonsungi = mono",
+        "namueeseo = desde un árbol",
+        "tteoreojinda = cae",
+        "Se dice para consolar a alguien que cometió un error en algo en lo que es bueno"
+      ]
     },
     {
       "id": 11,
       "stage": 1,
       "type": "reading_card",
-      "title": "손이 크다",
-      "title_kr": "관용어 4",
-      "body": "Literal meaning: 'Hands are big.' Idiomatic meaning: To be generous with food and money — always giving or preparing more than needed. Often said about grandmothers who cook enormous amounts of food, or generous hosts.",
-      "tip": {
-        "icon": "🍽️",
-        "label": "Korean hospitality",
-        "text": "Korean 할머니 (grandmothers) are famously said to have 손이 커요 — they always make too much food and insist on feeding guests until they can barely move. It's a term of deep affection."
-      },
-      "body_ja": "直訳：「手が大きい」。慣用的な意味：食べ物やお金に気前がよい―常に必要以上に与えたり準備したりする人。大量に料理を作るおばあちゃんや気前の良いホストについてよく言われます。",
-      "tip_ja": {
-        "label": "韓国のおもてなし",
-        "text": "韓国の할머니（おばあちゃん）は손이 커요と言われることで有名です―常に食べ物を作りすぎてゲストが動けなくなるまで食べさせます。深い愛情を込めた言葉です。"
-      }
+      "title": "급할수록 돌아가라",
+      "title_kr": "급할수록 돌아가라",
+      "title_zh_tw": "欲速則不達",
+      "body": "Meaning: The more urgent it is, the more you should take the roundabout way. English equivalent: 'More haste, less speed' / 'Haste makes waste.'",
+      "body_zh_tw": "含義：越是緊急，越要繞道而行。英語對應：「欲速則不達」／「倉促行事，徒勞無功」。",
+      "rules": [
+        "급할수록 = the more urgent it is",
+        "돌아가라 = go around / take the longer route",
+        "The wisdom: slow down when under pressure",
+        "Used when someone is rushing and making errors"
+      ],
+      "rules_zh_tw": [
+        "급할수록＝越是緊急",
+        "돌아가라＝繞道走",
+        "智慧：在壓力下放慢速度反而更快",
+        "用於有人因匆忙而出錯時"
+      ],
+      "body_ja": "意味：急げば急ぐほど、遠回りをせよ。英語のことわざ：「More haste, less speed.（急ぐほど遅くなる）」",
+      "title_es": "Vísteme despacio que tengo prisa",
+      "body_es": "Significado: Cuanto más urgente es, más debes tomar el camino largo. Equivalente en español: \"Vísteme despacio que tengo prisa\" / \"Las prisas no son buenas\".",
+      "rules_es": [
+        "geupalsurok = cuanto más urgente",
+        "doragara = da la vuelta / toma el camino largo",
+        "La sabiduría: frena cuando estás bajo presión",
+        "Se usa cuando alguien se apresura y comete errores"
+      ]
     },
     {
       "id": 12,
       "stage": 1,
       "type": "reading_card",
-      "title": "티끌 모아 태산",
-      "title_kr": "속담 7",
-      "body": "Literal meaning: 'Gather dust and it becomes a great mountain (Taesan).' English equivalent: 'Every little bit counts' / 'Small streams make great rivers.' Used to encourage saving small amounts or making small consistent efforts.",
-      "tip": {
-        "icon": "⛰️",
-        "label": "Saving culture",
-        "text": "This proverb is often used to encourage saving money: 티끌 모아 태산이에요 (Every little bit counts). The 적금 (savings account) culture in Korea is strongly supported by this mindset."
-      },
-      "body_ja": "直訳：「塵も積もれば泰山となる」。英語の「塵も積もれば山となる」に相当します。少額の貯蓄や小さな継続的な努力を促すときに使われます。",
-      "tip_ja": {
-        "label": "貯蓄文化",
-        "text": "このことわざはお金を貯めることを促すためによく使われます：티끌 모아 태산이에요（塵も積もれば山となる）。韓国の적금（定期預金）文化はこの考え方に強く支えられています。"
-      }
+      "title": "아는 길도 물어가라",
+      "title_kr": "아는 길도 물어가라",
+      "title_zh_tw": "知路也須再問一問",
+      "body": "Meaning: Even on a path you know, ask for directions. English equivalent: 'Better safe than sorry' / 'There's no harm in asking.'",
+      "body_zh_tw": "含義：就算是認識的路，也要問一問。英語對應：「謹慎勝於後悔」／「問一問不費事」。",
+      "rules": [
+        "아는 길 = a path you know",
+        "물어가라 = ask (your way)",
+        "Encourages checking even when confident",
+        "Values humility and double-checking"
+      ],
+      "rules_zh_tw": [
+        "아는 길＝你認識的路",
+        "물어가라＝問清楚再走",
+        "鼓勵即使有把握也要再確認",
+        "體現謙遜和謹慎的價值觀"
+      ],
+      "body_ja": "意味：知っている道でも聞いて行け。英語のことわざ：「Better safe than sorry.（後悔するより慎重に）」",
+      "title_es": "Más vale prevenir que lamentar",
+      "body_es": "Significado: Incluso en un camino que conoces, pregunta las indicaciones. Equivalente en español: \"Más vale prevenir que lamentar\" / \"Nunca está de más preguntar\".",
+      "rules_es": [
+        "aneun gil = un camino que conoces",
+        "mureogara = pregunta (el camino)",
+        "Anima a verificar incluso cuando tienes confianza",
+        "Valora la humildad y la doble comprobación"
+      ]
     },
     {
       "id": 13,
       "stage": 1,
       "type": "reading_card",
-      "title": "시작이 반이다",
-      "title_kr": "속담 8",
-      "body": "Literal meaning: 'Starting is half the battle.' English equivalent: 'Well begun is half done.' This proverb emphasizes that overcoming inertia and starting is the hardest part — once you begin, the rest follows more naturally.",
-      "tip": {
-        "icon": "🚀",
-        "label": "Overcoming procrastination",
-        "text": "Koreans use this proverb to motivate themselves and others against procrastination. If you feel stuck, remember: 시작이 반이에요! Just starting puts you halfway there."
-      },
-      "body_ja": "直訳：「始めることは半分の戦い」。英語の「始めは半ば」に相当します。惰性を克服して始めることが最も難しく、一度始めれば残りは自然についてくるということを強調するこことわざです。",
-      "tip_ja": {
-        "label": "先延ばしを克服する",
-        "text": "韓国人はこのことわざを自分自身や他者が先延ばしに対して動機づけるために使います。行き詰まりを感じたら思い出しましょう：시작이 반이에요！始めるだけで半分終わりです。"
-      }
+      "title": "하늘이 무너져도 솟아날 구멍이 있다",
+      "title_kr": "하늘이 무너져도 솟아날 구멍이 있다",
+      "title_zh_tw": "天無絕人之路",
+      "body": "Meaning: Even if the sky collapses, there will be a hole to escape through. English equivalent: 'Every cloud has a silver lining' / 'Where there's a will, there's a way.'",
+      "body_zh_tw": "含義：就算天塌下來，也有洞可以鑽出去。英語對應：「每朵烏雲都有銀邊」／「有志者，事竟成」。",
+      "rules": [
+        "하늘이 무너져도 = even if the sky collapses",
+        "솟아날 = that you can escape through",
+        "구멍 = hole / opening",
+        "Strong expression of hope in the worst circumstances"
+      ],
+      "rules_zh_tw": [
+        "하늘이 무너져도＝就算天塌下來",
+        "솟아날＝可以鑽出去的",
+        "구멍＝洞口",
+        "在最糟糕的情況下表達希望的有力說法"
+      ],
+      "body_ja": "意味：天が崩れても逃げ出す穴はある。英語のことわざ：「Every cloud has a silver lining.（悪いことの中にも良いことはある）」",
+      "title_es": "No hay mal que por bien no venga",
+      "body_es": "Significado: Aunque el cielo se derrumbe, habrá un agujero por donde escapar. Equivalente en español: \"No hay mal que por bien no venga\" / \"Donde hay voluntad, hay un camino\".",
+      "rules_es": [
+        "haneuri muneojyeodo = aunque el cielo se derrumbe",
+        "sosananal = por el que puedes escapar",
+        "gumeong = agujero / apertura",
+        "Fuerte expresión de esperanza en las peores circunstancias"
+      ]
     },
     {
       "id": 14,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "고생 끝에 낙이 온다 means...",
+      "prompt": "고생 끝에 낙이 온다 is closest to...",
+      "prompt_zh_tw": "고생 끝에 낙이 온다 最接近哪個說法？",
       "choices": [
-        "Good words bring good words back",
-        "Habits from childhood last a lifetime",
-        "After hardship, joy comes",
-        "The navel is bigger than the belly"
+        "No pain, no gain",
+        "Empty vessels make noise",
+        "Speak of the devil",
+        "Every step counts"
+      ],
+      "choices_zh_tw": [
+        "苦盡甘來（沒有付出就沒有收穫）",
+        "空桶響聲大",
+        "說曹操，曹操到",
+        "每一步都重要"
       ],
       "choices_ja": [
-        "よい言葉はよい言葉を返す",
-        "三つ子の魂百まで",
-        "苦あれば楽あり",
-        "お腹がへそより大きい（本末転倒）"
+        "No pain, no gain（苦あれば楽あり）",
+        "空き缶はよく鳴る",
+        "噂をすれば影",
+        "一歩一歩が大切"
       ],
-      "correct": "After hardship, joy comes",
-      "prompt_ja": "고생 끝에 낙이 온다の意味は？"
+      "correct": "No pain, no gain",
+      "prompt_ja": "고생 끝에 낙이 온다 に最も近いことわざは？",
+      "prompt_es": "고생 끝에 낙이 온다 se acerca más a...",
+      "choices_es": [
+        "Sin dolor no hay recompensa",
+        "El que mucho habla poco hace",
+        "Hablando del rey de Roma...",
+        "Cada paso cuenta"
+      ]
     },
     {
       "id": 15,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "눈이 높다 literally means 'eyes are high' but idiomatically means...",
+      "prompt": "원숭이도 나무에서 떨어진다 means...",
+      "prompt_zh_tw": "원숭이도 나무에서 떨어진다 的意思是……",
       "choices": [
-        "Being physically tall",
-        "Having high standards / being picky",
-        "Feeling proud",
-        "Watching carefully"
+        "Monkeys are dangerous",
+        "Even experts make mistakes",
+        "Practice makes perfect",
+        "Avoid tall trees"
+      ],
+      "choices_zh_tw": [
+        "猴子很危險",
+        "即使是專家也會犯錯",
+        "熟能生巧",
+        "避免爬高樹"
       ],
       "choices_ja": [
-        "身長が高いこと",
-        "目が高い・こだわりが強い",
-        "誇りを感じること",
-        "よく見守ること"
+        "猿は危険",
+        "専門家でもミスをする",
+        "練習が大切",
+        "高い木には登るな"
       ],
-      "correct": "Having high standards / being picky",
-      "prompt_ja": "눈이 높다は直訳「目が高い」ですが、慣用的には？"
+      "correct": "Even experts make mistakes",
+      "prompt_ja": "원숭이도 나무에서 떨어진다 の意味は？",
+      "prompt_es": "원숭이도 나무에서 떨어진다 significa...",
+      "choices_es": [
+        "Los monos son peligrosos",
+        "Incluso los expertos cometen errores",
+        "La práctica hace al maestro",
+        "Evita los árboles altos"
+      ]
     },
     {
       "id": 16,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "시작이 반이다 means...",
+      "prompt": "천 리 길도 한 걸음부터 encourages you to...",
+      "prompt_zh_tw": "천 리 길도 한 걸음부터 在鼓勵你……",
       "choices": [
-        "The beginning is the hardest",
-        "Starting is half the battle",
-        "Half is better than nothing",
-        "A good start needs a good end"
+        "Walk faster",
+        "Start with the first step",
+        "Plan everything carefully",
+        "Ask for help"
+      ],
+      "choices_zh_tw": [
+        "走快一點",
+        "從第一步開始",
+        "仔細規劃一切",
+        "尋求幫助"
       ],
       "choices_ja": [
-        "始まりが一番難しい",
-        "始めれば半ば完成",
-        "半分でも何もないよりいい",
-        "よい始まりにはよい結末が必要"
+        "もっと速く歩く",
+        "まず一歩を踏み出す",
+        "すべてを計画する",
+        "助けを求める"
       ],
-      "correct": "Starting is half the battle",
-      "prompt_ja": "시작이 반이다の意味は？"
+      "correct": "Start with the first step",
+      "prompt_ja": "천 리 길도 한 걸음부터 が促すのは？",
+      "prompt_es": "천 리 길도 한 걸음부터 te alienta a...",
+      "choices_es": [
+        "Caminar más rápido",
+        "Comenzar con el primer paso",
+        "Planificarlo todo cuidadosamente",
+        "Pedir ayuda"
+      ]
     },
     {
       "id": 17,
@@ -312,9 +526,13 @@
       "type": "lesson_complete",
       "title": "Proverbs Complete!",
       "title_kr": "속담 완성!",
-      "message": "Impressive! Korean proverbs are windows into the culture's soul — perseverance, relationships, and wisdom. Try using one in conversation: even a single proverb earns deep respect from Korean speakers.",
-      "next_url": "vocabulary.html?cat=academic",
-      "message_ja": "素晴らしい！韓国のことわざは文化の魂への窓―忍耐・人間関係・知恵。会話でひとつ使ってみましょう：一つのことわざを使うだけで韓国語話者から深い敬意を得られます。"
+      "title_zh_tw": "諺語完成！",
+      "message": "정말 대단해요! You've completed the proverbs lesson — the deepest dive into Korean culture in this course. These 속담 carry centuries of Korean wisdom. Drop one into a conversation and watch the reaction — it will be unforgettable.",
+      "message_zh_tw": "정말 대단해요！你完成了諺語課程——這是本課程中最深入的韓國文化探索。這些속담蘊含著數百年的韓國智慧。在對話中引用一個，看看對方的反應——那將是令人難忘的時刻。",
+      "next_url": "vocabulary.html",
+      "message_ja": "정말 대단해요！このコースで最も深い韓国文化の探求、ことわざレッスンを修了しました！これらの속담には何世紀もの韓国の知恵が詰まっています。会話で一つ使ってみれば、きっと忘れられない反応が返ってきますよ。",
+      "title_es": "¡Proverbios Completados!",
+      "message_es": "정말 대단해요! Has completado la lección de proverbios — la inmersión más profunda en la cultura coreana de este curso. Estos 속담 llevan siglos de sabiduría coreana. ¡Lánzalo en una conversación y observa la reacción — será inolvidable!"
     }
   ]
 }

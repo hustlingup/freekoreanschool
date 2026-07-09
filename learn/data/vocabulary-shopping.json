@@ -8,7 +8,8 @@
       "name_kr": "쇼핑",
       "first_step": 1,
       "last_step": 21,
-      "time_minutes": 12
+      "time_minutes": 13,
+      "name_es": "Compras"
     }
   ],
   "steps": [
@@ -16,18 +17,30 @@
       "id": 1,
       "stage": 1,
       "type": "reading_card",
-      "title": "Shopping in Korean",
-      "title_kr": "쇼핑",
-      "body": "Korea is a shopper's paradise — from Dongdaemun's 24-hour fashion markets to sleek duty-free department stores and Olive Young K-beauty chains. The most important phrase: 얼마예요? (How much is it?). Most stores accept card payments, and bargaining is possible at traditional markets.",
+      "title": "Shopping in Korea",
+      "title_kr": "한국에서 쇼핑",
+      "title_zh_tw": "在韓國購物",
+      "body": "Korea is a shopping paradise — from sprawling traditional markets to cutting-edge malls. Whether you're hunting for skincare, fashion, or electronics, these vocabulary words will power every shopping interaction.",
+      "body_zh_tw": "韓國是購物天堂——從廣大的傳統市場到尖端購物中心應有盡有。無論你在尋找護膚品、時尚單品還是電子產品，這些詞彙都能幫助你完成每一次購物互動。",
       "tip": {
-        "icon": "🛒",
-        "label": "Market culture",
-        "text": "At traditional markets (시장, sijang), asking 깎아 주세요 (Please lower the price) is expected and welcome. At department stores, prices are fixed. Knowing the difference avoids awkward moments."
+        "icon": "🛍️",
+        "label": "Key shopping phrases",
+        "text": "얼마예요? (How much is it?) — the single most useful shopping question. 깎아 주세요 (Please give me a discount) — works at traditional markets!"
       },
-      "body_ja": "韓国は買い物天国―東大門の24時間ファッションマーケットから洗練された免税デパート、オリーブヤングのK-ビューティーチェーンまで。最重要フレーズ：얼마예요？（いくらですか？）。ほとんどの店でカード払い可能で、伝統市場では値引き交渉もできます。",
+      "tip_zh_tw": {
+        "label": "購物關鍵句型",
+        "text": "얼마예요？（多少錢？）——最實用的購物問句。깎아 주세요（請打折）——在傳統市場很好用！"
+      },
+      "body_ja": "韓国はショッピング天国です。伝統市場から最先端モールまで揃っています。スキンケア・ファッション・電子機器、何を探すにもこれらの語彙が役立ちます。",
       "tip_ja": {
-        "label": "市場文化",
-        "text": "伝統市場（시장）では깎아 주세요（値引きしてください）と言うのが当然でむしろ歓迎されます。デパートは定価制です。違いを知ることで気まずい思いをしません。"
+        "label": "買い物の重要フレーズ",
+        "text": "얼마예요？（おいくらですか？）― 最重要な買い物フレーズ。깎아 주세요（値引きしてください）― 伝統市場では効果的！"
+      },
+      "title_es": "Compras en Corea",
+      "body_es": "Corea es un paraíso de las compras — desde enormes mercados tradicionales hasta centros comerciales de vanguardia. Ya sea que busques cuidado de la piel, moda o electrónica, estas palabras te acompañarán en cada interacción de compra.",
+      "tip_es": {
+        "label": "Frases clave de compras",
+        "text": "얼마예요? (¿Cuánto cuesta?) — la pregunta de compra más útil. 깎아 주세요 (¡Por favor, hágame descuento!) — ¡funciona en los mercados tradicionales!"
       }
     },
     {
@@ -35,118 +48,54 @@
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "얼",
-        "마",
-        "예",
-        "요"
+        "쇼",
+        "핑"
       ],
-      "romanization": "eolmayeyo",
-      "katakana": "オルマエヨ",
-      "audio": "얼마예요",
-      "meaning": "How much is it? — the most essential shopping phrase",
-      "meaning_ja": "いくらですか？― ショッピングで最重要フレーズ"
+      "romanization": "syoping",
+      "zhuyin": "ㄒㄧㄠ·ㄆㄧㄥ",
+      "katakana": "ショピン",
+      "audio": "쇼핑",
+      "meaning": "Shopping — from English 'shopping'",
+      "meaning_zh_tw": "購物——來自英語「shopping」",
+      "meaning_ja": "ショッピング ― 英語の shopping から",
+      "meaning_es": "Compras — del inglés \"shopping\""
     },
     {
       "id": 3,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "사",
-        "다"
+        "가",
+        "격"
       ],
-      "romanization": "sada",
-      "katakana": "サダ",
-      "audio": "사다",
-      "meaning": "To buy — 이거 살게요 = I'll buy this",
-      "meaning_ja": "買う ― 이거 살게요（これを買います）"
+      "romanization": "gagyeok",
+      "zhuyin": "ㄍㄚ·ㄍㄧㄜ",
+      "katakana": "カギョク",
+      "audio": "가격",
+      "meaning": "Price — 가격이 얼마예요? = How much is the price?",
+      "meaning_zh_tw": "價格——가격이 얼마예요？＝這個多少錢？",
+      "meaning_ja": "値段・価格 ― 가격이 얼마예요？（値段はいくらですか？）",
+      "meaning_es": "Precio — 가격이 얼마예요? = ¿Cuánto cuesta?"
     },
     {
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "팔",
-        "다"
+        "할",
+        "인"
       ],
-      "romanization": "palda",
-      "katakana": "パルダ",
-      "audio": "팔다",
-      "meaning": "To sell — 뭐 파세요? = What do you sell?",
-      "meaning_ja": "売る ― 뭐 파세요？（何を売っていますか？）"
+      "romanization": "halin",
+      "zhuyin": "ㄏㄚㄌ·ㄧㄣ",
+      "katakana": "ハリン",
+      "audio": "할인",
+      "meaning": "Discount — 할인 있어요? = Is there a discount?",
+      "meaning_zh_tw": "折扣——할인 있어요？＝有折扣嗎？",
+      "meaning_ja": "割引 ― 할인 있어요？（割引はありますか？）",
+      "meaning_es": "Descuento — 할인 있어요? = ¿Hay descuento?"
     },
     {
       "id": 5,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "싸",
-        "다"
-      ],
-      "romanization": "ssada",
-      "katakana": "サダ",
-      "audio": "싸다",
-      "meaning": "Cheap / inexpensive — 너무 싸요! = It's so cheap!",
-      "meaning_ja": "安い ― 너무 싸요！（すごく安い！）"
-    },
-    {
-      "id": 6,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "비",
-        "싸",
-        "다"
-      ],
-      "romanization": "bissada",
-      "katakana": "ピサダ",
-      "audio": "비싸다",
-      "meaning": "Expensive — 너무 비싸요 = It's too expensive",
-      "meaning_ja": "高い（価格）― 너무 비싸요（高すぎます）"
-    },
-    {
-      "id": 7,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "계",
-        "산"
-      ],
-      "romanization": "gyesan",
-      "katakana": "ケサン",
-      "audio": "계산",
-      "meaning": "Payment / checkout — 계산해주세요 = Please ring this up",
-      "meaning_ja": "お会計 / 支払い ― 계산해주세요（お会計をお願いします）"
-    },
-    {
-      "id": 8,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "카",
-        "드"
-      ],
-      "romanization": "kadeu",
-      "katakana": "カドゥ",
-      "audio": "카드",
-      "meaning": "Card (credit/debit) — 카드 돼요? = Do you accept card?",
-      "meaning_ja": "カード（クレジット/デビット）― 카드 돼요？（カードは使えますか？）"
-    },
-    {
-      "id": 9,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "현",
-        "금"
-      ],
-      "romanization": "hyeongeum",
-      "katakana": "ヒョングム",
-      "audio": "현금",
-      "meaning": "Cash — 현금밖에 없어요 = I only have cash",
-      "meaning_ja": "現金 ― 현금밖에 없어요（現金しかありません）"
-    },
-    {
-      "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -154,42 +103,51 @@
         "수",
         "증"
       ],
-      "romanization": "yeongsujeung",
+      "romanization": "yeongsujjeung",
+      "zhuyin": "ㄧㄥ·ㄙㄨ·ㄓㄜㄥ",
       "katakana": "ヨンスジュン",
       "audio": "영수증",
-      "meaning": "Receipt — 영수증 주세요 = Please give me a receipt",
-      "meaning_ja": "レシート ― 영수증 주세요（レシートをください）"
+      "meaning": "Receipt",
+      "meaning_zh_tw": "收據",
+      "meaning_ja": "レシート・領収書",
+      "meaning_es": "Recibo / comprobante"
     },
     {
-      "id": 11,
+      "id": 6,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "할",
-        "인"
+        "카",
+        "드"
       ],
-      "romanization": "harin",
-      "katakana": "ハリン",
-      "audio": "할인",
-      "meaning": "Discount — 할인 있어요? = Is there a discount?",
-      "meaning_ja": "割引 ― 할인 있어요？（割引はありますか？）"
+      "romanization": "kadeu",
+      "zhuyin": "ㄎㄚ·ㄉㄜ",
+      "katakana": "カドゥ",
+      "audio": "카드",
+      "meaning": "Card — credit/debit card; Korea is extremely card-friendly",
+      "meaning_zh_tw": "卡片——信用卡/金融卡；韓國極度便利的刷卡環境",
+      "meaning_ja": "カード ― クレジット/デビットカード；韓国はカード社会",
+      "meaning_es": "Tarjeta — crédito/débito; Corea es muy amigable con las tarjetas"
     },
     {
-      "id": 12,
+      "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "교",
-        "환"
+        "현",
+        "금"
       ],
-      "romanization": "gyohwan",
-      "katakana": "キョファン",
-      "audio": "교환",
-      "meaning": "Exchange (product) — 교환할 수 있어요? = Can I exchange this?",
-      "meaning_ja": "交換（商品）― 교환할 수 있어요？（交換できますか？）"
+      "romanization": "hyeongeum",
+      "zhuyin": "ㄏㄧㄝㄣ·ㄍㄜㄇ",
+      "katakana": "ヒョングム",
+      "audio": "현금",
+      "meaning": "Cash — 현금으로 낼게요 = I'll pay in cash",
+      "meaning_zh_tw": "現金——현금으로 낼게요＝我用現金付",
+      "meaning_ja": "現金 ― 현금으로 낼게요（現金で払います）",
+      "meaning_es": "Efectivo — 현금으로 낼게요 = Pagaré en efectivo"
     },
     {
-      "id": 13,
+      "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -197,13 +155,33 @@
         "불"
       ],
       "romanization": "hwanbul",
+      "zhuyin": "ㄏㄨㄢ·ㄅㄨㄌ",
       "katakana": "ファンブル",
       "audio": "환불",
-      "meaning": "Refund — 환불해 주세요 = Please give me a refund",
-      "meaning_ja": "返金 ― 환불해 주세요（返金してください）"
+      "meaning": "Refund — 환불 돼요? = Can I get a refund?",
+      "meaning_zh_tw": "退款——환불 돼요？＝可以退款嗎？",
+      "meaning_ja": "返金・払い戻し ― 환불 돼요？（返金できますか？）",
+      "meaning_es": "Devolución / reembolso — 환불 돼요? = ¿Puedo hacer una devolución?"
     },
     {
-      "id": 14,
+      "id": 9,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "교",
+        "환"
+      ],
+      "romanization": "gyohwan",
+      "zhuyin": "ㄍㄧㄠ·ㄏㄨㄢ",
+      "katakana": "キョファン",
+      "audio": "교환",
+      "meaning": "Exchange (of goods) — 교환 돼요? = Can I exchange this?",
+      "meaning_zh_tw": "換貨——교환 돼요？＝可以換貨嗎？",
+      "meaning_ja": "交換（商品）― 교환 돼요？（交換できますか？）",
+      "meaning_es": "Cambio (de productos) — 교환 돼요? = ¿Puedo cambiarlo?"
+    },
+    {
+      "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -212,30 +190,86 @@
         "즈"
       ],
       "romanization": "saijeu",
-      "katakana": "サイジュ",
+      "zhuyin": "ㄙㄚ·ㄧ·ㄓㄜ",
+      "katakana": "サイズ",
       "audio": "사이즈",
-      "meaning": "Size — 이 사이즈 있어요? = Do you have this size?",
-      "meaning_ja": "サイズ ― 이 사이즈 있어요？（このサイズはありますか？）"
+      "meaning": "Size — from English 'size'",
+      "meaning_zh_tw": "尺寸——來自英語「size」",
+      "meaning_ja": "サイズ ― 英語の size から",
+      "meaning_es": "Talla / tamaño — del inglés \"size\""
     },
     {
-      "id": 15,
+      "id": 11,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "깎",
-        "아",
-        "주",
-        "세",
-        "요"
+        "시",
+        "장"
       ],
-      "romanization": "kkakka juseyo",
-      "katakana": "カッカ チュセヨ",
-      "audio": "깎아 주세요",
-      "meaning": "Please lower the price — the essential market bargaining phrase",
-      "meaning_ja": "値引きしてください ― 市場での値段交渉フレーズ"
+      "romanization": "sijang",
+      "zhuyin": "ㄙㄧ·ㄓㄤ",
+      "katakana": "シジャン",
+      "audio": "시장",
+      "meaning": "Traditional market — Namdaemun and Dongdaemun are famous examples",
+      "meaning_zh_tw": "傳統市場——南大門和東大門是著名的例子",
+      "meaning_ja": "市場・市街 ― 南大門・東大門が有名",
+      "meaning_es": "Mercado tradicional — Namdaemun y Dongdaemun son ejemplos famosos"
     },
     {
-      "id": 16,
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "백",
+        "화",
+        "점"
+      ],
+      "romanization": "baekhwajeom",
+      "zhuyin": "ㄅㄝ·ㄏㄨㄚ·ㄓㄜㄇ",
+      "katakana": "ペクファジョム",
+      "audio": "백화점",
+      "meaning": "Department store — literally 'hundred goods store'",
+      "meaning_zh_tw": "百貨公司——字面意思是「百貨商店」",
+      "meaning_ja": "デパート ― 文字通り「百の商品の店」",
+      "meaning_es": "Grandes almacenes / tienda por departamentos — literalmente \"tienda de cien productos\""
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "면",
+        "세",
+        "점"
+      ],
+      "romanization": "myeonsejeom",
+      "zhuyin": "ㄇㄧㄢ·ㄙㄝ·ㄓㄜㄇ",
+      "katakana": "ミョンセジョム",
+      "audio": "면세점",
+      "meaning": "Duty-free shop — huge in Korean airports and tourist areas",
+      "meaning_zh_tw": "免稅店——在韓國機場和旅遊區非常普遍",
+      "meaning_ja": "免税店 ― 韓国の空港・観光地に多い",
+      "meaning_es": "Tienda libre de impuestos — muy común en aeropuertos y zonas turísticas de Corea"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "물",
+        "건"
+      ],
+      "romanization": "mulgeon",
+      "zhuyin": "ㄇㄨㄌ·ㄍㄜㄣ",
+      "katakana": "ムルゴン",
+      "audio": "물건",
+      "meaning": "Item / product / thing",
+      "meaning_zh_tw": "物品 / 商品 / 東西",
+      "meaning_ja": "物・商品・品物",
+      "meaning_es": "Artículo / producto / cosa"
+    },
+    {
+      "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -243,78 +277,130 @@
         "장"
       ],
       "romanization": "pojang",
+      "zhuyin": "ㄆㄛ·ㄓㄤ",
       "katakana": "ポジャン",
       "audio": "포장",
-      "meaning": "Wrapping / takeaway — 포장해 주세요 = Please wrap it / I'll take it to go",
-      "meaning_ja": "包装 / 持ち帰り ― 포장해 주세요（包んでください／持ち帰りで）"
+      "meaning": "Packaging / gift wrap — 포장해 주세요 = Please gift-wrap it",
+      "meaning_zh_tw": "包裝 / 禮品包裝——포장해 주세요＝請幫我包裝",
+      "meaning_ja": "包装・ラッピング ― 포장해 주세요（包装してください）",
+      "meaning_es": "Embalaje / envoltorio de regalo — 포장해 주세요 = Por favor, envuélvalo para regalo"
+    },
+    {
+      "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "세",
+        "일"
+      ],
+      "romanization": "seil",
+      "zhuyin": "ㄙㄝ·ㄧㄌ",
+      "katakana": "セイル",
+      "audio": "세일",
+      "meaning": "Sale — from English 'sale'; also 할인 행사",
+      "meaning_zh_tw": "特賣 / 促銷——來自英語「sale」；也說 할인 행사",
+      "meaning_ja": "セール ― 英語の sale から；할인 행사 とも言う",
+      "meaning_es": "Oferta / venta — del inglés \"sale\"; también 할인 행사"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "You want to know the price. What do you say?",
+      "prompt": "얼마예요? means...",
+      "prompt_zh_tw": "얼마예요？的意思是……",
       "choices": [
-        "사이즈 있어요?",
-        "얼마예요?",
-        "영수증 주세요",
-        "할인 있어요?"
+        "Do you have a discount?",
+        "How much is it?",
+        "Can I get a refund?",
+        "Where is the restroom?"
       ],
-      "correct": "얼마예요?",
-      "prompt_ja": "値段を聞きたいとき、何と言いますか？"
+      "choices_zh_tw": [
+        "有折扣嗎？",
+        "多少錢？",
+        "可以退款嗎？",
+        "洗手間在哪裡？"
+      ],
+      "choices_ja": [
+        "割引はありますか？",
+        "いくらですか？",
+        "返金できますか？",
+        "トイレはどこですか？"
+      ],
+      "correct": "How much is it?",
+      "prompt_ja": "얼마예요？はどういう意味ですか？",
+      "prompt_es": "얼마예요? significa...",
+      "choices_es": [
+        "¿Hay descuento?",
+        "¿Cuánto cuesta?",
+        "¿Puedo hacer una devolución?",
+        "¿Dónde está el baño?"
+      ]
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "At a traditional market, which phrase can you use to negotiate?",
+      "prompt": "백화점 literally means...",
+      "prompt_zh_tw": "백화점 的字面意思是……",
       "choices": [
-        "영수증 주세요",
-        "깎아 주세요",
-        "포장해 주세요",
-        "환불해 주세요"
+        "Big store",
+        "Hundred goods store",
+        "Market place",
+        "Fashion center"
       ],
-      "correct": "깎아 주세요",
-      "prompt_ja": "伝統市場で値引き交渉に使えるフレーズは？"
+      "choices_zh_tw": [
+        "大商店",
+        "百貨商店",
+        "市場",
+        "時尚中心"
+      ],
+      "choices_ja": [
+        "大きな店",
+        "百の商品の店",
+        "市場",
+        "ファッションセンター"
+      ],
+      "correct": "Hundred goods store",
+      "prompt_ja": "백화점 の文字通りの意味は？",
+      "prompt_es": "백화점 literalmente significa...",
+      "choices_es": [
+        "Tienda grande",
+        "Tienda de cien productos",
+        "Mercado",
+        "Centro de moda"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "The item doesn't fit. You want to swap it for a different one. You ask for...",
+      "prompt": "You want a refund. What do you say?",
+      "prompt_zh_tw": "你想退款。你說什麼？",
       "choices": [
-        "할인 (discount)",
-        "환불 (refund)",
-        "교환 (exchange)",
-        "계산 (payment)"
+        "할인 있어요?",
+        "포장해 주세요",
+        "환불 돼요?",
+        "영수증 주세요"
       ],
-      "choices_ja": [
-        "할인（割引）",
-        "환불（返金）",
-        "교환（交換）",
-        "계산（支払い）"
-      ],
-      "correct": "교환 (exchange)",
-      "prompt_ja": "サイズが合いません。別のものと交換したいときに頼む言葉は？"
+      "correct": "환불 돼요?",
+      "prompt_ja": "返金してほしいとき、何と言いますか？",
+      "prompt_es": "Quieres una devolución. ¿Qué dices?"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "비싸다 means...",
+      "prompt": "Which of these is a traditional Korean market?",
+      "prompt_zh_tw": "以下哪個是韓國傳統市場？",
       "choices": [
-        "Cheap",
-        "Expensive",
-        "Free",
-        "On sale"
+        "백화점",
+        "면세점",
+        "시장",
+        "마트"
       ],
-      "choices_ja": [
-        "安い",
-        "高い",
-        "無料",
-        "セール中"
-      ],
-      "correct": "Expensive",
-      "prompt_ja": "비싸다はどういう意味ですか？"
+      "correct": "시장",
+      "prompt_ja": "次のうち、韓国の伝統市場はどれですか？",
+      "prompt_es": "¿Cuál de estos es un mercado tradicional coreano?"
     },
     {
       "id": 21,
@@ -322,9 +408,13 @@
       "type": "lesson_complete",
       "title": "Shopping Complete!",
       "title_kr": "쇼핑 완성!",
-      "message": "쇼핑 즐기세요! You're ready to shop in Korea — from bargaining at Namdaemun Market to smoothly paying at a department store. Your wallet will thank you for knowing 비싸요 and 싸요!",
+      "title_zh_tw": "購物詞彙完成！",
+      "message": "쇼핑 실력이 늘었어요! (Your shopping skills have improved!) You're now armed for any Korean shopping adventure — from the buzzing Namdaemun Market to the glitzy Lotte World Mall.",
+      "message_zh_tw": "쇼핑 실력이 늘었어요！（你的購物技能提升了！）你現在已準備好迎接任何韓國購物冒險——從熙熙攘攘的南大門市場到璀璨的樂天世界購物中心。",
       "next_url": "vocabulary.html?cat=weather",
-      "message_ja": "쇼핑 즐기세요！韓国でのショッピングの準備ができました―南大門市場での値引き交渉からデパートでのスムーズな決済まで。비싸요と싸요を知っていれば財布も助かります！"
+      "message_ja": "쇼핑 실력이 늘었어요！（買い物スキルが上がりました！）南大門市場からロッテワールドモールまで、あらゆる韓国の買い物シーンに備えられました。",
+      "title_es": "¡Compras Completadas!",
+      "message_es": "쇼핑 실력이 늘었어요! (¡Tu habilidad para las compras ha mejorado!) Ahora estás listo/a para cualquier aventura de compras coreana — desde el bullicioso Mercado Namdaemun hasta el lujoso Lotte World Mall."
     }
   ]
 }

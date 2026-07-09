@@ -1,0 +1,18 @@
+# Internal / dev files — never deploy to production (AdSense low-value-content guard)
+.agents
+.claude
+.github
+.env
+.env.*
+node_modules
+adsense
+docs
+translation
+scripts
+admin
+dev.js
+package.json
+package-lock.json
+skills-lock.json
+CLAUDE.md
+*.md

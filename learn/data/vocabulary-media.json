@@ -4,11 +4,12 @@
   "stages": [
     {
       "id": 1,
-      "name": "Media & K-Culture",
-      "name_kr": "미디어·한류",
+      "name": "Media & Entertainment",
+      "name_kr": "미디어와 엔터테인먼트",
       "first_step": 1,
       "last_step": 21,
-      "time_minutes": 12
+      "time_minutes": 13,
+      "name_es": "Medios y Entretenimiento"
     }
   ],
   "steps": [
@@ -16,18 +17,30 @@
       "id": 1,
       "stage": 1,
       "type": "reading_card",
-      "title": "K-Culture Media Vocabulary",
-      "title_kr": "한류 미디어 어휘",
-      "body": "The Korean Wave (한류, Hallyu) has spread Korean pop culture worldwide through music, dramas, films, and beauty. Understanding media vocabulary lets you discuss K-pop, K-dramas, and Korean entertainment in Korean — the native context where these words live.",
+      "title": "Korean Media & Entertainment",
+      "title_kr": "한국 미디어와 엔터테인먼트",
+      "title_zh_tw": "韓國媒體與娛樂",
+      "body": "The Korean Wave (한류, Hallyu) has made Korean media a global phenomenon. K-pop, K-drama, and Korean films are enjoyed in every country. Understanding media vocabulary will help you engage more deeply with the content you love and discuss it with Korean fans.",
+      "body_zh_tw": "韓流（한류，Hallyu）使韓國媒體成為全球現象。K-pop、K劇和韓國電影在世界各地都廣受喜愛。理解媒體詞彙將幫助你更深入地參與你喜愛的內容，並與韓國粉絲交流。",
       "tip": {
         "icon": "🎬",
-        "label": "Fan culture vocabulary",
-        "text": "Korean fan culture has its own rich vocabulary: 팬 (fan), 팬덤 (fandom), 덕후/덕 (passionate fan/otaku), 최애 (favorite/number one), 스밍 (streaming for chart rankings). These words are used daily on social media."
+        "label": "Talking about K-content",
+        "text": "드라마 봤어요? = Did you watch the drama? 요즘 뭐 봐요? = What are you watching these days? 재미있어요 = It's interesting. 감동받았어요 = I was moved. 다음 편이 기대돼요 = I'm looking forward to the next episode."
       },
-      "body_ja": "韓流（한류、ハルリュ）は音楽・ドラマ・映画・美容を通じて世界にK-ポップカルチャーを広めました。メディア語彙を理解すれば、K-ポップ・K-ドラマ・韓国エンターテインメントについて韓国語で語れるようになります。",
+      "tip_zh_tw": {
+        "label": "聊K內容",
+        "text": "드라마 봤어요？＝你看那部劇了嗎？요즘 뭐 봐요？＝你最近在看什麼？재미있어요＝很有趣。감동받았어요＝我很感動。다음 편이 기대돼요＝我很期待下一集。"
+      },
+      "body_ja": "韓流（한류、ハルリュ）は韓国メディアを世界的な現象にしました。K-pop・K-ドラマ・韓国映画はあらゆる国で楽しまれています。メディア語彙を知ると好きなコンテンツにより深く入り込み、韓国ファンと語り合えます。",
       "tip_ja": {
-        "label": "ファン文化の語彙",
-        "text": "韓国ファン文化には独自の豊かな語彙があります：팬（ファン）・팬덤（ファンダム）・덕후/덕（オタク）・최애（最推し）・스밍（チャートのためのストリーミング）。これらの言葉はSNSで毎日使われています。"
+        "label": "Kコンテンツについて話す",
+        "text": "드라마 봤어요？（ドラマ見ましたか？）요즘 뭐 봐요？（最近何見てますか？）재미있어요（面白い）감동받았어요（感動した）다음 편이 기대돼요（次の回が楽しみです）"
+      },
+      "title_es": "Medios y Entretenimiento Coreano",
+      "body_es": "La Ola Coreana (한류, Hallyu) ha convertido los medios coreanos en un fenómeno mundial. El K-pop, los K-dramas y las películas coreanas se disfrutan en todos los países. Entender el vocabulario de medios te ayudará a conectar más profundamente con el contenido que amas y a comentarlo con fans coreanos.",
+      "tip_es": {
+        "label": "Hablar sobre contenido K",
+        "text": "드라마 봤어요? = ¿Viste el drama? 요즘 뭐 봐요? = ¿Qué estás viendo últimamente? 재미있어요 = Es interesante. 감동받았어요 = Me conmovió. 다음 편이 기대돼요 = Tengo ganas de ver el próximo episodio."
       }
     },
     {
@@ -39,14 +52,34 @@
         "라",
         "마"
       ],
-      "romanization": "deurama",
-      "katakana": "トゥラマ",
+      "romanization": "deulama",
+      "zhuyin": "ㄉㄜ·ㄌㄚ·ㄇㄚ",
+      "katakana": "ドラマ",
       "audio": "드라마",
-      "meaning": "Drama (K-drama) — 드라마 봐요? (Do you watch dramas?)",
-      "meaning_ja": "ドラマ（韓ドラ）― 드라마 봐요？（ドラマを見ますか？）"
+      "meaning": "Drama / TV series — from English 'drama'",
+      "meaning_zh_tw": "韓劇／電視劇——來自英語「drama」",
+      "meaning_ja": "ドラマ ― 英語 drama から",
+      "meaning_es": "Drama / serie de TV — del inglés \"drama\""
     },
     {
       "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "영",
+        "화"
+      ],
+      "romanization": "yeonghwa",
+      "zhuyin": "ㄧㄥ·ㄏㄨㄚ",
+      "katakana": "ヨンファ",
+      "audio": "영화",
+      "meaning": "Movie / film",
+      "meaning_zh_tw": "電影",
+      "meaning_ja": "映画",
+      "meaning_es": "Película / film"
+    },
+    {
+      "id": 4,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -54,13 +87,50 @@
         "악"
       ],
       "romanization": "eumak",
+      "zhuyin": "ㄜㄇ·ㄚ",
       "katakana": "ウマク",
       "audio": "음악",
-      "meaning": "Music — 한국 음악 좋아해요 (I like Korean music)",
-      "meaning_ja": "音楽 ― 한국 음악 좋아해요（韓国の音楽が好きです）"
+      "meaning": "Music",
+      "meaning_zh_tw": "音樂",
+      "meaning_ja": "音楽",
+      "meaning_es": "Música"
     },
     {
-      "id": 4,
+      "id": 5,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "가",
+        "수"
+      ],
+      "romanization": "gasu",
+      "zhuyin": "ㄍㄚ·ㄙㄨ",
+      "katakana": "カス",
+      "audio": "가수",
+      "meaning": "Singer — 가수 is used for both solo artists and idol group members",
+      "meaning_zh_tw": "歌手——가수 用於獨唱藝人和偶像團體成員",
+      "meaning_ja": "歌手 ― ソロアーティストもアイドルグループのメンバーも가수と呼ぶ",
+      "meaning_es": "Cantante — 가수 se usa tanto para artistas solistas como para miembros de grupos de ídolos"
+    },
+    {
+      "id": 6,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "배",
+        "우"
+      ],
+      "romanization": "baeu",
+      "zhuyin": "ㄅㄝ·ㄨ",
+      "katakana": "ペウ",
+      "audio": "배우",
+      "meaning": "Actor / actress",
+      "meaning_zh_tw": "演員",
+      "meaning_ja": "俳優・女優",
+      "meaning_es": "Actor / actriz"
+    },
+    {
+      "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -69,82 +139,32 @@
         "돌"
       ],
       "romanization": "aidol",
+      "zhuyin": "ㄚ·ㄧ·ㄉㄛㄌ",
       "katakana": "アイドル",
       "audio": "아이돌",
-      "meaning": "Idol (K-pop idol) — trained performers in groups like BTS, BLACKPINK",
-      "meaning_ja": "アイドル ― BTS・BLACKPINKのようなグループ"
-    },
-    {
-      "id": 5,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "노",
-        "래"
-      ],
-      "romanization": "norae",
-      "katakana": "ノレ",
-      "audio": "노래",
-      "meaning": "Song — 노래방 = karaoke room (song room)",
-      "meaning_ja": "歌 ― 노래방（カラオケルーム）"
-    },
-    {
-      "id": 6,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "영",
-        "화"
-      ],
-      "romanization": "yeonghwa",
-      "katakana": "ヨンファ",
-      "audio": "영화",
-      "meaning": "Movie / film — 영화 봤어요? (Did you watch the movie?)",
-      "meaning_ja": "映画 ― 영화 봤어요？（映画を見ましたか？）"
-    },
-    {
-      "id": 7,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "배",
-        "우"
-      ],
-      "romanization": "baeu",
-      "katakana": "ペウ",
-      "audio": "배우",
-      "meaning": "Actor / actress",
-      "meaning_ja": "俳優 / 女優"
+      "meaning": "Idol — K-pop idol groups are a defining feature of Korean pop culture",
+      "meaning_zh_tw": "偶像——K-pop偶像團體是韓國流行文化的重要特色",
+      "meaning_ja": "アイドル ― K-popアイドルグループは韓国のポップカルチャーの象徴",
+      "meaning_es": "Ídolo — los grupos de ídolos de K-pop son un rasgo definitorio de la cultura pop coreana"
     },
     {
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "감",
-        "독"
-      ],
-      "romanization": "gamdok",
-      "katakana": "カムドク",
-      "audio": "감독",
-      "meaning": "Director (film/drama) — 봉준호 감독 (Director Bong Joon-ho)",
-      "meaning_ja": "監督 ― 봉준호 감독（ポン・ジュノ監督）"
-    },
-    {
-      "id": 9,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
         "팬"
       ],
       "romanization": "paen",
+      "zhuyin": "ㄆㄝㄣ",
       "katakana": "ペン",
       "audio": "팬",
-      "meaning": "Fan — 팬이에요! (I'm a fan!)",
-      "meaning_ja": "ファン ― 팬이에요！（ファンです！）"
+      "meaning": "Fan — from English; 팬클럽 = fan club",
+      "meaning_zh_tw": "粉絲——來自英語；팬클럽＝粉絲團",
+      "meaning_ja": "ファン ― 英語から。팬클럽（ファンクラブ）",
+      "meaning_es": "Fan — del inglés; 팬클럽 = club de fans"
     },
     {
-      "id": 10,
+      "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -152,28 +172,17 @@
         "서",
         "트"
       ],
-      "romanization": "konseoteu",
+      "romanization": "konseuteu",
+      "zhuyin": "ㄎㄨㄣ·ㄙㄜ·ㄊㄜ",
       "katakana": "コンソトゥ",
       "audio": "콘서트",
-      "meaning": "Concert — 콘서트 가요? (Are you going to the concert?)",
-      "meaning_ja": "コンサート ― 콘서트 가요？（コンサートに行きますか？）"
+      "meaning": "Concert — from English 'concert'",
+      "meaning_zh_tw": "演唱會——來自英語「concert」",
+      "meaning_ja": "コンサート ― 英語 concert から",
+      "meaning_es": "Concierto — del inglés \"concert\""
     },
     {
-      "id": 11,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "무",
-        "대"
-      ],
-      "romanization": "mudae",
-      "katakana": "ムデ",
-      "audio": "무대",
-      "meaning": "Stage (performance stage) — 무대 위에서 (on stage)",
-      "meaning_ja": "ステージ / 舞台 ― 무대 위에서（ステージの上で）"
-    },
-    {
-      "id": 12,
+      "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -181,157 +190,275 @@
         "류"
       ],
       "romanization": "hallyu",
+      "zhuyin": "ㄏㄢ·ㄌㄩ",
       "katakana": "ハルリュ",
       "audio": "한류",
-      "meaning": "Korean Wave / Hallyu — the global spread of Korean culture",
-      "meaning_ja": "韓流 / ハルリュ ― 韓国文化の世界的な広がり"
+      "meaning": "Korean Wave (Hallyu) — the global spread of Korean pop culture",
+      "meaning_zh_tw": "韓流——韓國流行文化在全球的傳播",
+      "meaning_ja": "韓流（ハルリュ）― 韓国のポップカルチャーの世界的な波",
+      "meaning_es": "Ola Coreana (Hallyu) — la difusión mundial de la cultura pop coreana"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "유",
+        "튜",
+        "브"
+      ],
+      "romanization": "yutubeu",
+      "zhuyin": "ㄩ·ㄊㄩ·ㄅㄜ",
+      "katakana": "ユテュブ",
+      "audio": "유튜브",
+      "meaning": "YouTube — from English; 유튜버 = YouTuber",
+      "meaning_zh_tw": "YouTube——來自英語；유튜버＝YouTuber",
+      "meaning_ja": "YouTube ― 영語から。유튜버（YouTuber）",
+      "meaning_es": "YouTube — del inglés; 유튜버 = youtuber"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "스",
+        "트",
+        "리",
+        "밍"
+      ],
+      "romanization": "seuliming",
+      "zhuyin": "ㄙㄜ·ㄊㄜ·ㄌㄧ·ㄇㄧㄥ",
+      "katakana": "ストリミン",
+      "audio": "스트리밍",
+      "meaning": "Streaming — from English 'streaming'",
+      "meaning_zh_tw": "串流——來自英語「streaming」",
+      "meaning_ja": "ストリーミング ― 英語 streaming から",
+      "meaning_es": "Streaming — del inglés \"streaming\""
     },
     {
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "인",
-        "기"
+        "소",
+        "셜",
+        "미",
+        "디",
+        "어"
       ],
-      "romanization": "ingi",
-      "katakana": "インギ",
-      "audio": "인기",
-      "meaning": "Popularity — 인기 많아요! (Very popular!)",
-      "meaning_ja": "人気 ― 인기 많아요！（とても人気があります！）"
+      "romanization": "sosyeol midieo",
+      "zhuyin": "ㄙㄛ·ㄙㄧㄜㄌ ㄇㄧ·ㄉㄧ·ㄜ",
+      "katakana": "ソシャルミディオ",
+      "audio": "소셜 미디어",
+      "meaning": "Social media — from English",
+      "meaning_zh_tw": "社群媒體——來自英語",
+      "meaning_ja": "ソーシャルメディア ― 英語から",
+      "meaning_es": "Redes sociales — del inglés \"social media\""
     },
     {
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "사",
-        "진"
+        "뮤",
+        "직",
+        "비",
+        "디",
+        "오"
       ],
-      "romanization": "sajin",
-      "katakana": "サジン",
-      "audio": "사진",
-      "meaning": "Photo — 사진 찍어도 돼요? (May I take a photo?)",
-      "meaning_ja": "写真 ― 사진 찍어도 돼요？（写真を撮ってもいいですか？）"
+      "romanization": "myuijik bidio",
+      "zhuyin": "ㄇㄩ·ㄐㄧ ㄅㄧ·ㄉㄧ·ㄛ",
+      "katakana": "ミュジクビディオ",
+      "audio": "뮤직비디오",
+      "meaning": "Music video — MV is the common abbreviation",
+      "meaning_zh_tw": "音樂影片——MV是常用縮寫",
+      "meaning_ja": "ミュージックビデオ ― MVが一般的な略語",
+      "meaning_es": "Videoclip musical — MV es la abreviatura común"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "팬",
-        "미",
-        "팅"
+        "예",
+        "능"
       ],
-      "romanization": "paenmiting",
-      "katakana": "ペンミティン",
-      "audio": "팬미팅",
-      "meaning": "Fan meeting — a major K-pop fan event where fans meet their idols",
-      "meaning_ja": "ファンミーティング ― K-POPファンがアイドルに会う大型イベント"
+      "romanization": "yeneung",
+      "zhuyin": "ㄧㄝ·ㄋㄜㄥ",
+      "katakana": "イェヌン",
+      "audio": "예능",
+      "meaning": "Variety show / entertainment program — a hugely popular genre in Korea",
+      "meaning_zh_tw": "綜藝節目——在韓國極受歡迎的電視類型",
+      "meaning_ja": "バラエティ番組 ― 韓国で非常に人気のジャンル",
+      "meaning_es": "Programa de variedades — género enormemente popular en Corea"
     },
     {
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "최",
-        "애"
+        "오",
+        "디",
+        "션"
       ],
-      "romanization": "choeae",
-      "katakana": "チェエ",
-      "audio": "최애",
-      "meaning": "Favorite (idol/song/show) — 최애 곡이 뭐예요? (What's your favorite song?)",
-      "meaning_ja": "一番のお気に入り ― 최애 곡이 뭐예요？（推し曲は何ですか？）"
+      "romanization": "odisyeon",
+      "zhuyin": "ㄛ·ㄉㄧ·ㄙㄧㄢ",
+      "katakana": "オディション",
+      "audio": "오디션",
+      "meaning": "Audition — from English; 오디션 프로그램 = audition reality show",
+      "meaning_zh_tw": "試鏡——來自英語；오디션 프로그램＝選秀節目",
+      "meaning_ja": "オーディション ― 英語から。오디션 프로그램（オーディション番組）",
+      "meaning_es": "Audición — del inglés; 오디션 프로그램 = programa de selección de talentos"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "노래방 literally means 'song room.' What is it?",
+      "prompt": "한류 refers to...",
+      "prompt_zh_tw": "한류 指的是……",
       "choices": [
-        "Concert hall",
-        "Recording studio",
-        "Karaoke room",
-        "Music store"
+        "Korean food",
+        "Korean language",
+        "The Korean Wave (global spread of K-culture)",
+        "Korean history"
+      ],
+      "choices_zh_tw": [
+        "韓國料理",
+        "韓語",
+        "韓流（韓國文化的全球傳播）",
+        "韓國歷史"
       ],
       "choices_ja": [
-        "コンサートホール",
-        "録音スタジオ",
-        "カラオケルーム",
-        "音楽ショップ"
+        "韓国料理",
+        "韓国語",
+        "韓流（Kカルチャーの世界的な普及）",
+        "韓国の歴史"
       ],
-      "correct": "Karaoke room",
-      "prompt_ja": "노래방は文字通り「歌の部屋」を意味します。何ですか？"
+      "correct": "The Korean Wave (global spread of K-culture)",
+      "prompt_ja": "한류 が指すのは？",
+      "prompt_es": "한류 se refiere a...",
+      "choices_es": [
+        "Comida coreana",
+        "El idioma coreano",
+        "La Ola Coreana (difusión mundial del K-culture)",
+        "Historia de Corea"
+      ]
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "한류 refers to...",
+      "prompt": "예능 is what type of TV program?",
+      "prompt_zh_tw": "예능 是哪種類型的電視節目？",
       "choices": [
-        "Korean weather",
-        "The Korean Wave (global spread of Korean culture)",
-        "Korean government policy",
-        "Korean food culture"
+        "News program",
+        "Drama series",
+        "Variety / entertainment show",
+        "Documentary"
+      ],
+      "choices_zh_tw": [
+        "新聞節目",
+        "連續劇",
+        "綜藝娛樂節目",
+        "紀錄片"
       ],
       "choices_ja": [
-        "韓国の天気",
-        "韓流（韓国文化の世界的広がり）",
-        "韓国の政府政策",
-        "韓国の食文化"
+        "ニュース番組",
+        "ドラマ",
+        "バラエティ番組",
+        "ドキュメンタリー"
       ],
-      "correct": "The Korean Wave (global spread of Korean culture)",
-      "prompt_ja": "한류とは？"
+      "correct": "Variety / entertainment show",
+      "prompt_ja": "예능 はどのタイプのTV番組ですか？",
+      "prompt_es": "예능 es qué tipo de programa de TV?",
+      "choices_es": [
+        "Programa de noticias",
+        "Serie dramática",
+        "Programa de variedades / entretenimiento",
+        "Documental"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "최애 (choeae) is a K-fan term meaning...",
+      "prompt": "Which word means 'movie' in Korean?",
+      "prompt_zh_tw": "哪個詞在韓語中表示「電影」？",
       "choices": [
-        "New release",
-        "Biggest fan",
-        "Favorite (person/thing)",
-        "Fan club"
+        "Drama",
+        "Movie",
+        "Music",
+        "Streaming"
+      ],
+      "choices_zh_tw": [
+        "韓劇",
+        "電影",
+        "音樂",
+        "串流"
       ],
       "choices_ja": [
-        "新リリース",
-        "最大のファン",
-        "推し（お気に入りの人やもの）",
-        "ファンクラブ"
+        "ドラマ",
+        "映画",
+        "音楽",
+        "ストリーミング"
       ],
-      "correct": "Favorite (person/thing)",
-      "prompt_ja": "K-ファン用語の최애（チェエ）の意味は？"
+      "correct": "Movie",
+      "prompt_ja": "「映画」を意味する韓国語はどれですか？",
+      "prompt_es": "¿Qué palabra significa \"película\" en coreano?",
+      "choices_es": [
+        "Drama",
+        "Película",
+        "Música",
+        "Streaming"
+      ]
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "봉준호 감독 is a famous film...",
+      "prompt": "What does 팬 mean in Korean?",
+      "prompt_zh_tw": "韓語中팬 是什麼意思？",
       "choices": [
-        "Actor",
+        "Idol",
         "Singer",
-        "Director",
-        "Producer"
+        "Fan",
+        "Actor"
+      ],
+      "choices_zh_tw": [
+        "偶像",
+        "歌手",
+        "粉絲",
+        "演員"
       ],
       "choices_ja": [
-        "俳優",
+        "アイドル",
         "歌手",
-        "監督",
-        "プロデューサー"
+        "ファン",
+        "俳優"
       ],
-      "correct": "Director",
-      "prompt_ja": "봉준호 감독は有名な映画？"
+      "correct": "Fan",
+      "prompt_ja": "韓국語で팬 の意味は？",
+      "prompt_es": "¿Qué significa 팬 en coreano?",
+      "choices_es": [
+        "Ídolo",
+        "Cantante",
+        "Fan",
+        "Actor"
+      ]
     },
     {
       "id": 21,
       "stage": 1,
       "type": "lesson_complete",
-      "title": "Media & K-Culture Complete!",
-      "title_kr": "미디어·한류 완성!",
-      "message": "한류를 즐기세요! Now you can talk about your favorite K-dramas, K-pop groups, and Korean films in Korean! Watching content in Korean is one of the fastest ways to level up your language skills.",
-      "next_url": "vocabulary.html?cat=proverbs",
-      "message_ja": "한류를 즐기세요！好きなK-ドラマ・K-ポップグループ・韓国映画について韓国語で話せるようになりました！韓国語コンテンツを視聴することは言語力を最も早く伸ばす方法のひとつです。"
+      "title": "Media Complete!",
+      "title_kr": "미디어 완성!",
+      "title_zh_tw": "媒體詞彙完成！",
+      "message": "문화 고수! You've mastered Korean media vocabulary. As a fan of Korean content, you now have the words to engage with K-dramas, K-pop, and Korean films on a whole new level — in the language they were made in.",
+      "message_zh_tw": "문화 고수！你已掌握韓語媒體詞彙。作為韓國內容的粉絲，你現在有了以全新方式欣賞K劇、K-pop和韓國電影的詞彙——用它們誕生的語言來欣賞。",
+      "next_url": "vocabulary.html?cat=news",
+      "message_ja": "문화 고수！韓国語のメディア語彙をマスターしました。韓国コンテンツのファンとして、K-ドラマ・K-pop・韓国映画をまったく新しいレベルで楽しめます―作られた言語で。",
+      "title_es": "¡Medios Completados!",
+      "message_es": "문화 고수! Has dominado el vocabulario de medios coreanos. Como fan del contenido coreano, ahora tienes las palabras para disfrutar de los K-dramas, el K-pop y las películas coreanas a un nivel completamente nuevo — en el idioma en el que fueron creados."
     }
   ]
 }

@@ -14,6 +14,7 @@
  * Optional env vars:
  *   DRY_RUN=true         — Generate but do not save to database
  *   REWRITE_TODAY=true   — Rewrite today's existing articles instead of creating new ones
+ *   ONLY_TOPIC=<slug>    — Generate for a single topic only (testing)
  */
 
 import { config as loadEnv } from 'dotenv';
@@ -40,31 +41,100 @@ const TODAY      = new Date().toISOString().slice(0, 10);
 const MODEL      = 'claude-sonnet-4-6';
 const MAX_TOKENS = 4000;
 
-// ── Article angle pool ────────────────────────────────────────────────────
+// ── Article angle pool (rotated deterministically, never random) ──────────
 const ARTICLE_ANGLES = [
-  'current events — report what is happening right now in a clear, neutral tone',
-  'historical context — explain how this topic developed over time in Korea',
-  'daily life impact — focus on how this affects ordinary Koreans day-to-day',
-  'comparison — contrast the Korean situation with trends in other countries',
-  'debate and diverse views — present at least two contrasting perspectives',
-  'practical guide — give learners actionable cultural or language insight',
-  'human interest — focus on a specific community or group affected by this topic',
+  'straight news report — who, what, when, where; a clear neutral account of the specific event',
+  'daily life impact — how this specific event touches ordinary Koreans day-to-day',
+  'explainer — unpack the background a foreigner needs to understand this specific event',
+  'human interest — the specific people, company, or community at the center of this event',
+  'what happens next — the concrete stakes and likely consequences of this event',
 ];
 
-// ── Google News RSS search queries per topic slug ─────────────────────────
+// ── Google News RSS query variants per topic slug ──────────────────────────
+// Multiple variants per topic, rotated by day, so each day surfaces a
+// different slice of the topic instead of the same headline cluster.
 const TOPIC_RSS_QUERIES = {
-  kpop:      'K-pop Korean music idol group BTS BLACKPINK',
-  tech:      'South Korea technology AI semiconductor Samsung',
-  food:      'Korean food cuisine restaurant Seoul',
-  sports:    'South Korea sports soccer football athlete',
-  culture:   'Korean culture hallyu drama film Netflix',
-  society:   'South Korea society lifestyle trends',
-  education: 'South Korea education school university students',
-  fashion:   'Korean fashion Seoul style K-beauty',
-  travel:    'South Korea travel tourism Jeju Seoul',
-  economy:   'South Korea economy exports GDP trade',
-  politics:  'South Korea politics government policy National Assembly',
+  kpop: [
+    'K-pop comeback album debut chart',
+    'K-pop agency HYBE SM JYP YG news',
+    'Korean idol concert tour fan event',
+    'K-pop survival show trainee rookie group',
+  ],
+  tech: [
+    'South Korea startup funding app service launch',
+    'Samsung SK Hynix chip factory investment',
+    'Korea AI robot service adoption',
+    'Naver Kakao Coupang Korean tech company',
+  ],
+  food: [
+    'Korean restaurant chef michelin opening',
+    'Korea food trend convenience store new product',
+    'Korean food export ramyeon kimchi frozen',
+    'Seoul cafe dessert food festival',
+  ],
+  sports: [
+    'South Korea football K-League match result',
+    'Korean baseball KBO player record',
+    'Korean athlete international tournament medal',
+    'Son Heung-min Lee Kang-in Kim Min-jae',
+  ],
+  culture: [
+    'Korean drama series premiere Netflix cast',
+    'Korean film festival box office director',
+    'Korea webtoon novel exhibition museum',
+    'Korean traditional heritage festival event',
+  ],
+  society: [
+    'South Korea population housing policy change',
+    'Korea workplace law court ruling',
+    'Seoul city new rule residents',
+    'South Korea survey statistics young people',
+  ],
+  education: [
+    'Korea suneung exam university admission change',
+    'South Korea school policy teachers ministry',
+    'Korean university research students international',
+    'Korea private academy hagwon regulation',
+  ],
+  fashion: [
+    'Seoul fashion week designer brand collection',
+    'K-beauty brand product launch export',
+    'Korean fashion brand collaboration pop-up',
+    'Korea beauty cosmetics olive young trend',
+  ],
+  travel: [
+    'Korea tourism new route airline flight',
+    'Jeju Busan Gangwon travel attraction opening',
+    'Korea visa tourist policy foreign visitors',
+    'Seoul festival event travel destination',
+  ],
+  economy: [
+    'South Korea exports data monthly figures',
+    'Bank of Korea interest rate inflation',
+    'Korean company earnings investment deal',
+    'Korea won exchange rate stock KOSPI',
+  ],
+  politics: [
+    'South Korea National Assembly bill vote',
+    'Korea president policy announcement',
+    'South Korea diplomacy summit US Japan China',
+    'Korea election party leader statement',
+  ],
 };
+
+function rssQueryFor(topicSlug) {
+  const variants = TOPIC_RSS_QUERIES[topicSlug];
+  if (!variants) return `South Korea ${topicSlug}`;
+  const dayOfYear = Math.floor((Date.now() - Date.parse(new Date().getFullYear() + '-01-01')) / 86400000);
+  return variants[dayOfYear % variants.length];
+}
+
+function angleFor(topicSlug, salt = 0) {
+  const dayOfYear = Math.floor((Date.now() - Date.parse(new Date().getFullYear() + '-01-01')) / 86400000);
+  let hash = salt;
+  for (const c of topicSlug) hash = (hash * 31 + c.charCodeAt(0)) >>> 0;
+  return ARTICLE_ANGLES[(dayOfYear + hash) % ARTICLE_ANGLES.length];
+}
 
 // ── Parse Google News RSS XML ─────────────────────────────────────────────
 function parseRSS(xml) {
@@ -86,14 +156,14 @@ function parseRSS(xml) {
     const pubDate = (raw.match(/<pubDate>([\s\S]*?)<\/pubDate>/)?.[1] ?? '').trim();
 
     if (title) items.push({ title, desc, source, pubDate });
-    if (items.length >= 5) break;
+    if (items.length >= 10) break;
   }
   return items;
 }
 
 // ── Fetch real headlines from Google News RSS ─────────────────────────────
 async function fetchRealNews(topicSlug) {
-  const query = TOPIC_RSS_QUERIES[topicSlug] ?? `South Korea ${topicSlug}`;
+  const query = rssQueryFor(topicSlug);
   // tbs=qdr:2d = past 48 hours
   const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-US&gl=US&ceid=US:en&tbs=qdr:2d`;
 
@@ -115,11 +185,50 @@ async function fetchRealNews(topicSlug) {
   }
 }
 
+// ── Recent-article memory (avoid re-telling the same story) ───────────────
+async function getRecentArticles(topicId, days = 21) {
+  const since = new Date(Date.now() - days * 86400000).toISOString();
+  const { data, error } = await supabase
+    .from('articles')
+    .select('title_en, summary_en')
+    .eq('topic_id', topicId)
+    .gte('published_at', since)
+    .order('published_at', { ascending: false })
+    .limit(15);
+  if (error) {
+    console.warn(`  [memory] fetch failed: ${error.message}`);
+    return [];
+  }
+  return data ?? [];
+}
+
+// ── Title similarity guard ─────────────────────────────────────────────────
+const STOPWORDS = new Set(['the','a','an','of','in','on','for','and','or','to','how','what','why','is','are','its','korea','korean','koreas','south','k']);
+function titleWords(title) {
+  return new Set(
+    title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').split(/[\s-]+/)
+      .filter(w => w.length > 2 && !STOPWORDS.has(w))
+  );
+}
+function tooSimilar(newTitle, recentTitles) {
+  const a = titleWords(newTitle);
+  if (a.size === 0) return false;
+  for (const prev of recentTitles) {
+    const b = titleWords(prev);
+    if (b.size === 0) continue;
+    let overlap = 0;
+    for (const w of a) if (b.has(w)) overlap++;
+    if (overlap / Math.min(a.size, b.size) >= 0.5) return true;
+  }
+  return false;
+}
+
 // ── Generate one article grounded in real headlines ───────────────────────
-async function generateArticle(topic) {
+async function generateArticle(topic, { attempt = 0 } = {}) {
   const newsItems = await fetchRealNews(topic.slug);
   const hasRealNews = newsItems.length > 0;
-  const angle = ARTICLE_ANGLES[Math.floor(Math.random() * ARTICLE_ANGLES.length)];
+  const angle = angleFor(topic.slug, attempt);
+  const recent = await getRecentArticles(topic.id);
 
   let newsContext;
   if (hasRealNews) {
@@ -136,28 +245,38 @@ async function generateArticle(topic) {
   } else {
     newsContext =
       `No live headlines found for "${topic.name_en}". ` +
-      `Write a factual article about genuine, verifiable recent developments in this area in Korea — ` +
+      `Write a factual article about a genuine, verifiable, SPECIFIC recent development in this area in Korea — ` +
       `do NOT invent specific events, named people, or statistics.`;
   }
 
   const factInstruction = hasRealNews
-    ? `Ground your article in the REAL headlines above. Expand naturally on what those headlines indicate with accurate context. ` +
-      `Do NOT invent specific events, statistics, or named individuals not supported by the headlines.`
-    : `Write a factual, educational piece based only on verifiable information about Korea in this topic area.`;
+    ? `STEP 1 — PICK ONE STORY: From the headlines above, choose the single most newsworthy SPECIFIC story that is NOT already covered in the recent-article list below. A specific story has a concrete event, a named person/company/place, and a "this week" time anchor — not a general trend.
+STEP 2 — WRITE ABOUT THAT ONE STORY ONLY. Every paragraph must relate to that one event. Do NOT zoom out into a survey of the whole topic. Do NOT invent events, statistics, or named individuals not supported by the headlines.`
+    : `Write a factual, educational piece about ONE specific, verifiable aspect of this topic — not a broad overview.`;
 
-  const prompt = `You are creating educational content for a Korean language-learning website. Your goal is to inform and engage learners about real Korean life — not to market Korea. Write like a curious, balanced reporter.
+  const recentBlock = recent.length
+    ? `ARTICLES ALREADY PUBLISHED on this topic in the last 3 weeks — you MUST NOT retell these stories or reuse their framing:\n` +
+      recent.map(r => `- "${r.title_en}"${r.summary_en ? ` — ${r.summary_en}` : ''}`).join('\n')
+    : `No recent articles on this topic.`;
+
+  const prompt = `You are a news reporter for a Korean language-learning website. Your readers already get generic "Korea overview" content everywhere — your job is to give them ONE concrete, current story with real specifics.
 
 Today's date: ${TODAY}
 Assigned article angle: "${angle}"
 
 ${newsContext}
 
+${recentBlock}
+
 ${factInstruction}
 
 REQUIREMENTS:
-1. BALANCED: include both positives AND challenges, debates, or critical perspectives. Avoid promotional language.
-2. LEARNER-FOCUSED: explain context that a non-Korean reader needs. Do not assume cultural familiarity.
-3. VOCABULARY: identify 4-5 key Korean words or phrases that naturally appear in the Korean content. Pick words that are useful, interesting, or topic-specific.
+1. SPECIFIC, NOT BROAD: the article covers one concrete event/development. The first paragraph is a news lede: what happened, who did it, when. If you cannot name the who/what/when in the first two sentences, you chose too broad a story.
+2. BANNED OPENINGS: never start with "Over the past decade", "In recent years", "Korea has long been", "[X] has moved from a niche" or any similar trend-essay opener.
+3. BANNED TEMPLATE: do not structure the article as "supporters argue... however critics say...". Only present a debate if the specific story IS a debate.
+4. FRESH: the title and content must not resemble any recently published article listed above.
+5. LEARNER-FOCUSED: briefly explain context a non-Korean reader needs, but keep the specific story in the foreground.
+6. VOCABULARY: identify 4-5 key Korean words or phrases that naturally appear in the Korean content. Pick words specific to THIS story, not generic topic words already used in recent articles.
 
 Return ONLY valid JSON with exactly these fields:
 {
@@ -199,13 +318,25 @@ Guidelines:
 - No trailing commas after the last item in any array or object
 - Return only the JSON object — no markdown fences, no extra text`;
 
+  const retryNote = attempt > 0
+    ? `\n\nIMPORTANT: A previous draft was rejected for being too similar to recently published articles. Choose a completely DIFFERENT story from the headlines this time.`
+    : '';
+
   const message = await anthropic.messages.create({
     model: MODEL,
     max_tokens: MAX_TOKENS,
-    messages: [{ role: 'user', content: prompt }],
+    messages: [{ role: 'user', content: prompt + retryNote }],
   });
 
-  return parseJSON(message.content[0].text.trim(), topic.slug);
+  const article = parseJSON(message.content[0].text.trim(), topic.slug);
+
+  // Reject near-duplicate titles once; second attempt rotates the angle and
+  // carries an explicit "pick a different story" instruction.
+  if (attempt === 0 && tooSimilar(article.title_en, recent.map(r => r.title_en))) {
+    console.log(`  [dedup] "${article.title_en}" too close to a recent article — retrying`);
+    return generateArticle(topic, { attempt: 1 });
+  }
+  return article;
 }
 
 function parseJSON(raw, context) {
@@ -343,7 +474,8 @@ async function main() {
   console.log(`\n=== Korean School News Generator ===`);
   console.log(`Date: ${TODAY}  |  Mode: ${mode}  |  Model: ${MODEL}\n`);
 
-  const topics = await getActiveTopics();
+  let topics = await getActiveTopics();
+  if (process.env.ONLY_TOPIC) topics = topics.filter(t => t.slug === process.env.ONLY_TOPIC);
   console.log(`Found ${topics.length} active topics: ${topics.map(t => t.slug).join(', ')}\n`);
 
   const results = { success: [], failed: [] };

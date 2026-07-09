@@ -8,7 +8,8 @@
       "name_kr": "형용사",
       "first_step": 1,
       "last_step": 21,
-      "time_minutes": 12
+      "time_minutes": 13,
+      "name_es": "Adjetivos"
     }
   ],
   "steps": [
@@ -18,16 +19,28 @@
       "type": "reading_card",
       "title": "Korean Adjectives",
       "title_kr": "형용사",
-      "body": "Korean adjectives (형용사) behave like verbs — they conjugate with tense and politeness endings, and come at the end of a sentence. The dictionary form ends in -다. To describe a noun directly, use the -ㄴ/은 form: 작은 고양이 (a small cat). To make a statement, use -아요/어요: 고양이가 작아요 (The cat is small).",
+      "title_zh_tw": "韓語形容詞",
+      "body": "Korean adjectives (형용사) behave differently from English ones — they conjugate like verbs. The dictionary form ends in -다. To use them as predicates, change -다 to -아요/어요. To modify a noun, change -다 to -(으)ㄴ. Example: 크다 (big) → 커요 (it's big) / 큰 집 (big house).",
+      "body_zh_tw": "韓語形容詞（형용사）與英語不同——它們像動詞一樣進行活用變化。原形以-다結尾。作謂語時，將-다改為-아요/어요；修飾名詞時，將-다改為-(으)ㄴ。例：크다（大）→커요（很大）/ 큰 집（大房子）。",
       "tip": {
-        "icon": "✨",
-        "label": "Adjective + noun",
-        "text": "크다 (big) → 큰 + noun: 큰 도시 (a big city). 작다 (small) → 작은 + noun: 작은 가방 (a small bag). 예쁘다 (pretty) → 예쁜 + noun: 예쁜 꽃 (a pretty flower)."
+        "icon": "📝",
+        "label": "Adjective pattern",
+        "text": "Dictionary form: 크다 (big). Statement: 커요 (it's big). Noun-modifier: 큰 집 (big house). This pattern applies to almost all Korean adjectives — master the pattern, and every adjective you learn doubles its use."
       },
-      "body_ja": "韓国語の形容詞（형용사）は動詞のように振る舞います―時制・丁寧さの語尾で活用し、文末に来ます。辞書形は-다で終わります。名詞を直接修飾するには-ㄴ/은形を使います：작은 고양이（小さな猫）。述語として使うには-아요/어요：고양이가 작아요（猫は小さい）。",
+      "tip_zh_tw": {
+        "label": "形容詞規律",
+        "text": "原形：크다（大）。陳述句：커요（很大）。修飾名詞：큰 집（大房子）。這個規律適用於幾乎所有韓語形容詞——掌握規律後，每個學會的形容詞都能一詞兩用。"
+      },
+      "body_ja": "韓国語の形容詞（형용사）は英語と異なり、動詞のように活用します。辞書形は-다で終わります。述語として使うには-다を-아요/어요に、名詞修飾には-(으)ㄴに変えます。例：크다（大きい）→커요（大きいです）/ 큰 집（大きい家）。",
       "tip_ja": {
-        "label": "形容詞 + 名詞",
-        "text": "크다（大きい）→큰＋名詞：큰 도시（大きな都市）。작다（小さい）→작은＋名詞：작은 가방（小さなバッグ）。예쁘다（きれい）→예쁜＋名詞：예쁜 꽃（きれいな花）。"
+        "label": "形容詞のパターン",
+        "text": "辞書形：크다（大きい）。文の述語：커요（大きいです）。名詞修飾：큰 집（大きい家）。このパターンはほぼ全ての韓国語形容詞に適用できます。"
+      },
+      "title_es": "Adjetivos en Coreano",
+      "body_es": "Los adjetivos coreanos (형용사) se comportan de manera diferente a los del español — se conjugan como verbos. La forma de diccionario termina en -다. Como predicados, cambia -다 por -아요/어요. Para modificar un sustantivo, cambia -다 por -(으)ㄴ. Ejemplo: 크다 (grande) → 커요 (es grande) / 큰 집 (casa grande).",
+      "tip_es": {
+        "label": "Patrón de adjetivo",
+        "text": "Forma de diccionario: 크다 (grande). Predicado: 커요 (es grande). Modificador de sustantivo: 큰 집 (casa grande). Este patrón se aplica a casi todos los adjetivos coreanos — dominar el patrón duplica el uso de cada adjetivo que aprendes."
       }
     },
     {
@@ -39,10 +52,13 @@
         "다"
       ],
       "romanization": "keuda",
+      "zhuyin": "ㄎㄜ·ㄉㄚ",
       "katakana": "クダ",
       "audio": "크다",
-      "meaning": "Big / large — 서울은 커요 (Seoul is big)",
-      "meaning_ja": "大きい ― 서울은 커요（ソウルは大きいです）"
+      "meaning": "Big / large — 커요 in speech",
+      "meaning_zh_tw": "大——口語說커요",
+      "meaning_ja": "大きい ― 会話では커요",
+      "meaning_es": "Grande — 커요 en el habla"
     },
     {
       "id": 3,
@@ -53,70 +69,50 @@
         "다"
       ],
       "romanization": "jakda",
+      "zhuyin": "ㄐㄚ·ㄉㄚ",
       "katakana": "チャクタ",
       "audio": "작다",
-      "meaning": "Small — 이 방은 작아요 (This room is small)",
-      "meaning_ja": "小さい ― 이 방은 작아요（この部屋は小さいです）"
+      "meaning": "Small — 작아요 in speech",
+      "meaning_zh_tw": "小——口語說작아요",
+      "meaning_ja": "小さい ― 会話では작아요",
+      "meaning_es": "Pequeño — 작아요 en el habla"
     },
     {
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "많",
+        "길",
         "다"
       ],
-      "romanization": "manta",
-      "katakana": "マンタ",
-      "audio": "많다",
-      "meaning": "Many / a lot — 사람이 많아요 (There are many people)",
-      "meaning_ja": "多い ― 사람이 많아요（人が多いです）"
+      "romanization": "gilda",
+      "zhuyin": "ㄍㄧㄌ·ㄉㄚ",
+      "katakana": "キルダ",
+      "audio": "길다",
+      "meaning": "Long — 길어요 in speech",
+      "meaning_zh_tw": "長——口語說길어요",
+      "meaning_ja": "長い ― 会話では길어요",
+      "meaning_es": "Largo — 길어요 en el habla"
     },
     {
       "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "적",
+        "짧",
         "다"
       ],
-      "romanization": "jeokda",
-      "katakana": "チョクタ",
-      "audio": "적다",
-      "meaning": "Few / little — 돈이 적어요 (I have little money)",
-      "meaning_ja": "少ない ― 돈이 적어요（お金が少ないです）"
+      "romanization": "jjalda",
+      "zhuyin": "ㄐㄚㄌ·ㄉㄚ",
+      "katakana": "チャルタ",
+      "audio": "짧다",
+      "meaning": "Short — 짧아요 in speech",
+      "meaning_zh_tw": "短——口語說짧아요",
+      "meaning_ja": "短い ― 会話では짧아요",
+      "meaning_es": "Corto — 짧아요 en el habla"
     },
     {
       "id": 6,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "좋",
-        "다"
-      ],
-      "romanization": "jota",
-      "katakana": "チョタ",
-      "audio": "좋다",
-      "meaning": "Good / nice — 좋아요! (Good! / I like it!)",
-      "meaning_ja": "良い / 好き ― 좋아요！（良いです！／好きです！）"
-    },
-    {
-      "id": 7,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "나",
-        "쁘",
-        "다"
-      ],
-      "romanization": "nappeuda",
-      "katakana": "ナップダ",
-      "audio": "나쁘다",
-      "meaning": "Bad — 날씨가 나빠요 (The weather is bad)",
-      "meaning_ja": "悪い ― 날씨가 나빠요（天気が悪いです）"
-    },
-    {
-      "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -125,41 +121,85 @@
         "다"
       ],
       "romanization": "yeppeuda",
-      "katakana": "イェップダ",
+      "zhuyin": "ㄧㄝ·ㄅㄜ·ㄉㄚ",
+      "katakana": "イェッブダ",
       "audio": "예쁘다",
-      "meaning": "Pretty / beautiful — 예뻐요 (You're pretty / It's pretty)",
-      "meaning_ja": "きれい / かわいい ― 예뻐요（きれいです）"
+      "meaning": "Pretty / beautiful — 예뻐요 in speech",
+      "meaning_zh_tw": "漂亮／美麗——口語說예뻐요",
+      "meaning_ja": "きれい・かわいい ― 会話では예뻐요",
+      "meaning_es": "Bonito / hermoso — 예뻐요 en el habla"
+    },
+    {
+      "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "잘",
+        "생",
+        "겼",
+        "다"
+      ],
+      "romanization": "jal saenggyeotda",
+      "zhuyin": "ㄐㄚㄌ ㄙㄝㄥ·ㄍㄧㄜ·ㄉㄚ",
+      "katakana": "チャルセンギョッタ",
+      "audio": "잘생겼다",
+      "meaning": "Handsome — literally 'was born well'",
+      "meaning_zh_tw": "英俊——字面意思是「生得好」",
+      "meaning_ja": "ハンサム ― 文字通り「生まれが良い」",
+      "meaning_es": "Guapo — literalmente \"nació bien\""
+    },
+    {
+      "id": 8,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "비",
+        "싸",
+        "다"
+      ],
+      "romanization": "bissada",
+      "zhuyin": "ㄅㄧ·ㄙㄚ·ㄉㄚ",
+      "katakana": "ビッサダ",
+      "audio": "비싸다",
+      "meaning": "Expensive — 비싸요 in speech",
+      "meaning_zh_tw": "貴——口語說비싸요",
+      "meaning_ja": "高い（値段）― 会話では비싸요",
+      "meaning_es": "Caro — 비싸요 en el habla"
     },
     {
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "잘",
-        "생",
-        "기",
+        "싸",
         "다"
       ],
-      "romanization": "jalsaengida",
-      "katakana": "チャルセンギダ",
-      "audio": "잘생기다",
-      "meaning": "Handsome — 잘생겼어요 (He's handsome)",
-      "meaning_ja": "ハンサム ― 잘생겼어요（イケメンです）"
+      "romanization": "ssada",
+      "zhuyin": "ㄙㄚ·ㄉㄚ",
+      "katakana": "サダ",
+      "audio": "싸다",
+      "meaning": "Cheap — 싸요 in speech; also means 'to pack' in other contexts",
+      "meaning_zh_tw": "便宜——口語說싸요；在其他語境也有「打包」的意思",
+      "meaning_ja": "安い ― 会話では싸요。他の文脈では「包む」の意味も",
+      "meaning_es": "Barato — 싸요 en el habla; también significa \"empacar\" en otros contextos"
     },
     {
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "맛",
-        "있",
+        "새",
+        "롭",
         "다"
       ],
-      "romanization": "masitda",
-      "katakana": "マシッタ",
-      "audio": "맛있다",
-      "meaning": "Delicious — 맛있어요! (It's delicious!)",
-      "meaning_ja": "おいしい ― 맛있어요！（おいしいです！）"
+      "romanization": "saeropda",
+      "zhuyin": "ㄙㄝ·ㄌㄛ·ㄉㄚ",
+      "katakana": "セロプタ",
+      "audio": "새롭다",
+      "meaning": "New — 새로워요 in speech",
+      "meaning_zh_tw": "新——口語說새로워요",
+      "meaning_ja": "新しい ― 会話では새로워요",
+      "meaning_es": "Nuevo — 새로워요 en el habla"
     },
     {
       "id": 11,
@@ -172,28 +212,16 @@
         "다"
       ],
       "romanization": "jaemiitda",
+      "zhuyin": "ㄓㄝ·ㄇㄧ·ㄧ·ㄉㄚ",
       "katakana": "チェミイッタ",
       "audio": "재미있다",
-      "meaning": "Interesting / fun — 재미있어요! (It's fun!)",
-      "meaning_ja": "面白い / 楽しい ― 재미있어요！（面白いです！）"
+      "meaning": "Interesting / fun — 재미있어요 in speech; 재미없다 = boring",
+      "meaning_zh_tw": "有趣——口語說재미있어요；재미없다＝無聊",
+      "meaning_ja": "面白い・楽しい ― 会話では재미있어요。재미없다（つまらない）",
+      "meaning_es": "Interesante / divertido — 재미있어요 en el habla; 재미없다 = aburrido"
     },
     {
       "id": 12,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "어",
-        "렵",
-        "다"
-      ],
-      "romanization": "eolyeopda",
-      "katakana": "オリョプタ",
-      "audio": "어렵다",
-      "meaning": "Difficult — 한국어 어려워요? (Is Korean difficult?)",
-      "meaning_ja": "難しい ― 한국어 어려워요？（韓国語は難しいですか？）"
-    },
-    {
-      "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -201,13 +229,16 @@
         "다"
       ],
       "romanization": "swipda",
-      "katakana": "シプタ",
+      "zhuyin": "ㄙㄨㄟ·ㄉㄚ",
+      "katakana": "スィプタ",
       "audio": "쉽다",
-      "meaning": "Easy — 생각보다 쉬워요 (Easier than I thought)",
-      "meaning_ja": "易しい / 簡単 ― 생각보다 쉬워요（思ったより簡単です）"
+      "meaning": "Easy — 쉬워요 in speech; 어렵다 = difficult",
+      "meaning_zh_tw": "容易——口語說쉬워요；어렵다＝困難",
+      "meaning_ja": "易しい ― 会話では쉬워요。어렵다（難しい）",
+      "meaning_es": "Fácil — 쉬워요 en el habla; 어렵다 = difícil"
     },
     {
-      "id": 14,
+      "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -216,108 +247,165 @@
         "다"
       ],
       "romanization": "ppareuda",
+      "zhuyin": "ㄅㄚ·ㄌㄜ·ㄉㄚ",
       "katakana": "パルダ",
       "audio": "빠르다",
-      "meaning": "Fast — KTX 빨라요 (The KTX is fast)",
-      "meaning_ja": "速い ― KTX 빨라요（KTXは速いです）"
+      "meaning": "Fast — 빨라요 in speech; 느리다 = slow",
+      "meaning_zh_tw": "快——口語說빨라요；느리다＝慢",
+      "meaning_ja": "速い ― 会話では빨라요。느리다（遅い）",
+      "meaning_es": "Rápido — 빨라요 en el habla; 느리다 = lento"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "좋",
+        "다"
+      ],
+      "romanization": "jota",
+      "zhuyin": "ㄓㄛ·ㄉㄚ",
+      "katakana": "チョタ",
+      "audio": "좋다",
+      "meaning": "Good / nice — 좋아요 in speech; also means 'I like'",
+      "meaning_zh_tw": "好——口語說좋아요；也表示「我喜歡」",
+      "meaning_ja": "良い ― 会話では좋아요。「好きです」の意味でも使う",
+      "meaning_es": "Bueno — 좋아요 en el habla; también significa \"me gusta\""
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "느",
-        "리",
+        "맛",
+        "있",
         "다"
       ],
-      "romanization": "neurida",
-      "katakana": "ヌリダ",
-      "audio": "느리다",
-      "meaning": "Slow — 인터넷이 느려요 (The internet is slow)",
-      "meaning_ja": "遅い ― 인터넷이 느려요（インターネットが遅いです）"
+      "romanization": "masitda",
+      "zhuyin": "ㄇㄚ·ㄧ·ㄉㄚ",
+      "katakana": "マシッタ",
+      "audio": "맛있다",
+      "meaning": "Delicious — 맛있어요 in speech; literally 'has taste'",
+      "meaning_zh_tw": "好吃——口語說맛있어요；字面意思是「有味道」",
+      "meaning_ja": "美味しい ― 会話では맛있어요。文字通り「味がある」",
+      "meaning_es": "Delicioso — 맛있어요 en el habla; literalmente \"tiene sabor\""
     },
     {
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "귀",
-        "엽",
+        "많",
         "다"
       ],
-      "romanization": "gwiyeopda",
-      "katakana": "クィヨプタ",
-      "audio": "귀엽다",
-      "meaning": "Cute — 너무 귀여워요! (So cute!)",
-      "meaning_ja": "かわいい ― 너무 귀여워요！（めちゃかわいい！）"
+      "romanization": "manta",
+      "zhuyin": "ㄇㄢ·ㄉㄚ",
+      "katakana": "マンタ",
+      "audio": "많다",
+      "meaning": "Many / much / a lot — 많아요 in speech",
+      "meaning_zh_tw": "多——口語說많아요",
+      "meaning_ja": "多い ― 会話では많아요",
+      "meaning_es": "Mucho / muchos — 많아요 en el habla"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "How do you say 'It's delicious!' in Korean?",
+      "prompt": "비싸다 means expensive. Its opposite is...",
+      "prompt_zh_tw": "비싸다 是「貴」。它的反義詞是……",
       "choices": [
-        "재미있어요!",
-        "예뻐요!",
-        "맛있어요!",
-        "좋아요!"
+        "재미있다",
+        "새롭다",
+        "싸다",
+        "짧다"
       ],
-      "correct": "맛있어요!",
-      "prompt_ja": "「おいしい！」は韓国語でどう言いますか？"
+      "correct": "싸다",
+      "prompt_ja": "비싸다 は「高い」。その反対は？",
+      "prompt_es": "비싸다 significa caro. Su opuesto es..."
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "The opposite of 크다 (big) is...",
+      "prompt": "재미없다 means...",
+      "prompt_zh_tw": "재미없다 是什麼意思？",
       "choices": [
-        "많다",
-        "작다",
-        "적다",
-        "느리다"
+        "짧다",
+        "재미없다",
+        "맛없다",
+        "작다"
       ],
-      "correct": "작다",
-      "prompt_ja": "크다（大きい）の反対語は？"
+      "correct": "재미없다",
+      "prompt_ja": "재미없다 はどういう意味ですか？",
+      "prompt_es": "재미없다 significa..."
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "귀엽다 means...",
+      "prompt": "Which adjective means 'pretty'?",
+      "prompt_zh_tw": "哪個形容詞表示「漂亮」？",
       "choices": [
-        "Handsome",
         "Pretty",
-        "Cute",
-        "Smart"
+        "Handsome",
+        "Big",
+        "Fast"
+      ],
+      "choices_zh_tw": [
+        "漂亮",
+        "英俊",
+        "大",
+        "快"
       ],
       "choices_ja": [
-        "ハンサムです",
-        "きれいです",
-        "かわいいです",
-        "賢いです"
+        "きれい",
+        "ハンサム",
+        "大きい",
+        "速い"
       ],
-      "correct": "Cute",
-      "prompt_ja": "귀엽다はどういう意味ですか？"
+      "correct": "Pretty",
+      "prompt_ja": "「きれい」を意味する形容詞はどれですか？",
+      "prompt_es": "¿Qué adjetivo significa \"bonito/hermoso\"?",
+      "choices_es": [
+        "Bonito/a",
+        "Guapo/a",
+        "Grande",
+        "Rápido/a"
+      ]
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "한국어 어려워요? This sentence asks...",
+      "prompt": "좋아요 can mean both 'It's good' and...",
+      "prompt_zh_tw": "좋아요 既可以表示「很好」，也可以表示……",
       "choices": [
-        "Do you like Korean?",
-        "Is Korean interesting?",
-        "Is Korean difficult?",
-        "Are you learning Korean?"
+        "I like it",
+        "I want it",
+        "I know it",
+        "I see it"
+      ],
+      "choices_zh_tw": [
+        "我喜歡",
+        "我想要",
+        "我知道",
+        "我看見"
       ],
       "choices_ja": [
-        "韓国語は好きですか？",
-        "韓国語は面白いですか？",
-        "韓国語は難しいですか？",
-        "韓国語を勉強していますか？"
+        "好きです",
+        "欲しいです",
+        "知っています",
+        "見えます"
       ],
-      "correct": "Is Korean difficult?",
-      "prompt_ja": "한국어 어려워요？この文は何を聞いていますか？"
+      "correct": "I like it",
+      "prompt_ja": "좋아요 は「良いです」の他にどんな意味がありますか？",
+      "prompt_es": "좋아요 puede significar \"Es bueno\" y también...",
+      "choices_es": [
+        "Me gusta",
+        "Lo quiero",
+        "Lo sé",
+        "Lo veo"
+      ]
     },
     {
       "id": 21,
@@ -325,9 +413,13 @@
       "type": "lesson_complete",
       "title": "Adjectives Complete!",
       "title_kr": "형용사 완성!",
-      "message": "대단해요! Korean adjectives let you express opinions, describe the world around you, and give compliments. Try using one today: 오늘 날씨 좋아요! (The weather is nice today!)",
-      "next_url": "vocabulary.html?cat=workplace",
-      "message_ja": "대단해요！韓国語の形容詞で意見・周りの描写・褒め言葉が表現できます。今日使ってみましょう：오늘 날씨 좋아요！（今日は天気がいいです！）"
+      "title_zh_tw": "形容詞完成！",
+      "message": "대단해요! You've learned Korean adjectives and the pattern to use them in sentences and as noun-modifiers. These words will add color and specificity to everything you say in Korean!",
+      "message_zh_tw": "대단해요！你已學會韓語形容詞及其在句子和名詞修飾中的使用規律。這些詞彙將為你說的每一句韓語增添色彩和具體性！",
+      "next_url": "vocabulary.html?cat=verbs",
+      "message_ja": "대단해요！韓国語の形容詞と、文中・名詞修飾での使い方のパターンをマスターしました。これらの言葉はあなたの韓国語に色彩と具体性を加えてくれます！",
+      "title_es": "¡Adjetivos Completados!",
+      "message_es": "대단해요! Has aprendido los adjetivos coreanos y el patrón para usarlos en oraciones y como modificadores de sustantivos. ¡Estas palabras añadirán color y precisión a todo lo que digas en coreano!"
     }
   ]
 }

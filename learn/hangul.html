@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -12,9 +12,17 @@
   <meta name="description" content="Learn the Korean alphabet — Hangul — in under an hour. 6 interactive stages: consonants, vowels, syllables, special sounds, compound vowels, and real-word reading.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="canonical" href="https://freekoreanschool.com/learn/hangul">
+  <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/learn/hangul">
+  <link rel="alternate" hreflang="zh-TW" href="https://freekoreanschool.com/learn/zh-tw/hangul">
+  <link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/learn/ja/hangul">
+  <link rel="alternate" hreflang="fr" href="https://freekoreanschool.com/learn/fr/hangul">
+  <link rel="alternate" hreflang="de" href="https://freekoreanschool.com/learn/de/hangul">
+  <link rel="alternate" hreflang="vi" href="https://freekoreanschool.com/learn/vi/hangul.html">
+  <link rel="alternate" hreflang="id" href="https://freekoreanschool.com/learn/id/hangul">
+  <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/learn/hangul">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Learn Hangul in 1 Hour — Korean Alphabet 한글 | 한국어 학교">
   <meta property="og:description" content="Learn the Korean alphabet — Hangul — in under an hour. 6 interactive stages: consonants, vowels, syllables, special sounds, compound vowels, and real-word reading.">
@@ -84,7 +92,7 @@
 </header>
 
 <!-- XP Badge (fixed top-right) -->
-<div class="xp-badge" id="xp-badge" aria-live="polite">⚡ 0 XP</div>
+<div class="xp-badge" id="xp-badge" aria-live="polite">🔥</div>
 
 <!-- ═══ SIDEBAR ═══════════════════════════════════════ -->
 <aside class="sidebar" id="sidebar">
@@ -155,6 +163,7 @@
     <a href="classical-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Classical Korean <span class="link-badge badge-advanced">Advanced</span></a>
     <div class="sidebar-section">Tools</div>
     <a href="dialogues.html" class="sidebar-link"><span class="link-icon">💬</span> Korean Dialogues</a>
+    <a href="vocabulary-browser.html" class="sidebar-link"><span class="link-icon">⭐</span> Vocab Browser</a>
     <a href="flashcard.html" class="sidebar-link"><span class="link-icon">📇</span> Flashcards</a>
   </nav>
 </aside>
@@ -175,7 +184,7 @@
         <span>🎯 6 Stages · 84 Steps</span>
         <span>📊 Beginner</span>
         <span>⏱️ ~60–90 min</span>
-        <span>⚡ XP + Streak system</span>
+        <span>🔥 Daily streak + real progress tracking</span>
       </div>
       <ul class="lesson-intro-bullets">
         <li>Created in 1443 by King Sejong the Great</li>
@@ -195,9 +204,10 @@
 
     <!-- ── Free-play Syllable Builder ──────────────────── -->
     <div class="lesson-section animate-on-scroll" style="margin-top:48px" id="syllable-builder-section">
-      <h2><span class="section-num">+</span> <span class="en-only">Free-Play Syllable Builder</span><span class="ja-only">フリー音節ビルダー</span></h2>
+      <h2><span class="section-num">+</span> <span class="en-only">Free-Play Syllable Builder</span><span class="ja-only">フリー音節ビルダー</span><span class="zh-tw-only">自由練習音節積木</span></h2>
       <p class="en-only">After completing the stages, experiment freely — combine any consonant and vowel to build syllables and hear them pronounced.</p>
       <p class="ja-only">ステージを完了したら、子音と母音を自由に組み合わせて音節を作り、発音を聞きましょう。</p>
+      <p class="zh-tw-only">完成所有階段後，自由組合任意子音和母音，建構音節並聆聽發音。</p>
       <div id="syllable-builder-widget"></div>
     </div>
 
@@ -218,6 +228,13 @@
       </a>
     </div>
 
+  </div>
+  <div class="ad-zone ad-zone--bottom">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-6791974364232767"
+         data-ad-slot="9704719339"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
   </div>
 </main>
 
@@ -265,7 +282,7 @@
   </div>
 </footer>
 
-<script src="../js/lang-ja.js"></script>
+<script src="../js/lang-core.js"></script>
 <script src="../js/app.js"></script>
 <script src="../js/syllable-builder.js"></script>
 <script src="../js/step-runner.js"></script>
@@ -275,5 +292,6 @@
     HangulFreeBuilder.init('syllable-builder-widget');
   });
 </script>
+<script defer src="../js/ads.js"></script>
 </body>
 </html>

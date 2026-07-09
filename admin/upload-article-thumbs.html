@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Thumb Upload — Korean School Admin</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #07071F; color: #c8d0e8; font-size: 13px; line-height: 1.5; }
+    a { color: inherit; }
+
+    header { background: #0d0d30; border-bottom: 1px solid #1a1a50; padding: 14px 24px; display: flex; align-items: baseline; gap: 14px; }
+    header h1 { font-size: 17px; font-weight: 700; color: #e8e8ff; }
+    header .sub { font-size: 12px; color: #4a5568; }
+
+    .container { max-width: 1440px; margin: 0 auto; padding: 18px 24px; }
+
+    .panel { background: #0d0d30; border: 1px solid #1a1a50; border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; }
+    .panel-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: #4a5568; margin-bottom: 10px; }
+    .config-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .config-row label { font-size: 12px; color: #9ca3af; white-space: nowrap; }
+    input[type="password"], input[type="text"] {
+      background: #1a1a3e; border: 1px solid #2a2a5e; border-radius: 5px;
+      color: #e8e8ff; padding: 5px 10px; font-size: 12px; font-family: monospace;
+      width: 340px; outline: none;
+    }
+    input[type="password"]:focus, input[type="text"]:focus { border-color: #4a4a9e; }
+
+    button { padding: 5px 13px; border-radius: 5px; font-size: 12px; font-weight: 600; cursor: pointer; border: 1px solid transparent; transition: all .15s; }
+    .btn-primary { background: #E8003D; color: #fff; border-color: #E8003D; font-size: 13px; padding: 7px 18px; }
+    .btn-primary:hover:not(:disabled) { background: #c0002f; }
+    .btn-primary:disabled { background: #4a0018; color: #6b7280; cursor: not-allowed; }
+    .btn-ghost { background: #1a1a3e; color: #c8d0e8; border-color: #2a2a5e; }
+    .btn-ghost:hover { background: #22224e; }
+
+    .actions-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+    .rl { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #9ca3af; cursor: pointer; }
+    .summary { margin-left: auto; font-size: 12px; color: #4a5568; }
+
+    .progress-wrap { background: #0d0d30; border: 1px solid #1a1a50; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; display: none; }
+    .progress-wrap.visible { display: block; }
+    .progress-track { background: #1a1a3e; border-radius: 999px; height: 7px; overflow: hidden; margin-bottom: 5px; }
+    .progress-fill { background: #E8003D; height: 100%; border-radius: 999px; width: 0%; transition: width .25s; }
+    .progress-label { font-size: 11px; color: #6b7280; }
+
+    .table-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid #1a1a50; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    thead { background: #0d0d30; position: sticky; top: 0; z-index: 10; }
+    th { padding: 9px 11px; text-align: left; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: #4a5568; border-bottom: 1px solid #1a1a50; white-space: nowrap; }
+    td { padding: 7px 11px; border-bottom: 1px solid #0f0f2e; vertical-align: middle; }
+    tr.data-row:hover td { background: rgba(255,255,255,0.015); }
+
+    .td-num   { width: 36px; color: #2a2a5e; font-size: 11px; }
+    .td-slug  { min-width: 210px; }
+    .td-title { min-width: 240px; }
+    .td-topic { min-width: 100px; }
+    .td-date  { min-width: 90px; font-family: monospace; font-size: 11px; color: #6b7280; }
+    .td-cur   { width: 64px; }
+    .td-file  { min-width: 90px; }
+    .td-prev  { width: 56px; }
+    .td-status { min-width: 120px; }
+
+    code { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; background: #111130; padding: 1px 5px; border-radius: 3px; color: #a5b4fc; }
+
+    .tbadge { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 3px; white-space: nowrap; }
+    .t-kpop    { background: rgba(232,0,61,.2);   color: #f87171; border: 1px solid rgba(232,0,61,.3); }
+    .t-kfood   { background: rgba(34,197,94,.13); color: #4ade80; border: 1px solid rgba(34,197,94,.2); }
+    .t-tech    { background: rgba(59,130,246,.18); color: #60a5fa; border: 1px solid rgba(59,130,246,.28); }
+    .t-sports  { background: rgba(245,158,11,.18); color: #fbbf24; border: 1px solid rgba(245,158,11,.28); }
+    .t-culture { background: rgba(168,85,247,.18); color: #c084fc; border: 1px solid rgba(168,85,247,.28); }
+    .t-other   { background: rgba(107,114,128,.18); color: #9ca3af; border: 1px solid rgba(107,114,128,.28); }
+
+    .badge { font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 3px; white-space: nowrap; display: inline-block; }
+    .b-none      { background: #111130; color: #2a3050; }
+    .b-has-thumb { background: rgba(34,197,94,.13); color: #4ade80; border: 1px solid rgba(34,197,94,.2); }
+    .b-ready     { background: rgba(59,130,246,.18); color: #60a5fa; border: 1px solid rgba(59,130,246,.28); }
+    .b-uploading { background: rgba(245,158,11,.18); color: #fbbf24; border: 1px solid rgba(245,158,11,.28); }
+    .b-success   { background: rgba(34,197,94,.18); color: #4ade80; border: 1px solid rgba(34,197,94,.28); }
+    .b-error     { background: rgba(239,68,68,.18); color: #f87171; border: 1px solid rgba(239,68,68,.28); }
+
+    input[type="file"] { font-size: 11px; color: #9ca3af; max-width: 130px; }
+    input[type="file"]::file-selector-button {
+      padding: 3px 7px; background: #1a1a3e; border: 1px solid #2a2a5e;
+      border-radius: 3px; color: #c8d0e8; font-size: 10px; cursor: pointer; margin-right: 5px;
+    }
+    input[type="file"]::file-selector-button:hover { background: #22224e; }
+
+    .prev-img { display: none; height: 34px; width: 56px; border-radius: 3px; border: 1px solid #2a2a5e; object-fit: cover; }
+    .cur-img  { height: 34px; width: 56px; border-radius: 3px; border: 1px solid #2a2a5e; object-fit: cover; display: block; }
+    .cur-none { width: 56px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+    input[type="checkbox"] { accent-color: #E8003D; }
+
+    .hint-box { margin-top: 14px; padding: 12px 16px; background: #0d0d30; border: 1px solid #1a1a50; border-radius: 8px; font-size: 11px; color: #4a5568; line-height: 1.9; }
+    .hint-box strong { color: #9ca3af; }
+
+    .empty-row td { text-align: center; padding: 32px; color: #4a5568; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Korean School — Article Thumb Upload Admin</h1>
+  <span class="sub" id="header-sub">Upload article thumbnails to Supabase · load articles to begin</span>
+</header>
+
+<div class="container">
+
+  <div class="panel">
+    <div class="panel-title">Supabase Configuration</div>
+    <div class="config-row">
+      <label>Service Role Key</label>
+      <input type="password" id="service-key" placeholder="eyJhbGci… (Settings → API → service_role)" autocomplete="off">
+      <button class="btn-ghost" onclick="saveKey()">Save to browser</button>
+      <button class="btn-ghost" onclick="toggleKeyVisibility()">Show</button>
+      <button class="btn-ghost" id="load-btn" onclick="loadArticles()">Load Articles</button>
+      <span id="load-msg" style="font-size:11px;color:#6b7280;"></span>
+    </div>
+    <div style="margin-top:8px;font-size:11px;color:#2a3050;">
+      URL: <code>https://juhkgpgrbueaijgfvwoa.supabase.co</code>&nbsp;&nbsp;Bucket: <code>site-images</code>&nbsp;&nbsp;Path: <code>article-thumb/{slug}.webp</code>
+    </div>
+  </div>
+
+  <div class="actions-bar">
+    <button class="btn-primary" id="upload-btn" onclick="uploadAll()" disabled>Upload All (with files)</button>
+    <label class="rl"><input type="checkbox" id="reupload"> Re-upload already uploaded</label>
+    <span class="summary" id="summary">Load articles first</span>
+  </div>
+
+  <div class="progress-wrap" id="progress-wrap">
+    <div class="progress-track"><div class="progress-fill" id="pfill"></div></div>
+    <div class="progress-label" id="plabel">0 / 0</div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="td-num">#</th>
+          <th class="td-slug">Slug</th>
+          <th class="td-title">Title (EN)</th>
+          <th class="td-topic">Topic</th>
+          <th class="td-date">Published</th>
+          <th class="td-cur">Current</th>
+          <th class="td-file">File</th>
+          <th class="td-prev">Preview</th>
+          <th class="td-status">Status</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr class="empty-row"><td colspan="9">Click <strong>Load Articles</strong> to fetch from Supabase.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="hint-box">
+    <strong>How to use:</strong>&nbsp;
+    1. Enter your <strong>service role key</strong> and click <em>Save to browser</em>.&nbsp;
+    2. Click <em>Load Articles</em> to fetch all articles from Supabase.&nbsp;
+    3. For each row, click <em>Choose File</em> and pick a WebP image (any format accepted — resized &amp; converted automatically to <strong>640 × 360 px WebP</strong>).&nbsp;
+    4. Click <em>Upload All</em> — each image is uploaded to <code>site-images/article-thumb/{slug}.webp</code> and the article's <code>thumbnail_url</code> is updated in the database.&nbsp;
+    5. Green rows = done. Red rows = check console for the error.
+    <br><br>
+    <strong>Tip:</strong> Rows with a current thumbnail shown in the <em>Current</em> column already have one. Use the <em>Re-upload already uploaded</em> checkbox only if you want to overwrite them.
+  </div>
+
+</div>
+
+<script>
+const SUPABASE_URL  = 'https://juhkgpgrbueaijgfvwoa.supabase.co';
+const BUCKET        = 'site-images';
+const THUMB_PREFIX  = 'article-thumb';
+const THUMB_W       = 640;
+const THUMB_H       = 360;
+const THUMB_QUALITY = 0.88;
+
+let articles = [];
+
+// ── Config ────────────────────────────────────────────────────────────────────
+function saveKey() {
+  const k = document.getElementById('service-key').value.trim();
+  if (!k) { alert('Key is empty'); return; }
+  localStorage.setItem('sb_service_key', k);
+  alert('Service role key saved to localStorage.');
+}
+
+function toggleKeyVisibility() {
+  const inp = document.getElementById('service-key');
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+}
+
+function getClient() {
+  const key = document.getElementById('service-key').value.trim() || localStorage.getItem('sb_service_key') || '';
+  if (!key) throw new Error('Enter service role key first');
+  return supabase.createClient(SUPABASE_URL, key, { auth: { persistSession: false, autoRefreshToken: false } });
+}
+
+// ── Load articles ─────────────────────────────────────────────────────────────
+async function loadArticles() {
+  const msg  = document.getElementById('load-msg');
+  const btn  = document.getElementById('load-btn');
+  msg.textContent = 'Loading…';
+  msg.style.color = '#6b7280';
+  btn.disabled = true;
+
+  let client;
+  try { client = getClient(); } catch (e) { msg.textContent = e.message; msg.style.color = '#f87171'; btn.disabled = false; return; }
+
+  const { data, error } = await client
+    .from('articles')
+    .select('id, slug, title_en, thumbnail_url, published_at, topics(name_en, slug)')
+    .order('published_at', { ascending: false });
+
+  btn.disabled = false;
+
+  if (error) {
+    msg.textContent = 'Error: ' + error.message;
+    msg.style.color = '#f87171';
+    return;
+  }
+
+  articles = data || [];
+  msg.textContent = `${articles.length} articles loaded ✓`;
+  msg.style.color = '#4ade80';
+
+  document.getElementById('header-sub').textContent =
+    `Upload article thumbnails to Supabase · ${articles.length} articles`;
+  document.getElementById('upload-btn').disabled = false;
+
+  renderTable();
+  updateSummary();
+}
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function topicBadgeHTML(topic) {
+  if (!topic) return '<span class="tbadge t-other">—</span>';
+  const slug = topic.slug || '';
+  const cls =
+    slug === 'kpop'    ? 't-kpop'    :
+    slug === 'food'    ? 't-kfood'   :
+    slug === 'tech'    ? 't-tech'    :
+    slug === 'sports'  ? 't-sports'  :
+    slug === 'culture' ? 't-culture' : 't-other';
+  return `<span class="tbadge ${cls}">${topic.name_en || slug}</span>`;
+}
+
+function renderTable() {
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+
+  if (articles.length === 0) {
+    tbody.innerHTML = '<tr class="empty-row"><td colspan="9">No articles found.</td></tr>';
+    return;
+  }
+
+  articles.forEach((article, i) => {
+    const curThumb = article.thumbnail_url
+      ? `<img class="cur-img" src="${esc(article.thumbnail_url)}" alt="" loading="lazy">`
+      : `<div class="cur-none">—</div>`;
+
+    const dateStr = article.published_at
+      ? article.published_at.slice(0, 10)
+      : '—';
+
+    const initStatus = article.thumbnail_url
+      ? `<span class="badge b-has-thumb" id="st-${i}" data-state="has-thumb">Has thumb</span>`
+      : `<span class="badge b-none" id="st-${i}" data-state="none">—</span>`;
+
+    const tr = document.createElement('tr');
+    tr.className = 'data-row';
+    tr.id = `row-${i}`;
+    tr.innerHTML = `
+      <td class="td-num">${i + 1}</td>
+      <td class="td-slug"><code>${esc(article.slug)}</code></td>
+      <td class="td-title">${esc(article.title_en)}</td>
+      <td class="td-topic">${topicBadgeHTML(article.topics)}</td>
+      <td class="td-date">${dateStr}</td>
+      <td class="td-cur">${curThumb}</td>
+      <td class="td-file"><input type="file" accept="image/*" id="f-${i}" onchange="onFileSelect(${i})"></td>
+      <td class="td-prev"><img class="prev-img" id="prev-${i}" alt=""></td>
+      <td class="td-status">${initStatus}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function esc(str) {
+  return String(str ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── File select ───────────────────────────────────────────────────────────────
+function onFileSelect(i) {
+  const file = document.getElementById(`f-${i}`).files[0];
+  if (!file) return;
+  const prev = document.getElementById(`prev-${i}`);
+  prev.src = URL.createObjectURL(file);
+  prev.style.display = 'block';
+  const kb = (file.size / 1024).toFixed(0);
+  setStatus(i, 'ready', `${kb} KB`);
+  updateSummary();
+}
+
+function updateSummary() {
+  let count = 0;
+  for (let i = 0; i < articles.length; i++) {
+    const f = document.getElementById(`f-${i}`);
+    if (f && f.files.length > 0) count++;
+  }
+  document.getElementById('summary').textContent =
+    `${count} / ${articles.length} files selected`;
+}
+
+function setStatus(i, state, text) {
+  const el = document.getElementById(`st-${i}`);
+  if (!el) return;
+  el.className = `badge b-${state}`;
+  el.dataset.state = state;
+  el.textContent = text;
+}
+
+// ── WebP conversion ───────────────────────────────────────────────────────────
+async function toWebP(file, maxW, maxH, quality = THUMB_QUALITY) {
+  let bitmap;
+  try { bitmap = await createImageBitmap(file); } catch { return file; }
+  const scale = Math.min(1, maxW / bitmap.width, maxH / bitmap.height);
+  const w = Math.round(bitmap.width * scale);
+  const h = Math.round(bitmap.height * scale);
+  const canvas = document.createElement('canvas');
+  canvas.width = w; canvas.height = h;
+  canvas.getContext('2d').drawImage(bitmap, 0, 0, w, h);
+  bitmap.close();
+  return new Promise((res, rej) => {
+    canvas.toBlob(blob => blob ? res(blob) : rej(new Error('WebP conversion failed')), 'image/webp', quality);
+  });
+}
+
+// ── Upload all ────────────────────────────────────────────────────────────────
+async function uploadAll() {
+  let client;
+  try { client = getClient(); } catch (e) { alert(e.message); return; }
+
+  const reupload = document.getElementById('reupload').checked;
+
+  const queue = articles.map((article, i) => ({ article, i })).filter(({ i }) => {
+    const f = document.getElementById(`f-${i}`);
+    const hasFile = f && f.files.length > 0;
+    const state = document.getElementById(`st-${i}`)?.dataset.state;
+    const alreadyDone = state === 'success';
+    return hasFile && (reupload || !alreadyDone);
+  });
+
+  if (queue.length === 0) {
+    alert('No files selected (or all already uploaded — check Re-upload).');
+    return;
+  }
+
+  const btn = document.getElementById('upload-btn');
+  btn.disabled = true;
+
+  const wrap = document.getElementById('progress-wrap');
+  wrap.classList.add('visible');
+  let done = 0;
+  updateProgress(0, queue.length);
+
+  for (const { article, i } of queue) {
+    const file = document.getElementById(`f-${i}`).files[0];
+    const storagePath = `${THUMB_PREFIX}/${article.slug}.webp`;
+
+    setStatus(i, 'uploading', 'Converting…');
+    try {
+      const blob = await toWebP(file, THUMB_W, THUMB_H);
+
+      setStatus(i, 'uploading', 'Uploading…');
+      const { error: upErr } = await client.storage
+        .from(BUCKET)
+        .upload(storagePath, blob, { contentType: 'image/webp', upsert: true });
+      if (upErr) throw upErr;
+
+      const { data: urlData } = client.storage.from(BUCKET).getPublicUrl(storagePath);
+      const publicUrl = urlData.publicUrl;
+
+      setStatus(i, 'uploading', 'Saving URL…');
+      const { error: dbErr } = await client
+        .from('articles')
+        .update({ thumbnail_url: publicUrl })
+        .eq('id', article.id);
+      if (dbErr) throw dbErr;
+
+      article.thumbnail_url = publicUrl;
+      const kbOut = (blob.size / 1024).toFixed(0);
+      setStatus(i, 'success', `Done  ${kbOut} KB`);
+    } catch (e) {
+      console.error(`Upload failed [${article.slug}]:`, e);
+      const msg = e?.message || e?.error_description || JSON.stringify(e);
+      setStatus(i, 'error', msg.slice(0, 80));
+    }
+
+    done++;
+    updateProgress(done, queue.length);
+  }
+
+  btn.disabled = false;
+
+  const successes = queue.filter(({ i }) =>
+    document.getElementById(`st-${i}`)?.dataset.state === 'success'
+  ).length;
+  alert(`Upload complete: ${successes} / ${queue.length} successful.`);
+}
+
+function updateProgress(done, total) {
+  const pct = total > 0 ? Math.round(done / total * 100) : 0;
+  document.getElementById('pfill').style.width = pct + '%';
+  document.getElementById('plabel').textContent = `${done} / ${total} uploaded  (${pct}%)`;
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('sb_service_key');
+  if (saved) document.getElementById('service-key').value = saved;
+});
+</script>
+</body>
+</html>

@@ -8,7 +8,14 @@
       "name_kr": "쇼핑 단어",
       "first_step": 1,
       "last_step": 9,
-      "time_minutes": 8
+      "time_minutes": 8,
+      "name_zh_tw": "購物詞彙",
+      "name_es": "Vocabulario de Compras",
+      "name_fr": "Vocabulaire des Achats",
+      "name_de": "Einkaufsvokabular",
+      "name_vi": "Từ vựng mua sắm",
+      "name_th": "คำศัพท์การช้อปปิ้ง",
+      "name_id": "Kosakata Belanja"
     },
     {
       "id": 2,
@@ -16,7 +23,14 @@
       "name_kr": "가게에서",
       "first_step": 10,
       "last_step": 18,
-      "time_minutes": 8
+      "time_minutes": 8,
+      "name_zh_tw": "在店裡",
+      "name_es": "En la Tienda",
+      "name_fr": "Dans le Magasin",
+      "name_de": "Im Geschäft",
+      "name_vi": "Trong cửa hàng",
+      "name_th": "ในร้านค้า",
+      "name_id": "Di Toko"
     },
     {
       "id": 3,
@@ -24,7 +38,14 @@
       "name_kr": "가격·숫자",
       "first_step": 19,
       "last_step": 26,
-      "time_minutes": 7
+      "time_minutes": 7,
+      "name_zh_tw": "價格與數字",
+      "name_es": "Precios y Números",
+      "name_fr": "Prix et Chiffres",
+      "name_de": "Preise & Zahlen",
+      "name_vi": "Giá cả & Con số",
+      "name_th": "ราคาและตัวเลข",
+      "name_id": "Harga & Angka"
     },
     {
       "id": 4,
@@ -32,7 +53,14 @@
       "name_kr": "거래·마무리",
       "first_step": 27,
       "last_step": 33,
-      "time_minutes": 6
+      "time_minutes": 6,
+      "name_zh_tw": "交易結算",
+      "name_es": "Transacciones",
+      "name_fr": "Transactions",
+      "name_de": "Transaktionen",
+      "name_vi": "Giao dịch",
+      "name_th": "การชำระเงิน",
+      "name_id": "Transaksi"
     }
   ],
   "steps": [
@@ -41,17 +69,59 @@
       "stage": 1,
       "type": "reading_card",
       "title": "Shopping in Korea (쇼핑)",
+      "title_zh_tw": "在韓國購物（쇼핑）",
       "title_kr": "쇼핑",
       "body": "Korea has a rich shopping culture — from traditional outdoor markets (시장) to high-end department stores (백화점) to 24-hour convenience stores (편의점) on every corner. Bargaining is normal at traditional markets but not at chain stores or malls. Learning to ask prices, compare items, and complete transactions in Korean will make your shopping experience much smoother and more personal. The key question you'll use constantly is 얼마예요? (How much is it?)",
+      "body_zh_tw": "韓國有豐富的購物文化——從傳統的戶外市場（시장）到高端百貨公司（백화점），到街角的24小時便利商店（편의점）。在傳統市場議價是正常的，但在連鎖店或商場則不行。學會用韓語詢問價格、比較商品和完成交易，將使你的購物體驗更順暢、更個人化。你最常用的關鍵問句是얼마예요？（多少錢？）",
       "tip": {
         "icon": "🛒",
         "label": "Gwangjang Market vs department store",
         "text": "At traditional markets like 광장시장 (Gwangjang Market) in Seoul, you can bargain — especially if buying multiple items. At 롯데백화점 (Lotte Department Store) or any chain, prices are fixed. Watch for 세일 (sale) signs and 할인 (discount) promotions."
       },
+      "tip_zh_tw": {
+        "label": "廣藏市場 vs 百貨公司",
+        "text": "在首爾광장시장（廣藏市場）這樣的傳統市場，你可以議價——尤其是購買多件時。在롯데백화점（樂天百貨）或任何連鎖店，價格是固定的。留意세일（折扣）標誌和할인（優惠）促銷。"
+      },
       "body_ja": "韓国は豊かなショッピング文化を持っています——伝統的な屋外の市場（시장）から高級デパート（백화점）、24時間コンビニ（편의점）まであらゆる場所にあります。値引き交渉は伝統市場では普通ですが、チェーン店やモールでは行いません。価格を尋ね・商品を比較し・会計を韓国語でこなせると、ショッピング体験がより快適でパーソナルなものになります。常に使う核心フレーズは 얼마예요?（いくらですか?）です。",
       "tip_ja": {
         "label": "광장시장 vs デパート",
         "text": "ソウルの광장시장（広蔵市場）のような伝統市場では値引き交渉ができます——特に複数点購入するときは。롯데백화점（ロッテデパート）やチェーン店では価格は固定です。세일（セール）のサインや할인（値引き）プロモーションを見逃さずに。"
+      },
+      "title_es": "De Compras en Corea (쇼핑)",
+      "body_es": "Corea tiene una rica cultura de compras — desde los mercados tradicionales al aire libre (시장) hasta los grandes almacenes de lujo (백화점) y las tiendas de conveniencia abiertas 24 horas (편의점) en cada esquina. El regateo es normal en los mercados tradicionales pero no en las cadenas o centros comerciales. Aprender a preguntar precios, comparar artículos y completar transacciones en coreano hará que tu experiencia de compras sea mucho más fluida y personal. La pregunta clave que usarás constantemente es 얼마예요? (¿Cuánto cuesta?)",
+      "tip_es": {
+        "label": "Mercado Gwangjang vs grandes almacenes",
+        "text": "En mercados tradicionales como 광장시장 (Mercado Gwangjang) en Seúl, puedes regatear — especialmente si compras varios artículos. En 롯데백화점 (Lotte Department Store) o cualquier cadena, los precios son fijos. Busca señales de 세일 (rebajas) y promociones de 할인 (descuento)."
+      },
+      "title_fr": "Faire du Shopping en Corée (쇼핑)",
+      "body_fr": "La Corée a une riche culture du shopping — des marchés traditionnels en plein air (시장) aux grands magasins haut de gamme (백화점), en passant par les épiceries ouvertes 24h/24 (편의점) à chaque coin de rue. Le marchandage est normal dans les marchés traditionnels mais pas dans les chaînes ou les centres commerciaux. Apprendre à demander les prix, comparer les articles et effectuer des transactions en coréen rendra votre expérience d'achat bien plus fluide et personnelle. La question clé que vous utiliserez constamment est 얼마예요 ? (Combien ça coûte ?)",
+      "tip_fr": {
+        "label": "Marché Gwangjang vs grand magasin",
+        "text": "Dans les marchés traditionnels comme 광장시장 (Marché Gwangjang) à Séoul, vous pouvez marchander — surtout si vous achetez plusieurs articles. Dans les 롯데백화점 (Grands Magasins Lotte) ou n'importe quelle chaîne, les prix sont fixes. Cherchez les panneaux 세일 (soldes) et les promotions 할인 (remise)."
+      },
+      "title_de": "Einkaufen in Korea (쇼핑)",
+      "body_de": "Korea hat eine reiche Einkaufskultur — von traditionellen Märkten im Freien (시장) über hochwertige Kaufhäuser (백화점) bis hin zu 24-Stunden-Supermärkten (편의점) an jeder Ecke. Auf traditionellen Märkten ist Feilschen normal, in Kettenshops oder Einkaufszentren jedoch nicht. Wenn du lernst, Preise zu erfragen, Artikel zu vergleichen und Einkäufe auf Koreanisch abzuwickeln, wird dein Einkaufserlebnis viel flüssiger und persönlicher. Die wichtigste Frage, die du ständig brauchen wirst, ist 얼마예요? (Wie viel kostet es?)",
+      "tip_de": {
+        "label": "Gwangjang-Markt vs. Kaufhaus",
+        "text": "Auf traditionellen Märkten wie dem 광장시장 (Gwangjang-Markt) in Seoul kannst du handeln — besonders wenn du mehrere Artikel kaufst. Im 롯데백화점 (Lotte-Kaufhaus) oder in jeder Kette sind die Preise fest. Achte auf 세일 (Sale)-Schilder und 할인 (Rabatt)-Aktionen."
+      },
+      "title_th": "การช้อปปิ้งในเกาหลี (쇼핑)",
+      "body_th": "เกาหลีมีวัฒนธรรมการช้อปปิ้งที่หลากหลาย — จากตลาดกลางแจ้งแบบดั้งเดิม (시장) ถึงห้างสรรพสินค้าระดับสูง (백화점) และร้านสะดวกซื้อ (편의점) ที่มีอยู่ทุกมุม คำศัพท์การช้อปปิ้งเป็นหนึ่งในชุดคำศัพท์ที่มีประโยชน์ที่สุดสำหรับนักท่องเที่ยวและผู้อพยพ",
+      "tip_th": {
+        "label": "ตลาด Gwangjang vs ห้างสรรพสินค้า",
+        "text": "ที่ตลาดดั้งเดิมอย่าง 광장시장 (ตลาด Gwangjang) ในกรุงโซล คุณต่อราคาได้ — ลอง 깎아 주세요 (ช่วยลดให้หน่อยได้ไหม?) ในห้างสรรพสินค้า ราคาตายตัวและไม่ต่อ"
+      },
+      "title_id": "Belanja di Korea (쇼핑)",
+      "body_id": "Korea memiliki budaya belanja yang kaya — dari pasar tradisional terbuka (시장) hingga department store mewah (백화점) sampai minimarket 24 jam (편의점) di setiap sudut. Tawar-menawar itu wajar di pasar tradisional tetapi tidak di toko waralaba atau mal. Belajar menanyakan harga, membandingkan barang, dan menyelesaikan transaksi dalam bahasa Korea akan membuat pengalaman belanja Anda jauh lebih lancar dan personal. Pertanyaan kunci yang akan sering Anda gunakan adalah 얼마예요? (Berapa harganya?)",
+      "tip_id": {
+        "label": "Pasar Gwangjang vs department store",
+        "text": "Di pasar tradisional seperti 광장시장 (Pasar Gwangjang) di Seoul, Anda bisa menawar — terutama jika membeli beberapa barang sekaligus. Di 롯데백화점 (Lotte Department Store) atau toko waralaba mana pun, harganya tetap. Perhatikan tanda 세일 (obral) dan promosi 할인 (diskon)."
+      },
+      "title_vi": "Mua sắm ở Hàn Quốc (쇼핑)",
+      "body_vi": "Hàn Quốc có văn hóa mua sắm phong phú — từ chợ truyền thống ngoài trời (시장) đến các trung tâm thương mại cao cấp (백화점) và cửa hàng tiện lợi 24 giờ (편의점) ở mọi góc phố. Mặc cả là chuyện bình thường ở chợ truyền thống nhưng không áp dụng tại cửa hàng chuỗi hay trung tâm mua sắm. Học cách hỏi giá, so sánh sản phẩm và hoàn tất giao dịch bằng tiếng Hàn sẽ khiến trải nghiệm mua sắm của bạn suôn sẻ và thân thiện hơn nhiều. Câu hỏi then chốt bạn sẽ dùng liên tục là 얼마예요? (Cái này bao nhiêu tiền?)",
+      "tip_vi": {
+        "label": "Chợ Gwangjang và trung tâm thương mại",
+        "text": "Ở các chợ truyền thống như 광장시장 (Chợ Gwangjang) tại Seoul, bạn có thể mặc cả — nhất là khi mua nhiều món. Tại 롯데백화점 (Trung tâm thương mại Lotte) hay bất kỳ chuỗi nào, giá cố định. Hãy để ý các bảng 세일 (sale) và khuyến mãi 할인 (giảm giá)."
       }
     },
     {
@@ -65,8 +135,15 @@
       "romanization": "ga-ge",
       "audio": "가게",
       "meaning": "store / shop",
+      "meaning_zh_tw": "商店",
       "meaning_ja": "お店 / 店",
-      "katakana": "カゲ"
+      "katakana": "カゲ",
+      "meaning_es": "tienda / comercio",
+      "meaning_fr": "magasin / boutique",
+      "meaning_de": "Geschäft / Laden",
+      "meaning_vi": "cửa hàng",
+      "meaning_th": "ร้านค้า / ร้านขายของ",
+      "meaning_id": "toko / kios"
     },
     {
       "id": 3,
@@ -79,8 +156,15 @@
       "romanization": "si-jang",
       "audio": "시장",
       "meaning": "market (traditional outdoor)",
+      "meaning_zh_tw": "市場（傳統戶外市場）",
       "meaning_ja": "市場 / マーケット",
-      "katakana": "シジャン"
+      "katakana": "シジャン",
+      "meaning_es": "mercado (mercado tradicional al aire libre)",
+      "meaning_fr": "marché (marché traditionnel en plein air)",
+      "meaning_de": "Markt (traditioneller Freiluftmarkt)",
+      "meaning_vi": "chợ (ngoài trời truyền thống)",
+      "meaning_th": "ตลาด (กลางแจ้งแบบดั้งเดิม)",
+      "meaning_id": "pasar (tradisional terbuka)"
     },
     {
       "id": 4,
@@ -94,8 +178,15 @@
       "romanization": "baek-hwa-jeom",
       "audio": "백화점",
       "meaning": "department store",
+      "meaning_zh_tw": "百貨公司",
       "meaning_ja": "デパート / 百貨店",
-      "katakana": "ペッファジョム"
+      "katakana": "ペッファジョム",
+      "meaning_es": "grandes almacenes / tienda por departamentos",
+      "meaning_fr": "grand magasin",
+      "meaning_de": "Kaufhaus / Warenhaus",
+      "meaning_vi": "trung tâm thương mại / cửa hàng bách hóa",
+      "meaning_th": "ห้างสรรพสินค้า",
+      "meaning_id": "department store"
     },
     {
       "id": 5,
@@ -109,38 +200,136 @@
       "romanization": "pyeon-ui-jeom",
       "audio": "편의점",
       "meaning": "convenience store",
+      "meaning_zh_tw": "便利商店",
       "meaning_ja": "コンビニ",
-      "katakana": "ピョニジョム"
+      "katakana": "ピョニジョム",
+      "meaning_es": "tienda de conveniencia",
+      "meaning_fr": "épicerie de proximité",
+      "meaning_de": "Supermarkt / Convenience-Store",
+      "meaning_vi": "cửa hàng tiện lợi",
+      "meaning_th": "ร้านสะดวกซื้อ",
+      "meaning_id": "minimarket"
     },
     {
       "id": 6,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Which word means 'market' (traditional outdoor market)?",
+      "prompt_zh_tw": "哪個詞表示「市場」（傳統戶外市場）？",
       "choices": [
         "가게",
         "백화점",
         "시장",
         "편의점"
       ],
-      "correct": "시장"
+      "choices_zh_tw": [
+        "가게",
+        "백화점",
+        "시장",
+        "편의점"
+      ],
+      "correct": "시장",
+      "prompt_es": "¿Qué palabra significa \"mercado\" (mercado tradicional al aire libre)?",
+      "choices_es": [
+        "가게",
+        "백화점",
+        "시장",
+        "편의점"
+      ],
+      "prompt_fr": "Quel mot signifie « marché » (marché traditionnel en plein air) ?",
+      "choices_fr": [
+        "가게",
+        "백화점",
+        "시장",
+        "편의점"
+      ],
+      "prompt_de": "Welches Wort bedeutet „Markt\" (traditioneller Freiluftmarkt)?",
+      "choices_de": [
+        "가게",
+        "백화점",
+        "시장",
+        "편의점"
+      ],
+      "prompt_th": "คำใดหมายถึง \"ตลาด\" (ตลาดกลางแจ้งแบบดั้งเดิม)?",
+      "choices_th": [
+        "가게",
+        "백화점",
+        "시장",
+        "편의점"
+      ],
+      "prompt_id": "Kata mana yang berarti 'pasar' (pasar tradisional terbuka)?",
+      "choices_id": [
+        "가게",
+        "백화점",
+        "시장",
+        "편의점"
+      ],
+      "prompt_vi": "Từ nào có nghĩa là 'chợ' (chợ truyền thống ngoài trời)?",
+      "choices_vi": [
+        "가게",
+        "백화점",
+        "시장",
+        "편의점"
+      ]
     },
     {
       "id": 7,
       "stage": 1,
       "type": "reading_card",
       "title": "Shopping Item Words (쇼핑 물건)",
+      "title_zh_tw": "購物物品詞彙（쇼핑 물건）",
       "title_kr": "쇼핑 물건",
       "body": "Korean uses many loanwords for modern products — 핸드폰 (cell phone), 노트북 (laptop), 티셔츠 (T-shirt). Native Korean and Sino-Korean words cover traditional items: 옷 (clothes), 신발 (shoes), 가방 (bag). When shopping, you'll often point to something and say 이거 (this one) — a simple and effective strategy. Sizes are often given in free-size (프리 사이즈), small (S), medium (M), and large (L/XL).",
+      "body_zh_tw": "韓語對現代產品使用許多外來語——핸드폰（手機）、노트북（筆記型電腦）、티셔츠（T恤）。固有韓語和漢字韓語涵蓋傳統物品：옷（衣服）、신발（鞋子）、가방（包）。購物時，你經常會指著某樣東西說이거（這個）——這是一個簡單有效的策略。尺寸通常以free-size（프리 사이즈）、S、M和L/XL表示。",
       "tip": {
         "icon": "👕",
         "label": "이거 주세요 — your shopping lifeline",
         "text": "이거 주세요 (I'll take this one, please) + 얼마예요? (How much?) will get you through most Korean shopping scenarios even if you know little else. Point, say these two phrases, and you're set."
       },
+      "tip_zh_tw": {
+        "label": "이거 주세요——你的購物救命句",
+        "text": "이거 주세요（這個，請）＋얼마예요?（多少錢？）這兩句話，即使你幾乎不懂其他韓語，也能應付大多數韓國購物場景。指著商品說這兩句話，就搞定了。"
+      },
       "body_ja": "韓国語は現代の商品に多くの借用語を使います——핸드폰（携帯電話）、노트북（ノートパソコン）、티셔츠（Tシャツ）。伝統的な品物にはネイティブ韓国語や漢語系語彙が使われます：옷（服）、신발（靴）、가방（バッグ）。買い物では、何かを指さして 이거（これ）と言うのが簡単で効果的な方法です。サイズはフリーサイズ（프리 사이즈）、スモール（S）、ミディアム（M）、ラージ（L/XL）で表示されることが多いです。",
       "tip_ja": {
         "label": "いごじゅせよ——買い物の合言葉",
         "text": "いご 주세요（이거 주세요：これをください）＋ 얼마예요?（いくらですか?）があれば、韓国の買い物シーンのほとんどを乗り切れます。指差してこの2フレーズを言えばOKです。"
+      },
+      "title_es": "Palabras de Artículos de Compra (쇼핑 물건)",
+      "body_es": "El coreano usa muchos préstamos lingüísticos para productos modernos — 핸드폰 (móvil), 노트북 (portátil), 티셔츠 (camiseta). Las palabras nativas coreanas y sino-coreanas cubren los artículos tradicionales: 옷 (ropa), 신발 (zapatos), 가방 (bolso). Al comprar, a menudo señalarás algo y dirás 이거 (este) — una estrategia simple y eficaz. Las tallas suelen darse en talla única (프리 사이즈), pequeña (S), mediana (M) y grande (L/XL).",
+      "tip_es": {
+        "label": "이거 주세요 — tu salvavidas de compras",
+        "text": "이거 주세요 (Por favor dame esto) + 얼마예요? (¿Cuánto cuesta?) te sacarán de la mayoría de situaciones de compra coreanas incluso si sabes poco más. Señala y di estas dos frases, y ya estás."
+      },
+      "title_fr": "Articles de Shopping (쇼핑 물건)",
+      "body_fr": "Le coréen utilise de nombreux mots empruntés pour les produits modernes — 핸드폰 (téléphone portable), 노트북 (ordinateur portable), 티셔츠 (t-shirt). Les mots coréens natifs et sino-coréens couvrent les articles traditionnels : 옷 (vêtements), 신발 (chaussures), 가방 (sac). Lors du shopping, vous pointez souvent quelque chose et dites 이거 (celui-ci) — une stratégie simple et efficace. Les tailles sont souvent indiquées en taille unique (프리 사이즈), petite (S), moyenne (M) et grande (L/XL).",
+      "tip_fr": {
+        "label": "이거 주세요 — votre bouée de sauvetage",
+        "text": "이거 주세요 (Je prends celui-ci, s'il vous plaît) + 얼마예요 ? (Combien ça coûte ?) vous permettront de vous en sortir dans la plupart des situations d'achat coréen, même si vous ne savez pas grand-chose d'autre. Pointez, dites ces deux phrases, et c'est réglé."
+      },
+      "title_de": "Einkaufsartikel (쇼핑 물건)",
+      "body_de": "Das Koreanische verwendet viele Lehnwörter für moderne Produkte — 핸드폰 (Handy), 노트북 (Laptop), 티셔츠 (T-Shirt). Native koreanische und sino-koreanische Wörter decken traditionelle Artikel ab: 옷 (Kleidung), 신발 (Schuhe), 가방 (Tasche). Beim Einkaufen zeigst du oft auf etwas und sagst 이거 (das hier) — eine einfache und wirkungsvolle Strategie. Größen werden häufig als Free-Size (프리 사이즈), Small (S), Medium (M) und Large (L/XL) angegeben.",
+      "tip_de": {
+        "label": "이거 주세요 — dein Einkaufs-Lebensretter",
+        "text": "이거 주세요 (Ich nehme das bitte) + 얼마예요? (Wie viel kostet es?) bringt dich durch die meisten koreanischen Einkaufssituationen, auch wenn du sonst wenig Koreanisch kannst. Zeig hin, sag diese zwei Sätze — fertig."
+      },
+      "title_th": "คำศัพท์สินค้า (쇼핑 물건)",
+      "body_th": "ภาษาเกาหลีใช้คำยืมจำนวนมากสำหรับสินค้าสมัยใหม่ — 핸드폰 (โทรศัพท์มือถือ) 노트북 (แล็ปท็อป) 티셔츠 (เสื้อยืด) คำเกาหลีดั้งเดิมใช้สำหรับสินค้าพื้นฐาน เช่น 옷 (เสื้อผ้า) 신발 (รองเท้า)",
+      "tip_th": {
+        "label": "이거 주세요 — ประโยคชีวิตรอดในการช้อปปิ้ง",
+        "text": "이거 주세요 (ขอสิ่งนี้ด้วย) + 얼마예요? (ราคาเท่าไหร่?) จะพาคุณผ่านสถานการณ์การช้อปปิ้งส่วนใหญ่ได้"
+      },
+      "title_id": "Kosakata Barang Belanja (쇼핑 물건)",
+      "body_id": "Bahasa Korea menggunakan banyak kata pinjaman untuk produk modern — 핸드폰 (ponsel), 노트북 (laptop), 티셔츠 (kaos). Kata Korea asli dan Sino-Korea mencakup barang tradisional: 옷 (pakaian), 신발 (sepatu), 가방 (tas). Saat berbelanja, Anda akan sering menunjuk sesuatu dan berkata 이거 (yang ini) — strategi sederhana dan efektif. Ukuran sering diberikan dalam free-size (프리 사이즈), kecil (S), sedang (M), dan besar (L/XL).",
+      "tip_id": {
+        "label": "이거 주세요 — penyelamat belanja Anda",
+        "text": "이거 주세요 (Saya ambil yang ini) + 얼마예요? (Berapa harganya?) akan membawa Anda melewati sebagian besar situasi belanja Korea bahkan jika Anda tidak tahu banyak hal lain. Tunjuk, ucapkan dua frasa ini, dan selesai."
+      },
+      "title_vi": "Từ chỉ đồ vật khi mua sắm (쇼핑 물건)",
+      "body_vi": "Tiếng Hàn dùng nhiều từ mượn cho các sản phẩm hiện đại — 핸드폰 (điện thoại di động), 노트북 (laptop), 티셔츠 (áo thun). Từ thuần Hàn và Hán Hàn dùng cho các món truyền thống: 옷 (quần áo), 신발 (giày), 가방 (túi). Khi mua sắm, bạn sẽ thường chỉ vào một thứ và nói 이거 (cái này) — một chiến lược đơn giản mà hiệu quả. Kích cỡ thường được cho theo free-size (프리 사이즈), nhỏ (S), vừa (M) và lớn (L/XL).",
+      "tip_vi": {
+        "label": "이거 주세요 — cứu cánh khi mua sắm",
+        "text": "이거 주세요 (Cho tôi lấy cái này) + 얼마예요? (Bao nhiêu tiền?) sẽ giúp bạn vượt qua hầu hết các tình huống mua sắm ở Hàn Quốc ngay cả khi bạn biết rất ít. Hãy chỉ, nói hai câu này, và bạn đã ổn."
       }
     },
     {
@@ -153,8 +342,15 @@
       "romanization": "ot",
       "audio": "옷",
       "meaning": "clothes / outfit",
+      "meaning_zh_tw": "衣服",
       "meaning_ja": "服 / 衣類",
-      "katakana": "オッ"
+      "katakana": "オッ",
+      "meaning_es": "ropa / atuendo",
+      "meaning_fr": "vêtements / tenue",
+      "meaning_de": "Kleidung / Outfit",
+      "meaning_vi": "quần áo / trang phục",
+      "meaning_th": "เสื้อผ้า / ชุด",
+      "meaning_id": "pakaian / busana"
     },
     {
       "id": 9,
@@ -167,25 +363,74 @@
       "romanization": "sin-bal",
       "audio": "신발",
       "meaning": "shoes / footwear",
+      "meaning_zh_tw": "鞋子",
       "meaning_ja": "靴",
-      "katakana": "シンバル"
+      "katakana": "シンバル",
+      "meaning_es": "zapatos / calzado",
+      "meaning_fr": "chaussures / chaussant",
+      "meaning_de": "Schuhe / Schuhwerk",
+      "meaning_vi": "giày dép",
+      "meaning_th": "รองเท้า / รองเท้าผ้าใบ",
+      "meaning_id": "sepatu / alas kaki"
     },
     {
       "id": 10,
       "stage": 2,
       "type": "reading_card",
       "title": "Key Shopping Phrases (쇼핑 표현)",
+      "title_zh_tw": "關鍵購物用語（쇼핑 표현）",
       "title_kr": "쇼핑 표현",
       "body": "A few essential phrases cover almost every shopping interaction. 얼마예요? (How much is it?) works for any price enquiry. 이거 주세요 (Please give me this) completes a purchase. 더 싸게 해 주세요 (Please make it cheaper) is used for bargaining at traditional markets. 있어요? (Do you have...?) + the item name asks if something is in stock. 없어요 means it's out of stock or unavailable.",
+      "body_zh_tw": "幾個基本用語幾乎能應對每一次購物互動。얼마예요？（多少錢？）適用於任何詢價。이거 주세요（請給我這個）完成購買。더 싸게 해 주세요（請便宜一點）用於在傳統市場議價。있어요?（你們有……嗎？）＋物品名稱，詢問某物是否有貨。없어요表示缺貨或無貨。",
       "tip": {
         "icon": "🗣️",
         "label": "Polite shopping tone",
         "text": "In Korean shops, staff will often greet you with 어서 오세요! (Welcome!). Respond with a nod or 안녕하세요. When you've finished shopping, 감사합니다 (thank you) is always appreciated. Shouting across the store is rare — get close before speaking."
       },
+      "tip_zh_tw": {
+        "label": "禮貌的購物語氣",
+        "text": "在韓國商店，員工通常會用어서 오세요!（歡迎光臨！）迎接你。以點頭或안녕하세요回應。購物結束後，감사합니다（謝謝）總是受歡迎的。在店內大聲呼叫比較少見——開口前先靠近員工。"
+      },
       "body_ja": "いくつかの必須フレーズで、ほぼすべての買い物の場面に対応できます。얼마예요?（いくらですか?）はどんな価格照会にも使えます。이거 주세요（これをください）で購入を完了します。더 싸게 해 주세요（もっと安くしてください）は伝統市場での値引き交渉に使います。있어요?（〜はありますか?）＋品物の名前で在庫を確認します。없어요は在庫切れや品切れを意味します。",
       "tip_ja": {
         "label": "丁寧な買い物スタイル",
         "text": "韓国の店では어서 오세요!（いらっしゃいませ!）と迎えられることが多いです。会釈か안녕하세요で応えましょう。買い物が終わったら감사합니다（ありがとうございます）は必ず喜ばれます。店内で大声を出すのは珍しいので、話しかける前に近寄りましょう。"
+      },
+      "title_es": "Frases Clave de Compras (쇼핑 표현)",
+      "body_es": "Unas pocas frases esenciales cubren casi toda interacción de compras. 얼마예요? (¿Cuánto cuesta?) sirve para cualquier consulta de precio. 이거 주세요 (Por favor dame esto) completa una compra. 더 싸게 해 주세요 (Por favor ponlo más barato) se usa para regatear en los mercados tradicionales. 있어요? (¿Tienes...?) + el nombre del artículo pregunta si algo está disponible. 없어요 significa que está agotado o no disponible.",
+      "tip_es": {
+        "label": "Tono educado de compras",
+        "text": "En las tiendas coreanas, el personal suele saludarte con ¡어서 오세요! (¡Bienvenido/a!). Responde con un gesto de cabeza o 안녕하세요. Cuando termines de comprar, 감사합니다 (gracias) siempre es apreciado. Gritar a través de la tienda es poco común — acércate antes de hablar."
+      },
+      "title_fr": "Phrases Clés du Shopping (쇼핑 표현)",
+      "body_fr": "Quelques phrases essentielles couvrent presque toutes les interactions d'achat. 얼마예요 ? (Combien ça coûte ?) fonctionne pour toute demande de prix. 이거 주세요 (Donnez-moi ça, s'il vous plaît) finalise un achat. 더 싸게 해 주세요 (S'il vous plaît, faites-le moins cher) est utilisé pour marchander dans les marchés traditionnels. 있어요 ? (Vous avez... ?) + le nom de l'article demande si quelque chose est disponible. 없어요 signifie qu'il est en rupture de stock ou indisponible.",
+      "tip_fr": {
+        "label": "Ton poli en magasin",
+        "text": "Dans les magasins coréens, le personnel vous accueillera souvent avec 어서 오세요 ! (Bienvenue !). Répondez avec un signe de tête ou 안녕하세요. Quand vous avez fini de faire vos achats, 감사합니다 (merci) est toujours apprécié. Crier à travers le magasin est rare — approchez-vous avant de parler."
+      },
+      "title_de": "Wichtige Einkaufsphrasen (쇼핑 표현)",
+      "body_de": "Ein paar grundlegende Phrasen decken fast jede Einkaufssituation ab. 얼마예요? (Wie viel kostet es?) funktioniert für jede Preisanfrage. 이거 주세요 (Gib mir bitte das hier) schließt einen Kauf ab. 더 싸게 해 주세요 (Mach es bitte billiger) wird zum Feilschen auf traditionellen Märkten verwendet. 있어요? (Haben Sie...?) + Artikelname fragt, ob etwas vorrätig ist. 없어요 bedeutet, dass es ausverkauft oder nicht verfügbar ist.",
+      "tip_de": {
+        "label": "Höflicher Ton im Laden",
+        "text": "In koreanischen Geschäften wirst du oft mit 어서 오세요! (Willkommen!) begrüßt. Antworte mit einem Nicken oder 안녕하세요. Nach dem Einkauf ist 감사합니다 (danke) immer willkommen. Im Laden zu rufen ist selten — tritt näher heran, bevor du sprichst."
+      },
+      "title_th": "สำนวนการช้อปปิ้งสำคัญ (쇼핑 표현)",
+      "body_th": "สำนวนสำคัญไม่กี่ประโยคครอบคลุมสถานการณ์การช้อปปิ้งเกือบทุกอย่าง 얼마예요? (ราคาเท่าไหร่?) ใช้ได้ทุกที่ 이거 주세요 (ขอสิ่งนี้) เป็นวิธีซื้อของที่ง่ายที่สุด 깎아 주세요 (ลดราคาให้หน่อยได้ไหม?) ใช้ในตลาดดั้งเดิม",
+      "tip_th": {
+        "label": "น้ำเสียงสุภาพในร้านค้า",
+        "text": "ในร้านค้าเกาหลี พนักงานมักทักทายด้วย 어서 오세요! (ยินดีต้อนรับ!) ตอบรับด้วยรอยยิ้มหรือพยักหน้า เมื่อสั่งของ ปิดท้ายด้วย 주세요 เสมอ"
+      },
+      "title_id": "Frasa Belanja Penting (쇼핑 표현)",
+      "body_id": "Beberapa frasa penting mencakup hampir semua interaksi belanja. 얼마예요? (Berapa harganya?) berlaku untuk pertanyaan harga apa pun. 이거 주세요 (Tolong berikan saya ini) menyelesaikan pembelian. 더 싸게 해 주세요 (Tolong buat lebih murah) digunakan untuk menawar di pasar tradisional. 있어요? (Apakah ada...?) + nama barang menanyakan apakah sesuatu tersedia. 없어요 berarti stok habis atau tidak tersedia.",
+      "tip_id": {
+        "label": "Nada sopan saat berbelanja",
+        "text": "Di toko-toko Korea, staf sering menyambut Anda dengan 어서 오세요! (Selamat datang!). Balas dengan anggukan atau 안녕하세요. Setelah selesai berbelanja, 감사합니다 (terima kasih) selalu dihargai. Berteriak melintasi toko jarang terjadi — dekati staf sebelum berbicara."
+      },
+      "title_vi": "Các câu mua sắm quan trọng (쇼핑 표현)",
+      "body_vi": "Vài câu thiết yếu bao quát gần như mọi tương tác mua sắm. 얼마예요? (Cái này bao nhiêu tiền?) dùng cho bất kỳ câu hỏi giá nào. 이거 주세요 (Cho tôi cái này) hoàn tất một giao dịch. 더 싸게 해 주세요 (Xin bớt giá đi) dùng để mặc cả ở chợ truyền thống. 있어요? (Có ... không?) + tên món hỏi xem có hàng không. 없어요 nghĩa là hết hàng hoặc không có.",
+      "tip_vi": {
+        "label": "Giọng điệu lịch sự khi mua sắm",
+        "text": "Ở các cửa hàng Hàn Quốc, nhân viên thường chào bạn bằng 어서 오세요! (Xin mời vào!). Hãy đáp lại bằng một cái gật đầu hoặc 안녕하세요. Khi mua sắm xong, 감사합니다 (cảm ơn) luôn được đón nhận. Hiếm khi hét ngang cửa hàng — hãy lại gần trước khi nói."
       }
     },
     {
@@ -201,8 +446,15 @@
       "romanization": "eol-ma-ye-yo",
       "audio": "얼마예요",
       "meaning": "How much is it?",
+      "meaning_zh_tw": "多少錢？",
       "meaning_ja": "いくらですか？",
-      "katakana": "オルマエヨ"
+      "katakana": "オルマエヨ",
+      "meaning_es": "¿Cuánto cuesta?",
+      "meaning_fr": "Combien ça coûte ?",
+      "meaning_de": "Wie viel kostet es?",
+      "meaning_vi": "Cái này bao nhiêu tiền?",
+      "meaning_th": "ราคาเท่าไหร่?",
+      "meaning_id": "Berapa harganya?"
     },
     {
       "id": 12,
@@ -219,8 +471,15 @@
       "romanization": "i-geo ju-se-yo",
       "audio": "이거 주세요",
       "meaning": "Please give me this / I'll take this",
+      "meaning_zh_tw": "請給我這個／我要這個",
       "meaning_ja": "これをください",
-      "katakana": "イゴ チュセヨ"
+      "katakana": "イゴ チュセヨ",
+      "meaning_es": "Por favor dame esto / Me llevo esto",
+      "meaning_fr": "Donnez-moi ça, s'il vous plaît / Je prends ça",
+      "meaning_de": "Gib mir bitte das hier / Ich nehme das",
+      "meaning_vi": "Cho tôi cái này / Tôi lấy cái này",
+      "meaning_th": "ขอสิ่งนี้ด้วย / ฉันจะเอาสิ่งนี้",
+      "meaning_id": "Tolong berikan saya ini / Saya ambil yang ini"
     },
     {
       "id": 13,
@@ -241,38 +500,136 @@
       "romanization": "deo ssa-ge hae ju-se-yo",
       "audio": "더 싸게 해 주세요",
       "meaning": "Please make it cheaper / Can you give me a discount?",
+      "meaning_zh_tw": "請便宜一點／可以打折嗎？",
       "meaning_ja": "もっと安くしてください",
-      "katakana": "テオ ッサゲ ヘ チュセヨ"
+      "katakana": "テオ ッサゲ ヘ チュセヨ",
+      "meaning_es": "Por favor ponlo más barato / ¿Me puede hacer descuento?",
+      "meaning_fr": "S'il vous plaît, faites-le moins cher / Vous pouvez me faire un prix ?",
+      "meaning_de": "Mach es bitte billiger / Kannst du mir einen Rabatt geben?",
+      "meaning_vi": "Làm ơn bớt giá / Bạn có thể giảm giá không?",
+      "meaning_th": "ช่วยลดราคาได้ไหม? / ให้ส่วนลดหน่อยได้ไหม?",
+      "meaning_id": "Tolong buat lebih murah / Bisakah dapat diskon?"
     },
     {
       "id": 14,
       "stage": 2,
       "type": "match_quiz",
       "prompt": "How do you ask 'How much is it?' in Korean?",
+      "prompt_zh_tw": "韓語中「多少錢？」怎麼說？",
       "choices": [
         "이거 주세요",
         "얼마예요?",
         "감사합니다",
         "있어요?"
       ],
-      "correct": "얼마예요?"
+      "choices_zh_tw": [
+        "이거 주세요",
+        "얼마예요?",
+        "감사합니다",
+        "있어요?"
+      ],
+      "correct": "얼마예요?",
+      "prompt_es": "¿Cómo preguntas \"¿Cuánto cuesta?\" en coreano?",
+      "choices_es": [
+        "이거 주세요",
+        "얼마예요?",
+        "감사합니다",
+        "있어요?"
+      ],
+      "prompt_fr": "Comment demande-t-on « Combien ça coûte ? » en coréen ?",
+      "choices_fr": [
+        "이거 주세요",
+        "얼마예요?",
+        "감사합니다",
+        "있어요?"
+      ],
+      "prompt_de": "Wie fragt man auf Koreanisch „Wie viel kostet es?\"?",
+      "choices_de": [
+        "이거 주세요",
+        "얼마예요?",
+        "감사합니다",
+        "있어요?"
+      ],
+      "prompt_th": "จะถามว่า \"ราคาเท่าไหร่?\" เป็นภาษาเกาหลีได้อย่างไร?",
+      "choices_th": [
+        "이거 주세요",
+        "얼마예요?",
+        "감사합니다",
+        "있어요?"
+      ],
+      "prompt_id": "Bagaimana cara bertanya 'Berapa harganya?' dalam bahasa Korea?",
+      "choices_id": [
+        "이거 주세요",
+        "얼마예요?",
+        "감사합니다",
+        "있어요?"
+      ],
+      "prompt_vi": "Hỏi 'Cái này bao nhiêu tiền?' bằng tiếng Hàn như thế nào?",
+      "choices_vi": [
+        "이거 주세요",
+        "얼마예요?",
+        "감사합니다",
+        "있어요?"
+      ]
     },
     {
       "id": 15,
       "stage": 2,
       "type": "reading_card",
       "title": "Asking About Availability (있어요? / 없어요)",
+      "title_zh_tw": "詢問有無（있어요? / 없어요）",
       "title_kr": "있어요? / 없어요",
       "body": "있어요? (Is there? / Do you have?) and 없어요 (There isn't / We don't have it) are two of the most useful words in Korean shopping. Attach an item before 있어요?: 이거 있어요? (Do you have this?), 더 큰 사이즈 있어요? (Do you have a bigger size?). 없어요 is the reply if it's sold out. You can also say 다 팔렸어요 (All sold out) in more detail.",
+      "body_zh_tw": "있어요?（有嗎？／你們有……嗎？）和없어요（沒有／我們沒有）是韓語購物中最有用的兩個詞。在있어요?前加物品名：이거 있어요?（你們有這個嗎？）、더 큰 사이즈 있어요?（你們有更大的尺碼嗎？）。없어요是售罄的回答。你也可以說다 팔렸어요（全部賣完了）更詳細地說明。",
       "tip": {
         "icon": "📦",
         "label": "있다 vs 없다",
         "text": "있다 = to exist / to have. 없다 = to not exist / to not have. 있어요? alone at the end of a sentence = Do you have...? 없어요. = We don't. These two words appear in almost every Korean sentence that discusses possessing, location, or availability."
       },
+      "tip_zh_tw": {
+        "label": "있다 vs 없다",
+        "text": "있다 = 存在／擁有。없다 = 不存在／沒有。있어요?單獨放在句末 = 你們有……嗎？없어요. = 我們沒有。這兩個詞出現在幾乎每一個討論擁有、位置或庫存的韓語句子中。"
+      },
       "body_ja": "있어요?（〜はありますか?）と 없어요（ありません/品切れ）は韓国語のショッピングで最も役立つ表現の2つです。있어요?の前に品物名を付けます：이거 있어요?（これはありますか?）、더 큰 사이즈 있어요?（大きいサイズはありますか?）。없어요は売り切れの返答です。より詳しく言うときは 다 팔렸어요（全部売り切れました）も使えます。",
       "tip_ja": {
         "label": "있다 vs 없다",
         "text": "있다 ＝ 存在する/持っている。없다 ＝ 存在しない/持っていない。있어요?だけで文末に置くと「〜はありますか?」。없어요. ＝ ありません。これら2つの語は所有・場所・在庫を話すほぼすべての韓国語の文に登場します。"
+      },
+      "title_es": "Preguntar sobre Disponibilidad (있어요? / 없어요)",
+      "body_es": "있어요? (¿Hay? / ¿Tienes?) y 없어요 (No hay / No tenemos) son dos de las palabras más útiles al comprar en coreano. Coloca un artículo antes de 있어요?: 이거 있어요? (¿Tienes esto?), 더 큰 사이즈 있어요? (¿Tienes una talla más grande?). 없어요 es la respuesta si está agotado. También puedes decir 다 팔렸어요 (Todo vendido) con más detalle.",
+      "tip_es": {
+        "label": "있다 vs 없다",
+        "text": "있다 = existir / tener. 없다 = no existir / no tener. 있어요? solo al final de una frase = ¿Tienes...? 없어요. = No tenemos. Estas dos palabras aparecen en casi todas las frases coreanas que tratan de posesión, ubicación o disponibilidad."
+      },
+      "title_fr": "Demander la Disponibilité (있어요? / 없어요)",
+      "body_fr": "있어요 ? (Il y a ? / Vous avez ?) et 없어요 (Il n'y en a pas / Nous n'en avons pas) sont deux des mots les plus utiles pour faire du shopping en coréen. Placez un article avant 있어요 ? : 이거 있어요 ? (Vous avez ça ?), 더 큰 사이즈 있어요 ? (Vous avez une taille plus grande ?). 없어요 est la réponse si c'est épuisé. Vous pouvez aussi dire 다 팔렸어요 (Tout est vendu) pour plus de détails.",
+      "tip_fr": {
+        "label": "있다 vs 없다",
+        "text": "있다 = exister / avoir. 없다 = ne pas exister / ne pas avoir. 있어요 ? seul en fin de phrase = Vous avez... ? 없어요. = On n'en a pas. Ces deux mots apparaissent dans presque toutes les phrases coréennes qui parlent de possession, de localisation ou de disponibilité."
+      },
+      "title_de": "Nach Verfügbarkeit fragen (있어요? / 없어요)",
+      "body_de": "있어요? (Ist da? / Haben Sie?) und 없어요 (Nein / Wir haben es nicht) sind zwei der nützlichsten Wörter beim koreanischen Einkaufen. Stelle einen Artikel vor 있어요?: 이거 있어요? (Haben Sie das?), 더 큰 사이즈 있어요? (Haben Sie eine größere Größe?). 없어요 ist die Antwort, wenn etwas ausverkauft ist. Du kannst auch 다 팔렸어요 (Alles ausverkauft) ausführlicher sagen.",
+      "tip_de": {
+        "label": "있다 vs 없다",
+        "text": "있다 = existieren / haben. 없다 = nicht existieren / nicht haben. 있어요? allein am Satzende = Haben Sie...? 없어요. = Wir haben es nicht. Diese beiden Wörter erscheinen in fast jedem koreanischen Satz, der Besitz, Ort oder Verfügbarkeit thematisiert."
+      },
+      "title_th": "การถามสินค้าว่ามีหรือไม่ (있어요? / 없어요)",
+      "body_th": "있어요? (มีไหม? / คุณมีไหม?) และ 없어요 (ไม่มี / หมดแล้ว) เป็นสองสำนวนที่มีประโยชน์ที่สุดในการช้อปปิ้ง ถามว่า 있어요? เพื่อดูว่าร้านมีสินค้าที่ต้องการ หากบอก 없어요 แปลว่าหมดหรือไม่มีไซส์นั้น",
+      "tip_th": {
+        "label": "있다 vs 없다",
+        "text": "있다 = มีอยู่ / มี 없다 = ไม่มี / ไม่มีอยู่ ถาม 있어요? เพียงอย่างเดียวตอนท้ายประโยคก็พอ เช่น 중간 사이즈 있어요? (มีไซส์กลางไหม?)"
+      },
+      "title_id": "Menanyakan Ketersediaan (있어요? / 없어요)",
+      "body_id": "있어요? (Apakah ada? / Apakah Anda punya?) dan 없어요 (Tidak ada / Kami tidak punya) adalah dua kata paling berguna dalam belanja bahasa Korea. Tambahkan nama barang sebelum 있어요?: 이거 있어요? (Apakah Anda punya ini?), 더 큰 사이즈 있어요? (Apakah Anda punya ukuran lebih besar?). 없어요 adalah jawaban jika barangnya habis. Anda juga bisa mengatakan 다 팔렸어요 (Sudah terjual habis) lebih rinci.",
+      "tip_id": {
+        "label": "있다 vs 없다",
+        "text": "있다 = ada / memiliki. 없다 = tidak ada / tidak memiliki. 있어요? sendiri di akhir kalimat = Apakah Anda punya...? 없어요. = Kami tidak punya. Kedua kata ini muncul di hampir setiap kalimat Korea yang membahas kepemilikan, lokasi, atau ketersediaan."
+      },
+      "title_vi": "Hỏi về việc có hàng (있어요? / 없어요)",
+      "body_vi": "있어요? (Có không? / Bạn có ... không?) và 없어요 (Không có / Chúng tôi không có) là hai trong những từ hữu ích nhất khi mua sắm ở Hàn Quốc. Gắn một món trước 있어요?: 이거 있어요? (Có cái này không?), 더 큰 사이즈 있어요? (Có size lớn hơn không?). 없어요 là câu trả lời nếu đã bán hết. Bạn cũng có thể nói 다 팔렸어요 (Đã bán hết) chi tiết hơn.",
+      "tip_vi": {
+        "label": "있다 và 없다",
+        "text": "있다 = tồn tại / có. 없다 = không tồn tại / không có. 있어요? một mình ở cuối câu = Bạn có ... không? 없어요. = Chúng tôi không có. Hai từ này xuất hiện trong gần như mọi câu tiếng Hàn bàn về sở hữu, vị trí hay sự có sẵn."
       }
     },
     {
@@ -287,8 +644,15 @@
       "romanization": "iss-eo-yo",
       "audio": "있어요",
       "meaning": "There is / I have / We have (polite)",
+      "meaning_zh_tw": "有／我有／我們有（禮貌）",
       "meaning_ja": "あります / あります",
-      "katakana": "イッソヨ"
+      "katakana": "イッソヨ",
+      "meaning_es": "Hay / Tengo / Tenemos (educado)",
+      "meaning_fr": "Il y a / J'ai / Nous avons (poli)",
+      "meaning_de": "Es gibt / Ich habe / Wir haben (höflich)",
+      "meaning_vi": "Có / Tôi có / Chúng tôi có (lịch sự)",
+      "meaning_th": "มี / ฉันมี / เรามี (สุภาพ)",
+      "meaning_id": "Ada / Saya punya / Kami punya (sopan)"
     },
     {
       "id": 17,
@@ -302,38 +666,136 @@
       "romanization": "eop-seo-yo",
       "audio": "없어요",
       "meaning": "There isn't / We don't have it / Sold out",
+      "meaning_zh_tw": "沒有／我們沒有／售罄",
       "meaning_ja": "ありません / 売り切れ",
-      "katakana": "オプソヨ"
+      "katakana": "オプソヨ",
+      "meaning_es": "No hay / No tenemos / Agotado",
+      "meaning_fr": "Il n'y en a pas / Nous n'en avons pas / Épuisé",
+      "meaning_de": "Es gibt nicht / Wir haben es nicht / Ausverkauft",
+      "meaning_vi": "Không có / Chúng tôi không có / Hết hàng",
+      "meaning_th": "ไม่มี / เราไม่มี / หมดแล้ว",
+      "meaning_id": "Tidak ada / Kami tidak punya / Habis terjual"
     },
     {
       "id": 18,
       "stage": 2,
       "type": "match_quiz",
       "prompt": "없어요 means…",
+      "prompt_zh_tw": "없어요的意思是…",
       "choices": [
         "We have it",
         "How much?",
         "There isn't any / We don't have it",
         "Yes please"
       ],
-      "correct": "There isn't any / We don't have it"
+      "choices_zh_tw": [
+        "我們有",
+        "多少錢？",
+        "沒有／我們沒有",
+        "好的，請"
+      ],
+      "correct": "There isn't any / We don't have it",
+      "prompt_es": "없어요 significa...",
+      "choices_es": [
+        "Lo tenemos",
+        "¿Cuánto cuesta?",
+        "No hay / No lo tenemos",
+        "Sí, por favor"
+      ],
+      "prompt_fr": "없어요 signifie…",
+      "choices_fr": [
+        "Nous en avons",
+        "Combien ?",
+        "Il n'y en a pas / Nous n'en avons pas",
+        "Oui, s'il vous plaît"
+      ],
+      "prompt_de": "없어요 bedeutet…",
+      "choices_de": [
+        "Wir haben es",
+        "Wie viel?",
+        "Es gibt keins / Wir haben es nicht",
+        "Ja bitte"
+      ],
+      "prompt_th": "없어요 หมายถึง...",
+      "choices_th": [
+        "เรามีอยู่",
+        "ราคาเท่าไหร่?",
+        "ไม่มีเลย / เราไม่มี",
+        "ได้เลยครับ/ค่ะ"
+      ],
+      "prompt_id": "없어요 berarti…",
+      "choices_id": [
+        "Kami punya",
+        "Berapa harganya?",
+        "Tidak ada / Kami tidak punya",
+        "Ya, boleh"
+      ],
+      "prompt_vi": "없어요 nghĩa là…",
+      "choices_vi": [
+        "Chúng tôi có",
+        "Bao nhiêu tiền?",
+        "Không có / Chúng tôi không có",
+        "Vâng, cho tôi"
+      ]
     },
     {
       "id": 19,
       "stage": 3,
       "type": "reading_card",
       "title": "Korean Money & Prices (원)",
+      "title_zh_tw": "韓國貨幣與價格（원）",
       "title_kr": "원·가격",
       "body": "The Korean currency is the 원 (won, ₩). Prices can look large because 1,000 won ≈ 0.75 USD. A coffee might be 4,500원, a meal 8,000~12,000원. 비싸다 (expensive) and 싸다 (cheap) are the key opinion words. When you receive change, the amount back is 거스름돈. Prices at traditional markets are often negotiable — 깎아 주세요 (Please give me a discount) or 더 싸게요? (Can it be cheaper?) opens bargaining.",
+      "body_zh_tw": "韓國貨幣是원（韓圜，₩）。由於1,000韓圜 ≈ 0.75美元，價格看起來可能很大。一杯咖啡約4,500원，一頓飯8,000~12,000원。비싸다（貴）和싸다（便宜）是表達價格評論的關鍵詞。找到的零錢叫거스름돈。傳統市場的價格通常可以議價——깎아 주세요（請打折）或더 싸게요?（可以再便宜一點嗎？）開啟議價。",
       "tip": {
         "icon": "💰",
         "label": "Reading Korean prices",
         "text": "Korean uses Sino-Korean numbers for prices: 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10,000. So 삼만 오천 원 = 35,000 won. Cashiers often show you the amount on a calculator or screen to avoid confusion — pointing at numbers works perfectly well."
       },
+      "tip_zh_tw": {
+        "label": "如何看懂韓語價格",
+        "text": "韓語使用漢字韓語數字計價：일(1) 이(2) 삼(3) 사(4) 오(5)。만 = 10,000。所以삼만 오천 원 = 35,000韓圜。收銀員通常會在計算機或螢幕上顯示金額，以避免混淆——指著數字完全沒問題。"
+      },
       "body_ja": "韓国の通貨は 원（ウォン、₩）です。1,000ウォン ≈ 0.75ドルのため、価格の数字は大きく見えます。コーヒーは4,500원、食事は8,000〜12,000원ほどです。비싸다（高い）と 싸다（安い）は価格に対する意見を表す重要な語です。おつりは 거스름돈 です。伝統市場の価格は交渉可能なことが多く——깎아 주세요（値引きしてください）や 더 싸게요?（もう少し安くなりますか?）で交渉が始まります。",
       "tip_ja": {
         "label": "韓国語の価格の読み方",
         "text": "韓国語の価格にはシノ・コリアン数詞を使います：일(1) 이(2) 삼(3) 사(4) 오(5)。만 ＝ 10,000。なので 삼만 오천 원 ＝ 35,000ウォン。レジスタッフが電卓や画面で金額を見せてくれることが多いので、数字を指差すだけで十分です。"
+      },
+      "title_es": "Dinero y Precios Coreanos (원)",
+      "body_es": "La moneda coreana es el 원 (won, ₩). Los precios pueden parecer grandes porque 1.000 won ≈ 0,75 USD. Un café puede costar 4.500원, una comida 8.000~12.000원. 비싸다 (caro) y 싸다 (barato) son las palabras clave de opinión. Cuando recibes cambio, la cantidad devuelta es 거스름돈. Los precios en los mercados tradicionales a menudo son negociables — 깎아 주세요 (Por favor hazme un descuento) o 더 싸게요? (¿Puede ser más barato?) abre la negociación.",
+      "tip_es": {
+        "label": "Leer precios coreanos",
+        "text": "El coreano usa números sino-coreanos para los precios: 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10.000. Así que 삼만 오천 원 = 35.000 won. Los cajeros suelen mostrarte el importe en una calculadora o pantalla para evitar confusiones — señalar con el dedo funciona perfectamente."
+      },
+      "title_fr": "Monnaie et Prix Coréens (원)",
+      "body_fr": "La monnaie coréenne est le 원 (won, ₩). Les prix peuvent paraître élevés car 1 000 won ≈ 0,75 USD. Un café peut coûter 4 500원, un repas 8 000~12 000원. 비싸다 (cher) et 싸다 (bon marché) sont les mots d'opinion clés. La monnaie rendue s'appelle 거스름돈. Les prix dans les marchés traditionnels sont souvent négociables — 깎아 주세요 (Faites-moi un prix, s'il vous plaît) ou 더 싸게요 ? (Vous pouvez faire moins cher ?) ouvre la négociation.",
+      "tip_fr": {
+        "label": "Lire les prix coréens",
+        "text": "Le coréen utilise des chiffres sino-coréens pour les prix : 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10 000. Donc 삼만 오천 원 = 35 000 won. Les caissiers vous montrent souvent le montant sur une calculatrice ou un écran pour éviter toute confusion — pointer les chiffres fonctionne parfaitement."
+      },
+      "title_de": "Koreanisches Geld & Preise (원)",
+      "body_de": "Die koreanische Währung ist der 원 (Won, ₩). Preise können groß aussehen, da 1.000 Won ≈ 0,75 USD. Ein Kaffee kostet etwa 4.500원, ein Essen 8.000–12.000원. 비싸다 (teuer) und 싸다 (billig) sind die wichtigsten Meinungswörter. Das Wechselgeld heißt 거스름돈. Preise auf traditionellen Märkten sind oft verhandelbar — 깎아 주세요 (Gib mir bitte einen Rabatt) oder 더 싸게요? (Geht es billiger?) eröffnet das Feilschen.",
+      "tip_de": {
+        "label": "Koreanische Preise lesen",
+        "text": "Das Koreanische verwendet sino-koreanische Zahlen für Preise: 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10.000. Also: 삼만 오천 원 = 35.000 Won. Kassierer zeigen dir den Betrag oft auf einem Taschenrechner oder Bildschirm, um Missverständnisse zu vermeiden — Zahlen zeigen funktioniert bestens."
+      },
+      "title_th": "เงินและราคาเกาหลี (원)",
+      "body_th": "สกุลเงินเกาหลีคือ 원 (วอน ₩) ราคาอาจดูสูงเพราะ 1,000 วอน ≈ 0.75 ดอลลาร์สหรัฐ กาแฟในร้านกาแฟมักราคา 4,000–6,000 วอน ข้าวกลางวันราคา 7,000–12,000 วอน เข้าใจระบบราคาเกาหลีจะช่วยในการช้อปปิ้งได้มาก",
+      "tip_th": {
+        "label": "อ่านราคาเกาหลี",
+        "text": "ภาษาเกาหลีใช้ตัวเลขจีน-เกาหลีสำหรับราคา: 일(1) 이(2) 삼(3) 사(4) 오(5) 만 = 10,000 วอน ดังนั้น 오만원 = 50,000 วอน ≈ 37 ดอลลาร์สหรัฐ"
+      },
+      "title_id": "Uang & Harga Korea (원)",
+      "body_id": "Mata uang Korea adalah 원 (won, ₩). Harga bisa terlihat besar karena 1.000 won ≈ 0,75 USD. Secangkir kopi mungkin 4.500원, satu porsi makanan 8.000~12.000원. 비싸다 (mahal) dan 싸다 (murah) adalah kata pendapat utama. Saat menerima kembalian, jumlah yang dikembalikan disebut 거스름돈. Harga di pasar tradisional sering bisa dinegosiasikan — 깎아 주세요 (Tolong beri saya diskon) atau 더 싸게요? (Bisa lebih murah?) membuka tawar-menawar.",
+      "tip_id": {
+        "label": "Membaca harga Korea",
+        "text": "Bahasa Korea menggunakan angka Sino-Korea untuk harga: 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10.000. Jadi 삼만 오천 원 = 35.000 won. Kasir sering menunjukkan jumlahnya di kalkulator atau layar untuk menghindari kebingungan — menunjuk angka juga berhasil dengan baik."
+      },
+      "title_vi": "Tiền tệ & giá cả Hàn Quốc (원)",
+      "body_vi": "Tiền tệ Hàn Quốc là 원 (won, ₩). Giá có thể trông lớn vì 1.000 won ≈ 0,75 USD. Một ly cà phê có thể là 4.500원, một bữa ăn 8.000~12.000원. 비싸다 (đắt) và 싸다 (rẻ) là những từ nhận xét then chốt. Khi bạn nhận tiền thối, khoản trả lại là 거스름돈. Giá ở chợ truyền thống thường có thể thương lượng — 깎아 주세요 (Xin bớt giá cho tôi) hoặc 더 싸게요? (Rẻ hơn được không?) mở đầu việc mặc cả.",
+      "tip_vi": {
+        "label": "Đọc giá tiền Hàn Quốc",
+        "text": "Tiếng Hàn dùng số Hán Hàn cho giá: 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10.000. Vậy 삼만 오천 원 = 35.000 won. Thu ngân thường cho bạn xem số tiền trên máy tính hoặc màn hình để tránh nhầm lẫn — chỉ vào con số cũng hoàn toàn ổn."
       }
     },
     {
@@ -346,8 +808,15 @@
       "romanization": "won",
       "audio": "원",
       "meaning": "won — Korean currency (₩)",
+      "meaning_zh_tw": "韓圜——韓國貨幣（₩）",
       "meaning_ja": "ウォン（韓国通貨）",
-      "katakana": "ウォン"
+      "katakana": "ウォン",
+      "meaning_es": "won — moneda coreana (₩)",
+      "meaning_fr": "won — monnaie coréenne (₩)",
+      "meaning_de": "Won — koreanische Währung (₩)",
+      "meaning_vi": "won — đồng tiền Hàn Quốc (₩)",
+      "meaning_th": "วอน — สกุลเงินเกาหลี (₩)",
+      "meaning_id": "won — mata uang Korea (₩)"
     },
     {
       "id": 21,
@@ -361,8 +830,15 @@
       "romanization": "bi-ssa-da",
       "audio": "비싸다",
       "meaning": "to be expensive",
+      "meaning_zh_tw": "貴",
       "meaning_ja": "高い（値段）",
-      "katakana": "ピッサダ"
+      "katakana": "ピッサダ",
+      "meaning_es": "ser caro",
+      "meaning_fr": "être cher",
+      "meaning_de": "teuer sein",
+      "meaning_vi": "đắt",
+      "meaning_th": "แพง",
+      "meaning_id": "mahal"
     },
     {
       "id": 22,
@@ -375,8 +851,15 @@
       "romanization": "ssa-da",
       "audio": "싸다",
       "meaning": "to be cheap / inexpensive",
+      "meaning_zh_tw": "便宜",
       "meaning_ja": "安い（値段）",
-      "katakana": "ッサダ"
+      "katakana": "ッサダ",
+      "meaning_es": "ser barato / económico",
+      "meaning_fr": "être bon marché / pas cher",
+      "meaning_de": "billig / günstig sein",
+      "meaning_vi": "rẻ / bình dân",
+      "meaning_th": "ถูก / ราคาไม่แพง",
+      "meaning_id": "murah"
     },
     {
       "id": 23,
@@ -389,21 +872,77 @@
       "romanization": "ha-rin",
       "audio": "할인",
       "meaning": "discount / sale",
+      "meaning_zh_tw": "折扣",
       "meaning_ja": "割引 / セール",
-      "katakana": "ハリン"
+      "katakana": "ハリン",
+      "meaning_es": "descuento / rebaja",
+      "meaning_fr": "remise / soldes",
+      "meaning_de": "Rabatt / Sonderangebot",
+      "meaning_vi": "giảm giá / khuyến mãi",
+      "meaning_th": "ส่วนลด / ลดราคา",
+      "meaning_id": "diskon / obral"
     },
     {
       "id": 24,
       "stage": 3,
       "type": "match_quiz",
       "prompt": "비싸다 means…",
+      "prompt_zh_tw": "비싸다的意思是…",
       "choices": [
         "to be cheap",
         "to be free",
         "to be expensive",
         "to be on sale"
       ],
-      "correct": "to be expensive"
+      "choices_zh_tw": [
+        "便宜",
+        "免費",
+        "貴",
+        "打折"
+      ],
+      "correct": "to be expensive",
+      "prompt_es": "비싸다 significa...",
+      "choices_es": [
+        "ser barato",
+        "ser gratis",
+        "ser caro",
+        "estar en oferta"
+      ],
+      "prompt_fr": "비싸다 signifie…",
+      "choices_fr": [
+        "être bon marché",
+        "être gratuit",
+        "être cher",
+        "être en soldes"
+      ],
+      "prompt_de": "비싸다 bedeutet…",
+      "choices_de": [
+        "billig sein",
+        "kostenlos sein",
+        "teuer sein",
+        "im Angebot sein"
+      ],
+      "prompt_th": "비싸다 หมายถึง...",
+      "choices_th": [
+        "ถูก",
+        "ฟรี",
+        "แพง",
+        "กำลังลดราคา"
+      ],
+      "prompt_id": "비싸다 berarti…",
+      "choices_id": [
+        "murah",
+        "gratis",
+        "mahal",
+        "sedang diobral"
+      ],
+      "prompt_vi": "비싸다 nghĩa là…",
+      "choices_vi": [
+        "rẻ",
+        "miễn phí",
+        "đắt",
+        "đang giảm giá"
+      ]
     },
     {
       "id": 25,
@@ -418,38 +957,136 @@
       "romanization": "geo-seu-reum-don",
       "audio": "거스름돈",
       "meaning": "change (money returned after paying)",
+      "meaning_zh_tw": "零錢（付款後找回的錢）",
       "meaning_ja": "お釣り",
-      "katakana": "コスルムドン"
+      "katakana": "コスルムドン",
+      "meaning_es": "cambio (dinero devuelto al pagar)",
+      "meaning_fr": "monnaie (argent rendu après paiement)",
+      "meaning_de": "Wechselgeld (Geld, das nach dem Bezahlen zurückgegeben wird)",
+      "meaning_vi": "tiền thừa (tiền trả lại sau khi thanh toán)",
+      "meaning_th": "เงินทอน (เงินที่ได้รับคืนหลังจ่าย)",
+      "meaning_id": "kembalian (uang yang dikembalikan setelah membayar)"
     },
     {
       "id": 26,
       "stage": 3,
       "type": "match_quiz",
       "prompt": "Which word means 'change' (money returned to you after paying)?",
+      "prompt_zh_tw": "哪個詞表示「零錢」（付款後找回你的錢）？",
       "choices": [
         "거스름돈",
         "비싸다",
         "할인",
         "원"
       ],
-      "correct": "거스름돈"
+      "choices_zh_tw": [
+        "거스름돈",
+        "비싸다",
+        "할인",
+        "원"
+      ],
+      "correct": "거스름돈",
+      "prompt_es": "¿Qué palabra significa \"cambio\" (dinero devuelto al pagar)?",
+      "choices_es": [
+        "거스름돈",
+        "비싸다",
+        "할인",
+        "원"
+      ],
+      "prompt_fr": "Quel mot signifie « monnaie » (argent rendu après paiement) ?",
+      "choices_fr": [
+        "거스름돈",
+        "비싸다",
+        "할인",
+        "원"
+      ],
+      "prompt_de": "Welches Wort bedeutet „Wechselgeld\" (Geld, das man nach dem Bezahlen zurückbekommt)?",
+      "choices_de": [
+        "거스름돈",
+        "비싸다",
+        "할인",
+        "원"
+      ],
+      "prompt_th": "คำใดหมายถึง \"เงินทอน\" (เงินที่ได้รับคืน)?",
+      "choices_th": [
+        "거스름돈",
+        "비싸다",
+        "할인",
+        "원"
+      ],
+      "prompt_id": "Kata mana yang berarti 'kembalian' (uang yang dikembalikan setelah membayar)?",
+      "choices_id": [
+        "거스름돈",
+        "비싸다",
+        "할인",
+        "원"
+      ],
+      "prompt_vi": "Từ nào có nghĩa là 'tiền thối' (tiền trả lại cho bạn sau khi thanh toán)?",
+      "choices_vi": [
+        "거스름돈",
+        "비싸다",
+        "할인",
+        "원"
+      ]
     },
     {
       "id": 27,
       "stage": 4,
       "type": "reading_card",
       "title": "Payment Methods (결제 방법)",
+      "title_zh_tw": "付款方式（결제 방법）",
       "title_kr": "결제 방법",
       "body": "Korea is a highly cashless society — most places accept credit cards (신용카드) or debit cards (체크카드), and mobile payment via apps like KakaoPay and Samsung Pay is extremely common. Cash (현금) is still accepted everywhere but is used less often. When paying, you may be asked 카드요, 현금이요? (Card or cash?). Requesting a receipt is 영수증 주세요. Tax refund signs (Tax Refund) at stores mean you can claim VAT back at the airport as a tourist.",
+      "body_zh_tw": "韓國是一個高度無現金社會——大多數地方接受信用卡（신용카드）或金融卡（체크카드），通過KakaoPay和Samsung Pay等應用程序的行動支付也非常普遍。現金（현금）到處都能使用，但使用頻率較低。結帳時可能被問到카드요, 현금이요?（刷卡還是現金？）。索取收據是영수증 주세요。商店的Tax Refund標誌表示你作為遊客可以在機場申請退回增值稅。",
       "tip": {
         "icon": "📱",
         "label": "카카오페이 & 삼성페이",
         "text": "KakaoPay (카카오페이) and Samsung Pay (삼성페이) are the dominant mobile payment apps in Korea. Tourists can use international credit cards almost everywhere. Look for the contactless payment symbol — Korea's adoption of contactless payment is among the highest in the world."
       },
+      "tip_zh_tw": {
+        "label": "카카오페이 & 삼성페이",
+        "text": "KakaoPay（카카오페이）和Samsung Pay（삼성페이）是韓國最主流的行動支付應用程序。遊客幾乎到處都能使用國際信用卡。尋找非接觸式支付標誌——韓國的非接觸式支付普及率是全球最高之一。"
+      },
       "body_ja": "韓国はキャッシュレス社会——ほとんどの場所でクレジットカード（신용카드）やデビットカード（체크카드）が使え、KakaoPayやSamsung Payなどのモバイル決済も非常に普及しています。現金（현금）もどこでも使えますが、使用頻度は低くなっています。会計時に 카드요, 현금이요?（カードですか、現金ですか?）と聞かれることがあります。レシートは 영수증 주세요 でもらえます。店頭のTax Refundマークがあれば、旅行者として空港でVATの払い戻しを受けられます。",
       "tip_ja": {
         "label": "カカオペイ & サムスンペイ",
         "text": "KakaoPay（카카오페이）とSamsung Pay（삼성페이）は韓国で最もよく使われるモバイル決済アプリです。外国人旅行者はほぼどこでも国際クレジットカードが使えます。タッチ決済マークを探してください——韓国のキャッシュレス決済の普及率は世界最高レベルです。"
+      },
+      "title_es": "Métodos de Pago (결제 방법)",
+      "body_es": "Corea es una sociedad muy sin efectivo — la mayoría de los lugares aceptan tarjetas de crédito (신용카드) o débito (체크카드), y el pago móvil mediante aplicaciones como KakaoPay y Samsung Pay es muy común. El efectivo (현금) se acepta en todas partes pero se usa menos. Al pagar, pueden preguntarte 카드요, 현금이요? (¿Tarjeta o efectivo?). Pedir un recibo es 영수증 주세요. Los carteles Tax Refund en las tiendas significan que como turista puedes reclamar el IVA en el aeropuerto.",
+      "tip_es": {
+        "label": "카카오페이 & 삼성페이",
+        "text": "KakaoPay (카카오페이) y Samsung Pay (삼성페이) son las aplicaciones de pago móvil dominantes en Corea. Los turistas pueden usar tarjetas de crédito internacionales casi en todas partes. Busca el símbolo de pago sin contacto — la adopción de Corea del pago sin contacto está entre las más altas del mundo."
+      },
+      "title_fr": "Modes de Paiement (결제 방법)",
+      "body_fr": "La Corée est une société très peu liquide — la plupart des endroits acceptent les cartes de crédit (신용카드) ou de débit (체크카드), et le paiement mobile via des applications comme KakaoPay et Samsung Pay est extrêmement répandu. Les espèces (현금) sont acceptées partout mais moins utilisées. Lors du paiement, on peut vous demander 카드요, 현금이요 ? (Carte ou espèces ?). Demander un reçu se dit 영수증 주세요. Les panneaux Tax Refund dans les magasins signifient que vous pouvez récupérer la TVA à l'aéroport en tant que touriste.",
+      "tip_fr": {
+        "label": "카카오페이 & 삼성페이",
+        "text": "KakaoPay (카카오페이) et Samsung Pay (삼성페이) sont les applications de paiement mobile dominantes en Corée. Les touristes peuvent utiliser des cartes de crédit internationales presque partout. Cherchez le symbole de paiement sans contact — le taux d'adoption du paiement sans contact en Corée est parmi les plus élevés au monde."
+      },
+      "title_de": "Zahlungsmethoden (결제 방법)",
+      "body_de": "Korea ist eine äußerst bargeldlose Gesellschaft — die meisten Orte akzeptieren Kreditkarten (신용카드) oder Debitkarten (체크카드), und mobiles Bezahlen via Apps wie KakaoPay und Samsung Pay ist extrem verbreitet. Bargeld (현금) wird zwar überall akzeptiert, aber seltener verwendet. Beim Bezahlen kann man gefragt werden: 카드요, 현금이요? (Karte oder Bargeld?). Eine Quittung anfordern heißt 영수증 주세요. Tax-Refund-Schilder in Geschäften bedeuten, dass Touristen die Mehrwertsteuer am Flughafen zurückfordern können.",
+      "tip_de": {
+        "label": "KakaoPay & Samsung Pay",
+        "text": "KakaoPay (카카오페이) und Samsung Pay (삼성페이) sind die führenden mobilen Zahlungs-Apps in Korea. Touristen können internationale Kreditkarten fast überall verwenden. Achte auf das Kontaktlos-Zahlungssymbol — Koreas Akzeptanz von kontaktlosem Bezahlen gehört zu den höchsten weltweit."
+      },
+      "title_th": "วิธีชำระเงิน (결제 방법)",
+      "body_th": "เกาหลีเป็นสังคมไร้เงินสดสูงมาก — ส่วนใหญ่รับบัตรเครดิต (신용카드) หรือบัตรเดบิต (체크카드) รวมถึงการชำระผ่านมือถือ เช่น KakaoPay (카카오페이) และ Samsung Pay (삼성페이) อย่างไรก็ตาม ตลาดดั้งเดิมและร้านค้าขนาดเล็กบางแห่งอาจรับเฉพาะเงินสด",
+      "tip_th": {
+        "label": "คาคาโอเพย์ & ซัมซุงเพย์",
+        "text": "KakaoPay (카카오페이) และ Samsung Pay (삼성페이) เป็นแอปชำระเงินผ่านมือถือที่ได้รับความนิยมสูงสุดในเกาหลี ถ้าอยู่ที่เกาหลีนาน ลองตั้งค่าแอปเหล่านี้ดูนะ"
+      },
+      "title_id": "Metode Pembayaran (결제 방법)",
+      "body_id": "Korea adalah masyarakat yang sangat minim tunai — sebagian besar tempat menerima kartu kredit (신용카드) atau kartu debit (체크카드), dan pembayaran seluler melalui aplikasi seperti KakaoPay dan Samsung Pay sangat umum. Uang tunai (현금) masih diterima di mana-mana tetapi lebih jarang digunakan. Saat membayar, Anda mungkin ditanya 카드요, 현금이요? (Kartu atau tunai?). Meminta struk adalah 영수증 주세요. Tanda Tax Refund di toko berarti Anda bisa mengklaim kembali PPN di bandara sebagai turis.",
+      "tip_id": {
+        "label": "카카오페이 & 삼성페이",
+        "text": "KakaoPay (카카오페이) dan Samsung Pay (삼성페이) adalah aplikasi pembayaran seluler yang dominan di Korea. Turis bisa menggunakan kartu kredit internasional hampir di mana saja. Perhatikan simbol pembayaran nirkontak — adopsi pembayaran nirkontak di Korea termasuk yang tertinggi di dunia."
+      },
+      "title_vi": "Phương thức thanh toán (결제 방법)",
+      "body_vi": "Hàn Quốc là một xã hội gần như không tiền mặt — hầu hết nơi chấp nhận thẻ tín dụng (신용카드) hoặc thẻ ghi nợ (체크카드), và thanh toán di động qua các ứng dụng như KakaoPay và Samsung Pay cực kỳ phổ biến. Tiền mặt (현금) vẫn được chấp nhận ở mọi nơi nhưng ít được dùng hơn. Khi thanh toán, bạn có thể được hỏi 카드요, 현금이요? (Thẻ hay tiền mặt?). Yêu cầu hóa đơn là 영수증 주세요. Bảng hoàn thuế (Tax Refund) tại cửa hàng nghĩa là bạn có thể xin lại VAT ở sân bay với tư cách khách du lịch.",
+      "tip_vi": {
+        "label": "카카오페이 & 삼성페이",
+        "text": "KakaoPay (카카오페이) và Samsung Pay (삼성페이) là các ứng dụng thanh toán di động thống trị ở Hàn Quốc. Khách du lịch có thể dùng thẻ tín dụng quốc tế ở gần như mọi nơi. Hãy tìm biểu tượng thanh toán không tiếp xúc — mức độ sử dụng thanh toán không tiếp xúc của Hàn Quốc thuộc hàng cao nhất thế giới."
       }
     },
     {
@@ -468,8 +1105,15 @@
       "romanization": "ka-deu-ro hal-ge-yo",
       "audio": "카드로 할게요",
       "meaning": "I'll pay by card",
+      "meaning_zh_tw": "我要刷卡",
       "meaning_ja": "カードで支払います",
-      "katakana": "カドゥロ ハルゲヨ"
+      "katakana": "カドゥロ ハルゲヨ",
+      "meaning_es": "Pagaré con tarjeta",
+      "meaning_fr": "Je vais payer par carte",
+      "meaning_de": "Ich zahle mit Karte",
+      "meaning_vi": "Tôi trả bằng thẻ",
+      "meaning_th": "ฉันจะจ่ายด้วยบัตร",
+      "meaning_id": "Saya akan bayar dengan kartu"
     },
     {
       "id": 29,
@@ -489,8 +1133,15 @@
       "romanization": "hyeon-geum-eu-ro deu-ril-ge-yo",
       "audio": "현금으로 드릴게요",
       "meaning": "I'll pay in cash (humble form)",
+      "meaning_zh_tw": "我要付現金（謙遜形式）",
       "meaning_ja": "現金でお支払いします（謙譲表現）",
-      "katakana": "ヒョングムロ ドゥリルゲヨ"
+      "katakana": "ヒョングムロ ドゥリルゲヨ",
+      "meaning_es": "Pagaré en efectivo (forma humilde)",
+      "meaning_fr": "Je vais payer en espèces (forme humble)",
+      "meaning_de": "Ich zahle bar (bescheidene Form)",
+      "meaning_vi": "Tôi trả bằng tiền mặt (dạng khiêm nhường)",
+      "meaning_th": "ฉันจะจ่ายด้วยเงินสด (รูปถ่อมตัว)",
+      "meaning_id": "Saya akan bayar tunai (bentuk merendah)"
     },
     {
       "id": 30,
@@ -508,21 +1159,77 @@
       "romanization": "yeong-su-jeung ju-se-yo",
       "audio": "영수증 주세요",
       "meaning": "Please give me a receipt",
+      "meaning_zh_tw": "請給我收據",
       "meaning_ja": "領収書をください",
-      "katakana": "ヨンスジュン チュセヨ"
+      "katakana": "ヨンスジュン チュセヨ",
+      "meaning_es": "Por favor dame un recibo",
+      "meaning_fr": "Donnez-moi un reçu, s'il vous plaît",
+      "meaning_de": "Bitte gib mir eine Quittung",
+      "meaning_vi": "Cho tôi hóa đơn",
+      "meaning_th": "ขอใบเสร็จด้วย",
+      "meaning_id": "Tolong berikan saya struk"
     },
     {
       "id": 31,
       "stage": 4,
       "type": "match_quiz",
       "prompt": "How do you say 'I'll pay by card'?",
+      "prompt_zh_tw": "「我要刷卡」怎麼說？",
       "choices": [
         "현금으로 드릴게요",
         "카드로 할게요",
         "거스름돈 주세요",
         "결제해 주세요"
       ],
-      "correct": "카드로 할게요"
+      "choices_zh_tw": [
+        "현금으로 드릴게요",
+        "카드로 할게요",
+        "거스름돈 주세요",
+        "결제해 주세요"
+      ],
+      "correct": "카드로 할게요",
+      "prompt_es": "¿Cómo dices \"Pagaré con tarjeta\"?",
+      "choices_es": [
+        "현금으로 드릴게요",
+        "카드로 할게요",
+        "거스름돈 주세요",
+        "결제해 주세요"
+      ],
+      "prompt_fr": "Comment dit-on « Je vais payer par carte » ?",
+      "choices_fr": [
+        "현금으로 드릴게요",
+        "카드로 할게요",
+        "거스름돈 주세요",
+        "결제해 주세요"
+      ],
+      "prompt_de": "Wie sagt man „Ich zahle mit Karte\"?",
+      "choices_de": [
+        "현금으로 드릴게요",
+        "카드로 할게요",
+        "거스름돈 주세요",
+        "결제해 주세요"
+      ],
+      "prompt_th": "จะพูดว่า \"ฉันจะจ่ายด้วยบัตร\" อย่างไร?",
+      "choices_th": [
+        "현금으로 드릴게요",
+        "카드로 할게요",
+        "거스름돈 주세요",
+        "결제해 주세요"
+      ],
+      "prompt_id": "Bagaimana cara mengatakan 'Saya akan bayar dengan kartu'?",
+      "choices_id": [
+        "현금으로 드릴게요",
+        "카드로 할게요",
+        "거스름돈 주세요",
+        "결제해 주세요"
+      ],
+      "prompt_vi": "Nói 'Tôi sẽ thanh toán bằng thẻ' như thế nào?",
+      "choices_vi": [
+        "현금으로 드릴게요",
+        "카드로 할게요",
+        "거스름돈 주세요",
+        "결제해 주세요"
+      ]
     },
     {
       "id": 32,
@@ -539,8 +1246,15 @@
       "romanization": "kka-ka ju-se-yo",
       "audio": "깎아 주세요",
       "meaning": "Please give me a discount / Please reduce the price",
+      "meaning_zh_tw": "請打折／請降價",
       "meaning_ja": "値引きしてください",
-      "katakana": "ッカッカ チュセヨ"
+      "katakana": "ッカッカ チュセヨ",
+      "meaning_es": "Por favor hazme un descuento / Por favor reduce el precio",
+      "meaning_fr": "S'il vous plaît, faites-moi un rabais / Réduisez le prix, s'il vous plaît",
+      "meaning_de": "Gib mir bitte einen Rabatt / Senke bitte den Preis",
+      "meaning_vi": "Làm ơn giảm giá / Bớt giá cho tôi",
+      "meaning_th": "ช่วยลดราคา / ลดให้หน่อยได้ไหม?",
+      "meaning_id": "Tolong beri saya diskon / Tolong turunkan harganya"
     },
     {
       "id": 33,
@@ -549,7 +1263,18 @@
       "title": "Shopping Complete!",
       "title_kr": "쇼핑 완료!",
       "message": "You're ready to shop in Korea! You know the key vocabulary, phrases for asking prices, bargaining, checking availability, and completing payment transactions.",
-      "next_url": "speech-levels.html"
+      "message_zh_tw": "你已準備好在韓國購物了！你知道了關鍵詞彙、詢問價格的用語、議價、確認庫存以及完成付款交易的方法。",
+      "next_url": "speech-levels.html",
+      "title_es": "¡Compras Completadas!",
+      "message_es": "¡Estás listo/a para ir de compras en Corea! Conoces el vocabulario clave, las frases para preguntar precios, regatear, comprobar la disponibilidad y completar las transacciones de pago.",
+      "title_fr": "Shopping Terminé !",
+      "message_fr": "Vous êtes prêt à faire du shopping en Corée ! Vous connaissez le vocabulaire clé, les phrases pour demander les prix, marchander, vérifier la disponibilité et effectuer des transactions de paiement.",
+      "title_de": "Einkaufen abgeschlossen!",
+      "message_de": "Du bist bereit, in Korea einzukaufen! Du kennst das wichtigste Vokabular, Phrasen zum Preiserfragen, Feilschen, Verfügbarkeit prüfen und Zahlungstransaktionen abschließen.",
+      "message_th": "คุณพร้อมช้อปปิ้งในเกาหลีแล้ว! คุณรู้คำศัพท์สำคัญ สำนวนถามราคา การต่อรอง การตรวจสอบสินค้า และขั้นตอนการชำระเงินครบแล้ว!",
+      "title_id": "Belanja Selesai!",
+      "message_id": "Anda siap berbelanja di Korea! Anda tahu kosakata penting, frasa untuk menanyakan harga, menawar, memeriksa ketersediaan, dan menyelesaikan transaksi pembayaran.",
+      "message_vi": "Bạn đã sẵn sàng mua sắm ở Hàn Quốc! Bạn biết từ vựng then chốt, các câu hỏi giá, mặc cả, kiểm tra hàng có sẵn và hoàn tất giao dịch thanh toán."
     }
   ]
 }

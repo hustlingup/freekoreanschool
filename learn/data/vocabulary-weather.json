@@ -8,7 +8,8 @@
       "name_kr": "날씨",
       "first_step": 1,
       "last_step": 20,
-      "time_minutes": 12
+      "time_minutes": 12,
+      "name_es": "El Tiempo"
     }
   ],
   "steps": [
@@ -16,18 +17,30 @@
       "id": 1,
       "stage": 1,
       "type": "reading_card",
-      "title": "Weather in Korean",
-      "title_kr": "날씨",
-      "body": "Korea has four distinct seasons: spring (봄), summer (여름), autumn (가을), and winter (겨울). Summers are hot and humid with a rainy season (장마, jangma), while winters can be very cold and dry. Checking the weather is the first topic in many Korean conversations.",
+      "title": "Korean Weather",
+      "title_kr": "한국의 날씨",
+      "title_zh_tw": "韓國天氣",
+      "body": "Korea has four distinct seasons — a cold, dry winter; a warm, windy spring; a hot and humid monsoon summer; and a crisp, colorful autumn. Weather is one of the most common small-talk topics in Korean culture.",
+      "body_zh_tw": "韓國有四個分明的季節——乾冷的冬天、溫暖多風的春天、炎熱潮濕的梅雨夏天，以及清爽多彩的秋天。天氣是韓國文化中最常見的閒聊話題之一。",
       "tip": {
         "icon": "🌤️",
-        "label": "The four seasons",
-        "text": "봄(spring) → 여름(summer) → 가을(autumn) → 겨울(winter). Korea's autumn foliage and spring cherry blossoms are world-famous. Typhoons hit in late summer — 태풍 조심하세요! (Watch out for typhoons!)"
+        "label": "Useful adjective pattern",
+        "text": "Most weather words use -아요/-어요 to describe how the weather IS right now. E.g., 추워요 (it's cold), 더워요 (it's hot). Drop the -다 form when speaking."
       },
-      "body_ja": "韓国には明確な四季があります：春（봄）・夏（여름）・秋（가을）・冬（겨울）。夏は梅雨（장마）があり蒸し暑く、冬は非常に寒くて乾燥します。天気の話は韓国語会話の定番の出だしです。",
+      "tip_zh_tw": {
+        "label": "實用形容詞句型",
+        "text": "大多數天氣詞用-아요/-어요來描述當前天氣狀態。例：추워요（很冷）、더워요（很熱）。口語中去掉-다形式。"
+      },
+      "body_ja": "韓国には四季があります―寒くて乾燥した冬、温かく風の強い春、蒸し暑い梅雨の夏、爽やかで色鮮やかな秋。天気は韓国文化で最もよくある雑談のトピックです。",
       "tip_ja": {
-        "label": "四季",
-        "text": "봄（春）→여름（夏）→가을（秋）→겨울（冬）。韓国の紅葉と春の桜は世界的に有名です。晩夏には台風が来ます―태풍 조심하세요！（台風に気をつけて！）"
+        "label": "形容詞パターンのコツ",
+        "text": "天気表現の多くは-아요/-어요で「今の状態」を表します。例：추워요（寒いです）、더워요（暑いです）。会話では-다形ではなくこちらを使います。"
+      },
+      "title_es": "El Tiempo en Corea",
+      "body_es": "Corea tiene cuatro estaciones bien definidas: un invierno frío y seco, una primavera cálida y ventosa, un verano caluroso y húmedo con monzón, y un otoño fresco y colorido. El tiempo es uno de los temas de conversación más frecuentes en la cultura coreana.",
+      "tip_es": {
+        "label": "Patrón de adjetivo útil",
+        "text": "La mayoría de las palabras del tiempo usan -아요/-어요 para describir cómo está el tiempo ahora. Ej: 추워요 (hace frío), 더워요 (hace calor). En el habla, omite la forma -다."
       }
     },
     {
@@ -38,11 +51,14 @@
         "날",
         "씨"
       ],
-      "romanization": "nalsi",
-      "katakana": "ナルシ",
+      "romanization": "nalssi",
+      "zhuyin": "ㄋㄚㄌ·ㄙㄧ",
+      "katakana": "ナルッシ",
       "audio": "날씨",
-      "meaning": "Weather — 날씨 어때요? = How is the weather?",
-      "meaning_ja": "天気 ― 날씨 어때요？（天気はどうですか？）"
+      "meaning": "Weather — 날씨 어때요? = How's the weather?",
+      "meaning_zh_tw": "天氣——날씨 어때요？＝天氣怎麼樣？",
+      "meaning_ja": "天気 ― 날씨 어때요？（天気はどうですか？）",
+      "meaning_es": "Tiempo / clima — 날씨 어때요? = ¿Qué tiempo hace?"
     },
     {
       "id": 3,
@@ -53,10 +69,13 @@
         "다"
       ],
       "romanization": "makda",
+      "zhuyin": "ㄇㄚ·ㄉㄚ",
       "katakana": "マクタ",
       "audio": "맑다",
-      "meaning": "Clear / sunny — 오늘 맑아요 = It's clear today",
-      "meaning_ja": "晴れている ― 오늘 맑아요（今日は晴れています）"
+      "meaning": "Clear / sunny — 날씨가 맑아요 = the weather is clear",
+      "meaning_zh_tw": "晴朗——날씨가 맑아요＝天氣很晴朗",
+      "meaning_ja": "晴れ・澄んでいる ― 날씨가 맑아요（天気が晴れています）",
+      "meaning_es": "Despejado / soleado — 날씨가 맑아요 = el tiempo está despejado"
     },
     {
       "id": 4,
@@ -68,10 +87,13 @@
         "다"
       ],
       "romanization": "heurida",
+      "zhuyin": "ㄏㄜ·ㄌㄧ·ㄉㄚ",
       "katakana": "フリダ",
       "audio": "흐리다",
-      "meaning": "Cloudy / overcast — 날씨가 흐려요 = The weather is cloudy",
-      "meaning_ja": "曇っている ― 날씨가 흐려요（天気が曇っています）"
+      "meaning": "Cloudy / overcast",
+      "meaning_zh_tw": "多雲 / 陰天",
+      "meaning_ja": "曇り・どんより",
+      "meaning_es": "Nublado / cubierto"
     },
     {
       "id": 5,
@@ -81,10 +103,13 @@
         "비"
       ],
       "romanization": "bi",
+      "zhuyin": "ㄅㄧ",
       "katakana": "ピ",
       "audio": "비",
-      "meaning": "Rain — 비가 와요 = It's raining (lit. rain comes)",
-      "meaning_ja": "雨 ― 비가 와요（雨が降っています）"
+      "meaning": "Rain — 비가 와요 = it's raining",
+      "meaning_zh_tw": "雨——비가 와요＝正在下雨",
+      "meaning_ja": "雨 ― 비가 와요（雨が降っています）",
+      "meaning_es": "Lluvia — 비가 와요 = está lloviendo"
     },
     {
       "id": 6,
@@ -94,10 +119,13 @@
         "눈"
       ],
       "romanization": "nun",
+      "zhuyin": "ㄋㄨㄣ",
       "katakana": "ヌン",
       "audio": "눈",
-      "meaning": "Snow — 눈이 와요 = It's snowing (also means 'eye')",
-      "meaning_ja": "雪 ― 눈이 와요（雪が降っています）「目」も눈"
+      "meaning": "Snow — 눈이 와요 = it's snowing",
+      "meaning_zh_tw": "雪——눈이 와요＝正在下雪",
+      "meaning_ja": "雪 ― 눈이 와요（雪が降っています）",
+      "meaning_es": "Nieve — 눈이 와요 = está nevando"
     },
     {
       "id": 7,
@@ -108,188 +136,273 @@
         "람"
       ],
       "romanization": "baram",
+      "zhuyin": "ㄅㄚ·ㄌㄚㄇ",
       "katakana": "パラム",
       "audio": "바람",
-      "meaning": "Wind — 바람이 많이 불어요 = It's very windy",
-      "meaning_ja": "風 ― 바람이 많이 불어요（風がとても強いです）"
+      "meaning": "Wind — 바람이 불어요 = the wind is blowing",
+      "meaning_zh_tw": "風——바람이 불어요＝風在吹",
+      "meaning_ja": "風 ― 바람이 불어요（風が吹いています）",
+      "meaning_es": "Viento — 바람이 불어요 = el viento está soplando"
     },
     {
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "덥",
-        "다"
+        "더",
+        "워",
+        "요"
       ],
-      "romanization": "deopda",
-      "katakana": "トプタ",
-      "audio": "덥다",
-      "meaning": "Hot — 너무 더워요 = It's too hot",
-      "meaning_ja": "暑い ― 너무 더워요（暑すぎます）"
+      "romanization": "deowoyo",
+      "zhuyin": "ㄉㄜ·ㄨㄜ·ㄧㄠ",
+      "katakana": "トウォヨ",
+      "audio": "더워요",
+      "meaning": "It's hot — 너무 더워요 = it's too hot",
+      "meaning_zh_tw": "很熱——너무 더워요＝太熱了",
+      "meaning_ja": "暑いです ― 너무 더워요（暑すぎる）",
+      "meaning_es": "Hace calor — 너무 더워요 = hace demasiado calor"
     },
     {
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "춥",
-        "다"
+        "추",
+        "워",
+        "요"
       ],
-      "romanization": "chupda",
-      "katakana": "チュプタ",
-      "audio": "춥다",
-      "meaning": "Cold — 너무 추워요 = It's too cold",
-      "meaning_ja": "寒い ― 너무 추워요（寒すぎます）"
+      "romanization": "chuwoyo",
+      "zhuyin": "ㄔㄨ·ㄨㄜ·ㄧㄠ",
+      "katakana": "チュウォヨ",
+      "audio": "추워요",
+      "meaning": "It's cold — 많이 추워요 = it's very cold",
+      "meaning_zh_tw": "很冷——많이 추워요＝非常冷",
+      "meaning_ja": "寒いです ― 많이 추워요（とても寒い）",
+      "meaning_es": "Hace frío — 많이 추워요 = hace mucho frío"
     },
     {
       "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "시",
-        "원",
-        "하",
-        "다"
+        "따",
+        "뜻",
+        "해",
+        "요"
       ],
-      "romanization": "siwonhada",
-      "katakana": "シウォナダ",
-      "audio": "시원하다",
-      "meaning": "Cool / refreshing — ideal autumn weather in Korea",
-      "meaning_ja": "涼しい / 爽やか ― 韓国の秋にぴったりの天気"
+      "romanization": "ttatteutaeyo",
+      "zhuyin": "ㄉㄚ·ㄉㄜ·ㄏㄝ·ㄧㄠ",
+      "katakana": "タトゥテヨ",
+      "audio": "따뜻해요",
+      "meaning": "It's warm — pleasant, comfortable temperature",
+      "meaning_zh_tw": "溫暖——舒適宜人的溫度",
+      "meaning_ja": "暖かいです ― 心地よい気温",
+      "meaning_es": "Está templado / cálido — temperatura agradable y cómoda"
     },
     {
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "따",
-        "뜻",
-        "하",
-        "다"
+        "시",
+        "원",
+        "해",
+        "요"
       ],
-      "romanization": "ttatteuthada",
-      "katakana": "タトゥタダ",
-      "audio": "따뜻하다",
-      "meaning": "Warm — perfect spring weather description",
-      "meaning_ja": "暖かい ― 春の天気を表す定番の言葉"
+      "romanization": "siwonhaeyo",
+      "zhuyin": "ㄙㄧ·ㄨㄣ·ㄏㄝ·ㄧㄠ",
+      "katakana": "シウォネヨ",
+      "audio": "시원해요",
+      "meaning": "It's cool / refreshing — pleasantly cool, like autumn air",
+      "meaning_zh_tw": "涼爽——令人愉快的清涼，如秋日空氣",
+      "meaning_ja": "涼しいです ― 秋の空気のような爽やかさ",
+      "meaning_es": "Está fresco / refrescante — fresco y agradable, como el aire de otoño"
     },
     {
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "우",
-        "산"
+        "봄"
       ],
-      "romanization": "usan",
-      "katakana": "ウサン",
-      "audio": "우산",
-      "meaning": "Umbrella — 우산 가져왔어요? = Did you bring an umbrella?",
-      "meaning_ja": "傘 ― 우산 가져왔어요？（傘を持ってきましたか？）"
+      "romanization": "bom",
+      "zhuyin": "ㄅㄛㄇ",
+      "katakana": "ポム",
+      "audio": "봄",
+      "meaning": "Spring — famous for cherry blossoms (벚꽃)",
+      "meaning_zh_tw": "春天——以櫻花（벚꽃）聞名",
+      "meaning_ja": "春 ― 桜（벚꽃）で有名",
+      "meaning_es": "Primavera — famosa por los cerezos en flor (벚꽃)"
     },
     {
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "태",
-        "풍"
+        "여",
+        "름"
       ],
-      "romanization": "taepung",
-      "katakana": "テプン",
-      "audio": "태풍",
-      "meaning": "Typhoon — hits Korea in late summer (July-September)",
-      "meaning_ja": "台風 ― 韓国には夏末（7〜9月）に来る"
+      "romanization": "yeoreum",
+      "zhuyin": "ㄧㄜ·ㄌㄜㄇ",
+      "katakana": "ヨルム",
+      "audio": "여름",
+      "meaning": "Summer — hot and humid with the monsoon (장마) season",
+      "meaning_zh_tw": "夏天——炎熱潮濕，有梅雨季（장마）",
+      "meaning_ja": "夏 ― 蒸し暑く梅雨（장마）シーズンがある",
+      "meaning_es": "Verano — caluroso y húmedo con la temporada de monzón (장마)"
     },
     {
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "안",
-        "개"
+        "가",
+        "을"
       ],
-      "romanization": "angae",
-      "katakana": "アンゲ",
-      "audio": "안개",
-      "meaning": "Fog — 안개가 짙어요 = The fog is thick",
-      "meaning_ja": "霧 ― 안개가 짙어요（霧が濃いです）"
+      "romanization": "gaeul",
+      "zhuyin": "ㄍㄚ·ㄜㄌ",
+      "katakana": "カウル",
+      "audio": "가을",
+      "meaning": "Autumn / fall — crisp weather; stunning foliage at temples",
+      "meaning_zh_tw": "秋天——天氣清爽；寺廟的紅葉美不勝收",
+      "meaning_ja": "秋 ― 爽やかな気候と寺院の紅葉が美しい",
+      "meaning_es": "Otoño — tiempo fresco; espectacular follaje en los templos"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "황",
-        "사"
+        "겨",
+        "울"
       ],
-      "romanization": "hwangsa",
-      "katakana": "ファンサ",
-      "audio": "황사",
-      "meaning": "Yellow dust / sand storm — seasonal dust from China, a major concern in spring",
-      "meaning_ja": "黄砂 ― 中国から来る砂塵、春に特にひどい"
+      "romanization": "gyeoul",
+      "zhuyin": "ㄍㄧㄜ·ㄨㄌ",
+      "katakana": "キョウル",
+      "audio": "겨울",
+      "meaning": "Winter — cold and dry; ski resorts are popular",
+      "meaning_zh_tw": "冬天——寒冷乾燥；滑雪場非常受歡迎",
+      "meaning_ja": "冬 ― 寒くて乾燥；スキーリゾートが人気",
+      "meaning_es": "Invierno — frío y seco; las estaciones de esquí son populares"
     },
     {
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "장",
-        "마"
+        "온",
+        "도"
       ],
-      "romanization": "jangma",
-      "katakana": "チャンマ",
-      "audio": "장마",
-      "meaning": "Rainy season — Korea's monsoon period in June-July",
-      "meaning_ja": "梅雨 / 雨季 ― 韓国の梅雨は6〜7月"
+      "romanization": "ondo",
+      "zhuyin": "ㄨㄣ·ㄉㄛ",
+      "katakana": "オンド",
+      "audio": "온도",
+      "meaning": "Temperature — 온도가 몇 도예요? = What's the temperature?",
+      "meaning_zh_tw": "溫度——온도가 몇 도예요？＝現在幾度？",
+      "meaning_ja": "温度 ― 온도가 몇 도예요？（気温は何度ですか？）",
+      "meaning_es": "Temperatura — 온도가 몇 도예요? = ¿Cuántos grados hace?"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "It's raining. How do you say this in Korean?",
+      "prompt": "추워요 means...",
+      "prompt_zh_tw": "추워요 的意思是……",
       "choices": [
-        "눈이 와요",
-        "비가 와요",
-        "바람이 불어요",
-        "날씨가 맑아요"
+        "It's hot",
+        "It's windy",
+        "It's cold",
+        "It's raining"
       ],
-      "correct": "비가 와요",
-      "prompt_ja": "雨が降っています。韓国語でどう言いますか？"
+      "choices_zh_tw": [
+        "很熱",
+        "很風",
+        "很冷",
+        "下雨"
+      ],
+      "choices_ja": [
+        "暑いです",
+        "風が強いです",
+        "寒いです",
+        "雨が降っています"
+      ],
+      "correct": "It's cold",
+      "prompt_ja": "추워요 はどういう意味ですか？",
+      "prompt_es": "추워요 significa...",
+      "choices_es": [
+        "Hace calor",
+        "Hace viento",
+        "Hace frío",
+        "Está lloviendo"
+      ]
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "The weather is 따뜻해요. What is it like?",
+      "prompt": "Which Korean season is famous for cherry blossoms?",
+      "prompt_zh_tw": "哪個韓國季節以櫻花聞名？",
       "choices": [
-        "Hot",
-        "Cold",
-        "Warm",
-        "Windy"
+        "여름 (summer)",
+        "봄 (spring)",
+        "가을 (autumn)",
+        "겨울 (winter)"
+      ],
+      "choices_zh_tw": [
+        "여름（夏天）",
+        "봄（春天）",
+        "가을（秋天）",
+        "겨울（冬天）"
       ],
       "choices_ja": [
-        "暑い",
-        "寒い",
-        "暖かい",
-        "風が強い"
+        "여름（夏）",
+        "봄（春）",
+        "가을（秋）",
+        "겨울（冬）"
       ],
-      "correct": "Warm",
-      "prompt_ja": "따뜻해요はどんな天気ですか？"
+      "correct": "봄 (spring)",
+      "prompt_ja": "桜の花で有名な韓国の季節は？",
+      "prompt_es": "¿Qué estación coreana es famosa por los cerezos en flor?",
+      "choices_es": [
+        "여름 (verano)",
+        "봄 (primavera)",
+        "가을 (otoño)",
+        "겨울 (invierno)"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Korea's seasonal dust storms blowing in from China are called...",
+      "prompt": "비가 와요 means...",
+      "prompt_zh_tw": "비가 와요 的意思是……",
       "choices": [
-        "장마 (jangma)",
-        "황사 (hwangsa)",
-        "태풍 (taepung)",
-        "안개 (angae)"
+        "The wind is blowing",
+        "It's snowing",
+        "It's raining",
+        "It's sunny"
       ],
-      "correct": "황사 (hwangsa)",
-      "prompt_ja": "中国から飛んでくる韓国の季節的な砂嵐は何と呼ばれますか？"
+      "choices_zh_tw": [
+        "風在吹",
+        "正在下雪",
+        "正在下雨",
+        "晴天"
+      ],
+      "choices_ja": [
+        "風が吹いています",
+        "雪が降っています",
+        "雨が降っています",
+        "晴れています"
+      ],
+      "correct": "It's raining",
+      "prompt_ja": "비가 와요 はどういう意味ですか？",
+      "prompt_es": "비가 와요 significa...",
+      "choices_es": [
+        "El viento está soplando",
+        "Está nevando",
+        "Está lloviendo",
+        "Está soleado"
+      ]
     },
     {
       "id": 20,
@@ -297,9 +410,13 @@
       "type": "lesson_complete",
       "title": "Weather Complete!",
       "title_kr": "날씨 완성!",
-      "message": "날씨 이야기를 해봐요! (Let's talk about the weather!) Weather is the universal conversation opener. Now you can discuss Korea's dramatic four seasons, complain about humidity in summer (더워 죽겠어요!), and marvel at the first snow (첫눈).",
-      "next_url": "vocabulary.html?cat=verbs",
-      "message_ja": "날씨 이야기를 해봐요！（天気の話をしましょう！）天気は誰でもできる会話の話題です。今や韓国の劇的な四季・夏の蒸し暑さ（더워 죽겠어요！）・初雪（첫눈）を語れます。"
+      "title_zh_tw": "天氣詞彙完成！",
+      "message": "날씨 이야기 할 수 있어요! (You can talk about the weather!) Weather small-talk is a great icebreaker with Korean friends. Ask 오늘 날씨 어때요? and watch the conversation flow.",
+      "message_zh_tw": "날씨 이야기 할 수 있어요！（你可以聊天氣話題了！）天氣閒聊是與韓國朋友破冰的好方式。問一句 오늘 날씨 어때요？（今天天氣怎麼樣？），對話就自然展開了。",
+      "next_url": "vocabulary.html?cat=emotions",
+      "message_ja": "날씨 이야기 할 수 있어요！（天気について話せます！）天気の雑談は韓国人との会話の糸口になります。오늘 날씨 어때요？（今日の天気はどうですか？）と聞いてみましょう。",
+      "title_es": "¡El Tiempo Completado!",
+      "message_es": "날씨 이야기 할 수 있어요! (¡Puedes hablar del tiempo!) El tiempo es un gran tema para romper el hielo con amigos coreanos. Pregunta 오늘 날씨 어때요? y observa cómo fluye la conversación."
     }
   ]
 }

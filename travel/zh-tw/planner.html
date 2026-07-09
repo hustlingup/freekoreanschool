@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>韓國旅程規劃工具 | 한국어 학교</title>
+  <meta name="description" content="互動式韓國旅程規劃工具 — 依時間與活動類型排定行程，可列印或匯出。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="canonical" href="https://freekoreanschool.com/travel/zh-tw/planner">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="韓國旅程規劃工具 | 한국어 학교">
+  <meta property="og:description" content="互動式韓國旅程規劃工具 — 依時間與活動類型排定行程，可列印或匯出。">
+  <meta property="og:url" content="https://freekoreanschool.com/travel/zh-tw/planner">
+  <meta property="og:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <meta property="og:site_name" content="Korean School 한국어 학교">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="韓國旅程規劃工具 | 한국어 학교">
+  <meta name="twitter:description" content="互動式韓國旅程規劃工具 — 依時間與活動類型排定行程，可列印或匯出。">
+  <meta name="twitter:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <link rel="alternate" hreflang="zh-TW" href="https://freekoreanschool.com/travel/zh-tw/planner">
+  <link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/travel/ja/planner">
+  <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/travel/planner">
+  <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/travel/planner">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "韓國旅程規劃工具 | 한국어 학교",
+  "description": "互動式韓國旅程規劃工具 — 依時間與活動類型排定行程，可列印或匯出。",
+  "url": "https://freekoreanschool.com/travel/zh-tw/planner",
+  "inLanguage": "zh-TW",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Korean School 한국어 학교",
+    "url": "https://freekoreanschool.com"
+  }
+}
+  </script>
+
+  <meta name="google-adsense-account" content="ca-pub-6791974364232767">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791974364232767" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D94KSYG9DE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D94KSYG9DE');
+  </script>
+</head>
+<body data-page="travel-planner" class="lang-zh-tw">
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../../index.html" class="logo">
+        <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../../learn/hangul.html"><span class="nav-icon">📚</span> 學習</a></li>
+        <li><a href="../../culture/zh-tw/index.html"><span class="nav-icon">🎵</span> K文化</a></li>
+        <li><a href="index.html" class="active"><span class="nav-icon">🗺️</span> 旅遊</a></li>
+        <li><a href="../../news/zh-tw/index.html"><span class="nav-icon">📰</span> 新聞</a></li>
+        <li><a href="../../quiz.html"><span class="nav-icon">📝</span> 測驗</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="搜尋…" autocomplete="off" aria-label="搜尋網站" />
+        </div>
+        <button id="theme-toggle" class="icon-btn" aria-label="切換深色／淺色主題">🌙</button>
+        <div class="lang-toggle-wrap">
+          <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="選擇語言">🇹🇼 繁體中文</button>
+          <div class="lang-dropdown" id="lang-dropdown">
+            <a class="lang-dropdown-item" href="../planner.html">🇺🇸 English</a>
+            <span class="lang-dropdown-item active">🇹🇼 繁體中文</span>
+            <a class="lang-dropdown-item" href="../ja/planner.html">🇯🇵 日本語</a>
+          </div>
+        </div>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="開啟選單">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main-content planner-main" style="margin-left:0;max-width:100%;padding-top:calc(var(--header-height) + 0px);">
+    <div class="planner-page">
+
+      <!-- Page Title -->
+      <div style="margin-bottom:24px;">
+        <div class="section-eyebrow" style="margin-bottom:6px;">旅程規劃 · 여행 계획표</div>
+        <h1 style="font-size:1.8rem;font-weight:900;color:var(--text);margin:0 0 6px;">
+          規劃你的韓國行程
+        </h1>
+        <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;">
+          依時間與活動類型新增行程。自動儲存於瀏覽器。完成後可列印或匯出。
+        </p>
+      </div>
+
+      <!-- Layout: 80% planner content + 20% ad zone -->
+      <div class="planner-layout">
+
+        <div class="planner-content">
+
+          <!-- Toolbar -->
+          <div class="planner-toolbar" id="planner-toolbar">
+            <div class="planner-field">
+              <label class="planner-field-label" for="trip-start">出發日期</label>
+              <input class="planner-input" type="date" id="trip-start" />
+            </div>
+            <div class="planner-field">
+              <label class="planner-field-label" for="trip-days">天數</label>
+              <input class="planner-input" type="number" id="trip-days" min="1" max="30" value="3" style="min-width:100px;" />
+            </div>
+            <div class="planner-toolbar-actions">
+              <button class="planner-btn planner-btn-outline" id="legend-emoji-toggle">不顯示表情符號</button>
+              <button class="planner-btn planner-btn-outline" id="planner-reset-btn" aria-label="刪除所有行程">🗑️ 全部刪除</button>
+              <button class="planner-btn planner-btn-primary" id="planner-print-btn" aria-label="列印行程表">🖨️ 列印</button>
+            </div>
+          </div>
+
+          <!-- Planner body: grid + legend side by side -->
+          <div class="planner-body">
+
+            <!-- Planner grid rendered by JS -->
+            <div id="planner-grid-wrapper" style="flex:1;min-width:0;overflow:hidden;">
+              <div id="planner-grid" class="planner-grid"></div>
+            </div>
+
+            <!-- Event type legend (vertical, right side) -->
+            <div class="planner-legend" id="planner-legend">
+              <div class="planner-legend-drag-hint">拖曳至左側</div>
+              <div class="planner-legend-group-label">開始・結束</div>
+              <div class="planner-legend-item" data-type="wake"><div class="planner-legend-dot" style="background:#eab308;"></div><span class="legend-emoji">☀️</span> 起床</div>
+              <div class="planner-legend-item" data-type="sleep"><div class="planner-legend-dot" style="background:#1e40af;"></div><span class="legend-emoji">🌙</span> 就寢</div>
+              <div class="planner-legend-item" data-type="arrive"><div class="planner-legend-dot" style="background:#ef4444;"></div><span class="legend-emoji">🛬</span> 抵達</div>
+              <div class="planner-legend-item" data-type="depart"><div class="planner-legend-dot" style="background:#f97316;"></div><span class="legend-emoji">🛫</span> 出發</div>
+              <div class="planner-legend-group-label">餐飲</div>
+              <div class="planner-legend-item" data-type="breakfast"><div class="planner-legend-dot" style="background:#f97316;"></div><span class="legend-emoji">🍳</span> 早餐</div>
+              <div class="planner-legend-item" data-type="lunch"><div class="planner-legend-dot" style="background:#22c55e;"></div><span class="legend-emoji">🍱</span> 午餐</div>
+              <div class="planner-legend-item" data-type="dinner"><div class="planner-legend-dot" style="background:#8b5cf6;"></div><span class="legend-emoji">🍽️</span> 晚餐</div>
+              <div class="planner-legend-item" data-type="snack"><div class="planner-legend-dot" style="background:#ec4899;"></div><span class="legend-emoji">🧁</span> 點心</div>
+              <div class="planner-legend-group-label">活動</div>
+              <div class="planner-legend-item" data-type="sight"><div class="planner-legend-dot" style="background:#14b8a6;"></div><span class="legend-emoji">🏛️</span> 觀光</div>
+              <div class="planner-legend-item" data-type="shopping"><div class="planner-legend-dot" style="background:#d946ef;"></div><span class="legend-emoji">🛍️</span> 購物</div>
+              <div class="planner-legend-item" data-type="event"><div class="planner-legend-dot" style="background:#f59e0b;"></div><span class="legend-emoji">🎟️</span> 活動</div>
+              <div class="planner-legend-item" data-type="experience"><div class="planner-legend-dot" style="background:#10b981;"></div><span class="legend-emoji">🎭</span> 體驗</div>
+              <div class="planner-legend-item" data-type="free"><div class="planner-legend-dot" style="background:#64748b;"></div><span class="legend-emoji">🗺️</span> 自由時間</div>
+              <div class="planner-legend-item" data-type="note"><div class="planner-legend-dot" style="background:#94a3b8;"></div><span class="legend-emoji">📝</span> 備注</div>
+              <div class="planner-legend-group-label">交通</div>
+              <div class="planner-legend-item" data-type="taxi"><div class="planner-legend-dot" style="background:#fbbf24;"></div><span class="legend-emoji">🚕</span> 計程車</div>
+              <div class="planner-legend-item" data-type="bus"><div class="planner-legend-dot" style="background:#84cc16;"></div><span class="legend-emoji">🚌</span> 公車</div>
+              <div class="planner-legend-item" data-type="train"><div class="planner-legend-dot" style="background:#38bdf8;"></div><span class="legend-emoji">🚄</span> 火車</div>
+              <div class="planner-legend-item" data-type="subway"><div class="planner-legend-dot" style="background:#818cf8;"></div><span class="legend-emoji">🚇</span> 地鐵</div>
+              <div class="planner-legend-item" data-type="motorbike"><div class="planner-legend-dot" style="background:#f472b6;"></div><span class="legend-emoji">🛵</span> 機車</div>
+              <div class="planner-legend-item" data-type="walk"><div class="planner-legend-dot" style="background:#a78bfa;"></div><span class="legend-emoji">🚶</span> 步行</div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Ad zone (20% — reserved for Google AdSense) -->
+        <aside class="planner-ad-zone" aria-label="廣告"></aside>
+
+      </div>
+
+      <!-- Print title (only visible when printing) -->
+      <div id="print-title" style="display:none;padding:16px 0 8px;font-size:1.4rem;font-weight:900;color:#000;font-family:sans-serif;"></div>
+
+    </div>
+    <div class="ad-zone ad-zone--bottom">
+      <ins class="adsbygoogle" style="display:block"
+           data-ad-client="ca-pub-6791974364232767"
+           data-ad-slot="9704719339"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+  </main>
+
+
+  <!-- Add-event modal -->
+  <div class="planner-modal-overlay" id="event-modal" role="dialog" aria-modal="true" aria-label="新增行程">
+    <div class="planner-modal">
+      <div class="planner-modal-title">新增行程 · 일정 추가</div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-label">行程名稱</label>
+        <input class="planner-input" type="text" id="event-label" placeholder="例如：景福宮" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-time">時間</label>
+        <input class="planner-input" type="time" id="event-time" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label">活動類型</label>
+        <div class="planner-type-grid" id="event-type-grid">
+          <div class="planner-type-group-label">開始・結束</div>
+          <button class="planner-type-btn" data-type="wake">☀️<br>起床</button>
+          <button class="planner-type-btn" data-type="sleep">🌙<br>就寢</button>
+          <button class="planner-type-btn" data-type="arrive">🛬<br>抵達</button>
+          <button class="planner-type-btn" data-type="depart">🛫<br>出發</button>
+          <div class="planner-type-group-label">餐飲</div>
+          <button class="planner-type-btn" data-type="breakfast">🍳<br>早餐</button>
+          <button class="planner-type-btn" data-type="lunch">🍱<br>午餐</button>
+          <button class="planner-type-btn" data-type="dinner">🍽️<br>晚餐</button>
+          <button class="planner-type-btn" data-type="snack">🧁<br>點心</button>
+          <div class="planner-type-group-label">活動</div>
+          <button class="planner-type-btn" data-type="sight">🏛️<br>觀光</button>
+          <button class="planner-type-btn" data-type="shopping">🛍️<br>購物</button>
+          <button class="planner-type-btn" data-type="event">🎟️<br>活動</button>
+          <button class="planner-type-btn" data-type="experience">🎭<br>體驗</button>
+          <button class="planner-type-btn" data-type="free">🗺️<br>自由時間</button>
+          <button class="planner-type-btn" data-type="note">📝<br>備注</button>
+          <div class="planner-type-group-label">交通</div>
+          <button class="planner-type-btn" data-type="taxi">🚕<br>計程車</button>
+          <button class="planner-type-btn" data-type="bus">🚌<br>公車</button>
+          <button class="planner-type-btn" data-type="train">🚄<br>火車</button>
+          <button class="planner-type-btn" data-type="subway">🚇<br>地鐵</button>
+          <button class="planner-type-btn" data-type="motorbike">🛵<br>機車</button>
+          <button class="planner-type-btn" data-type="walk">🚶<br>步行</button>
+        </div>
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-notes">備注（選填）</label>
+        <input class="planner-input" type="text" id="event-notes" placeholder="例如：需事先預約，入場費₩1,500" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <input type="hidden" id="event-day-idx" />
+      <input type="hidden" id="event-edit-id" />
+      <input type="hidden" id="event-orig-time" />
+
+      <div class="planner-modal-actions">
+        <button class="planner-btn planner-btn-outline" id="modal-cancel-btn">取消</button>
+        <button class="planner-btn planner-btn-danger" id="modal-delete-btn" style="display:none;">🗑️ 刪除</button>
+        <button class="planner-btn planner-btn-primary" id="modal-save-btn">新增</button>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer" id="planner-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="logo">
+            <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>免費韓語學習平台 — 結合語言學習、K文化、旅遊指南與實際練習，適合全球各程度的學習者。</p>
+        </div>
+        <div>
+          <div class="footer-heading">學習</div>
+          <ul class="footer-links">
+            <li><a href="../../learn/hangul.html">韓文字母</a></li>
+            <li><a href="../../learn/grammar.html">文法</a></li>
+            <li><a href="../../learn/vocabulary.html">詞彙</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">探索</div>
+          <ul class="footer-links">
+            <li><a href="../../culture/zh-tw/index.html">K文化</a></li>
+            <li><a href="index.html">旅遊指南</a></li>
+            <li><a href="../../news/zh-tw/index.html">韓國新聞</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">關於</div>
+          <ul class="footer-links">
+            <li><a href="../../zh-tw/about.html">關於我們</a></li>
+            <li><a href="../../zh-tw/contact.html">聯絡我們</a></li>
+            <li><a href="../../zh-tw/privacy.html">隱私政策</a></li>
+            <li><a href="../../zh-tw/terms.html">使用條款</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. 為全球韓語學習者用心製作 ❤️</span>
+        <span>🇰🇷 학습을 즐기세요！（享受你的學習！）</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/lang-core.js"></script>
+  <script src="../../js/app.js"></script>
+<script defer src="../../js/ads.js"></script>
+</body>
+</html>

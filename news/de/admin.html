@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Nachrichten-Admin 관리 | 한국어 학교
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body data-page="news-admin">
+
+  <!-- ══════════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="../../de/index.html" class="logo">
+        <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../../learn/de/hangul.html"><span class="nav-icon">📚</span> Lernen</a></li>
+        <li><a href="../../culture/de/index.html"><span class="nav-icon">🎵</span> K-Culture</a></li>
+        <li><a href="../../travel/de/index.html"><span class="nav-icon">🗺️</span> Reisen</a></li>
+        <li><a href="../../news/de/index.html"><span class="nav-icon">📰</span> Nachrichten</a></li>
+        <li><a href="../../de/quiz.html"><span class="nav-icon">📝</span> Quiz</a></li>
+      </ul>
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="icon-btn" id="admin-signout-btn" aria-label="Sign out" style="display:none; font-size:0.75rem; padding:6px 14px; gap:4px;">🚪 Abmelden</button>
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════
+         LOGIN GATE (shown when not authenticated)
+    ══════════════════════════════════════════════ -->
+    <div id="admin-gate" class="admin-gate">
+      <div class="admin-login-card">
+        <div style="font-size:2.5rem; text-align:center; margin-bottom:20px;">⚙️</div>
+        <div class="admin-login-title">Nachrichten-Admin 관리</div>
+        <div class="admin-login-sub">Melde dich an, um Artikel, Themen und Tageszusammenfassungen zu verwalten.</div>
+
+        <div class="admin-form" style="margin-top:0;">
+          <div class="admin-form-group">
+            <label class="admin-form-label" for="admin-email">E-Mail</label>
+            <input id="admin-email" type="email" class="admin-input" placeholder="admin@example.com" autocomplete="username" />
+          </div>
+          <div class="admin-form-group">
+            <label class="admin-form-label" for="admin-password">Passwort</label>
+            <input id="admin-password" type="password" class="admin-input" placeholder="••••••••" autocomplete="current-password" />
+          </div>
+          <div id="admin-login-error" class="admin-error"></div>
+          <button id="admin-login-btn" class="btn btn-primary w-full" style="margin-top:4px;">Anmelden →</button>
+        </div>
+
+        <div style="margin-top:20px; text-align:center;">
+          <a href="index.html" style="font-size:0.8rem; color:var(--text-muted); text-decoration:none;">← Zurück zu den Nachrichten</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════
+         ADMIN PANEL (shown after authentication)
+    ══════════════════════════════════════════════ -->
+    <div id="admin-panel" class="admin-wrap">
+
+      <!-- Panel Header -->
+      <div class="admin-header">
+        <div>
+          <div class="section-eyebrow" style="margin-bottom:6px;">⚙️ NACHRICHTENVERWALTUNG · 뉴스 관리</div>
+          <h1 class="admin-header-title">Admin-Dashboard</h1>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <span style="font-size:0.8rem; color:var(--text-muted);">Angemeldet als <strong id="admin-user-email" style="color:var(--text);"></strong></span>
+          <a href="index.html" class="btn btn-outline btn-sm">← Nachrichten ansehen</a>
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="admin-stats">
+        <div class="admin-stat-card">
+          <div class="admin-stat-num" id="stat-total">—</div>
+          <div class="admin-stat-label">Artikel gesamt</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-num" id="stat-today">—</div>
+          <div class="admin-stat-label">Heute veröffentlicht</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-num" id="stat-ai">—</div>
+          <div class="admin-stat-label">KI-generiert</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-num" id="stat-views">—</div>
+          <div class="admin-stat-label">Aufrufe gesamt</div>
+        </div>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="admin-tabs" role="tablist">
+        <button class="admin-tab active" data-admin-tab="articles" role="tab">📋 Artikel</button>
+        <button class="admin-tab" data-admin-tab="create" role="tab">✏️ Erstellen / Bearbeiten</button>
+        <button class="admin-tab" data-admin-tab="summaries" role="tab">📅 Tageszusammenfassungen</button>
+        <button class="admin-tab" data-admin-tab="topics" role="tab">🏷️ Themen</button>
+      </div>
+
+
+      <!-- ── TAB: Articles ────────────────────────────── -->
+      <div id="admin-tab-articles" class="admin-tab-panel active" role="tabpanel">
+
+        <!-- Toolbar -->
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:20px;">
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <select id="articles-status-filter" class="admin-select" style="width:auto;">
+              <option value="all">Alle Status</option>
+              <option value="published">Veröffentlicht</option>
+              <option value="draft">Entwurf</option>
+              <option value="archived">Archiviert</option>
+            </select>
+            <select id="articles-topic-filter" class="admin-select" style="width:auto;">
+              <option value="all">Alle Themen</option>
+            </select>
+          </div>
+          <button id="admin-create-btn" class="btn btn-primary btn-sm">+ Neuer Artikel</button>
+        </div>
+
+        <!-- Articles Table -->
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Titel</th>
+                <th>Thema</th>
+                <th>Stufe</th>
+                <th>Datum</th>
+                <th>Aufrufe</th>
+                <th>Status</th>
+                <th>Quelle</th>
+                <th>Aktionen</th>
+              </tr>
+            </thead>
+            <tbody id="admin-articles-tbody">
+              <tr>
+                <td colspan="8" style="text-align:center; padding:48px; color:var(--text-muted);">
+                  Artikel werden geladen…
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="text-align:center; margin-top:20px;">
+          <button id="admin-load-more-btn" class="load-more-btn">Mehr laden</button>
+        </div>
+      </div>
+
+
+      <!-- ── TAB: Create / Edit ───────────────────────── -->
+      <div id="admin-tab-create" class="admin-tab-panel" role="tabpanel">
+
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:24px; flex-wrap:wrap; gap:12px;">
+          <h2 id="admin-form-heading" style="font-size:1.2rem; font-weight:800; color:var(--text); margin:0;">Neuen Artikel erstellen</h2>
+          <button type="button" id="admin-form-cancel-btn-2" class="btn btn-outline btn-sm">← Zurück zu den Artikeln</button>
+        </div>
+
+        <form id="admin-article-form" class="admin-form" novalidate>
+          <input type="hidden" id="form-article-id" />
+
+          <!-- Section: Basic Info -->
+          <div style="background:var(--glass); border:1px solid var(--border); border-radius:var(--radius-xl); padding:24px;">
+            <div class="admin-image-section-title">Grundinfos</div>
+            <div class="admin-form-row">
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-title-en">Titel (Englisch) *</label>
+                <input id="form-title-en" type="text" class="admin-input" placeholder="Artikeltitel auf Englisch" required />
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-title-ko">Titel (Koreanisch) * 한국어</label>
+                <input id="form-title-ko" type="text" class="admin-input" placeholder="기사 제목" required />
+              </div>
+            </div>
+            <div class="admin-form-row" style="margin-top:16px;">
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-title-ja">Titel (Japanisch) 日本語</label>
+                <input id="form-title-ja" type="text" class="admin-input" placeholder="記事タイトル（日本語）" />
+              </div>
+            </div>
+            <div class="admin-form-row" style="margin-top:16px;">
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-topic">Thema</label>
+                <select id="form-topic" class="admin-select">
+                  <option value="">Thema wählen…</option>
+                </select>
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-level">Stufe</label>
+                <select id="form-level" class="admin-select">
+                  <option value="beginner">Anfänger</option>
+                  <option value="intermediate">Mittelstufe</option>
+                  <option value="advanced">Fortgeschritten</option>
+                </select>
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-status">Status</label>
+                <select id="form-status" class="admin-select">
+                  <option value="published">Veröffentlicht</option>
+                  <option value="draft">Entwurf</option>
+                  <option value="archived">Archiviert</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Summaries -->
+          <div style="background:var(--glass); border:1px solid var(--border); border-radius:var(--radius-xl); padding:24px;">
+            <div class="admin-image-section-title">Zusammenfassungen</div>
+            <div class="admin-form-row">
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-summary-en">Zusammenfassung (Englisch)</label>
+                <textarea id="form-summary-en" class="admin-input admin-textarea" placeholder="Kurze englische Zusammenfassung (1–2 Sätze)…"></textarea>
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-summary-ko">Zusammenfassung (Koreanisch) 한국어</label>
+                <textarea id="form-summary-ko" class="admin-input admin-textarea" placeholder="한국어 요약…"></textarea>
+              </div>
+            </div>
+            <div class="admin-form-row" style="margin-top:16px;">
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-summary-ja">Zusammenfassung (Japanisch) 日本語</label>
+                <textarea id="form-summary-ja" class="admin-input admin-textarea" placeholder="記事の要約（日本語・1〜2文）…"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Content -->
+          <div style="background:var(--glass); border:1px solid var(--border); border-radius:var(--radius-xl); padding:24px;">
+            <div class="admin-image-section-title">Artikelinhalt</div>
+            <div class="admin-form-row">
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-content-en">Inhalt (Englisch)</label>
+                <textarea id="form-content-en" class="admin-input admin-textarea admin-textarea-lg" placeholder="Vollständiger Artikeltext auf Englisch. Absätze durch Leerzeilen trennen."></textarea>
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-content-ko">Inhalt (Koreanisch) 한국어</label>
+                <textarea id="form-content-ko" class="admin-input admin-textarea admin-textarea-lg" placeholder="한국어 본문…"></textarea>
+              </div>
+            </div>
+            <div class="admin-form-row" style="margin-top:16px;">
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-content-ja">Inhalt (Japanisch) 日本語</label>
+                <textarea id="form-content-ja" class="admin-input admin-textarea admin-textarea-lg" placeholder="日本語の本文。段落は空行で区切ってください。"></textarea>
+              </div>
+            </div>
+            <div class="admin-form-row" style="margin-top:16px; max-width:400px;">
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-read-en">Lesezeit EN (Min.)</label>
+                <input id="form-read-en" type="number" class="admin-input" value="3" min="1" max="60" />
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-read-ko">Lesezeit KO (Min.)</label>
+                <input id="form-read-ko" type="number" class="admin-input" value="4" min="1" max="60" />
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label" for="form-read-ja">Lesezeit JA (Min.)</label>
+                <input id="form-read-ja" type="number" class="admin-input" value="4" min="1" max="60" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Thumbnail Image -->
+          <div class="admin-image-section">
+            <div class="admin-image-section-title">🖼️ Vorschaubild</div>
+            <div class="admin-image-upload-row">
+              <div class="admin-image-preview" id="thumb-preview">🖼️</div>
+              <div class="admin-image-fields">
+                <input id="form-thumb-file" type="file" class="admin-input" accept="image/*" aria-label="Upload thumbnail" />
+                <span id="thumb-upload-status" style="font-size:0.72rem; color:var(--text-muted);"></span>
+                <input id="form-thumb-url" type="url" class="admin-input" placeholder="Oder Bild-URL einfügen" />
+                <input id="form-thumb-alt" type="text" class="admin-input" placeholder="Alternativtext / Bildunterschrift" />
+                <input id="form-thumb-source" type="text" class="admin-input" placeholder="Bildquelle (z. B. Yonhap News)" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Main Article Image -->
+          <div class="admin-image-section">
+            <div class="admin-image-section-title">🖼️ Hauptbild des Artikels</div>
+            <div class="admin-image-upload-row">
+              <div class="admin-image-preview" id="main-img-preview">🖼️</div>
+              <div class="admin-image-fields">
+                <input id="form-main-img-file" type="file" class="admin-input" accept="image/*" aria-label="Upload main image" />
+                <span id="main-img-upload-status" style="font-size:0.72rem; color:var(--text-muted);"></span>
+                <input id="form-main-img-url" type="url" class="admin-input" placeholder="Oder Bild-URL einfügen" />
+                <input id="form-main-img-alt" type="text" class="admin-input" placeholder="Alternativtext / Bildunterschrift" />
+                <input id="form-main-img-source" type="text" class="admin-input" placeholder="Bildquelle" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Extra Images -->
+          <div class="admin-image-section">
+            <div class="admin-image-section-title">🖼️ Zusätzliche Bilder</div>
+            <div class="admin-images-list" id="admin-extra-images-list"></div>
+            <button type="button" id="admin-add-image-btn" class="admin-add-image-btn" style="margin-top:12px;">+ Bild hinzufügen</button>
+          </div>
+
+          <!-- Section: SEO -->
+          <div style="background:var(--glass); border:1px solid var(--border); border-radius:var(--radius-xl); padding:24px;">
+            <div class="admin-image-section-title">SEO</div>
+            <div class="admin-form-group">
+              <label class="admin-form-label" for="form-seo-title">SEO-Titel</label>
+              <input id="form-seo-title" type="text" class="admin-input" placeholder="Standardmäßig der Artikeltitel, wenn leer" />
+            </div>
+            <div class="admin-form-group" style="margin-top:12px;">
+              <label class="admin-form-label" for="form-seo-desc">Meta-Beschreibung <span id="seo-desc-counter" class="admin-char-counter">0/155</span></label>
+              <textarea id="form-seo-desc" class="admin-input admin-textarea" placeholder="Beschreibung für Suchmaschinen, max. 155 Zeichen…" maxlength="200"></textarea>
+            </div>
+            <div class="admin-form-group" style="margin-top:12px;">
+              <label class="admin-form-label" for="form-seo-keywords">Schlüsselwörter (kommagetrennt)</label>
+              <input id="form-seo-keywords" type="text" class="admin-input" placeholder="koreanische Nachrichten, 한국 뉴스, kpop…" />
+            </div>
+          </div>
+
+          <!-- Form Actions -->
+          <div id="admin-save-error" class="admin-error"></div>
+          <div class="admin-form-actions">
+            <button type="submit" id="admin-save-btn" class="btn btn-primary">Artikel speichern</button>
+            <button type="button" id="admin-form-cancel-btn" class="btn btn-outline">Abbrechen</button>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- ── TAB: Daily Summaries ─────────────────────── -->
+      <div id="admin-tab-summaries" class="admin-tab-panel" role="tabpanel">
+        <div style="margin-bottom:20px;">
+          <p style="font-size:0.88rem; color:var(--text-muted);">Tageszusammenfassungen werden automatisch um 8 Uhr KST von GitHub Actions erstellt. Klick auf <strong>Bearbeiten</strong>, um eine Zusammenfassung manuell zu aktualisieren.</p>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Zusammenfassung Englisch</th>
+                <th>Zusammenfassung Koreanisch 한국어</th>
+                <th>Zusammenfassung Japanisch 日本語</th>
+                <th>Aktionen</th>
+              </tr>
+            </thead>
+            <tbody id="admin-summaries-tbody">
+              <tr>
+                <td colspan="5" style="text-align:center; padding:48px; color:var(--text-muted);">
+                  Zusammenfassungen werden geladen…
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- ── TAB: Topics ──────────────────────────────── -->
+      <div id="admin-tab-topics" class="admin-tab-panel" role="tabpanel">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">Verwalte Themenkategorien. Deaktivierte Themen werden in den Artikelfiltern ausgeblendet.</p>
+          <button id="admin-add-topic-btn" class="btn btn-outline btn-sm">+ Thema hinzufügen</button>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Icon</th>
+                <th>Name (EN)</th>
+                <th>Name (KO)</th>
+                <th>Slug</th>
+                <th>Farbklasse</th>
+                <th>Aktiv</th>
+                <th>Aktionen</th>
+              </tr>
+            </thead>
+            <tbody id="admin-topics-tbody">
+              <tr>
+                <td colspan="7" style="text-align:center; padding:48px; color:var(--text-muted);">
+                  Themen werden geladen…
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div><!-- /#admin-panel -->
+  </main>
+
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. Mit ❤️ für Koreanischlernende weltweit gemacht.</span>
+        <span>🇰🇷 학습을 즐기세요! (Viel Spaß beim Lernen!)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../../js/config.js"></script>
+  <script src="../../js/lang-core.js"></script>
+<script src="../../js/langs/lang-de.js"></script>
+  <script src="../../js/app.js"></script>
+</body>
+</html>

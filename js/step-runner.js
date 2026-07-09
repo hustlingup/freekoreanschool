@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════
    StepRunner — Micro-interaction lesson engine
    Handles JSON fetch, step rendering, URL sync,
-   XP tracking, ad throttling, and analytics.
+   progress tracking (via KSProgress), ad throttling, and analytics.
 ═══════════════════════════════════════════════════════ */
 
 'use strict';
@@ -10,8 +10,6 @@ const StepRunner = (() => {
   /* ── State ─────────────────────────────────────────── */
   let lessonData = null;
   let currentIndex = 0;
-  let xp = 0;
-  let streak = 0;
   let stepsSinceLastAdRefresh = 0;
   let lastAdRefreshTime = 0;
   let stickyAdSlot = null;
@@ -19,10 +17,18 @@ const StepRunner = (() => {
 
   const AD_REFRESH_STEPS = 3;
   const AD_REFRESH_SECONDS = 45;
-  const XP_CORRECT = 10;
-  const XP_STAGE = 50;
-  const XP_STREAK_3 = 1.5;
-  const XP_STREAK_5 = 2;
+
+  function t(key) { return window.LangManager ? LangManager.t(key) : key; }
+
+  function lessonId() { return lessonData?.lesson || 'lesson'; }
+
+  /* Record step completion; returns true on first completion. */
+  function markDone(index, type) {
+    if (!window.KSProgress) return false;
+    const first = KSProgress.markStepDone(lessonId(), index, type);
+    updateStreakBadge();
+    return first;
+  }
 
   /* ── Bootstrap ─────────────────────────────────────── */
   async function init(dataUrl) {
@@ -34,7 +40,7 @@ const StepRunner = (() => {
       return;
     }
 
-    stageStepMap = loadStageMap();
+    stageStepMap = window.KSProgress ? KSProgress.getStageMap(lessonId()) : {};
     currentIndex = 0;
     buildShell();
     restoreState();
@@ -55,17 +61,62 @@ const StepRunner = (() => {
       const idx = Math.max(0, parseInt(stepParam, 10) - 1);
       currentIndex = Math.min(idx, lessonData.steps.length - 1);
     }
-    const saved = loadProgress();
-    xp = saved.xp || 0;
-    streak = 0;
-    updateXPBadge();
+    updateStreakBadge();
+  }
+
+  /* ── Language Detection ─────────────────────────── */
+  function _detectLang() {
+    const lmLang = window.LangManager?.getLang();
+    if (lmLang && lmLang !== 'en') return lmLang;
+    const htmlLang = document.documentElement.lang?.toLowerCase();
+    if (htmlLang === 'zh-tw') return 'zh-tw';
+    if (htmlLang === 'ja') return 'ja';
+    if (htmlLang === 'es') return 'es';
+    if (htmlLang === 'fr') return 'fr';
+    if (htmlLang === 'de') return 'de';
+    if (htmlLang === 'vi') return 'vi';
+    if (htmlLang === 'th') return 'th';
+    if (htmlLang === 'id') return 'id';
+    return lmLang || 'en';
+  }
+
+  function _locSuffix() {
+    const lang = _detectLang();
+    const map = { ja: '_ja', 'zh-tw': '_zh_tw', es: '_es', fr: '_fr', de: '_de', vi: '_vi', th: '_th', id: '_id' };
+    return map[lang] || '';
+  }
+
+  function getPronunciationAid(step) {
+    const lang = _detectLang();
+    if (lang === 'ja')    return step.katakana   || step.romanization;
+    if (lang === 'zh-tw') return step.zhuyin     || step.romanization;
+    return step['reading_' + lang.replace('-', '_')] || step.romanization;
+  }
+
+  function loc(obj, base) {
+    const s = _locSuffix();
+    return s && obj[base + s] != null ? obj[base + s] : obj[base];
   }
 
   /* ── Shell Construction ────────────────────────────── */
   function buildShell() {
     const wrap = document.getElementById('step-shell');
     if (!wrap) return;
-    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+    const lang = _detectLang();
+    const isJa = lang === 'ja';
+    const isZhTw = lang === 'zh-tw';
+    const isEs = lang === 'es';
+    const isFr = lang === 'fr';
+    const isDe = lang === 'de';
+    const isVi = lang === 'vi';
+    const isTh = lang === 'th';
+    const isId = lang === 'id';
+
+    const stageLabel = isJa ? 'レッスンステージ' : isZhTw ? '課程階段' : isEs ? 'Etapas de la lección' : isFr ? 'Étapes de la leçon' : isDe ? 'Lektionsphasen' : isVi ? 'Các giai đoạn bài học' : isTh ? 'ขั้นตอนบทเรียน' : isId ? 'Tahapan pelajaran' : 'Lesson stages';
+    const prevLabel  = isJa ? '前へ' : isZhTw ? '上一步' : isEs ? 'Anterior' : isFr ? 'Précédent' : isDe ? 'Zurück' : isVi ? 'Trước' : isTh ? 'ก่อนหน้า' : isId ? 'Sebelumnya' : 'Prev';
+    const nextLabel  = isJa ? '次へ' : isZhTw ? '下一步' : isEs ? 'Siguiente' : isFr ? 'Suivant' : isDe ? 'Weiter' : isVi ? 'Tiếp' : isTh ? 'ถัดไป' : isId ? 'Selanjutnya' : 'Next';
+    const prevAria   = isJa ? '前のステップ' : isZhTw ? '上一步' : isEs ? 'Paso anterior' : isFr ? 'Étape précédente' : isDe ? 'Vorheriger Schritt' : isVi ? 'Bước trước' : isTh ? 'ขั้นตอนก่อนหน้า' : isId ? 'Langkah sebelumnya' : 'Previous step';
+    const nextAria   = isJa ? '次のステップ' : isZhTw ? '下一步' : isEs ? 'Siguiente paso' : isFr ? 'Étape suivante' : isDe ? 'Nächster Schritt' : isVi ? 'Bước tiếp theo' : isTh ? 'ขั้นตอนถัดไป' : isId ? 'Langkah selanjutnya' : 'Next step';
 
     wrap.innerHTML = `
       <div class="hangul-progress" id="hangul-progress">
@@ -75,14 +126,14 @@ const StepRunner = (() => {
         <div class="progress-meta" id="progress-meta"></div>
       </div>
 
-      <div class="stage-nav" id="stage-nav" role="tablist" aria-label="Lesson stages"></div>
+      <div class="stage-nav" id="stage-nav" role="tablist" aria-label="${stageLabel}"></div>
 
       <div class="step-content" id="step-content" aria-live="polite"></div>
 
       <div class="step-nav" id="step-nav">
-        <button class="step-nav-btn" id="btn-prev" aria-label="${isJa ? '前のステップ' : 'Previous step'}">← ${isJa ? '前へ' : 'Prev'}</button>
+        <button class="step-nav-btn" id="btn-prev" aria-label="${prevAria}">← ${prevLabel}</button>
         <div class="step-counter" id="step-counter"></div>
-        <button class="step-nav-btn step-nav-next" id="btn-next" aria-label="${isJa ? '次のステップ' : 'Next step'}">${isJa ? '次へ' : 'Next'} →</button>
+        <button class="step-nav-btn step-nav-next" id="btn-next" aria-label="${nextAria}">${nextLabel} →</button>
       </div>
 
       <div class="ad-slot" id="ad-slot-lesson" aria-hidden="true"></div>
@@ -96,21 +147,41 @@ const StepRunner = (() => {
   function buildStageNav() {
     const nav = document.getElementById('stage-nav');
     if (!nav || !lessonData) return;
-    nav.innerHTML = lessonData.stages.map(s => `
+    const lang = _detectLang();
+    nav.innerHTML = lessonData.stages.map(s => {
+      const stageName = lang === 'ja' ? (s.name_ja || s.name)
+        : lang === 'zh-tw' ? (s.name_zh_tw || s.name)
+        : lang === 'es' ? (s.name_es || s.name)
+        : lang === 'fr' ? (s.name_fr || s.name)
+        : lang === 'de' ? (s.name_de || s.name)
+        : lang === 'vi' ? (s.name_vi || s.name)
+        : lang === 'th' ? (s.name_th || s.name)
+        : lang === 'id' ? (s.name_id || s.name)
+        : s.name;
+      const ariaLabel = lang === 'ja' ? `ステージ ${s.id}: ${stageName}`
+        : lang === 'zh-tw' ? `第 ${s.id} 階段: ${stageName}`
+        : lang === 'es' ? `Etapa ${s.id}: ${stageName}`
+        : lang === 'fr' ? `Étape ${s.id} : ${stageName}`
+        : lang === 'de' ? `Phase ${s.id}: ${stageName}`
+        : lang === 'vi' ? `Giai đoạn ${s.id}: ${stageName}`
+        : lang === 'th' ? `ขั้นตอนที่ ${s.id}: ${stageName}`
+        : lang === 'id' ? `Tahap ${s.id}: ${stageName}`
+        : `Stage ${s.id}: ${stageName}`;
+      return `
       <button class="stage-tab" data-stage="${s.id}" role="tab"
-        aria-label="Stage ${s.id}: ${s.name}">
+        aria-label="${ariaLabel}">
         <span class="stage-num">${s.id}</span>
-        <span class="stage-label">${s.name}</span>
+        <span class="stage-label">${stageName}</span>
         <span class="stage-label-kr">${s.name_kr}</span>
-      </button>
-    `).join('');
+      </button>`;
+    }).join('');
     nav.querySelectorAll('.stage-tab').forEach(btn => {
       btn.addEventListener('click', () => {
         const stageId = parseInt(btn.dataset.stage, 10);
         const currentStage = lessonData.steps[currentIndex]?.stage;
         if (stageId === currentStage) return;
         if (currentStage !== undefined) stageStepMap[currentStage] = currentIndex;
-        saveStageMap();
+        if (window.KSProgress) KSProgress.saveStageMap(lessonId(), stageStepMap);
         const stage = lessonData.stages.find(s => s.id === stageId);
         if (!stage) return;
         const savedStep = stageStepMap[stageId];
@@ -121,6 +192,10 @@ const StepRunner = (() => {
 
   /* ── Navigation ────────────────────────────────────── */
   function nextStep() {
+    const step = lessonData.steps[currentIndex];
+    if (step && (step.type === 'reading_card' || step.type === 'card_reveal')) {
+      markDone(currentIndex, step.type);
+    }
     if (currentIndex < lessonData.steps.length - 1) {
       goToStep(currentIndex + 1);
     }
@@ -205,7 +280,10 @@ const StepRunner = (() => {
 
     if (step.stage !== undefined) {
       stageStepMap[step.stage] = index;
-      saveStageMap();
+      if (window.KSProgress) KSProgress.saveStageMap(lessonId(), stageStepMap);
+    }
+    if (step.type !== 'lesson_complete' && window.KSProgress) {
+      KSProgress.setLastPosition(lessonId(), index);
     }
 
     updateProgress(index);
@@ -217,38 +295,39 @@ const StepRunner = (() => {
 
   /* reading_card */
   function renderReadingCard(step) {
-    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
-
+    const lang = _detectLang();
+    const patternWord = lang === 'zh-tw' ? '結構' : lang === 'ja' ? 'パターン' : lang === 'es' ? 'Patrón' : lang === 'fr' ? 'Modèle' : lang === 'de' ? 'Muster' : lang === 'vi' ? 'Mẫu' : lang === 'th' ? 'รูปแบบ' : lang === 'id' ? 'Pola' : 'Pattern';
     const patternsHtml = step.patterns ? `
       <div class="sr-pattern-grid">
         ${step.patterns.map((p, i) => `
           <div class="sr-pattern-card">
-            <div class="sr-pattern-name">${esc(p.name)} Pattern</div>
+            <div class="sr-pattern-name">${esc(p.name)} ${patternWord}</div>
             <div class="sr-pattern-char">${esc(p.char)}</div>
             <div class="sr-pattern-jamo">${esc(p.jamo)}</div>
-            <div class="sr-pattern-label">${esc(isJa && step.patterns_label_ja && step.patterns_label_ja[i] ? step.patterns_label_ja[i] : p.label)}</div>
+            <div class="sr-pattern-label">${esc((loc(step, 'patterns_label') || [])[i] || p.label)}</div>
           </div>`).join('')}
       </div>` : '';
 
-    const activeRules = isJa && step.rules_ja ? step.rules_ja : step.rules;
+    const activeRules = loc(step, 'rules') || step.rules;
     const rulesHtml = activeRules ? `
       <ul class="sr-reading-rules">
         ${activeRules.map((r, i) => `<li><span class="sr-rule-num">${i + 1}</span> ${esc(r)}</li>`).join('')}
       </ul>` : '';
     const tip = step.tip;
+    const tipL = loc(step, 'tip') || tip;
     const tipHtml = tip ? `
       <div class="tip-box" style="margin-top:20px">
         <span class="tip-icon">${esc(tip.icon || '💡')}</span>
         <div class="tip-content">
-          <div class="tip-label">${esc(isJa && step.tip_ja ? step.tip_ja.label : tip.label)}</div>
-          <div class="tip-text">${esc(isJa && step.tip_ja ? step.tip_ja.text : tip.text)}</div>
+          <div class="tip-label">${esc(tipL.label)}</div>
+          <div class="tip-text">${esc(tipL.text)}</div>
         </div>
       </div>` : '';
 
     return `
       <div class="sr-reading-card">
-        <h2 class="sr-reading-title">${esc(step.title)} <span class="sr-reading-title-kr">${esc(step.title_kr || '')}</span></h2>
-        <p class="sr-reading-body">${esc(window.LangManager && window.LangManager.getLang() === 'ja' && step.body_ja ? step.body_ja : step.body)}</p>
+        <h2 class="sr-reading-title">${esc(loc(step, 'title'))} <span class="sr-reading-title-kr">${esc(step.title_kr || '')}</span></h2>
+        <p class="sr-reading-body">${esc(loc(step, 'body'))}</p>
         ${patternsHtml}
         ${rulesHtml}
         ${tipHtml}
@@ -257,9 +336,18 @@ const StepRunner = (() => {
 
   /* card_reveal */
   function renderCardReveal(step) {
+    const lang = _detectLang();
     const audioFn = window.AudioCache
       ? `AudioCache.play('${esc(step.audio)}')`
       : `speakKorean('${esc(step.audio)}')`;
+    const audioFnBtn = window.AudioCache
+      ? `AudioCache.play('${esc(step.audio)}', this)`
+      : `speakKorean('${esc(step.audio)}', this)`;
+    const pronAid = getPronunciationAid(step);
+    const showPronInRomSlot = lang === 'zh-tw'; // Zhuyin replaces romanization slot
+    const exMeaning = loc(step, 'example_meaning');
+    const hint      = loc(step, 'hint');
+    const hearBtn   = lang === 'ja' ? '聴く' : lang === 'zh-tw' ? '聽' : lang === 'es' ? 'Escuchar' : lang === 'fr' ? 'Écouter' : lang === 'de' ? 'Anhören' : lang === 'vi' ? 'Nghe' : lang === 'th' ? 'ฟัง' : lang === 'id' ? 'Dengarkan' : 'Hear it';
     return `
       <div class="sr-card-reveal">
         <div class="sr-card" id="flip-card" role="button" tabindex="0"
@@ -268,25 +356,25 @@ const StepRunner = (() => {
           <div class="sr-sub-row">
             <span class="sr-jamo">${esc(step.jamo || step.char)}</span>
             <span class="sr-divider">·</span>
-            <span class="sr-rom">${esc(step.romanization)}</span>
+            <span class="sr-rom">${esc(showPronInRomSlot && pronAid ? pronAid : step.romanization)}</span>
           </div>
-          ${step.katakana ? `<div class="kata">${esc(step.katakana)}</div>` : ''}
-          ${step.example_word ? `<div class="sr-example">${esc(step.example_word)} · ${esc(window.LangManager && window.LangManager.getLang() === 'ja' && step.example_meaning_ja ? step.example_meaning_ja : step.example_meaning)}</div>` : ''}
+          ${pronAid && !showPronInRomSlot && lang === 'ja' ? `<div class="kata">${esc(pronAid)}</div>` : ''}
+          ${step.example_word ? `<div class="sr-example">${esc(step.example_word)} · ${esc(exMeaning)}</div>` : ''}
         </div>
-        ${step.hint ? `<div class="sr-hint">💡 ${esc(window.LangManager && window.LangManager.getLang() === 'ja' && step.hint_ja ? step.hint_ja : step.hint)}</div>` : ''}
-        <button class="btn btn-primary sr-audio-btn" onclick="${audioFn}">
-          🔊 ${window.LangManager && window.LangManager.getLang() === 'ja' ? '聴く' : 'Hear it'}
+        ${hint ? `<div class="sr-hint">💡 ${esc(hint)}</div>` : ''}
+        <button class="btn btn-primary sr-audio-btn" onclick="${audioFnBtn}">
+          🔊 ${hearBtn}
         </button>
       </div>`;
   }
 
   /* match_quiz */
   function renderMatchQuiz(step) {
-    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
     const indices = step.choices.map((_, i) => i).sort(() => Math.random() - 0.5);
+    const chs = loc(step, 'choices');
     const opts = indices.map(i => {
       const c = step.choices[i];
-      const display = isJa && step.choices_ja && step.choices_ja[i] ? step.choices_ja[i] : c;
+      const display = chs && chs[i] != null ? chs[i] : c;
       return `
       <button class="quiz-option sr-quiz-opt" data-value="${esc(c)}"
         onclick="StepRunner.handleQuizAnswer(this)"
@@ -296,7 +384,7 @@ const StepRunner = (() => {
     }).join('');
     return `
       <div class="sr-quiz" data-correct="${esc(step.correct)}">
-        <p class="sr-quiz-prompt">${esc(isJa && step.prompt_ja ? step.prompt_ja : step.prompt)}</p>
+        <p class="sr-quiz-prompt">${esc(loc(step, 'prompt'))}</p>
         <div class="sr-quiz-opts">${opts}</div>
         <div class="sr-quiz-feedback" id="sr-quiz-feedback" aria-live="polite"></div>
       </div>`;
@@ -304,12 +392,31 @@ const StepRunner = (() => {
 
   /* syllable_builder */
   function renderSyllableBuilder(step) {
-    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+    const lang = _detectLang();
+    const isJa = lang === 'ja';
+    const isZhTw = lang === 'zh-tw';
+    const isEs = lang === 'es';
+    const isFr = lang === 'fr';
+    const isDe = lang === 'de';
+    const isVi = lang === 'vi';
+    const isTh = lang === 'th';
+    const isId = lang === 'id';
+    const prompt = isJa ? 'これらのピースを音節ブロックに組み合わせてください：'
+      : isZhTw ? '將這些積木組合成音節：'
+      : isEs ? 'Combina estas piezas en un bloque de sílaba:'
+      : isFr ? 'Assemblez ces pièces en un bloc syllabique :'
+      : isDe ? 'Kombiniere diese Teile zu einem Silbenblock:'
+      : isVi ? 'Kết hợp các mảnh này thành một khối âm tiết:'
+      : isTh ? 'รวมชิ้นส่วนเหล่านี้เป็นบล็อกพยางค์:'
+      : isId ? 'Gabungkan bagian-bagian ini menjadi blok suku kata:'
+      : 'Combine these pieces into a syllable block:';
+    const revealLabel = isJa ? '音節を表示' : isZhTw ? '顯示音節' : isEs ? 'Mostrar sílaba' : isFr ? 'Révéler la syllabe' : isDe ? 'Silbe anzeigen' : isVi ? 'Hiện âm tiết' : isTh ? 'แสดงพยางค์' : isId ? 'Tampilkan Suku Kata' : 'Reveal Syllable';
+    const meaning = loc(step, 'meaning');
     return `
       <div class="sr-syllable-builder" data-consonant="${esc(step.consonant)}"
         data-vowel="${esc(step.vowel)}" data-result="${esc(step.result)}"
         data-audio="${esc(step.audio)}">
-        <p class="sr-quiz-prompt">${isJa ? 'これらのピースを音節ブロックに組み合わせてください：' : 'Combine these pieces into a syllable block:'}</p>
+        <p class="sr-quiz-prompt">${prompt}</p>
         <div class="syl-pieces">
           <div class="syl-piece syl-consonant" data-type="consonant">${esc(step.consonant)}</div>
           <div class="syl-plus">+</div>
@@ -319,57 +426,136 @@ const StepRunner = (() => {
         </div>
         <button class="btn btn-primary sr-reveal-btn" id="syl-reveal-btn"
           onclick="StepRunner.revealSyllable(this)">
-          ${isJa ? '音節を表示' : 'Reveal Syllable'}
+          ${revealLabel}
         </button>
-        <div class="sr-hint" id="syl-meaning" style="display:none">${esc(isJa && step.meaning_ja ? step.meaning_ja : step.meaning)}</div>
+        <div class="sr-hint" id="syl-meaning" style="display:none">${esc(meaning)}</div>
       </div>`;
+  }
+
+  /* ── Vocab Bookmark (inline in lessons) ────────────── */
+  function buildBookmarkBtn(step) {
+    if (!step.audio || !window.FlashcardManager) return '';
+    const saved = FlashcardManager.hasCard(step.audio);
+    const label = saved ? 'Remove from flashcards' : 'Save to flashcards';
+    const text  = saved ? '★ Saved' : '☆ Save';
+    return `<button class="sr-bookmark-btn${saved ? ' saved' : ''}"
+      data-korean="${esc(step.syllables ? step.syllables.join('') : step.audio)}"
+      data-rom="${esc(step.romanization || '')}"
+      data-kana="${esc(step.katakana || '')}"
+      data-zhuyin="${esc(step.zhuyin || '')}"
+      data-eng="${esc(step.meaning || '')}"
+      data-id="${esc(step.audio)}"
+      aria-label="${label}"
+      onclick="StepRunner.toggleVocabBookmark(this)">${text}</button>`;
+  }
+
+  function toggleVocabBookmark(btn) {
+    if (!window.FlashcardManager) return;
+    const id = btn.dataset.id;
+    if (FlashcardManager.hasCard(id)) {
+      FlashcardManager.removeCard(id);
+      btn.textContent = '☆ Save';
+      btn.classList.remove('saved');
+      btn.setAttribute('aria-label', 'Save to flashcards');
+    } else {
+      const cat = new URLSearchParams(location.search).get('cat') || 'vocabulary';
+      FlashcardManager.addCard({
+        id,
+        korean: btn.dataset.korean,
+        romanization: btn.dataset.rom,
+        kana: btn.dataset.kana,
+        zhuyin: btn.dataset.zhuyin,
+        english: btn.dataset.eng,
+        theme: cat,
+      });
+      btn.textContent = '★ Saved';
+      btn.classList.add('saved');
+      btn.setAttribute('aria-label', 'Remove from flashcards');
+    }
   }
 
   /* listen_repeat */
   function renderListenRepeat(step) {
-    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
+    const lang = _detectLang();
+    const isJa = lang === 'ja';
+    const isZhTw = lang === 'zh-tw';
+    const isEs = lang === 'es';
+    const isFr = lang === 'fr';
+    const isDe = lang === 'de';
+    const isVi = lang === 'vi';
+    const isTh = lang === 'th';
+    const isId = lang === 'id';
     const syllableHtml = step.syllables.map(s =>
       `<span class="lr-syllable">${esc(s)}</span>`
     ).join('');
-    const audioFn = window.AudioCache
-      ? `AudioCache.play('${esc(step.audio)}')`
-      : `speakKorean('${esc(step.audio)}')`;
+    const audioFnBtn = window.AudioCache
+      ? `AudioCache.play('${esc(step.audio)}', this)`
+      : `speakKorean('${esc(step.audio)}', this)`;
+    const pronAid = getPronunciationAid(step);
+    const showPronInRomSlot = isZhTw;
+    const listenBtn = isJa ? '聴く' : isZhTw ? '聽' : isEs ? 'Escuchar' : isFr ? 'Écouter' : isDe ? 'Anhören' : isVi ? 'Nghe' : isTh ? 'ฟัง' : isId ? 'Dengarkan' : 'Listen';
+    const saidBtn   = isJa ? '言えた — 次へ' : isZhTw ? '我說了 — 下一個' : isEs ? 'Lo dije — Siguiente' : isFr ? 'Je l\'ai dit — Suivant' : isDe ? 'Gesagt — Weiter' : isVi ? 'Đã nói — Tiếp' : isTh ? 'พูดแล้ว — ถัดไป' : isId ? 'Sudah saya ucapkan — Lanjut' : 'I said it — Next';
+    const meaningEs = step.meaning_es;
+    const meaningVi = step.meaning_vi;
+    const meaningId = step.meaning_id;
     return `
       <div class="sr-listen-repeat">
         <div class="lr-word" data-count="${step.syllables.length}">${syllableHtml}</div>
-        <div class="lr-rom">${esc(step.romanization)}</div>
-        ${step.katakana ? `<div class="kata">${esc(step.katakana)}</div>` : ''}
+        <div class="lr-rom">${esc(showPronInRomSlot && pronAid ? pronAid : step.romanization)}</div>
+        ${pronAid && isJa ? `<div class="kata">${esc(pronAid)}</div>` : ''}
         <div class="lr-meaning lr-meaning-en">${esc(step.meaning)}</div>
         ${step.meaning_ja ? `<div class="lr-meaning lr-meaning-ja">${esc(step.meaning_ja)}</div>` : ''}
-        <button class="btn btn-primary sr-audio-btn" onclick="${audioFn}">
-          🔊 ${isJa ? '聴く' : 'Listen'}
+        ${step.meaning_zh_tw ? `<div class="lr-meaning lr-meaning-zh-tw">${esc(step.meaning_zh_tw)}</div>` : ''}
+        ${meaningEs ? `<div class="lr-meaning lr-meaning-es">${esc(meaningEs)}</div>` : ''}
+        ${step.meaning_fr ? `<div class="lr-meaning lr-meaning-fr">${esc(step.meaning_fr)}</div>` : ''}
+        ${step.meaning_de ? `<div class="lr-meaning lr-meaning-de">${esc(step.meaning_de)}</div>` : ''}
+        ${meaningVi ? `<div class="lr-meaning lr-meaning-vi">${esc(meaningVi)}</div>` : ''}
+        ${meaningId ? `<div class="lr-meaning lr-meaning-id">${esc(meaningId)}</div>` : ''}
+        <button class="btn btn-primary sr-audio-btn" onclick="${audioFnBtn}">
+          🔊 ${listenBtn}
         </button>
         <button class="btn btn-secondary sr-said-btn" id="sr-said-btn"
           onclick="StepRunner.confirmRepeat(this)">
-          🗣️ ${isJa ? '言えた — 次へ' : 'I said it — Next'}
+          🗣️ ${saidBtn}
         </button>
+        ${buildBookmarkBtn(step)}
       </div>`;
   }
 
   /* lesson_complete */
   function renderLessonComplete(step) {
-    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
-    const totalXP = loadProgress().xp || xp;
-    markLessonComplete();
+    if (window.KSProgress) KSProgress.markLessonComplete(lessonId());
+    const msg = loc(step, 'message');
+
+    let statsHtml = '';
+    if (window.KSProgress) {
+      const done = Math.min(KSProgress.getLesson(lessonId()).done.length, lessonData.steps.length - 1);
+      const countable = lessonData.steps.length - 1;
+      const c = KSProgress.getCounters();
+      const streakDays = KSProgress.getStreak();
+      statsHtml = `
+        <div class="complete-stats">
+          <div class="complete-stat"><span class="complete-stat-icon">🔥</span> ${esc(t('{n}-day streak').replace('{n}', streakDays))}</div>
+          <div class="complete-stat"><span class="complete-stat-icon">📚</span> ${esc(t('Steps completed'))}: ${done} / ${countable}</div>
+          <div class="complete-stat"><span class="complete-stat-icon">🗣️</span> ${esc(t('Words & phrases learned'))}: ${c.words}</div>
+          <div class="complete-stat"><span class="complete-stat-icon">✍️</span> ${esc(t('Letters & syllables learned'))}: ${c.letters}</div>
+        </div>`;
+    }
+
     return `
       <div class="sr-complete">
         <div class="complete-confetti-anchor" id="complete-anchor"></div>
         <div class="complete-icon">🎉</div>
         <h2 class="complete-title">${esc(step.title)}</h2>
         <p class="complete-title-kr">${esc(step.title_kr)}</p>
-        <p class="complete-msg">${esc(isJa && step.message_ja ? step.message_ja : step.message)}</p>
-        <div class="complete-xp">⚡ ${totalXP} ${isJa ? 'XP 獲得' : 'XP earned'}</div>
+        <p class="complete-msg">${esc(msg)}</p>
+        ${statsHtml}
         <div class="complete-ad-slot">
           <div class="ad-slot ad-complete" id="ad-slot-complete" aria-label="Advertisement"></div>
         </div>
         <div class="complete-actions">
-          <button class="btn btn-primary" onclick="StepRunner.restart()">${isJa ? 'もう一度' : 'Start Again'}</button>
-          ${step.next_url ? `<a href="${esc(step.next_url)}" class="btn btn-secondary">${isJa ? '次のレッスン →' : 'Next Lesson →'}</a>` : ''}
+          <button class="btn btn-primary" onclick="StepRunner.restart()">${esc(t('Start Again'))}</button>
+          ${step.next_url ? `<a href="${esc(step.next_url)}" class="btn btn-secondary">${esc(t('Next Lesson →'))}</a>` : ''}
         </div>
       </div>`;
   }
@@ -390,30 +576,18 @@ const StepRunner = (() => {
         if (btn.dataset.value === correct) btn.classList.add('correct');
       });
 
-      streak++;
-      let earned = XP_CORRECT;
-      if (streak >= 5) earned = Math.round(XP_CORRECT * XP_STREAK_5);
-      else if (streak >= 3) earned = Math.round(XP_CORRECT * XP_STREAK_3);
-
-      xp += earned;
-      saveProgress();
-      updateXPBadge();
+      markDone(currentIndex, 'match_quiz');
 
       el.classList.add('correct-pop');
       if (window.playDing) playDing();
       if (window.spawnConfetti) spawnConfetti(el);
-      const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
-      if (feedback) feedback.textContent = isJa
-        ? `✓ 正解！ +${earned} XP${streak >= 3 ? ' 🔥 連続 x' + streak : ''}`
-        : `✓ Correct! +${earned} XP${streak >= 3 ? ' 🔥 Streak x' + streak : ''}`;
+      if (feedback) feedback.textContent = t('✓ Correct!');
 
       setTimeout(() => nextStep(), 1400);
     } else {
-      streak = 0;
       el.disabled = true;
       el.classList.add('wrong', 'wrong-shake');
-      const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
-      if (feedback) feedback.textContent = isJa ? '✗ 惜しい — もう一度！' : '✗ Not quite — try again!';
+      if (feedback) feedback.textContent = t('✗ Not quite — try again!');
       setTimeout(() => el.classList.remove('wrong-shake'), 400);
     }
   }
@@ -436,14 +610,10 @@ const StepRunner = (() => {
     if (window.AudioCache) AudioCache.play(audio);
     else if (window.speakKorean) speakKorean(audio);
 
-    const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
-    btn.textContent = isJa ? '次へ →' : 'Next →';
+    btn.textContent = t('Next →');
     btn.onclick = nextStep;
 
-    streak++;
-    xp += XP_CORRECT;
-    saveProgress();
-    updateXPBadge();
+    markDone(currentIndex, 'syllable_builder');
 
     if (window.playDing) playDing();
     if (window.spawnConfetti && resultEl) spawnConfetti(resultEl);
@@ -451,10 +621,7 @@ const StepRunner = (() => {
 
   /* ── Listen-Repeat Confirm ──────────────────────────── */
   function confirmRepeat(btn) {
-    streak++;
-    xp += XP_CORRECT;
-    saveProgress();
-    updateXPBadge();
+    markDone(currentIndex, 'listen_repeat');
     if (window.playDing) playDing();
     nextStep();
   }
@@ -475,10 +642,26 @@ const StepRunner = (() => {
       const completed = index + 1;
       const remaining = total - completed;
       const timeLeft = Math.round((remaining * 60) / 60);
-      const isJa = window.LangManager && window.LangManager.getLang() === 'ja';
-      meta.textContent = isJa
-        ? `ステージ ${stageId}／${lessonData.stages.length} · 残り約${timeLeft}分`
-        : `Stage ${stageId} of ${lessonData.stages.length} · ~${timeLeft} min remaining`;
+      const lang = _detectLang();
+      if (lang === 'ja') {
+        meta.textContent = `ステージ ${stageId}／${lessonData.stages.length} · 残り約${timeLeft}分`;
+      } else if (lang === 'zh-tw') {
+        meta.textContent = `第 ${stageId} 階段（共 ${lessonData.stages.length} 個）· 約剩 ${timeLeft} 分鐘`;
+      } else if (lang === 'es') {
+        meta.textContent = `Etapa ${stageId} de ${lessonData.stages.length} · ~${timeLeft} min restantes`;
+      } else if (lang === 'fr') {
+        meta.textContent = `Étape ${stageId} sur ${lessonData.stages.length} · ~${timeLeft} min restantes`;
+      } else if (lang === 'de') {
+        meta.textContent = `Phase ${stageId} von ${lessonData.stages.length} · ~${timeLeft} Min. verbleibend`;
+      } else if (lang === 'vi') {
+        meta.textContent = `Giai đoạn ${stageId} / ${lessonData.stages.length} · ~${timeLeft} phút còn lại`;
+      } else if (lang === 'th') {
+        meta.textContent = `ขั้นตอนที่ ${stageId} จาก ${lessonData.stages.length} · ~${timeLeft} นาทีที่เหลือ`;
+      } else if (lang === 'id') {
+        meta.textContent = `Tahap ${stageId} dari ${lessonData.stages.length} · ~${timeLeft} menit tersisa`;
+      } else {
+        meta.textContent = `Stage ${stageId} of ${lessonData.stages.length} · ~${timeLeft} min remaining`;
+      }
     }
   }
 
@@ -511,51 +694,13 @@ const StepRunner = (() => {
     if (el) el.textContent = `${index + 1} / ${lessonData.steps.length}`;
   }
 
-  function updateXPBadge() {
+  function updateStreakBadge() {
     const badge = document.getElementById('xp-badge');
-    if (!badge) return;
-    const multiplier = streak >= 5 ? '2×' : streak >= 3 ? '1.5×' : '';
-    badge.innerHTML = `⚡ ${xp} XP${streak >= 3 ? ` · 🔥 ${streak} streak${multiplier ? ' ' + multiplier : ''}` : ''}`;
-  }
-
-  /* ── Persistence ───────────────────────────────────── */
-  function saveProgress() {
-    try {
-      const key = 'ks-' + (lessonData?.lesson || 'lesson') + '-xp';
-      localStorage.setItem(key, JSON.stringify({ xp, ts: Date.now() }));
-    } catch (_) {}
-  }
-
-  function loadProgress() {
-    try {
-      const key = 'ks-' + (lessonData?.lesson || 'lesson') + '-xp';
-      return JSON.parse(localStorage.getItem(key) || '{}');
-    } catch (_) { return {}; }
-  }
-
-  function markLessonComplete() {
-    try {
-      const id = lessonData?.lesson || 'lesson';
-      const lessons = JSON.parse(localStorage.getItem('ks-lessons-done') || '[]');
-      if (!lessons.includes(id)) {
-        lessons.push(id);
-        localStorage.setItem('ks-lessons-done', JSON.stringify(lessons));
-      }
-    } catch (_) {}
-  }
-
-  function saveStageMap() {
-    try {
-      const key = 'ks-' + (lessonData?.lesson || 'lesson') + '-stagemap';
-      localStorage.setItem(key, JSON.stringify(stageStepMap));
-    } catch (_) {}
-  }
-
-  function loadStageMap() {
-    try {
-      const key = 'ks-' + (lessonData?.lesson || 'lesson') + '-stagemap';
-      return JSON.parse(localStorage.getItem(key) || '{}');
-    } catch (_) { return {}; }
+    if (!badge || !window.KSProgress) return;
+    const days = KSProgress.getStreak();
+    const today = KSProgress.getTodaySteps();
+    badge.textContent = '🔥 ' + t('{n}-day streak').replace('{n}', days) +
+      ' · ' + t('{n} steps today').replace('{n}', today);
   }
 
   /* ── Utilities ─────────────────────────────────────── */
@@ -570,10 +715,8 @@ const StepRunner = (() => {
   }
 
   function restart() {
-    xp = 0; streak = 0;
     stageStepMap = {};
-    saveProgress();
-    saveStageMap();
+    if (window.KSProgress) KSProgress.resetLessonPosition(lessonId());
     goToStep(0);
   }
 
@@ -583,6 +726,7 @@ const StepRunner = (() => {
     handleQuizAnswer,
     revealSyllable,
     confirmRepeat,
+    toggleVocabBookmark,
     restart,
     get stepsSinceLastAdRefresh() { return stepsSinceLastAdRefresh; },
     set stepsSinceLastAdRefresh(v) { stepsSinceLastAdRefresh = v; },

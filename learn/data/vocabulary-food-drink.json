@@ -5,10 +5,11 @@
     {
       "id": 1,
       "name": "Food & Drink",
-      "name_kr": "음식·음료",
+      "name_kr": "음식과 음료",
       "first_step": 1,
       "last_step": 22,
-      "time_minutes": 13
+      "time_minutes": 13,
+      "name_es": "Comida y Bebida"
     }
   ],
   "steps": [
@@ -16,18 +17,30 @@
       "id": 1,
       "stage": 1,
       "type": "reading_card",
-      "title": "Korean Food Culture",
-      "title_kr": "한국 음식 문화",
-      "body": "Food is central to Korean culture. Meals are shared communally, with multiple side dishes (반찬, banchan) served alongside rice (밥) and soup (국). Koreans often greet each other with '밥 먹었어요?' (Did you eat?) — showing how deeply food is woven into daily life.",
+      "title": "Korean Food & Drink",
+      "title_kr": "한국 음식과 음료",
+      "title_zh_tw": "韓國飲食",
+      "body": "Korean cuisine is built around rice, fermented vegetables, and shared communal dishes. Food vocabulary will immediately come up at restaurants, markets, and when ordering delivery — a deeply ingrained part of Korean daily life.",
+      "body_zh_tw": "韓國飲食以米飯、發酵蔬菜和共食為核心。食物詞彙在餐廳、市場和叫外賣時立即派上用場——這些場景深深融入韓國日常生活之中。",
       "tip": {
         "icon": "🍜",
-        "label": "The rice is the center",
-        "text": "In Korean culture, 밥 (bap) means both 'cooked rice' and 'a meal.' When Koreans say they haven't eaten, they say 밥을 못 먹었어요 — rice is so fundamental that it stands in for any meal."
+        "label": "맛있어요 (mashisseoyo)",
+        "text": "The most important food phrase: 맛있어요 = It's delicious! Use it freely and often — Korean hosts love hearing it."
       },
-      "body_ja": "食は韓国文化の中心です。食事は共有形式で、ご飯（밥）・スープ（국）と一緒に複数のおかず（반찬、パンチャン）が出されます。韓国では「밥 먹었어요？（ご飯食べた？）」と挨拶することも―食が日常にいかに溶け込んでいるかがわかります。",
+      "tip_zh_tw": {
+        "label": "맛있어요（mashisseoyo）",
+        "text": "最重要的飲食用語：맛있어요＝很好吃！盡情使用——韓國主人非常喜歡聽到這句話。"
+      },
+      "body_ja": "韓国料理はご飯・発酵野菜・共有の鍋料理が中心です。食べ物の語彙はレストラン・市場・デリバリーの注文ですぐ役立ちます。",
       "tip_ja": {
-        "label": "ご飯が中心",
-        "text": "韓国文化では밥（パプ）は「炊いたご飯」と「食事」の両方を意味します。韓国人が食べていないと言うとき、밥을 못 먹었어요と言います―ご飯はあらゆる食事の代名詞です。"
+        "label": "맛있어요（マシッソヨ）",
+        "text": "最重要な食の表現：맛있어요（おいしいです）！韓国のホストはこの一言が大好きです。"
+      },
+      "title_es": "Comida y Bebida Coreana",
+      "body_es": "La cocina coreana se basa en el arroz, las verduras fermentadas y los platos compartidos. El vocabulario de comida es indispensable en restaurantes, mercados y al pedir a domicilio — una parte profundamente arraigada de la vida cotidiana coreana.",
+      "tip_es": {
+        "label": "맛있어요 (mashisseoyo)",
+        "text": "La frase de comida más importante: 맛있어요 = ¡Está delicioso! Úsala libremente y seguido — los anfitriones coreanos adoran escucharla."
       }
     },
     {
@@ -38,13 +51,32 @@
         "밥"
       ],
       "romanization": "bap",
+      "zhuyin": "ㄅㄚ",
       "katakana": "パプ",
       "audio": "밥",
-      "meaning": "Cooked rice / meal — the cornerstone of Korean eating",
-      "meaning_ja": "ご飯 / 食事 ― 韓国食文化の中心"
+      "meaning": "Rice / meal — 밥 먹었어요? = Have you eaten? (common greeting)",
+      "meaning_zh_tw": "米飯 / 飯——밥 먹었어요？＝你吃了嗎？（常見問候）",
+      "meaning_ja": "ご飯・食事 ― 밥 먹었어요？（ご飯食べた？）は挨拶にもなる",
+      "meaning_es": "Arroz / comida — 밥 먹었어요? = ¿Has comido? (saludo común)"
     },
     {
       "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "물"
+      ],
+      "romanization": "mul",
+      "zhuyin": "ㄇㄨㄌ",
+      "katakana": "ムル",
+      "audio": "물",
+      "meaning": "Water — 물 주세요 = Please give me water",
+      "meaning_zh_tw": "水——물 주세요＝請給我水",
+      "meaning_ja": "水 ― 물 주세요（お水ください）",
+      "meaning_es": "Agua — 물 주세요 = Por favor, dame agua"
+    },
+    {
+      "id": 4,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -52,25 +84,13 @@
         "치"
       ],
       "romanization": "gimchi",
+      "zhuyin": "ㄍㄧㄇ·ㄔㄧ",
       "katakana": "キムチ",
       "audio": "김치",
-      "meaning": "Kimchi — fermented vegetables, the iconic Korean side dish",
-      "meaning_ja": "キムチ ― 発酵野菜、韓国の代表的なおかず"
-    },
-    {
-      "id": 4,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "불",
-        "고",
-        "기"
-      ],
-      "romanization": "bulgogi",
-      "katakana": "プルコギ",
-      "audio": "불고기",
-      "meaning": "Bulgogi — marinated grilled beef, beloved worldwide",
-      "meaning_ja": "プルコギ ― 甘辛いタレの焼き肉"
+      "meaning": "Kimchi — fermented spicy cabbage; a national staple served at every meal",
+      "meaning_zh_tw": "泡菜——發酵辣白菜；每餐必備的國民食品",
+      "meaning_ja": "キムチ ― 発酵唐辛子キャベツ；毎食の必須料理",
+      "meaning_es": "Kimchi — col fermentada picante; un alimento básico que se sirve en cada comida"
     },
     {
       "id": 5,
@@ -82,28 +102,51 @@
         "밥"
       ],
       "romanization": "bibimbap",
-      "katakana": "ピビンパプ",
+      "zhuyin": "ㄅㄧ·ㄅㄧㄇ·ㄅㄚ",
+      "katakana": "ビビンバ",
       "audio": "비빔밥",
-      "meaning": "Bibimbap — mixed rice bowl with vegetables and gochujang sauce",
-      "meaning_ja": "ビビンバ ― 野菜とコチュジャンを混ぜたご飯"
+      "meaning": "Bibimbap — mixed rice bowl with vegetables, meat and egg",
+      "meaning_zh_tw": "拌飯——蔬菜、肉類和蛋的混合飯",
+      "meaning_ja": "ビビンバ ― 野菜・肉・卵を混ぜたご飯",
+      "meaning_es": "Bibimbap — bol de arroz mezclado con verduras, carne y huevo"
     },
     {
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "떡",
-        "볶",
-        "이"
+        "불",
+        "고",
+        "기"
       ],
-      "romanization": "tteokbokki",
-      "katakana": "トッポッキ",
-      "audio": "떡볶이",
-      "meaning": "Tteokbokki — spicy rice cakes, the most popular Korean street food",
-      "meaning_ja": "トッポッキ ― 辛い餅料理、最人気の屋台グルメ"
+      "romanization": "bulgogi",
+      "zhuyin": "ㄅㄨㄌ·ㄍㄛ·ㄍㄧ",
+      "katakana": "プルコギ",
+      "audio": "불고기",
+      "meaning": "Bulgogi — marinated grilled beef; literally 'fire meat'",
+      "meaning_zh_tw": "烤牛肉——醃製烤牛肉；字面意思是「火肉」",
+      "meaning_ja": "プルコギ ― 甘辛タレで漬けた焼き牛肉；文字通り「火の肉」",
+      "meaning_es": "Bulgogi — carne de res marinada y asada; literalmente \"carne de fuego\""
     },
     {
       "id": 7,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "라",
+        "면"
+      ],
+      "romanization": "ramyeon",
+      "zhuyin": "ㄌㄚ·ㄇㄧㄢ",
+      "katakana": "ラミョン",
+      "audio": "라면",
+      "meaning": "Korean instant noodles — spicier than Japanese ramen",
+      "meaning_zh_tw": "韓國泡麵——比日本拉麵更辣",
+      "meaning_ja": "韓国インスタントラーメン ― 日本のラーメンより辛い",
+      "meaning_es": "Fideos instantáneos coreanos — más picantes que el ramen japonés"
+    },
+    {
+      "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -112,85 +155,35 @@
         "살"
       ],
       "romanization": "samgyeopsal",
+      "zhuyin": "ㄙㄚㄇ·ㄍㄧㄝ·ㄙㄚㄌ",
       "katakana": "サムギョプサル",
       "audio": "삼겹살",
-      "meaning": "Samgyeopsal — grilled pork belly, the classic Korean BBQ cut",
-      "meaning_ja": "サムギョプサル ― 豚バラ肉の焼き肉"
-    },
-    {
-      "id": 8,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "냉",
-        "면"
-      ],
-      "romanization": "naengmyeon",
-      "katakana": "ネンミョン",
-      "audio": "냉면",
-      "meaning": "Naengmyeon — cold noodles, a summer favorite",
-      "meaning_ja": "冷麺 ― 夏の定番、冷たい麺料理"
+      "meaning": "Grilled pork belly — a beloved Korean BBQ staple",
+      "meaning_zh_tw": "烤豬五花——深受喜愛的韓國烤肉主角",
+      "meaning_ja": "サムギョプサル ― 韓国BBQの代名詞・焼き豚バラ肉",
+      "meaning_es": "Panceta de cerdo a la parrilla — el protagonista del K-BBQ"
     },
     {
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "순",
-        "두",
-        "부",
+        "된",
+        "장",
         "찌",
         "개"
       ],
-      "romanization": "sundubu jjigae",
-      "katakana": "スンドゥブチゲ",
-      "audio": "순두부찌개",
-      "meaning": "Sundubu jjigae — soft tofu stew, often served bubbling hot",
-      "meaning_ja": "スンドゥブチゲ ― やわらかい豆腐の鍋"
+      "romanization": "doenjang jjigae",
+      "zhuyin": "ㄉㄨㄟ·ㄓㄤ·ㄐㄧ·ㄍㄝ",
+      "katakana": "テンジャンチゲ",
+      "audio": "된장찌개",
+      "meaning": "Fermented soybean paste stew — the most comforting Korean dish",
+      "meaning_zh_tw": "大醬鍋——最讓韓國人感到溫暖的家常料理",
+      "meaning_ja": "テンジャンチゲ ― 韓国の味噌鍋；最も家庭的な料理",
+      "meaning_es": "Estofado de pasta de soja fermentada — el plato coreano más reconfortante"
     },
     {
       "id": 10,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "라",
-        "면"
-      ],
-      "romanization": "ramyeon",
-      "katakana": "ラミョン",
-      "audio": "라면",
-      "meaning": "Ramyeon — Korean instant noodles, a comfort food staple",
-      "meaning_ja": "ラーメン（インスタント）― 韓国のソウルフード"
-    },
-    {
-      "id": 11,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "잡",
-        "채"
-      ],
-      "romanization": "japchae",
-      "katakana": "チャプチェ",
-      "audio": "잡채",
-      "meaning": "Japchae — glass noodles stir-fried with vegetables and beef",
-      "meaning_ja": "チャプチェ ― 野菜と春雨の炒め物"
-    },
-    {
-      "id": 12,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "물"
-      ],
-      "romanization": "mul",
-      "katakana": "ムル",
-      "audio": "물",
-      "meaning": "Water — served free at every Korean restaurant",
-      "meaning_ja": "水 ― 韓国の飲食店では無料で提供される"
-    },
-    {
-      "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -198,13 +191,33 @@
         "피"
       ],
       "romanization": "keopi",
-      "katakana": "コーピ",
+      "zhuyin": "ㄎㄜ·ㄆㄧ",
+      "katakana": "コピ",
       "audio": "커피",
       "meaning": "Coffee — Korea has one of the world's highest café densities",
-      "meaning_ja": "コーヒー ― 韓国はカフェ密度が世界トップクラス"
+      "meaning_zh_tw": "咖啡——韓國是全球咖啡館密度最高的國家之一",
+      "meaning_ja": "コーヒー ― 韓国は世界有数のカフェ密度を誇る",
+      "meaning_es": "Café — Corea tiene una de las densidades de cafeterías más altas del mundo"
     },
     {
-      "id": 14,
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "녹",
+        "차"
+      ],
+      "romanization": "nokcha",
+      "zhuyin": "ㄋㄛ·ㄔㄚ",
+      "katakana": "ノクチャ",
+      "audio": "녹차",
+      "meaning": "Green tea — grown famously in the Boseong region",
+      "meaning_zh_tw": "綠茶——寶城地區出產的綠茶最為著名",
+      "meaning_ja": "緑茶 ― 宝城（ポソン）地方が名産地",
+      "meaning_es": "Té verde — famoso en la región de Boseong"
+    },
+    {
+      "id": 12,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -212,136 +225,233 @@
         "주"
       ],
       "romanization": "soju",
+      "zhuyin": "ㄙㄛ·ㄓㄨ",
       "katakana": "ソジュ",
       "audio": "소주",
-      "meaning": "Soju — Korea's signature distilled spirit, the world's best-selling liquor",
-      "meaning_ja": "焼酎 ― 韓国の代表的な蒸留酒、世界一売れる洋酒"
+      "meaning": "Soju — Korea's iconic distilled rice spirit; the world's best-selling spirit",
+      "meaning_zh_tw": "燒酒——韓國標誌性的蒸餾米酒；全球銷量最高的烈酒",
+      "meaning_ja": "焼酎（ソジュ）― 韓国の国民的蒸留酒；世界販売数No.1",
+      "meaning_es": "Soju — el licor destilado de arroz icónico de Corea; el más vendido del mundo"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "치",
+        "킨"
+      ],
+      "romanization": "chikin",
+      "zhuyin": "ㄔㄧ·ㄎㄧㄣ",
+      "katakana": "チキン",
+      "audio": "치킨",
+      "meaning": "Korean fried chicken — double-fried for extra crunch, often eaten with beer",
+      "meaning_zh_tw": "韓式炸雞——二次油炸更酥脆，常搭配啤酒享用",
+      "meaning_ja": "チキン ― 二度揚げで超サクサク。ビールとのセットが定番",
+      "meaning_es": "Pollo frito coreano — frito dos veces para mayor crujiente, a menudo comido con cerveza"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "떡",
+        "볶",
+        "이"
+      ],
+      "romanization": "tteokbokki",
+      "zhuyin": "ㄉㄜ·ㄅㄛ·ㄧ",
+      "katakana": "トッポッキ",
+      "audio": "떡볶이",
+      "meaning": "Spicy rice cakes — the most popular Korean street food",
+      "meaning_zh_tw": "辣炒年糕——最受歡迎的韓國街頭小吃",
+      "meaning_ja": "トッポッキ ― 最も人気の韓国屋台グルメ・辛い餅炒め",
+      "meaning_es": "Pasteles de arroz picantes — el street food coreano más popular"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "맥",
-        "주"
+        "순",
+        "두",
+        "부"
       ],
-      "romanization": "maekju",
-      "katakana": "メクチュ",
-      "audio": "맥주",
-      "meaning": "Beer — often mixed with soju to make 소맥 (somaek)",
-      "meaning_ja": "ビール ― 소주と混ぜると소맥（ソメク）になる"
+      "romanization": "sundubu",
+      "zhuyin": "ㄙㄨㄣ·ㄉㄨ·ㄅㄨ",
+      "katakana": "スンドゥブ",
+      "audio": "순두부",
+      "meaning": "Soft tofu stew — a spicy, silky broth with egg and seafood",
+      "meaning_zh_tw": "嫩豆腐鍋——加了雞蛋和海鮮的辣滑豆腐湯",
+      "meaning_ja": "スンドゥブ ― 卵や海鮮入りの辛い絹ごし豆腐鍋",
+      "meaning_es": "Estofado de tofu suave — caldo picante y sedoso con huevo y mariscos"
     },
     {
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "막",
-        "걸",
-        "리"
+        "과",
+        "일"
       ],
-      "romanization": "makgeolli",
-      "katakana": "マッコリ",
-      "audio": "막걸리",
-      "meaning": "Makgeolli — traditional milky rice wine, slightly sweet and fizzy",
-      "meaning_ja": "マッコリ ― 伝統的な米酒、甘くて少し炭酸がある"
+      "romanization": "gwail",
+      "zhuyin": "ㄍㄨㄚ·ㄧㄌ",
+      "katakana": "クァイル",
+      "audio": "과일",
+      "meaning": "Fruit — Korean fruit is famously premium and expensive",
+      "meaning_zh_tw": "水果——韓國水果以品質優良著稱，價格也較高",
+      "meaning_ja": "果物 ― 韓国の果物は品質が高いことで有名で価格も高め",
+      "meaning_es": "Fruta — la fruta coreana es famosa por su alta calidad y precio elevado"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "반",
-        "찬"
+        "채",
+        "소"
       ],
-      "romanization": "banchan",
-      "katakana": "パンチャン",
-      "audio": "반찬",
-      "meaning": "Banchan — small side dishes served with every Korean meal",
-      "meaning_ja": "おかず（バンチャン）― 韓国の食事に必ず出る小皿料理"
+      "romanization": "chaeso",
+      "zhuyin": "ㄔㄝ·ㄙㄛ",
+      "katakana": "チェソ",
+      "audio": "채소",
+      "meaning": "Vegetables — 야채 (yaechae) is also commonly used",
+      "meaning_zh_tw": "蔬菜——야채（yaechae）也常用",
+      "meaning_ja": "野菜 ― 야채（ヤチェ）も日常的に使う",
+      "meaning_es": "Verduras — 야채 (yaechae) también se usa con frecuencia"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "국"
+        "맵",
+        "다"
       ],
-      "romanization": "guk",
-      "katakana": "クク",
-      "audio": "국",
-      "meaning": "Soup / broth — a separate soup dish served at most Korean meals",
-      "meaning_ja": "スープ / 汁物 ― ほとんどの韓国料理に付いてくる"
+      "romanization": "maepda",
+      "zhuyin": "ㄇㄝ·ㄉㄚ",
+      "katakana": "メプタ",
+      "audio": "맵다",
+      "meaning": "Spicy / hot (of food) — 너무 매워요! = Too spicy!",
+      "meaning_zh_tw": "辣——너무 매워요！＝太辣了！",
+      "meaning_ja": "辛い ― 너무 매워요！（辛すぎる！）",
+      "meaning_es": "Picante / Caliente (de comida) — 너무 매워요! = ¡Demasiado picante!"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "What is 떡볶이?",
+      "prompt": "떡볶이 is best described as...",
+      "prompt_zh_tw": "떡볶이 最好的描述是……",
       "choices": [
         "Grilled pork belly",
         "Spicy rice cakes",
-        "Cold noodles",
-        "Fermented vegetables"
+        "Fermented soybean stew",
+        "Mixed rice bowl"
+      ],
+      "choices_zh_tw": [
+        "烤豬五花",
+        "辣炒年糕",
+        "大醬鍋",
+        "拌飯"
       ],
       "choices_ja": [
-        "サムギョプサル（豚バラ焼き）",
-        "トッポッキ（辛いもちトック）",
-        "ネンミョン（冷麺）",
-        "キムチ（発酵野菜）"
+        "焼き豚バラ肉",
+        "辛い餅炒め",
+        "味噌鍋",
+        "混ぜご飯"
       ],
       "correct": "Spicy rice cakes",
-      "prompt_ja": "떡볶이とは何ですか？"
+      "prompt_ja": "떡볶이 はどれが最も正確な説明ですか？",
+      "prompt_es": "떡볶이 se describe mejor como...",
+      "choices_es": [
+        "Panceta de cerdo a la parrilla",
+        "Pasteles de arroz picantes",
+        "Estofado de soja fermentada",
+        "Bol de arroz mezclado"
+      ]
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Korea's most famous distilled spirit, also the world's best-selling liquor, is called...",
+      "prompt": "What does 물 주세요 mean?",
+      "prompt_zh_tw": "물 주세요 是什麼意思？",
       "choices": [
-        "맥주 (maekju)",
-        "막걸리 (makgeolli)",
-        "소주 (soju)",
-        "커피 (keopi)"
+        "I'm full",
+        "The food is spicy",
+        "Please give me water",
+        "It's delicious"
+      ],
+      "choices_zh_tw": [
+        "我吃飽了",
+        "食物很辣",
+        "請給我水",
+        "很好吃"
       ],
       "choices_ja": [
-        "맥주（ビール）",
-        "막걸리（マッコリ）",
-        "소주（焼酎）",
-        "커피（コーヒー）"
+        "お腹いっぱい",
+        "料理が辛い",
+        "お水ください",
+        "おいしい"
       ],
-      "correct": "소주 (soju)",
-      "prompt_ja": "韓国の有名な蒸留酒で、世界一売れているお酒の名前は？"
+      "correct": "Please give me water",
+      "prompt_ja": "물 주세요 はどういう意味ですか？",
+      "prompt_es": "¿Qué significa 물 주세요?",
+      "choices_es": [
+        "Estoy lleno/a",
+        "La comida está picante",
+        "Por favor, dame agua",
+        "Está delicioso"
+      ]
     },
     {
       "id": 21,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "What does 밥 mean?",
+      "prompt": "불고기 literally means...",
+      "prompt_zh_tw": "불고기 的字面意思是……",
       "choices": [
-        "Kimchi",
-        "Cooked rice / meal",
-        "Soup",
-        "Noodles"
+        "Boiled meat",
+        "Fire meat",
+        "Cold noodles",
+        "Sweet chicken"
+      ],
+      "choices_zh_tw": [
+        "水煮肉",
+        "火肉",
+        "冷麵",
+        "甜雞肉"
       ],
       "choices_ja": [
-        "キムチ",
-        "ご飯（食事）",
-        "スープ",
-        "麺"
+        "煮た肉",
+        "火の肉",
+        "冷麺",
+        "甘いチキン"
       ],
-      "correct": "Cooked rice / meal",
-      "prompt_ja": "밥はどういう意味ですか？"
+      "correct": "Fire meat",
+      "prompt_ja": "불고기 の文字通りの意味は？",
+      "prompt_es": "불고기 literalmente significa...",
+      "choices_es": [
+        "Carne hervida",
+        "Carne de fuego",
+        "Fideos fríos",
+        "Pollo dulce"
+      ]
     },
     {
       "id": 22,
       "stage": 1,
       "type": "lesson_complete",
       "title": "Food & Drink Complete!",
-      "title_kr": "음식·음료 완성!",
-      "message": "맛있게 드세요! (Bon appétit!) You've mastered essential Korean food and drink vocabulary. Food is one of the best conversation starters with Koreans — try asking 무슨 음식 좋아해요? (What food do you like?)",
-      "next_url": "vocabulary.html?cat=colors",
-      "message_ja": "맛있게 드세요！食べ物と飲み物の必須語彙をマスターしました。食べ物は韓国人との最高の会話の入り口―무슨 음식 좋아해요？（どんな料理が好きですか？）と聞いてみましょう！"
+      "title_kr": "음식과 음료 완성!",
+      "title_zh_tw": "飲食詞彙完成！",
+      "message": "맛있겠다! (Sounds delicious!) You've learned the vocabulary for Korea's most iconic foods. Next time you eat Korean food, try naming each dish — it'll surprise your Korean friends!",
+      "message_zh_tw": "맛있겠다！（聽起來好吃！）你已學會韓國最具代表性食物的詞彙。下次吃韓國料理時，試著說出每道菜的名字——你的韓國朋友一定會大吃一驚！",
+      "next_url": "vocabulary.html?cat=places",
+      "message_ja": "맛있겠다！（おいしそう！）韓国を代表する料理の語彙をマスターしました。次に韓国料理を食べるとき、料理名を言ってみましょう。韓国の友達がびっくりするかも！",
+      "title_es": "¡Comida y Bebida Completadas!",
+      "message_es": "맛있겠다! (¡Suena delicioso!) Has aprendido el vocabulario de los alimentos más icónicos de Corea. La próxima vez que comas comida coreana, intenta nombrar cada plato — ¡sorprenderás a tus amigos coreanos!"
     }
   ]
 }

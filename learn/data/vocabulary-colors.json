@@ -8,7 +8,8 @@
       "name_kr": "색깔",
       "first_step": 1,
       "last_step": 20,
-      "time_minutes": 12
+      "time_minutes": 12,
+      "name_es": "Colores"
     }
   ],
   "steps": [
@@ -18,16 +19,28 @@
       "type": "reading_card",
       "title": "Colors in Korean",
       "title_kr": "색깔",
+      "title_zh_tw": "韓語顏色",
       "body": "Korean has two ways to express colors. Descriptive adjectives end in -다 (e.g., 빨갛다 = to be red) and are used in sentences. Color nouns end in -색 (color) and are used to name the color itself. Both forms are widely used.",
+      "body_zh_tw": "韓語有兩種表達顏色的方式。描述性形容詞以-다結尾（例：빨갛다＝是紅色的），用於句子中；顏色名詞以-색（顏色）結尾，用於命名顏色本身。兩種形式都很常用。",
       "tip": {
         "icon": "🎨",
         "label": "-색 vs. adjective form",
         "text": "빨간색 (the color red) vs. 빨개요 (it is red). For naming a color outright, use the -색 form. For describing something, use the adjective form: 이 셔츠는 빨개요 (This shirt is red)."
       },
+      "tip_zh_tw": {
+        "label": "-색 vs. 形容詞形式",
+        "text": "빨간색（紅這個顏色）vs. 빨개요（是紅色的）。直接命名顏色時用-색形式，描述某物時用形容詞形式：이 셔츠는 빨개요（這件衣服是紅色的）。"
+      },
       "body_ja": "韓国語で色を表現するには2つの方法があります。-다で終わる形容詞（例：빨갛다＝赤い）は文中で使い、-색（色）で終わる名詞は色そのものを指します。両方広く使われます。",
       "tip_ja": {
         "label": "-색 vs. 形容詞形",
         "text": "빨간색（赤という色）vs. 빨개요（赤いです）。色そのものを指すときは-색形を、何かを描写するときは形容詞形を使います：이 셔츠는 빨개요（このシャツは赤い）。"
+      },
+      "title_es": "Colores en Coreano",
+      "body_es": "El coreano tiene dos formas de expresar colores. Los adjetivos descriptivos terminan en -다 (ej. 빨갛다 = ser rojo) y se usan en oraciones. Los sustantivos de color terminan en -색 (color) y se usan para nombrar el color en sí. Ambas formas son ampliamente usadas.",
+      "tip_es": {
+        "label": "-색 vs. forma adjetiva",
+        "text": "빨간색 (el color rojo) vs. 빨개요 (es rojo). Para nombrar un color directamente, usa la forma -색. Para describir algo, usa la forma adjetiva: 이 셔츠는 빨개요 (Esta camisa es roja)."
       }
     },
     {
@@ -40,10 +53,13 @@
         "색"
       ],
       "romanization": "ppalgan saek",
+      "zhuyin": "ㄅㄚㄌ·ㄍㄢ·ㄙㄝ",
       "katakana": "パルガンセク",
       "audio": "빨간색",
       "meaning": "Red — 빨강 is the short form",
-      "meaning_ja": "赤 ― 빨강 が短縮形"
+      "meaning_zh_tw": "紅色——빨강 是短形式",
+      "meaning_ja": "赤 ― 빨강 が短縮形",
+      "meaning_es": "Rojo — 빨강 es la forma abreviada"
     },
     {
       "id": 3,
@@ -55,10 +71,13 @@
         "색"
       ],
       "romanization": "paran saek",
+      "zhuyin": "ㄆㄚ·ㄌㄢ·ㄙㄝ",
       "katakana": "パランセク",
       "audio": "파란색",
       "meaning": "Blue — also used for 'green' traffic lights in everyday speech",
-      "meaning_ja": "青 ― 信号の「青」も파란 と言う"
+      "meaning_zh_tw": "藍色——日常口語中也用於描述「綠色」交通燈",
+      "meaning_ja": "青 ― 信号の「青」も파란 と言う",
+      "meaning_es": "Azul — en el habla cotidiana también se usa para los semáforos en \"verde\""
     },
     {
       "id": 4,
@@ -70,10 +89,13 @@
         "색"
       ],
       "romanization": "noran saek",
+      "zhuyin": "ㄋㄛ·ㄌㄢ·ㄙㄝ",
       "katakana": "ノランセク",
       "audio": "노란색",
       "meaning": "Yellow",
-      "meaning_ja": "黄色"
+      "meaning_zh_tw": "黃色",
+      "meaning_ja": "黄色",
+      "meaning_es": "Amarillo"
     },
     {
       "id": 5,
@@ -85,10 +107,13 @@
         "색"
       ],
       "romanization": "chorok saek",
+      "zhuyin": "ㄔㄛ·ㄌㄛ·ㄙㄝ",
       "katakana": "チョロクセク",
       "audio": "초록색",
       "meaning": "Green — from 초록 (verdant green)",
-      "meaning_ja": "緑"
+      "meaning_zh_tw": "綠色——來自 초록（翠綠）",
+      "meaning_ja": "緑",
+      "meaning_es": "Verde — de 초록 (verde intenso)"
     },
     {
       "id": 6,
@@ -99,10 +124,13 @@
         "색"
       ],
       "romanization": "huin saek",
+      "zhuyin": "ㄏㄨㄟ·ㄙㄝ",
       "katakana": "フィンセク",
       "audio": "흰색",
       "meaning": "White — 하얀색 is an equally common alternative",
-      "meaning_ja": "白 ― 하얀색 とも言う"
+      "meaning_zh_tw": "白色——하얀색 是同樣常用的替代說法",
+      "meaning_ja": "白 ― 하얀색 とも言う",
+      "meaning_es": "Blanco — 하얀색 es una alternativa igualmente común"
     },
     {
       "id": 7,
@@ -114,10 +142,13 @@
         "색"
       ],
       "romanization": "geomeun saek",
+      "zhuyin": "ㄍㄜㄇ·ㄜㄣ·ㄙㄝ",
       "katakana": "コムンセク",
       "audio": "검은색",
       "meaning": "Black — 까만색 is also widely used",
-      "meaning_ja": "黒 ― 까만색 とも言う"
+      "meaning_zh_tw": "黑色——까만색 也廣泛使用",
+      "meaning_ja": "黒 ― 까만색 とも言う",
+      "meaning_es": "Negro — 까만색 también es ampliamente usado"
     },
     {
       "id": 8,
@@ -129,10 +160,13 @@
         "색"
       ],
       "romanization": "bora saek",
+      "zhuyin": "ㄅㄛ·ㄌㄚ·ㄙㄝ",
       "katakana": "ポラセク",
       "audio": "보라색",
       "meaning": "Purple / violet",
-      "meaning_ja": "紫"
+      "meaning_zh_tw": "紫色",
+      "meaning_ja": "紫",
+      "meaning_es": "Morado / violeta"
     },
     {
       "id": 9,
@@ -144,10 +178,13 @@
         "색"
       ],
       "romanization": "juhwang saek",
+      "zhuyin": "ㄓㄨ·ㄏㄨㄤ·ㄙㄝ",
       "katakana": "チュファンセク",
       "audio": "주황색",
       "meaning": "Orange",
-      "meaning_ja": "オレンジ色"
+      "meaning_zh_tw": "橙色",
+      "meaning_ja": "オレンジ色",
+      "meaning_es": "Naranja"
     },
     {
       "id": 10,
@@ -159,10 +196,13 @@
         "색"
       ],
       "romanization": "bunhong saek",
+      "zhuyin": "ㄅㄨㄣ·ㄏㄨㄥ·ㄙㄝ",
       "katakana": "プンホンセク",
       "audio": "분홍색",
       "meaning": "Pink — 핑크색 (pinkeu saek) is the Konglish alternative",
-      "meaning_ja": "ピンク ― 핑크색 というコングリッシュもある"
+      "meaning_zh_tw": "粉紅色——핑크색（pinkeu saek）是外來語說法",
+      "meaning_ja": "ピンク ― 핑크색 というコングリッシュもある",
+      "meaning_es": "Rosa — 핑크색 (pinkeu saek) es la alternativa en konglish"
     },
     {
       "id": 11,
@@ -173,10 +213,13 @@
         "색"
       ],
       "romanization": "gal saek",
+      "zhuyin": "ㄍㄚㄌ·ㄙㄝ",
       "katakana": "カルセク",
       "audio": "갈색",
       "meaning": "Brown",
-      "meaning_ja": "茶色"
+      "meaning_zh_tw": "棕色",
+      "meaning_ja": "茶色",
+      "meaning_es": "Marrón / café"
     },
     {
       "id": 12,
@@ -188,10 +231,13 @@
         "색"
       ],
       "romanization": "haneul saek",
+      "zhuyin": "ㄏㄚ·ㄋㄜㄌ·ㄙㄝ",
       "katakana": "ハヌルセク",
       "audio": "하늘색",
       "meaning": "Sky blue — literally 'sky color' (하늘 = sky)",
-      "meaning_ja": "空色（水色）― 하늘（空）の色"
+      "meaning_zh_tw": "天空藍——字面意思是「天空的顏色」（하늘＝天空）",
+      "meaning_ja": "空色（水色）― 하늘（空）の色",
+      "meaning_es": "Azul cielo — literalmente \"color del cielo\" (하늘 = cielo)"
     },
     {
       "id": 13,
@@ -202,10 +248,13 @@
         "색"
       ],
       "romanization": "hoe saek",
+      "zhuyin": "ㄏㄨㄟ·ㄙㄝ",
       "katakana": "フェセク",
       "audio": "회색",
       "meaning": "Grey",
-      "meaning_ja": "グレー"
+      "meaning_zh_tw": "灰色",
+      "meaning_ja": "グレー",
+      "meaning_es": "Gris"
     },
     {
       "id": 14,
@@ -216,10 +265,13 @@
         "색"
       ],
       "romanization": "geum saek",
+      "zhuyin": "ㄍㄜㄇ·ㄙㄝ",
       "katakana": "クムセク",
       "audio": "금색",
       "meaning": "Gold — 금 (geum) means 'gold' or 'money'",
-      "meaning_ja": "金色 ― 금（金）は「金・お金」の意味"
+      "meaning_zh_tw": "金色——금（geum）意指「黃金」或「錢」",
+      "meaning_ja": "金色 ― 금（金）は「金・お金」の意味",
+      "meaning_es": "Dorado — 금 (geum) significa \"oro\" o \"dinero\""
     },
     {
       "id": 15,
@@ -230,10 +282,13 @@
         "색"
       ],
       "romanization": "eun saek",
+      "zhuyin": "ㄜㄣ·ㄙㄝ",
       "katakana": "ウンセク",
       "audio": "은색",
       "meaning": "Silver — 은 (eun) means 'silver'",
-      "meaning_ja": "銀色 ― 은（銀）は「銀」の意味"
+      "meaning_zh_tw": "銀色——은（eun）意指「銀」",
+      "meaning_ja": "銀色 ― 은（銀）は「銀」の意味",
+      "meaning_es": "Plateado — 은 (eun) significa \"plata\""
     },
     {
       "id": 16,
@@ -244,21 +299,31 @@
         "깔"
       ],
       "romanization": "saekkal",
+      "zhuyin": "ㄙㄝ·ㄍㄚㄌ",
       "katakana": "セッカル",
       "audio": "색깔",
       "meaning": "Color — the general word for color",
-      "meaning_ja": "色 ― 色全般を指す言葉"
+      "meaning_zh_tw": "顏色——表示顏色的通用詞",
+      "meaning_ja": "色 ― 色全般を指す言葉",
+      "meaning_es": "Color — la palabra general para color"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "What color is 파란색?",
+      "prompt_zh_tw": "파란색 是什麼顏色？",
       "choices": [
         "Red",
         "Yellow",
         "Blue",
         "Green"
+      ],
+      "choices_zh_tw": [
+        "紅色",
+        "黃色",
+        "藍色",
+        "綠色"
       ],
       "choices_ja": [
         "赤",
@@ -267,18 +332,32 @@
         "緑"
       ],
       "correct": "Blue",
-      "prompt_ja": "파란색は何色ですか？"
+      "prompt_ja": "파란색は何色ですか？",
+      "prompt_es": "¿De qué color es 파란색?",
+      "choices_es": [
+        "Rojo",
+        "Amarillo",
+        "Azul",
+        "Verde"
+      ]
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "하늘색 literally means 'sky color.' Which color is it?",
+      "prompt_zh_tw": "하늘색 字面意思是「天空的顏色」。它是哪種顏色？",
       "choices": [
         "Dark blue",
         "Sky blue",
         "Purple",
         "Teal"
+      ],
+      "choices_zh_tw": [
+        "深藍色",
+        "天空藍",
+        "紫色",
+        "藍綠色"
       ],
       "choices_ja": [
         "濃い青",
@@ -287,13 +366,21 @@
         "ティール"
       ],
       "correct": "Sky blue",
-      "prompt_ja": "하늘색は文字通り「空の色」を意味します。何色ですか？"
+      "prompt_ja": "하늘색は文字通り「空の色」を意味します。何色ですか？",
+      "prompt_es": "하늘색 literalmente significa \"color del cielo\". ¿Qué color es?",
+      "choices_es": [
+        "Azul oscuro",
+        "Azul cielo",
+        "Morado",
+        "Turquesa"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Pink in Korean is...",
+      "prompt_zh_tw": "韓語中「粉紅色」是……",
       "choices": [
         "보라색",
         "분홍색",
@@ -301,7 +388,8 @@
         "주황색"
       ],
       "correct": "분홍색",
-      "prompt_ja": "韓国語でピンクは？"
+      "prompt_ja": "韓国語でピンクは？",
+      "prompt_es": "Rosa en coreano es..."
     },
     {
       "id": 20,
@@ -309,9 +397,13 @@
       "type": "lesson_complete",
       "title": "Colors Complete!",
       "title_kr": "색깔 완성!",
+      "title_zh_tw": "顏色完成！",
       "message": "훌륭해요! You now know the Korean color palette. Colors come up in shopping, describing objects, and K-drama fashion conversations. Try using one today: 무슨 색 좋아해요? (What color do you like?)",
+      "message_zh_tw": "훌륭해요！你現在掌握了韓語色彩詞彙。顏色在購物、描述物品和K劇時尚話題中都會用到。今天就試著用一個：무슨 색 좋아해요？（你喜歡什麼顏色？）",
       "next_url": "vocabulary.html?cat=days-time",
-      "message_ja": "훌륭해요！韓国語の色をマスターしました！色は買い物・物の描写・K-ドラマのファッション会話に欠かせません。今日使ってみましょう：무슨 색 좋아해요？（何色が好きですか？）"
+      "message_ja": "훌륭해요！韓国語の色をマスターしました！色は買い物・物の描写・K-ドラマのファッション会話に欠かせません。今日使ってみましょう：무슨 색 좋아해요？（何色が好きですか？）",
+      "title_es": "¡Colores Completados!",
+      "message_es": "훌륭해요! Ya conoces la paleta de colores en coreano. Los colores aparecen en las compras, al describir objetos y en conversaciones de moda de K-drama. Prueba usando uno hoy: 무슨 색 좋아해요? (¿Qué color te gusta?)"
     }
   ]
 }

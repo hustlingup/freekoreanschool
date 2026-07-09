@@ -9,8 +9,20 @@
   <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <title>Flashcards | 한국어 학교</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="canonical" href="https://freekoreanschool.com/learn/flashcard">
+  <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/learn/flashcard">
+  <link rel="alternate" hreflang="zh-TW" href="https://freekoreanschool.com/learn/zh-tw/flashcard">
+  <link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/learn/ja/flashcard">
+  <link rel="alternate" hreflang="fr" href="https://freekoreanschool.com/learn/fr/flashcard">
+  <link rel="alternate" hreflang="de" href="https://freekoreanschool.com/learn/de/flashcard">
+  <link rel="alternate" hreflang="vi" href="https://freekoreanschool.com/learn/vi/flashcard.html">
+  <link rel="alternate" hreflang="es" href="https://freekoreanschool.com/learn/es/flashcard">
+  <link rel="alternate" hreflang="id" href="https://freekoreanschool.com/learn/id/flashcard">
+  <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/learn/flashcard">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Flashcards | 한국어 학교">
   <meta property="og:description" content="Korean flashcard practice — review vocabulary and grammar with spaced-repetition flashcards.">
@@ -152,6 +164,7 @@
     <a href="classical-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> Classical Korean <span class="link-badge badge-advanced">Advanced</span></a>
     <div class="sidebar-section">Tools</div>
     <a href="dialogues.html" class="sidebar-link"><span class="link-icon">💬</span> Korean Dialogues</a>
+    <a href="vocabulary-browser.html" class="sidebar-link"><span class="link-icon">⭐</span> Vocab Browser</a>
     <a href="flashcard.html" class="sidebar-link active"><span class="link-icon">📇</span> Flashcards</a>
   </nav>
 </aside>
@@ -195,7 +208,7 @@
         Go to <a href="vocabulary.html" style="color:var(--primary)">Vocabulary</a> and click <strong>☆</strong> on any word to add it here.<br>
         Or choose a built-in set from the sidebar.
       </div>
-      <a href="vocabulary.html" class="btn btn-primary">Browse Vocabulary →</a>
+      <a href="vocabulary-browser.html" class="btn btn-primary">Browse &amp; Add Words →</a>
     </div>
 
     <!-- Flashcard stage -->
@@ -254,6 +267,13 @@
     </div>
 
   </div><!-- /lesson-wrap -->
+  <div class="ad-zone ad-zone--bottom">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-6791974364232767"
+         data-ad-slot="9704719339"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
 </main>
 
 <!-- ═══ FOOTER ════════════════════════════════════════ -->
@@ -299,7 +319,8 @@
     </div>
   </div>
 </footer>
-<script src="../js/lang-ja.js"></script>
+<script src="../js/lang-core.js"></script>
 <script src="../js/app.js"></script>
+<script defer src="../js/ads.js"></script>
 </body>
 </html>

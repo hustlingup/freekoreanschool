@@ -8,7 +8,8 @@
       "name_kr": "숫자",
       "first_step": 1,
       "last_step": 24,
-      "time_minutes": 14
+      "time_minutes": 14,
+      "name_es": "Números"
     }
   ],
   "steps": [
@@ -18,21 +19,43 @@
       "type": "reading_card",
       "title": "Two Number Systems",
       "title_kr": "두 가지 숫자 체계",
+      "title_zh_tw": "兩種數字系統",
       "body": "Korean uses two separate number systems: Native Korean numbers (고유어) and Sino-Korean numbers (한자어). You must know both — they are used in different situations.",
+      "body_zh_tw": "韓語使用兩種不同的數字系統：固有語（고유어）和漢字語（한자어）。兩種都必須學會——它們用於不同的場合。",
       "rules": [
         "Native Korean: use for counting items (개), age (살), and hours (시) — e.g., 하나, 둘, 셋",
         "Sino-Korean: use for money (원), minutes (분), dates, phone numbers, and addresses — e.g., 일, 이, 삼",
         "Large numbers always use Sino-Korean — 백 (100), 천 (1,000), 만 (10,000)"
+      ],
+      "rules_zh_tw": [
+        "固有語：用於數物品（개）、年齡（살）和小時（시）——例：하나、둘、셋",
+        "漢字語：用於金錢（원）、分鐘（분）、日期、電話號碼和地址——例：일、이、삼",
+        "大數字一律使用漢字語——백（100）、천（1,000）、만（10,000）"
       ],
       "tip": {
         "icon": "🔢",
         "label": "Quick memory trick",
         "text": "Think: Native = natural body rhythms (heartbeat, age, counting on your fingers). Sino = systematic/official contexts (clocks, money, calendars)."
       },
+      "tip_zh_tw": {
+        "label": "快速記憶技巧",
+        "text": "這樣記：固有語＝自然的身體節律（心跳、年齡、用手指數數）。漢字語＝系統性或正式場合（時鐘、金錢、日曆）。"
+      },
       "body_ja": "韓国語には2つの数体系があります：固有語（고유어）と漢数字（한자어）。両方必ず覚えましょう。使う場面が異なるためです。",
       "tip_ja": {
         "label": "記憶のコツ",
         "text": "固有語＝体のリズム（心拍数・年齢・指で数える）。漢数字＝公式な場面（時計・お金・カレンダー）と覚えましょう。"
+      },
+      "title_es": "Dos Sistemas de Números",
+      "body_es": "El coreano usa dos sistemas numéricos separados: números nativos coreanos (고유어) y números sino-coreanos (한자어). Debes conocer ambos — se usan en situaciones diferentes.",
+      "rules_es": [
+        "Coreano nativo: se usa para contar objetos (개), edad (살) y horas (시) — ej. 하나, 둘, 셋",
+        "Sino-coreano: se usa para dinero (원), minutos (분), fechas, números de teléfono y direcciones — ej. 일, 이, 삼",
+        "Los números grandes siempre usan sino-coreano — 백 (100), 천 (1.000), 만 (10.000)"
+      ],
+      "tip_es": {
+        "label": "Truco de memoria rápido",
+        "text": "Recuerda: Nativo = ritmos corporales naturales (latido, edad, contar con los dedos). Sino-coreano = contextos sistemáticos/oficiales (relojes, dinero, calendarios)."
       }
     },
     {
@@ -44,10 +67,13 @@
         "나"
       ],
       "romanization": "hana",
+      "zhuyin": "ㄏㄚ·ㄋㄚ",
       "katakana": "ハナ",
       "audio": "하나",
       "meaning": "One (native Korean) — used for age, counting objects",
-      "meaning_ja": "一（固有語）― 年齢・物の数え方に使う"
+      "meaning_zh_tw": "一（固有語）——用於年齡、數物品",
+      "meaning_ja": "一（固有語）― 年齢・物の数え方に使う",
+      "meaning_es": "Uno (coreano nativo) — se usa para la edad y contar objetos"
     },
     {
       "id": 3,
@@ -57,10 +83,13 @@
         "둘"
       ],
       "romanization": "dul",
+      "zhuyin": "ㄉㄨㄌ",
       "katakana": "トゥル",
       "audio": "둘",
       "meaning": "Two (native Korean) — becomes 두 before a counter",
-      "meaning_ja": "二（固有語）― 助数詞の前では 두 になる"
+      "meaning_zh_tw": "二（固有語）——在助數詞前變為 두",
+      "meaning_ja": "二（固有語）― 助数詞の前では 두 になる",
+      "meaning_es": "Dos (coreano nativo) — se convierte en 두 antes de un contador"
     },
     {
       "id": 4,
@@ -70,10 +99,13 @@
         "셋"
       ],
       "romanization": "set",
+      "zhuyin": "ㄙㄝ",
       "katakana": "セッ",
       "audio": "셋",
       "meaning": "Three (native Korean) — becomes 세 before a counter",
-      "meaning_ja": "三（固有語）― 助数詞の前では 세 になる"
+      "meaning_zh_tw": "三（固有語）——在助數詞前變為 세",
+      "meaning_ja": "三（固有語）― 助数詞の前では 세 になる",
+      "meaning_es": "Tres (coreano nativo) — se convierte en 세 antes de un contador"
     },
     {
       "id": 5,
@@ -83,10 +115,13 @@
         "넷"
       ],
       "romanization": "net",
+      "zhuyin": "ㄋㄝ",
       "katakana": "ネッ",
       "audio": "넷",
       "meaning": "Four (native Korean) — becomes 네 before a counter",
-      "meaning_ja": "四（固有語）― 助数詞の前では 네 になる"
+      "meaning_zh_tw": "四（固有語）——在助數詞前變為 네",
+      "meaning_ja": "四（固有語）― 助数詞の前では 네 になる",
+      "meaning_es": "Cuatro (coreano nativo) — se convierte en 네 antes de un contador"
     },
     {
       "id": 6,
@@ -97,10 +132,13 @@
         "섯"
       ],
       "romanization": "daseot",
+      "zhuyin": "ㄉㄚ·ㄙㄜ",
       "katakana": "タソッ",
       "audio": "다섯",
       "meaning": "Five (native Korean)",
-      "meaning_ja": "五（固有語）"
+      "meaning_zh_tw": "五（固有語）",
+      "meaning_ja": "五（固有語）",
+      "meaning_es": "Cinco (coreano nativo)"
     },
     {
       "id": 7,
@@ -111,10 +149,13 @@
         "섯"
       ],
       "romanization": "yeoseot",
+      "zhuyin": "ㄧㄜ·ㄙㄜ",
       "katakana": "ヨソッ",
       "audio": "여섯",
       "meaning": "Six (native Korean)",
-      "meaning_ja": "六（固有語）"
+      "meaning_zh_tw": "六（固有語）",
+      "meaning_ja": "六（固有語）",
+      "meaning_es": "Seis (coreano nativo)"
     },
     {
       "id": 8,
@@ -125,10 +166,13 @@
         "곱"
       ],
       "romanization": "ilgop",
+      "zhuyin": "ㄧㄌ·ㄍㄛ",
       "katakana": "イルゴプ",
       "audio": "일곱",
       "meaning": "Seven (native Korean)",
-      "meaning_ja": "七（固有語）"
+      "meaning_zh_tw": "七（固有語）",
+      "meaning_ja": "七（固有語）",
+      "meaning_es": "Siete (coreano nativo)"
     },
     {
       "id": 9,
@@ -139,10 +183,13 @@
         "덟"
       ],
       "romanization": "yeodeol",
+      "zhuyin": "ㄧㄜ·ㄉㄜㄌ",
       "katakana": "ヨドル",
       "audio": "여덟",
       "meaning": "Eight (native Korean)",
-      "meaning_ja": "八（固有語）"
+      "meaning_zh_tw": "八（固有語）",
+      "meaning_ja": "八（固有語）",
+      "meaning_es": "Ocho (coreano nativo)"
     },
     {
       "id": 10,
@@ -152,21 +199,31 @@
         "열"
       ],
       "romanization": "yeol",
+      "zhuyin": "ㄧㄜㄌ",
       "katakana": "ヨル",
       "audio": "열",
       "meaning": "Ten (native Korean) — used for 10 o'clock (열 시)",
-      "meaning_ja": "十（固有語）― 열 시（10時）"
+      "meaning_zh_tw": "十（固有語）——用於10點（열 시）",
+      "meaning_ja": "十（固有語）― 열 시（10時）",
+      "meaning_es": "Diez (coreano nativo) — se usa para las 10 en punto (열 시)"
     },
     {
       "id": 11,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You are telling someone your age in Korean. Which number system do you use?",
+      "prompt_zh_tw": "你在韓語中告訴別人你的年齡。應該使用哪種數字系統？",
       "choices": [
         "Sino-Korean (일, 이, 삼)",
         "Native Korean (하나, 둘, 셋)",
         "Either one is fine",
         "Neither — use English numbers"
+      ],
+      "choices_zh_tw": [
+        "漢字語（일、이、삼）",
+        "固有語（하나、둘、셋）",
+        "兩種都可以",
+        "都不用——用英文數字"
       ],
       "choices_ja": [
         "漢数字（일、이、삼）",
@@ -175,7 +232,14 @@
         "どちらも使わない（英語を使う）"
       ],
       "correct": "Native Korean (하나, 둘, 셋)",
-      "prompt_ja": "韓国語で年齢を伝えるとき、どの数体系を使いますか？"
+      "prompt_ja": "韓国語で年齢を伝えるとき、どの数体系を使いますか？",
+      "prompt_es": "Estás diciendo tu edad en coreano. ¿Qué sistema numérico usas?",
+      "choices_es": [
+        "Sino-coreano (일, 이, 삼)",
+        "Coreano nativo (하나, 둘, 셋)",
+        "Cualquiera sirve",
+        "Ninguno — usa números en inglés"
+      ]
     },
     {
       "id": 12,
@@ -183,13 +247,27 @@
       "type": "reading_card",
       "title": "Sino-Korean Numbers",
       "title_kr": "한자어 숫자",
+      "title_zh_tw": "漢字語數字",
       "body": "Sino-Korean numbers come from Chinese (한자, hanja). They are used for money, minutes, dates, phone numbers, floors of buildings, and large quantities.",
+      "body_zh_tw": "漢字語數字來自漢字（한자）。用於金錢、分鐘、日期、電話號碼、樓層及大數量。",
       "rules": [
         "일(1), 이(2), 삼(3), 사(4), 오(5), 육(6), 칠(7), 팔(8), 구(9), 십(10)",
         "백 (100), 천 (1,000), 만 (10,000)",
         "Price: 오천 원 (5,000 won), 이만 원 (20,000 won)"
       ],
-      "body_ja": "漢数字（한자어）は漢字（한자）に由来します。お金・分・日付・電話番号・フロア数・大きな数量に使われます。"
+      "rules_zh_tw": [
+        "일(1)、이(2)、삼(3)、사(4)、오(5)、육(6)、칠(7)、팔(8)、구(9)、십(10)",
+        "백（100）、천（1,000）、만（10,000）",
+        "價格示例：오천 원（5,000韓圜）、이만 원（20,000韓圜）"
+      ],
+      "body_ja": "漢数字（한자어）は漢字（한자）に由来します。お金・分・日付・電話番号・フロア数・大きな数量に使われます。",
+      "title_es": "Números Sino-coreanos",
+      "body_es": "Los números sino-coreanos provienen del chino (한자, hanja). Se usan para dinero, minutos, fechas, números de teléfono, pisos de edificios y grandes cantidades.",
+      "rules_es": [
+        "일(1), 이(2), 삼(3), 사(4), 오(5), 육(6), 칠(7), 팔(8), 구(9), 십(10)",
+        "백 (100), 천 (1.000), 만 (10.000)",
+        "Precio: 오천 원 (5.000 won), 이만 원 (20.000 won)"
+      ]
     },
     {
       "id": 13,
@@ -199,10 +277,13 @@
         "일"
       ],
       "romanization": "il",
+      "zhuyin": "ㄧㄌ",
       "katakana": "イル",
       "audio": "일",
       "meaning": "One (Sino-Korean) — dates, phone numbers, money",
-      "meaning_ja": "一（漢字語）― 日付・電話番号・お金に使う"
+      "meaning_zh_tw": "一（漢字語）——日期、電話號碼、金錢",
+      "meaning_ja": "一（漢字語）― 日付・電話番号・お金に使う",
+      "meaning_es": "Uno (sino-coreano) — fechas, números de teléfono, dinero"
     },
     {
       "id": 14,
@@ -212,10 +293,13 @@
         "오"
       ],
       "romanization": "o",
+      "zhuyin": "ㄛ",
       "katakana": "オ",
       "audio": "오",
       "meaning": "Five (Sino-Korean) — 오 분 = five minutes",
-      "meaning_ja": "五（漢字語）― 오 분（5分）"
+      "meaning_zh_tw": "五（漢字語）——오 분＝五分鐘",
+      "meaning_ja": "五（漢字語）― 오 분（5分）",
+      "meaning_es": "Cinco (sino-coreano) — 오 분 = cinco minutos"
     },
     {
       "id": 15,
@@ -225,10 +309,13 @@
         "십"
       ],
       "romanization": "sip",
+      "zhuyin": "ㄙㄧ",
       "katakana": "シプ",
       "audio": "십",
       "meaning": "Ten (Sino-Korean) — 십 분 = ten minutes",
-      "meaning_ja": "十（漢字語）― 십 분（10分）"
+      "meaning_zh_tw": "十（漢字語）——십 분＝十分鐘",
+      "meaning_ja": "十（漢字語）― 십 분（10分）",
+      "meaning_es": "Diez (sino-coreano) — 십 분 = diez minutos"
     },
     {
       "id": 16,
@@ -238,10 +325,13 @@
         "백"
       ],
       "romanization": "baek",
+      "zhuyin": "ㄅㄝ",
       "katakana": "ペク",
       "audio": "백",
       "meaning": "One hundred (Sino-Korean) — 백 원 = 100 won",
-      "meaning_ja": "百（漢字語）― 백 원（100ウォン）"
+      "meaning_zh_tw": "一百（漢字語）——백 원＝100韓圜",
+      "meaning_ja": "百（漢字語）― 백 원（100ウォン）",
+      "meaning_es": "Cien (sino-coreano) — 백 원 = 100 won"
     },
     {
       "id": 17,
@@ -251,10 +341,13 @@
         "천"
       ],
       "romanization": "cheon",
+      "zhuyin": "ㄔㄜㄣ",
       "katakana": "チョン",
       "audio": "천",
       "meaning": "One thousand (Sino-Korean) — 천 원 = 1,000 won",
-      "meaning_ja": "千（漢字語）― 천 원（1,000ウォン）"
+      "meaning_zh_tw": "一千（漢字語）——천 원＝1,000韓圜",
+      "meaning_ja": "千（漢字語）― 천 원（1,000ウォン）",
+      "meaning_es": "Mil (sino-coreano) — 천 원 = 1.000 won"
     },
     {
       "id": 18,
@@ -264,10 +357,13 @@
         "만"
       ],
       "romanization": "man",
+      "zhuyin": "ㄇㄢ",
       "katakana": "マン",
       "audio": "만",
       "meaning": "Ten thousand (Sino-Korean) — key unit in Korean pricing",
-      "meaning_ja": "一万（漢字語）― 韓国の価格単位として重要"
+      "meaning_zh_tw": "一萬（漢字語）——韓國價格的關鍵單位",
+      "meaning_ja": "一万（漢字語）― 韓国の価格単位として重要",
+      "meaning_es": "Diez mil (sino-coreano) — unidad clave en los precios coreanos"
     },
     {
       "id": 19,
@@ -275,7 +371,9 @@
       "type": "reading_card",
       "title": "Korean Counters",
       "title_kr": "단위 명사",
+      "title_zh_tw": "韓語助數詞",
       "body": "Korean numbers must be paired with counters (단위명사) — special words that indicate what kind of thing you are counting. The counter comes after the number.",
+      "body_zh_tw": "韓語數字必須搭配助數詞（단위명사）——表示所數事物種類的特殊詞，放在數字之後。",
       "rules": [
         "개 (gae) — general objects: 사과 두 개 (two apples)",
         "명 (myeong) — people (formal): 학생 세 명 (three students)",
@@ -284,7 +382,25 @@
         "잔 (jan) — cups / glasses: 커피 한 잔 (one cup of coffee)",
         "번 (beon) — number order / times: 두 번 (two times)"
       ],
-      "body_ja": "韓国語の数字には助数詞（단위명사）が必要です。数えるものの種類を示す特別な語が数字の後に来ます。"
+      "rules_zh_tw": [
+        "개（gae）——一般物品：사과 두 개（兩個蘋果）",
+        "명（myeong）——人（正式）：학생 세 명（三名學生）",
+        "살（sal）——年齡：스물다섯 살（25歲）",
+        "권（gwon）——書：책 한 권（一本書）",
+        "잔（jan）——杯子：커피 한 잔（一杯咖啡）",
+        "번（beon）——次數/順序：두 번（兩次）"
+      ],
+      "body_ja": "韓国語の数字には助数詞（단위명사）が必要です。数えるものの種類を示す特別な語が数字の後に来ます。",
+      "title_es": "Contadores Coreanos",
+      "body_es": "Los números coreanos deben combinarse con contadores (단위명사) — palabras especiales que indican qué tipo de cosa se está contando. El contador va después del número.",
+      "rules_es": [
+        "개 (gae) — objetos generales: 사과 두 개 (dos manzanas)",
+        "명 (myeong) — personas (formal): 학생 세 명 (tres estudiantes)",
+        "살 (sal) — edad: 스물다섯 살 (25 años)",
+        "권 (gwon) — libros: 책 한 권 (un libro)",
+        "잔 (jan) — tazas/vasos: 커피 한 잔 (una taza de café)",
+        "번 (beon) — número de orden/veces: 두 번 (dos veces)"
+      ]
     },
     {
       "id": 20,
@@ -294,10 +410,13 @@
         "개"
       ],
       "romanization": "gae",
+      "zhuyin": "ㄍㄝ",
       "katakana": "ケ",
       "audio": "개",
       "meaning": "Counter for general objects — 사탕 세 개 (three candies)",
-      "meaning_ja": "物を数える助数詞 ― 사탕 세 개（キャンディー3個）"
+      "meaning_zh_tw": "一般物品助數詞——사탕 세 개（三顆糖果）",
+      "meaning_ja": "物を数える助数詞 ― 사탕 세 개（キャンディー3個）",
+      "meaning_es": "Contador para objetos generales — 사탕 세 개 (tres caramelos)"
     },
     {
       "id": 21,
@@ -307,10 +426,13 @@
         "명"
       ],
       "romanization": "myeong",
+      "zhuyin": "ㄇㄧㄥ",
       "katakana": "ミョン",
       "audio": "명",
       "meaning": "Counter for people (formal) — 친구 두 명 (two friends)",
-      "meaning_ja": "人を数える助数詞（丁寧）― 친구 두 명（友達2人）"
+      "meaning_zh_tw": "人的助數詞（正式）——친구 두 명（兩位朋友）",
+      "meaning_ja": "人を数える助数詞（丁寧）― 친구 두 명（友達2人）",
+      "meaning_es": "Contador para personas (formal) — 친구 두 명 (dos amigos)"
     },
     {
       "id": 22,
@@ -320,21 +442,31 @@
         "번"
       ],
       "romanization": "beon",
+      "zhuyin": "ㄅㄜㄣ",
       "katakana": "ポン",
       "audio": "번",
       "meaning": "Counter for times / order — 한 번 더 (one more time)",
-      "meaning_ja": "回数・順序の助数詞 ― 한 번 더（もう一度）"
+      "meaning_zh_tw": "次數/順序助數詞——한 번 더（再一次）",
+      "meaning_ja": "回数・順序の助数詞 ― 한 번 더（もう一度）",
+      "meaning_es": "Contador para veces/orden — 한 번 더 (una vez más)"
     },
     {
       "id": 23,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Which counter do you use for books (책)?",
+      "prompt_zh_tw": "數書（책）時用哪個助數詞？",
       "choices": [
         "개 (gae)",
         "명 (myeong)",
         "권 (gwon)",
         "잔 (jan)"
+      ],
+      "choices_zh_tw": [
+        "개（物品）",
+        "명（人）",
+        "권（書）",
+        "잔（杯）"
       ],
       "choices_ja": [
         "개（ケ）",
@@ -343,7 +475,14 @@
         "잔（チャン）"
       ],
       "correct": "권 (gwon)",
-      "prompt_ja": "本（책）を数えるときの助数詞は？"
+      "prompt_ja": "本（책）を数えるときの助数詞は？",
+      "prompt_es": "¿Qué contador usas para los libros (책)?",
+      "choices_es": [
+        "개 (objetos)",
+        "명 (personas)",
+        "권 (libros)",
+        "잔 (vasos)"
+      ]
     },
     {
       "id": 24,
@@ -351,9 +490,13 @@
       "type": "lesson_complete",
       "title": "Numbers Complete!",
       "title_kr": "숫자 완성!",
+      "title_zh_tw": "數字完成！",
       "message": "You've mastered both Korean number systems and key counters. Numbers unlock a huge part of daily life — telling time, shopping, giving your age, and more.",
+      "message_zh_tw": "你已掌握兩種韓語數字系統和重要助數詞。數字開啟了日常生活的大量場景——報時、購物、說出年齡等等。",
       "next_url": "vocabulary.html?cat=family",
-      "message_ja": "韓国語の2つの数体系と主要な助数詞をマスターしました！数は日常生活の大部分を解錠します―時刻・買い物・年齢の伝え方など。"
+      "message_ja": "韓国語の2つの数体系と主要な助数詞をマスターしました！数は日常生活の大部分を解錠します―時刻・買い物・年齢の伝え方など。",
+      "title_es": "¡Números Completados!",
+      "message_es": "Has dominado los dos sistemas numéricos coreanos y los contadores clave. Los números abren una gran parte de la vida cotidiana — decir la hora, comprar, dar tu edad y mucho más."
     }
   ]
 }

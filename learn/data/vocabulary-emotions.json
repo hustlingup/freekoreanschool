@@ -8,7 +8,8 @@
       "name_kr": "감정",
       "first_step": 1,
       "last_step": 20,
-      "time_minutes": 12
+      "time_minutes": 12,
+      "name_es": "Emociones"
     }
   ],
   "steps": [
@@ -18,16 +19,28 @@
       "type": "reading_card",
       "title": "Emotions in Korean",
       "title_kr": "감정 표현",
-      "body": "Korean emotion words often come as adjective-verbs ending in -다. To say 'I am happy,' you say 행복해요 (not 'I am 행복'). Many emotion words pair naturally with -하다 (to do/be) to form verbs. K-dramas are a great way to hear emotions used naturally in context.",
+      "title_zh_tw": "韓語情感表達",
+      "body": "Korean emotions are often expressed using 해요-form verbs rather than adjectives. Many emotional states end in -워요 (from -웁다 adjectives). Koreans also use the concept of 눈치 (nunchi) — reading others' emotions without them having to express it.",
+      "body_zh_tw": "韓語情感通常用해요形動詞而非形容詞來表達。許多情感狀態以-워요結尾（來自-웁다形容詞）。韓國人也有「눈치」的概念——無需對方開口就能察覺對方的情緒。",
       "tip": {
-        "icon": "😊",
-        "label": "Emotion + 해요",
-        "text": "행복하다 → 행복해요 (I'm happy), 슬프다 → 슬퍼요 (I'm sad), 화나다 → 화났어요 (I got angry). The -아/어요 ending makes them polite present-tense statements."
+        "icon": "💬",
+        "label": "왜 그래요? (What's wrong?)",
+        "text": "If someone asks 왜 그래요? (Why/What's wrong?), you can answer with any emotion word + 아요/어요. E.g., 슬퍼요 (I'm sad), 피곤해요 (I'm tired)."
       },
-      "body_ja": "韓国語の感情語は多くが-다で終わる形容詞動詞です。「嬉しい」は행복해요と言います（「I am 행복」ではありません）。多くの感情語は-하다（する/ある）と自然に組み合わさります。K-ドラマで感情表現を生きた文脈で聴くのがおすすめです。",
+      "tip_zh_tw": {
+        "label": "왜 그래요？（怎麼了？）",
+        "text": "如果有人問 왜 그래요？（怎麼了？），你可以用任何情感詞 + 아요/어요 來回答。例：슬퍼요（我很傷心）、피곤해요（我很累）。"
+      },
+      "body_ja": "韓国語の感情は形容詞より해요形の動詞で表すことが多いです。多くの感情状態は-워요（-웁다形容詞から）で終わります。また韓国人は눈치（ヌンチ）という概念を大切にします。",
       "tip_ja": {
-        "label": "感情 + 해요",
-        "text": "행복하다 → 행복해요（嬉しい）、슬프다 → 슬퍼요（悲しい）、화나다 → 화났어요（怒った）。-아/어요の語尾で丁寧な現在形の文になります。"
+        "label": "왜 그래요？（どうしたの？）",
+        "text": "왜 그래요？（どうしましたか？）と聞かれたら、感情語 + 아요/어요で答えます。例：슬퍼요（悲しいです）、피곤해요（疲れました）。"
+      },
+      "title_es": "Emociones en Coreano",
+      "body_es": "Las emociones en coreano se expresan frecuentemente con verbos en forma 해요 en lugar de adjetivos. Muchos estados emocionales terminan en -워요 (de adjetivos en -웁다). Los coreanos también usan el concepto de 눈치 (nunchi) — leer las emociones del otro sin que tenga que expresarlo.",
+      "tip_es": {
+        "label": "왜 그래요? (¿Qué pasa?)",
+        "text": "Si alguien pregunta 왜 그래요? (¿Por qué/Qué pasa?), puedes responder con cualquier palabra de emoción + 아요/어요. Ej: 슬퍼요 (Estoy triste), 피곤해요 (Estoy cansado/a)."
       }
     },
     {
@@ -36,13 +49,18 @@
       "type": "listen_repeat",
       "syllables": [
         "행",
-        "복"
+        "복",
+        "해",
+        "요"
       ],
-      "romanization": "haengbok",
-      "katakana": "ヘンボク",
-      "audio": "행복",
-      "meaning": "Happiness — 행복해요 = I am happy",
-      "meaning_ja": "幸福 ― 행복해요（幸せです）"
+      "romanization": "haengbokhaeyo",
+      "zhuyin": "ㄏㄝㄥ·ㄅㄛ·ㄏㄝ·ㄧㄠ",
+      "katakana": "ヘンボケヨ",
+      "audio": "행복해요",
+      "meaning": "I'm happy — 행복 (happiness) is the root noun",
+      "meaning_zh_tw": "我很幸福——행복（幸福）是根名詞",
+      "meaning_ja": "幸せです ― 행복（幸福）が語根",
+      "meaning_es": "Soy feliz / Estoy feliz — 행복 (felicidad) es el sustantivo raíz"
     },
     {
       "id": 3,
@@ -50,26 +68,35 @@
       "type": "listen_repeat",
       "syllables": [
         "슬",
-        "픔"
+        "퍼",
+        "요"
       ],
-      "romanization": "seulpeum",
-      "katakana": "スルプム",
-      "audio": "슬픔",
-      "meaning": "Sadness — 슬퍼요 = I am sad",
-      "meaning_ja": "悲しみ ― 슬퍼요（悲しいです）"
+      "romanization": "seulpeoyo",
+      "zhuyin": "ㄙㄜㄌ·ㄆㄜ·ㄧㄠ",
+      "katakana": "スルポヨ",
+      "audio": "슬퍼요",
+      "meaning": "I'm sad — from 슬프다 (to be sad)",
+      "meaning_zh_tw": "我很傷心——來自 슬프다（悲傷的）",
+      "meaning_ja": "悲しいです ― 슬프다（悲しい）から",
+      "meaning_es": "Estoy triste — de 슬프다 (estar triste)"
     },
     {
       "id": 4,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "화"
+        "화",
+        "나",
+        "요"
       ],
-      "romanization": "hwa",
-      "katakana": "ファ",
-      "audio": "화",
-      "meaning": "Anger — 화났어요 = I got angry / 화가 나요 = I'm angry",
-      "meaning_ja": "怒り ― 화났어요（怒りました）"
+      "romanization": "hwanayo",
+      "zhuyin": "ㄏㄨㄚ·ㄋㄚ·ㄧㄠ",
+      "katakana": "ファナヨ",
+      "audio": "화나요",
+      "meaning": "I'm angry — 화 means 'anger/fire'; 화가 나다 = anger rises",
+      "meaning_zh_tw": "我很生氣——화 指「憤怒/火氣」；화가 나다＝怒火升起",
+      "meaning_ja": "怒っています ― 화（怒り・火）が나다（起きる）",
+      "meaning_es": "Estoy enojado/a — 화 significa \"ira/fuego\"; 화가 나다 = surge la ira"
     },
     {
       "id": 5,
@@ -78,70 +105,93 @@
       "syllables": [
         "무",
         "서",
-        "움"
+        "워",
+        "요"
       ],
-      "romanization": "museoum",
-      "katakana": "ムソウム",
-      "audio": "무서움",
-      "meaning": "Fear — 무서워요 = I'm scared",
-      "meaning_ja": "恐怖 ― 무서워요（怖いです）"
+      "romanization": "museowoyo",
+      "zhuyin": "ㄇㄨ·ㄙㄜ·ㄨㄜ·ㄧㄠ",
+      "katakana": "ムソウォヨ",
+      "audio": "무서워요",
+      "meaning": "I'm scared / it's scary",
+      "meaning_zh_tw": "我害怕 / 很可怕",
+      "meaning_ja": "怖いです",
+      "meaning_es": "Tengo miedo / Da miedo"
     },
     {
       "id": 6,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "피",
-        "곤"
+        "기",
+        "뻐",
+        "요"
       ],
-      "romanization": "pigon",
-      "katakana": "ピゴン",
-      "audio": "피곤",
-      "meaning": "Fatigue / tiredness — 피곤해요 = I'm tired",
-      "meaning_ja": "疲労 ― 피곤해요（疲れています）"
+      "romanization": "gippeoyo",
+      "zhuyin": "ㄍㄧ·ㄅㄜ·ㄧㄠ",
+      "katakana": "キポヨ",
+      "audio": "기뻐요",
+      "meaning": "I'm glad / delighted — stronger than 행복해요",
+      "meaning_zh_tw": "我很高興 / 欣喜——比 행복해요 更強烈",
+      "meaning_ja": "嬉しいです ― 행복해요 より強い喜び",
+      "meaning_es": "Estoy contento/a / encantado — más fuerte que 행복해요"
     },
     {
       "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "배",
-        "고",
-        "픔"
+        "걱",
+        "정",
+        "돼",
+        "요"
       ],
-      "romanization": "baegopeum",
-      "katakana": "ペゴプム",
-      "audio": "배고픔",
-      "meaning": "Hunger — 배고파요 = I'm hungry",
-      "meaning_ja": "空腹 ― 배고파요（お腹が空いています）"
+      "romanization": "geokjeongdwaeyo",
+      "zhuyin": "ㄍㄜ·ㄓㄥ·ㄉㄨㄟ·ㄧㄠ",
+      "katakana": "コクチョンドゥェヨ",
+      "audio": "걱정돼요",
+      "meaning": "I'm worried — 걱정 (worry) is a very common noun in Korean",
+      "meaning_zh_tw": "我很擔心——걱정（擔心）在韓語中是非常常用的名詞",
+      "meaning_ja": "心配です ― 걱정（心配）はよく使われる名詞",
+      "meaning_es": "Estoy preocupado/a — 걱정 (preocupación) es un sustantivo muy común en coreano"
     },
     {
       "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "걱",
-        "정"
+        "부",
+        "끄",
+        "러",
+        "워",
+        "요"
       ],
-      "romanization": "geokjeong",
-      "katakana": "コクチョン",
-      "audio": "걱정",
-      "meaning": "Worry / concern — 걱정돼요 = I'm worried",
-      "meaning_ja": "心配 ― 걱정돼요（心配です）"
+      "romanization": "bukkeurowoyo",
+      "zhuyin": "ㄅㄨ·ㄍㄜ·ㄌㄜ·ㄨㄜ·ㄧㄠ",
+      "katakana": "プックロウォヨ",
+      "audio": "부끄러워요",
+      "meaning": "I'm embarrassed / ashamed",
+      "meaning_zh_tw": "我很羞愧 / 害臊",
+      "meaning_ja": "恥ずかしいです",
+      "meaning_es": "Estoy avergonzado/a"
     },
     {
       "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "설",
-        "렘"
+        "놀",
+        "랐",
+        "어",
+        "요"
       ],
-      "romanization": "seollem",
-      "katakana": "ソルレム",
-      "audio": "설렘",
-      "meaning": "Excitement / flutter — the feeling of anticipation before something good",
-      "meaning_ja": "ときめき / 期待のドキドキ ― 良いことの前の高揚感"
+      "romanization": "nollasseoyo",
+      "zhuyin": "ㄋㄛㄌ·ㄌㄚ·ㄜ·ㄧㄠ",
+      "katakana": "ノルラッソヨ",
+      "audio": "놀랐어요",
+      "meaning": "I was surprised — 깜짝이야! (Boo!) makes you say this",
+      "meaning_zh_tw": "我嚇了一跳——說 깜짝이야！（嚇到我了！）之後的感嘆",
+      "meaning_ja": "驚きました ― 깜짝이야！（びっくりした！）の後に来る感情",
+      "meaning_es": "Me sorprendí — ¡깜짝이야! (¡Qué susto!) te hace decir esto"
     },
     {
       "id": 10,
@@ -150,148 +200,214 @@
       "syllables": [
         "외",
         "로",
-        "움"
+        "워",
+        "요"
       ],
-      "romanization": "oeroum",
-      "katakana": "ウェロウム",
-      "audio": "외로움",
-      "meaning": "Loneliness — 외로워요 = I'm lonely",
-      "meaning_ja": "孤独 ― 외로워요（孤独です）"
+      "romanization": "oerowoyo",
+      "zhuyin": "ㄨㄟ·ㄌㄛ·ㄨㄜ·ㄧㄠ",
+      "katakana": "ウェロウォヨ",
+      "audio": "외로워요",
+      "meaning": "I'm lonely — a common theme in K-drama lyrics",
+      "meaning_zh_tw": "我很孤獨——K劇歌詞中的常見主題",
+      "meaning_ja": "寂しいです ― K-ドラマの歌詞によく登場するテーマ",
+      "meaning_es": "Estoy solo/a — tema recurrente en las letras de K-drama"
     },
     {
       "id": 11,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "창",
-        "피"
+        "피",
+        "곤",
+        "해",
+        "요"
       ],
-      "romanization": "changpi",
-      "katakana": "チャンピ",
-      "audio": "창피",
-      "meaning": "Embarrassment — 창피해요 = I'm embarrassed",
-      "meaning_ja": "恥ずかしさ ― 창피해요（恥ずかしいです）"
+      "romanization": "pigonhaeyo",
+      "zhuyin": "ㄆㄧ·ㄍㄨㄣ·ㄏㄝ·ㄧㄠ",
+      "katakana": "ピゴネヨ",
+      "audio": "피곤해요",
+      "meaning": "I'm tired / exhausted",
+      "meaning_zh_tw": "我很累 / 精疲力竭",
+      "meaning_ja": "疲れました・疲れています",
+      "meaning_es": "Estoy cansado/a / agotado/a"
     },
     {
       "id": 12,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "실",
-        "망"
+        "설",
+        "레",
+        "요"
       ],
-      "romanization": "silmang",
-      "katakana": "シルマン",
-      "audio": "실망",
-      "meaning": "Disappointment — 실망했어요 = I was disappointed",
-      "meaning_ja": "失望 ― 실망했어요（失望しました）"
+      "romanization": "seollaeyo",
+      "zhuyin": "ㄙㄜㄌ·ㄌㄝ·ㄧㄠ",
+      "katakana": "ソルレヨ",
+      "audio": "설레요",
+      "meaning": "I'm excited / heart is fluttering — used for romantic excitement",
+      "meaning_zh_tw": "我心動了 / 心跳加速——用於浪漫的興奮感",
+      "meaning_ja": "ドキドキしています ― ロマンチックな期待感に使う",
+      "meaning_es": "Estoy emocionado/a / el corazón me late fuerte — se usa para la emoción romántica"
     },
     {
       "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "지",
-        "루",
-        "함"
+        "그",
+        "리",
+        "워",
+        "요"
       ],
-      "romanization": "jiruham",
-      "katakana": "チルハム",
-      "audio": "지루함",
-      "meaning": "Boredom — 지루해요 = I'm bored",
-      "meaning_ja": "退屈 ― 지루해요（退屈です）"
+      "romanization": "geuriwoyo",
+      "zhuyin": "ㄍㄜ·ㄌㄧ·ㄨㄜ·ㄧㄠ",
+      "katakana": "クリウォヨ",
+      "audio": "그리워요",
+      "meaning": "I miss (someone/something) — 보고 싶어요 is also widely used",
+      "meaning_zh_tw": "我很想念（某人/某物）——보고 싶어요 也廣泛使用",
+      "meaning_ja": "恋しいです ― 보고 싶어요 もよく使う",
+      "meaning_es": "Echo de menos (a alguien/algo) — 보고 싶어요 también es muy usado"
     },
     {
       "id": 14,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "그",
-        "리",
-        "움"
+        "감",
+        "동",
+        "받",
+        "았",
+        "어",
+        "요"
       ],
-      "romanization": "geurium",
-      "katakana": "クリウム",
-      "audio": "그리움",
-      "meaning": "Longing / missing someone — 보고 싶어요 = I miss you",
-      "meaning_ja": "恋しさ / 想う気持ち ― 보고 싶어요（会いたいです）"
+      "romanization": "gamdong badasseoyo",
+      "zhuyin": "ㄍㄚㄇ·ㄉㄨㄥ·ㄅㄚ·ㄚ·ㄜ·ㄧㄠ",
+      "katakana": "カムドンパダッソヨ",
+      "audio": "감동받았어요",
+      "meaning": "I was moved / touched — 감동 is 'deep emotional impact'",
+      "meaning_zh_tw": "我很感動——감동 是「深深觸動內心的感受」",
+      "meaning_ja": "感動しました ― 감동（深い感情的な衝撃）",
+      "meaning_es": "Me emocioné / Me conmovió — 감동 es \"impacto emocional profundo\""
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "놀",
-        "람"
+        "스",
+        "트",
+        "레",
+        "스"
       ],
-      "romanization": "nollam",
-      "katakana": "ノルラム",
-      "audio": "놀람",
-      "meaning": "Surprise — 놀랐어요 = I was surprised",
-      "meaning_ja": "驚き ― 놀랐어요（驚きました）"
+      "romanization": "seuteuleseu",
+      "zhuyin": "ㄙㄜ·ㄊㄜ·ㄌㄝ·ㄙㄜ",
+      "katakana": "ストゥレス",
+      "audio": "스트레스",
+      "meaning": "Stress — 스트레스 받아요 = I'm stressed",
+      "meaning_zh_tw": "壓力——스트레스 받아요＝我感到有壓力",
+      "meaning_ja": "ストレス ― 스트레스 받아요（ストレスを感じます）",
+      "meaning_es": "Estrés — 스트레스 받아요 = Estoy estresado/a"
     },
     {
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "뿌",
-        "듯",
-        "함"
+        "기",
+        "분"
       ],
-      "romanization": "ppudeukham",
-      "katakana": "プドゥカム",
-      "audio": "뿌듯함",
-      "meaning": "Pride / fulfillment — the warm proud feeling after accomplishing something",
-      "meaning_ja": "誇らしさ / 達成感 ― 何かを成し遂げたときの温かい充実感"
+      "romanization": "gibun",
+      "zhuyin": "ㄍㄧ·ㄅㄨㄣ",
+      "katakana": "キブン",
+      "audio": "기분",
+      "meaning": "Feeling / mood — 기분이 어때요? = How are you feeling?",
+      "meaning_zh_tw": "心情 / 情緒——기분이 어때요？＝你心情怎麼樣？",
+      "meaning_ja": "気分・気持ち ― 기분이 어때요？（気分はどうですか？）",
+      "meaning_es": "Sentimiento / Ánimo — 기분이 어때요? = ¿Cómo te sientes?"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "How do you say 'I'm tired' in Korean?",
+      "prompt": "설레요 is best described as...",
+      "prompt_zh_tw": "설레요 最好的描述是……",
       "choices": [
-        "행복해요",
-        "피곤해요",
-        "배고파요",
-        "슬퍼요"
+        "I'm tired",
+        "My heart is fluttering with excitement",
+        "I'm embarrassed",
+        "I'm angry"
       ],
-      "correct": "피곤해요",
-      "prompt_ja": "「疲れた」は韓国語でどう言いますか？"
+      "choices_zh_tw": [
+        "我很累",
+        "我心跳加速、心動不已",
+        "我很羞愧",
+        "我很生氣"
+      ],
+      "choices_ja": [
+        "疲れています",
+        "胸がドキドキしています",
+        "恥ずかしいです",
+        "怒っています"
+      ],
+      "correct": "My heart is fluttering with excitement",
+      "prompt_ja": "설레요 の最も正確な説明は？",
+      "prompt_es": "설레요 se describe mejor como...",
+      "choices_es": [
+        "Estoy cansado/a",
+        "Mi corazón late con emoción",
+        "Estoy avergonzado/a",
+        "Estoy enojado/a"
+      ]
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "설렘 is the unique Korean word for...",
+      "prompt": "기분이 어때요? means...",
+      "prompt_zh_tw": "기분이 어때요？的意思是……",
       "choices": [
-        "Loneliness",
-        "Embarrassment",
-        "Excitement / anticipatory flutter",
-        "Boredom"
+        "What are you doing?",
+        "How are you feeling?",
+        "Where are you going?",
+        "What did you eat?"
+      ],
+      "choices_zh_tw": [
+        "你在做什麼？",
+        "你心情怎麼樣？",
+        "你要去哪裡？",
+        "你吃了什麼？"
       ],
       "choices_ja": [
-        "孤独感",
-        "恥ずかしさ",
-        "ときめき（期待感）",
-        "退屈"
+        "何をしていますか？",
+        "気分はどうですか？",
+        "どこへ行きますか？",
+        "何を食べましたか？"
       ],
-      "correct": "Excitement / anticipatory flutter",
-      "prompt_ja": "설렘は韓国語の独特な感情で、意味は？"
+      "correct": "How are you feeling?",
+      "prompt_ja": "기분이 어때요？はどういう意味ですか？",
+      "prompt_es": "기분이 어때요? significa...",
+      "choices_es": [
+        "¿Qué estás haciendo?",
+        "¿Cómo te sientes?",
+        "¿Adónde vas?",
+        "¿Qué comiste?"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "You accomplished something and feel proud. The Korean word for this warm proud feeling is...",
+      "prompt": "Which emotion word literally contains '화' meaning fire/anger?",
+      "prompt_zh_tw": "哪個情感詞包含字面意為「火/憤怒」的「화」？",
       "choices": [
-        "그리움",
-        "놀람",
-        "뿌듯함",
-        "걱정"
+        "슬퍼요",
+        "화나요",
+        "기뻐요",
+        "피곤해요"
       ],
-      "correct": "뿌듯함",
-      "prompt_ja": "何かを達成して誇りに思う気持ち。この温かい誇りの感覚を表す韓国語は？"
+      "correct": "화나요",
+      "prompt_ja": "「火・怒り」を意味する화を含む感情語はどれですか？",
+      "prompt_es": "¿Qué palabra de emoción contiene literalmente \"화\" que significa fuego/ira?"
     },
     {
       "id": 20,
@@ -299,9 +415,13 @@
       "type": "lesson_complete",
       "title": "Emotions Complete!",
       "title_kr": "감정 완성!",
-      "message": "감정을 표현하세요! Expressing emotions in Korean unlocks deeper connections. K-dramas taught the world 설렘 and 그리움 — feelings so specific Korean has dedicated words for them.",
-      "next_url": "vocabulary.html?cat=body-parts",
-      "message_ja": "감정을 표현하세요！韓国語で感情を表現することで、より深いつながりが生まれます。K-ドラマは설렘や그리움を世界に広めました―韓国語にしかない繊細な感情です。"
+      "title_zh_tw": "情感詞彙完成！",
+      "message": "감동이에요! (I'm moved!) You now have the language to express your inner world in Korean. Korean music, dramas, and conversations are full of these emotions — you'll spot them everywhere now.",
+      "message_zh_tw": "감동이에요！（我很感動！）你現在有了用韓語表達內心世界的語言工具。韓國音樂、劇集和對話中都充滿這些情感表達——你現在到處都能發現它們了。",
+      "next_url": "vocabulary.html?cat=adjectives",
+      "message_ja": "감동이에요！（感動しました！）韓国語で内面を表現できるようになりました。韓国の音楽・ドラマ・会話はこれらの感情語が満載です。きっとどこでも見つけられるでしょう！",
+      "title_es": "¡Emociones Completadas!",
+      "message_es": "감동이에요! (¡Me emociona!) Ahora tienes el vocabulario para expresar tu mundo interior en coreano. La música, los dramas y las conversaciones coreanas están llenas de estas emociones — las notarás en todas partes."
     }
   ]
 }

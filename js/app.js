@@ -5,6 +5,11 @@
 
 'use strict';
 
+/* Pre-approval switch for JS-inserted ad units (rail, in-feed, in-article).
+   Static .ad-zone blocks in HTML are unaffected. Flip to true after AdSense
+   approval (adsense/GUIDE.md §8 Prompt 6). */
+const KS_ADS_LIVE = false;
+
 /* ── Theme Manager ──────────────────────────────────── */
 const ThemeManager = (() => {
   const STORAGE_KEY = 'ks-theme';
@@ -304,37 +309,69 @@ function initHangulCards() {
     btn.addEventListener('click', function(e) {
       e.stopPropagation();
       const char = this.closest('.hangul-card')?.querySelector('.hangul-char')?.textContent;
-      speakKorean(char);
+      speakKorean(char, this);
     });
   });
 }
 
 let _currentAudio = null;
+let _currentBtn = null;
 
-function _googleTTS(text, speed) {
+function _revertCurrent() {
+  const btn = _currentBtn;
+  _currentBtn = null;
+  if (btn && btn.dataset.speakOrig !== undefined) {
+    btn.innerHTML = btn.dataset.speakOrig;
+    btn.setAttribute('aria-label', '듣기');
+    delete btn.dataset.speakOrig;
+  }
+}
+
+function _setBtnPlaying(btn) {
+  if (!btn) return;
+  _currentBtn = btn;
+  btn.dataset.speakOrig = btn.innerHTML;
+  btn.innerHTML = '⏹';
+  btn.setAttribute('aria-label', '정지');
+}
+
+function stopSpeaking() {
   if (_currentAudio) {
     _currentAudio.pause();
     _currentAudio.src = '';
     _currentAudio = null;
   }
   window.speechSynthesis && window.speechSynthesis.cancel();
+  _revertCurrent();
+}
+
+function _googleTTS(text, speed, btn) {
+  stopSpeaking();
 
   const params = new URLSearchParams({ text });
   if (speed && speed < 1) params.set('speed', speed);
   const audio = new Audio('/api/tts?' + params);
   _currentAudio = audio;
+  _setBtnPlaying(btn);
+
+  audio.addEventListener('ended', () => {
+    if (_currentAudio !== audio) return;
+    _currentAudio = null;
+    _revertCurrent();
+  }, { once: true });
 
   // If the proxy isn't available (localhost, etc.), fall back to Web Speech API.
   audio.addEventListener('error', () => {
     if (_currentAudio !== audio) return;
     _currentAudio = null;
-    _speakFallback(text, speed < 1 ? 0.7 : 0.9);
+    _revertCurrent();
+    _speakFallback(text, speed < 1 ? 0.7 : 0.9, btn);
   }, { once: true });
 
   audio.play().catch(() => {});
 }
 
-function _speakFallback(text, rate) {
+function _speakFallback(text, rate, btn) {
   if (!window.speechSynthesis) return;
   window.speechSynthesis.cancel();
   const attempt = voices => {
@@ -350,6 +387,9 @@ function _speakFallback(text, rate) {
         return rank(b) - rank(a);
       })[0];
     if (best) utt.voice = best;
+    _setBtnPlaying(btn);
+    utt.onend = () => { if (_currentBtn === btn) _revertCurrent(); };
+    utt.onerror = () => { if (_currentBtn === btn) _revertCurrent(); };
     window.speechSynthesis.speak(utt);
   };
   const voices = window.speechSynthesis.getVoices();
@@ -358,14 +398,16 @@ function _speakFallback(text, rate) {
     () => attempt(window.speechSynthesis.getVoices()), { once: true });
 }
 
-function speakKorean(text) {
+function speakKorean(text, btn) {
   if (!text) return;
-  _googleTTS(text, 1);
+  if (btn && btn === _currentBtn) { stopSpeaking(); return; }
+  _googleTTS(text, 1, btn);
 }
 
-function speakSyllable(text) {
+function speakSyllable(text, btn) {
   if (!text) return;
-  _googleTTS(text, 0.7);
+  if (btn && btn === _currentBtn) { stopSpeaking(); return; }
+  _googleTTS(text, 0.7, btn);
 }
 
 /* ── Dopamine: Ding (Web Audio API) ─────────────────── */
@@ -418,18 +460,24 @@ const AudioCache = (() => {
     }
   }
 
-  async function play(text) {
+  async function play(text, btn) {
     if (!text) return;
+    stopSpeaking();
     const buf = _cache[text];
-    if (!buf) { speakKorean(text); return; }
+    if (!buf) { speakKorean(text, btn); return; }
+    _setBtnPlaying(btn);
     try {
       const ctx = new AudioContext();
       const decoded = await ctx.decodeAudioData(buf.slice(0));
       const src = ctx.createBufferSource();
       src.buffer = decoded;
       src.connect(ctx.destination);
+      src.onended = () => { if (_currentBtn === btn) _revertCurrent(); };
       src.start();
-    } catch (_) { speakKorean(text); }
+    } catch (_) {
+      if (_currentBtn === btn) _revertCurrent();
+      speakKorean(text, btn);
+    }
   }
 
   return { prefetch, play };
@@ -464,7 +512,7 @@ function showCharModal(char, romanization) {
       ">×</button>
       <div style="font-family: 'Noto Sans KR', sans-serif; font-size: 6rem; font-weight: 900; line-height: 1; margin-bottom: 16px; color: var(--text);">${char}</div>
       <div style="font-size: 1.4rem; color: var(--primary-light); font-weight: 700; margin-bottom: 8px;">${romanization}</div>
-      <button onclick="speakKorean('${char}')" class="btn btn-primary btn-sm" style="margin-top: 16px;">
+      <button onclick="speakKorean('${char}', this)" class="btn btn-primary btn-sm" style="margin-top: 16px;">
         🔊 Hear Pronunciation
       </button>
     </div>`;
@@ -981,12 +1029,51 @@ function initMobileTables() {
 }
 
 /* ── Search ─────────────────────────────────────────── */
+function searchDocLang() {
+  return (document.documentElement.lang || 'en').toLowerCase();
+}
+
+/* All SEARCH_INDEX urls are root-relative (no leading slash) — resolve
+   against site root so links work from any page depth. */
+function searchResolveUrl(url) {
+  return '/' + url;
+}
+
+/* Lazy word index — every vocab word on the site, all languages.
+   Generated by scripts/gen-search-words.cjs into learn/data/search-words.json */
+let _wordIndexReady = false;
+let _wordIndexPromise = null;
+function loadWordIndex() {
+  if (_wordIndexPromise) return _wordIndexPromise;
+  _wordIndexPromise = fetch('/learn/data/search-words.json')
+    .then(r => r.ok ? r.json() : [])
+    .then(entries => {
+      const lang = searchDocLang();
+      const mKey = lang.replace('-', '_');
+      entries.forEach(e => {
+        const tags = [e.t, e.w, e.r, e.k, e.z, e.v, e.h].filter(Boolean);
+        Object.keys(e.m || {}).forEach(k => tags.push(e.m[k]));
+        window.SEARCH_INDEX.push({
+          title: e.t + (e.w ? ' · ' + e.w : '') + (e.r ? ' (' + e.r + ')' : ''),
+          url: lang !== 'en' ? e.u.replace(/^learn\//, 'learn/' + lang + '/') : e.u,
+          category: 'words',
+          icon: '🔤',
+          tags: tags.map(s => String(s).toLowerCase()),
+          desc: (e.m && (e.m[mKey] || e.m.en)) || ''
+        });
+      });
+      _wordIndexReady = true;
+    })
+    .catch(() => { _wordIndexReady = true; });
+  return _wordIndexPromise;
+}
+
 function initSearch() {
   const searchInput = document.getElementById('search-input');
   if (!searchInput) return;
 
-  const isSubpage = /\/(learn|culture|travel|news)\//.test(window.location.pathname);
-  const searchBase = isSubpage ? '../search.html' : 'search.html';
+  const lang = searchDocLang();
+  const searchBase = lang !== 'en' ? '/' + lang + '/search.html' : '/search.html';
 
   if (!document.getElementById('search-submit-btn')) {
     const btn = document.createElement('button');
@@ -1009,25 +1096,32 @@ function initSearch() {
     }
   });
 
+  searchInput.addEventListener('focus', () => loadWordIndex(), { once: true });
+
   searchInput.addEventListener('input', debounce((e) => {
     const q = e.target.value.toLowerCase().trim();
     if (!q) { hideDropdown(); return; }
-    const results = searchIndex(q).slice(0, 6);
-    showDropdown(results, searchInput, q, searchBase);
+    const rerender = () => showDropdown(searchIndex(q).slice(0, 6), searchInput, q, searchBase);
+    rerender();
+    if (!_wordIndexReady) loadWordIndex().then(() => {
+      if (searchInput.value.toLowerCase().trim() === q) rerender();
+    });
   }, 200));
 
+  searchInput.addEventListener('click', (e) => e.stopPropagation());
   document.addEventListener('click', hideDropdown);
 }
 
 function searchIndex(q) {
   const words = q.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) return [];
   const titleMatches = [], otherMatches = [];
   window.SEARCH_INDEX.forEach(item => {
-    const inTitle = words.some(w => item.title.toLowerCase().includes(w));
-    const inTags  = words.some(w => item.tags.some(t => t.includes(w)));
-    const inDesc  = words.some(w => item.desc.toLowerCase().includes(w));
-    if (inTitle) titleMatches.push(item);
-    else if (inTags || inDesc) otherMatches.push(item);
+    const title = item.title.toLowerCase();
+    const hay = title + ' ' + item.tags.join(' ').toLowerCase() + ' ' + item.desc.toLowerCase();
+    if (!words.every(w => hay.includes(w))) return;
+    if (words.every(w => title.includes(w))) titleMatches.push(item);
+    else otherMatches.push(item);
   });
   return [...titleMatches, ...otherMatches];
 }
@@ -1042,7 +1136,7 @@ function showDropdown(results, input, q, searchBase) {
     input.parentElement.appendChild(dd);
   }
   const rows = results.map(r =>
-    `<a href="${escHtml(r.url)}" style="display:flex;align-items:center;gap:10px;padding:10px 16px;color:var(--text);text-decoration:none;font-size:0.875rem;border-bottom:1px solid var(--border);" onmouseover="this.style.background='var(--glass-md)'" onmouseout="this.style.background=''">
+    `<a href="${escHtml(searchResolveUrl(r.url))}" style="display:flex;align-items:center;gap:10px;padding:10px 16px;color:var(--text);text-decoration:none;font-size:0.875rem;border-bottom:1px solid var(--border);" onmouseover="this.style.background='var(--glass-md)'" onmouseout="this.style.background=''">
       <span style="font-size:1rem;flex-shrink:0">${r.icon}</span>
       <span style="flex:1;min-width:0">
         <span style="display:block;font-weight:600">${escHtml(r.title)}</span>
@@ -1072,97 +1166,306 @@ function escHtml(str) {
   return div.innerHTML;
 }
 
+/* ── KSProgress — unified progress store (ks-progress-v2) ──
+   Single source of truth for step completion, lesson completion,
+   daily study streak, learned counters, and resume position.
+   Replaces ks-progress / ks-lessons-done / ks-*-xp / ks-*-stagemap. */
+const KSProgress = (() => {
+  const KEY = 'ks-progress-v2';
+  let state = null;
+
+  function _dateStr(offsetDays) {
+    const d = new Date();
+    if (offsetDays) d.setDate(d.getDate() + offsetDays);
+    return d.getFullYear() + '-' +
+      String(d.getMonth() + 1).padStart(2, '0') + '-' +
+      String(d.getDate()).padStart(2, '0');
+  }
+
+  function _blank() {
+    return {
+      v: 2,
+      streak: { count: 0, best: 0, last: '' },
+      today: { date: '', steps: 0 },
+      counters: { steps: 0, words: 0, letters: 0, quizzes: 0 },
+      last: null,
+      lessons: {},
+    };
+  }
+
+  function _lesson(s, id) {
+    if (!s.lessons[id]) s.lessons[id] = { done: [] };
+    if (!Array.isArray(s.lessons[id].done)) s.lessons[id].done = [];
+    return s.lessons[id];
+  }
+
+  function _load() {
+    if (state) return state;
+    try {
+      const raw = localStorage.getItem(KEY);
+      const parsed = raw ? JSON.parse(raw) : null;
+      state = parsed && parsed.v === 2 ? parsed : null;
+    } catch (_) { state = null; }
+    if (!state) state = _migrate();
+    return state;
+  }
+
+  function _save() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (_) {}
+    document.dispatchEvent(new CustomEvent('ks-progress-change'));
+  }
+
+  /* One-time import from the old fragmented keys, then delete them. */
+  function _migrate() {
+    const s = _blank();
+    const OLD_ID_MAP = { 'hangul-basics': 'hangul', 'korean-grammar': 'grammar', 'korean-dialogues': 'dialogues' };
+    try {
+      JSON.parse(localStorage.getItem('ks-lessons-done') || '[]')
+        .forEach(id => { _lesson(s, id).completed = true; });
+      const old = JSON.parse(localStorage.getItem('ks-progress') || '{}');
+      Object.keys(old).forEach(k => { _lesson(s, OLD_ID_MAP[k] || k).completed = true; });
+      const toDelete = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (!k) continue;
+        const m = k.match(/^ks-(.+)-stagemap$/);
+        if (m) {
+          try { _lesson(s, m[1]).stages = JSON.parse(localStorage.getItem(k) || '{}'); } catch (_) {}
+        }
+        if (k === 'ks-progress' || k === 'ks-lessons-done' || /^ks-.+-(xp|stagemap)$/.test(k)) toDelete.push(k);
+      }
+      toDelete.forEach(k => localStorage.removeItem(k));
+      localStorage.setItem(KEY, JSON.stringify(s));
+    } catch (_) {}
+    return s;
+  }
+
+  /* Returns true only the first time this step is completed. */
+  function markStepDone(lessonId, stepIndex, stepType) {
+    const s = _load();
+    const l = _lesson(s, lessonId);
+    if (l.done.includes(stepIndex)) return false;
+    l.done.push(stepIndex);
+    l.done.sort((a, b) => a - b);
+    l.ts = Date.now();
+
+    s.counters.steps++;
+    if (stepType === 'listen_repeat') s.counters.words++;
+    else if (stepType === 'card_reveal' || stepType === 'syllable_builder') s.counters.letters++;
+    else if (stepType === 'match_quiz') s.counters.quizzes++;
+
+    const today = _dateStr();
+    if (s.today.date !== today) s.today = { date: today, steps: 0 };
+    s.today.steps++;
+    if (s.streak.last !== today) {
+      s.streak.count = s.streak.last === _dateStr(-1) ? s.streak.count + 1 : 1;
+      s.streak.last = today;
+      if (s.streak.count > s.streak.best) s.streak.best = s.streak.count;
+    }
+    _save();
+    return true;
+  }
+
+  function markLessonComplete(lessonId) {
+    const s = _load();
+    const l = _lesson(s, lessonId);
+    if (l.completed) return;
+    l.completed = true;
+    l.ts = Date.now();
+    _save();
+  }
+
+  function setLastPosition(lessonId, stepIndex) {
+    const s = _load();
+    const url = new URL(location.href);
+    url.searchParams.delete('step');
+    s.last = { lesson: lessonId, step: stepIndex, href: url.pathname + url.search, ts: Date.now() };
+    _save();
+  }
+
+  function getStageMap(lessonId) {
+    return Object.assign({}, _lesson(_load(), lessonId).stages || {});
+  }
+
+  function saveStageMap(lessonId, map) {
+    _lesson(_load(), lessonId).stages = map;
+    _save();
+  }
+
+  function getLesson(lessonId) {
+    const l = _load().lessons[lessonId];
+    return { done: (l && l.done) ? l.done : [], completed: !!(l && l.completed) };
+  }
+
+  function getStreak()     { const s = _load(); return s.streak.last === _dateStr() || s.streak.last === _dateStr(-1) ? s.streak.count : 0; }
+  function getBestStreak() { return _load().streak.best; }
+  function getTodaySteps() { const s = _load(); return s.today.date === _dateStr() ? s.today.steps : 0; }
+  function getCounters()   { return Object.assign({}, _load().counters); }
+  function getLast()       { return _load().last; }
+
+  function resetLessonPosition(lessonId) {
+    const s = _load();
+    if (s.lessons[lessonId]) delete s.lessons[lessonId].stages;
+    _save();
+  }
+
+  function resetAll() {
+    state = _blank();
+    try { localStorage.removeItem(KEY); } catch (_) {}
+    _save();
+  }
+
+  return {
+    markStepDone, markLessonComplete, setLastPosition,
+    getStageMap, saveStageMap, getLesson,
+    getStreak, getBestStreak, getTodaySteps, getCounters, getLast,
+    resetLessonPosition, resetAll,
+  };
+})();
+window.KSProgress = KSProgress;
+
 /* ── Lesson Progress Grid ───────────────────────────── */
 const LessonProgressGrid = (() => {
+  // Display metadata only — step counts come from learn/data/manifest.json.
+  // Ids match lessonData.lesson in learn/data/*.json ('vocab' aggregates all vocab-* topics).
   const LESSONS = [
-    { id: 'hangul-basics',    url: 'hangul.html',          name: 'Hangul Alphabet',  level: 'starter',      k: '가' },
+    { id: 'hangul',           url: 'hangul.html',          name: 'Hangul Alphabet',  level: 'starter',      k: '가' },
     { id: 'syllable-blocks',  url: 'syllable-blocks.html', name: 'Syllable Blocks',  level: 'starter',      k: '한' },
     { id: 'pronunciation',    url: 'pronunciation.html',   name: 'Pronunciation',    level: 'starter',      k: '음' },
-    { id: 'vocabulary',       url: 'vocabulary.html',      name: 'Vocabulary',       level: 'beginner',     k: '어' },
+    { id: 'vocab',            url: 'vocabulary.html',      name: 'Vocabulary',       level: 'beginner',     k: '어' },
     { id: 'pronouns',         url: 'pronouns.html',        name: 'Pronouns',         level: 'beginner',     k: '나' },
     { id: 'nouns',            url: 'nouns.html',           name: 'Common Nouns',     level: 'beginner',     k: '명' },
-    { id: 'korean-grammar',   url: 'grammar.html',         name: 'Grammar',          level: 'intermediate', k: '문' },
+    { id: 'grammar',          url: 'grammar.html',         name: 'Grammar',          level: 'intermediate', k: '문' },
     { id: 'speech-levels',    url: 'speech-levels.html',   name: 'Speech Levels',    level: 'intermediate', k: '경' },
     { id: 'emotions',         url: 'emotions.html',        name: 'Emotions',         level: 'intermediate', k: '감' },
     { id: 'shopping',         url: 'shopping.html',        name: 'Shopping',         level: 'intermediate', k: '쇼' },
-    { id: 'korean-dialogues', url: 'dialogues.html',       name: 'Dialogues',        level: 'intermediate', k: '대' },
+    { id: 'dialogues',        url: 'dialogues.html',       name: 'Dialogues',        level: 'intermediate', k: '대' },
     { id: 'writing-essays',   url: 'writing-essays.html',  name: 'Writing Essays',   level: 'advanced',     k: '작' },
     { id: 'business-korean',  url: 'business-korean.html', name: 'Business Korean',  level: 'advanced',     k: '사' },
     { id: 'classical-korean', url: 'classical-korean.html',name: 'Classical Korean', level: 'advanced',     k: '고' },
   ];
 
-  const STORAGE_KEY = 'ks-progress';
+  let manifest = null; // { lessons: [{id, url, steps, countable, stages, group}] }
 
-  function getProgress() {
-    try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
-    catch { return {}; }
-  }
+  function _t(s) { return window.LangManager ? LangManager.t(s) : s; }
 
   function getCurrentId() {
     const filename = window.location.pathname.split(/[/\\]/).pop();
+    if (filename === 'vocabulary.html') return 'vocab';
     const match = LESSONS.find(l => l.url === filename);
     return match ? match.id : null;
+  }
+
+  /* Real completion % for a grid entry (0-100). */
+  function lessonPct(l) {
+    const p = KSProgress.getLesson(l.id);
+    if (l.id === 'vocab') {
+      if (!manifest) return 0;
+      let done = 0, total = 0;
+      manifest.lessons.forEach(m => {
+        if (m.group !== 'vocab') return;
+        total += m.countable;
+        const lp = KSProgress.getLesson(m.id);
+        done += lp.completed ? m.countable : Math.min(lp.done.length, m.countable);
+      });
+      return total ? Math.round((done / total) * 100) : 0;
+    }
+    if (p.completed) return 100;
+    const m = manifest && manifest.lessons.find(x => x.id === l.id);
+    if (!m || !m.countable) return 0;
+    return Math.round((Math.min(p.done.length, m.countable) / m.countable) * 100);
+  }
+
+  function renderResumeCard() {
+    const last = KSProgress.getLast();
+    if (!last || last.lesson === getCurrentId()) return '';
+    if (last.lesson.startsWith('vocab-') && getCurrentId() === 'vocab') return '';
+    const m = manifest && manifest.lessons.find(x => x.id === last.lesson);
+    const entry = LESSONS.find(l => l.id === last.lesson) ||
+      (last.lesson.startsWith('vocab-') && LESSONS.find(l => l.id === 'vocab'));
+    if (!entry) return '';
+    const href = last.href + (last.href.includes('?') ? '&' : '?') + 'step=' + (last.step + 1);
+    const stepInfo = m
+      ? _t('Step {n} of {m}').replace('{n}', last.step + 1).replace('{m}', m.steps)
+      : '';
+    return `
+      <a class="lpg-resume" href="${href}">
+        <span class="lpg-resume-play">▶</span>
+        <span class="lpg-resume-text">
+          <span class="lpg-resume-label">${_t('Continue')}</span>
+          <span class="lpg-resume-lesson">${_t(entry.name)}${stepInfo ? ' · ' + stepInfo : ''}</span>
+        </span>
+      </a>`;
   }
 
   function render() {
     const container = document.getElementById('lesson-progress-grid');
     if (!container) return;
 
-    const progress = getProgress();
     const currentId = getCurrentId();
-    const completed = LESSONS.filter(l => progress[l.id]).length;
-    const pct = Math.round((completed / LESSONS.length) * 100);
+    let completed = 0, pctSum = 0;
 
     const blocks = LESSONS.map((l, i) => {
-      const done = !!progress[l.id];
+      const pct = lessonPct(l);
+      pctSum += pct;
+      const done = pct >= 100;
+      if (done) completed++;
       const active = l.id === currentId;
-      const cls = `lpg-block${done ? ' lpg-done' : ''}${active ? ' lpg-active' : ''}`;
+      const cls = `lpg-block${done ? ' lpg-done' : ''}${active ? ' lpg-active' : ''}${pct > 0 && !done ? ' lpg-started' : ''}`;
       const check = done ? '<span class="lpg-check">✓</span>' : '';
-      return `<a href="${l.url}" class="${cls}" data-level="${l.level}" title="${l.name}" aria-label="${l.name}">${i + 1}${check}</a>`;
+      const name = _t(l.name);
+      const title = pct > 0 && !done ? `${name} · ${pct}%` : name;
+      return `<a href="${l.url}" class="${cls}" style="--p:${pct}%" data-level="${l.level}" title="${title}" aria-label="${title}">${i + 1}${check}</a>`;
     }).join('');
 
+    const totalPct = Math.round(pctSum / LESSONS.length);
+    const streak = KSProgress.getStreak();
+    const streakHtml = streak > 0
+      ? `<span class="lpg-streak" title="${_t('{n}-day streak').replace('{n}', streak)}">🔥 ${streak}</span>`
+      : '';
+
     container.innerHTML = `
+      ${renderResumeCard()}
       <div class="lpg-header">
         <div style="display:flex;align-items:center;gap:5px">
-          <span class="lpg-title">Progress</span>
-          <button class="lpg-reset-btn" onclick="ProgressTracker.reset()" aria-label="Reset progress" title="Reset all progress">↺</button>
+          <span class="lpg-title">${_t('Progress')}</span>
+          <button class="lpg-reset-btn" onclick="ProgressTracker.reset()" aria-label="${_t('Reset all progress')}" title="${_t('Reset all progress')}">↺</button>
         </div>
-        <span class="lpg-count">${completed} / ${LESSONS.length}</span>
+        <span class="lpg-count">${streakHtml}${completed} / ${LESSONS.length}</span>
       </div>
-      <div class="lpg-bar"><div class="lpg-bar-fill" style="width:${pct}%"></div></div>
+      <div class="lpg-bar"><div class="lpg-bar-fill" style="width:${totalPct}%"></div></div>
       <div class="lpg-grid">${blocks}</div>`;
   }
 
-  function init() { render(); }
+  function init() {
+    render();
+    fetch('/learn/data/manifest.json')
+      .then(r => r.json())
+      .then(data => { manifest = data; render(); })
+      .catch(() => {});
+    document.addEventListener('ks-progress-change', render);
+  }
+
   function refresh() { render(); }
 
   return { init, refresh };
 })();
 
-/* ── Progress Tracker ───────────────────────────────── */
+/* ── Progress Tracker (static pages' Mark Complete buttons) ── */
 const ProgressTracker = (() => {
-  const STORAGE_KEY = 'ks-progress';
-
-  function getProgress() {
-    try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-    } catch { return {}; }
-  }
-
   function markComplete(lessonId) {
-    const prog = getProgress();
-    prog[lessonId] = { completed: true, timestamp: Date.now() };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(prog));
-    LessonProgressGrid.refresh();
+    KSProgress.markLessonComplete(lessonId);
   }
 
   function init() {
-    LessonProgressGrid.refresh();
-
     document.querySelectorAll('[data-lesson-complete]').forEach(btn => {
+      if (KSProgress.getLesson(btn.dataset.lessonComplete).completed) {
+        btn.textContent = '✓ Completed!';
+        btn.disabled = true;
+        btn.style.opacity = '0.7';
+      }
       btn.addEventListener('click', () => {
-        const lessonId = btn.dataset.lessonComplete;
-        markComplete(lessonId);
+        markComplete(btn.dataset.lessonComplete);
         btn.textContent = '✓ Completed!';
         btn.disabled = true;
         btn.style.opacity = '0.7';
@@ -1171,8 +1474,7 @@ const ProgressTracker = (() => {
   }
 
   function reset() {
-    localStorage.removeItem(STORAGE_KEY);
-    LessonProgressGrid.refresh();
+    KSProgress.resetAll();
   }
 
   return { init, markComplete, reset };
@@ -1544,7 +1846,8 @@ function initSidebarScrollSpy() {
 
   const sections = anchorLinks
     .map(a => document.getElementById(a.getAttribute('href').slice(1)))
-    .filter(Boolean);
+    .filter(Boolean)
+    .sort((a, b) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING) ? -1 : 1);
   if (!sections.length) return;
 
   function getHeaderH() {
@@ -1668,22 +1971,154 @@ function initLessonHeaderAccordion() {
   });
 }
 
+/* ── Content Rail (desktop ≥1280px utility rail) ────── */
+const ContentRail = (() => {
+  const STRINGS = {
+    en:    { wod: 'Word of the Day',  explore: 'Keep Exploring' },
+    ja:    { wod: '今日の単語',        explore: '関連ページ' },
+    zh_tw: { wod: '每日一詞',          explore: '繼續探索' },
+    es:    { wod: 'Palabra del día',  explore: 'Sigue explorando' },
+    de:    { wod: 'Wort des Tages',   explore: 'Weiter entdecken' },
+    fr:    { wod: 'Mot du jour',      explore: 'À découvrir' },
+    vi:    { wod: 'Từ vựng hôm nay',  explore: 'Khám phá thêm' },
+    th:    { wod: 'คำศัพท์ประจำวัน',    explore: 'สำรวจต่อ' },
+    id:    { wod: 'Kata hari ini',    explore: 'Jelajahi lainnya' },
+  };
+  const AD_CLIENT = 'ca-pub-6791974364232767';
+  const AD_SLOT = '9403290839'; // ks-rail unit (scripts/ad-slots.json)
+  let adPushed = false;
+
+  const lang = () => (document.documentElement.lang || 'en').toLowerCase().replace('-', '_');
+  const t = key => (STRINGS[lang()] || STRINGS.en)[key] || STRINGS.en[key];
+
+  function relatedWidgetHTML() {
+    const current = window.location.pathname.replace(/\/$/, '');
+    const seen = new Set();
+    const links = [];
+    document.querySelectorAll('.sidebar-nav .sidebar-link').forEach(a => {
+      const href = a.getAttribute('href');
+      if (!href || href.startsWith('#')) return;
+      let resolved;
+      try { resolved = new URL(href, window.location.href); } catch { return; }
+      if (resolved.origin !== window.location.origin) return;
+      const path = resolved.pathname.replace(/\/$/, '');
+      if (path === current || seen.has(path)) return;
+      seen.add(path);
+      const clone = a.cloneNode(true);
+      clone.querySelectorAll('.link-badge').forEach(b => b.remove());
+      links.push(`<a class="rail-link" href="${href}">${clone.innerHTML}</a>`);
+    });
+    if (!links.length) return '';
+    return `<div class="rail-widget"><div class="rail-widget-title">${t('explore')}</div>
+      <div class="rail-links">${links.slice(0, 5).join('')}</div></div>`;
+  }
+
+  const WOD_FILES = [
+    'academic', 'adjectives', 'body-parts', 'colors', 'days-time', 'emotions',
+    'family', 'food-drink', 'greetings', 'health', 'konglish', 'media', 'news',
+    'numbers', 'places', 'shopping', 'travel', 'verbs', 'weather', 'workplace',
+  ];
+
+  function initWordOfDay(rail) {
+    const holder = rail.querySelector('#rail-wod');
+    if (!holder) return;
+    const day = Math.floor(Date.now() / 86400000);
+    fetch('/learn/data/vocabulary-' + WOD_FILES[day % WOD_FILES.length] + '.json')
+      .then(r => (r.ok ? r.json() : Promise.reject()))
+      .then(data => {
+        const words = (data.steps || []).filter(s =>
+          s.type === 'listen_repeat' && s.meaning && (s.syllables || s.word));
+        if (!words.length) return;
+        const w = words[day % words.length];
+        const korean = Array.isArray(w.syllables) ? w.syllables.join('') : (w.word || '');
+        const meaning = w['meaning_' + lang()] || w.meaning;
+        const reading = (lang() === 'ja' && w.katakana) ? w.katakana
+          : (lang() === 'zh_tw' && w.zhuyin) ? w.zhuyin
+          : (w.romanization || '');
+        holder.innerHTML = `
+          <div class="rail-widget-title">${t('wod')}</div>
+          <div class="rail-wod-row">
+            <div>
+              <div class="rail-wod-korean">${korean}</div>
+              <div class="rail-wod-roman">${reading}</div>
+              <div class="rail-wod-meaning">${meaning}</div>
+            </div>
+            <button class="rail-speak-btn" aria-label="Listen">🔊</button>
+          </div>`;
+        holder.hidden = false;
+        holder.querySelector('.rail-speak-btn').addEventListener('click', e => {
+          if (typeof speakKorean === 'function') speakKorean(w.audio || korean, e.currentTarget);
+        });
+      })
+      .catch(() => holder.remove());
+  }
+
+  function init() {
+    const wrap = document.querySelector('.main-content .lesson-wrap');
+    if (!wrap || document.querySelector('.content-rail')) return;
+
+    const shell = document.createElement('div');
+    shell.className = 'content-shell';
+    wrap.parentNode.insertBefore(shell, wrap);
+    shell.appendChild(wrap);
+
+    const railAdHTML = KS_ADS_LIVE ? `
+      <div class="ad-zone ad-zone--rail">
+        <ins class="adsbygoogle" style="display:block"
+             data-ad-client="${AD_CLIENT}" data-ad-slot="${AD_SLOT}"
+             data-ad-format="auto" data-full-width-responsive="false"></ins>
+      </div>` : '';
+    const rail = document.createElement('aside');
+    rail.className = 'content-rail';
+    rail.innerHTML = `
+      ${railAdHTML}
+      <div class="rail-widget" id="rail-wod" hidden></div>
+      ${relatedWidgetHTML()}
+      ${railAdHTML}`;
+    shell.appendChild(rail);
+
+    const mq = window.matchMedia('(min-width: 1280px)');
+    const pushAd = () => {
+      if (!KS_ADS_LIVE || adPushed || !mq.matches) return;
+      adPushed = true;
+      rail.querySelectorAll('.adsbygoogle').forEach(ins => {
+        if (ins.dataset.adPushed === '1' || ins.getAttribute('data-ad-status') !== null) return;
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+          ins.dataset.adPushed = '1';
+        } catch (e) {}
+      });
+    };
+    pushAd();
+    mq.addEventListener?.('change', pushAd);
+
+    initWordOfDay(rail);
+  }
+
+  return { init };
+})();
+
 /* ── Init All ───────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   FlashcardManager.cacheAllVocab(); // must run before LangManager.init() translates DOM text
   ThemeManager.init();
   window.LangManager?.init();
 
+  // When a non-English locale is active on an English learn page, rewrite sidebar / nav links
+  // so they point to the translated equivalents (e.g. zh-tw/hangul.html).
+  (function rewriteLearnLinksForLocale() {
+    const lang = window.LangManager?.getLang();
+    if (!lang || lang === 'en') return;
+    const m = window.location.pathname.match(/^(.*\/learn\/)(?!zh-tw\/|ja\/)([^/]+\.html)$/);
+    if (!m) return;
+    document.querySelectorAll('.sidebar-link, .lesson-nav-btn').forEach(a => {
+      const href = a.getAttribute('href');
+      if (!href || /^(https?:|\/|\.\.)/.test(href) || !href.includes('.html')) return;
+      a.setAttribute('href', lang + '/' + href);
+    });
+  })();
+
   document.getElementById('theme-toggle')?.addEventListener('click', ThemeManager.toggle);
-  document.getElementById('lang-toggle')?.addEventListener('click', () => {
-    const btn = document.getElementById('lang-toggle');
-    const jaUrl = btn?.dataset?.jaUrl;
-    if (jaUrl) { window.location.href = jaUrl; return; }
-    if (window.LangManager) {
-      const cur = window.LangManager.getLang();
-      window.LangManager.setLang(cur === 'ja' ? 'en' : 'ja');
-    }
-  });
 
   FloatingChars.init('floating-chars');
   ScrollAnimator.init();
@@ -1703,6 +2138,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyButtons();
   initNewsTicker();
   initVocabBookmarks();
+  initVocabBrowser();
   initFlashcardPage();
   initSidebarAccordions();
   initLessonNavRow();
@@ -1710,6 +2146,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initKrTransSpeakButtons();
   highlightActiveNav();
   initSidebarScrollSpy();
+  ContentRail.init();
   if (document.body.dataset.page === 'search') SearchPage.init();
 
   const typewriterEl = document.getElementById('hero-typewriter');
@@ -1846,6 +2283,151 @@ function initVocabBookmarks() {
   });
 }
 
+/* ── Vocabulary Browser Page ─────────────────────────── */
+function initVocabBrowser() {
+  const listEl = document.getElementById('vb-list');
+  if (!listEl) return;
+
+  const CATS = [
+    { cat: 'greetings',  icon: '👋', label: 'Greetings'    },
+    { cat: 'numbers',    icon: '🔢', label: 'Numbers'      },
+    { cat: 'family',     icon: '👨‍👩‍👧', label: 'Family'       },
+    { cat: 'food-drink', icon: '🍜', label: 'Food & Drink' },
+    { cat: 'colors',     icon: '🎨', label: 'Colors'       },
+    { cat: 'days-time',  icon: '📅', label: 'Days & Time'  },
+    { cat: 'places',     icon: '🏙️', label: 'Places'       },
+    { cat: 'emotions',   icon: '😊', label: 'Emotions'     },
+    { cat: 'body-parts', icon: '🫁', label: 'Body Parts'   },
+    { cat: 'travel',     icon: '✈️', label: 'Travel'       },
+    { cat: 'shopping',   icon: '🛒', label: 'Shopping'     },
+    { cat: 'weather',    icon: '🌤️', label: 'Weather'      },
+    { cat: 'verbs',      icon: '⚡', label: 'Verbs'        },
+    { cat: 'adjectives', icon: '✨', label: 'Adjectives'   },
+    { cat: 'workplace',  icon: '💼', label: 'Workplace'    },
+    { cat: 'health',     icon: '🏥', label: 'Health'       },
+    { cat: 'media',      icon: '🎬', label: 'Media'        },
+    { cat: 'proverbs',   icon: '📜', label: 'Proverbs'     },
+    { cat: 'academic',   icon: '🎓', label: 'Academic'     },
+    { cat: 'news',       icon: '📰', label: 'News'         },
+    { cat: 'konglish',   icon: '🌐', label: 'Konglish'     },
+  ];
+
+  const searchEl  = document.getElementById('vb-search');
+  const countEl   = document.getElementById('vb-fc-count');
+  const addAllBtn = document.getElementById('vb-add-all');
+  let currentWords = [];
+
+  function escStr(s) {
+    return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function updateCount() {
+    if (!countEl) return;
+    const n = FlashcardManager.getMyCards().length;
+    const suffix = LangManager.t('saved to flashcards');
+    countEl.textContent = n + ' ' + suffix;
+  }
+
+  function renderRows() {
+    const query = (searchEl?.value || '').trim().toLowerCase();
+    const filtered = query
+      ? currentWords.filter(w =>
+          w.korean.includes(query) ||
+          w.english.toLowerCase().includes(query) ||
+          w.romanization.toLowerCase().includes(query))
+      : currentWords;
+
+    if (!filtered.length) {
+      listEl.innerHTML = '<div class="vb-empty-msg">' + LangManager.t('No words match your search.') + '</div>';
+      return;
+    }
+
+    listEl.innerHTML = filtered.map(w => {
+      const saved = FlashcardManager.hasCard(w.id);
+      return `<div class="vb-row" data-id="${escStr(w.id)}">
+        <span class="vb-kor">${escStr(w.korean)}</span>
+        <span class="vb-rom">${escStr(w.romanization)}</span>
+        <span class="vb-eng">${escStr(w.english)}</span>
+        <button class="bookmark-btn${saved ? ' saved' : ''}"
+          aria-label="${saved ? 'Remove from flashcards' : 'Add to flashcards'}">${saved ? '★' : '☆'}</button>
+      </div>`;
+    }).join('');
+
+    listEl.querySelectorAll('.vb-row').forEach((row, i) => {
+      const word = filtered[i];
+      const btn = row.querySelector('.bookmark-btn');
+      btn.addEventListener('click', () => {
+        if (FlashcardManager.hasCard(word.id)) {
+          FlashcardManager.removeCard(word.id);
+          btn.textContent = '☆';
+          btn.classList.remove('saved');
+          btn.setAttribute('aria-label', 'Add to flashcards');
+        } else {
+          FlashcardManager.addCard(word);
+          btn.textContent = '★';
+          btn.classList.add('saved');
+          btn.setAttribute('aria-label', 'Remove from flashcards');
+        }
+        updateCount();
+      });
+    });
+  }
+
+  async function loadCat(cat) {
+    history.replaceState({}, '', '?cat=' + cat);
+    document.querySelectorAll('.vb-tab').forEach(t =>
+      t.classList.toggle('active', t.dataset.cat === cat));
+
+    listEl.innerHTML = '<div class="vb-loading">' + LangManager.t('Loading vocabulary…') + '</div>';
+
+    try {
+      const res = await fetch('/learn/data/vocabulary-' + cat + '.json');
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      currentWords = data.steps
+        .filter(s => s.type === 'listen_repeat')
+        .map(s => ({
+          id: s.audio,
+          korean: s.syllables.join(''),
+          romanization: s.romanization,
+          kana: s.katakana || '',
+          zhuyin: s.zhuyin || '',
+          english: s.meaning,
+          theme: cat,
+        }));
+    } catch {
+      listEl.innerHTML = '<div class="vb-empty-msg">' + LangManager.t('Failed to load vocabulary.') + '</div>';
+      return;
+    }
+
+    if (searchEl) searchEl.value = '';
+    renderRows();
+    updateCount();
+
+    if (addAllBtn) {
+      addAllBtn.onclick = () => {
+        currentWords.forEach(w => FlashcardManager.addCard(w));
+        renderRows();
+        updateCount();
+      };
+    }
+  }
+
+  const tabNav = document.getElementById('vb-tabs');
+  if (tabNav) {
+    tabNav.innerHTML = CATS.map(c =>
+      `<button class="vb-tab" data-cat="${c.cat}" role="tab" aria-label="${c.label}"><span aria-hidden="true">${c.icon}</span> ${c.label}</button>`
+    ).join('');
+    tabNav.querySelectorAll('.vb-tab').forEach(btn =>
+      btn.addEventListener('click', () => loadCat(btn.dataset.cat)));
+  }
+
+  if (searchEl) searchEl.addEventListener('input', renderRows);
+
+  const initCat = new URLSearchParams(location.search).get('cat') || 'greetings';
+  loadCat(initCat);
+}
+
 /* ── Flashcard Page ──────────────────────────────────── */
 function initFlashcardPage() {
   const cardEl = document.getElementById('fc-card');
@@ -1885,8 +2467,12 @@ function initFlashcardPage() {
     backEngEl.textContent = t(full.english || card.english || '') || '—';
     const rawRom = full.romanization || card.romanization || '';
     const rawKana = full.kana || card.kana || '';
-    if (window.LangManager?.getLang() === 'ja' && rawKana) {
+    const _fcLang = window.LangManager?.getLang() || 'en';
+    const rawZhuyin = full.zhuyin || card.zhuyin || '';
+    if (_fcLang === 'ja' && rawKana) {
       backRomEl.textContent = rawKana;
+    } else if (_fcLang === 'zh-tw' && rawZhuyin) {
+      backRomEl.textContent = rawZhuyin;
     } else {
       backRomEl.textContent = rawRom.replace(/[぀-ヿ･-ﾟ]/g, '').trim();
     }
@@ -1944,8 +2530,8 @@ function initFlashcardPage() {
     deck = [...deck].sort(() => Math.random() - 0.5);
     index = 0; renderCard();
   });
-  document.getElementById('fc-speak')?.addEventListener('click', () => {
-    if (deck[index]) speakKorean(deck[index].korean);
+  document.getElementById('fc-speak')?.addEventListener('click', function() {
+    if (deck[index]) speakKorean(deck[index].korean, this);
   });
   bookmarkBtn?.addEventListener('click', () => {
     const card = deck[index]; if (!card) return;
@@ -1990,17 +2576,15 @@ function initFlashcardPage() {
   updateSidebarCounts();
   loadDeck(FlashcardManager.getMyCards(), 'My Words');
 
-  if (window.LangManager?.getLang() === 'ja') {
+  const _fcPageLang = window.LangManager?.getLang() || 'en';
+  if (_fcPageLang === 'ja') {
     const lessonTag = document.querySelector('.lesson-tag');
     if (lessonTag) lessonTag.textContent = '📇 スタディツール';
-
     const titleEl = document.querySelector('.lesson-title');
     if (titleEl) titleEl.innerHTML = 'フラッシュ<span class="grad-text">カード</span> — 단어 카드';
-
     const metaSpans = document.querySelectorAll('.lesson-meta span');
     ['📇 1枚ずつ', '🔊 音声発音', '⭐ 単語を保存', '🎲 ランダムセット']
       .forEach((txt, i) => { if (metaSpans[i]) metaSpans[i].textContent = txt; });
-
     const prev = document.getElementById('fc-prev');
     if (prev) prev.textContent = '← 前へ';
     const flipBtn = document.getElementById('fc-flip-btn');
@@ -2013,24 +2597,54 @@ function initFlashcardPage() {
     if (shuffleBtn) shuffleBtn.textContent = '🔀 シャッフル';
     const restartBtn = document.getElementById('fc-restart');
     if (restartBtn) restartBtn.textContent = '↩ リスタート';
-
     const kbHint = document.querySelector('.fc-kb-hint');
     if (kbHint) kbHint.innerHTML = '<kbd>←</kbd> <kbd>→</kbd> 移動 &nbsp; <kbd>Space</kbd> 裏返す';
-
     const tipLabel = document.querySelector('.tip-label');
     if (tipLabel) tipLabel.textContent = 'デッキの作り方';
     const tipText = document.querySelector('.tip-text');
     if (tipText) tipText.innerHTML = '<a href="vocabulary.html" style="color:var(--accent)">語彙ページ</a>にアクセスし、単語の<strong>☆</strong>をクリックして<em>マイ単語</em>に保存してください。サイドバーのセットですぐに練習できます。テーマセットとランダムセットは語彙キャッシュから自動的に読み込まれます。';
-
     const emptyTitle = document.querySelector('.fc-empty-title');
     if (emptyTitle) emptyTitle.textContent = 'このセットにカードはありません';
     const emptyDesc = document.querySelector('.fc-empty-desc');
     if (emptyDesc) emptyDesc.innerHTML = '<a href="vocabulary.html" style="color:var(--primary)">語彙ページ</a>にアクセスし、単語の<strong>☆</strong>をクリックしてここに追加してください。<br>またはサイドバーから組み込みセットを選択してください。';
     const browseBtn = document.querySelector('#fc-empty .btn-primary');
     if (browseBtn) browseBtn.textContent = '語彙を見る →';
-
     const bcSpans = document.querySelectorAll('.lesson-breadcrumb span:not(.sep)');
     if (bcSpans.length) bcSpans[bcSpans.length - 1].textContent = 'フラッシュカード';
+  } else if (_fcPageLang === 'zh-tw') {
+    const lessonTag = document.querySelector('.lesson-tag');
+    if (lessonTag) lessonTag.textContent = '📇 學習工具';
+    const titleEl = document.querySelector('.lesson-title');
+    if (titleEl) titleEl.innerHTML = '字<span class="grad-text">卡</span> — 단어 카드';
+    const metaSpans = document.querySelectorAll('.lesson-meta span');
+    ['📇 每次一張', '🔊 語音發音', '⭐ 儲存單字', '🎲 隨機組合']
+      .forEach((txt, i) => { if (metaSpans[i]) metaSpans[i].textContent = txt; });
+    const prev = document.getElementById('fc-prev');
+    if (prev) prev.textContent = '← 上一張';
+    const flipBtn = document.getElementById('fc-flip-btn');
+    if (flipBtn) flipBtn.textContent = '翻轉字卡';
+    const next = document.getElementById('fc-next');
+    if (next) next.textContent = '下一張 →';
+    const speak = document.getElementById('fc-speak');
+    if (speak) speak.textContent = '🔊 發音';
+    const shuffleBtn = document.getElementById('fc-shuffle');
+    if (shuffleBtn) shuffleBtn.textContent = '🔀 隨機排列';
+    const restartBtn = document.getElementById('fc-restart');
+    if (restartBtn) restartBtn.textContent = '↩ 重新開始';
+    const kbHint = document.querySelector('.fc-kb-hint');
+    if (kbHint) kbHint.innerHTML = '<kbd>←</kbd> <kbd>→</kbd> 移動 &nbsp; <kbd>Space</kbd> 翻轉';
+    const tipLabel = document.querySelector('.tip-label');
+    if (tipLabel) tipLabel.textContent = '如何建立字組';
+    const tipText = document.querySelector('.tip-text');
+    if (tipText) tipText.innerHTML = '前往<a href="vocabulary.html" style="color:var(--accent)">詞彙頁面</a>，點擊單字的<strong>☆</strong>儲存到<em>我的單字</em>。從側欄的組合立即練習。主題組合與隨機組合會自動從詞彙快取載入。';
+    const emptyTitle = document.querySelector('.fc-empty-title');
+    if (emptyTitle) emptyTitle.textContent = '此組合中沒有字卡';
+    const emptyDesc = document.querySelector('.fc-empty-desc');
+    if (emptyDesc) emptyDesc.innerHTML = '前往<a href="vocabulary.html" style="color:var(--primary)">詞彙頁面</a>，點擊單字的<strong>☆</strong>加入此處。<br>或從側欄選擇內建組合。';
+    const browseBtn = document.querySelector('#fc-empty .btn-primary');
+    if (browseBtn) browseBtn.textContent = '瀏覽詞彙 →';
+    const bcSpans = document.querySelectorAll('.lesson-breadcrumb span:not(.sep)');
+    if (bcSpans.length) bcSpans[bcSpans.length - 1].textContent = '字卡';
   }
 }
 
@@ -2045,7 +2659,7 @@ function initKrTransSpeakButtons() {
     btn.className = 'kr-speak-btn';
     btn.setAttribute('aria-label', '듣기');
     btn.textContent = '🔊';
-    btn.addEventListener('click', () => speakKorean(text));
+    btn.addEventListener('click', () => speakKorean(text, btn));
     el.innerHTML = '';
     el.appendChild(wrapper);
     el.appendChild(btn);
@@ -2076,16 +2690,23 @@ function initSidebarAccordions() {
 /* ── Search Results Page ────────────────────────────── */
 const SearchPage = (() => {
   const CAT_META = {
+    words:   { label: 'Words',   icon: '🔤', badgeClass: 'tag-beginner' },
     learn:   { label: 'Learn',   icon: '📚', badgeClass: 'tag-beginner' },
     culture: { label: 'Culture', icon: '🎵', badgeClass: 'tag-kpop'    },
     travel:  { label: 'Travel',  icon: '🗺️', badgeClass: 'tag-travel'  },
     news:    { label: 'News',    icon: '📰', badgeClass: 'tag-news'    },
     home:    { label: 'Home',    icon: '🏠', badgeClass: 'tag-news'    },
   };
-  const ORDER = ['learn', 'culture', 'travel', 'news', 'home'];
+  const ORDER = ['learn', 'words', 'culture', 'travel', 'news', 'home'];
+
+  function T(s) {
+    return (window.LangManager && LangManager.t) ? LangManager.t(s) : s;
+  }
 
   function getQuery() {
-    return decodeURIComponent((new URLSearchParams(window.location.search).get('q') || '').trim());
+    // URLSearchParams already decodes — a second decodeURIComponent
+    // throws URIError on queries containing a literal "%"
+    return (new URLSearchParams(window.location.search).get('q') || '').trim();
   }
 
   function render(q) {
@@ -2094,7 +2715,7 @@ const SearchPage = (() => {
     if (!container) return;
 
     if (!q) {
-      meta.textContent = 'Enter a search term above.';
+      meta.textContent = T('Enter a search term above.');
       container.innerHTML = '';
       return;
     }
@@ -2104,7 +2725,7 @@ const SearchPage = (() => {
     results.forEach(r => { (grouped[r.category] = grouped[r.category] || []).push(r); });
 
     meta.textContent = results.length
-      ? `${results.length} result${results.length !== 1 ? 's' : ''} for "${q}"`
+      ? `${results.length} ${T(results.length !== 1 ? 'results for' : 'result for')} "${q}"`
       : '';
 
     if (!results.length) {
@@ -2115,7 +2736,7 @@ const SearchPage = (() => {
     container.innerHTML = ORDER.filter(cat => grouped[cat]).map(cat => {
       const { label, icon, badgeClass } = CAT_META[cat];
       const items = grouped[cat].map(r =>
-        `<a href="${escHtml(r.url)}" class="search-result-item">
+        `<a href="${escHtml(searchResolveUrl(r.url))}" class="search-result-item">
           <span class="search-result-icon">${r.icon}</span>
           <span class="search-result-body">
             <span class="search-result-title">${escHtml(r.title)}</span>
@@ -2145,6 +2766,8 @@ const SearchPage = (() => {
     if (pageInput) pageInput.addEventListener('keydown', e => { if (e.key === 'Enter') submit(); });
 
     render(q);
+    // word index loads async — re-render so vocab results appear
+    loadWordIndex().then(() => render(getQuery() || (pageInput ? pageInput.value.trim() : '')));
   }
 
   return { init };
@@ -2153,6 +2776,7 @@ const SearchPage = (() => {
 /* ── Expose globals ─────────────────────────────────── */
 window.speakKorean = speakKorean;
 window.speakSyllable = speakSyllable;
+window.stopSpeaking = stopSpeaking;
 window.HangulQuiz = HangulQuiz;
 window.ThemeManager = ThemeManager;
 window.ProgressTracker = ProgressTracker;
@@ -2775,6 +3399,17 @@ function newsParagraphs(text) {
   return text.split(/\n\n+/).map(p => `<p>${newsEscape(p.trim())}</p>`).join('');
 }
 
+function newsInfeedAdHTML() {
+  return `
+    <div class="ad-zone ad-zone--infeed">
+      <ins class="adsbygoogle" style="display:block"
+           data-ad-client="ca-pub-6791974364232767"
+           data-ad-slot="7783087408"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>`;
+}
+
 function newsTopicColor(slug) {
   const map = { kpop:'tag-kpop', tech:'tag-tech', food:'tag-food', sports:'tag-sports', culture:'tag-culture', society:'tag-society', education:'tag-education', fashion:'tag-fashion', travel:'tag-travel', economy:'tag-economy', politics:'tag-politics' };
   return map[slug] || 'tag-news';
@@ -3014,16 +3649,24 @@ const NewsPage = (() => {
     const el = document.getElementById('news-articles-grid');
     if (el) {
       if (reset) el.innerHTML = '';
-      el.innerHTML += data.map(newsRenderCard).join('');
+      const parts = [];
+      data.forEach((a, i) => {
+        parts.push(newsRenderCard(a));
+        if (KS_ADS_LIVE && (i + 1) % 4 === 0) parts.push(newsInfeedAdHTML()); // in-feed ad every 4 cards
+      });
+      el.innerHTML += parts.join('');
       if (!data.length && reset) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px 0;color:var(--text-muted);">No articles found for this filter.</div>';
+      window.KSAds?.push();
     }
     const btn = document.getElementById('news-load-more');
     const txt = document.getElementById('news-load-more-text');
     if (btn) {
-      const isJa = (window.LangManager?.getLang() || 'en') === 'ja';
+      const _nLang = window.LangManager?.getLang() || 'en';
       const hasMore = currentOffset < totalCount;
       btn.disabled = !hasMore;
-      if (txt) txt.textContent = hasMore ? (isJa ? 'もっと見る' : '더 보기 — Load More') : (isJa ? '全記事を読み込みました' : 'All articles loaded');
+      if (txt) txt.textContent = hasMore
+        ? (_nLang === 'ja' ? 'もっと見る' : _nLang === 'zh-tw' ? '載入更多' : '더 보기 — Load More')
+        : (_nLang === 'ja' ? '全記事を読み込みました' : _nLang === 'zh-tw' ? '所有文章已載入' : 'All articles loaded');
     }
   }
 
@@ -3034,8 +3677,8 @@ const NewsPage = (() => {
     if (!articles.length) { el.innerHTML = '<div style="color:var(--text-muted);padding:20px;">No articles this week yet.</div>'; return; }
     const lang = window.LangManager?.getLang() || 'en';
     el.innerHTML = articles.map((a, i) => {
-      const weeklyTitle = lang === 'ja' ? (a.title_ja || a.title_en) : a.title_en;
-      const rankLabel = lang === 'ja' ? `#${i + 1} 今週のランキング` : `#${i + 1} THIS WEEK`;
+      const weeklyTitle = lang === 'ja' ? (a.title_ja || a.title_en) : lang === 'zh-tw' ? (a.title_zh_tw || a.title_en) : a.title_en;
+      const rankLabel = lang === 'ja' ? `#${i + 1} 今週のランキング` : lang === 'zh-tw' ? `#${i + 1} 本週排行` : `#${i + 1} THIS WEEK`;
       return `
       <a class="news-weekly-item" href="${newsArticleURL(a.slug)}">
         <div class="news-weekly-thumb" style="position:relative;">
@@ -3170,6 +3813,49 @@ const BoardPage = (() => {
 
 /* ── ArticlePage module (news/article.html) ─────────── */
 const ArticlePage = (() => {
+  // localized field key: 'zh-tw' → 'zh_tw'
+  const langKey = () => (window.LangManager?.getLang() || 'en').replace('-', '_');
+  const locField = (obj, base) => {
+    const lk = langKey();
+    return (lk !== 'en' && obj[`${base}_${lk}`]) || obj[`${base}_en`] || obj[base] || '';
+  };
+
+  const L10N = {
+    en:    { summary: 'Summary · 요약', quiz: 'Check Your Understanding · 확인 퀴즈', quizSub: 'From this article’s vocabulary', whatMeans: 'What does {w} mean?', ok: '✓ Correct! 정답!', no: '✗ Not quite — the highlighted answer is correct.', learn: 'Keep learning', vocab: 'Vocabulary Lists', grammar: 'Grammar Lessons' },
+    ja:    { summary: '要約 · 요약', quiz: '理解度チェック · 확인 퀴즈', quizSub: 'この記事の単語から', whatMeans: '「{w}」の意味は？', ok: '✓ 正解！정답!', no: '✗ 残念 — 正しい答えはハイライト表示されています。', learn: '学習を続ける', vocab: '単語リスト', grammar: '文法レッスン' },
+    zh_tw: { summary: '摘要 · 요약', quiz: '理解測驗 · 확인 퀴즈', quizSub: '出自本文的單字', whatMeans: '「{w}」是什麼意思？', ok: '✓ 答對了！정답!', no: '✗ 不對 — 正確答案已標示。', learn: '繼續學習', vocab: '單字列表', grammar: '文法課程' },
+    es:    { summary: 'Resumen · 요약', quiz: 'Comprueba tu comprensión · 확인 퀴즈', quizSub: 'Del vocabulario de este artículo', whatMeans: '¿Qué significa {w}?', ok: '✓ ¡Correcto! 정답!', no: '✗ No exactamente — la respuesta correcta está resaltada.', learn: 'Sigue aprendiendo', vocab: 'Listas de vocabulario', grammar: 'Lecciones de gramática' },
+    de:    { summary: 'Zusammenfassung · 요약', quiz: 'Verständnis prüfen · 확인 퀴즈', quizSub: 'Aus dem Vokabular dieses Artikels', whatMeans: 'Was bedeutet {w}?', ok: '✓ Richtig! 정답!', no: '✗ Nicht ganz — die richtige Antwort ist markiert.', learn: 'Weiterlernen', vocab: 'Vokabellisten', grammar: 'Grammatiklektionen' },
+    fr:    { summary: 'Résumé · 요약', quiz: 'Vérifiez votre compréhension · 확인 퀴즈', quizSub: 'Tiré du vocabulaire de cet article', whatMeans: 'Que signifie {w} ?', ok: '✓ Correct ! 정답!', no: '✗ Pas tout à fait — la bonne réponse est surlignée.', learn: 'Continuer à apprendre', vocab: 'Listes de vocabulaire', grammar: 'Leçons de grammaire' },
+    vi:    { summary: 'Tóm tắt · 요약', quiz: 'Kiểm tra mức độ hiểu · 확인 퀴즈', quizSub: 'Từ vựng trong bài này', whatMeans: '{w} nghĩa là gì?', ok: '✓ Chính xác! 정답!', no: '✗ Chưa đúng — đáp án đúng đã được tô sáng.', learn: 'Học tiếp', vocab: 'Danh sách từ vựng', grammar: 'Bài học ngữ pháp' },
+    th:    { summary: 'สรุป · 요약', quiz: 'ทดสอบความเข้าใจ · 확인 퀴즈', quizSub: 'จากคำศัพท์ในบทความนี้', whatMeans: '{w} หมายความว่าอะไร?', ok: '✓ ถูกต้อง! 정답!', no: '✗ ยังไม่ถูก — คำตอบที่ถูกต้องถูกไฮไลต์ไว้', learn: 'เรียนรู้ต่อ', vocab: 'รายการคำศัพท์', grammar: 'บทเรียนไวยากรณ์' },
+    id:    { summary: 'Ringkasan · 요약', quiz: 'Uji Pemahaman · 확인 퀴즈', quizSub: 'Dari kosakata artikel ini', whatMeans: 'Apa arti {w}?', ok: '✓ Benar! 정답!', no: '✗ Belum tepat — jawaban yang benar ditandai.', learn: 'Lanjutkan belajar', vocab: 'Daftar Kosakata', grammar: 'Pelajaran Tata Bahasa' },
+  };
+  const t10 = (key) => (L10N[langKey()] || L10N.en)[key] || L10N.en[key];
+
+  // Hangul jamo decomposition (same Unicode math as the syllable builder)
+  const JAMO_CHO = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+  const JAMO_JUNG = ['ㅏ','ㅐ','ㅑ','ㅒ','ㅓ','ㅔ','ㅕ','ㅖ','ㅗ','ㅘ','ㅙ','ㅚ','ㅛ','ㅜ','ㅝ','ㅞ','ㅟ','ㅠ','ㅡ','ㅢ','ㅣ'];
+  const JAMO_JONG = ['','ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+  function jamoBreakdown(word) {
+    const parts = [];
+    for (const ch of String(word)) {
+      const code = ch.charCodeAt(0) - 0xAC00;
+      if (code < 0 || code > 11171) continue;
+      const cho = JAMO_CHO[Math.floor(code / 588)];
+      const jung = JAMO_JUNG[Math.floor((code % 588) / 28)];
+      const jong = JAMO_JONG[code % 28];
+      parts.push(`${ch} = ${cho}+${jung}${jong ? '+' + jong : ''}`);
+    }
+    return parts.join(' · ');
+  }
+
+  function parseVocab(a) {
+    let vocab = a.vocabulary;
+    if (typeof vocab === 'string') { try { vocab = JSON.parse(vocab); } catch (_) { vocab = []; } }
+    return Array.isArray(vocab) ? vocab : [];
+  }
+
   function init() {
     if (document.body.dataset.page !== 'news-article') return;
     NewsAPI.init();
@@ -3192,12 +3878,16 @@ const ArticlePage = (() => {
     renderMeta(article);
     renderHeader(article);
     renderThumbnail(article);
+    renderSummary(article);
     renderVocabulary(article);
     renderBody(article);
     renderImages(article);
+    renderQuiz(article);
+    renderLearnLinks(article);
     loadWeeklyStrip();
     loadRelated(article);
     loadNavigation(article);
+    window.KSAds?.push(); // JS-inserted zones (in-article) — static zones were pushed on DOMContentLoaded
   }
 
   function renderMeta(a) {
@@ -3278,10 +3968,24 @@ const ArticlePage = (() => {
     }
   }
 
+  function renderSummary(a) {
+    if (document.getElementById('article-summary-box')) return;
+    const summary = locField(a, 'summary');
+    if (!summary) return;
+    const anchor = document.getElementById('article-vocabulary-section') || document.getElementById('article-body');
+    if (!anchor) return;
+    const box = document.createElement('div');
+    box.className = 'article-summary-box';
+    box.id = 'article-summary-box';
+    box.innerHTML = `
+      <div class="article-summary-label">💡 ${t10('summary')}</div>
+      <p class="article-summary-text">${newsEscape(summary)}</p>
+      ${a.summary_ko ? `<p class="article-summary-ko">${newsEscape(a.summary_ko)}</p>` : ''}`;
+    anchor.insertAdjacentElement('beforebegin', box);
+  }
+
   function renderVocabulary(a) {
-    let vocab = a.vocabulary;
-    if (typeof vocab === 'string') { try { vocab = JSON.parse(vocab); } catch (_) { vocab = []; } }
-    if (!Array.isArray(vocab)) vocab = [];
+    const vocab = parseVocab(a);
     const section = document.getElementById('article-vocabulary-section');
     if (!section || !vocab.length) return;
     const lang = window.LangManager?.getLang() || 'en';
@@ -3296,35 +4000,149 @@ const ArticlePage = (() => {
           <span class="news-vocab-block-sub">${sub}</span>
         </div>
         <div class="vocab-grid">
-          ${vocab.map(v => `
+          ${vocab.map(v => {
+            const jamo = jamoBreakdown(v.word || '');
+            return `
             <div class="vocab-card">
-              <div class="vocab-word">${newsEscape(v.word || '')}</div>
+              <div class="vocab-word-row">
+                <div class="vocab-word">${newsEscape(v.word || '')}</div>
+                <button class="rail-speak-btn" onclick="speakKorean('${newsEscape(v.word || '').replace(/'/g, '')}', this)" aria-label="Pronounce ${newsEscape(v.word || '')}">🔊</button>
+              </div>
               <div class="vocab-reading">${newsEscape(isJa ? (v.reading_ja || v.reading || '') : (v.reading || ''))}</div>
+              ${jamo ? `<div class="vocab-jamo">${jamo}</div>` : ''}
               <div class="vocab-pos">${newsEscape(v.part_of_speech || '')}</div>
-              <div class="vocab-definition">${newsEscape(isJa ? (v.definition_ja || v.definition_en || '') : (v.definition_en || ''))}</div>
+              <div class="vocab-definition">${newsEscape(locField(v, 'definition'))}</div>
               <div class="vocab-examples">
                 <div class="vocab-ex-ko">${newsEscape(v.example_ko || '')}</div>
-                <div class="vocab-ex-en">${newsEscape(isJa ? (v.example_ja || v.example_en || '') : (v.example_en || ''))}</div>
+                <div class="vocab-ex-en">${newsEscape(locField(v, 'example'))}</div>
               </div>
-            </div>`).join('')}
+            </div>`;
+          }).join('')}
         </div>
       </div>`;
     section.style.display = 'block';
+  }
+
+  function renderQuiz(a) {
+    if (document.getElementById('article-quiz')) return;
+    const vocab = parseVocab(a).filter(v => v.word && (v.definition_en || locField(v, 'definition')));
+    if (vocab.length < 4) return;
+    const anchor = document.getElementById('article-images-section')
+      || document.getElementById('article-body-2')
+      || document.getElementById('article-body');
+    if (!anchor) return;
+    const defOf = (v) => locField(v, 'definition');
+    const shuffled = [...vocab].sort(() => Math.random() - 0.5);
+    const questions = shuffled.slice(0, 3).map(v => {
+      const distractors = vocab.filter(o => o !== v).sort(() => Math.random() - 0.5).slice(0, 3);
+      const opts = [...distractors.map(d => ({ text: defOf(d), ok: false })), { text: defOf(v), ok: true }]
+        .sort(() => Math.random() - 0.5);
+      return { v, opts };
+    });
+    const quiz = document.createElement('div');
+    quiz.className = 'article-quiz';
+    quiz.id = 'article-quiz';
+    quiz.innerHTML = `
+      <div class="article-quiz-header">
+        <h3 class="article-quiz-title">📝 ${t10('quiz')}</h3>
+        <span class="article-quiz-sub">${t10('quizSub')}</span>
+      </div>
+      ${questions.map((q, qi) => `
+        <div class="article-quiz-q" data-q="${qi}">
+          <div class="article-quiz-prompt">${t10('whatMeans').replace('{w}', `<span class="quiz-word">${newsEscape(q.v.word)}</span>`)}</div>
+          <div class="article-quiz-opts">
+            ${q.opts.map(o => `<button type="button" class="article-quiz-opt" data-ok="${o.ok ? 1 : 0}">${newsEscape(o.text)}</button>`).join('')}
+          </div>
+          <div class="article-quiz-result"></div>
+        </div>`).join('')}`;
+    quiz.addEventListener('click', (e) => {
+      const btn = e.target.closest('.article-quiz-opt');
+      if (!btn || btn.disabled) return;
+      const q = btn.closest('.article-quiz-q');
+      const ok = btn.dataset.ok === '1';
+      q.querySelectorAll('.article-quiz-opt').forEach(b => {
+        b.disabled = true;
+        if (b.dataset.ok === '1') b.classList.add('correct');
+      });
+      if (!ok) btn.classList.add('wrong');
+      const res = q.querySelector('.article-quiz-result');
+      res.textContent = ok ? t10('ok') : t10('no');
+      res.className = `article-quiz-result ${ok ? 'ok' : 'no'}`;
+    });
+    anchor.insertAdjacentElement('afterend', quiz);
+  }
+
+  function renderLearnLinks(a) {
+    if (document.getElementById('article-learn-links')) return;
+    const anchor = document.getElementById('article-quiz')
+      || document.getElementById('article-images-section')
+      || document.getElementById('article-body');
+    if (!anchor) return;
+    const topicSlug = (a.topics || {}).slug || '';
+    const CULTURE_BY_TOPIC = {
+      kpop: { icon: '🎵', label: 'K-Pop', href: '/culture/kpop.html' },
+      food: { icon: '🍜', label: 'K-Food', href: '/culture/kfood.html' },
+      sports: { icon: '⚽', label: 'K-Sports', href: '/culture/ksports.html' },
+      fashion: { icon: '👗', label: 'K-Fashion', href: '/culture/kfashion.html' },
+      culture: { icon: '🎬', label: 'K-Drama', href: '/culture/kdrama.html' },
+      travel: { icon: '🗺️', label: 'Travel Guide', href: '/travel/index.html' },
+    };
+    const links = [
+      { icon: '📖', label: t10('vocab'), href: '/learn/vocabulary.html' },
+      { icon: '✏️', label: t10('grammar'), href: '/learn/grammar.html' },
+    ];
+    if (CULTURE_BY_TOPIC[topicSlug]) links.push(CULTURE_BY_TOPIC[topicSlug]);
+    const box = document.createElement('div');
+    box.className = 'article-learn-links';
+    box.id = 'article-learn-links';
+    box.innerHTML = `
+      <span class="article-learn-links-label">🎓 ${t10('learn')}</span>
+      ${links.map(l => `<a class="article-learn-link" href="${l.href}">${l.icon} ${newsEscape(l.label)}</a>`).join('')}`;
+    anchor.insertAdjacentElement('afterend', box);
   }
 
   function renderBody(a) {
     const lang = window.LangManager?.getLang() || 'en';
     const enEl = document.getElementById('article-col-en');
     const koEl = document.getElementById('article-col-ko');
-    if (enEl) {
-      if (lang === 'ja' && a.content_ja) {
-        enEl.innerHTML = newsParagraphs(a.content_ja);
-        enEl.style.fontFamily = 'var(--font-korean)';
-      } else {
-        enEl.innerHTML = newsParagraphs(a.content_en);
+    const primary = locField(a, 'content');
+    if (enEl && ['ja', 'zh_tw'].includes(langKey()) && a[`content_${langKey()}`]) enEl.style.fontFamily = 'var(--font-korean)';
+
+    // Split the bilingual body into two halves with an in-article ad between
+    // them — only when both languages have the same paragraph count.
+    const body = document.getElementById('article-body');
+    const priParas = primary.split(/\n\n+/).filter(p => p.trim());
+    const koParas = (a.content_ko || '').split(/\n\n+/).filter(p => p.trim());
+    const canSplit = body && enEl && koEl && !document.getElementById('article-body-2')
+      && priParas.length >= 4 && priParas.length === koParas.length;
+
+    if (canSplit) {
+      const cut = Math.ceil(priParas.length / 2);
+      enEl.innerHTML = newsParagraphs(priParas.slice(0, cut).join('\n\n'));
+      koEl.innerHTML = newsParagraphs(koParas.slice(0, cut).join('\n\n'));
+      const body2 = document.createElement('div');
+      body2.className = 'article-bilingual';
+      body2.id = 'article-body-2';
+      body2.innerHTML = `
+        <div class="article-col-en">${newsParagraphs(priParas.slice(cut).join('\n\n'))}</div>
+        <div class="article-col-ko">${newsParagraphs(koParas.slice(cut).join('\n\n'))}</div>`;
+      if (enEl.style.fontFamily) body2.firstElementChild.style.fontFamily = enEl.style.fontFamily;
+      body.insertAdjacentElement('afterend', body2);
+      if (KS_ADS_LIVE) {
+        const adZone = document.createElement('div');
+        adZone.className = 'ad-zone ad-zone--inarticle';
+        adZone.innerHTML = `
+        <ins class="adsbygoogle" style="display:block"
+             data-ad-client="ca-pub-6791974364232767"
+             data-ad-slot="7783087408"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>`;
+        body.insertAdjacentElement('afterend', adZone);
       }
+    } else {
+      if (enEl) enEl.innerHTML = newsParagraphs(primary);
+      if (koEl) koEl.innerHTML = newsParagraphs(a.content_ko);
     }
-    if (koEl) koEl.innerHTML = newsParagraphs(a.content_ko);
 
     if (a.main_image_url) {
       const body = document.getElementById('article-body');
@@ -3843,16 +4661,16 @@ const AdminPage = (() => {
 const QuizPage = (() => {
   const LEVELS = [
     null,
-    { name: 'Vowel Recognition',      ja: '母音の識別',     kr: '모음 인식',      topics: 'ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ and all vowels',            diff: 'Beginner',        badge: 'tag-beginner' },
-    { name: 'Consonant Recognition',  ja: '子音の識別',     kr: '자음 인식',      topics: 'ㄱ ㄴ ㄷ ㄹ + tense & aspirated',             diff: 'Beginner',        badge: 'tag-beginner' },
-    { name: 'Syllable & Word Reading',ja: '音節と単語の読み', kr: '음절과 단어 읽기', topics: '안녕하세요 · 친구 · 학교 · 사랑',            diff: 'Beginner',        badge: 'tag-beginner' },
-    { name: 'Greetings & Phrases',    ja: '挨拶とフレーズ', kr: '인사말',          topics: '감사합니다 · 반갑습니다 · 잘 먹겠습니다',       diff: 'Beginner',        badge: 'tag-beginner' },
-    { name: 'Numbers & Family',       ja: '数字と家族',     kr: '숫자와 가족',    topics: '일 이 삼 · 하나 둘 셋 · 형 오빠 언니',          diff: 'Beginner',        badge: 'tag-beginner' },
-    { name: 'Essential Particles',    ja: '基本助詞',       kr: '핵심 조사',      topics: '은/는 · 이/가 · 을/를 · 에 · 에서',             diff: 'Beg–Int',         badge: 'tag-intermediate' },
-    { name: 'Daily Life Vocabulary',  ja: '日常語彙',       kr: '일상 어휘',      topics: '음식 · 장소 · 감정 · 색깔 · 신체',              diff: 'Intermediate',    badge: 'tag-intermediate' },
-    { name: 'Verb Conjugation',       ja: '動詞の活用',     kr: '동사 변화',      topics: '가요 · 먹었어요 · 갈 거예요 · 먹고 있어요',     diff: 'Intermediate',    badge: 'tag-intermediate' },
-    { name: 'Grammar Patterns',       ja: '文法パターン',   kr: '문법 패턴',      topics: '-보다 더 · -(으)세요 · -는 것 · 그래서',        diff: 'Int–Advanced',    badge: 'tag-advanced' },
-    { name: 'Advanced Vocabulary',    ja: '上級語彙',       kr: '고급 어휘',      topics: '속담 · 관용어 · 콩글리시 · 학문 어휘',          diff: 'Advanced',        badge: 'tag-advanced' },
+    { name: 'Vowel Recognition',      ja: '母音の識別',     zh: '母音辨識',   kr: '모음 인식',      topics: 'ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ and all vowels',            diff: 'Beginner',        badge: 'tag-beginner' },
+    { name: 'Consonant Recognition',  ja: '子音の識別',     zh: '子音辨識',   kr: '자음 인식',      topics: 'ㄱ ㄴ ㄷ ㄹ + tense & aspirated',             diff: 'Beginner',        badge: 'tag-beginner' },
+    { name: 'Syllable & Word Reading',ja: '音節と単語の読み', zh: '音節與單字閱讀', kr: '음절과 단어 읽기', topics: '안녕하세요 · 친구 · 학교 · 사랑',          diff: 'Beginner',        badge: 'tag-beginner' },
+    { name: 'Greetings & Phrases',    ja: '挨拶とフレーズ', zh: '問候與短語', kr: '인사말',          topics: '감사합니다 · 반갑습니다 · 잘 먹겠습니다',       diff: 'Beginner',        badge: 'tag-beginner' },
+    { name: 'Numbers & Family',       ja: '数字と家族',     zh: '數字與家族', kr: '숫자와 가족',    topics: '일 이 삼 · 하나 둘 셋 · 형 오빠 언니',          diff: 'Beginner',        badge: 'tag-beginner' },
+    { name: 'Essential Particles',    ja: '基本助詞',       zh: '基礎助詞',   kr: '핵심 조사',      topics: '은/는 · 이/가 · 을/를 · 에 · 에서',             diff: 'Beg–Int',         badge: 'tag-intermediate' },
+    { name: 'Daily Life Vocabulary',  ja: '日常語彙',       zh: '日常詞彙',   kr: '일상 어휘',      topics: '음식 · 장소 · 감정 · 색깔 · 신체',              diff: 'Intermediate',    badge: 'tag-intermediate' },
+    { name: 'Verb Conjugation',       ja: '動詞の活用',     zh: '動詞變化',   kr: '동사 변화',      topics: '가요 · 먹었어요 · 갈 거예요 · 먹고 있어요',     diff: 'Intermediate',    badge: 'tag-intermediate' },
+    { name: 'Grammar Patterns',       ja: '文法パターン',   zh: '文法句型',   kr: '문법 패턴',      topics: '-보다 더 · -(으)세요 · -는 것 · 그래서',        diff: 'Int–Advanced',    badge: 'tag-advanced' },
+    { name: 'Advanced Vocabulary',    ja: '上級語彙',       zh: '高級詞彙',   kr: '고급 어휘',      topics: '속담 · 관용어 · 콩글리시 · 학문 어휘',          diff: 'Advanced',        badge: 'tag-advanced' },
   ];
 
   let _lv = 0, _qs = [], _qi = 0, _sc = 0, _correctIdx = 0;
@@ -3863,11 +4681,13 @@ const QuizPage = (() => {
   }
 
   function _showSelect(c) {
-    const isJa = typeof LangManager !== 'undefined' && LangManager.getLang() === 'ja';
+    const _sLang = typeof LangManager !== 'undefined' ? LangManager.getLang() : 'en';
+    const isJa = _sLang === 'ja';
+    const isZhTw = _sLang === 'zh-tw';
     let html = '<div class="quiz-level-grid">';
     for (let i = 1; i <= 10; i++) {
       const lv = LEVELS[i];
-      const displayName = isJa ? lv.ja : lv.name;
+      const displayName = isJa ? lv.ja : isZhTw ? (lv.zh || lv.name) : lv.name;
       html += `<div class="quiz-level-card" data-level="${i}">
         <div class="quiz-level-num">Level ${i}</div>
         <div class="quiz-level-name">${displayName}</div>
@@ -3902,12 +4722,15 @@ const QuizPage = (() => {
     const q = _qs[_qi];
     const lv = LEVELS[_lv];
     const pct = (_qi / _qs.length) * 100;
-    const isJa = typeof LangManager !== 'undefined' && LangManager.getLang() === 'ja';
+    const _qLang = typeof LangManager !== 'undefined' ? LangManager.getLang() : 'en';
+    const isJa = _qLang === 'ja';
+    const isZhTw = _qLang === 'zh-tw';
     const jaData = isJa && window.QUIZ_JA ? window.QUIZ_JA[q.q] : null;
-    const qText = jaData ? jaData.qja : q.q;
-    const choicesArr = (jaData && jaData.choicesja) ? jaData.choicesja : q.choices;
-    const lvName = isJa ? lv.ja : lv.name;
-    const backLabel = isJa ? '← レベル一覧' : '← All Levels';
+    const zhTwData = isZhTw && window.QUIZ_ZH_TW ? window.QUIZ_ZH_TW[q.q] : null;
+    const qText = jaData ? jaData.qja : zhTwData ? zhTwData.qzh : q.q;
+    const choicesArr = (jaData && jaData.choicesja) ? jaData.choicesja : (zhTwData && zhTwData.choiceszh) ? zhTwData.choiceszh : q.choices;
+    const lvName = isJa ? lv.ja : isZhTw ? (lv.zh || lv.name) : lv.name;
+    const backLabel = isJa ? '← レベル一覧' : isZhTw ? '← 所有關卡' : '← All Levels';
     const qStyle = q.korean ? ' style="font-family:var(--font-korean);font-size:1.55rem;"' : '';
     const idxOrder = _shuffle([0, 1, 2, 3]);
     _correctIdx = idxOrder.indexOf(q.answer);
@@ -3947,21 +4770,23 @@ const QuizPage = (() => {
   }
 
   function _showResult(c) {
-    const isJa = typeof LangManager !== 'undefined' && LangManager.getLang() === 'ja';
+    const _rLang = typeof LangManager !== 'undefined' ? LangManager.getLang() : 'en';
+    const isJa = _rLang === 'ja';
+    const isZhTw = _rLang === 'zh-tw';
     const pct = Math.round((_sc / _qs.length) * 100);
     const emoji = pct >= 90 ? '🏆' : pct >= 70 ? '⭐' : pct >= 50 ? '👍' : '📚';
     const msg = pct >= 90
-      ? (isJa ? '훌륭해요！素晴らしい！' : '훌륭해요! Outstanding!')
+      ? (isJa ? '훌륭해요！素晴らしい！' : isZhTw ? '훌륭해요！太棒了！' : '훌륭해요! Outstanding!')
       : pct >= 70
-        ? (isJa ? '잘 했어요！よくできました！' : '잘 했어요! Great work!')
+        ? (isJa ? '잘 했어요！よくできました！' : isZhTw ? '잘 했어요！做得好！' : '잘 했어요! Great work!')
         : pct >= 50
-          ? (isJa ? '계속 연습하세요！頑張りましょう！' : '계속 연습하세요! Keep going!')
-          : (isJa ? '더 공부하세요！もっと勉強しましょう！' : '더 공부하세요! Keep studying!');
-    const gradeLabel = isJa ? `Level ${_lv} クリア！` : `Level ${_lv} Complete!`;
-    const lvName = isJa ? `${LEVELS[_lv].name} · ${LEVELS[_lv].ja}` : LEVELS[_lv].name;
-    const retryLabel = isJa ? 'もう一度' : 'Try Again';
-    const nextLabel = isJa ? '次のレベル →' : 'Next Level →';
-    const homeLabel = isJa ? '全レベル' : 'All Levels';
+          ? (isJa ? '계속 연습하세요！頑張りましょう！' : isZhTw ? '계속 연습하세요！繼續努力！' : '계속 연습하세요! Keep going!')
+          : (isJa ? '더 공부하세요！もっと勉強しましょう！' : isZhTw ? '더 공부하세요！繼續學習！' : '더 공부하세요! Keep studying!');
+    const gradeLabel = isJa ? `Level ${_lv} クリア！` : isZhTw ? `第${_lv}關 完成！` : `Level ${_lv} Complete!`;
+    const lvName = isJa ? `${LEVELS[_lv].name} · ${LEVELS[_lv].ja}` : isZhTw ? `${LEVELS[_lv].zh || LEVELS[_lv].name}` : LEVELS[_lv].name;
+    const retryLabel = isJa ? 'もう一度' : isZhTw ? '再試一次' : 'Try Again';
+    const nextLabel = isJa ? '次のレベル →' : isZhTw ? '下一關 →' : 'Next Level →';
+    const homeLabel = isJa ? '全レベル' : isZhTw ? '全部關卡' : 'All Levels';
     const nextBtn = _lv < 10 ? `<button class="btn btn-primary" data-action="next">${nextLabel}</button>` : '';
     c.innerHTML = `
       <div class="quiz-result-wrap">

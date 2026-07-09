@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Planificador de Viaje a Corea 여행 계획표 | 한국어 학교</title>
+  <meta name="description" content="Planificador interactivo de viaje a Corea del Sur — construye tu itinerario diario por hora y tipo de actividad. Imprime o exporta tu plan cuando esté listo." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="canonical" href="https://freekoreanschool.com/travel/es/planner">
+  <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/travel/planner">
+  <link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/travel/ja/planner">
+  <link rel="alternate" hreflang="es" href="https://freekoreanschool.com/travel/es/planner">
+  <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/travel/planner">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Planificador de Viaje a Corea | 한국어 학교">
+  <meta property="og:description" content="Planificador interactivo de viaje a Corea del Sur — construye tu itinerario diario por hora y tipo de actividad.">
+  <meta property="og:url" content="https://freekoreanschool.com/travel/es/planner">
+  <meta property="og:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <meta property="og:site_name" content="Korean School 한국어 학교">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Planificador de Viaje a Corea | 한국어 학교">
+  <meta name="twitter:description" content="Planificador interactivo de viaje a Corea del Sur.">
+  <meta name="twitter:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Planificador de Viaje a Corea | 한국어 학교",
+  "description": "Planificador interactivo de viaje a Corea del Sur — construye tu itinerario diario por hora y tipo de actividad.",
+  "url": "https://freekoreanschool.com/travel/es/planner",
+  "inLanguage": "es",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Korean School 한국어 학교",
+    "url": "https://freekoreanschool.com"
+  }
+}
+  </script>
+  <meta name="google-adsense-account" content="ca-pub-6791974364232767">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791974364232767" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D94KSYG9DE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D94KSYG9DE');
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="../../es/index.html" class="logo">
+        <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+        <div class="logo-text">Korean School <span>한국어 학교</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../../learn/es/hangul.html"><span class="nav-icon">📚</span> Aprender</a></li>
+        <li><a href="../../culture/es/index.html"><span class="nav-icon">🎵</span> K-Cultura</a></li>
+        <li><a href="index.html" class="active"><span class="nav-icon">🗺️</span> Viajes</a></li>
+        <li><a href="../../news/es/index.html"><span class="nav-icon">📰</span> Noticias</a></li>
+        <li><a href="../../es/quiz.html"><span class="nav-icon">📝</span> Cuestionario</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Buscar…" autocomplete="off" aria-label="Buscar en el sitio" />
+        </div>
+        <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema">🌙</button>
+        <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Cambiar idioma">🌐</button>
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content planner-main" style="margin-left:0;max-width:100%;padding-top:calc(var(--header-height) + 0px);">
+    <div class="planner-page">
+
+      <div style="margin-bottom:24px;">
+        <div class="section-eyebrow" style="margin-bottom:6px;">PLANIFICADOR · 여행 계획표</div>
+        <h1 style="font-size:1.8rem;font-weight:900;color:var(--text);margin:0 0 6px;">
+          Construye tu Itinerario de Corea
+        </h1>
+        <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;">
+          Agrega eventos por hora y tipo. Guardado automáticamente en tu navegador. Imprime o exporta cuando estés listo.
+        </p>
+      </div>
+
+      <div class="planner-layout">
+        <div class="planner-content">
+
+          <div class="planner-toolbar" id="planner-toolbar">
+            <div class="planner-field">
+              <label class="planner-field-label" for="trip-start">Fecha de inicio</label>
+              <input class="planner-input" type="date" id="trip-start" />
+            </div>
+            <div class="planner-field">
+              <label class="planner-field-label" for="trip-days">Número de días</label>
+              <input class="planner-input" type="number" id="trip-days" min="1" max="30" value="3" style="min-width:100px;" />
+            </div>
+            <div class="planner-toolbar-actions">
+              <button class="planner-btn planner-btn-outline" id="legend-emoji-toggle">Sin Emojis</button>
+              <button class="planner-btn planner-btn-outline" id="planner-reset-btn" aria-label="Borrar todos los eventos">🗑️ Borrar Todo</button>
+              <button class="planner-btn planner-btn-primary" id="planner-print-btn" aria-label="Imprimir itinerario">🖨️ Imprimir</button>
+            </div>
+          </div>
+
+          <div class="planner-body">
+            <div id="planner-grid-wrapper" style="flex:1;min-width:0;overflow:hidden;">
+              <div id="planner-grid" class="planner-grid"></div>
+            </div>
+
+            <div class="planner-legend" id="planner-legend">
+              <div class="planner-legend-drag-hint">Arrastra a la izquierda</div>
+              <div class="planner-legend-group-label">Inicio / Fin</div>
+              <div class="planner-legend-item" data-type="wake"><div class="planner-legend-dot" style="background:#eab308;"></div><span class="legend-emoji">☀️</span> Despertar</div>
+              <div class="planner-legend-item" data-type="sleep"><div class="planner-legend-dot" style="background:#1e40af;"></div><span class="legend-emoji">🌙</span> Dormir</div>
+              <div class="planner-legend-item" data-type="arrive"><div class="planner-legend-dot" style="background:#ef4444;"></div><span class="legend-emoji">🛬</span> Llegada</div>
+              <div class="planner-legend-item" data-type="depart"><div class="planner-legend-dot" style="background:#f97316;"></div><span class="legend-emoji">🛫</span> Salida</div>
+              <div class="planner-legend-group-label">Comida</div>
+              <div class="planner-legend-item" data-type="breakfast"><div class="planner-legend-dot" style="background:#f97316;"></div><span class="legend-emoji">🍳</span> Desayuno</div>
+              <div class="planner-legend-item" data-type="lunch"><div class="planner-legend-dot" style="background:#22c55e;"></div><span class="legend-emoji">🍱</span> Almuerzo</div>
+              <div class="planner-legend-item" data-type="dinner"><div class="planner-legend-dot" style="background:#8b5cf6;"></div><span class="legend-emoji">🍽️</span> Cena</div>
+              <div class="planner-legend-item" data-type="snack"><div class="planner-legend-dot" style="background:#ec4899;"></div><span class="legend-emoji">🧁</span> Merienda</div>
+              <div class="planner-legend-group-label">Actividades</div>
+              <div class="planner-legend-item" data-type="sight"><div class="planner-legend-dot" style="background:#14b8a6;"></div><span class="legend-emoji">🏛️</span> Turismo</div>
+              <div class="planner-legend-item" data-type="shopping"><div class="planner-legend-dot" style="background:#d946ef;"></div><span class="legend-emoji">🛍️</span> Compras</div>
+              <div class="planner-legend-item" data-type="event"><div class="planner-legend-dot" style="background:#f59e0b;"></div><span class="legend-emoji">🎟️</span> Evento</div>
+              <div class="planner-legend-item" data-type="experience"><div class="planner-legend-dot" style="background:#10b981;"></div><span class="legend-emoji">🎭</span> Experiencia</div>
+              <div class="planner-legend-item" data-type="free"><div class="planner-legend-dot" style="background:#64748b;"></div><span class="legend-emoji">🗺️</span> Tiempo libre</div>
+              <div class="planner-legend-item" data-type="note"><div class="planner-legend-dot" style="background:#94a3b8;"></div><span class="legend-emoji">📝</span> Nota</div>
+              <div class="planner-legend-group-label">Transporte</div>
+              <div class="planner-legend-item" data-type="taxi"><div class="planner-legend-dot" style="background:#fbbf24;"></div><span class="legend-emoji">🚕</span> Taxi</div>
+              <div class="planner-legend-item" data-type="bus"><div class="planner-legend-dot" style="background:#84cc16;"></div><span class="legend-emoji">🚌</span> Autobús</div>
+              <div class="planner-legend-item" data-type="train"><div class="planner-legend-dot" style="background:#38bdf8;"></div><span class="legend-emoji">🚄</span> Tren</div>
+              <div class="planner-legend-item" data-type="subway"><div class="planner-legend-dot" style="background:#818cf8;"></div><span class="legend-emoji">🚇</span> Metro</div>
+              <div class="planner-legend-item" data-type="motorbike"><div class="planner-legend-dot" style="background:#f472b6;"></div><span class="legend-emoji">🛵</span> Moto</div>
+              <div class="planner-legend-item" data-type="walk"><div class="planner-legend-dot" style="background:#a78bfa;"></div><span class="legend-emoji">🚶</span> Caminar</div>
+            </div>
+          </div>
+
+        </div>
+        <aside class="planner-ad-zone" aria-label="Publicidad"></aside>
+      </div>
+
+      <div id="print-title" style="display:none;padding:16px 0 8px;font-size:1.4rem;font-weight:900;color:#000;font-family:sans-serif;"></div>
+    </div>
+    <div class="ad-zone ad-zone--bottom">
+      <ins class="adsbygoogle" style="display:block"
+           data-ad-client="ca-pub-6791974364232767"
+           data-ad-slot="9704719339"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+  </main>
+
+  <div class="planner-modal-overlay" id="event-modal" role="dialog" aria-modal="true" aria-label="Agregar evento">
+    <div class="planner-modal">
+      <div class="planner-modal-title">Agregar Evento · 일정 추가</div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-label">Nombre del evento</label>
+        <input class="planner-input" type="text" id="event-label" placeholder="ej. Palacio Gyeongbokgung" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-time">Hora</label>
+        <input class="planner-input" type="time" id="event-time" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label">Tipo de evento</label>
+        <div class="planner-type-grid" id="event-type-grid">
+          <div class="planner-type-group-label">Inicio / Fin</div>
+          <button class="planner-type-btn" data-type="wake">☀️<br>Despertar</button>
+          <button class="planner-type-btn" data-type="sleep">🌙<br>Dormir</button>
+          <button class="planner-type-btn" data-type="arrive">🛬<br>Llegada</button>
+          <button class="planner-type-btn" data-type="depart">🛫<br>Salida</button>
+          <div class="planner-type-group-label">Comida</div>
+          <button class="planner-type-btn" data-type="breakfast">🍳<br>Desayuno</button>
+          <button class="planner-type-btn" data-type="lunch">🍱<br>Almuerzo</button>
+          <button class="planner-type-btn" data-type="dinner">🍽️<br>Cena</button>
+          <button class="planner-type-btn" data-type="snack">🧁<br>Merienda</button>
+          <div class="planner-type-group-label">Actividades</div>
+          <button class="planner-type-btn" data-type="sight">🏛️<br>Turismo</button>
+          <button class="planner-type-btn" data-type="shopping">🛍️<br>Compras</button>
+          <button class="planner-type-btn" data-type="event">🎟️<br>Evento</button>
+          <button class="planner-type-btn" data-type="experience">🎭<br>Experiencia</button>
+          <button class="planner-type-btn" data-type="free">🗺️<br>Tiempo libre</button>
+          <button class="planner-type-btn" data-type="note">📝<br>Nota</button>
+          <div class="planner-type-group-label">Transporte</div>
+          <button class="planner-type-btn" data-type="taxi">🚕<br>Taxi</button>
+          <button class="planner-type-btn" data-type="bus">🚌<br>Autobús</button>
+          <button class="planner-type-btn" data-type="train">🚄<br>Tren</button>
+          <button class="planner-type-btn" data-type="subway">🚇<br>Metro</button>
+          <button class="planner-type-btn" data-type="motorbike">🛵<br>Moto</button>
+          <button class="planner-type-btn" data-type="walk">🚶<br>Caminar</button>
+        </div>
+      </div>
+
+      <div class="planner-modal-field">
+        <label class="planner-modal-label" for="event-notes">Notas (opcional)</label>
+        <input class="planner-input" type="text" id="event-notes" placeholder="ej. Reservar con anticipación, entrada ₩1,500" style="width:100%;box-sizing:border-box;" />
+      </div>
+
+      <input type="hidden" id="event-day-idx" />
+      <input type="hidden" id="event-edit-id" />
+      <input type="hidden" id="event-orig-time" />
+
+      <div class="planner-modal-actions">
+        <button class="planner-btn planner-btn-outline" id="modal-cancel-btn">Cancelar</button>
+        <button class="planner-btn planner-btn-danger" id="modal-delete-btn" style="display:none;">🗑️ Eliminar</button>
+        <button class="planner-btn planner-btn-primary" id="modal-save-btn">Agregar evento</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="planner-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../es/index.html" class="logo">
+            <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+            <div class="logo-text">Korean School <span>한국어 학교</span></div>
+          </a>
+          <p>Plataforma gratuita de aprendizaje de coreano — combinando el estudio del idioma con K-cultura, guías de viaje y práctica real.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Aprender</div>
+          <ul class="footer-links">
+            <li><a href="../../learn/es/hangul.html">Alfabeto Hangul</a></li>
+            <li><a href="../../learn/es/grammar.html">Gramática</a></li>
+            <li><a href="../../learn/es/vocabulary.html">Vocabulario</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Explorar</div>
+          <ul class="footer-links">
+            <li><a href="../../culture/es/index.html">K-Cultura</a></li>
+            <li><a href="index.html">Guía de viajes</a></li>
+            <li><a href="../../news/es/index.html">Noticias coreanas</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Empresa</div>
+          <ul class="footer-links">
+            <li><a href="../../es/about.html">Sobre nosotros</a></li>
+            <li><a href="../../es/contact.html">Contacto</a></li>
+            <li><a href="../../es/privacy.html">Política de privacidad</a></li>
+            <li><a href="../../es/terms.html">Términos de uso</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 한국어 학교. Hecho con ❤️ para estudiantes de coreano en todo el mundo.</span>
+        <span>🇰🇷 학습을 즐기세요! (¡Disfruta tu aprendizaje!)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/lang-core.js"></script>
+  <script src="../../js/app.js"></script>
+<script defer src="../../js/ads.js"></script>
+</body>
+</html>

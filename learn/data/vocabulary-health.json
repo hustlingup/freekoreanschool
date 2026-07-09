@@ -4,11 +4,12 @@
   "stages": [
     {
       "id": 1,
-      "name": "Health & Medicine",
-      "name_kr": "건강·의학",
+      "name": "Health",
+      "name_kr": "건강",
       "first_step": 1,
       "last_step": 21,
-      "time_minutes": 12
+      "time_minutes": 13,
+      "name_es": "Salud"
     }
   ],
   "steps": [
@@ -16,18 +17,30 @@
       "id": 1,
       "stage": 1,
       "type": "reading_card",
-      "title": "Health & Medicine",
-      "title_kr": "건강과 의학",
-      "body": "Korea has an excellent healthcare system and affordable clinics (의원). A clinic visit in Korea is fast and affordable — you simply present your health insurance card and pay a small co-pay. Knowing health vocabulary helps you describe symptoms accurately and understand instructions from medical staff.",
+      "title": "Health in Korean",
+      "title_kr": "건강",
+      "title_zh_tw": "韓語健康詞彙",
+      "body": "Health vocabulary is critical for any traveler or resident. In Korea, the public healthcare system is excellent and affordable. Knowing these words will help you at clinics, pharmacies, and hospitals. The key phrase to remember: 아파요 (I'm sick / it hurts).",
+      "body_zh_tw": "健康詞彙對任何旅行者或居民都至關重要。韓國的公共醫療體系出色且費用合理。掌握這些詞彙能幫助你在診所、藥局和醫院應對自如。最重要的一句話：아파요（我生病了／這裡痛）。",
       "tip": {
         "icon": "🏥",
-        "label": "아파요 (I'm in pain/sick)",
-        "text": "The phrase '아파요' (it hurts / I'm sick) is your most important health word. Combine it with body parts: 머리가 아파요 (My head hurts), 배가 아파요 (My stomach hurts). Point and say 여기가 아파요 (It hurts here)."
+        "label": "Medical phrases",
+        "text": "아파요 = I'm sick/It hurts | 여기가 아파요 = It hurts here | 의사 선생님 = doctor | 처방전 = prescription | 보험 = insurance. Korean pharmacies (약국) are incredibly well-stocked and pharmacists are knowledgeable."
       },
-      "body_ja": "韓国は優れた医療システムと手頃な診療所（의원）があります。診察は早くて安価で、保険証を提示して少額の自己負担で受診できます。症状を正確に説明し、医療スタッフの指示を理解するために健康語彙が役立ちます。",
+      "tip_zh_tw": {
+        "label": "就醫短語",
+        "text": "아파요＝我生病了／這裡痛 | 여기가 아파요＝這裡痛 | 의사 선생님＝醫生 | 처방전＝處方箋 | 보험＝保險。韓國藥局（약국）藥品齊全，藥師專業可靠。"
+      },
+      "body_ja": "健康語彙は旅行者・居住者どちらにも重要です。韓国の公的医療制度は充実しており費用も手頃です。클리닉・약국・병원でこれらの語彙が役立ちます。最重要フレーズ：아파요（具合が悪い/痛い）。",
       "tip_ja": {
-        "label": "아파요（痛い/具合が悪い）",
-        "text": "「아파요」（痛い/具合が悪い）は最も重要な健康語です。体の部位と組み合わせて：머리가 아파요（頭が痛いです）、배가 아파요（お腹が痛いです）。여기가 아파요（ここが痛いです）と指して言いましょう。"
+        "label": "医療フレーズ",
+        "text": "아파요（具合が悪い/痛い）| 여기가 아파요（ここが痛い）| 의사 선생님（医師）| 처방전（処方箋）| 보험（保険）。韓国の약국（薬局）は品揃えが豊富で薬剤師も頼りになります。"
+      },
+      "title_es": "Salud en Coreano",
+      "body_es": "El vocabulario de salud es esencial para cualquier viajero o residente. En Corea, el sistema público de salud es excelente y asequible. Conocer estas palabras te ayudará en clínicas, farmacias y hospitales. La frase clave: 아파요 (Estoy enfermo/a / Duele).",
+      "tip_es": {
+        "label": "Frases médicas",
+        "text": "아파요 = Estoy enfermo/Duele | 여기가 아파요 = Me duele aquí | 의사 선생님 = médico | 처방전 = receta | 보험 = seguro. Las farmacias coreanas (약국) están muy bien surtidas y los farmacéuticos son muy competentes."
       }
     },
     {
@@ -39,10 +52,13 @@
         "강"
       ],
       "romanization": "geongang",
+      "zhuyin": "ㄍㄜㄣ·ㄍㄤ",
       "katakana": "コンガン",
       "audio": "건강",
-      "meaning": "Health — 건강이 최고예요 (Health is everything)",
-      "meaning_ja": "健康 ― 건강이 최고예요（健康が一番です）"
+      "meaning": "Health — 건강해요 = I'm healthy",
+      "meaning_zh_tw": "健康——건강해요＝我很健康",
+      "meaning_ja": "健康 ― 건강해요（健康です）",
+      "meaning_es": "Salud — 건강해요 = Estoy sano/a"
     },
     {
       "id": 3,
@@ -54,27 +70,16 @@
         "다"
       ],
       "romanization": "apeuda",
+      "zhuyin": "ㄚ·ㄆㄜ·ㄉㄚ",
       "katakana": "アプダ",
       "audio": "아프다",
-      "meaning": "To be sick / to hurt — 아파요 = I'm sick / It hurts",
-      "meaning_ja": "痛い / 病気だ ― 아파요（痛いです／具合が悪いです）"
+      "meaning": "To be sick / to hurt — 아파요 in speech",
+      "meaning_zh_tw": "生病／疼痛——口語說아파요",
+      "meaning_ja": "具合が悪い・痛い ― 会話では아파요",
+      "meaning_es": "Estar enfermo/a / doler — en el habla: 아파요"
     },
     {
       "id": 4,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "병",
-        "원"
-      ],
-      "romanization": "byeongwon",
-      "katakana": "ピョンウォン",
-      "audio": "병원",
-      "meaning": "Hospital / clinic — 병원에 가야 해요 (I need to go to the clinic)",
-      "meaning_ja": "病院 / クリニック ― 병원에 가야 해요（病院に行かなければなりません）"
-    },
-    {
-      "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -82,13 +87,16 @@
         "사"
       ],
       "romanization": "uisa",
+      "zhuyin": "ㄧ·ㄙㄚ",
       "katakana": "ウィサ",
       "audio": "의사",
-      "meaning": "Doctor",
-      "meaning_ja": "医師 / お医者さん"
+      "meaning": "Doctor — 의사 선생님 = doctor (respectful address)",
+      "meaning_zh_tw": "醫生——의사 선생님＝醫生（尊稱）",
+      "meaning_ja": "医師 ― 의사 선생님（医師の丁寧な呼び方）",
+      "meaning_es": "Médico / Doctor — 의사 선생님 = doctor (forma respetuosa)"
     },
     {
-      "id": 6,
+      "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -97,26 +105,32 @@
         "사"
       ],
       "romanization": "ganhosa",
-      "katakana": "カノサ",
+      "zhuyin": "ㄍㄢ·ㄏㄛ·ㄙㄚ",
+      "katakana": "カンホサ",
       "audio": "간호사",
       "meaning": "Nurse",
-      "meaning_ja": "看護師"
+      "meaning_zh_tw": "護士",
+      "meaning_ja": "看護師",
+      "meaning_es": "Enfermero/a"
     },
     {
-      "id": 7,
+      "id": 6,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
         "약"
       ],
       "romanization": "yak",
+      "zhuyin": "ㄧㄚ",
       "katakana": "ヤク",
       "audio": "약",
-      "meaning": "Medicine — 약 먹어요 (Take medicine)",
-      "meaning_ja": "薬 ― 약 먹어요（薬を飲みます）"
+      "meaning": "Medicine / drug — 약을 먹다 = to take medicine",
+      "meaning_zh_tw": "藥——약을 먹다＝吃藥",
+      "meaning_ja": "薬 ― 약을 먹다（薬を飲む）",
+      "meaning_es": "Medicina / medicamento — 약을 먹다 = tomar medicina"
     },
     {
-      "id": 8,
+      "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -125,40 +139,32 @@
         "전"
       ],
       "romanization": "cheobangjeon",
+      "zhuyin": "ㄔㄜ·ㄅㄤ·ㄓㄜㄣ",
       "katakana": "チョバンジョン",
       "audio": "처방전",
-      "meaning": "Prescription — 처방전 받았어요 (I got a prescription)",
-      "meaning_ja": "処方箋 ― 처방전 받았어요（処方箋をもらいました）"
+      "meaning": "Prescription — needed for certain medications",
+      "meaning_zh_tw": "處方箋——某些藥物需要處方",
+      "meaning_ja": "処方箋 ― 特定の薬に必要",
+      "meaning_es": "Receta médica — necesaria para ciertos medicamentos"
     },
     {
-      "id": 9,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "두",
-        "통"
-      ],
-      "romanization": "dutong",
-      "katakana": "トゥトン",
-      "audio": "두통",
-      "meaning": "Headache — 두통이 있어요 (I have a headache)",
-      "meaning_ja": "頭痛 ― 두통이 있어요（頭痛があります）"
-    },
-    {
-      "id": 10,
+      "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
         "열"
       ],
       "romanization": "yeol",
+      "zhuyin": "ㄧㄜㄌ",
       "katakana": "ヨル",
       "audio": "열",
-      "meaning": "Fever — 열이 나요 (I have a fever)",
-      "meaning_ja": "熱 ― 열이 나요（熱が出ています）"
+      "meaning": "Fever — 열이 나요 = I have a fever",
+      "meaning_zh_tw": "發燒——열이 나요＝我在發燒",
+      "meaning_ja": "熱 ― 열이 나요（熱があります）",
+      "meaning_es": "Fiebre — 열이 나요 = Tengo fiebre"
     },
     {
-      "id": 11,
+      "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -166,27 +172,52 @@
         "침"
       ],
       "romanization": "gichim",
+      "zhuyin": "ㄍㄧ·ㄔㄧㄇ",
       "katakana": "キチム",
       "audio": "기침",
-      "meaning": "Cough — 기침이 나요 (I'm coughing)",
-      "meaning_ja": "咳 ― 기침이 나요（咳が出ます）"
+      "meaning": "Cough — 기침이 나요 = I'm coughing",
+      "meaning_zh_tw": "咳嗽——기침이 나요＝我在咳嗽",
+      "meaning_ja": "咳 ― 기침이 나요（咳が出ます）",
+      "meaning_es": "Tos — 기침이 나요 = Estoy tosiendo"
     },
     {
-      "id": 12,
+      "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "콧",
-        "물"
+        "두",
+        "통"
       ],
-      "romanization": "konmul",
-      "katakana": "コンムル",
-      "audio": "콧물",
-      "meaning": "Runny nose — 콧물이 나요 (I have a runny nose)",
-      "meaning_ja": "鼻水 ― 콧물이 나요（鼻水が出ます）"
+      "romanization": "dutong",
+      "zhuyin": "ㄉㄨ·ㄊㄨㄥ",
+      "katakana": "トゥトン",
+      "audio": "두통",
+      "meaning": "Headache — 두통이 있어요 = I have a headache",
+      "meaning_zh_tw": "頭痛——두통이 있어요＝我有頭痛",
+      "meaning_ja": "頭痛 ― 두통이 있어요（頭痛があります）",
+      "meaning_es": "Dolor de cabeza — 두통이 있어요 = Tengo dolor de cabeza"
     },
     {
-      "id": 13,
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "소",
+        "화",
+        "불",
+        "량"
+      ],
+      "romanization": "soha bullyoang",
+      "zhuyin": "ㄙㄛ·ㄏㄨㄚ·ㄅㄨㄌ·ㄌㄧㄤ",
+      "katakana": "ソファブルリャン",
+      "audio": "소화불량",
+      "meaning": "Indigestion — very common complaint",
+      "meaning_zh_tw": "消化不良——非常常見的症狀",
+      "meaning_ja": "消化不良 ― よくある症状",
+      "meaning_es": "Indigestión — queja muy común"
+    },
+    {
+      "id": 12,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -196,10 +227,30 @@
         "기"
       ],
       "romanization": "allereugi",
+      "zhuyin": "ㄚㄌ·ㄌㄝ·ㄌㄜ·ㄍㄧ",
       "katakana": "アルレルギ",
       "audio": "알레르기",
-      "meaning": "Allergy — 알레르기 있어요 (I have an allergy)",
-      "meaning_ja": "アレルギー ― 알레르기 있어요（アレルギーがあります）"
+      "meaning": "Allergy — from German Allergie",
+      "meaning_zh_tw": "過敏——來自德語 Allergie",
+      "meaning_ja": "アレルギー ― ドイツ語 Allergie 由来",
+      "meaning_es": "Alergia — del alemán Allergie"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "보",
+        "험"
+      ],
+      "romanization": "boheom",
+      "zhuyin": "ㄅㄛ·ㄏㄜㄇ",
+      "katakana": "ポホム",
+      "audio": "보험",
+      "meaning": "Insurance — 건강 보험 = health insurance",
+      "meaning_zh_tw": "保險——건강 보험＝健康保險",
+      "meaning_ja": "保険 ― 건강 보험（健康保険）",
+      "meaning_es": "Seguro — 건강 보험 = seguro de salud"
     },
     {
       "id": 14,
@@ -210,112 +261,148 @@
         "술"
       ],
       "romanization": "susul",
+      "zhuyin": "ㄙㄨ·ㄙㄨㄌ",
       "katakana": "ススル",
       "audio": "수술",
-      "meaning": "Surgery — 수술을 받았어요 (I had surgery)",
-      "meaning_ja": "手術 ― 수술을 받았어요（手術を受けました）"
+      "meaning": "Surgery / operation",
+      "meaning_zh_tw": "手術",
+      "meaning_ja": "手術",
+      "meaning_es": "Cirugía / operación"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "운",
-        "동"
+        "진",
+        "찰"
       ],
-      "romanization": "undong",
-      "katakana": "ウンドン",
-      "audio": "운동",
-      "meaning": "Exercise — 운동해요? (Do you exercise?)",
-      "meaning_ja": "運動 ― 운동해요？（運動しますか？）"
+      "romanization": "jinchal",
+      "zhuyin": "ㄐㄧㄣ·ㄔㄚㄌ",
+      "katakana": "チンチャル",
+      "audio": "진찰",
+      "meaning": "Medical examination / consultation",
+      "meaning_zh_tw": "診察／看診",
+      "meaning_ja": "診察",
+      "meaning_es": "Examen médico / consulta"
     },
     {
       "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "쉬",
-        "다"
+        "응",
+        "급",
+        "실"
       ],
-      "romanization": "swida",
-      "katakana": "シュイダ",
-      "audio": "쉬다",
-      "meaning": "To rest — 푹 쉬세요 (Please get some rest)",
-      "meaning_ja": "休む ― 푹 쉬세요（ゆっくり休んでください）"
+      "romanization": "eunggeupssil",
+      "zhuyin": "ㄜㄥ·ㄍㄜ·ㄙㄧㄌ",
+      "katakana": "ウングプシル",
+      "audio": "응급실",
+      "meaning": "Emergency room — 응급 = emergency",
+      "meaning_zh_tw": "急診室——응급＝緊急",
+      "meaning_ja": "救急室 ― 응급（緊急）",
+      "meaning_es": "Sala de urgencias — 응급 = emergencia"
     },
     {
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "You have a fever. In Korean you say...",
+      "prompt": "아파요 means...",
+      "prompt_zh_tw": "아파요 的意思是……",
       "choices": [
-        "두통이 있어요",
-        "기침이 나요",
-        "열이 나요",
-        "콧물이 나요"
+        "건강해요",
+        "피곤해요",
+        "아파요",
+        "배고파요"
       ],
-      "correct": "열이 나요",
-      "prompt_ja": "熱があります。韓国語でどう言いますか？"
+      "correct": "아파요",
+      "prompt_ja": "아파요 はどういう意味ですか？",
+      "prompt_es": "아파요 significa..."
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "After your doctor visit, you go next door to pick up your 처방전. What is it?",
+      "prompt": "Where do you go in a medical emergency in Korea?",
+      "prompt_zh_tw": "在韓國遇到醫療緊急情況要去哪裡？",
       "choices": [
-        "A receipt",
-        "A prescription",
-        "Medicine",
-        "An appointment card"
+        "약국",
+        "카페",
+        "응급실",
+        "편의점"
+      ],
+      "choices_zh_tw": [
+        "藥局",
+        "咖啡廳",
+        "急診室",
+        "便利商店"
       ],
       "choices_ja": [
-        "領収書",
-        "処方箋",
-        "薬",
-        "診察券"
+        "薬局",
+        "カフェ",
+        "救急室",
+        "コンビニ"
       ],
-      "correct": "A prescription",
-      "prompt_ja": "診察後、隣の窓口で처방전を受け取ります。それは何ですか？"
+      "correct": "응급실",
+      "prompt_ja": "韓国で医療的な緊急事態が起きたらどこへ行きますか？",
+      "prompt_es": "¿Adónde vas en una emergencia médica en Corea?",
+      "choices_es": [
+        "약국 (farmacia)",
+        "카페 (café)",
+        "응급실 (urgencias)",
+        "편의점 (tienda 24h)"
+      ]
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "A Korean friend tells you 푹 쉬세요. What are they saying?",
+      "prompt": "열이 나요 means...",
+      "prompt_zh_tw": "열이 나요 的意思是……",
       "choices": [
-        "Exercise more",
-        "Eat well",
-        "Please get some rest",
-        "Go to the doctor"
+        "두통이 있어요",
+        "기침이 나요",
+        "열이 나요",
+        "배가 아파요"
       ],
-      "choices_ja": [
-        "もっと運動してください",
-        "よく食べてください",
-        "ゆっくり休んでください",
-        "病院へ行ってください"
-      ],
-      "correct": "Please get some rest",
-      "prompt_ja": "韓国人の友人に「푹 쉬세요」と言われました。何を言われていますか？"
+      "correct": "열이 나요",
+      "prompt_ja": "열이 나요 はどういう意味ですか？",
+      "prompt_es": "열이 나요 significa..."
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "What is 약국?",
+      "prompt": "What is 처방전?",
+      "prompt_zh_tw": "처방전 是什麼？",
       "choices": [
-        "Hospital",
         "Pharmacy",
-        "Clinic",
-        "Emergency room"
+        "Doctor",
+        "Prescription",
+        "Insurance"
+      ],
+      "choices_zh_tw": [
+        "藥局",
+        "醫生",
+        "處方箋",
+        "保險"
       ],
       "choices_ja": [
-        "病院",
         "薬局",
-        "クリニック",
-        "救急室"
+        "医師",
+        "処方箋",
+        "保険"
       ],
-      "correct": "Pharmacy",
-      "prompt_ja": "약국とは何ですか？"
+      "correct": "Prescription",
+      "prompt_ja": "처방전 とは何ですか？",
+      "prompt_es": "¿Qué es la 처방전?",
+      "choices_es": [
+        "Farmacia",
+        "Médico",
+        "Receta médica",
+        "Seguro"
+      ]
     },
     {
       "id": 21,
@@ -323,9 +410,13 @@
       "type": "lesson_complete",
       "title": "Health Complete!",
       "title_kr": "건강 완성!",
-      "message": "건강하세요! (Stay healthy!) You can now describe symptoms, understand medical advice, and navigate Korea's excellent healthcare system. Remember: 몸이 좋지 않으면 병원에 가세요 (If you don't feel well, go to the clinic).",
-      "next_url": "vocabulary.html?cat=media",
-      "message_ja": "건강하세요！（健康でいてください！）症状の説明・医療アドバイスの理解・韓国の優れた医療システムの利用ができるようになりました。体調が悪いときは：몸이 좋지 않으면 병원에 가세요（具合が悪ければ病院へ）。"
+      "title_zh_tw": "健康詞彙完成！",
+      "message": "건강하세요! You've mastered Korean health vocabulary. Whether at a clinic, pharmacy, or in an emergency, you now have the language tools to get the help you need in Korea. 건강이 최고예요 — Health is the greatest!",
+      "message_zh_tw": "건강하세요！你已掌握韓語健康詞彙。無論是在診所、藥局還是緊急情況下，你現在都擁有在韓國獲得幫助所需的語言工具。건강이 최고예요——健康是最重要的！",
+      "next_url": "vocabulary.html?cat=workplace",
+      "message_ja": "건강하세요！韓国語の健康語彙をマスターしました。クリニック・薬局・緊急時にも、必要なサポートを受けるための言語力が備わりました。건강이 최고예요（健康が一番！）",
+      "title_es": "¡Salud Completada!",
+      "message_es": "건강하세요! Has dominado el vocabulario de salud en coreano. Ya sea en una clínica, farmacia o en una emergencia, ahora tienes las herramientas lingüísticas para obtener ayuda en Corea. 건강이 최고예요 — ¡La salud es lo más importante!"
     }
   ]
 }

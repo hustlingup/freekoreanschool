@@ -5,10 +5,11 @@
     {
       "id": 1,
       "name": "Days & Time",
-      "name_kr": "날짜·시간",
+      "name_kr": "요일과 시간",
       "first_step": 1,
       "last_step": 23,
-      "time_minutes": 14
+      "time_minutes": 14,
+      "name_es": "Días y Hora"
     }
   ],
   "steps": [
@@ -16,18 +17,48 @@
       "id": 1,
       "stage": 1,
       "type": "reading_card",
-      "title": "Days and Time in Korean",
-      "title_kr": "날짜와 시간",
-      "body": "Korean days of the week follow the Chinese five elements system: 월 (moon/Monday), 화 (fire/Tuesday), 수 (water/Wednesday), 목 (wood/Thursday), 금 (metal/Friday), 토 (earth/Saturday), 일 (sun/Sunday). Time uses Sino-Korean numbers for minutes and native Korean for hours.",
+      "title": "Days & Time in Korean",
+      "title_kr": "요일과 시간",
+      "title_zh_tw": "韓語星期與時間",
+      "body": "Korean days of the week come from the Chinese five-element system plus sun and moon. Hours use native Korean numbers (하나~열), while minutes use Sino-Korean numbers (일~오십구). Master this split and you can tell any time in Korean.",
+      "body_zh_tw": "韓語星期源自中文五行加上太陽和月亮。小時使用固有語數字（하나～열），分鐘使用漢字語數字（일～오십구）。掌握這個規律，你就能用韓語報出任何時間。",
+      "rules": [
+        "Days: 월(Mon), 화(Tue), 수(Wed), 목(Thu), 금(Fri), 토(Sat), 일(Sun) + 요일",
+        "Hours: use native Korean numbers → 한 시 (1 o'clock), 두 시 (2 o'clock)",
+        "Minutes: use Sino-Korean numbers → 오 분 (5 min), 삼십 분 (30 min)",
+        "AM/PM: 오전 (morning/AM), 오후 (afternoon/PM)"
+      ],
+      "rules_zh_tw": [
+        "星期：월（一）、화（二）、수（三）、목（四）、금（五）、토（六）、일（日）+ 요일",
+        "小時：使用固有語數字→한 시（1點）、두 시（2點）",
+        "分鐘：使用漢字語數字→오 분（5分）、삼십 분（30分）",
+        "上下午：오전（上午/AM）、오후（下午/PM）"
+      ],
       "tip": {
-        "icon": "📅",
-        "label": "Time mixing",
-        "text": "To say 3:30, Koreans say 세 시 삼십 분 — 세 시 uses native Korean (세 = three), but 삼십 분 uses Sino-Korean (삼십 = thirty). You must mix both systems when telling time!"
+        "icon": "🗓️",
+        "label": "Memory trick for days",
+        "text": "월 = Moon (月), 화 = Fire (火), 수 = Water (水), 목 = Wood (木), 금 = Gold (金), 토 = Earth (土), 일 = Sun (日) — the same as Japanese days!"
       },
-      "body_ja": "韓国語の曜日は中国の五行説に基づきます：월（月曜）・화（火曜）・수（水曜）・목（木曜）・금（金曜）・토（土曜）・일（日曜）。時刻は分に漢数字、時に固有語を使います。",
+      "tip_zh_tw": {
+        "label": "星期記憶技巧",
+        "text": "월＝月、화＝火、수＝水、목＝木、금＝金、토＝土、일＝日——和日語的星期完全相同！"
+      },
+      "body_ja": "韓国語の曜日は中国語の五行（火・水・木・金・土）と日・月から来ています。時は固有語（하나〜열）、分は漢数字（일〜오십구）を使います。",
       "tip_ja": {
-        "label": "数体系の混合",
-        "text": "3時30分は「세 시 삼십 분」と言います―세 시は固有語（세＝3）、삼십 분は漢数字（삼십＝30）。時刻を言うときは2つの数体系を混ぜて使います！"
+        "label": "曜日の覚え方",
+        "text": "월（月）・화（火）・수（水）・목（木）・금（金）・토（土）・일（日）― 日本語の曜日と同じ！"
+      },
+      "title_es": "Días y Hora en Coreano",
+      "body_es": "Los días de la semana coreanos provienen del sistema chino de cinco elementos más el sol y la luna. Las horas usan números nativos coreanos (하나~열), mientras que los minutos usan números sino-coreanos (일~오십구). Domina esta división y podrás decir cualquier hora en coreano.",
+      "rules_es": [
+        "Días: 월(lun), 화(mar), 수(mié), 목(jue), 금(vie), 토(sáb), 일(dom) + 요일",
+        "Horas: usa números coreanos nativos → 한 시 (la 1 en punto), 두 시 (las 2 en punto)",
+        "Minutos: usa números sino-coreanos → 오 분 (5 min), 삼십 분 (30 min)",
+        "AM/PM: 오전 (mañana/AM), 오후 (tarde/PM)"
+      ],
+      "tip_es": {
+        "label": "Truco de memoria para los días",
+        "text": "월 = Luna (月), 화 = Fuego (火), 수 = Agua (水), 목 = Madera (木), 금 = Oro (金), 토 = Tierra (土), 일 = Sol (日) — ¡igual que los días en japonés!"
       }
     },
     {
@@ -40,10 +71,13 @@
         "일"
       ],
       "romanization": "woryoil",
+      "zhuyin": "ㄨㄜㄌ·ㄧㄠ·ㄧㄌ",
       "katakana": "ウォリョイル",
       "audio": "월요일",
-      "meaning": "Monday — 월 means 'moon/month'",
-      "meaning_ja": "月曜日 ― 월 は「月」の意味"
+      "meaning": "Monday — 월 (Moon/Month)",
+      "meaning_zh_tw": "星期一——월（月）",
+      "meaning_ja": "月曜日 ― 월（月）",
+      "meaning_es": "Lunes — 월 (Luna/Mes)"
     },
     {
       "id": 3,
@@ -55,10 +89,13 @@
         "일"
       ],
       "romanization": "hwayoil",
+      "zhuyin": "ㄏㄨㄚ·ㄧㄠ·ㄧㄌ",
       "katakana": "ファヨイル",
       "audio": "화요일",
-      "meaning": "Tuesday — 화 means 'fire'",
-      "meaning_ja": "火曜日 ― 화 は「火」の意味"
+      "meaning": "Tuesday — 화 (Fire)",
+      "meaning_zh_tw": "星期二——화（火）",
+      "meaning_ja": "火曜日 ― 화（火）",
+      "meaning_es": "Martes — 화 (Fuego)"
     },
     {
       "id": 4,
@@ -70,10 +107,13 @@
         "일"
       ],
       "romanization": "suyoil",
+      "zhuyin": "ㄙㄨ·ㄧㄠ·ㄧㄌ",
       "katakana": "スヨイル",
       "audio": "수요일",
-      "meaning": "Wednesday — 수 means 'water'",
-      "meaning_ja": "水曜日 ― 수 は「水」の意味"
+      "meaning": "Wednesday — 수 (Water)",
+      "meaning_zh_tw": "星期三——수（水）",
+      "meaning_ja": "水曜日 ― 수（水）",
+      "meaning_es": "Miércoles — 수 (Agua)"
     },
     {
       "id": 5,
@@ -85,10 +125,13 @@
         "일"
       ],
       "romanization": "mogyoil",
+      "zhuyin": "ㄇㄛ·ㄧㄠ·ㄧㄌ",
       "katakana": "モギョイル",
       "audio": "목요일",
-      "meaning": "Thursday — 목 means 'wood/tree'",
-      "meaning_ja": "木曜日 ― 목 は「木」の意味"
+      "meaning": "Thursday — 목 (Wood/Tree)",
+      "meaning_zh_tw": "星期四——목（木）",
+      "meaning_ja": "木曜日 ― 목（木）",
+      "meaning_es": "Jueves — 목 (Madera/Árbol)"
     },
     {
       "id": 6,
@@ -100,10 +143,13 @@
         "일"
       ],
       "romanization": "geumyoil",
+      "zhuyin": "ㄍㄜㄇ·ㄧㄠ·ㄧㄌ",
       "katakana": "クミョイル",
       "audio": "금요일",
-      "meaning": "Friday — 금 means 'gold/metal'",
-      "meaning_ja": "金曜日 ― 금 は「金・金属」の意味"
+      "meaning": "Friday — 금 (Gold/Metal)",
+      "meaning_zh_tw": "星期五——금（金）",
+      "meaning_ja": "金曜日 ― 금（金）",
+      "meaning_es": "Viernes — 금 (Oro/Metal)"
     },
     {
       "id": 7,
@@ -115,10 +161,13 @@
         "일"
       ],
       "romanization": "toyoil",
+      "zhuyin": "ㄊㄛ·ㄧㄠ·ㄧㄌ",
       "katakana": "トヨイル",
       "audio": "토요일",
-      "meaning": "Saturday — 토 means 'earth/soil'",
-      "meaning_ja": "土曜日 ― 토 は「土」の意味"
+      "meaning": "Saturday — 토 (Earth/Soil)",
+      "meaning_zh_tw": "星期六——토（土）",
+      "meaning_ja": "土曜日 ― 토（土）",
+      "meaning_es": "Sábado — 토 (Tierra)"
     },
     {
       "id": 8,
@@ -129,22 +178,32 @@
         "요",
         "일"
       ],
-      "romanization": "ilyoil",
+      "romanization": "iryoil",
+      "zhuyin": "ㄧㄌ·ㄧㄠ·ㄧㄌ",
       "katakana": "イリョイル",
       "audio": "일요일",
-      "meaning": "Sunday — 일 means 'sun/day'",
-      "meaning_ja": "日曜日 ― 일 は「太陽・日」の意味"
+      "meaning": "Sunday — 일 (Sun)",
+      "meaning_zh_tw": "星期日——일（日）",
+      "meaning_ja": "日曜日 ― 일（日）",
+      "meaning_es": "Domingo — 일 (Sol)"
     },
     {
       "id": 9,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "금요일 contains 금, meaning 'gold.' Which day is it?",
+      "prompt": "수요일 means...",
+      "prompt_zh_tw": "수요일 的意思是……",
       "choices": [
         "Monday",
         "Wednesday",
         "Friday",
         "Sunday"
+      ],
+      "choices_zh_tw": [
+        "星期一",
+        "星期三",
+        "星期五",
+        "星期日"
       ],
       "choices_ja": [
         "月曜日",
@@ -152,11 +211,113 @@
         "金曜日",
         "日曜日"
       ],
-      "correct": "Friday",
-      "prompt_ja": "금요일の「금」は「金」を意味します。何曜日ですか？"
+      "correct": "Wednesday",
+      "prompt_ja": "수요일は何曜日ですか？",
+      "prompt_es": "수요일 significa...",
+      "choices_es": [
+        "Lunes",
+        "Miércoles",
+        "Viernes",
+        "Domingo"
+      ]
     },
     {
       "id": 10,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "Telling Time in Korean",
+      "title_kr": "시간 말하기",
+      "title_zh_tw": "韓語報時",
+      "body": "To tell time: say AM/PM + hour (native number + 시) + minute (Sino-Korean number + 분). Example: 오전 두 시 삼십 분 = 2:30 AM. 오후 다섯 시 = 5:00 PM.",
+      "body_zh_tw": "報時方式：上/下午 + 小時（固有語數字 + 시）+ 分鐘（漢字語數字 + 분）。例：오전 두 시 삼십 분＝凌晨2點30分。오후 다섯 시＝下午5點整。",
+      "body_ja": "時刻の伝え方：午前/午後 + 時（固有語数字 + 시）+ 分（漢数字 + 분）。例：오전 두 시 삼십 분（午前2時30分）、오후 다섯 시（午後5時）。",
+      "title_es": "Cómo Decir la Hora en Coreano",
+      "body_es": "Para decir la hora: di AM/PM + hora (número nativo + 시) + minutos (número sino-coreano + 분). Ejemplo: 오전 두 시 삼십 분 = 2:30 AM. 오후 다섯 시 = 5:00 PM."
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "시"
+      ],
+      "romanization": "si",
+      "zhuyin": "ㄙㄧ",
+      "katakana": "シ",
+      "audio": "시",
+      "meaning": "O'clock / hour — 두 시 = 2 o'clock (uses native Korean number)",
+      "meaning_zh_tw": "點鐘 / 小時——두 시＝2點鐘（使用固有語數字）",
+      "meaning_ja": "時 ― 두 시（2時）；固有語数字と使う",
+      "meaning_es": "En punto / hora — 두 시 = las 2 en punto (usa número nativo coreano)"
+    },
+    {
+      "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "분"
+      ],
+      "romanization": "bun",
+      "zhuyin": "ㄅㄨㄣ",
+      "katakana": "プン",
+      "audio": "분",
+      "meaning": "Minute — 삼십 분 = 30 minutes (uses Sino-Korean number)",
+      "meaning_zh_tw": "分鐘——삼십 분＝30分鐘（使用漢字語數字）",
+      "meaning_ja": "分 ― 삼십 분（30分）；漢数字と使う",
+      "meaning_es": "Minuto — 삼십 분 = 30 minutos (usa número sino-coreano)"
+    },
+    {
+      "id": 13,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "반"
+      ],
+      "romanization": "ban",
+      "zhuyin": "ㄅㄢ",
+      "katakana": "パン",
+      "audio": "반",
+      "meaning": "Half — 두 시 반 = 2:30 (half past two)",
+      "meaning_zh_tw": "半——두 시 반＝兩點半",
+      "meaning_ja": "半 ― 두 시 반（2時半）",
+      "meaning_es": "Media hora / mitad — 두 시 반 = las 2 y media"
+    },
+    {
+      "id": 14,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "오",
+        "전"
+      ],
+      "romanization": "ojeon",
+      "zhuyin": "ㄛ·ㄓㄜㄣ",
+      "katakana": "オジョン",
+      "audio": "오전",
+      "meaning": "AM / morning — 오전 열 시 = 10:00 AM",
+      "meaning_zh_tw": "上午 / AM——오전 열 시＝上午10點",
+      "meaning_ja": "午前 ― 오전 열 시（午前10時）",
+      "meaning_es": "AM / por la mañana — 오전 열 시 = las 10:00 AM"
+    },
+    {
+      "id": 15,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "오",
+        "후"
+      ],
+      "romanization": "ohu",
+      "zhuyin": "ㄛ·ㄏㄨ",
+      "katakana": "オフ",
+      "audio": "오후",
+      "meaning": "PM / afternoon — 오후 세 시 = 3:00 PM",
+      "meaning_zh_tw": "下午 / PM——오후 세 시＝下午3點",
+      "meaning_ja": "午後 ― 오후 세 시（午後3時）",
+      "meaning_es": "PM / por la tarde — 오후 세 시 = las 3:00 PM"
+    },
+    {
+      "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -164,13 +325,16 @@
         "늘"
       ],
       "romanization": "oneul",
+      "zhuyin": "ㄛ·ㄋㄜㄌ",
       "katakana": "オヌル",
       "audio": "오늘",
       "meaning": "Today",
-      "meaning_ja": "今日"
+      "meaning_zh_tw": "今天",
+      "meaning_ja": "今日",
+      "meaning_es": "Hoy"
     },
     {
-      "id": 11,
+      "id": 17,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -178,13 +342,16 @@
         "일"
       ],
       "romanization": "naeil",
+      "zhuyin": "ㄋㄝ·ㄧㄌ",
       "katakana": "ネイル",
       "audio": "내일",
       "meaning": "Tomorrow",
-      "meaning_ja": "明日"
+      "meaning_zh_tw": "明天",
+      "meaning_ja": "明日",
+      "meaning_es": "Mañana"
     },
     {
-      "id": 12,
+      "id": 18,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -192,13 +359,16 @@
         "제"
       ],
       "romanization": "eoje",
+      "zhuyin": "ㄜ·ㄓㄝ",
       "katakana": "オジェ",
       "audio": "어제",
       "meaning": "Yesterday",
-      "meaning_ja": "昨日"
+      "meaning_zh_tw": "昨天",
+      "meaning_ja": "昨日",
+      "meaning_es": "Ayer"
     },
     {
-      "id": 13,
+      "id": 19,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -206,68 +376,16 @@
         "금"
       ],
       "romanization": "jigeum",
+      "zhuyin": "ㄐㄧ·ㄍㄜㄇ",
       "katakana": "チグム",
       "audio": "지금",
       "meaning": "Now / right now",
-      "meaning_ja": "今 / 今すぐ"
+      "meaning_zh_tw": "現在 / 此刻",
+      "meaning_ja": "今・今すぐ",
+      "meaning_es": "Ahora / en este momento"
     },
     {
-      "id": 14,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "아",
-        "침"
-      ],
-      "romanization": "achim",
-      "katakana": "アチム",
-      "audio": "아침",
-      "meaning": "Morning — also means 'breakfast'",
-      "meaning_ja": "朝 ― 朝食の意味もある"
-    },
-    {
-      "id": 15,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "점",
-        "심"
-      ],
-      "romanization": "jeomsim",
-      "katakana": "チョムシム",
-      "audio": "점심",
-      "meaning": "Noon / lunch",
-      "meaning_ja": "昼 / 昼食"
-    },
-    {
-      "id": 16,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "저",
-        "녁"
-      ],
-      "romanization": "jeonyeok",
-      "katakana": "チョニョク",
-      "audio": "저녁",
-      "meaning": "Evening — also means 'dinner'",
-      "meaning_ja": "夕方 ― 夕食の意味もある"
-    },
-    {
-      "id": 17,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "밤"
-      ],
-      "romanization": "bam",
-      "katakana": "パム",
-      "audio": "밤",
-      "meaning": "Night — also means 'chestnut' (same spelling, different meaning)",
-      "meaning_ja": "夜 ― 栗（バム）と同じ綴り"
-    },
-    {
-      "id": 18,
+      "id": 20,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -275,81 +393,95 @@
         "말"
       ],
       "romanization": "jumal",
+      "zhuyin": "ㄓㄨ·ㄇㄚㄌ",
       "katakana": "チュマル",
       "audio": "주말",
-      "meaning": "Weekend — 주 (week) + 말 (end)",
-      "meaning_ja": "週末 ― 주（週）+ 말（終わり）"
-    },
-    {
-      "id": 19,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "시",
-        "간"
-      ],
-      "romanization": "sigan",
-      "katakana": "シガン",
-      "audio": "시간",
-      "meaning": "Time / hour — 한 시간 = one hour",
-      "meaning_ja": "時間 ― 한 시간（1時間）"
-    },
-    {
-      "id": 20,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "분"
-      ],
-      "romanization": "bun",
-      "katakana": "プン",
-      "audio": "분",
-      "meaning": "Minute — uses Sino-Korean numbers (십 분 = 10 minutes)",
-      "meaning_ja": "分 ― 漢字語の数字と使う（십 분 = 10分）"
+      "meaning": "Weekend — 주말에 뭐 해요? = What are you doing on the weekend?",
+      "meaning_zh_tw": "週末——주말에 뭐 해요？＝週末你有什麼計畫？",
+      "meaning_ja": "週末 ― 주말에 뭐 해요？（週末は何をしますか？）",
+      "meaning_es": "Fin de semana — 주말에 뭐 해요? = ¿Qué harás el fin de semana?"
     },
     {
       "id": 21,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Which word means 'tomorrow'?",
+      "prompt": "Which number system do you use with 시 (o'clock)?",
+      "prompt_zh_tw": "與시（點鐘）搭配使用哪種數字系統？",
       "choices": [
-        "어제",
-        "오늘",
-        "내일",
-        "지금"
+        "Sino-Korean (일, 이, 삼...)",
+        "Native Korean (하나, 둘, 셋...)",
+        "Either one works",
+        "Roman numerals"
       ],
-      "correct": "내일",
-      "prompt_ja": "「明日」はどの単語ですか？"
+      "choices_zh_tw": [
+        "漢字語（일、이、삼……）",
+        "固有語（하나、둘、셋……）",
+        "兩種都可以",
+        "羅馬數字"
+      ],
+      "choices_ja": [
+        "漢数字（일、이、삼…）",
+        "固有語（하나、둘、셋…）",
+        "どちらでもよい",
+        "ローマ数字"
+      ],
+      "correct": "Native Korean (하나, 둘, 셋...)",
+      "prompt_ja": "시（時）と組み合わせる数体系は？",
+      "prompt_es": "¿Qué sistema numérico usas con 시 (en punto)?",
+      "choices_es": [
+        "Sino-coreano (일, 이, 삼...)",
+        "Coreano nativo (하나, 둘, 셋...)",
+        "Cualquiera sirve",
+        "Números romanos"
+      ]
     },
     {
       "id": 22,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "아침 means both 'morning' and...",
+      "prompt": "오후 두 시 반 means...",
+      "prompt_zh_tw": "오후 두 시 반 的意思是……",
       "choices": [
-        "Lunch",
-        "Dinner",
-        "Breakfast",
-        "Midnight"
+        "2:00 AM",
+        "2:30 AM",
+        "2:00 PM",
+        "2:30 PM"
+      ],
+      "choices_zh_tw": [
+        "凌晨2點整",
+        "凌晨2點半",
+        "下午2點整",
+        "下午2點半"
       ],
       "choices_ja": [
-        "昼食",
-        "夕食",
-        "朝食",
-        "深夜"
+        "午前2時ちょうど",
+        "午前2時半",
+        "午後2時ちょうど",
+        "午後2時半"
       ],
-      "correct": "Breakfast",
-      "prompt_ja": "아침は「朝」と同時に何を意味しますか？"
+      "correct": "2:30 PM",
+      "prompt_ja": "오후 두 시 반 は何時何分ですか？",
+      "prompt_es": "오후 두 시 반 significa...",
+      "choices_es": [
+        "2:00 AM",
+        "2:30 AM",
+        "2:00 PM",
+        "2:30 PM"
+      ]
     },
     {
       "id": 23,
       "stage": 1,
       "type": "lesson_complete",
       "title": "Days & Time Complete!",
-      "title_kr": "날짜·시간 완성!",
-      "message": "You can now navigate time in Korean! Days of the week and time expressions unlock scheduling, making plans, and understanding K-drama episode schedules. 주말에 뭐 해요? (What are you doing this weekend?)",
+      "title_kr": "요일과 시간 완성!",
+      "title_zh_tw": "星期與時間完成！",
+      "message": "Excellent! You now know the full Korean week and can tell time. Next time someone asks 지금 몇 시예요? (What time is it?), you can answer confidently!",
+      "message_zh_tw": "太棒了！你現在掌握了完整的韓語星期和報時方式。下次有人問 지금 몇 시예요？（現在幾點？），你可以自信地回答！",
       "next_url": "vocabulary.html?cat=places",
-      "message_ja": "韓国語で時間を表現できるようになりました！曜日と時間表現で、約束・スケジュール・K-ドラマのエピソード確認ができます。주말에 뭐 해요？（週末は何をしますか？）"
+      "message_ja": "素晴らしい！曜日と時刻の言い方をマスターしました。지금 몇 시예요？（今何時ですか？）と聞かれても自信を持って答えられます！",
+      "title_es": "¡Días y Hora Completados!",
+      "message_es": "¡Excelente! Ahora conoces la semana completa en coreano y puedes decir la hora. ¡La próxima vez que alguien pregunte 지금 몇 시예요? (¿Qué hora es?), podrás responder con confianza!"
     }
   ]
 }

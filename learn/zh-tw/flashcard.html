@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>字卡 — 단어 카드 | 한국어 학교</title>
+  <meta name="description" content="韓語字卡練習 — 用間隔重複字卡複習詞彙和文法，每張卡片附音檔。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="canonical" href="https://freekoreanschool.com/learn/zh-tw/flashcard">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="字卡 — 단어 카드 | 한국어 학교">
+  <meta property="og:description" content="韓語字卡練習 — 用間隔重複字卡複習詞彙和文法，每張卡片附音檔。">
+  <meta property="og:url" content="https://freekoreanschool.com/learn/zh-tw/flashcard">
+  <meta property="og:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <meta property="og:site_name" content="Korean School 한국어 학교">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="字卡 — 단어 카드 | 한국어 학교">
+  <meta name="twitter:description" content="韓語字卡練習 — 用間隔重複字卡複習詞彙和文法，每張卡片附音檔。">
+  <meta name="twitter:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <link rel="alternate" hreflang="zh-TW" href="https://freekoreanschool.com/learn/zh-tw/flashcard"><link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/learn/ja/flashcard">
+  <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/learn/flashcard">
+  <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/learn/flashcard">
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"字卡 — 단어 카드 | 한국어 학교","description":"韓語字卡練習 — 用間隔重複字卡複習詞彙和文法，每張卡片附音檔。","url":"https://freekoreanschool.com/learn/zh-tw/flashcard","inLanguage":"zh-TW","isPartOf":{"@type":"WebSite","name":"Korean School 한국어 학교","url":"https://freekoreanschool.com"}}
+  </script>
+  <meta name="google-adsense-account" content="ca-pub-6791974364232767">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791974364232767" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D94KSYG9DE"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D94KSYG9DE');</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../../zh-tw/index.html" class="logo">
+      <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+      <div class="logo-text">Korean School <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="hangul.html" class="active"><span class="nav-icon">📚</span> 學習</a></li>
+      <li><a href="../../culture/zh-tw/index.html"><span class="nav-icon">🎵</span> K文化</a></li>
+      <li><a href="../../travel/zh-tw/index.html"><span class="nav-icon">🗺️</span> 旅遊</a></li>
+      <li><a href="../../news/zh-tw/index.html"><span class="nav-icon">📰</span> 新聞</a></li>
+      <li><a href="../../zh-tw/quiz.html"><span class="nav-icon">📝</span> 測驗</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar"><span class="search-icon">🔍</span><input type="text" id="search-input" placeholder="搜尋課程..."></div>
+      <button class="icon-btn" id="theme-toggle" aria-label="切換主題">🌙</button>
+      <div class="lang-picker" id="lang-picker">
+        <button class="icon-btn lang-picker-btn" id="lang-picker-btn" aria-label="選擇語言">🌐</button>
+        <div class="lang-dropdown" id="lang-dropdown" hidden>
+          <a class="lang-option" href="../../learn/flashcard.html">🇺🇸 English</a>
+          <span class="lang-option active">🇹🇼 繁體中文</span>
+        </div>
+      </div>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="選單">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header"><div id="lesson-progress-grid"></div></div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">入門</div>
+    <a href="../../zh-tw/index.html" class="sidebar-link"><span class="link-icon">🏠</span> 介紹</a>
+    <a href="hangul.html" class="sidebar-link"><span class="link-icon">✏️</span> 韓文字母</a>
+    <a href="syllable-blocks.html" class="sidebar-link"><span class="link-icon">🔷</span> 音節積木</a>
+    <a href="pronunciation.html" class="sidebar-link"><span class="link-icon">🔊</span> 發音指南</a>
+    <div class="sidebar-section">初級</div>
+    <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> 詞彙 <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-vocab">
+      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> 問候語</a>
+      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> 數字</a>
+      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> 家族</a>
+      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> 飲食</a>
+      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> 顏色</a>
+      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> 星期與時間</a>
+      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> 地點</a>
+      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> 情緒</a>
+      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> 身體部位</a>
+      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> 旅遊</a>
+      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> 購物</a>
+      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> 天氣</a>
+      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> 動詞與動作</a>
+      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> 形容詞</a>
+      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> 職場</a>
+      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> 健康與醫療</a>
+      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> 媒體與K文化</a>
+      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> 諺語與慣用語</a>
+      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> 學術韓語</a>
+      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> 新聞與社會</a>
+      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> 韓式英語</a>
+    </div>
+    <a href="pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> 代名詞 <span class="link-badge badge-beginner">初級</span></a>
+    <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> 常用名詞 <span class="link-badge badge-beginner">初級</span></a>
+    <button class="sidebar-accordion-btn" data-accordion="grammar"><span class="link-icon">📝</span> 文法 <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-grammar">
+      <a href="grammar.html#sentence-structure" class="sidebar-link" data-level="intermediate"><span class="link-icon">📐</span> 句子結構 <span class="link-badge badge-intermediate">中級</span></a>
+      <a href="grammar.html#particles" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔗</span> 韓語助詞 <span class="link-badge badge-intermediate">中級</span></a>
+      <a href="grammar.html#conjugation" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏰</span> 動詞變化 <span class="link-badge badge-intermediate">中級</span></a>
+      <a href="grammar.html#questions" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> 疑問句型 <span class="link-badge badge-intermediate">中級</span></a>
+    </div>
+    <div class="sidebar-section">中級</div>
+    <a href="speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> 正式與非正式 <span class="link-badge badge-intermediate">中級</span></a>
+    <a href="emotions.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">😊</span> 表達情緒 <span class="link-badge badge-intermediate">中級</span></a>
+    <a href="shopping.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛒</span> 購物短語 <span class="link-badge badge-intermediate">中級</span></a>
+    <div class="sidebar-section">高級</div>
+    <a href="writing-essays.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📝</span> 寫作文 <span class="link-badge badge-advanced">高級</span></a>
+    <a href="business-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">💼</span> 商務韓語 <span class="link-badge badge-advanced">高級</span></a>
+    <a href="classical-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> 古典韓語 <span class="link-badge badge-advanced">高級</span></a>
+    <div class="sidebar-section">工具</div>
+    <a href="dialogues.html" class="sidebar-link"><span class="link-icon">💬</span> 韓語對話</a>
+    <a href="vocabulary-browser.html" class="sidebar-link"><span class="link-icon">⭐</span> 單字瀏覽器</a>
+    <a href="flashcard.html" class="sidebar-link active"><span class="link-icon">📇</span> 字卡</a>
+  </nav>
+</aside>
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="lesson-breadcrumb">
+      <a href="../../zh-tw/index.html">首頁</a>
+      <span class="sep">›</span>
+      <a href="hangul.html">學習</a>
+      <span class="sep">›</span>
+      <a href="vocabulary.html">詞彙</a>
+      <span class="sep">›</span>
+      <span>字卡</span>
+    </div>
+
+    <div class="lesson-header">
+      <div class="lesson-tag">📇 學習工具</div>
+      <h1 class="lesson-title">字<span class="grad-text">卡</span> — 단어 카드</h1>
+      <p class="lesson-meta">
+        <span>📇 一次一張卡片</span>
+        <span>🔊 音檔發音</span>
+        <span>⭐ 儲存單字</span>
+        <span>🎲 隨機出題</span>
+      </p>
+    </div>
+
+    <div class="fc-set-info" style="margin-bottom:8px">
+      <span id="fc-set-name" style="font-size:1.1rem;font-weight:700;color:var(--text)">我的單字</span>
+      <span id="fc-set-count" style="font-size:0.85rem;color:var(--text-muted)">0張卡片</span>
+    </div>
+
+    <div id="fc-empty" class="fc-empty" style="display:none">
+      <div class="fc-empty-icon">⭐</div>
+      <div class="fc-empty-title">此組沒有卡片</div>
+      <div class="fc-empty-desc">
+        前往<a href="vocabulary.html" style="color:var(--primary)">詞彙</a>頁面，點擊任何單字的 <strong>☆</strong> 即可加入。<br>
+        或從側邊欄選擇內建單字組。
+      </div>
+      <a href="vocabulary.html" class="btn btn-primary">瀏覽詞彙 →</a>
+    </div>
+
+    <div id="fc-stage" class="fc-stage">
+
+      <div id="fc-card" class="fc-card" role="button" aria-label="翻面">
+        <div class="fc-card-inner">
+          <div class="fc-card-face fc-card-front">
+            <div id="fc-front-kor" class="fc-front-kor">—</div>
+            <div class="fc-front-hint">點擊翻面 · 뒤집기</div>
+          </div>
+          <div class="fc-card-face fc-card-back">
+            <div id="fc-back-eng" class="fc-back-eng">—</div>
+            <div id="fc-back-rom" class="fc-back-rom"></div>
+            <div id="fc-back-theme" class="fc-back-theme"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fc-progress-wrap">
+        <div class="fc-progress-track">
+          <div id="fc-progress-fill" class="fc-progress-fill" style="width:0%"></div>
+        </div>
+        <div class="fc-progress-text">
+          <span id="fc-progress-counter">0 / 0</span>
+          <span class="fc-kb-hint"><kbd>←</kbd> <kbd>→</kbd> 切換 &nbsp; <kbd>Space</kbd> 翻面</span>
+        </div>
+      </div>
+
+      <div class="fc-controls">
+        <button id="fc-prev" class="btn btn-outline btn-sm">← 上一張</button>
+        <button id="fc-flip-btn" class="btn btn-secondary">翻牌</button>
+        <button id="fc-next" class="btn btn-primary">下一張 →</button>
+      </div>
+
+      <div class="fc-actions">
+        <button id="fc-speak" class="btn btn-outline btn-sm">🔊 朗讀</button>
+        <button id="fc-shuffle" class="btn btn-outline btn-sm">🔀 隨機排序</button>
+        <button id="fc-restart" class="btn btn-outline btn-sm">↩ 重新開始</button>
+        <button id="fc-bookmark-btn" class="btn btn-outline btn-sm bookmark-btn">☆ 加入我的單字</button>
+      </div>
+
+    </div>
+
+    <div class="tip-box animate-on-scroll" style="margin-top:40px">
+      <span class="tip-icon">💡</span>
+      <div class="tip-content">
+        <div class="tip-label">如何建立你的字卡組</div>
+        <div class="tip-text">前往<a href="vocabulary.html" style="color:var(--accent)">詞彙頁面</a>，點擊任何單字的 <strong>☆</strong> 即可儲存至<em>我的單字</em>。使用側邊欄單字組即可立即練習 — 無需設定。主題組和隨機組會自動從你的詞彙快取中載入。</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="ad-zone ad-zone--bottom">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-6791974364232767"
+         data-ad-slot="9704719339"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../../zh-tw/index.html" class="logo">
+          <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+          <div class="logo-text">Korean School <span>한국어 학교</span></div>
+        </a>
+        <p>免費韓語學習平台 — 結合語言學習、K文化、旅遊指南與實際練習，適合全球各程度的學習者。</p>
+      </div>
+      <div><div class="footer-heading">學習</div><ul class="footer-links"><li><a href="hangul.html">韓文字母</a></li><li><a href="grammar.html">文法</a></li><li><a href="vocabulary.html">詞彙</a></li></ul></div>
+      <div><div class="footer-heading">探索</div><ul class="footer-links"><li><a href="../../culture/zh-tw/index.html">K文化</a></li><li><a href="../../travel/zh-tw/index.html">旅遊指南</a></li><li><a href="../../news/zh-tw/index.html">韓國新聞</a></li></ul></div>
+      <div><div class="footer-heading">關於</div><ul class="footer-links"><li><a href="../../zh-tw/about.html">關於我們</a></li><li><a href="../../zh-tw/contact.html">聯絡我們</a></li><li><a href="../../zh-tw/privacy.html">隱私政策</a></li><li><a href="../../zh-tw/terms.html">使用條款</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. 為全球韓語學習者用心製作 ❤️</span>
+      <span>🇰🇷 학습을 즐기세요！（享受你的學習！）</span>
+    </div>
+  </div>
+</footer>
+<script src="../../js/lang-core.js"></script>
+<script src="../../js/app.js"></script>
+<script defer src="../../js/ads.js"></script>
+</body>
+</html>

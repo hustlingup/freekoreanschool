@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,follow">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>搜尋結果 | 한국어 학교</title>
+  <meta name="description" content="搜尋Korean School — 尋找課程、詞彙、K文化指南和韓國新聞。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="canonical" href="https://freekoreanschool.com/zh-tw/search">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="搜尋結果 | 한국어 학교">
+  <meta property="og:description" content="搜尋Korean School — 尋找課程、詞彙、K文化指南和韓國新聞。">
+  <meta property="og:url" content="https://freekoreanschool.com/zh-tw/search">
+  <meta property="og:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <meta property="og:site_name" content="Korean School 한국어 학교">
+  <link rel="alternate" hreflang="zh-TW" href="https://freekoreanschool.com/zh-tw/search"><link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/ja/search">
+  <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/search">
+  <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/search">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "搜尋結果 | 한국어 학교",
+  "description": "搜尋Korean School — 尋找課程、詞彙、K文化指南和韓國新聞。",
+  "url": "https://freekoreanschool.com/zh-tw/search",
+  "inLanguage": "zh-TW",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Korean School 한국어 학교",
+    "url": "https://freekoreanschool.com"
+  }
+}
+  </script>
+
+  <meta name="google-adsense-account" content="ca-pub-6791974364232767">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791974364232767" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D94KSYG9DE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D94KSYG9DE');
+  </script>
+</head>
+<body data-page="search">
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt=""><div class="logo-text">Korean School <span>한국어 학교</span></div></a>
+    <ul class="nav-links">
+      <li><a href="../learn/zh-tw/hangul.html"><span class="nav-icon">📚</span> 學習</a></li>
+      <li><a href="../culture/zh-tw/index.html"><span class="nav-icon">🎵</span> K文化</a></li>
+      <li><a href="../travel/zh-tw/index.html"><span class="nav-icon">🗺️</span> 旅遊</a></li>
+      <li><a href="../news/zh-tw/index.html"><span class="nav-icon">📰</span> 新聞</a></li>
+      <li><a href="quiz.html"><span class="nav-icon">📝</span> 測驗</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar"><span class="search-icon">🔍</span><input type="text" id="search-input" placeholder="搜尋..."></div>
+      <button class="icon-btn" id="theme-toggle" aria-label="切換主題">🌙</button>
+      <div class="lang-picker" id="lang-picker">
+        <button class="icon-btn lang-picker-btn" id="lang-picker-btn" aria-label="選擇語言">🌐</button>
+        <div class="lang-dropdown" id="lang-dropdown" hidden>
+          <a class="lang-option" href="../search.html">🇺🇸 English</a>
+          <span class="lang-option active">🇹🇼 繁體中文</span>
+        </div>
+      </div>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="選單">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="search-page-hero">
+    <h1>🔍 搜尋</h1>
+    <p>搜尋課程、單字、文化指南、旅遊資訊與新聞。</p>
+    <div class="search-page-bar">
+      <input type="text" id="search-page-input" class="search-page-input" placeholder="搜尋…" autocomplete="off" autofocus>
+      <button id="search-page-btn" class="search-page-btn">搜尋</button>
+    </div>
+  </section>
+  <div class="search-results-wrap">
+    <div id="search-results-meta" class="search-results-meta"></div>
+    <div id="search-results-container"></div>
+  </div>
+</main>
+<footer class="footer"><div class="container"><div class="footer-bottom"><span>© 2026 한국어 학교. 為全球韓語學習者用心製作 ❤️</span><span>🇰🇷 학습을 즐기세요！（享受你的學習！）</span></div></div></footer>
+<script src="../js/lang-core.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

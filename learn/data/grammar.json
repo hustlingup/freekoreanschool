@@ -1,72 +1,536 @@
 {
   "lesson": "grammar",
   "stages": [
-    { "id": 1,  "name": "Sentence",     "name_kr": "문장",       "first_step": 1  },
-    { "id": 2,  "name": "Particles",    "name_kr": "조사",       "first_step": 4  },
-    { "id": 3,  "name": "Conjugation",  "name_kr": "활용",       "first_step": 11 },
-    { "id": 4,  "name": "Negation",     "name_kr": "부정문",     "first_step": 21 },
-    { "id": 5,  "name": "Questions",    "name_kr": "의문문",     "first_step": 23 },
-    { "id": 6,  "name": "Patterns",     "name_kr": "문형",       "first_step": 26 },
-    { "id": 7,  "name": "Connectors",   "name_kr": "접속사",     "first_step": 28 },
-    { "id": 8,  "name": "And/With",     "name_kr": "와/랑",      "first_step": 31 },
-    { "id": 9,  "name": "To/From",      "name_kr": "한테",       "first_step": 32 },
-    { "id": 10, "name": "Time",         "name_kr": "시간",       "first_step": 33 },
-    { "id": 11, "name": "Counters",     "name_kr": "단위",       "first_step": 36 },
-    { "id": 12, "name": "Progressive",  "name_kr": "진행형",     "first_step": 39 },
-    { "id": 13, "name": "Self-Intro",   "name_kr": "자기소개",   "first_step": 42 },
-    { "id": 14, "name": "Dates",        "name_kr": "날짜",       "first_step": 43 },
-    { "id": 15, "name": "Adverbs",      "name_kr": "부사",       "first_step": 44 },
-    { "id": 16, "name": "Nominalizer",  "name_kr": "명사화",     "first_step": 47 },
-    { "id": 17, "name": "Comparatives", "name_kr": "비교",       "first_step": 50 },
-    { "id": 18, "name": "Like",         "name_kr": "좋다/좋아하다", "first_step": 53 },
-    { "id": 19, "name": "Still/Already","name_kr": "아직/이미",  "first_step": 54 },
-    { "id": 20, "name": "Indefinite",   "name_kr": "막연",       "first_step": 56 },
-    { "id": 21, "name": "Imperative",   "name_kr": "명령형",     "first_step": 58 },
-    { "id": 22, "name": "Don't",        "name_kr": "금지형",     "first_step": 59 },
-    { "id": 23, "name": "Method",       "name_kr": "방법",       "first_step": 62 },
-    { "id": 24, "name": "Good/Poor",    "name_kr": "잘함/못함",  "first_step": 63 },
-    { "id": 25, "name": "All/More",     "name_kr": "다/더",      "first_step": 65 },
-    { "id": 26, "name": "-도 Advanced", "name_kr": "도",         "first_step": 67 }
+    {
+      "id": 1,
+      "name": "Sentence",
+      "name_kr": "문장",
+      "first_step": 1,
+      "name_zh_tw": "句子",
+      "name_es": "Oración",
+      "name_fr": "Phrase",
+      "name_de": "Satz",
+      "name_vi": "Câu",
+      "name_th": "โครงสร้างประโยค",
+      "name_id": "Kalimat"
+    },
+    {
+      "id": 2,
+      "name": "Particles",
+      "name_kr": "조사",
+      "first_step": 4,
+      "name_zh_tw": "助詞",
+      "name_es": "Partículas",
+      "name_fr": "Particules",
+      "name_de": "Partikeln",
+      "name_vi": "Trợ từ",
+      "name_th": "คำช่วย",
+      "name_id": "Partikel"
+    },
+    {
+      "id": 3,
+      "name": "Conjugation",
+      "name_kr": "활용",
+      "first_step": 11,
+      "name_zh_tw": "動詞變化",
+      "name_es": "Conjugación",
+      "name_fr": "Conjugaison",
+      "name_de": "Konjugation",
+      "name_vi": "Chia động từ",
+      "name_th": "การผันคำกริยา",
+      "name_id": "Konjugasi"
+    },
+    {
+      "id": 4,
+      "name": "Negation",
+      "name_kr": "부정문",
+      "first_step": 21,
+      "name_zh_tw": "否定句",
+      "name_es": "Negación",
+      "name_fr": "Négation",
+      "name_de": "Verneinung",
+      "name_vi": "Phủ định",
+      "name_th": "การปฏิเสธ",
+      "name_id": "Negasi"
+    },
+    {
+      "id": 5,
+      "name": "Questions",
+      "name_kr": "의문문",
+      "first_step": 23,
+      "name_zh_tw": "疑問句",
+      "name_es": "Preguntas",
+      "name_fr": "Questions",
+      "name_de": "Fragen",
+      "name_vi": "Câu hỏi",
+      "name_th": "คำถาม",
+      "name_id": "Pertanyaan"
+    },
+    {
+      "id": 6,
+      "name": "Patterns",
+      "name_kr": "문형",
+      "first_step": 26,
+      "name_zh_tw": "句型",
+      "name_es": "Patrones",
+      "name_fr": "Phrases Clés",
+      "name_de": "Kernsätze",
+      "name_vi": "Mẫu câu cốt lõi",
+      "name_th": "รูปแบบสำคัญ",
+      "name_id": "Pola"
+    },
+    {
+      "id": 7,
+      "name": "Connectors",
+      "name_kr": "접속사",
+      "first_step": 28,
+      "name_zh_tw": "連接詞",
+      "name_es": "Conectores",
+      "name_fr": "Connecteurs",
+      "name_de": "Konnektoren",
+      "name_vi": "Từ nối",
+      "name_th": "คำเชื่อม",
+      "name_id": "Kata Sambung"
+    },
+    {
+      "id": 8,
+      "name": "And/With",
+      "name_kr": "와/랑",
+      "first_step": 31,
+      "name_zh_tw": "和/一起",
+      "name_es": "Y / Con",
+      "name_fr": "Et / Avec",
+      "name_de": "Und/Mit",
+      "name_vi": "Và/Cùng",
+      "name_th": "และ/กับ",
+      "name_id": "Dan/Dengan"
+    },
+    {
+      "id": 9,
+      "name": "To/From",
+      "name_kr": "한테",
+      "first_step": 32,
+      "name_zh_tw": "給/從",
+      "name_es": "A / De",
+      "name_fr": "À / De",
+      "name_de": "An/Von",
+      "name_vi": "Đến/Từ",
+      "name_th": "ให้/จาก",
+      "name_id": "Kepada/Dari"
+    },
+    {
+      "id": 10,
+      "name": "Time",
+      "name_kr": "시간",
+      "first_step": 33,
+      "name_zh_tw": "時間",
+      "name_es": "Tiempo",
+      "name_fr": "Heure",
+      "name_de": "Uhrzeit",
+      "name_vi": "Thời gian",
+      "name_th": "เวลา",
+      "name_id": "Waktu"
+    },
+    {
+      "id": 11,
+      "name": "Counters",
+      "name_kr": "단위",
+      "first_step": 36,
+      "name_zh_tw": "數量詞",
+      "name_es": "Contadores",
+      "name_fr": "Classificateurs",
+      "name_de": "Zählwörter",
+      "name_vi": "Từ đếm",
+      "name_th": "ตัวนับ",
+      "name_id": "Kata Bantu Bilangan"
+    },
+    {
+      "id": 12,
+      "name": "Progressive",
+      "name_kr": "진행형",
+      "first_step": 39,
+      "name_zh_tw": "進行式",
+      "name_es": "Progresivo",
+      "name_fr": "Progressif",
+      "name_de": "Verlaufsform",
+      "name_vi": "Tiếp diễn",
+      "name_th": "กำลังทำ",
+      "name_id": "Progresif"
+    },
+    {
+      "id": 13,
+      "name": "Self-Intro",
+      "name_kr": "자기소개",
+      "first_step": 42,
+      "name_zh_tw": "自我介紹",
+      "name_es": "Presentación",
+      "name_fr": "Présentation",
+      "name_de": "Vorstellung",
+      "name_vi": "Giới thiệu bản thân",
+      "name_th": "แนะนำตัว",
+      "name_id": "Perkenalan Diri"
+    },
+    {
+      "id": 14,
+      "name": "Dates",
+      "name_kr": "날짜",
+      "first_step": 43,
+      "name_zh_tw": "日期",
+      "name_es": "Fechas",
+      "name_fr": "Dates",
+      "name_de": "Datumsangaben",
+      "name_vi": "Ngày tháng",
+      "name_th": "วันที่",
+      "name_id": "Tanggal"
+    },
+    {
+      "id": 15,
+      "name": "Adverbs",
+      "name_kr": "부사",
+      "first_step": 44,
+      "name_zh_tw": "副詞",
+      "name_es": "Adverbios",
+      "name_fr": "Adverbes",
+      "name_de": "Adverbien",
+      "name_vi": "Trạng từ",
+      "name_th": "คำวิเศษณ์",
+      "name_id": "Kata Keterangan"
+    },
+    {
+      "id": 16,
+      "name": "Nominalizer",
+      "name_kr": "명사화",
+      "first_step": 47,
+      "name_zh_tw": "名詞化",
+      "name_es": "Nominalizador",
+      "name_fr": "Nominalisateur",
+      "name_de": "Nominalisierung",
+      "name_vi": "Danh từ hóa",
+      "name_th": "การทำเป็นคำนาม",
+      "name_id": "Nominalisasi"
+    },
+    {
+      "id": 17,
+      "name": "Comparatives",
+      "name_kr": "비교",
+      "first_step": 50,
+      "name_zh_tw": "比較級",
+      "name_es": "Comparativos",
+      "name_fr": "Comparatifs",
+      "name_de": "Komparativ",
+      "name_vi": "So sánh",
+      "name_th": "การเปรียบเทียบ",
+      "name_id": "Perbandingan"
+    },
+    {
+      "id": 18,
+      "name": "Like",
+      "name_kr": "좋다/좋아하다",
+      "first_step": 53,
+      "name_zh_tw": "喜歡",
+      "name_es": "Gustar",
+      "name_fr": "Aimer",
+      "name_de": "Mögen",
+      "name_vi": "Thích",
+      "name_th": "ชอบ",
+      "name_id": "Suka"
+    },
+    {
+      "id": 19,
+      "name": "Still/Already",
+      "name_kr": "아직/이미",
+      "first_step": 54,
+      "name_zh_tw": "還/已經",
+      "name_es": "Todavía / Ya",
+      "name_fr": "Encore / Déjà",
+      "name_de": "Noch/Schon",
+      "name_vi": "Vẫn/Đã",
+      "name_th": "ยังคง/แล้ว",
+      "name_id": "Masih/Sudah"
+    },
+    {
+      "id": 20,
+      "name": "Indefinite",
+      "name_kr": "막연",
+      "first_step": 56,
+      "name_zh_tw": "不定詞",
+      "name_es": "Indefinido",
+      "name_fr": "Indéfini",
+      "name_de": "Unbestimmt",
+      "name_vi": "Bất định",
+      "name_th": "ไม่ระบุ",
+      "name_id": "Tak Tentu"
+    },
+    {
+      "id": 21,
+      "name": "Imperative",
+      "name_kr": "명령형",
+      "first_step": 58,
+      "name_zh_tw": "命令句",
+      "name_es": "Imperativo",
+      "name_fr": "Impératif",
+      "name_de": "Imperativ",
+      "name_vi": "Câu mệnh lệnh",
+      "name_th": "คำสั่ง",
+      "name_id": "Perintah"
+    },
+    {
+      "id": 22,
+      "name": "Don't",
+      "name_kr": "금지형",
+      "first_step": 59,
+      "name_zh_tw": "禁止",
+      "name_es": "Prohibición",
+      "name_fr": "Interdiction",
+      "name_de": "Verbotssatz",
+      "name_vi": "Câu cấm",
+      "name_th": "ห้าม",
+      "name_id": "Larangan"
+    },
+    {
+      "id": 23,
+      "name": "Method",
+      "name_kr": "방법",
+      "first_step": 62,
+      "name_zh_tw": "方法",
+      "name_es": "Método",
+      "name_fr": "Méthode",
+      "name_de": "Methode",
+      "name_vi": "Phương pháp",
+      "name_th": "วิธีการ",
+      "name_id": "Cara"
+    },
+    {
+      "id": 24,
+      "name": "Good/Poor",
+      "name_kr": "잘함/못함",
+      "first_step": 63,
+      "name_zh_tw": "擅長/不擅",
+      "name_es": "Bien / Mal",
+      "name_fr": "Bon / Mauvais",
+      "name_de": "Gut/Schlecht",
+      "name_vi": "Giỏi/Kém",
+      "name_th": "เก่ง/ไม่เก่ง",
+      "name_id": "Mahir/Kurang Mahir"
+    },
+    {
+      "id": 25,
+      "name": "All/More",
+      "name_kr": "다/더",
+      "first_step": 65,
+      "name_zh_tw": "全部/更多",
+      "name_es": "Todo / Más",
+      "name_fr": "Tout / Plus",
+      "name_de": "Alles/Mehr",
+      "name_vi": "Tất cả/Thêm",
+      "name_th": "ทั้งหมด/อีก",
+      "name_id": "Semua/Lebih"
+    },
+    {
+      "id": 26,
+      "name": "-도 Advanced",
+      "name_kr": "도",
+      "first_step": 67,
+      "name_zh_tw": "-도 進階",
+      "name_es": "-도 Avanzado",
+      "name_fr": "-도 Avancé",
+      "name_de": "-도 Erweitert",
+      "name_vi": "-도 Nâng cao",
+      "name_th": "-도 ขั้นสูง",
+      "name_id": "-도 Lanjutan"
+    }
   ],
   "steps": [
-
     {
-      "id": 1, "stage": 1, "type": "reading_card",
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
       "title": "Word Order — SOV",
+      "title_zh_tw": "語序——SOV結構",
       "title_kr": "어순",
       "body": "Korean follows Subject → Object → Verb (SOV) order. The verb always comes LAST.",
+      "body_zh_tw": "韓語遵循主語→受語→動詞（SOV）的語序。動詞始終放在最後。",
       "rules": [
         "English (SVO): I eat rice.",
         "Korean (SOV): 나는 밥을 먹어요. (I rice eat.)",
         "Tip: Listen for the final word — that's the verb, the action!"
       ],
+      "rules_zh_tw": [
+        "英語（SVO）：I eat rice.（我吃飯。）",
+        "韓語（SOV）：나는 밥을 먹어요.（我 飯 吃。）",
+        "提示：聽最後一個詞——那就是動詞，即動作！"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Grammar Tip",
         "text": "Once you know the verb comes last, everything clicks. The rest of the sentence can rearrange — Korean speakers use particles to keep things clear."
+      },
+      "tip_zh_tw": {
+        "label": "文法提示",
+        "text": "一旦你知道動詞放在最後，一切就迎刃而解。句子的其餘部分可以重新排列——韓語說話者用助詞來保持句子清晰。"
+      },
+      "title_es": "Orden de Palabras — SOV",
+      "body_es": "El coreano sigue el orden Sujeto → Objeto → Verbo (SOV). El verbo va siempre AL FINAL.",
+      "rules_es": [
+        "Español (SVO): Yo como arroz.",
+        "Coreano (SOV): 나는 밥을 먹어요. (Yo arroz como.)",
+        "Consejo: ¡Escucha la última palabra — ese es el verbo, la acción!"
+      ],
+      "tip_es": {
+        "label": "Consejo gramatical",
+        "text": "Una vez que sabes que el verbo va al final, todo encaja. El resto de la oración puede reorganizarse — los hablantes coreanos usan partículas para mantener la claridad."
+      },
+      "title_fr": "Ordre des Mots — SOV",
+      "body_fr": "Le coréen suit l'ordre Sujet → Objet → Verbe (SOV). Le verbe vient toujours EN DERNIER.",
+      "rules_fr": [
+        "Français (SVO) : Je mange du riz.",
+        "Coréen (SOV) : 나는 밥을 먹어요. (Je riz mange.)",
+        "Conseil : Écoutez le dernier mot — c'est le verbe, l'action !"
+      ],
+      "tip_fr": {
+        "label": "Conseil Grammatical",
+        "text": "Une fois que vous savez que le verbe vient en dernier, tout s'enchaîne. Le reste de la phrase peut se réarranger — les Coréens utilisent des particules pour garder les choses claires."
+      },
+      "title_de": "Wortstellung — SOV",
+      "body_de": "Das Koreanische folgt der Reihenfolge Subjekt → Objekt → Verb (SOV). Das Verb kommt IMMER ZULETZT.",
+      "rules_de": [
+        "Deutsch (SVO): Ich esse Reis.",
+        "Koreanisch (SOV): 나는 밥을 먹어요. (Ich Reis esse.)",
+        "Tipp: Höre auf das letzte Wort — das ist das Verb, die Handlung!"
+      ],
+      "tip_de": {
+        "label": "Grammatik-Tipp",
+        "text": "Sobald du weißt, dass das Verb zuletzt kommt, ergibt alles Sinn. Der Rest des Satzes kann sich umordnen — koreanische Muttersprachler verwenden Partikel, um die Klarheit zu erhalten."
+      },
+      "title_th": "ลำดับคำ — ประธาน กรรม กริยา",
+      "body_th": "ภาษาเกาหลีใช้ลำดับ ประธาน → กรรม → กริยา (SOV) กริยาอยู่ท้ายเสมอ",
+      "tip_th": {
+        "label": "เคล็ดลับไวยากรณ์",
+        "text": "เมื่อรู้ว่ากริยาอยู่ท้าย ทุกอย่างชัดเจนขึ้น ส่วนอื่นในประโยคสามารถสลับได้ — ผู้พูดภาษาเกาหลีใช้คำช่วยเพื่อให้ชัดเจน"
+      },
+      "rules_th": [
+        "ภาษาอังกฤษ (SVO): I eat rice.",
+        "ภาษาเกาหลี (SOV): 나는 밥을 먹어요. (ฉัน ข้าว กิน)",
+        "เคล็ดลับ: ฟังคำสุดท้าย — นั่นคือกริยา ซึ่งเป็นการกระทำ!"
+      ],
+      "title_id": "Urutan Kata — SOV",
+      "body_id": "Bahasa Korea mengikuti urutan Subjek → Objek → Kata Kerja (SOV). Kata kerja selalu berada di TERAKHIR.",
+      "rules_id": [
+        "Bahasa Indonesia (SVO): Saya makan nasi.",
+        "Bahasa Korea (SOV): 나는 밥을 먹어요. (Saya nasi makan.)",
+        "Tips: Dengarkan kata terakhir — itulah kata kerjanya, tindakannya!"
+      ],
+      "tip_id": {
+        "label": "Tips Tata Bahasa",
+        "text": "Begitu Anda tahu kata kerja berada di akhir, semuanya jadi masuk akal. Bagian lain kalimat bisa disusun ulang — penutur Korea menggunakan partikel untuk menjaga kejelasan."
+      },
+      "title_vi": "Trật tự từ — SOV",
+      "body_vi": "Tiếng Hàn tuân theo trật tự Chủ ngữ → Tân ngữ → Động từ (SOV). Động từ luôn đứng CUỐI.",
+      "rules_vi": [
+        "Tiếng Anh (SVO): I eat rice. (Tôi ăn cơm.)",
+        "Tiếng Hàn (SOV): 나는 밥을 먹어요. (Tôi cơm ăn.)",
+        "Mẹo: Hãy lắng nghe từ cuối cùng — đó là động từ, là hành động!"
+      ],
+      "tip_vi": {
+        "label": "Mẹo ngữ pháp",
+        "text": "Một khi bạn biết động từ đứng cuối, mọi thứ trở nên rõ ràng. Phần còn lại của câu có thể sắp xếp lại — người Hàn dùng trợ từ để giữ mọi thứ rành mạch."
       }
     },
     {
-      "id": 2, "stage": 1, "type": "listen_repeat",
+      "id": 2,
+      "stage": 1,
+      "type": "listen_repeat",
       "audio": "나는 밥을 먹어요",
-      "syllables": ["나는", " ", "밥을", " ", "먹어요"],
+      "syllables": [
+        "나는",
+        " ",
+        "밥을",
+        " ",
+        "먹어요"
+      ],
       "romanization": "na-neun bab-eul meog-eo-yo",
       "meaning": "I eat rice. (Subject + Object + Verb)",
+      "meaning_zh_tw": "我吃飯。（主語＋受語＋動詞）",
       "meaning_ja": "私はご飯を食べます。（主語＋目的語＋動詞）",
-      "katakana": "ナヌン パブル モゴヨ"
+      "katakana": "ナヌン パブル モゴヨ",
+      "meaning_es": "Yo como arroz. (Sujeto + Objeto + Verbo)",
+      "meaning_fr": "Je mange du riz. (Sujet + Objet + Verbe)",
+      "meaning_de": "Ich esse Reis. (Subjekt + Objekt + Verb)",
+      "meaning_vi": "Tôi ăn cơm. (Chủ ngữ + Tân ngữ + Động từ)",
+      "meaning_th": "ฉันกินข้าว (ประธาน + กรรม + กริยา)",
+      "meaning_id": "Saya makan nasi. (Subjek + Objek + Kata Kerja)"
     },
     {
-      "id": 3, "stage": 1, "type": "match_quiz",
+      "id": 3,
+      "stage": 1,
+      "type": "match_quiz",
       "prompt": "In a Korean sentence, the verb always comes...",
-      "choices": ["Last", "First", "Second", "Anywhere"],
-      "correct": "Last"
+      "prompt_zh_tw": "在韓語句子中，動詞始終放在…",
+      "choices": [
+        "Last",
+        "First",
+        "Second",
+        "Anywhere"
+      ],
+      "choices_zh_tw": [
+        "最後",
+        "最前",
+        "第二個",
+        "任何位置"
+      ],
+      "correct": "Last",
+      "prompt_es": "En una oración coreana, el verbo va siempre...",
+      "choices_es": [
+        "Al final",
+        "Al principio",
+        "En segundo lugar",
+        "En cualquier lugar"
+      ],
+      "prompt_fr": "Dans une phrase coréenne, le verbe vient toujours…",
+      "choices_fr": [
+        "En dernier",
+        "En premier",
+        "En deuxième position",
+        "N'importe où"
+      ],
+      "prompt_de": "In einem koreanischen Satz kommt das Verb immer...",
+      "choices_de": [
+        "Zuletzt",
+        "Zuerst",
+        "Als Zweites",
+        "Irgendwo"
+      ],
+      "prompt_th": "ในประโยคเกาหลี กริยาอยู่ที่...",
+      "choices_th": [
+        "ท้าย",
+        "หน้า",
+        "ที่สอง",
+        "ที่ไหนก็ได้"
+      ],
+      "prompt_id": "Dalam kalimat Korea, kata kerja selalu berada di...",
+      "choices_id": [
+        "Akhir",
+        "Awal",
+        "Kedua",
+        "Di mana saja"
+      ],
+      "prompt_vi": "Trong một câu tiếng Hàn, động từ luôn đứng...",
+      "choices_vi": [
+        "Cuối",
+        "Đầu",
+        "Thứ hai",
+        "Ở bất kỳ đâu"
+      ]
     },
-
     {
-      "id": 4, "stage": 2, "type": "reading_card",
+      "id": 4,
+      "stage": 2,
+      "type": "reading_card",
       "title": "Korean Particles",
+      "title_zh_tw": "韓語助詞",
       "title_kr": "조사",
       "body": "Particles attach to nouns to show their role: topic, subject, object, location. They replace fixed word order.",
+      "body_zh_tw": "助詞附加在名詞後面，表示其角色：主題、主語、受語、位置。它們取代了固定的語序。",
       "rules": [
         "은/는 → Topic marker (은 after consonant, 는 after vowel)",
         "이/가 → Subject marker (이 after consonant, 가 after vowel)",
@@ -74,71 +538,409 @@
         "에 → Location / Direction",
         "에서 → Location of action",
         "의 → Possessive ('s / of)"
+      ],
+      "rules_zh_tw": [
+        "은/는 → 主題助詞（은接在子音後，는接在母音後）",
+        "이/가 → 主語助詞（이接在子音後，가接在母音後）",
+        "을/를 → 受語助詞（을接在子音後，를接在母音後）",
+        "에 → 位置／方向",
+        "에서 → 動作發生的地點",
+        "의 → 所有格（的）"
+      ],
+      "title_es": "Partículas Coreanas",
+      "body_es": "Las partículas se unen a los sustantivos para indicar su función: tema, sujeto, objeto, ubicación. Reemplazan el orden fijo de las palabras.",
+      "rules_es": [
+        "은/는 → Marcador de tema (은 tras consonante, 는 tras vocal)",
+        "이/가 → Marcador de sujeto (이 tras consonante, 가 tras vocal)",
+        "을/를 → Marcador de objeto (을 tras consonante, 를 tras vocal)",
+        "에 → Ubicación / Dirección",
+        "에서 → Lugar de la acción",
+        "의 → Posesivo (de)"
+      ],
+      "title_fr": "Les Particules Coréennes",
+      "body_fr": "Les particules s'attachent aux noms pour indiquer leur rôle : thème, sujet, objet, lieu. Elles remplacent l'ordre fixe des mots.",
+      "rules_fr": [
+        "은/는 → Marqueur de thème (은 après consonne, 는 après voyelle)",
+        "이/가 → Marqueur de sujet (이 après consonne, 가 après voyelle)",
+        "을/를 → Marqueur d'objet (을 après consonne, 를 après voyelle)",
+        "에 → Lieu / Direction",
+        "에서 → Lieu de l'action",
+        "의 → Possessif (de)"
+      ],
+      "title_de": "Koreanische Partikel",
+      "body_de": "Partikel werden an Nomen angehängt und zeigen ihre Rolle: Thema, Subjekt, Objekt, Ort. Sie ersetzen die feste Wortstellung.",
+      "rules_de": [
+        "은/는 → Thema-Partikel (은 nach Konsonant, 는 nach Vokal)",
+        "이/가 → Subjekt-Partikel (이 nach Konsonant, 가 nach Vokal)",
+        "을/를 → Objekt-Partikel (을 nach Konsonant, 를 nach Vokal)",
+        "에 → Ort / Richtung",
+        "에서 → Ort der Handlung",
+        "의 → Possessiv (von / -s)"
+      ],
+      "title_th": "คำช่วยภาษาเกาหลี",
+      "body_th": "คำช่วยต่อท้ายคำนามเพื่อแสดงบทบาท: หัวข้อ ประธาน กรรม สถานที่ แทนที่ลำดับคำคงที่",
+      "rules_th": [
+        "은/는 → คำช่วยหัวข้อ (은 หลังพยัญชนะ 는 หลังสระ)",
+        "이/가 → คำช่วยประธาน (이 หลังพยัญชนะ 가 หลังสระ)",
+        "을/를 → คำช่วยกรรม (을 หลังพยัญชนะ 를 หลังสระ)",
+        "에 → สถานที่ / ทิศทาง",
+        "에서 → สถานที่ของการกระทำ",
+        "의 → ความเป็นเจ้าของ (ของ)"
+      ],
+      "title_id": "Partikel Bahasa Korea",
+      "body_id": "Partikel melekat pada kata benda untuk menunjukkan perannya: topik, subjek, objek, lokasi. Partikel menggantikan urutan kata yang tetap.",
+      "rules_id": [
+        "은/는 → Penanda topik (은 setelah konsonan, 는 setelah vokal)",
+        "이/가 → Penanda subjek (이 setelah konsonan, 가 setelah vokal)",
+        "을/를 → Penanda objek (을 setelah konsonan, 를 setelah vokal)",
+        "에 → Lokasi / Arah",
+        "에서 → Lokasi tindakan",
+        "의 → Kepemilikan ('nya / dari)"
+      ],
+      "title_vi": "Trợ từ tiếng Hàn",
+      "body_vi": "Trợ từ gắn vào danh từ để thể hiện vai trò của chúng: chủ đề, chủ ngữ, tân ngữ, vị trí. Chúng thay thế cho trật tự từ cố định.",
+      "rules_vi": [
+        "은/는 → Đánh dấu chủ đề (은 sau phụ âm, 는 sau nguyên âm)",
+        "이/가 → Đánh dấu chủ ngữ (이 sau phụ âm, 가 sau nguyên âm)",
+        "을/를 → Đánh dấu tân ngữ (을 sau phụ âm, 를 sau nguyên âm)",
+        "에 → Vị trí / Hướng",
+        "에서 → Vị trí của hành động",
+        "의 → Sở hữu ('của')"
       ]
     },
     {
-      "id": 5, "stage": 2, "type": "listen_repeat",
+      "id": 5,
+      "stage": 2,
+      "type": "listen_repeat",
       "audio": "나는 학생이에요",
-      "syllables": ["나는", " ", "학생이에요"],
+      "syllables": [
+        "나는",
+        " ",
+        "학생이에요"
+      ],
       "romanization": "na-neun hak-saeng-i-e-yo",
       "meaning": "I am a student. (는 = topic marker)",
+      "meaning_zh_tw": "我是學生。（는 = 主題助詞）",
       "meaning_ja": "私は学生です。（는 = トピックマーカー）",
-      "katakana": "ナヌン ハクセンイエヨ"
+      "katakana": "ナヌン ハクセンイエヨ",
+      "meaning_es": "Soy estudiante. (는 = marcador de tema)",
+      "meaning_fr": "Je suis étudiant(e). (는 = marqueur de thème)",
+      "meaning_de": "Ich bin Student/in. (는 = Thema-Partikel)",
+      "meaning_vi": "Tôi là sinh viên. (는 = trợ từ chủ đề)",
+      "meaning_th": "ฉันเป็นนักเรียน (는 = คำช่วยหัวข้อ)",
+      "meaning_id": "Saya seorang pelajar. (는 = penanda topik)"
     },
     {
-      "id": 6, "stage": 2, "type": "match_quiz",
+      "id": 6,
+      "stage": 2,
+      "type": "match_quiz",
       "prompt": "은/는 marks the ___",
-      "choices": ["Topic", "Subject", "Object", "Location"],
-      "correct": "Topic"
+      "prompt_zh_tw": "은/는標記的是___",
+      "choices": [
+        "Topic",
+        "Subject",
+        "Object",
+        "Location"
+      ],
+      "choices_zh_tw": [
+        "主題",
+        "主語",
+        "受語",
+        "地點"
+      ],
+      "correct": "Topic",
+      "prompt_es": "은/는 marca el ___",
+      "choices_es": [
+        "Tema",
+        "Sujeto",
+        "Objeto",
+        "Ubicación"
+      ],
+      "prompt_fr": "은/는 marque le/la ___",
+      "choices_fr": [
+        "Thème",
+        "Sujet",
+        "Objet",
+        "Lieu"
+      ],
+      "prompt_de": "은/는 markiert das ___",
+      "choices_de": [
+        "Thema",
+        "Subjekt",
+        "Objekt",
+        "Ort"
+      ],
+      "prompt_th": "은/는 ทำหน้าที่เป็น ___",
+      "choices_th": [
+        "หัวข้อ",
+        "ประธาน",
+        "กรรม",
+        "สถานที่"
+      ],
+      "prompt_id": "은/는 menandai ___",
+      "choices_id": [
+        "Topik",
+        "Subjek",
+        "Objek",
+        "Lokasi"
+      ],
+      "prompt_vi": "은/는 đánh dấu ___",
+      "choices_vi": [
+        "Chủ đề",
+        "Chủ ngữ",
+        "Tân ngữ",
+        "Vị trí"
+      ]
     },
     {
-      "id": 7, "stage": 2, "type": "listen_repeat",
+      "id": 7,
+      "stage": 2,
+      "type": "listen_repeat",
       "audio": "비가 와요",
-      "syllables": ["비가", " ", "와요"],
+      "syllables": [
+        "비가",
+        " ",
+        "와요"
+      ],
       "romanization": "bi-ga wa-yo",
       "meaning": "Rain comes. / It's raining. (가 = subject marker)",
+      "meaning_zh_tw": "雨來了。／正在下雨。（가 = 主語助詞）",
       "meaning_ja": "雨が来ます。（雨が降っています）（가 = 主語マーカー）",
-      "katakana": "ピガ ワヨ"
+      "katakana": "ピガ ワヨ",
+      "meaning_es": "Llueve. / Está lloviendo. (가 = marcador de sujeto)",
+      "meaning_fr": "La pluie vient. / Il pleut. (가 = marqueur de sujet)",
+      "meaning_de": "Es regnet. (가 = Subjekt-Partikel)",
+      "meaning_vi": "Mưa đến. / Trời đang mưa. (가 = trợ từ chủ ngữ)",
+      "meaning_th": "ฝนตก (가 = คำช่วยประธาน)",
+      "meaning_id": "Hujan turun. / Sedang hujan. (가 = penanda subjek)"
     },
     {
-      "id": 8, "stage": 2, "type": "match_quiz",
+      "id": 8,
+      "stage": 2,
+      "type": "match_quiz",
       "prompt": "To mark 밥 (rice) as the OBJECT: 밥___ 먹어요",
-      "choices": ["을", "는", "가", "에"],
-      "correct": "을"
+      "prompt_zh_tw": "把밥（飯）標記為受語：밥___ 먹어요",
+      "choices": [
+        "을",
+        "는",
+        "가",
+        "에"
+      ],
+      "choices_zh_tw": [
+        "을",
+        "는",
+        "가",
+        "에"
+      ],
+      "correct": "을",
+      "prompt_es": "Para marcar 밥 (arroz) como OBJETO: 밥___ 먹어요",
+      "choices_es": [
+        "을",
+        "는",
+        "가",
+        "에"
+      ],
+      "prompt_fr": "Pour marquer 밥 (riz) comme l'OBJET : 밥___ 먹어요",
+      "choices_fr": [
+        "을",
+        "는",
+        "가",
+        "에"
+      ],
+      "prompt_de": "Um 밥 (Reis) als OBJEKT zu markieren: 밥___ 먹어요",
+      "choices_de": [
+        "을",
+        "는",
+        "가",
+        "에"
+      ],
+      "prompt_th": "เพื่อทำให้ 밥 (ข้าว) เป็นกรรม: 밥___ 먹어요",
+      "choices_th": [
+        "을",
+        "는",
+        "가",
+        "에"
+      ],
+      "prompt_id": "Untuk menandai 밥 (nasi) sebagai OBJEK: 밥___ 먹어요",
+      "choices_id": [
+        "을",
+        "는",
+        "가",
+        "에"
+      ],
+      "prompt_vi": "Để đánh dấu 밥 (cơm) là TÂN NGỮ: 밥___ 먹어요",
+      "choices_vi": [
+        "을",
+        "는",
+        "가",
+        "에"
+      ]
     },
     {
-      "id": 9, "stage": 2, "type": "listen_repeat",
+      "id": 9,
+      "stage": 2,
+      "type": "listen_repeat",
       "audio": "카페에서 커피를 마셔요",
-      "syllables": ["카페에서", " ", "커피를", " ", "마셔요"],
+      "syllables": [
+        "카페에서",
+        " ",
+        "커피를",
+        " ",
+        "마셔요"
+      ],
       "romanization": "ka-pe-e-seo keo-pi-reul ma-syeo-yo",
       "meaning": "I drink coffee at the café. (에서 = location of action)",
+      "meaning_zh_tw": "我在咖啡廳喝咖啡。（에서 = 動作地點）",
       "meaning_ja": "カフェでコーヒーを飲みます。（에서 = 動作の場所）",
-      "katakana": "カペエソ コピルル マショヨ"
+      "katakana": "カペエソ コピルル マショヨ",
+      "meaning_es": "Tomo café en el café. (에서 = lugar de la acción)",
+      "meaning_fr": "Je bois du café au café. (에서 = lieu de l'action)",
+      "meaning_de": "Ich trinke Kaffee im Café. (에서 = Ort der Handlung)",
+      "meaning_vi": "Tôi uống cà phê ở quán cà phê. (에서 = nơi xảy ra hành động)",
+      "meaning_th": "ฉันดื่มกาแฟที่ร้านกาแฟ (에서 = สถานที่ของการกระทำ)",
+      "meaning_id": "Saya minum kopi di kafe. (에서 = lokasi tindakan)"
     },
     {
-      "id": 10, "stage": 2, "type": "match_quiz",
+      "id": 10,
+      "stage": 2,
+      "type": "match_quiz",
       "prompt": "에서 marks...",
-      "choices": ["Location of action", "Destination", "Topic", "Object"],
-      "correct": "Location of action"
+      "prompt_zh_tw": "에서標記的是…",
+      "choices": [
+        "Location of action",
+        "Destination",
+        "Topic",
+        "Object"
+      ],
+      "choices_zh_tw": [
+        "動作發生的地點",
+        "目的地",
+        "主題",
+        "受語"
+      ],
+      "correct": "Location of action",
+      "prompt_es": "에서 marca...",
+      "choices_es": [
+        "Lugar de la acción",
+        "Destino",
+        "Tema",
+        "Objeto"
+      ],
+      "prompt_fr": "에서 marque…",
+      "choices_fr": [
+        "Lieu de l'action",
+        "Destination",
+        "Thème",
+        "Objet"
+      ],
+      "prompt_de": "에서 markiert...",
+      "choices_de": [
+        "Den Ort der Handlung",
+        "Das Ziel",
+        "Das Thema",
+        "Das Objekt"
+      ],
+      "prompt_th": "เ서 บ่งบอกถึง...",
+      "choices_th": [
+        "สถานที่ของการกระทำ",
+        "จุดหมาย",
+        "หัวข้อ",
+        "กรรม"
+      ],
+      "prompt_id": "에서 menandai...",
+      "choices_id": [
+        "Lokasi tindakan",
+        "Tujuan",
+        "Topik",
+        "Objek"
+      ],
+      "prompt_vi": "에서 đánh dấu...",
+      "choices_vi": [
+        "Vị trí của hành động",
+        "Đích đến",
+        "Chủ đề",
+        "Tân ngữ"
+      ]
     },
-
     {
-      "id": 11, "stage": 3, "type": "reading_card",
+      "id": 11,
+      "stage": 3,
+      "type": "reading_card",
       "title": "Verbs — Dictionary Form",
+      "title_zh_tw": "動詞——字典形",
       "title_kr": "동사 기본형",
       "body": "All Korean verbs in dictionary form end in 다 (da). Remove 다 to get the verb stem, then add an ending.",
+      "body_zh_tw": "所有韓語動詞的字典形以다（da）結尾。去掉다得到動詞詞幹，然後加上語尾。",
       "rules": [
         "가다 (to go) → stem: 가-",
         "먹다 (to eat) → stem: 먹-",
         "공부하다 (to study) → stem: 공부하-",
         "하다 (to do) → stem: 하-"
+      ],
+      "rules_zh_tw": [
+        "가다（去）→ 詞幹：가-",
+        "먹다（吃）→ 詞幹：먹-",
+        "공부하다（學習）→ 詞幹：공부하-",
+        "하다（做）→ 詞幹：하-"
+      ],
+      "title_es": "Verbos — Forma de Diccionario",
+      "body_es": "Todos los verbos coreanos en forma de diccionario terminan en 다 (da). Elimina 다 para obtener la raíz verbal y luego añade una terminación.",
+      "rules_es": [
+        "가다 (ir) → raíz: 가-",
+        "먹다 (comer) → raíz: 먹-",
+        "공부하다 (estudiar) → raíz: 공부하-",
+        "하다 (hacer) → raíz: 하-"
+      ],
+      "title_fr": "Verbes — Forme du Dictionnaire",
+      "body_fr": "Tous les verbes coréens en forme de dictionnaire se terminent par 다 (da). Retirez 다 pour obtenir le radical du verbe, puis ajoutez une terminaison.",
+      "rules_fr": [
+        "가다 (aller) → radical : 가-",
+        "먹다 (manger) → radical : 먹-",
+        "공부하다 (étudier) → radical : 공부하-",
+        "하다 (faire) → radical : 하-"
+      ],
+      "title_de": "Verben — Wörterbuchform",
+      "body_de": "Alle koreanischen Verben in der Wörterbuchform enden auf 다 (da). Entferne 다, um den Verbstamm zu erhalten, und füge dann eine Endung hinzu.",
+      "rules_de": [
+        "가다 (gehen) → Stamm: 가-",
+        "먹다 (essen) → Stamm: 먹-",
+        "공부하다 (lernen) → Stamm: 공부하-",
+        "하다 (machen) → Stamm: 하-"
+      ],
+      "title_th": "กริยา — รูปพจนานุกรม",
+      "body_th": "กริยาภาษาเกาหลีทุกตัวในรูปพจนานุกรมลงท้ายด้วย 다 (ดา) ตัด 다 ออกเพื่อได้ก้านกริยา แล้วเติมรูปแบบท้าย",
+      "rules_th": [
+        "가다 (ไป) → ก้าน: 가-",
+        "먹다 (กิน) → ก้าน: 먹-",
+        "공부하다 (เรียน) → ก้าน: 공부하-",
+        "하다 (ทำ) → ก้าน: 하-"
+      ],
+      "title_id": "Kata Kerja — Bentuk Kamus",
+      "body_id": "Semua kata kerja Korea dalam bentuk kamus berakhiran 다 (da). Hilangkan 다 untuk mendapatkan akar kata kerja, lalu tambahkan akhiran.",
+      "rules_id": [
+        "가다 (pergi) → akar: 가-",
+        "먹다 (makan) → akar: 먹-",
+        "공부하다 (belajar) → akar: 공부하-",
+        "하다 (melakukan) → akar: 하-"
+      ],
+      "title_vi": "Động từ — dạng nguyên thể",
+      "body_vi": "Mọi động từ tiếng Hàn ở dạng nguyên thể đều kết thúc bằng 다 (da). Bỏ 다 để có gốc động từ, rồi thêm một đuôi.",
+      "rules_vi": [
+        "가다 (đi) → gốc: 가-",
+        "먹다 (ăn) → gốc: 먹-",
+        "공부하다 (học) → gốc: 공부하-",
+        "하다 (làm) → gốc: 하-"
       ]
     },
     {
-      "id": 12, "stage": 3, "type": "reading_card",
+      "id": 12,
+      "stage": 3,
+      "type": "reading_card",
       "title": "Present Tense: -아요 / -어요",
+      "title_zh_tw": "現在時：-아요 / -어요",
       "title_kr": "현재형",
       "body": "Add -아요 after ㅏ or ㅗ stems. Add -어요 for all others. 하다 verbs use -해요.",
+      "body_zh_tw": "詞幹最後母音是ㅏ或ㅗ時加-아요，其他情況加-어요。하다類動詞使用-해요。",
       "rules": [
         "가다 → 가요 (go · ㅏ stem)",
         "오다 → 와요 (come · ㅗ stem)",
@@ -146,105 +948,622 @@
         "마시다 → 마셔요 (drink · other)",
         "공부하다 → 공부해요 (study · 하다)"
       ],
+      "rules_zh_tw": [
+        "가다→가요（去·ㅏ詞幹）",
+        "오다→와요（來·ㅗ詞幹）",
+        "먹다→먹어요（吃·其他）",
+        "마시다→마셔요（喝·其他）",
+        "공부하다→공부해요（學習·하다）"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Vowel Rule",
         "text": "ㅏ and ㅗ are 'bright' vowels → -아요. All other vowels are 'dark' → -어요. Once you know the stem vowel, conjugation is automatic."
+      },
+      "tip_zh_tw": {
+        "label": "母音規則",
+        "text": "ㅏ和ㅗ是「亮」母音→-아요。所有其他母音是「暗」母音→-어요。一旦你知道詞幹母音，變位就自動完成。"
+      },
+      "title_es": "Presente: -아요 / -어요",
+      "body_es": "Añade -아요 después de raíces con ㅏ o ㅗ. Añade -어요 para todas las demás. Los verbos con 하다 usan -해요.",
+      "rules_es": [
+        "가다 → 가요 (ir · raíz ㅏ)",
+        "오다 → 와요 (venir · raíz ㅗ)",
+        "먹다 → 먹어요 (comer · otras)",
+        "마시다 → 마셔요 (beber · otras)",
+        "공부하다 → 공부해요 (estudiar · 하다)"
+      ],
+      "tip_es": {
+        "label": "Regla Vocálica",
+        "text": "ㅏ y ㅗ son vocales \"brillantes\" → -아요. Todas las demás vocales son \"oscuras\" → -어요. Una vez que conoces la vocal de la raíz, la conjugación es automática."
+      },
+      "title_fr": "Présent : -아요 / -어요",
+      "body_fr": "Ajoutez -아요 après les radicaux en ㅏ ou ㅗ. Ajoutez -어요 pour tous les autres. Les verbes en 하다 utilisent -해요.",
+      "rules_fr": [
+        "가다 → 가요 (aller · radical ㅏ)",
+        "오다 → 와요 (venir · radical ㅗ)",
+        "먹다 → 먹어요 (manger · autres)",
+        "마시다 → 마셔요 (boire · autres)",
+        "공부하다 → 공부해요 (étudier · 하다)"
+      ],
+      "tip_fr": {
+        "label": "Règle des Voyelles",
+        "text": "ㅏ et ㅗ sont des voyelles « claires » → -아요. Toutes les autres voyelles sont « sombres » → -어요. Une fois que vous connaissez la voyelle du radical, la conjugaison est automatique."
+      },
+      "title_de": "Präsens: -아요 / -어요",
+      "body_de": "Füge -아요 nach ㅏ- oder ㅗ-Stämmen hinzu. Füge -어요 für alle anderen hinzu. 하다-Verben verwenden -해요.",
+      "rules_de": [
+        "가다 → 가요 (gehen · ㅏ-Stamm)",
+        "오다 → 와요 (kommen · ㅗ-Stamm)",
+        "먹다 → 먹어요 (essen · andere)",
+        "마시다 → 마셔요 (trinken · andere)",
+        "공부하다 → 공부해요 (lernen · 하다)"
+      ],
+      "tip_de": {
+        "label": "Vokal-Regel",
+        "text": "ㅏ und ㅗ sind „helle\" Vokale → -아요. Alle anderen Vokale sind „dunkle\" Vokale → -어요. Sobald du den Stammvokal kennst, erfolgt die Konjugation automatisch."
+      },
+      "title_th": "ปัจจุบันกาล: -아요 / -어요",
+      "body_th": "เติม -아요 หลังก้านที่มีสระ ㅏ หรือ ㅗ เติม -어요 สำหรับก้านอื่นทั้งหมด กริยา 하다 ใช้ -해요",
+      "tip_th": {
+        "label": "กฎสระ",
+        "text": "ㅏ และ ㅗ เป็นสระ สว่าง → -아요 สระอื่นทั้งหมดเป็น มืด → -어요 เมื่อรู้สระของก้าน การผันเป็นอัตโนมัติ"
+      },
+      "rules_th": [
+        "가다 → 가요 (ไป · ก้าน ㅏ)",
+        "오다 → 와요 (มา · ก้าน ㅗ)",
+        "먹다 → 먹어요 (กิน · อื่น)",
+        "마시다 → 마셔요 (ดื่ม · อื่น)",
+        "공부하다 → 공부해요 (เรียน · 하다)"
+      ],
+      "title_id": "Bentuk Waktu Sekarang: -아요 / -어요",
+      "body_id": "Tambahkan -아요 setelah akar kata dengan ㅏ atau ㅗ. Tambahkan -어요 untuk yang lainnya. Kata kerja 하다 menggunakan -해요.",
+      "rules_id": [
+        "가다 → 가요 (pergi · akar ㅏ)",
+        "오다 → 와요 (datang · akar ㅗ)",
+        "먹다 → 먹어요 (makan · lainnya)",
+        "마시다 → 마셔요 (minum · lainnya)",
+        "공부하다 → 공부해요 (belajar · 하다)"
+      ],
+      "tip_id": {
+        "label": "Aturan Vokal",
+        "text": "ㅏ dan ㅗ adalah vokal 'terang' → -아요. Semua vokal lainnya adalah vokal 'gelap' → -어요. Begitu Anda tahu vokal akar katanya, konjugasi menjadi otomatis."
+      },
+      "title_vi": "Thì hiện tại: -아요 / -어요",
+      "body_vi": "Thêm -아요 sau gốc có ㅏ hoặc ㅗ. Thêm -어요 cho tất cả các trường hợp khác. Động từ 하다 dùng -해요.",
+      "rules_vi": [
+        "가다 → 가요 (đi · gốc ㅏ)",
+        "오다 → 와요 (đến · gốc ㅗ)",
+        "먹다 → 먹어요 (ăn · khác)",
+        "마시다 → 마셔요 (uống · khác)",
+        "공부하다 → 공부해요 (học · 하다)"
+      ],
+      "tip_vi": {
+        "label": "Quy tắc nguyên âm",
+        "text": "ㅏ và ㅗ là các nguyên âm 'sáng' → -아요. Tất cả các nguyên âm khác là 'tối' → -어요. Một khi bạn biết nguyên âm của gốc, việc chia động từ trở nên tự động."
       }
     },
     {
-      "id": 13, "stage": 3, "type": "listen_repeat",
+      "id": 13,
+      "stage": 3,
+      "type": "listen_repeat",
       "audio": "가요",
-      "syllables": ["가요"],
+      "syllables": [
+        "가요"
+      ],
       "romanization": "ga-yo",
       "meaning": "I go / Let's go. (가다 → 가요, polite present)",
+      "meaning_zh_tw": "我去。／讓我們去。（가다→가요，禮貌現在時）",
       "meaning_ja": "行きます / 行きましょう。（가다 → 가요、丁寧な現在形）",
-      "katakana": "カヨ"
+      "katakana": "カヨ",
+      "meaning_es": "Voy / Vamos. (가다 → 가요, presente educado)",
+      "meaning_fr": "Je vais / Allons-y. (가다 → 가요, présent poli)",
+      "meaning_de": "Ich gehe / Lass uns gehen. (가다 → 가요, höfliche Gegenwartsform)",
+      "meaning_vi": "Tôi đi / Hãy cùng đi. (가다 → 가요, hiện tại lịch sự)",
+      "meaning_th": "ฉันไป / ไปกันเถอะ (가다 → 가요 สุภาพปัจจุบัน)",
+      "meaning_id": "Saya pergi / Ayo pergi. (가다 → 가요, bentuk sekarang sopan)"
     },
     {
-      "id": 14, "stage": 3, "type": "listen_repeat",
+      "id": 14,
+      "stage": 3,
+      "type": "listen_repeat",
       "audio": "먹어요",
-      "syllables": ["먹어요"],
+      "syllables": [
+        "먹어요"
+      ],
       "romanization": "meog-eo-yo",
       "meaning": "I eat / eating. (먹다 → 먹어요, polite present)",
+      "meaning_zh_tw": "我吃。（먹다→먹어요，禮貌現在時）",
       "meaning_ja": "食べます。（먹다 → 먹어요、丁寧な現在形）",
-      "katakana": "モゴヨ"
+      "katakana": "モゴヨ",
+      "meaning_es": "Como / estoy comiendo. (먹다 → 먹어요, presente educado)",
+      "meaning_fr": "Je mange. (먹다 → 먹어요, présent poli)",
+      "meaning_de": "Ich esse. (먹다 → 먹어요, höfliche Gegenwartsform)",
+      "meaning_vi": "Tôi ăn / đang ăn. (먹다 → 먹어요, hiện tại lịch sự)",
+      "meaning_th": "ฉันกิน / กินอยู่ (먹다 → 먹어요 สุภาพปัจจุบัน)",
+      "meaning_id": "Saya makan / sedang makan. (먹다 → 먹어요, bentuk sekarang sopan)"
     },
     {
-      "id": 15, "stage": 3, "type": "match_quiz",
+      "id": 15,
+      "stage": 3,
+      "type": "match_quiz",
       "prompt": "가다 (to go) → polite present form?",
-      "choices": ["가요", "가아요", "가어요", "갔어요"],
-      "correct": "가요"
+      "prompt_zh_tw": "가다（去）→禮貌現在時形式？",
+      "choices": [
+        "가요",
+        "가아요",
+        "가어요",
+        "갔어요"
+      ],
+      "choices_zh_tw": [
+        "가요",
+        "가아요",
+        "가어요",
+        "갔어요"
+      ],
+      "correct": "가요",
+      "prompt_es": "가다 (ir) → ¿forma educada del presente?",
+      "choices_es": [
+        "가요",
+        "가아요",
+        "가어요",
+        "갔어요"
+      ],
+      "prompt_fr": "가다 (aller) → forme polie du présent ?",
+      "choices_fr": [
+        "가요",
+        "가아요",
+        "가어요",
+        "갔어요"
+      ],
+      "prompt_de": "가다 (gehen) → höfliche Gegenwartsform?",
+      "choices_de": [
+        "가요",
+        "가아요",
+        "가어요",
+        "갔어요"
+      ],
+      "prompt_th": "가다 (ไป) → รูปสุภาพปัจจุบัน?",
+      "choices_th": [
+        "가요",
+        "가아요",
+        "가어요",
+        "갔어요"
+      ],
+      "prompt_id": "가다 (pergi) → bentuk sekarang sopan?",
+      "choices_id": [
+        "가요",
+        "가아요",
+        "가어요",
+        "갔어요"
+      ],
+      "prompt_vi": "가다 (đi) → dạng hiện tại lịch sự?",
+      "choices_vi": [
+        "가요",
+        "가아요",
+        "가어요",
+        "갔어요"
+      ]
     },
     {
-      "id": 16, "stage": 3, "type": "reading_card",
+      "id": 16,
+      "stage": 3,
+      "type": "reading_card",
       "title": "Past Tense: -았어요 / -었어요",
+      "title_zh_tw": "過去時：-았어요 / -었어요",
       "title_kr": "과거형",
       "body": "Add -았어요 after ㅏ/ㅗ stems and -었어요 for others. 하다 → 했어요.",
+      "body_zh_tw": "詞幹最後母音是ㅏ/ㅗ時加-았어요，其他情況加-었어요。하다→했어요。",
       "rules": [
         "가다 → 갔어요 (went)",
         "오다 → 왔어요 (came)",
         "먹다 → 먹었어요 (ate)",
         "마시다 → 마셨어요 (drank)",
         "공부하다 → 공부했어요 (studied)"
+      ],
+      "rules_zh_tw": [
+        "가다→갔어요（去了）",
+        "오다→왔어요（來了）",
+        "먹다→먹었어요（吃了）",
+        "마시다→마셨어요（喝了）",
+        "공부하다→공부했어요（學習了）"
+      ],
+      "title_es": "Pasado: -았어요 / -었어요",
+      "body_es": "Añade -았어요 después de raíces con ㅏ/ㅗ y -었어요 para las demás. 하다 → 했어요.",
+      "rules_es": [
+        "가다 → 갔어요 (fui)",
+        "오다 → 왔어요 (vine)",
+        "먹다 → 먹었어요 (comí)",
+        "마시다 → 마셨어요 (bebí)",
+        "공부하다 → 공부했어요 (estudié)"
+      ],
+      "title_fr": "Passé : -았어요 / -었어요",
+      "body_fr": "Ajoutez -았어요 après les radicaux en ㅏ/ㅗ et -었어요 pour les autres. 하다 → 했어요.",
+      "rules_fr": [
+        "가다 → 갔어요 (suis allé)",
+        "오다 → 왔어요 (suis venu)",
+        "먹다 → 먹었어요 (ai mangé)",
+        "마시다 → 마셨어요 (ai bu)",
+        "공부하다 → 공부했어요 (ai étudié)"
+      ],
+      "title_de": "Vergangenheit: -았어요 / -었어요",
+      "body_de": "Füge -았어요 nach ㅏ/ㅗ-Stämmen und -었어요 für alle anderen hinzu. 하다 → 했어요.",
+      "rules_de": [
+        "가다 → 갔어요 (gegangen)",
+        "오다 → 왔어요 (gekommen)",
+        "먹다 → 먹었어요 (gegessen)",
+        "마시다 → 마셨어요 (getrunken)",
+        "공부하다 → 공부했어요 (gelernt)"
+      ],
+      "title_th": "อดีตกาล: -았어요 / -었어요",
+      "body_th": "เติม -았어요 หลังก้าน ㅏ/ㅗ และ -었어요 สำหรับก้านอื่น 하다 → 했어요",
+      "rules_th": [
+        "가다 → 갔어요 (ไปแล้ว)",
+        "오다 → 왔어요 (มาแล้ว)",
+        "먹다 → 먹었어요 (กินแล้ว)",
+        "마시다 → 마셨어요 (ดื่มแล้ว)",
+        "공부하다 → 공부했어요 (เรียนแล้ว)"
+      ],
+      "title_id": "Bentuk Waktu Lampau: -았어요 / -었어요",
+      "body_id": "Tambahkan -았어요 setelah akar kata ㅏ/ㅗ dan -었어요 untuk yang lain. 하다 → 했어요.",
+      "rules_id": [
+        "가다 → 갔어요 (telah pergi)",
+        "오다 → 왔어요 (telah datang)",
+        "먹다 → 먹었어요 (telah makan)",
+        "마시다 → 마셨어요 (telah minum)",
+        "공부하다 → 공부했어요 (telah belajar)"
+      ],
+      "title_vi": "Thì quá khứ: -았어요 / -었어요",
+      "body_vi": "Thêm -았어요 sau gốc ㅏ/ㅗ và -었어요 cho các trường hợp khác. 하다 → 했어요.",
+      "rules_vi": [
+        "가다 → 갔어요 (đã đi)",
+        "오다 → 왔어요 (đã đến)",
+        "먹다 → 먹었어요 (đã ăn)",
+        "마시다 → 마셨어요 (đã uống)",
+        "공부하다 → 공부했어요 (đã học)"
       ]
     },
     {
-      "id": 17, "stage": 3, "type": "listen_repeat",
+      "id": 17,
+      "stage": 3,
+      "type": "listen_repeat",
       "audio": "서울에 갔어요",
-      "syllables": ["서울에", " ", "갔어요"],
+      "syllables": [
+        "서울에",
+        " ",
+        "갔어요"
+      ],
       "romanization": "seo-ul-e gass-eo-yo",
       "meaning": "I went to Seoul.",
+      "meaning_zh_tw": "我去了首爾。",
       "meaning_ja": "ソウルに行きました。",
-      "katakana": "ソウレ カッソヨ"
+      "katakana": "ソウレ カッソヨ",
+      "meaning_es": "Fui a Seúl.",
+      "meaning_fr": "Je suis allé(e) à Séoul.",
+      "meaning_de": "Ich bin nach Seoul gefahren.",
+      "meaning_vi": "Tôi đã đến Seoul.",
+      "meaning_th": "ฉันไปโซลแล้ว",
+      "meaning_id": "Saya pergi ke Seoul."
     },
     {
-      "id": 18, "stage": 3, "type": "match_quiz",
+      "id": 18,
+      "stage": 3,
+      "type": "match_quiz",
       "prompt": "Past tense of 먹다 (to eat)?",
-      "choices": ["먹었어요", "먹아요", "먹어요", "먹을 거예요"],
-      "correct": "먹었어요"
+      "prompt_zh_tw": "먹다（吃）的過去時？",
+      "choices": [
+        "먹었어요",
+        "먹아요",
+        "먹어요",
+        "먹을 거예요"
+      ],
+      "choices_zh_tw": [
+        "먹었어요",
+        "먹아요",
+        "먹어요",
+        "먹을 거예요"
+      ],
+      "correct": "먹었어요",
+      "prompt_es": "¿Pasado de 먹다 (comer)?",
+      "choices_es": [
+        "먹었어요",
+        "먹아요",
+        "먹어요",
+        "먹을 거예요"
+      ],
+      "prompt_fr": "Passé de 먹다 (manger) ?",
+      "choices_fr": [
+        "먹었어요",
+        "먹아요",
+        "먹어요",
+        "먹을 거예요"
+      ],
+      "prompt_de": "Vergangenheitsform von 먹다 (essen)?",
+      "choices_de": [
+        "먹었어요",
+        "먹아요",
+        "먹어요",
+        "먹을 거예요"
+      ],
+      "prompt_th": "รูปอดีตกาลของ 먹다 (กิน)?",
+      "choices_th": [
+        "먹었어요",
+        "먹아요",
+        "먹어요",
+        "먹을 거예요"
+      ],
+      "prompt_id": "Bentuk lampau dari 먹다 (makan)?",
+      "choices_id": [
+        "먹었어요",
+        "먹아요",
+        "먹어요",
+        "먹을 거예요"
+      ],
+      "prompt_vi": "Thì quá khứ của 먹다 (ăn)?",
+      "choices_vi": [
+        "먹었어요",
+        "먹아요",
+        "먹어요",
+        "먹을 거예요"
+      ]
     },
     {
-      "id": 19, "stage": 3, "type": "reading_card",
+      "id": 19,
+      "stage": 3,
+      "type": "reading_card",
       "title": "Future Tense: -(으)ㄹ 거예요",
+      "title_zh_tw": "未來時：-(으)ㄹ 거예요",
       "title_kr": "미래형",
       "body": "Add -(으)ㄹ 거예요 to the verb stem to talk about future plans or predictions.",
+      "body_zh_tw": "在動詞詞幹後加-(으)ㄹ 거예요來談論未來的計劃或預測。",
       "rules": [
         "가다 → 갈 거예요 (will go)",
         "먹다 → 먹을 거예요 (will eat)",
         "공부하다 → 공부할 거예요 (will study)"
+      ],
+      "rules_zh_tw": [
+        "가다→갈 거예요（將會去）",
+        "먹다→먹을 거예요（將會吃）",
+        "공부하다→공부할 거예요（將會學習）"
+      ],
+      "title_es": "Futuro: -(으)ㄹ 거예요",
+      "body_es": "Añade -(으)ㄹ 거예요 a la raíz verbal para hablar de planes o predicciones futuras.",
+      "rules_es": [
+        "가다 → 갈 거예요 (iré)",
+        "먹다 → 먹을 거예요 (comeré)",
+        "공부하다 → 공부할 거예요 (estudiaré)"
+      ],
+      "title_fr": "Futur : -(으)ㄹ 거예요",
+      "body_fr": "Ajoutez -(으)ㄹ 거예요 au radical du verbe pour parler de plans ou de prédictions futurs.",
+      "rules_fr": [
+        "가다 → 갈 거예요 (irai)",
+        "먹다 → 먹을 거예요 (mangerai)",
+        "공부하다 → 공부할 거예요 (étudierai)"
+      ],
+      "title_de": "Zukunft: -(으)ㄹ 거예요",
+      "body_de": "Füge -(으)ㄹ 거예요 an den Verbstamm an, um über Zukunftspläne oder Vorhersagen zu sprechen.",
+      "rules_de": [
+        "가다 → 갈 거예요 (werde gehen)",
+        "먹다 → 먹을 거예요 (werde essen)",
+        "공부하다 → 공부할 거예요 (werde lernen)"
+      ],
+      "title_th": "อนาคตกาล: -(으)ㄹ 거예요",
+      "body_th": "เติม -(으)ㄹ 거예요 ต่อท้ายก้านกริยาเพื่อพูดถึงแผนในอนาคตหรือการคาดเดา",
+      "rules_th": [
+        "가다 → 갈 거예요 (จะไป)",
+        "먹다 → 먹을 거예요 (จะกิน)",
+        "공부하다 → 공부할 거예요 (จะเรียน)"
+      ],
+      "title_id": "Bentuk Waktu Depan: -(으)ㄹ 거예요",
+      "body_id": "Tambahkan -(으)ㄹ 거예요 pada akar kata kerja untuk membicarakan rencana atau prediksi masa depan.",
+      "rules_id": [
+        "가다 → 갈 거예요 (akan pergi)",
+        "먹다 → 먹을 거예요 (akan makan)",
+        "공부하다 → 공부할 거예요 (akan belajar)"
+      ],
+      "title_vi": "Thì tương lai: -(으)ㄹ 거예요",
+      "body_vi": "Thêm -(으)ㄹ 거예요 vào gốc động từ để nói về kế hoạch hay dự đoán trong tương lai.",
+      "rules_vi": [
+        "가다 → 갈 거예요 (sẽ đi)",
+        "먹다 → 먹을 거예요 (sẽ ăn)",
+        "공부하다 → 공부할 거예요 (sẽ học)"
       ]
     },
     {
-      "id": 20, "stage": 3, "type": "match_quiz",
+      "id": 20,
+      "stage": 3,
+      "type": "match_quiz",
       "prompt": "가다 (to go) → future tense?",
-      "choices": ["갈 거예요", "갔어요", "가요", "가지 마세요"],
-      "correct": "갈 거예요"
+      "prompt_zh_tw": "가다（去）→未來時？",
+      "choices": [
+        "갈 거예요",
+        "갔어요",
+        "가요",
+        "가지 마세요"
+      ],
+      "choices_zh_tw": [
+        "갈 거예요",
+        "갔어요",
+        "가요",
+        "가지 마세요"
+      ],
+      "correct": "갈 거예요",
+      "prompt_es": "가다 (ir) → ¿futuro?",
+      "choices_es": [
+        "갈 거예요",
+        "갔어요",
+        "가요",
+        "가지 마세요"
+      ],
+      "prompt_fr": "가다 (aller) → futur ?",
+      "choices_fr": [
+        "갈 거예요",
+        "갔어요",
+        "가요",
+        "가지 마세요"
+      ],
+      "prompt_de": "가다 (gehen) → Zukunftsform?",
+      "choices_de": [
+        "갈 거예요",
+        "갔어요",
+        "가요",
+        "가지 마세요"
+      ],
+      "prompt_th": "가다 (ไป) → รูปอนาคต?",
+      "choices_th": [
+        "갈 거예요",
+        "갔어요",
+        "가요",
+        "가지 마세요"
+      ],
+      "prompt_id": "가다 (pergi) → bentuk waktu depan?",
+      "choices_id": [
+        "갈 거예요",
+        "갔어요",
+        "가요",
+        "가지 마세요"
+      ],
+      "prompt_vi": "가다 (đi) → thì tương lai?",
+      "choices_vi": [
+        "갈 거예요",
+        "갔어요",
+        "가요",
+        "가지 마세요"
+      ]
     },
-
     {
-      "id": 21, "stage": 4, "type": "reading_card",
+      "id": 21,
+      "stage": 4,
+      "type": "reading_card",
       "title": "Making Sentences Negative",
+      "title_zh_tw": "構成否定句",
       "title_kr": "부정문",
       "body": "Short negation: 안 + verb. Long negation: verb stem + 지 않아요. Cannot: 못 + verb.",
+      "body_zh_tw": "短否定：안＋動詞。長否定：動詞詞幹＋지 않아요。不能：못＋動詞。",
       "rules": [
         "안 먹어요 (don't eat — short form)",
         "먹지 않아요 (don't eat — long form)",
         "못 가요 (can't go — unable to)"
+      ],
+      "rules_zh_tw": [
+        "안 먹어요（不吃——短形式）",
+        "먹지 않아요（不吃——長形式）",
+        "못 가요（不能去——能力上無法）"
+      ],
+      "title_es": "Hacer Oraciones Negativas",
+      "body_es": "Negación corta: 안 + verbo. Negación larga: raíz verbal + 지 않아요. No poder: 못 + verbo.",
+      "rules_es": [
+        "안 먹어요 (no como — forma corta)",
+        "먹지 않아요 (no como — forma larga)",
+        "못 가요 (no puedo ir — incapaz)"
+      ],
+      "title_fr": "Construire des Phrases Négatives",
+      "body_fr": "Négation courte : 안 + verbe. Négation longue : radical du verbe + 지 않아요. Ne pas pouvoir : 못 + verbe.",
+      "rules_fr": [
+        "안 먹어요 (je ne mange pas — forme courte)",
+        "먹지 않아요 (je ne mange pas — forme longue)",
+        "못 가요 (je ne peux pas aller — incapable)"
+      ],
+      "title_de": "Sätze verneinen",
+      "body_de": "Kurze Verneinung: 안 + Verb. Lange Verneinung: Verbstamm + 지 않아요. Nicht können: 못 + Verb.",
+      "rules_de": [
+        "안 먹어요 (esse nicht — Kurzform)",
+        "먹지 않아요 (esse nicht — Langform)",
+        "못 가요 (kann nicht gehen — Unfähigkeit)"
+      ],
+      "title_th": "การสร้างประโยคปฏิเสธ",
+      "body_th": "การปฏิเสธสั้น: 안 + กริยา การปฏิเสธยาว: ก้านกริยา + 지 않아요 ไม่สามารถ: 못 + กริยา",
+      "rules_th": [
+        "안 먹어요 (ไม่กิน — รูปสั้น)",
+        "먹지 않아요 (ไม่กิน — รูปยาว)",
+        "못 가요 (ไปไม่ได้ — ไม่สามารถ)"
+      ],
+      "title_id": "Membuat Kalimat Negatif",
+      "body_id": "Negasi pendek: 안 + kata kerja. Negasi panjang: akar kata kerja + 지 않아요. Tidak bisa: 못 + kata kerja.",
+      "rules_id": [
+        "안 먹어요 (tidak makan — bentuk pendek)",
+        "먹지 않아요 (tidak makan — bentuk panjang)",
+        "못 가요 (tidak bisa pergi — tidak mampu)"
+      ],
+      "title_vi": "Làm câu phủ định",
+      "body_vi": "Phủ định ngắn: 안 + động từ. Phủ định dài: gốc động từ + 지 않아요. Không thể: 못 + động từ.",
+      "rules_vi": [
+        "안 먹어요 (không ăn — dạng ngắn)",
+        "먹지 않아요 (không ăn — dạng dài)",
+        "못 가요 (không thể đi — không có khả năng)"
       ]
     },
     {
-      "id": 22, "stage": 4, "type": "match_quiz",
+      "id": 22,
+      "stage": 4,
+      "type": "match_quiz",
       "prompt": "'I don't eat' — short negation form",
-      "choices": ["안 먹어요", "먹지 않아요", "못 먹어요", "안 가요"],
-      "correct": "안 먹어요"
+      "prompt_zh_tw": "「我不吃」——短否定形式",
+      "choices": [
+        "안 먹어요",
+        "먹지 않아요",
+        "못 먹어요",
+        "안 가요"
+      ],
+      "choices_zh_tw": [
+        "안 먹어요",
+        "먹지 않아요",
+        "못 먹어요",
+        "안 가요"
+      ],
+      "correct": "안 먹어요",
+      "prompt_es": "\"No como\" — forma de negación corta",
+      "choices_es": [
+        "안 먹어요",
+        "먹지 않아요",
+        "못 먹어요",
+        "안 가요"
+      ],
+      "prompt_fr": "« Je ne mange pas » — forme de négation courte",
+      "choices_fr": [
+        "안 먹어요",
+        "먹지 않아요",
+        "못 먹어요",
+        "안 가요"
+      ],
+      "prompt_de": "„Ich esse nicht\" — kurze Verneinungsform",
+      "choices_de": [
+        "안 먹어요",
+        "먹지 않아요",
+        "못 먹어요",
+        "안 가요"
+      ],
+      "prompt_th": "ฉันไม่กิน — รูปปฏิเสธสั้น",
+      "choices_th": [
+        "안 먹어요",
+        "먹지 않아요",
+        "못 먹어요",
+        "안 가요"
+      ],
+      "prompt_id": "'Saya tidak makan' — bentuk negasi pendek",
+      "choices_id": [
+        "안 먹어요",
+        "먹지 않아요",
+        "못 먹어요",
+        "안 가요"
+      ],
+      "prompt_vi": "'Tôi không ăn' — dạng phủ định ngắn",
+      "choices_vi": [
+        "안 먹어요",
+        "먹지 않아요",
+        "못 먹어요",
+        "안 가요"
+      ]
     },
-
     {
-      "id": 23, "stage": 5, "type": "reading_card",
+      "id": 23,
+      "stage": 5,
+      "type": "reading_card",
       "title": "Forming Questions",
+      "title_zh_tw": "構成疑問句",
       "title_kr": "의문문",
       "body": "Korean questions use the SAME word order as statements — just add rising intonation (↑) or a question mark.",
+      "body_zh_tw": "韓語疑問句與陳述句使用相同的語序——只需在末尾加上升調（↑）或問號。",
       "rules": [
         "뭐 / 무엇 — What",
         "누구 — Who",
@@ -255,33 +1574,215 @@
         "얼마 — How much",
         "몇 — How many"
       ],
+      "rules_zh_tw": [
+        "뭐 / 무엇 — 什麼",
+        "누구 — 誰",
+        "어디 — 哪裡",
+        "언제 — 什麼時候",
+        "왜 — 為什麼",
+        "어떻게 — 怎麼",
+        "얼마 — 多少（錢）",
+        "몇 — 幾個"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Grammar Tip",
         "text": "밥을 먹어요 = I eat rice. 밥을 먹어요? = Do you eat rice? Same words — just a rising tone at the end. No word inversion like English!"
+      },
+      "tip_zh_tw": {
+        "label": "文法提示",
+        "text": "밥을 먹어요 = 我吃飯。밥을 먹어요？= 你吃飯嗎？相同的詞——只是末尾升調。不像英語那樣需要倒裝！"
+      },
+      "title_es": "Formando Preguntas",
+      "body_es": "Las preguntas coreanas usan el MISMO orden de palabras que las declaraciones — solo añade entonación ascendente (↑) o un signo de interrogación.",
+      "rules_es": [
+        "뭐 / 무엇 — Qué",
+        "누구 — Quién",
+        "어디 — Dónde",
+        "언제 — Cuándo",
+        "왜 — Por qué",
+        "어떻게 — Cómo",
+        "얼마 — Cuánto",
+        "몇 — Cuántos"
+      ],
+      "tip_es": {
+        "label": "Consejo Gramatical",
+        "text": "밥을 먹어요 = Como arroz. 밥을 먹어요? = ¿Comes arroz? Las mismas palabras — solo entonación ascendente al final. ¡Sin inversión como en español!"
+      },
+      "title_fr": "Former des Questions",
+      "body_fr": "Les questions coréennes utilisent le MÊME ordre des mots que les déclarations — ajoutez simplement une intonation montante (↑) ou un point d'interrogation.",
+      "rules_fr": [
+        "뭐 / 무엇 — Quoi / Que",
+        "누구 — Qui",
+        "어디 — Où",
+        "언제 — Quand",
+        "왜 — Pourquoi",
+        "어떻게 — Comment",
+        "얼마 — Combien",
+        "몇 — Combien (nombre)"
+      ],
+      "tip_fr": {
+        "label": "Conseil Grammatical",
+        "text": "밥을 먹어요 = Je mange du riz. 밥을 먹어요 ? = Tu manges du riz ? Les mêmes mots — juste une intonation montante à la fin. Pas d'inversion comme en français !"
+      },
+      "title_de": "Fragen bilden",
+      "body_de": "Koreanische Fragen verwenden DIESELBE Wortstellung wie Aussagen — füge einfach eine steigende Intonation (↑) oder ein Fragezeichen hinzu.",
+      "rules_de": [
+        "뭐 / 무엇 — Was",
+        "누구 — Wer",
+        "어디 — Wo",
+        "언제 — Wann",
+        "왜 — Warum",
+        "어떻게 — Wie",
+        "얼마 — Wie viel",
+        "몇 — Wie viele"
+      ],
+      "tip_de": {
+        "label": "Grammatik-Tipp",
+        "text": "밥을 먹어요 = Ich esse Reis. 밥을 먹어요? = Isst du Reis? Dieselben Wörter — nur eine steigende Intonation am Ende. Keine Inversion wie im Deutschen!"
+      },
+      "title_th": "การสร้างคำถาม",
+      "body_th": "คำถามภาษาเกาหลีใช้ลำดับคำเดียวกับประโยคบอกเล่า — เพียงแต่เพิ่มน้ำเสียงขึ้น (↑) หรือเครื่องหมายคำถาม",
+      "tip_th": {
+        "label": "เคล็ดลับไวยากรณ์",
+        "text": "밥을 먹어요 = ฉันกินข้าว 밥을 먹어요? = คุณกินข้าวไหม? คำเดิม — เพียงแต่น้ำเสียงขึ้นตอนท้าย ไม่ต้องสลับลำดับคำเหมือนภาษาอังกฤษ!"
+      },
+      "rules_th": [
+        "뭐 / 무엇 — อะไร",
+        "누구 — ใคร",
+        "어디 — ที่ไหน",
+        "언제 — เมื่อไหร่",
+        "왜 — ทำไม",
+        "어떻게 — อย่างไร",
+        "얼마 — เท่าไหร่",
+        "몇 — กี่"
+      ],
+      "title_id": "Membentuk Pertanyaan",
+      "body_id": "Pertanyaan Korea menggunakan urutan kata yang SAMA seperti kalimat pernyataan — cukup tambahkan intonasi naik (↑) atau tanda tanya.",
+      "rules_id": [
+        "뭐 / 무엇 — Apa",
+        "누구 — Siapa",
+        "어디 — Di mana",
+        "언제 — Kapan",
+        "왜 — Mengapa",
+        "어떻게 — Bagaimana",
+        "얼마 — Berapa (harga)",
+        "몇 — Berapa (jumlah)"
+      ],
+      "tip_id": {
+        "label": "Tips Tata Bahasa",
+        "text": "밥을 먹어요 = Saya makan nasi. 밥을 먹어요? = Apakah kamu makan nasi? Kata yang sama — hanya nada naik di akhir. Tidak ada pembalikan kata seperti bahasa Inggris!"
+      },
+      "title_vi": "Đặt câu hỏi",
+      "body_vi": "Câu hỏi tiếng Hàn dùng CÙNG trật tự từ như câu trần thuật — chỉ cần thêm ngữ điệu lên (↑) hoặc dấu chấm hỏi.",
+      "rules_vi": [
+        "뭐 / 무엇 — Cái gì",
+        "누구 — Ai",
+        "어디 — Ở đâu",
+        "언제 — Khi nào",
+        "왜 — Tại sao",
+        "어떻게 — Như thế nào",
+        "얼마 — Bao nhiêu (giá tiền)",
+        "몇 — Mấy / Bao nhiêu (số lượng)"
+      ],
+      "tip_vi": {
+        "label": "Mẹo ngữ pháp",
+        "text": "밥을 먹어요 = Tôi ăn cơm. 밥을 먹어요? = Bạn ăn cơm không? Cùng từ ngữ — chỉ là một ngữ điệu lên ở cuối. Không đảo từ như tiếng Anh!"
       }
     },
     {
-      "id": 24, "stage": 5, "type": "listen_repeat",
+      "id": 24,
+      "stage": 5,
+      "type": "listen_repeat",
       "audio": "이름이 뭐예요?",
-      "syllables": ["이름이", " ", "뭐예요?"],
+      "syllables": [
+        "이름이",
+        " ",
+        "뭐예요?"
+      ],
       "romanization": "i-reum-i mwo-ye-yo?",
       "meaning": "What is your name?",
+      "meaning_zh_tw": "你叫什麼名字？",
       "meaning_ja": "お名前は何ですか？",
-      "katakana": "イルミ ムォイェヨ？"
+      "katakana": "イルミ ムォイェヨ？",
+      "meaning_es": "¿Cómo te llamas? / ¿Cuál es tu nombre?",
+      "meaning_fr": "Comment vous appelez-vous ? / Quel est votre prénom ?",
+      "meaning_de": "Wie heißt du? / Was ist dein Name?",
+      "meaning_vi": "Tên bạn là gì?",
+      "meaning_th": "คุณชื่ออะไร?",
+      "meaning_id": "Siapa nama Anda?"
     },
     {
-      "id": 25, "stage": 5, "type": "match_quiz",
+      "id": 25,
+      "stage": 5,
+      "type": "match_quiz",
       "prompt": "'Where' in Korean?",
-      "choices": ["어디", "뭐", "왜", "언제"],
-      "correct": "어디"
+      "prompt_zh_tw": "「哪裡」的韓語是？",
+      "choices": [
+        "어디",
+        "뭐",
+        "왜",
+        "언제"
+      ],
+      "choices_zh_tw": [
+        "어디",
+        "뭐",
+        "왜",
+        "언제"
+      ],
+      "correct": "어디",
+      "prompt_es": "\"Dónde\" en coreano?",
+      "choices_es": [
+        "어디",
+        "뭐",
+        "왜",
+        "언제"
+      ],
+      "prompt_fr": "« Où » en coréen ?",
+      "choices_fr": [
+        "어디",
+        "뭐",
+        "왜",
+        "언제"
+      ],
+      "prompt_de": "„Wo\" auf Koreanisch?",
+      "choices_de": [
+        "어디",
+        "뭐",
+        "왜",
+        "언제"
+      ],
+      "prompt_th": "คำว่า ที่ไหน เป็นภาษาเกาหลีคืออะไร?",
+      "choices_th": [
+        "어디",
+        "뭐",
+        "왜",
+        "언제"
+      ],
+      "prompt_id": "'Di mana' dalam bahasa Korea?",
+      "choices_id": [
+        "어디",
+        "뭐",
+        "왜",
+        "언제"
+      ],
+      "prompt_vi": "'Ở đâu' trong tiếng Hàn?",
+      "choices_vi": [
+        "어디",
+        "뭐",
+        "왜",
+        "언제"
+      ]
     },
-
     {
-      "id": 26, "stage": 6, "type": "reading_card",
+      "id": 26,
+      "stage": 6,
+      "type": "reading_card",
       "title": "Essential Sentence Patterns",
+      "title_zh_tw": "核心句型",
       "title_kr": "핵심 문형",
       "body": "Master these 6 patterns to express the most common ideas in Korean conversations.",
+      "body_zh_tw": "掌握這6個句型，表達韓語對話中最常見的想法。",
       "rules": [
         "~이에요/예요 — is/am/are (noun): 학생이에요 (I'm a student)",
         "~고 싶어요 — want to: 한국에 가고 싶어요 (I want to go to Korea)",
@@ -289,111 +1790,655 @@
         "~아/어야 해요 — must: 공부해야 해요 (I must study)",
         "~(으)면 — if/when: 비가 오면 집에 있어요 (If it rains, I stay home)",
         "~때문에 — because of: 비 때문에 못 가요 (Can't go because of rain)"
+      ],
+      "rules_zh_tw": [
+        "~이에요/예요 — 是（名詞）：학생이에요（我是學生）",
+        "~고 싶어요 — 想要：한국에 가고 싶어요（我想去韓國）",
+        "~ㄹ/을 수 있어요 — 能夠：한국어를 할 수 있어요（我能說韓語）",
+        "~아/어야 해요 — 必須：공부해야 해요（我必須學習）",
+        "~(으)면 — 如果／當：비가 오면 집에 있어요（如果下雨，我待在家）",
+        "~때문에 — 因為：비 때문에 못 가요（因為下雨無法去）"
+      ],
+      "title_es": "Patrones de Oraciones Esenciales",
+      "body_es": "Domina estos 6 patrones para expresar las ideas más comunes en conversaciones en coreano.",
+      "rules_es": [
+        "~이에요/예요 — es/soy/eres (sustantivo): 학생이에요 (Soy estudiante)",
+        "~고 싶어요 — quiero: 한국에 가고 싶어요 (Quiero ir a Corea)",
+        "~ㄹ/을 수 있어요 — puedo: 한국어를 할 수 있어요 (Puedo hablar coreano)",
+        "~아/어야 해요 — debo: 공부해야 해요 (Debo estudiar)",
+        "~(으)면 — si/cuando: 비가 오면 집에 있어요 (Si llueve, me quedo en casa)",
+        "~때문에 — por / debido a: 비 때문에 못 가요 (No puedo ir por la lluvia)"
+      ],
+      "title_fr": "Phrases Grammaticales Essentielles",
+      "body_fr": "Maîtrisez ces 6 structures pour exprimer les idées les plus courantes dans les conversations en coréen.",
+      "rules_fr": [
+        "~이에요/예요 — est/suis/es (nom) : 학생이에요 (Je suis étudiant)",
+        "~고 싶어요 — vouloir : 한국에 가고 싶어요 (Je veux aller en Corée)",
+        "~ㄹ/을 수 있어요 — pouvoir : 한국어를 할 수 있어요 (Je peux parler coréen)",
+        "~아/어야 해요 — devoir : 공부해야 해요 (Je dois étudier)",
+        "~(으)면 — si/quand : 비가 오면 집에 있어요 (S'il pleut, je reste à la maison)",
+        "~때문에 — à cause de : 비 때문에 못 가요 (Je ne peux pas y aller à cause de la pluie)"
+      ],
+      "title_de": "Wesentliche Satzmuster",
+      "body_de": "Beherrsche diese 6 Muster, um die häufigsten Ideen in koreanischen Gesprächen auszudrücken.",
+      "rules_de": [
+        "~이에요/예요 — ist/bin/bist (Nomen): 학생이에요 (Ich bin Student)",
+        "~고 싶어요 — möchte: 한국에 가고 싶어요 (Ich möchte nach Korea gehen)",
+        "~ㄹ/을 수 있어요 — kann: 한국어를 할 수 있어요 (Ich kann Koreanisch sprechen)",
+        "~아/어야 해요 — muss: 공부해야 해요 (Ich muss lernen)",
+        "~(으)면 — wenn/falls: 비가 오면 집에 있어요 (Wenn es regnet, bleibe ich zu Hause)",
+        "~때문에 — wegen / aufgrund von: 비 때문에 못 가요 (Kann nicht gehen wegen des Regens)"
+      ],
+      "title_th": "รูปแบบประโยคสำคัญ",
+      "body_th": "เชี่ยวชาญ 6 รูปแบบเหล่านี้เพื่อแสดงแนวคิดทั่วไปที่สุดในการสนทนาภาษาเกาหลี",
+      "rules_th": [
+        "~이에요/예요 — เป็น/คือ (คำนาม): 학생이에요 (ฉันเป็นนักเรียน)",
+        "~고 싶어요 — อยากจะ: 한국에 가고 싶어요 (ฉันอยากไปเกาหลี)",
+        "~ㄹ/을 수 있어요 — สามารถ: 한국어를 할 수 있어요 (ฉันพูดเกาหลีได้)",
+        "~아/어야 해요 — ต้อง: 공부해야 해요 (ฉันต้องเรียน)",
+        "~(으)면 — ถ้า/เมื่อ: 비가 오면 집에 있어요 (ถ้าฝนตกฉันอยู่บ้าน)",
+        "~때문에 — เพราะ: 비 때문에 못 가요 (ไปไม่ได้เพราะฝนตก)"
+      ],
+      "title_id": "Pola Kalimat Penting",
+      "body_id": "Kuasai 6 pola ini untuk mengungkapkan ide-ide paling umum dalam percakapan bahasa Korea.",
+      "rules_id": [
+        "~이에요/예요 — adalah (kata benda): 학생이에요 (Saya seorang pelajar)",
+        "~고 싶어요 — ingin: 한국에 가고 싶어요 (Saya ingin pergi ke Korea)",
+        "~ㄹ/을 수 있어요 — bisa: 한국어를 할 수 있어요 (Saya bisa berbahasa Korea)",
+        "~아/어야 해요 — harus: 공부해야 해요 (Saya harus belajar)",
+        "~(으)면 — jika/ketika: 비가 오면 집에 있어요 (Jika hujan, saya tinggal di rumah)",
+        "~때문에 — karena: 비 때문에 못 가요 (Tidak bisa pergi karena hujan)"
+      ],
+      "title_vi": "Các mẫu câu thiết yếu",
+      "body_vi": "Hãy làm chủ 6 mẫu câu này để diễn đạt những ý phổ biến nhất trong hội thoại tiếng Hàn.",
+      "rules_vi": [
+        "~이에요/예요 — là (danh từ): 학생이에요 (Tôi là học sinh)",
+        "~고 싶어요 — muốn: 한국에 가고 싶어요 (Tôi muốn đi Hàn Quốc)",
+        "~ㄹ/을 수 있어요 — có thể: 한국어를 할 수 있어요 (Tôi có thể nói tiếng Hàn)",
+        "~아/어야 해요 — phải: 공부해야 해요 (Tôi phải học)",
+        "~(으)면 — nếu/khi: 비가 오면 집에 있어요 (Nếu trời mưa, tôi ở nhà)",
+        "~때문에 — vì: 비 때문에 못 가요 (Không thể đi vì trời mưa)"
       ]
     },
     {
-      "id": 27, "stage": 6, "type": "match_quiz",
+      "id": 27,
+      "stage": 6,
+      "type": "match_quiz",
       "prompt": "Pattern for 'I want to go to Korea': 한국에 ___",
-      "choices": ["가고 싶어요", "가야 해요", "갈 거예요", "갈 수 있어요"],
-      "correct": "가고 싶어요"
+      "prompt_zh_tw": "「我想去韓國」的句型：한국에 ___",
+      "choices": [
+        "가고 싶어요",
+        "가야 해요",
+        "갈 거예요",
+        "갈 수 있어요"
+      ],
+      "choices_zh_tw": [
+        "가고 싶어요",
+        "가야 해요",
+        "갈 거예요",
+        "갈 수 있어요"
+      ],
+      "correct": "가고 싶어요",
+      "prompt_es": "Patrón para \"Quiero ir a Corea\": 한국에 ___",
+      "choices_es": [
+        "가고 싶어요",
+        "가야 해요",
+        "갈 거예요",
+        "갈 수 있어요"
+      ],
+      "prompt_fr": "Structure pour « Je veux aller en Corée » : 한국에 ___",
+      "choices_fr": [
+        "가고 싶어요",
+        "가야 해요",
+        "갈 거예요",
+        "갈 수 있어요"
+      ],
+      "prompt_de": "Muster für „Ich möchte nach Korea gehen\": 한국에 ___",
+      "choices_de": [
+        "가고 싶어요",
+        "가야 해요",
+        "갈 거예요",
+        "갈 수 있어요"
+      ],
+      "prompt_th": "รูปแบบ ฉันอยากไปเกาหลี: 한국에 ___",
+      "choices_th": [
+        "가고 싶어요",
+        "가야 해요",
+        "갈 거예요",
+        "갈 수 있어요"
+      ],
+      "prompt_id": "Pola untuk 'Saya ingin pergi ke Korea': 한국에 ___",
+      "choices_id": [
+        "가고 싶어요",
+        "가야 해요",
+        "갈 거예요",
+        "갈 수 있어요"
+      ],
+      "prompt_vi": "Mẫu câu cho 'Tôi muốn đi Hàn Quốc': 한국에 ___",
+      "choices_vi": [
+        "가고 싶어요",
+        "가야 해요",
+        "갈 거예요",
+        "갈 수 있어요"
+      ]
     },
-
     {
-      "id": 28, "stage": 7, "type": "reading_card",
+      "id": 28,
+      "stage": 7,
+      "type": "reading_card",
       "title": "Connectors",
+      "title_zh_tw": "連接詞",
       "title_kr": "접속사",
       "body": "These 4 conjunctions connect sentences. Place them at the START of the second sentence.",
+      "body_zh_tw": "這4個連接詞連接句子。把它們放在第二個句子的開頭。",
       "rules": [
         "그리고 — And / And then (adds information or sequence)",
         "그래서 — So / Therefore (cause → result)",
         "그렇지만 — But / However (strong contrast, formal)",
         "그런데 — But / By the way (soft contrast, casual — most common!)"
       ],
+      "rules_zh_tw": [
+        "그리고 — 而且／然後（添加信息或順序）",
+        "그래서 — 所以／因此（原因→結果）",
+        "그렇지만 — 但是／然而（強烈對比，正式）",
+        "그런데 — 但是／順便說一下（溫和對比，口語——最常用！）"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Usage Tip",
         "text": "그런데 is one of the most common words in spoken Korean — it softens contrast and shifts topics smoothly. 그렇지만 is stronger and more formal."
+      },
+      "tip_zh_tw": {
+        "label": "用法提示",
+        "text": "그런데是韓語口語中最常見的詞之一——它溫和地轉換對比並自然地轉換話題。그렇지만更強烈且更正式。"
+      },
+      "title_es": "Conectores",
+      "body_es": "Estas 4 conjunciones conectan oraciones. Colócalas al INICIO de la segunda oración.",
+      "rules_es": [
+        "그리고 — Y / Y entonces (añade información o secuencia)",
+        "그래서 — Entonces / Por eso (causa → resultado)",
+        "그렇지만 — Pero / Sin embargo (contraste fuerte, formal)",
+        "그런데 — Pero / Por cierto (contraste suave, informal — ¡el más común!)"
+      ],
+      "tip_es": {
+        "label": "Consejo de Uso",
+        "text": "그런데 es una de las palabras más comunes en el coreano oral — suaviza el contraste y cambia los temas de manera natural. 그렇지만 es más fuerte y formal."
+      },
+      "title_fr": "Conjonctions de Coordination",
+      "body_fr": "Ces 4 conjonctions connectent des phrases. Placez-les au DÉBUT de la deuxième phrase.",
+      "rules_fr": [
+        "그리고 — Et / Et ensuite (ajoute de l'information ou une séquence)",
+        "그래서 — Alors / Donc (cause → résultat)",
+        "그렇지만 — Mais / Cependant (contraste fort, formel)",
+        "그런데 — Mais / Au fait (contraste doux, familier — le plus courant !)"
+      ],
+      "tip_fr": {
+        "label": "Conseil d'Utilisation",
+        "text": "그런데 est l'un des mots les plus courants du coréen oral — il adoucit le contraste et change les sujets naturellement. 그렇지만 est plus fort et plus formel."
+      },
+      "title_de": "Konnektoren",
+      "body_de": "Diese 4 Konjunktionen verbinden Sätze. Platziere sie am ANFANG des zweiten Satzes.",
+      "rules_de": [
+        "그리고 — Und / Und dann (fügt Information oder Abfolge hinzu)",
+        "그래서 — Also / Deshalb (Ursache → Folge)",
+        "그렇지만 — Aber / Jedoch (starker Kontrast, formell)",
+        "그런데 — Aber / Übrigens (weicher Kontrast, umgangssprachlich — der häufigste!)"
+      ],
+      "tip_de": {
+        "label": "Verwendungstipp",
+        "text": "그런데 ist eines der häufigsten Wörter im gesprochenen Koreanisch — es mildert Kontraste und leitet Themenwechsel fließend ein. 그렇지만 ist stärker und formeller."
+      },
+      "title_th": "คำเชื่อม",
+      "body_th": "คำเชื่อม 4 คำนี้ใช้เชื่อมประโยค วางไว้ที่ต้นประโยคที่สอง",
+      "tip_th": {
+        "label": "เคล็ดลับการใช้",
+        "text": "그런데 เป็นหนึ่งในคำที่พบบ่อยที่สุดในการพูดเกาหลี — ใช้ผ่อนความขัดแย้งและเปลี่ยนหัวข้อได้อย่างลื่นไหล 그렇지만 แข็งกว่าและเป็นทางการกว่า"
+      },
+      "rules_th": [
+        "그리고 — และ / แล้วก็ (เพิ่มข้อมูลหรือลำดับ)",
+        "그래서 — ดังนั้น / เพราะฉะนั้น (เหตุ → ผล)",
+        "그렇지만 — แต่ / อย่างไรก็ตาม (ขัดแย้งแรง ทางการ)",
+        "그런데 — แต่ / อ้อ นั่นคือ (ขัดแย้งอ่อน ไม่เป็นทางการ — พบบ่อยที่สุด!)"
+      ],
+      "title_id": "Kata Sambung",
+      "body_id": "Keempat kata sambung ini menghubungkan kalimat. Letakkan di AWAL kalimat kedua.",
+      "rules_id": [
+        "그리고 — Dan / Lalu (menambah informasi atau urutan)",
+        "그래서 — Jadi / Oleh karena itu (sebab → akibat)",
+        "그렇지만 — Tetapi / Namun (kontras kuat, formal)",
+        "그런데 — Tetapi / Ngomong-ngomong (kontras lembut, santai — paling umum!)"
+      ],
+      "tip_id": {
+        "label": "Tips Penggunaan",
+        "text": "그런데 adalah salah satu kata paling umum dalam bahasa Korea lisan — kata ini melembutkan kontras dan mengalihkan topik secara mulus. 그렇지만 lebih kuat dan lebih formal."
+      },
+      "title_vi": "Từ nối",
+      "body_vi": "Bốn liên từ này nối các câu lại với nhau. Hãy đặt chúng ở ĐẦU câu thứ hai.",
+      "rules_vi": [
+        "그리고 — Và / Rồi thì (thêm thông tin hoặc trình tự)",
+        "그래서 — Vì vậy / Do đó (nguyên nhân → kết quả)",
+        "그렇지만 — Nhưng / Tuy nhiên (tương phản mạnh, trang trọng)",
+        "그런데 — Nhưng / À mà (tương phản nhẹ, thân mật — phổ biến nhất!)"
+      ],
+      "tip_vi": {
+        "label": "Mẹo sử dụng",
+        "text": "그런데 là một trong những từ phổ biến nhất trong tiếng Hàn nói — nó làm dịu sự tương phản và chuyển chủ đề một cách mượt mà. 그렇지만 mạnh hơn và trang trọng hơn."
       }
     },
     {
-      "id": 29, "stage": 7, "type": "listen_repeat",
+      "id": 29,
+      "stage": 7,
+      "type": "listen_repeat",
       "audio": "비가 왔어요. 그래서 집에 있었어요.",
-      "syllables": ["비가 왔어요.", " ", "그래서", " ", "집에 있었어요."],
+      "syllables": [
+        "비가 왔어요.",
+        " ",
+        "그래서",
+        " ",
+        "집에 있었어요."
+      ],
       "romanization": "bi-ga wass-eo-yo. geu-rae-seo jib-e iss-eoss-eo-yo.",
       "meaning": "It rained. So I stayed home.",
+      "meaning_zh_tw": "下雨了。所以我待在家裡。",
       "meaning_ja": "雨が降りました。だから家にいました。",
-      "katakana": "ピガ ワッソヨ。クレソ チベ イッソッソヨ。"
+      "katakana": "ピガ ワッソヨ。クレソ チベ イッソッソヨ。",
+      "meaning_es": "Llovió. Entonces me quedé en casa.",
+      "meaning_fr": "Il a plu. Alors je suis resté(e) à la maison.",
+      "meaning_de": "Es hat geregnet. Also bin ich zu Hause geblieben.",
+      "meaning_vi": "Trời mưa. Vì vậy tôi ở nhà.",
+      "meaning_th": "ฝนตก ดังนั้นฉันอยู่บ้าน",
+      "meaning_id": "Hujan turun. Jadi saya tinggal di rumah."
     },
     {
-      "id": 30, "stage": 7, "type": "match_quiz",
+      "id": 30,
+      "stage": 7,
+      "type": "match_quiz",
       "prompt": "Soft contrast or topic shift — most common in spoken Korean?",
-      "choices": ["그런데", "그렇지만", "그래서", "그리고"],
-      "correct": "그런데"
+      "prompt_zh_tw": "口語韓語中最常用的溫和對比或話題轉換詞？",
+      "choices": [
+        "그런데",
+        "그렇지만",
+        "그래서",
+        "그리고"
+      ],
+      "choices_zh_tw": [
+        "그런데",
+        "그렇지만",
+        "그래서",
+        "그리고"
+      ],
+      "correct": "그런데",
+      "prompt_es": "¿Contraste suave o cambio de tema — más común en el coreano oral?",
+      "choices_es": [
+        "그런데",
+        "그렇지만",
+        "그래서",
+        "그리고"
+      ],
+      "prompt_fr": "Contraste doux ou changement de sujet — le plus courant en coréen oral ?",
+      "choices_fr": [
+        "그런데",
+        "그렇지만",
+        "그래서",
+        "그리고"
+      ],
+      "prompt_de": "Weicher Kontrast oder Themenwechsel — am häufigsten im gesprochenen Koreanisch?",
+      "choices_de": [
+        "그런데",
+        "그렇지만",
+        "그래서",
+        "그리고"
+      ],
+      "prompt_th": "ขัดแย้งอ่อนหรือเปลี่ยนหัวข้อ — พบบ่อยที่สุดในการพูดเกาหลี?",
+      "choices_th": [
+        "그런데",
+        "그렇지만",
+        "그래서",
+        "그리고"
+      ],
+      "prompt_id": "Kontras lembut atau peralihan topik — paling umum dalam bahasa Korea lisan?",
+      "choices_id": [
+        "그런데",
+        "그렇지만",
+        "그래서",
+        "그리고"
+      ],
+      "prompt_vi": "Tương phản nhẹ hoặc chuyển chủ đề — phổ biến nhất trong tiếng Hàn nói?",
+      "choices_vi": [
+        "그런데",
+        "그렇지만",
+        "그래서",
+        "그리고"
+      ]
     },
-
     {
-      "id": 31, "stage": 8, "type": "reading_card",
+      "id": 31,
+      "stage": 8,
+      "type": "reading_card",
       "title": "And, With",
+      "title_zh_tw": "與……，和……一起",
       "title_kr": "-하고, -(이)랑, 와/과",
       "body": "Use these particles between nouns (not sentences) to mean 'and' or 'with'.",
+      "body_zh_tw": "在名詞之間（而非句子之間）使用這些助詞，表示「和」或「一起」。",
       "rules": [
         "-하고 — after any noun, neutral/casual: 친구하고 갔어요 (went with a friend)",
         "-(이)랑 — 이랑 (consonant) / 랑 (vowel), very casual: 오빠랑 놀았어요 (played with older brother)",
         "-와/과 — 와 (vowel) / 과 (consonant), formal/written: 선생님과 상담했어요 (consulted with teacher)"
+      ],
+      "rules_zh_tw": [
+        "-하고 — 接在任何名詞後，中性/口語：친구하고 갔어요（和朋友去了）",
+        "-(이)랑 — 이랑（子音後）/ 랑（母音後），非常口語：오빠랑 놀았어요（和哥哥玩了）",
+        "-와/과 — 와（母音後）/ 과（子音後），正式/書面：선생님과 상담했어요（和老師諮詢了）"
+      ],
+      "title_es": "Y, Con",
+      "body_es": "Usa estas partículas entre sustantivos (no entre oraciones) para significar \"y\" o \"con\".",
+      "rules_es": [
+        "-하고 — después de cualquier sustantivo, neutral/informal: 친구하고 갔어요 (fui con un amigo)",
+        "-(이)랑 — 이랑 (consonante) / 랑 (vocal), muy informal: 오빠랑 놀았어요 (jugué con mi hermano mayor)",
+        "-와/과 — 와 (vocal) / 과 (consonante), formal/escrito: 선생님과 상담했어요 (consulté con el profesor)"
+      ],
+      "title_fr": "Et, Avec",
+      "body_fr": "Utilisez ces particules entre les noms (pas entre les phrases) pour signifier « et » ou « avec ».",
+      "rules_fr": [
+        "-하고 — après n'importe quel nom, neutre/familier : 친구하고 갔어요 (suis allé avec un ami)",
+        "-(이)랑 — 이랑 (consonne) / 랑 (voyelle), très familier : 오빠랑 놀았어요 (ai joué avec mon grand frère)",
+        "-와/과 — 와 (voyelle) / 과 (consonne), formel/écrit : 선생님과 상담했어요 (ai consulté avec le professeur)"
+      ],
+      "title_de": "Und, Mit",
+      "body_de": "Verwende diese Partikel zwischen Nomen (nicht Sätzen), um „und\" oder „mit\" auszudrücken.",
+      "rules_de": [
+        "-하고 — nach jedem Nomen, neutral/umgangssprachlich: 친구하고 갔어요 (mit einem Freund gegangen)",
+        "-(이)랑 — 이랑 (nach Konsonant) / 랑 (nach Vokal), sehr umgangssprachlich: 오빠랑 놀았어요 (mit dem älteren Bruder gespielt)",
+        "-와/과 — 와 (nach Vokal) / 과 (nach Konsonant), formell/schriftlich: 선생님과 상담했어요 (mit dem Lehrer beraten)"
+      ],
+      "title_th": "และ กับ",
+      "body_th": "ใช้คำช่วยเหล่านี้ระหว่างคำนาม (ไม่ใช่ประโยค) เพื่อหมายถึง และ หรือ กับ",
+      "rules_th": [
+        "-하고 — หลังคำนามใดก็ได้ กลาง/ไม่เป็นทางการ: 친구하고 갔어요 (ไปกับเพื่อน)",
+        "-(이)랑 — 이랑 (ลงท้ายพยัญชนะ) / 랑 (ลงท้ายสระ) ไม่เป็นทางการมาก: 오빠랑 놀았어요 (เล่นกับพี่ชาย)",
+        "-와/과 — 와 (ลงท้ายสระ) / 과 (ลงท้ายพยัญชนะ) ทางการ/การเขียน: 선생님과 상담했어요 (ปรึกษาครู)"
+      ],
+      "title_id": "Dan, Dengan",
+      "body_id": "Gunakan partikel ini di antara kata benda (bukan kalimat) untuk berarti 'dan' atau 'dengan'.",
+      "rules_id": [
+        "-하고 — setelah kata benda apa pun, netral/santai: 친구하고 갔어요 (pergi dengan teman)",
+        "-(이)랑 — 이랑 (konsonan) / 랑 (vokal), sangat santai: 오빠랑 놀았어요 (bermain dengan kakak laki-laki)",
+        "-와/과 — 와 (vokal) / 과 (konsonan), formal/tulisan: 선생님과 상담했어요 (berkonsultasi dengan guru)"
+      ],
+      "title_vi": "Và, với",
+      "body_vi": "Dùng các trợ từ này giữa các danh từ (không phải giữa các câu) để mang nghĩa 'và' hoặc 'với'.",
+      "rules_vi": [
+        "-하고 — sau bất kỳ danh từ nào, trung tính/thân mật: 친구하고 갔어요 (đã đi với một người bạn)",
+        "-(이)랑 — 이랑 (phụ âm) / 랑 (nguyên âm), rất thân mật: 오빠랑 놀았어요 (đã chơi với anh trai)",
+        "-와/과 — 와 (nguyên âm) / 과 (phụ âm), trang trọng/văn viết: 선생님과 상담했어요 (đã tư vấn với giáo viên)"
       ]
     },
-
     {
-      "id": 32, "stage": 9, "type": "reading_card",
+      "id": 32,
+      "stage": 9,
+      "type": "reading_card",
       "title": "To/From Someone",
+      "title_zh_tw": "給某人／從某人",
       "title_kr": "-한테, -한테서",
       "body": "Use person-directional particles when giving to or receiving from people, not places.",
+      "body_zh_tw": "給人或從人那裡接收時，使用人稱方向助詞，而不是地點助詞。",
       "rules": [
         "-한테 — to (a person): 친구한테 전화했어요 (called my friend)",
         "-한테서 — from (a person): 선생님한테서 배웠어요 (learned from teacher)",
         "-에게 / -에게서 — formal equivalents",
         "-께 — to (honorific, for elders): 선생님께 드렸어요"
+      ],
+      "rules_zh_tw": [
+        "-한테 — 給（某人）：친구한테 전화했어요（給朋友打電話了）",
+        "-한테서 — 從（某人）：선생님한테서 배웠어요（從老師那裡學了）",
+        "-에게 / -에게서 — 正式的對應形式",
+        "-께 — 給（尊稱，用於長輩）：선생님께 드렸어요"
+      ],
+      "title_es": "A / De Alguien",
+      "body_es": "Usa partículas de dirección personal cuando das o recibes de personas, no de lugares.",
+      "rules_es": [
+        "-한테 — a (una persona): 친구한테 전화했어요 (llamé a mi amigo)",
+        "-한테서 — de (una persona): 선생님한테서 배웠어요 (aprendí del profesor)",
+        "-에게 / -에게서 — equivalentes formales",
+        "-께 — a (honorífico, para mayores): 선생님께 드렸어요"
+      ],
+      "title_fr": "À / De Quelqu'un",
+      "body_fr": "Utilisez des particules directionnelles de personne quand vous donnez à ou recevez de quelqu'un, pas d'un lieu.",
+      "rules_fr": [
+        "-한테 — à (une personne) : 친구한테 전화했어요 (ai appelé mon ami)",
+        "-한테서 — de (une personne) : 선생님한테서 배웠어요 (ai appris du professeur)",
+        "-에게 / -에게서 — équivalents formels",
+        "-께 — à (honorifique, pour les aînés) : 선생님께 드렸어요"
+      ],
+      "title_de": "An jemanden / Von jemandem",
+      "body_de": "Verwende Personen-Richtungspartikel, wenn du jemandem etwas gibst oder von jemandem empfängst, nicht von Orten.",
+      "rules_de": [
+        "-한테 — an (eine Person): 친구한테 전화했어요 (meinen Freund angerufen)",
+        "-한테서 — von (eine Person): 선생님한테서 배웠어요 (vom Lehrer gelernt)",
+        "-에게 / -에게서 — formelle Entsprechungen",
+        "-께 — an (Ehrenform, für Ältere): 선생님께 드렸어요"
+      ],
+      "title_th": "ให้/จาก บุคคล",
+      "body_th": "ใช้คำช่วยบ่งทิศทางบุคคลเมื่อให้หรือรับจากคน ไม่ใช่สถานที่",
+      "rules_th": [
+        "-한테 — ให้ (บุคคล): 친구한테 전화했어요 (โทรหาเพื่อน)",
+        "-한테서 — จาก (บุคคล): 선생님한테서 배웠어요 (เรียนจากครู)",
+        "-에게 / -에게서 — รูปทางการ",
+        "-께 — ให้ (ยกย่อง สำหรับผู้ใหญ่): 선생님께 드렸어요"
+      ],
+      "title_id": "Kepada/Dari Seseorang",
+      "body_id": "Gunakan partikel arah untuk orang saat memberi kepada atau menerima dari orang, bukan tempat.",
+      "rules_id": [
+        "-한테 — kepada (seseorang): 친구한테 전화했어요 (menelepon teman saya)",
+        "-한테서 — dari (seseorang): 선생님한테서 배웠어요 (belajar dari guru)",
+        "-에게 / -에게서 — padanan formal",
+        "-께 — kepada (bentuk hormat, untuk yang lebih tua): 선생님께 드렸어요"
+      ],
+      "title_vi": "Đến/Từ ai đó",
+      "body_vi": "Dùng các trợ từ chỉ hướng-người khi cho hoặc nhận từ người, không phải nơi chốn.",
+      "rules_vi": [
+        "-한테 — đến (một người): 친구한테 전화했어요 (đã gọi cho bạn tôi)",
+        "-한테서 — từ (một người): 선생님한테서 배웠어요 (đã học từ giáo viên)",
+        "-에게 / -에게서 — các dạng trang trọng tương đương",
+        "-께 — đến (kính ngữ, dành cho người lớn tuổi): 선생님께 드렸어요"
       ]
     },
-
     {
-      "id": 33, "stage": 10, "type": "reading_card",
+      "id": 33,
+      "stage": 10,
+      "type": "reading_card",
       "title": "Telling Time",
+      "title_zh_tw": "說時間",
       "title_kr": "시간 말하기",
       "body": "Use NATIVE Korean numbers for hours (시) and SINO-KOREAN numbers for minutes (분). AM = 오전, PM = 오후.",
+      "body_zh_tw": "小時（시）使用固有韓語數字，分鐘（분）使用漢字韓語數字。上午 = 오전，下午 = 오후。",
       "rules": [
         "Hours (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시",
         "Minutes (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분",
         "Half past: 반 — 세 시 반 = 3:30",
         "Example: 오후 두 시 삼십 분 = 2:30 PM"
       ],
+      "rules_zh_tw": [
+        "小時（시）：한（1）、두（2）、세（3）、네（4）、다섯（5）...＋시",
+        "分鐘（분）：일（1）、이（2）、삼（3）、사（4）、오（5）...＋분",
+        "半小時：반 — 세 시 반 = 3:30",
+        "例：오후 두 시 삼십 분 = 下午2:30"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Key Pattern",
         "text": "Hours use Native Korean numbers (한, 두, 세...). Minutes use Sino-Korean numbers (일, 이, 삼...). Half past = 반. AM = 오전, PM = 오후."
+      },
+      "tip_zh_tw": {
+        "label": "關鍵規律",
+        "text": "小時使用固有韓語數字（한、두、세...）。分鐘使用漢字韓語數字（일、이、삼...）。半小時 = 반。上午 = 오전，下午 = 오후。"
+      },
+      "title_es": "Decir la Hora",
+      "body_es": "Usa números COREANOS NATIVOS para las horas (시) y números SINO-COREANOS para los minutos (분). AM = 오전, PM = 오후.",
+      "rules_es": [
+        "Horas (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시",
+        "Minutos (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분",
+        "Y media: 반 — 세 시 반 = 3:30",
+        "Ejemplo: 오후 두 시 삼십 분 = 2:30 PM"
+      ],
+      "tip_es": {
+        "label": "Patrón Clave",
+        "text": "Las horas usan números coreanos nativos (한, 두, 세...). Los minutos usan números sino-coreanos (일, 이, 삼...). Y media = 반. AM = 오전, PM = 오후."
+      },
+      "title_fr": "Dire l'Heure",
+      "body_fr": "Utilisez les nombres coréens NATIFS pour les heures (시) et les nombres SINO-CORÉENS pour les minutes (분). AM = 오전, PM = 오후.",
+      "rules_fr": [
+        "Heures (시) : 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시",
+        "Minutes (분) : 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분",
+        "Et demie : 반 — 세 시 반 = 3h30",
+        "Exemple : 오후 두 시 삼십 분 = 14h30"
+      ],
+      "tip_fr": {
+        "label": "Schéma Clé",
+        "text": "Les heures utilisent les nombres coréens natifs (한, 두, 세...). Les minutes utilisent les nombres sino-coréens (일, 이, 삼...). Et demie = 반. AM = 오전, PM = 오후."
+      },
+      "title_de": "Uhrzeit angeben",
+      "body_de": "Verwende NATIVE koreanische Zahlen für Stunden (시) und SINO-KOREANISCHE Zahlen für Minuten (분). AM = 오전, PM = 오후.",
+      "rules_de": [
+        "Stunden (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시",
+        "Minuten (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분",
+        "Halb: 반 — 세 시 반 = 3:30",
+        "Beispiel: 오후 두 시 삼십 분 = 14:30 Uhr"
+      ],
+      "tip_de": {
+        "label": "Schlüsselmuster",
+        "text": "Stunden verwenden native koreanische Zahlen (한, 두, 세...). Minuten verwenden sino-koreanische Zahlen (일, 이, 삼...). Halb = 반. AM = 오전, PM = 오후."
+      },
+      "title_th": "การบอกเวลา",
+      "body_th": "ใช้ตัวเลขเกาหลีดั้งเดิมสำหรับชั่วโมง (시) และตัวเลขจีน-เกาหลีสำหรับนาที (분) ก่อนเที่ยง = 오전 หลังเที่ยง = 오후",
+      "tip_th": {
+        "label": "รูปแบบสำคัญ",
+        "text": "ชั่วโมงใช้ตัวเลขเกาหลีดั้งเดิม (한 두 세...) นาทีใช้ตัวเลขจีน-เกาหลี (일 이 삼...) ครึ่ง = 반 ก่อนเที่ยง = 오전 หลังเที่ยง = 오후"
+      },
+      "rules_th": [
+        "ชั่วโมง (시): 한(1) 두(2) 세(3) 네(4) 다섯(5)... + 시",
+        "นาที (분): 일(1) 이(2) 삼(3) 사(4) 오(5)... + 분",
+        "ครึ่งชั่วโมง: 반 — 세 시 반 = 3:30",
+        "ตัวอย่าง: 오후 두 시 삼십 분 = 14:30"
+      ],
+      "title_id": "Menyebutkan Waktu",
+      "body_id": "Gunakan angka Korea ASLI untuk jam (시) dan angka SINO-KOREA untuk menit (분). AM = 오전, PM = 오후.",
+      "rules_id": [
+        "Jam (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시",
+        "Menit (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분",
+        "Setengah: 반 — 세 시 반 = 3:30",
+        "Contoh: 오후 두 시 삼십 분 = 14:30"
+      ],
+      "tip_id": {
+        "label": "Pola Kunci",
+        "text": "Jam menggunakan angka Korea asli (한, 두, 세...). Menit menggunakan angka Sino-Korea (일, 이, 삼...). Setengah = 반. AM = 오전, PM = 오후."
+      },
+      "title_vi": "Nói giờ",
+      "body_vi": "Dùng số ĐẾM THUẦN HÀN cho giờ (시) và số HÁN HÀN cho phút (분). Sáng = 오전, chiều/tối = 오후.",
+      "rules_vi": [
+        "Giờ (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시",
+        "Phút (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분",
+        "Rưỡi: 반 — 세 시 반 = 3:30",
+        "Ví dụ: 오후 두 시 삼십 분 = 2:30 chiều"
+      ],
+      "tip_vi": {
+        "label": "Mẫu câu chính",
+        "text": "Giờ dùng số đếm thuần Hàn (한, 두, 세...). Phút dùng số Hán Hàn (일, 이, 삼...). Rưỡi = 반. Sáng = 오전, chiều/tối = 오후."
       }
     },
     {
-      "id": 34, "stage": 10, "type": "listen_repeat",
+      "id": 34,
+      "stage": 10,
+      "type": "listen_repeat",
       "audio": "지금 몇 시예요?",
-      "syllables": ["지금", " ", "몇 시예요?"],
+      "syllables": [
+        "지금",
+        " ",
+        "몇 시예요?"
+      ],
       "romanization": "ji-geum myeot si-ye-yo?",
       "meaning": "What time is it now?",
+      "meaning_zh_tw": "現在幾點？",
       "meaning_ja": "今、何時ですか？",
-      "katakana": "チグム ミョッ シイェヨ？"
+      "katakana": "チグム ミョッ シイェヨ？",
+      "meaning_es": "¿Qué hora es ahora?",
+      "meaning_fr": "Quelle heure est-il maintenant ?",
+      "meaning_de": "Wie spät ist es jetzt?",
+      "meaning_vi": "Bây giờ là mấy giờ?",
+      "meaning_th": "ตอนนี้กี่โมงแล้ว?",
+      "meaning_id": "Sekarang jam berapa?"
     },
     {
-      "id": 35, "stage": 10, "type": "match_quiz",
+      "id": 35,
+      "stage": 10,
+      "type": "match_quiz",
       "prompt": "Hours in Korean time use which number system?",
-      "choices": ["Native Korean (한, 두, 세...)", "Sino-Korean (일, 이, 삼...)", "Either one", "Arabic numerals"],
-      "correct": "Native Korean (한, 두, 세...)"
+      "prompt_zh_tw": "韓語計時的小時使用哪種數字系統？",
+      "choices": [
+        "Native Korean (한, 두, 세...)",
+        "Sino-Korean (일, 이, 삼...)",
+        "Either one",
+        "Arabic numerals"
+      ],
+      "choices_zh_tw": [
+        "固有韓語數字（한、두、세...）",
+        "漢字韓語數字（일、이、삼...）",
+        "兩者皆可",
+        "阿拉伯數字"
+      ],
+      "correct": "Native Korean (한, 두, 세...)",
+      "prompt_es": "¿Las horas en la hora coreana usan qué sistema numérico?",
+      "choices_es": [
+        "Coreano nativo (한, 두, 세...)",
+        "Sino-coreano (일, 이, 삼...)",
+        "Cualquiera de los dos",
+        "Números arábigos"
+      ],
+      "prompt_fr": "Les heures en coréen utilisent quel système de numérotation ?",
+      "choices_fr": [
+        "Coréen natif (한, 두, 세...)",
+        "Sino-coréen (일, 이, 삼...)",
+        "L'un ou l'autre",
+        "Chiffres arabes"
+      ],
+      "prompt_de": "Stunden in der koreanischen Uhrzeit verwenden welches Zahlensystem?",
+      "choices_de": [
+        "Natives Koreanisch (한, 두, 세...)",
+        "Sino-Koreanisch (일, 이, 삼...)",
+        "Beide",
+        "Arabische Ziffern"
+      ],
+      "prompt_th": "ชั่วโมงในเวลาเกาหลีใช้ระบบตัวเลขใด?",
+      "choices_th": [
+        "ตัวเลขเกาหลีดั้งเดิม (한 두 세...)",
+        "ตัวเลขจีน-เกาหลี (일 이 삼...)",
+        "ได้ทั้งคู่",
+        "ตัวเลขอาหรับ"
+      ],
+      "prompt_id": "Jam dalam waktu Korea menggunakan sistem angka yang mana?",
+      "choices_id": [
+        "Korea asli (한, 두, 세...)",
+        "Sino-Korea (일, 이, 삼...)",
+        "Keduanya bisa",
+        "Angka Arab"
+      ],
+      "prompt_vi": "Giờ trong cách nói thời gian tiếng Hàn dùng hệ số nào?",
+      "choices_vi": [
+        "Thuần Hàn (한, 두, 세...)",
+        "Hán Hàn (일, 이, 삼...)",
+        "Cái nào cũng được",
+        "Chữ số Ả Rập"
+      ]
     },
-
     {
-      "id": 36, "stage": 11, "type": "reading_card",
+      "id": 36,
+      "stage": 11,
+      "type": "reading_card",
       "title": "Counters",
+      "title_zh_tw": "量詞",
       "title_kr": "단위 명사",
       "body": "Korean uses specific counters after [Noun] + [Number]. Native Korean numbers (한, 두, 세...) are used with most counters.",
+      "body_zh_tw": "韓語在【名詞】＋【數字】後使用特定量詞。大多數量詞使用固有韓語數字（한、두、세...）。",
       "rules": [
         "개 — general objects: 사과 세 개 (3 apples)",
         "명 — people (neutral): 학생 두 명 (2 students)",
@@ -402,62 +2447,367 @@
         "권 — books: 책 세 권 (3 books)",
         "잔 — cups/drinks: 커피 두 잔 (2 coffees)",
         "번 — times/turns: 세 번 (3 times)"
+      ],
+      "rules_zh_tw": [
+        "개 — 一般物品：사과 세 개（3個蘋果）",
+        "명 — 人（中性）：학생 두 명（2名學生）",
+        "분 — 人（尊稱）：손님 두 분（2位客人）",
+        "마리 — 動物：고양이 한 마리（1隻貓）",
+        "권 — 書：책 세 권（3本書）",
+        "잔 — 杯子/飲料：커피 두 잔（2杯咖啡）",
+        "번 — 次/回：세 번（3次）"
+      ],
+      "title_es": "Contadores",
+      "body_es": "El coreano usa contadores específicos después de [Sustantivo] + [Número]. Se usan números coreanos nativos (한, 두, 세...) con la mayoría de los contadores.",
+      "rules_es": [
+        "개 — objetos en general: 사과 세 개 (3 manzanas)",
+        "명 — personas (neutral): 학생 두 명 (2 estudiantes)",
+        "분 — personas (honorífico): 손님 두 분 (2 invitados)",
+        "마리 — animales: 고양이 한 마리 (1 gato)",
+        "권 — libros: 책 세 권 (3 libros)",
+        "잔 — tazas/bebidas: 커피 두 잔 (2 cafés)",
+        "번 — veces/turnos: 세 번 (3 veces)"
+      ],
+      "title_fr": "Classificateurs",
+      "body_fr": "Le coréen utilise des classificateurs spécifiques après [Nom] + [Nombre]. Les nombres coréens natifs (한, 두, 세...) sont utilisés avec la plupart des classificateurs.",
+      "rules_fr": [
+        "개 — objets en général : 사과 세 개 (3 pommes)",
+        "명 — personnes (neutre) : 학생 두 명 (2 étudiants)",
+        "분 — personnes (honorifique) : 손님 두 분 (2 invités)",
+        "마리 — animaux : 고양이 한 마리 (1 chat)",
+        "권 — livres : 책 세 권 (3 livres)",
+        "잔 — tasses/boissons : 커피 두 잔 (2 cafés)",
+        "번 — fois/tours : 세 번 (3 fois)"
+      ],
+      "title_de": "Zählwörter",
+      "body_de": "Das Koreanische verwendet spezifische Zählwörter nach [Nomen] + [Zahl]. Native koreanische Zahlen (한, 두, 세...) werden mit den meisten Zählwörtern verwendet.",
+      "rules_de": [
+        "개 — allgemeine Objekte: 사과 세 개 (3 Äpfel)",
+        "명 — Personen (neutral): 학생 두 명 (2 Studenten)",
+        "분 — Personen (Ehrenform): 손님 두 분 (2 Gäste)",
+        "마리 — Tiere: 고양이 한 마리 (1 Katze)",
+        "권 — Bücher: 책 세 권 (3 Bücher)",
+        "잔 — Tassen/Getränke: 커피 두 잔 (2 Kaffee)",
+        "번 — Mal/Runde: 세 번 (3 Mal)"
+      ],
+      "title_th": "ตัวนับ",
+      "body_th": "ภาษาเกาหลีใช้ตัวนับเฉพาะหลัง [คำนาม] + [ตัวเลข] ส่วนใหญ่ใช้ตัวเลขเกาหลีดั้งเดิม (한 두 세...) กับตัวนับ",
+      "rules_th": [
+        "개 — วัตถุทั่วไป: 사과 세 개 (แอปเปิล 3 ลูก)",
+        "명 — คน (กลาง): 학생 두 명 (นักเรียน 2 คน)",
+        "분 — คน (ยกย่อง): 손님 두 분 (แขก 2 ท่าน)",
+        "마리 — สัตว์: 고양이 한 마리 (แมว 1 ตัว)",
+        "권 — หนังสือ: 책 세 권 (หนังสือ 3 เล่ม)",
+        "잔 — ถ้วย/เครื่องดื่ม: 커피 두 잔 (กาแฟ 2 แก้ว)",
+        "번 — ครั้ง: 세 번 (3 ครั้ง)"
+      ],
+      "title_id": "Kata Bantu Bilangan",
+      "body_id": "Bahasa Korea menggunakan kata bantu bilangan tertentu setelah [Kata Benda] + [Angka]. Angka Korea asli (한, 두, 세...) digunakan dengan sebagian besar kata bantu bilangan.",
+      "rules_id": [
+        "개 — benda umum: 사과 세 개 (3 apel)",
+        "명 — orang (netral): 학생 두 명 (2 pelajar)",
+        "분 — orang (hormat): 손님 두 분 (2 tamu)",
+        "마리 — hewan: 고양이 한 마리 (1 kucing)",
+        "권 — buku: 책 세 권 (3 buku)",
+        "잔 — cangkir/minuman: 커피 두 잔 (2 kopi)",
+        "번 — kali/giliran: 세 번 (3 kali)"
+      ],
+      "title_vi": "Danh từ đơn vị (loại từ)",
+      "body_vi": "Tiếng Hàn dùng loại từ cụ thể sau [Danh từ] + [Số]. Số đếm thuần Hàn (한, 두, 세...) được dùng với hầu hết các loại từ.",
+      "rules_vi": [
+        "개 — đồ vật nói chung: 사과 세 개 (3 quả táo)",
+        "명 — người (trung tính): 학생 두 명 (2 học sinh)",
+        "분 — người (kính ngữ): 손님 두 분 (2 vị khách)",
+        "마리 — động vật: 고양이 한 마리 (1 con mèo)",
+        "권 — sách: 책 세 권 (3 quyển sách)",
+        "잔 — ly/đồ uống: 커피 두 잔 (2 ly cà phê)",
+        "번 — lần/lượt: 세 번 (3 lần)"
       ]
     },
     {
-      "id": 37, "stage": 11, "type": "listen_repeat",
+      "id": 37,
+      "stage": 11,
+      "type": "listen_repeat",
       "audio": "사과 세 개 주세요",
-      "syllables": ["사과", " ", "세 개", " ", "주세요"],
+      "syllables": [
+        "사과",
+        " ",
+        "세 개",
+        " ",
+        "주세요"
+      ],
       "romanization": "sa-gwa se gae ju-se-yo",
       "meaning": "Please give me three apples.",
+      "meaning_zh_tw": "請給我三個蘋果。",
       "meaning_ja": "りんごを3つください。",
-      "katakana": "サグァ セ ゲ チュセヨ"
+      "katakana": "サグァ セ ゲ チュセヨ",
+      "meaning_es": "Por favor dame tres manzanas.",
+      "meaning_fr": "S'il vous plaît, donnez-moi trois pommes.",
+      "meaning_de": "Bitte gib mir drei Äpfel.",
+      "meaning_vi": "Cho tôi ba quả táo.",
+      "meaning_th": "ขอแอปเปิล 3 ลูก",
+      "meaning_id": "Tolong berikan saya tiga apel."
     },
     {
-      "id": 38, "stage": 11, "type": "match_quiz",
+      "id": 38,
+      "stage": 11,
+      "type": "match_quiz",
       "prompt": "Counter for people (neutral)?",
-      "choices": ["명", "개", "마리", "잔"],
-      "correct": "명"
+      "prompt_zh_tw": "計人（中性）的量詞？",
+      "choices": [
+        "명",
+        "개",
+        "마리",
+        "잔"
+      ],
+      "choices_zh_tw": [
+        "명",
+        "개",
+        "마리",
+        "잔"
+      ],
+      "correct": "명",
+      "prompt_es": "¿Contador para personas (neutral)?",
+      "choices_es": [
+        "명",
+        "개",
+        "마리",
+        "잔"
+      ],
+      "prompt_fr": "Classificateur pour les personnes (neutre) ?",
+      "choices_fr": [
+        "명",
+        "개",
+        "마리",
+        "잔"
+      ],
+      "prompt_de": "Zählwort für Personen (neutral)?",
+      "choices_de": [
+        "명",
+        "개",
+        "마리",
+        "잔"
+      ],
+      "prompt_th": "ตัวนับคนแบบกลาง?",
+      "choices_th": [
+        "명",
+        "개",
+        "마리",
+        "잔"
+      ],
+      "prompt_id": "Kata bantu bilangan untuk orang (netral)?",
+      "choices_id": [
+        "명",
+        "개",
+        "마리",
+        "잔"
+      ],
+      "prompt_vi": "Loại từ dùng cho người (trung tính)?",
+      "choices_vi": [
+        "명",
+        "개",
+        "마리",
+        "잔"
+      ]
     },
-
     {
-      "id": 39, "stage": 12, "type": "reading_card",
+      "id": 39,
+      "stage": 12,
+      "type": "reading_card",
       "title": "Present Progressive",
+      "title_zh_tw": "現在進行時：-고 있어요",
       "title_kr": "-고 있어요",
       "body": "Add -고 있어요 to the verb stem to say someone IS CURRENTLY doing something (the Korean '-ing' form).",
+      "body_zh_tw": "在動詞詞幹後加-고 있어요，表示某人正在做某事（韓語的「-ing」形式）。",
       "rules": [
         "먹다 → 먹고 있어요 (is eating)",
         "가다 → 가고 있어요 (is going)",
         "공부하다 → 공부하고 있어요 (is studying)",
         "읽다 → 읽고 있어요 (is reading)"
       ],
+      "rules_zh_tw": [
+        "먹다→먹고 있어요（正在吃）",
+        "가다→가고 있어요（正在去）",
+        "공부하다→공부하고 있어요（正在學習）",
+        "읽다→읽고 있어요（正在讀）"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Progressive vs Simple",
         "text": "먹어요 = I eat (general or right now, context-dependent). 먹고 있어요 = I am eating (specifically in progress at this moment). The progressive adds 'currently in action.'"
+      },
+      "tip_zh_tw": {
+        "label": "進行時vs簡單時",
+        "text": "먹어요 = 我吃（一般或當下，視語境）。먹고 있어요 = 我正在吃（特別指此刻進行中的動作）。進行時添加「當前正在行動」的含義。"
+      },
+      "title_es": "Presente Progresivo",
+      "body_es": "Añade -고 있어요 a la raíz verbal para decir que alguien ESTÁ HACIENDO algo ahora mismo (la forma \"-ando/-iendo\" del coreano).",
+      "rules_es": [
+        "먹다 → 먹고 있어요 (está comiendo)",
+        "가다 → 가고 있어요 (está yendo)",
+        "공부하다 → 공부하고 있어요 (está estudiando)",
+        "읽다 → 읽고 있어요 (está leyendo)"
+      ],
+      "tip_es": {
+        "label": "Progresivo vs Simple",
+        "text": "먹어요 = Como (general o ahora mismo, según el contexto). 먹고 있어요 = Estoy comiendo (específicamente en progreso en este momento). El progresivo añade \"en acción actualmente\"."
+      },
+      "title_fr": "Présent Progressif",
+      "body_fr": "Ajoutez -고 있어요 au radical du verbe pour dire que quelqu'un EST EN TRAIN DE faire quelque chose (la forme « -ant » du coréen).",
+      "rules_fr": [
+        "먹다 → 먹고 있어요 (est en train de manger)",
+        "가다 → 가고 있어요 (est en train d'aller)",
+        "공부하다 → 공부하고 있어요 (est en train d'étudier)",
+        "읽다 → 읽고 있어요 (est en train de lire)"
+      ],
+      "tip_fr": {
+        "label": "Progressif vs Simple",
+        "text": "먹어요 = je mange (général ou maintenant, selon le contexte). 먹고 있어요 = je suis en train de manger (spécifiquement en cours en ce moment). Le progressif ajoute « en cours d'action »."
+      },
+      "title_de": "Verlaufsform: -고 있어요",
+      "body_de": "Füge -고 있어요 an den Verbstamm an, um zu sagen, dass jemand gerade etwas TUT (die koreanische „-ing\"-Form).",
+      "rules_de": [
+        "먹다 → 먹고 있어요 (isst gerade)",
+        "가다 → 가고 있어요 (geht gerade)",
+        "공부하다 → 공부하고 있어요 (lernt gerade)",
+        "읽다 → 읽고 있어요 (liest gerade)"
+      ],
+      "tip_de": {
+        "label": "Verlaufsform vs. Einfache Form",
+        "text": "먹어요 = Ich esse (allgemein oder gerade jetzt, kontextabhängig). 먹고 있어요 = Ich esse gerade (speziell im aktuellen Moment in Aktion). Die Verlaufsform fügt „momentan in Aktion\" hinzu."
+      },
+      "title_th": "ปัจจุบันกาลกำลังทำ",
+      "body_th": "เติม -고 있어요 ต่อท้ายก้านกริยาเพื่อบอกว่ากำลังทำอะไรอยู่ (รูป -ing ของเกาหลี)",
+      "tip_th": {
+        "label": "กำลังทำ vs ปกติ",
+        "text": "먹어요 = ฉันกิน (ทั่วไปหรือตอนนี้ ขึ้นอยู่กับบริบท) 먹고 있어요 = ฉันกำลังกิน (กำลังทำอยู่ขณะนี้โดยเฉพาะ) รูป progressive เพิ่มความหมาย กำลังดำเนินอยู่"
+      },
+      "rules_th": [
+        "먹다 → 먹고 있어요 (กำลังกิน)",
+        "가다 → 가고 있어요 (กำลังไป)",
+        "공부하다 → 공부하고 있어요 (กำลังเรียน)",
+        "읽다 → 읽고 있어요 (กำลังอ่าน)"
+      ],
+      "title_id": "Bentuk Sedang Berlangsung",
+      "body_id": "Tambahkan -고 있어요 pada akar kata kerja untuk mengatakan seseorang SEDANG melakukan sesuatu (bentuk '-ing' dalam bahasa Korea).",
+      "rules_id": [
+        "먹다 → 먹고 있어요 (sedang makan)",
+        "가다 → 가고 있어요 (sedang pergi)",
+        "공부하다 → 공부하고 있어요 (sedang belajar)",
+        "읽다 → 읽고 있어요 (sedang membaca)"
+      ],
+      "tip_id": {
+        "label": "Progresif vs Sederhana",
+        "text": "먹어요 = Saya makan (umum atau saat ini, tergantung konteks). 먹고 있어요 = Saya sedang makan (khususnya sedang berlangsung saat ini). Bentuk progresif menambahkan makna 'sedang dalam tindakan'."
+      },
+      "title_vi": "Thì hiện tại tiếp diễn",
+      "body_vi": "Thêm -고 있어요 vào gốc động từ để nói ai đó ĐANG làm gì đó (dạng '-ing' của tiếng Hàn).",
+      "rules_vi": [
+        "먹다 → 먹고 있어요 (đang ăn)",
+        "가다 → 가고 있어요 (đang đi)",
+        "공부하다 → 공부하고 있어요 (đang học)",
+        "읽다 → 읽고 있어요 (đang đọc)"
+      ],
+      "tip_vi": {
+        "label": "Tiếp diễn và đơn giản",
+        "text": "먹어요 = Tôi ăn (nói chung hoặc ngay lúc này, tùy ngữ cảnh). 먹고 있어요 = Tôi đang ăn (cụ thể đang diễn ra ngay lúc này). Dạng tiếp diễn thêm ý 'đang trong hành động'."
       }
     },
     {
-      "id": 40, "stage": 12, "type": "listen_repeat",
+      "id": 40,
+      "stage": 12,
+      "type": "listen_repeat",
       "audio": "지금 밥을 먹고 있어요",
-      "syllables": ["지금", " ", "밥을", " ", "먹고 있어요"],
+      "syllables": [
+        "지금",
+        " ",
+        "밥을",
+        " ",
+        "먹고 있어요"
+      ],
       "romanization": "ji-geum bab-eul meok-go iss-eo-yo",
       "meaning": "I am eating right now.",
+      "meaning_zh_tw": "我現在正在吃飯。",
       "meaning_ja": "今、ご飯を食べています。",
-      "katakana": "チグム パブル モッコ イッソヨ"
+      "katakana": "チグム パブル モッコ イッソヨ",
+      "meaning_es": "Estoy comiendo ahora mismo.",
+      "meaning_fr": "Je suis en train de manger en ce moment.",
+      "meaning_de": "Ich esse gerade.",
+      "meaning_vi": "Tôi đang ăn ngay lúc này.",
+      "meaning_th": "ฉันกำลังกินอยู่ตอนนี้",
+      "meaning_id": "Saya sedang makan sekarang."
     },
     {
-      "id": 41, "stage": 12, "type": "match_quiz",
+      "id": 41,
+      "stage": 12,
+      "type": "match_quiz",
       "prompt": "'is studying' → 공부하다 + -고 있어요 =",
-      "choices": ["공부하고 있어요", "공부고 있어요", "공부하고 있다", "공부해요"],
-      "correct": "공부하고 있어요"
+      "prompt_zh_tw": "「正在學習」→ 공부하다 ＋ -고 있어요 =",
+      "choices": [
+        "공부하고 있어요",
+        "공부고 있어요",
+        "공부하고 있다",
+        "공부해요"
+      ],
+      "choices_zh_tw": [
+        "공부하고 있어요",
+        "공부고 있어요",
+        "공부하고 있다",
+        "공부해요"
+      ],
+      "correct": "공부하고 있어요",
+      "prompt_es": "\"está estudiando\" → 공부하다 + -고 있어요 =",
+      "choices_es": [
+        "공부하고 있어요",
+        "공부고 있어요",
+        "공부하고 있다",
+        "공부해요"
+      ],
+      "prompt_fr": "« est en train d'étudier » → 공부하다 + -고 있어요 =",
+      "choices_fr": [
+        "공부하고 있어요",
+        "공부고 있어요",
+        "공부하고 있다",
+        "공부해요"
+      ],
+      "prompt_de": "„Lernt gerade\" → 공부하다 + -고 있어요 =",
+      "choices_de": [
+        "공부하고 있어요",
+        "공부고 있어요",
+        "공부하고 있다",
+        "공부해요"
+      ],
+      "prompt_th": "กำลังเรียน → 공부하다 + -고 있어요 =",
+      "choices_th": [
+        "공부하고 있어요",
+        "공부고 있어요",
+        "공부하고 있다",
+        "공부해요"
+      ],
+      "prompt_id": "'sedang belajar' → 공부하다 + -고 있어요 =",
+      "choices_id": [
+        "공부하고 있어요",
+        "공부고 있어요",
+        "공부하고 있다",
+        "공부해요"
+      ],
+      "prompt_vi": "'đang học' → 공부하다 + -고 있어요 =",
+      "choices_vi": [
+        "공부하고 있어요",
+        "공부고 있어요",
+        "공부하고 있다",
+        "공부해요"
+      ]
     },
-
     {
-      "id": 42, "stage": 13, "type": "reading_card",
+      "id": 42,
+      "stage": 13,
+      "type": "reading_card",
       "title": "Self Introduction",
+      "title_zh_tw": "自我介紹",
       "title_kr": "자기소개",
       "body": "Key vocabulary: 이름 (name), 나이 (age), 나라 (country), 직업 (job), 취미 (hobby), 고향 (hometown).",
+      "body_zh_tw": "關鍵詞彙：이름（名字）、나이（年齡）、나라（國家）、직업（職業）、취미（興趣）、고향（故鄉）。",
       "rules": [
         "안녕하세요! 저는 [name]이에요/예요.",
         "저는 [나라]에서 왔어요. (I'm from [country].)",
@@ -465,31 +2815,180 @@
         "제 취미는 [hobby]예요. (My hobby is [hobby].)",
         "잘 부탁드려요! (Nice to meet you!)"
       ],
+      "rules_zh_tw": [
+        "안녕하세요！저는 [name]이에요/예요。",
+        "저는 [나라]에서 왔어요。（我來自[國家]。）",
+        "저는 [직업]이에요。（我是[職業]。）",
+        "제 취미는 [hobby]예요。（我的興趣是[興趣]。）",
+        "잘 부탁드려요！（請多關照！）"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Template",
         "text": "Use 안녕하세요 + 잘 부탁드려요 for formal settings. With friends or peers: 안녕! + 잘 부탁해! Always bow slightly when introducing yourself in person."
+      },
+      "tip_zh_tw": {
+        "label": "模板",
+        "text": "正式場合使用안녕하세요＋잘 부탁드려요。與朋友或同輩：안녕！＋잘 부탁해！當面自我介紹時始終略微鞠躬。"
+      },
+      "title_es": "Presentación Personal",
+      "body_es": "Vocabulario clave: 이름 (nombre), 나이 (edad), 나라 (país), 직업 (trabajo), 취미 (pasatiempo), 고향 (ciudad natal).",
+      "rules_es": [
+        "안녕하세요! 저는 [nombre]이에요/예요.",
+        "저는 [나라]에서 왔어요. (Soy de [país].)",
+        "저는 [직업]이에요. (Soy [trabajo].)",
+        "제 취미는 [pasatiempo]예요. (Mi pasatiempo es [pasatiempo].)",
+        "잘 부탁드려요! (¡Mucho gusto!)"
+      ],
+      "tip_es": {
+        "label": "Plantilla",
+        "text": "Usa 안녕하세요 + 잘 부탁드려요 para entornos formales. Con amigos o pares: 안녕! + 잘 부탁해! Inclínate levemente cuando te presentes en persona."
+      },
+      "title_fr": "Présentation Personnelle",
+      "body_fr": "Vocabulaire clé : 이름 (prénom), 나이 (âge), 나라 (pays), 직업 (métier), 취미 (passe-temps), 고향 (ville natale).",
+      "rules_fr": [
+        "안녕하세요 ! 저는 [prénom]이에요/예요.",
+        "저는 [나라]에서 왔어요. (Je viens de [pays].)",
+        "저는 [직업]이에요. (Je suis [métier].)",
+        "제 취미는 [passe-temps]예요. (Mon passe-temps est [passe-temps].)",
+        "잘 부탁드려요 ! (Enchanté(e) !)"
+      ],
+      "tip_fr": {
+        "label": "Modèle",
+        "text": "Utilisez 안녕하세요 + 잘 부탁드려요 pour les contextes formels. Avec des amis ou des pairs : 안녕 ! + 잘 부탁해 ! Inclinez-vous légèrement quand vous vous présentez en personne."
+      },
+      "title_de": "Vorstellung",
+      "body_de": "Schlüsselwortschatz: 이름 (Name), 나이 (Alter), 나라 (Land), 직업 (Beruf), 취미 (Hobby), 고향 (Heimatstadt).",
+      "rules_de": [
+        "안녕하세요! 저는 [Name]이에요/예요.",
+        "저는 [나라]에서 왔어요. (Ich komme aus [Land].)",
+        "저는 [직업]이에요. (Ich bin [Beruf].)",
+        "제 취미는 [Hobby]예요. (Mein Hobby ist [Hobby].)",
+        "잘 부탁드려요! (Freut mich, dich kennenzulernen!)"
+      ],
+      "tip_de": {
+        "label": "Vorlage",
+        "text": "Verwende 안녕하세요 + 잘 부탁드려요 in formellen Situationen. Mit Freunden oder Gleichaltrigen: 안녕! + 잘 부탁해! Verbeuge dich leicht, wenn du dich persönlich vorstellst."
+      },
+      "title_th": "แนะนำตัว",
+      "body_th": "คำศัพท์สำคัญ: 이름 (ชื่อ) 나이 (อายุ) 나라 (ประเทศ) 직업 (อาชีพ) 취미 (งานอดิเรก) 고향 (บ้านเกิด)",
+      "tip_th": {
+        "label": "แม่แบบ",
+        "text": "ใช้ 안녕하세요 + 잘 부탁드려요 ในสถานการณ์ทางการ กับเพื่อนหรือคนรุ่นเดียวกัน: 안녕! + 잘 부탁해! โค้งตัวเล็กน้อยเสมอเมื่อแนะนำตัวต่อตัว"
+      },
+      "rules_th": [
+        "안녕하세요! 저는 [ชื่อ]이에요/예요.",
+        "저는 [ประเทศ]에서 왔어요. (ฉันมาจาก [ประเทศ])",
+        "저는 [อาชีพ]이에요. (ฉันเป็น [อาชีพ])",
+        "제 취미는 [งานอดิเรก]예요. (งานอดิเรกของฉันคือ [งานอดิเรก])",
+        "잘 부탁드려요! (ยินดีที่ได้รู้จัก!)"
+      ],
+      "title_id": "Perkenalan Diri",
+      "body_id": "Kosakata kunci: 이름 (nama), 나이 (usia), 나라 (negara), 직업 (pekerjaan), 취미 (hobi), 고향 (kampung halaman).",
+      "rules_id": [
+        "안녕하세요! 저는 [nama]이에요/예요.",
+        "저는 [나라]에서 왔어요. (Saya dari [negara].)",
+        "저는 [직업]이에요. (Saya seorang [pekerjaan].)",
+        "제 취미는 [hobi]예요. (Hobi saya adalah [hobi].)",
+        "잘 부탁드려요! (Senang bertemu Anda!)"
+      ],
+      "tip_id": {
+        "label": "Templat",
+        "text": "Gunakan 안녕하세요 + 잘 부탁드려요 untuk situasi formal. Dengan teman atau sebaya: 안녕! + 잘 부탁해! Selalu membungkuk sedikit saat memperkenalkan diri secara langsung."
+      },
+      "title_vi": "Giới thiệu bản thân",
+      "body_vi": "Từ vựng quan trọng: 이름 (tên), 나이 (tuổi), 나라 (quốc gia), 직업 (nghề nghiệp), 취미 (sở thích), 고향 (quê hương).",
+      "rules_vi": [
+        "안녕하세요! 저는 [tên]이에요/예요.",
+        "저는 [나라]에서 왔어요. (Tôi đến từ [quốc gia].)",
+        "저는 [직업]이에요. (Tôi là [nghề nghiệp].)",
+        "제 취미는 [sở thích]예요. (Sở thích của tôi là [sở thích].)",
+        "잘 부탁드려요! (Rất vui được gặp bạn!)"
+      ],
+      "tip_vi": {
+        "label": "Mẫu",
+        "text": "Dùng 안녕하세요 + 잘 부탁드려요 cho những dịp trang trọng. Với bạn bè hoặc người ngang hàng: 안녕! + 잘 부탁해! Luôn cúi đầu nhẹ khi giới thiệu bản thân trực tiếp."
       }
     },
-
     {
-      "id": 43, "stage": 14, "type": "reading_card",
+      "id": 43,
+      "stage": 14,
+      "type": "reading_card",
       "title": "Dates and Months",
+      "title_zh_tw": "日期和月份",
       "title_kr": "날짜",
       "body": "Korean dates use Sino-Korean numbers in Year → Month → Day order. June = 유월, October = 시월 (exceptions).",
+      "body_zh_tw": "韓語日期使用漢字韓語數字，格式為年→月→日。6月 = 유월，10月 = 시월（特例）。",
       "rules": [
         "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
         "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
         "Date format: 2026년 6월 16일 (June 16, 2026)",
         "오늘이 며칠이에요? — What is today's date?"
+      ],
+      "rules_zh_tw": [
+        "일월（1월）、이월（2월）、삼월（3월）、사월（4월）、오월（5월）、유월（6월）",
+        "칠월（7월）、팔월（8월）、구월（9월）、시월（10월）、십일월（11월）、십이월（12월）",
+        "日期格式：2026년 6월 16일（2026年6月16日）",
+        "오늘이 며칠이에요？——今天幾號？"
+      ],
+      "title_es": "Fechas y Meses",
+      "body_es": "Las fechas coreanas usan números sino-coreanos en orden Año → Mes → Día. Junio = 유월, Octubre = 시월 (excepciones).",
+      "rules_es": [
+        "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
+        "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
+        "Formato de fecha: 2026년 6월 16일 (16 de junio de 2026)",
+        "오늘이 며칠이에요? — ¿Qué fecha es hoy?"
+      ],
+      "title_fr": "Dates et Mois",
+      "body_fr": "Les dates coréennes utilisent les nombres sino-coréens dans l'ordre Année → Mois → Jour. Juin = 유월, Octobre = 시월 (exceptions).",
+      "rules_fr": [
+        "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
+        "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
+        "Format de date : 2026년 6월 16일 (16 juin 2026)",
+        "오늘이 며칠이에요 ? — Quel jour sommes-nous ?"
+      ],
+      "title_de": "Daten und Monate",
+      "body_de": "Koreanische Datumsangaben verwenden sino-koreanische Zahlen in der Reihenfolge Jahr → Monat → Tag. Juni = 유월, Oktober = 시월 (Ausnahmen).",
+      "rules_de": [
+        "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
+        "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
+        "Datumsformat: 2026년 6월 16일 (16. Juni 2026)",
+        "오늘이 며칠이에요? — Welches Datum ist heute?"
+      ],
+      "title_th": "วันที่และเดือน",
+      "body_th": "วันที่เกาหลีใช้ตัวเลขจีน-เกาหลีในลำดับ ปี → เดือน → วัน มิถุนายน = 유월 ตุลาคม = 시월 (ข้อยกเว้น)",
+      "rules_th": [
+        "일월(1월) 이월(2월) 삼월(3월) 사월(4월) 오월(5월) 유월(6월)",
+        "칠월(7월) 팔월(8월) 구월(9월) 시월(10월) 십일월(11월) 십이월(12월)",
+        "รูปแบบวันที่: 2026년 6월 16일 (16 มิถุนายน 2026)",
+        "오늘이 며칠이에요? — วันนี้วันที่เท่าไหร่?"
+      ],
+      "title_id": "Tanggal dan Bulan",
+      "body_id": "Tanggal Korea menggunakan angka Sino-Korea dalam urutan Tahun → Bulan → Hari. Juni = 유월, Oktober = 시월 (pengecualian).",
+      "rules_id": [
+        "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
+        "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
+        "Format tanggal: 2026년 6월 16일 (16 Juni 2026)",
+        "오늘이 며칠이에요? — Hari ini tanggal berapa?"
+      ],
+      "title_vi": "Ngày và tháng",
+      "body_vi": "Ngày tháng tiếng Hàn dùng số Hán Hàn theo thứ tự Năm → Tháng → Ngày. Tháng 6 = 유월, tháng 10 = 시월 (ngoại lệ).",
+      "rules_vi": [
+        "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
+        "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
+        "Định dạng ngày: 2026년 6월 16일 (16 tháng 6, 2026)",
+        "오늘이 며칠이에요? — Hôm nay là ngày mấy?"
       ]
     },
-
     {
-      "id": 44, "stage": 15, "type": "reading_card",
+      "id": 44,
+      "stage": 15,
+      "type": "reading_card",
       "title": "Degree Adverbs",
+      "title_zh_tw": "程度副詞",
       "title_kr": "정도 부사",
       "body": "Degree adverbs go directly before the word they modify: 조금 (a little), 정말 (really), 아주 (very), 많이 (a lot).",
+      "body_zh_tw": "程度副詞直接放在它所修飾的詞前：조금（一點）、정말（真的）、아주（非常）、많이（很多）。",
       "rules": [
         "조금 / 좀 — a little (좀 is softer/casual)",
         "정말 — really / truly (neutral)",
@@ -499,265 +2998,1598 @@
         "별로 + negative — not really (별로 안 좋아요 = I don't really like it)",
         "전혀 + negative — not at all (전혀 모르겠어요 = I have no idea at all)"
       ],
+      "rules_zh_tw": [
+        "조금 / 좀 — 一點（좀更溫和/口語）",
+        "정말 — 真的／確實（中性）",
+        "진짜 — 真的（口語，感覺更強烈）",
+        "아주 — 非常",
+        "많이 — 很多",
+        "별로 ＋ 否定 — 不太（별로 안 좋아요 = 我不太喜歡）",
+        "전혀 ＋ 否定 — 完全不（전혀 모르겠어요 = 我完全不知道）"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Negative Adverbs",
         "text": "별로 and 전혀 MUST be used with a negative verb (안, 못, 없다, 모르다). Saying 별로 좋아요 (without negation) is ungrammatical. Think of them as 'not really' and 'not at all'."
+      },
+      "tip_zh_tw": {
+        "label": "否定副詞",
+        "text": "별로和전혀必須與否定動詞（안、못、없다、모르다）一起使用。說별로 좋아요（沒有否定）在文法上是錯誤的。把它們分別理解為「不太」和「完全不」。"
+      },
+      "title_es": "Adverbios de Grado",
+      "body_es": "Los adverbios de grado van directamente antes de la palabra que modifican: 조금 (un poco), 정말 (de verdad), 아주 (muy), 많이 (mucho).",
+      "rules_es": [
+        "조금 / 좀 — un poco (좀 es más suave/informal)",
+        "정말 — de verdad / realmente (neutro)",
+        "진짜 — de verdad (informal, sensación más fuerte)",
+        "아주 — muy",
+        "많이 — mucho",
+        "별로 + negación — no mucho (별로 안 좋아요 = No me gusta mucho)",
+        "전혀 + negación — para nada (전혀 모르겠어요 = No tengo ni idea)"
+      ],
+      "tip_es": {
+        "label": "Adverbios Negativos",
+        "text": "별로 y 전혀 DEBEN usarse con un verbo negativo (안, 못, 없다, 모르다). Decir 별로 좋아요 (sin negación) es agramatical. Piensa en ellos como \"no mucho\" y \"para nada\"."
+      },
+      "title_fr": "Adverbes de Degré",
+      "body_fr": "Les adverbes de degré se placent directement avant le mot qu'ils modifient : 조금 (un peu), 정말 (vraiment), 아주 (très), 많이 (beaucoup).",
+      "rules_fr": [
+        "조금 / 좀 — un peu (좀 est plus doux/familier)",
+        "정말 — vraiment / réellement (neutre)",
+        "진짜 — vraiment (familier, sens plus fort)",
+        "아주 — très",
+        "많이 — beaucoup",
+        "별로 + négatif — pas vraiment (별로 안 좋아요 = Je n'aime pas vraiment)",
+        "전혀 + négatif — pas du tout (전혀 모르겠어요 = Je n'ai aucune idée)"
+      ],
+      "tip_fr": {
+        "label": "Adverbes Négatifs",
+        "text": "별로 et 전혀 DOIVENT être utilisés avec un verbe négatif (안, 못, 없다, 모르다). Dire 별로 좋아요 (sans négation) est agrammatical. Pensez-y comme « pas vraiment » et « pas du tout »."
+      },
+      "title_de": "Gradationsadverbien",
+      "body_de": "Gradationsadverbien stehen direkt vor dem Wort, das sie modifizieren: 조금 (ein wenig), 정말 (wirklich), 아주 (sehr), 많이 (viel).",
+      "rules_de": [
+        "조금 / 좀 — ein wenig (좀 ist weicher/umgangssprachlich)",
+        "정말 — wirklich / wahrhaftig (neutral)",
+        "진짜 — wirklich (umgangssprachlich, stärkeres Gefühl)",
+        "아주 — sehr",
+        "많이 — viel / sehr viel",
+        "별로 + Verneinung — nicht wirklich (별로 안 좋아요 = Ich mag es nicht wirklich)",
+        "전혀 + Verneinung — überhaupt nicht (전혀 모르겠어요 = Ich habe keine Ahnung)"
+      ],
+      "tip_de": {
+        "label": "Negative Adverbien",
+        "text": "별로 und 전혀 MÜSSEN mit einem negativen Verb (안, 못, 없다, 모르다) verwendet werden. 별로 좋아요 (ohne Verneinung) zu sagen ist ungrammatisch. Denke an sie als „nicht wirklich\" und „überhaupt nicht\"."
+      },
+      "title_th": "คำวิเศษณ์บอกระดับ",
+      "body_th": "คำวิเศษณ์บอกระดับวางไว้ก่อนคำที่ขยาย: 조금 (นิดหน่อย) 정말 (จริงๆ) 아주 (มาก) 많이 (มากมาย)",
+      "tip_th": {
+        "label": "คำวิเศษณ์ปฏิเสธ",
+        "text": "별로 และ 전혀 ต้องใช้กับกริยาปฏิเสธ (안 못 없다 모르다) การพูด 별로 좋아요 (โดยไม่ปฏิเสธ) ผิดไวยากรณ์ คิดว่าหมายถึง ไม่ค่อย และ ไม่เลย"
+      },
+      "rules_th": [
+        "조금 / 좀 — นิดหน่อย (좀 อ่อนนุ่ม/ไม่เป็นทางการ)",
+        "정말 — จริงๆ / จริงใจ (กลาง)",
+        "진짜 — จริงๆ (ไม่เป็นทางการ รู้สึกแรงกว่า)",
+        "아주 — มาก",
+        "많이 — มากมาย",
+        "별로 + ปฏิเสธ — ไม่ค่อย (별로 안 좋아요 = ฉันไม่ค่อยชอบ)",
+        "전혀 + ปฏิเสธ — ไม่เลย (전혀 모르겠어요 = ฉันไม่รู้เลย)"
+      ],
+      "title_id": "Kata Keterangan Derajat",
+      "body_id": "Kata keterangan derajat diletakkan langsung sebelum kata yang dimodifikasi: 조금 (sedikit), 정말 (benar-benar), 아주 (sangat), 많이 (banyak).",
+      "rules_id": [
+        "조금 / 좀 — sedikit (좀 lebih lembut/santai)",
+        "정말 — benar-benar / sungguh (netral)",
+        "진짜 — benar-benar (santai, kesan lebih kuat)",
+        "아주 — sangat",
+        "많이 — banyak",
+        "별로 + negatif — tidak terlalu (별로 안 좋아요 = Saya tidak terlalu suka)",
+        "전혀 + negatif — sama sekali tidak (전혀 모르겠어요 = Saya sama sekali tidak tahu)"
+      ],
+      "tip_id": {
+        "label": "Kata Keterangan Negatif",
+        "text": "별로 dan 전혀 HARUS digunakan dengan kata kerja negatif (안, 못, 없다, 모르다). Mengucapkan 별로 좋아요 (tanpa negasi) tidak gramatikal. Anggap keduanya sebagai 'tidak terlalu' dan 'sama sekali tidak'."
+      },
+      "title_vi": "Trạng từ chỉ mức độ",
+      "body_vi": "Trạng từ chỉ mức độ đứng ngay trước từ mà chúng bổ nghĩa: 조금 (một chút), 정말 (thật sự), 아주 (rất), 많이 (nhiều).",
+      "rules_vi": [
+        "조금 / 좀 — một chút (좀 nhẹ nhàng/thân mật hơn)",
+        "정말 — thật sự / quả thật (trung tính)",
+        "진짜 — thật sự (thân mật, cảm giác mạnh hơn)",
+        "아주 — rất",
+        "많이 — nhiều",
+        "별로 + phủ định — không hẳn (별로 안 좋아요 = Tôi không thích lắm)",
+        "전혀 + phủ định — hoàn toàn không (전혀 모르겠어요 = Tôi hoàn toàn không biết)"
+      ],
+      "tip_vi": {
+        "label": "Trạng từ phủ định",
+        "text": "별로 và 전혀 BẮT BUỘC phải dùng với động từ phủ định (안, 못, 없다, 모르다). Nói 별로 좋아요 (không có phủ định) là sai ngữ pháp. Hãy coi chúng như 'không hẳn' và 'hoàn toàn không'."
       }
     },
     {
-      "id": 45, "stage": 15, "type": "listen_repeat",
+      "id": 45,
+      "stage": 15,
+      "type": "listen_repeat",
       "audio": "정말 맛있어요",
-      "syllables": ["정말", " ", "맛있어요"],
+      "syllables": [
+        "정말",
+        " ",
+        "맛있어요"
+      ],
       "romanization": "jeong-mal mas-iss-eo-yo",
       "meaning": "It's really delicious!",
+      "meaning_zh_tw": "真的很好吃！",
       "meaning_ja": "本当においしいです！",
-      "katakana": "チョンマル マシッソヨ"
+      "katakana": "チョンマル マシッソヨ",
+      "meaning_es": "¡Está muy rico!",
+      "meaning_fr": "C'est vraiment délicieux !",
+      "meaning_de": "Es ist wirklich lecker!",
+      "meaning_vi": "Thật sự ngon quá!",
+      "meaning_th": "อร่อยจริงๆ!",
+      "meaning_id": "Ini benar-benar enak!"
     },
     {
-      "id": 46, "stage": 15, "type": "match_quiz",
+      "id": 46,
+      "stage": 15,
+      "type": "match_quiz",
       "prompt": "별로 and 전혀 must be used with...",
-      "choices": ["A negative verb", "A positive verb", "An adjective only", "Past tense only"],
-      "correct": "A negative verb"
+      "prompt_zh_tw": "별로和전혀必須與…一起使用",
+      "choices": [
+        "A negative verb",
+        "A positive verb",
+        "An adjective only",
+        "Past tense only"
+      ],
+      "choices_zh_tw": [
+        "否定動詞",
+        "肯定動詞",
+        "只有形容詞",
+        "只有過去時"
+      ],
+      "correct": "A negative verb",
+      "prompt_es": "별로 y 전혀 deben usarse con...",
+      "choices_es": [
+        "Un verbo negativo",
+        "Un verbo positivo",
+        "Solo un adjetivo",
+        "Solo tiempo pasado"
+      ],
+      "prompt_fr": "별로 et 전혀 doivent être utilisés avec…",
+      "choices_fr": [
+        "Un verbe négatif",
+        "Un verbe positif",
+        "Seulement un adjectif",
+        "Seulement le passé"
+      ],
+      "prompt_de": "별로 und 전혀 müssen verwendet werden mit...",
+      "choices_de": [
+        "Einem negativen Verb",
+        "Einem positiven Verb",
+        "Nur einem Adjektiv",
+        "Nur Vergangenheitsform"
+      ],
+      "prompt_th": "별로 และ 전혀 ต้องใช้กับ...",
+      "choices_th": [
+        "กริยาปฏิเสธ",
+        "กริยาบอกเล่า",
+        "คำคุณศัพท์เท่านั้น",
+        "อดีตกาลเท่านั้น"
+      ],
+      "prompt_id": "별로 dan 전혀 harus digunakan dengan...",
+      "choices_id": [
+        "Kata kerja negatif",
+        "Kata kerja positif",
+        "Hanya kata sifat",
+        "Hanya bentuk lampau"
+      ],
+      "prompt_vi": "별로 và 전혀 phải được dùng với...",
+      "choices_vi": [
+        "Một động từ phủ định",
+        "Một động từ khẳng định",
+        "Chỉ tính từ",
+        "Chỉ thì quá khứ"
+      ]
     },
-
     {
-      "id": 47, "stage": 16, "type": "reading_card",
+      "id": 47,
+      "stage": 16,
+      "type": "reading_card",
       "title": "Nominalizer: -는 것",
+      "title_zh_tw": "名詞化：-는 것",
       "title_kr": "-는 것",
       "body": "Adding -는 것 to a verb stem creates a noun phrase — 'the act of doing ~'. It makes verbs act like nouns.",
+      "body_zh_tw": "在動詞詞幹後加-는 것創造名詞短語——「做～的行為」。它讓動詞像名詞一樣運作。",
       "rules": [
         "먹는 것 — the act of eating",
         "배우는 것 — the act of learning",
         "한국어를 배우는 것이 재미있어요 — Learning Korean is interesting",
         "요리하는 것을 좋아해요 — I like cooking (the act of cooking)"
       ],
+      "rules_zh_tw": [
+        "먹는 것 — 吃的行為",
+        "배우는 것 — 學習的行為",
+        "한국어를 배우는 것이 재미있어요 — 學韓語很有趣",
+        "요리하는 것을 좋아해요 — 我喜歡做飯（烹飪的行為）"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Tense Forms",
         "text": "-는 것 (present/habitual) · -(으)ㄴ 것 (past/completed) · -(으)ㄹ 것 (future/planned). The present form is the most common in daily speech."
+      },
+      "tip_zh_tw": {
+        "label": "時態形式",
+        "text": "-는 것（現在/習慣）· -(으)ㄴ 것（過去/完成）· -(으)ㄹ 것（未來/計劃）。現在形式在日常口語中最常用。"
+      },
+      "title_es": "Nominalizador: -는 것",
+      "body_es": "Añadir -는 것 a la raíz verbal crea una frase nominal — \"el acto de hacer ~\". Hace que los verbos actúen como sustantivos.",
+      "rules_es": [
+        "먹는 것 — el acto de comer",
+        "배우는 것 — el acto de aprender",
+        "한국어를 배우는 것이 재미있어요 — Aprender coreano es interesante",
+        "요리하는 것을 좋아해요 — Me gusta cocinar (el acto de cocinar)"
+      ],
+      "tip_es": {
+        "label": "Formas de Tiempo",
+        "text": "-는 것 (presente/habitual) · -(으)ㄴ 것 (pasado/completado) · -(으)ㄹ 것 (futuro/planeado). La forma presente es la más común en el habla cotidiana."
+      },
+      "title_fr": "Nominalisateur : -는 것",
+      "body_fr": "Ajouter -는 것 à un radical verbal crée un groupe nominal — « l'acte de faire ~ ». Cela transforme les verbes en noms.",
+      "rules_fr": [
+        "먹는 것 — l'acte de manger",
+        "배우는 것 — l'acte d'apprendre",
+        "한국어를 배우는 것이 재미있어요 — Apprendre le coréen est intéressant",
+        "요리하는 것을 좋아해요 — J'aime cuisiner (l'acte de cuisiner)"
+      ],
+      "tip_fr": {
+        "label": "Formes de Temps",
+        "text": "-는 것 (présent/habituel) · -(으)ㄴ 것 (passé/accompli) · -(으)ㄹ 것 (futur/prévu). La forme présente est la plus courante dans le discours quotidien."
+      },
+      "title_de": "Nominalisierung: -는 것",
+      "body_de": "Das Anhängen von -는 것 an einen Verbstamm erzeugt eine Nominalphrase — „die Handlung, etwas zu tun\". Es lässt Verben wie Nomen funktionieren.",
+      "rules_de": [
+        "먹는 것 — das Essen / der Akt des Essens",
+        "배우는 것 — das Lernen / der Akt des Lernens",
+        "한국어를 배우는 것이 재미있어요 — Koreanisch zu lernen ist interessant",
+        "요리하는 것을 좋아해요 — Ich mag Kochen (den Akt des Kochens)"
+      ],
+      "tip_de": {
+        "label": "Zeitformen",
+        "text": "-는 것 (Gegenwart/Gewohnheit) · -(으)ㄴ 것 (Vergangenheit/abgeschlossen) · -(으)ㄹ 것 (Zukunft/geplant). Die Gegenwartsform ist im Alltag am häufigsten."
+      },
+      "title_th": "การทำเป็นคำนาม: -는 것",
+      "body_th": "การเติม -는 것 ต่อท้ายก้านกริยาสร้างวลีคำนาม — การกระทำของ~ ทำให้กริยาทำหน้าที่เหมือนคำนาม",
+      "tip_th": {
+        "label": "รูปกาล",
+        "text": "-는 것 (ปัจจุบัน/นิสัย) · -(으)ㄴ 것 (อดีต/เสร็จแล้ว) · -(으)ㄹ 것 (อนาคต/วางแผน) รูปปัจจุบันพบบ่อยที่สุดในการพูดประจำวัน"
+      },
+      "rules_th": [
+        "먹는 것 — การกิน",
+        "배우는 것 — การเรียนรู้",
+        "한국어를 배우는 것이 재미있어요 — การเรียนเกาหลีน่าสนใจ",
+        "요리하는 것을 좋아해요 — ฉันชอบทำอาหาร (การทำอาหาร)"
+      ],
+      "title_id": "Nominalisasi: -는 것",
+      "body_id": "Menambahkan -는 것 pada akar kata kerja menciptakan frasa kata benda — 'tindakan melakukan ~'. Ini membuat kata kerja berperan seperti kata benda.",
+      "rules_id": [
+        "먹는 것 — tindakan makan",
+        "배우는 것 — tindakan belajar",
+        "한국어를 배우는 것이 재미있어요 — Belajar bahasa Korea itu menarik",
+        "요리하는 것을 좋아해요 — Saya suka memasak (tindakan memasak)"
+      ],
+      "tip_id": {
+        "label": "Bentuk Waktu",
+        "text": "-는 것 (sekarang/kebiasaan) · -(으)ㄴ 것 (lampau/selesai) · -(으)ㄹ 것 (masa depan/rencana). Bentuk sekarang paling umum digunakan dalam percakapan sehari-hari."
+      },
+      "title_vi": "Danh từ hóa: -는 것",
+      "body_vi": "Thêm -는 것 vào gốc động từ tạo ra một cụm danh từ — 'việc làm ~'. Nó khiến động từ hoạt động như danh từ.",
+      "rules_vi": [
+        "먹는 것 — việc ăn",
+        "배우는 것 — việc học",
+        "한국어를 배우는 것이 재미있어요 — Việc học tiếng Hàn thật thú vị",
+        "요리하는 것을 좋아해요 — Tôi thích nấu ăn (việc nấu ăn)"
+      ],
+      "tip_vi": {
+        "label": "Các dạng thì",
+        "text": "-는 것 (hiện tại/thói quen) · -(으)ㄴ 것 (quá khứ/đã hoàn thành) · -(으)ㄹ 것 (tương lai/dự định). Dạng hiện tại là phổ biến nhất trong lời nói hằng ngày."
       }
     },
     {
-      "id": 48, "stage": 16, "type": "listen_repeat",
+      "id": 48,
+      "stage": 16,
+      "type": "listen_repeat",
       "audio": "한국어를 배우는 것이 재미있어요",
-      "syllables": ["한국어를", " ", "배우는 것이", " ", "재미있어요"],
+      "syllables": [
+        "한국어를",
+        " ",
+        "배우는 것이",
+        " ",
+        "재미있어요"
+      ],
       "romanization": "han-gug-eo-reul bae-u-neun geot-i jae-mi-iss-eo-yo",
       "meaning": "Learning Korean is interesting.",
+      "meaning_zh_tw": "學韓語很有趣。",
       "meaning_ja": "韓国語を学ぶことは面白いです。",
-      "katakana": "ハングゴルル ペウヌン ゴシ チェミイッソヨ"
+      "katakana": "ハングゴルル ペウヌン ゴシ チェミイッソヨ",
+      "meaning_es": "Aprender coreano es interesante.",
+      "meaning_fr": "Apprendre le coréen est intéressant.",
+      "meaning_de": "Koreanisch zu lernen ist interessant.",
+      "meaning_vi": "Học tiếng Hàn thật thú vị.",
+      "meaning_th": "การเรียนภาษาเกาหลีน่าสนใจ",
+      "meaning_id": "Belajar bahasa Korea itu menarik."
     },
     {
-      "id": 49, "stage": 16, "type": "match_quiz",
+      "id": 49,
+      "stage": 16,
+      "type": "match_quiz",
       "prompt": "-는 것 turns a verb into...",
-      "choices": ["A noun phrase", "Past tense", "Future tense", "A question"],
-      "correct": "A noun phrase"
+      "prompt_zh_tw": "-는 것把動詞變成…",
+      "choices": [
+        "A noun phrase",
+        "Past tense",
+        "Future tense",
+        "A question"
+      ],
+      "choices_zh_tw": [
+        "名詞短語",
+        "過去時",
+        "未來時",
+        "疑問句"
+      ],
+      "correct": "A noun phrase",
+      "prompt_es": "-는 것 convierte un verbo en...",
+      "choices_es": [
+        "Una frase nominal",
+        "Tiempo pasado",
+        "Tiempo futuro",
+        "Una pregunta"
+      ],
+      "prompt_fr": "-는 것 transforme un verbe en…",
+      "choices_fr": [
+        "Un groupe nominal",
+        "Passé",
+        "Futur",
+        "Une question"
+      ],
+      "prompt_de": "-는 것 verwandelt ein Verb in...",
+      "choices_de": [
+        "Eine Nominalphrase",
+        "Vergangenheitsform",
+        "Zukunftsform",
+        "Eine Frage"
+      ],
+      "prompt_th": "-는 것 เปลี่ยนกริยาเป็น...",
+      "choices_th": [
+        "วลีคำนาม",
+        "อดีตกาล",
+        "อนาคตกาล",
+        "คำถาม"
+      ],
+      "prompt_id": "-는 것 mengubah kata kerja menjadi...",
+      "choices_id": [
+        "Frasa kata benda",
+        "Bentuk lampau",
+        "Bentuk masa depan",
+        "Pertanyaan"
+      ],
+      "prompt_vi": "-는 것 biến một động từ thành...",
+      "choices_vi": [
+        "Một cụm danh từ",
+        "Thì quá khứ",
+        "Thì tương lai",
+        "Một câu hỏi"
+      ]
     },
-
     {
-      "id": 50, "stage": 17, "type": "reading_card",
+      "id": 50,
+      "stage": 17,
+      "type": "reading_card",
       "title": "Comparatives",
+      "title_zh_tw": "比較表達",
       "title_kr": "비교 표현",
       "body": "Structure: [A]이/가 [B]보다 더 [adjective]. 보다 means 'than' and 더 means 'more'.",
+      "body_zh_tw": "結構：[A]이/가 [B]보다 더 [形容詞]。보다的意思是「比」，더的意思是「更」。",
       "rules": [
         "한국어가 영어보다 더 어려워요 — Korean is harder than English",
         "오늘이 어제보다 더 더워요 — Today is hotter than yesterday",
         "더 can be dropped in casual speech: 한국어가 영어보다 어려워요"
+      ],
+      "rules_zh_tw": [
+        "한국어가 영어보다 더 어려워요 — 韓語比英語更難",
+        "오늘이 어제보다 더 더워요 — 今天比昨天更熱",
+        "口語中더可以省略：한국어가 영어보다 어려워요"
+      ],
+      "title_es": "Comparativos",
+      "body_es": "Estructura: [A]이/가 [B]보다 더 [adjetivo]. 보다 significa \"que\" y 더 significa \"más\".",
+      "rules_es": [
+        "한국어가 영어보다 더 어려워요 — El coreano es más difícil que el inglés",
+        "오늘이 어제보다 더 더워요 — Hoy hace más calor que ayer",
+        "더 puede omitirse en el habla informal: 한국어가 영어보다 어려워요"
+      ],
+      "title_fr": "Comparatifs",
+      "body_fr": "Structure : [A]이/가 [B]보다 더 [adjectif]. 보다 signifie « que » et 더 signifie « plus ».",
+      "rules_fr": [
+        "한국어가 영어보다 더 어려워요 — Le coréen est plus difficile que l'anglais",
+        "오늘이 어제보다 더 더워요 — Aujourd'hui il fait plus chaud qu'hier",
+        "더 peut être omis en discours informel : 한국어가 영어보다 어려워요"
+      ],
+      "title_de": "Komparativ",
+      "body_de": "Struktur: [A]이/가 [B]보다 더 [Adjektiv]. 보다 bedeutet „als\" und 더 bedeutet „mehr\".",
+      "rules_de": [
+        "한국어가 영어보다 더 어려워요 — Koreanisch ist schwerer als Englisch",
+        "오늘이 어제보다 더 더워요 — Heute ist heißer als gestern",
+        "더 kann in der Umgangssprache weggelassen werden: 한국어가 영어보다 어려워요"
+      ],
+      "title_th": "การเปรียบเทียบ",
+      "body_th": "โครงสร้าง: [ก]이/가 [ข]보다 더 [คำคุณศัพท์] 보다 หมายถึง กว่า และ 더 หมายถึง มากกว่า",
+      "rules_th": [
+        "한국어가 영어보다 더 어려워요 — เกาหลียากกว่าอังกฤษ",
+        "오늘이 어제보다 더 더워요 — วันนี้ร้อนกว่าเมื่อวาน",
+        "더 ละได้ในการพูดทั่วไป: 한국어가 영어보다 어려워요"
+      ],
+      "title_id": "Perbandingan",
+      "body_id": "Struktur: [A]이/가 [B]보다 더 [kata sifat]. 보다 berarti 'daripada' dan 더 berarti 'lebih'.",
+      "rules_id": [
+        "한국어가 영어보다 더 어려워요 — Bahasa Korea lebih sulit daripada bahasa Inggris",
+        "오늘이 어제보다 더 더워요 — Hari ini lebih panas daripada kemarin",
+        "더 bisa dihilangkan dalam percakapan santai: 한국어가 영어보다 어려워요"
+      ],
+      "title_vi": "So sánh hơn",
+      "body_vi": "Cấu trúc: [A]이/가 [B]보다 더 [tính từ]. 보다 nghĩa là 'hơn' và 더 nghĩa là 'nhiều hơn'.",
+      "rules_vi": [
+        "한국어가 영어보다 더 어려워요 — Tiếng Hàn khó hơn tiếng Anh",
+        "오늘이 어제보다 더 더워요 — Hôm nay nóng hơn hôm qua",
+        "더 có thể được lược bỏ trong lời nói thân mật: 한국어가 영어보다 어려워요"
       ]
     },
     {
-      "id": 51, "stage": 17, "type": "listen_repeat",
+      "id": 51,
+      "stage": 17,
+      "type": "listen_repeat",
       "audio": "한국어가 일본어보다 어려워요",
-      "syllables": ["한국어가", " ", "일본어보다", " ", "어려워요"],
+      "syllables": [
+        "한국어가",
+        " ",
+        "일본어보다",
+        " ",
+        "어려워요"
+      ],
       "romanization": "han-gug-eo-ga il-bon-eo-bo-da eo-ryeo-wo-yo",
       "meaning": "Korean is harder than Japanese.",
+      "meaning_zh_tw": "韓語比日語更難。",
       "meaning_ja": "韓国語は日本語より難しいです。",
-      "katakana": "ハングゴガ イルボノボダ オリョウォヨ"
+      "katakana": "ハングゴガ イルボノボダ オリョウォヨ",
+      "meaning_es": "El coreano es más difícil que el japonés.",
+      "meaning_fr": "Le coréen est plus difficile que le japonais.",
+      "meaning_de": "Koreanisch ist schwerer als Japanisch.",
+      "meaning_vi": "Tiếng Hàn khó hơn tiếng Nhật.",
+      "meaning_th": "เกาหลียากกว่าญี่ปุ่น",
+      "meaning_id": "Bahasa Korea lebih sulit daripada bahasa Jepang."
     },
     {
-      "id": 52, "stage": 17, "type": "match_quiz",
+      "id": 52,
+      "stage": 17,
+      "type": "match_quiz",
       "prompt": "How to say 'more' in a Korean comparison?",
-      "choices": ["더", "많이", "아주", "보다"],
-      "correct": "더"
+      "prompt_zh_tw": "韓語比較中「更」怎麼說？",
+      "choices": [
+        "더",
+        "많이",
+        "아주",
+        "보다"
+      ],
+      "choices_zh_tw": [
+        "더",
+        "많이",
+        "아주",
+        "보다"
+      ],
+      "correct": "더",
+      "prompt_es": "¿Cómo se dice \"más\" en una comparación coreana?",
+      "choices_es": [
+        "더",
+        "많이",
+        "아주",
+        "보다"
+      ],
+      "prompt_fr": "Comment dire « plus » dans une comparaison coréenne ?",
+      "choices_fr": [
+        "더",
+        "많이",
+        "아주",
+        "보다"
+      ],
+      "prompt_de": "Wie sagt man „mehr\" in einem koreanischen Vergleich?",
+      "choices_de": [
+        "더",
+        "많이",
+        "아주",
+        "보다"
+      ],
+      "prompt_th": "จะพูดว่า มากกว่า ในการเปรียบเทียบภาษาเกาหลีอย่างไร?",
+      "choices_th": [
+        "더",
+        "많이",
+        "아주",
+        "보다"
+      ],
+      "prompt_id": "Bagaimana cara mengatakan 'lebih' dalam perbandingan Korea?",
+      "choices_id": [
+        "더",
+        "많이",
+        "아주",
+        "보다"
+      ],
+      "prompt_vi": "Cách nói 'nhiều hơn' trong một phép so sánh tiếng Hàn?",
+      "choices_vi": [
+        "더",
+        "많이",
+        "아주",
+        "보다"
+      ]
     },
-
     {
-      "id": 53, "stage": 18, "type": "reading_card",
+      "id": 53,
+      "stage": 18,
+      "type": "reading_card",
       "title": "좋다 vs 좋아하다",
+      "title_zh_tw": "좋다 vs 좋아하다",
       "title_kr": "좋다 vs 좋아하다",
       "body": "좋다 uses subject particle (이/가): 한국어가 좋아요. 좋아하다 uses object particle (을/를): 한국어를 좋아해요.",
+      "body_zh_tw": "좋다使用主語助詞（이/가）：한국어가 좋아요。좋아하다使用受語助詞（을/를）：한국어를 좋아해요。",
       "rules": [
         "좋다 — to be good / feel good (state): 커피가 좋아요 (I like coffee / Coffee is good)",
         "좋아하다 — to like (active preference): 커피를 좋아해요 (I like coffee)",
         "Both translate as 'I like' but 좋다 focuses on the feeling, 좋아하다 on the preference"
       ],
+      "rules_zh_tw": [
+        "좋다 — 好的／感覺好（狀態）：커피가 좋아요（我喜歡咖啡／咖啡不錯）",
+        "좋아하다 — 喜歡（主動偏好）：커피를 좋아해요（我喜歡咖啡）",
+        "兩者都翻譯為「我喜歡」，但좋다側重感受，좋아하다側重偏好"
+      ],
       "tip": {
         "icon": "💡",
         "label": "Key Difference",
         "text": "좋아요 → subject particle (이/가) precedes it. 좋아해요 → object particle (을/를) precedes it. When in doubt, 좋아해요 sounds more natural for expressing preferences."
+      },
+      "tip_zh_tw": {
+        "label": "關鍵區別",
+        "text": "좋아요→前面接主語助詞（이/가）。좋아해요→前面接受語助詞（을/를）。有疑問時，좋아해요表達偏好聽起來更自然。"
+      },
+      "title_es": "좋다 vs 좋아하다",
+      "body_es": "좋다 usa la partícula de sujeto (이/가): 한국어가 좋아요. 좋아하다 usa la partícula de objeto (을/를): 한국어를 좋아해요.",
+      "rules_es": [
+        "좋다 — ser bueno / sentirse bien (estado): 커피가 좋아요 (Me gusta el café / El café es bueno)",
+        "좋아하다 — gustar (preferencia activa): 커피를 좋아해요 (Me gusta el café)",
+        "Ambas se traducen como \"me gusta\" pero 좋다 se centra en el sentimiento, 좋아하다 en la preferencia"
+      ],
+      "tip_es": {
+        "label": "Diferencia Clave",
+        "text": "좋아요 → partícula de sujeto (이/가) la precede. 좋아해요 → partícula de objeto (을/를) la precede. Ante la duda, 좋아해요 suena más natural para expresar preferencias."
+      },
+      "title_fr": "좋다 vs 좋아하다",
+      "body_fr": "좋다 utilise la particule de sujet (이/가) : 한국어가 좋아요. 좋아하다 utilise la particule d'objet (을/를) : 한국어를 좋아해요.",
+      "rules_fr": [
+        "좋다 — être bien / se sentir bien (état) : 커피가 좋아요 (J'aime le café / Le café est bon)",
+        "좋아하다 — aimer (préférence active) : 커피를 좋아해요 (J'aime le café)",
+        "Les deux se traduisent par « j'aime » mais 좋다 porte sur le sentiment, 좋아하다 sur la préférence"
+      ],
+      "tip_fr": {
+        "label": "Différence Clé",
+        "text": "좋아요 → la particule de sujet (이/가) le précède. 좋아해요 → la particule d'objet (을/를) le précède. En cas de doute, 좋아해요 semble plus naturel pour exprimer des préférences."
+      },
+      "title_de": "좋다 vs 좋아하다",
+      "body_de": "좋다 verwendet die Subjekt-Partikel (이/가): 한국어가 좋아요. 좋아하다 verwendet die Objekt-Partikel (을/를): 한국어를 좋아해요.",
+      "rules_de": [
+        "좋다 — gut sein / sich gut anfühlen (Zustand): 커피가 좋아요 (Ich mag Kaffee / Kaffee ist gut)",
+        "좋아하다 — mögen (aktive Vorliebe): 커피를 좋아해요 (Ich mag Kaffee)",
+        "Beide werden als „Ich mag\" übersetzt, aber 좋다 fokussiert auf das Gefühl, 좋아하다 auf die Vorliebe"
+      ],
+      "tip_de": {
+        "label": "Wesentlicher Unterschied",
+        "text": "좋아요 → davor steht die Subjekt-Partikel (이/가). 좋아해요 → davor steht die Objekt-Partikel (을/를). Im Zweifelsfall klingt 좋아해요 natürlicher zum Ausdrücken von Vorlieben."
+      },
+      "title_th": "좋다 กับ 좋아하다",
+      "body_th": "좋다 ใช้คำช่วยประธาน (이/가): 한국어가 좋아요 좋아하다 ใช้คำช่วยกรรม (을/를): 한국어를 좋아해요",
+      "tip_th": {
+        "label": "ความแตกต่างสำคัญ",
+        "text": "좋아요 → คำช่วยประธาน (이/가) นำหน้า 좋아해요 → คำช่วยกรรม (을/를) นำหน้า เมื่อไม่แน่ใจ 좋아해요 ฟังดูเป็นธรรมชาติกว่าสำหรับแสดงความชอบ"
+      },
+      "rules_th": [
+        "좋다 — ดี / รู้สึกดี (สภาวะ): 커피가 좋아요 (ฉันชอบกาแฟ / กาแฟดี)",
+        "좋아하다 — ชอบ (ความชอบเชิงกระตือรือร้น): 커피를 좋아해요 (ฉันชอบกาแฟ)",
+        "ทั้งคู่แปลว่า ฉันชอบ แต่ 좋다 เน้นความรู้สึก 좋아하다 เน้นความชอบ"
+      ],
+      "title_id": "좋다 vs 좋아하다",
+      "body_id": "좋다 menggunakan partikel subjek (이/가): 한국어가 좋아요. 좋아하다 menggunakan partikel objek (을/를): 한국어를 좋아해요.",
+      "rules_id": [
+        "좋다 — baik / merasa senang (kondisi): 커피가 좋아요 (Saya suka kopi / Kopi ini enak)",
+        "좋아하다 — menyukai (preferensi aktif): 커피를 좋아해요 (Saya suka kopi)",
+        "Keduanya diterjemahkan sebagai 'saya suka' tetapi 좋다 berfokus pada perasaan, 좋아하다 pada preferensi"
+      ],
+      "tip_id": {
+        "label": "Perbedaan Utama",
+        "text": "좋아요 → didahului partikel subjek (이/가). 좋아해요 → didahului partikel objek (을/를). Jika ragu, 좋아해요 terdengar lebih alami untuk mengungkapkan preferensi."
+      },
+      "title_vi": "좋다 và 좋아하다",
+      "body_vi": "좋다 dùng trợ từ chủ ngữ (이/가): 한국어가 좋아요. 좋아하다 dùng trợ từ tân ngữ (을/를): 한국어를 좋아해요.",
+      "rules_vi": [
+        "좋다 — tốt / cảm thấy thích (trạng thái): 커피가 좋아요 (Tôi thích cà phê / Cà phê ngon)",
+        "좋아하다 — thích (sự yêu thích chủ động): 커피를 좋아해요 (Tôi thích cà phê)",
+        "Cả hai đều dịch là 'tôi thích' nhưng 좋다 tập trung vào cảm giác, còn 좋아하다 vào sự yêu thích"
+      ],
+      "tip_vi": {
+        "label": "Khác biệt chính",
+        "text": "좋아요 → trợ từ chủ ngữ (이/가) đứng trước nó. 좋아해요 → trợ từ tân ngữ (을/를) đứng trước nó. Khi phân vân, 좋아해요 nghe tự nhiên hơn để diễn đạt sự yêu thích."
       }
     },
-
     {
-      "id": 54, "stage": 19, "type": "reading_card",
+      "id": 54,
+      "stage": 19,
+      "type": "reading_card",
       "title": "Still & Already",
+      "title_zh_tw": "還沒・已經",
       "title_kr": "아직 · 이미 · 벌써",
       "body": "아직 + negative verb = still not. 벌써 = already (sooner than expected). 이미 = already (neutral, formal).",
+      "body_zh_tw": "아직＋否定動詞 = 還沒有。벌써 = 已經（比預期更早）。이미 = 已經（中性，正式）。",
       "rules": [
         "아직 안 먹었어요 — Haven't eaten yet (still not)",
         "아직 여기 있어요 — Still here (ongoing)",
         "벌써 도착했어요? — Already arrived? (surprised)",
         "이미 알아요 — I already know (neutral)"
+      ],
+      "rules_zh_tw": [
+        "아직 안 먹었어요 — 還沒吃（仍然沒有）",
+        "아직 여기 있어요 — 還在這裡（持續中）",
+        "벌써 도착했어요？— 已經到了？（驚訝）",
+        "이미 알아요 — 我已經知道了（中性）"
+      ],
+      "title_es": "Todavía y Ya",
+      "body_es": "아직 + verbo negativo = todavía no. 벌써 = ya (antes de lo esperado). 이미 = ya (neutro, formal).",
+      "rules_es": [
+        "아직 안 먹었어요 — Todavía no he comido (todavía no)",
+        "아직 여기 있어요 — Todavía aquí (en curso)",
+        "벌써 도착했어요? — ¿Ya llegaste? (sorpresa)",
+        "이미 알아요 — Ya lo sé (neutro)"
+      ],
+      "title_fr": "Encore / Déjà",
+      "body_fr": "아직 + verbe négatif = pas encore. 벌써 = déjà (plus tôt que prévu). 이미 = déjà (neutre, formel).",
+      "rules_fr": [
+        "아직 안 먹었어요 — Je n'ai pas encore mangé (pas encore)",
+        "아직 여기 있어요 — Je suis encore ici (en cours)",
+        "벌써 도착했어요 ? — Déjà arrivé ? (surpris)",
+        "이미 알아요 — Je sais déjà (neutre)"
+      ],
+      "title_de": "Noch nicht & Schon",
+      "body_de": "아직 + negativem Verb = noch nicht. 벌써 = schon (früher als erwartet). 이미 = schon (neutral, formell).",
+      "rules_de": [
+        "아직 안 먹었어요 — Habe noch nicht gegessen (immer noch nicht)",
+        "아직 여기 있어요 — Bin noch hier (andauernd)",
+        "벌써 도착했어요? — Schon angekommen? (überrascht)",
+        "이미 알아요 — Ich weiß es schon (neutral)"
+      ],
+      "title_th": "ยังคง & แล้ว",
+      "body_th": "อ아직 + กริยาปฏิเสธ = ยังไม่ 벌써 = แล้ว (เร็วกว่าที่คาด) 이미 = แล้ว (กลาง ทางการ)",
+      "rules_th": [
+        "아직 안 먹었어요 — ยังไม่ได้กิน (ยังไม่)",
+        "아직 여기 있어요 — ยังอยู่ที่นี่ (ต่อเนื่อง)",
+        "벌써 도착했어요? — มาถึงแล้วเหรอ? (แปลกใจ)",
+        "이미 알아요 — รู้แล้ว (กลาง)"
+      ],
+      "title_id": "Masih & Sudah",
+      "body_id": "아직 + kata kerja negatif = masih belum. 벌써 = sudah (lebih cepat dari perkiraan). 이미 = sudah (netral, formal).",
+      "rules_id": [
+        "아직 안 먹었어요 — Belum makan (masih belum)",
+        "아직 여기 있어요 — Masih di sini (berlangsung)",
+        "벌써 도착했어요? — Sudah sampai? (terkejut)",
+        "이미 알아요 — Saya sudah tahu (netral)"
+      ],
+      "title_vi": "Vẫn & đã",
+      "body_vi": "아직 + động từ phủ định = vẫn chưa. 벌써 = đã (sớm hơn dự kiến). 이미 = đã (trung tính, trang trọng).",
+      "rules_vi": [
+        "아직 안 먹었어요 — Vẫn chưa ăn (vẫn chưa)",
+        "아직 여기 있어요 — Vẫn còn ở đây (đang tiếp diễn)",
+        "벌써 도착했어요? — Đã đến rồi à? (ngạc nhiên)",
+        "이미 알아요 — Tôi đã biết rồi (trung tính)"
       ]
     },
     {
-      "id": 55, "stage": 19, "type": "match_quiz",
+      "id": 55,
+      "stage": 19,
+      "type": "match_quiz",
       "prompt": "'아직' means?",
-      "choices": ["Still / Not yet", "Already", "Even", "More"],
-      "correct": "Still / Not yet"
+      "prompt_zh_tw": "「아직」是什麼意思？",
+      "choices": [
+        "Still / Not yet",
+        "Already",
+        "Even",
+        "More"
+      ],
+      "choices_zh_tw": [
+        "還沒",
+        "已經",
+        "甚至",
+        "更多"
+      ],
+      "correct": "Still / Not yet",
+      "prompt_es": "¿Qué significa \"아직\"?",
+      "choices_es": [
+        "Todavía / Aún no",
+        "Ya",
+        "Incluso",
+        "Más"
+      ],
+      "prompt_fr": "Que signifie « 아직 » ?",
+      "choices_fr": [
+        "Encore / Pas encore",
+        "Déjà",
+        "Même",
+        "Plus"
+      ],
+      "prompt_de": "아직 bedeutet?",
+      "choices_de": [
+        "Noch / Noch nicht",
+        "Schon",
+        "Sogar",
+        "Mehr"
+      ],
+      "prompt_th": "아직 หมายถึง?",
+      "choices_th": [
+        "ยัง / ยังไม่",
+        "แล้ว",
+        "แม้กระทั่ง",
+        "อีก"
+      ],
+      "prompt_id": "'아직' artinya?",
+      "choices_id": [
+        "Masih / Belum",
+        "Sudah",
+        "Bahkan",
+        "Lebih"
+      ],
+      "prompt_vi": "'아직' nghĩa là gì?",
+      "choices_vi": [
+        "Vẫn / Chưa",
+        "Đã",
+        "Ngay cả",
+        "Nhiều hơn"
+      ]
     },
-
     {
-      "id": 56, "stage": 20, "type": "reading_card",
+      "id": 56,
+      "stage": 20,
+      "type": "reading_card",
       "title": "Someone, Something",
+      "title_zh_tw": "某人、某事",
       "title_kr": "막연한 대상",
       "body": "Combine question words with context to express indefinite ideas like 'someone' or 'nothing'.",
+      "body_zh_tw": "將疑問詞與語境結合，表達像「某人」或「什麼都沒有」這樣的不確定概念。",
       "rules": [
         "누군가 — someone: 누군가 왔어요 (Someone came)",
         "무언가 / 뭔가 — something: 뭔가 이상해요 (Something is strange)",
         "어딘가 — somewhere: 어딘가에 있어요 (It's somewhere)",
         "아무도 + negative — no one: 아무도 없어요 (No one is here)",
         "아무것도 + negative — nothing: 아무것도 몰라요 (I know nothing)"
+      ],
+      "rules_zh_tw": [
+        "누군가 — 某人：누군가 왔어요（某人來了）",
+        "무언가 / 뭔가 — 某事：뭔가 이상해요（某事很奇怪）",
+        "어딘가 — 某處：어딘가에 있어요（在某處）",
+        "아무도 ＋ 否定 — 沒有人：아무도 없어요（這裡沒有人）",
+        "아무것도 ＋ 否定 — 什麼都沒有：아무것도 몰라요（我什麼都不知道）"
+      ],
+      "title_es": "Alguien, Algo",
+      "body_es": "Combina palabras interrogativas con contexto para expresar ideas indefinidas como \"alguien\" o \"nada\".",
+      "rules_es": [
+        "누군가 — alguien: 누군가 왔어요 (Alguien vino)",
+        "무언가 / 뭔가 — algo: 뭔가 이상해요 (Algo es raro)",
+        "어딘가 — en algún lugar: 어딘가에 있어요 (Está en algún lugar)",
+        "아무도 + negación — nadie: 아무도 없어요 (No hay nadie aquí)",
+        "아무것도 + negación — nada: 아무것도 몰라요 (No sé nada)"
+      ],
+      "title_fr": "Quelqu'un, Quelque Chose",
+      "body_fr": "Combinez des mots interrogatifs avec le contexte pour exprimer des idées indéfinies comme « quelqu'un » ou « rien ».",
+      "rules_fr": [
+        "누군가 — quelqu'un : 누군가 왔어요 (Quelqu'un est venu)",
+        "무언가 / 뭔가 — quelque chose : 뭔가 이상해요 (Quelque chose est bizarre)",
+        "어딘가 — quelque part : 어딘가에 있어요 (C'est quelque part)",
+        "아무도 + négatif — personne : 아무도 없어요 (Il n'y a personne ici)",
+        "아무것도 + négatif — rien : 아무것도 몰라요 (Je ne sais rien)"
+      ],
+      "title_de": "Jemand, Etwas",
+      "body_de": "Kombiniere Fragewörter mit Kontext, um unbestimmte Ideen wie „jemand\" oder „nichts\" auszudrücken.",
+      "rules_de": [
+        "누군가 — jemand: 누군가 왔어요 (Jemand ist gekommen)",
+        "무언가 / 뭔가 — etwas: 뭔가 이상해요 (Etwas ist seltsam)",
+        "어딘가 — irgendwo: 어딘가에 있어요 (Es ist irgendwo)",
+        "아무도 + Verneinung — niemand: 아무도 없어요 (Niemand ist hier)",
+        "아무것도 + Verneinung — nichts: 아무것도 몰라요 (Ich weiß nichts)"
+      ],
+      "title_th": "ใครบางคน บางอย่าง",
+      "body_th": "รวมคำถามกับบริบทเพื่อแสดงแนวคิดไม่ระบุ เช่น ใครบางคน หรือ ไม่มีอะไร",
+      "rules_th": [
+        "누군가 — ใครบางคน: 누군가 왔어요 (มีคนมา)",
+        "무언가 / 뭔가 — บางอย่าง: 뭔가 이상해요 (มีอะไรแปลก)",
+        "어딘가 — ที่ไหนสักแห่ง: 어딘가에 있어요 (อยู่ที่ไหนสักแห่ง)",
+        "아무도 + ปฏิเสธ — ไม่มีใคร: 아무도 없어요 (ไม่มีใคร)",
+        "아무것도 + ปฏิเสธ — ไม่มีอะไร: 아무것도 몰라요 (ไม่รู้อะไรเลย)"
+      ],
+      "title_id": "Seseorang, Sesuatu",
+      "body_id": "Gabungkan kata tanya dengan konteks untuk mengungkapkan ide tak tentu seperti 'seseorang' atau 'tidak ada apa-apa'.",
+      "rules_id": [
+        "누군가 — seseorang: 누군가 왔어요 (Seseorang datang)",
+        "무언가 / 뭔가 — sesuatu: 뭔가 이상해요 (Ada sesuatu yang aneh)",
+        "어딘가 — suatu tempat: 어딘가에 있어요 (Ada di suatu tempat)",
+        "아무도 + negatif — tidak seorang pun: 아무도 없어요 (Tidak ada seorang pun di sini)",
+        "아무것도 + negatif — tidak ada apa-apa: 아무것도 몰라요 (Saya tidak tahu apa-apa)"
+      ],
+      "title_vi": "Ai đó, cái gì đó",
+      "body_vi": "Kết hợp từ để hỏi với ngữ cảnh để diễn đạt những ý không xác định như 'ai đó' hoặc 'không gì cả'.",
+      "rules_vi": [
+        "누군가 — ai đó: 누군가 왔어요 (Ai đó đã đến)",
+        "무언가 / 뭔가 — cái gì đó: 뭔가 이상해요 (Có gì đó lạ)",
+        "어딘가 — đâu đó: 어딘가에 있어요 (Nó ở đâu đó)",
+        "아무도 + phủ định — không ai: 아무도 없어요 (Không có ai ở đây)",
+        "아무것도 + phủ định — không gì cả: 아무것도 몰라요 (Tôi không biết gì cả)"
       ]
     },
     {
-      "id": 57, "stage": 20, "type": "match_quiz",
+      "id": 57,
+      "stage": 20,
+      "type": "match_quiz",
       "prompt": "'No one is here' — 아무도 ___",
-      "choices": ["없어요", "있어요", "알아요", "와요"],
-      "correct": "없어요"
+      "prompt_zh_tw": "「這裡沒有人」——아무도 ___",
+      "choices": [
+        "없어요",
+        "있어요",
+        "알아요",
+        "와요"
+      ],
+      "choices_zh_tw": [
+        "없어요",
+        "있어요",
+        "알아요",
+        "와요"
+      ],
+      "correct": "없어요",
+      "prompt_es": "\"No hay nadie aquí\" — 아무도 ___",
+      "choices_es": [
+        "없어요",
+        "있어요",
+        "알아요",
+        "와요"
+      ],
+      "prompt_fr": "« Il n'y a personne ici » — 아무도 ___",
+      "choices_fr": [
+        "없어요",
+        "있어요",
+        "알아요",
+        "와요"
+      ],
+      "prompt_de": "„Niemand ist hier\" — 아무도 ___",
+      "choices_de": [
+        "없어요",
+        "있어요",
+        "알아요",
+        "와요"
+      ],
+      "prompt_th": "ไม่มีใครอยู่ที่นี่ — 아무도 ___",
+      "choices_th": [
+        "없어요",
+        "있어요",
+        "알아요",
+        "와요"
+      ],
+      "prompt_id": "'Tidak ada seorang pun di sini' — 아무도 ___",
+      "choices_id": [
+        "없어요",
+        "있어요",
+        "알아요",
+        "와요"
+      ],
+      "prompt_vi": "'Không có ai ở đây' — 아무도 ___",
+      "choices_vi": [
+        "없어요",
+        "있어요",
+        "알아요",
+        "와요"
+      ]
     },
-
     {
-      "id": 58, "stage": 21, "type": "reading_card",
+      "id": 58,
+      "stage": 21,
+      "type": "reading_card",
       "title": "Imperative: -(으)세요",
+      "title_zh_tw": "命令句：-(으)세요",
       "title_kr": "명령형",
       "body": "Add -(으)세요 to a verb stem to make a polite request or command.",
+      "body_zh_tw": "在動詞詞幹後加-(으)세요，以禮貌的方式表達請求或命令。",
       "rules": [
         "가다 → 가세요 (please go)",
         "앉다 → 앉으세요 (please sit)",
         "먹다 → 드세요 (please eat — honorific)"
+      ],
+      "rules_zh_tw": [
+        "가다→가세요（請走／請去）",
+        "앉다→앉으세요（請坐）",
+        "먹다→드세요（請吃——尊稱）"
+      ],
+      "title_es": "Imperativo: -(으)세요",
+      "body_es": "Añade -(으)세요 a la raíz verbal para hacer una petición o un mandato educado.",
+      "rules_es": [
+        "가다 → 가세요 (por favor ve)",
+        "앉다 → 앉으세요 (por favor siéntate)",
+        "먹다 → 드세요 (por favor come — honorífico)"
+      ],
+      "title_fr": "Impératif : -(으)세요",
+      "body_fr": "Ajoutez -(으)세요 à un radical verbal pour formuler une requête ou un ordre poli.",
+      "rules_fr": [
+        "가다 → 가세요 (allez s'il vous plaît)",
+        "앉다 → 앉으세요 (asseyez-vous s'il vous plaît)",
+        "먹다 → 드세요 (mangez s'il vous plaît — honorifique)"
+      ],
+      "title_de": "Befehlsform: -(으)세요",
+      "body_de": "Füge -(으)세요 an einen Verbstamm an, um eine höfliche Aufforderung oder einen Befehl zu machen.",
+      "rules_de": [
+        "가다 → 가세요 (bitte geh / gehen Sie)",
+        "앉다 → 앉으세요 (bitte setz dich / setzen Sie sich)",
+        "먹다 → 드세요 (bitte iss / essen Sie — Ehrenform)"
+      ],
+      "title_th": "คำสั่ง: -(으)세요",
+      "body_th": "เติม -(으)세요 ต่อท้ายก้านกริยาเพื่อสร้างคำขอหรือคำสั่งสุภาพ",
+      "rules_th": [
+        "가다 → 가세요 (กรุณาไป)",
+        "앉다 → 앉으세요 (กรุณานั่ง)",
+        "먹다 → 드세요 (กรุณากิน — ยกย่อง)"
+      ],
+      "title_id": "Perintah: -(으)세요",
+      "body_id": "Tambahkan -(으)세요 pada akar kata kerja untuk membuat permintaan atau perintah yang sopan.",
+      "rules_id": [
+        "가다 → 가세요 (silakan pergi)",
+        "앉다 → 앉으세요 (silakan duduk)",
+        "먹다 → 드세요 (silakan makan — hormat)"
+      ],
+      "title_vi": "Mệnh lệnh: -(으)세요",
+      "body_vi": "Thêm -(으)세요 vào gốc động từ để đưa ra một yêu cầu hoặc mệnh lệnh lịch sự.",
+      "rules_vi": [
+        "가다 → 가세요 (mời đi)",
+        "앉다 → 앉으세요 (mời ngồi)",
+        "먹다 → 드세요 (mời ăn — kính ngữ)"
       ]
     },
-
     {
-      "id": 59, "stage": 22, "type": "reading_card",
+      "id": 59,
+      "stage": 22,
+      "type": "reading_card",
       "title": "Don't: -지 마세요",
+      "title_zh_tw": "禁止句：-지 마세요",
       "title_kr": "금지형",
       "body": "Add -지 마세요 to a verb stem to politely tell someone NOT to do something.",
+      "body_zh_tw": "在動詞詞幹後加-지 마세요，禮貌地告訴對方不要做某事。",
       "rules": [
         "말하다 → 말하지 마세요 (please don't speak)",
         "가다 → 가지 마세요 (please don't go)",
         "먹다 → 먹지 마세요 (please don't eat)"
+      ],
+      "rules_zh_tw": [
+        "말하다→말하지 마세요（請不要說話）",
+        "가다→가지 마세요（請不要去）",
+        "먹다→먹지 마세요（請不要吃）"
+      ],
+      "title_es": "Prohibición: -지 마세요",
+      "body_es": "Añade -지 마세요 a la raíz verbal para decirle educadamente a alguien que NO haga algo.",
+      "rules_es": [
+        "말하다 → 말하지 마세요 (por favor no hables)",
+        "가다 → 가지 마세요 (por favor no vayas)",
+        "먹다 → 먹지 마세요 (por favor no comas)"
+      ],
+      "title_fr": "Ne pas : -지 마세요",
+      "body_fr": "Ajoutez -지 마세요 à un radical verbal pour dire poliment à quelqu'un de NE PAS faire quelque chose.",
+      "rules_fr": [
+        "말하다 → 말하지 마세요 (ne parlez pas s'il vous plaît)",
+        "가다 → 가지 마세요 (ne partez pas s'il vous plaît)",
+        "먹다 → 먹지 마세요 (ne mangez pas s'il vous plaît)"
+      ],
+      "title_de": "Nicht: -지 마세요",
+      "body_de": "Füge -지 마세요 an einen Verbstamm an, um jemandem höflich zu sagen, etwas NICHT zu tun.",
+      "rules_de": [
+        "말하다 → 말하지 마세요 (bitte nicht reden)",
+        "가다 → 가지 마세요 (bitte nicht gehen)",
+        "먹다 → 먹지 마세요 (bitte nicht essen)"
+      ],
+      "title_th": "ห้าม: -지 마세요",
+      "body_th": "เติม -지 마세요 ต่อท้ายก้านกริยาเพื่อบอกสุภาพว่าไม่ให้ทำสิ่งนั้น",
+      "rules_th": [
+        "말하다 → 말하지 마세요 (กรุณาอย่าพูด)",
+        "가다 → 가지 마세요 (กรุณาอย่าไป)",
+        "먹다 → 먹지 마세요 (กรุณาอย่ากิน)"
+      ],
+      "title_id": "Jangan: -지 마세요",
+      "body_id": "Tambahkan -지 마세요 pada akar kata kerja untuk memberi tahu seseorang dengan sopan agar TIDAK melakukan sesuatu.",
+      "rules_id": [
+        "말하다 → 말하지 마세요 (tolong jangan bicara)",
+        "가다 → 가지 마세요 (tolong jangan pergi)",
+        "먹다 → 먹지 마세요 (tolong jangan makan)"
+      ],
+      "title_vi": "Đừng: -지 마세요",
+      "body_vi": "Thêm -지 마세요 vào gốc động từ để lịch sự bảo ai đó ĐỪNG làm gì đó.",
+      "rules_vi": [
+        "말하다 → 말하지 마세요 (xin đừng nói)",
+        "가다 → 가지 마세요 (xin đừng đi)",
+        "먹다 → 먹지 마세요 (xin đừng ăn)"
       ]
     },
     {
-      "id": 60, "stage": 22, "type": "listen_repeat",
+      "id": 60,
+      "stage": 22,
+      "type": "listen_repeat",
       "audio": "천천히 말해 주세요",
-      "syllables": ["천천히", " ", "말해", " ", "주세요"],
+      "syllables": [
+        "천천히",
+        " ",
+        "말해",
+        " ",
+        "주세요"
+      ],
       "romanization": "cheon-cheon-hi mal-hae ju-se-yo",
       "meaning": "Please speak slowly.",
+      "meaning_zh_tw": "請慢慢說。",
       "meaning_ja": "ゆっくり話してください。",
-      "katakana": "チョンチョニ マレ チュセヨ"
+      "katakana": "チョンチョニ マレ チュセヨ",
+      "meaning_es": "Por favor habla despacio.",
+      "meaning_fr": "S'il vous plaît, parlez lentement.",
+      "meaning_de": "Bitte sprechen Sie langsam.",
+      "meaning_vi": "Vui lòng nói chậm lại.",
+      "meaning_th": "กรุณาพูดช้าๆ",
+      "meaning_id": "Tolong bicara pelan-pelan."
     },
     {
-      "id": 61, "stage": 22, "type": "match_quiz",
+      "id": 61,
+      "stage": 22,
+      "type": "match_quiz",
       "prompt": "'Please don't speak' in Korean?",
-      "choices": ["말하지 마세요", "말해 주세요", "말하세요", "말 안 해요"],
-      "correct": "말하지 마세요"
+      "prompt_zh_tw": "韓語中「請不要說話」是？",
+      "choices": [
+        "말하지 마세요",
+        "말해 주세요",
+        "말하세요",
+        "말 안 해요"
+      ],
+      "choices_zh_tw": [
+        "말하지 마세요",
+        "말해 주세요",
+        "말하세요",
+        "말 안 해요"
+      ],
+      "correct": "말하지 마세요",
+      "prompt_es": "\"Por favor no hables\" en coreano?",
+      "choices_es": [
+        "말하지 마세요",
+        "말해 주세요",
+        "말하세요",
+        "말 안 해요"
+      ],
+      "prompt_fr": "« Veuillez ne pas parler » en coréen ?",
+      "choices_fr": [
+        "말하지 마세요",
+        "말해 주세요",
+        "말하세요",
+        "말 안 해요"
+      ],
+      "prompt_de": "„Bitte nicht reden\" auf Koreanisch?",
+      "choices_de": [
+        "말하지 마세요",
+        "말해 주세요",
+        "말하세요",
+        "말 안 해요"
+      ],
+      "prompt_th": "กรุณาอย่าพูด เป็นภาษาเกาหลี?",
+      "choices_th": [
+        "말하지 마세요",
+        "말해 주세요",
+        "말하세요",
+        "말 안 해요"
+      ],
+      "prompt_id": "'Tolong jangan bicara' dalam bahasa Korea?",
+      "choices_id": [
+        "말하지 마세요",
+        "말해 주세요",
+        "말하세요",
+        "말 안 해요"
+      ],
+      "prompt_vi": "'Xin đừng nói' trong tiếng Hàn?",
+      "choices_vi": [
+        "말하지 마세요",
+        "말해 주세요",
+        "말하세요",
+        "말 안 해요"
+      ]
     },
-
     {
-      "id": 62, "stage": 23, "type": "reading_card",
+      "id": 62,
+      "stage": 23,
+      "type": "reading_card",
       "title": "Method: -(으)로",
+      "title_zh_tw": "方式：-(으)로",
       "title_kr": "방법",
       "body": "-(으)로 marks method or means — 'by' or 'with' a tool/way of doing something.",
+      "body_zh_tw": "-(으)로標記方式或手段——用某種工具或方式「做」某事。",
       "rules": [
         "-(으)로 after consonant, -로 after vowel: 버스로 가요 (go by bus)",
         "지하철로 와요 (come by subway)",
         "한국어로 말해요 (speak in Korean)"
+      ],
+      "rules_zh_tw": [
+        "子音後接-(으)로，母音後接-로：버스로 가요（搭公車去）",
+        "지하철로 와요（搭地鐵來）",
+        "한국어로 말해요（用韓語說）"
+      ],
+      "title_es": "Método: -(으)로",
+      "body_es": "-(으)로 marca el método o medio — \"en\" o \"con\" una herramienta/manera de hacer algo.",
+      "rules_es": [
+        "-(으)로 después de consonante, -로 después de vocal: 버스로 가요 (voy en autobús)",
+        "지하철로 와요 (vengo en metro)",
+        "한국어로 말해요 (hablo en coreano)"
+      ],
+      "title_fr": "Méthode : -(으)로",
+      "body_fr": "-(으)로 marque la méthode ou le moyen — « en » ou « avec » un outil/une façon de faire quelque chose.",
+      "rules_fr": [
+        "-(으)로 après consonne, -로 après voyelle : 버스로 가요 (je vais en bus)",
+        "지하철로 와요 (je viens en métro)",
+        "한국어로 말해요 (je parle en coréen)"
+      ],
+      "title_de": "Methode: -(으)로",
+      "body_de": "-(으)로 markiert die Methode oder das Mittel — „mit\" oder „per\" einem Werkzeug/einer Art, etwas zu tun.",
+      "rules_de": [
+        "-(으)로 nach Konsonant, -로 nach Vokal: 버스로 가요 (mit dem Bus fahren)",
+        "지하철로 와요 (mit der U-Bahn kommen)",
+        "한국어로 말해요 (auf Koreanisch reden)"
+      ],
+      "title_th": "วิธีการ: -(으)로",
+      "body_th": "-(으)로 บ่งบอกวิธีหรือวิธีการ — โดย หรือ ด้วย เครื่องมือ/วิธีการทำ",
+      "rules_th": [
+        "-(으)로 หลังพยัญชนะ -로 หลังสระ: 버스로 가요 (ไปโดยรถเมล์)",
+        "지하철로 와요 (มาโดยรถไฟฟ้า)",
+        "한국어로 말해요 (พูดภาษาเกาหลี)"
+      ],
+      "title_id": "Cara: -(으)로",
+      "body_id": "-(으)로 menandai cara atau alat — 'dengan' atau 'menggunakan' suatu alat/cara melakukan sesuatu.",
+      "rules_id": [
+        "-(으)로 setelah konsonan, -로 setelah vokal: 버스로 가요 (pergi naik bus)",
+        "지하철로 와요 (datang naik kereta bawah tanah)",
+        "한국어로 말해요 (berbicara dalam bahasa Korea)"
+      ],
+      "title_vi": "Phương tiện: -(으)로",
+      "body_vi": "-(으)로 đánh dấu phương thức hoặc phương tiện — 'bằng' một công cụ/cách làm gì đó.",
+      "rules_vi": [
+        "-(으)로 sau phụ âm, -로 sau nguyên âm: 버스로 가요 (đi bằng xe buýt)",
+        "지하철로 와요 (đến bằng tàu điện ngầm)",
+        "한국어로 말해요 (nói bằng tiếng Hàn)"
       ]
     },
-
     {
-      "id": 63, "stage": 24, "type": "reading_card",
+      "id": 63,
+      "stage": 24,
+      "type": "reading_card",
       "title": "Good/Poor At",
+      "title_zh_tw": "擅長／不擅長",
       "title_kr": "잘하다 · 못하다",
       "body": "잘하다 = good at. 못하다 = poor at. Both attach after the object particle 을/를.",
+      "body_zh_tw": "잘하다 = 擅長。못하다 = 不擅長。兩者都接在受語助詞을/를後面。",
       "rules": [
         "한국어를 잘해요 (good at Korean)",
         "수학을 못해요 (bad at math)",
         "수영을 잘 못해요 (not very good at swimming)"
+      ],
+      "rules_zh_tw": [
+        "한국어를 잘해요（韓語說得好）",
+        "수학을 못해요（數學不好）",
+        "수영을 잘 못해요（游泳不太好）"
+      ],
+      "title_es": "Bueno / Malo En",
+      "body_es": "잘하다 = ser bueno en. 못하다 = ser malo en. Ambos se unen después de la partícula de objeto 을/를.",
+      "rules_es": [
+        "한국어를 잘해요 (soy bueno en coreano)",
+        "수학을 못해요 (soy malo en matemáticas)",
+        "수영을 잘 못해요 (no soy muy bueno nadando)"
+      ],
+      "title_fr": "Bon(ne) / Mauvais(e) En",
+      "body_fr": "잘하다 = être bon en. 못하다 = être mauvais en. Les deux s'attachent après la particule d'objet 을/를.",
+      "rules_fr": [
+        "한국어를 잘해요 (je suis bon(ne) en coréen)",
+        "수학을 못해요 (je suis mauvais(e) en maths)",
+        "수영을 잘 못해요 (je ne suis pas très bon(ne) en natation)"
+      ],
+      "title_de": "Gut / Schlecht bei",
+      "body_de": "잘하다 = gut in etwas sein. 못하다 = schlecht in etwas sein. Beide werden nach der Objekt-Partikel 을/를 angehängt.",
+      "rules_de": [
+        "한국어를 잘해요 (gut in Koreanisch)",
+        "수학을 못해요 (schlecht in Mathe)",
+        "수영을 잘 못해요 (nicht sehr gut im Schwimmen)"
+      ],
+      "title_th": "เก่ง / ไม่เก่ง",
+      "body_th": "잘하다 = เก่ง 못하다 = ไม่เก่ง ทั้งคู่ต่อท้ายคำช่วยกรรม 을/를",
+      "rules_th": [
+        "한국어를 잘해요 (เก่งภาษาเกาหลี)",
+        "수학을 못해요 (ไม่เก่งคณิตศาสตร์)",
+        "수영을 잘 못해요 (ว่ายน้ำไม่ค่อยเก่ง)"
+      ],
+      "title_id": "Mahir/Kurang Mahir",
+      "body_id": "잘하다 = mahir dalam. 못하다 = kurang mahir dalam. Keduanya melekat setelah partikel objek 을/를.",
+      "rules_id": [
+        "한국어를 잘해요 (mahir bahasa Korea)",
+        "수학을 못해요 (kurang mahir matematika)",
+        "수영을 잘 못해요 (kurang begitu mahir berenang)"
+      ],
+      "title_vi": "Giỏi/Kém về",
+      "body_vi": "잘하다 = giỏi về. 못하다 = kém về. Cả hai gắn sau trợ từ tân ngữ 을/를.",
+      "rules_vi": [
+        "한국어를 잘해요 (giỏi tiếng Hàn)",
+        "수학을 못해요 (kém toán)",
+        "수영을 잘 못해요 (bơi không giỏi lắm)"
       ]
     },
     {
-      "id": 64, "stage": 24, "type": "match_quiz",
+      "id": 64,
+      "stage": 24,
+      "type": "match_quiz",
       "prompt": "'good at Korean' — 한국어를 ___",
-      "choices": ["잘해요", "못해요", "좋아해요", "잘 못해요"],
-      "correct": "잘해요"
+      "prompt_zh_tw": "「韓語說得好」——한국어를 ___",
+      "choices": [
+        "잘해요",
+        "못해요",
+        "좋아해요",
+        "잘 못해요"
+      ],
+      "choices_zh_tw": [
+        "잘해요",
+        "못해요",
+        "좋아해요",
+        "잘 못해요"
+      ],
+      "correct": "잘해요",
+      "prompt_es": "\"soy bueno en coreano\" — 한국어를 ___",
+      "choices_es": [
+        "잘해요",
+        "못해요",
+        "좋아해요",
+        "잘 못해요"
+      ],
+      "prompt_fr": "« être bon en coréen » — 한국어를 ___",
+      "choices_fr": [
+        "잘해요",
+        "못해요",
+        "좋아해요",
+        "잘 못해요"
+      ],
+      "prompt_de": "„Gut in Koreanisch\" — 한국어를 ___",
+      "choices_de": [
+        "잘해요",
+        "못해요",
+        "좋아해요",
+        "잘 못해요"
+      ],
+      "prompt_th": "เก่งภาษาเกาหลี — 한국어를 ___",
+      "choices_th": [
+        "잘해요",
+        "못해요",
+        "좋아해요",
+        "잘 못해요"
+      ],
+      "prompt_id": "'mahir bahasa Korea' — 한국어를 ___",
+      "choices_id": [
+        "잘해요",
+        "못해요",
+        "좋아해요",
+        "잘 못해요"
+      ],
+      "prompt_vi": "'giỏi tiếng Hàn' — 한국어를 ___",
+      "choices_vi": [
+        "잘해요",
+        "못해요",
+        "좋아해요",
+        "잘 못해요"
+      ]
     },
-
     {
-      "id": 65, "stage": 25, "type": "reading_card",
+      "id": 65,
+      "stage": 25,
+      "type": "reading_card",
       "title": "All, More: 다, 더",
+      "title_zh_tw": "全部、更多：다、더",
       "title_kr": "다 · 더",
       "body": "다 = all/everything. 더 = more. Both are simple adverbs placed before the verb.",
+      "body_zh_tw": "다 = 全部/全都。더 = 更多。兩者都是簡單副詞，放在動詞前面。",
       "rules": [
         "다 먹었어요 — ate everything / all of it",
         "더 주세요 — please give (me) more",
         "다 더 다르게 쓰여요 — both are used very differently in context"
+      ],
+      "rules_zh_tw": [
+        "다 먹었어요 — 全部吃完了",
+        "더 주세요 — 請再給（我）一些",
+        "다和더在語境中的用法非常不同"
+      ],
+      "title_es": "Todo, Más: 다, 더",
+      "body_es": "다 = todo/todo. 더 = más. Ambos son adverbios simples colocados antes del verbo.",
+      "rules_es": [
+        "다 먹었어요 — comí todo / todo ello",
+        "더 주세요 — por favor dame más",
+        "다 y 더 se usan de manera muy diferente según el contexto"
+      ],
+      "title_fr": "Tout, Plus : 다, 더",
+      "body_fr": "다 = tout/toute. 더 = plus. Les deux sont de simples adverbes placés avant le verbe.",
+      "rules_fr": [
+        "다 먹었어요 — j'ai tout mangé / tout ça",
+        "더 주세요 — donnez-m'en plus s'il vous plaît",
+        "다 et 더 s'utilisent de façon très différente selon le contexte"
+      ],
+      "title_de": "Alles, Mehr: 다, 더",
+      "body_de": "다 = alles / alles zusammen. 더 = mehr. Beide sind einfache Adverbien, die vor dem Verb stehen.",
+      "rules_de": [
+        "다 먹었어요 — alles gegessen / alles aufgegessen",
+        "더 주세요 — gib mir bitte mehr",
+        "다 und 더 werden im Kontext sehr unterschiedlich verwendet"
+      ],
+      "title_th": "ทั้งหมด อีก: 다 더",
+      "body_th": "다 = ทั้งหมด/ทุกอย่าง 더 = อีก/มากกว่า ทั้งคู่เป็นคำวิเศษณ์ง่ายๆ วางไว้ก่อนกริยา",
+      "rules_th": [
+        "다 먹었어요 — กินหมดแล้ว / กินทั้งหมด",
+        "더 주세요 — ขออีก (กรุณาให้อีก)",
+        "다 더 다르게 쓰여요 — ทั้งคู่ใช้ต่างกันมากในบริบท"
+      ],
+      "title_id": "Semua, Lebih: 다, 더",
+      "body_id": "다 = semua/seluruhnya. 더 = lebih. Keduanya kata keterangan sederhana yang diletakkan sebelum kata kerja.",
+      "rules_id": [
+        "다 먹었어요 — makan semuanya / habis",
+        "더 주세요 — tolong beri (saya) lebih banyak",
+        "다 dan 더 digunakan sangat berbeda tergantung konteks"
+      ],
+      "title_vi": "Tất cả, hơn: 다, 더",
+      "body_vi": "다 = tất cả/mọi thứ. 더 = nhiều hơn. Cả hai đều là trạng từ đơn giản đặt trước động từ.",
+      "rules_vi": [
+        "다 먹었어요 — đã ăn hết / tất cả",
+        "더 주세요 — xin cho thêm",
+        "다 더 다르게 쓰여요 — cả hai được dùng rất khác nhau theo ngữ cảnh"
       ]
     },
     {
-      "id": 66, "stage": 25, "type": "match_quiz",
+      "id": 66,
+      "stage": 25,
+      "type": "match_quiz",
       "prompt": "'Please give me more' — ___ 주세요",
-      "choices": ["더", "다", "좀", "잘"],
-      "correct": "더"
+      "prompt_zh_tw": "「請再給我一些」——___ 주세요",
+      "choices": [
+        "더",
+        "다",
+        "좀",
+        "잘"
+      ],
+      "choices_zh_tw": [
+        "더",
+        "다",
+        "좀",
+        "잘"
+      ],
+      "correct": "더",
+      "prompt_es": "\"Por favor dame más\" — ___ 주세요",
+      "choices_es": [
+        "더",
+        "다",
+        "좀",
+        "잘"
+      ],
+      "prompt_fr": "« S'il vous plaît, donnez-m'en plus » — ___ 주세요",
+      "choices_fr": [
+        "더",
+        "다",
+        "좀",
+        "잘"
+      ],
+      "prompt_de": "„Bitte gib mir mehr\" — ___ 주세요",
+      "choices_de": [
+        "더",
+        "다",
+        "좀",
+        "잘"
+      ],
+      "prompt_th": "ขออีก — ___ 주세요",
+      "choices_th": [
+        "더",
+        "다",
+        "좀",
+        "잘"
+      ],
+      "prompt_id": "'Tolong beri saya lebih banyak' — ___ 주세요",
+      "choices_id": [
+        "더",
+        "다",
+        "좀",
+        "잘"
+      ],
+      "prompt_vi": "'Xin cho tôi thêm' — ___ 주세요",
+      "choices_vi": [
+        "더",
+        "다",
+        "좀",
+        "잘"
+      ]
     },
-
     {
-      "id": 67, "stage": 26, "type": "reading_card",
+      "id": 67,
+      "stage": 26,
+      "type": "reading_card",
       "title": "All, More & -도",
+      "title_zh_tw": "全部、更多與-도",
       "title_kr": "-도 응용",
       "body": "-도 has 4 advanced uses beyond simple 'also': emphasis, emphatic negation, and 'both...and'.",
+      "body_zh_tw": "-도除了簡單的「也」之外還有4種進階用法：強調、強烈否定和「既…又…」。",
       "rules": [
         "아이도 알아요 — even children know (emphasis: unexpected inclusion)",
         "하나도 없어요 — not even one (emphatic negation: 하나도 + negative)",
         "먹기도 해요 — sometimes eats / also eats (-기도 하다)",
         "좋기도 하고 나쁘기도 해요 — both good and bad"
+      ],
+      "rules_zh_tw": [
+        "아이도 알아요 — 連孩子都知道（強調：出乎意料的包含）",
+        "하나도 없어요 — 一個都沒有（強烈否定：하나도＋否定）",
+        "먹기도 해요 — 有時吃／也吃（-기도 하다）",
+        "좋기도 하고 나쁘기도 해요 — 既好又壞"
+      ],
+      "title_es": "Todo, Más y -도",
+      "body_es": "-도 tiene 4 usos avanzados más allá del simple \"también\": énfasis, negación enfática y \"tanto...como\".",
+      "rules_es": [
+        "아이도 알아요 — incluso los niños saben (énfasis: inclusión inesperada)",
+        "하나도 없어요 — ni uno solo (negación enfática: 하나도 + negación)",
+        "먹기도 해요 — a veces come / también come (-기도 하다)",
+        "좋기도 하고 나쁘기도 해요 — tanto bueno como malo"
+      ],
+      "title_fr": "Tout, Plus & -도",
+      "body_fr": "-도 a 4 utilisations avancées au-delà du simple « aussi » : emphase, négation emphatique et « à la fois... et ».",
+      "rules_fr": [
+        "아이도 알아요 — même les enfants savent (emphase : inclusion inattendue)",
+        "하나도 없어요 — pas même un seul (négation emphatique : 하나도 + négatif)",
+        "먹기도 해요 — parfois mange / mange aussi (-기도 하다)",
+        "좋기도 하고 나쁘기도 해요 — à la fois bon et mauvais"
+      ],
+      "title_de": "Alles, Mehr & -도",
+      "body_de": "-도 hat 4 fortgeschrittene Verwendungen über das einfache „auch\" hinaus: Betonung, emphatische Verneinung und „sowohl...als auch\".",
+      "rules_de": [
+        "아이도 알아요 — Sogar Kinder wissen es (Betonung: unerwartete Einbeziehung)",
+        "하나도 없어요 — Nicht einmal eines (emphatische Verneinung: 하나도 + Verneinung)",
+        "먹기도 해요 — Isst manchmal / isst auch (-기도 하다)",
+        "좋기도 하고 나쁘기도 해요 — Sowohl gut als auch schlecht"
+      ],
+      "title_th": "ทั้งหมด อีก & -도 ขั้นสูง",
+      "body_th": "-도 มี 4 การใช้ขั้นสูงนอกจาก ด้วย ธรรมดา: การเน้น การปฏิเสธเน้น และ ทั้ง...และ",
+      "rules_th": [
+        "아이도 알아요 — แม้แต่เด็กก็รู้ (เน้น: การรวมที่ไม่คาด)",
+        "하나도 없어요 — ไม่มีแม้แต่อันเดียว (ปฏิเสธเน้น: 하나도 + ปฏิเสธ)",
+        "먹기도 해요 — บางครั้งกิน / กินด้วย (-기도 하다)",
+        "좋기도 하고 나쁘기도 해요 — ทั้งดีและไม่ดี"
+      ],
+      "title_id": "Semua, Lebih & -도",
+      "body_id": "-도 memiliki 4 penggunaan lanjutan selain sekadar 'juga': penekanan, negasi tegas, dan 'baik...maupun'.",
+      "rules_id": [
+        "아이도 알아요 — bahkan anak-anak pun tahu (penekanan: inklusi tak terduga)",
+        "하나도 없어요 — tidak ada satu pun (negasi tegas: 하나도 + negatif)",
+        "먹기도 해요 — kadang makan / juga makan (-기도 하다)",
+        "좋기도 하고 나쁘기도 해요 — baik bagus maupun buruk"
+      ],
+      "title_vi": "Tất cả, hơn & -도",
+      "body_vi": "-도 có 4 cách dùng nâng cao ngoài nghĩa 'cũng' đơn giản: nhấn mạnh, phủ định nhấn mạnh, và 'vừa...vừa'.",
+      "rules_vi": [
+        "아이도 알아요 — ngay cả trẻ em cũng biết (nhấn mạnh: sự bao gồm bất ngờ)",
+        "하나도 없어요 — không có lấy một cái (phủ định nhấn mạnh: 하나도 + phủ định)",
+        "먹기도 해요 — đôi khi cũng ăn / cũng ăn (-기도 하다)",
+        "좋기도 하고 나쁘기도 해요 — vừa tốt vừa xấu"
       ]
     },
     {
-      "id": 68, "stage": 26, "type": "listen_repeat",
+      "id": 68,
+      "stage": 26,
+      "type": "listen_repeat",
       "audio": "한국어가 어렵기도 하고 재미있기도 해요",
-      "syllables": ["한국어가", " ", "어렵기도 하고", " ", "재미있기도 해요"],
+      "syllables": [
+        "한국어가",
+        " ",
+        "어렵기도 하고",
+        " ",
+        "재미있기도 해요"
+      ],
       "romanization": "han-gug-eo-ga eo-ryeop-gi-do ha-go jae-mi-iss-gi-do hae-yo",
       "meaning": "Korean is both difficult and interesting.",
+      "meaning_zh_tw": "韓語既難又有趣。",
       "meaning_ja": "韓国語は難しくもあり、面白くもあります。",
-      "katakana": "ハングゴガ オリョッキド ハゴ チェミイッキド ヘヨ"
+      "katakana": "ハングゴガ オリョッキド ハゴ チェミイッキド ヘヨ",
+      "meaning_es": "El coreano es a la vez difícil e interesante.",
+      "meaning_fr": "Le coréen est à la fois difficile et intéressant.",
+      "meaning_de": "Koreanisch ist sowohl schwierig als auch interessant.",
+      "meaning_vi": "Tiếng Hàn vừa khó vừa thú vị.",
+      "meaning_th": "เกาหลีทั้งยากและน่าสนใจ",
+      "meaning_id": "Bahasa Korea itu sulit sekaligus menarik."
     },
     {
-      "id": 69, "stage": 26, "type": "match_quiz",
+      "id": 69,
+      "stage": 26,
+      "type": "match_quiz",
       "prompt": "'Even children know' — which -도 use?",
-      "choices": ["아이도 알아요", "아이가 알아요", "아이를 알아요", "아이는 알아요"],
-      "correct": "아이도 알아요"
+      "prompt_zh_tw": "「連孩子都知道」——哪種-도的用法？",
+      "choices": [
+        "아이도 알아요",
+        "아이가 알아요",
+        "아이를 알아요",
+        "아이는 알아요"
+      ],
+      "choices_zh_tw": [
+        "아이도 알아요",
+        "아이가 알아요",
+        "아이를 알아요",
+        "아이는 알아요"
+      ],
+      "correct": "아이도 알아요",
+      "prompt_es": "\"Incluso los niños saben\" — ¿qué uso de -도?",
+      "choices_es": [
+        "아이도 알아요",
+        "아이가 알아요",
+        "아이를 알아요",
+        "아이는 알아요"
+      ],
+      "prompt_fr": "« Même les enfants savent » — quelle utilisation de -도 ?",
+      "choices_fr": [
+        "아이도 알아요",
+        "아이가 알아요",
+        "아이를 알아요",
+        "아이는 알아요"
+      ],
+      "prompt_de": "„Sogar Kinder wissen es\" — welcher -도-Gebrauch?",
+      "choices_de": [
+        "아이도 알아요",
+        "아이가 알아요",
+        "아이를 알아요",
+        "아이는 알아요"
+      ],
+      "prompt_th": "แม้แต่เด็กก็รู้ — ใช้ -도 แบบใด?",
+      "choices_th": [
+        "아이도 알아요",
+        "아이가 알아요",
+        "아이를 알아요",
+        "아이는 알아요"
+      ],
+      "prompt_id": "'Bahkan anak-anak pun tahu' — penggunaan -도 yang mana?",
+      "choices_id": [
+        "아이도 알아요",
+        "아이가 알아요",
+        "아이를 알아요",
+        "아이는 알아요"
+      ],
+      "prompt_vi": "'Ngay cả trẻ em cũng biết' — dùng -도 nào?",
+      "choices_vi": [
+        "아이도 알아요",
+        "아이가 알아요",
+        "아이를 알아요",
+        "아이는 알아요"
+      ]
     },
     {
-      "id": 70, "stage": 26, "type": "lesson_complete",
+      "id": 70,
+      "stage": 26,
+      "type": "lesson_complete",
       "title": "Grammar Complete!",
       "title_kr": "문법 완료!",
       "message": "You've mastered all 26 grammar stages — from SOV word order and particles to advanced -도 patterns. Start applying these in real conversations!",
-      "next_url": "vocabulary.html"
+      "message_zh_tw": "你已掌握全部26個文法階段——從SOV語序和助詞到進階的-도句型。開始在真實對話中應用這些吧！",
+      "next_url": "vocabulary.html",
+      "title_es": "¡Gramática Completada!",
+      "message_es": "¡Has dominado las 26 etapas gramaticales — desde el orden SOV y las partículas hasta los patrones avanzados de -도. ¡Empieza a aplicarlos en conversaciones reales!",
+      "title_fr": "Grammaire Terminée !",
+      "message_fr": "Vous avez maîtrisé les 26 étapes grammaticales — de l'ordre SOV et les particules jusqu'aux structures avancées de -도. Commencez à les appliquer dans de vraies conversations !",
+      "title_de": "Grammatik abgeschlossen!",
+      "message_de": "Du hast alle 26 Grammatikstufen gemeistert — von der SOV-Wortstellung und den Partikeln bis zu den fortgeschrittenen -도-Mustern. Fang an, diese in echten Gesprächen anzuwenden!",
+      "message_th": "คุณเชี่ยวชาญไวยากรณ์ทั้ง 26 ขั้นตอนแล้ว — จากลำดับคำ SOV และคำช่วย ถึงรูปแบบ -도 ขั้นสูง เริ่มนำไปใช้ในการสนทนาจริงได้เลย!",
+      "title_id": "Tata Bahasa Selesai!",
+      "message_id": "Anda telah menguasai seluruh 26 tahap tata bahasa — dari urutan kata SOV dan partikel hingga pola -도 tingkat lanjut. Mulai terapkan ini dalam percakapan nyata!",
+      "message_vi": "Bạn đã làm chủ cả 26 chặng ngữ pháp — từ trật tự từ SOV và trợ từ đến các mẫu -도 nâng cao. Hãy bắt đầu áp dụng chúng vào những cuộc hội thoại thực tế!"
     }
-
   ]
 }

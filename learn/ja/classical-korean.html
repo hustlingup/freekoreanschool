@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>古典韓国語 — 漢字と文語 | 한국어 학교</title>
+  <meta name="description" content="古典韓国語と漢字（한자）の基礎。歴史的テキストと文語表現を学ぼう。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .ja-kana  { display:none; font-size:0.85em; color:var(--text-secondary); }
+    body.lang-ja .ja-kana  { display:inline; }
+    .kata     { display:none; font-size:0.82em; color:var(--text-secondary); }
+    body.lang-ja .kata     { display:block; }
+    .ja-block { display:none; }
+    body.lang-ja .ja-block { display:block; }
+    body.lang-ja .no-ja   { display:none; }
+  </style>
+  <link rel="canonical" href="https://freekoreanschool.com/learn/ja/classical-korean">
+  <link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/learn/ja/classical-korean">
+  <link rel="alternate" hreflang="zh-TW" href="https://freekoreanschool.com/learn/zh-tw/classical-korean">
+  <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/learn/classical-korean">
+  <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/learn/classical-korean">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="古典韓国語 — 漢字と文語 | 한국어 학교">
+  <meta property="og:description" content="古典韓国語と漢字（한자）の基礎。歴史的テキストと文語表現を学ぼう。">
+  <meta property="og:url" content="https://freekoreanschool.com/learn/ja/classical-korean">
+  <meta property="og:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <meta property="og:site_name" content="Korean School 한국어 학교">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="古典韓国語 — 漢字と文語 | 한국어 학교">
+  <meta name="twitter:description" content="古典韓国語と漢字（한자）の基礎。歴史的テキストと文語表現を学ぼう。">
+  <meta name="twitter:image" content="https://freekoreanschool.com/assets/images/og-image.webp">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Classical Korean 고전 한국어 | 한국어 학교",
+  "description": "Explore Classical Korean — hanja roots, literary forms, historical vocabulary, and how ancient Korean shaped the modern language.",
+  "url": "https://freekoreanschool.com/learn/ja/classical-korean",
+  "isAccessibleForFree": true,
+  "inLanguage": "ko",
+  "provider": {
+    "@type": "Organization",
+    "name": "Korean School 한국어 학교",
+    "url": "https://freekoreanschool.com",
+    "logo": "https://freekoreanschool.com/assets/images/android-chrome-512x512.png"
+  },
+  "educationalLevel": "Beginner to Advanced"
+}
+  </script>
+
+  <meta name="google-adsense-account" content="ca-pub-6791974364232767">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791974364232767" crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D94KSYG9DE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D94KSYG9DE');
+  </script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../../ja/index.html" class="logo">
+      <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+      <div class="logo-text">コリアンスクール <span>한국어 학교</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="hangul.html" class="active"><span class="nav-icon">📚</span> 学ぶ</a></li>
+      <li><a href="../../culture/ja/index.html"><span class="nav-icon">🎵</span> K-カルチャー</a></li>
+      <li><a href="../../travel/ja/index.html"><span class="nav-icon">🗺️</span> 旅行</a></li>
+      <li><a href="../../news/ja/index.html"><span class="nav-icon">📰</span> ニュース</a></li>
+      <li><a href="../../ja/quiz.html"><span class="nav-icon">📝</span> クイズ</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="レッスンを検索...">
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="icon-btn lang-toggle-btn" id="lang-toggle" aria-label="Switch language">🇺🇸 EN</button>
+      <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div id="lesson-progress-grid"></div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">始め方</div>
+    <a href="../../ja/index.html" class="sidebar-link"><span class="link-icon">🏠</span> 序論</a>
+    <a href="hangul.html" class="sidebar-link"><span class="link-icon">✏️</span> ハングルアルファベット</a>
+    <a href="syllable-blocks.html" class="sidebar-link"><span class="link-icon">🔷</span> 音節ブロック</a>
+    <a href="pronunciation.html" class="sidebar-link"><span class="link-icon">🔊</span> 発音ガイド</a>
+    <div class="sidebar-section">初級</div>
+    <button class="sidebar-accordion-btn" data-accordion="vocab"><span class="link-icon">📚</span> 語彙 <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-vocab">
+      <a href="vocabulary.html#greetings" class="sidebar-link" data-level="beginner"><span class="link-icon">👋</span> あいさつ</a>
+      <a href="vocabulary.html#numbers" class="sidebar-link" data-level="beginner"><span class="link-icon">🔢</span> 数字</a>
+      <a href="vocabulary.html#family" class="sidebar-link" data-level="beginner"><span class="link-icon">👨‍👩‍👧</span> 家族</a>
+      <a href="vocabulary.html#food" class="sidebar-link" data-level="beginner"><span class="link-icon">🍜</span> 食べ物・飲み物</a>
+      <a href="vocabulary.html#colors" class="sidebar-link" data-level="beginner"><span class="link-icon">🎨</span> 色</a>
+      <a href="vocabulary.html#days" class="sidebar-link" data-level="beginner"><span class="link-icon">📅</span> 日付・時間</a>
+      <a href="vocabulary.html#places" class="sidebar-link" data-level="beginner"><span class="link-icon">🏙️</span> 場所</a>
+      <a href="vocabulary.html#emotions" class="sidebar-link" data-level="beginner"><span class="link-icon">😊</span> 感情</a>
+      <a href="vocabulary.html#body" class="sidebar-link" data-level="beginner"><span class="link-icon">🫁</span> 体の部位</a>
+      <a href="vocabulary.html#travel" class="sidebar-link" data-level="beginner"><span class="link-icon">✈️</span> 旅行</a>
+      <a href="vocabulary.html#shopping" class="sidebar-link" data-level="beginner"><span class="link-icon">🛒</span> ショッピング</a>
+      <a href="vocabulary.html#weather" class="sidebar-link" data-level="beginner"><span class="link-icon">🌤️</span> 天気</a>
+      <a href="vocabulary.html#verbs" class="sidebar-link" data-level="intermediate"><span class="link-icon">⚡</span> 動詞・行動</a>
+      <a href="vocabulary.html#adjectives" class="sidebar-link" data-level="intermediate"><span class="link-icon">✨</span> 形容詞</a>
+      <a href="vocabulary.html#workplace" class="sidebar-link" data-level="intermediate"><span class="link-icon">💼</span> 職場</a>
+      <a href="vocabulary.html#health" class="sidebar-link" data-level="intermediate"><span class="link-icon">🏥</span> 健康・医学</a>
+      <a href="vocabulary.html#media" class="sidebar-link" data-level="intermediate"><span class="link-icon">🎬</span> メディア・韓流</a>
+      <a href="vocabulary.html#proverbs" class="sidebar-link" data-level="advanced"><span class="link-icon">📜</span> ことわざ・慣用句</a>
+      <a href="vocabulary.html#academic" class="sidebar-link" data-level="advanced"><span class="link-icon">🎓</span> 学術韓国語</a>
+      <a href="vocabulary.html#news" class="sidebar-link" data-level="advanced"><span class="link-icon">📰</span> ニュース・社会</a>
+      <a href="vocabulary.html#konglish" class="sidebar-link"><span class="link-icon">🌐</span> コングリッシュ</a>
+    </div>
+    <a href="pronouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">👥</span> 代名詞 <span class="link-badge badge-beginner">初級</span></a>
+    <a href="nouns.html" class="sidebar-link" data-level="beginner"><span class="link-icon">🏠</span> 一般名詞 <span class="link-badge badge-beginner">初級</span></a>
+    <button class="sidebar-accordion-btn" data-accordion="grammar"><span class="link-icon">📝</span> 文法 <span class="accordion-arrow">▶</span></button>
+    <div class="sidebar-accordion-content" id="accordion-grammar">
+      <a href="grammar.html#sentence-structure" class="sidebar-link" data-level="intermediate"><span class="link-icon">📐</span> 文の構造 <span class="link-badge badge-intermediate">中級</span></a>
+      <a href="grammar.html#particles" class="sidebar-link" data-level="intermediate"><span class="link-icon">🔗</span> 韓国語の助詞 <span class="link-badge badge-intermediate">中級</span></a>
+      <a href="grammar.html#conjugation" class="sidebar-link" data-level="intermediate"><span class="link-icon">⏰</span> 動詞の活用 <span class="link-badge badge-intermediate">中級</span></a>
+      <a href="grammar.html#questions" class="sidebar-link" data-level="intermediate"><span class="link-icon">❓</span> 疑問文の形 <span class="link-badge badge-intermediate">中級</span></a>
+    </div>
+    <div class="sidebar-section">中級</div>
+    <a href="speech-levels.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🗣️</span> フォーマル vs インフォーマル <span class="link-badge badge-intermediate">中級</span></a>
+    <a href="emotions.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">😊</span> 感情を表現する <span class="link-badge badge-intermediate">中級</span></a>
+    <a href="shopping.html" class="sidebar-link" data-level="intermediate"><span class="link-icon">🛒</span> 買い物フレーズ <span class="link-badge badge-intermediate">中級</span></a>
+    <div class="sidebar-section">上級</div>
+    <a href="writing-essays.html" class="sidebar-link" data-level="advanced"><span class="link-icon">📝</span> 作文 <span class="link-badge badge-advanced">上級</span></a>
+    <a href="business-korean.html" class="sidebar-link" data-level="advanced"><span class="link-icon">💼</span> ビジネス韓国語 <span class="link-badge badge-advanced">上級</span></a>
+    <a href="classical-korean.html" class="sidebar-link active" data-level="advanced"><span class="link-icon">📜</span> 古典韓国語 <span class="link-badge badge-advanced">上級</span></a>
+    <div class="sidebar-section">ツール</div>
+    <a href="dialogues.html" class="sidebar-link"><span class="link-icon">💬</span> 韓国語の会話</a>
+    <a href="vocabulary-browser.html" class="sidebar-link"><span class="link-icon">⭐</span> 単語ブラウザ</a>
+    <a href="flashcard.html" class="sidebar-link"><span class="link-icon">📇</span> フラッシュカード</a>
+  </nav>
+</aside>
+
+<main class="main-content" style="margin-left:var(--sidebar-width);padding-top:calc(var(--header-height) + 40px)">
+  <div class="lesson-wrap">
+
+    <div class="lesson-breadcrumb">
+      <a href="../../ja/index.html">ホーム</a>
+      <span class="sep">›</span>
+      <a href="hangul.html">学ぶ</a>
+      <span class="sep">›</span>
+      <span>古典韓国語</span>
+    </div>
+
+    <div class="lesson-header">
+      <div class="lesson-tag">📜 上級 · レッスン14</div>
+      <h1 class="lesson-title">古典韓国語： <span class="grad-text">고전 한국어</span></h1>
+      <p class="lesson-meta">
+        <span>📜 漢字（한자）の語源</span>
+        <span>📊 上級</span>
+        <span>🔖 歴史と文学</span>
+        <span>🏛️ 韓国古典文献</span>
+      </p>
+    </div>
+
+    <div class="lesson-intro">
+      <p>古典韓国語（고전 한국어）とは、20世紀以前に使われた文語・書き言葉で、 <strong>漢字（한자、ハンジャ）</strong>の影響を強く受けています。古典的な形式を理解することで、現代韓国語語彙の深いルーツが明らかになります — 韓国語の語彙の <strong>60%以上が漢字語（한자어）起源</strong>です。古典韓国語を知ることで、歴史的なテキストや詩にアクセスでき、現代韓国語がなぜそのように機能するのかについてより深く理解できます。</p>
+    </div>
+
+    <div class="lesson-section animate-on-scroll" id="hanja-intro">
+      <h2><span class="section-num">1</span> 漢字（한자）入門</h2>
+      <p>漢字（한자）は、ハングル以前およびハングルと並行して韓国語を表記するのに使われた中国の文字です。現代韓国語は主にハングルを使いますが、漢字は新聞・学術テキスト・人名・法律文書にまだ登場します。さらに重要なのは、漢字の語根を理解することで何千もの韓国語の意味が解き明かされることです。</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>📖 漢字が現代韓国語に重要な理由</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%;table-layout:fixed">
+            <colgroup><col style="width:10%"><col style="width:15%"><col style="width:15%"><col style="width:60%"></colgroup>
+            <thead><tr><th>漢字</th><th>発音</th><th>意味</th><th>この漢字を使う韓国語</th></tr></thead>
+            <tbody>
+              <tr>
+                <td style="font-family:'Noto Serif KR',serif;font-size:1.5rem;text-align:center">水</td>
+                <td class="kor-cell">수 (su)</td>
+                <td>水</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">수영 (swimming) · 수도 (capital/waterway) · 홍수 (flood)</span><span class="ja-block" style="font-family:'Noto Sans KR'">수영 (水泳) · 수도 (首都/水道) · 홍수 (洪水)</span></td>
+              </tr>
+              <tr>
+                <td style="font-family:'Noto Serif KR',serif;font-size:1.5rem;text-align:center">學</td>
+                <td class="kor-cell">학 (hak)</td>
+                <td>学習</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">학교 (school) · 학생 (student) · 학습 (learning)</span><span class="ja-block" style="font-family:'Noto Sans KR'">학교 (学校) · 학생 (学生) · 학습 (学習)</span></td>
+              </tr>
+              <tr>
+                <td style="font-family:'Noto Serif KR',serif;font-size:1.5rem;text-align:center">愛</td>
+                <td class="kor-cell">애 (ae)</td>
+                <td>愛</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">애인 (lover) · 사랑 (love, native) · 애착 (attachment)</span><span class="ja-block" style="font-family:'Noto Sans KR'">애인 (愛人) · 사랑 (愛・固有語) · 애착 (愛着)</span></td>
+              </tr>
+              <tr>
+                <td style="font-family:'Noto Serif KR',serif;font-size:1.5rem;text-align:center">國</td>
+                <td class="kor-cell">국 (guk)</td>
+                <td>国 / 国家</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">한국 (Korea) · 외국 (foreign country) · 국가 (nation-state)</span><span class="ja-block" style="font-family:'Noto Sans KR'">한국 (韓国) · 외국 (外国) · 국가 (国家)</span></td>
+              </tr>
+              <tr>
+                <td style="font-family:'Noto Serif KR',serif;font-size:1.5rem;text-align:center">人</td>
+                <td class="kor-cell">인 (in)</td>
+                <td>人 / 人間</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">한국인 (Korean person) · 인간 (human being) · 성인 (adult)</span><span class="ja-block" style="font-family:'Noto Sans KR'">한국인 (韓国人) · 인간 (人間) · 성인 (成人)</span></td>
+              </tr>
+              <tr>
+                <td style="font-family:'Noto Serif KR',serif;font-size:1.5rem;text-align:center">時</td>
+                <td class="kor-cell">시 (si)</td>
+                <td>時間 / 時</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">시간 (time) · 시계 (clock) · 현시 (current time)</span><span class="ja-block" style="font-family:'Noto Sans KR'">시간 (時間) · 시계 (時計) · 현시 (現時)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">60%ルール</div>
+          <div class="tip-text">韓国語語彙の約60%が漢字語（한자어）のルーツを持ちます。だからこそ、中国語や日本語も知っている韓国語学習者はしばしば韓国語の語彙をはるかに習得しやすいと感じます — 基底のルーツが大きく重なるからです。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-section animate-on-scroll" id="sino-korean">
+      <h2><span class="section-num">2</span> 漢字語 vs 固有朝鮮語（한자어 vs 순우리말）</h2>
+      <p>韓国語語彙は三層に分かれています： <strong>純固有語（순우리말）</strong> （純粋な固有韓国語）、 <strong>漢字語（한자어）</strong> （漢字由来）、そして <strong>外来語（외래어）</strong> （外来語、主に英語から）。各層は異なるニュアンスを持ちます。</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>🔍 固有韓국語 vs 漢字語 対比</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%;table-layout:fixed">
+            <colgroup><col style="width:10%"><col style="width:20%"><col style="width:20%"><col style="width:50%"></colgroup>
+            <thead><tr><th>意味</th><th>固有韓国語（순우리말）</th><th>漢字語（한자어）</th><th>重要な違い</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>愛</td>
+                <td class="kor-cell">사랑 <button class="hangul-sound-btn" onclick="speakKorean('사랑')">🔊</button></td>
+                <td class="kor-cell">애정 (愛情) <button class="hangul-sound-btn" onclick="speakKorean('애정')">🔊</button></td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">사랑 = 感情的な愛；애정 = より深い、文学的な愛着</td>
+              </tr>
+              <tr>
+                <td>空</td>
+                <td class="kor-cell">하늘 <button class="hangul-sound-btn" onclick="speakKorean('하늘')">🔊</button></td>
+                <td class="kor-cell">천 (天) <button class="hangul-sound-btn" onclick="speakKorean('천')">🔊</button></td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">하늘 = 日常の空；천は複合語に使用：천국（天国）</td>
+              </tr>
+              <tr>
+                <td>火</td>
+                <td class="kor-cell">불 <button class="hangul-sound-btn" onclick="speakKorean('불')">🔊</button></td>
+                <td class="kor-cell">화 (火) <button class="hangul-sound-btn" onclick="speakKorean('화')">🔊</button></td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">불 = 火；화は複合語に：화재（火災）、화요일（火曜日）</td>
+              </tr>
+              <tr>
+                <td>水</td>
+                <td class="kor-cell">물 <button class="hangul-sound-btn" onclick="speakKorean('물')">🔊</button></td>
+                <td class="kor-cell">수 (水) <button class="hangul-sound-btn" onclick="speakKorean('수')">🔊</button></td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">물 = 水；수は複合語に：수도（水道／首都）、수요일（水曜日）</td>
+              </tr>
+              <tr>
+                <td>山</td>
+                <td class="kor-cell">뫼 (archaic) / 산 <button class="hangul-sound-btn" onclick="speakKorean('산')">🔊</button></td>
+                <td class="kor-cell">산 (山) <button class="hangul-sound-btn" onclick="speakKorean('산')">🔊</button></td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">この場合、漢字語の산が時とともに固有語の뫼に取って代わりました</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-section animate-on-scroll" id="classical-grammar">
+      <h2><span class="section-num">3</span> 古典文法パターン（고문 문법）</h2>
+      <p>古典韓국語のテキストは現代韓国語と大きく異なる文法パターンを使います。歴史的文書・古典文学・正式な碑文でこれらに出会うことがあります。理解することで韓国の文学遺産にアクセスできます。</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>📜 主要な古典語尾とその現代語相当形</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%;table-layout:fixed">
+            <colgroup><col style="width:20%"><col style="width:17%"><col style="width:23%"><col style="width:40%"></colgroup>
+            <thead><tr><th>古典形</th><th>現代韓国語</th><th>意味</th><th>例文</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="kor-cell">-(이)라 / -(이)로다</td>
+                <td>이다 / -이에요</td>
+                <td>「〜である」（宣言的）</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">나라이라 → 나라이다 (It is a country)</span><span class="ja-block" style="font-family:'Noto Sans KR'">나라이라 → 나라이다 (国だ)</span></td>
+              </tr>
+              <tr>
+                <td class="kor-cell">-노라</td>
+                <td>-아/어요</td>
+                <td>宣言的（〜する）</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">가노라 → 가요 (I go / I am going)</span><span class="ja-block" style="font-family:'Noto Sans KR'">가노라 → 가요 (行く / 行きます)</span></td>
+              </tr>
+              <tr>
+                <td class="kor-cell">-도다</td>
+                <td>-군요 / -네요</td>
+                <td>感嘆 / 詩的な宣言</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">아름답도다 → 아름답군요 (How beautiful!)</span><span class="ja-block" style="font-family:'Noto Sans KR'">아름답도다 → 아름답군요 (なんと美しい！)</span></td>
+              </tr>
+              <tr>
+                <td class="kor-cell">-리라</td>
+                <td>-(으)ㄹ 거예요</td>
+                <td>〜するだろう / 意志（未来）</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">가리라 → 갈 거예요 (I shall go)</span><span class="ja-block" style="font-family:'Noto Sans KR'">가리라 → 갈 거예요 (行くでしょう)</span></td>
+              </tr>
+              <tr>
+                <td class="kor-cell">이시-</td>
+                <td>있으시-</td>
+                <td>尊敬語「いる / ある」</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">이시매 → 계시기 때문에 (Because [he] exists / is)</span><span class="ja-block" style="font-family:'Noto Sans KR'">이시매 → 계시기 때문에 (いらっしゃるから)</span></td>
+              </tr>
+              <tr>
+                <td class="kor-cell">-거늘</td>
+                <td>-는데 / -지만</td>
+                <td>譲歩 / 対比</td>
+                <td><span class="no-ja" style="font-family:'Noto Sans KR'">가거늘 → 가는데 (While going / although going)</span><span class="ja-block" style="font-family:'Noto Sans KR'">가거늘 → 가는데 (行くところ / 行くけれど)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div class="tip-content">
+          <div class="tip-label">現代生活における古典テキスト</div>
+          <div class="tip-text">古典韓国語の語尾は現代文学・歌詞・公式スピーチに詩的または格調高い調子を伝えるため今も現れます。K-ドラマの時代劇（사극）では古典語を使います。人気の歌でさえ時に <strong>-리라</strong> や <strong>-도다</strong> などの古風な형式を芸術的効果のために使います。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-section animate-on-scroll" id="classical-particles">
+      <h2><span class="section-num">4</span> 古典助詞（고문 조사）</h2>
+      <p>多くの古典韓国語の助詞は現代語の相当形と異なります。歴史的テキスト・文学・碑文を読む上でこれらを認識することが不可欠です。</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>🔗 古典助詞 vs 現代助詞 比較</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%;table-layout:fixed">
+            <colgroup><col style="width:28%"><col style="width:28%"><col style="width:44%"></colgroup>
+            <thead><tr><th>古典形</th><th>現代語相当</th><th>機能</th></tr></thead>
+            <tbody>
+              <tr><td class="kor-cell">이/가 (same)</td><td class="kor-cell">이/가</td><td>主格助詞（変化なし）</td></tr>
+              <tr><td class="kor-cell">ㄹ/을 (same)</td><td class="kor-cell">을/를</td><td>目的格助詞（同じ）</td></tr>
+              <tr><td class="kor-cell">의 (same, written 에)</td><td class="kor-cell">의</td><td>所有格助詞（同じ文字）</td></tr>
+              <tr><td class="kor-cell">이시고 / 시고</td><td class="kor-cell">이고 (honorific form)</td><td>列挙 / 〜と（敬語付き）</td></tr>
+              <tr><td class="kor-cell">게셔 / 에서</td><td class="kor-cell">에서</td><td>動作の場所（〜から）</td></tr>
+              <tr><td class="kor-cell">ᄋᆞ로 / 으로</td><td class="kor-cell">으로 / 로</td><td>手段 / 方向</td></tr>
+              <tr><td class="kor-cell">더러</td><td class="kor-cell">에게 / 한테</td><td>（人）に — 今も詩的に使われることがある</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-section animate-on-scroll" id="historical-vocab">
+      <h2><span class="section-num">5</span> 重要な歴史・文学語彙（역사 어휘）</h2>
+      <p>これらの言葉は歴史ドラマ（사극）・古典文学・韓国文化遺産のテキストに頻繁に登場します。知ることで韓국の歴史と文化の理解が深まります。</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>🏯 朝鮮王朝と歴史的な韓国語用語</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%;table-layout:fixed">
+            <colgroup><col style="width:20%"><col style="width:12%"><col style="width:28%"><col style="width:40%"></colgroup>
+            <thead><tr><th>韓국語</th><th>漢字</th><th>日本語</th><th>使う場面</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="kor-cell">임금 / 폐하 <button class="hangul-sound-btn" onclick="speakKorean('임금')">🔊</button></td>
+                <td style="font-family:'Noto Serif KR',serif">王 / 陛下</td>
+                <td>王 / 陛下</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">임금 = より古い固有語；폐하 = 中国語由来の公式呼称</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">신하 <button class="hangul-sound-btn" onclick="speakKorean('신하')">🔊</button></td>
+                <td style="font-family:'Noto Serif KR',serif">臣下</td>
+                <td>臣下 / 官僚 / 家臣</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">王に仕える官僚</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">백성 <button class="hangul-sound-btn" onclick="speakKorean('백성')">🔊</button></td>
+                <td style="font-family:'Noto Serif KR',serif">百姓</td>
+                <td>民 / 庶民</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">歴史的テキストで使用；現代語相当：국민（国民）</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">조선 <button class="hangul-sound-btn" onclick="speakKorean('조선')">🔊</button></td>
+                <td style="font-family:'Noto Serif KR',serif">朝鮮</td>
+                <td>朝鮮（1392〜1897年の朝鮮王朝）</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">1443年にハングルを創制した王朝</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">양반 <button class="hangul-sound-btn" onclick="speakKorean('양반')">🔊</button></td>
+                <td style="font-family:'Noto Serif KR',serif">兩班</td>
+                <td>貴族階級 / 両班</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">朝鮮王朝の支配的な学者・官僚階級</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">훈민정음 <button class="hangul-sound-btn" onclick="speakKorean('훈민정음')">🔊</button></td>
+                <td style="font-family:'Noto Serif KR',serif">訓民正音</td>
+                <td>訓民正音（民を教えるための正しい音）</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">1443年に世宗大王が창制したハングルの元の名称</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">세종대왕 <button class="hangul-sound-btn" onclick="speakKorean('세종대왕')">🔊</button></td>
+                <td style="font-family:'Noto Serif KR',serif">世宗大王</td>
+                <td>世宗大王</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">ハングルの発明者（1397〜1450年）；韓国最高の王として崇められる</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-section animate-on-scroll" id="classical-texts">
+      <h2><span class="section-num">6</span> 主要な古典韓国語テキスト（고전 문학）</h2>
+      <p>韓国には豊かな古典文学の伝統があります。これらの作品は韓国の文学文化の基盤であり、今日の韓国の学校でも学ばれています。</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>📚 有名な古典韓国語の作品</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%;table-layout:fixed">
+            <colgroup><col style="width:22%"><col style="width:18%"><col style="width:20%"><col style="width:40%"></colgroup>
+            <thead><tr><th>役職名</th><th>時代</th><th>形式</th><th>重要性</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="kor-cell">훈민정음 해례본 <button class="hangul-sound-btn" onclick="speakKorean('훈민정음')">🔊</button></td>
+                <td>1446年（朝鮮）</td>
+                <td>学術文書</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">ハングル創制の元の説明書；ユネスコ世界記憶遺産</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">청산별곡 <button class="hangul-sound-btn" onclick="speakKorean('청산별곡')">🔊</button></td>
+                <td>高麗時代（918〜1392年）</td>
+                <td>高麗歌謡（고려 가요）— 民謡</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">憧れと自然の美についての有名な哀歌；古風な韓国語を含む</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">용비어천가 <button class="hangul-sound-btn" onclick="speakKorean('용비어천가')">🔊</button></td>
+                <td>1445年（朝鮮）</td>
+                <td>ハングルによる叙事詩</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">ハングルで書かれた最初の作品の一つ；朝鮮王朝の建国を称える</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">홍길동전 <button class="hangul-sound-btn" onclick="speakKorean('홍길동전')">🔊</button></td>
+                <td>17世紀初頭（朝鮮）</td>
+                <td>小説（소설）</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">韓国초最初のハングルで書かれた小説；社会的反逆者が不正義と戦う物語</td>
+              </tr>
+              <tr>
+                <td class="kor-cell">춘향전 <button class="hangul-sound-btn" onclick="speakKorean('춘향전')">🔊</button></td>
+                <td>17〜18世紀（朝鮮）</td>
+                <td>パンソリ小説</td>
+                <td style="font-size:0.85rem;color:var(--text-muted)">韓国で最も愛される古典的な恋愛物語；今も映画やK-ドラマに翻案される</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-section animate-on-scroll" id="classic-phrases">
+      <h2><span class="section-num">7</span> 現代でも使われる古典表現（현대에 남은 고문 표현）</h2>
+      <p>一部の古典韓国語のフレーズや表現が現代韓国語に生き残り、公式スピーチ・詩・文학で使われています。これらを認識することで韓국語が豊かになりネイティブスピーカーに感銘を与えます。</p>
+
+      <div class="example-box">
+        <div class="example-header"><span>🌸 現代韓국語に残る古典표현</span></div>
+        <div class="example-body" style="display:flex;flex-direction:column;gap:16px">
+          <div class="korean-example">
+            <div class="kor-line">나라 사랑하는 마음이 가득하도다. <button class="hangul-sound-btn" onclick="speakKorean('나라 사랑하는 마음이 가득하도다.')">🔊</button></div>
+            <div class="rom-line">Nara saranghaneun maeum-i gadeukhadoda.</div>
+            <div class="eng-line no-ja">How full my heart is with love for this nation! (poetic/archaic -도다 ending)</div>
+            <div class="eng-line ja-block">この国への愛で心がいっぱいだ！（詩的・古風な-도다語尾）</div>
+          </div>
+          <div class="korean-example">
+            <div class="kor-line">사람이 곧 하늘이리라. <button class="hangul-sound-btn" onclick="speakKorean('사람이 곧 하늘이리라.')">🔊</button></div>
+            <div class="rom-line">Saram-i got haneul-irira.</div>
+            <div class="eng-line no-ja">Humanity is heaven itself. (Donghak movement slogan — -리라 future/assertion)</div>
+            <div class="eng-line ja-block">人こそ天なり。（東学運動のスローガン — -리라 미来/主張）</div>
+          </div>
+          <div class="korean-example">
+            <div class="kor-line">하늘을 우러러 한 점 부끄럼이 없기를... <button class="hangul-sound-btn" onclick="speakKorean('하늘을 우러러 한 점 부끄럼이 없기를')">🔊</button></div>
+            <div class="rom-line">Haneureul ureollo han jeom bukkeureum-i eopgireul...</div>
+            <div class="eng-line no-ja">Looking up to the sky with not even a speck of shame... (Yun Dong-ju, 서시, 1941)</div>
+            <div class="eng-line ja-block">空を仰いで、一点の恥じらいもなく…（尹東柱「序詩」1941年）</div>
+          </div>
+          <div class="korean-example">
+            <div class="kor-line">이 몸이 죽고 죽어 일백번 고쳐 죽어... <button class="hangul-sound-btn" onclick="speakKorean('이 몸이 죽고 죽어 일백번 고쳐 죽어')">🔊</button></div>
+            <div class="rom-line">I mom-i jukgo jukeo ilbaekbeon gochyeo jukeo...</div>
+            <div class="eng-line no-ja">Though this body die and die again, a hundred times over... (Jeong Mong-ju's loyalty poem, 1392)</div>
+            <div class="eng-line ja-block">この身が死に死に、百度死に変わろうとも…（鄭夢周の忠節詩、1392年）</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box">
+        <div class="example-header"><span>📜 古典ことわざ（고전 속담）</span></div>
+        <div class="example-body">
+          <table class="vocab-table" style="width:100%;table-layout:fixed">
+            <colgroup><col style="width:22%"><col style="width:30%"><col style="width:48%"></colgroup>
+            <thead><tr><th>古典ことわざ</th><th>現代語読み</th><th>意味</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="kor-cell" style="font-family:'Noto Serif KR',serif">學而時習之 不亦說乎</td>
+                <td><span style="font-family:'Noto Sans KR'">배우고 때때로 익히면 또한 기쁘지 아니한가</span></td>
+                <td>学んで時に習えば、また悦ばしからずや（孔子 — 論語）</td>
+              </tr>
+              <tr>
+                <td class="kor-cell" style="font-family:'Noto Serif KR',serif">三人行 必有我師焉</td>
+                <td><span style="font-family:'Noto Sans KR'">세 사람이 길을 가면 반드시 나의 스승이 있다</span></td>
+                <td>三人行けば必ず我が師あり（孔子）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-32">
+      <button class="btn btn-primary btn-lg" data-lesson-complete="classical-korean">
+        ✓ 古典韓国語を完了にする
+      </button>
+    </div>
+
+    <div class="lesson-nav-footer">
+      <a href="business-korean.html" class="lesson-nav-btn">
+        <span style="font-size:1.2rem">←</span>
+        <div>
+          <span class="lesson-nav-label">前のレッスン</span>
+          <span class="lesson-nav-title">ビジネス韓国語</span>
+        </div>
+      </a>
+      <a href="dialogues.html" class="lesson-nav-btn next">
+        <span style="font-size:1.2rem">→</span>
+        <div>
+          <span class="lesson-nav-label">次のレッスン</span>
+          <span class="lesson-nav-title">韓国語の会話</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <div class="ad-zone ad-zone--bottom">
+    <ins class="adsbygoogle" style="display:block"
+         data-ad-client="ca-pub-6791974364232767"
+         data-ad-slot="9704719339"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../../ja/index.html" class="logo">
+          <img src="/assets/images/android-chrome-192x192.png" class="logo-mark" alt="">
+          <div class="logo-text">コリアンスクール <span>한국어 학교</span></div>
+        </a>
+        <p>A free Korean language learning platform — combining language study with K-culture, travel guides, and real-world practice.</p>
+      </div>
+      <div>
+        <div class="footer-heading">学ぶ</div>
+        <ul class="footer-links">
+          <li><a href="hangul.html">ハングルアルファベット</a></li>
+          <li><a href="grammar.html">文法</a></li>
+          <li><a href="vocabulary.html">語彙</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">探索する</div>
+        <ul class="footer-links">
+          <li><a href="../../culture/ja/index.html">K-カルチャー</a></li>
+          <li><a href="../../travel/ja/index.html">旅行ガイド</a></li>
+          <li><a href="../../news/ja/index.html">韓国ニュース</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">会社</div>
+        <ul class="footer-links">
+          <li><a href="../../ja/about.html">私たちについて</a></li>
+          <li><a href="../../ja/contact.html">お問い合わせ</a></li>
+          <li><a href="../../ja/privacy.html">プライバシーポリシー</a></li>
+          <li><a href="../../ja/terms.html">利用規約</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 한국어 학교. 世界中の韓国語学習者のために ❤️</span>
+      <span>🇰🇷 학습을 즐기세요！（学習を楽しんでください！）</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../js/lang-core.js"></script>
+<script src="../../js/app.js"></script>
+<script defer src="../../js/ads.js"></script>
+</body>
+</html>

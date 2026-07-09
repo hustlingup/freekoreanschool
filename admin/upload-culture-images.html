@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture Images Upload — Korean School Admin</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #07071F; color: #c8d0e8; font-size: 13px; line-height: 1.5; }
+
+    header { background: #0d0d30; border-bottom: 1px solid #1a1a50; padding: 14px 24px; display: flex; align-items: baseline; gap: 14px; }
+    header h1 { font-size: 17px; font-weight: 700; color: #e8e8ff; }
+    header .sub { font-size: 12px; color: #4a5568; }
+
+    .container { max-width: 1600px; margin: 0 auto; padding: 18px 24px; }
+
+    .panel { background: #0d0d30; border: 1px solid #1a1a50; border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; }
+    .panel-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: #4a5568; margin-bottom: 10px; }
+    .config-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .config-row label { font-size: 12px; color: #9ca3af; white-space: nowrap; }
+    input[type="password"], input[type="text"] {
+      background: #1a1a3e; border: 1px solid #2a2a5e; border-radius: 5px;
+      color: #e8e8ff; padding: 5px 10px; font-size: 12px; font-family: monospace;
+      width: 340px; outline: none;
+    }
+    input[type="password"]:focus, input[type="text"]:focus { border-color: #4a4a9e; }
+
+    button { padding: 5px 13px; border-radius: 5px; font-size: 12px; font-weight: 600; cursor: pointer; border: 1px solid transparent; transition: all .15s; }
+    .btn-primary { background: #E8003D; color: #fff; border-color: #E8003D; font-size: 13px; padding: 7px 18px; }
+    .btn-primary:hover:not(:disabled) { background: #c0002f; }
+    .btn-primary:disabled { background: #4a0018; color: #6b7280; cursor: not-allowed; }
+    .btn-ghost { background: #1a1a3e; color: #c8d0e8; border-color: #2a2a5e; }
+    .btn-ghost:hover { background: #22224e; }
+    .btn-tab { background: transparent; color: #6b7280; border-color: transparent; padding: 5px 14px; border-radius: 999px; }
+    .btn-tab.active { background: rgba(232,0,61,.15); color: #f87171; border-color: rgba(232,0,61,.3); }
+    .btn-tab:hover:not(.active) { background: #1a1a3e; color: #c8d0e8; }
+
+    .filter-bar { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+    .filter-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: #4a5568; margin-right: 4px; }
+    .section-filters { display: flex; gap: 6px; flex-wrap: wrap; margin-left: 16px; }
+    .btn-sec { font-size: 11px; background: transparent; color: #4a5568; border: 1px solid #1a1a3e; border-radius: 999px; padding: 3px 10px; }
+    .btn-sec.active { background: rgba(59,130,246,.15); color: #60a5fa; border-color: rgba(59,130,246,.3); }
+    .btn-sec:hover:not(.active) { background: #1a1a3e; color: #c8d0e8; }
+
+    .actions-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+    .summary { margin-left: auto; font-size: 12px; color: #4a5568; }
+
+    .progress-wrap { background: #0d0d30; border: 1px solid #1a1a50; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; display: none; }
+    .progress-wrap.visible { display: block; }
+    .progress-track { background: #1a1a3e; border-radius: 999px; height: 7px; overflow: hidden; margin-bottom: 5px; }
+    .progress-fill { background: #E8003D; height: 100%; border-radius: 999px; width: 0%; transition: width .25s; }
+    .progress-label { font-size: 11px; color: #6b7280; }
+
+    .table-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid #1a1a50; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    thead { background: #0d0d30; position: sticky; top: 0; z-index: 10; }
+    th { padding: 9px 11px; text-align: left; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: #4a5568; border-bottom: 1px solid #1a1a50; white-space: nowrap; }
+    td { padding: 7px 11px; border-bottom: 1px solid #0f0f2e; vertical-align: middle; }
+    tr.data-row { display: none; }
+    tr.data-row.visible { display: table-row; }
+    tr.data-row.visible:hover td { background: rgba(255,255,255,0.015); }
+
+    code { font-family: 'Consolas', 'Courier New', monospace; font-size: 10px; background: #111130; padding: 1px 4px; border-radius: 3px; color: #a5b4fc; word-break: break-all; }
+    .td-num   { width: 36px; color: #2a2a5e; font-size: 11px; }
+    .td-kr    { min-width: 80px; font-family: 'Malgun Gothic', serif; font-size: 13px; color: #e8e8ff; }
+    .td-en    { min-width: 120px; color: #c8d0e8; }
+    .td-sect  { min-width: 100px; }
+    .td-path  { min-width: 200px; }
+    .td-desc  { min-width: 260px; max-width: 340px; }
+    .td-cur   { width: 64px; }
+    .td-file  { min-width: 90px; }
+    .td-prev  { width: 64px; }
+    .td-status { min-width: 120px; }
+    .desc-text { font-size: 11px; color: #6b7280; line-height: 1.5; }
+
+    .badge { font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 3px; white-space: nowrap; display: inline-block; }
+    .b-missing   { background: #111130; color: #2a3050; }
+    .b-has       { background: rgba(34,197,94,.13); color: #4ade80; border: 1px solid rgba(34,197,94,.2); }
+    .b-ready     { background: rgba(59,130,246,.18); color: #60a5fa; border: 1px solid rgba(59,130,246,.28); }
+    .b-uploading { background: rgba(245,158,11,.18); color: #fbbf24; border: 1px solid rgba(245,158,11,.28); }
+    .b-success   { background: rgba(34,197,94,.18); color: #4ade80; border: 1px solid rgba(34,197,94,.28); }
+    .b-error     { background: rgba(239,68,68,.18); color: #f87171; border: 1px solid rgba(239,68,68,.28); }
+
+    .sect-badge { font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 3px; white-space: nowrap; background: rgba(168,85,247,.15); color: #c084fc; border: 1px solid rgba(168,85,247,.25); }
+    .sect-badge.s-kfood  { background: rgba(34,197,94,.12); color: #4ade80; border-color: rgba(34,197,94,.2); }
+    .sect-badge.s-kbbq   { background: rgba(239,68,68,.12); color: #f87171; border-color: rgba(239,68,68,.2); }
+    .sect-badge.s-kpop   { background: rgba(232,0,61,.12); color: #fb7185; border-color: rgba(232,0,61,.2); }
+    .sect-badge.s-index  { background: rgba(245,158,11,.12); color: #fbbf24; border-color: rgba(245,158,11,.2); }
+
+    input[type="file"] { font-size: 11px; color: #9ca3af; max-width: 130px; }
+    input[type="file"]::file-selector-button {
+      padding: 3px 7px; background: #1a1a3e; border: 1px solid #2a2a5e;
+      border-radius: 3px; color: #c8d0e8; font-size: 10px; cursor: pointer; margin-right: 5px;
+    }
+    input[type="file"]::file-selector-button:hover { background: #22224e; }
+
+    .prev-img { display: none; height: 42px; width: 64px; border-radius: 4px; border: 1px solid #2a2a5e; object-fit: cover; }
+    .cur-img  { height: 42px; width: 64px; border-radius: 4px; border: 1px solid #2a2a5e; object-fit: cover; display: block; }
+    .cur-none { width: 64px; height: 42px; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #1a1a4e; }
+    input[type="checkbox"] { accent-color: #E8003D; }
+
+    .hint-box { margin-top: 14px; padding: 12px 16px; background: #0d0d30; border: 1px solid #1a1a50; border-radius: 8px; font-size: 11px; color: #4a5568; line-height: 1.9; }
+    .hint-box strong { color: #9ca3af; }
+    .empty-row td { text-align: center; padding: 32px; color: #4a5568; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Korean School — Culture Images Upload Admin</h1>
+  <span class="sub" id="header-sub">Upload per-card images for kbbq · kfood · kpop · index pages &nbsp;·&nbsp; 94 image slots</span>
+</header>
+
+<div class="container">
+
+  <div class="panel">
+    <div class="panel-title">Supabase Configuration</div>
+    <div class="config-row">
+      <label>Service Role Key</label>
+      <input type="password" id="service-key" placeholder="eyJhbGci… (Settings → API → service_role)" autocomplete="off">
+      <button class="btn-ghost" onclick="saveKey()">Save to browser</button>
+      <button class="btn-ghost" onclick="toggleKeyVisibility()">Show</button>
+      <span id="key-status" style="font-size:11px;color:#6b7280;"></span>
+    </div>
+    <div style="margin-top:8px;font-size:11px;color:#2a3050;">
+      URL: <code>https://juhkgpgrbueaijgfvwoa.supabase.co</code>&nbsp;&nbsp;
+      Bucket: <code>site-images</code>&nbsp;&nbsp;
+      Resize: <code>640 × 480 px WebP q0.88</code>&nbsp;&nbsp;
+      <button class="btn-ghost" style="font-size:10px;padding:2px 8px;" onclick="checkAllCurrentImages()">Check current images ↻</button>
+    </div>
+  </div>
+
+  <div class="filter-bar" id="filter-bar">
+    <span class="filter-label">Page</span>
+    <button class="btn-tab active" data-page="all" onclick="filterPage('all',this)">All (94)</button>
+    <button class="btn-tab" data-page="kbbq" onclick="filterPage('kbbq',this)">🥩 kbbq.html (40)</button>
+    <button class="btn-tab" data-page="kfood" onclick="filterPage('kfood',this)">🍜 kfood.html (31)</button>
+    <button class="btn-tab" data-page="kpop" onclick="filterPage('kpop',this)">🎤 kpop.html (16)</button>
+    <button class="btn-tab" data-page="index" onclick="filterPage('index',this)">🏠 index.html (7)</button>
+    <div class="section-filters" id="section-filters"></div>
+  </div>
+
+  <div class="actions-bar">
+    <button class="btn-primary" id="upload-btn" onclick="uploadAll()">Upload All (with files)</button>
+    <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:#9ca3af;cursor:pointer;">
+      <input type="checkbox" id="reupload"> Re-upload already uploaded
+    </label>
+    <span class="summary" id="summary">0 / 94 files selected</span>
+  </div>
+
+  <div class="progress-wrap" id="progress-wrap">
+    <div class="progress-track"><div class="progress-fill" id="pfill"></div></div>
+    <div class="progress-label" id="plabel">0 / 0</div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="td-num">#</th>
+          <th class="td-kr">한국어</th>
+          <th class="td-en">English</th>
+          <th class="td-sect">Section</th>
+          <th class="td-path">Storage Path</th>
+          <th class="td-desc">Image Description</th>
+          <th class="td-cur">Current</th>
+          <th class="td-file">Choose File</th>
+          <th class="td-prev">Preview</th>
+          <th class="td-status">Status</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="hint-box">
+    <strong>How to use:</strong>&nbsp;
+    1. Enter your <strong>service role key</strong> and click <em>Save to browser</em>.&nbsp;
+    2. Click <strong>Check current images ↻</strong> to see which slots are already filled.&nbsp;
+    3. Use the <strong>Page / Section filters</strong> to focus on a specific area.&nbsp;
+    4. For each row, read the <em>Image Description</em> column to know what photo to use, then click <em>Choose File</em>.&nbsp;
+    5. Click <em>Upload All (with files)</em> — each image is resized to <strong>640 × 480 px WebP</strong> and uploaded to Supabase.&nbsp;
+    The HTML pages already reference these exact paths, so images appear immediately after upload.
+    <br><br>
+    <strong>Chef images</strong> (chef-0 to chef-10) are managed by the separate
+    <a href="upload-images.html" style="color:#60a5fa;">upload-images.html</a> tool.
+  </div>
+
+</div>
+
+<script>
+const SUPABASE_URL  = 'https://juhkgpgrbueaijgfvwoa.supabase.co';
+const BUCKET        = 'site-images';
+const THUMB_W       = 640;
+const THUMB_H       = 480;
+const THUMB_QUALITY = 0.88;
+
+// ── Manifest (94 slots) ────────────────────────────────────────────────────────
+const MANIFEST = [
+  // ── kbbq.html · Beef Cuts (13) ──
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-0.webp',   kr:'살치살',    en:'Chuck Flap',           desc:'Thinly sliced 살치살 strips fanned on a wooden board — pale pink with delicate white marbling, almost translucent thin cuts' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-1.webp',   kr:'안창살',    en:'Hanger Steak',         desc:'Close-up of dark-red 안창살 with visible center sinew line, thick cuts showing deep beefy color and coarse grain' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-2.webp',   kr:'꽃등심',    en:'Ribeye',               desc:'Thick-cut 꽃등심 with heavy snowflake marbling — white fat webs running through vivid red meat, sizzling on grill or raw on slate' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-3.webp',   kr:'갈비살',    en:'Short Rib Meat',       desc:'Raw 갈비살 — wide flat sheets of beef with visible rib-bone fat cap, rich red color' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-4.webp',   kr:'채끝살',    en:'Sirloin',              desc:'Lean 채끝살 sirloin with a clean fat cap edge — fine grain, bright red, neatly sliced' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-5.webp',   kr:'차돌박이',  en:'Brisket (Thin-Sliced)',desc:'Paper-thin 차돌박이 slices showing alternating white fat and red beef layers, slightly translucent, rolled or fanned' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-6.webp',   kr:'업진살',    en:'Navel Cut',            desc:'Flat wide 업진살 with visible muscle striations and thin fat layer along one edge, medium-red color' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-7.webp',   kr:'치마살',    en:'Skirt Steak',          desc:'Loose-grained 치마살 with open muscle fibers, deep reddish-brown, wide and flat' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-8.webp',   kr:'토시살',    en:'Outside Skirt',        desc:'Small tubular 토시살 cuts — dark red, tender-looking, often next to offal on Korean BBQ menu' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-9.webp',   kr:'부채살',    en:'Flat Iron',            desc:'Neat 부채살 flat-iron steaks showing a central sinew line with well-marbled red meat on both sides' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-10.webp',  kr:'우삼겹',    en:'Beef Belly',           desc:'Rolled or stacked 우삼겹 showing distinct fat-and-meat layer pattern, similar to pork belly but darker' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-11.webp',  kr:'양념소갈비',en:'Marinated Beef Ribs',  desc:'Glistening 양념소갈비 on the grill — dark reddish-brown marinade caramelizing on short rib segments with visible bone' },
+  { page:'kbbq', section:'🥩 소고기 Beef', path:'food/beef/beef-12.webp',  kr:'한우',      en:'Hanwoo (1++)',   desc:'Premium 한우 beef platter — elegantly marbled slices on dark stone or leaf wrap, restaurant-style presentation' },
+  // ── kbbq.html · Pork Cuts (11) ──
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-0.webp',  kr:'삼겹살',  en:'Pork Belly',           desc:'Thick-cut 삼겹살 strips on a hot grill — fat rendering, slight char marks, 3-layer fat/meat stripe clearly visible' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-1.webp',  kr:'목살',    en:'Pork Neck',            desc:'Thick 목살 slices with interspersed fat pockets — slightly darker pink than belly, rustic and hearty looking' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-2.webp',  kr:'항정살',  en:'Jowl / Cheek',         desc:'Small fatty 항정살 pieces — highly marbled, almost nugget-shaped, golden-white fat throughout' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-3.webp',  kr:'가브리살', en:'Collar Butt',          desc:'Pale pink 가브리살 with dense marbling, wide flat cuts, less fat on edges than belly' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-4.webp',  kr:'갈매기살', en:'Pork Diaphragm',       desc:'Dark-pink thin 갈매기살 — lean with a slightly chewy texture, often compared to hanger steak' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-5.webp',  kr:'오겹살',  en:'5-Layer Belly',        desc:'Cross-section of 오겹살 showing 5 alternating fat/meat bands — Jeju black pig style, robust layering' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-6.webp',  kr:'등갈비',  en:'Back Ribs',            desc:'Meaty 등갈비 rack with generous meat between bones, natural pork color, shown raw on block' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-7.webp',  kr:'양념돼지갈비',en:'Marinated Pork Ribs',desc:'Charring 양념돼지갈비 on grill — glossy red-brown marinade caramelizing over rack sections' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-8.webp',  kr:'껍데기',  en:'Pork Skin',            desc:'Grilled 껍데기 skin pieces with crispy bubbled surface — golden-brown blistered texture, slightly translucent' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-9.webp',  kr:'흑돼지',  en:'Jeju Black Pig',       desc:'Distinctive dark-skinned 흑돼지 belly or neck — darker meat color than regular pork, often labeled Jeju' },
+  { page:'kbbq', section:'🐷 돼지고기 Pork', path:'food/pork/pork-10.webp', kr:'막창',    en:'Pork Intestine',       desc:'Grilled 막창 coils with caramelized surface — chewy tube-like shape with light char marks, dipping sauce alongside' },
+  // ── kbbq.html · Chicken (6) ──
+  { page:'kbbq', section:'🍗 닭고기 Chicken', path:'food/chicken/chicken-0.webp', kr:'숯불닭갈비', en:'Charcoal Chicken Ribs', desc:'닭갈비 pieces on charcoal grill — spicy red sauce coating, smokiness visible, bone-in thigh or rib sections' },
+  { page:'kbbq', section:'🍗 닭고기 Chicken', path:'food/chicken/chicken-1.webp', kr:'닭목살',   en:'Chicken Neck Meat',    desc:'Small dense 닭목살 pieces on grill — dark meat appearance, slightly irregular shapes' },
+  { page:'kbbq', section:'🍗 닭고기 Chicken', path:'food/chicken/chicken-2.webp', kr:'닭특수부위',en:'Specialty Cuts',       desc:'Assorted specialty cuts: hearts, gizzards, and oysters arranged on grill or board' },
+  { page:'kbbq', section:'🍗 닭고기 Chicken', path:'food/chicken/chicken-3.webp', kr:'닭날개',   en:'Chicken Wings',        desc:'Crispy grilled 닭날개 — golden-brown skin with char lines, compact wing shape' },
+  { page:'kbbq', section:'🍗 닭고기 Chicken', path:'food/chicken/chicken-4.webp', kr:'닭발',     en:'Chicken Feet',         desc:'Spicy red 닭발 on plate — recognizable claw shape, glistening with sauce, often served as snack with beer' },
+  { page:'kbbq', section:'🍗 닭고기 Chicken', path:'food/chicken/chicken-5.webp', kr:'닭껍질',   en:'Chicken Skin',         desc:'Grilled 닭껍질 with blistered crispy surface — thin golden sheets on grill' },
+  // ── kbbq.html · Duck (5) ──
+  { page:'kbbq', section:'🦆 오리고기 Duck', path:'food/duck/duck-0.webp', kr:'오리로스',   en:'Duck Loin',        desc:'Sliced 오리로스 duck breast — deep mahogany red with thin white fat cap, fan-arranged on board' },
+  { page:'kbbq', section:'🦆 오리고기 Duck', path:'food/duck/duck-1.webp', kr:'오리주물럭', en:'Marinated Duck',   desc:'Dark soy-garlic 오리주물럭 marinade coating on duck pieces — caramelized brown, grill-ready or just off grill' },
+  { page:'kbbq', section:'🦆 오리고기 Duck', path:'food/duck/duck-2.webp', kr:'훈제오리',   en:'Smoked Duck',      desc:'Sliced 훈제오리 with deep brown smoked skin and pink interior — often served cold on platter with green onion' },
+  { page:'kbbq', section:'🦆 오리고기 Duck', path:'food/duck/duck-3.webp', kr:'오리한마리', en:'Whole Duck BBQ',   desc:'A whole or half duck on the grill, skin side down, sizzling with fat rendering' },
+  { page:'kbbq', section:'🦆 오리고기 Duck', path:'food/duck/duck-4.webp', kr:'오리불고기', en:'Duck Bulgogi',     desc:'Thin 오리불고기 strips in sweet-soy sauce in a pan or on grill, similar to beef bulgogi but darker meat' },
+  // ── kbbq.html · Offal (5) ──
+  { page:'kbbq', section:'💜 내장 Offal', path:'food/offal/offal-0.webp', kr:'곱창', en:'Small Intestine (Beef)', desc:'Grilled 곱창 coils in a cast-iron pan — caramelized exterior, tender tubes with visible fat inside' },
+  { page:'kbbq', section:'💜 내장 Offal', path:'food/offal/offal-1.webp', kr:'대창', en:'Large Intestine',        desc:'Thick 대창 sections on grill — wider than 곱창, fattier exterior, charred and glistening' },
+  { page:'kbbq', section:'💜 내장 Offal', path:'food/offal/offal-2.webp', kr:'양',   en:'Beef Tripe (Rumen)',     desc:'Clean 양 tripe sections — pale off-white honeycomb texture, usually shown blanched or lightly grilled' },
+  { page:'kbbq', section:'💜 내장 Offal', path:'food/offal/offal-3.webp', kr:'천엽', en:'Omasum Tripe',           desc:'Thinly sliced 천엽 showing the distinctive leaf-like folds — pale, almost translucent, dipped in sesame oil' },
+  { page:'kbbq', section:'💜 내장 Offal', path:'food/offal/offal-4.webp', kr:'염통', en:'Beef Heart',             desc:'Dense deep-red 염통 slices on grill — firm texture, clean cut showing the muscle grain' },
+  // ── kfood.html · Essential Dishes (15) ──
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-0.webp',  kr:'김치',    en:'Kimchi',       desc:'Close-up of vividly red fermented napa cabbage kimchi — glistening leaves coated in red pepper flakes and green onion' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-1.webp',  kr:'비빔밥',  en:'Bibimbap',     desc:'Colorful stone-bowl 비빔밥 with six vibrant vegetable sections (spinach, bean sprouts, carrots, mushrooms), egg yolk center' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-2.webp',  kr:'삼겹살',  en:'Samgyeopsal',  desc:'Sizzling thick-cut pork belly on Korean tabletop grill, fat rendering, green garlic and peppers on side' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-3.webp',  kr:'떡볶이',  en:'Tteokbokki',   desc:'Bright red-orange 떡볶이 sauce coating rice cake cylinders with fish cake strips in a street stall pan' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-4.webp',  kr:'삼계탕',  en:'Samgyetang',   desc:'Whole young chicken in milky white ginseng broth in an earthenware pot, jujube and garlic visible' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-5.webp',  kr:'냉면',    en:'Naengmyeon',   desc:'Bowl of 냉면 — thin dark buckwheat noodles in clear icy broth, half boiled egg, cucumber, and pear slices' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-6.webp',  kr:'김치찌개',en:'Kimchi Jjigae',desc:'Bubbling 김치찌개 in a stone pot — vivid red broth with pink pork slices and tofu chunks' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-7.webp',  kr:'파전',    en:'Pajeon',       desc:'Golden 파전 green onion pancake just out of the pan — crispy lacy edges with green stripes, dipping sauce alongside' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-8.webp',  kr:'돼지국밥',en:'Pork Soup',    desc:'Milky white 돼지국밥 broth with rice, tender pork slices and green onion in an earthenware bowl' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-9.webp',  kr:'짜장면',  en:'Jjajangmyeon', desc:'Thick black bean sauce coating chewy noodles with diced pork and onion, white radish pickle on side' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-10.webp', kr:'짬뽕',    en:'Jjamppong',    desc:'Fiery red seafood broth with udon noodles, squid rings, mussels, and shrimp — steam rising' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-11.webp', kr:'K-마라탕', en:'K-Mala Tang',  desc:'Deep red numbing-spicy 마라탕 broth with lotus root, tofu, mushrooms, and noodles in a large pot' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-12.webp', kr:'육회',    en:'Yukhoe',       desc:'Korean beef tartare — finely julienned raw beef dressed in sesame oil and pear, topped with raw egg yolk' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-13.webp', kr:'한식',    en:'Korean Meal',  desc:'Traditional 한식 meal spread — rice, soup, and 4+ banchan side dishes arranged neatly on a round table' },
+  { page:'kfood', section:'필수 Essential Dishes', path:'culture/kfood/dish-14.webp', kr:'야식',    en:'Late-Night Meal',desc:'Korean late-night snack spread — chicken, beer, and tteokbokki on a low table, casual home eating scene' },
+  // ── kfood.html · Street Food (8) ──
+  { page:'kfood', section:'🌶️ Street Food', path:'culture/kfood/street-0.webp', kr:'떡볶이',      en:'Tteokbokki',        desc:'Street stall iron tray bubbling with bright red-orange 떡볶이 sauce, vendor ladling into a styrofoam cup' },
+  { page:'kfood', section:'🌶️ Street Food', path:'culture/kfood/street-1.webp', kr:'핫도그',      en:'Korean Corn Dog',   desc:'Freshly fried 핫도그 half-dipped in ketchup and mustard — golden batter coat on a stick, cheese pull visible' },
+  { page:'kfood', section:'🌶️ Street Food', path:'culture/kfood/street-2.webp', kr:'호떡',        en:'Hotteok',           desc:'Just-pressed 호떡 on a flat griddle — golden brown pancake with caramel-cinnamon sugar oozing from a crack' },
+  { page:'kfood', section:'🌶️ Street Food', path:'culture/kfood/street-3.webp', kr:'어묵',        en:'Eomuk/Odeng',       desc:'Fish cake skewers in warm golden broth — folded rectangular sheets on long metal skewers, steam rising' },
+  { page:'kfood', section:'🌶️ Street Food', path:'culture/kfood/street-4.webp', kr:'붕어빵',      en:'Bungeoppang',       desc:'Fresh 붕어빵 fish-shaped pastries golden and crispy, filling (red bean or cream) visible at the mouth' },
+  { page:'kfood', section:'🌶️ Street Food', path:'culture/kfood/street-5.webp', kr:'빙수',        en:'Bingsu',            desc:'Tower of shaved milk ice 빙수 piled high with red bean, mochi, and condensed milk drizzle' },
+  { page:'kfood', section:'🌶️ Street Food', path:'culture/kfood/street-6.webp', kr:'길거리 풍경',  en:'Street Food Alley', desc:'Busy Korean 포장마차 alley at night — red paper lanterns, steam, vendors and customers under yellow light' },
+  { page:'kfood', section:'🌶️ Street Food', path:'culture/kfood/street-7.webp', kr:'야시장',      en:'Night Market',      desc:'Wide shot of a Korean 야시장 night market stalls with colorful signage and crowds eating standing up' },
+  // ── kfood.html · Dining Spots (5) ──
+  { page:'kfood', section:'🏮 Dining Spots', path:'culture/kfood/dining-0.webp', kr:'포장마차', en:'Pojangmacha',  desc:'Orange-tented 포장마차 cart at night — plastic stools, steaming food pots, neon signs reflecting on wet street' },
+  { page:'kfood', section:'🏮 Dining Spots', path:'culture/kfood/dining-1.webp', kr:'분식집',  en:'Bunsikjip',    desc:'Cozy neighborhood 분식집 interior — laminate tables, tteokbokki in red pots, student customers' },
+  { page:'kfood', section:'🏮 Dining Spots', path:'culture/kfood/dining-2.webp', kr:'이모카세', en:'Imokase',      desc:'Home-style omakase spread — many small banchan dishes on a plastic table set by an 이모 (auntie) figure' },
+  { page:'kfood', section:'🏮 Dining Spots', path:'culture/kfood/dining-3.webp', kr:'함바집',  en:'Hambajip',     desc:'Rustic 함바집 worker\'s cafeteria — large trays, heaping rice, multiple stew pots, busy lunch crowd' },
+  { page:'kfood', section:'🏮 Dining Spots', path:'culture/kfood/dining-4.webp', kr:'컵밥',    en:'Cupbap',       desc:'Norang-jin style cup rice — layered rice, tuna, seaweed, kimchi in a small plastic cup with disposable spoon' },
+  // ── kfood.html · Men's Trinity (3) ──
+  { page:'kfood', section:'🍽️ Men\'s Trinity', path:'culture/kfood/mens-0.webp', kr:'돈가스',    en:'Dongas',        desc:'Golden-breaded 돈가스 pork cutlet sliced to reveal white interior, brown sauce poured over, shredded cabbage alongside' },
+  { page:'kfood', section:'🍽️ Men\'s Trinity', path:'culture/kfood/mens-1.webp', kr:'제육볶음',   en:'Jeyuk Bokkeum', desc:'Sizzling spicy 제육볶음 in a wide pan — glistening red pork and onion stir-fry with sesame seeds' },
+  { page:'kfood', section:'🍽️ Men\'s Trinity', path:'culture/kfood/mens-2.webp', kr:'국밥',      en:'Gukbap',        desc:'Deep earthenware bowl of 국밥 — murky rich broth, rice visible underneath, green onion and chili on top' },
+  // ── kpop.html · Agency Banners (6) ──
+  { page:'kpop', section:'🏢 Agencies', path:'culture/kpop/agency-0.webp', kr:'SM엔터테인먼트', en:'SM Entertainment',    desc:'SM Entertainment HQ building exterior or SM artist collage — clean modern architecture with SM logo' },
+  { page:'kpop', section:'🏢 Agencies', path:'culture/kpop/agency-1.webp', kr:'YG엔터테인먼트', en:'YG Entertainment',    desc:'YG artist/logo photo — dark moody aesthetic, YG artists known for hip-hop style (BIGBANG, BLACKPINK)' },
+  { page:'kpop', section:'🏢 Agencies', path:'culture/kpop/agency-2.webp', kr:'JYP엔터테인먼트',en:'JYP Entertainment',   desc:'JYP building or artist group shot — bright colorful aesthetic, artists like TWICE, Stray Kids' },
+  { page:'kpop', section:'🏢 Agencies', path:'culture/kpop/agency-3.webp', kr:'HYBE',            en:'HYBE',                desc:'HYBE headquarters modern glass building exterior or BTS/HYBE artist promotional photo' },
+  { page:'kpop', section:'🏢 Agencies', path:'culture/kpop/agency-4.webp', kr:'스타쉽',          en:'Starship Entertainment',desc:'Starship agency artist photo — IVE or MONSTA X style, sleek idol promotional image' },
+  { page:'kpop', section:'🏢 Agencies', path:'culture/kpop/agency-5.webp', kr:'큐브',            en:'Cube Entertainment',  desc:'Cube Entertainment artist photo — (G)I-DLE or BTOB style, bold color scheme' },
+  // ── kpop.html · Generation Cards (4) ──
+  { page:'kpop', section:'⭐ Generations', path:'culture/kpop/gen-0.webp', kr:'1세대', en:'1st Generation (1992–2002)', desc:'Collage or iconic photo from 1st Gen K-pop — H.O.T., S.E.S., Shinhwa in 1990s stage costumes' },
+  { page:'kpop', section:'⭐ Generations', path:'culture/kpop/gen-1.webp', kr:'2세대', en:'2nd Generation (2003–2012)', desc:'2nd Gen collage — BIGBANG, Girls\' Generation, SHINee, 2NE1 in their peak era look' },
+  { page:'kpop', section:'⭐ Generations', path:'culture/kpop/gen-2.webp', kr:'3세대', en:'3rd Generation (2012–2019)', desc:'3rd Gen highlight — EXO, BTS, TWICE, Red Velvet in a promotional or concert photo' },
+  { page:'kpop', section:'⭐ Generations', path:'culture/kpop/gen-3.webp', kr:'4세대', en:'4th Generation (2019–now)', desc:'4th Gen icons — BLACKPINK, aespa, Stray Kids, NewJeans in recent high-concept photoshoot' },
+  // ── kpop.html · Film / Drama Poster Cards (6) ──
+  { page:'kpop', section:'🎬 Film & Drama', path:'culture/kpop/film-0.webp', kr:'브로커·나의 아저씨', en:'Broker / My Mister',   desc:'IU (이지은) as actress — from film "Broker" (2022) or drama "My Mister" — serious cinematic still' },
+  { page:'kpop', section:'🎬 Film & Drama', path:'culture/kpop/film-1.webp', kr:'승리호·정이',      en:'Space / Sci-fi K-film',desc:'Futuristic Korean sci-fi scene — 승리호 (Space Sweepers) or 정이 (Jung_E) visual' },
+  { page:'kpop', section:'🎬 Film & Drama', path:'culture/kpop/film-2.webp', kr:'역사 드라마',        en:'Historical K-Drama',   desc:'A dramatic historical K-drama still with elaborate period costumes and palace setting' },
+  { page:'kpop', section:'🎬 Film & Drama', path:'culture/kpop/film-3.webp', kr:'법정·재벌 드라마',   en:'Legal / Chaebol Drama',desc:'Sleek corporate or courtroom drama scene — suits, tension, modern K-drama aesthetic' },
+  { page:'kpop', section:'🎬 Film & Drama', path:'culture/kpop/film-4.webp', kr:'로맨스',             en:'Romance Drama',        desc:'A romantic K-drama scene — couple in soft lighting, cherry blossoms or city background' },
+  { page:'kpop', section:'🎬 Film & Drama', path:'culture/kpop/film-5.webp', kr:'아이돌→배우',        en:'Idol to Actor',        desc:'A known idol-turned-actor on set or red carpet — showing the transition from stage to screen' },
+  // ── index.html · Article Thumbnails (4) ──
+  { page:'index', section:'📰 Article Thumbs', path:'index/article-0.webp', kr:'K-팝',   en:'K-Pop',    desc:'Concert stage aerial shot — colorful lightsticks filling a stadium, performer silhouette on stage' },
+  { page:'index', section:'📰 Article Thumbs', path:'index/article-1.webp', kr:'K-드라마',en:'K-Drama',  desc:'Cinematic K-drama still — two characters in emotional moment, soft bokeh background' },
+  { page:'index', section:'📰 Article Thumbs', path:'index/article-2.webp', kr:'K-푸드',  en:'K-Food',   desc:'Overhead shot of multiple Korean dishes on a table — colorful banchan spread, communal dining' },
+  { page:'index', section:'📰 Article Thumbs', path:'index/article-3.webp', kr:'K-뷰티',  en:'K-Beauty', desc:'K-beauty flat lay — skincare products, jade roller, and glass-skin face portrait, clean aesthetic' },
+  // ── index.html · Place Cards (3) ──
+  { page:'index', section:'📍 Place Cards', path:'index/place-0.webp', kr:'서울', en:'Seoul',      desc:'Seoul skyline at dusk — Han River, Namsan Tower, and city lights reflecting on water' },
+  { page:'index', section:'📍 Place Cards', path:'index/place-1.webp', kr:'부산', en:'Busan',      desc:'Haeundae Beach panorama — white sand, turquoise water, high-rise hotel strip in background' },
+  { page:'index', section:'📍 Place Cards', path:'index/place-2.webp', kr:'제주', en:'Jeju Island', desc:'Hallasan volcano with Seongsan Ilchulbong sunrise peak — lush green fields and volcanic rock' },
+];
+
+// ── State ─────────────────────────────────────────────────────────────────────
+let activePage = 'all';
+let activeSection = 'all';
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('sb_service_key');
+  if (saved) {
+    document.getElementById('service-key').value = saved;
+    document.getElementById('key-status').textContent = 'Key loaded from browser ✓';
+    document.getElementById('key-status').style.color = '#4ade80';
+  }
+  renderTable();
+});
+
+// ── Config ────────────────────────────────────────────────────────────────────
+function saveKey() {
+  const k = document.getElementById('service-key').value.trim();
+  if (!k) { alert('Key is empty'); return; }
+  localStorage.setItem('sb_service_key', k);
+  document.getElementById('key-status').textContent = 'Saved ✓';
+  document.getElementById('key-status').style.color = '#4ade80';
+}
+
+function toggleKeyVisibility() {
+  const inp = document.getElementById('service-key');
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+}
+
+function getClient() {
+  const key = document.getElementById('service-key').value.trim() || localStorage.getItem('sb_service_key') || '';
+  if (!key) throw new Error('Enter service role key first');
+  return supabase.createClient(SUPABASE_URL, key, { auth: { persistSession: false, autoRefreshToken: false } });
+}
+
+// ── Filters ───────────────────────────────────────────────────────────────────
+function filterPage(page, btn) {
+  activePage = page;
+  activeSection = 'all';
+  document.querySelectorAll('.btn-tab').forEach(b => b.classList.toggle('active', b === btn));
+  renderSectionButtons();
+  applyVisibility();
+}
+
+function filterSection(section, btn) {
+  activeSection = section;
+  document.querySelectorAll('.btn-sec').forEach(b => b.classList.toggle('active', b === btn));
+  applyVisibility();
+}
+
+function renderSectionButtons() {
+  const bar = document.getElementById('section-filters');
+  bar.innerHTML = '';
+  if (activePage === 'all') return;
+
+  const sections = [...new Set(MANIFEST.filter(m => m.page === activePage).map(m => m.section))];
+  if (sections.length <= 1) return;
+
+  const allBtn = document.createElement('button');
+  allBtn.className = 'btn-sec active';
+  allBtn.textContent = 'All';
+  allBtn.onclick = () => filterSection('all', allBtn);
+  bar.appendChild(allBtn);
+
+  sections.forEach(sec => {
+    const b = document.createElement('button');
+    b.className = 'btn-sec';
+    b.textContent = sec;
+    b.onclick = () => filterSection(sec, b);
+    bar.appendChild(b);
+  });
+}
+
+function applyVisibility() {
+  MANIFEST.forEach((item, i) => {
+    const row = document.getElementById(`row-${i}`);
+    if (!row) return;
+    const pageMatch = activePage === 'all' || item.page === activePage;
+    const sectMatch = activeSection === 'all' || item.section === activeSection;
+    row.classList.toggle('visible', pageMatch && sectMatch);
+  });
+  updateSummary();
+}
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function esc(str) {
+  return String(str ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function sectionCls(page) {
+  return { kbbq:'s-kbbq', kfood:'s-kfood', kpop:'s-kpop', index:'s-index' }[page] || '';
+}
+
+function renderTable() {
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+  MANIFEST.forEach((item, i) => {
+    const publicUrl = `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${item.path}`;
+    const curThumb = `<img class="cur-img" id="cur-${i}" src="${esc(publicUrl)}" alt="" loading="lazy" onerror="this.style.display='none';document.getElementById('cur-none-${i}').style.display='flex'">` +
+                     `<div class="cur-none" id="cur-none-${i}" style="display:none">—</div>`;
+    const tr = document.createElement('tr');
+    tr.className = 'data-row visible';
+    tr.id = `row-${i}`;
+    tr.innerHTML = `
+      <td class="td-num">${i + 1}</td>
+      <td class="td-kr">${esc(item.kr)}</td>
+      <td class="td-en">${esc(item.en)}</td>
+      <td class="td-sect"><span class="sect-badge ${sectionCls(item.page)}">${esc(item.section)}</span></td>
+      <td class="td-path"><code>${esc(item.path)}</code></td>
+      <td class="td-desc"><span class="desc-text">${esc(item.desc)}</span></td>
+      <td class="td-cur">${curThumb}</td>
+      <td class="td-file"><input type="file" accept="image/*" id="f-${i}" onchange="onFileSelect(${i})"></td>
+      <td class="td-prev"><img class="prev-img" id="prev-${i}" alt=""></td>
+      <td class="td-status"><span class="badge b-missing" id="st-${i}" data-state="missing">Missing</span></td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ── File select ───────────────────────────────────────────────────────────────
+function onFileSelect(i) {
+  const file = document.getElementById(`f-${i}`).files[0];
+  if (!file) return;
+  const prev = document.getElementById(`prev-${i}`);
+  prev.src = URL.createObjectURL(file);
+  prev.style.display = 'block';
+  const kb = (file.size / 1024).toFixed(0);
+  setStatus(i, 'ready', `${kb} KB ready`);
+  updateSummary();
+}
+
+function setStatus(i, state, text) {
+  const el = document.getElementById(`st-${i}`);
+  if (!el) return;
+  el.className = `badge b-${state}`;
+  el.dataset.state = state;
+  el.textContent = text;
+}
+
+function updateSummary() {
+  let selected = 0, visible = 0;
+  MANIFEST.forEach((_, i) => {
+    const row = document.getElementById(`row-${i}`);
+    if (row && row.classList.contains('visible')) {
+      visible++;
+      const f = document.getElementById(`f-${i}`);
+      if (f && f.files.length > 0) selected++;
+    }
+  });
+  document.getElementById('summary').textContent = `${selected} / ${visible} files selected (${visible} visible)`;
+}
+
+// ── WebP conversion ───────────────────────────────────────────────────────────
+async function toWebP(file, maxW, maxH, quality) {
+  let bitmap;
+  try { bitmap = await createImageBitmap(file); } catch { return file; }
+  const scale = Math.min(1, maxW / bitmap.width, maxH / bitmap.height);
+  const w = Math.round(bitmap.width  * scale);
+  const h = Math.round(bitmap.height * scale);
+  const canvas = document.createElement('canvas');
+  canvas.width = w; canvas.height = h;
+  canvas.getContext('2d').drawImage(bitmap, 0, 0, w, h);
+  bitmap.close();
+  return new Promise((res, rej) => {
+    canvas.toBlob(blob => blob ? res(blob) : rej(new Error('WebP conversion failed')), 'image/webp', quality);
+  });
+}
+
+// ── Check existing images ─────────────────────────────────────────────────────
+async function checkAllCurrentImages() {
+  MANIFEST.forEach((item, i) => {
+    const publicUrl = `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${item.path}?t=${Date.now()}`;
+    const img = document.getElementById(`cur-${i}`);
+    const none = document.getElementById(`cur-none-${i}`);
+    if (!img) return;
+    img.style.display = 'block';
+    none.style.display = 'none';
+    const tmp = new Image();
+    tmp.onload = () => {
+      img.src = publicUrl;
+      img.style.display = 'block';
+      none.style.display = 'none';
+      const st = document.getElementById(`st-${i}`);
+      if (st && st.dataset.state === 'missing') setStatus(i, 'has', '✓ Uploaded');
+    };
+    tmp.onerror = () => {
+      img.style.display = 'none';
+      none.style.display = 'flex';
+    };
+    tmp.src = publicUrl;
+  });
+}
+
+// ── Upload all ────────────────────────────────────────────────────────────────
+async function uploadAll() {
+  let client;
+  try { client = getClient(); } catch (e) { alert(e.message); return; }
+  const reupload = document.getElementById('reupload').checked;
+
+  const queue = MANIFEST.map((item, i) => ({ item, i })).filter(({ i }) => {
+    const row = document.getElementById(`row-${i}`);
+    const visible = row && row.classList.contains('visible');
+    const f = document.getElementById(`f-${i}`);
+    const hasFile = f && f.files.length > 0;
+    const alreadyDone = document.getElementById(`st-${i}`)?.dataset.state === 'success';
+    return visible && hasFile && (reupload || !alreadyDone);
+  });
+
+  if (queue.length === 0) {
+    alert('No files selected in the current view (or all already uploaded — check Re-upload).');
+    return;
+  }
+
+  const btn = document.getElementById('upload-btn');
+  btn.disabled = true;
+
+  const wrap = document.getElementById('progress-wrap');
+  wrap.classList.add('visible');
+  let done = 0;
+  updateProgress(0, queue.length);
+
+  for (const { item, i } of queue) {
+    const file = document.getElementById(`f-${i}`).files[0];
+    setStatus(i, 'uploading', 'Converting…');
+    try {
+      const blob = await toWebP(file, THUMB_W, THUMB_H, THUMB_QUALITY);
+
+      setStatus(i, 'uploading', 'Uploading…');
+      const { error: upErr } = await client.storage
+        .from(BUCKET)
+        .upload(item.path, blob, { contentType: 'image/webp', upsert: true });
+      if (upErr) throw upErr;
+
+      const { data: urlData } = client.storage.from(BUCKET).getPublicUrl(item.path);
+      const publicUrl = urlData.publicUrl;
+
+      // Update the current-image preview
+      const curImg = document.getElementById(`cur-${i}`);
+      if (curImg) { curImg.src = publicUrl + '?t=' + Date.now(); curImg.style.display = 'block'; }
+      const curNone = document.getElementById(`cur-none-${i}`);
+      if (curNone) curNone.style.display = 'none';
+
+      const kbOut = (blob.size / 1024).toFixed(0);
+      setStatus(i, 'success', `Done  ${kbOut} KB`);
+    } catch (e) {
+      console.error(`Upload failed [${item.path}]:`, e);
+      const msg = e?.message || e?.error_description || JSON.stringify(e);
+      setStatus(i, 'error', msg.slice(0, 80));
+    }
+
+    done++;
+    updateProgress(done, queue.length);
+  }
+
+  btn.disabled = false;
+  const successes = queue.filter(({ i }) =>
+    document.getElementById(`st-${i}`)?.dataset.state === 'success'
+  ).length;
+  alert(`Upload complete: ${successes} / ${queue.length} successful.`);
+}
+
+function updateProgress(done, total) {
+  const pct = total > 0 ? Math.round(done / total * 100) : 0;
+  document.getElementById('pfill').style.width = pct + '%';
+  document.getElementById('plabel').textContent = `${done} / ${total} uploaded  (${pct}%)`;
+}
+</script>
+</body>
+</html>

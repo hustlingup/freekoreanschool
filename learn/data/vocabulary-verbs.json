@@ -4,11 +4,12 @@
   "stages": [
     {
       "id": 1,
-      "name": "Verbs & Actions",
+      "name": "Verbs",
       "name_kr": "동사",
       "first_step": 1,
       "last_step": 22,
-      "time_minutes": 13
+      "time_minutes": 13,
+      "name_es": "Verbos"
     }
   ],
   "steps": [
@@ -17,23 +18,29 @@
       "stage": 1,
       "type": "reading_card",
       "title": "Korean Verbs",
-      "title_kr": "한국어 동사",
-      "body": "Korean verbs always come at the end of a sentence and conjugate by adding endings. The dictionary (base) form ends in -다. To make the polite present tense, change -다 to -아요 or -어요. These endings determine the politeness level and tense of the sentence.",
-      "rules": [
-        "먹다 → 먹어요 (eat → I eat / am eating)",
-        "가다 → 가요 (go → I go / am going)",
-        "하다 → 해요 (do → I do / am doing)",
-        "오다 → 와요 (come → I come / am coming)"
-      ],
+      "title_kr": "동사",
+      "title_zh_tw": "韓語動詞",
+      "body": "Korean verbs (동사) always come at the end of a sentence. The dictionary form ends in -다. To make the polite present tense, change -다 to -아요 or -어요 depending on the vowel in the final syllable. Example: 먹다 (to eat) → 먹어요 (I eat / eats).",
+      "body_zh_tw": "韓語動詞（동사）永遠放在句子末尾。原形以-다結尾。根據最後一個音節的母音，將-다改為-아요或-어요，形成有禮貌的現在時。例：먹다（吃）→먹어요（我吃／吃）。",
       "tip": {
-        "icon": "⚡",
-        "label": "하다 verbs",
-        "text": "Hundreds of Korean verbs are made by adding 하다 (to do) to a noun: 공부 (study) + 하다 = 공부하다 (to study). Learning 하다 unlocks an enormous vocabulary instantly."
+        "icon": "🔤",
+        "label": "Verb conjugation rule",
+        "text": "Last syllable has ㅏ or ㅗ vowel → use -아요 (e.g., 가다 → 가요). All other vowels → use -어요 (e.g., 먹다 → 먹어요). Verbs ending in 하다 → 해요 (e.g., 공부하다 → 공부해요)."
       },
-      "body_ja": "韓国語の動詞は常に文末に来て、語尾を付けて活用します。辞書（基本）形は-다で終わります。丁寧な現在形にするには-다を-아요または-어요に変えます。この語尾が丁寧さのレベルと時制を決めます。",
+      "tip_zh_tw": {
+        "label": "動詞活用規則",
+        "text": "最後一個音節含ㅏ或ㅗ母音→用-아요（例：가다→가요）。其他母音→用-어요（例：먹다→먹어요）。以하다結尾的動詞→해요（例：공부하다→공부해요）。"
+      },
+      "body_ja": "韓国語の動詞（동사）は常に文末に来ます。辞書形は-다で終わります。丁寧な現在形を作るには、語末音節の母音によって-아요か-어요に変えます。例：먹다（食べる）→먹어요（食べます）。",
       "tip_ja": {
-        "label": "하다動詞",
-        "text": "韓国語の動詞の多くは、名詞に하다（する/ある）を加えて作られます：공부（勉強）＋하다＝공부하다（勉強する）。하다を覚えると膨大な語彙が一気に使えるようになります。"
+        "label": "動詞の活用ルール",
+        "text": "語末にㅏ・ㅗがある→-아요（例：가다→가요）。その他の母音→-어요（例：먹다→먹어요）。하다で終わる動詞→해요（例：공부하다→공부해요）。"
+      },
+      "title_es": "Verbos en Coreano",
+      "body_es": "Los verbos coreanos (동사) siempre van al final de la oración. La forma de diccionario termina en -다. Para hacer el presente educado, cambia -다 por -아요 o -어요 dependiendo de la vocal de la última sílaba. Ejemplo: 먹다 (comer) → 먹어요 (como / come).",
+      "tip_es": {
+        "label": "Regla de conjugación verbal",
+        "text": "La última sílaba tiene vocal ㅏ o ㅗ → usa -아요 (ej. 가다 → 가요). Otras vocales → usa -어요 (ej. 먹다 → 먹어요). Verbos que terminan en 하다 → 해요 (ej. 공부하다 → 공부해요)."
       }
     },
     {
@@ -41,17 +48,54 @@
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
+        "가",
+        "다"
+      ],
+      "romanization": "gada",
+      "zhuyin": "ㄍㄚ·ㄉㄚ",
+      "katakana": "カダ",
+      "audio": "가다",
+      "meaning": "To go — 가요 (polite present)",
+      "meaning_zh_tw": "去——가요（有禮貌的現在時）",
+      "meaning_ja": "行く ― 가요（丁寧現在形）",
+      "meaning_es": "Ir — 가요 (presente educado)"
+    },
+    {
+      "id": 3,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "오",
+        "다"
+      ],
+      "romanization": "oda",
+      "zhuyin": "ㄛ·ㄉㄚ",
+      "katakana": "オダ",
+      "audio": "오다",
+      "meaning": "To come — 와요 (polite present)",
+      "meaning_zh_tw": "來——와요（有禮貌的現在時）",
+      "meaning_ja": "来る ― 와요（丁寧現在形）",
+      "meaning_es": "Venir — 와요 (presente educado)"
+    },
+    {
+      "id": 4,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
         "먹",
         "다"
       ],
       "romanization": "meokda",
+      "zhuyin": "ㄇㄜ·ㄉㄚ",
       "katakana": "モクタ",
       "audio": "먹다",
-      "meaning": "To eat — 뭐 먹어요? (What are you eating?)",
-      "meaning_ja": "食べる ― 뭐 먹어요？（何を食べていますか？）"
+      "meaning": "To eat — 먹어요 (polite present)",
+      "meaning_zh_tw": "吃——먹어요（有禮貌的現在時）",
+      "meaning_ja": "食べる ― 먹어요（丁寧現在形）",
+      "meaning_es": "Comer — 먹어요 (presente educado)"
     },
     {
-      "id": 3,
+      "id": 5,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -60,55 +104,16 @@
         "다"
       ],
       "romanization": "masida",
+      "zhuyin": "ㄇㄚ·ㄙㄧ·ㄉㄚ",
       "katakana": "マシダ",
       "audio": "마시다",
-      "meaning": "To drink — 커피 마셔요? (Do you drink coffee?)",
-      "meaning_ja": "飲む ― 커피 마셔요？（コーヒーを飲みますか？）"
-    },
-    {
-      "id": 4,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "자",
-        "다"
-      ],
-      "romanization": "jada",
-      "katakana": "チャダ",
-      "audio": "자다",
-      "meaning": "To sleep — 잘 잤어요? (Did you sleep well?)",
-      "meaning_ja": "寝る ― 잘 잤어요？（よく眠れましたか？）"
-    },
-    {
-      "id": 5,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "가",
-        "다"
-      ],
-      "romanization": "gada",
-      "katakana": "カダ",
-      "audio": "가다",
-      "meaning": "To go — 어디 가요? (Where are you going?)",
-      "meaning_ja": "行く ― 어디 가요？（どこへ行きますか？）"
+      "meaning": "To drink — 마셔요 (polite present)",
+      "meaning_zh_tw": "喝——마셔요（有禮貌的現在時）",
+      "meaning_ja": "飲む ― 마셔요（丁寧現在形）",
+      "meaning_es": "Beber — 마셔요 (presente educado)"
     },
     {
       "id": 6,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "오",
-        "다"
-      ],
-      "romanization": "oda",
-      "katakana": "オダ",
-      "audio": "오다",
-      "meaning": "To come — 언제 와요? (When are you coming?)",
-      "meaning_ja": "来る ― 언제 와요？（いつ来ますか？）"
-    },
-    {
-      "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -116,13 +121,16 @@
         "다"
       ],
       "romanization": "boda",
+      "zhuyin": "ㄅㄛ·ㄉㄚ",
       "katakana": "ポダ",
       "audio": "보다",
-      "meaning": "To see / watch — 드라마 봐요 (I watch dramas)",
-      "meaning_ja": "見る ― 드라마 봐요（ドラマを見ます）"
+      "meaning": "To see / watch — 봐요 (polite present)",
+      "meaning_zh_tw": "看／觀看——봐요（有禮貌的現在時）",
+      "meaning_ja": "見る・見せる ― 봐요（丁寧現在形）",
+      "meaning_es": "Ver / mirar — 봐요 (presente educado)"
     },
     {
-      "id": 8,
+      "id": 7,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -130,13 +138,16 @@
         "다"
       ],
       "romanization": "deutda",
+      "zhuyin": "ㄉㄜ·ㄉㄚ",
       "katakana": "トゥッタ",
       "audio": "듣다",
-      "meaning": "To listen / hear — 음악 들어요 (I listen to music)",
-      "meaning_ja": "聞く ― 음악 들어요（音楽を聴きます）"
+      "meaning": "To listen / hear — 들어요 (polite present, irregular)",
+      "meaning_zh_tw": "聽——들어요（有禮貌的現在時，不規則變化）",
+      "meaning_ja": "聞く ― 들어요（丁寧現在形、不規則変化）",
+      "meaning_es": "Escuchar / oír — 들어요 (presente educado, irregular)"
     },
     {
-      "id": 9,
+      "id": 8,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -145,13 +156,16 @@
         "다"
       ],
       "romanization": "malhada",
-      "katakana": "マラダ",
+      "zhuyin": "ㄇㄚㄌ·ㄏㄚ·ㄉㄚ",
+      "katakana": "マルハダ",
       "audio": "말하다",
-      "meaning": "To speak / say — 한국어로 말해요 (Speak in Korean)",
-      "meaning_ja": "話す ― 한국어로 말해요（韓国語で話してください）"
+      "meaning": "To speak / say — 말해요 (polite present)",
+      "meaning_zh_tw": "說話——말해요（有禮貌的現在時）",
+      "meaning_ja": "話す・言う ― 말해요（丁寧現在形）",
+      "meaning_es": "Hablar / decir — 말해요 (presente educado)"
     },
     {
-      "id": 10,
+      "id": 9,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -159,13 +173,16 @@
         "다"
       ],
       "romanization": "ikda",
+      "zhuyin": "ㄧ·ㄉㄚ",
       "katakana": "イクタ",
       "audio": "읽다",
-      "meaning": "To read — 책 읽어요? (Do you read books?)",
-      "meaning_ja": "読む ― 책 읽어요？（本を読みますか？）"
+      "meaning": "To read — 읽어요 (polite present)",
+      "meaning_zh_tw": "讀——읽어요（有禮貌的現在時）",
+      "meaning_ja": "読む ― 읽어요（丁寧現在形）",
+      "meaning_es": "Leer — 읽어요 (presente educado)"
     },
     {
-      "id": 11,
+      "id": 10,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -173,13 +190,50 @@
         "다"
       ],
       "romanization": "sseuda",
+      "zhuyin": "ㄙㄜ·ㄉㄚ",
       "katakana": "スダ",
       "audio": "쓰다",
-      "meaning": "To write / use / bitter — context determines meaning",
-      "meaning_ja": "書く / 使う / 苦い ― 文脈によって意味が変わる"
+      "meaning": "To write / to use — 써요 (polite present)",
+      "meaning_zh_tw": "寫／使用——써요（有禮貌的現在時）",
+      "meaning_ja": "書く・使う ― 써요（丁寧現在形）",
+      "meaning_es": "Escribir / usar — 써요 (presente educado)"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "사",
+        "다"
+      ],
+      "romanization": "sada",
+      "zhuyin": "ㄙㄚ·ㄉㄚ",
+      "katakana": "サダ",
+      "audio": "사다",
+      "meaning": "To buy — 사요 (polite present)",
+      "meaning_zh_tw": "買——사요（有禮貌的現在時）",
+      "meaning_ja": "買う ― 사요（丁寧現在形）",
+      "meaning_es": "Comprar — 사요 (presente educado)"
     },
     {
       "id": 12,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "팔",
+        "다"
+      ],
+      "romanization": "palda",
+      "zhuyin": "ㄆㄚㄌ·ㄉㄚ",
+      "katakana": "パルダ",
+      "audio": "팔다",
+      "meaning": "To sell — 팔아요 (polite present)",
+      "meaning_zh_tw": "賣——팔아요（有禮貌的現在時）",
+      "meaning_ja": "売る ― 팔아요（丁寧現在形）",
+      "meaning_es": "Vender — 팔아요 (presente educado)"
+    },
+    {
+      "id": 13,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -189,13 +243,16 @@
         "다"
       ],
       "romanization": "gongbuhada",
+      "zhuyin": "ㄍㄨㄥ·ㄅㄨ·ㄏㄚ·ㄉㄚ",
       "katakana": "コンブハダ",
       "audio": "공부하다",
-      "meaning": "To study — 한국어 공부해요 (I study Korean)",
-      "meaning_ja": "勉強する ― 한국어 공부해요（韓国語を勉強しています）"
+      "meaning": "To study — 공부해요 (polite present)",
+      "meaning_zh_tw": "學習——공부해요（有禮貌的現在時）",
+      "meaning_ja": "勉強する ― 공부해요（丁寧現在形）",
+      "meaning_es": "Estudiar — 공부해요 (presente educado)"
     },
     {
-      "id": 13,
+      "id": 14,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -204,42 +261,51 @@
         "다"
       ],
       "romanization": "ilhada",
-      "katakana": "イラダ",
+      "zhuyin": "ㄧㄌ·ㄏㄚ·ㄉㄚ",
+      "katakana": "イルハダ",
       "audio": "일하다",
-      "meaning": "To work — 어디서 일해요? (Where do you work?)",
-      "meaning_ja": "働く ― 어디서 일해요？（どこで働いていますか？）"
-    },
-    {
-      "id": 14,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "놀",
-        "다"
-      ],
-      "romanization": "nolda",
-      "katakana": "ノルダ",
-      "audio": "놀다",
-      "meaning": "To play / hang out — 주말에 놀아요 (I hang out on weekends)",
-      "meaning_ja": "遊ぶ ― 주말에 놀아요（週末に遊びます）"
+      "meaning": "To work — 일해요 (polite present)",
+      "meaning_zh_tw": "工作——일해요（有禮貌的現在時）",
+      "meaning_ja": "働く ― 일해요（丁寧現在形）",
+      "meaning_es": "Trabajar — 일해요 (presente educado)"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
-        "만",
-        "들",
+        "자",
         "다"
       ],
-      "romanization": "mandeulda",
-      "katakana": "マンドゥルダ",
-      "audio": "만들다",
-      "meaning": "To make / create — 음식 만들어요 (I make food)",
-      "meaning_ja": "作る ― 음식 만들어요（料理を作ります）"
+      "romanization": "jada",
+      "zhuyin": "ㄐㄚ·ㄉㄚ",
+      "katakana": "チャダ",
+      "audio": "자다",
+      "meaning": "To sleep — 자요 (polite present)",
+      "meaning_zh_tw": "睡覺——자요（有禮貌的現在時）",
+      "meaning_ja": "寝る ― 자요（丁寧現在形）",
+      "meaning_es": "Dormir — 자요 (presente educado)"
     },
     {
       "id": 16,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
+        "만",
+        "나",
+        "다"
+      ],
+      "romanization": "mannada",
+      "zhuyin": "ㄇㄢ·ㄋㄚ·ㄉㄚ",
+      "katakana": "マンナダ",
+      "audio": "만나다",
+      "meaning": "To meet — 만나요 (polite present)",
+      "meaning_zh_tw": "見面——만나요（有禮貌的現在時）",
+      "meaning_ja": "会う ― 만나요（丁寧現在形）",
+      "meaning_es": "Conocer / encontrarse — 만나요 (presente educado)"
+    },
+    {
+      "id": 17,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -249,98 +315,131 @@
         "다"
       ],
       "romanization": "joahada",
+      "zhuyin": "ㄓㄛ·ㄚ·ㄏㄚ·ㄉㄚ",
       "katakana": "チョアハダ",
       "audio": "좋아하다",
-      "meaning": "To like — 뭐 좋아해요? (What do you like?)",
-      "meaning_ja": "好きだ ― 뭐 좋아해요？（何が好きですか？）"
-    },
-    {
-      "id": 17,
-      "stage": 1,
-      "type": "listen_repeat",
-      "syllables": [
-        "알",
-        "다"
-      ],
-      "romanization": "alda",
-      "katakana": "アルダ",
-      "audio": "알다",
-      "meaning": "To know — 알아요 (I know), 몰라요 (I don't know)",
-      "meaning_ja": "知る / 分かる ― 알아요（分かります）、몰라요（分かりません）"
+      "meaning": "To like — 좋아해요 (polite present)",
+      "meaning_zh_tw": "喜歡——좋아해요（有禮貌的現在時）",
+      "meaning_ja": "好きである ― 좋아해요（丁寧現在形）",
+      "meaning_es": "Gustar — 좋아해요 (presente educado)"
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Which verb means 'to eat'?",
+      "prompt": "먹다 → polite present tense is...",
+      "prompt_zh_tw": "먹다 的有禮貌現在時是……",
       "choices": [
-        "마시다",
+        "마셔요",
         "먹다",
-        "보다",
-        "듣다"
+        "먹어요",
+        "먹했어요"
       ],
-      "correct": "먹다",
-      "prompt_ja": "「食べる」を意味する動詞はどれですか？"
+      "correct": "먹어요",
+      "prompt_ja": "먹다 の丁寧現在形は？",
+      "prompt_es": "먹다 → el presente educado es..."
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "한국어 공부해요. This means...",
+      "prompt": "Which verb means 'to study'?",
+      "prompt_zh_tw": "哪個動詞表示「學習」？",
       "choices": [
-        "I eat Korean food",
-        "I watch Korean dramas",
-        "I study Korean",
-        "I like Korea"
+        "To sleep",
+        "To work",
+        "To study",
+        "To buy"
+      ],
+      "choices_zh_tw": [
+        "睡覺",
+        "工作",
+        "學習",
+        "購買"
       ],
       "choices_ja": [
-        "韓国料理を食べます",
-        "韓国ドラマを観ます",
-        "韓国語を勉強します",
-        "韓国が好きです"
+        "寝る",
+        "働く",
+        "勉強する",
+        "買う"
       ],
-      "correct": "I study Korean",
-      "prompt_ja": "한국어 공부해요。これはどういう意味ですか？"
+      "correct": "To study",
+      "prompt_ja": "「勉強する」を意味する動詞はどれですか？",
+      "prompt_es": "¿Qué verbo significa \"estudiar\"?",
+      "choices_es": [
+        "Dormir",
+        "Trabajar",
+        "Estudiar",
+        "Comprar"
+      ]
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Hundreds of Korean verbs are formed by adding 하다 to a noun. This type of verb is called...",
+      "prompt": "Which verb means 'to sell'?",
+      "prompt_zh_tw": "哪個動詞表示「賣」？",
       "choices": [
-        "A compound verb",
-        "A 하다 verb",
-        "A batchim verb",
-        "A passive verb"
+        "To meet",
+        "To sell",
+        "To listen",
+        "To write"
+      ],
+      "choices_zh_tw": [
+        "見面",
+        "賣",
+        "聽",
+        "寫"
       ],
       "choices_ja": [
-        "複合動詞",
-        "하다 動詞",
-        "パッチム動詞",
-        "受動態動詞"
+        "会う",
+        "売る",
+        "聞く",
+        "書く"
       ],
-      "correct": "A 하다 verb",
-      "prompt_ja": "名詞に하다を加えて作る動詞は何と呼ばれますか？"
+      "correct": "To sell",
+      "prompt_ja": "「売る」を意味する動詞はどれですか？",
+      "prompt_es": "¿Qué verbo significa \"vender\"?",
+      "choices_es": [
+        "Conocer",
+        "Vender",
+        "Escuchar",
+        "Escribir"
+      ]
     },
     {
       "id": 21,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "놀다 means...",
+      "prompt": "가다 (to go) → polite present is...",
+      "prompt_zh_tw": "가다（去）的有禮貌現在時是……",
       "choices": [
-        "To work",
-        "To sleep",
-        "To play / hang out",
-        "To eat"
+        "To meet",
+        "To listen",
+        "To go",
+        "To come"
+      ],
+      "choices_zh_tw": [
+        "見面",
+        "聽",
+        "去",
+        "來"
       ],
       "choices_ja": [
-        "働く",
-        "寝る",
-        "遊ぶ・一緒に過ごす",
-        "食べる"
+        "会う",
+        "聞く",
+        "行く",
+        "来る"
       ],
-      "correct": "To play / hang out",
-      "prompt_ja": "놀다はどういう意味ですか？"
+      "correct": "To go",
+      "prompt_ja": "가다（行く）の丁寧現在形は？",
+      "prompt_es": "가다 (ir) → el presente educado es...",
+      "choices_es": [
+        "Conocer",
+        "Escuchar",
+        "Ir",
+        "Venir"
+      ]
     },
     {
       "id": 22,
@@ -348,9 +447,13 @@
       "type": "lesson_complete",
       "title": "Verbs Complete!",
       "title_kr": "동사 완성!",
-      "message": "훌륭해요! Korean verbs are the engine of the language. With 하다 verbs, you now have access to thousands of compound verbs. 계속 공부하세요! (Keep studying!)",
-      "next_url": "vocabulary.html?cat=adjectives",
-      "message_ja": "훌륭해요！韓国語の動詞は言語のエンジンです。하다動詞で数千の複合動詞が使えるようになりました。계속 공부하세요！（勉強を続けましょう！）"
+      "title_zh_tw": "動詞完成！",
+      "message": "완벽해요! You've mastered the essential Korean verbs and the conjugation pattern. Verbs are the engine of every sentence — now that you know the rule, every new verb you learn is instantly usable!",
+      "message_zh_tw": "완벽해요！你已掌握了韓語基本動詞和活用規律。動詞是每個句子的引擎——現在你懂得規則，每學到一個新動詞都能立即使用！",
+      "next_url": "vocabulary.html?cat=workplace",
+      "message_ja": "완벽해요！韓国語の必須動詞と活用パターンをマスターしました。動詞はすべての文のエンジンです―ルールを覚えれば新しい動詞を学ぶたびにすぐ使えます！",
+      "title_es": "¡Verbos Completados!",
+      "message_es": "완벽해요! Has dominado los verbos esenciales del coreano y el patrón de conjugación. Los verbos son el motor de cada oración — ¡ahora que conoces la regla, cada nuevo verbo que aprendas es inmediatamente utilizable!"
     }
   ]
 }

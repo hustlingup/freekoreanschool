@@ -8,7 +8,8 @@
       "name_kr": "인사말",
       "first_step": 1,
       "last_step": 16,
-      "time_minutes": 10
+      "time_minutes": 10,
+      "name_es": "Saludos"
     }
   ],
   "steps": [
@@ -18,16 +19,28 @@
       "type": "reading_card",
       "title": "Greetings in Korean",
       "title_kr": "한국어 인사말",
+      "title_zh_tw": "韓語問候語",
       "body": "Korean greetings change depending on who you are talking to and the situation. The most important distinction is formal vs. casual speech. Use formal forms with strangers, elders, and in professional settings. Casual forms are for friends and people younger than you.",
+      "body_zh_tw": "韓語問候語會根據對象和場合而改變。最重要的區別是正式語和非正式語。與陌生人、長輩及在職場中應使用正式語，非正式語則用於朋友和比你年輕的人。",
       "tip": {
         "icon": "💡",
         "label": "Key rule: when in doubt, be formal",
         "text": "Koreans appreciate effort. Using the formal 하세요 ending is always safe with people you just met. Switching to casual 안녕 with a close friend shows warmth."
       },
+      "tip_zh_tw": {
+        "label": "關鍵規則：不確定時就選正式語",
+        "text": "韓國人欣賞你的努力。與初次見面的人使用正式的하세요結尾永遠是安全的選擇。與親近的朋友改說안녕則表達了溫暖的情感。"
+      },
       "body_ja": "韓国語の挨拶は相手や場面によって変わります。最も重要な区別はフォーマルとカジュアルです。初対面・目上の人・仕事の場ではフォーマルな表現を使い、友人や年下にはカジュアルな表現を使います。",
       "tip_ja": {
         "label": "基本ルール：迷ったらフォーマルに",
         "text": "努力は必ず伝わります。初対面の人には「하세요」で締める丁寧形が安心です。仲の良い友人への「안녕」は親しみを表します。"
+      },
+      "title_es": "Saludos en Coreano",
+      "body_es": "Los saludos coreanos cambian según con quién hablas y la situación. La distinción más importante es el habla formal vs. informal. Usa formas formales con desconocidos, personas mayores y en entornos profesionales. Las formas informales son para amigos y personas menores que tú.",
+      "tip_es": {
+        "label": "Regla clave: ante la duda, sé formal",
+        "text": "Los coreanos aprecian el esfuerzo. Usar el final formal 하세요 siempre es seguro con personas que acabas de conocer. Cambiar al informal 안녕 con un amigo cercano muestra calidez."
       }
     },
     {
@@ -42,10 +55,13 @@
         "요"
       ],
       "romanization": "Annyeonghaseyo",
+      "zhuyin": "ㄢ·ㄋㄧㄥ·ㄏㄚ·ㄙㄝ·ㄧㄠ",
       "katakana": "アンニョンハセヨ",
       "audio": "안녕하세요",
       "meaning": "Hello — formal, the most common greeting",
-      "meaning_ja": "こんにちは（丁寧）― 最もよく使われる挨拶"
+      "meaning_zh_tw": "你好——正式語，最常用的問候語",
+      "meaning_ja": "こんにちは（丁寧）― 最もよく使われる挨拶",
+      "meaning_es": "Hola — formal, el saludo más común"
     },
     {
       "id": 3,
@@ -56,10 +72,13 @@
         "녕"
       ],
       "romanization": "Annyeong",
+      "zhuyin": "ㄢ·ㄋㄧㄥ",
       "katakana": "アンニョン",
       "audio": "안녕",
       "meaning": "Hi / Bye (casual) — used with friends",
-      "meaning_ja": "やあ / バイバイ（カジュアル）― 友達に使う"
+      "meaning_zh_tw": "嗨 / 拜拜（非正式）——用於朋友之間",
+      "meaning_ja": "やあ / バイバイ（カジュアル）― 友達に使う",
+      "meaning_es": "Hola / Adiós (informal) — se usa con amigos"
     },
     {
       "id": 4,
@@ -73,10 +92,13 @@
         "다"
       ],
       "romanization": "Gamsahamnida",
+      "zhuyin": "ㄍㄚㄇ·ㄙㄚ·ㄏㄚ·ㄋㄧ·ㄉㄚ",
       "katakana": "カムサハムニダ",
       "audio": "감사합니다",
       "meaning": "Thank you — formal, very polite",
-      "meaning_ja": "ありがとうございます（最敬語）"
+      "meaning_zh_tw": "謝謝——正式語，非常有禮貌",
+      "meaning_ja": "ありがとうございます（最敬語）",
+      "meaning_es": "Gracias — formal, muy cortés"
     },
     {
       "id": 5,
@@ -89,10 +111,13 @@
         "요"
       ],
       "romanization": "Gomawoyo",
+      "zhuyin": "ㄍㄛ·ㄇㄚ·ㄨㄜ·ㄧㄠ",
       "katakana": "コマウォヨ",
       "audio": "고마워요",
       "meaning": "Thank you — polite but less formal",
-      "meaning_ja": "ありがとう（丁寧・カジュアル）"
+      "meaning_zh_tw": "謝謝——有禮貌但較不正式",
+      "meaning_ja": "ありがとう（丁寧・カジュアル）",
+      "meaning_es": "Gracias — cortés pero menos formal"
     },
     {
       "id": 6,
@@ -106,10 +131,13 @@
         "다"
       ],
       "romanization": "Joesonghamnida",
+      "zhuyin": "ㄓㄨㄟ·ㄙㄨㄥ·ㄏㄚ·ㄋㄧ·ㄉㄚ",
       "katakana": "チェソンハムニダ",
       "audio": "죄송합니다",
       "meaning": "I'm sorry — formal apology",
-      "meaning_ja": "申し訳ありません（丁寧なお詫び）"
+      "meaning_zh_tw": "對不起——正式道歉",
+      "meaning_ja": "申し訳ありません（丁寧なお詫び）",
+      "meaning_es": "Lo siento — disculpa formal"
     },
     {
       "id": 7,
@@ -122,10 +150,13 @@
         "요"
       ],
       "romanization": "Gwaenchanayo",
+      "zhuyin": "ㄍㄨㄝ·ㄔㄢ·ㄚ·ㄧㄠ",
       "katakana": "クェンチャナヨ",
       "audio": "괜찮아요",
       "meaning": "It's okay / Are you okay? — very versatile phrase",
-      "meaning_ja": "大丈夫です / 大丈夫ですか？（多用途）"
+      "meaning_zh_tw": "沒關係 / 你還好嗎？——非常萬用的短語",
+      "meaning_ja": "大丈夫です / 大丈夫ですか？（多用途）",
+      "meaning_es": "Está bien / ¿Estás bien? — frase muy versátil"
     },
     {
       "id": 8,
@@ -139,10 +170,13 @@
         "다"
       ],
       "romanization": "Bangapseumnida",
+      "zhuyin": "ㄅㄢ·ㄍㄚ·ㄙㄜ·ㄋㄧ·ㄉㄚ",
       "katakana": "パンガプスムニダ",
       "audio": "반갑습니다",
       "meaning": "Nice to meet you — formal first meeting",
-      "meaning_ja": "はじめまして（丁寧）― 初対面で"
+      "meaning_zh_tw": "很高興認識你——正式的初次見面",
+      "meaning_ja": "はじめまして（丁寧）― 初対面で",
+      "meaning_es": "Mucho gusto — primer encuentro formal"
     },
     {
       "id": 9,
@@ -157,10 +191,13 @@
         "요"
       ],
       "romanization": "Annyeonghi gaseyo",
+      "zhuyin": "ㄢ·ㄋㄧㄥ·ㄏㄧ ㄍㄚ·ㄙㄝ·ㄧㄠ",
       "katakana": "アンニョンヒ カセヨ",
       "audio": "안녕히 가세요",
       "meaning": "Goodbye — said to the person who is leaving",
-      "meaning_ja": "お気をつけて ― 去る人を見送る側が言う"
+      "meaning_zh_tw": "再見——對離開的那方說",
+      "meaning_ja": "お気をつけて ― 去る人を見送る側が言う",
+      "meaning_es": "Adiós — dicho a la persona que se va"
     },
     {
       "id": 10,
@@ -175,10 +212,13 @@
         "요"
       ],
       "romanization": "Annyeonghi gyeseyo",
+      "zhuyin": "ㄢ·ㄋㄧㄥ·ㄏㄧ ㄍㄧㄝ·ㄙㄝ·ㄧㄠ",
       "katakana": "アンニョンヒ キェセヨ",
       "audio": "안녕히 계세요",
       "meaning": "Goodbye — said by the person who is leaving",
-      "meaning_ja": "ごきげんよう ― 自分がその場を去るときに言う"
+      "meaning_zh_tw": "再見——由離開的那方說",
+      "meaning_ja": "ごきげんよう ― 自分がその場を去るときに言う",
+      "meaning_es": "Adiós — dicho por la persona que se va"
     },
     {
       "id": 11,
@@ -190,10 +230,13 @@
         "팅"
       ],
       "romanization": "Hwaiting",
+      "zhuyin": "ㄏㄨㄚ·ㄧ·ㄊㄧㄥ",
       "katakana": "ファイティン",
       "audio": "화이팅",
       "meaning": "Fighting! / You can do it! — a cheer of encouragement",
-      "meaning_ja": "頑張れ！― 応援の掛け声"
+      "meaning_zh_tw": "加油！/ 你可以的！——鼓勵的喝采",
+      "meaning_ja": "頑張れ！― 応援の掛け声",
+      "meaning_es": "¡Ánimo! / ¡Tú puedes! — grito de aliento"
     },
     {
       "id": 12,
@@ -209,10 +252,13 @@
         "다"
       ],
       "romanization": "Cheoeum boepgesseumnida",
+      "zhuyin": "ㄔㄜ·ㄜㄇ ㄅㄨㄟ·ㄍㄝ·ㄙㄜ·ㄋㄧ·ㄉㄚ",
       "katakana": "チョウム ポプケッスムニダ",
       "audio": "처음 뵙겠습니다",
       "meaning": "How do you do — very formal first introduction",
-      "meaning_ja": "はじめまして（最敬語）― 正式な自己紹介で"
+      "meaning_zh_tw": "幸會——非常正式的初次介紹",
+      "meaning_ja": "はじめまして（最敬語）― 正式な自己紹介で",
+      "meaning_es": "Encantado de conocerle — presentación muy formal"
     },
     {
       "id": 13,
@@ -228,16 +274,20 @@
         "다"
       ],
       "romanization": "Jal butakdeurimnida",
+      "zhuyin": "ㄐㄚㄌ ㄅㄨ·ㄊㄚ·ㄉㄜ·ㄌㄧ·ㄋㄧ·ㄉㄚ",
       "katakana": "チャル プタクトゥリムニダ",
       "audio": "잘 부탁드립니다",
       "meaning": "Please take care of me — said when starting a new relationship",
-      "meaning_ja": "よろしくお願いします ― 新しい関係を始めるときに"
+      "meaning_zh_tw": "請多關照——開始新關係時說的話",
+      "meaning_ja": "よろしくお願いします ― 新しい関係を始めるときに",
+      "meaning_es": "Por favor, cuídame — dicho al comenzar una nueva relación"
     },
     {
       "id": 14,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Which phrase means 'Hello' in the most formal way?",
+      "prompt_zh_tw": "哪個短語是最正式的「你好」說法？",
       "choices": [
         "안녕",
         "안녕하세요",
@@ -245,13 +295,15 @@
         "괜찮아요"
       ],
       "correct": "안녕하세요",
-      "prompt_ja": "最もフォーマルな「こんにちは」はどれですか？"
+      "prompt_ja": "最もフォーマルな「こんにちは」はどれですか？",
+      "prompt_es": "¿Qué frase dice \"Hola\" de la forma más formal?"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "How do you say 'Thank you' in the most formal Korean?",
+      "prompt_zh_tw": "最正式的韓語「謝謝」怎麼說？",
       "choices": [
         "고마워요",
         "미안해요",
@@ -259,7 +311,8 @@
         "잘 있어요"
       ],
       "correct": "감사합니다",
-      "prompt_ja": "最もフォーマルな「ありがとう」は韓国語でどう言いますか？"
+      "prompt_ja": "最もフォーマルな「ありがとう」は韓国語でどう言いますか？",
+      "prompt_es": "¿Cómo se dice \"Gracias\" en coreano de la forma más formal?"
     },
     {
       "id": 16,
@@ -267,9 +320,13 @@
       "type": "lesson_complete",
       "title": "Greetings Complete!",
       "title_kr": "인사말 완성!",
+      "title_zh_tw": "問候語完成！",
       "message": "You've learned 12 essential Korean greetings — from formal hellos to cheerful goodbyes. These phrases alone will make a huge impression on Korean speakers you meet.",
+      "message_zh_tw": "你已經學會了12個基本韓語問候語——從正式的你好到輕鬆的再見。光是這些短語，就能讓你遇到的韓語母語者留下深刻印象。",
       "next_url": "vocabulary.html?cat=numbers",
-      "message_ja": "韓국語の基本挨拶12個を習得しました。丁寧な「こんにちは」から明るい「さようなら」まで。これらのフレーズだけで出会う韓国語話者に大きな好印象を与えられます。"
+      "message_ja": "韓国語の基本挨拶12個を習得しました。丁寧な「こんにちは」から明るい「さようなら」まで。これらのフレーズだけで出会う韓国語話者に大きな好印象を与えられます。",
+      "title_es": "¡Saludos Completados!",
+      "message_es": "Has aprendido 12 saludos esenciales en coreano — desde holas formales hasta adioses alegres. Con solo estas frases causarás una gran impresión en los hablantes de coreano que conozcas."
     }
   ]
 }
