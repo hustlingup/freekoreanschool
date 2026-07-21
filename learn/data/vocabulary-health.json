@@ -38,7 +38,7 @@
         "label": "就醫短語",
         "text": "아파요＝我生病了／這裡痛 | 여기가 아파요＝這裡痛 | 의사 선생님＝醫生 | 처방전＝處方箋 | 보험＝保險。韓國藥局（약국）藥品齊全，藥師專業可靠。"
       },
-      "body_ja": "健康語彙は旅行者・居住者どちらにも重要です。韓国の公的医療制度は充実しており費用も手頃です。클리닉・약국・병원でこれらの語彙が役立ちます。最重要フレーズ：아파요（具合が悪い/痛い）。",
+      "body_ja": "健康語彙は旅行者・居住者どちらにも重要です。韓国の公的医療制度は充実しており費用も手頃です。クリニック・薬局・病院でこれらの語彙が役立ちます。最重要フレーズ：아파요（具合が悪い/痛い）。",
       "tip_ja": {
         "label": "医療フレーズ",
         "text": "아파요（具合が悪い/痛い）| 여기가 아파요（ここが痛い）| 의사 선생님（医師）| 처방전（処方箋）| 보험（保険）。韓国の약국（薬局）は品揃えが豊富で薬剤師も頼りになります。"
@@ -401,70 +401,22 @@
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "아파요 means...",
-      "prompt_zh_tw": "아파요 的意思是……",
+      "prompt": "The doctor asks 어디가 아파요? Which phrase tells them your stomach hurts?",
+      "prompt_zh_tw": "醫生問你 어디가 아파요？要告訴他肚子痛，該用哪一句？",
       "choices": [
-        "건강해요",
-        "피곤해요",
-        "아파요",
-        "배고파요"
+        "배가 아파요",
+        "두통이 있어요",
+        "열이 나요",
+        "기침이 나요"
       ],
-      "correct": "아파요",
-      "prompt_ja": "아파요 はどういう意味ですか？",
-      "prompt_es": "아파요 significa...",
-      "prompt_de": "아파요 bedeutet …",
-      "choices_de": [
-        "건강해요",
-        "피곤해요",
-        "아파요",
-        "배고파요"
-      ],
-      "choices_es": [
-        "건강해요",
-        "피곤해요",
-        "아파요",
-        "배고파요"
-      ],
-      "prompt_fr": "아파요 signifie…",
-      "choices_fr": [
-        "건강해요",
-        "피곤해요",
-        "아파요",
-        "배고파요"
-      ],
-      "prompt_id": "아파요 berarti...",
-      "choices_id": [
-        "건강해요",
-        "피곤해요",
-        "아파요",
-        "배고파요"
-      ],
-      "choices_ja": [
-        "건강해요",
-        "피곤해요",
-        "아파요",
-        "배고파요"
-      ],
-      "prompt_th": "아파요 แปลว่า…",
-      "choices_th": [
-        "건강해요",
-        "피곤해요",
-        "아파요",
-        "배고파요"
-      ],
-      "prompt_vi": "아파요 có nghĩa là...",
-      "choices_vi": [
-        "건강해요",
-        "피곤해요",
-        "아파요",
-        "배고파요"
-      ],
-      "choices_zh_tw": [
-        "我很健康",
-        "我很累",
-        "我生病了",
-        "我肚子餓了"
-      ]
+      "correct": "배가 아파요",
+      "prompt_ja": "医師に 어디가 아파요? と聞かれました。お腹が痛いと伝えるフレーズはどれですか？",
+      "prompt_es": "El médico pregunta 어디가 아파요? ¿Qué frase le dice que te duele el estómago?",
+      "prompt_de": "Der Arzt fragt 어디가 아파요? Welcher Satz sagt ihm, dass dir der Bauch wehtut?",
+      "prompt_fr": "Le médecin demande 어디가 아파요 ? Quelle phrase lui dit que vous avez mal au ventre ?",
+      "prompt_id": "Dokter bertanya 어디가 아파요? Frasa mana yang memberi tahu bahwa perutmu sakit?",
+      "prompt_th": "หมอถามว่า 어디가 아파요? ประโยคใดบอกว่าคุณปวดท้อง?",
+      "prompt_vi": "Bác sĩ hỏi 어디가 아파요? Câu nào cho biết bạn bị đau bụng?"
     },
     {
       "id": 18,
@@ -474,66 +426,18 @@
       "prompt_zh_tw": "在韓國遇到醫療緊急情況要去哪裡？",
       "choices": [
         "약국",
-        "카페",
+        "보건소",
         "응급실",
         "편의점"
-      ],
-      "choices_zh_tw": [
-        "藥局",
-        "咖啡廳",
-        "急診室",
-        "便利商店"
-      ],
-      "choices_ja": [
-        "薬局",
-        "カフェ",
-        "救急室",
-        "コンビニ"
       ],
       "correct": "응급실",
       "prompt_ja": "韓国で医療的な緊急事態が起きたらどこへ行きますか？",
       "prompt_es": "¿Adónde vas en una emergencia médica en Corea?",
-      "choices_es": [
-        "약국 (farmacia)",
-        "카페 (café)",
-        "응급실 (urgencias)",
-        "편의점 (tienda 24h)"
-      ],
       "prompt_de": "Wohin gehst du in Korea im medizinischen Notfall?",
-      "choices_de": [
-        "약국 (Apotheke)",
-        "카페 (Café)",
-        "응급실 (Notaufnahme)",
-        "편의점 (Kiosk / Convenience Store)"
-      ],
       "prompt_fr": "Où aller en cas d'urgence médicale en Corée ?",
-      "choices_fr": [
-        "약국 (pharmacie)",
-        "카페 (café)",
-        "응급실 (urgences)",
-        "편의점 (supérette 24 h)"
-      ],
       "prompt_id": "Ke mana kamu pergi saat menghadapi keadaan darurat medis di Korea?",
-      "choices_id": [
-        "약국 (apotek)",
-        "카페 (kafe)",
-        "응급실 (unit gawat darurat)",
-        "편의점 (minimarket 24 jam)"
-      ],
       "prompt_th": "ในเกาหลี หากเกิดเหตุฉุกเฉินทางการแพทย์ ต้องไปที่ไหน?",
-      "choices_th": [
-        "약국 (ร้านขายยา)",
-        "카페 (ร้านกาแฟ)",
-        "응급실 (ห้องฉุกเฉิน)",
-        "편의점 (ร้านสะดวกซื้อ)"
-      ],
-      "prompt_vi": "Khi gặp trường hợp cấp cứu y tế ở Hàn Quốc, bạn đi đâu?",
-      "choices_vi": [
-        "약국 (nhà thuốc)",
-        "카페 (quán cà phê)",
-        "응급실 (phòng cấp cứu)",
-        "편의점 (cửa hàng tiện lợi)"
-      ]
+      "prompt_vi": "Khi gặp trường hợp cấp cứu y tế ở Hàn Quốc, bạn đi đâu?"
     },
     {
       "id": 19,
@@ -542,60 +446,60 @@
       "prompt": "열이 나요 means...",
       "prompt_zh_tw": "열이 나요 的意思是……",
       "choices": [
-        "두통이 있어요",
-        "기침이 나요",
-        "열이 나요",
-        "배가 아파요"
+        "I have a headache",
+        "I have a cough",
+        "I have a fever",
+        "My stomach hurts"
       ],
-      "correct": "열이 나요",
+      "correct": "I have a fever",
       "prompt_ja": "열이 나요 はどういう意味ですか？",
       "prompt_es": "열이 나요 significa...",
       "prompt_de": "열이 나요 bedeutet …",
       "choices_de": [
-        "두통이 있어요",
-        "기침이 나요",
-        "열이 나요",
-        "배가 아파요"
+        "Ich habe Kopfschmerzen",
+        "Ich habe Husten",
+        "Ich habe Fieber",
+        "Mir tut der Bauch weh"
       ],
       "choices_es": [
-        "두통이 있어요",
-        "기침이 나요",
-        "열이 나요",
-        "배가 아파요"
+        "Me duele la cabeza",
+        "Tengo tos",
+        "Tengo fiebre",
+        "Me duele el estómago"
       ],
       "prompt_fr": "열이 나요 signifie…",
       "choices_fr": [
-        "두통이 있어요",
-        "기침이 나요",
-        "열이 나요",
-        "배가 아파요"
+        "J'ai mal à la tête",
+        "Je tousse",
+        "J'ai de la fièvre",
+        "J'ai mal au ventre"
       ],
       "prompt_id": "열이 나요 berarti...",
       "choices_id": [
-        "두통이 있어요",
-        "기침이 나요",
-        "열이 나요",
-        "배가 아파요"
+        "Saya sakit kepala",
+        "Saya batuk",
+        "Saya demam",
+        "Saya sakit perut"
       ],
       "choices_ja": [
-        "두통이 있어요",
-        "기침이 나요",
-        "열이 나요",
-        "배가 아파요"
+        "頭痛がします",
+        "咳が出ます",
+        "熱があります",
+        "お腹が痛いです"
       ],
       "prompt_th": "열이 나요 แปลว่า…",
       "choices_th": [
-        "두통이 있어요",
-        "기침이 나요",
-        "열이 나요",
-        "배가 아파요"
+        "ฉันปวดหัว",
+        "ฉันไอ",
+        "ฉันมีไข้",
+        "ฉันปวดท้อง"
       ],
       "prompt_vi": "열이 나요 có nghĩa là...",
       "choices_vi": [
-        "두통이 있어요",
-        "기침이 나요",
-        "열이 나요",
-        "배가 아파요"
+        "Tôi bị đau đầu",
+        "Tôi bị ho",
+        "Tôi bị sốt",
+        "Tôi bị đau bụng"
       ],
       "choices_zh_tw": [
         "我有頭痛",

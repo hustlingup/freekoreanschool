@@ -145,7 +145,7 @@
       "audio": "초록색",
       "meaning": "Green — from 초록 (verdant green)",
       "meaning_zh_tw": "綠色——來自 초록（翠綠）",
-      "meaning_ja": "緑",
+      "meaning_ja": "緑 ― 초록（深緑）から",
       "meaning_es": "Verde — de 초록 (verde intenso)",
       "meaning_de": "Grün — von 초록 (sattes Grün)",
       "meaning_fr": "Vert — de 초록 (vert végétal, verdoyant)",
@@ -404,139 +404,43 @@
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "What color is 파란색?",
-      "prompt_zh_tw": "파란색 是什麼顏色？",
+      "prompt": "빨갛다 → the color noun form is...",
+      "prompt_zh_tw": "빨갛다 → 表示顏色的名詞形式是……",
       "choices": [
-        "Red",
-        "Yellow",
-        "Blue",
-        "Green"
+        "빨간색",
+        "빨갛색",
+        "빨가색",
+        "빨갛다색"
       ],
-      "choices_zh_tw": [
-        "紅色",
-        "黃色",
-        "藍色",
-        "綠色"
-      ],
-      "choices_ja": [
-        "赤",
-        "黄色",
-        "青",
-        "緑"
-      ],
-      "correct": "Blue",
-      "prompt_ja": "파란색は何色ですか？",
-      "prompt_es": "¿De qué color es 파란색?",
-      "choices_es": [
-        "Rojo",
-        "Amarillo",
-        "Azul",
-        "Verde"
-      ],
-      "prompt_de": "Welche Farbe ist 파란색?",
-      "choices_de": [
-        "Rot",
-        "Gelb",
-        "Blau",
-        "Grün"
-      ],
-      "prompt_fr": "De quelle couleur est 파란색 ?",
-      "choices_fr": [
-        "Rouge",
-        "Jaune",
-        "Bleu",
-        "Vert"
-      ],
-      "prompt_id": "파란색 itu warna apa?",
-      "choices_id": [
-        "Merah",
-        "Kuning",
-        "Biru",
-        "Hijau"
-      ],
-      "prompt_th": "파란색 คือสีอะไร?",
-      "choices_th": [
-        "สีแดง",
-        "สีเหลือง",
-        "สีน้ำเงิน",
-        "สีเขียว"
-      ],
-      "prompt_vi": "파란색 là màu gì?",
-      "choices_vi": [
-        "Đỏ",
-        "Vàng",
-        "Xanh dương",
-        "Xanh lá"
-      ]
+      "correct": "빨간색",
+      "prompt_ja": "빨갛다 → 色を表す名詞形は？",
+      "prompt_es": "빨갛다 → la forma sustantiva del color es...",
+      "prompt_de": "빨갛다 → die Farbnomen-Form lautet ...",
+      "prompt_fr": "빨갛다 → la forme nominale de la couleur est...",
+      "prompt_id": "빨갛다 → bentuk kata benda warnanya adalah...",
+      "prompt_th": "빨갛다 → รูปคำนามบอกสีคือ...",
+      "prompt_vi": "빨갛다 → dạng danh từ chỉ màu là..."
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "하늘색 literally means 'sky color.' Which color is it?",
-      "prompt_zh_tw": "하늘색 字面意思是「天空的顏色」。它是哪種顏色？",
+      "prompt": "하늘 means 'sky.' Which color word is built from it?",
+      "prompt_zh_tw": "하늘 意思是「天空」。哪個顏色詞是由它構成的？",
       "choices": [
-        "Dark blue",
-        "Sky blue",
-        "Purple",
-        "Teal"
+        "하늘색",
+        "파란색",
+        "보라색",
+        "회색"
       ],
-      "choices_zh_tw": [
-        "深藍色",
-        "天空藍",
-        "紫色",
-        "藍綠色"
-      ],
-      "choices_ja": [
-        "濃い青",
-        "空色",
-        "紫",
-        "ティール"
-      ],
-      "correct": "Sky blue",
-      "prompt_ja": "하늘색は文字通り「空の色」を意味します。何色ですか？",
-      "prompt_es": "하늘색 literalmente significa \"color del cielo\". ¿Qué color es?",
-      "choices_es": [
-        "Azul oscuro",
-        "Azul cielo",
-        "Morado",
-        "Turquesa"
-      ],
-      "prompt_de": "하늘색 bedeutet wörtlich „Himmelsfarbe“. Welche Farbe ist das?",
-      "choices_de": [
-        "Dunkelblau",
-        "Himmelblau",
-        "Lila",
-        "Petrol"
-      ],
-      "prompt_fr": "하늘색 signifie littéralement « couleur du ciel ». De quelle couleur s'agit-il ?",
-      "choices_fr": [
-        "Bleu foncé",
-        "Bleu ciel",
-        "Violet",
-        "Bleu canard"
-      ],
-      "prompt_id": "하늘색 secara harfiah berarti 'warna langit.' Warna apakah itu?",
-      "choices_id": [
-        "Biru tua",
-        "Biru langit",
-        "Ungu",
-        "Biru kehijauan"
-      ],
-      "prompt_th": "하늘색 มีความหมายตามตัวอักษรว่า “สีของท้องฟ้า” เป็นสีใด?",
-      "choices_th": [
-        "สีน้ำเงินเข้ม",
-        "สีฟ้า",
-        "สีม่วง",
-        "สีเขียวอมฟ้า"
-      ],
-      "prompt_vi": "하늘색 có nghĩa đen là \"màu bầu trời\". Đó là màu nào?",
-      "choices_vi": [
-        "Xanh dương đậm",
-        "Xanh da trời",
-        "Tím",
-        "Xanh mòng két"
-      ]
+      "correct": "하늘색",
+      "prompt_ja": "하늘 は「空」という意味です。それを含む色の単語はどれですか？",
+      "prompt_es": "하늘 significa \"cielo\". ¿Qué palabra de color se forma a partir de ella?",
+      "prompt_de": "하늘 bedeutet „Himmel“. Welches Farbwort ist daraus gebildet?",
+      "prompt_fr": "하늘 signifie « ciel ». Quel mot de couleur en est formé ?",
+      "prompt_id": "하늘 berarti 'langit.' Kata warna mana yang dibentuk darinya?",
+      "prompt_th": "하늘 แปลว่า “ท้องฟ้า” คำเรียกสีใดสร้างขึ้นจากคำนี้?",
+      "prompt_vi": "하늘 có nghĩa là \"bầu trời\". Từ chỉ màu nào được tạo từ nó?"
     },
     {
       "id": 19,
@@ -554,58 +458,10 @@
       "prompt_ja": "韓国語でピンクは？",
       "prompt_es": "Rosa en coreano es...",
       "prompt_de": "Rosa heißt auf Koreanisch ...",
-      "choices_de": [
-        "보라색",
-        "분홍색",
-        "갈색",
-        "주황색"
-      ],
-      "choices_es": [
-        "보라색",
-        "분홍색",
-        "갈색",
-        "주황색"
-      ],
       "prompt_fr": "En coréen, « rose » se dit...",
-      "choices_fr": [
-        "보라색",
-        "분홍색",
-        "갈색",
-        "주황색"
-      ],
       "prompt_id": "Merah muda dalam bahasa Korea adalah...",
-      "choices_id": [
-        "보라색",
-        "분홍색",
-        "갈색",
-        "주황색"
-      ],
-      "choices_ja": [
-        "보라색",
-        "분홍색",
-        "갈색",
-        "주황색"
-      ],
       "prompt_th": "สีชมพูในภาษาเกาหลีคือ...",
-      "choices_th": [
-        "보라색",
-        "분홍색",
-        "갈색",
-        "주황색"
-      ],
-      "prompt_vi": "Màu hồng trong tiếng Hàn là...",
-      "choices_vi": [
-        "보라색",
-        "분홍색",
-        "갈색",
-        "주황색"
-      ],
-      "choices_zh_tw": [
-        "보라색",
-        "분홍색",
-        "갈색",
-        "주황색"
-      ]
+      "prompt_vi": "Màu hồng trong tiếng Hàn là..."
     },
     {
       "id": 20,

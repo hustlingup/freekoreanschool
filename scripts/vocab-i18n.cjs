@@ -52,6 +52,11 @@ function walk(node, trail, hit) {
   for (const f of FIELDS) {
     if (ARRAY_FIELDS.has(f)) {
       if (Array.isArray(node[f]) && node[f].every(x => typeof x === 'string')) {
+        // An all-Korean option set is deliberately NOT localized — Hangul is
+        // Hangul in every locale, and a per-locale copy both drifts and leaks
+        // the answer. docs/vocab-quiz-standard.md requires deleting those, so
+        // counting them as missing translations would fight that rule.
+        if (node[f].every(x => /[가-힣]/.test(x))) continue;
         hit({ path: trail.concat(f).join('.'), field: f, en: node[f], node, isArray: true });
       }
     } else if (typeof node[f] === 'string') {

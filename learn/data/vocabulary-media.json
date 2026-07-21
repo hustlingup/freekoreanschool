@@ -410,66 +410,66 @@
       "prompt": "한류 refers to...",
       "prompt_zh_tw": "한류 指的是……",
       "choices": [
-        "Korean food",
-        "Korean language",
-        "The Korean Wave (global spread of K-culture)",
-        "Korean history"
+        "A style of traditional Korean music",
+        "The global spread of Korean pop culture",
+        "A Korean television broadcasting network",
+        "A genre of Korean historical drama"
       ],
       "choices_zh_tw": [
-        "韓國料理",
-        "韓語",
-        "韓流（韓國文化的全球傳播）",
-        "韓國歷史"
+        "韓國傳統音樂的一種風格",
+        "韓國流行文化的全球傳播",
+        "韓國的電視廣播網",
+        "韓國古裝劇的一種類型"
       ],
       "choices_ja": [
-        "韓国料理",
-        "韓国語",
-        "韓流（Kカルチャーの世界的な普及）",
-        "韓国の歴史"
+        "韓国の伝統音楽のジャンル",
+        "韓国大衆文化の世界的な広がり",
+        "韓国のテレビ放送局",
+        "韓国の時代劇のジャンル"
       ],
-      "correct": "The Korean Wave (global spread of K-culture)",
+      "correct": "The global spread of Korean pop culture",
       "prompt_ja": "한류 が指すのは？",
       "prompt_es": "한류 se refiere a...",
       "choices_es": [
-        "Comida coreana",
-        "El idioma coreano",
-        "La Ola Coreana (difusión mundial del K-culture)",
-        "Historia de Corea"
+        "Un estilo de música tradicional coreana",
+        "La difusión mundial de la cultura pop coreana",
+        "Una cadena de televisión coreana",
+        "Un género de drama histórico coreano"
       ],
       "prompt_de": "한류 bezeichnet …",
       "choices_de": [
-        "Koreanisches Essen",
-        "Die koreanische Sprache",
-        "Die Koreanische Welle (weltweite Verbreitung der K-Kultur)",
-        "Koreanische Geschichte"
+        "Ein Stil traditioneller koreanischer Musik",
+        "Die weltweite Verbreitung der koreanischen Popkultur",
+        "Ein koreanischer Fernsehsender",
+        "Ein Genre koreanischer Historiendramen"
       ],
       "prompt_fr": "한류 désigne…",
       "choices_fr": [
-        "La cuisine coréenne",
-        "La langue coréenne",
-        "La Vague coréenne (diffusion mondiale de la culture K)",
-        "L'histoire de la Corée"
+        "Un style de musique traditionnelle coréenne",
+        "La diffusion mondiale de la culture pop coréenne",
+        "Une chaîne de télévision coréenne",
+        "Un genre de drama historique coréen"
       ],
       "prompt_id": "한류 mengacu pada...",
       "choices_id": [
-        "Makanan Korea",
-        "Bahasa Korea",
-        "Gelombang Korea (penyebaran budaya Korea ke seluruh dunia)",
-        "Sejarah Korea"
+        "Sebuah gaya musik tradisional Korea",
+        "Penyebaran budaya pop Korea ke seluruh dunia",
+        "Sebuah stasiun televisi Korea",
+        "Sebuah genre drama sejarah Korea"
       ],
       "prompt_th": "한류 หมายถึง…",
       "choices_th": [
-        "อาหารเกาหลี",
-        "ภาษาเกาหลี",
-        "กระแสเกาหลี (การแพร่กระจายของวัฒนธรรมเกาหลีไปทั่วโลก)",
-        "ประวัติศาสตร์เกาหลี"
+        "ดนตรีพื้นบ้านเกาหลีรูปแบบหนึ่ง",
+        "การแพร่กระจายของวัฒนธรรมป็อปเกาหลีไปทั่วโลก",
+        "สถานีโทรทัศน์ของเกาหลี",
+        "ละครย้อนยุคเกาหลีประเภทหนึ่ง"
       ],
       "prompt_vi": "한류 chỉ...",
       "choices_vi": [
-        "Ẩm thực Hàn Quốc",
-        "Tiếng Hàn",
-        "Làn sóng Hàn Quốc (sự lan tỏa toàn cầu của văn hóa Hàn)",
-        "Lịch sử Hàn Quốc"
+        "Một thể loại nhạc truyền thống Hàn Quốc",
+        "Sự lan tỏa toàn cầu của văn hóa đại chúng Hàn Quốc",
+        "Một đài truyền hình Hàn Quốc",
+        "Một thể loại phim cổ trang Hàn Quốc"
       ]
     },
     {
@@ -548,74 +548,26 @@
       "prompt": "Which word means 'movie' in Korean?",
       "prompt_zh_tw": "哪個詞在韓語中表示「電影」？",
       "choices": [
-        "Drama",
-        "Movie",
-        "Music",
-        "Streaming"
+        "드라마",
+        "영화",
+        "뮤직비디오",
+        "예능"
       ],
-      "choices_zh_tw": [
-        "韓劇",
-        "電影",
-        "音樂",
-        "串流"
-      ],
-      "choices_ja": [
-        "ドラマ",
-        "映画",
-        "音楽",
-        "ストリーミング"
-      ],
-      "correct": "Movie",
+      "correct": "영화",
       "prompt_ja": "「映画」を意味する韓国語はどれですか？",
       "prompt_es": "¿Qué palabra significa \"película\" en coreano?",
-      "choices_es": [
-        "Drama",
-        "Película",
-        "Música",
-        "Streaming"
-      ],
       "prompt_de": "Welches Wort bedeutet auf Koreanisch „Film“?",
-      "choices_de": [
-        "Drama",
-        "Film",
-        "Musik",
-        "Streaming"
-      ],
       "prompt_fr": "Quel mot signifie « film » en coréen ?",
-      "choices_fr": [
-        "Drama",
-        "Film",
-        "Musique",
-        "Streaming"
-      ],
       "prompt_id": "Kata mana yang berarti 'film' dalam bahasa Korea?",
-      "choices_id": [
-        "Drama",
-        "Film",
-        "Musik",
-        "Streaming"
-      ],
       "prompt_th": "คำใดในภาษาเกาหลีแปลว่า \"ภาพยนตร์\"?",
-      "choices_th": [
-        "ละคร",
-        "ภาพยนตร์",
-        "ดนตรี",
-        "สตรีมมิง"
-      ],
-      "prompt_vi": "Từ nào có nghĩa là \"phim điện ảnh\" trong tiếng Hàn?",
-      "choices_vi": [
-        "Phim truyền hình",
-        "Phim điện ảnh",
-        "Âm nhạc",
-        "Phát trực tuyến"
-      ]
+      "prompt_vi": "Từ nào có nghĩa là \"phim điện ảnh\" trong tiếng Hàn?"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "What does 팬 mean in Korean?",
-      "prompt_zh_tw": "韓語中팬 是什麼意思？",
+      "prompt_zh_tw": "韓語中 팬 是什麼意思？",
       "choices": [
         "Idol",
         "Singer",
@@ -635,7 +587,7 @@
         "俳優"
       ],
       "correct": "Fan",
-      "prompt_ja": "韓国語で팬 の意味は？",
+      "prompt_ja": "韓国語で 팬 の意味は？",
       "prompt_es": "¿Qué significa 팬 en coreano?",
       "choices_es": [
         "Ídolo",

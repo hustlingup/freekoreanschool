@@ -423,66 +423,66 @@
       "prompt": "What is 학원?",
       "prompt_zh_tw": "학원 是什麼？",
       "choices": [
-        "Library",
-        "University",
+        "Public library",
+        "University campus",
         "Private cram school",
-        "Classroom"
+        "School classroom"
       ],
       "choices_zh_tw": [
-        "圖書館",
-        "大學",
-        "補習班",
-        "教室"
+        "公共圖書館",
+        "大學校園",
+        "私立補習班",
+        "學校教室"
       ],
       "choices_ja": [
-        "図書館",
-        "大学",
-        "塾（ハグォン）",
-        "教室"
+        "公共図書館",
+        "大学キャンパス",
+        "民間の学習塾（ハグォン）",
+        "学校の教室"
       ],
       "correct": "Private cram school",
       "prompt_ja": "학원 とは何ですか？",
       "prompt_es": "¿Qué es un 학원?",
       "choices_es": [
-        "Biblioteca",
-        "Universidad",
-        "Academia de refuerzo",
-        "Aula"
+        "Biblioteca pública",
+        "Campus universitario",
+        "Academia de refuerzo privada",
+        "Aula escolar"
       ],
       "prompt_de": "Was ist ein 학원?",
       "choices_de": [
-        "Bibliothek",
-        "Universität",
-        "Private Nachhilfeschule (Paukschule)",
-        "Klassenzimmer"
+        "Öffentliche Bibliothek",
+        "Universitätscampus",
+        "Private Nachhilfeschule",
+        "Schulklassenzimmer"
       ],
       "prompt_fr": "Qu'est-ce qu'un 학원 ?",
       "choices_fr": [
-        "Une bibliothèque",
-        "Une université",
+        "Une bibliothèque publique",
+        "Un campus universitaire",
         "Une école de soutien scolaire privée",
-        "Une salle de classe"
+        "Une salle de classe d'école"
       ],
       "prompt_id": "Apa itu 학원?",
       "choices_id": [
-        "Perpustakaan",
-        "Universitas",
+        "Perpustakaan umum",
+        "Kampus universitas",
         "Tempat bimbingan belajar swasta",
-        "Ruang kelas"
+        "Ruang kelas sekolah"
       ],
       "prompt_th": "학원 คืออะไร?",
       "choices_th": [
-        "ห้องสมุด",
-        "มหาวิทยาลัย",
+        "ห้องสมุดสาธารณะ",
+        "วิทยาเขตมหาวิทยาลัย",
         "โรงเรียนกวดวิชาเอกชน",
-        "ห้องเรียน"
+        "ห้องเรียนของโรงเรียน"
       ],
       "prompt_vi": "학원 là gì?",
       "choices_vi": [
-        "Thư viện",
-        "Trường đại học",
+        "Thư viện công cộng",
+        "Khuôn viên trường đại học",
         "Trung tâm luyện thi tư nhân",
-        "Phòng học"
+        "Phòng học của trường"
       ]
     },
     {
@@ -569,59 +569,11 @@
       "correct": "장학금",
       "prompt_ja": "「奨学金」を意味する言葉はどれですか？",
       "prompt_es": "¿Qué palabra significa \"beca\"?",
-      "choices_es": [
-        "성적",
-        "수능",
-        "졸업",
-        "장학금"
-      ],
       "prompt_de": "Welches Wort bedeutet „Stipendium“?",
-      "choices_de": [
-        "성적",
-        "수능",
-        "졸업",
-        "장학금"
-      ],
       "prompt_fr": "Quel mot signifie « bourse d'études » ?",
-      "choices_fr": [
-        "성적",
-        "수능",
-        "졸업",
-        "장학금"
-      ],
       "prompt_id": "Kata mana yang berarti \"beasiswa\"?",
-      "choices_id": [
-        "성적",
-        "수능",
-        "졸업",
-        "장학금"
-      ],
-      "choices_ja": [
-        "성적",
-        "수능",
-        "졸업",
-        "장학금"
-      ],
       "prompt_th": "คำใดหมายถึง \"ทุนการศึกษา\"?",
-      "choices_th": [
-        "성적",
-        "수능",
-        "졸업",
-        "장학금"
-      ],
-      "prompt_vi": "Từ nào có nghĩa là \"học bổng\"?",
-      "choices_vi": [
-        "성적",
-        "수능",
-        "졸업",
-        "장학금"
-      ],
-      "choices_zh_tw": [
-        "성적",
-        "수능",
-        "졸업",
-        "장학금"
-      ]
+      "prompt_vi": "Từ nào có nghĩa là \"học bổng\"?"
     },
     {
       "id": 21,

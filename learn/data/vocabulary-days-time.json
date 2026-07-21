@@ -280,70 +280,22 @@
       "id": 9,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "수요일 means...",
-      "prompt_zh_tw": "수요일 的意思是……",
+      "prompt": "수요일 is named after the element 水 (water). Which weekday is named after 火 (fire)?",
+      "prompt_zh_tw": "수요일 取自五行中的「水」。那麼取自「火」的是哪一天？",
       "choices": [
-        "Monday",
-        "Wednesday",
-        "Friday",
-        "Sunday"
+        "월요일",
+        "화요일",
+        "목요일",
+        "금요일"
       ],
-      "choices_zh_tw": [
-        "星期一",
-        "星期三",
-        "星期五",
-        "星期日"
-      ],
-      "choices_ja": [
-        "月曜日",
-        "水曜日",
-        "金曜日",
-        "日曜日"
-      ],
-      "correct": "Wednesday",
-      "prompt_ja": "수요일は何曜日ですか？",
-      "prompt_es": "수요일 significa...",
-      "choices_es": [
-        "Lunes",
-        "Miércoles",
-        "Viernes",
-        "Domingo"
-      ],
-      "prompt_de": "수요일 bedeutet ...",
-      "choices_de": [
-        "Montag",
-        "Mittwoch",
-        "Freitag",
-        "Sonntag"
-      ],
-      "prompt_fr": "수요일 signifie...",
-      "choices_fr": [
-        "Lundi",
-        "Mercredi",
-        "Vendredi",
-        "Dimanche"
-      ],
-      "prompt_id": "수요일 berarti...",
-      "choices_id": [
-        "Senin",
-        "Rabu",
-        "Jumat",
-        "Minggu"
-      ],
-      "prompt_th": "수요일 หมายถึง...",
-      "choices_th": [
-        "วันจันทร์",
-        "วันพุธ",
-        "วันศุกร์",
-        "วันอาทิตย์"
-      ],
-      "prompt_vi": "수요일 có nghĩa là...",
-      "choices_vi": [
-        "Thứ Hai",
-        "Thứ Tư",
-        "Thứ Sáu",
-        "Chủ nhật"
-      ]
+      "correct": "화요일",
+      "prompt_ja": "수요일 は五行の「水」に由来します。では「火」に由来する曜日はどれですか？",
+      "prompt_es": "수요일 toma su nombre del elemento 水 (agua). ¿Qué día de la semana toma su nombre de 火 (fuego)?",
+      "prompt_de": "수요일 ist nach dem Element 水 (Wasser) benannt. Welcher Wochentag ist nach 火 (Feuer) benannt?",
+      "prompt_fr": "수요일 tire son nom de l'élément 水 (eau). Quel jour de la semaine tire son nom de 火 (feu) ?",
+      "prompt_id": "수요일 dinamai dari unsur 水 (air). Hari apa yang dinamai dari unsur 火 (api)?",
+      "prompt_th": "수요일 ตั้งชื่อตามธาตุ 水 (น้ำ) แล้ววันใดตั้งชื่อตามธาตุ 火 (ไฟ)?",
+      "prompt_vi": "수요일 được đặt tên theo hành 水 (Thủy: nước). Vậy thứ nào được đặt tên theo hành 火 (Hỏa: lửa)?"
     },
     {
       "id": 10,
@@ -595,20 +547,17 @@
       "choices": [
         "Sino-Korean (일, 이, 삼...)",
         "Native Korean (하나, 둘, 셋...)",
-        "Either one works",
-        "Roman numerals"
+        "Either one works"
       ],
       "choices_zh_tw": [
         "漢字語（일、이、삼……）",
         "固有語（하나、둘、셋……）",
-        "兩種都可以",
-        "羅馬數字"
+        "兩種都可以"
       ],
       "choices_ja": [
         "漢数字（일、이、삼…）",
         "固有語（하나、둘、셋…）",
-        "どちらでもよい",
-        "ローマ数字"
+        "どちらでもよい"
       ],
       "correct": "Native Korean (하나, 둘, 셋...)",
       "prompt_ja": "시（時）と組み合わせる数体系は？",
@@ -616,113 +565,59 @@
       "choices_es": [
         "Sino-coreano (일, 이, 삼...)",
         "Coreano nativo (하나, 둘, 셋...)",
-        "Cualquiera sirve",
-        "Números romanos"
+        "Cualquiera sirve"
       ],
       "prompt_de": "Welches Zahlensystem verwendet man mit 시 (Uhr)?",
       "choices_de": [
         "Sinokoreanisch (일, 이, 삼...)",
         "Rein koreanisch (하나, 둘, 셋...)",
-        "Beides funktioniert",
-        "Römische Zahlen"
+        "Beides funktioniert"
       ],
       "prompt_fr": "Quel système de numération utilise-t-on avec 시 (heure) ?",
       "choices_fr": [
         "Sino-coréen (일, 이, 삼...)",
         "Coréen natif (하나, 둘, 셋...)",
-        "L'un ou l'autre convient",
-        "Chiffres romains"
+        "L'un ou l'autre convient"
       ],
       "prompt_id": "Sistem angka mana yang dipakai bersama 시 (jam)?",
       "choices_id": [
         "Sino-Korea (일, 이, 삼...)",
         "Asli Korea (하나, 둘, 셋...)",
-        "Keduanya bisa dipakai",
-        "Angka Romawi"
+        "Keduanya bisa dipakai"
       ],
       "prompt_th": "ใช้ระบบตัวเลขแบบใดกับ 시 (นาฬิกา)?",
       "choices_th": [
         "จีน-เกาหลี (일, 이, 삼...)",
         "เกาหลีแท้ (하나, 둘, 셋...)",
-        "ใช้ได้ทั้งสองแบบ",
-        "เลขโรมัน"
+        "ใช้ได้ทั้งสองแบบ"
       ],
       "prompt_vi": "Bạn dùng hệ số đếm nào với 시 (giờ)?",
       "choices_vi": [
         "Số Hán-Hàn (일, 이, 삼...)",
         "Số thuần Hàn (하나, 둘, 셋...)",
-        "Dùng loại nào cũng được",
-        "Số La Mã"
+        "Dùng loại nào cũng được"
       ]
     },
     {
       "id": 22,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "오후 두 시 반 means...",
-      "prompt_zh_tw": "오후 두 시 반 的意思是……",
+      "prompt": "Which Korean phrase means 2:30 in the afternoon?",
+      "prompt_zh_tw": "下午2點半的韓語說法是哪一個？",
       "choices": [
-        "2:00 AM",
-        "2:30 AM",
-        "2:00 PM",
-        "2:30 PM"
+        "오전 두 시 반",
+        "오후 두 시 반",
+        "오후 이 시 반",
+        "오후 세 시 반"
       ],
-      "choices_zh_tw": [
-        "凌晨2點整",
-        "凌晨2點半",
-        "下午2點整",
-        "下午2點半"
-      ],
-      "choices_ja": [
-        "午前2時ちょうど",
-        "午前2時半",
-        "午後2時ちょうど",
-        "午後2時半"
-      ],
-      "correct": "2:30 PM",
-      "prompt_ja": "오후 두 시 반 は何時何分ですか？",
-      "prompt_es": "오후 두 시 반 significa...",
-      "choices_es": [
-        "2:00 AM",
-        "2:30 AM",
-        "2:00 PM",
-        "2:30 PM"
-      ],
-      "prompt_de": "오후 두 시 반 bedeutet ...",
-      "choices_de": [
-        "2:00 Uhr morgens",
-        "2:30 Uhr morgens",
-        "14:00 Uhr",
-        "14:30 Uhr"
-      ],
-      "prompt_fr": "오후 두 시 반 signifie...",
-      "choices_fr": [
-        "2 h 00 du matin",
-        "2 h 30 du matin",
-        "14 h 00",
-        "14 h 30"
-      ],
-      "prompt_id": "오후 두 시 반 berarti...",
-      "choices_id": [
-        "Pukul 02.00 dini hari",
-        "Pukul 02.30 dini hari",
-        "Pukul 14.00",
-        "Pukul 14.30"
-      ],
-      "prompt_th": "오후 두 시 반 หมายถึง...",
-      "choices_th": [
-        "ตี 2 ตรง",
-        "ตี 2 ครึ่ง",
-        "บ่าย 2 โมงตรง",
-        "บ่าย 2 โมงครึ่ง"
-      ],
-      "prompt_vi": "오후 두 시 반 có nghĩa là...",
-      "choices_vi": [
-        "2:00 sáng",
-        "2:30 sáng",
-        "2:00 chiều",
-        "2:30 chiều"
-      ]
+      "correct": "오후 두 시 반",
+      "prompt_ja": "午後2時半を表す韓国語はどれですか？",
+      "prompt_es": "¿Qué expresión coreana significa las 2:30 de la tarde?",
+      "prompt_de": "Welcher koreanische Ausdruck bedeutet 14:30 Uhr?",
+      "prompt_fr": "Quelle expression coréenne signifie 14 h 30 ?",
+      "prompt_id": "Ungkapan bahasa Korea mana yang berarti pukul 14.30?",
+      "prompt_th": "วลีภาษาเกาหลีใดหมายถึงบ่าย 2 โมงครึ่ง?",
+      "prompt_vi": "Cụm từ tiếng Hàn nào có nghĩa là 2 giờ 30 chiều?"
     },
     {
       "id": 23,

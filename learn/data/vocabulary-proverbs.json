@@ -1,13 +1,13 @@
 {
   "lesson": "vocab-proverbs",
-  "totalSteps": 17,
+  "totalSteps": 18,
   "stages": [
     {
       "id": 1,
       "name": "Proverbs",
       "name_kr": "속담",
       "first_step": 1,
-      "last_step": 17,
+      "last_step": 18,
       "time_minutes": 12,
       "name_es": "Proverbios",
       "name_de": "Sprichwörter",
@@ -1010,69 +1010,69 @@
       "id": 14,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "고생 끝에 낙이 온다 is closest to...",
-      "prompt_zh_tw": "고생 끝에 낙이 온다 最接近哪個說法？",
+      "prompt": "고생 끝에 낙이 온다 — what is this proverb telling you?",
+      "prompt_zh_tw": "고생 끝에 낙이 온다 這句諺語想告訴你什麼？",
       "choices": [
-        "No pain, no gain",
-        "Empty vessels make noise",
-        "Speak of the devil",
-        "Every step counts"
+        "Reward comes after you endure the hard part",
+        "The loudest person has the least to offer",
+        "Nothing you say stays private for long",
+        "A small job is lighter when two people share it"
       ],
       "choices_zh_tw": [
-        "苦盡甘來（沒有付出就沒有收穫）",
-        "空桶響聲大",
-        "說曹操，曹操到",
-        "每一步都重要"
+        "熬過辛苦之後才會嚐到甜頭",
+        "話說得最大聲的人往往最沒有實力",
+        "說出口的話遲早都會傳出去",
+        "再小的事，兩個人一起做也會輕鬆許多"
       ],
       "choices_ja": [
-        "No pain, no gain（苦あれば楽あり）",
-        "空き缶はよく鳴る",
-        "噂をすれば影",
-        "一歩一歩が大切"
+        "苦しい時期を耐えた後に報われる",
+        "声が大きい人ほど中身がない",
+        "口にしたことは必ずどこかに漏れる",
+        "小さな仕事でも二人でやれば楽になる"
       ],
-      "correct": "No pain, no gain",
-      "prompt_ja": "고생 끝에 낙이 온다 に最も近いことわざは？",
-      "prompt_es": "고생 끝에 낙이 온다 se acerca más a...",
+      "correct": "Reward comes after you endure the hard part",
+      "prompt_ja": "고생 끝에 낙이 온다 ということわざが伝えているのは？",
+      "prompt_es": "고생 끝에 낙이 온다 — ¿qué te está diciendo este refrán?",
       "choices_es": [
-        "Sin dolor no hay recompensa",
-        "El que mucho habla poco hace",
-        "Hablando del rey de Roma...",
-        "Cada paso cuenta"
+        "La recompensa llega después de aguantar lo difícil",
+        "Quien más ruido hace es quien menos tiene que ofrecer",
+        "Nada de lo que dices queda en secreto mucho tiempo",
+        "Una tarea pequeña pesa menos si dos la comparten"
       ],
-      "prompt_de": "고생 끝에 낙이 온다 kommt am nächsten …",
+      "prompt_de": "고생 끝에 낙이 온다 — was sagt dir dieses Sprichwort?",
       "choices_de": [
-        "Ohne Fleiß kein Preis",
-        "Leere Fässer klingen hohl",
-        "Wenn man vom Teufel spricht",
-        "Jeder Schritt zählt"
+        "Die Belohnung kommt, nachdem du das Schwere durchgestanden hast",
+        "Wer am lautesten redet, hat am wenigsten zu bieten",
+        "Nichts, was du sagst, bleibt lange geheim",
+        "Eine kleine Aufgabe wiegt leichter, wenn zwei sie teilen"
       ],
-      "prompt_fr": "고생 끝에 낙이 온다 se rapproche le plus de…",
+      "prompt_fr": "고생 끝에 낙이 온다 — que vous dit ce proverbe ?",
       "choices_fr": [
-        "On n'a rien sans peine",
-        "Les tonneaux vides font le plus de bruit",
-        "Quand on parle du loup…",
-        "Chaque pas compte"
+        "La récompense vient après avoir enduré le plus dur",
+        "Celui qui parle le plus fort a le moins à offrir",
+        "Rien de ce que vous dites ne reste longtemps secret",
+        "Une petite tâche pèse moins quand deux personnes la partagent"
       ],
-      "prompt_id": "고생 끝에 낙이 온다 paling dekat maknanya dengan...",
+      "prompt_id": "고생 끝에 낙이 온다 — apa yang ingin disampaikan peribahasa ini?",
       "choices_id": [
-        "Tanpa kesusahan, tidak ada hasil",
-        "Tong kosong nyaring bunyinya",
-        "Baru disebut namanya, orangnya sudah datang",
-        "Setiap langkah itu berarti"
+        "Hasil manis datang setelah kamu bertahan melewati masa sulit",
+        "Orang yang paling nyaring bicaranya justru paling sedikit isinya",
+        "Tidak ada ucapanmu yang bisa disimpan rahasia lama-lama",
+        "Pekerjaan kecil pun terasa ringan bila dikerjakan berdua"
       ],
-      "prompt_th": "고생 끝에 낙이 온다 ใกล้เคียงกับข้อใดมากที่สุด?",
+      "prompt_th": "고생 끝에 낙이 온다 สุภาษิตนี้ต้องการบอกอะไรคุณ?",
       "choices_th": [
-        "ไม่ลำบากก็ไม่ได้อะไรมา",
-        "ภาชนะที่ว่างเปล่าส่งเสียงดัง",
-        "พูดถึงใคร คนนั้นก็มาพอดี",
-        "ทุกก้าวล้วนมีความหมาย"
+        "รางวัลจะมาถึงหลังจากที่คุณอดทนผ่านช่วงยากลำบาก",
+        "คนที่เสียงดังที่สุดมักเป็นคนที่มีเนื้อหาน้อยที่สุด",
+        "ไม่มีคำพูดใดที่จะเป็นความลับได้นาน",
+        "งานเล็ก ๆ ก็เบาลงเมื่อมีสองคนช่วยกัน"
       ],
-      "prompt_vi": "고생 끝에 낙이 온다 gần nghĩa nhất với...",
+      "prompt_vi": "고생 끝에 낙이 온다 — câu tục ngữ này muốn nói điều gì?",
       "choices_vi": [
-        "Không khổ luyện thì không thành công",
-        "Thùng rỗng kêu to",
-        "Nhắc Tào Tháo, Tào Tháo đến",
-        "Mỗi bước đi đều quan trọng"
+        "Phần thưởng đến sau khi bạn chịu đựng được giai đoạn khó khăn",
+        "Người nói to nhất thường là người ít thực lực nhất",
+        "Không có lời nào bạn nói mà giữ kín được lâu",
+        "Việc nhỏ cũng nhẹ hơn khi có hai người cùng làm"
       ]
     },
     {
@@ -1082,66 +1082,66 @@
       "prompt": "원숭이도 나무에서 떨어진다 means...",
       "prompt_zh_tw": "원숭이도 나무에서 떨어진다 的意思是……",
       "choices": [
-        "Monkeys are dangerous",
-        "Even experts make mistakes",
-        "Practice makes perfect",
-        "Avoid tall trees"
+        "Even someone highly skilled will slip up sometimes",
+        "Habits formed in childhood stay with you for life",
+        "The more you rush, the more time you lose",
+        "Speak kindly and kindness comes back to you"
       ],
       "choices_zh_tw": [
-        "猴子很危險",
-        "即使是專家也會犯錯",
-        "熟能生巧",
-        "避免爬高樹"
+        "再厲害的高手也有失手的時候",
+        "小時候養成的習慣會跟著你一輩子",
+        "越是著急，反而越浪費時間",
+        "說話溫和，回來的話也會溫和"
       ],
       "choices_ja": [
-        "猿は危険",
-        "専門家でもミスをする",
-        "練習が大切",
-        "高い木には登るな"
+        "どんな熟練者でも時には失敗する",
+        "幼い頃の癖は一生ついてまわる",
+        "急げば急ぐほど時間を失う",
+        "優しく話せば優しさが返ってくる"
       ],
-      "correct": "Even experts make mistakes",
+      "correct": "Even someone highly skilled will slip up sometimes",
       "prompt_ja": "원숭이도 나무에서 떨어진다 の意味は？",
       "prompt_es": "원숭이도 나무에서 떨어진다 significa...",
       "choices_es": [
-        "Los monos son peligrosos",
-        "Incluso los expertos cometen errores",
-        "La práctica hace al maestro",
-        "Evita los árboles altos"
+        "Incluso alguien muy hábil se equivoca alguna vez",
+        "Los hábitos de la infancia te acompañan toda la vida",
+        "Cuanto más te apresuras, más tiempo pierdes",
+        "Habla con amabilidad y la amabilidad volverá a ti"
       ],
       "prompt_de": "원숭이도 나무에서 떨어진다 bedeutet …",
       "choices_de": [
-        "Affen sind gefährlich",
-        "Auch Fachleute machen Fehler",
-        "Übung macht den Meister",
-        "Meide hohe Bäume"
+        "Auch wer sehr geübt ist, macht manchmal einen Fehler",
+        "In der Kindheit erlernte Gewohnheiten bleiben ein Leben lang",
+        "Je mehr du hetzt, desto mehr Zeit verlierst du",
+        "Sprich freundlich, dann kommt Freundlichkeit zurück"
       ],
       "prompt_fr": "원숭이도 나무에서 떨어진다 signifie…",
       "choices_fr": [
-        "Les singes sont dangereux",
-        "Même les experts font des erreurs",
-        "C'est en forgeant qu'on devient forgeron",
-        "Évitez les arbres hauts"
+        "Même quelqu'un de très habile commet parfois une erreur",
+        "Les habitudes prises dans l'enfance restent toute la vie",
+        "Plus on se presse, plus on perd de temps",
+        "Parlez avec gentillesse et la gentillesse vous reviendra"
       ],
       "prompt_id": "원숭이도 나무에서 떨어진다 berarti...",
       "choices_id": [
-        "Monyet itu berbahaya",
-        "Bahkan seorang ahli pun bisa berbuat salah",
-        "Latihan membuat sempurna",
-        "Hindari pohon yang tinggi"
+        "Bahkan orang yang sangat mahir pun sesekali berbuat salah",
+        "Kebiasaan yang terbentuk sejak kecil akan terbawa seumur hidup",
+        "Semakin terburu-buru, semakin banyak waktu yang terbuang",
+        "Berkatalah dengan baik, maka kebaikan akan kembali padamu"
       ],
       "prompt_th": "원숭이도 나무에서 떨어진다 แปลว่า…",
       "choices_th": [
-        "ลิงเป็นสัตว์อันตราย",
-        "แม้แต่ผู้เชี่ยวชาญก็ยังทำผิดพลาดได้",
-        "การฝึกฝนทำให้เชี่ยวชาญ",
-        "จงหลีกเลี่ยงต้นไม้สูง"
+        "แม้แต่คนที่เก่งมากก็ยังมีพลาดได้บ้าง",
+        "นิสัยที่ติดมาตั้งแต่เด็กจะอยู่กับเราไปตลอดชีวิต",
+        "ยิ่งรีบ ก็ยิ่งเสียเวลา",
+        "พูดจาดี ก็จะได้รับคำพูดดี ๆ กลับมา"
       ],
       "prompt_vi": "원숭이도 나무에서 떨어진다 có nghĩa là...",
       "choices_vi": [
-        "Khỉ rất nguy hiểm",
-        "Ngay cả chuyên gia cũng mắc lỗi",
-        "Luyện tập nhiều sẽ thành thạo",
-        "Hãy tránh xa những cây cao"
+        "Ngay cả người rất giỏi cũng có lúc sai sót",
+        "Thói quen hình thành từ nhỏ sẽ theo bạn cả đời",
+        "Càng vội vàng thì càng mất thời gian",
+        "Nói lời tử tế thì sẽ nhận lại lời tử tế"
       ]
     },
     {
@@ -1151,70 +1151,91 @@
       "prompt": "천 리 길도 한 걸음부터 encourages you to...",
       "prompt_zh_tw": "천 리 길도 한 걸음부터 在鼓勵你……",
       "choices": [
-        "Walk faster",
-        "Start with the first step",
-        "Plan everything carefully",
-        "Ask for help"
+        "Begin now, however far the goal still is",
+        "Check the route again even when you already know it",
+        "Share the load instead of carrying it alone",
+        "Stay calm and take the long way when time is short"
       ],
       "choices_zh_tw": [
-        "走快一點",
-        "從第一步開始",
-        "仔細規劃一切",
-        "尋求幫助"
+        "不管目標多遠，先開始行動",
+        "就算是熟悉的路，也要再確認一次",
+        "不要獨自扛，找人一起分擔",
+        "越是趕時間，越要沉住氣繞道走"
       ],
       "choices_ja": [
-        "もっと速く歩く",
-        "まず一歩を踏み出す",
-        "すべてを計画する",
-        "助けを求める"
+        "目標がどれほど遠くても、まず始めること",
+        "知っている道でももう一度確かめること",
+        "一人で抱え込まず、力を合わせること",
+        "時間がない時ほど落ち着いて回り道をすること"
       ],
-      "correct": "Start with the first step",
+      "correct": "Begin now, however far the goal still is",
       "prompt_ja": "천 리 길도 한 걸음부터 が促すのは？",
       "prompt_es": "천 리 길도 한 걸음부터 te alienta a...",
       "choices_es": [
-        "Caminar más rápido",
-        "Comenzar con el primer paso",
-        "Planificarlo todo cuidadosamente",
-        "Pedir ayuda"
+        "Empezar ya, por muy lejos que esté la meta",
+        "Comprobar el camino otra vez aunque ya lo conozcas",
+        "Repartir la carga en vez de llevarla solo",
+        "Mantener la calma y dar un rodeo cuando falta tiempo"
       ],
       "prompt_de": "천 리 길도 한 걸음부터 ermutigt dich dazu …",
       "choices_de": [
-        "Schneller zu gehen",
-        "Mit dem ersten Schritt anzufangen",
-        "Alles sorgfältig zu planen",
-        "Um Hilfe zu bitten"
+        "Jetzt anzufangen, so weit das Ziel auch entfernt ist",
+        "Den Weg noch einmal zu prüfen, auch wenn du ihn kennst",
+        "Die Last zu teilen, statt sie allein zu tragen",
+        "Ruhig zu bleiben und einen Umweg zu nehmen, wenn die Zeit drängt"
       ],
       "prompt_fr": "천 리 길도 한 걸음부터 vous encourage à…",
       "choices_fr": [
-        "Marcher plus vite",
-        "Commencer par le premier pas",
-        "Tout planifier soigneusement",
-        "Demander de l'aide"
+        "Commencer maintenant, aussi lointain que soit le but",
+        "Vérifier le chemin même quand vous le connaissez déjà",
+        "Partager la charge au lieu de la porter seul",
+        "Rester calme et faire un détour quand le temps presse"
       ],
       "prompt_id": "천 리 길도 한 걸음부터 mendorongmu untuk...",
       "choices_id": [
-        "Berjalan lebih cepat",
-        "Memulai dari langkah pertama",
-        "Merencanakan semuanya dengan cermat",
-        "Meminta bantuan"
+        "Mulailah sekarang, sejauh apa pun tujuannya",
+        "Periksa lagi jalannya walau kamu sudah hafal",
+        "Bagi bebannya daripada memikulnya sendirian",
+        "Tetap tenang dan ambil jalan memutar saat waktu mendesak"
       ],
       "prompt_th": "천 리 길도 한 걸음부터 เป็นคำกล่าวที่ให้กำลังใจให้คุณ…",
       "choices_th": [
-        "เดินให้เร็วขึ้น",
-        "เริ่มต้นจากก้าวแรก",
-        "วางแผนทุกอย่างอย่างรอบคอบ",
-        "ขอความช่วยเหลือ"
+        "ลงมือเริ่มเสียตั้งแต่ตอนนี้ ไม่ว่าเป้าหมายจะไกลแค่ไหน",
+        "ถามทางอีกครั้งแม้จะเป็นเส้นทางที่รู้จักดีอยู่แล้ว",
+        "แบ่งเบาภาระร่วมกันแทนที่จะแบกไว้คนเดียว",
+        "ใจเย็นและเลือกทางอ้อมเมื่อเวลาบีบคั้น"
       ],
       "prompt_vi": "천 리 길도 한 걸음부터 khuyến khích bạn...",
       "choices_vi": [
-        "Đi nhanh hơn",
-        "Bắt đầu bằng bước chân đầu tiên",
-        "Lên kế hoạch thật kỹ cho mọi thứ",
-        "Nhờ người khác giúp đỡ"
+        "Bắt đầu ngay, dù mục tiêu còn xa đến đâu",
+        "Hỏi lại đường ngay cả khi bạn đã biết đường",
+        "Cùng nhau gánh vác thay vì làm một mình",
+        "Giữ bình tĩnh và đi đường vòng khi gấp gáp"
       ]
     },
     {
       "id": 17,
+      "stage": 1,
+      "type": "match_quiz",
+      "prompt": "Your teammate boasts loudly about his skills but never finishes anything. Which proverb fits him?",
+      "prompt_zh_tw": "同伴總是大聲吹噓自己的本事，卻從來沒有把事情做完。哪一句諺語最適合他？",
+      "choices": [
+        "빈 수레가 요란하다",
+        "백지장도 맞들면 낫다",
+        "급할수록 돌아가라",
+        "아는 길도 물어가라"
+      ],
+      "correct": "빈 수레가 요란하다",
+      "prompt_ja": "同僚は自分の実力を大声で自慢するのに、何一つやり遂げません。どのことわざが当てはまりますか？",
+      "prompt_es": "Tu compañero presume a gritos de sus habilidades pero nunca termina nada. ¿Qué refrán le corresponde?",
+      "prompt_de": "Dein Teamkollege prahlt lautstark mit seinen Fähigkeiten, bringt aber nie etwas zu Ende. Welches Sprichwort passt zu ihm?",
+      "prompt_fr": "Votre coéquipier vante bruyamment ses talents mais ne termine jamais rien. Quel proverbe lui convient ?",
+      "prompt_id": "Rekan setimmu menyombongkan kemampuannya dengan lantang tapi tak pernah menyelesaikan apa pun. Peribahasa mana yang cocok untuknya?",
+      "prompt_th": "เพื่อนร่วมทีมของคุณคุยโวเสียงดังเรื่องฝีมือของตัวเอง แต่ไม่เคยทำอะไรสำเร็จสักอย่าง สุภาษิตข้อใดเหมาะกับเขา?",
+      "prompt_vi": "Người bạn cùng nhóm luôn khoe khoang ầm ĩ về tài năng của mình nhưng chẳng bao giờ hoàn thành việc gì. Câu tục ngữ nào hợp với anh ta?"
+    },
+    {
+      "id": 18,
       "stage": 1,
       "type": "lesson_complete",
       "title": "Proverbs Complete!",

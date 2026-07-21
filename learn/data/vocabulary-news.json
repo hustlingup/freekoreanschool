@@ -463,8 +463,8 @@
       ],
       "prompt_id": "속보입니다 diucapkan pada awal...",
       "choices_id": [
-        "Acara ragam (variety show)",
-        "Berita sela (breaking news)",
+        "Acara ragam",
+        "Berita sela",
         "Film dokumenter",
         "Wawancara"
       ],
@@ -490,136 +490,40 @@
       "prompt": "Which section of the news covers international stories?",
       "prompt_zh_tw": "新聞的哪個版塊涵蓋國際報導？",
       "choices": [
-        "사회 (society)",
-        "경제 (economy)",
-        "국제 (international)",
-        "연예 (entertainment)"
+        "사회",
+        "경제",
+        "국제",
+        "연예"
       ],
-      "choices_zh_tw": [
-        "사회（社會）",
-        "경제（經濟）",
-        "국제（國際）",
-        "연예（娛樂）"
-      ],
-      "choices_ja": [
-        "사회（社会）",
-        "경제（経済）",
-        "국제（国際）",
-        "연예（芸能）"
-      ],
-      "correct": "국제 (international)",
+      "correct": "국제",
       "prompt_ja": "国際ニュースを扱うコーナーは？",
       "prompt_es": "¿Qué sección del noticiero cubre noticias internacionales?",
-      "choices_es": [
-        "사회 (sociedad)",
-        "경제 (economía)",
-        "국제 (internacional)",
-        "연예 (entretenimiento)"
-      ],
       "prompt_de": "Welche Nachrichtenrubrik berichtet über internationale Themen?",
-      "choices_de": [
-        "사회 (Gesellschaft)",
-        "경제 (Wirtschaft)",
-        "국제 (International)",
-        "연예 (Unterhaltung)"
-      ],
       "prompt_fr": "Quelle rubrique du journal couvre l'actualité internationale ?",
-      "choices_fr": [
-        "사회 (société)",
-        "경제 (économie)",
-        "국제 (international)",
-        "연예 (divertissement)"
-      ],
       "prompt_id": "Rubrik berita mana yang meliput peristiwa internasional?",
-      "choices_id": [
-        "사회 (masyarakat)",
-        "경제 (ekonomi)",
-        "국제 (internasional)",
-        "연예 (hiburan)"
-      ],
       "prompt_th": "ข่าวส่วนใดที่รายงานเรื่องราวระหว่างประเทศ?",
-      "choices_th": [
-        "사회 (สังคม)",
-        "경제 (เศรษฐกิจ)",
-        "국제 (ระหว่างประเทศ)",
-        "연예 (บันเทิง)"
-      ],
-      "prompt_vi": "Mục nào của bản tin đưa tin quốc tế?",
-      "choices_vi": [
-        "사회 (xã hội)",
-        "경제 (kinh tế)",
-        "국제 (quốc tế)",
-        "연예 (giải trí)"
-      ]
+      "prompt_vi": "Mục nào của bản tin đưa tin quốc tế?"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "기자 is the Korean word for...",
-      "prompt_zh_tw": "기자 的韓語意思是……",
+      "prompt": "Which word is the general term for a news reporter — the person who covers a story and writes it up?",
+      "prompt_zh_tw": "哪個詞是「採訪新聞、撰寫報導的人」最通用的說法？",
       "choices": [
-        "Politician",
-        "Reporter",
-        "Broadcaster",
-        "Editor"
+        "기자",
+        "앵커",
+        "아나운서",
+        "특파원"
       ],
-      "choices_zh_tw": [
-        "政治人物",
-        "記者",
-        "廣播員",
-        "編輯"
-      ],
-      "choices_ja": [
-        "政治家",
-        "記者",
-        "アナウンサー",
-        "編集者"
-      ],
-      "correct": "Reporter",
-      "prompt_ja": "기자 の意味は？",
-      "prompt_es": "기자 es la palabra coreana para...",
-      "choices_es": [
-        "Político",
-        "Periodista",
-        "Locutor",
-        "Editor"
-      ],
-      "prompt_de": "기자 ist das koreanische Wort für ...",
-      "choices_de": [
-        "Politiker",
-        "Reporter",
-        "Rundfunksprecher",
-        "Redakteur"
-      ],
-      "prompt_fr": "기자 est le mot coréen pour...",
-      "choices_fr": [
-        "Homme politique",
-        "Journaliste",
-        "Présentateur",
-        "Rédacteur"
-      ],
-      "prompt_id": "기자 adalah kata bahasa Korea untuk...",
-      "choices_id": [
-        "Politikus",
-        "Wartawan",
-        "Penyiar",
-        "Editor"
-      ],
-      "prompt_th": "기자 เป็นคำภาษาเกาหลีที่แปลว่า...",
-      "choices_th": [
-        "นักการเมือง",
-        "นักข่าว",
-        "ผู้ประกาศข่าว",
-        "บรรณาธิการ"
-      ],
-      "prompt_vi": "기자 là từ tiếng Hàn có nghĩa là...",
-      "choices_vi": [
-        "Chính trị gia",
-        "Phóng viên",
-        "Phát thanh viên",
-        "Biên tập viên"
-      ]
+      "correct": "기자",
+      "prompt_ja": "事件を取材して記事を書く人を指す、最も一般的な単語はどれですか？",
+      "prompt_es": "¿Qué palabra es el término general para quien cubre una noticia y la escribe?",
+      "prompt_de": "Welches Wort ist der Oberbegriff für die Person, die ein Ereignis recherchiert und den Artikel schreibt?",
+      "prompt_fr": "Quel mot est le terme général désignant la personne qui couvre un événement et rédige l'article ?",
+      "prompt_id": "Kata mana yang merupakan sebutan umum untuk orang yang meliput dan menulis berita?",
+      "prompt_th": "คำใดเป็นคำเรียกทั่วไปของคนที่ไปทำข่าวและเขียนบทความ?",
+      "prompt_vi": "Từ nào là tên gọi chung cho người đi lấy tin và viết bài?"
     },
     {
       "id": 21,

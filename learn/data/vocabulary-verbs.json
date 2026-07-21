@@ -437,58 +437,10 @@
       "prompt_ja": "먹다 の丁寧現在形は？",
       "prompt_es": "먹다 → el presente educado es...",
       "prompt_de": "먹다 → das höfliche Präsens lautet ...",
-      "choices_de": [
-        "마셔요",
-        "먹다",
-        "먹어요",
-        "먹했어요"
-      ],
-      "choices_es": [
-        "마셔요",
-        "먹다",
-        "먹어요",
-        "먹했어요"
-      ],
       "prompt_fr": "먹다 → le présent poli est...",
-      "choices_fr": [
-        "마셔요",
-        "먹다",
-        "먹어요",
-        "먹했어요"
-      ],
       "prompt_id": "먹다 → kala kini sopannya adalah...",
-      "choices_id": [
-        "마셔요",
-        "먹다",
-        "먹어요",
-        "먹했어요"
-      ],
-      "choices_ja": [
-        "마셔요",
-        "먹다",
-        "먹어요",
-        "먹했어요"
-      ],
       "prompt_th": "먹다 → รูปปัจจุบันแบบสุภาพคือ...",
-      "choices_th": [
-        "마셔요",
-        "먹다",
-        "먹어요",
-        "먹했어요"
-      ],
-      "prompt_vi": "먹다 → dạng hiện tại lịch sự là...",
-      "choices_vi": [
-        "마셔요",
-        "먹다",
-        "먹어요",
-        "먹했어요"
-      ],
-      "choices_zh_tw": [
-        "마셔요",
-        "먹다",
-        "먹어요",
-        "먹했어요"
-      ]
+      "prompt_vi": "먹다 → dạng hiện tại lịch sự là..."
     },
     {
       "id": 19,
@@ -497,205 +449,61 @@
       "prompt": "Which verb means 'to study'?",
       "prompt_zh_tw": "哪個動詞表示「學習」？",
       "choices": [
-        "To sleep",
-        "To work",
-        "To study",
-        "To buy"
+        "자다",
+        "일하다",
+        "공부하다",
+        "사다"
       ],
-      "choices_zh_tw": [
-        "睡覺",
-        "工作",
-        "學習",
-        "購買"
-      ],
-      "choices_ja": [
-        "寝る",
-        "働く",
-        "勉強する",
-        "買う"
-      ],
-      "correct": "To study",
+      "correct": "공부하다",
       "prompt_ja": "「勉強する」を意味する動詞はどれですか？",
       "prompt_es": "¿Qué verbo significa \"estudiar\"?",
-      "choices_es": [
-        "Dormir",
-        "Trabajar",
-        "Estudiar",
-        "Comprar"
-      ],
       "prompt_de": "Welches Verb bedeutet „lernen/studieren“?",
-      "choices_de": [
-        "schlafen",
-        "arbeiten",
-        "lernen",
-        "kaufen"
-      ],
       "prompt_fr": "Quel verbe signifie « étudier » ?",
-      "choices_fr": [
-        "Dormir",
-        "Travailler",
-        "Étudier",
-        "Acheter"
-      ],
       "prompt_id": "Kata kerja mana yang berarti 'belajar'?",
-      "choices_id": [
-        "Tidur",
-        "Bekerja",
-        "Belajar",
-        "Membeli"
-      ],
       "prompt_th": "คำกริยาใดแปลว่า “เรียน”?",
-      "choices_th": [
-        "นอนหลับ",
-        "ทำงาน",
-        "เรียน",
-        "ซื้อ"
-      ],
-      "prompt_vi": "Động từ nào có nghĩa là \"học\"?",
-      "choices_vi": [
-        "Ngủ",
-        "Làm việc",
-        "Học",
-        "Mua"
-      ]
+      "prompt_vi": "Động từ nào có nghĩa là \"học\"?"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Which verb means 'to sell'?",
-      "prompt_zh_tw": "哪個動詞表示「賣」？",
+      "prompt": "일하다 → polite present tense is...",
+      "prompt_zh_tw": "일하다 的有禮貌現在時是……",
       "choices": [
-        "To meet",
-        "To sell",
-        "To listen",
-        "To write"
+        "일하요",
+        "일하다",
+        "일해요",
+        "일했어요"
       ],
-      "choices_zh_tw": [
-        "見面",
-        "賣",
-        "聽",
-        "寫"
-      ],
-      "choices_ja": [
-        "会う",
-        "売る",
-        "聞く",
-        "書く"
-      ],
-      "correct": "To sell",
-      "prompt_ja": "「売る」を意味する動詞はどれですか？",
-      "prompt_es": "¿Qué verbo significa \"vender\"?",
-      "choices_es": [
-        "Conocer",
-        "Vender",
-        "Escuchar",
-        "Escribir"
-      ],
-      "prompt_de": "Welches Verb bedeutet „verkaufen“?",
-      "choices_de": [
-        "treffen",
-        "verkaufen",
-        "hören",
-        "schreiben"
-      ],
-      "prompt_fr": "Quel verbe signifie « vendre » ?",
-      "choices_fr": [
-        "Rencontrer",
-        "Vendre",
-        "Écouter",
-        "Écrire"
-      ],
-      "prompt_id": "Kata kerja mana yang berarti 'menjual'?",
-      "choices_id": [
-        "Bertemu",
-        "Menjual",
-        "Mendengarkan",
-        "Menulis"
-      ],
-      "prompt_th": "คำกริยาใดแปลว่า “ขาย”?",
-      "choices_th": [
-        "พบ",
-        "ขาย",
-        "ฟัง",
-        "เขียน"
-      ],
-      "prompt_vi": "Động từ nào có nghĩa là \"bán\"?",
-      "choices_vi": [
-        "Gặp",
-        "Bán",
-        "Nghe",
-        "Viết"
-      ]
+      "correct": "일해요",
+      "prompt_ja": "일하다 の丁寧現在形は？",
+      "prompt_es": "일하다 → el presente educado es...",
+      "prompt_de": "일하다 → das höfliche Präsens lautet ...",
+      "prompt_fr": "일하다 → le présent poli est...",
+      "prompt_id": "일하다 → kala kini sopannya adalah...",
+      "prompt_th": "일하다 → รูปปัจจุบันแบบสุภาพคือ...",
+      "prompt_vi": "일하다 → dạng hiện tại lịch sự là..."
     },
     {
       "id": 21,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "가다 (to go) → polite present is...",
-      "prompt_zh_tw": "가다（去）的有禮貌現在時是……",
+      "prompt": "가다 → polite present tense is...",
+      "prompt_zh_tw": "가다 的有禮貌現在時是……",
       "choices": [
-        "To meet",
-        "To listen",
-        "To go",
-        "To come"
+        "가아요",
+        "가다",
+        "가요",
+        "갔어요"
       ],
-      "choices_zh_tw": [
-        "見面",
-        "聽",
-        "去",
-        "來"
-      ],
-      "choices_ja": [
-        "会う",
-        "聞く",
-        "行く",
-        "来る"
-      ],
-      "correct": "To go",
-      "prompt_ja": "가다（行く）の丁寧現在形は？",
-      "prompt_es": "가다 (ir) → el presente educado es...",
-      "choices_es": [
-        "Conocer",
-        "Escuchar",
-        "Ir",
-        "Venir"
-      ],
-      "prompt_de": "가다 (gehen) → das höfliche Präsens lautet ...",
-      "choices_de": [
-        "treffen",
-        "hören",
-        "gehen",
-        "kommen"
-      ],
-      "prompt_fr": "가다 (aller) → le présent poli est...",
-      "choices_fr": [
-        "Rencontrer",
-        "Écouter",
-        "Aller",
-        "Venir"
-      ],
-      "prompt_id": "가다 (pergi) → kala kini sopannya adalah...",
-      "choices_id": [
-        "Bertemu",
-        "Mendengarkan",
-        "Pergi",
-        "Datang"
-      ],
-      "prompt_th": "가다 (ไป) → รูปปัจจุบันแบบสุภาพคือ...",
-      "choices_th": [
-        "พบ",
-        "ฟัง",
-        "ไป",
-        "มา"
-      ],
-      "prompt_vi": "가다 (đi) → dạng hiện tại lịch sự là...",
-      "choices_vi": [
-        "Gặp",
-        "Nghe",
-        "Đi",
-        "Đến"
-      ]
+      "correct": "가요",
+      "prompt_ja": "가다 の丁寧現在形は？",
+      "prompt_es": "가다 → el presente educado es...",
+      "prompt_de": "가다 → das höfliche Präsens lautet ...",
+      "prompt_fr": "가다 → le présent poli est...",
+      "prompt_id": "가다 → kala kini sopannya adalah...",
+      "prompt_th": "가다 → รูปปัจจุบันแบบสุภาพคือ...",
+      "prompt_vi": "가다 → dạng hiện tại lịch sự là..."
     },
     {
       "id": 22,

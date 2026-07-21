@@ -444,139 +444,43 @@
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "떡볶이 is best described as...",
-      "prompt_zh_tw": "떡볶이 最好的描述是……",
+      "prompt": "Which word means spicy stir-fried rice cakes?",
       "choices": [
-        "Grilled pork belly",
-        "Spicy rice cakes",
-        "Fermented soybean stew",
-        "Mixed rice bowl"
+        "삼겹살",
+        "떡볶이",
+        "된장찌개",
+        "비빔밥"
       ],
-      "choices_zh_tw": [
-        "烤豬五花",
-        "辣炒年糕",
-        "大醬鍋",
-        "拌飯"
-      ],
-      "choices_ja": [
-        "焼き豚バラ肉",
-        "辛い餅炒め",
-        "味噌鍋",
-        "混ぜご飯"
-      ],
-      "correct": "Spicy rice cakes",
-      "prompt_ja": "떡볶이 はどれが最も正確な説明ですか？",
-      "prompt_es": "떡볶이 se describe mejor como...",
-      "choices_es": [
-        "Panceta de cerdo a la parrilla",
-        "Pasteles de arroz picantes",
-        "Estofado de soja fermentada",
-        "Bol de arroz mezclado"
-      ],
-      "prompt_de": "떡볶이 lässt sich am besten beschreiben als ...",
-      "choices_de": [
-        "Gegrillter Schweinebauch",
-        "Scharfe Reiskuchen",
-        "Eintopf aus fermentierter Sojabohnenpaste",
-        "Reisschale mit gemischten Zutaten"
-      ],
-      "prompt_fr": "떡볶이 se décrit le mieux comme...",
-      "choices_fr": [
-        "De la poitrine de porc grillée",
-        "Des gâteaux de riz épicés",
-        "Un ragoût de soja fermenté",
-        "Un bol de riz mélangé"
-      ],
-      "prompt_id": "떡볶이 paling tepat digambarkan sebagai...",
-      "choices_id": [
-        "Daging perut babi panggang",
-        "Kue beras pedas",
-        "Sup kedelai fermentasi",
-        "Nasi campur dalam mangkuk"
-      ],
-      "prompt_th": "떡볶이 อธิบายได้ดีที่สุดว่าคือ...",
-      "choices_th": [
-        "หมูสามชั้นย่าง",
-        "ต็อกผัดเผ็ด",
-        "ซุปเต้าเจี้ยวหมัก",
-        "ข้าวยำเกาหลี"
-      ],
-      "prompt_vi": "떡볶이 được mô tả chính xác nhất là...",
-      "choices_vi": [
-        "Thịt ba chỉ heo nướng",
-        "Bánh gạo xào cay",
-        "Canh tương đậu nành lên men",
-        "Cơm trộn"
-      ]
+      "correct": "떡볶이",
+      "prompt_zh_tw": "哪一個單字是「辣炒年糕」的意思？",
+      "prompt_ja": "「辛い餅炒め」を意味する単語はどれですか？",
+      "prompt_es": "¿Qué palabra significa pasteles de arroz picantes salteados?",
+      "prompt_de": "Welches Wort bedeutet „scharf gebratene Reiskuchen“?",
+      "prompt_fr": "Quel mot signifie « gâteaux de riz sautés épicés » ?",
+      "prompt_id": "Kata mana yang berarti kue beras pedas tumis?",
+      "prompt_th": "คำใดหมายถึงแป้งข้าวผัดเผ็ด?",
+      "prompt_vi": "Từ nào có nghĩa là bánh gạo xào cay?"
     },
     {
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "What does 물 주세요 mean?",
-      "prompt_zh_tw": "물 주세요 是什麼意思？",
+      "prompt": "At a restaurant, how do you say \"Please give me water\"?",
       "choices": [
-        "I'm full",
-        "The food is spicy",
-        "Please give me water",
-        "It's delicious"
+        "밥 주세요",
+        "커피 주세요",
+        "물 주세요",
+        "물 맛있어요"
       ],
-      "choices_zh_tw": [
-        "我吃飽了",
-        "食物很辣",
-        "請給我水",
-        "很好吃"
-      ],
-      "choices_ja": [
-        "お腹いっぱい",
-        "料理が辛い",
-        "お水ください",
-        "おいしい"
-      ],
-      "correct": "Please give me water",
-      "prompt_ja": "물 주세요 はどういう意味ですか？",
-      "prompt_es": "¿Qué significa 물 주세요?",
-      "choices_es": [
-        "Estoy lleno/a",
-        "La comida está picante",
-        "Por favor, dame agua",
-        "Está delicioso"
-      ],
-      "prompt_de": "Was bedeutet 물 주세요?",
-      "choices_de": [
-        "Ich bin satt",
-        "Das Essen ist scharf",
-        "Bitte geben Sie mir Wasser",
-        "Es ist lecker"
-      ],
-      "prompt_fr": "Que signifie 물 주세요 ?",
-      "choices_fr": [
-        "Je n'ai plus faim",
-        "Le plat est épicé",
-        "De l'eau, s'il vous plaît",
-        "C'est délicieux"
-      ],
-      "prompt_id": "Apa arti 물 주세요?",
-      "choices_id": [
-        "Saya sudah kenyang",
-        "Makanannya pedas",
-        "Tolong berikan saya air",
-        "Enak sekali"
-      ],
-      "prompt_th": "물 주세요 หมายความว่าอย่างไร?",
-      "choices_th": [
-        "ฉันอิ่มแล้ว",
-        "อาหารเผ็ด",
-        "ขอน้ำหน่อยค่ะ/ครับ",
-        "อร่อยมาก"
-      ],
-      "prompt_vi": "물 주세요 có nghĩa là gì?",
-      "choices_vi": [
-        "Tôi no rồi",
-        "Món ăn cay quá",
-        "Cho tôi xin nước",
-        "Ngon quá"
-      ]
+      "correct": "물 주세요",
+      "prompt_zh_tw": "在餐廳裡，「請給我水」要怎麼說？",
+      "prompt_ja": "レストランで「お水ください」はどう言いますか？",
+      "prompt_es": "En un restaurante, ¿cómo dices “Por favor, dame agua”?",
+      "prompt_de": "Wie sagt man im Restaurant „Bitte geben Sie mir Wasser“?",
+      "prompt_fr": "Au restaurant, comment dit-on « De l'eau, s'il vous plaît » ?",
+      "prompt_id": "Di restoran, bagaimana cara mengatakan “Tolong berikan saya air”?",
+      "prompt_th": "ที่ร้านอาหาร จะพูดว่า “ขอน้ำหน่อย” อย่างไร?",
+      "prompt_vi": "Ở nhà hàng, bạn nói “Cho tôi xin nước” như thế nào?"
     },
     {
       "id": 21,

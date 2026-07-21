@@ -364,139 +364,43 @@
       "id": 14,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Which phrase means 'Hello' in the most formal way?",
-      "prompt_zh_tw": "哪個短語是最正式的「你好」說法？",
+      "prompt": "Which greeting means 'Hello' and is polite enough for someone you have just met?",
+      "prompt_zh_tw": "哪個問候語的意思是「你好」，而且對初次見面的人夠有禮貌？",
       "choices": [
         "안녕",
         "안녕하세요",
-        "화이팅",
-        "괜찮아요"
+        "안녕히 가세요",
+        "안녕히 계세요"
       ],
       "correct": "안녕하세요",
-      "prompt_ja": "最もフォーマルな「こんにちは」はどれですか？",
-      "prompt_es": "¿Qué frase dice \"Hola\" de la forma más formal?",
-      "prompt_de": "Welcher Ausdruck bedeutet „Hallo“ auf die förmlichste Weise?",
-      "choices_de": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
-      "choices_es": [
-        "안녕 (annyeong)",
-        "안녕하세요 (annyeonghaseyo)",
-        "화이팅 (hwaiting)",
-        "괜찮아요 (gwaenchanayo)"
-      ],
-      "prompt_fr": "Quelle expression signifie « Bonjour » de la manière la plus formelle ?",
-      "choices_fr": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
-      "prompt_id": "Ungkapan mana yang berarti \"Halo\" dengan cara paling formal?",
-      "choices_id": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
-      "choices_ja": [
-        "안녕（アンニョン）",
-        "안녕하세요（アンニョンハセヨ）",
-        "화이팅（ファイティン）",
-        "괜찮아요（クェンチャナヨ）"
-      ],
-      "prompt_th": "วลีใดหมายถึง \"สวัสดี\" ในรูปที่สุภาพที่สุด",
-      "choices_th": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
-      "prompt_vi": "Cách nói \"Xin chào\" trang trọng nhất là cụm từ nào?",
-      "choices_vi": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
-      "choices_zh_tw": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ]
+      "prompt_ja": "「こんにちは」の意味で、初対面の相手にも十分丁寧なあいさつはどれですか？",
+      "prompt_es": "¿Qué saludo significa \"Hola\" y es lo bastante cortés para alguien que acabas de conocer?",
+      "prompt_de": "Welche Begrüßung bedeutet „Hallo“ und ist höflich genug für jemanden, den du gerade erst kennengelernt hast?",
+      "prompt_fr": "Quelle salutation signifie « Bonjour » tout en étant assez polie pour une personne que vous venez de rencontrer ?",
+      "prompt_id": "Sapaan mana yang berarti \"Halo\" dan cukup sopan untuk orang yang baru saja kamu temui?",
+      "prompt_th": "คำทักทายใดหมายถึง \"สวัสดี\" และสุภาพพอสำหรับคนที่คุณเพิ่งพบกันครั้งแรก",
+      "prompt_vi": "Lời chào nào có nghĩa là \"Xin chào\" và đủ lịch sự với người bạn vừa mới gặp?"
     },
     {
       "id": 15,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "How do you say 'Thank you' in the most formal Korean?",
-      "prompt_zh_tw": "最正式的韓語「謝謝」怎麼說？",
+      "prompt": "Which phrase would you use to thank a customer at work?",
+      "prompt_zh_tw": "在職場上要向客人道謝時，該用哪個短語？",
       "choices": [
         "고마워요",
-        "미안해요",
+        "죄송합니다",
         "감사합니다",
-        "잘 있어요"
+        "반갑습니다"
       ],
       "correct": "감사합니다",
-      "prompt_ja": "最もフォーマルな「ありがとう」は韓国語でどう言いますか？",
-      "prompt_es": "¿Cómo se dice \"Gracias\" en coreano de la forma más formal?",
-      "prompt_de": "Wie sagt man „Danke“ im förmlichsten Koreanisch?",
-      "choices_de": [
-        "고마워요",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
-      "choices_es": [
-        "고마워요 (gomawoyo)",
-        "미안해요 (mianhaeyo)",
-        "감사합니다 (gamsahamnida)",
-        "잘 있어요 (jal isseoyo)"
-      ],
-      "prompt_fr": "Comment dit-on « Merci » dans le coréen le plus formel ?",
-      "choices_fr": [
-        "고마워요",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
-      "prompt_id": "Bagaimana cara mengucapkan \"Terima kasih\" dalam bahasa Korea yang paling formal?",
-      "choices_id": [
-        "고마워요",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
-      "choices_ja": [
-        "고마워요（コマウォヨ）",
-        "미안해요（ミアネヨ）",
-        "감사합니다（カムサハムニダ）",
-        "잘 있어요（チャル イッソヨ）"
-      ],
-      "prompt_th": "\"ขอบคุณ\" ในภาษาเกาหลีรูปที่สุภาพที่สุดพูดว่าอย่างไร",
-      "choices_th": [
-        "고마워요",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
-      "prompt_vi": "Trong tiếng Hàn, \"Cảm ơn\" nói theo cách trang trọng nhất là gì?",
-      "choices_vi": [
-        "고마워요",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
-      "choices_zh_tw": [
-        "고마워요",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ]
+      "prompt_ja": "職場でお客様にお礼を言うとき、どの表現を使いますか？",
+      "prompt_es": "¿Qué frase usarías para dar las gracias a un cliente en el trabajo?",
+      "prompt_de": "Welchen Ausdruck würdest du verwenden, um dich bei der Arbeit bei einem Kunden zu bedanken?",
+      "prompt_fr": "Quelle expression emploieriez-vous pour remercier un client au travail ?",
+      "prompt_id": "Ungkapan mana yang kamu gunakan untuk berterima kasih kepada pelanggan di tempat kerja?",
+      "prompt_th": "คุณจะใช้วลีใดเพื่อขอบคุณลูกค้าในที่ทำงาน",
+      "prompt_vi": "Bạn dùng cụm từ nào để cảm ơn khách hàng tại nơi làm việc?"
     },
     {
       "id": 16,

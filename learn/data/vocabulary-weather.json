@@ -471,136 +471,40 @@
       "prompt": "Which Korean season is famous for cherry blossoms?",
       "prompt_zh_tw": "哪個韓國季節以櫻花聞名？",
       "choices": [
-        "여름 (summer)",
-        "봄 (spring)",
-        "가을 (autumn)",
-        "겨울 (winter)"
+        "여름",
+        "봄",
+        "가을",
+        "겨울"
       ],
-      "choices_zh_tw": [
-        "여름（夏天）",
-        "봄（春天）",
-        "가을（秋天）",
-        "겨울（冬天）"
-      ],
-      "choices_ja": [
-        "여름（夏）",
-        "봄（春）",
-        "가을（秋）",
-        "겨울（冬）"
-      ],
-      "correct": "봄 (spring)",
+      "correct": "봄",
       "prompt_ja": "桜の花で有名な韓国の季節は？",
       "prompt_es": "¿Qué estación coreana es famosa por los cerezos en flor?",
-      "choices_es": [
-        "여름 (verano)",
-        "봄 (primavera)",
-        "가을 (otoño)",
-        "겨울 (invierno)"
-      ],
       "prompt_de": "Welche koreanische Jahreszeit ist für die Kirschblüte bekannt?",
-      "choices_de": [
-        "여름 (Sommer)",
-        "봄 (Frühling)",
-        "가을 (Herbst)",
-        "겨울 (Winter)"
-      ],
       "prompt_fr": "Quelle saison coréenne est célèbre pour les cerisiers en fleurs ?",
-      "choices_fr": [
-        "여름 (été)",
-        "봄 (printemps)",
-        "가을 (automne)",
-        "겨울 (hiver)"
-      ],
       "prompt_id": "Musim apa di Korea yang terkenal dengan bunga sakura?",
-      "choices_id": [
-        "여름 (musim panas)",
-        "봄 (musim semi)",
-        "가을 (musim gugur)",
-        "겨울 (musim dingin)"
-      ],
       "prompt_th": "ฤดูใดของเกาหลีที่มีชื่อเสียงเรื่องดอกซากุระ?",
-      "choices_th": [
-        "여름 (ฤดูร้อน)",
-        "봄 (ฤดูใบไม้ผลิ)",
-        "가을 (ฤดูใบไม้ร่วง)",
-        "겨울 (ฤดูหนาว)"
-      ],
-      "prompt_vi": "Mùa nào ở Hàn Quốc nổi tiếng với hoa anh đào?",
-      "choices_vi": [
-        "여름 (mùa hè)",
-        "봄 (mùa xuân)",
-        "가을 (mùa thu)",
-        "겨울 (mùa đông)"
-      ]
+      "prompt_vi": "Mùa nào ở Hàn Quốc nổi tiếng với hoa anh đào?"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "비가 와요 means...",
-      "prompt_zh_tw": "비가 와요 的意思是……",
+      "prompt": "Which Korean phrase means \"It's raining\"?",
+      "prompt_zh_tw": "哪個韓語說法的意思是「正在下雨」？",
       "choices": [
-        "The wind is blowing",
-        "It's snowing",
-        "It's raining",
-        "It's sunny"
+        "바람이 불어요",
+        "눈이 와요",
+        "비가 와요",
+        "날씨가 맑아요"
       ],
-      "choices_zh_tw": [
-        "風在吹",
-        "正在下雪",
-        "正在下雨",
-        "晴天"
-      ],
-      "choices_ja": [
-        "風が吹いています",
-        "雪が降っています",
-        "雨が降っています",
-        "晴れています"
-      ],
-      "correct": "It's raining",
-      "prompt_ja": "비가 와요 はどういう意味ですか？",
-      "prompt_es": "비가 와요 significa...",
-      "choices_es": [
-        "El viento está soplando",
-        "Está nevando",
-        "Está lloviendo",
-        "Está soleado"
-      ],
-      "prompt_de": "비가 와요 bedeutet …",
-      "choices_de": [
-        "Der Wind weht",
-        "Es schneit",
-        "Es regnet",
-        "Es ist sonnig"
-      ],
-      "prompt_fr": "비가 와요 signifie…",
-      "choices_fr": [
-        "Le vent souffle",
-        "Il neige",
-        "Il pleut",
-        "Il fait soleil"
-      ],
-      "prompt_id": "비가 와요 berarti...",
-      "choices_id": [
-        "Angin sedang bertiup",
-        "Sedang turun salju",
-        "Sedang turun hujan",
-        "Cuacanya cerah"
-      ],
-      "prompt_th": "비가 와요 แปลว่า…",
-      "choices_th": [
-        "ลมกำลังพัด",
-        "หิมะกำลังตก",
-        "ฝนกำลังตก",
-        "แดดออก"
-      ],
-      "prompt_vi": "비가 와요 có nghĩa là...",
-      "choices_vi": [
-        "Gió đang thổi",
-        "Trời đang có tuyết",
-        "Trời đang mưa",
-        "Trời nắng"
-      ]
+      "correct": "비가 와요",
+      "prompt_ja": "「雨が降っています」を意味する韓国語はどれですか？",
+      "prompt_es": "¿Qué expresión coreana significa «Está lloviendo»?",
+      "prompt_de": "Welcher koreanische Ausdruck bedeutet „Es regnet“?",
+      "prompt_fr": "Quelle expression coréenne signifie « Il pleut » ?",
+      "prompt_id": "Ungkapan bahasa Korea mana yang berarti \"Sedang turun hujan\"?",
+      "prompt_th": "สำนวนภาษาเกาหลีใดที่แปลว่า \"ฝนกำลังตก\"?",
+      "prompt_vi": "Cụm từ tiếng Hàn nào có nghĩa là \"Trời đang mưa\"?"
     },
     {
       "id": 20,

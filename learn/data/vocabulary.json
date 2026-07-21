@@ -297,66 +297,18 @@
       "choices": [
         "안녕",
         "안녕하세요",
-        "화이팅",
-        "괜찮아요"
+        "반갑습니다",
+        "감사합니다"
       ],
       "correct": "안녕하세요",
       "prompt_es": "¿Qué frase significa \"Hola\" de la forma más formal?",
       "prompt_ja": "最もフォーマルな「こんにちは」はどれでしょう。",
       "prompt_de": "Welcher Ausdruck bedeutet „Hallo“ auf die förmlichste Weise?",
-      "choices_de": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
-      "choices_es": [
-        "안녕 (annyeong)",
-        "안녕하세요 (annyeonghaseyo)",
-        "화이팅 (hwaiting)",
-        "괜찮아요 (gwaenchanayo)"
-      ],
       "prompt_fr": "Quelle expression signifie « Bonjour » de la manière la plus formelle ?",
-      "choices_fr": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
       "prompt_id": "Ungkapan mana yang berarti \"Halo\" dengan cara paling formal?",
-      "choices_id": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
-      "choices_ja": [
-        "안녕（アンニョン）",
-        "안녕하세요（アンニョンハセヨ）",
-        "화이팅（ファイティン）",
-        "괜찮아요（クェンチャナヨ）"
-      ],
       "prompt_th": "วลีใดหมายถึง \"สวัสดี\" ในรูปที่สุภาพที่สุด",
-      "choices_th": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
       "prompt_vi": "Cách nói \"Xin chào\" trang trọng nhất là cụm từ nào?",
-      "choices_vi": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ],
-      "prompt_zh_tw": "哪個短語是最正式的「你好」說法？",
-      "choices_zh_tw": [
-        "안녕",
-        "안녕하세요",
-        "화이팅",
-        "괜찮아요"
-      ]
+      "prompt_zh_tw": "哪個短語是最正式的「你好」說法？"
     },
     {
       "id": 10,
@@ -364,68 +316,20 @@
       "type": "match_quiz",
       "prompt": "How do you say 'Thank you' in the most formal Korean?",
       "choices": [
-        "고마워",
-        "미안해요",
+        "고마워요",
         "감사합니다",
-        "잘 있어요"
+        "죄송합니다",
+        "반갑습니다"
       ],
       "correct": "감사합니다",
       "prompt_es": "¿Cómo se dice \"Gracias\" de la forma más formal en coreano?",
       "prompt_ja": "最もフォーマルな韓国語で「ありがとうございます」はどう言いますか。",
       "prompt_de": "Wie sagt man „Danke“ im förmlichsten Koreanisch?",
-      "choices_de": [
-        "고마워",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
-      "choices_es": [
-        "고마워 (gomawo)",
-        "미안해요 (mianhaeyo)",
-        "감사합니다 (gamsahamnida)",
-        "잘 있어요 (jal isseoyo)"
-      ],
       "prompt_fr": "Comment dit-on « Merci » dans le coréen le plus formel ?",
-      "choices_fr": [
-        "고마워",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
       "prompt_id": "Bagaimana cara mengucapkan \"Terima kasih\" dalam bahasa Korea yang paling formal?",
-      "choices_id": [
-        "고마워",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
-      "choices_ja": [
-        "고마워（コマウォ）",
-        "미안해요（ミアネヨ）",
-        "감사합니다（カムサハムニダ）",
-        "잘 있어요（チャル イッソヨ）"
-      ],
       "prompt_th": "\"ขอบคุณ\" ในภาษาเกาหลีรูปที่สุภาพที่สุดพูดว่าอย่างไร",
-      "choices_th": [
-        "고마워",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
       "prompt_vi": "Trong tiếng Hàn, \"Cảm ơn\" nói theo cách trang trọng nhất là gì?",
-      "choices_vi": [
-        "고마워",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ],
-      "prompt_zh_tw": "最正式的韓語「謝謝」怎麼說？",
-      "choices_zh_tw": [
-        "고마워",
-        "미안해요",
-        "감사합니다",
-        "잘 있어요"
-      ]
+      "prompt_zh_tw": "最正式的韓語「謝謝」怎麼說？"
     },
     {
       "id": 11,
@@ -703,7 +607,7 @@
         "Sino-Korean (일, 이, 삼)",
         "Native Korean (하나, 둘, 셋)",
         "Either one is fine",
-        "Neither — use English numbers"
+        "Sino-Korean, but only for ages over 20"
       ],
       "correct": "Native Korean (하나, 둘, 셋)",
       "prompt_es": "Estás diciendo tu edad en coreano. ¿Qué sistema numérico usas?",
@@ -711,56 +615,56 @@
         "Sino-coreano (일, 이, 삼)",
         "Coreano nativo (하나, 둘, 셋)",
         "Cualquiera de los dos es válido",
-        "Ninguno — usar números en inglés"
+        "Sino-coreano, pero solo para edades mayores de 20"
       ],
       "prompt_ja": "韓国語で自分の年齢を伝えます。どちらの数詞を使いますか。",
       "choices_ja": [
-        "Sino-Korean (일, 이, 삼)",
-        "Native Korean (하나, 둘, 셋)",
+        "漢数詞（일, 이, 삼）",
+        "固有数詞（하나, 둘, 셋）",
         "どちらでもよい",
-        "どちらでもない — 英語の数字を使う"
+        "漢数詞、ただし20歳以上のときだけ"
       ],
       "prompt_de": "Du nennst jemandem dein Alter auf Koreanisch. Welches Zahlensystem verwendest du?",
       "choices_de": [
         "Sinokoreanisch (일, 이, 삼)",
         "Rein koreanisch (하나, 둘, 셋)",
         "Beide sind in Ordnung",
-        "Keines von beiden — englische Zahlen verwenden"
+        "Sinokoreanisch, aber erst ab 20 Jahren"
       ],
       "prompt_fr": "Vous dites votre âge en coréen. Quel système de numération utilisez-vous ?",
       "choices_fr": [
         "Sino-coréen (일, 이, 삼)",
         "Coréen natif (하나, 둘, 셋)",
         "L'un ou l'autre convient",
-        "Ni l'un ni l'autre — utiliser les chiffres anglais"
+        "Sino-coréen, mais uniquement à partir de 20 ans"
       ],
       "prompt_id": "Kamu sedang menyebutkan usiamu dalam bahasa Korea. Sistem bilangan mana yang kamu pakai?",
       "choices_id": [
         "Sino-Korea (일, 이, 삼)",
         "Asli Korea (하나, 둘, 셋)",
         "Keduanya boleh",
-        "Tidak keduanya — pakai angka bahasa Inggris"
+        "Sino-Korea, tapi hanya untuk usia di atas 20"
       ],
       "prompt_th": "คุณกำลังบอกอายุของตัวเองเป็นภาษาเกาหลี ควรใช้ระบบตัวเลขแบบใด",
       "choices_th": [
         "เลขจีน-เกาหลี (일, 이, 삼)",
         "เลขเกาหลีแท้ (하나, 둘, 셋)",
         "ใช้แบบไหนก็ได้",
-        "ไม่ใช้ทั้งสองแบบ — ใช้ตัวเลขภาษาอังกฤษ"
+        "เลขจีน-เกาหลี แต่ใช้เฉพาะอายุเกิน 20 ปี"
       ],
       "prompt_vi": "Bạn đang nói tuổi của mình bằng tiếng Hàn. Nên dùng hệ thống số nào?",
       "choices_vi": [
         "Số Hán-Hàn (일, 이, 삼)",
         "Số thuần Hàn (하나, 둘, 셋)",
         "Dùng loại nào cũng được",
-        "Không dùng loại nào — dùng số tiếng Anh"
+        "Số Hán-Hàn, nhưng chỉ dùng cho tuổi trên 20"
       ],
       "prompt_zh_tw": "你要用韓語說出自己的年齡。該使用哪一套數字系統？",
       "choices_zh_tw": [
         "漢字語（일、이、삼）",
         "固有語（하나、둘、셋）",
         "兩種都可以",
-        "兩種都不用——使用英文數字"
+        "漢字語，但只用於20歲以上"
       ]
     },
     {
@@ -901,68 +805,20 @@
       "type": "match_quiz",
       "prompt": "Which counter do you use for books (책)?",
       "choices": [
-        "개 (gae)",
-        "명 (myeong)",
-        "권 (gwon)",
-        "잔 (jan)"
-      ],
-      "correct": "권 (gwon)",
-      "prompt_es": "¿Qué clasificador usas para libros (책)?",
-      "choices_es": [
-        "개 (gae)",
-        "명 (myeong)",
-        "권 (gwon)",
-        "잔 (jan)"
-      ],
-      "prompt_de": "Welches Zähleinheitswort verwendest du für Bücher (책)?",
-      "choices_de": [
-        "개 (gae)",
-        "명 (myeong)",
-        "권 (gwon)",
-        "잔 (jan)"
-      ],
-      "prompt_fr": "Quel classificateur utilise-t-on pour les livres (책) ?",
-      "choices_fr": [
-        "개 (gae)",
-        "명 (myeong)",
-        "권 (gwon)",
-        "잔 (jan)"
-      ],
-      "prompt_id": "Kata penggolong mana yang dipakai untuk buku (책)?",
-      "choices_id": [
-        "개 (gae)",
-        "명 (myeong)",
-        "권 (gwon)",
-        "잔 (jan)"
-      ],
-      "prompt_ja": "本（책）を数えるときに使う助数詞はどれでしょう。",
-      "choices_ja": [
-        "개（ケ）",
-        "명（ミョン）",
-        "권（クォン）",
-        "잔（チャン）"
-      ],
-      "prompt_th": "ใช้ลักษณนามใดกับหนังสือ (책)",
-      "choices_th": [
-        "개 (gae)",
-        "명 (myeong)",
-        "권 (gwon)",
-        "잔 (jan)"
-      ],
-      "prompt_vi": "Đếm sách (책) thì dùng danh từ đơn vị nào?",
-      "choices_vi": [
-        "개 (gae)",
-        "명 (myeong)",
-        "권 (gwon)",
-        "잔 (jan)"
-      ],
-      "prompt_zh_tw": "數書（책）時使用哪個量詞？",
-      "choices_zh_tw": [
         "개",
         "명",
         "권",
         "잔"
-      ]
+      ],
+      "correct": "권",
+      "prompt_es": "¿Qué clasificador usas para libros (책)?",
+      "prompt_de": "Welches Zähleinheitswort verwendest du für Bücher (책)?",
+      "prompt_fr": "Quel classificateur utilise-t-on pour les livres (책) ?",
+      "prompt_id": "Kata penggolong mana yang dipakai untuk buku (책)?",
+      "prompt_ja": "本（책）を数えるときに使う助数詞はどれでしょう。",
+      "prompt_th": "ใช้ลักษณนามใดกับหนังสือ (책)",
+      "prompt_vi": "Đếm sách (책) thì dùng danh từ đơn vị nào?",
+      "prompt_zh_tw": "數書（책）時使用哪個量詞？"
     },
     {
       "id": 27,
@@ -1111,68 +967,20 @@
       "type": "match_quiz",
       "prompt": "A female speaker calls her older brother ___.",
       "choices": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "언니 (eonni)",
-        "남동생 (namdongsaeng)"
+        "형",
+        "오빠",
+        "언니",
+        "남동생"
       ],
-      "correct": "오빠 (oppa)",
+      "correct": "오빠",
       "prompt_es": "Una hablante femenina llama a su hermano mayor ___.",
-      "choices_es": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "언니 (eonni)",
-        "남동생 (namdongsaeng)"
-      ],
       "prompt_ja": "女性が自分の兄を呼ぶときは ___ と言います。",
       "prompt_de": "Eine weibliche Sprecherin nennt ihren älteren Bruder ___.",
-      "choices_de": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "언니 (eonni)",
-        "남동생 (namdongsaeng)"
-      ],
       "prompt_fr": "Une locutrice appelle son grand frère ___.",
-      "choices_fr": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "언니 (eonni)",
-        "남동생 (namdongsaeng)"
-      ],
       "prompt_id": "Seorang pembicara perempuan memanggil kakak laki-lakinya dengan sebutan ___.",
-      "choices_id": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "언니 (eonni)",
-        "남동생 (namdongsaeng)"
-      ],
-      "choices_ja": [
-        "형（ヒョン）",
-        "오빠（オッパ）",
-        "언니（オンニ）",
-        "남동생（ナムドンセン）"
-      ],
       "prompt_th": "ผู้พูดที่เป็นผู้หญิงจะเรียกพี่ชายของตนว่า ___",
-      "choices_th": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "언니 (eonni)",
-        "남동생 (namdongsaeng)"
-      ],
       "prompt_vi": "Người nói là nữ sẽ gọi anh trai của mình là ___.",
-      "choices_vi": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "언니 (eonni)",
-        "남동생 (namdongsaeng)"
-      ],
-      "prompt_zh_tw": "女性說話者稱自己的哥哥為……",
-      "choices_zh_tw": [
-        "형（男性稱哥哥）",
-        "오빠（女性稱哥哥）",
-        "언니（女性稱姊姊）",
-        "남동생（弟弟）"
-      ]
+      "prompt_zh_tw": "女性說話者稱自己的哥哥為……"
     },
     {
       "id": 35,
@@ -1276,68 +1084,20 @@
       "type": "match_quiz",
       "prompt": "Which Korean word means 'ear'?",
       "choices": [
-        "코 (ko)",
-        "귀 (gwi)",
-        "입 (ip)",
-        "목 (mok)"
-      ],
-      "correct": "귀 (gwi)",
-      "prompt_es": "¿Qué palabra coreana significa \"oído\"?",
-      "choices_es": [
-        "코 (ko)",
-        "귀 (gwi)",
-        "입 (ip)",
-        "목 (mok)"
-      ],
-      "prompt_ja": "「耳」を意味する韓国語はどれでしょう。",
-      "prompt_de": "Welches koreanische Wort bedeutet „Ohr“?",
-      "choices_de": [
-        "코 (ko)",
-        "귀 (gwi)",
-        "입 (ip)",
-        "목 (mok)"
-      ],
-      "prompt_fr": "Quel mot coréen signifie « oreille » ?",
-      "choices_fr": [
-        "코 (ko)",
-        "귀 (gwi)",
-        "입 (ip)",
-        "목 (mok)"
-      ],
-      "prompt_id": "Kata Korea mana yang berarti \"telinga\"?",
-      "choices_id": [
-        "코 (ko)",
-        "귀 (gwi)",
-        "입 (ip)",
-        "목 (mok)"
-      ],
-      "choices_ja": [
-        "코（コ）",
-        "귀（クィ）",
-        "입（イプ）",
-        "목（モク）"
-      ],
-      "prompt_th": "คำภาษาเกาหลีคำใดหมายถึง \"หู\"",
-      "choices_th": [
-        "코 (ko)",
-        "귀 (gwi)",
-        "입 (ip)",
-        "목 (mok)"
-      ],
-      "prompt_vi": "Từ tiếng Hàn nào có nghĩa là \"tai\"?",
-      "choices_vi": [
-        "코 (ko)",
-        "귀 (gwi)",
-        "입 (ip)",
-        "목 (mok)"
-      ],
-      "prompt_zh_tw": "哪個韓語詞的意思是「耳朵」？",
-      "choices_zh_tw": [
         "코",
         "귀",
         "입",
         "목"
-      ]
+      ],
+      "correct": "귀",
+      "prompt_es": "¿Qué palabra coreana significa \"oído\"?",
+      "prompt_ja": "「耳」を意味する韓国語はどれでしょう。",
+      "prompt_de": "Welches koreanische Wort bedeutet „Ohr“?",
+      "prompt_fr": "Quel mot coréen signifie « oreille » ?",
+      "prompt_id": "Kata Korea mana yang berarti \"telinga\"?",
+      "prompt_th": "คำภาษาเกาหลีคำใดหมายถึง \"หู\"",
+      "prompt_vi": "Từ tiếng Hàn nào có nghĩa là \"tai\"?",
+      "prompt_zh_tw": "哪個韓語詞的意思是「耳朵」？"
     },
     {
       "id": 41,
@@ -1828,68 +1588,20 @@
       "type": "match_quiz",
       "prompt": "Where do you go in Korea to buy medicine?",
       "choices": [
-        "은행 (eunhaeng)",
-        "약국 (yakguk)",
-        "백화점 (baekhwajeom)",
-        "노래방 (noraebang)"
-      ],
-      "correct": "약국 (yakguk)",
-      "prompt_es": "¿Adónde vas en Corea para comprar medicamentos?",
-      "choices_es": [
-        "은행 (eunhaeng)",
-        "약국 (yakguk)",
-        "백화점 (baekhwajeom)",
-        "노래방 (noraebang)"
-      ],
-      "prompt_ja": "韓国で薬を買うにはどこへ行きますか。",
-      "prompt_de": "Wohin gehst du in Korea, um Medikamente zu kaufen?",
-      "choices_de": [
-        "은행 (eunhaeng)",
-        "약국 (yakguk)",
-        "백화점 (baekhwajeom)",
-        "노래방 (noraebang)"
-      ],
-      "prompt_fr": "Où va-t-on en Corée pour acheter des médicaments ?",
-      "choices_fr": [
-        "은행 (eunhaeng)",
-        "약국 (yakguk)",
-        "백화점 (baekhwajeom)",
-        "노래방 (noraebang)"
-      ],
-      "prompt_id": "Ke mana kamu pergi di Korea untuk membeli obat?",
-      "choices_id": [
-        "은행 (eunhaeng)",
-        "약국 (yakguk)",
-        "백화점 (baekhwajeom)",
-        "노래방 (noraebang)"
-      ],
-      "choices_ja": [
-        "은행（ウネン）",
-        "약국（ヤックク）",
-        "백화점（ペクファジョム）",
-        "노래방（ノレバン）"
-      ],
-      "prompt_th": "ในเกาหลี ถ้าต้องการซื้อยาต้องไปที่ไหน",
-      "choices_th": [
-        "은행 (eunhaeng)",
-        "약국 (yakguk)",
-        "백화점 (baekhwajeom)",
-        "노래방 (noraebang)"
-      ],
-      "prompt_vi": "Ở Hàn Quốc, muốn mua thuốc thì đến đâu?",
-      "choices_vi": [
-        "은행 (eunhaeng)",
-        "약국 (yakguk)",
-        "백화점 (baekhwajeom)",
-        "노래방 (noraebang)"
-      ],
-      "prompt_zh_tw": "在韓國要買藥該去哪裡？",
-      "choices_zh_tw": [
         "은행",
         "약국",
         "백화점",
         "노래방"
-      ]
+      ],
+      "correct": "약국",
+      "prompt_es": "¿Adónde vas en Corea para comprar medicamentos?",
+      "prompt_ja": "韓国で薬を買うにはどこへ行きますか。",
+      "prompt_de": "Wohin gehst du in Korea, um Medikamente zu kaufen?",
+      "prompt_fr": "Où va-t-on en Corée pour acheter des médicaments ?",
+      "prompt_id": "Ke mana kamu pergi di Korea untuk membeli obat?",
+      "prompt_th": "ในเกาหลี ถ้าต้องการซื้อยาต้องไปที่ไหน",
+      "prompt_vi": "Ở Hàn Quốc, muốn mua thuốc thì đến đâu?",
+      "prompt_zh_tw": "在韓國要買藥該去哪裡？"
     },
     {
       "id": 60,
@@ -2073,68 +1785,20 @@
       "type": "match_quiz",
       "prompt": "How do you say 'airport' in Korean?",
       "choices": [
-        "기차역 (gicha yeok)",
-        "공항 (gonghang)",
-        "버스터미널 (beoseu teomineol)",
-        "항구 (hanggu)"
-      ],
-      "correct": "공항 (gonghang)",
-      "prompt_es": "¿Cómo se dice \"aeropuerto\" en coreano?",
-      "choices_es": [
-        "기차역 (gicha yeok)",
-        "공항 (gonghang)",
-        "버스터미널 (beoseu teomineol)",
-        "항구 (hanggu)"
-      ],
-      "prompt_ja": "韓国語で「空港」はどう言いますか。",
-      "prompt_de": "Wie sagt man „Flughafen“ auf Koreanisch?",
-      "choices_de": [
-        "기차역 (gicha yeok)",
-        "공항 (gonghang)",
-        "버스터미널 (beoseu teomineol)",
-        "항구 (hanggu)"
-      ],
-      "prompt_fr": "Comment dit-on « aéroport » en coréen ?",
-      "choices_fr": [
-        "기차역 (gicha yeok)",
-        "공항 (gonghang)",
-        "버스터미널 (beoseu teomineol)",
-        "항구 (hanggu)"
-      ],
-      "prompt_id": "Bagaimana cara mengatakan \"bandara\" dalam bahasa Korea?",
-      "choices_id": [
-        "기차역 (gicha yeok)",
-        "공항 (gonghang)",
-        "버스터미널 (beoseu teomineol)",
-        "항구 (hanggu)"
-      ],
-      "choices_ja": [
-        "기차역（キチャヨク）",
-        "공항（コンハン）",
-        "버스터미널（ポストミノル）",
-        "항구（ハング）"
-      ],
-      "prompt_th": "\"สนามบิน\" ในภาษาเกาหลีพูดว่าอย่างไร",
-      "choices_th": [
-        "기차역 (gicha yeok)",
-        "공항 (gonghang)",
-        "버스터미널 (beoseu teomineol)",
-        "항구 (hanggu)"
-      ],
-      "prompt_vi": "\"Sân bay\" trong tiếng Hàn nói thế nào?",
-      "choices_vi": [
-        "기차역 (gicha yeok)",
-        "공항 (gonghang)",
-        "버스터미널 (beoseu teomineol)",
-        "항구 (hanggu)"
-      ],
-      "prompt_zh_tw": "韓語的「機場」怎麼說？",
-      "choices_zh_tw": [
         "기차역",
         "공항",
         "버스터미널",
         "항구"
-      ]
+      ],
+      "correct": "공항",
+      "prompt_es": "¿Cómo se dice \"aeropuerto\" en coreano?",
+      "prompt_ja": "韓国語で「空港」はどう言いますか。",
+      "prompt_de": "Wie sagt man „Flughafen“ auf Koreanisch?",
+      "prompt_fr": "Comment dit-on « aéroport » en coréen ?",
+      "prompt_id": "Bagaimana cara mengatakan \"bandara\" dalam bahasa Korea?",
+      "prompt_th": "\"สนามบิน\" ในภาษาเกาหลีพูดว่าอย่างไร",
+      "prompt_vi": "\"Sân bay\" trong tiếng Hàn nói thế nào?",
+      "prompt_zh_tw": "韓語的「機場」怎麼說？"
     },
     {
       "id": 66,
@@ -2332,68 +1996,20 @@
       "type": "match_quiz",
       "prompt": "Which verb means 'to drink'?",
       "choices": [
-        "먹다 (meokda)",
-        "마시다 (masida)",
-        "보다 (boda)",
-        "듣다 (deutda)"
-      ],
-      "correct": "마시다 (masida)",
-      "prompt_es": "¿Qué verbo significa \"beber\"?",
-      "choices_es": [
-        "먹다 (meokda)",
-        "마시다 (masida)",
-        "보다 (boda)",
-        "듣다 (deutda)"
-      ],
-      "prompt_ja": "「飲む」を意味する動詞はどれでしょう。",
-      "prompt_de": "Welches Verb bedeutet „trinken“?",
-      "choices_de": [
-        "먹다 (meokda)",
-        "마시다 (masida)",
-        "보다 (boda)",
-        "듣다 (deutda)"
-      ],
-      "prompt_fr": "Quel verbe signifie « boire » ?",
-      "choices_fr": [
-        "먹다 (meokda)",
-        "마시다 (masida)",
-        "보다 (boda)",
-        "듣다 (deutda)"
-      ],
-      "prompt_id": "Kata kerja mana yang berarti \"minum\"?",
-      "choices_id": [
-        "먹다 (meokda)",
-        "마시다 (masida)",
-        "보다 (boda)",
-        "듣다 (deutda)"
-      ],
-      "choices_ja": [
-        "먹다（モクタ）",
-        "마시다（マシダ）",
-        "보다（ポダ）",
-        "듣다（トゥッタ）"
-      ],
-      "prompt_th": "คำกริยาใดหมายถึง \"ดื่ม\"",
-      "choices_th": [
-        "먹다 (meokda)",
-        "마시다 (masida)",
-        "보다 (boda)",
-        "듣다 (deutda)"
-      ],
-      "prompt_vi": "Động từ nào có nghĩa là \"uống\"?",
-      "choices_vi": [
-        "먹다 (meokda)",
-        "마시다 (masida)",
-        "보다 (boda)",
-        "듣다 (deutda)"
-      ],
-      "prompt_zh_tw": "哪個動詞的意思是「喝」？",
-      "choices_zh_tw": [
         "먹다",
         "마시다",
         "보다",
         "듣다"
-      ]
+      ],
+      "correct": "마시다",
+      "prompt_es": "¿Qué verbo significa \"beber\"?",
+      "prompt_ja": "「飲む」を意味する動詞はどれでしょう。",
+      "prompt_de": "Welches Verb bedeutet „trinken“?",
+      "prompt_fr": "Quel verbe signifie « boire » ?",
+      "prompt_id": "Kata kerja mana yang berarti \"minum\"?",
+      "prompt_th": "คำกริยาใดหมายถึง \"ดื่ม\"",
+      "prompt_vi": "Động từ nào có nghĩa là \"uống\"?",
+      "prompt_zh_tw": "哪個動詞的意思是「喝」？"
     },
     {
       "id": 74,
@@ -2506,68 +2122,20 @@
       "type": "match_quiz",
       "prompt": "Which adjective means 'difficult' or 'hard'?",
       "choices": [
-        "쉽다 (swipda)",
-        "어렵다 (eoryeopda)",
-        "느리다 (neurida)",
-        "나쁘다 (nappeuda)"
-      ],
-      "correct": "어렵다 (eoryeopda)",
-      "prompt_es": "¿Qué adjetivo significa \"difícil\"?",
-      "choices_es": [
-        "쉽다 (swipda)",
-        "어렵다 (eoryeopda)",
-        "느리다 (neurida)",
-        "나쁘다 (nappeuda)"
-      ],
-      "prompt_ja": "「難しい」を意味する形容詞はどれでしょう。",
-      "prompt_de": "Welches Adjektiv bedeutet „schwierig“ bzw. „schwer“?",
-      "choices_de": [
-        "쉽다 (swipda)",
-        "어렵다 (eoryeopda)",
-        "느리다 (neurida)",
-        "나쁘다 (nappeuda)"
-      ],
-      "prompt_fr": "Quel adjectif signifie « difficile » ou « dur » ?",
-      "choices_fr": [
-        "쉽다 (swipda)",
-        "어렵다 (eoryeopda)",
-        "느리다 (neurida)",
-        "나쁘다 (nappeuda)"
-      ],
-      "prompt_id": "Kata sifat mana yang berarti \"sulit\" atau \"susah\"?",
-      "choices_id": [
-        "쉽다 (swipda)",
-        "어렵다 (eoryeopda)",
-        "느리다 (neurida)",
-        "나쁘다 (nappeuda)"
-      ],
-      "choices_ja": [
-        "쉽다（スィプタ）",
-        "어렵다（オリョプタ）",
-        "느리다（ヌリダ）",
-        "나쁘다（ナップダ）"
-      ],
-      "prompt_th": "คำคุณศัพท์ใดหมายถึง \"ยาก\" หรือ \"ลำบาก\"",
-      "choices_th": [
-        "쉽다 (swipda)",
-        "어렵다 (eoryeopda)",
-        "느리다 (neurida)",
-        "나쁘다 (nappeuda)"
-      ],
-      "prompt_vi": "Tính từ nào có nghĩa là \"khó\"?",
-      "choices_vi": [
-        "쉽다 (swipda)",
-        "어렵다 (eoryeopda)",
-        "느리다 (neurida)",
-        "나쁘다 (nappeuda)"
-      ],
-      "prompt_zh_tw": "哪個形容詞的意思是「困難」？",
-      "choices_zh_tw": [
         "쉽다",
         "어렵다",
         "느리다",
         "나쁘다"
-      ]
+      ],
+      "correct": "어렵다",
+      "prompt_es": "¿Qué adjetivo significa \"difícil\"?",
+      "prompt_ja": "「難しい」を意味する形容詞はどれでしょう。",
+      "prompt_de": "Welches Adjektiv bedeutet „schwierig“ bzw. „schwer“?",
+      "prompt_fr": "Quel adjectif signifie « difficile » ou « dur » ?",
+      "prompt_id": "Kata sifat mana yang berarti \"sulit\" atau \"susah\"?",
+      "prompt_th": "คำคุณศัพท์ใดหมายถึง \"ยาก\" หรือ \"ลำบาก\"",
+      "prompt_vi": "Tính từ nào có nghĩa là \"khó\"?",
+      "prompt_zh_tw": "哪個形容詞的意思是「困難」？"
     },
     {
       "id": 80,

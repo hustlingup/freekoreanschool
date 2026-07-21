@@ -252,7 +252,7 @@
       "katakana": "ナムドンセン",
       "audio": "남동생",
       "meaning": "Younger brother — nam (남) = male",
-      "meaning_zh_tw": "弟弟——남（남）＝男性",
+      "meaning_zh_tw": "弟弟——남（男）＝男性",
       "meaning_ja": "弟 ― 남（男）+ 동생（年下のきょうだい）",
       "meaning_es": "Hermano menor — nam (남) = masculino",
       "meaning_de": "Jüngerer Bruder — nam (남) = männlich",
@@ -275,7 +275,7 @@
       "katakana": "ヨドンセン",
       "audio": "여동생",
       "meaning": "Younger sister — yeo (여) = female",
-      "meaning_zh_tw": "妹妹——여（여）＝女性",
+      "meaning_zh_tw": "妹妹——여（女）＝女性",
       "meaning_ja": "妹 ― 여（女）+ 동생（年下のきょうだい）",
       "meaning_es": "Hermana menor — yeo (여) = femenino",
       "meaning_de": "Jüngere Schwester — yeo (여) = weiblich",
@@ -299,7 +299,7 @@
       "katakana": "ハラボジ",
       "audio": "할아버지",
       "meaning": "Grandfather",
-      "meaning_zh_tw": "爺爺",
+      "meaning_zh_tw": "爺爺／外公——父系母系皆可用",
       "meaning_ja": "おじいさん",
       "meaning_es": "Abuelo",
       "meaning_de": "Großvater",
@@ -322,7 +322,7 @@
       "katakana": "ハルモニ",
       "audio": "할머니",
       "meaning": "Grandmother",
-      "meaning_zh_tw": "奶奶",
+      "meaning_zh_tw": "奶奶／外婆——父系母系皆可用",
       "meaning_ja": "おばあさん",
       "meaning_es": "Abuela",
       "meaning_de": "Großmutter",
@@ -425,74 +425,26 @@
       "prompt": "A female speaker calls her older brother...",
       "prompt_zh_tw": "女性說話者稱自己的哥哥為……",
       "choices": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "누나 (nuna)",
-        "언니 (eonni)"
+        "형",
+        "오빠",
+        "누나",
+        "언니"
       ],
-      "choices_zh_tw": [
-        "형（男性稱哥哥）",
-        "오빠（女性稱哥哥）",
-        "누나（男性稱姊姊）",
-        "언니（女性稱姊姊）"
-      ],
-      "choices_ja": [
-        "형（ヒョン）",
-        "오빠（オッパ）",
-        "누나（ヌナ）",
-        "언니（オンニ）"
-      ],
-      "correct": "오빠 (oppa)",
+      "correct": "오빠",
       "prompt_ja": "女性が自分の兄を呼ぶときは？",
       "prompt_es": "Una hablante femenina llama a su hermano mayor...",
-      "choices_es": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "누나 (nuna)",
-        "언니 (eonni)"
-      ],
       "prompt_de": "Eine weibliche Sprecherin nennt ihren älteren Bruder ...",
-      "choices_de": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "누나 (nuna)",
-        "언니 (eonni)"
-      ],
       "prompt_fr": "Une locutrice appelle son grand frère...",
-      "choices_fr": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "누나 (nuna)",
-        "언니 (eonni)"
-      ],
       "prompt_id": "Penutur perempuan memanggil kakak laki-lakinya dengan sebutan...",
-      "choices_id": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "누나 (nuna)",
-        "언니 (eonni)"
-      ],
       "prompt_th": "ผู้พูดที่เป็นผู้หญิงเรียกพี่ชายของตนว่า...",
-      "choices_th": [
-        "형 (ฮยอง)",
-        "오빠 (โอปป้า)",
-        "누나 (นูน่า)",
-        "언니 (ออนนี่)"
-      ],
-      "prompt_vi": "Người nói là nữ gọi anh trai của mình là...",
-      "choices_vi": [
-        "형 (hyeong)",
-        "오빠 (oppa)",
-        "누나 (nuna)",
-        "언니 (eonni)"
-      ]
+      "prompt_vi": "Người nói là nữ gọi anh trai của mình là..."
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "How do you say 'grandmother' in Korean?",
-      "prompt_zh_tw": "韓語中「奶奶」怎麼說？",
+      "prompt_zh_tw": "韓語中「奶奶／外婆」怎麼說？",
       "choices": [
         "할아버지",
         "엄마",
@@ -503,58 +455,10 @@
       "prompt_ja": "韓国語で「おばあさん」はどう言いますか？",
       "prompt_es": "¿Cómo se dice \"abuela\" en coreano?",
       "prompt_de": "Wie sagt man „Großmutter“ auf Koreanisch?",
-      "choices_de": [
-        "할아버지",
-        "엄마",
-        "할머니",
-        "아내"
-      ],
-      "choices_es": [
-        "할아버지",
-        "엄마",
-        "할머니",
-        "아내"
-      ],
       "prompt_fr": "Comment dit-on « grand-mère » en coréen ?",
-      "choices_fr": [
-        "할아버지",
-        "엄마",
-        "할머니",
-        "아내"
-      ],
       "prompt_id": "Bagaimana cara mengatakan \"nenek\" dalam bahasa Korea?",
-      "choices_id": [
-        "할아버지",
-        "엄마",
-        "할머니",
-        "아내"
-      ],
-      "choices_ja": [
-        "할아버지",
-        "엄마",
-        "할머니",
-        "아내"
-      ],
       "prompt_th": "คำว่า \"คุณย่า/คุณยาย\" ในภาษาเกาหลีพูดว่าอย่างไร?",
-      "choices_th": [
-        "할아버지",
-        "엄마",
-        "할머니",
-        "아내"
-      ],
-      "prompt_vi": "\"Bà\" trong tiếng Hàn nói thế nào?",
-      "choices_vi": [
-        "할아버지",
-        "엄마",
-        "할머니",
-        "아내"
-      ],
-      "choices_zh_tw": [
-        "할아버지",
-        "엄마",
-        "할머니",
-        "아내"
-      ]
+      "prompt_vi": "\"Bà\" trong tiếng Hàn nói thế nào?"
     },
     {
       "id": 20,

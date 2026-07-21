@@ -404,139 +404,43 @@
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "비싸다 means expensive. Its opposite is...",
-      "prompt_zh_tw": "비싸다 是「貴」。它的反義詞是……",
+      "prompt": "쉽다 → polite present tense is...",
+      "prompt_zh_tw": "쉽다 → 敬語現在式是……",
       "choices": [
-        "재미있다",
-        "새롭다",
-        "싸다",
-        "짧다"
+        "쉽어요",
+        "쉬워요",
+        "쉬어요",
+        "쉽아요"
       ],
-      "correct": "싸다",
-      "prompt_ja": "비싸다 は「高い」。その反対は？",
-      "prompt_es": "비싸다 significa caro. Su opuesto es...",
-      "prompt_de": "비싸다 bedeutet „teuer“. Das Gegenteil davon ist ...",
-      "choices_de": [
-        "재미있다",
-        "새롭다",
-        "싸다",
-        "짧다"
-      ],
-      "choices_es": [
-        "재미있다",
-        "새롭다",
-        "싸다",
-        "짧다"
-      ],
-      "prompt_fr": "비싸다 signifie « cher ». Son contraire est...",
-      "choices_fr": [
-        "재미있다",
-        "새롭다",
-        "싸다",
-        "짧다"
-      ],
-      "prompt_id": "비싸다 berarti mahal. Lawan katanya adalah...",
-      "choices_id": [
-        "재미있다",
-        "새롭다",
-        "싸다",
-        "짧다"
-      ],
-      "choices_ja": [
-        "재미있다",
-        "새롭다",
-        "싸다",
-        "짧다"
-      ],
-      "prompt_th": "비싸다 แปลว่าแพง คำตรงข้ามคือ...",
-      "choices_th": [
-        "재미있다",
-        "새롭다",
-        "싸다",
-        "짧다"
-      ],
-      "prompt_vi": "비싸다 có nghĩa là đắt. Từ trái nghĩa của nó là...",
-      "choices_vi": [
-        "재미있다",
-        "새롭다",
-        "싸다",
-        "짧다"
-      ],
-      "choices_zh_tw": [
-        "재미있다",
-        "새롭다",
-        "싸다",
-        "짧다"
-      ]
+      "correct": "쉬워요",
+      "prompt_ja": "쉽다 → 丁寧形の現在形は？",
+      "prompt_es": "쉽다 → el presente en forma cortés es...",
+      "prompt_de": "쉽다 → die höfliche Gegenwartsform lautet ...",
+      "prompt_fr": "쉽다 → la forme polie au présent est...",
+      "prompt_id": "쉽다 → bentuk sopan waktu sekarang adalah...",
+      "prompt_th": "쉽다 → รูปสุภาพปัจจุบันคือ...",
+      "prompt_vi": "쉽다 → thể hiện tại lịch sự là..."
     },
     {
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "재미없다 means...",
-      "prompt_zh_tw": "재미없다 是什麼意思？",
+      "prompt": "재미있다 means 'fun'. Which adjective is its opposite?",
+      "prompt_zh_tw": "재미있다 是「有趣」。哪個形容詞是它的反義詞？",
       "choices": [
-        "짧다",
-        "재미없다",
         "맛없다",
+        "재미없다",
+        "어렵다",
         "작다"
       ],
       "correct": "재미없다",
-      "prompt_ja": "재미없다 はどういう意味ですか？",
-      "prompt_es": "재미없다 significa...",
-      "prompt_de": "재미없다 bedeutet ...",
-      "choices_de": [
-        "짧다",
-        "재미없다",
-        "맛없다",
-        "작다"
-      ],
-      "choices_es": [
-        "짧다",
-        "재미없다",
-        "맛없다",
-        "작다"
-      ],
-      "prompt_fr": "재미없다 signifie...",
-      "choices_fr": [
-        "짧다",
-        "재미없다",
-        "맛없다",
-        "작다"
-      ],
-      "prompt_id": "재미없다 berarti...",
-      "choices_id": [
-        "짧다",
-        "재미없다",
-        "맛없다",
-        "작다"
-      ],
-      "choices_ja": [
-        "짧다",
-        "재미없다",
-        "맛없다",
-        "작다"
-      ],
-      "prompt_th": "재미없다 แปลว่า...",
-      "choices_th": [
-        "짧다",
-        "재미없다",
-        "맛없다",
-        "작다"
-      ],
-      "prompt_vi": "재미없다 có nghĩa là...",
-      "choices_vi": [
-        "짧다",
-        "재미없다",
-        "맛없다",
-        "작다"
-      ],
-      "choices_zh_tw": [
-        "짧다",
-        "재미없다",
-        "맛없다",
-        "작다"
-      ]
+      "prompt_ja": "재미있다 は「面白い」。反対の意味の形容詞はどれですか？",
+      "prompt_es": "재미있다 significa \"divertido\". ¿Qué adjetivo es su opuesto?",
+      "prompt_de": "재미있다 bedeutet „unterhaltsam“. Welches Adjektiv ist das Gegenteil?",
+      "prompt_fr": "재미있다 signifie « amusant ». Quel adjectif est son contraire ?",
+      "prompt_id": "재미있다 berarti 'menyenangkan'. Kata sifat mana yang merupakan lawan katanya?",
+      "prompt_th": "재미있다 แปลว่า “สนุก” คำคุณศัพท์ใดเป็นคำตรงข้าม?",
+      "prompt_vi": "재미있다 có nghĩa là \"thú vị\". Tính từ nào là từ trái nghĩa của nó?"
     },
     {
       "id": 19,
@@ -545,67 +449,19 @@
       "prompt": "Which adjective means 'pretty'?",
       "prompt_zh_tw": "哪個形容詞表示「漂亮」？",
       "choices": [
-        "Pretty",
-        "Handsome",
-        "Big",
-        "Fast"
+        "예쁘다",
+        "새롭다",
+        "맛있다",
+        "좋다"
       ],
-      "choices_zh_tw": [
-        "漂亮",
-        "英俊",
-        "大",
-        "快"
-      ],
-      "choices_ja": [
-        "きれい",
-        "ハンサム",
-        "大きい",
-        "速い"
-      ],
-      "correct": "Pretty",
+      "correct": "예쁘다",
       "prompt_ja": "「きれい」を意味する形容詞はどれですか？",
       "prompt_es": "¿Qué adjetivo significa \"bonito/hermoso\"?",
-      "choices_es": [
-        "Bonito/a",
-        "Guapo/a",
-        "Grande",
-        "Rápido/a"
-      ],
       "prompt_de": "Welches Adjektiv bedeutet „hübsch“?",
-      "choices_de": [
-        "hübsch",
-        "gut aussehend",
-        "groß",
-        "schnell"
-      ],
       "prompt_fr": "Quel adjectif signifie « joli » ?",
-      "choices_fr": [
-        "Joli(e)",
-        "Beau (bel homme)",
-        "Grand(e)",
-        "Rapide"
-      ],
       "prompt_id": "Kata sifat mana yang berarti 'cantik'?",
-      "choices_id": [
-        "Cantik",
-        "Tampan",
-        "Besar",
-        "Cepat"
-      ],
       "prompt_th": "คำคุณศัพท์ใดแปลว่า “สวย”?",
-      "choices_th": [
-        "สวย",
-        "หล่อ",
-        "ใหญ่",
-        "เร็ว"
-      ],
-      "prompt_vi": "Tính từ nào có nghĩa là \"xinh đẹp\"?",
-      "choices_vi": [
-        "Xinh đẹp",
-        "Đẹp trai",
-        "To",
-        "Nhanh"
-      ]
+      "prompt_vi": "Tính từ nào có nghĩa là \"xinh đẹp\"?"
     },
     {
       "id": 20,

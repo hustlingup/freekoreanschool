@@ -439,19 +439,19 @@
         "A selfie",
         "A cell phone",
         "A camera brand",
-        "A TV show"
+        "A self-service counter"
       ],
       "choices_zh_tw": [
         "自拍",
         "手機",
         "相機品牌",
-        "電視節目"
+        "自助式櫃檯"
       ],
       "choices_ja": [
         "自撮り",
         "携帯電話",
         "カメラブランド",
-        "テレビ番組"
+        "セルフサービスのカウンター"
       ],
       "correct": "A selfie",
       "prompt_ja": "셀카 というコングリッシュの意味は？",
@@ -460,42 +460,42 @@
         "Una selfie",
         "Un móvil",
         "Una marca de cámara",
-        "Un programa de TV"
+        "Un mostrador de autoservicio"
       ],
       "prompt_de": "셀카 ist ein konglisches Wort für ...",
       "choices_de": [
         "Ein Selfie",
         "Ein Handy",
         "Eine Kameramarke",
-        "Eine Fernsehsendung"
+        "Ein Selbstbedienungstresen"
       ],
       "prompt_fr": "셀카 est un mot konglish qui désigne...",
       "choices_fr": [
         "Un selfie",
         "Un téléphone portable",
         "Une marque d'appareil photo",
-        "Une émission de télévision"
+        "Un comptoir en libre-service"
       ],
       "prompt_id": "셀카 adalah kata Konglish yang berarti...",
       "choices_id": [
         "Swafoto (selfie)",
         "Ponsel",
         "Merek kamera",
-        "Acara televisi"
+        "Konter swalayan"
       ],
       "prompt_th": "셀카 เป็นคำคงกลิชที่หมายถึง...",
       "choices_th": [
         "การถ่ายเซลฟี่",
         "โทรศัพท์มือถือ",
         "ยี่ห้อกล้อง",
-        "รายการโทรทัศน์"
+        "เคาน์เตอร์บริการตนเอง"
       ],
       "prompt_vi": "셀카 là từ Konglish có nghĩa là...",
       "choices_vi": [
         "Ảnh tự sướng",
         "Điện thoại di động",
         "Một hãng máy ảnh",
-        "Một chương trình truyền hình"
+        "Quầy tự phục vụ"
       ]
     },
     {
@@ -571,77 +571,29 @@
       "id": 20,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "What does 에어컨 mean?",
-      "prompt_zh_tw": "에어컨 是什麼意思？",
+      "prompt": "Which Konglish word means 'air conditioner'?",
+      "prompt_zh_tw": "哪一個韓式英語詞彙意指「冷氣」？",
       "choices": [
-        "Air freshener",
-        "Air conditioner",
-        "Air purifier",
-        "Air mattress"
+        "리모컨",
+        "에어컨",
+        "노트북",
+        "컴퓨터"
       ],
-      "choices_zh_tw": [
-        "空氣清香劑",
-        "冷氣",
-        "空氣清淨機",
-        "充氣床墊"
-      ],
-      "choices_ja": [
-        "空気清浄剤",
-        "エアコン",
-        "空気清浄機",
-        "エアマット"
-      ],
-      "correct": "Air conditioner",
-      "prompt_ja": "에어컨 はどういう意味ですか？",
-      "prompt_es": "¿Qué significa 에어컨?",
-      "choices_es": [
-        "Ambientador",
-        "Aire acondicionado",
-        "Purificador de aire",
-        "Colchón hinchable"
-      ],
-      "prompt_de": "Was bedeutet 에어컨?",
-      "choices_de": [
-        "Lufterfrischer",
-        "Klimaanlage",
-        "Luftreiniger",
-        "Luftmatratze"
-      ],
-      "prompt_fr": "Que signifie 에어컨 ?",
-      "choices_fr": [
-        "Un désodorisant",
-        "Un climatiseur",
-        "Un purificateur d'air",
-        "Un matelas gonflable"
-      ],
-      "prompt_id": "Apa arti 에어컨?",
-      "choices_id": [
-        "Pengharum ruangan",
-        "Pendingin ruangan (AC)",
-        "Pembersih udara",
-        "Kasur angin"
-      ],
-      "prompt_th": "에어컨 หมายความว่าอย่างไร?",
-      "choices_th": [
-        "สเปรย์ปรับอากาศ",
-        "เครื่องปรับอากาศ",
-        "เครื่องฟอกอากาศ",
-        "ที่นอนเป่าลม"
-      ],
-      "prompt_vi": "에어컨 có nghĩa là gì?",
-      "choices_vi": [
-        "Chất khử mùi phòng",
-        "Máy điều hòa không khí",
-        "Máy lọc không khí",
-        "Nệm hơi"
-      ]
+      "correct": "에어컨",
+      "prompt_ja": "「エアコン」を意味するコングリッシュはどれですか？",
+      "prompt_es": "¿Qué palabra Konglish significa \"aire acondicionado\"?",
+      "prompt_de": "Welches konglische Wort bedeutet „Klimaanlage“?",
+      "prompt_fr": "Quel mot konglish signifie « climatiseur » ?",
+      "prompt_id": "Kata Konglish mana yang berarti \"pendingin ruangan (AC)\"?",
+      "prompt_th": "คำคงกลิชคำใดหมายถึง \"เครื่องปรับอากาศ\"?",
+      "prompt_vi": "Từ Konglish nào có nghĩa là \"máy điều hòa không khí\"?"
     },
     {
       "id": 21,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "What does 파이팅 mean in Korean?",
-      "prompt_zh_tw": "파이팅 在韓語中是什麼意思？",
+      "prompt": "What does 파이팅 (also spelled 화이팅) mean in Korean?",
+      "prompt_zh_tw": "파이팅（也拼作 화이팅）在韓語中是什麼意思？",
       "choices": [
         "I am fighting",
         "A boxing term",
@@ -661,43 +613,43 @@
         "怒っている"
       ],
       "correct": "Let's go! / You can do it!",
-      "prompt_ja": "韓国語で파이팅 の意味は？",
-      "prompt_es": "¿Qué significa 파이팅 en coreano?",
+      "prompt_ja": "韓国語で파이팅（화이팅 とも表記）の意味は？",
+      "prompt_es": "¿Qué significa 파이팅 (también escrito 화이팅) en coreano?",
       "choices_es": [
         "Estoy peleando",
         "Un término de boxeo",
         "¡Vamos! / ¡Tú puedes!",
         "Estoy enojado/a"
       ],
-      "prompt_de": "Was bedeutet 파이팅 auf Koreanisch?",
+      "prompt_de": "Was bedeutet 파이팅 (auch 화이팅 geschrieben) auf Koreanisch?",
       "choices_de": [
         "Ich streite mich",
         "Ein Fachbegriff aus dem Boxen",
         "Los geht's! / Du schaffst das!",
         "Ich bin wütend"
       ],
-      "prompt_fr": "Que signifie 파이팅 en coréen ?",
+      "prompt_fr": "Que signifie 파이팅 (aussi écrit 화이팅) en coréen ?",
       "choices_fr": [
         "Je me bats",
         "Un terme de boxe",
         "Allez ! / Tu peux le faire !",
         "Je suis en colère"
       ],
-      "prompt_id": "Apa arti 파이팅 dalam bahasa Korea?",
+      "prompt_id": "Apa arti 파이팅 (juga ditulis 화이팅) dalam bahasa Korea?",
       "choices_id": [
         "Saya sedang berkelahi",
         "Istilah dalam tinju",
         "Ayo! / Kamu pasti bisa!",
         "Saya sedang marah"
       ],
-      "prompt_th": "파이팅 ในภาษาเกาหลีหมายความว่าอย่างไร?",
+      "prompt_th": "파이팅 (สะกดเป็น 화이팅 ก็ได้) ในภาษาเกาหลีหมายความว่าอย่างไร?",
       "choices_th": [
         "ฉันกำลังทะเลาะวิวาท",
         "ศัพท์ในกีฬามวย",
         "ลุยเลย! / คุณทำได้!",
         "ฉันโกรธ"
       ],
-      "prompt_vi": "파이팅 có nghĩa là gì trong tiếng Hàn?",
+      "prompt_vi": "파이팅 (còn viết là 화이팅) có nghĩa là gì trong tiếng Hàn?",
       "choices_vi": [
         "Tôi đang đánh nhau",
         "Một thuật ngữ quyền anh",

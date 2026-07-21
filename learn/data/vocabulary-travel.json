@@ -76,7 +76,7 @@
       "meaning": "Travel / trip",
       "meaning_zh_tw": "旅行 / 旅遊",
       "meaning_ja": "旅行・旅",
-      "meaning_es": "Viaje / viajero",
+      "meaning_es": "Viaje / excursión",
       "meaning_de": "Reise / Ausflug",
       "meaning_fr": "Voyage",
       "meaning_id": "Perjalanan / wisata",
@@ -140,15 +140,15 @@
       "zhuyin": "ㄧㄜ·ㄍㄨㄣ",
       "katakana": "ヨクォン",
       "audio": "여권",
-      "meaning": "Passport — 여 (travel) + 권 (document/voucher)",
-      "meaning_zh_tw": "護照——여（旅行）+ 권（證件）",
-      "meaning_ja": "パスポート ― 여（旅行）+ 권（書類）",
-      "meaning_es": "Pasaporte — 여 (viaje) + 권 (documento)",
-      "meaning_de": "Reisepass — 여 (Reise) + 권 (Dokument/Berechtigungsschein)",
-      "meaning_fr": "Passeport — 여 (voyage) + 권 (document)",
-      "meaning_id": "Paspor — 여 (perjalanan) + 권 (dokumen)",
-      "meaning_th": "หนังสือเดินทาง — 여 (การเดินทาง) + 권 (เอกสาร)",
-      "meaning_vi": "Hộ chiếu — 여 (du lịch) + 권 (giấy tờ)"
+      "meaning": "Passport — the same 여 as in 여행 (travel) + 권 (certificate/ticket)",
+      "meaning_zh_tw": "護照——與여행（旅行）中的여同一個字 + 권（券／證件）",
+      "meaning_ja": "パスポート ― 여행（旅行）と同じ여 + 권（券・証書）",
+      "meaning_es": "Pasaporte — el mismo 여 que en 여행 (viaje) + 권 (certificado/billete)",
+      "meaning_de": "Reisepass — dasselbe 여 wie in 여행 (Reise) + 권 (Schein/Ausweis)",
+      "meaning_fr": "Passeport — le même 여 que dans 여행 (voyage) + 권 (titre/certificat)",
+      "meaning_id": "Paspor — 여 yang sama seperti dalam 여행 (perjalanan) + 권 (surat/sertifikat)",
+      "meaning_th": "หนังสือเดินทาง — 여 ตัวเดียวกับใน 여행 (การเดินทาง) + 권 (ใบ/เอกสารสิทธิ์)",
+      "meaning_vi": "Hộ chiếu — 여 giống như trong 여행 (du lịch) + 권 (giấy/chứng từ)"
     },
     {
       "id": 6,
@@ -396,70 +396,22 @@
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "여권 means...",
-      "prompt_zh_tw": "여권 的意思是……",
+      "prompt": "Which word means 'passport'?",
+      "prompt_zh_tw": "哪個詞的意思是「護照」？",
       "choices": [
-        "Luggage",
-        "Passport",
-        "Map",
-        "Reservation"
+        "탑승권",
+        "여권",
+        "비자",
+        "항공권"
       ],
-      "choices_zh_tw": [
-        "行李",
-        "護照",
-        "地圖",
-        "預訂"
-      ],
-      "choices_ja": [
-        "荷物",
-        "パスポート",
-        "地図",
-        "予約"
-      ],
-      "correct": "Passport",
-      "prompt_ja": "여권 はどういう意味ですか？",
-      "prompt_es": "여권 significa...",
-      "choices_es": [
-        "Equipaje",
-        "Pasaporte",
-        "Mapa",
-        "Reserva"
-      ],
-      "prompt_de": "여권 bedeutet …",
-      "choices_de": [
-        "Gepäck",
-        "Reisepass",
-        "Karte",
-        "Reservierung"
-      ],
-      "prompt_fr": "여권 signifie…",
-      "choices_fr": [
-        "Bagages",
-        "Passeport",
-        "Carte",
-        "Réservation"
-      ],
-      "prompt_id": "여권 berarti...",
-      "choices_id": [
-        "Koper",
-        "Paspor",
-        "Peta",
-        "Reservasi"
-      ],
-      "prompt_th": "여권 แปลว่า…",
-      "choices_th": [
-        "สัมภาระ",
-        "หนังสือเดินทาง",
-        "แผนที่",
-        "การจอง"
-      ],
-      "prompt_vi": "여권 có nghĩa là...",
-      "choices_vi": [
-        "Hành lý",
-        "Hộ chiếu",
-        "Bản đồ",
-        "Đặt chỗ"
-      ]
+      "correct": "여권",
+      "prompt_ja": "「パスポート」を意味する語はどれでしょう。",
+      "prompt_es": "¿Qué palabra significa 'pasaporte'?",
+      "prompt_de": "Welches Wort bedeutet „Reisepass\"?",
+      "prompt_fr": "Quel mot signifie « passeport » ?",
+      "prompt_id": "Kata mana yang berarti 'paspor'?",
+      "prompt_th": "คำใดหมายความว่า \"หนังสือเดินทาง\"?",
+      "prompt_vi": "Từ nào có nghĩa là 'hộ chiếu'?"
     },
     {
       "id": 18,
@@ -477,127 +429,31 @@
       "prompt_ja": "道に迷ったとき、何と言いますか？",
       "prompt_es": "Estás perdido/a. ¿Qué frase dices?",
       "prompt_de": "Du hast dich verlaufen. Welchen Satz sagst du?",
-      "choices_de": [
-        "예약했어요",
-        "길을 잃었어요",
-        "환전 어디서 해요?",
-        "입국 심사"
-      ],
-      "choices_es": [
-        "예약했어요",
-        "길을 잃었어요",
-        "환전 어디서 해요?",
-        "입국 심사"
-      ],
       "prompt_fr": "Vous êtes perdu. Quelle phrase dites-vous ?",
-      "choices_fr": [
-        "예약했어요",
-        "길을 잃었어요",
-        "환전 어디서 해요?",
-        "입국 심사"
-      ],
       "prompt_id": "Kamu tersesat. Kalimat mana yang kamu ucapkan?",
-      "choices_id": [
-        "예약했어요",
-        "길을 잃었어요",
-        "환전 어디서 해요?",
-        "입국 심사"
-      ],
-      "choices_ja": [
-        "예약했어요",
-        "길을 잃었어요",
-        "환전 어디서 해요?",
-        "입국 심사"
-      ],
       "prompt_th": "คุณหลงทาง ควรพูดประโยคใด?",
-      "choices_th": [
-        "예약했어요",
-        "길을 잃었어요",
-        "환전 어디서 해요?",
-        "입국 심사"
-      ],
-      "prompt_vi": "Bạn bị lạc đường. Bạn nói câu nào?",
-      "choices_vi": [
-        "예약했어요",
-        "길을 잃었어요",
-        "환전 어디서 해요?",
-        "입국 심사"
-      ],
-      "choices_zh_tw": [
-        "我有預訂",
-        "我迷路了",
-        "在哪裡可以換錢？",
-        "入境審查"
-      ]
+      "prompt_vi": "Bạn bị lạc đường. Bạn nói câu nào?"
     },
     {
       "id": 19,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "오른쪽 means...",
-      "prompt_zh_tw": "오른쪽 的意思是……",
+      "prompt": "The taxi driver needs to turn right. Which word do you say?",
+      "prompt_zh_tw": "計程車司機需要右轉。你要說哪個詞？",
       "choices": [
-        "Left",
-        "Straight",
-        "Right",
-        "Back"
+        "왼쪽",
+        "직진",
+        "오른쪽",
+        "뒤"
       ],
-      "choices_zh_tw": [
-        "左邊",
-        "直走",
-        "右邊",
-        "後面"
-      ],
-      "choices_ja": [
-        "左",
-        "直進",
-        "右",
-        "後ろ"
-      ],
-      "correct": "Right",
-      "prompt_ja": "오른쪽 はどういう意味ですか？",
-      "prompt_es": "오른쪽 significa...",
-      "choices_es": [
-        "Izquierda",
-        "Recto",
-        "Derecha",
-        "Atrás"
-      ],
-      "prompt_de": "오른쪽 bedeutet …",
-      "choices_de": [
-        "Links",
-        "Geradeaus",
-        "Rechts",
-        "Zurück"
-      ],
-      "prompt_fr": "오른쪽 signifie…",
-      "choices_fr": [
-        "Gauche",
-        "Tout droit",
-        "Droite",
-        "Derrière"
-      ],
-      "prompt_id": "오른쪽 berarti...",
-      "choices_id": [
-        "Kiri",
-        "Lurus",
-        "Kanan",
-        "Belakang"
-      ],
-      "prompt_th": "오른쪽 แปลว่า…",
-      "choices_th": [
-        "ซ้าย",
-        "ตรงไป",
-        "ขวา",
-        "ข้างหลัง"
-      ],
-      "prompt_vi": "오른쪽 có nghĩa là...",
-      "choices_vi": [
-        "Bên trái",
-        "Đi thẳng",
-        "Bên phải",
-        "Phía sau"
-      ]
+      "correct": "오른쪽",
+      "prompt_ja": "タクシーの運転手に右へ曲がってほしいとき、どの語を言いますか。",
+      "prompt_es": "El taxista tiene que girar a la derecha. ¿Qué palabra dices?",
+      "prompt_de": "Der Taxifahrer soll rechts abbiegen. Welches Wort sagst du?",
+      "prompt_fr": "Le chauffeur de taxi doit tourner à droite. Quel mot dites-vous ?",
+      "prompt_id": "Sopir taksi harus belok kanan. Kata mana yang kamu ucapkan?",
+      "prompt_th": "คนขับแท็กซี่ต้องเลี้ยวขวา คุณจะพูดคำใด?",
+      "prompt_vi": "Tài xế taxi cần rẽ phải. Bạn nói từ nào?"
     },
     {
       "id": 20,

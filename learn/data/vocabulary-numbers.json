@@ -1,13 +1,13 @@
 {
   "lesson": "vocab-numbers",
-  "totalSteps": 24,
+  "totalSteps": 25,
   "stages": [
     {
       "id": 1,
       "name": "Numbers",
       "name_kr": "숫자",
       "first_step": 1,
-      "last_step": 24,
+      "last_step": 25,
       "time_minutes": 14,
       "name_es": "Números",
       "name_de": "Zahlen",
@@ -284,6 +284,28 @@
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
+        "아",
+        "홉"
+      ],
+      "romanization": "ahop",
+      "zhuyin": "ㄚ·ㄏㄛ",
+      "katakana": "アホプ",
+      "audio": "아홉",
+      "meaning": "Nine (native Korean)",
+      "meaning_zh_tw": "九（固有語）",
+      "meaning_ja": "九（固有語）",
+      "meaning_es": "Nueve (coreano nativo)",
+      "meaning_de": "Neun (rein koreanisch)",
+      "meaning_fr": "Neuf (coréen natif)",
+      "meaning_id": "Sembilan (asli Korea)",
+      "meaning_th": "เก้า (เลขเกาหลีแท้)",
+      "meaning_vi": "Chín (thuần Hàn)"
+    },
+    {
+      "id": 11,
+      "stage": 1,
+      "type": "listen_repeat",
+      "syllables": [
         "열"
       ],
       "romanization": "yeol",
@@ -301,7 +323,7 @@
       "meaning_vi": "Mười (thuần Hàn) — dùng cho 10 giờ (열 시)"
     },
     {
-      "id": 11,
+      "id": 12,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "You are telling someone your age in Korean. Which number system do you use?",
@@ -309,20 +331,20 @@
       "choices": [
         "Sino-Korean (일, 이, 삼)",
         "Native Korean (하나, 둘, 셋)",
-        "Either one is fine",
-        "Neither — use English numbers"
+        "Sino-Korean for the number, native Korean for the counter 살",
+        "Native Korean below 20, Sino-Korean from 20 up"
       ],
       "choices_zh_tw": [
         "漢字語（일、이、삼）",
         "固有語（하나、둘、셋）",
-        "兩種都可以",
-        "都不用——用英文數字"
+        "數字用漢字語，助數詞 살 用固有語",
+        "未滿20用固有語，20以上用漢字語"
       ],
       "choices_ja": [
         "漢数字（일、이、삼）",
         "固有語（하나、둘、셋）",
-        "どちらでもいい",
-        "どちらも使わない（英語を使う）"
+        "数字は漢数字、助数詞 살 は固有語",
+        "20未満は固有語、20以上は漢数字"
       ],
       "correct": "Native Korean (하나, 둘, 셋)",
       "prompt_ja": "韓国語で年齢を伝えるとき、どの数体系を使いますか？",
@@ -330,47 +352,47 @@
       "choices_es": [
         "Sino-coreano (일, 이, 삼)",
         "Coreano nativo (하나, 둘, 셋)",
-        "Cualquiera sirve",
-        "Ninguno — usa números en inglés"
+        "Sino-coreano para el número y coreano nativo para el contador 살",
+        "Coreano nativo por debajo de 20, sino-coreano de 20 en adelante"
       ],
       "prompt_de": "Du nennst jemandem dein Alter auf Koreanisch. Welches Zahlensystem verwendest du?",
       "choices_de": [
         "Sinokoreanisch (일, 이, 삼)",
         "Rein koreanisch (하나, 둘, 셋)",
-        "Beide sind in Ordnung",
-        "Keines von beiden — englische Zahlen verwenden"
+        "Sinokoreanisch für die Zahl, rein koreanisch für die Zähleinheit 살",
+        "Unter 20 rein koreanisch, ab 20 sinokoreanisch"
       ],
       "prompt_fr": "Vous dites votre âge en coréen. Quel système de numération utilisez-vous ?",
       "choices_fr": [
         "Sino-coréen (일, 이, 삼)",
         "Coréen natif (하나, 둘, 셋)",
-        "L'un ou l'autre convient",
-        "Ni l'un ni l'autre — utiliser les chiffres anglais"
+        "Sino-coréen pour le nombre et coréen natif pour le classificateur 살",
+        "Coréen natif en dessous de 20, sino-coréen à partir de 20"
       ],
       "prompt_id": "Kamu sedang menyebutkan usiamu dalam bahasa Korea. Sistem bilangan mana yang kamu pakai?",
       "choices_id": [
         "Sino-Korea (일, 이, 삼)",
         "Asli Korea (하나, 둘, 셋)",
-        "Keduanya boleh",
-        "Tidak keduanya — pakai angka bahasa Inggris"
+        "Sino-Korea untuk angkanya, asli Korea untuk kata penggolong 살",
+        "Asli Korea di bawah 20, Sino-Korea mulai dari 20"
       ],
       "prompt_th": "คุณกำลังบอกอายุของตัวเองเป็นภาษาเกาหลี ควรใช้ระบบตัวเลขแบบใด",
       "choices_th": [
         "เลขจีน-เกาหลี (일, 이, 삼)",
         "เลขเกาหลีแท้ (하나, 둘, 셋)",
-        "ใช้แบบไหนก็ได้",
-        "ไม่ใช้ทั้งสองแบบ — ใช้ตัวเลขภาษาอังกฤษ"
+        "ใช้เลขจีน-เกาหลีกับตัวเลข และเลขเกาหลีแท้กับลักษณนาม 살",
+        "ต่ำกว่า 20 ใช้เลขเกาหลีแท้ ตั้งแต่ 20 ขึ้นไปใช้เลขจีน-เกาหลี"
       ],
       "prompt_vi": "Bạn đang nói tuổi của mình bằng tiếng Hàn. Nên dùng hệ thống số nào?",
       "choices_vi": [
         "Số Hán-Hàn (일, 이, 삼)",
         "Số thuần Hàn (하나, 둘, 셋)",
-        "Dùng loại nào cũng được",
-        "Không dùng loại nào — dùng số tiếng Anh"
+        "Số Hán-Hàn cho con số, số thuần Hàn cho đơn vị đếm 살",
+        "Dưới 20 dùng số thuần Hàn, từ 20 trở lên dùng số Hán-Hàn"
       ]
     },
     {
-      "id": 12,
+      "id": 13,
       "stage": 1,
       "type": "reading_card",
       "title": "Sino-Korean Numbers",
@@ -439,7 +461,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 14,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -460,7 +482,7 @@
       "meaning_vi": "Một (Hán Hàn) — ngày tháng, số điện thoại, tiền bạc"
     },
     {
-      "id": 14,
+      "id": 15,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -481,7 +503,7 @@
       "meaning_vi": "Năm (Hán Hàn) — 오 분 = năm phút"
     },
     {
-      "id": 15,
+      "id": 16,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -502,7 +524,7 @@
       "meaning_vi": "Mười (Hán Hàn) — 십 분 = mười phút"
     },
     {
-      "id": 16,
+      "id": 17,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -523,7 +545,7 @@
       "meaning_vi": "Một trăm (Hán Hàn) — 백 원 = 100 won"
     },
     {
-      "id": 17,
+      "id": 18,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -544,7 +566,7 @@
       "meaning_vi": "Một nghìn (Hán Hàn) — 천 원 = 1.000 won"
     },
     {
-      "id": 18,
+      "id": 19,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -565,7 +587,7 @@
       "meaning_vi": "Mười nghìn (Hán Hàn) — đơn vị then chốt trong giá cả ở Hàn Quốc"
     },
     {
-      "id": 19,
+      "id": 20,
       "stage": 1,
       "type": "reading_card",
       "title": "Korean Counters",
@@ -661,7 +683,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 21,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -682,7 +704,7 @@
       "meaning_vi": "Đơn vị đếm đồ vật nói chung — 사탕 세 개 (ba viên kẹo)"
     },
     {
-      "id": 21,
+      "id": 22,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -703,7 +725,7 @@
       "meaning_vi": "Đơn vị đếm người (trang trọng) — 친구 두 명 (hai người bạn)"
     },
     {
-      "id": 22,
+      "id": 23,
       "stage": 1,
       "type": "listen_repeat",
       "syllables": [
@@ -724,76 +746,28 @@
       "meaning_vi": "Đơn vị đếm số lần / thứ tự — 한 번 더 (một lần nữa)"
     },
     {
-      "id": 23,
+      "id": 24,
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Which counter do you use for books (책)?",
       "prompt_zh_tw": "數書（책）時用哪個助數詞？",
       "choices": [
-        "개 (gae)",
-        "명 (myeong)",
-        "권 (gwon)",
-        "잔 (jan)"
+        "개",
+        "명",
+        "권",
+        "잔"
       ],
-      "choices_zh_tw": [
-        "개（物品）",
-        "명（人）",
-        "권（書）",
-        "잔（杯）"
-      ],
-      "choices_ja": [
-        "개（ケ）",
-        "명（ミョン）",
-        "권（クォン）",
-        "잔（チャン）"
-      ],
-      "correct": "권 (gwon)",
+      "correct": "권",
       "prompt_ja": "本（책）を数えるときの助数詞は？",
       "prompt_es": "¿Qué contador usas para los libros (책)?",
-      "choices_es": [
-        "개 (objetos)",
-        "명 (personas)",
-        "권 (libros)",
-        "잔 (vasos)"
-      ],
       "prompt_de": "Welches Zähleinheitswort verwendest du für Bücher (책)?",
-      "choices_de": [
-        "개 (Gegenstände)",
-        "명 (Personen)",
-        "권 (Bücher)",
-        "잔 (Gläser)"
-      ],
       "prompt_fr": "Quel classificateur utilise-t-on pour les livres (책) ?",
-      "choices_fr": [
-        "개 (objets)",
-        "명 (personnes)",
-        "권 (livres)",
-        "잔 (verres)"
-      ],
       "prompt_id": "Kata penggolong mana yang dipakai untuk buku (책)?",
-      "choices_id": [
-        "개 (gae)",
-        "명 (myeong)",
-        "권 (gwon)",
-        "잔 (jan)"
-      ],
       "prompt_th": "ใช้ลักษณนามใดกับหนังสือ (책)",
-      "choices_th": [
-        "개 (สิ่งของ)",
-        "명 (คน)",
-        "권 (หนังสือ)",
-        "잔 (แก้ว)"
-      ],
-      "prompt_vi": "Đếm sách (책) thì dùng danh từ đơn vị nào?",
-      "choices_vi": [
-        "개 (đồ vật)",
-        "명 (người)",
-        "권 (sách)",
-        "잔 (cốc)"
-      ]
+      "prompt_vi": "Đếm sách (책) thì dùng danh từ đơn vị nào?"
     },
     {
-      "id": 24,
+      "id": 25,
       "stage": 1,
       "type": "lesson_complete",
       "title": "Numbers Complete!",

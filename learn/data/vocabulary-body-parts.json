@@ -415,15 +415,15 @@
       "zhuyin": "ㄧ",
       "katakana": "イ",
       "audio": "이",
-      "meaning": "Tooth — 치아 is the more formal/medical word",
-      "meaning_zh_tw": "牙齒——치아 是較正式的醫學用語",
-      "meaning_ja": "歯 ― 치아 がより丁寧・医学的な語",
-      "meaning_es": "Diente — 치아 es el término más formal/médico",
-      "meaning_de": "Zahn — 치아 ist der förmlichere bzw. medizinische Ausdruck",
-      "meaning_fr": "Dent — 치아 est le terme plus formel/médical",
-      "meaning_id": "Gigi — 치아 adalah kata yang lebih formal/medis",
-      "meaning_th": "ฟัน — 치아 เป็นคำที่ทางการ/ใช้ทางการแพทย์มากกว่า",
-      "meaning_vi": "Răng — 치아 là từ trang trọng / mang tính y học hơn"
+      "meaning": "Tooth — on its own 이 also means \"this\" or \"two\"; 치아 is the unambiguous formal/medical word",
+      "meaning_zh_tw": "牙齒——이 單獨出現時也可解作「這」或「二」；치아 是明確無歧義的正式醫學用語",
+      "meaning_ja": "歯 ― 이 単独では「この」「二」の意味にもなる。치아 なら誤解のない丁寧・医学的な語",
+      "meaning_es": "Diente — 이 por sí solo también significa \"este\" o \"dos\"; 치아 es el término formal/médico inequívoco",
+      "meaning_de": "Zahn — für sich allein bedeutet 이 auch „dieser“ oder „zwei“; 치아 ist der eindeutige förmliche bzw. medizinische Ausdruck",
+      "meaning_fr": "Dent — seul, 이 signifie aussi « ce » ou « deux » ; 치아 est le terme formel/médical sans ambiguïté",
+      "meaning_id": "Gigi — 이 sendiri juga berarti “ini” atau “dua”; 치아 adalah kata formal/medis yang tidak ambigu",
+      "meaning_th": "ฟัน — 이 เดี่ยว ๆ ยังหมายถึง “นี้” หรือ “สอง” ได้ด้วย; 치아 เป็นคำทางการ/ทางการแพทย์ที่ชัดเจนกว่า",
+      "meaning_vi": "Răng — đứng một mình, 이 còn có nghĩa \"này\" hoặc \"hai\"; 치아 là từ trang trọng / y học rõ nghĩa hơn"
     },
     {
       "id": 19,
@@ -438,61 +438,13 @@
         "손"
       ],
       "correct": "다리",
-      "prompt_ja": "「足」と「橋」の両方の意味を持つ韓国語は？",
+      "prompt_ja": "「脚」と「橋」の両方の意味を持つ韓国語は？",
       "prompt_es": "¿Qué palabra significa \"pierna\" Y \"puente\" en coreano?",
       "prompt_de": "Welches koreanische Wort bedeutet sowohl „Bein“ ALS AUCH „Brücke“?",
-      "choices_de": [
-        "다리",
-        "발",
-        "팔",
-        "손"
-      ],
-      "choices_es": [
-        "다리",
-        "발",
-        "팔",
-        "손"
-      ],
       "prompt_fr": "Quel mot signifie à la fois « jambe » ET « pont » en coréen ?",
-      "choices_fr": [
-        "다리",
-        "발",
-        "팔",
-        "손"
-      ],
       "prompt_id": "Kata mana yang dalam bahasa Korea berarti \"kaki\" DAN \"jembatan\"?",
-      "choices_id": [
-        "다리",
-        "발",
-        "팔",
-        "손"
-      ],
-      "choices_ja": [
-        "다리",
-        "발",
-        "팔",
-        "손"
-      ],
       "prompt_th": "คำใดในภาษาเกาหลีหมายถึงทั้ง \"ขา\" และ \"สะพาน\"?",
-      "choices_th": [
-        "다리",
-        "발",
-        "팔",
-        "손"
-      ],
-      "prompt_vi": "Từ nào trong tiếng Hàn vừa có nghĩa là \"chân\" VỪA có nghĩa là \"cây cầu\"?",
-      "choices_vi": [
-        "다리",
-        "발",
-        "팔",
-        "손"
-      ],
-      "choices_zh_tw": [
-        "다리",
-        "발",
-        "팔",
-        "손"
-      ]
+      "prompt_vi": "Từ nào trong tiếng Hàn vừa có nghĩa là \"chân\" VỪA có nghĩa là \"cây cầu\"?"
     },
     {
       "id": 20,

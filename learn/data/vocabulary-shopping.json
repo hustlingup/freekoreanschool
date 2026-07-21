@@ -275,7 +275,7 @@
       "audio": "시장",
       "meaning": "Traditional market — Namdaemun and Dongdaemun are famous examples",
       "meaning_zh_tw": "傳統市場——南大門和東大門是著名的例子",
-      "meaning_ja": "市場・市街 ― 南大門・東大門が有名",
+      "meaning_ja": "伝統市場 ― 南大門・東大門が有名",
       "meaning_es": "Mercado tradicional — Namdaemun y Dongdaemun son ejemplos famosos",
       "meaning_de": "Traditioneller Markt — Namdaemun und Dongdaemun sind berühmte Beispiele",
       "meaning_fr": "Marché traditionnel — Namdaemun et Dongdaemun en sont des exemples célèbres",
@@ -399,70 +399,22 @@
       "id": 17,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "얼마예요? means...",
-      "prompt_zh_tw": "얼마예요？的意思是……",
+      "prompt": "You want to know the price. What do you say?",
+      "prompt_zh_tw": "你想知道價錢。你說什麼？",
       "choices": [
-        "Do you have a discount?",
-        "How much is it?",
-        "Can I get a refund?",
-        "Where is the restroom?"
+        "할인 있어요?",
+        "얼마예요?",
+        "영수증 주세요",
+        "카드 돼요?"
       ],
-      "choices_zh_tw": [
-        "有折扣嗎？",
-        "多少錢？",
-        "可以退款嗎？",
-        "洗手間在哪裡？"
-      ],
-      "choices_ja": [
-        "割引はありますか？",
-        "いくらですか？",
-        "返金できますか？",
-        "トイレはどこですか？"
-      ],
-      "correct": "How much is it?",
-      "prompt_ja": "얼마예요？はどういう意味ですか？",
-      "prompt_es": "얼마예요? significa...",
-      "choices_es": [
-        "¿Hay descuento?",
-        "¿Cuánto cuesta?",
-        "¿Puedo hacer una devolución?",
-        "¿Dónde está el baño?"
-      ],
-      "prompt_de": "얼마예요? bedeutet …",
-      "choices_de": [
-        "Gibt es einen Rabatt?",
-        "Wie viel kostet das?",
-        "Kann ich das Geld zurückbekommen?",
-        "Wo ist die Toilette?"
-      ],
-      "prompt_fr": "얼마예요? signifie…",
-      "choices_fr": [
-        "Y a-t-il une réduction ?",
-        "Combien ça coûte ?",
-        "Puis-je être remboursé ?",
-        "Où sont les toilettes ?"
-      ],
-      "prompt_id": "얼마예요? berarti...",
-      "choices_id": [
-        "Apakah ada diskon?",
-        "Berapa harganya?",
-        "Apakah uang saya bisa dikembalikan?",
-        "Di mana toiletnya?"
-      ],
-      "prompt_th": "얼마예요? แปลว่า…",
-      "choices_th": [
-        "มีส่วนลดไหม?",
-        "ราคาเท่าไหร่?",
-        "ขอคืนเงินได้ไหม?",
-        "ห้องน้ำอยู่ที่ไหน?"
-      ],
-      "prompt_vi": "얼마예요? có nghĩa là...",
-      "choices_vi": [
-        "Có giảm giá không?",
-        "Cái này bao nhiêu tiền?",
-        "Tôi hoàn tiền được không?",
-        "Nhà vệ sinh ở đâu?"
-      ]
+      "correct": "얼마예요?",
+      "prompt_ja": "値段を知りたいとき、何と言いますか？",
+      "prompt_es": "Quieres saber el precio. ¿Qué dices?",
+      "prompt_de": "Du möchtest den Preis wissen. Was sagst du?",
+      "prompt_fr": "Vous voulez connaître le prix. Que dites-vous ?",
+      "prompt_id": "Kamu ingin tahu harganya. Apa yang kamu katakan?",
+      "prompt_th": "คุณต้องการทราบราคา ต้องพูดว่าอย่างไร?",
+      "prompt_vi": "Bạn muốn biết giá. Bạn nói gì?"
     },
     {
       "id": 18,
@@ -471,66 +423,66 @@
       "prompt": "백화점 literally means...",
       "prompt_zh_tw": "백화점 的字面意思是……",
       "choices": [
-        "Big store",
+        "White flower shop",
         "Hundred goods store",
-        "Market place",
-        "Fashion center"
+        "Hundred stories shop",
+        "Convenience shop"
       ],
       "choices_zh_tw": [
-        "大商店",
-        "百貨商店",
-        "市場",
-        "時尚中心"
+        "白花店",
+        "一百種貨物的店",
+        "一百個故事的店",
+        "便利商店"
       ],
       "choices_ja": [
-        "大きな店",
+        "白い花の店",
         "百の商品の店",
-        "市場",
-        "ファッションセンター"
+        "百の物語の店",
+        "便利な店"
       ],
       "correct": "Hundred goods store",
       "prompt_ja": "백화점 の文字通りの意味は？",
       "prompt_es": "백화점 literalmente significa...",
       "choices_es": [
-        "Tienda grande",
-        "Tienda de cien productos",
-        "Mercado",
-        "Centro de moda"
+        "Tienda de flores blancas",
+        "Tienda de cien mercancías",
+        "Tienda de cien historias",
+        "Tienda de conveniencia"
       ],
       "prompt_de": "백화점 bedeutet wörtlich …",
       "choices_de": [
-        "Großes Geschäft",
+        "Laden der weißen Blumen",
         "Laden der hundert Waren",
-        "Marktplatz",
-        "Modezentrum"
+        "Laden der hundert Geschichten",
+        "Laden der Bequemlichkeit"
       ],
       "prompt_fr": "백화점 signifie littéralement…",
       "choices_fr": [
-        "Grande boutique",
+        "Boutique aux fleurs blanches",
         "Magasin aux cent marchandises",
-        "Place de marché",
-        "Centre de la mode"
+        "Boutique aux cent histoires",
+        "Magasin de proximité"
       ],
       "prompt_id": "백화점 secara harfiah berarti...",
       "choices_id": [
-        "Toko besar",
+        "Toko bunga putih",
         "Toko seratus macam barang",
-        "Pasar",
-        "Pusat fesyen"
+        "Toko seratus cerita",
+        "Toko kelontong"
       ],
       "prompt_th": "백화점 มีความหมายตามตัวอักษรว่า…",
       "choices_th": [
-        "ร้านค้าขนาดใหญ่",
+        "ร้านดอกไม้สีขาว",
         "ร้านที่มีสินค้าร้อยอย่าง",
-        "ตลาด",
-        "ศูนย์รวมแฟชั่น"
+        "ร้านที่มีเรื่องเล่าร้อยเรื่อง",
+        "ร้านสะดวกซื้อ"
       ],
       "prompt_vi": "백화점 có nghĩa đen là...",
       "choices_vi": [
-        "Cửa hàng lớn",
+        "Cửa hàng hoa trắng",
         "Cửa hàng trăm loại hàng hóa",
-        "Khu chợ",
-        "Trung tâm thời trang"
+        "Cửa hàng trăm câu chuyện",
+        "Cửa hàng tiện lợi"
       ]
     },
     {
@@ -549,58 +501,10 @@
       "prompt_ja": "返金してほしいとき、何と言いますか？",
       "prompt_es": "Quieres una devolución. ¿Qué dices?",
       "prompt_de": "Du möchtest dein Geld zurück. Was sagst du?",
-      "choices_de": [
-        "할인 있어요?",
-        "포장해 주세요",
-        "환불 돼요?",
-        "영수증 주세요"
-      ],
-      "choices_es": [
-        "할인 있어요?",
-        "포장해 주세요",
-        "환불 돼요?",
-        "영수증 주세요"
-      ],
       "prompt_fr": "Vous voulez être remboursé. Que dites-vous ?",
-      "choices_fr": [
-        "할인 있어요?",
-        "포장해 주세요",
-        "환불 돼요?",
-        "영수증 주세요"
-      ],
       "prompt_id": "Kamu ingin uangmu dikembalikan. Apa yang kamu katakan?",
-      "choices_id": [
-        "할인 있어요?",
-        "포장해 주세요",
-        "환불 돼요?",
-        "영수증 주세요"
-      ],
-      "choices_ja": [
-        "할인 있어요?",
-        "포장해 주세요",
-        "환불 돼요?",
-        "영수증 주세요"
-      ],
       "prompt_th": "คุณต้องการขอคืนเงิน ต้องพูดว่าอย่างไร?",
-      "choices_th": [
-        "할인 있어요?",
-        "포장해 주세요",
-        "환불 돼요?",
-        "영수증 주세요"
-      ],
-      "prompt_vi": "Bạn muốn hoàn tiền. Bạn nói gì?",
-      "choices_vi": [
-        "할인 있어요?",
-        "포장해 주세요",
-        "환불 돼요?",
-        "영수증 주세요"
-      ],
-      "choices_zh_tw": [
-        "有折扣嗎？",
-        "請幫我包裝",
-        "可以退款嗎？",
-        "請給我收據"
-      ]
+      "prompt_vi": "Bạn muốn hoàn tiền. Bạn nói gì?"
     },
     {
       "id": 20,
@@ -618,58 +522,10 @@
       "prompt_ja": "次のうち、韓国の伝統市場はどれですか？",
       "prompt_es": "¿Cuál de estos es un mercado tradicional coreano?",
       "prompt_de": "Welches davon ist ein traditioneller koreanischer Markt?",
-      "choices_de": [
-        "백화점",
-        "면세점",
-        "시장",
-        "마트"
-      ],
-      "choices_es": [
-        "백화점",
-        "면세점",
-        "시장",
-        "마트"
-      ],
       "prompt_fr": "Lequel de ces lieux est un marché traditionnel coréen ?",
-      "choices_fr": [
-        "백화점",
-        "면세점",
-        "시장",
-        "마트"
-      ],
       "prompt_id": "Manakah di antara berikut ini yang merupakan pasar tradisional Korea?",
-      "choices_id": [
-        "백화점",
-        "면세점",
-        "시장",
-        "마트"
-      ],
-      "choices_ja": [
-        "백화점",
-        "면세점",
-        "시장",
-        "마트"
-      ],
       "prompt_th": "ข้อใดคือตลาดดั้งเดิมของเกาหลี?",
-      "choices_th": [
-        "백화점",
-        "면세점",
-        "시장",
-        "마트"
-      ],
-      "prompt_vi": "Cái nào sau đây là chợ truyền thống của Hàn Quốc?",
-      "choices_vi": [
-        "백화점",
-        "면세점",
-        "시장",
-        "마트"
-      ],
-      "choices_zh_tw": [
-        "百貨公司",
-        "免稅店",
-        "市場",
-        "超市"
-      ]
+      "prompt_vi": "Cái nào sau đây là chợ truyền thống của Hàn Quốc?"
     },
     {
       "id": 21,

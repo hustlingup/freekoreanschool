@@ -407,62 +407,14 @@
         "사원",
         "과장님"
       ],
-      "choices_zh_tw": [
-        "同事",
-        "執行長",
-        "員工",
-        "科長"
-      ],
-      "choices_ja": [
-        "同僚",
-        "社長",
-        "社員",
-        "課長"
-      ],
       "correct": "사장님",
       "prompt_ja": "会社の社長を指す肩書きはどれですか？",
       "prompt_es": "¿Qué título se refiere al director general de una empresa?",
-      "choices_es": [
-        "동료 (colega)",
-        "사장님 (director)",
-        "사원 (empleado)",
-        "과장님 (jefe de sección)"
-      ],
       "prompt_de": "Welcher Titel bezeichnet den Geschäftsführer eines Unternehmens?",
-      "choices_de": [
-        "동료 (Kollege)",
-        "사장님 (Firmenchef)",
-        "사원 (Angestellter)",
-        "과장님 (Abteilungsleiter)"
-      ],
       "prompt_fr": "Quel titre désigne le PDG d'une entreprise ?",
-      "choices_fr": [
-        "동료 (collègue)",
-        "사장님 (PDG)",
-        "사원 (employé)",
-        "과장님 (chef de section)"
-      ],
       "prompt_id": "Sebutan jabatan mana yang mengacu pada direktur utama sebuah perusahaan?",
-      "choices_id": [
-        "동료 (rekan kerja)",
-        "사장님 (direktur utama)",
-        "사원 (karyawan)",
-        "과장님 (kepala bagian)"
-      ],
       "prompt_th": "ตำแหน่งใดหมายถึงผู้บริหารสูงสุดของบริษัท?",
-      "choices_th": [
-        "동료 (เพื่อนร่วมงาน)",
-        "사장님 (ประธานบริษัท)",
-        "사원 (พนักงาน)",
-        "과장님 (หัวหน้าแผนก)"
-      ],
-      "prompt_vi": "Chức danh nào chỉ giám đốc điều hành của một công ty?",
-      "choices_vi": [
-        "동료 (đồng nghiệp)",
-        "사장님 (giám đốc)",
-        "사원 (nhân viên)",
-        "과장님 (trưởng phòng)"
-      ]
+      "prompt_vi": "Chức danh nào chỉ giám đốc điều hành của một công ty?"
     },
     {
       "id": 18,
@@ -540,67 +492,19 @@
       "prompt": "야근 means working late / overtime. The polite way to turn it down is...",
       "prompt_zh_tw": "야근 意指加班。有禮貌地拒絕的說法是……",
       "choices": [
-        "Today is busy",
-        "I have vacation",
-        "I have a prior commitment",
-        "I'm going home"
+        "야근은 하기 싫어요",
+        "죄송하지만 선약이 있습니다",
+        "그건 제 일이 아닌데요",
+        "오늘은 그냥 집에 갈래요"
       ],
-      "choices_zh_tw": [
-        "今天很忙",
-        "我在休假",
-        "我有事先約好的事",
-        "我要回家了"
-      ],
-      "choices_ja": [
-        "今日は忙しい",
-        "休暇中です",
-        "先約があります",
-        "帰ります"
-      ],
-      "correct": "I have a prior commitment",
+      "correct": "죄송하지만 선약이 있습니다",
       "prompt_ja": "야근（残業）を丁寧に断るには？",
       "prompt_es": "야근 significa trabajar hasta tarde. La forma educada de rechazarlo es...",
-      "choices_es": [
-        "Hoy estoy ocupado",
-        "Estoy de vacaciones",
-        "Tengo un compromiso previo",
-        "Me voy a casa"
-      ],
       "prompt_de": "야근 bedeutet Überstunden bzw. langes Arbeiten. Die höfliche Art, sie abzulehnen, ist …",
-      "choices_de": [
-        "Heute ist viel zu tun",
-        "Ich habe Urlaub",
-        "Ich habe schon einen Termin",
-        "Ich gehe nach Hause"
-      ],
       "prompt_fr": "야근 signifie travailler tard / faire des heures supplémentaires. La façon polie de refuser est…",
-      "choices_fr": [
-        "Je suis occupé aujourd'hui",
-        "Je suis en congé",
-        "J'ai un engagement antérieur",
-        "Je rentre chez moi"
-      ],
       "prompt_id": "야근 berarti bekerja sampai larut / lembur. Cara sopan untuk menolaknya adalah...",
-      "choices_id": [
-        "Hari ini saya sibuk",
-        "Saya sedang cuti",
-        "Saya sudah punya janji sebelumnya",
-        "Saya mau pulang"
-      ],
       "prompt_th": "야근 หมายถึงการทำงานดึกหรือทำงานล่วงเวลา วิธีปฏิเสธอย่างสุภาพคือ…",
-      "choices_th": [
-        "วันนี้ยุ่ง",
-        "ฉันลาพักร้อนอยู่",
-        "ฉันมีนัดล่วงหน้าอยู่แล้ว",
-        "ฉันจะกลับบ้าน"
-      ],
-      "prompt_vi": "야근 nghĩa là làm việc muộn / tăng ca. Cách từ chối lịch sự là...",
-      "choices_vi": [
-        "Hôm nay tôi bận",
-        "Tôi đang nghỉ phép",
-        "Tôi đã có hẹn trước",
-        "Tôi về nhà đây"
-      ]
+      "prompt_vi": "야근 nghĩa là làm việc muộn / tăng ca. Cách từ chối lịch sự là..."
     },
     {
       "id": 20,

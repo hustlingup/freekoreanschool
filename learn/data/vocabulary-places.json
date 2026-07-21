@@ -139,7 +139,7 @@
       "zhuyin": "ㄣ·ㄏㄝㄥ",
       "katakana": "ウネン",
       "audio": "은행",
-      "meaning": "Bank — 은 (silver) + 행 (go) = where silver flows",
+      "meaning": "Bank — 은 (silver) + 행 (circulate) = where silver circulates",
       "meaning_zh_tw": "銀行——은（銀）+ 행（流通）＝銀流通的地方",
       "meaning_ja": "銀行 ― 은（銀）+ 행（流通）= 銀が流れる場所",
       "meaning_es": "Banco — 은 (plata) + 행 (fluir) = donde fluye la plata",
@@ -273,15 +273,15 @@
       "zhuyin": "ㄍㄨㄥ·ㄏㄤ",
       "katakana": "コンハン",
       "audio": "공항",
-      "meaning": "Airport — 공 (public/empty) + 항 (port)",
-      "meaning_zh_tw": "機場——공（公共）+ 항（港口）",
-      "meaning_ja": "空港 ― 공（公共）+ 항（港）",
-      "meaning_es": "Aeropuerto — 공 (público) + 항 (puerto)",
-      "meaning_de": "Flughafen — 공 (Luft/öffentlich) + 항 (Hafen)",
-      "meaning_fr": "Aéroport — 공 (public) + 항 (port)",
-      "meaning_id": "Bandara — 공 (publik) + 항 (pelabuhan)",
-      "meaning_th": "สนามบิน — 공 (สาธารณะ) + 항 (ท่า)",
-      "meaning_vi": "Sân bay — 공 (công cộng) + 항 (cảng)"
+      "meaning": "Airport — 공 (air/sky) + 항 (port)",
+      "meaning_zh_tw": "機場——공（空／天空）+ 항（港口）",
+      "meaning_ja": "空港 ― 공（空・空中）+ 항（港）",
+      "meaning_es": "Aeropuerto — 공 (aire/cielo) + 항 (puerto)",
+      "meaning_de": "Flughafen — 공 (Luft/Himmel) + 항 (Hafen)",
+      "meaning_fr": "Aéroport — 공 (air / ciel) + 항 (port)",
+      "meaning_id": "Bandara — 공 (udara/langit) + 항 (pelabuhan)",
+      "meaning_th": "สนามบิน — 공 (อากาศ/ท้องฟ้า) + 항 (ท่า)",
+      "meaning_vi": "Sân bay — 공 (không trung/bầu trời) + 항 (cảng)"
     },
     {
       "id": 12,
@@ -421,70 +421,22 @@
       "id": 18,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "화장실 어디예요? means...",
-      "prompt_zh_tw": "화장실 어디예요？的意思是……",
+      "prompt": "You need a toilet. How do you ask where it is?",
+      "prompt_zh_tw": "你需要上洗手間。該怎麼問洗手間在哪裡？",
       "choices": [
-        "Where is the bank?",
-        "Where is the subway?",
-        "Where is the restroom?",
-        "Where is the café?"
+        "은행 어디예요?",
+        "지하철 어디예요?",
+        "화장실 어디예요?",
+        "카페 어디예요?"
       ],
-      "choices_zh_tw": [
-        "銀行在哪裡？",
-        "地鐵在哪裡？",
-        "洗手間在哪裡？",
-        "咖啡廳在哪裡？"
-      ],
-      "choices_ja": [
-        "銀行はどこですか？",
-        "地下鉄はどこですか？",
-        "トイレはどこですか？",
-        "カフェはどこですか？"
-      ],
-      "correct": "Where is the restroom?",
-      "prompt_ja": "화장실 어디예요？はどういう意味ですか？",
-      "prompt_es": "화장실 어디예요? significa...",
-      "choices_es": [
-        "¿Dónde está el banco?",
-        "¿Dónde está el metro?",
-        "¿Dónde está el baño?",
-        "¿Dónde está la cafetería?"
-      ],
-      "prompt_de": "화장실 어디예요? bedeutet ...",
-      "choices_de": [
-        "Wo ist die Bank?",
-        "Wo ist die U-Bahn?",
-        "Wo ist die Toilette?",
-        "Wo ist das Café?"
-      ],
-      "prompt_fr": "화장실 어디예요? signifie...",
-      "choices_fr": [
-        "Où est la banque ?",
-        "Où est le métro ?",
-        "Où sont les toilettes ?",
-        "Où est le café ?"
-      ],
-      "prompt_id": "화장실 어디예요? berarti...",
-      "choices_id": [
-        "Di mana banknya?",
-        "Di mana kereta bawah tanahnya?",
-        "Di mana toiletnya?",
-        "Di mana kafenya?"
-      ],
-      "prompt_th": "화장실 어디예요? แปลว่า...",
-      "choices_th": [
-        "ธนาคารอยู่ที่ไหน?",
-        "รถไฟใต้ดินอยู่ที่ไหน?",
-        "ห้องน้ำอยู่ที่ไหน?",
-        "ร้านกาแฟอยู่ที่ไหน?"
-      ],
-      "prompt_vi": "화장실 어디예요? có nghĩa là...",
-      "choices_vi": [
-        "Ngân hàng ở đâu?",
-        "Tàu điện ngầm ở đâu?",
-        "Nhà vệ sinh ở đâu?",
-        "Quán cà phê ở đâu?"
-      ]
+      "correct": "화장실 어디예요?",
+      "prompt_ja": "トイレに行きたいとき、場所を尋ねるには？",
+      "prompt_es": "Necesitas ir al baño. ¿Cómo preguntas dónde está?",
+      "prompt_de": "Du musst auf die Toilette. Wie fragst du, wo sie ist?",
+      "prompt_fr": "Vous cherchez les toilettes. Comment demandez-vous où elles se trouvent ?",
+      "prompt_id": "Kamu perlu ke toilet. Bagaimana cara menanyakan letaknya?",
+      "prompt_th": "คุณต้องการเข้าห้องน้ำ จะถามว่าอยู่ที่ไหนอย่างไร?",
+      "prompt_vi": "Bạn cần đi vệ sinh. Bạn hỏi nhà vệ sinh ở đâu như thế nào?"
     },
     {
       "id": 19,
@@ -493,66 +445,66 @@
       "prompt": "지하철 literally means...",
       "prompt_zh_tw": "지하철 的字面意思是……",
       "choices": [
-        "Sky train",
-        "Underground iron (subway)",
-        "Public bus",
-        "High-speed rail"
+        "Above-ground iron",
+        "Underground iron",
+        "Underground road",
+        "Underground vehicle"
       ],
       "choices_zh_tw": [
-        "天空列車",
-        "地下鐵（地鐵）",
-        "公共巴士",
-        "高速鐵路"
+        "地上的鐵",
+        "地下的鐵",
+        "地下的路",
+        "地下的車"
       ],
       "choices_ja": [
-        "空中鉄道",
-        "地下の鉄道（地下鉄）",
-        "公共バス",
-        "高速鉄道"
+        "地上の鉄",
+        "地下の鉄",
+        "地下の道",
+        "地下の車"
       ],
-      "correct": "Underground iron (subway)",
+      "correct": "Underground iron",
       "prompt_ja": "지하철 の文字通りの意味は？",
       "prompt_es": "지하철 literalmente significa...",
       "choices_es": [
-        "Tren aéreo",
-        "Hierro subterráneo (metro)",
-        "Autobús público",
-        "Tren de alta velocidad"
+        "Hierro en superficie",
+        "Hierro subterráneo",
+        "Camino subterráneo",
+        "Vehículo subterráneo"
       ],
       "prompt_de": "지하철 bedeutet wörtlich ...",
       "choices_de": [
-        "Hochbahn",
-        "Untergrund-Eisen (U-Bahn)",
-        "Öffentlicher Bus",
-        "Hochgeschwindigkeitszug"
+        "Oberirdisches Eisen",
+        "Unterirdisches Eisen",
+        "Unterirdischer Weg",
+        "Unterirdisches Fahrzeug"
       ],
       "prompt_fr": "지하철 signifie littéralement...",
       "choices_fr": [
-        "Train aérien",
-        "Fer souterrain (métro)",
-        "Bus public",
-        "Train à grande vitesse"
+        "Fer en surface",
+        "Fer souterrain",
+        "Chemin souterrain",
+        "Véhicule souterrain"
       ],
       "prompt_id": "지하철 secara harfiah berarti...",
       "choices_id": [
-        "Kereta layang",
-        "Besi bawah tanah (kereta bawah tanah)",
-        "Bus umum",
-        "Kereta cepat"
+        "Besi di atas tanah",
+        "Besi bawah tanah",
+        "Jalan bawah tanah",
+        "Kendaraan bawah tanah"
       ],
       "prompt_th": "지하철 มีความหมายตามตัวอักษรว่า...",
       "choices_th": [
-        "รถไฟลอยฟ้า",
-        "เหล็กใต้ดิน (รถไฟใต้ดิน)",
-        "รถประจำทางสาธารณะ",
-        "รถไฟความเร็วสูง"
+        "เหล็กเหนือพื้นดิน",
+        "เหล็กใต้ดิน",
+        "ถนนใต้ดิน",
+        "ยานพาหนะใต้ดิน"
       ],
       "prompt_vi": "지하철 có nghĩa đen là...",
       "choices_vi": [
-        "Tàu trên không",
-        "Sắt dưới lòng đất (tàu điện ngầm)",
-        "Xe buýt công cộng",
-        "Đường sắt cao tốc"
+        "Sắt trên mặt đất",
+        "Sắt dưới lòng đất",
+        "Đường dưới lòng đất",
+        "Xe dưới lòng đất"
       ]
     },
     {
@@ -571,58 +523,10 @@
       "prompt_ja": "韓国中に24時間営業で至るところにある場所は？",
       "prompt_es": "¿Qué lugar está abierto 24 horas y es famoso por estar en todas partes de Corea?",
       "prompt_de": "Welcher Ort hat 24 Stunden geöffnet und ist dafür bekannt, dass es ihn in Korea überall gibt?",
-      "choices_de": [
-        "마트",
-        "편의점",
-        "은행",
-        "약국"
-      ],
-      "choices_es": [
-        "마트",
-        "편의점",
-        "은행",
-        "약국"
-      ],
       "prompt_fr": "Quel lieu est ouvert 24 h/24 et est réputé pour se trouver absolument partout en Corée ?",
-      "choices_fr": [
-        "마트",
-        "편의점",
-        "은행",
-        "약국"
-      ],
       "prompt_id": "Tempat mana yang buka 24 jam dan terkenal ada di mana-mana di Korea?",
-      "choices_id": [
-        "마트",
-        "편의점",
-        "은행",
-        "약국"
-      ],
-      "choices_ja": [
-        "마트",
-        "편의점",
-        "은행",
-        "약국"
-      ],
       "prompt_th": "สถานที่ใดเปิด 24 ชั่วโมง และมีชื่อเสียงว่ามีอยู่ทุกหนทุกแห่งในเกาหลี?",
-      "choices_th": [
-        "마트",
-        "편의점",
-        "은행",
-        "약국"
-      ],
-      "prompt_vi": "Địa điểm nào mở cửa 24 giờ và nổi tiếng vì có mặt ở khắp nơi tại Hàn Quốc?",
-      "choices_vi": [
-        "마트",
-        "편의점",
-        "은행",
-        "약국"
-      ],
-      "choices_zh_tw": [
-        "마트",
-        "편의점",
-        "은행",
-        "약국"
-      ]
+      "prompt_vi": "Địa điểm nào mở cửa 24 giờ và nổi tiếng vì có mặt ở khắp nơi tại Hàn Quốc?"
     },
     {
       "id": 21,
