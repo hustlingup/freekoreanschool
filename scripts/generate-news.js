@@ -155,7 +155,17 @@ function parseRSS(xml) {
     const source  = (raw.match(/<source[^>]*>([\s\S]*?)<\/source>/)?.[1] ?? '').trim();
     const pubDate = (raw.match(/<pubDate>([\s\S]*?)<\/pubDate>/)?.[1] ?? '').trim();
 
-    if (title) items.push({ title, desc, source, pubDate });
+    // Original-source URL. Google News RSS wraps publisher links in a
+    // news.google.com redirect; it still resolves to the publisher's page and
+    // is what we surface to readers as "original source".
+    const link = (
+      raw.match(/<link><!\[CDATA\[([\s\S]*?)\]\]><\/link>/)?.[1] ??
+      raw.match(/<link>([\s\S]*?)<\/link>/)?.[1] ?? ''
+    ).replace(/&amp;/g, '&').trim();
+
+    const sourceUrl = (raw.match(/<source[^>]*url="([^"]*)"/)?.[1] ?? '').replace(/&amp;/g, '&').trim();
+
+    if (title) items.push({ title, desc, source, pubDate, link, sourceUrl });
     if (items.length >= 10) break;
   }
   return items;
@@ -302,6 +312,7 @@ Return ONLY valid JSON with exactly these fields:
       "example_ja": "Japanese translation of the example"
     }
   ],
+  "source_index": 1,
   "seo_description": "Meta description under 155 chars",
   "seo_keywords": "5-7 comma-separated keywords",
   "level": "beginner or intermediate or advanced",
@@ -311,6 +322,7 @@ Return ONLY valid JSON with exactly these fields:
 }
 
 Guidelines:
+- "source_index": the number (from the headline list above) of the ONE headline this article is based on. This is required — readers are shown a link to that original report. If no headlines were supplied, use 0.
 - "level": beginner = everyday simple words; intermediate = common news vocabulary; advanced = technical or political terms
 - content_en, content_ko, and content_ja cover the same story but are NOT word-for-word translations; Japanese must use natural phrasing — not a translation of the English
 - Korean text must use actual Hangul characters — not romanization
@@ -336,6 +348,25 @@ Guidelines:
     console.log(`  [dedup] "${article.title_en}" too close to a recent article — retrying`);
     return generateArticle(topic, { attempt: 1 });
   }
+
+  // Attach the original report this summary was based on, so every published
+  // article can link out to it. Falls back to the first headline if the model
+  // returned an out-of-range index.
+  const idx = Number(article.source_index);
+  const picked = (Number.isInteger(idx) && idx >= 1 && idx <= newsItems.length)
+    ? newsItems[idx - 1]
+    : newsItems[0];
+  if (picked) {
+    article.source_url   = picked.link || picked.sourceUrl || null;
+    article.source_name  = picked.source || null;
+    article.source_title = picked.title || null;
+    if (!article.source_url) console.warn(`  [source] no URL captured for "${topic.slug}"`);
+  } else {
+    article.source_url = article.source_name = article.source_title = null;
+    console.warn(`  [source] no headlines for "${topic.slug}" — publishing without a source link`);
+  }
+  delete article.source_index;
+
   return article;
 }
 
@@ -428,6 +459,9 @@ async function saveArticle(article, topic) {
     reading_time_ko: article.reading_time_ko || 4,
     reading_time_ja: article.reading_time_ja || 4,
     vocabulary:      article.vocabulary || [],
+    source_url:      article.source_url   || null,
+    source_name:     article.source_name  || null,
+    source_title:    article.source_title || null,
     status:          'published',
     ai_generated:    true,
     published_at:    new Date().toISOString(),
@@ -455,6 +489,9 @@ async function updateArticle(articleId, article, topicSlug) {
     reading_time_ko: article.reading_time_ko || 4,
     reading_time_ja: article.reading_time_ja || 4,
     vocabulary:      article.vocabulary || [],
+    source_url:      article.source_url   || null,
+    source_name:     article.source_name  || null,
+    source_title:    article.source_title || null,
     updated_at:      new Date().toISOString(),
   }).eq('id', articleId);
   if (error) throw new Error(`Update failed for [${topicSlug}] (${articleId}): ${error.message}`);

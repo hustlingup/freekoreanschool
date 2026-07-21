@@ -3399,16 +3399,10 @@ function newsParagraphs(text) {
   return text.split(/\n\n+/).map(p => `<p>${newsEscape(p.trim())}</p>`).join('');
 }
 
-function newsInfeedAdHTML() {
-  return `
-    <div class="ad-zone ad-zone--infeed">
-      <ins class="adsbygoogle" style="display:block"
-           data-ad-client="ca-pub-6791974364232767"
-           data-ad-slot="7783087408"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-    </div>`;
-}
+/* In-feed / in-article ads were removed from the news section entirely.
+   The news feed is AI-assisted summary content published without individual
+   human review — it must not carry ad units. Do not reintroduce ad slots here
+   without a policy review of the section itself. */
 
 function newsTopicColor(slug) {
   const map = { kpop:'tag-kpop', tech:'tag-tech', food:'tag-food', sports:'tag-sports', culture:'tag-culture', society:'tag-society', education:'tag-education', fashion:'tag-fashion', travel:'tag-travel', economy:'tag-economy', politics:'tag-politics' };
@@ -3650,13 +3644,9 @@ const NewsPage = (() => {
     if (el) {
       if (reset) el.innerHTML = '';
       const parts = [];
-      data.forEach((a, i) => {
-        parts.push(newsRenderCard(a));
-        if (KS_ADS_LIVE && (i + 1) % 4 === 0) parts.push(newsInfeedAdHTML()); // in-feed ad every 4 cards
-      });
+      data.forEach(a => { parts.push(newsRenderCard(a)); }); // no in-feed ads in the news section
       el.innerHTML += parts.join('');
       if (!data.length && reset) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px 0;color:var(--text-muted);">No articles found for this filter.</div>';
-      window.KSAds?.push();
     }
     const btn = document.getElementById('news-load-more');
     const txt = document.getElementById('news-load-more-text');
@@ -3880,6 +3870,7 @@ const ArticlePage = (() => {
     renderThumbnail(article);
     renderSummary(article);
     renderVocabulary(article);
+    renderSourceLink(article);
     renderBody(article);
     renderImages(article);
     renderQuiz(article);
@@ -3887,7 +3878,6 @@ const ArticlePage = (() => {
     loadWeeklyStrip();
     loadRelated(article);
     loadNavigation(article);
-    window.KSAds?.push(); // JS-inserted zones (in-article) — static zones were pushed on DOMContentLoaded
   }
 
   function renderMeta(a) {
@@ -3917,8 +3907,45 @@ const ArticlePage = (() => {
       dateModified: a.updated_at,
       inLanguage: ['en', 'ko'],
       url: window.location.href,
-      author: { '@type': 'Organization', name: 'Korean School' },
-      publisher: { '@type': 'Organization', name: 'Korean School' }
+      // Machine-readable authorship. AI-assisted text is attributed to the
+
+      // site as an organization — never to a fabricated human byline.
+
+      author: {
+
+        '@type': 'Organization',
+
+        name: 'Korean School 한국어 학교',
+
+        url: 'https://freekoreanschool.com/about'
+
+      },
+
+      creditText: a.ai_generated
+
+        ? 'AI-assisted summary published by Korean School (한국어 학교)'
+
+        : 'Published by Korean School (한국어 학교)',
+
+      publisher: {
+
+        '@type': 'Organization',
+
+        name: 'Korean School 한국어 학교',
+
+        url: 'https://freekoreanschool.com',
+
+        logo: 'https://freekoreanschool.com/assets/images/android-chrome-512x512.png'
+
+      },
+
+      isBasedOn: a.source_url || undefined,
+
+      citation: a.source_url
+
+        ? { '@type': 'CreativeWork', name: a.source_title || a.source_name || a.source_url, url: a.source_url }
+
+        : undefined
     });
     const crumb = document.getElementById('article-topic-crumb');
     if (crumb) crumb.textContent = topic.name_en || 'News';
@@ -3947,6 +3974,36 @@ const ArticlePage = (() => {
       <span>⏱ ${lang === 'ja' ? `JA: ${a.reading_time_ja || 4}` : `EN: ${a.reading_time_en || 3}`} min</span>
       <span>⏱ KO: ${a.reading_time_ko || 4} min</span>
       <span>👁 ${a.view_count || 0} views</span>`;
+  }
+
+  /* Outbound link to the original report this summary is based on, plus a
+     machine-readable publication date. Rendered into the #article-source-link
+     slot inside the AI-assistance disclosure box on every news article shell. */
+  const SOURCE_LABEL = {
+    en: 'Original source', ja: '元記事', 'zh-tw': '原始報導', es: 'Fuente original',
+    de: 'Originalquelle', fr: "Source d'origine", vi: 'Nguồn tin gốc',
+    th: 'แหล่งข่าวต้นฉบับ', id: 'Sumber asli'
+  };
+
+  function renderSourceLink(a) {
+    const slot = document.getElementById('article-source-link');
+    if (!slot) return;
+    const lang = window.LangManager?.getLang() || 'en';
+    const label = SOURCE_LABEL[lang] || SOURCE_LABEL.en;
+    const parts = [];
+    if (a.source_url) {
+      const text = a.source_title || a.source_name || a.source_url;
+      parts.push(
+        `<strong>${newsEscape(label)}:</strong> ` +
+        `<a href="${newsEscape(a.source_url)}" target="_blank" rel="noopener nofollow" ` +
+        `style="color:#f5c842;text-decoration:underline;">${newsEscape(text)}</a>` +
+        (a.source_name && a.source_title ? ` <span style="opacity:0.75;">— ${newsEscape(a.source_name)}</span>` : '')
+      );
+    }
+    if (a.published_at) {
+      parts.push(`<time itemprop="datePublished" datetime="${newsEscape(a.published_at)}" style="opacity:0.8;">${newsEscape(newsFormatDate(a.published_at))}</time>`);
+    }
+    slot.innerHTML = parts.join('<br>');
   }
 
   function renderThumbnail(a) {
@@ -4128,17 +4185,7 @@ const ArticlePage = (() => {
         <div class="article-col-ko">${newsParagraphs(koParas.slice(cut).join('\n\n'))}</div>`;
       if (enEl.style.fontFamily) body2.firstElementChild.style.fontFamily = enEl.style.fontFamily;
       body.insertAdjacentElement('afterend', body2);
-      if (KS_ADS_LIVE) {
-        const adZone = document.createElement('div');
-        adZone.className = 'ad-zone ad-zone--inarticle';
-        adZone.innerHTML = `
-        <ins class="adsbygoogle" style="display:block"
-             data-ad-client="ca-pub-6791974364232767"
-             data-ad-slot="7783087408"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>`;
-        body.insertAdjacentElement('afterend', adZone);
-      }
+      // No in-article ad unit here — see the news ad policy note above.
     } else {
       if (enEl) enEl.innerHTML = newsParagraphs(primary);
       if (koEl) koEl.innerHTML = newsParagraphs(a.content_ko);

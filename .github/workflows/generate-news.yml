@@ -1,10 +1,28 @@
 name: Generate Daily Korea News
 
+# ─────────────────────────────────────────────────────────────────────────────
+# PAUSED — daily schedule intentionally disabled.
+#
+# Two reasons:
+#   1. AdSense rejected the site for "Low value content". Publishing ~11 new
+#      unreviewed AI-assisted articles per day across 9 locales while an appeal
+#      is pending strengthens exactly the "scaled content abuse" pattern the
+#      reviewer is looking for. Nothing in news/ is indexed (all shells are
+#      noindex, zero article URLs in sitemap.xml), so pausing costs no SEO.
+#   2. generate-news.js now writes source_url / source_name / source_title.
+#      supabase/migrations/004_article_sources.sql MUST be applied first or
+#      every insert fails on unknown columns.
+#
+# TO RESUME: apply migration 004, decide on a human review step, then
+# uncomment the `schedule:` block below.
+# ─────────────────────────────────────────────────────────────────────────────
 on:
-  schedule:
-    # 23:00 UTC = 08:00 AM KST (UTC+9)
-    - cron: '0 23 * * *'
-  # Allow manual trigger from GitHub Actions UI
+  # schedule:
+  #   # 23:00 UTC = 08:00 AM KST (UTC+9)
+  #   - cron: '0 23 * * *'
+
+  # Manual trigger stays enabled so the generator can still be run on demand
+  # (use dry_run first to verify the source-capture changes).
   workflow_dispatch:
     inputs:
       dry_run:

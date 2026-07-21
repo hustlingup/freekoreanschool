@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex,follow">
+  <meta name="robots" content="noindex, follow">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
@@ -29,6 +29,7 @@
   <link rel="alternate" hreflang="ja" href="https://freekoreanschool.com/news/ja/article">
   <link rel="alternate" hreflang="en" href="https://freekoreanschool.com/news/article">
   <link rel="alternate" hreflang="x-default" href="https://freekoreanschool.com/news/article">
+  <script id="json-ld" type="application/ld+json"></script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -39,6 +40,12 @@
   "image": "https://freekoreanschool.com/assets/images/og-image.webp",
   "inLanguage": "zh-TW",
   "isAccessibleForFree": true,
+  "author": {
+    "@type": "Organization",
+    "name": "Korean School 한국어 학교",
+    "url": "https://freekoreanschool.com/about"
+  },
+  "creditText": "AI-assisted summary published by Korean School (한국어 학교)",
   "publisher": {
     "@type": "Organization",
     "name": "Korean School 한국어 학교",
@@ -48,8 +55,6 @@
 }
   </script>
 
-  <meta name="google-adsense-account" content="ca-pub-6791974364232767">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791974364232767" crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D94KSYG9DE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -136,10 +141,14 @@
         <span class="image-source" id="article-thumb-source"></span>
       </div>
 
-      <!-- AI Notice -->
-      <div style="margin:1.5rem 0;padding:0.875rem 1.125rem;background:rgba(255,200,0,0.07);border:1px solid rgba(255,200,0,0.28);border-radius:10px;font-size:0.83rem;color:var(--text-secondary,#aaa);line-height:1.65;">
-        <strong style="color:#f5c842;">⚠ 關於AI生成內容</strong><br>
-        這些新聞文章是為了韓語學習目的而由AI生成。內容可能不正確或含有AI幻覺（hallucination）。若想閱讀真實新聞，請使用你在本站學到的韓語，前往 <a href="https://www.google.com/search?q=한국+뉴스" target="_blank" rel="noopener" style="color:#f5c842;text-decoration:underline;">Google</a> 或 <a href="https://news.naver.com" target="_blank" rel="noopener" style="color:#f5c842;text-decoration:underline;">Naver 新聞</a> 搜尋真實報導。
+      <!-- AI-assistance disclosure + attribution -->
+      <div class="news-ai-disclosure" style="margin:1.5rem 0;padding:1rem 1.125rem;background:rgba(255,200,0,0.06);border:1px solid rgba(255,200,0,0.25);border-radius:10px;font-size:0.83rem;color:var(--text-secondary,#aaa);line-height:1.7;text-align:left;">
+        <strong style="color:#f5c842;">關於本文 — AI 協助撰寫的摘要</strong><br>
+        本文是由 AI 協助整理的韓國新聞摘要，內容取自其他媒體已公開報導的新聞，專為韓語學習用途撰寫。本文並非原創報導，且未經逐篇人工審閱。如需準確詳情，請閱讀原始報導。
+        <div id="article-source-link" style="margin-top:0.6rem;"></div>
+        <div class="news-ai-byline" style="margin-top:0.65rem;padding-top:0.6rem;border-top:1px solid rgba(255,200,0,0.18);font-size:0.8rem;">
+          <span rel="author">發布：Korean School（한국어 학교）· 網站擁有者暨編輯：해본놈RK (Haebonnom RK) · <a href="mailto:hustlin.up@gmail.com" style="color:#f5c842;">hustlin.up@gmail.com</a> · 內文由 AI 協助撰寫。</span>
+        </div>
       </div>
 
       <!-- Bilingual Body: Traditional Chinese (left) + Korean (right) -->
@@ -387,6 +396,53 @@
       koCol.innerHTML = `<div style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;color:var(--text-muted);text-transform:uppercase;margin-bottom:12px;">🇰🇷 한국어</div>${paragraphs(contentKo)}`;
 
       // Increment view count
+      // ── 原始報導連結 + 機器可讀中繼資料 ─────────────────────────
+      // AI 協助撰寫的摘要必須連回原始報導，作者標示為網站（組織），
+      // 不使用虛構的個人署名。
+      const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+      const srcSlot = document.getElementById('article-source-link');
+      if (srcSlot) {
+        const bits = [];
+        if (article.source_url) {
+          const label = article.source_title || article.source_name || article.source_url;
+          bits.push(`<strong>原始報導：</strong><a href="${esc(article.source_url)}" target="_blank" rel="noopener nofollow" style="color:#f5c842;text-decoration:underline;">${esc(label)}</a>`
+            + (article.source_name && article.source_title ? ` <span style="opacity:0.75;">— ${esc(article.source_name)}</span>` : ''));
+        }
+        if (article.published_at) {
+          bits.push(`<time datetime="${esc(article.published_at)}" style="opacity:0.8;">${esc(fmtDate(article.published_at))}</time>`);
+        }
+        srcSlot.innerHTML = bits.join('<br>');
+      }
+
+      const ldSlot = document.getElementById('json-ld');
+      if (ldSlot) ldSlot.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'NewsArticle',
+        headline: titleZh,
+        description: article.seo_description || article.summary_zh_tw || '',
+        image: article.thumbnail_url || undefined,
+        datePublished: article.published_at,
+        dateModified: article.updated_at || article.published_at,
+        inLanguage: ['zh-TW', 'ko'],
+        url: location.href,
+        author: { '@type': 'Organization', name: 'Korean School 한국어 학교', url: 'https://freekoreanschool.com/about' },
+        creditText: article.ai_generated
+          ? 'AI-assisted summary published by Korean School (한국어 학교)'
+          : 'Published by Korean School (한국어 학교)',
+        publisher: {
+          '@type': 'Organization',
+          name: 'Korean School 한국어 학교',
+          url: 'https://freekoreanschool.com',
+          logo: 'https://freekoreanschool.com/assets/images/android-chrome-512x512.png'
+        },
+        isBasedOn: article.source_url || undefined,
+        citation: article.source_url
+          ? { '@type': 'CreativeWork', name: article.source_title || article.source_name || article.source_url, url: article.source_url }
+          : undefined
+      });
+
       sb.rpc('increment_view', { article_id: article.id }).catch(() => {});
 
       // Related articles
@@ -483,6 +539,5 @@
   })();
   </script>
   <script src="../../js/app.js"></script>
-<script defer src="../../js/ads.js"></script>
 </body>
 </html>

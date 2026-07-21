@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex,follow">
+  <meta name="robots" content="noindex, follow">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
@@ -45,6 +45,12 @@
   "url": "https://freekoreanschool.com/news/article",
   "image": "https://freekoreanschool.com/assets/images/og-image.webp",
   "isAccessibleForFree": true,
+  "author": {
+    "@type": "Organization",
+    "name": "Korean School 한국어 학교",
+    "url": "https://freekoreanschool.com/about"
+  },
+  "creditText": "AI-assisted summary published by Korean School (한국어 학교)",
   "publisher": {
     "@type": "Organization",
     "name": "Korean School 한국어 학교",
@@ -54,8 +60,6 @@
 }
   </script>
 
-  <meta name="google-adsense-account" content="ca-pub-6791974364232767">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791974364232767" crossorigin="anonymous"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D94KSYG9DE"></script>
   <script>
@@ -141,10 +145,14 @@
         <span class="image-source" id="article-thumb-source"></span>
       </div>
 
-      <!-- AI Notice -->
-      <div style="margin:1.5rem 0;padding:0.875rem 1.125rem;background:rgba(255,200,0,0.07);border:1px solid rgba(255,200,0,0.28);border-radius:10px;font-size:0.83rem;color:var(--text-secondary,#aaa);line-height:1.65;">
-        <strong style="color:#f5c842;">⚠ Lưu ý về nội dung do AI tạo ra</strong><br>
-        Các bài báo này được AI tạo ra chỉ nhằm mục đích học tiếng Hàn. Nội dung có thể không chính xác hoặc bị "ảo giác" — AI cũng mắc sai lầm. Nếu bạn muốn đọc tin tức thật, hãy tìm kiếm bằng tiếng Hàn với những gì bạn đã học ở đây: <a href="https://www.google.com/search?q=한국+뉴스" target="_blank" rel="noopener" style="color:#f5c842;text-decoration:underline;">Google</a> · <a href="https://news.naver.com" target="_blank" rel="noopener" style="color:#f5c842;text-decoration:underline;">Naver News</a>
+      <!-- AI-assistance disclosure + attribution -->
+      <div class="news-ai-disclosure" style="margin:1.5rem 0;padding:1rem 1.125rem;background:rgba(255,200,0,0.06);border:1px solid rgba(255,200,0,0.25);border-radius:10px;font-size:0.83rem;color:var(--text-secondary,#aaa);line-height:1.7;text-align:left;">
+        <strong style="color:#f5c842;">Về bài viết này — bản tóm tắt do AI hỗ trợ</strong><br>
+        Bài viết này là bản tóm tắt do AI hỗ trợ, dựa trên tin tức Hàn Quốc đã được các hãng tin khác đăng tải công khai, và được viết nhằm phục vụ việc học tiếng Hàn. Đây không phải là bài báo gốc và được đăng mà không qua khâu biên tập thủ công cho từng bài. Để có thông tin chính xác, vui lòng đọc nguồn tin gốc.
+        <div id="article-source-link" style="margin-top:0.6rem;"></div>
+        <div class="news-ai-byline" style="margin-top:0.65rem;padding-top:0.6rem;border-top:1px solid rgba(255,200,0,0.18);font-size:0.8rem;">
+          <span rel="author">Phát hành bởi Korean School (한국어 학교) · Chủ sở hữu và biên tập viên: 해본놈RK (Haebonnom RK) · <a href="mailto:hustlin.up@gmail.com" style="color:#f5c842;">hustlin.up@gmail.com</a> · Nội dung được soạn với sự hỗ trợ của AI.</span>
+        </div>
       </div>
 
       <!-- Vocabulary Section (populated by JS before article body) -->
@@ -271,6 +279,5 @@
   <script src="../../js/lang-core.js"></script>
 <script src="../../js/langs/lang-vi.js"></script>
   <script src="../../js/app.js"></script>
-<script defer src="../../js/ads.js"></script>
 </body>
 </html>
