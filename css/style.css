@@ -160,6 +160,16 @@ h4 { font-size: 1.25rem; }
 h5 { font-size: 1.1rem; }
 h6 { font-size: 1rem; }
 
+/* ── Semantic-HTML parity reset (scripts/patch-semantic-html.cjs) ─────
+   These elements used to be <div>s and are now real <h2>/<h3>/<h4>/<p>.
+   Reset only the UA + global element-level typography so they render
+   exactly as the divs did; the component class rules further down the
+   sheet are more specific in source order and still win. */
+.as-heading { font-size: inherit; font-weight: inherit; line-height: inherit;
+              letter-spacing: inherit; color: inherit; margin: 0; display: block; }
+.as-para    { font-size: inherit; color: inherit; line-height: inherit; margin: 0; }
+
+
 .korean { font-family: var(--font-korean); }
 .korean-serif { font-family: var(--font-serif-kr); }
 
@@ -1241,7 +1251,7 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
   margin-bottom: 28px;
 }
 
-.lesson-intro p { color: var(--text); font-size: 1rem; line-height: 1.75; margin: 0; }
+.lesson-intro p:not(.as-para) { color: var(--text); font-size: 1rem; line-height: 1.75; margin: 0; }
 
 .lesson-intro-bullets {
   list-style: none;
@@ -1289,7 +1299,7 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
 
 .lesson-section { margin-bottom: 44px; }
 
-.lesson-section h2 {
+.lesson-section h2:not(.as-heading) {
   font-size: 1.5rem;
   margin-bottom: 16px;
   display: flex;
@@ -1311,13 +1321,13 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
   flex-shrink: 0;
 }
 
-.lesson-section h3 {
+.lesson-section h3:not(.as-heading) {
   font-size: 1.15rem;
   margin: 28px 0 12px;
   color: var(--text-secondary);
 }
 
-.lesson-section p {
+.lesson-section p:not(.as-para) {
   margin-bottom: 16px;
   color: var(--text-secondary);
 }
@@ -1841,7 +1851,7 @@ button, .btn, .hangul-card, .flashcard, .icon-btn, .sidebar-link {
 }
 
 .footer-brand { max-width: 280px; }
-.footer-brand p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.7; margin-top: 14px; }
+.footer-brand p:not(.as-para) { font-size: 0.87rem; color: var(--text-muted); line-height: 1.7; margin-top: 14px; }
 
 .footer-heading {
   font-size: 0.75rem;
@@ -2770,8 +2780,9 @@ kbd {
     .culture-panel.active { display: block; }
 
     .culture-section-header { margin-bottom: 32px; }
-    .culture-section-header h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 12px; }
-    .culture-section-header p { font-size: 0.96rem; color: var(--text-secondary); line-height: 1.75; max-width: 680px; }
+    .culture-section-header h1,
+    .culture-section-header h2:not(.as-heading) { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 12px; }
+    .culture-section-header p:not(.as-para) { font-size: 0.96rem; color: var(--text-secondary); line-height: 1.75; max-width: 680px; }
 
     .culture-sub-heading { font-size: 1.15rem; font-weight: 700; color: var(--text); margin: 20px 0 10px; display: flex; align-items: center; gap: 10px; }
     .culture-sub-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); }
@@ -4404,7 +4415,7 @@ kbd {
   .planner-body { display: block; }
 
   .planner-page > div:first-child h1,
-  .planner-page > div:first-child p { display: none !important; }
+  .planner-page > div:first-child p:not(.as-para) { display: none !important; }
 
   .planner-page > div:first-child { margin-bottom: 8px !important; }
   .planner-page > div:first-child .section-eyebrow { font-size: 0.72rem !important; color: #333 !important; margin-bottom: 0 !important; background: none !important; -webkit-text-fill-color: #333 !important; }
@@ -4770,7 +4781,7 @@ kbd {
   margin-bottom: 12px;
   letter-spacing: -0.03em;
 }
-.food-page-hero p {
+.food-page-hero p:not(.as-para) {
   font-size: 0.95rem;
   color: var(--text-secondary);
   line-height: 1.75;
@@ -4951,7 +4962,7 @@ kbd {
 .article-bilingual { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px; }
 .article-col-en { font-size: 0.95rem; line-height: 1.85; color: var(--text-secondary); }
 .article-col-ko { font-family: var(--font-korean); font-size: 0.95rem; line-height: 1.9; color: var(--text-secondary); border-left: 1px solid var(--border); padding-left: 32px; }
-.article-col-en p, .article-col-ko p { margin: 0 0 1.2em; }
+.article-col-en p:not(.as-para), .article-col-ko p:not(.as-para) { margin: 0 0 1.2em; }
 .article-col-en p:last-child, .article-col-ko p:last-child { margin-bottom: 0; }
 .article-main-image-wrap { grid-column: 1 / -1; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 21/9; background: var(--bg-2); display: flex; align-items: center; justify-content: center; font-size: 5rem; position: relative; margin: 8px 0; }
 .article-main-image-wrap img { width: 100%; height: 100%; object-fit: cover; }
@@ -5382,7 +5393,7 @@ kbd {
   font-weight: 800;
   margin-bottom: 6px;
 }
-.search-page-hero p {
+.search-page-hero p:not(.as-para) {
   font-size: 0.9rem;
   color: var(--text-secondary);
   margin-bottom: 28px;
@@ -5464,7 +5475,7 @@ kbd {
 .quiz-hero { padding: calc(var(--header-height) + 48px) 24px 40px; text-align: center; background: linear-gradient(180deg, rgba(232,0,61,0.07) 0%, transparent 100%); }
 .quiz-hero .section-eyebrow { margin-bottom: 12px; }
 .quiz-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; margin-bottom: 12px; }
-.quiz-hero p { color: var(--text-secondary); font-size: 1rem; max-width: 520px; margin: 0 auto; }
+.quiz-hero p:not(.as-para) { color: var(--text-secondary); font-size: 1rem; max-width: 520px; margin: 0 auto; }
 
 .quiz-level-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; max-width: 900px; margin: 0 auto; padding: 8px 24px 60px; }
 .quiz-level-card { background: var(--glass); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 22px 20px; cursor: pointer; transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast); }
@@ -5614,7 +5625,7 @@ body.lang-id { font-family: 'Inter', 'Noto Sans KR', sans-serif; }
 .vocab-tab.active, .vocab-tab:hover { background: var(--grad-primary); color: #fff; border-color: transparent; }
 .vocab-section { display: none; }
 .vocab-section.active { display: block; margin-bottom: 48px; }
-.vocab-section h3 {
+.vocab-section h3:not(.as-heading) {
   display: flex; align-items: center; gap: 10px;
   font-size: 1.2rem; margin-bottom: 16px;
   padding-bottom: 10px; border-bottom: 1px solid var(--border);

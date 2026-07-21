@@ -10,6 +10,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <title>About Us | 한국어 학교 — Korean School</title>
   <meta name="description" content="About Korean School — a free Korean language and culture learning platform. No sign-up, no login, progress saved locally. Must know the culture to truly learn language." />
+  <meta name="author" content="해본놈RK (Haebonnom RK)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
@@ -40,6 +41,14 @@
   "name": "About Us | 한국어 학교 — Korean School",
   "description": "About Korean School — a free Korean language and culture learning platform. No sign-up, no login, progress saved locally. Must know the culture to truly learn language.",
   "url": "https://freekoreanschool.com/about",
+  "author": {
+    "@type": "Person",
+    "name": "해본놈RK (Haebonnom RK)",
+    "email": "hustlin.up@gmail.com",
+    "jobTitle": "Founder and sole author, Korean School",
+    "knowsLanguage": ["ko", "en", "vi"],
+    "nationality": "KR"
+  },
   "isPartOf": {
     "@type": "WebSite",
     "name": "Korean School 한국어 학교",
@@ -184,18 +193,73 @@
         </p>
       </div>
 
+      <!-- TODO (owner): the credentials text below is limited to facts already stated on this page.
+           If any of the following are true, add them here — they are strong E-E-A-T signals and cannot be
+           written for you without inventing facts:
+             1. Formal qualifications (Korean-language teaching certificate, TOPIK grading experience,
+                degree in Korean language/linguistics, tutoring experience and for how long).
+             2. How many years you have been teaching or explaining Korean to non-native speakers.
+             3. The month/year Korean School launched, so "years running the site" can be stated.
+             4. Confirm the "Advertising does not shape the content" bullet is accurate — it asserts there is
+                NO sponsored, affiliate, or paid-placement content anywhere on the site. Remove or amend if untrue.
+             5. Confirm you want your legal name published; only the handle 해본놈RK is used at present. -->
       <!-- Who Runs This Site -->
-      <div class="animate-on-scroll" style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:40px;margin-bottom:48px;">
+      <div class="animate-on-scroll" style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:40px;margin-bottom:24px;">
         <div class="section-eyebrow" style="margin-bottom:14px;">WHO RUNS THIS SITE · 운영자</div>
         <div style="font-size:2.2rem;margin-bottom:14px;">🙋‍♂️</div>
         <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:10px;">해본놈RK</h3>
         <p style="color:var(--text-muted);line-height:1.7;margin:0 0 12px;font-size:0.95rem;">
           Korean School is an independent one-person project by <strong style="color:var(--text);">해본놈RK (Haebonnom RK)</strong> — a native Korean speaker based in South Korea, fluent in English and conversational in Vietnamese. By day he works in international sales and administration at a manufacturing company; outside work he builds this site, writing and reviewing every lesson and culture guide himself.
         </p>
+        <h4 style="font-size:1rem;font-weight:700;margin:22px 0 8px;color:var(--text);">Why you can trust these lessons</h4>
+        <p style="color:var(--text-muted);line-height:1.7;margin:0 0 12px;font-size:0.95rem;">He was born and lives in South Korea and speaks Korean natively, so the Korean on this site is the language people actually use — not textbook sentences nobody says out loud. Because he uses English every day in international sales, he writes explanations in the language learners actually read, and he knows which English assumptions quietly break when applied to Korean grammar. Having learned a foreign language himself, he also knows where learners get stuck: particles, speech levels, and the gap between what a phrase means and when it is socially appropriate. Every lesson and culture guide here is written and checked by him personally — none of it is licensed from a content mill or published unreviewed.</p>
+        <h4 style="font-size:1rem;font-weight:700;margin:22px 0 8px;color:var(--text);">How this content is made</h4>
+        <p style="color:var(--text-muted);line-height:1.7;margin:0 0 12px;font-size:0.95rem;">Being open about this matters: AI tooling assists with drafting and translation on this site, and it was built with Claude Code. But AI is never the final authority on Korean accuracy. Every Korean sentence, romanization, and cultural claim is reviewed by 해본놈RK before it is published, and anything he cannot personally vouch for does not go up. The English source text is his; the other language versions are AI-assisted translations of that source, reviewed to differing depth depending on how far each language version has progressed. Illustrations on the culture and travel pages are AI-generated unless credited otherwise.</p>
         <p style="color:var(--text-muted);line-height:1.7;margin:0;font-size:0.95rem;">
           Questions, corrections, and suggestions are always welcome: <a href="mailto:hustlin.up@gmail.com" style="color:var(--primary);">hustlin.up@gmail.com</a> · Last updated: July 2026
         </p>
       </div>
+
+      <!-- Editorial Policy -->
+      <div class="animate-on-scroll" id="editorial-policy" style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:40px;margin-bottom:48px;">
+        <div class="section-eyebrow" style="margin-bottom:14px;">EDITORIAL POLICY · 편집 방침</div>
+        <div style="font-size:2.2rem;margin-bottom:14px;">📋</div>
+        <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:18px;">How this site is sourced, written, and corrected</h3>
+        <ul style="list-style:none;padding:0;margin:0 0 18px;display:flex;flex-direction:column;gap:14px;">
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="color:var(--primary);font-weight:700;flex-shrink:0;">▸</span>
+            <div><strong style="color:var(--text);">Written by a native speaker</strong>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin:4px 0 0;line-height:1.6;">All Korean-language content originates with 해본놈RK, a native speaker living in South Korea. Culture and travel guides are written from his own experience of living there.</p>
+            </div>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="color:var(--primary);font-weight:700;flex-shrink:0;">▸</span>
+            <div><strong style="color:var(--text);">AI-assisted, human-reviewed</strong>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin:4px 0 0;line-height:1.6;">AI helps draft and translate. It does not get the final word. Every Korean sentence and cultural claim is checked by a human before publishing.</p>
+            </div>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="color:var(--primary);font-weight:700;flex-shrink:0;">▸</span>
+            <div><strong style="color:var(--text);">Translations are marked by maturity</strong>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin:4px 0 0;line-height:1.6;">Japanese, Chinese (Traditional), and Spanish are fully translated. German, French, Vietnamese, Thai, and Indonesian are still being brought up to the same standard, so some article prose in those versions may still appear in English.</p>
+            </div>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="color:var(--primary);font-weight:700;flex-shrink:0;">▸</span>
+            <div><strong style="color:var(--text);">Corrections are welcome and acted on</strong>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin:4px 0 0;line-height:1.6;">If you find a mistake in a Korean sentence, a translation, or a cultural claim, email it in. Corrections are applied directly to the page and the last-updated date is revised. There is no comment queue — mail reaches the person who writes the site.</p>
+            </div>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:12px;">
+            <span style="color:var(--primary);font-weight:700;flex-shrink:0;">▸</span>
+            <div><strong style="color:var(--text);">Advertising does not shape the content</strong>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin:4px 0 0;line-height:1.6;">This site is free and funded by Google AdSense. Ads are placed in fixed zones and are visually separated from lessons. No advertiser reviews, commissions, or approves any lesson, culture guide, or news summary.</p>
+            </div>
+          </li>
+        </ul>
+        <p style="color:var(--text-muted);font-size:0.85rem;margin:0;">Editorial policy last reviewed: July 2026</p>
+      </div>
+
 
       <!-- CTA -->
       <div class="text-center animate-on-scroll">
