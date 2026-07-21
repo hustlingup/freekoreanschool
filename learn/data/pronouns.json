@@ -210,64 +210,22 @@
       "id": 6,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Which pronoun is the polite form of 'I'?",
-      "prompt_zh_tw": "哪個代名詞是「我」的禮貌形式？",
+      "prompt": "You are meeting your new boss for the first time. Which word for 'I' do you use?",
       "choices": [
         "나",
-        "너",
         "저",
-        "당신"
-      ],
-      "choices_zh_tw": [
-        "나",
-        "너",
-        "저",
-        "당신"
+        "내",
+        "제"
       ],
       "correct": "저",
-      "prompt_es": "¿Qué pronombre es la forma educada de 'yo'?",
-      "choices_es": [
-        "나",
-        "너",
-        "저",
-        "당신"
-      ],
-      "prompt_fr": "Quel pronom est la forme polie de « je » ?",
-      "choices_fr": [
-        "나",
-        "너",
-        "저",
-        "당신"
-      ],
-      "prompt_de": "Welches Pronomen ist die höfliche Form von „ich\"?",
-      "choices_de": [
-        "나",
-        "너",
-        "저",
-        "당신"
-      ],
-      "prompt_th": "สรรพนามใดเป็นรูปสุภาพของ \"ฉัน\"?",
-      "choices_th": [
-        "나",
-        "너",
-        "저",
-        "당신"
-      ],
-      "prompt_id": "Kata ganti mana yang merupakan bentuk sopan dari 'saya'?",
-      "choices_id": [
-        "나",
-        "너",
-        "저",
-        "당신"
-      ],
-      "prompt_vi": "Đại từ nào là dạng lịch sự của 'tôi'?",
-      "choices_vi": [
-        "나",
-        "너",
-        "저",
-        "당신"
-      ],
-      "prompt_ja": "「私」の謙譲・丁寧な形の代名詞はどれでしょう。"
+      "prompt_ja": "初めて新しい上司に会います。「私」を表す言葉はどれを使いますか。",
+      "prompt_zh_tw": "你第一次見到新上司。「我」要用哪個詞？",
+      "prompt_es": "Conoces a tu nuevo jefe por primera vez. ¿Qué palabra para 'yo' usas?",
+      "prompt_de": "Du triffst deinen neuen Chef zum ersten Mal. Welches Wort für „ich\" verwendest du?",
+      "prompt_fr": "Vous rencontrez votre nouveau patron pour la première fois. Quel mot pour « je » utilisez-vous ?",
+      "prompt_vi": "Bạn gặp sếp mới lần đầu tiên. Bạn dùng từ nào để nói 'tôi'?",
+      "prompt_th": "คุณพบหัวหน้าคนใหม่เป็นครั้งแรก คุณใช้คำใดแทน \"ฉัน\"?",
+      "prompt_id": "Anda bertemu atasan baru untuk pertama kalinya. Kata mana untuk 'saya' yang Anda gunakan?"
     },
     {
       "id": 7,
@@ -356,67 +314,68 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Why do Koreans rarely say 당신 in conversation?",
-      "prompt_zh_tw": "為什麼韓國人在對話中很少說당신？",
       "choices": [
-        "It means 'enemy'",
+        "It is grammatically incorrect",
         "It can sound cold or confrontational",
-        "It only works in writing",
-        "It is too casual"
-      ],
-      "choices_zh_tw": [
-        "它的意思是「敵人」",
-        "它聽起來冷漠或對立",
-        "它只在書面中有效",
-        "它太隨意了"
+        "It is reserved for speaking to children",
+        "It is recent slang among young people"
       ],
       "correct": "It can sound cold or confrontational",
+      "prompt_ja": "韓国人が会話で당신をほとんど使わないのはなぜでしょう。",
+      "choices_ja": [
+        "文法的に間違っているから",
+        "冷たく、対立的に響くことがあるから",
+        "子どもに話すときだけ使うから",
+        "若者が最近作った俗語だから"
+      ],
+      "prompt_zh_tw": "為什麼韓國人在對話中很少說당신？",
+      "choices_zh_tw": [
+        "它在文法上是錯誤的",
+        "它聽起來冷漠或對立",
+        "它只用於對小孩說話",
+        "它是年輕人最近的俗語"
+      ],
       "prompt_es": "¿Por qué los coreanos rara vez dicen 당신 en la conversación?",
       "choices_es": [
-        "Significa 'enemigo'",
+        "Es gramaticalmente incorrecto",
         "Puede sonar frío o confrontacional",
-        "Solo funciona en la escritura",
-        "Es demasiado informal"
-      ],
-      "prompt_fr": "Pourquoi les Coréens disent-ils rarement 당신 en conversation ?",
-      "choices_fr": [
-        "Cela signifie « ennemi »",
-        "Cela peut sembler froid ou conflictuel",
-        "Cela ne fonctionne qu'à l'écrit",
-        "C'est trop informel"
+        "Se reserva para hablar con niños",
+        "Es jerga reciente entre los jóvenes"
       ],
       "prompt_de": "Warum sagen Koreaner im Gespräch selten 당신?",
       "choices_de": [
-        "Es bedeutet „Feind\"",
+        "Es ist grammatikalisch falsch",
         "Es kann kalt oder konfrontativ wirken",
-        "Es funktioniert nur schriftlich",
-        "Es ist zu informell"
+        "Es ist dem Sprechen mit Kindern vorbehalten",
+        "Es ist neuer Slang unter Jugendlichen"
       ],
-      "prompt_th": "ทำไมชาวเกาหลีจึงแทบไม่พูด 당신 ในการสนทนา?",
-      "choices_th": [
-        "หมายถึง \"ศัตรู\"",
-        "อาจฟังดูเย็นชาหรือต่อต้าน",
-        "ใช้ได้แค่ในการเขียน",
-        "ไม่เป็นทางการเกินไป"
-      ],
-      "prompt_id": "Mengapa orang Korea jarang mengucapkan 당신 dalam percakapan?",
-      "choices_id": [
-        "Artinya 'musuh'",
-        "Bisa terdengar dingin atau konfrontatif",
-        "Hanya berlaku dalam tulisan",
-        "Terlalu santai"
+      "prompt_fr": "Pourquoi les Coréens disent-ils rarement 당신 en conversation ?",
+      "choices_fr": [
+        "C'est grammaticalement incorrect",
+        "Cela peut sembler froid ou conflictuel",
+        "C'est réservé aux conversations avec les enfants",
+        "C'est de l'argot récent chez les jeunes"
       ],
       "prompt_vi": "Vì sao người Hàn hiếm khi nói 당신 trong hội thoại?",
       "choices_vi": [
-        "Nó nghĩa là 'kẻ thù'",
+        "Nó sai ngữ pháp",
         "Nó có thể nghe lạnh lùng hoặc gây hấn",
-        "Nó chỉ dùng trong văn viết",
-        "Nó quá thân mật"
+        "Nó chỉ dùng khi nói với trẻ em",
+        "Nó là tiếng lóng mới của giới trẻ"
       ],
-      "choices_ja": [
-        "「敵」という意味になる",
-        "冷たく、対立的に響くことがある",
-        "書き言葉でしか使えない",
-        "くだけすぎている"
+      "prompt_th": "ทำไมชาวเกาหลีจึงแทบไม่พูด 당신 ในการสนทนา?",
+      "choices_th": [
+        "ผิดหลักไวยากรณ์",
+        "อาจฟังดูเย็นชาหรือต่อต้าน",
+        "ใช้เฉพาะเวลาพูดกับเด็ก",
+        "เป็นคำสแลงใหม่ของวัยรุ่น"
+      ],
+      "prompt_id": "Mengapa orang Korea jarang mengucapkan 당신 dalam percakapan?",
+      "choices_id": [
+        "Secara tata bahasa salah",
+        "Bisa terdengar dingin atau konfrontatif",
+        "Hanya dipakai untuk berbicara dengan anak-anak",
+        "Itu bahasa gaul baru di kalangan anak muda"
       ]
     },
     {
@@ -570,67 +529,68 @@
       "stage": 2,
       "type": "match_quiz",
       "prompt": "우리 엄마 literally means 'our mom' but is used to mean…",
-      "prompt_zh_tw": "우리 엄마字面意思是「我們的媽媽」，但實際用來表示…",
       "choices": [
         "someone else's mom",
-        "my mom",
-        "the teacher",
-        "a stranger"
+        "my own mom",
+        "the mom of everyone present",
+        "my husband's or wife's mom"
       ],
+      "correct": "my own mom",
+      "prompt_ja": "우리 엄마は文字どおりには「私たちのお母さん」ですが、実際に指すのは…",
+      "choices_ja": [
+        "他人のお母さん",
+        "自分のお母さん",
+        "その場にいる全員のお母さん",
+        "配偶者のお母さん"
+      ],
+      "prompt_zh_tw": "우리 엄마字面意思是「我們的媽媽」，但實際用來表示…",
       "choices_zh_tw": [
         "別人的媽媽",
-        "我的媽媽",
-        "老師",
-        "陌生人"
+        "我自己的媽媽",
+        "在場所有人的媽媽",
+        "配偶的媽媽"
       ],
-      "correct": "my mom",
       "prompt_es": "우리 엄마 literalmente significa \"nuestra mamá\" pero se usa para decir…",
       "choices_es": [
         "la mamá de otra persona",
-        "mi mamá",
-        "el/la profesor/a",
-        "un/a desconocido/a"
-      ],
-      "prompt_fr": "우리 엄마 signifie littéralement « notre maman » mais s'utilise pour dire…",
-      "choices_fr": [
-        "la maman de quelqu'un d'autre",
-        "ma maman",
-        "le/la professeur(e)",
-        "un(e) étranger/étrangère"
+        "mi propia mamá",
+        "la mamá de todos los presentes",
+        "la mamá de mi esposo o esposa"
       ],
       "prompt_de": "우리 엄마 bedeutet wörtlich „unsere Mama\", wird aber verwendet für…",
       "choices_de": [
         "die Mama von jemand anderem",
-        "meine Mama",
-        "den/die Lehrer/in",
-        "eine fremde Person"
+        "meine eigene Mama",
+        "die Mama aller Anwesenden",
+        "die Mama meines Mannes oder meiner Frau"
       ],
-      "prompt_th": "우리 엄마 แปลตรงๆ ว่า \"แม่ของเรา\" แต่ใช้หมายความว่า...",
-      "choices_th": [
-        "แม่ของคนอื่น",
-        "แม่ของฉัน",
-        "ครู",
-        "คนแปลกหน้า"
-      ],
-      "prompt_id": "우리 엄마 secara harfiah berarti 'ibu kami' tetapi digunakan untuk berarti…",
-      "choices_id": [
-        "ibu orang lain",
-        "ibu saya",
-        "sang guru",
-        "orang asing"
+      "prompt_fr": "우리 엄마 signifie littéralement « notre maman » mais s'utilise pour dire…",
+      "choices_fr": [
+        "la maman de quelqu'un d'autre",
+        "ma propre maman",
+        "la maman de toutes les personnes présentes",
+        "la maman de mon mari ou de ma femme"
       ],
       "prompt_vi": "우리 엄마 nghĩa đen là 'mẹ của chúng ta' nhưng được dùng để chỉ…",
       "choices_vi": [
         "mẹ của người khác",
-        "mẹ tôi",
-        "giáo viên",
-        "một người lạ"
+        "mẹ ruột của tôi",
+        "mẹ của tất cả những người có mặt",
+        "mẹ chồng hoặc mẹ vợ của tôi"
       ],
-      "choices_ja": [
-        "他人の母親",
-        "自分の母親",
-        "先生",
-        "見知らぬ人"
+      "prompt_th": "우리 엄마 แปลตรงๆ ว่า \"แม่ของเรา\" แต่ใช้หมายความว่า...",
+      "choices_th": [
+        "แม่ของคนอื่น",
+        "แม่ของฉันเอง",
+        "แม่ของทุกคนที่อยู่ตรงนั้น",
+        "แม่สามีหรือแม่ภรรยาของฉัน"
+      ],
+      "prompt_id": "우리 엄마 secara harfiah berarti 'ibu kami' tetapi digunakan untuk berarti…",
+      "choices_id": [
+        "ibu orang lain",
+        "ibu saya sendiri",
+        "ibu semua orang yang hadir",
+        "ibu mertua saya"
       ]
     },
     {
@@ -661,64 +621,22 @@
       "id": 17,
       "stage": 2,
       "type": "match_quiz",
-      "prompt": "Which form of 'we' is more humble and polite, used toward seniors?",
-      "prompt_zh_tw": "哪種「我們」的形式更謙遜有禮，用於對長輩說話？",
+      "prompt": "You are speaking to your company's president about your own team. Which word for 'we' do you use?",
       "choices": [
         "우리",
         "저희",
-        "그들",
-        "너희"
-      ],
-      "choices_zh_tw": [
-        "우리",
-        "저희",
-        "그들",
+        "우리들",
         "너희"
       ],
       "correct": "저희",
-      "prompt_es": "¿Qué forma de \"nosotros\" es más humilde y educada, usada con mayores?",
-      "choices_es": [
-        "우리",
-        "저희",
-        "그들",
-        "너희"
-      ],
-      "prompt_fr": "Quelle forme de « nous » est plus humble et polie, utilisée envers les aînés ?",
-      "choices_fr": [
-        "우리",
-        "저희",
-        "그들",
-        "너희"
-      ],
-      "prompt_de": "Welche Form von „wir\" ist bescheidener und höflicher, gegenüber Älteren verwendet?",
-      "choices_de": [
-        "우리",
-        "저희",
-        "그들",
-        "너희"
-      ],
-      "prompt_th": "รูปใดของ \"เรา\" ที่สุภาพและถ่อมตัวกว่า ใช้กับผู้ใหญ่กว่า?",
-      "choices_th": [
-        "우리",
-        "저희",
-        "그들",
-        "너희"
-      ],
-      "prompt_id": "Bentuk 'kami' mana yang lebih merendah dan sopan, digunakan kepada orang yang lebih tua?",
-      "choices_id": [
-        "우리",
-        "저희",
-        "그들",
-        "너희"
-      ],
-      "prompt_vi": "Dạng nào của 'chúng ta' khiêm nhường và lịch sự hơn, dùng với người lớn tuổi?",
-      "choices_vi": [
-        "우리",
-        "저희",
-        "그들",
-        "너희"
-      ],
-      "prompt_ja": "目上の人に対して使う、より謙虚で丁寧な「私たち」はどれでしょう。"
+      "prompt_ja": "会社の社長に自分のチームについて話します。「私たち」を表す言葉はどれを使いますか。",
+      "prompt_zh_tw": "你正向公司社長談論自己的團隊。「我們」要用哪個詞？",
+      "prompt_es": "Hablas con el presidente de tu empresa sobre tu propio equipo. ¿Qué palabra para 'nosotros' usas?",
+      "prompt_de": "Sie sprechen mit dem Präsidenten Ihrer Firma über Ihr eigenes Team. Welches Wort für „wir\" verwenden Sie?",
+      "prompt_fr": "Vous parlez au président de votre entreprise de votre propre équipe. Quel mot pour « nous » utilisez-vous ?",
+      "prompt_vi": "Bạn đang nói với chủ tịch công ty về nhóm của mình. Bạn dùng từ nào để nói 'chúng tôi'?",
+      "prompt_th": "คุณกำลังพูดกับประธานบริษัทเกี่ยวกับทีมของคุณเอง คุณใช้คำใดแทน \"พวกเรา\"?",
+      "prompt_id": "Anda berbicara kepada presiden direktur perusahaan tentang tim Anda sendiri. Kata mana untuk 'kami' yang Anda gunakan?"
     },
     {
       "id": 18,
@@ -876,55 +794,13 @@
         "저것",
         "어떤 것"
       ],
-      "choices_zh_tw": [
-        "이것",
-        "그것",
-        "저것",
-        "어떤 것"
-      ],
       "correct": "저것",
       "prompt_es": "¿Qué demostrativo se refiere a algo lejos TANTO del hablante COMO del oyente?",
-      "choices_es": [
-        "이것",
-        "그것",
-        "저것",
-        "어떤 것"
-      ],
       "prompt_fr": "Quel démonstratif désigne quelque chose de loin des DEUX — du locuteur ET de l'auditeur ?",
-      "choices_fr": [
-        "이것",
-        "그것",
-        "저것",
-        "어떤 것"
-      ],
       "prompt_de": "Welches Demonstrativum bezeichnet etwas, das SOWOHL vom Sprecher ALS AUCH vom Hörer weit entfernt ist?",
-      "choices_de": [
-        "이것",
-        "그것",
-        "저것",
-        "어떤 것"
-      ],
       "prompt_th": "คำชี้เฉพาะใดหมายถึงสิ่งที่ไกลจากทั้งผู้พูดและผู้ฟัง?",
-      "choices_th": [
-        "이것",
-        "그것",
-        "저것",
-        "어떤 것"
-      ],
       "prompt_id": "Kata tunjuk mana yang merujuk pada sesuatu yang jauh dari KEDUA pembicara DAN pendengar?",
-      "choices_id": [
-        "이것",
-        "그것",
-        "저것",
-        "어떤 것"
-      ],
       "prompt_vi": "Từ chỉ định nào chỉ vật xa CẢ người nói LẪN người nghe?",
-      "choices_vi": [
-        "이것",
-        "그것",
-        "저것",
-        "어떤 것"
-      ],
       "prompt_ja": "話し手からも聞き手からも遠いものを指す指示語はどれでしょう。"
     },
     {
@@ -952,63 +828,22 @@
       "id": 25,
       "stage": 3,
       "type": "match_quiz",
-      "prompt": "저것 is the formal version. What is the casual version?",
-      "prompt_zh_tw": "저것是正式版本。隨意版本是什麼？",
+      "prompt": "You are telling a friend about a man you mentioned a moment ago, and he is not in the room. In natural spoken Korean you say…",
       "choices": [
-        "이거",
-        "그거",
-        "저거",
-        "뭐"
+        "그",
+        "그 사람",
+        "저 사람",
+        "그녀"
       ],
-      "choices_zh_tw": [
-        "이거",
-        "그거",
-        "저거",
-        "뭐"
-      ],
-      "correct": "저거",
-      "prompt_es": "저것 es la versión formal. ¿Cuál es la versión informal?",
-      "choices_es": [
-        "이거",
-        "그거",
-        "저거",
-        "뭐"
-      ],
-      "prompt_fr": "저것 est la version formelle. Quelle est la version informelle ?",
-      "choices_fr": [
-        "이거",
-        "그거",
-        "저거",
-        "뭐"
-      ],
-      "prompt_de": "저것 ist die formelle Form. Was ist die informelle Form?",
-      "choices_de": [
-        "이거",
-        "그거",
-        "저거",
-        "뭐"
-      ],
-      "prompt_th": "저것 เป็นรูปทางการ รูปไม่เป็นทางการคืออะไร?",
-      "choices_th": [
-        "이거",
-        "그거",
-        "저거",
-        "뭐"
-      ],
-      "prompt_id": "저것 adalah versi formal. Apa versi santainya?",
-      "choices_id": [
-        "이거",
-        "그거",
-        "저거",
-        "뭐"
-      ],
-      "prompt_vi": "저것 là dạng trang trọng. Dạng thân mật là gì?",
-      "choices_vi": [
-        "이거",
-        "그거",
-        "저거",
-        "뭐"
-      ]
+      "correct": "그 사람",
+      "prompt_ja": "少し前に話題に出した男性について友だちに話しています。その人はこの場にいません。自然な話し言葉ではどう言うでしょう。",
+      "prompt_zh_tw": "你正向朋友談起剛才提到的一位男性，他不在現場。自然的韓語口語會怎麼說？",
+      "prompt_es": "Le hablas a un amigo de un hombre que mencionaste hace un momento, y él no está presente. En coreano hablado natural dices…",
+      "prompt_de": "Du erzählst einem Freund von einem Mann, den du gerade erwähnt hast, und er ist nicht im Raum. Im natürlichen gesprochenen Koreanisch sagst du…",
+      "prompt_fr": "Vous parlez à un ami d'un homme que vous venez de mentionner, et il n'est pas dans la pièce. En coréen parlé naturel, vous dites…",
+      "prompt_vi": "Bạn đang kể với một người bạn về một người đàn ông bạn vừa nhắc đến, và anh ấy không có mặt ở đó. Trong tiếng Hàn nói tự nhiên, bạn nói…",
+      "prompt_th": "คุณกำลังเล่าให้เพื่อนฟังเกี่ยวกับผู้ชายที่คุณเพิ่งพูดถึง และเขาไม่ได้อยู่ตรงนั้น ในภาษาเกาหลีพูดแบบธรรมชาติคุณจะพูดว่า…",
+      "prompt_id": "Anda bercerita kepada teman tentang seorang pria yang baru saja Anda sebut, dan dia tidak ada di ruangan itu. Dalam bahasa Korea lisan yang alami Anda mengatakan…"
     },
     {
       "id": 26,
@@ -1165,55 +1000,13 @@
         "누구",
         "왜"
       ],
-      "choices_zh_tw": [
-        "뭐",
-        "어디",
-        "누구",
-        "왜"
-      ],
       "correct": "누구",
       "prompt_es": "¿Qué pronombre interrogativo significa 'quién'?",
-      "choices_es": [
-        "뭐",
-        "어디",
-        "누구",
-        "왜"
-      ],
       "prompt_fr": "Quel pronom interrogatif signifie « qui » ?",
-      "choices_fr": [
-        "뭐",
-        "어디",
-        "누구",
-        "왜"
-      ],
       "prompt_de": "Welches Fragepronomen bedeutet „wer\"?",
-      "choices_de": [
-        "뭐",
-        "어디",
-        "누구",
-        "왜"
-      ],
       "prompt_th": "สรรพนามคำถามใดหมายถึง \"ใคร\"?",
-      "choices_th": [
-        "뭐",
-        "어디",
-        "누구",
-        "왜"
-      ],
       "prompt_id": "Kata ganti tanya mana yang berarti 'siapa'?",
-      "choices_id": [
-        "뭐",
-        "어디",
-        "누구",
-        "왜"
-      ],
       "prompt_vi": "Đại từ nghi vấn nào có nghĩa là 'ai'?",
-      "choices_vi": [
-        "뭐",
-        "어디",
-        "누구",
-        "왜"
-      ],
       "prompt_ja": "「誰」を意味する疑問代名詞はどれでしょう。"
     },
     {

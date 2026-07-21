@@ -260,69 +260,22 @@
       "id": 6,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "합쇼체 is best described as…",
-      "prompt_zh_tw": "합쇼체最貼切的描述是…",
+      "prompt": "You are hotel staff making an announcement to guests. Which form of the verb 있다 do you use?",
+      "prompt_zh_tw": "你是飯店員工，正在向客人廣播通知。動詞 있다 要用哪個形式？",
       "choices": [
-        "casual speech",
-        "the most formal speech level",
-        "informal polite",
-        "slang"
+        "있어",
+        "있습니다",
+        "있어요",
+        "있다"
       ],
-      "choices_zh_tw": [
-        "隨意語",
-        "最高正式語言等級",
-        "非正式禮貌語",
-        "俚語"
-      ],
-      "correct": "the most formal speech level",
-      "prompt_es": "합쇼체 se describe mejor como...",
-      "choices_es": [
-        "habla informal",
-        "el nivel de habla más formal",
-        "educado informal",
-        "argot"
-      ],
-      "prompt_fr": "합쇼체 se décrit le mieux comme…",
-      "choices_fr": [
-        "langage informel",
-        "le niveau de langage le plus formel",
-        "poli informel",
-        "argot"
-      ],
-      "prompt_de": "합쇼체 lässt sich am besten beschreiben als…",
-      "choices_de": [
-        "Umgangssprache",
-        "die formellste Sprachebene",
-        "informell höflich",
-        "Slang"
-      ],
-      "prompt_th": "합쇼체 อธิบายได้ดีที่สุดว่า...",
-      "choices_th": [
-        "การพูดแบบกันเอง",
-        "ระดับความสุภาพสูงสุด",
-        "สุภาพแบบไม่เป็นทางการ",
-        "ภาษาแสลง"
-      ],
-      "prompt_id": "합쇼체 paling tepat digambarkan sebagai…",
-      "choices_id": [
-        "bahasa santai",
-        "tingkat bahasa paling formal",
-        "sopan tidak formal",
-        "bahasa gaul"
-      ],
-      "prompt_vi": "합쇼체 được mô tả đúng nhất là…",
-      "choices_vi": [
-        "nói thân mật",
-        "cấp độ kính ngữ trang trọng nhất",
-        "lịch sự không trang trọng",
-        "tiếng lóng"
-      ],
-      "choices_ja": [
-        "くだけた言い方",
-        "最もフォーマルな語体",
-        "打ち解けた丁寧体",
-        "俗語"
-      ]
+      "correct": "있습니다",
+      "prompt_es": "Eres personal de un hotel y haces un anuncio a los huéspedes. ¿Qué forma del verbo 있다 usas?",
+      "prompt_fr": "Vous êtes employé d'hôtel et faites une annonce aux clients. Quelle forme du verbe 있다 utilisez-vous ?",
+      "prompt_de": "Du bist Hotelpersonal und machst eine Durchsage an die Gäste. Welche Form des Verbs 있다 verwendest du?",
+      "prompt_th": "คุณเป็นพนักงานโรงแรมกำลังประกาศแจ้งแขก คุณใช้รูปใดของกริยา 있다?",
+      "prompt_id": "Anda staf hotel yang membuat pengumuman kepada tamu. Bentuk kata kerja 있다 mana yang Anda gunakan?",
+      "prompt_vi": "Bạn là nhân viên khách sạn đang thông báo với khách. Bạn dùng dạng nào của động từ 있다?",
+      "prompt_ja": "ホテルのスタッフとしてお客様に案内放送をします。動詞 있다 はどの形を使いますか。"
     },
     {
       "id": 7,
@@ -583,69 +536,22 @@
       "id": 15,
       "stage": 2,
       "type": "match_quiz",
-      "prompt": "해요체 is best described as…",
-      "prompt_zh_tw": "해요체最貼切的描述是…",
+      "prompt": "A coworker you are not close to asks what you are having for lunch. Which form of 먹다 do you use?",
+      "prompt_zh_tw": "一位不太熟的同事問你午餐吃什麼。먹다 要用哪個形式？",
       "choices": [
-        "very formal / broadcast Korean",
-        "the most casual form",
-        "everyday polite / default adult speech",
-        "archaic honorific"
+        "먹습니다",
+        "먹어요",
+        "먹어",
+        "먹는다"
       ],
-      "choices_zh_tw": [
-        "非常正式／廣播韓語",
-        "最隨意的形式",
-        "日常禮貌語／成年人預設語體",
-        "古語尊稱"
-      ],
-      "correct": "everyday polite / default adult speech",
-      "prompt_es": "해요체 se describe mejor como...",
-      "choices_es": [
-        "muy formal / coreano de emisora",
-        "la forma más informal",
-        "educado cotidiano / habla adulta predeterminada",
-        "honorífico arcaico"
-      ],
-      "prompt_fr": "해요체 se décrit le mieux comme…",
-      "choices_fr": [
-        "très formel / coréen de radiodiffusion",
-        "la forme la plus informelle",
-        "poli quotidien / langue adulte par défaut",
-        "honorifique archaïque"
-      ],
-      "prompt_de": "해요체 lässt sich am besten beschreiben als…",
-      "choices_de": [
-        "sehr formell / Nachrichten-Koreanisch",
-        "die informellste Form",
-        "alltäglich höflich / Standard-Erwachsenensprache",
-        "archaisches Honorativ"
-      ],
-      "prompt_th": "해요체 อธิบายได้ดีที่สุดว่า...",
-      "choices_th": [
-        "ทางการมาก/ภาษาออกอากาศ",
-        "รูปแบบไม่เป็นทางการที่สุด",
-        "สุภาพทั่วไป/ค่าเริ่มต้นผู้ใหญ่",
-        "ระดับเกียรติยศโบราณ"
-      ],
-      "prompt_id": "해요체 paling tepat digambarkan sebagai…",
-      "choices_id": [
-        "sangat formal / bahasa Korea siaran",
-        "bentuk paling santai",
-        "sopan sehari-hari / ucapan standar orang dewasa",
-        "bentuk hormat kuno"
-      ],
-      "prompt_vi": "해요체 được mô tả đúng nhất là…",
-      "choices_vi": [
-        "rất trang trọng / tiếng Hàn trên truyền hình",
-        "dạng thân mật nhất",
-        "lịch sự hằng ngày / lời nói mặc định của người lớn",
-        "kính ngữ cổ xưa"
-      ],
-      "choices_ja": [
-        "非常にフォーマル／放送で使う韓国語",
-        "最もくだけた形",
-        "日常の丁寧体／大人の標準的な話し方",
-        "古風な敬語"
-      ]
+      "correct": "먹어요",
+      "prompt_es": "Un compañero de trabajo con el que no tienes confianza te pregunta qué vas a almorzar. ¿Qué forma de 먹다 usas?",
+      "prompt_fr": "Un collègue avec qui vous n’êtes pas proche vous demande ce que vous mangez à midi. Quelle forme de 먹다 utilisez-vous ?",
+      "prompt_de": "Ein Kollege, mit dem du nicht eng befreundet bist, fragt, was du zu Mittag isst. Welche Form von 먹다 verwendest du?",
+      "prompt_th": "เพื่อนร่วมงานที่ไม่ได้สนิทถามว่าคุณกินอะไรเป็นมื้อกลางวัน คุณใช้รูปใดของ 먹다?",
+      "prompt_id": "Rekan kerja yang tidak akrab bertanya Anda makan siang apa. Bentuk 먹다 mana yang Anda gunakan?",
+      "prompt_vi": "Một đồng nghiệp không thân hỏi bạn ăn trưa món gì. Bạn dùng dạng nào của 먹다?",
+      "prompt_ja": "あまり親しくない同僚に昼食は何を食べるか聞かれました。먹다 はどの形を使いますか。"
     },
     {
       "id": 16,
@@ -733,63 +639,22 @@
       "id": 18,
       "stage": 2,
       "type": "match_quiz",
-      "prompt": "Which form of 'I go' is 해요체 (everyday polite)?",
-      "prompt_zh_tw": "哪種「我去」的形式是해요체（日常禮貌語）？",
+      "prompt": "오다 in 해요체 (everyday polite) is…",
+      "prompt_zh_tw": "오다 的 해요체（日常禮貌語）是…",
       "choices": [
-        "가",
-        "갑니다",
-        "가요",
-        "가라"
+        "오아요",
+        "옵니다",
+        "와요",
+        "와"
       ],
-      "choices_zh_tw": [
-        "가",
-        "갑니다",
-        "가요",
-        "가라"
-      ],
-      "correct": "가요",
-      "prompt_es": "¿Qué forma de \"Voy\" es 해요체 (educado cotidiano)?",
-      "choices_es": [
-        "가",
-        "갑니다",
-        "가요",
-        "가라"
-      ],
-      "prompt_fr": "Quelle forme de « Je vais » est du 해요체 (poli quotidien) ?",
-      "choices_fr": [
-        "가",
-        "갑니다",
-        "가요",
-        "가라"
-      ],
-      "prompt_de": "Welche Form von „Ich gehe\" ist 해요체 (alltäglich höflich)?",
-      "choices_de": [
-        "가",
-        "갑니다",
-        "가요",
-        "가라"
-      ],
-      "prompt_th": "รูปใดของ \"ฉันไป\" เป็น 해요체 (สุภาพทั่วไป)?",
-      "choices_th": [
-        "가",
-        "갑니다",
-        "가요",
-        "가라"
-      ],
-      "prompt_id": "Bentuk 'Saya pergi' mana yang termasuk 해요체 (sopan sehari-hari)?",
-      "choices_id": [
-        "가",
-        "갑니다",
-        "가요",
-        "가라"
-      ],
-      "prompt_vi": "Dạng nào của 'Tôi đi' là 해요체 (lịch sự hằng ngày)?",
-      "choices_vi": [
-        "가",
-        "갑니다",
-        "가요",
-        "가라"
-      ]
+      "correct": "와요",
+      "prompt_es": "오다 en 해요체 (educado cotidiano) es…",
+      "prompt_fr": "오다 au 해요체 (poli quotidien) donne…",
+      "prompt_de": "오다 im 해요체 (alltäglich höflich) lautet…",
+      "prompt_th": "오다 ในรูป 해요체 (สุภาพทั่วไป) คือ…",
+      "prompt_id": "오다 dalam 해요체 (sopan sehari-hari) adalah…",
+      "prompt_vi": "오다 ở 해요체 (lịch sự hằng ngày) là…",
+      "prompt_ja": "오다 の 해요체（日常の丁寧体）は…"
     },
     {
       "id": 19,
@@ -939,63 +804,22 @@
       "id": 24,
       "stage": 3,
       "type": "match_quiz",
-      "prompt": "Which greeting is 반말 (casual)?",
-      "prompt_zh_tw": "哪種問候是반말（隨意語）？",
+      "prompt": "You run into a close friend your own age. How do you greet them?",
+      "prompt_zh_tw": "你偶然遇到同齡的好朋友。你會怎麼打招呼？",
       "choices": [
         "안녕하세요",
         "안녕하십니까",
         "안녕",
         "반갑습니다"
       ],
-      "choices_zh_tw": [
-        "안녕하세요",
-        "안녕하십니까",
-        "안녕",
-        "반갑습니다"
-      ],
       "correct": "안녕",
-      "prompt_es": "¿Qué saludo es 반말 (informal)?",
-      "choices_es": [
-        "안녕하세요",
-        "안녕하십니까",
-        "안녕",
-        "반갑습니다"
-      ],
-      "prompt_fr": "Quelle salutation est du 반말 (informel) ?",
-      "choices_fr": [
-        "안녕하세요",
-        "안녕하십니까",
-        "안녕",
-        "반갑습니다"
-      ],
-      "prompt_de": "Welcher Gruß ist 반말 (informell)?",
-      "choices_de": [
-        "안녕하세요",
-        "안녕하십니까",
-        "안녕",
-        "반갑습니다"
-      ],
-      "prompt_th": "คำทักทายใดเป็น 반말 (แบบกันเอง)?",
-      "choices_th": [
-        "안녕하세요",
-        "안녕하십니까",
-        "안녕",
-        "반갑습니다"
-      ],
-      "prompt_id": "Salam mana yang termasuk 반말 (santai)?",
-      "choices_id": [
-        "안녕하세요",
-        "안녕하십니까",
-        "안녕",
-        "반갑습니다"
-      ],
-      "prompt_vi": "Lời chào nào là 반말 (thân mật)?",
-      "choices_vi": [
-        "안녕하세요",
-        "안녕하십니까",
-        "안녕",
-        "반갑습니다"
-      ]
+      "prompt_es": "Te encuentras con un amigo cercano de tu misma edad. ¿Cómo lo saludas?",
+      "prompt_fr": "Vous croisez un ami proche de votre âge. Comment le saluez-vous ?",
+      "prompt_de": "Du triffst zufällig einen engen Freund in deinem Alter. Wie begrüßt du ihn?",
+      "prompt_th": "คุณบังเอิญเจอเพื่อนสนิทวัยเดียวกัน คุณจะทักทายอย่างไร?",
+      "prompt_id": "Anda bertemu teman dekat seusia Anda. Bagaimana Anda menyapanya?",
+      "prompt_vi": "Bạn tình cờ gặp một người bạn thân cùng tuổi. Bạn chào thế nào?",
+      "prompt_ja": "同い年の親しい友達に偶然会いました。どう挨拶しますか。"
     },
     {
       "id": 25,
@@ -1065,66 +889,17 @@
       "prompt_zh_tw": "你在街上和同齡的陌生人說話。你應該使用哪個等級？",
       "choices": [
         "반말",
-        "해요체",
-        "both are fine",
-        "합쇼체 only"
-      ],
-      "choices_zh_tw": [
-        "반말",
-        "해요체",
-        "兩者都可以",
-        "只有합쇼체"
+        "합쇼체",
+        "해요체"
       ],
       "correct": "해요체",
       "prompt_es": "Estás hablando con un extraño de tu misma edad en la calle. ¿Qué nivel debes usar?",
-      "choices_es": [
-        "반말",
-        "해요체",
-        "Los dos están bien",
-        "Solo 합쇼체"
-      ],
       "prompt_fr": "Vous parlez à un inconnu de votre âge dans la rue. Quel niveau devriez-vous utiliser ?",
-      "choices_fr": [
-        "반말",
-        "해요체",
-        "Les deux conviennent",
-        "Seulement 합쇼체"
-      ],
       "prompt_de": "Du redest auf der Straße mit einem gleichaltrigen Fremden. Welche Ebene solltest du verwenden?",
-      "choices_de": [
-        "반말",
-        "해요체",
-        "Beide gehen",
-        "Nur 합쇼체"
-      ],
       "prompt_th": "คุณกำลังคุยกับคนแปลกหน้าอายุเดียวกันบนถนน ควรใช้ระดับไหน?",
-      "choices_th": [
-        "반말",
-        "해요체",
-        "ทั้งสองได้",
-        "합쇼체 เท่านั้น"
-      ],
       "prompt_id": "Anda berbicara dengan orang asing seusia di jalan. Tingkat mana yang harus Anda gunakan?",
-      "choices_id": [
-        "반말",
-        "해요체",
-        "keduanya boleh",
-        "hanya 합쇼체"
-      ],
       "prompt_vi": "Bạn đang nói chuyện với một người lạ trạc tuổi bạn trên phố. Bạn nên dùng cấp độ nào?",
-      "choices_vi": [
-        "반말",
-        "해요체",
-        "cái nào cũng được",
-        "chỉ 합쇼체"
-      ],
-      "prompt_ja": "路上で同年代の見知らぬ人に話しかけます。どの語体を使うべきでしょう。",
-      "choices_ja": [
-        "반말",
-        "해요체",
-        "どちらでもよい",
-        "합쇼체 only"
-      ]
+      "prompt_ja": "路上で同年代の見知らぬ人に話しかけます。どの語体を使うべきでしょう。"
     },
     {
       "id": 27,
@@ -1133,8 +908,8 @@
       "title": "문어체 — Written/Formal Style",
       "title_zh_tw": "문어체——書面／正式語體",
       "title_kr": "문어체",
-      "body": "문어체 (mun-eo-che, 'written language style') is used in formal writing — academic papers, news articles, legal documents, and literature. The verb ending is -다 (the plain dictionary form): 가다, 먹는다, 했다. It sounds unnatural in spoken conversation but appears everywhere in written Korean. Learners encounter this when reading Korean text and may wonder why it differs from what they've been taught — that's because textbooks teach spoken registers, while reading requires recognizing 문어체.",
-      "body_zh_tw": "문어체（「書面語體」）用於正式書寫——學術論文、新聞文章、法律文件和文學作品。動詞語尾是-다（原形字典形式）：가다、먹는다、했다。在口語對話中聽起來不自然，但在書面韓語中到處出現。當學習者閱讀韓語文章並疑惑為什麼與所學不同時——那是因為教科書教的是口語語體，而閱讀則需要識別문어체。",
+      "body": "문어체 (mun-eo-che, 'written language style') is used in formal writing — academic papers, news articles, legal documents, and literature. The verb ending is -다 (the plain style: -ㄴ다/-는다 on verbs): 간다, 먹는다, 했다. It sounds unnatural in spoken conversation but appears everywhere in written Korean. Learners encounter this when reading Korean text and may wonder why it differs from what they've been taught — that's because textbooks teach spoken registers, while reading requires recognizing 문어체.",
+      "body_zh_tw": "문어체（「書面語體」）用於正式書寫——學術論文、新聞文章、法律文件和文學作品。動詞語尾是-다（原形語體：動詞加 -ㄴ다/-는다）：간다、먹는다、했다。在口語對話中聽起來不自然，但在書面韓語中到處出現。當學習者閱讀韓語文章並疑惑為什麼與所學不同時——那是因為教科書教的是口語語體，而閱讀則需要識別문어체。",
       "tip": {
         "icon": "📝",
         "label": "문어체 vs 합쇼체",
@@ -1144,43 +919,43 @@
         "label": "문어체 vs 합쇼체",
         "text": "兩者都是正式的，但합쇼체用於說話（說話者對聽者）而문어체用於書寫（沒有特定聽者）。新聞主播用합쇼체說話。報紙文章用문어체。在韓劇中，當角色大聲朗讀書籍或信件時，你會聽到문어체。"
       },
-      "body_ja": "문어체（「書き言葉スタイル」）はフォーマルな文章——学術論文・ニュース記事・法律文書・文学作品——で使われます。動詞語尾は -다（辞書形のまま）です：가다、먹는다、했다。話し言葉では不自然に聞こえますが、韓国語の文章のあちこちに登場します。学習者は韓国語のテキストを読んでいて「教わった内容と違う」と感じることがあります——それはテキストブックが話し言葉を教え、読書では 문어체 の認識が必要なためです。",
+      "body_ja": "문어체（「書き言葉スタイル」）はフォーマルな文章——学術論文・ニュース記事・法律文書・文学作品——で使われます。動詞語尾は -다（プレーン体：動詞は -ㄴ다/-는다）です：간다、먹는다、했다。話し言葉では不自然に聞こえますが、韓国語の文章のあちこちに登場します。学習者は韓国語のテキストを読んでいて「教わった内容と違う」と感じることがあります——それはテキストブックが話し言葉を教え、読書では 문어체 の認識が必要なためです。",
       "tip_ja": {
         "label": "문어체 vs 합쇼체",
         "text": "どちらもフォーマルですが、합쇼체は話し言葉（話者から聞き手へ）で、문어체は書き言葉（特定の聞き手なし）です。ニュースアンカーは합쇼체で話します。新聞記事は문어체です。Kドラマでは、キャラクターが本や手紙を音読する場面で문어체が聞けます。"
       },
       "title_es": "문어체 — Estilo Escrito/Formal",
-      "body_es": "문어체 (mun-eo-che, \"estilo de lengua escrita\") se usa en la escritura formal — trabajos académicos, artículos de noticias, documentos legales y literatura. La terminación verbal es -다 (la forma de diccionario simple): 가다, 먹는다, 했다. Suena antinatural en la conversación oral pero aparece en todas partes en el coreano escrito. Los estudiantes lo encuentran al leer textos coreanos y pueden preguntarse por qué difiere de lo que les han enseñado — eso es porque los libros de texto enseñan registros orales, mientras que la lectura requiere reconocer el 문어체.",
+      "body_es": "문어체 (mun-eo-che, \"estilo de lengua escrita\") se usa en la escritura formal — trabajos académicos, artículos de noticias, documentos legales y literatura. La terminación verbal es -다 (el estilo llano: -ㄴ다/-는다 en los verbos): 간다, 먹는다, 했다. Suena antinatural en la conversación oral pero aparece en todas partes en el coreano escrito. Los estudiantes lo encuentran al leer textos coreanos y pueden preguntarse por qué difiere de lo que les han enseñado — eso es porque los libros de texto enseñan registros orales, mientras que la lectura requiere reconocer el 문어체.",
       "tip_es": {
         "label": "문어체 vs 합쇼체",
         "text": "Ambos son formales, pero 합쇼체 es para el habla (hablante a oyente) y 문어체 es para la escritura (sin oyente específico). Un presentador de noticias habla en 합쇼체. Un artículo de periódico está en 문어체. En los K-dramas, escucharás 문어체 cuando los personajes leen en voz alta libros o cartas."
       },
       "title_fr": "문어체 — Style Écrit/Formel",
-      "body_fr": "문어체 (mun-eo-che, « style de langue écrite ») est utilisé dans l'écriture formelle — articles académiques, articles de presse, documents juridiques et littérature. La terminaison verbale est -다 (la forme du dictionnaire brute) : 가다, 먹는다, 했다. Cela semble peu naturel dans la conversation orale mais apparaît partout dans le coréen écrit. Les apprenants le rencontrent en lisant des textes coréens et peuvent se demander pourquoi cela diffère de ce qu'on leur a appris — c'est parce que les manuels enseignent les registres parlés, tandis que la lecture nécessite de reconnaître le 문어체.",
+      "body_fr": "문어체 (mun-eo-che, « style de langue écrite ») est utilisé dans l'écriture formelle — articles académiques, articles de presse, documents juridiques et littérature. La terminaison verbale est -다 (la forme du dictionnaire brute) : 간다, 먹는다, 했다. Cela semble peu naturel dans la conversation orale mais apparaît partout dans le coréen écrit. Les apprenants le rencontrent en lisant des textes coréens et peuvent se demander pourquoi cela diffère de ce qu'on leur a appris — c'est parce que les manuels enseignent les registres parlés, tandis que la lecture nécessite de reconnaître le 문어체.",
       "tip_fr": {
         "label": "문어체 vs 합쇼체",
         "text": "Les deux sont formels, mais 합쇼체 est pour la parole (locuteur à auditeur) et 문어체 est pour l'écriture (sans auditeur spécifique). Un présentateur de nouvelles parle en 합쇼체. Un article de journal est en 문어체. Dans les K-dramas, vous entendrez 문어체 quand les personnages lisent à voix haute des livres ou des lettres."
       },
       "title_de": "문어체 — Schriftlicher/Formeller Stil",
-      "body_de": "문어체 (mun-eo-che, „Schriftsprachstil\") wird in formellen Schriftstücken verwendet — wissenschaftliche Arbeiten, Zeitungsartikel, Rechtsdokumente und Literatur. Die Verbendung ist -다 (die reine Wörterbuchform): 가다, 먹는다, 했다. Im gesprochenen Gespräch klingt es unnatürlich, erscheint aber überall im geschriebenen Koreanisch. Lernende begegnen diesem Stil beim Lesen koreanischer Texte und fragen sich, warum er sich von dem Gelernten unterscheidet — das liegt daran, dass Lehrbücher gesprochene Register lehren, während das Lesen das Erkennen von 문어체 erfordert.",
+      "body_de": "문어체 (mun-eo-che, „Schriftsprachstil\") wird in formellen Schriftstücken verwendet — wissenschaftliche Arbeiten, Zeitungsartikel, Rechtsdokumente und Literatur. Die Verbendung ist -다 (die schlichte Form: -ㄴ다/-는다 bei Verben): 간다, 먹는다, 했다. Im gesprochenen Gespräch klingt es unnatürlich, erscheint aber überall im geschriebenen Koreanisch. Lernende begegnen diesem Stil beim Lesen koreanischer Texte und fragen sich, warum er sich von dem Gelernten unterscheidet — das liegt daran, dass Lehrbücher gesprochene Register lehren, während das Lesen das Erkennen von 문어체 erfordert.",
       "tip_de": {
         "label": "문어체 vs 합쇼체",
         "text": "Beide sind formell, aber 합쇼체 ist für die Sprache (Sprecher zu Hörer) und 문어체 ist für das Schreiben (kein spezifischer Hörer). Ein Nachrichtensprecher spricht in 합쇼체. Ein Zeitungsartikel ist in 문어체. In K-Dramas hörst du 문어체, wenn Figuren aus Büchern oder Briefen vorlesen."
       },
       "title_th": "문어체 — รูปแบบการเขียน/ทางการ",
-      "body_th": "문어체 (มุนออเช \"รูปแบบภาษาเขียน\") ใช้ในงานเขียนทางการ — บทความวิชาการ บทความข่าว สัญญา และเอกสารราชการ รูปกริยาลงท้ายด้วย -다 (รูปพจนานุกรม) มักพบในหนังสือพิมพ์และข้อความอย่างเป็นทางการ",
+      "body_th": "문어체 (มุนออเช \"รูปแบบภาษาเขียน\") ใช้ในงานเขียนทางการ — บทความวิชาการ บทความข่าว สัญญา และเอกสารราชการ รูปกริยาลงท้ายด้วย -다 (รูปธรรมดา: -ㄴ다/-는다 กับคำกริยา) มักพบในหนังสือพิมพ์และข้อความอย่างเป็นทางการ",
       "tip_th": {
         "label": "문어체 vs 합쇼체",
         "text": "ทั้งสองแบบเป็นทางการ แต่ 합쇼체 ใช้ในการพูด (ผู้พูดถึงผู้ฟัง) และ 문어체 ใช้ในการเขียน (ผู้เขียนถึงผู้อ่าน) นักข่าวพูดด้วย 합쇼체 แต่เขียนด้วย 문어체"
       },
       "title_id": "문어체 — Gaya Tulisan/Formal",
-      "body_id": "문어체 (mun-eo-che, 'gaya bahasa tulisan') digunakan dalam tulisan formal — makalah akademik, artikel berita, dokumen hukum, dan sastra. Akhiran kata kerjanya adalah -다 (bentuk kamus polos): 가다, 먹는다, 했다. Terdengar tidak alami dalam percakapan lisan tetapi muncul di mana-mana dalam tulisan Korea. Pembelajar menemukan ini saat membaca teks Korea dan mungkin bertanya-tanya mengapa berbeda dari yang telah mereka pelajari — itu karena buku teks mengajarkan ragam lisan, sedangkan membaca membutuhkan pengenalan 문어체.",
+      "body_id": "문어체 (mun-eo-che, 'gaya bahasa tulisan') digunakan dalam tulisan formal — makalah akademik, artikel berita, dokumen hukum, dan sastra. Akhiran kata kerjanya adalah -다 (gaya polos: -ㄴ다/-는다 pada kata kerja): 간다, 먹는다, 했다. Terdengar tidak alami dalam percakapan lisan tetapi muncul di mana-mana dalam tulisan Korea. Pembelajar menemukan ini saat membaca teks Korea dan mungkin bertanya-tanya mengapa berbeda dari yang telah mereka pelajari — itu karena buku teks mengajarkan ragam lisan, sedangkan membaca membutuhkan pengenalan 문어체.",
       "tip_id": {
         "label": "문어체 vs 합쇼체",
         "text": "Keduanya formal, tetapi 합쇼체 untuk berbicara (pembicara ke pendengar) dan 문어체 untuk menulis (tanpa pendengar tertentu). Presenter berita berbicara dalam 합쇼체. Artikel koran ditulis dalam 문어체. Dalam K-drama, Anda akan mendengar 문어체 ketika karakter membaca keras dari buku atau surat."
       },
       "title_vi": "문어체 — Văn phong viết/trang trọng",
-      "body_vi": "문어체 (mun-eo-che, 'văn phong ngôn ngữ viết') được dùng trong văn bản trang trọng — bài báo khoa học, bài báo tin tức, văn bản pháp lý và văn học. Đuôi động từ là -다 (dạng nguyên thể thường): 가다, 먹는다, 했다. Nó nghe thiếu tự nhiên trong hội thoại nói nhưng xuất hiện khắp nơi trong tiếng Hàn viết. Người học gặp điều này khi đọc văn bản tiếng Hàn và có thể thắc mắc vì sao nó khác với những gì được dạy — đó là vì sách giáo khoa dạy các ngữ vực nói, còn việc đọc đòi hỏi nhận ra 문어체.",
+      "body_vi": "문어체 (mun-eo-che, 'văn phong ngôn ngữ viết') được dùng trong văn bản trang trọng — bài báo khoa học, bài báo tin tức, văn bản pháp lý và văn học. Đuôi động từ là -다 (thể trần thuật thường: -ㄴ다/-는다 với động từ): 간다, 먹는다, 했다. Nó nghe thiếu tự nhiên trong hội thoại nói nhưng xuất hiện khắp nơi trong tiếng Hàn viết. Người học gặp điều này khi đọc văn bản tiếng Hàn và có thể thắc mắc vì sao nó khác với những gì được dạy — đó là vì sách giáo khoa dạy các ngữ vực nói, còn việc đọc đòi hỏi nhận ra 문어체.",
       "tip_vi": {
         "label": "문어체 và 합쇼체",
         "text": "Cả hai đều trang trọng, nhưng 합쇼체 dành cho lời nói (người nói tới người nghe) và 문어체 dành cho văn viết (không có người nghe cụ thể). Một người dẫn bản tin nói bằng 합쇼체. Một bài báo ở dạng 문어체. Trong K-drama, bạn sẽ nghe 문어체 khi nhân vật đọc to từ sách hoặc thư."
@@ -1272,63 +1047,22 @@
       "id": 30,
       "stage": 4,
       "type": "match_quiz",
-      "prompt": "감사합니다 is the ___ form of 'thank you'",
-      "prompt_zh_tw": "감사합니다是「謝謝」的___形式",
+      "prompt": "You are thanking your company's CEO at a formal dinner. Which form do you use?",
+      "prompt_zh_tw": "你在正式餐會上向公司執行長道謝。你會用哪個形式？",
       "choices": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
+        "고마워",
+        "감사해요",
+        "감사합니다",
+        "고맙다"
       ],
-      "choices_zh_tw": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
-      "correct": "합쇼체",
-      "prompt_es": "감사합니다 es la forma ___ de \"gracias\"",
-      "choices_es": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
-      "prompt_fr": "감사합니다 est la forme ___ de « merci »",
-      "choices_fr": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
-      "prompt_de": "감사합니다 ist die ___ Form von „Danke\"",
-      "choices_de": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
-      "prompt_th": "감사합니다 เป็นรูป ___ ของ \"ขอบคุณ\"",
-      "choices_th": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
-      "prompt_id": "감사합니다 adalah bentuk ___ dari 'terima kasih'",
-      "choices_id": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
-      "prompt_vi": "감사합니다 là dạng ___ của 'cảm ơn'",
-      "choices_vi": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ]
+      "correct": "감사합니다",
+      "prompt_es": "Le das las gracias al director general de tu empresa en una cena formal. ¿Qué forma usas?",
+      "prompt_fr": "Vous remerciez le PDG de votre entreprise lors d’un dîner officiel. Quelle forme utilisez-vous ?",
+      "prompt_de": "Du bedankst dich bei der Geschäftsführerin deines Unternehmens bei einem formellen Abendessen. Welche Form verwendest du?",
+      "prompt_th": "คุณกล่าวขอบคุณซีอีโอของบริษัทในงานเลี้ยงอาหารค่ำอย่างเป็นทางการ คุณใช้รูปใด?",
+      "prompt_id": "Anda berterima kasih kepada CEO perusahaan Anda dalam jamuan makan malam resmi. Bentuk mana yang Anda gunakan?",
+      "prompt_vi": "Bạn cảm ơn tổng giám đốc công ty trong một bữa tối trang trọng. Bạn dùng dạng nào?",
+      "prompt_ja": "会社の社長に公式な会食の場でお礼を言います。どの形を使いますか。"
     },
     {
       "id": 31,
@@ -1342,55 +1076,13 @@
         "합쇼체",
         "문어체"
       ],
-      "choices_zh_tw": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
       "correct": "합쇼체",
       "prompt_es": "En una entrevista de trabajo en Corea, ¿qué nivel de habla deberías usar?",
-      "choices_es": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
       "prompt_fr": "Dans un entretien d'embauche en Corée, quel niveau de langage devriez-vous utiliser ?",
-      "choices_fr": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
       "prompt_de": "Bei einem Vorstellungsgespräch in Korea: Welche Sprachebene solltest du verwenden?",
-      "choices_de": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
       "prompt_th": "ในการสัมภาษณ์งานในเกาหลี ควรใช้ระดับความสุภาพไหน?",
-      "choices_th": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
       "prompt_id": "Dalam wawancara kerja di Korea, tingkat bahasa mana yang harus Anda gunakan?",
-      "choices_id": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
       "prompt_vi": "Trong một buổi phỏng vấn xin việc ở Hàn Quốc, bạn nên dùng cấp độ kính ngữ nào?",
-      "choices_vi": [
-        "반말",
-        "해요체",
-        "합쇼체",
-        "문어체"
-      ],
       "prompt_ja": "韓国の就職面接では、どの語体を使うべきでしょう。"
     },
     {

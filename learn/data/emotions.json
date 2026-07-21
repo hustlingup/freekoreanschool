@@ -71,7 +71,7 @@
       "title": "Emotions in Korean (감정)",
       "title_zh_tw": "韓語情緒詞彙（감정）",
       "title_kr": "감정",
-      "body": "Korean emotion words are mostly adjectives in their base form. Unlike English ('I am happy'), Korean adjectives act like verbs and conjugate directly: 행복해요 (I am happy / It's good) without needing a separate 'am'. The dictionary form ends in -다: 행복하다, 슬프다, 무섭다. Drop -다 and add -아요/-어요 for the polite present tense. Emotion vocabulary is especially useful for talking about K-dramas, daily life, and personal feelings.",
+      "body": "Korean emotion words are mostly adjectives in their base form. Unlike English ('I am happy'), Korean adjectives act like verbs and conjugate directly: 행복해요 (I am happy) without needing a separate 'am'. The dictionary form ends in -다: 행복하다, 슬프다, 무섭다. Drop -다 and add -아요/-어요 for the polite present tense. Emotion vocabulary is especially useful for talking about K-dramas, daily life, and personal feelings.",
       "body_zh_tw": "韓語的情緒詞在其基本形式中大多是形容詞。不像英語（「I am happy」），韓語形容詞像動詞一樣直接變位：행복해요（我很幸福／很開心），不需要單獨的「am/is/are」。字典形以-다結尾：행복하다、슬프다、무섭다。去掉-다再加-아요/-어요即為禮貌現在時。情緒詞彙在談論韓劇、日常生活和個人感受時特別有用。",
       "tip": {
         "icon": "💡",
@@ -227,56 +227,14 @@
         "행복하다",
         "화가 나다"
       ],
-      "choices_zh_tw": [
-        "슬프다",
-        "무섭다",
-        "행복하다",
-        "화가 나다"
-      ],
       "correct": "행복하다",
       "prompt_es": "¿Qué palabra significa \"ser feliz\"?",
-      "choices_es": [
-        "슬프다",
-        "무섭다",
-        "행복하다",
-        "화가 나다"
-      ],
       "prompt_fr": "Quel mot signifie « être heureux » ?",
-      "choices_fr": [
-        "슬프다",
-        "무섭다",
-        "행복하다",
-        "화가 나다"
-      ],
       "prompt_de": "Welches Wort bedeutet „glücklich sein\"?",
-      "choices_de": [
-        "슬프다",
-        "무섭다",
-        "행복하다",
-        "화가 나다"
-      ],
       "prompt_th": "คำใดหมายถึง \"มีความสุข\"?",
-      "choices_th": [
-        "슬프다",
-        "무섭다",
-        "행복하다",
-        "화가 나다"
-      ],
       "prompt_id": "Kata mana yang berarti 'bahagia'?",
-      "choices_id": [
-        "슬프다",
-        "무섭다",
-        "행복하다",
-        "화가 나다"
-      ],
       "prompt_vi": "Từ nào có nghĩa là 'hạnh phúc'?",
-      "choices_vi": [
-        "슬프다",
-        "무섭다",
-        "행복하다",
-        "화가 나다"
-      ],
-      "prompt_ja": "「うれしい」を意味する語はどれでしょう。"
+      "prompt_ja": "「幸せだ」を意味する語はどれでしょう。"
     },
     {
       "id": 7,
@@ -285,8 +243,8 @@
       "title": "Conjugating Emotion Adjectives",
       "title_zh_tw": "情緒形容詞的變位",
       "title_kr": "감정 형용사 활용",
-      "body": "To use emotion adjectives in polite conversation, remove -다 from the dictionary form and add the polite present ending. For stems ending in 하: 하다 → 해요 (행복하다 → 행복해요). For stems ending in a bright vowel (ㅏ, ㅗ): add -아요. For all others: add -어요, often contracted — 슬프다 → 슬프 + 어요 → 슬퍼요, 무섭다 → 무서워요. The same pattern applies to most Korean descriptive verbs (adjectives).",
-      "body_zh_tw": "要在禮貌對話中使用情緒形容詞，去掉字典形的-다，再加禮貌現在時語尾。詞幹以하結尾的：하다→해요（행복하다→행복해요）。詞幹最後母音為亮母音（ㅏ、ㅗ）的：加-아요。其他情況：加-어요，通常縮約——슬프다→슬프+어요→슬퍼요，무섭다→무서워요。同樣的規律適用於大多數韓語描述性動詞（形容詞）。",
+      "body": "To use emotion adjectives in polite conversation, remove -다 from the dictionary form and add the polite present ending. For stems ending in 하: 하다 → 해요 (행복하다 → 행복해요). For stems ending in a bright vowel (ㅏ, ㅗ): add -아요. For all others: add -어요, usually with a vowel change — 슬프다 drops its ㅡ: 슬프 + 어요 → 슬퍼요. Stems ending in ㅂ are irregular: the ㅂ turns into 우, so 무섭다 → 무서우 + 어요 → 무서워요 (likewise 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). The same pattern applies to most Korean descriptive verbs (adjectives).",
+      "body_zh_tw": "要在禮貌對話中使用情緒形容詞，去掉字典形的-다，再加禮貌現在時語尾。詞幹以하結尾的：하다→해요（행복하다→행복해요）。詞幹最後母音為亮母音（ㅏ、ㅗ）的：加-아요。其他情況：加-어요，通常伴隨母音變化——슬프다脫落ㅡ：슬프+어요→슬퍼요。詞幹以ㅂ結尾的屬於ㅂ不規則：ㅂ變成우，所以무섭다→무서우+어요→무서워요（同理외롭다→외로워요、부끄럽다→부끄러워요）。同樣的規律適用於大多數韓語描述性動詞（形容詞）。",
       "tip": {
         "icon": "🔤",
         "label": "Quick conjugation chart",
@@ -296,25 +254,25 @@
         "label": "快速變位表",
         "text": "행복하다→행복해요。슬프다→슬퍼요。화나다→화나요。무섭다→무서워요。피곤하다→피곤해요。기쁘다→기뻐요。注意슬프다在-어요前省略了으。"
       },
-      "body_ja": "感情形容詞を丁寧な会話で使うには、辞書形から-다を取り除き、丁寧な現在形語尾を付けます。語幹が하で終わる場合：하다 → 해요（행복하다 → 행복해요）。語幹の最後の母音が明るい母音（ㅏ・ㅗ）の場合：-아요を付けます。その他の場合：-어요を付けますが、多くは縮約されます——슬프다 → 슬프 + 어요 → 슬퍼요、무섭다 → 무서워요。同じパターンがほとんどの韓国語の記述動詞（形容詞）に適用されます。",
+      "body_ja": "感情形容詞を丁寧な会話で使うには、辞書形から-다を取り除き、丁寧な現在形語尾を付けます。語幹が하で終わる場合：하다 → 해요（행복하다 → 행복해요）。語幹の最後の母音が明るい母音（ㅏ・ㅗ）の場合：-아요を付けます。その他の場合：-어요を付けますが、多くは母音が変化します——슬프다は語幹のㅡが脱落し、슬프 + 어요 → 슬퍼요。語幹がㅂで終わる語はㅂ不規則で、ㅂが우に変わります。したがって무섭다 → 무서우 + 어요 → 무서워요（同様に외롭다 → 외로워요、부끄럽다 → 부끄러워요）。同じパターンがほとんどの韓国語の記述動詞（形容詞）に適用されます。",
       "tip_ja": {
         "label": "活用早見表",
         "text": "행복하다 → 행복해요。슬프다 → 슬퍼요。화나다 → 화나요。무섭다 → 무서워요。피곤하다 → 피곤해요。기쁘다 → 기뻐요。슬프다は-어요の前に으が脱落することに注意。"
       },
       "title_es": "Conjugando Adjetivos de Emoción",
-      "body_es": "Para usar adjetivos de emoción en una conversación educada, elimina -다 de la forma de diccionario y añade el final educado del presente. Para raíces terminadas en 하: 하다 → 해요 (행복하다 → 행복해요). Para raíces con vocal brillante (ㅏ, ㅗ): añade -아요. Para los demás: añade -어요, a menudo contraído — 슬프다 → 슬프 + 어요 → 슬퍼요, 무섭다 → 무서워요. El mismo patrón se aplica a la mayoría de los verbos descriptivos coreanos (adjetivos).",
+      "body_es": "Para usar adjetivos de emoción en una conversación educada, elimina -다 de la forma de diccionario y añade el final educado del presente. Para raíces terminadas en 하: 하다 → 해요 (행복하다 → 행복해요). Para raíces con vocal brillante (ㅏ, ㅗ): añade -아요. Para los demás: añade -어요, normalmente con un cambio vocálico — 슬프다 pierde su ㅡ: 슬프 + 어요 → 슬퍼요. Las raíces terminadas en ㅂ son irregulares: la ㅂ se convierte en 우, así que 무섭다 → 무서우 + 어요 → 무서워요 (igualmente 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). El mismo patrón se aplica a la mayoría de los verbos descriptivos coreanos (adjetivos).",
       "tip_es": {
         "label": "Tabla de conjugación rápida",
         "text": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Observa que 슬프다 pierde la 으 antes de -어요."
       },
       "title_fr": "Conjuguer les Adjectifs d'Émotion",
-      "body_fr": "Pour utiliser les adjectifs d'émotion dans une conversation polie, retirez -다 de la forme du dictionnaire et ajoutez la terminaison polie du présent. Pour les radicaux se terminant par 하 : 하다 → 해요 (행복하다 → 행복해요). Pour les radicaux dont la dernière voyelle est une voyelle claire (ㅏ, ㅗ) : ajoutez -아요. Pour tous les autres : ajoutez -어요, souvent contracté — 슬프다 → 슬프 + 어요 → 슬퍼요, 무섭다 → 무서워요. Le même modèle s'applique à la plupart des verbes descriptifs coréens (adjectifs).",
+      "body_fr": "Pour utiliser les adjectifs d'émotion dans une conversation polie, retirez -다 de la forme du dictionnaire et ajoutez la terminaison polie du présent. Pour les radicaux se terminant par 하 : 하다 → 해요 (행복하다 → 행복해요). Pour les radicaux dont la dernière voyelle est une voyelle claire (ㅏ, ㅗ) : ajoutez -아요. Pour tous les autres : ajoutez -어요, généralement avec un changement de voyelle — 슬프다 perd son ㅡ : 슬프 + 어요 → 슬퍼요. Les radicaux terminés par ㅂ sont irréguliers : le ㅂ devient 우, donc 무섭다 → 무서우 + 어요 → 무서워요 (de même 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). Le même modèle s'applique à la plupart des verbes descriptifs coréens (adjectifs).",
       "tip_fr": {
         "label": "Tableau de conjugaison rapide",
         "text": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Notez que 슬프다 perd le 으 avant -어요."
       },
       "title_de": "Emotions-Adjektive konjugieren",
-      "body_de": "Um Emotions-Adjektive in höflicher Konversation zu verwenden, entferne -다 von der Wörterbuchform und füge die höfliche Gegenwartsendung hinzu. Für Stämme, die auf 하 enden: 하다 → 해요 (행복하다 → 행복해요). Für Stämme, die auf einem hellen Vokal (ㅏ, ㅗ) enden: füge -아요 an. Für alle anderen: füge -어요 an, oft kontrahiert — 슬프다 → 슬프 + 어요 → 슬퍼요, 무섭다 → 무서워요. Dasselbe Muster gilt für die meisten koreanischen Beschreibungsverben (Adjektive).",
+      "body_de": "Um Emotions-Adjektive in höflicher Konversation zu verwenden, entferne -다 von der Wörterbuchform und füge die höfliche Gegenwartsendung hinzu. Für Stämme, die auf 하 enden: 하다 → 해요 (행복하다 → 행복해요). Für Stämme, die auf einem hellen Vokal (ㅏ, ㅗ) enden: füge -아요 an. Für alle anderen: füge -어요 an, meist mit einer Vokaländerung — 슬프다 verliert sein ㅡ: 슬프 + 어요 → 슬퍼요. Stämme, die auf ㅂ enden, sind unregelmäßig: das ㅂ wird zu 우, also 무섭다 → 무서우 + 어요 → 무서워요 (ebenso 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). Dasselbe Muster gilt für die meisten koreanischen Beschreibungsverben (Adjektive).",
       "tip_de": {
         "label": "Schnelle Konjugationstabelle",
         "text": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Beachte: 슬프다 lässt das 으 vor -어요 weg."
@@ -326,13 +284,13 @@
         "text": "행복하다 → 행복해요 슬프다 → 슬퍼요 화나다 → 화나요 무섭다 → 무서워요 피곤하다 → 피곤해요 기쁘다 → 기뻐요 โปรดสังเกตว่า 슬프다 → 슬퍼요 (ㅡ หายไป) และ 무섭다 → 무서워요 (ผิดปกติ)"
       },
       "title_id": "Mengonjugasikan Kata Sifat Emosi",
-      "body_id": "Untuk menggunakan kata sifat emosi dalam percakapan sopan, hilangkan -다 dari bentuk kamus dan tambahkan akhiran sekarang yang sopan. Untuk akar kata berakhiran 하: 하다 → 해요 (행복하다 → 행복해요). Untuk akar kata berakhiran vokal terang (ㅏ, ㅗ): tambahkan -아요. Untuk yang lainnya: tambahkan -어요, sering disingkat — 슬프다 → 슬프 + 어요 → 슬퍼요, 무섭다 → 무서워요. Pola yang sama berlaku untuk sebagian besar kata kerja deskriptif Korea (kata sifat).",
+      "body_id": "Untuk menggunakan kata sifat emosi dalam percakapan sopan, hilangkan -다 dari bentuk kamus dan tambahkan akhiran sekarang yang sopan. Untuk akar kata berakhiran 하: 하다 → 해요 (행복하다 → 행복해요). Untuk akar kata berakhiran vokal terang (ㅏ, ㅗ): tambahkan -아요. Untuk yang lainnya: tambahkan -어요, biasanya disertai perubahan vokal — 슬프다 kehilangan ㅡ: 슬프 + 어요 → 슬퍼요. Akar kata yang berakhiran ㅂ bersifat tidak beraturan: ㅂ berubah menjadi 우, sehingga 무섭다 → 무서우 + 어요 → 무서워요 (begitu juga 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). Pola yang sama berlaku untuk sebagian besar kata kerja deskriptif Korea (kata sifat).",
       "tip_id": {
         "label": "Tabel konjugasi cepat",
         "text": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Perhatikan bahwa 슬프다 menghilangkan 으 sebelum -어요."
       },
       "title_vi": "Chia tính từ cảm xúc",
-      "body_vi": "Để dùng tính từ cảm xúc trong hội thoại lịch sự, bỏ -다 khỏi dạng nguyên thể và thêm đuôi hiện tại lịch sự. Với gốc kết thúc bằng 하: 하다 → 해요 (행복하다 → 행복해요). Với gốc kết thúc bằng nguyên âm sáng (ㅏ, ㅗ): thêm -아요. Với các trường hợp khác: thêm -어요, thường được rút gọn — 슬프다 → 슬프 + 어요 → 슬퍼요, 무섭다 → 무서워요. Cùng mẫu này áp dụng cho hầu hết động từ miêu tả (tính từ) tiếng Hàn.",
+      "body_vi": "Để dùng tính từ cảm xúc trong hội thoại lịch sự, bỏ -다 khỏi dạng nguyên thể và thêm đuôi hiện tại lịch sự. Với gốc kết thúc bằng 하: 하다 → 해요 (행복하다 → 행복해요). Với gốc kết thúc bằng nguyên âm sáng (ㅏ, ㅗ): thêm -아요. Với các trường hợp khác: thêm -어요, thường kèm biến đổi nguyên âm — 슬프다 lược bỏ ㅡ: 슬프 + 어요 → 슬퍼요. Gốc kết thúc bằng ㅂ là bất quy tắc: ㅂ chuyển thành 우, nên 무섭다 → 무서우 + 어요 → 무서워요 (tương tự 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). Cùng mẫu này áp dụng cho hầu hết động từ miêu tả (tính từ) tiếng Hàn.",
       "tip_vi": {
         "label": "Bảng chia nhanh",
         "text": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Lưu ý 슬프다 bỏ 으 trước -어요."
@@ -546,55 +504,13 @@
         "피곤하다",
         "걱정되다"
       ],
-      "choices_zh_tw": [
-        "기쁘다",
-        "신나다",
-        "피곤하다",
-        "걱정되다"
-      ],
       "correct": "피곤하다",
       "prompt_es": "¿Qué palabra significa \"estar cansado\"?",
-      "choices_es": [
-        "기쁘다",
-        "신나다",
-        "피곤하다",
-        "걱정되다"
-      ],
       "prompt_fr": "Quel mot signifie « être fatigué » ?",
-      "choices_fr": [
-        "기쁘다",
-        "신나다",
-        "피곤하다",
-        "걱정되다"
-      ],
       "prompt_de": "Welches Wort bedeutet „müde sein\"?",
-      "choices_de": [
-        "기쁘다",
-        "신나다",
-        "피곤하다",
-        "걱정되다"
-      ],
       "prompt_th": "คำใดหมายถึง \"เหนื่อย\"?",
-      "choices_th": [
-        "기쁘다",
-        "신나다",
-        "피곤하다",
-        "걱정되다"
-      ],
       "prompt_id": "Kata mana yang berarti 'lelah'?",
-      "choices_id": [
-        "기쁘다",
-        "신나다",
-        "피곤하다",
-        "걱정되다"
-      ],
       "prompt_vi": "Từ nào có nghĩa là 'mệt'?",
-      "choices_vi": [
-        "기쁘다",
-        "신나다",
-        "피곤하다",
-        "걱정되다"
-      ],
       "prompt_ja": "「疲れている」を意味する語はどれでしょう。"
     },
     {
@@ -604,7 +520,7 @@
       "title": "기분 — Mood & Feeling",
       "title_zh_tw": "기분——心情與感受",
       "title_kr": "기분",
-      "body": "기분 (gibun) is the key word for describing your mood or general feeling state. 기분이 좋다 (gibuneul jota) = to feel good / to be in a good mood. 기분이 나쁘다 = to feel bad / to be in a bad mood. 기분 can describe emotional tone more broadly than single-emotion words — it's about your overall state. You'll hear 기분이 어때요? (How are you feeling?) in everyday conversation.",
+      "body": "기분 (gibun) is the key word for describing your mood or general feeling state. 기분이 좋다 (gibuni jota) = to feel good / to be in a good mood. 기분이 나쁘다 = to feel bad / to be in a bad mood. 기분 can describe emotional tone more broadly than single-emotion words — it's about your overall state. You'll hear 기분이 어때요? (How are you feeling?) in everyday conversation.",
       "body_zh_tw": "기분（gibun）是描述你的心情或一般感受狀態的關鍵詞。기분이 좋다 = 感覺良好／心情好。기분이 나쁘다 = 感覺不好／心情差。기분比單一情緒詞更廣泛地描述情感基調——它關乎你的整體狀態。你會在日常對話中聽到기분이 어때요?（你感覺怎麼樣？）。",
       "tip": {
         "icon": "😊",
@@ -645,7 +561,7 @@
         "text": "기분 = อารมณ์ สภาวะความรู้สึกทั่วไป (เปลี่ยนได้ตามบริบท) 감정 = อารมณ์ความรู้สึก (เฉพาะเจาะจงกว่า เช่น ความโกรธ ความสุข)"
       },
       "title_id": "기분 — Suasana Hati & Perasaan",
-      "body_id": "기분 (gibun) adalah kata kunci untuk menggambarkan suasana hati atau keadaan perasaan umum Anda. 기분이 좋다 (gibuneul jota) = merasa senang / suasana hati baik. 기분이 나쁘다 = merasa tidak enak / suasana hati buruk. 기분 dapat menggambarkan nada emosional secara lebih luas daripada kata emosi tunggal — ini tentang keadaan keseluruhan Anda. Anda akan mendengar 기분이 어때요? (Bagaimana perasaan Anda?) dalam percakapan sehari-hari.",
+      "body_id": "기분 (gibun) adalah kata kunci untuk menggambarkan suasana hati atau keadaan perasaan umum Anda. 기분이 좋다 (gibuni jota) = merasa senang / suasana hati baik. 기분이 나쁘다 = merasa tidak enak / suasana hati buruk. 기분 dapat menggambarkan nada emosional secara lebih luas daripada kata emosi tunggal — ini tentang keadaan keseluruhan Anda. Anda akan mendengar 기분이 어때요? (Bagaimana perasaan Anda?) dalam percakapan sehari-hari.",
       "tip_id": {
         "label": "기분 vs 감정",
         "text": "기분 = suasana hati, keadaan perasaan umum (kontekstual, bisa berubah). 감정 = emosi (perasaan yang lebih spesifik seperti marah, senang, takut). 기분이 좋아요 = Saya merasa senang sekarang. 감정을 표현하다 = mengungkapkan emosi."
@@ -702,6 +618,7 @@
         "我很疲倦"
       ],
       "correct": "I feel good",
+      "prompt_ja": "기분이 좋아요 の意味はどれでしょう。",
       "prompt_es": "기분이 좋아요 significa...",
       "choices_es": [
         "Me siento mal",
@@ -920,6 +837,7 @@
         "感到孤獨"
       ],
       "correct": "to miss someone (longing)",
+      "prompt_ja": "그립다 の意味はどれでしょう。",
       "prompt_es": "그립다 significa...",
       "choices_es": [
         "estar alegre",
@@ -930,7 +848,7 @@
       "prompt_fr": "그립다 signifie…",
       "choices_fr": [
         "être content",
-        "manquer à quelqu'un (nostalgie)",
+        "éprouver le manque de quelqu'un (nostalgie)",
         "être fatigué",
         "se sentir seul"
       ],
@@ -966,7 +884,7 @@
         "うれしい",
         "恋しい・会いたい",
         "疲れている",
-        "寂しい"
+        "孤独だ"
       ]
     },
     {
@@ -1010,6 +928,7 @@
         "思念某人"
       ],
       "correct": "to feel proud/fulfilled",
+      "prompt_ja": "뿌듯하다 の意味はどれでしょう。",
       "prompt_es": "뿌듯하다 significa...",
       "choices_es": [
         "estar avergonzado/a",
@@ -1022,7 +941,7 @@
         "être gêné",
         "se sentir fier/accompli",
         "se sentir seul",
-        "manquer à quelqu'un"
+        "éprouver le manque de quelqu'un"
       ],
       "prompt_de": "뿌듯하다 bedeutet…",
       "choices_de": [
@@ -1212,6 +1131,7 @@
         "我很孤獨"
       ],
       "correct": "I miss you / I want to see you",
+      "prompt_ja": "보고 싶어요 の意味はどれでしょう。",
       "prompt_es": "보고 싶어요 significa...",
       "choices_es": [
         "Estoy bien",
@@ -1258,7 +1178,7 @@
         "大丈夫です",
         "感動した",
         "会いたい",
-        "寂しい"
+        "孤独です"
       ]
     },
     {

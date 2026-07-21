@@ -479,8 +479,8 @@
       "id": 12,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "ㅋ (kh), ㄲ (kk), and ㄳ are all batchim in the same group. Which sound group are they in?",
-      "prompt_zh_tw": "ㅋ（kh）、ㄲ（kk）和ㄳ都是同一組的收音。它們屬於哪個音組？",
+      "prompt": "ㅋ, ㄲ, and ㄳ are all batchim in the same group. Which sound group are they in?",
+      "prompt_zh_tw": "ㅋ、ㄲ 和 ㄳ 都是同一組的收音。它們屬於哪個音組？",
       "choices": [
         "ㄴ-group (n)",
         "ㄱ-group (k)",
@@ -494,49 +494,49 @@
         "ㄷ組（t）"
       ],
       "correct": "ㄱ-group (k)",
-      "prompt_es": "ㅋ (kh), ㄲ (kk) y ㄳ son todos batchim del mismo grupo. ¿A qué grupo de sonido pertenecen?",
+      "prompt_es": "ㅋ, ㄲ y ㄳ son todos batchim del mismo grupo. ¿A qué grupo de sonido pertenecen?",
       "choices_es": [
         "Grupo ㄴ (n)",
         "Grupo ㄱ (k)",
         "Grupo ㅂ (p)",
         "Grupo ㄷ (t)"
       ],
-      "prompt_fr": "ㅋ (kh), ㄲ (kk) et ㄳ sont tous des batchim du même groupe. Dans quel groupe de sons sont-ils ?",
+      "prompt_fr": "ㅋ, ㄲ et ㄳ sont tous des batchim du même groupe. Dans quel groupe de sons sont-ils ?",
       "choices_fr": [
         "Groupe ㄴ (n)",
         "Groupe ㄱ (k)",
         "Groupe ㅂ (p)",
         "Groupe ㄷ (t)"
       ],
-      "prompt_de": "ㅋ (kh), ㄲ (kk) und ㄳ sind alle Batchim derselben Gruppe. In welcher Lautgruppe sind sie?",
+      "prompt_de": "ㅋ, ㄲ und ㄳ sind alle Batchim derselben Gruppe. In welcher Lautgruppe sind sie?",
       "choices_de": [
         "ㄴ-Gruppe (n)",
         "ㄱ-Gruppe (k)",
         "ㅂ-Gruppe (p)",
         "ㄷ-Gruppe (t)"
       ],
-      "prompt_th": "ㅋ (คห) ㄲ (คค) และ ㄳ ล้วนอยู่ในกลุ่มบัดชิมเดียวกัน กลุ่มเสียงใด?",
+      "prompt_th": "ㅋ ㄲ และ ㄳ ล้วนอยู่ในกลุ่มบัดชิมเดียวกัน กลุ่มเสียงใด?",
       "choices_th": [
         "กลุ่ม ㄴ (น)",
         "กลุ่ม ㄱ (ก)",
         "กลุ่ม ㅂ (ป)",
         "กลุ่ม ㄷ (ต)"
       ],
-      "prompt_id": "ㅋ (kh), ㄲ (kk), dan ㄳ semuanya adalah batchim dalam kelompok yang sama. Kelompok bunyi apakah mereka?",
+      "prompt_id": "ㅋ, ㄲ, dan ㄳ semuanya adalah batchim dalam kelompok yang sama. Kelompok bunyi apakah mereka?",
       "choices_id": [
         "Kelompok ㄴ (n)",
         "Kelompok ㄱ (k)",
         "Kelompok ㅂ (p)",
         "Kelompok ㄷ (t)"
       ],
-      "prompt_vi": "ㅋ (kh), ㄲ (kk) và ㄳ đều là batchim trong cùng một nhóm. Chúng thuộc nhóm âm nào?",
+      "prompt_vi": "ㅋ, ㄲ và ㄳ đều là batchim trong cùng một nhóm. Chúng thuộc nhóm âm nào?",
       "choices_vi": [
         "Nhóm ㄴ (n)",
         "Nhóm ㄱ (k)",
         "Nhóm ㅂ (p)",
         "Nhóm ㄷ (t)"
       ],
-      "prompt_ja": "ㅋ（kh）、ㄲ（kk）、ㄳ はいずれも同じグループのパッチムです。どの音のグループでしょう。",
+      "prompt_ja": "ㅋ、ㄲ、ㄳ はいずれも同じグループのパッチムです。どの音のグループでしょう。",
       "choices_ja": [
         "ㄴ グループ（n）",
         "ㄱ グループ（k）",
@@ -605,6 +605,7 @@
         "n",
         "m"
       ],
+      "prompt_ja": "방（部屋）はパッチム ㅇ で終わります。これはどの音になりますか。",
       "choices_ja": [
         "無音 — ㅇ は常に発音されない",
         "ng（「sing」のような音）",
@@ -880,6 +881,7 @@
         "Chỉ ㄴ hoặc ㅁ",
         "Một phụ âm bật hơi"
       ],
+      "prompt_ja": "연음화（連音化）は、パッチムの後にどのような音節が続くときに起こりますか。",
       "choices_ja": [
         "どの子音でも",
         "無音の ㅇ（母音で始まる音節）",
@@ -891,63 +893,22 @@
       "id": 21,
       "stage": 2,
       "type": "match_quiz",
-      "prompt": "In 한국어 (Korean language), the ㄱ batchim of 국 links forward. How is it pronounced?",
-      "prompt_zh_tw": "在한국어（韓語）中，국的ㄱ收音向前連接。它如何發音？",
+      "prompt": "한국어 (the Korean language) — how is it actually pronounced?",
+      "prompt_zh_tw": "한국어（韓語）——它實際上如何發音？",
       "choices": [
-        "한국어 → 항궈 (stays in 국)",
-        "한국어 → 한구거 (ㄱ opens 어)",
-        "한국어 → 한국어 (no change)",
-        "한국어 → 한국아 (vowel changes)"
+        "한구거",
+        "한국어",
+        "한구어",
+        "항구거"
       ],
-      "choices_zh_tw": [
-        "한국어→항궈（留在국中）",
-        "한국어→한구거（ㄱ開啟어）",
-        "한국어→한국어（不變）",
-        "한국어→한국아（母音改變）"
-      ],
-      "correct": "한국어 → 한구거 (ㄱ opens 어)",
-      "prompt_es": "En 한국어 (idioma coreano), el batchim ㄱ de 국 se enlaza hacia adelante. ¿Cómo se pronuncia?",
-      "choices_es": [
-        "한국어 → 항궈 (se queda en 국)",
-        "한국어 → 한구거 (ㄱ abre 어)",
-        "한국어 → 한국어 (sin cambio)",
-        "한국어 → 한국아 (la vocal cambia)"
-      ],
-      "prompt_fr": "Dans 한국어 (langue coréenne), le batchim ㄱ de 국 se lie en avant. Comment se prononce-t-il ?",
-      "choices_fr": [
-        "한국어 → 항궈 (reste dans 국)",
-        "한국어 → 한구거 (ㄱ ouvre 어)",
-        "한국어 → 한국어 (sans changement)",
-        "한국어 → 한국아 (la voyelle change)"
-      ],
-      "prompt_de": "In 한국어 (Koreanische Sprache) rückt das ㄱ-Batchim von 국 vor. Wie wird es ausgesprochen?",
-      "choices_de": [
-        "한국어 → 항궈 (bleibt in 국)",
-        "한국어 → 한구거 (ㄱ eröffnet 어)",
-        "한국어 → 한국어 (keine Änderung)",
-        "한국어 → 한국아 (Vokal ändert sich)"
-      ],
-      "prompt_th": "ใน 한국어 (ภาษาเกาหลี) บัดชิม ㄱ ของ 국 เชื่อมไปข้างหน้า ออกเสียงอย่างไร?",
-      "choices_th": [
-        "한국어 → 항궈 (ยังอยู่ใน 국)",
-        "한국어 → 한구거 (ㄱ เปิด 어)",
-        "한국어 → 한국어 (ไม่เปลี่ยน)",
-        "한국어 → 한국아 (สระเปลี่ยน)"
-      ],
-      "prompt_id": "한국어 (bahasa Korea) — batchim ㄱ dari 국 menyambung ke depan. Bagaimana pelafalannya?",
-      "choices_id": [
-        "한국어 → 항궈 (tetap di 국)",
-        "한국어 → 한구거 (ㄱ membuka 어)",
-        "한국어 → 한국어 (tidak berubah)",
-        "한국어 → 한국아 (vokal berubah)"
-      ],
-      "prompt_vi": "Trong 한국어 (tiếng Hàn), batchim ㄱ của 국 nối lên trước. Nó được phát âm như thế nào?",
-      "choices_vi": [
-        "한국어 → 항궈 (giữ ở 국)",
-        "한국어 → 한구거 (ㄱ mở 어)",
-        "한국어 → 한국어 (không đổi)",
-        "한국어 → 한국아 (nguyên âm đổi)"
-      ]
+      "correct": "한구거",
+      "prompt_es": "한국어 (idioma coreano) — ¿cómo se pronuncia realmente?",
+      "prompt_fr": "한국어 (langue coréenne) — comment se prononce-t-il vraiment ?",
+      "prompt_de": "한국어 (koreanische Sprache) — wie wird es tatsächlich ausgesprochen?",
+      "prompt_th": "한국어 (ภาษาเกาหลี) — ออกเสียงอย่างไรจริงๆ?",
+      "prompt_id": "한국어 (bahasa Korea) — bagaimana sebenarnya cara melafalkannya?",
+      "prompt_vi": "한국어 (tiếng Hàn) — thực tế được phát âm như thế nào?",
+      "prompt_ja": "한국어（韓国語）は実際にはどのように発音しますか。"
     },
     {
       "id": 22,
@@ -1166,64 +1127,22 @@
       "id": 28,
       "stage": 3,
       "type": "match_quiz",
-      "prompt": "ㅂ (or ㅍ) batchim followed by ㄴ or ㅁ changes to which sound?",
-      "prompt_zh_tw": "ㅂ（或ㅍ）收音後面跟著ㄴ或ㅁ變成哪個音？",
+      "prompt": "밥만 (only rice) — how is it actually pronounced?",
+      "prompt_zh_tw": "밥만（只有飯）——它實際上如何發音？",
       "choices": [
-        "ㄴ",
-        "ㅁ",
-        "ㅇ",
-        "ㄱ"
+        "밤만",
+        "밥만",
+        "방만",
+        "반만"
       ],
-      "choices_zh_tw": [
-        "ㄴ",
-        "ㅁ",
-        "ㅇ",
-        "ㄱ"
-      ],
-      "correct": "ㅁ",
-      "prompt_es": "El batchim ㅂ (o ㅍ) seguido de ㄴ o ㅁ cambia a ¿qué sonido?",
-      "choices_es": [
-        "ㄴ",
-        "ㅁ",
-        "ㅇ",
-        "ㄱ"
-      ],
-      "prompt_fr": "Le batchim ㅂ (ou ㅍ) suivi de ㄴ ou ㅁ devient quel son ?",
-      "choices_fr": [
-        "ㄴ",
-        "ㅁ",
-        "ㅇ",
-        "ㄱ"
-      ],
-      "prompt_de": "ㅂ (oder ㅍ) Batchim, gefolgt von ㄴ oder ㅁ, wechselt zu welchem Laut?",
-      "choices_de": [
-        "ㄴ",
-        "ㅁ",
-        "ㅇ",
-        "ㄱ"
-      ],
-      "prompt_th": "บัดชิม ㅂ (หรือ ㅍ) ตามด้วย ㄴ หรือ ㅁ เปลี่ยนเป็นเสียงใด?",
-      "choices_th": [
-        "ㄴ",
-        "ㅁ",
-        "ㅇ",
-        "ㄱ"
-      ],
-      "prompt_id": "Batchim ㅂ (atau ㅍ) yang diikuti ㄴ atau ㅁ berubah menjadi bunyi apa?",
-      "choices_id": [
-        "ㄴ",
-        "ㅁ",
-        "ㅇ",
-        "ㄱ"
-      ],
-      "prompt_vi": "Batchim ㅂ (hoặc ㅍ) theo sau bởi ㄴ hoặc ㅁ chuyển thành âm nào?",
-      "choices_vi": [
-        "ㄴ",
-        "ㅁ",
-        "ㅇ",
-        "ㄱ"
-      ],
-      "prompt_ja": "ㅂ（または ㅍ）のパッチムの後に ㄴ や ㅁ が続くと、どの音に変わりますか。"
+      "correct": "밤만",
+      "prompt_es": "밥만 (solo arroz) — ¿cómo se pronuncia realmente?",
+      "prompt_fr": "밥만 (seulement du riz) — comment se prononce-t-il vraiment ?",
+      "prompt_de": "밥만 (nur Reis) — wie wird es tatsächlich ausgesprochen?",
+      "prompt_th": "밥만 (ข้าวเท่านั้น) — ออกเสียงอย่างไรจริงๆ?",
+      "prompt_id": "밥만 (hanya nasi) — bagaimana sebenarnya cara melafalkannya?",
+      "prompt_vi": "밥만 (chỉ cơm) — thực tế được phát âm như thế nào?",
+      "prompt_ja": "밥만（ご飯だけ）は実際にはどのように発音しますか。"
     },
     {
       "id": 29,
@@ -1237,55 +1156,13 @@
         "ㅇ (ng)",
         "ㅁ"
       ],
-      "choices_zh_tw": [
-        "ㄴ",
-        "ㄷ",
-        "ㅇ（ng）",
-        "ㅁ"
-      ],
       "correct": "ㅇ (ng)",
       "prompt_es": "El batchim ㄱ seguido de ㄴ o ㅁ cambia a ¿qué sonido?",
-      "choices_es": [
-        "ㄴ",
-        "ㄷ",
-        "ㅇ (ng)",
-        "ㅁ"
-      ],
       "prompt_fr": "Le batchim ㄱ suivi de ㄴ ou ㅁ devient quel son ?",
-      "choices_fr": [
-        "ㄴ",
-        "ㄷ",
-        "ㅇ (ng)",
-        "ㅁ"
-      ],
       "prompt_de": "ㄱ Batchim, gefolgt von ㄴ oder ㅁ, wechselt zu welchem Laut?",
-      "choices_de": [
-        "ㄴ",
-        "ㄷ",
-        "ㅇ (ng)",
-        "ㅁ"
-      ],
       "prompt_th": "บัดชิม ㄱ ตามด้วย ㄴ หรือ ㅁ เปลี่ยนเป็นเสียงใด?",
-      "choices_th": [
-        "ㄴ",
-        "ㄷ",
-        "ㅇ (ng)",
-        "ㅁ"
-      ],
       "prompt_id": "Batchim ㄱ yang diikuti ㄴ atau ㅁ berubah menjadi bunyi apa?",
-      "choices_id": [
-        "ㄴ",
-        "ㄷ",
-        "ㅇ (ng)",
-        "ㅁ"
-      ],
       "prompt_vi": "Batchim ㄱ theo sau bởi ㄴ hoặc ㅁ chuyển thành âm nào?",
-      "choices_vi": [
-        "ㄴ",
-        "ㄷ",
-        "ㅇ (ng)",
-        "ㅁ"
-      ],
       "prompt_ja": "ㄱ のパッチムの後に ㄴ や ㅁ が続くと、どの音に変わりますか。"
     },
     {
@@ -1348,7 +1225,8 @@
         "im-ni-da",
         "ib-ni-da",
         "ip-mi-da"
-      ]
+      ],
+      "prompt_ja": "입니다（です）は実際にはどのように発音しますか。"
     },
     {
       "id": 31,
@@ -1615,6 +1493,7 @@
         "Chỉ batchim ㄹ",
         "Bất kỳ batchim nào"
       ],
+      "prompt_ja": "경음화（濃音化）は、どの種類のパッチムの後で最も予測しやすく起こりますか。",
       "choices_ja": [
         "鼻音のパッチム（ㄴ・ㅁ・ㅇ）",
         "内破する閉鎖音のパッチム（ㄱ・ㄷ・ㅂ グループ）",
@@ -1683,6 +1562,7 @@
         "hak-kkyo (căng)",
         "ha-gyo"
       ],
+      "prompt_ja": "학교（学校）は実際にはどのように発音しますか。",
       "choices_ja": [
         "hak-gyo",
         "hak-kyo（激音）",
@@ -2133,55 +2013,14 @@
         "ㅊ",
         "ㅅ"
       ],
-      "choices_zh_tw": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "correct": "ㅈ",
       "prompt_es": "Cuando el batchim ㄷ es seguido por la vocal 이, cambia a…",
-      "choices_es": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_fr": "Quand le batchim ㄷ est suivi de la voyelle 이, il devient…",
-      "choices_fr": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_de": "Wenn ㄷ-Batchim von dem Vokal 이 gefolgt wird, wechselt es zu…",
-      "choices_de": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_th": "เมื่อบัดชิม ㄷ ตามด้วยสระ 이 มันเปลี่ยนเป็น…",
-      "choices_th": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_id": "Ketika batchim ㄷ diikuti oleh vokal 이, ia berubah menjadi…",
-      "choices_id": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_vi": "Khi batchim ㄷ được theo sau bởi nguyên âm 이, nó chuyển thành…",
-      "choices_vi": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ]
+      "prompt_ja": "ㄷ のパッチムの後に母音 이 が続くと、どの音に変わりますか。"
     },
     {
       "id": 50,
@@ -2195,55 +2034,14 @@
         "ㅊ",
         "ㅅ"
       ],
-      "choices_zh_tw": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "correct": "ㅊ",
       "prompt_es": "Cuando el batchim ㅌ es seguido por la vocal 이, cambia a…",
-      "choices_es": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_fr": "Quand le batchim ㅌ est suivi de la voyelle 이, il devient…",
-      "choices_fr": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_de": "Wenn ㅌ-Batchim von dem Vokal 이 gefolgt wird, wechselt es zu…",
-      "choices_de": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_th": "เมื่อบัดชิม ㅌ ตามด้วยสระ 이 มันเปลี่ยนเป็น…",
-      "choices_th": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_id": "Ketika batchim ㅌ diikuti oleh vokal 이, ia berubah menjadi…",
-      "choices_id": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ],
       "prompt_vi": "Khi batchim ㅌ được theo sau bởi nguyên âm 이, nó chuyển thành…",
-      "choices_vi": [
-        "ㄴ",
-        "ㅈ",
-        "ㅊ",
-        "ㅅ"
-      ]
+      "prompt_ja": "ㅌ のパッチムの後に母音 이 が続くと、どの音に変わりますか。"
     },
     {
       "id": 51,
@@ -2510,7 +2308,8 @@
         "sin-la",
         "sil-la",
         "shi-ra"
-      ]
+      ],
+      "prompt_ja": "신라（新羅、朝鮮半島の古代王国）はどのように発音しますか。"
     },
     {
       "id": 58,
@@ -3062,6 +2861,7 @@
         "'z' như trong 'zero'",
         "'t' như trong 'tea'"
       ],
+      "prompt_ja": "母音 이 の前の ㅅ はどのように聞こえますか。",
       "choices_ja": [
         "「see」のような平音の s",
         "「she」のような sh",
@@ -3129,7 +2929,8 @@
         "jo-a-yo",
         "joh-a-yo",
         "jo-ha"
-      ]
+      ],
+      "prompt_ja": "좋아요（良いです／好きです）は実際にはどのように発音しますか。"
     },
     {
       "id": 68,

@@ -1,8 +1,26 @@
-# Vocabulary quiz standard
+# Lesson quiz standard
 
 Written 2026-07-21 after an audit found 48 of 78 `match_quiz` steps in
-`learn/data/vocabulary*.json` were pedagogically broken. This is the spec every
-fix follows, so 22 files stay consistent with each other.
+`learn/data/vocabulary*.json` were pedagogically broken, then extended the same
+day to the nine core lessons (`grammar`, `hangul`, `pronunciation`,
+`syllable-blocks`, `nouns`, `pronouns`, `speech-levels`, `shopping`,
+`emotions`), which were worse. **Applies to every `match_quiz` in
+`learn/data/`** — all 31 files, 193 quizzes.
+
+## The checker is necessary, not sufficient
+
+`scripts/audit-vocab-quizzes.cjs` catches mechanical faults. It does NOT catch:
+
+- prompts phrased "X is best described as…" or "X means…" — `wantsKorean()`
+  does not fire, so a form question with English options passes
+- a *distractor* whose gloss gives the answer away (only the correct option is
+  leak-checked)
+- distractors that are eliminable without knowing any Korean
+- a quiz that merely restates a reading card shown two steps earlier
+- a rule taught in a card that no quiz tests
+
+Every one of those was found by an agent reading a file the checker had passed.
+**Read the quizzes.** A green audit is a floor.
 
 ## The data shape
 
@@ -38,6 +56,11 @@ English or localized options make this untestable: the question becomes
 - **Delete `choices_<lang>` entirely.** Korean is Korean in every locale;
   a localized copy of a Hangul array is noise and drifts.
 - Only `prompt_<lang>` is translated.
+
+"Korean" means Korean *only*. Bare jamo (`ㄱ`, `ㅏ`) count, and so does a
+romanization tag (`ㅇ (ng)`). But `ㅌ (aspirated t)` or `ㄱ-group (k)` carries
+real prose and DOES need `choices_<lang>`. The checker draws the line at a run
+of 3+ Latin letters.
 
 **2. Comprehension — "what does 〈Korean〉 mean?"**
 Options are meanings, and SHOULD be localized. This is a legitimate item.

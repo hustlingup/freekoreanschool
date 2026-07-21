@@ -214,64 +214,22 @@
       "id": 6,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Which word means 'market' (traditional outdoor market)?",
-      "prompt_zh_tw": "哪個詞表示「市場」（傳統戶外市場）？",
+      "prompt": "It is 2 a.m. and you need a drink. Which word is the 24-hour shop on the corner?",
+      "prompt_zh_tw": "凌晨兩點你想買杯飲料。哪個詞是街角那家24小時營業的商店？",
       "choices": [
         "가게",
         "백화점",
         "시장",
         "편의점"
       ],
-      "choices_zh_tw": [
-        "가게",
-        "백화점",
-        "시장",
-        "편의점"
-      ],
-      "correct": "시장",
-      "prompt_es": "¿Qué palabra significa \"mercado\" (mercado tradicional al aire libre)?",
-      "choices_es": [
-        "가게",
-        "백화점",
-        "시장",
-        "편의점"
-      ],
-      "prompt_fr": "Quel mot signifie « marché » (marché traditionnel en plein air) ?",
-      "choices_fr": [
-        "가게",
-        "백화점",
-        "시장",
-        "편의점"
-      ],
-      "prompt_de": "Welches Wort bedeutet „Markt\" (traditioneller Freiluftmarkt)?",
-      "choices_de": [
-        "가게",
-        "백화점",
-        "시장",
-        "편의점"
-      ],
-      "prompt_th": "คำใดหมายถึง \"ตลาด\" (ตลาดกลางแจ้งแบบดั้งเดิม)?",
-      "choices_th": [
-        "가게",
-        "백화점",
-        "시장",
-        "편의점"
-      ],
-      "prompt_id": "Kata mana yang berarti 'pasar' (pasar tradisional terbuka)?",
-      "choices_id": [
-        "가게",
-        "백화점",
-        "시장",
-        "편의점"
-      ],
-      "prompt_vi": "Từ nào có nghĩa là 'chợ' (chợ truyền thống ngoài trời)?",
-      "choices_vi": [
-        "가게",
-        "백화점",
-        "시장",
-        "편의점"
-      ],
-      "prompt_ja": "「市場」（伝統的な露天市場）を意味する語はどれでしょう。"
+      "correct": "편의점",
+      "prompt_es": "Son las 2 de la madrugada y quieres una bebida. ¿Qué palabra es la tienda de 24 horas de la esquina?",
+      "prompt_fr": "Il est 2 h du matin et vous voulez une boisson. Quel mot désigne le magasin ouvert 24h/24 au coin de la rue ?",
+      "prompt_de": "Es ist 2 Uhr nachts und du willst etwas zu trinken. Welches Wort bezeichnet den rund um die Uhr geöffneten Laden an der Ecke?",
+      "prompt_th": "ตอนตีสองคุณอยากได้เครื่องดื่มสักแก้ว คำใดหมายถึงร้านที่เปิด 24 ชั่วโมงตรงหัวมุมถนน?",
+      "prompt_id": "Pukul 2 dini hari dan Anda ingin minuman. Kata mana yang berarti toko 24 jam di sudut jalan?",
+      "prompt_vi": "Hai giờ sáng và bạn muốn mua đồ uống. Từ nào chỉ cửa hàng mở 24 giờ ở góc phố?",
+      "prompt_ja": "深夜2時に飲み物が欲しくなりました。街角にある24時間営業の店を指す語はどれでしょう。"
     },
     {
       "id": 7,
@@ -280,8 +238,8 @@
       "title": "Shopping Item Words (쇼핑 물건)",
       "title_zh_tw": "購物物品詞彙（쇼핑 물건）",
       "title_kr": "쇼핑 물건",
-      "body": "Korean uses many loanwords for modern products — 핸드폰 (cell phone), 노트북 (laptop), 티셔츠 (T-shirt). Native Korean and Sino-Korean words cover traditional items: 옷 (clothes), 신발 (shoes), 가방 (bag). When shopping, you'll often point to something and say 이거 (this one) — a simple and effective strategy. Sizes are often given in free-size (프리 사이즈), small (S), medium (M), and large (L/XL).",
-      "body_zh_tw": "韓語對現代產品使用許多外來語——핸드폰（手機）、노트북（筆記型電腦）、티셔츠（T恤）。固有韓語和漢字韓語涵蓋傳統物品：옷（衣服）、신발（鞋子）、가방（包）。購物時，你經常會指著某樣東西說이거（這個）——這是一個簡單有效的策略。尺寸通常以free-size（프리 사이즈）、S、M和L/XL表示。",
+      "body": "Korean uses many loanwords for modern products — 핸드폰 (cell phone), 노트북 (laptop), 티셔츠 (T-shirt). Native Korean and Sino-Korean words cover traditional items: 옷 (clothes), 신발 (shoes), 가방 (bag). When shopping, you'll often point to something and say 이거 (this one) — a simple and effective strategy. Korean has three of these pointing words: 이거 (this one, near you), 그거 (that one, near the person you are talking to) and 저거 (that one over there, away from you both). Sizes are often given in free-size (프리 사이즈), small (S), medium (M), and large (L/XL).",
+      "body_zh_tw": "韓語對現代產品使用許多外來語——핸드폰（手機）、노트북（筆記型電腦）、티셔츠（T恤）。固有韓語和漢字韓語涵蓋傳統物品：옷（衣服）、신발（鞋子）、가방（包）。購物時，你經常會指著某樣東西說이거（這個）——這是一個簡單有效的策略。指示物品的詞有三個：이거（離自己近的「這個」）、그거（離對方近的「那個」）、저거（離雙方都遠的「那個」）。尺寸通常以free-size（프리 사이즈）、S、M和L/XL表示。",
       "tip": {
         "icon": "👕",
         "label": "이거 주세요 — your shopping lifeline",
@@ -291,43 +249,43 @@
         "label": "이거 주세요——你的購物救命句",
         "text": "이거 주세요（這個，請）＋얼마예요?（多少錢？）這兩句話，即使你幾乎不懂其他韓語，也能應付大多數韓國購物場景。指著商品說這兩句話，就搞定了。"
       },
-      "body_ja": "韓国語は現代の商品に多くの借用語を使います——핸드폰（携帯電話）、노트북（ノートパソコン）、티셔츠（Tシャツ）。伝統的な品物にはネイティブ韓国語や漢語系語彙が使われます：옷（服）、신발（靴）、가방（バッグ）。買い物では、何かを指さして 이거（これ）と言うのが簡単で効果的な方法です。サイズはフリーサイズ（프리 사이즈）、スモール（S）、ミディアム（M）、ラージ（L/XL）で表示されることが多いです。",
+      "body_ja": "韓国語は現代の商品に多くの借用語を使います——핸드폰（携帯電話）、노트북（ノートパソコン）、티셔츠（Tシャツ）。伝統的な品物にはネイティブ韓国語や漢語系語彙が使われます：옷（服）、신발（靴）、가방（バッグ）。買い物では、何かを指さして 이거（これ）と言うのが簡単で効果的な方法です。指し示す語は三つあります：이거（自分の近くにあるもの）、그거（相手の近くにあるもの）、저거（どちらからも離れたもの）。サイズはフリーサイズ（프리 사이즈）、スモール（S）、ミディアム（M）、ラージ（L/XL）で表示されることが多いです。",
       "tip_ja": {
         "label": "いごじゅせよ——買い物の合言葉",
         "text": "いご 주세요（이거 주세요：これをください）＋ 얼마예요?（いくらですか?）があれば、韓国の買い物シーンのほとんどを乗り切れます。指差してこの2フレーズを言えばOKです。"
       },
       "title_es": "Palabras de Artículos de Compra (쇼핑 물건)",
-      "body_es": "El coreano usa muchos préstamos lingüísticos para productos modernos — 핸드폰 (móvil), 노트북 (portátil), 티셔츠 (camiseta). Las palabras nativas coreanas y sino-coreanas cubren los artículos tradicionales: 옷 (ropa), 신발 (zapatos), 가방 (bolso). Al comprar, a menudo señalarás algo y dirás 이거 (este) — una estrategia simple y eficaz. Las tallas suelen darse en talla única (프리 사이즈), pequeña (S), mediana (M) y grande (L/XL).",
+      "body_es": "El coreano usa muchos préstamos lingüísticos para productos modernos — 핸드폰 (móvil), 노트북 (portátil), 티셔츠 (camiseta). Las palabras nativas coreanas y sino-coreanas cubren los artículos tradicionales: 옷 (ropa), 신발 (zapatos), 가방 (bolso). Al comprar, a menudo señalarás algo y dirás 이거 (este) — una estrategia simple y eficaz. El coreano tiene tres palabras para señalar: 이거 (este, cerca de ti), 그거 (ese, cerca de tu interlocutor) y 저거 (aquel, lejos de ambos). Las tallas suelen darse en talla única (프리 사이즈), pequeña (S), mediana (M) y grande (L/XL).",
       "tip_es": {
         "label": "이거 주세요 — tu salvavidas de compras",
         "text": "이거 주세요 (Por favor dame esto) + 얼마예요? (¿Cuánto cuesta?) te sacarán de la mayoría de situaciones de compra coreanas incluso si sabes poco más. Señala y di estas dos frases, y ya estás."
       },
       "title_fr": "Articles de Shopping (쇼핑 물건)",
-      "body_fr": "Le coréen utilise de nombreux mots empruntés pour les produits modernes — 핸드폰 (téléphone portable), 노트북 (ordinateur portable), 티셔츠 (t-shirt). Les mots coréens natifs et sino-coréens couvrent les articles traditionnels : 옷 (vêtements), 신발 (chaussures), 가방 (sac). Lors du shopping, vous pointez souvent quelque chose et dites 이거 (celui-ci) — une stratégie simple et efficace. Les tailles sont souvent indiquées en taille unique (프리 사이즈), petite (S), moyenne (M) et grande (L/XL).",
+      "body_fr": "Le coréen utilise de nombreux mots empruntés pour les produits modernes — 핸드폰 (téléphone portable), 노트북 (ordinateur portable), 티셔츠 (t-shirt). Les mots coréens natifs et sino-coréens couvrent les articles traditionnels : 옷 (vêtements), 신발 (chaussures), 가방 (sac). Lors du shopping, vous pointez souvent quelque chose et dites 이거 (celui-ci) — une stratégie simple et efficace. Le coréen possède trois mots pour désigner un objet : 이거 (celui-ci, près de vous), 그거 (celui-là, près de votre interlocuteur) et 저거 (celui là-bas, loin de vous deux). Les tailles sont souvent indiquées en taille unique (프리 사이즈), petite (S), moyenne (M) et grande (L/XL).",
       "tip_fr": {
         "label": "이거 주세요 — votre bouée de sauvetage",
         "text": "이거 주세요 (Je prends celui-ci, s'il vous plaît) + 얼마예요 ? (Combien ça coûte ?) vous permettront de vous en sortir dans la plupart des situations d'achat coréen, même si vous ne savez pas grand-chose d'autre. Pointez, dites ces deux phrases, et c'est réglé."
       },
       "title_de": "Einkaufsartikel (쇼핑 물건)",
-      "body_de": "Das Koreanische verwendet viele Lehnwörter für moderne Produkte — 핸드폰 (Handy), 노트북 (Laptop), 티셔츠 (T-Shirt). Native koreanische und sino-koreanische Wörter decken traditionelle Artikel ab: 옷 (Kleidung), 신발 (Schuhe), 가방 (Tasche). Beim Einkaufen zeigst du oft auf etwas und sagst 이거 (das hier) — eine einfache und wirkungsvolle Strategie. Größen werden häufig als Free-Size (프리 사이즈), Small (S), Medium (M) und Large (L/XL) angegeben.",
+      "body_de": "Das Koreanische verwendet viele Lehnwörter für moderne Produkte — 핸드폰 (Handy), 노트북 (Laptop), 티셔츠 (T-Shirt). Native koreanische und sino-koreanische Wörter decken traditionelle Artikel ab: 옷 (Kleidung), 신발 (Schuhe), 가방 (Tasche). Beim Einkaufen zeigst du oft auf etwas und sagst 이거 (das hier) — eine einfache und wirkungsvolle Strategie. Es gibt drei solcher Zeigewörter: 이거 (das hier, in deiner Nähe), 그거 (das da, beim Gesprächspartner) und 저거 (das dort drüben, von euch beiden entfernt). Größen werden häufig als Free-Size (프리 사이즈), Small (S), Medium (M) und Large (L/XL) angegeben.",
       "tip_de": {
         "label": "이거 주세요 — dein Einkaufs-Lebensretter",
         "text": "이거 주세요 (Ich nehme das bitte) + 얼마예요? (Wie viel kostet es?) bringt dich durch die meisten koreanischen Einkaufssituationen, auch wenn du sonst wenig Koreanisch kannst. Zeig hin, sag diese zwei Sätze — fertig."
       },
       "title_th": "คำศัพท์สินค้า (쇼핑 물건)",
-      "body_th": "ภาษาเกาหลีใช้คำยืมจำนวนมากสำหรับสินค้าสมัยใหม่ — 핸드폰 (โทรศัพท์มือถือ) 노트북 (แล็ปท็อป) 티셔츠 (เสื้อยืด) คำเกาหลีดั้งเดิมใช้สำหรับสินค้าพื้นฐาน เช่น 옷 (เสื้อผ้า) 신발 (รองเท้า)",
+      "body_th": "ภาษาเกาหลีใช้คำยืมจำนวนมากสำหรับสินค้าสมัยใหม่ — 핸드폰 (โทรศัพท์มือถือ) 노트북 (แล็ปท็อป) 티셔츠 (เสื้อยืด) คำเกาหลีดั้งเดิมใช้สำหรับสินค้าพื้นฐาน เช่น 옷 (เสื้อผ้า) 신발 (รองเท้า) ภาษาเกาหลีมีคำชี้สามคำ: 이거 (อันนี้ ใกล้ตัวคุณ) 그거 (อันนั้น ใกล้คู่สนทนา) และ 저거 (อันโน้น ไกลจากทั้งสองฝ่าย)",
       "tip_th": {
         "label": "이거 주세요 — ประโยคชีวิตรอดในการช้อปปิ้ง",
         "text": "이거 주세요 (ขอสิ่งนี้ด้วย) + 얼마예요? (ราคาเท่าไหร่?) จะพาคุณผ่านสถานการณ์การช้อปปิ้งส่วนใหญ่ได้"
       },
       "title_id": "Kosakata Barang Belanja (쇼핑 물건)",
-      "body_id": "Bahasa Korea menggunakan banyak kata pinjaman untuk produk modern — 핸드폰 (ponsel), 노트북 (laptop), 티셔츠 (kaos). Kata Korea asli dan Sino-Korea mencakup barang tradisional: 옷 (pakaian), 신발 (sepatu), 가방 (tas). Saat berbelanja, Anda akan sering menunjuk sesuatu dan berkata 이거 (yang ini) — strategi sederhana dan efektif. Ukuran sering diberikan dalam free-size (프리 사이즈), kecil (S), sedang (M), dan besar (L/XL).",
+      "body_id": "Bahasa Korea menggunakan banyak kata pinjaman untuk produk modern — 핸드폰 (ponsel), 노트북 (laptop), 티셔츠 (kaos). Kata Korea asli dan Sino-Korea mencakup barang tradisional: 옷 (pakaian), 신발 (sepatu), 가방 (tas). Saat berbelanja, Anda akan sering menunjuk sesuatu dan berkata 이거 (yang ini) — strategi sederhana dan efektif. Bahasa Korea punya tiga kata tunjuk seperti ini: 이거 (yang ini, dekat Anda), 그거 (yang itu, dekat lawan bicara), dan 저거 (yang di sana, jauh dari keduanya). Ukuran sering diberikan dalam free-size (프리 사이즈), kecil (S), sedang (M), dan besar (L/XL).",
       "tip_id": {
         "label": "이거 주세요 — penyelamat belanja Anda",
         "text": "이거 주세요 (Saya ambil yang ini) + 얼마예요? (Berapa harganya?) akan membawa Anda melewati sebagian besar situasi belanja Korea bahkan jika Anda tidak tahu banyak hal lain. Tunjuk, ucapkan dua frasa ini, dan selesai."
       },
       "title_vi": "Từ chỉ đồ vật khi mua sắm (쇼핑 물건)",
-      "body_vi": "Tiếng Hàn dùng nhiều từ mượn cho các sản phẩm hiện đại — 핸드폰 (điện thoại di động), 노트북 (laptop), 티셔츠 (áo thun). Từ thuần Hàn và Hán Hàn dùng cho các món truyền thống: 옷 (quần áo), 신발 (giày), 가방 (túi). Khi mua sắm, bạn sẽ thường chỉ vào một thứ và nói 이거 (cái này) — một chiến lược đơn giản mà hiệu quả. Kích cỡ thường được cho theo free-size (프리 사이즈), nhỏ (S), vừa (M) và lớn (L/XL).",
+      "body_vi": "Tiếng Hàn dùng nhiều từ mượn cho các sản phẩm hiện đại — 핸드폰 (điện thoại di động), 노트북 (laptop), 티셔츠 (áo thun). Từ thuần Hàn và Hán Hàn dùng cho các món truyền thống: 옷 (quần áo), 신발 (giày), 가방 (túi). Khi mua sắm, bạn sẽ thường chỉ vào một thứ và nói 이거 (cái này) — một chiến lược đơn giản mà hiệu quả. Tiếng Hàn có ba từ chỉ định như vậy: 이거 (cái này, gần bạn), 그거 (cái đó, gần người nghe) và 저거 (cái kia, xa cả hai). Kích cỡ thường được cho theo free-size (프리 사이즈), nhỏ (S), vừa (M) và lớn (L/XL).",
       "tip_vi": {
         "label": "이거 주세요 — cứu cánh khi mua sắm",
         "text": "이거 주세요 (Cho tôi lấy cái này) + 얼마예요? (Bao nhiêu tiền?) sẽ giúp bạn vượt qua hầu hết các tình huống mua sắm ở Hàn Quốc ngay cả khi bạn biết rất ít. Hãy chỉ, nói hai câu này, và bạn đã ổn."
@@ -515,64 +473,22 @@
       "id": 14,
       "stage": 2,
       "type": "match_quiz",
-      "prompt": "How do you ask 'How much is it?' in Korean?",
-      "prompt_zh_tw": "韓語中「多少錢？」怎麼說？",
+      "prompt": "The item is already in your hand and you have decided to buy it. Which do you say?",
+      "prompt_zh_tw": "商品已經拿在你手裡，你決定要買了。你會說哪一句？",
       "choices": [
         "이거 주세요",
-        "얼마예요?",
-        "감사합니다",
-        "있어요?"
+        "그거 주세요",
+        "저거 주세요",
+        "이거 얼마예요?"
       ],
-      "choices_zh_tw": [
-        "이거 주세요",
-        "얼마예요?",
-        "감사합니다",
-        "있어요?"
-      ],
-      "correct": "얼마예요?",
-      "prompt_es": "¿Cómo preguntas \"¿Cuánto cuesta?\" en coreano?",
-      "choices_es": [
-        "이거 주세요",
-        "얼마예요?",
-        "감사합니다",
-        "있어요?"
-      ],
-      "prompt_fr": "Comment demande-t-on « Combien ça coûte ? » en coréen ?",
-      "choices_fr": [
-        "이거 주세요",
-        "얼마예요?",
-        "감사합니다",
-        "있어요?"
-      ],
-      "prompt_de": "Wie fragt man auf Koreanisch „Wie viel kostet es?\"?",
-      "choices_de": [
-        "이거 주세요",
-        "얼마예요?",
-        "감사합니다",
-        "있어요?"
-      ],
-      "prompt_th": "จะถามว่า \"ราคาเท่าไหร่?\" เป็นภาษาเกาหลีได้อย่างไร?",
-      "choices_th": [
-        "이거 주세요",
-        "얼마예요?",
-        "감사합니다",
-        "있어요?"
-      ],
-      "prompt_id": "Bagaimana cara bertanya 'Berapa harganya?' dalam bahasa Korea?",
-      "choices_id": [
-        "이거 주세요",
-        "얼마예요?",
-        "감사합니다",
-        "있어요?"
-      ],
-      "prompt_vi": "Hỏi 'Cái này bao nhiêu tiền?' bằng tiếng Hàn như thế nào?",
-      "choices_vi": [
-        "이거 주세요",
-        "얼마예요?",
-        "감사합니다",
-        "있어요?"
-      ],
-      "prompt_ja": "韓国語で「いくらですか」はどう尋ねますか。"
+      "correct": "이거 주세요",
+      "prompt_es": "Ya tienes el artículo en la mano y has decidido comprarlo. ¿Qué dices?",
+      "prompt_fr": "L'article est déjà dans votre main et vous avez décidé de l'acheter. Que dites-vous ?",
+      "prompt_de": "Der Artikel liegt schon in deiner Hand und du hast dich entschieden, ihn zu kaufen. Was sagst du?",
+      "prompt_th": "สินค้าอยู่ในมือคุณแล้วและคุณตัดสินใจจะซื้อ คุณจะพูดว่าอย่างไร?",
+      "prompt_id": "Barang itu sudah ada di tangan Anda dan Anda memutuskan untuk membelinya. Apa yang Anda katakan?",
+      "prompt_vi": "Món hàng đã nằm trong tay bạn và bạn quyết định mua nó. Bạn nói gì?",
+      "prompt_ja": "商品はすでに自分の手の中にあり、買うと決めました。どれと言いますか。"
     },
     {
       "id": 15,
@@ -682,69 +598,22 @@
       "id": 18,
       "stage": 2,
       "type": "match_quiz",
-      "prompt": "없어요 means…",
-      "prompt_zh_tw": "없어요的意思是…",
+      "prompt": "You ask for a bigger size. The clerk checks the back and comes back empty-handed. Which reply do you hear?",
+      "prompt_zh_tw": "你詢問有沒有大一號的尺寸。店員到後面找了一趟，空手回來。你會聽到哪一句回覆？",
       "choices": [
-        "We have it",
-        "How much?",
-        "There isn't any / We don't have it",
-        "Yes please"
+        "있어요",
+        "없어요",
+        "알겠어요",
+        "아니에요"
       ],
-      "choices_zh_tw": [
-        "我們有",
-        "多少錢？",
-        "沒有／我們沒有",
-        "好的，請"
-      ],
-      "correct": "There isn't any / We don't have it",
-      "prompt_es": "없어요 significa...",
-      "choices_es": [
-        "Lo tenemos",
-        "¿Cuánto cuesta?",
-        "No hay / No lo tenemos",
-        "Sí, por favor"
-      ],
-      "prompt_fr": "없어요 signifie…",
-      "choices_fr": [
-        "Nous en avons",
-        "Combien ?",
-        "Il n'y en a pas / Nous n'en avons pas",
-        "Oui, s'il vous plaît"
-      ],
-      "prompt_de": "없어요 bedeutet…",
-      "choices_de": [
-        "Wir haben es",
-        "Wie viel?",
-        "Es gibt keins / Wir haben es nicht",
-        "Ja bitte"
-      ],
-      "prompt_th": "없어요 หมายถึง...",
-      "choices_th": [
-        "เรามีอยู่",
-        "ราคาเท่าไหร่?",
-        "ไม่มีเลย / เราไม่มี",
-        "ได้เลยครับ/ค่ะ"
-      ],
-      "prompt_id": "없어요 berarti…",
-      "choices_id": [
-        "Kami punya",
-        "Berapa harganya?",
-        "Tidak ada / Kami tidak punya",
-        "Ya, boleh"
-      ],
-      "prompt_vi": "없어요 nghĩa là…",
-      "choices_vi": [
-        "Chúng tôi có",
-        "Bao nhiêu tiền?",
-        "Không có / Chúng tôi không có",
-        "Vâng, cho tôi"
-      ],
-      "choices_ja": [
-        "あります",
-        "いくらですか",
-        "ありません",
-        "お願いします"
-      ]
+      "correct": "없어요",
+      "prompt_es": "Pides una talla más grande. El dependiente va al almacén y vuelve con las manos vacías. ¿Qué respuesta escuchas?",
+      "prompt_fr": "Vous demandez une taille au-dessus. Le vendeur va vérifier en réserve et revient les mains vides. Quelle réponse entendez-vous ?",
+      "prompt_de": "Du fragst nach einer größeren Größe. Der Verkäufer schaut im Lager nach und kommt mit leeren Händen zurück. Welche Antwort hörst du?",
+      "prompt_th": "คุณถามหาไซซ์ที่ใหญ่ขึ้น พนักงานเข้าไปดูด้านหลังร้านแล้วกลับมามือเปล่า คุณจะได้ยินคำตอบใด?",
+      "prompt_id": "Anda meminta ukuran yang lebih besar. Pramuniaga mengecek ke gudang dan kembali dengan tangan kosong. Jawaban mana yang Anda dengar?",
+      "prompt_vi": "Bạn hỏi cỡ lớn hơn. Nhân viên vào trong kiểm tra rồi quay ra tay không. Bạn nghe câu trả lời nào?",
+      "prompt_ja": "大きいサイズはあるかと尋ねました。店員が奥を確認して手ぶらで戻ってきます。どの返事が聞こえるでしょう。"
     },
     {
       "id": 19,
@@ -894,69 +763,22 @@
       "id": 24,
       "stage": 3,
       "type": "match_quiz",
-      "prompt": "비싸다 means…",
-      "prompt_zh_tw": "비싸다的意思是…",
+      "prompt": "You turn over the price tag and it is far more than you expected. Which word says that out loud?",
+      "prompt_zh_tw": "你翻過價格標籤，發現比預期貴得多。你會用哪個詞把這個感受說出來？",
       "choices": [
-        "to be cheap",
-        "to be free",
-        "to be expensive",
-        "to be on sale"
+        "비싸요",
+        "싸요",
+        "좋아요",
+        "커요"
       ],
-      "choices_zh_tw": [
-        "便宜",
-        "免費",
-        "貴",
-        "打折"
-      ],
-      "correct": "to be expensive",
-      "prompt_es": "비싸다 significa...",
-      "choices_es": [
-        "ser barato",
-        "ser gratis",
-        "ser caro",
-        "estar en oferta"
-      ],
-      "prompt_fr": "비싸다 signifie…",
-      "choices_fr": [
-        "être bon marché",
-        "être gratuit",
-        "être cher",
-        "être en soldes"
-      ],
-      "prompt_de": "비싸다 bedeutet…",
-      "choices_de": [
-        "billig sein",
-        "kostenlos sein",
-        "teuer sein",
-        "im Angebot sein"
-      ],
-      "prompt_th": "비싸다 หมายถึง...",
-      "choices_th": [
-        "ถูก",
-        "ฟรี",
-        "แพง",
-        "กำลังลดราคา"
-      ],
-      "prompt_id": "비싸다 berarti…",
-      "choices_id": [
-        "murah",
-        "gratis",
-        "mahal",
-        "sedang diobral"
-      ],
-      "prompt_vi": "비싸다 nghĩa là…",
-      "choices_vi": [
-        "rẻ",
-        "miễn phí",
-        "đắt",
-        "đang giảm giá"
-      ],
-      "choices_ja": [
-        "安い",
-        "無料である",
-        "高い",
-        "セール中である"
-      ]
+      "correct": "비싸요",
+      "prompt_es": "Le das la vuelta a la etiqueta y el precio es mucho más alto de lo que esperabas. ¿Con qué palabra lo dices en voz alta?",
+      "prompt_fr": "Vous retournez l'étiquette : le prix est bien plus élevé que prévu. Quel mot le dit à voix haute ?",
+      "prompt_de": "Du drehst das Preisschild um — viel teurer als erwartet. Mit welchem Wort sagst du das laut?",
+      "prompt_th": "คุณพลิกดูป้ายราคาแล้วพบว่าสูงกว่าที่คิดไว้มาก คุณจะพูดออกมาด้วยคำใด?",
+      "prompt_id": "Anda membalik label harganya dan ternyata jauh lebih tinggi dari perkiraan. Dengan kata mana Anda mengatakannya?",
+      "prompt_vi": "Bạn lật bảng giá lên và thấy cao hơn nhiều so với dự tính. Bạn nói ra bằng từ nào?",
+      "prompt_ja": "値札を裏返すと、思っていたよりずっと高い値段でした。それを口に出すならどの語でしょう。"
     },
     {
       "id": 25,
@@ -985,64 +807,22 @@
       "id": 26,
       "stage": 3,
       "type": "match_quiz",
-      "prompt": "Which word means 'change' (money returned to you after paying)?",
-      "prompt_zh_tw": "哪個詞表示「零錢」（付款後找回你的錢）？",
+      "prompt": "You hand over 10,000원 for an item that costs 7,000원. What is the 3,000원 the cashier hands back called?",
+      "prompt_zh_tw": "你用10,000원支付一件7,000원的商品。收銀員找回的那3,000원叫什麼？",
       "choices": [
         "거스름돈",
-        "비싸다",
         "할인",
-        "원"
-      ],
-      "choices_zh_tw": [
-        "거스름돈",
-        "비싸다",
-        "할인",
-        "원"
+        "현금",
+        "영수증"
       ],
       "correct": "거스름돈",
-      "prompt_es": "¿Qué palabra significa \"cambio\" (dinero devuelto al pagar)?",
-      "choices_es": [
-        "거스름돈",
-        "비싸다",
-        "할인",
-        "원"
-      ],
-      "prompt_fr": "Quel mot signifie « monnaie » (argent rendu après paiement) ?",
-      "choices_fr": [
-        "거스름돈",
-        "비싸다",
-        "할인",
-        "원"
-      ],
-      "prompt_de": "Welches Wort bedeutet „Wechselgeld\" (Geld, das man nach dem Bezahlen zurückbekommt)?",
-      "choices_de": [
-        "거스름돈",
-        "비싸다",
-        "할인",
-        "원"
-      ],
-      "prompt_th": "คำใดหมายถึง \"เงินทอน\" (เงินที่ได้รับคืน)?",
-      "choices_th": [
-        "거스름돈",
-        "비싸다",
-        "할인",
-        "원"
-      ],
-      "prompt_id": "Kata mana yang berarti 'kembalian' (uang yang dikembalikan setelah membayar)?",
-      "choices_id": [
-        "거스름돈",
-        "비싸다",
-        "할인",
-        "원"
-      ],
-      "prompt_vi": "Từ nào có nghĩa là 'tiền thối' (tiền trả lại cho bạn sau khi thanh toán)?",
-      "choices_vi": [
-        "거스름돈",
-        "비싸다",
-        "할인",
-        "원"
-      ],
-      "prompt_ja": "「おつり」（支払い後に返ってくるお金）を意味する語はどれでしょう。"
+      "prompt_es": "Entregas 10.000원 por un artículo que cuesta 7.000원. ¿Cómo se llaman los 3.000원 que te devuelve el cajero?",
+      "prompt_fr": "Vous donnez 10 000원 pour un article à 7 000원. Comment appelle-t-on les 3 000원 que le caissier vous rend ?",
+      "prompt_de": "Du gibst 10.000원 für einen Artikel, der 7.000원 kostet. Wie heißen die 3.000원, die der Kassierer zurückgibt?",
+      "prompt_th": "คุณจ่าย 10,000원 สำหรับสินค้าราคา 7,000원 เงิน 3,000원 ที่พนักงานคืนให้เรียกว่าอะไร?",
+      "prompt_id": "Anda menyerahkan 10.000원 untuk barang seharga 7.000원. Apa sebutan untuk 3.000원 yang dikembalikan kasir?",
+      "prompt_vi": "Bạn đưa 10.000원 cho món hàng giá 7.000원. Số 3.000원 nhân viên trả lại được gọi là gì?",
+      "prompt_ja": "7,000원の商品に10,000원を出しました。店員が返してくれる3,000원は何と言うでしょう。"
     },
     {
       "id": 27,
@@ -1188,63 +968,21 @@
       "id": 31,
       "stage": 4,
       "type": "match_quiz",
-      "prompt": "How do you say 'I'll pay by card'?",
-      "prompt_zh_tw": "「我要刷卡」怎麼說？",
+      "prompt": "The cashier asks 카드요, 현금이요? You are reaching for your card. Which do you answer?",
+      "prompt_zh_tw": "收銀員問카드요, 현금이요?你正伸手拿信用卡。你會怎麼回答？",
       "choices": [
         "현금으로 드릴게요",
         "카드로 할게요",
         "거스름돈 주세요",
         "결제해 주세요"
       ],
-      "choices_zh_tw": [
-        "현금으로 드릴게요",
-        "카드로 할게요",
-        "거스름돈 주세요",
-        "결제해 주세요"
-      ],
       "correct": "카드로 할게요",
-      "prompt_es": "¿Cómo dices \"Pagaré con tarjeta\"?",
-      "choices_es": [
-        "현금으로 드릴게요",
-        "카드로 할게요",
-        "거스름돈 주세요",
-        "결제해 주세요"
-      ],
-      "prompt_fr": "Comment dit-on « Je vais payer par carte » ?",
-      "choices_fr": [
-        "현금으로 드릴게요",
-        "카드로 할게요",
-        "거스름돈 주세요",
-        "결제해 주세요"
-      ],
-      "prompt_de": "Wie sagt man „Ich zahle mit Karte\"?",
-      "choices_de": [
-        "현금으로 드릴게요",
-        "카드로 할게요",
-        "거스름돈 주세요",
-        "결제해 주세요"
-      ],
-      "prompt_th": "จะพูดว่า \"ฉันจะจ่ายด้วยบัตร\" อย่างไร?",
-      "choices_th": [
-        "현금으로 드릴게요",
-        "카드로 할게요",
-        "거스름돈 주세요",
-        "결제해 주세요"
-      ],
-      "prompt_id": "Bagaimana cara mengatakan 'Saya akan bayar dengan kartu'?",
-      "choices_id": [
-        "현금으로 드릴게요",
-        "카드로 할게요",
-        "거스름돈 주세요",
-        "결제해 주세요"
-      ],
-      "prompt_vi": "Nói 'Tôi sẽ thanh toán bằng thẻ' như thế nào?",
-      "choices_vi": [
-        "현금으로 드릴게요",
-        "카드로 할게요",
-        "거스름돈 주세요",
-        "결제해 주세요"
-      ],
+      "prompt_es": "El cajero pregunta 카드요, 현금이요? Estás sacando la tarjeta. ¿Qué respondes?",
+      "prompt_fr": "Le caissier demande 카드요, 현금이요 ? Vous sortez votre carte. Que répondez-vous ?",
+      "prompt_de": "Der Kassierer fragt 카드요, 현금이요? Du greifst gerade nach deiner Karte. Was antwortest du?",
+      "prompt_th": "พนักงานถามว่า 카드요, 현금이요? คุณกำลังหยิบบัตรออกมา คุณจะตอบว่าอย่างไร?",
+      "prompt_id": "Kasir bertanya 카드요, 현금이요? Anda sedang mengeluarkan kartu. Apa jawaban Anda?",
+      "prompt_vi": "Nhân viên hỏi 카드요, 현금이요? Bạn đang lấy thẻ ra. Bạn trả lời thế nào?",
       "prompt_ja": "「カードで払います」はどう言いますか。"
     },
     {

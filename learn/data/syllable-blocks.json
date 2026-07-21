@@ -415,8 +415,8 @@
       "id": 7,
       "stage": 1,
       "type": "match_quiz",
-      "prompt": "Every Korean syllable block contains exactly how many vowels?",
-      "prompt_zh_tw": "每個韓語音節方塊恰好包含幾個母音？",
+      "prompt": "How many vowels does a single Korean syllable block contain?",
+      "prompt_zh_tw": "每個韓語音節方塊裡有幾個母音？",
       "choices": [
         "Zero",
         "Exactly one",
@@ -430,49 +430,49 @@
         "需要多少就有多少"
       ],
       "correct": "Exactly one",
-      "prompt_es": "¿Exactamente cuántas vocales contiene cada bloque de sílaba coreano?",
+      "prompt_es": "¿Cuántas vocales contiene un solo bloque de sílaba coreano?",
       "choices_es": [
         "Cero",
         "Exactamente una",
         "Una o dos",
         "Las que se necesiten"
       ],
-      "prompt_fr": "Chaque bloc syllabique coréen contient exactement combien de voyelles ?",
+      "prompt_fr": "Combien de voyelles contient un seul bloc syllabique coréen ?",
       "choices_fr": [
         "Zéro",
         "Exactement une",
         "Une ou deux",
         "Autant que nécessaire"
       ],
-      "prompt_de": "Wie viele Vokale enthält jeder koreanische Silbenblock?",
+      "prompt_de": "Wie viele Vokale enthält ein einzelner koreanischer Silbenblock?",
       "choices_de": [
         "Null",
         "Genau einen",
         "Einen oder zwei",
         "So viele wie nötig"
       ],
-      "prompt_th": "บล็อกพยางค์เกาหลีทุกบล็อกมีสระกี่ตัว?",
+      "prompt_th": "บล็อกพยางค์เกาหลีหนึ่งบล็อกมีสระกี่ตัว?",
       "choices_th": [
         "ไม่มีเลย",
         "พอดีหนึ่งตัว",
         "หนึ่งหรือสองตัว",
         "เท่าที่ต้องการ"
       ],
-      "prompt_id": "Setiap blok suku kata Korea berisi tepat berapa vokal?",
+      "prompt_id": "Berapa banyak vokal yang terdapat dalam satu blok suku kata Korea?",
       "choices_id": [
         "Nol",
         "Tepat satu",
         "Satu atau dua",
         "Sebanyak yang dibutuhkan"
       ],
-      "prompt_vi": "Mỗi khối âm tiết tiếng Hàn chứa chính xác bao nhiêu nguyên âm?",
+      "prompt_vi": "Một khối âm tiết tiếng Hàn chứa bao nhiêu nguyên âm?",
       "choices_vi": [
         "Không có",
         "Đúng một",
         "Một hoặc hai",
         "Bao nhiêu tùy nhu cầu"
       ],
-      "prompt_ja": "韓国語の音節ブロックには、母音がちょうどいくつ含まれますか。",
+      "prompt_ja": "韓国語の音節ブロック一つに、母音はいくつ含まれますか。",
       "choices_ja": [
         "ゼロ",
         "ちょうど一つ",
@@ -485,14 +485,8 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "The INITIAL consonant position (first consonant) is called…",
-      "prompt_zh_tw": "초성（第一個子音）的位置叫做…",
+      "prompt_zh_tw": "音節方塊中第一個子音所在的位置叫做什麼？",
       "choices": [
-        "받침",
-        "중성",
-        "초성",
-        "모음"
-      ],
-      "choices_zh_tw": [
         "받침",
         "중성",
         "초성",
@@ -500,48 +494,12 @@
       ],
       "correct": "초성",
       "prompt_es": "La posición de la consonante INICIAL (primera consonante) se llama…",
-      "choices_es": [
-        "받침",
-        "중성",
-        "초성",
-        "모음"
-      ],
       "prompt_fr": "La position de la consonne INITIALE (première consonne) s'appelle…",
-      "choices_fr": [
-        "받침",
-        "중성",
-        "초성",
-        "모음"
-      ],
       "prompt_de": "Die ANFANGS-Konsonantenposition (erster Konsonant) heißt…",
-      "choices_de": [
-        "받침",
-        "중성",
-        "초성",
-        "모음"
-      ],
       "prompt_th": "ตำแหน่งพยัญชนะต้น (พยัญชนะตัวแรก) เรียกว่า…",
-      "choices_th": [
-        "받침",
-        "중성",
-        "초성",
-        "모음"
-      ],
       "prompt_id": "Posisi konsonan AWAL (konsonan pertama) disebut…",
-      "choices_id": [
-        "받침",
-        "중성",
-        "초성",
-        "모음"
-      ],
       "prompt_vi": "Vị trí phụ âm ĐẦU (phụ âm thứ nhất) được gọi là…",
-      "choices_vi": [
-        "받침",
-        "중성",
-        "초성",
-        "모음"
-      ],
-      "prompt_ja": "初声（最初の子音）の位置は何と呼ばれますか。"
+      "prompt_ja": "音節ブロックの最初の子音が入る位置は何と呼ばれますか。"
     },
     {
       "id": 9,
@@ -555,55 +513,13 @@
         "ㄹ",
         "ㅇ"
       ],
-      "choices_zh_tw": [
-        "ㄱ",
-        "ㄴ",
-        "ㄹ",
-        "ㅇ"
-      ],
       "correct": "ㅇ",
       "prompt_es": "Cuando una sílaba empieza con sonido de VOCAL, escribes __ como consonante inicial de marcador de posición.",
-      "choices_es": [
-        "ㄱ",
-        "ㄴ",
-        "ㄹ",
-        "ㅇ"
-      ],
       "prompt_fr": "Quand une syllabe commence par un son de VOYELLE, vous écrivez __ comme consonne initiale de remplacement.",
-      "choices_fr": [
-        "ㄱ",
-        "ㄴ",
-        "ㄹ",
-        "ㅇ"
-      ],
       "prompt_de": "Wenn eine Silbe mit einem VOKAL beginnt, schreibst du __ als Platzhalter-Anfangskonsonant.",
-      "choices_de": [
-        "ㄱ",
-        "ㄴ",
-        "ㄹ",
-        "ㅇ"
-      ],
       "prompt_th": "เมื่อพยางค์เริ่มต้นด้วยเสียงสระ ให้เขียน __ เป็นตัวแทนพยัญชนะต้น",
-      "choices_th": [
-        "ㄱ",
-        "ㄴ",
-        "ㄹ",
-        "ㅇ"
-      ],
       "prompt_id": "Ketika suku kata dimulai dengan bunyi VOKAL, Anda menulis __ sebagai konsonan awal penanda tempat.",
-      "choices_id": [
-        "ㄱ",
-        "ㄴ",
-        "ㄹ",
-        "ㅇ"
-      ],
       "prompt_vi": "Khi một âm tiết bắt đầu bằng âm NGUYÊN ÂM, bạn viết __ làm phụ âm đầu giữ chỗ.",
-      "choices_vi": [
-        "ㄱ",
-        "ㄴ",
-        "ㄹ",
-        "ㅇ"
-      ],
       "prompt_ja": "音節が母音の音で始まるとき、初声の位置にはプレースホルダーとして __ を書きます。"
     },
     {
@@ -757,6 +673,7 @@
         "VC (ㅇ câm + nguyên âm + phụ âm cuối)",
         "Chỉ V"
       ],
+      "prompt_ja": "안（内側／〜しない）——これはどの構造パターンですか。",
       "choices_ja": [
         "CV",
         "CVC",
@@ -1199,6 +1116,7 @@
         "Ghép rộng",
         "Câm"
       ],
+      "prompt_ja": "배（お腹／船）には ㅐ が含まれます——ㅐ はどのタイプの母音ですか。",
       "choices_ja": [
         "横長",
         "縦長",
@@ -1218,55 +1136,13 @@
         "ㅣ",
         "ㅜ"
       ],
-      "choices_zh_tw": [
-        "ㅏ",
-        "ㅓ",
-        "ㅣ",
-        "ㅜ"
-      ],
       "correct": "ㅜ",
       "prompt_es": "¿Cuál de estas es una vocal ANCHA (horizontal)?",
-      "choices_es": [
-        "ㅏ",
-        "ㅓ",
-        "ㅣ",
-        "ㅜ"
-      ],
       "prompt_fr": "Laquelle de ces voyelles est LARGE (horizontale) ?",
-      "choices_fr": [
-        "ㅏ",
-        "ㅓ",
-        "ㅣ",
-        "ㅜ"
-      ],
       "prompt_de": "Welcher dieser Vokale ist ein BREITER (waagerechter) Vokal?",
-      "choices_de": [
-        "ㅏ",
-        "ㅓ",
-        "ㅣ",
-        "ㅜ"
-      ],
       "prompt_th": "ตัวใดต่อไปนี้เป็นสระแนวนอนกว้าง?",
-      "choices_th": [
-        "ㅏ",
-        "ㅓ",
-        "ㅣ",
-        "ㅜ"
-      ],
       "prompt_id": "Manakah dari berikut ini yang merupakan vokal LEBAR (horizontal)?",
-      "choices_id": [
-        "ㅏ",
-        "ㅓ",
-        "ㅣ",
-        "ㅜ"
-      ],
       "prompt_vi": "Đâu là một nguyên âm RỘNG (ngang)?",
-      "choices_vi": [
-        "ㅏ",
-        "ㅓ",
-        "ㅣ",
-        "ㅜ"
-      ],
       "prompt_ja": "次のうち横長（水平）の母音はどれでしょう。"
     },
     {
@@ -1658,117 +1534,35 @@
         "ㄴ",
         "ㄱ"
       ],
-      "choices_zh_tw": [
-        "ㅏ",
-        "ㅂ",
-        "ㄴ",
-        "ㄱ"
-      ],
       "correct": "ㅂ",
       "prompt_es": "밥 (arroz) — ¿cuál es su 받침 (batchim)?",
-      "choices_es": [
-        "ㅏ",
-        "ㅂ",
-        "ㄴ",
-        "ㄱ"
-      ],
       "prompt_fr": "밥 (riz) — quel est son 받침 (batchim) ?",
-      "choices_fr": [
-        "ㅏ",
-        "ㅂ",
-        "ㄴ",
-        "ㄱ"
-      ],
       "prompt_de": "밥 (Reis) — was ist sein 받침 (Batchim)?",
-      "choices_de": [
-        "ㅏ",
-        "ㅂ",
-        "ㄴ",
-        "ㄱ"
-      ],
       "prompt_th": "밥 (ข้าว) — 받침 (บัดชิม) คืออะไร?",
-      "choices_th": [
-        "ㅏ",
-        "ㅂ",
-        "ㄴ",
-        "ㄱ"
-      ],
       "prompt_id": "밥 (nasi) — apa 받침 (batchim)-nya?",
-      "choices_id": [
-        "ㅏ",
-        "ㅂ",
-        "ㄴ",
-        "ㄱ"
-      ],
       "prompt_vi": "밥 (cơm) — 받침 (batchim) của nó là gì?",
-      "choices_vi": [
-        "ㅏ",
-        "ㅂ",
-        "ㄴ",
-        "ㄱ"
-      ]
+      "prompt_ja": "밥（ご飯）——この語の 받침（パッチム）は何ですか。"
     },
     {
       "id": 41,
       "stage": 4,
       "type": "match_quiz",
-      "prompt": "달 (moon) ends with which consonant sound?",
-      "prompt_zh_tw": "달（月亮）以哪個子音音收尾？",
+      "prompt": "Which block correctly combines ㅎ + ㅜ, with nothing added or dropped?",
+      "prompt_zh_tw": "以下哪個方塊正確地把 ㅎ + ㅜ 組合起來，沒有多加也沒有少寫？",
       "choices": [
-        "n",
-        "m",
-        "l/r",
-        "k"
+        "흐",
+        "우",
+        "후",
+        "훈"
       ],
-      "choices_zh_tw": [
-        "n",
-        "m",
-        "l/r",
-        "k"
-      ],
-      "correct": "l/r",
-      "prompt_es": "달 (luna) termina con qué sonido consonántico?",
-      "choices_es": [
-        "n",
-        "m",
-        "l/r",
-        "k"
-      ],
-      "prompt_fr": "달 (lune) se termine par quel son consonantique ?",
-      "choices_fr": [
-        "n",
-        "m",
-        "l/r",
-        "k"
-      ],
-      "prompt_de": "달 (Mond) endet mit welchem Konsonantenklang?",
-      "choices_de": [
-        "n",
-        "m",
-        "l/r",
-        "k"
-      ],
-      "prompt_th": "달 (ดวงจันทร์) ลงท้ายด้วยเสียงพยัญชนะใด?",
-      "choices_th": [
-        "n",
-        "m",
-        "l/r",
-        "k"
-      ],
-      "prompt_id": "달 (bulan) berakhir dengan bunyi konsonan apa?",
-      "choices_id": [
-        "n",
-        "m",
-        "l/r",
-        "k"
-      ],
-      "prompt_vi": "달 (mặt trăng) kết thúc bằng âm phụ âm nào?",
-      "choices_vi": [
-        "n",
-        "m",
-        "l/r",
-        "k"
-      ]
+      "correct": "후",
+      "prompt_es": "¿Cuál de estos bloques combina correctamente ㅎ + ㅜ, sin añadir ni quitar nada?",
+      "prompt_fr": "Lequel de ces blocs combine correctement ㅎ + ㅜ, sans rien ajouter ni omettre ?",
+      "prompt_de": "Welcher dieser Blöcke kombiniert ㅎ + ㅜ korrekt, ohne etwas hinzuzufügen oder wegzulassen?",
+      "prompt_th": "บล็อกใดต่อไปนี้รวม ㅎ + ㅜ ได้ถูกต้อง โดยไม่เพิ่มและไม่ขาดอะไร?",
+      "prompt_id": "Blok manakah yang menggabungkan ㅎ + ㅜ dengan benar, tanpa menambah atau menghilangkan apa pun?",
+      "prompt_vi": "Khối nào kết hợp đúng ㅎ + ㅜ, không thêm cũng không thiếu thành phần nào?",
+      "prompt_ja": "ㅎ + ㅜ を過不足なく正しく組み合わせたブロックはどれですか。"
     },
     {
       "id": 42,
@@ -1831,6 +1625,7 @@
         "Ở dưới cùng, bên dưới mọi thứ",
         "Bên cạnh phụ âm đầu"
       ],
+      "prompt_ja": "CVC音節ブロックでは、받침（パッチム）はどこに置かれますか。",
       "choices_ja": [
         "母音の上",
         "母音の右",
@@ -1850,55 +1645,14 @@
         "가",
         "봄"
       ],
-      "choices_zh_tw": [
-        "산",
-        "달",
-        "가",
-        "봄"
-      ],
       "correct": "가",
       "prompt_es": "¿Cuál de estas palabras NO tiene 받침?",
-      "choices_es": [
-        "산",
-        "달",
-        "가",
-        "봄"
-      ],
       "prompt_fr": "Lequel de ces mots n'a PAS de 받침 ?",
-      "choices_fr": [
-        "산",
-        "달",
-        "가",
-        "봄"
-      ],
       "prompt_de": "Welches dieser Wörter hat KEIN 받침?",
-      "choices_de": [
-        "산",
-        "달",
-        "가",
-        "봄"
-      ],
       "prompt_th": "คำใดต่อไปนี้ไม่มี 받침?",
-      "choices_th": [
-        "산",
-        "달",
-        "가",
-        "봄"
-      ],
       "prompt_id": "Manakah dari kata-kata berikut yang TIDAK memiliki 받침?",
-      "choices_id": [
-        "산",
-        "달",
-        "가",
-        "봄"
-      ],
       "prompt_vi": "Từ nào sau đây KHÔNG có 받침?",
-      "choices_vi": [
-        "산",
-        "달",
-        "가",
-        "봄"
-      ]
+      "prompt_ja": "次のうち받침がない語はどれですか。"
     },
     {
       "id": 44,
@@ -1912,55 +1666,14 @@
         "ㅁ",
         "ㄹ"
       ],
-      "choices_zh_tw": [
-        "ㄴ",
-        "ㄱ",
-        "ㅁ",
-        "ㄹ"
-      ],
       "correct": "ㅁ",
       "prompt_es": "봄 (primavera) = ㅂ + ㅗ + ? — ¿cuál es el batchim?",
-      "choices_es": [
-        "ㄴ",
-        "ㄱ",
-        "ㅁ",
-        "ㄹ"
-      ],
       "prompt_fr": "봄 (printemps) = ㅂ + ㅗ + ? — quel est le batchim ?",
-      "choices_fr": [
-        "ㄴ",
-        "ㄱ",
-        "ㅁ",
-        "ㄹ"
-      ],
       "prompt_de": "봄 (Frühling) = ㅂ + ㅗ + ? — was ist das Batchim?",
-      "choices_de": [
-        "ㄴ",
-        "ㄱ",
-        "ㅁ",
-        "ㄹ"
-      ],
       "prompt_th": "봄 (ฤดูใบไม้ผลิ) = ㅂ + ㅗ + ? — บัดชิมคืออะไร?",
-      "choices_th": [
-        "ㄴ",
-        "ㄱ",
-        "ㅁ",
-        "ㄹ"
-      ],
       "prompt_id": "봄 (musim semi) = ㅂ + ㅗ + ? — apa batchim-nya?",
-      "choices_id": [
-        "ㄴ",
-        "ㄱ",
-        "ㅁ",
-        "ㄹ"
-      ],
       "prompt_vi": "봄 (mùa xuân) = ㅂ + ㅗ + ? — batchim là gì?",
-      "choices_vi": [
-        "ㄴ",
-        "ㄱ",
-        "ㅁ",
-        "ㄹ"
-      ]
+      "prompt_ja": "봄（春）＝ ㅂ + ㅗ + ? ——받침は何ですか。"
     },
     {
       "id": 45,
@@ -2361,55 +2074,14 @@
         "ㅁ",
         "ㄱ"
       ],
-      "choices_zh_tw": [
-        "ㄴ",
-        "ㅏ",
-        "ㅁ",
-        "ㄱ"
-      ],
       "correct": "ㄴ",
       "prompt_es": "남 (sur) — ¿cuál es su 초성 (consonante inicial)?",
-      "choices_es": [
-        "ㄴ",
-        "ㅏ",
-        "ㅁ",
-        "ㄱ"
-      ],
       "prompt_fr": "남 (sud) — quel est son 초성 (consonne initiale) ?",
-      "choices_fr": [
-        "ㄴ",
-        "ㅏ",
-        "ㅁ",
-        "ㄱ"
-      ],
       "prompt_de": "남 (Süden) — was ist sein 초성 (Anfangskonsonant)?",
-      "choices_de": [
-        "ㄴ",
-        "ㅏ",
-        "ㅁ",
-        "ㄱ"
-      ],
       "prompt_th": "남 (ใต้) — 초성 (พยัญชนะต้น) คืออะไร?",
-      "choices_th": [
-        "ㄴ",
-        "ㅏ",
-        "ㅁ",
-        "ㄱ"
-      ],
       "prompt_id": "남 (selatan) — apa 초성 (konsonan awal)-nya?",
-      "choices_id": [
-        "ㄴ",
-        "ㅏ",
-        "ㅁ",
-        "ㄱ"
-      ],
       "prompt_vi": "남 (nam / phương nam) — 초성 (phụ âm đầu) của nó là gì?",
-      "choices_vi": [
-        "ㄴ",
-        "ㅏ",
-        "ㅁ",
-        "ㄱ"
-      ]
+      "prompt_ja": "남（南）——この語の 초성（初声）は何ですか。"
     },
     {
       "id": 59,
@@ -2423,55 +2095,14 @@
         "ㄹ",
         "ㄴ"
       ],
-      "choices_zh_tw": [
-        "ㄷ",
-        "ㅏ",
-        "ㄹ",
-        "ㄴ"
-      ],
       "correct": "ㄹ",
       "prompt_es": "달 (luna) — identifica el 받침 (batchim / consonante final).",
-      "choices_es": [
-        "ㄷ",
-        "ㅏ",
-        "ㄹ",
-        "ㄴ"
-      ],
       "prompt_fr": "달 (lune) — identifiez le 받침 (batchim / consonne finale).",
-      "choices_fr": [
-        "ㄷ",
-        "ㅏ",
-        "ㄹ",
-        "ㄴ"
-      ],
       "prompt_de": "달 (Mond) — identifiziere das 받침 (Batchim / Endkonsonant).",
-      "choices_de": [
-        "ㄷ",
-        "ㅏ",
-        "ㄹ",
-        "ㄴ"
-      ],
       "prompt_th": "달 (ดวงจันทร์) — ระบุ 받침 (บัดชิม / พยัญชนะสุดท้าย)",
-      "choices_th": [
-        "ㄷ",
-        "ㅏ",
-        "ㄹ",
-        "ㄴ"
-      ],
       "prompt_id": "달 (bulan) — identifikasi 받침 (batchim / konsonan akhir).",
-      "choices_id": [
-        "ㄷ",
-        "ㅏ",
-        "ㄹ",
-        "ㄴ"
-      ],
       "prompt_vi": "달 (mặt trăng) — xác định 받침 (batchim / phụ âm cuối).",
-      "choices_vi": [
-        "ㄷ",
-        "ㅏ",
-        "ㄹ",
-        "ㄴ"
-      ]
+      "prompt_ja": "달（月）——받침（終声）を選んでください。"
     },
     {
       "id": 60,
@@ -2485,55 +2116,14 @@
         "ㅍ + ㅗ + ㄴ",
         "ㅂ + ㅗ + ㄴ"
       ],
-      "choices_zh_tw": [
-        "ㅂ + ㅗ + ㅁ",
-        "ㅂ + ㅜ + ㄴ",
-        "ㅍ + ㅗ + ㄴ",
-        "ㅂ + ㅗ + ㄴ"
-      ],
       "correct": "ㅂ + ㅗ + ㅁ",
       "prompt_es": "봄 (primavera) — ¿cuáles son los tres componentes en orden?",
-      "choices_es": [
-        "ㅂ + ㅗ + ㅁ",
-        "ㅂ + ㅜ + ㄴ",
-        "ㅍ + ㅗ + ㄴ",
-        "ㅂ + ㅗ + ㄴ"
-      ],
       "prompt_fr": "봄 (printemps) — quels sont les trois composants dans l'ordre ?",
-      "choices_fr": [
-        "ㅂ + ㅗ + ㅁ",
-        "ㅂ + ㅜ + ㄴ",
-        "ㅍ + ㅗ + ㄴ",
-        "ㅂ + ㅗ + ㄴ"
-      ],
       "prompt_de": "봄 (Frühling) — was sind die drei Bestandteile in der richtigen Reihenfolge?",
-      "choices_de": [
-        "ㅂ + ㅗ + ㅁ",
-        "ㅂ + ㅜ + ㄴ",
-        "ㅍ + ㅗ + ㄴ",
-        "ㅂ + ㅗ + ㄴ"
-      ],
       "prompt_th": "봄 (ฤดูใบไม้ผลิ) — ส่วนประกอบทั้งสามตามลำดับคืออะไร?",
-      "choices_th": [
-        "ㅂ + ㅗ + ㅁ",
-        "ㅂ + ㅜ + ㄴ",
-        "ㅍ + ㅗ + ㄴ",
-        "ㅂ + ㅗ + ㄴ"
-      ],
       "prompt_id": "봄 (musim semi) — apa ketiga komponennya secara berurutan?",
-      "choices_id": [
-        "ㅂ + ㅗ + ㅁ",
-        "ㅂ + ㅜ + ㄴ",
-        "ㅍ + ㅗ + ㄴ",
-        "ㅂ + ㅗ + ㄴ"
-      ],
       "prompt_vi": "봄 (mùa xuân) — ba thành phần theo thứ tự là gì?",
-      "choices_vi": [
-        "ㅂ + ㅗ + ㅁ",
-        "ㅂ + ㅜ + ㄴ",
-        "ㅍ + ㅗ + ㄴ",
-        "ㅂ + ㅗ + ㄴ"
-      ]
+      "prompt_ja": "봄（春）——三つの構成要素を順番に並べたものはどれですか。"
     },
     {
       "id": 61,

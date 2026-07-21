@@ -13,11 +13,29 @@ const path = require('path');
 
 const DATA = path.join(__dirname, '..', 'learn', 'data');
 const LANGS = ['ja', 'zh_tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
-const HANGUL = /[가-힣]/;
+// Syllable blocks AND standalone jamo. The jamo range matters: the alphabet
+// lessons quiz bare ㄱ/ㅏ, which are not in the 가-힣 block, so a syllable-only
+// test made every one of those option sets invisible to this checker.
+const HANGUL = /[가-힣ㄱ-ㆎ]/;
 
 /** Strip parentheticals and punctuation so "to go" matches "To go." */
 const norm = s => String(s).replace(/\([^)]*\)/g, ' ')
   .replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+
+/**
+ * Does `prompt` actually give away `answer`?
+ *
+ * Substring matching alone is useless for short answers: the romanization
+ * answer "n" matches inside "romanizes", and a single jamo matches any prompt
+ * that happens to mention it. So for answers under 3 characters, require the
+ * answer to stand alone as its own token.
+ */
+function leaks(prompt, answer) {
+  const p = norm(prompt), a = norm(answer);
+  if (!p || !a) return false;
+  if (a.length >= 3) return p.includes(a);
+  return p.split(' ').includes(a);
+}
 
 /** A prompt that asks which KOREAN word/form — options must be Hangul. */
 function wantsKorean(prompt) {
@@ -45,14 +63,20 @@ function auditFile(file) {
     if (wantsKorean(prompt) && !anyHangul) problems.push(`${at}: asks for a Korean form but options are not Korean`);
 
     // Korean options must not carry per-locale copies: Hangul is Hangul everywhere.
-    if (anyHangul && s.choices.every(c => HANGUL.test(c))) {
+    // But "Korean" here means Korean ONLY. An option like "ㅌ (aspirated t)" or
+    // "ㄱ-group (k)" carries real prose that must be translated, whereas a bare
+    // jamo — or one tagged with a romanization like "ㅇ (ng)" — carries nothing
+    // translatable. Treat a run of 3+ Latin letters, or any other script, as
+    // prose; shorter Latin runs are romanization aids.
+    const isProse = c => /[a-z]{3,}/i.test(c) || /[Ѐ-ӿ฀-๿぀-ヿ一-鿿]/.test(c);
+    if (anyHangul && s.choices.every(c => HANGUL.test(c) && !isProse(c))) {
       for (const l of LANGS) {
         if (s[`choices_${l}`]) problems.push(`${at}: choices_${l} present on an all-Korean option set — delete it`);
       }
     }
 
     // Answer leak, checked in English and in every locale.
-    if (norm(prompt) && norm(s.correct) && norm(prompt).includes(norm(s.correct))) {
+    if (leaks(prompt, s.correct)) {
       problems.push(`${at}: answer "${s.correct}" appears in the prompt`);
     }
     for (const l of LANGS) {
@@ -62,7 +86,7 @@ function auditFile(file) {
       if (lc.some(c => !c || !String(c).trim())) problems.push(`${at}: choices_${l} has an empty option`);
       if (new Set(lc.map(norm)).size !== lc.length) problems.push(`${at}: choices_${l} has options that collide once translated`);
       const ci = s.choices.indexOf(s.correct);
-      if (lp && ci >= 0 && lc[ci] && norm(lp).includes(norm(lc[ci]))) {
+      if (lp && ci >= 0 && lc[ci] && leaks(lp, lc[ci])) {
         problems.push(`${at}: prompt_${l} leaks its answer`);
       }
     }
