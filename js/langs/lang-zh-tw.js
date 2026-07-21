@@ -45,18 +45,7 @@
     'TRAVEL APPS · 여행 앱': '旅遊App · 여행 앱', 'Essential Apps for Korea Travel': '韓國旅遊必備App',
     'READY TO LEARN?': '準備好學習了嗎？', 'Start Speaking Korean Today': '今天就開始說韓語',
     'Start Learning Korean →': '開始學韓語 →', 'Plan Your Trip': '規劃你的旅程',
-    // ── News ──────────────────────────────────────────
-    '📰 · Korean News · 한국 뉴스': '📰 · 韓國新聞 · 한국 뉴스',
-    'TODAY\'S KOREA · 오늘의 한국': '今日韓國 · 오늘의 한국',
-    'All 전체': '全部 전체', 'LATEST · 최신 기사': '最新文章 · 최신 기사',
-    'FEATURED · 주목 기사': '精選文章 · 주목 기사', 'ARTICLES · 기사 목록': '文章列表 · 기사 목록',
-    'Today\'s Korean News': '今日韓國新聞', 'Admin ⚙️': '管理 ⚙️',
-    '더 보기 — Load More': '載入更多', 'All articles loaded': '所有文章已載入',
-    'THIS WEEK\'S TOP STORIES · 이번 주 인기 뉴스': '本週熱門故事 · 이번 주 인기 뉴스',
-    'Most Read This Week': '本週最多人閱讀',
-    'VOCABULARY SPOTLIGHT · 핵심 어휘': '詞彙焦點 · 핵심 어휘',
-    'Key News Vocabulary': '新聞重點詞彙', 'Full Vocabulary Lists →': '查看完整詞彙列表 →',
-    'K-Pop': 'K-Pop', 'K-Drama': '韓劇', 'K-Beauty': 'K-Beauty', 'All': '全部', 'Level:': '級別：',
+    'K-Pop': 'K-Pop', 'K-Drama': '韓劇', 'K-Beauty': 'K-Beauty', 'All': '全部',
     // ── Footer & Company ──────────────────────────────
     'Learn · 학습': '學習 · 학습', 'K-Culture · 문화': 'K文化 · 문화',
     'Company · 회사': '關於 · 회사', 'Explore': '探索', 'Company': '公司',
@@ -151,7 +140,6 @@
     'KTX High-speed Rail': 'KTX高速鐵路', 'Age': '年齡', 'Bowing': '鞠躬禮',
     'Drinking': '飲酒', 'Eating': '飲食', 'Quiet': '保持安靜', 'Shoes': '鞋子',
     'Tipping': '小費', 'Two Hands': '雙手',
-    // ── News Filter Categories ─────────────────────────
     'International': '國際', 'Politics': '政治', 'Economy': '經濟', 'Society': '社會',
     'Science': '科學', 'Culture': '文化', 'Sports': '運動', 'Education': '教育',
     'Environment': '環境',
@@ -195,7 +183,7 @@
     // ── Homepage Eyebrow Labels ───────────────────────
     'Hangul Basics · 한글 기초': '韓文字母基礎 · 한글 기초',
     'Korean Grammar · 문법': '韓語文法 · 문법', 'Vocabulary · 어휘': '詞彙 · 어휘',
-    'Pronunciation · 발음': '發音 · 발음', 'Korean News · 뉴스': '韓國新聞 · 뉴스',
+    'Pronunciation · 발음': '發音 · 발음',
     'Korean Food · 음식': '韓食 · 음식', 'K-Beauty · 뷰티': 'K-Beauty · 뷰티',
     'K-Drama · 드라마': '韓劇 · 드라마', 'K-Pop Lyrics · 가사': 'K-Pop歌詞 · 가사',
     'TOPIK Prep · 토픽 준비': 'TOPIK備考 · 토픽 준비',

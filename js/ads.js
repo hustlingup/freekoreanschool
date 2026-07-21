@@ -1,6 +1,6 @@
 /* Centralized AdSense pushes — one place, visibility-guarded (adsense/GUIDE.md §7.3).
    Zones are inserted by scripts/inject-ad-zones.cjs with no inline push.
-   Dynamic renderers (news grid, article body) call window.KSAds.push() after
+   Dynamic renderers call window.KSAds.push() after
    inserting new .ad-zone slots. */
 (function () {
   'use strict';

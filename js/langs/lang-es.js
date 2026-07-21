@@ -47,18 +47,7 @@
     'TRAVEL APPS · 여행 앱': 'APPS DE VIAJE · 여행 앱', 'Essential Apps for Korea Travel': 'Apps esenciales para viajar a Corea',
     'READY TO LEARN?': '¿LISTO PARA APRENDER?', 'Start Speaking Korean Today': 'Empieza a hablar coreano hoy',
     'Start Learning Korean →': 'Empezar a aprender coreano →', 'Plan Your Trip': 'Planifica tu viaje',
-    // ── News ──────────────────────────────────────────
-    '📰 · Korean News · 한국 뉴스': '📰 · Noticias de Corea · 한국 뉴스',
-    'TODAY\'S KOREA · 오늘의 한국': 'COREA HOY · 오늘의 한국',
-    'All 전체': 'Todo 전체', 'LATEST · 최신 기사': 'ÚLTIMAS · 최신 기사',
-    'FEATURED · 주목 기사': 'DESTACADAS · 주목 기사', 'ARTICLES · 기사 목록': 'ARTÍCULOS · 기사 목록',
-    'Today\'s Korean News': 'Noticias de Corea de hoy', 'Admin ⚙️': 'Admin ⚙️',
-    '더 보기 — Load More': 'Cargar más', 'All articles loaded': 'Todos los artículos cargados',
-    'THIS WEEK\'S TOP STORIES · 이번 주 인기 뉴스': 'LAS MEJORES HISTORIAS DE ESTA SEMANA · 이번 주 인기 뉴스',
-    'Most Read This Week': 'Más leídas esta semana',
-    'VOCABULARY SPOTLIGHT · 핵심 어휘': 'VOCABULARIO DESTACADO · 핵심 어휘',
-    'Key News Vocabulary': 'Vocabulario clave de noticias', 'Full Vocabulary Lists →': 'Listas completas de vocabulario →',
-    'K-Pop': 'K-Pop', 'K-Drama': 'K-Drama', 'K-Beauty': 'K-Beauty', 'All': 'Todo', 'Level:': 'Nivel:',
+    'K-Pop': 'K-Pop', 'K-Drama': 'K-Drama', 'K-Beauty': 'K-Beauty', 'All': 'Todo',
     // ── Footer & Company ──────────────────────────────
     'Learn · 학습': 'Aprender · 학습', 'K-Culture · 문화': 'K-Cultura · 문화',
     'Company · 회사': 'Empresa · 회사', 'Explore': 'Explorar', 'Company': 'Empresa',
@@ -153,7 +142,6 @@
     'KTX High-speed Rail': 'KTX Tren de alta velocidad', 'Age': 'Edad', 'Bowing': 'Reverencia',
     'Drinking': 'Beber', 'Eating': 'Comer', 'Quiet': 'Silencio', 'Shoes': 'Zapatos',
     'Tipping': 'Propina', 'Two Hands': 'Dos manos',
-    // ── News Filter Categories ─────────────────────────
     'International': 'Internacional', 'Politics': 'Política', 'Economy': 'Economía', 'Society': 'Sociedad',
     'Science': 'Ciencia', 'Culture': 'Cultura', 'Sports': 'Deportes', 'Education': 'Educación',
     'Environment': 'Medio ambiente',
@@ -197,7 +185,7 @@
     // ── Homepage Eyebrow Labels ───────────────────────
     'Hangul Basics · 한글 기초': 'Hangul básico · 한글 기초',
     'Korean Grammar · 문법': 'Gramática coreana · 문법', 'Vocabulary · 어휘': 'Vocabulario · 어휘',
-    'Pronunciation · 발음': 'Pronunciación · 발음', 'Korean News · 뉴스': 'Noticias de Corea · 뉴스',
+    'Pronunciation · 발음': 'Pronunciación · 발음',
     'Korean Food · 음식': 'Comida coreana · 음식', 'K-Beauty · 뷰티': 'K-Beauty · 뷰티',
     'K-Drama · 드라마': 'K-Drama · 드라마', 'K-Pop Lyrics · 가사': 'Letras K-Pop · 가사',
     'TOPIK Prep · 토픽 준비': 'Preparación TOPIK · 토픽 준비',

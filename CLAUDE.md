@@ -21,9 +21,6 @@ All automation lives in `scripts/`. Dependencies: `@anthropic-ai/sdk`, `@supabas
 # Translation coverage auditing
 node scripts/audit-content-translation.cjs <lang> [path]
 
-# Daily news generation (also runs via GitHub Actions at 08:00 KST)
-node scripts/generate-news.js
-
 # Learn page mirror generation (idempotent — safe to re-run)
 node scripts/gen-learn-mirrors.cjs
 
@@ -41,8 +38,13 @@ node scripts/inject-seo.mjs
 
 # sitemap.xml — single source of truth, scans real file inventory across all
 # 9 locales (en + ja/zh-tw/es/de/fr/vi/th/id). Rerun after adding/removing any
-# learn/culture/travel/news/root page in any language.
+# learn/culture/travel/root page in any language.
 node scripts/gen-sitemap.cjs
+
+# News-section removal (2026-07-21) — idempotent, marker-guarded. Kept as the
+# record of what was stripped; rerun only to re-clean if a generator script
+# reintroduces a news nav link.
+node scripts/remove-news-section.cjs [--check]
 
 # culture/ + travel/ head metadata: robots, canonical, og:url, hreflang cluster,
 # Schema.org, visible byline. Idempotent and marker-guarded — rerun to restore
@@ -54,7 +56,7 @@ node scripts/fix-culture-travel-seo.cjs [--check]
 
 **Do not run** `gen-content-mirrors.cjs`, `gen-root-mirrors.cjs`, or any language-specific `gen-*-site.cjs` scripts during Phase 2 translation work — they overwrite translated prose with English source.
 
-Secrets needed for Supabase/news scripts go in `.env` (gitignored): `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`. `ANTHROPIC_API_KEY` is also needed for `generate-news.js`.
+Secrets needed for the Supabase-backed scripts go in `.env` (gitignored): `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`. `ANTHROPIC_API_KEY` is needed by the translation/asset scripts (`translate-*.{js,mjs}`, `generate-svgs.js`, `revise-articles.js`).
 
 ## Architecture
 
@@ -96,11 +98,24 @@ Single file: `css/style.css`. Uses CSS custom properties only — no preprocesso
 - Layout: 64px header, 270px left sidebar, 1200px max content width
 
 ### Supabase backend
-- Tables: `articles`, `topics`, `daily_summaries`
-- Storage: `news-images` bucket
-- Frontend credentials (public anon key) live in `js/config.js`
-- Admin operations use service key from `.env`
-- RPC `increment_view()` handles article view counts
+**The site itself no longer reads Supabase at runtime.** The news section — the
+only feature that did — was deleted 2026-07-21 (see below). What remains:
+
+- Storage bucket `site-images` — serves the culture/travel/homepage photography
+  via plain `<img src="https://…supabase.co/storage/v1/object/public/site-images/…">`
+  URLs baked into the HTML. This is the only live dependency and it needs no JS client.
+- Tables `articles`, `topics`, `daily_summaries` and the `news-images` bucket still
+  hold the 95 previously generated articles. **Nothing on the site reads them.**
+  They were deliberately left intact — deleting the data was not authorized.
+- `supabase/migrations/001–003` are kept as the schema of record for that retained
+  data. `004_article_sources.sql` was deleted: never applied, and its only consumer
+  (`generate-news.js`) is gone.
+- `js/config.js` (public anon key) is now referenced by **no page** — orphaned but
+  left in place. The `admin/` uploader pages hardcode their own credentials.
+- Scripts that still talk to the `articles` table — `revise-articles.js`,
+  `translate-japanese.js`, `dump-articles-to-translate.cjs` — were left in place so
+  the retained data stays reachable. They can no longer publish anything to the site.
+- Service-key operations read `.env`.
 
 ### Progress system (KSProgress)
 - Single localStorage key `ks-progress-v2` (module `KSProgress` in `js/app.js`): per-lesson completed-step indices, lesson completion, daily study streak (calendar days), learned counters (steps/words/letters/quizzes), resume position. Auto-migrates and deletes legacy keys (`ks-progress`, `ks-lessons-done`, `ks-*-xp`, `ks-*-stagemap`) on first load.
@@ -126,8 +141,34 @@ When adding a new culture/travel page:
 ## AdSense status
 - Publisher ID: `ca-pub-6791974364232767`; Analytics: `G-D94KSYG9DE`
 - Ad zones (`class="ad-zone"`) injected site-wide 2026-07-07 (collapsed until approval); rail is post-approval
-- Density pass 2026-07-09: culture pages get interval mids (one per 3 sub-headings; `inject-ad-zones.cjs` is now per-zone idempotent — rerunning upgrades in place), news index gets a top zone + JS in-feed ads every 4 cards, news article shells (all 9 langs) get 3 static zones + a JS in-article ad between body halves. Dynamic renderers must call `window.KSAds.push()` after inserting slots. Pre-render zones collapse via `height:0` — NOT `display:none`, which broke the visibility-guarded push in `js/ads.js`
+- Density pass 2026-07-09: culture pages get interval mids (one per 3 sub-headings; `inject-ad-zones.cjs` is now per-zone idempotent — rerunning upgrades in place). The news index/article ad zones from that pass are gone with the section. Dynamic renderers must call `window.KSAds.push()` after inserting slots. Pre-render zones collapse via `height:0` — NOT `display:none`, which broke the visibility-guarded push in `js/ads.js`
 - Low-value dev files (`lesson-header-mobile-options.html`, `culture_travel_news_extract.txt`, `learn_extract.txt`) deleted 2026-07-07; working `.md` files moved to `docs/`
 
+## News section — removed 2026-07-21
+The `news/` section was **deleted outright** (all 9 locales, 34 files) before the
+AdSense resubmission. It published ~11 unreviewed AI-written articles per day
+across 9 locales into near-empty client-rendered shells: Google's "scaled content
+abuse" pattern, never indexed, not the site's core value, and still advertising a
+cadence ("11 new articles every morning at 8AM KST") that the paused cron no longer
+met. Deleted with it: `scripts/generate-news.js`, `scripts/harden-news-section.cjs`,
+`.github/workflows/generate-news.yml` (this emptied `.github/` entirely — there are
+now **no GitHub Actions workflows**), and `supabase/migrations/004_article_sources.sql`.
+
+`scripts/remove-news-section.cjs` performed and documents the reference removal.
+**Do not reintroduce a news nav item.** The generator scripts (`gen-*-site.cjs`,
+`gen-content-mirrors.cjs`, `gen-learn-mirrors.cjs`, `inject-seo.mjs`, …) had their
+nav templates patched too, so running one cannot bring the link back.
+
+Deliberately **kept** — the "News & Society" *vocabulary topic* is real learning
+content and is unrelated to the deleted section: `learn/data/vocabulary-news.json`,
+`vocabulary.html?cat=news` / `#news`, the `news` entries in the `WOD_FILES` /
+vocab-category maps in `js/app.js`, and `.tag-news` in `css/style.css` (still used
+for the `home` badge in `SearchPage`).
+
 ## Deployment
-Hosted on Vercel. Config in `vercel.json`: `cleanUrls: true`, no trailing slashes. The GitHub Actions workflow `.github/workflows/generate-news.yml` runs daily news generation (23:00 UTC / 08:00 KST) using `ANTHROPIC_API_KEY`, `SUPABASE_URL`, `SUPABASE_SERVICE_KEY` secrets.
+Hosted on Vercel. Config in `vercel.json`: `cleanUrls: true`, no trailing slashes.
+There is no CI: `.github/` was removed with the news workflow, so every generation
+and SEO script is run manually from a workstation.
+
+⚠️ `.vercelignore` does **not** list `supabase`, so `supabase/migrations/*.sql`
+currently deploy as publicly fetchable files. Add `supabase` to `.vercelignore`.

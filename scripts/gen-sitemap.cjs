@@ -21,6 +21,9 @@ const TODAY = new Date().toISOString().slice(0, 10);
 const LANGS = ['ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
 const ALL_LOCALES = ['en', ...LANGS];
 
+// Root-level pages are enumerated explicitly because the root directory also
+// holds non-page HTML. Everything else is discovered from the filesystem so a
+// new lesson/culture/travel page is picked up without editing this script.
 const ROOT_PAGES = [
   { slug: '',        priority: '1.0', changefreq: 'weekly'  },
   { slug: 'about',   priority: '0.6', changefreq: 'weekly'  },
@@ -28,28 +31,58 @@ const ROOT_PAGES = [
   { slug: 'privacy', priority: '0.6', changefreq: 'weekly'  },
   { slug: 'terms',   priority: '0.6', changefreq: 'weekly'  },
   { slug: 'quiz',    priority: '0.7', changefreq: 'weekly'  },
+  { slug: 'search',  priority: '0.4', changefreq: 'weekly'  },
 ];
 
-const LEARN_PAGES = [
-  'hangul', 'syllable-blocks', 'pronunciation', 'grammar', 'vocabulary',
-  'nouns', 'pronouns', 'emotions', 'shopping', 'speech-levels', 'dialogues',
-  'business-korean', 'classical-korean', 'writing-essays', 'flashcard',
-  'vocabulary-browser',
-];
+// Sections whose slugs are discovered by scanning the English directory.
+// The union across every locale is used, so a page that exists only in a
+// translated locale is still emitted.
+const SECTIONS = ['learn', 'culture', 'travel'];
 
-const CULTURE_PAGES = [
-  '', 'kpop', 'kdrama', 'kmovie', 'kfood', 'kbeauty', 'kfashion', 'kbbq',
-  'kimchi', 'ramyeon', 'kchicken', 'mandu', 'kgaming', 'ksports', 'koreanthing',
-];
-
-const TRAVEL_PAGES = ['', 'cities', 'itineraries', 'planner', 'themes'];
-
-// news/article.html and news/board.html are dynamic templates (no content
-// without a query param) — only the index is a real crawlable page.
-const NEWS_PAGES = [''];
+// Never emit these regardless of what is on disk: admin tooling.
+const SLUG_DENYLIST = new Set(['admin']);
 
 function fileExists(rel) {
   return fs.existsSync(path.join(ROOT, rel));
+}
+
+// A page carrying <meta name="robots" content="...noindex..."> must never be
+// listed. Search Console reports every such URL as "Submitted URL marked
+// noindex", which is what sank the previous submission.
+const NOINDEX_RE = /<meta[^>]+name=["']robots["'][^>]*content=["'][^"']*noindex/i;
+const noindexCache = new Map();
+function isNoindex(rel) {
+  if (noindexCache.has(rel)) return noindexCache.get(rel);
+  let flagged = false;
+  try {
+    flagged = NOINDEX_RE.test(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
+  } catch (_) { /* missing file is handled by fileExists */ }
+  noindexCache.set(rel, flagged);
+  return flagged;
+}
+
+// Discover the slug set for a section as the union over all locales.
+function discoverSlugs(section) {
+  const slugs = new Set();
+  for (const locale of ALL_LOCALES) {
+    const dir = path.join(ROOT, locale === 'en' ? section : `${section}/${locale}`);
+    let entries = [];
+    try { entries = fs.readdirSync(dir); } catch (_) { continue; }
+    for (const e of entries) {
+      if (!e.endsWith('.html')) continue;
+      const slug = e === 'index.html' ? '' : e.slice(0, -5);
+      if (SLUG_DENYLIST.has(slug)) continue;
+      slugs.add(slug);
+    }
+  }
+  return [...slugs].sort();
+}
+
+function sectionMeta(section, slug) {
+  if (section === 'learn')   return { changefreq: 'monthly', priority: '0.8' };
+  return slug === ''
+    ? { changefreq: 'weekly',  priority: '0.9' }
+    : { changefreq: 'monthly', priority: '0.8' };
 }
 
 function localePrefix(locale) {
@@ -73,32 +106,27 @@ function sectionUrl(section, locale, slug) {
 }
 
 const pages = []; // { url, file, changefreq, priority, group, key, locale }
+const skipped = { missing: 0, noindex: [] };
+
+function consider(page) {
+  if (!fileExists(page.file)) { skipped.missing++; return; }
+  if (isNoindex(page.file)) { skipped.noindex.push(page.file); return; }
+  pages.push(page);
+}
+
+const sectionSlugs = new Map(SECTIONS.map(s => [s, discoverSlugs(s)]));
 
 for (const locale of ALL_LOCALES) {
   for (const rp of ROOT_PAGES) {
     const { url, file } = rootUrl(locale, rp.slug);
-    if (!fileExists(file)) continue;
-    pages.push({ url, file, changefreq: rp.changefreq, priority: rp.priority, group: 'root', key: rp.slug, locale });
+    consider({ url, file, changefreq: rp.changefreq, priority: rp.priority, group: 'root', key: rp.slug, locale });
   }
-  for (const slug of LEARN_PAGES) {
-    const { url, file } = sectionUrl('learn', locale, slug);
-    if (!fileExists(file)) continue;
-    pages.push({ url, file, changefreq: 'monthly', priority: '0.8', group: 'learn', key: slug, locale });
-  }
-  for (const slug of CULTURE_PAGES) {
-    const { url, file } = sectionUrl('culture', locale, slug);
-    if (!fileExists(file)) continue;
-    pages.push({ url, file, changefreq: slug === '' ? 'weekly' : 'monthly', priority: slug === '' ? '0.9' : '0.8', group: 'culture', key: slug, locale });
-  }
-  for (const slug of TRAVEL_PAGES) {
-    const { url, file } = sectionUrl('travel', locale, slug);
-    if (!fileExists(file)) continue;
-    pages.push({ url, file, changefreq: slug === '' ? 'weekly' : 'monthly', priority: slug === '' ? '0.9' : '0.8', group: 'travel', key: slug, locale });
-  }
-  for (const slug of NEWS_PAGES) {
-    const { url, file } = sectionUrl('news', locale, slug);
-    if (!fileExists(file)) continue;
-    pages.push({ url, file, changefreq: 'daily', priority: '0.9', group: 'news', key: slug, locale });
+  for (const section of SECTIONS) {
+    for (const slug of sectionSlugs.get(section)) {
+      const { url, file } = sectionUrl(section, locale, slug);
+      const { changefreq, priority } = sectionMeta(section, slug);
+      consider({ url, file, changefreq, priority, group: section, key: slug, locale });
+    }
   }
 }
 
@@ -150,3 +178,8 @@ ${blocks.join('\n')}
 
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml, 'utf8');
 console.log(`sitemap.xml written — ${pages.length} URLs across ${ALL_LOCALES.length} locales`);
+
+const byGroup = {};
+for (const p of pages) byGroup[p.group] = (byGroup[p.group] || 0) + 1;
+for (const [g, n] of Object.entries(byGroup).sort()) console.log(`  ${g}: ${n}`);
+console.log(`excluded: ${skipped.noindex.length} noindex, ${skipped.missing} not-on-disk`);

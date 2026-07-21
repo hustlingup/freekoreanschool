@@ -340,8 +340,8 @@ if (fs.existsSync(TRAVEL_DE)) {
 }
 
 // ── Generate news/vi/ pages ──────────────────────────────────────
-const NEWS_DE = path.join(ROOT, 'news', 'de');
-const NEWS_VI = path.join(ROOT, 'news', 'vi');
+const NEWS_DE = path.join(ROOT, 'de');
+const NEWS_VI = path.join(ROOT, 'vi');
 
 if (fs.existsSync(NEWS_DE)) {
   mkdir(NEWS_VI);

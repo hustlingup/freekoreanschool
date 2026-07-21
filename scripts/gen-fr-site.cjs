@@ -368,8 +368,8 @@ if (fs.existsSync(TRAVEL_ES)) {
 }
 
 // ── Generate news/fr/ pages ──────────────────────────────────────
-const NEWS_ES = path.join(ROOT, 'news', 'es');
-const NEWS_FR = path.join(ROOT, 'news', 'fr');
+const NEWS_ES = path.join(ROOT, 'es');
+const NEWS_FR = path.join(ROOT, 'fr');
 if (fs.existsSync(NEWS_ES)) {
   mkdir(NEWS_FR);
   const newsPages = fs.readdirSync(NEWS_ES).filter(f => f.endsWith('.html'));

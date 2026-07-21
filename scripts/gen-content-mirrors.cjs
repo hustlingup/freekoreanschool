@@ -22,7 +22,7 @@ const vm = require('vm');
 const ROOT = path.join(__dirname, '..');
 const LANGS = process.argv.slice(2).length ? process.argv.slice(2) : ['de', 'fr', 'vi', 'th', 'id'];
 const FLAG = { de: '🇩🇪 DE', es: '🇪🇸 ES', fr: '🇫🇷 FR', vi: '🇻🇳 VI', th: '🇹🇭 TH', id: '🇮🇩 ID' };
-const SECTIONS = ['culture', 'travel', 'news'];
+const SECTIONS = ['culture', 'travel'];
 
 function loadDict(lang) {
   const src = fs.readFileSync(path.join(ROOT, 'js/langs/lang-' + lang + '.js'), 'utf8');
