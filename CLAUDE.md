@@ -64,14 +64,20 @@ The entire frontend is **vanilla HTML + CSS + JS**. There is no bundler, transpi
 ### Learn page engine (step-runner.js)
 Each learn page (`learn/hangul.html`, etc.) is a static HTML shell with an empty `<div id="step-shell">`. `step-runner.js` fetches the corresponding JSON from `/learn/data/<lesson>.json` and renders the step at the URL's `?step=N` param.
 
-**Step types**: `reading_card`, `listen_repeat`, `conjugation_practice`, `choose_syllables`, `copy_phrase`, `write_answer`, `syllable_builder`, `group_by_type`, `drag_reorder`
+**Step types**: `reading_card`, `card_reveal`, `listen_repeat`, `match_quiz`, `syllable_builder`, `lesson_complete`. These six are the complete set — every other type this file used to list (`conjugation_practice`, `choose_syllables`, `copy_phrase`, `write_answer`, `group_by_type`, `drag_reorder`) appears in no lesson JSON and has no renderer.
+
+#### Static lesson content (`#lesson-static`) — SEO-critical
+A lesson renders only ONE step per `?step=N` URL, so the shell alone was ~62 crawler-visible words. That was the primary cause of the 2026-07 AdSense "Low value content" rejection. `scripts/gen-lesson-static.cjs` now pre-renders the *entire* lesson from the JSON as semantic HTML into `<details id="lesson-static">`, taking each page to a median 2,468 words. `step-runner.js` calls `hydrateStaticReference()` after the first successful `renderStep()`, which only removes the `open` attribute — the content stays in the DOM and stays reachable. This is progressive enhancement, not cloaking; do not change it to `display:none`.
+
+⚠️ `#lesson-static` MUST be a sibling **after** `#step-shell`, never inside it. `buildShell()` does `innerHTML =` on `#step-shell`, so a nested block is destroyed on hydration.
+
+Rerun `node scripts/gen-lesson-static.cjs` (idempotent) after editing any `learn/data/*.json`; verify with `node scripts/audit-learn-content.cjs`.
 
 Localized fields in JSON use `_<lang>` suffixes (e.g. `title_ja`, `body_zh_tw`, `meaning_es`). The helper `loc(obj, base)` inside step-runner picks the right variant based on the current language. Pronunciation aids use dedicated fields: `katakana` (JA), `zhuyin` (ZH-TW), `reading_vi`/`reading_th` (others).
 
 ### Localization architecture
 - **8 language versions**: `ja`, `zh-tw`, `es`, `de`, `fr`, `vi`, `th`, `id`
-- **Full translation** (prose + chrome): `es`, `ja`, `zh-tw`
-- **Chrome-only** (nav/sidebar translated, article prose still English — Phase 2 in progress): `de`, `fr`, `vi`, `th`, `id`
+- **All 8 are fully translated** (prose + chrome). The old "chrome-only for `de`/`fr`/`vi`/`th`/`id`" claim was stale — a 2026-07-21 audit measured trigram overlap against the English source at .021–.044 for every locale, with spot-checks confirming genuine prose. Consequence: any `noindex` still applied to those locales by the 2026-07-07 translation gate is suppressing legitimate pages and should be lifted.
 - Each language's pages live under `/<lang>/` for root pages and `learn/<lang>/`, `culture/<lang>/`, etc. for content
 - All language versions load the **same** `learn/data/*.json` files — JSON contains all translations
 
