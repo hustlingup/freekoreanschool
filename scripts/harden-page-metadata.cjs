@@ -336,14 +336,12 @@ const DELIBERATE_NOINDEX = new Set();
 // Pure JS widgets with no prose of their own.
 for (const l of ALL) for (const p of ['search', 'quiz'])
   DELIBERATE_NOINDEX.add(l === 'en' ? `${p}.html` : `${l}/${p}.html`);
-// The vocabulary word bank has no _de/_fr/_vi/_th/_id fields (447 entries short),
-// so these three pages fall back to English wholesale in those five locales.
-// Noindexed rather than shipped as fake translations. Lift each one as its
-// locale's fields land in learn/data/vocabulary-*.json — see
-// scripts/audit-learn-locale-dup.cjs to confirm before lifting.
-for (const l of ['de', 'fr', 'vi', 'th', 'id'])
-  for (const p of ['vocabulary', 'vocabulary-browser', 'flashcard'])
-    DELIBERATE_NOINDEX.add(`learn/${l}/${p}.html`);
+// The vocabulary word bank was missing every _de/_fr/_vi/_th/_id field, so
+// vocabulary/vocabulary-browser/flashcard fell back to English in those five
+// locales and were noindexed. All 464 strings were translated across all 8
+// locales on 2026-07-21 and the noindex was lifted — `node scripts/vocab-i18n.cjs
+// audit` should report 0 missing for every locale. If it ever regresses, noindex
+// the affected pages again rather than shipping an English fallback.
 
 function auditNoindex() {
   const unexpected = [], missing = [];

@@ -9,7 +9,14 @@
       "first_step": 1,
       "last_step": 22,
       "time_minutes": 13,
-      "name_es": "Partes del Cuerpo"
+      "name_es": "Partes del Cuerpo",
+      "name_de": "Körperteile",
+      "name_fr": "Parties du corps",
+      "name_id": "Anggota Tubuh",
+      "name_ja": "体の部位",
+      "name_th": "อวัยวะในร่างกาย",
+      "name_vi": "Các bộ phận cơ thể",
+      "name_zh_tw": "身體部位"
     }
   ],
   "steps": [
@@ -31,7 +38,7 @@
         "label": "看診時很有用",
         "text": "如果你感到疼痛，說：[身體部位] 아파요（很痛）。例：머리 아파요＝我頭痛。배 아파요＝我肚子痛。"
       },
-      "body_ja": "体の部位の語彙は、病院・症状の説明・日常会話に欠かせません。韓国語の体の名称はほとんど固有語ですが、医学用語には漢数字が多く使われます。",
+      "body_ja": "体の部位の語彙は、病院・症状の説明・日常会話に欠かせません。韓国語の体の名称はほとんど固有語ですが、医学用語には漢字語が多く使われます。",
       "tip_ja": {
         "label": "クリニックで役立つ",
         "text": "痛みがある場合：[体の部位] 아파요（痛いです）。例：머리 아파요（頭が痛い）、배 아파요（お腹が痛い）。"
@@ -42,7 +49,17 @@
         "label": "Útil en la clínica",
         "text": "Si sientes dolor, di: [parte del cuerpo] 아파요 (duele). Ej: 머리 아파요 = Me duele la cabeza. 배 아파요 = Me duele el estómago."
       },
-      "title_ja": "韓国語の体の部位"
+      "title_ja": "韓国語の体の部位",
+      "title_de": "Körperteile auf Koreanisch",
+      "title_fr": "Les parties du corps en coréen",
+      "title_id": "Anggota Tubuh dalam Bahasa Korea",
+      "title_th": "อวัยวะในร่างกายในภาษาเกาหลี",
+      "title_vi": "Các bộ phận cơ thể trong tiếng Hàn",
+      "body_de": "Der Wortschatz zu den Körperteilen ist unverzichtbar für Arztbesuche, das Beschreiben von Symptomen und Alltagsgespräche. Die koreanischen Bezeichnungen für Körperteile sind überwiegend rein koreanische Wörter, während die medizinische Fachsprache meist sinokoreanische Begriffe verwendet.",
+      "body_fr": "Connaître le vocabulaire des parties du corps est essentiel pour les visites chez le médecin, la description des symptômes et la conversation quotidienne. Les noms coréens des parties du corps sont majoritairement des mots coréens natifs, même si la terminologie médicale utilise souvent le sino-coréen.",
+      "body_id": "Menguasai kosakata bagian tubuh sangat penting saat berobat ke dokter, menjelaskan gejala, dan dalam percakapan sehari-hari. Nama bagian tubuh dalam bahasa Korea sebagian besar merupakan kata asli Korea, meskipun istilah medis sering menggunakan kata Sino-Korea.",
+      "body_th": "การรู้คำศัพท์เกี่ยวกับอวัยวะในร่างกายเป็นสิ่งจำเป็นสำหรับการไปพบแพทย์ การอธิบายอาการ และการสนทนาในชีวิตประจำวัน ชื่อเรียกอวัยวะในภาษาเกาหลีส่วนใหญ่เป็นคำเกาหลีแท้ แต่ศัพท์ทางการแพทย์มักใช้คำจีน-เกาหลี",
+      "body_vi": "Biết từ vựng về các bộ phận cơ thể là điều thiết yếu khi đi khám bệnh, mô tả triệu chứng và trò chuyện hằng ngày. Tên các bộ phận cơ thể trong tiếng Hàn phần lớn là từ thuần Hàn, tuy nhiên thuật ngữ y học thường dùng từ Hán-Hàn."
     },
     {
       "id": 2,
@@ -59,7 +76,12 @@
       "meaning": "Head / hair — 머리카락 is specifically 'hair strand'",
       "meaning_zh_tw": "頭 / 頭髮——머리카락 特指「頭髮絲」",
       "meaning_ja": "頭・髪 ― 머리카락 は「髪の毛」を指す",
-      "meaning_es": "Cabeza / cabello — 머리카락 es específicamente \"hebra de cabello\""
+      "meaning_es": "Cabeza / cabello — 머리카락 es específicamente \"hebra de cabello\"",
+      "meaning_de": "Kopf / Haar — 머리카락 bezeichnet speziell das einzelne Haar",
+      "meaning_fr": "Tête / cheveux — 머리카락 désigne précisément « un cheveu »",
+      "meaning_id": "Kepala / rambut — 머리카락 khusus berarti “helai rambut”",
+      "meaning_th": "หัว / ผม — 머리카락 หมายถึง “เส้นผม” โดยเฉพาะ",
+      "meaning_vi": "Đầu / tóc — 머리카락 chỉ riêng \"sợi tóc\""
     },
     {
       "id": 3,
@@ -76,7 +98,12 @@
       "meaning": "Face",
       "meaning_zh_tw": "臉",
       "meaning_ja": "顔",
-      "meaning_es": "Cara"
+      "meaning_es": "Cara",
+      "meaning_de": "Gesicht",
+      "meaning_fr": "Visage",
+      "meaning_id": "Wajah",
+      "meaning_th": "ใบหน้า",
+      "meaning_vi": "Khuôn mặt"
     },
     {
       "id": 4,
@@ -92,7 +119,12 @@
       "meaning": "Eye / snow — same word! Context determines the meaning",
       "meaning_zh_tw": "眼睛 / 雪——同一個詞！由語境決定意思",
       "meaning_ja": "目 / 雪 ― 同じ単語！文脈で意味が変わる",
-      "meaning_es": "Ojo / nieve — ¡la misma palabra! El contexto determina el significado"
+      "meaning_es": "Ojo / nieve — ¡la misma palabra! El contexto determina el significado",
+      "meaning_de": "Auge / Schnee — dasselbe Wort! Der Kontext bestimmt die Bedeutung",
+      "meaning_fr": "Œil / neige — le même mot ! Le contexte détermine le sens",
+      "meaning_id": "Mata / salju — kata yang sama! Konteks yang menentukan artinya",
+      "meaning_th": "ตา / หิมะ — คำเดียวกัน! ความหมายขึ้นอยู่กับบริบท",
+      "meaning_vi": "Mắt / tuyết — cùng một từ! Ngữ cảnh quyết định nghĩa"
     },
     {
       "id": 5,
@@ -108,7 +140,12 @@
       "meaning": "Nose",
       "meaning_zh_tw": "鼻子",
       "meaning_ja": "鼻",
-      "meaning_es": "Nariz"
+      "meaning_es": "Nariz",
+      "meaning_de": "Nase",
+      "meaning_fr": "Nez",
+      "meaning_id": "Hidung",
+      "meaning_th": "จมูก",
+      "meaning_vi": "Mũi"
     },
     {
       "id": 6,
@@ -124,7 +161,12 @@
       "meaning": "Mouth",
       "meaning_zh_tw": "嘴巴",
       "meaning_ja": "口",
-      "meaning_es": "Boca"
+      "meaning_es": "Boca",
+      "meaning_de": "Mund",
+      "meaning_fr": "Bouche",
+      "meaning_id": "Mulut",
+      "meaning_th": "ปาก",
+      "meaning_vi": "Miệng"
     },
     {
       "id": 7,
@@ -140,7 +182,12 @@
       "meaning": "Ear",
       "meaning_zh_tw": "耳朵",
       "meaning_ja": "耳",
-      "meaning_es": "Oreja"
+      "meaning_es": "Oreja",
+      "meaning_de": "Ohr",
+      "meaning_fr": "Oreille",
+      "meaning_id": "Telinga",
+      "meaning_th": "หู",
+      "meaning_vi": "Tai"
     },
     {
       "id": 8,
@@ -156,7 +203,12 @@
       "meaning": "Neck / throat — 목이 아파요 = sore throat",
       "meaning_zh_tw": "脖子 / 喉嚨——목이 아파요＝喉嚨痛",
       "meaning_ja": "首・喉 ― 목이 아파요（喉が痛い）",
-      "meaning_es": "Cuello / garganta — 목이 아파요 = dolor de garganta"
+      "meaning_es": "Cuello / garganta — 목이 아파요 = dolor de garganta",
+      "meaning_de": "Hals / Rachen — 목이 아파요 = Ich habe Halsschmerzen",
+      "meaning_fr": "Cou / gorge — 목이 아파요 = j'ai mal à la gorge",
+      "meaning_id": "Leher / tenggorokan — 목이 아파요 = sakit tenggorokan",
+      "meaning_th": "คอ / ลำคอ — 목이 아파요 = เจ็บคอ",
+      "meaning_vi": "Cổ / họng — 목이 아파요 = đau họng"
     },
     {
       "id": 9,
@@ -173,7 +225,12 @@
       "meaning": "Shoulder",
       "meaning_zh_tw": "肩膀",
       "meaning_ja": "肩",
-      "meaning_es": "Hombro"
+      "meaning_es": "Hombro",
+      "meaning_de": "Schulter",
+      "meaning_fr": "Épaule",
+      "meaning_id": "Bahu",
+      "meaning_th": "ไหล่",
+      "meaning_vi": "Vai"
     },
     {
       "id": 10,
@@ -189,7 +246,12 @@
       "meaning": "Arm",
       "meaning_zh_tw": "手臂",
       "meaning_ja": "腕",
-      "meaning_es": "Brazo"
+      "meaning_es": "Brazo",
+      "meaning_de": "Arm",
+      "meaning_fr": "Bras",
+      "meaning_id": "Lengan",
+      "meaning_th": "แขน",
+      "meaning_vi": "Cánh tay"
     },
     {
       "id": 11,
@@ -205,7 +267,12 @@
       "meaning": "Hand",
       "meaning_zh_tw": "手",
       "meaning_ja": "手",
-      "meaning_es": "Mano"
+      "meaning_es": "Mano",
+      "meaning_de": "Hand",
+      "meaning_fr": "Main",
+      "meaning_id": "Tangan",
+      "meaning_th": "มือ",
+      "meaning_vi": "Bàn tay"
     },
     {
       "id": 12,
@@ -223,7 +290,12 @@
       "meaning": "Finger — literally 'hand branch'",
       "meaning_zh_tw": "手指——字面意思是「手的枝杈」",
       "meaning_ja": "指 ― 文字通り「手の枝」",
-      "meaning_es": "Dedo — literalmente \"rama de la mano\""
+      "meaning_es": "Dedo — literalmente \"rama de la mano\"",
+      "meaning_de": "Finger — wörtlich „Handzweig“",
+      "meaning_fr": "Doigt — littéralement « branche de la main »",
+      "meaning_id": "Jari — secara harfiah “cabang tangan”",
+      "meaning_th": "นิ้วมือ — ตามตัวอักษรแปลว่า “กิ่งของมือ”",
+      "meaning_vi": "Ngón tay — nghĩa đen là \"nhánh của bàn tay\""
     },
     {
       "id": 13,
@@ -239,7 +311,12 @@
       "meaning": "Stomach / belly / boat / pear — very polysemous",
       "meaning_zh_tw": "肚子 / 腹部 / 船 / 梨——一詞多義",
       "meaning_ja": "お腹・腹・船・梨 ― 多義語",
-      "meaning_es": "Estómago / barriga / barco / pera — muy polisémico"
+      "meaning_es": "Estómago / barriga / barco / pera — muy polisémico",
+      "meaning_de": "Bauch / Magen / Schiff / Birne — sehr vieldeutig",
+      "meaning_fr": "Ventre / estomac / bateau / poire — très polysémique",
+      "meaning_id": "Perut / lambung / perahu / buah pir — sangat bermakna ganda",
+      "meaning_th": "ท้อง / พุง / เรือ / ลูกแพร์ — เป็นคำที่มีหลายความหมายมาก",
+      "meaning_vi": "Bụng / dạ dày / thuyền / quả lê — một từ rất nhiều nghĩa"
     },
     {
       "id": 14,
@@ -255,7 +332,12 @@
       "meaning": "Back (of the body)",
       "meaning_zh_tw": "背部",
       "meaning_ja": "背中",
-      "meaning_es": "Espalda (del cuerpo)"
+      "meaning_es": "Espalda (del cuerpo)",
+      "meaning_de": "Rücken (Körperteil)",
+      "meaning_fr": "Dos (du corps)",
+      "meaning_id": "Punggung (bagian tubuh)",
+      "meaning_th": "หลัง (ส่วนของร่างกาย)",
+      "meaning_vi": "Lưng (phần lưng cơ thể)"
     },
     {
       "id": 15,
@@ -272,7 +354,12 @@
       "meaning": "Leg / bridge — 다리 아파요 = my leg hurts",
       "meaning_zh_tw": "腿 / 橋——다리 아파요＝我腿痛",
       "meaning_ja": "足・橋 ― 다리 아파요（足が痛い）",
-      "meaning_es": "Pierna / puente — 다리 아파요 = me duele la pierna"
+      "meaning_es": "Pierna / puente — 다리 아파요 = me duele la pierna",
+      "meaning_de": "Bein / Brücke — 다리 아파요 = Mein Bein tut weh",
+      "meaning_fr": "Jambe / pont — 다리 아파요 = j'ai mal à la jambe",
+      "meaning_id": "Kaki / jembatan — 다리 아파요 = kakiku sakit",
+      "meaning_th": "ขา / สะพาน — 다리 아파요 = ฉันปวดขา",
+      "meaning_vi": "Chân / cây cầu — 다리 아파요 = tôi bị đau chân"
     },
     {
       "id": 16,
@@ -288,7 +375,12 @@
       "meaning": "Foot",
       "meaning_zh_tw": "腳",
       "meaning_ja": "足（足首から下）",
-      "meaning_es": "Pie"
+      "meaning_es": "Pie",
+      "meaning_de": "Fuß",
+      "meaning_fr": "Pied",
+      "meaning_id": "Telapak kaki",
+      "meaning_th": "เท้า",
+      "meaning_vi": "Bàn chân"
     },
     {
       "id": 17,
@@ -305,7 +397,12 @@
       "meaning": "Heart (the organ) — 마음 is 'heart' (emotions)",
       "meaning_zh_tw": "心臟（器官）——마음 是「心」（情感上的）",
       "meaning_ja": "心臓（臓器）― 気持ちの「心」は마음",
-      "meaning_es": "Corazón (el órgano) — 마음 es el \"corazón\" de las emociones"
+      "meaning_es": "Corazón (el órgano) — 마음 es el \"corazón\" de las emociones",
+      "meaning_de": "Herz (das Organ) — 마음 ist das „Herz“ im Sinne der Gefühle",
+      "meaning_fr": "Cœur (l'organe) — 마음 est le « cœur » des émotions",
+      "meaning_id": "Jantung (organ tubuh) — 마음 adalah “hati” dalam arti perasaan",
+      "meaning_th": "หัวใจ (อวัยวะ) — 마음 คือ “ใจ” ในความหมายเชิงความรู้สึก",
+      "meaning_vi": "Tim (cơ quan trong cơ thể) — 마음 mới là \"tấm lòng\", chỉ tình cảm"
     },
     {
       "id": 18,
@@ -321,7 +418,12 @@
       "meaning": "Tooth — 치아 is the more formal/medical word",
       "meaning_zh_tw": "牙齒——치아 是較正式的醫學用語",
       "meaning_ja": "歯 ― 치아 がより丁寧・医学的な語",
-      "meaning_es": "Diente — 치아 es el término más formal/médico"
+      "meaning_es": "Diente — 치아 es el término más formal/médico",
+      "meaning_de": "Zahn — 치아 ist der förmlichere bzw. medizinische Ausdruck",
+      "meaning_fr": "Dent — 치아 est le terme plus formel/médical",
+      "meaning_id": "Gigi — 치아 adalah kata yang lebih formal/medis",
+      "meaning_th": "ฟัน — 치아 เป็นคำที่ทางการ/ใช้ทางการแพทย์มากกว่า",
+      "meaning_vi": "Răng — 치아 là từ trang trọng / mang tính y học hơn"
     },
     {
       "id": 19,
@@ -337,7 +439,60 @@
       ],
       "correct": "다리",
       "prompt_ja": "「足」と「橋」の両方の意味を持つ韓国語は？",
-      "prompt_es": "¿Qué palabra significa \"pierna\" Y \"puente\" en coreano?"
+      "prompt_es": "¿Qué palabra significa \"pierna\" Y \"puente\" en coreano?",
+      "prompt_de": "Welches koreanische Wort bedeutet sowohl „Bein“ ALS AUCH „Brücke“?",
+      "choices_de": [
+        "다리",
+        "발",
+        "팔",
+        "손"
+      ],
+      "choices_es": [
+        "다리",
+        "발",
+        "팔",
+        "손"
+      ],
+      "prompt_fr": "Quel mot signifie à la fois « jambe » ET « pont » en coréen ?",
+      "choices_fr": [
+        "다리",
+        "발",
+        "팔",
+        "손"
+      ],
+      "prompt_id": "Kata mana yang dalam bahasa Korea berarti \"kaki\" DAN \"jembatan\"?",
+      "choices_id": [
+        "다리",
+        "발",
+        "팔",
+        "손"
+      ],
+      "choices_ja": [
+        "다리",
+        "발",
+        "팔",
+        "손"
+      ],
+      "prompt_th": "คำใดในภาษาเกาหลีหมายถึงทั้ง \"ขา\" และ \"สะพาน\"?",
+      "choices_th": [
+        "다리",
+        "발",
+        "팔",
+        "손"
+      ],
+      "prompt_vi": "Từ nào trong tiếng Hàn vừa có nghĩa là \"chân\" VỪA có nghĩa là \"cây cầu\"?",
+      "choices_vi": [
+        "다리",
+        "발",
+        "팔",
+        "손"
+      ],
+      "choices_zh_tw": [
+        "다리",
+        "발",
+        "팔",
+        "손"
+      ]
     },
     {
       "id": 20,
@@ -371,6 +526,41 @@
         "Me duele la cabeza",
         "Me duele la pierna",
         "Me duele la garganta"
+      ],
+      "prompt_de": "머리 아파요 bedeutet ...",
+      "choices_de": [
+        "Mir tut der Bauch weh",
+        "Ich habe Kopfschmerzen",
+        "Mir tut das Bein weh",
+        "Ich habe Halsschmerzen"
+      ],
+      "prompt_fr": "머리 아파요 signifie...",
+      "choices_fr": [
+        "J'ai mal au ventre",
+        "J'ai mal à la tête",
+        "J'ai mal à la jambe",
+        "J'ai mal à la gorge"
+      ],
+      "prompt_id": "머리 아파요 berarti...",
+      "choices_id": [
+        "Perut saya sakit",
+        "Kepala saya sakit",
+        "Kaki saya sakit",
+        "Tenggorokan saya sakit"
+      ],
+      "prompt_th": "머리 아파요 หมายถึง...",
+      "choices_th": [
+        "ฉันปวดท้อง",
+        "ฉันปวดหัว",
+        "ฉันปวดขา",
+        "ฉันเจ็บคอ"
+      ],
+      "prompt_vi": "머리 아파요 có nghĩa là...",
+      "choices_vi": [
+        "Tôi bị đau bụng",
+        "Tôi bị đau đầu",
+        "Tôi bị đau chân",
+        "Tôi bị đau họng"
       ]
     },
     {
@@ -405,6 +595,41 @@
         "Nieve",
         "Viento",
         "Nube"
+      ],
+      "prompt_de": "눈 kann „Auge“ bedeuten – und was noch?",
+      "choices_de": [
+        "Regen",
+        "Schnee",
+        "Wind",
+        "Wolke"
+      ],
+      "prompt_fr": "눈 peut signifier « œil », mais aussi quoi d'autre ?",
+      "choices_fr": [
+        "La pluie",
+        "La neige",
+        "Le vent",
+        "Le nuage"
+      ],
+      "prompt_id": "눈 bisa berarti \"mata\", dan juga apa lagi?",
+      "choices_id": [
+        "Hujan",
+        "Salju",
+        "Angin",
+        "Awan"
+      ],
+      "prompt_th": "눈 หมายถึง \"ตา\" และยังหมายถึงอะไรได้อีก?",
+      "choices_th": [
+        "ฝน",
+        "หิมะ",
+        "ลม",
+        "เมฆ"
+      ],
+      "prompt_vi": "눈 có nghĩa là \"mắt\" và còn có nghĩa gì nữa?",
+      "choices_vi": [
+        "Mưa",
+        "Tuyết",
+        "Gió",
+        "Mây"
       ]
     },
     {
@@ -420,7 +645,17 @@
       "message_ja": "よくできました！体の部位を指差して、韓国語で症状を伝えられるようになりました。[体の部位] + 아파요 が病院での合言葉です。",
       "title_es": "¡Partes del Cuerpo Completadas!",
       "message_es": "¡Buen trabajo! Ahora puedes señalar partes del cuerpo y describir dolores en coreano. Recuerda: [parte del cuerpo] + 아파요 es tu atajo para cualquier visita al médico.",
-      "title_ja": "体の部位編、修了！"
+      "title_ja": "体の部位編、修了！",
+      "title_de": "Körperteile abgeschlossen!",
+      "title_fr": "Parties du corps terminées !",
+      "title_id": "Anggota Tubuh Selesai!",
+      "title_th": "จบบทอวัยวะในร่างกายแล้ว!",
+      "title_vi": "Hoàn thành phần Các bộ phận cơ thể!",
+      "message_de": "Gut gemacht! Du kannst jetzt auf Körperteile zeigen und auf Koreanisch Schmerzen und Beschwerden beschreiben. Denk daran: [Körperteil] + 아파요 ist dein Universalsatz für jeden Arztbesuch.",
+      "message_fr": "Beau travail ! Vous pouvez désormais désigner les parties du corps et décrire vos douleurs en coréen. Retenez bien : [partie du corps] + 아파요 est votre formule passe-partout à chaque visite chez le médecin.",
+      "message_id": "Kerja bagus! Sekarang Anda bisa menunjuk bagian tubuh dan menjelaskan rasa sakit dalam bahasa Korea. Ingat: [bagian tubuh] + 아파요 adalah jalan pintas Anda untuk setiap kunjungan ke dokter.",
+      "message_th": "เยี่ยมมาก! ตอนนี้คุณชี้อวัยวะต่าง ๆ และบอกอาการเจ็บปวดเป็นภาษาเกาหลีได้แล้ว จำไว้ว่า [อวัยวะ] + 아파요 คือประโยคลัดสำหรับทุกครั้งที่ไปพบแพทย์",
+      "message_vi": "Làm tốt lắm! Giờ bạn có thể chỉ vào các bộ phận cơ thể và mô tả cơn đau bằng tiếng Hàn. Hãy nhớ: [bộ phận cơ thể] + 아파요 là mẫu câu tắt cho mọi lần đi khám bệnh."
     }
   ]
 }

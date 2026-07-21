@@ -9,7 +9,14 @@
       "first_step": 1,
       "last_step": 23,
       "time_minutes": 14,
-      "name_es": "Días y Hora"
+      "name_es": "Días y Hora",
+      "name_de": "Wochentage & Uhrzeit",
+      "name_fr": "Jours et heure",
+      "name_id": "Hari & Waktu",
+      "name_ja": "日付・時間",
+      "name_th": "วันและเวลา",
+      "name_vi": "Thứ và Giờ giấc",
+      "name_zh_tw": "星期與時間"
     }
   ],
   "steps": [
@@ -60,7 +67,53 @@
         "label": "Truco de memoria para los días",
         "text": "월 = Luna (月), 화 = Fuego (火), 수 = Agua (水), 목 = Madera (木), 금 = Oro (金), 토 = Tierra (土), 일 = Sol (日) — ¡igual que los días en japonés!"
       },
-      "title_ja": "韓国語の曜日と時間"
+      "title_ja": "韓国語の曜日と時間",
+      "title_de": "Wochentage und Uhrzeit auf Koreanisch",
+      "title_fr": "Les jours et l'heure en coréen",
+      "title_id": "Hari dan Waktu dalam Bahasa Korea",
+      "title_th": "วันในสัปดาห์และเวลาในภาษาเกาหลี",
+      "title_vi": "Thứ và giờ giấc trong tiếng Hàn",
+      "body_de": "Die koreanischen Wochentage stammen aus dem chinesischen Fünf-Elemente-System, ergänzt um Sonne und Mond. Für Stunden werden die rein koreanischen Zahlen verwendet (하나~열), für Minuten dagegen die sinokoreanischen Zahlen (일~오십구). Wenn du diese Aufteilung beherrschst, kannst du jede Uhrzeit auf Koreanisch angeben.",
+      "rules_de": [
+        "Wochentage: 월(Mo), 화(Di), 수(Mi), 목(Do), 금(Fr), 토(Sa), 일(So) + 요일",
+        "Stunden: rein koreanische Zahlen verwenden → 한 시 (1 Uhr), 두 시 (2 Uhr)",
+        "Minuten: sinokoreanische Zahlen verwenden → 오 분 (5 Min.), 삼십 분 (30 Min.)",
+        "Vormittag/Nachmittag: 오전 (vormittags/AM), 오후 (nachmittags/PM)"
+      ],
+      "body_fr": "Les jours de la semaine coréens proviennent du système chinois des cinq éléments, auxquels s'ajoutent le soleil et la lune. Les heures utilisent les nombres coréens natifs (하나~열), tandis que les minutes utilisent les nombres sino-coréens (일~오십구). Maîtrisez cette distinction et vous pourrez dire n'importe quelle heure en coréen.",
+      "rules_fr": [
+        "Jours : 월(lun), 화(mar), 수(mer), 목(jeu), 금(ven), 토(sam), 일(dim) + 요일",
+        "Heures : utilisez les nombres coréens natifs → 한 시 (1 heure), 두 시 (2 heures)",
+        "Minutes : utilisez les nombres sino-coréens → 오 분 (5 min), 삼십 분 (30 min)",
+        "AM/PM : 오전 (matin/AM), 오후 (après-midi/PM)"
+      ],
+      "body_id": "Nama hari dalam bahasa Korea berasal dari sistem lima unsur Tiongkok ditambah matahari dan bulan. Jam menggunakan angka asli Korea (하나~열), sedangkan menit menggunakan angka Sino-Korea (일~오십구). Kuasai pembagian ini dan Anda bisa menyebutkan waktu apa pun dalam bahasa Korea.",
+      "rules_id": [
+        "Hari: 월(Sen), 화(Sel), 수(Rab), 목(Kam), 금(Jum), 토(Sab), 일(Min) + 요일",
+        "Jam: gunakan angka asli Korea → 한 시 (pukul 1), 두 시 (pukul 2)",
+        "Menit: gunakan angka Sino-Korea → 오 분 (5 menit), 삼십 분 (30 menit)",
+        "AM/PM: 오전 (pagi/AM), 오후 (siang-sore/PM)"
+      ],
+      "rules_ja": [
+        "曜日：월（月）、화（火）、수（水）、목（木）、금（金）、토（土）、일（日）+ 요일",
+        "時間：固有語数字を使う→한 시（1時）、두 시（2時）",
+        "分：漢数字を使う→오 분（5分）、삼십 분（30分）",
+        "午前・午後：오전（午前/AM）、오후（午後/PM）"
+      ],
+      "body_th": "วันในสัปดาห์ของภาษาเกาหลีมาจากระบบธาตุทั้งห้าของจีน บวกกับดวงอาทิตย์และดวงจันทร์ ชั่วโมงใช้ตัวเลขเกาหลีแท้ (하나~열) ส่วนนาทีใช้ตัวเลขจีน-เกาหลี (일~오십구) เมื่อเข้าใจการแบ่งนี้แล้ว คุณก็บอกเวลาใดก็ได้เป็นภาษาเกาหลี",
+      "rules_th": [
+        "วัน: 월(จันทร์), 화(อังคาร), 수(พุธ), 목(พฤหัสบดี), 금(ศุกร์), 토(เสาร์), 일(อาทิตย์) + 요일",
+        "ชั่วโมง: ใช้ตัวเลขเกาหลีแท้ → 한 시 (1 นาฬิกา), 두 시 (2 นาฬิกา)",
+        "นาที: ใช้ตัวเลขจีน-เกาหลี → 오 분 (5 นาที), 삼십 분 (30 นาที)",
+        "ก่อนเที่ยง/หลังเที่ยง: 오전 (ตอนเช้า/AM), 오후 (ตอนบ่าย/PM)"
+      ],
+      "body_vi": "Tên các ngày trong tuần của tiếng Hàn bắt nguồn từ hệ ngũ hành của Trung Hoa cộng thêm mặt trời và mặt trăng. Giờ dùng số thuần Hàn (하나~열), còn phút dùng số Hán-Hàn (일~오십구). Nắm vững sự phân chia này là bạn có thể nói bất kỳ giờ nào bằng tiếng Hàn.",
+      "rules_vi": [
+        "Ngày: 월(thứ Hai), 화(thứ Ba), 수(thứ Tư), 목(thứ Năm), 금(thứ Sáu), 토(thứ Bảy), 일(Chủ nhật) + 요일",
+        "Giờ: dùng số thuần Hàn → 한 시 (1 giờ), 두 시 (2 giờ)",
+        "Phút: dùng số Hán-Hàn → 오 분 (5 phút), 삼십 분 (30 phút)",
+        "Sáng/chiều: 오전 (buổi sáng/AM), 오후 (buổi chiều/PM)"
+      ]
     },
     {
       "id": 2,
@@ -78,7 +131,12 @@
       "meaning": "Monday — 월 (Moon/Month)",
       "meaning_zh_tw": "星期一——월（月）",
       "meaning_ja": "月曜日 ― 월（月）",
-      "meaning_es": "Lunes — 월 (Luna/Mes)"
+      "meaning_es": "Lunes — 월 (Luna/Mes)",
+      "meaning_de": "Montag — 월 (Mond/Monat)",
+      "meaning_fr": "Lundi — 월 (Lune/Mois)",
+      "meaning_id": "Senin — 월 (Rembulan/Bulan)",
+      "meaning_th": "วันจันทร์ — 월 (ดวงจันทร์/เดือน)",
+      "meaning_vi": "Thứ Hai — 월 (Nguyệt: mặt trăng/tháng)"
     },
     {
       "id": 3,
@@ -96,7 +154,12 @@
       "meaning": "Tuesday — 화 (Fire)",
       "meaning_zh_tw": "星期二——화（火）",
       "meaning_ja": "火曜日 ― 화（火）",
-      "meaning_es": "Martes — 화 (Fuego)"
+      "meaning_es": "Martes — 화 (Fuego)",
+      "meaning_de": "Dienstag — 화 (Feuer)",
+      "meaning_fr": "Mardi — 화 (Feu)",
+      "meaning_id": "Selasa — 화 (Api)",
+      "meaning_th": "วันอังคาร — 화 (ไฟ)",
+      "meaning_vi": "Thứ Ba — 화 (Hỏa: lửa)"
     },
     {
       "id": 4,
@@ -114,7 +177,12 @@
       "meaning": "Wednesday — 수 (Water)",
       "meaning_zh_tw": "星期三——수（水）",
       "meaning_ja": "水曜日 ― 수（水）",
-      "meaning_es": "Miércoles — 수 (Agua)"
+      "meaning_es": "Miércoles — 수 (Agua)",
+      "meaning_de": "Mittwoch — 수 (Wasser)",
+      "meaning_fr": "Mercredi — 수 (Eau)",
+      "meaning_id": "Rabu — 수 (Air)",
+      "meaning_th": "วันพุธ — 수 (น้ำ)",
+      "meaning_vi": "Thứ Tư — 수 (Thủy: nước)"
     },
     {
       "id": 5,
@@ -132,7 +200,12 @@
       "meaning": "Thursday — 목 (Wood/Tree)",
       "meaning_zh_tw": "星期四——목（木）",
       "meaning_ja": "木曜日 ― 목（木）",
-      "meaning_es": "Jueves — 목 (Madera/Árbol)"
+      "meaning_es": "Jueves — 목 (Madera/Árbol)",
+      "meaning_de": "Donnerstag — 목 (Holz/Baum)",
+      "meaning_fr": "Jeudi — 목 (Bois/Arbre)",
+      "meaning_id": "Kamis — 목 (Kayu/Pohon)",
+      "meaning_th": "วันพฤหัสบดี — 목 (ไม้/ต้นไม้)",
+      "meaning_vi": "Thứ Năm — 목 (Mộc: gỗ/cây)"
     },
     {
       "id": 6,
@@ -150,7 +223,12 @@
       "meaning": "Friday — 금 (Gold/Metal)",
       "meaning_zh_tw": "星期五——금（金）",
       "meaning_ja": "金曜日 ― 금（金）",
-      "meaning_es": "Viernes — 금 (Oro/Metal)"
+      "meaning_es": "Viernes — 금 (Oro/Metal)",
+      "meaning_de": "Freitag — 금 (Gold/Metall)",
+      "meaning_fr": "Vendredi — 금 (Or/Métal)",
+      "meaning_id": "Jumat — 금 (Emas/Logam)",
+      "meaning_th": "วันศุกร์ — 금 (ทอง/โลหะ)",
+      "meaning_vi": "Thứ Sáu — 금 (Kim: vàng/kim loại)"
     },
     {
       "id": 7,
@@ -168,7 +246,12 @@
       "meaning": "Saturday — 토 (Earth/Soil)",
       "meaning_zh_tw": "星期六——토（土）",
       "meaning_ja": "土曜日 ― 토（土）",
-      "meaning_es": "Sábado — 토 (Tierra)"
+      "meaning_es": "Sábado — 토 (Tierra)",
+      "meaning_de": "Samstag — 토 (Erde/Boden)",
+      "meaning_fr": "Samedi — 토 (Terre)",
+      "meaning_id": "Sabtu — 토 (Tanah/Bumi)",
+      "meaning_th": "วันเสาร์ — 토 (ดิน/ผืนดิน)",
+      "meaning_vi": "Thứ Bảy — 토 (Thổ: đất)"
     },
     {
       "id": 8,
@@ -186,7 +269,12 @@
       "meaning": "Sunday — 일 (Sun)",
       "meaning_zh_tw": "星期日——일（日）",
       "meaning_ja": "日曜日 ― 일（日）",
-      "meaning_es": "Domingo — 일 (Sol)"
+      "meaning_es": "Domingo — 일 (Sol)",
+      "meaning_de": "Sonntag — 일 (Sonne)",
+      "meaning_fr": "Dimanche — 일 (Soleil)",
+      "meaning_id": "Minggu — 일 (Matahari)",
+      "meaning_th": "วันอาทิตย์ — 일 (ดวงอาทิตย์)",
+      "meaning_vi": "Chủ Nhật — 일 (Nhật: mặt trời)"
     },
     {
       "id": 9,
@@ -220,6 +308,41 @@
         "Miércoles",
         "Viernes",
         "Domingo"
+      ],
+      "prompt_de": "수요일 bedeutet ...",
+      "choices_de": [
+        "Montag",
+        "Mittwoch",
+        "Freitag",
+        "Sonntag"
+      ],
+      "prompt_fr": "수요일 signifie...",
+      "choices_fr": [
+        "Lundi",
+        "Mercredi",
+        "Vendredi",
+        "Dimanche"
+      ],
+      "prompt_id": "수요일 berarti...",
+      "choices_id": [
+        "Senin",
+        "Rabu",
+        "Jumat",
+        "Minggu"
+      ],
+      "prompt_th": "수요일 หมายถึง...",
+      "choices_th": [
+        "วันจันทร์",
+        "วันพุธ",
+        "วันศุกร์",
+        "วันอาทิตย์"
+      ],
+      "prompt_vi": "수요일 có nghĩa là...",
+      "choices_vi": [
+        "Thứ Hai",
+        "Thứ Tư",
+        "Thứ Sáu",
+        "Chủ nhật"
       ]
     },
     {
@@ -234,7 +357,17 @@
       "body_ja": "時刻の伝え方：午前/午後 + 時（固有語数字 + 시）+ 分（漢数字 + 분）。例：오전 두 시 삼십 분（午前2時30分）、오후 다섯 시（午後5時）。",
       "title_es": "Cómo Decir la Hora en Coreano",
       "body_es": "Para decir la hora: di AM/PM + hora (número nativo + 시) + minutos (número sino-coreano + 분). Ejemplo: 오전 두 시 삼십 분 = 2:30 AM. 오후 다섯 시 = 5:00 PM.",
-      "title_ja": "韓国語での時刻の言い方"
+      "title_ja": "韓国語での時刻の言い方",
+      "title_de": "Die Uhrzeit auf Koreanisch angeben",
+      "title_fr": "Dire l'heure en coréen",
+      "title_id": "Menyatakan Waktu dalam Bahasa Korea",
+      "title_th": "การบอกเวลาในภาษาเกาหลี",
+      "title_vi": "Cách nói giờ trong tiếng Hàn",
+      "body_de": "So gibst du die Uhrzeit an: vormittags/nachmittags + Stunde (rein koreanische Zahl + 시) + Minute (sinokoreanische Zahl + 분). Beispiel: 오전 두 시 삼십 분 = 2:30 Uhr morgens. 오후 다섯 시 = 17:00 Uhr.",
+      "body_fr": "Pour dire l'heure : dites AM/PM + l'heure (nombre natif + 시) + les minutes (nombre sino-coréen + 분). Exemple : 오전 두 시 삼십 분 = 2 h 30 du matin. 오후 다섯 시 = 17 h 00.",
+      "body_id": "Cara menyebutkan waktu: ucapkan AM/PM + jam (angka asli Korea + 시) + menit (angka Sino-Korea + 분). Contoh: 오전 두 시 삼십 분 = pukul 02.30 pagi. 오후 다섯 시 = pukul 17.00.",
+      "body_th": "วิธีบอกเวลา: พูดก่อนเที่ยง/หลังเที่ยง + ชั่วโมง (ตัวเลขเกาหลีแท้ + 시) + นาที (ตัวเลขจีน-เกาหลี + 분) ตัวอย่าง: 오전 두 시 삼십 분 = 2:30 น. 오후 다섯 시 = 17:00 น.",
+      "body_vi": "Cách nói giờ: nói sáng/chiều + giờ (số thuần Hàn + 시) + phút (số Hán-Hàn + 분). Ví dụ: 오전 두 시 삼십 분 = 2:30 sáng. 오후 다섯 시 = 5:00 chiều."
     },
     {
       "id": 11,
@@ -250,7 +383,12 @@
       "meaning": "O'clock / hour — 두 시 = 2 o'clock (uses native Korean number)",
       "meaning_zh_tw": "點鐘 / 小時——두 시＝2點鐘（使用固有語數字）",
       "meaning_ja": "時 ― 두 시（2時）；固有語数字と使う",
-      "meaning_es": "En punto / hora — 두 시 = las 2 en punto (usa número nativo coreano)"
+      "meaning_es": "En punto / hora — 두 시 = las 2 en punto (usa número nativo coreano)",
+      "meaning_de": "Uhr / Stunde — 두 시 = 2 Uhr (mit rein koreanischer Zahl)",
+      "meaning_fr": "Heure (pour les heures pleines) — 두 시 = 2 heures (avec les nombres coréens natifs)",
+      "meaning_id": "Pukul / jam — 두 시 = pukul 2 (memakai angka asli Korea)",
+      "meaning_th": "นาฬิกา / โมง — 두 시 = 2 นาฬิกา (ใช้กับตัวเลขเกาหลีแท้)",
+      "meaning_vi": "Giờ (đúng) — 두 시 = 2 giờ (dùng với số đếm thuần Hàn)"
     },
     {
       "id": 12,
@@ -266,7 +404,12 @@
       "meaning": "Minute — 삼십 분 = 30 minutes (uses Sino-Korean number)",
       "meaning_zh_tw": "分鐘——삼십 분＝30分鐘（使用漢字語數字）",
       "meaning_ja": "分 ― 삼십 분（30分）；漢数字と使う",
-      "meaning_es": "Minuto — 삼십 분 = 30 minutos (usa número sino-coreano)"
+      "meaning_es": "Minuto — 삼십 분 = 30 minutos (usa número sino-coreano)",
+      "meaning_de": "Minute — 삼십 분 = 30 Minuten (mit sinokoreanischer Zahl)",
+      "meaning_fr": "Minute — 삼십 분 = 30 minutes (avec les nombres sino-coréens)",
+      "meaning_id": "Menit — 삼십 분 = 30 menit (memakai angka Sino-Korea)",
+      "meaning_th": "นาที — 삼십 분 = 30 นาที (ใช้กับตัวเลขจีน-เกาหลี)",
+      "meaning_vi": "Phút — 삼십 분 = 30 phút (dùng với số đếm Hán-Hàn)"
     },
     {
       "id": 13,
@@ -282,7 +425,12 @@
       "meaning": "Half — 두 시 반 = 2:30 (half past two)",
       "meaning_zh_tw": "半——두 시 반＝兩點半",
       "meaning_ja": "半 ― 두 시 반（2時半）",
-      "meaning_es": "Media hora / mitad — 두 시 반 = las 2 y media"
+      "meaning_es": "Media hora / mitad — 두 시 반 = las 2 y media",
+      "meaning_de": "halb / Hälfte — 두 시 반 = 2:30 Uhr (halb drei)",
+      "meaning_fr": "Demie — 두 시 반 = 2 h 30 (deux heures et demie)",
+      "meaning_id": "Setengah — 두 시 반 = pukul 2.30 (setengah tiga)",
+      "meaning_th": "ครึ่ง — 두 시 반 = 2 นาฬิกาครึ่ง (สองโมงครึ่ง)",
+      "meaning_vi": "Rưỡi / nửa — 두 시 반 = 2 giờ rưỡi"
     },
     {
       "id": 14,
@@ -299,7 +447,12 @@
       "meaning": "AM / morning — 오전 열 시 = 10:00 AM",
       "meaning_zh_tw": "上午 / AM——오전 열 시＝上午10點",
       "meaning_ja": "午前 ― 오전 열 시（午前10時）",
-      "meaning_es": "AM / por la mañana — 오전 열 시 = las 10:00 AM"
+      "meaning_es": "AM / por la mañana — 오전 열 시 = las 10:00 AM",
+      "meaning_de": "vormittags / AM — 오전 열 시 = 10:00 Uhr vormittags",
+      "meaning_fr": "Du matin / AM — 오전 열 시 = 10 h 00 du matin",
+      "meaning_id": "AM / pagi — 오전 열 시 = pukul 10.00 pagi",
+      "meaning_th": "ก่อนเที่ยง / ตอนเช้า — 오전 열 시 = 10:00 น.",
+      "meaning_vi": "Buổi sáng / trước trưa (AM) — 오전 열 시 = 10 giờ sáng"
     },
     {
       "id": 15,
@@ -316,7 +469,12 @@
       "meaning": "PM / afternoon — 오후 세 시 = 3:00 PM",
       "meaning_zh_tw": "下午 / PM——오후 세 시＝下午3點",
       "meaning_ja": "午後 ― 오후 세 시（午後3時）",
-      "meaning_es": "PM / por la tarde — 오후 세 시 = las 3:00 PM"
+      "meaning_es": "PM / por la tarde — 오후 세 시 = las 3:00 PM",
+      "meaning_de": "nachmittags / PM — 오후 세 시 = 15:00 Uhr",
+      "meaning_fr": "De l'après-midi / PM — 오후 세 시 = 15 h 00",
+      "meaning_id": "PM / siang — 오후 세 시 = pukul 3.00 sore",
+      "meaning_th": "หลังเที่ยง / ตอนบ่าย — 오후 세 시 = 15:00 น.",
+      "meaning_vi": "Buổi chiều / sau trưa (PM) — 오후 세 시 = 3 giờ chiều"
     },
     {
       "id": 16,
@@ -333,7 +491,12 @@
       "meaning": "Today",
       "meaning_zh_tw": "今天",
       "meaning_ja": "今日",
-      "meaning_es": "Hoy"
+      "meaning_es": "Hoy",
+      "meaning_de": "heute",
+      "meaning_fr": "Aujourd'hui",
+      "meaning_id": "Hari ini",
+      "meaning_th": "วันนี้",
+      "meaning_vi": "Hôm nay"
     },
     {
       "id": 17,
@@ -350,7 +513,12 @@
       "meaning": "Tomorrow",
       "meaning_zh_tw": "明天",
       "meaning_ja": "明日",
-      "meaning_es": "Mañana"
+      "meaning_es": "Mañana",
+      "meaning_de": "morgen",
+      "meaning_fr": "Demain",
+      "meaning_id": "Besok",
+      "meaning_th": "พรุ่งนี้",
+      "meaning_vi": "Ngày mai"
     },
     {
       "id": 18,
@@ -367,7 +535,12 @@
       "meaning": "Yesterday",
       "meaning_zh_tw": "昨天",
       "meaning_ja": "昨日",
-      "meaning_es": "Ayer"
+      "meaning_es": "Ayer",
+      "meaning_de": "gestern",
+      "meaning_fr": "Hier",
+      "meaning_id": "Kemarin",
+      "meaning_th": "เมื่อวาน",
+      "meaning_vi": "Hôm qua"
     },
     {
       "id": 19,
@@ -384,7 +557,12 @@
       "meaning": "Now / right now",
       "meaning_zh_tw": "現在 / 此刻",
       "meaning_ja": "今・今すぐ",
-      "meaning_es": "Ahora / en este momento"
+      "meaning_es": "Ahora / en este momento",
+      "meaning_de": "jetzt / gerade jetzt",
+      "meaning_fr": "Maintenant / tout de suite",
+      "meaning_id": "Sekarang / saat ini",
+      "meaning_th": "ตอนนี้ / เดี๋ยวนี้",
+      "meaning_vi": "Bây giờ / ngay lúc này"
     },
     {
       "id": 20,
@@ -401,7 +579,12 @@
       "meaning": "Weekend — 주말에 뭐 해요? = What are you doing on the weekend?",
       "meaning_zh_tw": "週末——주말에 뭐 해요？＝週末你有什麼計畫？",
       "meaning_ja": "週末 ― 주말에 뭐 해요？（週末は何をしますか？）",
-      "meaning_es": "Fin de semana — 주말에 뭐 해요? = ¿Qué harás el fin de semana?"
+      "meaning_es": "Fin de semana — 주말에 뭐 해요? = ¿Qué harás el fin de semana?",
+      "meaning_de": "Wochenende — 주말에 뭐 해요? = Was machst du am Wochenende?",
+      "meaning_fr": "Week-end — 주말에 뭐 해요? = Qu'est-ce que tu fais ce week-end ?",
+      "meaning_id": "Akhir pekan — 주말에 뭐 해요? = Apa rencanamu akhir pekan ini?",
+      "meaning_th": "สุดสัปดาห์ — 주말에 뭐 해요? = สุดสัปดาห์นี้ทำอะไรบ้าง?",
+      "meaning_vi": "Cuối tuần — 주말에 뭐 해요? = Cuối tuần bạn làm gì?"
     },
     {
       "id": 21,
@@ -435,6 +618,41 @@
         "Coreano nativo (하나, 둘, 셋...)",
         "Cualquiera sirve",
         "Números romanos"
+      ],
+      "prompt_de": "Welches Zahlensystem verwendet man mit 시 (Uhr)?",
+      "choices_de": [
+        "Sinokoreanisch (일, 이, 삼...)",
+        "Rein koreanisch (하나, 둘, 셋...)",
+        "Beides funktioniert",
+        "Römische Zahlen"
+      ],
+      "prompt_fr": "Quel système de numération utilise-t-on avec 시 (heure) ?",
+      "choices_fr": [
+        "Sino-coréen (일, 이, 삼...)",
+        "Coréen natif (하나, 둘, 셋...)",
+        "L'un ou l'autre convient",
+        "Chiffres romains"
+      ],
+      "prompt_id": "Sistem angka mana yang dipakai bersama 시 (jam)?",
+      "choices_id": [
+        "Sino-Korea (일, 이, 삼...)",
+        "Asli Korea (하나, 둘, 셋...)",
+        "Keduanya bisa dipakai",
+        "Angka Romawi"
+      ],
+      "prompt_th": "ใช้ระบบตัวเลขแบบใดกับ 시 (นาฬิกา)?",
+      "choices_th": [
+        "จีน-เกาหลี (일, 이, 삼...)",
+        "เกาหลีแท้ (하나, 둘, 셋...)",
+        "ใช้ได้ทั้งสองแบบ",
+        "เลขโรมัน"
+      ],
+      "prompt_vi": "Bạn dùng hệ số đếm nào với 시 (giờ)?",
+      "choices_vi": [
+        "Số Hán-Hàn (일, 이, 삼...)",
+        "Số thuần Hàn (하나, 둘, 셋...)",
+        "Dùng loại nào cũng được",
+        "Số La Mã"
       ]
     },
     {
@@ -469,6 +687,41 @@
         "2:30 AM",
         "2:00 PM",
         "2:30 PM"
+      ],
+      "prompt_de": "오후 두 시 반 bedeutet ...",
+      "choices_de": [
+        "2:00 Uhr morgens",
+        "2:30 Uhr morgens",
+        "14:00 Uhr",
+        "14:30 Uhr"
+      ],
+      "prompt_fr": "오후 두 시 반 signifie...",
+      "choices_fr": [
+        "2 h 00 du matin",
+        "2 h 30 du matin",
+        "14 h 00",
+        "14 h 30"
+      ],
+      "prompt_id": "오후 두 시 반 berarti...",
+      "choices_id": [
+        "Pukul 02.00 dini hari",
+        "Pukul 02.30 dini hari",
+        "Pukul 14.00",
+        "Pukul 14.30"
+      ],
+      "prompt_th": "오후 두 시 반 หมายถึง...",
+      "choices_th": [
+        "ตี 2 ตรง",
+        "ตี 2 ครึ่ง",
+        "บ่าย 2 โมงตรง",
+        "บ่าย 2 โมงครึ่ง"
+      ],
+      "prompt_vi": "오후 두 시 반 có nghĩa là...",
+      "choices_vi": [
+        "2:00 sáng",
+        "2:30 sáng",
+        "2:00 chiều",
+        "2:30 chiều"
       ]
     },
     {
@@ -484,7 +737,17 @@
       "message_ja": "素晴らしい！曜日と時刻の言い方をマスターしました。지금 몇 시예요？（今何時ですか？）と聞かれても自信を持って答えられます！",
       "title_es": "¡Días y Hora Completados!",
       "message_es": "¡Excelente! Ahora conoces la semana completa en coreano y puedes decir la hora. ¡La próxima vez que alguien pregunte 지금 몇 시예요? (¿Qué hora es?), podrás responder con confianza!",
-      "title_ja": "曜日と時間編、修了！"
+      "title_ja": "曜日と時間編、修了！",
+      "title_de": "Wochentage & Uhrzeit abgeschlossen!",
+      "title_fr": "Jours et heure terminés !",
+      "title_id": "Hari & Waktu Selesai!",
+      "title_th": "จบบทวันและเวลาแล้ว!",
+      "title_vi": "Hoàn thành phần Thứ và Giờ giấc!",
+      "message_de": "Ausgezeichnet! Du kennst jetzt die komplette koreanische Woche und kannst die Uhrzeit angeben. Wenn dich das nächste Mal jemand 지금 몇 시예요? (Wie spät ist es?) fragt, kannst du selbstbewusst antworten!",
+      "message_fr": "Excellent ! Vous connaissez maintenant toute la semaine coréenne et vous savez dire l'heure. La prochaine fois que quelqu'un vous demandera 지금 몇 시예요? (Quelle heure est-il ?), vous pourrez répondre avec assurance !",
+      "message_id": "Luar biasa! Sekarang Anda menguasai seluruh nama hari dalam bahasa Korea dan bisa menyebutkan waktu. Lain kali jika ada yang bertanya 지금 몇 시예요? (Sekarang jam berapa?), Anda bisa menjawab dengan percaya diri!",
+      "message_th": "ยอดเยี่ยม! ตอนนี้คุณรู้จักวันในสัปดาห์ของภาษาเกาหลีครบทุกวันและบอกเวลาได้แล้ว ครั้งต่อไปที่มีคนถามว่า 지금 몇 시예요? (ตอนนี้กี่โมงแล้ว?) คุณก็ตอบได้อย่างมั่นใจ!",
+      "message_vi": "Xuất sắc! Giờ bạn đã biết trọn vẹn các ngày trong tuần bằng tiếng Hàn và có thể nói giờ. Lần tới khi ai đó hỏi 지금 몇 시예요? (Bây giờ là mấy giờ?), bạn có thể tự tin trả lời!"
     }
   ]
 }

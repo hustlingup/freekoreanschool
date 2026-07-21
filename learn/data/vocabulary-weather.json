@@ -9,7 +9,14 @@
       "first_step": 1,
       "last_step": 20,
       "time_minutes": 12,
-      "name_es": "El Tiempo"
+      "name_es": "El Tiempo",
+      "name_de": "Wetter",
+      "name_fr": "La météo",
+      "name_id": "Cuaca",
+      "name_ja": "天気",
+      "name_th": "สภาพอากาศ",
+      "name_vi": "Thời tiết",
+      "name_zh_tw": "天氣"
     }
   ],
   "steps": [
@@ -42,7 +49,17 @@
         "label": "Patrón de adjetivo útil",
         "text": "La mayoría de las palabras del tiempo usan -아요/-어요 para describir cómo está el tiempo ahora. Ej: 추워요 (hace frío), 더워요 (hace calor). En el habla, omite la forma -다."
       },
-      "title_ja": "韓国語の天気表現"
+      "title_ja": "韓国語の天気表現",
+      "title_de": "Das Wetter in Korea",
+      "title_fr": "La météo en Corée",
+      "title_id": "Cuaca di Korea",
+      "title_th": "สภาพอากาศในภาษาเกาหลี",
+      "title_vi": "Thời tiết trong tiếng Hàn",
+      "body_de": "Korea hat vier ausgeprägte Jahreszeiten — einen kalten, trockenen Winter, einen milden, windigen Frühling, einen heißen und schwülen Monsunsommer und einen klaren, farbenfrohen Herbst. Das Wetter ist eines der häufigsten Smalltalk-Themen in der koreanischen Kultur.",
+      "body_fr": "La Corée connaît quatre saisons bien marquées : un hiver froid et sec, un printemps doux et venteux, un été chaud et humide de mousson, et un automne vif et coloré. La météo est l'un des sujets de conversation les plus courants dans la culture coréenne.",
+      "body_id": "Korea memiliki empat musim yang jelas berbeda — musim dingin yang dingin dan kering; musim semi yang hangat dan berangin; musim panas yang panas dan lembap dengan hujan monsun; serta musim gugur yang sejuk dan berwarna-warni. Cuaca adalah salah satu topik obrolan ringan yang paling umum dalam budaya Korea.",
+      "body_th": "เกาหลีมีสี่ฤดูกาลที่แตกต่างกันชัดเจน — ฤดูหนาวที่หนาวเย็นและแห้ง ฤดูใบไม้ผลิที่อบอุ่นและมีลมแรง ฤดูร้อนที่ร้อนชื้นพร้อมฝนมรสุม และฤดูใบไม้ร่วงที่อากาศสดใสเต็มไปด้วยสีสัน สภาพอากาศเป็นหนึ่งในหัวข้อสนทนาเล็ก ๆ น้อย ๆ ที่พบบ่อยที่สุดในวัฒนธรรมเกาหลี",
+      "body_vi": "Hàn Quốc có bốn mùa rõ rệt — mùa đông lạnh và khô; mùa xuân ấm áp, nhiều gió; mùa hè nóng ẩm với mùa mưa; và mùa thu se lạnh, rực rỡ sắc màu. Thời tiết là một trong những chủ đề trò chuyện xã giao phổ biến nhất trong văn hóa Hàn Quốc."
     },
     {
       "id": 2,
@@ -59,7 +76,12 @@
       "meaning": "Weather — 날씨 어때요? = How's the weather?",
       "meaning_zh_tw": "天氣——날씨 어때요？＝天氣怎麼樣？",
       "meaning_ja": "天気 ― 날씨 어때요？（天気はどうですか？）",
-      "meaning_es": "Tiempo / clima — 날씨 어때요? = ¿Qué tiempo hace?"
+      "meaning_es": "Tiempo / clima — 날씨 어때요? = ¿Qué tiempo hace?",
+      "meaning_de": "Wetter — 날씨 어때요? = Wie ist das Wetter?",
+      "meaning_fr": "Temps / météo — 날씨 어때요? = Quel temps fait-il ?",
+      "meaning_id": "Cuaca — 날씨 어때요? = Bagaimana cuacanya?",
+      "meaning_th": "สภาพอากาศ — 날씨 어때요? = อากาศเป็นอย่างไรบ้าง?",
+      "meaning_vi": "Thời tiết — 날씨 어때요? = Thời tiết thế nào?"
     },
     {
       "id": 3,
@@ -76,7 +98,12 @@
       "meaning": "Clear / sunny — 날씨가 맑아요 = the weather is clear",
       "meaning_zh_tw": "晴朗——날씨가 맑아요＝天氣很晴朗",
       "meaning_ja": "晴れ・澄んでいる ― 날씨가 맑아요（天気が晴れています）",
-      "meaning_es": "Despejado / soleado — 날씨가 맑아요 = el tiempo está despejado"
+      "meaning_es": "Despejado / soleado — 날씨가 맑아요 = el tiempo está despejado",
+      "meaning_de": "Klar / sonnig — 날씨가 맑아요 = das Wetter ist klar",
+      "meaning_fr": "Être dégagé / ensoleillé — 날씨가 맑아요 = le temps est dégagé",
+      "meaning_id": "Cerah — 날씨가 맑아요 = cuacanya cerah",
+      "meaning_th": "แจ่มใส / ท้องฟ้าโปร่ง — 날씨가 맑아요 = อากาศแจ่มใส",
+      "meaning_vi": "Trong xanh / nắng đẹp — 날씨가 맑아요 = trời quang đãng"
     },
     {
       "id": 4,
@@ -94,7 +121,12 @@
       "meaning": "Cloudy / overcast",
       "meaning_zh_tw": "多雲 / 陰天",
       "meaning_ja": "曇り・どんより",
-      "meaning_es": "Nublado / cubierto"
+      "meaning_es": "Nublado / cubierto",
+      "meaning_de": "Bewölkt / bedeckt",
+      "meaning_fr": "Être nuageux / couvert",
+      "meaning_id": "Berawan / mendung",
+      "meaning_th": "มีเมฆมาก / ฟ้าครึ้ม",
+      "meaning_vi": "Nhiều mây / âm u"
     },
     {
       "id": 5,
@@ -110,7 +142,12 @@
       "meaning": "Rain — 비가 와요 = it's raining",
       "meaning_zh_tw": "雨——비가 와요＝正在下雨",
       "meaning_ja": "雨 ― 비가 와요（雨が降っています）",
-      "meaning_es": "Lluvia — 비가 와요 = está lloviendo"
+      "meaning_es": "Lluvia — 비가 와요 = está lloviendo",
+      "meaning_de": "Regen — 비가 와요 = es regnet",
+      "meaning_fr": "Pluie — 비가 와요 = il pleut",
+      "meaning_id": "Hujan — 비가 와요 = sedang hujan",
+      "meaning_th": "ฝน — 비가 와요 = ฝนกำลังตก",
+      "meaning_vi": "Mưa — 비가 와요 = trời đang mưa"
     },
     {
       "id": 6,
@@ -126,7 +163,12 @@
       "meaning": "Snow — 눈이 와요 = it's snowing",
       "meaning_zh_tw": "雪——눈이 와요＝正在下雪",
       "meaning_ja": "雪 ― 눈이 와요（雪が降っています）",
-      "meaning_es": "Nieve — 눈이 와요 = está nevando"
+      "meaning_es": "Nieve — 눈이 와요 = está nevando",
+      "meaning_de": "Schnee — 눈이 와요 = es schneit",
+      "meaning_fr": "Neige — 눈이 와요 = il neige",
+      "meaning_id": "Salju — 눈이 와요 = sedang turun salju",
+      "meaning_th": "หิมะ — 눈이 와요 = หิมะกำลังตก",
+      "meaning_vi": "Tuyết — 눈이 와요 = trời đang có tuyết"
     },
     {
       "id": 7,
@@ -143,7 +185,12 @@
       "meaning": "Wind — 바람이 불어요 = the wind is blowing",
       "meaning_zh_tw": "風——바람이 불어요＝風在吹",
       "meaning_ja": "風 ― 바람이 불어요（風が吹いています）",
-      "meaning_es": "Viento — 바람이 불어요 = el viento está soplando"
+      "meaning_es": "Viento — 바람이 불어요 = el viento está soplando",
+      "meaning_de": "Wind — 바람이 불어요 = der Wind weht",
+      "meaning_fr": "Vent — 바람이 불어요 = le vent souffle",
+      "meaning_id": "Angin — 바람이 불어요 = angin sedang bertiup",
+      "meaning_th": "ลม — 바람이 불어요 = ลมกำลังพัด",
+      "meaning_vi": "Gió — 바람이 불어요 = gió đang thổi"
     },
     {
       "id": 8,
@@ -161,7 +208,12 @@
       "meaning": "It's hot — 너무 더워요 = it's too hot",
       "meaning_zh_tw": "很熱——너무 더워요＝太熱了",
       "meaning_ja": "暑いです ― 너무 더워요（暑すぎる）",
-      "meaning_es": "Hace calor — 너무 더워요 = hace demasiado calor"
+      "meaning_es": "Hace calor — 너무 더워요 = hace demasiado calor",
+      "meaning_de": "Es ist heiß — 너무 더워요 = es ist zu heiß",
+      "meaning_fr": "Il fait chaud — 너무 더워요 = il fait trop chaud",
+      "meaning_id": "Panas — 너무 더워요 = terlalu panas",
+      "meaning_th": "ร้อน — 너무 더워요 = ร้อนเกินไป",
+      "meaning_vi": "Trời nóng — 너무 더워요 = trời nóng quá"
     },
     {
       "id": 9,
@@ -179,7 +231,12 @@
       "meaning": "It's cold — 많이 추워요 = it's very cold",
       "meaning_zh_tw": "很冷——많이 추워요＝非常冷",
       "meaning_ja": "寒いです ― 많이 추워요（とても寒い）",
-      "meaning_es": "Hace frío — 많이 추워요 = hace mucho frío"
+      "meaning_es": "Hace frío — 많이 추워요 = hace mucho frío",
+      "meaning_de": "Es ist kalt — 많이 추워요 = es ist sehr kalt",
+      "meaning_fr": "Il fait froid — 많이 추워요 = il fait très froid",
+      "meaning_id": "Dingin — 많이 추워요 = sangat dingin",
+      "meaning_th": "หนาว — 많이 추워요 = หนาวมาก",
+      "meaning_vi": "Trời lạnh — 많이 추워요 = trời rất lạnh"
     },
     {
       "id": 10,
@@ -198,7 +255,12 @@
       "meaning": "It's warm — pleasant, comfortable temperature",
       "meaning_zh_tw": "溫暖——舒適宜人的溫度",
       "meaning_ja": "暖かいです ― 心地よい気温",
-      "meaning_es": "Está templado / cálido — temperatura agradable y cómoda"
+      "meaning_es": "Está templado / cálido — temperatura agradable y cómoda",
+      "meaning_de": "Es ist warm — angenehme, behagliche Temperatur",
+      "meaning_fr": "Il fait doux — température agréable et confortable",
+      "meaning_id": "Hangat — suhu yang nyaman dan menyenangkan",
+      "meaning_th": "อบอุ่น — อุณหภูมิที่กำลังสบายและน่ารื่นรมย์",
+      "meaning_vi": "Trời ấm áp — nhiệt độ dễ chịu, thoải mái"
     },
     {
       "id": 11,
@@ -217,7 +279,12 @@
       "meaning": "It's cool / refreshing — pleasantly cool, like autumn air",
       "meaning_zh_tw": "涼爽——令人愉快的清涼，如秋日空氣",
       "meaning_ja": "涼しいです ― 秋の空気のような爽やかさ",
-      "meaning_es": "Está fresco / refrescante — fresco y agradable, como el aire de otoño"
+      "meaning_es": "Está fresco / refrescante — fresco y agradable, como el aire de otoño",
+      "meaning_de": "Es ist kühl / erfrischend — angenehm kühl wie die Herbstluft",
+      "meaning_fr": "Il fait frais — une fraîcheur agréable, comme l'air d'automne",
+      "meaning_id": "Sejuk / segar — kesejukan yang nyaman, seperti udara musim gugur",
+      "meaning_th": "เย็นสบาย / สดชื่น — เย็นกำลังดี เหมือนอากาศในฤดูใบไม้ร่วง",
+      "meaning_vi": "Trời mát mẻ — mát dễ chịu như không khí mùa thu"
     },
     {
       "id": 12,
@@ -233,7 +300,12 @@
       "meaning": "Spring — famous for cherry blossoms (벚꽃)",
       "meaning_zh_tw": "春天——以櫻花（벚꽃）聞名",
       "meaning_ja": "春 ― 桜（벚꽃）で有名",
-      "meaning_es": "Primavera — famosa por los cerezos en flor (벚꽃)"
+      "meaning_es": "Primavera — famosa por los cerezos en flor (벚꽃)",
+      "meaning_de": "Frühling — berühmt für die Kirschblüte (벚꽃)",
+      "meaning_fr": "Printemps — célèbre pour ses cerisiers en fleurs (벚꽃)",
+      "meaning_id": "Musim semi — terkenal dengan bunga sakura (벚꽃)",
+      "meaning_th": "ฤดูใบไม้ผลิ — มีชื่อเสียงเรื่องดอกซากุระ (벚꽃)",
+      "meaning_vi": "Mùa xuân — nổi tiếng với hoa anh đào (벚꽃)"
     },
     {
       "id": 13,
@@ -250,7 +322,12 @@
       "meaning": "Summer — hot and humid with the monsoon (장마) season",
       "meaning_zh_tw": "夏天——炎熱潮濕，有梅雨季（장마）",
       "meaning_ja": "夏 ― 蒸し暑く梅雨（장마）シーズンがある",
-      "meaning_es": "Verano — caluroso y húmedo con la temporada de monzón (장마)"
+      "meaning_es": "Verano — caluroso y húmedo con la temporada de monzón (장마)",
+      "meaning_de": "Sommer — heiß und schwül mit der Regenzeit (장마)",
+      "meaning_fr": "Été — chaud et humide, avec la saison des pluies (장마)",
+      "meaning_id": "Musim panas — panas dan lembap dengan musim hujan (장마)",
+      "meaning_th": "ฤดูร้อน — ร้อนและชื้น มีฤดูฝน (장마)",
+      "meaning_vi": "Mùa hè — nóng ẩm cùng với mùa mưa (장마)"
     },
     {
       "id": 14,
@@ -267,7 +344,12 @@
       "meaning": "Autumn / fall — crisp weather; stunning foliage at temples",
       "meaning_zh_tw": "秋天——天氣清爽；寺廟的紅葉美不勝收",
       "meaning_ja": "秋 ― 爽やかな気候と寺院の紅葉が美しい",
-      "meaning_es": "Otoño — tiempo fresco; espectacular follaje en los templos"
+      "meaning_es": "Otoño — tiempo fresco; espectacular follaje en los templos",
+      "meaning_de": "Herbst — klare, frische Luft; atemberaubendes Herbstlaub an den Tempeln",
+      "meaning_fr": "Automne — temps vif et sec ; feuillages splendides autour des temples",
+      "meaning_id": "Musim gugur — udara yang segar; dedaunan yang memukau di kuil-kuil",
+      "meaning_th": "ฤดูใบไม้ร่วง — อากาศเย็นสบาย; ใบไม้เปลี่ยนสีที่วัดงดงามตระการตา",
+      "meaning_vi": "Mùa thu — thời tiết se lạnh dễ chịu; lá thu tuyệt đẹp ở các ngôi chùa"
     },
     {
       "id": 15,
@@ -284,7 +366,12 @@
       "meaning": "Winter — cold and dry; ski resorts are popular",
       "meaning_zh_tw": "冬天——寒冷乾燥；滑雪場非常受歡迎",
       "meaning_ja": "冬 ― 寒くて乾燥；スキーリゾートが人気",
-      "meaning_es": "Invierno — frío y seco; las estaciones de esquí son populares"
+      "meaning_es": "Invierno — frío y seco; las estaciones de esquí son populares",
+      "meaning_de": "Winter — kalt und trocken; Skigebiete sind beliebt",
+      "meaning_fr": "Hiver — froid et sec ; les stations de ski sont très prisées",
+      "meaning_id": "Musim dingin — dingin dan kering; resor ski sangat populer",
+      "meaning_th": "ฤดูหนาว — หนาวและแห้ง; ลานสกีได้รับความนิยม",
+      "meaning_vi": "Mùa đông — lạnh và khô; các khu trượt tuyết rất được ưa chuộng"
     },
     {
       "id": 16,
@@ -301,7 +388,12 @@
       "meaning": "Temperature — 온도가 몇 도예요? = What's the temperature?",
       "meaning_zh_tw": "溫度——온도가 몇 도예요？＝現在幾度？",
       "meaning_ja": "温度 ― 온도가 몇 도예요？（気温は何度ですか？）",
-      "meaning_es": "Temperatura — 온도가 몇 도예요? = ¿Cuántos grados hace?"
+      "meaning_es": "Temperatura — 온도가 몇 도예요? = ¿Cuántos grados hace?",
+      "meaning_de": "Temperatur — 온도가 몇 도예요? = Wie viel Grad sind es?",
+      "meaning_fr": "Température — 온도가 몇 도예요? = Combien fait-il ?",
+      "meaning_id": "Suhu — 온도가 몇 도예요? = Berapa derajat suhunya?",
+      "meaning_th": "อุณหภูมิ — 온도가 몇 도예요? = อุณหภูมิกี่องศา?",
+      "meaning_vi": "Nhiệt độ — 온도가 몇 도예요? = Nhiệt độ bao nhiêu độ?"
     },
     {
       "id": 17,
@@ -317,7 +409,7 @@
       ],
       "choices_zh_tw": [
         "很熱",
-        "很風",
+        "風很大",
         "很冷",
         "下雨"
       ],
@@ -335,6 +427,41 @@
         "Hace viento",
         "Hace frío",
         "Está lloviendo"
+      ],
+      "prompt_de": "추워요 bedeutet …",
+      "choices_de": [
+        "Es ist heiß",
+        "Es ist windig",
+        "Es ist kalt",
+        "Es regnet"
+      ],
+      "prompt_fr": "추워요 signifie…",
+      "choices_fr": [
+        "Il fait chaud",
+        "Il y a du vent",
+        "Il fait froid",
+        "Il pleut"
+      ],
+      "prompt_id": "추워요 berarti...",
+      "choices_id": [
+        "Cuacanya panas",
+        "Anginnya kencang",
+        "Cuacanya dingin",
+        "Sedang turun hujan"
+      ],
+      "prompt_th": "추워요 แปลว่า…",
+      "choices_th": [
+        "อากาศร้อน",
+        "ลมแรง",
+        "อากาศหนาว",
+        "ฝนกำลังตก"
+      ],
+      "prompt_vi": "추워요 có nghĩa là...",
+      "choices_vi": [
+        "Trời nóng",
+        "Trời nhiều gió",
+        "Trời lạnh",
+        "Trời đang mưa"
       ]
     },
     {
@@ -369,6 +496,41 @@
         "봄 (primavera)",
         "가을 (otoño)",
         "겨울 (invierno)"
+      ],
+      "prompt_de": "Welche koreanische Jahreszeit ist für die Kirschblüte bekannt?",
+      "choices_de": [
+        "여름 (Sommer)",
+        "봄 (Frühling)",
+        "가을 (Herbst)",
+        "겨울 (Winter)"
+      ],
+      "prompt_fr": "Quelle saison coréenne est célèbre pour les cerisiers en fleurs ?",
+      "choices_fr": [
+        "여름 (été)",
+        "봄 (printemps)",
+        "가을 (automne)",
+        "겨울 (hiver)"
+      ],
+      "prompt_id": "Musim apa di Korea yang terkenal dengan bunga sakura?",
+      "choices_id": [
+        "여름 (musim panas)",
+        "봄 (musim semi)",
+        "가을 (musim gugur)",
+        "겨울 (musim dingin)"
+      ],
+      "prompt_th": "ฤดูใดของเกาหลีที่มีชื่อเสียงเรื่องดอกซากุระ?",
+      "choices_th": [
+        "여름 (ฤดูร้อน)",
+        "봄 (ฤดูใบไม้ผลิ)",
+        "가을 (ฤดูใบไม้ร่วง)",
+        "겨울 (ฤดูหนาว)"
+      ],
+      "prompt_vi": "Mùa nào ở Hàn Quốc nổi tiếng với hoa anh đào?",
+      "choices_vi": [
+        "여름 (mùa hè)",
+        "봄 (mùa xuân)",
+        "가을 (mùa thu)",
+        "겨울 (mùa đông)"
       ]
     },
     {
@@ -403,6 +565,41 @@
         "Está nevando",
         "Está lloviendo",
         "Está soleado"
+      ],
+      "prompt_de": "비가 와요 bedeutet …",
+      "choices_de": [
+        "Der Wind weht",
+        "Es schneit",
+        "Es regnet",
+        "Es ist sonnig"
+      ],
+      "prompt_fr": "비가 와요 signifie…",
+      "choices_fr": [
+        "Le vent souffle",
+        "Il neige",
+        "Il pleut",
+        "Il fait soleil"
+      ],
+      "prompt_id": "비가 와요 berarti...",
+      "choices_id": [
+        "Angin sedang bertiup",
+        "Sedang turun salju",
+        "Sedang turun hujan",
+        "Cuacanya cerah"
+      ],
+      "prompt_th": "비가 와요 แปลว่า…",
+      "choices_th": [
+        "ลมกำลังพัด",
+        "หิมะกำลังตก",
+        "ฝนกำลังตก",
+        "แดดออก"
+      ],
+      "prompt_vi": "비가 와요 có nghĩa là...",
+      "choices_vi": [
+        "Gió đang thổi",
+        "Trời đang có tuyết",
+        "Trời đang mưa",
+        "Trời nắng"
       ]
     },
     {
@@ -418,7 +615,17 @@
       "message_ja": "날씨 이야기 할 수 있어요！（天気について話せます！）天気の雑談は韓国人との会話の糸口になります。오늘 날씨 어때요？（今日の天気はどうですか？）と聞いてみましょう。",
       "title_es": "¡El Tiempo Completado!",
       "message_es": "날씨 이야기 할 수 있어요! (¡Puedes hablar del tiempo!) El tiempo es un gran tema para romper el hielo con amigos coreanos. Pregunta 오늘 날씨 어때요? y observa cómo fluye la conversación.",
-      "title_ja": "天気編、修了！"
+      "title_ja": "天気編、修了！",
+      "title_de": "Wetter abgeschlossen!",
+      "title_fr": "Météo terminée !",
+      "title_id": "Cuaca Selesai!",
+      "title_th": "จบหมวดสภาพอากาศแล้ว!",
+      "title_vi": "Hoàn thành phần Thời tiết!",
+      "message_de": "날씨 이야기 할 수 있어요! (Du kannst über das Wetter sprechen!) Wetter-Smalltalk ist ein hervorragender Einstieg in Gespräche mit koreanischen Freunden. Frag einfach 오늘 날씨 어때요? und schau zu, wie das Gespräch in Gang kommt.",
+      "message_fr": "날씨 이야기 할 수 있어요 ! (Vous savez parler de la météo !) Parler du temps est un excellent moyen de briser la glace avec des amis coréens. Demandez 오늘 날씨 어때요? et regardez la conversation s'installer.",
+      "message_id": "날씨 이야기 할 수 있어요! (Kamu sudah bisa mengobrol soal cuaca!) Obrolan tentang cuaca adalah pemecah kebekuan yang ampuh dengan teman Korea. Coba tanyakan 오늘 날씨 어때요? dan lihat bagaimana percakapan mengalir.",
+      "message_th": "날씨 이야기 할 수 있어요! (คุณคุยเรื่องสภาพอากาศได้แล้ว!) การคุยเรื่องดินฟ้าอากาศเป็นวิธีเปิดบทสนทนาที่ดีเยี่ยมกับเพื่อนชาวเกาหลี ลองถามว่า 오늘 날씨 어때요? (วันนี้อากาศเป็นอย่างไรบ้าง?) แล้วบทสนทนาก็จะดำเนินไปอย่างลื่นไหล",
+      "message_vi": "날씨 이야기 할 수 있어요! (Bạn có thể trò chuyện về thời tiết rồi!) Chuyện phiếm về thời tiết là cách phá băng tuyệt vời với bạn bè Hàn Quốc. Hãy hỏi 오늘 날씨 어때요? và xem cuộc trò chuyện tự nhiên mở ra."
     }
   ]
 }
