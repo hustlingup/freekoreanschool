@@ -3985,13 +3985,29 @@ const ArticlePage = (() => {
     th: 'แหล่งข่าวต้นฉบับ', id: 'Sumber asli'
   };
 
+  /* Shown when an article has no recorded source. Every article published
+     before source capture went in is in exactly this state, so the slot must
+     state the absence rather than render empty under a disclosure that would
+     otherwise read as a promise of a link. */
+  const NO_SOURCE_LABEL = {
+    en: "The original source for this article was not recorded.",
+    ja: "この記事は元記事の情報を記録していません。",
+    'zh-tw': "本文未記錄原始報導出處。",
+    es: "No se registró la fuente original de este artículo.",
+    de: "Für diesen Artikel wurde keine Originalquelle erfasst.",
+    fr: "La source d'origine de cet article n'a pas été enregistrée.",
+    vi: "Bài viết này không lưu thông tin nguồn tin gốc.",
+    th: "บทความนี้ไม่ได้บันทึกแหล่งข่าวต้นฉบับไว้",
+    id: "Sumber asli untuk artikel ini tidak tercatat.",
+  };
+
   function renderSourceLink(a) {
     const slot = document.getElementById('article-source-link');
     if (!slot) return;
     const lang = window.LangManager?.getLang() || 'en';
-    const label = SOURCE_LABEL[lang] || SOURCE_LABEL.en;
     const parts = [];
     if (a.source_url) {
+      const label = SOURCE_LABEL[lang] || SOURCE_LABEL.en;
       const text = a.source_title || a.source_name || a.source_url;
       parts.push(
         `<strong>${newsEscape(label)}:</strong> ` +
@@ -3999,6 +4015,9 @@ const ArticlePage = (() => {
         `style="color:#f5c842;text-decoration:underline;">${newsEscape(text)}</a>` +
         (a.source_name && a.source_title ? ` <span style="opacity:0.75;">— ${newsEscape(a.source_name)}</span>` : '')
       );
+    } else {
+      const label = NO_SOURCE_LABEL[lang] || NO_SOURCE_LABEL.en;
+      parts.push(`<span class="article-no-source" style="opacity:0.8;">${newsEscape(label)}</span>`);
     }
     if (a.published_at) {
       parts.push(`<time itemprop="datePublished" datetime="${newsEscape(a.published_at)}" style="opacity:0.8;">${newsEscape(newsFormatDate(a.published_at))}</time>`);

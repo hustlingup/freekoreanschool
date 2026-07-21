@@ -406,6 +406,9 @@
           bits.push(`<strong>元記事：</strong><a href="${esc(article.source_url)}" target="_blank" rel="noopener nofollow" style="color:#f5c842;text-decoration:underline;">${esc(label)}</a>`
             + (article.source_name && article.source_title ? ` <span style="opacity:0.75;">— ${esc(article.source_name)}</span>` : ''));
         }
+        else {
+          bits.push('<span class="article-no-source" style="opacity:0.8;">この記事は元記事の情報を記録していません。</span>');
+        }
         if (article.published_at) {
           bits.push(`<time datetime="${esc(article.published_at)}" style="opacity:0.8;">${esc(fmtDate(article.published_at))}</time>`);
         }

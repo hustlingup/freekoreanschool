@@ -43,6 +43,13 @@ node scripts/inject-seo.mjs
 # 9 locales (en + ja/zh-tw/es/de/fr/vi/th/id). Rerun after adding/removing any
 # learn/culture/travel/news/root page in any language.
 node scripts/gen-sitemap.cjs
+
+# culture/ + travel/ head metadata: robots, canonical, og:url, hreflang cluster,
+# Schema.org, visible byline. Idempotent and marker-guarded — rerun to restore
+# the work if a generator clobbers it. `--check` verifies without writing and
+# exits 1 on drift. Dates come from scripts/culture-travel-dates.json (derived
+# from real git history — regenerate it only from git, never by hand).
+node scripts/fix-culture-travel-seo.cjs [--check]
 ```
 
 **Do not run** `gen-content-mirrors.cjs`, `gen-root-mirrors.cjs`, or any language-specific `gen-*-site.cjs` scripts during Phase 2 translation work — they overwrite translated prose with English source.
@@ -78,6 +85,7 @@ Localized fields in JSON use `_<lang>` suffixes (e.g. `title_ja`, `body_zh_tw`, 
 ### Localization architecture
 - **8 language versions**: `ja`, `zh-tw`, `es`, `de`, `fr`, `vi`, `th`, `id`
 - **All 8 are fully translated** (prose + chrome). The old "chrome-only for `de`/`fr`/`vi`/`th`/`id`" claim was stale — a 2026-07-21 audit measured trigram overlap against the English source at .021–.044 for every locale, with spot-checks confirming genuine prose. Consequence: any `noindex` still applied to those locales by the 2026-07-07 translation gate is suppressing legitimate pages and should be lifted.
+- The 2026-07-07 translation gate that noindexed 96 culture/travel pages was lifted 2026-07-21 by `scripts/fix-culture-travel-seo.cjs`. The only culture/travel pages that remain `noindex` are the 9 `travel/*/planner` tool pages (~100 words each, interactive, thin in every locale). Do not reintroduce a locale-based noindex.
 - Each language's pages live under `/<lang>/` for root pages and `learn/<lang>/`, `culture/<lang>/`, etc. for content
 - All language versions load the **same** `learn/data/*.json` files — JSON contains all translations
 

@@ -70,63 +70,81 @@ const L = {
     aTitle: 'About this article — AI-assisted summary',
     aBody: 'This article is an AI-assisted summary of Korean news reported publicly by other outlets, written for Korean language-learning practice. It is not original reporting and is published without individual human review. For authoritative details, please read the original source.',
     sTitle: 'About Korean School Daily — AI-assisted summaries',
-    sBody: 'The articles in this section are AI-assisted summaries of Korean news reported publicly by other outlets, written for Korean language-learning practice. They are not original reporting and are published without individual human review. Each article links to its original source — please read there for authoritative details.',
+    sBodyLegacy: 'The articles in this section are AI-assisted summaries of Korean news reported publicly by other outlets, written for Korean language-learning practice. They are not original reporting and are published without individual human review. Each article links to its original source — please read there for authoritative details.',
+    sBody: 'The articles in this section are AI-assisted summaries of Korean news reported publicly by other outlets, written for Korean language-learning practice. They are not original reporting and are published without individual human review. Where the original report was recorded, the article links to it; for older articles the source was not retained. Please treat these summaries as language-practice material rather than as a news source.',
+    noSource: 'The original source for this article was not recorded.',
     byline: `Published by Korean School (한국어 학교) · Site owner and editor: ${OWNER} · <a href="mailto:${MAIL}" style="color:#f5c842;">${MAIL}</a> · Text drafted with AI assistance.`,
   },
   ja: {
     aTitle: 'この記事について — AIによる要約',
     aBody: 'この記事は、他の報道機関が公開している韓国のニュースをAIが要約したもので、韓国語学習のために作成されています。独自取材による報道ではなく、記事ごとの人によるチェックは行っていません。正確な内容については、元の記事をご確認ください。',
     sTitle: 'Korean School Daily について — AIによる要約',
-    sBody: 'このセクションの記事は、他の報道機関が公開している韓国のニュースをAIが要約したもので、韓国語学習のために作成されています。独自取材による報道ではなく、記事ごとの人によるチェックは行っていません。各記事には元記事へのリンクがあります。正確な内容はそちらでご確認ください。',
+    sBodyLegacy: 'このセクションの記事は、他の報道機関が公開している韓国のニュースをAIが要約したもので、韓国語学習のために作成されています。独自取材による報道ではなく、記事ごとの人によるチェックは行っていません。各記事には元記事へのリンクがあります。正確な内容はそちらでご確認ください。',
+    sBody: 'このセクションの記事は、他の報道機関が公開している韓国のニュースをAIが要約したもので、韓国語学習のために作成されています。独自取材による報道ではなく、記事ごとの人によるチェックは行っていません。元記事の情報が記録されている場合は記事内にリンクを掲載していますが、それ以前の記事については元記事の情報が残っていません。これらの要約はニュースソースではなく、語学学習用の教材としてご利用ください。',
+    noSource: 'この記事は元記事の情報を記録していません。',
     byline: `発行：Korean School（한국어 학교）· 運営者・編集者：${OWNER} · <a href="mailto:${MAIL}" style="color:#f5c842;">${MAIL}</a> · 本文はAIの支援により作成されています。`,
   },
   'zh-tw': {
     aTitle: '關於本文 — AI 協助撰寫的摘要',
     aBody: '本文是由 AI 協助整理的韓國新聞摘要，內容取自其他媒體已公開報導的新聞，專為韓語學習用途撰寫。本文並非原創報導，且未經逐篇人工審閱。如需準確詳情，請閱讀原始報導。',
     sTitle: '關於 Korean School Daily — AI 協助撰寫的摘要',
-    sBody: '本區文章是由 AI 協助整理的韓國新聞摘要，內容取自其他媒體已公開報導的新聞，專為韓語學習用途撰寫。這些文章並非原創報導，且未經逐篇人工審閱。每篇文章皆附有原始報導連結，準確詳情請以原始報導為準。',
+    sBodyLegacy: '本區文章是由 AI 協助整理的韓國新聞摘要，內容取自其他媒體已公開報導的新聞，專為韓語學習用途撰寫。這些文章並非原創報導，且未經逐篇人工審閱。每篇文章皆附有原始報導連結，準確詳情請以原始報導為準。',
+    sBody: '本區文章是由 AI 協助整理的韓國新聞摘要，內容取自其他媒體已公開報導的新聞，專為韓語學習用途撰寫。這些文章並非原創報導，且未經逐篇人工審閱。若已記錄原始報導出處，文章內會附上連結；較早的文章則未保留出處資訊。請將這些摘要視為語言學習材料，而非新聞來源。',
+    noSource: '本文未記錄原始報導出處。',
     byline: `發布：Korean School（한국어 학교）· 網站擁有者暨編輯：${OWNER} · <a href="mailto:${MAIL}" style="color:#f5c842;">${MAIL}</a> · 內文由 AI 協助撰寫。`,
   },
   es: {
     aTitle: 'Sobre este artículo — resumen asistido por IA',
     aBody: 'Este artículo es un resumen asistido por IA de noticias coreanas publicadas por otros medios, redactado para practicar el aprendizaje del coreano. No es periodismo original y se publica sin revisión humana artículo por artículo. Para obtener información autorizada, consulte la fuente original.',
     sTitle: 'Sobre Korean School Daily — resúmenes asistidos por IA',
-    sBody: 'Los artículos de esta sección son resúmenes asistidos por IA de noticias coreanas publicadas por otros medios, redactados para practicar el aprendizaje del coreano. No son periodismo original y se publican sin revisión humana artículo por artículo. Cada artículo enlaza a su fuente original: consúltela para obtener información autorizada.',
+    sBodyLegacy: 'Los artículos de esta sección son resúmenes asistidos por IA de noticias coreanas publicadas por otros medios, redactados para practicar el aprendizaje del coreano. No son periodismo original y se publican sin revisión humana artículo por artículo. Cada artículo enlaza a su fuente original: consúltela para obtener información autorizada.',
+    sBody: 'Los artículos de esta sección son resúmenes asistidos por IA de noticias coreanas publicadas por otros medios, redactados para practicar el aprendizaje del coreano. No son periodismo original y se publican sin revisión humana artículo por artículo. Cuando se ha registrado el informe original, el artículo enlaza a él; en los artículos más antiguos no se conservó la fuente. Utilice estos resúmenes como material de práctica lingüística, no como fuente de noticias.',
+    noSource: 'No se registró la fuente original de este artículo.',
     byline: `Publicado por Korean School (한국어 학교) · Propietario y editor del sitio: ${OWNER} · <a href="mailto:${MAIL}" style="color:#f5c842;">${MAIL}</a> · Texto redactado con asistencia de IA.`,
   },
   de: {
     aTitle: 'Über diesen Artikel — KI-gestützte Zusammenfassung',
     aBody: 'Dieser Artikel ist eine KI-gestützte Zusammenfassung koreanischer Nachrichten, die von anderen Medien öffentlich berichtet wurden, und wurde zum Koreanischlernen erstellt. Es handelt sich nicht um eigene Berichterstattung, und der Artikel wird ohne individuelle redaktionelle Prüfung veröffentlicht. Verbindliche Informationen entnehmen Sie bitte der Originalquelle.',
     sTitle: 'Über Korean School Daily — KI-gestützte Zusammenfassungen',
-    sBody: 'Die Artikel in diesem Bereich sind KI-gestützte Zusammenfassungen koreanischer Nachrichten, die von anderen Medien öffentlich berichtet wurden, und wurden zum Koreanischlernen erstellt. Sie sind keine eigene Berichterstattung und werden ohne individuelle redaktionelle Prüfung veröffentlicht. Jeder Artikel verlinkt seine Originalquelle — verbindliche Informationen finden Sie dort.',
+    sBodyLegacy: 'Die Artikel in diesem Bereich sind KI-gestützte Zusammenfassungen koreanischer Nachrichten, die von anderen Medien öffentlich berichtet wurden, und wurden zum Koreanischlernen erstellt. Sie sind keine eigene Berichterstattung und werden ohne individuelle redaktionelle Prüfung veröffentlicht. Jeder Artikel verlinkt seine Originalquelle — verbindliche Informationen finden Sie dort.',
+    sBody: 'Die Artikel in diesem Bereich sind KI-gestützte Zusammenfassungen koreanischer Nachrichten, die von anderen Medien öffentlich berichtet wurden, und wurden zum Koreanischlernen erstellt. Sie sind keine eigene Berichterstattung und werden ohne individuelle redaktionelle Prüfung veröffentlicht. Sofern die Originalmeldung erfasst wurde, verlinkt der Artikel sie; bei älteren Artikeln wurde die Quelle nicht gespeichert. Bitte nutzen Sie diese Zusammenfassungen als Sprachlernmaterial und nicht als Nachrichtenquelle.',
+    noSource: 'Für diesen Artikel wurde keine Originalquelle erfasst.',
     byline: `Herausgegeben von Korean School (한국어 학교) · Betreiber und Redakteur: ${OWNER} · <a href="mailto:${MAIL}" style="color:#f5c842;">${MAIL}</a> · Text mit KI-Unterstützung verfasst.`,
   },
   fr: {
     aTitle: 'À propos de cet article — résumé assisté par IA',
     aBody: "Cet article est un résumé assisté par IA d'informations coréennes publiées par d'autres médias, rédigé pour l'apprentissage du coréen. Il ne s'agit pas d'un travail journalistique original et il est publié sans relecture humaine article par article. Pour des informations faisant autorité, veuillez consulter la source d'origine.",
     sTitle: 'À propos de Korean School Daily — résumés assistés par IA',
-    sBody: "Les articles de cette rubrique sont des résumés assistés par IA d'informations coréennes publiées par d'autres médias, rédigés pour l'apprentissage du coréen. Ce ne sont pas des travaux journalistiques originaux et ils sont publiés sans relecture humaine article par article. Chaque article renvoie à sa source d'origine — veuillez la consulter pour des informations faisant autorité.",
+    sBodyLegacy: "Les articles de cette rubrique sont des résumés assistés par IA d'informations coréennes publiées par d'autres médias, rédigés pour l'apprentissage du coréen. Ce ne sont pas des travaux journalistiques originaux et ils sont publiés sans relecture humaine article par article. Chaque article renvoie à sa source d'origine — veuillez la consulter pour des informations faisant autorité.",
+    sBody: "Les articles de cette rubrique sont des résumés assistés par IA d'informations coréennes publiées par d'autres médias, rédigés pour l'apprentissage du coréen. Ce ne sont pas des travaux journalistiques originaux et ils sont publiés sans relecture humaine article par article. Lorsque l'article d'origine a été enregistré, un lien y renvoie ; pour les articles plus anciens, la source n'a pas été conservée. Veuillez utiliser ces résumés comme support d'apprentissage linguistique et non comme source d'information.",
+    noSource: "La source d'origine de cet article n'a pas été enregistrée.",
     byline: `Publié par Korean School (한국어 학교) · Propriétaire et éditeur du site : ${OWNER} · <a href="mailto:${MAIL}" style="color:#f5c842;">${MAIL}</a> · Texte rédigé avec l'assistance d'une IA.`,
   },
   vi: {
     aTitle: 'Về bài viết này — bản tóm tắt do AI hỗ trợ',
     aBody: 'Bài viết này là bản tóm tắt do AI hỗ trợ, dựa trên tin tức Hàn Quốc đã được các hãng tin khác đăng tải công khai, và được viết nhằm phục vụ việc học tiếng Hàn. Đây không phải là bài báo gốc và được đăng mà không qua khâu biên tập thủ công cho từng bài. Để có thông tin chính xác, vui lòng đọc nguồn tin gốc.',
     sTitle: 'Về Korean School Daily — các bản tóm tắt do AI hỗ trợ',
-    sBody: 'Các bài trong mục này là bản tóm tắt do AI hỗ trợ, dựa trên tin tức Hàn Quốc đã được các hãng tin khác đăng tải công khai, và được viết nhằm phục vụ việc học tiếng Hàn. Đây không phải là bài báo gốc và được đăng mà không qua khâu biên tập thủ công cho từng bài. Mỗi bài đều có liên kết tới nguồn tin gốc — vui lòng đọc ở đó để có thông tin chính xác.',
+    sBodyLegacy: 'Các bài trong mục này là bản tóm tắt do AI hỗ trợ, dựa trên tin tức Hàn Quốc đã được các hãng tin khác đăng tải công khai, và được viết nhằm phục vụ việc học tiếng Hàn. Đây không phải là bài báo gốc và được đăng mà không qua khâu biên tập thủ công cho từng bài. Mỗi bài đều có liên kết tới nguồn tin gốc — vui lòng đọc ở đó để có thông tin chính xác.',
+    sBody: 'Các bài trong mục này là bản tóm tắt do AI hỗ trợ, dựa trên tin tức Hàn Quốc đã được các hãng tin khác đăng tải công khai, và được viết nhằm phục vụ việc học tiếng Hàn. Đây không phải là bài báo gốc và được đăng mà không qua khâu biên tập thủ công cho từng bài. Nếu nguồn tin gốc đã được ghi lại, bài viết sẽ có liên kết tới nguồn đó; với các bài cũ hơn, thông tin nguồn không được lưu giữ. Vui lòng xem các bản tóm tắt này là tài liệu luyện ngôn ngữ, không phải nguồn tin tức.',
+    noSource: 'Bài viết này không lưu thông tin nguồn tin gốc.',
     byline: `Phát hành bởi Korean School (한국어 학교) · Chủ sở hữu và biên tập viên: ${OWNER} · <a href="mailto:${MAIL}" style="color:#f5c842;">${MAIL}</a> · Nội dung được soạn với sự hỗ trợ của AI.`,
   },
   th: {
     aTitle: 'เกี่ยวกับบทความนี้ — บทสรุปที่จัดทำโดยความช่วยเหลือของ AI',
     aBody: 'บทความนี้เป็นบทสรุปที่จัดทำขึ้นโดยความช่วยเหลือของ AI จากข่าวเกาหลีที่สำนักข่าวอื่นได้เผยแพร่ต่อสาธารณะ เขียนขึ้นเพื่อใช้ฝึกเรียนภาษาเกาหลี ไม่ใช่การรายงานข่าวต้นฉบับ และเผยแพร่โดยไม่ได้ผ่านการตรวจทานโดยมนุษย์เป็นรายบทความ หากต้องการข้อมูลที่ถูกต้องแม่นยำ โปรดอ่านจากแหล่งข่าวต้นฉบับ',
     sTitle: 'เกี่ยวกับ Korean School Daily — บทสรุปที่จัดทำโดยความช่วยเหลือของ AI',
-    sBody: 'บทความในส่วนนี้เป็นบทสรุปที่จัดทำขึ้นโดยความช่วยเหลือของ AI จากข่าวเกาหลีที่สำนักข่าวอื่นได้เผยแพร่ต่อสาธารณะ เขียนขึ้นเพื่อใช้ฝึกเรียนภาษาเกาหลี ไม่ใช่การรายงานข่าวต้นฉบับ และเผยแพร่โดยไม่ได้ผ่านการตรวจทานโดยมนุษย์เป็นรายบทความ ทุกบทความมีลิงก์ไปยังแหล่งข่าวต้นฉบับ โปรดอ่านที่นั่นเพื่อข้อมูลที่ถูกต้องแม่นยำ',
+    sBodyLegacy: 'บทความในส่วนนี้เป็นบทสรุปที่จัดทำขึ้นโดยความช่วยเหลือของ AI จากข่าวเกาหลีที่สำนักข่าวอื่นได้เผยแพร่ต่อสาธารณะ เขียนขึ้นเพื่อใช้ฝึกเรียนภาษาเกาหลี ไม่ใช่การรายงานข่าวต้นฉบับ และเผยแพร่โดยไม่ได้ผ่านการตรวจทานโดยมนุษย์เป็นรายบทความ ทุกบทความมีลิงก์ไปยังแหล่งข่าวต้นฉบับ โปรดอ่านที่นั่นเพื่อข้อมูลที่ถูกต้องแม่นยำ',
+    sBody: 'บทความในส่วนนี้เป็นบทสรุปที่จัดทำขึ้นโดยความช่วยเหลือของ AI จากข่าวเกาหลีที่สำนักข่าวอื่นได้เผยแพร่ต่อสาธารณะ เขียนขึ้นเพื่อใช้ฝึกเรียนภาษาเกาหลี ไม่ใช่การรายงานข่าวต้นฉบับ และเผยแพร่โดยไม่ได้ผ่านการตรวจทานโดยมนุษย์เป็นรายบทความ หากมีการบันทึกแหล่งข่าวต้นฉบับไว้ บทความจะมีลิงก์ไปยังแหล่งข่าวนั้น ส่วนบทความเก่าจะไม่มีข้อมูลแหล่งที่มา โปรดใช้บทสรุปเหล่านี้เป็นสื่อสำหรับฝึกภาษา ไม่ใช่แหล่งข่าว',
+    noSource: 'บทความนี้ไม่ได้บันทึกแหล่งข่าวต้นฉบับไว้',
     byline: `เผยแพร่โดย Korean School (한국어 학교) · เจ้าของและบรรณาธิการเว็บไซต์: ${OWNER} · <a href="mailto:${MAIL}" style="color:#f5c842;">${MAIL}</a> · เนื้อหาเรียบเรียงขึ้นโดยความช่วยเหลือของ AI`,
   },
   id: {
     aTitle: 'Tentang artikel ini — ringkasan dengan bantuan AI',
     aBody: 'Artikel ini adalah ringkasan yang disusun dengan bantuan AI dari berita Korea yang telah diberitakan secara terbuka oleh media lain, dan ditulis untuk keperluan belajar bahasa Korea. Ini bukan liputan orisinal dan diterbitkan tanpa peninjauan manusia untuk tiap artikel. Untuk informasi yang sahih, silakan baca sumber aslinya.',
     sTitle: 'Tentang Korean School Daily — ringkasan dengan bantuan AI',
-    sBody: 'Artikel di bagian ini adalah ringkasan yang disusun dengan bantuan AI dari berita Korea yang telah diberitakan secara terbuka oleh media lain, dan ditulis untuk keperluan belajar bahasa Korea. Semua ini bukan liputan orisinal dan diterbitkan tanpa peninjauan manusia untuk tiap artikel. Setiap artikel mencantumkan tautan ke sumber aslinya — silakan baca di sana untuk informasi yang sahih.',
+    sBodyLegacy: 'Artikel di bagian ini adalah ringkasan yang disusun dengan bantuan AI dari berita Korea yang telah diberitakan secara terbuka oleh media lain, dan ditulis untuk keperluan belajar bahasa Korea. Semua ini bukan liputan orisinal dan diterbitkan tanpa peninjauan manusia untuk tiap artikel. Setiap artikel mencantumkan tautan ke sumber aslinya — silakan baca di sana untuk informasi yang sahih.',
+    sBody: 'Artikel di bagian ini adalah ringkasan yang disusun dengan bantuan AI dari berita Korea yang telah diberitakan secara terbuka oleh media lain, dan ditulis untuk keperluan belajar bahasa Korea. Semua ini bukan liputan orisinal dan diterbitkan tanpa peninjauan manusia untuk tiap artikel. Jika sumber aslinya tercatat, artikel akan mencantumkan tautannya; untuk artikel lama, informasi sumber tidak tersimpan. Harap gunakan ringkasan ini sebagai bahan latihan bahasa, bukan sebagai sumber berita.',
+    noSource: 'Sumber asli untuk artikel ini tidak tercatat.',
     byline: `Diterbitkan oleh Korean School (한국어 학교) · Pemilik dan editor situs: ${OWNER} · <a href="mailto:${MAIL}" style="color:#f5c842;">${MAIL}</a> · Teks disusun dengan bantuan AI.`,
   },
 };
@@ -242,6 +260,26 @@ function patchShells() {
             inlineRendererPatch(lang, ind) + '\n\n' + ind + tail);
           msgs.push('inline-renderer-patched');
         }
+
+        // 6b ── upgrade an inline renderer patched by the first pass, which
+        // rendered nothing at all when source_url was absent. Every existing
+        // article is in exactly that state, so the slot sat empty under a
+        // disclosure that implied a source link. Make the absence explicit.
+        if (/article-source-link'\)/.test(src) && !/article-no-source/.test(src)) {
+          const re = /(if \(article\.source_url\) \{[\s\S]*?\n([ \t]*)\}\n)(\2if \(article\.published_at\) \{)/;
+          if (re.test(src)) {
+            src = src.replace(re, (mm, head, ind2, tail) =>
+              head +
+              `${ind2}else {\n` +
+              `${ind2}  bits.push('<span class="article-no-source" style="opacity:0.8;">${L[lang].noSource}</span>');\n` +
+              `${ind2}}\n` +
+              tail);
+            msgs.push('inline-no-source-branch');
+          } else {
+            msgs.push('!! INLINE NO-SOURCE ANCHOR NOT FOUND');
+            drift++;
+          }
+        }
       }
 
       if (src !== orig) {
@@ -249,6 +287,36 @@ function patchShells() {
         else { write(rel, src, crlf); changed++; }
       }
       note(rel, msgs);
+    }
+  }
+}
+
+/* ══ PART 1b — retire the "every article links to its source" claim ═══════
+   The first hardening pass shipped a section-level disclosure promising that
+   "Each article links to its original source". That was written against the
+   *future* behaviour of generate-news.js. It is false for the existing
+   catalogue: all 95 articles in Supabase predate source capture, none has a
+   source_url, and nothing recoverable was ever stored (verified 2026-07-21 —
+   no column holds a URL, and the AI-rewritten headlines cannot be matched
+   back to a publisher reliably; a wrong attribution is worse than none).
+
+   So the section wording is narrowed to something true of the whole catalogue,
+   and the per-article slot states plainly when no source was recorded.
+   Guarded by the legacy string itself, so a re-run is a no-op. */
+function patchDisclosureWording() {
+  for (const lang of LANGS) {
+    for (const kind of ['index', 'board']) {
+      const rel = lang === 'en' ? `news/${kind}.html` : `news/${lang}/${kind}.html`;
+      if (!fs.existsSync(path.join(ROOT, rel))) continue;
+
+      const { src: orig, crlf } = read(rel);
+      const s = L[lang];
+      if (!orig.includes(s.sBodyLegacy)) { note(rel, []); continue; }
+
+      const src = orig.split(s.sBodyLegacy).join(s.sBody);
+      if (CHECK_ONLY) drift++;
+      else { write(rel, src, crlf); changed++; }
+      note(rel, ['section-wording-narrowed']);
     }
   }
 }
@@ -276,6 +344,10 @@ ${ind}  if (article.source_url) {
 ${ind}    const label = article.source_title || article.source_name || article.source_url;
 ${ind}    bits.push(\`<strong>${srcLabel}</strong><a href="\${esc(article.source_url)}" target="_blank" rel="noopener nofollow" style="color:#f5c842;text-decoration:underline;">\${esc(label)}</a>\`
 ${ind}      + (article.source_name && article.source_title ? \` <span style="opacity:0.75;">— \${esc(article.source_name)}</span>\` : ''));
+${ind}  } else {
+${ind}    // No source recorded for this article — say so rather than leaving the
+${ind}    // disclosure implying a link that is not there.
+${ind}    bits.push('<span class="article-no-source" style="opacity:0.8;">${L[lang].noSource}</span>');
 ${ind}  }
 ${ind}  if (article.published_at) {
 ${ind}    bits.push(\`<time datetime="\${esc(article.published_at)}" style="opacity:0.8;">\${esc(fmtDate(article.published_at))}</time>\`);
@@ -309,6 +381,53 @@ ${ind}  citation: article.source_url
 ${ind}    ? { '@type': 'CreativeWork', name: article.source_title || article.source_name || article.source_url, url: article.source_url }
 ${ind}    : undefined
 ${ind}});`;
+}
+
+/* The renderSourceLink block in js/app.js, built from the same locale table
+   as the HTML disclosures so the two can never drift apart. Emitted both on a
+   fresh install and as an in-place upgrade of the first pass's version, which
+   rendered nothing when source_url was absent. */
+function sourceLinkBlock() {
+  const key = l => (/^[a-z]+$/.test(l) ? l : `'${l}'`);
+  const noSrc = LANGS.map(l => `    ${key(l)}: ${JSON.stringify(L[l].noSource)},`).join('\n');
+
+  return `  const SOURCE_LABEL = {
+    en: 'Original source', ja: '元記事', 'zh-tw': '原始報導', es: 'Fuente original',
+    de: 'Originalquelle', fr: "Source d'origine", vi: 'Nguồn tin gốc',
+    th: 'แหล่งข่าวต้นฉบับ', id: 'Sumber asli'
+  };
+
+  /* Shown when an article has no recorded source. Every article published
+     before source capture went in is in exactly this state, so the slot must
+     state the absence rather than render empty under a disclosure that would
+     otherwise read as a promise of a link. */
+  const NO_SOURCE_LABEL = {
+${noSrc}
+  };
+
+  function renderSourceLink(a) {
+    const slot = document.getElementById('article-source-link');
+    if (!slot) return;
+    const lang = window.LangManager?.getLang() || 'en';
+    const parts = [];
+    if (a.source_url) {
+      const label = SOURCE_LABEL[lang] || SOURCE_LABEL.en;
+      const text = a.source_title || a.source_name || a.source_url;
+      parts.push(
+        \`<strong>\${newsEscape(label)}:</strong> \` +
+        \`<a href="\${newsEscape(a.source_url)}" target="_blank" rel="noopener nofollow" \` +
+        \`style="color:#f5c842;text-decoration:underline;">\${newsEscape(text)}</a>\` +
+        (a.source_name && a.source_title ? \` <span style="opacity:0.75;">— \${newsEscape(a.source_name)}</span>\` : '')
+      );
+    } else {
+      const label = NO_SOURCE_LABEL[lang] || NO_SOURCE_LABEL.en;
+      parts.push(\`<span class="article-no-source" style="opacity:0.8;">\${newsEscape(label)}</span>\`);
+    }
+    if (a.published_at) {
+      parts.push(\`<time itemprop="datePublished" datetime="\${newsEscape(a.published_at)}" style="opacity:0.8;">\${newsEscape(newsFormatDate(a.published_at))}</time>\`);
+    }
+    slot.innerHTML = parts.join('<br>');
+  }`;
 }
 
 /* ══ PART 2 — js/app.js (news code paths only) ═══════════════════════════ */
@@ -391,34 +510,22 @@ $1  : undefined`);
   /* Outbound link to the original report this summary is based on, plus a
      machine-readable publication date. Rendered into the #article-source-link
      slot inside the AI-assistance disclosure box on every news article shell. */
-  const SOURCE_LABEL = {
-    en: 'Original source', ja: '元記事', 'zh-tw': '原始報導', es: 'Fuente original',
-    de: 'Originalquelle', fr: "Source d'origine", vi: 'Nguồn tin gốc',
-    th: 'แหล่งข่าวต้นฉบับ', id: 'Sumber asli'
-  };
-
-  function renderSourceLink(a) {
-    const slot = document.getElementById('article-source-link');
-    if (!slot) return;
-    const lang = window.LangManager?.getLang() || 'en';
-    const label = SOURCE_LABEL[lang] || SOURCE_LABEL.en;
-    const parts = [];
-    if (a.source_url) {
-      const text = a.source_title || a.source_name || a.source_url;
-      parts.push(
-        \`<strong>\${newsEscape(label)}:</strong> \` +
-        \`<a href="\${newsEscape(a.source_url)}" target="_blank" rel="noopener nofollow" \` +
-        \`style="color:#f5c842;text-decoration:underline;">\${newsEscape(text)}</a>\` +
-        (a.source_name && a.source_title ? \` <span style="opacity:0.75;">— \${newsEscape(a.source_name)}</span>\` : '')
-      );
-    }
-    if (a.published_at) {
-      parts.push(\`<time itemprop="datePublished" datetime="\${newsEscape(a.published_at)}" style="opacity:0.8;">\${newsEscape(newsFormatDate(a.published_at))}</time>\`);
-    }
-    slot.innerHTML = parts.join('<br>');
-  }
+${sourceLinkBlock()}
 $1`);
     msgs.push('renderSourceLink-added');
+  }
+
+  // 2g-bis ── upgrade a first-pass renderSourceLink (no else branch, so the
+  // slot rendered empty for every sourceless article) to the current version.
+  if (/function renderSourceLink/.test(src) && !/NO_SOURCE_LABEL/.test(src)) {
+    const re = /  const SOURCE_LABEL = \{[\s\S]*?slot\.innerHTML = parts\.join\('<br>'\);\n  \}/;
+    if (re.test(src)) {
+      src = src.replace(re, () => sourceLinkBlock());
+      msgs.push('renderSourceLink-no-source-branch');
+    } else {
+      msgs.push('!! renderSourceLink UPGRADE ANCHOR NOT FOUND');
+      drift++;
+    }
   }
   if (!/renderSourceLink\(article\)/.test(src)) {
     src = src.replace(/(\n(\s*)renderVocabulary\(article\);)/, '$1\n$2renderSourceLink(article);');
@@ -583,6 +690,12 @@ function verify() {
         if (!/id="article-source-link"/.test(h)) p.push('NO-SRC-SLOT');
         if (!/id="json-ld"/.test(h)) p.push('NO-LD-SLOT');
         if (!/"creditText"/.test(h)) p.push('NO-CREDIT');
+        // The two standalone renderers must also state a missing source.
+        if ((lang === 'ja' || lang === 'zh-tw') && !/article-no-source/.test(h)) p.push('NO-NOSRC-BRANCH');
+      } else {
+        // No page may promise a source link the back catalogue does not have.
+        if (h.includes(L[lang].sBodyLegacy)) p.push('OVERCLAIMS-SOURCE-LINK');
+        if (!h.includes(L[lang].sBody)) p.push('SECTION-WORDING-STALE');
       }
       for (const m of h.matchAll(/<script[^>]*ld\+json[^>]*>([\s\S]*?)<\/script>/g)) {
         if (m[1].trim()) { try { JSON.parse(m[1]); } catch { p.push('BAD-LD'); } }
@@ -599,6 +712,7 @@ function verify() {
   if (!/function renderSourceLink/.test(app)) problems.push('js/app.js missing renderSourceLink');
   if (!/renderSourceLink\(article\)/.test(app)) problems.push('js/app.js never calls renderSourceLink');
   if (!/creditText/.test(app)) problems.push('js/app.js missing creditText in renderMeta');
+  if (!/NO_SOURCE_LABEL/.test(app)) problems.push('js/app.js renderSourceLink has no missing-source branch');
   if (!/ad-zone ad-zone--rail/.test(app)) problems.push('js/app.js content rail was clobbered (should be untouched)');
 
   const gen = read('scripts/generate-news.js').src;
@@ -616,6 +730,7 @@ function verify() {
 /* ══ Main ════════════════════════════════════════════════════════════════ */
 if (!CHECK_ONLY) {
   patchShells();
+  patchDisclosureWording();
   patchAppJs();
   patchGenerator();
   patchWorkflow();
