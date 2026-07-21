@@ -434,7 +434,9 @@
       "tip_vi": {
         "label": "Mẹo ngữ pháp",
         "text": "Một khi bạn biết động từ đứng cuối, mọi thứ trở nên rõ ràng. Phần còn lại của câu có thể sắp xếp lại — người Hàn dùng trợ từ để giữ mọi thứ rành mạch."
-      }
+      },
+      "title_ja": "語順 — SOV（主語・目的語・動詞）",
+      "body_ja": "韓国語は「主語 → 目的語 → 動詞」（SOV）の語順に従います。動詞は必ず最後に来ます。"
     },
     {
       "id": 2,
@@ -520,6 +522,13 @@
         "Đầu",
         "Thứ hai",
         "Ở bất kỳ đâu"
+      ],
+      "prompt_ja": "韓国語の文では、動詞は必ず…に来ます。",
+      "choices_ja": [
+        "最後",
+        "最初",
+        "二番目",
+        "どこでも"
       ]
     },
     {
@@ -606,7 +615,9 @@
         "에 → Vị trí / Hướng",
         "에서 → Vị trí của hành động",
         "의 → Sở hữu ('của')"
-      ]
+      ],
+      "title_ja": "韓国語の助詞",
+      "body_ja": "助詞は名詞に付いて、その名詞の役割（主題・主語・目的語・場所）を示します。語順を固定する代わりに助詞が働きます。"
     },
     {
       "id": 5,
@@ -690,6 +701,12 @@
         "Chủ ngữ",
         "Tân ngữ",
         "Vị trí"
+      ],
+      "choices_ja": [
+        "主題",
+        "主語",
+        "目的語",
+        "場所"
       ]
     },
     {
@@ -860,6 +877,12 @@
         "Đích đến",
         "Chủ đề",
         "Tân ngữ"
+      ],
+      "choices_ja": [
+        "動作の場所",
+        "目的地",
+        "主題",
+        "目的語"
       ]
     },
     {
@@ -930,7 +953,8 @@
         "먹다 (ăn) → gốc: 먹-",
         "공부하다 (học) → gốc: 공부하-",
         "하다 (làm) → gốc: 하-"
-      ]
+      ],
+      "title_ja": "動詞 — 辞書形"
     },
     {
       "id": 12,
@@ -1491,7 +1515,8 @@
         "안 먹어요 (không ăn — dạng ngắn)",
         "먹지 않아요 (không ăn — dạng dài)",
         "못 가요 (không thể đi — không có khả năng)"
-      ]
+      ],
+      "title_ja": "文を否定形にする"
     },
     {
       "id": 22,
@@ -1553,7 +1578,8 @@
         "먹지 않아요",
         "못 먹어요",
         "안 가요"
-      ]
+      ],
+      "prompt_ja": "「食べません」— 短い否定形"
     },
     {
       "id": 23,
@@ -1688,7 +1714,9 @@
       "tip_vi": {
         "label": "Mẹo ngữ pháp",
         "text": "밥을 먹어요 = Tôi ăn cơm. 밥을 먹어요? = Bạn ăn cơm không? Cùng từ ngữ — chỉ là một ngữ điệu lên ở cuối. Không đảo từ như tiếng Anh!"
-      }
+      },
+      "title_ja": "疑問文の作り方",
+      "body_ja": "韓国語の疑問文は平叙文と語順がまったく同じです。語尾を上げるイントネーション（↑）か疑問符を加えるだけです。"
     },
     {
       "id": 24,
@@ -1772,7 +1800,8 @@
         "뭐",
         "왜",
         "언제"
-      ]
+      ],
+      "prompt_ja": "韓国語で「どこ」は？"
     },
     {
       "id": 26,
@@ -1858,7 +1887,9 @@
         "~아/어야 해요 — phải: 공부해야 해요 (Tôi phải học)",
         "~(으)면 — nếu/khi: 비가 오면 집에 있어요 (Nếu trời mưa, tôi ở nhà)",
         "~때문에 — vì: 비 때문에 못 가요 (Không thể đi vì trời mưa)"
-      ]
+      ],
+      "title_ja": "必須の文型",
+      "body_ja": "この6つの文型を身につければ、韓国語の会話で最もよく使う考えを表現できます。"
     },
     {
       "id": 27,
@@ -2023,7 +2054,9 @@
       "tip_vi": {
         "label": "Mẹo sử dụng",
         "text": "그런데 là một trong những từ phổ biến nhất trong tiếng Hàn nói — nó làm dịu sự tương phản và chuyển chủ đề một cách mượt mà. 그렇지만 mạnh hơn và trang trọng hơn."
-      }
+      },
+      "title_ja": "接続詞",
+      "body_ja": "この4つの接続詞は文と文をつなぎます。必ず後ろの文の文頭に置きます。"
     },
     {
       "id": 29,
@@ -2109,7 +2142,8 @@
         "그렇지만",
         "그래서",
         "그리고"
-      ]
+      ],
+      "prompt_ja": "やわらかい対比や話題の転換 — 話し言葉で最もよく使われるのは？"
     },
     {
       "id": 31,
@@ -2171,7 +2205,9 @@
         "-하고 — sau bất kỳ danh từ nào, trung tính/thân mật: 친구하고 갔어요 (đã đi với một người bạn)",
         "-(이)랑 — 이랑 (phụ âm) / 랑 (nguyên âm), rất thân mật: 오빠랑 놀았어요 (đã chơi với anh trai)",
         "-와/과 — 와 (nguyên âm) / 과 (phụ âm), trang trọng/văn viết: 선생님과 상담했어요 (đã tư vấn với giáo viên)"
-      ]
+      ],
+      "title_ja": "「〜と」「〜や」",
+      "body_ja": "これらの助詞は（文ではなく）名詞と名詞の間に使い、「〜と」「〜や」の意味を表します。"
     },
     {
       "id": 32,
@@ -2241,7 +2277,9 @@
         "-한테서 — từ (một người): 선생님한테서 배웠어요 (đã học từ giáo viên)",
         "-에게 / -에게서 — các dạng trang trọng tương đương",
         "-께 — đến (kính ngữ, dành cho người lớn tuổi): 선생님께 드렸어요"
-      ]
+      ],
+      "title_ja": "人に対する「〜に」「〜から」",
+      "body_ja": "人に何かを与えたり人から受け取ったりするときは、場所用ではなく人用の方向助詞を使います。"
     },
     {
       "id": 33,
@@ -2344,7 +2382,8 @@
       "tip_vi": {
         "label": "Mẫu câu chính",
         "text": "Giờ dùng số đếm thuần Hàn (한, 두, 세...). Phút dùng số Hán Hàn (일, 이, 삼...). Rưỡi = 반. Sáng = 오전, chiều/tối = 오후."
-      }
+      },
+      "title_ja": "時刻の言い方"
     },
     {
       "id": 34,
@@ -2428,6 +2467,13 @@
         "Hán Hàn (일, 이, 삼...)",
         "Cái nào cũng được",
         "Chữ số Ả Rập"
+      ],
+      "prompt_ja": "韓国語の「〜時」にはどちらの数詞を使いますか。",
+      "choices_ja": [
+        "Native Korean (한, 두, 세...)",
+        "Sino-Korean (일, 이, 삼...)",
+        "どちらでも",
+        "アラビア数字"
       ]
     },
     {
@@ -2522,7 +2568,8 @@
         "권 — sách: 책 세 권 (3 quyển sách)",
         "잔 — ly/đồ uống: 커피 두 잔 (2 ly cà phê)",
         "번 — lần/lượt: 세 번 (3 lần)"
-      ]
+      ],
+      "title_ja": "助数詞"
     },
     {
       "id": 37,
@@ -2608,7 +2655,8 @@
         "개",
         "마리",
         "잔"
-      ]
+      ],
+      "prompt_ja": "人を数える助数詞（中立的なもの）は？"
     },
     {
       "id": 39,
@@ -2711,7 +2759,8 @@
       "tip_vi": {
         "label": "Tiếp diễn và đơn giản",
         "text": "먹어요 = Tôi ăn (nói chung hoặc ngay lúc này, tùy ngữ cảnh). 먹고 있어요 = Tôi đang ăn (cụ thể đang diễn ra ngay lúc này). Dạng tiếp diễn thêm ý 'đang trong hành động'."
-      }
+      },
+      "title_ja": "現在進行形"
     },
     {
       "id": 40,
@@ -2908,7 +2957,8 @@
       "tip_vi": {
         "label": "Mẫu",
         "text": "Dùng 안녕하세요 + 잘 부탁드려요 cho những dịp trang trọng. Với bạn bè hoặc người ngang hàng: 안녕! + 잘 부탁해! Luôn cúi đầu nhẹ khi giới thiệu bản thân trực tiếp."
-      }
+      },
+      "title_ja": "自己紹介"
     },
     {
       "id": 43,
@@ -2978,7 +3028,8 @@
         "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
         "Định dạng ngày: 2026년 6월 16일 (16 tháng 6, 2026)",
         "오늘이 며칠이에요? — Hôm nay là ngày mấy?"
-      ]
+      ],
+      "title_ja": "日付と月"
     },
     {
       "id": 44,
@@ -3105,7 +3156,8 @@
       "tip_vi": {
         "label": "Trạng từ phủ định",
         "text": "별로 và 전혀 BẮT BUỘC phải dùng với động từ phủ định (안, 못, 없다, 모르다). Nói 별로 좋아요 (không có phủ định) là sai ngữ pháp. Hãy coi chúng như 'không hẳn' và 'hoàn toàn không'."
-      }
+      },
+      "title_ja": "程度を表す副詞"
     },
     {
       "id": 45,
@@ -3189,6 +3241,12 @@
         "Một động từ khẳng định",
         "Chỉ tính từ",
         "Chỉ thì quá khứ"
+      ],
+      "choices_ja": [
+        "否定の動詞",
+        "肯定の動詞",
+        "形容詞のみ",
+        "過去形のみ"
       ]
     },
     {
@@ -3378,6 +3436,12 @@
         "Thì quá khứ",
         "Thì tương lai",
         "Một câu hỏi"
+      ],
+      "choices_ja": [
+        "名詞句",
+        "過去形",
+        "未来形",
+        "疑問文"
       ]
     },
     {
@@ -3440,7 +3504,8 @@
         "한국어가 영어보다 더 어려워요 — Tiếng Hàn khó hơn tiếng Anh",
         "오늘이 어제보다 더 더워요 — Hôm nay nóng hơn hôm qua",
         "더 có thể được lược bỏ trong lời nói thân mật: 한국어가 영어보다 어려워요"
-      ]
+      ],
+      "title_ja": "比較表現"
     },
     {
       "id": 51,
@@ -3526,7 +3591,8 @@
         "많이",
         "아주",
         "보다"
-      ]
+      ],
+      "prompt_ja": "韓国語の比較表現で「もっと」はどう言いますか。"
     },
     {
       "id": 53,
@@ -3691,7 +3757,8 @@
         "아직 여기 있어요 — Vẫn còn ở đây (đang tiếp diễn)",
         "벌써 도착했어요? — Đã đến rồi à? (ngạc nhiên)",
         "이미 알아요 — Tôi đã biết rồi (trung tính)"
-      ]
+      ],
+      "title_ja": "「まだ」と「もう」"
     },
     {
       "id": 55,
@@ -3753,6 +3820,12 @@
         "Đã",
         "Ngay cả",
         "Nhiều hơn"
+      ],
+      "choices_ja": [
+        "まだ",
+        "もう",
+        "〜さえ",
+        "もっと"
       ]
     },
     {
@@ -3831,7 +3904,9 @@
         "어딘가 — đâu đó: 어딘가에 있어요 (Nó ở đâu đó)",
         "아무도 + phủ định — không ai: 아무도 없어요 (Không có ai ở đây)",
         "아무것도 + phủ định — không gì cả: 아무것도 몰라요 (Tôi không biết gì cả)"
-      ]
+      ],
+      "title_ja": "「誰か」「何か」",
+      "body_ja": "疑問詞を文脈と組み合わせることで、「誰か」「何も〜ない」といった不定の意味を表せます。"
     },
     {
       "id": 57,
@@ -4103,7 +4178,8 @@
         "말해 주세요",
         "말하세요",
         "말 안 해요"
-      ]
+      ],
+      "prompt_ja": "韓国語で「話さないでください」は？"
     },
     {
       "id": 62,
@@ -4227,7 +4303,8 @@
         "한국어를 잘해요 (giỏi tiếng Hàn)",
         "수학을 못해요 (kém toán)",
         "수영을 잘 못해요 (bơi không giỏi lắm)"
-      ]
+      ],
+      "title_ja": "得意・不得意"
     },
     {
       "id": 64,
@@ -4589,7 +4666,8 @@
       "message_th": "คุณเชี่ยวชาญไวยากรณ์ทั้ง 26 ขั้นตอนแล้ว — จากลำดับคำ SOV และคำช่วย ถึงรูปแบบ -도 ขั้นสูง เริ่มนำไปใช้ในการสนทนาจริงได้เลย!",
       "title_id": "Tata Bahasa Selesai!",
       "message_id": "Anda telah menguasai seluruh 26 tahap tata bahasa — dari urutan kata SOV dan partikel hingga pola -도 tingkat lanjut. Mulai terapkan ini dalam percakapan nyata!",
-      "message_vi": "Bạn đã làm chủ cả 26 chặng ngữ pháp — từ trật tự từ SOV và trợ từ đến các mẫu -도 nâng cao. Hãy bắt đầu áp dụng chúng vào những cuộc hội thoại thực tế!"
+      "message_vi": "Bạn đã làm chủ cả 26 chặng ngữ pháp — từ trật tự từ SOV và trợ từ đến các mẫu -도 nâng cao. Hãy bắt đầu áp dụng chúng vào những cuộc hội thoại thực tế!",
+      "title_ja": "文法編、修了！"
     }
   ]
 }

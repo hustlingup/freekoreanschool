@@ -122,7 +122,8 @@
       "tip_vi": {
         "label": "Vì sao cấp độ kính ngữ quan trọng ở Hàn Quốc",
         "text": "Hàn Quốc là một xã hội có tôn ti được định hình bởi các giá trị Nho giáo — tuổi tác, cấp bậc và mối quan hệ đều quyết định cách bạn nói. Dùng 반말 (nói thân mật) với người lạ hay người lớn tuổi là bất lịch sự. Dùng 합쇼체 quá trang trọng với bạn bè có thể gây cảm giác cứng nhắc và xa cách. Chọn đúng cấp độ là một kỹ năng xã hội then chốt."
-      }
+      },
+      "title_ja": "韓国語の敬語体系の概観"
     },
     {
       "id": 2,
@@ -315,6 +316,12 @@
         "cấp độ kính ngữ trang trọng nhất",
         "lịch sự không trang trọng",
         "tiếng lóng"
+      ],
+      "choices_ja": [
+        "くだけた言い方",
+        "最もフォーマルな語体",
+        "打ち解けた丁寧体",
+        "俗語"
       ]
     },
     {
@@ -632,6 +639,12 @@
         "dạng thân mật nhất",
         "lịch sự hằng ngày / lời nói mặc định của người lớn",
         "kính ngữ cổ xưa"
+      ],
+      "choices_ja": [
+        "非常にフォーマル／放送で使う韓国語",
+        "最もくだけた形",
+        "日常の丁寧体／大人の標準的な話し方",
+        "古風な敬語"
       ]
     },
     {
@@ -1104,6 +1117,13 @@
         "해요체",
         "cái nào cũng được",
         "chỉ 합쇼체"
+      ],
+      "prompt_ja": "路上で同年代の見知らぬ人に話しかけます。どの語体を使うべきでしょう。",
+      "choices_ja": [
+        "반말",
+        "해요체",
+        "どちらでもよい",
+        "합쇼체 only"
       ]
     },
     {
@@ -1245,7 +1265,8 @@
       "tip_vi": {
         "label": "Dùng K-drama để luyện tai",
         "text": "K-drama là mỏ vàng để luyện tập cấp độ kính ngữ. Sếp nói 합쇼체 với nhóm của mình. Bạn bè chuyển sang 반말 với nhau. Các cảnh ở bệnh viện hay văn phòng dùng 해요체. Nếu bạn nhận thấy một sự thay đổi đột ngột về cấp độ kính ngữ giữa các nhân vật — đó là một khoảnh khắc kịch tính."
-      }
+      },
+      "title_ja": "語体の比較一覧"
     },
     {
       "id": 30,
@@ -1369,7 +1390,8 @@
         "해요체",
         "합쇼체",
         "문어체"
-      ]
+      ],
+      "prompt_ja": "韓国の就職面接では、どの語体を使うべきでしょう。"
     },
     {
       "id": 32,
@@ -1429,7 +1451,8 @@
       "tip_vi": {
         "label": "Đừng trộn đuôi giữa câu",
         "text": "Sai: 저는 학생이에요. 공부합니다. (Trộn 해요체 và 합쇼체). Đúng: 저는 학생이에요. 공부해요. (Toàn 해요체). Hoặc: 저는 학생입니다. 공부합니다. (Toàn 합쇼체). Sự nhất quán trong một cuộc trò chuyện thể hiện sự trôi chảy và ý thức xã hội."
-      }
+      },
+      "title_ja": "語体を混ぜてしまう — よくある間違い"
     },
     {
       "id": 33,
@@ -1449,7 +1472,8 @@
       "message_th": "คุณเชี่ยวชาญระบบระดับความสุภาพภาษาเกาหลีแล้ว — ทางการ 합쇼체 สุภาพทั่วไป 해요체 กันเอง 반말 และการเขียน 문어체 คุณพร้อมอ่านสถานการณ์ทางสังคมและพูดในระดับที่เหมาะสมแล้ว!",
       "title_id": "Tingkat Kesopanan Bahasa Selesai!",
       "message_id": "Anda telah menguasai sistem tingkat kesopanan bahasa Korea — 합쇼체 formal, 해요체 sehari-hari, 반말 santai, dan 문어체 tulisan. Anda kini siap membaca situasi sosial dan berbicara pada tingkat yang tepat.",
-      "message_vi": "Bạn đã làm chủ hệ thống cấp độ kính ngữ tiếng Hàn — 합쇼체 trang trọng, 해요체 hằng ngày, 반말 thân mật và 문어체 văn viết. Giờ bạn đã đủ khả năng đọc các tình huống xã hội và nói ở đúng cấp độ."
+      "message_vi": "Bạn đã làm chủ hệ thống cấp độ kính ngữ tiếng Hàn — 합쇼체 trang trọng, 해요체 hằng ngày, 반말 thân mật và 문어체 văn viết. Giờ bạn đã đủ khả năng đọc các tình huống xã hội và nói ở đúng cấp độ.",
+      "title_ja": "敬語体系編、修了！"
     }
   ]
 }

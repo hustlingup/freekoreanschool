@@ -574,7 +574,8 @@
         "g/k",
         "d/t",
         "m"
-      ]
+      ],
+      "prompt_ja": "ㄱ のローマ字表記は…"
     },
     {
       "id": 16,
@@ -636,7 +637,8 @@
         "ㄴ",
         "ㅇ",
         "ㅅ"
-      ]
+      ],
+      "prompt_ja": "音節の頭で無音になる子音はどれでしょう。"
     },
     {
       "id": 17,
@@ -698,7 +700,8 @@
         "m",
         "n",
         "b/p"
-      ]
+      ],
+      "prompt_ja": "ㄴ のローマ字表記は…"
     },
     {
       "id": 18,
@@ -760,7 +763,8 @@
         "ㅈ",
         "ㅅ",
         "ㄷ"
-      ]
+      ],
+      "prompt_ja": "「juice」の j のような音になる子音はどれでしょう。"
     },
     {
       "id": 19,
@@ -822,7 +826,8 @@
         "n",
         "m",
         "h"
-      ]
+      ],
+      "prompt_ja": "ㅁ のローマ字表記は…"
     },
     {
       "id": 20,
@@ -884,7 +889,8 @@
         "d/t",
         "r/l",
         "s"
-      ]
+      ],
+      "prompt_ja": "ㄹ のローマ字表記は…"
     },
     {
       "id": 21,
@@ -1208,7 +1214,8 @@
         "ㅗ",
         "ㅜ",
         "ㅣ"
-      ]
+      ],
+      "prompt_ja": "「father」の a のような音になる母音はどれでしょう。"
     },
     {
       "id": 33,
@@ -1270,7 +1277,8 @@
         "ㅗ",
         "ㅡ",
         "ㅑ"
-      ]
+      ],
+      "prompt_ja": "「more」の o のような音になる母音はどれでしょう。"
     },
     {
       "id": 34,
@@ -1332,7 +1340,8 @@
         "ㅛ",
         "ㅣ",
         "ㅠ"
-      ]
+      ],
+      "prompt_ja": "「bee」の ee のような音になる母音はどれでしょう。"
     },
     {
       "id": 35,
@@ -1394,7 +1403,8 @@
         "eu",
         "yo",
         "yu"
-      ]
+      ],
+      "prompt_ja": "ㅠ のローマ字表記は…"
     },
     {
       "id": 36,
@@ -1456,7 +1466,8 @@
         "i",
         "eu",
         "yo"
-      ]
+      ],
+      "prompt_ja": "ㅡ の音は…"
     },
     {
       "id": 37,
@@ -1826,7 +1837,8 @@
         "kk",
         "g/k",
         "ng"
-      ]
+      ],
+      "prompt_ja": "ㄲ のローマ字表記は…"
     },
     {
       "id": 54,
@@ -1950,7 +1962,8 @@
         "p",
         "pp",
         "bb"
-      ]
+      ],
+      "prompt_ja": "ㅃ のローマ字表記は…"
     },
     {
       "id": 56,
@@ -2012,6 +2025,13 @@
         "Một luồng hơi mạnh",
         "Cổ họng căng",
         "Âm mũi"
+      ],
+      "prompt_ja": "激音は何を伴って発音されますか。",
+      "choices_ja": [
+        "息を伴わない",
+        "強い息の放出",
+        "喉の緊張",
+        "鼻音"
       ]
     },
     {
@@ -2074,7 +2094,8 @@
         "ch",
         "jj",
         "tt"
-      ]
+      ],
+      "prompt_ja": "ㅉ のローマ字表記は…"
     },
     {
       "id": 58,
@@ -2356,7 +2377,8 @@
         "wa",
         "wae",
         "oe"
-      ]
+      ],
+      "prompt_ja": "ㅘ のローマ字表記は…"
     },
     {
       "id": 70,
@@ -2418,6 +2440,12 @@
         "ai",
         "tại sao",
         "ở đâu"
+      ],
+      "choices_ja": [
+        "何",
+        "誰",
+        "なぜ",
+        "どこ"
       ]
     },
     {
@@ -2480,7 +2508,8 @@
         "ui",
         "we",
         "eu"
-      ]
+      ],
+      "prompt_ja": "ㅢ のローマ字表記は…"
     },
     {
       "id": 72,
@@ -2542,7 +2571,8 @@
         "ㅙ",
         "ㅚ",
         "ㅝ"
-      ]
+      ],
+      "prompt_ja": "ㅗ ＋ ㅣ からなる合成母音はどれでしょう。"
     },
     {
       "id": 73,
@@ -2625,7 +2655,8 @@
       "meaning_de": "Hallo / Tschüss (informell)",
       "meaning_vi": "xin chào / tạm biệt (thân mật)",
       "meaning_th": "สวัสดี / ลาก่อน (ไม่เป็นทางการ)",
-      "meaning_id": "halo / sampai jumpa (tidak resmi)"
+      "meaning_id": "halo / sampai jumpa (tidak resmi)",
+      "meaning_ja": "こんにちは／さようなら（くだけた言い方）"
     },
     {
       "id": 75,
@@ -2646,7 +2677,8 @@
       "meaning_de": "Schule",
       "meaning_vi": "trường học",
       "meaning_th": "โรงเรียน",
-      "meaning_id": "sekolah"
+      "meaning_id": "sekolah",
+      "meaning_ja": "学校"
     },
     {
       "id": 76,
@@ -2667,7 +2699,8 @@
       "meaning_de": "Korea",
       "meaning_vi": "Hàn Quốc",
       "meaning_th": "เกาหลี",
-      "meaning_id": "Korea"
+      "meaning_id": "Korea",
+      "meaning_ja": "韓国"
     },
     {
       "id": 77,
@@ -2688,7 +2721,8 @@
       "meaning_de": "Liebe",
       "meaning_vi": "tình yêu",
       "meaning_th": "ความรัก",
-      "meaning_id": "cinta"
+      "meaning_id": "cinta",
+      "meaning_ja": "愛"
     },
     {
       "id": 78,
@@ -2708,7 +2742,8 @@
       "meaning_de": "Wasser",
       "meaning_vi": "nước",
       "meaning_th": "น้ำ",
-      "meaning_id": "air"
+      "meaning_id": "air",
+      "meaning_ja": "水"
     },
     {
       "id": 79,
@@ -2728,7 +2763,8 @@
       "meaning_de": "Reis / Mahlzeit",
       "meaning_vi": "cơm / bữa ăn",
       "meaning_th": "ข้าว / อาหาร",
-      "meaning_id": "nasi / makanan"
+      "meaning_id": "nasi / makanan",
+      "meaning_ja": "ご飯／食事"
     },
     {
       "id": 80,
@@ -2749,7 +2785,8 @@
       "meaning_de": "Person / Mensch",
       "meaning_vi": "người",
       "meaning_th": "คน",
-      "meaning_id": "orang"
+      "meaning_id": "orang",
+      "meaning_ja": "人"
     },
     {
       "id": 81,
@@ -2770,7 +2807,8 @@
       "meaning_de": "Freund/in",
       "meaning_vi": "bạn bè",
       "meaning_th": "เพื่อน",
-      "meaning_id": "teman"
+      "meaning_id": "teman",
+      "meaning_ja": "友達"
     },
     {
       "id": 82,
@@ -2791,7 +2829,8 @@
       "meaning_de": "Himmel",
       "meaning_vi": "bầu trời",
       "meaning_th": "ท้องฟ้า",
-      "meaning_id": "langit"
+      "meaning_id": "langit",
+      "meaning_ja": "空"
     },
     {
       "id": 83,
@@ -2813,7 +2852,8 @@
       "meaning_de": "Danke (informell)",
       "meaning_vi": "cảm ơn (thân mật)",
       "meaning_th": "ขอบคุณ (ไม่เป็นทางการ)",
-      "meaning_id": "terima kasih (tidak resmi)"
+      "meaning_id": "terima kasih (tidak resmi)",
+      "meaning_ja": "ありがとう（くだけた言い方）"
     },
     {
       "id": 84,
@@ -2832,7 +2872,8 @@
       "message_th": "ยอดเยี่ยมมาก — คุณเรียนจบทั้ง 6 ขั้นตอนของฮันกึลแล้ว คุณสามารถอ่านและเขียนตัวอักษรทุกตัวในตัวอักษรเกาหลีได้แล้ว 화이팅!",
       "title_id": "Anda bisa membaca bahasa Korea!",
       "message_id": "Kerja luar biasa — Anda telah menyelesaikan semua 6 tahap Hangul. Sekarang Anda bisa membaca dan menulis setiap karakter dalam alfabet Korea. 화이팅!",
-      "message_vi": "Tuyệt vời — bạn đã hoàn thành cả 6 chặng của Hangul. Giờ bạn có thể đọc và viết mọi ký tự trong bảng chữ cái tiếng Hàn. 화이팅!"
+      "message_vi": "Tuyệt vời — bạn đã hoàn thành cả 6 chặng của Hangul. Giờ bạn có thể đọc và viết mọi ký tự trong bảng chữ cái tiếng Hàn. 화이팅!",
+      "title_ja": "韓国語が読めるようになりました！"
     }
   ]
 }

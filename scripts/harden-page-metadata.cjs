@@ -333,8 +333,17 @@ const COPY = {
 /* ══ PART 1 — noindex audit (assert, don't strip) ═════════════════════════
    The deliberate wave-1 noindex on the two JS-only widgets, in every locale. */
 const DELIBERATE_NOINDEX = new Set();
+// Pure JS widgets with no prose of their own.
 for (const l of ALL) for (const p of ['search', 'quiz'])
   DELIBERATE_NOINDEX.add(l === 'en' ? `${p}.html` : `${l}/${p}.html`);
+// The vocabulary word bank has no _de/_fr/_vi/_th/_id fields (447 entries short),
+// so these three pages fall back to English wholesale in those five locales.
+// Noindexed rather than shipped as fake translations. Lift each one as its
+// locale's fields land in learn/data/vocabulary-*.json — see
+// scripts/audit-learn-locale-dup.cjs to confirm before lifting.
+for (const l of ['de', 'fr', 'vi', 'th', 'id'])
+  for (const p of ['vocabulary', 'vocabulary-browser', 'flashcard'])
+    DELIBERATE_NOINDEX.add(`learn/${l}/${p}.html`);
 
 function auditNoindex() {
   const unexpected = [], missing = [];

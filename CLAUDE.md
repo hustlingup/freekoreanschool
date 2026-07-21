@@ -38,8 +38,31 @@ node scripts/inject-seo.mjs
 
 # sitemap.xml — single source of truth, scans real file inventory across all
 # 9 locales (en + ja/zh-tw/es/de/fr/vi/th/id). Rerun after adding/removing any
-# learn/culture/travel/root page in any language.
+# learn/culture/travel/root page in any language, and after anything changes a
+# page's robots meta — it drops noindex pages automatically.
 node scripts/gen-sitemap.cjs
+
+# Locale duplication audit for learn/ — what fraction of each localized page's
+# non-Korean prose is byte-identical to the English source. Read-only.
+# `sentenceRatio` (duplication restricted to nodes >=30 chars) is the number
+# that matters. Excludes Korean, romanization and locale-swap pairs.
+node scripts/audit-learn-locale-dup.cjs [--json|--show <page>]
+
+# Translate the hand-written prose of a learn/<locale>/<lesson>.html shell from
+# an authored table in scripts/_trans/learn/<lesson>.<locale>.json. Rewrites
+# only text nodes; never touches markup, <head>, or the #lesson-static block.
+node scripts/translate-learn-shell.cjs --extract <lesson> <locale>   # dump TODO
+node scripts/translate-learn-shell.cjs --apply   <lesson> <locale|all>
+
+# Locale-field backfill for learn/data/*.json (idempotent, never overwrites).
+# Rerun gen-lesson-static.cjs after either.
+node scripts/patch-vocab-ja-zhtw.cjs      # vocabulary word bank, ja + zh_tw
+node scripts/patch-lesson-ja-gaps.cjs     # lesson prose, ja
+node scripts/patch-quiz-ja.cjs            # match_quiz prompts/choices, ja
+
+# Mark the still-English word-bank pages noindex (see the script header for the
+# measurement behind it and the procedure for lifting it).
+node scripts/noindex-untranslated-vocab.cjs [--check|--lift <locale>]
 
 # News-section removal (2026-07-21) — idempotent, marker-guarded. Kept as the
 # record of what was stripped; rerun only to re-clean if a generator script
@@ -52,6 +75,19 @@ node scripts/remove-news-section.cjs [--check]
 # exits 1 on drift. Dates come from scripts/culture-travel-dates.json (derived
 # from real git history — regenerate it only from git, never by hand).
 node scripts/fix-culture-travel-seo.cjs [--check]
+
+# culture/ + travel/ navigation: keeps every hub link inside its own locale and
+# proves there are no dead links or indexable orphans. `--check` verifies only.
+# The 26 remaining cross-locale links are the static language-switcher anchors,
+# which lang-core.js rebuilds at runtime — they are whitelisted, not a defect.
+node scripts/fix-culture-travel-nav.cjs [--check]
+
+# learn/ locale duplication audit — reports which localized pages still serve
+# English prose. Excludes Korean, romanization, and .ja-block/.no-ja pairs,
+# which are identical across locales BY DESIGN; a metric that misses this
+# reports false negatives (this is how the 2026-07-21 "all 8 locales are
+# translated" claim was wrong).
+node scripts/audit-learn-locale-dup.cjs
 ```
 
 **Do not run** `gen-content-mirrors.cjs`, `gen-root-mirrors.cjs`, or any language-specific `gen-*-site.cjs` scripts during Phase 2 translation work — they overwrite translated prose with English source.
@@ -82,11 +118,47 @@ A lesson renders only ONE step per `?step=N` URL, so the shell alone was ~62 cra
 
 Rerun `node scripts/gen-lesson-static.cjs` (idempotent) after editing any `learn/data/*.json`; verify with `node scripts/audit-learn-content.cjs`.
 
+⚠️ The word table renders the **localised meaning only**. It used to append the
+English meaning as a secondary `<span class="ls-aid">` in every locale, as a
+crutch for partially-translated languages. Because that table is embedded in
+`vocabulary.html`, `vocabulary-browser.html` *and* `flashcard.html`, the crutch
+republished the whole English word bank across 24 localized URLs and was the
+single largest source of duplicate content on the site — it hit fully-translated
+`es`/`ja`/`zh-tw` just as hard as the rest. Do not reintroduce it. Where a
+locale genuinely lacks the translation the English still shows through as a
+fallback, and that page should be `noindex` until the JSON is filled in.
+
 Localized fields in JSON use `_<lang>` suffixes (e.g. `title_ja`, `body_zh_tw`, `meaning_es`). The helper `loc(obj, base)` inside step-runner picks the right variant based on the current language. Pronunciation aids use dedicated fields: `katakana` (JA), `zhuyin` (ZH-TW), `reading_vi`/`reading_th` (others).
 
 ### Localization architecture
 - **8 language versions**: `ja`, `zh-tw`, `es`, `de`, `fr`, `vi`, `th`, `id`
-- **All 8 are fully translated** (prose + chrome). The old "chrome-only for `de`/`fr`/`vi`/`th`/`id`" claim was stale — a 2026-07-21 audit measured trigram overlap against the English source at .021–.044 for every locale, with spot-checks confirming genuine prose. Consequence: any `noindex` still applied to those locales by the 2026-07-07 translation gate is suppressing legitimate pages and should be lifted.
+
+#### Translation status under `learn/` — measured, not assumed
+Run `node scripts/audit-learn-locale-dup.cjs` for the current numbers. It
+reports, per page, what fraction of the non-Korean prose is byte-identical to
+the English source. **Trust it over any prose claim in this file, including
+this one.**
+
+As of 2026-07-21, after the remediation pass:
+- **113 of 128** `learn/<locale>/*.html` pages are genuinely translated —
+  0 indexed pages have ≥50% of their sentence-length prose still in English
+  (worst indexed page: 0.48; was 0.99).
+- **15 pages are `noindex, follow`**: `learn/{de,fr,vi,th,id}/{vocabulary,
+  vocabulary-browser,flashcard}.html`. Their embedded word-bank reference is
+  still English because all 447 translatable fields in `learn/data/vocabulary-*.json`
+  lack `_de`/`_fr`/`_vi`/`_th`/`_id` variants. See
+  `scripts/noindex-untranslated-vocab.cjs` for how to translate and lift.
+
+⚠️ **Two earlier audits reached the opposite, wrong conclusion.** Both measured
+whole-page similarity without excluding content that is *supposed* to be
+identical across locales — the Korean being taught, Revised-Romanization
+lines (`.rom-line`, 178 of them on the dialogues page alone), pronunciation
+aids, and the `.ja-block`/`.no-ja` locale-swap pairs. Those dominate the
+signal and mask pages whose entire English prose was never touched. A related
+trap: requiring a text segment to contain a space before counting it as prose
+silently discards every genuine ja/zh-tw/th segment (those scripts do not
+space their words) and inflates those locales toward 1.0. Any new
+translation metric must exclude all of the above, or it will repeat the error.
 - The 2026-07-07 translation gate that noindexed 96 culture/travel pages was lifted 2026-07-21 by `scripts/fix-culture-travel-seo.cjs`. The only culture/travel pages that remain `noindex` are the 9 `travel/*/planner` tool pages (~100 words each, interactive, thin in every locale). Do not reintroduce a locale-based noindex.
 - Each language's pages live under `/<lang>/` for root pages and `learn/<lang>/`, `culture/<lang>/`, etc. for content
 - All language versions load the **same** `learn/data/*.json` files — JSON contains all translations

@@ -275,7 +275,8 @@
         "무섭다",
         "행복하다",
         "화가 나다"
-      ]
+      ],
+      "prompt_ja": "「うれしい」を意味する語はどれでしょう。"
     },
     {
       "id": 7,
@@ -335,7 +336,8 @@
       "tip_vi": {
         "label": "Bảng chia nhanh",
         "text": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Lưu ý 슬프다 bỏ 으 trước -어요."
-      }
+      },
+      "title_ja": "感情形容詞の活用"
     },
     {
       "id": 8,
@@ -592,7 +594,8 @@
         "신나다",
         "피곤하다",
         "걱정되다"
-      ]
+      ],
+      "prompt_ja": "「疲れている」を意味する語はどれでしょう。"
     },
     {
       "id": 16,
@@ -740,6 +743,12 @@
         "Tôi thấy dễ chịu",
         "Tôi đói",
         "Tôi mệt"
+      ],
+      "choices_ja": [
+        "気分が悪い",
+        "気分がいい",
+        "おなかがすいた",
+        "疲れた"
       ]
     },
     {
@@ -952,6 +961,12 @@
         "nhớ ai đó (khao khát)",
         "mệt",
         "cô đơn"
+      ],
+      "choices_ja": [
+        "うれしい",
+        "恋しい・会いたい",
+        "疲れている",
+        "寂しい"
       ]
     },
     {
@@ -1036,6 +1051,12 @@
         "tự hào/mãn nguyện",
         "cô đơn",
         "nhớ ai đó"
+      ],
+      "choices_ja": [
+        "恥ずかしい",
+        "誇らしい・充実している",
+        "寂しい",
+        "人が恋しい"
       ]
     },
     {
@@ -1096,7 +1117,8 @@
       "tip_vi": {
         "label": "괜찮아요 — câu đa dụng",
         "text": "괜찮아요 nghĩa đen là 'ổn thôi/không sao'. Dùng nó để trấn an ai đó rằng bạn ổn (sau khi vấp ngã), để chấp nhận một lời mời bạn từng từ chối, để nói 'không, cảm ơn', hoặc để bày tỏ 'thế cũng được'. Làm chủ giọng điệu của nó là điều then chốt — cùng từ ngữ nhưng thông điệp rất khác nhau."
-      }
+      },
+      "title_ja": "感情を表すよく使う文型"
     },
     {
       "id": 28,
@@ -1231,6 +1253,12 @@
         "Tôi xúc động",
         "Tôi nhớ bạn / Tôi muốn gặp bạn",
         "Tôi cô đơn"
+      ],
+      "choices_ja": [
+        "大丈夫です",
+        "感動した",
+        "会いたい",
+        "寂しい"
       ]
     },
     {
@@ -1274,7 +1302,8 @@
       "message_th": "คุณสำรวจคำศัพท์อารมณ์ภาษาเกาหลีแล้ว — จากความรู้สึกพื้นฐานถึงคำที่มีความหมายทางวัฒนธรรมอย่าง 그립다 뿌듯하다 และ 설레다 ภาษาเกาหลีของคุณด้านอารมณ์กำลังเติบโต!",
       "title_id": "Emosi Selesai!",
       "message_id": "Anda telah menjelajahi kosakata emosi Korea — dari perasaan dasar hingga kata-kata yang kaya secara budaya seperti 그립다, 뿌듯하다, dan 설레다. Kemampuan bahasa Korea emosional Anda terus berkembang!",
-      "message_vi": "Bạn đã khám phá từ vựng cảm xúc tiếng Hàn — từ những cảm giác cơ bản đến những từ giàu tính văn hóa như 그립다, 뿌듯하다 và 설레다. Tiếng Hàn cảm xúc của bạn đang lớn dần!"
+      "message_vi": "Bạn đã khám phá từ vựng cảm xúc tiếng Hàn — từ những cảm giác cơ bản đến những từ giàu tính văn hóa như 그립다, 뿌듯하다 và 설레다. Tiếng Hàn cảm xúc của bạn đang lớn dần!",
+      "title_ja": "感情編、修了！"
     }
   ]
 }

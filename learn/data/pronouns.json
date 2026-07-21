@@ -122,7 +122,8 @@
       "tip_vi": {
         "label": "Ngôn ngữ lược đại từ (pro-drop)",
         "text": "Tiếng Hàn là một ngôn ngữ lược đại từ — khi chủ ngữ đã rõ ràng từ ngữ cảnh hoặc vừa được nhắc đến, hãy bỏ đại từ. Giữ lại nó có thể nghe thiếu tự nhiên hoặc thậm chí hơi bất lịch sự (quá thẳng thừng). 저 괜찮아요 và 괜찮아요 đều nghĩa là 'Tôi ổn', nhưng dạng ngắn hơn tự nhiên hơn."
-      }
+      },
+      "title_ja": "韓国語の代名詞の概観"
     },
     {
       "id": 2,
@@ -265,7 +266,8 @@
         "너",
         "저",
         "당신"
-      ]
+      ],
+      "prompt_ja": "「私」の謙譲・丁寧な形の代名詞はどれでしょう。"
     },
     {
       "id": 7,
@@ -325,7 +327,8 @@
       "tip_vi": {
         "label": "Cách xưng hô mà không dùng 당신",
         "text": "Dùng tên người + 씨 cho người lớn mà bạn chưa quen thân: 김민준씨. Dùng chức danh của họ: 사장님 (giám đốc), 과장님 (trưởng phòng). Dùng từ chỉ mối quan hệ: 언니, 오빠, 아저씨. Những cách này tự nhiên hơn nhiều so với 당신."
-      }
+      },
+      "title_ja": "韓国語で「あなた」をどう言うか"
     },
     {
       "id": 8,
@@ -408,6 +411,12 @@
         "Nó có thể nghe lạnh lùng hoặc gây hấn",
         "Nó chỉ dùng trong văn viết",
         "Nó quá thân mật"
+      ],
+      "choices_ja": [
+        "「敵」という意味になる",
+        "冷たく、対立的に響くことがある",
+        "書き言葉でしか使えない",
+        "くだけすぎている"
       ]
     },
     {
@@ -616,6 +625,12 @@
         "mẹ tôi",
         "giáo viên",
         "một người lạ"
+      ],
+      "choices_ja": [
+        "他人の母親",
+        "自分の母親",
+        "先生",
+        "見知らぬ人"
       ]
     },
     {
@@ -702,7 +717,8 @@
         "저희",
         "그들",
         "너희"
-      ]
+      ],
+      "prompt_ja": "目上の人に対して使う、より謙虚で丁寧な「私たち」はどれでしょう。"
     },
     {
       "id": 18,
@@ -908,7 +924,8 @@
         "그것",
         "저것",
         "어떤 것"
-      ]
+      ],
+      "prompt_ja": "話し手からも聞き手からも遠いものを指す指示語はどれでしょう。"
     },
     {
       "id": 24,
@@ -1196,7 +1213,8 @@
         "어디",
         "누구",
         "왜"
-      ]
+      ],
+      "prompt_ja": "「誰」を意味する疑問代名詞はどれでしょう。"
     },
     {
       "id": 32,
@@ -1216,7 +1234,8 @@
       "message_th": "คุณเชี่ยวชาญสรรพนามภาษาเกาหลีแล้ว — จาก 저 สุภาพถึง 나 ไม่เป็นทางการ จาก 우리 (ของเรา/ฉัน) ถึงคำชี้เฉพาะและคำคำถาม ก้าวหน้ามากเลย!",
       "title_id": "Kata Ganti Selesai!",
       "message_id": "Anda telah menguasai kata ganti Korea — dari 저 yang sopan hingga 나 yang santai, dari 우리 (kami/milik saya), hingga kata tunjuk dan kata tanya. Kemajuan yang luar biasa!",
-      "message_vi": "Bạn đã làm chủ đại từ tiếng Hàn — từ 저 lịch sự đến 나 thân mật, từ 우리 (của chúng ta/của tôi), đến các từ chỉ định và từ để hỏi. Tiến bộ tuyệt vời!"
+      "message_vi": "Bạn đã làm chủ đại từ tiếng Hàn — từ 저 lịch sự đến 나 thân mật, từ 우리 (của chúng ta/của tôi), đến các từ chỉ định và từ để hỏi. Tiến bộ tuyệt vời!",
+      "title_ja": "代名詞編、修了！"
     }
   ]
 }

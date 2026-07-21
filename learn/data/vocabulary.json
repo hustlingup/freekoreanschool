@@ -75,7 +75,11 @@
       "tip_es": {
         "label": "Regla clave: en caso de duda, sé formal",
         "text": "Los coreanos aprecian el esfuerzo. Usar la terminación formal 하세요 siempre es seguro con personas que acabas de conocer. Cambiar a 안녕 informal con un amigo cercano muestra calidez."
-      }
+      },
+      "title_ja": "韓国語のあいさつ",
+      "title_zh_tw": "韓語的問候語",
+      "body_ja": "韓国語のあいさつは、相手が誰か、どんな場面かによって変わります。最も重要な区別は、フォーマルな言い方とくだけた言い方です。初対面の人、目上の人、仕事の場ではフォーマルな形を使います。くだけた形は友人や年下の相手に使います。",
+      "body_zh_tw": "韓語的問候語會隨著談話對象與場合而改變。最重要的區別在於敬語體與半語體。面對陌生人、長輩以及在正式場合時使用敬語體；半語體則用於朋友和比自己年幼的人。"
     },
     {
       "id": 2,
@@ -91,7 +95,9 @@
       "romanization": "Annyeonghaseyo",
       "audio": "안녕하세요",
       "meaning": "Hello — formal, the most common greeting",
-      "meaning_es": "Hola — formal, el saludo más común"
+      "meaning_es": "Hola — formal, el saludo más común",
+      "meaning_ja": "こんにちは — フォーマル。最もよく使われるあいさつ",
+      "meaning_zh_tw": "你好 — 敬語體，最常用的問候語"
     },
     {
       "id": 3,
@@ -104,7 +110,9 @@
       "romanization": "Annyeong",
       "audio": "안녕",
       "meaning": "Hi / Bye (casual) — used with friends",
-      "meaning_es": "Hola / Adiós (informal) — usado con amigos"
+      "meaning_es": "Hola / Adiós (informal) — usado con amigos",
+      "meaning_ja": "やあ／じゃあね（くだけた言い方）— 友人に使う",
+      "meaning_zh_tw": "嗨／掰掰（半語體）— 對朋友使用"
     },
     {
       "id": 4,
@@ -120,7 +128,9 @@
       "romanization": "Gamsahamnida",
       "audio": "감사합니다",
       "meaning": "Thank you — formal, very polite",
-      "meaning_es": "Gracias — formal, muy educado"
+      "meaning_es": "Gracias — formal, muy educado",
+      "meaning_ja": "ありがとうございます — フォーマルで非常に丁寧",
+      "meaning_zh_tw": "謝謝 — 敬語體，非常禮貌"
     },
     {
       "id": 5,
@@ -151,7 +161,9 @@
       "romanization": "Joesonghamnida",
       "audio": "죄송합니다",
       "meaning": "I'm sorry — formal apology",
-      "meaning_es": "Lo siento — disculpa formal"
+      "meaning_es": "Lo siento — disculpa formal",
+      "meaning_ja": "申し訳ありません — フォーマルな謝罪",
+      "meaning_zh_tw": "對不起 — 正式的道歉用語"
     },
     {
       "id": 7,
@@ -166,7 +178,9 @@
       "romanization": "Gwaenchanayo",
       "audio": "괜찮아요",
       "meaning": "It's okay / Are you okay? — very versatile phrase",
-      "meaning_es": "Está bien / ¿Estás bien? — frase muy versátil"
+      "meaning_es": "Está bien / ¿Estás bien? — frase muy versátil",
+      "meaning_ja": "大丈夫です／大丈夫ですか — 用途の広い便利な表現",
+      "meaning_zh_tw": "沒關係／你還好嗎 — 用途極廣的萬用句"
     },
     {
       "id": 8,
@@ -182,7 +196,9 @@
       "romanization": "Bangapseumnida",
       "audio": "반갑습니다",
       "meaning": "Nice to meet you — used when meeting someone for the first time",
-      "meaning_es": "Encantado/a de conocerte — usado al conocer a alguien por primera vez"
+      "meaning_es": "Encantado/a de conocerte — usado al conocer a alguien por primera vez",
+      "meaning_ja": "はじめまして — 初対面のときに使う",
+      "meaning_zh_tw": "很高興認識你 — 初次見面時使用"
     },
     {
       "id": 9,
@@ -196,7 +212,8 @@
         "괜찮아요"
       ],
       "correct": "안녕하세요",
-      "prompt_es": "¿Qué frase significa \"Hola\" de la forma más formal?"
+      "prompt_es": "¿Qué frase significa \"Hola\" de la forma más formal?",
+      "prompt_ja": "最もフォーマルな「こんにちは」はどれでしょう。"
     },
     {
       "id": 10,
@@ -210,7 +227,8 @@
         "잘 있어요"
       ],
       "correct": "감사합니다",
-      "prompt_es": "¿Cómo se dice \"Gracias\" de la forma más formal en coreano?"
+      "prompt_es": "¿Cómo se dice \"Gracias\" de la forma más formal en coreano?",
+      "prompt_ja": "最もフォーマルな韓国語で「ありがとうございます」はどう言いますか。"
     },
     {
       "id": 11,
@@ -227,7 +245,9 @@
       "romanization": "Annyeonghi gaseyo",
       "audio": "안녕히 가세요",
       "meaning": "Goodbye — said to the person who is leaving",
-      "meaning_es": "Adiós — dicho a la persona que se va"
+      "meaning_es": "Adiós — dicho a la persona que se va",
+      "meaning_ja": "さようなら — その場を去る相手に対して言う",
+      "meaning_zh_tw": "再見 — 對即將離開的人說"
     },
     {
       "id": 12,
@@ -241,7 +261,9 @@
       "romanization": "Hwaiting",
       "audio": "화이팅",
       "meaning": "Fighting! / You can do it! — a Korean cheer of encouragement",
-      "meaning_es": "¡Fighting! / ¡Tú puedes! — expresión coreana de aliento"
+      "meaning_es": "¡Fighting! / ¡Tú puedes! — expresión coreana de aliento",
+      "meaning_ja": "ファイティン！／頑張って！ — 韓国式の励ましのかけ声",
+      "meaning_zh_tw": "加油！／你做得到！— 韓國式的加油打氣語"
     },
     {
       "id": 13,
@@ -270,7 +292,9 @@
       "tip_es": {
         "label": "Truco de memoria rápido",
         "text": "Piensa: Nativo = ritmos corporales naturales (latidos, edad, contar con los dedos). Sino = contextos sistemáticos/oficiales (relojes, dinero, calendarios)."
-      }
+      },
+      "title_ja": "二つの数詞体系",
+      "title_zh_tw": "兩套數字系統"
     },
     {
       "id": 14,
@@ -378,6 +402,13 @@
         "Coreano nativo (하나, 둘, 셋)",
         "Cualquiera de los dos es válido",
         "Ninguno — usar números en inglés"
+      ],
+      "prompt_ja": "韓国語で自分の年齢を伝えます。どちらの数詞を使いますか。",
+      "choices_ja": [
+        "Sino-Korean (일, 이, 삼)",
+        "Native Korean (하나, 둘, 셋)",
+        "どちらでもよい",
+        "どちらでもない — 英語の数字を使う"
       ]
     },
     {
@@ -404,7 +435,9 @@
         "살 (sal) — edad: 스물다섯 살 (25 años)",
         "권 (gwon) — libros: 책 한 권 (un libro)",
         "잔 (jan) — tazas / vasos: 커피 한 잔 (una taza de café)"
-      ]
+      ],
+      "title_ja": "韓国語の助数詞",
+      "title_zh_tw": "韓語的量詞"
     },
     {
       "id": 24,
@@ -465,7 +498,9 @@
       "tip_es": {
         "label": "Títulos familiares honoríficos",
         "text": "Los coreanos a menudo llaman a personas que no son familiares con títulos familiares como señal de respeto: 언니 (hermana mayor) a una mujer conocida, 아저씨 (hombre de mediana edad) a un desconocido. Es más cálido que usar nombres."
-      }
+      },
+      "title_ja": "韓国語の家族の呼び方",
+      "title_zh_tw": "韓語的家族稱謂"
     },
     {
       "id": 28,
@@ -551,7 +586,8 @@
         "오빠 (oppa)",
         "언니 (eonni)",
         "남동생 (namdongsaeng)"
-      ]
+      ],
+      "prompt_ja": "女性が自分の兄を呼ぶときは ___ と言います。"
     },
     {
       "id": 35,
@@ -561,7 +597,9 @@
       "title_kr": "신체 부위",
       "body": "Knowing body parts is essential for describing pain at a clinic, understanding directions, or describing someone's appearance. Many Korean body-part words are also used idiomatically — for example, 눈이 높다 (literally 'high eyes') means 'having high standards.'",
       "title_es": "Partes del Cuerpo",
-      "body_es": "Conocer las partes del cuerpo es esencial para describir dolores en una clínica, entender indicaciones o describir la apariencia de alguien. Muchas palabras coreanas de partes del cuerpo también se usan idiomáticamente — por ejemplo, 눈이 높다 (literalmente \"ojos altos\") significa \"tener estándares altos\"."
+      "body_es": "Conocer las partes del cuerpo es esencial para describir dolores en una clínica, entender indicaciones o describir la apariencia de alguien. Muchas palabras coreanas de partes del cuerpo también se usan idiomáticamente — por ejemplo, 눈이 높다 (literalmente \"ojos altos\") significa \"tener estándares altos\".",
+      "title_ja": "体の部位",
+      "title_zh_tw": "身體部位"
     },
     {
       "id": 36,
@@ -625,7 +663,8 @@
         "귀 (gwi)",
         "입 (ip)",
         "목 (mok)"
-      ]
+      ],
+      "prompt_ja": "「耳」を意味する韓国語はどれでしょう。"
     },
     {
       "id": 41,
@@ -644,7 +683,9 @@
       "tip_es": {
         "label": "Vocabulario esencial de comida coreana",
         "text": "밥 (bap) significa tanto \"arroz\" como \"comida\" — así que 밥 먹었어요? (¿ya comiste?) es un saludo común entre coreanos, similar a preguntar \"¿cómo estás?\""
-      }
+      },
+      "title_ja": "韓国の食べ物",
+      "title_zh_tw": "韓國食物"
     },
     {
       "id": 42,
@@ -656,7 +697,9 @@
       "romanization": "bap",
       "audio": "밥",
       "meaning": "Rice / Meal — the cornerstone of Korean cuisine",
-      "meaning_es": "Arroz / Comida — la piedra angular de la cocina coreana"
+      "meaning_es": "Arroz / Comida — la piedra angular de la cocina coreana",
+      "meaning_ja": "ご飯／食事 — 韓国料理の基本をなすもの",
+      "meaning_zh_tw": "飯／餐 — 韓國飲食的根本"
     },
     {
       "id": 43,
@@ -669,7 +712,9 @@
       "romanization": "gimchi",
       "audio": "김치",
       "meaning": "Kimchi — fermented vegetables, Korea's most iconic side dish",
-      "meaning_es": "Kimchi — verduras fermentadas, el acompañamiento más icónico de Corea"
+      "meaning_es": "Kimchi — verduras fermentadas, el acompañamiento más icónico de Corea",
+      "meaning_ja": "キムチ — 発酵させた野菜。韓国を象徴するおかず",
+      "meaning_zh_tw": "泡菜 — 發酵蔬菜，韓國最具代表性的小菜"
     },
     {
       "id": 44,
@@ -683,7 +728,9 @@
       "romanization": "bibimbap",
       "audio": "비빔밥",
       "meaning": "Bibimbap — mixed rice bowl with vegetables, egg, and gochujang",
-      "meaning_es": "Bibimbap — bol de arroz mixto con verduras, huevo y gochujang"
+      "meaning_es": "Bibimbap — bol de arroz mixto con verduras, huevo y gochujang",
+      "meaning_ja": "ビビンバ — 野菜と卵、コチュジャンを混ぜて食べる丼料理",
+      "meaning_zh_tw": "拌飯 — 加入蔬菜、雞蛋與辣椒醬拌勻的蓋飯"
     },
     {
       "id": 45,
@@ -697,7 +744,9 @@
       "romanization": "samgyeopsal",
       "audio": "삼겹살",
       "meaning": "Samgyeopsal — grilled pork belly, a classic Korean BBQ cut",
-      "meaning_es": "Samgyeopsal — panceta de cerdo a la parrilla, un corte clásico del BBQ coreano"
+      "meaning_es": "Samgyeopsal — panceta de cerdo a la parrilla, un corte clásico del BBQ coreano",
+      "meaning_ja": "サムギョプサル — 焼いた豚バラ肉。韓国式焼肉の定番",
+      "meaning_zh_tw": "烤五花肉 — 韓式烤肉的經典部位"
     },
     {
       "id": 46,
@@ -711,7 +760,9 @@
       "romanization": "tteokbokki",
       "audio": "떡볶이",
       "meaning": "Tteokbokki — spicy rice cakes, a beloved Korean street food",
-      "meaning_es": "Tteokbokki — pastelitos de arroz picantes, amada comida callejera coreana"
+      "meaning_es": "Tteokbokki — pastelitos de arroz picantes, amada comida callejera coreana",
+      "meaning_ja": "トッポッキ — 辛い餅料理。韓国で愛される屋台の味",
+      "meaning_zh_tw": "辣炒年糕 — 廣受喜愛的韓國街頭小吃"
     },
     {
       "id": 47,
@@ -731,6 +782,12 @@
         "Carne de res BBQ coreana",
         "Fideos fríos",
         "Panceta de cerdo a la parrilla"
+      ],
+      "choices_ja": [
+        "辛い豆腐チゲ",
+        "韓国式焼き肉（牛）",
+        "冷麺",
+        "焼いた豚バラ肉"
       ]
     },
     {
@@ -750,7 +807,9 @@
       "tip_es": {
         "label": "Forma adjetiva",
         "text": "Para decir \"un bolso rojo\", omite 색: 빨간 가방 (bolso rojo). Añade el sustantivo directamente después del adjetivo de color — no se necesita partícula extra."
-      }
+      },
+      "title_ja": "色",
+      "title_zh_tw": "顏色"
     },
     {
       "id": 49,
@@ -814,6 +873,12 @@
         "Gris",
         "Blanco",
         "Plateado"
+      ],
+      "choices_ja": [
+        "黒",
+        "灰色",
+        "白",
+        "銀"
       ]
     },
     {
@@ -833,7 +898,9 @@
       "tip_es": {
         "label": "Lugares esenciales de la ciudad",
         "text": "Dos lugares únicamente coreanos: 노래방 (noraebang) — salas de karaoke privadas donde cantas con amigos, no con desconocidos. 찜질방 (jjimjilbang) — sauna coreana y espacio de descanso comunitario, abierto 24h."
-      }
+      },
+      "title_ja": "韓国の場所",
+      "title_zh_tw": "韓國的場所"
     },
     {
       "id": 55,
@@ -897,7 +964,8 @@
         "약국 (yakguk)",
         "백화점 (baekhwajeom)",
         "노래방 (noraebang)"
-      ]
+      ],
+      "prompt_ja": "韓国で薬を買うにはどこへ行きますか。"
     },
     {
       "id": 60,
@@ -923,7 +991,11 @@
         "도착 (dochak) — llegada",
         "출발 (chulbal) — salida",
         "수하물 (suhamul) — equipaje"
-      ]
+      ],
+      "title_ja": "旅行の語彙",
+      "title_zh_tw": "旅遊詞彙",
+      "body_ja": "旅行を予約するときも、空港を移動するときも、ここで扱う語彙は欠かせません。韓国の空港や交通機関の案内表示は韓国語と英語で併記されていますが、韓国語の用語を知っていれば自信を持って質問できます。",
+      "body_zh_tw": "無論是預訂行程還是在機場找路，這些旅遊詞彙都不可或缺。韓國的機場與交通系統雖然以韓文和英文雙語標示，但認得韓文用語能讓你更有把握地開口詢問。"
     },
     {
       "id": 61,
@@ -936,7 +1008,9 @@
       "romanization": "yeogwon",
       "audio": "여권",
       "meaning": "Passport — keep it with you at all times when traveling",
-      "meaning_es": "Pasaporte — llévalo siempre contigo cuando viajes"
+      "meaning_es": "Pasaporte — llévalo siempre contigo cuando viajes",
+      "meaning_ja": "パスポート — 旅行中は常に携帯しておくこと",
+      "meaning_zh_tw": "護照 — 旅行期間務必隨身攜帶"
     },
     {
       "id": 62,
@@ -949,7 +1023,9 @@
       "romanization": "yeyak",
       "audio": "예약",
       "meaning": "Reservation / Booking — used for hotels, restaurants, flights",
-      "meaning_es": "Reserva — usado para hoteles, restaurantes, vuelos"
+      "meaning_es": "Reserva — usado para hoteles, restaurantes, vuelos",
+      "meaning_ja": "予約 — ホテル、レストラン、航空券などに使う",
+      "meaning_zh_tw": "預訂 — 適用於飯店、餐廳與機票"
     },
     {
       "id": 63,
@@ -962,7 +1038,9 @@
       "romanization": "dochak",
       "audio": "도착",
       "meaning": "Arrival — displayed on airport arrival boards",
-      "meaning_es": "Llegada — mostrado en los paneles de llegadas del aeropuerto"
+      "meaning_es": "Llegada — mostrado en los paneles de llegadas del aeropuerto",
+      "meaning_ja": "到着 — 空港の到着案内板に表示される",
+      "meaning_zh_tw": "抵達 — 顯示於機場入境看板"
     },
     {
       "id": 64,
@@ -975,7 +1053,9 @@
       "romanization": "chulbal",
       "audio": "출발",
       "meaning": "Departure — displayed on airport departure boards",
-      "meaning_es": "Salida — mostrado en los paneles de salidas del aeropuerto"
+      "meaning_es": "Salida — mostrado en los paneles de salidas del aeropuerto",
+      "meaning_ja": "出発 — 空港の出発案内板に表示される",
+      "meaning_zh_tw": "出發 — 顯示於機場出境看板"
     },
     {
       "id": 65,
@@ -995,7 +1075,8 @@
         "공항 (gonghang)",
         "버스터미널 (beosu terminal)",
         "항구 (hanggu)"
-      ]
+      ],
+      "prompt_ja": "韓国語で「空港」はどう言いますか。"
     },
     {
       "id": 66,
@@ -1010,7 +1091,9 @@
       "romanization": "Eolmayeyo?",
       "audio": "얼마예요",
       "meaning": "How much is it? — essential shopping phrase",
-      "meaning_es": "¿Cuánto cuesta? — frase esencial de compras"
+      "meaning_es": "¿Cuánto cuesta? — frase esencial de compras",
+      "meaning_ja": "いくらですか — 買い物に欠かせない表現",
+      "meaning_zh_tw": "多少錢？— 購物必備用語"
     },
     {
       "id": 67,
@@ -1039,7 +1122,9 @@
       "tip_es": {
         "label": "Empieza con estos 5 verbos esenciales",
         "text": "가다 (ir) · 오다 (venir) · 먹다 (comer) · 보다 (ver) · 하다 (hacer). 하다 es el más versátil — se une a sustantivos para hacer verbos: 공부하다 (estudiar), 일하다 (trabajar), 사랑하다 (amar)."
-      }
+      },
+      "title_ja": "韓国語の動詞",
+      "title_zh_tw": "韓語動詞"
     },
     {
       "id": 68,
@@ -1114,7 +1199,8 @@
         "마시다 (masida)",
         "보다 (boda)",
         "듣다 (deutda)"
-      ]
+      ],
+      "prompt_ja": "「飲む」を意味する動詞はどれでしょう。"
     },
     {
       "id": 74,
@@ -1133,7 +1219,9 @@
       "tip_es": {
         "label": "Pares para aprender juntos",
         "text": "Aprende opuestos en pares: 크다 / 작다 (grande/pequeño), 빠르다 / 느리다 (rápido/lento), 쉽다 / 어렵다 (fácil/difícil), 좋다 / 나쁘다 (bueno/malo). Aprender pares reduce el esfuerzo de memorización a la mitad."
-      }
+      },
+      "title_ja": "韓国語の形容詞",
+      "title_zh_tw": "韓語形容詞"
     },
     {
       "id": 75,
@@ -1197,7 +1285,8 @@
         "어렵다 (eobyeopda)",
         "느리다 (neurida)",
         "나쁘다 (nappeuda)"
-      ]
+      ],
+      "prompt_ja": "「難しい」を意味する形容詞はどれでしょう。"
     },
     {
       "id": 80,
@@ -1208,7 +1297,9 @@
       "message": "You've covered 6 vocabulary categories — greetings, numbers, family, food, places, and verbs. Keep building your word bank and you'll be having Korean conversations sooner than you think.",
       "next_url": "pronouns.html",
       "title_es": "¡Vocabulario Completado!",
-      "message_es": "Has cubierto 6 categorías de vocabulario — saludos, números, familia, comida, lugares y verbos. Sigue ampliando tu banco de palabras y pronto tendrás conversaciones en coreano."
+      "message_es": "Has cubierto 6 categorías de vocabulario — saludos, números, familia, comida, lugares y verbos. Sigue ampliando tu banco de palabras y pronto tendrás conversaciones en coreano.",
+      "title_ja": "語彙編、修了！",
+      "title_zh_tw": "詞彙篇，完成！"
     }
   ]
 }

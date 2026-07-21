@@ -331,13 +331,19 @@ function renderWordTable(steps, lang, t) {
     const aid = pronAid(s, lang);
     let pron = esc(s.romanization || '');
     if (aid && aid !== s.romanization) pron += ` <span class="ls-aid">${esc(aid)}</span>`;
-    // meaning: localised first, English always kept as a secondary gloss so the
-    // table stays useful in the 5 locales whose prose translation is partial.
+    // meaning: localised only. The English gloss used to be appended as a
+    // secondary span in every locale "so the table stays useful where the
+    // prose translation is partial" — but this word bank is embedded in
+    // vocabulary.html, vocabulary-browser.html AND flashcard.html, so that
+    // crutch republished the entire English word bank on 24 localized URLs.
+    // Measured 2026-07-21 it was the single largest source of duplicate
+    // content on the site, and it hit es/ja/zh-tw — locales that are fully
+    // translated and had no need of the fallback — just as hard.
+    // Where no localised meaning exists we still fall back to English; those
+    // pages are noindexed (scripts/noindex-untranslated-vocab.cjs) until the
+    // JSON is translated.
     const localised = loc(s, 'meaning', lang);
-    let meaning = esc(localised || s.meaning || '');
-    if (lang !== 'en' && localised && s.meaning && localised !== s.meaning) {
-      meaning += ` <span class="ls-aid">${esc(s.meaning)}</span>`;
-    }
+    const meaning = esc(localised || s.meaning || '');
     out.push('<tr>' +
       `<td class="ls-ko-cell ls-big">${ko(word)}</td>` +
       `<td>${pron}</td>` +

@@ -289,7 +289,8 @@
         "여자",
         "친구",
         "아이"
-      ]
+      ],
+      "prompt_ja": "「友達」を意味する語はどれでしょう。"
     },
     {
       "id": 8,
@@ -598,7 +599,8 @@
         "식당",
         "병원",
         "학교"
-      ]
+      ],
+      "prompt_ja": "「学校」を意味する語はどれでしょう。"
     },
     {
       "id": 17,
@@ -741,7 +743,8 @@
         "어제",
         "오늘",
         "지금"
-      ]
+      ],
+      "prompt_ja": "「今日」を意味する語はどれでしょう。"
     },
     {
       "id": 20,
@@ -924,7 +927,8 @@
         "가방",
         "돈",
         "핸드폰"
-      ]
+      ],
+      "prompt_ja": "「お金」を意味する語はどれでしょう。"
     },
     {
       "id": 25,
@@ -1071,7 +1075,8 @@
         "명",
         "잔",
         "권"
-      ]
+      ],
+      "prompt_ja": "人を数えるときに使う助数詞はどれでしょう。"
     },
     {
       "id": 28,
@@ -1239,7 +1244,8 @@
         "저의 책",
         "제 가방",
         "나의 집"
-      ]
+      ],
+      "prompt_ja": "丁寧な韓国語で「私のかばん」はどう言いますか。"
     },
     {
       "id": 32,
@@ -1325,6 +1331,12 @@
         "'s (sở hữu)",
         "trợ từ tân ngữ",
         "hậu tố số nhiều"
+      ],
+      "choices_ja": [
+        "主格助詞",
+        "〜の（所有）",
+        "目的格助詞",
+        "複数を表す接尾辞"
       ]
     },
     {
@@ -1345,7 +1357,9 @@
       "message_th": "คุณเรียนรู้คำนามภาษาเกาหลีสำคัญครบแล้ว — ผู้คน สถานที่ สิ่งของ คำเวลา ตัวนับ และคำแสดงความเป็นเจ้าของ ไปต่อกับสรรพนามได้เลย!",
       "title_id": "Kata Benda Selesai!",
       "message_id": "Anda telah mempelajari kata benda Korea yang penting — orang, tempat, benda, kata waktu, kata bantu bilangan, dan kepemilikan. Lanjutkan ke Kata Ganti berikutnya.",
-      "message_vi": "Bạn đã học qua những danh từ tiếng Hàn thiết yếu — người, nơi chốn, đồ vật, từ chỉ thời gian, loại từ và sở hữu. Hãy tiếp tục với Đại từ tiếp theo."
+      "message_vi": "Bạn đã học qua những danh từ tiếng Hàn thiết yếu — người, nơi chốn, đồ vật, từ chỉ thời gian, loại từ và sở hữu. Hãy tiếp tục với Đại từ tiếp theo.",
+      "title_ja": "名詞編、修了！",
+      "message_ja": "韓国語の基本的な名詞——人・場所・物・時間を表す語・助数詞・所有表現——をひととおり学びました。次は代名詞に進みましょう。"
     }
   ]
 }
