@@ -229,8 +229,7 @@ function verify() {
   // 3. Orphans: a page whose only inbound link is its own self-link.
   //    A noindexed page is excluded from the index and from sitemap.xml
   //    (gen-sitemap.cjs skips it), so it cannot be a sitemap-listed orphan and
-  //    is not a doorway signal. The superseded culture/**/traditions.html stubs
-  //    are exactly this case; they are reported separately, not as failures.
+  //    is not a doorway signal — those are reported separately, not as failures.
   const orphans = [], noindexOrphans = [];
   for (const p of PAGES) {
     const ext = [...inbound.get(p)].filter(x => x !== p);

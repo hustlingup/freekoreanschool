@@ -32,7 +32,7 @@ const ROOT = path.join(__dirname, '..');
 const LANG = 'es';
 const FLAG = '🇪🇸 ES';
 const STALE = ['kpop', 'kdrama', 'kmovie', 'kfood', 'kfashion', 'kbbq', 'kimchi',
-  'ramyeon', 'kgaming', 'ksports', 'koreanthing', 'traditions'];
+  'ramyeon', 'kgaming', 'ksports', 'koreanthing'];
 
 const dry = process.argv[2] === '--dry' ? process.argv[3] : null;
 if (process.argv[2] === '--dry' && !dry) { console.error('--dry needs an output dir'); process.exit(1); }

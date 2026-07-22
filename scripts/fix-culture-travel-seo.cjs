@@ -82,21 +82,6 @@ const HREFLANG_ORDER = ['en', ...LOC_DIRS];
    (99-336 words, h2=0, p=2), so they stay noindex and get no byline. */
 const TOOL_PAGES = /^travel\/(?:[a-z-]+\/)?planner\.html$/;
 
-/* Superseded stubs. The culture `traditions.html` page is 553 words, and all 9
-   locales already answer it with `<meta http-equiv="refresh" url=koreanthing.html>`
-   — the authors redirected it rather than deleting it. Its every heading (6
-   holidays, 4 rites of passage, 4 etiquette cards, the 눈치 tip) is reproduced
-   verbatim in the `#traditions` section of koreanthing.html, which expands the
-   same material from 553 to 3,732 words and adds 100 proverbs. Every culture
-   index in every locale links to koreanthing.html#traditions; nothing anywhere
-   links to traditions.html. So it is a sitemap-listed orphan duplicating a page
-   it also redirects to — Google's doorway pattern. It is noindexed rather than
-   deleted so the URLs keep returning 200 for anyone holding an old link. No
-   sitemap change is needed here: gen-sitemap.cjs already skips any page whose
-   robots meta says noindex, so the next regen drops all 9 URLs on its own.
-   RERUN `node scripts/gen-sitemap.cjs` to retire the 9 stale <url> entries. */
-const STUB_PAGES = /^culture\/(?:[a-z-]+\/)?traditions\.html$/;
-
 const AUTHOR = {
   '@type': 'Person',
   name: '해본놈RK (Haebonnom RK)',
@@ -290,17 +275,15 @@ function patch(rel) {
   const canon = urlFor(rel);
 
   /* 1 ── robots. Lift the stale translation gate; keep/apply noindex only on
-         the interactive tool pages, which are thin in every locale, and on the
-         superseded traditions stubs (see STUB_PAGES). */
-  const isStub = STUB_PAGES.test(rel);
+         the interactive tool pages, which are thin in every locale. */
   const robotsRe = /^[ \t]*<meta\s+name="robots"[^>]*>[ \t]*\n/gim;
   const hadRobots = robotsRe.test(src);
   robotsRe.lastIndex = 0;
   src = src.replace(robotsRe, '');
-  if (isTool || isStub) {
+  if (isTool) {
     src = src.replace(/(^[ \t]*<meta name="viewport"[^>]*>[ \t]*\n)/im,
       '$1  <meta name="robots" content="noindex, follow">\n');
-    if (!hadRobots) msgs.push(isStub ? 'noindex-added(stub)' : 'noindex-added(tool)');
+    if (!hadRobots) msgs.push('noindex-added(tool)');
   } else if (hadRobots) {
     msgs.push('stale-noindex-lifted');
   }
@@ -393,11 +376,9 @@ function verify() {
     const want = urlFor(rel);
 
     /* robots */
-    const isStub = STUB_PAGES.test(rel);
     const noindex = /<meta[^>]+name="robots"[^>]*noindex/i.test(s);
     if (isTool && !noindex) p.push('TOOL-NOT-NOINDEX');
-    if (isStub && !noindex) p.push('STUB-NOT-NOINDEX');
-    if (!isTool && !isStub && noindex) p.push('STALE-NOINDEX');
+    if (!isTool && noindex) p.push('STALE-NOINDEX');
 
     /* canonical */
     const canons = [...s.matchAll(/<link rel="canonical" href="([^"]+)">/g)].map(m => m[1]);
