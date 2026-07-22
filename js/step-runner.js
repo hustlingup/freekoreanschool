@@ -348,9 +348,16 @@ const StepRunner = (() => {
         </div>
       </div>` : '';
 
+    // The Korean subtitle is shown only when it differs from the resolved
+    // title. On proverb/grammar cards the base title IS Korean, so an English
+    // reader's title_kr just repeats it — hide it there, but keep it for
+    // localized readers whose title is a translation.
+    const _title = loc(step, 'title');
+    const _krSub = step.title_kr && step.title_kr !== _title
+      ? ` <span class="sr-reading-title-kr">${esc(step.title_kr)}</span>` : '';
     return `
       <div class="sr-reading-card">
-        <h2 class="sr-reading-title">${esc(loc(step, 'title'))} <span class="sr-reading-title-kr">${esc(step.title_kr || '')}</span></h2>
+        <h2 class="sr-reading-title">${esc(_title)}${_krSub}</h2>
         <p class="sr-reading-body">${esc(loc(step, 'body'))}</p>
         ${patternsHtml}
         ${rulesHtml}

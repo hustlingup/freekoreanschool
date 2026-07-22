@@ -244,7 +244,10 @@ function fill(tpl, vars) {
 function renderReadingCard(step, lang, t) {
   const out = [];
   const title = loc(step, 'title', lang);
-  const titleKr = step.title_kr;
+  // Only show the Korean subtitle when it differs from the title — on proverb
+  // and grammar cards the base title is itself Korean, so title_kr would repeat
+  // it for readers whose locale has no translated title.
+  const titleKr = step.title_kr && step.title_kr !== title ? step.title_kr : '';
   out.push(`<h3 class="ls-h3">${esc(title)}${titleKr ? ` <span class="ls-kr">${ko(titleKr)}</span>` : ''}</h3>`);
 
   const body = loc(step, 'body', lang);
@@ -394,8 +397,9 @@ function renderQuizList(steps, lang, t) {
 function renderComplete(step, lang, t) {
   const title = loc(step, 'title', lang) || step.title;
   const msg = loc(step, 'message', lang) || step.message;
+  const krSub = step.title_kr && step.title_kr !== title ? ` — ${ko(step.title_kr)}` : '';
   const out = [`<h3 class="ls-h3">${esc(t.sWrap)}</h3>`];
-  if (title) out.push(`<p><strong>${esc(title)}</strong>${step.title_kr ? ` — ${ko(step.title_kr)}` : ''}</p>`);
+  if (title) out.push(`<p><strong>${esc(title)}</strong>${krSub}</p>`);
   if (msg) out.push(`<p>${esc(msg)}</p>`);
   return out.join('\n');
 }
