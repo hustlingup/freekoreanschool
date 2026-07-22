@@ -14,7 +14,7 @@ const LangManager = (() => {
   function register(langCode, dict) { _dicts[langCode] = dict; }
 
   const JA = {
-    'Learn': '学ぶ', 'Quiz': 'クイズ', 'K-Culture': 'K-カルチャー', 'Travel': '旅行', 'News': 'ニュース',
+    'Learn': '学ぶ', 'Quiz': 'クイズ', 'K-Culture': 'K-カルチャー', 'Travel': '旅行',
     'Search...': '検索...', 'Search lessons, vocabulary…': 'レッスン・語彙を検索…',
     '🇰🇷 · Free · For Every Level': '🇰🇷 · 無料 · すべてのレベル対応',
     'Learn Korean': '韓国語を学ぼう', 'Start Learning': '学習を始める', 'Explore K-Culture': 'K-カルチャーを探る',
@@ -57,7 +57,7 @@ const LangManager = (() => {
     'Learn · 학습': '学ぶ · 학습', 'K-Culture · 문화': 'K-カルチャー · 문화', 'Company · 회사': '会社情報 · 회사',
     'Explore': '探索', 'Company': '会社情報',
     'Hangul Alphabet': 'ハングルアルファベット', 'Grammar': '文法', 'Vocabulary': '語彙',
-    'Travel Guide': '旅行ガイド', 'Korean News': '韓国ニュース',
+    'Travel Guide': '旅行ガイド',
     'About Us': '私たちについて', 'Contact': 'お問い合わせ', 'Privacy Policy': 'プライバシーポリシー', 'Terms of Use': '利用規約',
     'Made with ❤️ for Korean learners worldwide.': '世界中の韓国語学習者のために ❤️',
     '🇰🇷 학습을 즐기세요! (Enjoy your learning!)': '🇰🇷 학습을 즐기세요！（学習を楽しんでください！）',
@@ -10493,7 +10493,7 @@ const LangManager = (() => {
   /* ── Traditional Chinese (Taiwan) Dictionary ─────── */
   const ZH_TW = {
     // ── Navigation & Global UI ─────────────────────────
-    'Learn': '學習', 'Quiz': '測驗', 'K-Culture': 'K文化', 'Travel': '旅遊', 'News': '新聞',
+    'Learn': '學習', 'Quiz': '測驗', 'K-Culture': 'K文化', 'Travel': '旅遊',
     'Search...': '搜尋...', 'Search lessons, vocabulary…': '搜尋課程、單字…',
     '🇰🇷 · Free · For Every Level': '🇰🇷 · 免費 · 適合各程度',
     'Learn Korean': '學韓語', 'Start Learning': '開始學習', 'Explore K-Culture': '探索K文化',
@@ -10541,7 +10541,7 @@ const LangManager = (() => {
     'Learn · 학습': '學習 · 학습', 'K-Culture · 문화': 'K文化 · 문화',
     'Company · 회사': '關於 · 회사', 'Explore': '探索', 'Company': '公司',
     'Hangul Alphabet': '韓文字母', 'Grammar': '文法', 'Vocabulary': '詞彙',
-    'Travel Guide': '旅遊指南', 'Korean News': '韓國新聞', 'About Us': '關於我們',
+    'Travel Guide': '旅遊指南', 'About Us': '關於我們',
     'Contact': '聯絡我們', 'Privacy Policy': '隱私政策', 'Terms of Use': '使用條款',
     'Made with ❤️ for Korean learners worldwide.': '為全球韓語學習者用心製作 ❤️',
     '🇰🇷 학습을 즐기세요! (Enjoy your learning!)': '🇰🇷 학습을 즐기세요！（享受你的學習！）',

@@ -2,7 +2,7 @@
 (function() {
   const TH = {
     // ── Navigation & Global UI ─────────────────────────
-    'Learn': 'เรียนรู้', 'Quiz': 'แบบทดสอบ', 'K-Culture': 'K-วัฒนธรรม', 'Travel': 'ท่องเที่ยว', 'News': 'ข่าว',
+    'Learn': 'เรียนรู้', 'Quiz': 'แบบทดสอบ', 'K-Culture': 'K-วัฒนธรรม', 'Travel': 'ท่องเที่ยว',
     'Search...': 'ค้นหา...', 'Search lessons, vocabulary…': 'ค้นหาบทเรียน คำศัพท์…',
     '🇰🇷 · Free · For Every Level': '🇰🇷 · ฟรี · สำหรับทุกระดับ',
     'Learn Korean': 'เรียนภาษาเกาหลี', 'Start Learning': 'เริ่มเรียน', 'Explore K-Culture': 'สำรวจ K-วัฒนธรรม',
@@ -50,7 +50,7 @@
     'Learn · 학습': 'เรียนรู้ · 학습', 'K-Culture · 문화': 'K-วัฒนธรรม · 문화',
     'Company · 회사': 'บริษัท · 회사', 'Explore': 'สำรวจ', 'Company': 'บริษัท',
     'Hangul Alphabet': 'ตัวอักษรฮันกึล', 'Grammar': 'ไวยากรณ์', 'Vocabulary': 'คำศัพท์',
-    'Travel Guide': 'คู่มือการท่องเที่ยว', 'Korean News': 'ข่าวเกาหลี', 'About Us': 'เกี่ยวกับเรา',
+    'Travel Guide': 'คู่มือการท่องเที่ยว', 'About Us': 'เกี่ยวกับเรา',
     'Contact': 'ติดต่อ', 'Privacy Policy': 'นโยบายความเป็นส่วนตัว', 'Terms of Use': 'ข้อกำหนดการใช้งาน',
     'Made with ❤️ for Korean learners worldwide.': 'สร้างด้วย ❤️ สำหรับผู้เรียนภาษาเกาหลีทั่วโลก',
     '🇰🇷 학습을 즐기세요! (Enjoy your learning!)': '🇰🇷 학습을 즐기세요! (สนุกกับการเรียน!)',

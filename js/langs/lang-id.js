@@ -2,7 +2,7 @@
 (function() {
   const ID = {
     // ── Navigation & Global UI ─────────────────────────
-    'Learn': 'Belajar', 'Quiz': 'Kuis', 'K-Culture': 'K-Budaya', 'Travel': 'Wisata', 'News': 'Berita',
+    'Learn': 'Belajar', 'Quiz': 'Kuis', 'K-Culture': 'K-Budaya', 'Travel': 'Wisata',
     'Search...': 'Cari...', 'Search lessons, vocabulary…': 'Cari pelajaran, kosakata…',
     '🇰🇷 · Free · For Every Level': '🇰🇷 · Gratis · Untuk Semua Level',
     'Learn Korean': 'Belajar Bahasa Korea', 'Start Learning': 'Mulai Belajar', 'Explore K-Culture': 'Jelajahi K-Budaya',
@@ -50,7 +50,7 @@
     'Learn · 학습': 'Belajar · 학습', 'K-Culture · 문화': 'K-Budaya · 문화',
     'Company · 회사': 'Perusahaan · 회사', 'Explore': 'Jelajahi', 'Company': 'Perusahaan',
     'Hangul Alphabet': 'Alfabet Hangul', 'Grammar': 'Tata Bahasa', 'Vocabulary': 'Kosakata',
-    'Travel Guide': 'Panduan Wisata', 'Korean News': 'Berita Korea', 'About Us': 'Tentang Kami',
+    'Travel Guide': 'Panduan Wisata', 'About Us': 'Tentang Kami',
     'Contact': 'Kontak', 'Privacy Policy': 'Kebijakan Privasi', 'Terms of Use': 'Ketentuan Penggunaan',
     'Made with ❤️ for Korean learners worldwide.': 'Dibuat dengan ❤️ untuk pembelajar bahasa Korea di seluruh dunia.',
     '🇰🇷 학습을 즐기세요! (Enjoy your learning!)': '🇰🇷 학습을 즐기세요! (Selamat belajar!)',

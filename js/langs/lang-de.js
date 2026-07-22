@@ -2,7 +2,7 @@
 (function() {
   const DE = {
     // ── Navigation & Global UI ─────────────────────────
-    'Learn': 'Lernen', 'Quiz': 'Quiz', 'K-Culture': 'K-Culture', 'Travel': 'Reisen', 'News': 'Nachrichten',
+    'Learn': 'Lernen', 'Quiz': 'Quiz', 'K-Culture': 'K-Culture', 'Travel': 'Reisen',
     'Search...': 'Suchen...', 'Search lessons, vocabulary…': 'Lektionen, Vokabular suchen…', 'Search lessons...': 'Lektionen suchen...',
     'Loading lesson…': 'Lektion wird geladen…', 'Previous': 'Zurück', 'Next': 'Weiter', '📚 Lesson 4 · vocabulary': '📚 Lektion 4 · Vokabeln',
     'Search Results': 'Suchergebnisse', '← Back to Home': '← Zurück zur Startseite',
@@ -52,7 +52,7 @@
     'Learn · 학습': 'Lernen · 학습', 'K-Culture · 문화': 'K-Culture · 문화',
     'Company · 회사': 'Unternehmen · 회사', 'Explore': 'Entdecken', 'Company': 'Unternehmen',
     'Hangul Alphabet': 'Hangul-Alphabet', 'Grammar': 'Grammatik', 'Vocabulary': 'Vokabular',
-    'Travel Guide': 'Reiseführer', 'Korean News': 'Koreanische Nachrichten', 'About Us': 'Über uns',
+    'Travel Guide': 'Reiseführer', 'About Us': 'Über uns',
     'Contact': 'Kontakt', 'Privacy Policy': 'Datenschutzrichtlinie', 'Terms of Use': 'Nutzungsbedingungen',
     'Made with ❤️ for Korean learners worldwide.': 'Mit ❤️ für Koreanischlernende weltweit gemacht.',
     '🇰🇷 학습을 즐기세요! (Enjoy your learning!)': '🇰🇷 학습을 즐기세요! (Viel Spaß beim Lernen!)',

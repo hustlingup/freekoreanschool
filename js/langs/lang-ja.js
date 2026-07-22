@@ -1,7 +1,7 @@
 'use strict';
 (function() {
   const JA = {
-    'Learn': '学ぶ', 'Quiz': 'クイズ', 'K-Culture': 'K-カルチャー', 'Travel': '旅行', 'News': 'ニュース',
+    'Learn': '学ぶ', 'Quiz': 'クイズ', 'K-Culture': 'K-カルチャー', 'Travel': '旅行',
     'Search...': '検索...', 'Search lessons, vocabulary…': 'レッスン・語彙を検索…',
     '🇰🇷 · Free · For Every Level': '🇰🇷 · 無料 · すべてのレベル対応',
     'Learn Korean': '韓国語を学ぼう', 'Start Learning': '学習を始める', 'Explore K-Culture': 'K-カルチャーを探る',
@@ -44,7 +44,7 @@
     'Learn · 학습': '学ぶ · 학습', 'K-Culture · 문화': 'K-カルチャー · 문화', 'Company · 회사': '会社情報 · 회사',
     'Explore': '探索', 'Company': '会社情報',
     'Hangul Alphabet': 'ハングルアルファベット', 'Grammar': '文法', 'Vocabulary': '語彙',
-    'Travel Guide': '旅行ガイド', 'Korean News': '韓国ニュース',
+    'Travel Guide': '旅行ガイド',
     'About Us': '私たちについて', 'Contact': 'お問い合わせ', 'Privacy Policy': 'プライバシーポリシー', 'Terms of Use': '利用規約',
     'Made with ❤️ for Korean learners worldwide.': '世界中の韓国語学習者のために ❤️',
     '🇰🇷 학습을 즐기세요! (Enjoy your learning!)': '🇰🇷 학습을 즐기세요！（学習を楽しんでください！）',

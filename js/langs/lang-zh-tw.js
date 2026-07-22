@@ -2,7 +2,7 @@
 (function() {
   const ZH_TW = {
     // ── Navigation & Global UI ─────────────────────────
-    'Learn': '學習', 'Quiz': '測驗', 'K-Culture': 'K文化', 'Travel': '旅遊', 'News': '新聞',
+    'Learn': '學習', 'Quiz': '測驗', 'K-Culture': 'K文化', 'Travel': '旅遊',
     'Search...': '搜尋...', 'Search lessons, vocabulary…': '搜尋課程、單字…',
     '🇰🇷 · Free · For Every Level': '🇰🇷 · 免費 · 適合各程度',
     'Learn Korean': '學韓語', 'Start Learning': '開始學習', 'Explore K-Culture': '探索K文化',
@@ -50,7 +50,7 @@
     'Learn · 학습': '學習 · 학습', 'K-Culture · 문화': 'K文化 · 문화',
     'Company · 회사': '關於 · 회사', 'Explore': '探索', 'Company': '公司',
     'Hangul Alphabet': '韓文字母', 'Grammar': '文法', 'Vocabulary': '詞彙',
-    'Travel Guide': '旅遊指南', 'Korean News': '韓國新聞', 'About Us': '關於我們',
+    'Travel Guide': '旅遊指南', 'About Us': '關於我們',
     'Contact': '聯絡我們', 'Privacy Policy': '隱私政策', 'Terms of Use': '使用條款',
     'Made with ❤️ for Korean learners worldwide.': '為全球韓語學習者用心製作 ❤️',
     '🇰🇷 학습을 즐기세요! (Enjoy your learning!)': '🇰🇷 학습을 즐기세요！（享受你的學習！）',

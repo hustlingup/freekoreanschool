@@ -2,7 +2,7 @@
 (function() {
   const VI = {
     // ── Navigation & Global UI ─────────────────────────
-    'Learn': 'Học', 'Quiz': 'Kiểm tra', 'K-Culture': 'K-Văn hóa', 'Travel': 'Du lịch', 'News': 'Tin tức',
+    'Learn': 'Học', 'Quiz': 'Kiểm tra', 'K-Culture': 'K-Văn hóa', 'Travel': 'Du lịch',
     'Search...': 'Tìm kiếm...', 'Search lessons, vocabulary…': 'Tìm bài học, từ vựng…', 'Search lessons...': 'Tìm bài học...',
     'Loading lesson…': 'Đang tải bài học…', 'Previous': 'Trước', 'Next': 'Tiếp theo', '📚 Lesson 4 · vocabulary': '📚 Bài 4 · Từ vựng',
     'Search Results': 'Kết quả tìm kiếm', '← Back to Home': '← Về trang chủ',
@@ -52,7 +52,7 @@
     'Learn · 학습': 'Học · 학습', 'K-Culture · 문화': 'K-Văn hóa · 문화',
     'Company · 회사': 'Công ty · 회사', 'Explore': 'Khám phá', 'Company': 'Công ty',
     'Hangul Alphabet': 'Bảng chữ cái Hangul', 'Grammar': 'Ngữ pháp', 'Vocabulary': 'Từ vựng',
-    'Travel Guide': 'Hướng dẫn du lịch', 'Korean News': 'Tin tức Hàn Quốc', 'About Us': 'Về chúng tôi',
+    'Travel Guide': 'Hướng dẫn du lịch', 'About Us': 'Về chúng tôi',
     'Contact': 'Liên hệ', 'Privacy Policy': 'Chính sách bảo mật', 'Terms of Use': 'Điều khoản sử dụng',
     'Made with ❤️ for Korean learners worldwide.': 'Làm với ❤️ cho người học tiếng Hàn trên toàn thế giới.',
     '🇰🇷 학습을 즐기세요! (Enjoy your learning!)': '🇰🇷 학습을 즐기세요! (Chúc bạn học vui!)',
