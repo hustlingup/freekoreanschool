@@ -3939,39 +3939,13 @@ kbd {
 /* ── Trip Planner ────────────────────────────────────── */
 .planner-page { padding: 32px 40px; max-width: 100%; }
 
-/* PC: 80% content + 20% ad zone */
 .planner-layout {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 1fr;
   gap: 24px;
   align-items: start;
 }
 .planner-layout > * { min-width: 0; }
-
-.planner-ad-zone {
-  position: sticky;
-  top: calc(var(--header-height) + 16px);
-  min-height: 600px;
-  border: 2px dashed var(--border);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--glass);
-}
-.planner-ad-zone::after {
-  content: 'AD';
-  font-size: 0.65rem;
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  color: var(--text-muted);
-  opacity: 0.35;
-}
-/* Pre-approval: the dashed placeholder box holds no real ad unit and reads as
-   under-construction to AdSense review — hide it and give content full width.
-   Re-enable with a real ad unit post-approval. */
-.planner-layout { grid-template-columns: 1fr; }
-.planner-ad-zone { display: none; }
 
 .planner-toolbar {
   background: var(--glass);
@@ -4398,7 +4372,6 @@ kbd {
   .planner-legend-hint, .planner-modal-overlay, .planner-add-btn,
   .planner-event-delete, .footer, #print-title { display: none !important; }
   .planner-layout { display: block; }
-  .planner-ad-zone { display: none !important; }
   .planner-body { display: block; }
 
   .planner-page > div:first-child h1,
@@ -4464,9 +4437,8 @@ kbd {
   .planner-toolbar-actions { margin-left: 0; }
   .stay-grid { grid-template-columns: 1fr; }
 
-  /* Mobile planner: full-width, no ad zone */
+  /* Mobile planner: full-width */
   .planner-layout { display: block; }
-  .planner-ad-zone { display: none; }
   .planner-page { padding: 16px; }
 
   /* Body: column layout — legend on top, grid below */
@@ -6079,35 +6051,11 @@ body.lang-id .lr-meaning-id { display: block; }
   gap: 8px;
 }
 .complete-stat-icon { font-size: 1.05rem; }
-.complete-ad-slot {
-  width: 100%;
-  max-width: 400px;
-}
 .complete-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-/* ── Ad Slots ──────────────────────────────────────── */
-.ad-slot {
-  min-height: 90px;
-  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-card-hover) 50%, var(--bg-card) 75%);
-  background-size: 200% 100%;
-  animation: skeleton-pulse 1.4s ease infinite;
-  border-radius: var(--radius-sm);
-  margin-top: 24px;
-}
-@keyframes skeleton-pulse {
-  0%   { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
-.ad-slot.loaded { animation: none; background: none; }
-.ad-complete {
-  min-height: 250px;
-  max-width: 300px;
-  margin: 0 auto;
 }
 
 /* ── Feedback Animations ───────────────────────────── */
@@ -6254,29 +6202,6 @@ body.lang-id .lr-meaning-id { display: block; }
   .xp-badge { font-size: 0.7rem; padding: 4px 10px; }
 }
 
-/* ── Ad zones ───────────────────────────────────────── */
-.ad-zone { margin: 32px 0; text-align: center; }
-.ad-zone::before {
-  content: "Advertisements";          /* exact wording per AdSense label policy; CSS content — invisible to translation audit */
-  display: block; font-size: 0.65rem; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px;
-}
-.ad-zone .adsbygoogle { display: block; min-height: 90px; }
-.ad-zone--mid .adsbygoogle { min-height: 250px; }        /* CLS reservation */
-/* Not-yet-rendered: collapse to zero height but keep layout width measurable —
-   display:none here would make ads.js skip the push (offsetParent null) and the
-   slot could never render. Confirmed-unfilled collapses fully. */
-.ad-zone:has(.adsbygoogle:not([data-ad-status])) { height: 0; overflow: hidden; margin: 0; }
-.ad-zone:has(.adsbygoogle[data-ad-status="unfilled"]) { display: none; }
-
-.ad-rail { display: none; }
-@media (min-width: 1500px) {
-  .ad-rail {
-    display: block; width: 300px; flex-shrink: 0; padding: 40px 24px 40px 0;
-  }
-  .ad-rail .ad-zone { position: sticky; top: calc(var(--header-height) + 24px); margin: 0; }
-}
-
 /* ── Content rail (desktop utility rail, JS-injected) ── */
 .content-shell { display: flex; align-items: flex-start; gap: 36px; }
 .content-shell .lesson-wrap { flex: 1 1 auto; min-width: 0; }
@@ -6320,15 +6245,6 @@ body.lang-id .lr-meaning-id { display: block; }
   transition: background var(--transition-fast), color var(--transition-fast);
 }
 .rail-link:hover { background: var(--bg-sidebar-active); color: var(--text); }
-.ad-zone--rail { margin: 0; }
-.ad-zone--rail .adsbygoogle { min-height: 250px; }
-
-/* In-feed ad row inside the news card grid — spans the full row */
-.ad-zone--infeed { grid-column: 1 / -1; margin: 8px 0; }
-.ad-zone--infeed .adsbygoogle { min-height: 120px; }
-
-/* In-article ad between the two bilingual body halves */
-.ad-zone--inarticle { margin: 8px 0 24px; }
 
 /* ── Article summary (TL;DR) box ────────────────────── */
 .article-summary-box {

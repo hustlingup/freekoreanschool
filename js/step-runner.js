@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════
    StepRunner — Micro-interaction lesson engine
    Handles JSON fetch, step rendering, URL sync,
-   progress tracking (via KSProgress), ad throttling, and analytics.
+   progress tracking (via KSProgress), and analytics.
 ═══════════════════════════════════════════════════════ */
 
 'use strict';
@@ -10,13 +10,7 @@ const StepRunner = (() => {
   /* ── State ─────────────────────────────────────────── */
   let lessonData = null;
   let currentIndex = 0;
-  let stepsSinceLastAdRefresh = 0;
-  let lastAdRefreshTime = 0;
-  let stickyAdSlot = null;
   let stageStepMap = {};
-
-  const AD_REFRESH_STEPS = 3;
-  const AD_REFRESH_SECONDS = 45;
 
   function t(key) { return window.LangManager ? LangManager.t(key) : key; }
 
@@ -51,7 +45,6 @@ const StepRunner = (() => {
       goToStep(idx, { pushState: false });
     });
 
-    lastAdRefreshTime = Date.now();
     renderStep(currentIndex);
     hydrateStaticReference();
   }
@@ -159,8 +152,6 @@ const StepRunner = (() => {
         <div class="step-counter" id="step-counter"></div>
         <button class="step-nav-btn step-nav-next" id="btn-next" aria-label="${nextAria}">${nextLabel} →</button>
       </div>
-
-      <div class="ad-slot" id="ad-slot-lesson" aria-hidden="true"></div>
     `;
 
     buildStageNav();
@@ -242,30 +233,10 @@ const StepRunner = (() => {
       if (window.gtag) {
         gtag('event', 'page_view', { page_path: location.pathname + location.search });
       }
-      handleAdRefresh();
     }
 
     renderStep(currentIndex);
     prefetchNextStep(currentIndex);
-  }
-
-  /* ── Ad Refresh (AdSense-compliant) ─────────────────── */
-  function handleAdRefresh() {
-    const elapsed = Date.now() - lastAdRefreshTime;
-    stepsSinceLastAdRefresh++;
-
-    if (
-      stepsSinceLastAdRefresh >= AD_REFRESH_STEPS &&
-      elapsed >= AD_REFRESH_SECONDS * 1000
-    ) {
-      if (window.googletag && stickyAdSlot) {
-        googletag.pubads().refresh([stickyAdSlot]);
-      }
-      stepsSinceLastAdRefresh = 0;
-      lastAdRefreshTime = Date.now();
-      const adEl = document.getElementById('ad-slot-lesson');
-      if (adEl) adEl.classList.remove('loaded');
-    }
   }
 
   /* ── Audio Prefetch ─────────────────────────────────── */
@@ -581,9 +552,6 @@ const StepRunner = (() => {
         <p class="complete-title-kr">${esc(step.title_kr)}</p>
         <p class="complete-msg">${esc(msg)}</p>
         ${statsHtml}
-        <div class="complete-ad-slot">
-          <div class="ad-slot ad-complete" id="ad-slot-complete" aria-label="Advertisement"></div>
-        </div>
         <div class="complete-actions">
           <button class="btn btn-primary" onclick="StepRunner.restart()">${esc(t('Start Again'))}</button>
           ${step.next_url ? `<a href="${esc(step.next_url)}" class="btn btn-secondary">${esc(t('Next Lesson →'))}</a>` : ''}
@@ -759,11 +727,5 @@ const StepRunner = (() => {
     confirmRepeat,
     toggleVocabBookmark,
     restart,
-    get stepsSinceLastAdRefresh() { return stepsSinceLastAdRefresh; },
-    set stepsSinceLastAdRefresh(v) { stepsSinceLastAdRefresh = v; },
-    get lastAdRefreshTime() { return lastAdRefreshTime; },
-    set lastAdRefreshTime(v) { lastAdRefreshTime = v; },
-    get stickyAdSlot() { return stickyAdSlot; },
-    set stickyAdSlot(v) { stickyAdSlot = v; },
   };
 })();

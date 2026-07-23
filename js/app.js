@@ -5,11 +5,6 @@
 
 'use strict';
 
-/* Pre-approval switch for JS-inserted ad units (rail, in-feed, in-article).
-   Static .ad-zone blocks in HTML are unaffected. Flip to true after AdSense
-   approval (adsense/GUIDE.md §8 Prompt 6). */
-const KS_ADS_LIVE = false;
-
 /* ── Theme Manager ──────────────────────────────────── */
 const ThemeManager = (() => {
   const STORAGE_KEY = 'ks-theme';
@@ -1950,10 +1945,6 @@ const ContentRail = (() => {
     th:    { wod: 'คำศัพท์ประจำวัน',    explore: 'สำรวจต่อ' },
     id:    { wod: 'Kata hari ini',    explore: 'Jelajahi lainnya' },
   };
-  const AD_CLIENT = 'ca-pub-6791974364232767';
-  const AD_SLOT = '9403290839'; // ks-rail unit (scripts/ad-slots.json)
-  let adPushed = false;
-
   const lang = () => (document.documentElement.lang || 'en').toLowerCase().replace('-', '_');
   const t = key => (STRINGS[lang()] || STRINGS.en)[key] || STRINGS.en[key];
 
@@ -2028,35 +2019,12 @@ const ContentRail = (() => {
     wrap.parentNode.insertBefore(shell, wrap);
     shell.appendChild(wrap);
 
-    const railAdHTML = KS_ADS_LIVE ? `
-      <div class="ad-zone ad-zone--rail">
-        <ins class="adsbygoogle" style="display:block"
-             data-ad-client="${AD_CLIENT}" data-ad-slot="${AD_SLOT}"
-             data-ad-format="auto" data-full-width-responsive="false"></ins>
-      </div>` : '';
     const rail = document.createElement('aside');
     rail.className = 'content-rail';
     rail.innerHTML = `
-      ${railAdHTML}
       <div class="rail-widget" id="rail-wod" hidden></div>
-      ${relatedWidgetHTML()}
-      ${railAdHTML}`;
+      ${relatedWidgetHTML()}`;
     shell.appendChild(rail);
-
-    const mq = window.matchMedia('(min-width: 1280px)');
-    const pushAd = () => {
-      if (!KS_ADS_LIVE || adPushed || !mq.matches) return;
-      adPushed = true;
-      rail.querySelectorAll('.adsbygoogle').forEach(ins => {
-        if (ins.dataset.adPushed === '1' || ins.getAttribute('data-ad-status') !== null) return;
-        try {
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
-          ins.dataset.adPushed = '1';
-        } catch (e) {}
-      });
-    };
-    pushAd();
-    mq.addEventListener?.('change', pushAd);
 
     initWordOfDay(rail);
   }
