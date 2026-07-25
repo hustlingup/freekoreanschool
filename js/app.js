@@ -658,8 +658,10 @@ window.SEARCH_INDEX = [
   { title: 'Compound Vowels (복합 모음)', url: 'learn/hangul.html#compound', category: 'learn', icon: '📚', tags: ['compound vowels', 'diphthong', 'ㅐ', 'ㅔ', 'ㅒ', 'ㅖ', 'ㅘ', 'ㅙ', 'ㅚ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅢ', 'hangul', 'intermediate', '복합모음', '11 vowels'], desc: '11 compound vowels formed by combining basic vowels.' },
   { title: 'Aspirated & Tense Consonants', url: 'learn/hangul.html#aspirated', category: 'learn', icon: '📚', tags: ['aspirated', 'tense', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅊ', 'ㄲ', 'ㄸ', 'ㅃ', 'ㅆ', 'ㅉ', '거센소리', '된소리', 'double consonants', 'pronunciation', 'puff of air'], desc: 'Aspirated (거센소리) and tense (된소리) consonant pairs with minimal pair practice.' },
   { title: 'Double Consonants (쌍자음)', url: 'learn/hangul.html#tense', category: 'learn', icon: '📚', tags: ['double consonants', 'ssang', '쌍자음', 'ㄲ', 'ㄸ', 'ㅃ', 'ㅆ', 'ㅉ', 'tense sounds', 'ssang jaeum'], desc: 'The 5 double (tense) consonants — ㄲㄸㅃㅆㅉ — and how to pronounce them.' },
+  { title: 'Korean Letter Writing (획순)', url: 'learn/letter-writing.html', category: 'learn', icon: '✍️', tags: ['stroke order', 'writing', '획순', 'hangul', 'trace', 'handwriting', 'letters', 'penmanship', 'consonants', 'vowels', 'how to write hangul', 'stroke direction'], desc: 'Learn Korean handwriting — correct stroke order for every hangul consonant and vowel, with tracing practice.' },
   { title: 'Syllable Structure & Blocks', url: 'learn/syllable-blocks.html', category: 'learn', icon: '🔡', tags: ['syllable', 'blocks', 'reading', 'writing', 'hangul structure', '음절', 'initial', 'medial', 'final', 'batchim', '받침', 'combine'], desc: 'How to combine consonants and vowels into Korean syllable blocks.' },
   { title: 'Pronunciation Guide (발음)', url: 'learn/pronunciation.html', category: 'learn', icon: '🎤', tags: ['pronunciation', 'sounds', 'phonetics', 'listening', 'speaking', '발음', 'linking', 'nasalization', 'liaison'], desc: 'Korean pronunciation rules — aspirated, tense, linking, and nasalization.' },
+  { title: 'Korean Typing (타자)', url: 'learn/typing.html', category: 'learn', icon: '⌨️', tags: ['keyboard', 'typing', 'dubeolsik', '두벌식', '타자', 'hangul keyboard', 'type korean', 'korean input', 'ime', 'keyboard layout', 'qwerty korean', 'touch typing'], desc: 'Learn to type Korean on the 두벌식 (Dubeolsik) keyboard — key layout, finger positions, and typing drills.' },
   { title: 'Korean Grammar (문법)', url: 'learn/grammar.html', category: 'learn', icon: '📝', tags: ['grammar', 'particles', 'conjugation', 'sentence', 'structure', '문법', 'sov', 'subject object verb', 'korean sentence order'], desc: 'Core Korean grammar — SOV sentence structure, particles, and verb conjugation.' },
   { title: 'Sentence Structure (어순)', url: 'learn/grammar.html#sentence-structure', category: 'learn', icon: '📝', tags: ['sentence structure', 'word order', 'sov', '어순', 'subject', 'object', 'verb', 'grammar'], desc: 'Korean SOV word order — how sentences are built differently from English.' },
   { title: 'Topic Particle (은/는)', url: 'learn/grammar.html#topic', category: 'learn', icon: '📝', tags: ['particle', 'topic marker', '은', '는', 'eun', 'neun', 'grammar', 'beginner', 'topic'], desc: 'The topic marker particle 은/는 — when and how to use it.' },
@@ -1238,8 +1240,10 @@ const KSProgress = (() => {
 
     s.counters.steps++;
     if (stepType === 'listen_repeat') s.counters.words++;
-    else if (stepType === 'card_reveal' || stepType === 'syllable_builder') s.counters.letters++;
-    else if (stepType === 'match_quiz') s.counters.quizzes++;
+    else if (stepType === 'card_reveal' || stepType === 'syllable_builder' ||
+        stepType === 'stroke_demo' || stepType === 'stroke_trace' ||
+        stepType === 'key_intro') s.counters.letters++;
+    else if (stepType === 'match_quiz' || stepType === 'typing_drill') s.counters.quizzes++;
 
     const today = _dateStr();
     if (s.today.date !== today) s.today = { date: today, steps: 0 };
@@ -1317,8 +1321,10 @@ const LessonProgressGrid = (() => {
   // Ids match lessonData.lesson in learn/data/*.json ('vocab' aggregates all vocab-* topics).
   const LESSONS = [
     { id: 'hangul',           url: 'hangul.html',          name: 'Hangul Alphabet',  level: 'starter',      k: '가' },
+    { id: 'letter-writing',   url: 'letter-writing.html',  name: 'Letter Writing',   level: 'starter',      k: '쓰' },
     { id: 'syllable-blocks',  url: 'syllable-blocks.html', name: 'Syllable Blocks',  level: 'starter',      k: '한' },
     { id: 'pronunciation',    url: 'pronunciation.html',   name: 'Pronunciation',    level: 'starter',      k: '음' },
+    { id: 'typing',           url: 'typing.html',          name: 'Korean Typing',    level: 'starter',      k: '타' },
     { id: 'vocab',            url: 'vocabulary.html',      name: 'Vocabulary',       level: 'beginner',     k: '어' },
     { id: 'pronouns',         url: 'pronouns.html',        name: 'Pronouns',         level: 'beginner',     k: '나' },
     { id: 'nouns',            url: 'nouns.html',           name: 'Common Nouns',     level: 'beginner',     k: '명' },

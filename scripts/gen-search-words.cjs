@@ -59,6 +59,11 @@ for (const file of fs.readdirSync(DATA_DIR).sort()) {
         w = step.example_word;
         m = meanings(step, 'example_meaning');
         break;
+      case 'stroke_demo':
+        t = step.char;
+        w = step.example_word;
+        m = meanings(step, 'example_meaning');
+        break;
       case 'syllable_builder':
         t = step.result;
         m = meanings(step, 'meaning');

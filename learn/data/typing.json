@@ -1,0 +1,1987 @@
+{
+  "lesson": "typing",
+  "totalSteps": 29,
+  "stages": [
+    {
+      "id": 1,
+      "name": "Meet the Keyboard",
+      "name_kr": "키보드 소개",
+      "first_step": 1,
+      "last_step": 2,
+      "time_minutes": 2,
+      "name_ja": "キーボードを知ろう",
+      "name_zh_tw": "認識鍵盤",
+      "name_es": "Conoce el teclado",
+      "name_fr": "Découvrir le clavier",
+      "name_de": "Die Tastatur kennenlernen",
+      "name_vi": "Làm quen với bàn phím",
+      "name_th": "รู้จักแป้นพิมพ์",
+      "name_id": "Mengenal Papan Ketik"
+    },
+    {
+      "id": 2,
+      "name": "Consonant Keys",
+      "name_kr": "자음 키",
+      "first_step": 3,
+      "last_step": 9,
+      "time_minutes": 7,
+      "name_ja": "子音キー",
+      "name_zh_tw": "子音鍵",
+      "name_es": "Teclas de consonantes",
+      "name_fr": "Touches des consonnes",
+      "name_de": "Konsonantentasten",
+      "name_vi": "Phím phụ âm",
+      "name_th": "ปุ่มพยัญชนะ",
+      "name_id": "Tombol Konsonan"
+    },
+    {
+      "id": 3,
+      "name": "Vowel Keys",
+      "name_kr": "모음 키",
+      "first_step": 10,
+      "last_step": 15,
+      "time_minutes": 6,
+      "name_ja": "母音キー",
+      "name_zh_tw": "母音鍵",
+      "name_es": "Teclas de vocales",
+      "name_fr": "Touches des voyelles",
+      "name_de": "Vokaltasten",
+      "name_vi": "Phím nguyên âm",
+      "name_th": "ปุ่มสระ",
+      "name_id": "Tombol Vokal"
+    },
+    {
+      "id": 4,
+      "name": "Shift Keys",
+      "name_kr": "쌍자음 키",
+      "first_step": 16,
+      "last_step": 18,
+      "time_minutes": 3,
+      "name_ja": "シフトキー",
+      "name_zh_tw": "Shift 鍵",
+      "name_es": "Teclas Shift",
+      "name_fr": "Touches Maj",
+      "name_de": "Umschalttasten (Shift)",
+      "name_vi": "Phím Shift",
+      "name_th": "ปุ่ม Shift",
+      "name_id": "Tombol Shift"
+    },
+    {
+      "id": 5,
+      "name": "Type Syllables",
+      "name_kr": "음절 입력",
+      "first_step": 19,
+      "last_step": 23,
+      "time_minutes": 8,
+      "name_ja": "音節を打つ",
+      "name_zh_tw": "輸入音節",
+      "name_es": "Escribir sílabas",
+      "name_fr": "Taper des syllabes",
+      "name_de": "Silben tippen",
+      "name_vi": "Gõ âm tiết",
+      "name_th": "พิมพ์พยางค์",
+      "name_id": "Mengetik Suku Kata"
+    },
+    {
+      "id": 6,
+      "name": "Type Words",
+      "name_kr": "단어 입력",
+      "first_step": 24,
+      "last_step": 29,
+      "time_minutes": 10,
+      "name_ja": "単語を打つ",
+      "name_zh_tw": "輸入單字",
+      "name_es": "Escribir palabras",
+      "name_fr": "Taper des mots",
+      "name_de": "Wörter tippen",
+      "name_vi": "Gõ từ",
+      "name_th": "พิมพ์คำ",
+      "name_id": "Mengetik Kata"
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "The 2-Set Keyboard (두벌식)",
+      "title_kr": "두벌식 자판",
+      "body": "Almost everyone in Korea types on the same layout: the 2-set keyboard, called 두벌식 (dubeolsik). It has been the national standard since 1985. \"2-set\" means the letters come in exactly two groups — consonants and vowels — and each group gets its own side of the keyboard. You never type a whole syllable block yourself. You type the letters one at a time, in the order you would say them, and the computer builds the block for you.",
+      "rules": [
+        "Consonants sit under your LEFT hand — ㅂ ㅈ ㄷ ㄱ ㅅ on the top row, ㅁ ㄴ ㅇ ㄹ ㅎ on the home row, ㅋ ㅌ ㅊ ㅍ on the bottom row.",
+        "Vowels sit under your RIGHT hand — ㅛ ㅕ ㅑ ㅐ ㅔ on the top row, ㅗ ㅓ ㅏ ㅣ on the home row, ㅠ ㅜ ㅡ on the bottom row.",
+        "Shift gives you the doubles — hold Shift and the five tense consonants ㅃ ㅉ ㄸ ㄲ ㅆ appear on ㅂ ㅈ ㄷ ㄱ ㅅ, plus the two wide vowels ㅒ ㅖ on ㅐ ㅔ.",
+        "That is the whole layout: 26 plain keys and 7 shifted ones. Learn 33 keys and you can write every Korean word there is."
+      ],
+      "tip": {
+        "icon": "⌨️",
+        "label": "Left hand, right hand",
+        "text": "Because consonants are always on the left and vowels are always on the right, typing Korean turns into a steady left-right-left-right rhythm. Korean syllables are built the same way — consonant, then vowel — so your hands end up copying the shape of the language."
+      },
+      "title_ja": "두벌식（ドゥボルシク）キーボード",
+      "title_zh_tw": "두벌식（Dubeolsik）二式鍵盤",
+      "title_es": "El teclado de 2 juegos (두벌식, Dubeolsik)",
+      "title_fr": "Le clavier à 2 ensembles (두벌식, Dubeolsik)",
+      "title_de": "Die 2-Satz-Tastatur (두벌식, Dubeolsik)",
+      "title_vi": "Bàn phím hai bộ (두벌식, Dubeolsik)",
+      "title_th": "แป้นพิมพ์แบบสองชุด (두벌식, Dubeolsik)",
+      "title_id": "Papan Ketik Dua Set (두벌식, Dubeolsik)",
+      "body_ja": "韓国ではほとんどの人が同じ配列でタイプします。それが「두벌식（ドゥボルシク）」と呼ばれる二式キーボードで、1985年から国家標準になっています。「二式」とは、文字が子音と母音のちょうど二つのグループに分かれ、それぞれがキーボードの片側を担当するという意味です。音節ブロックそのものを自分で打つことはありません。話す順番どおりに文字を一つずつ打つだけで、コンピューターがブロックを組み立ててくれます。",
+      "body_zh_tw": "在韓國，幾乎每個人都使用同一種配置：這就是稱為「두벌식（Dubeolsik）」的二式鍵盤，自 1985 年起就是國家標準。「二式」是指字母剛好分成兩組——子音和母音——每一組各占鍵盤的一側。你永遠不需要自己輸入整個音節方塊，只要依照唸出來的順序一次打一個字母，電腦就會替你組成方塊。",
+      "body_es": "Casi todo el mundo en Corea escribe con la misma distribución: el teclado de 2 juegos, llamado 두벌식 (dubeolsik). Es el estándar nacional desde 1985. «2 juegos» significa que las letras se dividen en exactamente dos grupos —consonantes y vocales— y cada grupo ocupa su propio lado del teclado. Nunca escribes tú mismo un bloque silábico entero. Escribes las letras una a una, en el orden en que las dirías, y el ordenador arma el bloque por ti.",
+      "body_fr": "En Corée, presque tout le monde tape avec la même disposition : le clavier à 2 ensembles, appelé 두벌식 (dubeolsik). C'est la norme nationale depuis 1985. « 2 ensembles » signifie que les lettres se répartissent en exactement deux groupes — les consonnes et les voyelles — et chaque groupe occupe son propre côté du clavier. Vous ne tapez jamais vous-même un bloc syllabique entier. Vous tapez les lettres une par une, dans l'ordre où vous les prononceriez, et l'ordinateur assemble le bloc à votre place.",
+      "body_de": "Fast alle in Korea tippen mit derselben Belegung: der 2-Satz-Tastatur, genannt 두벌식 (dubeolsik). Sie ist seit 1985 der nationale Standard. „2-Satz“ bedeutet, dass die Buchstaben in genau zwei Gruppen fallen – Konsonanten und Vokale – und jede Gruppe ihre eigene Seite der Tastatur bekommt. Einen ganzen Silbenblock tippst du nie selbst. Du tippst die Buchstaben einzeln, in der Reihenfolge, in der du sie sprechen würdest, und der Computer baut den Block für dich zusammen.",
+      "body_vi": "Gần như tất cả mọi người ở Hàn Quốc đều gõ trên cùng một cách bố trí: bàn phím hai bộ, gọi là 두벌식 (dubeolsik). Nó là chuẩn quốc gia từ năm 1985. “Hai bộ” nghĩa là các chữ cái chia thành đúng hai nhóm — phụ âm và nguyên âm — và mỗi nhóm chiếm một bên của bàn phím. Bạn không bao giờ phải tự gõ cả một khối âm tiết. Bạn chỉ gõ từng chữ cái một, theo thứ tự bạn phát âm, và máy tính sẽ ghép khối lại cho bạn.",
+      "body_th": "คนเกาหลีเกือบทุกคนพิมพ์ด้วยผังแป้นเดียวกัน นั่นคือแป้นพิมพ์แบบสองชุดที่เรียกว่า 두벌식 (dubeolsik) ซึ่งเป็นมาตรฐานของชาติมาตั้งแต่ปี 1985 คำว่า “สองชุด” หมายถึงตัวอักษรถูกแบ่งออกเป็นสองกลุ่มพอดี — พยัญชนะและสระ — และแต่ละกลุ่มอยู่คนละฝั่งของแป้นพิมพ์ คุณไม่ต้องพิมพ์ทั้งบล็อกพยางค์ด้วยตัวเอง เพียงพิมพ์ตัวอักษรทีละตัวตามลำดับที่คุณออกเสียง แล้วคอมพิวเตอร์จะประกอบบล็อกให้คุณเอง",
+      "body_id": "Hampir semua orang di Korea mengetik dengan tata letak yang sama: papan ketik dua set, yang disebut 두벌식 (dubeolsik). Tata letak ini menjadi standar nasional sejak 1985. “Dua set” berarti hurufnya terbagi tepat menjadi dua kelompok — konsonan dan vokal — dan masing-masing kelompok menempati sisi papan ketiknya sendiri. Kamu tidak pernah mengetik satu blok suku kata utuh sendiri. Kamu cukup mengetik huruf satu per satu, sesuai urutan pengucapannya, dan komputer yang menyusun bloknya untukmu.",
+      "rules_ja": [
+        "子音は左手の下にあります——上段に ㅂ ㅈ ㄷ ㄱ ㅅ、ホームポジションに ㅁ ㄴ ㅇ ㄹ ㅎ、下段に ㅋ ㅌ ㅊ ㅍ。",
+        "母音は右手の下にあります——上段に ㅛ ㅕ ㅑ ㅐ ㅔ、ホームポジションに ㅗ ㅓ ㅏ ㅣ、下段に ㅠ ㅜ ㅡ。",
+        "Shift で濃音・二重字が打てます——Shift を押しながら ㅂ ㅈ ㄷ ㄱ ㅅ を打つと濃音 ㅃ ㅉ ㄸ ㄲ ㅆ が、ㅐ ㅔ を打つと広い母音 ㅒ ㅖ が出ます。",
+        "配列はこれで全部です。通常キー26個とシフトキー7個。33個のキーを覚えれば、あらゆる韓国語の単語が書けます。"
+      ],
+      "rules_zh_tw": [
+        "子音在你的左手下方——上排是 ㅂ ㅈ ㄷ ㄱ ㅅ，基準鍵列是 ㅁ ㄴ ㅇ ㄹ ㅎ，下排是 ㅋ ㅌ ㅊ ㅍ。",
+        "母音在你的右手下方——上排是 ㅛ ㅕ ㅑ ㅐ ㅔ，基準鍵列是 ㅗ ㅓ ㅏ ㅣ，下排是 ㅠ ㅜ ㅡ。",
+        "Shift 讓你打出雙字母——按住 Shift 後，五個緊音 ㅃ ㅉ ㄸ ㄲ ㅆ 會出現在 ㅂ ㅈ ㄷ ㄱ ㅅ 上，另有兩個寬母音 ㅒ ㅖ 在 ㅐ ㅔ 上。",
+        "整個配置就是這樣：26 個一般鍵加 7 個 Shift 鍵。學會 33 個鍵，你就能寫出所有韓語單字。"
+      ],
+      "rules_es": [
+        "Las consonantes van bajo tu mano IZQUIERDA: ㅂ ㅈ ㄷ ㄱ ㅅ en la fila superior, ㅁ ㄴ ㅇ ㄹ ㅎ en la fila base, y ㅋ ㅌ ㅊ ㅍ en la fila inferior.",
+        "Las vocales van bajo tu mano DERECHA: ㅛ ㅕ ㅑ ㅐ ㅔ en la fila superior, ㅗ ㅓ ㅏ ㅣ en la fila base, y ㅠ ㅜ ㅡ en la fila inferior.",
+        "Shift te da los dobles: mantén Shift y las cinco consonantes tensas ㅃ ㅉ ㄸ ㄲ ㅆ aparecen sobre ㅂ ㅈ ㄷ ㄱ ㅅ, además de las dos vocales anchas ㅒ ㅖ sobre ㅐ ㅔ.",
+        "Esa es toda la distribución: 26 teclas normales y 7 con Shift. Aprende 33 teclas y podrás escribir cualquier palabra coreana que exista."
+      ],
+      "rules_fr": [
+        "Les consonnes se trouvent sous votre main GAUCHE : ㅂ ㅈ ㄷ ㄱ ㅅ sur la rangée du haut, ㅁ ㄴ ㅇ ㄹ ㅎ sur la rangée de repos, et ㅋ ㅌ ㅊ ㅍ sur la rangée du bas.",
+        "Les voyelles se trouvent sous votre main DROITE : ㅛ ㅕ ㅑ ㅐ ㅔ sur la rangée du haut, ㅗ ㅓ ㅏ ㅣ sur la rangée de repos, et ㅠ ㅜ ㅡ sur la rangée du bas.",
+        "Maj vous donne les doubles : maintenez Maj et les cinq consonnes tendues ㅃ ㅉ ㄸ ㄲ ㅆ apparaissent sur ㅂ ㅈ ㄷ ㄱ ㅅ, plus les deux voyelles larges ㅒ ㅖ sur ㅐ ㅔ.",
+        "Voilà toute la disposition : 26 touches ordinaires et 7 avec Maj. Apprenez 33 touches et vous pourrez écrire n'importe quel mot coréen."
+      ],
+      "rules_de": [
+        "Die Konsonanten liegen unter deiner LINKEN Hand – ㅂ ㅈ ㄷ ㄱ ㅅ in der oberen Reihe, ㅁ ㄴ ㅇ ㄹ ㅎ in der Grundreihe, ㅋ ㅌ ㅊ ㅍ in der unteren Reihe.",
+        "Die Vokale liegen unter deiner RECHTEN Hand – ㅛ ㅕ ㅑ ㅐ ㅔ in der oberen Reihe, ㅗ ㅓ ㅏ ㅣ in der Grundreihe, ㅠ ㅜ ㅡ in der unteren Reihe.",
+        "Shift liefert die Doppel-Buchstaben: Halte Shift, und die fünf gespannten Konsonanten ㅃ ㅉ ㄸ ㄲ ㅆ erscheinen auf ㅂ ㅈ ㄷ ㄱ ㅅ, dazu die zwei weiten Vokale ㅒ ㅖ auf ㅐ ㅔ.",
+        "Das ist die ganze Belegung: 26 normale Tasten und 7 mit Shift. Lerne 33 Tasten, und du kannst jedes koreanische Wort schreiben, das es gibt."
+      ],
+      "rules_vi": [
+        "Phụ âm nằm dưới tay TRÁI của bạn — ㅂ ㅈ ㄷ ㄱ ㅅ ở hàng trên, ㅁ ㄴ ㅇ ㄹ ㅎ ở hàng cơ sở, ㅋ ㅌ ㅊ ㅍ ở hàng dưới.",
+        "Nguyên âm nằm dưới tay PHẢI của bạn — ㅛ ㅕ ㅑ ㅐ ㅔ ở hàng trên, ㅗ ㅓ ㅏ ㅣ ở hàng cơ sở, ㅠ ㅜ ㅡ ở hàng dưới.",
+        "Shift cho bạn các chữ đôi — giữ Shift và năm phụ âm căng ㅃ ㅉ ㄸ ㄲ ㅆ hiện lên trên ㅂ ㅈ ㄷ ㄱ ㅅ, cùng hai nguyên âm rộng ㅒ ㅖ trên ㅐ ㅔ.",
+        "Đó là toàn bộ cách bố trí: 26 phím thường và 7 phím Shift. Học 33 phím là bạn có thể viết mọi từ tiếng Hàn."
+      ],
+      "rules_th": [
+        "พยัญชนะอยู่ใต้มือซ้ายของคุณ — ㅂ ㅈ ㄷ ㄱ ㅅ อยู่แถวบน, ㅁ ㄴ ㅇ ㄹ ㅎ อยู่แถวหลัก, ㅋ ㅌ ㅊ ㅍ อยู่แถวล่าง",
+        "สระอยู่ใต้มือขวาของคุณ — ㅛ ㅕ ㅑ ㅐ ㅔ อยู่แถวบน, ㅗ ㅓ ㅏ ㅣ อยู่แถวหลัก, ㅠ ㅜ ㅡ อยู่แถวล่าง",
+        "Shift ให้ตัวอักษรคู่ — กด Shift ค้างไว้ แล้วพยัญชนะเสียงหนักทั้งห้า ㅃ ㅉ ㄸ ㄲ ㅆ จะปรากฏบน ㅂ ㅈ ㄷ ㄱ ㅅ พร้อมสระกว้างสองตัว ㅒ ㅖ บน ㅐ ㅔ",
+        "นั่นคือผังแป้นทั้งหมด: ปุ่มธรรมดา 26 ปุ่มและปุ่มที่ต้องกด Shift อีก 7 ปุ่ม เรียนรู้ 33 ปุ่ม แล้วคุณก็เขียนคำภาษาเกาหลีได้ทุกคำ"
+      ],
+      "rules_id": [
+        "Konsonan berada di bawah tangan KIRI kamu — ㅂ ㅈ ㄷ ㄱ ㅅ di baris atas, ㅁ ㄴ ㅇ ㄹ ㅎ di baris utama, ㅋ ㅌ ㅊ ㅍ di baris bawah.",
+        "Vokal berada di bawah tangan KANAN kamu — ㅛ ㅕ ㅑ ㅐ ㅔ di baris atas, ㅗ ㅓ ㅏ ㅣ di baris utama, ㅠ ㅜ ㅡ di baris bawah.",
+        "Shift memberi kamu huruf ganda — tahan Shift dan lima konsonan tegang ㅃ ㅉ ㄸ ㄲ ㅆ muncul di ㅂ ㅈ ㄷ ㄱ ㅅ, ditambah dua vokal lebar ㅒ ㅖ di ㅐ ㅔ.",
+        "Itulah seluruh tata letaknya: 26 tombol biasa dan 7 tombol Shift. Kuasai 33 tombol dan kamu bisa menulis setiap kata Korea yang ada."
+      ],
+      "tip_ja": {
+        "icon": "⌨️",
+        "label": "左手と右手",
+        "text": "子音は常に左、母音は常に右にあるので、韓国語のタイピングは左・右・左・右という一定のリズムになります。韓国語の音節も同じく子音→母音の順で組み立てられるので、両手が言語そのものの形をなぞることになります。"
+      },
+      "tip_zh_tw": {
+        "icon": "⌨️",
+        "label": "左手、右手",
+        "text": "子音總在左、母音總在右，因此打韓文會變成左右左右的穩定節奏。韓語音節也是這樣建構的——先子音、後母音——所以你的雙手最後會模仿出這門語言的形狀。"
+      },
+      "tip_es": {
+        "icon": "⌨️",
+        "label": "Mano izquierda, mano derecha",
+        "text": "Como las consonantes siempre están a la izquierda y las vocales siempre a la derecha, escribir coreano se convierte en un ritmo constante de izquierda-derecha-izquierda-derecha. Las sílabas coreanas se construyen igual —consonante y luego vocal—, así que tus manos acaban copiando la forma del idioma."
+      },
+      "tip_fr": {
+        "icon": "⌨️",
+        "label": "Main gauche, main droite",
+        "text": "Comme les consonnes sont toujours à gauche et les voyelles toujours à droite, taper le coréen devient un rythme régulier gauche-droite-gauche-droite. Les syllabes coréennes se construisent de la même façon — consonne, puis voyelle — si bien que vos mains finissent par épouser la forme de la langue."
+      },
+      "tip_de": {
+        "icon": "⌨️",
+        "label": "Linke Hand, rechte Hand",
+        "text": "Weil die Konsonanten immer links und die Vokale immer rechts liegen, wird das Tippen auf Koreanisch zu einem gleichmäßigen Links-rechts-links-rechts-Rhythmus. Koreanische Silben sind genauso aufgebaut – erst Konsonant, dann Vokal – sodass deine Hände am Ende die Form der Sprache nachahmen."
+      },
+      "tip_vi": {
+        "icon": "⌨️",
+        "label": "Tay trái, tay phải",
+        "text": "Vì phụ âm luôn ở bên trái và nguyên âm luôn ở bên phải, gõ tiếng Hàn trở thành một nhịp đều trái-phải-trái-phải. Âm tiết tiếng Hàn cũng được dựng theo cách đó — phụ âm rồi tới nguyên âm — nên đôi tay bạn rốt cuộc mô phỏng chính hình dạng của ngôn ngữ."
+      },
+      "tip_th": {
+        "icon": "⌨️",
+        "label": "มือซ้าย มือขวา",
+        "text": "เพราะพยัญชนะอยู่ทางซ้ายเสมอและสระอยู่ทางขวาเสมอ การพิมพ์ภาษาเกาหลีจึงกลายเป็นจังหวะซ้าย-ขวา-ซ้าย-ขวาที่สม่ำเสมอ พยางค์เกาหลีก็สร้างขึ้นแบบเดียวกัน — พยัญชนะก่อน แล้วจึงสระ — มือของคุณจึงจำลองรูปทรงของภาษานี้ไปในตัว"
+      },
+      "tip_id": {
+        "icon": "⌨️",
+        "label": "Tangan kiri, tangan kanan",
+        "text": "Karena konsonan selalu di kiri dan vokal selalu di kanan, mengetik bahasa Korea menjadi irama kiri-kanan-kiri-kanan yang tetap. Suku kata Korea disusun dengan cara yang sama — konsonan lalu vokal — sehingga tanganmu akhirnya meniru bentuk bahasanya."
+      }
+    },
+    {
+      "id": 2,
+      "stage": 1,
+      "type": "reading_card",
+      "title": "How Syllables Assemble",
+      "title_kr": "음절이 만들어지는 방법",
+      "body": "Korean writing stacks letters into square blocks, but you do not have to draw those blocks. You just type the letters in order and they snap together on their own. Type ㅎ, then ㅏ, then ㄴ, and 한 appears one piece at a time: ㅎ → 하 → 한. Nothing else to press, no menu, no confirm key.",
+      "rules": [
+        "Type the letters in speaking order: opening consonant, then vowel, then the final consonant (받침) if the syllable has one.",
+        "A block closes by itself as soon as the next letter cannot fit into it. Type ㄱ ㅏ ㅁ ㅏ and you get 가마, not 감아 — the second ㅏ needs a consonant in front of it, so ㅁ jumps forward to start a new block.",
+        "This jump is called 받침 stealing, and it is exactly what Korean typists rely on. Type ㄱ ㅏ ㄱ ㅅ ㅏ and you get 각사: 가 → 각 → 갃 → 각사, with ㅅ pulled out of the double 받침 the moment the ㅏ arrives.",
+        "Backspace peels off one letter, not one block. From 각 it goes to 가, then to ㄱ, then to nothing."
+      ],
+      "tip": {
+        "icon": "💡",
+        "label": "Nothing to install",
+        "text": "You do not need a Korean keyboard on your computer or phone to do this lesson. The keyboard on this page does the whole job — press the keys on your own keyboard, or tap the on-screen ones. Step 28 shows you how to add a real Korean keyboard to your devices for everywhere else."
+      },
+      "title_ja": "音節が組み上がる仕組み",
+      "title_zh_tw": "音節如何組合",
+      "title_es": "Cómo se ensamblan las sílabas",
+      "title_fr": "Comment les syllabes s'assemblent",
+      "title_de": "Wie sich Silben zusammensetzen",
+      "title_vi": "Cách âm tiết ghép lại",
+      "title_th": "พยางค์ประกอบกันอย่างไร",
+      "title_id": "Cara Suku Kata Tersusun",
+      "body_ja": "韓国語の文字は四角いブロックに積み重なりますが、そのブロックを自分で描く必要はありません。順番どおりに文字を打てば、勝手に組み合わさります。ㅎ、次に ㅏ、次に ㄴ と打つと、한 が一片ずつ現れます——ㅎ → 하 → 한。ほかに押すものはなく、メニューも確定キーもありません。",
+      "body_zh_tw": "韓文書寫會把字母疊成方塊，但你不必自己去畫這些方塊。只要按順序打字母，它們就會自動拼在一起。打 ㅎ、再打 ㅏ、再打 ㄴ，한 就會一片一片出現：ㅎ → 하 → 한。不用再按其他鍵，沒有選單，也沒有確認鍵。",
+      "body_es": "La escritura coreana apila las letras en bloques cuadrados, pero no tienes que dibujar esos bloques. Solo escribes las letras en orden y se unen solas. Escribe ㅎ, luego ㅏ, luego ㄴ y 한 aparece pieza a pieza: ㅎ → 하 → 한. Nada más que pulsar, sin menús, sin tecla de confirmación.",
+      "body_fr": "L'écriture coréenne empile les lettres en blocs carrés, mais vous n'avez pas à dessiner ces blocs. Vous tapez simplement les lettres dans l'ordre et elles s'emboîtent toutes seules. Tapez ㅎ, puis ㅏ, puis ㄴ et 한 apparaît pièce par pièce : ㅎ → 하 → 한. Rien d'autre à presser, aucun menu, aucune touche de validation.",
+      "body_de": "Die koreanische Schrift stapelt Buchstaben zu quadratischen Blöcken, aber du musst diese Blöcke nicht selbst zeichnen. Du tippst die Buchstaben einfach der Reihe nach, und sie fügen sich von allein zusammen. Tippe ㅎ, dann ㅏ, dann ㄴ, und 한 erscheint Stück für Stück: ㅎ → 하 → 한. Sonst nichts zu drücken, kein Menü, keine Bestätigungstaste.",
+      "body_vi": "Chữ viết tiếng Hàn xếp các chữ cái thành khối vuông, nhưng bạn không phải tự vẽ những khối đó. Bạn chỉ gõ các chữ cái theo thứ tự và chúng tự ghép vào nhau. Gõ ㅎ, rồi ㅏ, rồi ㄴ và 한 hiện ra từng phần một: ㅎ → 하 → 한. Không cần bấm gì thêm, không menu, không phím xác nhận.",
+      "body_th": "การเขียนภาษาเกาหลีจะวางตัวอักษรซ้อนกันเป็นบล็อกสี่เหลี่ยม แต่คุณไม่ต้องวาดบล็อกเหล่านั้นเอง เพียงพิมพ์ตัวอักษรตามลำดับ แล้วมันจะประกอบกันเอง พิมพ์ ㅎ แล้ว ㅏ แล้ว ㄴ 한 ก็จะปรากฏทีละส่วน: ㅎ → 하 → 한 ไม่ต้องกดอะไรอีก ไม่มีเมนู ไม่มีปุ่มยืนยัน",
+      "body_id": "Tulisan Korea menumpuk huruf menjadi blok persegi, tetapi kamu tidak perlu menggambar blok itu. Kamu cukup mengetik hurufnya secara berurutan dan mereka menyatu dengan sendirinya. Ketik ㅎ, lalu ㅏ, lalu ㄴ dan 한 muncul sepotong demi sepotong: ㅎ → 하 → 한. Tidak ada lagi yang perlu ditekan, tanpa menu, tanpa tombol konfirmasi.",
+      "rules_ja": [
+        "話す順番で文字を打ちます——最初の子音、次に母音、そして音節に受け音があれば最後の子音（받침）。",
+        "次の文字が入りきらなくなった瞬間、ブロックは自動的に閉じます。ㄱ ㅏ ㅁ ㅏ と打つと 감아 ではなく 가마 になります——二つ目の ㅏ は前に子音が必要なので、ㅁ が前へ飛んで新しいブロックを始めるのです。",
+        "この飛び移りは「받침の横取り」と呼ばれ、まさに韓国語のタイピストが頼りにしている動きです。ㄱ ㅏ ㄱ ㅅ ㅏ と打つと 각사 になります：가 → 각 → 갃 → 각사。ㅏ が来た瞬間、二重の 받침 から ㅅ が引き出されます。",
+        "Backspace はブロック単位ではなく文字を一つずつはがします。각 からは 가、次に ㄱ、そして何もない状態へ戻ります。"
+      ],
+      "rules_zh_tw": [
+        "依照唸的順序打字母：起首子音、母音，若該音節有收尾子音（받침）就再打它。",
+        "當下一個字母無法再放進去時，方塊就會自動收尾。打 ㄱ ㅏ ㅁ ㅏ 會得到 가마，而不是 감아——第二個 ㅏ 前面需要子音，所以 ㅁ 會往前跳去開啟新的方塊。",
+        "這個往前跳叫做「받침 竊取」，正是韓文打字者所依賴的機制。打 ㄱ ㅏ ㄱ ㅅ ㅏ 會得到 각사：가 → 각 → 갃 → 각사，ㅏ 一出現，ㅅ 就從雙 받침 中被拉出來。",
+        "Backspace 是剝掉一個字母，而不是一個方塊。從 각 會退成 가，再退成 ㄱ，最後退成空白。"
+      ],
+      "rules_es": [
+        "Escribe las letras en el orden en que se pronuncian: consonante inicial, luego vocal y, si la sílaba tiene una, la consonante final (받침).",
+        "Un bloque se cierra solo en cuanto la letra siguiente ya no cabe en él. Escribe ㄱ ㅏ ㅁ ㅏ y obtienes 가마, no 감아: la segunda ㅏ necesita una consonante delante, así que ㅁ salta adelante para empezar un bloque nuevo.",
+        "Ese salto se llama «robo de 받침» y es justo aquello en lo que confían quienes escriben en coreano. Escribe ㄱ ㅏ ㄱ ㅅ ㅏ y obtienes 각사: 가 → 각 → 갃 → 각사, con la ㅅ extraída del 받침 doble en el instante en que llega la ㅏ.",
+        "Retroceso quita una letra, no un bloque. Desde 각 pasa a 가, luego a ㄱ, y luego a nada."
+      ],
+      "rules_fr": [
+        "Tapez les lettres dans l'ordre où on les prononce : consonne initiale, puis voyelle, puis la consonne finale (받침) si la syllabe en a une.",
+        "Un bloc se ferme de lui-même dès que la lettre suivante ne peut plus y entrer. Tapez ㄱ ㅏ ㅁ ㅏ et vous obtenez 가마, pas 감아 : la deuxième ㅏ a besoin d'une consonne devant elle, alors ㅁ saute en avant pour commencer un nouveau bloc.",
+        "Ce saut s'appelle le « vol de 받침 », et c'est exactement ce sur quoi comptent les dactylographes coréens. Tapez ㄱ ㅏ ㄱ ㅅ ㅏ et vous obtenez 각사 : 가 → 각 → 갃 → 각사, la ㅅ étant tirée du 받침 double dès l'arrivée du ㅏ.",
+        "Retour arrière retire une lettre, pas un bloc. Depuis 각, on passe à 가, puis à ㄱ, puis à rien."
+      ],
+      "rules_de": [
+        "Tippe die Buchstaben in der Sprechreihenfolge: Anfangskonsonant, dann Vokal, dann den Schlusskonsonanten (받침), falls die Silbe einen hat.",
+        "Ein Block schließt sich von selbst, sobald der nächste Buchstabe nicht mehr hineinpasst. Tippe ㄱ ㅏ ㅁ ㅏ und du bekommst 가마, nicht 감아 – das zweite ㅏ braucht einen Konsonanten davor, also springt ㅁ nach vorn und beginnt einen neuen Block.",
+        "Dieser Sprung heißt „받침-Klau“, und genau darauf verlassen sich koreanische Schreiber. Tippe ㄱ ㅏ ㄱ ㅅ ㅏ und du bekommst 각사: 가 → 각 → 갃 → 각사, wobei ㅅ in dem Moment aus dem doppelten 받침 gezogen wird, in dem das ㅏ ankommt.",
+        "Die Rücktaste schält einen Buchstaben ab, nicht einen Block. Aus 각 wird 가, dann ㄱ, dann nichts."
+      ],
+      "rules_vi": [
+        "Gõ các chữ cái theo thứ tự phát âm: phụ âm đầu, rồi nguyên âm, rồi phụ âm cuối (받침) nếu âm tiết có.",
+        "Một khối tự đóng lại ngay khi chữ cái tiếp theo không thể lọt vào. Gõ ㄱ ㅏ ㅁ ㅏ và bạn được 가마, chứ không phải 감아 — chữ ㅏ thứ hai cần một phụ âm đứng trước, nên ㅁ nhảy lên trước để bắt đầu khối mới.",
+        "Cú nhảy này gọi là “ăn cắp 받침”, và đó chính là điều người Hàn gõ chữ trông cậy vào. Gõ ㄱ ㅏ ㄱ ㅅ ㅏ và bạn được 각사: 가 → 각 → 갃 → 각사, với ㅅ bị kéo ra khỏi 받침 kép ngay khi ㅏ xuất hiện.",
+        "Phím Backspace bóc đi một chữ cái, không phải một khối. Từ 각 nó về 가, rồi về ㄱ, rồi về trống không."
+      ],
+      "rules_th": [
+        "พิมพ์ตัวอักษรตามลำดับการออกเสียง: พยัญชนะต้น แล้วสระ แล้วพยัญชนะสะกด (받침) หากพยางค์นั้นมี",
+        "บล็อกจะปิดตัวเองทันทีที่ตัวอักษรถัดไปใส่เข้าไปไม่ได้ พิมพ์ ㄱ ㅏ ㅁ ㅏ คุณจะได้ 가마 ไม่ใช่ 감아 — สระ ㅏ ตัวที่สองต้องมีพยัญชนะอยู่ข้างหน้า ดังนั้น ㅁ จึงกระโดดไปข้างหน้าเพื่อเริ่มบล็อกใหม่",
+        "การกระโดดนี้เรียกว่า “การขโมย 받침” และเป็นสิ่งที่คนพิมพ์ภาษาเกาหลีพึ่งพาพอดี พิมพ์ ㄱ ㅏ ㄱ ㅅ ㅏ คุณจะได้ 각사: 가 → 각 → 갃 → 각사 โดย ㅅ ถูกดึงออกจาก 받침 คู่ในทันทีที่ ㅏ มาถึง",
+        "Backspace ลอกออกทีละตัวอักษร ไม่ใช่ทีละบล็อก จาก 각 จะกลายเป็น 가 แล้วเป็น ㄱ แล้วจึงเป็นค่าว่าง"
+      ],
+      "rules_id": [
+        "Ketik huruf sesuai urutan pengucapan: konsonan awal, lalu vokal, lalu konsonan akhir (받침) jika suku katanya punya.",
+        "Sebuah blok menutup sendiri begitu huruf berikutnya tidak lagi muat di dalamnya. Ketik ㄱ ㅏ ㅁ ㅏ dan kamu mendapat 가마, bukan 감아 — vokal ㅏ kedua butuh konsonan di depannya, jadi ㅁ melompat maju untuk memulai blok baru.",
+        "Lompatan ini disebut “pencurian 받침”, dan itulah yang justru diandalkan para pengetik Korea. Ketik ㄱ ㅏ ㄱ ㅅ ㅏ dan kamu mendapat 각사: 가 → 각 → 갃 → 각사, dengan ㅅ ditarik keluar dari 받침 ganda pada saat ㅏ tiba.",
+        "Backspace mengupas satu huruf, bukan satu blok. Dari 각 menjadi 가, lalu ㄱ, lalu kosong."
+      ],
+      "tip_ja": {
+        "icon": "💡",
+        "label": "何もインストール不要",
+        "text": "このレッスンをするのに、パソコンやスマホに韓国語キーボードを入れる必要はありません。このページのキーボードがすべてやってくれます——自分のキーボードのキーを押すか、画面上のキーをタップしてください。ステップ28では、ほかの場所でも使えるよう、実際の韓国語キーボードを端末に追加する方法を紹介します。"
+      },
+      "tip_zh_tw": {
+        "icon": "💡",
+        "label": "不用安裝任何東西",
+        "text": "做這堂課，你的電腦或手機不需要裝韓文鍵盤。這個頁面上的鍵盤就能完成全部工作——按你自己鍵盤上的鍵，或點螢幕上的鍵都可以。第 28 步會教你如何在裝置上加入真正的韓文鍵盤，供其他場合使用。"
+      },
+      "tip_es": {
+        "icon": "💡",
+        "label": "Nada que instalar",
+        "text": "No necesitas un teclado coreano en tu ordenador ni en tu móvil para hacer esta lección. El teclado de esta página hace todo el trabajo: pulsa las teclas de tu propio teclado o toca las de la pantalla. El paso 28 te muestra cómo añadir un teclado coreano de verdad a tus dispositivos para todo lo demás."
+      },
+      "tip_fr": {
+        "icon": "💡",
+        "label": "Rien à installer",
+        "text": "Vous n'avez besoin d'aucun clavier coréen sur votre ordinateur ou votre téléphone pour faire cette leçon. Le clavier de cette page fait tout le travail : appuyez sur les touches de votre propre clavier, ou touchez celles à l'écran. L'étape 28 vous montre comment ajouter un vrai clavier coréen à vos appareils pour partout ailleurs."
+      },
+      "tip_de": {
+        "icon": "💡",
+        "label": "Nichts zu installieren",
+        "text": "Du brauchst für diese Lektion keine koreanische Tastatur auf deinem Computer oder Handy. Die Tastatur auf dieser Seite übernimmt die ganze Arbeit – drück die Tasten deiner eigenen Tastatur oder tippe die Tasten auf dem Bildschirm an. Schritt 28 zeigt dir, wie du für überall sonst eine echte koreanische Tastatur zu deinen Geräten hinzufügst."
+      },
+      "tip_vi": {
+        "icon": "💡",
+        "label": "Không cần cài gì cả",
+        "text": "Bạn không cần bàn phím tiếng Hàn trên máy tính hay điện thoại để làm bài học này. Bàn phím trên trang này lo trọn phần việc — hãy nhấn phím trên bàn phím của bạn, hoặc chạm vào các phím trên màn hình. Bước 28 sẽ hướng dẫn bạn thêm một bàn phím tiếng Hàn thật vào thiết bị để dùng ở mọi nơi khác."
+      },
+      "tip_th": {
+        "icon": "💡",
+        "label": "ไม่ต้องติดตั้งอะไร",
+        "text": "คุณไม่จำเป็นต้องมีแป้นพิมพ์ภาษาเกาหลีในคอมพิวเตอร์หรือโทรศัพท์เพื่อทำบทเรียนนี้ แป้นพิมพ์บนหน้านี้ทำงานทั้งหมดให้ — กดปุ่มบนแป้นพิมพ์ของคุณเอง หรือแตะปุ่มบนหน้าจอก็ได้ ขั้นที่ 28 จะแสดงวิธีเพิ่มแป้นพิมพ์ภาษาเกาหลีจริงลงในอุปกรณ์ของคุณเพื่อใช้ในที่อื่น ๆ"
+      },
+      "tip_id": {
+        "icon": "💡",
+        "label": "Tak perlu memasang apa pun",
+        "text": "Kamu tidak perlu papan ketik Korea di komputer atau ponsel untuk mengerjakan pelajaran ini. Papan ketik di halaman ini mengerjakan semuanya — tekan tombol pada papan ketikmu sendiri, atau ketuk tombol di layar. Langkah 28 menunjukkan cara menambahkan papan ketik Korea sungguhan ke perangkatmu untuk dipakai di tempat lain."
+      }
+    },
+    {
+      "id": 3,
+      "stage": 2,
+      "type": "key_intro",
+      "jamo": [
+        "ㅁ",
+        "ㄴ"
+      ],
+      "reps": 3,
+      "title": "ㅁ and ㄴ — the left home row",
+      "instruction": "Press ㅁ and then ㄴ three times each.",
+      "tip": "Rest your left hand on the home row: A S D F. ㅁ is on A under your little finger, ㄴ is on S under your ring finger. You never have to move your hand for these two.",
+      "tip_ja": "左手をホームポジション A S D F に置きます。ㅁ は A、小指の下です。ㄴ は S、薬指の下です。この二つのために手を動かす必要はまったくありません。",
+      "tip_zh_tw": "把左手放在基準鍵列 A S D F 上。ㅁ 在 A，小指下方；ㄴ 在 S，無名指下方。這兩個字母完全不用移動你的手。",
+      "tip_es": "Apoya la mano izquierda en la fila base: A S D F. ㅁ está en A, bajo el meñique; ㄴ está en S, bajo el anular. Para estas dos no tienes que mover la mano en absoluto.",
+      "tip_fr": "Posez votre main gauche sur la rangée de repos : A S D F. ㅁ est sur A, sous l'auriculaire ; ㄴ est sur S, sous l'annulaire. Pour ces deux-là, vous n'avez jamais à bouger la main.",
+      "tip_de": "Leg deine linke Hand auf die Grundreihe: A S D F. ㅁ liegt auf A unter dem kleinen Finger, ㄴ auf S unter dem Ringfinger. Für diese beiden musst du die Hand nie bewegen.",
+      "tip_vi": "Đặt tay trái lên hàng cơ sở: A S D F. ㅁ ở phím A, dưới ngón út; ㄴ ở phím S, dưới ngón áp út. Với hai chữ này bạn không phải di chuyển tay chút nào.",
+      "tip_th": "วางมือซ้ายบนแถวหลัก: A S D F ㅁ อยู่ที่ A ใต้นิ้วก้อย, ㄴ อยู่ที่ S ใต้นิ้วนาง สองตัวนี้คุณไม่ต้องขยับมือเลย",
+      "tip_id": "Letakkan tangan kiri di baris utama: A S D F. ㅁ ada di A, di bawah kelingking; ㄴ ada di S, di bawah jari manis. Untuk dua huruf ini kamu sama sekali tidak perlu memindahkan tangan."
+    },
+    {
+      "id": 4,
+      "stage": 2,
+      "type": "key_intro",
+      "jamo": [
+        "ㅇ",
+        "ㄹ"
+      ],
+      "reps": 3,
+      "title": "ㅇ and ㄹ — still the home row",
+      "instruction": "Press ㅇ and then ㄹ three times each.",
+      "tip": "Keep the same hand position. ㅇ is on D under your middle finger, ㄹ is on F under your index finger — F is the key with the little bump on it, so you can always find it without looking.",
+      "tip_ja": "手の位置はそのまま。ㅇ は D、中指の下です。ㄹ は F、人差し指の下です——F には小さな突起があるので、見なくてもいつでも見つけられます。",
+      "tip_zh_tw": "保持相同的手勢。ㅇ 在 D，中指下方；ㄹ 在 F，食指下方——F 鍵上有個小凸點，所以你不用看也能隨時找到它。",
+      "tip_es": "Mantén la misma posición de la mano. ㅇ está en D, bajo el dedo medio; ㄹ está en F, bajo el índice: F tiene un pequeño relieve, así que siempre puedes encontrarla sin mirar.",
+      "tip_fr": "Gardez la même position de main. ㅇ est sur D, sous le majeur ; ㄹ est sur F, sous l'index — la touche F porte un petit relief, vous pouvez donc toujours la retrouver sans regarder.",
+      "tip_de": "Behalte dieselbe Handposition. ㅇ liegt auf D unter dem Mittelfinger, ㄹ auf F unter dem Zeigefinger – die F-Taste hat eine kleine Erhöhung, sodass du sie immer ohne Hinsehen findest.",
+      "tip_vi": "Giữ nguyên vị trí tay. ㅇ ở phím D, dưới ngón giữa; ㄹ ở phím F, dưới ngón trỏ — phím F có một gờ nhỏ, nên bạn luôn tìm được nó mà không cần nhìn.",
+      "tip_th": "วางมือในตำแหน่งเดิม ㅇ อยู่ที่ D ใต้นิ้วกลาง, ㄹ อยู่ที่ F ใต้นิ้วชี้ — ปุ่ม F มีปุ่มนูนเล็ก ๆ อยู่ คุณจึงหามันเจอได้เสมอโดยไม่ต้องมอง",
+      "tip_id": "Pertahankan posisi tangan yang sama. ㅇ ada di D, di bawah jari tengah; ㄹ ada di F, di bawah telunjuk — tombol F punya tonjolan kecil, jadi kamu selalu bisa menemukannya tanpa melihat."
+    },
+    {
+      "id": 5,
+      "stage": 2,
+      "type": "key_intro",
+      "jamo": [
+        "ㅎ",
+        "ㄱ"
+      ],
+      "reps": 3,
+      "title": "ㅎ and ㄱ — index-finger stretches",
+      "instruction": "Press ㅎ and then ㄱ three times each.",
+      "tip": "Both are index-finger keys. ㅎ is on G — stay on the home row and reach one key to the right of F. ㄱ is on R, one row up from F. ㄱ is the single most common consonant in Korean, so it is worth getting comfortable.",
+      "tip_ja": "どちらも人差し指のキーです。ㅎ は G——ホームポジションのまま、F の一つ右へ届かせます。ㄱ は R、F の一つ上の段です。ㄱ は韓国語で最もよく使われる子音なので、慣れておく価値があります。",
+      "tip_zh_tw": "兩個都是食指鍵。ㅎ 在 G——保持在基準鍵列，往 F 右邊伸一個鍵。ㄱ 在 R，在 F 上方一排。ㄱ 是韓語中最常用的子音，值得好好熟悉。",
+      "tip_es": "Ambas son teclas del índice. ㅎ está en G: quédate en la fila base y estira una tecla a la derecha de F. ㄱ está en R, una fila por encima de F. ㄱ es la consonante más frecuente del coreano, así que vale la pena sentirse cómodo con ella.",
+      "tip_fr": "Ce sont deux touches de l'index. ㅎ est sur G — restez sur la rangée de repos et étirez-vous d'une touche à droite de F. ㄱ est sur R, une rangée au-dessus de F. ㄱ est la consonne la plus fréquente du coréen, il vaut donc la peine de s'y sentir à l'aise.",
+      "tip_de": "Beide sind Zeigefinger-Tasten. ㅎ liegt auf G – bleib in der Grundreihe und streck dich eine Taste rechts von F. ㄱ liegt auf R, eine Reihe über F. ㄱ ist der häufigste Konsonant im Koreanischen, es lohnt sich also, damit vertraut zu werden.",
+      "tip_vi": "Cả hai đều là phím ngón trỏ. ㅎ ở phím G — cứ ở hàng cơ sở và với sang một phím bên phải F. ㄱ ở phím R, cao hơn F một hàng. ㄱ là phụ âm thông dụng nhất trong tiếng Hàn, nên rất đáng để làm quen cho thật thoải mái.",
+      "tip_th": "ทั้งคู่เป็นปุ่มของนิ้วชี้ ㅎ อยู่ที่ G — อยู่ที่แถวหลักแล้วเอื้อมไปทางขวาของ F หนึ่งปุ่ม ㄱ อยู่ที่ R เหนือ F หนึ่งแถว ㄱ เป็นพยัญชนะที่ใช้บ่อยที่สุดในภาษาเกาหลี จึงคุ้มค่าที่จะทำให้คล่อง",
+      "tip_id": "Keduanya tombol telunjuk. ㅎ ada di G — tetap di baris utama dan jangkau satu tombol di kanan F. ㄱ ada di R, satu baris di atas F. ㄱ adalah konsonan yang paling sering muncul dalam bahasa Korea, jadi sepadan untuk dikuasai sampai nyaman."
+    },
+    {
+      "id": 6,
+      "stage": 2,
+      "type": "key_intro",
+      "jamo": [
+        "ㅂ",
+        "ㅈ"
+      ],
+      "reps": 3,
+      "title": "ㅂ and ㅈ — top row, outside fingers",
+      "instruction": "Press ㅂ and then ㅈ three times each.",
+      "tip": "Move your left hand up one row. ㅂ is on Q, straight above A, under your little finger. ㅈ is on W, straight above S, under your ring finger. Same fingers as ㅁ and ㄴ — just one row higher.",
+      "tip_ja": "左手を一段上げます。ㅂ は Q、A の真上、小指の下です。ㅈ は W、S の真上、薬指の下です。ㅁ と ㄴ と同じ指で、一段上がるだけです。",
+      "tip_zh_tw": "把左手往上移一排。ㅂ 在 Q，正好在 A 上方，小指下方；ㅈ 在 W，正好在 S 上方，無名指下方。和 ㅁ、ㄴ 用同樣的手指——只是高一排。",
+      "tip_es": "Sube la mano izquierda una fila. ㅂ está en Q, justo encima de A, bajo el meñique. ㅈ está en W, justo encima de S, bajo el anular. Los mismos dedos que ㅁ y ㄴ, solo una fila más arriba.",
+      "tip_fr": "Montez votre main gauche d'une rangée. ㅂ est sur Q, juste au-dessus de A, sous l'auriculaire. ㅈ est sur W, juste au-dessus de S, sous l'annulaire. Les mêmes doigts que pour ㅁ et ㄴ — simplement une rangée plus haut.",
+      "tip_de": "Rück deine linke Hand eine Reihe nach oben. ㅂ liegt auf Q, direkt über A, unter dem kleinen Finger. ㅈ liegt auf W, direkt über S, unter dem Ringfinger. Dieselben Finger wie bei ㅁ und ㄴ – nur eine Reihe höher.",
+      "tip_vi": "Đưa tay trái lên một hàng. ㅂ ở phím Q, ngay trên A, dưới ngón út. ㅈ ở phím W, ngay trên S, dưới ngón áp út. Cùng những ngón như ㅁ và ㄴ — chỉ cao hơn một hàng.",
+      "tip_th": "เลื่อนมือซ้ายขึ้นหนึ่งแถว ㅂ อยู่ที่ Q เหนือ A พอดี ใต้นิ้วก้อย ㅈ อยู่ที่ W เหนือ S พอดี ใต้นิ้วนาง ใช้นิ้วเดียวกับ ㅁ และ ㄴ — แค่สูงขึ้นหนึ่งแถว",
+      "tip_id": "Naikkan tangan kiri satu baris. ㅂ ada di Q, tepat di atas A, di bawah kelingking. ㅈ ada di W, tepat di atas S, di bawah jari manis. Jari yang sama dengan ㅁ dan ㄴ — hanya satu baris lebih tinggi."
+    },
+    {
+      "id": 7,
+      "stage": 2,
+      "type": "key_intro",
+      "jamo": [
+        "ㄷ",
+        "ㅅ"
+      ],
+      "reps": 3,
+      "title": "ㄷ and ㅅ — top row, inside fingers",
+      "instruction": "Press ㄷ and then ㅅ three times each.",
+      "tip": "Still the top row. ㄷ is on E, above D, under your middle finger. ㅅ is on T — an index-finger stretch up and to the right, above G. ㅅ is very common as a 받침, so it will come up a lot.",
+      "tip_ja": "まだ上段です。ㄷ は E、D の上、中指の下です。ㅅ は T——人差し指で右上へ伸ばし、G の上です。ㅅ は 받침 としてとてもよく使われるので、何度も出てきます。",
+      "tip_zh_tw": "還是上排。ㄷ 在 E，在 D 上方，中指下方；ㅅ 在 T——食指往右上方伸，在 G 上方。ㅅ 當作 받침 非常常見，所以會經常出現。",
+      "tip_es": "Sigues en la fila superior. ㄷ está en E, encima de D, bajo el dedo medio. ㅅ está en T: un estiramiento del índice arriba y a la derecha, encima de G. ㅅ es muy común como 받침, así que aparecerá mucho.",
+      "tip_fr": "Toujours sur la rangée du haut. ㄷ est sur E, au-dessus de D, sous le majeur. ㅅ est sur T — un étirement de l'index vers le haut et la droite, au-dessus de G. ㅅ est très fréquent comme 받침, il reviendra donc souvent.",
+      "tip_de": "Immer noch die obere Reihe. ㄷ liegt auf E, über D, unter dem Mittelfinger. ㅅ liegt auf T – eine Zeigefinger-Streckung nach oben rechts, über G. ㅅ ist als 받침 sehr häufig, es wird dir also oft begegnen.",
+      "tip_vi": "Vẫn ở hàng trên. ㄷ ở phím E, trên D, dưới ngón giữa. ㅅ ở phím T — ngón trỏ vươn lên trên và sang phải, trên G. ㅅ rất hay làm 받침, nên nó sẽ xuất hiện nhiều.",
+      "tip_th": "ยังอยู่แถวบน ㄷ อยู่ที่ E เหนือ D ใต้นิ้วกลาง ㅅ อยู่ที่ T — นิ้วชี้เอื้อมขึ้นไปทางขวาบน เหนือ G ㅅ เป็น 받침 ที่พบบ่อยมาก จึงจะโผล่มาอยู่เรื่อย ๆ",
+      "tip_id": "Masih di baris atas. ㄷ ada di E, di atas D, di bawah jari tengah. ㅅ ada di T — telunjuk menjangkau ke atas dan ke kanan, di atas G. ㅅ sangat umum sebagai 받침, jadi akan sering muncul."
+    },
+    {
+      "id": 8,
+      "stage": 2,
+      "type": "key_intro",
+      "jamo": [
+        "ㅋ",
+        "ㅌ"
+      ],
+      "reps": 3,
+      "title": "ㅋ and ㅌ — bottom row, outside fingers",
+      "instruction": "Press ㅋ and then ㅌ three times each.",
+      "tip": "Drop your left hand one row below home. ㅋ is on Z, under your little finger, and ㅌ is on X, under your ring finger. These are the breathy pair of ㄱ and ㄷ, and they sit in the least-used corner because Korean uses them less often.",
+      "tip_ja": "左手をホームより一段下げます。ㅋ は Z、小指の下、ㅌ は X、薬指の下です。これらは ㄱ と ㄷ の激音版で、韓国語ではあまり使われないため、最も使用頻度の低い隅に置かれています。",
+      "tip_zh_tw": "把左手降到基準列下方一排。ㅋ 在 Z，小指下方；ㅌ 在 X，無名指下方。它們是 ㄱ 和 ㄷ 的送氣版本，因為韓語較少用到，所以放在最少用的角落。",
+      "tip_es": "Baja la mano izquierda una fila por debajo de la base. ㅋ está en Z, bajo el meñique, y ㅌ está en X, bajo el anular. Son la pareja aspirada de ㄱ y ㄷ, y ocupan el rincón menos usado porque el coreano las emplea con menos frecuencia.",
+      "tip_fr": "Descendez votre main gauche d'une rangée sous le repos. ㅋ est sur Z, sous l'auriculaire, et ㅌ est sur X, sous l'annulaire. Ce sont les équivalents aspirés de ㄱ et ㄷ, et ils occupent le coin le moins utilisé parce que le coréen s'en sert moins souvent.",
+      "tip_de": "Senk deine linke Hand eine Reihe unter die Grundreihe. ㅋ liegt auf Z unter dem kleinen Finger, ㅌ auf X unter dem Ringfinger. Sie sind die behauchten Gegenstücke zu ㄱ und ㄷ und sitzen in der am wenigsten genutzten Ecke, weil das Koreanische sie seltener braucht.",
+      "tip_vi": "Hạ tay trái xuống một hàng dưới hàng cơ sở. ㅋ ở phím Z, dưới ngón út, còn ㅌ ở phím X, dưới ngón áp út. Đây là cặp bật hơi của ㄱ và ㄷ, và chúng nằm ở góc ít dùng nhất vì tiếng Hàn dùng chúng ít hơn.",
+      "tip_th": "ลดมือซ้ายลงหนึ่งแถวใต้แถวหลัก ㅋ อยู่ที่ Z ใต้นิ้วก้อย และ ㅌ อยู่ที่ X ใต้นิ้วนาง ทั้งคู่เป็นเสียงพ่นลมคู่ของ ㄱ และ ㄷ และอยู่ในมุมที่ใช้น้อยที่สุดเพราะภาษาเกาหลีใช้มันน้อยกว่า",
+      "tip_id": "Turunkan tangan kiri satu baris di bawah baris utama. ㅋ ada di Z, di bawah kelingking, dan ㅌ ada di X, di bawah jari manis. Keduanya adalah pasangan beraspirasi dari ㄱ dan ㄷ, dan menempati sudut yang paling jarang dipakai karena bahasa Korea lebih jarang menggunakannya."
+    },
+    {
+      "id": 9,
+      "stage": 2,
+      "type": "key_intro",
+      "jamo": [
+        "ㅊ",
+        "ㅍ"
+      ],
+      "reps": 3,
+      "title": "ㅊ and ㅍ — bottom row, inside fingers",
+      "instruction": "Press ㅊ and then ㅍ three times each.",
+      "tip": "Same bottom row. ㅊ is on C, under your middle finger, and ㅍ is on V, under your index finger. That is all 14 basic consonants: three rows, left hand only.",
+      "tip_ja": "同じ下段です。ㅊ は C、中指の下、ㅍ は V、人差し指の下です。これで基本子音14個すべて——三段、左手だけです。",
+      "tip_zh_tw": "同一個下排。ㅊ 在 C，中指下方；ㅍ 在 V，食指下方。這就是全部 14 個基本子音：三排，只用左手。",
+      "tip_es": "La misma fila inferior. ㅊ está en C, bajo el dedo medio, y ㅍ está en V, bajo el índice. Con eso están las 14 consonantes básicas: tres filas, solo la mano izquierda.",
+      "tip_fr": "La même rangée du bas. ㅊ est sur C, sous le majeur, et ㅍ est sur V, sous l'index. Voilà les 14 consonnes de base : trois rangées, main gauche seulement.",
+      "tip_de": "Dieselbe untere Reihe. ㅊ liegt auf C unter dem Mittelfinger, ㅍ auf V unter dem Zeigefinger. Damit sind alle 14 Grundkonsonanten beisammen: drei Reihen, nur die linke Hand.",
+      "tip_vi": "Vẫn hàng dưới. ㅊ ở phím C, dưới ngón giữa, còn ㅍ ở phím V, dưới ngón trỏ. Vậy là đủ cả 14 phụ âm cơ bản: ba hàng, chỉ dùng tay trái.",
+      "tip_th": "แถวล่างเดิม ㅊ อยู่ที่ C ใต้นิ้วกลาง และ ㅍ อยู่ที่ V ใต้นิ้วชี้ นั่นครบพยัญชนะพื้นฐานทั้ง 14 ตัว: สามแถว ใช้มือซ้ายอย่างเดียว",
+      "tip_id": "Baris bawah yang sama. ㅊ ada di C, di bawah jari tengah, dan ㅍ ada di V, di bawah telunjuk. Itulah seluruh 14 konsonan dasar: tiga baris, hanya tangan kiri."
+    },
+    {
+      "id": 10,
+      "stage": 3,
+      "type": "key_intro",
+      "jamo": [
+        "ㅗ",
+        "ㅓ"
+      ],
+      "reps": 3,
+      "title": "ㅗ and ㅓ — the right home row",
+      "instruction": "Press ㅗ and then ㅓ three times each.",
+      "tip": "Now the right hand. Rest it on J K L and reach. ㅗ is on H, an index-finger stretch to the left. ㅓ is on J, the home key right under your index finger — J has a bump on it too.",
+      "tip_ja": "今度は右手です。J K L に置いて手を伸ばします。ㅗ は H、人差し指を左へ伸ばします。ㅓ は J、人差し指のすぐ下のホームキーです——J にも突起があります。",
+      "tip_zh_tw": "現在換右手。把它放在 J K L 上再伸出去。ㅗ 在 H，食指往左伸。ㅓ 在 J，就在食指正下方的基準鍵——J 上面也有一個凸點。",
+      "tip_es": "Ahora la mano derecha. Apóyala en J K L y estira. ㅗ está en H, un estiramiento del índice hacia la izquierda. ㅓ está en J, la tecla base justo bajo tu índice: J también tiene un relieve.",
+      "tip_fr": "Maintenant la main droite. Posez-la sur J K L et étirez-vous. ㅗ est sur H, un étirement de l'index vers la gauche. ㅓ est sur J, la touche de repos juste sous votre index — J porte aussi un relief.",
+      "tip_de": "Jetzt die rechte Hand. Leg sie auf J K L und streck dich. ㅗ liegt auf H, eine Zeigefinger-Streckung nach links. ㅓ liegt auf J, der Grundtaste direkt unter deinem Zeigefinger – J hat ebenfalls eine Erhöhung.",
+      "tip_vi": "Bây giờ đến tay phải. Đặt nó lên J K L rồi vươn tay. ㅗ ở phím H, ngón trỏ vươn sang trái. ㅓ ở phím J, phím cơ sở ngay dưới ngón trỏ — phím J cũng có một gờ nhỏ.",
+      "tip_th": "ตอนนี้ถึงมือขวา วางไว้บน J K L แล้วเอื้อม ㅗ อยู่ที่ H ให้นิ้วชี้เอื้อมไปทางซ้าย ㅓ อยู่ที่ J ปุ่มหลักที่อยู่ใต้นิ้วชี้พอดี — ปุ่ม J ก็มีปุ่มนูนเช่นกัน",
+      "tip_id": "Sekarang tangan kanan. Letakkan di J K L lalu jangkau. ㅗ ada di H, telunjuk menjangkau ke kiri. ㅓ ada di J, tombol utama tepat di bawah telunjukmu — tombol J juga punya tonjolan."
+    },
+    {
+      "id": 11,
+      "stage": 3,
+      "type": "key_intro",
+      "jamo": [
+        "ㅏ",
+        "ㅣ"
+      ],
+      "reps": 3,
+      "title": "ㅏ and ㅣ — no movement at all",
+      "instruction": "Press ㅏ and then ㅣ three times each.",
+      "tip": "These two never move. ㅏ is on K under your middle finger and ㅣ is on L under your ring finger. ㅏ is the most common vowel in Korean, and it is already sitting under a resting finger.",
+      "tip_ja": "この二つは決して動きません。ㅏ は K、中指の下、ㅣ は L、薬指の下です。ㅏ は韓国語で最もよく使われる母音で、すでに置いた指の下にあります。",
+      "tip_zh_tw": "這兩個永遠不用移動。ㅏ 在 K，中指下方；ㅣ 在 L，無名指下方。ㅏ 是韓語中最常用的母音，而它就正好在休息的手指下方。",
+      "tip_es": "Estas dos nunca se mueven. ㅏ está en K, bajo el dedo medio, y ㅣ está en L, bajo el anular. ㅏ es la vocal más frecuente del coreano, y ya está justo bajo un dedo en reposo.",
+      "tip_fr": "Ces deux-là ne bougent jamais. ㅏ est sur K, sous le majeur, et ㅣ est sur L, sous l'annulaire. ㅏ est la voyelle la plus fréquente du coréen, et elle se trouve déjà sous un doigt au repos.",
+      "tip_de": "Diese beiden bewegen sich nie. ㅏ liegt auf K unter dem Mittelfinger und ㅣ auf L unter dem Ringfinger. ㅏ ist der häufigste Vokal im Koreanischen und liegt bereits unter einem ruhenden Finger.",
+      "tip_vi": "Hai chữ này không bao giờ di chuyển. ㅏ ở phím K dưới ngón giữa và ㅣ ở phím L dưới ngón áp út. ㅏ là nguyên âm thông dụng nhất tiếng Hàn, và nó đã nằm sẵn dưới một ngón đang nghỉ.",
+      "tip_th": "สองตัวนี้ไม่ต้องขยับเลย ㅏ อยู่ที่ K ใต้นิ้วกลาง และ ㅣ อยู่ที่ L ใต้นิ้วนาง ㅏ เป็นสระที่ใช้บ่อยที่สุดในภาษาเกาหลี และมันก็อยู่ใต้นิ้วที่พักอยู่แล้วพอดี",
+      "tip_id": "Dua huruf ini tidak pernah berpindah. ㅏ ada di K di bawah jari tengah dan ㅣ ada di L di bawah jari manis. ㅏ adalah vokal yang paling sering muncul dalam bahasa Korea, dan sudah berada tepat di bawah jari yang beristirahat."
+    },
+    {
+      "id": 12,
+      "stage": 3,
+      "type": "key_intro",
+      "jamo": [
+        "ㅛ",
+        "ㅕ"
+      ],
+      "reps": 3,
+      "title": "ㅛ and ㅕ — top row, index finger",
+      "instruction": "Press ㅛ and then ㅕ three times each.",
+      "tip": "Move your right hand up one row. Both are index-finger keys: ㅛ is on Y, a stretch up and to the left, and ㅕ is on U, straight above J. Notice the pattern — the y-vowels ㅛ ㅕ sit one row above their plain partners ㅗ ㅓ.",
+      "tip_ja": "右手を一段上げます。どちらも人差し指のキーです：ㅛ は Y、左上へ伸ばし、ㅕ は U、J の真上です。パターンに注目——y系の母音 ㅛ ㅕ は、対応する基本母音 ㅗ ㅓ の一段上にあります。",
+      "tip_zh_tw": "把右手往上移一排。兩個都是食指鍵：ㅛ 在 Y，往左上伸；ㅕ 在 U，正好在 J 上方。注意這個規律——y 系母音 ㅛ ㅕ 就位在對應基本母音 ㅗ ㅓ 的上方一排。",
+      "tip_es": "Sube la mano derecha una fila. Ambas son teclas del índice: ㅛ está en Y, un estiramiento arriba y a la izquierda, y ㅕ está en U, justo encima de J. Fíjate en el patrón: las vocales con y ㅛ ㅕ están una fila por encima de sus parejas simples ㅗ ㅓ.",
+      "tip_fr": "Montez votre main droite d'une rangée. Ce sont deux touches de l'index : ㅛ est sur Y, un étirement vers le haut et la gauche, et ㅕ est sur U, juste au-dessus de J. Remarquez le schéma — les voyelles en y ㅛ ㅕ se trouvent une rangée au-dessus de leurs partenaires simples ㅗ ㅓ.",
+      "tip_de": "Rück deine rechte Hand eine Reihe nach oben. Beide sind Zeigefinger-Tasten: ㅛ liegt auf Y, eine Streckung nach oben links, und ㅕ auf U, direkt über J. Achte auf das Muster – die j-Vokale ㅛ ㅕ liegen eine Reihe über ihren einfachen Partnern ㅗ ㅓ.",
+      "tip_vi": "Đưa tay phải lên một hàng. Cả hai đều là phím ngón trỏ: ㅛ ở phím Y, vươn lên trên và sang trái, còn ㅕ ở phím U, ngay trên J. Để ý quy luật — các nguyên âm y ㅛ ㅕ nằm cao hơn một hàng so với cặp đơn ㅗ ㅓ của chúng.",
+      "tip_th": "เลื่อนมือขวาขึ้นหนึ่งแถว ทั้งคู่เป็นปุ่มของนิ้วชี้: ㅛ อยู่ที่ Y เอื้อมขึ้นไปทางซ้ายบน และ ㅕ อยู่ที่ U เหนือ J พอดี สังเกตรูปแบบ — สระเสียง y อย่าง ㅛ ㅕ อยู่เหนือคู่พื้นฐาน ㅗ ㅓ ของมันหนึ่งแถว",
+      "tip_id": "Naikkan tangan kanan satu baris. Keduanya tombol telunjuk: ㅛ ada di Y, jangkauan ke atas dan ke kiri, dan ㅕ ada di U, tepat di atas J. Perhatikan polanya — vokal y ㅛ ㅕ berada satu baris di atas pasangan polosnya ㅗ ㅓ."
+    },
+    {
+      "id": 13,
+      "stage": 3,
+      "type": "key_intro",
+      "jamo": [
+        "ㅑ",
+        "ㅐ"
+      ],
+      "reps": 3,
+      "title": "ㅑ and ㅐ — top row, middle and ring",
+      "instruction": "Press ㅑ and then ㅐ three times each.",
+      "tip": "Still the top row. ㅑ is on I, straight above K, under your middle finger — again one row above its plain partner ㅏ. ㅐ is on O, under your ring finger.",
+      "tip_ja": "まだ上段です。ㅑ は I、K の真上、中指の下です——これも基本母音 ㅏ の一段上です。ㅐ は O、薬指の下です。",
+      "tip_zh_tw": "還是上排。ㅑ 在 I，正好在 K 上方，中指下方——一樣位在基本母音 ㅏ 的上方一排。ㅐ 在 O，無名指下方。",
+      "tip_es": "Sigues en la fila superior. ㅑ está en I, justo encima de K, bajo el dedo medio: de nuevo una fila por encima de su pareja simple ㅏ. ㅐ está en O, bajo el anular.",
+      "tip_fr": "Toujours la rangée du haut. ㅑ est sur I, juste au-dessus de K, sous le majeur — encore une fois une rangée au-dessus de son partenaire simple ㅏ. ㅐ est sur O, sous l'annulaire.",
+      "tip_de": "Immer noch die obere Reihe. ㅑ liegt auf I, direkt über K, unter dem Mittelfinger – wieder eine Reihe über seinem einfachen Partner ㅏ. ㅐ liegt auf O, unter dem Ringfinger.",
+      "tip_vi": "Vẫn hàng trên. ㅑ ở phím I, ngay trên K, dưới ngón giữa — lại cao hơn một hàng so với cặp đơn ㅏ của nó. ㅐ ở phím O, dưới ngón áp út.",
+      "tip_th": "ยังอยู่แถวบน ㅑ อยู่ที่ I เหนือ K พอดี ใต้นิ้วกลาง — อยู่เหนือคู่พื้นฐาน ㅏ ของมันหนึ่งแถวอีกเช่นกัน ㅐ อยู่ที่ O ใต้นิ้วนาง",
+      "tip_id": "Masih di baris atas. ㅑ ada di I, tepat di atas K, di bawah jari tengah — lagi-lagi satu baris di atas pasangan polosnya ㅏ. ㅐ ada di O, di bawah jari manis."
+    },
+    {
+      "id": 14,
+      "stage": 3,
+      "type": "key_intro",
+      "jamo": [
+        "ㅔ"
+      ],
+      "reps": 3,
+      "title": "ㅔ — the far corner",
+      "instruction": "Press ㅔ three times.",
+      "tip": "ㅔ is on P, the top-row key under your right little finger — the furthest vowel from home. ㅐ and ㅔ sound almost the same in modern Korean, and they sit side by side on O and P, so learn them as a pair.",
+      "tip_ja": "ㅔ は P、右小指の下の上段キーで、ホームから最も遠い母音です。ㅐ と ㅔ は現代韓国語ではほとんど同じ音で、O と P に隣り合って並んでいるので、ペアとして覚えましょう。",
+      "tip_zh_tw": "ㅔ 在 P，是右小指下方的上排鍵——離基準列最遠的母音。在現代韓語中 ㅐ 和 ㅔ 發音幾乎相同，而且它們就並排在 O 和 P 上，所以把它們當成一對來記。",
+      "tip_es": "ㅔ está en P, la tecla de la fila superior bajo tu meñique derecho: la vocal más alejada de la base. ㅐ y ㅔ suenan casi igual en el coreano moderno y están una al lado de la otra en O y P, así que apréndelas como pareja.",
+      "tip_fr": "ㅔ est sur P, la touche de la rangée du haut sous votre auriculaire droit — la voyelle la plus éloignée du repos. ㅐ et ㅔ se prononcent presque pareil en coréen moderne et sont côte à côte sur O et P, alors apprenez-les en paire.",
+      "tip_de": "ㅔ liegt auf P, der Taste der oberen Reihe unter deinem rechten kleinen Finger – der am weitesten von der Grundreihe entfernte Vokal. ㅐ und ㅔ klingen im modernen Koreanisch fast gleich und liegen auf O und P nebeneinander, lern sie also als Paar.",
+      "tip_vi": "ㅔ ở phím P, phím hàng trên dưới ngón út phải — nguyên âm xa hàng cơ sở nhất. Trong tiếng Hàn hiện đại, ㅐ và ㅔ nghe gần như giống nhau, và chúng nằm cạnh nhau trên O và P, nên hãy học chúng thành một cặp.",
+      "tip_th": "ㅔ อยู่ที่ P ปุ่มแถวบนใต้นิ้วก้อยขวา — เป็นสระที่อยู่ไกลจากแถวหลักที่สุด ในภาษาเกาหลีปัจจุบัน ㅐ และ ㅔ ออกเสียงเกือบเหมือนกัน และอยู่ติดกันบน O และ P จึงควรจำเป็นคู่",
+      "tip_id": "ㅔ ada di P, tombol baris atas di bawah kelingking kananmu — vokal terjauh dari baris utama. Dalam bahasa Korea modern, ㅐ dan ㅔ terdengar hampir sama, dan letaknya bersebelahan di O dan P, jadi pelajari keduanya sebagai pasangan."
+    },
+    {
+      "id": 15,
+      "stage": 3,
+      "type": "key_intro",
+      "jamo": [
+        "ㅠ",
+        "ㅜ",
+        "ㅡ"
+      ],
+      "reps": 3,
+      "title": "ㅠ, ㅜ and ㅡ — vowels on the bottom row",
+      "instruction": "Press ㅠ, then ㅜ, then ㅡ, three times each.",
+      "tip": "Three keys in a row along the bottom: ㅠ on B, ㅜ on N, ㅡ on M. B is a stretch for your LEFT index finger, while N and M sit under your right index. ㅡ on M matters more than it looks — it is the vowel inside 은, 는, 를 and most other grammar endings.",
+      "tip_ja": "下段に三つ並んでいます：ㅠ は B、ㅜ は N、ㅡ は M。B は左の人差し指を伸ばす位置で、N と M は右の人差し指の下にあります。M の ㅡ は見た目以上に重要です——은、는、를 など、ほとんどの文法語尾に入っている母音だからです。",
+      "tip_zh_tw": "下排連著三個鍵：ㅠ 在 B，ㅜ 在 N，ㅡ 在 M。B 要靠左手食指伸過去，而 N 和 M 在右手食指下方。M 上的 ㅡ 比看起來更重要——它是 은、는、를 以及大多數文法語尾裡的母音。",
+      "tip_es": "Tres teclas seguidas en la fila inferior: ㅠ en B, ㅜ en N, ㅡ en M. B es un estiramiento para tu índice IZQUIERDO, mientras que N y M quedan bajo tu índice derecho. La ㅡ en M importa más de lo que parece: es la vocal que hay dentro de 은, 는, 를 y de casi todas las terminaciones gramaticales.",
+      "tip_fr": "Trois touches à la suite sur la rangée du bas : ㅠ sur B, ㅜ sur N, ㅡ sur M. B est un étirement pour votre index GAUCHE, tandis que N et M se trouvent sous votre index droit. Le ㅡ sur M compte plus qu'il n'y paraît — c'est la voyelle contenue dans 은, 는, 를 et la plupart des autres terminaisons grammaticales.",
+      "tip_de": "Drei Tasten nebeneinander in der unteren Reihe: ㅠ auf B, ㅜ auf N, ㅡ auf M. B ist eine Streckung für deinen LINKEN Zeigefinger, während N und M unter deinem rechten Zeigefinger liegen. Das ㅡ auf M ist wichtiger, als es aussieht – es ist der Vokal in 은, 는, 를 und den meisten anderen grammatischen Endungen.",
+      "tip_vi": "Ba phím liền nhau ở hàng dưới: ㅠ ở B, ㅜ ở N, ㅡ ở M. B là chỗ vươn của ngón trỏ TRÁI, còn N và M nằm dưới ngón trỏ phải. Chữ ㅡ ở M quan trọng hơn vẻ ngoài của nó — đó là nguyên âm nằm trong 은, 는, 를 và hầu hết các đuôi ngữ pháp khác.",
+      "tip_th": "สามปุ่มเรียงกันตามแถวล่าง: ㅠ ที่ B, ㅜ ที่ N, ㅡ ที่ M B ต้องให้นิ้วชี้ซ้ายเอื้อมไป ส่วน N และ M อยู่ใต้นิ้วชี้ขวา ㅡ ที่ M สำคัญกว่าที่เห็น — เป็นสระที่อยู่ใน 은, 는, 를 และท้ายไวยากรณ์อื่น ๆ ส่วนใหญ่",
+      "tip_id": "Tiga tombol berjajar di baris bawah: ㅠ di B, ㅜ di N, ㅡ di M. B adalah jangkauan untuk telunjuk KIRI, sementara N dan M berada di bawah telunjuk kananmu. ㅡ di M lebih penting daripada kelihatannya — itu vokal di dalam 은, 는, 를 dan hampir semua akhiran tata bahasa lain."
+    },
+    {
+      "id": 16,
+      "stage": 4,
+      "type": "key_intro",
+      "jamo": [
+        "ㅃ",
+        "ㅉ"
+      ],
+      "reps": 3,
+      "includeShift": true,
+      "title": "ㅃ and ㅉ — hold Shift",
+      "instruction": "Hold Shift and press ㅃ, then ㅉ, three times each.",
+      "tip": "The five tense consonants are the plain keys with Shift held down. ㅃ is Shift + Q (where ㅂ lives) and ㅉ is Shift + W (where ㅈ lives). Because both are left-hand keys, hold the Shift on the RIGHT with your right little finger while your left hand types — the keyboard highlights which Shift to use. On a touchscreen, tap ⇧ first — it stays down for exactly one key.",
+      "tip_ja": "五つの濃音は、Shift を押しながら通常キーを打ったものです。ㅃ は Shift + Q（ㅂ の位置）、ㅉ は Shift + W（ㅈ の位置）です。どちらも左手のキーなので、左手で打つ間、右の小指で右側の Shift を押さえます——どちらの Shift を使うかはキーボードがハイライトします。タッチ画面では先に ⇧ をタップします——ちょうど一つのキーの間だけ押された状態になります。",
+      "tip_zh_tw": "五個緊音就是按住 Shift 再打一般鍵。ㅃ 是 Shift + Q（ㅂ 所在），ㅉ 是 Shift + W（ㅈ 所在）。因為兩個都是左手鍵，打字時用右手小指按住右邊的 Shift，左手負責打字——鍵盤會標示該用哪個 Shift。在觸控螢幕上，先點 ⇧——它只會維持按下狀態剛好一個鍵。",
+      "tip_es": "Las cinco consonantes tensas son las teclas normales con Shift pulsado. ㅃ es Shift + Q (donde está ㅂ) y ㅉ es Shift + W (donde está ㅈ). Como ambas son teclas de la mano izquierda, mantén el Shift de la DERECHA con tu meñique derecho mientras la izquierda escribe: el teclado resalta qué Shift usar. En una pantalla táctil, toca ⇧ primero; se queda pulsado para exactamente una tecla.",
+      "tip_fr": "Les cinq consonnes tendues sont les touches ordinaires avec Maj enfoncée. ㅃ est Maj + Q (où se trouve ㅂ) et ㅉ est Maj + W (où se trouve ㅈ). Comme ce sont deux touches de la main gauche, maintenez la touche Maj de DROITE avec votre auriculaire droit pendant que la main gauche tape — le clavier indique quelle touche Maj utiliser. Sur un écran tactile, touchez ⇧ d'abord — elle reste enfoncée pour exactement une touche.",
+      "tip_de": "Die fünf gespannten Konsonanten sind die normalen Tasten mit gedrückter Umschalttaste (Shift). ㅃ ist Shift + Q (wo ㅂ liegt) und ㅉ ist Shift + W (wo ㅈ liegt). Da beide auf der linken Hand liegen, halte die RECHTE Shift-Taste mit deinem rechten kleinen Finger, während die linke Hand tippt – die Tastatur hebt hervor, welche Shift-Taste zu nehmen ist. Auf einem Touchscreen tippst du zuerst ⇧ – sie bleibt für genau eine Taste gedrückt.",
+      "tip_vi": "Năm phụ âm căng chính là các phím thường khi giữ Shift. ㅃ là Shift + Q (nơi có ㅂ) và ㅉ là Shift + W (nơi có ㅈ). Vì cả hai đều là phím tay trái, hãy giữ phím Shift bên PHẢI bằng ngón út phải trong khi tay trái gõ — bàn phím sẽ làm nổi bật phím Shift cần dùng. Trên màn hình cảm ứng, chạm ⇧ trước — nó giữ trạng thái nhấn cho đúng một phím.",
+      "tip_th": "พยัญชนะเสียงหนักทั้งห้าคือปุ่มธรรมดาที่กด Shift ค้างไว้ ㅃ คือ Shift + Q (ที่ ㅂ อยู่) และ ㅉ คือ Shift + W (ที่ ㅈ อยู่) เพราะทั้งคู่เป็นปุ่มมือซ้าย ให้กด Shift ฝั่งขวาค้างด้วยนิ้วก้อยขวาขณะที่มือซ้ายพิมพ์ — แป้นพิมพ์จะเน้นว่าควรใช้ Shift ตัวไหน บนหน้าจอสัมผัส ให้แตะ ⇧ ก่อน — มันจะค้างไว้พอดีหนึ่งปุ่ม",
+      "tip_id": "Lima konsonan tegang adalah tombol biasa dengan Shift ditahan. ㅃ adalah Shift + Q (tempat ㅂ) dan ㅉ adalah Shift + W (tempat ㅈ). Karena keduanya tombol tangan kiri, tahan Shift KANAN dengan kelingking kananmu sementara tangan kiri mengetik — papan ketik menyorot Shift mana yang dipakai. Di layar sentuh, ketuk ⇧ dulu — ia tetap tertekan untuk tepat satu tombol."
+    },
+    {
+      "id": 17,
+      "stage": 4,
+      "type": "key_intro",
+      "jamo": [
+        "ㄸ",
+        "ㄲ",
+        "ㅆ"
+      ],
+      "reps": 3,
+      "includeShift": true,
+      "title": "ㄸ, ㄲ and ㅆ — the other three doubles",
+      "instruction": "Hold Shift and press ㄸ, then ㄲ, then ㅆ, three times each.",
+      "tip": "Same rule, three more keys: ㄸ is Shift + E, ㄲ is Shift + R, ㅆ is Shift + T — all left-hand keys, so again hold the RIGHT Shift with your right little finger. These three turn up constantly — 진짜, 꼭, 있어요 — so the Shift reflex is worth drilling now.",
+      "tip_ja": "同じルールで、あと三つ：ㄸ は Shift + E、ㄲ は Shift + R、ㅆ は Shift + T——すべて左手のキーなので、やはり右の小指で右側の Shift を押さえます。この三つは 진짜、꼭、있어요 のように絶えず出てくるので、今のうちに Shift の反射を鍛えておく価値があります。",
+      "tip_zh_tw": "同樣的規則，再加三個鍵：ㄸ 是 Shift + E，ㄲ 是 Shift + R，ㅆ 是 Shift + T——全都是左手鍵，所以一樣用右手小指按住右邊的 Shift。這三個會不斷出現——진짜、꼭、있어요——所以現在就把 Shift 反射練起來很值得。",
+      "tip_es": "La misma regla, tres teclas más: ㄸ es Shift + E, ㄲ es Shift + R, ㅆ es Shift + T, todas de la mano izquierda, así que de nuevo mantén el Shift DERECHO con tu meñique derecho. Estas tres aparecen sin parar —진짜, 꼭, 있어요—, así que vale la pena entrenar ya el reflejo del Shift.",
+      "tip_fr": "Même règle, trois touches de plus : ㄸ est Maj + E, ㄲ est Maj + R, ㅆ est Maj + T — toutes des touches de la main gauche, alors maintenez encore la touche Maj de DROITE avec votre auriculaire droit. Ces trois-là reviennent sans cesse — 진짜, 꼭, 있어요 — il vaut donc la peine d'entraîner le réflexe Maj dès maintenant.",
+      "tip_de": "Dieselbe Regel, drei weitere Tasten: ㄸ ist Shift + E, ㄲ ist Shift + R, ㅆ ist Shift + T – alles Tasten der linken Hand, also halte wieder die RECHTE Shift-Taste mit deinem rechten kleinen Finger. Diese drei tauchen ständig auf – 진짜, 꼭, 있어요 –, deshalb lohnt es sich, den Shift-Reflex jetzt zu üben.",
+      "tip_vi": "Cùng quy tắc, thêm ba phím: ㄸ là Shift + E, ㄲ là Shift + R, ㅆ là Shift + T — đều là phím tay trái, nên lại giữ phím Shift bên PHẢI bằng ngón út phải. Ba chữ này xuất hiện liên tục — 진짜, 꼭, 있어요 — nên rất đáng luyện phản xạ Shift ngay bây giờ.",
+      "tip_th": "กฎเดิม เพิ่มอีกสามปุ่ม: ㄸ คือ Shift + E, ㄲ คือ Shift + R, ㅆ คือ Shift + T — ล้วนเป็นปุ่มมือซ้าย จึงกด Shift ฝั่งขวาค้างด้วยนิ้วก้อยขวาอีกครั้ง สามตัวนี้โผล่มาตลอด — 진짜, 꼭, 있어요 — จึงคุ้มที่จะฝึกรีเฟล็กซ์ Shift ตั้งแต่ตอนนี้",
+      "tip_id": "Aturan yang sama, tiga tombol lagi: ㄸ adalah Shift + E, ㄲ adalah Shift + R, ㅆ adalah Shift + T — semuanya tombol tangan kiri, jadi sekali lagi tahan Shift KANAN dengan kelingking kananmu. Ketiganya muncul terus-menerus — 진짜, 꼭, 있어요 — jadi sepadan untuk melatih refleks Shift sekarang."
+    },
+    {
+      "id": 18,
+      "stage": 4,
+      "type": "key_intro",
+      "jamo": [
+        "ㅒ",
+        "ㅖ"
+      ],
+      "reps": 3,
+      "includeShift": true,
+      "title": "ㅒ and ㅖ — shifted vowels",
+      "instruction": "Hold Shift and press ㅒ, then ㅖ, three times each.",
+      "tip": "Shift works on the vowel side too, but only on two keys: ㅒ is Shift + O (above ㅐ) and ㅖ is Shift + P (above ㅔ). These are right-hand keys, so this time use the LEFT Shift with your left little finger — always the hand opposite the letter. Every other vowel you will ever need is either a plain key or two plain keys typed one after the other.",
+      "tip_ja": "Shift は母音側でも使えますが、キーは二つだけです：ㅒ は Shift + O（ㅐ の上）、ㅖ は Shift + P（ㅔ の上）です。これらは右手のキーなので、今度は左の小指で左側の Shift を使います——常に文字と反対の手です。これ以外に必要な母音はすべて、通常キー一つか、通常キーを二つ続けて打つかのどちらかです。",
+      "tip_zh_tw": "Shift 在母音那一側也有用，但只有兩個鍵：ㅒ 是 Shift + O（在 ㅐ 上方），ㅖ 是 Shift + P（在 ㅔ 上方）。這些是右手鍵，所以這次用左手小指按左邊的 Shift——永遠用和字母相反的那隻手。其他你會用到的母音，不是一個一般鍵，就是連續打兩個一般鍵。",
+      "tip_es": "El Shift también funciona en el lado de las vocales, pero solo en dos teclas: ㅒ es Shift + O (encima de ㅐ) y ㅖ es Shift + P (encima de ㅔ). Son teclas de la mano derecha, así que esta vez usa el Shift IZQUIERDO con tu meñique izquierdo: siempre la mano opuesta a la letra. Cualquier otra vocal que necesites es una tecla normal o dos teclas normales escritas una tras otra.",
+      "tip_fr": "Maj fonctionne aussi du côté des voyelles, mais sur deux touches seulement : ㅒ est Maj + O (au-dessus de ㅐ) et ㅖ est Maj + P (au-dessus de ㅔ). Ce sont des touches de la main droite, alors cette fois utilisez la touche Maj de GAUCHE avec votre auriculaire gauche — toujours la main opposée à la lettre. Toute autre voyelle dont vous aurez besoin est soit une touche simple, soit deux touches simples tapées l'une après l'autre.",
+      "tip_de": "Shift funktioniert auch auf der Vokalseite, aber nur bei zwei Tasten: ㅒ ist Shift + O (über ㅐ) und ㅖ ist Shift + P (über ㅔ). Das sind Tasten der rechten Hand, also nimm diesmal die LINKE Shift-Taste mit deinem linken kleinen Finger – immer die Hand gegenüber dem Buchstaben. Jeder andere Vokal, den du je brauchst, ist entweder eine einfache Taste oder zwei einfache Tasten nacheinander.",
+      "tip_vi": "Shift cũng hoạt động ở phía nguyên âm, nhưng chỉ trên hai phím: ㅒ là Shift + O (trên ㅐ) và ㅖ là Shift + P (trên ㅔ). Đây là phím tay phải, nên lần này dùng phím Shift bên TRÁI bằng ngón út trái — luôn là tay đối diện với chữ. Mọi nguyên âm khác bạn cần đều hoặc là một phím thường, hoặc là hai phím thường gõ nối tiếp nhau.",
+      "tip_th": "Shift ใช้ได้กับฝั่งสระเช่นกัน แต่มีแค่สองปุ่ม: ㅒ คือ Shift + O (เหนือ ㅐ) และ ㅖ คือ Shift + P (เหนือ ㅔ) ปุ่มเหล่านี้เป็นปุ่มมือขวา คราวนี้จึงใช้ Shift ฝั่งซ้ายด้วยนิ้วก้อยซ้าย — ใช้มือฝั่งตรงข้ามกับตัวอักษรเสมอ สระอื่น ๆ ที่คุณจะต้องใช้ ล้วนเป็นปุ่มธรรมดาหนึ่งปุ่ม หรือปุ่มธรรมดาสองปุ่มพิมพ์ต่อกัน",
+      "tip_id": "Shift juga berlaku di sisi vokal, tetapi hanya pada dua tombol: ㅒ adalah Shift + O (di atas ㅐ) dan ㅖ adalah Shift + P (di atas ㅔ). Ini tombol tangan kanan, jadi kali ini gunakan Shift KIRI dengan kelingking kirimu — selalu tangan yang berlawanan dengan hurufnya. Vokal lain apa pun yang kamu butuhkan berupa satu tombol biasa atau dua tombol biasa yang diketik berturut-turut."
+    },
+    {
+      "id": 19,
+      "stage": 5,
+      "type": "typing_drill",
+      "mode": "jamo",
+      "title": "Consonant Drill",
+      "instruction": "A consonant appears — press its key. 20 letters in a row.",
+      "items": [
+        {
+          "ko": "ㄱ"
+        },
+        {
+          "ko": "ㄴ"
+        },
+        {
+          "ko": "ㄷ"
+        },
+        {
+          "ko": "ㄹ"
+        },
+        {
+          "ko": "ㅁ"
+        },
+        {
+          "ko": "ㅂ"
+        },
+        {
+          "ko": "ㅅ"
+        },
+        {
+          "ko": "ㅇ"
+        },
+        {
+          "ko": "ㅈ"
+        },
+        {
+          "ko": "ㅊ"
+        },
+        {
+          "ko": "ㅋ"
+        },
+        {
+          "ko": "ㅌ"
+        },
+        {
+          "ko": "ㅍ"
+        },
+        {
+          "ko": "ㅎ"
+        }
+      ],
+      "target": {
+        "count": 20
+      },
+      "tip": "Go for accuracy, not speed. Slow and correct builds the habit; fast and wrong builds a habit you will have to unlearn. The speed comes on its own once your fingers stop hunting.",
+      "tip_ja": "速さではなく正確さを目指しましょう。ゆっくり正確に打つと習慣が身につきます。速くても間違っていると、あとで直さなければならない癖がつきます。指が探し回らなくなれば、速さは自然についてきます。",
+      "tip_zh_tw": "追求準確，而不是速度。慢而正確能養成習慣；快而錯誤只會養成日後得改掉的壞習慣。等你的手指不再到處找鍵，速度自然就會來。",
+      "tip_es": "Busca la precisión, no la velocidad. Despacio y correcto crea el hábito; rápido y mal crea un hábito que luego tendrás que desaprender. La velocidad llega sola en cuanto tus dedos dejan de buscar.",
+      "tip_fr": "Visez la précision, pas la vitesse. Lentement et juste installe l'habitude ; vite et faux installe une habitude qu'il faudra désapprendre. La vitesse vient d'elle-même dès que vos doigts cessent de chercher.",
+      "tip_de": "Ziel auf Genauigkeit, nicht auf Tempo. Langsam und richtig baut die Gewohnheit auf; schnell und falsch baut eine Gewohnheit auf, die du wieder verlernen musst. Das Tempo kommt von allein, sobald deine Finger nicht mehr suchen.",
+      "tip_vi": "Hãy nhắm tới độ chính xác, không phải tốc độ. Chậm mà đúng sẽ tạo thói quen; nhanh mà sai tạo thói quen bạn sẽ phải bỏ đi. Tốc độ tự đến khi ngón tay bạn thôi dò dẫm.",
+      "tip_th": "มุ่งความแม่นยำ ไม่ใช่ความเร็ว ช้าแต่ถูกสร้างนิสัยที่ดี เร็วแต่ผิดสร้างนิสัยที่คุณต้องมาแก้ทีหลัง ความเร็วจะมาเอง เมื่อนิ้วของคุณเลิกไล่หาปุ่ม",
+      "tip_id": "Utamakan ketepatan, bukan kecepatan. Pelan dan benar membangun kebiasaan; cepat tapi salah membangun kebiasaan yang nanti harus kamu buang. Kecepatan datang sendiri begitu jarimu berhenti mencari-cari."
+    },
+    {
+      "id": 20,
+      "stage": 5,
+      "type": "typing_drill",
+      "mode": "jamo",
+      "title": "Vowel Drill",
+      "instruction": "A vowel appears — press its key. 15 letters in a row.",
+      "items": [
+        {
+          "ko": "ㅏ"
+        },
+        {
+          "ko": "ㅑ"
+        },
+        {
+          "ko": "ㅓ"
+        },
+        {
+          "ko": "ㅕ"
+        },
+        {
+          "ko": "ㅗ"
+        },
+        {
+          "ko": "ㅛ"
+        },
+        {
+          "ko": "ㅜ"
+        },
+        {
+          "ko": "ㅠ"
+        },
+        {
+          "ko": "ㅡ"
+        },
+        {
+          "ko": "ㅣ"
+        }
+      ],
+      "target": {
+        "count": 15
+      },
+      "tip": "Every one of these is under your right hand. If you find yourself looking down, try naming the finger before you press — index, middle, ring, little.",
+      "tip_ja": "これらはすべて右手の下にあります。つい下を見てしまうなら、押す前に指の名前を口にしてみましょう——人差し指、中指、薬指、小指。",
+      "tip_zh_tw": "這些全都在你的右手下方。如果你發現自己一直低頭看，就在按下前先說出手指的名字——食指、中指、無名指、小指。",
+      "tip_es": "Todas estas están bajo tu mano derecha. Si te descubres mirando hacia abajo, prueba a nombrar el dedo antes de pulsar: índice, medio, anular, meñique.",
+      "tip_fr": "Toutes ces touches sont sous votre main droite. Si vous vous surprenez à regarder vers le bas, essayez de nommer le doigt avant d'appuyer : index, majeur, annulaire, auriculaire.",
+      "tip_de": "Diese alle liegen unter deiner rechten Hand. Wenn du dich beim Hinuntersehen ertappst, nenn den Finger, bevor du drückst – Zeigefinger, Mittelfinger, Ringfinger, kleiner Finger.",
+      "tip_vi": "Tất cả những phím này đều nằm dưới tay phải của bạn. Nếu thấy mình cứ nhìn xuống, hãy thử gọi tên ngón tay trước khi nhấn — ngón trỏ, ngón giữa, ngón áp út, ngón út.",
+      "tip_th": "ทั้งหมดนี้อยู่ใต้มือขวาของคุณ ถ้าเผลอก้มมองแป้น ลองเรียกชื่อนิ้วก่อนกด — นิ้วชี้ นิ้วกลาง นิ้วนาง นิ้วก้อย",
+      "tip_id": "Semuanya ada di bawah tangan kananmu. Kalau kamu mendapati diri menunduk melihat, coba sebutkan nama jarinya sebelum menekan — telunjuk, tengah, manis, kelingking."
+    },
+    {
+      "id": 21,
+      "stage": 5,
+      "type": "typing_drill",
+      "mode": "syllable",
+      "title": "Simple Syllables",
+      "instruction": "Type each syllable: one consonant, then one vowel. It completes on its own.",
+      "items": [
+        {
+          "ko": "가",
+          "romanization": "ga"
+        },
+        {
+          "ko": "나",
+          "romanization": "na"
+        },
+        {
+          "ko": "다",
+          "romanization": "da"
+        },
+        {
+          "ko": "마",
+          "romanization": "ma"
+        },
+        {
+          "ko": "사",
+          "romanization": "sa"
+        }
+      ],
+      "target": {
+        "count": 5
+      },
+      "tip": "Two keystrokes each, and every one of them is left hand then right hand. There is no key to press to \"finish\" the block — the moment the vowel lands, the syllable is done and the drill moves on.",
+      "tip_ja": "それぞれ二打で、どれも左手のあと右手です。ブロックを「完成させる」ために押すキーはありません——母音が入った瞬間に音節は完成し、ドリルは次へ進みます。",
+      "tip_zh_tw": "每個都是兩下，而且每一個都是先左手再右手。沒有哪個鍵是用來「完成」方塊的——母音一落定，音節就完成，練習就換下一個。",
+      "tip_es": "Dos pulsaciones cada una, y todas van mano izquierda y luego mano derecha. No hay ninguna tecla que pulsar para «terminar» el bloque: en cuanto llega la vocal, la sílaba está completa y el ejercicio avanza.",
+      "tip_fr": "Deux frappes chacune, et à chaque fois main gauche puis main droite. Aucune touche à presser pour « finir » le bloc — dès que la voyelle arrive, la syllabe est terminée et l'exercice passe à la suite.",
+      "tip_de": "Je zwei Anschläge, und jeder geht erst linke, dann rechte Hand. Es gibt keine Taste, um den Block „abzuschließen“ – sobald der Vokal landet, ist die Silbe fertig und die Übung geht weiter.",
+      "tip_vi": "Mỗi âm hai lần gõ, và lần nào cũng tay trái rồi tay phải. Không có phím nào để bấm cho “xong” khối — ngay khi nguyên âm rơi vào, âm tiết hoàn tất và bài luyện chuyển tiếp.",
+      "tip_th": "แต่ละพยางค์กดสองครั้ง และทุกครั้งเป็นมือซ้ายแล้วมือขวา ไม่มีปุ่มไหนที่ต้องกดเพื่อ “ปิด” บล็อก — พอสระลงตำแหน่ง พยางค์ก็เสร็จ และแบบฝึกก็ไปตัวถัดไป",
+      "tip_id": "Masing-masing dua ketukan, dan setiap kali tangan kiri lalu tangan kanan. Tidak ada tombol untuk “menyelesaikan” blok — begitu vokalnya masuk, suku katanya selesai dan latihan lanjut."
+    },
+    {
+      "id": 22,
+      "stage": 5,
+      "type": "typing_drill",
+      "mode": "syllable",
+      "title": "Syllables With a 받침",
+      "instruction": "Type each syllable: consonant, vowel, then the final consonant underneath.",
+      "items": [
+        {
+          "ko": "한",
+          "romanization": "han"
+        },
+        {
+          "ko": "국",
+          "romanization": "guk"
+        },
+        {
+          "ko": "말",
+          "romanization": "mal"
+        },
+        {
+          "ko": "밥",
+          "romanization": "bap"
+        },
+        {
+          "ko": "손",
+          "romanization": "son"
+        }
+      ],
+      "target": {
+        "count": 5
+      },
+      "tip": "Three keystrokes each: left, right, left. Watch the block change shape as the third letter drops into place — 하 becomes 한 the instant you press ㄴ.",
+      "tip_ja": "それぞれ三打です：左、右、左。三つ目の文字がはまると、ブロックの形が変わるのを見てください——ㄴ を押した瞬間、하 が 한 になります。",
+      "tip_zh_tw": "每個都是三下：左、右、左。看著第三個字母就位時方塊如何改變形狀——你一按 ㄴ，하 就變成 한。",
+      "tip_es": "Tres pulsaciones cada una: izquierda, derecha, izquierda. Observa cómo el bloque cambia de forma cuando cae la tercera letra: 하 se convierte en 한 en el instante en que pulsas ㄴ.",
+      "tip_fr": "Trois frappes chacune : gauche, droite, gauche. Regardez le bloc changer de forme quand la troisième lettre se met en place — 하 devient 한 à l'instant où vous appuyez sur ㄴ.",
+      "tip_de": "Je drei Anschläge: links, rechts, links. Sieh zu, wie der Block seine Form ändert, sobald der dritte Buchstabe einrastet – 하 wird zu 한 in dem Moment, in dem du ㄴ drückst.",
+      "tip_vi": "Mỗi âm ba lần gõ: trái, phải, trái. Hãy nhìn khối đổi hình khi chữ thứ ba rơi vào chỗ — 하 thành 한 ngay khoảnh khắc bạn nhấn ㄴ.",
+      "tip_th": "แต่ละพยางค์กดสามครั้ง: ซ้าย ขวา ซ้าย ดูบล็อกเปลี่ยนรูปเมื่อตัวอักษรที่สามลงตำแหน่ง — 하 กลายเป็น 한 ทันทีที่คุณกด ㄴ",
+      "tip_id": "Masing-masing tiga ketukan: kiri, kanan, kiri. Perhatikan blok berubah bentuk saat huruf ketiga jatuh ke tempatnya — 하 menjadi 한 begitu kamu menekan ㄴ."
+    },
+    {
+      "id": 23,
+      "stage": 5,
+      "type": "typing_drill",
+      "mode": "syllable",
+      "title": "Combined Vowels",
+      "instruction": "These vowels are two keys, typed one after the other.",
+      "items": [
+        {
+          "ko": "과",
+          "romanization": "gwa"
+        },
+        {
+          "ko": "워",
+          "romanization": "wo"
+        },
+        {
+          "ko": "의",
+          "romanization": "ui"
+        },
+        {
+          "ko": "왜",
+          "romanization": "wae"
+        },
+        {
+          "ko": "쥐",
+          "romanization": "jwi"
+        }
+      ],
+      "target": {
+        "count": 5
+      },
+      "tip": "ㅘ has no key of its own — you type ㅗ then ㅏ and the two merge. Same idea for ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) and ㅟ (ㅜ + ㅣ). Only ㅐ ㅔ ㅒ ㅖ have their own keys.",
+      "tip_ja": "ㅘ には専用のキーがありません——ㅗ、次に ㅏ と打つと二つが合わさります。ㅝ（ㅜ + ㅓ）、ㅢ（ㅡ + ㅣ）、ㅙ（ㅗ + ㅐ）、ㅟ（ㅜ + ㅣ）も同じ考え方です。専用キーがあるのは ㅐ ㅔ ㅒ ㅖ だけです。",
+      "tip_zh_tw": "ㅘ 沒有自己的鍵——你打 ㅗ 再打 ㅏ，兩個就合併起來。ㅝ（ㅜ + ㅓ）、ㅢ（ㅡ + ㅣ）、ㅙ（ㅗ + ㅐ）和 ㅟ（ㅜ + ㅣ）也是同樣的道理。只有 ㅐ ㅔ ㅒ ㅖ 有自己的鍵。",
+      "tip_es": "ㅘ no tiene tecla propia: escribes ㅗ y luego ㅏ y las dos se fusionan. La misma idea vale para ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) y ㅟ (ㅜ + ㅣ). Solo ㅐ ㅔ ㅒ ㅖ tienen tecla propia.",
+      "tip_fr": "ㅘ n'a pas de touche à lui — vous tapez ㅗ puis ㅏ et les deux fusionnent. Même principe pour ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) et ㅟ (ㅜ + ㅣ). Seuls ㅐ ㅔ ㅒ ㅖ ont leur propre touche.",
+      "tip_de": "ㅘ hat keine eigene Taste – du tippst ㅗ, dann ㅏ, und die beiden verschmelzen. Genauso bei ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) und ㅟ (ㅜ + ㅣ). Nur ㅐ ㅔ ㅒ ㅖ haben eine eigene Taste.",
+      "tip_vi": "ㅘ không có phím riêng — bạn gõ ㅗ rồi ㅏ và hai chữ hòa vào nhau. Tương tự với ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) và ㅟ (ㅜ + ㅣ). Chỉ ㅐ ㅔ ㅒ ㅖ mới có phím riêng.",
+      "tip_th": "ㅘ ไม่มีปุ่มของตัวเอง — คุณพิมพ์ ㅗ แล้ว ㅏ สองตัวก็รวมกัน หลักการเดียวกันกับ ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) และ ㅟ (ㅜ + ㅣ) มีแค่ ㅐ ㅔ ㅒ ㅖ ที่มีปุ่มของตัวเอง",
+      "tip_id": "ㅘ tidak punya tombol sendiri — kamu ketik ㅗ lalu ㅏ dan keduanya menyatu. Prinsip yang sama berlaku untuk ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ), dan ㅟ (ㅜ + ㅣ). Hanya ㅐ ㅔ ㅒ ㅖ yang punya tombol sendiri."
+    },
+    {
+      "id": 24,
+      "stage": 6,
+      "type": "typing_drill",
+      "mode": "word",
+      "title": "One-Syllable Words",
+      "instruction": "Type the word, then press Space to send it.",
+      "items": [
+        {
+          "ko": "물",
+          "meaning": "water",
+          "romanization": "mul",
+          "meaning_ja": "水",
+          "meaning_zh_tw": "水",
+          "meaning_es": "agua",
+          "meaning_fr": "eau",
+          "meaning_de": "Wasser",
+          "meaning_vi": "nước",
+          "meaning_th": "น้ำ",
+          "meaning_id": "air"
+        },
+        {
+          "ko": "밥",
+          "meaning": "rice, a meal",
+          "romanization": "bap",
+          "meaning_ja": "ご飯／食事",
+          "meaning_zh_tw": "飯 / 餐",
+          "meaning_es": "arroz / comida",
+          "meaning_fr": "riz / repas",
+          "meaning_de": "Reis / Mahlzeit",
+          "meaning_vi": "cơm / bữa ăn",
+          "meaning_th": "ข้าว / อาหาร",
+          "meaning_id": "nasi / makanan"
+        },
+        {
+          "ko": "집",
+          "meaning": "house",
+          "romanization": "jip",
+          "meaning_ja": "家",
+          "meaning_zh_tw": "房子／家",
+          "meaning_es": "casa",
+          "meaning_fr": "maison",
+          "meaning_de": "Haus",
+          "meaning_vi": "nhà",
+          "meaning_th": "บ้าน",
+          "meaning_id": "rumah"
+        },
+        {
+          "ko": "코",
+          "meaning": "nose",
+          "romanization": "ko",
+          "meaning_ja": "鼻",
+          "meaning_zh_tw": "鼻子",
+          "meaning_es": "nariz",
+          "meaning_fr": "nez",
+          "meaning_de": "Nase",
+          "meaning_vi": "mũi",
+          "meaning_th": "จมูก",
+          "meaning_id": "hidung"
+        },
+        {
+          "ko": "손",
+          "meaning": "hand",
+          "romanization": "son",
+          "meaning_ja": "手",
+          "meaning_zh_tw": "手",
+          "meaning_es": "mano",
+          "meaning_fr": "main",
+          "meaning_de": "Hand",
+          "meaning_vi": "bàn tay",
+          "meaning_th": "มือ",
+          "meaning_id": "tangan"
+        },
+        {
+          "ko": "눈",
+          "meaning": "eye, snow",
+          "romanization": "nun",
+          "meaning_ja": "目 / 雪",
+          "meaning_zh_tw": "眼睛 / 雪",
+          "meaning_es": "ojo / nieve",
+          "meaning_fr": "œil / neige",
+          "meaning_de": "Auge / Schnee",
+          "meaning_vi": "mắt / tuyết",
+          "meaning_th": "ตา / หิมะ",
+          "meaning_id": "mata / salju"
+        },
+        {
+          "ko": "돈",
+          "meaning": "money",
+          "romanization": "don",
+          "meaning_ja": "お金",
+          "meaning_zh_tw": "錢",
+          "meaning_es": "dinero",
+          "meaning_fr": "argent",
+          "meaning_de": "Geld",
+          "meaning_vi": "tiền",
+          "meaning_th": "เงิน",
+          "meaning_id": "uang"
+        },
+        {
+          "ko": "책",
+          "meaning": "book",
+          "romanization": "chaek",
+          "meaning_ja": "本",
+          "meaning_zh_tw": "書",
+          "meaning_es": "libro",
+          "meaning_fr": "livre",
+          "meaning_de": "Buch",
+          "meaning_vi": "sách",
+          "meaning_th": "หนังสือ",
+          "meaning_id": "buku"
+        },
+        {
+          "ko": "발",
+          "meaning": "foot",
+          "romanization": "bal",
+          "meaning_ja": "足",
+          "meaning_zh_tw": "腳",
+          "meaning_es": "pie",
+          "meaning_fr": "pied",
+          "meaning_de": "Fuß",
+          "meaning_vi": "bàn chân",
+          "meaning_th": "เท้า",
+          "meaning_id": "telapak kaki"
+        }
+      ],
+      "target": {
+        "count": 8
+      },
+      "tip": "Word mode is different from the syllable drill: nothing advances until you press Space. That is your submit key. If you mistype, Backspace peels off one letter at a time so you can fix it before you send.",
+      "tip_ja": "単語モードは音節ドリルとは違います：スペースを押すまで何も進みません。それが送信キーです。打ち間違えたら、Backspace が一文字ずつはがすので、送信する前に直せます。",
+      "tip_zh_tw": "單字模式和音節練習不同：在你按空白鍵之前，什麼都不會前進。空白鍵就是你的送出鍵。如果打錯了，Backspace 會一次剝掉一個字母，讓你在送出前修正。",
+      "tip_es": "El modo palabra es distinto del ejercicio de sílabas: nada avanza hasta que pulsas Espacio. Esa es tu tecla de envío. Si te equivocas, Retroceso quita una letra cada vez para que puedas corregir antes de enviar.",
+      "tip_fr": "Le mode mot diffère de l'exercice de syllabes : rien n'avance tant que vous n'appuyez pas sur Espace. C'est votre touche de validation. En cas d'erreur, Retour arrière retire une lettre à la fois pour corriger avant d'envoyer.",
+      "tip_de": "Der Wortmodus unterscheidet sich von der Silbenübung: Es geht nichts weiter, bis du die Leertaste drückst. Das ist deine Sendetaste. Bei einem Tippfehler schält die Rücktaste Buchstabe für Buchstabe ab, sodass du vor dem Absenden korrigieren kannst.",
+      "tip_vi": "Chế độ từ khác với bài luyện âm tiết: không có gì tiến tới cho đến khi bạn nhấn Phím cách. Đó là phím gửi của bạn. Nếu gõ sai, Backspace bóc từng chữ cái một để bạn sửa trước khi gửi.",
+      "tip_th": "โหมดคำต่างจากแบบฝึกพยางค์: จะไม่มีอะไรเดินหน้าจนกว่าคุณจะกด Space นั่นคือปุ่มส่งของคุณ ถ้าพิมพ์ผิด Backspace จะลอกออกทีละตัวอักษร ให้คุณแก้ได้ก่อนส่ง",
+      "tip_id": "Mode kata berbeda dari latihan suku kata: tidak ada yang maju sampai kamu menekan Spasi. Itulah tombol kirimmu. Kalau salah ketik, Backspace mengupas satu huruf setiap kali agar kamu bisa membetulkannya sebelum mengirim."
+    },
+    {
+      "id": 25,
+      "stage": 6,
+      "type": "typing_drill",
+      "mode": "word",
+      "title": "Two-Syllable Words",
+      "instruction": "Type the whole word, then press Space.",
+      "items": [
+        {
+          "ko": "한국",
+          "meaning": "Korea",
+          "romanization": "hanguk",
+          "meaning_ja": "韓国",
+          "meaning_zh_tw": "韓國",
+          "meaning_es": "Corea",
+          "meaning_fr": "Corée",
+          "meaning_de": "Korea",
+          "meaning_vi": "Hàn Quốc",
+          "meaning_th": "เกาหลี",
+          "meaning_id": "Korea"
+        },
+        {
+          "ko": "사랑",
+          "meaning": "love",
+          "romanization": "sarang",
+          "meaning_ja": "愛",
+          "meaning_zh_tw": "愛",
+          "meaning_es": "amor",
+          "meaning_fr": "amour",
+          "meaning_de": "Liebe",
+          "meaning_vi": "tình yêu",
+          "meaning_th": "ความรัก",
+          "meaning_id": "cinta"
+        },
+        {
+          "ko": "친구",
+          "meaning": "friend",
+          "romanization": "chingu",
+          "meaning_ja": "友達",
+          "meaning_zh_tw": "朋友",
+          "meaning_es": "amigo/a",
+          "meaning_fr": "ami(e)",
+          "meaning_de": "Freund/in",
+          "meaning_vi": "bạn bè",
+          "meaning_th": "เพื่อน",
+          "meaning_id": "teman"
+        },
+        {
+          "ko": "김치",
+          "meaning": "kimchi",
+          "romanization": "gimchi",
+          "meaning_ja": "キムチ",
+          "meaning_zh_tw": "泡菜",
+          "meaning_es": "kimchi",
+          "meaning_fr": "kimchi",
+          "meaning_de": "Kimchi",
+          "meaning_vi": "kimchi",
+          "meaning_th": "กิมจิ",
+          "meaning_id": "kimchi"
+        },
+        {
+          "ko": "가족",
+          "meaning": "family",
+          "romanization": "gajok",
+          "meaning_ja": "家族",
+          "meaning_zh_tw": "家庭",
+          "meaning_es": "familia",
+          "meaning_fr": "famille",
+          "meaning_de": "Familie",
+          "meaning_vi": "gia đình",
+          "meaning_th": "ครอบครัว",
+          "meaning_id": "keluarga"
+        },
+        {
+          "ko": "사람",
+          "meaning": "person",
+          "romanization": "saram",
+          "meaning_ja": "人",
+          "meaning_zh_tw": "人",
+          "meaning_es": "persona",
+          "meaning_fr": "personne",
+          "meaning_de": "Person",
+          "meaning_vi": "người",
+          "meaning_th": "คน",
+          "meaning_id": "orang"
+        },
+        {
+          "ko": "학교",
+          "meaning": "school",
+          "romanization": "hakgyo",
+          "meaning_ja": "学校",
+          "meaning_zh_tw": "學校",
+          "meaning_es": "escuela",
+          "meaning_fr": "école",
+          "meaning_de": "Schule",
+          "meaning_vi": "trường học",
+          "meaning_th": "โรงเรียน",
+          "meaning_id": "sekolah"
+        },
+        {
+          "ko": "커피",
+          "meaning": "coffee",
+          "romanization": "keopi",
+          "meaning_ja": "コーヒー",
+          "meaning_zh_tw": "咖啡",
+          "meaning_es": "café",
+          "meaning_fr": "café",
+          "meaning_de": "Kaffee",
+          "meaning_vi": "cà phê",
+          "meaning_th": "กาแฟ",
+          "meaning_id": "kopi"
+        }
+      ],
+      "target": {
+        "count": 8
+      },
+      "tip": "Keep typing straight through the word — do not pause between the syllables. 한국 is six keystrokes in one run: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ. The blocks divide themselves.",
+      "tip_ja": "単語を最後まで一気に打ちましょう——音節の間で止まらないでください。한국 は一続きで六打です：ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ。ブロックは自動的に分かれます。",
+      "tip_zh_tw": "一路把整個單字打完——不要在音節之間停頓。한국 是一氣呵成的六下：ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ。方塊會自己分開。",
+      "tip_es": "Sigue escribiendo la palabra de un tirón, sin pausar entre las sílabas. 한국 son seis pulsaciones seguidas: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ. Los bloques se dividen solos.",
+      "tip_fr": "Tapez le mot d'une traite — ne marquez pas de pause entre les syllabes. 한국 fait six frappes d'affilée : ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ. Les blocs se séparent tout seuls.",
+      "tip_de": "Tipp das Wort in einem Zug durch – mach keine Pause zwischen den Silben. 한국 sind sechs Anschläge am Stück: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ. Die Blöcke teilen sich von selbst.",
+      "tip_vi": "Cứ gõ một mạch hết từ — đừng ngừng giữa các âm tiết. 한국 là sáu lần gõ liền một hơi: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ. Các khối tự tách ra.",
+      "tip_th": "พิมพ์รวดเดียวจนจบคำ — อย่าหยุดระหว่างพยางค์ 한국 คือหกครั้งรวดเดียว: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ บล็อกจะแบ่งตัวเอง",
+      "tip_id": "Ketik terus sampai kata selesai — jangan berhenti di antara suku kata. 한국 adalah enam ketukan dalam satu tarikan: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ. Blok-bloknya membagi diri sendiri."
+    },
+    {
+      "id": 26,
+      "stage": 6,
+      "type": "typing_drill",
+      "mode": "word",
+      "title": "Everyday Phrases",
+      "instruction": "Type the whole phrase, then press Space.",
+      "items": [
+        {
+          "ko": "안녕하세요",
+          "meaning": "hello",
+          "romanization": "annyeonghaseyo",
+          "meaning_ja": "こんにちは",
+          "meaning_zh_tw": "你好",
+          "meaning_es": "hola",
+          "meaning_fr": "bonjour",
+          "meaning_de": "Hallo",
+          "meaning_vi": "xin chào",
+          "meaning_th": "สวัสดี",
+          "meaning_id": "halo"
+        },
+        {
+          "ko": "감사합니다",
+          "meaning": "thank you",
+          "romanization": "gamsahamnida",
+          "meaning_ja": "ありがとうございます",
+          "meaning_zh_tw": "謝謝",
+          "meaning_es": "gracias",
+          "meaning_fr": "merci",
+          "meaning_de": "Danke",
+          "meaning_vi": "cảm ơn",
+          "meaning_th": "ขอบคุณ",
+          "meaning_id": "terima kasih"
+        },
+        {
+          "ko": "괜찮아요",
+          "meaning": "it's okay",
+          "romanization": "gwaenchanayo",
+          "meaning_ja": "大丈夫です",
+          "meaning_zh_tw": "沒關係",
+          "meaning_es": "está bien",
+          "meaning_fr": "c'est bon",
+          "meaning_de": "alles in Ordnung",
+          "meaning_vi": "không sao",
+          "meaning_th": "ไม่เป็นไร",
+          "meaning_id": "tidak apa-apa"
+        },
+        {
+          "ko": "반갑습니다",
+          "meaning": "nice to meet you",
+          "romanization": "bangapseumnida",
+          "meaning_ja": "はじめまして",
+          "meaning_zh_tw": "很高興認識你",
+          "meaning_es": "mucho gusto",
+          "meaning_fr": "enchanté(e)",
+          "meaning_de": "freut mich",
+          "meaning_vi": "rất vui được gặp",
+          "meaning_th": "ยินดีที่ได้รู้จัก",
+          "meaning_id": "senang bertemu"
+        }
+      ],
+      "target": {
+        "count": 4
+      },
+      "tip": "These are the polite phrases you will type most often in Korean, so they are worth turning into muscle memory. Take them one syllable at a time and let the blocks build; there is no prize for rushing.",
+      "tip_ja": "これらは韓国語で最もよく打つ丁寧な表現なので、体で覚える価値があります。一音節ずつ進めてブロックを組み立てさせましょう。急いでも何ももらえません。",
+      "tip_zh_tw": "這些是你在韓語中最常打的禮貌用語，值得練成肌肉記憶。一次一個音節，讓方塊自己組起來；趕時間並沒有獎品。",
+      "tip_es": "Estas son las frases corteses que más escribirás en coreano, así que vale la pena convertirlas en memoria muscular. Ve sílaba a sílaba y deja que los bloques se formen; no hay premio por ir con prisas.",
+      "tip_fr": "Ce sont les formules de politesse que vous taperez le plus souvent en coréen, elles valent donc la peine d'être ancrées dans la mémoire musculaire. Allez-y syllabe par syllabe et laissez les blocs se construire ; se précipiter ne rapporte aucun prix.",
+      "tip_de": "Das sind die höflichen Wendungen, die du im Koreanischen am häufigsten tippst, es lohnt sich also, sie ins Muskelgedächtnis zu bringen. Nimm sie Silbe für Silbe und lass die Blöcke entstehen; fürs Hetzen gibt es keinen Preis.",
+      "tip_vi": "Đây là những câu lịch sự bạn sẽ gõ nhiều nhất trong tiếng Hàn, nên rất đáng để biến thành phản xạ cơ bắp. Hãy đi từng âm tiết một và để các khối tự dựng; vội vàng chẳng có phần thưởng nào.",
+      "tip_th": "เหล่านี้คือวลีสุภาพที่คุณจะพิมพ์บ่อยที่สุดในภาษาเกาหลี จึงคุ้มที่จะฝึกให้เป็นความจำของกล้ามเนื้อ ค่อย ๆ ทีละพยางค์แล้วปล่อยให้บล็อกก่อตัว รีบไปก็ไม่มีรางวัล",
+      "tip_id": "Ini adalah frasa sopan yang paling sering kamu ketik dalam bahasa Korea, jadi sepadan untuk dijadikan memori otot. Kerjakan satu suku kata demi satu dan biarkan bloknya terbentuk; tidak ada hadiah untuk yang terburu-buru."
+    },
+    {
+      "id": 27,
+      "stage": 6,
+      "type": "typing_drill",
+      "mode": "word",
+      "title": "60-Second Sprint",
+      "instruction": "Type as many words as you can in 60 seconds. Space sends each one.",
+      "items": [
+        {
+          "ko": "물",
+          "meaning": "water",
+          "romanization": "mul",
+          "meaning_ja": "水",
+          "meaning_zh_tw": "水",
+          "meaning_es": "agua",
+          "meaning_fr": "eau",
+          "meaning_de": "Wasser",
+          "meaning_vi": "nước",
+          "meaning_th": "น้ำ",
+          "meaning_id": "air"
+        },
+        {
+          "ko": "학교",
+          "meaning": "school",
+          "romanization": "hakgyo",
+          "meaning_ja": "学校",
+          "meaning_zh_tw": "學校",
+          "meaning_es": "escuela",
+          "meaning_fr": "école",
+          "meaning_de": "Schule",
+          "meaning_vi": "trường học",
+          "meaning_th": "โรงเรียน",
+          "meaning_id": "sekolah"
+        },
+        {
+          "ko": "밥",
+          "meaning": "rice, a meal",
+          "romanization": "bap",
+          "meaning_ja": "ご飯／食事",
+          "meaning_zh_tw": "飯 / 餐",
+          "meaning_es": "arroz / comida",
+          "meaning_fr": "riz / repas",
+          "meaning_de": "Reis / Mahlzeit",
+          "meaning_vi": "cơm / bữa ăn",
+          "meaning_th": "ข้าว / อาหาร",
+          "meaning_id": "nasi / makanan"
+        },
+        {
+          "ko": "사랑",
+          "meaning": "love",
+          "romanization": "sarang",
+          "meaning_ja": "愛",
+          "meaning_zh_tw": "愛",
+          "meaning_es": "amor",
+          "meaning_fr": "amour",
+          "meaning_de": "Liebe",
+          "meaning_vi": "tình yêu",
+          "meaning_th": "ความรัก",
+          "meaning_id": "cinta"
+        },
+        {
+          "ko": "집",
+          "meaning": "house",
+          "romanization": "jip",
+          "meaning_ja": "家",
+          "meaning_zh_tw": "房子／家",
+          "meaning_es": "casa",
+          "meaning_fr": "maison",
+          "meaning_de": "Haus",
+          "meaning_vi": "nhà",
+          "meaning_th": "บ้าน",
+          "meaning_id": "rumah"
+        },
+        {
+          "ko": "친구",
+          "meaning": "friend",
+          "romanization": "chingu",
+          "meaning_ja": "友達",
+          "meaning_zh_tw": "朋友",
+          "meaning_es": "amigo/a",
+          "meaning_fr": "ami(e)",
+          "meaning_de": "Freund/in",
+          "meaning_vi": "bạn bè",
+          "meaning_th": "เพื่อน",
+          "meaning_id": "teman"
+        },
+        {
+          "ko": "코",
+          "meaning": "nose",
+          "romanization": "ko",
+          "meaning_ja": "鼻",
+          "meaning_zh_tw": "鼻子",
+          "meaning_es": "nariz",
+          "meaning_fr": "nez",
+          "meaning_de": "Nase",
+          "meaning_vi": "mũi",
+          "meaning_th": "จมูก",
+          "meaning_id": "hidung"
+        },
+        {
+          "ko": "김치",
+          "meaning": "kimchi",
+          "romanization": "gimchi",
+          "meaning_ja": "キムチ",
+          "meaning_zh_tw": "泡菜",
+          "meaning_es": "kimchi",
+          "meaning_fr": "kimchi",
+          "meaning_de": "Kimchi",
+          "meaning_vi": "kimchi",
+          "meaning_th": "กิมจิ",
+          "meaning_id": "kimchi"
+        },
+        {
+          "ko": "한국",
+          "meaning": "Korea",
+          "romanization": "hanguk",
+          "meaning_ja": "韓国",
+          "meaning_zh_tw": "韓國",
+          "meaning_es": "Corea",
+          "meaning_fr": "Corée",
+          "meaning_de": "Korea",
+          "meaning_vi": "Hàn Quốc",
+          "meaning_th": "เกาหลี",
+          "meaning_id": "Korea"
+        },
+        {
+          "ko": "손",
+          "meaning": "hand",
+          "romanization": "son",
+          "meaning_ja": "手",
+          "meaning_zh_tw": "手",
+          "meaning_es": "mano",
+          "meaning_fr": "main",
+          "meaning_de": "Hand",
+          "meaning_vi": "bàn tay",
+          "meaning_th": "มือ",
+          "meaning_id": "tangan"
+        },
+        {
+          "ko": "가족",
+          "meaning": "family",
+          "romanization": "gajok",
+          "meaning_ja": "家族",
+          "meaning_zh_tw": "家庭",
+          "meaning_es": "familia",
+          "meaning_fr": "famille",
+          "meaning_de": "Familie",
+          "meaning_vi": "gia đình",
+          "meaning_th": "ครอบครัว",
+          "meaning_id": "keluarga"
+        },
+        {
+          "ko": "바다",
+          "meaning": "sea",
+          "romanization": "bada",
+          "meaning_ja": "海",
+          "meaning_zh_tw": "海洋",
+          "meaning_es": "mar / océano",
+          "meaning_fr": "mer / océan",
+          "meaning_de": "Meer / Ozean",
+          "meaning_vi": "biển / đại dương",
+          "meaning_th": "ทะเล / มหาสมุทร",
+          "meaning_id": "laut / samudra"
+        },
+        {
+          "ko": "돈",
+          "meaning": "money",
+          "romanization": "don",
+          "meaning_ja": "お金",
+          "meaning_zh_tw": "錢",
+          "meaning_es": "dinero",
+          "meaning_fr": "argent",
+          "meaning_de": "Geld",
+          "meaning_vi": "tiền",
+          "meaning_th": "เงิน",
+          "meaning_id": "uang"
+        },
+        {
+          "ko": "오늘",
+          "meaning": "today",
+          "romanization": "oneul",
+          "meaning_ja": "今日",
+          "meaning_zh_tw": "今天",
+          "meaning_es": "hoy",
+          "meaning_fr": "aujourd'hui",
+          "meaning_de": "heute",
+          "meaning_vi": "hôm nay",
+          "meaning_th": "วันนี้",
+          "meaning_id": "hari ini"
+        },
+        {
+          "ko": "사람",
+          "meaning": "person",
+          "romanization": "saram",
+          "meaning_ja": "人",
+          "meaning_zh_tw": "人",
+          "meaning_es": "persona",
+          "meaning_fr": "personne",
+          "meaning_de": "Person",
+          "meaning_vi": "người",
+          "meaning_th": "คน",
+          "meaning_id": "orang"
+        },
+        {
+          "ko": "책",
+          "meaning": "book",
+          "romanization": "chaek",
+          "meaning_ja": "本",
+          "meaning_zh_tw": "書",
+          "meaning_es": "libro",
+          "meaning_fr": "livre",
+          "meaning_de": "Buch",
+          "meaning_vi": "sách",
+          "meaning_th": "หนังสือ",
+          "meaning_id": "buku"
+        },
+        {
+          "ko": "커피",
+          "meaning": "coffee",
+          "romanization": "keopi",
+          "meaning_ja": "コーヒー",
+          "meaning_zh_tw": "咖啡",
+          "meaning_es": "café",
+          "meaning_fr": "café",
+          "meaning_de": "Kaffee",
+          "meaning_vi": "cà phê",
+          "meaning_th": "กาแฟ",
+          "meaning_id": "kopi"
+        },
+        {
+          "ko": "하늘",
+          "meaning": "sky",
+          "romanization": "haneul",
+          "meaning_ja": "空",
+          "meaning_zh_tw": "天空",
+          "meaning_es": "cielo",
+          "meaning_fr": "ciel",
+          "meaning_de": "Himmel",
+          "meaning_vi": "bầu trời",
+          "meaning_th": "ท้องฟ้า",
+          "meaning_id": "langit"
+        },
+        {
+          "ko": "눈",
+          "meaning": "eye, snow",
+          "romanization": "nun",
+          "meaning_ja": "目 / 雪",
+          "meaning_zh_tw": "眼睛 / 雪",
+          "meaning_es": "ojo / nieve",
+          "meaning_fr": "œil / neige",
+          "meaning_de": "Auge / Schnee",
+          "meaning_vi": "mắt / tuyết",
+          "meaning_th": "ตา / หิมะ",
+          "meaning_id": "mata / salju"
+        },
+        {
+          "ko": "가방",
+          "meaning": "bag",
+          "romanization": "gabang",
+          "meaning_ja": "バッグ",
+          "meaning_zh_tw": "包／背包",
+          "meaning_es": "bolso / mochila",
+          "meaning_fr": "sac / sac à dos",
+          "meaning_de": "Tasche / Rucksack",
+          "meaning_vi": "túi / ba lô",
+          "meaning_th": "กระเป๋า",
+          "meaning_id": "tas / ransel"
+        },
+        {
+          "ko": "여자",
+          "meaning": "woman",
+          "romanization": "yeoja",
+          "meaning_ja": "女性",
+          "meaning_zh_tw": "女性／女孩",
+          "meaning_es": "mujer",
+          "meaning_fr": "femme",
+          "meaning_de": "Frau",
+          "meaning_vi": "phụ nữ",
+          "meaning_th": "ผู้หญิง",
+          "meaning_id": "wanita"
+        },
+        {
+          "ko": "남자",
+          "meaning": "man",
+          "romanization": "namja",
+          "meaning_ja": "男性",
+          "meaning_zh_tw": "男性／男孩",
+          "meaning_es": "hombre",
+          "meaning_fr": "homme",
+          "meaning_de": "Mann",
+          "meaning_vi": "đàn ông",
+          "meaning_th": "ผู้ชาย",
+          "meaning_id": "pria"
+        },
+        {
+          "ko": "시장",
+          "meaning": "market",
+          "romanization": "sijang",
+          "meaning_ja": "市場",
+          "meaning_zh_tw": "市場",
+          "meaning_es": "mercado",
+          "meaning_fr": "marché",
+          "meaning_de": "Markt",
+          "meaning_vi": "chợ",
+          "meaning_th": "ตลาด",
+          "meaning_id": "pasar"
+        },
+        {
+          "ko": "발",
+          "meaning": "foot",
+          "romanization": "bal",
+          "meaning_ja": "足",
+          "meaning_zh_tw": "腳",
+          "meaning_es": "pie",
+          "meaning_fr": "pied",
+          "meaning_de": "Fuß",
+          "meaning_vi": "bàn chân",
+          "meaning_th": "เท้า",
+          "meaning_id": "telapak kaki"
+        },
+        {
+          "ko": "엄마",
+          "meaning": "mom",
+          "romanization": "eomma",
+          "meaning_ja": "ママ",
+          "meaning_zh_tw": "媽媽",
+          "meaning_es": "mamá",
+          "meaning_fr": "maman",
+          "meaning_de": "Mama",
+          "meaning_vi": "mẹ",
+          "meaning_th": "แม่",
+          "meaning_id": "mama"
+        },
+        {
+          "ko": "아빠",
+          "meaning": "dad",
+          "romanization": "appa",
+          "meaning_ja": "パパ",
+          "meaning_zh_tw": "爸爸",
+          "meaning_es": "papá",
+          "meaning_fr": "papa",
+          "meaning_de": "Papa",
+          "meaning_vi": "bố",
+          "meaning_th": "พ่อ",
+          "meaning_id": "papa"
+        },
+        {
+          "ko": "학생",
+          "meaning": "student",
+          "romanization": "haksaeng",
+          "meaning_ja": "学生",
+          "meaning_zh_tw": "學生",
+          "meaning_es": "estudiante",
+          "meaning_fr": "étudiant / élève",
+          "meaning_de": "Schüler/in",
+          "meaning_vi": "học sinh",
+          "meaning_th": "นักเรียน",
+          "meaning_id": "pelajar"
+        },
+        {
+          "ko": "머리",
+          "meaning": "head",
+          "romanization": "meori",
+          "meaning_ja": "頭・髪",
+          "meaning_zh_tw": "頭 / 頭髮",
+          "meaning_es": "cabeza / cabello",
+          "meaning_fr": "tête / cheveux",
+          "meaning_de": "Kopf / Haar",
+          "meaning_vi": "đầu / tóc",
+          "meaning_th": "หัว / ผม",
+          "meaning_id": "kepala / rambut"
+        },
+        {
+          "ko": "여행",
+          "meaning": "travel",
+          "romanization": "yeohaeng",
+          "meaning_ja": "旅行",
+          "meaning_zh_tw": "旅行 / 旅遊",
+          "meaning_es": "viaje",
+          "meaning_fr": "voyage",
+          "meaning_de": "Reise",
+          "meaning_vi": "du lịch",
+          "meaning_th": "การเดินทาง",
+          "meaning_id": "perjalanan"
+        },
+        {
+          "ko": "비",
+          "meaning": "rain",
+          "romanization": "bi",
+          "meaning_ja": "雨",
+          "meaning_zh_tw": "雨",
+          "meaning_es": "lluvia",
+          "meaning_fr": "pluie",
+          "meaning_de": "Regen",
+          "meaning_vi": "mưa",
+          "meaning_th": "ฝน",
+          "meaning_id": "hujan"
+        },
+        {
+          "ko": "얼굴",
+          "meaning": "face",
+          "romanization": "eolgul",
+          "meaning_ja": "顔",
+          "meaning_zh_tw": "臉",
+          "meaning_es": "cara",
+          "meaning_fr": "visage",
+          "meaning_de": "Gesicht",
+          "meaning_vi": "khuôn mặt",
+          "meaning_th": "ใบหน้า",
+          "meaning_id": "wajah"
+        },
+        {
+          "ko": "다리",
+          "meaning": "leg",
+          "romanization": "dari",
+          "meaning_ja": "脚",
+          "meaning_zh_tw": "腿",
+          "meaning_es": "pierna",
+          "meaning_fr": "jambe",
+          "meaning_de": "Bein",
+          "meaning_vi": "chân",
+          "meaning_th": "ขา",
+          "meaning_id": "kaki"
+        },
+        {
+          "ko": "지도",
+          "meaning": "map",
+          "romanization": "jido",
+          "meaning_ja": "地図",
+          "meaning_zh_tw": "地圖",
+          "meaning_es": "mapa",
+          "meaning_fr": "carte / plan",
+          "meaning_de": "Landkarte",
+          "meaning_vi": "bản đồ",
+          "meaning_th": "แผนที่",
+          "meaning_id": "peta"
+        },
+        {
+          "ko": "바지",
+          "meaning": "pants",
+          "romanization": "baji",
+          "meaning_ja": "ズボン",
+          "meaning_zh_tw": "褲子",
+          "meaning_es": "pantalones",
+          "meaning_fr": "pantalon",
+          "meaning_de": "Hose",
+          "meaning_vi": "quần dài",
+          "meaning_th": "กางเกง",
+          "meaning_id": "celana panjang"
+        },
+        {
+          "ko": "봄",
+          "meaning": "spring",
+          "romanization": "bom",
+          "meaning_ja": "春",
+          "meaning_zh_tw": "春天",
+          "meaning_es": "primavera",
+          "meaning_fr": "printemps",
+          "meaning_de": "Frühling",
+          "meaning_vi": "mùa xuân",
+          "meaning_th": "ฤดูใบไม้ผลิ",
+          "meaning_id": "musim semi"
+        },
+        {
+          "ko": "여름",
+          "meaning": "summer",
+          "romanization": "yeoreum",
+          "meaning_ja": "夏",
+          "meaning_zh_tw": "夏天",
+          "meaning_es": "verano",
+          "meaning_fr": "été",
+          "meaning_de": "Sommer",
+          "meaning_vi": "mùa hè",
+          "meaning_th": "ฤดูร้อน",
+          "meaning_id": "musim panas"
+        },
+        {
+          "ko": "겨울",
+          "meaning": "winter",
+          "romanization": "gyeoul",
+          "meaning_ja": "冬",
+          "meaning_zh_tw": "冬天",
+          "meaning_es": "invierno",
+          "meaning_fr": "hiver",
+          "meaning_de": "Winter",
+          "meaning_vi": "mùa đông",
+          "meaning_th": "ฤดูหนาว",
+          "meaning_id": "musim dingin"
+        },
+        {
+          "ko": "회사",
+          "meaning": "company",
+          "romanization": "hoesa",
+          "meaning_ja": "会社",
+          "meaning_zh_tw": "公司",
+          "meaning_es": "empresa",
+          "meaning_fr": "entreprise",
+          "meaning_de": "Firma",
+          "meaning_vi": "công ty",
+          "meaning_th": "บริษัท",
+          "meaning_id": "perusahaan"
+        },
+        {
+          "ko": "지금",
+          "meaning": "now",
+          "romanization": "jigeum",
+          "meaning_ja": "今",
+          "meaning_zh_tw": "現在",
+          "meaning_es": "ahora",
+          "meaning_fr": "maintenant",
+          "meaning_de": "jetzt",
+          "meaning_vi": "bây giờ",
+          "meaning_th": "ตอนนี้",
+          "meaning_id": "sekarang"
+        },
+        {
+          "ko": "내일",
+          "meaning": "tomorrow",
+          "romanization": "naeil",
+          "meaning_ja": "明日",
+          "meaning_zh_tw": "明天",
+          "meaning_es": "mañana",
+          "meaning_fr": "demain",
+          "meaning_de": "morgen",
+          "meaning_vi": "ngày mai",
+          "meaning_th": "พรุ่งนี้",
+          "meaning_id": "besok"
+        },
+        {
+          "ko": "어제",
+          "meaning": "yesterday",
+          "romanization": "eoje",
+          "meaning_ja": "昨日",
+          "meaning_zh_tw": "昨天",
+          "meaning_es": "ayer",
+          "meaning_fr": "hier",
+          "meaning_de": "gestern",
+          "meaning_vi": "hôm qua",
+          "meaning_th": "เมื่อวาน",
+          "meaning_id": "kemarin"
+        },
+        {
+          "ko": "길",
+          "meaning": "road, way",
+          "romanization": "gil",
+          "meaning_ja": "道",
+          "meaning_zh_tw": "路 / 道路",
+          "meaning_es": "camino / calle",
+          "meaning_fr": "chemin / rue",
+          "meaning_de": "Weg / Straße",
+          "meaning_vi": "đường",
+          "meaning_th": "ถนน / ทาง",
+          "meaning_id": "jalan"
+        }
+      ],
+      "target": {
+        "seconds": 60
+      },
+      "tip": "Korean typing speed is counted in 타/분 — keystrokes per minute, not words per minute. An average Korean adult types somewhere around 300–400 타/분. If you are over 200 as a beginner, you are doing well; Korean professionals run past 600.",
+      "tip_ja": "韓国語のタイピング速度は「타/분」——1分あたりの打鍵数（打/分）で数えます。単語数ではありません。平均的な韓国の成人はおよそ 300〜400 타/분 で打ちます。初心者で 200 を超えていれば上出来です。韓国のプロは 600 を超えます。",
+      "tip_zh_tw": "韓語打字速度是用「타/분」——每分鐘按鍵數（打/分鐘）來計算，而不是每分鐘字數。一般韓國成年人大約打 300～400 타/분。身為初學者若超過 200，就已經很不錯了；韓國的專業人士則會超過 600。",
+      "tip_es": "La velocidad al escribir en coreano se mide en 타/분: pulsaciones por minuto (no palabras por minuto). Un adulto coreano medio escribe alrededor de 300–400 타/분. Si como principiante superas las 200, lo estás haciendo bien; los profesionales coreanos pasan de 600.",
+      "tip_fr": "La vitesse de frappe en coréen se compte en 타/분 — frappes par minute, et non mots par minute. Un adulte coréen moyen tape autour de 300 à 400 타/분. Si, débutant, vous dépassez 200, c'est déjà bien ; les professionnels coréens franchissent les 600.",
+      "tip_de": "Die koreanische Tippgeschwindigkeit wird in 타/분 gemessen – Anschläge pro Minute, nicht Wörter pro Minute. Ein koreanischer Durchschnittserwachsener tippt etwa 300–400 타/분. Wenn du als Anfänger über 200 liegst, machst du das gut; koreanische Profis kommen über 600.",
+      "tip_vi": "Tốc độ gõ tiếng Hàn được tính bằng 타/분 — số lần gõ phím mỗi phút, không phải số từ mỗi phút. Một người Hàn trưởng thành trung bình gõ khoảng 300–400 타/분. Nếu là người mới mà bạn vượt 200, thế là tốt rồi; dân chuyên nghiệp Hàn Quốc vượt cả 600.",
+      "tip_th": "ความเร็วในการพิมพ์ภาษาเกาหลีนับเป็น 타/분 — จำนวนครั้งที่กดปุ่มต่อนาที ไม่ใช่จำนวนคำต่อนาที ผู้ใหญ่ชาวเกาหลีโดยเฉลี่ยพิมพ์ได้ราว 300–400 타/분 ถ้าคุณเป็นมือใหม่แล้วเกิน 200 ก็ถือว่าเก่งแล้ว ส่วนมืออาชีพชาวเกาหลีทำได้เกิน 600",
+      "tip_id": "Kecepatan mengetik bahasa Korea dihitung dalam 타/분 — ketukan per menit, bukan kata per menit. Rata-rata orang dewasa Korea mengetik sekitar 300–400 타/분. Kalau sebagai pemula kamu melewati 200, itu sudah bagus; para profesional Korea menembus 600."
+    },
+    {
+      "id": 28,
+      "stage": 6,
+      "type": "reading_card",
+      "title": "Type Korean on Your Own Devices",
+      "title_kr": "내 기기에 한국어 자판 추가하기",
+      "body": "First, the honest part: you do not need to install anything to practise here. Every drill in this lesson works with no Korean keyboard on your device at all — the page reads which physical key you pressed, and on a phone you simply tap the keys on screen. But once you want to text a Korean friend, search in Korean, or fill in a form, you need a real Korean keyboard on your device. Here is how to add one. Everywhere below, pick the plain 2-set / 두벌식 layout — it is the same one you just learned.",
+      "rules": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean. It then asks which layout: choose Standard (that is 두벌식; \"10 Key\" is the small phone-pad layout instead). Switch keyboards by holding the 🌐 globe key at the bottom of the keyboard.",
+        "Android — easiest from the keyboard itself: open any app you can type in, tap the ⚙ settings icon on the keyboard's top bar → Languages → Add keyboard → Korean → 2벌식 (2-set) → Done. Via the Settings app it is Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard. To switch while typing, touch and hold the space bar.",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → search 한국어 (Korean) → Next → Install. Switch input with Win + Space. Once Korean is selected, the right Alt key toggles between Hangul and English — on a Korean keyboard that key is printed 한/영.",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → click + → Korean → 2-Set Korean → Add. Switch input sources with Ctrl + Space; with Korean active, Caps Lock flips between Hangul and English."
+      ],
+      "tip": {
+        "icon": "🌏",
+        "label": "Your practice transfers",
+        "text": "Every one of these is the same 두벌식 layout you have been drilling: consonants left, vowels right, Shift for the doubles. Nothing to relearn — the muscle memory you built on this page works the moment you switch your phone or laptop over."
+      },
+      "title_ja": "自分の端末で韓国語を打つ",
+      "title_zh_tw": "在你自己的裝置上打韓文",
+      "title_es": "Escribe en coreano en tus propios dispositivos",
+      "title_fr": "Taper le coréen sur vos propres appareils",
+      "title_de": "Koreanisch auf deinen eigenen Geräten tippen",
+      "title_vi": "Gõ tiếng Hàn trên thiết bị của bạn",
+      "title_th": "พิมพ์ภาษาเกาหลีบนอุปกรณ์ของคุณเอง",
+      "title_id": "Mengetik Bahasa Korea di Perangkatmu Sendiri",
+      "body_ja": "まず正直な話：ここで練習するのに何かをインストールする必要はありません。このレッスンのすべてのドリルは、端末に韓国語キーボードがなくても動きます——ページがどの物理キーを押したかを読み取り、スマホでは画面上のキーをタップするだけです。でも、韓国人の友達にメッセージを送ったり、韓国語で検索したり、フォームに入力したりしたくなったら、端末に本物の韓国語キーボードが必要です。追加する方法は次のとおりです。以下ではどの場合も、通常の二式／두벌식 配列を選んでください——今学んだのと同じものです。",
+      "body_zh_tw": "先說老實話：在這裡練習不需要安裝任何東西。這堂課的每個練習，就算你的裝置上完全沒有韓文鍵盤也能運作——這個頁面會讀取你按了哪個實體鍵，在手機上你只要點螢幕上的鍵即可。但一旦你想傳訊息給韓國朋友、用韓文搜尋或填表單，就需要裝置上有真正的韓文鍵盤。以下是加入的方法。下面每個地方，都請選擇一般的二式／두벌식 配置——就是你剛剛學的那個。",
+      "body_es": "Primero, lo honesto: no necesitas instalar nada para practicar aquí. Todos los ejercicios de esta lección funcionan sin ningún teclado coreano en tu dispositivo: la página lee qué tecla física pulsaste y, en el móvil, solo tocas las teclas en pantalla. Pero en cuanto quieras escribir a un amigo coreano, buscar en coreano o rellenar un formulario, necesitarás un teclado coreano de verdad en tu dispositivo. Así se añade. En todos los casos de abajo, elige la distribución sencilla de 2 juegos / 두벌식: es la misma que acabas de aprender.",
+      "body_fr": "D'abord, soyons honnêtes : vous n'avez besoin de rien installer pour vous entraîner ici. Tous les exercices de cette leçon fonctionnent sans aucun clavier coréen sur votre appareil — la page lit quelle touche physique vous avez pressée, et sur un téléphone vous touchez simplement les touches à l'écran. Mais dès que vous voudrez écrire à un ami coréen, faire une recherche en coréen ou remplir un formulaire, il vous faudra un vrai clavier coréen sur votre appareil. Voici comment en ajouter un. Partout ci-dessous, choisissez la disposition simple à 2 ensembles / 두벌식 — c'est la même que celle que vous venez d'apprendre.",
+      "body_de": "Zuerst die ehrliche Wahrheit: Du musst nichts installieren, um hier zu üben. Jede Übung dieser Lektion funktioniert ganz ohne koreanische Tastatur auf deinem Gerät – die Seite liest, welche physische Taste du gedrückt hast, und auf dem Handy tippst du einfach die Tasten auf dem Bildschirm. Aber sobald du einem koreanischen Freund schreiben, auf Koreanisch suchen oder ein Formular ausfüllen willst, brauchst du eine echte koreanische Tastatur auf deinem Gerät. So fügst du eine hinzu. Wähle überall unten die einfache 2-Satz-/두벌식-Belegung – es ist dieselbe, die du gerade gelernt hast.",
+      "body_vi": "Trước hết, nói thật: bạn không cần cài gì để luyện tập ở đây. Mọi bài luyện trong bài học này đều chạy được dù thiết bị của bạn hoàn toàn không có bàn phím tiếng Hàn — trang này đọc phím vật lý mà bạn nhấn, và trên điện thoại bạn chỉ cần chạm các phím trên màn hình. Nhưng khi bạn muốn nhắn tin cho một người bạn Hàn Quốc, tìm kiếm bằng tiếng Hàn hoặc điền vào biểu mẫu, bạn cần một bàn phím tiếng Hàn thật trên thiết bị. Đây là cách thêm nó. Ở mọi nơi bên dưới, hãy chọn cách bố trí hai bộ / 두벌식 đơn giản — chính là cái bạn vừa học.",
+      "body_th": "อย่างแรก พูดกันตรง ๆ: การฝึกที่นี่ไม่ต้องติดตั้งอะไรเลย แบบฝึกทุกอันในบทเรียนนี้ใช้งานได้แม้อุปกรณ์ของคุณไม่มีแป้นพิมพ์ภาษาเกาหลีเลย — หน้านี้อ่านว่าคุณกดปุ่มจริงปุ่มไหน และบนมือถือคุณก็แค่แตะปุ่มบนหน้าจอ แต่เมื่อคุณอยากส่งข้อความหาเพื่อนชาวเกาหลี ค้นหาเป็นภาษาเกาหลี หรือกรอกแบบฟอร์ม คุณจะต้องมีแป้นพิมพ์ภาษาเกาหลีจริงบนอุปกรณ์ นี่คือวิธีเพิ่ม ทุกที่ด้านล่างนี้ ให้เลือกผังแบบสองชุด / 두벌식 ธรรมดา — เป็นผังเดียวกับที่คุณเพิ่งเรียนมา",
+      "body_id": "Pertama, jujur saja: kamu tidak perlu memasang apa pun untuk berlatih di sini. Setiap latihan di pelajaran ini berjalan meski perangkatmu sama sekali tidak punya papan ketik Korea — halaman ini membaca tombol fisik mana yang kamu tekan, dan di ponsel kamu cukup mengetuk tombol di layar. Tapi begitu kamu ingin mengirim pesan ke teman Korea, mencari dalam bahasa Korea, atau mengisi formulir, kamu butuh papan ketik Korea sungguhan di perangkatmu. Berikut cara menambahkannya. Di semua langkah di bawah, pilih tata letak dua set / 두벌식 yang biasa — sama dengan yang baru kamu pelajari.",
+      "rules_ja": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean。続いて配列を尋ねられます：Standard を選んでください（これが 두벌식 です。「10 Key」は小さな携帯電話式の配列です）。キーボードの切り替えは、キーボード下部の 🌐 地球儀キーを長押しします。",
+        "Android — キーボードから行うのが一番簡単です：入力できるアプリを開き、キーボード上部バーの ⚙ 設定アイコンをタップ → Languages → Add keyboard → Korean → 2벌식（二式）→ Done。設定アプリからなら Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard です。入力中の切り替えは、スペースバーを長押しします。",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → 한국어（Korean）を検索 → Next → Install。入力の切り替えは Win + Space です。韓国語を選んだ状態では、右の Alt キーでハングルと英語を切り替えます——韓国語キーボードではそのキーに 한/영 と印字されています。",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → + をクリック → Korean → 2-Set Korean → Add。入力ソースの切り替えは Ctrl + Space、韓国語が有効なときは Caps Lock でハングルと英語を切り替えます。"
+      ],
+      "rules_zh_tw": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean。接著它會問你要哪種配置：選 Standard（也就是 두벌식；「10 Key」是小型手機鍵盤配置）。切換鍵盤時，長按鍵盤底部的 🌐 地球鍵。",
+        "Android — 從鍵盤本身操作最簡單：打開任何可以打字的 App，點鍵盤上方列的 ⚙ 設定圖示 → Languages → Add keyboard → Korean → 2벌식（二式）→ Done。若透過設定 App，則是 Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard。打字時要切換，長按空白鍵。",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → 搜尋 한국어（Korean）→ Next → Install。用 Win + Space 切換輸入。選了韓語之後，右 Alt 鍵可在諺文與英文之間切換——在韓文鍵盤上那個鍵印著 한/영。",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → 按 + → Korean → 2-Set Korean → Add。用 Ctrl + Space 切換輸入來源；韓語啟用時，用 Caps Lock 在諺文與英文之間切換。"
+      ],
+      "rules_es": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean. Luego te pregunta qué distribución: elige Standard (eso es 두벌식; «10 Key» es en cambio la distribución pequeña de teclado de teléfono). Cambia de teclado manteniendo pulsada la tecla del globo 🌐 en la parte inferior del teclado.",
+        "Android — lo más fácil es desde el propio teclado: abre cualquier app en la que puedas escribir, toca el icono de ajustes ⚙ en la barra superior del teclado → Languages → Add keyboard → Korean → 2벌식 (2 juegos) → Done. Desde la app de Ajustes sería Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard. Para cambiar mientras escribes, mantén pulsada la barra espaciadora.",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → busca 한국어 (Korean) → Next → Install. Cambia de entrada con Win + Espacio. Con el coreano seleccionado, la tecla Alt derecha alterna entre hangul e inglés; en un teclado coreano esa tecla lleva impreso 한/영.",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → pulsa + → Korean → 2-Set Korean → Add. Cambia de fuente de entrada con Ctrl + Espacio; con el coreano activo, Bloq Mayús alterna entre hangul e inglés."
+      ],
+      "rules_fr": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean. Il demande ensuite quelle disposition : choisissez Standard (c'est 두벌식 ; « 10 Key » est au contraire la petite disposition de clavier de téléphone). Changez de clavier en maintenant la touche globe 🌐 en bas du clavier.",
+        "Android — le plus simple depuis le clavier lui-même : ouvrez une appli où vous pouvez taper, touchez l'icône de réglages ⚙ dans la barre supérieure du clavier → Languages → Add keyboard → Korean → 2벌식 (2 ensembles) → Done. Via l'appli Réglages, c'est Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard. Pour changer en cours de frappe, maintenez la barre d'espace.",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → cherchez 한국어 (Korean) → Next → Install. Changez de saisie avec Win + Espace. Une fois le coréen sélectionné, la touche Alt de droite bascule entre le hangeul et l'anglais — sur un clavier coréen, cette touche porte l'inscription 한/영.",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → cliquez sur + → Korean → 2-Set Korean → Add. Changez de source de saisie avec Ctrl + Espace ; avec le coréen actif, la touche Verr. Maj bascule entre le hangeul et l'anglais."
+      ],
+      "rules_de": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean. Danach wird die Belegung abgefragt: Wähle Standard (das ist 두벌식; „10 Key“ ist dagegen die kleine Handy-Tastenfeld-Belegung). Zwischen Tastaturen wechselst du, indem du die 🌐 Globus-Taste unten auf der Tastatur gedrückt hältst.",
+        "Android — am einfachsten direkt über die Tastatur: Öffne eine App, in der du tippen kannst, tippe auf das Einstellungssymbol ⚙ in der oberen Leiste der Tastatur → Languages → Add keyboard → Korean → 2벌식 (2-Satz) → Done. Über die Einstellungen-App ist es Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard. Zum Wechseln während des Tippens hältst du die Leertaste gedrückt.",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → suche 한국어 (Korean) → Next → Install. Die Eingabe wechselst du mit Win + Leertaste. Ist Koreanisch ausgewählt, schaltet die rechte Alt-Taste zwischen Hangul und Englisch um – auf einer koreanischen Tastatur ist diese Taste mit 한/영 beschriftet.",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → klicke auf + → Korean → 2-Set Korean → Add. Eingabequellen wechselst du mit Strg + Leertaste; bei aktivem Koreanisch schaltet die Feststelltaste (Caps Lock) zwischen Hangul und Englisch um."
+      ],
+      "rules_vi": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean. Sau đó nó hỏi bạn muốn kiểu bố trí nào: chọn Standard (đó là 두벌식; “10 Key” là kiểu bàn phím điện thoại nhỏ). Chuyển bàn phím bằng cách giữ phím quả địa cầu 🌐 ở dưới cùng bàn phím.",
+        "Android — dễ nhất là làm ngay từ bàn phím: mở một ứng dụng có thể gõ, chạm biểu tượng cài đặt ⚙ trên thanh trên cùng của bàn phím → Languages → Add keyboard → Korean → 2벌식 (hai bộ) → Done. Qua ứng dụng Cài đặt thì là Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard. Để chuyển khi đang gõ, chạm và giữ phím cách.",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → tìm 한국어 (Korean) → Next → Install. Chuyển kiểu nhập bằng Win + Space. Khi đã chọn tiếng Hàn, phím Alt phải chuyển qua lại giữa Hangul và tiếng Anh — trên bàn phím Hàn, phím đó in chữ 한/영.",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → nhấp + → Korean → 2-Set Korean → Add. Chuyển nguồn nhập bằng Ctrl + Space; khi tiếng Hàn đang bật, Caps Lock chuyển qua lại giữa Hangul và tiếng Anh."
+      ],
+      "rules_th": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean จากนั้นมันจะถามว่าต้องการผังแบบไหน: เลือก Standard (นั่นคือ 두벌식 ส่วน “10 Key” เป็นผังแป้นโทรศัพท์ขนาดเล็ก) สลับแป้นพิมพ์โดยกดปุ่มลูกโลก 🌐 ที่ด้านล่างของแป้นพิมพ์ค้างไว้",
+        "Android — ทำจากแป้นพิมพ์เองง่ายที่สุด: เปิดแอปใดก็ได้ที่พิมพ์ได้ แตะไอคอนตั้งค่า ⚙ บนแถบด้านบนของแป้นพิมพ์ → Languages → Add keyboard → Korean → 2벌식 (สองชุด) → Done ถ้าผ่านแอปการตั้งค่าจะเป็น Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard การสลับขณะพิมพ์ ให้แตะแป้นเว้นวรรคค้างไว้",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → ค้นหา 한국어 (Korean) → Next → Install สลับการป้อนด้วย Win + Space เมื่อเลือกภาษาเกาหลีแล้ว ปุ่ม Alt ขวาจะสลับระหว่างฮันกึลกับภาษาอังกฤษ — บนแป้นพิมพ์เกาหลี ปุ่มนั้นจะพิมพ์ว่า 한/영",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → คลิก + → Korean → 2-Set Korean → Add สลับแหล่งป้อนข้อมูลด้วย Ctrl + Space เมื่อเปิดใช้ภาษาเกาหลี ปุ่ม Caps Lock จะสลับระหว่างฮันกึลกับภาษาอังกฤษ"
+      ],
+      "rules_id": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean. Lalu ia menanyakan tata letak mana: pilih Standard (itulah 두벌식; “10 Key” justru tata letak papan telepon kecil). Ganti papan ketik dengan menahan tombol globe 🌐 di bagian bawah papan ketik.",
+        "Android — paling mudah dari papan ketiknya sendiri: buka aplikasi apa pun yang bisa diketik, ketuk ikon pengaturan ⚙ di bilah atas papan ketik → Languages → Add keyboard → Korean → 2벌식 (dua set) → Done. Lewat aplikasi Setelan, jalurnya Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard. Untuk berganti saat mengetik, sentuh dan tahan bilah spasi.",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → cari 한국어 (Korean) → Next → Install. Ganti input dengan Win + Space. Setelah bahasa Korea dipilih, tombol Alt kanan mengalihkan antara Hangul dan Inggris — pada papan ketik Korea, tombol itu bertuliskan 한/영.",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → klik + → Korean → 2-Set Korean → Add. Ganti sumber input dengan Ctrl + Space; saat bahasa Korea aktif, Caps Lock mengalihkan antara Hangul dan Inggris."
+      ],
+      "tip_ja": {
+        "icon": "🌏",
+        "label": "練習はそのまま活きる",
+        "text": "これらはすべて、あなたが練習してきたのと同じ 두벌식 配列です：子音は左、母音は右、二重字は Shift。学び直すことは何もありません——このページで身につけた体の記憶は、スマホやノートパソコンを切り替えたその瞬間から使えます。"
+      },
+      "tip_zh_tw": {
+        "icon": "🌏",
+        "label": "你的練習會延續下去",
+        "text": "這些全都是你一直在練的同一個 두벌식 配置：子音在左、母音在右、雙字母用 Shift。沒有東西要重學——你在這個頁面上建立的肌肉記憶，在你把手機或筆電切換過去的那一刻就能派上用場。"
+      },
+      "tip_es": {
+        "icon": "🌏",
+        "label": "Tu práctica se transfiere",
+        "text": "Todas ellas son la misma distribución 두벌식 que has estado practicando: consonantes a la izquierda, vocales a la derecha, Shift para los dobles. Nada que reaprender: la memoria muscular que construiste en esta página funciona en el momento en que cambias tu móvil o portátil."
+      },
+      "tip_fr": {
+        "icon": "🌏",
+        "label": "Votre entraînement se transfère",
+        "text": "Ce sont toutes la même disposition 두벌식 que vous vous êtes entraîné à utiliser : consonnes à gauche, voyelles à droite, Maj pour les doubles. Rien à réapprendre — la mémoire musculaire que vous avez bâtie sur cette page fonctionne dès l'instant où vous basculez votre téléphone ou votre ordinateur."
+      },
+      "tip_de": {
+        "icon": "🌏",
+        "label": "Dein Training überträgt sich",
+        "text": "Sie alle sind dieselbe 두벌식-Belegung, die du geübt hast: Konsonanten links, Vokale rechts, Shift für die Doppel-Buchstaben. Nichts umzulernen – das Muskelgedächtnis, das du auf dieser Seite aufgebaut hast, greift in dem Moment, in dem du dein Handy oder deinen Laptop umstellst."
+      },
+      "tip_vi": {
+        "icon": "🌏",
+        "label": "Công luyện tập của bạn được chuyển tiếp",
+        "text": "Tất cả đều là cùng một cách bố trí 두벌식 mà bạn đã luyện: phụ âm bên trái, nguyên âm bên phải, Shift cho các chữ đôi. Không có gì phải học lại — trí nhớ cơ bắp bạn xây dựng trên trang này phát huy tác dụng ngay khi bạn chuyển điện thoại hay laptop sang."
+      },
+      "tip_th": {
+        "icon": "🌏",
+        "label": "การฝึกของคุณใช้ได้ต่อ",
+        "text": "ทั้งหมดนี้คือผัง 두벌식 เดียวกับที่คุณฝึกมา: พยัญชนะซ้าย สระขวา Shift สำหรับตัวอักษรคู่ ไม่มีอะไรต้องเรียนใหม่ — ความจำของกล้ามเนื้อที่คุณสร้างบนหน้านี้ใช้ได้ทันทีที่คุณสลับโทรศัพท์หรือแล็ปท็อป"
+      },
+      "tip_id": {
+        "icon": "🌏",
+        "label": "Latihanmu terbawa",
+        "text": "Semuanya adalah tata letak 두벌식 yang sama yang telah kamu latih: konsonan di kiri, vokal di kanan, Shift untuk huruf ganda. Tidak ada yang perlu dipelajari ulang — memori otot yang kamu bangun di halaman ini langsung bekerja begitu kamu mengalihkan ponsel atau laptopmu."
+      }
+    },
+    {
+      "id": 29,
+      "stage": 6,
+      "type": "lesson_complete",
+      "title": "You can type Korean!",
+      "title_kr": "이제 한국어를 칠 수 있어요!",
+      "message": "Excellent work — you have learned all 33 keys of the 두벌식 keyboard, typed syllables with and without a 받침, handled the combined vowels, and run a full 60-second sprint. Keep the speed going with the free typing pad just below this lesson: type any Korean word you like and watch the blocks build themselves. 화이팅!",
+      "next_url": "vocabulary.html",
+      "title_ja": "韓国語が打てるようになりました！",
+      "title_zh_tw": "你會打韓文了！",
+      "title_es": "¡Ya sabes escribir en coreano!",
+      "title_fr": "Vous savez taper le coréen !",
+      "title_de": "Du kannst Koreanisch tippen!",
+      "title_vi": "Bạn đã gõ được tiếng Hàn rồi!",
+      "title_th": "คุณพิมพ์ภาษาเกาหลีได้แล้ว!",
+      "title_id": "Kamu bisa mengetik bahasa Korea!",
+      "message_ja": "素晴らしい——두벌식 キーボードの33キーすべてを覚え、받침 のある音節もない音節も打ち、合成母音もこなし、60秒スプリントも走り切りました。このレッスンのすぐ下にある無料タイピングパッドで、その勢いを保ちましょう：好きな韓国語の単語を打って、ブロックが自動で組み上がるのを見てください。화이팅！",
+      "message_zh_tw": "做得太好了——你學會了 두벌식 鍵盤全部 33 個鍵，打了有 받침 和沒有 받침 的音節，處理了合成母音，還跑完了整整 60 秒衝刺。用這堂課正下方的免費打字板保持這股速度：打任何你喜歡的韓語單字，看著方塊自己組起來。화이팅！",
+      "message_es": "Excelente trabajo: has aprendido las 33 teclas del teclado 두벌식, has escrito sílabas con y sin 받침, has manejado las vocales combinadas y has completado un sprint entero de 60 segundos. Mantén la velocidad con el teclado libre justo debajo de esta lección: escribe la palabra coreana que quieras y observa cómo los bloques se arman solos. ¡화이팅!",
+      "message_fr": "Excellent travail — vous avez appris les 33 touches du clavier 두벌식, tapé des syllabes avec et sans 받침, maîtrisé les voyelles combinées et bouclé un sprint complet de 60 secondes. Gardez le rythme avec le pavé de saisie libre juste sous cette leçon : tapez le mot coréen de votre choix et regardez les blocs se construire tout seuls. 화이팅 !",
+      "message_de": "Ausgezeichnete Arbeit – du hast alle 33 Tasten der 두벌식-Tastatur gelernt, Silben mit und ohne 받침 getippt, die zusammengesetzten Vokale gemeistert und einen kompletten 60-Sekunden-Sprint absolviert. Halte das Tempo mit dem freien Tippfeld direkt unter dieser Lektion: Tippe ein beliebiges koreanisches Wort und sieh zu, wie sich die Blöcke von selbst zusammenfügen. 화이팅!",
+      "message_vi": "Xuất sắc — bạn đã học hết 33 phím của bàn phím 두벌식, gõ các âm tiết có và không có 받침, xử lý được các nguyên âm ghép, và hoàn thành trọn một lượt chạy nước rút 60 giây. Hãy giữ đà tốc độ với bảng gõ tự do ngay bên dưới bài học này: gõ bất kỳ từ tiếng Hàn nào bạn thích và ngắm các khối tự dựng lên. 화이팅!",
+      "message_th": "ทำได้ยอดเยี่ยม — คุณได้เรียนครบทั้ง 33 ปุ่มของแป้นพิมพ์ 두벌식 พิมพ์พยางค์ทั้งที่มีและไม่มี 받침 จัดการสระประสมได้ และวิ่งสปรินต์ครบ 60 วินาที รักษาความเร็วไว้กับแป้นพิมพ์อิสระที่อยู่ใต้บทเรียนนี้: พิมพ์คำภาษาเกาหลีคำไหนก็ได้ที่คุณชอบ แล้วดูบล็อกประกอบตัวเอง 화이팅!",
+      "message_id": "Kerja bagus sekali — kamu sudah mempelajari seluruh 33 tombol papan ketik 두벌식, mengetik suku kata dengan dan tanpa 받침, menangani vokal gabungan, dan menuntaskan sprint penuh 60 detik. Pertahankan kecepatannya dengan papan ketik bebas tepat di bawah pelajaran ini: ketik kata Korea apa pun yang kamu suka dan saksikan bloknya menyusun diri. 화이팅!"
+    }
+  ]
+}

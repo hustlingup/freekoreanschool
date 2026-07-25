@@ -177,6 +177,7 @@ const LangManager = (() => {
         <button class="lang-hero-btn${_lang === 'fr' ? ' active' : ''}" onclick="LangManager.setLang('fr')">🇫🇷 Français</button>
         <button class="lang-hero-btn${_lang === 'de' ? ' active' : ''}" onclick="LangManager.setLang('de')">🇩🇪 Deutsch</button>
         <button class="lang-hero-btn${_lang === 'vi' ? ' active' : ''}" onclick="LangManager.setLang('vi')">🇻🇳 Tiếng Việt</button>
+        <button class="lang-hero-btn${_lang === 'th' ? ' active' : ''}" onclick="LangManager.setLang('th')">🇹🇭 ไทย</button>
         <button class="lang-hero-btn${_lang === 'id' ? ' active' : ''}" onclick="LangManager.setLang('id')">🇮🇩 Bahasa Indonesia</button>
       </div>`;
     target.prepend(picker);
@@ -206,6 +207,7 @@ const LangManager = (() => {
       { code: 'fr',    flag: '🇫🇷', name: 'Français' },
       { code: 'de',    flag: '🇩🇪', name: 'Deutsch' },
       { code: 'vi',    flag: '🇻🇳', name: 'Tiếng Việt' },
+      { code: 'th',    flag: '🇹🇭', name: 'ไทย' },
       { code: 'id',    flag: '🇮🇩', name: 'Bahasa Indonesia' }
     ];
     overlay.innerHTML = `

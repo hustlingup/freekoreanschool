@@ -5761,7 +5761,10 @@ body.lang-id span.en-only { display: none; }
   padding: 10px 14px;
   font-size: 0.85rem;
   color: var(--text-secondary);
-  max-width: 360px;
+  /* 560px so a typing tip can run beside the full keyboard without cramping.
+     Shared with the stroke lesson, whose narrower ~360px mount column caps the
+     box below this value anyway, so a short stroke hint is unaffected. */
+  max-width: 560px;
   width: 100%;
   text-align: left;
 }
@@ -6313,3 +6316,1431 @@ body.lang-id .lr-meaning-id { display: block; }
   transition: border-color var(--transition-fast), color var(--transition-fast);
 }
 .article-learn-link:hover { border-color: var(--primary); color: var(--primary-light); }
+
+/* ── Stroke Writer ── */
+.sw-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  color: var(--text); /* currentColor source for .sw-guide + .sw-debug-glyph */
+}
+
+.sw-svg {
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+  touch-action: none; /* mandatory — otherwise mobile scroll eats pointermove */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Full reference path, sits under the animated stroke */
+.sw-guide {
+  fill: none;
+  stroke: currentColor;
+  stroke-opacity: 0.18;
+  stroke-width: 6.5; /* matches the reference font's 6–7.5 stem weight — see .sw-stroke */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Trace mode — the stroke the learner must draw next */
+.sw-guide--target { animation: sw-guide-pulse 1.4s ease-in-out infinite; }
+@keyframes sw-guide-pulse {
+  0%, 100% { stroke-opacity: 0.18; }
+  50%      { stroke-opacity: 0.45; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sw-guide--target { animation: none; stroke-opacity: 0.45; }
+}
+
+/* Animated (watch) / completed (trace) stroke.
+   6.5, not 8: the reference font's stems measure 6–7.5 in this 0 0 100 100
+   space, so an 8-wide pen reads heavy against the ?swdebug=1 overlay and
+   makes short marks unmatchable (the ㅎ/ㅊ top tick inks 10.2 units wide
+   against the font's 7.0). Cosmetic only — trace hit-testing uses its own
+   tolerance constants in js/stroke-writer.js and is unaffected. */
+.sw-stroke {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 6.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Live pointer trail. --secondary (#003478) dies on the dark bg, so this is
+   --primary at 60% — readable in both themes and still distinguishable from
+   the solid .sw-stroke it becomes on a pass.
+   Width stays locked to .sw-stroke (6.5): on a pass the trail is swapped for
+   that stroke in place, and any mismatch would show as the ink visibly
+   thickening/thinning at the moment of the swap. */
+.sw-user-stroke {
+  fill: none;
+  stroke: var(--primary);
+  stroke-opacity: 0.6;
+  stroke-width: 6.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+/* Stroke-order number badge (circle r=5 + text) */
+.sw-num { pointer-events: none; transition: opacity 0.2s; }
+.sw-num circle { fill: var(--primary); stroke: none; }
+.sw-num text {
+  fill: #fff;
+  font-family: var(--font-sans);
+  font-size: 6px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+.sw-num[hidden] { display: none; } /* SVG ignores the bare hidden attribute */
+
+/* Pointer-capture rect (last child of the svg, fill="transparent") */
+.sw-trace-surface {
+  pointer-events: all;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+/* Trace-mode copy, both emitted by build() inside .sw-widget.
+   .sw-instruct is the standing "what am I meant to do" line above the canvas;
+   .sw-status is the aria-live line under it that names the current stroke. */
+.sw-instruct {
+  max-width: 36ch;
+  margin: 0;
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+.sw-status {
+  margin: 0;
+  padding: 7px 16px;
+  border: 1px solid var(--border-active);
+  border-radius: var(--radius-full);
+  background: var(--bg-sidebar-active);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+/* Collapsed, not display:none — the element is only briefly empty (setupTrace
+   fills it synchronously), and an empty pill would flash on every rebuild. */
+.sw-status:empty { padding: 0; border: 0; background: none; }
+
+/* Engine-owned control bar: buildControls() puts ONLY .sw-replay + .sw-speed
+   buttons here, and only when render() is called with `controls: true`.
+   The free-play widget passes controls:false and supplies its own chrome —
+   see the .sw-fp-* rules below. Do not add descendant rules here for inputs,
+   selects, labels or picker buttons: nothing in js/stroke-writer.js ever
+   emits them into this bar. */
+.sw-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.sw-controls .btn { min-height: var(--sw-ctl-h, 40px); }
+.sw-replay { min-width: 44px; font-size: 1rem; }
+.sw-speed { min-width: 52px; }
+/* Same 2px reflow fix as .sw-tab — .btn-primary inherits `border: none`. */
+.sw-speed.btn-primary { border: 1px solid transparent; }
+/* Emitted unconditionally by build(); on controls:false pages it stays empty
+   and would otherwise still claim a 16px flex gap under the canvas.
+   Not ad markup — the height:0 collapse rule for ad zones does not apply. */
+.sw-controls:empty { display: none; }
+
+/* Watch/Trace toggle in the free-play widget. The buttons ship as
+   `btn btn-sm` with btn-primary/btn-outline swapped on click, so all the
+   look comes from those. Only two things are missing:
+   - min-width, so the pair does not resize as the labels change per locale;
+   - a same-size invisible border on the active tab: .btn-primary inherits
+     `border: none` from .btn while .btn-outline adds 1px, so without this the
+     pair jumps 2px sideways on every mode switch. */
+.sw-tab { flex: 0 0 auto; min-width: 72px; }
+.sw-tab.btn-primary { border: 1px solid transparent; }
+
+/* ── Free-play widget chrome (.sw-fp-*) ──────────────
+   Markup: StrokeFreePlay in js/stroke-writer.js —
+     .sw-freeplay > .syl-builder-label
+                  > .sw-fp-row      (.sw-input + .sw-go)
+                  > .sw-fp-row.sw-fp-opts (.sw-tab ×2, .sw-fp-label > .sw-speed-select,
+                                           .sw-fp-label > .sw-num-toggle)
+                  > .sw-canvas      (StrokeWriter mounts .sw-widget here)
+                  > .sw-count
+                  > .sw-chip-row    (.syl-picker-btn.sw-chip ×N)
+   The panel is recessed (--bg-2) so the .sw-widget card it contains still
+   reads as the raised surface it already styles itself as. Field surfaces
+   reuse the .syl-picker-btn / .planner-input recipe (bg-card + 1px border +
+   radius-sm + primary on focus) so these controls match the rest of the site. */
+.sw-freeplay {
+  --sw-ctl-h: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-2);
+}
+.sw-freeplay > .syl-builder-label { margin-bottom: 0; text-align: center; }
+
+.sw-fp-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.sw-fp-opts { gap: 8px 16px; }
+/* Keeps .btn-sm buttons the same height as the fields they sit beside. */
+.sw-fp-row .btn { min-height: var(--sw-ctl-h); }
+.sw-go { min-width: 60px; border: 1px solid transparent; } /* border: see .sw-tab */
+
+.sw-fp-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--sw-ctl-h);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Korean entry field — --font-korean so typed hangul renders in Noto Sans KR */
+.sw-input {
+  height: var(--sw-ctl-h);
+  width: 100px;
+  min-width: 0;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  color: var(--text);
+  font-family: var(--font-korean);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+.sw-input::placeholder { color: var(--text-muted); font-weight: 400; }
+.sw-input:hover { border-color: var(--border-hover); }
+.sw-input:focus { outline: none; border-color: var(--primary); background: var(--bg-card-hover); }
+
+/* Speed dropdown. The site has no prior appearance:none select (.admin-select
+   keeps the native arrow), but a native arrow renders as an OS-grey triangle
+   on the dark default theme, which is exactly the "basic HTML" look this
+   widget was reported for. So: appearance:none + an inline-SVG chevron, one
+   per theme because a background-image cannot read currentColor or var().
+   The two stroke hexes are literal copies of --text-secondary (dark #A8A8C0 /
+   light #44446A) — keep them in step if that token ever changes.
+   `color-scheme` is set so the native option popup follows the site theme;
+   the `option` rule covers the engines that ignore it. */
+.sw-speed-select {
+  appearance: none;
+  -webkit-appearance: none;
+  height: var(--sw-ctl-h);
+  padding: 0 32px 0 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-card);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%23A8A8C0' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+  background-size: 11px 8px;
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color-scheme: dark;
+  transition: border-color var(--transition-fast);
+}
+.sw-speed-select:hover { border-color: var(--border-hover); }
+.sw-speed-select:focus { outline: none; border-color: var(--primary); }
+.sw-speed-select option { background: var(--bg-2); color: var(--text); }
+[data-theme="light"] .sw-speed-select {
+  color-scheme: light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%2344446A' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* Stroke-numbers checkbox. appearance:none + a :checked background-image
+   rather than a ::after glyph — Firefox does not generate pseudo-elements on
+   <input>, so a ::after checkmark would silently vanish there. The label that
+   wraps it is min-height var(--sw-ctl-h), so the tap target is full height. */
+.sw-num-toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  border: 1px solid var(--border-hover);
+  border-radius: 5px;
+  background-color: var(--bg-card);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+.sw-num-toggle:hover { border-color: var(--primary); }
+.sw-num-toggle:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.3 5 8.8 9.5 3.6' fill='none' stroke='%23fff' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* One visible keyboard ring for every free-play control. Pointer focus keeps
+   the quieter border-only treatment above; :focus-visible is declared after
+   those rules so it wins at equal specificity. */
+.sw-input:focus-visible,
+.sw-speed-select:focus-visible,
+.sw-num-toggle:focus-visible,
+.sw-freeplay .btn:focus-visible,
+.sw-freeplay .syl-picker-btn:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+/* Block, not flex — .sw-widget centres itself and the svg inside it is sized
+   `width:280px;max-width:100%`, which needs a definite parent width. */
+.sw-canvas { width: 100%; }
+.sw-count {
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Draw-here affordance for trace mode (.sw-trace-surface sets the crosshair) */
+.sw-svg--trace {
+  outline: 1px dashed var(--border-hover);
+  outline-offset: 8px;
+  border-radius: var(--radius-md);
+}
+
+/* Quick-pick character chips (buttons reuse .syl-picker-btn as-is) */
+.sw-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+/* ?swdebug=1 calibration strip — fenced off from the real quick picks */
+.sw-chip-row--debug {
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  width: 100%;
+}
+
+/* Calibration overlay (?swdebug=1).
+   font-size is set INLINE by js/stroke-writer.js (DBG_FONT_PX) and must not be
+   reintroduced here: the glyph's y offset (DBG_GLYPH_Y = 45.2) is derived from
+   that px value and Noto Sans KR's metrics, so a second copy of the number
+   here would silently decalibrate the overlay if edited. --font-korean
+   resolves to that same 'Noto Sans KR' family — the calibration depends on
+   it, so this declaration does need to stay. */
+.sw-debug-glyph {
+  font-family: var(--font-korean);
+  opacity: 0.10;
+  fill: currentColor;
+  text-anchor: middle;
+  dominant-baseline: central;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .sw-widget { padding: 16px 12px; gap: 12px; }
+  .sw-svg { min-width: min(260px, 100%); }
+  .sw-controls, .sw-chip-row { width: 100%; }
+  /* 44px tap targets on touch; every row already wraps, and .sw-input drops to
+     flex-basis so the input + Go pair still fits a 320px viewport. */
+  .sw-freeplay { --sw-ctl-h: 44px; padding: 16px 12px; gap: 12px; }
+  .sw-fp-row { width: 100%; }
+  .sw-input { flex: 1 1 110px; width: auto; }
+  .sw-instruct { max-width: 100%; }
+}
+
+/* ── Stroke steps inside a StepRunner lesson (.sr-stroke-*) ───────────
+   Emitted by js/step-runner.js for the `stroke_demo` / `stroke_trace`
+   step types on learn/letter-writing.html. These are lesson-step classes,
+   not widget chrome: they deliberately mirror .sr-card-reveal / .sr-card
+   so a stroke step reads as the same lesson UI as a card_reveal step, and
+   they reuse .sr-char / .sr-rom / .sr-hint / .sr-example unchanged.
+
+   Structure assumed:
+     .sr-stroke-step
+       .sr-char, .sr-rom (+ pronunciation aid), instruction line
+       .sr-stroke-mount  >  #sw-step-mount  (StrokeWriter renders .sw-widget here at size:260)
+       .sr-hint / .sr-example
+       .sr-stroke-actions  >  .btn ×N (replay + audio on demo, #sw-continue on trace)
+
+   Theme: these rules are layout + type-scale only and hard-code no colour,
+   so they are correct in dark (the default) and in [data-theme="light"]
+   alike — no light-mode override is needed or wanted. Every visible surface
+   comes from classes that are already dual-theme: .sw-widget (--bg-card /
+   --border / --text) and the inherited .sr-char / .sr-hint / .sr-example /
+   .sr-quiz-prompt / .btn rules above. */
+.sr-stroke-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0 24px;
+}
+
+/* The 5.5rem .sr-char of a flip card would push the 260px canvas below the
+   fold; a stroke step already shows the character full-size in the widget. */
+.sr-stroke-step .sr-char { font-size: 3.4rem; }
+.sr-stroke-step .sr-hint,
+.sr-stroke-step .sr-example { max-width: 360px; width: 100%; }
+.sr-stroke-step .sr-example { text-align: center; }
+
+/* The trace step reuses .sr-quiz-prompt for its "Write it yourself"
+   instruction line. That class carries margin-bottom:24px for the quiz grid,
+   which doubles up with this flex column's own gap — drop it here only.
+   Scoped as a direct child so the engine's .sw-instruct / .sw-status lines
+   inside .sr-stroke-mount .sw-widget are untouched. */
+.sr-stroke-step > .sr-quiz-prompt {
+  max-width: 360px;
+  margin-bottom: 0;
+}
+
+/* Mount point. Centres the widget and reserves its height so the step does
+   not jump when the SVG is injected on the next frame:
+   20px pad + 260px canvas + 16px gap + 40px control row + 20px pad ≈ 356px.
+   min-height, not height — trace mode adds .sw-instruct/.sw-status and must
+   be free to grow. Width is capped at .sr-card's 360px so the widget lines
+   up with every other lesson-step card. */
+.sr-stroke-mount {
+  width: 100%;
+  max-width: 360px;
+  min-height: 356px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* .sw-widget is a block and would already fill the mount, but the mount is a
+   flex container, so an explicit width is what actually stretches it. */
+.sr-stroke-mount > * { width: 100%; }
+
+/* Replay + audio (demo) / continue (trace). Wraps before it overflows. */
+.sr-stroke-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 360px;
+}
+.sr-stroke-actions .btn {
+  min-height: 40px;
+  flex: 0 1 auto;
+}
+
+@media (max-width: 600px) {
+  /* min-height stays 356px here. The canvas is `width:260px;max-width:100%`,
+     so it only starts shrinking below a ~330px viewport, and the mobile
+     .sw-widget is tighter (16/12px padding, 12px gap, 44px controls):
+     260 + 88 = 348 at 375px, 256 + 88 = 344 at 320px. Over-reserving those
+     ~8-12px costs a hair of whitespace; under-reserving would reintroduce
+     the layout jump this rule exists to prevent. */
+  .sr-stroke-step .sr-char { font-size: 3rem; }
+  /* 44px tap targets on touch, same rule as .sw-freeplay's --sw-ctl-h. */
+  .sr-stroke-actions .btn { min-height: 44px; }
+}
+
+/* ── Typing steps inside a StepRunner lesson (.sr-typing-*) ───────────
+   Emitted by js/step-runner.js for the `key_intro` / `typing_drill` step
+   types on learn/typing.html. Lesson-step chrome (title + instruction +
+   mount + hidden Continue), NOT widget chrome — the whole keyboard/widget
+   look lives in the .kb-* block below. The continue row reuses the stroke
+   lesson's .sr-stroke-actions, so #kb-continue needs no rule of its own.
+
+   WIDTH — the mount is capped at the lesson column (860px) so the full ANSI
+   board renders at its ideal key size instead of being squeezed. .kb-widget
+   fills the mount and centres the board inside it.
+
+   NO min-height floor — TypingGame builds its whole DOM synchronously in the
+   same task step-runner sets #step-shell (see the widget header comment), so
+   there is no empty-mount paint to reserve against; a JS-less page leaves the
+   mount :empty and it simply collapses. Mid-drill jitter from the 1↔2 line
+   .kb-prompt-sub is absorbed by that element's own min-height, below. */
+.sr-typing-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0 24px;
+}
+.sr-typing-step > .sr-reading-title {
+  justify-content: center;
+  margin-bottom: 0;
+  text-align: center;
+}
+.sr-typing-step > .sr-quiz-prompt {
+  max-width: 52ch;
+  margin-bottom: 0;
+}
+.sr-typing-mount {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  /* Nothing to reserve or cap here any more: the mount is width:100% and the
+     .kb-* mobile block below reclaims the page gutter via negative margins. */
+  .sr-typing-mount { max-width: 100%; }
+}
+
+/* ── Korean Keyboard / Typing ── */
+/* Markup: js/typing-game.js (TypingGame) — see docs/writing-typing/prompt-D §2.
+     .kb-capture[tabindex="0"]        the focusable play surface (NEVER an <input>,
+                                      so the OS Korean IME can never begin composition)
+       .kb-display                    composed text; trailing block wrapped in
+         .kb-display-current          the in-progress (uncommitted) block
+       .kb-stats                      elapsed, CPM (타 per 분), accuracy, streak
+       .kb-board[role="group"]        realistic full ANSI keyboard, 5 rows
+         .kb-row (.kb-row--nums row 0) number row / QWERTY / home / Shift / space rows
+           .kb-key                    a key. Three kinds:
+             jamo   > .kb-jamo (hangul legend) + .kb-latin (QWERTY corner)  — FUNCTIONAL
+             .kb-key--sym  > .kb-sym-top + .kb-sym-bottom  (numbers/punct)  — REFERENCE, inert
+             .kb-key--mod  > .kb-mod (> .kb-mod-glyph? + .kb-mod-label?)     — Shift/Bksp/Enter/
+                                                                              Space functional,
+                                                                              Tab/Caps/Ctrl/Alt/Win ref
+           width classes .kb-w-125 … .kb-w-625 size the non-1u keys off --kb-key-w
+           .kb-key--ref dims a reference key; .kb-key--desk / --mob toggle the two
+             functional keys (Backspace, Enter) that move between the desktop board
+             and the compact phone board
+       .kb-summary                    end-of-round card
+
+   State classes toggled by the engine on .kb-key: --active (pressed flash), --tap
+   (subtle reference-key acknowledgement), --hint (a game is pointing at this key),
+   --shifted (the 7 dual-legend jamo keys + both Shifts while shift is engaged; the
+   board also gains .kb-shifted to emphasise the number-row symbols).
+   Round feedback reuses the existing .correct-pop / .wrong-shake animations.
+
+   The tree above is only the play surface. The engine also emits the widget's
+   whole chrome around it, and every one of these was unstyled until now:
+
+     .kb-widget                     the outer panel; gains .kb-widget--focused
+                                    while .kb-capture holds focus
+       .syl-builder-label           widget title (free play only, shared class)
+       .kb-subtitle                 one-line explainer under it
+       .kb-controls.kb-controls--modes    mode strip, .kb-chip ×4
+       .kb-capture                  ← the tree above
+         .kb-focus-hint             "click here, then type" overlay
+         .kb-prompt                 .kb-progress + .kb-prompt-target
+                                    + .kb-prompt-sub  (empty in free typing)
+       .kb-stats                    .kb-stat ×4 → .kb-stat-label + .kb-stat-value
+       .kb-feedback                 one-line round feedback, aria-live
+       .kb-summary                  .kb-summary-title + .kb-stat ×4 + .kb-again
+       .kb-controls.kb-controls--actions  .kb-clear / .kb-restart
+
+   ⚠ .kb-focus-hint and .kb-summary have their visibility driven by the engine
+   through inline style.display ('' | 'none'). Their `display` here is the value
+   the inline '' falls back to, so it must stay a real box value and must NEVER
+   carry !important — either mistake strands the element permanently visible or
+   permanently hidden. See the comments on both rules.
+
+   .kb-chip / .kb-clear / .kb-restart / .kb-again also carry .btn .btn-sm
+   .btn-outline|.btn-primary and are therefore already skinned by the button
+   system; they get rules here only for layout, never for looks.
+
+   Every surface here is built from dual-theme tokens (--bg-card / --bg-2 /
+   --border / --text / --text-secondary), so dark (the default) and
+   [data-theme="light"] are both correct without per-rule overrides. The two
+   exceptions — the shift accent and the in-progress underline ink — are
+   declared as local custom properties with an explicit light-theme value,
+   because gold-on-white and #FF4D6D-on-white both fail against a light page. */
+
+/* ── Widget chrome ──────────────────────────────────
+   The panel that wraps the whole component. Same recessed-panel recipe as
+   .sw-freeplay (--bg-2 + 1px --border + radius-lg) so that the raised
+   .kb-capture well inside it still reads as the play surface, and so the
+   typing widget and the stroke widget look like one family on the page. */
+.kb-widget {
+  /* The feedback ink and the unfocused veil are the only two colours in this
+     block that are not already dual-theme tokens, so — exactly like
+     --kb-shift-accent above — they are declared literal with an explicit
+     light-theme value. #28c864 is the green .sr-quiz-opt.correct already uses;
+     it falls under 3:1 on a white card, hence the darkened light value. */
+  --kb-ok-ink: #28c864;
+  --kb-veil: rgba(7, 7, 15, 0.46);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Fill the mount (or free-play container). Without an explicit width a flex
+     column shrink-wraps to its content, so the board's width:95% would resolve
+     against that collapsed box, not the full 860px mount — the keyboard then
+     sits narrow with dead gutters. */
+  width: 100%;
+  gap: clamp(10px, 2.4vw, 16px);
+  padding: clamp(14px, 3vw, 20px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-2);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+[data-theme="light"] .kb-widget {
+  --kb-ok-ink: #1E7A45;
+  --kb-veil: rgba(245, 245, 252, 0.62);
+}
+
+/* Toggled by the engine on every focus/blur of .kb-capture. Deliberately
+   quieter than the .kb-capture:focus ring it accompanies — this is the outer
+   frame agreeing with the well, not a second highlight competing with it. */
+.kb-widget--focused {
+  border-color: var(--border-active);
+  box-shadow: var(--shadow-md);
+}
+
+/* Free play reuses the shared .syl-builder-label as the widget title; same
+   two corrections .sw-freeplay makes to it. */
+.kb-widget > .syl-builder-label { margin-bottom: 0; text-align: center; }
+
+/* Sits directly under the title, so it is pulled back inside the widget gap to
+   read as part of the same heading block rather than a third stacked row. */
+/* -6px pulls the line up under the widget title. In mountStep() drills there is
+   no title above it, so the negative margin has nothing to close — reset it. */
+.kb-subtitle:first-child { margin-top: 0; }
+.kb-subtitle {
+  max-width: 46ch;
+  margin: -6px 0 0;
+  color: var(--text-secondary);
+  font-size: clamp(0.78rem, 2.2vw, 0.85rem);
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Mode strip (--modes) and the Clear/Restart row (--actions). Both are plain
+   wrapped rows — the buttons inside are already .btn .btn-sm. --actions is
+   empty in some configurations, and an empty flex row would still eat a widget
+   gap, so it is collapsed. */
+.kb-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+.kb-controls:empty { display: none; }
+/* Same 40px control height the stroke widget's row uses (--sw-ctl-h). */
+.kb-controls .btn { min-height: 40px; }
+
+/* .kb-chip is the only one of the four button hooks that needs anything on top
+   of the button system, and only for layout: min-width stops the 4-mode strip
+   resizing as the labels change per locale, and the transparent border
+   compensates for .btn's `border: none` against .btn-outline's 1px — without
+   it the strip jumps 2px sideways on every mode switch. Identical reasoning,
+   and identical fix, to .sw-tab. */
+.kb-chip { flex: 0 0 auto; min-width: 88px; }
+.kb-chip.btn-primary { border: 1px solid transparent; }
+
+.kb-board {
+  /* Key geometry lives here so every .kb-key and its children scale off it. A
+     full ANSI row is 15u wide; at the 44px ideal that is 15×44 + 14×gap ≈ 744px
+     of keys, which fits inside the ~782px content box the 860px lesson mount
+     gives .kb-capture. clamp() sets the ideal; .kb-key carries flex-shrink +
+     min-width:0 so a narrower column squeezes the keys rather than overflowing. */
+  --kb-key-w: clamp(22px, 4.9vw, 44px);
+  --kb-key-h: clamp(34px, 5.6vw, 48px);
+  --kb-gap: clamp(3px, 0.55vw, 6px);
+  --kb-shift-accent: #FFD700;                 /* --accent; kept literal so the */
+  --kb-shift-tint: rgba(255, 215, 0, 0.13);   /* light override can differ */
+  /* KSX 5002 legend inks. Green = base jamo, amber = shifted jamo. Two shades
+     per theme so both stay legible on the dark AND light key face (--bg-card);
+     the [data-theme="light"] block below darkens each past the 4.5:1 line. */
+  --kb-jamo-base:  #34b866;
+  --kb-jamo-shift: #f0a93a;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--kb-gap);
+  /* fit-content hugs the widest (15u) row and centres the board; max-width:100%
+     is what stops it overflowing a narrow column, where the keys then shrink. */
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: calc(var(--kb-gap) * 1.6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-sidebar);
+  box-shadow: inset 0 1px 0 var(--border);
+  user-select: none;
+  -webkit-user-select: none;
+}
+[data-theme="light"] .kb-board {
+  /* Gold on a white card is unreadable; this is the same hue darkened past the
+     4.5:1 line against --bg-card, with a stronger tint to compensate. */
+  --kb-shift-accent: #B8860B;
+  --kb-shift-tint: rgba(255, 215, 0, 0.28);
+  /* Bright green/amber wash out on a white keycap; darken both past 4.5:1. */
+  --kb-jamo-base:  #157f3c;
+  --kb-jamo-shift: #b15c00;
+}
+
+.kb-row {
+  display: flex;
+  justify-content: center;
+  gap: var(--kb-gap);
+  max-width: 100%;
+}
+
+/* Takes the .syl-picker-btn look (bg-card + 1px --border + radius-sm) but is
+   deliberately NOT that class: .kb-latin is absolutely positioned against this
+   box, which needs position:relative, and the sizes are row-relative. */
+.kb-key {
+  position: relative;
+  flex: 0 1 var(--kb-key-w);
+  min-width: 0;
+  height: var(--kb-key-h);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  color: var(--text);
+  font-family: var(--font-sans); /* the ⇧ ⌫ ␣ legends; .kb-jamo re-fonts itself */
+  font-size: clamp(0.8rem, 2.6vw, 1rem);
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  /* Mandatory: without it, tapping two keys in quick succession is treated as a
+     double-tap and zooms the page mid-drill. */
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: background var(--transition-fast), border-color var(--transition-fast),
+              transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.kb-key:hover { background: var(--bg-card-hover); border-color: var(--border-hover); }
+.kb-key:focus-visible { outline: 2px solid var(--primary-light); outline-offset: 2px; }
+
+/* Home-row anchor bumps on ㄹ (F) and ㅓ (J) — the raised nubs a real keyboard
+   carries so the index fingers find home without looking. The key_intro tips
+   reference "the little bump on F/J", so make it real. .kb-key is position:
+   relative and uses box-shadow (not ::after) for its hint, so ::after is free. */
+.kb-key[data-code="KeyF"]::after,
+.kb-key[data-code="KeyJ"]::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 11px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--text-muted);
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+/* Width classes — a key `w` units wide is w × the 1u key width. Emitted by the
+   engine from MOD_KEYS[].w; the 1u jamo/number keys use the base flex-basis. */
+.kb-w-125 { flex-basis: calc(var(--kb-key-w) * 1.25); }
+.kb-w-15  { flex-basis: calc(var(--kb-key-w) * 1.5); }
+.kb-w-175 { flex-basis: calc(var(--kb-key-w) * 1.75); }
+.kb-w-2   { flex-basis: calc(var(--kb-key-w) * 2); }
+.kb-w-225 { flex-basis: calc(var(--kb-key-w) * 2.25); }
+.kb-w-275 { flex-basis: calc(var(--kb-key-w) * 2.75); }
+.kb-w-625 { flex-basis: calc(var(--kb-key-w) * 6.25); }
+
+/* ── Desktop board fill (≥601px) ───────────────────────
+   The user's complaint: on desktop the board hugged its content (fit-content,
+   keys capped at --kb-key-w = 44px), so a 15u row was ~744px and centred inside
+   the ~820px widget, leaving a dead ~45px gutter each side. Here the board
+   instead spans 95% of .kb-widget and its keys GROW to fill each row.
+
+   Rows are not equal in ANSI units — 15 / 14.5 / 15 / 15 / 12.5 (see the JS
+   KB_LAYOUT audit). If every row simply filled 100% the 1u key would be wider
+   on the shorter rows (row 1's 14.5u, row 4's 12.5u). Instead each row is given
+   a width = (its units / 15), and every key uses flex-grow = its unit width with
+   flex-basis:0, so 1u resolves to the SAME width on every row and the shorter
+   rows are merely narrower and centred — exactly a real keyboard's silhouette,
+   just scaled up to reach the full 95%. --kb-key-h still caps the height, so a
+   wider board does not make giant keys.
+
+   Scoped ≥601px on purpose: the ≤600px block keeps its own proven mechanism
+   (fixed --kb-key-w derived from row 1's 10 keys + gutter bleed), which must not
+   be disturbed — its keys are NOT flex-grow driven and a 320px board relies on
+   that exact math to avoid horizontal overflow. */
+@media (min-width: 601px) {
+  .kb-board {
+    width: 95%;
+    align-items: center;   /* centre the sub-15u rows (1 and 4) horizontally */
+  }
+  /* Rows carry an explicit width (needed so align-items:center does not collapse
+     a row of flex-basis:0 keys to content width). 15u rows = full board. */
+  .kb-row                { width: 100%; }
+  .kb-row:nth-child(2)   { width: 96.667%; }   /* row 1 — 14.5u / 15 */
+  .kb-row:nth-child(5)   { width: 83.333%; }   /* row 4 — 12.5u / 15 */
+
+  /* Keys fill their row proportionally. flex-grow = unit width, flex-basis:0. */
+  .kb-key   { flex: 1 1 0; }
+  .kb-w-125 { flex: 1.25 1 0; }
+  .kb-w-15  { flex: 1.5 1 0; }
+  .kb-w-175 { flex: 1.75 1 0; }
+  .kb-w-2   { flex: 2 1 0; }
+  .kb-w-225 { flex: 2.25 1 0; }
+  .kb-w-275 { flex: 2.75 1 0; }
+  .kb-w-625 { flex: 6.25 1 0; }
+}
+
+/* Reference-only keys (numbers, punctuation, Tab, Caps, Ctrl, Alt, Win): shown
+   so the learner reads a real keyboard, but inert. Dimmed, and no hover lift. */
+.kb-key--ref { opacity: 0.55; cursor: default; }
+.kb-key--ref:hover { background: var(--bg-card); border-color: var(--border); }
+/* Subtle acknowledgement flash for an inert key press (engine class --tap). */
+.kb-key--tap { background: var(--bg-card-hover); border-color: var(--border-hover); }
+
+/* The two functional keys that live in different rows on desktop vs. the compact
+   phone board. --mob instances are hidden on desktop; the @media block reveals
+   them and hides the --desk instances. */
+.kb-key--mob { display: none; }
+
+/* Number / punctuation legends: shifted symbol on top, base below, left-aligned
+   like a real keycap. No Korean. */
+.kb-key--sym {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1px;
+  padding-left: clamp(3px, 0.8vw, 6px);
+}
+.kb-sym-top, .kb-sym-bottom {
+  font-family: var(--font-sans);
+  font-size: clamp(0.52rem, 1.6vw, 0.72rem);
+  line-height: 1.05;
+  pointer-events: none;
+}
+.kb-sym-top    { color: var(--text-muted); }
+.kb-sym-bottom { color: var(--text); font-weight: 700; }
+/* Shift engaged: promote the top (shifted) legend, demote the base. */
+.kb-board.kb-shifted .kb-key--sym .kb-sym-top    { color: var(--text); font-weight: 700; }
+.kb-board.kb-shifted .kb-key--sym .kb-sym-bottom { color: var(--text-muted); font-weight: 400; }
+
+/* Modifier / function key label (Tab, Enter, Shift, 한/영 …). */
+.kb-mod {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  pointer-events: none;
+  color: var(--text-secondary);
+  line-height: 1;
+}
+.kb-mod-glyph { font-size: clamp(0.85rem, 2.5vw, 1.05rem); }
+.kb-mod-label {
+  font-size: clamp(0.5rem, 1.5vw, 0.62rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+/* The space bar carries only a faint caption; keep it low-key like a real key. */
+.kb-key--space .kb-mod-label { color: var(--text-muted); font-weight: 600; letter-spacing: 0.16em; }
+
+/* The jamo group: right-aligned on the key face, base jamo below, shifted jamo
+   (dual keys only) stacked above it. margin-left:auto shoves it to the right
+   edge past the top-left QWERTY corner. */
+.kb-jamo-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  margin-left: auto;
+  padding-right: clamp(2px, 0.7vw, 5px);
+  pointer-events: none;
+  min-width: 0;
+}
+
+/* Hangul legend — --font-korean so ㅃ/ㅢ render in Noto Sans KR, not a fallback.
+   Base jamo prints green (KSX 5002). */
+.kb-jamo {
+  font-family: var(--font-korean);
+  font-size: clamp(0.95rem, 3.2vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--kb-jamo-base);
+  pointer-events: none; /* clicks must land on the button, not the span */
+}
+
+/* The shifted (double) jamo on the seven dual keys — always visible, amber,
+   smaller, sitting above the green base. */
+.kb-jamo-shift {
+  font-family: var(--font-korean);
+  font-size: clamp(0.72rem, 2.4vw, 0.92rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--kb-jamo-shift);
+  pointer-events: none;
+}
+
+/* QWERTY legend, in the top-left corner (KSX 5002 reference) so it never
+   collides with the right-aligned jamo stack at any key size */
+.kb-latin {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  font-family: var(--font-sans);
+  font-size: clamp(0.5rem, 1.7vw, 0.62rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+/* Pressed flash. Same treatment for the real :active (on-screen click) and the
+   engine-applied class (physical keystroke), so the two are indistinguishable. */
+.kb-key:active,
+.kb-key--active {
+  border-color: var(--primary);
+  background: var(--bg-sidebar-active);
+  color: var(--primary-light);
+  transform: scale(0.94);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+/* "Press this one" pointer for key_intro steps and the jamo drill. Outline, not
+   border, so the key does not reflow; z-index lifts the ring over its
+   neighbours (.kb-key is already position:relative). */
+.kb-key--hint {
+  z-index: 1;
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  animation: kb-hint-pulse 1.2s ease-in-out infinite;
+}
+@keyframes kb-hint-pulse {
+  0%, 100% { outline-color: var(--primary);       box-shadow: 0 0 0 0 var(--primary-glow); }
+  50%      { outline-color: var(--primary-light); box-shadow: 0 0 0 7px transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kb-key--hint { animation: none; box-shadow: 0 0 0 4px var(--primary-glow); }
+  .kb-key:active,
+  .kb-key--active { transform: none; }
+}
+
+/* Shift layer active on the 7 dual-legend keys (Q W E R T / O P). Both jamo stay
+   printed (KSX 5002); Shift only promotes the amber shifted jamo and mutes the
+   green base, so the learner sees which one Shift produces. */
+.kb-key--shifted {
+  border-color: var(--kb-shift-accent);
+  background: var(--kb-shift-tint);
+}
+.kb-key--shifted .kb-jamo       { opacity: 0.45; }
+.kb-key--shifted .kb-jamo-shift { transform: scale(1.14); font-weight: 800; }
+
+/* Pressed flash recolours whichever jamo sit on the key. The base jamo now
+   carries its own green, so it no longer inherits the button's --active colour;
+   set both spans explicitly. */
+.kb-key--active .kb-jamo,
+.kb-key:active  .kb-jamo,
+.kb-key--active .kb-jamo-shift,
+.kb-key:active  .kb-jamo-shift { color: var(--primary-light); }
+
+/* --active must still win over --shifted when a shifted key is struck */
+.kb-key--shifted.kb-key--active,
+.kb-key--shifted:active {
+  border-color: var(--primary);
+  background: var(--bg-sidebar-active);
+}
+.kb-key--shifted.kb-key--active .kb-jamo,
+.kb-key--shifted:active .kb-jamo { opacity: 1; }
+
+/* The play surface. Focus state is load-bearing UX, not decoration: keystrokes
+   are only captured while this div has focus, so "am I focused?" must be
+   obvious at a glance. Unfocused reads as a dashed, dimmer well ("click here");
+   focused snaps to a solid --primary border plus a glow ring. */
+.kb-capture {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Fill .kb-widget so the board's 95% resolves against the full width, not a
+     shrink-wrapped column. */
+  width: 100%;
+  gap: 14px;
+  padding: 16px;
+  border: 2px dashed var(--border-hover);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  color: var(--text);
+  cursor: pointer;
+  outline: none; /* replaced by the explicit ring below — never simply removed */
+  transition: border-color var(--transition-fast), background var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+.kb-capture:hover { border-color: var(--primary-light); }
+.kb-capture:focus,
+.kb-capture:focus-within {
+  border-style: solid;
+  border-color: var(--primary);
+  background: var(--bg-card-hover);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+  cursor: default;
+}
+
+/* The "screen": the drill target (.kb-prompt) and the learner's composed output
+   (.kb-display) share one row on a wide widget and stack when the widget is
+   narrow. In free typing .kb-prompt is empty (and :empty-collapsed), so the
+   display flexes to the whole width. This is the "use the wide space" band that
+   sits above the keyboard. */
+.kb-screen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+/* In the screen the drill target becomes a panel matching the output panel. */
+.kb-screen > .kb-prompt {
+  flex: 1 1 240px;
+  min-width: 0;
+  justify-content: center;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-2);
+}
+.kb-screen > .kb-display {
+  flex: 1 1 320px;
+  width: auto;
+}
+
+/* Composed output. Block, not flex/grid: the committed text and the
+   .kb-display-current span must stay in one inline flow — as flex items they
+   would become separate boxes and wrap wrongly on long input. */
+.kb-display {
+  --kb-current-ink: var(--primary-light);
+  display: block;
+  width: 100%;
+  /* Reserves ~2 lines at the desktop type size so the widget does not jump the
+     first time a jamo lands. Over-reserved on mobile by design. */
+  min-height: 4.4rem;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-2);
+  color: var(--text);
+  font-family: var(--font-korean);
+  font-size: clamp(1.5rem, 5.5vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  /* Hangul has no spaces to break on inside a word; without this a long run
+     pushes the panel wider than its column. */
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+[data-theme="light"] .kb-display { --kb-current-ink: var(--primary); }
+
+/* The uncommitted block. border-bottom rather than text-decoration: it sits
+   clear of the hangul descenders and keeps a constant 3px weight as the font
+   size clamps down. */
+.kb-display-current {
+  padding-bottom: 2px;
+  border-bottom: 3px solid var(--primary);
+  color: var(--kb-current-ink);
+}
+
+/* Elapsed, CPM (Korean 타 per 분 — never English WPM), accuracy, streak */
+.kb-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 18px;
+  width: 100%;
+  padding: 9px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  /* Live counters: fixed-width digits stop the bar twitching every tick. */
+  font-variant-numeric: tabular-nums;
+}
+/* Structure-agnostic — whatever elements the engine puts in the bar, a stat
+   must not break across lines mid-value. */
+.kb-stats > * { white-space: nowrap; }
+
+/* End-of-round card */
+.kb-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px 22px;
+  border: 1px solid var(--border-active);
+  border-radius: var(--radius-lg);
+  background: var(--bg-2);
+  box-shadow: var(--shadow-md);
+  color: var(--text);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The "click here, then type" overlay.
+
+   ⚠ VISIBILITY IS ENGINE-OWNED. setFocused() writes style.display = 'none' when
+   the capture takes focus and style.display = '' when it loses it, so the value
+   below is what that '' falls back to. It must therefore be a real box value,
+   and it must NEVER be !important: with !important the hint would sit on top of
+   the keyboard forever, and with `display: none` here it could never appear.
+
+   It overlays .kb-capture, which is position: relative for exactly this reason.
+   pointer-events: none so the first click still reaches the key (or the capture)
+   underneath instead of being swallowed by the veil — that first click is the
+   one that focuses the widget, and losing it would make the hint feel broken. */
+.kb-focus-hint {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  /* Matches .kb-capture's own radius so the veil does not square off its corners. */
+  border-radius: var(--radius-lg);
+  background: var(--kb-veil);
+  color: var(--text);
+  font-size: clamp(0.85rem, 2.6vw, 1rem);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  text-align: center;
+  pointer-events: none;
+  animation: kb-hint-breathe 2.6s ease-in-out infinite;
+}
+@keyframes kb-hint-breathe {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.7; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kb-focus-hint { animation: none; }
+}
+
+/* Prompt block — "3 / 10", the target, then the instruction and any gloss.
+   The engine empties it in free typing, and an empty column would still hold a
+   widget gap open where the target used to be, so it collapses. */
+.kb-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  text-align: center;
+}
+.kb-prompt:empty { display: none; }
+
+.kb-progress {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The thing to type. --font-korean for the same reason as .kb-jamo, and
+   keep-all so a two-syllable word is never split down the middle. */
+.kb-prompt-target {
+  color: var(--text);
+  font-family: var(--font-korean);
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  word-break: keep-all;
+}
+
+.kb-prompt-sub {
+  max-width: 40ch;
+  /* Reserve two lines so the "<instruction> · <rom> · <meaning>" gloss wrapping
+     1↔2 lines between drill items cannot walk the keyboard up and down (this is
+     the anti-jitter the old .sr-typing-mount min-height floor used to provide). */
+  min-height: 2.6em;
+  color: var(--text-secondary);
+  font-size: clamp(0.78rem, 2.2vw, 0.88rem);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+/* One readout. Used twice: inline in the .kb-stats bar, and — restyled further
+   down — as a row of the summary card. Baseline alignment keeps the label and
+   its much larger value sitting on one line. */
+.kb-stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.kb-stat-label { color: var(--text-secondary); font-weight: 600; }
+.kb-stat-value {
+  color: var(--text);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Round feedback. The height is reserved rather than collapsed: the engine
+   clears the text 1.8s after every message, and a line that appears and
+   vanishes would bounce the keyboard up and down mid-drill. It is also an
+   aria-live region, so it has to stay in the layout to be announced. The colour
+   keys off the .correct-pop / .wrong-shake classes the engine already toggles
+   for the animation — scoped to .kb-feedback so the global animation rules and
+   the same two classes on .kb-display are untouched. */
+.kb-feedback {
+  width: 100%;
+  min-height: 1.5rem;
+  color: var(--text-secondary);
+  font-size: clamp(0.82rem, 2.4vw, 0.92rem);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+.kb-feedback.correct-pop { color: var(--kb-ok-ink); }
+.kb-feedback.wrong-shake { color: var(--primary); }
+
+/* Summary card internals.
+
+   ⚠ .kb-summary's own visibility is engine-owned in the same way as
+   .kb-focus-hint: finish() sets style.display = '' and startRound() sets
+   'none'. The `display: flex` on .kb-summary above is precisely what that ''
+   falls back to — do not !important it, and do not change it to `none`. */
+.kb-summary-title {
+  color: var(--text);
+  font-size: clamp(1.02rem, 3.4vw, 1.2rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+/* Inside the card the four stats read as a small results table rather than the
+   inline bar they form in .kb-stats. :last-of-type is the fourth stat — the
+   title is a <strong> and the replay control is a <button>, so neither matches. */
+.kb-summary .kb-stat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  max-width: 280px;
+  padding: 7px 2px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.kb-summary .kb-stat:last-of-type { border-bottom: none; }
+.kb-summary .kb-stat-value { font-size: 1.02rem; }
+/* The one button that is not inside a .kb-controls row, so it repeats that
+   row's control height itself. Layout only — the skin is .btn .btn-sm
+   .btn-outline. */
+.kb-again { min-height: 40px; margin-top: 4px; }
+
+/* ── key_intro (find-the-key) layout ─────────────────
+   Lesson stages 2–4 are all key_intro steps: press ONE jamo `reps` times.
+   They are NOT scored, so js/typing-game.js (keyIntro branch) drops the stats
+   bar, the composed .kb-display and the summary card, and emits this stacked
+   layout instead — a FULL-WIDTH "screen" band (.kb-intro-stage: the big target
+   + its physical-key callout + a row of rep dots) sitting ABOVE the full-width
+   keyboard, exactly like free-play's .kb-screen sits above the board. .kb-capture
+   is a centred flex column, so the band and the board just stack; the board keeps
+   the whole widget width (~834px on the 860px lesson mount) instead of being
+   squished into a right-hand column. The @media(max-width:600px) board-bleed
+   rules still apply — .kb-intro-stage adds no horizontal padding and stretches
+   full width, so the board's negative margin still reaches .kb-capture's padding
+   as before. */
+.kb-widget--intro {
+  gap: clamp(8px, 1.8vw, 12px);
+}
+/* Trim the intro widget's SIDE padding on desktop so the board uses the width
+   the lifted mount cap now gives it, and so the panel is no longer inset from
+   the lesson column — the "unnecessary padding/margin on both sides" complaint.
+   This is also the −2×12 term in the box-model trace above that takes the
+   content box to 834. Vertical padding stays at the base clamp. Guarded ≥601px
+   so it can NEVER override the ≤600px .kb-widget rule (padding:12px 8px + −8px
+   board bleed) the phone layout depends on. */
+@media (min-width: 601px) {
+  .kb-widget--intro { padding-left: 12px; padding-right: 12px; }
+}
+
+/* The full-width "screen" band: target callout stacked over the rep dots,
+   centred, sitting above the keyboard. Base .kb-prompt (width:100%) and
+   .kb-intro-progress (width:100%) fill it. */
+.kb-intro-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+/* "Press R" callout — spells out the physical QWERTY key, backing up the
+   pulsing --hint key on the board. */
+.kb-intro-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  color: var(--text-secondary);
+  font-size: clamp(0.85rem, 2.4vw, 0.98rem);
+  font-weight: 600;
+}
+/* The key glyph, drawn as a little keycap. border-bottom-width fakes the key
+   depth the on-screen keys don't bother with. */
+.kb-intro-keycap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.7em;
+  padding: 3px 8px;
+  border: 1px solid var(--border-hover);
+  border-bottom-width: 3px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1em;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Rep progress for the CURRENT key: filled dots = presses done. Overall
+   progress through the step's jamo is the "n / t" .kb-progress line up top.
+   min-height reserves the Done! pill's row so completion does not bounce the
+   layout. aria-live announces each press; aria-label carries "n of t presses". */
+.kb-intro-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 1.7rem;
+}
+.kb-intro-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--border-hover);
+  background: transparent;
+  transition: background var(--transition-fast), border-color var(--transition-fast),
+              transform var(--transition-fast);
+}
+.kb-intro-dot--done {
+  border-color: var(--primary);
+  background: var(--primary);
+  transform: scale(1.14);
+}
+/* Reward on the final press: the pill appears beside the now-full dots and the
+   row breathes twice. */
+.kb-intro-done {
+  margin-left: 8px;
+  padding: 3px 12px;
+  border-radius: var(--radius-full);
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+.kb-intro-progress--done { animation: kb-hint-breathe 1.4s ease-in-out 2; }
+@media (prefers-reduced-motion: reduce) {
+  .kb-intro-dot--done { transform: none; }
+  .kb-intro-progress--done { animation: none; }
+}
+
+@media (max-width: 600px) {
+  /* ── Compact phone board ──────────────────────────────
+     A full 5-row ANSI board with numbers and Ctrl/Alt is unusable at phone
+     width, so we collapse to what a real mobile Korean keyboard shows: the
+     three jamo rows, one Shift, Backspace, Enter and a wide space bar. Every
+     reference-only key (numbers, punctuation, Tab, Caps, Ctrl, Alt, Win) and
+     the desktop-only duplicate keys are hidden; the mobile duplicates of
+     Backspace (into row 3) and Enter (into the space row) are revealed. That
+     leaves exactly four rows:
+         QWERTYUIOP   /   ASDFGHJKL   /   ⇧ ZXCVBNM ⌫   /   ⏎ [ Space ]
+
+     Board sizing is unchanged from the proven phone layout: reclaim the page
+     gutter with negative margins, give .kb-row a definite width, and DERIVE
+     --kb-key-w from row 1's 10 keys + 9 gaps so it fills to the pixel at every
+     width (320px included) and never causes a horizontal scrollbar. */
+  .kb-widget {
+    padding: 12px 8px;
+    gap: 10px;
+    margin-inline: -8px;
+  }
+  .kb-capture {
+    align-self: stretch;   /* span, so the board inside gets the full width */
+    padding: 12px 8px;
+    gap: 12px;
+  }
+  .kb-board {
+    align-self: stretch;
+    width: auto;           /* NOT the desktop fit-content */
+    /* Override base rules that would cancel the gutter bleed: auto side margins
+       make a flex item ignore `stretch`; max-width:100% would re-clamp the box. */
+    margin-inline: -6px;
+    max-width: none;
+    padding: 3px;
+
+    --kb-gap: clamp(3px, 0.9vw, 5px);
+    --kb-key-w: min(44px, calc((100% - 9 * var(--kb-gap)) / 10));
+    --kb-key-h: clamp(46px, 13vw, 54px);
+  }
+
+  /* Hide the reference-only keys and the desktop duplicates; reveal the two
+     mobile duplicates. */
+  .kb-key--ref,
+  .kb-key--desk { display: none; }
+  .kb-row--nums { display: none; }
+  .kb-key--mob  { display: flex; }
+
+  /* Row 3 is ⇧ + 7 letters + ⌫ = 1.5 + 7 + 1.5 = 10u, matching row 1. */
+  .kb-key--shift-l { flex-basis: calc(var(--kb-key-w) * 1.5); }
+  /* Space fills whatever the row-4 Enter key leaves. */
+  .kb-key--space { flex-grow: 1; }
+  /* Modifier keys show their glyph only — no room for the word on a phone. */
+  .kb-mod-label { display: none; }
+  .kb-mod-glyph { font-size: clamp(1.1rem, 4.6vw, 1.4rem); }
+
+  /* The keys grew; the legend grows with them. */
+  .kb-jamo { font-size: clamp(1.05rem, 4.4vw, 1.35rem); }
+  .kb-jamo-shift { font-size: clamp(0.72rem, 3vw, 0.92rem); }
+  .kb-jamo-stack { padding-right: clamp(1px, 0.9vw, 4px); }
+  .kb-latin { top: 2px; left: 3px; }
+  .kb-sym-top, .kb-sym-bottom { font-size: 0.62rem; }
+
+  /* Screen stacks above the board. */
+  .kb-screen { gap: 8px; }
+  .kb-screen > .kb-display,
+  .kb-screen > .kb-prompt { flex-basis: 100%; }
+  .kb-display { min-height: 3.4rem; padding: 10px 12px; }
+  .kb-stats { gap: 6px 12px; padding: 8px 12px; font-size: 0.74rem; }
+  .kb-summary { padding: 16px 14px; }
+  .kb-prompt-target { font-size: clamp(1.7rem, 11vw, 2.4rem); }
+  /* 44px tap targets on touch. */
+  .kb-controls .btn,
+  .kb-again { min-height: 44px; }
+  .kb-summary .kb-stat { max-width: none; }
+}

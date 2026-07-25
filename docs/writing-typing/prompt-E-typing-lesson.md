@@ -56,7 +56,7 @@ In `LessonProgressGrid.LESSONS`, insert after the `pronunciation` row:
 
 ## 4. `learn/data/typing.json`
 
-Same top-level shape as prompt C (`lesson: "typing"`, sequential step `id`s, `stage` numbers, EN + `name_kr` only — translations in prompt F2). `totalSteps: 28`.
+Same top-level shape as prompt C (`lesson: "typing"`, sequential step `id`s, `stage` numbers, EN + `name_kr` only — translations in prompt F2). `totalSteps: 29`.
 
 ### Stages
 
@@ -67,7 +67,7 @@ Same top-level shape as prompt C (`lesson: "typing"`, sequential step `id`s, `st
 | 3 | Vowel Keys | 모음 키 | 10 | 15 | 6 |
 | 4 | Shift Keys | 쌍자음 키 | 16 | 18 | 3 |
 | 5 | Type Syllables | 음절 입력 | 19 | 23 | 8 |
-| 6 | Type Words | 단어 입력 | 24 | 28 | 10 |
+| 6 | Type Words | 단어 입력 | 24 | 29 | 10 |
 
 ### Steps
 
@@ -118,18 +118,30 @@ Same top-level shape as prompt C (`lesson: "typing"`, sequential step `id`s, `st
 - 25: items 한국 (Korea) 사랑 (love) 친구 (friend) 김치 (kimchi).
 - 26: items 안녕하세요 (hello) 감사합니다 (thank you).
 - 27: `mode:"word"`, `target:{ "seconds": 60 }`, items = the full word pool from steps 24–25 cycled — a 60-second CPM sprint; tip: 200+ 타/분 is beginner-solid, Korean pros hit 600+.
-- 28: `lesson_complete` (shape from hangul.json; `next_url` to `/learn/vocabulary` or the next logical lesson; message points at the free-play typing pad below).
+- 28: **`reading_card` — "Type Korean on Your Own Devices"** (added 2026-07-24 at the user's request; this is why `totalSteps` is **29**, not 28, and stage 6 runs 24–29).
+
+  Rationale: every drill on this site works with **no** Korean IME installed — that is deliberate (no editable element exists, input is keyed off `e.code`, mobile users tap the on-screen keys). A tester nonetheless asked whether the widget should tell them to install a Korean keyboard, which showed the question is live in learners' minds. The widget itself now answers it inline ("no Korean keyboard needed"), and that is the right place for it — but *actually* enabling Korean input on your own phone and computer is real learner content, so it belongs here in the lesson, where prompt F2 translates it into all 8 languages. Do **not** move these instructions into `js/typing-game.js`.
+
+  Body: state plainly that nothing needs installing to practise here, then give the real steps as a `rules` list (verify each against current OS versions before writing — these menu paths drift):
+  - **iOS** — Settings → General → Keyboard → Keyboards → Add New Keyboard → Korean (한국어), 2-set/두벌식. Switch with the 🌐 key.
+  - **Android** — Settings → System → Languages & input → On-screen keyboard → Gboard → Languages → Add keyboard → Korean, 2-set. Switch with the 🌐 key or long-press Space.
+  - **Windows** — Settings → Time & language → Language & region → Add a language → 한국어. Switch with Win+Space; toggle Hangul/English with the Han/Eng key (right Alt).
+  - **macOS** — System Settings → Keyboard → Text Input → Edit → + → Korean → 2-Set. Switch with Ctrl+Space.
+
+  Tip: the layout is the same 두벌식 you just learned, so muscle memory transfers directly.
+
+- 29: `lesson_complete` (shape from hangul.json; `next_url` to `/learn/vocabulary` or the next logical lesson; message points at the free-play typing pad below).
 
 ## 5. Finish `learn/typing.html`
 
-Enable `StepRunner.init('/learn/data/typing.json');` before `TypingGame.initFreePlay(...)`. Update `.lesson-meta` (~28 steps / ~36 min) and intro bullets.
+Enable `StepRunner.init('/learn/data/typing.json');` before `TypingGame.initFreePlay(...)`. Update `.lesson-meta` (~29 steps / ~38 min) and intro bullets.
 
 ## 6. Regenerate manifest
 
 ```bash
 node scripts/gen-lesson-manifest.cjs
 ```
-Expect a `typing` row: `steps: 28`, `countable: 27`, `group: "core"`.
+Expect a `typing` row: `steps: 29`, `countable: 28`, `group: "core"`.
 
 ## Acceptance criteria + verification
 
@@ -140,7 +152,7 @@ node dev.js
 ```
 
 Browser (http://localhost:3000/learn/typing.html):
-1. All 28 steps click through; stage tabs correct; `?step=19` deep-links into the first drill.
+1. All 29 steps click through; stage tabs correct; `?step=19` deep-links into the first drill.
 2. `key_intro`: target key pulses, physical AND on-screen presses both count, step completes after reps, continue button appears, Next was hidden.
 3. `typing_drill`: jamo/syllable/word modes all complete; CPM and accuracy numbers are plausible (type ~1 key/sec → CPM ≈ 60); `counters.quizzes` increments per drill, `counters.letters` per key_intro.
 4. The 60-second sprint ends on time and reports a summary.
