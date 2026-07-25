@@ -65,6 +65,7 @@
     'CATEGORIES · 카테고리': 'DANH MỤC · 카테고리', 'DEEP DIVES · 심층 탐구': 'CHUYÊN SÂU · 심층 탐구',
     // ── Learn Sidebar ─────────────────────────────────
     'Introduction': 'Giới thiệu', 'Syllable Blocks': 'Khối âm tiết', 'Pronunciation Guide': 'Hướng dẫn phát âm',
+    'Letter Writing': 'Viết chữ cái', 'Korean Typing': 'Gõ tiếng Hàn',
     'Vocab': 'Từ vựng', 'Greetings': 'Lời chào', 'Numbers': 'Số', 'Family': 'Gia đình',
     'Food & Drink': 'Thức ăn & Đồ uống', 'Colors': 'Màu sắc', 'Days & Time': 'Ngày & Giờ', 'Places': 'Địa điểm',
     'Emotions': 'Cảm xúc', 'Body Parts': 'Bộ phận cơ thể', 'Shopping': 'Mua sắm', 'Weather': 'Thời tiết',
