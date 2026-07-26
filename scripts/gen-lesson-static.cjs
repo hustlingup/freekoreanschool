@@ -53,6 +53,8 @@ const PAGES = {
   'shopping': ['shopping'],
   'emotions': ['emotions'],
   'speech-levels': ['speech-levels'],
+  'letter-writing': ['letter-writing'],
+  'typing': ['typing'],
   // vocabulary.html swaps between 21 category files via ?cat= — the static
   // reference carries all of them, because all 21 live at the same URL.
   'vocabulary': [
@@ -115,6 +117,9 @@ const L = {
     cMeaning: 'Meaning', cNote: 'Note', cKorean: 'Korean',
     cPieces: 'Pieces', cSyllable: 'Syllable',
     answer: 'Answer', tip: 'Tip', pattern: 'Pattern',
+    sStroke: 'How to write each letter', cStrokes: 'Strokes', cStrokeOrder: 'Stroke order',
+    sKeys: 'Keyboard keys', cKey: 'Key', cFinger: 'Finger and position',
+    sTyping: 'Typing practice',
   },
   ja: {
     ref: 'レッスン全文リファレンス',
@@ -128,6 +133,9 @@ const L = {
     cMeaning: '意味', cNote: 'メモ', cKorean: '韓国語',
     cPieces: 'パーツ', cSyllable: '音節',
     answer: '答え', tip: 'ポイント', pattern: 'パターン',
+    sStroke: '各文字の書き方', cStrokes: '画数', cStrokeOrder: '筆順',
+    sKeys: 'キーボードのキー', cKey: 'キー', cFinger: '指と位置',
+    sTyping: 'タイピング練習',
   },
   'zh-tw': {
     ref: '完整課程參考',
@@ -141,6 +149,9 @@ const L = {
     cMeaning: '意思', cNote: '說明', cKorean: '韓語',
     cPieces: '組件', cSyllable: '音節',
     answer: '答案', tip: '提示', pattern: '結構',
+    sStroke: '每個字母的寫法', cStrokes: '筆畫', cStrokeOrder: '筆順',
+    sKeys: '鍵盤按鍵', cKey: '按鍵', cFinger: '手指與位置',
+    sTyping: '打字練習',
   },
   es: {
     ref: 'Referencia completa de la lección',
@@ -154,6 +165,9 @@ const L = {
     cMeaning: 'Significado', cNote: 'Nota', cKorean: 'Coreano',
     cPieces: 'Piezas', cSyllable: 'Sílaba',
     answer: 'Respuesta', tip: 'Consejo', pattern: 'Patrón',
+    sStroke: 'Cómo escribir cada letra', cStrokes: 'Trazos', cStrokeOrder: 'Orden de trazos',
+    sKeys: 'Teclas del teclado', cKey: 'Tecla', cFinger: 'Dedo y posición',
+    sTyping: 'Práctica de mecanografía',
   },
   de: {
     ref: 'Vollständige Lektionsreferenz',
@@ -167,6 +181,9 @@ const L = {
     cMeaning: 'Bedeutung', cNote: 'Hinweis', cKorean: 'Koreanisch',
     cPieces: 'Teile', cSyllable: 'Silbe',
     answer: 'Antwort', tip: 'Tipp', pattern: 'Muster',
+    sStroke: 'So schreibt man jeden Buchstaben', cStrokes: 'Striche', cStrokeOrder: 'Strichreihenfolge',
+    sKeys: 'Tastaturtasten', cKey: 'Taste', cFinger: 'Finger und Position',
+    sTyping: 'Tippübung',
   },
   fr: {
     ref: 'Référence complète de la leçon',
@@ -180,6 +197,9 @@ const L = {
     cMeaning: 'Signification', cNote: 'Remarque', cKorean: 'Coréen',
     cPieces: 'Pièces', cSyllable: 'Syllabe',
     answer: 'Réponse', tip: 'Conseil', pattern: 'Modèle',
+    sStroke: 'Comment écrire chaque lettre', cStrokes: 'Traits', cStrokeOrder: 'Ordre des traits',
+    sKeys: 'Touches du clavier', cKey: 'Touche', cFinger: 'Doigt et position',
+    sTyping: 'Exercice de frappe',
   },
   vi: {
     ref: 'Tài liệu tham khảo đầy đủ của bài học',
@@ -193,6 +213,9 @@ const L = {
     cMeaning: 'Nghĩa', cNote: 'Ghi chú', cKorean: 'Tiếng Hàn',
     cPieces: 'Thành phần', cSyllable: 'Âm tiết',
     answer: 'Đáp án', tip: 'Mẹo', pattern: 'Mẫu',
+    sStroke: 'Cách viết từng chữ cái', cStrokes: 'Số nét', cStrokeOrder: 'Thứ tự nét',
+    sKeys: 'Phím bàn phím', cKey: 'Phím', cFinger: 'Ngón tay và vị trí',
+    sTyping: 'Luyện gõ',
   },
   th: {
     ref: 'เอกสารอ้างอิงบทเรียนฉบับเต็ม',
@@ -206,6 +229,9 @@ const L = {
     cMeaning: 'ความหมาย', cNote: 'หมายเหตุ', cKorean: 'ภาษาเกาหลี',
     cPieces: 'ส่วนประกอบ', cSyllable: 'พยางค์',
     answer: 'คำตอบ', tip: 'เคล็ดลับ', pattern: 'รูปแบบ',
+    sStroke: 'วิธีเขียนตัวอักษรแต่ละตัว', cStrokes: 'จำนวนเส้น', cStrokeOrder: 'ลำดับการเขียน',
+    sKeys: 'ปุ่มบนแป้นพิมพ์', cKey: 'ปุ่ม', cFinger: 'นิ้วและตำแหน่ง',
+    sTyping: 'ฝึกพิมพ์',
   },
   id: {
     ref: 'Referensi lengkap pelajaran',
@@ -219,6 +245,9 @@ const L = {
     cMeaning: 'Arti', cNote: 'Catatan', cKorean: 'Bahasa Korea',
     cPieces: 'Bagian', cSyllable: 'Suku kata',
     answer: 'Jawaban', tip: 'Tips', pattern: 'Pola',
+    sStroke: 'Cara menulis setiap huruf', cStrokes: 'Goresan', cStrokeOrder: 'Urutan goresan',
+    sKeys: 'Tombol papan ketik', cKey: 'Tombol', cFinger: 'Jari dan posisi',
+    sTyping: 'Latihan mengetik',
   },
 };
 
@@ -404,9 +433,97 @@ function renderComplete(step, lang, t) {
   return out.join('\n');
 }
 
+/** stroke_demo run → a "how to write each letter" table (letter-writing). */
+function renderStrokeTable(steps, lang, t) {
+  const out = [`<h3 class="ls-h3">${esc(t.sStroke)}</h3>`];
+  out.push('<table class="ls-table"><thead><tr>' +
+    `<th scope="col">${esc(t.cLetter)}</th>` +
+    `<th scope="col">${esc(t.cStrokes)}</th>` +
+    `<th scope="col">${esc(t.cStrokeOrder)}</th>` +
+    `<th scope="col">${esc(t.cExample)}</th>` +
+    '</tr></thead><tbody>');
+  for (const s of steps) {
+    // The letter's own sound. `romanization` is the jamo reading (e.g. "g / k");
+    // katakana/zhuyin on these steps track the example word, not the letter, so
+    // pronAid is deliberately not used in the letter cell — romanization is the
+    // reliable per-letter pronunciation aid.
+    const rom = s.romanization ? ` <span class="ls-aid">${esc(s.romanization)}</span>` : '';
+    const hint = loc(s, 'hint', lang) || '';
+    const exMeaning = loc(s, 'example_meaning', lang) || '';
+    let ex = ko(s.example_word || '');
+    if (s.example_word) {
+      const aid = pronAid(s, lang); // here pronAid is the example-word reading
+      if (aid && aid !== s.romanization) ex += ` <span class="ls-aid">${esc(aid)}</span>`;
+      if (exMeaning) ex += ` <span class="ls-aid">— ${esc(exMeaning)}</span>`;
+    }
+    out.push('<tr>' +
+      `<td class="ls-ko-cell ls-big">${ko(s.char)}${rom}</td>` +
+      `<td>${esc(s.stroke_count != null ? s.stroke_count : '')}</td>` +
+      `<td>${esc(hint)}</td>` +
+      `<td class="ls-ko-cell">${ex}</td>` +
+      '</tr>');
+  }
+  out.push('</tbody></table>');
+  return out.join('\n');
+}
+
+/** key_intro run → a keyboard-keys reference table (typing). */
+function renderKeyTable(steps, lang, t) {
+  const out = [`<h3 class="ls-h3">${esc(t.sKeys)}</h3>`];
+  out.push('<table class="ls-table"><thead><tr>' +
+    `<th scope="col">${esc(t.cKey)}</th>` +
+    `<th scope="col">${esc(t.cFinger)}</th>` +
+    '</tr></thead><tbody>');
+  for (const s of steps) {
+    const keys = Array.isArray(s.jamo) ? s.jamo.join(' ') : (s.jamo || '');
+    const tip = loc(s, 'tip', lang) || s.tip || '';
+    out.push('<tr>' +
+      `<td class="ls-ko-cell ls-big">${ko(keys)}</td>` +
+      `<td>${esc(tip)}</td>` +
+      '</tr>');
+  }
+  out.push('</tbody></table>');
+  return out.join('\n');
+}
+
+/** typing_drill run → the drill tips, plus a word list for word-mode drills. */
+function renderDrillSection(steps, lang, t) {
+  const out = [`<h3 class="ls-h3">${esc(t.sTyping)}</h3>`];
+  for (const s of steps) {
+    const tip = loc(s, 'tip', lang) || s.tip;
+    if (tip) out.push(`<p>${esc(tip)}</p>`);
+    if (s.mode === 'word' && Array.isArray(s.items) && s.items.length) {
+      out.push('<table class="ls-table"><thead><tr>' +
+        `<th scope="col">${esc(t.cKorean)}</th>` +
+        `<th scope="col">${esc(t.cMeaning)}</th>` +
+        '</tr></thead><tbody>');
+      for (const it of s.items) {
+        const meaning = loc(it, 'meaning', lang) || it.meaning || '';
+        out.push('<tr>' +
+          `<td class="ls-ko-cell ls-big">${ko(it.ko)}</td>` +
+          `<td>${esc(meaning)}</td>` +
+          '</tr>');
+      }
+      out.push('</tbody></table>');
+    }
+  }
+  return out.join('\n');
+}
+
 /* ── Lesson → HTML ───────────────────────────────────────────────────────── */
 
-const GROUPED = { card_reveal: renderCardRevealTable, listen_repeat: renderWordTable, syllable_builder: renderBuilderTable, match_quiz: renderQuizList };
+const GROUPED = {
+  card_reveal: renderCardRevealTable, listen_repeat: renderWordTable,
+  syllable_builder: renderBuilderTable, match_quiz: renderQuizList,
+  stroke_demo: renderStrokeTable, key_intro: renderKeyTable,
+  typing_drill: renderDrillSection,
+};
+
+/* Types that are practice repeats of the immediately preceding step and carry
+   no unique prose — rendered by nothing, but "handled" so they never trip the
+   unhandled-type warning, and transparent to run-batching so the demos they sit
+   between still group into one table. (stroke_trace re-practices its stroke_demo.) */
+const TRANSPARENT = new Set(['stroke_trace']);
 
 const unhandled = new Set();
 
@@ -438,10 +555,20 @@ function renderLesson(data, lang, t, opts = {}) {
     let i = 0;
     while (i < steps.length) {
       const type = steps[i].type;
-      if (GROUPED[type]) {
-        let j = i;
-        while (j < steps.length && steps[j].type === type) j++;
-        out.push(GROUPED[type](steps.slice(i, j), lang, t));
+      if (TRANSPARENT.has(type)) {
+        // Handled: emits nothing, produces no duplicate content.
+        i++;
+      } else if (GROUPED[type]) {
+        // Collect the run of this grouped type, stepping over any transparent
+        // steps interleaved between them (e.g. stroke_trace between stroke_demo)
+        // so the whole run still becomes one table.
+        const run = [steps[i]];
+        let j = i + 1;
+        while (j < steps.length && (steps[j].type === type || TRANSPARENT.has(steps[j].type))) {
+          if (steps[j].type === type) run.push(steps[j]);
+          j++;
+        }
+        out.push(GROUPED[type](run, lang, t));
         i = j;
       } else if (type === 'reading_card') {
         out.push(renderReadingCard(steps[i], lang, t));
@@ -604,13 +731,20 @@ for (const lang of LOCALES) {
 
     const html = fs.readFileSync(file, 'utf8');
     const anchor = ANCHORS[page] || DEFAULT_ANCHOR;
-    const out = splice(html, block, anchor);
+    let out = splice(html, block, anchor);
 
     if (out == null) {
       console.warn(`  ! no anchor (${anchor}) in ${path.relative(ROOT, file)}`);
       skipped++;
       continue;
     }
+    // Preserve the source file's newline convention. splice() joins the LF-built
+    // block onto the file's existing slices, so on a CRLF working tree (Windows
+    // autocrlf) it would flip only the block region to LF — a content-free change
+    // that still dirties the file in `git status`. Normalise the whole output
+    // back to the file's own newline style so re-running is a true no-op on every
+    // platform and only real content changes ever show up.
+    if (html.includes('\r\n')) out = out.replace(/\r\n/g, '\n').replace(/\n/g, '\r\n');
     if (out !== html) {
       if (!DRY) fs.writeFileSync(file, out, 'utf8');
       written++;
