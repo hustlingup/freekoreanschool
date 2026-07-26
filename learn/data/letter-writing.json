@@ -15,7 +15,7 @@
       "name_fr": "Comment fonctionnent les traits",
       "name_de": "Wie Striche funktionieren",
       "name_vi": "Cách các nét hoạt động",
-      "name_th": "ลำดับการเขียนทำงานอย่างไร",
+      "name_th": "ลำดับขีดทำงานอย่างไร",
       "name_id": "Cara Kerja Goresan"
     },
     {
@@ -106,8 +106,8 @@
       "title_es": "Las tres reglas del orden de trazos",
       "title_fr": "Les trois règles de l'ordre des traits",
       "title_de": "Die drei Regeln der Strichreihenfolge",
-      "title_vi": "Ba quy tắc về thứ tự nét",
-      "title_th": "สามกฎของลำดับการเขียน",
+      "title_vi": "Ba quy tắc về thứ tự nét viết",
+      "title_th": "สามกฎของลำดับขีด",
       "title_id": "Tiga Aturan Urutan Goresan",
       "body_ja": "ハングルの文字はどれもいくつかの簡単な画からできていて、その画はいつも決まった順番で書きます。三つの規則ですべてをカバーできます。",
       "body_zh_tw": "每個韓文字母都由幾個簡單的筆畫組成，而這些筆畫的書寫順序始終固定。三條規則就能涵蓋全部。",
@@ -149,7 +149,7 @@
       ],
       "rules_th": [
         "บนก่อนล่าง — เส้นที่อยู่สูงสุดเขียนก่อน",
-        "ซ้ายก่อนขวา — เมื่อเส้นอยู่เคียงข้างกัน ให้เริ่มจากเส้นทางซ้าย",
+        "ซ้ายก่อนขวา — เมื่อเส้นอยู่เคียงข้างกัน ให้เริ่มจากเส้นด้านซ้าย",
         "เส้นนอนก่อนเส้นตั้งที่ตัดผ่าน — ลากเส้นขวางก่อน แล้วจึงลากเส้นที่ผ่ากลาง"
       ],
       "rules_id": [
@@ -263,8 +263,8 @@
       ],
       "rules_th": [
         "พยัญชนะต้นก่อน (초성) — ช่องมุมบนซ้าย",
-        "จากนั้นสระ (중성) — อยู่ทางขวาหรือด้านล่างของพยัญชนะ",
-        "แล้วจึงพยัญชนะสะกด (종성) ที่ด้านล่าง หากพยางค์นั้นมี"
+        "จากนั้นสระกลาง (중성) — อยู่ทางขวาหรือด้านล่างของพยัญชนะ",
+        "แล้วจึงพยัญชนะท้ายพยางค์ (종성) ที่ด้านล่าง หากพยางค์นั้นมี"
       ],
       "rules_id": [
         "Konsonan awal dulu (초성) — posisi kiri atas.",
@@ -298,7 +298,7 @@
       },
       "tip_vi": {
         "icon": "💡",
-        "label": "Dấu nhỏ trên đỉnh ㅎ và ㅊ",
+        "label": "Dấu trên đỉnh ㅎ và ㅊ",
         "text": "Dấu nhỏ trên đỉnh ㅎ và ㅊ có thể viết nằm ngang, xiên, hoặc thẳng đứng — tiếng Hàn không có quy tắc chính thức, và bạn sẽ thấy cả ba kiểu. Chúng tôi viết nó xiên, giống như cách hầu hết các phông chữ Hàn Quốc in ra, để chữ bạn luyện trông giống tiếng Hàn mà bạn sẽ thực sự đọc."
       },
       "tip_th": {
@@ -677,7 +677,7 @@
       "hint_fr": "Commencez en haut et faites tout le tour jusqu'à retrouver votre point de départ.",
       "hint_de": "Beginne oben und gehe einmal ganz herum, bis du deinen Ausgangspunkt wieder erreichst.",
       "hint_vi": "Bắt đầu từ đỉnh và đi trọn một vòng cho đến khi gặp lại điểm xuất phát.",
-      "hint_th": "เริ่มที่ด้านบนแล้ววนรอบจนครบมาบรรจบจุดเริ่มต้น",
+      "hint_th": "เริ่มที่ด้านบน แล้ววนรอบจนกลับมาบรรจบที่จุดเริ่มต้น",
       "hint_id": "Mulai dari atas dan berputar penuh hingga bertemu titik awal Anda."
     },
     {
@@ -723,7 +723,7 @@
       "hint_fr": "Commencez en haut à gauche : à l'horizontale, puis vers le bas à gauche d'un seul trait. Ensuite la jambe droite.",
       "hint_de": "Beginne oben links: waagerecht, dann in einem Strich schräg nach links unten. Dann der rechte Schenkel.",
       "hint_vi": "Bắt đầu từ góc trên bên trái: sang ngang, rồi hất xuống bên trái trong một nét. Rồi nét chân phải.",
-      "hint_th": "เริ่มที่มุมบนซ้าย: ลากขวา แล้วสะบัดลงซ้ายในเส้นเดียว จากนั้นขาขวา",
+      "hint_th": "เริ่มที่มุมบนซ้าย: ลากขวาแล้วสะบัดลงซ้ายในเส้นเดียวกัน จากนั้นขาขวา",
       "hint_id": "Mulai dari kiri atas: ke samping, lalu turun ke kiri dalam satu goresan. Lalu kaki kanan."
     },
     {
@@ -1164,8 +1164,8 @@
       "example_meaning_es": "gracias (informal)",
       "example_meaning_fr": "merci (informel)",
       "example_meaning_de": "Danke (informell)",
-      "example_meaning_vi": "cảm ơn (thân mật)",
-      "example_meaning_th": "ขอบคุณ (ไม่เป็นทางการ)",
+      "example_meaning_vi": "cảm ơn",
+      "example_meaning_th": "ขอบคุณ",
       "example_meaning_id": "terima kasih (tidak resmi)",
       "katakana": "コマウォ",
       "zhuyin": "ㄛ"
@@ -1394,7 +1394,7 @@
       "example_meaning_es": "amigo/a",
       "example_meaning_fr": "ami(e)",
       "example_meaning_de": "Freund/in",
-      "example_meaning_vi": "bạn bè",
+      "example_meaning_vi": "bạn",
       "example_meaning_th": "เพื่อน",
       "example_meaning_id": "teman",
       "katakana": "チング",
@@ -1486,8 +1486,8 @@
       "example_meaning_es": "gracias (informal)",
       "example_meaning_fr": "merci (informel)",
       "example_meaning_de": "Danke (informell)",
-      "example_meaning_vi": "cảm ơn (thân mật)",
-      "example_meaning_th": "ขอบคุณ (ไม่เป็นทางการ)",
+      "example_meaning_vi": "cảm ơn",
+      "example_meaning_th": "ขอบคุณ",
       "example_meaning_id": "terima kasih (tidak resmi)",
       "katakana": "コマウォ",
       "zhuyin": "ㄍㄛ"
@@ -1596,7 +1596,7 @@
       "hint_es": "ㅎ arriba a la izquierda, ㅏ a su derecha y luego ㄴ a lo largo de la base.",
       "hint_fr": "ㅎ en haut à gauche, ㅏ à sa droite, puis ㄴ le long du bas.",
       "hint_de": "ㅎ oben links, ㅏ rechts davon, dann ㄴ unten entlang.",
-      "hint_vi": "ㅎ ở góc trên bên trái, ㅏ bên phải nó, rồi ㄴ chạy dọc phía dưới.",
+      "hint_vi": "ㅎ ở góc trên bên trái, ㅏ bên phải nó, rồi ㄴ nằm ngang ở phía dưới.",
       "hint_th": "ㅎ มุมบนซ้าย ㅏ ทางขวา แล้ว ㄴ ที่ด้านล่าง",
       "hint_id": "ㅎ di kiri atas, ㅏ di kanannya, lalu ㄴ di sepanjang bawah."
     },
@@ -1617,7 +1617,7 @@
       "hint_fr": "De haut en bas dans le bloc : ㄱ, puis ㅗ, puis ㅁ comme consonne finale.",
       "hint_de": "Von oben nach unten durch den Block: ㄱ, dann ㅗ, dann ㅁ als Schlusskonsonant.",
       "hint_vi": "Đi thẳng từ trên xuống trong khối: ㄱ, rồi ㅗ, rồi ㅁ làm phụ âm cuối.",
-      "hint_th": "ไล่จากบนลงล่างในบล็อก: ㄱ แล้ว ㅗ จากนั้น ㅁ เป็นพยัญชนะสะกด",
+      "hint_th": "ไล่จากบนลงล่างในบล็อก: ㄱ แล้ว ㅗ จากนั้น ㅁ เป็นตัวสะกด",
       "hint_id": "Lurus ke bawah dalam blok: ㄱ, lalu ㅗ, kemudian ㅁ sebagai konsonan akhir.",
       "example_meaning_ja": "熊",
       "example_meaning_zh_tw": "熊",
@@ -1734,7 +1734,7 @@
       "hint_es": "ㅂ arriba a la izquierda, ㅣ por la derecha y luego ㅊ a lo largo de la base.",
       "hint_fr": "ㅂ en haut à gauche, ㅣ le long de la droite, puis ㅊ le long du bas.",
       "hint_de": "ㅂ oben links, ㅣ rechts hinunter, dann ㅊ unten entlang.",
-      "hint_vi": "ㅂ ở góc trên bên trái, ㅣ dọc bên phải, rồi ㅊ chạy dọc phía dưới.",
+      "hint_vi": "ㅂ ở góc trên bên trái, ㅣ dọc bên phải, rồi ㅊ nằm ngang ở phía dưới.",
       "hint_th": "ㅂ มุมบนซ้าย ㅣ ทางด้านขวา แล้ว ㅊ ที่ด้านล่าง",
       "hint_id": "ㅂ di kiri atas, ㅣ di sisi kanan, lalu ㅊ di sepanjang bawah."
     },
@@ -1826,7 +1826,7 @@
       "hint_es": "ㄱ arriba a la izquierda, ㅏ a su derecha y luego ㅂ y ㅅ lado a lado a lo largo de la base.",
       "hint_fr": "ㄱ en haut à gauche, ㅏ à sa droite, puis ㅂ et ㅅ côte à côte le long du bas.",
       "hint_de": "ㄱ oben links, ㅏ rechts davon, dann ㅂ und ㅅ nebeneinander unten entlang.",
-      "hint_vi": "ㄱ ở góc trên bên trái, ㅏ bên phải nó, rồi ㅂ và ㅅ cạnh nhau dọc phía dưới.",
+      "hint_vi": "ㄱ ở góc trên bên trái, ㅏ bên phải nó, rồi ㅂ và ㅅ cạnh nhau ở phía dưới.",
       "hint_th": "ㄱ มุมบนซ้าย ㅏ ทางขวา แล้ว ㅂ และ ㅅ เรียงข้างกันตามด้านล่าง",
       "hint_id": "ㄱ di kiri atas, ㅏ di kanannya, lalu ㅂ dan ㅅ berdampingan di sepanjang bawah."
     },
@@ -1847,7 +1847,7 @@
       "hint_fr": "Le bloc le plus long de cette leçon : ㅎ, puis ㅑ, puis ㄹ et ㅎ ensemble en bas.",
       "hint_de": "Der längste Block in dieser Lektion: ㅎ, dann ㅑ, dann ㄹ und ㅎ zusammen unten.",
       "hint_vi": "Khối dài nhất trong bài học này: ㅎ, rồi ㅑ, rồi ㄹ và ㅎ cùng nhau ở đáy.",
-      "hint_th": "บล็อกที่ยาวที่สุดในบทเรียนนี้: ㅎ แล้ว ㅑ จากนั้น ㄹ และ ㅎ พร้อมกันที่ด้านล่าง",
+      "hint_th": "บล็อกที่ยาวที่สุดในบทเรียนนี้: ㅎ แล้ว ㅑ จากนั้น ㄹ และ ㅎ เรียงข้างกันที่ด้านล่าง",
       "hint_id": "Blok terpanjang dalam pelajaran ini: ㅎ, lalu ㅑ, kemudian ㄹ dan ㅎ bersama di bagian bawah.",
       "example_meaning_ja": "珍しい音節——どんなハングルの音節も同じように書ける証拠です",
       "example_meaning_zh_tw": "一個罕見的音節——證明任何韓文字塊都能用同樣的方法書寫",

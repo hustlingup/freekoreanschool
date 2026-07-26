@@ -1,0 +1,19 @@
+{
+  "_note": "Korean pedagogical terms that recur across both lessons. Phase 1 (Glossary) fills `th` and `vi` with the ONE agreed rendering each, then every reviewer enforces it so a term is never rendered two different ways across 258 strings. `keep_korean:true` = show the Korean form (optionally + a gloss in parentheses) rather than translating it away; that is what the lesson is teaching.",
+  "terms": [
+    { "ko": "초성", "concept": "initial/leading consonant — the top-left slot of a syllable block", "keep_korean": true, "th": "", "vi": "" },
+    { "ko": "중성", "concept": "medial vowel — right of or under the initial", "keep_korean": true, "th": "", "vi": "" },
+    { "ko": "종성", "concept": "final consonant at the bottom of a block (formal term)", "keep_korean": true, "th": "", "vi": "" },
+    { "ko": "받침", "concept": "batchim — the final consonant, everyday term; MUST stay consistent with 종성 handling", "keep_korean": true, "th": "", "vi": "" },
+    { "ko": "두벌식", "concept": "Dubeolsik — the standard 2-set Korean keyboard layout (KS X 5002)", "keep_korean": true, "th": "", "vi": "" },
+    { "ko": "획순", "concept": "stroke order", "keep_korean": false, "th": "", "vi": "" },
+    { "ko": "음절", "concept": "syllable / syllable block", "keep_korean": false, "th": "", "vi": "" },
+    { "ko": "자음", "concept": "consonant", "keep_korean": false, "th": "", "vi": "" },
+    { "ko": "모음", "concept": "vowel", "keep_korean": false, "th": "", "vi": "" },
+    { "ko": "쌍자음", "concept": "tense/double consonant (ㄲㄸㅃㅆㅉ) typed with Shift", "keep_korean": false, "th": "", "vi": "" },
+    { "ko": "한글", "concept": "Hangul — the Korean alphabet; keep the name", "keep_korean": true, "th": "", "vi": "" },
+    { "ko": "home row", "concept": "keyboard home row (ASDF / JKL;); the F and J bumps", "keep_korean": false, "th": "", "vi": "" },
+    { "ko": "Shift", "concept": "the Shift key — leave the English/symbol key name as-is per lesson convention", "keep_korean": false, "th": "", "vi": "" },
+    { "ko": "타 / 분", "concept": "the Korean WPM unit labels (타=keystrokes, 분=minute) — DO NOT translate, they are being taught", "keep_korean": true, "th": "", "vi": "" }
+  ]
+}

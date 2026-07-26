@@ -470,7 +470,7 @@ const TGLabels = (() => {
       restart:      'เริ่มใหม่',
       shiftKey:     'ปุ่ม Shift',
       backspaceKey: 'ปุ่ม Backspace',
-      spaceKey:     'ปุ่มเว้นวรรค',
+      spaceKey:     'ปุ่ม Space',
       enterKey:     'ปุ่ม Enter',
       tabKey:       'ปุ่ม Tab',
       capsKey:      'ปุ่ม Caps Lock',
