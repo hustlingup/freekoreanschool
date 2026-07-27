@@ -45,10 +45,12 @@ Execute prompts strictly in order. Each is self-contained and ends with verifica
   and must not touch `document`/`window` at load time except the global assignment (guard with `typeof window !== 'undefined'`).
 - **Localization**: lesson JSON fields use suffixes `_ja`, `_zh_tw`, `_es`, `_fr`, `_de`, `_vi`, `_th`, `_id` on the English base field. step-runner's `loc(obj, base)` picks the variant. Pronunciation aids are dedicated fields: `katakana` (ja), `zhuyin` (zh-tw), `reading_vi`, `reading_th`; fallback `romanization`.
 - Widget UI strings (outside step-runner) use the inline lang-detection pattern from `js/syllable-builder.js` `init()` (lines 67–73), extended to all 8 langs like step-runner's `_detectLang()` (js/step-runner.js:68).
-- **CSS**: single file `css/style.css`, CSS custom properties only. Dark is default; light via `[data-theme="light"]` selectors. Tokens: `--primary` (#E8003D), `--secondary`, `--accent`, `--bg-card`, `--border`, `--text-primary`, `--text-secondary`. Every new component must look right in BOTH themes.
+- **CSS**: single file `css/style.css`, CSS custom properties only. Dark is default; light via `[data-theme="light"]` selectors. Tokens: `--primary` (#E8003D), `--secondary`, `--accent`, `--bg-card`, `--border`, `--text`, `--text-secondary`. Every new component must look right in BOTH themes.
 - Escape all user/data strings interpolated into HTML with the local `esc()` helper (step-runner has one at js/step-runner.js:707; widgets define their own).
 - Audio/feedback globals available on every page: `AudioCache.play(text)`, `speakKorean(text)`, `playDing()`, `spawnConfetti()`.
-- **AdSense**: pre-render ad zones collapse via `height:0`, NEVER `display:none`. If you dynamically insert an ad slot, call `window.KSAds.push()` after insertion.
+- **AdSense**: ⚠️ **STALE — corrected 2026-07-24.** This doc set was written 2026-07-09, before commit `8fc0bbc` ("chore(ads): remove all manual ad units for Auto Ads migration"). `js/ads.js`, the `window.KSAds` global, and `scripts/audit-ad-zones.cjs` **no longer exist**. Do not add `<script defer src="../js/ads.js">` to any new page, do not call `window.KSAds.push()`, and do not run `audit-ad-zones.cjs` (prompts B §3, D §150, G §68–70, H are wrong on this). No `learn/*.html` page carries an `ad-zone` div any more — the site is on Auto Ads. The surviving rule, should a zone ever return: collapse via `height:0`, NEVER `display:none`.
+
+- **CSS token names**: the token is `--text`, not `--text-primary` (the latter is defined nowhere in `css/style.css`). Corrected 2026-07-24.
 
 ## Non-negotiable rules for the executor
 
@@ -63,6 +65,8 @@ Execute prompts strictly in order. Each is self-contained and ends with verifica
 ## Known risks (mitigations are built into the prompts)
 
 - **Jamo shape quality**: shapes are teaching diagrams, not font glyphs. Calibrate with StrokeWriter's `debug:true` font overlay (prompt B). Positional variants are capped: only ㄱ/ㅋ get an optional `cho_v` variant, decided in prompt B.
+  - ⚠️ **The debug overlay was biased — read this before re-running calibration.** `dominant-baseline:central` renders Noto Sans KR **4.82 units too low** in the 100×100 viewBox: the browser centres on the hhea ascender/descender midpoint (436 font units), but the font's Hangul design centre is the ideographic centre (380 fu). Anyone who trusts the raw overlay will push every shape down by that amount to make it "line up". Fixed in `js/stroke-writer.js` — do not revert it, and do not calibrate against an overlay that lacks the correction.
+  - Calibration was executed 2026-07-24 against measured glyph ink. Consequences recorded elsewhere: `js/stroke-data.js` (not prompt A §2.2–2.4) is now the source of truth for coordinates; `layouts.jamo` gained `solo_v`/`solo_h`/`solo_m` alongside `solo` (prompt A §2.4); ㅎ/ㅊ's top tick became a slanted dot, with learner-facing copy required by prompt C. **No stroke count changed** — rule 6 below still holds exactly.
 - **Trace on mobile**: `touch-action:none` on the trace SVG is mandatory (otherwise scrolling eats pointermove); touch gets looser tolerance; 3 failed attempts auto-plays the stroke as a hint.
 - **IME double input**: typing games never use `<input>`/`<textarea>` — a focused `tabindex="0"` div + `keydown` with `e.code` + `preventDefault()` + ignoring `e.isComposing` makes the OS Korean IME irrelevant.
 - **Translation volume**: prompts F1/F2 are data-only, no code. Follow the suffix checklist and completeness check exactly.

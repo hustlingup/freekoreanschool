@@ -65,6 +65,7 @@
     'CATEGORIES · 카테고리': 'CATÉGORIES · 카테고리', 'DEEP DIVES · 심층 탐구': 'APPROFONDISSEMENTS · 심층 탐구',
     // ── Learn Sidebar ─────────────────────────────────
     'Introduction': 'Introduction', 'Syllable Blocks': 'Blocs syllabiques', 'Pronunciation Guide': 'Guide de prononciation',
+    'Letter Writing': 'Écriture des lettres', 'Korean Typing': 'Saisie coréenne',
     'Vocab': 'Vocabulaire', 'Greetings': 'Salutations', 'Numbers': 'Nombres', 'Family': 'Famille',
     'Food & Drink': 'Nourriture & Boissons', 'Colors': 'Couleurs', 'Days & Time': 'Jours & Temps', 'Places': 'Lieux',
     'Emotions': 'Émotions', 'Body Parts': 'Parties du corps', 'Shopping': 'Shopping', 'Weather': 'Météo',

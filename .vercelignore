@@ -11,6 +11,11 @@ translation
 scripts
 admin
 dev.js
+# Schema of record for the retained Supabase data. Nothing on the site reads
+# it, but without this line the migrations deploy as fetchable files —
+# /supabase/migrations/001_init.sql served 200. Schema only, no credentials,
+# but it discloses table structure and RLS policy names for no benefit.
+supabase
 package.json
 package-lock.json
 skills-lock.json

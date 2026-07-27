@@ -396,6 +396,15 @@
     'Progress': 'Kemajuan',
     'Reset all progress': 'Atur ulang semua kemajuan',
     '🔥 Daily streak + real progress tracking': '🔥 Beruntun harian + pelacakan kemajuan nyata'
+,
+    // ── added by scripts/ui-lang.cjs ───────────────────────
+    'Search lessons...': 'Cari pelajaran...',
+    'Loading lesson…': 'Memuat pelajaran…',
+    'Previous': 'Sebelumnya',
+    'Next': 'Lanjut',
+    '📚 Lesson 4 · vocabulary': '📚 Pelajaran 4 · kosakata',
+    'Letter Writing': 'Menulis Huruf',
+    'Korean Typing': 'Mengetik Bahasa Korea',
   };
   if (window.LangManager) window.LangManager.register('id', ID);
 })();

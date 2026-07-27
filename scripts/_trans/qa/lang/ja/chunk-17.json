@@ -1,0 +1,232 @@
+{
+  "lang": "ja",
+  "chunk": 17,
+  "count": 25,
+  "units": [
+    {
+      "id": "speech-levels::steps.9.tip.label",
+      "path": "speech-levels/steps[9]/tip.label",
+      "ko": null,
+      "en": "해요체 is your default setting",
+      "current": "해요체 はデフォルト設定",
+      "ref_th": "해요체 คือตัวเลือกเริ่มต้น",
+      "ref_es": "해요체 es tu configuración predeterminada"
+    },
+    {
+      "id": "speech-levels::steps.9.tip.text",
+      "path": "speech-levels/steps[9]/tip.text",
+      "ko": null,
+      "en": "When in doubt, use 해요체. It's the safest, most universally appropriate level in Korea. You can never go wrong being politely respectful. Switching to 합쇼체 or 반말 should only happen when the situation clearly calls for it.",
+      "current": "迷ったら해요체を使いましょう。韓国で最も安全かつ普遍的に適切なレベルです。丁寧さで損することは決してありません。합쇼체や반말への切り替えは、状況が明らかにそれを求めるときだけにしましょう。",
+      "ref_th": "เมื่อสงสัย ใช้ 해요체 เป็นระดับที่ปลอดภัยและเหมาะสมที่สุดในเกาหลี เกือบทุกสถานการณ์ทั่วไปยอมรับ 해요체 ได้",
+      "ref_es": "Cuando tengas dudas, usa 해요체. Es el nivel más seguro y universalmente apropiado en Corea. Nunca te equivocas siendo educado y respetuoso. Cambiar a 합쇼체 o 반말 solo debería ocurrir cuando la situación lo requiera claramente."
+    },
+    {
+      "id": "speech-levels::steps.10.meaning",
+      "path": "speech-levels/steps[10]/meaning",
+      "ko": null,
+      "en": "Hello / Good day (polite, everyday greeting)",
+      "current": "こんにちは（丁寧・日常的）",
+      "ref_th": "สวัสดี / วันดี (ทักทายสุภาพ ประจำวัน)",
+      "ref_es": "Hola / Buenos días (educado, saludo cotidiano)"
+    },
+    {
+      "id": "speech-levels::steps.11.meaning",
+      "path": "speech-levels/steps[11]/meaning",
+      "ko": null,
+      "en": "Thank you (polite, less formal than 감사합니다)",
+      "current": "ありがとうございます（丁寧・やや軽め）",
+      "ref_th": "ขอบคุณ (สุภาพ ไม่ทางการเท่า 감사합니다)",
+      "ref_es": "Gracias (educado, menos formal que 감사합니다)"
+    },
+    {
+      "id": "speech-levels::steps.12.meaning",
+      "path": "speech-levels/steps[12]/meaning",
+      "ko": null,
+      "en": "I eat / am eating (polite)",
+      "current": "食べます（丁寧）",
+      "ref_th": "ฉันกิน / กำลังกิน (สุภาพ)",
+      "ref_es": "Como / estoy comiendo (educado)"
+    },
+    {
+      "id": "speech-levels::steps.13.meaning",
+      "path": "speech-levels/steps[13]/meaning",
+      "ko": null,
+      "en": "I go / am going (polite)",
+      "current": "行きます（丁寧）",
+      "ref_th": "ฉันไป / กำลังไป (สุภาพ)",
+      "ref_es": "Voy / estoy yendo (educado)"
+    },
+    {
+      "id": "speech-levels::steps.14.prompt",
+      "path": "speech-levels/steps[14]/prompt",
+      "ko": null,
+      "en": "A coworker you are not close to asks what you are having for lunch. Which form of 먹다 do you use?",
+      "current": "あまり親しくない同僚に昼食は何を食べるか聞かれました。먹다 はどの形を使いますか。",
+      "ref_th": "เพื่อนร่วมงานที่ไม่ได้สนิทถามว่าคุณกินอะไรเป็นมื้อกลางวัน คุณใช้รูปใดของ 먹다?",
+      "ref_es": "Un compañero de trabajo con el que no tienes confianza te pregunta qué vas a almorzar. ¿Qué forma de 먹다 usas?"
+    },
+    {
+      "id": "speech-levels::steps.15.title",
+      "path": "speech-levels/steps[15]/title",
+      "ko": "-아요/-어요 패턴",
+      "en": "-아요 / -어요 Pattern",
+      "current": "-아요 / -어요 のパターン",
+      "ref_th": "รูปแบบ -아요 / -어요",
+      "ref_es": "Patrón -아요 / -어요"
+    },
+    {
+      "id": "speech-levels::steps.15.body",
+      "path": "speech-levels/steps[15]/body",
+      "ko": null,
+      "en": "The 해요체 ending rule: add -아요 if the last vowel of the stem is ㅏ or ㅗ (bright vowels), and add -어요 for all other vowels. 하다 verbs use -해요 instead. Examples: 가다 → 가 + 아요 = 가요 (contracted). 먹다 → 먹 + 어요 = 먹어요. 공부하다 → 공부해요. In practice, 아/어 often contract with the stem's final vowel: 가 + 아요 → 가요, 오 + 아요 → 와요.",
+      "current": "해요체 語尾のルール：語幹の最後の母音が ㅏ か ㅗ（明るい母音）なら -아요 を、それ以外の母音なら -어요 を付けます。하다 動詞は代わりに -해요 を使います。例：가다 → 가 + 아요 = 가요（縮約）。먹다 → 먹 + 어요 = 먹어요。공부하다 → 공부해요。実際には아/어が語幹末尾の母音と縮約されることが多いです：가 + 아요 → 가요、오 + 아요 → 와요。",
+      "ref_th": "กฎรูปลงท้าย 해요체: เพิ่ม -아요 ถ้าสระสุดท้ายของก้านคือ ㅏ หรือ ㅗ (สระสว่าง) และเพิ่ม -어요 สำหรับสระอื่นๆ กริยาและคำคุณศัพท์ที่ลงท้ายด้วย 하다 กลายเป็น 해요 เสมอ",
+      "ref_es": "La regla de terminación del 해요체: añade -아요 si la última vocal de la raíz es ㅏ o ㅗ (vocales brillantes), y añade -어요 para todas las demás vocales. Los verbos con 하다 usan -해요 en su lugar. Ejemplos: 가다 → 가 + 아요 = 가요 (contraído). 먹다 → 먹 + 어요 = 먹어요. 공부하다 → 공부해요. En la práctica, 아/어 a menudo se contrae con la vocal final de la raíz: 가 + 아요 → 가요, 오 + 아요 → 와요."
+    },
+    {
+      "id": "speech-levels::steps.15.tip.label",
+      "path": "speech-levels/steps[15]/tip.label",
+      "ko": null,
+      "en": "Quick chart",
+      "current": "活用早見表",
+      "ref_th": "ตารางเร็ว",
+      "ref_es": "Tabla rápida"
+    },
+    {
+      "id": "speech-levels::steps.15.tip.text",
+      "path": "speech-levels/steps[15]/tip.text",
+      "ko": null,
+      "en": "가다 → 가요. 오다 → 와요. 먹다 → 먹어요. 마시다 → 마셔요. 하다 → 해요. 보다 → 봐요. 자다 → 자요. The endings follow a vowel harmony pattern — try to recognize the bright/dark vowel distinction in the stem.",
+      "current": "가다 → 가요。오다 → 와요。먹다 → 먹어요。마시다 → 마셔요。하다 → 해요。보다 → 봐요。자다 → 자요。語尾は母音調和パターンに従います——語幹の明るい/暗い母音の区別を意識して覚えてみましょう。",
+      "ref_th": "가다 → 가요 오다 → 와요 먹다 → 먹어요 마시다 → 마셔요 하다 → 해요 보다 → 봐요 자다 → 자요 รูปลงท้ายเหมือนกันทั้งกริยาและคำคุณศัพท์",
+      "ref_es": "가다 → 가요. 오다 → 와요. 먹다 → 먹어요. 마시다 → 마셔요. 하다 → 해요. 보다 → 봐요. 자다 → 자요. Las terminaciones siguen un patrón de armonía vocálica — intenta reconocer la distinción entre vocal brillante/oscura en la raíz."
+    },
+    {
+      "id": "speech-levels::steps.16.meaning",
+      "path": "speech-levels/steps[16]/meaning",
+      "ko": null,
+      "en": "It's good / I like it (polite present)",
+      "current": "いいです / 好きです（丁寧）",
+      "ref_th": "ดีจัง / ชอบ (สุภาพปัจจุบัน)",
+      "ref_es": "Está bien / Me gusta (presente educado)"
+    },
+    {
+      "id": "speech-levels::steps.17.prompt",
+      "path": "speech-levels/steps[17]/prompt",
+      "ko": null,
+      "en": "오다 in 해요체 (everyday polite) is…",
+      "current": "오다 の 해요체（日常の丁寧体）は…",
+      "ref_th": "오다 ในรูป 해요체 (สุภาพทั่วไป) คือ…",
+      "ref_es": "오다 en 해요체 (educado cotidiano) es…"
+    },
+    {
+      "id": "speech-levels::steps.18.title",
+      "path": "speech-levels/steps[18]/title",
+      "ko": "반말",
+      "en": "반말 — Casual Speech",
+      "current": "반말 —— タメ口",
+      "ref_th": "반말 — การพูดแบบกันเอง",
+      "ref_es": "반말 — Habla Informal"
+    },
+    {
+      "id": "speech-levels::steps.18.body",
+      "path": "speech-levels/steps[18]/body",
+      "ko": null,
+      "en": "반말 (ban-mal, literally 'half-speech') is the casual register used among close friends of similar age, with younger people, and within family. It drops the -요 from 해요체 endings: 가요 → 가, 먹어요 → 먹어, 좋아요 → 좋아. 반말 can sound rude if used with someone older or with a stranger — always start with 해요체 and switch to 반말 only if the other person initiates or explicitly suggests it. In K-dramas, characters switching from 해요체 to 반말 signals a big shift in closeness.",
+      "current": "반말（字義通り「半分の言葉」）は、年齢が近い親しい友人同士・年下の人・家族間で使われるカジュアルな話し方です。해요체の語尾から -요 を省略します：가요 → 가、먹어요 → 먹어、좋아요 → 좋아。年上の人や見知らぬ人に 반말 を使うと失礼になります——常に 해요체 で始め、相手が先に 반말 を使ったり明示的に提案したりした場合のみ切り替えましょう。Kドラマでは、キャラクターが 해요체 から 반말 に切り替えるシーンは、関係性の大きな変化を表します。",
+      "ref_th": "반말 (บันมัล แปลตรงๆ ว่า \"ครึ่งคำพูด\") เป็นรูปแบบไม่เป็นทางการที่ใช้ในหมู่เพื่อนสนิทอายุใกล้เคียงกัน น้องๆ หรือเด็ก การใช้ 반말 กับคนที่ไม่รู้จักหรือผู้ใหญ่กว่าถือว่าหยาบคายมาก",
+      "ref_es": "반말 (ban-mal, literalmente \"media palabra\") es el registro informal que se usa entre amigos cercanos de edad similar, con personas más jóvenes y dentro de la familia. Elimina el -요 de las terminaciones del 해요체: 가요 → 가, 먹어요 → 먹어, 좋아요 → 좋아. El 반말 puede sonar grosero si se usa con alguien mayor o con un extraño — siempre empieza con 해요체 y cambia a 반말 solo si la otra persona lo inicia o lo sugiere explícitamente. En los K-dramas, los personajes que cambian de 해요체 a 반말 señalan un gran cambio en la cercanía."
+    },
+    {
+      "id": "speech-levels::steps.18.tip.label",
+      "path": "speech-levels/steps[18]/tip.label",
+      "ko": null,
+      "en": "Getting permission to use 반말",
+      "current": "반말の許可を得る",
+      "ref_th": "ขอก่อนใช้ 반말",
+      "ref_es": "Pedir permiso para usar 반말"
+    },
+    {
+      "id": "speech-levels::steps.18.tip.text",
+      "path": "speech-levels/steps[18]/tip.text",
+      "ko": null,
+      "en": "A natural way to ask permission: '말 놓아도 돼요?' (Can I speak casually?) or '반말해도 돼요?' (Is it okay to use 반말?). You can also wait for the other person to naturally switch first — that's your invitation.",
+      "current": "許可を求める自然な言い方：「말 놓아도 돼요?」（カジュアルに話していいですか?）または「반말해도 돼요?」（반말を使っても大丈夫ですか?）。相手が先に自然に반말に切り替えるのを待つのもよい方法です——それがあなたへの招待です。",
+      "ref_th": "วิธีถามอนุญาตตามธรรมชาติ: \"말 놓아도 돼요?\" (ฉันพูดกันเองได้ไหม?) หรือ \"반말해도 돼요?\" ชาวเกาหลีมักรู้สึกดีเมื่อมีคนถาม",
+      "ref_es": "Una forma natural de pedir permiso: \"말 놓아도 돼요?\" (¿Puedo hablar informalmente?) o \"반말해도 돼요?\" (¿Está bien usar 반말?). También puedes esperar a que la otra persona cambie naturalmente primero — esa es tu invitación."
+    },
+    {
+      "id": "speech-levels::steps.19.meaning",
+      "path": "speech-levels/steps[19]/meaning",
+      "ko": null,
+      "en": "Hi / Bye (casual greeting and farewell)",
+      "current": "やあ / じゃあね（カジュアル）",
+      "ref_th": "สวัสดี / บ๊ายบาย (ทักทายและลาแบบกันเอง)",
+      "ref_es": "Hola / Adiós (saludo y despedida informal)"
+    },
+    {
+      "id": "speech-levels::steps.20.meaning",
+      "path": "speech-levels/steps[20]/meaning",
+      "ko": null,
+      "en": "Thanks (casual)",
+      "current": "ありがとう（カジュアル）",
+      "ref_th": "ขอบคุณ (แบบกันเอง)",
+      "ref_es": "Gracias (informal)"
+    },
+    {
+      "id": "speech-levels::steps.21.meaning",
+      "path": "speech-levels/steps[21]/meaning",
+      "ko": null,
+      "en": "eat / I eat (casual)",
+      "current": "食べる / 食べよう（カジュアル）",
+      "ref_th": "กิน / ฉันกิน (แบบกันเอง)",
+      "ref_es": "como / Voy a comer (informal)"
+    },
+    {
+      "id": "speech-levels::steps.22.meaning",
+      "path": "speech-levels/steps[22]/meaning",
+      "ko": null,
+      "en": "go / I go (casual)",
+      "current": "行く / 行こう（カジュアル）",
+      "ref_th": "ไป / ฉันไป (แบบกันเอง)",
+      "ref_es": "voy / Me voy (informal)"
+    },
+    {
+      "id": "speech-levels::steps.23.prompt",
+      "path": "speech-levels/steps[23]/prompt",
+      "ko": null,
+      "en": "You run into a close friend your own age. How do you greet them?",
+      "current": "同い年の親しい友達に偶然会いました。どう挨拶しますか。",
+      "ref_th": "คุณบังเอิญเจอเพื่อนสนิทวัยเดียวกัน คุณจะทักทายอย่างไร?",
+      "ref_es": "Te encuentras con un amigo cercano de tu misma edad. ¿Cómo lo saludas?"
+    },
+    {
+      "id": "speech-levels::steps.24.title",
+      "path": "speech-levels/steps[24]/title",
+      "ko": "반말 사용 규칙",
+      "en": "When to Use 반말 (and When NOT to)",
+      "current": "반말を使うとき（使ってはいけないときも）",
+      "ref_th": "เมื่อใดใช้ 반말 (และเมื่อใดไม่ควรใช้)",
+      "ref_es": "Cuándo usar 반말 (y cuándo NO)"
+    },
+    {
+      "id": "speech-levels::steps.24.body",
+      "path": "speech-levels/steps[24]/body",
+      "ko": null,
+      "en": "Use 반말 with: close friends of similar age, younger siblings, younger students, or children. Do NOT use 반말 with: strangers, anyone older than you, your boss or teacher, service staff, or people you've just met (even if they seem similar in age). The mistake many Korean learners make is assuming that because someone is friendly, 반말 is appropriate. Friendliness and speech-level permission are separate — always wait for a signal.",
+      "current": "반말を使っていい相手：年齢が近い親しい友人、年下の兄弟・姉妹、後輩の学生、子供。반말を使ってはいけない相手：見知らぬ人、自分より年上の人、上司・先生、店員・サービス業の人、または初対面の人（同年代に見えても）。多くの韓国語学習者が犯すミスは、相手が友好的だから 반말 を使っていいと思うことです。親しみやすさと 반말 の許可は別物です——必ずサインを待ちましょう。",
+      "ref_th": "ใช้ 반말 กับ: เพื่อนสนิทอายุใกล้เคียง น้องๆ นักเรียนรุ่นน้อง หรือเด็กๆ อย่าใช้กับ: คนแปลกหน้า ผู้ใหญ่กว่า เพื่อนร่วมงาน ครู หัวหน้า หรือใครก็ตามที่คุณยังไม่ได้รับอนุญาตให้ใช้ 반말",
+      "ref_es": "Usa 반말 con: amigos cercanos de edad similar, hermanos menores, estudiantes más jóvenes o niños. NO uses 반말 con: extraños, alguien mayor que tú, tu jefe o profesor, el personal de servicio o personas que acabas de conocer (aunque parezcan de edad similar). El error que cometen muchos estudiantes de coreano es suponer que porque alguien es amigable, el 반말 es apropiado. La amabilidad y el permiso para el nivel de habla son cosas separadas — siempre espera una señal."
+    },
+    {
+      "id": "speech-levels::steps.24.tip.label",
+      "path": "speech-levels/steps[24]/tip.label",
+      "ko": null,
+      "en": "One exception: self-talk",
+      "current": "例外：独り言",
+      "ref_th": "ข้อยกเว้น: การพูดคนเดียว",
+      "ref_es": "Una excepción: el monólogo interior"
+    }
+  ]
+}

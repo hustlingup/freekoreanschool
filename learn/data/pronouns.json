@@ -11,11 +11,12 @@
       "time_minutes": 8,
       "name_zh_tw": "第一·二人稱",
       "name_es": "Primera y Segunda Persona",
-      "name_fr": "Première et Deuxième Personne",
+      "name_fr": "Première et deuxième personne",
       "name_de": "Erste & Zweite Person",
       "name_vi": "Ngôi thứ nhất & thứ hai",
       "name_th": "บุรุษที่หนึ่งและสอง",
-      "name_id": "Orang Pertama & Kedua"
+      "name_id": "Orang Pertama & Kedua",
+      "name_ja": "一人称・二人称"
     },
     {
       "id": 2,
@@ -26,11 +27,12 @@
       "time_minutes": 7,
       "name_zh_tw": "第三人稱·我們",
       "name_es": "Tercera Persona y Nosotros",
-      "name_fr": "Troisième Personne et Nous",
+      "name_fr": "Troisième personne et nous",
       "name_de": "Dritte Person & Wir",
       "name_vi": "Ngôi thứ ba & Chúng tôi",
       "name_th": "บุรุษที่สามและ \"เรา\"",
-      "name_id": "Orang Ketiga & Kami"
+      "name_id": "Orang Ketiga & Kami",
+      "name_ja": "三人称・私たち"
     },
     {
       "id": 3,
@@ -45,7 +47,8 @@
       "name_de": "Demonstrativpronomen",
       "name_vi": "Đại từ chỉ định",
       "name_th": "สรรพนามชี้เฉพาะ",
-      "name_id": "Kata Tunjuk"
+      "name_id": "Kata Tunjuk",
+      "name_ja": "指示代名詞"
     },
     {
       "id": 4,
@@ -56,11 +59,12 @@
       "time_minutes": 6,
       "name_zh_tw": "疑問代名詞",
       "name_es": "Pronombres Interrogativos",
-      "name_fr": "Pronoms Interrogatifs",
+      "name_fr": "Pronoms interrogatifs",
       "name_de": "Fragepronomen",
       "name_vi": "Đại từ nghi vấn",
       "name_th": "สรรพนามคำถาม",
-      "name_id": "Kata Ganti Tanya"
+      "name_id": "Kata Ganti Tanya",
+      "name_ja": "疑問代名詞"
     }
   ],
   "steps": [
@@ -93,7 +97,7 @@
         "label": "Lengua de omisión de sujeto (pro-drop)",
         "text": "El coreano es una lengua de omisión del sujeto (pro-drop) — cuando el sujeto es obvio por el contexto o fue mencionado recientemente, omite el pronombre. Dejarlo puede sonar antinatural o incluso ligeramente grosero (demasiado directo). 저 괜찮아요 y 괜찮아요 ambos significan \"Estoy bien\", pero la forma más corta es más natural."
       },
-      "title_fr": "Aperçu des Pronoms Coréens",
+      "title_fr": "Aperçu des pronoms coréens",
       "body_fr": "Le coréen a deux registres pour les pronoms de première personne : poli et informel. 저 (jeo) est le « je » poli, utilisé avec des étrangers, des aînés et dans des contextes formels. 나 (na) est le « je » informel, utilisé avec des amis proches et des personnes plus jeunes. Surtout, le coréen omet très souvent le pronom sujet complètement quand le contexte est clair — 어디 가요 ? peut signifier « Où allez-vous ? » sans aucun pronom. Maîtriser quand NE PAS utiliser un pronom est aussi important que de connaître les pronoms eux-mêmes.",
       "tip_fr": {
         "label": "Langue à sujet nul (pro-drop)",
@@ -256,7 +260,7 @@
         "label": "Cómo dirigirse a las personas sin 당신",
         "text": "Usa el nombre de la persona + 씨 para adultos que no conoces bien: 김민준씨. Usa su título laboral: 사장님 (jefe), 과장님 (gerente). Usa términos de relación: 언니, 오빠, 아저씨. Estos son mucho más naturales que 당신."
       },
-      "title_fr": "« Tu » en Coréen",
+      "title_fr": "Dire « vous/tu » en coréen",
       "body_fr": "Le coréen évite le pronom direct « tu » (당신) dans la plupart des discours quotidiens — cela peut sembler froid, conflictuel ou trop formel selon le contexte. À la place, les Coréens utilisent le nom de la personne, son titre ou son terme de relation. Un professeur s'appellerait 선생님 (professeur), pas 당신. Un ami s'appellerait par son prénom. Le pronom 당신 apparaît dans les chansons, la poésie et l'écriture formelle mais est peu courant dans la conversation quotidienne.",
       "tip_fr": {
         "label": "Comment s'adresser aux gens sans 당신",
@@ -407,7 +411,7 @@
         "label": "우리 = \"mi\" (para familia y país)",
         "text": "우리 나라 (nuestro país), 우리 집 (mi/nuestra casa), 우리 엄마 (mi mamá) — estos son naturales y comunes. Usar 나의 나라 o 나의 집 en su lugar suena antinatural, casi frío."
       },
-      "title_fr": "Troisième Personne et Nous (그·그녀·우리)",
+      "title_fr": "Troisième personne et nous (그·그녀·우리)",
       "body_fr": "Le coréen utilise rarement les pronoms il/elle dans la parole. À la place, les Coréens disent le nom de la personne ou utilisent des démonstratifs : 그 사람 (cette personne-là), 이 사람 (cette personne-ci). 그 (geu) et 그녀 (geunyeo) existent — il/elle — mais ils apparaissent surtout à l'écrit et dans les traductions. 우리 (uri) signifie « nous » ou « notre ». Curieusement, les Coréens utilisent 우리 là où le français utilise « mon » : 우리 엄마 (ma maman, littéralement « notre maman ») — cela reflète un sens culturel collectiviste de la famille partagée.",
       "tip_fr": {
         "label": "우리 = mon (pour la famille et le pays)",
@@ -436,7 +440,8 @@
       "tip_vi": {
         "label": "우리 = của tôi (cho gia đình & đất nước)",
         "text": "우리 나라 (đất nước chúng ta), 우리 집 (nhà tôi/của chúng ta), 우리 엄마 (mẹ tôi) — những cách này tự nhiên và phổ biến. Dùng 나의 나라 hay 나의 집 thay vào đó nghe thiếu tự nhiên, gần như lạnh lùng."
-      }
+      },
+      "title_ja": "三人称と私たち（그・그녀・우리）"
     },
     {
       "id": 11,
@@ -667,7 +672,7 @@
         "label": "이/그/저 vs 여기/거기/저기",
         "text": "이/그/저 + 것 = esto/eso/aquello (cosa). 이/그/저 + -(e)gi = aquí/ahí/allá. Así que 여기 (yeo-gi) = aquí (cerca del hablante), 거기 (geo-gi) = ahí (cerca del oyente), 저기 (jeo-gi) = allá (lejos de ambos)."
       },
-      "title_fr": "Pronoms Démonstratifs (이·그·저)",
+      "title_fr": "Pronoms démonstratifs (이·그·저)",
       "body_fr": "Le coréen a trois niveaux de démonstratifs selon la distance spatiale. 이 (i) = près du locuteur. 그 (geu) = près de l'auditeur ou mentionné précédemment. 저 (jeo) = loin des deux. Ces mots s'attachent à 것 (geot, « chose ») pour former des pronoms : 이것 (ceci), 그것 (cela), 저것 (cela là-bas). Dans la parole informelle, ils sont abrégés : 이거, 그거, 저거. Les mêmes racines 이/그/저 fonctionnent aussi avec les mots de lieu : 여기 (ici), 거기 (là), 저기 (là-bas).",
       "tip_fr": {
         "label": "이/그/저 vs 여기/거기/저기",
@@ -696,7 +701,8 @@
       "tip_vi": {
         "label": "이/그/저 và 여기/거기/저기",
         "text": "이/그/저 + 것 = cái này/đó/kia. 이/그/저 + -(e)gi = ở đây/đó. Vậy 여기 (yeo-gi) = ở đây (gần người nói), 거기 (geo-gi) = ở đó (gần người nghe), 저기 (jeo-gi) = đằng kia (xa cả hai)."
-      }
+      },
+      "title_ja": "指示代名詞（이・그・저）"
     },
     {
       "id": 19,
@@ -773,7 +779,7 @@
       "audio": "이거",
       "meaning": "this one (casual form of 이것)",
       "meaning_zh_tw": "這個（이것的隨意形式）",
-      "meaning_ja": "これ（カジュアル）",
+      "meaning_ja": "これ（이것のくだけた言い方）",
       "katakana": "イゴ",
       "meaning_es": "esto (forma informal de 이것)",
       "meaning_fr": "celui-ci (forme informelle de 이것)",
@@ -874,7 +880,7 @@
         "label": "Sin inversión de pregunta",
         "text": "El español mueve la palabra interrogativa al principio y a menudo la invierte: \"¿Qué estás haciendo?\". El coreano mantiene el mismo orden de palabras que una declaración y simplemente intercambia la palabra interrogativa: 뭐 해요? (¿Qué haces?) — literalmente \"¿qué hace?\"."
       },
-      "title_fr": "Pronoms Interrogatifs (의문대명사)",
+      "title_fr": "Pronoms interrogatifs (의문대명사)",
       "body_fr": "Les mots interrogatifs coréens sont placés dans la même position de la phrase que le mot qu'ils remplacent — contrairement au français qui déplace « quoi » et « où » au début. Comparez : 영화 봐요 ? (Tu regardes un film ?) contre 뭐 봐요 ? (Qu'est-ce que tu regardes ?). Le mot interrogatif s'insère simplement à la place d'origine. Les principaux pronoms interrogatifs sont : 누구 (qui), 무엇/뭐 (quoi/que), 어디 (où), 언제 (quand), 왜 (pourquoi), 어떻게 (comment), 얼마 (combien).",
       "tip_fr": {
         "label": "Pas d'inversion interrogative",
@@ -903,7 +909,8 @@
       "tip_vi": {
         "label": "Không cần đảo trật tự câu hỏi",
         "text": "Tiếng Anh đưa từ để hỏi lên đầu và đảo trật tự chủ ngữ-động từ: 'What are you doing?' Tiếng Hàn giữ nguyên trật tự từ như câu trần thuật và chỉ thế từ để hỏi vào: 뭐 해요? (Bạn đang làm gì?) — nghĩa đen 'gì làm?'"
-      }
+      },
+      "title_ja": "疑問代名詞（의문대명사）"
     },
     {
       "id": 27,
@@ -1028,7 +1035,11 @@
       "title_id": "Kata Ganti Selesai!",
       "message_id": "Anda telah menguasai kata ganti Korea — dari 저 yang sopan hingga 나 yang santai, dari 우리 (kami/milik saya), hingga kata tunjuk dan kata tanya. Kemajuan yang luar biasa!",
       "message_vi": "Bạn đã làm chủ đại từ tiếng Hàn — từ 저 lịch sự đến 나 thân mật, từ 우리 (của chúng ta/của tôi), đến các từ chỉ định và từ để hỏi. Tiến bộ tuyệt vời!",
-      "title_ja": "代名詞編、修了！"
+      "title_ja": "代名詞編、修了！",
+      "message_ja": "丁寧な저からくだけた나まで、우리（私たちの／私の）から指示代名詞や疑問詞まで——韓国語の代名詞をマスターしました。素晴らしい進歩です！",
+      "title_zh_tw": "代名詞學習完成！",
+      "title_vi": "Hoàn thành bài Đại từ!",
+      "title_th": "เรียนจบคำสรรพนามแล้ว!"
     }
   ]
 }

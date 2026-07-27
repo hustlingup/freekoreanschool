@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "emotions::stages.0.name",
+    "value": "基本感情"
+  },
+  {
+    "id": "emotions::stages.1.name",
+    "value": "感情表現"
+  },
+  {
+    "id": "emotions::stages.2.name",
+    "value": "複雑な感情"
+  },
+  {
+    "id": "emotions::stages.3.name",
+    "value": "感情フレーズ"
+  },
+  {
+    "id": "emotions::steps.0.title",
+    "value": "韓国語の感情（감정）"
+  },
+  {
+    "id": "emotions::steps.9.title",
+    "value": "もっと感情の言葉（감정 어휘）"
+  },
+  {
+    "id": "emotions::steps.15.title",
+    "value": "기분——気分と感情"
+  },
+  {
+    "id": "emotions::steps.18.title",
+    "value": "より深い感情（깊은 감정）"
+  },
+  {
+    "id": "emotions::steps.32.message",
+    "value": "韓国語の感情語彙を学びました——基本的な感情から、그립다、뿌듯하다、설레다のような文化的に豊かな言葉まで。あなたの感情表現の韓国語力が育っています！"
+  },
+  {
+    "id": "grammar::stages.0.name",
+    "value": "文"
+  },
+  {
+    "id": "grammar::stages.1.name",
+    "value": "助詞"
+  },
+  {
+    "id": "grammar::stages.2.name",
+    "value": "活用"
+  },
+  {
+    "id": "grammar::stages.3.name",
+    "value": "否定文"
+  },
+  {
+    "id": "grammar::stages.4.name",
+    "value": "疑問文"
+  },
+  {
+    "id": "grammar::stages.5.name",
+    "value": "文型"
+  },
+  {
+    "id": "grammar::stages.6.name",
+    "value": "接続詞"
+  },
+  {
+    "id": "grammar::stages.7.name",
+    "value": "と／とともに"
+  },
+  {
+    "id": "grammar::stages.8.name",
+    "value": "に／から"
+  },
+  {
+    "id": "grammar::stages.9.name",
+    "value": "時間"
+  },
+  {
+    "id": "grammar::stages.10.name",
+    "value": "助数詞"
+  },
+  {
+    "id": "grammar::stages.11.name",
+    "value": "進行形"
+  },
+  {
+    "id": "grammar::stages.12.name",
+    "value": "自己紹介"
+  },
+  {
+    "id": "grammar::stages.13.name",
+    "value": "日付"
+  },
+  {
+    "id": "grammar::stages.14.name",
+    "value": "副詞"
+  },
+  {
+    "id": "grammar::stages.15.name",
+    "value": "名詞化"
+  },
+  {
+    "id": "grammar::stages.16.name",
+    "value": "比較"
+  },
+  {
+    "id": "grammar::stages.17.name",
+    "value": "好き"
+  },
+  {
+    "id": "grammar::stages.18.name",
+    "value": "まだ／すでに"
+  },
+  {
+    "id": "grammar::stages.19.name",
+    "value": "不定"
+  },
+  {
+    "id": "grammar::stages.20.name",
+    "value": "命令形"
+  },
+  {
+    "id": "grammar::stages.21.name",
+    "value": "禁止形"
+  },
+  {
+    "id": "grammar::stages.22.name",
+    "value": "方法"
+  },
+  {
+    "id": "grammar::stages.23.name",
+    "value": "上手／下手"
+  },
+  {
+    "id": "grammar::stages.24.name",
+    "value": "すべて／もっと"
+  },
+  {
+    "id": "grammar::stages.25.name",
+    "value": "-도 上級"
+  },
+  {
+    "id": "grammar::steps.0.rules[0]",
+    "value": "英語（SVO）：I eat rice."
+  },
+  {
+    "id": "grammar::steps.0.rules[1]",
+    "value": "韓国語（SOV）：나는 밥을 먹어요.（私 ご飯 食べる）"
+  },
+  {
+    "id": "grammar::steps.0.rules[2]",
+    "value": "ヒント：最後の単語をよく聞いてください——それが動詞、つまり動作です！"
+  },
+  {
+    "id": "grammar::steps.0.tip.label",
+    "value": "文法のヒント"
+  },
+  {
+    "id": "grammar::steps.0.tip.text",
+    "value": "動詞が最後に来ることさえ分かれば、すべてが腑に落ちます。文の他の部分は入れ替えても構いません——韓国語話者は助詞を使って意味を明確にします。"
+  },
+  {
+    "id": "grammar::steps.3.rules[0]",
+    "value": "은/는 → 主題を表す助詞（子音の後は은、母音の後は는）"
+  },
+  {
+    "id": "grammar::steps.3.rules[1]",
+    "value": "이/가 → 主格を表す助詞（子音の後は이、母音の後は가）"
+  },
+  {
+    "id": "grammar::steps.3.rules[2]",
+    "value": "을/를 → 目的語を表す助詞（子音の後は을、母音の後は를）"
+  },
+  {
+    "id": "grammar::steps.3.rules[3]",
+    "value": "에 → 場所／方向"
+  },
+  {
+    "id": "grammar::steps.3.rules[4]",
+    "value": "에서 → 動作が行われる場所"
+  },
+  {
+    "id": "grammar::steps.3.rules[5]",
+    "value": "의 → 所有格（〜の）"
+  },
+  {
+    "id": "grammar::steps.11.body",
+    "value": "韓国語の動詞は辞書形がすべて다（da）で終わります。다を取ると語幹になり、そこに語尾を付け加えます。"
+  },
+  {
+    "id": "grammar::steps.11.rules[0]",
+    "value": "가다（行く）→ 語幹：가-"
+  },
+  {
+    "id": "grammar::steps.11.rules[1]",
+    "value": "먹다（食べる）→ 語幹：먹-"
+  },
+  {
+    "id": "grammar::steps.11.rules[2]",
+    "value": "공부하다（勉強する）→ 語幹：공부하-"
+  },
+  {
+    "id": "grammar::steps.11.rules[3]",
+    "value": "하다（する）→ 語幹：하-"
+  },
+  {
+    "id": "grammar::steps.12.title",
+    "value": "現在形：-아요／-어요"
+  },
+  {
+    "id": "grammar::steps.12.body",
+    "value": "語幹の母音がㅏまたはㅗの場合は-아요を付けます。それ以外は-어요を付けます。하다動詞は-해요を使います。"
+  },
+  {
+    "id": "grammar::steps.12.rules[0]",
+    "value": "가다 → 가요（行く・ㅏ語幹）"
+  },
+  {
+    "id": "grammar::steps.12.rules[1]",
+    "value": "오다 → 와요（来る・ㅗ語幹）"
+  },
+  {
+    "id": "grammar::steps.12.rules[2]",
+    "value": "먹다 → 먹어요（食べる・その他）"
+  },
+  {
+    "id": "grammar::steps.12.rules[3]",
+    "value": "마시다 → 마셔요（飲む・その他）"
+  },
+  {
+    "id": "grammar::steps.12.rules[4]",
+    "value": "공부하다 → 공부해요（勉強する・하다）"
+  },
+  {
+    "id": "grammar::steps.12.tip.label",
+    "value": "母音規則"
+  },
+  {
+    "id": "grammar::steps.12.tip.text",
+    "value": "ㅏとㅗは「明るい」母音→-아요。それ以外の母音はすべて「暗い」母音→-어요。語幹の母音がわかれば、活用は自動的に決まります"
+  },
+  {
+    "id": "grammar::steps.16.title",
+    "value": "過去形：-았어요 / -었어요"
+  },
+  {
+    "id": "grammar::steps.16.body",
+    "value": "ㅏ/ㅗで終わる語幹には-았어요を、それ以外には-었어요をつけます。하다 → 했어요。"
+  },
+  {
+    "id": "grammar::steps.16.rules[0]",
+    "value": "가다 → 갔어요（行った）"
+  },
+  {
+    "id": "grammar::steps.16.rules[1]",
+    "value": "오다 → 왔어요（来た）"
+  },
+  {
+    "id": "grammar::steps.16.rules[2]",
+    "value": "먹다 → 먹었어요（食べた）"
+  },
+  {
+    "id": "grammar::steps.16.rules[3]",
+    "value": "마시다 → 마셨어요（飲んだ）"
+  },
+  {
+    "id": "grammar::steps.16.rules[4]",
+    "value": "공부하다 → 공부했어요（勉強した）"
+  },
+  {
+    "id": "grammar::steps.19.title",
+    "value": "未来形：-(으)ㄹ 거예요"
+  },
+  {
+    "id": "grammar::steps.19.body",
+    "value": "動詞の語幹に-(으)ㄹ 거예요をつけて、未来の予定や予測を表します。"
+  },
+  {
+    "id": "grammar::steps.19.rules[0]",
+    "value": "가다 → 갈 거예요（行く）"
+  },
+  {
+    "id": "grammar::steps.19.rules[1]",
+    "value": "먹다 → 먹을 거예요（食べる）"
+  },
+  {
+    "id": "grammar::steps.19.rules[2]",
+    "value": "공부하다 → 공부할 거예요（勉強する）"
+  },
+  {
+    "id": "grammar::steps.21.body",
+    "value": "短い否定：안 + 動詞。長い否定：動詞の語幹 + 지 않아요。不可能：못 + 動詞。"
+  },
+  {
+    "id": "grammar::steps.21.rules[0]",
+    "value": "안 먹어요（食べない——短い形）"
+  },
+  {
+    "id": "grammar::steps.21.rules[1]",
+    "value": "먹지 않아요（食べない——長い形）"
+  },
+  {
+    "id": "grammar::steps.21.rules[2]",
+    "value": "못 가요（行けない——不可能）"
+  },
+  {
+    "id": "grammar::steps.23.rules[0]",
+    "value": "뭐 / 무엇——何"
+  },
+  {
+    "id": "grammar::steps.23.rules[1]",
+    "value": "누구——誰"
+  },
+  {
+    "id": "grammar::steps.23.rules[2]",
+    "value": "어디——どこ"
+  },
+  {
+    "id": "grammar::steps.23.rules[3]",
+    "value": "언제——いつ"
+  },
+  {
+    "id": "grammar::steps.23.rules[4]",
+    "value": "왜——なぜ"
+  },
+  {
+    "id": "grammar::steps.23.rules[5]",
+    "value": "어떻게——どう"
+  },
+  {
+    "id": "grammar::steps.23.rules[6]",
+    "value": "얼마——いくら"
+  },
+  {
+    "id": "grammar::steps.23.rules[7]",
+    "value": "몇——いくつ"
+  },
+  {
+    "id": "grammar::steps.23.tip.label",
+    "value": "文法のヒント"
+  },
+  {
+    "id": "grammar::steps.23.tip.text",
+    "value": "밥을 먹어요 = ご飯を食べます。밥을 먹어요? = ご飯を食べますか？ 同じ単語のまま——語尾を上げるだけです。英語のような語順の入れ替えは不要です！"
+  },
+  {
+    "id": "grammar::steps.26.rules[0]",
+    "value": "~이에요/예요——～です（名詞）：학생이에요（学生です）"
+  },
+  {
+    "id": "grammar::steps.26.rules[1]",
+    "value": "~고 싶어요——～したい：한국에 가고 싶어요（韓国に行きたいです）"
+  },
+  {
+    "id": "grammar::steps.26.rules[2]",
+    "value": "~ㄹ/을 수 있어요——～できる：한국어를 할 수 있어요（韓国語ができます）"
+  },
+  {
+    "id": "grammar::steps.26.rules[3]",
+    "value": "~아/어야 해요——～しなければならない：공부해야 해요（勉強しなければなりません）"
+  },
+  {
+    "id": "grammar::steps.26.rules[4]",
+    "value": "~(으)면——～すれば／～すると：비가 오면 집에 있어요（雨が降れば家にいます）"
+  },
+  {
+    "id": "grammar::steps.26.rules[5]",
+    "value": "~때문에——～のせいで／～のため：비 때문에 못 가요（雨のせいで行けません）"
+  },
+  {
+    "id": "grammar::steps.28.rules[0]",
+    "value": "그리고——そして／それから（情報や順序を追加）"
+  },
+  {
+    "id": "grammar::steps.28.rules[1]",
+    "value": "그래서——だから／それで（原因→結果）"
+  },
+  {
+    "id": "grammar::steps.28.rules[2]",
+    "value": "그렇지만——しかし／けれども（強い対比、フォーマル）"
+  },
+  {
+    "id": "grammar::steps.28.rules[3]",
+    "value": "그런데——でも／ところで（軽い対比、カジュアル——最も一般的！）"
+  },
+  {
+    "id": "grammar::steps.28.tip.label",
+    "value": "使い方のヒント"
+  },
+  {
+    "id": "grammar::steps.28.tip.text",
+    "value": "그런데は話し言葉の韓国語で最もよく使われる単語のひとつです——対比をやわらげ、自然に話題を変えます。그렇지만はより強く、フォーマルな表現です"
+  },
+  {
+    "id": "grammar::steps.31.rules[0]",
+    "value": "-하고——どんな名詞の後にも使える、中立・カジュアル：친구하고 갔어요（友達と行きました）"
+  },
+  {
+    "id": "grammar::steps.31.rules[1]",
+    "value": "-(이)랑——이랑（子音の後）／랑（母音の後）、とてもカジュアル：오빠랑 놀았어요（お兄さんと遊びました）"
+  },
+  {
+    "id": "grammar::steps.31.rules[2]",
+    "value": "-와/과——와（母音の後）／과（子音の後）、フォーマル・書き言葉：선생님과 상담했어요（先生と相談しました）"
+  },
+  {
+    "id": "grammar::steps.32.rules[0]",
+    "value": "-한테——～に（人）：친구한테 전화했어요（友達に電話しました）"
+  },
+  {
+    "id": "grammar::steps.32.rules[1]",
+    "value": "-한테서——～から（人）：선생님한테서 배웠어요（先生から習いました）"
+  },
+  {
+    "id": "grammar::steps.32.rules[2]",
+    "value": "-에게 / -에게서——フォーマルな言い方"
+  },
+  {
+    "id": "grammar::steps.32.rules[3]",
+    "value": "-께——～に（尊敬語、目上の人に）：선생님께 드렸어요"
+  },
+  {
+    "id": "grammar::steps.33.body",
+    "value": "時間（시）には固有語数字を、分（분）には漢字語数字を使います。午前＝오전、午後＝오후。"
+  },
+  {
+    "id": "grammar::steps.33.rules[0]",
+    "value": "時間（시）：한(1)、두(2)、세(3)、네(4)、다섯(5)… + 시"
+  },
+  {
+    "id": "grammar::steps.33.rules[1]",
+    "value": "分（분）：일(1)、이(2)、삼(3)、사(4)、오(5)… + 분"
+  },
+  {
+    "id": "grammar::steps.33.rules[2]",
+    "value": "半：반——세 시 반 = 3:30"
+  },
+  {
+    "id": "grammar::steps.33.rules[3]",
+    "value": "例：오후 두 시 삼십 분 = 午後2時30分"
+  },
+  {
+    "id": "grammar::steps.33.tip.label",
+    "value": "重要パターン"
+  },
+  {
+    "id": "grammar::steps.33.tip.text",
+    "value": "時は固有数詞（한、두、세…）を使います。分は漢数詞（일、이、삼…）を使います。半 = 반。午前 = 오전、午後 = 오후。"
+  },
+  {
+    "id": "grammar::steps.36.body",
+    "value": "韓国語では[名詞]+[数字]の後に特定の助数詞を使います。ほとんどの助数詞には固有数詞（한、두、세…）を使います。"
+  },
+  {
+    "id": "grammar::steps.36.rules[0]",
+    "value": "개 —— 一般的な物：사과 세 개（りんご3個）"
+  },
+  {
+    "id": "grammar::steps.36.rules[1]",
+    "value": "명 —— 人（中立的）：학생 두 명（学生2人）"
+  },
+  {
+    "id": "grammar::steps.36.rules[2]",
+    "value": "분 —— 人（敬語）：손님 두 분（お客様2名）"
+  },
+  {
+    "id": "grammar::steps.36.rules[3]",
+    "value": "마리 —— 動物：고양이 한 마리（猫1匹）"
+  },
+  {
+    "id": "grammar::steps.36.rules[4]",
+    "value": "권 —— 本：책 세 권（本3冊）"
+  },
+  {
+    "id": "grammar::steps.36.rules[5]",
+    "value": "잔 —— 杯・飲み物：커피 두 잔（コーヒー2杯）"
+  },
+  {
+    "id": "grammar::steps.36.rules[6]",
+    "value": "번 —— 回数：세 번（3回）"
+  },
+  {
+    "id": "grammar::steps.39.body",
+    "value": "動詞の語幹に-고 있어요を付けると、誰かが今まさに何かをしていることを表せます（韓国語の「～ている」形）。"
+  },
+  {
+    "id": "grammar::steps.39.rules[0]",
+    "value": "먹다 → 먹고 있어요（食べている）"
+  },
+  {
+    "id": "grammar::steps.39.rules[1]",
+    "value": "가다 → 가고 있어요（行っている）"
+  },
+  {
+    "id": "grammar::steps.39.rules[2]",
+    "value": "공부하다 → 공부하고 있어요（勉強している）"
+  },
+  {
+    "id": "grammar::steps.39.rules[3]",
+    "value": "읽다 → 읽고 있어요（読んでいる）"
+  },
+  {
+    "id": "grammar::steps.39.tip.label",
+    "value": "進行形 vs 単純形"
+  },
+  {
+    "id": "grammar::steps.39.tip.text",
+    "value": "먹어요 = 食べます（一般的、または今この瞬間、文脈による）。먹고 있어요 = 食べています（今まさに進行中であることを特に表す）。進行形は「現在進行中」という意味を加えます。"
+  },
+  {
+    "id": "grammar::steps.42.body",
+    "value": "重要語彙：이름（名前）、나이（年齢）、나라（国）、직업（仕事）、취미（趣味）、고향（故郷）。"
+  },
+  {
+    "id": "grammar::steps.42.rules[0]",
+    "value": "안녕하세요! 저는 [名前]이에요/예요."
+  },
+  {
+    "id": "grammar::steps.42.rules[1]",
+    "value": "저는 [나라]에서 왔어요.（[国]出身です。）"
+  },
+  {
+    "id": "grammar::steps.42.rules[2]",
+    "value": "저는 [직업]이에요.（[仕事]です。）"
+  },
+  {
+    "id": "grammar::steps.42.rules[3]",
+    "value": "제 취미는 [hobby]예요.（私の趣味は[趣味]です。）"
+  },
+  {
+    "id": "grammar::steps.42.rules[4]",
+    "value": "잘 부탁드려요!（よろしくお願いします！）"
+  },
+  {
+    "id": "grammar::steps.42.tip.label",
+    "value": "テンプレート"
+  },
+  {
+    "id": "grammar::steps.42.tip.text",
+    "value": "フォーマルな場面では안녕하세요 + 잘 부탁드려요を使います。友達や同年代の人には：안녕! + 잘 부탁해!　対面で自己紹介するときは、必ず軽くお辞儀をしましょう。"
+  },
+  {
+    "id": "grammar::steps.43.body",
+    "value": "韓国語の日付は年→月→日の順で漢数詞を使います。6月 = 유월、10月 = 시월（例外）。"
+  },
+  {
+    "id": "grammar::steps.43.rules[0]",
+    "value": "일월(1월)、이월(2월)、삼월(3월)、사월(4월)、오월(5월)、유월(6월)"
+  },
+  {
+    "id": "grammar::steps.43.rules[1]",
+    "value": "칠월(7월)、팔월(8월)、구월(9월)、시월(10월)、십일월(11월)、십이월(12월)"
+  },
+  {
+    "id": "grammar::steps.43.rules[2]",
+    "value": "日付の形式：2026년 6월 16일（2026年6月16日）"
+  },
+  {
+    "id": "grammar::steps.43.rules[3]",
+    "value": "오늘이 며칠이에요? —— 今日は何日ですか？"
+  },
+  {
+    "id": "grammar::steps.44.body",
+    "value": "程度を表す副詞は修飾する語の直前に置きます：조금（少し）、정말（本当に）、아주（とても）、많이（たくさん）。"
+  },
+  {
+    "id": "grammar::steps.44.rules[0]",
+    "value": "조금 / 좀 —— 少し（좀の方が柔らかく・カジュアル）"
+  },
+  {
+    "id": "grammar::steps.44.rules[1]",
+    "value": "정말 —— 本当に／実に（中立的）"
+  },
+  {
+    "id": "grammar::steps.44.rules[2]",
+    "value": "진짜 —— 本当に（カジュアルで、より強い印象）"
+  },
+  {
+    "id": "grammar::steps.44.rules[3]",
+    "value": "아주 —— とても"
+  },
+  {
+    "id": "grammar::steps.44.rules[4]",
+    "value": "많이 —— たくさん／多く"
+  },
+  {
+    "id": "grammar::steps.44.rules[5]",
+    "value": "별로 + 否定 —— あまり～ない（별로 안 좋아요 = あまり好きではありません）"
+  },
+  {
+    "id": "grammar::steps.44.rules[6]",
+    "value": "전혀 + 否定 —— 全く～ない（전혀 모르겠어요 = 全く分かりません）"
+  },
+  {
+    "id": "grammar::steps.44.tip.label",
+    "value": "否定の副詞"
+  },
+  {
+    "id": "grammar::steps.44.tip.text",
+    "value": "별로と전혀は必ず否定形の動詞（안、못、없다、모르다）と一緒に使う必要があります。별로 좋아요（否定なし）と言うのは文法的に誤りです。それぞれ「あまり～ない」「全く～ない」と考えましょう。"
+  },
+  {
+    "id": "grammar::steps.47.title",
+    "value": "名詞化：-는 것"
+  },
+  {
+    "id": "grammar::steps.47.body",
+    "value": "動詞の語幹に-는 것を付けると名詞句が作られます——「～すること」。これにより動詞が名詞のように働きます。"
+  },
+  {
+    "id": "grammar::steps.47.rules[0]",
+    "value": "먹는 것 —— 食べること"
+  },
+  {
+    "id": "grammar::steps.47.rules[1]",
+    "value": "배우는 것 —— 学ぶこと"
+  },
+  {
+    "id": "grammar::steps.47.rules[2]",
+    "value": "한국어를 배우는 것이 재미있어요 —— 韓国語を学ぶことは面白いです"
+  },
+  {
+    "id": "grammar::steps.47.rules[3]",
+    "value": "요리하는 것을 좋아해요 —— 料理することが好きです（料理する行為）"
+  },
+  {
+    "id": "grammar::steps.47.tip.label",
+    "value": "時制の形"
+  },
+  {
+    "id": "grammar::steps.47.tip.text",
+    "value": "-는 것（現在／習慣）・-(으)ㄴ 것（過去／完了）・-(으)ㄹ 것（未来／予定）。日常会話では現在形が最もよく使われます。"
+  },
+  {
+    "id": "grammar::steps.50.body",
+    "value": "構造：[A]이/가 [B]보다 더 [形容詞]。보다は「～より」、더は「もっと」という意味です。"
+  },
+  {
+    "id": "grammar::steps.50.rules[0]",
+    "value": "한국어가 영어보다 더 어려워요 —— 韓国語は英語より難しいです"
+  },
+  {
+    "id": "grammar::steps.50.rules[1]",
+    "value": "오늘이 어제보다 더 더워요 —— 今日は昨日より暑いです"
+  },
+  {
+    "id": "grammar::steps.50.rules[2]",
+    "value": "더はカジュアルな話し方では省略できます：한국어가 영어보다 어려워요"
+  },
+  {
+    "id": "grammar::steps.53.title",
+    "value": "좋다 vs 좋아하다"
+  },
+  {
+    "id": "grammar::steps.53.body",
+    "value": "좋다は主語を表す助詞（이/가）を使います：한국어가 좋아요。좋아하다は目的語を表す助詞（을/를）を使います：한국어를 좋아해요。"
+  },
+  {
+    "id": "grammar::steps.53.rules[0]",
+    "value": "좋다 —— 良い／気分が良い（状態）：커피가 좋아요（コーヒーが好きです／コーヒーは良いです）"
+  },
+  {
+    "id": "grammar::steps.53.rules[1]",
+    "value": "좋아하다 ——好む（積極的な好み）：커피를 좋아해요（コーヒーが好きです）"
+  },
+  {
+    "id": "grammar::steps.53.rules[2]",
+    "value": "どちらも「好きです」と訳されますが、좋다は感情に、좋아하다は好みに焦点があります"
+  },
+  {
+    "id": "grammar::steps.53.tip.label",
+    "value": "重要な違い"
+  },
+  {
+    "id": "grammar::steps.53.tip.text",
+    "value": "좋아요の前には主格助詞（이/가）が来ます。좋아해요の前には目的格助詞（을/를）が来ます。迷ったときは、좋아해요の方が好みを表すのに自然に聞こえます"
+  },
+  {
+    "id": "grammar::steps.55.body",
+    "value": "아직＋否定形＝まだ〜ない。벌써＝もう（予想より早い）。이미＝すでに（中立的、フォーマル）"
+  },
+  {
+    "id": "grammar::steps.55.rules[0]",
+    "value": "아직 안 먹었어요 ——まだ食べていません（まだ〜ない）"
+  },
+  {
+    "id": "grammar::steps.55.rules[1]",
+    "value": "아직 여기 있어요 ——まだここにいます（継続中）"
+  },
+  {
+    "id": "grammar::steps.55.rules[2]",
+    "value": "벌써 도착했어요? ——もう着いたの？（驚き）"
+  },
+  {
+    "id": "grammar::steps.55.rules[3]",
+    "value": "이미 알아요 ——すでに知っています（中立的）"
+  },
+  {
+    "id": "grammar::steps.57.rules[0]",
+    "value": "누군가 ——誰か：누군가 왔어요（誰か来ました）"
+  },
+  {
+    "id": "grammar::steps.57.rules[1]",
+    "value": "무언가／뭔가 ——何か：뭔가 이상해요（何かおかしいです）"
+  },
+  {
+    "id": "grammar::steps.57.rules[2]",
+    "value": "어딘가 ——どこか：어딘가에 있어요（どこかにあります）"
+  },
+  {
+    "id": "grammar::steps.57.rules[3]",
+    "value": "아무도＋否定形 ——誰も〜ない：아무도 없어요（誰もいません）"
+  },
+  {
+    "id": "grammar::steps.57.rules[4]",
+    "value": "아무것도＋否定形 ——何も〜ない：아무것도 몰라요（何も知りません）"
+  },
+  {
+    "id": "grammar::steps.59.title",
+    "value": "命令形：-(으)세요"
+  },
+  {
+    "id": "grammar::steps.59.body",
+    "value": "動詞の語幹に-(으)세요を付けると、丁寧な依頼や命令になります"
+  },
+  {
+    "id": "grammar::steps.59.rules[0]",
+    "value": "가다 → 가세요（行ってください）"
+  },
+  {
+    "id": "grammar::steps.59.rules[1]",
+    "value": "앉다 → 앉으세요（座ってください）"
+  },
+  {
+    "id": "grammar::steps.59.rules[2]",
+    "value": "먹다 → 드세요（召し上がってください——尊敬語）"
+  },
+  {
+    "id": "grammar::steps.61.title",
+    "value": "禁止形：-지 마세요"
+  },
+  {
+    "id": "grammar::steps.61.body",
+    "value": "動詞の語幹に-지 마세요を付けると、丁寧に「〜しないでください」と伝えられます"
+  },
+  {
+    "id": "grammar::steps.61.rules[0]",
+    "value": "말하다 → 말하지 마세요（話さないでください）"
+  },
+  {
+    "id": "grammar::steps.61.rules[1]",
+    "value": "가다 → 가지 마세요（行かないでください）"
+  },
+  {
+    "id": "grammar::steps.61.rules[2]",
+    "value": "먹다 → 먹지 마세요（食べないでください）"
+  },
+  {
+    "id": "grammar::steps.64.title",
+    "value": "方法：-(으)로"
+  },
+  {
+    "id": "grammar::steps.64.body",
+    "value": "-(으)로は方法や手段を表します——道具ややり方の「〜で」にあたります"
+  },
+  {
+    "id": "grammar::steps.64.rules[0]",
+    "value": "子音の後は-으로、母音またはㄹの後は-로：버스로 가요（バスで行きます）"
+  },
+  {
+    "id": "grammar::steps.64.rules[1]",
+    "value": "지하철로 와요（地下鉄で来ます）"
+  },
+  {
+    "id": "grammar::steps.64.rules[2]",
+    "value": "한국어로 말해요（韓国語で話します）"
+  },
+  {
+    "id": "grammar::steps.66.body",
+    "value": "잘하다＝得意。못하다＝苦手。どちらも目的格助詞을/를の後に付きます"
+  },
+  {
+    "id": "grammar::steps.66.rules[0]",
+    "value": "한국어를 잘해요（韓国語が得意です）"
+  },
+  {
+    "id": "grammar::steps.66.rules[1]",
+    "value": "수학을 못해요（数学が苦手です）"
+  },
+  {
+    "id": "grammar::steps.66.rules[2]",
+    "value": "수영을 잘 못해요（水泳があまり得意ではありません）"
+  },
+  {
+    "id": "grammar::steps.68.title",
+    "value": "全部・もっと：다、더"
+  },
+  {
+    "id": "grammar::steps.68.body",
+    "value": "다＝全部／すべて。더＝もっと。どちらも動詞の前に置くシンプルな副詞です"
+  },
+  {
+    "id": "grammar::steps.68.rules[0]",
+    "value": "다 먹었어요 ——全部食べました"
+  },
+  {
+    "id": "grammar::steps.68.rules[1]",
+    "value": "더 주세요 ——もっとください"
+  },
+  {
+    "id": "grammar::steps.68.rules[2]",
+    "value": "다と더は文脈によって使い方が大きく異なります"
+  },
+  {
+    "id": "grammar::steps.70.title",
+    "value": "全部・もっと & -도"
+  },
+  {
+    "id": "grammar::steps.70.body",
+    "value": "-도には単純な「も」以外に4つの応用的な使い方があります：強調、強い否定、「〜も〜も」など"
+  },
+  {
+    "id": "grammar::steps.70.rules[0]",
+    "value": "아이도 알아요 ——子供でも知っています（強調：意外な包含）"
+  },
+  {
+    "id": "grammar::steps.70.rules[1]",
+    "value": "하나도 없어요 ——一つもありません（強い否定：하나도＋否定形）"
+  },
+  {
+    "id": "grammar::steps.70.rules[2]",
+    "value": "먹기도 해요 ——食べたりもします（-기도 하다）"
+  },
+  {
+    "id": "grammar::steps.70.rules[3]",
+    "value": "좋기도 하고 나쁘기도 해요 ——良いところも悪いところもあります"
+  },
+  {
+    "id": "grammar::steps.73.message",
+    "value": "文法の全26ステージをマスターしました——SOV語順や助詞から、応用的な-도のパターンまで。さあ、実際の会話で使ってみましょう！"
+  },
+  {
+    "id": "hangul::stages.0.name",
+    "value": "子音"
+  },
+  {
+    "id": "hangul::stages.1.name",
+    "value": "母音"
+  },
+  {
+    "id": "hangul::stages.2.name",
+    "value": "音節"
+  },
+  {
+    "id": "hangul::stages.3.name",
+    "value": "特殊"
+  },
+  {
+    "id": "hangul::stages.4.name",
+    "value": "複合母音"
+  },
+  {
+    "id": "hangul::stages.5.name",
+    "value": "単語を読む"
+  },
+  {
+    "id": "hangul::steps.83.message",
+    "value": "素晴らしいです——ハングルの全6ステージを完了しました。これで韓国語のすべての文字を読み書きできます。화이팅!"
+  },
+  {
+    "id": "nouns::stages.0.name",
+    "value": "人・家族"
+  },
+  {
+    "id": "nouns::stages.1.name",
+    "value": "場所・時間"
+  },
+  {
+    "id": "nouns::stages.2.name",
+    "value": "物・助数詞"
+  },
+  {
+    "id": "nouns::stages.3.name",
+    "value": "所有格"
+  },
+  {
+    "id": "nouns::steps.0.title",
+    "value": "韓国語の名詞（명사）"
+  },
+  {
+    "id": "nouns::steps.7.title",
+    "value": "家族の名詞（가족 명사）"
+  },
+  {
+    "id": "nouns::steps.10.title",
+    "value": "場所の名詞（장소 명사）"
+  },
+  {
+    "id": "nouns::steps.16.title",
+    "value": "時間の名詞（시간 명사）"
+  },
+  {
+    "id": "nouns::steps.19.title",
+    "value": "物の名詞（사물 명사）"
+  },
+  {
+    "id": "nouns::steps.24.title",
+    "value": "韓国語の助数詞（수사）"
+  },
+  {
+    "id": "nouns::steps.27.title",
+    "value": "所有格助詞 의"
+  },
+  {
+    "id": "pronouns::stages.0.name",
+    "value": "一人称・二人称"
+  },
+  {
+    "id": "pronouns::stages.1.name",
+    "value": "三人称・私たち"
+  },
+  {
+    "id": "pronouns::stages.2.name",
+    "value": "指示代名詞"
+  },
+  {
+    "id": "pronouns::stages.3.name",
+    "value": "疑問代名詞"
+  },
+  {
+    "id": "pronouns::steps.9.title",
+    "value": "三人称と私たち（그・그녀・우리）"
+  },
+  {
+    "id": "pronouns::steps.17.title",
+    "value": "指示代名詞（이・그・저）"
+  },
+  {
+    "id": "pronouns::steps.25.title",
+    "value": "疑問代名詞（의문대명사）"
+  },
+  {
+    "id": "pronouns::steps.31.message",
+    "value": "丁寧な저からくだけた나まで、우리（私たちの／私の）から指示代名詞や疑問詞まで——韓国語の代名詞をマスターしました。素晴らしい進歩です！"
+  },
+  {
+    "id": "pronunciation::stages.0.name",
+    "value": "パッチム"
+  },
+  {
+    "id": "pronunciation::stages.1.name",
+    "value": "連音化"
+  },
+  {
+    "id": "pronunciation::stages.2.name",
+    "value": "鼻音化"
+  },
+  {
+    "id": "pronunciation::stages.3.name",
+    "value": "濃音化"
+  },
+  {
+    "id": "pronunciation::stages.4.name",
+    "value": "口蓋音化とㄹ"
+  },
+  {
+    "id": "pronunciation::stages.5.name",
+    "value": "よくある間違い"
+  },
+  {
+    "id": "pronunciation::steps.0.title",
+    "value": "パッチムとは？"
+  },
+  {
+    "id": "pronunciation::steps.1.title",
+    "value": "パッチムの7つの音グループ"
+  },
+  {
+    "id": "pronunciation::steps.13.title",
+    "value": "連音化——つながる音"
+  },
+  {
+    "id": "pronunciation::steps.18.title",
+    "value": "なぜ連音化が起こるのか？"
+  },
+  {
+    "id": "pronunciation::steps.21.title",
+    "value": "鼻音化"
+  },
+  {
+    "id": "pronunciation::steps.29.choices[0]",
+    "value": "ip-ni-da"
+  },
+  {
+    "id": "pronunciation::steps.29.choices[1]",
+    "value": "im-ni-da"
+  },
+  {
+    "id": "pronunciation::steps.29.choices[2]",
+    "value": "ib-ni-da"
+  },
+  {
+    "id": "pronunciation::steps.29.choices[3]",
+    "value": "ip-mi-da"
+  },
+  {
+    "id": "pronunciation::steps.30.title",
+    "value": "同化の方向はいつも一方向"
+  },
+  {
+    "id": "pronunciation::steps.31.title",
+    "value": "濃音化"
+  },
+  {
+    "id": "pronunciation::steps.38.title",
+    "value": "ㅎの弱化"
+  },
+  {
+    "id": "pronunciation::steps.42.title",
+    "value": "ㅎ + 子音 = 激音化"
+  },
+  {
+    "id": "pronunciation::steps.45.title",
+    "value": "口蓋音化"
+  },
+  {
+    "id": "pronunciation::steps.50.title",
+    "value": "ㄹの音"
+  },
+  {
+    "id": "pronunciation::steps.55.title",
+    "value": "ㄹ + ㄴ、または ㄴ + ㄹ → ㄹㄹ"
+  },
+  {
+    "id": "pronunciation::steps.56.choices[0]",
+    "value": "sin-ra"
+  },
+  {
+    "id": "pronunciation::steps.56.choices[1]",
+    "value": "sin-la"
+  },
+  {
+    "id": "pronunciation::steps.56.choices[2]",
+    "value": "sil-la"
+  },
+  {
+    "id": "pronunciation::steps.56.choices[3]",
+    "value": "shi-ra"
+  },
+  {
+    "id": "pronunciation::steps.57.title",
+    "value": "英語話者によくある6つの発音ミス"
+  },
+  {
+    "id": "pronunciation::steps.58.title",
+    "value": "ミス1——ㅡを「ウー」のように発音してしまう"
+  },
+  {
+    "id": "pronunciation::steps.59.title",
+    "value": "ミス2——ㅓを英語の「アー」のように発音してしまう"
+  },
+  {
+    "id": "pronunciation::steps.60.title",
+    "value": "ミス3——濃音で息を出しすぎてしまう"
+  },
+  {
+    "id": "pronunciation::steps.61.title",
+    "value": "ミス4——すべての疑問文で語尾を上げてしまう"
+  },
+  {
+    "id": "pronunciation::steps.62.title",
+    "value": "ミス5——이系の母音の前でㅅを単なる「s」のように発音してしまう"
+  },
+  {
+    "id": "pronunciation::steps.63.title",
+    "value": "ミス6——좋아요のㅎを発音してしまう"
+  },
+  {
+    "id": "pronunciation::steps.66.choices[0]",
+    "value": "jo-ha-yo"
+  },
+  {
+    "id": "pronunciation::steps.66.choices[1]",
+    "value": "jo-a-yo"
+  },
+  {
+    "id": "pronunciation::steps.66.choices[2]",
+    "value": "joh-a-yo"
+  },
+  {
+    "id": "pronunciation::steps.66.choices[3]",
+    "value": "jo-ha"
+  },
+  {
+    "id": "pronunciation::steps.67.message",
+    "value": "パッチムの弱化、連音化、鼻音化、濃音化、ㅎの弱化、ㅎの激音化、口蓋音化、そしてㄹの音——韓国語の発音ルール8つをすべてマスターしました。さらに、英語話者によくある6つのミスとその避け方も身につきました。これであなたの韓国語の発音は、ずっと自然に聞こえるようになります。"
+  },
+  {
+    "id": "shopping::stages.0.name",
+    "value": "ショッピングの単語"
+  },
+  {
+    "id": "shopping::stages.1.name",
+    "value": "お店で"
+  },
+  {
+    "id": "shopping::stages.2.name",
+    "value": "価格・数字"
+  },
+  {
+    "id": "shopping::stages.3.name",
+    "value": "取引"
+  },
+  {
+    "id": "shopping::steps.0.title",
+    "value": "韓国でのショッピング（쇼핑）"
+  },
+  {
+    "id": "shopping::steps.6.title",
+    "value": "買い物アイテムの単語（쇼핑 물건）"
+  },
+  {
+    "id": "shopping::steps.9.title",
+    "value": "重要な買い物フレーズ（쇼핑 표현）"
+  },
+  {
+    "id": "shopping::steps.14.title",
+    "value": "在庫を尋ねる（있어요? / 없어요）"
+  },
+  {
+    "id": "shopping::steps.18.title",
+    "value": "韓国のお金と価格（원）"
+  },
+  {
+    "id": "shopping::steps.26.title",
+    "value": "支払い方法（결제 방법）"
+  },
+  {
+    "id": "speech-levels::stages.0.name",
+    "value": "합쇼체（フォーマル）"
+  },
+  {
+    "id": "speech-levels::stages.1.name",
+    "value": "해요체（丁寧）"
+  },
+  {
+    "id": "speech-levels::stages.2.name",
+    "value": "반말（タメ口）"
+  },
+  {
+    "id": "speech-levels::stages.3.name",
+    "value": "レベルを選ぶ"
+  },
+  {
+    "id": "speech-levels::steps.1.title",
+    "value": "합쇼체 —— フォーマルな話し方"
+  },
+  {
+    "id": "speech-levels::steps.6.title",
+    "value": "합쇼체の動詞語尾（-ㅂ니다/-습니다）"
+  },
+  {
+    "id": "speech-levels::steps.9.title",
+    "value": "해요체 —— 日常の丁寧な話し方"
+  },
+  {
+    "id": "speech-levels::steps.15.title",
+    "value": "-아요 / -어요 のパターン"
+  },
+  {
+    "id": "speech-levels::steps.18.title",
+    "value": "반말 —— タメ口"
+  },
+  {
+    "id": "speech-levels::steps.24.title",
+    "value": "반말を使うとき（使ってはいけないときも）"
+  },
+  {
+    "id": "speech-levels::steps.26.title",
+    "value": "문어체 —— 書き言葉・フォーマルスタイル"
+  },
+  {
+    "id": "speech-levels::steps.32.message",
+    "value": "韓国語の話し言葉のレベル体系——フォーマルな합쇼체、日常の해요체、タメ口の반말、書き言葉の문어체——をマスターしました。これで社会的な状況を読み取り、ふさわしいレベルで話せるようになりました。"
+  },
+  {
+    "id": "syllable-blocks::stages.0.name",
+    "value": "ブロックの基礎"
+  },
+  {
+    "id": "syllable-blocks::stages.1.name",
+    "value": "母音の形"
+  },
+  {
+    "id": "syllable-blocks::stages.2.name",
+    "value": "作ってみよう"
+  },
+  {
+    "id": "syllable-blocks::stages.3.name",
+    "value": "パッチム"
+  },
+  {
+    "id": "syllable-blocks::stages.4.name",
+    "value": "単語を読む"
+  },
+  {
+    "id": "syllable-blocks::steps.0.title",
+    "value": "音節ブロックとは？"
+  },
+  {
+    "id": "syllable-blocks::steps.1.title",
+    "value": "三つの位置"
+  },
+  {
+    "id": "syllable-blocks::steps.2.title",
+    "value": "四つの音節ブロックパターン"
+  },
+  {
+    "id": "syllable-blocks::steps.13.title",
+    "value": "縦母音と横母音"
+  },
+  {
+    "id": "syllable-blocks::steps.24.title",
+    "value": "初めての音節を作る"
+  },
+  {
+    "id": "syllable-blocks::steps.33.title",
+    "value": "パッチムを加える —— 最後の子音"
+  },
+  {
+    "id": "syllable-blocks::steps.44.title",
+    "value": "実際の韓国語の単語を読む"
+  },
+  {
+    "id": "syllable-blocks::steps.45.meaning",
+    "value": "韓国"
+  },
+  {
+    "id": "syllable-blocks::steps.46.meaning",
+    "value": "人"
+  },
+  {
+    "id": "syllable-blocks::steps.47.meaning",
+    "value": "学校"
+  },
+  {
+    "id": "syllable-blocks::steps.48.meaning",
+    "value": "こんにちは／平和"
+  },
+  {
+    "id": "syllable-blocks::steps.49.meaning",
+    "value": "感謝"
+  },
+  {
+    "id": "syllable-blocks::steps.50.meaning",
+    "value": "愛"
+  },
+  {
+    "id": "syllable-blocks::steps.51.meaning",
+    "value": "音楽"
+  },
+  {
+    "id": "syllable-blocks::steps.52.meaning",
+    "value": "友達"
+  },
+  {
+    "id": "syllable-blocks::steps.53.meaning",
+    "value": "家族"
+  },
+  {
+    "id": "syllable-blocks::steps.54.meaning",
+    "value": "海／大洋"
+  },
+  {
+    "id": "syllable-blocks::steps.55.meaning",
+    "value": "夢"
+  },
+  {
+    "id": "syllable-blocks::steps.56.title",
+    "value": "練習とまとめ"
+  },
+  {
+    "id": "syllable-blocks::steps.60.message",
+    "value": "韓国語のすべての文字の基本ブロックをマスターしました——5つのステージ、61のステップ。すべての韓国語の単語はまさにこれらのブロックでできています。화이팅！"
+  }
+]

@@ -1,0 +1,217 @@
+{
+  "lang": "vi",
+  "chunk": 0,
+  "count": 30,
+  "units": [
+    {
+      "id": "letter-writing::stages.0.name",
+      "path": "letter-writing/stages[0]/name",
+      "ko": "획순 원리",
+      "en": "How Strokes Work",
+      "vi": "Cách các nét hoạt động"
+    },
+    {
+      "id": "letter-writing::stages.1.name",
+      "path": "letter-writing/stages[1]/name",
+      "ko": "자음 쓰기",
+      "en": "Consonants",
+      "vi": "Phụ âm"
+    },
+    {
+      "id": "letter-writing::stages.2.name",
+      "path": "letter-writing/stages[2]/name",
+      "ko": "모음 쓰기",
+      "en": "Vowels",
+      "vi": "Nguyên âm"
+    },
+    {
+      "id": "letter-writing::stages.3.name",
+      "path": "letter-writing/stages[3]/name",
+      "ko": "음절 쓰기",
+      "en": "Syllable Blocks",
+      "vi": "Khối âm tiết"
+    },
+    {
+      "id": "letter-writing::stages.4.name",
+      "path": "letter-writing/stages[4]/name",
+      "ko": "도전",
+      "en": "Challenge",
+      "vi": "Thử thách"
+    },
+    {
+      "id": "letter-writing::steps.0.title",
+      "path": "letter-writing/steps[0]/title",
+      "ko": "획순 세 가지 규칙",
+      "en": "The Three Rules of Stroke Order",
+      "vi": "Ba quy tắc về thứ tự nét"
+    },
+    {
+      "id": "letter-writing::steps.0.body",
+      "path": "letter-writing/steps[0]/body",
+      "ko": null,
+      "en": "Every hangul letter is built from a handful of simple strokes, and those strokes always come in the same order. Three rules cover all of them.",
+      "vi": "Mỗi chữ cái hangul được tạo nên từ một vài nét đơn giản, và các nét đó luôn theo cùng một thứ tự. Ba quy tắc bao quát tất cả."
+    },
+    {
+      "id": "letter-writing::steps.0.rules[0]",
+      "path": "letter-writing/steps[0]/rules[0]",
+      "ko": null,
+      "en": "Top before bottom — the highest stroke is written first.",
+      "vi": "Trên trước dưới — nét cao nhất được viết trước."
+    },
+    {
+      "id": "letter-writing::steps.0.rules[1]",
+      "path": "letter-writing/steps[0]/rules[1]",
+      "ko": null,
+      "en": "Left before right — when strokes stand side by side, start with the one on the left.",
+      "vi": "Trái trước phải — khi các nét đứng cạnh nhau, hãy bắt đầu từ nét bên trái."
+    },
+    {
+      "id": "letter-writing::steps.0.rules[2]",
+      "path": "letter-writing/steps[0]/rules[2]",
+      "ko": null,
+      "en": "Horizontal before an intersecting vertical — draw the crossing bar first, then the line that cuts through it.",
+      "vi": "Nét ngang trước nét dọc cắt qua — vẽ thanh ngang trước, rồi mới đến nét cắt qua nó."
+    },
+    {
+      "id": "letter-writing::steps.0.tip.label",
+      "path": "letter-writing/steps[0]/tip.label",
+      "ko": null,
+      "en": "Why it matters",
+      "vi": "Tại sao điều này quan trọng"
+    },
+    {
+      "id": "letter-writing::steps.0.tip.text",
+      "path": "letter-writing/steps[0]/tip.text",
+      "ko": null,
+      "en": "Every hangul letter follows these three rules. Learn the 24 basic shapes and you can write all 11,172 Korean syllables.",
+      "vi": "Mỗi chữ cái hangul đều tuân theo ba quy tắc này. Học 24 hình cơ bản là bạn có thể viết được cả 11.172 âm tiết tiếng Hàn."
+    },
+    {
+      "id": "letter-writing::steps.1.title",
+      "path": "letter-writing/steps[1]/title",
+      "ko": "글자마다 정해진 획수",
+      "en": "One Letter, One Rhythm",
+      "vi": "Mỗi chữ cái, một nhịp điệu"
+    },
+    {
+      "id": "letter-writing::steps.1.body",
+      "path": "letter-writing/steps[1]/body",
+      "ko": null,
+      "en": "Each letter has a fixed number of strokes, and each stroke has a fixed direction. ㅈ is written in 2 strokes and ㅊ in 3 — that is the handwriting convention used all the way through this lesson. Inside a syllable block the order is fixed too: first the opening consonant, then the vowel, then the final consonant underneath.",
+      "vi": "Mỗi chữ cái có số nét cố định, và mỗi nét có hướng cố định. ㅈ viết bằng 2 nét và ㅊ bằng 3 nét — đó là quy ước viết tay dùng xuyên suốt bài học này. Bên trong một khối âm tiết, thứ tự cũng cố định: trước hết là phụ âm đầu, rồi đến nguyên âm, rồi phụ âm cuối bên dưới."
+    },
+    {
+      "id": "letter-writing::steps.1.rules[0]",
+      "path": "letter-writing/steps[1]/rules[0]",
+      "ko": null,
+      "en": "Opening consonant first (초성) — the top-left slot.",
+      "vi": "Phụ âm đầu trước (초성) — ô trên bên trái."
+    },
+    {
+      "id": "letter-writing::steps.1.rules[1]",
+      "path": "letter-writing/steps[1]/rules[1]",
+      "ko": null,
+      "en": "Then the vowel (중성) — to the right of it, or underneath it.",
+      "vi": "Rồi đến nguyên âm (중성) — bên phải hoặc bên dưới nó."
+    },
+    {
+      "id": "letter-writing::steps.1.rules[2]",
+      "path": "letter-writing/steps[1]/rules[2]",
+      "ko": null,
+      "en": "Then the final consonant (종성) along the bottom, if the syllable has one.",
+      "vi": "Rồi phụ âm cuối (종성) chạy dọc phía dưới, nếu âm tiết có."
+    },
+    {
+      "id": "letter-writing::steps.1.tip.label",
+      "path": "letter-writing/steps[1]/tip.label",
+      "ko": null,
+      "en": "The mark on top of ㅎ and ㅊ",
+      "vi": "Dấu nhỏ trên đỉnh ㅎ và ㅊ"
+    },
+    {
+      "id": "letter-writing::steps.1.tip.text",
+      "path": "letter-writing/steps[1]/tip.text",
+      "ko": null,
+      "en": "The small mark on top of ㅎ and ㅊ can be written flat, slanted, or straight up and down — Korean has no official rule, and you will see all three. We draw it slanted, the way most Korean fonts print it, so the letter you practise looks like the Korean you will actually read.",
+      "vi": "Dấu nhỏ trên đỉnh ㅎ và ㅊ có thể viết nằm ngang, xiên, hoặc thẳng đứng — tiếng Hàn không có quy tắc chính thức, và bạn sẽ thấy cả ba kiểu. Chúng tôi viết nó xiên, giống như cách hầu hết các phông chữ Hàn Quốc in ra, để chữ bạn luyện trông giống tiếng Hàn mà bạn sẽ thực sự đọc."
+    },
+    {
+      "id": "letter-writing::steps.2.hint",
+      "path": "letter-writing/steps[2]/hint",
+      "ko": null,
+      "en": "One single stroke: across to the right, then turn and come straight down.",
+      "vi": "Một nét duy nhất: sang phải, rồi gập lại và kéo thẳng xuống."
+    },
+    {
+      "id": "letter-writing::steps.2.example_meaning",
+      "path": "letter-writing/steps[2]/example_meaning",
+      "ko": null,
+      "en": "to go",
+      "vi": "đi"
+    },
+    {
+      "id": "letter-writing::steps.3.hint",
+      "path": "letter-writing/steps[3]/hint",
+      "ko": null,
+      "en": "Start at the top-left. One stroke: across, then down without lifting.",
+      "vi": "Bắt đầu từ góc trên bên trái. Một nét: sang ngang rồi xuống, không nhấc bút."
+    },
+    {
+      "id": "letter-writing::steps.4.hint",
+      "path": "letter-writing/steps[4]/hint",
+      "ko": null,
+      "en": "One single stroke: down the left side, then turn and run along the bottom.",
+      "vi": "Một nét duy nhất: kéo xuống bên trái, rồi gập lại và chạy dọc đáy."
+    },
+    {
+      "id": "letter-writing::steps.4.example_meaning",
+      "path": "letter-writing/steps[4]/example_meaning",
+      "ko": null,
+      "en": "I / me",
+      "vi": "tôi"
+    },
+    {
+      "id": "letter-writing::steps.5.hint",
+      "path": "letter-writing/steps[5]/hint",
+      "ko": null,
+      "en": "Start at the top-left. Down first, then right — one unbroken stroke.",
+      "vi": "Bắt đầu từ góc trên bên trái. Xuống trước, rồi sang phải — một nét liền không ngắt."
+    },
+    {
+      "id": "letter-writing::steps.6.hint",
+      "path": "letter-writing/steps[6]/hint",
+      "ko": null,
+      "en": "Two strokes: the top bar, then a stroke down the left side and along the bottom.",
+      "vi": "Hai nét: thanh ngang trên, rồi một nét kéo xuống bên trái và chạy dọc đáy."
+    },
+    {
+      "id": "letter-writing::steps.6.example_meaning",
+      "path": "letter-writing/steps[6]/example_meaning",
+      "ko": null,
+      "en": "all / every",
+      "vi": "tất cả / mọi thứ"
+    },
+    {
+      "id": "letter-writing::steps.7.hint",
+      "path": "letter-writing/steps[7]/hint",
+      "ko": null,
+      "en": "Draw the top bar left to right. Then start again at the top-left corner: down, then right.",
+      "vi": "Vẽ thanh ngang trên từ trái sang phải. Rồi bắt đầu lại từ góc trên bên trái: xuống, rồi sang phải."
+    },
+    {
+      "id": "letter-writing::steps.8.hint",
+      "path": "letter-writing/steps[8]/hint",
+      "ko": null,
+      "en": "Three strokes: the ㄱ motion, the middle bar, then the ㄴ motion.",
+      "vi": "Ba nét: động tác ㄱ, thanh ngang giữa, rồi động tác ㄴ."
+    },
+    {
+      "id": "letter-writing::steps.8.example_meaning",
+      "path": "letter-writing/steps[8]/example_meaning",
+      "ko": null,
+      "en": "reason (prefix)",
+      "vi": "lý do (tiền tố)"
+    }
+  ]
+}

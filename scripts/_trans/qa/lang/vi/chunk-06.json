@@ -1,0 +1,232 @@
+{
+  "lang": "vi",
+  "chunk": 6,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::steps.36.rules[1]",
+      "path": "grammar/steps[36]/rules[1]",
+      "ko": null,
+      "en": "명 — people (neutral): 학생 두 명 (2 students)",
+      "current": "명 — người (trung tính): 학생 두 명 (2 học sinh)",
+      "ref_th": "명 — คน (กลาง): 학생 두 명 (นักเรียน 2 คน)",
+      "ref_es": "명 — personas (neutral): 학생 두 명 (2 estudiantes)"
+    },
+    {
+      "id": "grammar::steps.36.rules[2]",
+      "path": "grammar/steps[36]/rules[2]",
+      "ko": null,
+      "en": "분 — people (honorific): 손님 두 분 (2 guests)",
+      "current": "분 — người (kính ngữ): 손님 두 분 (2 vị khách)",
+      "ref_th": "분 — คน (ยกย่อง): 손님 두 분 (แขก 2 ท่าน)",
+      "ref_es": "분 — personas (honorífico): 손님 두 분 (2 invitados)"
+    },
+    {
+      "id": "grammar::steps.36.rules[3]",
+      "path": "grammar/steps[36]/rules[3]",
+      "ko": null,
+      "en": "마리 — animals: 고양이 한 마리 (1 cat)",
+      "current": "마리 — động vật: 고양이 한 마리 (1 con mèo)",
+      "ref_th": "마리 — สัตว์: 고양이 한 마리 (แมว 1 ตัว)",
+      "ref_es": "마리 — animales: 고양이 한 마리 (1 gato)"
+    },
+    {
+      "id": "grammar::steps.36.rules[4]",
+      "path": "grammar/steps[36]/rules[4]",
+      "ko": null,
+      "en": "권 — books: 책 세 권 (3 books)",
+      "current": "권 — sách: 책 세 권 (3 quyển sách)",
+      "ref_th": "권 — หนังสือ: 책 세 권 (หนังสือ 3 เล่ม)",
+      "ref_es": "권 — libros: 책 세 권 (3 libros)"
+    },
+    {
+      "id": "grammar::steps.36.rules[5]",
+      "path": "grammar/steps[36]/rules[5]",
+      "ko": null,
+      "en": "잔 — cups/drinks: 커피 두 잔 (2 coffees)",
+      "current": "잔 — ly/đồ uống: 커피 두 잔 (2 ly cà phê)",
+      "ref_th": "잔 — ถ้วย/เครื่องดื่ม: 커피 두 잔 (กาแฟ 2 แก้ว)",
+      "ref_es": "잔 — tazas/bebidas: 커피 두 잔 (2 cafés)"
+    },
+    {
+      "id": "grammar::steps.36.rules[6]",
+      "path": "grammar/steps[36]/rules[6]",
+      "ko": null,
+      "en": "번 — times/turns: 세 번 (3 times)",
+      "current": "번 — lần/lượt: 세 번 (3 lần)",
+      "ref_th": "번 — ครั้ง: 세 번 (3 ครั้ง)",
+      "ref_es": "번 — veces/turnos: 세 번 (3 veces)"
+    },
+    {
+      "id": "grammar::steps.37.meaning",
+      "path": "grammar/steps[37]/meaning",
+      "ko": null,
+      "en": "Please give me three apples.",
+      "current": "Cho tôi ba quả táo.",
+      "ref_th": "ขอแอปเปิล 3 ลูก",
+      "ref_es": "Por favor dame tres manzanas."
+    },
+    {
+      "id": "grammar::steps.38.prompt",
+      "path": "grammar/steps[38]/prompt",
+      "ko": null,
+      "en": "Counter for people (neutral)?",
+      "current": "Loại từ dùng cho người (trung tính)?",
+      "ref_th": "ลักษณนามคนแบบกลาง?",
+      "ref_es": "¿Contador para personas (neutral)?"
+    },
+    {
+      "id": "grammar::steps.39.title",
+      "path": "grammar/steps[39]/title",
+      "ko": "-고 있어요",
+      "en": "Present Progressive",
+      "current": "Thì hiện tại tiếp diễn",
+      "ref_th": "ปัจจุบันกาลกำลังทำ",
+      "ref_es": "Presente Progresivo"
+    },
+    {
+      "id": "grammar::steps.39.body",
+      "path": "grammar/steps[39]/body",
+      "ko": null,
+      "en": "Add -고 있어요 to the verb stem to say someone IS CURRENTLY doing something (the Korean '-ing' form).",
+      "current": "Thêm -고 있어요 vào gốc động từ để nói ai đó ĐANG làm gì đó (dạng '-ing' của tiếng Hàn).",
+      "ref_th": "เติม -고 있어요 ต่อท้ายก้านกริยาเพื่อบอกว่ากำลังทำอะไรอยู่ (รูป -ing ของเกาหลี)",
+      "ref_es": "Añade -고 있어요 a la raíz verbal para decir que alguien ESTÁ HACIENDO algo ahora mismo (la forma \"-ando/-iendo\" del coreano)."
+    },
+    {
+      "id": "grammar::steps.39.rules[0]",
+      "path": "grammar/steps[39]/rules[0]",
+      "ko": null,
+      "en": "먹다 → 먹고 있어요 (is eating)",
+      "current": "먹다 → 먹고 있어요 (đang ăn)",
+      "ref_th": "먹다 → 먹고 있어요 (กำลังกิน)",
+      "ref_es": "먹다 → 먹고 있어요 (está comiendo)"
+    },
+    {
+      "id": "grammar::steps.39.rules[1]",
+      "path": "grammar/steps[39]/rules[1]",
+      "ko": null,
+      "en": "가다 → 가고 있어요 (is going)",
+      "current": "가다 → 가고 있어요 (đang đi)",
+      "ref_th": "가다 → 가고 있어요 (กำลังไป)",
+      "ref_es": "가다 → 가고 있어요 (está yendo)"
+    },
+    {
+      "id": "grammar::steps.39.rules[2]",
+      "path": "grammar/steps[39]/rules[2]",
+      "ko": null,
+      "en": "공부하다 → 공부하고 있어요 (is studying)",
+      "current": "공부하다 → 공부하고 있어요 (đang học)",
+      "ref_th": "공부하다 → 공부하고 있어요 (กำลังเรียน)",
+      "ref_es": "공부하다 → 공부하고 있어요 (está estudiando)"
+    },
+    {
+      "id": "grammar::steps.39.rules[3]",
+      "path": "grammar/steps[39]/rules[3]",
+      "ko": null,
+      "en": "읽다 → 읽고 있어요 (is reading)",
+      "current": "읽다 → 읽고 있어요 (đang đọc)",
+      "ref_th": "읽다 → 읽고 있어요 (กำลังอ่าน)",
+      "ref_es": "읽다 → 읽고 있어요 (está leyendo)"
+    },
+    {
+      "id": "grammar::steps.39.tip.label",
+      "path": "grammar/steps[39]/tip.label",
+      "ko": null,
+      "en": "Progressive vs Simple",
+      "current": "Tiếp diễn và đơn giản",
+      "ref_th": "กำลังทำ vs ปกติ",
+      "ref_es": "Progresivo vs Simple"
+    },
+    {
+      "id": "grammar::steps.39.tip.text",
+      "path": "grammar/steps[39]/tip.text",
+      "ko": null,
+      "en": "먹어요 = I eat (general or right now, context-dependent). 먹고 있어요 = I am eating (specifically in progress at this moment). The progressive adds 'currently in action.'",
+      "current": "먹어요 = Tôi ăn (nói chung hoặc ngay lúc này, tùy ngữ cảnh). 먹고 있어요 = Tôi đang ăn (cụ thể đang diễn ra ngay lúc này). Dạng tiếp diễn thêm ý 'đang trong hành động'.",
+      "ref_th": "먹어요 = ฉันกิน (ทั่วไปหรือตอนนี้ ขึ้นอยู่กับบริบท) 먹고 있어요 = ฉันกำลังกิน (กำลังทำอยู่ขณะนี้โดยเฉพาะ) รูป progressive เพิ่มความหมาย กำลังดำเนินอยู่",
+      "ref_es": "먹어요 = Como (general o ahora mismo, según el contexto). 먹고 있어요 = Estoy comiendo (específicamente en progreso en este momento). El progresivo añade \"en acción actualmente\"."
+    },
+    {
+      "id": "grammar::steps.40.meaning",
+      "path": "grammar/steps[40]/meaning",
+      "ko": null,
+      "en": "I am eating right now.",
+      "current": "Tôi đang ăn ngay lúc này.",
+      "ref_th": "ฉันกำลังกินอยู่ตอนนี้",
+      "ref_es": "Estoy comiendo ahora mismo."
+    },
+    {
+      "id": "grammar::steps.41.prompt",
+      "path": "grammar/steps[41]/prompt",
+      "ko": null,
+      "en": "'is studying' → 공부하다 + -고 있어요 =",
+      "current": "'đang học' → 공부하다 + -고 있어요 =",
+      "ref_th": "กำลังเรียน → 공부하다 + -고 있어요 =",
+      "ref_es": "\"está estudiando\" → 공부하다 + -고 있어요 ="
+    },
+    {
+      "id": "grammar::steps.42.title",
+      "path": "grammar/steps[42]/title",
+      "ko": "자기소개",
+      "en": "Self Introduction",
+      "current": "Giới thiệu bản thân",
+      "ref_th": "แนะนำตัว",
+      "ref_es": "Presentación Personal"
+    },
+    {
+      "id": "grammar::steps.42.body",
+      "path": "grammar/steps[42]/body",
+      "ko": null,
+      "en": "Key vocabulary: 이름 (name), 나이 (age), 나라 (country), 직업 (job), 취미 (hobby), 고향 (hometown).",
+      "current": "Từ vựng quan trọng: 이름 (tên), 나이 (tuổi), 나라 (quốc gia), 직업 (nghề nghiệp), 취미 (sở thích), 고향 (quê hương).",
+      "ref_th": "คำศัพท์สำคัญ: 이름 (ชื่อ) 나이 (อายุ) 나라 (ประเทศ) 직업 (อาชีพ) 취미 (งานอดิเรก) 고향 (บ้านเกิด)",
+      "ref_es": "Vocabulario clave: 이름 (nombre), 나이 (edad), 나라 (país), 직업 (trabajo), 취미 (pasatiempo), 고향 (ciudad natal)."
+    },
+    {
+      "id": "grammar::steps.42.rules[0]",
+      "path": "grammar/steps[42]/rules[0]",
+      "ko": null,
+      "en": "안녕하세요! 저는 [name]이에요/예요.",
+      "current": "안녕하세요! 저는 [tên]이에요/예요.",
+      "ref_th": "안녕하세요! 저는 [ชื่อ]이에요/예요.",
+      "ref_es": "안녕하세요! 저는 [nombre]이에요/예요."
+    },
+    {
+      "id": "grammar::steps.42.rules[1]",
+      "path": "grammar/steps[42]/rules[1]",
+      "ko": null,
+      "en": "저는 [나라]에서 왔어요. (I'm from [country].)",
+      "current": "저는 [나라]에서 왔어요. (Tôi đến từ [quốc gia].)",
+      "ref_th": "저는 [ประเทศ]에서 왔어요. (ฉันมาจาก [ประเทศ])",
+      "ref_es": "저는 [나라]에서 왔어요. (Soy de [país].)"
+    },
+    {
+      "id": "grammar::steps.42.rules[2]",
+      "path": "grammar/steps[42]/rules[2]",
+      "ko": null,
+      "en": "저는 [직업]이에요. (I'm a [job].)",
+      "current": "저는 [직업]이에요. (Tôi là [nghề nghiệp].)",
+      "ref_th": "저는 [อาชีพ]이에요. (ฉันเป็น [อาชีพ])",
+      "ref_es": "저는 [직업]이에요. (Soy [trabajo].)"
+    },
+    {
+      "id": "grammar::steps.42.rules[3]",
+      "path": "grammar/steps[42]/rules[3]",
+      "ko": null,
+      "en": "제 취미는 [hobby]예요. (My hobby is [hobby].)",
+      "current": "제 취미는 [sở thích]예요. (Sở thích của tôi là [sở thích].)",
+      "ref_th": "제 취미는 [งานอดิเรก]예요. (งานอดิเรกของฉันคือ [งานอดิเรก])",
+      "ref_es": "제 취미는 [pasatiempo]예요. (Mi pasatiempo es [pasatiempo].)"
+    },
+    {
+      "id": "grammar::steps.42.rules[4]",
+      "path": "grammar/steps[42]/rules[4]",
+      "ko": null,
+      "en": "잘 부탁드려요! (Nice to meet you!)",
+      "current": "잘 부탁드려요! (Rất vui được gặp bạn!)",
+      "ref_th": "잘 부탁드려요! (ยินดีที่ได้รู้จัก!)",
+      "ref_es": "잘 부탁드려요! (¡Mucho gusto!)"
+    }
+  ]
+}

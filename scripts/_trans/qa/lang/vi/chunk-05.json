@@ -1,0 +1,232 @@
+{
+  "lang": "vi",
+  "chunk": 5,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::steps.30.prompt",
+      "path": "grammar/steps[30]/prompt",
+      "ko": null,
+      "en": "Soft contrast or topic shift — most common in spoken Korean?",
+      "current": "Tương phản nhẹ hoặc chuyển chủ đề — phổ biến nhất trong tiếng Hàn nói?",
+      "ref_th": "ขัดแย้งอ่อนหรือเปลี่ยนหัวข้อ — พบบ่อยที่สุดในการพูดเกาหลี?",
+      "ref_es": "¿Contraste suave o cambio de tema — más común en el coreano oral?"
+    },
+    {
+      "id": "grammar::steps.31.title",
+      "path": "grammar/steps[31]/title",
+      "ko": "-하고, -(이)랑, 와/과",
+      "en": "And, With",
+      "current": "Và, với",
+      "ref_th": "และ กับ",
+      "ref_es": "Y, Con"
+    },
+    {
+      "id": "grammar::steps.31.body",
+      "path": "grammar/steps[31]/body",
+      "ko": null,
+      "en": "Use these particles between nouns (not sentences) to mean 'and' or 'with'.",
+      "current": "Dùng các trợ từ này giữa các danh từ (không phải giữa các câu) để mang nghĩa 'và' hoặc 'với'.",
+      "ref_th": "ใช้คำช่วยเหล่านี้ระหว่างคำนาม (ไม่ใช่ประโยค) เพื่อหมายถึง และ หรือ กับ",
+      "ref_es": "Usa estas partículas entre sustantivos (no entre oraciones) para significar \"y\" o \"con\"."
+    },
+    {
+      "id": "grammar::steps.31.rules[0]",
+      "path": "grammar/steps[31]/rules[0]",
+      "ko": null,
+      "en": "-하고 — after any noun, neutral/casual: 친구하고 갔어요 (went with a friend)",
+      "current": "-하고 — sau bất kỳ danh từ nào, trung tính/thân mật: 친구하고 갔어요 (đã đi với một người bạn)",
+      "ref_th": "-하고 — หลังคำนามใดก็ได้ กลาง/ไม่เป็นทางการ: 친구하고 갔어요 (ไปกับเพื่อน)",
+      "ref_es": "-하고 — después de cualquier sustantivo, neutral/informal: 친구하고 갔어요 (fui con un amigo)"
+    },
+    {
+      "id": "grammar::steps.31.rules[1]",
+      "path": "grammar/steps[31]/rules[1]",
+      "ko": null,
+      "en": "-(이)랑 — 이랑 (consonant) / 랑 (vowel), very casual: 오빠랑 놀았어요 (played with older brother)",
+      "current": "-(이)랑 — 이랑 (phụ âm) / 랑 (nguyên âm), rất thân mật: 오빠랑 놀았어요 (đã chơi với anh trai)",
+      "ref_th": "-(이)랑 — 이랑 (ลงท้ายพยัญชนะ) / 랑 (ลงท้ายสระ) ไม่เป็นทางการมาก: 오빠랑 놀았어요 (เล่นกับพี่ชาย)",
+      "ref_es": "-(이)랑 — 이랑 (consonante) / 랑 (vocal), muy informal: 오빠랑 놀았어요 (jugué con mi hermano mayor)"
+    },
+    {
+      "id": "grammar::steps.31.rules[2]",
+      "path": "grammar/steps[31]/rules[2]",
+      "ko": null,
+      "en": "-와/과 — 와 (vowel) / 과 (consonant), formal/written: 선생님과 상담했어요 (consulted with teacher)",
+      "current": "-와/과 — 와 (nguyên âm) / 과 (phụ âm), trang trọng/văn viết: 선생님과 상담했어요 (đã tư vấn với giáo viên)",
+      "ref_th": "-와/과 — 와 (ลงท้ายสระ) / 과 (ลงท้ายพยัญชนะ) ทางการ/การเขียน: 선생님과 상담했어요 (ปรึกษาครู)",
+      "ref_es": "-와/과 — 와 (vocal) / 과 (consonante), formal/escrito: 선생님과 상담했어요 (consulté con el profesor)"
+    },
+    {
+      "id": "grammar::steps.32.title",
+      "path": "grammar/steps[32]/title",
+      "ko": "-한테, -한테서",
+      "en": "To/From Someone",
+      "current": "Đến/Từ ai đó",
+      "ref_th": "ให้/จาก บุคคล",
+      "ref_es": "A / De Alguien"
+    },
+    {
+      "id": "grammar::steps.32.body",
+      "path": "grammar/steps[32]/body",
+      "ko": null,
+      "en": "Use person-directional particles when giving to or receiving from people, not places.",
+      "current": "Dùng các trợ từ chỉ hướng-người khi cho hoặc nhận từ người, không phải nơi chốn.",
+      "ref_th": "ใช้คำช่วยบ่งทิศทางบุคคลเมื่อให้หรือรับจากคน ไม่ใช่สถานที่",
+      "ref_es": "Usa partículas de dirección personal cuando das o recibes de personas, no de lugares."
+    },
+    {
+      "id": "grammar::steps.32.rules[0]",
+      "path": "grammar/steps[32]/rules[0]",
+      "ko": null,
+      "en": "-한테 — to (a person): 친구한테 전화했어요 (called my friend)",
+      "current": "-한테 — đến (một người): 친구한테 전화했어요 (đã gọi cho bạn tôi)",
+      "ref_th": "-한테 — ให้ (บุคคล): 친구한테 전화했어요 (โทรหาเพื่อน)",
+      "ref_es": "-한테 — a (una persona): 친구한테 전화했어요 (llamé a mi amigo)"
+    },
+    {
+      "id": "grammar::steps.32.rules[1]",
+      "path": "grammar/steps[32]/rules[1]",
+      "ko": null,
+      "en": "-한테서 — from (a person): 선생님한테서 배웠어요 (learned from teacher)",
+      "current": "-한테서 — từ (một người): 선생님한테서 배웠어요 (đã học từ giáo viên)",
+      "ref_th": "-한테서 — จาก (บุคคล): 선생님한테서 배웠어요 (เรียนจากครู)",
+      "ref_es": "-한테서 — de (una persona): 선생님한테서 배웠어요 (aprendí del profesor)"
+    },
+    {
+      "id": "grammar::steps.32.rules[2]",
+      "path": "grammar/steps[32]/rules[2]",
+      "ko": null,
+      "en": "-에게 / -에게서 — formal equivalents",
+      "current": "-에게 / -에게서 — các dạng trang trọng tương đương",
+      "ref_th": "-에게 / -에게서 — รูปทางการ",
+      "ref_es": "-에게 / -에게서 — equivalentes formales"
+    },
+    {
+      "id": "grammar::steps.32.rules[3]",
+      "path": "grammar/steps[32]/rules[3]",
+      "ko": null,
+      "en": "-께 — to (honorific, for elders): 선생님께 드렸어요",
+      "current": "-께 — đến (kính ngữ, dành cho người lớn tuổi): 선생님께 드렸어요",
+      "ref_th": "-께 — ให้ (ยกย่อง สำหรับผู้ใหญ่): 선생님께 드렸어요",
+      "ref_es": "-께 — a (honorífico, para mayores): 선생님께 드렸어요"
+    },
+    {
+      "id": "grammar::steps.33.title",
+      "path": "grammar/steps[33]/title",
+      "ko": "시간 말하기",
+      "en": "Telling Time",
+      "current": "Nói giờ",
+      "ref_th": "การบอกเวลา",
+      "ref_es": "Decir la Hora"
+    },
+    {
+      "id": "grammar::steps.33.body",
+      "path": "grammar/steps[33]/body",
+      "ko": null,
+      "en": "Use NATIVE Korean numbers for hours (시) and SINO-KOREAN numbers for minutes (분). AM = 오전, PM = 오후.",
+      "current": "Dùng số ĐẾM THUẦN HÀN cho giờ (시) và số HÁN HÀN cho phút (분). Sáng = 오전, chiều/tối = 오후.",
+      "ref_th": "ใช้ตัวเลขเกาหลีดั้งเดิมสำหรับชั่วโมง (시) และตัวเลขจีน-เกาหลีสำหรับนาที (분) ก่อนเที่ยง = 오전 หลังเที่ยง = 오후",
+      "ref_es": "Usa números COREANOS NATIVOS para las horas (시) y números SINO-COREANOS para los minutos (분). AM = 오전, PM = 오후."
+    },
+    {
+      "id": "grammar::steps.33.rules[0]",
+      "path": "grammar/steps[33]/rules[0]",
+      "ko": null,
+      "en": "Hours (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시",
+      "current": "Giờ (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시",
+      "ref_th": "ชั่วโมง (시): 한(1) 두(2) 세(3) 네(4) 다섯(5)... + 시",
+      "ref_es": "Horas (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시"
+    },
+    {
+      "id": "grammar::steps.33.rules[1]",
+      "path": "grammar/steps[33]/rules[1]",
+      "ko": null,
+      "en": "Minutes (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분",
+      "current": "Phút (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분",
+      "ref_th": "นาที (분): 일(1) 이(2) 삼(3) 사(4) 오(5)... + 분",
+      "ref_es": "Minutos (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분"
+    },
+    {
+      "id": "grammar::steps.33.rules[2]",
+      "path": "grammar/steps[33]/rules[2]",
+      "ko": null,
+      "en": "Half past: 반 — 세 시 반 = 3:30",
+      "current": "Rưỡi: 반 — 세 시 반 = 3:30",
+      "ref_th": "ครึ่งชั่วโมง: 반 — 세 시 반 = 3:30",
+      "ref_es": "Y media: 반 — 세 시 반 = 3:30"
+    },
+    {
+      "id": "grammar::steps.33.rules[3]",
+      "path": "grammar/steps[33]/rules[3]",
+      "ko": null,
+      "en": "Example: 오후 두 시 삼십 분 = 2:30 PM",
+      "current": "Ví dụ: 오후 두 시 삼십 분 = 2:30 chiều",
+      "ref_th": "ตัวอย่าง: 오후 두 시 삼십 분 = 14:30",
+      "ref_es": "Ejemplo: 오후 두 시 삼십 분 = 2:30 PM"
+    },
+    {
+      "id": "grammar::steps.33.tip.label",
+      "path": "grammar/steps[33]/tip.label",
+      "ko": null,
+      "en": "Key Pattern",
+      "current": "Mẫu câu chính",
+      "ref_th": "รูปแบบสำคัญ",
+      "ref_es": "Patrón Clave"
+    },
+    {
+      "id": "grammar::steps.33.tip.text",
+      "path": "grammar/steps[33]/tip.text",
+      "ko": null,
+      "en": "Hours use Native Korean numbers (한, 두, 세...). Minutes use Sino-Korean numbers (일, 이, 삼...). Half past = 반. AM = 오전, PM = 오후.",
+      "current": "Giờ dùng số đếm thuần Hàn (한, 두, 세...). Phút dùng số Hán Hàn (일, 이, 삼...). Rưỡi = 반. Sáng = 오전, chiều/tối = 오후.",
+      "ref_th": "ชั่วโมงใช้ตัวเลขเกาหลีดั้งเดิม (한 두 세...) นาทีใช้ตัวเลขจีน-เกาหลี (일 이 삼...) ครึ่ง = 반 ก่อนเที่ยง = 오전 หลังเที่ยง = 오후",
+      "ref_es": "Las horas usan números coreanos nativos (한, 두, 세...). Los minutos usan números sino-coreanos (일, 이, 삼...). Y media = 반. AM = 오전, PM = 오후."
+    },
+    {
+      "id": "grammar::steps.34.meaning",
+      "path": "grammar/steps[34]/meaning",
+      "ko": null,
+      "en": "What time is it now?",
+      "current": "Bây giờ là mấy giờ?",
+      "ref_th": "ตอนนี้กี่โมงแล้ว?",
+      "ref_es": "¿Qué hora es ahora?"
+    },
+    {
+      "id": "grammar::steps.35.prompt",
+      "path": "grammar/steps[35]/prompt",
+      "ko": null,
+      "en": "'3:30' is read in Korean as...",
+      "current": "'3:30' trong tiếng Hàn được đọc thế nào?",
+      "ref_th": "'3:30' อ่านเป็นภาษาเกาหลีว่าอย่างไร?",
+      "ref_es": "¿Cómo se lee \"3:30\" en coreano?"
+    },
+    {
+      "id": "grammar::steps.36.title",
+      "path": "grammar/steps[36]/title",
+      "ko": "단위 명사",
+      "en": "Counters",
+      "current": "Danh từ đơn vị (loại từ)",
+      "ref_th": "ตัวนับ",
+      "ref_es": "Contadores"
+    },
+    {
+      "id": "grammar::steps.36.body",
+      "path": "grammar/steps[36]/body",
+      "ko": null,
+      "en": "Korean uses specific counters after [Noun] + [Number]. Native Korean numbers (한, 두, 세...) are used with most counters.",
+      "current": "Tiếng Hàn dùng loại từ cụ thể sau [Danh từ] + [Số]. Số đếm thuần Hàn (한, 두, 세...) được dùng với hầu hết các loại từ.",
+      "ref_th": "ภาษาเกาหลีใช้ตัวนับเฉพาะหลัง [คำนาม] + [ตัวเลข] ส่วนใหญ่ใช้ตัวเลขเกาหลีดั้งเดิม (한 두 세...) กับตัวนับ",
+      "ref_es": "El coreano usa contadores específicos después de [Sustantivo] + [Número]. Se usan números coreanos nativos (한, 두, 세...) con la mayoría de los contadores."
+    },
+    {
+      "id": "grammar::steps.36.rules[0]",
+      "path": "grammar/steps[36]/rules[0]",
+      "ko": null,
+      "en": "개 — general objects: 사과 세 개 (3 apples)",
+      "current": "개 — đồ vật nói chung: 사과 세 개 (3 quả táo)",
+      "ref_th": "개 — วัตถุทั่วไป: 사과 세 개 (แอปเปิล 3 ลูก)",
+      "ref_es": "개 — objetos en general: 사과 세 개 (3 manzanas)"
+    }
+  ]
+}

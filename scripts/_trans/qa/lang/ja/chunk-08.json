@@ -1,0 +1,232 @@
+{
+  "lang": "ja",
+  "chunk": 8,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::steps.47.rules[2]",
+      "path": "grammar/steps[47]/rules[2]",
+      "ko": null,
+      "en": "한국어를 배우는 것이 재미있어요 — Learning Korean is interesting",
+      "current": "한국어를 배우는 것이 재미있어요 —— 韓国語を学ぶことは面白いです",
+      "ref_th": "한국어를 배우는 것이 재미있어요 — การเรียนเกาหลีน่าสนใจ",
+      "ref_es": "한국어를 배우는 것이 재미있어요 — Aprender coreano es interesante"
+    },
+    {
+      "id": "grammar::steps.47.rules[3]",
+      "path": "grammar/steps[47]/rules[3]",
+      "ko": null,
+      "en": "요리하는 것을 좋아해요 — I like cooking (the act of cooking)",
+      "current": "요리하는 것을 좋아해요 —— 料理することが好きです（料理する行為）",
+      "ref_th": "요리하는 것을 좋아해요 — ฉันชอบทำอาหาร (การทำอาหาร)",
+      "ref_es": "요리하는 것을 좋아해요 — Me gusta cocinar (el acto de cocinar)"
+    },
+    {
+      "id": "grammar::steps.47.tip.label",
+      "path": "grammar/steps[47]/tip.label",
+      "ko": null,
+      "en": "Tense Forms",
+      "current": "時制の形",
+      "ref_th": "รูปกาล",
+      "ref_es": "Formas de Tiempo"
+    },
+    {
+      "id": "grammar::steps.47.tip.text",
+      "path": "grammar/steps[47]/tip.text",
+      "ko": null,
+      "en": "-는 것 (present/habitual) · -(으)ㄴ 것 (past/completed) · -(으)ㄹ 것 (future/planned). The present form is the most common in daily speech.",
+      "current": "-는 것（現在／習慣）・-(으)ㄴ 것（過去／完了）・-(으)ㄹ 것（未来／予定）。日常会話では現在形が最もよく使われます。",
+      "ref_th": "-는 것 (ปัจจุบัน/นิสัย) · -(으)ㄴ 것 (อดีต/เสร็จแล้ว) · -(으)ㄹ 것 (อนาคต/วางแผน) รูปปัจจุบันพบบ่อยที่สุดในการพูดประจำวัน",
+      "ref_es": "-는 것 (presente/habitual) · -(으)ㄴ 것 (pasado/completado) · -(으)ㄹ 것 (futuro/planeado). La forma presente es la más común en el habla cotidiana."
+    },
+    {
+      "id": "grammar::steps.48.meaning",
+      "path": "grammar/steps[48]/meaning",
+      "ko": null,
+      "en": "Learning Korean is interesting.",
+      "current": "韓国語を学ぶことは面白いです。",
+      "ref_th": "การเรียนภาษาเกาหลีน่าสนใจ",
+      "ref_es": "Aprender coreano es interesante."
+    },
+    {
+      "id": "grammar::steps.49.prompt",
+      "path": "grammar/steps[49]/prompt",
+      "ko": null,
+      "en": "'Learning Korean is interesting' — 한국어를 ___ 재미있어요",
+      "current": "「韓国語を学ぶことは面白いです」— 한국어를 ___ 재미있어요",
+      "ref_th": "การเรียนภาษาเกาหลีน่าสนใจ — 한국어를 ___ 재미있어요",
+      "ref_es": "\"Aprender coreano es interesante\" — 한국어를 ___ 재미있어요"
+    },
+    {
+      "id": "grammar::steps.50.title",
+      "path": "grammar/steps[50]/title",
+      "ko": "비교 표현",
+      "en": "Comparatives",
+      "current": "比較表現",
+      "ref_th": "การเปรียบเทียบ",
+      "ref_es": "Comparativos"
+    },
+    {
+      "id": "grammar::steps.50.body",
+      "path": "grammar/steps[50]/body",
+      "ko": null,
+      "en": "Structure: [A]이/가 [B]보다 더 [adjective]. 보다 means 'than' and 더 means 'more'.",
+      "current": "構造：[A]이/가 [B]보다 더 [形容詞]。보다は「～より」、더は「もっと」という意味です。",
+      "ref_th": "โครงสร้าง: [ก]이/가 [ข]보다 더 [คำคุณศัพท์] 보다 หมายถึง กว่า และ 더 หมายถึง มากกว่า",
+      "ref_es": "Estructura: [A]이/가 [B]보다 더 [adjetivo]. 보다 significa \"que\" y 더 significa \"más\"."
+    },
+    {
+      "id": "grammar::steps.50.rules[0]",
+      "path": "grammar/steps[50]/rules[0]",
+      "ko": null,
+      "en": "한국어가 영어보다 더 어려워요 — Korean is harder than English",
+      "current": "한국어가 영어보다 더 어려워요 —— 韓国語は英語より難しいです",
+      "ref_th": "한국어가 영어보다 더 어려워요 — เกาหลียากกว่าอังกฤษ",
+      "ref_es": "한국어가 영어보다 더 어려워요 — El coreano es más difícil que el inglés"
+    },
+    {
+      "id": "grammar::steps.50.rules[1]",
+      "path": "grammar/steps[50]/rules[1]",
+      "ko": null,
+      "en": "오늘이 어제보다 더 더워요 — Today is hotter than yesterday",
+      "current": "오늘이 어제보다 더 더워요 —— 今日は昨日より暑いです",
+      "ref_th": "오늘이 어제보다 더 더워요 — วันนี้ร้อนกว่าเมื่อวาน",
+      "ref_es": "오늘이 어제보다 더 더워요 — Hoy hace más calor que ayer"
+    },
+    {
+      "id": "grammar::steps.50.rules[2]",
+      "path": "grammar/steps[50]/rules[2]",
+      "ko": null,
+      "en": "더 can be dropped in casual speech: 한국어가 영어보다 어려워요",
+      "current": "더はカジュアルな話し方では省略できます：한국어가 영어보다 어려워요",
+      "ref_th": "더 ละได้ในการพูดทั่วไป: 한국어가 영어보다 어려워요",
+      "ref_es": "더 puede omitirse en el habla informal: 한국어가 영어보다 어려워요"
+    },
+    {
+      "id": "grammar::steps.51.meaning",
+      "path": "grammar/steps[51]/meaning",
+      "ko": null,
+      "en": "Korean is harder than Japanese.",
+      "current": "韓国語は日本語より難しいです。",
+      "ref_th": "เกาหลียากกว่าญี่ปุ่น",
+      "ref_es": "El coreano es más difícil que el japonés."
+    },
+    {
+      "id": "grammar::steps.52.prompt",
+      "path": "grammar/steps[52]/prompt",
+      "ko": null,
+      "en": "How to say 'more' in a Korean comparison?",
+      "current": "韓国語の比較表現で「もっと」はどう言いますか。",
+      "ref_th": "จะพูดว่า มากกว่า ในการเปรียบเทียบภาษาเกาหลีอย่างไร?",
+      "ref_es": "¿Cómo se dice \"más\" en una comparación coreana?"
+    },
+    {
+      "id": "grammar::steps.53.title",
+      "path": "grammar/steps[53]/title",
+      "ko": "좋다 vs 좋아하다",
+      "en": "좋다 vs 좋아하다",
+      "current": "좋다 vs 좋아하다",
+      "ref_th": "좋다 กับ 좋아하다",
+      "ref_es": "좋다 vs 좋아하다"
+    },
+    {
+      "id": "grammar::steps.53.body",
+      "path": "grammar/steps[53]/body",
+      "ko": null,
+      "en": "좋다 uses subject particle (이/가): 한국어가 좋아요. 좋아하다 uses object particle (을/를): 한국어를 좋아해요.",
+      "current": "좋다は主語を表す助詞（이/가）を使います：한국어가 좋아요。좋아하다は目的語を表す助詞（을/를）を使います：한국어를 좋아해요。",
+      "ref_th": "좋다 ใช้คำช่วยประธาน (이/가): 한국어가 좋아요 좋아하다 ใช้คำช่วยกรรม (을/를): 한국어를 좋아해요",
+      "ref_es": "좋다 usa la partícula de sujeto (이/가): 한국어가 좋아요. 좋아하다 usa la partícula de objeto (을/를): 한국어를 좋아해요."
+    },
+    {
+      "id": "grammar::steps.53.rules[0]",
+      "path": "grammar/steps[53]/rules[0]",
+      "ko": null,
+      "en": "좋다 — to be good / feel good (state): 커피가 좋아요 (I like coffee / Coffee is good)",
+      "current": "좋다 —— 良い／気分が良い（状態）：커피가 좋아요（コーヒーが好きです／コーヒーは良いです）",
+      "ref_th": "좋다 — ดี / รู้สึกดี (สภาวะ): 커피가 좋아요 (ฉันชอบกาแฟ / กาแฟดี)",
+      "ref_es": "좋다 — ser bueno / sentirse bien (estado): 커피가 좋아요 (Me gusta el café / El café es bueno)"
+    },
+    {
+      "id": "grammar::steps.53.rules[1]",
+      "path": "grammar/steps[53]/rules[1]",
+      "ko": null,
+      "en": "좋아하다 — to like (active preference): 커피를 좋아해요 (I like coffee)",
+      "current": "좋아하다 ——好む（積極的な好み）：커피를 좋아해요（コーヒーが好きです）",
+      "ref_th": "좋아하다 — ชอบ (ความชอบเชิงกระตือรือร้น): 커피를 좋아해요 (ฉันชอบกาแฟ)",
+      "ref_es": "좋아하다 — gustar (preferencia activa): 커피를 좋아해요 (Me gusta el café)"
+    },
+    {
+      "id": "grammar::steps.53.rules[2]",
+      "path": "grammar/steps[53]/rules[2]",
+      "ko": null,
+      "en": "Both translate as 'I like' but 좋다 focuses on the feeling, 좋아하다 on the preference",
+      "current": "どちらも「好きです」と訳されますが、좋다は感情に、좋아하다は好みに焦点があります",
+      "ref_th": "ทั้งคู่แปลว่า ฉันชอบ แต่ 좋다 เน้นความรู้สึก 좋아하다 เน้นความชอบ",
+      "ref_es": "Ambas se traducen como \"me gusta\" pero 좋다 se centra en el sentimiento, 좋아하다 en la preferencia"
+    },
+    {
+      "id": "grammar::steps.53.tip.label",
+      "path": "grammar/steps[53]/tip.label",
+      "ko": null,
+      "en": "Key Difference",
+      "current": "重要な違い",
+      "ref_th": "ความแตกต่างสำคัญ",
+      "ref_es": "Diferencia Clave"
+    },
+    {
+      "id": "grammar::steps.53.tip.text",
+      "path": "grammar/steps[53]/tip.text",
+      "ko": null,
+      "en": "좋아요 → subject particle (이/가) precedes it. 좋아해요 → object particle (을/를) precedes it. When in doubt, 좋아해요 sounds more natural for expressing preferences.",
+      "current": "좋아요の前には主格助詞（이/가）が来ます。좋아해요の前には目的格助詞（을/를）が来ます。迷ったときは、좋아해요の方が好みを表すのに自然に聞こえます",
+      "ref_th": "좋아요 → คำช่วยประธาน (이/가) นำหน้า 좋아해요 → คำช่วยกรรม (을/를) นำหน้า เมื่อไม่แน่ใจ 좋아해요 ฟังดูเป็นธรรมชาติกว่าสำหรับแสดงความชอบ",
+      "ref_es": "좋아요 → partícula de sujeto (이/가) la precede. 좋아해요 → partícula de objeto (을/를) la precede. Ante la duda, 좋아해요 suena más natural para expresar preferencias."
+    },
+    {
+      "id": "grammar::steps.54.prompt",
+      "path": "grammar/steps[54]/prompt",
+      "ko": null,
+      "en": "'I like coffee' using 좋아하다 — 커피___ 좋아해요",
+      "current": "좋아하다 を使って「コーヒーが好きです」— 커피___ 좋아해요",
+      "ref_th": "ฉันชอบกาแฟ โดยใช้ 좋아하다 — 커피___ 좋아해요",
+      "ref_es": "\"Me gusta el café\" con 좋아하다 — 커피___ 좋아해요"
+    },
+    {
+      "id": "grammar::steps.55.title",
+      "path": "grammar/steps[55]/title",
+      "ko": "아직 · 이미 · 벌써",
+      "en": "Still & Already",
+      "current": "「まだ」と「もう」",
+      "ref_th": "ยังคง & แล้ว",
+      "ref_es": "Todavía y Ya"
+    },
+    {
+      "id": "grammar::steps.55.body",
+      "path": "grammar/steps[55]/body",
+      "ko": null,
+      "en": "아직 + negative verb = still not. 벌써 = already (sooner than expected). 이미 = already (neutral, formal).",
+      "current": "아직＋否定形＝まだ〜ない。벌써＝もう（予想より早い）。이미＝すでに（中立的、フォーマル）",
+      "ref_th": "อ아직 + กริยาปฏิเสธ = ยังไม่ 벌써 = แล้ว (เร็วกว่าที่คาด) 이미 = แล้ว (กลาง ทางการ)",
+      "ref_es": "아직 + verbo negativo = todavía no. 벌써 = ya (antes de lo esperado). 이미 = ya (neutro, formal)."
+    },
+    {
+      "id": "grammar::steps.55.rules[0]",
+      "path": "grammar/steps[55]/rules[0]",
+      "ko": null,
+      "en": "아직 안 먹었어요 — Haven't eaten yet (still not)",
+      "current": "아직 안 먹었어요 ——まだ食べていません（まだ〜ない）",
+      "ref_th": "아직 안 먹었어요 — ยังไม่ได้กิน (ยังไม่)",
+      "ref_es": "아직 안 먹었어요 — Todavía no he comido (todavía no)"
+    },
+    {
+      "id": "grammar::steps.55.rules[1]",
+      "path": "grammar/steps[55]/rules[1]",
+      "ko": null,
+      "en": "아직 여기 있어요 — Still here (ongoing)",
+      "current": "아직 여기 있어요 ——まだここにいます（継続中）",
+      "ref_th": "아직 여기 있어요 — ยังอยู่ที่นี่ (ต่อเนื่อง)",
+      "ref_es": "아직 여기 있어요 — Todavía aquí (en curso)"
+    }
+  ]
+}

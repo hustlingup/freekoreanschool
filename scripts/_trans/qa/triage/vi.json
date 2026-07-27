@@ -1,0 +1,496 @@
+{
+  "lang": "vi",
+  "htmlSamples": [
+    "learn/vi/hangul.html",
+    "culture/vi/kpop.html",
+    "travel/vi/cities.html"
+  ],
+  "groups": {
+    "grammar": [
+      {
+        "id": "grammar::stages.0.name",
+        "path": "grammar/stages[0]/name",
+        "ko": "문장",
+        "en": "Sentence",
+        "val": "Câu"
+      },
+      {
+        "id": "grammar::steps.3.rules[1]",
+        "path": "grammar/steps[3]/rules[1]",
+        "ko": null,
+        "en": "이/가 → Subject marker (이 after consonant, 가 after vowel)",
+        "val": "이/가 → Đánh dấu chủ ngữ (이 sau phụ âm, 가 sau nguyên âm)"
+      },
+      {
+        "id": "grammar::steps.16.rules[3]",
+        "path": "grammar/steps[16]/rules[3]",
+        "ko": null,
+        "en": "마시다 → 마셨어요 (drank)",
+        "val": "마시다 → 마셨어요 (đã uống)"
+      },
+      {
+        "id": "grammar::steps.28.title",
+        "path": "grammar/steps[28]/title",
+        "ko": "접속사",
+        "en": "Connectors",
+        "val": "Từ nối"
+      },
+      {
+        "id": "grammar::steps.36.rules[6]",
+        "path": "grammar/steps[36]/rules[6]",
+        "ko": null,
+        "en": "번 — times/turns: 세 번 (3 times)",
+        "val": "번 — lần/lượt: 세 번 (3 lần)"
+      },
+      {
+        "id": "grammar::steps.44.tip.text",
+        "path": "grammar/steps[44]/tip.text",
+        "ko": null,
+        "en": "별로 and 전혀 MUST be used with a negative verb (안, 못, 없다, 모르다). Saying 별로 좋아요 (without negation) is ungrammatical. Think of them as 'not really' and 'not at all'.",
+        "val": "별로 và 전혀 BẮT BUỘC phải dùng với động từ phủ định (안, 못, 없다, 모르다). Nói 별로 좋아요 (không có phủ định) là sai ngữ pháp. Hãy coi chúng như 'không hẳn' và 'hoàn toàn không'."
+      },
+      {
+        "id": "grammar::steps.57.title",
+        "path": "grammar/steps[57]/title",
+        "ko": "막연한 대상",
+        "en": "Someone, Something",
+        "val": "Ai đó, cái gì đó"
+      },
+      {
+        "id": "grammar::steps.70.title",
+        "path": "grammar/steps[70]/title",
+        "ko": "-도 응용",
+        "en": "All, More & -도",
+        "val": "Tất cả, hơn & -도"
+      },
+      {
+        "id": "nouns::steps.16.body",
+        "path": "nouns/steps[16]/body",
+        "ko": null,
+        "en": "Time nouns in Korean work independently — no conjugation needed. You simply state the time word at the start of a sentence: 오늘 가요 (I'm going today), 내일 만나요 (Let's meet tomorrow). Korean time expressions use Sino-Korean numbers for hours and native Korean numbers for minutes. The most essential time words are 오늘 (today), 내일 (tomorrow), 어제 (yesterday), and 지금 (now).",
+        "val": "Danh từ chỉ thời gian trong tiếng Hàn hoạt động độc lập — không cần chia. Bạn chỉ cần nêu từ chỉ thời gian ở đầu câu: 오늘 가요 (Hôm nay tôi đi), 내일 만나요 (Ngày mai gặp nhau nhé). Cách diễn đạt thời gian tiếng Hàn dùng số Hán Hàn cho giờ và số thuần Hàn cho phút. Những từ chỉ thời gian thiết yếu nhất là 오늘 (hôm nay), 내일 (ngày mai), 어제 (hôm qua) và 지금 (bây giờ)."
+      },
+      {
+        "id": "pronouns::steps.2.meaning",
+        "path": "pronouns/steps[2]/meaning",
+        "ko": null,
+        "en": "I / me (casual)",
+        "val": "tôi (thân mật)"
+      },
+      {
+        "id": "pronouns::steps.24.prompt",
+        "path": "pronouns/steps[24]/prompt",
+        "ko": null,
+        "en": "You are telling a friend about a man you mentioned a moment ago, and he is not in the room. In natural spoken Korean you say…",
+        "val": "Bạn đang kể với một người bạn về một người đàn ông bạn vừa nhắc đến, và anh ấy không có mặt ở đó. Trong tiếng Hàn nói tự nhiên, bạn nói…"
+      },
+      {
+        "id": "speech-levels::steps.12.meaning",
+        "path": "speech-levels/steps[12]/meaning",
+        "ko": null,
+        "en": "I eat / am eating (polite)",
+        "val": "Tôi ăn / đang ăn (lịch sự)"
+      }
+    ],
+    "hangul": [
+      {
+        "id": "hangul::stages.0.name",
+        "path": "hangul/stages[0]/name",
+        "ko": "기본 자음",
+        "en": "Consonants",
+        "val": "Phụ âm"
+      },
+      {
+        "id": "hangul::steps.16.prompt",
+        "path": "hangul/steps[16]/prompt",
+        "ko": null,
+        "en": "ㄴ romanizes as…",
+        "val": "ㄴ được phiên âm là…"
+      },
+      {
+        "id": "hangul::steps.52.prompt",
+        "path": "hangul/steps[52]/prompt",
+        "ko": null,
+        "en": "ㄲ romanizes as…",
+        "val": "ㄲ được phiên âm là…"
+      },
+      {
+        "id": "hangul::steps.80.meaning",
+        "path": "hangul/steps[80]/meaning",
+        "ko": null,
+        "en": "friend",
+        "val": "bạn bè"
+      },
+      {
+        "id": "pronunciation::steps.11.choices[1]",
+        "path": "pronunciation/steps[11]/choices[1]",
+        "ko": null,
+        "en": "ㄱ-group (k)",
+        "val": "Nhóm ㄱ (k)"
+      },
+      {
+        "id": "pronunciation::steps.25.meaning",
+        "path": "pronunciation/steps[25]/meaning",
+        "ko": null,
+        "en": "walks / to walk — ㄷ + ㄴ → ㄴ: spelled 걷는다, sounds like 건는다",
+        "val": "đi bộ / đi dạo — ㄷ + ㄴ → ㄴ: viết 걷는다, nghe như 건는다"
+      },
+      {
+        "id": "pronunciation::steps.40.meaning",
+        "path": "pronunciation/steps[40]/meaning",
+        "ko": null,
+        "en": "There is a lot — ㅎ in ㄶ batchim weakens: sounds like 마나요",
+        "val": "Có rất nhiều — ㅎ trong batchim ㄶ yếu đi: nghe như 마나요"
+      },
+      {
+        "id": "pronunciation::steps.56.prompt",
+        "path": "pronunciation/steps[56]/prompt",
+        "ko": null,
+        "en": "신라 (Silla — a historical Korean kingdom) is pronounced as…",
+        "val": "신라 (Silla — một vương quốc lịch sử của Hàn Quốc) được phát âm là…"
+      },
+      {
+        "id": "pronunciation::steps.64.choices[2]",
+        "path": "pronunciation/steps[64]/choices[2]",
+        "ko": null,
+        "en": "Slightly open like 'ah'",
+        "val": "Hơi mở như 'ah'"
+      },
+      {
+        "id": "syllable-blocks::steps.6.prompt",
+        "path": "syllable-blocks/steps[6]/prompt",
+        "ko": null,
+        "en": "How many vowels does a single Korean syllable block contain?",
+        "val": "Một khối âm tiết tiếng Hàn chứa bao nhiêu nguyên âm?"
+      },
+      {
+        "id": "syllable-blocks::steps.20.choices[2]",
+        "path": "syllable-blocks/steps[20]/choices[2]",
+        "ko": null,
+        "en": "To the right",
+        "val": "Bên phải"
+      },
+      {
+        "id": "syllable-blocks::steps.38.hint",
+        "path": "syllable-blocks/steps[38]/hint",
+        "ko": null,
+        "en": "ㄹ 받침 again — the tongue lingers against the palate. Sounds like a soft 'l'.",
+        "val": "ㄹ 받침 lần nữa — lưỡi nán lại ở vòm miệng. Nghe giống âm 'l' nhẹ."
+      }
+    ],
+    "phrases": [
+      {
+        "id": "emotions::stages.0.name",
+        "path": "emotions/stages[0]/name",
+        "ko": "기본 감정",
+        "en": "Core Emotions",
+        "val": "Cảm xúc cơ bản"
+      },
+      {
+        "id": "emotions::steps.3.meaning",
+        "path": "emotions/steps[3]/meaning",
+        "ko": null,
+        "en": "to be angry (literally: anger comes out)",
+        "val": "tức giận (nghĩa đen: cơn giận bùng phát)"
+      },
+      {
+        "id": "emotions::steps.9.tip.label",
+        "path": "emotions/steps[9]/tip.label",
+        "ko": null,
+        "en": "신나다 in pop culture",
+        "val": "신나다 trong văn hóa đại chúng"
+      },
+      {
+        "id": "emotions::steps.15.tip.text",
+        "path": "emotions/steps[15]/tip.text",
+        "ko": null,
+        "en": "기분 = mood, general feeling state (contextual, can change). 감정 = emotion (more specific feeling like anger, joy, fear). 기분이 좋아요 = I feel good right now. 감정을 표현하다 = to express emotion.",
+        "val": "기분 = tâm trạng, trạng thái cảm giác chung (tùy ngữ cảnh, có thể thay đổi). 감정 = cảm xúc (cảm giác cụ thể hơn như giận, vui, sợ). 기분이 좋아요 = Tôi đang thấy dễ chịu. 감정을 표현하다 = biểu lộ cảm xúc."
+      },
+      {
+        "id": "emotions::steps.19.meaning",
+        "path": "emotions/steps[19]/meaning",
+        "ko": null,
+        "en": "to miss someone/something (longing)",
+        "val": "nhớ ai đó/điều gì đó (khao khát)"
+      },
+      {
+        "id": "emotions::steps.25.prompt",
+        "path": "emotions/steps[25]/prompt",
+        "ko": null,
+        "en": "뿌듯하다 means…",
+        "val": "뿌듯하다 nghĩa là…"
+      },
+      {
+        "id": "emotions::steps.29.meaning",
+        "path": "emotions/steps[29]/meaning",
+        "ko": null,
+        "en": "I'm okay / That's fine / No problem",
+        "val": "Tôi ổn / Không sao / Không có vấn đề gì"
+      },
+      {
+        "id": "shopping::stages.2.name",
+        "path": "shopping/stages[2]/name",
+        "ko": "가격·숫자",
+        "en": "Prices & Numbers",
+        "val": "Giá cả & Con số"
+      },
+      {
+        "id": "shopping::steps.6.title",
+        "path": "shopping/steps[6]/title",
+        "ko": "쇼핑 물건",
+        "en": "Shopping Item Words (쇼핑 물건)",
+        "val": "Từ chỉ đồ vật khi mua sắm (쇼핑 물건)"
+      },
+      {
+        "id": "shopping::steps.10.meaning",
+        "path": "shopping/steps[10]/meaning",
+        "ko": null,
+        "en": "How much is it?",
+        "val": "Cái này bao nhiêu tiền?"
+      },
+      {
+        "id": "shopping::steps.18.title",
+        "path": "shopping/steps[18]/title",
+        "ko": "원·가격",
+        "en": "Korean Money & Prices (원)",
+        "val": "Tiền tệ & giá cả Hàn Quốc (원)"
+      },
+      {
+        "id": "shopping::steps.25.prompt",
+        "path": "shopping/steps[25]/prompt",
+        "ko": null,
+        "en": "You hand over 10,000원 for an item that costs 7,000원. What is the 3,000원 the cashier hands back called?",
+        "val": "Bạn đưa 10.000원 cho món hàng giá 7.000원. Số 3.000원 nhân viên trả lại được gọi là gì?"
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "vocabulary-academic::stages.0.name",
+        "path": "vocabulary-academic/stages[0]/name",
+        "ko": "학업",
+        "en": "Academic",
+        "val": "Học thuật"
+      },
+      {
+        "id": "vocabulary-adjectives::steps.0.body",
+        "path": "vocabulary-adjectives/steps[0]/body",
+        "ko": null,
+        "en": "Korean adjectives (형용사) behave differently from English ones — they conjugate like verbs. The dictionary form ends in -다. To use them as predicates, change -다 to -아요/어요. To modify a noun, change -다 to -(으)ㄴ. Example: 크다 (big) → 커요 (it's big) / 큰 집 (big house).",
+        "val": "Tính từ tiếng Hàn (형용사) hoạt động khác với tính từ tiếng Việt — chúng được chia như động từ. Dạng từ điển kết thúc bằng -다. Để dùng làm vị ngữ, đổi -다 thành -아요/어요. Để bổ nghĩa cho danh từ, đổi -다 thành -(으)ㄴ. Ví dụ: 크다 (to) → 커요 (nó to) / 큰 집 (ngôi nhà to)."
+      },
+      {
+        "id": "vocabulary-body-parts::steps.6.meaning",
+        "path": "vocabulary-body-parts/steps[6]/meaning",
+        "ko": null,
+        "en": "Ear",
+        "val": "Tai"
+      },
+      {
+        "id": "vocabulary-colors::steps.7.meaning",
+        "path": "vocabulary-colors/steps[7]/meaning",
+        "ko": null,
+        "en": "Purple / violet",
+        "val": "Màu tím"
+      },
+      {
+        "id": "vocabulary-days-time::steps.13.meaning",
+        "path": "vocabulary-days-time/steps[13]/meaning",
+        "ko": null,
+        "en": "AM / morning — 오전 열 시 = 10:00 AM",
+        "val": "Buổi sáng / trước trưa (AM) — 오전 열 시 = 10 giờ sáng"
+      },
+      {
+        "id": "vocabulary-emotions::steps.16.choices[1]",
+        "path": "vocabulary-emotions/steps[16]/choices[1]",
+        "ko": null,
+        "en": "My heart is fluttering with excitement",
+        "val": "Tim tôi đang rung động, xao xuyến vì hồi hộp"
+      },
+      {
+        "id": "vocabulary-food-drink::stages.0.name",
+        "path": "vocabulary-food-drink/stages[0]/name",
+        "ko": "음식과 음료",
+        "en": "Food & Drink",
+        "val": "Đồ ăn và Thức uống"
+      },
+      {
+        "id": "vocabulary-greetings::steps.4.meaning",
+        "path": "vocabulary-greetings/steps[4]/meaning",
+        "ko": null,
+        "en": "Thank you — polite but less formal",
+        "val": "Cảm ơn — lịch sự nhưng ít trang trọng hơn"
+      },
+      {
+        "id": "vocabulary-health::steps.18.choices[0]",
+        "path": "vocabulary-health/steps[18]/choices[0]",
+        "ko": null,
+        "en": "I have a headache",
+        "val": "Tôi bị đau đầu"
+      },
+      {
+        "id": "vocabulary-konglish::steps.17.choices[3]",
+        "path": "vocabulary-konglish/steps[17]/choices[3]",
+        "ko": null,
+        "en": "A self-service counter",
+        "val": "Quầy tự phục vụ"
+      },
+      {
+        "id": "vocabulary-media::steps.16.choices[1]",
+        "path": "vocabulary-media/steps[16]/choices[1]",
+        "ko": null,
+        "en": "The global spread of Korean pop culture",
+        "val": "Sự lan tỏa toàn cầu của văn hóa đại chúng Hàn Quốc"
+      },
+      {
+        "id": "vocabulary-news::steps.16.meaning",
+        "path": "vocabulary-news/steps[16]/meaning",
+        "ko": null,
+        "en": "Report / news coverage — 보도에 따르면 = according to reports",
+        "val": "Đưa tin / bản tin báo chí — 보도에 따르면 = theo tin đã đưa"
+      },
+      {
+        "id": "vocabulary-numbers::steps.12.rules[1]",
+        "path": "vocabulary-numbers/steps[12]/rules[1]",
+        "ko": null,
+        "en": "백 (100), 천 (1,000), 만 (10,000)",
+        "val": "백 (100), 천 (1.000), 만 (10.000)"
+      },
+      {
+        "id": "vocabulary-places::steps.10.meaning",
+        "path": "vocabulary-places/steps[10]/meaning",
+        "ko": null,
+        "en": "Airport — 공 (air/sky) + 항 (port)",
+        "val": "Sân bay — 공 (không trung/bầu trời) + 항 (cảng)"
+      },
+      {
+        "id": "vocabulary-proverbs::steps.3.rules[2]",
+        "path": "vocabulary-proverbs/steps[3]/rules[2]",
+        "ko": null,
+        "en": "낫다 = to be better",
+        "val": "낫다 = tốt hơn"
+      },
+      {
+        "id": "vocabulary-proverbs::steps.9.body",
+        "path": "vocabulary-proverbs/steps[9]/body",
+        "ko": null,
+        "en": "Meaning: Even a monkey falls from a tree. English equivalent: 'Nobody's perfect' / 'Even the best make mistakes.'",
+        "val": "Ý nghĩa: Ngay cả con khỉ cũng có lúc ngã từ trên cây xuống. Tương đương tiếng Anh: \"Nobody's perfect\" (Không ai hoàn hảo) / \"Even the best make mistakes\" (Người giỏi nhất cũng mắc lỗi)."
+      },
+      {
+        "id": "vocabulary-proverbs::steps.15.choices[0]",
+        "path": "vocabulary-proverbs/steps[15]/choices[0]",
+        "ko": null,
+        "en": "Begin now, however far the goal still is",
+        "val": "Bắt đầu ngay, dù mục tiêu còn xa đến đâu"
+      },
+      {
+        "id": "vocabulary-shopping::steps.20.message",
+        "path": "vocabulary-shopping/steps[20]/message",
+        "ko": null,
+        "en": "쇼핑 실력이 늘었어요! (Your shopping skills have improved!) You're now armed for any Korean shopping adventure — from the buzzing Namdaemun Market to the glitzy Lotte World Mall.",
+        "val": "쇼핑 실력이 늘었어요! (Kỹ năng mua sắm của bạn đã tiến bộ!) Giờ bạn đã sẵn sàng cho mọi chuyến mua sắm ở Hàn Quốc — từ chợ Namdaemun nhộn nhịp đến Lotte World Mall lộng lẫy."
+      },
+      {
+        "id": "vocabulary-verbs::steps.8.meaning",
+        "path": "vocabulary-verbs/steps[8]/meaning",
+        "ko": null,
+        "en": "To read — 읽어요 (polite present)",
+        "val": "Đọc — 읽어요 (hiện tại, lịch sự)"
+      },
+      {
+        "id": "vocabulary-weather::steps.16.choices[0]",
+        "path": "vocabulary-weather/steps[16]/choices[0]",
+        "ko": null,
+        "en": "It's hot",
+        "val": "Trời nóng"
+      }
+    ],
+    "writing-typing": [
+      {
+        "id": "letter-writing::stages.0.name",
+        "path": "letter-writing/stages[0]/name",
+        "ko": "획순 원리",
+        "en": "How Strokes Work",
+        "val": "Cách các nét hoạt động"
+      },
+      {
+        "id": "letter-writing::steps.3.hint",
+        "path": "letter-writing/steps[3]/hint",
+        "ko": null,
+        "en": "Start at the top-left. One stroke: across, then down without lifting.",
+        "val": "Bắt đầu từ góc trên bên trái. Một nét: sang ngang rồi xuống, không nhấc bút."
+      },
+      {
+        "id": "letter-writing::steps.18.hint",
+        "path": "letter-writing/steps[18]/hint",
+        "ko": null,
+        "en": "Two strokes: the top bar and the left leg in one motion, then the right leg. Two, not three.",
+        "val": "Hai nét: thanh ngang trên và nét chân trái trong một động tác, rồi nét chân phải. Hai, không phải ba."
+      },
+      {
+        "id": "letter-writing::steps.32.hint",
+        "path": "letter-writing/steps[32]/hint",
+        "ko": null,
+        "en": "Three strokes: the long vertical first, then the upper tick, then the lower tick.",
+        "val": "Ba nét: nét dọc dài trước, rồi nét ngắn trên, rồi nét ngắn dưới."
+      },
+      {
+        "id": "letter-writing::steps.46.example_meaning",
+        "path": "letter-writing/steps[46]/example_meaning",
+        "ko": null,
+        "en": "sky",
+        "val": "bầu trời"
+      },
+      {
+        "id": "letter-writing::steps.60.example_meaning",
+        "path": "letter-writing/steps[60]/example_meaning",
+        "ko": null,
+        "en": "won (Korean currency)",
+        "val": "won (tiền Hàn Quốc)"
+      },
+      {
+        "id": "letter-writing::steps.71.choices[2]",
+        "path": "letter-writing/steps[71]/choices[2]",
+        "ko": null,
+        "en": "Either one",
+        "val": "Nét nào cũng được"
+      },
+      {
+        "id": "typing::steps.0.tip.label",
+        "path": "typing/steps[0]/tip.label",
+        "ko": null,
+        "en": "Left hand, right hand",
+        "val": "Tay trái, tay phải"
+      },
+      {
+        "id": "typing::steps.14.tip",
+        "path": "typing/steps[14]/tip",
+        "ko": null,
+        "en": "Three keys in a row along the bottom: ㅠ on B, ㅜ on N, ㅡ on M. B is a stretch for your LEFT index finger, while N and M sit under your right index. ㅡ on M matters more than it looks — it is the vowel inside 은, 는, 를 and most other grammar endings.",
+        "val": "Ba phím liền nhau ở hàng dưới: ㅠ ở B, ㅜ ở N, ㅡ ở M. B là chỗ vươn của ngón trỏ TRÁI, còn N và M nằm dưới ngón trỏ phải. Chữ ㅡ ở M quan trọng hơn vẻ ngoài của nó — đó là nguyên âm nằm trong 은, 는, 를 và hầu hết các đuôi ngữ pháp khác."
+      },
+      {
+        "id": "typing::steps.24.items.2.meaning",
+        "path": "typing/steps[24]/items[2]/meaning",
+        "ko": null,
+        "en": "friend",
+        "val": "bạn bè"
+      },
+      {
+        "id": "typing::steps.26.items.10.meaning",
+        "path": "typing/steps[26]/items[10]/meaning",
+        "ko": null,
+        "en": "family",
+        "val": "gia đình"
+      },
+      {
+        "id": "typing::steps.26.items.31.meaning",
+        "path": "typing/steps[26]/items[31]/meaning",
+        "ko": null,
+        "en": "leg",
+        "val": "chân"
+      }
+    ]
+  }
+}

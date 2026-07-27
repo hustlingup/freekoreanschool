@@ -1,0 +1,496 @@
+{
+  "lang": "th",
+  "htmlSamples": [
+    "learn/th/hangul.html",
+    "culture/th/kpop.html",
+    "travel/th/cities.html"
+  ],
+  "groups": {
+    "grammar": [
+      {
+        "id": "grammar::stages.0.name",
+        "path": "grammar/stages[0]/name",
+        "ko": "문장",
+        "en": "Sentence",
+        "val": "โครงสร้างประโยค"
+      },
+      {
+        "id": "grammar::steps.3.rules[1]",
+        "path": "grammar/steps[3]/rules[1]",
+        "ko": null,
+        "en": "이/가 → Subject marker (이 after consonant, 가 after vowel)",
+        "val": "이/가 → คำช่วยประธาน (이 หลังพยัญชนะ 가 หลังสระ)"
+      },
+      {
+        "id": "grammar::steps.16.rules[3]",
+        "path": "grammar/steps[16]/rules[3]",
+        "ko": null,
+        "en": "마시다 → 마셨어요 (drank)",
+        "val": "마시다 → 마셨어요 (ดื่มแล้ว)"
+      },
+      {
+        "id": "grammar::steps.28.title",
+        "path": "grammar/steps[28]/title",
+        "ko": "접속사",
+        "en": "Connectors",
+        "val": "คำเชื่อม"
+      },
+      {
+        "id": "grammar::steps.36.rules[6]",
+        "path": "grammar/steps[36]/rules[6]",
+        "ko": null,
+        "en": "번 — times/turns: 세 번 (3 times)",
+        "val": "번 — ครั้ง: 세 번 (3 ครั้ง)"
+      },
+      {
+        "id": "grammar::steps.44.tip.text",
+        "path": "grammar/steps[44]/tip.text",
+        "ko": null,
+        "en": "별로 and 전혀 MUST be used with a negative verb (안, 못, 없다, 모르다). Saying 별로 좋아요 (without negation) is ungrammatical. Think of them as 'not really' and 'not at all'.",
+        "val": "별로 และ 전혀 ต้องใช้กับกริยาปฏิเสธ (안 못 없다 모르다) การพูด 별로 좋아요 (โดยไม่ปฏิเสธ) ผิดไวยากรณ์ คิดว่าหมายถึง ไม่ค่อย และ ไม่เลย"
+      },
+      {
+        "id": "grammar::steps.57.title",
+        "path": "grammar/steps[57]/title",
+        "ko": "막연한 대상",
+        "en": "Someone, Something",
+        "val": "ใครบางคน บางอย่าง"
+      },
+      {
+        "id": "grammar::steps.70.title",
+        "path": "grammar/steps[70]/title",
+        "ko": "-도 응용",
+        "en": "All, More & -도",
+        "val": "ทั้งหมด อีก & -도 ขั้นสูง"
+      },
+      {
+        "id": "nouns::steps.16.body",
+        "path": "nouns/steps[16]/body",
+        "ko": null,
+        "en": "Time nouns in Korean work independently — no conjugation needed. You simply state the time word at the start of a sentence: 오늘 가요 (I'm going today), 내일 만나요 (Let's meet tomorrow). Korean time expressions use Sino-Korean numbers for hours and native Korean numbers for minutes. The most essential time words are 오늘 (today), 내일 (tomorrow), 어제 (yesterday), and 지금 (now).",
+        "val": "คำนามเวลาในภาษาเกาหลีใช้งานได้อิสระ ไม่ต้องผัน เพียงแค่ระบุคำเวลาตอนต้นประโยค: 오늘 가요 (ฉันไปวันนี้) 내일 만나요 (เจอกันพรุ่งนี้) คำเวลาสำคัญที่สุดคือ 오늘 (วันนี้) 내일 (พรุ่งนี้) 어제 (เมื่อวาน) และ 지금 (ตอนนี้)"
+      },
+      {
+        "id": "pronouns::steps.2.meaning",
+        "path": "pronouns/steps[2]/meaning",
+        "ko": null,
+        "en": "I / me (casual)",
+        "val": "ฉัน / ผม (ไม่เป็นทางการ)"
+      },
+      {
+        "id": "pronouns::steps.24.prompt",
+        "path": "pronouns/steps[24]/prompt",
+        "ko": null,
+        "en": "You are telling a friend about a man you mentioned a moment ago, and he is not in the room. In natural spoken Korean you say…",
+        "val": "คุณกำลังเล่าให้เพื่อนฟังเกี่ยวกับผู้ชายที่คุณเพิ่งพูดถึง และเขาไม่ได้อยู่ตรงนั้น ในภาษาเกาหลีพูดแบบธรรมชาติคุณจะพูดว่า…"
+      },
+      {
+        "id": "speech-levels::steps.12.meaning",
+        "path": "speech-levels/steps[12]/meaning",
+        "ko": null,
+        "en": "I eat / am eating (polite)",
+        "val": "ฉันกิน / กำลังกิน (สุภาพ)"
+      }
+    ],
+    "hangul": [
+      {
+        "id": "hangul::stages.0.name",
+        "path": "hangul/stages[0]/name",
+        "ko": "기본 자음",
+        "en": "Consonants",
+        "val": "พยัญชนะ"
+      },
+      {
+        "id": "hangul::steps.16.prompt",
+        "path": "hangul/steps[16]/prompt",
+        "ko": null,
+        "en": "ㄴ romanizes as…",
+        "val": "ㄴ ถอดเสียงเป็น…"
+      },
+      {
+        "id": "hangul::steps.52.prompt",
+        "path": "hangul/steps[52]/prompt",
+        "ko": null,
+        "en": "ㄲ romanizes as…",
+        "val": "ㄲ ถอดเสียงเป็น…"
+      },
+      {
+        "id": "hangul::steps.80.meaning",
+        "path": "hangul/steps[80]/meaning",
+        "ko": null,
+        "en": "friend",
+        "val": "เพื่อน"
+      },
+      {
+        "id": "pronunciation::steps.11.choices[1]",
+        "path": "pronunciation/steps[11]/choices[1]",
+        "ko": null,
+        "en": "ㄱ-group (k)",
+        "val": "กลุ่ม ㄱ (ก)"
+      },
+      {
+        "id": "pronunciation::steps.25.meaning",
+        "path": "pronunciation/steps[25]/meaning",
+        "ko": null,
+        "en": "walks / to walk — ㄷ + ㄴ → ㄴ: spelled 걷는다, sounds like 건는다",
+        "val": "เดิน — ㄷ + ㄴ → ㄴ: สะกด 걷는다 ออกเสียงเหมือน 건는다"
+      },
+      {
+        "id": "pronunciation::steps.40.meaning",
+        "path": "pronunciation/steps[40]/meaning",
+        "ko": null,
+        "en": "There is a lot — ㅎ in ㄶ batchim weakens: sounds like 마나요",
+        "val": "มีมาก — ㅎ ใน ㄶ บัดชิมอ่อนแรง: ออกเสียงเหมือน 마나요"
+      },
+      {
+        "id": "pronunciation::steps.56.prompt",
+        "path": "pronunciation/steps[56]/prompt",
+        "ko": null,
+        "en": "신라 (Silla — a historical Korean kingdom) is pronounced as…",
+        "val": "신라 (ซิลลา — อาณาจักรเกาหลีในประวัติศาสตร์) ออกเสียงว่า…"
+      },
+      {
+        "id": "pronunciation::steps.64.choices[2]",
+        "path": "pronunciation/steps[64]/choices[2]",
+        "ko": null,
+        "en": "Slightly open like 'ah'",
+        "val": "เปิดเล็กน้อยเหมือน อา"
+      },
+      {
+        "id": "syllable-blocks::steps.6.prompt",
+        "path": "syllable-blocks/steps[6]/prompt",
+        "ko": null,
+        "en": "How many vowels does a single Korean syllable block contain?",
+        "val": "บล็อกพยางค์เกาหลีหนึ่งบล็อกมีสระกี่ตัว?"
+      },
+      {
+        "id": "syllable-blocks::steps.20.choices[2]",
+        "path": "syllable-blocks/steps[20]/choices[2]",
+        "ko": null,
+        "en": "To the right",
+        "val": "ทางขวา"
+      },
+      {
+        "id": "syllable-blocks::steps.38.hint",
+        "path": "syllable-blocks/steps[38]/hint",
+        "ko": null,
+        "en": "ㄹ 받침 again — the tongue lingers against the palate. Sounds like a soft 'l'.",
+        "val": "ㄹ บัดชิมอีกครั้ง — ลิ้นค้างอยู่ที่เพดานปาก ฟังดูเหมือน ล อ่อนๆ"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "emotions::stages.0.name",
+        "path": "emotions/stages[0]/name",
+        "ko": "기본 감정",
+        "en": "Core Emotions",
+        "val": "อารมณ์พื้นฐาน"
+      },
+      {
+        "id": "emotions::steps.3.meaning",
+        "path": "emotions/steps[3]/meaning",
+        "ko": null,
+        "en": "to be angry (literally: anger comes out)",
+        "val": "โกรธ (แปลตรงๆ: ความโกรธพุ่งออกมา)"
+      },
+      {
+        "id": "emotions::steps.9.tip.label",
+        "path": "emotions/steps[9]/tip.label",
+        "ko": null,
+        "en": "신나다 in pop culture",
+        "val": "신나다 ในวัฒนธรรมป๊อป"
+      },
+      {
+        "id": "emotions::steps.15.tip.text",
+        "path": "emotions/steps[15]/tip.text",
+        "ko": null,
+        "en": "기분 = mood, general feeling state (contextual, can change). 감정 = emotion (more specific feeling like anger, joy, fear). 기분이 좋아요 = I feel good right now. 감정을 표현하다 = to express emotion.",
+        "val": "기분 = อารมณ์ สภาวะความรู้สึกทั่วไป (เปลี่ยนได้ตามบริบท) 감정 = อารมณ์ความรู้สึก (เฉพาะเจาะจงกว่า เช่น ความโกรธ ความสุข)"
+      },
+      {
+        "id": "emotions::steps.19.meaning",
+        "path": "emotions/steps[19]/meaning",
+        "ko": null,
+        "en": "to miss someone/something (longing)",
+        "val": "คิดถึงใครหรือบางสิ่ง (ความคิดถึงอย่างลึกซึ้ง)"
+      },
+      {
+        "id": "emotions::steps.25.prompt",
+        "path": "emotions/steps[25]/prompt",
+        "ko": null,
+        "en": "뿌듯하다 means…",
+        "val": "뿌듯하다 หมายถึง..."
+      },
+      {
+        "id": "emotions::steps.29.meaning",
+        "path": "emotions/steps[29]/meaning",
+        "ko": null,
+        "en": "I'm okay / That's fine / No problem",
+        "val": "โอเค / ไม่เป็นไร / ไม่มีปัญหา"
+      },
+      {
+        "id": "shopping::stages.2.name",
+        "path": "shopping/stages[2]/name",
+        "ko": "가격·숫자",
+        "en": "Prices & Numbers",
+        "val": "ราคาและตัวเลข"
+      },
+      {
+        "id": "shopping::steps.6.title",
+        "path": "shopping/steps[6]/title",
+        "ko": "쇼핑 물건",
+        "en": "Shopping Item Words (쇼핑 물건)",
+        "val": "คำศัพท์สินค้า (쇼핑 물건)"
+      },
+      {
+        "id": "shopping::steps.10.meaning",
+        "path": "shopping/steps[10]/meaning",
+        "ko": null,
+        "en": "How much is it?",
+        "val": "ราคาเท่าไหร่?"
+      },
+      {
+        "id": "shopping::steps.18.title",
+        "path": "shopping/steps[18]/title",
+        "ko": "원·가격",
+        "en": "Korean Money & Prices (원)",
+        "val": "เงินและราคาเกาหลี (원)"
+      },
+      {
+        "id": "shopping::steps.25.prompt",
+        "path": "shopping/steps[25]/prompt",
+        "ko": null,
+        "en": "You hand over 10,000원 for an item that costs 7,000원. What is the 3,000원 the cashier hands back called?",
+        "val": "คุณจ่าย 10,000원 สำหรับสินค้าราคา 7,000원 เงิน 3,000원 ที่พนักงานคืนให้เรียกว่าอะไร?"
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "vocabulary-academic::stages.0.name",
+        "path": "vocabulary-academic/stages[0]/name",
+        "ko": "학업",
+        "en": "Academic",
+        "val": "คำศัพท์เชิงวิชาการ"
+      },
+      {
+        "id": "vocabulary-adjectives::steps.0.body",
+        "path": "vocabulary-adjectives/steps[0]/body",
+        "ko": null,
+        "en": "Korean adjectives (형용사) behave differently from English ones — they conjugate like verbs. The dictionary form ends in -다. To use them as predicates, change -다 to -아요/어요. To modify a noun, change -다 to -(으)ㄴ. Example: 크다 (big) → 커요 (it's big) / 큰 집 (big house).",
+        "val": "คำคุณศัพท์ภาษาเกาหลี (형용사) ทำงานต่างจากภาษาอังกฤษ — คำเหล่านี้ผันเหมือนคำกริยา รูปพจนานุกรมลงท้ายด้วย -다 หากใช้เป็นภาคแสดง ให้เปลี่ยน -다 เป็น -아요/어요 หากใช้ขยายคำนาม ให้เปลี่ยน -다 เป็น -(으)ㄴ ตัวอย่าง: 크다 (ใหญ่) → 커요 (ใหญ่) / 큰 집 (บ้านหลังใหญ่)"
+      },
+      {
+        "id": "vocabulary-body-parts::steps.6.meaning",
+        "path": "vocabulary-body-parts/steps[6]/meaning",
+        "ko": null,
+        "en": "Ear",
+        "val": "หู"
+      },
+      {
+        "id": "vocabulary-colors::steps.7.meaning",
+        "path": "vocabulary-colors/steps[7]/meaning",
+        "ko": null,
+        "en": "Purple / violet",
+        "val": "สีม่วง"
+      },
+      {
+        "id": "vocabulary-days-time::steps.13.meaning",
+        "path": "vocabulary-days-time/steps[13]/meaning",
+        "ko": null,
+        "en": "AM / morning — 오전 열 시 = 10:00 AM",
+        "val": "ก่อนเที่ยง / ตอนเช้า — 오전 열 시 = 10:00 น."
+      },
+      {
+        "id": "vocabulary-emotions::steps.16.choices[1]",
+        "path": "vocabulary-emotions/steps[16]/choices[1]",
+        "ko": null,
+        "en": "My heart is fluttering with excitement",
+        "val": "ใจเต้นตึกตักด้วยความตื่นเต้น"
+      },
+      {
+        "id": "vocabulary-food-drink::stages.0.name",
+        "path": "vocabulary-food-drink/stages[0]/name",
+        "ko": "음식과 음료",
+        "en": "Food & Drink",
+        "val": "อาหารและเครื่องดื่ม"
+      },
+      {
+        "id": "vocabulary-greetings::steps.4.meaning",
+        "path": "vocabulary-greetings/steps[4]/meaning",
+        "ko": null,
+        "en": "Thank you — polite but less formal",
+        "val": "ขอบคุณ — สุภาพแต่เป็นทางการน้อยกว่า"
+      },
+      {
+        "id": "vocabulary-health::steps.18.choices[0]",
+        "path": "vocabulary-health/steps[18]/choices[0]",
+        "ko": null,
+        "en": "I have a headache",
+        "val": "ฉันปวดหัว"
+      },
+      {
+        "id": "vocabulary-konglish::steps.17.choices[3]",
+        "path": "vocabulary-konglish/steps[17]/choices[3]",
+        "ko": null,
+        "en": "A self-service counter",
+        "val": "เคาน์เตอร์บริการตนเอง"
+      },
+      {
+        "id": "vocabulary-media::steps.16.choices[1]",
+        "path": "vocabulary-media/steps[16]/choices[1]",
+        "ko": null,
+        "en": "The global spread of Korean pop culture",
+        "val": "การแพร่กระจายของวัฒนธรรมป็อปเกาหลีไปทั่วโลก"
+      },
+      {
+        "id": "vocabulary-news::steps.16.meaning",
+        "path": "vocabulary-news/steps[16]/meaning",
+        "ko": null,
+        "en": "Report / news coverage — 보도에 따르면 = according to reports",
+        "val": "การรายงานข่าว — 보도에 따르면 = ตามรายงานข่าว"
+      },
+      {
+        "id": "vocabulary-numbers::steps.12.rules[1]",
+        "path": "vocabulary-numbers/steps[12]/rules[1]",
+        "ko": null,
+        "en": "백 (100), 천 (1,000), 만 (10,000)",
+        "val": "백 (100), 천 (1,000), 만 (10,000)"
+      },
+      {
+        "id": "vocabulary-places::steps.10.meaning",
+        "path": "vocabulary-places/steps[10]/meaning",
+        "ko": null,
+        "en": "Airport — 공 (air/sky) + 항 (port)",
+        "val": "สนามบิน — 공 (อากาศ/ท้องฟ้า) + 항 (ท่า)"
+      },
+      {
+        "id": "vocabulary-proverbs::steps.3.rules[2]",
+        "path": "vocabulary-proverbs/steps[3]/rules[2]",
+        "ko": null,
+        "en": "낫다 = to be better",
+        "val": "낫다 = ดีกว่า"
+      },
+      {
+        "id": "vocabulary-proverbs::steps.9.body",
+        "path": "vocabulary-proverbs/steps[9]/body",
+        "ko": null,
+        "en": "Meaning: Even a monkey falls from a tree. English equivalent: 'Nobody's perfect' / 'Even the best make mistakes.'",
+        "val": "ความหมาย: แม้แต่ลิงก็ยังตกจากต้นไม้ สำนวนอังกฤษที่ใกล้เคียง: \"Nobody's perfect.\" (ไม่มีใครสมบูรณ์แบบ) / \"Even the best make mistakes.\" (แม้แต่คนที่เก่งที่สุดก็ยังผิดพลาดได้)"
+      },
+      {
+        "id": "vocabulary-proverbs::steps.15.choices[0]",
+        "path": "vocabulary-proverbs/steps[15]/choices[0]",
+        "ko": null,
+        "en": "Begin now, however far the goal still is",
+        "val": "ลงมือเริ่มเสียตั้งแต่ตอนนี้ ไม่ว่าเป้าหมายจะไกลแค่ไหน"
+      },
+      {
+        "id": "vocabulary-shopping::steps.20.message",
+        "path": "vocabulary-shopping/steps[20]/message",
+        "ko": null,
+        "en": "쇼핑 실력이 늘었어요! (Your shopping skills have improved!) You're now armed for any Korean shopping adventure — from the buzzing Namdaemun Market to the glitzy Lotte World Mall.",
+        "val": "쇼핑 실력이 늘었어요! (ทักษะการช้อปปิ้งของคุณพัฒนาขึ้นแล้ว!) ตอนนี้คุณพร้อมสำหรับการผจญภัยช้อปปิ้งในเกาหลีทุกรูปแบบ — ตั้งแต่ตลาดนัมแดมุนที่คึกคัก ไปจนถึงล็อตเต้เวิลด์มอลล์อันหรูหรา"
+      },
+      {
+        "id": "vocabulary-verbs::steps.8.meaning",
+        "path": "vocabulary-verbs/steps[8]/meaning",
+        "ko": null,
+        "en": "To read — 읽어요 (polite present)",
+        "val": "อ่าน — 읽어요 (รูปสุภาพปัจจุบัน)"
+      },
+      {
+        "id": "vocabulary-weather::steps.16.choices[0]",
+        "path": "vocabulary-weather/steps[16]/choices[0]",
+        "ko": null,
+        "en": "It's hot",
+        "val": "อากาศร้อน"
+      }
+    ],
+    "writing-typing": [
+      {
+        "id": "letter-writing::stages.0.name",
+        "path": "letter-writing/stages[0]/name",
+        "ko": "획순 원리",
+        "en": "How Strokes Work",
+        "val": "ลำดับขีดทำงานอย่างไร"
+      },
+      {
+        "id": "letter-writing::steps.3.hint",
+        "path": "letter-writing/steps[3]/hint",
+        "ko": null,
+        "en": "Start at the top-left. One stroke: across, then down without lifting.",
+        "val": "เริ่มที่มุมบนซ้าย เส้นเดียว: ลากขวาแล้วลงล่างโดยไม่ยกปากกา"
+      },
+      {
+        "id": "letter-writing::steps.18.hint",
+        "path": "letter-writing/steps[18]/hint",
+        "ko": null,
+        "en": "Two strokes: the top bar and the left leg in one motion, then the right leg. Two, not three.",
+        "val": "สองเส้น: เส้นบนกับขาซ้ายในเส้นเดียว แล้วขาขวา สองเส้น ไม่ใช่สาม"
+      },
+      {
+        "id": "letter-writing::steps.32.hint",
+        "path": "letter-writing/steps[32]/hint",
+        "ko": null,
+        "en": "Three strokes: the long vertical first, then the upper tick, then the lower tick.",
+        "val": "สามเส้น: เส้นตั้งยาวก่อน แล้วขีดสั้นด้านบน จากนั้นขีดสั้นด้านล่าง"
+      },
+      {
+        "id": "letter-writing::steps.46.example_meaning",
+        "path": "letter-writing/steps[46]/example_meaning",
+        "ko": null,
+        "en": "sky",
+        "val": "ท้องฟ้า"
+      },
+      {
+        "id": "letter-writing::steps.60.example_meaning",
+        "path": "letter-writing/steps[60]/example_meaning",
+        "ko": null,
+        "en": "won (Korean currency)",
+        "val": "วอน (สกุลเงินเกาหลี)"
+      },
+      {
+        "id": "letter-writing::steps.71.choices[2]",
+        "path": "letter-writing/steps[71]/choices[2]",
+        "ko": null,
+        "en": "Either one",
+        "val": "เส้นใดก็ได้"
+      },
+      {
+        "id": "typing::steps.0.tip.label",
+        "path": "typing/steps[0]/tip.label",
+        "ko": null,
+        "en": "Left hand, right hand",
+        "val": "มือซ้าย มือขวา"
+      },
+      {
+        "id": "typing::steps.14.tip",
+        "path": "typing/steps[14]/tip",
+        "ko": null,
+        "en": "Three keys in a row along the bottom: ㅠ on B, ㅜ on N, ㅡ on M. B is a stretch for your LEFT index finger, while N and M sit under your right index. ㅡ on M matters more than it looks — it is the vowel inside 은, 는, 를 and most other grammar endings.",
+        "val": "สามปุ่มเรียงกันตามแถวล่าง: ㅠ ที่ B, ㅜ ที่ N, ㅡ ที่ M B ต้องให้นิ้วชี้ซ้ายเอื้อมไป ส่วน N และ M อยู่ใต้นิ้วชี้ขวา ㅡ ที่ M สำคัญกว่าที่เห็น — เป็นสระที่อยู่ใน 은, 는, 를 และท้ายไวยากรณ์อื่น ๆ ส่วนใหญ่"
+      },
+      {
+        "id": "typing::steps.24.items.2.meaning",
+        "path": "typing/steps[24]/items[2]/meaning",
+        "ko": null,
+        "en": "friend",
+        "val": "เพื่อน"
+      },
+      {
+        "id": "typing::steps.26.items.10.meaning",
+        "path": "typing/steps[26]/items[10]/meaning",
+        "ko": null,
+        "en": "family",
+        "val": "ครอบครัว"
+      },
+      {
+        "id": "typing::steps.26.items.31.meaning",
+        "path": "typing/steps[26]/items[31]/meaning",
+        "ko": null,
+        "en": "leg",
+        "val": "ขา"
+      }
+    ]
+  }
+}

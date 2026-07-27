@@ -63,6 +63,10 @@ const HangulUtil = (() => {
 
 ## 2. `js/stroke-data.js`
 
+> ⚠️ **Coordinates below are SUPERSEDED — corrected 2026-07-24.** The calibration pass mandated by prompt B §4 was executed on 2026-07-24 against measured Noto Sans KR glyph ink, and the shipped **`js/stroke-data.js` is now the single source of truth for every coordinate** on this page. The tables in §2.2, §2.3 and §2.4 are the *pre-calibration starting values*, kept for provenance only — do not copy them into the data, do not "restore" the data to match them, and do not retype the calibrated numbers into this doc (they would drift on the next pass). What remains binding here is **structure**, not values: the primitive types (§2.1), the stroke order and stroke counts (§2.2 rationale), the composite ref graph (§2.3), and the layout archetype/slot contract (§2.4). `scripts/validate-stroke-data.cjs` enforces exactly that split — it checks stroke counts and coordinate structure, never specific coordinate values.
+>
+> The calibration changed shapes only. **No stroke count moved**; ㅎ = 3 and ㅊ = 3 still hold.
+
 Same module pattern: `window.HangulStrokes` global + `module.exports` tail. Pure data, three keys: `shapes`, `composites`, `layouts`.
 
 ### 2.1 Primitive types
@@ -206,6 +210,21 @@ layouts: {
 },
 ```
 
+**`layouts.jamo` carries four boxes, not one** (structural contract, added by the 2026-07-24 calibration — the coordinates above are pre-calibration and stale):
+
+```js
+jamo: { solo:[…], solo_v:[…], solo_h:[…], solo_m:[…] },
+```
+
+| slot | used for |
+|---|---|
+| `solo` | consonants (and anything not a vowel) |
+| `solo_v` | vertical vowels — `vowelClass` `'v'` (ㅏㅐㅑㅒㅓㅔㅕㅖㅣ) |
+| `solo_h` | horizontal vowels — `'h'` (ㅗㅛㅜㅠㅡ) |
+| `solo_m` | mixed vowels — `'m'` (ㅘㅙㅚㅝㅞㅟㅢ) |
+
+One box could not centre all four classes: measured font ink for a bare vertical vowel is ~0.36 wide × ~1.09 tall relative to the old 70×70 `solo` box, while a horizontal vowel is ~1.01 × ~0.55 — inverse aspect ratios. Renderers pick the slot with `'solo_' + vowelClass(ch)` for a vowel, falling back to `solo`. All four are ordinary `[x,y,w,h]` boxes and obey the §3 rule-4 bounds.
+
 ## 3. `scripts/validate-stroke-data.cjs`
 
 Node script, style of the other `scripts/*.cjs` (plain `require`, `console.log`, exit code 1 on failure). It requires `../js/hangul-util.js` and `../js/stroke-data.js` and asserts:
@@ -217,9 +236,9 @@ Node script, style of the other `scripts/*.cjs` (plain `require`, `console.log`,
    - Vowels: ㅏ2 ㅑ3 ㅓ2 ㅕ3 ㅗ2 ㅛ3 ㅜ2 ㅠ3 ㅡ1 ㅣ1
    - Compound vowels: ㅐ3 ㅒ4 ㅔ3 ㅖ4 ㅘ4 ㅙ5 ㅚ3 ㅝ4 ㅞ5 ㅟ3 ㅢ2
    - Compound batchim: ㄳ3 ㄵ3 ㄶ4 ㄺ4 ㄻ6 ㄼ7 ㄽ5 ㄾ6 ㄿ7 ㅀ6 ㅄ6
-3. **Geometry**: every coordinate in every primitive is within `[0,100]`; `line` has exactly 2 pts; `poly` has ≥ 3 pts; `circle` has `c` (2 numbers) and `r > 0`; circle extents (`c ± r`) stay within `[0,100]`.
-4. **Boxes**: every composite `box` and every layout slot box satisfies `x,y ≥ 0`, `w,h > 0`, `x+w ≤ 100`, `y+h ≤ 100`.
-5. **Layouts**: keys exactly `v,h,m,vf,hf,mf,jamo`; `v/h/m` have `cho`+`jung`; `*f` also have `jong`; `jamo` has `solo`.
+3. **Geometry**: every coordinate in every primitive is within `[0,100]`; `line` has exactly 2 pts; `poly` has ≥ 3 pts; `circle` has `c` (2 numbers) and `r > 0`; circle extents (`c ± r`) stay within `[0,100]`. This applies to **variant** stroke arrays too (`shapes[ch].variants[slotKey]`, either `{strokes:[…]}` or a bare array), and a variant's stroke **count must equal its base shape's count** — a variant is an alternate drawing of the same letter, so a differing count would desync the lesson copy, the quiz answers and the table in check 2 at once. `variants: {}` is valid and checks nothing.
+4. **Boxes**: every composite `box` and every layout slot box satisfies `x,y ≥ 0`, `w,h > 0`, `x+w ≤ 100`, `y+h ≤ 100`. This is what geometry-checks the `jamo` slots — check 5 only verifies that they are present.
+5. **Layouts**: keys exactly `v,h,m,vf,hf,mf,jamo`; `v/h/m` have `cho`+`jung`; `*f` also have `jong`; `jamo` has exactly `solo`, `solo_v`, `solo_h`, `solo_m` (§2.4) — no more, no fewer.
 6. **Vowel classes**: every JUNG char returns `'v'|'h'|'m'` from `HangulUtil.vowelClass`; spot-assert `vowelClass('ㅏ')==='v'`, `('ㅗ')==='h'`, `('ㅘ')==='m'`, `('ㅢ')==='m'`.
 
 Output: per-section pass lines + `✓ stroke data valid: 24 shapes, 27 composites, 67 jamo resolved` or a list of failures + `process.exit(1)`.

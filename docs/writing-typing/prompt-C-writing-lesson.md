@@ -96,6 +96,18 @@ Follow `learn/data/hangul.json` structure exactly: top-level `{ "lesson": "lette
 1. "The Three Rules of Stroke Order" — rules: top before bottom; left before right; horizontal before an intersecting vertical. Tip: every hangul letter follows these — learn 24 shapes and you can write all 11,172 syllables.
 2. "One Letter, One Rhythm" — explain stroke counts are fixed (state explicitly: ㅈ is written in 2 strokes, ㅊ in 3 — handwriting convention used throughout this lesson), and that syllables are written cho → jung → jong (initial consonant, then vowel, then final).
 
+**The ㅎ/ㅊ top tick — required learner-facing note.** The 2026-07-24 calibration changed the top mark of ㅎ and ㅊ from a flat horizontal bar to a slanted dot, so the lesson copy must explain the choice rather than let it look like an error. Add this as the `tip` of step 2 (or as a `rules` entry — one of the two, verbatim):
+
+> The small mark on top of ㅎ and ㅊ can be written flat, slanted, or straight up and down — Korean has no official rule, and you will see all three. We draw it slanted, the way most Korean fonts print it, so the letter you practise looks like the Korean you will actually read.
+
+Translate it in prompt F1 like any other prose field. Supporting facts, so the decision can be re-derived rather than re-argued:
+
+- 국립국어원 온라인가나다 (`qna_seq=326821`) — **no regulation exists**; 가로점 (flat), 세로점 (upright) and 사선점 (slanted) are all attested, the variation arising from the printing medium.
+- 훈민정음's original form is the **upright, ㅗ-shaped head** — so "flat" is not the historical form either.
+- Typeface split: 고딕/민부리 faces set an **upright 꼭지**; 부리/명조 faces set a **slanted dot**.
+- The flat-horizontal form the pre-calibration data used traces mainly to **English-language learner charts**, not to Korean typesetting or handwriting — which is why it was changed.
+- Stroke count is unaffected: ㅎ = 3, ㅊ = 3, as in the prompt-A validator table.
+
 **Stage 2 — 14 consonants, each as a `stroke_demo` immediately followed by a `stroke_trace` of the same char** (28 steps, order ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ).
 
 `stroke_demo` schema:
@@ -115,7 +127,7 @@ Reuse `romanization`, `audio` (letter names 기역 니은 디귿 리을 미음 �
 
 **Stage 3 — 10 vowels, same demo+trace pairing** (20 steps, order ㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ). `audio` = the vowel sound itself (아 야 어 여 오 요 우 유 으 이); `example_word`/`example_meaning` from hangul.json vowel cards; stroke counts ㅏ2 ㅑ3 ㅓ2 ㅕ3 ㅗ2 ㅛ3 ㅜ2 ㅠ3 ㅡ1 ㅣ1. Call out direction quirks in hints: ㅓ "tick first, then the vertical"; ㅗ "short vertical first, then the long base"; ㅜ "bar first, then the hanging vertical".
 
-**Stage 4 — 6 syllables, demo+trace pairs** (12 steps): 가 (ga — "go"), 고 (go), 과 (gwa — fruit/lesson), 한 (han — Korea/one), 곰 (gom — bear), 원 (won — currency). `audio` = the syllable itself. Demo hints teach block order, e.g. 한: "Write ㅎ first, then ㅏ, then ㄴ underneath — 6 strokes total." `stroke_count`: 가3 고3 과5 한6 곰6 원5 (sum of jamo counts; double-check against the validator table).
+**Stage 4 — 6 syllables, demo+trace pairs** (12 steps): 가 (ga — "go"), 고 (go), 과 (gwa — fruit/lesson), 한 (han — Korea/one), 곰 (gom — bear), 원 (won — currency). `audio` = the syllable itself. Demo hints teach block order, e.g. 한: "Write ㅎ first, then ㅏ, then ㄴ underneath — 6 strokes total." `stroke_count`: 가3 고3 과5 한6 곰6 원**6** (sum of jamo counts; double-check against the validator table). ⚠️ This line originally said 원5 — wrong, and caught by the mandated recomputation on 2026-07-24: 원 = ㅇ1 + ㅝ(ㅜ2+ㅓ2=4) + ㄴ1 = 6. The compound vowel ㅝ is 4 strokes, not 3. The shipped JSON uses 6.
 
 **Stage 5 — challenge:** demo+trace pairs for 빛 (bit — light, ㅂ4+ㅣ1+ㅊ3 = 8 strokes), 닭 (dak — chicken, ㄷ2+ㅏ2+ㄺ4 = 8), 값 (gap — price, ㄱ1+ㅏ2+ㅄ6 = 9), 햟 (hyalh — a rare syllable to show off full coverage, ㅎ3+ㅑ3+ㅀ6 = 12). All counts are derived by summing the validator table — recompute rather than trusting this sentence. That's steps 63–70. Then 3 `match_quiz` steps (71–73), field shape copied from hangul.json match_quiz (`prompt`, `choices` array of 4, `correct` string):
 - "How many strokes in ㅊ?" choices ["2","3","4","5"] correct "3"

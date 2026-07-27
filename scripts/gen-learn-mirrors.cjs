@@ -35,7 +35,7 @@ const FLAG = { de: '🇩🇪 DE', es: '🇪🇸 ES', fr: '🇫🇷 FR', vi: '�
 
 // 13 salvage pages (head + main + scripts kept; chrome rebuilt)
 const SALVAGE_PAGES = [
-  'hangul', 'syllable-blocks', 'pronunciation', 'grammar', 'nouns', 'pronouns',
+  'hangul', 'letter-writing', 'typing', 'syllable-blocks', 'pronunciation', 'grammar', 'nouns', 'pronouns',
   'shopping', 'emotions', 'speech-levels',
   'dialogues', 'business-korean', 'classical-korean', 'writing-essays',
 ];

@@ -1,0 +1,6314 @@
+[
+  {
+    "id": "letter-writing::stages.0.name",
+    "path": "letter-writing/stages[0]/name",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "획순 원리",
+    "en": "How Strokes Work",
+    "th": "ลำดับการเขียนทำงานอย่างไร",
+    "vi": "Cách các nét hoạt động"
+  },
+  {
+    "id": "letter-writing::stages.1.name",
+    "path": "letter-writing/stages[1]/name",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "자음 쓰기",
+    "en": "Consonants",
+    "th": "พยัญชนะ",
+    "vi": "Phụ âm"
+  },
+  {
+    "id": "letter-writing::stages.2.name",
+    "path": "letter-writing/stages[2]/name",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 2
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "모음 쓰기",
+    "en": "Vowels",
+    "th": "สระ",
+    "vi": "Nguyên âm"
+  },
+  {
+    "id": "letter-writing::stages.3.name",
+    "path": "letter-writing/stages[3]/name",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 3
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "음절 쓰기",
+    "en": "Syllable Blocks",
+    "th": "บล็อกพยางค์",
+    "vi": "Khối âm tiết"
+  },
+  {
+    "id": "letter-writing::stages.4.name",
+    "path": "letter-writing/stages[4]/name",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 4
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "도전",
+    "en": "Challenge",
+    "th": "ความท้าทาย",
+    "vi": "Thử thách"
+  },
+  {
+    "id": "letter-writing::steps.0.title",
+    "path": "letter-writing/steps[0]/title",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "title",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "획순 세 가지 규칙",
+    "en": "The Three Rules of Stroke Order",
+    "th": "สามกฎของลำดับการเขียน",
+    "vi": "Ba quy tắc về thứ tự nét"
+  },
+  {
+    "id": "letter-writing::steps.0.body",
+    "path": "letter-writing/steps[0]/body",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "body",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Every hangul letter is built from a handful of simple strokes, and those strokes always come in the same order. Three rules cover all of them.",
+    "th": "อักษรฮันกึลทุกตัวประกอบขึ้นจากเส้นง่ายๆ ไม่กี่เส้น และเส้นเหล่านั้นเขียนตามลำดับเดิมเสมอ กฎสามข้อครอบคลุมทั้งหมด",
+    "vi": "Mỗi chữ cái hangul được tạo nên từ một vài nét đơn giản, và các nét đó luôn theo cùng một thứ tự. Ba quy tắc bao quát tất cả."
+  },
+  {
+    "id": "letter-writing::steps.0.rules[0]",
+    "path": "letter-writing/steps[0]/rules[0]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 0,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Top before bottom — the highest stroke is written first.",
+    "th": "บนก่อนล่าง — เส้นที่อยู่สูงสุดเขียนก่อน",
+    "vi": "Trên trước dưới — nét cao nhất được viết trước."
+  },
+  {
+    "id": "letter-writing::steps.0.rules[1]",
+    "path": "letter-writing/steps[0]/rules[1]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 1,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Left before right — when strokes stand side by side, start with the one on the left.",
+    "th": "ซ้ายก่อนขวา — เมื่อเส้นอยู่เคียงข้างกัน ให้เริ่มจากเส้นทางซ้าย",
+    "vi": "Trái trước phải — khi các nét đứng cạnh nhau, hãy bắt đầu từ nét bên trái."
+  },
+  {
+    "id": "letter-writing::steps.0.rules[2]",
+    "path": "letter-writing/steps[0]/rules[2]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 2,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Horizontal before an intersecting vertical — draw the crossing bar first, then the line that cuts through it.",
+    "th": "เส้นนอนก่อนเส้นตั้งที่ตัดผ่าน — ลากเส้นขวางก่อน แล้วจึงลากเส้นที่ผ่ากลาง",
+    "vi": "Nét ngang trước nét dọc cắt qua — vẽ thanh ngang trước, rồi mới đến nét cắt qua nó."
+  },
+  {
+    "id": "letter-writing::steps.0.tip.label",
+    "path": "letter-writing/steps[0]/tip.label",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "label"
+    },
+    "ko": null,
+    "en": "Why it matters",
+    "th": "ทำไมจึงสำคัญ",
+    "vi": "Tại sao điều này quan trọng"
+  },
+  {
+    "id": "letter-writing::steps.0.tip.text",
+    "path": "letter-writing/steps[0]/tip.text",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "text"
+    },
+    "ko": null,
+    "en": "Every hangul letter follows these three rules. Learn the 24 basic shapes and you can write all 11,172 Korean syllables.",
+    "th": "อักษรฮันกึลทุกตัวเป็นไปตามกฎสามข้อนี้ เรียนรู้รูปพื้นฐาน 24 แบบ แล้วคุณก็เขียนพยางค์เกาหลีได้ครบทั้ง 11,172 พยางค์",
+    "vi": "Mỗi chữ cái hangul đều tuân theo ba quy tắc này. Học 24 hình cơ bản là bạn có thể viết được cả 11.172 âm tiết tiếng Hàn."
+  },
+  {
+    "id": "letter-writing::steps.1.title",
+    "path": "letter-writing/steps[1]/title",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "title",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "글자마다 정해진 획수",
+    "en": "One Letter, One Rhythm",
+    "th": "หนึ่งตัวอักษร หนึ่งจังหวะ",
+    "vi": "Mỗi chữ cái, một nhịp điệu"
+  },
+  {
+    "id": "letter-writing::steps.1.body",
+    "path": "letter-writing/steps[1]/body",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "body",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Each letter has a fixed number of strokes, and each stroke has a fixed direction. ㅈ is written in 2 strokes and ㅊ in 3 — that is the handwriting convention used all the way through this lesson. Inside a syllable block the order is fixed too: first the opening consonant, then the vowel, then the final consonant underneath.",
+    "th": "ตัวอักษรแต่ละตัวมีจำนวนเส้นที่แน่นอน และแต่ละเส้นมีทิศทางที่แน่นอน ㅈ เขียน 2 เส้นและ ㅊ เขียน 3 เส้น — นี่คือธรรมเนียมการเขียนด้วยมือที่ใช้ตลอดบทเรียนนี้ ภายในบล็อกพยางค์ลำดับก็คงที่เช่นกัน: พยัญชนะต้นก่อน ตามด้วยสระ แล้วจึงพยัญชนะสะกดด้านล่าง",
+    "vi": "Mỗi chữ cái có số nét cố định, và mỗi nét có hướng cố định. ㅈ viết bằng 2 nét và ㅊ bằng 3 nét — đó là quy ước viết tay dùng xuyên suốt bài học này. Bên trong một khối âm tiết, thứ tự cũng cố định: trước hết là phụ âm đầu, rồi đến nguyên âm, rồi phụ âm cuối bên dưới."
+  },
+  {
+    "id": "letter-writing::steps.1.rules[0]",
+    "path": "letter-writing/steps[1]/rules[0]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 0,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Opening consonant first (초성) — the top-left slot.",
+    "th": "พยัญชนะต้นก่อน (초성) — ช่องมุมบนซ้าย",
+    "vi": "Phụ âm đầu trước (초성) — ô trên bên trái."
+  },
+  {
+    "id": "letter-writing::steps.1.rules[1]",
+    "path": "letter-writing/steps[1]/rules[1]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 1,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Then the vowel (중성) — to the right of it, or underneath it.",
+    "th": "จากนั้นสระ (중성) — อยู่ทางขวาหรือด้านล่างของพยัญชนะ",
+    "vi": "Rồi đến nguyên âm (중성) — bên phải hoặc bên dưới nó."
+  },
+  {
+    "id": "letter-writing::steps.1.rules[2]",
+    "path": "letter-writing/steps[1]/rules[2]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 2,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Then the final consonant (종성) along the bottom, if the syllable has one.",
+    "th": "แล้วจึงพยัญชนะสะกด (종성) ที่ด้านล่าง หากพยางค์นั้นมี",
+    "vi": "Rồi phụ âm cuối (종성) chạy dọc phía dưới, nếu âm tiết có."
+  },
+  {
+    "id": "letter-writing::steps.1.tip.label",
+    "path": "letter-writing/steps[1]/tip.label",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "label"
+    },
+    "ko": null,
+    "en": "The mark on top of ㅎ and ㅊ",
+    "th": "ขีดเล็กบนหัว ㅎ และ ㅊ",
+    "vi": "Dấu nhỏ trên đỉnh ㅎ và ㅊ"
+  },
+  {
+    "id": "letter-writing::steps.1.tip.text",
+    "path": "letter-writing/steps[1]/tip.text",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "text"
+    },
+    "ko": null,
+    "en": "The small mark on top of ㅎ and ㅊ can be written flat, slanted, or straight up and down — Korean has no official rule, and you will see all three. We draw it slanted, the way most Korean fonts print it, so the letter you practise looks like the Korean you will actually read.",
+    "th": "ขีดเล็กบนหัว ㅎ และ ㅊ จะเขียนแบบแบนราบ เอียง หรือตั้งตรงก็ได้ — ภาษาเกาหลีไม่มีกฎอย่างเป็นทางการ และคุณจะพบเห็นทั้งสามแบบ เราเขียนแบบเอียงตามที่ฟอนต์เกาหลีส่วนใหญ่พิมพ์กัน เพื่อให้ตัวอักษรที่คุณฝึกดูเหมือนภาษาเกาหลีที่คุณจะได้อ่านจริง",
+    "vi": "Dấu nhỏ trên đỉnh ㅎ và ㅊ có thể viết nằm ngang, xiên, hoặc thẳng đứng — tiếng Hàn không có quy tắc chính thức, và bạn sẽ thấy cả ba kiểu. Chúng tôi viết nó xiên, giống như cách hầu hết các phông chữ Hàn Quốc in ra, để chữ bạn luyện trông giống tiếng Hàn mà bạn sẽ thực sự đọc."
+  },
+  {
+    "id": "letter-writing::steps.2.hint",
+    "path": "letter-writing/steps[2]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 2
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "One single stroke: across to the right, then turn and come straight down.",
+    "th": "เส้นเดียวจบ: ลากไปทางขวา แล้วหักลงตรงๆ",
+    "vi": "Một nét duy nhất: sang phải, rồi gập lại và kéo thẳng xuống."
+  },
+  {
+    "id": "letter-writing::steps.2.example_meaning",
+    "path": "letter-writing/steps[2]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 2
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "to go",
+    "th": "ไป",
+    "vi": "đi"
+  },
+  {
+    "id": "letter-writing::steps.3.hint",
+    "path": "letter-writing/steps[3]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 3
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Start at the top-left. One stroke: across, then down without lifting.",
+    "th": "เริ่มที่มุมบนซ้าย เส้นเดียว: ลากขวาแล้วลงล่างโดยไม่ยกปากกา",
+    "vi": "Bắt đầu từ góc trên bên trái. Một nét: sang ngang rồi xuống, không nhấc bút."
+  },
+  {
+    "id": "letter-writing::steps.4.hint",
+    "path": "letter-writing/steps[4]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 4
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "One single stroke: down the left side, then turn and run along the bottom.",
+    "th": "เส้นเดียวจบ: ลากลงด้านซ้าย แล้วหักไปตามด้านล่าง",
+    "vi": "Một nét duy nhất: kéo xuống bên trái, rồi gập lại và chạy dọc đáy."
+  },
+  {
+    "id": "letter-writing::steps.4.example_meaning",
+    "path": "letter-writing/steps[4]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 4
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "I / me",
+    "th": "ฉัน / ผม",
+    "vi": "tôi"
+  },
+  {
+    "id": "letter-writing::steps.5.hint",
+    "path": "letter-writing/steps[5]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 5
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Start at the top-left. Down first, then right — one unbroken stroke.",
+    "th": "เริ่มที่มุมบนซ้าย ลงก่อน แล้วไปทางขวา — เส้นเดียวไม่ขาดตอน",
+    "vi": "Bắt đầu từ góc trên bên trái. Xuống trước, rồi sang phải — một nét liền không ngắt."
+  },
+  {
+    "id": "letter-writing::steps.6.hint",
+    "path": "letter-writing/steps[6]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 6
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two strokes: the top bar, then a stroke down the left side and along the bottom.",
+    "th": "สองเส้น: เส้นบน แล้วเส้นที่ลากลงด้านซ้ายและไปตามด้านล่าง",
+    "vi": "Hai nét: thanh ngang trên, rồi một nét kéo xuống bên trái và chạy dọc đáy."
+  },
+  {
+    "id": "letter-writing::steps.6.example_meaning",
+    "path": "letter-writing/steps[6]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 6
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "all / every",
+    "th": "ทั้งหมด / ทุก",
+    "vi": "tất cả / mọi thứ"
+  },
+  {
+    "id": "letter-writing::steps.7.hint",
+    "path": "letter-writing/steps[7]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 7
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Draw the top bar left to right. Then start again at the top-left corner: down, then right.",
+    "th": "ลากเส้นบนจากซ้ายไปขวา แล้วเริ่มใหม่ที่มุมบนซ้าย: ลงล่าง แล้วไปขวา",
+    "vi": "Vẽ thanh ngang trên từ trái sang phải. Rồi bắt đầu lại từ góc trên bên trái: xuống, rồi sang phải."
+  },
+  {
+    "id": "letter-writing::steps.8.hint",
+    "path": "letter-writing/steps[8]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 8
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three strokes: the ㄱ motion, the middle bar, then the ㄴ motion.",
+    "th": "สามเส้น: ท่า ㄱ เส้นกลาง แล้วท่า ㄴ",
+    "vi": "Ba nét: động tác ㄱ, thanh ngang giữa, rồi động tác ㄴ."
+  },
+  {
+    "id": "letter-writing::steps.8.example_meaning",
+    "path": "letter-writing/steps[8]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 8
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "reason (prefix)",
+    "th": "เหตุผล (คำนำหน้า)",
+    "vi": "lý do (tiền tố)"
+  },
+  {
+    "id": "letter-writing::steps.9.hint",
+    "path": "letter-writing/steps[9]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 9
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Top ㄱ first. Then the middle bar left to right. Then the bottom ㄴ.",
+    "th": "ㄱ ด้านบนก่อน แล้วเส้นกลางจากซ้ายไปขวา จากนั้น ㄴ ด้านล่าง",
+    "vi": "ㄱ ở trên trước. Rồi thanh ngang giữa từ trái sang phải. Rồi ㄴ ở dưới."
+  },
+  {
+    "id": "letter-writing::steps.10.hint",
+    "path": "letter-writing/steps[10]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 10
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three strokes: the left side down, then the top and right side in one motion, then the bottom bar.",
+    "th": "สามเส้น: ด้านซ้ายลงล่าง แล้วด้านบนกับด้านขวาในเส้นเดียว จากนั้นเส้นล่าง",
+    "vi": "Ba nét: cạnh trái xuống, rồi cạnh trên và cạnh phải trong một nét, rồi thanh ngang đáy."
+  },
+  {
+    "id": "letter-writing::steps.10.example_meaning",
+    "path": "letter-writing/steps[10]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 10
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "heart / mind",
+    "th": "หัวใจ / จิตใจ",
+    "vi": "trái tim / tâm trí"
+  },
+  {
+    "id": "letter-writing::steps.11.hint",
+    "path": "letter-writing/steps[11]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 11
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Start top-left and go down. Then across the top and down the right. Close the box with the bottom bar.",
+    "th": "เริ่มมุมบนซ้ายแล้วลงล่าง จากนั้นข้ามด้านบนและลงด้านขวา ปิดกล่องด้วยเส้นล่าง",
+    "vi": "Bắt đầu từ góc trên bên trái và kéo xuống. Rồi băng qua đỉnh và xuống bên phải. Đóng ô vuông bằng thanh ngang đáy."
+  },
+  {
+    "id": "letter-writing::steps.12.hint",
+    "path": "letter-writing/steps[12]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 12
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Four strokes: the left post down, the right post down, then the middle bar, then the bottom bar.",
+    "th": "สี่เส้น: เสาซ้ายลงล่าง เสาขวาลงล่าง แล้วเส้นกลาง จากนั้นเส้นล่าง",
+    "vi": "Bốn nét: cột trái xuống, cột phải xuống, rồi thanh ngang giữa, rồi thanh ngang đáy."
+  },
+  {
+    "id": "letter-writing::steps.12.example_meaning",
+    "path": "letter-writing/steps[12]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 12
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "rice / meal",
+    "th": "ข้าว / อาหาร",
+    "vi": "cơm / bữa ăn"
+  },
+  {
+    "id": "letter-writing::steps.13.hint",
+    "path": "letter-writing/steps[13]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 13
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Both verticals first, left before right. Then the middle bar, then the bottom bar.",
+    "th": "เส้นตั้งสองเส้นก่อน ซ้ายก่อนขวา แล้วเส้นกลาง จากนั้นเส้นล่าง",
+    "vi": "Hai nét dọc trước, trái trước phải. Rồi thanh ngang giữa, rồi thanh ngang đáy."
+  },
+  {
+    "id": "letter-writing::steps.14.hint",
+    "path": "letter-writing/steps[14]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 14
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two strokes: the long left leg first, then the shorter right leg.",
+    "th": "สองเส้น: ขาซ้ายที่ยาวกว่าก่อน แล้วขาขวาที่สั้นกว่า",
+    "vi": "Hai nét: nét chân trái dài trước, rồi nét chân phải ngắn hơn."
+  },
+  {
+    "id": "letter-writing::steps.14.example_meaning",
+    "path": "letter-writing/steps[14]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 14
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "person",
+    "th": "คน",
+    "vi": "người"
+  },
+  {
+    "id": "letter-writing::steps.15.hint",
+    "path": "letter-writing/steps[15]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 15
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Start at the top point and sweep down to the left. Then start on that stroke and sweep down to the right.",
+    "th": "เริ่มที่จุดยอดแล้วสะบัดลงไปทางซ้าย จากนั้นเริ่มบนเส้นนั้นแล้วสะบัดลงไปทางขวา",
+    "vi": "Bắt đầu từ đỉnh và hất chéo xuống bên trái. Rồi bắt đầu trên nét đó và hất chéo xuống bên phải."
+  },
+  {
+    "id": "letter-writing::steps.16.hint",
+    "path": "letter-writing/steps[16]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 16
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "One single stroke: a closed circle, starting at the top and coming back to the same point.",
+    "th": "เส้นเดียวจบ: วงกลมปิด เริ่มจากด้านบนแล้ววนกลับมาที่จุดเดิม",
+    "vi": "Một nét duy nhất: một vòng tròn khép kín, bắt đầu từ đỉnh và quay về đúng điểm xuất phát."
+  },
+  {
+    "id": "letter-writing::steps.16.example_meaning",
+    "path": "letter-writing/steps[16]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 16
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "child",
+    "th": "เด็ก",
+    "vi": "trẻ em"
+  },
+  {
+    "id": "letter-writing::steps.17.hint",
+    "path": "letter-writing/steps[17]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 17
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Start at the top and go all the way around until you meet your starting point.",
+    "th": "เริ่มที่ด้านบนแล้ววนรอบจนครบมาบรรจบจุดเริ่มต้น",
+    "vi": "Bắt đầu từ đỉnh và đi trọn một vòng cho đến khi gặp lại điểm xuất phát."
+  },
+  {
+    "id": "letter-writing::steps.18.hint",
+    "path": "letter-writing/steps[18]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 18
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two strokes: the top bar and the left leg in one motion, then the right leg. Two, not three.",
+    "th": "สองเส้น: เส้นบนกับขาซ้ายในเส้นเดียว แล้วขาขวา สองเส้น ไม่ใช่สาม",
+    "vi": "Hai nét: thanh ngang trên và nét chân trái trong một động tác, rồi nét chân phải. Hai, không phải ba."
+  },
+  {
+    "id": "letter-writing::steps.18.example_meaning",
+    "path": "letter-writing/steps[18]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 18
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "now",
+    "th": "ตอนนี้",
+    "vi": "bây giờ"
+  },
+  {
+    "id": "letter-writing::steps.19.hint",
+    "path": "letter-writing/steps[19]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 19
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Start at the top-left: across, then down to the left in one stroke. Then the right leg.",
+    "th": "เริ่มที่มุมบนซ้าย: ลากขวา แล้วสะบัดลงซ้ายในเส้นเดียว จากนั้นขาขวา",
+    "vi": "Bắt đầu từ góc trên bên trái: sang ngang, rồi hất xuống bên trái trong một nét. Rồi nét chân phải."
+  },
+  {
+    "id": "letter-writing::steps.20.hint",
+    "path": "letter-writing/steps[20]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 20
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three strokes: the small slanted mark on top, then the bar with its left leg, then the right leg.",
+    "th": "สามเส้น: ขีดเอียงเล็กด้านบน แล้วเส้นขวางพร้อมขาซ้าย จากนั้นขาขวา",
+    "vi": "Ba nét: dấu xiên nhỏ trên đỉnh, rồi thanh ngang cùng nét chân trái, rồi nét chân phải."
+  },
+  {
+    "id": "letter-writing::steps.20.example_meaning",
+    "path": "letter-writing/steps[20]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 20
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "tea / car",
+    "th": "ชา / รถ",
+    "vi": "trà / ô tô"
+  },
+  {
+    "id": "letter-writing::steps.21.hint",
+    "path": "letter-writing/steps[21]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 21
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Tick on top first. Then the bar and left leg in one stroke. Then the right leg.",
+    "th": "ขีดด้านบนก่อน แล้วเส้นขวางกับขาซ้ายในเส้นเดียว จากนั้นขาขวา",
+    "vi": "Dấu nhỏ trên đỉnh trước. Rồi thanh ngang và nét chân trái trong một nét. Rồi nét chân phải."
+  },
+  {
+    "id": "letter-writing::steps.22.hint",
+    "path": "letter-writing/steps[22]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 22
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two strokes: the ㄱ shape first, then the short bar across the middle.",
+    "th": "สองเส้น: รูป ㄱ ก่อน แล้วเส้นสั้นขวางตรงกลาง",
+    "vi": "Hai nét: hình ㄱ trước, rồi thanh ngang ngắn cắt qua giữa."
+  },
+  {
+    "id": "letter-writing::steps.22.example_meaning",
+    "path": "letter-writing/steps[22]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 22
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "coffee",
+    "th": "กาแฟ",
+    "vi": "cà phê"
+  },
+  {
+    "id": "letter-writing::steps.23.hint",
+    "path": "letter-writing/steps[23]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Draw ㄱ — across, then down. Then add the middle bar, left to right.",
+    "th": "เขียน ㄱ — ลากขวาแล้วลงล่าง จากนั้นเติมเส้นกลางจากซ้ายไปขวา",
+    "vi": "Vẽ ㄱ — sang ngang, rồi xuống. Rồi thêm thanh ngang giữa, từ trái sang phải."
+  },
+  {
+    "id": "letter-writing::steps.24.hint",
+    "path": "letter-writing/steps[24]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three strokes: the top bar, the middle bar, then the left side and bottom in one motion.",
+    "th": "สามเส้น: เส้นบน เส้นกลาง แล้วด้านซ้ายกับด้านล่างในเส้นเดียว",
+    "vi": "Ba nét: thanh ngang trên, thanh ngang giữa, rồi cạnh trái và đáy trong một động tác."
+  },
+  {
+    "id": "letter-writing::steps.24.example_meaning",
+    "path": "letter-writing/steps[24]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "to ride",
+    "th": "ขี่ / โดยสาร",
+    "vi": "cưỡi / lên (xe)"
+  },
+  {
+    "id": "letter-writing::steps.25.hint",
+    "path": "letter-writing/steps[25]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 25
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Top bar, then middle bar. Finish with the stroke down the left side and along the bottom.",
+    "th": "เส้นบน แล้วเส้นกลาง ปิดท้ายด้วยเส้นที่ลากลงด้านซ้ายและไปตามด้านล่าง",
+    "vi": "Thanh ngang trên, rồi thanh ngang giữa. Kết thúc bằng nét kéo xuống bên trái và chạy dọc đáy."
+  },
+  {
+    "id": "letter-writing::steps.26.hint",
+    "path": "letter-writing/steps[26]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Four strokes: the top bar, the left post, the right post, then the bottom bar.",
+    "th": "สี่เส้น: เส้นบน เสาซ้าย เสาขวา จากนั้นเส้นล่าง",
+    "vi": "Bốn nét: thanh ngang trên, cột trái, cột phải, rồi thanh ngang đáy."
+  },
+  {
+    "id": "letter-writing::steps.26.example_meaning",
+    "path": "letter-writing/steps[26]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "green onion",
+    "th": "ต้นหอม",
+    "vi": "hành lá"
+  },
+  {
+    "id": "letter-writing::steps.27.hint",
+    "path": "letter-writing/steps[27]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Top bar first. Then the two short posts, left before right. Bottom bar last.",
+    "th": "เส้นบนก่อน แล้วเสาสั้นสองต้น ซ้ายก่อนขวา เส้นล่างสุดท้าย",
+    "vi": "Thanh ngang trên trước. Rồi hai cột ngắn, trái trước phải. Thanh ngang đáy sau cùng."
+  },
+  {
+    "id": "letter-writing::steps.28.hint",
+    "path": "letter-writing/steps[28]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 28
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three strokes: the small slanted mark, the bar under it, then the circle.",
+    "th": "สามเส้น: ขีดเอียงเล็ก เส้นขวางใต้ขีดนั้น แล้ววงกลม",
+    "vi": "Ba nét: dấu xiên nhỏ, thanh ngang bên dưới, rồi vòng tròn."
+  },
+  {
+    "id": "letter-writing::steps.28.example_meaning",
+    "path": "letter-writing/steps[28]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 28
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "sky",
+    "th": "ท้องฟ้า",
+    "vi": "bầu trời"
+  },
+  {
+    "id": "letter-writing::steps.29.hint",
+    "path": "letter-writing/steps[29]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 29
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Tick first, then the bar left to right, then the circle underneath.",
+    "th": "ขีดก่อน แล้วเส้นขวางจากซ้ายไปขวา จากนั้นวงกลมด้านล่าง",
+    "vi": "Dấu nhỏ trước, rồi thanh ngang từ trái sang phải, rồi vòng tròn bên dưới."
+  },
+  {
+    "id": "letter-writing::steps.30.hint",
+    "path": "letter-writing/steps[30]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 30
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two strokes: the long vertical line first, then the short tick out to the right.",
+    "th": "สองเส้น: เส้นตั้งยาวก่อน แล้วขีดสั้นยื่นออกไปทางขวา",
+    "vi": "Hai nét: nét dọc dài trước, rồi nét ngắn chìa sang phải."
+  },
+  {
+    "id": "letter-writing::steps.30.example_meaning",
+    "path": "letter-writing/steps[30]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 30
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "person",
+    "th": "คน",
+    "vi": "người"
+  },
+  {
+    "id": "letter-writing::steps.31.hint",
+    "path": "letter-writing/steps[31]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 31
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Draw the vertical from top to bottom. Then the tick, from the line outward to the right.",
+    "th": "ลากเส้นตั้งจากบนลงล่าง แล้วขีดสั้นจากเส้นออกไปทางขวา",
+    "vi": "Vẽ nét dọc từ trên xuống dưới. Rồi nét ngắn, từ đường thẳng chìa ra bên phải."
+  },
+  {
+    "id": "letter-writing::steps.32.hint",
+    "path": "letter-writing/steps[32]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 32
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three strokes: the long vertical first, then the upper tick, then the lower tick.",
+    "th": "สามเส้น: เส้นตั้งยาวก่อน แล้วขีดสั้นด้านบน จากนั้นขีดสั้นด้านล่าง",
+    "vi": "Ba nét: nét dọc dài trước, rồi nét ngắn trên, rồi nét ngắn dưới."
+  },
+  {
+    "id": "letter-writing::steps.32.example_meaning",
+    "path": "letter-writing/steps[32]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 32
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "medicine",
+    "th": "ยา",
+    "vi": "thuốc"
+  },
+  {
+    "id": "letter-writing::steps.33.hint",
+    "path": "letter-writing/steps[33]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 33
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Vertical down first. Then two ticks to the right — the top one before the bottom one.",
+    "th": "เส้นตั้งลงก่อน แล้วขีดสั้นสองขีดไปทางขวา — ขีดบนก่อนขีดล่าง",
+    "vi": "Nét dọc xuống trước. Rồi hai nét ngắn sang phải — nét trên trước nét dưới."
+  },
+  {
+    "id": "letter-writing::steps.34.hint",
+    "path": "letter-writing/steps[34]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 34
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two strokes: tick first, then the vertical. The short mark is on the left, so it goes first.",
+    "th": "สองเส้น: ขีดสั้นก่อน แล้วเส้นตั้ง ขีดสั้นอยู่ทางซ้ายจึงเขียนก่อน",
+    "vi": "Hai nét: nét ngắn trước, rồi nét dọc. Nét ngắn nằm bên trái nên viết trước."
+  },
+  {
+    "id": "letter-writing::steps.34.example_meaning",
+    "path": "letter-writing/steps[34]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 34
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "what",
+    "th": "อะไร",
+    "vi": "cái gì"
+  },
+  {
+    "id": "letter-writing::steps.35.hint",
+    "path": "letter-writing/steps[35]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 35
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Draw the short tick left to right, then the long vertical from top to bottom.",
+    "th": "ลากขีดสั้นจากซ้ายไปขวา แล้วเส้นตั้งยาวจากบนลงล่าง",
+    "vi": "Vẽ nét ngắn từ trái sang phải, rồi nét dọc dài từ trên xuống dưới."
+  },
+  {
+    "id": "letter-writing::steps.36.hint",
+    "path": "letter-writing/steps[36]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 36
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three strokes: the upper tick, the lower tick, then the long vertical on the right.",
+    "th": "สามเส้น: ขีดสั้นบน ขีดสั้นล่าง แล้วเส้นตั้งยาวด้านขวา",
+    "vi": "Ba nét: nét ngắn trên, nét ngắn dưới, rồi nét dọc dài bên phải."
+  },
+  {
+    "id": "letter-writing::steps.36.example_meaning",
+    "path": "letter-writing/steps[36]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 36
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "woman / girl",
+    "th": "ผู้หญิง",
+    "vi": "phụ nữ / con gái"
+  },
+  {
+    "id": "letter-writing::steps.37.hint",
+    "path": "letter-writing/steps[37]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 37
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Both ticks first, top before bottom. Then the vertical down the right-hand side.",
+    "th": "ขีดสั้นสองขีดก่อน บนก่อนล่าง แล้วเส้นตั้งลงตามด้านขวา",
+    "vi": "Hai nét ngắn trước, trên trước dưới. Rồi nét dọc xuống dọc theo bên phải."
+  },
+  {
+    "id": "letter-writing::steps.38.hint",
+    "path": "letter-writing/steps[38]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 38
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two strokes: short vertical first, then the long base underneath it.",
+    "th": "สองเส้น: เส้นตั้งสั้นก่อน แล้วเส้นฐานยาวด้านล่าง",
+    "vi": "Hai nét: nét dọc ngắn trước, rồi nét ngang dài bên dưới."
+  },
+  {
+    "id": "letter-writing::steps.38.example_meaning",
+    "path": "letter-writing/steps[38]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 38
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "thank you",
+    "th": "ขอบคุณ (ไม่เป็นทางการ)",
+    "vi": "cảm ơn (thân mật)"
+  },
+  {
+    "id": "letter-writing::steps.39.hint",
+    "path": "letter-writing/steps[39]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 39
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Start at the top of the short stem and come down. Then the base bar, left to right.",
+    "th": "เริ่มที่ยอดของเส้นตั้งสั้นแล้วลงล่าง จากนั้นเส้นฐานจากซ้ายไปขวา",
+    "vi": "Bắt đầu từ đỉnh nét dọc ngắn và kéo xuống. Rồi thanh ngang đáy, từ trái sang phải."
+  },
+  {
+    "id": "letter-writing::steps.40.hint",
+    "path": "letter-writing/steps[40]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 40
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three strokes: the left stem, the right stem, then the long base bar.",
+    "th": "สามเส้น: เส้นตั้งซ้าย เส้นตั้งขวา แล้วเส้นฐานยาว",
+    "vi": "Ba nét: nét dọc trái, nét dọc phải, rồi thanh ngang đáy dài."
+  },
+  {
+    "id": "letter-writing::steps.40.example_meaning",
+    "path": "letter-writing/steps[40]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 40
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "school",
+    "th": "โรงเรียน",
+    "vi": "trường học"
+  },
+  {
+    "id": "letter-writing::steps.41.hint",
+    "path": "letter-writing/steps[41]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 41
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two short stems, left before right. Then the base bar underneath, left to right.",
+    "th": "เส้นตั้งสั้นสองเส้น ซ้ายก่อนขวา แล้วเส้นฐานด้านล่างจากซ้ายไปขวา",
+    "vi": "Hai nét dọc ngắn, trái trước phải. Rồi thanh ngang đáy bên dưới, từ trái sang phải."
+  },
+  {
+    "id": "letter-writing::steps.42.hint",
+    "path": "letter-writing/steps[42]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 42
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two strokes: bar first, then the hanging vertical below it.",
+    "th": "สองเส้น: เส้นขวางก่อน แล้วเส้นตั้งที่ห้อยลงด้านล่าง",
+    "vi": "Hai nét: thanh ngang trước, rồi nét dọc buông xuống bên dưới."
+  },
+  {
+    "id": "letter-writing::steps.42.example_meaning",
+    "path": "letter-writing/steps[42]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 42
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "water",
+    "th": "น้ำ",
+    "vi": "nước"
+  },
+  {
+    "id": "letter-writing::steps.43.hint",
+    "path": "letter-writing/steps[43]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 43
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Draw the long bar left to right, then the vertical hanging down from its middle.",
+    "th": "ลากเส้นขวางยาวจากซ้ายไปขวา แล้วเส้นตั้งที่ห้อยลงจากตรงกลาง",
+    "vi": "Vẽ thanh ngang dài từ trái sang phải, rồi nét dọc buông xuống từ giữa nó."
+  },
+  {
+    "id": "letter-writing::steps.44.hint",
+    "path": "letter-writing/steps[44]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 44
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three strokes: the long bar first, then the two stems hanging from it, left before right.",
+    "th": "สามเส้น: เส้นขวางยาวก่อน แล้วเส้นตั้งสองเส้นที่ห้อยลงมา ซ้ายก่อนขวา",
+    "vi": "Ba nét: thanh ngang dài trước, rồi hai nét dọc buông xuống từ nó, trái trước phải."
+  },
+  {
+    "id": "letter-writing::steps.44.example_meaning",
+    "path": "letter-writing/steps[44]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 44
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "YouTube",
+    "th": "ยูทูบ",
+    "vi": "YouTube"
+  },
+  {
+    "id": "letter-writing::steps.45.hint",
+    "path": "letter-writing/steps[45]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 45
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Bar first, left to right. Then the left stem down, then the right stem down.",
+    "th": "เส้นขวางก่อนจากซ้ายไปขวา แล้วเส้นตั้งซ้ายลง จากนั้นเส้นตั้งขวาลง",
+    "vi": "Thanh ngang trước, từ trái sang phải. Rồi nét dọc trái xuống, rồi nét dọc phải xuống."
+  },
+  {
+    "id": "letter-writing::steps.46.hint",
+    "path": "letter-writing/steps[46]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 46
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "One single stroke: a horizontal line, drawn left to right.",
+    "th": "เส้นเดียวจบ: เส้นนอน ลากจากซ้ายไปขวา",
+    "vi": "Một nét duy nhất: một đường ngang, vẽ từ trái sang phải."
+  },
+  {
+    "id": "letter-writing::steps.46.example_meaning",
+    "path": "letter-writing/steps[46]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 46
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "sky",
+    "th": "ท้องฟ้า",
+    "vi": "bầu trời"
+  },
+  {
+    "id": "letter-writing::steps.47.hint",
+    "path": "letter-writing/steps[47]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 47
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Start at the left end and draw straight across to the right.",
+    "th": "เริ่มที่ปลายด้านซ้ายแล้วลากตรงไปทางขวา",
+    "vi": "Bắt đầu từ đầu bên trái và kéo thẳng sang phải."
+  },
+  {
+    "id": "letter-writing::steps.48.hint",
+    "path": "letter-writing/steps[48]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 48
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "One single stroke: a vertical line, drawn top to bottom.",
+    "th": "เส้นเดียวจบ: เส้นตั้ง ลากจากบนลงล่าง",
+    "vi": "Một nét duy nhất: một đường dọc, vẽ từ trên xuống dưới."
+  },
+  {
+    "id": "letter-writing::steps.48.example_meaning",
+    "path": "letter-writing/steps[48]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 48
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "friend",
+    "th": "เพื่อน",
+    "vi": "bạn bè"
+  },
+  {
+    "id": "letter-writing::steps.49.hint",
+    "path": "letter-writing/steps[49]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 49
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Start at the top and draw straight down.",
+    "th": "เริ่มที่ด้านบนแล้วลากตรงลงล่าง",
+    "vi": "Bắt đầu từ trên và kéo thẳng xuống."
+  },
+  {
+    "id": "letter-writing::steps.50.hint",
+    "path": "letter-writing/steps[50]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 50
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "The vowel sits to the right, so write ㄱ first, then ㅏ beside it.",
+    "th": "สระอยู่ทางขวา จึงเขียน ㄱ ก่อน แล้วเขียน ㅏ ไว้ข้างๆ",
+    "vi": "Nguyên âm nằm bên phải, nên viết ㄱ trước, rồi ㅏ bên cạnh."
+  },
+  {
+    "id": "letter-writing::steps.50.example_meaning",
+    "path": "letter-writing/steps[50]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 50
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "to go",
+    "th": "ไป",
+    "vi": "đi"
+  },
+  {
+    "id": "letter-writing::steps.51.hint",
+    "path": "letter-writing/steps[51]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 51
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㄱ in the left half. Then ㅏ down the right side — vertical before tick.",
+    "th": "ㄱ อยู่ครึ่งซ้าย แล้ว ㅏ ทางด้านขวา — เส้นตั้งก่อนขีดสั้น",
+    "vi": "ㄱ ở nửa bên trái. Rồi ㅏ dọc bên phải — nét dọc trước nét ngắn."
+  },
+  {
+    "id": "letter-writing::steps.52.hint",
+    "path": "letter-writing/steps[52]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 52
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㅗ sits underneath, so write ㄱ across the top first, then ㅗ below it.",
+    "th": "ㅗ อยู่ด้านล่าง จึงเขียน ㄱ ไว้ด้านบนก่อน แล้ว ㅗ ไว้ด้านล่าง",
+    "vi": "ㅗ nằm bên dưới, nên viết ㄱ ở trên trước, rồi ㅗ bên dưới."
+  },
+  {
+    "id": "letter-writing::steps.52.example_meaning",
+    "path": "letter-writing/steps[52]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 52
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "thank you",
+    "th": "ขอบคุณ (ไม่เป็นทางการ)",
+    "vi": "cảm ơn (thân mật)"
+  },
+  {
+    "id": "letter-writing::steps.53.hint",
+    "path": "letter-writing/steps[53]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 53
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㄱ across the top half. Then ㅗ underneath: short stem, then the base bar.",
+    "th": "ㄱ อยู่ครึ่งบน แล้ว ㅗ ด้านล่าง: เส้นตั้งสั้น แล้วเส้นฐาน",
+    "vi": "ㄱ ở nửa trên. Rồi ㅗ bên dưới: nét dọc ngắn, rồi thanh ngang đáy."
+  },
+  {
+    "id": "letter-writing::steps.54.hint",
+    "path": "letter-writing/steps[54]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 54
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "A two-part vowel. Write ㄱ, then ㅗ under it, then ㅏ down the right.",
+    "th": "สระที่มีสองส่วน เขียน ㄱ แล้ว ㅗ ไว้ด้านล่าง จากนั้น ㅏ ทางด้านขวา",
+    "vi": "Một nguyên âm ghép hai phần. Viết ㄱ, rồi ㅗ bên dưới, rồi ㅏ dọc bên phải."
+  },
+  {
+    "id": "letter-writing::steps.54.example_meaning",
+    "path": "letter-writing/steps[54]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 54
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "fruit",
+    "th": "ผลไม้",
+    "vi": "trái cây / hoa quả"
+  },
+  {
+    "id": "letter-writing::steps.55.hint",
+    "path": "letter-writing/steps[55]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 55
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㄱ top-left, ㅗ below it, then ㅏ down the right-hand side.",
+    "th": "ㄱ มุมบนซ้าย ㅗ อยู่ด้านล่าง แล้ว ㅏ ทางด้านขวา",
+    "vi": "ㄱ ở góc trên bên trái, ㅗ bên dưới, rồi ㅏ dọc bên phải."
+  },
+  {
+    "id": "letter-writing::steps.56.hint",
+    "path": "letter-writing/steps[56]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 56
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Write ㅎ first, then ㅏ, then ㄴ underneath.",
+    "th": "เขียน ㅎ ก่อน แล้ว ㅏ จากนั้น ㄴ ด้านล่าง",
+    "vi": "Viết ㅎ trước, rồi ㅏ, rồi ㄴ bên dưới."
+  },
+  {
+    "id": "letter-writing::steps.56.example_meaning",
+    "path": "letter-writing/steps[56]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 56
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Korea",
+    "th": "เกาหลี",
+    "vi": "Hàn Quốc"
+  },
+  {
+    "id": "letter-writing::steps.57.hint",
+    "path": "letter-writing/steps[57]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 57
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㅎ in the top-left, ㅏ to its right, then ㄴ across the bottom.",
+    "th": "ㅎ มุมบนซ้าย ㅏ ทางขวา แล้ว ㄴ ที่ด้านล่าง",
+    "vi": "ㅎ ở góc trên bên trái, ㅏ bên phải nó, rồi ㄴ chạy dọc phía dưới."
+  },
+  {
+    "id": "letter-writing::steps.58.hint",
+    "path": "letter-writing/steps[58]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 58
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Straight down the block: ㄱ, then ㅗ, then ㅁ as the final consonant.",
+    "th": "ไล่จากบนลงล่างในบล็อก: ㄱ แล้ว ㅗ จากนั้น ㅁ เป็นพยัญชนะสะกด",
+    "vi": "Đi thẳng từ trên xuống trong khối: ㄱ, rồi ㅗ, rồi ㅁ làm phụ âm cuối."
+  },
+  {
+    "id": "letter-writing::steps.58.example_meaning",
+    "path": "letter-writing/steps[58]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 58
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "bear",
+    "th": "หมี",
+    "vi": "con gấu"
+  },
+  {
+    "id": "letter-writing::steps.59.hint",
+    "path": "letter-writing/steps[59]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 59
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㄱ first, ㅗ under it, then ㅁ at the bottom — left side, top and right, then the base.",
+    "th": "ㄱ ก่อน ㅗ อยู่ด้านล่าง แล้ว ㅁ ที่ด้านล่างสุด — ด้านซ้าย ด้านบนและขวา จากนั้นด้านล่าง",
+    "vi": "ㄱ trước, ㅗ bên dưới, rồi ㅁ ở đáy — cạnh trái, cạnh trên và phải, rồi đáy."
+  },
+  {
+    "id": "letter-writing::steps.60.hint",
+    "path": "letter-writing/steps[60]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 60
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Circle first, then the two-part vowel ㅜ and ㅓ, then ㄴ at the bottom.",
+    "th": "วงกลมก่อน แล้วสระสองส่วน ㅜ และ ㅓ จากนั้น ㄴ ที่ด้านล่าง",
+    "vi": "Vòng tròn trước, rồi nguyên âm ghép ㅜ và ㅓ, rồi ㄴ ở đáy."
+  },
+  {
+    "id": "letter-writing::steps.60.example_meaning",
+    "path": "letter-writing/steps[60]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 60
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "won (Korean currency)",
+    "th": "วอน (สกุลเงินเกาหลี)",
+    "vi": "won (tiền Hàn Quốc)"
+  },
+  {
+    "id": "letter-writing::steps.61.hint",
+    "path": "letter-writing/steps[61]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 61
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㅇ top-left. Then ㅜ, then ㅓ to its right, then ㄴ underneath.",
+    "th": "ㅇ มุมบนซ้าย แล้ว ㅜ จากนั้น ㅓ ทางขวา แล้ว ㄴ ด้านล่าง",
+    "vi": "ㅇ ở góc trên bên trái. Rồi ㅜ, rồi ㅓ bên phải nó, rồi ㄴ bên dưới."
+  },
+  {
+    "id": "letter-writing::steps.62.hint",
+    "path": "letter-writing/steps[62]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 62
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㅂ takes 4 strokes, ㅣ takes 1 and the final ㅊ takes 3 — work top-left, then right, then down.",
+    "th": "ㅂ ใช้ 4 เส้น ㅣ ใช้ 1 เส้น และ ㅊ ตัวสะกดใช้ 3 เส้น — เริ่มมุมบนซ้าย แล้วไปขวา จากนั้นลงล่าง",
+    "vi": "ㅂ có 4 nét, ㅣ có 1 và ㅊ cuối có 3 — làm từ góc trên bên trái, rồi sang phải, rồi xuống dưới."
+  },
+  {
+    "id": "letter-writing::steps.62.example_meaning",
+    "path": "letter-writing/steps[62]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 62
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "light",
+    "th": "แสง",
+    "vi": "ánh sáng"
+  },
+  {
+    "id": "letter-writing::steps.63.hint",
+    "path": "letter-writing/steps[63]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 63
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㅂ in the top-left, ㅣ down the right, then ㅊ across the bottom.",
+    "th": "ㅂ มุมบนซ้าย ㅣ ทางด้านขวา แล้ว ㅊ ที่ด้านล่าง",
+    "vi": "ㅂ ở góc trên bên trái, ㅣ dọc bên phải, rồi ㅊ chạy dọc phía dưới."
+  },
+  {
+    "id": "letter-writing::steps.64.hint",
+    "path": "letter-writing/steps[64]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 64
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "The final consonant is a pair: write ㄷ, then ㅏ, then ㄹ and ㄱ side by side at the bottom.",
+    "th": "พยัญชนะสะกดเป็นคู่: เขียน ㄷ แล้ว ㅏ จากนั้น ㄹ และ ㄱ เรียงข้างกันที่ด้านล่าง",
+    "vi": "Phụ âm cuối là một cặp: viết ㄷ, rồi ㅏ, rồi ㄹ và ㄱ cạnh nhau ở đáy."
+  },
+  {
+    "id": "letter-writing::steps.64.example_meaning",
+    "path": "letter-writing/steps[64]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 64
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "chicken",
+    "th": "ไก่",
+    "vi": "con gà"
+  },
+  {
+    "id": "letter-writing::steps.65.hint",
+    "path": "letter-writing/steps[65]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 65
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㄷ first, ㅏ to its right, then the bottom pair — ㄹ on the left, ㄱ on the right.",
+    "th": "ㄷ ก่อน ㅏ ทางขวา แล้วคู่ด้านล่าง — ㄹ ทางซ้าย ㄱ ทางขวา",
+    "vi": "ㄷ trước, ㅏ bên phải nó, rồi cặp ở đáy — ㄹ bên trái, ㄱ bên phải."
+  },
+  {
+    "id": "letter-writing::steps.66.hint",
+    "path": "letter-writing/steps[66]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 66
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㄱ, then ㅏ, then the double final ㅂ and ㅅ, left before right.",
+    "th": "ㄱ แล้ว ㅏ จากนั้นตัวสะกดคู่ ㅂ และ ㅅ ซ้ายก่อนขวา",
+    "vi": "ㄱ, rồi ㅏ, rồi cặp phụ âm cuối đôi ㅂ và ㅅ, trái trước phải."
+  },
+  {
+    "id": "letter-writing::steps.66.example_meaning",
+    "path": "letter-writing/steps[66]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 66
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "price",
+    "th": "ราคา",
+    "vi": "giá cả"
+  },
+  {
+    "id": "letter-writing::steps.67.hint",
+    "path": "letter-writing/steps[67]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 67
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㄱ top-left, ㅏ to its right, then ㅂ and ㅅ side by side along the bottom.",
+    "th": "ㄱ มุมบนซ้าย ㅏ ทางขวา แล้ว ㅂ และ ㅅ เรียงข้างกันตามด้านล่าง",
+    "vi": "ㄱ ở góc trên bên trái, ㅏ bên phải nó, rồi ㅂ và ㅅ cạnh nhau dọc phía dưới."
+  },
+  {
+    "id": "letter-writing::steps.68.hint",
+    "path": "letter-writing/steps[68]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 68
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "The longest block in this lesson: ㅎ, then ㅑ, then ㄹ and ㅎ together at the bottom.",
+    "th": "บล็อกที่ยาวที่สุดในบทเรียนนี้: ㅎ แล้ว ㅑ จากนั้น ㄹ และ ㅎ พร้อมกันที่ด้านล่าง",
+    "vi": "Khối dài nhất trong bài học này: ㅎ, rồi ㅑ, rồi ㄹ và ㅎ cùng nhau ở đáy."
+  },
+  {
+    "id": "letter-writing::steps.68.example_meaning",
+    "path": "letter-writing/steps[68]/example_meaning",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 68
+        }
+      ],
+      "field": "example_meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "a rare syllable — proof that any Korean block can be written the same way",
+    "th": "พยางค์ที่พบได้ยาก — พิสูจน์ว่าบล็อกอักษรเกาหลีทุกตัวเขียนด้วยวิธีเดียวกัน",
+    "vi": "một âm tiết hiếm gặp — bằng chứng rằng mọi khối chữ Hàn đều được viết theo cùng một cách"
+  },
+  {
+    "id": "letter-writing::steps.69.hint",
+    "path": "letter-writing/steps[69]/hint",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 69
+        }
+      ],
+      "field": "hint",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㅎ top-left, ㅑ down the right, then ㄹ and ㅎ side by side at the bottom.",
+    "th": "ㅎ มุมบนซ้าย ㅑ ทางด้านขวา แล้ว ㄹ และ ㅎ เรียงข้างกันที่ด้านล่าง",
+    "vi": "ㅎ ở góc trên bên trái, ㅑ dọc bên phải, rồi ㄹ và ㅎ cạnh nhau ở đáy."
+  },
+  {
+    "id": "letter-writing::steps.70.prompt",
+    "path": "letter-writing/steps[70]/prompt",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 70
+        }
+      ],
+      "field": "prompt",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "How many strokes in ㅊ?",
+    "th": "ㅊ มีกี่เส้น?",
+    "vi": "ㅊ có bao nhiêu nét?"
+  },
+  {
+    "id": "letter-writing::steps.70.choices[0]",
+    "path": "letter-writing/steps[70]/choices[0]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 70
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 0,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "2",
+    "th": "2",
+    "vi": "2"
+  },
+  {
+    "id": "letter-writing::steps.70.choices[1]",
+    "path": "letter-writing/steps[70]/choices[1]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 70
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 1,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "3",
+    "th": "3",
+    "vi": "3"
+  },
+  {
+    "id": "letter-writing::steps.70.choices[2]",
+    "path": "letter-writing/steps[70]/choices[2]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 70
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 2,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "4",
+    "th": "4",
+    "vi": "4"
+  },
+  {
+    "id": "letter-writing::steps.70.choices[3]",
+    "path": "letter-writing/steps[70]/choices[3]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 70
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 3,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "5",
+    "th": "5",
+    "vi": "5"
+  },
+  {
+    "id": "letter-writing::steps.71.prompt",
+    "path": "letter-writing/steps[71]/prompt",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 71
+        }
+      ],
+      "field": "prompt",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Which stroke comes FIRST in ㅏ?",
+    "th": "เส้นใดเขียนก่อนใน ㅏ?",
+    "vi": "Nét nào được viết ĐẦU TIÊN trong ㅏ?"
+  },
+  {
+    "id": "letter-writing::steps.71.choices[0]",
+    "path": "letter-writing/steps[71]/choices[0]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 71
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 0,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "The vertical line",
+    "th": "เส้นตั้ง",
+    "vi": "Nét dọc"
+  },
+  {
+    "id": "letter-writing::steps.71.choices[1]",
+    "path": "letter-writing/steps[71]/choices[1]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 71
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 1,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "The short tick",
+    "th": "ขีดสั้น",
+    "vi": "Nét ngắn"
+  },
+  {
+    "id": "letter-writing::steps.71.choices[2]",
+    "path": "letter-writing/steps[71]/choices[2]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 71
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 2,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Either one",
+    "th": "เส้นใดก็ได้",
+    "vi": "Nét nào cũng được"
+  },
+  {
+    "id": "letter-writing::steps.71.choices[3]",
+    "path": "letter-writing/steps[71]/choices[3]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 71
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 3,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "The bottom bar",
+    "th": "เส้นขวางด้านล่าง",
+    "vi": "Thanh ngang dưới"
+  },
+  {
+    "id": "letter-writing::steps.72.prompt",
+    "path": "letter-writing/steps[72]/prompt",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 72
+        }
+      ],
+      "field": "prompt",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "How many strokes in 한?",
+    "th": "한 มีกี่เส้น?",
+    "vi": "한 có bao nhiêu nét?"
+  },
+  {
+    "id": "letter-writing::steps.72.choices[0]",
+    "path": "letter-writing/steps[72]/choices[0]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 72
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 0,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "5",
+    "th": "5",
+    "vi": "5"
+  },
+  {
+    "id": "letter-writing::steps.72.choices[1]",
+    "path": "letter-writing/steps[72]/choices[1]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 72
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 1,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "6",
+    "th": "6",
+    "vi": "6"
+  },
+  {
+    "id": "letter-writing::steps.72.choices[2]",
+    "path": "letter-writing/steps[72]/choices[2]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 72
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 2,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "7",
+    "th": "7",
+    "vi": "7"
+  },
+  {
+    "id": "letter-writing::steps.72.choices[3]",
+    "path": "letter-writing/steps[72]/choices[3]",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 72
+        }
+      ],
+      "field": "choices",
+      "kind": "arrayEl",
+      "element": 3,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "8",
+    "th": "8",
+    "vi": "8"
+  },
+  {
+    "id": "letter-writing::steps.73.title",
+    "path": "letter-writing/steps[73]/title",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 73
+        }
+      ],
+      "field": "title",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "이제 한글을 쓸 수 있어요!",
+    "en": "You can write Hangul!",
+    "th": "คุณเขียนฮันกึลได้แล้ว!",
+    "vi": "Bạn đã viết được Hangul!"
+  },
+  {
+    "id": "letter-writing::steps.73.message",
+    "path": "letter-writing/steps[73]/message",
+    "loc": {
+      "file": "letter-writing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 73
+        }
+      ],
+      "field": "message",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Brilliant work — you have traced all 24 basic letters and built up to full syllable blocks, right through to 햟. Keep practising with the free-play widget just below this lesson: type any Korean word and watch it written stroke by stroke, or trace it yourself. 화이팅!",
+    "th": "เยี่ยมมาก — คุณได้ลากเส้นครบทั้ง 24 ตัวอักษรพื้นฐาน และต่อยอดไปจนถึงบล็อกพยางค์เต็มรูปแบบ ไปจนถึง 햟 ฝึกต่อได้ด้วยเครื่องมือฝึกอิสระด้านล่างบทเรียนนี้: พิมพ์คำภาษาเกาหลีคำใดก็ได้แล้วดูมันถูกเขียนทีละเส้น หรือจะลากเส้นเองก็ได้ 화이팅!",
+    "vi": "Xuất sắc — bạn đã tô hết cả 24 chữ cái cơ bản và tiến tới những khối âm tiết hoàn chỉnh, cho đến tận 햟. Hãy luyện tập tiếp với công cụ luyện tự do ngay bên dưới bài học này: gõ bất kỳ từ tiếng Hàn nào và xem nó được viết từng nét, hoặc tự mình tô lại. 화이팅!"
+  },
+  {
+    "id": "typing::stages.0.name",
+    "path": "typing/stages[0]/name",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "키보드 소개",
+    "en": "Meet the Keyboard",
+    "th": "รู้จักแป้นพิมพ์",
+    "vi": "Làm quen với bàn phím"
+  },
+  {
+    "id": "typing::stages.1.name",
+    "path": "typing/stages[1]/name",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "자음 키",
+    "en": "Consonant Keys",
+    "th": "ปุ่มพยัญชนะ",
+    "vi": "Phím phụ âm"
+  },
+  {
+    "id": "typing::stages.2.name",
+    "path": "typing/stages[2]/name",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 2
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "모음 키",
+    "en": "Vowel Keys",
+    "th": "ปุ่มสระ",
+    "vi": "Phím nguyên âm"
+  },
+  {
+    "id": "typing::stages.3.name",
+    "path": "typing/stages[3]/name",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 3
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "쌍자음 키",
+    "en": "Shift Keys",
+    "th": "ปุ่ม Shift",
+    "vi": "Phím Shift"
+  },
+  {
+    "id": "typing::stages.4.name",
+    "path": "typing/stages[4]/name",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 4
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "음절 입력",
+    "en": "Type Syllables",
+    "th": "พิมพ์พยางค์",
+    "vi": "Gõ âm tiết"
+  },
+  {
+    "id": "typing::stages.5.name",
+    "path": "typing/stages[5]/name",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "stages"
+        },
+        {
+          "i": 5
+        }
+      ],
+      "field": "name",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "단어 입력",
+    "en": "Type Words",
+    "th": "พิมพ์คำ",
+    "vi": "Gõ từ"
+  },
+  {
+    "id": "typing::steps.0.title",
+    "path": "typing/steps[0]/title",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "title",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "두벌식 자판",
+    "en": "The 2-Set Keyboard (두벌식)",
+    "th": "แป้นพิมพ์แบบสองชุด (두벌식, Dubeolsik)",
+    "vi": "Bàn phím hai bộ (두벌식, Dubeolsik)"
+  },
+  {
+    "id": "typing::steps.0.body",
+    "path": "typing/steps[0]/body",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "body",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Almost everyone in Korea types on the same layout: the 2-set keyboard, called 두벌식 (dubeolsik). It has been the national standard since 1985. \"2-set\" means the letters come in exactly two groups — consonants and vowels — and each group gets its own side of the keyboard. You never type a whole syllable block yourself. You type the letters one at a time, in the order you would say them, and the computer builds the block for you.",
+    "th": "คนเกาหลีเกือบทุกคนพิมพ์ด้วยผังแป้นเดียวกัน นั่นคือแป้นพิมพ์แบบสองชุดที่เรียกว่า 두벌식 (dubeolsik) ซึ่งเป็นมาตรฐานของชาติมาตั้งแต่ปี 1985 คำว่า “สองชุด” หมายถึงตัวอักษรถูกแบ่งออกเป็นสองกลุ่มพอดี — พยัญชนะและสระ — และแต่ละกลุ่มอยู่คนละฝั่งของแป้นพิมพ์ คุณไม่ต้องพิมพ์ทั้งบล็อกพยางค์ด้วยตัวเอง เพียงพิมพ์ตัวอักษรทีละตัวตามลำดับที่คุณออกเสียง แล้วคอมพิวเตอร์จะประกอบบล็อกให้คุณเอง",
+    "vi": "Gần như tất cả mọi người ở Hàn Quốc đều gõ trên cùng một cách bố trí: bàn phím hai bộ, gọi là 두벌식 (dubeolsik). Nó là chuẩn quốc gia từ năm 1985. “Hai bộ” nghĩa là các chữ cái chia thành đúng hai nhóm — phụ âm và nguyên âm — và mỗi nhóm chiếm một bên của bàn phím. Bạn không bao giờ phải tự gõ cả một khối âm tiết. Bạn chỉ gõ từng chữ cái một, theo thứ tự bạn phát âm, và máy tính sẽ ghép khối lại cho bạn."
+  },
+  {
+    "id": "typing::steps.0.rules[0]",
+    "path": "typing/steps[0]/rules[0]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 0,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Consonants sit under your LEFT hand — ㅂ ㅈ ㄷ ㄱ ㅅ on the top row, ㅁ ㄴ ㅇ ㄹ ㅎ on the home row, ㅋ ㅌ ㅊ ㅍ on the bottom row.",
+    "th": "พยัญชนะอยู่ใต้มือซ้ายของคุณ — ㅂ ㅈ ㄷ ㄱ ㅅ อยู่แถวบน, ㅁ ㄴ ㅇ ㄹ ㅎ อยู่แถวหลัก, ㅋ ㅌ ㅊ ㅍ อยู่แถวล่าง",
+    "vi": "Phụ âm nằm dưới tay TRÁI của bạn — ㅂ ㅈ ㄷ ㄱ ㅅ ở hàng trên, ㅁ ㄴ ㅇ ㄹ ㅎ ở hàng cơ sở, ㅋ ㅌ ㅊ ㅍ ở hàng dưới."
+  },
+  {
+    "id": "typing::steps.0.rules[1]",
+    "path": "typing/steps[0]/rules[1]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 1,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Vowels sit under your RIGHT hand — ㅛ ㅕ ㅑ ㅐ ㅔ on the top row, ㅗ ㅓ ㅏ ㅣ on the home row, ㅠ ㅜ ㅡ on the bottom row.",
+    "th": "สระอยู่ใต้มือขวาของคุณ — ㅛ ㅕ ㅑ ㅐ ㅔ อยู่แถวบน, ㅗ ㅓ ㅏ ㅣ อยู่แถวหลัก, ㅠ ㅜ ㅡ อยู่แถวล่าง",
+    "vi": "Nguyên âm nằm dưới tay PHẢI của bạn — ㅛ ㅕ ㅑ ㅐ ㅔ ở hàng trên, ㅗ ㅓ ㅏ ㅣ ở hàng cơ sở, ㅠ ㅜ ㅡ ở hàng dưới."
+  },
+  {
+    "id": "typing::steps.0.rules[2]",
+    "path": "typing/steps[0]/rules[2]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 2,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Shift gives you the doubles — hold Shift and the five tense consonants ㅃ ㅉ ㄸ ㄲ ㅆ appear on ㅂ ㅈ ㄷ ㄱ ㅅ, plus the two wide vowels ㅒ ㅖ on ㅐ ㅔ.",
+    "th": "Shift ให้ตัวอักษรคู่ — กด Shift ค้างไว้ แล้วพยัญชนะเสียงหนักทั้งห้า ㅃ ㅉ ㄸ ㄲ ㅆ จะปรากฏบน ㅂ ㅈ ㄷ ㄱ ㅅ พร้อมสระกว้างสองตัว ㅒ ㅖ บน ㅐ ㅔ",
+    "vi": "Shift cho bạn các chữ đôi — giữ Shift và năm phụ âm căng ㅃ ㅉ ㄸ ㄲ ㅆ hiện lên trên ㅂ ㅈ ㄷ ㄱ ㅅ, cùng hai nguyên âm rộng ㅒ ㅖ trên ㅐ ㅔ."
+  },
+  {
+    "id": "typing::steps.0.rules[3]",
+    "path": "typing/steps[0]/rules[3]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 3,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "That is the whole layout: 26 plain keys and 7 shifted ones. Learn 33 keys and you can write every Korean word there is.",
+    "th": "นั่นคือผังแป้นทั้งหมด: ปุ่มธรรมดา 26 ปุ่มและปุ่มที่ต้องกด Shift อีก 7 ปุ่ม เรียนรู้ 33 ปุ่ม แล้วคุณก็เขียนคำภาษาเกาหลีได้ทุกคำ",
+    "vi": "Đó là toàn bộ cách bố trí: 26 phím thường và 7 phím Shift. Học 33 phím là bạn có thể viết mọi từ tiếng Hàn."
+  },
+  {
+    "id": "typing::steps.0.tip.label",
+    "path": "typing/steps[0]/tip.label",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "label"
+    },
+    "ko": null,
+    "en": "Left hand, right hand",
+    "th": "มือซ้าย มือขวา",
+    "vi": "Tay trái, tay phải"
+  },
+  {
+    "id": "typing::steps.0.tip.text",
+    "path": "typing/steps[0]/tip.text",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "text"
+    },
+    "ko": null,
+    "en": "Because consonants are always on the left and vowels are always on the right, typing Korean turns into a steady left-right-left-right rhythm. Korean syllables are built the same way — consonant, then vowel — so your hands end up copying the shape of the language.",
+    "th": "เพราะพยัญชนะอยู่ทางซ้ายเสมอและสระอยู่ทางขวาเสมอ การพิมพ์ภาษาเกาหลีจึงกลายเป็นจังหวะซ้าย-ขวา-ซ้าย-ขวาที่สม่ำเสมอ พยางค์เกาหลีก็สร้างขึ้นแบบเดียวกัน — พยัญชนะก่อน แล้วจึงสระ — มือของคุณจึงจำลองรูปทรงของภาษานี้ไปในตัว",
+    "vi": "Vì phụ âm luôn ở bên trái và nguyên âm luôn ở bên phải, gõ tiếng Hàn trở thành một nhịp đều trái-phải-trái-phải. Âm tiết tiếng Hàn cũng được dựng theo cách đó — phụ âm rồi tới nguyên âm — nên đôi tay bạn rốt cuộc mô phỏng chính hình dạng của ngôn ngữ."
+  },
+  {
+    "id": "typing::steps.1.title",
+    "path": "typing/steps[1]/title",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "title",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "음절이 만들어지는 방법",
+    "en": "How Syllables Assemble",
+    "th": "พยางค์ประกอบกันอย่างไร",
+    "vi": "Cách âm tiết ghép lại"
+  },
+  {
+    "id": "typing::steps.1.body",
+    "path": "typing/steps[1]/body",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "body",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Korean writing stacks letters into square blocks, but you do not have to draw those blocks. You just type the letters in order and they snap together on their own. Type ㅎ, then ㅏ, then ㄴ, and 한 appears one piece at a time: ㅎ → 하 → 한. Nothing else to press, no menu, no confirm key.",
+    "th": "การเขียนภาษาเกาหลีจะวางตัวอักษรซ้อนกันเป็นบล็อกสี่เหลี่ยม แต่คุณไม่ต้องวาดบล็อกเหล่านั้นเอง เพียงพิมพ์ตัวอักษรตามลำดับ แล้วมันจะประกอบกันเอง พิมพ์ ㅎ แล้ว ㅏ แล้ว ㄴ 한 ก็จะปรากฏทีละส่วน: ㅎ → 하 → 한 ไม่ต้องกดอะไรอีก ไม่มีเมนู ไม่มีปุ่มยืนยัน",
+    "vi": "Chữ viết tiếng Hàn xếp các chữ cái thành khối vuông, nhưng bạn không phải tự vẽ những khối đó. Bạn chỉ gõ các chữ cái theo thứ tự và chúng tự ghép vào nhau. Gõ ㅎ, rồi ㅏ, rồi ㄴ và 한 hiện ra từng phần một: ㅎ → 하 → 한. Không cần bấm gì thêm, không menu, không phím xác nhận."
+  },
+  {
+    "id": "typing::steps.1.rules[0]",
+    "path": "typing/steps[1]/rules[0]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 0,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Type the letters in speaking order: opening consonant, then vowel, then the final consonant (받침) if the syllable has one.",
+    "th": "พิมพ์ตัวอักษรตามลำดับการออกเสียง: พยัญชนะต้น แล้วสระ แล้วพยัญชนะสะกด (받침) หากพยางค์นั้นมี",
+    "vi": "Gõ các chữ cái theo thứ tự phát âm: phụ âm đầu, rồi nguyên âm, rồi phụ âm cuối (받침) nếu âm tiết có."
+  },
+  {
+    "id": "typing::steps.1.rules[1]",
+    "path": "typing/steps[1]/rules[1]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 1,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "A block closes by itself as soon as the next letter cannot fit into it. Type ㄱ ㅏ ㅁ ㅏ and you get 가마, not 감아 — the second ㅏ needs a consonant in front of it, so ㅁ jumps forward to start a new block.",
+    "th": "บล็อกจะปิดตัวเองทันทีที่ตัวอักษรถัดไปใส่เข้าไปไม่ได้ พิมพ์ ㄱ ㅏ ㅁ ㅏ คุณจะได้ 가마 ไม่ใช่ 감아 — สระ ㅏ ตัวที่สองต้องมีพยัญชนะอยู่ข้างหน้า ดังนั้น ㅁ จึงกระโดดไปข้างหน้าเพื่อเริ่มบล็อกใหม่",
+    "vi": "Một khối tự đóng lại ngay khi chữ cái tiếp theo không thể lọt vào. Gõ ㄱ ㅏ ㅁ ㅏ và bạn được 가마, chứ không phải 감아 — chữ ㅏ thứ hai cần một phụ âm đứng trước, nên ㅁ nhảy lên trước để bắt đầu khối mới."
+  },
+  {
+    "id": "typing::steps.1.rules[2]",
+    "path": "typing/steps[1]/rules[2]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 2,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "This jump is called 받침 stealing, and it is exactly what Korean typists rely on. Type ㄱ ㅏ ㄱ ㅅ ㅏ and you get 각사: 가 → 각 → 갃 → 각사, with ㅅ pulled out of the double 받침 the moment the ㅏ arrives.",
+    "th": "การกระโดดนี้เรียกว่า “การขโมย 받침” และเป็นสิ่งที่คนพิมพ์ภาษาเกาหลีพึ่งพาพอดี พิมพ์ ㄱ ㅏ ㄱ ㅅ ㅏ คุณจะได้ 각사: 가 → 각 → 갃 → 각사 โดย ㅅ ถูกดึงออกจาก 받침 คู่ในทันทีที่ ㅏ มาถึง",
+    "vi": "Cú nhảy này gọi là “ăn cắp 받침”, và đó chính là điều người Hàn gõ chữ trông cậy vào. Gõ ㄱ ㅏ ㄱ ㅅ ㅏ và bạn được 각사: 가 → 각 → 갃 → 각사, với ㅅ bị kéo ra khỏi 받침 kép ngay khi ㅏ xuất hiện."
+  },
+  {
+    "id": "typing::steps.1.rules[3]",
+    "path": "typing/steps[1]/rules[3]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 3,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Backspace peels off one letter, not one block. From 각 it goes to 가, then to ㄱ, then to nothing.",
+    "th": "Backspace ลอกออกทีละตัวอักษร ไม่ใช่ทีละบล็อก จาก 각 จะกลายเป็น 가 แล้วเป็น ㄱ แล้วจึงเป็นค่าว่าง",
+    "vi": "Phím Backspace bóc đi một chữ cái, không phải một khối. Từ 각 nó về 가, rồi về ㄱ, rồi về trống không."
+  },
+  {
+    "id": "typing::steps.1.tip.label",
+    "path": "typing/steps[1]/tip.label",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "label"
+    },
+    "ko": null,
+    "en": "Nothing to install",
+    "th": "ไม่ต้องติดตั้งอะไร",
+    "vi": "Không cần cài gì cả"
+  },
+  {
+    "id": "typing::steps.1.tip.text",
+    "path": "typing/steps[1]/tip.text",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "text"
+    },
+    "ko": null,
+    "en": "You do not need a Korean keyboard on your computer or phone to do this lesson. The keyboard on this page does the whole job — press the keys on your own keyboard, or tap the on-screen ones. Step 28 shows you how to add a real Korean keyboard to your devices for everywhere else.",
+    "th": "คุณไม่จำเป็นต้องมีแป้นพิมพ์ภาษาเกาหลีในคอมพิวเตอร์หรือโทรศัพท์เพื่อทำบทเรียนนี้ แป้นพิมพ์บนหน้านี้ทำงานทั้งหมดให้ — กดปุ่มบนแป้นพิมพ์ของคุณเอง หรือแตะปุ่มบนหน้าจอก็ได้ ขั้นที่ 28 จะแสดงวิธีเพิ่มแป้นพิมพ์ภาษาเกาหลีจริงลงในอุปกรณ์ของคุณเพื่อใช้ในที่อื่น ๆ",
+    "vi": "Bạn không cần bàn phím tiếng Hàn trên máy tính hay điện thoại để làm bài học này. Bàn phím trên trang này lo trọn phần việc — hãy nhấn phím trên bàn phím của bạn, hoặc chạm vào các phím trên màn hình. Bước 28 sẽ hướng dẫn bạn thêm một bàn phím tiếng Hàn thật vào thiết bị để dùng ở mọi nơi khác."
+  },
+  {
+    "id": "typing::steps.2.tip",
+    "path": "typing/steps[2]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 2
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Rest your left hand on the home row: A S D F. ㅁ is on A under your little finger, ㄴ is on S under your ring finger. You never have to move your hand for these two.",
+    "th": "วางมือซ้ายบนแถวหลัก: A S D F ㅁ อยู่ที่ A ใต้นิ้วก้อย, ㄴ อยู่ที่ S ใต้นิ้วนาง สองตัวนี้คุณไม่ต้องขยับมือเลย",
+    "vi": "Đặt tay trái lên hàng cơ sở: A S D F. ㅁ ở phím A, dưới ngón út; ㄴ ở phím S, dưới ngón áp út. Với hai chữ này bạn không phải di chuyển tay chút nào."
+  },
+  {
+    "id": "typing::steps.3.tip",
+    "path": "typing/steps[3]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 3
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Keep the same hand position. ㅇ is on D under your middle finger, ㄹ is on F under your index finger — F is the key with the little bump on it, so you can always find it without looking.",
+    "th": "วางมือในตำแหน่งเดิม ㅇ อยู่ที่ D ใต้นิ้วกลาง, ㄹ อยู่ที่ F ใต้นิ้วชี้ — ปุ่ม F มีปุ่มนูนเล็ก ๆ อยู่ คุณจึงหามันเจอได้เสมอโดยไม่ต้องมอง",
+    "vi": "Giữ nguyên vị trí tay. ㅇ ở phím D, dưới ngón giữa; ㄹ ở phím F, dưới ngón trỏ — phím F có một gờ nhỏ, nên bạn luôn tìm được nó mà không cần nhìn."
+  },
+  {
+    "id": "typing::steps.4.tip",
+    "path": "typing/steps[4]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 4
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Both are index-finger keys. ㅎ is on G — stay on the home row and reach one key to the right of F. ㄱ is on R, one row up from F. ㄱ is the single most common consonant in Korean, so it is worth getting comfortable.",
+    "th": "ทั้งคู่เป็นปุ่มของนิ้วชี้ ㅎ อยู่ที่ G — อยู่ที่แถวหลักแล้วเอื้อมไปทางขวาของ F หนึ่งปุ่ม ㄱ อยู่ที่ R เหนือ F หนึ่งแถว ㄱ เป็นพยัญชนะที่ใช้บ่อยที่สุดในภาษาเกาหลี จึงคุ้มค่าที่จะทำให้คล่อง",
+    "vi": "Cả hai đều là phím ngón trỏ. ㅎ ở phím G — cứ ở hàng cơ sở và với sang một phím bên phải F. ㄱ ở phím R, cao hơn F một hàng. ㄱ là phụ âm thông dụng nhất trong tiếng Hàn, nên rất đáng để làm quen cho thật thoải mái."
+  },
+  {
+    "id": "typing::steps.5.tip",
+    "path": "typing/steps[5]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 5
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Move your left hand up one row. ㅂ is on Q, straight above A, under your little finger. ㅈ is on W, straight above S, under your ring finger. Same fingers as ㅁ and ㄴ — just one row higher.",
+    "th": "เลื่อนมือซ้ายขึ้นหนึ่งแถว ㅂ อยู่ที่ Q เหนือ A พอดี ใต้นิ้วก้อย ㅈ อยู่ที่ W เหนือ S พอดี ใต้นิ้วนาง ใช้นิ้วเดียวกับ ㅁ และ ㄴ — แค่สูงขึ้นหนึ่งแถว",
+    "vi": "Đưa tay trái lên một hàng. ㅂ ở phím Q, ngay trên A, dưới ngón út. ㅈ ở phím W, ngay trên S, dưới ngón áp út. Cùng những ngón như ㅁ và ㄴ — chỉ cao hơn một hàng."
+  },
+  {
+    "id": "typing::steps.6.tip",
+    "path": "typing/steps[6]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 6
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Still the top row. ㄷ is on E, above D, under your middle finger. ㅅ is on T — an index-finger stretch up and to the right, above G. ㅅ is very common as a 받침, so it will come up a lot.",
+    "th": "ยังอยู่แถวบน ㄷ อยู่ที่ E เหนือ D ใต้นิ้วกลาง ㅅ อยู่ที่ T — นิ้วชี้เอื้อมขึ้นไปทางขวาบน เหนือ G ㅅ เป็น 받침 ที่พบบ่อยมาก จึงจะโผล่มาอยู่เรื่อย ๆ",
+    "vi": "Vẫn ở hàng trên. ㄷ ở phím E, trên D, dưới ngón giữa. ㅅ ở phím T — ngón trỏ vươn lên trên và sang phải, trên G. ㅅ rất hay làm 받침, nên nó sẽ xuất hiện nhiều."
+  },
+  {
+    "id": "typing::steps.7.tip",
+    "path": "typing/steps[7]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 7
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Drop your left hand one row below home. ㅋ is on Z, under your little finger, and ㅌ is on X, under your ring finger. These are the breathy pair of ㄱ and ㄷ, and they sit in the least-used corner because Korean uses them less often.",
+    "th": "ลดมือซ้ายลงหนึ่งแถวใต้แถวหลัก ㅋ อยู่ที่ Z ใต้นิ้วก้อย และ ㅌ อยู่ที่ X ใต้นิ้วนาง ทั้งคู่เป็นเสียงพ่นลมคู่ของ ㄱ และ ㄷ และอยู่ในมุมที่ใช้น้อยที่สุดเพราะภาษาเกาหลีใช้มันน้อยกว่า",
+    "vi": "Hạ tay trái xuống một hàng dưới hàng cơ sở. ㅋ ở phím Z, dưới ngón út, còn ㅌ ở phím X, dưới ngón áp út. Đây là cặp bật hơi của ㄱ và ㄷ, và chúng nằm ở góc ít dùng nhất vì tiếng Hàn dùng chúng ít hơn."
+  },
+  {
+    "id": "typing::steps.8.tip",
+    "path": "typing/steps[8]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 8
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Same bottom row. ㅊ is on C, under your middle finger, and ㅍ is on V, under your index finger. That is all 14 basic consonants: three rows, left hand only.",
+    "th": "แถวล่างเดิม ㅊ อยู่ที่ C ใต้นิ้วกลาง และ ㅍ อยู่ที่ V ใต้นิ้วชี้ นั่นครบพยัญชนะพื้นฐานทั้ง 14 ตัว: สามแถว ใช้มือซ้ายอย่างเดียว",
+    "vi": "Vẫn hàng dưới. ㅊ ở phím C, dưới ngón giữa, còn ㅍ ở phím V, dưới ngón trỏ. Vậy là đủ cả 14 phụ âm cơ bản: ba hàng, chỉ dùng tay trái."
+  },
+  {
+    "id": "typing::steps.9.tip",
+    "path": "typing/steps[9]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 9
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Now the right hand. Rest it on J K L and reach. ㅗ is on H, an index-finger stretch to the left. ㅓ is on J, the home key right under your index finger — J has a bump on it too.",
+    "th": "ตอนนี้ถึงมือขวา วางไว้บน J K L แล้วเอื้อม ㅗ อยู่ที่ H ให้นิ้วชี้เอื้อมไปทางซ้าย ㅓ อยู่ที่ J ปุ่มหลักที่อยู่ใต้นิ้วชี้พอดี — ปุ่ม J ก็มีปุ่มนูนเช่นกัน",
+    "vi": "Bây giờ đến tay phải. Đặt nó lên J K L rồi vươn tay. ㅗ ở phím H, ngón trỏ vươn sang trái. ㅓ ở phím J, phím cơ sở ngay dưới ngón trỏ — phím J cũng có một gờ nhỏ."
+  },
+  {
+    "id": "typing::steps.10.tip",
+    "path": "typing/steps[10]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 10
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "These two never move. ㅏ is on K under your middle finger and ㅣ is on L under your ring finger. ㅏ is the most common vowel in Korean, and it is already sitting under a resting finger.",
+    "th": "สองตัวนี้ไม่ต้องขยับเลย ㅏ อยู่ที่ K ใต้นิ้วกลาง และ ㅣ อยู่ที่ L ใต้นิ้วนาง ㅏ เป็นสระที่ใช้บ่อยที่สุดในภาษาเกาหลี และมันก็อยู่ใต้นิ้วที่พักอยู่แล้วพอดี",
+    "vi": "Hai chữ này không bao giờ di chuyển. ㅏ ở phím K dưới ngón giữa và ㅣ ở phím L dưới ngón áp út. ㅏ là nguyên âm thông dụng nhất tiếng Hàn, và nó đã nằm sẵn dưới một ngón đang nghỉ."
+  },
+  {
+    "id": "typing::steps.11.tip",
+    "path": "typing/steps[11]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 11
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Move your right hand up one row. Both are index-finger keys: ㅛ is on Y, a stretch up and to the left, and ㅕ is on U, straight above J. Notice the pattern — the y-vowels ㅛ ㅕ sit one row above their plain partners ㅗ ㅓ.",
+    "th": "เลื่อนมือขวาขึ้นหนึ่งแถว ทั้งคู่เป็นปุ่มของนิ้วชี้: ㅛ อยู่ที่ Y เอื้อมขึ้นไปทางซ้ายบน และ ㅕ อยู่ที่ U เหนือ J พอดี สังเกตรูปแบบ — สระเสียง y อย่าง ㅛ ㅕ อยู่เหนือคู่พื้นฐาน ㅗ ㅓ ของมันหนึ่งแถว",
+    "vi": "Đưa tay phải lên một hàng. Cả hai đều là phím ngón trỏ: ㅛ ở phím Y, vươn lên trên và sang trái, còn ㅕ ở phím U, ngay trên J. Để ý quy luật — các nguyên âm y ㅛ ㅕ nằm cao hơn một hàng so với cặp đơn ㅗ ㅓ của chúng."
+  },
+  {
+    "id": "typing::steps.12.tip",
+    "path": "typing/steps[12]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 12
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Still the top row. ㅑ is on I, straight above K, under your middle finger — again one row above its plain partner ㅏ. ㅐ is on O, under your ring finger.",
+    "th": "ยังอยู่แถวบน ㅑ อยู่ที่ I เหนือ K พอดี ใต้นิ้วกลาง — อยู่เหนือคู่พื้นฐาน ㅏ ของมันหนึ่งแถวอีกเช่นกัน ㅐ อยู่ที่ O ใต้นิ้วนาง",
+    "vi": "Vẫn hàng trên. ㅑ ở phím I, ngay trên K, dưới ngón giữa — lại cao hơn một hàng so với cặp đơn ㅏ của nó. ㅐ ở phím O, dưới ngón áp út."
+  },
+  {
+    "id": "typing::steps.13.tip",
+    "path": "typing/steps[13]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 13
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㅔ is on P, the top-row key under your right little finger — the furthest vowel from home. ㅐ and ㅔ sound almost the same in modern Korean, and they sit side by side on O and P, so learn them as a pair.",
+    "th": "ㅔ อยู่ที่ P ปุ่มแถวบนใต้นิ้วก้อยขวา — เป็นสระที่อยู่ไกลจากแถวหลักที่สุด ในภาษาเกาหลีปัจจุบัน ㅐ และ ㅔ ออกเสียงเกือบเหมือนกัน และอยู่ติดกันบน O และ P จึงควรจำเป็นคู่",
+    "vi": "ㅔ ở phím P, phím hàng trên dưới ngón út phải — nguyên âm xa hàng cơ sở nhất. Trong tiếng Hàn hiện đại, ㅐ và ㅔ nghe gần như giống nhau, và chúng nằm cạnh nhau trên O và P, nên hãy học chúng thành một cặp."
+  },
+  {
+    "id": "typing::steps.14.tip",
+    "path": "typing/steps[14]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 14
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three keys in a row along the bottom: ㅠ on B, ㅜ on N, ㅡ on M. B is a stretch for your LEFT index finger, while N and M sit under your right index. ㅡ on M matters more than it looks — it is the vowel inside 은, 는, 를 and most other grammar endings.",
+    "th": "สามปุ่มเรียงกันตามแถวล่าง: ㅠ ที่ B, ㅜ ที่ N, ㅡ ที่ M B ต้องให้นิ้วชี้ซ้ายเอื้อมไป ส่วน N และ M อยู่ใต้นิ้วชี้ขวา ㅡ ที่ M สำคัญกว่าที่เห็น — เป็นสระที่อยู่ใน 은, 는, 를 และท้ายไวยากรณ์อื่น ๆ ส่วนใหญ่",
+    "vi": "Ba phím liền nhau ở hàng dưới: ㅠ ở B, ㅜ ở N, ㅡ ở M. B là chỗ vươn của ngón trỏ TRÁI, còn N và M nằm dưới ngón trỏ phải. Chữ ㅡ ở M quan trọng hơn vẻ ngoài của nó — đó là nguyên âm nằm trong 은, 는, 를 và hầu hết các đuôi ngữ pháp khác."
+  },
+  {
+    "id": "typing::steps.15.tip",
+    "path": "typing/steps[15]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 15
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "The five tense consonants are the plain keys with Shift held down. ㅃ is Shift + Q (where ㅂ lives) and ㅉ is Shift + W (where ㅈ lives). Because both are left-hand keys, hold the Shift on the RIGHT with your right little finger while your left hand types — the keyboard highlights which Shift to use. On a touchscreen, tap ⇧ first — it stays down for exactly one key.",
+    "th": "พยัญชนะเสียงหนักทั้งห้าคือปุ่มธรรมดาที่กด Shift ค้างไว้ ㅃ คือ Shift + Q (ที่ ㅂ อยู่) และ ㅉ คือ Shift + W (ที่ ㅈ อยู่) เพราะทั้งคู่เป็นปุ่มมือซ้าย ให้กด Shift ฝั่งขวาค้างด้วยนิ้วก้อยขวาขณะที่มือซ้ายพิมพ์ — แป้นพิมพ์จะเน้นว่าควรใช้ Shift ตัวไหน บนหน้าจอสัมผัส ให้แตะ ⇧ ก่อน — มันจะค้างไว้พอดีหนึ่งปุ่ม",
+    "vi": "Năm phụ âm căng chính là các phím thường khi giữ Shift. ㅃ là Shift + Q (nơi có ㅂ) và ㅉ là Shift + W (nơi có ㅈ). Vì cả hai đều là phím tay trái, hãy giữ phím Shift bên PHẢI bằng ngón út phải trong khi tay trái gõ — bàn phím sẽ làm nổi bật phím Shift cần dùng. Trên màn hình cảm ứng, chạm ⇧ trước — nó giữ trạng thái nhấn cho đúng một phím."
+  },
+  {
+    "id": "typing::steps.16.tip",
+    "path": "typing/steps[16]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 16
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Same rule, three more keys: ㄸ is Shift + E, ㄲ is Shift + R, ㅆ is Shift + T — all left-hand keys, so again hold the RIGHT Shift with your right little finger. These three turn up constantly — 진짜, 꼭, 있어요 — so the Shift reflex is worth drilling now.",
+    "th": "กฎเดิม เพิ่มอีกสามปุ่ม: ㄸ คือ Shift + E, ㄲ คือ Shift + R, ㅆ คือ Shift + T — ล้วนเป็นปุ่มมือซ้าย จึงกด Shift ฝั่งขวาค้างด้วยนิ้วก้อยขวาอีกครั้ง สามตัวนี้โผล่มาตลอด — 진짜, 꼭, 있어요 — จึงคุ้มที่จะฝึกรีเฟล็กซ์ Shift ตั้งแต่ตอนนี้",
+    "vi": "Cùng quy tắc, thêm ba phím: ㄸ là Shift + E, ㄲ là Shift + R, ㅆ là Shift + T — đều là phím tay trái, nên lại giữ phím Shift bên PHẢI bằng ngón út phải. Ba chữ này xuất hiện liên tục — 진짜, 꼭, 있어요 — nên rất đáng luyện phản xạ Shift ngay bây giờ."
+  },
+  {
+    "id": "typing::steps.17.tip",
+    "path": "typing/steps[17]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 17
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Shift works on the vowel side too, but only on two keys: ㅒ is Shift + O (above ㅐ) and ㅖ is Shift + P (above ㅔ). These are right-hand keys, so this time use the LEFT Shift with your left little finger — always the hand opposite the letter. Every other vowel you will ever need is either a plain key or two plain keys typed one after the other.",
+    "th": "Shift ใช้ได้กับฝั่งสระเช่นกัน แต่มีแค่สองปุ่ม: ㅒ คือ Shift + O (เหนือ ㅐ) และ ㅖ คือ Shift + P (เหนือ ㅔ) ปุ่มเหล่านี้เป็นปุ่มมือขวา คราวนี้จึงใช้ Shift ฝั่งซ้ายด้วยนิ้วก้อยซ้าย — ใช้มือฝั่งตรงข้ามกับตัวอักษรเสมอ สระอื่น ๆ ที่คุณจะต้องใช้ ล้วนเป็นปุ่มธรรมดาหนึ่งปุ่ม หรือปุ่มธรรมดาสองปุ่มพิมพ์ต่อกัน",
+    "vi": "Shift cũng hoạt động ở phía nguyên âm, nhưng chỉ trên hai phím: ㅒ là Shift + O (trên ㅐ) và ㅖ là Shift + P (trên ㅔ). Đây là phím tay phải, nên lần này dùng phím Shift bên TRÁI bằng ngón út trái — luôn là tay đối diện với chữ. Mọi nguyên âm khác bạn cần đều hoặc là một phím thường, hoặc là hai phím thường gõ nối tiếp nhau."
+  },
+  {
+    "id": "typing::steps.18.tip",
+    "path": "typing/steps[18]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 18
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Go for accuracy, not speed. Slow and correct builds the habit; fast and wrong builds a habit you will have to unlearn. The speed comes on its own once your fingers stop hunting.",
+    "th": "มุ่งความแม่นยำ ไม่ใช่ความเร็ว ช้าแต่ถูกสร้างนิสัยที่ดี เร็วแต่ผิดสร้างนิสัยที่คุณต้องมาแก้ทีหลัง ความเร็วจะมาเอง เมื่อนิ้วของคุณเลิกไล่หาปุ่ม",
+    "vi": "Hãy nhắm tới độ chính xác, không phải tốc độ. Chậm mà đúng sẽ tạo thói quen; nhanh mà sai tạo thói quen bạn sẽ phải bỏ đi. Tốc độ tự đến khi ngón tay bạn thôi dò dẫm."
+  },
+  {
+    "id": "typing::steps.19.tip",
+    "path": "typing/steps[19]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 19
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Every one of these is under your right hand. If you find yourself looking down, try naming the finger before you press — index, middle, ring, little.",
+    "th": "ทั้งหมดนี้อยู่ใต้มือขวาของคุณ ถ้าเผลอก้มมองแป้น ลองเรียกชื่อนิ้วก่อนกด — นิ้วชี้ นิ้วกลาง นิ้วนาง นิ้วก้อย",
+    "vi": "Tất cả những phím này đều nằm dưới tay phải của bạn. Nếu thấy mình cứ nhìn xuống, hãy thử gọi tên ngón tay trước khi nhấn — ngón trỏ, ngón giữa, ngón áp út, ngón út."
+  },
+  {
+    "id": "typing::steps.20.tip",
+    "path": "typing/steps[20]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 20
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Two keystrokes each, and every one of them is left hand then right hand. There is no key to press to \"finish\" the block — the moment the vowel lands, the syllable is done and the drill moves on.",
+    "th": "แต่ละพยางค์กดสองครั้ง และทุกครั้งเป็นมือซ้ายแล้วมือขวา ไม่มีปุ่มไหนที่ต้องกดเพื่อ “ปิด” บล็อก — พอสระลงตำแหน่ง พยางค์ก็เสร็จ และแบบฝึกก็ไปตัวถัดไป",
+    "vi": "Mỗi âm hai lần gõ, và lần nào cũng tay trái rồi tay phải. Không có phím nào để bấm cho “xong” khối — ngay khi nguyên âm rơi vào, âm tiết hoàn tất và bài luyện chuyển tiếp."
+  },
+  {
+    "id": "typing::steps.21.tip",
+    "path": "typing/steps[21]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 21
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Three keystrokes each: left, right, left. Watch the block change shape as the third letter drops into place — 하 becomes 한 the instant you press ㄴ.",
+    "th": "แต่ละพยางค์กดสามครั้ง: ซ้าย ขวา ซ้าย ดูบล็อกเปลี่ยนรูปเมื่อตัวอักษรที่สามลงตำแหน่ง — 하 กลายเป็น 한 ทันทีที่คุณกด ㄴ",
+    "vi": "Mỗi âm ba lần gõ: trái, phải, trái. Hãy nhìn khối đổi hình khi chữ thứ ba rơi vào chỗ — 하 thành 한 ngay khoảnh khắc bạn nhấn ㄴ."
+  },
+  {
+    "id": "typing::steps.22.tip",
+    "path": "typing/steps[22]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 22
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "ㅘ has no key of its own — you type ㅗ then ㅏ and the two merge. Same idea for ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) and ㅟ (ㅜ + ㅣ). Only ㅐ ㅔ ㅒ ㅖ have their own keys.",
+    "th": "ㅘ ไม่มีปุ่มของตัวเอง — คุณพิมพ์ ㅗ แล้ว ㅏ สองตัวก็รวมกัน หลักการเดียวกันกับ ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) และ ㅟ (ㅜ + ㅣ) มีแค่ ㅐ ㅔ ㅒ ㅖ ที่มีปุ่มของตัวเอง",
+    "vi": "ㅘ không có phím riêng — bạn gõ ㅗ rồi ㅏ và hai chữ hòa vào nhau. Tương tự với ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) và ㅟ (ㅜ + ㅣ). Chỉ ㅐ ㅔ ㅒ ㅖ mới có phím riêng."
+  },
+  {
+    "id": "typing::steps.23.items.0.meaning",
+    "path": "typing/steps[23]/items[0]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "water",
+    "th": "น้ำ",
+    "vi": "nước"
+  },
+  {
+    "id": "typing::steps.23.items.1.meaning",
+    "path": "typing/steps[23]/items[1]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "rice, a meal",
+    "th": "ข้าว / อาหาร",
+    "vi": "cơm / bữa ăn"
+  },
+  {
+    "id": "typing::steps.23.items.2.meaning",
+    "path": "typing/steps[23]/items[2]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 2
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "house",
+    "th": "บ้าน",
+    "vi": "nhà"
+  },
+  {
+    "id": "typing::steps.23.items.3.meaning",
+    "path": "typing/steps[23]/items[3]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 3
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "nose",
+    "th": "จมูก",
+    "vi": "mũi"
+  },
+  {
+    "id": "typing::steps.23.items.4.meaning",
+    "path": "typing/steps[23]/items[4]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 4
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "hand",
+    "th": "มือ",
+    "vi": "bàn tay"
+  },
+  {
+    "id": "typing::steps.23.items.5.meaning",
+    "path": "typing/steps[23]/items[5]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 5
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "eye, snow",
+    "th": "ตา / หิมะ",
+    "vi": "mắt / tuyết"
+  },
+  {
+    "id": "typing::steps.23.items.6.meaning",
+    "path": "typing/steps[23]/items[6]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 6
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "money",
+    "th": "เงิน",
+    "vi": "tiền"
+  },
+  {
+    "id": "typing::steps.23.items.7.meaning",
+    "path": "typing/steps[23]/items[7]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 7
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "book",
+    "th": "หนังสือ",
+    "vi": "sách"
+  },
+  {
+    "id": "typing::steps.23.items.8.meaning",
+    "path": "typing/steps[23]/items[8]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 8
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "foot",
+    "th": "เท้า",
+    "vi": "bàn chân"
+  },
+  {
+    "id": "typing::steps.23.tip",
+    "path": "typing/steps[23]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 23
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Word mode is different from the syllable drill: nothing advances until you press Space. That is your submit key. If you mistype, Backspace peels off one letter at a time so you can fix it before you send.",
+    "th": "โหมดคำต่างจากแบบฝึกพยางค์: จะไม่มีอะไรเดินหน้าจนกว่าคุณจะกด Space นั่นคือปุ่มส่งของคุณ ถ้าพิมพ์ผิด Backspace จะลอกออกทีละตัวอักษร ให้คุณแก้ได้ก่อนส่ง",
+    "vi": "Chế độ từ khác với bài luyện âm tiết: không có gì tiến tới cho đến khi bạn nhấn Phím cách. Đó là phím gửi của bạn. Nếu gõ sai, Backspace bóc từng chữ cái một để bạn sửa trước khi gửi."
+  },
+  {
+    "id": "typing::steps.24.items.0.meaning",
+    "path": "typing/steps[24]/items[0]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Korea",
+    "th": "เกาหลี",
+    "vi": "Hàn Quốc"
+  },
+  {
+    "id": "typing::steps.24.items.1.meaning",
+    "path": "typing/steps[24]/items[1]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "love",
+    "th": "ความรัก",
+    "vi": "tình yêu"
+  },
+  {
+    "id": "typing::steps.24.items.2.meaning",
+    "path": "typing/steps[24]/items[2]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 2
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "friend",
+    "th": "เพื่อน",
+    "vi": "bạn bè"
+  },
+  {
+    "id": "typing::steps.24.items.3.meaning",
+    "path": "typing/steps[24]/items[3]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 3
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "kimchi",
+    "th": "กิมจิ",
+    "vi": "kimchi"
+  },
+  {
+    "id": "typing::steps.24.items.4.meaning",
+    "path": "typing/steps[24]/items[4]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 4
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "family",
+    "th": "ครอบครัว",
+    "vi": "gia đình"
+  },
+  {
+    "id": "typing::steps.24.items.5.meaning",
+    "path": "typing/steps[24]/items[5]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 5
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "person",
+    "th": "คน",
+    "vi": "người"
+  },
+  {
+    "id": "typing::steps.24.items.6.meaning",
+    "path": "typing/steps[24]/items[6]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 6
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "school",
+    "th": "โรงเรียน",
+    "vi": "trường học"
+  },
+  {
+    "id": "typing::steps.24.items.7.meaning",
+    "path": "typing/steps[24]/items[7]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 7
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "coffee",
+    "th": "กาแฟ",
+    "vi": "cà phê"
+  },
+  {
+    "id": "typing::steps.24.tip",
+    "path": "typing/steps[24]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 24
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Keep typing straight through the word — do not pause between the syllables. 한국 is six keystrokes in one run: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ. The blocks divide themselves.",
+    "th": "พิมพ์รวดเดียวจนจบคำ — อย่าหยุดระหว่างพยางค์ 한국 คือหกครั้งรวดเดียว: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ บล็อกจะแบ่งตัวเอง",
+    "vi": "Cứ gõ một mạch hết từ — đừng ngừng giữa các âm tiết. 한국 là sáu lần gõ liền một hơi: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ. Các khối tự tách ra."
+  },
+  {
+    "id": "typing::steps.25.items.0.meaning",
+    "path": "typing/steps[25]/items[0]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 25
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "hello",
+    "th": "สวัสดี",
+    "vi": "xin chào"
+  },
+  {
+    "id": "typing::steps.25.items.1.meaning",
+    "path": "typing/steps[25]/items[1]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 25
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "thank you",
+    "th": "ขอบคุณ",
+    "vi": "cảm ơn"
+  },
+  {
+    "id": "typing::steps.25.items.2.meaning",
+    "path": "typing/steps[25]/items[2]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 25
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 2
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "it's okay",
+    "th": "ไม่เป็นไร",
+    "vi": "không sao"
+  },
+  {
+    "id": "typing::steps.25.items.3.meaning",
+    "path": "typing/steps[25]/items[3]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 25
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 3
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "nice to meet you",
+    "th": "ยินดีที่ได้รู้จัก",
+    "vi": "rất vui được gặp"
+  },
+  {
+    "id": "typing::steps.25.tip",
+    "path": "typing/steps[25]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 25
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "These are the polite phrases you will type most often in Korean, so they are worth turning into muscle memory. Take them one syllable at a time and let the blocks build; there is no prize for rushing.",
+    "th": "เหล่านี้คือวลีสุภาพที่คุณจะพิมพ์บ่อยที่สุดในภาษาเกาหลี จึงคุ้มที่จะฝึกให้เป็นความจำของกล้ามเนื้อ ค่อย ๆ ทีละพยางค์แล้วปล่อยให้บล็อกก่อตัว รีบไปก็ไม่มีรางวัล",
+    "vi": "Đây là những câu lịch sự bạn sẽ gõ nhiều nhất trong tiếng Hàn, nên rất đáng để biến thành phản xạ cơ bắp. Hãy đi từng âm tiết một và để các khối tự dựng; vội vàng chẳng có phần thưởng nào."
+  },
+  {
+    "id": "typing::steps.26.items.0.meaning",
+    "path": "typing/steps[26]/items[0]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 0
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "water",
+    "th": "น้ำ",
+    "vi": "nước"
+  },
+  {
+    "id": "typing::steps.26.items.1.meaning",
+    "path": "typing/steps[26]/items[1]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 1
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "school",
+    "th": "โรงเรียน",
+    "vi": "trường học"
+  },
+  {
+    "id": "typing::steps.26.items.2.meaning",
+    "path": "typing/steps[26]/items[2]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 2
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "rice, a meal",
+    "th": "ข้าว / อาหาร",
+    "vi": "cơm / bữa ăn"
+  },
+  {
+    "id": "typing::steps.26.items.3.meaning",
+    "path": "typing/steps[26]/items[3]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 3
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "love",
+    "th": "ความรัก",
+    "vi": "tình yêu"
+  },
+  {
+    "id": "typing::steps.26.items.4.meaning",
+    "path": "typing/steps[26]/items[4]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 4
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "house",
+    "th": "บ้าน",
+    "vi": "nhà"
+  },
+  {
+    "id": "typing::steps.26.items.5.meaning",
+    "path": "typing/steps[26]/items[5]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 5
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "friend",
+    "th": "เพื่อน",
+    "vi": "bạn bè"
+  },
+  {
+    "id": "typing::steps.26.items.6.meaning",
+    "path": "typing/steps[26]/items[6]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 6
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "nose",
+    "th": "จมูก",
+    "vi": "mũi"
+  },
+  {
+    "id": "typing::steps.26.items.7.meaning",
+    "path": "typing/steps[26]/items[7]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 7
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "kimchi",
+    "th": "กิมจิ",
+    "vi": "kimchi"
+  },
+  {
+    "id": "typing::steps.26.items.8.meaning",
+    "path": "typing/steps[26]/items[8]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 8
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Korea",
+    "th": "เกาหลี",
+    "vi": "Hàn Quốc"
+  },
+  {
+    "id": "typing::steps.26.items.9.meaning",
+    "path": "typing/steps[26]/items[9]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 9
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "hand",
+    "th": "มือ",
+    "vi": "bàn tay"
+  },
+  {
+    "id": "typing::steps.26.items.10.meaning",
+    "path": "typing/steps[26]/items[10]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 10
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "family",
+    "th": "ครอบครัว",
+    "vi": "gia đình"
+  },
+  {
+    "id": "typing::steps.26.items.11.meaning",
+    "path": "typing/steps[26]/items[11]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 11
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "sea",
+    "th": "ทะเล / มหาสมุทร",
+    "vi": "biển / đại dương"
+  },
+  {
+    "id": "typing::steps.26.items.12.meaning",
+    "path": "typing/steps[26]/items[12]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 12
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "money",
+    "th": "เงิน",
+    "vi": "tiền"
+  },
+  {
+    "id": "typing::steps.26.items.13.meaning",
+    "path": "typing/steps[26]/items[13]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 13
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "today",
+    "th": "วันนี้",
+    "vi": "hôm nay"
+  },
+  {
+    "id": "typing::steps.26.items.14.meaning",
+    "path": "typing/steps[26]/items[14]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 14
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "person",
+    "th": "คน",
+    "vi": "người"
+  },
+  {
+    "id": "typing::steps.26.items.15.meaning",
+    "path": "typing/steps[26]/items[15]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 15
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "book",
+    "th": "หนังสือ",
+    "vi": "sách"
+  },
+  {
+    "id": "typing::steps.26.items.16.meaning",
+    "path": "typing/steps[26]/items[16]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 16
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "coffee",
+    "th": "กาแฟ",
+    "vi": "cà phê"
+  },
+  {
+    "id": "typing::steps.26.items.17.meaning",
+    "path": "typing/steps[26]/items[17]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 17
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "sky",
+    "th": "ท้องฟ้า",
+    "vi": "bầu trời"
+  },
+  {
+    "id": "typing::steps.26.items.18.meaning",
+    "path": "typing/steps[26]/items[18]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 18
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "eye, snow",
+    "th": "ตา / หิมะ",
+    "vi": "mắt / tuyết"
+  },
+  {
+    "id": "typing::steps.26.items.19.meaning",
+    "path": "typing/steps[26]/items[19]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 19
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "bag",
+    "th": "กระเป๋า",
+    "vi": "túi / ba lô"
+  },
+  {
+    "id": "typing::steps.26.items.20.meaning",
+    "path": "typing/steps[26]/items[20]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 20
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "woman",
+    "th": "ผู้หญิง",
+    "vi": "phụ nữ"
+  },
+  {
+    "id": "typing::steps.26.items.21.meaning",
+    "path": "typing/steps[26]/items[21]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 21
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "man",
+    "th": "ผู้ชาย",
+    "vi": "đàn ông"
+  },
+  {
+    "id": "typing::steps.26.items.22.meaning",
+    "path": "typing/steps[26]/items[22]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 22
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "market",
+    "th": "ตลาด",
+    "vi": "chợ"
+  },
+  {
+    "id": "typing::steps.26.items.23.meaning",
+    "path": "typing/steps[26]/items[23]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 23
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "foot",
+    "th": "เท้า",
+    "vi": "bàn chân"
+  },
+  {
+    "id": "typing::steps.26.items.24.meaning",
+    "path": "typing/steps[26]/items[24]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 24
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "mom",
+    "th": "แม่",
+    "vi": "mẹ"
+  },
+  {
+    "id": "typing::steps.26.items.25.meaning",
+    "path": "typing/steps[26]/items[25]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 25
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "dad",
+    "th": "พ่อ",
+    "vi": "bố"
+  },
+  {
+    "id": "typing::steps.26.items.26.meaning",
+    "path": "typing/steps[26]/items[26]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 26
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "student",
+    "th": "นักเรียน",
+    "vi": "học sinh"
+  },
+  {
+    "id": "typing::steps.26.items.27.meaning",
+    "path": "typing/steps[26]/items[27]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "head",
+    "th": "หัว / ผม",
+    "vi": "đầu / tóc"
+  },
+  {
+    "id": "typing::steps.26.items.28.meaning",
+    "path": "typing/steps[26]/items[28]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 28
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "travel",
+    "th": "การเดินทาง",
+    "vi": "du lịch"
+  },
+  {
+    "id": "typing::steps.26.items.29.meaning",
+    "path": "typing/steps[26]/items[29]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 29
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "rain",
+    "th": "ฝน",
+    "vi": "mưa"
+  },
+  {
+    "id": "typing::steps.26.items.30.meaning",
+    "path": "typing/steps[26]/items[30]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 30
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "face",
+    "th": "ใบหน้า",
+    "vi": "khuôn mặt"
+  },
+  {
+    "id": "typing::steps.26.items.31.meaning",
+    "path": "typing/steps[26]/items[31]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 31
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "leg",
+    "th": "ขา",
+    "vi": "chân"
+  },
+  {
+    "id": "typing::steps.26.items.32.meaning",
+    "path": "typing/steps[26]/items[32]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 32
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "map",
+    "th": "แผนที่",
+    "vi": "bản đồ"
+  },
+  {
+    "id": "typing::steps.26.items.33.meaning",
+    "path": "typing/steps[26]/items[33]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 33
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "pants",
+    "th": "กางเกง",
+    "vi": "quần dài"
+  },
+  {
+    "id": "typing::steps.26.items.34.meaning",
+    "path": "typing/steps[26]/items[34]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 34
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "spring",
+    "th": "ฤดูใบไม้ผลิ",
+    "vi": "mùa xuân"
+  },
+  {
+    "id": "typing::steps.26.items.35.meaning",
+    "path": "typing/steps[26]/items[35]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 35
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "summer",
+    "th": "ฤดูร้อน",
+    "vi": "mùa hè"
+  },
+  {
+    "id": "typing::steps.26.items.36.meaning",
+    "path": "typing/steps[26]/items[36]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 36
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "winter",
+    "th": "ฤดูหนาว",
+    "vi": "mùa đông"
+  },
+  {
+    "id": "typing::steps.26.items.37.meaning",
+    "path": "typing/steps[26]/items[37]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 37
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "company",
+    "th": "บริษัท",
+    "vi": "công ty"
+  },
+  {
+    "id": "typing::steps.26.items.38.meaning",
+    "path": "typing/steps[26]/items[38]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 38
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "now",
+    "th": "ตอนนี้",
+    "vi": "bây giờ"
+  },
+  {
+    "id": "typing::steps.26.items.39.meaning",
+    "path": "typing/steps[26]/items[39]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 39
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "tomorrow",
+    "th": "พรุ่งนี้",
+    "vi": "ngày mai"
+  },
+  {
+    "id": "typing::steps.26.items.40.meaning",
+    "path": "typing/steps[26]/items[40]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 40
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "yesterday",
+    "th": "เมื่อวาน",
+    "vi": "hôm qua"
+  },
+  {
+    "id": "typing::steps.26.items.41.meaning",
+    "path": "typing/steps[26]/items[41]/meaning",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        },
+        {
+          "k": "items"
+        },
+        {
+          "i": 41
+        }
+      ],
+      "field": "meaning",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "road, way",
+    "th": "ถนน / ทาง",
+    "vi": "đường"
+  },
+  {
+    "id": "typing::steps.26.tip",
+    "path": "typing/steps[26]/tip",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 26
+        }
+      ],
+      "field": "tip",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Korean typing speed is counted in 타/분 — keystrokes per minute, not words per minute. An average Korean adult types somewhere around 300–400 타/분. If you are over 200 as a beginner, you are doing well; Korean professionals run past 600.",
+    "th": "ความเร็วในการพิมพ์ภาษาเกาหลีนับเป็น 타/분 — จำนวนครั้งที่กดปุ่มต่อนาที ไม่ใช่จำนวนคำต่อนาที ผู้ใหญ่ชาวเกาหลีโดยเฉลี่ยพิมพ์ได้ราว 300–400 타/분 ถ้าคุณเป็นมือใหม่แล้วเกิน 200 ก็ถือว่าเก่งแล้ว ส่วนมืออาชีพชาวเกาหลีทำได้เกิน 600",
+    "vi": "Tốc độ gõ tiếng Hàn được tính bằng 타/분 — số lần gõ phím mỗi phút, không phải số từ mỗi phút. Một người Hàn trưởng thành trung bình gõ khoảng 300–400 타/분. Nếu là người mới mà bạn vượt 200, thế là tốt rồi; dân chuyên nghiệp Hàn Quốc vượt cả 600."
+  },
+  {
+    "id": "typing::steps.27.title",
+    "path": "typing/steps[27]/title",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "title",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "내 기기에 한국어 자판 추가하기",
+    "en": "Type Korean on Your Own Devices",
+    "th": "พิมพ์ภาษาเกาหลีบนอุปกรณ์ของคุณเอง",
+    "vi": "Gõ tiếng Hàn trên thiết bị của bạn"
+  },
+  {
+    "id": "typing::steps.27.body",
+    "path": "typing/steps[27]/body",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "body",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "First, the honest part: you do not need to install anything to practise here. Every drill in this lesson works with no Korean keyboard on your device at all — the page reads which physical key you pressed, and on a phone you simply tap the keys on screen. But once you want to text a Korean friend, search in Korean, or fill in a form, you need a real Korean keyboard on your device. Here is how to add one. Everywhere below, pick the plain 2-set / 두벌식 layout — it is the same one you just learned.",
+    "th": "อย่างแรก พูดกันตรง ๆ: การฝึกที่นี่ไม่ต้องติดตั้งอะไรเลย แบบฝึกทุกอันในบทเรียนนี้ใช้งานได้แม้อุปกรณ์ของคุณไม่มีแป้นพิมพ์ภาษาเกาหลีเลย — หน้านี้อ่านว่าคุณกดปุ่มจริงปุ่มไหน และบนมือถือคุณก็แค่แตะปุ่มบนหน้าจอ แต่เมื่อคุณอยากส่งข้อความหาเพื่อนชาวเกาหลี ค้นหาเป็นภาษาเกาหลี หรือกรอกแบบฟอร์ม คุณจะต้องมีแป้นพิมพ์ภาษาเกาหลีจริงบนอุปกรณ์ นี่คือวิธีเพิ่ม ทุกที่ด้านล่างนี้ ให้เลือกผังแบบสองชุด / 두벌식 ธรรมดา — เป็นผังเดียวกับที่คุณเพิ่งเรียนมา",
+    "vi": "Trước hết, nói thật: bạn không cần cài gì để luyện tập ở đây. Mọi bài luyện trong bài học này đều chạy được dù thiết bị của bạn hoàn toàn không có bàn phím tiếng Hàn — trang này đọc phím vật lý mà bạn nhấn, và trên điện thoại bạn chỉ cần chạm các phím trên màn hình. Nhưng khi bạn muốn nhắn tin cho một người bạn Hàn Quốc, tìm kiếm bằng tiếng Hàn hoặc điền vào biểu mẫu, bạn cần một bàn phím tiếng Hàn thật trên thiết bị. Đây là cách thêm nó. Ở mọi nơi bên dưới, hãy chọn cách bố trí hai bộ / 두벌식 đơn giản — chính là cái bạn vừa học."
+  },
+  {
+    "id": "typing::steps.27.rules[0]",
+    "path": "typing/steps[27]/rules[0]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 0,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean. It then asks which layout: choose Standard (that is 두벌식; \"10 Key\" is the small phone-pad layout instead). Switch keyboards by holding the 🌐 globe key at the bottom of the keyboard.",
+    "th": "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean จากนั้นมันจะถามว่าต้องการผังแบบไหน: เลือก Standard (นั่นคือ 두벌식 ส่วน “10 Key” เป็นผังแป้นโทรศัพท์ขนาดเล็ก) สลับแป้นพิมพ์โดยกดปุ่มลูกโลก 🌐 ที่ด้านล่างของแป้นพิมพ์ค้างไว้",
+    "vi": "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean. Sau đó nó hỏi bạn muốn kiểu bố trí nào: chọn Standard (đó là 두벌식; “10 Key” là kiểu bàn phím điện thoại nhỏ). Chuyển bàn phím bằng cách giữ phím quả địa cầu 🌐 ở dưới cùng bàn phím."
+  },
+  {
+    "id": "typing::steps.27.rules[1]",
+    "path": "typing/steps[27]/rules[1]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 1,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Android — easiest from the keyboard itself: open any app you can type in, tap the ⚙ settings icon on the keyboard's top bar → Languages → Add keyboard → Korean → 2벌식 (2-set) → Done. Via the Settings app it is Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard. To switch while typing, touch and hold the space bar.",
+    "th": "Android — ทำจากแป้นพิมพ์เองง่ายที่สุด: เปิดแอปใดก็ได้ที่พิมพ์ได้ แตะไอคอนตั้งค่า ⚙ บนแถบด้านบนของแป้นพิมพ์ → Languages → Add keyboard → Korean → 2벌식 (สองชุด) → Done ถ้าผ่านแอปการตั้งค่าจะเป็น Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard การสลับขณะพิมพ์ ให้แตะแป้นเว้นวรรคค้างไว้",
+    "vi": "Android — dễ nhất là làm ngay từ bàn phím: mở một ứng dụng có thể gõ, chạm biểu tượng cài đặt ⚙ trên thanh trên cùng của bàn phím → Languages → Add keyboard → Korean → 2벌식 (hai bộ) → Done. Qua ứng dụng Cài đặt thì là Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard. Để chuyển khi đang gõ, chạm và giữ phím cách."
+  },
+  {
+    "id": "typing::steps.27.rules[2]",
+    "path": "typing/steps[27]/rules[2]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 2,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Windows 11 — Settings → Time & language → Language & region → Add a language → search 한국어 (Korean) → Next → Install. Switch input with Win + Space. Once Korean is selected, the right Alt key toggles between Hangul and English — on a Korean keyboard that key is printed 한/영.",
+    "th": "Windows 11 — Settings → Time & language → Language & region → Add a language → ค้นหา 한국어 (Korean) → Next → Install สลับการป้อนด้วย Win + Space เมื่อเลือกภาษาเกาหลีแล้ว ปุ่ม Alt ขวาจะสลับระหว่างฮันกึลกับภาษาอังกฤษ — บนแป้นพิมพ์เกาหลี ปุ่มนั้นจะพิมพ์ว่า 한/영",
+    "vi": "Windows 11 — Settings → Time & language → Language & region → Add a language → tìm 한국어 (Korean) → Next → Install. Chuyển kiểu nhập bằng Win + Space. Khi đã chọn tiếng Hàn, phím Alt phải chuyển qua lại giữa Hangul và tiếng Anh — trên bàn phím Hàn, phím đó in chữ 한/영."
+  },
+  {
+    "id": "typing::steps.27.rules[3]",
+    "path": "typing/steps[27]/rules[3]",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "rules",
+      "kind": "arrayEl",
+      "element": 3,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "macOS — System Settings → Keyboard → Text Input → Edit… → click + → Korean → 2-Set Korean → Add. Switch input sources with Ctrl + Space; with Korean active, Caps Lock flips between Hangul and English.",
+    "th": "macOS — System Settings → Keyboard → Text Input → Edit… → คลิก + → Korean → 2-Set Korean → Add สลับแหล่งป้อนข้อมูลด้วย Ctrl + Space เมื่อเปิดใช้ภาษาเกาหลี ปุ่ม Caps Lock จะสลับระหว่างฮันกึลกับภาษาอังกฤษ",
+    "vi": "macOS — System Settings → Keyboard → Text Input → Edit… → nhấp + → Korean → 2-Set Korean → Add. Chuyển nguồn nhập bằng Ctrl + Space; khi tiếng Hàn đang bật, Caps Lock chuyển qua lại giữa Hangul và tiếng Anh."
+  },
+  {
+    "id": "typing::steps.27.tip.label",
+    "path": "typing/steps[27]/tip.label",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "label"
+    },
+    "ko": null,
+    "en": "Your practice transfers",
+    "th": "การฝึกของคุณใช้ได้ต่อ",
+    "vi": "Công luyện tập của bạn được chuyển tiếp"
+  },
+  {
+    "id": "typing::steps.27.tip.text",
+    "path": "typing/steps[27]/tip.text",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 27
+        }
+      ],
+      "field": "tip",
+      "kind": "objSub",
+      "element": null,
+      "subfield": "text"
+    },
+    "ko": null,
+    "en": "Every one of these is the same 두벌식 layout you have been drilling: consonants left, vowels right, Shift for the doubles. Nothing to relearn — the muscle memory you built on this page works the moment you switch your phone or laptop over.",
+    "th": "ทั้งหมดนี้คือผัง 두벌식 เดียวกับที่คุณฝึกมา: พยัญชนะซ้าย สระขวา Shift สำหรับตัวอักษรคู่ ไม่มีอะไรต้องเรียนใหม่ — ความจำของกล้ามเนื้อที่คุณสร้างบนหน้านี้ใช้ได้ทันทีที่คุณสลับโทรศัพท์หรือแล็ปท็อป",
+    "vi": "Tất cả đều là cùng một cách bố trí 두벌식 mà bạn đã luyện: phụ âm bên trái, nguyên âm bên phải, Shift cho các chữ đôi. Không có gì phải học lại — trí nhớ cơ bắp bạn xây dựng trên trang này phát huy tác dụng ngay khi bạn chuyển điện thoại hay laptop sang."
+  },
+  {
+    "id": "typing::steps.28.title",
+    "path": "typing/steps[28]/title",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 28
+        }
+      ],
+      "field": "title",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": "이제 한국어를 칠 수 있어요!",
+    "en": "You can type Korean!",
+    "th": "คุณพิมพ์ภาษาเกาหลีได้แล้ว!",
+    "vi": "Bạn đã gõ được tiếng Hàn rồi!"
+  },
+  {
+    "id": "typing::steps.28.message",
+    "path": "typing/steps[28]/message",
+    "loc": {
+      "file": "typing",
+      "trail": [
+        {
+          "k": "steps"
+        },
+        {
+          "i": 28
+        }
+      ],
+      "field": "message",
+      "kind": "string",
+      "element": null,
+      "subfield": null
+    },
+    "ko": null,
+    "en": "Excellent work — you have learned all 33 keys of the 두벌식 keyboard, typed syllables with and without a 받침, handled the combined vowels, and run a full 60-second sprint. Keep the speed going with the free typing pad just below this lesson: type any Korean word you like and watch the blocks build themselves. 화이팅!",
+    "th": "ทำได้ยอดเยี่ยม — คุณได้เรียนครบทั้ง 33 ปุ่มของแป้นพิมพ์ 두벌식 พิมพ์พยางค์ทั้งที่มีและไม่มี 받침 จัดการสระประสมได้ และวิ่งสปรินต์ครบ 60 วินาที รักษาความเร็วไว้กับแป้นพิมพ์อิสระที่อยู่ใต้บทเรียนนี้: พิมพ์คำภาษาเกาหลีคำไหนก็ได้ที่คุณชอบ แล้วดูบล็อกประกอบตัวเอง 화이팅!",
+    "vi": "Xuất sắc — bạn đã học hết 33 phím của bàn phím 두벌식, gõ các âm tiết có và không có 받침, xử lý được các nguyên âm ghép, và hoàn thành trọn một lượt chạy nước rút 60 giây. Hãy giữ đà tốc độ với bảng gõ tự do ngay bên dưới bài học này: gõ bất kỳ từ tiếng Hàn nào bạn thích và ngắm các khối tự dựng lên. 화이팅!"
+  }
+]

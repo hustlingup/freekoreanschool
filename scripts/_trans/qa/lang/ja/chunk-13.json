@@ -1,0 +1,232 @@
+{
+  "lang": "ja",
+  "chunk": 13,
+  "count": 25,
+  "units": [
+    {
+      "id": "nouns::steps.24.body",
+      "path": "nouns/steps[24]/body",
+      "ko": null,
+      "en": "Korean uses counting words called counters (수사) that attach to numbers when counting specific things. The counter 개 is used for general objects: 한 개 (one thing), 세 개 (three things). 명 is used for counting people: 두 명 (two people). 잔 is used for cups/glasses: 한 잔 (one cup). The pattern is: number + counter, placed right before or after the noun. Korean numbers for counters use the native Korean set: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5).",
+      "current": "韓国語では助数詞（수사）と呼ばれる数え言葉を使い、特定の物を数えるときに数詞と組み合わせます。개は一般的な物に使います：한 개（1つ）、세 개（3つ）。명は人を数えます：두 명（2人）。잔はカップ・グラスに使います：한 잔（1杯）。パターンは「数詞＋助数詞」で名詞の直前または直後に置きます。助数詞ではネイティブ韓国語の数詞を使います：하나(1)、둘(2)、셋(3)、넷(4)、다섯(5)。",
+      "ref_th": "ภาษาเกาหลีใช้คำนับที่เรียกว่าลักษณนาม (수사) ซึ่งต่อท้ายตัวเลขเมื่อนับสิ่งของเฉพาะ 개 ใช้สำหรับสิ่งของทั่วไป: 한 개 (หนึ่งชิ้น) 명 ใช้นับคน: 두 명 (สองคน) 잔 ใช้นับถ้วย/แก้ว: 한 잔 (หนึ่งแก้ว) รูปแบบคือ: ตัวเลข + ลักษณนาม ภาษาเกาหลีใช้ตัวเลขแบบเกาหลีดั้งเดิมกับลักษณนาม: 하나(1) 둘(2) 셋(3) 넷(4) 다섯(5)",
+      "ref_es": "El coreano usa palabras de conteo llamadas contadores (수사) que se unen a los números al contar cosas específicas. El contador 개 se usa para objetos generales: 한 개 (una cosa), 세 개 (tres cosas). 명 se usa para contar personas: 두 명 (dos personas). 잔 se usa para tazas/vasos: 한 잔 (una taza). El patrón es: número + contador, colocado justo antes o después del sustantivo. Los números coreanos para contadores usan el conjunto nativo: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5)."
+    },
+    {
+      "id": "nouns::steps.24.tip.label",
+      "path": "nouns/steps[24]/tip.label",
+      "ko": null,
+      "en": "Native numbers with counters",
+      "current": "助数詞とネイティブ数詞",
+      "ref_th": "ตัวเลขเกาหลีดั้งเดิมกับตัวนับ",
+      "ref_es": "Números nativos con contadores"
+    },
+    {
+      "id": "nouns::steps.24.tip.text",
+      "path": "nouns/steps[24]/tip.text",
+      "ko": null,
+      "en": "When combining native Korean numbers with counters, the number changes slightly: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네. So it is 한 개 (not 하나 개), 두 명 (not 둘 명).",
+      "current": "ネイティブ韓国語の数詞を助数詞と組み合わせるとき、数字が少し変化します：하나 → 한、둘 → 두、셋 → 세、넷 → 네。なので 한 개（하나 개ではなく）、두 명（둘 명ではなく）になります。",
+      "ref_th": "เมื่อรวมตัวเลขเกาหลีดั้งเดิมกับตัวนับ ตัวเลขจะเปลี่ยนเล็กน้อย: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네 ดังนั้นจึงเป็น 한 개 (ไม่ใช่ 하나 개) 두 명 (ไม่ใช่ 둘 명)",
+      "ref_es": "Al combinar números coreanos nativos con contadores, el número cambia ligeramente: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네. Por eso es 한 개 (no 하나 개), 두 명 (no 둘 명)."
+    },
+    {
+      "id": "nouns::steps.25.meaning",
+      "path": "nouns/steps[25]/meaning",
+      "ko": null,
+      "en": "three people (명 = person counter)",
+      "current": "3人（명：人数助数詞）",
+      "ref_th": "สามคน (명 = ลักษณนามคน)",
+      "ref_es": "tres personas (명 = contador de personas)"
+    },
+    {
+      "id": "nouns::steps.26.prompt",
+      "path": "nouns/steps[26]/prompt",
+      "ko": null,
+      "en": "How do you say 'four people' in Korean?",
+      "current": "「4人」は韓国語でどう言いますか。",
+      "ref_th": "จะพูดว่า \"สี่คน\" เป็นภาษาเกาหลีได้อย่างไร?",
+      "ref_es": "¿Cómo dices 'cuatro personas' en coreano?"
+    },
+    {
+      "id": "nouns::steps.27.title",
+      "path": "nouns/steps[27]/title",
+      "ko": "소유격 의",
+      "en": "Possessive Marker 의",
+      "current": "所有格助詞 의",
+      "ref_th": "คำแสดงความเป็นเจ้าของ 의",
+      "ref_es": "Marcador Posesivo 의"
+    },
+    {
+      "id": "nouns::steps.27.body",
+      "path": "nouns/steps[27]/body",
+      "ko": null,
+      "en": "The possessive marker 의 (ui, often pronounced '에') attaches to a noun to show ownership, like English 's. 저의 가방 = my bag, 친구의 집 = friend's house. In everyday speech, 의 is commonly dropped: 제 가방 (my bag, polite) or 내 가방 (my bag, casual). The pronouns 저 and 나 have special possessive forms: 제 (polite, my) and 내 (casual, my).",
+      "current": "所有格助詞 의（ui、しばしば「에」と発音）は名詞に付いて所有を示し、英語の 's に相当します。저의 가방＝私のバッグ、친구의 집＝友達の家。日常会話では 의 がよく省略されます：제 가방（丁寧な「私のバッグ」）や 내 가방（カジュアルな「私のバッグ」）。代名詞 저 と 나 には特別な所有格形があります：제（丁寧、私の）と 내（カジュアル、私の）。",
+      "ref_th": "คำแสดงความเป็นเจ้าของ 의 (ออกเสียงว่า \"อุย\" มักออกเป็น \"เอ\") ต่อท้ายคำนามเพื่อแสดงความเป็นเจ้าของ เหมือน 's ในภาษาอังกฤษ 저의 가방 = กระเป๋าของฉัน 친구의 집 = บ้านของเพื่อน ในการพูดทั่วไป 의 มักละไว้: 제 가방 (กระเป๋าของฉัน สุภาพ) หรือ 내 가방 (กระเป๋าของฉัน ไม่เป็นทางการ) สรรพนาม 저 และ 나 มีรูปแสดงความเป็นเจ้าของพิเศษ คือ 제 (สุภาพ, ของฉัน) และ 내 (ไม่เป็นทางการ, ของฉัน)",
+      "ref_es": "El marcador posesivo 의 (ui, a menudo pronunciado \"에\") se une a un sustantivo para indicar posesión, como el genitivo del español. 저의 가방 = mi bolso, 친구의 집 = la casa del amigo. En el habla cotidiana, 의 se omite comúnmente: 제 가방 (mi bolso, educado) o 내 가방 (mi bolso, informal). Los pronombres 저 y 나 tienen formas posesivas especiales: 제 (educado, \"mi\") y 내 (informal, \"mi\")."
+    },
+    {
+      "id": "nouns::steps.27.tip.label",
+      "path": "nouns/steps[27]/tip.label",
+      "ko": null,
+      "en": "제 vs 내",
+      "current": "제 vs 내",
+      "ref_th": "제 vs 내",
+      "ref_es": "제 vs 내"
+    },
+    {
+      "id": "nouns::steps.27.tip.text",
+      "path": "nouns/steps[27]/tip.text",
+      "ko": null,
+      "en": "제 is the polite/humble possessive 'my' (from 저 = I, polite). 내 is the casual possessive 'my' (from 나 = I, casual). Use 제 with strangers or seniors, 내 with close friends.",
+      "current": "제は丁寧・謙譲の「私の」（저 = 私・丁寧から）。내はカジュアルの「私の」（나 = 私・カジュアルから）。見知らぬ人や目上の人には제を、親しい友人には내を使います。",
+      "ref_th": "제 คือรูปสุภาพของ \"ของฉัน\" (จาก 저 = ฉัน สุภาพ) 내 คือรูปไม่เป็นทางการของ \"ของฉัน\" (จาก 나 = ฉัน ไม่เป็นทางการ) ใช้ 제 กับคนแปลกหน้าหรือผู้ใหญ่ ใช้ 내 กับเพื่อนสนิท",
+      "ref_es": "제 es el \"mi\" posesivo educado/humilde (de 저 = yo, educado). 내 es el \"mi\" posesivo informal (de 나 = yo, informal). Usa 제 con desconocidos o mayores, 내 con amigos cercanos."
+    },
+    {
+      "id": "nouns::steps.28.meaning",
+      "path": "nouns/steps[28]/meaning",
+      "ko": null,
+      "en": "my bag (polite)",
+      "current": "私のバッグ（丁寧）",
+      "ref_th": "กระเป๋าของฉัน (สุภาพ)",
+      "ref_es": "mi bolso (educado)"
+    },
+    {
+      "id": "nouns::steps.29.meaning",
+      "path": "nouns/steps[29]/meaning",
+      "ko": null,
+      "en": "my friend (casual)",
+      "current": "私の友達（カジュアル）",
+      "ref_th": "เพื่อนของฉัน (ไม่เป็นทางการ)",
+      "ref_es": "mi amigo/a (informal)"
+    },
+    {
+      "id": "nouns::steps.30.prompt",
+      "path": "nouns/steps[30]/prompt",
+      "ko": null,
+      "en": "How do you say 'my house' in polite Korean?",
+      "current": "丁寧な韓国語で「私の家」はどう言いますか。",
+      "ref_th": "จะพูดว่า \"บ้านของฉัน\" แบบสุภาพเป็นภาษาเกาหลีได้อย่างไร?",
+      "ref_es": "¿Cómo dices 'mi casa' en coreano educado?"
+    },
+    {
+      "id": "nouns::steps.31.meaning",
+      "path": "nouns/steps[31]/meaning",
+      "ko": null,
+      "en": "friend's house",
+      "current": "友達の家",
+      "ref_th": "บ้านของเพื่อน",
+      "ref_es": "la casa del amigo/a"
+    },
+    {
+      "id": "nouns::steps.32.prompt",
+      "path": "nouns/steps[32]/prompt",
+      "ko": null,
+      "en": "Which phrase correctly says 'the child's book'?",
+      "current": "「子どもの本」を正しく表しているのはどれでしょう。",
+      "ref_th": "วลีใดกล่าวว่า \"หนังสือของเด็ก\" ได้ถูกต้อง?",
+      "ref_es": "¿Qué frase dice correctamente 'el libro del niño'?"
+    },
+    {
+      "id": "nouns::steps.33.title",
+      "path": "nouns/steps[33]/title",
+      "ko": "명사 완료!",
+      "en": "Nouns Complete!",
+      "current": "名詞編、修了！",
+      "ref_th": "เรียนจบคำนามแล้ว!",
+      "ref_es": "¡Sustantivos Completados!"
+    },
+    {
+      "id": "nouns::steps.33.message",
+      "path": "nouns/steps[33]/message",
+      "ko": null,
+      "en": "You've covered the essential Korean nouns — people, places, objects, time words, counters, and possessives. Keep going with Pronouns next.",
+      "current": "韓国語の基本的な名詞——人・場所・物・時間を表す語・助数詞・所有表現——をひととおり学びました。次は代名詞に進みましょう。",
+      "ref_th": "คุณเรียนรู้คำนามภาษาเกาหลีสำคัญครบแล้ว — ผู้คน สถานที่ สิ่งของ คำเวลา ตัวนับ และคำแสดงความเป็นเจ้าของ ไปต่อกับสรรพนามได้เลย!",
+      "ref_es": "Has aprendido los sustantivos coreanos esenciales — personas, lugares, objetos, palabras de tiempo, contadores y posesivos. ¡Continúa con los Pronombres a continuación!"
+    },
+    {
+      "id": "pronouns::stages.0.name",
+      "path": "pronouns/stages[0]/name",
+      "ko": "1·2인칭",
+      "en": "First & Second Person",
+      "current": "一人称・二人称",
+      "ref_th": "บุรุษที่หนึ่งและสอง",
+      "ref_es": "Primera y Segunda Persona"
+    },
+    {
+      "id": "pronouns::stages.1.name",
+      "path": "pronouns/stages[1]/name",
+      "ko": "3인칭·우리",
+      "en": "Third Person & We",
+      "current": "三人称・私たち",
+      "ref_th": "บุรุษที่สามและ \"เรา\"",
+      "ref_es": "Tercera Persona y Nosotros"
+    },
+    {
+      "id": "pronouns::stages.2.name",
+      "path": "pronouns/stages[2]/name",
+      "ko": "지시대명사",
+      "en": "Demonstratives",
+      "current": "指示代名詞",
+      "ref_th": "สรรพนามชี้เฉพาะ",
+      "ref_es": "Demostrativos"
+    },
+    {
+      "id": "pronouns::stages.3.name",
+      "path": "pronouns/stages[3]/name",
+      "ko": "의문대명사",
+      "en": "Question Pronouns",
+      "current": "疑問代名詞",
+      "ref_th": "สรรพนามคำถาม",
+      "ref_es": "Pronombres Interrogativos"
+    },
+    {
+      "id": "pronouns::steps.0.title",
+      "path": "pronouns/steps[0]/title",
+      "ko": "대명사 개요",
+      "en": "Korean Pronouns Overview",
+      "current": "韓国語の代名詞の概観",
+      "ref_th": "ภาพรวมสรรพนามภาษาเกาหลี",
+      "ref_es": "Resumen de los Pronombres Coreanos"
+    },
+    {
+      "id": "pronouns::steps.0.body",
+      "path": "pronouns/steps[0]/body",
+      "ko": null,
+      "en": "Korean has two registers for first-person pronouns: polite and casual. 저 (jeo) is the polite 'I', used with strangers, seniors, and in formal settings. 나 (na) is the casual 'I', used with close friends and younger people. Crucially, Korean very often drops the subject pronoun entirely when context is clear — 어디 가요? can mean 'Where are you going?' without any pronoun at all. Mastering when NOT to use a pronoun is as important as knowing the pronouns themselves.",
+      "current": "韓国語の一人称代名詞には2つのレジスターがあります：丁寧形とカジュアル形。저（jeo）は丁寧な「私」で、初対面の人・目上の人・フォーマルな場面で使います。나（na）はカジュアルな「私」で、親しい友人や年下の人に使います。重要なのは、文脈が明らかな場合、韓国語では主語の代名詞をほぼ省略するという点です。어디 가요?は代名詞なしで「どこへ行くの?」を意味します。代名詞を使わないタイミングを知ることも、代名詞そのものを覚えるのと同じくらい大切です。",
+      "ref_th": "ภาษาเกาหลีมีสรรพนามบุรุษที่หนึ่งสองแบบ: สุภาพและไม่เป็นทางการ 저 (จอ) คือ \"ฉัน\" แบบสุภาพ ใช้กับคนแปลกหน้าหรือผู้ใหญ่กว่า 나 (นา) คือ \"ฉัน\" ไม่เป็นทางการ ใช้กับเพื่อนสนิทหรือผู้น้อย ในบริบทที่เป็นทางการ เช่น ที่ทำงานหรือพบครั้งแรก ให้ใช้ 저 เสมอ",
+      "ref_es": "El coreano tiene dos registros para los pronombres de primera persona: educado e informal. 저 (jeo) es el \"yo\" educado, usado con desconocidos, mayores y en entornos formales. 나 (na) es el \"yo\" informal, usado con amigos cercanos y personas más jóvenes. Es fundamental que el coreano a menudo omite el pronombre de sujeto por completo cuando el contexto es claro — 어디 가요? puede significar \"¿Adónde vas?\" sin ningún pronombre. Dominar cuándo NO usar un pronombre es tan importante como saber los pronombres."
+    },
+    {
+      "id": "pronouns::steps.0.tip.label",
+      "path": "pronouns/steps[0]/tip.label",
+      "ko": null,
+      "en": "Pro-drop language",
+      "current": "代名詞省略言語",
+      "ref_th": "ภาษาที่ละประธานได้",
+      "ref_es": "Lengua de omisión de sujeto (pro-drop)"
+    },
+    {
+      "id": "pronouns::steps.0.tip.text",
+      "path": "pronouns/steps[0]/tip.text",
+      "ko": null,
+      "en": "Korean is a pro-drop language — when the subject is obvious from context or was mentioned recently, drop the pronoun. Leaving it in can sound unnatural or even slightly rude (overly direct). 저 괜찮아요 and 괜찮아요 both mean 'I'm fine', but the shorter form is more natural.",
+      "current": "韓国語は主語省略言語です——文脈から主語が明らかだったり最近言及された場合、代名詞は省略します。そのまま言うと不自然に聞こえたり、やや失礼に聞こえることもあります。저 괜찮아요と괜찮아요はどちらも「大丈夫です」ですが、短い形のほうが自然です。",
+      "ref_th": "ภาษาเกาหลีสามารถละประธานได้ — เมื่อประธานชัดเจนจากบริบทหรือกล่าวถึงแล้ว ก็มักละไว้ 가요 อาจหมายถึง \"ฉันไป\" \"คุณไป\" หรือ \"เขาไป\" ขึ้นอยู่กับบริบท",
+      "ref_es": "El coreano es una lengua de omisión del sujeto (pro-drop) — cuando el sujeto es obvio por el contexto o fue mencionado recientemente, omite el pronombre. Dejarlo puede sonar antinatural o incluso ligeramente grosero (demasiado directo). 저 괜찮아요 y 괜찮아요 ambos significan \"Estoy bien\", pero la forma más corta es más natural."
+    },
+    {
+      "id": "pronouns::steps.1.meaning",
+      "path": "pronouns/steps[1]/meaning",
+      "ko": null,
+      "en": "I / me (polite)",
+      "current": "私（丁寧）",
+      "ref_th": "ฉัน / ผม / หนู (สุภาพ)",
+      "ref_es": "yo / me (educado)"
+    }
+  ]
+}

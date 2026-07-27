@@ -1,0 +1,232 @@
+{
+  "lang": "vi",
+  "chunk": 11,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::steps.70.rules[2]",
+      "path": "grammar/steps[70]/rules[2]",
+      "ko": null,
+      "en": "먹기도 해요 — sometimes eats / also eats (-기도 하다)",
+      "current": "먹기도 해요 — đôi khi cũng ăn / cũng ăn (-기도 하다)",
+      "ref_th": "먹기도 해요 — บางครั้งกิน / กินด้วย (-기도 하다)",
+      "ref_es": "먹기도 해요 — a veces come / también come (-기도 하다)"
+    },
+    {
+      "id": "grammar::steps.70.rules[3]",
+      "path": "grammar/steps[70]/rules[3]",
+      "ko": null,
+      "en": "좋기도 하고 나쁘기도 해요 — both good and bad",
+      "current": "좋기도 하고 나쁘기도 해요 — vừa tốt vừa xấu",
+      "ref_th": "좋기도 하고 나쁘기도 해요 — ทั้งดีและไม่ดี",
+      "ref_es": "좋기도 하고 나쁘기도 해요 — tanto bueno como malo"
+    },
+    {
+      "id": "grammar::steps.71.meaning",
+      "path": "grammar/steps[71]/meaning",
+      "ko": null,
+      "en": "Korean is both difficult and interesting.",
+      "current": "Tiếng Hàn vừa khó vừa thú vị.",
+      "ref_th": "เกาหลีทั้งยากและน่าสนใจ",
+      "ref_es": "El coreano es a la vez difícil e interesante."
+    },
+    {
+      "id": "grammar::steps.72.prompt",
+      "path": "grammar/steps[72]/prompt",
+      "ko": null,
+      "en": "Which sentence means 'Even children know it'?",
+      "current": "Câu nào có nghĩa 'Ngay cả trẻ em cũng biết'?",
+      "ref_th": "ประโยคใดหมายถึง แม้แต่เด็กก็รู้?",
+      "ref_es": "¿Qué oración significa \"Incluso los niños lo saben\"?"
+    },
+    {
+      "id": "grammar::steps.73.title",
+      "path": "grammar/steps[73]/title",
+      "ko": "문법 완료!",
+      "en": "Grammar Complete!",
+      "current": "Hoàn thành bài Ngữ pháp!",
+      "ref_th": "เรียนจบไวยากรณ์แล้ว!",
+      "ref_es": "¡Gramática Completada!"
+    },
+    {
+      "id": "grammar::steps.73.message",
+      "path": "grammar/steps[73]/message",
+      "ko": null,
+      "en": "You've mastered all 26 grammar stages — from SOV word order and particles to advanced -도 patterns. Start applying these in real conversations!",
+      "current": "Bạn đã làm chủ cả 26 chặng ngữ pháp — từ trật tự từ SOV và trợ từ đến các mẫu -도 nâng cao. Hãy bắt đầu áp dụng chúng vào những cuộc hội thoại thực tế!",
+      "ref_th": "คุณเชี่ยวชาญไวยากรณ์ทั้ง 26 ขั้นตอนแล้ว — จากลำดับคำ SOV และคำช่วย ถึงรูปแบบ -도 ขั้นสูง เริ่มนำไปใช้ในการสนทนาจริงได้เลย!",
+      "ref_es": "¡Has dominado las 26 etapas gramaticales — desde el orden SOV y las partículas hasta los patrones avanzados de -도. ¡Empieza a aplicarlos en conversaciones reales!"
+    },
+    {
+      "id": "nouns::stages.0.name",
+      "path": "nouns/stages[0]/name",
+      "ko": "사람·가족",
+      "en": "People & Family",
+      "current": "Người & Gia đình",
+      "ref_th": "ผู้คนและครอบครัว",
+      "ref_es": "Personas y Familia"
+    },
+    {
+      "id": "nouns::stages.1.name",
+      "path": "nouns/stages[1]/name",
+      "ko": "장소·시간",
+      "en": "Places & Time",
+      "current": "Địa điểm & Thời gian",
+      "ref_th": "สถานที่และเวลา",
+      "ref_es": "Lugares y Tiempo"
+    },
+    {
+      "id": "nouns::stages.2.name",
+      "path": "nouns/stages[2]/name",
+      "ko": "사물·수사",
+      "en": "Objects & Counters",
+      "current": "Đồ vật & Từ đếm",
+      "ref_th": "สิ่งของและตัวนับ",
+      "ref_es": "Objetos y Contadores"
+    },
+    {
+      "id": "nouns::stages.3.name",
+      "path": "nouns/stages[3]/name",
+      "ko": "소유격·마무리",
+      "en": "Possessives",
+      "current": "Sở hữu",
+      "ref_th": "คำแสดงความเป็นเจ้าของ",
+      "ref_es": "Posesivos"
+    },
+    {
+      "id": "nouns::steps.0.title",
+      "path": "nouns/steps[0]/title",
+      "ko": "명사",
+      "en": "Korean Nouns (명사)",
+      "current": "Danh từ tiếng Hàn (명사)",
+      "ref_th": "คำนามภาษาเกาหลี (명사)",
+      "ref_es": "Sustantivos Coreanos (명사)"
+    },
+    {
+      "id": "nouns::steps.0.body",
+      "path": "nouns/steps[0]/body",
+      "ko": null,
+      "en": "Korean nouns (명사) do not change based on gender or number. The same word 사람 means 'person', 'people', 'a person', and 'the person'. Plurality is understood from context or added separately with words like 들 (들 is a plural suffix, e.g. 사람들 = people). There are no articles like 'a' or 'the'. This makes Korean nouns very easy to learn — you just have to know the word itself.",
+      "current": "Danh từ tiếng Hàn (명사) không thay đổi theo giống hay số. Cùng một từ 사람 có nghĩa là 'người', 'những người', 'một người' và 'người đó'. Số nhiều được hiểu từ ngữ cảnh hoặc được thêm riêng bằng các từ như 들 (들 là hậu tố số nhiều, ví dụ 사람들 = mọi người). Không có mạo từ như 'a' hay 'the'. Điều này khiến danh từ tiếng Hàn rất dễ học — bạn chỉ cần biết bản thân từ đó.",
+      "ref_th": "คำนามภาษาเกาหลี (명사) ไม่เปลี่ยนแปลงตามเพศหรือจำนวน คำเดียวกันอย่าง 사람 หมายถึง \"คน\" \"ผู้คน\" \"คนหนึ่ง\" และ \"คนนั้น\" รูปพหูพจน์สื่อได้จากบริบทหรือเพิ่มด้วย 들 (เช่น 사람들 = ผู้คน) ไม่มีคำนำหน้าอย่าง \"a\" หรือ \"the\" ทำให้คำนามภาษาเกาหลีเรียนได้ง่ายมาก",
+      "ref_es": "Los sustantivos coreanos (명사) no cambian según el género ni el número. La misma palabra 사람 significa \"persona\", \"personas\", \"una persona\" y \"la persona\". El plural se entiende por el contexto o se añade por separado con palabras como 들 (sufijo de plural, p.ej. 사람들 = personas). No hay artículos como \"un/una\" o \"el/la/los/las\". Esto hace que los sustantivos coreanos sean muy fáciles de aprender — solo tienes que saber la palabra en sí."
+    },
+    {
+      "id": "nouns::steps.0.tip.label",
+      "path": "nouns/steps[0]/tip.label",
+      "ko": null,
+      "en": "Plural suffix 들",
+      "current": "Hậu tố số nhiều 들",
+      "ref_th": "คำต่อท้ายพหูพจน์ 들",
+      "ref_es": "Sufijo de plural 들"
+    },
+    {
+      "id": "nouns::steps.0.tip.text",
+      "path": "nouns/steps[0]/tip.text",
+      "ko": null,
+      "en": "들 softly adds plurality: 친구들 (friends), 학생들 (students). You can attach 들 to people or animals, but it is optional and often skipped when context is clear.",
+      "current": "들 nhẹ nhàng thêm ý số nhiều: 친구들 (bạn bè), 학생들 (học sinh). Bạn có thể gắn 들 vào người hoặc động vật, nhưng nó là tùy chọn và thường được bỏ khi ngữ cảnh đã rõ.",
+      "ref_th": "들 เพิ่มความหมายพหูพจน์อย่างนุ่มนวล: 친구들 (เพื่อนๆ), 학생들 (นักเรียน) สามารถต่อท้ายคำที่หมายถึงคนหรือสัตว์ แต่เป็นทางเลือก มักละไว้เมื่อบริบทชัดเจน",
+      "ref_es": "들 añade suavemente el plural: 친구들 (amigos), 학생들 (estudiantes). Puedes añadir 들 a personas o animales, pero es opcional y suele omitirse cuando el contexto es claro."
+    },
+    {
+      "id": "nouns::steps.1.meaning",
+      "path": "nouns/steps[1]/meaning",
+      "ko": null,
+      "en": "person / human",
+      "current": "người / con người",
+      "ref_th": "คน / มนุษย์",
+      "ref_es": "persona / ser humano"
+    },
+    {
+      "id": "nouns::steps.2.meaning",
+      "path": "nouns/steps[2]/meaning",
+      "ko": null,
+      "en": "man / boy",
+      "current": "đàn ông / con trai",
+      "ref_th": "ผู้ชาย / เด็กผู้ชาย",
+      "ref_es": "hombre / chico"
+    },
+    {
+      "id": "nouns::steps.3.meaning",
+      "path": "nouns/steps[3]/meaning",
+      "ko": null,
+      "en": "woman / girl",
+      "current": "phụ nữ / con gái",
+      "ref_th": "ผู้หญิง / เด็กผู้หญิง",
+      "ref_es": "mujer / chica"
+    },
+    {
+      "id": "nouns::steps.4.meaning",
+      "path": "nouns/steps[4]/meaning",
+      "ko": null,
+      "en": "child / kid",
+      "current": "trẻ em / đứa bé",
+      "ref_th": "เด็ก",
+      "ref_es": "niño/a"
+    },
+    {
+      "id": "nouns::steps.5.meaning",
+      "path": "nouns/steps[5]/meaning",
+      "ko": null,
+      "en": "friend",
+      "current": "bạn bè",
+      "ref_th": "เพื่อน",
+      "ref_es": "amigo/a"
+    },
+    {
+      "id": "nouns::steps.6.prompt",
+      "path": "nouns/steps[6]/prompt",
+      "ko": null,
+      "en": "Which word means 'friend'?",
+      "current": "Từ nào có nghĩa là 'bạn bè'?",
+      "ref_th": "คำใดหมายความว่า \"เพื่อน\"?",
+      "ref_es": "¿Qué palabra significa 'amigo/a'?"
+    },
+    {
+      "id": "nouns::steps.7.title",
+      "path": "nouns/steps[7]/title",
+      "ko": "가족 명사",
+      "en": "Family Nouns (가족 명사)",
+      "current": "Danh từ gia đình (가족 명사)",
+      "ref_th": "คำนามครอบครัว (가족 명사)",
+      "ref_es": "Sustantivos de Familia (가족 명사)"
+    },
+    {
+      "id": "nouns::steps.7.body",
+      "path": "nouns/steps[7]/body",
+      "ko": null,
+      "en": "Korean family terms often differ depending on the speaker's gender. 오빠 (oppa) is what a female speaker calls her older brother, while 형 (hyung) is what a male speaker calls his older brother. Similarly, 언니 (unni) = older sister (female speaker) and 누나 (nuna) = older sister (male speaker). For parents, 아버지 / 어머니 are the formal terms, while 아빠 / 엄마 are the casual equivalents.",
+      "current": "Các từ chỉ gia đình trong tiếng Hàn thường khác nhau tùy theo giới tính của người nói. 오빠 (oppa) là cách một người nữ gọi anh trai của mình, còn 형 (hyung) là cách một người nam gọi anh trai của mình. Tương tự, 언니 (unni) = chị gái (người nói là nữ) và 누나 (nuna) = chị gái (người nói là nam). Với cha mẹ, 아버지 / 어머니 là các từ trang trọng, còn 아빠 / 엄마 là các từ thân mật tương đương.",
+      "ref_th": "คำในครอบครัวเกาหลีมักแตกต่างกันตามเพศผู้พูด 오빠 (โอปป้า) คือสิ่งที่ผู้หญิงเรียกพี่ชาย ส่วน 형 (ฮยอง) คือที่ผู้ชายเรียกพี่ชาย เช่นเดียวกัน 언니 (อุนนี่) = พี่สาว (ผู้หญิงพูด) และ 누나 (นูนา) = พี่สาว (ผู้ชายพูด) สำหรับพ่อแม่ 아버지 / 어머니 เป็นคำทางการ ส่วน 아빠 / 엄마 เป็นคำไม่เป็นทางการ",
+      "ref_es": "Los términos familiares coreanos a menudo difieren según el género del hablante. 오빠 (oppa) es como una hablante femenina llama a su hermano mayor, mientras que 형 (hyung) es como un hablante masculino llama a su hermano mayor. Del mismo modo, 언니 (unni) = hermana mayor (hablante femenina) y 누나 (nuna) = hermana mayor (hablante masculino). Para los padres, 아버지 / 어머니 son los términos formales, mientras que 아빠 / 엄마 son los equivalentes informales."
+    },
+    {
+      "id": "nouns::steps.7.tip.label",
+      "path": "nouns/steps[7]/tip.label",
+      "ko": null,
+      "en": "Gender-specific address",
+      "current": "Cách xưng hô theo giới tính",
+      "ref_th": "การเรียกชื่อตามเพศ",
+      "ref_es": "Tratamiento específico por género"
+    },
+    {
+      "id": "nouns::steps.7.tip.text",
+      "path": "nouns/steps[7]/tip.text",
+      "ko": null,
+      "en": "Unlike English, Korean has no single word 'sibling'. Whether you say 오빠/형 or 언니/누나 depends entirely on your own gender and the relative age of the sibling. This is core to Korean family vocabulary.",
+      "current": "Khác với tiếng Anh, tiếng Hàn không có một từ đơn 'anh chị em'. Việc bạn nói 오빠/형 hay 언니/누나 phụ thuộc hoàn toàn vào giới tính của chính bạn và độ tuổi tương đối của người anh chị em đó. Đây là điều cốt lõi trong từ vựng gia đình tiếng Hàn.",
+      "ref_th": "ต่างจากภาษาอังกฤษ ภาษาเกาหลีไม่มีคำว่า \"พี่น้อง\" คำเดียว การใช้ 오빠/형 หรือ 언니/누나 ขึ้นอยู่กับเพศของผู้พูดและอายุของพี่น้อง นี่เป็นพื้นฐานของคำศัพท์ครอบครัวเกาหลี",
+      "ref_es": "A diferencia del español, el coreano no tiene una sola palabra para \"hermano/a\". Si dices 오빠/형 o 언니/누나 depende completamente de tu propio género y la edad relativa del hermano/a. Esto es fundamental en el vocabulario familiar coreano."
+    },
+    {
+      "id": "nouns::steps.8.meaning",
+      "path": "nouns/steps[8]/meaning",
+      "ko": null,
+      "en": "father (formal)",
+      "current": "cha (trang trọng)",
+      "ref_th": "พ่อ (ทางการ)",
+      "ref_es": "padre (formal)"
+    }
+  ]
+}

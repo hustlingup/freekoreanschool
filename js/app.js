@@ -658,8 +658,10 @@ window.SEARCH_INDEX = [
   { title: 'Compound Vowels (복합 모음)', url: 'learn/hangul.html#compound', category: 'learn', icon: '📚', tags: ['compound vowels', 'diphthong', 'ㅐ', 'ㅔ', 'ㅒ', 'ㅖ', 'ㅘ', 'ㅙ', 'ㅚ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅢ', 'hangul', 'intermediate', '복합모음', '11 vowels'], desc: '11 compound vowels formed by combining basic vowels.' },
   { title: 'Aspirated & Tense Consonants', url: 'learn/hangul.html#aspirated', category: 'learn', icon: '📚', tags: ['aspirated', 'tense', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅊ', 'ㄲ', 'ㄸ', 'ㅃ', 'ㅆ', 'ㅉ', '거센소리', '된소리', 'double consonants', 'pronunciation', 'puff of air'], desc: 'Aspirated (거센소리) and tense (된소리) consonant pairs with minimal pair practice.' },
   { title: 'Double Consonants (쌍자음)', url: 'learn/hangul.html#tense', category: 'learn', icon: '📚', tags: ['double consonants', 'ssang', '쌍자음', 'ㄲ', 'ㄸ', 'ㅃ', 'ㅆ', 'ㅉ', 'tense sounds', 'ssang jaeum'], desc: 'The 5 double (tense) consonants — ㄲㄸㅃㅆㅉ — and how to pronounce them.' },
+  { title: 'Korean Letter Writing (획순)', url: 'learn/letter-writing.html', category: 'learn', icon: '✍️', tags: ['stroke order', 'writing', '획순', 'hangul', 'trace', 'handwriting', 'letters', 'penmanship', 'consonants', 'vowels', 'how to write hangul', 'stroke direction'], desc: 'Learn Korean handwriting — correct stroke order for every hangul consonant and vowel, with tracing practice.' },
   { title: 'Syllable Structure & Blocks', url: 'learn/syllable-blocks.html', category: 'learn', icon: '🔡', tags: ['syllable', 'blocks', 'reading', 'writing', 'hangul structure', '음절', 'initial', 'medial', 'final', 'batchim', '받침', 'combine'], desc: 'How to combine consonants and vowels into Korean syllable blocks.' },
   { title: 'Pronunciation Guide (발음)', url: 'learn/pronunciation.html', category: 'learn', icon: '🎤', tags: ['pronunciation', 'sounds', 'phonetics', 'listening', 'speaking', '발음', 'linking', 'nasalization', 'liaison'], desc: 'Korean pronunciation rules — aspirated, tense, linking, and nasalization.' },
+  { title: 'Korean Typing (타자)', url: 'learn/typing.html', category: 'learn', icon: '⌨️', tags: ['keyboard', 'typing', 'dubeolsik', '두벌식', '타자', 'hangul keyboard', 'type korean', 'korean input', 'ime', 'keyboard layout', 'qwerty korean', 'touch typing'], desc: 'Learn to type Korean on the 두벌식 (Dubeolsik) keyboard — key layout, finger positions, and typing drills.' },
   { title: 'Korean Grammar (문법)', url: 'learn/grammar.html', category: 'learn', icon: '📝', tags: ['grammar', 'particles', 'conjugation', 'sentence', 'structure', '문법', 'sov', 'subject object verb', 'korean sentence order'], desc: 'Core Korean grammar — SOV sentence structure, particles, and verb conjugation.' },
   { title: 'Sentence Structure (어순)', url: 'learn/grammar.html#sentence-structure', category: 'learn', icon: '📝', tags: ['sentence structure', 'word order', 'sov', '어순', 'subject', 'object', 'verb', 'grammar'], desc: 'Korean SOV word order — how sentences are built differently from English.' },
   { title: 'Topic Particle (은/는)', url: 'learn/grammar.html#topic', category: 'learn', icon: '📝', tags: ['particle', 'topic marker', '은', '는', 'eun', 'neun', 'grammar', 'beginner', 'topic'], desc: 'The topic marker particle 은/는 — when and how to use it.' },
@@ -1020,14 +1022,69 @@ function searchDocLang() {
   return (document.documentElement.lang || 'en').toLowerCase();
 }
 
-/* All SEARCH_INDEX urls are root-relative (no leading slash) — resolve
-   against site root so links work from any page depth. */
-function searchResolveUrl(url) {
-  return '/' + url;
+/* All SEARCH_INDEX urls are root-relative (no leading slash) and written in
+   English. Resolve them against the site root AND against the locale of the
+   page doing the searching — sending a Thai reader who searched 찜질방 to the
+   English culture page is defect B in docs/i18n-locale-leak.md.
+
+   One mirror rule covers every page on this site:
+       index.html         → <loc>/index.html
+       <section>/<rest>   → <section>/<loc>/<rest>
+   Any ?query and #hash ride along untouched.
+
+   Guard: only sections known to be mirrored are rewritten, and
+   SEARCH_MIRROR_MISSING can opt a single page out of a single locale. Anything
+   else falls back to the English url — English is worse than the reader's own
+   language, but a 404 is worse than both. scripts/audit-i18n.cjs asserts that
+   all 111 index urls resolve in all 8 locales, so this is insurance, not a
+   workaround. Do NOT read localStorage here: `<html lang>` is the only source
+   of truth for what language a page is. */
+const SEARCH_LOCALES = ['zh-tw', 'ja', 'es', 'fr', 'de', 'vi', 'th', 'id'];
+const SEARCH_MIRRORED_SECTIONS = ['learn', 'culture', 'travel'];
+const SEARCH_MIRROR_MISSING = {};   // e.g. 'travel/planner.html': ['th']
+
+function searchResolveUrl(url, lang) {
+  const loc = (lang || searchDocLang()).toLowerCase();
+  const clean = String(url).replace(/^\//, '');
+  const cut = clean.search(/[?#]/);
+  const filePath = cut === -1 ? clean : clean.slice(0, cut);
+  const suffix   = cut === -1 ? ''    : clean.slice(cut);
+
+  if (SEARCH_LOCALES.indexOf(loc) === -1) return '/' + clean;          // English page
+
+  const parts = filePath.split('/');
+  if (SEARCH_LOCALES.indexOf(parts[0]) !== -1 ||
+      SEARCH_LOCALES.indexOf(parts[1]) !== -1) return '/' + clean;     // already localized
+
+  const optedOut = SEARCH_MIRROR_MISSING[filePath];
+  if (optedOut && optedOut.indexOf(loc) !== -1) return '/' + clean;
+
+  let mirrored;
+  if (parts.length === 1) mirrored = loc + '/' + parts[0];
+  else if (SEARCH_MIRRORED_SECTIONS.indexOf(parts[0]) !== -1)
+    mirrored = parts[0] + '/' + loc + '/' + parts.slice(1).join('/');
+  else return '/' + clean;                                            // unmirrored section
+
+  return '/' + mirrored + suffix;
 }
 
-/* Lazy word index — every vocab word on the site, all languages.
-   Generated by scripts/gen-search-words.cjs into learn/data/search-words.json */
+/* Lazy word index — every word, letter, drill and lesson topic on the site,
+   in all 9 languages. Generated by scripts/gen-search-words.cjs into
+   learn/data/search-words.json.
+
+   `c` marks what an entry is; a plain word has no `c`. Only 't' (a lesson
+   topic) gets its own results-page category — the rest are words wearing a
+   different icon, because an unknown category is silently dropped by the
+   ORDER filter in SearchPage rather than rendered. */
+const WORD_KIND = {
+  t: { category: 'topics', icon: '📄' },   // reading_card
+  l: { category: 'words',  icon: '✍️' },   // stroke_trace / key_intro
+  d: { category: 'words',  icon: '⌨️' },   // typing_drill
+  q: { category: 'words',  icon: '❓' }    // match_quiz
+};
+const WORD_KIND_DEFAULT = { category: 'words', icon: '🔤' };
+const LOCALE_AID = { ja: 'k', zh_tw: 'z', vi: 'v', th: 'h' };
+
 let _wordIndexReady = false;
 let _wordIndexPromise = null;
 function loadWordIndex() {
@@ -1040,13 +1097,30 @@ function loadWordIndex() {
       entries.forEach(e => {
         const tags = [e.t, e.w, e.r, e.k, e.z, e.v, e.h].filter(Boolean);
         Object.keys(e.m || {}).forEach(k => tags.push(e.m[k]));
+        Object.keys(e.x || {}).forEach(k => tags.push(e.x[k]));
+
+        /* locText = everything a reader of THIS page could reasonably type:
+           the Korean, its romanization, their own pronunciation aid, and the
+           meaning in their own language. altText = the other eight languages.
+           searchRank() uses the split; matching still uses every language. */
+        const aid = e[LOCALE_AID[mKey]];
+        const locText = [e.t, e.w, e.r, aid, (e.m || {})[mKey], (e.x || {})[mKey]]
+          .filter(Boolean).join(' ').toLowerCase();
+        const altText = [e.m, e.x].reduce((acc, map) => acc.concat(
+          Object.keys(map || {}).filter(k => k !== mKey).map(k => map[k])), []
+        ).join(' ').toLowerCase();
+
+        const kind = WORD_KIND[e.c] || WORD_KIND_DEFAULT;
         window.SEARCH_INDEX.push({
           title: e.t + (e.w ? ' · ' + e.w : '') + (e.r ? ' (' + e.r + ')' : ''),
-          url: lang !== 'en' ? e.u.replace(/^learn\//, 'learn/' + lang + '/') : e.u,
-          category: 'words',
-          icon: '🔤',
+          // Stored in English; searchResolveUrl() localizes at render time so
+          // there is exactly one mirror rule for the whole index.
+          url: e.u,
+          category: kind.category,
+          icon: kind.icon,
           tags: tags.map(s => String(s).toLowerCase()),
-          desc: (e.m && (e.m[mKey] || e.m.en)) || ''
+          desc: (e.m && (e.m[mKey] || e.m.en)) || '',
+          locText, altText
         });
       });
       _wordIndexReady = true;
@@ -1099,18 +1173,42 @@ function initSearch() {
   document.addEventListener('click', hideDropdown);
 }
 
+/* Matching is cross-language on purpose: a Thai learner who only knows a word
+   in English must still find it, and the index carries all 9 languages for
+   exactly that reason. What that costs is relevance — a query can match an
+   entry solely because some locale the reader does not read happens to
+   contain the string. So rank, don't filter:
+
+     3 title    the query is in the headword itself
+     2 locale   matched in THIS reader's language (or the Korean/romanization)
+     1 neutral  static index entry — English titles/descs are all it has
+     0 foreign  matched only via another language's meaning
+
+   Dropping tier 0 instead of demoting it would re-break the multilingual
+   reader this ordering exists to serve. */
+const RANK_TITLE = 3, RANK_LOCALE = 2, RANK_NEUTRAL = 1, RANK_FOREIGN = 0;
+
+function searchRank(item, words) {
+  if (words.every(w => item.title.toLowerCase().includes(w))) return RANK_TITLE;
+  if (item.locText && words.every(w => item.locText.includes(w))) return RANK_LOCALE;
+  if (!item.altText) return RANK_NEUTRAL;
+  return RANK_FOREIGN;
+}
+
 function searchIndex(q) {
   const words = q.toLowerCase().split(/\s+/).filter(Boolean);
   if (!words.length) return [];
-  const titleMatches = [], otherMatches = [];
+  const buckets = [[], [], [], []];
   window.SEARCH_INDEX.forEach(item => {
-    const title = item.title.toLowerCase();
-    const hay = title + ' ' + item.tags.join(' ').toLowerCase() + ' ' + item.desc.toLowerCase();
-    if (!words.every(w => hay.includes(w))) return;
-    if (words.every(w => title.includes(w))) titleMatches.push(item);
-    else otherMatches.push(item);
+    // haystack is stable per item and the index is now 944 entries — build once
+    if (!item._hay) {
+      item._hay = (item.title + ' ' + item.tags.join(' ') + ' ' + (item.desc || '')).toLowerCase();
+    }
+    if (!words.every(w => item._hay.includes(w))) return;
+    buckets[searchRank(item, words)].push(item);
   });
-  return [...titleMatches, ...otherMatches];
+  return [...buckets[RANK_TITLE], ...buckets[RANK_LOCALE],
+          ...buckets[RANK_NEUTRAL], ...buckets[RANK_FOREIGN]];
 }
 
 function showDropdown(results, input, q, searchBase) {
@@ -1238,8 +1336,10 @@ const KSProgress = (() => {
 
     s.counters.steps++;
     if (stepType === 'listen_repeat') s.counters.words++;
-    else if (stepType === 'card_reveal' || stepType === 'syllable_builder') s.counters.letters++;
-    else if (stepType === 'match_quiz') s.counters.quizzes++;
+    else if (stepType === 'card_reveal' || stepType === 'syllable_builder' ||
+        stepType === 'stroke_demo' || stepType === 'stroke_trace' ||
+        stepType === 'key_intro') s.counters.letters++;
+    else if (stepType === 'match_quiz' || stepType === 'typing_drill') s.counters.quizzes++;
 
     const today = _dateStr();
     if (s.today.date !== today) s.today = { date: today, steps: 0 };
@@ -1317,8 +1417,10 @@ const LessonProgressGrid = (() => {
   // Ids match lessonData.lesson in learn/data/*.json ('vocab' aggregates all vocab-* topics).
   const LESSONS = [
     { id: 'hangul',           url: 'hangul.html',          name: 'Hangul Alphabet',  level: 'starter',      k: '가' },
+    { id: 'letter-writing',   url: 'letter-writing.html',  name: 'Letter Writing',   level: 'starter',      k: '쓰' },
     { id: 'syllable-blocks',  url: 'syllable-blocks.html', name: 'Syllable Blocks',  level: 'starter',      k: '한' },
     { id: 'pronunciation',    url: 'pronunciation.html',   name: 'Pronunciation',    level: 'starter',      k: '음' },
+    { id: 'typing',           url: 'typing.html',          name: 'Korean Typing',    level: 'starter',      k: '타' },
     { id: 'vocab',            url: 'vocabulary.html',      name: 'Vocabulary',       level: 'beginner',     k: '어' },
     { id: 'pronouns',         url: 'pronouns.html',        name: 'Pronouns',         level: 'beginner',     k: '나' },
     { id: 'nouns',            url: 'nouns.html',           name: 'Common Nouns',     level: 'beginner',     k: '명' },
@@ -2624,12 +2726,15 @@ function initSidebarAccordions() {
 const SearchPage = (() => {
   const CAT_META = {
     words:   { label: 'Words',   icon: '🔤', badgeClass: 'tag-beginner' },
+    topics:  { label: 'Topics',  icon: '📄', badgeClass: 'tag-beginner' },
     learn:   { label: 'Learn',   icon: '📚', badgeClass: 'tag-beginner' },
     culture: { label: 'Culture', icon: '🎵', badgeClass: 'tag-kpop'    },
     travel:  { label: 'Travel',  icon: '🗺️', badgeClass: 'tag-travel'  },
     home:    { label: 'Home',    icon: '🏠', badgeClass: 'tag-news'    },
   };
-  const ORDER = ['learn', 'words', 'culture', 'travel', 'home'];
+  // A category absent from ORDER is silently dropped, not rendered — any new
+  // category in WORD_KIND must be added here AND to CAT_META.
+  const ORDER = ['learn', 'topics', 'words', 'culture', 'travel', 'home'];
 
   function T(s) {
     return (window.LangManager && LangManager.t) ? LangManager.t(s) : s;

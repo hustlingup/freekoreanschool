@@ -11,6 +11,34 @@ const StepRunner = (() => {
   let lessonData = null;
   let currentIndex = 0;
   let stageStepMap = {};
+  /* Live StrokeWriter instance for a stroke_demo / stroke_trace step.
+     Stays null on every lesson page that does not load js/stroke-writer.js,
+     which makes every code path that touches it a no-op there. */
+  let strokeInstance = null;
+  /* Live TypingGame instance for a key_intro / typing_drill step. Same
+     contract as strokeInstance: stays null on every lesson page that does not
+     load js/typing-game.js, so every code path that touches it is a no-op
+     there. The engine binds keydown/keyup listeners and an interval timer, so
+     an instance MUST be destroyed before another mounts and when the learner
+     leaves the step. */
+  let typingInstance = null;
+  /* Pending auto-advance timer for a completed key_intro step. key_intro steps
+     (typing stages 2–4) advance themselves after the widget's "Done!" reward so
+     the learner never has to scroll down and click Continue. Stored module-level
+     so it can be cancelled the instant the step changes — a queued advance must
+     never fire after manual navigation and double-jump. typing_drill never sets
+     it. */
+  let typingAdvanceTimer = null;
+  /* ~750ms: long enough for the widget's "Done!" reward to register, short
+     enough not to feel stuck. */
+  const KEY_INTRO_ADVANCE_MS = 750;
+
+  function clearTypingAdvance() {
+    if (typingAdvanceTimer !== null) {
+      clearTimeout(typingAdvanceTimer);
+      typingAdvanceTimer = null;
+    }
+  }
 
   function t(key) { return window.LangManager ? LangManager.t(key) : key; }
 
@@ -208,7 +236,7 @@ const StepRunner = (() => {
   /* ── Navigation ────────────────────────────────────── */
   function nextStep() {
     const step = lessonData.steps[currentIndex];
-    if (step && (step.type === 'reading_card' || step.type === 'card_reveal')) {
+    if (step && (step.type === 'reading_card' || step.type === 'card_reveal' || step.type === 'stroke_demo')) {
       markDone(currentIndex, step.type);
     }
     if (currentIndex < lessonData.steps.length - 1) {
@@ -223,6 +251,9 @@ const StepRunner = (() => {
   }
 
   function goToStep(index, { pushState = true } = {}) {
+    // Any navigation cancels a queued key_intro auto-advance so it can never
+    // fire against a step the learner already left (which would double-jump).
+    clearTypingAdvance();
     currentIndex = Math.max(0, Math.min(index, lessonData.steps.length - 1));
 
     if (pushState) {
@@ -262,6 +293,10 @@ const StepRunner = (() => {
       syllable_builder: renderSyllableBuilder,
       listen_repeat: renderListenRepeat,
       lesson_complete: renderLessonComplete,
+      stroke_demo: renderStrokeDemo,
+      stroke_trace: renderStrokeTrace,
+      key_intro: renderKeyIntro,
+      typing_drill: renderTypingDrill,
     };
 
     const renderer = renderers[step.type];
@@ -269,6 +304,30 @@ const StepRunner = (() => {
       content.innerHTML = renderer(step);
     } else {
       content.innerHTML = `<p>${step.type} step</p>`;
+    }
+
+    /* Stroke widget mount. `window.StrokeWriter` is only present on
+       learn/letter-writing.html; everywhere else this is dead weight and the
+       renderer output degrades to a static card with an empty mount div.
+       The else-branch only fires when an instance exists, i.e. never on a page
+       without the engine. */
+    if ((step.type === 'stroke_demo' || step.type === 'stroke_trace') && window.StrokeWriter) {
+      mountStrokeStep(step, index);
+    } else if (strokeInstance) {
+      destroyStrokeStep();
+    }
+
+    /* Typing widget mount — exact mirror of the stroke block above.
+       `window.TypingGame` is only present on learn/typing.html; everywhere else
+       this is dead weight and the renderer output degrades to a static card
+       with an empty mount div. The else-branch only fires when an instance
+       exists, i.e. never on a page without the engine — and it is what tears
+       down the previous game's keydown listeners when the learner navigates
+       away from a typing step. */
+    if ((step.type === 'key_intro' || step.type === 'typing_drill') && window.TypingGame) {
+      mountTypingStep(step, index);
+    } else if (typingInstance) {
+      destroyTypingStep();
     }
 
     requestAnimationFrame(() => content.classList.remove('step-enter'));
@@ -319,12 +378,15 @@ const StepRunner = (() => {
         </div>
       </div>` : '';
 
-    // The Korean subtitle is shown only when it differs from the resolved
-    // title. On proverb/grammar cards the base title IS Korean, so an English
-    // reader's title_kr just repeats it — hide it there, but keep it for
-    // localized readers whose title is a translation.
+    // The Korean subtitle is shown only when the resolved title does not
+    // already carry it. Two ways it can: the base title IS Korean (proverb and
+    // grammar cards), or the Korean sits in parentheses inside it —
+    // "Emotions in Korean (감정)" + title_kr "감정" rendered 감정 twice on 23
+    // steps. Containment, not equality, because the parenthetical form is not
+    // an exact match. Tested per-locale: a locale whose title drops the
+    // parenthetical still gets the subtitle.
     const _title = loc(step, 'title');
-    const _krSub = step.title_kr && step.title_kr !== _title
+    const _krSub = step.title_kr && !String(_title || '').includes(step.title_kr)
       ? ` <span class="sr-reading-title-kr">${esc(step.title_kr)}</span>` : '';
     return `
       <div class="sr-reading-card">
@@ -559,6 +621,294 @@ const StepRunner = (() => {
       </div>`;
   }
 
+  /* ── Stroke-order steps (learn/letter-writing) ───────────────────────
+     stroke_demo  — watch the strokes animate, then Next.
+     stroke_trace — draw each stroke yourself; Next is hidden until the
+                    widget reports completion.
+
+     The renderers are pure string builders like every other renderer here and
+     are safe on any page. The WIDGET is mounted separately in renderStep, gated
+     on `window.StrokeWriter`, which only learn/letter-writing.html loads.       */
+
+  function renderStrokeDemo(step) {
+    const lang = _detectLang();
+    const isJa = lang === 'ja';
+    const pronAid = getPronunciationAid(step);
+    const showPronInRomSlot = lang === 'zh-tw'; // Zhuyin replaces romanization slot
+    const hint = loc(step, 'hint');
+    const exMeaning = loc(step, 'example_meaning');
+    // Same markup + handler pattern as the card_reveal audio button.
+    const audioFnBtn = window.AudioCache
+      ? `AudioCache.play('${esc(step.audio)}', this)`
+      : `speakKorean('${esc(step.audio)}', this)`;
+    const hearBtn   = isJa ? '聴く' : lang === 'zh-tw' ? '聽' : lang === 'es' ? 'Escuchar' : lang === 'fr' ? 'Écouter' : lang === 'de' ? 'Anhören' : lang === 'vi' ? 'Nghe' : lang === 'th' ? 'ฟัง' : lang === 'id' ? 'Dengarkan' : 'Hear it';
+    const replayBtn = isJa ? 'もう一度' : lang === 'zh-tw' ? '重播' : lang === 'es' ? 'Repetir' : lang === 'fr' ? 'Rejouer' : lang === 'de' ? 'Nochmal' : lang === 'vi' ? 'Xem lại' : lang === 'th' ? 'เล่นซ้ำ' : lang === 'id' ? 'Putar ulang' : 'Replay';
+    return `
+      <div class="sr-stroke-step">
+        <div class="sr-char">${esc(step.char)}</div>
+        <div class="sr-rom">${esc(showPronInRomSlot && pronAid ? pronAid : step.romanization)}</div>
+        ${pronAid && !showPronInRomSlot && isJa ? `<div class="kata">${esc(pronAid)}</div>` : ''}
+        <div class="sr-stroke-mount" id="sw-step-mount"></div>
+        <div class="sr-stroke-actions">
+          <button class="btn btn-secondary" onclick="StepRunner.strokeReplay()">↻ ${replayBtn}</button>
+          ${step.audio ? `<button class="btn btn-primary sr-audio-btn" onclick="${audioFnBtn}">🔊 ${hearBtn}</button>` : ''}
+        </div>
+        ${hint ? `<div class="sr-hint">💡 ${esc(hint)}</div>` : ''}
+        ${step.example_word ? `<div class="sr-example">${esc(step.example_word)} · ${esc(exMeaning)}</div>` : ''}
+      </div>`;
+  }
+
+  function renderStrokeTrace(step) {
+    const lang = _detectLang();
+    const isJa = lang === 'ja';
+    const isZhTw = lang === 'zh-tw';
+    const isEs = lang === 'es';
+    const isFr = lang === 'fr';
+    const isDe = lang === 'de';
+    const isVi = lang === 'vi';
+    const isTh = lang === 'th';
+    const isId = lang === 'id';
+    const hint = loc(step, 'hint');
+    // Wording tracks the widget's own "Write it yourself" mode label — the
+    // engine tells the learner to DRAW, so this line must not say "trace".
+    const instruction = isJa ? '自分で書いてみましょう — 番号の順に一画ずつ書いてください。'
+      : isZhTw ? '親手寫寫看 — 依照編號順序逐筆書寫。'
+      : isEs ? 'Escríbelo tú mismo: dibuja cada trazo en el orden numerado.'
+      : isFr ? 'Écrivez-le vous-même : dessinez chaque trait dans l\'ordre numéroté.'
+      : isDe ? 'Schreibe es selbst — zeichne jeden Strich in der nummerierten Reihenfolge.'
+      : isVi ? 'Tự viết nhé — vẽ từng nét theo đúng thứ tự đánh số.'
+      : isTh ? 'เขียนด้วยตัวเอง — ลากทีละเส้นตามลำดับหมายเลข'
+      : isId ? 'Tulis sendiri — gambar setiap goresan sesuai urutan nomor.'
+      : 'Write it yourself — draw each stroke in the numbered order.';
+    return `
+      <div class="sr-stroke-step">
+        <p class="sr-quiz-prompt">${instruction}</p>
+        <div class="sr-stroke-mount" id="sw-step-mount"></div>
+        ${hint ? `<div class="sr-hint">💡 ${esc(hint)}</div>` : ''}
+        <div class="sr-stroke-actions">
+          <button class="btn btn-primary" id="sw-continue" style="display:none"
+            onclick="StepRunner.stepContinue()">${continueLabel(lang)} →</button>
+        </div>
+      </div>`;
+  }
+
+  function destroyStrokeStep() {
+    if (!strokeInstance) return;
+    try { strokeInstance.destroy(); } catch (e) {}
+    strokeInstance = null;
+  }
+
+  /* Called from renderStep ONLY when window.StrokeWriter exists. */
+  function mountStrokeStep(step, index) {
+    destroyStrokeStep();
+    const mount = document.getElementById('sw-step-mount');
+    if (!mount) return;
+    const isTrace = step.type === 'stroke_trace';
+    try {
+      strokeInstance = window.StrokeWriter.render(mount, step.char, {
+        mode: isTrace ? 'trace' : 'watch',
+        numbers: true,
+        size: 260,
+        // The step supplies its own labelled replay button in .sr-stroke-actions;
+        // the engine's own control row would duplicate it.
+        controls: false,
+        onComplete: () => {
+          markDone(index, step.type);
+          if (isTrace) {
+            const b = document.getElementById('sw-continue');
+            if (b) b.style.display = '';
+          }
+        },
+      });
+    } catch (e) {
+      console.error('StepRunner: stroke widget failed to mount', e);
+      strokeInstance = null;
+    }
+  }
+
+  /* Public hook used by the stroke_demo markup above. No-op without a live
+     instance, so it cannot break a page that never renders a stroke step. */
+  function strokeReplay() {
+    if (strokeInstance && typeof strokeInstance.replay === 'function') strokeInstance.replay();
+  }
+
+  /* Shared "the widget says you're done, move on" hook. Emitted by
+     stroke_trace (#sw-continue) AND by both typing steps (#kb-continue), which
+     is why it is no longer called strokeContinue. No-op without lessonData, so
+     it cannot break a page that never renders either step type. */
+  function stepContinue() {
+    if (!lessonData) return;
+    goToStep(currentIndex + 1);
+  }
+
+  /* ── Typing steps (learn/typing) ─────────────────────────────────────
+     key_intro    — press the highlighted key(s) N times each.
+     typing_drill — type jamo / syllables / words against a count or a clock.
+
+     Both renderers are pure string builders like every other renderer here and
+     are safe on any page: they emit a header, an empty mount div and a hidden
+     continue button, nothing more. The WIDGET is mounted separately in
+     renderStep, gated on `window.TypingGame`, which only learn/typing.html
+     loads. All game chrome — keyboard, prompt, stats, summary — is built by
+     TypingGame.mountStep; keep these renderers thin.                         */
+
+  /* The Continue label is identical for stroke_trace and both typing steps. */
+  function continueLabel(lang) {
+    return lang === 'ja' ? '次へ' : lang === 'zh-tw' ? '下一步' : lang === 'es' ? 'Continuar' : lang === 'fr' ? 'Continuer' : lang === 'de' ? 'Weiter' : lang === 'vi' ? 'Tiếp tục' : lang === 'th' ? 'ต่อไป' : lang === 'id' ? 'Lanjutkan' : 'Continue';
+  }
+
+  /* key_intro / typing_drill author `tip` as a plain STRING, unlike
+     reading_card's { icon, label, text } object. Accept either shape so a
+     copy-pasted reading_card tip renders its text instead of the string
+     "[object Object]". */
+  function typingTipHtml(step) {
+    const tip = loc(step, 'tip');
+    const text = typeof tip === 'string' ? tip : (tip && tip.text) || '';
+    return text ? `<div class="sr-hint">💡 ${esc(text)}</div>` : '';
+  }
+
+  /* Mount + hidden continue button, shared by both typing renderers. */
+  function typingMountHtml(lang) {
+    return `
+        <div class="sr-typing-mount" id="kb-step-mount"></div>
+        <div class="sr-stroke-actions">
+          <button class="btn btn-primary" id="kb-continue" style="display:none"
+            onclick="StepRunner.stepContinue()">${continueLabel(lang)} →</button>
+        </div>`;
+  }
+
+  function renderKeyIntro(step) {
+    const lang = _detectLang();
+    // step.jamo is an array of 1–3 chars in the JSON, but tolerate a bare
+    // string so a malformed step degrades to a bare title instead of "undefined".
+    const jamo = Array.isArray(step.jamo) ? step.jamo.join(' ') : (step.jamo || '');
+    const titleWord = lang === 'ja' ? '新しいキー'
+      : lang === 'zh-tw' ? '新按鍵'
+      : lang === 'es' ? 'Teclas nuevas'
+      : lang === 'fr' ? 'Nouvelles touches'
+      : lang === 'de' ? 'Neue Tasten'
+      : lang === 'vi' ? 'Phím mới'
+      : lang === 'th' ? 'ปุ่มใหม่'
+      : lang === 'id' ? 'Tombol baru'
+      : 'New keys';
+    // A JSON-authored title always wins; the generated one is the fallback so
+    // stage 2–4 steps need no title field at all.
+    // CJK copy takes the fullwidth colon; every other locale the ASCII one.
+    const colon = (lang === 'ja' || lang === 'zh-tw') ? '：' : ': ';
+    const title = loc(step, 'title') || (jamo ? `${titleWord}${colon}${jamo}` : titleWord);
+    const instruction = lang === 'ja' ? 'ハイライトされたキーを、指が覚えるまで押してみましょう。物理キーボードでも画面のキーでも構いません。'
+      : lang === 'zh-tw' ? '按下每個highlight的按鍵，直到手指記住為止。實體鍵盤或螢幕鍵盤都可以。'
+      : lang === 'es' ? 'Pulsa cada tecla resaltada hasta que te salga sola: sirve tu teclado o las teclas en pantalla.'
+      : lang === 'fr' ? 'Appuyez sur chaque touche mise en évidence jusqu\'à ce que le geste devienne automatique : clavier physique ou touches à l\'écran.'
+      : lang === 'de' ? 'Drücke jede hervorgehobene Taste, bis sie sitzt — Tastatur oder Bildschirmtasten funktionieren beide.'
+      : lang === 'vi' ? 'Nhấn từng phím được làm nổi bật cho đến khi thành phản xạ — bàn phím thật hoặc bàn phím trên màn hình đều được.'
+      : lang === 'th' ? 'กดปุ่มที่ไฮไลต์แต่ละปุ่มจนคุ้นมือ ใช้คีย์บอร์ดจริงหรือแป้นบนหน้าจอก็ได้'
+      : lang === 'id' ? 'Tekan setiap tombol yang disorot sampai terasa otomatis — keyboard fisik maupun tombol di layar sama-sama bisa.'
+      : 'Press each highlighted key until it feels automatic — your keyboard or the on-screen keys both work.';
+    // The --intro modifier is the shared contract with css/style.css: it lets
+    // the stylesheet widen the key_intro step and kill its stranded height
+    // WITHOUT touching typing_drill, which keeps the bare .sr-typing-step.
+    return `
+      <div class="sr-typing-step sr-typing-step--intro">
+        <h2 class="sr-reading-title">${esc(title)}</h2>
+        <p class="sr-quiz-prompt">${esc(loc(step, 'instruction') || instruction)}</p>
+        ${typingMountHtml(lang)}
+        ${typingTipHtml(step)}
+      </div>`;
+  }
+
+  function renderTypingDrill(step) {
+    const lang = _detectLang();
+    const mode = step.mode === 'syllable' ? 'syllable' : step.mode === 'word' ? 'word' : 'jamo';
+    const titles = {
+      ja:      { jamo: '字母ドリル',            syllable: '音節ドリル',        word: '単語ドリル' },
+      'zh-tw': { jamo: '字母練習',              syllable: '音節練習',          word: '單字練習' },
+      es:      { jamo: 'Práctica de jamo',      syllable: 'Práctica de sílabas', word: 'Práctica de palabras' },
+      fr:      { jamo: 'Exercice de jamo',      syllable: 'Exercice de syllabes', word: 'Exercice de mots' },
+      de:      { jamo: 'Jamo-Übung',            syllable: 'Silben-Übung',      word: 'Wort-Übung' },
+      vi:      { jamo: 'Luyện jamo',            syllable: 'Luyện âm tiết',     word: 'Luyện từ' },
+      th:      { jamo: 'ฝึกพยัญชนะและสระ',        syllable: 'ฝึกพยางค์',          word: 'ฝึกคำศัพท์' },
+      id:      { jamo: 'Latihan jamo',          syllable: 'Latihan suku kata', word: 'Latihan kata' },
+      en:      { jamo: 'Jamo drill',            syllable: 'Syllable drill',    word: 'Word drill' },
+    };
+    const title = loc(step, 'title') || (titles[lang] || titles.en)[mode];
+    const instruction = lang === 'ja' ? '表示されたものを入力しましょう。まずは正確さ、スピードは後からついてきます。'
+      : lang === 'zh-tw' ? '照著畫面上的內容輸入。先求正確，速度自然會跟上。'
+      : lang === 'es' ? 'Escribe lo que ves. Primero la precisión; la velocidad llega sola.'
+      : lang === 'fr' ? 'Tapez ce que vous voyez. La précision d\'abord, la vitesse suivra.'
+      : lang === 'de' ? 'Tippe, was du siehst. Erst die Genauigkeit — das Tempo kommt von selbst.'
+      : lang === 'vi' ? 'Gõ đúng những gì bạn thấy. Chính xác trước, tốc độ theo sau.'
+      : lang === 'th' ? 'พิมพ์ตามที่เห็น เน้นความแม่นยำก่อน แล้วความเร็วจะตามมาเอง'
+      : lang === 'id' ? 'Ketik apa yang kamu lihat. Utamakan akurasi — kecepatan menyusul.'
+      : 'Type what you see. Accuracy first — speed follows.';
+    return `
+      <div class="sr-typing-step">
+        <h2 class="sr-reading-title">${esc(title)}</h2>
+        <p class="sr-quiz-prompt">${esc(loc(step, 'instruction') || instruction)}</p>
+        ${typingMountHtml(lang)}
+        ${typingTipHtml(step)}
+      </div>`;
+  }
+
+  function destroyTypingStep() {
+    // Tearing down the widget also kills any auto-advance it queued.
+    clearTypingAdvance();
+    if (!typingInstance) return;
+    try { typingInstance.destroy(); } catch (e) {}
+    typingInstance = null;
+  }
+
+  /* Called from renderStep ONLY when window.TypingGame exists.
+     TypingGame.mountStep(step, mountEl, onComplete) — the signature documented
+     in the js/typing-game.js header (§2.4); there is no ctx object. It returns
+     the game instance ({ destroy(), … }) and clears the mount itself, but we
+     still destroy the previous instance first: the engine's own _mounted map
+     only tracks per-ELEMENT reuse, and each renderStep() builds a brand-new
+     #kb-step-mount, so nothing else would ever unbind the old listeners. */
+  function mountTypingStep(step, index) {
+    destroyTypingStep();
+    const mount = document.getElementById('kb-step-mount');
+    if (!mount) return;
+    try {
+      typingInstance = window.TypingGame.mountStep(step, mount, (result) => {
+        /* key_intro completes with NO argument; typing_drill passes
+           { cpm, accuracy, misses, correct, total, elapsedMs } with accuracy as
+           an integer PERCENT (0–100, never a 0–1 fraction). The widget renders
+           its own .kb-summary from those numbers, so the step-level handler
+           deliberately displays none of them — it only has to tolerate both
+           shapes, which it does by never reading `result` without a guard. */
+        markDone(index, step.type);
+        const b = document.getElementById('kb-continue');
+        if (b) b.style.display = '';
+        if (result && typeof result.cpm === 'number' && window.gtag) {
+          gtag('event', 'typing_drill_complete', {
+            lesson: lessonId(), step: index + 1,
+            cpm: result.cpm, accuracy: result.accuracy,
+          });
+        }
+        /* key_intro only: after the widget's "Done!" reward has had a moment to
+           register, advance automatically so the learner never has to scroll
+           down and click Continue between typing stages. The Continue button
+           above stays revealed as a fallback. typing_drill is deliberately
+           excluded — it ends on a summary card the learner should read.
+           Guards: replace any prior pending timer; fire only if still on THIS
+           step (currentIndex === index — any navigation or Continue click will
+           have moved it and cancelled the timer); never run past the last
+           step. */
+        if (step.type === 'key_intro' && index + 1 < lessonData.steps.length) {
+          clearTypingAdvance();
+          typingAdvanceTimer = setTimeout(() => {
+            typingAdvanceTimer = null;
+            if (currentIndex === index) goToStep(index + 1);
+          }, KEY_INTRO_ADVANCE_MS);
+        }
+      });
+    } catch (e) {
+      console.error('StepRunner: typing widget failed to mount', e);
+      typingInstance = null;
+    }
+  }
+
   /* ── Quiz Handler ───────────────────────────────────── */
   function handleQuizAnswer(el) {
     const container = el.closest('.sr-quiz');
@@ -681,7 +1031,11 @@ const StepRunner = (() => {
     if (prev) prev.disabled = index === 0;
 
     if (next) {
-      const hideTypes = ['match_quiz', 'lesson_complete', 'listen_repeat'];
+      // stroke_trace gates on the widget's own completion (#sw-continue);
+      // stroke_demo keeps a visible Next. key_intro / typing_drill gate the
+      // same way on the TypingGame widget's #kb-continue.
+      const hideTypes = ['match_quiz', 'lesson_complete', 'listen_repeat', 'stroke_trace',
+        'key_intro', 'typing_drill'];
       const shouldHide = hideTypes.includes(step?.type);
       next.style.display = shouldHide ? 'none' : '';
       next.disabled = index >= lessonData.steps.length - 1;
@@ -726,6 +1080,13 @@ const StepRunner = (() => {
     revealSyllable,
     confirmRepeat,
     toggleVocabBookmark,
+    stepContinue,
+    /* Deprecated alias for stepContinue(), kept for one release: prompt C's
+       markup called StepRunner.strokeContinue() and a cached page or an
+       out-of-tree caller may still do so. Nothing in this repo references it —
+       new markup must use stepContinue(). */
+    strokeContinue: stepContinue,
+    strokeReplay,
     restart,
   };
 })();

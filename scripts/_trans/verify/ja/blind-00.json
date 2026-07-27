@@ -1,0 +1,487 @@
+{
+  "lang": "ja",
+  "chunk": 0,
+  "count": 120,
+  "units": [
+    {
+      "ref": "emotions::stages.0.name",
+      "text": "基本感情"
+    },
+    {
+      "ref": "emotions::stages.1.name",
+      "text": "感情表現"
+    },
+    {
+      "ref": "emotions::stages.2.name",
+      "text": "複雑な感情"
+    },
+    {
+      "ref": "emotions::stages.3.name",
+      "text": "感情フレーズ"
+    },
+    {
+      "ref": "emotions::steps.0.title",
+      "text": "韓国語の感情（감정）"
+    },
+    {
+      "ref": "emotions::steps.9.title",
+      "text": "もっと感情の言葉（감정 어휘）"
+    },
+    {
+      "ref": "emotions::steps.15.title",
+      "text": "기분——気分と感情"
+    },
+    {
+      "ref": "emotions::steps.18.title",
+      "text": "より深い感情（깊은 감정）"
+    },
+    {
+      "ref": "emotions::steps.32.message",
+      "text": "韓国語の感情語彙を学びました——基本的な感情から、그립다、뿌듯하다、설레다のような文化的に豊かな言葉まで。あなたの感情表現の韓国語力が育っています！"
+    },
+    {
+      "ref": "grammar::stages.0.name",
+      "text": "文"
+    },
+    {
+      "ref": "grammar::stages.1.name",
+      "text": "助詞"
+    },
+    {
+      "ref": "grammar::stages.2.name",
+      "text": "活用"
+    },
+    {
+      "ref": "grammar::stages.3.name",
+      "text": "否定文"
+    },
+    {
+      "ref": "grammar::stages.4.name",
+      "text": "疑問文"
+    },
+    {
+      "ref": "grammar::stages.5.name",
+      "text": "文型"
+    },
+    {
+      "ref": "grammar::stages.6.name",
+      "text": "接続詞"
+    },
+    {
+      "ref": "grammar::stages.7.name",
+      "text": "と／とともに"
+    },
+    {
+      "ref": "grammar::stages.8.name",
+      "text": "に／から"
+    },
+    {
+      "ref": "grammar::stages.9.name",
+      "text": "時間"
+    },
+    {
+      "ref": "grammar::stages.10.name",
+      "text": "助数詞"
+    },
+    {
+      "ref": "grammar::stages.11.name",
+      "text": "進行形"
+    },
+    {
+      "ref": "grammar::stages.12.name",
+      "text": "自己紹介"
+    },
+    {
+      "ref": "grammar::stages.13.name",
+      "text": "日付"
+    },
+    {
+      "ref": "grammar::stages.14.name",
+      "text": "副詞"
+    },
+    {
+      "ref": "grammar::stages.15.name",
+      "text": "名詞化"
+    },
+    {
+      "ref": "grammar::stages.16.name",
+      "text": "比較"
+    },
+    {
+      "ref": "grammar::stages.17.name",
+      "text": "好き"
+    },
+    {
+      "ref": "grammar::stages.18.name",
+      "text": "まだ／すでに"
+    },
+    {
+      "ref": "grammar::stages.19.name",
+      "text": "不定"
+    },
+    {
+      "ref": "grammar::stages.20.name",
+      "text": "命令形"
+    },
+    {
+      "ref": "grammar::stages.21.name",
+      "text": "禁止形"
+    },
+    {
+      "ref": "grammar::stages.22.name",
+      "text": "方法"
+    },
+    {
+      "ref": "grammar::stages.23.name",
+      "text": "上手／下手"
+    },
+    {
+      "ref": "grammar::stages.24.name",
+      "text": "すべて／もっと"
+    },
+    {
+      "ref": "grammar::stages.25.name",
+      "text": "-도 上級"
+    },
+    {
+      "ref": "grammar::steps.0.rules[0]",
+      "text": "英語（SVO）：I eat rice."
+    },
+    {
+      "ref": "grammar::steps.0.rules[1]",
+      "text": "韓国語（SOV）：나는 밥을 먹어요.（私 ご飯 食べる）"
+    },
+    {
+      "ref": "grammar::steps.0.rules[2]",
+      "text": "ヒント：最後の単語をよく聞いてください——それが動詞、つまり動作です！"
+    },
+    {
+      "ref": "grammar::steps.0.tip.label",
+      "text": "文法のヒント"
+    },
+    {
+      "ref": "grammar::steps.0.tip.text",
+      "text": "動詞が最後に来ることさえ分かれば、すべてが腑に落ちます。文の他の部分は入れ替えても構いません——韓国語話者は助詞を使って意味を明確にします。"
+    },
+    {
+      "ref": "grammar::steps.3.rules[0]",
+      "text": "은/는 → 主題を表す助詞（子音の後は은、母音の後は는）"
+    },
+    {
+      "ref": "grammar::steps.3.rules[1]",
+      "text": "이/가 → 主格を表す助詞（子音の後は이、母音の後は가）"
+    },
+    {
+      "ref": "grammar::steps.3.rules[2]",
+      "text": "을/를 → 目的語を表す助詞（子音の後は을、母音の後は를）"
+    },
+    {
+      "ref": "grammar::steps.3.rules[3]",
+      "text": "에 → 場所／方向"
+    },
+    {
+      "ref": "grammar::steps.3.rules[4]",
+      "text": "에서 → 動作が行われる場所"
+    },
+    {
+      "ref": "grammar::steps.3.rules[5]",
+      "text": "의 → 所有格（〜の）"
+    },
+    {
+      "ref": "grammar::steps.11.body",
+      "text": "韓国語の動詞は辞書形がすべて다（da）で終わります。다を取ると語幹になり、そこに語尾を付け加えます。"
+    },
+    {
+      "ref": "grammar::steps.11.rules[0]",
+      "text": "가다（行く）→ 語幹：가-"
+    },
+    {
+      "ref": "grammar::steps.11.rules[1]",
+      "text": "먹다（食べる）→ 語幹：먹-"
+    },
+    {
+      "ref": "grammar::steps.11.rules[2]",
+      "text": "공부하다（勉強する）→ 語幹：공부하-"
+    },
+    {
+      "ref": "grammar::steps.11.rules[3]",
+      "text": "하다（する）→ 語幹：하-"
+    },
+    {
+      "ref": "grammar::steps.12.title",
+      "text": "現在形：-아요／-어요"
+    },
+    {
+      "ref": "grammar::steps.12.body",
+      "text": "語幹の母音がㅏまたはㅗの場合は-아요を付けます。それ以外は-어요を付けます。하다動詞は-해요を使います。"
+    },
+    {
+      "ref": "grammar::steps.12.rules[0]",
+      "text": "가다 → 가요（行く・ㅏ語幹）"
+    },
+    {
+      "ref": "grammar::steps.12.rules[1]",
+      "text": "오다 → 와요（来る・ㅗ語幹）"
+    },
+    {
+      "ref": "grammar::steps.12.rules[2]",
+      "text": "먹다 → 먹어요（食べる・その他）"
+    },
+    {
+      "ref": "grammar::steps.12.rules[3]",
+      "text": "마시다 → 마셔요（飲む・その他）"
+    },
+    {
+      "ref": "grammar::steps.12.rules[4]",
+      "text": "공부하다 → 공부해요（勉強する・하다）"
+    },
+    {
+      "ref": "grammar::steps.12.tip.label",
+      "text": "母音規則"
+    },
+    {
+      "ref": "grammar::steps.12.tip.text",
+      "text": "ㅏとㅗは「明るい」母音→-아요。それ以外の母音はすべて「暗い」母音→-어요。語幹の母音がわかれば、活用は自動的に決まります"
+    },
+    {
+      "ref": "grammar::steps.16.title",
+      "text": "過去形：-았어요 / -었어요"
+    },
+    {
+      "ref": "grammar::steps.16.body",
+      "text": "ㅏ/ㅗで終わる語幹には-았어요を、それ以外には-었어요をつけます。하다 → 했어요。"
+    },
+    {
+      "ref": "grammar::steps.16.rules[0]",
+      "text": "가다 → 갔어요（行った）"
+    },
+    {
+      "ref": "grammar::steps.16.rules[1]",
+      "text": "오다 → 왔어요（来た）"
+    },
+    {
+      "ref": "grammar::steps.16.rules[2]",
+      "text": "먹다 → 먹었어요（食べた）"
+    },
+    {
+      "ref": "grammar::steps.16.rules[3]",
+      "text": "마시다 → 마셨어요（飲んだ）"
+    },
+    {
+      "ref": "grammar::steps.16.rules[4]",
+      "text": "공부하다 → 공부했어요（勉強した）"
+    },
+    {
+      "ref": "grammar::steps.19.title",
+      "text": "未来形：-(으)ㄹ 거예요"
+    },
+    {
+      "ref": "grammar::steps.19.body",
+      "text": "動詞の語幹に-(으)ㄹ 거예요をつけて、未来の予定や予測を表します。"
+    },
+    {
+      "ref": "grammar::steps.19.rules[0]",
+      "text": "가다 → 갈 거예요（行く）"
+    },
+    {
+      "ref": "grammar::steps.19.rules[1]",
+      "text": "먹다 → 먹을 거예요（食べる）"
+    },
+    {
+      "ref": "grammar::steps.19.rules[2]",
+      "text": "공부하다 → 공부할 거예요（勉強する）"
+    },
+    {
+      "ref": "grammar::steps.21.body",
+      "text": "短い否定：안 + 動詞。長い否定：動詞の語幹 + 지 않아요。不可能：못 + 動詞。"
+    },
+    {
+      "ref": "grammar::steps.21.rules[0]",
+      "text": "안 먹어요（食べない——短い形）"
+    },
+    {
+      "ref": "grammar::steps.21.rules[1]",
+      "text": "먹지 않아요（食べない——長い形）"
+    },
+    {
+      "ref": "grammar::steps.21.rules[2]",
+      "text": "못 가요（行けない——不可能）"
+    },
+    {
+      "ref": "grammar::steps.23.rules[0]",
+      "text": "뭐 / 무엇——何"
+    },
+    {
+      "ref": "grammar::steps.23.rules[1]",
+      "text": "누구——誰"
+    },
+    {
+      "ref": "grammar::steps.23.rules[2]",
+      "text": "어디——どこ"
+    },
+    {
+      "ref": "grammar::steps.23.rules[3]",
+      "text": "언제——いつ"
+    },
+    {
+      "ref": "grammar::steps.23.rules[4]",
+      "text": "왜——なぜ"
+    },
+    {
+      "ref": "grammar::steps.23.rules[5]",
+      "text": "어떻게——どう"
+    },
+    {
+      "ref": "grammar::steps.23.rules[6]",
+      "text": "얼마——いくら"
+    },
+    {
+      "ref": "grammar::steps.23.rules[7]",
+      "text": "몇——いくつ"
+    },
+    {
+      "ref": "grammar::steps.23.tip.label",
+      "text": "文法のヒント"
+    },
+    {
+      "ref": "grammar::steps.23.tip.text",
+      "text": "밥을 먹어요 = ご飯を食べます。밥을 먹어요? = ご飯を食べますか？ 同じ単語のまま——語尾を上げるだけです。英語のような語順の入れ替えは不要です！"
+    },
+    {
+      "ref": "grammar::steps.26.rules[0]",
+      "text": "~이에요/예요——～です（名詞）：학생이에요（学生です）"
+    },
+    {
+      "ref": "grammar::steps.26.rules[1]",
+      "text": "~고 싶어요——～したい：한국에 가고 싶어요（韓国に行きたいです）"
+    },
+    {
+      "ref": "grammar::steps.26.rules[2]",
+      "text": "~ㄹ/을 수 있어요——～できる：한국어를 할 수 있어요（韓国語ができます）"
+    },
+    {
+      "ref": "grammar::steps.26.rules[3]",
+      "text": "~아/어야 해요——～しなければならない：공부해야 해요（勉強しなければなりません）"
+    },
+    {
+      "ref": "grammar::steps.26.rules[4]",
+      "text": "~(으)면——～すれば／～すると：비가 오면 집에 있어요（雨が降れば家にいます）"
+    },
+    {
+      "ref": "grammar::steps.26.rules[5]",
+      "text": "~때문에——～のせいで／～のため：비 때문에 못 가요（雨のせいで行けません）"
+    },
+    {
+      "ref": "grammar::steps.28.rules[0]",
+      "text": "그리고——そして／それから（情報や順序を追加）"
+    },
+    {
+      "ref": "grammar::steps.28.rules[1]",
+      "text": "그래서——だから／それで（原因→結果）"
+    },
+    {
+      "ref": "grammar::steps.28.rules[2]",
+      "text": "그렇지만——しかし／けれども（強い対比、フォーマル）"
+    },
+    {
+      "ref": "grammar::steps.28.rules[3]",
+      "text": "그런데——でも／ところで（軽い対比、カジュアル——最も一般的！）"
+    },
+    {
+      "ref": "grammar::steps.28.tip.label",
+      "text": "使い方のヒント"
+    },
+    {
+      "ref": "grammar::steps.28.tip.text",
+      "text": "그런데は話し言葉の韓国語で最もよく使われる単語のひとつです——対比をやわらげ、自然に話題を変えます。그렇지만はより強く、フォーマルな表現です"
+    },
+    {
+      "ref": "grammar::steps.31.rules[0]",
+      "text": "-하고——どんな名詞の後にも使える、中立・カジュアル：친구하고 갔어요（友達と行きました）"
+    },
+    {
+      "ref": "grammar::steps.31.rules[1]",
+      "text": "-(이)랑——이랑（子音の後）／랑（母音の後）、とてもカジュアル：오빠랑 놀았어요（お兄さんと遊びました）"
+    },
+    {
+      "ref": "grammar::steps.31.rules[2]",
+      "text": "-와/과——와（母音の後）／과（子音の後）、フォーマル・書き言葉：선생님과 상담했어요（先生と相談しました）"
+    },
+    {
+      "ref": "grammar::steps.32.rules[0]",
+      "text": "-한테——～に（人）：친구한테 전화했어요（友達に電話しました）"
+    },
+    {
+      "ref": "grammar::steps.32.rules[1]",
+      "text": "-한테서——～から（人）：선생님한테서 배웠어요（先生から習いました）"
+    },
+    {
+      "ref": "grammar::steps.32.rules[2]",
+      "text": "-에게 / -에게서——フォーマルな言い方"
+    },
+    {
+      "ref": "grammar::steps.32.rules[3]",
+      "text": "-께——～に（尊敬語、目上の人に）：선생님께 드렸어요"
+    },
+    {
+      "ref": "grammar::steps.33.body",
+      "text": "時間（시）には固有語数字を、分（분）には漢字語数字を使います。午前＝오전、午後＝오후。"
+    },
+    {
+      "ref": "grammar::steps.33.rules[0]",
+      "text": "時間（시）：한(1)、두(2)、세(3)、네(4)、다섯(5)… + 시"
+    },
+    {
+      "ref": "grammar::steps.33.rules[1]",
+      "text": "分（분）：일(1)、이(2)、삼(3)、사(4)、오(5)… + 분"
+    },
+    {
+      "ref": "grammar::steps.33.rules[2]",
+      "text": "半：반——세 시 반 = 3:30"
+    },
+    {
+      "ref": "grammar::steps.33.rules[3]",
+      "text": "例：오후 두 시 삼십 분 = 午後2時30分"
+    },
+    {
+      "ref": "grammar::steps.33.tip.label",
+      "text": "重要パターン"
+    },
+    {
+      "ref": "grammar::steps.33.tip.text",
+      "text": "時は固有数詞（한、두、세…）を使います。分は漢数詞（일、이、삼…）を使います。半 = 반。午前 = 오전、午後 = 오후。"
+    },
+    {
+      "ref": "grammar::steps.36.body",
+      "text": "韓国語では[名詞]+[数字]の後に特定の助数詞を使います。ほとんどの助数詞には固有数詞（한、두、세…）を使います。"
+    },
+    {
+      "ref": "grammar::steps.36.rules[0]",
+      "text": "개 —— 一般的な物：사과 세 개（りんご3個）"
+    },
+    {
+      "ref": "grammar::steps.36.rules[1]",
+      "text": "명 —— 人（中立的）：학생 두 명（学生2人）"
+    },
+    {
+      "ref": "grammar::steps.36.rules[2]",
+      "text": "분 —— 人（敬語）：손님 두 분（お客様2名）"
+    },
+    {
+      "ref": "grammar::steps.36.rules[3]",
+      "text": "마리 —— 動物：고양이 한 마리（猫1匹）"
+    },
+    {
+      "ref": "grammar::steps.36.rules[4]",
+      "text": "권 —— 本：책 세 권（本3冊）"
+    },
+    {
+      "ref": "grammar::steps.36.rules[5]",
+      "text": "잔 —— 杯・飲み物：커피 두 잔（コーヒー2杯）"
+    },
+    {
+      "ref": "grammar::steps.36.rules[6]",
+      "text": "번 —— 回数：세 번（3回）"
+    }
+  ]
+}

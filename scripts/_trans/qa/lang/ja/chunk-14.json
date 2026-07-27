@@ -1,0 +1,232 @@
+{
+  "lang": "ja",
+  "chunk": 14,
+  "count": 25,
+  "units": [
+    {
+      "id": "pronouns::steps.2.meaning",
+      "path": "pronouns/steps[2]/meaning",
+      "ko": null,
+      "en": "I / me (casual)",
+      "current": "私（カジュアル）",
+      "ref_th": "ฉัน / ผม (ไม่เป็นทางการ)",
+      "ref_es": "yo / me (informal)"
+    },
+    {
+      "id": "pronouns::steps.3.meaning",
+      "path": "pronouns/steps[3]/meaning",
+      "ko": null,
+      "en": "I (subject, polite) — 저 + subject marker 가 → 제가",
+      "current": "私が（丁寧・主格）",
+      "ref_th": "ฉัน (ประธาน สุภาพ) — 저 + ตัวแสดงประธาน 가 → 제가",
+      "ref_es": "yo (sujeto, educado) — 저 + marcador de sujeto 가 → 제가"
+    },
+    {
+      "id": "pronouns::steps.4.meaning",
+      "path": "pronouns/steps[4]/meaning",
+      "ko": null,
+      "en": "you (casual) — rarely said to adults",
+      "current": "あなた（カジュアル）",
+      "ref_th": "คุณ (ไม่เป็นทางการ) — แทบไม่ใช้กับผู้ใหญ่",
+      "ref_es": "tú (informal) — raro con adultos"
+    },
+    {
+      "id": "pronouns::steps.5.prompt",
+      "path": "pronouns/steps[5]/prompt",
+      "ko": null,
+      "en": "You are meeting your new boss for the first time. Which word for 'I' do you use?",
+      "current": "初めて新しい上司に会います。「私」を表す言葉はどれを使いますか。",
+      "ref_th": "คุณพบหัวหน้าคนใหม่เป็นครั้งแรก คุณใช้คำใดแทน \"ฉัน\"?",
+      "ref_es": "Conoces a tu nuevo jefe por primera vez. ¿Qué palabra para 'yo' usas?"
+    },
+    {
+      "id": "pronouns::steps.6.title",
+      "path": "pronouns/steps[6]/title",
+      "ko": "'당신'과 호칭",
+      "en": "Saying 'You' in Korean",
+      "current": "韓国語で「あなた」をどう言うか",
+      "ref_th": "การพูดถึง \"คุณ\" ในภาษาเกาหลี",
+      "ref_es": "Cómo decir 'tú' en coreano"
+    },
+    {
+      "id": "pronouns::steps.6.body",
+      "path": "pronouns/steps[6]/body",
+      "ko": null,
+      "en": "Korean avoids the direct pronoun 'you' (당신) in most everyday speech — it can sound cold, confrontational, or overly formal depending on context. Instead, Koreans use the person's name, title, or relationship term. A teacher would be called 선생님 (teacher), not 당신. A friend would be called by name. The pronoun 당신 appears in songs, poetry, and formal writing but is uncommon in daily conversation.",
+      "current": "韓国語は日常会話で直接的な「あなた」（당신）をほぼ使いません。文脈によっては冷たく・対立的・または過度にフォーマルに聞こえるからです。代わりに、相手の名前・肩書き・関係を示す言葉を使います。先生は선생님（先生）と呼ぶのであって、당신とは言いません。友達は名前で呼びます。당신は歌・詩・フォーマルな文章には登場しますが、日常会話ではほとんど使われません。",
+      "ref_th": "ภาษาเกาหลีหลีกเลี่ยงการใช้สรรพนาม \"คุณ\" (당신) โดยตรงในการพูดทั่วไป เพราะอาจฟังดูเย็นชา ต่อต้าน หรือเป็นทางการเกินไป แทนที่จะใช้ 당신 ชาวเกาหลีใช้ชื่อ + 씨 หรือตำแหน่ง ในซีรีส์ K-Drama คุณอาจได้ยิน 당신 ในบทสนทนาที่รุนแรงหรือเนื้อเพลง",
+      "ref_es": "El coreano evita el pronombre directo \"tú\" (당신) en la mayoría del habla cotidiana — puede sonar frío, confrontacional o excesivamente formal según el contexto. En cambio, los coreanos usan el nombre de la persona, el título o el término de relación. A un profesor se le llama 선생님 (profesor/a), no 당신. A un amigo se le llama por su nombre. El pronombre 당신 aparece en canciones, poesía y escritura formal, pero no es habitual en la conversación diaria."
+    },
+    {
+      "id": "pronouns::steps.6.tip.label",
+      "path": "pronouns/steps[6]/tip.label",
+      "ko": null,
+      "en": "How to address people without 당신",
+      "current": "당신を使わずに呼びかける方法",
+      "ref_th": "วิธีพูดถึงคนโดยไม่ใช้ 당신",
+      "ref_es": "Cómo dirigirse a las personas sin 당신"
+    },
+    {
+      "id": "pronouns::steps.6.tip.text",
+      "path": "pronouns/steps[6]/tip.text",
+      "ko": null,
+      "en": "Use the person's name + 씨 for adults you don't know well: 김민준씨. Use their job title: 사장님 (boss), 과장님 (manager). Use relationship terms: 언니, 오빠, 아저씨. These are far more natural than 당신.",
+      "current": "あまり親しくない大人には名前 + 씨を使います：김민준씨。職業の肩書きを使います：사장님（社長・上司）、과장님（課長）。関係を示す語を使います：언니、오빠、아저씨。これらは당신よりはるかに自然です。",
+      "ref_th": "ใช้ชื่อบุคคล + 씨 สำหรับผู้ใหญ่ที่ไม่คุ้นเคย: 김민준씨 ใช้ตำแหน่ง: 사장님 (เจ้านาย) 과장님 (ผู้จัดการ) กับเพื่อน: เรียกชื่อโดยตรง",
+      "ref_es": "Usa el nombre de la persona + 씨 para adultos que no conoces bien: 김민준씨. Usa su título laboral: 사장님 (jefe), 과장님 (gerente). Usa términos de relación: 언니, 오빠, 아저씨. Estos son mucho más naturales que 당신."
+    },
+    {
+      "id": "pronouns::steps.7.meaning",
+      "path": "pronouns/steps[7]/meaning",
+      "ko": null,
+      "en": "I (topic, polite) — 저 + topic marker 는 → 저는",
+      "current": "私は（丁寧・主題格）",
+      "ref_th": "ฉัน (หัวข้อ สุภาพ) — 저 + ตัวแสดงหัวข้อ 는 → 저는",
+      "ref_es": "yo (tema, educado) — 저 + marcador de tema 는 → 저는"
+    },
+    {
+      "id": "pronouns::steps.8.prompt",
+      "path": "pronouns/steps[8]/prompt",
+      "ko": null,
+      "en": "Why do Koreans rarely say 당신 in conversation?",
+      "current": "韓国人が会話で당신をほとんど使わないのはなぜでしょう。",
+      "ref_th": "ทำไมชาวเกาหลีจึงแทบไม่พูด 당신 ในการสนทนา?",
+      "ref_es": "¿Por qué los coreanos rara vez dicen 당신 en la conversación?"
+    },
+    {
+      "id": "pronouns::steps.8.choices[0]",
+      "path": "pronouns/steps[8]/choices[0]",
+      "ko": null,
+      "en": "It is grammatically incorrect",
+      "current": "文法的に間違っているから",
+      "ref_th": "ผิดหลักไวยากรณ์",
+      "ref_es": "Es gramaticalmente incorrecto"
+    },
+    {
+      "id": "pronouns::steps.8.choices[1]",
+      "path": "pronouns/steps[8]/choices[1]",
+      "ko": null,
+      "en": "It can sound cold or confrontational",
+      "current": "冷たく、対立的に響くことがあるから",
+      "ref_th": "อาจฟังดูเย็นชาหรือต่อต้าน",
+      "ref_es": "Puede sonar frío o confrontacional"
+    },
+    {
+      "id": "pronouns::steps.8.choices[2]",
+      "path": "pronouns/steps[8]/choices[2]",
+      "ko": null,
+      "en": "It is reserved for speaking to children",
+      "current": "子どもに話すときだけ使うから",
+      "ref_th": "ใช้เฉพาะเวลาพูดกับเด็ก",
+      "ref_es": "Se reserva para hablar con niños"
+    },
+    {
+      "id": "pronouns::steps.8.choices[3]",
+      "path": "pronouns/steps[8]/choices[3]",
+      "ko": null,
+      "en": "It is recent slang among young people",
+      "current": "若者が最近作った俗語だから",
+      "ref_th": "เป็นคำสแลงใหม่ของวัยรุ่น",
+      "ref_es": "Es jerga reciente entre los jóvenes"
+    },
+    {
+      "id": "pronouns::steps.9.title",
+      "path": "pronouns/steps[9]/title",
+      "ko": "그·그녀·우리",
+      "en": "Third Person & We (그·그녀·우리)",
+      "current": "三人称と私たち（그・그녀・우리）",
+      "ref_th": "บุรุษที่สามและ \"เรา\" (그·그녀·우리)",
+      "ref_es": "Tercera Persona y Nosotros (그·그녀·우리)"
+    },
+    {
+      "id": "pronouns::steps.9.body",
+      "path": "pronouns/steps[9]/body",
+      "ko": null,
+      "en": "Korean rarely uses he/she pronouns in speech. Instead, Koreans say the person's name or use demonstratives: 그 사람 (that person), 이 사람 (this person). 그 (geu) and 그녀 (geunyeo) do exist — he/she — but they appear mostly in writing and translation. 우리 (uri) means 'we' or 'our'. Interestingly, Koreans use 우리 where English uses 'my': 우리 엄마 (my mom, literally 'our mom') — this reflects a collectivist cultural sense of shared family.",
+      "current": "韓国語は会話で三人称代名詞をほとんど使いません。代わりに、相手の名前や指示語を使います：그 사람（その人）、이 사람（この人）。그（geu）と 그녀（geunyeo）という「彼/彼女」の代名詞は存在しますが、ほとんど文章や翻訳文で使われます。우리（uri）は「私たち」または「私たちの」を意味します。興味深いことに、韓国人は英語で「私の」と言う場面で 우리 を使います：우리 엄마（私のお母さん、直訳「私たちのお母さん」）——これは家族を共有するという集団主義的な文化を反映しています。",
+      "ref_th": "ภาษาเกาหลีแทบไม่ใช้สรรพนามบุรุษที่สาม \"เขา/เธอ\" ในการพูด แต่จะพูดชื่อคนนั้นหรือใช้คำชี้เฉพาะ: 그 사람 (คนนั้น) 우리 (อูรี) มักหมายถึง \"ของเรา/ของฉัน\" โดยเฉพาะเมื่อพูดถึงครอบครัวหรือประเทศ เช่น 우리 나라 (ประเทศของเรา/ฉัน)",
+      "ref_es": "El coreano rara vez usa pronombres de tercera persona (él/ella) en el habla. En cambio, los coreanos dicen el nombre de la persona o usan demostrativos: 그 사람 (esa persona), 이 사람 (esta persona). 그 (geu) y 그녀 (geunyeo) existen — él/ella — pero aparecen principalmente en la escritura y la traducción. 우리 (uri) significa \"nosotros\" o \"nuestro\". Curiosamente, los coreanos usan 우리 donde el español usa \"mi\": 우리 엄마 (mi mamá, literalmente \"nuestra mamá\") — esto refleja un sentido cultural colectivista de familia compartida."
+    },
+    {
+      "id": "pronouns::steps.9.tip.label",
+      "path": "pronouns/steps[9]/tip.label",
+      "ko": null,
+      "en": "우리 = my (for family & country)",
+      "current": "우리 ＝ 私の（家族・国）",
+      "ref_th": "우리 = ของฉัน (สำหรับครอบครัวและประเทศ)",
+      "ref_es": "우리 = \"mi\" (para familia y país)"
+    },
+    {
+      "id": "pronouns::steps.9.tip.text",
+      "path": "pronouns/steps[9]/tip.text",
+      "ko": null,
+      "en": "우리 나라 (our country), 우리 집 (my/our house), 우리 엄마 (my mom) — these are natural and common. Using 나의 나라 or 나의 집 instead sounds unnatural, almost cold.",
+      "current": "うり 나라（私たちの国）、우리 집（私の/私たちの家）、우리 엄마（私のお母さん）——これらは自然でよく使われます。代わりに 나의 나라 や 나의 집 を使うと不自然で、やや冷たく聞こえます。",
+      "ref_th": "우리 나라 (ประเทศของเรา) 우리 집 (บ้านของเรา/ฉัน) 우리 엄마 (แม่ของฉัน) — เป็นธรรมชาติและใช้บ่อย การใช้ 나의 나라 ฟังดูผิดปกติ",
+      "ref_es": "우리 나라 (nuestro país), 우리 집 (mi/nuestra casa), 우리 엄마 (mi mamá) — estos son naturales y comunes. Usar 나의 나라 o 나의 집 en su lugar suena antinatural, casi frío."
+    },
+    {
+      "id": "pronouns::steps.10.meaning",
+      "path": "pronouns/steps[10]/meaning",
+      "ko": null,
+      "en": "we / our (often used as 'my' for shared things)",
+      "current": "私たち / 私たちの（「私の」にも使う）",
+      "ref_th": "เรา / ของเรา (มักใช้เป็น \"ของฉัน\" สำหรับสิ่งที่ใช้ร่วมกัน)",
+      "ref_es": "nosotros / nuestro (a menudo se usa como \"mi\" para cosas compartidas)"
+    },
+    {
+      "id": "pronouns::steps.11.meaning",
+      "path": "pronouns/steps[11]/meaning",
+      "ko": null,
+      "en": "we / our (humble, polite form of 우리)",
+      "current": "私ども（謙譲語）",
+      "ref_th": "เรา / ของเรา (ถ่อมตัว สุภาพ รูปของ 우리)",
+      "ref_es": "nosotros / nuestro (humilde, forma educada de 우리)"
+    },
+    {
+      "id": "pronouns::steps.12.meaning",
+      "path": "pronouns/steps[12]/meaning",
+      "ko": null,
+      "en": "that person (= he / she, informal way)",
+      "current": "その人（非公式の三人称）",
+      "ref_th": "คนนั้น (= เขา / เธอ แบบไม่เป็นทางการ)",
+      "ref_es": "esa persona (= él / ella, forma informal)"
+    },
+    {
+      "id": "pronouns::steps.13.meaning",
+      "path": "pronouns/steps[13]/meaning",
+      "ko": null,
+      "en": "they / them (written form)",
+      "current": "彼ら・彼女ら（書き言葉）",
+      "ref_th": "พวกเขา (รูปการเขียน)",
+      "ref_es": "ellos / ellas (forma escrita)"
+    },
+    {
+      "id": "pronouns::steps.14.prompt",
+      "path": "pronouns/steps[14]/prompt",
+      "ko": null,
+      "en": "우리 엄마 literally means 'our mom' but is used to mean…",
+      "current": "우리 엄마は文字どおりには「私たちのお母さん」ですが、実際に指すのは…",
+      "ref_th": "우리 엄마 แปลตรงๆ ว่า \"แม่ของเรา\" แต่ใช้หมายความว่า...",
+      "ref_es": "우리 엄마 literalmente significa \"nuestra mamá\" pero se usa para decir…"
+    },
+    {
+      "id": "pronouns::steps.14.choices[0]",
+      "path": "pronouns/steps[14]/choices[0]",
+      "ko": null,
+      "en": "someone else's mom",
+      "current": "他人のお母さん",
+      "ref_th": "แม่ของคนอื่น",
+      "ref_es": "la mamá de otra persona"
+    },
+    {
+      "id": "pronouns::steps.14.choices[1]",
+      "path": "pronouns/steps[14]/choices[1]",
+      "ko": null,
+      "en": "my own mom",
+      "current": "自分のお母さん",
+      "ref_th": "แม่ของฉันเอง",
+      "ref_es": "mi propia mamá"
+    }
+  ]
+}

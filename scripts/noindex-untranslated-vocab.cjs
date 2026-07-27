@@ -42,6 +42,30 @@
  * audit-learn-locale-dup.cjs that sentenceRatio is near 0, then run with
  * --lift <locale>. Do not lift without re-measuring.
  *
+ * ── 2026-07-26: THE GATE NO LONGER FIRES ────────────────────────────────
+ * The word bank has since been translated. Re-measured 2026-07-26 during the
+ * Phase-A translation triage (docs/writing-typing/qa-triage-results.md), over
+ * the 448 translatable title/body/meaning/tip fields in learn/data/
+ * vocabulary-*.json:
+ *
+ *     title/body/meaning — 0 missing in ALL 8 locales (was 447 for five)
+ *     tip.label/tip.text — 0 missing for ja/zh_tw/es; 42 for de/fr/vi/th/id,
+ *                          since translated (see qa-vocab-tips.workflow.js)
+ *
+ * The script used to ASSERT the 2026-07-21 measurement rather than take one,
+ * so `--check` still reported all 15 pages as DRIFT and a plain run would
+ * have re-noindexed 15 pages whose prose is now translated. It now measures
+ * coverage itself.
+ *
+ * The threshold matters as much as the measurement. This gate exists for the
+ * case it was written for — a page whose static reference renders
+ * PREDOMINANTLY in English (it was 96%+ of sentence-length prose). A small
+ * residue is a translation backlog, not a duplicate-content page, and
+ * noindexing 15 URLs over it would cost more than it saves. So the gate fires
+ * only above MIN_UNTRANSLATED_RATIO; anything below is reported and left
+ * indexed. The gate stays in the repo because it is still the correct
+ * response if coverage ever regresses that far.
+ *
  * Idempotent. Preserves each file's original line endings.
  */
 
@@ -69,10 +93,66 @@ function writeLF(abs, text, crlf) {
   fs.writeFileSync(abs, crlf ? text.replace(/\n/g, '\r\n') : text, 'utf8');
 }
 
-let changed = 0, drift = 0, already = 0;
+/* ── measure, don't assume ───────────────────────────────────────────────
+   Count the translatable word-bank fields that lack a `_<locale>` sibling.
+   A locale with zero missing is fully translated and must NOT be noindexed,
+   whatever this file's header used to claim. */
+const BASE_FIELDS = ['title', 'body', 'meaning'];
+const TIP_SUBFIELDS = ['label', 'text'];
+
+/* Fire only when the embedded reference is predominantly English — the
+   condition this gate was written for. See the header. */
+const MIN_UNTRANSLATED_RATIO = 0.5;
+
+function wordBankGaps(locale) {
+  const suf = locale.replace('-', '_');
+  const dir = path.join(ROOT, 'learn', 'data');
+  let total = 0, missing = 0;
+  fs.readdirSync(dir)
+    .filter(n => /^vocabulary-.*\.json$/.test(n))
+    .forEach(name => {
+      const json = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'));
+      (function walk(node) {
+        if (Array.isArray(node)) return node.forEach(walk);
+        if (!node || typeof node !== 'object') return;
+        BASE_FIELDS.forEach(f => {
+          if (typeof node[f] !== 'string' || !node[f].trim()) return;
+          total++;
+          const v = node[f + '_' + suf];
+          if (typeof v !== 'string' || !v.trim()) missing++;
+        });
+        if (node.tip && typeof node.tip === 'object') {
+          TIP_SUBFIELDS.forEach(sub => {
+            if (typeof node.tip[sub] !== 'string' || !node.tip[sub].trim()) return;
+            total++;
+            const t = node['tip_' + suf];
+            const v = t && typeof t === 'object' ? t[sub] : null;
+            if (typeof v !== 'string' || !v.trim()) missing++;
+          });
+        }
+        Object.values(node).forEach(v => { if (v && typeof v === 'object') walk(v); });
+      })(json);
+    });
+  return { total, missing };
+}
+
+let changed = 0, drift = 0, already = 0, skipped = 0;
 const targets = LIFT ? [LIFT] : LOCALES;
 
 for (const loc of targets) {
+  if (!LIFT) {
+    const { total, missing } = wordBankGaps(loc);
+    const ratio = total ? missing / total : 0;
+    if (ratio < MIN_UNTRANSLATED_RATIO) {
+      skipped++;
+      console.log(`  SKIP ${loc} — ${missing}/${total} fields untranslated ` +
+        `(${(ratio * 100).toFixed(1)}%, under the ${MIN_UNTRANSLATED_RATIO * 100}% gate); ` +
+        `noindex would be wrong${missing ? ' — translate the residue instead' : ''}`);
+      continue;
+    }
+    console.log(`  ${loc}: ${missing}/${total} word-bank fields untranslated ` +
+      `(${(ratio * 100).toFixed(1)}%) → gate applies`);
+  }
   for (const page of PAGES) {
     const rel = path.join('learn', loc, page);
     const abs = path.join(ROOT, rel);
@@ -109,8 +189,10 @@ for (const loc of targets) {
 }
 
 if (CHECK) {
-  console.log(drift ? `${drift} files need the noindex tag` : 'all target pages carry the tag');
+  if (drift) console.log(`${drift} files need the noindex tag`);
+  else if (skipped) console.log(`no drift — ${skipped} locale(s) below the noindex gate`);
+  else console.log('all target pages carry the tag');
   process.exit(drift ? 1 : 0);
 }
-console.log(`${changed} changed, ${already} already tagged`);
+console.log(`${changed} changed, ${already} already tagged, ${skipped} locale(s) skipped as translated`);
 console.log('Now rerun: node scripts/gen-sitemap.cjs   (it drops noindex pages)');

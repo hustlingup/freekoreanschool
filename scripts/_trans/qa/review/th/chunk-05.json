@@ -1,0 +1,217 @@
+{
+  "lang": "th",
+  "chunk": 5,
+  "count": 30,
+  "units": [
+    {
+      "id": "typing::steps.0.tip.label",
+      "path": "typing/steps[0]/tip.label",
+      "ko": null,
+      "en": "Left hand, right hand",
+      "th": "มือซ้าย มือขวา"
+    },
+    {
+      "id": "typing::steps.0.tip.text",
+      "path": "typing/steps[0]/tip.text",
+      "ko": null,
+      "en": "Because consonants are always on the left and vowels are always on the right, typing Korean turns into a steady left-right-left-right rhythm. Korean syllables are built the same way — consonant, then vowel — so your hands end up copying the shape of the language.",
+      "th": "เพราะพยัญชนะอยู่ทางซ้ายเสมอและสระอยู่ทางขวาเสมอ การพิมพ์ภาษาเกาหลีจึงกลายเป็นจังหวะซ้าย-ขวา-ซ้าย-ขวาที่สม่ำเสมอ พยางค์เกาหลีก็สร้างขึ้นแบบเดียวกัน — พยัญชนะก่อน แล้วจึงสระ — มือของคุณจึงจำลองรูปทรงของภาษานี้ไปในตัว"
+    },
+    {
+      "id": "typing::steps.1.title",
+      "path": "typing/steps[1]/title",
+      "ko": "음절이 만들어지는 방법",
+      "en": "How Syllables Assemble",
+      "th": "พยางค์ประกอบกันอย่างไร"
+    },
+    {
+      "id": "typing::steps.1.body",
+      "path": "typing/steps[1]/body",
+      "ko": null,
+      "en": "Korean writing stacks letters into square blocks, but you do not have to draw those blocks. You just type the letters in order and they snap together on their own. Type ㅎ, then ㅏ, then ㄴ, and 한 appears one piece at a time: ㅎ → 하 → 한. Nothing else to press, no menu, no confirm key.",
+      "th": "การเขียนภาษาเกาหลีจะวางตัวอักษรซ้อนกันเป็นบล็อกสี่เหลี่ยม แต่คุณไม่ต้องวาดบล็อกเหล่านั้นเอง เพียงพิมพ์ตัวอักษรตามลำดับ แล้วมันจะประกอบกันเอง พิมพ์ ㅎ แล้ว ㅏ แล้ว ㄴ 한 ก็จะปรากฏทีละส่วน: ㅎ → 하 → 한 ไม่ต้องกดอะไรอีก ไม่มีเมนู ไม่มีปุ่มยืนยัน"
+    },
+    {
+      "id": "typing::steps.1.rules[0]",
+      "path": "typing/steps[1]/rules[0]",
+      "ko": null,
+      "en": "Type the letters in speaking order: opening consonant, then vowel, then the final consonant (받침) if the syllable has one.",
+      "th": "พิมพ์ตัวอักษรตามลำดับการออกเสียง: พยัญชนะต้น แล้วสระ แล้วพยัญชนะสะกด (받침) หากพยางค์นั้นมี"
+    },
+    {
+      "id": "typing::steps.1.rules[1]",
+      "path": "typing/steps[1]/rules[1]",
+      "ko": null,
+      "en": "A block closes by itself as soon as the next letter cannot fit into it. Type ㄱ ㅏ ㅁ ㅏ and you get 가마, not 감아 — the second ㅏ needs a consonant in front of it, so ㅁ jumps forward to start a new block.",
+      "th": "บล็อกจะปิดตัวเองทันทีที่ตัวอักษรถัดไปใส่เข้าไปไม่ได้ พิมพ์ ㄱ ㅏ ㅁ ㅏ คุณจะได้ 가마 ไม่ใช่ 감아 — สระ ㅏ ตัวที่สองต้องมีพยัญชนะอยู่ข้างหน้า ดังนั้น ㅁ จึงกระโดดไปข้างหน้าเพื่อเริ่มบล็อกใหม่"
+    },
+    {
+      "id": "typing::steps.1.rules[2]",
+      "path": "typing/steps[1]/rules[2]",
+      "ko": null,
+      "en": "This jump is called 받침 stealing, and it is exactly what Korean typists rely on. Type ㄱ ㅏ ㄱ ㅅ ㅏ and you get 각사: 가 → 각 → 갃 → 각사, with ㅅ pulled out of the double 받침 the moment the ㅏ arrives.",
+      "th": "การกระโดดนี้เรียกว่า “การขโมย 받침” และเป็นสิ่งที่คนพิมพ์ภาษาเกาหลีพึ่งพาพอดี พิมพ์ ㄱ ㅏ ㄱ ㅅ ㅏ คุณจะได้ 각사: 가 → 각 → 갃 → 각사 โดย ㅅ ถูกดึงออกจาก 받침 คู่ในทันทีที่ ㅏ มาถึง"
+    },
+    {
+      "id": "typing::steps.1.rules[3]",
+      "path": "typing/steps[1]/rules[3]",
+      "ko": null,
+      "en": "Backspace peels off one letter, not one block. From 각 it goes to 가, then to ㄱ, then to nothing.",
+      "th": "Backspace ลอกออกทีละตัวอักษร ไม่ใช่ทีละบล็อก จาก 각 จะกลายเป็น 가 แล้วเป็น ㄱ แล้วจึงเป็นค่าว่าง"
+    },
+    {
+      "id": "typing::steps.1.tip.label",
+      "path": "typing/steps[1]/tip.label",
+      "ko": null,
+      "en": "Nothing to install",
+      "th": "ไม่ต้องติดตั้งอะไร"
+    },
+    {
+      "id": "typing::steps.1.tip.text",
+      "path": "typing/steps[1]/tip.text",
+      "ko": null,
+      "en": "You do not need a Korean keyboard on your computer or phone to do this lesson. The keyboard on this page does the whole job — press the keys on your own keyboard, or tap the on-screen ones. Step 28 shows you how to add a real Korean keyboard to your devices for everywhere else.",
+      "th": "คุณไม่จำเป็นต้องมีแป้นพิมพ์ภาษาเกาหลีในคอมพิวเตอร์หรือโทรศัพท์เพื่อทำบทเรียนนี้ แป้นพิมพ์บนหน้านี้ทำงานทั้งหมดให้ — กดปุ่มบนแป้นพิมพ์ของคุณเอง หรือแตะปุ่มบนหน้าจอก็ได้ ขั้นที่ 28 จะแสดงวิธีเพิ่มแป้นพิมพ์ภาษาเกาหลีจริงลงในอุปกรณ์ของคุณเพื่อใช้ในที่อื่น ๆ"
+    },
+    {
+      "id": "typing::steps.2.tip",
+      "path": "typing/steps[2]/tip",
+      "ko": null,
+      "en": "Rest your left hand on the home row: A S D F. ㅁ is on A under your little finger, ㄴ is on S under your ring finger. You never have to move your hand for these two.",
+      "th": "วางมือซ้ายบนแถวหลัก: A S D F ㅁ อยู่ที่ A ใต้นิ้วก้อย, ㄴ อยู่ที่ S ใต้นิ้วนาง สองตัวนี้คุณไม่ต้องขยับมือเลย"
+    },
+    {
+      "id": "typing::steps.3.tip",
+      "path": "typing/steps[3]/tip",
+      "ko": null,
+      "en": "Keep the same hand position. ㅇ is on D under your middle finger, ㄹ is on F under your index finger — F is the key with the little bump on it, so you can always find it without looking.",
+      "th": "วางมือในตำแหน่งเดิม ㅇ อยู่ที่ D ใต้นิ้วกลาง, ㄹ อยู่ที่ F ใต้นิ้วชี้ — ปุ่ม F มีปุ่มนูนเล็ก ๆ อยู่ คุณจึงหามันเจอได้เสมอโดยไม่ต้องมอง"
+    },
+    {
+      "id": "typing::steps.4.tip",
+      "path": "typing/steps[4]/tip",
+      "ko": null,
+      "en": "Both are index-finger keys. ㅎ is on G — stay on the home row and reach one key to the right of F. ㄱ is on R, one row up from F. ㄱ is the single most common consonant in Korean, so it is worth getting comfortable.",
+      "th": "ทั้งคู่เป็นปุ่มของนิ้วชี้ ㅎ อยู่ที่ G — อยู่ที่แถวหลักแล้วเอื้อมไปทางขวาของ F หนึ่งปุ่ม ㄱ อยู่ที่ R เหนือ F หนึ่งแถว ㄱ เป็นพยัญชนะที่ใช้บ่อยที่สุดในภาษาเกาหลี จึงคุ้มค่าที่จะทำให้คล่อง"
+    },
+    {
+      "id": "typing::steps.5.tip",
+      "path": "typing/steps[5]/tip",
+      "ko": null,
+      "en": "Move your left hand up one row. ㅂ is on Q, straight above A, under your little finger. ㅈ is on W, straight above S, under your ring finger. Same fingers as ㅁ and ㄴ — just one row higher.",
+      "th": "เลื่อนมือซ้ายขึ้นหนึ่งแถว ㅂ อยู่ที่ Q เหนือ A พอดี ใต้นิ้วก้อย ㅈ อยู่ที่ W เหนือ S พอดี ใต้นิ้วนาง ใช้นิ้วเดียวกับ ㅁ และ ㄴ — แค่สูงขึ้นหนึ่งแถว"
+    },
+    {
+      "id": "typing::steps.6.tip",
+      "path": "typing/steps[6]/tip",
+      "ko": null,
+      "en": "Still the top row. ㄷ is on E, above D, under your middle finger. ㅅ is on T — an index-finger stretch up and to the right, above G. ㅅ is very common as a 받침, so it will come up a lot.",
+      "th": "ยังอยู่แถวบน ㄷ อยู่ที่ E เหนือ D ใต้นิ้วกลาง ㅅ อยู่ที่ T — นิ้วชี้เอื้อมขึ้นไปทางขวาบน เหนือ G ㅅ เป็น 받침 ที่พบบ่อยมาก จึงจะโผล่มาอยู่เรื่อย ๆ"
+    },
+    {
+      "id": "typing::steps.7.tip",
+      "path": "typing/steps[7]/tip",
+      "ko": null,
+      "en": "Drop your left hand one row below home. ㅋ is on Z, under your little finger, and ㅌ is on X, under your ring finger. These are the breathy pair of ㄱ and ㄷ, and they sit in the least-used corner because Korean uses them less often.",
+      "th": "ลดมือซ้ายลงหนึ่งแถวใต้แถวหลัก ㅋ อยู่ที่ Z ใต้นิ้วก้อย และ ㅌ อยู่ที่ X ใต้นิ้วนาง ทั้งคู่เป็นเสียงพ่นลมคู่ของ ㄱ และ ㄷ และอยู่ในมุมที่ใช้น้อยที่สุดเพราะภาษาเกาหลีใช้มันน้อยกว่า"
+    },
+    {
+      "id": "typing::steps.8.tip",
+      "path": "typing/steps[8]/tip",
+      "ko": null,
+      "en": "Same bottom row. ㅊ is on C, under your middle finger, and ㅍ is on V, under your index finger. That is all 14 basic consonants: three rows, left hand only.",
+      "th": "แถวล่างเดิม ㅊ อยู่ที่ C ใต้นิ้วกลาง และ ㅍ อยู่ที่ V ใต้นิ้วชี้ นั่นครบพยัญชนะพื้นฐานทั้ง 14 ตัว: สามแถว ใช้มือซ้ายอย่างเดียว"
+    },
+    {
+      "id": "typing::steps.9.tip",
+      "path": "typing/steps[9]/tip",
+      "ko": null,
+      "en": "Now the right hand. Rest it on J K L and reach. ㅗ is on H, an index-finger stretch to the left. ㅓ is on J, the home key right under your index finger — J has a bump on it too.",
+      "th": "ตอนนี้ถึงมือขวา วางไว้บน J K L แล้วเอื้อม ㅗ อยู่ที่ H ให้นิ้วชี้เอื้อมไปทางซ้าย ㅓ อยู่ที่ J ปุ่มหลักที่อยู่ใต้นิ้วชี้พอดี — ปุ่ม J ก็มีปุ่มนูนเช่นกัน"
+    },
+    {
+      "id": "typing::steps.10.tip",
+      "path": "typing/steps[10]/tip",
+      "ko": null,
+      "en": "These two never move. ㅏ is on K under your middle finger and ㅣ is on L under your ring finger. ㅏ is the most common vowel in Korean, and it is already sitting under a resting finger.",
+      "th": "สองตัวนี้ไม่ต้องขยับเลย ㅏ อยู่ที่ K ใต้นิ้วกลาง และ ㅣ อยู่ที่ L ใต้นิ้วนาง ㅏ เป็นสระที่ใช้บ่อยที่สุดในภาษาเกาหลี และมันก็อยู่ใต้นิ้วที่พักอยู่แล้วพอดี"
+    },
+    {
+      "id": "typing::steps.11.tip",
+      "path": "typing/steps[11]/tip",
+      "ko": null,
+      "en": "Move your right hand up one row. Both are index-finger keys: ㅛ is on Y, a stretch up and to the left, and ㅕ is on U, straight above J. Notice the pattern — the y-vowels ㅛ ㅕ sit one row above their plain partners ㅗ ㅓ.",
+      "th": "เลื่อนมือขวาขึ้นหนึ่งแถว ทั้งคู่เป็นปุ่มของนิ้วชี้: ㅛ อยู่ที่ Y เอื้อมขึ้นไปทางซ้ายบน และ ㅕ อยู่ที่ U เหนือ J พอดี สังเกตรูปแบบ — สระเสียง y อย่าง ㅛ ㅕ อยู่เหนือคู่พื้นฐาน ㅗ ㅓ ของมันหนึ่งแถว"
+    },
+    {
+      "id": "typing::steps.12.tip",
+      "path": "typing/steps[12]/tip",
+      "ko": null,
+      "en": "Still the top row. ㅑ is on I, straight above K, under your middle finger — again one row above its plain partner ㅏ. ㅐ is on O, under your ring finger.",
+      "th": "ยังอยู่แถวบน ㅑ อยู่ที่ I เหนือ K พอดี ใต้นิ้วกลาง — อยู่เหนือคู่พื้นฐาน ㅏ ของมันหนึ่งแถวอีกเช่นกัน ㅐ อยู่ที่ O ใต้นิ้วนาง"
+    },
+    {
+      "id": "typing::steps.13.tip",
+      "path": "typing/steps[13]/tip",
+      "ko": null,
+      "en": "ㅔ is on P, the top-row key under your right little finger — the furthest vowel from home. ㅐ and ㅔ sound almost the same in modern Korean, and they sit side by side on O and P, so learn them as a pair.",
+      "th": "ㅔ อยู่ที่ P ปุ่มแถวบนใต้นิ้วก้อยขวา — เป็นสระที่อยู่ไกลจากแถวหลักที่สุด ในภาษาเกาหลีปัจจุบัน ㅐ และ ㅔ ออกเสียงเกือบเหมือนกัน และอยู่ติดกันบน O และ P จึงควรจำเป็นคู่"
+    },
+    {
+      "id": "typing::steps.14.tip",
+      "path": "typing/steps[14]/tip",
+      "ko": null,
+      "en": "Three keys in a row along the bottom: ㅠ on B, ㅜ on N, ㅡ on M. B is a stretch for your LEFT index finger, while N and M sit under your right index. ㅡ on M matters more than it looks — it is the vowel inside 은, 는, 를 and most other grammar endings.",
+      "th": "สามปุ่มเรียงกันตามแถวล่าง: ㅠ ที่ B, ㅜ ที่ N, ㅡ ที่ M B ต้องให้นิ้วชี้ซ้ายเอื้อมไป ส่วน N และ M อยู่ใต้นิ้วชี้ขวา ㅡ ที่ M สำคัญกว่าที่เห็น — เป็นสระที่อยู่ใน 은, 는, 를 และท้ายไวยากรณ์อื่น ๆ ส่วนใหญ่"
+    },
+    {
+      "id": "typing::steps.15.tip",
+      "path": "typing/steps[15]/tip",
+      "ko": null,
+      "en": "The five tense consonants are the plain keys with Shift held down. ㅃ is Shift + Q (where ㅂ lives) and ㅉ is Shift + W (where ㅈ lives). Because both are left-hand keys, hold the Shift on the RIGHT with your right little finger while your left hand types — the keyboard highlights which Shift to use. On a touchscreen, tap ⇧ first — it stays down for exactly one key.",
+      "th": "พยัญชนะเสียงหนักทั้งห้าคือปุ่มธรรมดาที่กด Shift ค้างไว้ ㅃ คือ Shift + Q (ที่ ㅂ อยู่) และ ㅉ คือ Shift + W (ที่ ㅈ อยู่) เพราะทั้งคู่เป็นปุ่มมือซ้าย ให้กด Shift ฝั่งขวาค้างด้วยนิ้วก้อยขวาขณะที่มือซ้ายพิมพ์ — แป้นพิมพ์จะเน้นว่าควรใช้ Shift ตัวไหน บนหน้าจอสัมผัส ให้แตะ ⇧ ก่อน — มันจะค้างไว้พอดีหนึ่งปุ่ม"
+    },
+    {
+      "id": "typing::steps.16.tip",
+      "path": "typing/steps[16]/tip",
+      "ko": null,
+      "en": "Same rule, three more keys: ㄸ is Shift + E, ㄲ is Shift + R, ㅆ is Shift + T — all left-hand keys, so again hold the RIGHT Shift with your right little finger. These three turn up constantly — 진짜, 꼭, 있어요 — so the Shift reflex is worth drilling now.",
+      "th": "กฎเดิม เพิ่มอีกสามปุ่ม: ㄸ คือ Shift + E, ㄲ คือ Shift + R, ㅆ คือ Shift + T — ล้วนเป็นปุ่มมือซ้าย จึงกด Shift ฝั่งขวาค้างด้วยนิ้วก้อยขวาอีกครั้ง สามตัวนี้โผล่มาตลอด — 진짜, 꼭, 있어요 — จึงคุ้มที่จะฝึกรีเฟล็กซ์ Shift ตั้งแต่ตอนนี้"
+    },
+    {
+      "id": "typing::steps.17.tip",
+      "path": "typing/steps[17]/tip",
+      "ko": null,
+      "en": "Shift works on the vowel side too, but only on two keys: ㅒ is Shift + O (above ㅐ) and ㅖ is Shift + P (above ㅔ). These are right-hand keys, so this time use the LEFT Shift with your left little finger — always the hand opposite the letter. Every other vowel you will ever need is either a plain key or two plain keys typed one after the other.",
+      "th": "Shift ใช้ได้กับฝั่งสระเช่นกัน แต่มีแค่สองปุ่ม: ㅒ คือ Shift + O (เหนือ ㅐ) และ ㅖ คือ Shift + P (เหนือ ㅔ) ปุ่มเหล่านี้เป็นปุ่มมือขวา คราวนี้จึงใช้ Shift ฝั่งซ้ายด้วยนิ้วก้อยซ้าย — ใช้มือฝั่งตรงข้ามกับตัวอักษรเสมอ สระอื่น ๆ ที่คุณจะต้องใช้ ล้วนเป็นปุ่มธรรมดาหนึ่งปุ่ม หรือปุ่มธรรมดาสองปุ่มพิมพ์ต่อกัน"
+    },
+    {
+      "id": "typing::steps.18.tip",
+      "path": "typing/steps[18]/tip",
+      "ko": null,
+      "en": "Go for accuracy, not speed. Slow and correct builds the habit; fast and wrong builds a habit you will have to unlearn. The speed comes on its own once your fingers stop hunting.",
+      "th": "มุ่งความแม่นยำ ไม่ใช่ความเร็ว ช้าแต่ถูกสร้างนิสัยที่ดี เร็วแต่ผิดสร้างนิสัยที่คุณต้องมาแก้ทีหลัง ความเร็วจะมาเอง เมื่อนิ้วของคุณเลิกไล่หาปุ่ม"
+    },
+    {
+      "id": "typing::steps.19.tip",
+      "path": "typing/steps[19]/tip",
+      "ko": null,
+      "en": "Every one of these is under your right hand. If you find yourself looking down, try naming the finger before you press — index, middle, ring, little.",
+      "th": "ทั้งหมดนี้อยู่ใต้มือขวาของคุณ ถ้าเผลอก้มมองแป้น ลองเรียกชื่อนิ้วก่อนกด — นิ้วชี้ นิ้วกลาง นิ้วนาง นิ้วก้อย"
+    },
+    {
+      "id": "typing::steps.20.tip",
+      "path": "typing/steps[20]/tip",
+      "ko": null,
+      "en": "Two keystrokes each, and every one of them is left hand then right hand. There is no key to press to \"finish\" the block — the moment the vowel lands, the syllable is done and the drill moves on.",
+      "th": "แต่ละพยางค์กดสองครั้ง และทุกครั้งเป็นมือซ้ายแล้วมือขวา ไม่มีปุ่มไหนที่ต้องกดเพื่อ “ปิด” บล็อก — พอสระลงตำแหน่ง พยางค์ก็เสร็จ และแบบฝึกก็ไปตัวถัดไป"
+    },
+    {
+      "id": "typing::steps.21.tip",
+      "path": "typing/steps[21]/tip",
+      "ko": null,
+      "en": "Three keystrokes each: left, right, left. Watch the block change shape as the third letter drops into place — 하 becomes 한 the instant you press ㄴ.",
+      "th": "แต่ละพยางค์กดสามครั้ง: ซ้าย ขวา ซ้าย ดูบล็อกเปลี่ยนรูปเมื่อตัวอักษรที่สามลงตำแหน่ง — 하 กลายเป็น 한 ทันทีที่คุณกด ㄴ"
+    }
+  ]
+}
