@@ -316,5 +316,9 @@ Hosted on Vercel. Config in `vercel.json`: `cleanUrls: true`, no trailing slashe
 There is no CI: `.github/` was removed with the news workflow, so every generation
 and SEO script is run manually from a workstation.
 
-⚠️ `.vercelignore` does **not** list `supabase`, so `supabase/migrations/*.sql`
-currently deploy as publicly fetchable files. Add `supabase` to `.vercelignore`.
+`.vercelignore` lists `supabase` as of 2026-07-27, so `supabase/migrations/*.sql`
+no longer deploy as publicly fetchable files. They had been reachable — a local
+`GET /supabase/migrations/001_init.sql` returned 200. Schema only, no
+credentials, but it disclosed table structure and RLS policy names for no
+benefit. Anything added at the repo root that is not part of the site needs a
+line here; the file is the only deploy-surface gate, since there is no CI.
