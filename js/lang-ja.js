@@ -10875,7 +10875,16 @@ const LangManager = (() => {
   function t(key) { const d = _dicts[_lang]; return (d && d[key]) ? d[key] : key; }
 
   function init() {
-    _lang = localStorage.getItem(LS_KEY) || 'en';
+    // <html lang> is authoritative — see docs/i18n-locale-leak.md. This legacy
+    // standalone manager is loaded (instead of lang-core.js) by the 5 kbbq
+    // pages, and had the same leak in a worse form: it never looked at the
+    // page's declared language at all.
+    const _known = ['en', 'zh-tw', 'ja', 'es', 'fr', 'de', 'vi', 'th', 'id'];
+    const _htmlLang = (document.documentElement.getAttribute('lang') || '').toLowerCase();
+    _lang = _known.indexOf(_htmlLang) !== -1
+      ? _htmlLang
+      : (localStorage.getItem(LS_KEY) || 'en').toLowerCase();
+    if (_known.indexOf(_lang) === -1) _lang = 'en';
     if (_lang !== 'en') _apply(_lang);
     _renderBtn(_lang);
     _renderHeroPicker();

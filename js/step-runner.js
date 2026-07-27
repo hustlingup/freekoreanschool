@@ -378,12 +378,15 @@ const StepRunner = (() => {
         </div>
       </div>` : '';
 
-    // The Korean subtitle is shown only when it differs from the resolved
-    // title. On proverb/grammar cards the base title IS Korean, so an English
-    // reader's title_kr just repeats it — hide it there, but keep it for
-    // localized readers whose title is a translation.
+    // The Korean subtitle is shown only when the resolved title does not
+    // already carry it. Two ways it can: the base title IS Korean (proverb and
+    // grammar cards), or the Korean sits in parentheses inside it —
+    // "Emotions in Korean (감정)" + title_kr "감정" rendered 감정 twice on 23
+    // steps. Containment, not equality, because the parenthetical form is not
+    // an exact match. Tested per-locale: a locale whose title drops the
+    // parenthetical still gets the subtitle.
     const _title = loc(step, 'title');
-    const _krSub = step.title_kr && step.title_kr !== _title
+    const _krSub = step.title_kr && !String(_title || '').includes(step.title_kr)
       ? ` <span class="sr-reading-title-kr">${esc(step.title_kr)}</span>` : '';
     return `
       <div class="sr-reading-card">

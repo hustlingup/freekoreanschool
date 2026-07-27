@@ -6,6 +6,15 @@
 
 const _langCoreScript = document.currentScript;
 
+/* The nine locales this site ships.
+   `<html lang>` is the SINGLE SOURCE OF TRUTH for what language a page is —
+   see docs/i18n-locale-leak.md. localStorage remembers the reader's *choice*
+   for setLang() navigation; it must never translate a page in place. An
+   explicit lang="en" means the page IS English, not "unknown, use the stored
+   preference" — reading it the second way is what produced the Thai/English
+   hybrid on every English URL a non-English reader arrived at. */
+const KS_LANGS = ['en', 'zh-tw', 'ja', 'es', 'fr', 'de', 'vi', 'th', 'id'];
+
 const LangManager = (() => {
   const LS_KEY = 'ks-lang';
   let _lang = 'en';
@@ -21,17 +30,16 @@ const LangManager = (() => {
   function t(key) { const d = _dicts[_lang]; return (d && d[key]) ? d[key] : key; }
 
   function init() {
-    // Detect language from <html lang> so static mirror pages show the right active state
+    // <html lang> wins whenever it names a locale we ship — INCLUDING 'en'.
+    // localStorage is consulted only when the attribute is absent or is a
+    // locale we do not have a pack for.
     const htmlLang = (document.documentElement.getAttribute('lang') || '').toLowerCase();
-    if (htmlLang === 'zh-tw') _lang = 'zh-tw';
-    else if (htmlLang === 'ja') _lang = 'ja';
-    else if (htmlLang === 'es') _lang = 'es';
-    else if (htmlLang === 'fr') _lang = 'fr';
-    else if (htmlLang === 'de') _lang = 'de';
-    else if (htmlLang === 'vi') _lang = 'vi';
-    else if (htmlLang === 'th') _lang = 'th';
-    else if (htmlLang === 'id') _lang = 'id';
-    else _lang = localStorage.getItem(LS_KEY) || 'en';
+    if (KS_LANGS.indexOf(htmlLang) !== -1) {
+      _lang = htmlLang;
+    } else {
+      const stored = (localStorage.getItem(LS_KEY) || '').toLowerCase();
+      _lang = KS_LANGS.indexOf(stored) !== -1 ? stored : 'en';
+    }
 
     if (_lang !== 'en') _apply(_lang);
     _renderBtn(_lang);
@@ -245,10 +253,13 @@ window.LangManager = LangManager;
    document.write during <head> parsing executes the script before the parser continues,
    guaranteeing zero race conditions and zero cost for English users. */
 (function() {
-  var lang = localStorage.getItem('ks-lang')
-    || (document.documentElement.getAttribute('lang') || '').toLowerCase()
-    || 'en';
-  if (!lang || lang === 'en' || !_langCoreScript) return;
+  // Same precedence as init(): never document.write a pack whose code differs
+  // from the page's declared language.
+  var htmlLang = (document.documentElement.getAttribute('lang') || '').toLowerCase();
+  var lang = KS_LANGS.indexOf(htmlLang) !== -1
+    ? htmlLang
+    : (localStorage.getItem('ks-lang') || '').toLowerCase();
+  if (!lang || lang === 'en' || KS_LANGS.indexOf(lang) === -1 || !_langCoreScript) return;
   var src = _langCoreScript.src.replace(/lang-core\.js([^/]*)$/, 'langs/lang-' + lang + '.js');
   document.write('<script src="' + src + '"><\/script>'); // eslint-disable-line
 })();

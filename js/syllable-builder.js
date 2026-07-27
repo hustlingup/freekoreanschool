@@ -19,6 +19,26 @@ const HangulFreeBuilder = (() => {
 
   const cvMap = buildCVMap();
 
+  /* Widget chrome, all 9 locales. This used to be a ja / zh-tw / else ternary,
+     so es, fr, de, vi, th and id fell through to English and a Thai reader saw
+     "Pick a consonant:" in the middle of an otherwise Thai page. The labels
+     carry nested markup, so they cannot come from the UI packs — those
+     translate whole text nodes, and here the annotation is a separate <span>.
+     Same approach step-runner.js uses for its typing-widget chrome.
+     초성 / 중성 / 받침 stay in Hangul in every locale: they are the terms
+     being taught, and the parenthetical gloss is what explains them. */
+  const LABELS = {
+    en:      { cons: 'Pick a consonant',      vow: 'Pick a vowel',        bat: 'Pick a 받침',        hint: 'optional final consonant' },
+    ja:      { cons: '子音を選ぶ',              vow: '母音を選ぶ',            bat: '받침を選ぶ',           hint: '任意の終声' },
+    'zh-tw': { cons: '選擇子音',                vow: '選擇母音',              bat: '選擇收尾音 받침',       hint: '可選尾音' },
+    es:      { cons: 'Elige una consonante',  vow: 'Elige una vocal',     bat: 'Elige un 받침',       hint: 'consonante final opcional' },
+    fr:      { cons: 'Choisissez une consonne', vow: 'Choisissez une voyelle', bat: 'Choisissez un 받침', hint: 'consonne finale facultative' },
+    de:      { cons: 'Wähle einen Konsonanten', vow: 'Wähle einen Vokal', bat: 'Wähle ein 받침',      hint: 'optionaler Schlusskonsonant' },
+    vi:      { cons: 'Chọn một phụ âm',       vow: 'Chọn một nguyên âm',  bat: 'Chọn một 받침',       hint: 'phụ âm cuối, không bắt buộc' },
+    th:      { cons: 'เลือกพยัญชนะ',              vow: 'เลือกสระ',               bat: 'เลือก 받침',            hint: 'ตัวสะกดท้าย ไม่บังคับ' },
+    id:      { cons: 'Pilih konsonan',        vow: 'Pilih vokal',         bat: 'Pilih 받침',          hint: 'konsonan akhir opsional' }
+  };
+
   let selectedCons = null;
   let selectedVow  = null;
   let selectedBat  = '';
@@ -64,20 +84,23 @@ const HangulFreeBuilder = (() => {
     selectedVow  = null;
     selectedBat  = '';
 
+    // <html lang> is authoritative (docs/i18n-locale-leak.md); LangManager
+    // already resolves it, and the attribute is the fallback if it is absent.
     const _htmlLang = document.documentElement.lang.toLowerCase();
-    const _lmLang   = window.LangManager ? window.LangManager.getLang() : 'en';
-    const _lang     = _lmLang !== 'en' ? _lmLang
-                    : _htmlLang.startsWith('zh') ? 'zh-tw'
-                    : _htmlLang === 'ja' ? 'ja' : 'en';
-    const isJa   = _lang === 'ja';
-    const isZhTw = _lang === 'zh-tw';
+    const _lmLang   = window.LangManager ? window.LangManager.getLang() : '';
+    const _lang     = LABELS[_lmLang] ? _lmLang : (LABELS[_htmlLang] ? _htmlLang : 'en');
+    const L         = LABELS[_lang];
+
+    // CJK copy takes fullwidth punctuation, every other locale the ASCII kind.
+    const cjk   = _lang === 'ja' || _lang === 'zh-tw';
+    const colon = cjk ? '：' : ':';
+    const paren = s => cjk ? `（${s}）` : `(${s})`;
+    const dim   = s => `<span style="font-weight:400;opacity:.7">${s}</span>`;
+    // ja/zh-tw run the annotation straight on; the others space it off.
+    const aid   = s => cjk ? paren(s) : ' ' + dim(paren(s));
 
     const batchimSection = batchimMode ? `
-      <p class="syl-builder-label">${isJa
-        ? '받침を選ぶ <span style="font-weight:400;opacity:.7">（任意の終声）：</span>'
-        : isZhTw
-        ? '選擇收尾音 받침 <span style="font-weight:400;opacity:.7">（可選尾音）：</span>'
-        : 'Pick a 받침 <span style="font-weight:400;opacity:.7">(optional final consonant):</span>'}</p>
+      <p class="syl-builder-label">${L.bat} ${dim(paren(L.hint) + colon)}</p>
       <div class="syl-builder-row" id="sb-batchim">
         ${batchimList.map(b =>
           `<button class="syl-picker-btn${b === '' ? ' active' : ''}" data-char="${b}" onclick="HangulFreeBuilder.pickBat('${b}', this)">${b === '' ? '—' : b}</button>`
@@ -90,21 +113,13 @@ const HangulFreeBuilder = (() => {
 
     el.innerHTML = `
       <div class="syl-builder-widget">
-        <p class="syl-builder-label">${isJa
-          ? `子音を選ぶ${batchimMode ? '（초성）：' : '：'}`
-          : isZhTw
-          ? `選擇子音${batchimMode ? '（초성）：' : '：'}`
-          : `Pick a consonant${batchimMode ? ' <span style="font-weight:400;opacity:.7">(초성)</span>' : ''}:`}</p>
+        <p class="syl-builder-label">${L.cons}${batchimMode ? aid('초성') : ''}${colon}</p>
         <div class="syl-builder-row" id="sb-consonants">
           ${consonants.map(c =>
             `<button class="syl-picker-btn" data-char="${c}" onclick="HangulFreeBuilder.pickCons('${c}', this)">${c}</button>`
           ).join('')}
         </div>
-        <p class="syl-builder-label">${isJa
-          ? `母音を選ぶ${batchimMode ? '（중성）：' : '：'}`
-          : isZhTw
-          ? `選擇母音${batchimMode ? '（중성）：' : '：'}`
-          : `Pick a vowel${batchimMode ? ' <span style="font-weight:400;opacity:.7">(중성)</span>' : ''}:`}</p>
+        <p class="syl-builder-label">${L.vow}${batchimMode ? aid('중성') : ''}${colon}</p>
         <div class="syl-builder-row" id="sb-vowels">
           ${vowels.map(v =>
             `<button class="syl-picker-btn" data-char="${v}" onclick="HangulFreeBuilder.pickVow('${v}', this)">${v}</button>`

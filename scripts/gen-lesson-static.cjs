@@ -273,10 +273,11 @@ function fill(tpl, vars) {
 function renderReadingCard(step, lang, t) {
   const out = [];
   const title = loc(step, 'title', lang);
-  // Only show the Korean subtitle when it differs from the title — on proverb
-  // and grammar cards the base title is itself Korean, so title_kr would repeat
-  // it for readers whose locale has no translated title.
-  const titleKr = step.title_kr && step.title_kr !== title ? step.title_kr : '';
+  // Only show the Korean subtitle when the title does not already carry it:
+  // the base title may BE Korean (proverb/grammar cards), or may hold it in
+  // parentheses — "Emotions in Korean (감정)" with title_kr "감정" printed 감정
+  // twice. Containment, not equality; see js/step-runner.js renderReadingCard.
+  const titleKr = step.title_kr && !String(title || '').includes(step.title_kr) ? step.title_kr : '';
   out.push(`<h3 class="ls-h3">${esc(title)}${titleKr ? ` <span class="ls-kr">${ko(titleKr)}</span>` : ''}</h3>`);
 
   const body = loc(step, 'body', lang);
@@ -426,7 +427,8 @@ function renderQuizList(steps, lang, t) {
 function renderComplete(step, lang, t) {
   const title = loc(step, 'title', lang) || step.title;
   const msg = loc(step, 'message', lang) || step.message;
-  const krSub = step.title_kr && step.title_kr !== title ? ` — ${ko(step.title_kr)}` : '';
+  const krSub = step.title_kr && !String(title || '').includes(step.title_kr)
+    ? ` — ${ko(step.title_kr)}` : '';
   const out = [`<h3 class="ls-h3">${esc(t.sWrap)}</h3>`];
   if (title) out.push(`<p><strong>${esc(title)}</strong>${krSub}</p>`);
   if (msg) out.push(`<p>${esc(msg)}</p>`);
@@ -476,10 +478,22 @@ function renderKeyTable(steps, lang, t) {
     '</tr></thead><tbody>');
   for (const s of steps) {
     const keys = Array.isArray(s.jamo) ? s.jamo.join(' ') : (s.jamo || '');
+    // title = which fingers and which row, instruction = what to press, tip =
+    // why. The column is "Finger and position", so the title belongs at the
+    // head of the cell. This used to show `tip` alone because title and
+    // instruction had no locale siblings and would have republished English
+    // into all 8 mirrors — scripts/patch-typing-locale-gaps.cjs fixed that.
+    const title = loc(s, 'title', lang) || '';
+    const instruction = loc(s, 'instruction', lang) || '';
     const tip = loc(s, 'tip', lang) || s.tip || '';
+    const cell = [
+      title ? `<strong>${esc(title)}</strong>` : '',
+      instruction ? esc(instruction) : '',
+      tip ? esc(tip) : ''
+    ].filter(Boolean).join('<br>');
     out.push('<tr>' +
       `<td class="ls-ko-cell ls-big">${ko(keys)}</td>` +
-      `<td>${esc(tip)}</td>` +
+      `<td>${cell}</td>` +
       '</tr>');
   }
   out.push('</tbody></table>');
@@ -490,7 +504,13 @@ function renderKeyTable(steps, lang, t) {
 function renderDrillSection(steps, lang, t) {
   const out = [`<h3 class="ls-h3">${esc(t.sTyping)}</h3>`];
   for (const s of steps) {
+    // Same story as renderKeyTable: title and instruction are localized now,
+    // so the drill is named and explained instead of being a bare tip.
+    const title = loc(s, 'title', lang) || '';
+    const instruction = loc(s, 'instruction', lang) || '';
     const tip = loc(s, 'tip', lang) || s.tip;
+    if (title) out.push(`<h4 class="ls-h4">${esc(title)}</h4>`);
+    if (instruction) out.push(`<p>${esc(instruction)}</p>`);
     if (tip) out.push(`<p>${esc(tip)}</p>`);
     if (s.mode === 'word' && Array.isArray(s.items) && s.items.length) {
       out.push('<table class="ls-table"><thead><tr>' +
