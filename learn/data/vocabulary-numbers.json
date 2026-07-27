@@ -66,7 +66,7 @@
       },
       "title_ja": "二つの数詞体系",
       "title_de": "Zwei Zahlensysteme",
-      "title_fr": "Deux Systèmes de Nombres",
+      "title_fr": "Deux systèmes de nombres",
       "title_id": "Dua Sistem Bilangan",
       "title_th": "ระบบตัวเลขสองแบบ",
       "title_vi": "Hai Hệ Thống Số Đếm",
@@ -104,7 +104,32 @@
         "Số thuần Hàn: dùng để đếm đồ vật (개), tuổi (살) và giờ (시) — ví dụ: 하나, 둘, 셋",
         "Số Hán-Hàn: dùng cho tiền (원), phút (분), ngày tháng, số điện thoại và địa chỉ — ví dụ: 일, 이, 삼",
         "Số lớn luôn dùng số Hán-Hàn — 백 (100), 천 (1.000), 만 (10.000)"
-      ]
+      ],
+      "tip_de": {
+        "icon": "🔢",
+        "label": "Schnelle Eselsbrücke",
+        "text": "Denk daran: Einheimische Zahlen = natürliche Körperrhythmen (Herzschlag, Alter, an den Fingern abzählen). Sino-koreanische Zahlen = systematische/offizielle Kontexte (Uhrzeit, Geld, Kalender)."
+      },
+      "tip_fr": {
+        "icon": "🔢",
+        "label": "Astuce mnémotechnique rapide",
+        "text": "Pensez-y ainsi : les nombres natifs = rythmes corporels naturels (battements de cœur, âge, compter sur ses doigts). Les nombres sino-coréens = contextes systématiques/officiels (horloges, argent, calendriers)."
+      },
+      "tip_vi": {
+        "icon": "🔢",
+        "label": "Mẹo ghi nhớ nhanh",
+        "text": "Hãy nhớ: Số thuần Hàn = dùng cho những nhịp điệu tự nhiên của cơ thể (nhịp tim, tuổi, đếm trên ngón tay). Số Hán-Hàn = dùng trong các ngữ cảnh có hệ thống/trang trọng (đồng hồ, tiền bạc, lịch)."
+      },
+      "tip_th": {
+        "icon": "🔢",
+        "label": "เคล็ดลับช่วยจำอย่างรวดเร็ว",
+        "text": "ให้จำแบบนี้: เลขเกาหลีแท้ใช้กับจังหวะตามธรรมชาติของร่างกาย เช่น การนับจังหวะหัวใจ อายุ หรือนับนิ้วมือ ส่วนเลขจีน-เกาหลีใช้ในบริบทที่เป็นระบบหรือทางการ เช่น การบอกเวลา เงิน และปฏิทิน"
+      },
+      "tip_id": {
+        "icon": "🔢",
+        "label": "Trik mengingat cepat",
+        "text": "Ingat: Asli (native) = ritme alami tubuh (detak jantung, usia, menghitung dengan jari). Sino-Korea = konteks sistematis/resmi (jam, uang, kalender)."
+      }
     },
     {
       "id": 2,
@@ -140,10 +165,10 @@
       "katakana": "トゥル",
       "audio": "둘",
       "meaning": "Two (native Korean) — becomes 두 before a counter",
-      "meaning_zh_tw": "二（固有語）——在助數詞前變為 두",
+      "meaning_zh_tw": "二（固有語）——在量詞前變為 두",
       "meaning_ja": "二（固有語）― 助数詞の前では 두 になる",
       "meaning_es": "Dos (coreano nativo) — se convierte en 두 antes de un contador",
-      "meaning_de": "Zwei (rein koreanisch) — wird vor einer Zähleinheit zu 두",
+      "meaning_de": "Zwei (rein koreanisch) — wird vor einem Zählwort zu 두",
       "meaning_fr": "Deux (coréen natif) — devient 두 devant un classificateur",
       "meaning_id": "Dua (asli Korea) — berubah menjadi 두 sebelum kata bantu bilangan",
       "meaning_th": "สอง (เลขเกาหลีแท้) — เปลี่ยนเป็น 두 เมื่ออยู่หน้าลักษณนาม",
@@ -161,10 +186,10 @@
       "katakana": "セッ",
       "audio": "셋",
       "meaning": "Three (native Korean) — becomes 세 before a counter",
-      "meaning_zh_tw": "三（固有語）——在助數詞前變為 세",
+      "meaning_zh_tw": "三（固有語）——在量詞前變為 세",
       "meaning_ja": "三（固有語）― 助数詞の前では 세 になる",
       "meaning_es": "Tres (coreano nativo) — se convierte en 세 antes de un contador",
-      "meaning_de": "Drei (rein koreanisch) — wird vor einer Zähleinheit zu 세",
+      "meaning_de": "Drei (rein koreanisch) — wird vor einem Zählwort zu 세",
       "meaning_fr": "Trois (coréen natif) — devient 세 devant un classificateur",
       "meaning_id": "Tiga (asli Korea) — berubah menjadi 세 sebelum kata bantu bilangan",
       "meaning_th": "สาม (เลขเกาหลีแท้) — เปลี่ยนเป็น 세 เมื่ออยู่หน้าลักษณนาม",
@@ -182,10 +207,10 @@
       "katakana": "ネッ",
       "audio": "넷",
       "meaning": "Four (native Korean) — becomes 네 before a counter",
-      "meaning_zh_tw": "四（固有語）——在助數詞前變為 네",
+      "meaning_zh_tw": "四（固有語）——在量詞前變為 네",
       "meaning_ja": "四（固有語）― 助数詞の前では 네 になる",
       "meaning_es": "Cuatro (coreano nativo) — se convierte en 네 antes de un contador",
-      "meaning_de": "Vier (rein koreanisch) — wird vor einer Zähleinheit zu 네",
+      "meaning_de": "Vier (rein koreanisch) — wird vor einem Zählwort zu 네",
       "meaning_fr": "Quatre (coréen natif) — devient 네 devant un classificateur",
       "meaning_id": "Empat (asli Korea) — berubah menjadi 네 sebelum kata bantu bilangan",
       "meaning_th": "สี่ (เลขเกาหลีแท้) — เปลี่ยนเป็น 네 เมื่ออยู่หน้าลักษณนาม",
@@ -337,7 +362,7 @@
       "choices_zh_tw": [
         "漢字語（일、이、삼）",
         "固有語（하나、둘、셋）",
-        "數字用漢字語，助數詞 살 用固有語",
+        "數字用漢字語，量詞 살 用固有語",
         "未滿20用固有語，20以上用漢字語"
       ],
       "choices_ja": [
@@ -359,7 +384,7 @@
       "choices_de": [
         "Sinokoreanisch (일, 이, 삼)",
         "Rein koreanisch (하나, 둘, 셋)",
-        "Sinokoreanisch für die Zahl, rein koreanisch für die Zähleinheit 살",
+        "Sinokoreanisch für die Zahl, rein koreanisch für das Zählwort 살",
         "Unter 20 rein koreanisch, ab 20 sinokoreanisch"
       ],
       "prompt_fr": "Vous dites votre âge en coréen. Quel système de numération utilisez-vous ?",
@@ -373,7 +398,7 @@
       "choices_id": [
         "Sino-Korea (일, 이, 삼)",
         "Asli Korea (하나, 둘, 셋)",
-        "Sino-Korea untuk angkanya, asli Korea untuk kata penggolong 살",
+        "Sino-Korea untuk angkanya, asli Korea untuk kata bantu bilangan 살",
         "Asli Korea di bawah 20, Sino-Korea mulai dari 20"
       ],
       "prompt_th": "คุณกำลังบอกอายุของตัวเองเป็นภาษาเกาหลี ควรใช้ระบบตัวเลขแบบใด",
@@ -420,7 +445,7 @@
       ],
       "title_ja": "漢字語数詞",
       "title_de": "Sinokoreanische Zahlen",
-      "title_fr": "Nombres Sino-coréens",
+      "title_fr": "Nombres sino-coréens",
       "title_id": "Angka Sino-Korea",
       "title_th": "เลขจีน-เกาหลี",
       "title_vi": "Số Hán Hàn",
@@ -594,7 +619,7 @@
       "title_kr": "단위 명사",
       "title_zh_tw": "韓語助數詞",
       "body": "Korean numbers must be paired with counters (단위명사) — special words that indicate what kind of thing you are counting. The counter comes after the number.",
-      "body_zh_tw": "韓語數字必須搭配助數詞（단위명사）——表示所數事物種類的特殊詞，放在數字之後。",
+      "body_zh_tw": "韓語數字必須搭配量詞（단위명사）——表示所數事物種類的特殊詞，放在數字之後。",
       "rules": [
         "개 (gae) — general objects: 사과 두 개 (two apples)",
         "명 (myeong) — people (formal): 학생 세 명 (three students)",
@@ -624,11 +649,11 @@
       ],
       "title_ja": "韓国語の助数詞",
       "title_de": "Koreanische Zähleinheiten",
-      "title_fr": "Classificateurs Coréens",
+      "title_fr": "Classificateurs coréens",
       "title_id": "Kata Bantu Bilangan Korea",
       "title_th": "ลักษณนามภาษาเกาหลี",
       "title_vi": "Đơn Vị Đếm Tiếng Hàn",
-      "body_de": "Koreanische Zahlen müssen mit Zähleinheitswörtern (단위명사) verbunden werden — besonderen Wörtern, die angeben, welche Art von Dingen gezählt wird. Das Zähleinheitswort steht nach der Zahl.",
+      "body_de": "Koreanische Zahlen müssen mit Zählwörtern (단위명사) verbunden werden — besonderen Wörtern, die angeben, welche Art von Dingen gezählt wird. Das Zählwort steht nach der Zahl.",
       "rules_de": [
         "개 (gae) — allgemeine Gegenstände: 사과 두 개 (zwei Äpfel)",
         "명 (myeong) — Personen (förmlich): 학생 세 명 (drei Schüler)",
@@ -672,7 +697,7 @@
         "잔 (jan) — ถ้วย / แก้ว: 커피 한 잔 (กาแฟ 1 แก้ว)",
         "번 (beon) — ลำดับ / จำนวนครั้ง: 두 번 (2 ครั้ง)"
       ],
-      "body_vi": "Số trong tiếng Hàn phải đi kèm với danh từ đơn vị (단위명사) — những từ đặc biệt cho biết bạn đang đếm loại sự vật nào. Danh từ đơn vị đứng sau số.",
+      "body_vi": "Số trong tiếng Hàn phải đi kèm với đơn vị đếm (단위명사) — những từ đặc biệt cho biết bạn đang đếm loại sự vật nào. Đơn vị đếm đứng sau số.",
       "rules_vi": [
         "개 (gae) — đồ vật nói chung: 사과 두 개 (hai quả táo)",
         "명 (myeong) — người (trang trọng): 학생 세 명 (ba học sinh)",
@@ -694,10 +719,10 @@
       "katakana": "ケ",
       "audio": "개",
       "meaning": "Counter for general objects — 사탕 세 개 (three candies)",
-      "meaning_zh_tw": "一般物品助數詞——사탕 세 개（三顆糖果）",
+      "meaning_zh_tw": "一般物品量詞——사탕 세 개（三顆糖果）",
       "meaning_ja": "物を数える助数詞 ― 사탕 세 개（キャンディー3個）",
       "meaning_es": "Contador para objetos generales — 사탕 세 개 (tres caramelos)",
-      "meaning_de": "Zähleinheit für allgemeine Gegenstände — 사탕 세 개 (drei Bonbons)",
+      "meaning_de": "Zählwort für allgemeine Gegenstände — 사탕 세 개 (drei Bonbons)",
       "meaning_fr": "Classificateur pour les objets en général — 사탕 세 개 (trois bonbons)",
       "meaning_id": "Kata bantu bilangan untuk benda umum — 사탕 세 개 (tiga permen)",
       "meaning_th": "ลักษณนามสำหรับสิ่งของทั่วไป — 사탕 세 개 (ลูกอมสามเม็ด)",
@@ -715,10 +740,10 @@
       "katakana": "ミョン",
       "audio": "명",
       "meaning": "Counter for people (formal) — 친구 두 명 (two friends)",
-      "meaning_zh_tw": "人的助數詞（正式）——친구 두 명（兩位朋友）",
+      "meaning_zh_tw": "人的量詞（正式）——친구 두 명（兩位朋友）",
       "meaning_ja": "人を数える助数詞（丁寧）― 친구 두 명（友達2人）",
       "meaning_es": "Contador para personas (formal) — 친구 두 명 (dos amigos)",
-      "meaning_de": "Zähleinheit für Personen (förmlich) — 친구 두 명 (zwei Freunde)",
+      "meaning_de": "Zählwort für Personen (förmlich) — 친구 두 명 (zwei Freunde)",
       "meaning_fr": "Classificateur pour les personnes (formel) — 친구 두 명 (deux amis)",
       "meaning_id": "Kata bantu bilangan untuk orang (formal) — 친구 두 명 (dua orang teman)",
       "meaning_th": "ลักษณนามสำหรับคน (ทางการ) — 친구 두 명 (เพื่อนสองคน)",
@@ -736,10 +761,10 @@
       "katakana": "ポン",
       "audio": "번",
       "meaning": "Counter for times / order — 한 번 더 (one more time)",
-      "meaning_zh_tw": "次數/順序助數詞——한 번 더（再一次）",
+      "meaning_zh_tw": "次數/順序量詞——한 번 더（再一次）",
       "meaning_ja": "回数・順序の助数詞 ― 한 번 더（もう一度）",
       "meaning_es": "Contador para veces/orden — 한 번 더 (una vez más)",
-      "meaning_de": "Zähleinheit für Male / Reihenfolge — 한 번 더 (noch einmal)",
+      "meaning_de": "Zählwort für Male / Reihenfolge — 한 번 더 (noch einmal)",
       "meaning_fr": "Classificateur pour les fois / l'ordre — 한 번 더 (une fois de plus)",
       "meaning_id": "Kata bantu bilangan untuk kali / urutan — 한 번 더 (sekali lagi)",
       "meaning_th": "ลักษณนามบอกจำนวนครั้ง / ลำดับ — 한 번 더 (อีกครั้งหนึ่ง)",
@@ -750,7 +775,7 @@
       "stage": 1,
       "type": "match_quiz",
       "prompt": "Which counter do you use for books (책)?",
-      "prompt_zh_tw": "數書（책）時用哪個助數詞？",
+      "prompt_zh_tw": "數書（책）時用哪個量詞？",
       "choices": [
         "개",
         "명",
@@ -760,11 +785,11 @@
       "correct": "권",
       "prompt_ja": "本（책）を数えるときの助数詞は？",
       "prompt_es": "¿Qué contador usas para los libros (책)?",
-      "prompt_de": "Welches Zähleinheitswort verwendest du für Bücher (책)?",
+      "prompt_de": "Welches Zählwort verwendest du für Bücher (책)?",
       "prompt_fr": "Quel classificateur utilise-t-on pour les livres (책) ?",
-      "prompt_id": "Kata penggolong mana yang dipakai untuk buku (책)?",
+      "prompt_id": "Kata bantu bilangan mana yang dipakai untuk buku (책)?",
       "prompt_th": "ใช้ลักษณนามใดกับหนังสือ (책)",
-      "prompt_vi": "Đếm sách (책) thì dùng danh từ đơn vị nào?"
+      "prompt_vi": "Đếm sách (책) thì dùng đơn vị đếm nào?"
     },
     {
       "id": 25,
@@ -781,7 +806,7 @@
       "message_es": "Has dominado los dos sistemas numéricos coreanos y los contadores clave. Los números abren una gran parte de la vida cotidiana — decir la hora, comprar, dar tu edad y mucho más.",
       "title_ja": "数字編、修了！",
       "title_de": "Zahlen abgeschlossen!",
-      "title_fr": "Nombres Terminés !",
+      "title_fr": "Nombres terminés !",
       "title_id": "Angka Selesai!",
       "title_th": "จบบทตัวเลขแล้ว!",
       "title_vi": "Hoàn thành phần số đếm!",

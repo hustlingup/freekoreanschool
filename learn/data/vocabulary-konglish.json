@@ -51,7 +51,7 @@
       },
       "title_ja": "コングリッシュ — 韓国語＋英語",
       "title_de": "Konglish — Koreanisch + Englisch",
-      "title_fr": "Konglish — coréen + anglais",
+      "title_fr": "Konglish — Coréen + anglais",
       "title_id": "Konglish — Bahasa Korea + Bahasa Inggris",
       "title_th": "คงลิช — เกาหลี + อังกฤษ",
       "title_vi": "Konglish — tiếng Hàn + tiếng Anh",
@@ -59,7 +59,32 @@
       "body_fr": "Le konglish (콩글리시) désigne les emprunts à l'anglais adaptés au coréen. Ces mots se prononcent différemment et ont parfois un sens distinct de l'anglais d'origine. Apprendre le konglish est un raccourci pour acquérir un vaste vocabulaire, car de nombreux mots coréens modernes viennent de l'anglais.",
       "body_id": "Konglish (콩글리시) mengacu pada kata serapan bahasa Inggris yang diadaptasi ke dalam bahasa Korea. Kata-kata ini diucapkan secara berbeda dan terkadang memiliki makna yang berbeda dari bahasa Inggris aslinya. Mempelajari Konglish adalah jalan pintas untuk memperkaya kosakata, karena banyak kata Korea modern berasal dari bahasa Inggris.",
       "body_th": "คงกลิช (콩글리시) หมายถึงคำยืมจากภาษาอังกฤษที่ถูกปรับให้เข้ากับภาษาเกาหลี คำเหล่านี้ออกเสียงต่างออกไป และบางครั้งก็มีความหมายไม่เหมือนคำอังกฤษต้นฉบับ การเรียนคงกลิชเป็นทางลัดในการสะสมคำศัพท์จำนวนมาก เพราะคำเกาหลีสมัยใหม่หลายคำมีที่มาจากภาษาอังกฤษ",
-      "body_vi": "Konglish (콩글리시) chỉ những từ mượn tiếng Anh được Hàn hóa. Các từ này được phát âm khác đi và đôi khi mang nghĩa khác với tiếng Anh gốc. Học Konglish là con đường tắt để có vốn từ vựng lớn, bởi nhiều từ tiếng Hàn hiện đại bắt nguồn từ tiếng Anh."
+      "body_vi": "Konglish (콩글리시) chỉ những từ mượn tiếng Anh được Hàn hóa. Các từ này được phát âm khác đi và đôi khi mang nghĩa khác với tiếng Anh gốc. Học Konglish là con đường tắt để có vốn từ vựng lớn, bởi nhiều từ tiếng Hàn hiện đại bắt nguồn từ tiếng Anh.",
+      "tip_de": {
+        "icon": "🔤",
+        "label": "Lautregeln",
+        "text": "Englische Konsonantenhäufungen werden durch eingefügte Vokale aufgelöst: „stress” → 스트레스 (seuteureseu). Konsonanten am Wortende erhalten einen zusätzlichen Vokal: „cake” → 케이크 (keikeu). „r” und „l” werden beide zu ㄹ: „rice” → 라이스, „lemon” → 레몬."
+      },
+      "tip_fr": {
+        "icon": "🔤",
+        "label": "Règles phonétiques",
+        "text": "Les groupes de consonnes anglais sont séparés par des voyelles : « stress » → 스트레스 (seuteureseu). Les consonnes finales reçoivent une voyelle ajoutée : « cake » → 케이크 (keikeu). « r » et « l » deviennent tous deux ㄹ : « rice » → 라이스, « lemon » → 레몬."
+      },
+      "tip_vi": {
+        "icon": "🔤",
+        "label": "Quy tắc phát âm",
+        "text": "Các cụm phụ âm trong tiếng Anh được tách ra bằng nguyên âm: 'stress' → 스트레스 (seuteureseu). Phụ âm cuối được thêm một nguyên âm: 'cake' → 케이크 (keikeu). Cả 'r' và 'l' đều chuyển thành ㄹ: 'rice' → 라이스, 'lemon' → 레몬."
+      },
+      "tip_th": {
+        "icon": "🔤",
+        "label": "กฎการออกเสียง",
+        "text": "กลุ่มพยัญชนะในภาษาอังกฤษจะถูกแทรกด้วยสระเพื่อแยกเสียง เช่น \"stress\" → 스트레스 (seuteureseu) พยัญชนะท้ายคำจะมีการเติมสระต่อท้าย เช่น \"cake\" → 케이크 (keikeu) ส่วนเสียง \"r\" และ \"l\" ทั้งสองแบบจะกลายเป็น ㄹ เช่น \"rice\" → 라이스 และ \"lemon\" → 레몬"
+      },
+      "tip_id": {
+        "icon": "🔤",
+        "label": "Aturan bunyi",
+        "text": "Gugus konsonan dalam bahasa Inggris dipecah dengan vokal: 'stress' → 스트레스 (seuteureseu). Konsonan akhir mendapat tambahan vokal: 'cake' → 케이크 (keikeu). 'r' dan 'l' sama-sama menjadi ㄹ: 'rice' → 라이스, 'lemon' → 레몬."
+      }
     },
     {
       "id": 2,
@@ -378,7 +403,7 @@
       "meaning_ja": "サービス・おまけ ― 韓国語では「店が無料でくれるもの」の意味でよく使う",
       "meaning_es": "Servicio / regalo / extra — en coreano, 서비스 suele significar algo dado gratis por una tienda",
       "meaning_de": "Service / Gratiszugabe — im Koreanischen bezeichnet 서비스 oft etwas, das ein Geschäft gratis dazugibt",
-      "meaning_fr": "Cadeau de la maison / extra offert — en coréen, 서비스 désigne souvent ce qu'un commerce offre gratuitement",
+      "meaning_fr": "Service / cadeau gratuit — en coréen, 서비스 désigne souvent ce qu'un commerce offre gratuitement",
       "meaning_id": "Layanan / bonus gratis — dalam bahasa Korea, 서비스 sering berarti sesuatu yang diberikan gratis oleh toko",
       "meaning_th": "บริการ / ของแถม — ในภาษาเกาหลี 서비스 มักหมายถึงสิ่งที่ทางร้านให้ฟรี",
       "meaning_vi": "Dịch vụ / đồ tặng kèm — trong tiếng Hàn, 서비스 thường chỉ món quán tặng miễn phí"

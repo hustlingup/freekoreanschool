@@ -15,7 +15,8 @@
       "name_de": "Konsonanten",
       "name_vi": "Phụ âm",
       "name_th": "พยัญชนะ",
-      "name_id": "Konsonan"
+      "name_id": "Konsonan",
+      "name_ja": "子音"
     },
     {
       "id": 2,
@@ -30,7 +31,8 @@
       "name_de": "Vokale",
       "name_vi": "Nguyên âm",
       "name_th": "สระ",
-      "name_id": "Vokal"
+      "name_id": "Vokal",
+      "name_ja": "母音"
     },
     {
       "id": 3,
@@ -45,7 +47,8 @@
       "name_de": "Silben",
       "name_vi": "Âm tiết",
       "name_th": "พยางค์",
-      "name_id": "Suku Kata"
+      "name_id": "Suku Kata",
+      "name_ja": "音節"
     },
     {
       "id": 4,
@@ -60,7 +63,8 @@
       "name_de": "Sonderbuchstaben",
       "name_vi": "Ký tự đặc biệt",
       "name_th": "พิเศษ",
-      "name_id": "Spesial"
+      "name_id": "Spesial",
+      "name_ja": "特殊"
     },
     {
       "id": 5,
@@ -71,11 +75,12 @@
       "time_minutes": 16,
       "name_zh_tw": "複合母音",
       "name_es": "Vocales Compuestas",
-      "name_fr": "Voyelles Composées",
+      "name_fr": "Voyelles composées",
       "name_de": "Zusammengesetzte Vokale",
       "name_vi": "Nguyên âm ghép",
       "name_th": "สระประสม",
-      "name_id": "Vokal Majemuk"
+      "name_id": "Vokal Majemuk",
+      "name_ja": "複合母音"
     },
     {
       "id": 6,
@@ -86,11 +91,12 @@
       "time_minutes": 11,
       "name_zh_tw": "讀單字",
       "name_es": "Leer Palabras",
-      "name_fr": "Lire des Mots",
+      "name_fr": "Lire des mots",
       "name_de": "Wörter lesen",
       "name_vi": "Đọc từ",
       "name_th": "อ่านคำ",
-      "name_id": "Membaca Kata"
+      "name_id": "Membaca Kata",
+      "name_ja": "単語を読む"
     }
   ],
   "steps": [
@@ -443,13 +449,13 @@
       "example_meaning_zh_tw": "搭乘",
       "example_meaning_es": "montar / subir",
       "hint_es": "t aspirada — como la t inicial en inglés \"ten\". Soplo fuerte de aire.",
-      "hint_fr": "t aspiré — comme le t au début d'un mot. Fort souffle d'air.",
+      "hint_fr": "t aspiré — comme le t au début du mot anglais « ten ». Fort souffle d'air.",
       "example_meaning_fr": "monter / prendre",
-      "hint_de": "Aspiriertes t — wie t am Wortanfang. Starker Luftstoß.",
+      "hint_de": "Aspiriertes t — wie t in „Tasse\" (am Wortanfang). Starker Luftstoß.",
       "example_meaning_de": "fahren / einsteigen",
       "example_meaning_vi": "cưỡi / lên (xe)",
-      "hint_vi": "Âm 't' bật hơi — như 't' trong 'ten'. Bật mạnh.",
-      "hint_th": "เสียง ท พ่นอากาศ — เหมือน ต ใน ten ตอนต้นคำ ระเบิดแรง",
+      "hint_vi": "Âm 't' bật hơi — như 't' trong 'ten' (ở đầu từ). Bật mạnh.",
+      "hint_th": "เสียง ท พ่นอากาศ — เหมือน ท ใน ten ตอนต้นคำ ระเบิดแรง",
       "example_meaning_th": "ขี่ / โดยสาร",
       "hint_id": "'t' beraspirasi — seperti 't' dalam 'ten' (di awal kata). Letupan kuat.",
       "example_meaning_id": "menaiki / naik"
@@ -793,7 +799,7 @@
       "katakana": "ウ",
       "hint_ja": "「ウ」の音です。画が下向き——口を下げます",
       "zhuyin": "ㄨ",
-      "hint_zh_tw": "與中文ㄨ完全相同，嘴唇收圓向下",
+      "hint_zh_tw": "發音與中文的ㄨ相同。這條線向下，代表嘴巴向下張開。",
       "hint_es": "Como la u de \"luna\". La línea apunta HACIA ABAJO — la boca baja.",
       "hint_fr": "Comme ou en français. La ligne pointe vers le BAS — la bouche descend.",
       "hint_de": "Wie u in Buch. Der Strich zeigt NACH UNTEN — der Mund senkt sich.",
@@ -1248,8 +1254,8 @@
       "zhuyin": "ㄑ",
       "hint_zh_tw": "送氣的ch音，像開頭念「起」的ㄑ，有氣流",
       "hint_es": "ch aspirada — como al inicio de \"Chile\". Sale aire.",
-      "hint_fr": "ch aspiré — comme au début d'un mot ch. L'air sort.",
-      "hint_de": "Aspiriertes ch — wie ch am Anfang. Luft kommt heraus.",
+      "hint_fr": "ch aspiré — comme au début du mot anglais « cheese ». L'air sort.",
+      "hint_de": "Aspiriertes ch — wie das englische „ch\" in „cheese\" am Anfang. Luft kommt heraus.",
       "hint_vi": "Âm 'ch' bật hơi — như 'cheese' ở đầu. Không khí thoát ra.",
       "hint_th": "เสียง ช พ่นอากาศ — เหมือน cheese ตอนต้น อากาศพ่นออก",
       "hint_id": "'ch' beraspirasi — seperti awal kata 'cheese'. Udara keluar."
@@ -1342,7 +1348,7 @@
       "stage": 4,
       "type": "match_quiz",
       "prompt": "Aspirated consonants are produced with…",
-      "prompt_zh_tw": "氣音子音是如何發出的…",
+      "prompt_zh_tw": "送氣子音是如何發出的…",
       "choices": [
         "No air",
         "A strong puff of air",
@@ -1644,7 +1650,7 @@
       "hint_fr": "ㅡ + ㅣ. Une diphtongue unique. 의사 = médecin. Utilisé comme particule possessive 의.",
       "hint_de": "ㅡ + ㅣ. Ein einzigartiger Gleitvokal. 의사 = Arzt/Ärztin. Auch der Possessivpartikel 의.",
       "hint_vi": "ㅡ + ㅣ. Âm lướt độc đáo. 의사 = bác sĩ. Dùng như trợ từ sở hữu 의.",
-      "hint_th": "ㅡ + ㅣ เสียงเลื่อนเฉพาะ 의사 = หมอ ใช้เป็นคำแสดงความเป็นเจ้าของ 의",
+      "hint_th": "ㅡ + ㅣ เสียงเลื่อนเฉพาะ 의사 = หมอ ใช้เป็นคำช่วยแสดงความเป็นเจ้าของ 의",
       "hint_id": "ㅡ + ㅣ. Luncuran unik. 의사 = dokter. Digunakan sebagai partikel kepemilikan 의."
     },
     {
@@ -2037,7 +2043,11 @@
       "title_id": "Anda bisa membaca bahasa Korea!",
       "message_id": "Kerja luar biasa — Anda telah menyelesaikan semua 6 tahap Hangul. Sekarang Anda bisa membaca dan menulis setiap karakter dalam alfabet Korea. 화이팅!",
       "message_vi": "Tuyệt vời — bạn đã hoàn thành cả 6 chặng của Hangul. Giờ bạn có thể đọc và viết mọi ký tự trong bảng chữ cái tiếng Hàn. 화이팅!",
-      "title_ja": "韓国語が読めるようになりました！"
+      "title_ja": "韓国語が読めるようになりました！",
+      "message_ja": "素晴らしいです——ハングルの全6ステージを完了しました。これで韓国語のすべての文字を読み書きできます。화이팅!",
+      "title_zh_tw": "你已經會讀韓文了！",
+      "title_vi": "Bạn đã đọc được tiếng Hàn rồi!",
+      "title_th": "ตอนนี้คุณอ่านภาษาเกาหลีได้แล้ว!"
     }
   ]
 }

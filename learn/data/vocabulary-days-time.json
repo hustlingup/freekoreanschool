@@ -13,7 +13,7 @@
       "name_de": "Wochentage & Uhrzeit",
       "name_fr": "Jours et heure",
       "name_id": "Hari & Waktu",
-      "name_ja": "日付・時間",
+      "name_ja": "曜日・時間",
       "name_th": "วันและเวลา",
       "name_vi": "Thứ và Giờ giấc",
       "name_zh_tw": "星期與時間"
@@ -113,7 +113,32 @@
         "Giờ: dùng số thuần Hàn → 한 시 (1 giờ), 두 시 (2 giờ)",
         "Phút: dùng số Hán-Hàn → 오 분 (5 phút), 삼십 분 (30 phút)",
         "Sáng/chiều: 오전 (buổi sáng/AM), 오후 (buổi chiều/PM)"
-      ]
+      ],
+      "tip_de": {
+        "icon": "🗓️",
+        "label": "Eselsbrücke für die Wochentage",
+        "text": "월 = Mond (月), 화 = Feuer (火), 수 = Wasser (水), 목 = Holz (木), 금 = Gold (金), 토 = Erde (土), 일 = Sonne (日) – genau wie im Japanischen!"
+      },
+      "tip_fr": {
+        "icon": "🗓️",
+        "label": "Astuce pour retenir les jours",
+        "text": "월 = Lune (月), 화 = Feu (火), 수 = Eau (水), 목 = Bois (木), 금 = Or (金), 토 = Terre (土), 일 = Soleil (日) — comme en japonais !"
+      },
+      "tip_vi": {
+        "icon": "🗓️",
+        "label": "Mẹo ghi nhớ tên các ngày",
+        "text": "월 = Mặt Trăng (月), 화 = Lửa (火), 수 = Nước (水), 목 = Gỗ (木), 금 = Vàng (金), 토 = Đất (土), 일 = Mặt Trời (日) — giống hệt tên các ngày trong tiếng Nhật!"
+      },
+      "tip_th": {
+        "icon": "🗓️",
+        "label": "เคล็ดลับช่วยจำชื่อวัน",
+        "text": "월 = ดวงจันทร์ (月), 화 = ไฟ (火), 수 = น้ำ (水), 목 = ไม้ (木), 금 = ทอง (金), 토 = ดิน (土), 일 = ดวงอาทิตย์ (日) — เหมือนกับชื่อวันในภาษาญี่ปุ่นเลย!"
+      },
+      "tip_id": {
+        "icon": "🗓️",
+        "label": "Trik mengingat nama hari",
+        "text": "월 = Bulan (月), 화 = Api (火), 수 = Air (水), 목 = Kayu (木), 금 = Emas (金), 토 = Tanah (土), 일 = Matahari (日) — sama seperti nama hari dalam bahasa Jepang!"
+      }
     },
     {
       "id": 2,

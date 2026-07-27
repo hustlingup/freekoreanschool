@@ -13,7 +13,7 @@
       "name_de": "Nachrichten & aktuelles Geschehen",
       "name_fr": "Actualités et vie publique",
       "name_id": "Berita & Peristiwa Terkini",
-      "name_ja": "ニュース・社会",
+      "name_ja": "ニュース・時事",
       "name_th": "ข่าวและเหตุการณ์ปัจจุบัน",
       "name_vi": "Tin tức & Thời sự",
       "name_zh_tw": "新聞與時事"
@@ -59,7 +59,32 @@
       "body_fr": "Lire ou regarder les informations en coréen est un excellent moyen de développer un vocabulaire avancé et de rester en lien avec la société coréenne. Les journaux coréens emploient les niveaux de langue formels (합쇼체) ainsi que de nombreux termes sino-coréens. Comprendre ces mots vous aidera à suivre les émissions d'information, les podcasts et les journaux coréens.",
       "body_id": "Membaca atau menonton berita Korea adalah cara yang sangat baik untuk membangun kosakata tingkat lanjut dan tetap terhubung dengan masyarakat Korea. Berita Korea menggunakan tingkat tutur formal (합쇼체) dan banyak istilah Sino-Korea. Memahami kata-kata ini akan membantumu mengikuti program berita, podcast, dan surat kabar Korea.",
       "body_th": "การอ่านหรือรับชมข่าวภาษาเกาหลีเป็นวิธีที่ยอดเยี่ยมในการสร้างคลังคำศัพท์ระดับสูงและติดตามความเป็นไปของสังคมเกาหลี ข่าวภาษาเกาหลีใช้ระดับภาษาที่เป็นทางการ (합쇼체) และคำศัพท์จีน-เกาหลีจำนวนมาก การเข้าใจคำเหล่านี้จะช่วยให้คุณติดตามรายการข่าว พอดแคสต์ และหนังสือพิมพ์ภาษาเกาหลีได้",
-      "body_vi": "Đọc hoặc xem tin tức tiếng Hàn là cách tuyệt vời để xây dựng vốn từ vựng nâng cao và giữ kết nối với xã hội Hàn Quốc. Tin tức Hàn Quốc sử dụng thể nói trang trọng (합쇼체) và rất nhiều từ Hán-Hàn. Hiểu được những từ này sẽ giúp bạn theo dõi các chương trình tin tức, podcast và báo chí Hàn Quốc."
+      "body_vi": "Đọc hoặc xem tin tức tiếng Hàn là cách tuyệt vời để xây dựng vốn từ vựng nâng cao và giữ kết nối với xã hội Hàn Quốc. Tin tức Hàn Quốc sử dụng thể nói trang trọng (합쇼체) và rất nhiều từ Hán-Hàn. Hiểu được những từ này sẽ giúp bạn theo dõi các chương trình tin tức, podcast và báo chí Hàn Quốc.",
+      "tip_de": {
+        "icon": "📰",
+        "label": "Strategie für Nachrichten-Vokabular",
+        "text": "Fang mit YouTube-Nachrichtenkanälen an – Bilder helfen beim Verständnis. 뉴스 (Nachrichten)-Sendungen haben oft koreanische Untertitel. Häufige Eröffnungsfloskeln: 오늘 뉴스입니다 (Hier sind die heutigen Nachrichten) und 보도에 따르면 (Berichten zufolge)."
+      },
+      "tip_fr": {
+        "icon": "📰",
+        "label": "Stratégie pour le vocabulaire des infos",
+        "text": "Commencez par des chaînes d'actualités YouTube — les images aident à la compréhension. Les programmes de 뉴스 (informations) proposent souvent des sous-titres en coréen. Formules d'ouverture courantes : 오늘 뉴스입니다 (Voici les informations du jour) et 보도에 따르면 (D'après les informations)."
+      },
+      "tip_vi": {
+        "icon": "📰",
+        "label": "Chiến lược học từ vựng thời sự",
+        "text": "Hãy bắt đầu với các kênh tin tức trên YouTube — hình ảnh sẽ giúp bạn hiểu bài dễ hơn. Các chương trình 뉴스 (thời sự) thường có phụ đề tiếng Hàn. Câu mở đầu bản tin thường gặp: 오늘 뉴스입니다 (Sau đây là bản tin hôm nay) và 보도에 따르면 (Theo tin đã đưa)."
+      },
+      "tip_th": {
+        "icon": "📰",
+        "label": "กลยุทธ์การเรียนคำศัพท์ข่าว",
+        "text": "เริ่มจากช่องข่าวใน YouTube เพราะภาพช่วยให้เข้าใจง่ายขึ้น รายการ 뉴스 (ข่าว) มักมีคำบรรยายภาษาเกาหลีให้ด้วย ประโยคเปิดข่าวที่พบบ่อยคือ 오늘 뉴스입니다 (นี่คือข่าวประจำวันนี้) และ 보도에 따르면 (ตามรายงานข่าว)"
+      },
+      "tip_id": {
+        "icon": "📰",
+        "label": "Strategi kosakata berita",
+        "text": "Mulailah dengan saluran berita YouTube — gambar membantu pemahaman. Program 뉴스 (berita) sering menyediakan subtitle bahasa Korea. Pembuka berita yang umum: 오늘 뉴스입니다 (Berikut berita hari ini) dan 보도에 따르면 (Menurut laporan)."
+      }
     },
     {
       "id": 2,
@@ -463,7 +488,7 @@
       ],
       "prompt_id": "속보입니다 diucapkan pada awal...",
       "choices_id": [
-        "Acara ragam",
+        "Acara varietas",
         "Berita sela",
         "Film dokumenter",
         "Wawancara"

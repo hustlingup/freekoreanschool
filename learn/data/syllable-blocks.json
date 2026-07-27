@@ -11,11 +11,12 @@
       "time_minutes": 12,
       "name_zh_tw": "積木基礎",
       "name_es": "Fundamentos del Bloque",
-      "name_fr": "Bases du Bloc",
+      "name_fr": "Bases du bloc",
       "name_de": "Blockgrundlagen",
       "name_vi": "Cơ bản về khối âm tiết",
       "name_th": "พื้นฐานบล็อก",
-      "name_id": "Dasar-dasar Blok"
+      "name_id": "Dasar-dasar Blok",
+      "name_ja": "ブロックの基礎"
     },
     {
       "id": 2,
@@ -26,11 +27,12 @@
       "time_minutes": 10,
       "name_zh_tw": "母音方向",
       "name_es": "Formas de Vocales",
-      "name_fr": "Formes des Voyelles",
+      "name_fr": "Formes des voyelles",
       "name_de": "Vokalformen",
       "name_vi": "Hình dạng nguyên âm",
       "name_th": "รูปทรงสระ",
-      "name_id": "Bentuk Vokal"
+      "name_id": "Bentuk Vokal",
+      "name_ja": "母音の形"
     },
     {
       "id": 3,
@@ -45,7 +47,8 @@
       "name_de": "Bauen",
       "name_vi": "Tự xây dựng",
       "name_th": "สร้างพยางค์",
-      "name_id": "Membangunnya"
+      "name_id": "Membangunnya",
+      "name_ja": "作ってみよう"
     },
     {
       "id": 4,
@@ -60,7 +63,8 @@
       "name_de": "Batchim",
       "name_vi": "Batchim",
       "name_th": "บัดชิม",
-      "name_id": "Batchim"
+      "name_id": "Batchim",
+      "name_ja": "パッチム"
     },
     {
       "id": 5,
@@ -71,11 +75,12 @@
       "time_minutes": 15,
       "name_zh_tw": "讀單字",
       "name_es": "Leer Palabras",
-      "name_fr": "Lire des Mots",
+      "name_fr": "Lire des mots",
       "name_de": "Wörter lesen",
       "name_vi": "Đọc từ",
       "name_th": "อ่านคำ",
-      "name_id": "Membaca Kata"
+      "name_id": "Membaca Kata",
+      "name_ja": "単語を読む"
     }
   ],
   "steps": [
@@ -108,7 +113,7 @@
         "label": "¿Sabías que?",
         "text": "Cada bloque de sílaba siempre tiene exactamente una vocal. Puede tener 0, 1 o 2 consonantes — pero nunca más de una vocal."
       },
-      "title_fr": "Qu'est-ce qu'un Bloc Syllabique ?",
+      "title_fr": "Qu'est-ce qu'un bloc syllabique ?",
       "body_fr": "Chaque syllabe coréenne s'écrit dans un bloc carré invisible. Contrairement au français où les lettres se lisent de gauche à droite en ligne, le coréen empile les consonnes et les voyelles ensemble dans des blocs compacts et visuellement équilibrés. Chaque bloc représente exactement une syllabe — une unité sonore.",
       "tip_fr": {
         "label": "Le saviez-vous ?",
@@ -137,7 +142,8 @@
       "tip_vi": {
         "label": "Bạn có biết?",
         "text": "Mỗi khối âm tiết luôn có đúng một nguyên âm. Nó có thể có 0, 1 hoặc 2 phụ âm — nhưng không bao giờ có quá một nguyên âm."
-      }
+      },
+      "title_ja": "音節ブロックとは？"
     },
     {
       "id": 2,
@@ -168,20 +174,20 @@
         "label": "Consejo",
         "text": "Para vocales verticales como ㅏ, ㅓ, y ㅣ: la consonante inicial va a la izquierda, la vocal a la derecha. Para vocales horizontales como ㅗ, ㅜ, y ㅡ: la consonante inicial va arriba, la vocal abajo."
       },
-      "title_fr": "Les Trois Positions",
+      "title_fr": "Les trois positions",
       "body_fr": "Chaque bloc syllabique coréen comporte trois positions nommées. Deux sont obligatoires (la consonne initiale 초성 et la voyelle médiale 중성) et une est optionnelle (la consonne finale 받침). Apprendre ces positions par leur nom est essentiel — la grammaire coréenne y fait constamment référence.",
       "tip_fr": {
         "label": "Conseil",
         "text": "Pour les voyelles verticales comme ㅏ, ㅓ et ㅣ : la consonne initiale est à gauche, la voyelle à droite. Pour les voyelles horizontales comme ㅗ, ㅜ et ㅡ : la consonne initiale est en haut, la voyelle en bas."
       },
       "title_de": "Die drei Positionen",
-      "body_de": "Jeder koreanische Silbenblock hat drei benannte Positionen. Zwei sind erforderlich (초성 Anfangskonsonant und 중성 Vokal) und eine ist optional (der 받침 Endkonsonant). Diese Positionen beim Namen zu kennen ist unerlässlich — die koreanische Grammatik bezieht sich ständig auf sie.",
+      "body_de": "Jeder koreanische Silbenblock hat drei benannte Positionen. Zwei sind erforderlich (초성 Anfangskonsonant und 중성 Vokal) und eine ist optional (das 받침 Batchim). Diese Positionen beim Namen zu kennen ist unerlässlich — die koreanische Grammatik bezieht sich ständig auf sie.",
       "tip_de": {
         "label": "Tipp",
         "text": "Bei senkrechten Vokalen wie ㅏ, ㅓ und ㅣ: Der Anfangskonsonant steht links, der Vokal rechts. Bei waagerechten Vokalen wie ㅗ, ㅜ und ㅡ: Der Anfangskonsonant steht oben, der Vokal unten."
       },
       "title_th": "สามตำแหน่ง",
-      "body_th": "แต่ละบล็อกพยางค์ภาษาเกาหลีมีสามตำแหน่งที่มีชื่อ สองตำแหน่งบังคับ (พยัญชนะต้นและสระกลาง) และหนึ่งตำแหน่งเป็นทางเลือก (พยัญชนะสุดท้าย) การเรียนตำแหน่งเหล่านี้ตามชื่อสำคัญมาก — ไวยากรณ์เกาหลีอ้างถึงตำแหน่งเหล่านี้บ่อยมาก",
+      "body_th": "แต่ละบล็อกพยางค์ภาษาเกาหลีมีสามตำแหน่งที่มีชื่อ สองตำแหน่งบังคับ (พยัญชนะต้นและสระกลาง) และหนึ่งตำแหน่งเป็นทางเลือก (บัดชิม (받침)) การเรียนตำแหน่งเหล่านี้ตามชื่อสำคัญมาก — ไวยากรณ์เกาหลีอ้างถึงตำแหน่งเหล่านี้บ่อยมาก",
       "tip_th": {
         "label": "เคล็ดลับ",
         "text": "สำหรับสระแนวตั้ง เช่น ㅏ ㅓ ㅣ พยัญชนะต้นอยู่ทางซ้าย สระอยู่ทางขวา สำหรับสระแนวนอน เช่น ㅗ ㅜ ㅡ พยัญชนะต้นอยู่ด้านบน สระอยู่ด้านล่าง"
@@ -197,7 +203,8 @@
       "tip_vi": {
         "label": "Mẹo",
         "text": "Với các nguyên âm dọc như ㅏ, ㅓ và ㅣ: phụ âm đầu nằm bên trái, nguyên âm bên phải. Với các nguyên âm ngang như ㅗ, ㅜ và ㅡ: phụ âm đầu nằm trên, nguyên âm ở dưới."
-      }
+      },
+      "title_ja": "三つの位置"
     },
     {
       "id": 3,
@@ -245,9 +252,9 @@
       },
       "body_ja": "韓国語の音節は、終声（받침）があるかどうか、また母音または子音で始まるかによって、4つの基本的な構造パターンに従います。",
       "patterns_label_zh_tw": [
-        "초성 + 母音",
+        "初聲 + 母音",
         "無聲ㅇ + 母音",
-        "초성 + 母音 + 받침（收音）",
+        "初聲 + 母音 + 받침（收音）",
         "無聲ㅇ + 母音 + 받침（收音）"
       ],
       "patterns_label_ja": [
@@ -272,7 +279,7 @@
         "label": "La Regla del ㅇ Marcador de Posición",
         "text": "Cuando una sílaba comienza con sonido de vocal, debes escribir ㅇ como marcador de posición en la posición inicial. ㅇ es completamente silencioso al inicio de una sílaba — simplemente indica que el bloque comienza con una vocal. Ejemplos: 아 = ㅇ+ㅏ   이 = ㅇ+ㅣ   우 = ㅇ+ㅜ"
       },
-      "title_fr": "Quatre Patterns de Blocs Syllabiques",
+      "title_fr": "Quatre modèles de blocs syllabiques",
       "body_fr": "Les syllabes coréennes suivent quatre patterns structurels de base selon la présence ou non d'une consonne finale (받침) et si la syllabe commence par une voyelle ou une consonne.",
       "patterns_label_fr": [
         "initiale + voyelle",
@@ -285,7 +292,7 @@
         "text": "Quand une syllabe commence par un son de voyelle, vous devez écrire ㅇ comme espace réservé dans la position initiale. ㅇ est complètement silencieux au début d'une syllabe — il indique simplement que le bloc commence par une voyelle. Exemples : 아 = ㅇ+ㅏ   이 = ㅇ+ㅣ   우 = ㅇ+ㅜ"
       },
       "title_de": "Vier Silbenblock-Muster",
-      "body_de": "Koreanische Silben folgen vier grundlegenden Strukturmustern, je nachdem ob ein Endkonsonant (받침) vorhanden ist und ob die Silbe mit einem Vokal oder Konsonanten beginnt.",
+      "body_de": "Koreanische Silben folgen vier grundlegenden Strukturmustern, je nachdem ob ein Batchim (받침) vorhanden ist und ob die Silbe mit einem Vokal oder Konsonanten beginnt.",
       "patterns_label_de": [
         "Anfangskonsonant + Vokal",
         "Stummes ㅇ + Vokal",
@@ -297,7 +304,7 @@
         "text": "Wenn eine Silbe mit einem Vokalklang beginnt, muss ㅇ als Platzhalter in der Anfangsposition geschrieben werden. ㅇ ist am Silbenanfang völlig stumm — es zeigt einfach an, dass der Block mit einem Vokal beginnt. Beispiele: 아 = ㅇ+ㅏ   이 = ㅇ+ㅣ   우 = ㅇ+ㅜ"
       },
       "title_th": "สี่รูปแบบบล็อกพยางค์",
-      "body_th": "พยางค์เกาหลีมีสี่รูปแบบโครงสร้างพื้นฐาน ขึ้นอยู่กับว่ามีพยัญชนะสุดท้าย (받침) หรือไม่ และพยางค์เริ่มต้นด้วยสระหรือพยัญชนะ",
+      "body_th": "พยางค์เกาหลีมีสี่รูปแบบโครงสร้างพื้นฐาน ขึ้นอยู่กับว่ามีบัดชิม (받침) หรือไม่ และพยางค์เริ่มต้นด้วยสระหรือพยัญชนะ",
       "tip_th": {
         "label": "กฎตัวแทน ㅇ",
         "text": "เมื่อพยางค์เริ่มต้นด้วยเสียงสระ ต้องเขียน ㅇ เป็นตัวแทนในตำแหน่งพยัญชนะต้น ㅇ เงียบสนิทตอนต้นพยางค์ — เพียงบอกว่าบล็อกเริ่มต้นด้วยสระ ตัวอย่าง: 아 = ㅇ+ㅏ  이 = ㅇ+ㅣ  우 = ㅇ+ㅜ"
@@ -319,7 +326,20 @@
       "tip_vi": {
         "label": "Quy tắc ㅇ giữ chỗ",
         "text": "Khi một âm tiết bắt đầu bằng âm nguyên âm, bạn phải viết ㅇ làm ký tự giữ chỗ ở vị trí đầu. ㅇ hoàn toàn câm ở đầu âm tiết — nó chỉ báo hiệu rằng khối bắt đầu bằng một nguyên âm. Ví dụ: 아 = ㅇ+ㅏ   이 = ㅇ+ㅣ   우 = ㅇ+ㅜ"
-      }
+      },
+      "title_ja": "四つの音節ブロックパターン",
+      "patterns_label_vi": [
+        "phụ âm đầu + nguyên âm",
+        "ㅇ câm + nguyên âm",
+        "phụ âm đầu + nguyên âm + 받침",
+        "ㅇ câm + nguyên âm + 받침"
+      ],
+      "patterns_label_th": [
+        "พยัญชนะต้น + สระ",
+        "ㅇ ไม่ออกเสียง + สระ",
+        "พยัญชนะต้น + สระ + 받침",
+        "ㅇ ไม่ออกเสียง + สระ + 받침"
+      ]
     },
     {
       "id": 4,
@@ -342,13 +362,13 @@
       "hint_es": "Cada sílaba es un bloque cuadrado — consonante inicial, vocal y consonante final opcional.",
       "hint_fr": "Chaque syllabe est un bloc carré — consonne initiale, voyelle et consonne finale optionnelle.",
       "example_meaning_fr": "Corée",
-      "hint_de": "Jede Silbe ist ein quadratischer Block — Anfangskonsonant, Vokal und optionaler Endkonsonant.",
+      "hint_de": "Jede Silbe ist ein quadratischer Block — Anfangskonsonant, Vokal und optionales Batchim.",
       "example_meaning_de": "Korea",
       "example_meaning_vi": "Hàn Quốc",
-      "hint_th": "ทุกพยางค์คือบล็อกสี่เหลี่ยม — พยัญชนะต้น สระ และพยัญชนะสุดท้ายที่เป็นทางเลือก",
+      "hint_th": "ทุกพยางค์คือบล็อกสี่เหลี่ยม — พยัญชนะต้น สระ และบัดชิมที่เป็นทางเลือก",
       "example_meaning_th": "เกาหลี",
       "example_meaning_id": "Korea",
-      "hint_id": "Setiap suku kata adalah blok persegi — konsonan awal, vokal, dan konsonan akhir opsional.",
+      "hint_id": "Setiap suku kata adalah blok persegi — konsonan awal, vokal, dan batchim (받침) opsional.",
       "hint_vi": "Mỗi âm tiết là một khối vuông — phụ âm đầu, nguyên âm và phụ âm cuối tùy chọn."
     },
     {
@@ -603,10 +623,10 @@
       "hint_es": "Patrón CVC — consonante inicial + vocal + consonante final (받침). Tres partes.",
       "hint_fr": "Pattern CVC — consonne initiale + voyelle + consonne finale (받침). Trois parties.",
       "example_meaning_fr": "foie / est allé",
-      "hint_de": "CVC-Muster — Anfangskonsonant + Vokal + Endkonsonant (받침). Drei Teile.",
+      "hint_de": "CVC-Muster — Anfangskonsonant + Vokal + Batchim (받침). Drei Teile.",
       "example_meaning_de": "Leber / ging",
       "example_meaning_vi": "gan / đã đi",
-      "hint_th": "รูปแบบ CVC — พยัญชนะต้น + สระ + พยัญชนะสุดท้าย (받침) สามส่วน",
+      "hint_th": "รูปแบบ CVC — พยัญชนะต้น + สระ + บัดชิม (받침) สามส่วน",
       "example_meaning_th": "ตับ / ไปแล้ว",
       "example_meaning_id": "hati / pergi (bentuk lampau)",
       "hint_id": "Pola CVC — konsonan awal + vokal + konsonan akhir (받침). Tiga bagian.",
@@ -710,7 +730,7 @@
         "label": "Truco Visual Rápido",
         "text": "Cuando ves una vocal alta (ㅏ, ㅓ, ㅣ y sus variantes), la consonante inicial está a su izquierda. Cuando ves una vocal ancha (ㅗ, ㅜ, ㅡ y sus variantes), la consonante inicial está encima. Las vocales compuestas como ㅘ, ㅝ, ㅚ se comportan como vocales verticales — la consonante va a la izquierda."
       },
-      "title_fr": "Voyelles Verticales vs Horizontales",
+      "title_fr": "Voyelles verticales vs horizontales",
       "body_fr": "La forme de la voyelle détermine où va la consonne initiale dans le bloc. Les voyelles hautes et verticales poussent la consonne vers la gauche ; les voyelles larges et horizontales la poussent vers le haut. C'est ce qui donne au coréen son apparence carrée distinctive.",
       "tip_fr": {
         "label": "Astuce Visuelle Rapide",
@@ -739,7 +759,8 @@
       "tip_vi": {
         "label": "Mẹo hình dung nhanh",
         "text": "Khi bạn thấy một nguyên âm cao (ㅏ, ㅓ, ㅣ và các biến thể), phụ âm đầu nằm bên trái nó. Khi bạn thấy một nguyên âm rộng (ㅗ, ㅜ, ㅡ và các biến thể), phụ âm đầu nằm phía trên nó. Nguyên âm ghép như ㅘ, ㅝ, ㅚ hoạt động như nguyên âm dọc — phụ âm nằm bên trái."
-      }
+      },
+      "title_ja": "縦母音と横母音"
     },
     {
       "id": 15,
@@ -1157,7 +1178,7 @@
       "body_ja": "では、シンプルなCV音節（子音＋母音、받침なし）の練習をしましょう。これが最も読みやすく書きやすいブロックです。それぞれの音を聞いて、自分でも発音してみましょう。",
       "title_es": "Construyendo Tus Primeras Sílabas",
       "body_es": "Ahora practiquemos construyendo sílabas simples CV — consonante + vocal, sin batchim. Estos son los bloques más fáciles de leer y escribir. Escucha cada uno e intenta producir el sonido tú mismo.",
-      "title_fr": "Construire vos Premières Syllabes",
+      "title_fr": "Construire vos premières syllabes",
       "body_fr": "Maintenant, pratiquons la construction de syllabes CV simples — consonne + voyelle, sans batchim. Ce sont les blocs les plus faciles à lire et à écrire. Écoutez chacun et essayez de produire le son vous-même.",
       "title_de": "Deine ersten Silben bauen",
       "body_de": "Jetzt üben wir das Bauen einfacher CV-Silben — Konsonant + Vokal, kein Batchim. Das sind die einfachsten Blöcke zum Lesen und Schreiben. Höre jedem zu und versuche, den Laut selbst zu produzieren.",
@@ -1166,7 +1187,8 @@
       "title_id": "Membangun Suku Kata Pertama Anda",
       "body_id": "Sekarang mari berlatih membangun suku kata CV sederhana — konsonan + vokal, tanpa batchim. Ini adalah blok yang paling mudah dibaca dan ditulis. Dengarkan masing-masing dan coba hasilkan sendiri bunyinya.",
       "title_vi": "Xây dựng những âm tiết đầu tiên của bạn",
-      "body_vi": "Bây giờ hãy cùng luyện tập xây dựng các âm tiết CV đơn giản — phụ âm + nguyên âm, không có batchim. Đây là những khối dễ đọc và dễ viết nhất. Hãy nghe từng khối và tự mình thử phát ra âm thanh."
+      "body_vi": "Bây giờ hãy cùng luyện tập xây dựng các âm tiết CV đơn giản — phụ âm + nguyên âm, không có batchim. Đây là những khối dễ đọc và dễ viết nhất. Hãy nghe từng khối và tự mình thử phát ra âm thanh.",
+      "title_ja": "初めての音節を作る"
     },
     {
       "id": 26,
@@ -1341,7 +1363,7 @@
         "label": "Consejo",
         "text": "Los bloques de sílaba con batchim están ligeramente comprimidos verticalmente para dejar espacio en la parte inferior. La consonante batchim se sienta debajo de la consonante inicial y la vocal, completando la forma cuadrada del bloque."
       },
-      "title_fr": "Ajouter le Batchim — La Consonne Finale",
+      "title_fr": "Ajouter le Batchim — La consonne finale",
       "body_fr": "Quand vous ajoutez une consonne en bas d'un bloc, cette consonne devient le 받침 (batchim) — la consonne finale. Le batchim est ce qui donne à de nombreux mots coréens leurs terminaisons riches et résonantes. Observez comment l'ajout du batchim transforme des syllabes simples en vrais mots.",
       "tip_fr": {
         "label": "Conseil",
@@ -1370,7 +1392,8 @@
       "tip_vi": {
         "label": "Mẹo",
         "text": "Khối âm tiết có batchim được nén lại theo chiều dọc một chút để chừa chỗ ở dưới. Phụ âm batchim nằm bên dưới cả phụ âm đầu và nguyên âm, hoàn thiện hình vuông của khối."
-      }
+      },
+      "title_ja": "パッチムを加える —— 最後の子音"
     },
     {
       "id": 35,
@@ -1687,7 +1710,7 @@
       "body_ja": "これで実際の韓国語の単語を解読するのに必要なものはすべて揃いました。10の重要な単語を音節ごとに分解して、それぞれの構成要素を確認してみましょう。スピーカーボタンをタップすると単語の音声が聞けます。",
       "title_es": "Leyendo Palabras Coreanas Reales",
       "body_es": "Ahora tienes todo lo que necesitas para descifrar palabras coreanas reales. Desglosemos 10 palabras esenciales sílaba por sílaba, identificando cada componente. Toca los botones de altavoz para escuchar las palabras en voz alta.",
-      "title_fr": "Lire des Mots Coréens Réels",
+      "title_fr": "Lire des mots coréens réels",
       "body_fr": "Vous avez maintenant tout ce qu'il vous faut pour déchiffrer de vrais mots coréens. Décomposons 10 mots essentiels syllabe par syllabe, en identifiant chaque composant. Appuyez sur les boutons de haut-parleur pour entendre les mots prononcés à voix haute.",
       "title_de": "Echte koreanische Wörter lesen",
       "body_de": "Du hast jetzt alles, was du brauchst, um echte koreanische Wörter zu entschlüsseln. Lass uns 10 wesentliche Wörter Silbe für Silbe aufschlüsseln und jeden Bestandteil identifizieren. Tippe auf die Lautsprecher-Schaltflächen, um die Wörter laut gesprochen zu hören.",
@@ -1696,7 +1719,8 @@
       "title_id": "Membaca Kata Korea yang Sesungguhnya",
       "body_id": "Sekarang Anda memiliki semua yang dibutuhkan untuk menguraikan kata-kata Korea yang sesungguhnya. Mari kita bedah 10 kata penting suku kata demi suku kata, mengidentifikasi setiap komponennya. Ketuk tombol speaker untuk mendengar kata-kata tersebut diucapkan.",
       "title_vi": "Đọc những từ tiếng Hàn thực sự",
-      "body_vi": "Giờ bạn đã có mọi thứ cần thiết để giải mã những từ tiếng Hàn thực sự. Hãy cùng phân tích 10 từ thiết yếu theo từng âm tiết, xác định từng thành phần. Nhấn nút loa để nghe các từ được đọc thành tiếng."
+      "body_vi": "Giờ bạn đã có mọi thứ cần thiết để giải mã những từ tiếng Hàn thực sự. Hãy cùng phân tích 10 từ thiết yếu theo từng âm tiết, xác định từng thành phần. Nhấn nút loa để nghe các từ được đọc thành tiếng.",
+      "title_ja": "実際の韓国語の単語を読む"
     },
     {
       "id": 46,
@@ -1718,7 +1742,8 @@
       "example_meaning_vi": "Hàn Quốc",
       "meaning_th": "เกาหลี",
       "meaning_id": "Korea",
-      "meaning_vi": "Hàn Quốc"
+      "meaning_vi": "Hàn Quốc",
+      "meaning_ja": "韓国"
     },
     {
       "id": 47,
@@ -1740,7 +1765,8 @@
       "example_meaning_vi": "người",
       "meaning_th": "คน",
       "meaning_id": "orang",
-      "meaning_vi": "người"
+      "meaning_vi": "người",
+      "meaning_ja": "人"
     },
     {
       "id": 48,
@@ -1762,7 +1788,8 @@
       "example_meaning_vi": "trường học",
       "meaning_th": "โรงเรียน",
       "meaning_id": "sekolah",
-      "meaning_vi": "trường học"
+      "meaning_vi": "trường học",
+      "meaning_ja": "学校"
     },
     {
       "id": 49,
@@ -1784,7 +1811,8 @@
       "example_meaning_vi": "xin chào / bình an",
       "meaning_th": "สวัสดี / สันติ",
       "meaning_id": "halo / damai",
-      "meaning_vi": "xin chào / bình an"
+      "meaning_vi": "xin chào / bình an",
+      "meaning_ja": "こんにちは／平和"
     },
     {
       "id": 50,
@@ -1806,7 +1834,8 @@
       "example_meaning_vi": "biết ơn",
       "meaning_th": "ความกตัญญู / ขอบคุณ",
       "meaning_id": "rasa syukur",
-      "meaning_vi": "lòng biết ơn"
+      "meaning_vi": "lòng biết ơn",
+      "meaning_ja": "感謝"
     },
     {
       "id": 51,
@@ -1828,7 +1857,8 @@
       "example_meaning_vi": "tình yêu",
       "meaning_th": "ความรัก",
       "meaning_id": "cinta",
-      "meaning_vi": "tình yêu"
+      "meaning_vi": "tình yêu",
+      "meaning_ja": "愛"
     },
     {
       "id": 52,
@@ -1850,7 +1880,8 @@
       "example_meaning_vi": "âm nhạc",
       "meaning_th": "ดนตรี",
       "meaning_id": "musik",
-      "meaning_vi": "âm nhạc"
+      "meaning_vi": "âm nhạc",
+      "meaning_ja": "音楽"
     },
     {
       "id": 53,
@@ -1872,7 +1903,8 @@
       "example_meaning_vi": "bạn bè",
       "meaning_th": "เพื่อน",
       "meaning_id": "teman",
-      "meaning_vi": "bạn bè"
+      "meaning_vi": "bạn bè",
+      "meaning_ja": "友達"
     },
     {
       "id": 54,
@@ -1894,7 +1926,8 @@
       "example_meaning_vi": "gia đình",
       "meaning_th": "ครอบครัว",
       "meaning_id": "keluarga",
-      "meaning_vi": "gia đình"
+      "meaning_vi": "gia đình",
+      "meaning_ja": "家族"
     },
     {
       "id": 55,
@@ -1916,7 +1949,8 @@
       "example_meaning_vi": "biển / đại dương",
       "meaning_th": "ทะเล / มหาสมุทร",
       "meaning_id": "laut / samudra",
-      "meaning_vi": "biển / đại dương"
+      "meaning_vi": "biển / đại dương",
+      "meaning_ja": "海／大洋"
     },
     {
       "id": 56,
@@ -1937,7 +1971,8 @@
       "example_meaning_vi": "giấc mơ",
       "meaning_th": "ความฝัน",
       "meaning_id": "mimpi",
-      "meaning_vi": "giấc mơ"
+      "meaning_vi": "giấc mơ",
+      "meaning_ja": "夢"
     },
     {
       "id": 57,
@@ -1996,7 +2031,7 @@
         "label": "¡Viene el Autotest!",
         "text": "Tres preguntas rápidas a continuación para confirmar que lo has entendido. Identifica los componentes de cada sílaba."
       },
-      "title_fr": "Pratique et Résumé",
+      "title_fr": "Pratique et résumé",
       "body_fr": "Félicitations — vous avez appris la structure centrale des blocs syllabiques coréens ! Voici un résumé rapide des cinq règles qui régissent chaque syllabe du système d'écriture coréen.",
       "rules_fr": [
         "Chaque bloc a exactement une voyelle (중성 / Jungseong)",
@@ -2060,7 +2095,8 @@
       "tip_vi": {
         "label": "Sắp có bài tự kiểm tra!",
         "text": "Ba câu hỏi nhanh dưới đây để xác nhận bạn đã nắm được. Hãy xác định các thành phần của mỗi âm tiết."
-      }
+      },
+      "title_ja": "練習とまとめ"
     },
     {
       "id": 58,
@@ -2143,7 +2179,12 @@
       "message_th": "คุณเชี่ยวชาญบล็อกพื้นฐานของการเขียนภาษาเกาหลีทั้งหมดแล้ว — 5 ขั้นตอน 61 บทเรียน ทุกคำเกาหลีสร้างจากบล็อกเหล่านี้ 화이팅!",
       "title_id": "Anda bisa membaca blok suku kata Korea!",
       "message_id": "Anda telah menguasai blok pembangun seluruh tulisan Korea — 5 tahap, 61 langkah. Setiap kata Korea dibuat persis dari blok-blok ini. 화이팅!",
-      "message_vi": "Bạn đã làm chủ các khối cấu tạo của toàn bộ chữ viết tiếng Hàn — 5 chặng, 61 bước. Mỗi từ tiếng Hàn đều được tạo thành từ chính những khối này. 화이팅!"
+      "message_vi": "Bạn đã làm chủ các khối cấu tạo của toàn bộ chữ viết tiếng Hàn — 5 chặng, 61 bước. Mỗi từ tiếng Hàn đều được tạo thành từ chính những khối này. 화이팅!",
+      "message_ja": "韓国語のすべての文字の基本ブロックをマスターしました——5つのステージ、61のステップ。すべての韓国語の単語はまさにこれらのブロックでできています。화이팅！",
+      "title_ja": "韓国語の音節ブロックが読めるようになりました！",
+      "title_zh_tw": "你已經會讀韓文音節組合了！",
+      "title_vi": "Bạn đã đọc được các khối âm tiết tiếng Hàn rồi!",
+      "title_th": "ตอนนี้คุณอ่านตัวสะกดพยางค์ภาษาเกาหลีได้แล้ว!"
     }
   ]
 }
