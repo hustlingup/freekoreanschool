@@ -1,0 +1,232 @@
+{
+  "lang": "ja",
+  "chunk": 2,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::steps.7.prompt",
+      "path": "grammar/steps[7]/prompt",
+      "ko": null,
+      "en": "To mark 밥 (rice) as the OBJECT: 밥___ 먹어요",
+      "current": "밥（ご飯）を目的語として示すには：밥___ 먹어요",
+      "ref_th": "เพื่อทำให้ 밥 (ข้าว) เป็นกรรม: 밥___ 먹어요",
+      "ref_es": "Para marcar 밥 (arroz) como OBJETO: 밥___ 먹어요"
+    },
+    {
+      "id": "grammar::steps.8.meaning",
+      "path": "grammar/steps[8]/meaning",
+      "ko": null,
+      "en": "I drink coffee at the café. (에서 = location of action)",
+      "current": "カフェでコーヒーを飲みます。（에서 = 動作の場所）",
+      "ref_th": "ฉันดื่มกาแฟที่ร้านกาแฟ (에서 = สถานที่ของการกระทำ)",
+      "ref_es": "Tomo café en el café. (에서 = lugar de la acción)"
+    },
+    {
+      "id": "grammar::steps.9.prompt",
+      "path": "grammar/steps[9]/prompt",
+      "ko": null,
+      "en": "'I study at school': 학교___ 공부해요",
+      "current": "「学校で勉強します」：학교___ 공부해요",
+      "ref_th": "ฉันเรียนที่โรงเรียน: 학교___ 공부해요",
+      "ref_es": "\"Estudio en la escuela\": 학교___ 공부해요"
+    },
+    {
+      "id": "grammar::steps.10.prompt",
+      "path": "grammar/steps[10]/prompt",
+      "ko": null,
+      "en": "To mark 이름 (name) as the TOPIC: 제 이름___ 민수예요",
+      "current": "이름（名前）を主題として示すには：제 이름___ 민수예요",
+      "ref_th": "เพื่อทำให้ 이름 (ชื่อ) เป็นหัวข้อ: 제 이름___ 민수예요",
+      "ref_es": "Para marcar 이름 (nombre) como TEMA: 제 이름___ 민수예요"
+    },
+    {
+      "id": "grammar::steps.11.title",
+      "path": "grammar/steps[11]/title",
+      "ko": "동사 기본형",
+      "en": "Verbs — Dictionary Form",
+      "current": "動詞 — 辞書形",
+      "ref_th": "กริยา — รูปพจนานุกรม",
+      "ref_es": "Verbos — Forma de Diccionario"
+    },
+    {
+      "id": "grammar::steps.11.body",
+      "path": "grammar/steps[11]/body",
+      "ko": null,
+      "en": "All Korean verbs in dictionary form end in 다 (da). Remove 다 to get the verb stem, then add an ending.",
+      "current": "韓国語の動詞は辞書形がすべて다（da）で終わります。다を取ると語幹になり、そこに語尾を付け加えます。",
+      "ref_th": "กริยาภาษาเกาหลีทุกตัวในรูปพจนานุกรมลงท้ายด้วย 다 (ดา) ตัด 다 ออกเพื่อได้ก้านกริยา แล้วเติมรูปแบบท้าย",
+      "ref_es": "Todos los verbos coreanos en forma de diccionario terminan en 다 (da). Elimina 다 para obtener la raíz verbal y luego añade una terminación."
+    },
+    {
+      "id": "grammar::steps.11.rules[0]",
+      "path": "grammar/steps[11]/rules[0]",
+      "ko": null,
+      "en": "가다 (to go) → stem: 가-",
+      "current": "가다（行く）→ 語幹：가-",
+      "ref_th": "가다 (ไป) → ก้าน: 가-",
+      "ref_es": "가다 (ir) → raíz: 가-"
+    },
+    {
+      "id": "grammar::steps.11.rules[1]",
+      "path": "grammar/steps[11]/rules[1]",
+      "ko": null,
+      "en": "먹다 (to eat) → stem: 먹-",
+      "current": "먹다（食べる）→ 語幹：먹-",
+      "ref_th": "먹다 (กิน) → ก้าน: 먹-",
+      "ref_es": "먹다 (comer) → raíz: 먹-"
+    },
+    {
+      "id": "grammar::steps.11.rules[2]",
+      "path": "grammar/steps[11]/rules[2]",
+      "ko": null,
+      "en": "공부하다 (to study) → stem: 공부하-",
+      "current": "공부하다（勉強する）→ 語幹：공부하-",
+      "ref_th": "공부하다 (เรียน) → ก้าน: 공부하-",
+      "ref_es": "공부하다 (estudiar) → raíz: 공부하-"
+    },
+    {
+      "id": "grammar::steps.11.rules[3]",
+      "path": "grammar/steps[11]/rules[3]",
+      "ko": null,
+      "en": "하다 (to do) → stem: 하-",
+      "current": "하다（する）→ 語幹：하-",
+      "ref_th": "하다 (ทำ) → ก้าน: 하-",
+      "ref_es": "하다 (hacer) → raíz: 하-"
+    },
+    {
+      "id": "grammar::steps.12.title",
+      "path": "grammar/steps[12]/title",
+      "ko": "현재형",
+      "en": "Present Tense: -아요 / -어요",
+      "current": "現在形：-아요／-어요",
+      "ref_th": "ปัจจุบันกาล: -아요 / -어요",
+      "ref_es": "Presente: -아요 / -어요"
+    },
+    {
+      "id": "grammar::steps.12.body",
+      "path": "grammar/steps[12]/body",
+      "ko": null,
+      "en": "Add -아요 after ㅏ or ㅗ stems. Add -어요 for all others. 하다 verbs use -해요.",
+      "current": "語幹の母音がㅏまたはㅗの場合は-아요を付けます。それ以外は-어요を付けます。하다動詞は-해요を使います。",
+      "ref_th": "เติม -아요 หลังก้านที่มีสระ ㅏ หรือ ㅗ เติม -어요 สำหรับก้านอื่นทั้งหมด กริยา 하다 ใช้ -해요",
+      "ref_es": "Añade -아요 después de raíces con ㅏ o ㅗ. Añade -어요 para todas las demás. Los verbos con 하다 usan -해요."
+    },
+    {
+      "id": "grammar::steps.12.rules[0]",
+      "path": "grammar/steps[12]/rules[0]",
+      "ko": null,
+      "en": "가다 → 가요 (go · ㅏ stem)",
+      "current": "가다 → 가요（行く・ㅏ語幹）",
+      "ref_th": "가다 → 가요 (ไป · ก้าน ㅏ)",
+      "ref_es": "가다 → 가요 (ir · raíz ㅏ)"
+    },
+    {
+      "id": "grammar::steps.12.rules[1]",
+      "path": "grammar/steps[12]/rules[1]",
+      "ko": null,
+      "en": "오다 → 와요 (come · ㅗ stem)",
+      "current": "오다 → 와요（来る・ㅗ語幹）",
+      "ref_th": "오다 → 와요 (มา · ก้าน ㅗ)",
+      "ref_es": "오다 → 와요 (venir · raíz ㅗ)"
+    },
+    {
+      "id": "grammar::steps.12.rules[2]",
+      "path": "grammar/steps[12]/rules[2]",
+      "ko": null,
+      "en": "먹다 → 먹어요 (eat · other)",
+      "current": "먹다 → 먹어요（食べる・その他）",
+      "ref_th": "먹다 → 먹어요 (กิน · อื่น)",
+      "ref_es": "먹다 → 먹어요 (comer · otras)"
+    },
+    {
+      "id": "grammar::steps.12.rules[3]",
+      "path": "grammar/steps[12]/rules[3]",
+      "ko": null,
+      "en": "마시다 → 마셔요 (drink · other)",
+      "current": "마시다 → 마셔요（飲む・その他）",
+      "ref_th": "마시다 → 마셔요 (ดื่ม · อื่น)",
+      "ref_es": "마시다 → 마셔요 (beber · otras)"
+    },
+    {
+      "id": "grammar::steps.12.rules[4]",
+      "path": "grammar/steps[12]/rules[4]",
+      "ko": null,
+      "en": "공부하다 → 공부해요 (study · 하다)",
+      "current": "공부하다 → 공부해요（勉強する・하다）",
+      "ref_th": "공부하다 → 공부해요 (เรียน · 하다)",
+      "ref_es": "공부하다 → 공부해요 (estudiar · 하다)"
+    },
+    {
+      "id": "grammar::steps.12.tip.label",
+      "path": "grammar/steps[12]/tip.label",
+      "ko": null,
+      "en": "Vowel Rule",
+      "current": "母音規則",
+      "ref_th": "กฎสระ",
+      "ref_es": "Regla Vocálica"
+    },
+    {
+      "id": "grammar::steps.12.tip.text",
+      "path": "grammar/steps[12]/tip.text",
+      "ko": null,
+      "en": "ㅏ and ㅗ are 'bright' vowels → -아요. All other vowels are 'dark' → -어요. Once you know the stem vowel, conjugation is automatic.",
+      "current": "ㅏとㅗは「明るい」母音→-아요。それ以外の母音はすべて「暗い」母音→-어요。語幹の母音がわかれば、活用は自動的に決まります",
+      "ref_th": "ㅏ และ ㅗ เป็นสระ สว่าง → -아요 สระอื่นทั้งหมดเป็น มืด → -어요 เมื่อรู้สระของก้าน การผันเป็นอัตโนมัติ",
+      "ref_es": "ㅏ y ㅗ son vocales \"brillantes\" → -아요. Todas las demás vocales son \"oscuras\" → -어요. Una vez que conoces la vocal de la raíz, la conjugación es automática."
+    },
+    {
+      "id": "grammar::steps.13.meaning",
+      "path": "grammar/steps[13]/meaning",
+      "ko": null,
+      "en": "I go / Let's go. (가다 → 가요, polite present)",
+      "current": "行きます / 行きましょう。（가다 → 가요、丁寧な現在形）",
+      "ref_th": "ฉันไป / ไปกันเถอะ (가다 → 가요 สุภาพปัจจุบัน)",
+      "ref_es": "Voy / Vamos. (가다 → 가요, presente educado)"
+    },
+    {
+      "id": "grammar::steps.14.meaning",
+      "path": "grammar/steps[14]/meaning",
+      "ko": null,
+      "en": "I eat / eating. (먹다 → 먹어요, polite present)",
+      "current": "食べます。（먹다 → 먹어요、丁寧な現在形）",
+      "ref_th": "ฉันกิน / กินอยู่ (먹다 → 먹어요 สุภาพปัจจุบัน)",
+      "ref_es": "Como / estoy comiendo. (먹다 → 먹어요, presente educado)"
+    },
+    {
+      "id": "grammar::steps.15.prompt",
+      "path": "grammar/steps[15]/prompt",
+      "ko": null,
+      "en": "하다 (to do) → polite present form?",
+      "current": "하다（する）→ 丁寧形の現在形は？",
+      "ref_th": "하다 (ทำ) → รูปสุภาพปัจจุบัน?",
+      "ref_es": "하다 (hacer) → ¿forma educada del presente?"
+    },
+    {
+      "id": "grammar::steps.16.title",
+      "path": "grammar/steps[16]/title",
+      "ko": "과거형",
+      "en": "Past Tense: -았어요 / -었어요",
+      "current": "過去形：-았어요 / -었어요",
+      "ref_th": "อดีตกาล: -았어요 / -었어요",
+      "ref_es": "Pasado: -았어요 / -었어요"
+    },
+    {
+      "id": "grammar::steps.16.body",
+      "path": "grammar/steps[16]/body",
+      "ko": null,
+      "en": "Add -았어요 after ㅏ/ㅗ stems and -었어요 for others. 하다 → 했어요.",
+      "current": "ㅏ/ㅗで終わる語幹には-았어요を、それ以外には-었어요をつけます。하다 → 했어요。",
+      "ref_th": "เติม -았어요 หลังก้าน ㅏ/ㅗ และ -었어요 สำหรับก้านอื่น 하다 → 했어요",
+      "ref_es": "Añade -았어요 después de raíces con ㅏ/ㅗ y -었어요 para las demás. 하다 → 했어요."
+    },
+    {
+      "id": "grammar::steps.16.rules[0]",
+      "path": "grammar/steps[16]/rules[0]",
+      "ko": null,
+      "en": "가다 → 갔어요 (went)",
+      "current": "가다 → 갔어요（行った）",
+      "ref_th": "가다 → 갔어요 (ไปแล้ว)",
+      "ref_es": "가다 → 갔어요 (fui)"
+    }
+  ]
+}

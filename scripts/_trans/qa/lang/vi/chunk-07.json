@@ -1,0 +1,232 @@
+{
+  "lang": "vi",
+  "chunk": 7,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::steps.42.tip.label",
+      "path": "grammar/steps[42]/tip.label",
+      "ko": null,
+      "en": "Template",
+      "current": "Mẫu",
+      "ref_th": "แม่แบบ",
+      "ref_es": "Plantilla"
+    },
+    {
+      "id": "grammar::steps.42.tip.text",
+      "path": "grammar/steps[42]/tip.text",
+      "ko": null,
+      "en": "Use 안녕하세요 + 잘 부탁드려요 for formal settings. With friends or peers: 안녕! + 잘 부탁해! Always bow slightly when introducing yourself in person.",
+      "current": "Dùng 안녕하세요 + 잘 부탁드려요 cho những dịp trang trọng. Với bạn bè hoặc người ngang hàng: 안녕! + 잘 부탁해! Luôn cúi đầu nhẹ khi giới thiệu bản thân trực tiếp.",
+      "ref_th": "ใช้ 안녕하세요 + 잘 부탁드려요 ในสถานการณ์ทางการ กับเพื่อนหรือคนรุ่นเดียวกัน: 안녕! + 잘 부탁해! โค้งตัวเล็กน้อยเสมอเมื่อแนะนำตัวต่อตัว",
+      "ref_es": "Usa 안녕하세요 + 잘 부탁드려요 para entornos formales. Con amigos o pares: 안녕! + 잘 부탁해! Inclínate levemente cuando te presentes en persona."
+    },
+    {
+      "id": "grammar::steps.43.title",
+      "path": "grammar/steps[43]/title",
+      "ko": "날짜",
+      "en": "Dates and Months",
+      "current": "Ngày và tháng",
+      "ref_th": "วันที่และเดือน",
+      "ref_es": "Fechas y Meses"
+    },
+    {
+      "id": "grammar::steps.43.body",
+      "path": "grammar/steps[43]/body",
+      "ko": null,
+      "en": "Korean dates use Sino-Korean numbers in Year → Month → Day order. June = 유월, October = 시월 (exceptions).",
+      "current": "Ngày tháng tiếng Hàn dùng số Hán Hàn theo thứ tự Năm → Tháng → Ngày. Tháng 6 = 유월, tháng 10 = 시월 (ngoại lệ).",
+      "ref_th": "วันที่เกาหลีใช้ตัวเลขจีน-เกาหลีในลำดับ ปี → เดือน → วัน มิถุนายน = 유월 ตุลาคม = 시월 (ข้อยกเว้น)",
+      "ref_es": "Las fechas coreanas usan números sino-coreanos en orden Año → Mes → Día. Junio = 유월, Octubre = 시월 (excepciones)."
+    },
+    {
+      "id": "grammar::steps.43.rules[0]",
+      "path": "grammar/steps[43]/rules[0]",
+      "ko": null,
+      "en": "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
+      "current": "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
+      "ref_th": "일월(1월) 이월(2월) 삼월(3월) 사월(4월) 오월(5월) 유월(6월)",
+      "ref_es": "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)"
+    },
+    {
+      "id": "grammar::steps.43.rules[1]",
+      "path": "grammar/steps[43]/rules[1]",
+      "ko": null,
+      "en": "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
+      "current": "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
+      "ref_th": "칠월(7월) 팔월(8월) 구월(9월) 시월(10월) 십일월(11월) 십이월(12월)",
+      "ref_es": "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)"
+    },
+    {
+      "id": "grammar::steps.43.rules[2]",
+      "path": "grammar/steps[43]/rules[2]",
+      "ko": null,
+      "en": "Date format: 2026년 6월 16일 (June 16, 2026)",
+      "current": "Định dạng ngày: 2026년 6월 16일 (16 tháng 6, 2026)",
+      "ref_th": "รูปแบบวันที่: 2026년 6월 16일 (16 มิถุนายน 2026)",
+      "ref_es": "Formato de fecha: 2026년 6월 16일 (16 de junio de 2026)"
+    },
+    {
+      "id": "grammar::steps.43.rules[3]",
+      "path": "grammar/steps[43]/rules[3]",
+      "ko": null,
+      "en": "오늘이 며칠이에요? — What is today's date?",
+      "current": "오늘이 며칠이에요? — Hôm nay là ngày mấy?",
+      "ref_th": "오늘이 며칠이에요? — วันนี้วันที่เท่าไหร่?",
+      "ref_es": "오늘이 며칠이에요? — ¿Qué fecha es hoy?"
+    },
+    {
+      "id": "grammar::steps.44.title",
+      "path": "grammar/steps[44]/title",
+      "ko": "정도 부사",
+      "en": "Degree Adverbs",
+      "current": "Trạng từ chỉ mức độ",
+      "ref_th": "คำวิเศษณ์บอกระดับ",
+      "ref_es": "Adverbios de Grado"
+    },
+    {
+      "id": "grammar::steps.44.body",
+      "path": "grammar/steps[44]/body",
+      "ko": null,
+      "en": "Degree adverbs go directly before the word they modify: 조금 (a little), 정말 (really), 아주 (very), 많이 (a lot).",
+      "current": "Trạng từ chỉ mức độ đứng ngay trước từ mà chúng bổ nghĩa: 조금 (một chút), 정말 (thật sự), 아주 (rất), 많이 (nhiều).",
+      "ref_th": "คำวิเศษณ์บอกระดับวางไว้ก่อนคำที่ขยาย: 조금 (นิดหน่อย) 정말 (จริงๆ) 아주 (มาก) 많이 (มากมาย)",
+      "ref_es": "Los adverbios de grado van directamente antes de la palabra que modifican: 조금 (un poco), 정말 (de verdad), 아주 (muy), 많이 (mucho)."
+    },
+    {
+      "id": "grammar::steps.44.rules[0]",
+      "path": "grammar/steps[44]/rules[0]",
+      "ko": null,
+      "en": "조금 / 좀 — a little (좀 is softer/casual)",
+      "current": "조금 / 좀 — một chút (좀 nhẹ nhàng/thân mật hơn)",
+      "ref_th": "조금 / 좀 — นิดหน่อย (좀 อ่อนนุ่ม/ไม่เป็นทางการ)",
+      "ref_es": "조금 / 좀 — un poco (좀 es más suave/informal)"
+    },
+    {
+      "id": "grammar::steps.44.rules[1]",
+      "path": "grammar/steps[44]/rules[1]",
+      "ko": null,
+      "en": "정말 — really / truly (neutral)",
+      "current": "정말 — thật sự / quả thật (trung tính)",
+      "ref_th": "정말 — จริงๆ / จริงใจ (กลาง)",
+      "ref_es": "정말 — de verdad / realmente (neutro)"
+    },
+    {
+      "id": "grammar::steps.44.rules[2]",
+      "path": "grammar/steps[44]/rules[2]",
+      "ko": null,
+      "en": "진짜 — really (casual, stronger feel)",
+      "current": "진짜 — thật sự (thân mật, cảm giác mạnh hơn)",
+      "ref_th": "진짜 — จริงๆ (ไม่เป็นทางการ รู้สึกแรงกว่า)",
+      "ref_es": "진짜 — de verdad (informal, sensación más fuerte)"
+    },
+    {
+      "id": "grammar::steps.44.rules[3]",
+      "path": "grammar/steps[44]/rules[3]",
+      "ko": null,
+      "en": "아주 — very",
+      "current": "아주 — rất",
+      "ref_th": "아주 — มาก",
+      "ref_es": "아주 — muy"
+    },
+    {
+      "id": "grammar::steps.44.rules[4]",
+      "path": "grammar/steps[44]/rules[4]",
+      "ko": null,
+      "en": "많이 — a lot / much",
+      "current": "많이 — nhiều",
+      "ref_th": "많이 — มากมาย",
+      "ref_es": "많이 — mucho"
+    },
+    {
+      "id": "grammar::steps.44.rules[5]",
+      "path": "grammar/steps[44]/rules[5]",
+      "ko": null,
+      "en": "별로 + negative — not really (별로 안 좋아요 = I don't really like it)",
+      "current": "별로 + phủ định — không hẳn (별로 안 좋아요 = Tôi không thích lắm)",
+      "ref_th": "별로 + ปฏิเสธ — ไม่ค่อย (별로 안 좋아요 = ฉันไม่ค่อยชอบ)",
+      "ref_es": "별로 + negación — no mucho (별로 안 좋아요 = No me gusta mucho)"
+    },
+    {
+      "id": "grammar::steps.44.rules[6]",
+      "path": "grammar/steps[44]/rules[6]",
+      "ko": null,
+      "en": "전혀 + negative — not at all (전혀 모르겠어요 = I have no idea at all)",
+      "current": "전혀 + phủ định — hoàn toàn không (전혀 모르겠어요 = Tôi hoàn toàn không biết)",
+      "ref_th": "전혀 + ปฏิเสธ — ไม่เลย (전혀 모르겠어요 = ฉันไม่รู้เลย)",
+      "ref_es": "전혀 + negación — para nada (전혀 모르겠어요 = No tengo ni idea)"
+    },
+    {
+      "id": "grammar::steps.44.tip.label",
+      "path": "grammar/steps[44]/tip.label",
+      "ko": null,
+      "en": "Negative Adverbs",
+      "current": "Trạng từ phủ định",
+      "ref_th": "คำวิเศษณ์ปฏิเสธ",
+      "ref_es": "Adverbios Negativos"
+    },
+    {
+      "id": "grammar::steps.44.tip.text",
+      "path": "grammar/steps[44]/tip.text",
+      "ko": null,
+      "en": "별로 and 전혀 MUST be used with a negative verb (안, 못, 없다, 모르다). Saying 별로 좋아요 (without negation) is ungrammatical. Think of them as 'not really' and 'not at all'.",
+      "current": "별로 và 전혀 BẮT BUỘC phải dùng với động từ phủ định (안, 못, 없다, 모르다). Nói 별로 좋아요 (không có phủ định) là sai ngữ pháp. Hãy coi chúng như 'không hẳn' và 'hoàn toàn không'.",
+      "ref_th": "별로 และ 전혀 ต้องใช้กับกริยาปฏิเสธ (안 못 없다 모르다) การพูด 별로 좋아요 (โดยไม่ปฏิเสธ) ผิดไวยากรณ์ คิดว่าหมายถึง ไม่ค่อย และ ไม่เลย",
+      "ref_es": "별로 y 전혀 DEBEN usarse con un verbo negativo (안, 못, 없다, 모르다). Decir 별로 좋아요 (sin negación) es agramatical. Piensa en ellos como \"no mucho\" y \"para nada\"."
+    },
+    {
+      "id": "grammar::steps.45.meaning",
+      "path": "grammar/steps[45]/meaning",
+      "ko": null,
+      "en": "It's really delicious!",
+      "current": "Thật sự ngon quá!",
+      "ref_th": "อร่อยจริงๆ!",
+      "ref_es": "¡Está muy rico!"
+    },
+    {
+      "id": "grammar::steps.46.prompt",
+      "path": "grammar/steps[46]/prompt",
+      "ko": null,
+      "en": "'I don't really like it' — 별로 ___",
+      "current": "'Tôi không thích lắm' — 별로 ___",
+      "ref_th": "ฉันไม่ค่อยชอบ — 별로 ___",
+      "ref_es": "\"No me gusta mucho\" — 별로 ___"
+    },
+    {
+      "id": "grammar::steps.47.title",
+      "path": "grammar/steps[47]/title",
+      "ko": "-는 것",
+      "en": "Nominalizer: -는 것",
+      "current": "Danh từ hóa: -는 것",
+      "ref_th": "การทำเป็นคำนาม: -는 것",
+      "ref_es": "Nominalizador: -는 것"
+    },
+    {
+      "id": "grammar::steps.47.body",
+      "path": "grammar/steps[47]/body",
+      "ko": null,
+      "en": "Adding -는 것 to a verb stem creates a noun phrase — 'the act of doing ~'. It makes verbs act like nouns.",
+      "current": "Thêm -는 것 vào gốc động từ tạo ra một cụm danh từ — 'việc làm ~'. Nó khiến động từ hoạt động như danh từ.",
+      "ref_th": "การเติม -는 것 ต่อท้ายก้านกริยาสร้างวลีคำนาม — การกระทำของ~ ทำให้กริยาทำหน้าที่เหมือนคำนาม",
+      "ref_es": "Añadir -는 것 a la raíz verbal crea una frase nominal — \"el acto de hacer ~\". Hace que los verbos actúen como sustantivos."
+    },
+    {
+      "id": "grammar::steps.47.rules[0]",
+      "path": "grammar/steps[47]/rules[0]",
+      "ko": null,
+      "en": "먹는 것 — the act of eating",
+      "current": "먹는 것 — việc ăn",
+      "ref_th": "먹는 것 — การกิน",
+      "ref_es": "먹는 것 — el acto de comer"
+    },
+    {
+      "id": "grammar::steps.47.rules[1]",
+      "path": "grammar/steps[47]/rules[1]",
+      "ko": null,
+      "en": "배우는 것 — the act of learning",
+      "current": "배우는 것 — việc học",
+      "ref_th": "배우는 것 — การเรียนรู้",
+      "ref_es": "배우는 것 — el acto de aprender"
+    }
+  ]
+}

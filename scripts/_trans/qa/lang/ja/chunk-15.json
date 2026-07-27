@@ -1,0 +1,232 @@
+{
+  "lang": "ja",
+  "chunk": 15,
+  "count": 25,
+  "units": [
+    {
+      "id": "pronouns::steps.14.choices[2]",
+      "path": "pronouns/steps[14]/choices[2]",
+      "ko": null,
+      "en": "the mom of everyone present",
+      "current": "その場にいる全員のお母さん",
+      "ref_th": "แม่ของทุกคนที่อยู่ตรงนั้น",
+      "ref_es": "la mamá de todos los presentes"
+    },
+    {
+      "id": "pronouns::steps.14.choices[3]",
+      "path": "pronouns/steps[14]/choices[3]",
+      "ko": null,
+      "en": "my husband's or wife's mom",
+      "current": "配偶者のお母さん",
+      "ref_th": "แม่สามีหรือแม่ภรรยาของฉัน",
+      "ref_es": "la mamá de mi esposo o esposa"
+    },
+    {
+      "id": "pronouns::steps.15.meaning",
+      "path": "pronouns/steps[15]/meaning",
+      "ko": null,
+      "en": "my/our country (Korea) — literally 'our country'",
+      "current": "私たちの国（韓国）",
+      "ref_th": "ประเทศของฉัน/เรา (เกาหลี) — แปลตรงๆ ว่า \"ประเทศของเรา\"",
+      "ref_es": "mi/nuestro país (Corea) — literalmente \"nuestro país\""
+    },
+    {
+      "id": "pronouns::steps.16.prompt",
+      "path": "pronouns/steps[16]/prompt",
+      "ko": null,
+      "en": "You are speaking to your company's president about your own team. Which word for 'we' do you use?",
+      "current": "会社の社長に自分のチームについて話します。「私たち」を表す言葉はどれを使いますか。",
+      "ref_th": "คุณกำลังพูดกับประธานบริษัทเกี่ยวกับทีมของคุณเอง คุณใช้คำใดแทน \"พวกเรา\"?",
+      "ref_es": "Hablas con el presidente de tu empresa sobre tu propio equipo. ¿Qué palabra para 'nosotros' usas?"
+    },
+    {
+      "id": "pronouns::steps.17.title",
+      "path": "pronouns/steps[17]/title",
+      "ko": "지시대명사 이·그·저",
+      "en": "Demonstrative Pronouns (이·그·저)",
+      "current": "指示代名詞（이・그・저）",
+      "ref_th": "สรรพนามชี้เฉพาะ (이·그·저)",
+      "ref_es": "Pronombres Demostrativos (이·그·저)"
+    },
+    {
+      "id": "pronouns::steps.17.body",
+      "path": "pronouns/steps[17]/body",
+      "ko": null,
+      "en": "Korean has three levels of demonstratives based on spatial distance. 이 (i) = near the speaker. 그 (geu) = near the listener or previously mentioned. 저 (jeo) = far from both speaker and listener. These attach to 것 (geot, 'thing') to form pronouns: 이것 (this), 그것 (that), 저것 (that over there). In casual speech these are shortened: 이거, 그거, 저거. The same 이/그/저 roots also work with place words: 여기 (here), 거기 (there), 저기 (over there).",
+      "current": "韓国語には空間的な距離に基づく3段階の指示語があります。이（i）＝話者の近く。그（geu）＝聞き手の近く、または以前に言及した物事。저（jeo）＝話者・聞き手両方から遠い。これらは 것（geot、「もの」）に付いて代名詞を形成します：이것（これ）、그것（それ）、저것（あれ）。カジュアルな会話では短縮されます：이거、그거、저거。同じ이/그/저は場所の語とも組み合わせられます：여기（ここ）、거기（そこ）、저기（あそこ）。",
+      "ref_th": "ภาษาเกาหลีมีคำชี้เฉพาะสามระดับตามระยะทาง 이 (อี) = ใกล้ผู้พูด 그 (กึ) = ใกล้ผู้ฟังหรือที่กล่าวถึงแล้ว 저 (จอ) = ไกลจากทั้งคู่ คำเหล่านี้รวมกับ 것 (สิ่ง) เป็น 이것 (สิ่งนี้) 그것 (สิ่งนั้น) 저것 (สิ่งนั้นโน้น) หรือรูปย่อ 이거 그거 저거",
+      "ref_es": "El coreano tiene tres niveles de demostrativos según la distancia espacial. 이 (i) = cerca del hablante. 그 (geu) = cerca del oyente o mencionado previamente. 저 (jeo) = lejos de ambos, hablante y oyente. Estos se unen a 것 (geot, \"cosa\") para formar pronombres: 이것 (esto), 그것 (eso), 저것 (aquello). En el habla informal se acortan: 이거, 그거, 저거. Las mismas raíces 이/그/저 también funcionan con palabras de lugar: 여기 (aquí), 거기 (ahí), 저기 (allá)."
+    },
+    {
+      "id": "pronouns::steps.17.tip.label",
+      "path": "pronouns/steps[17]/tip.label",
+      "ko": null,
+      "en": "이/그/저 vs 여기/거기/저기",
+      "current": "이/그/저 vs 여기/거기/저기",
+      "ref_th": "이/그/저 vs 여기/거기/저기",
+      "ref_es": "이/그/저 vs 여기/거기/저기"
+    },
+    {
+      "id": "pronouns::steps.17.tip.text",
+      "path": "pronouns/steps[17]/tip.text",
+      "ko": null,
+      "en": "이/그/저 + 것 = this/that thing. 이/그/저 + -(e)gi = here/there. So 여기 (yeo-gi) = here (near speaker), 거기 (geo-gi) = there (near listener), 저기 (jeo-gi) = over there (far from both).",
+      "current": "이/그/저 + 것 ＝ これ/それ/あれ（もの）。이/그/저 + -(e)gi ＝ ここ/そこ/あそこ（場所）。なので 여기（yeo-gi）＝ ここ（話者の近く）、거기（geo-gi）＝ そこ（聞き手の近く）、저기（jeo-gi）＝ あそこ（両者から遠い）。",
+      "ref_th": "이/그/저 + 것 = สิ่งนี้/นั้น 이/그/저 + -(อี)กี = ที่นี่/ที่นั่น ดังนั้น 여기 = ที่นี่ (ใกล้ผู้พูด) 거기 = ที่นั่น (ใกล้ผู้ฟัง) 저기 = โน่น (ไกลจากทั้งคู่)",
+      "ref_es": "이/그/저 + 것 = esto/eso/aquello (cosa). 이/그/저 + -(e)gi = aquí/ahí/allá. Así que 여기 (yeo-gi) = aquí (cerca del hablante), 거기 (geo-gi) = ahí (cerca del oyente), 저기 (jeo-gi) = allá (lejos de ambos)."
+    },
+    {
+      "id": "pronouns::steps.18.meaning",
+      "path": "pronouns/steps[18]/meaning",
+      "ko": null,
+      "en": "this (thing) — near speaker",
+      "current": "これ（話者の近く）",
+      "ref_th": "สิ่งนี้ — ใกล้ผู้พูด",
+      "ref_es": "esto (cosa) — cerca del hablante"
+    },
+    {
+      "id": "pronouns::steps.19.meaning",
+      "path": "pronouns/steps[19]/meaning",
+      "ko": null,
+      "en": "that (thing) — near listener or already mentioned",
+      "current": "それ（聞き手の近くまたは既出）",
+      "ref_th": "สิ่งนั้น — ใกล้ผู้ฟังหรือที่กล่าวถึงแล้ว",
+      "ref_es": "eso (cosa) — cerca del oyente o ya mencionado"
+    },
+    {
+      "id": "pronouns::steps.20.meaning",
+      "path": "pronouns/steps[20]/meaning",
+      "ko": null,
+      "en": "that thing over there — far from both",
+      "current": "あれ（両者から遠い）",
+      "ref_th": "สิ่งนั้นโน้น — ไกลจากทั้งคู่",
+      "ref_es": "aquello (cosa) — lejos de ambos"
+    },
+    {
+      "id": "pronouns::steps.21.meaning",
+      "path": "pronouns/steps[21]/meaning",
+      "ko": null,
+      "en": "this one (casual form of 이것)",
+      "current": "これ（이것のくだけた言い方）",
+      "ref_th": "อันนี้ (รูปไม่เป็นทางการของ 이것)",
+      "ref_es": "esto (forma informal de 이것)"
+    },
+    {
+      "id": "pronouns::steps.22.prompt",
+      "path": "pronouns/steps[22]/prompt",
+      "ko": null,
+      "en": "Which demonstrative refers to something far from BOTH the speaker AND the listener?",
+      "current": "話し手からも聞き手からも遠いものを指す指示語はどれでしょう。",
+      "ref_th": "คำชี้เฉพาะใดหมายถึงสิ่งที่ไกลจากทั้งผู้พูดและผู้ฟัง?",
+      "ref_es": "¿Qué demostrativo se refiere a algo lejos TANTO del hablante COMO del oyente?"
+    },
+    {
+      "id": "pronouns::steps.23.meaning",
+      "path": "pronouns/steps[23]/meaning",
+      "ko": null,
+      "en": "here (near speaker)",
+      "current": "ここ（話者の近く）",
+      "ref_th": "ที่นี่ (ใกล้ผู้พูด)",
+      "ref_es": "aquí (cerca del hablante)"
+    },
+    {
+      "id": "pronouns::steps.24.prompt",
+      "path": "pronouns/steps[24]/prompt",
+      "ko": null,
+      "en": "You are telling a friend about a man you mentioned a moment ago, and he is not in the room. In natural spoken Korean you say…",
+      "current": "少し前に話題に出した男性について友だちに話しています。その人はこの場にいません。自然な話し言葉ではどう言うでしょう。",
+      "ref_th": "คุณกำลังเล่าให้เพื่อนฟังเกี่ยวกับผู้ชายที่คุณเพิ่งพูดถึง และเขาไม่ได้อยู่ตรงนั้น ในภาษาเกาหลีพูดแบบธรรมชาติคุณจะพูดว่า…",
+      "ref_es": "Le hablas a un amigo de un hombre que mencionaste hace un momento, y él no está presente. En coreano hablado natural dices…"
+    },
+    {
+      "id": "pronouns::steps.25.title",
+      "path": "pronouns/steps[25]/title",
+      "ko": "의문대명사",
+      "en": "Question Pronouns (의문대명사)",
+      "current": "疑問代名詞（의문대명사）",
+      "ref_th": "สรรพนามคำถาม (의문대명사)",
+      "ref_es": "Pronombres Interrogativos (의문대명사)"
+    },
+    {
+      "id": "pronouns::steps.25.body",
+      "path": "pronouns/steps[25]/body",
+      "ko": null,
+      "en": "Korean question words are placed in the same sentence position as the word they replace — unlike English, which moves 'what' and 'where' to the front. Compare: 영화 봐요? (You watch a movie?) vs 뭐 봐요? (What do you watch?). The question word simply swaps into the original slot. The main question pronouns are: 누구 (who), 무엇/뭐 (what), 어디 (where), 언제 (when), 왜 (why), 어떻게 (how), 얼마 (how much).",
+      "current": "韓国語の疑問語は、置き換える語と同じ文の位置に置きます。英語では「what」や「where」を文頭に移動させますが、韓国語は異なります。比較：영화 봐요?（映画を見ますか?）対 뭐 봐요?（何を見ますか?）。疑問語は元の位置にそのまま置き換えられます。主な疑問代名詞：누구（誰）、무엇/뭐（何）、어디（どこ）、언제（いつ）、왜（なぜ）、어떻게（どのように）、얼마（いくら）。",
+      "ref_th": "คำคำถามภาษาเกาหลีอยู่ในตำแหน่งเดียวกับคำที่แทนที่ — ต่างจากภาษาอังกฤษที่เลื่อน \"what/who\" มาต้นประโยค 누구 (ใคร) 뭐/무엇 (อะไร) 어디 (ที่ไหน) 언제 (เมื่อไหร่) 왜 (ทำไม) 어떻게 (อย่างไร) คำเหล่านี้ไม่ต้องสร้างประโยคคำถามแบบพิเศษ",
+      "ref_es": "Las palabras interrogativas coreanas se colocan en la misma posición de la oración que la palabra que reemplazan — a diferencia del español, que mueve \"qué\" y \"dónde\" al principio. Compara: 영화 봐요? (¿Ves una película?) vs 뭐 봐요? (¿Qué ves?). La palabra interrogativa simplemente ocupa el lugar original. Los principales pronombres interrogativos son: 누구 (quién), 무엇/뭐 (qué), 어디 (dónde), 언제 (cuándo), 왜 (por qué), 어떻게 (cómo), 얼마 (cuánto)."
+    },
+    {
+      "id": "pronouns::steps.25.tip.label",
+      "path": "pronouns/steps[25]/tip.label",
+      "ko": null,
+      "en": "No question inversion needed",
+      "current": "疑問の倒置は不要",
+      "ref_th": "ไม่ต้องสลับลำดับคำถาม",
+      "ref_es": "Sin inversión de pregunta"
+    },
+    {
+      "id": "pronouns::steps.25.tip.text",
+      "path": "pronouns/steps[25]/tip.text",
+      "ko": null,
+      "en": "English moves the question word to the front and inverts subject-verb order: 'What are you doing?' Korean keeps the word order the same as a statement and just swaps in the question word: 뭐 해요? (What [are you] doing?) — literally 'what do?'",
+      "current": "英語では疑問語を文頭に移動し主語と動詞の順序を倒置させます：「What are you doing?」。韓国語では平叙文と同じ語順のまま疑問語を置き換えます：뭐 해요?（何していますか?）——文字通り「何する?」。",
+      "ref_th": "ภาษาอังกฤษเลื่อนคำถามมาหน้าและสลับลำดับ ภาษาเกาหลีไม่ต้องทำ: 뭐 먹어요? (กินอะไร?) มีโครงสร้างเหมือน \"(กิน + อะไร) + อยู่\" ทำให้เรียนง่ายขึ้น",
+      "ref_es": "El español mueve la palabra interrogativa al principio y a menudo la invierte: \"¿Qué estás haciendo?\". El coreano mantiene el mismo orden de palabras que una declaración y simplemente intercambia la palabra interrogativa: 뭐 해요? (¿Qué haces?) — literalmente \"¿qué hace?\"."
+    },
+    {
+      "id": "pronouns::steps.26.meaning",
+      "path": "pronouns/steps[26]/meaning",
+      "ko": null,
+      "en": "who",
+      "current": "誰",
+      "ref_th": "ใคร",
+      "ref_es": "quién"
+    },
+    {
+      "id": "pronouns::steps.27.meaning",
+      "path": "pronouns/steps[27]/meaning",
+      "ko": null,
+      "en": "what (formal)",
+      "current": "何（フォーマル）",
+      "ref_th": "อะไร (ทางการ)",
+      "ref_es": "qué (formal)"
+    },
+    {
+      "id": "pronouns::steps.28.meaning",
+      "path": "pronouns/steps[28]/meaning",
+      "ko": null,
+      "en": "what (casual, very common)",
+      "current": "何（カジュアル・よく使う）",
+      "ref_th": "อะไร (ไม่เป็นทางการ ใช้บ่อยมาก)",
+      "ref_es": "qué (informal, muy común)"
+    },
+    {
+      "id": "pronouns::steps.29.meaning",
+      "path": "pronouns/steps[29]/meaning",
+      "ko": null,
+      "en": "where",
+      "current": "どこ",
+      "ref_th": "ที่ไหน",
+      "ref_es": "dónde"
+    },
+    {
+      "id": "pronouns::steps.30.prompt",
+      "path": "pronouns/steps[30]/prompt",
+      "ko": null,
+      "en": "Which question pronoun means 'who'?",
+      "current": "「誰」を意味する疑問代名詞はどれでしょう。",
+      "ref_th": "สรรพนามคำถามใดหมายถึง \"ใคร\"?",
+      "ref_es": "¿Qué pronombre interrogativo significa 'quién'?"
+    },
+    {
+      "id": "pronouns::steps.31.title",
+      "path": "pronouns/steps[31]/title",
+      "ko": "대명사 완료!",
+      "en": "Pronouns Complete!",
+      "current": "代名詞編、修了！",
+      "ref_th": "เรียนจบคำสรรพนามแล้ว!",
+      "ref_es": "¡Pronombres Completados!"
+    }
+  ]
+}

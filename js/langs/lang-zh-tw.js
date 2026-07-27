@@ -463,6 +463,17 @@
     'Progress': '進度',
     'Reset all progress': '重設所有進度',
     '🔥 Daily streak + real progress tracking': '🔥 每日連續學習 + 真實進度追蹤'
+,
+    // ── added by scripts/ui-lang.cjs ───────────────────────
+    'Search lessons...': '搜尋課程...',
+    'Loading lesson…': '課程載入中…',
+    'Previous': '上一步',
+    'Next': '下一步',
+    '📚 Lesson 4 · vocabulary': '📚 第4課 · 單字',
+    'Search Results': '搜尋結果',
+    '← Back to Home': '← 返回首頁',
+    'Letter Writing': '書寫練習',
+    'Korean Typing': '韓文打字',
   };
   if (window.LangManager) window.LangManager.register('zh-tw', ZH_TW);
 

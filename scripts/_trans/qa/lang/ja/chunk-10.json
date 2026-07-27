@@ -1,0 +1,232 @@
+{
+  "lang": "ja",
+  "chunk": 10,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::steps.61.rules[2]",
+      "path": "grammar/steps[61]/rules[2]",
+      "ko": null,
+      "en": "먹다 → 먹지 마세요 (please don't eat)",
+      "current": "먹다 → 먹지 마세요（食べないでください）",
+      "ref_th": "먹다 → 먹지 마세요 (กรุณาอย่ากิน)",
+      "ref_es": "먹다 → 먹지 마세요 (por favor no comas)"
+    },
+    {
+      "id": "grammar::steps.62.meaning",
+      "path": "grammar/steps[62]/meaning",
+      "ko": null,
+      "en": "Please speak slowly.",
+      "current": "ゆっくり話してください。",
+      "ref_th": "กรุณาพูดช้าๆ",
+      "ref_es": "Por favor habla despacio."
+    },
+    {
+      "id": "grammar::steps.63.prompt",
+      "path": "grammar/steps[63]/prompt",
+      "ko": null,
+      "en": "'Please don't speak' in Korean?",
+      "current": "韓国語で「話さないでください」は？",
+      "ref_th": "กรุณาอย่าพูด เป็นภาษาเกาหลี?",
+      "ref_es": "\"Por favor no hables\" en coreano?"
+    },
+    {
+      "id": "grammar::steps.64.title",
+      "path": "grammar/steps[64]/title",
+      "ko": "방법",
+      "en": "Method: -(으)로",
+      "current": "方法：-(으)로",
+      "ref_th": "วิธีการ: -(으)로",
+      "ref_es": "Método: -(으)로"
+    },
+    {
+      "id": "grammar::steps.64.body",
+      "path": "grammar/steps[64]/body",
+      "ko": null,
+      "en": "-(으)로 marks method or means — 'by' or 'with' a tool/way of doing something.",
+      "current": "-(으)로は方法や手段を表します——道具ややり方の「〜で」にあたります",
+      "ref_th": "-(으)로 บ่งบอกวิธีหรือวิธีการ — โดย หรือ ด้วย เครื่องมือ/วิธีการทำ",
+      "ref_es": "-(으)로 marca el método o medio — \"en\" o \"con\" una herramienta/manera de hacer algo."
+    },
+    {
+      "id": "grammar::steps.64.rules[0]",
+      "path": "grammar/steps[64]/rules[0]",
+      "ko": null,
+      "en": "-으로 after a consonant, -로 after a vowel or ㄹ: 버스로 가요 (go by bus)",
+      "current": "子音の後は-으로、母音またはㄹの後は-로：버스로 가요（バスで行きます）",
+      "ref_th": "-으로 หลังพยัญชนะ -로 หลังสระหรือ ㄹ: 버스로 가요 (ไปโดยรถเมล์)",
+      "ref_es": "-으로 después de consonante, -로 después de vocal o ㄹ: 버스로 가요 (voy en autobús)"
+    },
+    {
+      "id": "grammar::steps.64.rules[1]",
+      "path": "grammar/steps[64]/rules[1]",
+      "ko": null,
+      "en": "지하철로 와요 (come by subway)",
+      "current": "지하철로 와요（地下鉄で来ます）",
+      "ref_th": "지하철로 와요 (มาโดยรถไฟฟ้า)",
+      "ref_es": "지하철로 와요 (vengo en metro)"
+    },
+    {
+      "id": "grammar::steps.64.rules[2]",
+      "path": "grammar/steps[64]/rules[2]",
+      "ko": null,
+      "en": "한국어로 말해요 (speak in Korean)",
+      "current": "한국어로 말해요（韓国語で話します）",
+      "ref_th": "한국어로 말해요 (พูดภาษาเกาหลี)",
+      "ref_es": "한국어로 말해요 (hablo en coreano)"
+    },
+    {
+      "id": "grammar::steps.65.prompt",
+      "path": "grammar/steps[65]/prompt",
+      "ko": null,
+      "en": "'I go by bus' — 버스___ 가요",
+      "current": "「バスで行きます」— 버스___ 가요",
+      "ref_th": "ฉันไปโดยรถบัส — 버스___ 가요",
+      "ref_es": "\"Voy en autobús\" — 버스___ 가요"
+    },
+    {
+      "id": "grammar::steps.66.title",
+      "path": "grammar/steps[66]/title",
+      "ko": "잘하다 · 못하다",
+      "en": "Good/Poor At",
+      "current": "得意・不得意",
+      "ref_th": "เก่ง / ไม่เก่ง",
+      "ref_es": "Bueno / Malo En"
+    },
+    {
+      "id": "grammar::steps.66.body",
+      "path": "grammar/steps[66]/body",
+      "ko": null,
+      "en": "잘하다 = good at. 못하다 = poor at. Both attach after the object particle 을/를.",
+      "current": "잘하다＝得意。못하다＝苦手。どちらも目的格助詞을/를の後に付きます",
+      "ref_th": "잘하다 = เก่ง 못하다 = ไม่เก่ง ทั้งคู่ต่อท้ายคำช่วยกรรม 을/를",
+      "ref_es": "잘하다 = ser bueno en. 못하다 = ser malo en. Ambos se unen después de la partícula de objeto 을/를."
+    },
+    {
+      "id": "grammar::steps.66.rules[0]",
+      "path": "grammar/steps[66]/rules[0]",
+      "ko": null,
+      "en": "한국어를 잘해요 (good at Korean)",
+      "current": "한국어를 잘해요（韓国語が得意です）",
+      "ref_th": "한국어를 잘해요 (เก่งภาษาเกาหลี)",
+      "ref_es": "한국어를 잘해요 (soy bueno en coreano)"
+    },
+    {
+      "id": "grammar::steps.66.rules[1]",
+      "path": "grammar/steps[66]/rules[1]",
+      "ko": null,
+      "en": "수학을 못해요 (bad at math)",
+      "current": "수학을 못해요（数学が苦手です）",
+      "ref_th": "수학을 못해요 (ไม่เก่งคณิตศาสตร์)",
+      "ref_es": "수학을 못해요 (soy malo en matemáticas)"
+    },
+    {
+      "id": "grammar::steps.66.rules[2]",
+      "path": "grammar/steps[66]/rules[2]",
+      "ko": null,
+      "en": "수영을 잘 못해요 (not very good at swimming)",
+      "current": "수영을 잘 못해요（水泳があまり得意ではありません）",
+      "ref_th": "수영을 잘 못해요 (ว่ายน้ำไม่ค่อยเก่ง)",
+      "ref_es": "수영을 잘 못해요 (no soy muy bueno nadando)"
+    },
+    {
+      "id": "grammar::steps.67.prompt",
+      "path": "grammar/steps[67]/prompt",
+      "ko": null,
+      "en": "'good at Korean' — 한국어를 ___",
+      "current": "「韓国語が上手です」— 한국어를 ___",
+      "ref_th": "เก่งภาษาเกาหลี — 한국어를 ___",
+      "ref_es": "\"soy bueno en coreano\" — 한국어를 ___"
+    },
+    {
+      "id": "grammar::steps.68.title",
+      "path": "grammar/steps[68]/title",
+      "ko": "다 · 더",
+      "en": "All, More: 다, 더",
+      "current": "全部・もっと：다、더",
+      "ref_th": "ทั้งหมด อีก: 다 더",
+      "ref_es": "Todo, Más: 다, 더"
+    },
+    {
+      "id": "grammar::steps.68.body",
+      "path": "grammar/steps[68]/body",
+      "ko": null,
+      "en": "다 = all/everything. 더 = more. Both are simple adverbs placed before the verb.",
+      "current": "다＝全部／すべて。더＝もっと。どちらも動詞の前に置くシンプルな副詞です",
+      "ref_th": "다 = ทั้งหมด/ทุกอย่าง 더 = อีก/มากกว่า ทั้งคู่เป็นคำวิเศษณ์ง่ายๆ วางไว้ก่อนกริยา",
+      "ref_es": "다 = todo/todo. 더 = más. Ambos son adverbios simples colocados antes del verbo."
+    },
+    {
+      "id": "grammar::steps.68.rules[0]",
+      "path": "grammar/steps[68]/rules[0]",
+      "ko": null,
+      "en": "다 먹었어요 — ate everything / all of it",
+      "current": "다 먹었어요 ——全部食べました",
+      "ref_th": "다 먹었어요 — กินหมดแล้ว / กินทั้งหมด",
+      "ref_es": "다 먹었어요 — comí todo / todo ello"
+    },
+    {
+      "id": "grammar::steps.68.rules[1]",
+      "path": "grammar/steps[68]/rules[1]",
+      "ko": null,
+      "en": "더 주세요 — please give (me) more",
+      "current": "더 주세요 ——もっとください",
+      "ref_th": "더 주세요 — ขออีก (กรุณาให้อีก)",
+      "ref_es": "더 주세요 — por favor dame más"
+    },
+    {
+      "id": "grammar::steps.68.rules[2]",
+      "path": "grammar/steps[68]/rules[2]",
+      "ko": null,
+      "en": "다 and 더 are used very differently depending on context",
+      "current": "다と더は文脈によって使い方が大きく異なります",
+      "ref_th": "다 และ 더 ใช้ต่างกันมากขึ้นอยู่กับบริบท",
+      "ref_es": "다 y 더 se usan de manera muy diferente según el contexto"
+    },
+    {
+      "id": "grammar::steps.69.prompt",
+      "path": "grammar/steps[69]/prompt",
+      "ko": null,
+      "en": "'I ate it all' — ___ 먹었어요",
+      "current": "「全部食べました」— ___ 먹었어요",
+      "ref_th": "ฉันกินหมดแล้ว — ___ 먹었어요",
+      "ref_es": "\"Me lo comí todo\" — ___ 먹었어요"
+    },
+    {
+      "id": "grammar::steps.70.title",
+      "path": "grammar/steps[70]/title",
+      "ko": "-도 응용",
+      "en": "All, More & -도",
+      "current": "全部・もっと & -도",
+      "ref_th": "ทั้งหมด อีก & -도 ขั้นสูง",
+      "ref_es": "Todo, Más y -도"
+    },
+    {
+      "id": "grammar::steps.70.body",
+      "path": "grammar/steps[70]/body",
+      "ko": null,
+      "en": "-도 has 4 advanced uses beyond simple 'also': emphasis, emphatic negation, and 'both...and'.",
+      "current": "-도には単純な「も」以外に4つの応用的な使い方があります：強調、強い否定、「〜も〜も」など",
+      "ref_th": "-도 มี 4 การใช้ขั้นสูงนอกจาก ด้วย ธรรมดา: การเน้น การปฏิเสธเน้น และ ทั้ง...และ",
+      "ref_es": "-도 tiene 4 usos avanzados más allá del simple \"también\": énfasis, negación enfática y \"tanto...como\"."
+    },
+    {
+      "id": "grammar::steps.70.rules[0]",
+      "path": "grammar/steps[70]/rules[0]",
+      "ko": null,
+      "en": "아이도 알아요 — even children know (emphasis: unexpected inclusion)",
+      "current": "아이도 알아요 ——子供でも知っています（強調：意外な包含）",
+      "ref_th": "아이도 알아요 — แม้แต่เด็กก็รู้ (เน้น: การรวมที่ไม่คาด)",
+      "ref_es": "아이도 알아요 — incluso los niños saben (énfasis: inclusión inesperada)"
+    },
+    {
+      "id": "grammar::steps.70.rules[1]",
+      "path": "grammar/steps[70]/rules[1]",
+      "ko": null,
+      "en": "하나도 없어요 — not even one (emphatic negation: 하나도 + negative)",
+      "current": "하나도 없어요 ——一つもありません（強い否定：하나도＋否定形）",
+      "ref_th": "하나도 없어요 — ไม่มีแม้แต่อันเดียว (ปฏิเสธเน้น: 하나도 + ปฏิเสธ)",
+      "ref_es": "하나도 없어요 — ni uno solo (negación enfática: 하나도 + negación)"
+    }
+  ]
+}

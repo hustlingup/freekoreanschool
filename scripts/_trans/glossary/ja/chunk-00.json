@@ -1,0 +1,547 @@
+{
+  "lang": "ja",
+  "chunk": 0,
+  "count": 90,
+  "units": [
+    {
+      "id": "emotions::steps.0.body",
+      "term": "dictionary form",
+      "en": "Korean emotion words are mostly adjectives in their base form. Unlike English ('I am happy'), Korean adjectives act like verbs and conjugate directly: 행복해요 (I am happy) without needing a separate 'am'. The dictionary form ends in -다: 행복하다, 슬프다, 무섭다. Drop -다 and add -아요/-어요 for the polite present tense. Emotion vocabulary is especially useful for talking about K-dramas, daily life, and personal feelings.",
+      "value": "韓国語の感情語は、基本形がほとんど形容詞です。英語では「I am happy」と言いますが、韓国語の形容詞は動詞のように直接活用します：행복해요（幸せです）のように、別の「am/is/are」に相当する語は不要です。辞書形は-다で終わります：행복하다、슬프다、무섭다。-다を取って-아요/-어요を付ければ丁寧な現在形になります。感情語彙は、Kドラマ・日常生活・気持ちの表現に特に役立ちます。"
+    },
+    {
+      "id": "emotions::steps.1.meaning",
+      "term": "dictionary form",
+      "en": "to be happy (dictionary form)",
+      "value": "幸せだ（辞書形）"
+    },
+    {
+      "id": "emotions::steps.2.meaning",
+      "term": "dictionary form",
+      "en": "to be sad (dictionary form)",
+      "value": "悲しい（辞書形）"
+    },
+    {
+      "id": "emotions::steps.6.body",
+      "term": "dictionary form",
+      "en": "To use emotion adjectives in polite conversation, remove -다 from the dictionary form and add the polite present ending. For stems ending in 하: 하다 → 해요 (행복하다 → 행복해요). For stems ending in a bright vowel (ㅏ, ㅗ): add -아요. For all others: add -어요, usually with a vowel change — 슬프다 drops its ㅡ: 슬프 + 어요 → 슬퍼요. Stems ending in ㅂ are irregular: the ㅂ turns into 우, so 무섭다 → 무서우 + 어요 → 무서워요 (likewise 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). The same pattern applies to most Korean descriptive verbs (adjectives).",
+      "value": "感情形容詞を丁寧な会話で使うには、辞書形から-다を取り除き、丁寧な現在形語尾を付けます。語幹が하で終わる場合：하다 → 해요（행복하다 → 행복해요）。語幹の最後の母音が明るい母音（ㅏ・ㅗ）の場合：-아요を付けます。その他の場合：-어요を付けますが、多くは母音が変化します——슬프다は語幹のㅡが脱落し、슬프 + 어요 → 슬퍼요。語幹がㅂで終わる語はㅂ不規則で、ㅂが우に変わります。したがって무섭다 → 무서우 + 어요 → 무서워요（同様に외롭다 → 외로워요、부끄럽다 → 부끄러워요）。同じパターンがほとんどの韓国語の記述動詞（形容詞）に適用されます。"
+    },
+    {
+      "id": "grammar::steps.11.title",
+      "term": "dictionary form",
+      "en": "Verbs — Dictionary Form",
+      "value": "動詞 — 辞書形"
+    },
+    {
+      "id": "grammar::steps.11.body",
+      "term": "verb stem|dictionary form",
+      "en": "All Korean verbs in dictionary form end in 다 (da). Remove 다 to get the verb stem, then add an ending.",
+      "value": "韓国語の動詞は辞書形がすべて다（da）で終わります。다を取ると語幹になり、そこに語尾を付け加えます。"
+    },
+    {
+      "id": "grammar::steps.19.body",
+      "term": "verb stem",
+      "en": "Add -(으)ㄹ 거예요 to the verb stem to talk about future plans or predictions.",
+      "value": "動詞の語幹に-(으)ㄹ 거예요をつけて、未来の予定や予測を表します。"
+    },
+    {
+      "id": "grammar::steps.21.body",
+      "term": "verb stem",
+      "en": "Short negation: 안 + verb. Long negation: verb stem + 지 않아요. Cannot: 못 + verb.",
+      "value": "短い否定：안 + 動詞。長い否定：動詞の語幹 + 지 않아요。不可能：못 + 動詞。"
+    },
+    {
+      "id": "grammar::steps.32.rules[3]",
+      "term": "speech level",
+      "en": "-께 — to (honorific, for elders): 선생님께 드렸어요",
+      "value": "-께——～に（尊敬語、目上の人に）：선생님께 드렸어요"
+    },
+    {
+      "id": "grammar::steps.36.rules[2]",
+      "term": "speech level",
+      "en": "분 — people (honorific): 손님 두 분 (2 guests)",
+      "value": "분 —— 人（敬語）：손님 두 분（お客様2名）"
+    },
+    {
+      "id": "grammar::steps.38.prompt",
+      "term": "counter",
+      "en": "Counter for people (neutral)?",
+      "value": "人を数える助数詞（中立的なもの）は？"
+    },
+    {
+      "id": "grammar::steps.39.body",
+      "term": "verb stem",
+      "en": "Add -고 있어요 to the verb stem to say someone IS CURRENTLY doing something (the Korean '-ing' form).",
+      "value": "動詞の語幹に-고 있어요を付けると、誰かが今まさに何かをしていることを表せます（韓国語の「～ている」形）。"
+    },
+    {
+      "id": "grammar::steps.47.body",
+      "term": "verb stem",
+      "en": "Adding -는 것 to a verb stem creates a noun phrase — 'the act of doing ~'. It makes verbs act like nouns.",
+      "value": "動詞の語幹に-는 것を付けると名詞句が作られます——「～すること」。これにより動詞が名詞のように働きます。"
+    },
+    {
+      "id": "grammar::steps.53.body",
+      "term": "particle",
+      "en": "좋다 uses subject particle (이/가): 한국어가 좋아요. 좋아하다 uses object particle (을/를): 한국어를 좋아해요.",
+      "value": "좋다は主語を表す助詞（이/가）を使います：한국어가 좋아요。좋아하다は目的語を表す助詞（을/를）を使います：한국어를 좋아해요。"
+    },
+    {
+      "id": "grammar::steps.53.tip.text",
+      "term": "particle",
+      "en": "좋아요 → subject particle (이/가) precedes it. 좋아해요 → object particle (을/를) precedes it. When in doubt, 좋아해요 sounds more natural for expressing preferences.",
+      "value": "좋아요の前には主格助詞（이/가）が来ます。좋아해요の前には目的格助詞（을/를）が来ます。迷ったときは、좋아해요の方が好みを表すのに自然に聞こえます"
+    },
+    {
+      "id": "grammar::steps.59.body",
+      "term": "verb stem",
+      "en": "Add -(으)세요 to a verb stem to make a polite request or command.",
+      "value": "動詞の語幹に-(으)세요を付けると、丁寧な依頼や命令になります"
+    },
+    {
+      "id": "grammar::steps.59.rules[2]",
+      "term": "speech level",
+      "en": "먹다 → 드세요 (please eat — honorific)",
+      "value": "먹다 → 드세요（召し上がってください——尊敬語）"
+    },
+    {
+      "id": "grammar::steps.61.body",
+      "term": "verb stem",
+      "en": "Add -지 마세요 to a verb stem to politely tell someone NOT to do something.",
+      "value": "動詞の語幹に-지 마세요を付けると、丁寧に「〜しないでください」と伝えられます"
+    },
+    {
+      "id": "grammar::steps.66.body",
+      "term": "particle",
+      "en": "잘하다 = good at. 못하다 = poor at. Both attach after the object particle 을/를.",
+      "value": "잘하다＝得意。못하다＝苦手。どちらも目的格助詞을/를の後に付きます"
+    },
+    {
+      "id": "hangul::steps.9.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'ch' — a puff of air comes out. Like 'ch' in 'cheese'.",
+      "value": "気息を伴うch音で、息が強く出ます"
+    },
+    {
+      "id": "hangul::steps.10.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'k' — strong puff of air. Hold a tissue and it flutters.",
+      "value": "気息を伴うk音で、息が強く出ます"
+    },
+    {
+      "id": "hangul::steps.11.hint",
+      "term": "aspirated",
+      "en": "Aspirated 't' — like 't' in 'ten' (at word start). Strong burst.",
+      "value": "気息を伴うt音で、語頭ではtenのtのように強い破裂音です"
+    },
+    {
+      "id": "hangul::steps.12.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'p' — like 'p' in 'pot'. Lips pop apart with air.",
+      "value": "気息を伴うp音で、potのpのように唇が弾けます"
+    },
+    {
+      "id": "hangul::steps.47.hint",
+      "term": "aspirated",
+      "en": "Aspirated — a strong burst of air follows the consonant.",
+      "value": "気息音——子音の後に強い息の破裂が続きます"
+    },
+    {
+      "id": "hangul::steps.48.hint",
+      "term": "aspirated",
+      "en": "Aspirated — tongue snaps off the palate with a puff of air.",
+      "value": "気息音——舌が口蓋から離れると息が出ます"
+    },
+    {
+      "id": "hangul::steps.49.hint",
+      "term": "aspirated",
+      "en": "Aspirated — lips burst open with a pop of air. Like 'pot'.",
+      "value": "気息音——唇がパッと開いて息が出ます。potのpのように"
+    },
+    {
+      "id": "hangul::steps.50.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'ch' — like 'cheese' at the start. Air comes out.",
+      "value": "気息のch——語頭の「チーズ」のように。息が出ます"
+    },
+    {
+      "id": "hangul::steps.51.hint",
+      "term": "aspirated",
+      "en": "A breathy aspirated consonant. The most air of any Korean consonant.",
+      "value": "息を吐くような気息音。韓国語の子音の中で最も息が出ます"
+    },
+    {
+      "id": "hangul::steps.53.prompt",
+      "term": "tense consonant",
+      "en": "Which is a TENSE consonant (쌍자음)?",
+      "value": "濃音（쌍자음）はどれでしょう。"
+    },
+    {
+      "id": "hangul::steps.55.prompt",
+      "term": "aspirated",
+      "en": "Aspirated consonants are produced with…",
+      "value": "激音は何を伴って発音されますか。"
+    },
+    {
+      "id": "hangul::steps.67.hint",
+      "term": "particle",
+      "en": "ㅡ + ㅣ. A unique glide. 의사 = doctor. Used as possessive particle 의.",
+      "value": "ㅡ+ㅣ。独特の二重母音。의사＝医者。所有格助詞の의にも使われます"
+    },
+    {
+      "id": "letter-writing::steps.1.body",
+      "term": "batchim|syllable block",
+      "en": "Each letter has a fixed number of strokes, and each stroke has a fixed direction. ㅈ is written in 2 strokes and ㅊ in 3 — that is the handwriting convention used all the way through this lesson. Inside a syllable block the order is fixed too: first the opening consonant, then the vowel, then the final consonant underneath.",
+      "value": "文字ごとに画数が決まっていて、それぞれの画の向きも決まっています。ㅈは2画、ㅊは3画で書きます——これがこのレッスン全体で使う手書きの慣習です。音節ブロックの中でも順番は決まっていて、まず初声の子音、次に母音、最後に下の終声の子音を書きます。"
+    },
+    {
+      "id": "letter-writing::steps.1.rules[2]",
+      "term": "batchim",
+      "en": "Then the final consonant (종성) along the bottom, if the syllable has one.",
+      "value": "最後に終声の子音（종성）——音節にあれば、下に。"
+    },
+    {
+      "id": "letter-writing::steps.58.hint",
+      "term": "batchim",
+      "en": "Straight down the block: ㄱ, then ㅗ, then ㅁ as the final consonant.",
+      "value": "ブロックを上から下へ順に：ㄱ、次にㅗ、そして終声の子音としてㅁ。"
+    },
+    {
+      "id": "letter-writing::steps.64.hint",
+      "term": "batchim",
+      "en": "The final consonant is a pair: write ㄷ, then ㅏ, then ㄹ and ㄱ side by side at the bottom.",
+      "value": "終声の子音は二つ組です：ㄷを書き、次にㅏ、そして底にㄹとㄱを並べて書きます。"
+    },
+    {
+      "id": "nouns::steps.10.body",
+      "term": "particle",
+      "en": "Korean place nouns follow the same no-article rule as all other nouns. 학교 means 'school', 'a school', or 'the school' — context tells you which. When giving directions or stating location, Korean adds the particle 에 (at/in) after the place noun: 학교에 가요 (I go to school). Place nouns are among the most practical words to learn early.",
+      "value": "韓国語の場所の名詞は、他の名詞と同じく冠詞なしのルールに従います。학교は「学校」「ある学校」「その学校」のすべてを意味し、どれかは文脈で分かります。場所や位置を伝えるとき、韓国語は場所の名詞に助詞 에（〜で/〜に）を付けます：학교에 가요（学校に行きます）。場所の名詞は早い段階で覚えると実用的です。"
+    },
+    {
+      "id": "nouns::steps.10.tip.label",
+      "term": "particle",
+      "en": "Location particle 에",
+      "value": "場所の助詞 에"
+    },
+    {
+      "id": "nouns::steps.19.body",
+      "term": "particle",
+      "en": "Everyday objects are among the most immediately useful Korean words. Korean has both native Korean words and Sino-Korean (Chinese-origin) words for objects, and in many cases Konglish (loan words from English) is used: 커피 (coffee), 핸드폰 (hand phone / cell phone). When the object is the direct receiver of a verb, add 을/를 after the noun: 책을 읽어요 (I read a book). This is the object-marking particle.",
+      "value": "日常の物は、すぐに役立つ韓国語語彙の筆頭です。韓国語にはネイティブ韓国語と漢語系（中国語起源）の語が両方あり、多くの場合コングリッシュ（英語からの借用語）が使われます：커피（コーヒー）、핸드폰（携帯電話）。その物が動詞の直接目的語になるときは、名詞の後に을/를を付けます：책을 읽어요（本を読みます）。これが目的格助詞です。"
+    },
+    {
+      "id": "nouns::steps.19.tip.label",
+      "term": "particle",
+      "en": "Object particle 을/를",
+      "value": "目的格助詞 을/를"
+    },
+    {
+      "id": "nouns::steps.19.tip.text",
+      "term": "particle",
+      "en": "Use 을 after a noun ending in a consonant: 책을. Use 를 after a noun ending in a vowel: 가방을. In casual speech, this particle is often dropped entirely.",
+      "value": "子音で終わる名詞には을を使います：책을。母音で終わる名詞には를を使います：가방을。カジュアルな会話ではこの助詞はよく省略されます。"
+    },
+    {
+      "id": "nouns::steps.24.body",
+      "term": "counter",
+      "en": "Korean uses counting words called counters (수사) that attach to numbers when counting specific things. The counter 개 is used for general objects: 한 개 (one thing), 세 개 (three things). 명 is used for counting people: 두 명 (two people). 잔 is used for cups/glasses: 한 잔 (one cup). The pattern is: number + counter, placed right before or after the noun. Korean numbers for counters use the native Korean set: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5).",
+      "value": "韓国語では助数詞（수사）と呼ばれる数え言葉を使い、特定の物を数えるときに数詞と組み合わせます。개は一般的な物に使います：한 개（1つ）、세 개（3つ）。명は人を数えます：두 명（2人）。잔はカップ・グラスに使います：한 잔（1杯）。パターンは「数詞＋助数詞」で名詞の直前または直後に置きます。助数詞ではネイティブ韓国語の数詞を使います：하나(1)、둘(2)、셋(3)、넷(4)、다섯(5)。"
+    },
+    {
+      "id": "nouns::steps.25.meaning",
+      "term": "counter",
+      "en": "three people (명 = person counter)",
+      "value": "3人（명：人数カウンター）"
+    },
+    {
+      "id": "pronouns::steps.11.meaning",
+      "term": "speech level",
+      "en": "we / our (humble, polite form of 우리)",
+      "value": "私ども（謙譲語）"
+    },
+    {
+      "id": "pronunciation::stages.0.name",
+      "term": "batchim",
+      "en": "Batchim",
+      "value": "パッチム"
+    },
+    {
+      "id": "pronunciation::stages.1.name",
+      "term": "liaison",
+      "en": "Liaison",
+      "value": "連音化"
+    },
+    {
+      "id": "pronunciation::steps.0.title",
+      "term": "batchim",
+      "en": "What is Batchim?",
+      "value": "パッチムとは？"
+    },
+    {
+      "id": "pronunciation::steps.0.body",
+      "term": "batchim|syllable block",
+      "en": "A batchim (받침, literally 'support') is a consonant placed at the bottom of a Korean syllable block. For example, in the syllable 강, the ㅇ at the bottom is the batchim. Not all syllables have a batchim — many end with just the vowel. Batchim is why Korean words like 산, 달, and 밥 end with a distinct consonant sound rather than an open vowel.",
+      "value": "받침（バッチム、文字通り「支え」）とは、韓国語の音節ブロックの下部に置かれる子音のことです。例えば、音節「강」では、下部のㅇが받침です。すべての音節に받침があるわけではなく、母音だけで終わるものも多くあります。받침があるために、산、달、밥のような韓국語の単語は開いた母音ではなく、独特の子音音で終わります。"
+    },
+    {
+      "id": "pronunciation::steps.0.tip.label",
+      "term": "batchim",
+      "en": "Which syllables have batchim?",
+      "value": "받침がある音節は？"
+    },
+    {
+      "id": "pronunciation::steps.0.tip.text",
+      "term": "batchim|syllable block",
+      "en": "Look at any Korean syllable block. If there is a character beneath the vowel, that is the batchim. 가 has no batchim. 간 has batchim ㄴ. 닭 has double batchim ㄺ (read as one sound).",
+      "value": "韓国語の音節ブロックを見てください。母音の下に文字があれば、それが받침です。가には받침がありません。간の받침はㄴです。닭には二重받침ㄺ（1つの音として読む）があります。"
+    },
+    {
+      "id": "pronunciation::steps.1.title",
+      "term": "batchim",
+      "en": "The 7 Batchim Sound Groups",
+      "value": "パッチムの7つの音グループ"
+    },
+    {
+      "id": "pronunciation::steps.1.body",
+      "term": "batchim",
+      "en": "Although many different consonants can appear as batchim in spelling, they all reduce to only 7 possible sounds when pronounced. This is known as the 7 rules of batchim (받침 7종성). Learning these 7 groups is essential — it explains why 닭 (chicken) and 국 (soup) both end with the same k sound.",
+      "value": "綴りでは多くの異なる子音が받침として現れますが、発音するとすべて7つの音しかありません。これを받침7種声（받침7종성）と言います。この7つのグループを覚えることが不可欠です——닭（鶏）と국（スープ）がどちらもkの音で終わる理由がわかります。"
+    },
+    {
+      "id": "pronunciation::steps.1.tip.text",
+      "term": "batchim",
+      "en": "The k, t, and p batchim sounds are unreleased: your mouth forms the position but does not release a puff of air. Think of holding the final p in 'cup' — cup_ — without letting air out. Korean ㄱ/ㄷ/ㅂ batchim work the same way.",
+      "value": "k、t、pの받침音は開放なし：口はその形になりますが、息の破裂は出ません。英語のcupの最後のpを保ったまま空気を出さないように——cup_——と考えてください。韓国語のㄱ/ㄷ/ㅂ받침も同じように機能します。"
+    },
+    {
+      "id": "pronunciation::steps.2.meaning",
+      "term": "batchim",
+      "en": "soup — ㄱ-group batchim, pronounced k (unreleased)",
+      "value": "スープ——ㄱグループの받침、k音（開放なし）"
+    },
+    {
+      "id": "pronunciation::steps.3.meaning",
+      "term": "batchim",
+      "en": "mountain — ㄴ-group batchim, pronounced n",
+      "value": "山——ㄴグループの받침、n音"
+    },
+    {
+      "id": "pronunciation::steps.4.meaning",
+      "term": "batchim",
+      "en": "clothes — ㄷ-group batchim (ㅅ→t), pronounced t (unreleased)",
+      "value": "服——ㄷグループの받침（ㅅ→t）、t音（開放なし）"
+    },
+    {
+      "id": "pronunciation::steps.5.meaning",
+      "term": "batchim",
+      "en": "moon — ㄹ-group batchim, pronounced l",
+      "value": "月——ㄹグループの받침、l音"
+    },
+    {
+      "id": "pronunciation::steps.6.meaning",
+      "term": "batchim",
+      "en": "night / chestnut — ㅁ-group batchim, pronounced m",
+      "value": "夜・栗——ㅁグループの받침、m音"
+    },
+    {
+      "id": "pronunciation::steps.7.meaning",
+      "term": "batchim",
+      "en": "mouth — ㅂ-group batchim, pronounced p (unreleased)",
+      "value": "口——ㅂグループの받침、p音（開放なし）"
+    },
+    {
+      "id": "pronunciation::steps.8.meaning",
+      "term": "batchim",
+      "en": "river — ㅇ-group batchim, pronounced ng",
+      "value": "川——ㅇグループの받침、ng音"
+    },
+    {
+      "id": "pronunciation::steps.9.meaning",
+      "term": "batchim",
+      "en": "chicken — double batchim ㄺ (ㄹ+ㄱ) → ㄱ group → k sound",
+      "value": "鶏——二重받침ㄺ（ㄹ＋ㄱ）→ㄱグループ→k音"
+    },
+    {
+      "id": "pronunciation::steps.10.meaning",
+      "term": "batchim",
+      "en": "flower — batchim ㅊ belongs to the ㄷ-group → t sound",
+      "value": "花——받침ㅊはㄷグループ→t音"
+    },
+    {
+      "id": "pronunciation::steps.11.prompt",
+      "term": "batchim",
+      "en": "ㅋ, ㄲ, and ㄳ are all batchim in the same group. Which sound group are they in?",
+      "value": "ㅋ、ㄲ、ㄳ はいずれも同じグループのパッチムです。どの音のグループでしょう。"
+    },
+    {
+      "id": "pronunciation::steps.12.prompt",
+      "term": "batchim",
+      "en": "방 (room) ends with batchim ㅇ. What sound does this make?",
+      "value": "방（部屋）はパッチム ㅇ で終わります。これはどの音になりますか。"
+    },
+    {
+      "id": "pronunciation::steps.13.title",
+      "term": "liaison",
+      "en": "Liaison — Linking Sound",
+      "value": "連音化——つながる音"
+    },
+    {
+      "id": "pronunciation::steps.13.body",
+      "term": "batchim|liaison",
+      "en": "When a syllable ending in a batchim is immediately followed by a syllable that begins with the silent ㅇ, the batchim consonant moves forward and becomes the initial consonant of the next syllable. The spelling stays the same — only the pronunciation shifts. This is called liaison (연음화) and it is one of the most frequent pronunciation phenomena in Korean.",
+      "value": "받침がある音節の直後に、無音のㅇで始まる音節が続く場合、받침の子音は前に移動して次の音節の初声になります。綴りは変わりません——発音だけが変わります。これを연음화（連音化）と呼び、韓国語で最も頻繁に起こる発音現象の一つです。"
+    },
+    {
+      "id": "pronunciation::steps.13.tip.text",
+      "term": "batchim",
+      "en": "Look for: batchim consonant + next syllable beginning with ㅇ (silent placeholder). Result: the batchim sounds as if it opens the next syllable. 먹어요 → 머거요. 한국어 → 한구거. The written form never changes — only your pronunciation does.",
+      "value": "探すもの：받침子音＋次の音節がㅇ（無音プレースホルダー）で始まる。結果：받침があたかも次の音節を開くように聞こえます。먹어요→머거요。한국어→한구거。書き方は変わりません——発音だけが変わります。"
+    },
+    {
+      "id": "pronunciation::steps.14.meaning",
+      "term": "batchim",
+      "en": "I eat / am eating — ㄱ batchim of 먹 links into 어, sounds like 머거요",
+      "value": "食べます／食べています——먹のㄱ받침が어につながり、머거요のように聞こえます"
+    },
+    {
+      "id": "pronunciation::steps.15.meaning",
+      "term": "batchim",
+      "en": "rice (object form) — ㅂ batchim of 밥 links into 을, sounds like 바블",
+      "value": "ご飯（目的格）——밥のㅂ받침が을につながり、바블のように聞こえます"
+    },
+    {
+      "id": "pronunciation::steps.16.meaning",
+      "term": "batchim",
+      "en": "It is good / I like it — ㅎ batchim weakens and links (see Stage 4 for ㅎ rules)",
+      "value": "良いです／好きです——ㅎ받침が弱化してつながります（ステージ4のㅎルールを参照）"
+    },
+    {
+      "id": "pronunciation::steps.17.meaning",
+      "term": "batchim",
+      "en": "Korean language — ㄱ batchim of 국 links into 어, sounds like 한구거",
+      "value": "韓国語——국のㄱ받침が어につながり、한구거のように聞こえます"
+    },
+    {
+      "id": "pronunciation::steps.18.title",
+      "term": "liaison",
+      "en": "Why Does Liaison Happen?",
+      "value": "なぜ連音化が起こるのか？"
+    },
+    {
+      "id": "pronunciation::steps.18.body",
+      "term": "batchim",
+      "en": "Korean syllable structure strongly prefers the pattern consonant + vowel. When a vowel-initial syllable follows a batchim, it is phonetically easier for the consonant to attach to that vowel's open slot. The result is a more natural, connected flow of speech. This is not slang or lazy pronunciation — it is standard Korean and will be heard in news broadcasts, formal speeches, and everyday conversation alike.",
+      "value": "韓国語の音節構造は、子音＋母音のパターンを強く好みます。받침の後に母音で始まる音節が続く場合、子音がその母音の開いたスロットに付くほうが音声的に自然です。その結果、より自然で連続したスピーチの流れが生まれます。これはスラングや怠惰な発音ではありません——ニュース放送、フォーマルなスピーチ、日常会話のすべてで聞かれる標準的な韓国語です。"
+    },
+    {
+      "id": "pronunciation::steps.18.tip.label",
+      "term": "liaison",
+      "en": "Liaison vs spelling",
+      "value": "連音化と綴り"
+    },
+    {
+      "id": "pronunciation::steps.19.prompt",
+      "term": "batchim|liaison",
+      "en": "Liaison (연음화) occurs when a batchim is followed by a syllable that begins with…",
+      "value": "연음화（連音化）は、パッチムの後にどのような音節が続くときに起こりますか。"
+    },
+    {
+      "id": "pronunciation::steps.19.choices[3]",
+      "term": "aspirated",
+      "en": "An aspirated consonant",
+      "value": "激音"
+    },
+    {
+      "id": "pronunciation::steps.21.body",
+      "term": "batchim",
+      "en": "When a stop consonant batchim from the ㄱ, ㄷ, or ㅂ groups is followed by the nasal consonants ㄴ or ㅁ, the stop assimilates and changes to its corresponding nasal sound. This is purely articulatory: nasal consonants require the velum to lower, which pulls adjacent stops into nasal territory. The spelling stays the same; only the pronunciation changes.",
+      "value": "ㄱ、ㄷ、ㅂグループの止音받침の後に、鼻音ㄴまたはㅁが続く場合、止音は対応する鼻音に同化して変化します。これは純粋に調音上のことです：鼻音子音は軟口蓋を下げる必要があり、それが隣接する止音を鼻音の領域に引き込みます。綴りは変わりません；発音だけが変わります。"
+    },
+    {
+      "id": "pronunciation::steps.28.prompt",
+      "term": "batchim",
+      "en": "ㄱ batchim followed by ㄴ or ㅁ changes to which sound?",
+      "value": "ㄱ のパッチムの後に ㄴ や ㅁ が続くと、どの音に変わりますか。"
+    },
+    {
+      "id": "pronunciation::steps.31.body",
+      "term": "batchim",
+      "en": "After certain batchim consonants — specifically the unreleased stop batchim sounds from the ㄱ, ㄷ, and ㅂ groups — the following consonant becomes tensed (doubled). The written form does not change; only the pronunciation shifts. Tensification is why 학교 (school) sounds like 학꾜 instead of 학교.",
+      "value": "特定の받침子音——具体的にはㄱ、ㄷ、ㅂグループの開放なし止音받침——の後では、次の子音が緊張音（二重子音）になります。書き方は変わりません；発音だけが変わります。緊張化（경음화）のために、학교（学校）は학꾜のように聞こえます。"
+    },
+    {
+      "id": "pronunciation::steps.32.meaning",
+      "term": "batchim",
+      "en": "school — ㄱ batchim triggers tensification: ㄱ→ㄲ, sounds like 학꾜",
+      "value": "学校——ㄱ받침が緊張化を引き起こします：ㄱ→ㄲ、학꾜のように聞こえます"
+    },
+    {
+      "id": "pronunciation::steps.33.meaning",
+      "term": "batchim",
+      "en": "restaurant — ㄱ batchim triggers tensification: ㄷ→ㄸ, sounds like 식땅",
+      "value": "レストラン——ㄱ받침が緊張化を引き起こします：ㄷ→ㄸ、식땅のように聞こえます"
+    },
+    {
+      "id": "pronunciation::steps.34.meaning",
+      "term": "batchim",
+      "en": "to close — ㄷ batchim triggers tensification: ㄷ→ㄸ, sounds like 닫따",
+      "value": "閉める——ㄷ받침が緊張化を引き起こします：ㄷ→ㄸ、닫따のように聞こえます"
+    },
+    {
+      "id": "pronunciation::steps.35.meaning",
+      "term": "batchim",
+      "en": "entrance — ㅂ batchim triggers tensification: ㄱ→ㄲ, sounds like 입꾸",
+      "value": "入口——ㅂ받침が緊張化を引き起こします：ㄱ→ㄲ、입꾸のように聞こえます"
+    },
+    {
+      "id": "pronunciation::steps.36.prompt",
+      "term": "batchim",
+      "en": "Tensification (경음화) occurs most predictably after which type of batchim?",
+      "value": "경음화（濃音化）は、どの種類のパッチムの後で最も予測しやすく起こりますか。"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[0]",
+      "term": "batchim",
+      "en": "Nasal batchim (ㄴ, ㅁ, ㅇ)",
+      "value": "鼻音のパッチム（ㄴ・ㅁ・ㅇ）"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[1]",
+      "term": "batchim",
+      "en": "Unreleased stop batchim (ㄱ, ㄷ, ㅂ groups)",
+      "value": "内破する閉鎖音のパッチム（ㄱ・ㄷ・ㅂ グループ）"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[2]",
+      "term": "batchim",
+      "en": "The ㄹ batchim only",
+      "value": "ㄹ のパッチムのみ"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[3]",
+      "term": "batchim",
+      "en": "Any batchim consonant",
+      "value": "どのパッチム子音でも"
+    },
+    {
+      "id": "pronunciation::steps.37.choices[1]",
+      "term": "aspirated",
+      "en": "hak-kyo (aspirated)",
+      "value": "hak-kyo（激音）"
+    },
+    {
+      "id": "pronunciation::steps.38.body",
+      "term": "batchim",
+      "en": "The consonant ㅎ is one of Korean's most unstable sounds. Between vowels — whether ㅎ is a batchim or an initial consonant — it weakens significantly and often disappears almost entirely. This is why 좋아요 (it is good) sounds like 조아요 rather than 조하요. The ㅎ is still written, but the sound nearly vanishes.",
+      "value": "子音ㅎは韓国語で最も不安定な音の一つです。母音と母音の間では——ㅎが받침であっても初声であっても——大きく弱化してほとんど消えてしまいます。좋아요（良いです）が조아요のように聞こえる理由はこれです（조하요ではなく）。ㅎは書かれていますが、音はほとんど消えます。"
+    },
+    {
+      "id": "pronunciation::steps.39.meaning",
+      "term": "batchim",
+      "en": "It is good / I like it — ㅎ batchim weakens: sounds like 조아요 (not 조하요)",
+      "value": "良いです／好きです——ㅎ받침が弱化：조아요のように聞こえます（조하요ではなく）"
+    }
+  ]
+}

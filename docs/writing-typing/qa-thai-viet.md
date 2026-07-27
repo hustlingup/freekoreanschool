@@ -30,7 +30,7 @@ write path, so extract → review → apply is a pure function of the verdicts.
 |---|---|---|
 | Orchestrator | Opus (this session + the workflow script) | control flow, merge, run `--apply`, audits, commit. Never translates. |
 | Back-translator | Fable | blind `th`/`vi` → EN, no source shown — objective drift signal |
-| Native reviewer ×N | Sonnet | per-chunk adversarial proofread: meaning, naturalness, script, glossary |
+| Native reviewer ×N | Sonnet | per-chunk adversarial proofread: meaning, **fluency (grammar + native word order, not English calque)**, script, glossary |
 | 2nd native (adjudicator) | Sonnet | independent re-judge of each flagged fix, using the back-translation |
 | Korean expert | Sonnet | Phase 1 glossary — one agreed rendering per Korean term |
 
@@ -42,7 +42,11 @@ back-translation matches the English meaning.
 1. **Glossary** — Korean expert fills `glossary.seed.json` th/vi. Locks
    terminology so 받침/초성/두벌식/etc. render one way across all 258 strings.
 2. **Review** (fan-out, Sonnet) — one native reviewer per chunk, adversarial
-   ("assume errors exist"). Flags `awkward`/`wrong` units with a proposed fix.
+   ("assume errors exist"), judging each unit as a whole sentence not word by
+   word. Flags `awkward`/`wrong` units — including strings that are lexically
+   accurate but calqued from English word order — with a proposed fix. Each
+   language's structural traps (th: noun-before-adjective, classifiers, no
+   spaces; vi: noun-before-adjective, tone-critical diacritics) are spelled out.
 3. **Verify** (pipeline) — for each flag: Fable back-translates the fix blind →
    a second native adjudicates fix-vs-source using that back-translation →
    accept/repair/reject. Output: accepted corrections per language.

@@ -1,0 +1,547 @@
+{
+  "lang": "es",
+  "chunk": 0,
+  "count": 90,
+  "units": [
+    {
+      "id": "emotions::steps.0.body",
+      "term": "dictionary form",
+      "en": "Korean emotion words are mostly adjectives in their base form. Unlike English ('I am happy'), Korean adjectives act like verbs and conjugate directly: 행복해요 (I am happy) without needing a separate 'am'. The dictionary form ends in -다: 행복하다, 슬프다, 무섭다. Drop -다 and add -아요/-어요 for the polite present tense. Emotion vocabulary is especially useful for talking about K-dramas, daily life, and personal feelings.",
+      "value": "Las palabras de emoción coreanas son en su mayoría adjetivos en su forma base. A diferencia del español (\"Soy feliz\"), los adjetivos coreanos actúan como verbos y se conjugan directamente: 행복해요 (Soy feliz / Está bien) sin necesitar un \"soy\" separado. La forma de diccionario termina en -다: 행복하다, 슬프다, 무섭다. Quita -다 y añade -아요/-어요 para el presente educado. El vocabulario de emociones es especialmente útil para hablar sobre K-dramas, la vida cotidiana y los sentimientos personales."
+    },
+    {
+      "id": "emotions::steps.1.meaning",
+      "term": "dictionary form",
+      "en": "to be happy (dictionary form)",
+      "value": "ser feliz (forma de diccionario)"
+    },
+    {
+      "id": "emotions::steps.2.meaning",
+      "term": "dictionary form",
+      "en": "to be sad (dictionary form)",
+      "value": "estar triste (forma de diccionario)"
+    },
+    {
+      "id": "emotions::steps.6.body",
+      "term": "dictionary form",
+      "en": "To use emotion adjectives in polite conversation, remove -다 from the dictionary form and add the polite present ending. For stems ending in 하: 하다 → 해요 (행복하다 → 행복해요). For stems ending in a bright vowel (ㅏ, ㅗ): add -아요. For all others: add -어요, usually with a vowel change — 슬프다 drops its ㅡ: 슬프 + 어요 → 슬퍼요. Stems ending in ㅂ are irregular: the ㅂ turns into 우, so 무섭다 → 무서우 + 어요 → 무서워요 (likewise 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). The same pattern applies to most Korean descriptive verbs (adjectives).",
+      "value": "Para usar adjetivos de emoción en una conversación educada, elimina -다 de la forma de diccionario y añade el final educado del presente. Para raíces terminadas en 하: 하다 → 해요 (행복하다 → 행복해요). Para raíces con vocal brillante (ㅏ, ㅗ): añade -아요. Para los demás: añade -어요, normalmente con un cambio vocálico — 슬프다 pierde su ㅡ: 슬프 + 어요 → 슬퍼요. Las raíces terminadas en ㅂ son irregulares: la ㅂ se convierte en 우, así que 무섭다 → 무서우 + 어요 → 무서워요 (igualmente 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). El mismo patrón se aplica a la mayoría de los verbos descriptivos coreanos (adjetivos)."
+    },
+    {
+      "id": "grammar::steps.11.title",
+      "term": "dictionary form",
+      "en": "Verbs — Dictionary Form",
+      "value": "Verbos — Forma de Diccionario"
+    },
+    {
+      "id": "grammar::steps.11.body",
+      "term": "verb stem|dictionary form",
+      "en": "All Korean verbs in dictionary form end in 다 (da). Remove 다 to get the verb stem, then add an ending.",
+      "value": "Todos los verbos coreanos en forma de diccionario terminan en 다 (da). Elimina 다 para obtener la raíz verbal y luego añade una terminación."
+    },
+    {
+      "id": "grammar::steps.19.body",
+      "term": "verb stem",
+      "en": "Add -(으)ㄹ 거예요 to the verb stem to talk about future plans or predictions.",
+      "value": "Añade -(으)ㄹ 거예요 a la raíz verbal para hablar de planes o predicciones futuras."
+    },
+    {
+      "id": "grammar::steps.21.body",
+      "term": "verb stem",
+      "en": "Short negation: 안 + verb. Long negation: verb stem + 지 않아요. Cannot: 못 + verb.",
+      "value": "Negación corta: 안 + verbo. Negación larga: raíz verbal + 지 않아요. No poder: 못 + verbo."
+    },
+    {
+      "id": "grammar::steps.32.rules[3]",
+      "term": "speech level",
+      "en": "-께 — to (honorific, for elders): 선생님께 드렸어요",
+      "value": "-께 — a (honorífico, para mayores): 선생님께 드렸어요"
+    },
+    {
+      "id": "grammar::steps.36.rules[2]",
+      "term": "speech level",
+      "en": "분 — people (honorific): 손님 두 분 (2 guests)",
+      "value": "분 — personas (honorífico): 손님 두 분 (2 invitados)"
+    },
+    {
+      "id": "grammar::steps.38.prompt",
+      "term": "counter",
+      "en": "Counter for people (neutral)?",
+      "value": "¿Contador para personas (neutral)?"
+    },
+    {
+      "id": "grammar::steps.39.body",
+      "term": "verb stem",
+      "en": "Add -고 있어요 to the verb stem to say someone IS CURRENTLY doing something (the Korean '-ing' form).",
+      "value": "Añade -고 있어요 a la raíz verbal para decir que alguien ESTÁ HACIENDO algo ahora mismo (la forma \"-ando/-iendo\" del coreano)."
+    },
+    {
+      "id": "grammar::steps.47.body",
+      "term": "verb stem",
+      "en": "Adding -는 것 to a verb stem creates a noun phrase — 'the act of doing ~'. It makes verbs act like nouns.",
+      "value": "Añadir -는 것 a la raíz verbal crea una frase nominal — \"el acto de hacer ~\". Hace que los verbos actúen como sustantivos."
+    },
+    {
+      "id": "grammar::steps.53.body",
+      "term": "particle",
+      "en": "좋다 uses subject particle (이/가): 한국어가 좋아요. 좋아하다 uses object particle (을/를): 한국어를 좋아해요.",
+      "value": "좋다 usa la partícula de sujeto (이/가): 한국어가 좋아요. 좋아하다 usa la partícula de objeto (을/를): 한국어를 좋아해요."
+    },
+    {
+      "id": "grammar::steps.53.tip.text",
+      "term": "particle",
+      "en": "좋아요 → subject particle (이/가) precedes it. 좋아해요 → object particle (을/를) precedes it. When in doubt, 좋아해요 sounds more natural for expressing preferences.",
+      "value": "좋아요 → partícula de sujeto (이/가) la precede. 좋아해요 → partícula de objeto (을/를) la precede. Ante la duda, 좋아해요 suena más natural para expresar preferencias."
+    },
+    {
+      "id": "grammar::steps.59.body",
+      "term": "verb stem",
+      "en": "Add -(으)세요 to a verb stem to make a polite request or command.",
+      "value": "Añade -(으)세요 a la raíz verbal para hacer una petición o un mandato educado."
+    },
+    {
+      "id": "grammar::steps.59.rules[2]",
+      "term": "speech level",
+      "en": "먹다 → 드세요 (please eat — honorific)",
+      "value": "먹다 → 드세요 (por favor come — honorífico)"
+    },
+    {
+      "id": "grammar::steps.61.body",
+      "term": "verb stem",
+      "en": "Add -지 마세요 to a verb stem to politely tell someone NOT to do something.",
+      "value": "Añade -지 마세요 a la raíz verbal para decirle educadamente a alguien que NO haga algo."
+    },
+    {
+      "id": "grammar::steps.66.body",
+      "term": "particle",
+      "en": "잘하다 = good at. 못하다 = poor at. Both attach after the object particle 을/를.",
+      "value": "잘하다 = ser bueno en. 못하다 = ser malo en. Ambos se unen después de la partícula de objeto 을/를."
+    },
+    {
+      "id": "hangul::steps.9.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'ch' — a puff of air comes out. Like 'ch' in 'cheese'.",
+      "value": "ch aspirada — sale un soplo de aire. Como ch al inicio de \"Chile\"."
+    },
+    {
+      "id": "hangul::steps.10.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'k' — strong puff of air. Hold a tissue and it flutters.",
+      "value": "k aspirada — soplo de aire fuerte. Sostén un papel y se mueve."
+    },
+    {
+      "id": "hangul::steps.11.hint",
+      "term": "aspirated",
+      "en": "Aspirated 't' — like 't' in 'ten' (at word start). Strong burst.",
+      "value": "t aspirada — como la t inicial en inglés \"ten\". Soplo fuerte de aire."
+    },
+    {
+      "id": "hangul::steps.12.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'p' — like 'p' in 'pot'. Lips pop apart with air.",
+      "value": "p aspirada — como la p en \"pan\". Los labios se abren con aire."
+    },
+    {
+      "id": "hangul::steps.47.hint",
+      "term": "aspirated",
+      "en": "Aspirated — a strong burst of air follows the consonant.",
+      "value": "Aspirada — un fuerte soplo de aire sigue a la consonante."
+    },
+    {
+      "id": "hangul::steps.48.hint",
+      "term": "aspirated",
+      "en": "Aspirated — tongue snaps off the palate with a puff of air.",
+      "value": "Aspirada — la lengua se separa del paladar con un soplo de aire."
+    },
+    {
+      "id": "hangul::steps.49.hint",
+      "term": "aspirated",
+      "en": "Aspirated — lips burst open with a pop of air. Like 'pot'.",
+      "value": "Aspirada — los labios estallan abriéndose con un soplo de aire."
+    },
+    {
+      "id": "hangul::steps.50.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'ch' — like 'cheese' at the start. Air comes out.",
+      "value": "ch aspirada — como al inicio de \"Chile\". Sale aire."
+    },
+    {
+      "id": "hangul::steps.51.hint",
+      "term": "aspirated",
+      "en": "A breathy aspirated consonant. The most air of any Korean consonant.",
+      "value": "Consonante muy aspirada. La que más aire produce en coreano."
+    },
+    {
+      "id": "hangul::steps.53.prompt",
+      "term": "tense consonant",
+      "en": "Which is a TENSE consonant (쌍자음)?",
+      "value": "¿Cuál es una consonante TENSA (쌍자음)?"
+    },
+    {
+      "id": "hangul::steps.55.prompt",
+      "term": "aspirated",
+      "en": "Aspirated consonants are produced with…",
+      "value": "Las consonantes aspiradas se producen con…"
+    },
+    {
+      "id": "hangul::steps.67.hint",
+      "term": "particle",
+      "en": "ㅡ + ㅣ. A unique glide. 의사 = doctor. Used as possessive particle 의.",
+      "value": "ㅡ + ㅣ. Un diptongo único. 의사 = médico. También es la partícula posesiva 의."
+    },
+    {
+      "id": "letter-writing::steps.1.body",
+      "term": "batchim|syllable block",
+      "en": "Each letter has a fixed number of strokes, and each stroke has a fixed direction. ㅈ is written in 2 strokes and ㅊ in 3 — that is the handwriting convention used all the way through this lesson. Inside a syllable block the order is fixed too: first the opening consonant, then the vowel, then the final consonant underneath.",
+      "value": "Cada letra tiene un número fijo de trazos, y cada trazo tiene una dirección fija. ㅈ se escribe en 2 trazos y ㅊ en 3: es la convención de escritura a mano que usamos en toda esta lección. Dentro de un bloque silábico el orden también es fijo: primero la consonante inicial, luego la vocal y después la consonante final debajo."
+    },
+    {
+      "id": "letter-writing::steps.1.rules[2]",
+      "term": "batchim",
+      "en": "Then the final consonant (종성) along the bottom, if the syllable has one.",
+      "value": "Luego la consonante final (종성) a lo largo de la base, si la sílaba tiene una."
+    },
+    {
+      "id": "letter-writing::steps.58.hint",
+      "term": "batchim",
+      "en": "Straight down the block: ㄱ, then ㅗ, then ㅁ as the final consonant.",
+      "value": "De arriba abajo por el bloque: ㄱ, luego ㅗ y después ㅁ como consonante final."
+    },
+    {
+      "id": "letter-writing::steps.64.hint",
+      "term": "batchim",
+      "en": "The final consonant is a pair: write ㄷ, then ㅏ, then ㄹ and ㄱ side by side at the bottom.",
+      "value": "La consonante final es un par: escribe ㄷ, luego ㅏ y después ㄹ y ㄱ lado a lado en la base."
+    },
+    {
+      "id": "nouns::steps.10.body",
+      "term": "particle",
+      "en": "Korean place nouns follow the same no-article rule as all other nouns. 학교 means 'school', 'a school', or 'the school' — context tells you which. When giving directions or stating location, Korean adds the particle 에 (at/in) after the place noun: 학교에 가요 (I go to school). Place nouns are among the most practical words to learn early.",
+      "value": "Los sustantivos de lugar coreanos siguen la misma regla sin artículo que todos los demás sustantivos. 학교 significa \"escuela\", \"una escuela\" o \"la escuela\" — el contexto te dice cuál. Al dar indicaciones o expresar ubicación, el coreano añade la partícula 에 (en/a) después del sustantivo de lugar: 학교에 가요 (Voy a la escuela). Los sustantivos de lugar están entre las palabras más prácticas para aprender pronto."
+    },
+    {
+      "id": "nouns::steps.10.tip.label",
+      "term": "particle",
+      "en": "Location particle 에",
+      "value": "Partícula de lugar 에"
+    },
+    {
+      "id": "nouns::steps.19.body",
+      "term": "particle",
+      "en": "Everyday objects are among the most immediately useful Korean words. Korean has both native Korean words and Sino-Korean (Chinese-origin) words for objects, and in many cases Konglish (loan words from English) is used: 커피 (coffee), 핸드폰 (hand phone / cell phone). When the object is the direct receiver of a verb, add 을/를 after the noun: 책을 읽어요 (I read a book). This is the object-marking particle.",
+      "value": "Los objetos cotidianos están entre las palabras coreanas más inmediatamente útiles. El coreano tiene tanto palabras coreanas nativas como sino-coreanas (de origen chino) para los objetos, y en muchos casos se usa el Konglish (préstamos del inglés): 커피 (café), 핸드폰 (teléfono móvil). Cuando el objeto es el receptor directo de un verbo, añade 을/를 después del sustantivo: 책을 읽어요 (Leo un libro). Esta es la partícula de objeto."
+    },
+    {
+      "id": "nouns::steps.19.tip.label",
+      "term": "particle",
+      "en": "Object particle 을/를",
+      "value": "Partícula de objeto 을/를"
+    },
+    {
+      "id": "nouns::steps.19.tip.text",
+      "term": "particle",
+      "en": "Use 을 after a noun ending in a consonant: 책을. Use 를 after a noun ending in a vowel: 가방을. In casual speech, this particle is often dropped entirely.",
+      "value": "Usa 을 después de un sustantivo que termina en consonante: 책을. Usa 를 después de un sustantivo que termina en vocal: 가방을. En el habla informal, esta partícula se omite con frecuencia."
+    },
+    {
+      "id": "nouns::steps.24.body",
+      "term": "counter",
+      "en": "Korean uses counting words called counters (수사) that attach to numbers when counting specific things. The counter 개 is used for general objects: 한 개 (one thing), 세 개 (three things). 명 is used for counting people: 두 명 (two people). 잔 is used for cups/glasses: 한 잔 (one cup). The pattern is: number + counter, placed right before or after the noun. Korean numbers for counters use the native Korean set: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5).",
+      "value": "El coreano usa palabras de conteo llamadas contadores (수사) que se unen a los números al contar cosas específicas. El contador 개 se usa para objetos generales: 한 개 (una cosa), 세 개 (tres cosas). 명 se usa para contar personas: 두 명 (dos personas). 잔 se usa para tazas/vasos: 한 잔 (una taza). El patrón es: número + contador, colocado justo antes o después del sustantivo. Los números coreanos para contadores usan el conjunto nativo: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5)."
+    },
+    {
+      "id": "nouns::steps.25.meaning",
+      "term": "counter",
+      "en": "three people (명 = person counter)",
+      "value": "tres personas (명 = contador de personas)"
+    },
+    {
+      "id": "pronouns::steps.11.meaning",
+      "term": "speech level",
+      "en": "we / our (humble, polite form of 우리)",
+      "value": "nosotros / nuestro (humilde, forma educada de 우리)"
+    },
+    {
+      "id": "pronunciation::stages.0.name",
+      "term": "batchim",
+      "en": "Batchim",
+      "value": "Batchim (받침)"
+    },
+    {
+      "id": "pronunciation::stages.1.name",
+      "term": "liaison",
+      "en": "Liaison",
+      "value": "Enlace (연음화)"
+    },
+    {
+      "id": "pronunciation::steps.0.title",
+      "term": "batchim",
+      "en": "What is Batchim?",
+      "value": "¿Qué es el Batchim?"
+    },
+    {
+      "id": "pronunciation::steps.0.body",
+      "term": "batchim|syllable block",
+      "en": "A batchim (받침, literally 'support') is a consonant placed at the bottom of a Korean syllable block. For example, in the syllable 강, the ㅇ at the bottom is the batchim. Not all syllables have a batchim — many end with just the vowel. Batchim is why Korean words like 산, 달, and 밥 end with a distinct consonant sound rather than an open vowel.",
+      "value": "Un batchim (받침, literalmente \"soporte\") es una consonante colocada en la parte inferior de un bloque de sílaba coreano. Por ejemplo, en la sílaba 강, el ㅇ en la parte inferior es el batchim. No todas las sílabas tienen batchim — muchas terminan solo con la vocal. El batchim explica por qué palabras coreanas como 산, 달 y 밥 terminan con un sonido consonántico distintivo en lugar de una vocal abierta."
+    },
+    {
+      "id": "pronunciation::steps.0.tip.label",
+      "term": "batchim",
+      "en": "Which syllables have batchim?",
+      "value": "¿Qué sílabas tienen batchim?"
+    },
+    {
+      "id": "pronunciation::steps.0.tip.text",
+      "term": "batchim|syllable block",
+      "en": "Look at any Korean syllable block. If there is a character beneath the vowel, that is the batchim. 가 has no batchim. 간 has batchim ㄴ. 닭 has double batchim ㄺ (read as one sound).",
+      "value": "Mira cualquier bloque de sílaba coreano. Si hay un carácter debajo de la vocal, ese es el batchim. 가 no tiene batchim. 간 tiene batchim ㄴ. 닭 tiene doble batchim ㄺ (se lee como un solo sonido)."
+    },
+    {
+      "id": "pronunciation::steps.1.title",
+      "term": "batchim",
+      "en": "The 7 Batchim Sound Groups",
+      "value": "Los 7 Grupos de Sonidos del Batchim"
+    },
+    {
+      "id": "pronunciation::steps.1.body",
+      "term": "batchim",
+      "en": "Although many different consonants can appear as batchim in spelling, they all reduce to only 7 possible sounds when pronounced. This is known as the 7 rules of batchim (받침 7종성). Learning these 7 groups is essential — it explains why 닭 (chicken) and 국 (soup) both end with the same k sound.",
+      "value": "Aunque muchas consonantes diferentes pueden aparecer como batchim en la escritura, todas se reducen a solo 7 posibles sonidos al pronunciarlas. Esto se conoce como las 7 reglas del batchim (받침 7종성). Aprender estos 7 grupos es esencial — explica por qué 닭 (pollo) y 국 (sopa) terminan con el mismo sonido k."
+    },
+    {
+      "id": "pronunciation::steps.1.tip.text",
+      "term": "batchim",
+      "en": "The k, t, and p batchim sounds are unreleased: your mouth forms the position but does not release a puff of air. Think of holding the final p in 'cup' — cup_ — without letting air out. Korean ㄱ/ㄷ/ㅂ batchim work the same way.",
+      "value": "Los sonidos de batchim k, t y p son sin explosión: tu boca toma la posición pero no libera una ráfaga de aire. Piensa en sostener la p final en \"cup\" — cup_ — sin dejar salir el aire. El batchim ㄱ/ㄷ/ㅂ coreano funciona igual."
+    },
+    {
+      "id": "pronunciation::steps.2.meaning",
+      "term": "batchim",
+      "en": "soup — ㄱ-group batchim, pronounced k (unreleased)",
+      "value": "sopa — batchim del grupo ㄱ, se pronuncia k (sin explosión)"
+    },
+    {
+      "id": "pronunciation::steps.3.meaning",
+      "term": "batchim",
+      "en": "mountain — ㄴ-group batchim, pronounced n",
+      "value": "montaña — batchim del grupo ㄴ, se pronuncia n"
+    },
+    {
+      "id": "pronunciation::steps.4.meaning",
+      "term": "batchim",
+      "en": "clothes — ㄷ-group batchim (ㅅ→t), pronounced t (unreleased)",
+      "value": "ropa — batchim del grupo ㄷ (ㅅ→t), se pronuncia t (sin explosión)"
+    },
+    {
+      "id": "pronunciation::steps.5.meaning",
+      "term": "batchim",
+      "en": "moon — ㄹ-group batchim, pronounced l",
+      "value": "luna — batchim del grupo ㄹ, se pronuncia l"
+    },
+    {
+      "id": "pronunciation::steps.6.meaning",
+      "term": "batchim",
+      "en": "night / chestnut — ㅁ-group batchim, pronounced m",
+      "value": "noche / castaña — batchim del grupo ㅁ, se pronuncia m"
+    },
+    {
+      "id": "pronunciation::steps.7.meaning",
+      "term": "batchim",
+      "en": "mouth — ㅂ-group batchim, pronounced p (unreleased)",
+      "value": "boca — batchim del grupo ㅂ, se pronuncia p (sin explosión)"
+    },
+    {
+      "id": "pronunciation::steps.8.meaning",
+      "term": "batchim",
+      "en": "river — ㅇ-group batchim, pronounced ng",
+      "value": "río — batchim del grupo ㅇ, se pronuncia ng"
+    },
+    {
+      "id": "pronunciation::steps.9.meaning",
+      "term": "batchim",
+      "en": "chicken — double batchim ㄺ (ㄹ+ㄱ) → ㄱ group → k sound",
+      "value": "pollo — doble batchim ㄺ (ㄹ+ㄱ) → grupo ㄱ → sonido k"
+    },
+    {
+      "id": "pronunciation::steps.10.meaning",
+      "term": "batchim",
+      "en": "flower — batchim ㅊ belongs to the ㄷ-group → t sound",
+      "value": "flor — batchim ㅊ pertenece al grupo ㄷ → sonido t"
+    },
+    {
+      "id": "pronunciation::steps.11.prompt",
+      "term": "batchim",
+      "en": "ㅋ, ㄲ, and ㄳ are all batchim in the same group. Which sound group are they in?",
+      "value": "ㅋ, ㄲ y ㄳ son todos batchim del mismo grupo. ¿A qué grupo de sonido pertenecen?"
+    },
+    {
+      "id": "pronunciation::steps.12.prompt",
+      "term": "batchim",
+      "en": "방 (room) ends with batchim ㅇ. What sound does this make?",
+      "value": "방 (habitación) termina con batchim ㅇ. ¿Qué sonido produce?"
+    },
+    {
+      "id": "pronunciation::steps.13.title",
+      "term": "liaison",
+      "en": "Liaison — Linking Sound",
+      "value": "Enlace — Sonido de Enlace"
+    },
+    {
+      "id": "pronunciation::steps.13.body",
+      "term": "batchim|liaison",
+      "en": "When a syllable ending in a batchim is immediately followed by a syllable that begins with the silent ㅇ, the batchim consonant moves forward and becomes the initial consonant of the next syllable. The spelling stays the same — only the pronunciation shifts. This is called liaison (연음화) and it is one of the most frequent pronunciation phenomena in Korean.",
+      "value": "Cuando una sílaba que termina en batchim va seguida inmediatamente de una sílaba que comienza con la ㅇ silenciosa, la consonante batchim avanza y se convierte en la consonante inicial de la siguiente sílaba. La escritura permanece igual — solo la pronunciación cambia. Esto se llama enlace (연음화) y es uno de los fenómenos de pronunciación más frecuentes en coreano."
+    },
+    {
+      "id": "pronunciation::steps.13.tip.text",
+      "term": "batchim",
+      "en": "Look for: batchim consonant + next syllable beginning with ㅇ (silent placeholder). Result: the batchim sounds as if it opens the next syllable. 먹어요 → 머거요. 한국어 → 한구거. The written form never changes — only your pronunciation does.",
+      "value": "Busca: consonante batchim + sílaba siguiente que comienza con ㅇ (marcador silencioso). Resultado: el batchim suena como si abriera la sílaba siguiente. 먹어요 → 머거요. 한국어 → 한구거. La forma escrita nunca cambia — solo cambia tu pronunciación."
+    },
+    {
+      "id": "pronunciation::steps.14.meaning",
+      "term": "batchim",
+      "en": "I eat / am eating — ㄱ batchim of 먹 links into 어, sounds like 머거요",
+      "value": "Como / estoy comiendo — el batchim ㄱ de 먹 se enlaza con 어, suena como 머거요"
+    },
+    {
+      "id": "pronunciation::steps.15.meaning",
+      "term": "batchim",
+      "en": "rice (object form) — ㅂ batchim of 밥 links into 을, sounds like 바블",
+      "value": "arroz (forma de objeto) — el batchim ㅂ de 밥 se enlaza con 을, suena como 바블"
+    },
+    {
+      "id": "pronunciation::steps.16.meaning",
+      "term": "batchim",
+      "en": "It is good / I like it — ㅎ batchim weakens and links (see Stage 4 for ㅎ rules)",
+      "value": "Está bien / Me gusta — el batchim ㅎ se debilita y se enlaza (ver Etapa 4 para reglas de ㅎ)"
+    },
+    {
+      "id": "pronunciation::steps.17.meaning",
+      "term": "batchim",
+      "en": "Korean language — ㄱ batchim of 국 links into 어, sounds like 한구거",
+      "value": "Idioma coreano — el batchim ㄱ de 국 se enlaza con 어, suena como 한구거"
+    },
+    {
+      "id": "pronunciation::steps.18.title",
+      "term": "liaison",
+      "en": "Why Does Liaison Happen?",
+      "value": "¿Por qué ocurre el Enlace?"
+    },
+    {
+      "id": "pronunciation::steps.18.body",
+      "term": "batchim",
+      "en": "Korean syllable structure strongly prefers the pattern consonant + vowel. When a vowel-initial syllable follows a batchim, it is phonetically easier for the consonant to attach to that vowel's open slot. The result is a more natural, connected flow of speech. This is not slang or lazy pronunciation — it is standard Korean and will be heard in news broadcasts, formal speeches, and everyday conversation alike.",
+      "value": "La estructura de las sílabas coreanas prefiere fuertemente el patrón consonante + vocal. Cuando una sílaba con vocal inicial sigue a un batchim, es fonéticamente más fácil para la consonante unirse a ese espacio abierto de la vocal. El resultado es un flujo de habla más natural y conectado. Esto no es jerga ni pronunciación descuidada — es el coreano estándar y se puede escuchar en transmisiones de noticias, discursos formales y conversaciones cotidianas."
+    },
+    {
+      "id": "pronunciation::steps.18.tip.label",
+      "term": "liaison",
+      "en": "Liaison vs spelling",
+      "value": "Enlace vs ortografía"
+    },
+    {
+      "id": "pronunciation::steps.19.prompt",
+      "term": "batchim|liaison",
+      "en": "Liaison (연음화) occurs when a batchim is followed by a syllable that begins with…",
+      "value": "El enlace (연음화) ocurre cuando un batchim es seguido por una sílaba que comienza con…"
+    },
+    {
+      "id": "pronunciation::steps.19.choices[3]",
+      "term": "aspirated",
+      "en": "An aspirated consonant",
+      "value": "Una consonante aspirada"
+    },
+    {
+      "id": "pronunciation::steps.21.body",
+      "term": "batchim",
+      "en": "When a stop consonant batchim from the ㄱ, ㄷ, or ㅂ groups is followed by the nasal consonants ㄴ or ㅁ, the stop assimilates and changes to its corresponding nasal sound. This is purely articulatory: nasal consonants require the velum to lower, which pulls adjacent stops into nasal territory. The spelling stays the same; only the pronunciation changes.",
+      "value": "Cuando una consonante oclusiva batchim de los grupos ㄱ, ㄷ o ㅂ va seguida de las consonantes nasales ㄴ o ㅁ, la oclusiva se asimila y cambia a su sonido nasal correspondiente. Esto es puramente articulatorio: las consonantes nasales requieren que el velo baje, lo cual arrastra las oclusivas adyacentes al territorio nasal. La escritura permanece igual; solo la pronunciación cambia."
+    },
+    {
+      "id": "pronunciation::steps.28.prompt",
+      "term": "batchim",
+      "en": "ㄱ batchim followed by ㄴ or ㅁ changes to which sound?",
+      "value": "El batchim ㄱ seguido de ㄴ o ㅁ cambia a ¿qué sonido?"
+    },
+    {
+      "id": "pronunciation::steps.31.body",
+      "term": "batchim",
+      "en": "After certain batchim consonants — specifically the unreleased stop batchim sounds from the ㄱ, ㄷ, and ㅂ groups — the following consonant becomes tensed (doubled). The written form does not change; only the pronunciation shifts. Tensification is why 학교 (school) sounds like 학꾜 instead of 학교.",
+      "value": "Después de ciertas consonantes batchim — específicamente los sonidos batchim de oclusiva sin explosión de los grupos ㄱ, ㄷ y ㅂ — la consonante siguiente se tensa (se dobla). La forma escrita no cambia; solo la pronunciación varía. La tensificación explica por qué 학교 (escuela) suena como 학꾜 en lugar de 학교."
+    },
+    {
+      "id": "pronunciation::steps.32.meaning",
+      "term": "batchim",
+      "en": "school — ㄱ batchim triggers tensification: ㄱ→ㄲ, sounds like 학꾜",
+      "value": "escuela — el batchim ㄱ provoca tensificación: ㄱ→ㄲ, suena como 학꾜"
+    },
+    {
+      "id": "pronunciation::steps.33.meaning",
+      "term": "batchim",
+      "en": "restaurant — ㄱ batchim triggers tensification: ㄷ→ㄸ, sounds like 식땅",
+      "value": "restaurante — el batchim ㄱ provoca tensificación: ㄷ→ㄸ, suena como 식땅"
+    },
+    {
+      "id": "pronunciation::steps.34.meaning",
+      "term": "batchim",
+      "en": "to close — ㄷ batchim triggers tensification: ㄷ→ㄸ, sounds like 닫따",
+      "value": "cerrar — el batchim ㄷ provoca tensificación: ㄷ→ㄸ, suena como 닫따"
+    },
+    {
+      "id": "pronunciation::steps.35.meaning",
+      "term": "batchim",
+      "en": "entrance — ㅂ batchim triggers tensification: ㄱ→ㄲ, sounds like 입꾸",
+      "value": "entrada — el batchim ㅂ provoca tensificación: ㄱ→ㄲ, suena como 입꾸"
+    },
+    {
+      "id": "pronunciation::steps.36.prompt",
+      "term": "batchim",
+      "en": "Tensification (경음화) occurs most predictably after which type of batchim?",
+      "value": "La tensificación (경음화) ocurre de forma más predecible después de ¿qué tipo de batchim?"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[0]",
+      "term": "batchim",
+      "en": "Nasal batchim (ㄴ, ㅁ, ㅇ)",
+      "value": "Batchim nasal (ㄴ, ㅁ, ㅇ)"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[1]",
+      "term": "batchim",
+      "en": "Unreleased stop batchim (ㄱ, ㄷ, ㅂ groups)",
+      "value": "Batchim de oclusiva sin explosión (grupos ㄱ, ㄷ, ㅂ)"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[2]",
+      "term": "batchim",
+      "en": "The ㄹ batchim only",
+      "value": "Solo el batchim ㄹ"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[3]",
+      "term": "batchim",
+      "en": "Any batchim consonant",
+      "value": "Cualquier consonante batchim"
+    },
+    {
+      "id": "pronunciation::steps.37.choices[1]",
+      "term": "aspirated",
+      "en": "hak-kyo (aspirated)",
+      "value": "hak-kyo (aspirada)"
+    },
+    {
+      "id": "pronunciation::steps.38.body",
+      "term": "batchim",
+      "en": "The consonant ㅎ is one of Korean's most unstable sounds. Between vowels — whether ㅎ is a batchim or an initial consonant — it weakens significantly and often disappears almost entirely. This is why 좋아요 (it is good) sounds like 조아요 rather than 조하요. The ㅎ is still written, but the sound nearly vanishes.",
+      "value": "La consonante ㅎ es uno de los sonidos más inestables del coreano. Entre vocales — ya sea que ㅎ sea batchim o consonante inicial — se debilita significativamente y a menudo desaparece casi por completo. Por eso 좋아요 (está bien) suena como 조아요 y no como 조하요. El ㅎ sigue escrito, pero el sonido casi desaparece."
+    },
+    {
+      "id": "pronunciation::steps.39.meaning",
+      "term": "batchim",
+      "en": "It is good / I like it — ㅎ batchim weakens: sounds like 조아요 (not 조하요)",
+      "value": "Está bien / Me gusta — el batchim ㅎ se debilita: suena como 조아요 (no 조하요)"
+    }
+  ]
+}

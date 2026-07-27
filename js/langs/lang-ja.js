@@ -10488,6 +10488,21 @@
   'Progress': '進捗',
   'Reset all progress': '進捗をすべてリセット',
   '🔥 Daily streak + real progress tracking': '🔥 毎日の連続学習 + 本物の進捗トラッキング'
+,
+    // ── added by scripts/ui-lang.cjs ───────────────────────
+    'Search Results': '検索結果',
+    '← Back to Home': '← ホームに戻る',
+    'Letter Writing': '文字の書き方',
+    'Korean Typing': '韓国語タイピング',
+    'Seoul': 'ソウル',
+    'Busan': '釜山',
+    'Jeju Island': '済州島',
+    'Test Your Korean': '韓国語力テスト',
+    'annyeonghaseyo': 'annyeonghaseyo',
+    'Expressing': '表現',
+    'Nouns': '名詞',
+    'Learn Hangul in 1 Hour:': '1時間でハングルを学ぶ：',
+    'Common Korean': 'よく使う韓国語',
   };
   if (window.LangManager) window.LangManager.register('ja', JA);
 

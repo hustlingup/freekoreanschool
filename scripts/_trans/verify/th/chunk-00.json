@@ -1,0 +1,847 @@
+{
+  "lang": "th",
+  "chunk": 0,
+  "count": 120,
+  "units": [
+    {
+      "lang": "th",
+      "ref": "emotions::steps.0.body",
+      "kind": "unit",
+      "en": "Korean emotion words are mostly adjectives in their base form. Unlike English ('I am happy'), Korean adjectives act like verbs and conjugate directly: 행복해요 (I am happy) without needing a separate 'am'. The dictionary form ends in -다: 행복하다, 슬프다, 무섭다. Drop -다 and add -아요/-어요 for the polite present tense. Emotion vocabulary is especially useful for talking about K-dramas, daily life, and personal feelings.",
+      "shipped": "คำอารมณ์ภาษาเกาหลีส่วนใหญ่เป็นคำคุณศัพท์ในรูปพจนานุกรม ต่างจากภาษาอังกฤษ (\"I am happy\") คำคุณศัพท์ภาษาเกาหลีทำหน้าที่เหมือนกริยาและผันได้โดยตรง: 행복해요 (มีความสุข) โดยไม่ต้องมีคำว่า \"am\" แยกต่างหาก รูปพจนานุกรมลงท้ายด้วย -다 เช่น 행복하다, 슬프다, 무섭다 ตัดคำว่า -다 ออกแล้วเติม -아요/-어요 สำหรับรูปปัจจุบันแบบสุภาพ คำศัพท์อารมณ์มีประโยชน์อย่างยิ่งในการพูดถึงซีรีส์เกาหลี ชีวิตประจำวัน และความรู้สึกส่วนตัว"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.0.tip.text",
+      "kind": "unit",
+      "en": "행복하다 → 행복해요 (I am happy). 슬프다 → 슬퍼요 (I am sad). 피곤하다 → 피곤해요 (I am tired). The -아요/-어요 ending makes the adjective polite and present tense simultaneously.",
+      "shipped": "행복하다 → 행복해요 (ฉันมีความสุข) 슬프다 → 슬퍼요 (ฉันเศร้า) 피곤하다 → 피곤해요 (ฉันเหนื่อย) การลงท้ายด้วย -아요/-어요 ทำให้คำคุณศัพท์กลายเป็นรูปสุภาพและรูปปัจจุบันพร้อมกัน"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.6.body",
+      "kind": "unit",
+      "en": "To use emotion adjectives in polite conversation, remove -다 from the dictionary form and add the polite present ending. For stems ending in 하: 하다 → 해요 (행복하다 → 행복해요). For stems ending in a bright vowel (ㅏ, ㅗ): add -아요. For all others: add -어요, usually with a vowel change — 슬프다 drops its ㅡ: 슬프 + 어요 → 슬퍼요. Stems ending in ㅂ are irregular: the ㅂ turns into 우, so 무섭다 → 무서우 + 어요 → 무서워요 (likewise 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). The same pattern applies to most Korean descriptive verbs (adjectives).",
+      "shipped": "เพื่อใช้คำคุณศัพท์อารมณ์ในการสนทนาสุภาพ ให้ตัด -다 ออกจากรูปพจนานุกรมแล้วเติมวิภัตติปัจจุบันแบบสุภาพ สำหรับรากศัพท์ที่ลงท้ายด้วย 하: 하다 → 해요 (เช่น 행복하다 → 행복해요) สำหรับรากศัพท์ที่มีสระเสียงสว่าง (ㅏ, ㅗ) ให้เติม -아요 ส่วนรากศัพท์อื่นๆ ให้เติม -어요 ซึ่งมักมีการเปลี่ยนรูปสระร่วมด้วย เช่น 슬프다 จะตัด ㅡ ออก: 슬프 + 어요 → 슬퍼요 รากศัพท์ที่ลงท้ายด้วย ㅂ เป็นคำผันแบบไม่ปกติ โดย ㅂ จะเปลี่ยนเป็น 우 เช่น 무섭다 → 무서우 + 어요 → 무서워요 (เช่นเดียวกับ 외롭다 → 외로워요 และ 부끄럽다 → 부끄러워요) รูปแบบเดียวกันนี้ใช้ได้กับคำกริยาแสดงสภาพ (คำคุณศัพท์) ส่วนใหญ่ในภาษาเกาหลี"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.6.tip.text",
+      "kind": "unit",
+      "en": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Note that 슬프다 drops the 으 before -어요.",
+      "shipped": "행복하다 → 행복해요 슬프다 → 슬퍼요 화나다 → 화나요 무섭다 → 무서워요 피곤하다 → 피곤해요 기쁘다 → 기뻐요 โปรดสังเกตว่า 슬프다 → 슬퍼요 (ㅡ หายไปก่อน -어요)"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.9.body",
+      "kind": "unit",
+      "en": "Korean has a rich set of emotion words beyond the basics. 기쁘다 (to be glad/joyful) is a slightly stronger or more specific happiness than 행복하다. 걱정되다 (to be worried) literally means 'worry becomes/happens'. 신나다 (to be excited/pumped) is commonly used for energetic situations — concerts, sports, celebrations. 피곤하다 (to be tired) is essential for everyday life, especially when explaining you can't do something.",
+      "shipped": "ภาษาเกาหลีมีคำแสดงอารมณ์มากมายนอกเหนือจากคำพื้นฐาน 기쁘다 (ดีใจ/ปลื้มใจ) เป็นความสุขที่เข้มข้นหรือเฉพาะเจาะจงกว่า 행복하다 เล็กน้อย 걱정되다 (กังวล) แปลตรงตัวว่า \"ความกังวลเกิดขึ้น\" 신나다 (ตื่นเต้น/มีพลัง) มักใช้กับสถานการณ์ที่เต็มไปด้วยพลัง เช่น คอนเสิร์ต กีฬา และงานเฉลิมฉลอง 피곤하다 (เหนื่อย/อ่อนเพลีย) เป็นคำจำเป็นสำหรับชีวิตประจำวัน โดยเฉพาะเมื่อใช้อธิบายว่าทำอะไรไม่ได้"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.9.tip.text",
+      "kind": "unit",
+      "en": "신나다 and 신나요 are everywhere in Korean pop culture. K-pop songs often use 신나 to describe an exciting beat or mood. You'll also hear 신난다! as an exclamation (This is so exciting!) at events and parties.",
+      "shipped": "신나다 และ 신나요 พบได้ทั่วไปในวัฒนธรรมป๊อปเกาหลี เพลง K-Pop มักใช้ 신나 เพื่อบรรยายจังหวะหรืออารมณ์ที่น่าตื่นเต้น นอกจากนี้ยังได้ยินคำอุทาน 신난다! (สนุกจังเลย!) ในงานอีเวนต์และงานปาร์ตี้ต่างๆ"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.15.body",
+      "kind": "unit",
+      "en": "기분 (gibun) is the key word for describing your mood or general feeling state. 기분이 좋다 (gibuni jota) = to feel good / to be in a good mood. 기분이 나쁘다 = to feel bad / to be in a bad mood. 기분 can describe emotional tone more broadly than single-emotion words — it's about your overall state. You'll hear 기분이 어때요? (How are you feeling?) in everyday conversation.",
+      "shipped": "기분 (กิบุน) เป็นคำสำคัญสำหรับบอกอารมณ์หรือสภาวะความรู้สึกโดยทั่วไป 기분이 좋다 (กิบุนี โจตา) = รู้สึกดี / อารมณ์ดี 기분이 나쁘다 = รู้สึกแย่ / อารมณ์ไม่ดี คำว่า 기분 สามารถบรรยายโทนอารมณ์ได้กว้างกว่าคำแสดงอารมณ์เดี่ยวๆ เพราะเป็นเรื่องของสภาวะโดยรวมของคุณ ในบทสนทนาประจำวันคุณจะได้ยินประโยค 기분이 어때요? (วันนี้รู้สึกอย่างไรบ้าง)"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.15.tip.text",
+      "kind": "unit",
+      "en": "기분 = mood, general feeling state (contextual, can change). 감정 = emotion (more specific feeling like anger, joy, fear). 기분이 좋아요 = I feel good right now. 감정을 표현하다 = to express emotion.",
+      "shipped": "기분 = อารมณ์ สภาวะความรู้สึกทั่วไป (เปลี่ยนได้ตามบริบท) 감정 = อารมณ์ความรู้สึกเฉพาะเจาะจง (เช่น ความโกรธ ความสุข ความกลัว) 기분이 좋아요 = ตอนนี้ฉันรู้สึกดี 감정을 표현하다 = แสดงออกทางอารมณ์"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.18.body",
+      "kind": "unit",
+      "en": "Korean has several emotion words with no single-word English equivalent. 그립다 (geuripda) describes missing someone or something — the longing for an absent person or place you love. 외롭다 (oeropda) is loneliness, but with a cultural depth of isolation. 부끄럽다 (bukkeureupda) is embarrassment or shyness. 뿌듯하다 (ppudeuthada) is the warm pride or satisfaction of accomplishment — the feeling you get when you finish something hard or watch someone you care about succeed.",
+      "shipped": "ภาษาเกาหลีมีคำแสดงอารมณ์หลายคำที่ไม่มีคำแปลตรงตัวเป็นภาษาอังกฤษเพียงคำเดียว 그립다 (กือริพดา) หมายถึงความคิดถึงคนหรือสิ่งใดสิ่งหนึ่ง คือความอาลัยถึงบุคคลหรือสถานที่อันเป็นที่รักที่ไม่อยู่ตรงหน้า 외롭다 (เออโรพดา) คือความเหงา แต่มีมิติทางวัฒนธรรมของความโดดเดี่ยวที่ลึกซึ้งกว่านั้น 부끄럽다 (พุกือรอพดา) คือความอับอายหรือความขี้อาย 뿌듯하다 (ปุดือทาดา) คือความภาคภูมิใจหรือความอิ่มเอมใจอันอบอุ่นจากความสำเร็จ คือความรู้สึกที่คุณได้รับเมื่อทำสิ่งที่ยากสำเร็จ หรือเมื่อเห็นคนที่คุณรักประสบความสำเร็จ"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.18.tip.text",
+      "kind": "unit",
+      "en": "한 (han) is a culturally specific emotion: a deep sorrow mixed with resilience, rooted in historical suffering but turned into creative energy. It's heard in pansori (Korean folk opera), described in poetry, and referenced in discussions of Korean identity. Not a word to use casually, but essential for cultural understanding.",
+      "shipped": "한 (ฮัน) เป็นอารมณ์ที่เฉพาะเจาะจงทางวัฒนธรรม คือความเศร้าลึกๆ ที่ผสมผสานกับความอดทนเข้มแข็ง มีรากฐานมาจากความทุกข์ทรมานในประวัติศาสตร์แต่ถูกเปลี่ยนเป็นพลังสร้างสรรค์ ได้ยินในพันโซรี (อุปรากรพื้นบ้านเกาหลี) ถูกบรรยายไว้ในบทกวี และถูกกล่าวถึงในการพูดคุยเรื่องอัตลักษณ์เกาหลี ไม่ใช่คำที่ควรใช้แบบลำลอง แต่สำคัญอย่างยิ่งต่อความเข้าใจทางวัฒนธรรม"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.26.body",
+      "kind": "unit",
+      "en": "Several sentence patterns are especially useful for expressing emotions in Korean. '보고 싶어요' (I miss you / I want to see you) uses 보다 (to see) + -고 싶다 (to want to). '감동받았어요' (I was moved/touched) uses 감동 (deep emotion) + 받다 (to receive). '괜찮아요' (I'm okay / That's fine) is one of the most versatile phrases — used for 'I'm fine', 'it's okay', 'no problem', and 'never mind'.",
+      "shipped": "รูปประโยคหลายแบบมีประโยชน์เป็นพิเศษสำหรับการแสดงอารมณ์ในภาษาเกาหลี \"보고 싶어요\" (คิดถึงคุณ / อยากเจอคุณ) ใช้ 보다 (ดู) รวมกับ -고 싶다 (อยากจะ) ส่วน \"감동받았어요\" (ฉันซาบซึ้งใจ) ใช้ 감동 (ความรู้สึกซาบซึ้งลึกซึ้ง) รวมกับ 받다 (ได้รับ) และ \"괜찮아요\" (ฉันโอเค / ไม่เป็นไร) เป็นหนึ่งในวลีที่ใช้ได้หลากหลายที่สุด ใช้พูดได้ทั้ง \"ฉันสบายดี\" \"ไม่เป็นไร\" \"ไม่มีปัญหา\" และ \"ช่างมันเถอะ\""
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.26.tip.text",
+      "kind": "unit",
+      "en": "괜찮아요 literally means 'it's fine/okay'. Use it to reassure someone you're okay (after a stumble), to accept an offer you previously declined, to say 'no thank you', or to express 'that's acceptable'. Mastering its tone is key — same words, very different messages.",
+      "shipped": "괜찮아요 แปลตรงๆ ว่า \"ไม่เป็นไร/โอเค\" ใช้ปลอบใจคนอื่นว่าคุณไม่เป็นไร (เช่น หลังจากสะดุดล้ม) ใช้ตอบรับข้อเสนอที่คุณเคยปฏิเสธไปก่อนหน้านี้ ใช้พูดว่า \"ไม่เป็นไร ขอบคุณ\" (ปฏิเสธอย่างสุภาพ) หรือใช้แสดงว่า \"รับได้ ยอมรับได้\" การเข้าใจน้ำเสียงให้ถูกต้องเป็นสิ่งสำคัญ — คำเดียวกัน แต่ความหมายต่างกันมาก"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.0.body",
+      "kind": "unit",
+      "en": "Korea has a rich shopping culture — from traditional outdoor markets (시장) to high-end department stores (백화점) to 24-hour convenience stores (편의점) on every corner. Bargaining is normal at traditional markets but not at chain stores or malls. Learning to ask prices, compare items, and complete transactions in Korean will make your shopping experience much smoother and more personal. The key question you'll use constantly is 얼마예요? (How much is it?)",
+      "shipped": "เกาหลีมีวัฒนธรรมการช้อปปิ้งที่หลากหลาย — ตั้งแต่ตลาดกลางแจ้งแบบดั้งเดิม (시장) ไปจนถึงห้างสรรพสินค้าหรูหรา (백화점) และร้านสะดวกซื้อที่เปิด 24 ชั่วโมง (편의점) ซึ่งมีอยู่ทุกมุมถนน การต่อรองราคาเป็นเรื่องปกติที่ตลาดดั้งเดิม แต่ไม่ใช่ที่ร้านค้าเครือหรือห้างสรรพสินค้า การเรียนรู้วิธีถามราคา เปรียบเทียบสินค้า และทำธุรกรรมเป็นภาษาเกาหลีจะทำให้ประสบการณ์ช้อปปิ้งของคุณราบรื่นและเป็นกันเองมากขึ้น คำถามสำคัญที่คุณจะใช้บ่อยที่สุดคือ 얼마예요? (ราคาเท่าไหร่?)"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.0.tip.text",
+      "kind": "unit",
+      "en": "At traditional markets like 광장시장 (Gwangjang Market) in Seoul, you can bargain — especially if buying multiple items. At 롯데백화점 (Lotte Department Store) or any chain, prices are fixed. Watch for 세일 (sale) signs and 할인 (discount) promotions.",
+      "shipped": "ที่ตลาดดั้งเดิมอย่าง 광장시장 (ตลาด Gwangjang) ในกรุงโซล คุณสามารถต่อรองราคาได้ — โดยเฉพาะถ้าซื้อหลายชิ้น ที่ 롯데백화점 (ห้างสรรพสินค้า Lotte) หรือร้านค้าเครือใดๆ ราคาจะตายตัว คอยสังเกตป้าย 세일 (ลดราคา) และโปรโมชัน 할인 (ส่วนลด)"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.31.meaning",
+      "kind": "unit",
+      "en": "Cheer up! / Hang in there! (literally: put out strength)",
+      "shipped": "สู้ต่อไป! / อดทนนะ! (แปลตรงๆ: ปล่อยพลังออกมา)"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.20.meaning",
+      "kind": "unit",
+      "en": "to be lonely",
+      "shipped": "เหงา"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.23.choices[3]",
+      "kind": "unit",
+      "en": "to be lonely",
+      "shipped": "เหงา"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.25.choices[2]",
+      "kind": "unit",
+      "en": "to be lonely",
+      "shipped": "เหงา"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions::steps.30.choices[3]",
+      "kind": "unit",
+      "en": "I am lonely",
+      "shipped": "ฉันเหงา"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.6.body",
+      "kind": "unit",
+      "en": "Korean uses many loanwords for modern products — 핸드폰 (cell phone), 노트북 (laptop), 티셔츠 (T-shirt). Native Korean and Sino-Korean words cover traditional items: 옷 (clothes), 신발 (shoes), 가방 (bag). When shopping, you'll often point to something and say 이거 (this one) — a simple and effective strategy. Korean has three of these pointing words: 이거 (this one, near you), 그거 (that one, near the person you are talking to) and 저거 (that one over there, away from you both). Sizes are often given in free-size (프리 사이즈), small (S), medium (M), and large (L/XL).",
+      "shipped": "ภาษาเกาหลีใช้คำยืมจำนวนมากสำหรับสินค้าสมัยใหม่ — 핸드폰 (โทรศัพท์มือถือ) 노트북 (แล็ปท็อป) 티셔츠 (เสื้อยืด) คำเกาหลีดั้งเดิมและคำจีน-เกาหลีใช้สำหรับสินค้าดั้งเดิม เช่น 옷 (เสื้อผ้า) 신발 (รองเท้า) 가방 (กระเป๋า) เวลาช้อปปิ้ง คุณมักจะชี้ไปที่สิ่งของแล้วพูดว่า 이거 (อันนี้) — วิธีง่ายๆ ที่ได้ผลดี ภาษาเกาหลีมีคำชี้สามคำ: 이거 (อันนี้ ใกล้ตัวคุณ) 그거 (อันนั้น ใกล้คู่สนทนา) และ 저거 (อันโน้น ไกลจากทั้งสองฝ่าย) ขนาดสินค้ามักระบุเป็นไซส์ฟรี (프리 사이즈) เล็ก (S) กลาง (M) และใหญ่ (L/XL)"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.6.tip.text",
+      "kind": "unit",
+      "en": "이거 주세요 (I'll take this one, please) + 얼마예요? (How much?) will get you through most Korean shopping scenarios even if you know little else. Point, say these two phrases, and you're set.",
+      "shipped": "이거 주세요 (ขอสิ่งนี้ด้วย) + 얼마예요? (ราคาเท่าไหร่?) จะพาคุณผ่านสถานการณ์การช้อปปิ้งส่วนใหญ่ได้ แม้คุณจะรู้ภาษาเกาหลีไม่มากนัก แค่ชี้แล้วพูดสองประโยคนี้ก็เพียงพอแล้ว"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.9.body",
+      "kind": "unit",
+      "en": "A few essential phrases cover almost every shopping interaction. 얼마예요? (How much is it?) works for any price enquiry. 이거 주세요 (Please give me this) completes a purchase. 더 싸게 해 주세요 (Please make it cheaper) is used for bargaining at traditional markets. 있어요? (Do you have...?) + the item name asks if something is in stock. 없어요 means it's out of stock or unavailable.",
+      "shipped": "สำนวนสำคัญไม่กี่ประโยคครอบคลุมสถานการณ์การช้อปปิ้งเกือบทุกอย่าง 얼마예요? (ราคาเท่าไหร่?) ใช้ถามราคาได้ทุกกรณี 이거 주세요 (ขอสิ่งนี้ด้วย) ใช้ปิดการซื้อ 더 싸게 해 주세요 (ช่วยลดราคาให้หน่อย) ใช้ต่อรองราคาในตลาดดั้งเดิม 있어요? (มี...ไหม?) บวกชื่อสินค้า ใช้ถามว่ามีสินค้านั้นหรือไม่ ส่วน 없어요 หมายถึงสินค้าหมดหรือไม่มี"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.9.tip.text",
+      "kind": "unit",
+      "en": "In Korean shops, staff will often greet you with 어서 오세요! (Welcome!). Respond with a nod or 안녕하세요. When you've finished shopping, 감사합니다 (thank you) is always appreciated. Shouting across the store is rare — get close before speaking.",
+      "shipped": "ในร้านค้าเกาหลี พนักงานมักทักทายด้วย 어서 오세요! (ยินดีต้อนรับ!) ตอบรับด้วยการพยักหน้าหรือพูดว่า 안녕하세요 เมื่อช้อปปิ้งเสร็จแล้ว การพูด 감사합니다 (ขอบคุณ) จะได้รับการชื่นชมเสมอ การตะโกนข้ามร้านเป็นเรื่องที่พบได้น้อย — ควรเข้าไปใกล้ก่อนพูด"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.14.body",
+      "kind": "unit",
+      "en": "있어요? (Is there? / Do you have?) and 없어요 (There isn't / We don't have it) are two of the most useful words in Korean shopping. Attach an item before 있어요?: 이거 있어요? (Do you have this?), 더 큰 사이즈 있어요? (Do you have a bigger size?). 없어요 is the reply if it's sold out. You can also say 다 팔렸어요 (All sold out) in more detail.",
+      "shipped": "있어요? (มีไหม? / คุณมีไหม?) และ 없어요 (ไม่มี / หมดแล้ว) เป็นสองคำที่มีประโยชน์ที่สุดในการช้อปปิ้งภาษาเกาหลี ให้ใส่ชื่อสินค้าไว้หน้า 있어요? เช่น 이거 있어요? (มีอันนี้ไหม?) 더 큰 사이즈 있어요? (มีไซส์ใหญ่กว่านี้ไหม?) หากสินค้าหมด คำตอบคือ 없어요 หรือจะพูดให้ชัดเจนขึ้นว่า 다 팔렸어요 (ขายหมดแล้ว) ก็ได้"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.14.tip.text",
+      "kind": "unit",
+      "en": "있다 = to exist / to have. 없다 = to not exist / to not have. 있어요? alone at the end of a sentence = Do you have...? 없어요. = We don't. These two words appear in almost every Korean sentence that discusses possessing, location, or availability.",
+      "shipped": "있다 = มีอยู่ / มี 없다 = ไม่มี / ไม่มีอยู่ 있어요? เพียงคำเดียวท้ายประโยคก็แปลว่า มี...ไหม? ส่วน 없어요 เพียงคำเดียวก็แปลว่า ไม่มี คำสองคำนี้ปรากฏอยู่ในเกือบทุกประโยคภาษาเกาหลีที่พูดถึงการมี การอยู่ หรือความพร้อมของสิ่งของ"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.18.body",
+      "kind": "unit",
+      "en": "The Korean currency is the 원 (won, ₩). Prices can look large because 1,000 won ≈ 0.75 USD. A coffee might be 4,500원, a meal 8,000~12,000원. 비싸다 (expensive) and 싸다 (cheap) are the key opinion words. When you receive change, the amount back is 거스름돈. Prices at traditional markets are often negotiable — 깎아 주세요 (Please give me a discount) or 더 싸게요? (Can it be cheaper?) opens bargaining.",
+      "shipped": "สกุลเงินเกาหลีคือ 원 (วอน ₩) ราคาอาจดูสูงเพราะ 1,000 วอน ≈ 0.75 ดอลลาร์สหรัฐ กาแฟอาจราคา 4,500원 ส่วนอาหารมื้อหนึ่งราคา 8,000~12,000원 คำว่า 비싸다 (แพง) และ 싸다 (ถูก) เป็นคำแสดงความคิดเห็นหลักเกี่ยวกับราคา เมื่อได้รับเงินทอน เงินจำนวนนั้นเรียกว่า 거스름돈 ราคาสินค้าในตลาดดั้งเดิมมักต่อรองได้ — พูดว่า 깎아 주세요 (ช่วยลดราคาให้หน่อย) หรือ 더 싸게요? (ลดได้อีกไหม?) เพื่อเริ่มต่อรองราคา"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.18.tip.text",
+      "kind": "unit",
+      "en": "Korean uses Sino-Korean numbers for prices: 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10,000. So 삼만 오천 원 = 35,000 won. Cashiers often show you the amount on a calculator or screen to avoid confusion — pointing at numbers works perfectly well.",
+      "shipped": "ภาษาเกาหลีใช้ตัวเลขจีน-เกาหลีสำหรับราคา: 일(1) 이(2) 삼(3) 사(4) 오(5) 만 = 10,000 ดังนั้น 삼만 오천 원 = 35,000 วอน พนักงานเก็บเงินมักจะให้ดูจำนวนเงินบนเครื่องคิดเลขหรือหน้าจอเพื่อไม่ให้สับสน — การชี้ที่ตัวเลขก็ใช้ได้ผลดีเช่นกัน"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.26.body",
+      "kind": "unit",
+      "en": "Korea is a highly cashless society — most places accept credit cards (신용카드) or debit cards (체크카드), and mobile payment via apps like KakaoPay and Samsung Pay is extremely common. Cash (현금) is still accepted everywhere but is used less often. When paying, you may be asked 카드요, 현금이요? (Card or cash?). Requesting a receipt is 영수증 주세요. Tax refund signs (Tax Refund) at stores mean you can claim VAT back at the airport as a tourist.",
+      "shipped": "เกาหลีเป็นสังคมไร้เงินสดอย่างมาก — ส่วนใหญ่รับบัตรเครดิต (신용카드) หรือบัตรเดบิต (체크카드) และการชำระผ่านมือถือ เช่น KakaoPay และ Samsung Pay ก็เป็นที่นิยมมาก เงินสด (현금) ยังใช้ได้ทุกที่แต่ใช้กันน้อยลง เวลาจ่ายเงิน คุณอาจถูกถามว่า 카드요, 현금이요? (บัตรหรือเงินสด?) หากต้องการใบเสร็จให้พูดว่า 영수증 주세요 ป้าย Tax Refund ตามร้านค้าหมายความว่านักท่องเที่ยวสามารถขอคืนภาษีมูลค่าเพิ่มได้ที่สนามบิน"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping::steps.26.tip.text",
+      "kind": "unit",
+      "en": "KakaoPay (카카오페이) and Samsung Pay (삼성페이) are the dominant mobile payment apps in Korea. Tourists can use international credit cards almost everywhere. Look for the contactless payment symbol — Korea's adoption of contactless payment is among the highest in the world.",
+      "shipped": "KakaoPay (카카오페이) และ Samsung Pay (삼성페이) เป็นแอปชำระเงินผ่านมือถือที่ได้รับความนิยมสูงสุดในเกาหลี นักท่องเที่ยวสามารถใช้บัตรเครดิตต่างประเทศได้เกือบทุกที่ ให้สังเกตสัญลักษณ์การชำระเงินแบบไร้สัมผัส — เกาหลีเป็นหนึ่งในประเทศที่ใช้ระบบชำระเงินไร้สัมผัสมากที่สุดในโลก"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-academic::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Education culture",
+      "shipped": "วัฒนธรรมการศึกษา"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-academic::steps.0.tip.text",
+      "kind": "unit",
+      "en": "수능 (Suneung) is Korea's college entrance exam, held every November — the entire country adapts its schedule around it. Airlines delay flights so exam halls aren't disturbed. It's the most culturally significant academic event in Korea.",
+      "shipped": "수능 (ซูนึง) คือการสอบเข้ามหาวิทยาลัยของเกาหลี จัดขึ้นทุกเดือนพฤศจิกายน ทั้งประเทศต้องปรับตารางเวลาให้สอดคล้องกับการสอบนี้ สายการบินยังเลื่อนเวลาบินเพื่อไม่ให้รบกวนห้องสอบ นับเป็นเหตุการณ์ทางวิชาการที่มีความสำคัญทางวัฒนธรรมมากที่สุดของเกาหลี"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-adjectives::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Adjective pattern",
+      "shipped": "รูปแบบคำคุณศัพท์"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-adjectives::steps.0.tip.text",
+      "kind": "unit",
+      "en": "Dictionary form: 크다 (big). Statement: 커요 (it's big). Noun-modifier: 큰 집 (big house). This pattern applies to almost all Korean adjectives — master the pattern, and every adjective you learn doubles its use.",
+      "shipped": "รูปพจนานุกรม: 크다 (ใหญ่) รูปประโยคบอกเล่า: 커요 (ใหญ่) รูปขยายคำนาม: 큰 집 (บ้านหลังใหญ่) รูปแบบนี้ใช้ได้กับคำคุณศัพท์ภาษาเกาหลีเกือบทั้งหมด เมื่อเข้าใจรูปแบบนี้แล้ว คำคุณศัพท์ทุกคำที่เรียนจะใช้ประโยชน์ได้เพิ่มขึ้นเป็นสองเท่า"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-body-parts::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Useful at the clinic",
+      "shipped": "มีประโยชน์ที่คลินิก"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-body-parts::steps.0.tip.text",
+      "kind": "unit",
+      "en": "If you feel pain, say: [body part] 아파요 (it hurts). E.g., 머리 아파요 = My head hurts. 배 아파요 = My stomach hurts.",
+      "shipped": "หากรู้สึกเจ็บปวด ให้พูดว่า [ส่วนของร่างกาย] 아파요 (เจ็บ/ปวด) เช่น 머리 아파요 = ปวดหัว และ 배 아파요 = ปวดท้อง"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-colors::steps.0.tip.label",
+      "kind": "unit",
+      "en": "-색 vs. adjective form",
+      "shipped": "-색 กับรูปคำคุณศัพท์"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-colors::steps.0.tip.text",
+      "kind": "unit",
+      "en": "빨간색 (the color red) vs. 빨개요 (it is red). For naming a color outright, use the -색 form. For describing something, use the adjective form: 이 셔츠는 빨개요 (This shirt is red).",
+      "shipped": "빨간색 (สีแดง) กับ 빨개요 (เป็นสีแดง) หากต้องการเรียกชื่อสีตรงๆ ให้ใช้รูป -색 หากต้องการบรรยายลักษณะของสิ่งของ ให้ใช้รูปคำคุณศัพท์ เช่น 이 셔츠는 빨개요 (เสื้อตัวนี้สีแดง)"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-days-time::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Memory trick for days",
+      "shipped": "เคล็ดลับช่วยจำชื่อวัน"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-days-time::steps.0.tip.text",
+      "kind": "unit",
+      "en": "월 = Moon (月), 화 = Fire (火), 수 = Water (水), 목 = Wood (木), 금 = Gold (金), 토 = Earth (土), 일 = Sun (日) — the same as Japanese days!",
+      "shipped": "월 = ดวงจันทร์ (月), 화 = ไฟ (火), 수 = น้ำ (水), 목 = ไม้ (木), 금 = ทอง (金), 토 = ดิน (土), 일 = ดวงอาทิตย์ (日) — เหมือนกับชื่อวันในภาษาญี่ปุ่นเลย!"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-emotions::steps.0.tip.label",
+      "kind": "unit",
+      "en": "왜 그래요? (What's wrong?)",
+      "shipped": "왜 그래요? (เป็นอะไรไป)"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-emotions::steps.0.tip.text",
+      "kind": "unit",
+      "en": "If someone asks 왜 그래요? (Why/What's wrong?), you can answer with any emotion word + 아요/어요. E.g., 슬퍼요 (I'm sad), 피곤해요 (I'm tired).",
+      "shipped": "ถ้ามีคนถามว่า 왜 그래요? (เป็นอะไรไป/ทำไมเป็นแบบนี้) สามารถตอบด้วยคำแสดงอารมณ์ใดก็ได้ + 아요/어요 เช่น 슬퍼요 (เศร้า) หรือ 피곤해요 (เหนื่อย)"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-family::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Gender matters here",
+      "shipped": "เพศของผู้พูดมีผลตรงนี้"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-family::steps.0.tip.text",
+      "kind": "unit",
+      "en": "Male speakers use 형 (older brother) and 누나 (older sister). Female speakers use 오빠 (older brother) and 언니 (older sister). This is one of Korean's most distinctive features.",
+      "shipped": "ผู้พูดชายใช้ 형 (พี่ชาย) และ 누나 (พี่สาว) ส่วนผู้พูดหญิงใช้ 오빠 (พี่ชาย) และ 언니 (พี่สาว) นี่คือหนึ่งในลักษณะเด่นที่สุดของภาษาเกาหลี"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-food-drink::steps.0.tip.text",
+      "kind": "unit",
+      "en": "The most important food phrase: 맛있어요 = It's delicious! Use it freely and often — Korean hosts love hearing it.",
+      "shipped": "วลีเรื่องอาหารที่สำคัญที่สุด: 맛있어요 = อร่อย! ใช้พูดได้บ่อยๆ อย่างเป็นธรรมชาติ เจ้าภาพชาวเกาหลีชอบฟังคำนี้มาก"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-greetings::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Key rule: when in doubt, be formal",
+      "shipped": "กฎสำคัญ: ไม่แน่ใจให้พูดแบบสุภาพไว้ก่อน"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-greetings::steps.0.tip.text",
+      "kind": "unit",
+      "en": "Koreans appreciate effort. Using the formal 하세요 ending is always safe with people you just met. Switching to casual 안녕 with a close friend shows warmth.",
+      "shipped": "คนเกาหลีให้ความสำคัญกับความพยายาม การใช้รูปสุภาพลงท้ายด้วย 하세요 ปลอดภัยเสมอเมื่อพูดกับคนที่เพิ่งรู้จัก ส่วนการเปลี่ยนมาใช้คำลำลอง 안녕 กับเพื่อนสนิทแสดงถึงความเป็นกันเอง"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-health::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Medical phrases",
+      "shipped": "วลีทางการแพทย์"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-health::steps.0.tip.text",
+      "kind": "unit",
+      "en": "아파요 = I'm sick/It hurts | 여기가 아파요 = It hurts here | 의사 선생님 = doctor | 처방전 = prescription | 보험 = insurance. Korean pharmacies (약국) are incredibly well-stocked and pharmacists are knowledgeable.",
+      "shipped": "아파요 = ป่วย/เจ็บ | 여기가 아파요 = เจ็บตรงนี้ | 의사 선생님 = คุณหมอ | 처방전 = ใบสั่งยา | 보험 = ประกัน ร้านขายยาในเกาหลี (약국) มีสินค้าครบครันมาก และเภสัชกรก็มีความรู้ความชำนาญสูง"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-konglish::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Sound rules",
+      "shipped": "กฎการออกเสียง"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-konglish::steps.0.tip.text",
+      "kind": "unit",
+      "en": "English consonant clusters are broken up with vowels: 'stress' → 스트레스 (seuteureseu). Final consonants get a vowel added: 'cake' → 케이크 (keikeu). 'r' and 'l' both become ㄹ: 'rice' → 라이스, 'lemon' → 레몬.",
+      "shipped": "กลุ่มพยัญชนะในภาษาอังกฤษจะถูกแทรกด้วยสระเพื่อแยกเสียง เช่น \"stress\" → 스트레스 (seuteureseu) พยัญชนะท้ายคำจะมีการเติมสระต่อท้าย เช่น \"cake\" → 케이크 (keikeu) ส่วนเสียง \"r\" และ \"l\" ทั้งสองแบบจะกลายเป็น ㄹ เช่น \"rice\" → 라이스 และ \"lemon\" → 레몬"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-media::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Talking about K-content",
+      "shipped": "พูดคุยเรื่องคอนเทนต์เกาหลี"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-media::steps.0.tip.text",
+      "kind": "unit",
+      "en": "드라마 봤어요? = Did you watch the drama? 요즘 뭐 봐요? = What are you watching these days? 재미있어요 = It's interesting. 감동받았어요 = I was moved. 다음 편이 기대돼요 = I'm looking forward to the next episode.",
+      "shipped": "드라마 봤어요? = ดูละครหรือยัง 요즘 뭐 봐요? = ช่วงนี้ดูอะไรอยู่ 재미있어요 = สนุกดี 감동받았어요 = ประทับใจมาก 다음 편이 기대돼요 = รอดูตอนต่อไปอยู่เลย"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-news::steps.0.tip.label",
+      "kind": "unit",
+      "en": "News vocabulary strategy",
+      "shipped": "กลยุทธ์การเรียนคำศัพท์ข่าว"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-news::steps.0.tip.text",
+      "kind": "unit",
+      "en": "Start with YouTube news channels — visuals help with comprehension. 뉴스 (news) programs often have Korean subtitles available. Common news openers: 오늘 뉴스입니다 (Here is today's news) and 보도에 따르면 (According to reports).",
+      "shipped": "เริ่มจากช่องข่าวใน YouTube เพราะภาพช่วยให้เข้าใจง่ายขึ้น รายการ 뉴스 (ข่าว) มักมีคำบรรยายภาษาเกาหลีให้ด้วย ประโยคเปิดข่าวที่พบบ่อยคือ 오늘 뉴스입니다 (นี่คือข่าวประจำวันนี้) และ 보도에 따르면 (ตามรายงานข่าว)"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-numbers::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Quick memory trick",
+      "shipped": "เคล็ดลับช่วยจำอย่างรวดเร็ว"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-numbers::steps.0.tip.text",
+      "kind": "unit",
+      "en": "Think: Native = natural body rhythms (heartbeat, age, counting on your fingers). Sino = systematic/official contexts (clocks, money, calendars).",
+      "shipped": "ให้จำแบบนี้: เลขเกาหลีแท้ใช้กับจังหวะตามธรรมชาติของร่างกาย เช่น การนับจังหวะหัวใจ อายุ หรือนับนิ้วมือ ส่วนเลขจีน-เกาหลีใช้ในบริบทที่เป็นระบบหรือทางการ เช่น การบอกเวลา เงิน และปฏิทิน"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-places::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Asking where something is",
+      "shipped": "การถามหาสถานที่"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-places::steps.0.tip.text",
+      "kind": "unit",
+      "en": "[Place] 어디예요? = Where is the [place]? E.g., 화장실 어디예요? = Where is the restroom? Simple pattern, huge daily utility.",
+      "shipped": "[สถานที่] 어디예요? = [สถานที่]อยู่ที่ไหน เช่น 화장실 어디예요? = ห้องน้ำอยู่ที่ไหน รูปแบบง่ายๆ แต่ใช้ได้จริงในชีวิตประจำวันบ่อยมาก"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-proverbs::steps.0.tip.label",
+      "kind": "unit",
+      "en": "How Koreans use proverbs",
+      "shipped": "วิธีที่คนเกาหลีใช้สุภาษิต"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-proverbs::steps.0.tip.text",
+      "kind": "unit",
+      "en": "Koreans drop proverbs into conversation to make a point concisely. When someone works incredibly hard, you might hear: 낮말은 새가 듣고 밤말은 쥐가 들어 (Birds hear your day words; mice hear your night words — be careful what you say). Mastering even 5 proverbs will impress any Korean speaker.",
+      "shipped": "คนเกาหลีมักสอดแทรกสุภาษิตเข้าไปในบทสนทนาเพื่อสื่อความหมายให้กระชับและชัดเจน เช่น เมื่อพูดถึงคนที่ทำงานหนักมากๆ อาจได้ยินว่า 낮말은 새가 듣고 밤말은 쥐가 들어 (คำพูดตอนกลางวันนกได้ยิน คำพูดตอนกลางคืนหนูได้ยิน — จงระวังคำพูดของตัวเองไว้เสมอ) แค่จำสุภาษิตให้ได้สัก 5 บทก็สร้างความประทับใจให้เจ้าของภาษาได้แล้ว"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-shopping::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Key shopping phrases",
+      "shipped": "วลีสำคัญเวลาช้อปปิ้ง"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-shopping::steps.0.tip.text",
+      "kind": "unit",
+      "en": "얼마예요? (How much is it?) — the single most useful shopping question. 깎아 주세요 (Please give me a discount) — works at traditional markets!",
+      "shipped": "얼마예요? (ราคาเท่าไหร่) คือคำถามที่มีประโยชน์ที่สุดเวลาซื้อของ ส่วน 깎아 주세요 (ลดราคาให้หน่อย) ใช้ได้ผลดีที่ตลาดแบบดั้งเดิม!"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-travel::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Top travel phrase",
+      "shipped": "วลีท่องเที่ยวที่ใช้บ่อยที่สุด"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-travel::steps.0.tip.text",
+      "kind": "unit",
+      "en": "어디예요? (Where is it?) + any place name is your most-used travel phrase. Add 가주세요 (please take me there) in a taxi for instant navigation.",
+      "shipped": "어디예요? (อยู่ที่ไหน) บวกกับชื่อสถานที่ใดก็ได้ คือวลีที่ใช้บ่อยที่สุดเวลาเดินทาง เมื่อนั่งแท็กซี่ให้เติมคำว่า 가주세요 (พาไปที่นั่นด้วย) เพื่อบอกทางได้ทันที"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-verbs::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Verb conjugation rule",
+      "shipped": "กฎการผันกริยา"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-verbs::steps.0.tip.text",
+      "kind": "unit",
+      "en": "Last syllable has ㅏ or ㅗ vowel → use -아요 (e.g., 가다 → 가요). All other vowels → use -어요 (e.g., 먹다 → 먹어요). Verbs ending in 하다 → 해요 (e.g., 공부하다 → 공부해요).",
+      "shipped": "หากพยางค์สุดท้ายมีสระ ㅏ หรือ ㅗ ให้ใช้ -아요 (เช่น 가다 → 가요) สระอื่นๆ ทั้งหมดให้ใช้ -어요 (เช่น 먹다 → 먹어요) ส่วนกริยาที่ลงท้ายด้วย 하다 ให้ผันเป็น 해요 (เช่น 공부하다 → 공부해요)"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-weather::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Useful adjective pattern",
+      "shipped": "รูปแบบคำคุณศัพท์ที่มีประโยชน์"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-weather::steps.0.tip.text",
+      "kind": "unit",
+      "en": "Most weather words use -아요/-어요 to describe how the weather IS right now. E.g., 추워요 (it's cold), 더워요 (it's hot). Drop the -다 form when speaking.",
+      "shipped": "คำศัพท์เกี่ยวกับสภาพอากาศส่วนใหญ่ใช้ -아요/-어요 เพื่อบรรยายสภาพอากาศในขณะนี้ เช่น 추워요 (หนาว) และ 더워요 (ร้อน) เวลาพูดให้ตัดรูป -다 ออก"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-workplace::steps.0.tip.label",
+      "kind": "unit",
+      "en": "Workplace hierarchy",
+      "shipped": "ลำดับชั้นในที่ทำงาน"
+    },
+    {
+      "lang": "th",
+      "ref": "vocabulary-workplace::steps.0.tip.text",
+      "kind": "unit",
+      "en": "사장님 (CEO) → 부장님 (department head) → 과장님 (section chief) → 대리님 (assistant manager) → 사원 (staff). Using -님 (nim) after a title shows respect and is essential. Never call a senior by name alone.",
+      "shipped": "사장님 (ประธานบริษัท) → 부장님 (หัวหน้าฝ่าย) → 과장님 (หัวหน้าแผนก) → 대리님 (ผู้ช่วยผู้จัดการ) → 사원 (พนักงาน) การเติม -님 (นิม) ต่อท้ายตำแหน่งเป็นการแสดงความเคารพและถือเป็นสิ่งจำเป็นอย่างยิ่ง ห้ามเรียกชื่อผู้อาวุโสกว่าเฉยๆ โดยไม่มีคำนำหน้าเด็ดขาด"
+    },
+    {
+      "lang": "th",
+      "ref": "emotions:32:title_th",
+      "kind": "complete-title",
+      "en": "Emotions Complete!",
+      "shipped": "เรียนจบเรื่องอารมณ์แล้ว!"
+    },
+    {
+      "lang": "th",
+      "ref": "grammar:73:title_th",
+      "kind": "complete-title",
+      "en": "Grammar Complete!",
+      "shipped": "เรียนจบไวยากรณ์แล้ว!"
+    },
+    {
+      "lang": "th",
+      "ref": "hangul:83:title_th",
+      "kind": "complete-title",
+      "en": "You can read Korean!",
+      "shipped": "ตอนนี้คุณอ่านภาษาเกาหลีได้แล้ว!"
+    },
+    {
+      "lang": "th",
+      "ref": "nouns:33:title_th",
+      "kind": "complete-title",
+      "en": "Nouns Complete!",
+      "shipped": "เรียนจบคำนามแล้ว!"
+    },
+    {
+      "lang": "th",
+      "ref": "pronouns:31:title_th",
+      "kind": "complete-title",
+      "en": "Pronouns Complete!",
+      "shipped": "เรียนจบคำสรรพนามแล้ว!"
+    },
+    {
+      "lang": "th",
+      "ref": "pronunciation:67:title_th",
+      "kind": "complete-title",
+      "en": "Pronunciation Guide Complete!",
+      "shipped": "เรียนจบกฎการออกเสียงแล้ว!"
+    },
+    {
+      "lang": "th",
+      "ref": "shopping:32:title_th",
+      "kind": "complete-title",
+      "en": "Shopping Complete!",
+      "shipped": "เรียนจบเรื่องการช้อปปิ้งแล้ว!"
+    },
+    {
+      "lang": "th",
+      "ref": "speech-levels:32:title_th",
+      "kind": "complete-title",
+      "en": "Speech Levels Complete!",
+      "shipped": "เรียนจบระดับความสุภาพแล้ว!"
+    },
+    {
+      "lang": "th",
+      "ref": "syllable-blocks:60:title_th",
+      "kind": "complete-title",
+      "en": "You can read Korean syllable blocks!",
+      "shipped": "ตอนนี้คุณอ่านตัวสะกดพยางค์ภาษาเกาหลีได้แล้ว!"
+    },
+    {
+      "lang": "th",
+      "ref": "Still, Already",
+      "kind": "ui",
+      "en": "Still, Already",
+      "shipped": "ยังคง, แล้ว"
+    },
+    {
+      "lang": "th",
+      "ref": "Someone, Something",
+      "kind": "ui",
+      "en": "Someone, Something",
+      "shipped": "ใครสักคน, บางสิ่ง"
+    },
+    {
+      "lang": "th",
+      "ref": "Good/Poor At",
+      "kind": "ui",
+      "en": "Good/Poor At",
+      "shipped": "เก่ง/ไม่เก่ง"
+    },
+    {
+      "lang": "th",
+      "ref": "-도 Advanced Uses",
+      "kind": "ui",
+      "en": "-도 Advanced Uses",
+      "shipped": "การใช้ -도 ขั้นสูง"
+    },
+    {
+      "lang": "th",
+      "ref": "Korean Thing",
+      "kind": "ui",
+      "en": "Korean Thing",
+      "shipped": "เรื่องเกาหลี"
+    },
+    {
+      "lang": "th",
+      "ref": "K-Pop, K-Drama, food, beauty, fashion, gaming, sports & traditions.",
+      "kind": "ui",
+      "en": "K-Pop, K-Drama, food, beauty, fashion, gaming, sports & traditions.",
+      "shipped": "K-Pop, K-Drama, อาหาร, ความงาม, แฟชั่น, เกม, กีฬา และประเพณี"
+    },
+    {
+      "lang": "th",
+      "ref": "K-Pop History",
+      "kind": "ui",
+      "en": "K-Pop History",
+      "shipped": "ประวัติ K-Pop"
+    },
+    {
+      "lang": "th",
+      "ref": "Agencies",
+      "kind": "ui",
+      "en": "Agencies",
+      "shipped": "ค่ายเพลง"
+    },
+    {
+      "lang": "th",
+      "ref": "Generations",
+      "kind": "ui",
+      "en": "Generations",
+      "shipped": "รุ่น"
+    },
+    {
+      "lang": "th",
+      "ref": "Genres",
+      "kind": "ui",
+      "en": "Genres",
+      "shipped": "แนวเพลง"
+    },
+    {
+      "lang": "th",
+      "ref": "Variety Shows",
+      "kind": "ui",
+      "en": "Variety Shows",
+      "shipped": "วาไรตี้โชว์"
+    },
+    {
+      "lang": "th",
+      "ref": "Film & Acting",
+      "kind": "ui",
+      "en": "Film & Acting",
+      "shipped": "ภาพยนตร์และการแสดง"
+    },
+    {
+      "lang": "th",
+      "ref": "Idol Phrases",
+      "kind": "ui",
+      "en": "Idol Phrases",
+      "shipped": "วลีไอดอล"
+    },
+    {
+      "lang": "th",
+      "ref": "Fan Slang",
+      "kind": "ui",
+      "en": "Fan Slang",
+      "shipped": "สแลงแฟนคลับ"
+    },
+    {
+      "lang": "th",
+      "ref": "Fan Chants",
+      "kind": "ui",
+      "en": "Fan Chants",
+      "shipped": "เสียงเชียร์แฟนคลับ"
+    },
+    {
+      "lang": "th",
+      "ref": "Drama History",
+      "kind": "ui",
+      "en": "Drama History",
+      "shipped": "ประวัติซีรีส์"
+    },
+    {
+      "lang": "th",
+      "ref": "Drama Genres",
+      "kind": "ui",
+      "en": "Drama Genres",
+      "shipped": "แนวซีรีส์"
+    },
+    {
+      "lang": "th",
+      "ref": "Must-Watch Dramas",
+      "kind": "ui",
+      "en": "Must-Watch Dramas",
+      "shipped": "ซีรีส์ที่ต้องดู"
+    },
+    {
+      "lang": "th",
+      "ref": "K-Drama Tropes",
+      "kind": "ui",
+      "en": "K-Drama Tropes",
+      "shipped": "สูตร K-Drama"
+    },
+    {
+      "lang": "th",
+      "ref": "Dialogue Practice",
+      "kind": "ui",
+      "en": "Dialogue Practice",
+      "shipped": "ฝึกบทสนทนา"
+    },
+    {
+      "lang": "th",
+      "ref": "Fan Culture & Slang",
+      "kind": "ui",
+      "en": "Fan Culture & Slang",
+      "shipped": "วัฒนธรรมแฟนคลับและสแลง"
+    },
+    {
+      "lang": "th",
+      "ref": "Movie History",
+      "kind": "ui",
+      "en": "Movie History",
+      "shipped": "ประวัติภาพยนตร์"
+    },
+    {
+      "lang": "th",
+      "ref": "Movie Genres",
+      "kind": "ui",
+      "en": "Movie Genres",
+      "shipped": "แนวภาพยนตร์"
+    },
+    {
+      "lang": "th",
+      "ref": "Must-Watch Films",
+      "kind": "ui",
+      "en": "Must-Watch Films",
+      "shipped": "หนังที่ต้องดู"
+    },
+    {
+      "lang": "th",
+      "ref": "Directors",
+      "kind": "ui",
+      "en": "Directors",
+      "shipped": "ผู้กำกับ"
+    },
+    {
+      "lang": "th",
+      "ref": "Iconic Lines",
+      "kind": "ui",
+      "en": "Iconic Lines",
+      "shipped": "บทพูดในตำนาน"
+    },
+    {
+      "lang": "th",
+      "ref": "Fan Culture",
+      "kind": "ui",
+      "en": "Fan Culture",
+      "shipped": "วัฒนธรรมแฟนคลับ"
+    },
+    {
+      "lang": "th",
+      "ref": "K-Food Goes Global",
+      "kind": "ui",
+      "en": "K-Food Goes Global",
+      "shipped": "K-Food สู่ระดับโลก"
+    },
+    {
+      "lang": "th",
+      "ref": "Foods That Went Global",
+      "kind": "ui",
+      "en": "Foods That Went Global",
+      "shipped": "อาหารที่โด่งดังทั่วโลก"
+    },
+    {
+      "lang": "th",
+      "ref": "K-Food Timeline",
+      "kind": "ui",
+      "en": "K-Food Timeline",
+      "shipped": "ไทม์ไลน์ K-Food"
+    },
+    {
+      "lang": "th",
+      "ref": "Essential Dishes",
+      "kind": "ui",
+      "en": "Essential Dishes",
+      "shipped": "เมนูสำคัญ"
+    },
+    {
+      "lang": "th",
+      "ref": "World-Famous Chefs",
+      "kind": "ui",
+      "en": "World-Famous Chefs",
+      "shipped": "เชฟระดับโลก"
+    },
+    {
+      "lang": "th",
+      "ref": "Ordering & Dining",
+      "kind": "ui",
+      "en": "Ordering & Dining",
+      "shipped": "สั่งอาหารและรับประทาน"
+    },
+    {
+      "lang": "th",
+      "ref": "Street Food",
+      "kind": "ui",
+      "en": "Street Food",
+      "shipped": "อาหารข้างทาง"
+    },
+    {
+      "lang": "th",
+      "ref": "Food Culture & Drinking",
+      "kind": "ui",
+      "en": "Food Culture & Drinking",
+      "shipped": "วัฒนธรรมอาหารและการดื่ม"
+    },
+    {
+      "lang": "th",
+      "ref": "Chicken Guide",
+      "kind": "ui",
+      "en": "Chicken Guide",
+      "shipped": "คู่มือไก่"
+    },
+    {
+      "lang": "th",
+      "ref": "K-BBQ Guide",
+      "kind": "ui",
+      "en": "K-BBQ Guide",
+      "shipped": "คู่มือ K-BBQ"
+    },
+    {
+      "lang": "th",
+      "ref": "K-Beauty Goes Global",
+      "kind": "ui",
+      "en": "K-Beauty Goes Global",
+      "shipped": "K-Beauty สู่ระดับโลก"
+    },
+    {
+      "lang": "th",
+      "ref": "K-Beauty Timeline",
+      "kind": "ui",
+      "en": "K-Beauty Timeline",
+      "shipped": "ไทม์ไลน์ K-Beauty"
+    },
+    {
+      "lang": "th",
+      "ref": "Iconic Brands",
+      "kind": "ui",
+      "en": "Iconic Brands",
+      "shipped": "แบรนด์ในตำนาน"
+    },
+    {
+      "lang": "th",
+      "ref": "Beauty Vocabulary",
+      "kind": "ui",
+      "en": "Beauty Vocabulary",
+      "shipped": "คำศัพท์ความงาม"
+    }
+  ]
+}

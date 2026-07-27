@@ -1,0 +1,847 @@
+{
+  "lang": "ja",
+  "chunk": 1,
+  "count": 120,
+  "units": [
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.39.body",
+      "kind": "unit",
+      "en": "Add -고 있어요 to the verb stem to say someone IS CURRENTLY doing something (the Korean '-ing' form).",
+      "shipped": "動詞の語幹に-고 있어요を付けると、誰かが今まさに何かをしていることを表せます（韓国語の「～ている」形）。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.39.rules[0]",
+      "kind": "unit",
+      "en": "먹다 → 먹고 있어요 (is eating)",
+      "shipped": "먹다 → 먹고 있어요（食べている）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.39.rules[1]",
+      "kind": "unit",
+      "en": "가다 → 가고 있어요 (is going)",
+      "shipped": "가다 → 가고 있어요（行っている）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.39.rules[2]",
+      "kind": "unit",
+      "en": "공부하다 → 공부하고 있어요 (is studying)",
+      "shipped": "공부하다 → 공부하고 있어요（勉強している）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.39.rules[3]",
+      "kind": "unit",
+      "en": "읽다 → 읽고 있어요 (is reading)",
+      "shipped": "읽다 → 읽고 있어요（読んでいる）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.39.tip.label",
+      "kind": "unit",
+      "en": "Progressive vs Simple",
+      "shipped": "進行形 vs 単純形"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.39.tip.text",
+      "kind": "unit",
+      "en": "먹어요 = I eat (general or right now, context-dependent). 먹고 있어요 = I am eating (specifically in progress at this moment). The progressive adds 'currently in action.'",
+      "shipped": "먹어요 = 食べます（一般的、または今この瞬間、文脈による）。먹고 있어요 = 食べています（今まさに進行中であることを特に表す）。進行形は「現在進行中」という意味を加えます。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.42.body",
+      "kind": "unit",
+      "en": "Key vocabulary: 이름 (name), 나이 (age), 나라 (country), 직업 (job), 취미 (hobby), 고향 (hometown).",
+      "shipped": "重要語彙：이름（名前）、나이（年齢）、나라（国）、직업（仕事）、취미（趣味）、고향（故郷）。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.42.rules[0]",
+      "kind": "unit",
+      "en": "안녕하세요! 저는 [name]이에요/예요.",
+      "shipped": "안녕하세요! 저는 [名前]이에요/예요."
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.42.rules[1]",
+      "kind": "unit",
+      "en": "저는 [나라]에서 왔어요. (I'm from [country].)",
+      "shipped": "저는 [나라]에서 왔어요.（[国]出身です。）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.42.rules[2]",
+      "kind": "unit",
+      "en": "저는 [직업]이에요. (I'm a [job].)",
+      "shipped": "저는 [직업]이에요.（[仕事]です。）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.42.rules[3]",
+      "kind": "unit",
+      "en": "제 취미는 [hobby]예요. (My hobby is [hobby].)",
+      "shipped": "제 취미는 [hobby]예요.（私の趣味は[趣味]です。）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.42.rules[4]",
+      "kind": "unit",
+      "en": "잘 부탁드려요! (Nice to meet you!)",
+      "shipped": "잘 부탁드려요!（よろしくお願いします！）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.42.tip.label",
+      "kind": "unit",
+      "en": "Template",
+      "shipped": "テンプレート"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.42.tip.text",
+      "kind": "unit",
+      "en": "Use 안녕하세요 + 잘 부탁드려요 for formal settings. With friends or peers: 안녕! + 잘 부탁해! Always bow slightly when introducing yourself in person.",
+      "shipped": "フォーマルな場面では안녕하세요 + 잘 부탁드려요を使います。友達や同年代の人には：안녕! + 잘 부탁해!　対面で自己紹介するときは、必ず軽くお辞儀をしましょう。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.43.body",
+      "kind": "unit",
+      "en": "Korean dates use Sino-Korean numbers in Year → Month → Day order. June = 유월, October = 시월 (exceptions).",
+      "shipped": "韓国語の日付は年→月→日の順で漢数詞を使います。6月 = 유월、10月 = 시월（例外）。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.43.rules[0]",
+      "kind": "unit",
+      "en": "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)",
+      "shipped": "일월(1월)、이월(2월)、삼월(3월)、사월(4월)、오월(5월)、유월(6월)"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.43.rules[1]",
+      "kind": "unit",
+      "en": "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)",
+      "shipped": "칠월(7월)、팔월(8월)、구월(9월)、시월(10월)、십일월(11월)、십이월(12월)"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.43.rules[2]",
+      "kind": "unit",
+      "en": "Date format: 2026년 6월 16일 (June 16, 2026)",
+      "shipped": "日付の形式：2026년 6월 16일（2026年6月16日）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.43.rules[3]",
+      "kind": "unit",
+      "en": "오늘이 며칠이에요? — What is today's date?",
+      "shipped": "오늘이 며칠이에요? —— 今日は何日ですか？"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.body",
+      "kind": "unit",
+      "en": "Degree adverbs go directly before the word they modify: 조금 (a little), 정말 (really), 아주 (very), 많이 (a lot).",
+      "shipped": "程度を表す副詞は修飾する語の直前に置きます：조금（少し）、정말（本当に）、아주（とても）、많이（たくさん）。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.rules[0]",
+      "kind": "unit",
+      "en": "조금 / 좀 — a little (좀 is softer/casual)",
+      "shipped": "조금 / 좀 —— 少し（좀の方が柔らかく・カジュアル）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.rules[1]",
+      "kind": "unit",
+      "en": "정말 — really / truly (neutral)",
+      "shipped": "정말 —— 本当に／実に（中立的）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.rules[2]",
+      "kind": "unit",
+      "en": "진짜 — really (casual, stronger feel)",
+      "shipped": "진짜 —— 本当に（カジュアルで、より強い印象）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.rules[3]",
+      "kind": "unit",
+      "en": "아주 — very",
+      "shipped": "아주 —— とても"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.rules[4]",
+      "kind": "unit",
+      "en": "많이 — a lot / much",
+      "shipped": "많이 —— たくさん／多く"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.rules[5]",
+      "kind": "unit",
+      "en": "별로 + negative — not really (별로 안 좋아요 = I don't really like it)",
+      "shipped": "별로 + 否定 —— あまり～ない（별로 안 좋아요 = あまり好きではありません）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.rules[6]",
+      "kind": "unit",
+      "en": "전혀 + negative — not at all (전혀 모르겠어요 = I have no idea at all)",
+      "shipped": "전혀 + 否定 —— 全く～ない（전혀 모르겠어요 = 全く分かりません）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.tip.label",
+      "kind": "unit",
+      "en": "Negative Adverbs",
+      "shipped": "否定の副詞"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.44.tip.text",
+      "kind": "unit",
+      "en": "별로 and 전혀 MUST be used with a negative verb (안, 못, 없다, 모르다). Saying 별로 좋아요 (without negation) is ungrammatical. Think of them as 'not really' and 'not at all'.",
+      "shipped": "별로と전혀は必ず否定形の動詞（안、못、없다、모르다）と一緒に使う必要があります。별로 좋아요（否定なし）と言うのは文法的に誤りです。それぞれ「あまり～ない」「全く～ない」と考えましょう。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.47.title",
+      "kind": "unit",
+      "en": "Nominalizer: -는 것",
+      "shipped": "名詞化：-는 것"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.47.body",
+      "kind": "unit",
+      "en": "Adding -는 것 to a verb stem creates a noun phrase — 'the act of doing ~'. It makes verbs act like nouns.",
+      "shipped": "動詞の語幹に-는 것を付けると名詞句が作られます——「～すること」。これにより動詞が名詞のように働きます。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.47.rules[0]",
+      "kind": "unit",
+      "en": "먹는 것 — the act of eating",
+      "shipped": "먹는 것 —— 食べること"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.47.rules[1]",
+      "kind": "unit",
+      "en": "배우는 것 — the act of learning",
+      "shipped": "배우는 것 —— 学ぶこと"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.47.rules[2]",
+      "kind": "unit",
+      "en": "한국어를 배우는 것이 재미있어요 — Learning Korean is interesting",
+      "shipped": "한국어를 배우는 것이 재미있어요 —— 韓国語を学ぶことは面白いです"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.47.rules[3]",
+      "kind": "unit",
+      "en": "요리하는 것을 좋아해요 — I like cooking (the act of cooking)",
+      "shipped": "요리하는 것을 좋아해요 —— 料理することが好きです（料理する行為）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.47.tip.label",
+      "kind": "unit",
+      "en": "Tense Forms",
+      "shipped": "時制の形"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.47.tip.text",
+      "kind": "unit",
+      "en": "-는 것 (present/habitual) · -(으)ㄴ 것 (past/completed) · -(으)ㄹ 것 (future/planned). The present form is the most common in daily speech.",
+      "shipped": "-는 것（現在／習慣）・-(으)ㄴ 것（過去／完了）・-(으)ㄹ 것（未来／予定）。日常会話では現在形が最もよく使われます。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.50.body",
+      "kind": "unit",
+      "en": "Structure: [A]이/가 [B]보다 더 [adjective]. 보다 means 'than' and 더 means 'more'.",
+      "shipped": "構造：[A]이/가 [B]보다 더 [形容詞]。보다は「～より」、더は「もっと」という意味です。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.50.rules[0]",
+      "kind": "unit",
+      "en": "한국어가 영어보다 더 어려워요 — Korean is harder than English",
+      "shipped": "한국어가 영어보다 더 어려워요 —— 韓国語は英語より難しいです"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.50.rules[1]",
+      "kind": "unit",
+      "en": "오늘이 어제보다 더 더워요 — Today is hotter than yesterday",
+      "shipped": "오늘이 어제보다 더 더워요 —— 今日は昨日より暑いです"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.50.rules[2]",
+      "kind": "unit",
+      "en": "더 can be dropped in casual speech: 한국어가 영어보다 어려워요",
+      "shipped": "더はカジュアルな話し方では省略できます：한국어가 영어보다 어려워요"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.53.body",
+      "kind": "unit",
+      "en": "좋다 uses subject particle (이/가): 한국어가 좋아요. 좋아하다 uses object particle (을/를): 한국어를 좋아해요.",
+      "shipped": "좋다は主語を表す助詞（이/가）を使います：한국어가 좋아요。좋아하다は目的語を表す助詞（을/를）を使います：한국어를 좋아해요。"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.53.rules[0]",
+      "kind": "unit",
+      "en": "좋다 — to be good / feel good (state): 커피가 좋아요 (I like coffee / Coffee is good)",
+      "shipped": "좋다 —— 良い／気分が良い（状態）：커피가 좋아요（コーヒーが好きです／コーヒーは良いです）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.53.rules[1]",
+      "kind": "unit",
+      "en": "좋아하다 — to like (active preference): 커피를 좋아해요 (I like coffee)",
+      "shipped": "좋아하다 ——好む（積極的な好み）：커피를 좋아해요（コーヒーが好きです）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.53.rules[2]",
+      "kind": "unit",
+      "en": "Both translate as 'I like' but 좋다 focuses on the feeling, 좋아하다 on the preference",
+      "shipped": "どちらも「好きです」と訳されますが、좋다は感情に、좋아하다は好みに焦点があります"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.53.tip.label",
+      "kind": "unit",
+      "en": "Key Difference",
+      "shipped": "重要な違い"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.53.tip.text",
+      "kind": "unit",
+      "en": "좋아요 → subject particle (이/가) precedes it. 좋아해요 → object particle (을/를) precedes it. When in doubt, 좋아해요 sounds more natural for expressing preferences.",
+      "shipped": "좋아요の前には主格助詞（이/가）が来ます。좋아해요の前には目的格助詞（을/를）が来ます。迷ったときは、좋아해요の方が好みを表すのに自然に聞こえます"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.55.body",
+      "kind": "unit",
+      "en": "아직 + negative verb = still not. 벌써 = already (sooner than expected). 이미 = already (neutral, formal).",
+      "shipped": "아직＋否定形＝まだ〜ない。벌써＝もう（予想より早い）。이미＝すでに（中立的、フォーマル）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.55.rules[0]",
+      "kind": "unit",
+      "en": "아직 안 먹었어요 — Haven't eaten yet (still not)",
+      "shipped": "아직 안 먹었어요 ——まだ食べていません（まだ〜ない）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.55.rules[1]",
+      "kind": "unit",
+      "en": "아직 여기 있어요 — Still here (ongoing)",
+      "shipped": "아직 여기 있어요 ——まだここにいます（継続中）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.55.rules[2]",
+      "kind": "unit",
+      "en": "벌써 도착했어요? — Already arrived? (surprised)",
+      "shipped": "벌써 도착했어요? ——もう着いたの？（驚き）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.55.rules[3]",
+      "kind": "unit",
+      "en": "이미 알아요 — I already know (neutral)",
+      "shipped": "이미 알아요 ——すでに知っています（中立的）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.57.rules[0]",
+      "kind": "unit",
+      "en": "누군가 — someone: 누군가 왔어요 (Someone came)",
+      "shipped": "누군가 ——誰か：누군가 왔어요（誰か来ました）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.57.rules[1]",
+      "kind": "unit",
+      "en": "무언가 / 뭔가 — something: 뭔가 이상해요 (Something is strange)",
+      "shipped": "무언가／뭔가 ——何か：뭔가 이상해요（何かおかしいです）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.57.rules[2]",
+      "kind": "unit",
+      "en": "어딘가 — somewhere: 어딘가에 있어요 (It's somewhere)",
+      "shipped": "어딘가 ——どこか：어딘가에 있어요（どこかにあります）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.57.rules[3]",
+      "kind": "unit",
+      "en": "아무도 + negative — no one: 아무도 없어요 (No one is here)",
+      "shipped": "아무도＋否定形 ——誰も〜ない：아무도 없어요（誰もいません）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.57.rules[4]",
+      "kind": "unit",
+      "en": "아무것도 + negative — nothing: 아무것도 몰라요 (I know nothing)",
+      "shipped": "아무것도＋否定形 ——何も〜ない：아무것도 몰라요（何も知りません）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.59.title",
+      "kind": "unit",
+      "en": "Imperative: -(으)세요",
+      "shipped": "命令形：-(으)세요"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.59.body",
+      "kind": "unit",
+      "en": "Add -(으)세요 to a verb stem to make a polite request or command.",
+      "shipped": "動詞の語幹に-(으)세요を付けると、丁寧な依頼や命令になります"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.59.rules[0]",
+      "kind": "unit",
+      "en": "가다 → 가세요 (please go)",
+      "shipped": "가다 → 가세요（行ってください）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.59.rules[1]",
+      "kind": "unit",
+      "en": "앉다 → 앉으세요 (please sit)",
+      "shipped": "앉다 → 앉으세요（座ってください）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.59.rules[2]",
+      "kind": "unit",
+      "en": "먹다 → 드세요 (please eat — honorific)",
+      "shipped": "먹다 → 드세요（召し上がってください——尊敬語）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.61.title",
+      "kind": "unit",
+      "en": "Don't: -지 마세요",
+      "shipped": "禁止形：-지 마세요"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.61.body",
+      "kind": "unit",
+      "en": "Add -지 마세요 to a verb stem to politely tell someone NOT to do something.",
+      "shipped": "動詞の語幹に-지 마세요を付けると、丁寧に「〜しないでください」と伝えられます"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.61.rules[0]",
+      "kind": "unit",
+      "en": "말하다 → 말하지 마세요 (please don't speak)",
+      "shipped": "말하다 → 말하지 마세요（話さないでください）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.61.rules[1]",
+      "kind": "unit",
+      "en": "가다 → 가지 마세요 (please don't go)",
+      "shipped": "가다 → 가지 마세요（行かないでください）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.61.rules[2]",
+      "kind": "unit",
+      "en": "먹다 → 먹지 마세요 (please don't eat)",
+      "shipped": "먹다 → 먹지 마세요（食べないでください）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.64.title",
+      "kind": "unit",
+      "en": "Method: -(으)로",
+      "shipped": "方法：-(으)로"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.64.body",
+      "kind": "unit",
+      "en": "-(으)로 marks method or means — 'by' or 'with' a tool/way of doing something.",
+      "shipped": "-(으)로は方法や手段を表します——道具ややり方の「〜で」にあたります"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.64.rules[0]",
+      "kind": "unit",
+      "en": "-으로 after a consonant, -로 after a vowel or ㄹ: 버스로 가요 (go by bus)",
+      "shipped": "子音の後は-으로、母音またはㄹの後は-로：버스로 가요（バスで行きます）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.64.rules[1]",
+      "kind": "unit",
+      "en": "지하철로 와요 (come by subway)",
+      "shipped": "지하철로 와요（地下鉄で来ます）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.64.rules[2]",
+      "kind": "unit",
+      "en": "한국어로 말해요 (speak in Korean)",
+      "shipped": "한국어로 말해요（韓国語で話します）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.66.body",
+      "kind": "unit",
+      "en": "잘하다 = good at. 못하다 = poor at. Both attach after the object particle 을/를.",
+      "shipped": "잘하다＝得意。못하다＝苦手。どちらも目的格助詞을/를の後に付きます"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.66.rules[0]",
+      "kind": "unit",
+      "en": "한국어를 잘해요 (good at Korean)",
+      "shipped": "한국어를 잘해요（韓国語が得意です）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.66.rules[1]",
+      "kind": "unit",
+      "en": "수학을 못해요 (bad at math)",
+      "shipped": "수학을 못해요（数学が苦手です）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.66.rules[2]",
+      "kind": "unit",
+      "en": "수영을 잘 못해요 (not very good at swimming)",
+      "shipped": "수영을 잘 못해요（水泳があまり得意ではありません）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.68.title",
+      "kind": "unit",
+      "en": "All, More: 다, 더",
+      "shipped": "全部・もっと：다、더"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.68.body",
+      "kind": "unit",
+      "en": "다 = all/everything. 더 = more. Both are simple adverbs placed before the verb.",
+      "shipped": "다＝全部／すべて。더＝もっと。どちらも動詞の前に置くシンプルな副詞です"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.68.rules[0]",
+      "kind": "unit",
+      "en": "다 먹었어요 — ate everything / all of it",
+      "shipped": "다 먹었어요 ——全部食べました"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.68.rules[1]",
+      "kind": "unit",
+      "en": "더 주세요 — please give (me) more",
+      "shipped": "더 주세요 ——もっとください"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.68.rules[2]",
+      "kind": "unit",
+      "en": "다 and 더 are used very differently depending on context",
+      "shipped": "다と더は文脈によって使い方が大きく異なります"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.70.title",
+      "kind": "unit",
+      "en": "All, More & -도",
+      "shipped": "全部・もっと & -도"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.70.body",
+      "kind": "unit",
+      "en": "-도 has 4 advanced uses beyond simple 'also': emphasis, emphatic negation, and 'both...and'.",
+      "shipped": "-도には単純な「も」以外に4つの応用的な使い方があります：強調、強い否定、「〜も〜も」など"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.70.rules[0]",
+      "kind": "unit",
+      "en": "아이도 알아요 — even children know (emphasis: unexpected inclusion)",
+      "shipped": "아이도 알아요 ——子供でも知っています（強調：意外な包含）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.70.rules[1]",
+      "kind": "unit",
+      "en": "하나도 없어요 — not even one (emphatic negation: 하나도 + negative)",
+      "shipped": "하나도 없어요 ——一つもありません（強い否定：하나도＋否定形）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.70.rules[2]",
+      "kind": "unit",
+      "en": "먹기도 해요 — sometimes eats / also eats (-기도 하다)",
+      "shipped": "먹기도 해요 ——食べたりもします（-기도 하다）"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.70.rules[3]",
+      "kind": "unit",
+      "en": "좋기도 하고 나쁘기도 해요 — both good and bad",
+      "shipped": "좋기도 하고 나쁘기도 해요 ——良いところも悪いところもあります"
+    },
+    {
+      "lang": "ja",
+      "ref": "grammar::steps.73.message",
+      "kind": "unit",
+      "en": "You've mastered all 26 grammar stages — from SOV word order and particles to advanced -도 patterns. Start applying these in real conversations!",
+      "shipped": "文法の全26ステージをマスターしました——SOV語順や助詞から、応用的な-도のパターンまで。さあ、実際の会話で使ってみましょう！"
+    },
+    {
+      "lang": "ja",
+      "ref": "hangul::stages.0.name",
+      "kind": "unit",
+      "en": "Consonants",
+      "shipped": "子音"
+    },
+    {
+      "lang": "ja",
+      "ref": "hangul::stages.1.name",
+      "kind": "unit",
+      "en": "Vowels",
+      "shipped": "母音"
+    },
+    {
+      "lang": "ja",
+      "ref": "hangul::stages.2.name",
+      "kind": "unit",
+      "en": "Syllables",
+      "shipped": "音節"
+    },
+    {
+      "lang": "ja",
+      "ref": "hangul::stages.3.name",
+      "kind": "unit",
+      "en": "Special",
+      "shipped": "特殊"
+    },
+    {
+      "lang": "ja",
+      "ref": "hangul::stages.4.name",
+      "kind": "unit",
+      "en": "Compound Vowels",
+      "shipped": "複合母音"
+    },
+    {
+      "lang": "ja",
+      "ref": "hangul::stages.5.name",
+      "kind": "unit",
+      "en": "Read Words",
+      "shipped": "単語を読む"
+    },
+    {
+      "lang": "ja",
+      "ref": "hangul::steps.83.message",
+      "kind": "unit",
+      "en": "Incredible work — you've completed all 6 stages of Hangul. You can now read and write every character in the Korean alphabet. 화이팅!",
+      "shipped": "素晴らしいです——ハングルの全6ステージを完了しました。これで韓国語のすべての文字を読み書きできます。화이팅!"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::stages.0.name",
+      "kind": "unit",
+      "en": "People & Family",
+      "shipped": "人・家族"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::stages.1.name",
+      "kind": "unit",
+      "en": "Places & Time",
+      "shipped": "場所・時間"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::stages.2.name",
+      "kind": "unit",
+      "en": "Objects & Counters",
+      "shipped": "物・助数詞"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::stages.3.name",
+      "kind": "unit",
+      "en": "Possessives",
+      "shipped": "所有格"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::steps.0.title",
+      "kind": "unit",
+      "en": "Korean Nouns (명사)",
+      "shipped": "韓国語の名詞（명사）"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::steps.7.title",
+      "kind": "unit",
+      "en": "Family Nouns (가족 명사)",
+      "shipped": "家族の名詞（가족 명사）"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::steps.10.title",
+      "kind": "unit",
+      "en": "Place Nouns (장소 명사)",
+      "shipped": "場所の名詞（장소 명사）"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::steps.16.title",
+      "kind": "unit",
+      "en": "Time Nouns (시간 명사)",
+      "shipped": "時間の名詞（시간 명사）"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::steps.19.title",
+      "kind": "unit",
+      "en": "Object Nouns (사물 명사)",
+      "shipped": "物の名詞（사물 명사）"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::steps.24.title",
+      "kind": "unit",
+      "en": "Korean Counters (수사)",
+      "shipped": "韓国語の助数詞（수사）"
+    },
+    {
+      "lang": "ja",
+      "ref": "nouns::steps.27.title",
+      "kind": "unit",
+      "en": "Possessive Marker 의",
+      "shipped": "所有格助詞 의"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronouns::stages.0.name",
+      "kind": "unit",
+      "en": "First & Second Person",
+      "shipped": "一人称・二人称"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronouns::stages.1.name",
+      "kind": "unit",
+      "en": "Third Person & We",
+      "shipped": "三人称・私たち"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronouns::stages.2.name",
+      "kind": "unit",
+      "en": "Demonstratives",
+      "shipped": "指示代名詞"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronouns::stages.3.name",
+      "kind": "unit",
+      "en": "Question Pronouns",
+      "shipped": "疑問代名詞"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronouns::steps.9.title",
+      "kind": "unit",
+      "en": "Third Person & We (그·그녀·우리)",
+      "shipped": "三人称と私たち（그・그녀・우리）"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronouns::steps.17.title",
+      "kind": "unit",
+      "en": "Demonstrative Pronouns (이·그·저)",
+      "shipped": "指示代名詞（이・그・저）"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronouns::steps.25.title",
+      "kind": "unit",
+      "en": "Question Pronouns (의문대명사)",
+      "shipped": "疑問代名詞（의문대명사）"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronouns::steps.31.message",
+      "kind": "unit",
+      "en": "You've mastered Korean pronouns — from polite 저 to casual 나, from 우리 (our/my), to demonstratives and question words. Great progress!",
+      "shipped": "丁寧な저からくだけた나まで、우리（私たちの／私の）から指示代名詞や疑問詞まで——韓国語の代名詞をマスターしました。素晴らしい進歩です！"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronunciation::stages.0.name",
+      "kind": "unit",
+      "en": "Batchim",
+      "shipped": "パッチム"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronunciation::stages.1.name",
+      "kind": "unit",
+      "en": "Liaison",
+      "shipped": "連音化"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronunciation::stages.2.name",
+      "kind": "unit",
+      "en": "Assimilation",
+      "shipped": "鼻音化"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronunciation::stages.3.name",
+      "kind": "unit",
+      "en": "Tensification",
+      "shipped": "濃音化"
+    },
+    {
+      "lang": "ja",
+      "ref": "pronunciation::stages.4.name",
+      "kind": "unit",
+      "en": "Palatal & ㄹ",
+      "shipped": "口蓋音化とㄹ"
+    }
+  ]
+}

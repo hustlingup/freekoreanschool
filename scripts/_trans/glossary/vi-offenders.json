@@ -1,0 +1,57 @@
+[
+  {
+    "id": "emotions::steps.0.body",
+    "concept": "dictionary form",
+    "problem": "Uses \"dạng gốc\" — a one-off outlier not used anywhere else in the corpus for this concept — instead of the canonical \"dạng từ điển\"."
+  },
+  {
+    "id": "emotions::steps.6.body",
+    "concept": "dictionary form",
+    "problem": "Uses \"dạng nguyên thể\" standalone instead of the canonical \"dạng từ điển\", for the same 받다/드→해요 conjugation point that other units call \"dạng từ điển\"."
+  },
+  {
+    "id": "grammar::steps.11.title",
+    "concept": "dictionary form",
+    "problem": "Section heading renders \"Dictionary Form\" as \"dạng nguyên thể\" instead of the canonical \"dạng từ điển\" — a high-visibility contradiction since it is the lesson title itself."
+  },
+  {
+    "id": "grammar::steps.11.body",
+    "concept": "dictionary form",
+    "problem": "Uses \"dạng nguyên thể\" standalone instead of the canonical \"dạng từ điển\" immediately under the mistranslated title."
+  },
+  {
+    "id": "vocabulary-verbs::steps.0.body",
+    "concept": "dictionary form",
+    "problem": "Presents two competing Vietnamese terms in one sentence — \"Dạng nguyên thể (dạng từ điển)\" — glossing one Vietnamese synonym with another rather than committing to the single canonical term."
+  },
+  {
+    "id": "pronunciation::stages.1.name",
+    "concept": "liaison",
+    "problem": "Stage-menu name uses \"Liên âm\", a different Vietnamese word than the \"Nối âm\" used in every other occurrence of this concept (titles, body text, prompts, completion message) — a learner will see the stage list name a phenomenon differently than the lesson that teaches it."
+  },
+  {
+    "id": "grammar::steps.38.prompt",
+    "concept": "counter/classifier",
+    "problem": "Uses \"Loại từ\" instead of the canonical \"đơn vị đếm\" for the counter concept."
+  },
+  {
+    "id": "nouns::steps.24.body",
+    "concept": "counter/classifier",
+    "problem": "Introduces the technical term as \"loại từ\" (used twice) instead of the canonical \"đơn vị đếm\", teaching the learner a name for 개/명/잔 that the numbers lesson never uses."
+  },
+  {
+    "id": "nouns::steps.25.meaning",
+    "concept": "counter/classifier",
+    "problem": "Uses \"từ đếm\" instead of the canonical \"đơn vị đếm\" for the same 명 counter explained two steps earlier."
+  },
+  {
+    "id": "vocabulary-numbers::steps.19.body",
+    "concept": "counter/classifier",
+    "problem": "Introduces the counter concept as \"danh từ đơn vị\" instead of the canonical \"đơn vị đếm\" used by every meaning line in the same lesson (steps 20, 21, 22)."
+  },
+  {
+    "id": "vocabulary-numbers::steps.23.prompt",
+    "concept": "counter/classifier",
+    "problem": "Asks the learner which \"danh từ đơn vị\" applies, using a different name than the canonical \"đơn vị đếm\" used one step earlier for the identical concept."
+  }
+]

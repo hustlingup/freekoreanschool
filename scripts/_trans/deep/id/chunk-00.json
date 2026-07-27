@@ -1,0 +1,392 @@
+{
+  "lang": "id",
+  "chunk": 0,
+  "count": 55,
+  "units": [
+    {
+      "id": "pronouns::steps.26.meaning",
+      "path": "pronouns/steps[26]/meaning",
+      "ko": null,
+      "en": "who",
+      "value": "siapa"
+    },
+    {
+      "id": "grammar::steps.5.choices[1]",
+      "path": "grammar/steps[5]/choices[1]",
+      "ko": null,
+      "en": "Subject",
+      "value": "Subjek"
+    },
+    {
+      "id": "nouns::steps.2.meaning",
+      "path": "nouns/steps[2]/meaning",
+      "ko": null,
+      "en": "man / boy",
+      "value": "pria / anak laki-laki"
+    },
+    {
+      "id": "nouns::steps.4.meaning",
+      "path": "nouns/steps[4]/meaning",
+      "ko": null,
+      "en": "child / kid",
+      "value": "anak / anak kecil"
+    },
+    {
+      "id": "grammar::steps.53.tip.label",
+      "path": "grammar/steps[53]/tip.label",
+      "ko": null,
+      "en": "Key Difference",
+      "value": "Perbedaan Utama"
+    },
+    {
+      "id": "grammar::steps.0.title",
+      "path": "grammar/steps[0]/title",
+      "ko": "어순",
+      "en": "Word Order — SOV",
+      "value": "Urutan Kata — SOV"
+    },
+    {
+      "id": "grammar::steps.24.meaning",
+      "path": "grammar/steps[24]/meaning",
+      "ko": null,
+      "en": "What is your name?",
+      "value": "Siapa nama Anda?"
+    },
+    {
+      "id": "grammar::steps.62.meaning",
+      "path": "grammar/steps[62]/meaning",
+      "ko": null,
+      "en": "Please speak slowly.",
+      "value": "Tolong bicara pelan-pelan."
+    },
+    {
+      "id": "pronouns::steps.6.title",
+      "path": "pronouns/steps[6]/title",
+      "ko": "'당신'과 호칭",
+      "en": "Saying 'You' in Korean",
+      "value": "Mengucapkan \"Kamu\" dalam Bahasa Korea"
+    },
+    {
+      "id": "speech-levels::steps.13.meaning",
+      "path": "speech-levels/steps[13]/meaning",
+      "ko": null,
+      "en": "I go / am going (polite)",
+      "value": "Saya pergi / sedang pergi (sopan)"
+    },
+    {
+      "id": "pronouns::steps.14.choices[3]",
+      "path": "pronouns/steps[14]/choices[3]",
+      "ko": null,
+      "en": "my husband's or wife's mom",
+      "value": "ibu mertua saya"
+    },
+    {
+      "id": "pronouns::steps.21.meaning",
+      "path": "pronouns/steps[21]/meaning",
+      "ko": null,
+      "en": "this one (casual form of 이것)",
+      "value": "yang ini (bentuk santai dari 이것)"
+    },
+    {
+      "id": "pronouns::steps.9.tip.label",
+      "path": "pronouns/steps[9]/tip.label",
+      "ko": null,
+      "en": "우리 = my (for family & country)",
+      "value": "우리 = milik saya (untuk keluarga & negara)"
+    },
+    {
+      "id": "grammar::steps.4.meaning",
+      "path": "grammar/steps[4]/meaning",
+      "ko": null,
+      "en": "I am a student. (는 = topic marker)",
+      "value": "Saya seorang pelajar. (는 = penanda topik)"
+    },
+    {
+      "id": "grammar::steps.0.rules[1]",
+      "path": "grammar/steps[0]/rules[1]",
+      "ko": null,
+      "en": "Korean (SOV): 나는 밥을 먹어요. (I rice eat.)",
+      "value": "Bahasa Korea (SOV): 나는 밥을 먹어요. (Saya nasi makan.)"
+    },
+    {
+      "id": "grammar::steps.55.rules[0]",
+      "path": "grammar/steps[55]/rules[0]",
+      "ko": null,
+      "en": "아직 안 먹었어요 — Haven't eaten yet (still not)",
+      "value": "아직 안 먹었어요 — Belum makan (masih belum)"
+    },
+    {
+      "id": "grammar::steps.50.rules[1]",
+      "path": "grammar/steps[50]/rules[1]",
+      "ko": null,
+      "en": "오늘이 어제보다 더 더워요 — Today is hotter than yesterday",
+      "value": "오늘이 어제보다 더 더워요 — Hari ini lebih panas daripada kemarin"
+    },
+    {
+      "id": "grammar::steps.26.rules[1]",
+      "path": "grammar/steps[26]/rules[1]",
+      "ko": null,
+      "en": "~고 싶어요 — want to: 한국에 가고 싶어요 (I want to go to Korea)",
+      "value": "~고 싶어요 — ingin: 한국에 가고 싶어요 (Saya ingin pergi ke Korea)"
+    },
+    {
+      "id": "grammar::steps.44.rules[5]",
+      "path": "grammar/steps[44]/rules[5]",
+      "ko": null,
+      "en": "별로 + negative — not really (별로 안 좋아요 = I don't really like it)",
+      "value": "별로 + negatif — tidak terlalu (별로 안 좋아요 = Saya tidak terlalu suka)"
+    },
+    {
+      "id": "grammar::steps.26.body",
+      "path": "grammar/steps[26]/body",
+      "ko": null,
+      "en": "Master these 6 patterns to express the most common ideas in Korean conversations.",
+      "value": "Kuasai 6 pola ini untuk mengungkapkan ide-ide paling umum dalam percakapan bahasa Korea."
+    },
+    {
+      "id": "grammar::steps.44.body",
+      "path": "grammar/steps[44]/body",
+      "ko": null,
+      "en": "Degree adverbs go directly before the word they modify: 조금 (a little), 정말 (really), 아주 (very), 많이 (a lot).",
+      "value": "Kata keterangan derajat diletakkan langsung sebelum kata yang dimodifikasi: 조금 (sedikit), 정말 (benar-benar), 아주 (sangat), 많이 (banyak)."
+    },
+    {
+      "id": "nouns::steps.27.tip.text",
+      "path": "nouns/steps[27]/tip.text",
+      "ko": null,
+      "en": "제 is the polite/humble possessive 'my' (from 저 = I, polite). 내 is the casual possessive 'my' (from 나 = I, casual). Use 제 with strangers or seniors, 내 with close friends.",
+      "value": "제 adalah bentuk kepemilikan sopan/merendah untuk 'milik saya' (dari 저 = saya, sopan). 내 adalah bentuk kepemilikan santai untuk 'milik saya' (dari 나 = saya, santai). Gunakan 제 dengan orang asing atau yang lebih tua, 내 dengan teman dekat."
+    },
+    {
+      "id": "nouns::steps.27.body",
+      "path": "nouns/steps[27]/body",
+      "ko": null,
+      "en": "The possessive marker 의 (ui, often pronounced '에') attaches to a noun to show ownership, like English 's. 저의 가방 = my bag, 친구의 집 = friend's house. In everyday speech, 의 is commonly dropped: 제 가방 (my bag, polite) or 내 가방 (my bag, casual). The pronouns 저 and 나 have special possessive forms: 제 (polite, my) and 내 (casual, my).",
+      "value": "Penanda kepemilikan 의 (ui, sering dilafalkan '에') melekat pada kata benda untuk menunjukkan kepemilikan, seperti 's dalam bahasa Inggris. 저의 가방 = tas saya, 친구의 집 = rumah teman. Dalam percakapan sehari-hari, 의 umumnya dihilangkan: 제 가방 (tas saya, sopan) atau 내 가방 (tas saya, santai). Kata ganti 저 dan 나 memiliki bentuk kepemilikan khusus: 제 (sopan, milik saya) dan 내 (santai, milik saya)."
+    },
+    {
+      "id": "pronunciation::steps.12.choices[2]",
+      "path": "pronunciation/steps[12]/choices[2]",
+      "ko": null,
+      "en": "n",
+      "value": "n"
+    },
+    {
+      "id": "hangul::steps.7.example_meaning",
+      "path": "hangul/steps[7]/example_meaning",
+      "ko": null,
+      "en": "child",
+      "value": "anak"
+    },
+    {
+      "id": "pronunciation::steps.56.choices[1]",
+      "path": "pronunciation/steps[56]/choices[1]",
+      "ko": null,
+      "en": "sin-la",
+      "value": "sin-la"
+    },
+    {
+      "id": "pronunciation::steps.29.choices[0]",
+      "path": "pronunciation/steps[29]/choices[0]",
+      "ko": null,
+      "en": "ip-ni-da",
+      "value": "ip-ni-da"
+    },
+    {
+      "id": "hangul::steps.5.example_meaning",
+      "path": "hangul/steps[5]/example_meaning",
+      "ko": null,
+      "en": "rice / meal",
+      "value": "nasi / makanan"
+    },
+    {
+      "id": "syllable-blocks::stages.1.name",
+      "path": "syllable-blocks/stages[1]/name",
+      "ko": "모음 방향",
+      "en": "Vowel Shapes",
+      "value": "Bentuk Vokal"
+    },
+    {
+      "id": "syllable-blocks::steps.15.example_meaning",
+      "path": "syllable-blocks/steps[15]/example_meaning",
+      "ko": null,
+      "en": "you (informal)",
+      "value": "kamu (santai)"
+    },
+    {
+      "id": "pronunciation::steps.12.choices[1]",
+      "path": "pronunciation/steps[12]/choices[1]",
+      "ko": null,
+      "en": "ng (like 'sing')",
+      "value": "ng (seperti 'sing')"
+    },
+    {
+      "id": "syllable-blocks::steps.1.title",
+      "path": "syllable-blocks/steps[1]/title",
+      "ko": "세 가지 자리",
+      "en": "The Three Positions",
+      "value": "Tiga Posisi"
+    },
+    {
+      "id": "pronunciation::steps.18.title",
+      "path": "pronunciation/steps[18]/title",
+      "ko": "왜 연음화가 일어날까?",
+      "en": "Why Does Liaison Happen?",
+      "value": "Mengapa Liaison Terjadi?"
+    },
+    {
+      "id": "syllable-blocks::steps.12.choices[2]",
+      "path": "syllable-blocks/steps[12]/choices[2]",
+      "ko": null,
+      "en": "VC (silent ㅇ + vowel + final)",
+      "value": "VC (ㅇ diam + vokal + akhir)"
+    },
+    {
+      "id": "syllable-blocks::steps.39.prompt",
+      "path": "syllable-blocks/steps[39]/prompt",
+      "ko": null,
+      "en": "밥 (rice) — what is its 받침 (batchim)?",
+      "value": "밥 (nasi) — apa 받침 (batchim)-nya?"
+    },
+    {
+      "id": "hangul::steps.32.prompt",
+      "path": "hangul/steps[32]/prompt",
+      "ko": null,
+      "en": "Which vowel sounds like 'o' (as in 'more')?",
+      "value": "Vokal mana yang berbunyi seperti 'o' (seperti dalam 'more')?"
+    },
+    {
+      "id": "syllable-blocks::steps.56.rules[0]",
+      "path": "syllable-blocks/steps[56]/rules[0]",
+      "ko": null,
+      "en": "Every block has exactly one vowel (중성 / Jungseong)",
+      "value": "Setiap blok memiliki tepat satu vokal (중성 / Jungseong)"
+    },
+    {
+      "id": "hangul::steps.27.hint",
+      "path": "hangul/steps[27]/hint",
+      "ko": null,
+      "en": "Like 'oo' in 'boot'. The line points DOWN — mouth drops.",
+      "value": "Seperti 'oo' dalam 'boot'. Garis mengarah ke BAWAH — mulut turun."
+    },
+    {
+      "id": "hangul::steps.50.hint",
+      "path": "hangul/steps[50]/hint",
+      "ko": null,
+      "en": "Aspirated 'ch' — like 'cheese' at the start. Air comes out.",
+      "value": "'ch' beraspirasi — seperti awal kata 'cheese'. Udara keluar."
+    },
+    {
+      "id": "hangul::steps.11.hint",
+      "path": "hangul/steps[11]/hint",
+      "ko": null,
+      "en": "Aspirated 't' — like 't' in 'ten' (at word start). Strong burst.",
+      "value": "'t' beraspirasi — seperti 't' dalam 'ten' (di awal kata). Letupan kuat."
+    },
+    {
+      "id": "pronunciation::steps.43.meaning",
+      "path": "pronunciation/steps[43]/meaning",
+      "ko": null,
+      "en": "to let go / to place — ㅎ batchim + ㄷ → ㅌ: spelled 놓다, sounds like 노타",
+      "value": "melepaskan / meletakkan — batchim ㅎ + ㄷ → ㅌ: dieja 놓다, terdengar seperti 노타"
+    },
+    {
+      "id": "pronunciation::steps.19.prompt",
+      "path": "pronunciation/steps[19]/prompt",
+      "ko": null,
+      "en": "Liaison (연음화) occurs when a batchim is followed by a syllable that begins with…",
+      "value": "Liaison (연음화) terjadi ketika sebuah batchim diikuti oleh suku kata yang dimulai dengan…"
+    },
+    {
+      "id": "pronunciation::steps.62.tip.text",
+      "path": "pronunciation/steps[62]/tip.text",
+      "ko": null,
+      "en": "The palatalised ㅅ ('sh' sound) occurs before i-class vowels: 이 (i), 야 (ya), 여 (yeo), 요 (yo), 유 (yu). Before all other vowels — 아, 어, 오, 우, 으, and their compounds — ㅅ stays as a plain s sound. 사 is 'sa', but 시 is 'shi'.",
+      "value": "ㅅ yang mengalami palatalisasi (bunyi 'sh') muncul sebelum vokal kelas-i: 이 (i), 야 (ya), 여 (yeo), 요 (yo), 유 (yu). Sebelum semua vokal lainnya — 아, 어, 오, 우, 으, dan gabungannya — ㅅ tetap menjadi bunyi s biasa. 사 adalah 'sa', tetapi 시 adalah 'shi'."
+    },
+    {
+      "id": "pronunciation::steps.45.body",
+      "path": "pronunciation/steps[45]/body",
+      "ko": null,
+      "en": "When the consonants ㄷ or ㅌ appear as batchim and are followed by the vowel 이 (i), they shift forward in the mouth and change into ㅈ and ㅊ respectively. This shift is called palatalization — the consonant moves from the tooth ridge to the palate to anticipate the front vowel 이.",
+      "value": "Ketika konsonan ㄷ atau ㅌ muncul sebagai batchim dan diikuti oleh vokal 이 (i), keduanya bergeser maju di dalam mulut dan berubah menjadi ㅈ dan ㅊ secara berurutan. Pergeseran ini disebut palatalisasi — konsonan bergerak dari gusi gigi ke langit-langit mulut untuk mengantisipasi vokal depan 이."
+    },
+    {
+      "id": "emotions::steps.15.tip.label",
+      "path": "emotions/steps[15]/tip.label",
+      "ko": null,
+      "en": "기분 vs 감정",
+      "value": "기분 vs 감정"
+    },
+    {
+      "id": "emotions::steps.11.meaning",
+      "path": "emotions/steps[11]/meaning",
+      "ko": null,
+      "en": "to be worried",
+      "value": "khawatir"
+    },
+    {
+      "id": "shopping::stages.0.name",
+      "path": "shopping/stages[0]/name",
+      "ko": "쇼핑 단어",
+      "en": "Shopping Vocabulary",
+      "value": "Kosakata Belanja"
+    },
+    {
+      "id": "emotions::steps.26.tip.label",
+      "path": "emotions/steps[26]/tip.label",
+      "ko": null,
+      "en": "괜찮아요 — the multi-use phrase",
+      "value": "괜찮아요 — frasa serbaguna"
+    },
+    {
+      "id": "emotions::steps.18.tip.label",
+      "path": "emotions/steps[18]/tip.label",
+      "ko": null,
+      "en": "한 (Han) — untranslatable Korean sorrow",
+      "value": "한 (Han) — kesedihan Korea yang tak dapat diterjemahkan"
+    },
+    {
+      "id": "emotions::steps.9.tip.text",
+      "path": "emotions/steps[9]/tip.text",
+      "ko": null,
+      "en": "신나다 and 신나요 are everywhere in Korean pop culture. K-pop songs often use 신나 to describe an exciting beat or mood. You'll also hear 신난다! as an exclamation (This is so exciting!) at events and parties.",
+      "value": "신나다 dan 신나요 ada di mana-mana dalam budaya pop Korea. Lagu K-pop sering menggunakan 신나 untuk menggambarkan irama atau suasana yang menyenangkan. Anda juga akan mendengar 신난다! sebagai seruan (Ini sangat seru!) di acara dan pesta."
+    },
+    {
+      "id": "vocabulary-body-parts::steps.9.meaning",
+      "path": "vocabulary-body-parts/steps[9]/meaning",
+      "ko": null,
+      "en": "Arm",
+      "value": "Lengan"
+    },
+    {
+      "id": "vocabulary-media::steps.3.meaning",
+      "path": "vocabulary-media/steps[3]/meaning",
+      "ko": null,
+      "en": "Music",
+      "value": "Musik"
+    },
+    {
+      "id": "vocabulary-shopping::steps.4.meaning",
+      "path": "vocabulary-shopping/steps[4]/meaning",
+      "ko": null,
+      "en": "Receipt",
+      "value": "Struk / bukti pembayaran"
+    },
+    {
+      "id": "vocabulary-days-time::steps.17.meaning",
+      "path": "vocabulary-days-time/steps[17]/meaning",
+      "ko": null,
+      "en": "Yesterday",
+      "value": "Kemarin"
+    },
+    {
+      "id": "vocabulary-days-time::stages.0.name",
+      "path": "vocabulary-days-time/stages[0]/name",
+      "ko": "요일과 시간",
+      "en": "Days & Time",
+      "value": "Hari & Waktu"
+    }
+  ]
+}

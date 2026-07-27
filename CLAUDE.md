@@ -48,6 +48,16 @@ node scripts/gen-sitemap.cjs
 # that matters. Excludes Korean, romanization and locale-swap pairs.
 node scripts/audit-learn-locale-dup.cjs [--json|--show <page>]
 
+# Same measurement for culture/ + travel/ (160 pages) — nothing covered these
+# before 2026-07-26. The exclusion rules are NOT learn/'s: these pages carry
+# ~8,300 romanization nodes under class names absent from learn/ (rom-text,
+# food-card-rom, phrase-rom, rom-cell, sodam-rom-text …). All three scripts
+# share scripts/_locale-prose.cjs — change the rules THERE, never in one copy,
+# or the audit, the extractor and the patcher will disagree with each other.
+node scripts/audit-content-locale-dup.cjs [--json|--show <page>]
+node scripts/extract-content-untranslated.cjs [--chunk 45]
+node scripts/apply-content-translations.cjs <lang> <corrections.json> [--dry]
+
 # Translate the hand-written prose of a learn/<locale>/<lesson>.html shell from
 # an authored table in scripts/_trans/learn/<lesson>.<locale>.json. Rewrites
 # only text nodes; never touches markup, <head>, or the #lesson-static block.
@@ -60,8 +70,47 @@ node scripts/patch-vocab-ja-zhtw.cjs      # vocabulary word bank, ja + zh_tw
 node scripts/patch-lesson-ja-gaps.cjs     # lesson prose, ja
 node scripts/patch-quiz-ja.cjs            # match_quiz prompts/choices, ja
 
-# Mark the still-English word-bank pages noindex (see the script header for the
-# measurement behind it and the procedure for lifting it).
+# ONE GATE for every localization invariant — run before deploying anything
+# that touched learn/data/*, js/langs/*, or a localized page. There is no CI,
+# so this is the manual pre-deploy check. Each sub-check documents what it
+# can and cannot see; read the header before trusting a PASS.
+node scripts/audit-i18n.cjs [--check]     # --check exits 1 on any failure
+
+# UI language-pack coverage (js/langs/lang-<code>.js). These are the strings
+# LangManager.t() substitutes into page chrome — nav, buttons, card titles.
+# NO other translation script in this repo can see them. Thai was missing 430
+# of 631 (68% of the chrome) until 2026-07-26 while its lesson content scored
+# 4/5, because the triage told its agents to ignore chrome.
+node scripts/ui-lang.cjs --status
+node scripts/ui-lang.cjs --extract --langs th,id [--chunk 110]
+node scripts/ui-lang.cjs --apply <lang> <corrections.json>
+
+# Sidebar nav labels that are pure Korean on a non-Korean page. The right-rail
+# "explore" widget clones .sidebar-nav .sidebar-link innerHTML (js/app.js), so
+# an untranslated sidebar label surfaces twice. The fix COPIES the label the
+# same locale already uses for that link on another page — it never invents or
+# borrows one from another locale.
+node scripts/fix-sidebar-korean-labels.cjs [--check] [--locale de]
+
+# Thousands separators in localized culture/travel pages (de/es/id/vi period,
+# fr space; en/ja/th/zh-tw comma is already correct). The Hangul guard is
+# load-bearing — read the script header before touching it.
+node scripts/fix-locale-number-format.cjs [--check] [--locale de]
+
+# Translation coverage across every lesson JSON and locale — the trustworthy
+# gap measurement (see the blind-spot warning under Localization below).
+# --extract/--apply is the loss-free round trip used by the QA workflows.
+node scripts/qa-lang.cjs --status [--langs ja,th] [--lessons <ids|groups>]
+node scripts/qa-lang.cjs --extract --langs ja --lessons grammar --gaps-only
+node scripts/qa-lang.cjs --apply <lang> <corrections.json>
+
+# Restore the Hangul head in Spanish rules_es entries of vocabulary-proverbs
+# (es was the only locale replacing the taught word with romanization).
+node scripts/fix-es-proverbs-hangul.cjs [--check]
+
+# Word-bank noindex gate. Now MEASURES coverage and fires only when a locale's
+# word bank is >=50% untranslated; currently 0/448 missing everywhere, so it
+# tags nothing. Kept for the case coverage ever regresses.
 node scripts/noindex-untranslated-vocab.cjs [--check|--lift <locale>]
 
 # News-section removal (2026-07-21) — idempotent, marker-guarded. Kept as the
@@ -133,21 +182,46 @@ Localized fields in JSON use `_<lang>` suffixes (e.g. `title_ja`, `body_zh_tw`, 
 ### Localization architecture
 - **8 language versions**: `ja`, `zh-tw`, `es`, `de`, `fr`, `vi`, `th`, `id`
 
+⚠️ **Translation lives in TWO places and they are audited separately.**
+1. `learn/data/*.json` — lesson content. Measure with `qa-lang.cjs --status`.
+2. `js/langs/lang-<code>.js` — the UI chrome dicts. Measure with
+   `ui-lang.cjs --status`. Nothing else in the repo can see these, and a
+   locale can have perfect lesson content while two thirds of its interface
+   renders in English — that was exactly Thai's state until 2026-07-26.
+
+⚠️ **The packs are plain JS dicts, so a bad write breaks the whole locale.**
+`ui-lang.cjs --apply` appends entries before the dict's closing `};`. Some
+packs end their last entry with a trailing comma (`th`) and some do not
+(`id`, `zh-tw`, `ja`) — appending without checking produces two adjacent
+string literals and a SyntaxError that kills every translation for that
+locale. `--apply` now detects this, re-parses after writing, and rolls the
+file back if it does not survive. Do not hand-edit these files at the tail.
+
 #### Translation status under `learn/` — measured, not assumed
 Run `node scripts/audit-learn-locale-dup.cjs` for the current numbers. It
 reports, per page, what fraction of the non-Korean prose is byte-identical to
 the English source. **Trust it over any prose claim in this file, including
 this one.**
 
-As of 2026-07-21, after the remediation pass:
-- **113 of 128** `learn/<locale>/*.html` pages are genuinely translated —
-  0 indexed pages have ≥50% of their sentence-length prose still in English
-  (worst indexed page: 0.48; was 0.99).
-- **15 pages are `noindex, follow`**: `learn/{de,fr,vi,th,id}/{vocabulary,
-  vocabulary-browser,flashcard}.html`. Their embedded word-bank reference is
-  still English because all 447 translatable fields in `learn/data/vocabulary-*.json`
-  lack `_de`/`_fr`/`_vi`/`_th`/`_id` variants. See
-  `scripts/noindex-untranslated-vocab.cjs` for how to translate and lift.
+As of 2026-07-26, after the Phase-B translation pass
+(`docs/writing-typing/qa-triage-results.md`):
+- **0 translation gaps**: all 2,015 localizable lesson units are populated in
+  all 8 locales. Verify with `node scripts/qa-lang.cjs --status`.
+- 0 of 144 pages have ≥50% of their sentence-length prose still in English.
+- **No page under `learn/` is `noindex` any more.** The 15-page word-bank gate
+  was lifted because the word bank is now translated (0 of 448 fields missing
+  in every locale, tips included).
+
+⚠️ **`qa-translations.cjs` has a structural blind spot — do not measure
+coverage with it.** It decides a field is localizable by looking for a
+`<field>_th` sibling. Thai is ~100% covered so that usually holds, but it is
+blind to any field where **Thai itself** is the missing locale, and such a
+field can then never be reported as a gap in *any* language — it measures as
+translated *because* it is untranslated. This hid 219 untranslated strings
+(9 `lesson_complete` titles + 42 vocabulary `tip` objects × 5 locales) behind
+a reported "0 gaps" for years. `scripts/qa-lang.cjs` tests for *any* locale
+sibling instead and is the one to trust; it produces identical unit ids, so
+the two are interchangeable everywhere except coverage measurement.
 
 ⚠️ **Two earlier audits reached the opposite, wrong conclusion.** Both measured
 whole-page similarity without excluding content that is *supposed* to be

@@ -1,0 +1,496 @@
+{
+  "lang": "ja",
+  "htmlSamples": [
+    "learn/ja/hangul.html",
+    "culture/ja/kpop.html",
+    "travel/ja/cities.html"
+  ],
+  "groups": {
+    "grammar": [
+      {
+        "id": "grammar::stages.0.name",
+        "path": "grammar/stages[0]/name",
+        "ko": "문장",
+        "en": "Sentence",
+        "val": ""
+      },
+      {
+        "id": "grammar::steps.3.rules[1]",
+        "path": "grammar/steps[3]/rules[1]",
+        "ko": null,
+        "en": "이/가 → Subject marker (이 after consonant, 가 after vowel)",
+        "val": ""
+      },
+      {
+        "id": "grammar::steps.16.rules[3]",
+        "path": "grammar/steps[16]/rules[3]",
+        "ko": null,
+        "en": "마시다 → 마셨어요 (drank)",
+        "val": ""
+      },
+      {
+        "id": "grammar::steps.28.title",
+        "path": "grammar/steps[28]/title",
+        "ko": "접속사",
+        "en": "Connectors",
+        "val": "接続詞"
+      },
+      {
+        "id": "grammar::steps.36.rules[6]",
+        "path": "grammar/steps[36]/rules[6]",
+        "ko": null,
+        "en": "번 — times/turns: 세 번 (3 times)",
+        "val": ""
+      },
+      {
+        "id": "grammar::steps.44.tip.text",
+        "path": "grammar/steps[44]/tip.text",
+        "ko": null,
+        "en": "별로 and 전혀 MUST be used with a negative verb (안, 못, 없다, 모르다). Saying 별로 좋아요 (without negation) is ungrammatical. Think of them as 'not really' and 'not at all'.",
+        "val": ""
+      },
+      {
+        "id": "grammar::steps.57.title",
+        "path": "grammar/steps[57]/title",
+        "ko": "막연한 대상",
+        "en": "Someone, Something",
+        "val": "「誰か」「何か」"
+      },
+      {
+        "id": "grammar::steps.70.title",
+        "path": "grammar/steps[70]/title",
+        "ko": "-도 응용",
+        "en": "All, More & -도",
+        "val": ""
+      },
+      {
+        "id": "nouns::steps.16.body",
+        "path": "nouns/steps[16]/body",
+        "ko": null,
+        "en": "Time nouns in Korean work independently — no conjugation needed. You simply state the time word at the start of a sentence: 오늘 가요 (I'm going today), 내일 만나요 (Let's meet tomorrow). Korean time expressions use Sino-Korean numbers for hours and native Korean numbers for minutes. The most essential time words are 오늘 (today), 내일 (tomorrow), 어제 (yesterday), and 지금 (now).",
+        "val": "韓国語の時間の名詞は単独で機能し、活用は不要です。文の冒頭に時間の語を置くだけでよいのです：오늘 가요（今日行きます）、내일 만나요（明日会いましょう）。韓国語の時間表現は、時間にはシノ・コリアン数詞を、分にはネイティブ韓国語数詞を使います。最も重要な時間語は오늘（今日）、내일（明日）、어제（昨日）、지금（今）です。"
+      },
+      {
+        "id": "pronouns::steps.2.meaning",
+        "path": "pronouns/steps[2]/meaning",
+        "ko": null,
+        "en": "I / me (casual)",
+        "val": "私（カジュアル）"
+      },
+      {
+        "id": "pronouns::steps.24.prompt",
+        "path": "pronouns/steps[24]/prompt",
+        "ko": null,
+        "en": "You are telling a friend about a man you mentioned a moment ago, and he is not in the room. In natural spoken Korean you say…",
+        "val": "少し前に話題に出した男性について友だちに話しています。その人はこの場にいません。自然な話し言葉ではどう言うでしょう。"
+      },
+      {
+        "id": "speech-levels::steps.12.meaning",
+        "path": "speech-levels/steps[12]/meaning",
+        "ko": null,
+        "en": "I eat / am eating (polite)",
+        "val": "食べます（丁寧）"
+      }
+    ],
+    "hangul": [
+      {
+        "id": "hangul::stages.0.name",
+        "path": "hangul/stages[0]/name",
+        "ko": "기본 자음",
+        "en": "Consonants",
+        "val": ""
+      },
+      {
+        "id": "hangul::steps.16.prompt",
+        "path": "hangul/steps[16]/prompt",
+        "ko": null,
+        "en": "ㄴ romanizes as…",
+        "val": "ㄴ のローマ字表記は…"
+      },
+      {
+        "id": "hangul::steps.52.prompt",
+        "path": "hangul/steps[52]/prompt",
+        "ko": null,
+        "en": "ㄲ romanizes as…",
+        "val": "ㄲ のローマ字表記は…"
+      },
+      {
+        "id": "hangul::steps.80.meaning",
+        "path": "hangul/steps[80]/meaning",
+        "ko": null,
+        "en": "friend",
+        "val": "友達"
+      },
+      {
+        "id": "pronunciation::steps.11.choices[1]",
+        "path": "pronunciation/steps[11]/choices[1]",
+        "ko": null,
+        "en": "ㄱ-group (k)",
+        "val": "ㄱ グループ（k）"
+      },
+      {
+        "id": "pronunciation::steps.25.meaning",
+        "path": "pronunciation/steps[25]/meaning",
+        "ko": null,
+        "en": "walks / to walk — ㄷ + ㄴ → ㄴ: spelled 걷는다, sounds like 건는다",
+        "val": "歩きます——ㄷ＋ㄴ→ㄴ：綴りは걷는다、건는다のように聞こえます"
+      },
+      {
+        "id": "pronunciation::steps.40.meaning",
+        "path": "pronunciation/steps[40]/meaning",
+        "ko": null,
+        "en": "There is a lot — ㅎ in ㄶ batchim weakens: sounds like 마나요",
+        "val": "たくさんあります——ㄶ받침のㅎが弱化：마나요のように聞こえます"
+      },
+      {
+        "id": "pronunciation::steps.56.prompt",
+        "path": "pronunciation/steps[56]/prompt",
+        "ko": null,
+        "en": "신라 (Silla — a historical Korean kingdom) is pronounced as…",
+        "val": "신라（新羅、朝鮮半島の古代王国）はどのように発音しますか。"
+      },
+      {
+        "id": "pronunciation::steps.64.choices[2]",
+        "path": "pronunciation/steps[64]/choices[2]",
+        "ko": null,
+        "en": "Slightly open like 'ah'",
+        "val": "「ah」のように少し開く"
+      },
+      {
+        "id": "syllable-blocks::steps.6.prompt",
+        "path": "syllable-blocks/steps[6]/prompt",
+        "ko": null,
+        "en": "How many vowels does a single Korean syllable block contain?",
+        "val": "韓国語の音節ブロック一つに、母音はいくつ含まれますか。"
+      },
+      {
+        "id": "syllable-blocks::steps.20.choices[2]",
+        "path": "syllable-blocks/steps[20]/choices[2]",
+        "ko": null,
+        "en": "To the right",
+        "val": "右"
+      },
+      {
+        "id": "syllable-blocks::steps.38.hint",
+        "path": "syllable-blocks/steps[38]/hint",
+        "ko": null,
+        "en": "ㄹ 받침 again — the tongue lingers against the palate. Sounds like a soft 'l'.",
+        "val": "ㄹ받침——舌が口蓋に軽く当たったまま。やさしいl音です"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "emotions::stages.0.name",
+        "path": "emotions/stages[0]/name",
+        "ko": "기본 감정",
+        "en": "Core Emotions",
+        "val": ""
+      },
+      {
+        "id": "emotions::steps.3.meaning",
+        "path": "emotions/steps[3]/meaning",
+        "ko": null,
+        "en": "to be angry (literally: anger comes out)",
+        "val": "怒っている（直訳：怒りが出る）"
+      },
+      {
+        "id": "emotions::steps.9.tip.label",
+        "path": "emotions/steps[9]/tip.label",
+        "ko": null,
+        "en": "신나다 in pop culture",
+        "val": "신나다はポップカルチャーで頻出"
+      },
+      {
+        "id": "emotions::steps.15.tip.text",
+        "path": "emotions/steps[15]/tip.text",
+        "ko": null,
+        "en": "기분 = mood, general feeling state (contextual, can change). 감정 = emotion (more specific feeling like anger, joy, fear). 기분이 좋아요 = I feel good right now. 감정을 표현하다 = to express emotion.",
+        "val": "기분 ＝ 気分・一般的な感情状態（文脈による、変化しやすい）。감정 ＝ 感情（怒り・喜び・恐怖などより具体的な気持ち）。기분이 좋아요 ＝ 今気分がいいです。감동을 표현하다 ＝ 感情を表現する。"
+      },
+      {
+        "id": "emotions::steps.19.meaning",
+        "path": "emotions/steps[19]/meaning",
+        "ko": null,
+        "en": "to miss someone/something (longing)",
+        "val": "懐かしい / 恋しい"
+      },
+      {
+        "id": "emotions::steps.25.prompt",
+        "path": "emotions/steps[25]/prompt",
+        "ko": null,
+        "en": "뿌듯하다 means…",
+        "val": "뿌듯하다 の意味はどれでしょう。"
+      },
+      {
+        "id": "emotions::steps.29.meaning",
+        "path": "emotions/steps[29]/meaning",
+        "ko": null,
+        "en": "I'm okay / That's fine / No problem",
+        "val": "大丈夫です / 構いません"
+      },
+      {
+        "id": "shopping::stages.2.name",
+        "path": "shopping/stages[2]/name",
+        "ko": "가격·숫자",
+        "en": "Prices & Numbers",
+        "val": ""
+      },
+      {
+        "id": "shopping::steps.6.title",
+        "path": "shopping/steps[6]/title",
+        "ko": "쇼핑 물건",
+        "en": "Shopping Item Words (쇼핑 물건)",
+        "val": ""
+      },
+      {
+        "id": "shopping::steps.10.meaning",
+        "path": "shopping/steps[10]/meaning",
+        "ko": null,
+        "en": "How much is it?",
+        "val": "いくらですか？"
+      },
+      {
+        "id": "shopping::steps.18.title",
+        "path": "shopping/steps[18]/title",
+        "ko": "원·가격",
+        "en": "Korean Money & Prices (원)",
+        "val": ""
+      },
+      {
+        "id": "shopping::steps.25.prompt",
+        "path": "shopping/steps[25]/prompt",
+        "ko": null,
+        "en": "You hand over 10,000원 for an item that costs 7,000원. What is the 3,000원 the cashier hands back called?",
+        "val": "7,000원の商品に10,000원を出しました。店員が返してくれる3,000원は何と言うでしょう。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "vocabulary-academic::stages.0.name",
+        "path": "vocabulary-academic/stages[0]/name",
+        "ko": "학업",
+        "en": "Academic",
+        "val": "学術"
+      },
+      {
+        "id": "vocabulary-adjectives::steps.0.body",
+        "path": "vocabulary-adjectives/steps[0]/body",
+        "ko": null,
+        "en": "Korean adjectives (형용사) behave differently from English ones — they conjugate like verbs. The dictionary form ends in -다. To use them as predicates, change -다 to -아요/어요. To modify a noun, change -다 to -(으)ㄴ. Example: 크다 (big) → 커요 (it's big) / 큰 집 (big house).",
+        "val": "韓国語の形容詞（형용사）は英語と異なり、動詞のように活用します。辞書形は-다で終わります。述語として使うには-다を-아요/어요に、名詞修飾には-(으)ㄴに変えます。例：크다（大きい）→커요（大きいです）/ 큰 집（大きい家）。"
+      },
+      {
+        "id": "vocabulary-body-parts::steps.6.meaning",
+        "path": "vocabulary-body-parts/steps[6]/meaning",
+        "ko": null,
+        "en": "Ear",
+        "val": "耳"
+      },
+      {
+        "id": "vocabulary-colors::steps.7.meaning",
+        "path": "vocabulary-colors/steps[7]/meaning",
+        "ko": null,
+        "en": "Purple / violet",
+        "val": "紫"
+      },
+      {
+        "id": "vocabulary-days-time::steps.13.meaning",
+        "path": "vocabulary-days-time/steps[13]/meaning",
+        "ko": null,
+        "en": "AM / morning — 오전 열 시 = 10:00 AM",
+        "val": "午前 ― 오전 열 시（午前10時）"
+      },
+      {
+        "id": "vocabulary-emotions::steps.16.choices[1]",
+        "path": "vocabulary-emotions/steps[16]/choices[1]",
+        "ko": null,
+        "en": "My heart is fluttering with excitement",
+        "val": "胸がドキドキしています"
+      },
+      {
+        "id": "vocabulary-food-drink::stages.0.name",
+        "path": "vocabulary-food-drink/stages[0]/name",
+        "ko": "음식과 음료",
+        "en": "Food & Drink",
+        "val": "食べ物・飲み物"
+      },
+      {
+        "id": "vocabulary-greetings::steps.4.meaning",
+        "path": "vocabulary-greetings/steps[4]/meaning",
+        "ko": null,
+        "en": "Thank you — polite but less formal",
+        "val": "ありがとう（丁寧・カジュアル）"
+      },
+      {
+        "id": "vocabulary-health::steps.18.choices[0]",
+        "path": "vocabulary-health/steps[18]/choices[0]",
+        "ko": null,
+        "en": "I have a headache",
+        "val": "頭痛がします"
+      },
+      {
+        "id": "vocabulary-konglish::steps.17.choices[3]",
+        "path": "vocabulary-konglish/steps[17]/choices[3]",
+        "ko": null,
+        "en": "A self-service counter",
+        "val": "セルフサービスのカウンター"
+      },
+      {
+        "id": "vocabulary-media::steps.16.choices[1]",
+        "path": "vocabulary-media/steps[16]/choices[1]",
+        "ko": null,
+        "en": "The global spread of Korean pop culture",
+        "val": "韓国大衆文化の世界的な広がり"
+      },
+      {
+        "id": "vocabulary-news::steps.16.meaning",
+        "path": "vocabulary-news/steps[16]/meaning",
+        "ko": null,
+        "en": "Report / news coverage — 보도에 따르면 = according to reports",
+        "val": "報道 ― 보도에 따르면（報道によると）"
+      },
+      {
+        "id": "vocabulary-numbers::steps.12.rules[1]",
+        "path": "vocabulary-numbers/steps[12]/rules[1]",
+        "ko": null,
+        "en": "백 (100), 천 (1,000), 만 (10,000)",
+        "val": "백（100）、천（1,000）、만（10,000）"
+      },
+      {
+        "id": "vocabulary-places::steps.10.meaning",
+        "path": "vocabulary-places/steps[10]/meaning",
+        "ko": null,
+        "en": "Airport — 공 (air/sky) + 항 (port)",
+        "val": "空港 ― 공（空・空中）+ 항（港）"
+      },
+      {
+        "id": "vocabulary-proverbs::steps.3.rules[2]",
+        "path": "vocabulary-proverbs/steps[3]/rules[2]",
+        "ko": null,
+        "en": "낫다 = to be better",
+        "val": "낫다＝よりよい"
+      },
+      {
+        "id": "vocabulary-proverbs::steps.9.body",
+        "path": "vocabulary-proverbs/steps[9]/body",
+        "ko": null,
+        "en": "Meaning: Even a monkey falls from a tree. English equivalent: 'Nobody's perfect' / 'Even the best make mistakes.'",
+        "val": "意味：猿も木から落ちる。英語のことわざ：「Nobody's perfect.（完璧な人はいない）」"
+      },
+      {
+        "id": "vocabulary-proverbs::steps.15.choices[0]",
+        "path": "vocabulary-proverbs/steps[15]/choices[0]",
+        "ko": null,
+        "en": "Begin now, however far the goal still is",
+        "val": "目標がどれほど遠くても、まず始めること"
+      },
+      {
+        "id": "vocabulary-shopping::steps.20.message",
+        "path": "vocabulary-shopping/steps[20]/message",
+        "ko": null,
+        "en": "쇼핑 실력이 늘었어요! (Your shopping skills have improved!) You're now armed for any Korean shopping adventure — from the buzzing Namdaemun Market to the glitzy Lotte World Mall.",
+        "val": "쇼핑 실력이 늘었어요！（買い物スキルが上がりました！）南大門市場からロッテワールドモールまで、あらゆる韓国の買い物シーンに備えられました。"
+      },
+      {
+        "id": "vocabulary-verbs::steps.8.meaning",
+        "path": "vocabulary-verbs/steps[8]/meaning",
+        "ko": null,
+        "en": "To read — 읽어요 (polite present)",
+        "val": "読む ― 읽어요（丁寧現在形）"
+      },
+      {
+        "id": "vocabulary-weather::steps.16.choices[0]",
+        "path": "vocabulary-weather/steps[16]/choices[0]",
+        "ko": null,
+        "en": "It's hot",
+        "val": "暑いです"
+      }
+    ],
+    "writing-typing": [
+      {
+        "id": "letter-writing::stages.0.name",
+        "path": "letter-writing/stages[0]/name",
+        "ko": "획순 원리",
+        "en": "How Strokes Work",
+        "val": "筆順のしくみ"
+      },
+      {
+        "id": "letter-writing::steps.3.hint",
+        "path": "letter-writing/steps[3]/hint",
+        "ko": null,
+        "en": "Start at the top-left. One stroke: across, then down without lifting.",
+        "val": "左上から始めます。ひと筆で、横へ、そのまま下へ（筆を離さずに）。"
+      },
+      {
+        "id": "letter-writing::steps.18.hint",
+        "path": "letter-writing/steps[18]/hint",
+        "ko": null,
+        "en": "Two strokes: the top bar and the left leg in one motion, then the right leg. Two, not three.",
+        "val": "2画で書きます。上の横棒と左の払いをひと続きで、次に右の払い。3画ではなく2画です。"
+      },
+      {
+        "id": "letter-writing::steps.32.hint",
+        "path": "letter-writing/steps[32]/hint",
+        "ko": null,
+        "en": "Three strokes: the long vertical first, then the upper tick, then the lower tick.",
+        "val": "3画で書きます。長い縦線を先に、次に上の短い画、そして下の短い画。"
+      },
+      {
+        "id": "letter-writing::steps.46.example_meaning",
+        "path": "letter-writing/steps[46]/example_meaning",
+        "ko": null,
+        "en": "sky",
+        "val": "空"
+      },
+      {
+        "id": "letter-writing::steps.60.example_meaning",
+        "path": "letter-writing/steps[60]/example_meaning",
+        "ko": null,
+        "en": "won (Korean currency)",
+        "val": "ウォン（韓国通貨）"
+      },
+      {
+        "id": "letter-writing::steps.71.choices[2]",
+        "path": "letter-writing/steps[71]/choices[2]",
+        "ko": null,
+        "en": "Either one",
+        "val": "どちらでもよい"
+      },
+      {
+        "id": "typing::steps.0.tip.label",
+        "path": "typing/steps[0]/tip.label",
+        "ko": null,
+        "en": "Left hand, right hand",
+        "val": "左手と右手"
+      },
+      {
+        "id": "typing::steps.14.tip",
+        "path": "typing/steps[14]/tip",
+        "ko": null,
+        "en": "Three keys in a row along the bottom: ㅠ on B, ㅜ on N, ㅡ on M. B is a stretch for your LEFT index finger, while N and M sit under your right index. ㅡ on M matters more than it looks — it is the vowel inside 은, 는, 를 and most other grammar endings.",
+        "val": "下段に三つ並んでいます：ㅠ は B、ㅜ は N、ㅡ は M。B は左の人差し指を伸ばす位置で、N と M は右の人差し指の下にあります。M の ㅡ は見た目以上に重要です——은、는、를 など、ほとんどの文法語尾に入っている母音だからです。"
+      },
+      {
+        "id": "typing::steps.24.items.2.meaning",
+        "path": "typing/steps[24]/items[2]/meaning",
+        "ko": null,
+        "en": "friend",
+        "val": "友達"
+      },
+      {
+        "id": "typing::steps.26.items.10.meaning",
+        "path": "typing/steps[26]/items[10]/meaning",
+        "ko": null,
+        "en": "family",
+        "val": "家族"
+      },
+      {
+        "id": "typing::steps.26.items.31.meaning",
+        "path": "typing/steps[26]/items[31]/meaning",
+        "ko": null,
+        "en": "leg",
+        "val": "脚"
+      }
+    ]
+  }
+}

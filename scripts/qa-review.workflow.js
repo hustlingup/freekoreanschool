@@ -19,6 +19,12 @@ const LANGS = [{ code: 'th', name: 'Thai' }, { code: 'vi', name: 'Vietnamese' }]
 const chunkPath = (lang, i) => `${DIR}/review/${lang}/chunk-${String(i).padStart(2, '0')}.json`;
 const batch = (arr, n) => { const o = []; for (let i = 0; i < arr.length; i += n) o.push(arr.slice(i, i + n)); return o; };
 
+// per-language structural traps a word-for-word translation fails silently
+const STRUCT = {
+  th: 'no word spaces; noun BEFORE adjective; classifiers (ลักษณนาม); verb serialization; polite particles where register calls for it; must NOT mirror English word order',
+  vi: 'noun BEFORE adjective; classifiers/measure words (cái, con, …); correct tone marks (a wrong dấu is a different word); analytic word order that is Vietnamese, not an English calque',
+};
+
 /* ── schemas ───────────────────────────────────────────────────────── */
 const GLOSSARY_SCHEMA = {
   type: 'object', required: ['terms'],
@@ -77,9 +83,10 @@ for (const { code, name } of LANGS) {
 
 Use the Read tool on ${chunkPath(code, i)}. Each unit has: id, path, ko (Korean being taught, may be null), en (authoritative English source of meaning), ${code} (the ${name} to judge).
 
-For EACH unit check:
+Judge each unit as a whole sentence, NOT word by word. For EACH unit check:
 • Meaning — does the ${name} say what the English says? No drift, no omission, no addition.
-• Naturalness & register — does it read like a real ${name} teacher wrote it, not a literal gloss? Right politeness level for a friendly lesson.
+• Fluency (grammar & word order) — correct grammar (agreement, tense/aspect, particles, classifiers) AND native ${name} word order AND idiomatic phrasing a real teacher would use. A string that is lexically accurate but mirrors English syntax is WRONG here — flag it and fix the structure, not just the words. ${name} structural traps: ${STRUCT[code] || 'native grammar and word order, not an English calque'}.
+• Register — right politeness level for a friendly beginner lesson, consistent throughout.
 • Script correctness — ${code === 'th'
   ? 'Thai: correct word-boundary segmentation (Thai has no spaces), tone marks, sara/vowel placement, no stray Latin/Korean where Thai is expected.'
   : 'Vietnamese: every diacritic and tone mark correct — a wrong dấu is a different word — plus spacing and capitalisation.'}
@@ -114,6 +121,7 @@ ${JSON.stringify(grp.map(f => ({ id: f.id, str: f.fix })))}`,
     (bt, grp) => agent(
 `You are a DIFFERENT native ${name} speaker and Korean teacher — a second reviewer. Use the Read tool on ${DIR}/manifest.json; for each id below look up its "en" (true meaning), "ko", and current "${code}".
 You are given the first reviewer's proposed "fix" and an independent blind back-translation ("en_back") of that fix. If en_back diverges from the true en, the fix drifted — reject or repair it.
+Judge the final "value" on BOTH meaning fidelity AND fluency: it must use native ${name} grammar and word order, not an English calque (${STRUCT[code] || 'native structure, not literal from English'}). If the fix is accurate but reads like translated-English, rewrite it into natural ${name}.
 For each id decide: accept=true with the final "value" to ship (the fix, or your own better ${name} if the fix is imperfect), or accept=false if the current translation was actually fine. Enforce the glossary: ${glossaryText}
 Proposed fixes: ${JSON.stringify(grp.map(f => ({ id: f.id, issue: f.issue, fix: f.fix })))}
 Blind back-translations: ${JSON.stringify(bt && bt.items || [])}`,

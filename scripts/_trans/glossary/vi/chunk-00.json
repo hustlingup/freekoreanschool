@@ -1,0 +1,547 @@
+{
+  "lang": "vi",
+  "chunk": 0,
+  "count": 90,
+  "units": [
+    {
+      "id": "emotions::steps.0.body",
+      "term": "dictionary form",
+      "en": "Korean emotion words are mostly adjectives in their base form. Unlike English ('I am happy'), Korean adjectives act like verbs and conjugate directly: 행복해요 (I am happy) without needing a separate 'am'. The dictionary form ends in -다: 행복하다, 슬프다, 무섭다. Drop -다 and add -아요/-어요 for the polite present tense. Emotion vocabulary is especially useful for talking about K-dramas, daily life, and personal feelings.",
+      "value": "Từ chỉ cảm xúc trong tiếng Hàn chủ yếu là tính từ ở dạng gốc. Khác với tiếng Anh ('I am happy'), tính từ tiếng Hàn hoạt động như động từ và chia trực tiếp: 행복해요 (Tôi hạnh phúc / Thật tốt) mà không cần một từ 'am' riêng. Dạng nguyên thể kết thúc bằng -다: 행복하다, 슬프다, 무섭다. Bỏ -다 và thêm -아요/-어요 cho thì hiện tại lịch sự. Từ vựng cảm xúc đặc biệt hữu ích để nói về K-drama, đời sống hằng ngày và cảm xúc cá nhân."
+    },
+    {
+      "id": "emotions::steps.1.meaning",
+      "term": "dictionary form",
+      "en": "to be happy (dictionary form)",
+      "value": "vui / hạnh phúc (dạng từ điển)"
+    },
+    {
+      "id": "emotions::steps.2.meaning",
+      "term": "dictionary form",
+      "en": "to be sad (dictionary form)",
+      "value": "buồn (dạng từ điển)"
+    },
+    {
+      "id": "emotions::steps.6.body",
+      "term": "dictionary form",
+      "en": "To use emotion adjectives in polite conversation, remove -다 from the dictionary form and add the polite present ending. For stems ending in 하: 하다 → 해요 (행복하다 → 행복해요). For stems ending in a bright vowel (ㅏ, ㅗ): add -아요. For all others: add -어요, usually with a vowel change — 슬프다 drops its ㅡ: 슬프 + 어요 → 슬퍼요. Stems ending in ㅂ are irregular: the ㅂ turns into 우, so 무섭다 → 무서우 + 어요 → 무서워요 (likewise 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). The same pattern applies to most Korean descriptive verbs (adjectives).",
+      "value": "Để dùng tính từ cảm xúc trong hội thoại lịch sự, bỏ -다 khỏi dạng nguyên thể và thêm đuôi hiện tại lịch sự. Với gốc kết thúc bằng 하: 하다 → 해요 (행복하다 → 행복해요). Với gốc kết thúc bằng nguyên âm sáng (ㅏ, ㅗ): thêm -아요. Với các trường hợp khác: thêm -어요, thường kèm biến đổi nguyên âm — 슬프다 lược bỏ ㅡ: 슬프 + 어요 → 슬퍼요. Gốc kết thúc bằng ㅂ là bất quy tắc: ㅂ chuyển thành 우, nên 무섭다 → 무서우 + 어요 → 무서워요 (tương tự 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). Cùng mẫu này áp dụng cho hầu hết động từ miêu tả (tính từ) tiếng Hàn."
+    },
+    {
+      "id": "grammar::steps.11.title",
+      "term": "dictionary form",
+      "en": "Verbs — Dictionary Form",
+      "value": "Động từ — dạng nguyên thể"
+    },
+    {
+      "id": "grammar::steps.11.body",
+      "term": "verb stem|dictionary form",
+      "en": "All Korean verbs in dictionary form end in 다 (da). Remove 다 to get the verb stem, then add an ending.",
+      "value": "Mọi động từ tiếng Hàn ở dạng nguyên thể đều kết thúc bằng 다 (da). Bỏ 다 để có gốc động từ, rồi thêm một đuôi."
+    },
+    {
+      "id": "grammar::steps.19.body",
+      "term": "verb stem",
+      "en": "Add -(으)ㄹ 거예요 to the verb stem to talk about future plans or predictions.",
+      "value": "Thêm -(으)ㄹ 거예요 vào gốc động từ để nói về kế hoạch hay dự đoán trong tương lai."
+    },
+    {
+      "id": "grammar::steps.21.body",
+      "term": "verb stem",
+      "en": "Short negation: 안 + verb. Long negation: verb stem + 지 않아요. Cannot: 못 + verb.",
+      "value": "Phủ định ngắn: 안 + động từ. Phủ định dài: gốc động từ + 지 않아요. Không thể: 못 + động từ."
+    },
+    {
+      "id": "grammar::steps.32.rules[3]",
+      "term": "speech level",
+      "en": "-께 — to (honorific, for elders): 선생님께 드렸어요",
+      "value": "-께 — đến (kính ngữ, dành cho người lớn tuổi): 선생님께 드렸어요"
+    },
+    {
+      "id": "grammar::steps.36.rules[2]",
+      "term": "speech level",
+      "en": "분 — people (honorific): 손님 두 분 (2 guests)",
+      "value": "분 — người (kính ngữ): 손님 두 분 (2 vị khách)"
+    },
+    {
+      "id": "grammar::steps.38.prompt",
+      "term": "counter",
+      "en": "Counter for people (neutral)?",
+      "value": "Loại từ dùng cho người (trung tính)?"
+    },
+    {
+      "id": "grammar::steps.39.body",
+      "term": "verb stem",
+      "en": "Add -고 있어요 to the verb stem to say someone IS CURRENTLY doing something (the Korean '-ing' form).",
+      "value": "Thêm -고 있어요 vào gốc động từ để nói ai đó ĐANG làm gì đó (dạng '-ing' của tiếng Hàn)."
+    },
+    {
+      "id": "grammar::steps.47.body",
+      "term": "verb stem",
+      "en": "Adding -는 것 to a verb stem creates a noun phrase — 'the act of doing ~'. It makes verbs act like nouns.",
+      "value": "Thêm -는 것 vào gốc động từ tạo ra một cụm danh từ — 'việc làm ~'. Nó khiến động từ hoạt động như danh từ."
+    },
+    {
+      "id": "grammar::steps.53.body",
+      "term": "particle",
+      "en": "좋다 uses subject particle (이/가): 한국어가 좋아요. 좋아하다 uses object particle (을/를): 한국어를 좋아해요.",
+      "value": "좋다 dùng trợ từ chủ ngữ (이/가): 한국어가 좋아요. 좋아하다 dùng trợ từ tân ngữ (을/를): 한국어를 좋아해요."
+    },
+    {
+      "id": "grammar::steps.53.tip.text",
+      "term": "particle",
+      "en": "좋아요 → subject particle (이/가) precedes it. 좋아해요 → object particle (을/를) precedes it. When in doubt, 좋아해요 sounds more natural for expressing preferences.",
+      "value": "좋아요 → trợ từ chủ ngữ (이/가) đứng trước nó. 좋아해요 → trợ từ tân ngữ (을/를) đứng trước nó. Khi phân vân, 좋아해요 nghe tự nhiên hơn để diễn đạt sự yêu thích."
+    },
+    {
+      "id": "grammar::steps.59.body",
+      "term": "verb stem",
+      "en": "Add -(으)세요 to a verb stem to make a polite request or command.",
+      "value": "Thêm -(으)세요 vào gốc động từ để đưa ra một yêu cầu hoặc mệnh lệnh lịch sự."
+    },
+    {
+      "id": "grammar::steps.59.rules[2]",
+      "term": "speech level",
+      "en": "먹다 → 드세요 (please eat — honorific)",
+      "value": "먹다 → 드세요 (mời ăn — kính ngữ)"
+    },
+    {
+      "id": "grammar::steps.61.body",
+      "term": "verb stem",
+      "en": "Add -지 마세요 to a verb stem to politely tell someone NOT to do something.",
+      "value": "Thêm -지 마세요 vào gốc động từ để lịch sự bảo ai đó ĐỪNG làm gì đó."
+    },
+    {
+      "id": "grammar::steps.66.body",
+      "term": "particle",
+      "en": "잘하다 = good at. 못하다 = poor at. Both attach after the object particle 을/를.",
+      "value": "잘하다 = giỏi về. 못하다 = kém về. Cả hai gắn sau trợ từ tân ngữ 을/를."
+    },
+    {
+      "id": "hangul::steps.9.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'ch' — a puff of air comes out. Like 'ch' in 'cheese'.",
+      "value": "Âm 'ch' bật hơi — có một luồng khí thoát ra."
+    },
+    {
+      "id": "hangul::steps.10.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'k' — strong puff of air. Hold a tissue and it flutters.",
+      "value": "Âm 'k' bật hơi — luồng khí mạnh. Cầm tờ giấy và nó sẽ bay phấp phới."
+    },
+    {
+      "id": "hangul::steps.11.hint",
+      "term": "aspirated",
+      "en": "Aspirated 't' — like 't' in 'ten' (at word start). Strong burst.",
+      "value": "Âm 't' bật hơi — như 't' trong 'ten'. Bật mạnh."
+    },
+    {
+      "id": "hangul::steps.12.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'p' — like 'p' in 'pot'. Lips pop apart with air.",
+      "value": "Âm 'p' bật hơi — như 'p' trong 'pot'. Môi bật ra cùng luồng khí."
+    },
+    {
+      "id": "hangul::steps.47.hint",
+      "term": "aspirated",
+      "en": "Aspirated — a strong burst of air follows the consonant.",
+      "value": "Bật hơi — một luồng khí mạnh theo sau phụ âm."
+    },
+    {
+      "id": "hangul::steps.48.hint",
+      "term": "aspirated",
+      "en": "Aspirated — tongue snaps off the palate with a puff of air.",
+      "value": "Bật hơi — lưỡi bật ra khỏi vòm miệng cùng luồng khí."
+    },
+    {
+      "id": "hangul::steps.49.hint",
+      "term": "aspirated",
+      "en": "Aspirated — lips burst open with a pop of air. Like 'pot'.",
+      "value": "Bật hơi — môi bật mở cùng tiếng phát. Như 'pot'."
+    },
+    {
+      "id": "hangul::steps.50.hint",
+      "term": "aspirated",
+      "en": "Aspirated 'ch' — like 'cheese' at the start. Air comes out.",
+      "value": "Âm 'ch' bật hơi — như 'cheese' ở đầu. Không khí thoát ra."
+    },
+    {
+      "id": "hangul::steps.51.hint",
+      "term": "aspirated",
+      "en": "A breathy aspirated consonant. The most air of any Korean consonant.",
+      "value": "Phụ âm bật hơi nhẹ. Nhiều không khí nhất trong các phụ âm tiếng Hàn."
+    },
+    {
+      "id": "hangul::steps.53.prompt",
+      "term": "tense consonant",
+      "en": "Which is a TENSE consonant (쌍자음)?",
+      "value": "Đâu là phụ âm CĂNG (쌍자음)?"
+    },
+    {
+      "id": "hangul::steps.55.prompt",
+      "term": "aspirated",
+      "en": "Aspirated consonants are produced with…",
+      "value": "Phụ âm bật hơi được tạo ra bằng…"
+    },
+    {
+      "id": "hangul::steps.67.hint",
+      "term": "particle",
+      "en": "ㅡ + ㅣ. A unique glide. 의사 = doctor. Used as possessive particle 의.",
+      "value": "ㅡ + ㅣ. Âm lướt độc đáo. 의사 = bác sĩ. Dùng như trợ từ sở hữu 의."
+    },
+    {
+      "id": "letter-writing::steps.1.body",
+      "term": "batchim|syllable block",
+      "en": "Each letter has a fixed number of strokes, and each stroke has a fixed direction. ㅈ is written in 2 strokes and ㅊ in 3 — that is the handwriting convention used all the way through this lesson. Inside a syllable block the order is fixed too: first the opening consonant, then the vowel, then the final consonant underneath.",
+      "value": "Mỗi chữ cái có số nét cố định, và mỗi nét có hướng cố định. ㅈ viết bằng 2 nét và ㅊ bằng 3 nét — đó là quy ước viết tay dùng xuyên suốt bài học này. Bên trong một khối âm tiết, thứ tự cũng cố định: trước hết là phụ âm đầu, rồi đến nguyên âm, rồi phụ âm cuối bên dưới."
+    },
+    {
+      "id": "letter-writing::steps.1.rules[2]",
+      "term": "batchim",
+      "en": "Then the final consonant (종성) along the bottom, if the syllable has one.",
+      "value": "Rồi phụ âm cuối (종성) chạy dọc phía dưới, nếu âm tiết có."
+    },
+    {
+      "id": "letter-writing::steps.58.hint",
+      "term": "batchim",
+      "en": "Straight down the block: ㄱ, then ㅗ, then ㅁ as the final consonant.",
+      "value": "Đi thẳng từ trên xuống trong khối: ㄱ, rồi ㅗ, rồi ㅁ làm phụ âm cuối."
+    },
+    {
+      "id": "letter-writing::steps.64.hint",
+      "term": "batchim",
+      "en": "The final consonant is a pair: write ㄷ, then ㅏ, then ㄹ and ㄱ side by side at the bottom.",
+      "value": "Phụ âm cuối là một cặp: viết ㄷ, rồi ㅏ, rồi ㄹ và ㄱ cạnh nhau ở đáy."
+    },
+    {
+      "id": "nouns::steps.10.body",
+      "term": "particle",
+      "en": "Korean place nouns follow the same no-article rule as all other nouns. 학교 means 'school', 'a school', or 'the school' — context tells you which. When giving directions or stating location, Korean adds the particle 에 (at/in) after the place noun: 학교에 가요 (I go to school). Place nouns are among the most practical words to learn early.",
+      "value": "Danh từ chỉ nơi chốn trong tiếng Hàn tuân theo cùng quy tắc không-mạo-từ như mọi danh từ khác. 학교 có nghĩa là 'trường học', 'một trường học' hoặc 'trường học đó' — ngữ cảnh cho bạn biết là cái nào. Khi chỉ đường hoặc nêu vị trí, tiếng Hàn thêm trợ từ 에 (tại/ở) sau danh từ nơi chốn: 학교에 가요 (Tôi đi đến trường). Danh từ nơi chốn là một trong những từ thực dụng nhất nên học sớm."
+    },
+    {
+      "id": "nouns::steps.10.tip.label",
+      "term": "particle",
+      "en": "Location particle 에",
+      "value": "Trợ từ vị trí 에"
+    },
+    {
+      "id": "nouns::steps.19.body",
+      "term": "particle",
+      "en": "Everyday objects are among the most immediately useful Korean words. Korean has both native Korean words and Sino-Korean (Chinese-origin) words for objects, and in many cases Konglish (loan words from English) is used: 커피 (coffee), 핸드폰 (hand phone / cell phone). When the object is the direct receiver of a verb, add 을/를 after the noun: 책을 읽어요 (I read a book). This is the object-marking particle.",
+      "value": "Đồ vật hằng ngày là một trong những từ tiếng Hàn hữu ích ngay lập tức nhất. Tiếng Hàn có cả từ thuần Hàn lẫn từ Hán Hàn (gốc Trung) cho đồ vật, và trong nhiều trường hợp Konglish (từ mượn từ tiếng Anh) được dùng: 커피 (cà phê), 핸드폰 (hand phone / điện thoại di động). Khi đồ vật là đối tượng trực tiếp nhận hành động của động từ, thêm 을/를 sau danh từ: 책을 읽어요 (Tôi đọc sách). Đây là trợ từ đánh dấu tân ngữ."
+    },
+    {
+      "id": "nouns::steps.19.tip.label",
+      "term": "particle",
+      "en": "Object particle 을/를",
+      "value": "Trợ từ tân ngữ 을/를"
+    },
+    {
+      "id": "nouns::steps.19.tip.text",
+      "term": "particle",
+      "en": "Use 을 after a noun ending in a consonant: 책을. Use 를 after a noun ending in a vowel: 가방을. In casual speech, this particle is often dropped entirely.",
+      "value": "Dùng 을 sau danh từ kết thúc bằng phụ âm: 책을. Dùng 를 sau danh từ kết thúc bằng nguyên âm: 가방을. Trong lời nói thân mật, trợ từ này thường bị bỏ hoàn toàn."
+    },
+    {
+      "id": "nouns::steps.24.body",
+      "term": "counter",
+      "en": "Korean uses counting words called counters (수사) that attach to numbers when counting specific things. The counter 개 is used for general objects: 한 개 (one thing), 세 개 (three things). 명 is used for counting people: 두 명 (two people). 잔 is used for cups/glasses: 한 잔 (one cup). The pattern is: number + counter, placed right before or after the noun. Korean numbers for counters use the native Korean set: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5).",
+      "value": "Tiếng Hàn dùng các từ đếm gọi là loại từ (수사) gắn vào con số khi đếm những vật cụ thể. Loại từ 개 dùng cho đồ vật nói chung: 한 개 (một cái), 세 개 (ba cái). 명 dùng để đếm người: 두 명 (hai người). 잔 dùng cho tách/ly: 한 잔 (một tách). Mẫu là: số + loại từ, đặt ngay trước hoặc sau danh từ. Số tiếng Hàn dùng với loại từ thuộc bộ thuần Hàn: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5)."
+    },
+    {
+      "id": "nouns::steps.25.meaning",
+      "term": "counter",
+      "en": "three people (명 = person counter)",
+      "value": "ba người (명 = từ đếm người)"
+    },
+    {
+      "id": "pronouns::steps.11.meaning",
+      "term": "speech level",
+      "en": "we / our (humble, polite form of 우리)",
+      "value": "chúng tôi / của chúng tôi (khiêm tốn, lịch sự của 우리)"
+    },
+    {
+      "id": "pronunciation::stages.0.name",
+      "term": "batchim",
+      "en": "Batchim",
+      "value": "Batchim (받침)"
+    },
+    {
+      "id": "pronunciation::stages.1.name",
+      "term": "liaison",
+      "en": "Liaison",
+      "value": "Liên âm (연음화)"
+    },
+    {
+      "id": "pronunciation::steps.0.title",
+      "term": "batchim",
+      "en": "What is Batchim?",
+      "value": "Batchim là gì?"
+    },
+    {
+      "id": "pronunciation::steps.0.body",
+      "term": "batchim|syllable block",
+      "en": "A batchim (받침, literally 'support') is a consonant placed at the bottom of a Korean syllable block. For example, in the syllable 강, the ㅇ at the bottom is the batchim. Not all syllables have a batchim — many end with just the vowel. Batchim is why Korean words like 산, 달, and 밥 end with a distinct consonant sound rather than an open vowel.",
+      "value": "Batchim (받침, nghĩa đen là 'giá đỡ') là một phụ âm được đặt ở đáy khối âm tiết tiếng Hàn. Ví dụ, trong âm tiết 강, chữ ㅇ ở dưới cùng chính là batchim. Không phải âm tiết nào cũng có batchim — nhiều âm tiết chỉ kết thúc bằng nguyên âm. Batchim là lý do các từ tiếng Hàn như 산, 달 và 밥 kết thúc bằng một âm phụ âm rõ ràng thay vì một nguyên âm mở."
+    },
+    {
+      "id": "pronunciation::steps.0.tip.label",
+      "term": "batchim",
+      "en": "Which syllables have batchim?",
+      "value": "Âm tiết nào có batchim?"
+    },
+    {
+      "id": "pronunciation::steps.0.tip.text",
+      "term": "batchim|syllable block",
+      "en": "Look at any Korean syllable block. If there is a character beneath the vowel, that is the batchim. 가 has no batchim. 간 has batchim ㄴ. 닭 has double batchim ㄺ (read as one sound).",
+      "value": "Hãy nhìn vào bất kỳ khối âm tiết tiếng Hàn nào. Nếu có một ký tự bên dưới nguyên âm, đó là batchim. 가 không có batchim. 간 có batchim ㄴ. 닭 có batchim đôi ㄺ (đọc thành một âm)."
+    },
+    {
+      "id": "pronunciation::steps.1.title",
+      "term": "batchim",
+      "en": "The 7 Batchim Sound Groups",
+      "value": "7 nhóm âm batchim"
+    },
+    {
+      "id": "pronunciation::steps.1.body",
+      "term": "batchim",
+      "en": "Although many different consonants can appear as batchim in spelling, they all reduce to only 7 possible sounds when pronounced. This is known as the 7 rules of batchim (받침 7종성). Learning these 7 groups is essential — it explains why 닭 (chicken) and 국 (soup) both end with the same k sound.",
+      "value": "Mặc dù nhiều phụ âm khác nhau có thể xuất hiện làm batchim trong chính tả, khi phát âm tất cả chỉ rút gọn thành 7 âm có thể có. Đây được gọi là 7 quy tắc batchim (받침 7종성). Học 7 nhóm này là điều thiết yếu — nó giải thích vì sao 닭 (gà) và 국 (canh) đều kết thúc bằng cùng một âm k."
+    },
+    {
+      "id": "pronunciation::steps.1.tip.text",
+      "term": "batchim",
+      "en": "The k, t, and p batchim sounds are unreleased: your mouth forms the position but does not release a puff of air. Think of holding the final p in 'cup' — cup_ — without letting air out. Korean ㄱ/ㄷ/ㅂ batchim work the same way.",
+      "value": "Các âm batchim k, t và p là âm không bật hơi: miệng bạn tạo thành vị trí phát âm nhưng không nhả ra luồng hơi. Hãy nghĩ đến việc giữ âm p cuối trong 'cup' — cup_ — mà không cho hơi thoát ra. Batchim ㄱ/ㄷ/ㅂ của tiếng Hàn hoạt động theo cách tương tự."
+    },
+    {
+      "id": "pronunciation::steps.2.meaning",
+      "term": "batchim",
+      "en": "soup — ㄱ-group batchim, pronounced k (unreleased)",
+      "value": "canh — nhóm batchim ㄱ, phát âm k (không bật hơi)"
+    },
+    {
+      "id": "pronunciation::steps.3.meaning",
+      "term": "batchim",
+      "en": "mountain — ㄴ-group batchim, pronounced n",
+      "value": "núi — nhóm batchim ㄴ, phát âm n"
+    },
+    {
+      "id": "pronunciation::steps.4.meaning",
+      "term": "batchim",
+      "en": "clothes — ㄷ-group batchim (ㅅ→t), pronounced t (unreleased)",
+      "value": "quần áo — nhóm batchim ㄷ (ㅅ→t), phát âm t (không bật hơi)"
+    },
+    {
+      "id": "pronunciation::steps.5.meaning",
+      "term": "batchim",
+      "en": "moon — ㄹ-group batchim, pronounced l",
+      "value": "trăng — nhóm batchim ㄹ, phát âm l"
+    },
+    {
+      "id": "pronunciation::steps.6.meaning",
+      "term": "batchim",
+      "en": "night / chestnut — ㅁ-group batchim, pronounced m",
+      "value": "đêm / hạt dẻ — nhóm batchim ㅁ, phát âm m"
+    },
+    {
+      "id": "pronunciation::steps.7.meaning",
+      "term": "batchim",
+      "en": "mouth — ㅂ-group batchim, pronounced p (unreleased)",
+      "value": "miệng — nhóm batchim ㅂ, phát âm p (không bật hơi)"
+    },
+    {
+      "id": "pronunciation::steps.8.meaning",
+      "term": "batchim",
+      "en": "river — ㅇ-group batchim, pronounced ng",
+      "value": "sông — nhóm batchim ㅇ, phát âm ng"
+    },
+    {
+      "id": "pronunciation::steps.9.meaning",
+      "term": "batchim",
+      "en": "chicken — double batchim ㄺ (ㄹ+ㄱ) → ㄱ group → k sound",
+      "value": "gà — batchim kép ㄺ (ㄹ+ㄱ) → nhóm ㄱ → âm k"
+    },
+    {
+      "id": "pronunciation::steps.10.meaning",
+      "term": "batchim",
+      "en": "flower — batchim ㅊ belongs to the ㄷ-group → t sound",
+      "value": "hoa — batchim ㅊ thuộc nhóm ㄷ → âm t"
+    },
+    {
+      "id": "pronunciation::steps.11.prompt",
+      "term": "batchim",
+      "en": "ㅋ, ㄲ, and ㄳ are all batchim in the same group. Which sound group are they in?",
+      "value": "ㅋ, ㄲ và ㄳ đều là batchim trong cùng một nhóm. Chúng thuộc nhóm âm nào?"
+    },
+    {
+      "id": "pronunciation::steps.12.prompt",
+      "term": "batchim",
+      "en": "방 (room) ends with batchim ㅇ. What sound does this make?",
+      "value": "방 (phòng) kết thúc bằng batchim ㅇ. Nó tạo ra âm gì?"
+    },
+    {
+      "id": "pronunciation::steps.13.title",
+      "term": "liaison",
+      "en": "Liaison — Linking Sound",
+      "value": "Nối âm (Liaison)"
+    },
+    {
+      "id": "pronunciation::steps.13.body",
+      "term": "batchim|liaison",
+      "en": "When a syllable ending in a batchim is immediately followed by a syllable that begins with the silent ㅇ, the batchim consonant moves forward and becomes the initial consonant of the next syllable. The spelling stays the same — only the pronunciation shifts. This is called liaison (연음화) and it is one of the most frequent pronunciation phenomena in Korean.",
+      "value": "Khi một âm tiết kết thúc bằng batchim được theo ngay sau bởi một âm tiết bắt đầu bằng ㅇ câm, phụ âm batchim sẽ chuyển lên trước và trở thành phụ âm đầu của âm tiết tiếp theo. Chính tả vẫn giữ nguyên — chỉ cách phát âm thay đổi. Điều này gọi là nối âm (연음화) và là một trong những hiện tượng phát âm thường gặp nhất trong tiếng Hàn."
+    },
+    {
+      "id": "pronunciation::steps.13.tip.text",
+      "term": "batchim",
+      "en": "Look for: batchim consonant + next syllable beginning with ㅇ (silent placeholder). Result: the batchim sounds as if it opens the next syllable. 먹어요 → 머거요. 한국어 → 한구거. The written form never changes — only your pronunciation does.",
+      "value": "Hãy tìm: phụ âm batchim + âm tiết tiếp theo bắt đầu bằng ㅇ (ký tự giữ chỗ câm). Kết quả: batchim nghe như thể nó mở đầu âm tiết tiếp theo. 먹어요 → 머거요. 한국어 → 한구거. Dạng viết không bao giờ thay đổi — chỉ cách phát âm của bạn thay đổi."
+    },
+    {
+      "id": "pronunciation::steps.14.meaning",
+      "term": "batchim",
+      "en": "I eat / am eating — ㄱ batchim of 먹 links into 어, sounds like 머거요",
+      "value": "Tôi ăn / đang ăn — batchim ㄱ của 먹 liên âm với 어, nghe như 머거요"
+    },
+    {
+      "id": "pronunciation::steps.15.meaning",
+      "term": "batchim",
+      "en": "rice (object form) — ㅂ batchim of 밥 links into 을, sounds like 바블",
+      "value": "cơm (dạng tân ngữ) — batchim ㅂ của 밥 liên âm với 을, nghe như 바블"
+    },
+    {
+      "id": "pronunciation::steps.16.meaning",
+      "term": "batchim",
+      "en": "It is good / I like it — ㅎ batchim weakens and links (see Stage 4 for ㅎ rules)",
+      "value": "Tốt / Tôi thích — batchim ㅎ yếu đi và liên âm (xem giai đoạn 4 về quy tắc ㅎ)"
+    },
+    {
+      "id": "pronunciation::steps.17.meaning",
+      "term": "batchim",
+      "en": "Korean language — ㄱ batchim of 국 links into 어, sounds like 한구거",
+      "value": "tiếng Hàn — batchim ㄱ của 국 liên âm với 어, nghe như 한구거"
+    },
+    {
+      "id": "pronunciation::steps.18.title",
+      "term": "liaison",
+      "en": "Why Does Liaison Happen?",
+      "value": "Vì sao xảy ra nối âm?"
+    },
+    {
+      "id": "pronunciation::steps.18.body",
+      "term": "batchim",
+      "en": "Korean syllable structure strongly prefers the pattern consonant + vowel. When a vowel-initial syllable follows a batchim, it is phonetically easier for the consonant to attach to that vowel's open slot. The result is a more natural, connected flow of speech. This is not slang or lazy pronunciation — it is standard Korean and will be heard in news broadcasts, formal speeches, and everyday conversation alike.",
+      "value": "Cấu trúc âm tiết tiếng Hàn rất ưa chuộng kiểu phụ âm + nguyên âm. Khi một âm tiết bắt đầu bằng nguyên âm theo sau một batchim, về mặt ngữ âm sẽ dễ hơn nếu phụ âm gắn vào chỗ trống của nguyên âm đó. Kết quả là dòng lời nói tự nhiên, liền mạch hơn. Đây không phải tiếng lóng hay cách phát âm lười biếng — đây là tiếng Hàn chuẩn và bạn sẽ nghe thấy trong bản tin, bài phát biểu trang trọng lẫn hội thoại hằng ngày."
+    },
+    {
+      "id": "pronunciation::steps.18.tip.label",
+      "term": "liaison",
+      "en": "Liaison vs spelling",
+      "value": "Nối âm và chính tả"
+    },
+    {
+      "id": "pronunciation::steps.19.prompt",
+      "term": "batchim|liaison",
+      "en": "Liaison (연음화) occurs when a batchim is followed by a syllable that begins with…",
+      "value": "Nối âm (연음화) xảy ra khi một batchim được theo sau bởi một âm tiết bắt đầu bằng…"
+    },
+    {
+      "id": "pronunciation::steps.19.choices[3]",
+      "term": "aspirated",
+      "en": "An aspirated consonant",
+      "value": "Một phụ âm bật hơi"
+    },
+    {
+      "id": "pronunciation::steps.21.body",
+      "term": "batchim",
+      "en": "When a stop consonant batchim from the ㄱ, ㄷ, or ㅂ groups is followed by the nasal consonants ㄴ or ㅁ, the stop assimilates and changes to its corresponding nasal sound. This is purely articulatory: nasal consonants require the velum to lower, which pulls adjacent stops into nasal territory. The spelling stays the same; only the pronunciation changes.",
+      "value": "Khi một batchim là phụ âm tắc thuộc nhóm ㄱ, ㄷ hoặc ㅂ được theo sau bởi các phụ âm mũi ㄴ hoặc ㅁ, âm tắc sẽ đồng hóa và chuyển thành âm mũi tương ứng. Điều này hoàn toàn mang tính cấu âm: phụ âm mũi đòi hỏi hạ màn hầu, kéo các âm tắc lân cận vào vùng âm mũi. Chính tả giữ nguyên; chỉ cách phát âm thay đổi."
+    },
+    {
+      "id": "pronunciation::steps.28.prompt",
+      "term": "batchim",
+      "en": "ㄱ batchim followed by ㄴ or ㅁ changes to which sound?",
+      "value": "Batchim ㄱ theo sau bởi ㄴ hoặc ㅁ chuyển thành âm nào?"
+    },
+    {
+      "id": "pronunciation::steps.31.body",
+      "term": "batchim",
+      "en": "After certain batchim consonants — specifically the unreleased stop batchim sounds from the ㄱ, ㄷ, and ㅂ groups — the following consonant becomes tensed (doubled). The written form does not change; only the pronunciation shifts. Tensification is why 학교 (school) sounds like 학꾜 instead of 학교.",
+      "value": "Sau một số batchim nhất định — cụ thể là các âm batchim tắc không bật hơi thuộc nhóm ㄱ, ㄷ và ㅂ — phụ âm đứng sau trở nên căng (đôi). Dạng viết không thay đổi; chỉ cách phát âm thay đổi. Căng âm là lý do 학교 (trường học) nghe thành 학꾜 thay vì 학교."
+    },
+    {
+      "id": "pronunciation::steps.32.meaning",
+      "term": "batchim",
+      "en": "school — ㄱ batchim triggers tensification: ㄱ→ㄲ, sounds like 학꾜",
+      "value": "trường học — batchim ㄱ gây biến âm căng: ㄱ→ㄲ, nghe như 학꾜"
+    },
+    {
+      "id": "pronunciation::steps.33.meaning",
+      "term": "batchim",
+      "en": "restaurant — ㄱ batchim triggers tensification: ㄷ→ㄸ, sounds like 식땅",
+      "value": "nhà hàng — batchim ㄱ gây biến âm căng: ㄷ→ㄸ, nghe như 식땅"
+    },
+    {
+      "id": "pronunciation::steps.34.meaning",
+      "term": "batchim",
+      "en": "to close — ㄷ batchim triggers tensification: ㄷ→ㄸ, sounds like 닫따",
+      "value": "đóng — batchim ㄷ gây biến âm căng: ㄷ→ㄸ, nghe như 닫따"
+    },
+    {
+      "id": "pronunciation::steps.35.meaning",
+      "term": "batchim",
+      "en": "entrance — ㅂ batchim triggers tensification: ㄱ→ㄲ, sounds like 입꾸",
+      "value": "lối vào — batchim ㅂ gây biến âm căng: ㄱ→ㄲ, nghe như 입꾸"
+    },
+    {
+      "id": "pronunciation::steps.36.prompt",
+      "term": "batchim",
+      "en": "Tensification (경음화) occurs most predictably after which type of batchim?",
+      "value": "Căng âm (경음화) xảy ra rõ ràng và dễ đoán nhất sau loại batchim nào?"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[0]",
+      "term": "batchim",
+      "en": "Nasal batchim (ㄴ, ㅁ, ㅇ)",
+      "value": "Batchim âm mũi (ㄴ, ㅁ, ㅇ)"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[1]",
+      "term": "batchim",
+      "en": "Unreleased stop batchim (ㄱ, ㄷ, ㅂ groups)",
+      "value": "Batchim tắc không bật hơi (nhóm ㄱ, ㄷ, ㅂ)"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[2]",
+      "term": "batchim",
+      "en": "The ㄹ batchim only",
+      "value": "Chỉ batchim ㄹ"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[3]",
+      "term": "batchim",
+      "en": "Any batchim consonant",
+      "value": "Bất kỳ batchim nào"
+    },
+    {
+      "id": "pronunciation::steps.37.choices[1]",
+      "term": "aspirated",
+      "en": "hak-kyo (aspirated)",
+      "value": "hak-kyo (bật hơi)"
+    },
+    {
+      "id": "pronunciation::steps.38.body",
+      "term": "batchim",
+      "en": "The consonant ㅎ is one of Korean's most unstable sounds. Between vowels — whether ㅎ is a batchim or an initial consonant — it weakens significantly and often disappears almost entirely. This is why 좋아요 (it is good) sounds like 조아요 rather than 조하요. The ㅎ is still written, but the sound nearly vanishes.",
+      "value": "Phụ âm ㅎ là một trong những âm bất ổn định nhất của tiếng Hàn. Giữa hai nguyên âm — dù ㅎ là batchim hay phụ âm đầu — nó yếu đi đáng kể và thường gần như biến mất hoàn toàn. Đây là lý do 좋아요 (nó tốt) nghe thành 조아요 thay vì 조하요. Chữ ㅎ vẫn được viết, nhưng âm gần như biến mất."
+    },
+    {
+      "id": "pronunciation::steps.39.meaning",
+      "term": "batchim",
+      "en": "It is good / I like it — ㅎ batchim weakens: sounds like 조아요 (not 조하요)",
+      "value": "Tốt / Tôi thích — batchim ㅎ yếu đi: nghe như 조아요 (không phải 조하요)"
+    }
+  ]
+}

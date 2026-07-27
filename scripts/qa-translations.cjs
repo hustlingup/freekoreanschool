@@ -195,11 +195,16 @@ function applyCorrections(lang, correctionsPath) {
   console.log(`\nApplied ${n} ${lang} correction(s). Now run: node scripts/gen-lesson-static.cjs`);
 }
 
-const [, , mode, a, b] = process.argv;
-if (mode === '--extract') extract();
-else if (mode === '--apply') applyCorrections(a, b);
-else {
-  console.log('usage:\n  node scripts/qa-translations.cjs --extract\n' +
-              '  node scripts/qa-translations.cjs --apply <th|vi> <corrections.json>');
-  process.exit(1);
+if (require.main === module) {
+  const [, , mode, a, b] = process.argv;
+  if (mode === '--extract') extract();
+  else if (mode === '--apply') applyCorrections(a, b);
+  else {
+    console.log('usage:\n  node scripts/qa-translations.cjs --extract\n' +
+                '  node scripts/qa-translations.cjs --apply <th|vi> <corrections.json>');
+    process.exit(1);
+  }
 }
+
+// exported for scripts/qa-triage-sample.cjs (unit extraction reuse)
+module.exports = { unitsFor, walk, LOCALE_SUFFIXES };

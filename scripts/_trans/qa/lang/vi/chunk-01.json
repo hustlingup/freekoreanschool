@@ -1,0 +1,232 @@
+{
+  "lang": "vi",
+  "chunk": 1,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::stages.25.name",
+      "path": "grammar/stages[25]/name",
+      "ko": "도",
+      "en": "-도 Advanced",
+      "current": "-도 Nâng cao",
+      "ref_th": "-도 ขั้นสูง",
+      "ref_es": "-도 Avanzado"
+    },
+    {
+      "id": "grammar::steps.0.title",
+      "path": "grammar/steps[0]/title",
+      "ko": "어순",
+      "en": "Word Order — SOV",
+      "current": "Trật tự từ — SOV",
+      "ref_th": "ลำดับคำ — ประธาน กรรม กริยา",
+      "ref_es": "Orden de Palabras — SOV"
+    },
+    {
+      "id": "grammar::steps.0.body",
+      "path": "grammar/steps[0]/body",
+      "ko": null,
+      "en": "Korean follows Subject → Object → Verb (SOV) order. The verb always comes LAST.",
+      "current": "Tiếng Hàn tuân theo trật tự Chủ ngữ → Tân ngữ → Động từ (SOV). Động từ luôn đứng CUỐI.",
+      "ref_th": "ภาษาเกาหลีใช้ลำดับ ประธาน → กรรม → กริยา (SOV) กริยาอยู่ท้ายเสมอ",
+      "ref_es": "El coreano sigue el orden Sujeto → Objeto → Verbo (SOV). El verbo va siempre AL FINAL."
+    },
+    {
+      "id": "grammar::steps.0.rules[0]",
+      "path": "grammar/steps[0]/rules[0]",
+      "ko": null,
+      "en": "English (SVO): I eat rice.",
+      "current": "Tiếng Anh (SVO): I eat rice. (Tôi ăn cơm.)",
+      "ref_th": "ภาษาอังกฤษ (SVO): I eat rice.",
+      "ref_es": "Español (SVO): Yo como arroz."
+    },
+    {
+      "id": "grammar::steps.0.rules[1]",
+      "path": "grammar/steps[0]/rules[1]",
+      "ko": null,
+      "en": "Korean (SOV): 나는 밥을 먹어요. (I rice eat.)",
+      "current": "Tiếng Hàn (SOV): 나는 밥을 먹어요. (Tôi cơm ăn.)",
+      "ref_th": "ภาษาเกาหลี (SOV): 나는 밥을 먹어요. (ฉัน ข้าว กิน)",
+      "ref_es": "Coreano (SOV): 나는 밥을 먹어요. (Yo arroz como.)"
+    },
+    {
+      "id": "grammar::steps.0.rules[2]",
+      "path": "grammar/steps[0]/rules[2]",
+      "ko": null,
+      "en": "Tip: Listen for the final word — that's the verb, the action!",
+      "current": "Mẹo: Hãy lắng nghe từ cuối cùng — đó là động từ, là hành động!",
+      "ref_th": "เคล็ดลับ: ฟังคำสุดท้าย — นั่นคือกริยา ซึ่งเป็นการกระทำ!",
+      "ref_es": "Consejo: ¡Escucha la última palabra — ese es el verbo, la acción!"
+    },
+    {
+      "id": "grammar::steps.0.tip.label",
+      "path": "grammar/steps[0]/tip.label",
+      "ko": null,
+      "en": "Grammar Tip",
+      "current": "Mẹo ngữ pháp",
+      "ref_th": "เคล็ดลับไวยากรณ์",
+      "ref_es": "Consejo gramatical"
+    },
+    {
+      "id": "grammar::steps.0.tip.text",
+      "path": "grammar/steps[0]/tip.text",
+      "ko": null,
+      "en": "Once you know the verb comes last, everything clicks. The rest of the sentence can rearrange — Korean speakers use particles to keep things clear.",
+      "current": "Một khi bạn biết động từ đứng cuối, mọi thứ trở nên rõ ràng. Phần còn lại của câu có thể sắp xếp lại — người Hàn dùng trợ từ để giữ mọi thứ rành mạch.",
+      "ref_th": "เมื่อรู้ว่ากริยาอยู่ท้าย ทุกอย่างชัดเจนขึ้น ส่วนอื่นในประโยคสามารถสลับได้ — ผู้พูดภาษาเกาหลีใช้คำช่วยเพื่อให้ชัดเจน",
+      "ref_es": "Una vez que sabes que el verbo va al final, todo encaja. El resto de la oración puede reorganizarse — los hablantes coreanos usan partículas para mantener la claridad."
+    },
+    {
+      "id": "grammar::steps.1.meaning",
+      "path": "grammar/steps[1]/meaning",
+      "ko": null,
+      "en": "I eat rice. (Subject + Object + Verb)",
+      "current": "Tôi ăn cơm. (Chủ ngữ + Tân ngữ + Động từ)",
+      "ref_th": "ฉันกินข้าว (ประธาน + กรรม + กริยา)",
+      "ref_es": "Yo como arroz. (Sujeto + Objeto + Verbo)"
+    },
+    {
+      "id": "grammar::steps.2.prompt",
+      "path": "grammar/steps[2]/prompt",
+      "ko": null,
+      "en": "Which sentence is correct Korean for 'I eat rice'?",
+      "current": "Câu nào là tiếng Hàn đúng cho 'Tôi ăn cơm'?",
+      "ref_th": "ประโยคใดเป็นภาษาเกาหลีที่ถูกต้องสำหรับ ฉันกินข้าว?",
+      "ref_es": "¿Qué oración es el coreano correcto para \"Yo como arroz\"?"
+    },
+    {
+      "id": "grammar::steps.3.title",
+      "path": "grammar/steps[3]/title",
+      "ko": "조사",
+      "en": "Korean Particles",
+      "current": "Trợ từ tiếng Hàn",
+      "ref_th": "คำช่วยภาษาเกาหลี",
+      "ref_es": "Partículas Coreanas"
+    },
+    {
+      "id": "grammar::steps.3.body",
+      "path": "grammar/steps[3]/body",
+      "ko": null,
+      "en": "Particles attach to nouns to show their role: topic, subject, object, location. They replace fixed word order.",
+      "current": "Trợ từ gắn vào danh từ để thể hiện vai trò của chúng: chủ đề, chủ ngữ, tân ngữ, vị trí. Chúng thay thế cho trật tự từ cố định.",
+      "ref_th": "คำช่วยต่อท้ายคำนามเพื่อแสดงบทบาท: หัวข้อ ประธาน กรรม สถานที่ แทนที่ลำดับคำคงที่",
+      "ref_es": "Las partículas se unen a los sustantivos para indicar su función: tema, sujeto, objeto, ubicación. Reemplazan el orden fijo de las palabras."
+    },
+    {
+      "id": "grammar::steps.3.rules[0]",
+      "path": "grammar/steps[3]/rules[0]",
+      "ko": null,
+      "en": "은/는 → Topic marker (은 after consonant, 는 after vowel)",
+      "current": "은/는 → Đánh dấu chủ đề (은 sau phụ âm, 는 sau nguyên âm)",
+      "ref_th": "은/는 → คำช่วยหัวข้อ (은 หลังพยัญชนะ 는 หลังสระ)",
+      "ref_es": "은/는 → Marcador de tema (은 tras consonante, 는 tras vocal)"
+    },
+    {
+      "id": "grammar::steps.3.rules[1]",
+      "path": "grammar/steps[3]/rules[1]",
+      "ko": null,
+      "en": "이/가 → Subject marker (이 after consonant, 가 after vowel)",
+      "current": "이/가 → Đánh dấu chủ ngữ (이 sau phụ âm, 가 sau nguyên âm)",
+      "ref_th": "이/가 → คำช่วยประธาน (이 หลังพยัญชนะ 가 หลังสระ)",
+      "ref_es": "이/가 → Marcador de sujeto (이 tras consonante, 가 tras vocal)"
+    },
+    {
+      "id": "grammar::steps.3.rules[2]",
+      "path": "grammar/steps[3]/rules[2]",
+      "ko": null,
+      "en": "을/를 → Object marker (을 after consonant, 를 after vowel)",
+      "current": "을/를 → Đánh dấu tân ngữ (을 sau phụ âm, 를 sau nguyên âm)",
+      "ref_th": "을/를 → คำช่วยกรรม (을 หลังพยัญชนะ 를 หลังสระ)",
+      "ref_es": "을/를 → Marcador de objeto (을 tras consonante, 를 tras vocal)"
+    },
+    {
+      "id": "grammar::steps.3.rules[3]",
+      "path": "grammar/steps[3]/rules[3]",
+      "ko": null,
+      "en": "에 → Location / Direction",
+      "current": "에 → Vị trí / Hướng",
+      "ref_th": "에 → สถานที่ / ทิศทาง",
+      "ref_es": "에 → Ubicación / Dirección"
+    },
+    {
+      "id": "grammar::steps.3.rules[4]",
+      "path": "grammar/steps[3]/rules[4]",
+      "ko": null,
+      "en": "에서 → Location of action",
+      "current": "에서 → Vị trí của hành động",
+      "ref_th": "에서 → สถานที่ของการกระทำ",
+      "ref_es": "에서 → Lugar de la acción"
+    },
+    {
+      "id": "grammar::steps.3.rules[5]",
+      "path": "grammar/steps[3]/rules[5]",
+      "ko": null,
+      "en": "의 → Possessive ('s / of)",
+      "current": "의 → Sở hữu ('của')",
+      "ref_th": "의 → ความเป็นเจ้าของ (ของ)",
+      "ref_es": "의 → Posesivo (de)"
+    },
+    {
+      "id": "grammar::steps.4.meaning",
+      "path": "grammar/steps[4]/meaning",
+      "ko": null,
+      "en": "I am a student. (는 = topic marker)",
+      "current": "Tôi là sinh viên. (는 = trợ từ chủ đề)",
+      "ref_th": "ฉันเป็นนักเรียน (는 = คำช่วยหัวข้อ)",
+      "ref_es": "Soy estudiante. (는 = marcador de tema)"
+    },
+    {
+      "id": "grammar::steps.5.prompt",
+      "path": "grammar/steps[5]/prompt",
+      "ko": null,
+      "en": "은/는 marks the ___",
+      "current": "은/는 đánh dấu ___",
+      "ref_th": "은/는 ทำหน้าที่เป็น ___",
+      "ref_es": "은/는 marca el ___"
+    },
+    {
+      "id": "grammar::steps.5.choices[0]",
+      "path": "grammar/steps[5]/choices[0]",
+      "ko": null,
+      "en": "Topic",
+      "current": "Chủ đề",
+      "ref_th": "หัวข้อ",
+      "ref_es": "Tema"
+    },
+    {
+      "id": "grammar::steps.5.choices[1]",
+      "path": "grammar/steps[5]/choices[1]",
+      "ko": null,
+      "en": "Subject",
+      "current": "Chủ ngữ",
+      "ref_th": "ประธาน",
+      "ref_es": "Sujeto"
+    },
+    {
+      "id": "grammar::steps.5.choices[2]",
+      "path": "grammar/steps[5]/choices[2]",
+      "ko": null,
+      "en": "Object",
+      "current": "Tân ngữ",
+      "ref_th": "กรรม",
+      "ref_es": "Objeto"
+    },
+    {
+      "id": "grammar::steps.5.choices[3]",
+      "path": "grammar/steps[5]/choices[3]",
+      "ko": null,
+      "en": "Location",
+      "current": "Vị trí",
+      "ref_th": "สถานที่",
+      "ref_es": "Ubicación"
+    },
+    {
+      "id": "grammar::steps.6.meaning",
+      "path": "grammar/steps[6]/meaning",
+      "ko": null,
+      "en": "Rain comes. / It's raining. (가 = subject marker)",
+      "current": "Mưa đến. / Trời đang mưa. (가 = trợ từ chủ ngữ)",
+      "ref_th": "ฝนตก (가 = คำช่วยประธาน)",
+      "ref_es": "Llueve. / Está lloviendo. (가 = marcador de sujeto)"
+    }
+  ]
+}

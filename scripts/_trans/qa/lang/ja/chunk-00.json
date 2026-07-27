@@ -1,0 +1,232 @@
+{
+  "lang": "ja",
+  "chunk": 0,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::stages.0.name",
+      "path": "grammar/stages[0]/name",
+      "ko": "문장",
+      "en": "Sentence",
+      "current": "文",
+      "ref_th": "โครงสร้างประโยค",
+      "ref_es": "Oración"
+    },
+    {
+      "id": "grammar::stages.1.name",
+      "path": "grammar/stages[1]/name",
+      "ko": "조사",
+      "en": "Particles",
+      "current": "助詞",
+      "ref_th": "คำช่วย",
+      "ref_es": "Partículas"
+    },
+    {
+      "id": "grammar::stages.2.name",
+      "path": "grammar/stages[2]/name",
+      "ko": "활용",
+      "en": "Conjugation",
+      "current": "活用",
+      "ref_th": "การผันคำกริยา",
+      "ref_es": "Conjugación"
+    },
+    {
+      "id": "grammar::stages.3.name",
+      "path": "grammar/stages[3]/name",
+      "ko": "부정문",
+      "en": "Negation",
+      "current": "否定文",
+      "ref_th": "การปฏิเสธ",
+      "ref_es": "Negación"
+    },
+    {
+      "id": "grammar::stages.4.name",
+      "path": "grammar/stages[4]/name",
+      "ko": "의문문",
+      "en": "Questions",
+      "current": "疑問文",
+      "ref_th": "คำถาม",
+      "ref_es": "Preguntas"
+    },
+    {
+      "id": "grammar::stages.5.name",
+      "path": "grammar/stages[5]/name",
+      "ko": "문형",
+      "en": "Patterns",
+      "current": "文型",
+      "ref_th": "รูปแบบสำคัญ",
+      "ref_es": "Patrones"
+    },
+    {
+      "id": "grammar::stages.6.name",
+      "path": "grammar/stages[6]/name",
+      "ko": "접속사",
+      "en": "Connectors",
+      "current": "接続詞",
+      "ref_th": "คำเชื่อม",
+      "ref_es": "Conectores"
+    },
+    {
+      "id": "grammar::stages.7.name",
+      "path": "grammar/stages[7]/name",
+      "ko": "와/랑",
+      "en": "And/With",
+      "current": "と／とともに",
+      "ref_th": "และ/กับ",
+      "ref_es": "Y / Con"
+    },
+    {
+      "id": "grammar::stages.8.name",
+      "path": "grammar/stages[8]/name",
+      "ko": "한테",
+      "en": "To/From",
+      "current": "に／から",
+      "ref_th": "ให้/จาก",
+      "ref_es": "A / De"
+    },
+    {
+      "id": "grammar::stages.9.name",
+      "path": "grammar/stages[9]/name",
+      "ko": "시간",
+      "en": "Time",
+      "current": "時間",
+      "ref_th": "เวลา",
+      "ref_es": "Tiempo"
+    },
+    {
+      "id": "grammar::stages.10.name",
+      "path": "grammar/stages[10]/name",
+      "ko": "단위",
+      "en": "Counters",
+      "current": "助数詞",
+      "ref_th": "ตัวนับ",
+      "ref_es": "Contadores"
+    },
+    {
+      "id": "grammar::stages.11.name",
+      "path": "grammar/stages[11]/name",
+      "ko": "진행형",
+      "en": "Progressive",
+      "current": "進行形",
+      "ref_th": "กำลังทำ",
+      "ref_es": "Progresivo"
+    },
+    {
+      "id": "grammar::stages.12.name",
+      "path": "grammar/stages[12]/name",
+      "ko": "자기소개",
+      "en": "Self-Intro",
+      "current": "自己紹介",
+      "ref_th": "แนะนำตัว",
+      "ref_es": "Presentación"
+    },
+    {
+      "id": "grammar::stages.13.name",
+      "path": "grammar/stages[13]/name",
+      "ko": "날짜",
+      "en": "Dates",
+      "current": "日付",
+      "ref_th": "วันที่",
+      "ref_es": "Fechas"
+    },
+    {
+      "id": "grammar::stages.14.name",
+      "path": "grammar/stages[14]/name",
+      "ko": "부사",
+      "en": "Adverbs",
+      "current": "副詞",
+      "ref_th": "คำวิเศษณ์",
+      "ref_es": "Adverbios"
+    },
+    {
+      "id": "grammar::stages.15.name",
+      "path": "grammar/stages[15]/name",
+      "ko": "명사화",
+      "en": "Nominalizer",
+      "current": "名詞化",
+      "ref_th": "การทำเป็นคำนาม",
+      "ref_es": "Nominalizador"
+    },
+    {
+      "id": "grammar::stages.16.name",
+      "path": "grammar/stages[16]/name",
+      "ko": "비교",
+      "en": "Comparatives",
+      "current": "比較",
+      "ref_th": "การเปรียบเทียบ",
+      "ref_es": "Comparativos"
+    },
+    {
+      "id": "grammar::stages.17.name",
+      "path": "grammar/stages[17]/name",
+      "ko": "좋다/좋아하다",
+      "en": "Like",
+      "current": "好き",
+      "ref_th": "ชอบ",
+      "ref_es": "Gustar"
+    },
+    {
+      "id": "grammar::stages.18.name",
+      "path": "grammar/stages[18]/name",
+      "ko": "아직/이미",
+      "en": "Still/Already",
+      "current": "まだ／すでに",
+      "ref_th": "ยังคง/แล้ว",
+      "ref_es": "Todavía / Ya"
+    },
+    {
+      "id": "grammar::stages.19.name",
+      "path": "grammar/stages[19]/name",
+      "ko": "막연",
+      "en": "Indefinite",
+      "current": "不定",
+      "ref_th": "ไม่ระบุ",
+      "ref_es": "Indefinido"
+    },
+    {
+      "id": "grammar::stages.20.name",
+      "path": "grammar/stages[20]/name",
+      "ko": "명령형",
+      "en": "Imperative",
+      "current": "命令形",
+      "ref_th": "คำสั่ง",
+      "ref_es": "Imperativo"
+    },
+    {
+      "id": "grammar::stages.21.name",
+      "path": "grammar/stages[21]/name",
+      "ko": "금지형",
+      "en": "Don't",
+      "current": "禁止形",
+      "ref_th": "ห้าม",
+      "ref_es": "Prohibición"
+    },
+    {
+      "id": "grammar::stages.22.name",
+      "path": "grammar/stages[22]/name",
+      "ko": "방법",
+      "en": "Method",
+      "current": "方法",
+      "ref_th": "วิธีการ",
+      "ref_es": "Método"
+    },
+    {
+      "id": "grammar::stages.23.name",
+      "path": "grammar/stages[23]/name",
+      "ko": "잘함/못함",
+      "en": "Good/Poor",
+      "current": "上手／下手",
+      "ref_th": "เก่ง/ไม่เก่ง",
+      "ref_es": "Bien / Mal"
+    },
+    {
+      "id": "grammar::stages.24.name",
+      "path": "grammar/stages[24]/name",
+      "ko": "다/더",
+      "en": "All/More",
+      "current": "すべて／もっと",
+      "ref_th": "ทั้งหมด/อีก",
+      "ref_es": "Todo / Más"
+    }
+  ]
+}

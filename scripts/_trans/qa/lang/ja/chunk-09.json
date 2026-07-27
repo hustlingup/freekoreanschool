@@ -1,0 +1,232 @@
+{
+  "lang": "ja",
+  "chunk": 9,
+  "count": 25,
+  "units": [
+    {
+      "id": "grammar::steps.55.rules[2]",
+      "path": "grammar/steps[55]/rules[2]",
+      "ko": null,
+      "en": "벌써 도착했어요? — Already arrived? (surprised)",
+      "current": "벌써 도착했어요? ——もう着いたの？（驚き）",
+      "ref_th": "벌써 도착했어요? — มาถึงแล้วเหรอ? (แปลกใจ)",
+      "ref_es": "벌써 도착했어요? — ¿Ya llegaste? (sorpresa)"
+    },
+    {
+      "id": "grammar::steps.55.rules[3]",
+      "path": "grammar/steps[55]/rules[3]",
+      "ko": null,
+      "en": "이미 알아요 — I already know (neutral)",
+      "current": "이미 알아요 ——すでに知っています（中立的）",
+      "ref_th": "이미 알아요 — รู้แล้ว (กลาง)",
+      "ref_es": "이미 알아요 — Ya lo sé (neutro)"
+    },
+    {
+      "id": "grammar::steps.56.prompt",
+      "path": "grammar/steps[56]/prompt",
+      "ko": null,
+      "en": "'아직' means?",
+      "current": "「아직」の意味は？",
+      "ref_th": "아직 หมายถึง?",
+      "ref_es": "¿Qué significa \"아직\"?"
+    },
+    {
+      "id": "grammar::steps.56.choices[0]",
+      "path": "grammar/steps[56]/choices[0]",
+      "ko": null,
+      "en": "Still / Not yet",
+      "current": "まだ",
+      "ref_th": "ยัง / ยังไม่",
+      "ref_es": "Todavía / Aún no"
+    },
+    {
+      "id": "grammar::steps.56.choices[1]",
+      "path": "grammar/steps[56]/choices[1]",
+      "ko": null,
+      "en": "Already",
+      "current": "もう",
+      "ref_th": "แล้ว",
+      "ref_es": "Ya"
+    },
+    {
+      "id": "grammar::steps.56.choices[2]",
+      "path": "grammar/steps[56]/choices[2]",
+      "ko": null,
+      "en": "Even",
+      "current": "〜さえ",
+      "ref_th": "แม้กระทั่ง",
+      "ref_es": "Incluso"
+    },
+    {
+      "id": "grammar::steps.56.choices[3]",
+      "path": "grammar/steps[56]/choices[3]",
+      "ko": null,
+      "en": "More",
+      "current": "もっと",
+      "ref_th": "อีก",
+      "ref_es": "Más"
+    },
+    {
+      "id": "grammar::steps.57.title",
+      "path": "grammar/steps[57]/title",
+      "ko": "막연한 대상",
+      "en": "Someone, Something",
+      "current": "「誰か」「何か」",
+      "ref_th": "ใครบางคน บางอย่าง",
+      "ref_es": "Alguien, Algo"
+    },
+    {
+      "id": "grammar::steps.57.body",
+      "path": "grammar/steps[57]/body",
+      "ko": null,
+      "en": "Combine question words with context to express indefinite ideas like 'someone' or 'nothing'.",
+      "current": "疑問詞を文脈と組み合わせることで、「誰か」「何も〜ない」といった不定の意味を表せます。",
+      "ref_th": "รวมคำถามกับบริบทเพื่อแสดงแนวคิดไม่ระบุ เช่น ใครบางคน หรือ ไม่มีอะไร",
+      "ref_es": "Combina palabras interrogativas con contexto para expresar ideas indefinidas como \"alguien\" o \"nada\"."
+    },
+    {
+      "id": "grammar::steps.57.rules[0]",
+      "path": "grammar/steps[57]/rules[0]",
+      "ko": null,
+      "en": "누군가 — someone: 누군가 왔어요 (Someone came)",
+      "current": "누군가 ——誰か：누군가 왔어요（誰か来ました）",
+      "ref_th": "누군가 — ใครบางคน: 누군가 왔어요 (มีคนมา)",
+      "ref_es": "누군가 — alguien: 누군가 왔어요 (Alguien vino)"
+    },
+    {
+      "id": "grammar::steps.57.rules[1]",
+      "path": "grammar/steps[57]/rules[1]",
+      "ko": null,
+      "en": "무언가 / 뭔가 — something: 뭔가 이상해요 (Something is strange)",
+      "current": "무언가／뭔가 ——何か：뭔가 이상해요（何かおかしいです）",
+      "ref_th": "무언가 / 뭔가 — บางอย่าง: 뭔가 이상해요 (มีอะไรแปลก)",
+      "ref_es": "무언가 / 뭔가 — algo: 뭔가 이상해요 (Algo es raro)"
+    },
+    {
+      "id": "grammar::steps.57.rules[2]",
+      "path": "grammar/steps[57]/rules[2]",
+      "ko": null,
+      "en": "어딘가 — somewhere: 어딘가에 있어요 (It's somewhere)",
+      "current": "어딘가 ——どこか：어딘가에 있어요（どこかにあります）",
+      "ref_th": "어딘가 — ที่ไหนสักแห่ง: 어딘가에 있어요 (อยู่ที่ไหนสักแห่ง)",
+      "ref_es": "어딘가 — en algún lugar: 어딘가에 있어요 (Está en algún lugar)"
+    },
+    {
+      "id": "grammar::steps.57.rules[3]",
+      "path": "grammar/steps[57]/rules[3]",
+      "ko": null,
+      "en": "아무도 + negative — no one: 아무도 없어요 (No one is here)",
+      "current": "아무도＋否定形 ——誰も〜ない：아무도 없어요（誰もいません）",
+      "ref_th": "아무도 + ปฏิเสธ — ไม่มีใคร: 아무도 없어요 (ไม่มีใคร)",
+      "ref_es": "아무도 + negación — nadie: 아무도 없어요 (No hay nadie aquí)"
+    },
+    {
+      "id": "grammar::steps.57.rules[4]",
+      "path": "grammar/steps[57]/rules[4]",
+      "ko": null,
+      "en": "아무것도 + negative — nothing: 아무것도 몰라요 (I know nothing)",
+      "current": "아무것도＋否定形 ——何も〜ない：아무것도 몰라요（何も知りません）",
+      "ref_th": "아무것도 + ปฏิเสธ — ไม่มีอะไร: 아무것도 몰라요 (ไม่รู้อะไรเลย)",
+      "ref_es": "아무것도 + negación — nada: 아무것도 몰라요 (No sé nada)"
+    },
+    {
+      "id": "grammar::steps.58.prompt",
+      "path": "grammar/steps[58]/prompt",
+      "ko": null,
+      "en": "'No one is here' — 아무도 ___",
+      "current": "「誰もいません」— 아무도 ___",
+      "ref_th": "ไม่มีใครอยู่ที่นี่ — 아무도 ___",
+      "ref_es": "\"No hay nadie aquí\" — 아무도 ___"
+    },
+    {
+      "id": "grammar::steps.59.title",
+      "path": "grammar/steps[59]/title",
+      "ko": "명령형",
+      "en": "Imperative: -(으)세요",
+      "current": "命令形：-(으)세요",
+      "ref_th": "คำสั่ง: -(으)세요",
+      "ref_es": "Imperativo: -(으)세요"
+    },
+    {
+      "id": "grammar::steps.59.body",
+      "path": "grammar/steps[59]/body",
+      "ko": null,
+      "en": "Add -(으)세요 to a verb stem to make a polite request or command.",
+      "current": "動詞の語幹に-(으)세요を付けると、丁寧な依頼や命令になります",
+      "ref_th": "เติม -(으)세요 ต่อท้ายก้านกริยาเพื่อสร้างคำขอหรือคำสั่งสุภาพ",
+      "ref_es": "Añade -(으)세요 a la raíz verbal para hacer una petición o un mandato educado."
+    },
+    {
+      "id": "grammar::steps.59.rules[0]",
+      "path": "grammar/steps[59]/rules[0]",
+      "ko": null,
+      "en": "가다 → 가세요 (please go)",
+      "current": "가다 → 가세요（行ってください）",
+      "ref_th": "가다 → 가세요 (กรุณาไป)",
+      "ref_es": "가다 → 가세요 (por favor ve)"
+    },
+    {
+      "id": "grammar::steps.59.rules[1]",
+      "path": "grammar/steps[59]/rules[1]",
+      "ko": null,
+      "en": "앉다 → 앉으세요 (please sit)",
+      "current": "앉다 → 앉으세요（座ってください）",
+      "ref_th": "앉다 → 앉으세요 (กรุณานั่ง)",
+      "ref_es": "앉다 → 앉으세요 (por favor siéntate)"
+    },
+    {
+      "id": "grammar::steps.59.rules[2]",
+      "path": "grammar/steps[59]/rules[2]",
+      "ko": null,
+      "en": "먹다 → 드세요 (please eat — honorific)",
+      "current": "먹다 → 드세요（召し上がってください——尊敬語）",
+      "ref_th": "먹다 → 드세요 (กรุณากิน — ยกย่อง)",
+      "ref_es": "먹다 → 드세요 (por favor come — honorífico)"
+    },
+    {
+      "id": "grammar::steps.60.prompt",
+      "path": "grammar/steps[60]/prompt",
+      "ko": null,
+      "en": "앉다 (to sit) → polite request form?",
+      "current": "앉다（座る）→ 丁寧な依頼の形は？",
+      "ref_th": "앉다 (นั่ง) → รูปขอร้องสุภาพ?",
+      "ref_es": "앉다 (sentarse) → ¿forma de petición educada?"
+    },
+    {
+      "id": "grammar::steps.61.title",
+      "path": "grammar/steps[61]/title",
+      "ko": "금지형",
+      "en": "Don't: -지 마세요",
+      "current": "禁止形：-지 마세요",
+      "ref_th": "ห้าม: -지 마세요",
+      "ref_es": "Prohibición: -지 마세요"
+    },
+    {
+      "id": "grammar::steps.61.body",
+      "path": "grammar/steps[61]/body",
+      "ko": null,
+      "en": "Add -지 마세요 to a verb stem to politely tell someone NOT to do something.",
+      "current": "動詞の語幹に-지 마세요を付けると、丁寧に「〜しないでください」と伝えられます",
+      "ref_th": "เติม -지 마세요 ต่อท้ายก้านกริยาเพื่อบอกสุภาพว่าไม่ให้ทำสิ่งนั้น",
+      "ref_es": "Añade -지 마세요 a la raíz verbal para decirle educadamente a alguien que NO haga algo."
+    },
+    {
+      "id": "grammar::steps.61.rules[0]",
+      "path": "grammar/steps[61]/rules[0]",
+      "ko": null,
+      "en": "말하다 → 말하지 마세요 (please don't speak)",
+      "current": "말하다 → 말하지 마세요（話さないでください）",
+      "ref_th": "말하다 → 말하지 마세요 (กรุณาอย่าพูด)",
+      "ref_es": "말하다 → 말하지 마세요 (por favor no hables)"
+    },
+    {
+      "id": "grammar::steps.61.rules[1]",
+      "path": "grammar/steps[61]/rules[1]",
+      "ko": null,
+      "en": "가다 → 가지 마세요 (please don't go)",
+      "current": "가다 → 가지 마세요（行かないでください）",
+      "ref_th": "가다 → 가지 마세요 (กรุณาอย่าไป)",
+      "ref_es": "가다 → 가지 마세요 (por favor no vayas)"
+    }
+  ]
+}
