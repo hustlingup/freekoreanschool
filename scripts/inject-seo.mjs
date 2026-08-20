@@ -9,9 +9,19 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { createRequire } from 'module';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
+// This script is ESM; the locale registry is CommonJS. createRequire bridges
+// the two so the hreflang codes below come from one source of truth instead
+// of a second hand-typed copy. Scope stays EN+JA by design (see the note at
+// the bottom of this file) — the registry is used to source those two
+// codes' values, not to widen this script to the other locales.
+const require = createRequire(import.meta.url);
+const REG = require('./_locales.cjs');
+const HREFLANG_EN = REG.get('en').hreflang;
+const HREFLANG_JA = REG.get('ja').hreflang;
 const BASE = 'https://freekoreanschool.com';
 const OG_IMG = `${BASE}/assets/images/og-image.webp`;
 const LOGO = `${BASE}/assets/images/android-chrome-512x512.png`;
@@ -33,7 +43,7 @@ const PAGES = [
   { file: 'quiz.html',    canonical: '/quiz',    schema: 'webpage' },
   {
     file: 'search.html',  canonical: '/search',  schema: 'webpage',
-    desc: 'Search Korean School — find lessons, vocabulary, culture guides, and Korean news.',
+    desc: 'Search Korean School — find lessons, vocabulary, and culture guides.',
     noSitemap: true,
   },
 
@@ -102,16 +112,11 @@ const PAGES = [
   { file: 'travel/ja/planner.html',     canonical: '/travel/ja/planner',      schema: 'webpage', lang: 'ja', en: '/travel/planner' },
   { file: 'travel/ja/themes.html',      canonical: '/travel/ja/themes',       schema: 'article', lang: 'ja', en: '/travel/themes' },
 
-  // ── News EN ───────────────────────────────────────────────────────────────
-  { file: 'news/index.html', canonical: '/news',       schema: 'webpage',    ja: '/news/ja' },
-  { file: 'news/board.html', canonical: '/news/board', schema: 'webpage',    ja: '/news/ja/board' },
-  // article.html already has full OG/canonical set up dynamically — skip via canonical check
-  { file: 'news/article.html', canonical: '/news/article', schema: 'newsarticle', ja: '/news/ja/article' },
-
-  // ── News JA ───────────────────────────────────────────────────────────────
-  { file: 'news/ja/index.html', canonical: '/news/ja',       schema: 'webpage',    lang: 'ja', en: '/news' },
-  { file: 'news/ja/board.html', canonical: '/news/ja/board', schema: 'webpage',    lang: 'ja', en: '/news/board' },
-  { file: 'news/ja/article.html', canonical: '/news/ja/article', schema: 'newsarticle', lang: 'ja', en: '/news/article' },
+  // The news/ section (EN + JA, 34 files) was deleted 2026-07-21 — see
+  // CLAUDE.md "News section — removed". There is no news/ directory on disk
+  // any more; do not reintroduce these entries. (Unrelated to the "News &
+  // Society" VOCABULARY topic, learn/data/vocabulary-news.json, which is
+  // real content and was deliberately kept.)
 ];
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -228,12 +233,12 @@ function buildBlock(page, title, desc) {
 
   const hreflangLines = [];
   if (lang === 'en' && ja) {
-    hreflangLines.push(`  <link rel="alternate" hreflang="en" href="${BASE}${canonical}">`);
-    hreflangLines.push(`  <link rel="alternate" hreflang="ja" href="${BASE}${ja}">`);
+    hreflangLines.push(`  <link rel="alternate" hreflang="${HREFLANG_EN}" href="${BASE}${canonical}">`);
+    hreflangLines.push(`  <link rel="alternate" hreflang="${HREFLANG_JA}" href="${BASE}${ja}">`);
     hreflangLines.push(`  <link rel="alternate" hreflang="x-default" href="${BASE}${canonical}">`);
   } else if (lang === 'ja' && en) {
-    hreflangLines.push(`  <link rel="alternate" hreflang="ja" href="${BASE}${canonical}">`);
-    hreflangLines.push(`  <link rel="alternate" hreflang="en" href="${BASE}${en}">`);
+    hreflangLines.push(`  <link rel="alternate" hreflang="${HREFLANG_JA}" href="${BASE}${canonical}">`);
+    hreflangLines.push(`  <link rel="alternate" hreflang="${HREFLANG_EN}" href="${BASE}${en}">`);
     hreflangLines.push(`  <link rel="alternate" hreflang="x-default" href="${BASE}${en}">`);
   }
 

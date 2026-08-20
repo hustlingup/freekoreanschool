@@ -16,7 +16,8 @@
       "name_vi": "Cảm xúc cơ bản",
       "name_th": "อารมณ์พื้นฐาน",
       "name_id": "Emosi Inti",
-      "name_ja": "基本感情"
+      "name_ja": "基本感情",
+      "name_pt_br": "Emoções Básicas"
     },
     {
       "id": 2,
@@ -32,7 +33,8 @@
       "name_vi": "Bày tỏ cảm xúc",
       "name_th": "การแสดงความรู้สึก",
       "name_id": "Mengungkapkan Perasaan",
-      "name_ja": "感情表現"
+      "name_ja": "感情表現",
+      "name_pt_br": "Expressar Sentimentos"
     },
     {
       "id": 3,
@@ -48,7 +50,8 @@
       "name_vi": "Cảm xúc phức tạp",
       "name_th": "อารมณ์ที่ซับซ้อน",
       "name_id": "Emosi Kompleks",
-      "name_ja": "複雑な感情"
+      "name_ja": "複雑な感情",
+      "name_pt_br": "Emoções Complexas"
     },
     {
       "id": 4,
@@ -64,7 +67,8 @@
       "name_vi": "Cụm từ cảm xúc",
       "name_th": "รูปประโยคแสดงอารมณ์",
       "name_id": "Frasa Emosional",
-      "name_ja": "感情フレーズ"
+      "name_ja": "感情フレーズ",
+      "name_pt_br": "Frases Emocionais"
     }
   ],
   "steps": [
@@ -127,7 +131,14 @@
         "label": "Tính từ chia như động từ",
         "text": "행복하다 → 행복해요 (Tôi hạnh phúc). 슬프다 → 슬퍼요 (Tôi buồn). 피곤하다 → 피곤해요 (Tôi mệt). Đuôi -아요/-어요 khiến tính từ vừa lịch sự vừa ở thì hiện tại cùng lúc."
       },
-      "title_ja": "韓国語の感情（감정）"
+      "title_ja": "韓国語の感情（감정）",
+      "title_pt_br": "Emoções em Coreano (감정)",
+      "body_pt_br": "As palavras de emoção em coreano são, em sua maioria, adjetivos na forma base. Diferentemente do inglês ('I am happy'), os adjetivos coreanos funcionam como verbos e se conjugam diretamente: 행복해요 (Estou feliz) sem precisar de um verbo 'estar' separado. A forma de dicionário termina em -다: 행복하다, 슬프다, 무섭다. Remova -다 e adicione -아요/-어요 para o presente educado. O vocabulário de emoções é especialmente útil para falar sobre K-dramas, o dia a dia e sentimentos pessoais.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Adjetivos se conjugam como verbos",
+        "text": "행복하다 → 행복해요 (Estou feliz). 슬프다 → 슬퍼요 (Estou triste). 피곤하다 → 피곤해요 (Estou cansado/a). A terminação -아요/-어요 torna o adjetivo educado e no tempo presente simultaneamente."
+      }
     },
     {
       "id": 2,
@@ -150,7 +161,8 @@
       "meaning_de": "glücklich sein (Wörterbuchform)",
       "meaning_vi": "vui / hạnh phúc (dạng từ điển)",
       "meaning_th": "มีความสุข (รูปพจนานุกรม)",
-      "meaning_id": "bahagia (bentuk kamus)"
+      "meaning_id": "bahagia (bentuk kamus)",
+      "meaning_pt_br": "ser feliz (forma de dicionário)"
     },
     {
       "id": 3,
@@ -172,7 +184,8 @@
       "meaning_de": "traurig sein (Wörterbuchform)",
       "meaning_vi": "buồn (dạng từ điển)",
       "meaning_th": "เศร้า (รูปพจนานุกรม)",
-      "meaning_id": "sedih (bentuk kamus)"
+      "meaning_id": "sedih (bentuk kamus)",
+      "meaning_pt_br": "estar triste (forma de dicionário)"
     },
     {
       "id": 4,
@@ -196,7 +209,8 @@
       "meaning_de": "wütend sein (wörtlich: Wut kommt heraus)",
       "meaning_vi": "tức giận (nghĩa đen: cơn giận bùng phát)",
       "meaning_th": "โกรธ (แปลตรงๆ: ความโกรธพุ่งออกมา)",
-      "meaning_id": "marah (secara harfiah: kemarahan keluar)"
+      "meaning_id": "marah (secara harfiah: kemarahan keluar)",
+      "meaning_pt_br": "estar com raiva (literalmente: a raiva sai)"
     },
     {
       "id": 5,
@@ -218,7 +232,8 @@
       "meaning_de": "Angst haben / gruselig sein",
       "meaning_vi": "sợ hãi / đáng sợ",
       "meaning_th": "กลัว / น่ากลัว",
-      "meaning_id": "takut / menakutkan"
+      "meaning_id": "takut / menakutkan",
+      "meaning_pt_br": "ter medo / dar medo"
     },
     {
       "id": 6,
@@ -239,7 +254,8 @@
       "prompt_th": "คำใดหมายถึง \"มีความสุข\"?",
       "prompt_id": "Kata mana yang berarti 'bahagia'?",
       "prompt_vi": "Từ nào có nghĩa là 'hạnh phúc'?",
-      "prompt_ja": "「幸せだ」を意味する語はどれでしょう。"
+      "prompt_ja": "「幸せだ」を意味する語はどれでしょう。",
+      "prompt_pt_br": "Qual palavra significa 'ser feliz'?"
     },
     {
       "id": 7,
@@ -300,7 +316,14 @@
         "label": "Bảng chia nhanh",
         "text": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Lưu ý 슬프다 bỏ 으 trước -어요."
       },
-      "title_ja": "感情形容詞の活用"
+      "title_ja": "感情形容詞の活用",
+      "title_pt_br": "Conjugando Adjetivos de Emoção",
+      "body_pt_br": "Para usar adjetivos de emoção em uma conversa educada, remova -다 da forma de dicionário e adicione a terminação educada do presente. Para radicais terminados em 하: 하다 → 해요 (행복하다 → 행복해요). Para radicais com vogal 'clara' (ㅏ, ㅗ): adicione -아요. Para todos os outros: adicione -어요, geralmente com uma mudança vocálica — 슬프다 perde o ㅡ: 슬프 + 어요 → 슬퍼요. Radicais terminados em ㅂ são irregulares: o ㅂ se transforma em 우, então 무섭다 → 무서우 + 어요 → 무서워요 (da mesma forma 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). O mesmo padrão se aplica à maioria dos verbos descritivos coreanos (adjetivos).",
+      "tip_pt_br": {
+        "icon": "🔤",
+        "label": "Tabela rápida de conjugação",
+        "text": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Observe que 슬프다 perde o 으 antes de -어요."
+      }
     },
     {
       "id": 8,
@@ -323,7 +346,8 @@
       "meaning_de": "Ich bin glücklich (höfliche Gegenwartsform)",
       "meaning_vi": "Tôi vui / Tôi hạnh phúc (hiện tại lịch sự)",
       "meaning_th": "ฉันมีความสุข / มีความสุข (สุภาพปัจจุบัน)",
-      "meaning_id": "Saya bahagia / Ini menyenangkan (bentuk sekarang sopan)"
+      "meaning_id": "Saya bahagia / Ini menyenangkan (bentuk sekarang sopan)",
+      "meaning_pt_br": "Estou feliz / É feliz (presente educado)"
     },
     {
       "id": 9,
@@ -345,7 +369,8 @@
       "meaning_de": "Ich bin traurig (höfliche Gegenwartsform)",
       "meaning_vi": "Tôi buồn (hiện tại lịch sự)",
       "meaning_th": "ฉันเศร้า (สุภาพปัจจุบัน)",
-      "meaning_id": "Saya sedih (bentuk sekarang sopan)"
+      "meaning_id": "Saya sedih (bentuk sekarang sopan)",
+      "meaning_pt_br": "Estou triste (presente educado)"
     },
     {
       "id": 10,
@@ -406,7 +431,14 @@
         "label": "신나다 trong văn hóa đại chúng",
         "text": "신나다 và 신나요 có mặt khắp nơi trong văn hóa đại chúng Hàn Quốc. Các bài hát K-pop thường dùng 신나 để mô tả một nhịp điệu hay tâm trạng phấn khích. Bạn cũng sẽ nghe 신난다! như một câu cảm thán (Phấn khích quá!) tại các sự kiện và bữa tiệc."
       },
-      "title_ja": "もっと感情の言葉（감정 어휘）"
+      "title_ja": "もっと感情の言葉（감정 어휘）",
+      "title_pt_br": "Mais Palavras de Sentimentos (감정 어휘)",
+      "body_pt_br": "O coreano tem um rico conjunto de palavras de emoção além do básico. 기쁘다 (estar contente/alegre) é uma felicidade um pouco mais forte ou específica do que 행복하다. 걱정되다 (estar preocupado) significa literalmente 'a preocupação se torna/acontece'. 신나다 (estar animado/empolgado) é comumente usado em situações cheias de energia — shows, esportes, celebrações. 피곤하다 (estar cansado) é essencial para o dia a dia, especialmente quando você explica que não pode fazer algo.",
+      "tip_pt_br": {
+        "icon": "🎉",
+        "label": "신나다 na cultura pop",
+        "text": "신나다 e 신나요 estão em toda parte na cultura pop coreana. As músicas de K-pop costumam usar 신나 para descrever um ritmo ou clima animado. Você também vai ouvir 신난다! como exclamação (Que empolgante!) em eventos e festas."
+      }
     },
     {
       "id": 11,
@@ -428,7 +460,8 @@
       "meaning_de": "froh / fröhlich sein",
       "meaning_vi": "vui mừng / hân hoan",
       "meaning_th": "ดีใจ / สุขใจ",
-      "meaning_id": "senang / gembira"
+      "meaning_id": "senang / gembira",
+      "meaning_pt_br": "estar contente / alegre"
     },
     {
       "id": 12,
@@ -451,7 +484,8 @@
       "meaning_de": "sich sorgen / besorgt sein",
       "meaning_vi": "lo lắng",
       "meaning_th": "กังวล",
-      "meaning_id": "khawatir"
+      "meaning_id": "khawatir",
+      "meaning_pt_br": "estar preocupado/a"
     },
     {
       "id": 13,
@@ -474,7 +508,8 @@
       "meaning_de": "müde / erschöpft sein",
       "meaning_vi": "mệt mỏi / kiệt sức",
       "meaning_th": "เหนื่อย / อ่อนเพลีย",
-      "meaning_id": "lelah / kelelahan"
+      "meaning_id": "lelah / kelelahan",
+      "meaning_pt_br": "estar cansado/a / exausto/a"
     },
     {
       "id": 14,
@@ -496,7 +531,8 @@
       "meaning_de": "aufgeregt / begeistert sein",
       "meaning_vi": "hứng khởi / phấn khích",
       "meaning_th": "ตื่นเต้น / มีพลัง",
-      "meaning_id": "bersemangat / bergairah"
+      "meaning_id": "bersemangat / bergairah",
+      "meaning_pt_br": "estar animado/a / empolgado/a"
     },
     {
       "id": 15,
@@ -517,7 +553,8 @@
       "prompt_th": "คำใดหมายถึง \"เหนื่อย\"?",
       "prompt_id": "Kata mana yang berarti 'lelah'?",
       "prompt_vi": "Từ nào có nghĩa là 'mệt'?",
-      "prompt_ja": "「疲れている」を意味する語はどれでしょう。"
+      "prompt_ja": "「疲れている」を意味する語はどれでしょう。",
+      "prompt_pt_br": "Qual palavra significa 'estar cansado'?"
     },
     {
       "id": 16,
@@ -578,7 +615,14 @@
         "label": "기분 so với 감정",
         "text": "기분 = tâm trạng, trạng thái cảm giác chung (tùy ngữ cảnh, có thể thay đổi). 감정 = cảm xúc (cảm giác cụ thể hơn như giận, vui, sợ). 기분이 좋아요 = Tôi đang thấy dễ chịu. 감정을 표현하다 = biểu lộ cảm xúc."
       },
-      "title_ja": "기분——気分と感情"
+      "title_ja": "기분——気分と感情",
+      "title_pt_br": "기분 — Humor e Sentimento",
+      "body_pt_br": "기분 (gibun) é a palavra-chave para descrever seu humor ou estado geral de sentimento. 기분이 좋다 (gibuni jota) = sentir-se bem / estar de bom humor. 기분이 나쁘다 = sentir-se mal / estar de mau humor. 기분 pode descrever o tom emocional de forma mais ampla do que palavras de emoção específicas — é sobre o seu estado geral. Você vai ouvir 기분이 어때요? (Como você está se sentindo?) na conversa do dia a dia.",
+      "tip_pt_br": {
+        "icon": "😊",
+        "label": "기분 vs 감정",
+        "text": "기분 = humor, estado geral de sentimento (contextual, pode mudar). 감정 = emoção (sentimento mais específico como raiva, alegria, medo). 기분이 좋아요 = Eu me sinto bem agora. 감정을 표현하다 = expressar emoção."
+      }
     },
     {
       "id": 17,
@@ -604,7 +648,8 @@
       "meaning_de": "Ich fühle mich gut / Ich bin gut gelaunt",
       "meaning_vi": "Tôi cảm thấy tốt / Tôi đang vui",
       "meaning_th": "ฉันรู้สึกดี / ฉันอารมณ์ดี (สุภาพปัจจุบัน)",
-      "meaning_id": "Saya merasa senang / Suasana hati saya baik"
+      "meaning_id": "Saya merasa senang / Suasana hati saya baik",
+      "meaning_pt_br": "Eu me sinto bem / Estou de bom humor"
     },
     {
       "id": 18,
@@ -673,6 +718,13 @@
         "気分がいい",
         "おなかがすいた",
         "疲れた"
+      ],
+      "prompt_pt_br": "기분이 좋아요 significa…",
+      "choices_pt_br": [
+        "Eu me sinto mal",
+        "Eu me sinto bem",
+        "Estou com fome",
+        "Estou cansado/a"
       ]
     },
     {
@@ -734,7 +786,14 @@
         "label": "한 (Han) — nỗi buồn không thể dịch của người Hàn",
         "text": "한 (han) là một cảm xúc mang tính văn hóa đặc thù: một nỗi buồn sâu sắc pha lẫn sự kiên cường, bắt nguồn từ đau khổ lịch sử nhưng được chuyển hóa thành năng lượng sáng tạo. Nó vang lên trong pansori (nhạc kịch dân gian Hàn Quốc), được mô tả trong thơ ca và được nhắc đến trong các cuộc bàn luận về bản sắc Hàn Quốc. Không phải từ dùng tùy tiện, nhưng thiết yếu để hiểu văn hóa."
       },
-      "title_ja": "より深い感情（깊은 감정）"
+      "title_ja": "より深い感情（깊은 감정）",
+      "title_pt_br": "Emoções Mais Profundas (깊은 감정)",
+      "body_pt_br": "O coreano tem várias palavras de emoção sem equivalente direto em uma única palavra em português. 그립다 (geuripda) descreve sentir falta de alguém ou de algo — a saudade de uma pessoa ou lugar amado que está ausente. 외롭다 (oeropda) é solidão, mas com uma profundidade cultural de isolamento. 부끄럽다 (bukkeureupda) é vergonha ou timidez. 뿌듯하다 (ppudeuthada) é o orgulho ou satisfação calorosa de uma conquista — a sensação que você tem ao terminar algo difícil ou ao ver alguém que você ama ter sucesso.",
+      "tip_pt_br": {
+        "icon": "🇰🇷",
+        "label": "한 (Han) — a tristeza coreana intraduzível",
+        "text": "한 (han) é uma emoção culturalmente específica: uma tristeza profunda misturada com resiliência, enraizada no sofrimento histórico, mas transformada em energia criativa. É ouvida no pansori (ópera folclórica coreana), descrita na poesia e mencionada em discussões sobre a identidade coreana. Não é uma palavra para usar casualmente, mas é essencial para a compreensão cultural."
+      }
     },
     {
       "id": 20,
@@ -756,7 +815,8 @@
       "meaning_de": "jemanden/etwas vermissen (Sehnsucht)",
       "meaning_vi": "nhớ ai đó/điều gì đó (khao khát)",
       "meaning_th": "คิดถึงใครหรือบางสิ่ง (ความคิดถึงอย่างลึกซึ้ง)",
-      "meaning_id": "merindukan seseorang/sesuatu (kerinduan)"
+      "meaning_id": "merindukan seseorang/sesuatu (kerinduan)",
+      "meaning_pt_br": "sentir falta de alguém/algo (saudade)"
     },
     {
       "id": 21,
@@ -778,7 +838,8 @@
       "meaning_de": "einsam sein",
       "meaning_vi": "cô đơn",
       "meaning_th": "เหงา",
-      "meaning_id": "kesepian"
+      "meaning_id": "kesepian",
+      "meaning_pt_br": "estar solitário/a"
     },
     {
       "id": 22,
@@ -801,7 +862,8 @@
       "meaning_de": "verlegen / schüchtern sein",
       "meaning_vi": "xấu hổ / ngại ngùng",
       "meaning_th": "อาย / เขินอาย",
-      "meaning_id": "malu / canggung"
+      "meaning_id": "malu / canggung",
+      "meaning_pt_br": "estar envergonhado/a / ser tímido/a"
     },
     {
       "id": 23,
@@ -824,7 +886,8 @@
       "meaning_de": "stolz / erfüllt sein (warmes Gefühl der Leistung)",
       "meaning_vi": "tự hào / thỏa mãn (cảm giác ấm áp khi hoàn thành)",
       "meaning_th": "ภาคภูมิใจ / อิ่มเอม (ความสำเร็จที่อบอุ่น)",
-      "meaning_id": "merasa bangga / puas (rasa pencapaian yang hangat)"
+      "meaning_id": "merasa bangga / puas (rasa pencapaian yang hangat)",
+      "meaning_pt_br": "sentir-se orgulhoso/a / realizado/a (sensação calorosa de realização)"
     },
     {
       "id": 24,
@@ -893,6 +956,13 @@
         "恋しい・会いたい",
         "疲れている",
         "孤独だ"
+      ],
+      "prompt_pt_br": "그립다 significa…",
+      "choices_pt_br": [
+        "estar contente",
+        "sentir falta de alguém (saudade)",
+        "estar cansado/a",
+        "estar solitário/a"
       ]
     },
     {
@@ -915,7 +985,8 @@
       "meaning_de": "aufgeregte Schmetterlinge im Bauch spüren / Herzklopfen (romantische Vorfreude)",
       "meaning_vi": "cảm giác hồi hộp / tim đập nhanh (kỳ vọng lãng mạn)",
       "meaning_th": "ใจสั่น / หัวใจเต้นแรง (ความตื่นเต้นแบบโรแมนติก)",
-      "meaning_id": "merasakan getaran kegembiraan / hati berdebar (antisipasi romantis)"
+      "meaning_id": "merasakan getaran kegembiraan / hati berdebar (antisipasi romantis)",
+      "meaning_pt_br": "sentir o coração disparar de emoção (expectativa romântica)"
     },
     {
       "id": 26,
@@ -984,6 +1055,13 @@
         "誇らしい・充実している",
         "寂しい",
         "人が恋しい"
+      ],
+      "prompt_pt_br": "뿌듯하다 significa…",
+      "choices_pt_br": [
+        "estar envergonhado/a",
+        "sentir-se orgulhoso/realizado",
+        "estar solitário/a",
+        "sentir falta de alguém"
       ]
     },
     {
@@ -1045,7 +1123,14 @@
         "label": "괜찮아요 — câu đa dụng",
         "text": "괜찮아요 nghĩa đen là 'ổn thôi/không sao'. Dùng nó để trấn an ai đó rằng bạn ổn (sau khi vấp ngã), để chấp nhận một lời mời bạn từng từ chối, để nói 'không, cảm ơn', hoặc để bày tỏ 'thế cũng được'. Làm chủ giọng điệu của nó là điều then chốt — cùng từ ngữ nhưng thông điệp rất khác nhau."
       },
-      "title_ja": "感情を表すよく使う文型"
+      "title_ja": "感情を表すよく使う文型",
+      "title_pt_br": "Padrões Comuns de Frases Emocionais",
+      "body_pt_br": "Vários padrões de frase são especialmente úteis para expressar emoções em coreano. '보고 싶어요' (Sinto sua falta / Quero te ver) usa 보다 (ver) + -고 싶다 (querer). '감동받았어요' (Fiquei emocionado/comovido) usa 감동 (emoção profunda) + 받다 (receber). '괜찮아요' (Estou bem / Tudo bem) é uma das frases mais versáteis — usada para 'estou bem', 'tudo bem', 'sem problema' e 'deixa pra lá'.",
+      "tip_pt_br": {
+        "icon": "🗣️",
+        "label": "괜찮아요 — a frase multiuso",
+        "text": "괜찮아요 significa literalmente 'está tudo bem/ok'. Use para tranquilizar alguém de que você está bem (depois de um tropeço), para aceitar uma oferta que você recusou antes, para dizer 'não, obrigado', ou para expressar 'isso é aceitável'. Dominar seu tom é essencial — mesmas palavras, mensagens bem diferentes."
+      }
     },
     {
       "id": 28,
@@ -1070,7 +1155,8 @@
       "meaning_de": "Ich vermisse dich / Ich möchte dich sehen",
       "meaning_vi": "Tôi nhớ bạn / Tôi muốn gặp bạn",
       "meaning_th": "คิดถึงคุณ / อยากเจอคุณ",
-      "meaning_id": "Saya merindukanmu / Saya ingin bertemu denganmu"
+      "meaning_id": "Saya merindukanmu / Saya ingin bertemu denganmu",
+      "meaning_pt_br": "Sinto sua falta / Quero te ver"
     },
     {
       "id": 29,
@@ -1095,7 +1181,8 @@
       "meaning_de": "Ich war bewegt / berührt (emotional)",
       "meaning_vi": "Tôi đã xúc động / cảm động (về mặt cảm xúc)",
       "meaning_th": "ฉันซึ้ง / ได้รับความประทับใจ",
-      "meaning_id": "Saya terharu / tersentuh (secara emosional)"
+      "meaning_id": "Saya terharu / tersentuh (secara emosional)",
+      "meaning_pt_br": "Fiquei emocionado/a / comovido/a"
     },
     {
       "id": 30,
@@ -1118,7 +1205,8 @@
       "meaning_de": "Mir geht's gut / Das ist in Ordnung / Kein Problem",
       "meaning_vi": "Tôi ổn / Không sao / Không có vấn đề gì",
       "meaning_th": "โอเค / ไม่เป็นไร / ไม่มีปัญหา",
-      "meaning_id": "Saya baik-baik saja / Tidak apa-apa / Tidak masalah"
+      "meaning_id": "Saya baik-baik saja / Tidak apa-apa / Tidak masalah",
+      "meaning_pt_br": "Estou bem / Tudo bem / Sem problema"
     },
     {
       "id": 31,
@@ -1187,6 +1275,13 @@
         "感動した",
         "会いたい",
         "孤独です"
+      ],
+      "prompt_pt_br": "보고 싶어요 significa…",
+      "choices_pt_br": [
+        "Estou bem",
+        "Estou emocionado/a",
+        "Sinto sua falta / Quero te ver",
+        "Estou solitário/a"
       ]
     },
     {
@@ -1210,7 +1305,8 @@
       "meaning_de": "Kopf hoch! / Halt durch! (wörtlich: Kraft aufbringen)",
       "meaning_vi": "Cố lên! / Kiên trì nào! (nghĩa đen: phát huy sức mạnh)",
       "meaning_th": "สู้ต่อไป! / อดทนนะ! (แปลตรงๆ: ปล่อยพลังออกมา)",
-      "meaning_id": "Semangat! / Tetap bertahan! (secara harfiah: keluarkan kekuatan)"
+      "meaning_id": "Semangat! / Tetap bertahan! (secara harfiah: keluarkan kekuatan)",
+      "meaning_pt_br": "Força! / Aguente firme! (literalmente: solte a força)"
     },
     {
       "id": 33,
@@ -1235,7 +1331,9 @@
       "message_ja": "韓国語の感情語彙を学びました——基本的な感情から、그립다、뿌듯하다、설레다のような文化的に豊かな言葉まで。あなたの感情表現の韓国語力が育っています！",
       "title_zh_tw": "情緒學習完成！",
       "title_vi": "Hoàn thành bài Cảm xúc!",
-      "title_th": "เรียนจบเรื่องอารมณ์แล้ว!"
+      "title_th": "เรียนจบเรื่องอารมณ์แล้ว!",
+      "title_pt_br": "Emoções Concluídas!",
+      "message_pt_br": "Você explorou o vocabulário de emoções em coreano — de sentimentos básicos a palavras culturalmente ricas como 그립다, 뿌듯하다 e 설레다. Seu coreano emocional está crescendo!"
     }
   ]
 }

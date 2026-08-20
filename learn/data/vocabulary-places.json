@@ -16,7 +16,8 @@
       "name_ja": "場所",
       "name_th": "สถานที่",
       "name_vi": "Địa điểm",
-      "name_zh_tw": "地點"
+      "name_zh_tw": "地點",
+      "name_pt_br": "Lugares"
     }
   ],
   "steps": [
@@ -84,6 +85,13 @@
         "icon": "📍",
         "label": "Menanyakan letak sesuatu",
         "text": "[Tempat] 어디예요? = Di mana [tempat] itu? Contoh: 화장실 어디예요? = Di mana toilet? Pola sederhana, sangat berguna sehari-hari."
+      },
+      "title_pt_br": "Lugares em Coreano",
+      "body_pt_br": "Conhecer os nomes de lugares permite que você se movimente pelas cidades, peça informações e diga às pessoas para onde está indo. Essas palavras também são blocos fundamentais nas frases em coreano — muitos verbos são construídos em torno de localizações.",
+      "tip_pt_br": {
+        "icon": "📍",
+        "label": "Perguntando onde algo fica",
+        "text": "[Lugar] 어디예요? = Onde fica [o lugar]? Ex.: 화장실 어디예요? = Onde fica o banheiro? Um padrão simples, com enorme utilidade no dia a dia."
       }
     },
     {
@@ -106,7 +114,8 @@
       "meaning_fr": "École / établissement scolaire",
       "meaning_id": "Sekolah",
       "meaning_th": "โรงเรียน",
-      "meaning_vi": "Trường học"
+      "meaning_vi": "Trường học",
+      "meaning_pt_br": "Escola"
     },
     {
       "id": 3,
@@ -128,7 +137,8 @@
       "meaning_fr": "Hôpital / cabinet médical",
       "meaning_id": "Rumah sakit / klinik",
       "meaning_th": "โรงพยาบาล / คลินิก",
-      "meaning_vi": "Bệnh viện / phòng khám"
+      "meaning_vi": "Bệnh viện / phòng khám",
+      "meaning_pt_br": "Hospital / clínica"
     },
     {
       "id": 4,
@@ -150,7 +160,8 @@
       "meaning_fr": "Pharmacie — 약 (médicament) + 국 (lieu)",
       "meaning_id": "Apotek — 약 (obat) + 국 (tempat)",
       "meaning_th": "ร้านขายยา — 약 (ยา) + 국 (สถานที่)",
-      "meaning_vi": "Hiệu thuốc — 약 (thuốc) + 국 (nơi chốn)"
+      "meaning_vi": "Hiệu thuốc — 약 (thuốc) + 국 (nơi chốn)",
+      "meaning_pt_br": "Farmácia — 약 (remédio) + 국 (lugar)"
     },
     {
       "id": 5,
@@ -172,7 +183,8 @@
       "meaning_fr": "Banque — 은 (argent, le métal) + 행 (circuler) = là où l'argent circule",
       "meaning_id": "Bank — 은 (perak) + 행 (mengalir) = tempat perak mengalir",
       "meaning_th": "ธนาคาร — 은 (แร่เงิน) + 행 (หมุนเวียน) = ที่ซึ่งเงินหมุนเวียน",
-      "meaning_vi": "Ngân hàng — 은 (bạc) + 행 (lưu thông) = nơi bạc lưu thông"
+      "meaning_vi": "Ngân hàng — 은 (bạc) + 행 (lưu thông) = nơi bạc lưu thông",
+      "meaning_pt_br": "Banco — 은 (prata) + 행 (circular) = onde a prata circula"
     },
     {
       "id": 6,
@@ -194,7 +206,8 @@
       "meaning_fr": "Supermarché — de l'anglais « mart »",
       "meaning_id": "Swalayan / supermarket — dari bahasa Inggris \"mart\"",
       "meaning_th": "ซูเปอร์มาร์เก็ต — มาจากภาษาอังกฤษ \"mart\"",
-      "meaning_vi": "Siêu thị — từ tiếng Anh \"mart\""
+      "meaning_vi": "Siêu thị — từ tiếng Anh \"mart\"",
+      "meaning_pt_br": "Mercado / supermercado — do inglês \"mart\""
     },
     {
       "id": 7,
@@ -217,7 +230,8 @@
       "meaning_fr": "Supérette, épicerie de quartier — ouverte 24h/24 et présente partout en Corée",
       "meaning_id": "Minimarket — buka 24 jam dan ada di mana-mana di Korea",
       "meaning_th": "ร้านสะดวกซื้อ — เปิด 24 ชั่วโมงและมีอยู่ทั่วเกาหลี",
-      "meaning_vi": "Cửa hàng tiện lợi — mở 24/7 và có mặt khắp nơi ở Hàn Quốc"
+      "meaning_vi": "Cửa hàng tiện lợi — mở 24/7 và có mặt khắp nơi ở Hàn Quốc",
+      "meaning_pt_br": "Loja de conveniência — aberta 24 horas e presente em toda a Coreia"
     },
     {
       "id": 8,
@@ -240,7 +254,8 @@
       "meaning_fr": "Métro — 지하 (souterrain) + 철 (fer / rail)",
       "meaning_id": "Kereta bawah tanah — 지하 (bawah tanah) + 철 (besi/rel)",
       "meaning_th": "รถไฟใต้ดิน — 지하 (ใต้ดิน) + 철 (เหล็ก/ราง)",
-      "meaning_vi": "Tàu điện ngầm — 지하 (dưới lòng đất) + 철 (đường sắt)"
+      "meaning_vi": "Tàu điện ngầm — 지하 (dưới lòng đất) + 철 (đường sắt)",
+      "meaning_pt_br": "Metrô — 지하 (subterrâneo) + 철 (ferro/trilho)"
     },
     {
       "id": 9,
@@ -262,7 +277,8 @@
       "meaning_fr": "Bus — de l'anglais « bus »",
       "meaning_id": "Bus — dari bahasa Inggris \"bus\"",
       "meaning_th": "รถบัส / รถเมล์ — มาจากภาษาอังกฤษ \"bus\"",
-      "meaning_vi": "Xe buýt — từ tiếng Anh \"bus\""
+      "meaning_vi": "Xe buýt — từ tiếng Anh \"bus\"",
+      "meaning_pt_br": "Ônibus — do inglês \"bus\""
     },
     {
       "id": 10,
@@ -284,7 +300,8 @@
       "meaning_fr": "Taxi — de l'anglais « taxi »",
       "meaning_id": "Taksi — dari bahasa Inggris \"taxi\"",
       "meaning_th": "แท็กซี่ — มาจากภาษาอังกฤษ \"taxi\"",
-      "meaning_vi": "Taxi — từ tiếng Anh \"taxi\""
+      "meaning_vi": "Taxi — từ tiếng Anh \"taxi\"",
+      "meaning_pt_br": "Táxi — do inglês \"taxi\""
     },
     {
       "id": 11,
@@ -306,7 +323,8 @@
       "meaning_fr": "Aéroport — 공 (air / ciel) + 항 (port)",
       "meaning_id": "Bandara — 공 (udara/langit) + 항 (pelabuhan)",
       "meaning_th": "สนามบิน — 공 (อากาศ/ท้องฟ้า) + 항 (ท่า)",
-      "meaning_vi": "Sân bay — 공 (không trung/bầu trời) + 항 (cảng)"
+      "meaning_vi": "Sân bay — 공 (không trung/bầu trời) + 항 (cảng)",
+      "meaning_pt_br": "Aeroporto — 공 (ar/céu) + 항 (porto)"
     },
     {
       "id": 12,
@@ -329,7 +347,8 @@
       "meaning_fr": "Gare ferroviaire — 기차 (train) + 역 (gare)",
       "meaning_id": "Stasiun kereta — 기차 (kereta api) + 역 (stasiun)",
       "meaning_th": "สถานีรถไฟ — 기차 (รถไฟ) + 역 (สถานี)",
-      "meaning_vi": "Ga tàu hỏa — 기차 (tàu hỏa) + 역 (ga)"
+      "meaning_vi": "Ga tàu hỏa — 기차 (tàu hỏa) + 역 (ga)",
+      "meaning_pt_br": "Estação de trem — 기차 (trem) + 역 (estação)"
     },
     {
       "id": 13,
@@ -351,7 +370,8 @@
       "meaning_fr": "Restaurant — 식 (manger / nourriture) + 당 (salle / lieu)",
       "meaning_id": "Rumah makan — 식 (makan/makanan) + 당 (aula/tempat)",
       "meaning_th": "ร้านอาหาร — 식 (กิน/อาหาร) + 당 (ห้องโถง/สถานที่)",
-      "meaning_vi": "Quán ăn / nhà hàng — 식 (ăn/thức ăn) + 당 (sảnh/nơi chốn)"
+      "meaning_vi": "Quán ăn / nhà hàng — 식 (ăn/thức ăn) + 당 (sảnh/nơi chốn)",
+      "meaning_pt_br": "Restaurante — 식 (comer/comida) + 당 (salão/lugar)"
     },
     {
       "id": 14,
@@ -373,7 +393,8 @@
       "meaning_fr": "Café (établissement) — la Corée possède une culture du café sans égale",
       "meaning_id": "Kafe — Korea punya budaya kafe yang tiada duanya",
       "meaning_th": "คาเฟ่ — วัฒนธรรมคาเฟ่ของเกาหลีไม่เป็นรองใคร",
-      "meaning_vi": "Quán cà phê — Hàn Quốc có nền văn hóa cà phê không đâu sánh bằng"
+      "meaning_vi": "Quán cà phê — Hàn Quốc có nền văn hóa cà phê không đâu sánh bằng",
+      "meaning_pt_br": "Café — a Coreia tem uma cultura de cafés incomparável"
     },
     {
       "id": 15,
@@ -395,7 +416,8 @@
       "meaning_fr": "Hôtel",
       "meaning_id": "Hotel",
       "meaning_th": "โรงแรม",
-      "meaning_vi": "Khách sạn"
+      "meaning_vi": "Khách sạn",
+      "meaning_pt_br": "Hotel"
     },
     {
       "id": 16,
@@ -418,7 +440,8 @@
       "meaning_fr": "Toilettes — littéralement « salle de maquillage »",
       "meaning_id": "Toilet / kamar kecil — harfiah \"ruang berdandan\"",
       "meaning_th": "ห้องน้ำ — ตามตัวอักษรแปลว่า \"ห้องแต่งหน้า\"",
-      "meaning_vi": "Nhà vệ sinh — nghĩa đen là \"phòng trang điểm\""
+      "meaning_vi": "Nhà vệ sinh — nghĩa đen là \"phòng trang điểm\"",
+      "meaning_pt_br": "Banheiro / toalete — literalmente \"sala de maquiagem\""
     },
     {
       "id": 17,
@@ -440,7 +463,8 @@
       "meaning_fr": "Parc, jardin public — les parcs coréens sont bien entretenus et très fréquentés",
       "meaning_id": "Taman — taman di Korea terawat baik dan digemari",
       "meaning_th": "สวนสาธารณะ — สวนสาธารณะของเกาหลีดูแลอย่างดีและได้รับความนิยมมาก",
-      "meaning_vi": "Công viên — công viên ở Hàn Quốc được chăm sóc tốt và rất được ưa chuộng"
+      "meaning_vi": "Công viên — công viên ở Hàn Quốc được chăm sóc tốt và rất được ưa chuộng",
+      "meaning_pt_br": "Parque — os parques coreanos são bem cuidados e muito frequentados"
     },
     {
       "id": 18,
@@ -461,7 +485,8 @@
       "prompt_fr": "Vous cherchez les toilettes. Comment demandez-vous où elles se trouvent ?",
       "prompt_id": "Kamu perlu ke toilet. Bagaimana cara menanyakan letaknya?",
       "prompt_th": "คุณต้องการเข้าห้องน้ำ จะถามว่าอยู่ที่ไหนอย่างไร?",
-      "prompt_vi": "Bạn cần đi vệ sinh. Bạn hỏi nhà vệ sinh ở đâu như thế nào?"
+      "prompt_vi": "Bạn cần đi vệ sinh. Bạn hỏi nhà vệ sinh ở đâu như thế nào?",
+      "prompt_pt_br": "Você precisa de um banheiro. Como você pergunta onde ele fica?"
     },
     {
       "id": 19,
@@ -530,6 +555,13 @@
         "Sắt dưới lòng đất",
         "Đường dưới lòng đất",
         "Xe dưới lòng đất"
+      ],
+      "prompt_pt_br": "지하철 significa literalmente...",
+      "choices_pt_br": [
+        "Ferro acima do solo",
+        "Ferro subterrâneo",
+        "Estrada subterrânea",
+        "Veículo subterrâneo"
       ]
     },
     {
@@ -551,7 +583,8 @@
       "prompt_fr": "Quel lieu est ouvert 24 h/24 et est réputé pour se trouver absolument partout en Corée ?",
       "prompt_id": "Tempat mana yang buka 24 jam dan terkenal ada di mana-mana di Korea?",
       "prompt_th": "สถานที่ใดเปิด 24 ชั่วโมง และมีชื่อเสียงว่ามีอยู่ทุกหนทุกแห่งในเกาหลี?",
-      "prompt_vi": "Địa điểm nào mở cửa 24 giờ và nổi tiếng vì có mặt ở khắp nơi tại Hàn Quốc?"
+      "prompt_vi": "Địa điểm nào mở cửa 24 giờ và nổi tiếng vì có mặt ở khắp nơi tại Hàn Quốc?",
+      "prompt_pt_br": "Qual lugar fica aberto 24 horas e é famoso por estar em toda parte na Coreia?"
     },
     {
       "id": 21,
@@ -576,7 +609,9 @@
       "message_fr": "Vous pouvez maintenant vous déplacer dans les villes coréennes en toute confiance. Retenez bien : [Lieu] + 어디예요? est votre question passe-partout pour tout problème d'orientation en Corée.",
       "message_id": "Sekarang kamu bisa menjelajahi kota-kota Korea dengan percaya diri. Ingat: [Tempat] + 어디예요? adalah pertanyaan andalanmu untuk setiap tantangan navigasi yang kamu hadapi di Korea.",
       "message_th": "ตอนนี้คุณเดินทางในเมืองต่าง ๆ ของเกาหลีได้อย่างมั่นใจแล้ว จำไว้ว่า [สถานที่] + 어디예요? คือคำถามหลักที่ใช้ได้กับทุกสถานการณ์การหาทางในเกาหลี",
-      "message_vi": "Giờ bạn có thể tự tin di chuyển trong các thành phố Hàn Quốc. Hãy nhớ: [Địa điểm] + 어디예요? là câu hỏi bảo bối của bạn cho mọi tình huống tìm đường ở Hàn Quốc."
+      "message_vi": "Giờ bạn có thể tự tin di chuyển trong các thành phố Hàn Quốc. Hãy nhớ: [Địa điểm] + 어디예요? là câu hỏi bảo bối của bạn cho mọi tình huống tìm đường ở Hàn Quốc.",
+      "title_pt_br": "Lugares Concluídos!",
+      "message_pt_br": "Agora você pode se mover pelas cidades coreanas com confiança. Lembre-se: [Lugar] + 어디예요? é a sua pergunta certa para qualquer desafio de orientação que você enfrentar na Coreia."
     }
   ]
 }

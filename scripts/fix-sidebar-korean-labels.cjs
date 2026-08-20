@@ -47,9 +47,18 @@ const onlyLocale = (() => { const i = process.argv.indexOf('--locale'); return i
 
 const LINK = /<a([^>]*?)href="([^"]+)"([^>]*?)class="([^"]*\bsidebar-link\b[^"]*)"([^>]*)>([\s\S]*?)<\/a>/g;
 
+/* Locale directories, from the registry (scripts/_locales.cjs). 'planned'
+   locales are included on purpose: this list only RECOGNIZES a directory as a
+   locale, and an in-rollout locale should get its own labels rather than
+   silently be treated as English. The old regex hardcoded the shape
+   `[a-z]{2}(-tw)?`, which would have mis-parsed pt-br/zh-hk/zh-cn as 'en'.
+   A membership test also cannot mistake a non-locale subdirectory (learn/data)
+   for a locale. */
+const LOC_DIRS = new Set(require('./_locales.cjs').all()
+  .filter(l => l.code !== 'en').map(l => l.code));
 const localeOf = rel => {
-  const m = /^(?:culture|travel|learn)\/([a-z]{2}(?:-tw)?)\//.exec(rel);
-  return m ? m[1] : 'en';
+  const m = /^(?:culture|travel|learn)\/([^/]+)\//.exec(rel);
+  return m && LOC_DIRS.has(m[1]) ? m[1] : 'en';
 };
 /* `ramyeon.html` and `/culture/de/ramyeon.html` are the same link */
 const keyOf = href => {

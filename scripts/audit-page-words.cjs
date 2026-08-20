@@ -75,7 +75,21 @@ function isNoindex(html) {
 }
 
 // section + locale from a repo-relative path like culture/ja/kpop.html
-const LOCALES = new Set(['ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id']);
+// Was a hardcoded Set; now registry-driven, live-8 default, `--locales`
+// overridable — this only affects which directory-name segments get
+// classified as a locale, not which files exist on disk (see the
+// requested-but-absent reporting below, which is where honesty matters).
+const REG = require('./_locales.cjs');
+const argLocales = (() => {
+  const i = process.argv.indexOf('--locales');
+  return i !== -1 && process.argv[i + 1]
+    ? process.argv[i + 1].split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
+    : null;
+})();
+if (argLocales) argLocales.forEach(c => {
+  if (!REG.get(c) || c === 'en') throw new Error(`unknown locale "${c}" — not in scripts/_locales.cjs`);
+});
+const LOCALES = new Set(argLocales || REG.liveDirs());
 function classify(rel) {
   const parts = rel.split(/[\\/]/);
   let section = parts.length > 1 ? parts[0] : 'root';
@@ -143,3 +157,14 @@ for (const section of Object.keys(bySection).sort()) {
 }
 console.log(`\nTotal: ${rows.length} pages · ${flagged} under ${BAR}w (${flaggedIndexable} indexable, ${flagged - flaggedIndexable} noindex).`);
 console.log(`Run with --json <file> for the full per-page list, or --page <name.html> for one page across locales.`);
+
+// An explicitly requested locale that produced zero rows anywhere in the
+// walk is not "0 thin pages" — it was never scanned because it is not on
+// disk yet. Say so; a fresh/planned locale must not read as a clean pass.
+if (argLocales) {
+  const seen = new Set(rows.map(r => r.locale));
+  const notPresent = argLocales.filter(l => !seen.has(l));
+  if (notPresent.length) {
+    console.log(`\n${notPresent.length} requested locale(s) NOT PRESENT on disk — 0% scanned, not a pass: ${notPresent.join(', ')}`);
+  }
+}

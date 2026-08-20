@@ -59,7 +59,14 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const CHECK_ONLY = process.argv.includes('--check');
 
-const LOC_DIRS = ['ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
+/* Locale directories, from the registry (scripts/_locales.cjs). This list is
+   used only to RECOGNIZE a path segment as a locale, never to emit anything
+   into a page — so it deliberately includes 'planned' locales too. Relocalizing
+   an in-rollout locale's internal links is correct and harmless; leaving it out
+   would make every link on its pages read as an intentional cross-locale link.
+   Order is irrelevant here: every use is a membership test. */
+const LOC_DIRS = require('./_locales.cjs').all()
+  .filter(l => l.code !== 'en').map(l => l.code);
 const SECTIONS = ['culture', 'travel'];
 
 /* ── IO helpers that preserve line endings and BOM ─────────────────────── */

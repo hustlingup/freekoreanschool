@@ -20,6 +20,12 @@
      node scripts/qa-lang.cjs --apply <lang> <corrections.json>
      node scripts/qa-lang.cjs --status [--langs ja,th]
 
+   LOCALE LIST comes from scripts/_locales.cjs — --status covers the LIVE
+   locales by default. Naming a 'planned' locale explicitly (--langs pt-br)
+   is supported and is the fresh-locale path: nothing in learn/data/*.json
+   carries its suffix yet, so every unit reports as a gap and the footer says
+   so in words. It does NOT silently report 0 gaps, and it is not skipped.
+
    --lessons accepts lesson ids (grammar, emotions, …) and/or the triage
    group names (grammar, hangul, phrases, vocabulary, writing-typing).
    --gaps-only keeps just the units whose target-language value is empty.
@@ -35,14 +41,38 @@
 const fs = require('fs');
 const path = require('path');
 const { LOCALE_SUFFIXES } = require('./qa-translations.cjs');
+const REG = require('./_locales.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'learn', 'data');
 const OUT = path.join(ROOT, 'scripts', '_trans', 'qa', 'lang');
 const CHUNK_DEFAULT = 25;                          // override with --chunk N
 
-const ALL_LANGS = ['ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
-const suffixOf = lang => lang.replace('-', '_');   // 'zh-tw' → 'zh_tw'
+const ALL_LANGS = REG.liveDirs();                  // shipped locales, en excluded
+const PLANNED = REG.all().filter(l => l.status === 'planned').map(l => l.code);
+/* The manifest must describe EVERY locale the registry knows, live or
+   planned — the locale mid-rollout is precisely the one with 2,065 gaps to
+   extract, and building `vals` from the live list alone left its column
+   `undefined`, which then threw on `.trim()`. Found on pt-BR, 2026-08-13. */
+const MANIFEST_LANGS = REG.all().filter(l => l.code !== 'en').map(l => l.code);
+
+/* Registry suffixes are stored with the leading underscore ('_zh_tw'); every
+   call site here wants it without. Derived, never hardcoded. */
+const suffixOf = lang => {
+  const l = REG.get(lang);
+  if (!l) throw new Error(`unknown locale "${lang}" — not in scripts/_locales.cjs`);
+  return l.suffix.replace(/^_/, '');
+};
+
+/* Accept live locales silently, planned ones with a warning, nothing else. A
+   typo must be an error, not a quietly-empty audit. */
+function resolveLangs(spec, dflt) {
+  const list = (spec || dflt).split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+  list.forEach(l => {
+    if (!REG.get(l) || l === 'en') throw new Error(`unknown lang: ${l} (live: ${ALL_LANGS.join(', ')}; planned: ${PLANNED.join(', ') || 'none'})`);
+  });
+  return list;
+}
 
 /* ── the walker, with qa-translations.cjs's blind spot removed ──────────
    qa-translations.cjs decides a field is localizable by looking for a
@@ -63,8 +93,20 @@ const suffixOf = lang => lang.replace('-', '_');   // 'zh-tw' → 'zh_tw'
    produced identically here — this strictly widens coverage, it does not
    renumber anything. */
 const OBJ_SUBFIELDS = ['label', 'text'];
-const isLocaleKey = k => LOCALE_SUFFIXES.some(s => k.endsWith('_' + s));
-const CONTENT_LANGS = LOCALE_SUFFIXES.filter(s => s !== 'kr');
+
+/* qa-translations.cjs is a FROZEN RECORD and its LOCALE_SUFFIXES list stops at
+   the original eight. Widening it there would invalidate the record, so the
+   union happens HERE: frozen list ∪ every registry suffix (live AND planned).
+   Without the planned suffixes a fresh locale's `title_pt_br` would not be
+   recognised as a locale variant at all — the walker would treat it as a base
+   field and emit phantom units for it. Identical to the old set today, because
+   no lesson JSON carries a planned suffix yet. */
+const SUFFIXES = [...new Set([
+  ...LOCALE_SUFFIXES,
+  ...REG.all().filter(l => l.code !== 'en').map(l => l.suffix.replace(/^_/, '')),
+])];
+const isLocaleKey = k => SUFFIXES.some(s => k.endsWith('_' + s));
+const CONTENT_LANGS = SUFFIXES.filter(s => s !== 'kr');
 
 function isBaseKey(obj, k) {
   if (isLocaleKey(k)) return false;
@@ -185,7 +227,11 @@ const has = name => process.argv.includes(name);
 
 function extract() {
   const langs = (arg('--langs') || 'ja').split(',').map(s => s.trim()).filter(Boolean);
-  langs.forEach(l => { if (!ALL_LANGS.includes(l)) throw new Error(`unknown lang: ${l}`); });
+  /* Any registry locale, live OR planned. --status already accepted planned
+     locales; --extract rejecting them made the round trip impossible for the
+     locale currently being rolled out — which is the only locale that ever
+     has 2,065 gaps to extract. Found on pt-BR, 2026-08-13. */
+  langs.forEach(l => { if (!REG.get(l) || l === 'en') throw new Error(`unknown lang: ${l} (live: ${ALL_LANGS.join(', ')}; planned: ${PLANNED.join(', ') || 'none'})`); });
   const lessons = resolveLessons(arg('--lessons'));
   const gapsOnly = has('--gaps-only');
   const chunkSize = Math.max(1, parseInt(arg('--chunk', CHUNK_DEFAULT), 10) || CHUNK_DEFAULT);
@@ -203,7 +249,7 @@ function extract() {
   fs.mkdirSync(OUT, { recursive: true });
   const manifest = rows.map(({ u, data }) => {
     const vals = {};
-    ALL_LANGS.forEach(l => { vals[l] = localized(data, u.loc, l); });
+    MANIFEST_LANGS.forEach(l => { vals[l] = localized(data, u.loc, l); });
     return { id: u.id, path: u.path, loc: u.loc, ko: u.ko, en: u.en, vals };
   });
   fs.writeFileSync(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
@@ -216,7 +262,7 @@ function extract() {
 
     const picked = manifest.filter(m =>
       inScope.has(m.loc.file) &&
-      (!gapsOnly || !m.vals[lang].trim()) &&
+      (!gapsOnly || !(m.vals[lang] || '').trim()) &&
       (!fields.length || fields.includes(m.loc.field)));
     let c = 0;
     for (let i = 0; i < picked.length; i += chunkSize, c++) {
@@ -260,7 +306,9 @@ function status() {
 }
 
 function applyCorrections(lang, correctionsPath) {
-  if (!ALL_LANGS.includes(lang)) throw new Error(`lang must be one of ${ALL_LANGS.join(', ')}`);
+  /* Same rule as extract(): a `planned` locale is exactly the one being
+     filled, so --apply must accept it too. */
+  if (!REG.get(lang) || lang === 'en') throw new Error(`lang must be a locale in scripts/_locales.cjs, not en (live: ${ALL_LANGS.join(', ')}; planned: ${PLANNED.join(', ') || 'none'})`);
   const manifest = JSON.parse(fs.readFileSync(path.join(OUT, 'manifest.json'), 'utf8'));
   const byId = new Map(manifest.map(u => [u.id, u]));
   const corrections = JSON.parse(fs.readFileSync(path.resolve(correctionsPath), 'utf8'));

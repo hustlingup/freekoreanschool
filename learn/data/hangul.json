@@ -16,7 +16,8 @@
       "name_vi": "Phụ âm",
       "name_th": "พยัญชนะ",
       "name_id": "Konsonan",
-      "name_ja": "子音"
+      "name_ja": "子音",
+      "name_pt_br": "Consoantes"
     },
     {
       "id": 2,
@@ -32,7 +33,8 @@
       "name_vi": "Nguyên âm",
       "name_th": "สระ",
       "name_id": "Vokal",
-      "name_ja": "母音"
+      "name_ja": "母音",
+      "name_pt_br": "Vogais"
     },
     {
       "id": 3,
@@ -48,7 +50,8 @@
       "name_vi": "Âm tiết",
       "name_th": "พยางค์",
       "name_id": "Suku Kata",
-      "name_ja": "音節"
+      "name_ja": "音節",
+      "name_pt_br": "Sílabas"
     },
     {
       "id": 4,
@@ -64,7 +67,8 @@
       "name_vi": "Ký tự đặc biệt",
       "name_th": "พิเศษ",
       "name_id": "Spesial",
-      "name_ja": "特殊"
+      "name_ja": "特殊",
+      "name_pt_br": "Especiais"
     },
     {
       "id": 5,
@@ -80,7 +84,8 @@
       "name_vi": "Nguyên âm ghép",
       "name_th": "สระประสม",
       "name_id": "Vokal Majemuk",
-      "name_ja": "複合母音"
+      "name_ja": "複合母音",
+      "name_pt_br": "Vogais Compostas"
     },
     {
       "id": 6,
@@ -96,7 +101,8 @@
       "name_vi": "Đọc từ",
       "name_th": "อ่านคำ",
       "name_id": "Membaca Kata",
-      "name_ja": "単語を読む"
+      "name_ja": "単語を読む",
+      "name_pt_br": "Ler Palavras"
     }
   ],
   "steps": [
@@ -128,7 +134,9 @@
       "hint_th": "มีรูปร่างเหมือนส่วนหลังของลำคอที่กั้นการไหลของอากาศ",
       "example_meaning_th": "ไป",
       "hint_id": "Berbentuk seperti bagian belakang tenggorokan yang menghalangi aliran udara.",
-      "example_meaning_id": "pergi"
+      "example_meaning_id": "pergi",
+      "example_meaning_pt_br": "ir",
+      "hint_pt_br": "Tem a forma do fundo da garganta bloqueando o fluxo de ar."
     },
     {
       "id": 2,
@@ -158,7 +166,9 @@
       "hint_th": "มีรูปร่างเหมือนปลายลิ้นแตะเพดานปาก",
       "example_meaning_th": "ฉัน / ผม",
       "hint_id": "Berbentuk seperti ujung lidah menyentuh langit-langit mulut.",
-      "example_meaning_id": "saya / aku"
+      "example_meaning_id": "saya / aku",
+      "example_meaning_pt_br": "eu / mim",
+      "hint_pt_br": "Tem a forma da ponta da língua tocando o céu da boca."
     },
     {
       "id": 3,
@@ -188,7 +198,9 @@
       "hint_th": "เหมือน ㄴ แต่มีหลังคา — ลิ้นกั้นเพดานปากเต็มที่",
       "example_meaning_th": "ทั้งหมด / ทุก",
       "hint_id": "Seperti ㄴ dengan atap — lidah menutup sepenuhnya langit-langit mulut.",
-      "example_meaning_id": "semua / setiap"
+      "example_meaning_id": "semua / setiap",
+      "example_meaning_pt_br": "tudo / cada",
+      "hint_pt_br": "Como ㄴ com um teto — a língua bloqueia completamente o palato."
     },
     {
       "id": 4,
@@ -218,7 +230,9 @@
       "hint_th": "เป็นเสียงพลิ้ว — อยู่ระหว่าง r และ l ของภาษาอังกฤษ ลิ้นแตะเพดานปาก",
       "example_meaning_th": "เหตุผล (คำนำหน้า)",
       "hint_id": "Bunyi getar — di antara 'r' dan 'l' dalam bahasa Inggris. Lidah mengetuk langit-langit mulut.",
-      "example_meaning_id": "alasan (awalan)"
+      "example_meaning_id": "alasan (awalan)",
+      "example_meaning_pt_br": "razão (prefixo)",
+      "hint_pt_br": "Um som breve (flap) — entre o \"r\" e o \"l\". A língua toca rapidamente no palato."
     },
     {
       "id": 5,
@@ -248,7 +262,9 @@
       "hint_th": "มีรูปร่างเหมือนริมฝีปากที่หุบสนิทเพื่อออกเสียง ม",
       "example_meaning_th": "หัวใจ / จิตใจ",
       "hint_id": "Berbentuk seperti bibir tertutup yang saling menekan untuk membuat bunyi 'm'.",
-      "example_meaning_id": "hati / pikiran"
+      "example_meaning_id": "hati / pikiran",
+      "example_meaning_pt_br": "coração / mente",
+      "hint_pt_br": "Tem a forma dos lábios fechados se pressionando para fazer o som \"m\"."
     },
     {
       "id": 6,
@@ -278,7 +294,9 @@
       "hint_th": "มีรูปร่างเหมือนริมฝีปากที่เปิดออกเพื่อปล่อยเสียง บ หรือ ป",
       "example_meaning_th": "ข้าว / อาหาร",
       "hint_id": "Berbentuk seperti bibir yang terbuka untuk melepaskan bunyi 'b' atau 'p'.",
-      "example_meaning_id": "nasi / makanan"
+      "example_meaning_id": "nasi / makanan",
+      "example_meaning_pt_br": "arroz / refeição",
+      "hint_pt_br": "Tem a forma dos lábios se abrindo para soltar o som \"b\" ou \"p\"."
     },
     {
       "id": 7,
@@ -308,7 +326,9 @@
       "hint_th": "มีรูปร่างเหมือนฟันสองซี่ — อากาศผ่านออกมาเป็นเสียง ส",
       "example_meaning_th": "คน",
       "hint_id": "Berbentuk seperti dua gigi — udara mendesis melewatinya untuk bunyi 's'.",
-      "example_meaning_id": "orang"
+      "example_meaning_id": "orang",
+      "example_meaning_pt_br": "pessoa",
+      "hint_pt_br": "Tem a forma de dois dentes — o ar assobia para produzir o som \"s\"."
     },
     {
       "id": 8,
@@ -338,7 +358,9 @@
       "hint_th": "ไม่ออกเสียงเมื่ออยู่ต้นพยางค์ ออกเสียง ง เมื่ออยู่ท้ายพยางค์",
       "example_meaning_th": "เด็ก",
       "hint_id": "Diam di awal suku kata. Berbunyi seperti 'ng' di akhir.",
-      "example_meaning_id": "anak"
+      "example_meaning_id": "anak",
+      "example_meaning_pt_br": "criança",
+      "hint_pt_br": "Silenciosa no início de uma sílaba. Soa como \"ng\" no final."
     },
     {
       "id": 9,
@@ -368,7 +390,9 @@
       "hint_th": "เหมือน จ — ลิ้นกดอยู่หลังฟันบน",
       "example_meaning_th": "ตอนนี้",
       "hint_id": "Seperti 'j' dalam 'juice'. Lidah menekan di belakang gigi atas.",
-      "example_meaning_id": "sekarang"
+      "example_meaning_id": "sekarang",
+      "example_meaning_pt_br": "agora",
+      "hint_pt_br": "Como o \"j\" em inglês \"juice\" ou o \"tch\" em \"tchau\". A língua pressiona atrás dos dentes superiores."
     },
     {
       "id": 10,
@@ -398,7 +422,9 @@
       "hint_th": "เสียง ช พ่นอากาศ — อากาศพ่นออกพร้อมเสียง เหมือน ch ใน cheese",
       "example_meaning_th": "ชา / รถ",
       "hint_id": "'ch' beraspirasi — embusan udara keluar. Seperti 'ch' dalam 'cheese'.",
-      "example_meaning_id": "teh / mobil"
+      "example_meaning_id": "teh / mobil",
+      "example_meaning_pt_br": "chá / carro",
+      "hint_pt_br": "\"Ch\" aspirado — sai um sopro de ar. Como o \"tch\" em \"tchau\"."
     },
     {
       "id": 11,
@@ -428,7 +454,9 @@
       "hint_th": "เสียง ค พ่นอากาศ — อากาศพ่นออกแรง ถือกระดาษทิชชู่จะสั่นไหว",
       "example_meaning_th": "กาแฟ",
       "hint_id": "'k' beraspirasi — embusan udara kuat. Pegang tisu dan tisu itu akan bergetar.",
-      "example_meaning_id": "kopi"
+      "example_meaning_id": "kopi",
+      "example_meaning_pt_br": "café",
+      "hint_pt_br": "\"K\" aspirado — sopro de ar forte. Segure um lenço de papel e ele vai tremular."
     },
     {
       "id": 12,
@@ -458,7 +486,9 @@
       "hint_th": "เสียง ท พ่นอากาศ — เหมือน ท ใน ten ตอนต้นคำ ระเบิดแรง",
       "example_meaning_th": "ขี่ / โดยสาร",
       "hint_id": "'t' beraspirasi — seperti 't' dalam 'ten' (di awal kata). Letupan kuat.",
-      "example_meaning_id": "menaiki / naik"
+      "example_meaning_id": "menaiki / naik",
+      "example_meaning_pt_br": "andar de / montar",
+      "hint_pt_br": "\"T\" aspirado — como o \"t\" em inglês \"ten\" (no início da palavra). Explosão forte de ar."
     },
     {
       "id": 13,
@@ -488,7 +518,9 @@
       "hint_th": "เสียง พ พ่นอากาศ — เหมือน ป ใน pot ริมฝีปากเปิดออกพร้อมอากาศ",
       "example_meaning_th": "ต้นหอม",
       "hint_id": "'p' beraspirasi — seperti 'p' dalam 'pot'. Bibir terbuka dengan embusan udara.",
-      "example_meaning_id": "daun bawang"
+      "example_meaning_id": "daun bawang",
+      "example_meaning_pt_br": "cebolinha",
+      "hint_pt_br": "\"P\" aspirado — como o \"p\" em \"pote\". Os lábios se abrem com ar."
     },
     {
       "id": 14,
@@ -518,7 +550,9 @@
       "hint_th": "เสียง ห ลมหายใจ — เหมือนเป่าลมอุ่นใส่มือ",
       "example_meaning_th": "ท้องฟ้า",
       "hint_id": "Bunyi 'h' berdesah — seperti mengembuskan napas hangat ke tangan Anda.",
-      "example_meaning_id": "langit"
+      "example_meaning_id": "langit",
+      "example_meaning_pt_br": "céu",
+      "hint_pt_br": "Um \"h\" soprado — como exalar ar quente na mão."
     },
     {
       "id": 15,
@@ -539,7 +573,8 @@
       "prompt_th": "ㄱ ถอดเสียงเป็น…",
       "prompt_id": "ㄱ diromanisasi sebagai…",
       "prompt_vi": "ㄱ được phiên âm là…",
-      "prompt_ja": "ㄱ のローマ字表記は…"
+      "prompt_ja": "ㄱ のローマ字表記は…",
+      "prompt_pt_br": "ㄱ se romaniza como…"
     },
     {
       "id": 16,
@@ -560,7 +595,8 @@
       "prompt_th": "พยัญชนะใดไม่ออกเสียงเมื่ออยู่ต้นพยางค์?",
       "prompt_id": "Konsonan mana yang DIAM di awal suku kata?",
       "prompt_vi": "Phụ âm nào KHÔNG phát âm (câm) ở đầu âm tiết?",
-      "prompt_ja": "音節の頭で無音になる子音はどれでしょう。"
+      "prompt_ja": "音節の頭で無音になる子音はどれでしょう。",
+      "prompt_pt_br": "Qual consoante é SILENCIOSA no início de uma sílaba?"
     },
     {
       "id": 17,
@@ -581,7 +617,8 @@
       "prompt_th": "ㄴ ถอดเสียงเป็น…",
       "prompt_id": "ㄴ diromanisasi sebagai…",
       "prompt_vi": "ㄴ được phiên âm là…",
-      "prompt_ja": "ㄴ のローマ字表記は…"
+      "prompt_ja": "ㄴ のローマ字表記は…",
+      "prompt_pt_br": "ㄴ se romaniza como…"
     },
     {
       "id": 18,
@@ -602,7 +639,8 @@
       "prompt_th": "พยัญชนะใดออกเสียงเหมือน จ ใน juice?",
       "prompt_id": "Konsonan mana yang berbunyi seperti 'j' dalam 'juice'?",
       "prompt_vi": "Phụ âm nào nghe giống 'j' trong 'juice'?",
-      "prompt_ja": "「juice」の j のような音になる子音はどれでしょう。"
+      "prompt_ja": "「juice」の j のような音になる子音はどれでしょう。",
+      "prompt_pt_br": "Qual consoante soa como o \"j\" em inglês \"juice\"?"
     },
     {
       "id": 19,
@@ -623,7 +661,8 @@
       "prompt_th": "ㅁ ถอดเสียงเป็น…",
       "prompt_id": "ㅁ diromanisasi sebagai…",
       "prompt_vi": "ㅁ được phiên âm là…",
-      "prompt_ja": "ㅁ のローマ字表記は…"
+      "prompt_ja": "ㅁ のローマ字表記は…",
+      "prompt_pt_br": "ㅁ se romaniza como…"
     },
     {
       "id": 20,
@@ -644,7 +683,8 @@
       "prompt_th": "ㄹ ถอดเสียงเป็น…",
       "prompt_id": "ㄹ diromanisasi sebagai…",
       "prompt_vi": "ㄹ được phiên âm là…",
-      "prompt_ja": "ㄹ のローマ字表記は…"
+      "prompt_ja": "ㄹ のローマ字表記は…",
+      "prompt_pt_br": "ㄹ se romaniza como…"
     },
     {
       "id": 21,
@@ -665,7 +705,8 @@
       "prompt_th": "밥 (ข้าว) เริ่มต้นด้วยพยัญชนะใด?",
       "prompt_id": "밥 (nasi) dimulai dengan konsonan apa?",
       "prompt_vi": "밥 (cơm) bắt đầu bằng phụ âm nào?",
-      "prompt_ja": "밥（ご飯）はどの子音で始まりますか。"
+      "prompt_ja": "밥（ご飯）はどの子音で始まりますか。",
+      "prompt_pt_br": "밥 (arroz) começa com qual consoante?"
     },
     {
       "id": 22,
@@ -685,7 +726,8 @@
       "hint_de": "Öffne den Mund weit, wie ah beim Arzt.",
       "hint_vi": "Mở miệng rộng, như khi nói 'ah' tại bác sĩ.",
       "hint_th": "อ้าปากกว้าง เหมือนพูด อา ที่ห้องหมอ",
-      "hint_id": "Buka mulut lebar-lebar, seperti mengucapkan 'ah' saat diperiksa dokter."
+      "hint_id": "Buka mulut lebar-lebar, seperti mengucapkan 'ah' saat diperiksa dokter.",
+      "hint_pt_br": "Abra bem a boca, como ao dizer \"ah\" no consultório médico."
     },
     {
       "id": 23,
@@ -705,7 +747,8 @@
       "hint_de": "Wie ja in Jacht. Der extra Strich bedeutet, dass ein j hinzugefügt wird.",
       "hint_vi": "Như 'ya' trong 'yard'. Nét thêm có nghĩa là thêm âm 'y'.",
       "hint_th": "เหมือน ยา — เส้นพิเศษหมายถึงเพิ่ม ย ไว้หน้า",
-      "hint_id": "Seperti 'ya' dalam 'yard'. Goresan tambahan berarti ada bunyi 'y' yang ditambahkan."
+      "hint_id": "Seperti 'ya' dalam 'yard'. Goresan tambahan berarti ada bunyi 'y' yang ditambahkan.",
+      "hint_pt_br": "Como \"ya\" em \"yard\". O traço extra indica que um \"y\" é adicionado."
     },
     {
       "id": 24,
@@ -725,7 +768,8 @@
       "hint_de": "Ähnlich wie ö in Höhle, aber offener. Lippen leicht gerundet.",
       "hint_vi": "Giống âm 'uh' hoặc 'o' trong 'the other'. Môi hơi tròn.",
       "hint_th": "คล้าย เออ หรือ อ ใน the other ริมฝีปากโค้งเล็กน้อย",
-      "hint_id": "Mirip dengan 'uh' atau 'o' dalam 'the other'. Bibir sedikit membulat."
+      "hint_id": "Mirip dengan 'uh' atau 'o' dalam 'the other'. Bibir sedikit membulat.",
+      "hint_pt_br": "Parecido com o som \"ó\" (mais fechado). Lábios levemente arredondados."
     },
     {
       "id": 25,
@@ -745,7 +789,8 @@
       "hint_de": "Wie yö mit gerundeten Lippen. Zwei Striche = j-Vorsilbe.",
       "hint_vi": "Như 'yuh' với môi tròn. Hai nét = tiền tố 'y'.",
       "hint_th": "เหมือน เยอ พร้อมริมฝีปากโค้ง สองเส้น = เพิ่ม ย",
-      "hint_id": "Seperti 'yuh' dengan bibir membulat. Dua goresan = awalan 'y'."
+      "hint_id": "Seperti 'yuh' dengan bibir membulat. Dua goresan = awalan 'y'.",
+      "hint_pt_br": "Como \"iô\" com lábios arredondados. Dois traços = prefixo \"y\"."
     },
     {
       "id": 26,
@@ -765,7 +810,8 @@
       "hint_de": "Wie o in Boot. Runde die Lippen wie beim Kerzenblasen.",
       "hint_vi": "Như 'o' trong 'more'. Tròn môi như thổi nến.",
       "hint_th": "เหมือน โอ ใน more ห่อริมฝีปากเหมือนเป่าเทียน",
-      "hint_id": "Seperti 'o' dalam 'more'. Bulatkan bibir Anda seolah meniup lilin."
+      "hint_id": "Seperti 'o' dalam 'more'. Bulatkan bibir Anda seolah meniup lilin.",
+      "hint_pt_br": "Como o \"ô\" em \"avô\". Arredonde os lábios como se fosse soprar uma vela."
     },
     {
       "id": 27,
@@ -785,7 +831,8 @@
       "hint_de": "Wie jo! — zwei Striche fügen das j hinzu. Im Gespräch sehr gebräuchlich.",
       "hint_vi": "Như 'yo!' — hai nét thêm âm 'y'. Dùng nhiều trong lời nói.",
       "hint_th": "เหมือน โย! — สองเส้นเพิ่ม ย ใช้มากในการพูด",
-      "hint_id": "Seperti 'yo!' — dua goresan menambahkan bunyi 'y'. Sering digunakan dalam percakapan."
+      "hint_id": "Seperti 'yo!' — dua goresan menambahkan bunyi 'y'. Sering digunakan dalam percakapan.",
+      "hint_pt_br": "Como \"iô!\" — dois traços adicionam o \"y\". Muito usado na fala."
     },
     {
       "id": 28,
@@ -805,7 +852,8 @@
       "hint_de": "Wie u in Buch. Der Strich zeigt NACH UNTEN — der Mund senkt sich.",
       "hint_vi": "Như 'oo' trong 'boot'. Nét hướng XUỐNG — miệng mở.",
       "hint_th": "เหมือน อู ใน boot เส้นชี้ลง — ปากเปิดลง",
-      "hint_id": "Seperti 'oo' dalam 'boot'. Garis mengarah ke BAWAH — mulut turun."
+      "hint_id": "Seperti 'oo' dalam 'boot'. Garis mengarah ke BAWAH — mulut turun.",
+      "hint_pt_br": "Como o \"u\" em \"lua\". A linha aponta PARA BAIXO — a boca se abre para baixo."
     },
     {
       "id": 29,
@@ -825,7 +873,8 @@
       "hint_de": "Wie ju. Zwei Striche nach unten zeigen die j-Vorsilbe an.",
       "hint_vi": "Như 'you'. Hai nét hướng xuống biểu thị tiền tố 'y'.",
       "hint_th": "เหมือน ยู สองเส้นชี้ลงบอกถึง ย นำหน้า",
-      "hint_id": "Seperti 'you'. Dua goresan ke bawah menandakan awalan 'y'."
+      "hint_id": "Seperti 'you'. Dua goresan ke bawah menandakan awalan 'y'.",
+      "hint_pt_br": "Como \"iu\". Dois traços voltados para baixo indicam o prefixo \"y\"."
     },
     {
       "id": 30,
@@ -845,7 +894,8 @@
       "hint_de": "Wie ein unzufriedenes üh. Flache Lippen, nicht gerundet.",
       "hint_vi": "Như âm 'e' khi không hài lòng: 'euugh'. Môi dẹt.",
       "hint_th": "เหมือนเสียง เออ ตอนไม่พอใจ: เออ~ ริมฝีปากแบน",
-      "hint_id": "Seperti bunyi 'e' saat Anda merasa tidak puas: 'euugh'. Bibir datar."
+      "hint_id": "Seperti bunyi 'e' saat Anda merasa tidak puas: 'euugh'. Bibir datar.",
+      "hint_pt_br": "Como o som que você faz quando está insatisfeito: \"éé...\". Lábios retos, sem arredondar."
     },
     {
       "id": 31,
@@ -865,7 +915,8 @@
       "hint_de": "Wie i in Biene. Ein einfacher senkrechter Strich — reiner hoher Vokal.",
       "hint_vi": "Như 'ee' trong 'bee'. Nét dọc đơn giản — nguyên âm cao thuần túy.",
       "hint_th": "เหมือน อี ใน bee เส้นตั้งง่ายๆ — สระเสียงสูงหน้าล้วน",
-      "hint_id": "Seperti 'ee' dalam 'bee'. Goresan vertikal sederhana — vokal depan tinggi murni."
+      "hint_id": "Seperti 'ee' dalam 'bee'. Goresan vertikal sederhana — vokal depan tinggi murni.",
+      "hint_pt_br": "Como o \"i\" em \"sim\". Um simples traço vertical — vogal alta anterior pura."
     },
     {
       "id": 32,
@@ -886,7 +937,8 @@
       "prompt_th": "สระใดออกเสียงเหมือน อา (ดังใน father)?",
       "prompt_id": "Vokal mana yang berbunyi seperti 'a' (seperti dalam 'father')?",
       "prompt_vi": "Nguyên âm nào nghe giống 'a' (như trong 'father')?",
-      "prompt_ja": "「father」の a のような音になる母音はどれでしょう。"
+      "prompt_ja": "「father」の a のような音になる母音はどれでしょう。",
+      "prompt_pt_br": "Qual vogal soa como o \"a\" (como em \"pai\")?"
     },
     {
       "id": 33,
@@ -907,7 +959,8 @@
       "prompt_th": "สระใดออกเสียงเหมือน โอ (ดังใน more)?",
       "prompt_id": "Vokal mana yang berbunyi seperti 'o' (seperti dalam 'more')?",
       "prompt_vi": "Nguyên âm nào nghe giống 'o' (như trong 'more')?",
-      "prompt_ja": "「more」の o のような音になる母音はどれでしょう。"
+      "prompt_ja": "「more」の o のような音になる母音はどれでしょう。",
+      "prompt_pt_br": "Qual vogal soa como o \"ô\" (como em \"avô\")?"
     },
     {
       "id": 34,
@@ -928,7 +981,8 @@
       "prompt_th": "สระใดออกเสียงเหมือน อี (ดังใน bee)?",
       "prompt_id": "Vokal mana yang berbunyi seperti 'ee' (seperti dalam 'bee')?",
       "prompt_vi": "Nguyên âm nào nghe giống 'ee' (như trong 'bee')?",
-      "prompt_ja": "「bee」の ee のような音になる母音はどれでしょう。"
+      "prompt_ja": "「bee」の ee のような音になる母音はどれでしょう。",
+      "prompt_pt_br": "Qual vogal soa como o \"i\" (como em \"sim\")?"
     },
     {
       "id": 35,
@@ -949,7 +1003,8 @@
       "prompt_th": "ㅠ ถอดเสียงเป็น…",
       "prompt_id": "ㅠ diromanisasi sebagai…",
       "prompt_vi": "ㅠ được phiên âm là…",
-      "prompt_ja": "ㅠ のローマ字表記は…"
+      "prompt_ja": "ㅠ のローマ字表記は…",
+      "prompt_pt_br": "ㅠ se romaniza como…"
     },
     {
       "id": 36,
@@ -970,7 +1025,8 @@
       "prompt_th": "ㅡ ออกเสียงเหมือน…",
       "prompt_id": "ㅡ berbunyi seperti…",
       "prompt_vi": "ㅡ nghe giống…",
-      "prompt_ja": "ㅡ の音は…"
+      "prompt_ja": "ㅡ の音は…",
+      "prompt_pt_br": "ㅡ soa como…"
     },
     {
       "id": 37,
@@ -988,7 +1044,8 @@
       "meaning_de": "ba — wie in 바나나 (Banane)",
       "meaning_vi": "ba — như trong 바나나 (chuối)",
       "meaning_th": "บา — ดังใน 바나나 (กล้วย)",
-      "meaning_id": "ba — seperti dalam 바나나 (pisang)"
+      "meaning_id": "ba — seperti dalam 바나나 (pisang)",
+      "meaning_pt_br": "ba — como em 바나나 (banana)"
     },
     {
       "id": 38,
@@ -1006,7 +1063,8 @@
       "meaning_de": "na — wie in 나 (ich)",
       "meaning_vi": "na — như trong 나 (tôi)",
       "meaning_th": "นา — ดังใน 나 (ฉัน)",
-      "meaning_id": "na — seperti dalam 나 (aku)"
+      "meaning_id": "na — seperti dalam 나 (aku)",
+      "meaning_pt_br": "na — como em 나 (eu)"
     },
     {
       "id": 39,
@@ -1024,7 +1082,8 @@
       "meaning_de": "sa — wie in 사랑 (Liebe)",
       "meaning_vi": "sa — như trong 사랑 (tình yêu)",
       "meaning_th": "ซา — ดังใน 사랑 (ความรัก)",
-      "meaning_id": "sa — seperti dalam 사랑 (cinta)"
+      "meaning_id": "sa — seperti dalam 사랑 (cinta)",
+      "meaning_pt_br": "sa — como em 사랑 (amor)"
     },
     {
       "id": 40,
@@ -1042,7 +1101,8 @@
       "meaning_de": "go — wie in 고마워 (danke)",
       "meaning_vi": "go — như trong 고마워 (cảm ơn)",
       "meaning_th": "โก — ดังใน 고마워 (ขอบคุณ)",
-      "meaning_id": "go — seperti dalam 고마워 (terima kasih)"
+      "meaning_id": "go — seperti dalam 고마워 (terima kasih)",
+      "meaning_pt_br": "go — como em 고마워 (obrigado/a)"
     },
     {
       "id": 41,
@@ -1060,7 +1120,8 @@
       "meaning_de": "ha — wie in 하늘 (Himmel)",
       "meaning_vi": "ha — như trong 하늘 (bầu trời)",
       "meaning_th": "ฮา — ดังใน 하늘 (ท้องฟ้า)",
-      "meaning_id": "ha — seperti dalam 하늘 (langit)"
+      "meaning_id": "ha — seperti dalam 하늘 (langit)",
+      "meaning_pt_br": "ha — como em 하늘 (céu)"
     },
     {
       "id": 42,
@@ -1078,7 +1139,8 @@
       "meaning_de": "mu — wie in 무엇 (was)",
       "meaning_vi": "mu — như trong 무엇 (cái gì)",
       "meaning_th": "มู — ดังใน 무엇 (อะไร)",
-      "meaning_id": "mu — seperti dalam 무엇 (apa)"
+      "meaning_id": "mu — seperti dalam 무엇 (apa)",
+      "meaning_pt_br": "mu — como em 무엇 (o quê)"
     },
     {
       "id": 43,
@@ -1098,7 +1160,8 @@
       "hint_de": "Gespanntes k — Luft anhalten, dann loslassen. Kein Luftstoß.",
       "hint_vi": "Âm 'k' căng — nín thở rồi bật ra. Không có luồng khí.",
       "hint_th": "เสียง ก เกร็ง — กลั้นหายใจแล้วปล่อย ไม่มีอากาศพ่น",
-      "hint_id": "'k' tegang — tahan napas lalu lepaskan. Tanpa embusan udara."
+      "hint_id": "'k' tegang — tahan napas lalu lepaskan. Tanpa embusan udara.",
+      "hint_pt_br": "\"K\" tenso — segure a respiração e depois solte. Sem sopro de ar."
     },
     {
       "id": 44,
@@ -1118,7 +1181,8 @@
       "hint_de": "Gespanntes t — die Kehle zieht sich zusammen vor dem Loslassen. Anders als ㄷ und ㅌ.",
       "hint_vi": "Âm 't' căng — cổ họng siết trước khi bật. Khác biệt với ㄷ và ㅌ.",
       "hint_th": "เสียง ด เกร็ง — ลำคอเกร็งก่อนปล่อย ต่างจาก ㄷ และ ㅌ",
-      "hint_id": "'t' tegang — tenggorokan mengencang sebelum melepaskan. Berbeda dari ㄷ dan ㅌ."
+      "hint_id": "'t' tegang — tenggorokan mengencang sebelum melepaskan. Berbeda dari ㄷ dan ㅌ.",
+      "hint_pt_br": "\"T\" tenso — a garganta se contrai antes de soltar o som. Diferente de ㄷ e ㅌ."
     },
     {
       "id": 45,
@@ -1138,7 +1202,8 @@
       "hint_de": "Gespanntes p — Lippen pressen sich fest zusammen, bevor sie aufschnappen. Keine Luft entweicht.",
       "hint_vi": "Âm 'p' căng — môi ép chặt trước khi bật ra. Không có không khí thoát.",
       "hint_th": "เสียง บ เกร็ง — ริมฝีปากกดแน่นก่อนเปิดออก ไม่มีอากาศรั่ว",
-      "hint_id": "'p' tegang — bibir menekan kuat sebelum terbuka. Tidak ada udara yang keluar."
+      "hint_id": "'p' tegang — bibir menekan kuat sebelum terbuka. Tidak ada udara yang keluar.",
+      "hint_pt_br": "\"P\" tenso — os lábios pressionam com força antes de se abrirem. Nenhum ar escapa."
     },
     {
       "id": 46,
@@ -1158,7 +1223,8 @@
       "hint_de": "Gespanntes s — ein scharfes, enges Zischen. Verwendet in 있다 (existieren / haben).",
       "hint_vi": "Âm 's' căng — tiếng rít sắc và chặt. Dùng trong 있다 (tồn tại / có).",
       "hint_th": "เสียง ส เกร็ง — เสียงแหลมและตึง ใช้ใน 있다 (มีอยู่ / มี)",
-      "hint_id": "'s' tegang — desisan tajam dan ketat. Digunakan dalam 있다 (ada / memiliki)."
+      "hint_id": "'s' tegang — desisan tajam dan ketat. Digunakan dalam 있다 (ada / memiliki).",
+      "hint_pt_br": "\"S\" tenso — um assobio agudo e contido. Usado em 있다 (existir / ter)."
     },
     {
       "id": 47,
@@ -1178,7 +1244,8 @@
       "hint_de": "Gespanntes j — schärfer und abrupter als ㅈ. Kein Luftstoß.",
       "hint_vi": "Âm 'j' căng — sắc và đột ngột hơn ㅈ. Không có luồng khí.",
       "hint_th": "เสียง จ เกร็ง — แหลมและฉับกว่า ㅈ ไม่มีอากาศพ่น",
-      "hint_id": "'j' tegang — lebih tajam dan tiba-tiba daripada ㅈ. Tanpa letupan udara."
+      "hint_id": "'j' tegang — lebih tajam dan tiba-tiba daripada ㅈ. Tanpa letupan udara.",
+      "hint_pt_br": "\"J\" tenso — mais agudo e abrupto que ㅈ. Sem explosão de ar."
     },
     {
       "id": 48,
@@ -1198,7 +1265,8 @@
       "hint_de": "Aspiriert — ein starker Luftstoß folgt dem Konsonanten.",
       "hint_vi": "Bật hơi — một luồng khí mạnh theo sau phụ âm.",
       "hint_th": "พ่นอากาศ — อากาศพ่นออกแรงตามหลังพยัญชนะ",
-      "hint_id": "Beraspirasi — letupan udara kuat mengikuti konsonan tersebut."
+      "hint_id": "Beraspirasi — letupan udara kuat mengikuti konsonan tersebut.",
+      "hint_pt_br": "Aspirada — um forte sopro de ar acompanha a consoante."
     },
     {
       "id": 49,
@@ -1218,7 +1286,8 @@
       "hint_de": "Aspiriert — die Zunge schnellt vom Gaumen mit einem Luftstoß ab.",
       "hint_vi": "Bật hơi — lưỡi bật ra khỏi vòm miệng cùng luồng khí.",
       "hint_th": "พ่นอากาศ — ลิ้นดีดออกจากเพดานพร้อมอากาศพ่น",
-      "hint_id": "Beraspirasi — lidah lepas dari langit-langit mulut dengan embusan udara."
+      "hint_id": "Beraspirasi — lidah lepas dari langit-langit mulut dengan embusan udara.",
+      "hint_pt_br": "Aspirada — a língua se solta do palato com um sopro de ar."
     },
     {
       "id": 50,
@@ -1238,7 +1307,8 @@
       "hint_de": "Aspiriert — Lippen schnappen mit einem Luftknall auf.",
       "hint_vi": "Bật hơi — môi bật mở cùng tiếng phát. Như 'pot'.",
       "hint_th": "พ่นอากาศ — ริมฝีปากระเบิดออกพร้อมเสียงอากาศ เหมือน pot",
-      "hint_id": "Beraspirasi — bibir terbuka lebar dengan letupan udara. Seperti 'pot'."
+      "hint_id": "Beraspirasi — bibir terbuka lebar dengan letupan udara. Seperti 'pot'.",
+      "hint_pt_br": "Aspirada — os lábios se abrem de repente com um sopro de ar. Como em \"pote\"."
     },
     {
       "id": 51,
@@ -1258,7 +1328,8 @@
       "hint_de": "Aspiriertes ch — wie das englische „ch\" in „cheese\" am Anfang. Luft kommt heraus.",
       "hint_vi": "Âm 'ch' bật hơi — như 'cheese' ở đầu. Không khí thoát ra.",
       "hint_th": "เสียง ช พ่นอากาศ — เหมือน cheese ตอนต้น อากาศพ่นออก",
-      "hint_id": "'ch' beraspirasi — seperti awal kata 'cheese'. Udara keluar."
+      "hint_id": "'ch' beraspirasi — seperti awal kata 'cheese'. Udara keluar.",
+      "hint_pt_br": "\"Ch\" aspirado — como no início de \"tchau\". Sai ar."
     },
     {
       "id": 52,
@@ -1278,7 +1349,8 @@
       "hint_de": "Ein gehauchter aspirierter Konsonant. Der meiste Luftausstoß aller koreanischen Konsonanten.",
       "hint_vi": "Phụ âm bật hơi nhẹ. Nhiều không khí nhất trong các phụ âm tiếng Hàn.",
       "hint_th": "พยัญชนะลมหายใจพ่น อากาศออกมากที่สุดของพยัญชนะเกาหลี",
-      "hint_id": "Konsonan beraspirasi yang berdesah. Mengeluarkan udara paling banyak di antara semua konsonan Korea."
+      "hint_id": "Konsonan beraspirasi yang berdesah. Mengeluarkan udara paling banyak di antara semua konsonan Korea.",
+      "hint_pt_br": "Uma consoante bem aspirada. A que produz mais ar entre todas as consoantes coreanas."
     },
     {
       "id": 53,
@@ -1299,7 +1371,8 @@
       "prompt_th": "ㄲ ถอดเสียงเป็น…",
       "prompt_id": "ㄲ diromanisasi sebagai…",
       "prompt_vi": "ㄲ được phiên âm là…",
-      "prompt_ja": "ㄲ のローマ字表記は…"
+      "prompt_ja": "ㄲ のローマ字表記は…",
+      "prompt_pt_br": "ㄲ se romaniza como…"
     },
     {
       "id": 54,
@@ -1320,7 +1393,8 @@
       "prompt_th": "พยัญชนะใดเป็นเสียงเกร็ง (쌍자음)?",
       "prompt_id": "Mana yang merupakan konsonan TEGANG (쌍자음)?",
       "prompt_vi": "Đâu là phụ âm CĂNG (쌍자음)?",
-      "prompt_ja": "濃音（쌍자음）はどれでしょう。"
+      "prompt_ja": "濃音（쌍자음）はどれでしょう。",
+      "prompt_pt_br": "Qual é uma consoante TENSA (쌍자음)?"
     },
     {
       "id": 55,
@@ -1341,7 +1415,8 @@
       "prompt_th": "ㅃ ถอดเสียงเป็น…",
       "prompt_id": "ㅃ diromanisasi sebagai…",
       "prompt_vi": "ㅃ được phiên âm là…",
-      "prompt_ja": "ㅃ のローマ字表記は…"
+      "prompt_ja": "ㅃ のローマ字表記は…",
+      "prompt_pt_br": "ㅃ se romaniza como…"
     },
     {
       "id": 56,
@@ -1410,6 +1485,13 @@
         "強い息の放出",
         "喉の緊張",
         "鼻音"
+      ],
+      "prompt_pt_br": "As consoantes aspiradas são produzidas com…",
+      "choices_pt_br": [
+        "Sem ar",
+        "Um forte sopro de ar",
+        "Uma garganta tensa",
+        "Um som nasal"
       ]
     },
     {
@@ -1431,7 +1513,8 @@
       "prompt_th": "ㅉ ถอดเสียงเป็น…",
       "prompt_id": "ㅉ diromanisasi sebagai…",
       "prompt_vi": "ㅉ được phiên âm là…",
-      "prompt_ja": "ㅉ のローマ字表記は…"
+      "prompt_ja": "ㅉ のローマ字表記は…",
+      "prompt_pt_br": "ㅉ se romaniza como…"
     },
     {
       "id": 58,
@@ -1451,7 +1534,8 @@
       "hint_de": "ㅏ + ㅣ kombiniert. Wie e in Bett. Modernes Koreanisch = identisch mit 에.",
       "hint_vi": "ㅏ + ㅣ kết hợp. Như 'e' trong 'bed'. Tiếng Hàn hiện đại = giống 에.",
       "hint_th": "ㅏ + ㅣ รวมกัน เหมือน เ- ใน bed เกาหลีสมัยใหม่ = เสียงเดียวกับ 에",
-      "hint_id": "Gabungan ㅏ + ㅣ. Seperti 'e' dalam 'bed'. Bahasa Korea modern = sama dengan 에."
+      "hint_id": "Gabungan ㅏ + ㅣ. Seperti 'e' dalam 'bed'. Bahasa Korea modern = sama dengan 에.",
+      "hint_pt_br": "ㅏ + ㅣ combinadas. Como o \"é\" em \"pé\". No coreano moderno, soa igual a 에."
     },
     {
       "id": 59,
@@ -1471,7 +1555,8 @@
       "hint_de": "ㅓ + ㅣ kombiniert. Wie e in Bett. Klingt heute genauso wie 애.",
       "hint_vi": "ㅓ + ㅣ kết hợp. Như 'e' trong 'bed'. Ngày nay phát âm giống 애.",
       "hint_th": "ㅓ + ㅣ รวมกัน เหมือน เ- ใน bed ปัจจุบันออกเสียงเหมือน 애",
-      "hint_id": "Gabungan ㅓ + ㅣ. Seperti 'e' dalam 'bed'. Kini terdengar sama dengan 애."
+      "hint_id": "Gabungan ㅓ + ㅣ. Seperti 'e' dalam 'bed'. Kini terdengar sama dengan 애.",
+      "hint_pt_br": "ㅓ + ㅣ combinadas. Como o \"é\" em \"pé\". Hoje soa igual a 애."
     },
     {
       "id": 60,
@@ -1491,7 +1576,8 @@
       "hint_de": "ㅑ + ㅣ. Selten — erscheint in 얘 (dieses Kind, umgangssprachlich).",
       "hint_vi": "ㅑ + ㅣ. Hiếm — xuất hiện trong 얘 (đứa trẻ này, khẩu ngữ).",
       "hint_th": "ㅑ + ㅣ หายาก — พบใน 얘 (เด็กคนนี้ ภาษาพูด)",
-      "hint_id": "ㅑ + ㅣ. Jarang — muncul dalam 얘 (anak ini, bahasa percakapan)."
+      "hint_id": "ㅑ + ㅣ. Jarang — muncul dalam 얘 (anak ini, bahasa percakapan).",
+      "hint_pt_br": "ㅑ + ㅣ. Rara — aparece em 얘 (esta criança, coloquial)."
     },
     {
       "id": 61,
@@ -1511,7 +1597,8 @@
       "hint_de": "ㅕ + ㅣ. Wie je in jetzt. 예쁘다 = schön / hübsch.",
       "hint_vi": "ㅕ + ㅣ. Như 'ye' trong 'yes'. 예쁘다 = đẹp.",
       "hint_th": "ㅕ + ㅣ เหมือน เย ใน yes 예쁘다 = สวยงาม",
-      "hint_id": "ㅕ + ㅣ. Seperti 'ye' dalam 'yes'. 예쁘다 = cantik."
+      "hint_id": "ㅕ + ㅣ. Seperti 'ye' dalam 'yes'. 예쁘다 = cantik.",
+      "hint_pt_br": "ㅕ + ㅣ. Como \"iê\". 예쁘다 = bonito/a."
     },
     {
       "id": 62,
@@ -1531,7 +1618,8 @@
       "hint_de": "ㅗ + ㅏ. Wie wa in Wahl. 와! = Wow!",
       "hint_vi": "ㅗ + ㅏ. Như 'wa' trong 'water'. 와! = Ồ!",
       "hint_th": "ㅗ + ㅏ เหมือน วา ใน water 와! = ว้าว!",
-      "hint_id": "ㅗ + ㅏ. Seperti 'wa' dalam 'water'. 와! = Wow!"
+      "hint_id": "ㅗ + ㅏ. Seperti 'wa' dalam 'water'. 와! = Wow!",
+      "hint_pt_br": "ㅗ + ㅏ. Como \"ua\" em \"quatro\". 와! = Uau!"
     },
     {
       "id": 63,
@@ -1551,7 +1639,8 @@
       "hint_de": "ㅗ + ㅐ. Klingt wie wä. 왜 = warum.",
       "hint_vi": "ㅗ + ㅐ. Phát âm như 'wae'. 왜 = tại sao.",
       "hint_th": "ㅗ + ㅐ ออกเสียง แว 왜 = ทำไม",
-      "hint_id": "ㅗ + ㅐ. Berbunyi seperti 'wae'. 왜 = mengapa."
+      "hint_id": "ㅗ + ㅐ. Berbunyi seperti 'wae'. 왜 = mengapa.",
+      "hint_pt_br": "ㅗ + ㅐ. Soa como \"uê\". 왜 = por quê."
     },
     {
       "id": 64,
@@ -1571,7 +1660,8 @@
       "hint_de": "ㅗ + ㅣ. Wie we. 외국인 = Ausländer/in.",
       "hint_vi": "ㅗ + ㅣ. Như 'we'. 외국인 = người nước ngoài.",
       "hint_th": "ㅗ + ㅣ เหมือน เว 외국인 = ชาวต่างชาติ",
-      "hint_id": "ㅗ + ㅣ. Seperti 'we'. 외국인 = orang asing."
+      "hint_id": "ㅗ + ㅣ. Seperti 'we'. 외국인 = orang asing.",
+      "hint_pt_br": "ㅗ + ㅣ. Como \"uê\". 외국인 = estrangeiro/a."
     },
     {
       "id": 65,
@@ -1591,7 +1681,8 @@
       "hint_de": "ㅜ + ㅓ. Wie wo. 뭐 = was (umgangssprachlich).",
       "hint_vi": "ㅜ + ㅓ. Như 'wuh'. 뭐 = cái gì (khẩu ngữ).",
       "hint_th": "ㅜ + ㅓ เหมือน เวอะ 뭐 = อะไร (ภาษาพูด)",
-      "hint_id": "ㅜ + ㅓ. Seperti 'wuh'. 뭐 = apa (bahasa percakapan)."
+      "hint_id": "ㅜ + ㅓ. Seperti 'wuh'. 뭐 = apa (bahasa percakapan).",
+      "hint_pt_br": "ㅜ + ㅓ. Como \"uó\". 뭐 = o quê (coloquial)."
     },
     {
       "id": 66,
@@ -1611,7 +1702,8 @@
       "hint_de": "ㅜ + ㅔ. Wie we. Sehr selten im Koreanischen.",
       "hint_vi": "ㅜ + ㅔ. Như 'we'. Rất hiếm trong tiếng Hàn.",
       "hint_th": "ㅜ + ㅔ เหมือน เว หายากมากในภาษาเกาหลี",
-      "hint_id": "ㅜ + ㅔ. Seperti 'we'. Sangat jarang dalam bahasa Korea."
+      "hint_id": "ㅜ + ㅔ. Seperti 'we'. Sangat jarang dalam bahasa Korea.",
+      "hint_pt_br": "ㅜ + ㅔ. Como \"uê\". Muito rara em coreano."
     },
     {
       "id": 67,
@@ -1631,7 +1723,8 @@
       "hint_de": "ㅜ + ㅣ. Wie wi. 위 = oben / Magen.",
       "hint_vi": "ㅜ + ㅣ. Như 'wee'. 위 = phía trên / dạ dày.",
       "hint_th": "ㅜ + ㅣ เหมือน วี 위 = ข้างบน / กระเพาะ",
-      "hint_id": "ㅜ + ㅣ. Seperti 'wee'. 위 = di atas / lambung."
+      "hint_id": "ㅜ + ㅣ. Seperti 'wee'. 위 = di atas / lambung.",
+      "hint_pt_br": "ㅜ + ㅣ. Como \"ui\". 위 = em cima / estômago."
     },
     {
       "id": 68,
@@ -1651,7 +1744,8 @@
       "hint_de": "ㅡ + ㅣ. Ein einzigartiger Gleitvokal. 의사 = Arzt/Ärztin. Auch der Possessivpartikel 의.",
       "hint_vi": "ㅡ + ㅣ. Âm lướt độc đáo. 의사 = bác sĩ. Dùng như trợ từ sở hữu 의.",
       "hint_th": "ㅡ + ㅣ เสียงเลื่อนเฉพาะ 의사 = หมอ ใช้เป็นคำช่วยแสดงความเป็นเจ้าของ 의",
-      "hint_id": "ㅡ + ㅣ. Luncuran unik. 의사 = dokter. Digunakan sebagai partikel kepemilikan 의."
+      "hint_id": "ㅡ + ㅣ. Luncuran unik. 의사 = dokter. Digunakan sebagai partikel kepemilikan 의.",
+      "hint_pt_br": "ㅡ + ㅣ. Um ditongo único. 의사 = médico/a. Também é usada como partícula possessiva 의."
     },
     {
       "id": 69,
@@ -1672,7 +1766,8 @@
       "prompt_th": "ㅘ ถอดเสียงเป็น…",
       "prompt_id": "ㅘ diromanisasi sebagai…",
       "prompt_vi": "ㅘ được phiên âm là…",
-      "prompt_ja": "ㅘ のローマ字表記は…"
+      "prompt_ja": "ㅘ のローマ字表記は…",
+      "prompt_pt_br": "ㅘ se romaniza como…"
     },
     {
       "id": 70,
@@ -1741,7 +1836,14 @@
         "なぜ",
         "どこ"
       ],
-      "prompt_ja": "왜 の意味は…"
+      "prompt_ja": "왜 の意味は…",
+      "prompt_pt_br": "왜 significa…",
+      "choices_pt_br": [
+        "o quê",
+        "quem",
+        "por quê",
+        "onde"
+      ]
     },
     {
       "id": 71,
@@ -1762,7 +1864,8 @@
       "prompt_th": "ㅢ ถอดเสียงเป็น…",
       "prompt_id": "ㅢ diromanisasi sebagai…",
       "prompt_vi": "ㅢ được phiên âm là…",
-      "prompt_ja": "ㅢ のローマ字表記は…"
+      "prompt_ja": "ㅢ のローマ字表記は…",
+      "prompt_pt_br": "ㅢ se romaniza como…"
     },
     {
       "id": 72,
@@ -1783,7 +1886,8 @@
       "prompt_th": "สระประสมใดใช้ ㅗ + ㅣ?",
       "prompt_id": "Vokal majemuk mana yang menggunakan ㅗ + ㅣ?",
       "prompt_vi": "Nguyên âm ghép nào dùng ㅗ + ㅣ?",
-      "prompt_ja": "ㅗ ＋ ㅣ からなる合成母音はどれでしょう。"
+      "prompt_ja": "ㅗ ＋ ㅣ からなる合成母音はどれでしょう。",
+      "prompt_pt_br": "Qual vogal composta usa ㅗ + ㅣ?"
     },
     {
       "id": 73,
@@ -1804,7 +1908,8 @@
       "prompt_th": "예 ถอดเสียงเป็น…",
       "prompt_id": "예 diromanisasi sebagai…",
       "prompt_vi": "예 được phiên âm là…",
-      "prompt_ja": "예 のローマ字表記は…"
+      "prompt_ja": "예 のローマ字表記は…",
+      "prompt_pt_br": "예 se romaniza como…"
     },
     {
       "id": 74,
@@ -1826,7 +1931,8 @@
       "meaning_vi": "xin chào / tạm biệt (thân mật)",
       "meaning_th": "สวัสดี / ลาก่อน (ไม่เป็นทางการ)",
       "meaning_id": "halo / sampai jumpa (tidak resmi)",
-      "meaning_ja": "こんにちは／さようなら（くだけた言い方）"
+      "meaning_ja": "こんにちは／さようなら（くだけた言い方）",
+      "meaning_pt_br": "oi / tchau (informal)"
     },
     {
       "id": 75,
@@ -1848,7 +1954,8 @@
       "meaning_vi": "trường học",
       "meaning_th": "โรงเรียน",
       "meaning_id": "sekolah",
-      "meaning_ja": "学校"
+      "meaning_ja": "学校",
+      "meaning_pt_br": "escola"
     },
     {
       "id": 76,
@@ -1870,7 +1977,8 @@
       "meaning_vi": "Hàn Quốc",
       "meaning_th": "เกาหลี",
       "meaning_id": "Korea",
-      "meaning_ja": "韓国"
+      "meaning_ja": "韓国",
+      "meaning_pt_br": "Coreia"
     },
     {
       "id": 77,
@@ -1892,7 +2000,8 @@
       "meaning_vi": "tình yêu",
       "meaning_th": "ความรัก",
       "meaning_id": "cinta",
-      "meaning_ja": "愛"
+      "meaning_ja": "愛",
+      "meaning_pt_br": "amor"
     },
     {
       "id": 78,
@@ -1913,7 +2022,8 @@
       "meaning_vi": "nước",
       "meaning_th": "น้ำ",
       "meaning_id": "air",
-      "meaning_ja": "水"
+      "meaning_ja": "水",
+      "meaning_pt_br": "água"
     },
     {
       "id": 79,
@@ -1934,7 +2044,8 @@
       "meaning_vi": "cơm / bữa ăn",
       "meaning_th": "ข้าว / อาหาร",
       "meaning_id": "nasi / makanan",
-      "meaning_ja": "ご飯／食事"
+      "meaning_ja": "ご飯／食事",
+      "meaning_pt_br": "arroz / refeição"
     },
     {
       "id": 80,
@@ -1956,7 +2067,8 @@
       "meaning_vi": "người",
       "meaning_th": "คน",
       "meaning_id": "orang",
-      "meaning_ja": "人"
+      "meaning_ja": "人",
+      "meaning_pt_br": "pessoa"
     },
     {
       "id": 81,
@@ -1978,7 +2090,8 @@
       "meaning_vi": "bạn bè",
       "meaning_th": "เพื่อน",
       "meaning_id": "teman",
-      "meaning_ja": "友達"
+      "meaning_ja": "友達",
+      "meaning_pt_br": "amigo/a"
     },
     {
       "id": 82,
@@ -2000,7 +2113,8 @@
       "meaning_vi": "bầu trời",
       "meaning_th": "ท้องฟ้า",
       "meaning_id": "langit",
-      "meaning_ja": "空"
+      "meaning_ja": "空",
+      "meaning_pt_br": "céu"
     },
     {
       "id": 83,
@@ -2023,7 +2137,8 @@
       "meaning_vi": "cảm ơn (thân mật)",
       "meaning_th": "ขอบคุณ (ไม่เป็นทางการ)",
       "meaning_id": "terima kasih (tidak resmi)",
-      "meaning_ja": "ありがとう（くだけた言い方）"
+      "meaning_ja": "ありがとう（くだけた言い方）",
+      "meaning_pt_br": "obrigado/a (informal)"
     },
     {
       "id": 84,
@@ -2047,7 +2162,9 @@
       "message_ja": "素晴らしいです——ハングルの全6ステージを完了しました。これで韓国語のすべての文字を読み書きできます。화이팅!",
       "title_zh_tw": "你已經會讀韓文了！",
       "title_vi": "Bạn đã đọc được tiếng Hàn rồi!",
-      "title_th": "ตอนนี้คุณอ่านภาษาเกาหลีได้แล้ว!"
+      "title_th": "ตอนนี้คุณอ่านภาษาเกาหลีได้แล้ว!",
+      "title_pt_br": "Você já consegue ler coreano!",
+      "message_pt_br": "Trabalho incrível — você completou todos os 6 estágios do Hangul. Agora você consegue ler e escrever todos os caracteres do alfabeto coreano. 화이팅!"
     }
   ]
 }

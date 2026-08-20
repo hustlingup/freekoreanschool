@@ -1,0 +1,3112 @@
+{
+  "lang": "pt-br",
+  "chunk": 1,
+  "count": 345,
+  "units": [
+    {
+      "id": "grammar::steps.70.rules[0]",
+      "path": "grammar/steps[70]/rules[0]",
+      "ko": null,
+      "en": "아이도 알아요 — even children know (emphasis: unexpected inclusion)",
+      "current": "",
+      "ref_th": "아이도 알아요 — แม้แต่เด็กก็รู้ (เน้น: การรวมที่ไม่คาด)",
+      "ref_es": "아이도 알아요 — incluso los niños saben (énfasis: inclusión inesperada)"
+    },
+    {
+      "id": "grammar::steps.70.rules[1]",
+      "path": "grammar/steps[70]/rules[1]",
+      "ko": null,
+      "en": "하나도 없어요 — not even one (emphatic negation: 하나도 + negative)",
+      "current": "",
+      "ref_th": "하나도 없어요 — ไม่มีแม้แต่อันเดียว (ปฏิเสธเน้น: 하나도 + ปฏิเสธ)",
+      "ref_es": "하나도 없어요 — ni uno solo (negación enfática: 하나도 + negación)"
+    },
+    {
+      "id": "grammar::steps.70.rules[2]",
+      "path": "grammar/steps[70]/rules[2]",
+      "ko": null,
+      "en": "먹기도 해요 — sometimes eats / also eats (-기도 하다)",
+      "current": "",
+      "ref_th": "먹기도 해요 — บางครั้งกิน / กินด้วย (-기도 하다)",
+      "ref_es": "먹기도 해요 — a veces come / también come (-기도 하다)"
+    },
+    {
+      "id": "grammar::steps.70.rules[3]",
+      "path": "grammar/steps[70]/rules[3]",
+      "ko": null,
+      "en": "좋기도 하고 나쁘기도 해요 — both good and bad",
+      "current": "",
+      "ref_th": "좋기도 하고 나쁘기도 해요 — ทั้งดีและไม่ดี",
+      "ref_es": "좋기도 하고 나쁘기도 해요 — tanto bueno como malo"
+    },
+    {
+      "id": "grammar::steps.71.meaning",
+      "path": "grammar/steps[71]/meaning",
+      "ko": null,
+      "en": "Korean is both difficult and interesting.",
+      "current": "",
+      "ref_th": "เกาหลีทั้งยากและน่าสนใจ",
+      "ref_es": "El coreano es a la vez difícil e interesante."
+    },
+    {
+      "id": "grammar::steps.72.prompt",
+      "path": "grammar/steps[72]/prompt",
+      "ko": null,
+      "en": "Which sentence means 'Even children know it'?",
+      "current": "",
+      "ref_th": "ประโยคใดหมายถึง แม้แต่เด็กก็รู้?",
+      "ref_es": "¿Qué oración significa \"Incluso los niños lo saben\"?"
+    },
+    {
+      "id": "grammar::steps.73.title",
+      "path": "grammar/steps[73]/title",
+      "ko": "문법 완료!",
+      "en": "Grammar Complete!",
+      "current": "",
+      "ref_th": "เรียนจบไวยากรณ์แล้ว!",
+      "ref_es": "¡Gramática Completada!"
+    },
+    {
+      "id": "grammar::steps.73.message",
+      "path": "grammar/steps[73]/message",
+      "ko": null,
+      "en": "You've mastered all 26 grammar stages — from SOV word order and particles to advanced -도 patterns. Start applying these in real conversations!",
+      "current": "",
+      "ref_th": "คุณเชี่ยวชาญไวยากรณ์ทั้ง 26 ขั้นตอนแล้ว — จากลำดับคำ SOV และคำช่วย ถึงรูปแบบ -도 ขั้นสูง เริ่มนำไปใช้ในการสนทนาจริงได้เลย!",
+      "ref_es": "¡Has dominado las 26 etapas gramaticales — desde el orden SOV y las partículas hasta los patrones avanzados de -도. ¡Empieza a aplicarlos en conversaciones reales!"
+    },
+    {
+      "id": "hangul::stages.0.name",
+      "path": "hangul/stages[0]/name",
+      "ko": "기본 자음",
+      "en": "Consonants",
+      "current": "",
+      "ref_th": "พยัญชนะ",
+      "ref_es": "Consonantes"
+    },
+    {
+      "id": "hangul::stages.1.name",
+      "path": "hangul/stages[1]/name",
+      "ko": "기본 모음",
+      "en": "Vowels",
+      "current": "",
+      "ref_th": "สระ",
+      "ref_es": "Vocales"
+    },
+    {
+      "id": "hangul::stages.2.name",
+      "path": "hangul/stages[2]/name",
+      "ko": "음절",
+      "en": "Syllables",
+      "current": "",
+      "ref_th": "พยางค์",
+      "ref_es": "Sílabas"
+    },
+    {
+      "id": "hangul::stages.3.name",
+      "path": "hangul/stages[3]/name",
+      "ko": "쌍자음 · 거센소리",
+      "en": "Special",
+      "current": "",
+      "ref_th": "พิเศษ",
+      "ref_es": "Especiales"
+    },
+    {
+      "id": "hangul::stages.4.name",
+      "path": "hangul/stages[4]/name",
+      "ko": "복합 모음",
+      "en": "Compound Vowels",
+      "current": "",
+      "ref_th": "สระประสม",
+      "ref_es": "Vocales Compuestas"
+    },
+    {
+      "id": "hangul::stages.5.name",
+      "path": "hangul/stages[5]/name",
+      "ko": "단어 읽기",
+      "en": "Read Words",
+      "current": "",
+      "ref_th": "อ่านคำ",
+      "ref_es": "Leer Palabras"
+    },
+    {
+      "id": "hangul::steps.0.example_meaning",
+      "path": "hangul/steps[0]/example_meaning",
+      "ko": null,
+      "en": "to go",
+      "current": "",
+      "ref_th": "ไป",
+      "ref_es": "ir"
+    },
+    {
+      "id": "hangul::steps.0.hint",
+      "path": "hangul/steps[0]/hint",
+      "ko": null,
+      "en": "Shaped like the back of the throat blocking airflow.",
+      "current": "",
+      "ref_th": "มีรูปร่างเหมือนส่วนหลังของลำคอที่กั้นการไหลของอากาศ",
+      "ref_es": "Tiene forma de la parte posterior de la garganta bloqueando el flujo de aire."
+    },
+    {
+      "id": "hangul::steps.1.example_meaning",
+      "path": "hangul/steps[1]/example_meaning",
+      "ko": null,
+      "en": "I / me",
+      "current": "",
+      "ref_th": "ฉัน / ผม",
+      "ref_es": "yo / mí"
+    },
+    {
+      "id": "hangul::steps.1.hint",
+      "path": "hangul/steps[1]/hint",
+      "ko": null,
+      "en": "Shaped like a tongue tip touching the roof of the mouth.",
+      "current": "",
+      "ref_th": "มีรูปร่างเหมือนปลายลิ้นแตะเพดานปาก",
+      "ref_es": "Tiene forma de la punta de la lengua tocando el paladar."
+    },
+    {
+      "id": "hangul::steps.2.example_meaning",
+      "path": "hangul/steps[2]/example_meaning",
+      "ko": null,
+      "en": "all / every",
+      "current": "",
+      "ref_th": "ทั้งหมด / ทุก",
+      "ref_es": "todo / cada"
+    },
+    {
+      "id": "hangul::steps.2.hint",
+      "path": "hangul/steps[2]/hint",
+      "ko": null,
+      "en": "Like ㄴ with a roof — tongue fully blocks the palate.",
+      "current": "",
+      "ref_th": "เหมือน ㄴ แต่มีหลังคา — ลิ้นกั้นเพดานปากเต็มที่",
+      "ref_es": "Como ㄴ con techo — la lengua bloquea completamente el paladar."
+    },
+    {
+      "id": "hangul::steps.3.example_meaning",
+      "path": "hangul/steps[3]/example_meaning",
+      "ko": null,
+      "en": "reason (prefix)",
+      "current": "",
+      "ref_th": "เหตุผล (คำนำหน้า)",
+      "ref_es": "razón (prefijo)"
+    },
+    {
+      "id": "hangul::steps.3.hint",
+      "path": "hangul/steps[3]/hint",
+      "ko": null,
+      "en": "A flap — between English 'r' and 'l'. Tongue taps the palate.",
+      "current": "",
+      "ref_th": "เป็นเสียงพลิ้ว — อยู่ระหว่าง r และ l ของภาษาอังกฤษ ลิ้นแตะเพดานปาก",
+      "ref_es": "Un golpe de lengua — entre la r de \"pero\" y la l española. La lengua golpea el paladar."
+    },
+    {
+      "id": "hangul::steps.4.example_meaning",
+      "path": "hangul/steps[4]/example_meaning",
+      "ko": null,
+      "en": "heart / mind",
+      "current": "",
+      "ref_th": "หัวใจ / จิตใจ",
+      "ref_es": "corazón / mente"
+    },
+    {
+      "id": "hangul::steps.4.hint",
+      "path": "hangul/steps[4]/hint",
+      "ko": null,
+      "en": "Shaped like closed lips pressing together to make 'm'.",
+      "current": "",
+      "ref_th": "มีรูปร่างเหมือนริมฝีปากที่หุบสนิทเพื่อออกเสียง ม",
+      "ref_es": "Tiene forma de labios cerrados presionándose para hacer el sonido m."
+    },
+    {
+      "id": "hangul::steps.5.example_meaning",
+      "path": "hangul/steps[5]/example_meaning",
+      "ko": null,
+      "en": "rice / meal",
+      "current": "",
+      "ref_th": "ข้าว / อาหาร",
+      "ref_es": "arroz / comida"
+    },
+    {
+      "id": "hangul::steps.5.hint",
+      "path": "hangul/steps[5]/hint",
+      "ko": null,
+      "en": "Shaped like lips opening to release the 'b' or 'p' sound.",
+      "current": "",
+      "ref_th": "มีรูปร่างเหมือนริมฝีปากที่เปิดออกเพื่อปล่อยเสียง บ หรือ ป",
+      "ref_es": "Tiene forma de labios abriéndose para liberar el sonido b o p."
+    },
+    {
+      "id": "hangul::steps.6.example_meaning",
+      "path": "hangul/steps[6]/example_meaning",
+      "ko": null,
+      "en": "person",
+      "current": "",
+      "ref_th": "คน",
+      "ref_es": "persona"
+    },
+    {
+      "id": "hangul::steps.6.hint",
+      "path": "hangul/steps[6]/hint",
+      "ko": null,
+      "en": "Shaped like two teeth — air hisses through for the 's' sound.",
+      "current": "",
+      "ref_th": "มีรูปร่างเหมือนฟันสองซี่ — อากาศผ่านออกมาเป็นเสียง ส",
+      "ref_es": "Tiene forma de dos dientes — el aire silba para producir el sonido s."
+    },
+    {
+      "id": "hangul::steps.7.example_meaning",
+      "path": "hangul/steps[7]/example_meaning",
+      "ko": null,
+      "en": "child",
+      "current": "",
+      "ref_th": "เด็ก",
+      "ref_es": "niño/a"
+    },
+    {
+      "id": "hangul::steps.7.hint",
+      "path": "hangul/steps[7]/hint",
+      "ko": null,
+      "en": "Silent at the start of a syllable. Sounds like 'ng' at the end.",
+      "current": "",
+      "ref_th": "ไม่ออกเสียงเมื่ออยู่ต้นพยางค์ ออกเสียง ง เมื่ออยู่ท้ายพยางค์",
+      "ref_es": "Silencioso al inicio de la sílaba. Suena como ng al final."
+    },
+    {
+      "id": "hangul::steps.8.example_meaning",
+      "path": "hangul/steps[8]/example_meaning",
+      "ko": null,
+      "en": "now",
+      "current": "",
+      "ref_th": "ตอนนี้",
+      "ref_es": "ahora"
+    },
+    {
+      "id": "hangul::steps.8.hint",
+      "path": "hangul/steps[8]/hint",
+      "ko": null,
+      "en": "Like 'j' in 'juice'. Tongue presses behind upper teeth.",
+      "current": "",
+      "ref_th": "เหมือน จ — ลิ้นกดอยู่หลังฟันบน",
+      "ref_es": "Como la j en inglés \"juice\" o ch en \"Chile\". La lengua presiona detrás de los dientes superiores."
+    },
+    {
+      "id": "hangul::steps.9.example_meaning",
+      "path": "hangul/steps[9]/example_meaning",
+      "ko": null,
+      "en": "tea / car",
+      "current": "",
+      "ref_th": "ชา / รถ",
+      "ref_es": "té / coche"
+    },
+    {
+      "id": "hangul::steps.9.hint",
+      "path": "hangul/steps[9]/hint",
+      "ko": null,
+      "en": "Aspirated 'ch' — a puff of air comes out. Like 'ch' in 'cheese'.",
+      "current": "",
+      "ref_th": "เสียง ช พ่นอากาศ — อากาศพ่นออกพร้อมเสียง เหมือน ch ใน cheese",
+      "ref_es": "ch aspirada — sale un soplo de aire. Como ch al inicio de \"Chile\"."
+    },
+    {
+      "id": "hangul::steps.10.example_meaning",
+      "path": "hangul/steps[10]/example_meaning",
+      "ko": null,
+      "en": "coffee",
+      "current": "",
+      "ref_th": "กาแฟ",
+      "ref_es": "café"
+    },
+    {
+      "id": "hangul::steps.10.hint",
+      "path": "hangul/steps[10]/hint",
+      "ko": null,
+      "en": "Aspirated 'k' — strong puff of air. Hold a tissue and it flutters.",
+      "current": "",
+      "ref_th": "เสียง ค พ่นอากาศ — อากาศพ่นออกแรง ถือกระดาษทิชชู่จะสั่นไหว",
+      "ref_es": "k aspirada — soplo de aire fuerte. Sostén un papel y se mueve."
+    },
+    {
+      "id": "hangul::steps.11.example_meaning",
+      "path": "hangul/steps[11]/example_meaning",
+      "ko": null,
+      "en": "to ride",
+      "current": "",
+      "ref_th": "ขี่ / โดยสาร",
+      "ref_es": "montar / subir"
+    },
+    {
+      "id": "hangul::steps.11.hint",
+      "path": "hangul/steps[11]/hint",
+      "ko": null,
+      "en": "Aspirated 't' — like 't' in 'ten' (at word start). Strong burst.",
+      "current": "",
+      "ref_th": "เสียง ท พ่นอากาศ — เหมือน ท ใน ten ตอนต้นคำ ระเบิดแรง",
+      "ref_es": "t aspirada — como la t inicial en inglés \"ten\". Soplo fuerte de aire."
+    },
+    {
+      "id": "hangul::steps.12.example_meaning",
+      "path": "hangul/steps[12]/example_meaning",
+      "ko": null,
+      "en": "green onion",
+      "current": "",
+      "ref_th": "ต้นหอม",
+      "ref_es": "cebolleta"
+    },
+    {
+      "id": "hangul::steps.12.hint",
+      "path": "hangul/steps[12]/hint",
+      "ko": null,
+      "en": "Aspirated 'p' — like 'p' in 'pot'. Lips pop apart with air.",
+      "current": "",
+      "ref_th": "เสียง พ พ่นอากาศ — เหมือน ป ใน pot ริมฝีปากเปิดออกพร้อมอากาศ",
+      "ref_es": "p aspirada — como la p en \"pan\". Los labios se abren con aire."
+    },
+    {
+      "id": "hangul::steps.13.example_meaning",
+      "path": "hangul/steps[13]/example_meaning",
+      "ko": null,
+      "en": "sky",
+      "current": "",
+      "ref_th": "ท้องฟ้า",
+      "ref_es": "cielo"
+    },
+    {
+      "id": "hangul::steps.13.hint",
+      "path": "hangul/steps[13]/hint",
+      "ko": null,
+      "en": "A breathy 'h' — like exhaling warmth onto your hand.",
+      "current": "",
+      "ref_th": "เสียง ห ลมหายใจ — เหมือนเป่าลมอุ่นใส่มือ",
+      "ref_es": "Una h suave y aspirada — como exhalar aire caliente sobre la mano."
+    },
+    {
+      "id": "hangul::steps.14.prompt",
+      "path": "hangul/steps[14]/prompt",
+      "ko": null,
+      "en": "ㄱ romanizes as…",
+      "current": "",
+      "ref_th": "ㄱ ถอดเสียงเป็น…",
+      "ref_es": "ㄱ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.15.prompt",
+      "path": "hangul/steps[15]/prompt",
+      "ko": null,
+      "en": "Which consonant is SILENT at the start of a syllable?",
+      "current": "",
+      "ref_th": "พยัญชนะใดไม่ออกเสียงเมื่ออยู่ต้นพยางค์?",
+      "ref_es": "¿Qué consonante es SILENCIOSA al inicio de una sílaba?"
+    },
+    {
+      "id": "hangul::steps.16.prompt",
+      "path": "hangul/steps[16]/prompt",
+      "ko": null,
+      "en": "ㄴ romanizes as…",
+      "current": "",
+      "ref_th": "ㄴ ถอดเสียงเป็น…",
+      "ref_es": "ㄴ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.17.prompt",
+      "path": "hangul/steps[17]/prompt",
+      "ko": null,
+      "en": "Which consonant sounds like 'j' in 'juice'?",
+      "current": "",
+      "ref_th": "พยัญชนะใดออกเสียงเหมือน จ ใน juice?",
+      "ref_es": "¿Qué consonante suena como la j en inglés \"juice\"?"
+    },
+    {
+      "id": "hangul::steps.18.prompt",
+      "path": "hangul/steps[18]/prompt",
+      "ko": null,
+      "en": "ㅁ romanizes as…",
+      "current": "",
+      "ref_th": "ㅁ ถอดเสียงเป็น…",
+      "ref_es": "ㅁ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.19.prompt",
+      "path": "hangul/steps[19]/prompt",
+      "ko": null,
+      "en": "ㄹ romanizes as…",
+      "current": "",
+      "ref_th": "ㄹ ถอดเสียงเป็น…",
+      "ref_es": "ㄹ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.20.prompt",
+      "path": "hangul/steps[20]/prompt",
+      "ko": null,
+      "en": "밥 (rice) starts with which consonant?",
+      "current": "",
+      "ref_th": "밥 (ข้าว) เริ่มต้นด้วยพยัญชนะใด?",
+      "ref_es": "¿Con qué consonante empieza 밥 (arroz)?"
+    },
+    {
+      "id": "hangul::steps.21.hint",
+      "path": "hangul/steps[21]/hint",
+      "ko": null,
+      "en": "Open your mouth wide, like saying 'ah' at the doctor.",
+      "current": "",
+      "ref_th": "อ้าปากกว้าง เหมือนพูด อา ที่ห้องหมอ",
+      "ref_es": "Abre la boca bien, como decir \"ah\" en el médico."
+    },
+    {
+      "id": "hangul::steps.22.hint",
+      "path": "hangul/steps[22]/hint",
+      "ko": null,
+      "en": "Like 'ya' in 'yard'. The extra stroke means a 'y' is added.",
+      "current": "",
+      "ref_th": "เหมือน ยา — เส้นพิเศษหมายถึงเพิ่ม ย ไว้หน้า",
+      "ref_es": "Como ya en \"yarda\". El trazo extra indica la adición de y."
+    },
+    {
+      "id": "hangul::steps.23.hint",
+      "path": "hangul/steps[23]/hint",
+      "ko": null,
+      "en": "Similar to 'uh' or 'o' in 'the other'. Lips slightly rounded.",
+      "current": "",
+      "ref_th": "คล้าย เออ หรือ อ ใน the other ริมฝีปากโค้งเล็กน้อย",
+      "ref_es": "Similar a la e de \"mesa\" pero más posterior. Labios ligeramente redondeados."
+    },
+    {
+      "id": "hangul::steps.24.hint",
+      "path": "hangul/steps[24]/hint",
+      "ko": null,
+      "en": "Like 'yuh' with rounded lips. Two strokes = 'y' prefix.",
+      "current": "",
+      "ref_th": "เหมือน เยอ พร้อมริมฝีปากโค้ง สองเส้น = เพิ่ม ย",
+      "ref_es": "Como yeo con labios redondeados. Dos trazos = prefijo y."
+    },
+    {
+      "id": "hangul::steps.25.hint",
+      "path": "hangul/steps[25]/hint",
+      "ko": null,
+      "en": "Like 'o' in 'more'. Round your lips as if blowing a candle.",
+      "current": "",
+      "ref_th": "เหมือน โอ ใน more ห่อริมฝีปากเหมือนเป่าเทียน",
+      "ref_es": "Como la o de \"sol\". Redondea los labios como para apagar una vela."
+    },
+    {
+      "id": "hangul::steps.26.hint",
+      "path": "hangul/steps[26]/hint",
+      "ko": null,
+      "en": "Like 'yo!' — two strokes add the 'y'. Used a lot in speech.",
+      "current": "",
+      "ref_th": "เหมือน โย! — สองเส้นเพิ่ม ย ใช้มากในการพูด",
+      "ref_es": "Como ¡yo! — dos trazos añaden la y. Muy usado en el habla."
+    },
+    {
+      "id": "hangul::steps.27.hint",
+      "path": "hangul/steps[27]/hint",
+      "ko": null,
+      "en": "Like 'oo' in 'boot'. The line points DOWN — mouth drops.",
+      "current": "",
+      "ref_th": "เหมือน อู ใน boot เส้นชี้ลง — ปากเปิดลง",
+      "ref_es": "Como la u de \"luna\". La línea apunta HACIA ABAJO — la boca baja."
+    },
+    {
+      "id": "hangul::steps.28.hint",
+      "path": "hangul/steps[28]/hint",
+      "ko": null,
+      "en": "Like 'you'. Two downward strokes signal the 'y' prefix.",
+      "current": "",
+      "ref_th": "เหมือน ยู สองเส้นชี้ลงบอกถึง ย นำหน้า",
+      "ref_es": "Como yu. Dos trazos hacia abajo indican el prefijo y."
+    },
+    {
+      "id": "hangul::steps.29.hint",
+      "path": "hangul/steps[29]/hint",
+      "ko": null,
+      "en": "Like the 'e' sound when you're unsatisfied: 'euugh'. Flat lips.",
+      "current": "",
+      "ref_th": "เหมือนเสียง เออ ตอนไม่พอใจ: เออ~ ริมฝีปากแบน",
+      "ref_es": "Como la e cuando no estás contento: \"eugh\". Labios planos, sin redondear."
+    },
+    {
+      "id": "hangul::steps.30.hint",
+      "path": "hangul/steps[30]/hint",
+      "ko": null,
+      "en": "Like 'ee' in 'bee'. A simple vertical stroke — pure high front vowel.",
+      "current": "",
+      "ref_th": "เหมือน อี ใน bee เส้นตั้งง่ายๆ — สระเสียงสูงหน้าล้วน",
+      "ref_es": "Como la i de \"sí\". Un simple trazo vertical — vocal frontal alta pura."
+    },
+    {
+      "id": "hangul::steps.31.prompt",
+      "path": "hangul/steps[31]/prompt",
+      "ko": null,
+      "en": "Which vowel sounds like 'a' (as in 'father')?",
+      "current": "",
+      "ref_th": "สระใดออกเสียงเหมือน อา (ดังใน father)?",
+      "ref_es": "¿Qué vocal suena como la a en \"padre\"?"
+    },
+    {
+      "id": "hangul::steps.32.prompt",
+      "path": "hangul/steps[32]/prompt",
+      "ko": null,
+      "en": "Which vowel sounds like 'o' (as in 'more')?",
+      "current": "",
+      "ref_th": "สระใดออกเสียงเหมือน โอ (ดังใน more)?",
+      "ref_es": "¿Qué vocal suena como la o en \"sol\"?"
+    },
+    {
+      "id": "hangul::steps.33.prompt",
+      "path": "hangul/steps[33]/prompt",
+      "ko": null,
+      "en": "Which vowel sounds like 'ee' (as in 'bee')?",
+      "current": "",
+      "ref_th": "สระใดออกเสียงเหมือน อี (ดังใน bee)?",
+      "ref_es": "¿Qué vocal suena como la i en \"sí\"?"
+    },
+    {
+      "id": "hangul::steps.34.prompt",
+      "path": "hangul/steps[34]/prompt",
+      "ko": null,
+      "en": "ㅠ romanizes as…",
+      "current": "",
+      "ref_th": "ㅠ ถอดเสียงเป็น…",
+      "ref_es": "ㅠ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.35.prompt",
+      "path": "hangul/steps[35]/prompt",
+      "ko": null,
+      "en": "ㅡ sounds like…",
+      "current": "",
+      "ref_th": "ㅡ ออกเสียงเหมือน…",
+      "ref_es": "ㅡ suena como…"
+    },
+    {
+      "id": "hangul::steps.36.meaning",
+      "path": "hangul/steps[36]/meaning",
+      "ko": null,
+      "en": "ba — as in 바나나 (banana)",
+      "current": "",
+      "ref_th": "บา — ดังใน 바나나 (กล้วย)",
+      "ref_es": "ba — como en 바나나 (banana)"
+    },
+    {
+      "id": "hangul::steps.37.meaning",
+      "path": "hangul/steps[37]/meaning",
+      "ko": null,
+      "en": "na — as in 나 (me)",
+      "current": "",
+      "ref_th": "นา — ดังใน 나 (ฉัน)",
+      "ref_es": "na — como en 나 (yo)"
+    },
+    {
+      "id": "hangul::steps.38.meaning",
+      "path": "hangul/steps[38]/meaning",
+      "ko": null,
+      "en": "sa — as in 사랑 (love)",
+      "current": "",
+      "ref_th": "ซา — ดังใน 사랑 (ความรัก)",
+      "ref_es": "sa — como en 사랑 (amor)"
+    },
+    {
+      "id": "hangul::steps.39.meaning",
+      "path": "hangul/steps[39]/meaning",
+      "ko": null,
+      "en": "go — as in 고마워 (thank you)",
+      "current": "",
+      "ref_th": "โก — ดังใน 고마워 (ขอบคุณ)",
+      "ref_es": "go — como en 고마워 (gracias)"
+    },
+    {
+      "id": "hangul::steps.40.meaning",
+      "path": "hangul/steps[40]/meaning",
+      "ko": null,
+      "en": "ha — as in 하늘 (sky)",
+      "current": "",
+      "ref_th": "ฮา — ดังใน 하늘 (ท้องฟ้า)",
+      "ref_es": "ha — como en 하늘 (cielo)"
+    },
+    {
+      "id": "hangul::steps.41.meaning",
+      "path": "hangul/steps[41]/meaning",
+      "ko": null,
+      "en": "mu — as in 무엇 (what)",
+      "current": "",
+      "ref_th": "มู — ดังใน 무엇 (อะไร)",
+      "ref_es": "mu — como en 무엇 (qué)"
+    },
+    {
+      "id": "hangul::steps.42.hint",
+      "path": "hangul/steps[42]/hint",
+      "ko": null,
+      "en": "Tense 'k' — hold your breath then release. No air puff.",
+      "current": "",
+      "ref_th": "เสียง ก เกร็ง — กลั้นหายใจแล้วปล่อย ไม่มีอากาศพ่น",
+      "ref_es": "k tensa — aguanta la respiración y suéltala. Sin soplo de aire."
+    },
+    {
+      "id": "hangul::steps.43.hint",
+      "path": "hangul/steps[43]/hint",
+      "ko": null,
+      "en": "Tense 't' — throat tightens before releasing. Distinct from ㄷ and ㅌ.",
+      "current": "",
+      "ref_th": "เสียง ด เกร็ง — ลำคอเกร็งก่อนปล่อย ต่างจาก ㄷ และ ㅌ",
+      "ref_es": "t tensa — la garganta se tensa antes de soltar. Distinta de ㄷ y ㅌ."
+    },
+    {
+      "id": "hangul::steps.44.hint",
+      "path": "hangul/steps[44]/hint",
+      "ko": null,
+      "en": "Tense 'p' — lips press hard before popping open. No air escapes.",
+      "current": "",
+      "ref_th": "เสียง บ เกร็ง — ริมฝีปากกดแน่นก่อนเปิดออก ไม่มีอากาศรั่ว",
+      "ref_es": "p tensa — los labios presionan fuerte antes de abrirse. Sin escape de aire."
+    },
+    {
+      "id": "hangul::steps.45.hint",
+      "path": "hangul/steps[45]/hint",
+      "ko": null,
+      "en": "Tense 's' — a sharp, tight hiss. Used in 있다 (to exist / to have).",
+      "current": "",
+      "ref_th": "เสียง ส เกร็ง — เสียงแหลมและตึง ใช้ใน 있다 (มีอยู่ / มี)",
+      "ref_es": "s tensa — un siseo agudo y tenso. Se usa en 있다 (existir / tener)."
+    },
+    {
+      "id": "hangul::steps.46.hint",
+      "path": "hangul/steps[46]/hint",
+      "ko": null,
+      "en": "Tense 'j' — sharper and more abrupt than ㅈ. No air burst.",
+      "current": "",
+      "ref_th": "เสียง จ เกร็ง — แหลมและฉับกว่า ㅈ ไม่มีอากาศพ่น",
+      "ref_es": "j tensa — más aguda y brusca que ㅈ. Sin explosión de aire."
+    },
+    {
+      "id": "hangul::steps.47.hint",
+      "path": "hangul/steps[47]/hint",
+      "ko": null,
+      "en": "Aspirated — a strong burst of air follows the consonant.",
+      "current": "",
+      "ref_th": "พ่นอากาศ — อากาศพ่นออกแรงตามหลังพยัญชนะ",
+      "ref_es": "Aspirada — un fuerte soplo de aire sigue a la consonante."
+    },
+    {
+      "id": "hangul::steps.48.hint",
+      "path": "hangul/steps[48]/hint",
+      "ko": null,
+      "en": "Aspirated — tongue snaps off the palate with a puff of air.",
+      "current": "",
+      "ref_th": "พ่นอากาศ — ลิ้นดีดออกจากเพดานพร้อมอากาศพ่น",
+      "ref_es": "Aspirada — la lengua se separa del paladar con un soplo de aire."
+    },
+    {
+      "id": "hangul::steps.49.hint",
+      "path": "hangul/steps[49]/hint",
+      "ko": null,
+      "en": "Aspirated — lips burst open with a pop of air. Like 'pot'.",
+      "current": "",
+      "ref_th": "พ่นอากาศ — ริมฝีปากระเบิดออกพร้อมเสียงอากาศ เหมือน pot",
+      "ref_es": "Aspirada — los labios estallan abriéndose con un soplo de aire."
+    },
+    {
+      "id": "hangul::steps.50.hint",
+      "path": "hangul/steps[50]/hint",
+      "ko": null,
+      "en": "Aspirated 'ch' — like 'cheese' at the start. Air comes out.",
+      "current": "",
+      "ref_th": "เสียง ช พ่นอากาศ — เหมือน cheese ตอนต้น อากาศพ่นออก",
+      "ref_es": "ch aspirada — como al inicio de \"Chile\". Sale aire."
+    },
+    {
+      "id": "hangul::steps.51.hint",
+      "path": "hangul/steps[51]/hint",
+      "ko": null,
+      "en": "A breathy aspirated consonant. The most air of any Korean consonant.",
+      "current": "",
+      "ref_th": "พยัญชนะลมหายใจพ่น อากาศออกมากที่สุดของพยัญชนะเกาหลี",
+      "ref_es": "Consonante muy aspirada. La que más aire produce en coreano."
+    },
+    {
+      "id": "hangul::steps.52.prompt",
+      "path": "hangul/steps[52]/prompt",
+      "ko": null,
+      "en": "ㄲ romanizes as…",
+      "current": "",
+      "ref_th": "ㄲ ถอดเสียงเป็น…",
+      "ref_es": "ㄲ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.53.prompt",
+      "path": "hangul/steps[53]/prompt",
+      "ko": null,
+      "en": "Which is a TENSE consonant (쌍자음)?",
+      "current": "",
+      "ref_th": "พยัญชนะใดเป็นเสียงเกร็ง (쌍자음)?",
+      "ref_es": "¿Cuál es una consonante TENSA (쌍자음)?"
+    },
+    {
+      "id": "hangul::steps.54.prompt",
+      "path": "hangul/steps[54]/prompt",
+      "ko": null,
+      "en": "ㅃ romanizes as…",
+      "current": "",
+      "ref_th": "ㅃ ถอดเสียงเป็น…",
+      "ref_es": "ㅃ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.55.prompt",
+      "path": "hangul/steps[55]/prompt",
+      "ko": null,
+      "en": "Aspirated consonants are produced with…",
+      "current": "",
+      "ref_th": "พยัญชนะพ่นอากาศออกเสียงโดย…",
+      "ref_es": "Las consonantes aspiradas se producen con…"
+    },
+    {
+      "id": "hangul::steps.55.choices[0]",
+      "path": "hangul/steps[55]/choices[0]",
+      "ko": null,
+      "en": "No air",
+      "current": "",
+      "ref_th": "ไม่มีอากาศ",
+      "ref_es": "Sin aire"
+    },
+    {
+      "id": "hangul::steps.55.choices[1]",
+      "path": "hangul/steps[55]/choices[1]",
+      "ko": null,
+      "en": "A strong puff of air",
+      "current": "",
+      "ref_th": "อากาศพ่นออกแรง",
+      "ref_es": "Un fuerte soplo de aire"
+    },
+    {
+      "id": "hangul::steps.55.choices[2]",
+      "path": "hangul/steps[55]/choices[2]",
+      "ko": null,
+      "en": "A tense throat",
+      "current": "",
+      "ref_th": "ลำคอเกร็ง",
+      "ref_es": "Una garganta tensa"
+    },
+    {
+      "id": "hangul::steps.55.choices[3]",
+      "path": "hangul/steps[55]/choices[3]",
+      "ko": null,
+      "en": "A nasal sound",
+      "current": "",
+      "ref_th": "เสียงนาสิก",
+      "ref_es": "Un sonido nasal"
+    },
+    {
+      "id": "hangul::steps.56.prompt",
+      "path": "hangul/steps[56]/prompt",
+      "ko": null,
+      "en": "ㅉ romanizes as…",
+      "current": "",
+      "ref_th": "ㅉ ถอดเสียงเป็น…",
+      "ref_es": "ㅉ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.57.hint",
+      "path": "hangul/steps[57]/hint",
+      "ko": null,
+      "en": "ㅏ + ㅣ combined. Like 'e' in 'bed'. Modern Korean = same as 에.",
+      "current": "",
+      "ref_th": "ㅏ + ㅣ รวมกัน เหมือน เ- ใน bed เกาหลีสมัยใหม่ = เสียงเดียวกับ 에",
+      "ref_es": "ㅏ + ㅣ combinadas. Como la e de \"mesa\". Hoy igual que 에."
+    },
+    {
+      "id": "hangul::steps.58.hint",
+      "path": "hangul/steps[58]/hint",
+      "ko": null,
+      "en": "ㅓ + ㅣ combined. Like 'e' in 'bed'. Sounds the same as 애 today.",
+      "current": "",
+      "ref_th": "ㅓ + ㅣ รวมกัน เหมือน เ- ใน bed ปัจจุบันออกเสียงเหมือน 애",
+      "ref_es": "ㅓ + ㅣ combinadas. Como la e de \"mesa\". Suena igual que 애 hoy."
+    },
+    {
+      "id": "hangul::steps.59.hint",
+      "path": "hangul/steps[59]/hint",
+      "ko": null,
+      "en": "ㅑ + ㅣ. Rare — appears in 얘 (this child, colloquial).",
+      "current": "",
+      "ref_th": "ㅑ + ㅣ หายาก — พบใน 얘 (เด็กคนนี้ ภาษาพูด)",
+      "ref_es": "ㅑ + ㅣ. Rara — aparece en 얘 (este niño/a, coloquial)."
+    },
+    {
+      "id": "hangul::steps.60.hint",
+      "path": "hangul/steps[60]/hint",
+      "ko": null,
+      "en": "ㅕ + ㅣ. Like 'ye' in 'yes'. 예쁘다 = beautiful.",
+      "current": "",
+      "ref_th": "ㅕ + ㅣ เหมือน เย ใน yes 예쁘다 = สวยงาม",
+      "ref_es": "ㅕ + ㅣ. Como ye en \"yema\". 예쁘다 = bonito/a."
+    },
+    {
+      "id": "hangul::steps.61.hint",
+      "path": "hangul/steps[61]/hint",
+      "ko": null,
+      "en": "ㅗ + ㅏ. Like 'wa' in 'water'. 와! = Wow!",
+      "current": "",
+      "ref_th": "ㅗ + ㅏ เหมือน วา ใน water 와! = ว้าว!",
+      "ref_es": "ㅗ + ㅏ. Como wa en \"agua\". ¡와! = ¡Guau!"
+    },
+    {
+      "id": "hangul::steps.62.hint",
+      "path": "hangul/steps[62]/hint",
+      "ko": null,
+      "en": "ㅗ + ㅐ. Sounds like 'wae'. 왜 = why.",
+      "current": "",
+      "ref_th": "ㅗ + ㅐ ออกเสียง แว 왜 = ทำไม",
+      "ref_es": "ㅗ + ㅐ. Suena como \"wae\". 왜 = por qué."
+    },
+    {
+      "id": "hangul::steps.63.hint",
+      "path": "hangul/steps[63]/hint",
+      "ko": null,
+      "en": "ㅗ + ㅣ. Like 'we'. 외국인 = foreigner.",
+      "current": "",
+      "ref_th": "ㅗ + ㅣ เหมือน เว 외국인 = ชาวต่างชาติ",
+      "ref_es": "ㅗ + ㅣ. Como \"we\". 외국인 = extranjero."
+    },
+    {
+      "id": "hangul::steps.64.hint",
+      "path": "hangul/steps[64]/hint",
+      "ko": null,
+      "en": "ㅜ + ㅓ. Like 'wuh'. 뭐 = what (colloquial).",
+      "current": "",
+      "ref_th": "ㅜ + ㅓ เหมือน เวอะ 뭐 = อะไร (ภาษาพูด)",
+      "ref_es": "ㅜ + ㅓ. Como \"wo\". 뭐 = qué (coloquial)."
+    },
+    {
+      "id": "hangul::steps.65.hint",
+      "path": "hangul/steps[65]/hint",
+      "ko": null,
+      "en": "ㅜ + ㅔ. Like 'we'. Very rare in Korean.",
+      "current": "",
+      "ref_th": "ㅜ + ㅔ เหมือน เว หายากมากในภาษาเกาหลี",
+      "ref_es": "ㅜ + ㅔ. Como \"we\". Muy rara en coreano."
+    },
+    {
+      "id": "hangul::steps.66.hint",
+      "path": "hangul/steps[66]/hint",
+      "ko": null,
+      "en": "ㅜ + ㅣ. Like 'wee'. 위 = above / stomach.",
+      "current": "",
+      "ref_th": "ㅜ + ㅣ เหมือน วี 위 = ข้างบน / กระเพาะ",
+      "ref_es": "ㅜ + ㅣ. Como \"wi\". 위 = arriba / estómago."
+    },
+    {
+      "id": "hangul::steps.67.hint",
+      "path": "hangul/steps[67]/hint",
+      "ko": null,
+      "en": "ㅡ + ㅣ. A unique glide. 의사 = doctor. Used as possessive particle 의.",
+      "current": "",
+      "ref_th": "ㅡ + ㅣ เสียงเลื่อนเฉพาะ 의사 = หมอ ใช้เป็นคำช่วยแสดงความเป็นเจ้าของ 의",
+      "ref_es": "ㅡ + ㅣ. Un diptongo único. 의사 = médico. También es la partícula posesiva 의."
+    },
+    {
+      "id": "hangul::steps.68.prompt",
+      "path": "hangul/steps[68]/prompt",
+      "ko": null,
+      "en": "ㅘ romanizes as…",
+      "current": "",
+      "ref_th": "ㅘ ถอดเสียงเป็น…",
+      "ref_es": "ㅘ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.69.prompt",
+      "path": "hangul/steps[69]/prompt",
+      "ko": null,
+      "en": "왜 means…",
+      "current": "",
+      "ref_th": "왜 หมายถึง…",
+      "ref_es": "왜 significa…"
+    },
+    {
+      "id": "hangul::steps.69.choices[0]",
+      "path": "hangul/steps[69]/choices[0]",
+      "ko": null,
+      "en": "what",
+      "current": "",
+      "ref_th": "อะไร",
+      "ref_es": "qué"
+    },
+    {
+      "id": "hangul::steps.69.choices[1]",
+      "path": "hangul/steps[69]/choices[1]",
+      "ko": null,
+      "en": "who",
+      "current": "",
+      "ref_th": "ใคร",
+      "ref_es": "quién"
+    },
+    {
+      "id": "hangul::steps.69.choices[2]",
+      "path": "hangul/steps[69]/choices[2]",
+      "ko": null,
+      "en": "why",
+      "current": "",
+      "ref_th": "ทำไม",
+      "ref_es": "por qué"
+    },
+    {
+      "id": "hangul::steps.69.choices[3]",
+      "path": "hangul/steps[69]/choices[3]",
+      "ko": null,
+      "en": "where",
+      "current": "",
+      "ref_th": "ที่ไหน",
+      "ref_es": "dónde"
+    },
+    {
+      "id": "hangul::steps.70.prompt",
+      "path": "hangul/steps[70]/prompt",
+      "ko": null,
+      "en": "ㅢ romanizes as…",
+      "current": "",
+      "ref_th": "ㅢ ถอดเสียงเป็น…",
+      "ref_es": "ㅢ se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.71.prompt",
+      "path": "hangul/steps[71]/prompt",
+      "ko": null,
+      "en": "Which compound vowel uses ㅗ + ㅣ?",
+      "current": "",
+      "ref_th": "สระประสมใดใช้ ㅗ + ㅣ?",
+      "ref_es": "¿Qué vocal compuesta usa ㅗ + ㅣ?"
+    },
+    {
+      "id": "hangul::steps.72.prompt",
+      "path": "hangul/steps[72]/prompt",
+      "ko": null,
+      "en": "예 romanizes as…",
+      "current": "",
+      "ref_th": "예 ถอดเสียงเป็น…",
+      "ref_es": "예 se romaniza como…"
+    },
+    {
+      "id": "hangul::steps.73.meaning",
+      "path": "hangul/steps[73]/meaning",
+      "ko": null,
+      "en": "hello / goodbye (informal)",
+      "current": "",
+      "ref_th": "สวัสดี / ลาก่อน (ไม่เป็นทางการ)",
+      "ref_es": "hola / adiós (informal)"
+    },
+    {
+      "id": "hangul::steps.74.meaning",
+      "path": "hangul/steps[74]/meaning",
+      "ko": null,
+      "en": "school",
+      "current": "",
+      "ref_th": "โรงเรียน",
+      "ref_es": "colegio / escuela"
+    },
+    {
+      "id": "hangul::steps.75.meaning",
+      "path": "hangul/steps[75]/meaning",
+      "ko": null,
+      "en": "Korea",
+      "current": "",
+      "ref_th": "เกาหลี",
+      "ref_es": "Corea"
+    },
+    {
+      "id": "hangul::steps.76.meaning",
+      "path": "hangul/steps[76]/meaning",
+      "ko": null,
+      "en": "love",
+      "current": "",
+      "ref_th": "ความรัก",
+      "ref_es": "amor"
+    },
+    {
+      "id": "hangul::steps.77.meaning",
+      "path": "hangul/steps[77]/meaning",
+      "ko": null,
+      "en": "water",
+      "current": "",
+      "ref_th": "น้ำ",
+      "ref_es": "agua"
+    },
+    {
+      "id": "hangul::steps.78.meaning",
+      "path": "hangul/steps[78]/meaning",
+      "ko": null,
+      "en": "rice / meal",
+      "current": "",
+      "ref_th": "ข้าว / อาหาร",
+      "ref_es": "arroz / comida"
+    },
+    {
+      "id": "hangul::steps.79.meaning",
+      "path": "hangul/steps[79]/meaning",
+      "ko": null,
+      "en": "person",
+      "current": "",
+      "ref_th": "คน",
+      "ref_es": "persona"
+    },
+    {
+      "id": "hangul::steps.80.meaning",
+      "path": "hangul/steps[80]/meaning",
+      "ko": null,
+      "en": "friend",
+      "current": "",
+      "ref_th": "เพื่อน",
+      "ref_es": "amigo/a"
+    },
+    {
+      "id": "hangul::steps.81.meaning",
+      "path": "hangul/steps[81]/meaning",
+      "ko": null,
+      "en": "sky",
+      "current": "",
+      "ref_th": "ท้องฟ้า",
+      "ref_es": "cielo"
+    },
+    {
+      "id": "hangul::steps.82.meaning",
+      "path": "hangul/steps[82]/meaning",
+      "ko": null,
+      "en": "thank you (informal)",
+      "current": "",
+      "ref_th": "ขอบคุณ (ไม่เป็นทางการ)",
+      "ref_es": "gracias (informal)"
+    },
+    {
+      "id": "hangul::steps.83.title",
+      "path": "hangul/steps[83]/title",
+      "ko": "이제 한글을 읽을 수 있어요!",
+      "en": "You can read Korean!",
+      "current": "",
+      "ref_th": "ตอนนี้คุณอ่านภาษาเกาหลีได้แล้ว!",
+      "ref_es": "¡Puedes leer coreano!"
+    },
+    {
+      "id": "hangul::steps.83.message",
+      "path": "hangul/steps[83]/message",
+      "ko": null,
+      "en": "Incredible work — you've completed all 6 stages of Hangul. You can now read and write every character in the Korean alphabet. 화이팅!",
+      "current": "",
+      "ref_th": "ยอดเยี่ยมมาก — คุณเรียนจบทั้ง 6 ขั้นตอนของฮันกึลแล้ว คุณสามารถอ่านและเขียนตัวอักษรทุกตัวในตัวอักษรเกาหลีได้แล้ว 화이팅!",
+      "ref_es": "¡Increíble! Has completado las 6 etapas del hangul. Ahora puedes leer y escribir todos los caracteres del alfabeto coreano. ¡화이팅!"
+    },
+    {
+      "id": "letter-writing::stages.0.name",
+      "path": "letter-writing/stages[0]/name",
+      "ko": "획순 원리",
+      "en": "How Strokes Work",
+      "current": "",
+      "ref_th": "ลำดับขีดทำงานอย่างไร",
+      "ref_es": "Cómo funcionan los trazos"
+    },
+    {
+      "id": "letter-writing::stages.1.name",
+      "path": "letter-writing/stages[1]/name",
+      "ko": "자음 쓰기",
+      "en": "Consonants",
+      "current": "",
+      "ref_th": "พยัญชนะ",
+      "ref_es": "Consonantes"
+    },
+    {
+      "id": "letter-writing::stages.2.name",
+      "path": "letter-writing/stages[2]/name",
+      "ko": "모음 쓰기",
+      "en": "Vowels",
+      "current": "",
+      "ref_th": "สระ",
+      "ref_es": "Vocales"
+    },
+    {
+      "id": "letter-writing::stages.3.name",
+      "path": "letter-writing/stages[3]/name",
+      "ko": "음절 쓰기",
+      "en": "Syllable Blocks",
+      "current": "",
+      "ref_th": "บล็อกพยางค์",
+      "ref_es": "Bloques silábicos"
+    },
+    {
+      "id": "letter-writing::stages.4.name",
+      "path": "letter-writing/stages[4]/name",
+      "ko": "도전",
+      "en": "Challenge",
+      "current": "",
+      "ref_th": "ความท้าทาย",
+      "ref_es": "Desafío"
+    },
+    {
+      "id": "letter-writing::steps.0.title",
+      "path": "letter-writing/steps[0]/title",
+      "ko": "획순 세 가지 규칙",
+      "en": "The Three Rules of Stroke Order",
+      "current": "",
+      "ref_th": "สามกฎของลำดับขีด",
+      "ref_es": "Las tres reglas del orden de trazos"
+    },
+    {
+      "id": "letter-writing::steps.0.body",
+      "path": "letter-writing/steps[0]/body",
+      "ko": null,
+      "en": "Every hangul letter is built from a handful of simple strokes, and those strokes always come in the same order. Three rules cover all of them.",
+      "current": "",
+      "ref_th": "อักษรฮันกึลทุกตัวประกอบขึ้นจากเส้นง่ายๆ ไม่กี่เส้น และเส้นเหล่านั้นเขียนตามลำดับเดิมเสมอ กฎสามข้อครอบคลุมทั้งหมด",
+      "ref_es": "Cada letra del hangul se compone de unos pocos trazos simples, y esos trazos siempre siguen el mismo orden. Tres reglas los cubren todos."
+    },
+    {
+      "id": "letter-writing::steps.0.rules[0]",
+      "path": "letter-writing/steps[0]/rules[0]",
+      "ko": null,
+      "en": "Top before bottom — the highest stroke is written first.",
+      "current": "",
+      "ref_th": "บนก่อนล่าง — เส้นที่อยู่สูงสุดเขียนก่อน",
+      "ref_es": "Arriba antes que abajo: el trazo más alto se escribe primero."
+    },
+    {
+      "id": "letter-writing::steps.0.rules[1]",
+      "path": "letter-writing/steps[0]/rules[1]",
+      "ko": null,
+      "en": "Left before right — when strokes stand side by side, start with the one on the left.",
+      "current": "",
+      "ref_th": "ซ้ายก่อนขวา — เมื่อเส้นอยู่เคียงข้างกัน ให้เริ่มจากเส้นด้านซ้าย",
+      "ref_es": "Izquierda antes que derecha: cuando los trazos están uno al lado del otro, empieza por el de la izquierda."
+    },
+    {
+      "id": "letter-writing::steps.0.rules[2]",
+      "path": "letter-writing/steps[0]/rules[2]",
+      "ko": null,
+      "en": "Horizontal before an intersecting vertical — draw the crossing bar first, then the line that cuts through it.",
+      "current": "",
+      "ref_th": "เส้นนอนก่อนเส้นตั้งที่ตัดผ่าน — ลากเส้นขวางก่อน แล้วจึงลากเส้นที่ผ่ากลาง",
+      "ref_es": "La horizontal antes que la vertical que la cruza: dibuja primero la barra que cruza y luego la línea que la atraviesa."
+    },
+    {
+      "id": "letter-writing::steps.0.tip.label",
+      "path": "letter-writing/steps[0]/tip.label",
+      "ko": null,
+      "en": "Why it matters",
+      "current": "",
+      "ref_th": "ทำไมจึงสำคัญ",
+      "ref_es": "Por qué importa"
+    },
+    {
+      "id": "letter-writing::steps.0.tip.text",
+      "path": "letter-writing/steps[0]/tip.text",
+      "ko": null,
+      "en": "Every hangul letter follows these three rules. Learn the 24 basic shapes and you can write all 11,172 Korean syllables.",
+      "current": "",
+      "ref_th": "อักษรฮันกึลทุกตัวเป็นไปตามกฎสามข้อนี้ เรียนรู้รูปพื้นฐาน 24 แบบ แล้วคุณก็เขียนพยางค์เกาหลีได้ครบทั้ง 11,172 พยางค์",
+      "ref_es": "Cada letra del hangul sigue estas tres reglas. Aprende las 24 formas básicas y podrás escribir las 11.172 sílabas coreanas."
+    },
+    {
+      "id": "letter-writing::steps.1.title",
+      "path": "letter-writing/steps[1]/title",
+      "ko": "글자마다 정해진 획수",
+      "en": "One Letter, One Rhythm",
+      "current": "",
+      "ref_th": "หนึ่งตัวอักษร หนึ่งจังหวะ",
+      "ref_es": "Una letra, un ritmo"
+    },
+    {
+      "id": "letter-writing::steps.1.body",
+      "path": "letter-writing/steps[1]/body",
+      "ko": null,
+      "en": "Each letter has a fixed number of strokes, and each stroke has a fixed direction. ㅈ is written in 2 strokes and ㅊ in 3 — that is the handwriting convention used all the way through this lesson. Inside a syllable block the order is fixed too: first the opening consonant, then the vowel, then the final consonant underneath.",
+      "current": "",
+      "ref_th": "ตัวอักษรแต่ละตัวมีจำนวนเส้นที่แน่นอน และแต่ละเส้นมีทิศทางที่แน่นอน ㅈ เขียน 2 เส้นและ ㅊ เขียน 3 เส้น — นี่คือธรรมเนียมการเขียนด้วยมือที่ใช้ตลอดบทเรียนนี้ ภายในบล็อกพยางค์ลำดับก็คงที่เช่นกัน: พยัญชนะต้นก่อน ตามด้วยสระ แล้วจึงบัดชิม (받침) ด้านล่าง",
+      "ref_es": "Cada letra tiene un número fijo de trazos, y cada trazo tiene una dirección fija. ㅈ se escribe en 2 trazos y ㅊ en 3: es la convención de escritura a mano que usamos en toda esta lección. Dentro de un bloque de sílaba el orden también es fijo: primero la consonante inicial, luego la vocal y después el batchim (consonante final) debajo."
+    },
+    {
+      "id": "letter-writing::steps.1.rules[0]",
+      "path": "letter-writing/steps[1]/rules[0]",
+      "ko": null,
+      "en": "Opening consonant first (초성) — the top-left slot.",
+      "current": "",
+      "ref_th": "พยัญชนะต้นก่อน (초성) — ช่องมุมบนซ้าย",
+      "ref_es": "La consonante inicial primero (초성): la casilla superior izquierda."
+    },
+    {
+      "id": "letter-writing::steps.1.rules[1]",
+      "path": "letter-writing/steps[1]/rules[1]",
+      "ko": null,
+      "en": "Then the vowel (중성) — to the right of it, or underneath it.",
+      "current": "",
+      "ref_th": "จากนั้นสระกลาง (중성) — อยู่ทางขวาหรือด้านล่างของพยัญชนะ",
+      "ref_es": "Después la vocal (중성): a su derecha o debajo."
+    },
+    {
+      "id": "letter-writing::steps.1.rules[2]",
+      "path": "letter-writing/steps[1]/rules[2]",
+      "ko": null,
+      "en": "Then the final consonant (종성) along the bottom, if the syllable has one.",
+      "current": "",
+      "ref_th": "แล้วจึงพยัญชนะท้ายพยางค์ (종성) ที่ด้านล่าง หากพยางค์นั้นมี",
+      "ref_es": "Luego la consonante final (종성) a lo largo de la base, si la sílaba tiene una."
+    },
+    {
+      "id": "letter-writing::steps.1.tip.label",
+      "path": "letter-writing/steps[1]/tip.label",
+      "ko": null,
+      "en": "The mark on top of ㅎ and ㅊ",
+      "current": "",
+      "ref_th": "ขีดเล็กบนหัว ㅎ และ ㅊ",
+      "ref_es": "La marca encima de ㅎ y ㅊ"
+    },
+    {
+      "id": "letter-writing::steps.1.tip.text",
+      "path": "letter-writing/steps[1]/tip.text",
+      "ko": null,
+      "en": "The small mark on top of ㅎ and ㅊ can be written flat, slanted, or straight up and down — Korean has no official rule, and you will see all three. We draw it slanted, the way most Korean fonts print it, so the letter you practise looks like the Korean you will actually read.",
+      "current": "",
+      "ref_th": "ขีดเล็กบนหัว ㅎ และ ㅊ จะเขียนแบบแบนราบ เอียง หรือตั้งตรงก็ได้ — ภาษาเกาหลีไม่มีกฎอย่างเป็นทางการ และคุณจะพบเห็นทั้งสามแบบ เราเขียนแบบเอียงตามที่ฟอนต์เกาหลีส่วนใหญ่พิมพ์กัน เพื่อให้ตัวอักษรที่คุณฝึกดูเหมือนภาษาเกาหลีที่คุณจะได้อ่านจริง",
+      "ref_es": "La pequeña marca encima de ㅎ y ㅊ puede escribirse plana, inclinada o recta de arriba abajo: el coreano no tiene una regla oficial y verás las tres formas. Nosotros la trazamos inclinada, como la imprimen la mayoría de las fuentes coreanas, para que la letra que practicas se parezca al coreano que de verdad vas a leer."
+    },
+    {
+      "id": "letter-writing::steps.2.hint",
+      "path": "letter-writing/steps[2]/hint",
+      "ko": null,
+      "en": "One single stroke: across to the right, then turn and come straight down.",
+      "current": "",
+      "ref_th": "เส้นเดียวจบ: ลากไปทางขวา แล้วหักลงตรงๆ",
+      "ref_es": "Un solo trazo: hacia la derecha, luego gira y baja recto."
+    },
+    {
+      "id": "letter-writing::steps.2.example_meaning",
+      "path": "letter-writing/steps[2]/example_meaning",
+      "ko": null,
+      "en": "to go",
+      "current": "",
+      "ref_th": "ไป",
+      "ref_es": "ir"
+    },
+    {
+      "id": "letter-writing::steps.3.hint",
+      "path": "letter-writing/steps[3]/hint",
+      "ko": null,
+      "en": "Start at the top-left. One stroke: across, then down without lifting.",
+      "current": "",
+      "ref_th": "เริ่มที่มุมบนซ้าย เส้นเดียว: ลากขวาแล้วลงล่างโดยไม่ยกปากกา",
+      "ref_es": "Empieza arriba a la izquierda. Un trazo: horizontal y luego hacia abajo sin levantar."
+    },
+    {
+      "id": "letter-writing::steps.4.hint",
+      "path": "letter-writing/steps[4]/hint",
+      "ko": null,
+      "en": "One single stroke: down the left side, then turn and run along the bottom.",
+      "current": "",
+      "ref_th": "เส้นเดียวจบ: ลากลงด้านซ้าย แล้วหักไปตามด้านล่าง",
+      "ref_es": "Un solo trazo: baja por el lado izquierdo, luego gira y recorre la base."
+    },
+    {
+      "id": "letter-writing::steps.4.example_meaning",
+      "path": "letter-writing/steps[4]/example_meaning",
+      "ko": null,
+      "en": "I / me",
+      "current": "",
+      "ref_th": "ฉัน / ผม",
+      "ref_es": "yo / mí"
+    },
+    {
+      "id": "letter-writing::steps.5.hint",
+      "path": "letter-writing/steps[5]/hint",
+      "ko": null,
+      "en": "Start at the top-left. Down first, then right — one unbroken stroke.",
+      "current": "",
+      "ref_th": "เริ่มที่มุมบนซ้าย ลงก่อน แล้วไปทางขวา — เส้นเดียวไม่ขาดตอน",
+      "ref_es": "Empieza arriba a la izquierda. Primero abajo, luego a la derecha, un trazo sin cortar."
+    },
+    {
+      "id": "letter-writing::steps.6.hint",
+      "path": "letter-writing/steps[6]/hint",
+      "ko": null,
+      "en": "Two strokes: the top bar, then a stroke down the left side and along the bottom.",
+      "current": "",
+      "ref_th": "สองเส้น: เส้นบน แล้วเส้นที่ลากลงด้านซ้ายและไปตามด้านล่าง",
+      "ref_es": "Dos trazos: la barra superior y luego un trazo que baja por la izquierda y recorre la base."
+    },
+    {
+      "id": "letter-writing::steps.6.example_meaning",
+      "path": "letter-writing/steps[6]/example_meaning",
+      "ko": null,
+      "en": "all / every",
+      "current": "",
+      "ref_th": "ทั้งหมด / ทุก",
+      "ref_es": "todo / cada"
+    },
+    {
+      "id": "letter-writing::steps.7.hint",
+      "path": "letter-writing/steps[7]/hint",
+      "ko": null,
+      "en": "Draw the top bar left to right. Then start again at the top-left corner: down, then right.",
+      "current": "",
+      "ref_th": "ลากเส้นบนจากซ้ายไปขวา แล้วเริ่มใหม่ที่มุมบนซ้าย: ลงล่าง แล้วไปขวา",
+      "ref_es": "Dibuja la barra superior de izquierda a derecha. Luego empieza de nuevo en la esquina superior izquierda: abajo y después a la derecha."
+    },
+    {
+      "id": "letter-writing::steps.8.hint",
+      "path": "letter-writing/steps[8]/hint",
+      "ko": null,
+      "en": "Three strokes: the ㄱ motion, the middle bar, then the ㄴ motion.",
+      "current": "",
+      "ref_th": "สามเส้น: ท่า ㄱ เส้นกลาง แล้วท่า ㄴ",
+      "ref_es": "Tres trazos: el movimiento de ㄱ, la barra central y luego el movimiento de ㄴ."
+    },
+    {
+      "id": "letter-writing::steps.8.example_meaning",
+      "path": "letter-writing/steps[8]/example_meaning",
+      "ko": null,
+      "en": "reason (prefix)",
+      "current": "",
+      "ref_th": "เหตุผล (คำนำหน้า)",
+      "ref_es": "razón (prefijo)"
+    },
+    {
+      "id": "letter-writing::steps.9.hint",
+      "path": "letter-writing/steps[9]/hint",
+      "ko": null,
+      "en": "Top ㄱ first. Then the middle bar left to right. Then the bottom ㄴ.",
+      "current": "",
+      "ref_th": "ㄱ ด้านบนก่อน แล้วเส้นกลางจากซ้ายไปขวา จากนั้น ㄴ ด้านล่าง",
+      "ref_es": "Primero la ㄱ de arriba. Luego la barra central de izquierda a derecha. Después la ㄴ de abajo."
+    },
+    {
+      "id": "letter-writing::steps.10.hint",
+      "path": "letter-writing/steps[10]/hint",
+      "ko": null,
+      "en": "Three strokes: the left side down, then the top and right side in one motion, then the bottom bar.",
+      "current": "",
+      "ref_th": "สามเส้น: ด้านซ้ายลงล่าง แล้วด้านบนกับด้านขวาในเส้นเดียว จากนั้นเส้นล่าง",
+      "ref_es": "Tres trazos: el lado izquierdo hacia abajo, luego la parte superior y el lado derecho en un solo movimiento, y después la barra inferior."
+    },
+    {
+      "id": "letter-writing::steps.10.example_meaning",
+      "path": "letter-writing/steps[10]/example_meaning",
+      "ko": null,
+      "en": "heart / mind",
+      "current": "",
+      "ref_th": "หัวใจ / จิตใจ",
+      "ref_es": "corazón / mente"
+    },
+    {
+      "id": "letter-writing::steps.11.hint",
+      "path": "letter-writing/steps[11]/hint",
+      "ko": null,
+      "en": "Start top-left and go down. Then across the top and down the right. Close the box with the bottom bar.",
+      "current": "",
+      "ref_th": "เริ่มมุมบนซ้ายแล้วลงล่าง จากนั้นข้ามด้านบนและลงด้านขวา ปิดกล่องด้วยเส้นล่าง",
+      "ref_es": "Empieza arriba a la izquierda y baja. Luego cruza por arriba y baja por la derecha. Cierra el cuadro con la barra inferior."
+    },
+    {
+      "id": "letter-writing::steps.12.hint",
+      "path": "letter-writing/steps[12]/hint",
+      "ko": null,
+      "en": "Four strokes: the left post down, the right post down, then the middle bar, then the bottom bar.",
+      "current": "",
+      "ref_th": "สี่เส้น: เสาซ้ายลงล่าง เสาขวาลงล่าง แล้วเส้นกลาง จากนั้นเส้นล่าง",
+      "ref_es": "Cuatro trazos: el poste izquierdo hacia abajo, el poste derecho hacia abajo, luego la barra central y después la barra inferior."
+    },
+    {
+      "id": "letter-writing::steps.12.example_meaning",
+      "path": "letter-writing/steps[12]/example_meaning",
+      "ko": null,
+      "en": "rice / meal",
+      "current": "",
+      "ref_th": "ข้าว / อาหาร",
+      "ref_es": "arroz / comida"
+    },
+    {
+      "id": "letter-writing::steps.13.hint",
+      "path": "letter-writing/steps[13]/hint",
+      "ko": null,
+      "en": "Both verticals first, left before right. Then the middle bar, then the bottom bar.",
+      "current": "",
+      "ref_th": "เส้นตั้งสองเส้นก่อน ซ้ายก่อนขวา แล้วเส้นกลาง จากนั้นเส้นล่าง",
+      "ref_es": "Primero las dos verticales, izquierda antes que derecha. Luego la barra central y después la barra inferior."
+    },
+    {
+      "id": "letter-writing::steps.14.hint",
+      "path": "letter-writing/steps[14]/hint",
+      "ko": null,
+      "en": "Two strokes: the long left leg first, then the shorter right leg.",
+      "current": "",
+      "ref_th": "สองเส้น: ขาซ้ายที่ยาวกว่าก่อน แล้วขาขวาที่สั้นกว่า",
+      "ref_es": "Dos trazos: primero la pierna izquierda larga y luego la pierna derecha más corta."
+    },
+    {
+      "id": "letter-writing::steps.14.example_meaning",
+      "path": "letter-writing/steps[14]/example_meaning",
+      "ko": null,
+      "en": "person",
+      "current": "",
+      "ref_th": "คน",
+      "ref_es": "persona"
+    },
+    {
+      "id": "letter-writing::steps.15.hint",
+      "path": "letter-writing/steps[15]/hint",
+      "ko": null,
+      "en": "Start at the top point and sweep down to the left. Then start on that stroke and sweep down to the right.",
+      "current": "",
+      "ref_th": "เริ่มที่จุดยอดแล้วสะบัดลงไปทางซ้าย จากนั้นเริ่มบนเส้นนั้นแล้วสะบัดลงไปทางขวา",
+      "ref_es": "Empieza en el punto superior y baja en diagonal hacia la izquierda. Luego arranca sobre ese trazo y baja en diagonal hacia la derecha."
+    },
+    {
+      "id": "letter-writing::steps.16.hint",
+      "path": "letter-writing/steps[16]/hint",
+      "ko": null,
+      "en": "One single stroke: a closed circle, starting at the top and coming back to the same point.",
+      "current": "",
+      "ref_th": "เส้นเดียวจบ: วงกลมปิด เริ่มจากด้านบนแล้ววนกลับมาที่จุดเดิม",
+      "ref_es": "Un solo trazo: un círculo cerrado que empieza arriba y vuelve al mismo punto."
+    },
+    {
+      "id": "letter-writing::steps.16.example_meaning",
+      "path": "letter-writing/steps[16]/example_meaning",
+      "ko": null,
+      "en": "child",
+      "current": "",
+      "ref_th": "เด็ก",
+      "ref_es": "niño/a"
+    },
+    {
+      "id": "letter-writing::steps.17.hint",
+      "path": "letter-writing/steps[17]/hint",
+      "ko": null,
+      "en": "Start at the top and go all the way around until you meet your starting point.",
+      "current": "",
+      "ref_th": "เริ่มที่ด้านบน แล้ววนรอบจนกลับมาบรรจบที่จุดเริ่มต้น",
+      "ref_es": "Empieza arriba y da toda la vuelta hasta encontrar el punto de partida."
+    },
+    {
+      "id": "letter-writing::steps.18.hint",
+      "path": "letter-writing/steps[18]/hint",
+      "ko": null,
+      "en": "Two strokes: the top bar and the left leg in one motion, then the right leg. Two, not three.",
+      "current": "",
+      "ref_th": "สองเส้น: เส้นบนกับขาซ้ายในเส้นเดียว แล้วขาขวา สองเส้น ไม่ใช่สาม",
+      "ref_es": "Dos trazos: la barra superior y la pierna izquierda en un solo movimiento, luego la pierna derecha. Dos, no tres."
+    },
+    {
+      "id": "letter-writing::steps.18.example_meaning",
+      "path": "letter-writing/steps[18]/example_meaning",
+      "ko": null,
+      "en": "now",
+      "current": "",
+      "ref_th": "ตอนนี้",
+      "ref_es": "ahora"
+    },
+    {
+      "id": "letter-writing::steps.19.hint",
+      "path": "letter-writing/steps[19]/hint",
+      "ko": null,
+      "en": "Start at the top-left: across, then down to the left in one stroke. Then the right leg.",
+      "current": "",
+      "ref_th": "เริ่มที่มุมบนซ้าย: ลากขวาแล้วสะบัดลงซ้ายในเส้นเดียวกัน จากนั้นขาขวา",
+      "ref_es": "Empieza arriba a la izquierda: horizontal y luego hacia abajo a la izquierda en un solo trazo. Después la pierna derecha."
+    },
+    {
+      "id": "letter-writing::steps.20.hint",
+      "path": "letter-writing/steps[20]/hint",
+      "ko": null,
+      "en": "Three strokes: the small slanted mark on top, then the bar with its left leg, then the right leg.",
+      "current": "",
+      "ref_th": "สามเส้น: ขีดเอียงเล็กด้านบน แล้วเส้นขวางพร้อมขาซ้าย จากนั้นขาขวา",
+      "ref_es": "Tres trazos: la pequeña marca inclinada de arriba, luego la barra con su pierna izquierda y después la pierna derecha."
+    },
+    {
+      "id": "letter-writing::steps.20.example_meaning",
+      "path": "letter-writing/steps[20]/example_meaning",
+      "ko": null,
+      "en": "tea / car",
+      "current": "",
+      "ref_th": "ชา / รถ",
+      "ref_es": "té / coche"
+    },
+    {
+      "id": "letter-writing::steps.21.hint",
+      "path": "letter-writing/steps[21]/hint",
+      "ko": null,
+      "en": "Tick on top first. Then the bar and left leg in one stroke. Then the right leg.",
+      "current": "",
+      "ref_th": "ขีดด้านบนก่อน แล้วเส้นขวางกับขาซ้ายในเส้นเดียว จากนั้นขาขวา",
+      "ref_es": "Primero la marca de arriba. Luego la barra y la pierna izquierda en un solo trazo. Después la pierna derecha."
+    },
+    {
+      "id": "letter-writing::steps.22.hint",
+      "path": "letter-writing/steps[22]/hint",
+      "ko": null,
+      "en": "Two strokes: the ㄱ shape first, then the short bar across the middle.",
+      "current": "",
+      "ref_th": "สองเส้น: รูป ㄱ ก่อน แล้วเส้นสั้นขวางตรงกลาง",
+      "ref_es": "Dos trazos: primero la forma de ㄱ y luego la barra corta que cruza por el medio."
+    },
+    {
+      "id": "letter-writing::steps.22.example_meaning",
+      "path": "letter-writing/steps[22]/example_meaning",
+      "ko": null,
+      "en": "coffee",
+      "current": "",
+      "ref_th": "กาแฟ",
+      "ref_es": "café"
+    },
+    {
+      "id": "letter-writing::steps.23.hint",
+      "path": "letter-writing/steps[23]/hint",
+      "ko": null,
+      "en": "Draw ㄱ — across, then down. Then add the middle bar, left to right.",
+      "current": "",
+      "ref_th": "เขียน ㄱ — ลากขวาแล้วลงล่าง จากนั้นเติมเส้นกลางจากซ้ายไปขวา",
+      "ref_es": "Dibuja ㄱ: horizontal y luego hacia abajo. Después añade la barra central de izquierda a derecha."
+    },
+    {
+      "id": "letter-writing::steps.24.hint",
+      "path": "letter-writing/steps[24]/hint",
+      "ko": null,
+      "en": "Three strokes: the top bar, the middle bar, then the left side and bottom in one motion.",
+      "current": "",
+      "ref_th": "สามเส้น: เส้นบน เส้นกลาง แล้วด้านซ้ายกับด้านล่างในเส้นเดียว",
+      "ref_es": "Tres trazos: la barra superior, la barra central y luego el lado izquierdo y la base en un solo movimiento."
+    },
+    {
+      "id": "letter-writing::steps.24.example_meaning",
+      "path": "letter-writing/steps[24]/example_meaning",
+      "ko": null,
+      "en": "to ride",
+      "current": "",
+      "ref_th": "ขี่ / โดยสาร",
+      "ref_es": "montar / subir"
+    },
+    {
+      "id": "letter-writing::steps.25.hint",
+      "path": "letter-writing/steps[25]/hint",
+      "ko": null,
+      "en": "Top bar, then middle bar. Finish with the stroke down the left side and along the bottom.",
+      "current": "",
+      "ref_th": "เส้นบน แล้วเส้นกลาง ปิดท้ายด้วยเส้นที่ลากลงด้านซ้ายและไปตามด้านล่าง",
+      "ref_es": "Barra superior, luego barra central. Termina con el trazo que baja por la izquierda y recorre la base."
+    },
+    {
+      "id": "letter-writing::steps.26.hint",
+      "path": "letter-writing/steps[26]/hint",
+      "ko": null,
+      "en": "Four strokes: the top bar, the left post, the right post, then the bottom bar.",
+      "current": "",
+      "ref_th": "สี่เส้น: เส้นบน เสาซ้าย เสาขวา จากนั้นเส้นล่าง",
+      "ref_es": "Cuatro trazos: la barra superior, el poste izquierdo, el poste derecho y después la barra inferior."
+    },
+    {
+      "id": "letter-writing::steps.26.example_meaning",
+      "path": "letter-writing/steps[26]/example_meaning",
+      "ko": null,
+      "en": "green onion",
+      "current": "",
+      "ref_th": "ต้นหอม",
+      "ref_es": "cebolleta"
+    },
+    {
+      "id": "letter-writing::steps.27.hint",
+      "path": "letter-writing/steps[27]/hint",
+      "ko": null,
+      "en": "Top bar first. Then the two short posts, left before right. Bottom bar last.",
+      "current": "",
+      "ref_th": "เส้นบนก่อน แล้วเสาสั้นสองต้น ซ้ายก่อนขวา เส้นล่างสุดท้าย",
+      "ref_es": "Primero la barra superior. Luego los dos postes cortos, izquierda antes que derecha. La barra inferior al final."
+    },
+    {
+      "id": "letter-writing::steps.28.hint",
+      "path": "letter-writing/steps[28]/hint",
+      "ko": null,
+      "en": "Three strokes: the small slanted mark, the bar under it, then the circle.",
+      "current": "",
+      "ref_th": "สามเส้น: ขีดเอียงเล็ก เส้นขวางใต้ขีดนั้น แล้ววงกลม",
+      "ref_es": "Tres trazos: la pequeña marca inclinada, la barra debajo y luego el círculo."
+    },
+    {
+      "id": "letter-writing::steps.28.example_meaning",
+      "path": "letter-writing/steps[28]/example_meaning",
+      "ko": null,
+      "en": "sky",
+      "current": "",
+      "ref_th": "ท้องฟ้า",
+      "ref_es": "cielo"
+    },
+    {
+      "id": "letter-writing::steps.29.hint",
+      "path": "letter-writing/steps[29]/hint",
+      "ko": null,
+      "en": "Tick first, then the bar left to right, then the circle underneath.",
+      "current": "",
+      "ref_th": "ขีดก่อน แล้วเส้นขวางจากซ้ายไปขวา จากนั้นวงกลมด้านล่าง",
+      "ref_es": "Primero la marca, luego la barra de izquierda a derecha y después el círculo debajo."
+    },
+    {
+      "id": "letter-writing::steps.30.hint",
+      "path": "letter-writing/steps[30]/hint",
+      "ko": null,
+      "en": "Two strokes: the long vertical line first, then the short tick out to the right.",
+      "current": "",
+      "ref_th": "สองเส้น: เส้นตั้งยาวก่อน แล้วขีดสั้นยื่นออกไปทางขวา",
+      "ref_es": "Dos trazos: primero la línea vertical larga y luego la marca corta hacia la derecha."
+    },
+    {
+      "id": "letter-writing::steps.30.example_meaning",
+      "path": "letter-writing/steps[30]/example_meaning",
+      "ko": null,
+      "en": "person",
+      "current": "",
+      "ref_th": "คน",
+      "ref_es": "persona"
+    },
+    {
+      "id": "letter-writing::steps.31.hint",
+      "path": "letter-writing/steps[31]/hint",
+      "ko": null,
+      "en": "Draw the vertical from top to bottom. Then the tick, from the line outward to the right.",
+      "current": "",
+      "ref_th": "ลากเส้นตั้งจากบนลงล่าง แล้วขีดสั้นจากเส้นออกไปทางขวา",
+      "ref_es": "Dibuja la vertical de arriba abajo. Luego la marca corta, desde la línea hacia fuera a la derecha."
+    },
+    {
+      "id": "letter-writing::steps.32.hint",
+      "path": "letter-writing/steps[32]/hint",
+      "ko": null,
+      "en": "Three strokes: the long vertical first, then the upper tick, then the lower tick.",
+      "current": "",
+      "ref_th": "สามเส้น: เส้นตั้งยาวก่อน แล้วขีดสั้นด้านบน จากนั้นขีดสั้นด้านล่าง",
+      "ref_es": "Tres trazos: primero la vertical larga, luego la marca superior y después la marca inferior."
+    },
+    {
+      "id": "letter-writing::steps.32.example_meaning",
+      "path": "letter-writing/steps[32]/example_meaning",
+      "ko": null,
+      "en": "medicine",
+      "current": "",
+      "ref_th": "ยา",
+      "ref_es": "medicina"
+    },
+    {
+      "id": "letter-writing::steps.33.hint",
+      "path": "letter-writing/steps[33]/hint",
+      "ko": null,
+      "en": "Vertical down first. Then two ticks to the right — the top one before the bottom one.",
+      "current": "",
+      "ref_th": "เส้นตั้งลงก่อน แล้วขีดสั้นสองขีดไปทางขวา — ขีดบนก่อนขีดล่าง",
+      "ref_es": "Primero la vertical hacia abajo. Luego dos marcas a la derecha: la de arriba antes que la de abajo."
+    },
+    {
+      "id": "letter-writing::steps.34.hint",
+      "path": "letter-writing/steps[34]/hint",
+      "ko": null,
+      "en": "Two strokes: tick first, then the vertical. The short mark is on the left, so it goes first.",
+      "current": "",
+      "ref_th": "สองเส้น: ขีดสั้นก่อน แล้วเส้นตั้ง ขีดสั้นอยู่ทางซ้ายจึงเขียนก่อน",
+      "ref_es": "Dos trazos: primero la marca corta, luego la vertical. La marca corta está a la izquierda, así que va primero."
+    },
+    {
+      "id": "letter-writing::steps.34.example_meaning",
+      "path": "letter-writing/steps[34]/example_meaning",
+      "ko": null,
+      "en": "what",
+      "current": "",
+      "ref_th": "อะไร",
+      "ref_es": "qué"
+    },
+    {
+      "id": "letter-writing::steps.35.hint",
+      "path": "letter-writing/steps[35]/hint",
+      "ko": null,
+      "en": "Draw the short tick left to right, then the long vertical from top to bottom.",
+      "current": "",
+      "ref_th": "ลากขีดสั้นจากซ้ายไปขวา แล้วเส้นตั้งยาวจากบนลงล่าง",
+      "ref_es": "Dibuja la marca corta de izquierda a derecha, luego la vertical larga de arriba abajo."
+    },
+    {
+      "id": "letter-writing::steps.36.hint",
+      "path": "letter-writing/steps[36]/hint",
+      "ko": null,
+      "en": "Three strokes: the upper tick, the lower tick, then the long vertical on the right.",
+      "current": "",
+      "ref_th": "สามเส้น: ขีดสั้นบน ขีดสั้นล่าง แล้วเส้นตั้งยาวด้านขวา",
+      "ref_es": "Tres trazos: la marca superior, la marca inferior y luego la vertical larga a la derecha."
+    },
+    {
+      "id": "letter-writing::steps.36.example_meaning",
+      "path": "letter-writing/steps[36]/example_meaning",
+      "ko": null,
+      "en": "woman / girl",
+      "current": "",
+      "ref_th": "ผู้หญิง",
+      "ref_es": "mujer / chica"
+    },
+    {
+      "id": "letter-writing::steps.37.hint",
+      "path": "letter-writing/steps[37]/hint",
+      "ko": null,
+      "en": "Both ticks first, top before bottom. Then the vertical down the right-hand side.",
+      "current": "",
+      "ref_th": "ขีดสั้นสองขีดก่อน บนก่อนล่าง แล้วเส้นตั้งลงตามด้านขวา",
+      "ref_es": "Primero las dos marcas, arriba antes que abajo. Luego la vertical por el lado derecho."
+    },
+    {
+      "id": "letter-writing::steps.38.hint",
+      "path": "letter-writing/steps[38]/hint",
+      "ko": null,
+      "en": "Two strokes: short vertical first, then the long base underneath it.",
+      "current": "",
+      "ref_th": "สองเส้น: เส้นตั้งสั้นก่อน แล้วเส้นฐานยาวด้านล่าง",
+      "ref_es": "Dos trazos: primero la vertical corta, luego la base larga debajo."
+    },
+    {
+      "id": "letter-writing::steps.38.example_meaning",
+      "path": "letter-writing/steps[38]/example_meaning",
+      "ko": null,
+      "en": "thank you",
+      "current": "",
+      "ref_th": "ขอบคุณ",
+      "ref_es": "gracias (informal)"
+    },
+    {
+      "id": "letter-writing::steps.39.hint",
+      "path": "letter-writing/steps[39]/hint",
+      "ko": null,
+      "en": "Start at the top of the short stem and come down. Then the base bar, left to right.",
+      "current": "",
+      "ref_th": "เริ่มที่ยอดของเส้นตั้งสั้นแล้วลงล่าง จากนั้นเส้นฐานจากซ้ายไปขวา",
+      "ref_es": "Empieza en la parte superior del tallo corto y baja. Luego la barra de la base, de izquierda a derecha."
+    },
+    {
+      "id": "letter-writing::steps.40.hint",
+      "path": "letter-writing/steps[40]/hint",
+      "ko": null,
+      "en": "Three strokes: the left stem, the right stem, then the long base bar.",
+      "current": "",
+      "ref_th": "สามเส้น: เส้นตั้งซ้าย เส้นตั้งขวา แล้วเส้นฐานยาว",
+      "ref_es": "Tres trazos: el tallo izquierdo, el tallo derecho y luego la barra base larga."
+    },
+    {
+      "id": "letter-writing::steps.40.example_meaning",
+      "path": "letter-writing/steps[40]/example_meaning",
+      "ko": null,
+      "en": "school",
+      "current": "",
+      "ref_th": "โรงเรียน",
+      "ref_es": "colegio / escuela"
+    },
+    {
+      "id": "letter-writing::steps.41.hint",
+      "path": "letter-writing/steps[41]/hint",
+      "ko": null,
+      "en": "Two short stems, left before right. Then the base bar underneath, left to right.",
+      "current": "",
+      "ref_th": "เส้นตั้งสั้นสองเส้น ซ้ายก่อนขวา แล้วเส้นฐานด้านล่างจากซ้ายไปขวา",
+      "ref_es": "Dos tallos cortos, izquierda antes que derecha. Luego la barra base debajo, de izquierda a derecha."
+    },
+    {
+      "id": "letter-writing::steps.42.hint",
+      "path": "letter-writing/steps[42]/hint",
+      "ko": null,
+      "en": "Two strokes: bar first, then the hanging vertical below it.",
+      "current": "",
+      "ref_th": "สองเส้น: เส้นขวางก่อน แล้วเส้นตั้งที่ห้อยลงด้านล่าง",
+      "ref_es": "Dos trazos: primero la barra, luego la vertical que cuelga debajo."
+    },
+    {
+      "id": "letter-writing::steps.42.example_meaning",
+      "path": "letter-writing/steps[42]/example_meaning",
+      "ko": null,
+      "en": "water",
+      "current": "",
+      "ref_th": "น้ำ",
+      "ref_es": "agua"
+    },
+    {
+      "id": "letter-writing::steps.43.hint",
+      "path": "letter-writing/steps[43]/hint",
+      "ko": null,
+      "en": "Draw the long bar left to right, then the vertical hanging down from its middle.",
+      "current": "",
+      "ref_th": "ลากเส้นขวางยาวจากซ้ายไปขวา แล้วเส้นตั้งที่ห้อยลงจากตรงกลาง",
+      "ref_es": "Dibuja la barra larga de izquierda a derecha, luego la vertical que cuelga desde su centro."
+    },
+    {
+      "id": "letter-writing::steps.44.hint",
+      "path": "letter-writing/steps[44]/hint",
+      "ko": null,
+      "en": "Three strokes: the long bar first, then the two stems hanging from it, left before right.",
+      "current": "",
+      "ref_th": "สามเส้น: เส้นขวางยาวก่อน แล้วเส้นตั้งสองเส้นที่ห้อยลงมา ซ้ายก่อนขวา",
+      "ref_es": "Tres trazos: primero la barra larga, luego los dos tallos que cuelgan de ella, izquierda antes que derecha."
+    },
+    {
+      "id": "letter-writing::steps.44.example_meaning",
+      "path": "letter-writing/steps[44]/example_meaning",
+      "ko": null,
+      "en": "YouTube",
+      "current": "",
+      "ref_th": "ยูทูบ",
+      "ref_es": "YouTube"
+    },
+    {
+      "id": "letter-writing::steps.45.hint",
+      "path": "letter-writing/steps[45]/hint",
+      "ko": null,
+      "en": "Bar first, left to right. Then the left stem down, then the right stem down.",
+      "current": "",
+      "ref_th": "เส้นขวางก่อนจากซ้ายไปขวา แล้วเส้นตั้งซ้ายลง จากนั้นเส้นตั้งขวาลง",
+      "ref_es": "Primero la barra, de izquierda a derecha. Luego el tallo izquierdo hacia abajo y después el tallo derecho hacia abajo."
+    },
+    {
+      "id": "letter-writing::steps.46.hint",
+      "path": "letter-writing/steps[46]/hint",
+      "ko": null,
+      "en": "One single stroke: a horizontal line, drawn left to right.",
+      "current": "",
+      "ref_th": "เส้นเดียวจบ: เส้นนอน ลากจากซ้ายไปขวา",
+      "ref_es": "Un solo trazo: una línea horizontal, de izquierda a derecha."
+    },
+    {
+      "id": "letter-writing::steps.46.example_meaning",
+      "path": "letter-writing/steps[46]/example_meaning",
+      "ko": null,
+      "en": "sky",
+      "current": "",
+      "ref_th": "ท้องฟ้า",
+      "ref_es": "cielo"
+    },
+    {
+      "id": "letter-writing::steps.47.hint",
+      "path": "letter-writing/steps[47]/hint",
+      "ko": null,
+      "en": "Start at the left end and draw straight across to the right.",
+      "current": "",
+      "ref_th": "เริ่มที่ปลายด้านซ้ายแล้วลากตรงไปทางขวา",
+      "ref_es": "Empieza en el extremo izquierdo y traza recto hacia la derecha."
+    },
+    {
+      "id": "letter-writing::steps.48.hint",
+      "path": "letter-writing/steps[48]/hint",
+      "ko": null,
+      "en": "One single stroke: a vertical line, drawn top to bottom.",
+      "current": "",
+      "ref_th": "เส้นเดียวจบ: เส้นตั้ง ลากจากบนลงล่าง",
+      "ref_es": "Un solo trazo: una línea vertical, de arriba abajo."
+    },
+    {
+      "id": "letter-writing::steps.48.example_meaning",
+      "path": "letter-writing/steps[48]/example_meaning",
+      "ko": null,
+      "en": "friend",
+      "current": "",
+      "ref_th": "เพื่อน",
+      "ref_es": "amigo/a"
+    },
+    {
+      "id": "letter-writing::steps.49.hint",
+      "path": "letter-writing/steps[49]/hint",
+      "ko": null,
+      "en": "Start at the top and draw straight down.",
+      "current": "",
+      "ref_th": "เริ่มที่ด้านบนแล้วลากตรงลงล่าง",
+      "ref_es": "Empieza arriba y traza recto hacia abajo."
+    },
+    {
+      "id": "letter-writing::steps.50.hint",
+      "path": "letter-writing/steps[50]/hint",
+      "ko": null,
+      "en": "The vowel sits to the right, so write ㄱ first, then ㅏ beside it.",
+      "current": "",
+      "ref_th": "สระอยู่ทางขวา จึงเขียน ㄱ ก่อน แล้วเขียน ㅏ ไว้ข้างๆ",
+      "ref_es": "La vocal va a la derecha, así que escribe ㄱ primero y luego ㅏ a su lado."
+    },
+    {
+      "id": "letter-writing::steps.50.example_meaning",
+      "path": "letter-writing/steps[50]/example_meaning",
+      "ko": null,
+      "en": "to go",
+      "current": "",
+      "ref_th": "ไป",
+      "ref_es": "ir"
+    },
+    {
+      "id": "letter-writing::steps.51.hint",
+      "path": "letter-writing/steps[51]/hint",
+      "ko": null,
+      "en": "ㄱ in the left half. Then ㅏ down the right side — vertical before tick.",
+      "current": "",
+      "ref_th": "ㄱ อยู่ครึ่งซ้าย แล้ว ㅏ ทางด้านขวา — เส้นตั้งก่อนขีดสั้น",
+      "ref_es": "ㄱ en la mitad izquierda. Luego ㅏ por el lado derecho: la vertical antes que la marca corta."
+    },
+    {
+      "id": "letter-writing::steps.52.hint",
+      "path": "letter-writing/steps[52]/hint",
+      "ko": null,
+      "en": "ㅗ sits underneath, so write ㄱ across the top first, then ㅗ below it.",
+      "current": "",
+      "ref_th": "ㅗ อยู่ด้านล่าง จึงเขียน ㄱ ไว้ด้านบนก่อน แล้ว ㅗ ไว้ด้านล่าง",
+      "ref_es": "ㅗ va debajo, así que escribe ㄱ arriba primero y luego ㅗ debajo."
+    },
+    {
+      "id": "letter-writing::steps.52.example_meaning",
+      "path": "letter-writing/steps[52]/example_meaning",
+      "ko": null,
+      "en": "thank you",
+      "current": "",
+      "ref_th": "ขอบคุณ",
+      "ref_es": "gracias (informal)"
+    },
+    {
+      "id": "letter-writing::steps.53.hint",
+      "path": "letter-writing/steps[53]/hint",
+      "ko": null,
+      "en": "ㄱ across the top half. Then ㅗ underneath: short stem, then the base bar.",
+      "current": "",
+      "ref_th": "ㄱ อยู่ครึ่งบน แล้ว ㅗ ด้านล่าง: เส้นตั้งสั้น แล้วเส้นฐาน",
+      "ref_es": "ㄱ en la mitad superior. Luego ㅗ debajo: el tallo corto y después la barra base."
+    },
+    {
+      "id": "letter-writing::steps.54.hint",
+      "path": "letter-writing/steps[54]/hint",
+      "ko": null,
+      "en": "A two-part vowel. Write ㄱ, then ㅗ under it, then ㅏ down the right.",
+      "current": "",
+      "ref_th": "สระที่มีสองส่วน เขียน ㄱ แล้ว ㅗ ไว้ด้านล่าง จากนั้น ㅏ ทางด้านขวา",
+      "ref_es": "Una vocal de dos partes. Escribe ㄱ, luego ㅗ debajo y después ㅏ por la derecha."
+    },
+    {
+      "id": "letter-writing::steps.54.example_meaning",
+      "path": "letter-writing/steps[54]/example_meaning",
+      "ko": null,
+      "en": "fruit",
+      "current": "",
+      "ref_th": "ผลไม้",
+      "ref_es": "fruta"
+    },
+    {
+      "id": "letter-writing::steps.55.hint",
+      "path": "letter-writing/steps[55]/hint",
+      "ko": null,
+      "en": "ㄱ top-left, ㅗ below it, then ㅏ down the right-hand side.",
+      "current": "",
+      "ref_th": "ㄱ มุมบนซ้าย ㅗ อยู่ด้านล่าง แล้ว ㅏ ทางด้านขวา",
+      "ref_es": "ㄱ arriba a la izquierda, ㅗ debajo y luego ㅏ por el lado derecho."
+    },
+    {
+      "id": "letter-writing::steps.56.hint",
+      "path": "letter-writing/steps[56]/hint",
+      "ko": null,
+      "en": "Write ㅎ first, then ㅏ, then ㄴ underneath.",
+      "current": "",
+      "ref_th": "เขียน ㅎ ก่อน แล้ว ㅏ จากนั้น ㄴ ด้านล่าง",
+      "ref_es": "Escribe ㅎ primero, luego ㅏ y después ㄴ debajo."
+    },
+    {
+      "id": "letter-writing::steps.56.example_meaning",
+      "path": "letter-writing/steps[56]/example_meaning",
+      "ko": null,
+      "en": "Korea",
+      "current": "",
+      "ref_th": "เกาหลี",
+      "ref_es": "Corea"
+    },
+    {
+      "id": "letter-writing::steps.57.hint",
+      "path": "letter-writing/steps[57]/hint",
+      "ko": null,
+      "en": "ㅎ in the top-left, ㅏ to its right, then ㄴ across the bottom.",
+      "current": "",
+      "ref_th": "ㅎ มุมบนซ้าย ㅏ ทางขวา แล้ว ㄴ ที่ด้านล่าง",
+      "ref_es": "ㅎ arriba a la izquierda, ㅏ a su derecha y luego ㄴ a lo largo de la base."
+    },
+    {
+      "id": "letter-writing::steps.58.hint",
+      "path": "letter-writing/steps[58]/hint",
+      "ko": null,
+      "en": "Straight down the block: ㄱ, then ㅗ, then ㅁ as the final consonant.",
+      "current": "",
+      "ref_th": "ไล่จากบนลงล่างในบล็อก: ㄱ แล้ว ㅗ จากนั้น ㅁ เป็นบัดชิม",
+      "ref_es": "De arriba abajo por el bloque: ㄱ, luego ㅗ y después ㅁ como batchim (consonante final)."
+    },
+    {
+      "id": "letter-writing::steps.58.example_meaning",
+      "path": "letter-writing/steps[58]/example_meaning",
+      "ko": null,
+      "en": "bear",
+      "current": "",
+      "ref_th": "หมี",
+      "ref_es": "oso"
+    },
+    {
+      "id": "letter-writing::steps.59.hint",
+      "path": "letter-writing/steps[59]/hint",
+      "ko": null,
+      "en": "ㄱ first, ㅗ under it, then ㅁ at the bottom — left side, top and right, then the base.",
+      "current": "",
+      "ref_th": "ㄱ ก่อน ㅗ อยู่ด้านล่าง แล้ว ㅁ ที่ด้านล่างสุด — ด้านซ้าย ด้านบนและขวา จากนั้นด้านล่าง",
+      "ref_es": "Primero ㄱ, ㅗ debajo y luego ㅁ en la base: el lado izquierdo, la parte superior y derecha, y después la base."
+    },
+    {
+      "id": "letter-writing::steps.60.hint",
+      "path": "letter-writing/steps[60]/hint",
+      "ko": null,
+      "en": "Circle first, then the two-part vowel ㅜ and ㅓ, then ㄴ at the bottom.",
+      "current": "",
+      "ref_th": "วงกลมก่อน แล้วสระสองส่วน ㅜ และ ㅓ จากนั้น ㄴ ที่ด้านล่าง",
+      "ref_es": "Primero el círculo, luego la vocal de dos partes ㅜ y ㅓ, y después ㄴ en la base."
+    },
+    {
+      "id": "letter-writing::steps.60.example_meaning",
+      "path": "letter-writing/steps[60]/example_meaning",
+      "ko": null,
+      "en": "won (Korean currency)",
+      "current": "",
+      "ref_th": "วอน (สกุลเงินเกาหลี)",
+      "ref_es": "won (moneda coreana)"
+    },
+    {
+      "id": "letter-writing::steps.61.hint",
+      "path": "letter-writing/steps[61]/hint",
+      "ko": null,
+      "en": "ㅇ top-left. Then ㅜ, then ㅓ to its right, then ㄴ underneath.",
+      "current": "",
+      "ref_th": "ㅇ มุมบนซ้าย แล้ว ㅜ จากนั้น ㅓ ทางขวา แล้ว ㄴ ด้านล่าง",
+      "ref_es": "ㅇ arriba a la izquierda. Luego ㅜ, después ㅓ a su derecha y luego ㄴ debajo."
+    },
+    {
+      "id": "letter-writing::steps.62.hint",
+      "path": "letter-writing/steps[62]/hint",
+      "ko": null,
+      "en": "ㅂ takes 4 strokes, ㅣ takes 1 and the final ㅊ takes 3 — work top-left, then right, then down.",
+      "current": "",
+      "ref_th": "ㅂ ใช้ 4 เส้น ㅣ ใช้ 1 เส้น และ ㅊ ตัวสะกดใช้ 3 เส้น — เริ่มมุมบนซ้าย แล้วไปขวา จากนั้นลงล่าง",
+      "ref_es": "ㅂ lleva 4 trazos, ㅣ lleva 1 y la ㅊ final lleva 3: avanza de arriba a la izquierda, luego a la derecha y después hacia abajo."
+    },
+    {
+      "id": "letter-writing::steps.62.example_meaning",
+      "path": "letter-writing/steps[62]/example_meaning",
+      "ko": null,
+      "en": "light",
+      "current": "",
+      "ref_th": "แสง",
+      "ref_es": "luz"
+    },
+    {
+      "id": "letter-writing::steps.63.hint",
+      "path": "letter-writing/steps[63]/hint",
+      "ko": null,
+      "en": "ㅂ in the top-left, ㅣ down the right, then ㅊ across the bottom.",
+      "current": "",
+      "ref_th": "ㅂ มุมบนซ้าย ㅣ ทางด้านขวา แล้ว ㅊ ที่ด้านล่าง",
+      "ref_es": "ㅂ arriba a la izquierda, ㅣ por la derecha y luego ㅊ a lo largo de la base."
+    },
+    {
+      "id": "letter-writing::steps.64.hint",
+      "path": "letter-writing/steps[64]/hint",
+      "ko": null,
+      "en": "The final consonant is a pair: write ㄷ, then ㅏ, then ㄹ and ㄱ side by side at the bottom.",
+      "current": "",
+      "ref_th": "บัดชิมเป็นคู่: เขียน ㄷ แล้ว ㅏ จากนั้น ㄹ และ ㄱ เรียงข้างกันที่ด้านล่าง",
+      "ref_es": "El batchim es un par: escribe ㄷ, luego ㅏ y después ㄹ y ㄱ lado a lado en la base."
+    },
+    {
+      "id": "letter-writing::steps.64.example_meaning",
+      "path": "letter-writing/steps[64]/example_meaning",
+      "ko": null,
+      "en": "chicken",
+      "current": "",
+      "ref_th": "ไก่",
+      "ref_es": "pollo / gallina"
+    },
+    {
+      "id": "letter-writing::steps.65.hint",
+      "path": "letter-writing/steps[65]/hint",
+      "ko": null,
+      "en": "ㄷ first, ㅏ to its right, then the bottom pair — ㄹ on the left, ㄱ on the right.",
+      "current": "",
+      "ref_th": "ㄷ ก่อน ㅏ ทางขวา แล้วคู่ด้านล่าง — ㄹ ทางซ้าย ㄱ ทางขวา",
+      "ref_es": "Primero ㄷ, ㅏ a su derecha y luego el par de la base: ㄹ a la izquierda y ㄱ a la derecha."
+    },
+    {
+      "id": "letter-writing::steps.66.hint",
+      "path": "letter-writing/steps[66]/hint",
+      "ko": null,
+      "en": "ㄱ, then ㅏ, then the double final ㅂ and ㅅ, left before right.",
+      "current": "",
+      "ref_th": "ㄱ แล้ว ㅏ จากนั้นตัวสะกดคู่ ㅂ และ ㅅ ซ้ายก่อนขวา",
+      "ref_es": "ㄱ, luego ㅏ y después la doble final ㅂ y ㅅ, izquierda antes que derecha."
+    },
+    {
+      "id": "letter-writing::steps.66.example_meaning",
+      "path": "letter-writing/steps[66]/example_meaning",
+      "ko": null,
+      "en": "price",
+      "current": "",
+      "ref_th": "ราคา",
+      "ref_es": "precio"
+    },
+    {
+      "id": "letter-writing::steps.67.hint",
+      "path": "letter-writing/steps[67]/hint",
+      "ko": null,
+      "en": "ㄱ top-left, ㅏ to its right, then ㅂ and ㅅ side by side along the bottom.",
+      "current": "",
+      "ref_th": "ㄱ มุมบนซ้าย ㅏ ทางขวา แล้ว ㅂ และ ㅅ เรียงข้างกันตามด้านล่าง",
+      "ref_es": "ㄱ arriba a la izquierda, ㅏ a su derecha y luego ㅂ y ㅅ lado a lado a lo largo de la base."
+    },
+    {
+      "id": "letter-writing::steps.68.hint",
+      "path": "letter-writing/steps[68]/hint",
+      "ko": null,
+      "en": "The longest block in this lesson: ㅎ, then ㅑ, then ㄹ and ㅎ together at the bottom.",
+      "current": "",
+      "ref_th": "บล็อกที่ยาวที่สุดในบทเรียนนี้: ㅎ แล้ว ㅑ จากนั้น ㄹ และ ㅎ เรียงข้างกันที่ด้านล่าง",
+      "ref_es": "El bloque más largo de esta lección: ㅎ, luego ㅑ y después ㄹ y ㅎ juntas en la base."
+    },
+    {
+      "id": "letter-writing::steps.68.example_meaning",
+      "path": "letter-writing/steps[68]/example_meaning",
+      "ko": null,
+      "en": "a rare syllable — proof that any Korean block can be written the same way",
+      "current": "",
+      "ref_th": "พยางค์ที่พบได้ยาก — พิสูจน์ว่าบล็อกอักษรเกาหลีทุกตัวเขียนด้วยวิธีเดียวกัน",
+      "ref_es": "una sílaba poco común, prueba de que cualquier bloque coreano se escribe igual"
+    },
+    {
+      "id": "letter-writing::steps.69.hint",
+      "path": "letter-writing/steps[69]/hint",
+      "ko": null,
+      "en": "ㅎ top-left, ㅑ down the right, then ㄹ and ㅎ side by side at the bottom.",
+      "current": "",
+      "ref_th": "ㅎ มุมบนซ้าย ㅑ ทางด้านขวา แล้ว ㄹ และ ㅎ เรียงข้างกันที่ด้านล่าง",
+      "ref_es": "ㅎ arriba a la izquierda, ㅑ por la derecha y luego ㄹ y ㅎ lado a lado en la base."
+    },
+    {
+      "id": "letter-writing::steps.70.prompt",
+      "path": "letter-writing/steps[70]/prompt",
+      "ko": null,
+      "en": "How many strokes in ㅊ?",
+      "current": "",
+      "ref_th": "ㅊ มีกี่เส้น?",
+      "ref_es": "¿Cuántos trazos tiene ㅊ?"
+    },
+    {
+      "id": "letter-writing::steps.70.choices[0]",
+      "path": "letter-writing/steps[70]/choices[0]",
+      "ko": null,
+      "en": "2",
+      "current": "",
+      "ref_th": "2",
+      "ref_es": "2"
+    },
+    {
+      "id": "letter-writing::steps.70.choices[1]",
+      "path": "letter-writing/steps[70]/choices[1]",
+      "ko": null,
+      "en": "3",
+      "current": "",
+      "ref_th": "3",
+      "ref_es": "3"
+    },
+    {
+      "id": "letter-writing::steps.70.choices[2]",
+      "path": "letter-writing/steps[70]/choices[2]",
+      "ko": null,
+      "en": "4",
+      "current": "",
+      "ref_th": "4",
+      "ref_es": "4"
+    },
+    {
+      "id": "letter-writing::steps.70.choices[3]",
+      "path": "letter-writing/steps[70]/choices[3]",
+      "ko": null,
+      "en": "5",
+      "current": "",
+      "ref_th": "5",
+      "ref_es": "5"
+    },
+    {
+      "id": "letter-writing::steps.71.prompt",
+      "path": "letter-writing/steps[71]/prompt",
+      "ko": null,
+      "en": "Which stroke comes FIRST in ㅏ?",
+      "current": "",
+      "ref_th": "เส้นใดเขียนก่อนใน ㅏ?",
+      "ref_es": "¿Qué trazo va PRIMERO en ㅏ?"
+    },
+    {
+      "id": "letter-writing::steps.71.choices[0]",
+      "path": "letter-writing/steps[71]/choices[0]",
+      "ko": null,
+      "en": "The vertical line",
+      "current": "",
+      "ref_th": "เส้นตั้ง",
+      "ref_es": "La línea vertical"
+    },
+    {
+      "id": "letter-writing::steps.71.choices[1]",
+      "path": "letter-writing/steps[71]/choices[1]",
+      "ko": null,
+      "en": "The short tick",
+      "current": "",
+      "ref_th": "ขีดสั้น",
+      "ref_es": "La marca corta"
+    },
+    {
+      "id": "letter-writing::steps.71.choices[2]",
+      "path": "letter-writing/steps[71]/choices[2]",
+      "ko": null,
+      "en": "Either one",
+      "current": "",
+      "ref_th": "เส้นใดก็ได้",
+      "ref_es": "Cualquiera"
+    },
+    {
+      "id": "letter-writing::steps.71.choices[3]",
+      "path": "letter-writing/steps[71]/choices[3]",
+      "ko": null,
+      "en": "The bottom bar",
+      "current": "",
+      "ref_th": "เส้นขวางด้านล่าง",
+      "ref_es": "La barra inferior"
+    },
+    {
+      "id": "letter-writing::steps.72.prompt",
+      "path": "letter-writing/steps[72]/prompt",
+      "ko": null,
+      "en": "How many strokes in 한?",
+      "current": "",
+      "ref_th": "한 มีกี่เส้น?",
+      "ref_es": "¿Cuántos trazos tiene 한?"
+    },
+    {
+      "id": "letter-writing::steps.72.choices[0]",
+      "path": "letter-writing/steps[72]/choices[0]",
+      "ko": null,
+      "en": "5",
+      "current": "",
+      "ref_th": "5",
+      "ref_es": "5"
+    },
+    {
+      "id": "letter-writing::steps.72.choices[1]",
+      "path": "letter-writing/steps[72]/choices[1]",
+      "ko": null,
+      "en": "6",
+      "current": "",
+      "ref_th": "6",
+      "ref_es": "6"
+    },
+    {
+      "id": "letter-writing::steps.72.choices[2]",
+      "path": "letter-writing/steps[72]/choices[2]",
+      "ko": null,
+      "en": "7",
+      "current": "",
+      "ref_th": "7",
+      "ref_es": "7"
+    },
+    {
+      "id": "letter-writing::steps.72.choices[3]",
+      "path": "letter-writing/steps[72]/choices[3]",
+      "ko": null,
+      "en": "8",
+      "current": "",
+      "ref_th": "8",
+      "ref_es": "8"
+    },
+    {
+      "id": "letter-writing::steps.73.title",
+      "path": "letter-writing/steps[73]/title",
+      "ko": "이제 한글을 쓸 수 있어요!",
+      "en": "You can write Hangul!",
+      "current": "",
+      "ref_th": "คุณเขียนฮันกึลได้แล้ว!",
+      "ref_es": "¡Ya sabes escribir hangul!"
+    },
+    {
+      "id": "letter-writing::steps.73.message",
+      "path": "letter-writing/steps[73]/message",
+      "ko": null,
+      "en": "Brilliant work — you have traced all 24 basic letters and built up to full syllable blocks, right through to 햟. Keep practising with the free-play widget just below this lesson: type any Korean word and watch it written stroke by stroke, or trace it yourself. 화이팅!",
+      "current": "",
+      "ref_th": "เยี่ยมมาก — คุณได้ลากเส้นครบทั้ง 24 ตัวอักษรพื้นฐาน และต่อยอดไปจนถึงบล็อกพยางค์เต็มรูปแบบ ไปจนถึง 햟 ฝึกต่อได้ด้วยเครื่องมือฝึกอิสระด้านล่างบทเรียนนี้: พิมพ์คำภาษาเกาหลีคำใดก็ได้แล้วดูมันถูกเขียนทีละเส้น หรือจะลากเส้นเองก็ได้ 화이팅!",
+      "ref_es": "¡Excelente trabajo! Has trazado las 24 letras básicas y has llegado hasta bloques silábicos completos, incluso 햟. Sigue practicando con la herramienta de práctica libre justo debajo de esta lección: escribe cualquier palabra coreana y mírala escribirse trazo a trazo, o trázala tú mismo. ¡화이팅!"
+    },
+    {
+      "id": "nouns::stages.0.name",
+      "path": "nouns/stages[0]/name",
+      "ko": "사람·가족",
+      "en": "People & Family",
+      "current": "",
+      "ref_th": "ผู้คนและครอบครัว",
+      "ref_es": "Personas y Familia"
+    },
+    {
+      "id": "nouns::stages.1.name",
+      "path": "nouns/stages[1]/name",
+      "ko": "장소·시간",
+      "en": "Places & Time",
+      "current": "",
+      "ref_th": "สถานที่และเวลา",
+      "ref_es": "Lugares y Tiempo"
+    },
+    {
+      "id": "nouns::stages.2.name",
+      "path": "nouns/stages[2]/name",
+      "ko": "사물·수사",
+      "en": "Objects & Counters",
+      "current": "",
+      "ref_th": "สิ่งของและตัวนับ",
+      "ref_es": "Objetos y Contadores"
+    },
+    {
+      "id": "nouns::stages.3.name",
+      "path": "nouns/stages[3]/name",
+      "ko": "소유격·마무리",
+      "en": "Possessives",
+      "current": "",
+      "ref_th": "คำแสดงความเป็นเจ้าของ",
+      "ref_es": "Posesivos"
+    },
+    {
+      "id": "nouns::steps.0.title",
+      "path": "nouns/steps[0]/title",
+      "ko": "명사",
+      "en": "Korean Nouns (명사)",
+      "current": "",
+      "ref_th": "คำนามภาษาเกาหลี (명사)",
+      "ref_es": "Sustantivos Coreanos (명사)"
+    },
+    {
+      "id": "nouns::steps.0.body",
+      "path": "nouns/steps[0]/body",
+      "ko": null,
+      "en": "Korean nouns (명사) do not change based on gender or number. The same word 사람 means 'person', 'people', 'a person', and 'the person'. Plurality is understood from context or added separately with words like 들 (들 is a plural suffix, e.g. 사람들 = people). There are no articles like 'a' or 'the'. This makes Korean nouns very easy to learn — you just have to know the word itself.",
+      "current": "",
+      "ref_th": "คำนามภาษาเกาหลี (명사) ไม่เปลี่ยนแปลงตามเพศหรือจำนวน คำเดียวกันอย่าง 사람 หมายถึง \"คน\" \"ผู้คน\" \"คนหนึ่ง\" และ \"คนนั้น\" รูปพหูพจน์สื่อได้จากบริบทหรือเพิ่มด้วย 들 (เช่น 사람들 = ผู้คน) ไม่มีคำนำหน้าอย่าง \"a\" หรือ \"the\" ทำให้คำนามภาษาเกาหลีเรียนได้ง่ายมาก",
+      "ref_es": "Los sustantivos coreanos (명사) no cambian según el género ni el número. La misma palabra 사람 significa \"persona\", \"personas\", \"una persona\" y \"la persona\". El plural se entiende por el contexto o se añade por separado con palabras como 들 (sufijo de plural, p.ej. 사람들 = personas). No hay artículos como \"un/una\" o \"el/la/los/las\". Esto hace que los sustantivos coreanos sean muy fáciles de aprender — solo tienes que saber la palabra en sí."
+    },
+    {
+      "id": "nouns::steps.0.tip.label",
+      "path": "nouns/steps[0]/tip.label",
+      "ko": null,
+      "en": "Plural suffix 들",
+      "current": "",
+      "ref_th": "คำต่อท้ายพหูพจน์ 들",
+      "ref_es": "Sufijo de plural 들"
+    },
+    {
+      "id": "nouns::steps.0.tip.text",
+      "path": "nouns/steps[0]/tip.text",
+      "ko": null,
+      "en": "들 softly adds plurality: 친구들 (friends), 학생들 (students). You can attach 들 to people or animals, but it is optional and often skipped when context is clear.",
+      "current": "",
+      "ref_th": "들 เพิ่มความหมายพหูพจน์อย่างนุ่มนวล: 친구들 (เพื่อนๆ), 학생들 (นักเรียน) สามารถต่อท้ายคำที่หมายถึงคนหรือสัตว์ แต่เป็นทางเลือก มักละไว้เมื่อบริบทชัดเจน",
+      "ref_es": "들 añade suavemente el plural: 친구들 (amigos), 학생들 (estudiantes). Puedes añadir 들 a personas o animales, pero es opcional y suele omitirse cuando el contexto es claro."
+    },
+    {
+      "id": "nouns::steps.1.meaning",
+      "path": "nouns/steps[1]/meaning",
+      "ko": null,
+      "en": "person / human",
+      "current": "",
+      "ref_th": "คน / มนุษย์",
+      "ref_es": "persona / ser humano"
+    },
+    {
+      "id": "nouns::steps.2.meaning",
+      "path": "nouns/steps[2]/meaning",
+      "ko": null,
+      "en": "man / boy",
+      "current": "",
+      "ref_th": "ผู้ชาย / เด็กผู้ชาย",
+      "ref_es": "hombre / chico"
+    },
+    {
+      "id": "nouns::steps.3.meaning",
+      "path": "nouns/steps[3]/meaning",
+      "ko": null,
+      "en": "woman / girl",
+      "current": "",
+      "ref_th": "ผู้หญิง / เด็กผู้หญิง",
+      "ref_es": "mujer / chica"
+    },
+    {
+      "id": "nouns::steps.4.meaning",
+      "path": "nouns/steps[4]/meaning",
+      "ko": null,
+      "en": "child / kid",
+      "current": "",
+      "ref_th": "เด็ก",
+      "ref_es": "niño/a"
+    },
+    {
+      "id": "nouns::steps.5.meaning",
+      "path": "nouns/steps[5]/meaning",
+      "ko": null,
+      "en": "friend",
+      "current": "",
+      "ref_th": "เพื่อน",
+      "ref_es": "amigo/a"
+    },
+    {
+      "id": "nouns::steps.6.prompt",
+      "path": "nouns/steps[6]/prompt",
+      "ko": null,
+      "en": "Which word means 'friend'?",
+      "current": "",
+      "ref_th": "คำใดหมายความว่า \"เพื่อน\"?",
+      "ref_es": "¿Qué palabra significa 'amigo/a'?"
+    },
+    {
+      "id": "nouns::steps.7.title",
+      "path": "nouns/steps[7]/title",
+      "ko": "가족 명사",
+      "en": "Family Nouns (가족 명사)",
+      "current": "",
+      "ref_th": "คำนามครอบครัว (가족 명사)",
+      "ref_es": "Sustantivos de Familia (가족 명사)"
+    },
+    {
+      "id": "nouns::steps.7.body",
+      "path": "nouns/steps[7]/body",
+      "ko": null,
+      "en": "Korean family terms often differ depending on the speaker's gender. 오빠 (oppa) is what a female speaker calls her older brother, while 형 (hyung) is what a male speaker calls his older brother. Similarly, 언니 (unni) = older sister (female speaker) and 누나 (nuna) = older sister (male speaker). For parents, 아버지 / 어머니 are the formal terms, while 아빠 / 엄마 are the casual equivalents.",
+      "current": "",
+      "ref_th": "คำในครอบครัวเกาหลีมักแตกต่างกันตามเพศผู้พูด 오빠 (โอปป้า) คือสิ่งที่ผู้หญิงเรียกพี่ชาย ส่วน 형 (ฮยอง) คือที่ผู้ชายเรียกพี่ชาย เช่นเดียวกัน 언니 (อุนนี่) = พี่สาว (ผู้หญิงพูด) และ 누나 (นูนา) = พี่สาว (ผู้ชายพูด) สำหรับพ่อแม่ 아버지 / 어머니 เป็นคำทางการ ส่วน 아빠 / 엄마 เป็นคำไม่เป็นทางการ",
+      "ref_es": "Los términos familiares coreanos a menudo difieren según el género del hablante. 오빠 (oppa) es como una hablante femenina llama a su hermano mayor, mientras que 형 (hyung) es como un hablante masculino llama a su hermano mayor. Del mismo modo, 언니 (unni) = hermana mayor (hablante femenina) y 누나 (nuna) = hermana mayor (hablante masculino). Para los padres, 아버지 / 어머니 son los términos formales, mientras que 아빠 / 엄마 son los equivalentes informales."
+    },
+    {
+      "id": "nouns::steps.7.tip.label",
+      "path": "nouns/steps[7]/tip.label",
+      "ko": null,
+      "en": "Gender-specific address",
+      "current": "",
+      "ref_th": "การเรียกชื่อตามเพศ",
+      "ref_es": "Tratamiento específico por género"
+    },
+    {
+      "id": "nouns::steps.7.tip.text",
+      "path": "nouns/steps[7]/tip.text",
+      "ko": null,
+      "en": "Unlike English, Korean has no single word 'sibling'. Whether you say 오빠/형 or 언니/누나 depends entirely on your own gender and the relative age of the sibling. This is core to Korean family vocabulary.",
+      "current": "",
+      "ref_th": "ต่างจากภาษาอังกฤษ ภาษาเกาหลีไม่มีคำว่า \"พี่น้อง\" คำเดียว การใช้ 오빠/형 หรือ 언니/누나 ขึ้นอยู่กับเพศของผู้พูดและอายุของพี่น้อง นี่เป็นพื้นฐานของคำศัพท์ครอบครัวเกาหลี",
+      "ref_es": "A diferencia del español, el coreano no tiene una sola palabra para \"hermano/a\". Si dices 오빠/형 o 언니/누나 depende completamente de tu propio género y la edad relativa del hermano/a. Esto es fundamental en el vocabulario familiar coreano."
+    },
+    {
+      "id": "nouns::steps.8.meaning",
+      "path": "nouns/steps[8]/meaning",
+      "ko": null,
+      "en": "father (formal)",
+      "current": "",
+      "ref_th": "พ่อ (ทางการ)",
+      "ref_es": "padre (formal)"
+    },
+    {
+      "id": "nouns::steps.9.meaning",
+      "path": "nouns/steps[9]/meaning",
+      "ko": null,
+      "en": "mother (formal)",
+      "current": "",
+      "ref_th": "แม่ (ทางการ)",
+      "ref_es": "madre (formal)"
+    },
+    {
+      "id": "nouns::steps.10.title",
+      "path": "nouns/steps[10]/title",
+      "ko": "장소 명사",
+      "en": "Place Nouns (장소 명사)",
+      "current": "",
+      "ref_th": "คำนามสถานที่ (장소 명사)",
+      "ref_es": "Sustantivos de Lugar (장소 명사)"
+    },
+    {
+      "id": "nouns::steps.10.body",
+      "path": "nouns/steps[10]/body",
+      "ko": null,
+      "en": "Korean place nouns follow the same no-article rule as all other nouns. 학교 means 'school', 'a school', or 'the school' — context tells you which. When giving directions or stating location, Korean adds the particle 에 (at/in) after the place noun: 학교에 가요 (I go to school). Place nouns are among the most practical words to learn early.",
+      "current": "",
+      "ref_th": "คำนามสถานที่ภาษาเกาหลีใช้กฎไม่ใช้คำนำหน้าเหมือนกับคำนามอื่นๆ 학교 หมายถึง \"โรงเรียน\" \"โรงเรียนหนึ่ง\" หรือ \"โรงเรียนนั้น\" ขึ้นอยู่กับบริบท เมื่อบอกทิศทางหรือตำแหน่ง ภาษาเกาหลีเพิ่มคำช่วย 에 (ที่/ใน) หลังคำนามสถานที่: 학교에 가요 (ฉันไปโรงเรียน)",
+      "ref_es": "Los sustantivos de lugar coreanos siguen la misma regla sin artículo que todos los demás sustantivos. 학교 significa \"escuela\", \"una escuela\" o \"la escuela\" — el contexto te dice cuál. Al dar indicaciones o expresar ubicación, el coreano añade la partícula 에 (en/a) después del sustantivo de lugar: 학교에 가요 (Voy a la escuela). Los sustantivos de lugar están entre las palabras más prácticas para aprender pronto."
+    },
+    {
+      "id": "nouns::steps.10.tip.label",
+      "path": "nouns/steps[10]/tip.label",
+      "ko": null,
+      "en": "Location particle 에",
+      "current": "",
+      "ref_th": "คำช่วยตำแหน่ง 에",
+      "ref_es": "Partícula de lugar 에"
+    },
+    {
+      "id": "nouns::steps.10.tip.text",
+      "path": "nouns/steps[10]/tip.text",
+      "ko": null,
+      "en": "Attach 에 to a place noun to mean 'at', 'in', or 'to': 집에 (at home), 학교에 (to school), 식당에 (at the restaurant). 에서 means 'from' or 'at (doing something)': 학교에서 공부해요 (I study at school).",
+      "current": "",
+      "ref_th": "ต่อ 에 หลังคำนามสถานที่เพื่อหมายถึง \"ที่\" \"ใน\" หรือ \"ไปยัง\": 집에 (ที่บ้าน) 학교에 (ไปโรงเรียน) 식당에 (ที่ร้านอาหาร) 에서 หมายถึง \"จาก\" หรือ \"ที่ (กำลังทำอะไร)\": 학교에서 공부해요 (ฉันเรียนที่โรงเรียน)",
+      "ref_es": "Añade 에 a un sustantivo de lugar para significar \"en\", \"a\" o \"hacia\": 집에 (en casa), 학교에 (a la escuela), 식당에 (en el restaurante). 에서 significa \"desde\" o \"en (haciendo algo)\": 학교에서 공부해요 (Estudio en la escuela)."
+    },
+    {
+      "id": "nouns::steps.11.meaning",
+      "path": "nouns/steps[11]/meaning",
+      "ko": null,
+      "en": "house / home",
+      "current": "",
+      "ref_th": "บ้าน",
+      "ref_es": "casa / hogar"
+    },
+    {
+      "id": "nouns::steps.12.meaning",
+      "path": "nouns/steps[12]/meaning",
+      "ko": null,
+      "en": "school",
+      "current": "",
+      "ref_th": "โรงเรียน",
+      "ref_es": "escuela"
+    },
+    {
+      "id": "nouns::steps.13.meaning",
+      "path": "nouns/steps[13]/meaning",
+      "ko": null,
+      "en": "restaurant / dining hall",
+      "current": "",
+      "ref_th": "ร้านอาหาร / โรงอาหาร",
+      "ref_es": "restaurante / comedor"
+    },
+    {
+      "id": "nouns::steps.14.meaning",
+      "path": "nouns/steps[14]/meaning",
+      "ko": null,
+      "en": "hospital / clinic",
+      "current": "",
+      "ref_th": "โรงพยาบาล / คลินิก",
+      "ref_es": "hospital / clínica"
+    },
+    {
+      "id": "nouns::steps.15.prompt",
+      "path": "nouns/steps[15]/prompt",
+      "ko": null,
+      "en": "Which word means 'school'?",
+      "current": "",
+      "ref_th": "คำใดหมายความว่า \"โรงเรียน\"?",
+      "ref_es": "¿Qué palabra significa 'escuela'?"
+    },
+    {
+      "id": "nouns::steps.16.title",
+      "path": "nouns/steps[16]/title",
+      "ko": "시간 명사",
+      "en": "Time Nouns (시간 명사)",
+      "current": "",
+      "ref_th": "คำนามเวลา (시간 명사)",
+      "ref_es": "Sustantivos de Tiempo (시간 명사)"
+    },
+    {
+      "id": "nouns::steps.16.body",
+      "path": "nouns/steps[16]/body",
+      "ko": null,
+      "en": "Time nouns in Korean work independently — no conjugation needed. You simply state the time word at the start of a sentence: 오늘 가요 (I'm going today), 내일 만나요 (Let's meet tomorrow). Korean time expressions use Sino-Korean numbers for hours and native Korean numbers for minutes. The most essential time words are 오늘 (today), 내일 (tomorrow), 어제 (yesterday), and 지금 (now).",
+      "current": "",
+      "ref_th": "คำนามเวลาในภาษาเกาหลีใช้งานได้อิสระ ไม่ต้องผัน เพียงแค่ระบุคำเวลาตอนต้นประโยค: 오늘 가요 (ฉันไปวันนี้) 내일 만나요 (เจอกันพรุ่งนี้) คำเวลาสำคัญที่สุดคือ 오늘 (วันนี้) 내일 (พรุ่งนี้) 어제 (เมื่อวาน) และ 지금 (ตอนนี้)",
+      "ref_es": "Los sustantivos de tiempo en coreano funcionan de forma independiente — no se necesita conjugación. Simplemente dices la palabra de tiempo al principio de la oración: 오늘 가요 (Voy hoy), 내일 만나요 (Quedamos mañana). Las expresiones de tiempo coreanas usan números sino-coreanos para las horas y números coreanos nativos para los minutos. Las palabras de tiempo más esenciales son 오늘 (hoy), 내일 (mañana), 어제 (ayer) y 지금 (ahora)."
+    },
+    {
+      "id": "nouns::steps.16.tip.label",
+      "path": "nouns/steps[16]/tip.label",
+      "ko": null,
+      "en": "Time words as sentence openers",
+      "current": "",
+      "ref_th": "คำเวลาเป็นตัวเปิดประโยค",
+      "ref_es": "Palabras de tiempo al inicio de la oración"
+    },
+    {
+      "id": "nouns::steps.16.tip.text",
+      "path": "nouns/steps[16]/tip.text",
+      "ko": null,
+      "en": "Korean is very flexible with word order, but time expressions usually come early in the sentence — before the subject or right after it. '오늘 학교에 가요' and '학교에 오늘 가요' are both correct, though the first is more natural.",
+      "current": "",
+      "ref_th": "ภาษาเกาหลียืดหยุ่นมากในลำดับคำ แต่คำเวลามักมาต้นประโยค \"오늘 학교에 가요\" และ \"학교에 오늘 가요\" ถูกทั้งคู่ แต่อันแรกเป็นธรรมชาติกว่า",
+      "ref_es": "El coreano es muy flexible con el orden de las palabras, pero las expresiones de tiempo suelen aparecer al principio de la oración — antes del sujeto o justo después. \"오늘 학교에 가요\" y \"학교에 오늘 가요\" son ambas correctas, aunque la primera es más natural."
+    },
+    {
+      "id": "nouns::steps.17.meaning",
+      "path": "nouns/steps[17]/meaning",
+      "ko": null,
+      "en": "today",
+      "current": "",
+      "ref_th": "วันนี้",
+      "ref_es": "hoy"
+    },
+    {
+      "id": "nouns::steps.18.prompt",
+      "path": "nouns/steps[18]/prompt",
+      "ko": null,
+      "en": "Which word means 'today'?",
+      "current": "",
+      "ref_th": "คำใดหมายความว่า \"วันนี้\"?",
+      "ref_es": "¿Qué palabra significa 'hoy'?"
+    },
+    {
+      "id": "nouns::steps.19.title",
+      "path": "nouns/steps[19]/title",
+      "ko": "사물 명사",
+      "en": "Object Nouns (사물 명사)",
+      "current": "",
+      "ref_th": "คำนามสิ่งของ (사물 명사)",
+      "ref_es": "Sustantivos de Objetos (사물 명사)"
+    },
+    {
+      "id": "nouns::steps.19.body",
+      "path": "nouns/steps[19]/body",
+      "ko": null,
+      "en": "Everyday objects are among the most immediately useful Korean words. Korean has both native Korean words and Sino-Korean (Chinese-origin) words for objects, and in many cases Konglish (loan words from English) is used: 커피 (coffee), 핸드폰 (hand phone / cell phone). When the object is the direct receiver of a verb, add 을/를 after the noun: 책을 읽어요 (I read a book). This is the object-marking particle.",
+      "current": "",
+      "ref_th": "สิ่งของในชีวิตประจำวันเป็นคำศัพท์ที่มีประโยชน์ที่สุด ภาษาเกาหลีมีทั้งคำเกาหลีดั้งเดิม คำจีน-เกาหลี (Sino-Korean) และคำยืมจากภาษาอังกฤษ (Konglish): 커피 (กาแฟ) 핸드폰 (โทรศัพท์มือถือ) เมื่อสิ่งของเป็นกรรมตรงของกริยา ให้เพิ่ม 을/를 หลังคำนาม: 책을 읽어요 (ฉันอ่านหนังสือ)",
+      "ref_es": "Los objetos cotidianos están entre las palabras coreanas más inmediatamente útiles. El coreano tiene tanto palabras coreanas nativas como sino-coreanas (de origen chino) para los objetos, y en muchos casos se usa el Konglish (préstamos del inglés): 커피 (café), 핸드폰 (teléfono móvil). Cuando el objeto es el receptor directo de un verbo, añade 을/를 después del sustantivo: 책을 읽어요 (Leo un libro). Esta es la partícula de objeto."
+    },
+    {
+      "id": "nouns::steps.19.tip.label",
+      "path": "nouns/steps[19]/tip.label",
+      "ko": null,
+      "en": "Object particle 을/를",
+      "current": "",
+      "ref_th": "คำช่วยกรรม 을/를",
+      "ref_es": "Partícula de objeto 을/를"
+    },
+    {
+      "id": "nouns::steps.19.tip.text",
+      "path": "nouns/steps[19]/tip.text",
+      "ko": null,
+      "en": "Use 을 after a noun ending in a consonant: 책을. Use 를 after a noun ending in a vowel: 가방을. In casual speech, this particle is often dropped entirely.",
+      "current": "",
+      "ref_th": "ใช้ 을 หลังคำที่ลงท้ายด้วยพยัญชนะ: 책을 ใช้ 를 หลังคำที่ลงท้ายด้วยสระ: 가방을 ในการพูดทั่วไป คำช่วยนี้มักละไว้",
+      "ref_es": "Usa 을 después de un sustantivo que termina en consonante: 책을. Usa 를 después de un sustantivo que termina en vocal: 가방을. En el habla informal, esta partícula se omite con frecuencia."
+    },
+    {
+      "id": "nouns::steps.20.meaning",
+      "path": "nouns/steps[20]/meaning",
+      "ko": null,
+      "en": "book",
+      "current": "",
+      "ref_th": "หนังสือ",
+      "ref_es": "libro"
+    },
+    {
+      "id": "nouns::steps.21.meaning",
+      "path": "nouns/steps[21]/meaning",
+      "ko": null,
+      "en": "bag / backpack",
+      "current": "",
+      "ref_th": "กระเป๋า / เป้สะพาย",
+      "ref_es": "bolso / mochila"
+    },
+    {
+      "id": "nouns::steps.22.meaning",
+      "path": "nouns/steps[22]/meaning",
+      "ko": null,
+      "en": "money",
+      "current": "",
+      "ref_th": "เงิน",
+      "ref_es": "dinero"
+    },
+    {
+      "id": "nouns::steps.23.prompt",
+      "path": "nouns/steps[23]/prompt",
+      "ko": null,
+      "en": "Which word means 'money'?",
+      "current": "",
+      "ref_th": "คำใดหมายความว่า \"เงิน\"?",
+      "ref_es": "¿Qué palabra significa 'dinero'?"
+    },
+    {
+      "id": "nouns::steps.24.title",
+      "path": "nouns/steps[24]/title",
+      "ko": "수사",
+      "en": "Korean Counters (수사)",
+      "current": "",
+      "ref_th": "ตัวนับภาษาเกาหลี (수사)",
+      "ref_es": "Contadores Coreanos (수사)"
+    },
+    {
+      "id": "nouns::steps.24.body",
+      "path": "nouns/steps[24]/body",
+      "ko": null,
+      "en": "Korean uses counting words called counters (수사) that attach to numbers when counting specific things. The counter 개 is used for general objects: 한 개 (one thing), 세 개 (three things). 명 is used for counting people: 두 명 (two people). 잔 is used for cups/glasses: 한 잔 (one cup). The pattern is: number + counter, placed right before or after the noun. Korean numbers for counters use the native Korean set: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5).",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีใช้คำนับที่เรียกว่าลักษณนาม (수사) ซึ่งต่อท้ายตัวเลขเมื่อนับสิ่งของเฉพาะ 개 ใช้สำหรับสิ่งของทั่วไป: 한 개 (หนึ่งชิ้น) 명 ใช้นับคน: 두 명 (สองคน) 잔 ใช้นับถ้วย/แก้ว: 한 잔 (หนึ่งแก้ว) รูปแบบคือ: ตัวเลข + ลักษณนาม ภาษาเกาหลีใช้ตัวเลขแบบเกาหลีดั้งเดิมกับลักษณนาม: 하나(1) 둘(2) 셋(3) 넷(4) 다섯(5)",
+      "ref_es": "El coreano usa palabras de conteo llamadas contadores (수사) que se unen a los números al contar cosas específicas. El contador 개 se usa para objetos generales: 한 개 (una cosa), 세 개 (tres cosas). 명 se usa para contar personas: 두 명 (dos personas). 잔 se usa para tazas/vasos: 한 잔 (una taza). El patrón es: número + contador, colocado justo antes o después del sustantivo. Los números coreanos para contadores usan el conjunto nativo: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5)."
+    },
+    {
+      "id": "nouns::steps.24.tip.label",
+      "path": "nouns/steps[24]/tip.label",
+      "ko": null,
+      "en": "Native numbers with counters",
+      "current": "",
+      "ref_th": "ตัวเลขเกาหลีดั้งเดิมกับตัวนับ",
+      "ref_es": "Números nativos con contadores"
+    },
+    {
+      "id": "nouns::steps.24.tip.text",
+      "path": "nouns/steps[24]/tip.text",
+      "ko": null,
+      "en": "When combining native Korean numbers with counters, the number changes slightly: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네. So it is 한 개 (not 하나 개), 두 명 (not 둘 명).",
+      "current": "",
+      "ref_th": "เมื่อรวมตัวเลขเกาหลีดั้งเดิมกับตัวนับ ตัวเลขจะเปลี่ยนเล็กน้อย: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네 ดังนั้นจึงเป็น 한 개 (ไม่ใช่ 하나 개) 두 명 (ไม่ใช่ 둘 명)",
+      "ref_es": "Al combinar números coreanos nativos con contadores, el número cambia ligeramente: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네. Por eso es 한 개 (no 하나 개), 두 명 (no 둘 명)."
+    },
+    {
+      "id": "nouns::steps.25.meaning",
+      "path": "nouns/steps[25]/meaning",
+      "ko": null,
+      "en": "three people (명 = person counter)",
+      "current": "",
+      "ref_th": "สามคน (명 = ลักษณนามคน)",
+      "ref_es": "tres personas (명 = contador de personas)"
+    },
+    {
+      "id": "nouns::steps.26.prompt",
+      "path": "nouns/steps[26]/prompt",
+      "ko": null,
+      "en": "How do you say 'four people' in Korean?",
+      "current": "",
+      "ref_th": "จะพูดว่า \"สี่คน\" เป็นภาษาเกาหลีได้อย่างไร?",
+      "ref_es": "¿Cómo dices 'cuatro personas' en coreano?"
+    },
+    {
+      "id": "nouns::steps.27.title",
+      "path": "nouns/steps[27]/title",
+      "ko": "소유격 의",
+      "en": "Possessive Marker 의",
+      "current": "",
+      "ref_th": "คำแสดงความเป็นเจ้าของ 의",
+      "ref_es": "Marcador Posesivo 의"
+    },
+    {
+      "id": "nouns::steps.27.body",
+      "path": "nouns/steps[27]/body",
+      "ko": null,
+      "en": "The possessive marker 의 (ui, often pronounced '에') attaches to a noun to show ownership, like English 's. 저의 가방 = my bag, 친구의 집 = friend's house. In everyday speech, 의 is commonly dropped: 제 가방 (my bag, polite) or 내 가방 (my bag, casual). The pronouns 저 and 나 have special possessive forms: 제 (polite, my) and 내 (casual, my).",
+      "current": "",
+      "ref_th": "คำแสดงความเป็นเจ้าของ 의 (ออกเสียงว่า \"อุย\" มักออกเป็น \"เอ\") ต่อท้ายคำนามเพื่อแสดงความเป็นเจ้าของ เหมือน 's ในภาษาอังกฤษ 저의 가방 = กระเป๋าของฉัน 친구의 집 = บ้านของเพื่อน ในการพูดทั่วไป 의 มักละไว้: 제 가방 (กระเป๋าของฉัน สุภาพ) หรือ 내 가방 (กระเป๋าของฉัน ไม่เป็นทางการ) สรรพนาม 저 และ 나 มีรูปแสดงความเป็นเจ้าของพิเศษ คือ 제 (สุภาพ, ของฉัน) และ 내 (ไม่เป็นทางการ, ของฉัน)",
+      "ref_es": "El marcador posesivo 의 (ui, a menudo pronunciado \"에\") se une a un sustantivo para indicar posesión, como el genitivo del español. 저의 가방 = mi bolso, 친구의 집 = la casa del amigo. En el habla cotidiana, 의 se omite comúnmente: 제 가방 (mi bolso, educado) o 내 가방 (mi bolso, informal). Los pronombres 저 y 나 tienen formas posesivas especiales: 제 (educado, \"mi\") y 내 (informal, \"mi\")."
+    },
+    {
+      "id": "nouns::steps.27.tip.label",
+      "path": "nouns/steps[27]/tip.label",
+      "ko": null,
+      "en": "제 vs 내",
+      "current": "",
+      "ref_th": "제 vs 내",
+      "ref_es": "제 vs 내"
+    },
+    {
+      "id": "nouns::steps.27.tip.text",
+      "path": "nouns/steps[27]/tip.text",
+      "ko": null,
+      "en": "제 is the polite/humble possessive 'my' (from 저 = I, polite). 내 is the casual possessive 'my' (from 나 = I, casual). Use 제 with strangers or seniors, 내 with close friends.",
+      "current": "",
+      "ref_th": "제 คือรูปสุภาพของ \"ของฉัน\" (จาก 저 = ฉัน สุภาพ) 내 คือรูปไม่เป็นทางการของ \"ของฉัน\" (จาก 나 = ฉัน ไม่เป็นทางการ) ใช้ 제 กับคนแปลกหน้าหรือผู้ใหญ่ ใช้ 내 กับเพื่อนสนิท",
+      "ref_es": "제 es el \"mi\" posesivo educado/humilde (de 저 = yo, educado). 내 es el \"mi\" posesivo informal (de 나 = yo, informal). Usa 제 con desconocidos o mayores, 내 con amigos cercanos."
+    },
+    {
+      "id": "nouns::steps.28.meaning",
+      "path": "nouns/steps[28]/meaning",
+      "ko": null,
+      "en": "my bag (polite)",
+      "current": "",
+      "ref_th": "กระเป๋าของฉัน (สุภาพ)",
+      "ref_es": "mi bolso (educado)"
+    },
+    {
+      "id": "nouns::steps.29.meaning",
+      "path": "nouns/steps[29]/meaning",
+      "ko": null,
+      "en": "my friend (casual)",
+      "current": "",
+      "ref_th": "เพื่อนของฉัน (ไม่เป็นทางการ)",
+      "ref_es": "mi amigo/a (informal)"
+    },
+    {
+      "id": "nouns::steps.30.prompt",
+      "path": "nouns/steps[30]/prompt",
+      "ko": null,
+      "en": "How do you say 'my house' in polite Korean?",
+      "current": "",
+      "ref_th": "จะพูดว่า \"บ้านของฉัน\" แบบสุภาพเป็นภาษาเกาหลีได้อย่างไร?",
+      "ref_es": "¿Cómo dices 'mi casa' en coreano educado?"
+    },
+    {
+      "id": "nouns::steps.31.meaning",
+      "path": "nouns/steps[31]/meaning",
+      "ko": null,
+      "en": "friend's house",
+      "current": "",
+      "ref_th": "บ้านของเพื่อน",
+      "ref_es": "la casa del amigo/a"
+    },
+    {
+      "id": "nouns::steps.32.prompt",
+      "path": "nouns/steps[32]/prompt",
+      "ko": null,
+      "en": "Which phrase correctly says 'the child's book'?",
+      "current": "",
+      "ref_th": "วลีใดกล่าวว่า \"หนังสือของเด็ก\" ได้ถูกต้อง?",
+      "ref_es": "¿Qué frase dice correctamente 'el libro del niño'?"
+    },
+    {
+      "id": "nouns::steps.33.title",
+      "path": "nouns/steps[33]/title",
+      "ko": "명사 완료!",
+      "en": "Nouns Complete!",
+      "current": "",
+      "ref_th": "เรียนจบคำนามแล้ว!",
+      "ref_es": "¡Sustantivos Completados!"
+    },
+    {
+      "id": "nouns::steps.33.message",
+      "path": "nouns/steps[33]/message",
+      "ko": null,
+      "en": "You've covered the essential Korean nouns — people, places, objects, time words, counters, and possessives. Keep going with Pronouns next.",
+      "current": "",
+      "ref_th": "คุณเรียนรู้คำนามภาษาเกาหลีสำคัญครบแล้ว — ผู้คน สถานที่ สิ่งของ คำเวลา ตัวนับ และคำแสดงความเป็นเจ้าของ ไปต่อกับสรรพนามได้เลย!",
+      "ref_es": "Has aprendido los sustantivos coreanos esenciales — personas, lugares, objetos, palabras de tiempo, contadores y posesivos. ¡Continúa con los Pronombres a continuación!"
+    },
+    {
+      "id": "pronouns::stages.0.name",
+      "path": "pronouns/stages[0]/name",
+      "ko": "1·2인칭",
+      "en": "First & Second Person",
+      "current": "",
+      "ref_th": "บุรุษที่หนึ่งและสอง",
+      "ref_es": "Primera y Segunda Persona"
+    },
+    {
+      "id": "pronouns::stages.1.name",
+      "path": "pronouns/stages[1]/name",
+      "ko": "3인칭·우리",
+      "en": "Third Person & We",
+      "current": "",
+      "ref_th": "บุรุษที่สามและ \"เรา\"",
+      "ref_es": "Tercera Persona y Nosotros"
+    },
+    {
+      "id": "pronouns::stages.2.name",
+      "path": "pronouns/stages[2]/name",
+      "ko": "지시대명사",
+      "en": "Demonstratives",
+      "current": "",
+      "ref_th": "สรรพนามชี้เฉพาะ",
+      "ref_es": "Demostrativos"
+    },
+    {
+      "id": "pronouns::stages.3.name",
+      "path": "pronouns/stages[3]/name",
+      "ko": "의문대명사",
+      "en": "Question Pronouns",
+      "current": "",
+      "ref_th": "สรรพนามคำถาม",
+      "ref_es": "Pronombres Interrogativos"
+    },
+    {
+      "id": "pronouns::steps.0.title",
+      "path": "pronouns/steps[0]/title",
+      "ko": "대명사 개요",
+      "en": "Korean Pronouns Overview",
+      "current": "",
+      "ref_th": "ภาพรวมสรรพนามภาษาเกาหลี",
+      "ref_es": "Resumen de los Pronombres Coreanos"
+    },
+    {
+      "id": "pronouns::steps.0.body",
+      "path": "pronouns/steps[0]/body",
+      "ko": null,
+      "en": "Korean has two registers for first-person pronouns: polite and casual. 저 (jeo) is the polite 'I', used with strangers, seniors, and in formal settings. 나 (na) is the casual 'I', used with close friends and younger people. Crucially, Korean very often drops the subject pronoun entirely when context is clear — 어디 가요? can mean 'Where are you going?' without any pronoun at all. Mastering when NOT to use a pronoun is as important as knowing the pronouns themselves.",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีมีสรรพนามบุรุษที่หนึ่งสองแบบ: สุภาพและไม่เป็นทางการ 저 (จอ) คือ \"ฉัน\" แบบสุภาพ ใช้กับคนแปลกหน้าหรือผู้ใหญ่กว่า 나 (นา) คือ \"ฉัน\" ไม่เป็นทางการ ใช้กับเพื่อนสนิทหรือผู้น้อย ในบริบทที่เป็นทางการ เช่น ที่ทำงานหรือพบครั้งแรก ให้ใช้ 저 เสมอ",
+      "ref_es": "El coreano tiene dos registros para los pronombres de primera persona: educado e informal. 저 (jeo) es el \"yo\" educado, usado con desconocidos, mayores y en entornos formales. 나 (na) es el \"yo\" informal, usado con amigos cercanos y personas más jóvenes. Es fundamental que el coreano a menudo omite el pronombre de sujeto por completo cuando el contexto es claro — 어디 가요? puede significar \"¿Adónde vas?\" sin ningún pronombre. Dominar cuándo NO usar un pronombre es tan importante como saber los pronombres."
+    },
+    {
+      "id": "pronouns::steps.0.tip.label",
+      "path": "pronouns/steps[0]/tip.label",
+      "ko": null,
+      "en": "Pro-drop language",
+      "current": "",
+      "ref_th": "ภาษาที่ละประธานได้",
+      "ref_es": "Lengua de omisión de sujeto (pro-drop)"
+    },
+    {
+      "id": "pronouns::steps.0.tip.text",
+      "path": "pronouns/steps[0]/tip.text",
+      "ko": null,
+      "en": "Korean is a pro-drop language — when the subject is obvious from context or was mentioned recently, drop the pronoun. Leaving it in can sound unnatural or even slightly rude (overly direct). 저 괜찮아요 and 괜찮아요 both mean 'I'm fine', but the shorter form is more natural.",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีสามารถละประธานได้ — เมื่อประธานชัดเจนจากบริบทหรือกล่าวถึงแล้ว ก็มักละไว้ 가요 อาจหมายถึง \"ฉันไป\" \"คุณไป\" หรือ \"เขาไป\" ขึ้นอยู่กับบริบท",
+      "ref_es": "El coreano es una lengua de omisión del sujeto (pro-drop) — cuando el sujeto es obvio por el contexto o fue mencionado recientemente, omite el pronombre. Dejarlo puede sonar antinatural o incluso ligeramente grosero (demasiado directo). 저 괜찮아요 y 괜찮아요 ambos significan \"Estoy bien\", pero la forma más corta es más natural."
+    },
+    {
+      "id": "pronouns::steps.1.meaning",
+      "path": "pronouns/steps[1]/meaning",
+      "ko": null,
+      "en": "I / me (polite)",
+      "current": "",
+      "ref_th": "ฉัน / ผม / หนู (สุภาพ)",
+      "ref_es": "yo / me (educado)"
+    },
+    {
+      "id": "pronouns::steps.2.meaning",
+      "path": "pronouns/steps[2]/meaning",
+      "ko": null,
+      "en": "I / me (casual)",
+      "current": "",
+      "ref_th": "ฉัน / ผม (ไม่เป็นทางการ)",
+      "ref_es": "yo / me (informal)"
+    },
+    {
+      "id": "pronouns::steps.3.meaning",
+      "path": "pronouns/steps[3]/meaning",
+      "ko": null,
+      "en": "I (subject, polite) — 저 + subject marker 가 → 제가",
+      "current": "",
+      "ref_th": "ฉัน (ประธาน สุภาพ) — 저 + ตัวแสดงประธาน 가 → 제가",
+      "ref_es": "yo (sujeto, educado) — 저 + marcador de sujeto 가 → 제가"
+    },
+    {
+      "id": "pronouns::steps.4.meaning",
+      "path": "pronouns/steps[4]/meaning",
+      "ko": null,
+      "en": "you (casual) — rarely said to adults",
+      "current": "",
+      "ref_th": "คุณ (ไม่เป็นทางการ) — แทบไม่ใช้กับผู้ใหญ่",
+      "ref_es": "tú (informal) — raro con adultos"
+    },
+    {
+      "id": "pronouns::steps.5.prompt",
+      "path": "pronouns/steps[5]/prompt",
+      "ko": null,
+      "en": "You are meeting your new boss for the first time. Which word for 'I' do you use?",
+      "current": "",
+      "ref_th": "คุณพบหัวหน้าคนใหม่เป็นครั้งแรก คุณใช้คำใดแทน \"ฉัน\"?",
+      "ref_es": "Conoces a tu nuevo jefe por primera vez. ¿Qué palabra para 'yo' usas?"
+    },
+    {
+      "id": "pronouns::steps.6.title",
+      "path": "pronouns/steps[6]/title",
+      "ko": "'당신'과 호칭",
+      "en": "Saying 'You' in Korean",
+      "current": "",
+      "ref_th": "การพูดถึง \"คุณ\" ในภาษาเกาหลี",
+      "ref_es": "Cómo decir 'tú' en coreano"
+    },
+    {
+      "id": "pronouns::steps.6.body",
+      "path": "pronouns/steps[6]/body",
+      "ko": null,
+      "en": "Korean avoids the direct pronoun 'you' (당신) in most everyday speech — it can sound cold, confrontational, or overly formal depending on context. Instead, Koreans use the person's name, title, or relationship term. A teacher would be called 선생님 (teacher), not 당신. A friend would be called by name. The pronoun 당신 appears in songs, poetry, and formal writing but is uncommon in daily conversation.",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีหลีกเลี่ยงการใช้สรรพนาม \"คุณ\" (당신) โดยตรงในการพูดทั่วไป เพราะอาจฟังดูเย็นชา ต่อต้าน หรือเป็นทางการเกินไป แทนที่จะใช้ 당신 ชาวเกาหลีใช้ชื่อ + 씨 หรือตำแหน่ง ในซีรีส์ K-Drama คุณอาจได้ยิน 당신 ในบทสนทนาที่รุนแรงหรือเนื้อเพลง",
+      "ref_es": "El coreano evita el pronombre directo \"tú\" (당신) en la mayoría del habla cotidiana — puede sonar frío, confrontacional o excesivamente formal según el contexto. En cambio, los coreanos usan el nombre de la persona, el título o el término de relación. A un profesor se le llama 선생님 (profesor/a), no 당신. A un amigo se le llama por su nombre. El pronombre 당신 aparece en canciones, poesía y escritura formal, pero no es habitual en la conversación diaria."
+    },
+    {
+      "id": "pronouns::steps.6.tip.label",
+      "path": "pronouns/steps[6]/tip.label",
+      "ko": null,
+      "en": "How to address people without 당신",
+      "current": "",
+      "ref_th": "วิธีพูดถึงคนโดยไม่ใช้ 당신",
+      "ref_es": "Cómo dirigirse a las personas sin 당신"
+    },
+    {
+      "id": "pronouns::steps.6.tip.text",
+      "path": "pronouns/steps[6]/tip.text",
+      "ko": null,
+      "en": "Use the person's name + 씨 for adults you don't know well: 김민준씨. Use their job title: 사장님 (boss), 과장님 (manager). Use relationship terms: 언니, 오빠, 아저씨. These are far more natural than 당신.",
+      "current": "",
+      "ref_th": "ใช้ชื่อบุคคล + 씨 สำหรับผู้ใหญ่ที่ไม่คุ้นเคย: 김민준씨 ใช้ตำแหน่ง: 사장님 (เจ้านาย) 과장님 (ผู้จัดการ) กับเพื่อน: เรียกชื่อโดยตรง",
+      "ref_es": "Usa el nombre de la persona + 씨 para adultos que no conoces bien: 김민준씨. Usa su título laboral: 사장님 (jefe), 과장님 (gerente). Usa términos de relación: 언니, 오빠, 아저씨. Estos son mucho más naturales que 당신."
+    },
+    {
+      "id": "pronouns::steps.7.meaning",
+      "path": "pronouns/steps[7]/meaning",
+      "ko": null,
+      "en": "I (topic, polite) — 저 + topic marker 는 → 저는",
+      "current": "",
+      "ref_th": "ฉัน (หัวข้อ สุภาพ) — 저 + ตัวแสดงหัวข้อ 는 → 저는",
+      "ref_es": "yo (tema, educado) — 저 + marcador de tema 는 → 저는"
+    },
+    {
+      "id": "pronouns::steps.8.prompt",
+      "path": "pronouns/steps[8]/prompt",
+      "ko": null,
+      "en": "Why do Koreans rarely say 당신 in conversation?",
+      "current": "",
+      "ref_th": "ทำไมชาวเกาหลีจึงแทบไม่พูด 당신 ในการสนทนา?",
+      "ref_es": "¿Por qué los coreanos rara vez dicen 당신 en la conversación?"
+    },
+    {
+      "id": "pronouns::steps.8.choices[0]",
+      "path": "pronouns/steps[8]/choices[0]",
+      "ko": null,
+      "en": "It is grammatically incorrect",
+      "current": "",
+      "ref_th": "ผิดหลักไวยากรณ์",
+      "ref_es": "Es gramaticalmente incorrecto"
+    },
+    {
+      "id": "pronouns::steps.8.choices[1]",
+      "path": "pronouns/steps[8]/choices[1]",
+      "ko": null,
+      "en": "It can sound cold or confrontational",
+      "current": "",
+      "ref_th": "อาจฟังดูเย็นชาหรือต่อต้าน",
+      "ref_es": "Puede sonar frío o confrontacional"
+    },
+    {
+      "id": "pronouns::steps.8.choices[2]",
+      "path": "pronouns/steps[8]/choices[2]",
+      "ko": null,
+      "en": "It is reserved for speaking to children",
+      "current": "",
+      "ref_th": "ใช้เฉพาะเวลาพูดกับเด็ก",
+      "ref_es": "Se reserva para hablar con niños"
+    },
+    {
+      "id": "pronouns::steps.8.choices[3]",
+      "path": "pronouns/steps[8]/choices[3]",
+      "ko": null,
+      "en": "It is recent slang among young people",
+      "current": "",
+      "ref_th": "เป็นคำสแลงใหม่ของวัยรุ่น",
+      "ref_es": "Es jerga reciente entre los jóvenes"
+    },
+    {
+      "id": "pronouns::steps.9.title",
+      "path": "pronouns/steps[9]/title",
+      "ko": "그·그녀·우리",
+      "en": "Third Person & We (그·그녀·우리)",
+      "current": "",
+      "ref_th": "บุรุษที่สามและ \"เรา\" (그·그녀·우리)",
+      "ref_es": "Tercera Persona y Nosotros (그·그녀·우리)"
+    },
+    {
+      "id": "pronouns::steps.9.body",
+      "path": "pronouns/steps[9]/body",
+      "ko": null,
+      "en": "Korean rarely uses he/she pronouns in speech. Instead, Koreans say the person's name or use demonstratives: 그 사람 (that person), 이 사람 (this person). 그 (geu) and 그녀 (geunyeo) do exist — he/she — but they appear mostly in writing and translation. 우리 (uri) means 'we' or 'our'. Interestingly, Koreans use 우리 where English uses 'my': 우리 엄마 (my mom, literally 'our mom') — this reflects a collectivist cultural sense of shared family.",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีแทบไม่ใช้สรรพนามบุรุษที่สาม \"เขา/เธอ\" ในการพูด แต่จะพูดชื่อคนนั้นหรือใช้คำชี้เฉพาะ: 그 사람 (คนนั้น) 우리 (อูรี) มักหมายถึง \"ของเรา/ของฉัน\" โดยเฉพาะเมื่อพูดถึงครอบครัวหรือประเทศ เช่น 우리 나라 (ประเทศของเรา/ฉัน)",
+      "ref_es": "El coreano rara vez usa pronombres de tercera persona (él/ella) en el habla. En cambio, los coreanos dicen el nombre de la persona o usan demostrativos: 그 사람 (esa persona), 이 사람 (esta persona). 그 (geu) y 그녀 (geunyeo) existen — él/ella — pero aparecen principalmente en la escritura y la traducción. 우리 (uri) significa \"nosotros\" o \"nuestro\". Curiosamente, los coreanos usan 우리 donde el español usa \"mi\": 우리 엄마 (mi mamá, literalmente \"nuestra mamá\") — esto refleja un sentido cultural colectivista de familia compartida."
+    },
+    {
+      "id": "pronouns::steps.9.tip.label",
+      "path": "pronouns/steps[9]/tip.label",
+      "ko": null,
+      "en": "우리 = my (for family & country)",
+      "current": "",
+      "ref_th": "우리 = ของฉัน (สำหรับครอบครัวและประเทศ)",
+      "ref_es": "우리 = \"mi\" (para familia y país)"
+    }
+  ]
+}

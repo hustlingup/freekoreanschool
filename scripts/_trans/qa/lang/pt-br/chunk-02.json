@@ -1,0 +1,3112 @@
+{
+  "lang": "pt-br",
+  "chunk": 2,
+  "count": 345,
+  "units": [
+    {
+      "id": "pronouns::steps.9.tip.text",
+      "path": "pronouns/steps[9]/tip.text",
+      "ko": null,
+      "en": "우리 나라 (our country), 우리 집 (my/our house), 우리 엄마 (my mom) — these are natural and common. Using 나의 나라 or 나의 집 instead sounds unnatural, almost cold.",
+      "current": "",
+      "ref_th": "우리 나라 (ประเทศของเรา) 우리 집 (บ้านของเรา/ฉัน) 우리 엄마 (แม่ของฉัน) — เป็นธรรมชาติและใช้บ่อย การใช้ 나의 나라 ฟังดูผิดปกติ",
+      "ref_es": "우리 나라 (nuestro país), 우리 집 (mi/nuestra casa), 우리 엄마 (mi mamá) — estos son naturales y comunes. Usar 나의 나라 o 나의 집 en su lugar suena antinatural, casi frío."
+    },
+    {
+      "id": "pronouns::steps.10.meaning",
+      "path": "pronouns/steps[10]/meaning",
+      "ko": null,
+      "en": "we / our (often used as 'my' for shared things)",
+      "current": "",
+      "ref_th": "เรา / ของเรา (มักใช้เป็น \"ของฉัน\" สำหรับสิ่งที่ใช้ร่วมกัน)",
+      "ref_es": "nosotros / nuestro (a menudo se usa como \"mi\" para cosas compartidas)"
+    },
+    {
+      "id": "pronouns::steps.11.meaning",
+      "path": "pronouns/steps[11]/meaning",
+      "ko": null,
+      "en": "we / our (humble, polite form of 우리)",
+      "current": "",
+      "ref_th": "เรา / ของเรา (ถ่อมตัว สุภาพ รูปของ 우리)",
+      "ref_es": "nosotros / nuestro (humilde, forma educada de 우리)"
+    },
+    {
+      "id": "pronouns::steps.12.meaning",
+      "path": "pronouns/steps[12]/meaning",
+      "ko": null,
+      "en": "that person (= he / she, informal way)",
+      "current": "",
+      "ref_th": "คนนั้น (= เขา / เธอ แบบไม่เป็นทางการ)",
+      "ref_es": "esa persona (= él / ella, forma informal)"
+    },
+    {
+      "id": "pronouns::steps.13.meaning",
+      "path": "pronouns/steps[13]/meaning",
+      "ko": null,
+      "en": "they / them (written form)",
+      "current": "",
+      "ref_th": "พวกเขา (รูปการเขียน)",
+      "ref_es": "ellos / ellas (forma escrita)"
+    },
+    {
+      "id": "pronouns::steps.14.prompt",
+      "path": "pronouns/steps[14]/prompt",
+      "ko": null,
+      "en": "우리 엄마 literally means 'our mom' but is used to mean…",
+      "current": "",
+      "ref_th": "우리 엄마 แปลตรงๆ ว่า \"แม่ของเรา\" แต่ใช้หมายความว่า...",
+      "ref_es": "우리 엄마 literalmente significa \"nuestra mamá\" pero se usa para decir…"
+    },
+    {
+      "id": "pronouns::steps.14.choices[0]",
+      "path": "pronouns/steps[14]/choices[0]",
+      "ko": null,
+      "en": "someone else's mom",
+      "current": "",
+      "ref_th": "แม่ของคนอื่น",
+      "ref_es": "la mamá de otra persona"
+    },
+    {
+      "id": "pronouns::steps.14.choices[1]",
+      "path": "pronouns/steps[14]/choices[1]",
+      "ko": null,
+      "en": "my own mom",
+      "current": "",
+      "ref_th": "แม่ของฉันเอง",
+      "ref_es": "mi propia mamá"
+    },
+    {
+      "id": "pronouns::steps.14.choices[2]",
+      "path": "pronouns/steps[14]/choices[2]",
+      "ko": null,
+      "en": "the mom of everyone present",
+      "current": "",
+      "ref_th": "แม่ของทุกคนที่อยู่ตรงนั้น",
+      "ref_es": "la mamá de todos los presentes"
+    },
+    {
+      "id": "pronouns::steps.14.choices[3]",
+      "path": "pronouns/steps[14]/choices[3]",
+      "ko": null,
+      "en": "my husband's or wife's mom",
+      "current": "",
+      "ref_th": "แม่สามีหรือแม่ภรรยาของฉัน",
+      "ref_es": "la mamá de mi esposo o esposa"
+    },
+    {
+      "id": "pronouns::steps.15.meaning",
+      "path": "pronouns/steps[15]/meaning",
+      "ko": null,
+      "en": "my/our country (Korea) — literally 'our country'",
+      "current": "",
+      "ref_th": "ประเทศของฉัน/เรา (เกาหลี) — แปลตรงๆ ว่า \"ประเทศของเรา\"",
+      "ref_es": "mi/nuestro país (Corea) — literalmente \"nuestro país\""
+    },
+    {
+      "id": "pronouns::steps.16.prompt",
+      "path": "pronouns/steps[16]/prompt",
+      "ko": null,
+      "en": "You are speaking to your company's president about your own team. Which word for 'we' do you use?",
+      "current": "",
+      "ref_th": "คุณกำลังพูดกับประธานบริษัทเกี่ยวกับทีมของคุณเอง คุณใช้คำใดแทน \"พวกเรา\"?",
+      "ref_es": "Hablas con el presidente de tu empresa sobre tu propio equipo. ¿Qué palabra para 'nosotros' usas?"
+    },
+    {
+      "id": "pronouns::steps.17.title",
+      "path": "pronouns/steps[17]/title",
+      "ko": "지시대명사 이·그·저",
+      "en": "Demonstrative Pronouns (이·그·저)",
+      "current": "",
+      "ref_th": "สรรพนามชี้เฉพาะ (이·그·저)",
+      "ref_es": "Pronombres Demostrativos (이·그·저)"
+    },
+    {
+      "id": "pronouns::steps.17.body",
+      "path": "pronouns/steps[17]/body",
+      "ko": null,
+      "en": "Korean has three levels of demonstratives based on spatial distance. 이 (i) = near the speaker. 그 (geu) = near the listener or previously mentioned. 저 (jeo) = far from both speaker and listener. These attach to 것 (geot, 'thing') to form pronouns: 이것 (this), 그것 (that), 저것 (that over there). In casual speech these are shortened: 이거, 그거, 저거. The same 이/그/저 roots also work with place words: 여기 (here), 거기 (there), 저기 (over there).",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีมีคำชี้เฉพาะสามระดับตามระยะทาง 이 (อี) = ใกล้ผู้พูด 그 (กึ) = ใกล้ผู้ฟังหรือที่กล่าวถึงแล้ว 저 (จอ) = ไกลจากทั้งคู่ คำเหล่านี้รวมกับ 것 (สิ่ง) เป็น 이것 (สิ่งนี้) 그것 (สิ่งนั้น) 저것 (สิ่งนั้นโน้น) หรือรูปย่อ 이거 그거 저거",
+      "ref_es": "El coreano tiene tres niveles de demostrativos según la distancia espacial. 이 (i) = cerca del hablante. 그 (geu) = cerca del oyente o mencionado previamente. 저 (jeo) = lejos de ambos, hablante y oyente. Estos se unen a 것 (geot, \"cosa\") para formar pronombres: 이것 (esto), 그것 (eso), 저것 (aquello). En el habla informal se acortan: 이거, 그거, 저거. Las mismas raíces 이/그/저 también funcionan con palabras de lugar: 여기 (aquí), 거기 (ahí), 저기 (allá)."
+    },
+    {
+      "id": "pronouns::steps.17.tip.label",
+      "path": "pronouns/steps[17]/tip.label",
+      "ko": null,
+      "en": "이/그/저 vs 여기/거기/저기",
+      "current": "",
+      "ref_th": "이/그/저 vs 여기/거기/저기",
+      "ref_es": "이/그/저 vs 여기/거기/저기"
+    },
+    {
+      "id": "pronouns::steps.17.tip.text",
+      "path": "pronouns/steps[17]/tip.text",
+      "ko": null,
+      "en": "이/그/저 + 것 = this/that thing. 이/그/저 + -(e)gi = here/there. So 여기 (yeo-gi) = here (near speaker), 거기 (geo-gi) = there (near listener), 저기 (jeo-gi) = over there (far from both).",
+      "current": "",
+      "ref_th": "이/그/저 + 것 = สิ่งนี้/นั้น 이/그/저 + -(อี)กี = ที่นี่/ที่นั่น ดังนั้น 여기 = ที่นี่ (ใกล้ผู้พูด) 거기 = ที่นั่น (ใกล้ผู้ฟัง) 저기 = โน่น (ไกลจากทั้งคู่)",
+      "ref_es": "이/그/저 + 것 = esto/eso/aquello (cosa). 이/그/저 + -(e)gi = aquí/ahí/allá. Así que 여기 (yeo-gi) = aquí (cerca del hablante), 거기 (geo-gi) = ahí (cerca del oyente), 저기 (jeo-gi) = allá (lejos de ambos)."
+    },
+    {
+      "id": "pronouns::steps.18.meaning",
+      "path": "pronouns/steps[18]/meaning",
+      "ko": null,
+      "en": "this (thing) — near speaker",
+      "current": "",
+      "ref_th": "สิ่งนี้ — ใกล้ผู้พูด",
+      "ref_es": "esto (cosa) — cerca del hablante"
+    },
+    {
+      "id": "pronouns::steps.19.meaning",
+      "path": "pronouns/steps[19]/meaning",
+      "ko": null,
+      "en": "that (thing) — near listener or already mentioned",
+      "current": "",
+      "ref_th": "สิ่งนั้น — ใกล้ผู้ฟังหรือที่กล่าวถึงแล้ว",
+      "ref_es": "eso (cosa) — cerca del oyente o ya mencionado"
+    },
+    {
+      "id": "pronouns::steps.20.meaning",
+      "path": "pronouns/steps[20]/meaning",
+      "ko": null,
+      "en": "that thing over there — far from both",
+      "current": "",
+      "ref_th": "สิ่งนั้นโน้น — ไกลจากทั้งคู่",
+      "ref_es": "aquello (cosa) — lejos de ambos"
+    },
+    {
+      "id": "pronouns::steps.21.meaning",
+      "path": "pronouns/steps[21]/meaning",
+      "ko": null,
+      "en": "this one (casual form of 이것)",
+      "current": "",
+      "ref_th": "อันนี้ (รูปไม่เป็นทางการของ 이것)",
+      "ref_es": "esto (forma informal de 이것)"
+    },
+    {
+      "id": "pronouns::steps.22.prompt",
+      "path": "pronouns/steps[22]/prompt",
+      "ko": null,
+      "en": "Which demonstrative refers to something far from BOTH the speaker AND the listener?",
+      "current": "",
+      "ref_th": "คำชี้เฉพาะใดหมายถึงสิ่งที่ไกลจากทั้งผู้พูดและผู้ฟัง?",
+      "ref_es": "¿Qué demostrativo se refiere a algo lejos TANTO del hablante COMO del oyente?"
+    },
+    {
+      "id": "pronouns::steps.23.meaning",
+      "path": "pronouns/steps[23]/meaning",
+      "ko": null,
+      "en": "here (near speaker)",
+      "current": "",
+      "ref_th": "ที่นี่ (ใกล้ผู้พูด)",
+      "ref_es": "aquí (cerca del hablante)"
+    },
+    {
+      "id": "pronouns::steps.24.prompt",
+      "path": "pronouns/steps[24]/prompt",
+      "ko": null,
+      "en": "You are telling a friend about a man you mentioned a moment ago, and he is not in the room. In natural spoken Korean you say…",
+      "current": "",
+      "ref_th": "คุณกำลังเล่าให้เพื่อนฟังเกี่ยวกับผู้ชายที่คุณเพิ่งพูดถึง และเขาไม่ได้อยู่ตรงนั้น ในภาษาเกาหลีพูดแบบธรรมชาติคุณจะพูดว่า…",
+      "ref_es": "Le hablas a un amigo de un hombre que mencionaste hace un momento, y él no está presente. En coreano hablado natural dices…"
+    },
+    {
+      "id": "pronouns::steps.25.title",
+      "path": "pronouns/steps[25]/title",
+      "ko": "의문대명사",
+      "en": "Question Pronouns (의문대명사)",
+      "current": "",
+      "ref_th": "สรรพนามคำถาม (의문대명사)",
+      "ref_es": "Pronombres Interrogativos (의문대명사)"
+    },
+    {
+      "id": "pronouns::steps.25.body",
+      "path": "pronouns/steps[25]/body",
+      "ko": null,
+      "en": "Korean question words are placed in the same sentence position as the word they replace — unlike English, which moves 'what' and 'where' to the front. Compare: 영화 봐요? (You watch a movie?) vs 뭐 봐요? (What do you watch?). The question word simply swaps into the original slot. The main question pronouns are: 누구 (who), 무엇/뭐 (what), 어디 (where), 언제 (when), 왜 (why), 어떻게 (how), 얼마 (how much).",
+      "current": "",
+      "ref_th": "คำคำถามภาษาเกาหลีอยู่ในตำแหน่งเดียวกับคำที่แทนที่ — ต่างจากภาษาอังกฤษที่เลื่อน \"what/who\" มาต้นประโยค 누구 (ใคร) 뭐/무엇 (อะไร) 어디 (ที่ไหน) 언제 (เมื่อไหร่) 왜 (ทำไม) 어떻게 (อย่างไร) คำเหล่านี้ไม่ต้องสร้างประโยคคำถามแบบพิเศษ",
+      "ref_es": "Las palabras interrogativas coreanas se colocan en la misma posición de la oración que la palabra que reemplazan — a diferencia del español, que mueve \"qué\" y \"dónde\" al principio. Compara: 영화 봐요? (¿Ves una película?) vs 뭐 봐요? (¿Qué ves?). La palabra interrogativa simplemente ocupa el lugar original. Los principales pronombres interrogativos son: 누구 (quién), 무엇/뭐 (qué), 어디 (dónde), 언제 (cuándo), 왜 (por qué), 어떻게 (cómo), 얼마 (cuánto)."
+    },
+    {
+      "id": "pronouns::steps.25.tip.label",
+      "path": "pronouns/steps[25]/tip.label",
+      "ko": null,
+      "en": "No question inversion needed",
+      "current": "",
+      "ref_th": "ไม่ต้องสลับลำดับคำถาม",
+      "ref_es": "Sin inversión de pregunta"
+    },
+    {
+      "id": "pronouns::steps.25.tip.text",
+      "path": "pronouns/steps[25]/tip.text",
+      "ko": null,
+      "en": "English moves the question word to the front and inverts subject-verb order: 'What are you doing?' Korean keeps the word order the same as a statement and just swaps in the question word: 뭐 해요? (What [are you] doing?) — literally 'what do?'",
+      "current": "",
+      "ref_th": "ภาษาอังกฤษเลื่อนคำถามมาหน้าและสลับลำดับ ภาษาเกาหลีไม่ต้องทำ: 뭐 먹어요? (กินอะไร?) มีโครงสร้างเหมือน \"(กิน + อะไร) + อยู่\" ทำให้เรียนง่ายขึ้น",
+      "ref_es": "El español mueve la palabra interrogativa al principio y a menudo la invierte: \"¿Qué estás haciendo?\". El coreano mantiene el mismo orden de palabras que una declaración y simplemente intercambia la palabra interrogativa: 뭐 해요? (¿Qué haces?) — literalmente \"¿qué hace?\"."
+    },
+    {
+      "id": "pronouns::steps.26.meaning",
+      "path": "pronouns/steps[26]/meaning",
+      "ko": null,
+      "en": "who",
+      "current": "",
+      "ref_th": "ใคร",
+      "ref_es": "quién"
+    },
+    {
+      "id": "pronouns::steps.27.meaning",
+      "path": "pronouns/steps[27]/meaning",
+      "ko": null,
+      "en": "what (formal)",
+      "current": "",
+      "ref_th": "อะไร (ทางการ)",
+      "ref_es": "qué (formal)"
+    },
+    {
+      "id": "pronouns::steps.28.meaning",
+      "path": "pronouns/steps[28]/meaning",
+      "ko": null,
+      "en": "what (casual, very common)",
+      "current": "",
+      "ref_th": "อะไร (ไม่เป็นทางการ ใช้บ่อยมาก)",
+      "ref_es": "qué (informal, muy común)"
+    },
+    {
+      "id": "pronouns::steps.29.meaning",
+      "path": "pronouns/steps[29]/meaning",
+      "ko": null,
+      "en": "where",
+      "current": "",
+      "ref_th": "ที่ไหน",
+      "ref_es": "dónde"
+    },
+    {
+      "id": "pronouns::steps.30.prompt",
+      "path": "pronouns/steps[30]/prompt",
+      "ko": null,
+      "en": "Which question pronoun means 'who'?",
+      "current": "",
+      "ref_th": "สรรพนามคำถามใดหมายถึง \"ใคร\"?",
+      "ref_es": "¿Qué pronombre interrogativo significa 'quién'?"
+    },
+    {
+      "id": "pronouns::steps.31.title",
+      "path": "pronouns/steps[31]/title",
+      "ko": "대명사 완료!",
+      "en": "Pronouns Complete!",
+      "current": "",
+      "ref_th": "เรียนจบคำสรรพนามแล้ว!",
+      "ref_es": "¡Pronombres Completados!"
+    },
+    {
+      "id": "pronouns::steps.31.message",
+      "path": "pronouns/steps[31]/message",
+      "ko": null,
+      "en": "You've mastered Korean pronouns — from polite 저 to casual 나, from 우리 (our/my), to demonstratives and question words. Great progress!",
+      "current": "",
+      "ref_th": "คุณเชี่ยวชาญสรรพนามภาษาเกาหลีแล้ว — จาก 저 สุภาพถึง 나 ไม่เป็นทางการ จาก 우리 (ของเรา/ฉัน) ถึงคำชี้เฉพาะและคำคำถาม ก้าวหน้ามากเลย!",
+      "ref_es": "Has dominado los pronombres coreanos — desde el educado 저 hasta el informal 나, desde 우리 (nuestro/mi), hasta los demostrativos y las palabras interrogativas. ¡Excelente progreso!"
+    },
+    {
+      "id": "pronunciation::stages.0.name",
+      "path": "pronunciation/stages[0]/name",
+      "ko": "받침",
+      "en": "Batchim",
+      "current": "",
+      "ref_th": "บัดชิม",
+      "ref_es": "Batchim (받침)"
+    },
+    {
+      "id": "pronunciation::stages.1.name",
+      "path": "pronunciation/stages[1]/name",
+      "ko": "연음화",
+      "en": "Liaison",
+      "current": "",
+      "ref_th": "การเชื่อมเสียง",
+      "ref_es": "Enlace (연음화)"
+    },
+    {
+      "id": "pronunciation::stages.2.name",
+      "path": "pronunciation/stages[2]/name",
+      "ko": "비음화",
+      "en": "Assimilation",
+      "current": "",
+      "ref_th": "การดูดกลืนเสียง",
+      "ref_es": "Asimilación Nasal"
+    },
+    {
+      "id": "pronunciation::stages.3.name",
+      "path": "pronunciation/stages[3]/name",
+      "ko": "경음화",
+      "en": "Tensification",
+      "current": "",
+      "ref_th": "การเกร็งเสียง",
+      "ref_es": "Tensificación"
+    },
+    {
+      "id": "pronunciation::stages.4.name",
+      "path": "pronunciation/stages[4]/name",
+      "ko": "구개음화",
+      "en": "Palatal & ㄹ",
+      "current": "",
+      "ref_th": "เพดานปากและ ㄹ",
+      "ref_es": "Palatalización y ㄹ"
+    },
+    {
+      "id": "pronunciation::stages.5.name",
+      "path": "pronunciation/stages[5]/name",
+      "ko": "흔한 실수",
+      "en": "Mistakes",
+      "current": "",
+      "ref_th": "ข้อผิดพลาดทั่วไป",
+      "ref_es": "Errores Comunes"
+    },
+    {
+      "id": "pronunciation::steps.0.title",
+      "path": "pronunciation/steps[0]/title",
+      "ko": "받침이란?",
+      "en": "What is Batchim?",
+      "current": "",
+      "ref_th": "บัดชิมคืออะไร?",
+      "ref_es": "¿Qué es el Batchim?"
+    },
+    {
+      "id": "pronunciation::steps.0.body",
+      "path": "pronunciation/steps[0]/body",
+      "ko": null,
+      "en": "A batchim (받침, literally 'support') is a consonant placed at the bottom of a Korean syllable block. For example, in the syllable 강, the ㅇ at the bottom is the batchim. Not all syllables have a batchim — many end with just the vowel. Batchim is why Korean words like 산, 달, and 밥 end with a distinct consonant sound rather than an open vowel.",
+      "current": "",
+      "ref_th": "บัดชิม (받침 แปลตรงๆ ว่า ตัวรองรับ) คือพยัญชนะที่อยู่ด้านล่างของบล็อกพยางค์เกาหลี ตัวอย่างเช่น ในพยางค์ 강 ตัว ㅇ ด้านล่างคือบัดชิม ไม่ใช่ทุกพยางค์ที่มีบัดชิม — หลายพยางค์ลงท้ายด้วยสระเท่านั้น บัดชิมคือเหตุผลที่คำเกาหลีอย่าง 산 달 และ 밥 ลงท้ายด้วยเสียงพยัญชนะที่ชัดเจนแทนสระเปิด",
+      "ref_es": "Un batchim (받침, literalmente \"soporte\") es una consonante colocada en la parte inferior de un bloque de sílaba coreano. Por ejemplo, en la sílaba 강, el ㅇ en la parte inferior es el batchim. No todas las sílabas tienen batchim — muchas terminan solo con la vocal. El batchim explica por qué palabras coreanas como 산, 달 y 밥 terminan con un sonido consonántico distintivo en lugar de una vocal abierta."
+    },
+    {
+      "id": "pronunciation::steps.0.tip.label",
+      "path": "pronunciation/steps[0]/tip.label",
+      "ko": null,
+      "en": "Which syllables have batchim?",
+      "current": "",
+      "ref_th": "พยางค์ใดมีบัดชิม?",
+      "ref_es": "¿Qué sílabas tienen batchim?"
+    },
+    {
+      "id": "pronunciation::steps.0.tip.text",
+      "path": "pronunciation/steps[0]/tip.text",
+      "ko": null,
+      "en": "Look at any Korean syllable block. If there is a character beneath the vowel, that is the batchim. 가 has no batchim. 간 has batchim ㄴ. 닭 has double batchim ㄺ (read as one sound).",
+      "current": "",
+      "ref_th": "ดูบล็อกพยางค์เกาหลีใดก็ได้ ถ้ามีตัวอักษรอยู่ใต้สระ นั่นคือบัดชิม 가 ไม่มีบัดชิม 간 มีบัดชิม ㄴ 닭 มีบัดชิมคู่ ㄺ (ออกเสียงเป็นเสียงเดียว)",
+      "ref_es": "Mira cualquier bloque de sílaba coreano. Si hay un carácter debajo de la vocal, ese es el batchim. 가 no tiene batchim. 간 tiene batchim ㄴ. 닭 tiene doble batchim ㄺ (se lee como un solo sonido)."
+    },
+    {
+      "id": "pronunciation::steps.1.title",
+      "path": "pronunciation/steps[1]/title",
+      "ko": "받침 7종성",
+      "en": "The 7 Batchim Sound Groups",
+      "current": "",
+      "ref_th": "7 กลุ่มเสียงบัดชิม",
+      "ref_es": "Los 7 Grupos de Sonidos del Batchim"
+    },
+    {
+      "id": "pronunciation::steps.1.body",
+      "path": "pronunciation/steps[1]/body",
+      "ko": null,
+      "en": "Although many different consonants can appear as batchim in spelling, they all reduce to only 7 possible sounds when pronounced. This is known as the 7 rules of batchim (받침 7종성). Learning these 7 groups is essential — it explains why 닭 (chicken) and 국 (soup) both end with the same k sound.",
+      "current": "",
+      "ref_th": "บัดชิมทุกตัวในภาษาเกาหลีออกเสียงเป็นหนึ่งในเจ็ดเสียงพื้นฐานเท่านั้น ไม่ว่าจะสะกดด้วยพยัญชนะตัวใด พยัญชนะบัดชิมมากกว่า 27 ตัวรวมกันเป็นเจ็ดกลุ่มเสียง ทำให้การออกเสียงเกาหลีมีแบบแผนที่คาดเดาได้",
+      "ref_es": "Aunque muchas consonantes diferentes pueden aparecer como batchim en la escritura, todas se reducen a solo 7 posibles sonidos al pronunciarlas. Esto se conoce como las 7 reglas del batchim (받침 7종성). Aprender estos 7 grupos es esencial — explica por qué 닭 (pollo) y 국 (sopa) terminan con el mismo sonido k."
+    },
+    {
+      "id": "pronunciation::steps.1.rules[0]",
+      "path": "pronunciation/steps[1]/rules[0]",
+      "ko": null,
+      "en": "ㄱ-group: ㄱ, ㄲ, ㅋ, ㄳ, ㄺ → pronounced k (unreleased) — example: 국 (soup), 닭 (chicken)",
+      "current": "",
+      "ref_th": "กลุ่ม ㄱ: ㄱ ㄲ ㅋ ㄳ ㄺ → ออกเสียง ก (ไม่ระเบิด) — ตัวอย่าง: 국 (ซุป) 닭 (ไก่)",
+      "ref_es": "Grupo ㄱ: ㄱ, ㄲ, ㅋ, ㄳ, ㄺ → se pronuncia k (sin explosión) — ejemplo: 국 (sopa), 닭 (pollo)"
+    },
+    {
+      "id": "pronunciation::steps.1.rules[1]",
+      "path": "pronunciation/steps[1]/rules[1]",
+      "ko": null,
+      "en": "ㄴ-group: ㄴ, ㄵ, ㄶ → pronounced n — example: 산 (mountain), 앉다 (to sit)",
+      "current": "",
+      "ref_th": "กลุ่ม ㄴ: ㄴ ㄵ ㄶ → ออกเสียง น — ตัวอย่าง: 산 (ภูเขา) 앉다 (นั่ง)",
+      "ref_es": "Grupo ㄴ: ㄴ, ㄵ, ㄶ → se pronuncia n — ejemplo: 산 (montaña), 앉다 (sentarse)"
+    },
+    {
+      "id": "pronunciation::steps.1.rules[2]",
+      "path": "pronunciation/steps[1]/rules[2]",
+      "ko": null,
+      "en": "ㄷ-group: ㄷ, ㅅ, ㅆ, ㅈ, ㅊ, ㅌ, ㅎ → pronounced t (unreleased) — example: 옷 (clothes), 꽃 (flower)",
+      "current": "",
+      "ref_th": "กลุ่ม ㄷ: ㄷ ㅅ ㅆ ㅈ ㅊ ㅌ ㅎ → ออกเสียง ต (ไม่ระเบิด) — ตัวอย่าง: 옷 (เสื้อผ้า) 꽃 (ดอกไม้)",
+      "ref_es": "Grupo ㄷ: ㄷ, ㅅ, ㅆ, ㅈ, ㅊ, ㅌ, ㅎ → se pronuncia t (sin explosión) — ejemplo: 옷 (ropa), 꽃 (flor)"
+    },
+    {
+      "id": "pronunciation::steps.1.rules[3]",
+      "path": "pronunciation/steps[1]/rules[3]",
+      "ko": null,
+      "en": "ㄹ-group: ㄹ, ㄼ, ㄽ, ㄾ, ㅀ → pronounced l — example: 달 (moon), 말 (horse)",
+      "current": "",
+      "ref_th": "กลุ่ม ㄹ: ㄹ ㄼ ㄽ ㄾ ㅀ → ออกเสียง ล — ตัวอย่าง: 달 (ดวงจันทร์) 말 (ม้า)",
+      "ref_es": "Grupo ㄹ: ㄹ, ㄼ, ㄽ, ㄾ, ㅀ → se pronuncia l — ejemplo: 달 (luna), 말 (caballo)"
+    },
+    {
+      "id": "pronunciation::steps.1.rules[4]",
+      "path": "pronunciation/steps[1]/rules[4]",
+      "ko": null,
+      "en": "ㅁ-group: ㅁ, ㄻ → pronounced m — example: 밤 (night), 삶 (life)",
+      "current": "",
+      "ref_th": "กลุ่ม ㅁ: ㅁ ㄻ → ออกเสียง ม — ตัวอย่าง: 밤 (กลางคืน) 삶 (ชีวิต)",
+      "ref_es": "Grupo ㅁ: ㅁ, ㄻ → se pronuncia m — ejemplo: 밤 (noche), 삶 (vida)"
+    },
+    {
+      "id": "pronunciation::steps.1.rules[5]",
+      "path": "pronunciation/steps[1]/rules[5]",
+      "ko": null,
+      "en": "ㅂ-group: ㅂ, ㅍ, ㄿ, ㄼ → pronounced p (unreleased) — example: 입 (mouth), 앞 (front)",
+      "current": "",
+      "ref_th": "กลุ่ม ㅂ: ㅂ ㅍ ㄿ ㄼ → ออกเสียง ป (ไม่ระเบิด) — ตัวอย่าง: 입 (ปาก) 앞 (ด้านหน้า)",
+      "ref_es": "Grupo ㅂ: ㅂ, ㅍ, ㄿ, ㄼ → se pronuncia p (sin explosión) — ejemplo: 입 (boca), 앞 (frente)"
+    },
+    {
+      "id": "pronunciation::steps.1.rules[6]",
+      "path": "pronunciation/steps[1]/rules[6]",
+      "ko": null,
+      "en": "ㅇ-group: ㅇ → pronounced ng — example: 강 (river), 방 (room)",
+      "current": "",
+      "ref_th": "กลุ่ม ㅇ: ㅇ → ออกเสียง ง — ตัวอย่าง: 강 (แม่น้ำ) 방 (ห้อง)",
+      "ref_es": "Grupo ㅇ: ㅇ → se pronuncia ng — ejemplo: 강 (río), 방 (habitación)"
+    },
+    {
+      "id": "pronunciation::steps.1.tip.label",
+      "path": "pronunciation/steps[1]/tip.label",
+      "ko": null,
+      "en": "Unreleased stops — what does that mean?",
+      "current": "",
+      "ref_th": "เจ็ดเสียง เจ็ดกลุ่ม",
+      "ref_es": "Oclusivas sin explosión — ¿qué significa?"
+    },
+    {
+      "id": "pronunciation::steps.1.tip.text",
+      "path": "pronunciation/steps[1]/tip.text",
+      "ko": null,
+      "en": "The k, t, and p batchim sounds are unreleased: your mouth forms the position but does not release a puff of air. Think of holding the final p in 'cup' — cup_ — without letting air out. Korean ㄱ/ㄷ/ㅂ batchim work the same way.",
+      "current": "",
+      "ref_th": "ไม่ว่าพยัญชนะบัดชิมจะเป็นตัวใด มันออกเสียงเป็น: ก ไม่ระเบิด (กลุ่ม ㄱ) น (กลุ่ม ㄴ) ต ไม่ระเบิด (กลุ่ม ㄷ) ล (กลุ่ม ㄹ) ม (กลุ่ม ㅁ) ป ไม่ระเบิด (กลุ่ม ㅂ) หรือ ง (กลุ่ม ㅇ) เท่านั้น",
+      "ref_es": "Los sonidos de batchim k, t y p son sin explosión: tu boca toma la posición pero no libera una ráfaga de aire. Piensa en sostener la p final en \"cup\" — cup_ — sin dejar salir el aire. El batchim ㄱ/ㄷ/ㅂ coreano funciona igual."
+    },
+    {
+      "id": "pronunciation::steps.2.meaning",
+      "path": "pronunciation/steps[2]/meaning",
+      "ko": null,
+      "en": "soup — ㄱ-group batchim, pronounced k (unreleased)",
+      "current": "",
+      "ref_th": "ซุป — บัดชิมกลุ่ม ㄱ ออกเสียง ก (ไม่ระเบิด)",
+      "ref_es": "sopa — batchim del grupo ㄱ, se pronuncia k (sin explosión)"
+    },
+    {
+      "id": "pronunciation::steps.3.meaning",
+      "path": "pronunciation/steps[3]/meaning",
+      "ko": null,
+      "en": "mountain — ㄴ-group batchim, pronounced n",
+      "current": "",
+      "ref_th": "ภูเขา — บัดชิมกลุ่ม ㄴ ออกเสียง น",
+      "ref_es": "montaña — batchim del grupo ㄴ, se pronuncia n"
+    },
+    {
+      "id": "pronunciation::steps.4.meaning",
+      "path": "pronunciation/steps[4]/meaning",
+      "ko": null,
+      "en": "clothes — ㄷ-group batchim (ㅅ→t), pronounced t (unreleased)",
+      "current": "",
+      "ref_th": "เสื้อผ้า — บัดชิมกลุ่ม ㄷ (ㅅ→ต) ออกเสียง ต (ไม่ระเบิด)",
+      "ref_es": "ropa — batchim del grupo ㄷ (ㅅ→t), se pronuncia t (sin explosión)"
+    },
+    {
+      "id": "pronunciation::steps.5.meaning",
+      "path": "pronunciation/steps[5]/meaning",
+      "ko": null,
+      "en": "moon — ㄹ-group batchim, pronounced l",
+      "current": "",
+      "ref_th": "ดวงจันทร์ — บัดชิมกลุ่ม ㄹ ออกเสียง ล",
+      "ref_es": "luna — batchim del grupo ㄹ, se pronuncia l"
+    },
+    {
+      "id": "pronunciation::steps.6.meaning",
+      "path": "pronunciation/steps[6]/meaning",
+      "ko": null,
+      "en": "night / chestnut — ㅁ-group batchim, pronounced m",
+      "current": "",
+      "ref_th": "กลางคืน / เกาลัด — บัดชิมกลุ่ม ㅁ ออกเสียง ม",
+      "ref_es": "noche / castaña — batchim del grupo ㅁ, se pronuncia m"
+    },
+    {
+      "id": "pronunciation::steps.7.meaning",
+      "path": "pronunciation/steps[7]/meaning",
+      "ko": null,
+      "en": "mouth — ㅂ-group batchim, pronounced p (unreleased)",
+      "current": "",
+      "ref_th": "ปาก — บัดชิมกลุ่ม ㅂ ออกเสียง ป (ไม่ระเบิด)",
+      "ref_es": "boca — batchim del grupo ㅂ, se pronuncia p (sin explosión)"
+    },
+    {
+      "id": "pronunciation::steps.8.meaning",
+      "path": "pronunciation/steps[8]/meaning",
+      "ko": null,
+      "en": "river — ㅇ-group batchim, pronounced ng",
+      "current": "",
+      "ref_th": "แม่น้ำ — บัดชิมกลุ่ม ㅇ ออกเสียง ง",
+      "ref_es": "río — batchim del grupo ㅇ, se pronuncia ng"
+    },
+    {
+      "id": "pronunciation::steps.9.meaning",
+      "path": "pronunciation/steps[9]/meaning",
+      "ko": null,
+      "en": "chicken — double batchim ㄺ (ㄹ+ㄱ) → ㄱ group → k sound",
+      "current": "",
+      "ref_th": "ไก่ — บัดชิมคู่ ㄺ (ㄹ+ㄱ) → กลุ่ม ㄱ → เสียง ก",
+      "ref_es": "pollo — doble batchim ㄺ (ㄹ+ㄱ) → grupo ㄱ → sonido k"
+    },
+    {
+      "id": "pronunciation::steps.10.meaning",
+      "path": "pronunciation/steps[10]/meaning",
+      "ko": null,
+      "en": "flower — batchim ㅊ belongs to the ㄷ-group → t sound",
+      "current": "",
+      "ref_th": "ดอกไม้ — บัดชิม ㅊ อยู่กลุ่ม ㄷ → เสียง ต",
+      "ref_es": "flor — batchim ㅊ pertenece al grupo ㄷ → sonido t"
+    },
+    {
+      "id": "pronunciation::steps.11.prompt",
+      "path": "pronunciation/steps[11]/prompt",
+      "ko": null,
+      "en": "ㅋ, ㄲ, and ㄳ are all batchim in the same group. Which sound group are they in?",
+      "current": "",
+      "ref_th": "ㅋ ㄲ และ ㄳ ล้วนอยู่ในกลุ่มบัดชิมเดียวกัน กลุ่มเสียงใด?",
+      "ref_es": "ㅋ, ㄲ y ㄳ son todos batchim del mismo grupo. ¿A qué grupo de sonido pertenecen?"
+    },
+    {
+      "id": "pronunciation::steps.11.choices[0]",
+      "path": "pronunciation/steps[11]/choices[0]",
+      "ko": null,
+      "en": "ㄴ-group (n)",
+      "current": "",
+      "ref_th": "กลุ่ม ㄴ (น)",
+      "ref_es": "Grupo ㄴ (n)"
+    },
+    {
+      "id": "pronunciation::steps.11.choices[1]",
+      "path": "pronunciation/steps[11]/choices[1]",
+      "ko": null,
+      "en": "ㄱ-group (k)",
+      "current": "",
+      "ref_th": "กลุ่ม ㄱ (ก)",
+      "ref_es": "Grupo ㄱ (k)"
+    },
+    {
+      "id": "pronunciation::steps.11.choices[2]",
+      "path": "pronunciation/steps[11]/choices[2]",
+      "ko": null,
+      "en": "ㅂ-group (p)",
+      "current": "",
+      "ref_th": "กลุ่ม ㅂ (ป)",
+      "ref_es": "Grupo ㅂ (p)"
+    },
+    {
+      "id": "pronunciation::steps.11.choices[3]",
+      "path": "pronunciation/steps[11]/choices[3]",
+      "ko": null,
+      "en": "ㄷ-group (t)",
+      "current": "",
+      "ref_th": "กลุ่ม ㄷ (ต)",
+      "ref_es": "Grupo ㄷ (t)"
+    },
+    {
+      "id": "pronunciation::steps.12.prompt",
+      "path": "pronunciation/steps[12]/prompt",
+      "ko": null,
+      "en": "방 (room) ends with batchim ㅇ. What sound does this make?",
+      "current": "",
+      "ref_th": "방 (ห้อง) ลงท้ายด้วยบัดชิม ㅇ ออกเสียงว่าอะไร?",
+      "ref_es": "방 (habitación) termina con batchim ㅇ. ¿Qué sonido produce?"
+    },
+    {
+      "id": "pronunciation::steps.12.choices[0]",
+      "path": "pronunciation/steps[12]/choices[0]",
+      "ko": null,
+      "en": "No sound — ㅇ is always silent",
+      "current": "",
+      "ref_th": "ไม่มีเสียง — ㅇ เงียบเสมอ",
+      "ref_es": "Sin sonido — ㅇ siempre es silencioso"
+    },
+    {
+      "id": "pronunciation::steps.12.choices[1]",
+      "path": "pronunciation/steps[12]/choices[1]",
+      "ko": null,
+      "en": "ng (like 'sing')",
+      "current": "",
+      "ref_th": "ง (เหมือน sing)",
+      "ref_es": "ng (como en \"sing\")"
+    },
+    {
+      "id": "pronunciation::steps.12.choices[2]",
+      "path": "pronunciation/steps[12]/choices[2]",
+      "ko": null,
+      "en": "n",
+      "current": "",
+      "ref_th": "น",
+      "ref_es": "n"
+    },
+    {
+      "id": "pronunciation::steps.12.choices[3]",
+      "path": "pronunciation/steps[12]/choices[3]",
+      "ko": null,
+      "en": "m",
+      "current": "",
+      "ref_th": "ม",
+      "ref_es": "m"
+    },
+    {
+      "id": "pronunciation::steps.13.title",
+      "path": "pronunciation/steps[13]/title",
+      "ko": "연음화",
+      "en": "Liaison — Linking Sound",
+      "current": "",
+      "ref_th": "การเชื่อมเสียง — เสียงที่เชื่อมต่อ",
+      "ref_es": "Enlace — Sonido de Enlace"
+    },
+    {
+      "id": "pronunciation::steps.13.body",
+      "path": "pronunciation/steps[13]/body",
+      "ko": null,
+      "en": "When a syllable ending in a batchim is immediately followed by a syllable that begins with the silent ㅇ, the batchim consonant moves forward and becomes the initial consonant of the next syllable. The spelling stays the same — only the pronunciation shifts. This is called liaison (연음화) and it is one of the most frequent pronunciation phenomena in Korean.",
+      "current": "",
+      "ref_th": "เมื่อพยางค์ที่ลงท้ายด้วยบัดชิมตามด้วยพยางค์ที่เริ่มต้นด้วย ㅇ เงียบ พยัญชนะบัดชิมจะเลื่อนไปข้างหน้าและกลายเป็นพยัญชนะต้นของพยางค์ถัดไป การสะกดยังเหมือนเดิม — เฉพาะการออกเสียงเปลี่ยนไป สิ่งนี้เรียกว่าการเชื่อมเสียง (연음화) และเป็นปรากฏการณ์การออกเสียงที่พบบ่อยที่สุดในภาษาเกาหลี",
+      "ref_es": "Cuando una sílaba que termina en batchim va seguida inmediatamente de una sílaba que comienza con la ㅇ silenciosa, la consonante batchim avanza y se convierte en la consonante inicial de la siguiente sílaba. La escritura permanece igual — solo la pronunciación cambia. Esto se llama enlace (연음화) y es uno de los fenómenos de pronunciación más frecuentes en coreano."
+    },
+    {
+      "id": "pronunciation::steps.13.tip.label",
+      "path": "pronunciation/steps[13]/tip.label",
+      "ko": null,
+      "en": "Spot the pattern",
+      "current": "",
+      "ref_th": "จดจำรูปแบบ",
+      "ref_es": "Identifica el patrón"
+    },
+    {
+      "id": "pronunciation::steps.13.tip.text",
+      "path": "pronunciation/steps[13]/tip.text",
+      "ko": null,
+      "en": "Look for: batchim consonant + next syllable beginning with ㅇ (silent placeholder). Result: the batchim sounds as if it opens the next syllable. 먹어요 → 머거요. 한국어 → 한구거. The written form never changes — only your pronunciation does.",
+      "current": "",
+      "ref_th": "มองหา: พยัญชนะบัดชิม + พยางค์ถัดไปที่เริ่มต้นด้วย ㅇ (ตัวแทนเงียบ) ผลลัพธ์: บัดชิมออกเสียงเหมือนเปิดพยางค์ถัดไป 먹어요 → 머거요 한국어 → 한구거 รูปเขียนไม่เคยเปลี่ยน — เฉพาะการออกเสียงของคุณเท่านั้น",
+      "ref_es": "Busca: consonante batchim + sílaba siguiente que comienza con ㅇ (marcador silencioso). Resultado: el batchim suena como si abriera la sílaba siguiente. 먹어요 → 머거요. 한국어 → 한구거. La forma escrita nunca cambia — solo cambia tu pronunciación."
+    },
+    {
+      "id": "pronunciation::steps.14.meaning",
+      "path": "pronunciation/steps[14]/meaning",
+      "ko": null,
+      "en": "I eat / am eating — ㄱ batchim of 먹 links into 어, sounds like 머거요",
+      "current": "",
+      "ref_th": "ฉันกิน / กินอยู่ — บัดชิม ㄱ ของ 먹 เชื่อมเข้า 어 ออกเสียงเหมือน 머거요",
+      "ref_es": "Como / estoy comiendo — el batchim ㄱ de 먹 se enlaza con 어, suena como 머거요"
+    },
+    {
+      "id": "pronunciation::steps.15.meaning",
+      "path": "pronunciation/steps[15]/meaning",
+      "ko": null,
+      "en": "rice (object form) — ㅂ batchim of 밥 links into 을, sounds like 바블",
+      "current": "",
+      "ref_th": "ข้าว (รูปกรรม) — บัดชิม ㅂ ของ 밥 เชื่อมเข้า 을 ออกเสียงเหมือน 바블",
+      "ref_es": "arroz (forma de objeto) — el batchim ㅂ de 밥 se enlaza con 을, suena como 바블"
+    },
+    {
+      "id": "pronunciation::steps.16.meaning",
+      "path": "pronunciation/steps[16]/meaning",
+      "ko": null,
+      "en": "It is good / I like it — ㅎ batchim weakens and links (see Stage 4 for ㅎ rules)",
+      "current": "",
+      "ref_th": "มันดี / ฉันชอบ — บัดชิม ㅎ อ่อนแรงและเชื่อม (ดูขั้นตอน 4 สำหรับกฎ ㅎ)",
+      "ref_es": "Está bien / Me gusta — el batchim ㅎ se debilita y se enlaza (ver Etapa 4 para reglas de ㅎ)"
+    },
+    {
+      "id": "pronunciation::steps.17.meaning",
+      "path": "pronunciation/steps[17]/meaning",
+      "ko": null,
+      "en": "Korean language — ㄱ batchim of 국 links into 어, sounds like 한구거",
+      "current": "",
+      "ref_th": "ภาษาเกาหลี — บัดชิม ㄱ ของ 국 เชื่อมเข้า 어 ออกเสียงเหมือน 한구거",
+      "ref_es": "Idioma coreano — el batchim ㄱ de 국 se enlaza con 어, suena como 한구거"
+    },
+    {
+      "id": "pronunciation::steps.18.title",
+      "path": "pronunciation/steps[18]/title",
+      "ko": "왜 연음화가 일어날까?",
+      "en": "Why Does Liaison Happen?",
+      "current": "",
+      "ref_th": "ทำไมการเชื่อมเสียงเกิดขึ้น?",
+      "ref_es": "¿Por qué ocurre el enlace?"
+    },
+    {
+      "id": "pronunciation::steps.18.body",
+      "path": "pronunciation/steps[18]/body",
+      "ko": null,
+      "en": "Korean syllable structure strongly prefers the pattern consonant + vowel. When a vowel-initial syllable follows a batchim, it is phonetically easier for the consonant to attach to that vowel's open slot. The result is a more natural, connected flow of speech. This is not slang or lazy pronunciation — it is standard Korean and will be heard in news broadcasts, formal speeches, and everyday conversation alike.",
+      "current": "",
+      "ref_th": "โครงสร้างพยางค์เกาหลีชอบรูปแบบพยัญชนะ + สระ เมื่อพยางค์เริ่มต้นด้วยสระตามหลังบัดชิม จะง่ายกว่าทางสัทศาสตร์ให้พยัญชนะนั้นติดกับพื้นที่เปิดของสระ ผลลัพธ์คือการพูดที่ไหลลื่นและเป็นธรรมชาติมากขึ้น นี่ไม่ใช่ภาษาสแลงหรือการออกเสียงเลอะเทอะ — เป็นมาตรฐานเกาหลีที่จะได้ยินในข่าว การพูดทางการ และการสนทนาประจำวัน",
+      "ref_es": "La estructura de las sílabas coreanas prefiere fuertemente el patrón consonante + vocal. Cuando una sílaba con vocal inicial sigue a un batchim, es fonéticamente más fácil para la consonante unirse a ese espacio abierto de la vocal. El resultado es un flujo de habla más natural y conectado. Esto no es jerga ni pronunciación descuidada — es el coreano estándar y se puede escuchar en transmisiones de noticias, discursos formales y conversaciones cotidianas."
+    },
+    {
+      "id": "pronunciation::steps.18.tip.label",
+      "path": "pronunciation/steps[18]/tip.label",
+      "ko": null,
+      "en": "Liaison vs spelling",
+      "current": "",
+      "ref_th": "การเชื่อมเสียงกับการสะกด",
+      "ref_es": "Enlace vs ortografía"
+    },
+    {
+      "id": "pronunciation::steps.18.tip.text",
+      "path": "pronunciation/steps[18]/tip.text",
+      "ko": null,
+      "en": "Written Korean preserves the original consonant in its spelling position even when it is pronounced in the next syllable. This is why learning to read Korean and learning to pronounce Korean are two separate skills at first — the script records morphemes, not exact sounds.",
+      "current": "",
+      "ref_th": "ภาษาเขียนเกาหลียังคงพยัญชนะดั้งเดิมไว้ในตำแหน่งสะกดแม้จะออกเสียงในพยางค์ถัดไปก็ตาม นั่นคือเหตุผลที่การอ่านภาษาเกาหลีและการออกเสียงภาษาเกาหลีเป็นสองทักษะที่แยกกันในตอนแรก — การเขียนบันทึกรูปแบบคำ ไม่ใช่เสียงที่แน่นอน",
+      "ref_es": "El coreano escrito conserva la consonante original en su posición ortográfica incluso cuando se pronuncia en la sílaba siguiente. Por eso aprender a leer coreano y aprender a pronunciarlo son al principio dos habilidades separadas — la escritura registra morfemas, no sonidos exactos."
+    },
+    {
+      "id": "pronunciation::steps.19.prompt",
+      "path": "pronunciation/steps[19]/prompt",
+      "ko": null,
+      "en": "Liaison (연음화) occurs when a batchim is followed by a syllable that begins with…",
+      "current": "",
+      "ref_th": "การเชื่อมเสียง (연음화) เกิดขึ้นเมื่อบัดชิมตามด้วยพยางค์ที่เริ่มต้นด้วย…",
+      "ref_es": "El enlace (연음화) ocurre cuando un batchim es seguido por una sílaba que comienza con…"
+    },
+    {
+      "id": "pronunciation::steps.19.choices[0]",
+      "path": "pronunciation/steps[19]/choices[0]",
+      "ko": null,
+      "en": "Any consonant",
+      "current": "",
+      "ref_th": "พยัญชนะใดก็ได้",
+      "ref_es": "Cualquier consonante"
+    },
+    {
+      "id": "pronunciation::steps.19.choices[1]",
+      "path": "pronunciation/steps[19]/choices[1]",
+      "ko": null,
+      "en": "Silent ㅇ (vowel-initial syllable)",
+      "current": "",
+      "ref_th": "ㅇ เงียบ (พยางค์เริ่มต้นด้วยสระ)",
+      "ref_es": "La ㅇ silenciosa (sílaba de vocal inicial)"
+    },
+    {
+      "id": "pronunciation::steps.19.choices[2]",
+      "path": "pronunciation/steps[19]/choices[2]",
+      "ko": null,
+      "en": "ㄴ or ㅁ only",
+      "current": "",
+      "ref_th": "ㄴ หรือ ㅁ เท่านั้น",
+      "ref_es": "Solo ㄴ o ㅁ"
+    },
+    {
+      "id": "pronunciation::steps.19.choices[3]",
+      "path": "pronunciation/steps[19]/choices[3]",
+      "ko": null,
+      "en": "An aspirated consonant",
+      "current": "",
+      "ref_th": "พยัญชนะพ่นอากาศ",
+      "ref_es": "Una consonante aspirada"
+    },
+    {
+      "id": "pronunciation::steps.20.prompt",
+      "path": "pronunciation/steps[20]/prompt",
+      "ko": null,
+      "en": "한국어 (the Korean language) — how is it actually pronounced?",
+      "current": "",
+      "ref_th": "한국어 (ภาษาเกาหลี) — ออกเสียงอย่างไรจริงๆ?",
+      "ref_es": "한국어 (idioma coreano) — ¿cómo se pronuncia realmente?"
+    },
+    {
+      "id": "pronunciation::steps.21.title",
+      "path": "pronunciation/steps[21]/title",
+      "ko": "비음화",
+      "en": "Nasal Assimilation",
+      "current": "",
+      "ref_th": "การดูดกลืนนาสิก",
+      "ref_es": "Asimilación Nasal"
+    },
+    {
+      "id": "pronunciation::steps.21.body",
+      "path": "pronunciation/steps[21]/body",
+      "ko": null,
+      "en": "When a stop consonant batchim from the ㄱ, ㄷ, or ㅂ groups is followed by the nasal consonants ㄴ or ㅁ, the stop assimilates and changes to its corresponding nasal sound. This is purely articulatory: nasal consonants require the velum to lower, which pulls adjacent stops into nasal territory. The spelling stays the same; only the pronunciation changes.",
+      "current": "",
+      "ref_th": "เมื่อพยัญชนะหยุดในกลุ่ม ㄱ ㄷ หรือ ㅂ ตามด้วยพยัญชนะนาสิก ㄴ หรือ ㅁ เสียงหยุดจะดูดกลืนและเปลี่ยนเป็นเสียงนาสิกที่สอดคล้องกัน เป็นกลไกทางการออกเสียงล้วนๆ พยัญชนะนาสิกต้องการให้เพดานอ่อนลดลง ซึ่งดึงเสียงหยุดข้างเคียงเข้าสู่ดินแดนนาสิก การสะกดยังเหมือนเดิม เฉพาะการออกเสียงที่เปลี่ยน",
+      "ref_es": "Cuando una consonante oclusiva batchim de los grupos ㄱ, ㄷ o ㅂ va seguida de las consonantes nasales ㄴ o ㅁ, la oclusiva se asimila y cambia a su sonido nasal correspondiente. Esto es puramente articulatorio: las consonantes nasales requieren que el velo baje, lo cual arrastra las oclusivas adyacentes al territorio nasal. La escritura permanece igual; solo la pronunciación cambia."
+    },
+    {
+      "id": "pronunciation::steps.21.rules[0]",
+      "path": "pronunciation/steps[21]/rules[0]",
+      "ko": null,
+      "en": "ㅂ + ㄴ/ㅁ → ㅁ: the lip-stop becomes a lip-nasal — 입니다 → 임니다",
+      "current": "",
+      "ref_th": "ㅂ + ㄴ/ㅁ → ㅁ: เสียงริมฝีปากหยุดกลายเป็นนาสิกริมฝีปาก — 입니다 → 임니다",
+      "ref_es": "ㅂ + ㄴ/ㅁ → ㅁ: la oclusiva labial se convierte en nasal labial — 입니다 → 임니다"
+    },
+    {
+      "id": "pronunciation::steps.21.rules[1]",
+      "path": "pronunciation/steps[21]/rules[1]",
+      "ko": null,
+      "en": "ㄱ + ㄴ/ㅁ → ㅇ: the velar-stop becomes a velar-nasal — 국물 → 궁물",
+      "current": "",
+      "ref_th": "ㄱ + ㄴ/ㅁ → ㅇ: เสียงเพดานอ่อนหยุดกลายเป็นนาสิกเพดานอ่อน — 국물 → 궁물",
+      "ref_es": "ㄱ + ㄴ/ㅁ → ㅇ: la oclusiva velar se convierte en nasal velar — 국물 → 궁물"
+    },
+    {
+      "id": "pronunciation::steps.21.rules[2]",
+      "path": "pronunciation/steps[21]/rules[2]",
+      "ko": null,
+      "en": "ㄷ + ㄴ/ㅁ → ㄴ: the alveolar-stop becomes an alveolar-nasal — 걷는다 → 건는다",
+      "current": "",
+      "ref_th": "ㄷ + ㄴ/ㅁ → ㄴ: เสียงสันฟันหยุดกลายเป็นนาสิกสันฟัน — 걷는다 → 건는다",
+      "ref_es": "ㄷ + ㄴ/ㅁ → ㄴ: la oclusiva alveolar se convierte en nasal alveolar — 걷는다 → 건는다"
+    },
+    {
+      "id": "pronunciation::steps.21.tip.label",
+      "path": "pronunciation/steps[21]/tip.label",
+      "ko": null,
+      "en": "Why the same place of articulation?",
+      "current": "",
+      "ref_th": "ทำไมมีตำแหน่งเดียวกัน?",
+      "ref_es": "¿Por qué el mismo punto de articulación?"
+    },
+    {
+      "id": "pronunciation::steps.21.tip.text",
+      "path": "pronunciation/steps[21]/tip.text",
+      "ko": null,
+      "en": "Each pair (ㅂ↔ㅁ, ㄱ↔ㅇ, ㄷ↔ㄴ) shares exactly the same place of articulation in the mouth — lips, throat back, and tooth ridge respectively. Only the nasal airflow changes. The nasal consonant 'infects' the preceding stop, pulling it nasal while keeping the mouth position.",
+      "current": "",
+      "ref_th": "แต่ละคู่ (ㅂ↔ㅁ ㄱ↔ㅇ ㄷ↔ㄴ) มีตำแหน่งในปากเหมือนกัน — ริมฝีปาก หลังลำคอ และสันฟัน เปลี่ยนเฉพาะการไหลของอากาศทางจมูก พยัญชนะนาสิก ติดเชื้อ เสียงหยุดก่อนหน้า ดึงให้เป็นนาสิกในขณะที่ยังคงตำแหน่งในปาก",
+      "ref_es": "Cada par (ㅂ↔ㅁ, ㄱ↔ㅇ, ㄷ↔ㄴ) comparte exactamente el mismo punto de articulación en la boca — labios, parte posterior de la garganta y reborde dental respectivamente. Solo el flujo de aire nasal cambia. La consonante nasal \"infecta\" a la oclusiva anterior, convirtiéndola en nasal mientras mantiene la posición de la boca."
+    },
+    {
+      "id": "pronunciation::steps.22.meaning",
+      "path": "pronunciation/steps[22]/meaning",
+      "ko": null,
+      "en": "is / am / are (formal) — ㅂ + ㄴ → ㅁ: spelled 입니다, sounds like 임니다",
+      "current": "",
+      "ref_th": "เป็น/คือ/อยู่ (ทางการ) — ㅂ + ㄴ → ㅁ: สะกด 입니다 ออกเสียงเหมือน 임니다",
+      "ref_es": "es / soy / eres (formal) — ㅂ + ㄴ → ㅁ: se escribe 입니다, suena como 임니다"
+    },
+    {
+      "id": "pronunciation::steps.23.meaning",
+      "path": "pronunciation/steps[23]/meaning",
+      "ko": null,
+      "en": "broth — ㄱ + ㅁ → ㅇ: spelled 국물, sounds like 궁물",
+      "current": "",
+      "ref_th": "น้ำซุป — ㄱ + ㅁ → ㅇ: สะกด 국물 ออกเสียงเหมือน 궁물",
+      "ref_es": "caldo — ㄱ + ㅁ → ㅇ: se escribe 국물, suena como 궁물"
+    },
+    {
+      "id": "pronunciation::steps.24.meaning",
+      "path": "pronunciation/steps[24]/meaning",
+      "ko": null,
+      "en": "school year / grade — ㄱ + ㄴ → ㅇ: spelled 학년, sounds like 항년",
+      "current": "",
+      "ref_th": "ชั้นปีโรงเรียน — ㄱ + ㄴ → ㅇ: สะกด 학년 ออกเสียงเหมือน 항년",
+      "ref_es": "año escolar / curso — ㄱ + ㄴ → ㅇ: se escribe 학년, suena como 항년"
+    },
+    {
+      "id": "pronunciation::steps.25.meaning",
+      "path": "pronunciation/steps[25]/meaning",
+      "ko": null,
+      "en": "walks / to walk — ㄷ + ㄴ → ㄴ: spelled 걷는다, sounds like 건는다",
+      "current": "",
+      "ref_th": "เดิน — ㄷ + ㄴ → ㄴ: สะกด 걷는다 ออกเสียงเหมือน 건는다",
+      "ref_es": "camina / caminar — ㄷ + ㄴ → ㄴ: se escribe 걷는다, suena como 건는다"
+    },
+    {
+      "id": "pronunciation::steps.26.meaning",
+      "path": "pronunciation/steps[26]/meaning",
+      "ko": null,
+      "en": "front yard — ㅂ + ㅁ → ㅁ: spelled 앞마당, sounds like 암마당",
+      "current": "",
+      "ref_th": "ลานหน้าบ้าน — ㅂ + ㅁ → ㅁ: สะกด 앞마당 ออกเสียงเหมือน 암마당",
+      "ref_es": "patio delantero — ㅂ + ㅁ → ㅁ: se escribe 앞마당, suena como 암마당"
+    },
+    {
+      "id": "pronunciation::steps.27.prompt",
+      "path": "pronunciation/steps[27]/prompt",
+      "ko": null,
+      "en": "밥만 (only rice) — how is it actually pronounced?",
+      "current": "",
+      "ref_th": "밥만 (ข้าวเท่านั้น) — ออกเสียงอย่างไรจริงๆ?",
+      "ref_es": "밥만 (solo arroz) — ¿cómo se pronuncia realmente?"
+    },
+    {
+      "id": "pronunciation::steps.28.prompt",
+      "path": "pronunciation/steps[28]/prompt",
+      "ko": null,
+      "en": "ㄱ batchim followed by ㄴ or ㅁ changes to which sound?",
+      "current": "",
+      "ref_th": "บัดชิม ㄱ ตามด้วย ㄴ หรือ ㅁ เปลี่ยนเป็นเสียงใด?",
+      "ref_es": "El batchim ㄱ seguido de ㄴ o ㅁ cambia a ¿qué sonido?"
+    },
+    {
+      "id": "pronunciation::steps.29.prompt",
+      "path": "pronunciation/steps[29]/prompt",
+      "ko": null,
+      "en": "입니다 (is / am / are) — how is it actually pronounced?",
+      "current": "",
+      "ref_th": "입니다 (เป็น/คือ/อยู่) — ออกเสียงอย่างไรจริงๆ?",
+      "ref_es": "입니다 (es / soy / eres) — ¿cómo se pronuncia realmente?"
+    },
+    {
+      "id": "pronunciation::steps.29.choices[0]",
+      "path": "pronunciation/steps[29]/choices[0]",
+      "ko": null,
+      "en": "ip-ni-da",
+      "current": "",
+      "ref_th": "ip-ni-da",
+      "ref_es": "ip-ni-da"
+    },
+    {
+      "id": "pronunciation::steps.29.choices[1]",
+      "path": "pronunciation/steps[29]/choices[1]",
+      "ko": null,
+      "en": "im-ni-da",
+      "current": "",
+      "ref_th": "im-ni-da",
+      "ref_es": "im-ni-da"
+    },
+    {
+      "id": "pronunciation::steps.29.choices[2]",
+      "path": "pronunciation/steps[29]/choices[2]",
+      "ko": null,
+      "en": "ib-ni-da",
+      "current": "",
+      "ref_th": "ib-ni-da",
+      "ref_es": "ib-ni-da"
+    },
+    {
+      "id": "pronunciation::steps.29.choices[3]",
+      "path": "pronunciation/steps[29]/choices[3]",
+      "ko": null,
+      "en": "ip-mi-da",
+      "current": "",
+      "ref_th": "ip-mi-da",
+      "ref_es": "ip-mi-da"
+    },
+    {
+      "id": "pronunciation::steps.30.title",
+      "path": "pronunciation/steps[30]/title",
+      "ko": "동화 방향",
+      "en": "The Assimilation Pattern is Always One Direction",
+      "current": "",
+      "ref_th": "รูปแบบการดูดกลืนเป็นทิศทางเดียวเสมอ",
+      "ref_es": "El Patrón de Asimilación Siempre Va en Una Sola Dirección"
+    },
+    {
+      "id": "pronunciation::steps.30.body",
+      "path": "pronunciation/steps[30]/body",
+      "ko": null,
+      "en": "Nasal assimilation always goes the same way: the stop becomes nasal, never the other way around. The nasal consonant 'infects' the preceding sound. Once you spot the pattern ㅂ→ㅁ, ㄷ→ㄴ, ㄱ→ㅇ, you will start hearing and predicting these changes automatically in real Korean speech.",
+      "current": "",
+      "ref_th": "การดูดกลืนนาสิกเกิดขึ้นทิศทางเดียวเสมอ: เสียงหยุดกลายเป็นนาสิก ไม่ใช่ทางกลับ พยัญชนะนาสิก ติดเชื้อ เสียงก่อนหน้า เมื่อคุณจดจำรูปแบบ ㅂ→ㅁ ㄷ→ㄴ ㄱ→ㅇ คุณจะเริ่มได้ยินและคาดเดาการเปลี่ยนแปลงเหล่านี้โดยอัตโนมัติในการพูดเกาหลีจริง",
+      "ref_es": "La asimilación nasal siempre va en la misma dirección: la oclusiva se convierte en nasal, nunca al revés. La consonante nasal \"infecta\" al sonido anterior. Una vez que identifies el patrón ㅂ→ㅁ, ㄷ→ㄴ, ㄱ→ㅇ, empezarás a escuchar y predecir estos cambios automáticamente en el habla coreana real."
+    },
+    {
+      "id": "pronunciation::steps.30.tip.label",
+      "path": "pronunciation/steps[30]/tip.label",
+      "ko": null,
+      "en": "Memory trick",
+      "current": "",
+      "ref_th": "เคล็ดลับจำ",
+      "ref_es": "Truco para memorizar"
+    },
+    {
+      "id": "pronunciation::steps.30.tip.text",
+      "path": "pronunciation/steps[30]/tip.text",
+      "ko": null,
+      "en": "Think of each pair as sharing a location in your mouth. Lips: ㅂ (stop) ↔ ㅁ (nasal). Throat: ㄱ (stop) ↔ ㅇ (nasal). Teeth ridge: ㄷ (stop) ↔ ㄴ (nasal). The location stays; only the nasal valve opens.",
+      "current": "",
+      "ref_th": "คิดแต่ละคู่ว่าใช้ตำแหน่งเดียวกันในปาก ริมฝีปาก: ㅂ (หยุด) ↔ ㅁ (นาสิก) ลำคอ: ㄱ (หยุด) ↔ ㅇ (นาสิก) สันฟัน: ㄷ (หยุด) ↔ ㄴ (นาสิก) ตำแหน่งยังอยู่ เฉพาะวาล์วนาสิกที่เปิด",
+      "ref_es": "Piensa en cada par como compartiendo un lugar en tu boca. Labios: ㅂ (oclusiva) ↔ ㅁ (nasal). Garganta: ㄱ (oclusiva) ↔ ㅇ (nasal). Reborde dental: ㄷ (oclusiva) ↔ ㄴ (nasal). El lugar permanece; solo la válvula nasal se abre."
+    },
+    {
+      "id": "pronunciation::steps.31.title",
+      "path": "pronunciation/steps[31]/title",
+      "ko": "경음화",
+      "en": "Tensification",
+      "current": "",
+      "ref_th": "การเกร็งเสียง",
+      "ref_es": "Tensificación"
+    },
+    {
+      "id": "pronunciation::steps.31.body",
+      "path": "pronunciation/steps[31]/body",
+      "ko": null,
+      "en": "After certain batchim consonants — specifically the unreleased stop batchim sounds from the ㄱ, ㄷ, and ㅂ groups — the following consonant becomes tensed (doubled). The written form does not change; only the pronunciation shifts. Tensification is why 학교 (school) sounds like 학꾜 instead of 학교.",
+      "current": "",
+      "ref_th": "หลังพยัญชนะบัดชิมบางตัว — โดยเฉพาะเสียงหยุดที่ไม่ระเบิดจากกลุ่ม ㄱ ㄷ และ ㅂ — พยัญชนะถัดไปจะกลายเป็นเสียงเกร็ง (คู่) รูปเขียนไม่เปลี่ยน เฉพาะการออกเสียงที่เปลี่ยน การเกร็งเสียงคือเหตุผลที่ 학교 (โรงเรียน) ฟังดูเหมือน 학꾜 แทนที่จะเป็น 학교",
+      "ref_es": "Después de ciertas consonantes batchim — específicamente los sonidos batchim de oclusiva sin explosión de los grupos ㄱ, ㄷ y ㅂ — la consonante siguiente se tensa (se dobla). La forma escrita no cambia; solo la pronunciación varía. La tensificación explica por qué 학교 (escuela) suena como 학꾜 en lugar de 학교."
+    },
+    {
+      "id": "pronunciation::steps.31.tip.label",
+      "path": "pronunciation/steps[31]/tip.label",
+      "ko": null,
+      "en": "Why tensification happens",
+      "current": "",
+      "ref_th": "ทำไมการเกร็งเสียงเกิดขึ้น",
+      "ref_es": "Por qué ocurre la tensificación"
+    },
+    {
+      "id": "pronunciation::steps.31.tip.text",
+      "path": "pronunciation/steps[31]/tip.text",
+      "ko": null,
+      "en": "After an unreleased stop, the vocal tract is already in a tense, closed position. When you start the next consonant from this state, extra muscular tension carries over, creating the tensed sound automatically. Tensification is not deliberate — it is a natural articulatory consequence. Once you hear it in real speech, you cannot unhear it.",
+      "current": "",
+      "ref_th": "หลังเสียงหยุดที่ไม่ระเบิด ลำคออยู่ในสถานะเกร็งและปิดอยู่แล้ว เมื่อคุณเริ่มออกพยัญชนะถัดไปจากสถานะนี้ ความตึงกล้ามเนื้อส่วนเกินจะถ่ายโอน ทำให้เกิดเสียงเกร็งโดยอัตโนมัติ การเกร็งเสียงไม่ใช่จงใจ — เป็นผลทางธรรมชาติจากการออกเสียง",
+      "ref_es": "Después de una oclusiva sin explosión, el tracto vocal ya está en una posición tensa y cerrada. Cuando comienzas la siguiente consonante desde este estado, la tensión muscular adicional se transfiere, creando el sonido tenso automáticamente. La tensificación no es deliberada — es una consecuencia articulatoria natural. Una vez que la escuchas en el habla real, no puedes dejar de oírla."
+    },
+    {
+      "id": "pronunciation::steps.32.meaning",
+      "path": "pronunciation/steps[32]/meaning",
+      "ko": null,
+      "en": "school — ㄱ batchim triggers tensification: ㄱ→ㄲ, sounds like 학꾜",
+      "current": "",
+      "ref_th": "โรงเรียน — บัดชิม ㄱ ทำให้เกร็งเสียง: ㄱ→ㄲ ออกเสียงเหมือน 학꾜",
+      "ref_es": "escuela — el batchim ㄱ provoca tensificación: ㄱ→ㄲ, suena como 학꾜"
+    },
+    {
+      "id": "pronunciation::steps.33.meaning",
+      "path": "pronunciation/steps[33]/meaning",
+      "ko": null,
+      "en": "restaurant — ㄱ batchim triggers tensification: ㄷ→ㄸ, sounds like 식땅",
+      "current": "",
+      "ref_th": "ร้านอาหาร — บัดชิม ㄱ ทำให้เกร็งเสียง: ㄷ→ㄸ ออกเสียงเหมือน 식땅",
+      "ref_es": "restaurante — el batchim ㄱ provoca tensificación: ㄷ→ㄸ, suena como 식땅"
+    },
+    {
+      "id": "pronunciation::steps.34.meaning",
+      "path": "pronunciation/steps[34]/meaning",
+      "ko": null,
+      "en": "to close — ㄷ batchim triggers tensification: ㄷ→ㄸ, sounds like 닫따",
+      "current": "",
+      "ref_th": "ปิด — บัดชิม ㄷ ทำให้เกร็งเสียง: ㄷ→ㄸ ออกเสียงเหมือน 닫따",
+      "ref_es": "cerrar — el batchim ㄷ provoca tensificación: ㄷ→ㄸ, suena como 닫따"
+    },
+    {
+      "id": "pronunciation::steps.35.meaning",
+      "path": "pronunciation/steps[35]/meaning",
+      "ko": null,
+      "en": "entrance — ㅂ batchim triggers tensification: ㄱ→ㄲ, sounds like 입꾸",
+      "current": "",
+      "ref_th": "ทางเข้า — บัดชิม ㅂ ทำให้เกร็งเสียง: ㄱ→ㄲ ออกเสียงเหมือน 입꾸",
+      "ref_es": "entrada — el batchim ㅂ provoca tensificación: ㄱ→ㄲ, suena como 입꾸"
+    },
+    {
+      "id": "pronunciation::steps.36.prompt",
+      "path": "pronunciation/steps[36]/prompt",
+      "ko": null,
+      "en": "Tensification (경음화) occurs most predictably after which type of batchim?",
+      "current": "",
+      "ref_th": "การเกร็งเสียง (경음화) เกิดขึ้นได้แน่นอนที่สุดหลังบัดชิมประเภทใด?",
+      "ref_es": "La tensificación (경음화) ocurre de forma más predecible después de ¿qué tipo de batchim?"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[0]",
+      "path": "pronunciation/steps[36]/choices[0]",
+      "ko": null,
+      "en": "Nasal batchim (ㄴ, ㅁ, ㅇ)",
+      "current": "",
+      "ref_th": "บัดชิมนาสิก (ㄴ ㅁ ㅇ)",
+      "ref_es": "Batchim nasal (ㄴ, ㅁ, ㅇ)"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[1]",
+      "path": "pronunciation/steps[36]/choices[1]",
+      "ko": null,
+      "en": "Unreleased stop batchim (ㄱ, ㄷ, ㅂ groups)",
+      "current": "",
+      "ref_th": "บัดชิมหยุดไม่ระเบิด (กลุ่ม ㄱ ㄷ ㅂ)",
+      "ref_es": "Batchim de oclusiva sin explosión (grupos ㄱ, ㄷ, ㅂ)"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[2]",
+      "path": "pronunciation/steps[36]/choices[2]",
+      "ko": null,
+      "en": "The ㄹ batchim only",
+      "current": "",
+      "ref_th": "บัดชิม ㄹ เท่านั้น",
+      "ref_es": "Solo el batchim ㄹ"
+    },
+    {
+      "id": "pronunciation::steps.36.choices[3]",
+      "path": "pronunciation/steps[36]/choices[3]",
+      "ko": null,
+      "en": "Any batchim consonant",
+      "current": "",
+      "ref_th": "พยัญชนะบัดชิมใดก็ได้",
+      "ref_es": "Cualquier consonante batchim"
+    },
+    {
+      "id": "pronunciation::steps.37.prompt",
+      "path": "pronunciation/steps[37]/prompt",
+      "ko": null,
+      "en": "학교 (school) — how is it actually pronounced?",
+      "current": "",
+      "ref_th": "학교 (โรงเรียน) — ออกเสียงอย่างไรจริงๆ?",
+      "ref_es": "학교 (escuela) — ¿cómo se pronuncia realmente?"
+    },
+    {
+      "id": "pronunciation::steps.37.choices[0]",
+      "path": "pronunciation/steps[37]/choices[0]",
+      "ko": null,
+      "en": "hak-gyo",
+      "current": "",
+      "ref_th": "hak-gyo",
+      "ref_es": "hak-gyo"
+    },
+    {
+      "id": "pronunciation::steps.37.choices[1]",
+      "path": "pronunciation/steps[37]/choices[1]",
+      "ko": null,
+      "en": "hak-kyo (aspirated)",
+      "current": "",
+      "ref_th": "hak-kyo (พ่นอากาศ)",
+      "ref_es": "hak-kyo (aspirada)"
+    },
+    {
+      "id": "pronunciation::steps.37.choices[2]",
+      "path": "pronunciation/steps[37]/choices[2]",
+      "ko": null,
+      "en": "hak-kkyo (tensed)",
+      "current": "",
+      "ref_th": "hak-kkyo (tensed)",
+      "ref_es": "hak-kkyo (tensa)"
+    },
+    {
+      "id": "pronunciation::steps.37.choices[3]",
+      "path": "pronunciation/steps[37]/choices[3]",
+      "ko": null,
+      "en": "ha-gyo",
+      "current": "",
+      "ref_th": "ha-gyo",
+      "ref_es": "ha-gyo"
+    },
+    {
+      "id": "pronunciation::steps.38.title",
+      "path": "pronunciation/steps[38]/title",
+      "ko": "ㅎ 약화",
+      "en": "ㅎ Weakening",
+      "current": "",
+      "ref_th": "การอ่อนแรงของ ㅎ",
+      "ref_es": "Debilitamiento de ㅎ"
+    },
+    {
+      "id": "pronunciation::steps.38.body",
+      "path": "pronunciation/steps[38]/body",
+      "ko": null,
+      "en": "The consonant ㅎ is one of Korean's most unstable sounds. Between vowels — whether ㅎ is a batchim or an initial consonant — it weakens significantly and often disappears almost entirely. This is why 좋아요 (it is good) sounds like 조아요 rather than 조하요. The ㅎ is still written, but the sound nearly vanishes.",
+      "current": "",
+      "ref_th": "พยัญชนะ ㅎ เป็นหนึ่งในเสียงที่ไม่เสถียรที่สุดของเกาหลี ระหว่างสระ — ไม่ว่า ㅎ จะเป็นบัดชิมหรือพยัญชนะต้น — มันอ่อนแรงลงอย่างมากและมักจะแทบหายไปเลย นั่นคือเหตุผลที่ 좋아요 (ดี/ชอบ) ฟังดูเหมือน 조아요 แทน 조하요 ยังคงเขียน ㅎ ไว้ แต่เสียงเกือบจะหายไป",
+      "ref_es": "La consonante ㅎ es uno de los sonidos más inestables del coreano. Entre vocales — ya sea que ㅎ sea batchim o consonante inicial — se debilita significativamente y a menudo desaparece casi por completo. Por eso 좋아요 (está bien) suena como 조아요 y no como 조하요. El ㅎ sigue escrito, pero el sonido casi desaparece."
+    },
+    {
+      "id": "pronunciation::steps.38.tip.label",
+      "path": "pronunciation/steps[38]/tip.label",
+      "ko": null,
+      "en": "Common beginner error",
+      "current": "",
+      "ref_th": "ข้อผิดพลาดทั่วไปของผู้เริ่มต้น",
+      "ref_es": "Error común de principiantes"
+    },
+    {
+      "id": "pronunciation::steps.38.tip.text",
+      "path": "pronunciation/steps[38]/tip.text",
+      "ko": null,
+      "en": "Many beginners say 조하요 for 좋아요, preserving the h sound. In real Korean speech this sounds unnatural and overly deliberate. The standard pronunciation is 조아요 — the ㅎ silently disappears between the two vowels. Trust the rule: ㅎ between vowels nearly vanishes.",
+      "current": "",
+      "ref_th": "ผู้เริ่มต้นหลายคนพูด 조하요 สำหรับ 좋아요 โดยยังคงเสียง ห ในการพูดเกาหลีจริง ฟังดูผิดธรรมชาติและตั้งใจเกินไป การออกเสียงมาตรฐานคือ 조아요 — ㅎ หายไปเงียบๆ ระหว่างสระสองตัว เชื่อกฎนี้: ㅎ ระหว่างสระแทบจะหายไป",
+      "ref_es": "Muchos principiantes dicen 조하요 para 좋아요, manteniendo el sonido h. En el habla coreana real esto suena antinatural y demasiado deliberado. La pronunciación estándar es 조아요 — el ㅎ desaparece silenciosamente entre las dos vocales. Confía en la regla: el ㅎ entre vocales casi desaparece."
+    },
+    {
+      "id": "pronunciation::steps.39.meaning",
+      "path": "pronunciation/steps[39]/meaning",
+      "ko": null,
+      "en": "It is good / I like it — ㅎ batchim weakens: sounds like 조아요 (not 조하요)",
+      "current": "",
+      "ref_th": "มันดี / ฉันชอบ — บัดชิม ㅎ อ่อนแรง: ออกเสียงเหมือน 조아요 (ไม่ใช่ 조하요)",
+      "ref_es": "Está bien / Me gusta — el batchim ㅎ se debilita: suena como 조아요 (no 조하요)"
+    },
+    {
+      "id": "pronunciation::steps.40.meaning",
+      "path": "pronunciation/steps[40]/meaning",
+      "ko": null,
+      "en": "There is a lot — ㅎ in ㄶ batchim weakens: sounds like 마나요",
+      "current": "",
+      "ref_th": "มีมาก — ㅎ ใน ㄶ บัดชิมอ่อนแรง: ออกเสียงเหมือน 마나요",
+      "ref_es": "Hay mucho — el ㅎ en el batchim ㄶ se debilita: suena como 마나요"
+    },
+    {
+      "id": "pronunciation::steps.41.meaning",
+      "path": "pronunciation/steps[41]/meaning",
+      "ko": null,
+      "en": "I put it in — ㅎ batchim weakens between vowels: sounds like 너어요",
+      "current": "",
+      "ref_th": "ฉันใส่มัน — บัดชิม ㅎ อ่อนแรงระหว่างสระ: ออกเสียงเหมือน 너어요",
+      "ref_es": "Lo pongo dentro — el batchim ㅎ se debilita entre vocales: suena como 너어요"
+    },
+    {
+      "id": "pronunciation::steps.42.title",
+      "path": "pronunciation/steps[42]/title",
+      "ko": "ㅎ 축약",
+      "en": "ㅎ + Consonant = Aspiration",
+      "current": "",
+      "ref_th": "ㅎ + พยัญชนะ = การพ่นอากาศ",
+      "ref_es": "ㅎ + Consonante = Aspiración"
+    },
+    {
+      "id": "pronunciation::steps.42.body",
+      "path": "pronunciation/steps[42]/body",
+      "ko": null,
+      "en": "When ㅎ batchim meets the next syllable's initial consonant (or vice versa), the two merge into a single aspirated consonant. ㅎ + ㄷ becomes ㅌ. ㄱ + ㅎ becomes ㅋ. ㅂ + ㅎ becomes ㅍ. ㄷ + ㅎ (or ㅎ + ㄷ) becomes ㅌ. Think of ㅎ as adding a puff of air to the adjacent consonant.",
+      "current": "",
+      "ref_th": "เมื่อบัดชิม ㅎ พบกับพยัญชนะต้นของพยางค์ถัดไป (หรือในทางกลับกัน) ทั้งสองรวมกันเป็นพยัญชนะพ่นอากาศเดียว ㅎ + ㄷ กลายเป็น ㅌ ㄱ + ㅎ กลายเป็น ㅋ ㅂ + ㅎ กลายเป็น ㅍ ㄷ + ㅎ (หรือ ㅎ + ㄷ) กลายเป็น ㅌ คิดว่า ㅎ เพิ่มการพ่นอากาศให้กับพยัญชนะข้างเคียง",
+      "ref_es": "Cuando el batchim ㅎ encuentra la consonante inicial de la sílaba siguiente (o viceversa), los dos se fusionan en una sola consonante aspirada. ㅎ + ㄷ se convierte en ㅌ. ㄱ + ㅎ se convierte en ㅋ. ㅂ + ㅎ se convierte en ㅍ. ㄷ + ㅎ (o ㅎ + ㄷ) se convierte en ㅌ. Piensa en ㅎ como añadiendo una ráfaga de aire a la consonante adyacente."
+    },
+    {
+      "id": "pronunciation::steps.42.rules[0]",
+      "path": "pronunciation/steps[42]/rules[0]",
+      "ko": null,
+      "en": "ㅎ + ㄷ → ㅌ: 놓다 (to place) → 노타",
+      "current": "",
+      "ref_th": "ㅎ + ㄷ → ㅌ: 놓다 (วาง) → 노타",
+      "ref_es": "ㅎ + ㄷ → ㅌ: 놓다 (colocar) → 노타"
+    },
+    {
+      "id": "pronunciation::steps.42.rules[1]",
+      "path": "pronunciation/steps[42]/rules[1]",
+      "ko": null,
+      "en": "ㄱ + ㅎ → ㅋ: 착하다 (kind) → 차카다",
+      "current": "",
+      "ref_th": "ㄱ + ㅎ → ㅋ: 착하다 (ใจดี) → 차카다",
+      "ref_es": "ㄱ + ㅎ → ㅋ: 착하다 (amable) → 차카다"
+    },
+    {
+      "id": "pronunciation::steps.42.rules[2]",
+      "path": "pronunciation/steps[42]/rules[2]",
+      "ko": null,
+      "en": "ㅂ + ㅎ → ㅍ: 입학 (enrollment) → 이팍",
+      "current": "",
+      "ref_th": "ㅂ + ㅎ → ㅍ: 입학 (เข้าเรียน) → 이팍",
+      "ref_es": "ㅂ + ㅎ → ㅍ: 입학 (inscripción) → 이팍"
+    },
+    {
+      "id": "pronunciation::steps.42.rules[3]",
+      "path": "pronunciation/steps[42]/rules[3]",
+      "ko": null,
+      "en": "ㄷ + ㅎ → ㅌ: 못해요 (can't do) → 모태요",
+      "current": "",
+      "ref_th": "ㄷ + ㅎ → ㅌ: 못해요 (ทำไม่ได้) → 모태요",
+      "ref_es": "ㄷ + ㅎ → ㅌ: 못해요 (no puedo) → 모태요"
+    },
+    {
+      "id": "pronunciation::steps.43.meaning",
+      "path": "pronunciation/steps[43]/meaning",
+      "ko": null,
+      "en": "to let go / to place — ㅎ batchim + ㄷ → ㅌ: spelled 놓다, sounds like 노타",
+      "current": "",
+      "ref_th": "ปล่อย / วาง — บัดชิม ㅎ + ㄷ → ㅌ: สะกด 놓다 ออกเสียงเหมือน 노타",
+      "ref_es": "soltar / colocar — batchim ㅎ + ㄷ → ㅌ: se escribe 놓다, suena como 노타"
+    },
+    {
+      "id": "pronunciation::steps.44.prompt",
+      "path": "pronunciation/steps[44]/prompt",
+      "ko": null,
+      "en": "What sound does ㅎ + ㄷ (or ㄷ + ㅎ) produce?",
+      "current": "",
+      "ref_th": "ㅎ + ㄷ (หรือ ㄷ + ㅎ) ให้เสียงอะไร?",
+      "ref_es": "¿Qué sonido produce ㅎ + ㄷ (o ㄷ + ㅎ)?"
+    },
+    {
+      "id": "pronunciation::steps.44.choices[0]",
+      "path": "pronunciation/steps[44]/choices[0]",
+      "ko": null,
+      "en": "ㄷ (plain)",
+      "current": "",
+      "ref_th": "ㄷ (plain)",
+      "ref_es": "ㄷ (regular)"
+    },
+    {
+      "id": "pronunciation::steps.44.choices[1]",
+      "path": "pronunciation/steps[44]/choices[1]",
+      "ko": null,
+      "en": "ㅌ (aspirated t)",
+      "current": "",
+      "ref_th": "ㅌ (ท พ่นอากาศ)",
+      "ref_es": "ㅌ (t aspirada)"
+    },
+    {
+      "id": "pronunciation::steps.44.choices[2]",
+      "path": "pronunciation/steps[44]/choices[2]",
+      "ko": null,
+      "en": "ㄸ (tensed)",
+      "current": "",
+      "ref_th": "ㄸ (tensed)",
+      "ref_es": "ㄸ (tensa)"
+    },
+    {
+      "id": "pronunciation::steps.44.choices[3]",
+      "path": "pronunciation/steps[44]/choices[3]",
+      "ko": null,
+      "en": "ㅎ (stays h)",
+      "current": "",
+      "ref_th": "ㅎ (stays h)",
+      "ref_es": "ㅎ (se queda como h)"
+    },
+    {
+      "id": "pronunciation::steps.45.title",
+      "path": "pronunciation/steps[45]/title",
+      "ko": "구개음화",
+      "en": "Palatalization",
+      "current": "",
+      "ref_th": "การออกเสียงเพดานปาก",
+      "ref_es": "Palatalización"
+    },
+    {
+      "id": "pronunciation::steps.45.body",
+      "path": "pronunciation/steps[45]/body",
+      "ko": null,
+      "en": "When the consonants ㄷ or ㅌ appear as batchim and are followed by the vowel 이 (i), they shift forward in the mouth and change into ㅈ and ㅊ respectively. This shift is called palatalization — the consonant moves from the tooth ridge to the palate to anticipate the front vowel 이.",
+      "current": "",
+      "ref_th": "เมื่อพยัญชนะ ㄷ หรือ ㅌ ปรากฏเป็นบัดชิมและตามด้วยสระ 이 (อี) พยัญชนะเหล่านั้นจะเลื่อนไปข้างหน้าในปากและเปลี่ยนเป็น ㅈ และ ㅊ ตามลำดับ การเปลี่ยนแปลงนี้เรียกว่าการออกเสียงเพดานปาก — พยัญชนะเลื่อนจากสันฟันไปยังเพดานปากเพื่อรองรับสระหน้า 이",
+      "ref_es": "Cuando las consonantes ㄷ o ㅌ aparecen como batchim y van seguidas de la vocal 이 (i), avanzan en la boca y cambian a ㅈ y ㅊ respectivamente. Este cambio se llama palatalización — la consonante se mueve del reborde dental al paladar para anticipar la vocal frontal 이."
+    },
+    {
+      "id": "pronunciation::steps.45.rules[0]",
+      "path": "pronunciation/steps[45]/rules[0]",
+      "ko": null,
+      "en": "ㄷ + 이 → ㅈ이 → 지: 굳이 (deliberately) → 구지",
+      "current": "",
+      "ref_th": "ㄷ + 이 → ㅈ이 → 지: 굳이 (จงใจ) → 구지",
+      "ref_es": "ㄷ + 이 → ㅈ이 → 지: 굳이 (deliberadamente) → 구지"
+    },
+    {
+      "id": "pronunciation::steps.45.rules[1]",
+      "path": "pronunciation/steps[45]/rules[1]",
+      "ko": null,
+      "en": "ㅌ + 이 → ㅊ이 → 치: 같이 (together) → 가치",
+      "current": "",
+      "ref_th": "ㅌ + 이 → ㅊ이 → 치: 같이 (ด้วยกัน) → 가치",
+      "ref_es": "ㅌ + 이 → ㅊ이 → 치: 같이 (juntos) → 가치"
+    },
+    {
+      "id": "pronunciation::steps.45.tip.label",
+      "path": "pronunciation/steps[45]/tip.label",
+      "ko": null,
+      "en": "Morpheme-internal only",
+      "current": "",
+      "ref_th": "ภายในหน่วยคำเท่านั้น",
+      "ref_es": "Solo dentro del morfema"
+    },
+    {
+      "id": "pronunciation::steps.45.tip.text",
+      "path": "pronunciation/steps[45]/tip.text",
+      "ko": null,
+      "en": "Palatalization applies only within the same word or when a suffix beginning with 이 attaches to the stem. It does not apply across word boundaries. 같이 triggers palatalization because 이 is part of the word. In a phrase like 옷 입어요 (putting on clothes), 이 starts a separate word — different rules apply.",
+      "current": "",
+      "ref_th": "การออกเสียงเพดานปากใช้เฉพาะภายในคำเดียวกันหรือเมื่อคำต่อท้ายที่เริ่มต้นด้วย 이 ติดกับก้านคำ ไม่ใช้ข้ามขอบเขตคำ 같이 ทำให้เกิดการออกเสียงเพดานปากเพราะ 이 เป็นส่วนหนึ่งของคำ",
+      "ref_es": "La palatalización solo aplica dentro de la misma palabra o cuando un sufijo que comienza con 이 se une al radical. No aplica entre límites de palabras. 같이 provoca palatalización porque 이 es parte de la palabra. En una frase como 옷 입어요 (poniéndose ropa), 이 comienza una palabra separada — se aplican reglas diferentes."
+    },
+    {
+      "id": "pronunciation::steps.46.meaning",
+      "path": "pronunciation/steps[46]/meaning",
+      "ko": null,
+      "en": "together — ㅌ + 이 → ㅊ: spelled 같이, sounds like 가치",
+      "current": "",
+      "ref_th": "ด้วยกัน — ㅌ + 이 → ㅊ: สะกด 같이 ออกเสียงเหมือน 가치",
+      "ref_es": "juntos — ㅌ + 이 → ㅊ: se escribe 같이, suena como 가치"
+    },
+    {
+      "id": "pronunciation::steps.47.meaning",
+      "path": "pronunciation/steps[47]/meaning",
+      "ko": null,
+      "en": "deliberately / stubbornly — ㄷ + 이 → ㅈ: spelled 굳이, sounds like 구지",
+      "current": "",
+      "ref_th": "จงใจ / ดื้อรั้น — ㄷ + 이 → ㅈ: สะกด 굳이 ออกเสียงเหมือน 구지",
+      "ref_es": "deliberadamente / tercamente — ㄷ + 이 → ㅈ: se escribe 굳이, suena como 구지"
+    },
+    {
+      "id": "pronunciation::steps.48.prompt",
+      "path": "pronunciation/steps[48]/prompt",
+      "ko": null,
+      "en": "When ㄷ batchim is followed by the vowel 이, it changes to…",
+      "current": "",
+      "ref_th": "เมื่อบัดชิม ㄷ ตามด้วยสระ 이 มันเปลี่ยนเป็น…",
+      "ref_es": "Cuando el batchim ㄷ es seguido por la vocal 이, cambia a…"
+    },
+    {
+      "id": "pronunciation::steps.49.prompt",
+      "path": "pronunciation/steps[49]/prompt",
+      "ko": null,
+      "en": "When ㅌ batchim is followed by the vowel 이, it changes to…",
+      "current": "",
+      "ref_th": "เมื่อบัดชิม ㅌ ตามด้วยสระ 이 มันเปลี่ยนเป็น…",
+      "ref_es": "Cuando el batchim ㅌ es seguido por la vocal 이, cambia a…"
+    },
+    {
+      "id": "pronunciation::steps.50.title",
+      "path": "pronunciation/steps[50]/title",
+      "ko": "리을",
+      "en": "The ㄹ Sound",
+      "current": "",
+      "ref_th": "เสียง ㄹ",
+      "ref_es": "El Sonido ㄹ"
+    },
+    {
+      "id": "pronunciation::steps.50.body",
+      "path": "pronunciation/steps[50]/body",
+      "ko": null,
+      "en": "The Korean consonant ㄹ is often described as between r and l — and that is precisely correct. Its exact realisation depends on its position within the syllable. Between two vowels, ㄹ is a single fast tap of the tongue tip against the ridge just behind the upper teeth — the same motion as the flap r in American English 'butter' or 'water'. At the end of a syllable or before a consonant, hold the tongue lightly at that same ridge for a gentle l sound.",
+      "current": "",
+      "ref_th": "พยัญชนะ ㄹ ในภาษาเกาหลีมักถูกอธิบายว่าอยู่ระหว่าง ร และ ล — และนั่นถูกต้องทีเดียว การออกเสียงที่แน่นอนขึ้นอยู่กับตำแหน่งในพยางค์ ระหว่างสระสองตัว ㄹ เป็นการแตะปลายลิ้นเร็วที่สันหลังฟันบน — เหมือนเสียง r แบบพลิ้วในภาษาอังกฤษอเมริกัน เช่น butter หรือ water ที่ท้ายพยางค์หรือก่อนพยัญชนะ ลิ้นค้างเบาๆ ที่สันเดิมเป็นเสียง ล อ่อน",
+      "ref_es": "La consonante coreana ㄹ a menudo se describe como entre r y l — y eso es precisamente correcto. Su realización exacta depende de su posición dentro de la sílaba. Entre dos vocales, ㄹ es un rápido golpe del extremo de la lengua contra el reborde justo detrás de los dientes superiores — el mismo movimiento que la r percusiva (vibrante simple) en español como en \"pero\" o \"caro\". Al final de una sílaba o antes de una consonante, mantén la lengua ligeramente en ese mismo reborde para un sonido l suave."
+    },
+    {
+      "id": "pronunciation::steps.50.tip.label",
+      "path": "pronunciation/steps[50]/tip.label",
+      "ko": null,
+      "en": "Tongue-tap technique",
+      "current": "",
+      "ref_th": "เทคนิคแตะลิ้น",
+      "ref_es": "Técnica del golpe de lengua"
+    },
+    {
+      "id": "pronunciation::steps.50.tip.text",
+      "path": "pronunciation/steps[50]/tip.text",
+      "ko": null,
+      "en": "Do not roll ㄹ (no Spanish trill) and do not use an English l-shape in vowel position. In 라면 the ㄹ is a quick tap — try saying 'la' while thinking 'ra'. In 달 (moon) the ㄹ is a held l. In 빨리 (quickly) you get both: a held l then a tap.",
+      "current": "",
+      "ref_th": "อย่าพลิ้วลิ้น ㄹ (ไม่มีการสั่น) และอย่าใช้รูปแบบ ล ของภาษาอังกฤษในตำแหน่งสระ ใน 라면 ตัว ㄹ เป็นการแตะเร็ว — ลองพูด ลา ในขณะที่คิดว่า รา ใน 달 (ดวงจันทร์) ตัว ㄹ เป็น ล ค้าง ใน 빨리 (เร็ว) คุณจะได้ทั้งคู่: ล ค้างแล้วแตะ",
+      "ref_es": "No hagas vibrar ㄹ como la rr española (sin vibración múltiple) y no uses una l inglesa en posición vocálica. En 라면 el ㄹ es un golpe rápido — como la r de \"pero\" en español. En 달 (luna) el ㄹ es una l sostenida. En 빨리 (rápidamente) obtienes ambas: una l sostenida y luego un golpe."
+    },
+    {
+      "id": "pronunciation::steps.51.meaning",
+      "path": "pronunciation/steps[51]/meaning",
+      "ko": null,
+      "en": "instant noodles — ㄹ in initial position (before vowel): quick r-tap",
+      "current": "",
+      "ref_th": "บะหมี่กึ่งสำเร็จรูป — ㄹ ในตำแหน่งต้น (ก่อนสระ): แตะเร็ว r",
+      "ref_es": "fideos instantáneos — ㄹ en posición inicial (antes de vocal): golpe rápido de r"
+    },
+    {
+      "id": "pronunciation::steps.52.meaning",
+      "path": "pronunciation/steps[52]/meaning",
+      "ko": null,
+      "en": "moon — ㄹ as final batchim: held l sound",
+      "current": "",
+      "ref_th": "ดวงจันทร์ — ㄹ เป็นบัดชิมสุดท้าย: ค้างเสียง ล",
+      "ref_es": "luna — ㄹ como batchim final: sonido l sostenido"
+    },
+    {
+      "id": "pronunciation::steps.53.meaning",
+      "path": "pronunciation/steps[53]/meaning",
+      "ko": null,
+      "en": "quickly, fast — doubled ㄹㄹ: held l then r-tap",
+      "current": "",
+      "ref_th": "เร็ว ไว — ㄹㄹ คู่: ล ค้างแล้วแตะ r",
+      "ref_es": "rápido, veloz — ㄹㄹ doble: l sostenida seguida de golpe de r"
+    },
+    {
+      "id": "pronunciation::steps.54.meaning",
+      "path": "pronunciation/steps[54]/meaning",
+      "ko": null,
+      "en": "I love you — ㄹ between vowels (랑→해): r-tap sound",
+      "current": "",
+      "ref_th": "ฉันรักคุณ — ㄹ ระหว่างสระ (랑→해): เสียงแตะ r",
+      "ref_es": "Te amo — ㄹ entre vocales (랑→해): sonido de golpe de r"
+    },
+    {
+      "id": "pronunciation::steps.55.title",
+      "path": "pronunciation/steps[55]/title",
+      "ko": "유음화",
+      "en": "ㄹ + ㄴ or ㄴ + ㄹ → ㄹㄹ",
+      "current": "",
+      "ref_th": "ㄹ + ㄴ หรือ ㄴ + ㄹ → ㄹㄹ",
+      "ref_es": "ㄹ + ㄴ o ㄴ + ㄹ → ㄹㄹ (Lateralización)"
+    },
+    {
+      "id": "pronunciation::steps.55.body",
+      "path": "pronunciation/steps[55]/body",
+      "ko": null,
+      "en": "When ㄹ and ㄴ appear adjacent across syllables, they both become ㄹ — this is called lateralisation (유음화). Example: 신라 (Silla dynasty) is pronounced 실라 (silla), not sin-ra. Similarly, 연락 (contact) is pronounced 열락 (yeollak). The ㄴ fully converts to ㄹ when adjacent to ㄹ.",
+      "current": "",
+      "ref_th": "เมื่อ ㄹ และ ㄴ ปรากฏติดกันข้ามพยางค์ ทั้งสองกลายเป็น ㄹ — เรียกว่าการทำให้เป็นเสียงข้าง (유음화) ตัวอย่าง: 신라 (ซิลลา ราชวงศ์ประวัติศาสตร์) ออกเสียงว่า 실라 ไม่ใช่ ซิน-รา ในทำนองเดียวกัน 연락 (การติดต่อ) ออกเสียงว่า 열락 ตัว ㄴ เปลี่ยนเป็น ㄹ อย่างสมบูรณ์เมื่ออยู่ติดกับ ㄹ",
+      "ref_es": "Cuando ㄹ y ㄴ aparecen adyacentes entre sílabas, ambos se convierten en ㄹ — esto se llama lateralización (유음화). Ejemplo: 신라 (dinastía Silla) se pronuncia 실라 (silla), no sin-ra. Similarmente, 연락 (contacto) se pronuncia 열락 (yeollak). El ㄴ se convierte completamente en ㄹ cuando es adyacente a ㄹ."
+    },
+    {
+      "id": "pronunciation::steps.55.tip.label",
+      "path": "pronunciation/steps[55]/tip.label",
+      "ko": null,
+      "en": "Why lateralisation?",
+      "current": "",
+      "ref_th": "ทำไมเกิดการทำให้เป็นเสียงข้าง?",
+      "ref_es": "¿Por qué lateralización?"
+    },
+    {
+      "id": "pronunciation::steps.55.tip.text",
+      "path": "pronunciation/steps[55]/tip.text",
+      "ko": null,
+      "en": "ㄹ and ㄴ share very similar tongue positions — both are alveolar sounds made at the tooth ridge. When they appear next to each other, the stronger (lateral) ㄹ pulls the ㄴ into its territory. This is one of the most striking sound changes because the spelling gives no visual hint it is happening.",
+      "current": "",
+      "ref_th": "ㄹ และ ㄴ มีตำแหน่งลิ้นที่คล้ายกันมาก — ทั้งคู่เป็นเสียงสันฟัน เมื่ออยู่ติดกัน ตัวที่แข็งแกร่งกว่า (เสียงข้าง) ㄹ จะดึง ㄴ เข้าสู่ดินแดนของตัวเอง นี่คือการเปลี่ยนเสียงที่น่าตื่นตาที่สุดอย่างหนึ่งเพราะการสะกดไม่มีสัญญาณภาพว่ามันกำลังเกิดขึ้น",
+      "ref_es": "ㄹ y ㄴ comparten posiciones de lengua muy similares — ambos son sonidos alveolares producidos en el reborde dental. Cuando aparecen uno al lado del otro, el ㄹ más fuerte (lateral) arrastra al ㄴ a su territorio. Este es uno de los cambios de sonido más llamativos porque la escritura no da ninguna pista visual de que está ocurriendo."
+    },
+    {
+      "id": "pronunciation::steps.56.prompt",
+      "path": "pronunciation/steps[56]/prompt",
+      "ko": null,
+      "en": "신라 (Silla — a historical Korean kingdom) is pronounced as…",
+      "current": "",
+      "ref_th": "신라 (ซิลลา — อาณาจักรเกาหลีในประวัติศาสตร์) ออกเสียงว่า…",
+      "ref_es": "신라 (Silla — un reino coreano histórico) se pronuncia como…"
+    },
+    {
+      "id": "pronunciation::steps.56.choices[0]",
+      "path": "pronunciation/steps[56]/choices[0]",
+      "ko": null,
+      "en": "sin-ra",
+      "current": "",
+      "ref_th": "sin-ra",
+      "ref_es": "sin-ra"
+    },
+    {
+      "id": "pronunciation::steps.56.choices[1]",
+      "path": "pronunciation/steps[56]/choices[1]",
+      "ko": null,
+      "en": "sin-la",
+      "current": "",
+      "ref_th": "sin-la",
+      "ref_es": "sin-la"
+    },
+    {
+      "id": "pronunciation::steps.56.choices[2]",
+      "path": "pronunciation/steps[56]/choices[2]",
+      "ko": null,
+      "en": "sil-la",
+      "current": "",
+      "ref_th": "sil-la",
+      "ref_es": "sil-la"
+    },
+    {
+      "id": "pronunciation::steps.56.choices[3]",
+      "path": "pronunciation/steps[56]/choices[3]",
+      "ko": null,
+      "en": "shi-ra",
+      "current": "",
+      "ref_th": "shi-ra",
+      "ref_es": "shi-ra"
+    },
+    {
+      "id": "pronunciation::steps.57.title",
+      "path": "pronunciation/steps[57]/title",
+      "ko": "흔한 발음 실수",
+      "en": "6 Common Mistakes for English Speakers",
+      "current": "",
+      "ref_th": "6 ข้อผิดพลาดทั่วไปสำหรับผู้พูดภาษาอังกฤษ",
+      "ref_es": "6 Errores Comunes para Hispanohablantes"
+    },
+    {
+      "id": "pronunciation::steps.57.body",
+      "path": "pronunciation/steps[57]/body",
+      "ko": null,
+      "en": "Korean and English have very different phonological systems. The next six steps each cover one common pronunciation error made by English speakers — with clear explanations of how to correct it. Recognising these patterns early saves months of bad habits.",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีและภาษาอังกฤษมีระบบสัทวิทยาที่แตกต่างกันมาก หกขั้นตอนถัดไปแต่ละขั้นตอนครอบคลุมข้อผิดพลาดทั่วไปหนึ่งอย่างที่เกิดขึ้นกับผู้พูดภาษาอังกฤษ — พร้อมคำอธิบายชัดเจนถึงวิธีแก้ไข การรู้จักรูปแบบเหล่านี้เร็วๆ ช่วยประหยัดเดือนของนิสัยแย่ๆ",
+      "ref_es": "El coreano y el español tienen sistemas fonológicos muy diferentes. Los siguientes seis pasos cubren cada uno un error de pronunciación común — con explicaciones claras sobre cómo corregirlo. Reconocer estos patrones desde el principio ahorra meses de malos hábitos."
+    },
+    {
+      "id": "pronunciation::steps.57.tip.label",
+      "path": "pronunciation/steps[57]/tip.label",
+      "ko": null,
+      "en": "What makes these so common?",
+      "current": "",
+      "ref_th": "ทำไมถึงพบบ่อย?",
+      "ref_es": "¿Qué los hace tan comunes?"
+    },
+    {
+      "id": "pronunciation::steps.57.tip.text",
+      "path": "pronunciation/steps[57]/tip.text",
+      "ko": null,
+      "en": "English speakers automatically apply English phonology to new sounds. Korean has vowels, consonant contrasts, and intonation patterns that simply do not exist in English. Each of these mistakes comes from mapping a Korean sound onto the nearest English equivalent — which is almost always wrong.",
+      "current": "",
+      "ref_th": "ผู้พูดภาษาอังกฤษใช้สัทวิทยาภาษาอังกฤษโดยอัตโนมัติกับเสียงใหม่ๆ ภาษาเกาหลีมีสระ ความแตกต่างของพยัญชนะ และรูปแบบระดับเสียงที่ไม่มีในภาษาอังกฤษเลย ข้อผิดพลาดแต่ละข้อมาจากการนำเสียงเกาหลีไปจับคู่กับเสียงภาษาอังกฤษที่ใกล้เคียงที่สุด — ซึ่งแทบจะผิดเสมอ",
+      "ref_es": "Los hispanohablantes aplican automáticamente la fonología española a los nuevos sonidos. El coreano tiene vocales, contrastes de consonantes y patrones de entonación que simplemente no existen en español. Cada uno de estos errores proviene de mapear un sonido coreano al equivalente español más cercano — lo cual casi siempre es incorrecto."
+    },
+    {
+      "id": "pronunciation::steps.58.title",
+      "path": "pronunciation/steps[58]/title",
+      "ko": "ㅡ 발음 오류",
+      "en": "Mistake 1 — Pronouncing ㅡ like 'oo'",
+      "current": "",
+      "ref_th": "ข้อผิดพลาด 1 — ออกเสียง ㅡ เหมือน oo",
+      "ref_es": "Error 1 — Pronunciar ㅡ como \"u\""
+    },
+    {
+      "id": "pronunciation::steps.58.body",
+      "path": "pronunciation/steps[58]/body",
+      "ko": null,
+      "en": "ㅡ has no English equivalent. It is a back unrounded vowel — your tongue is in the oo position but your lips are completely flat and unrounded, as if you are saying 'uh' with a stiff, spread mouth. Words like 으, 크다, 든지 all use this sound. The moment your lips round, you are producing the wrong vowel.",
+      "current": "",
+      "ref_th": "ㅡ ไม่มีเสียงเทียบในภาษาอังกฤษ เป็นสระหลังไม่ห่อปาก — ลิ้นอยู่ในตำแหน่ง อู แต่ริมฝีปากแบนราบและไม่ห่อ เหมือนพูด เออ ด้วยปากที่แข็งและกว้าง คำอย่าง 으 크다 든지 ล้วนใช้เสียงนี้ ทันทีที่ริมฝีปากห่อ คุณออกเสียงสระผิดแล้ว",
+      "ref_es": "ㅡ no tiene equivalente en español. Es una vocal posterior no redondeada — tu lengua está en la posición de \"u\" pero tus labios están completamente planos y no redondeados, como si dijeras \"i\" con la boca extendida horizontalmente. Palabras como 으, 크다, 든지 usan este sonido. En el momento en que tus labios se redondean, estás produciendo la vocal incorrecta."
+    },
+    {
+      "id": "pronunciation::steps.58.tip.label",
+      "path": "pronunciation/steps[58]/tip.label",
+      "ko": null,
+      "en": "How to practise ㅡ",
+      "current": "",
+      "ref_th": "วิธีฝึก ㅡ",
+      "ref_es": "Cómo practicar ㅡ"
+    },
+    {
+      "id": "pronunciation::steps.58.tip.text",
+      "path": "pronunciation/steps[58]/tip.text",
+      "ko": null,
+      "en": "Say 'oo' as in 'too'. Now keep your tongue in exactly that position but spread your lips flat as if smiling slightly. The sound that comes out — stiff, unrounded, slightly back — is ㅡ. Do not relax the tongue into an 'uh' or a schwa; keep it high and back.",
+      "current": "",
+      "ref_th": "พูด อู ดังใน too จากนั้นรักษาลิ้นไว้ในตำแหน่งนั้นพอดี แต่กางริมฝีปากแบนราบเหมือนยิ้มเล็กน้อย เสียงที่ออกมา — แข็ง ไม่ห่อ เล็กน้อยหลัง — คือ ㅡ อย่าคลายลิ้นเป็น เออ หรือ schwa รักษาให้สูงและหลัง",
+      "ref_es": "Di \"u\" como en \"luna\". Ahora mantén tu lengua exactamente en esa posición pero extiende tus labios planos como si sonrieras. El sonido que sale — rígido, no redondeado, ligeramente posterior — es ㅡ. No relajes la lengua hasta convertirla en \"a\"; mantenla alta y posterior."
+    },
+    {
+      "id": "pronunciation::steps.59.title",
+      "path": "pronunciation/steps[59]/title",
+      "ko": "ㅓ 발음 오류",
+      "en": "Mistake 2 — Treating ㅓ as English 'er'",
+      "current": "",
+      "ref_th": "ข้อผิดพลาด 2 — ถือว่า ㅓ เป็นเสียง er ของภาษาอังกฤษ",
+      "ref_es": "Error 2 — Confundir ㅓ con la \"e\" española"
+    },
+    {
+      "id": "pronunciation::steps.59.body",
+      "path": "pronunciation/steps[59]/body",
+      "ko": null,
+      "en": "ㅓ is often transcribed as 'eo' or 'uh' — but it is not the American English 'er' which carries an r-colouring. Korean ㅓ is a mid-back unrounded vowel. Think of the British English 'uh' in 'but' or 'cup' — no rounding, no r-sound, mouth slightly open. Adding any hint of r-sound immediately makes the vowel sound foreign.",
+      "current": "",
+      "ref_th": "ㅓ มักถอดเสียงเป็น eo หรือ uh — แต่ไม่ใช่ เอ่อ ของภาษาอังกฤษอเมริกันที่มีเสียง r ผสม ㅓ เกาหลีเป็นสระกลาง-หลังไม่ห่อปาก ลองคิดถึงเสียง อะ ของภาษาอังกฤษแบบบริติชใน but หรือ cup — ไม่ห่อปาก ไม่มีเสียง ร ปากเปิดเล็กน้อย การเพิ่มเสียง ร แม้น้อยนิดก็ทำให้สระฟังดูเป็นต่างชาติทันที",
+      "ref_es": "ㅓ a menudo se transcribe como \"eo\" o \"uh\" en inglés, pero tampoco es exactamente la \"e\" española. La ㅓ coreana es una vocal media posterior no redondeada, ligeramente más atrás y abierta que la \"e\" española. Piensa en una \"e\" relajada con la boca más abierta, sin tensión. Añadir tensión o redondear los labios hace que la vocal suene extranjera."
+    },
+    {
+      "id": "pronunciation::steps.59.tip.label",
+      "path": "pronunciation/steps[59]/tip.label",
+      "ko": null,
+      "en": "Quick test",
+      "current": "",
+      "ref_th": "ทดสอบเร็วๆ",
+      "ref_es": "Prueba rápida"
+    },
+    {
+      "id": "pronunciation::steps.59.tip.text",
+      "path": "pronunciation/steps[59]/tip.text",
+      "ko": null,
+      "en": "Say the name 'Uh-oh'. The first syllable 'Uh' — flat, mid-back, with no r and no lip rounding — is very close to ㅓ. Do not tense it, do not round it, do not add r. Just a plain open 'uh'. Words to practise: 어, 어머니, 뭐.",
+      "current": "",
+      "ref_th": "พูดชื่อ Uh-oh พยางค์แรก Uh — แบน กลาง-หลัง ไม่มี ร และไม่ห่อปาก — ใกล้เคียงกับ ㅓ มาก อย่าเกร็ง อย่าห่อ อย่าเพิ่ม ร เพียงแค่ อะ ธรรมดาเปิดๆ คำสำหรับฝึก: 어 어머니 뭐",
+      "ref_es": "Di \"e\" de \"pero\" de forma relajada y abre la boca un poco más. Eso es lo más cercano a ㅓ en español. No la tenses, no la redondees. Solo una vocal abierta y neutra. Palabras para practicar: 어, 어머니, 뭐."
+    },
+    {
+      "id": "pronunciation::steps.60.title",
+      "path": "pronunciation/steps[60]/title",
+      "ko": "된소리 오류",
+      "en": "Mistake 3 — Puffing Air on Double Consonants",
+      "current": "",
+      "ref_th": "ข้อผิดพลาด 3 — พ่นอากาศกับพยัญชนะคู่",
+      "ref_es": "Error 3 — Aspirar Consonantes Dobles"
+    },
+    {
+      "id": "pronunciation::steps.60.body",
+      "path": "pronunciation/steps[60]/body",
+      "ko": null,
+      "en": "English speakers naturally add aspiration to stop consonants. Korean tensed (doubled) consonants ㄲ, ㄸ, ㅃ, ㅆ, ㅉ are never aspirated. They are produced with tight muscles and no outward puff of air. Hold a piece of paper in front of your mouth — it should not move when you say 까, 따, 빠, 싸, 짜. The contrast is between tight-and-held versus pushed-out air.",
+      "current": "",
+      "ref_th": "ผู้พูดภาษาอังกฤษมักเพิ่มการพ่นอากาศกับพยัญชนะหยุดโดยธรรมชาติ พยัญชนะเกร็ง (คู่) ภาษาเกาหลี ㄲ ㄸ ㅃ ㅆ ㅉ ไม่มีการพ่นอากาศเลย ออกเสียงด้วยกล้ามเนื้อเกร็งและไม่มีอากาศพ่นออก ถือกระดาษหน้าปาก — ไม่ควรขยับเลยเมื่อพูด 까 따 빠 싸 짜 ความแตกต่างคือระหว่างเกร็ง-ค้างกับอากาศพ่นออก",
+      "ref_es": "Los hispanohablantes a veces añaden aspiración a las consonantes oclusivas. Las consonantes tensas (dobles) coreanas ㄲ, ㄸ, ㅃ, ㅆ, ㅉ nunca se aspiran. Se producen con músculos tensos y sin ráfaga de aire hacia afuera. Pon un papel delante de tu boca — no debe moverse cuando dices 까, 따, 빠, 싸, 짜. El contraste es entre tenso-y-sostenido versus aire expulsado."
+    },
+    {
+      "id": "pronunciation::steps.60.tip.label",
+      "path": "pronunciation/steps[60]/tip.label",
+      "ko": null,
+      "en": "The paper test",
+      "current": "",
+      "ref_th": "การทดสอบกระดาษ",
+      "ref_es": "La prueba del papel"
+    },
+    {
+      "id": "pronunciation::steps.60.tip.text",
+      "path": "pronunciation/steps[60]/tip.text",
+      "ko": null,
+      "en": "Aspirated consonants (ㅋ, ㅌ, ㅍ, ㅊ) make the paper flutter significantly. Plain consonants (ㄱ, ㄷ, ㅂ, ㅈ) make it move slightly. Tensed consonants (ㄲ, ㄸ, ㅃ, ㅉ) should make the paper barely move at all — high muscle tension, zero air release.",
+      "current": "",
+      "ref_th": "พยัญชนะพ่นอากาศ (ㅋ ㅌ ㅍ ㅊ) ทำให้กระดาษสั่นมาก พยัญชนะธรรมดา (ㄱ ㄷ ㅂ ㅈ) ทำให้ขยับเล็กน้อย พยัญชนะเกร็ง (ㄲ ㄸ ㅃ ㅉ) ควรทำให้กระดาษแทบไม่ขยับ — ความตึงกล้ามเนื้อสูง ไม่ปล่อยอากาศเลย",
+      "ref_es": "Las consonantes aspiradas (ㅋ, ㅌ, ㅍ, ㅊ) hacen que el papel se mueva mucho. Las consonantes simples (ㄱ, ㄷ, ㅂ, ㅈ) lo mueven un poco. Las consonantes tensas (ㄲ, ㄸ, ㅃ, ㅉ) apenas deben mover el papel — máxima tensión muscular, cero liberación de aire."
+    },
+    {
+      "id": "pronunciation::steps.61.title",
+      "path": "pronunciation/steps[61]/title",
+      "ko": "억양 오류",
+      "en": "Mistake 4 — Rising Intonation on All Questions",
+      "current": "",
+      "ref_th": "ข้อผิดพลาด 4 — น้ำเสียงขึ้นในคำถามทุกประโยค",
+      "ref_es": "Error 4 — Entonación Ascendente en Todas las Preguntas"
+    },
+    {
+      "id": "pronunciation::steps.61.body",
+      "path": "pronunciation/steps[61]/body",
+      "ko": null,
+      "en": "In English, rising intonation at the end of a sentence signals a question. In Korean, intonation rules differ: yes/no questions do use a slight rise at the end, but wh-questions (who, what, where, when, why, how) typically use a falling or neutral intonation — not rising. Overusing English-style rising intonation on all Korean questions sounds unnatural and sometimes uncertain or pleading.",
+      "current": "",
+      "ref_th": "ในภาษาอังกฤษ น้ำเสียงขึ้นตอนท้ายประโยคบ่งบอกว่าเป็นคำถาม ในภาษาเกาหลี กฎน้ำเสียงต่างออกไป: คำถามใช่/ไม่ใช่ใช้การขึ้นเล็กน้อยตอนท้าย แต่คำถาม wh (ใคร อะไร ที่ไหน เมื่อไหร่ ทำไม อย่างไร) มักใช้น้ำเสียงลงหรือเป็นกลาง — ไม่ขึ้น การใช้น้ำเสียงขึ้นแบบภาษาอังกฤษในคำถามเกาหลีทุกประโยคฟังดูผิดธรรมชาติ",
+      "ref_es": "En español, la entonación ascendente al final de una oración señala una pregunta. En coreano, las reglas de entonación difieren: las preguntas de sí/no usan una ligera subida al final, pero las preguntas con pronombres interrogativos (quién, qué, dónde, cuándo, por qué, cómo) típicamente usan una entonación descendente o neutra — no ascendente. Usar en exceso la entonación ascendente en todas las preguntas coreanas suena antinatural y a veces incierto."
+    },
+    {
+      "id": "pronunciation::steps.61.tip.label",
+      "path": "pronunciation/steps[61]/tip.label",
+      "ko": null,
+      "en": "The pattern to remember",
+      "current": "",
+      "ref_th": "รูปแบบที่ควรจำ",
+      "ref_es": "El patrón a recordar"
+    },
+    {
+      "id": "pronunciation::steps.61.tip.text",
+      "path": "pronunciation/steps[61]/tip.text",
+      "ko": null,
+      "en": "Yes/No question: slight rise at the end. Example: 갔어요? (Did you go?) — ends rising. Wh-question: neutral or falling. Example: 어디 갔어요? (Where did you go?) — ends flat or falling. The question word carries enough information; no need for the rising melody.",
+      "current": "",
+      "ref_th": "คำถามใช่/ไม่ใช่: น้ำเสียงขึ้นเล็กน้อยตอนท้าย ตัวอย่าง: 갔어요? (คุณไปแล้วหรือ?) — ลงท้ายขึ้น คำถาม Wh: น้ำเสียงเป็นกลางหรือลง ตัวอย่าง: 어디 갔어요? (คุณไปที่ไหน?) — ลงท้ายราบหรือลง คำคำถามบอกข้อมูลเพียงพอแล้ว ไม่ต้องใช้น้ำเสียงขึ้น",
+      "ref_es": "Pregunta sí/no: ligera subida al final. Ejemplo: 갔어요? (¿Fuiste?) — termina subiendo. Pregunta con interrogativo: neutra o descendente. Ejemplo: 어디 갔어요? (¿Dónde fuiste?) — termina plano o descendente. La palabra interrogativa lleva suficiente información; no se necesita melodía ascendente."
+    },
+    {
+      "id": "pronunciation::steps.62.title",
+      "path": "pronunciation/steps[62]/title",
+      "ko": "ㅅ 발음 오류",
+      "en": "Mistake 5 — ㅅ as Plain 's' before i-Vowels",
+      "current": "",
+      "ref_th": "ข้อผิดพลาด 5 — ㅅ เป็นเสียง s ธรรมดาก่อนสระ อี",
+      "ref_es": "Error 5 — ㅅ como \"s\" Simple Antes de Vocales 이"
+    },
+    {
+      "id": "pronunciation::steps.62.body",
+      "path": "pronunciation/steps[62]/body",
+      "ko": null,
+      "en": "Before the vowels 이, 야, 여, 요, 유, the consonant ㅅ is pronounced like English 'sh'. So 시 is 'shi' not 'si', and 셔츠 (shirt) begins with 'sh'. This also applies to tensed ㅆ before 이 → 'sshi'. English speakers who learned romanization first often say 'si' when native speakers say 'shi', which is immediately noticeable.",
+      "current": "",
+      "ref_th": "ก่อนสระ 이 야 여 요 유 พยัญชนะ ㅅ ออกเสียงเหมือน ช ของภาษาอังกฤษ ดังนั้น 시 คือ ชิ ไม่ใช่ ซิ และ 셔츠 (เสื้อ) เริ่มต้นด้วย ช สิ่งนี้ยังใช้กับ ㅆ เกร็งก่อน 이 → ซช ผู้พูดภาษาอังกฤษที่เรียนอักษรโรมาจิก่อนมักพูด ซิ ในขณะที่เจ้าของภาษาพูด ชิ ซึ่งสังเกตได้ทันที",
+      "ref_es": "Antes de las vocales 이, 야, 여, 요, 유, la consonante ㅅ se pronuncia similar a \"sh\" (como la \"ch\" en \"Chile\" o \"cheque\"). Así que 시 es \"shi\" no \"si\", y 셔츠 (camisa) comienza con ese sonido. Esto también aplica a la ㅆ tensa antes de 이. Los hispanohablantes que aprendieron la romanización primero a menudo dicen \"si\" cuando los hablantes nativos dicen \"shi\", lo cual se nota inmediatamente."
+    },
+    {
+      "id": "pronunciation::steps.62.tip.label",
+      "path": "pronunciation/steps[62]/tip.label",
+      "ko": null,
+      "en": "Which vowels trigger this?",
+      "current": "",
+      "ref_th": "สระใดทำให้เกิดการเปลี่ยนนี้?",
+      "ref_es": "¿Qué vocales lo provocan?"
+    },
+    {
+      "id": "pronunciation::steps.62.tip.text",
+      "path": "pronunciation/steps[62]/tip.text",
+      "ko": null,
+      "en": "The palatalised ㅅ ('sh' sound) occurs before i-class vowels: 이 (i), 야 (ya), 여 (yeo), 요 (yo), 유 (yu). Before all other vowels — 아, 어, 오, 우, 으, and their compounds — ㅅ stays as a plain s sound. 사 is 'sa', but 시 is 'shi'.",
+      "current": "",
+      "ref_th": "ㅅ ออกเสียง ช เกิดก่อนสระกลุ่ม อี: 이 (อี) 야 (ยา) 여 (ยอ) 요 (โย) 유 (ยู) ก่อนสระอื่นทั้งหมด — 아 어 오 우 으 และสระประสม — ㅅ ยังคงเสียง ส ธรรมดา 사 คือ ซา แต่ 시 คือ ชิ",
+      "ref_es": "El ㅅ palatalizado (sonido \"sh\") ocurre antes de vocales de tipo 이: 이 (i), 야 (ya), 여 (yeo), 요 (yo), 유 (yu). Antes de todas las demás vocales — 아, 어, 오, 우, 으 y sus compuestos — ㅅ se mantiene como un sonido s simple. 사 es \"sa\", pero 시 es \"shi\"."
+    },
+    {
+      "id": "pronunciation::steps.63.title",
+      "path": "pronunciation/steps[63]/title",
+      "ko": "ㅎ 오류",
+      "en": "Mistake 6 — Pronouncing the ㅎ in 좋아요",
+      "current": "",
+      "ref_th": "ข้อผิดพลาด 6 — ออกเสียง ㅎ ใน 좋아요",
+      "ref_es": "Error 6 — Pronunciar la ㅎ en 좋아요"
+    },
+    {
+      "id": "pronunciation::steps.63.body",
+      "path": "pronunciation/steps[63]/body",
+      "ko": null,
+      "en": "Beginners often say 'jo-ha-yo' for 좋아요, treating ㅎ as a clearly pronounced h-sound. But due to ㅎ weakening between vowels (which you learned in Stage 4), the actual pronunciation is 조아요 (jo-a-yo) — the ㅎ nearly disappears. This applies broadly: 많아요 → 마나요, 낳아요 → 나아요. Whenever ㅎ sits between vowels in a natural speech context, it fades.",
+      "current": "",
+      "ref_th": "ผู้เริ่มต้นมักพูด โจ-ฮา-โย สำหรับ 좋아요 โดยถือว่า ㅎ เป็นเสียง ห ที่ออกเสียงชัดเจน แต่เนื่องจากการอ่อนแรงของ ㅎ ระหว่างสระ (ที่คุณเรียนในขั้นตอนที่ 4) การออกเสียงจริงคือ 조아요 (โจ-อา-โย) — ㅎ แทบจะหายไป สิ่งนี้ใช้ได้กว้าง: 많아요 → 마나요 낳아요 → 나아요 เมื่อใดก็ตามที่ ㅎ อยู่ระหว่างสระในบริบทการพูดธรรมชาติ มันจะจางหาย",
+      "ref_es": "Los principiantes a menudo dicen \"jo-ha-yo\" para 좋아요, tratando ㅎ como un sonido h claramente pronunciado. Pero debido al debilitamiento de ㅎ entre vocales (que aprendiste en la Etapa 4), la pronunciación real es 조아요 (jo-a-yo) — la ㅎ casi desaparece. Esto aplica ampliamente: 많아요 → 마나요, 낳아요 → 나아요. Siempre que ㅎ esté entre vocales en contexto de habla natural, se desvanece."
+    },
+    {
+      "id": "pronunciation::steps.63.tip.label",
+      "path": "pronunciation/steps[63]/tip.label",
+      "ko": null,
+      "en": "Connecting back to Stage 4",
+      "current": "",
+      "ref_th": "เชื่อมกลับไปขั้นตอนที่ 4",
+      "ref_es": "Conectando con la Etapa 4"
+    },
+    {
+      "id": "pronunciation::steps.63.tip.text",
+      "path": "pronunciation/steps[63]/tip.text",
+      "ko": null,
+      "en": "You already learned ㅎ weakening and ㅎ + consonant aspiration. Mistake 6 is just the most common real-world place where beginners encounter ㅎ weakening and get it wrong. 좋아요 is arguably the most-used adjective form in Korean — getting its pronunciation right matters immediately.",
+      "current": "",
+      "ref_th": "คุณเรียนการอ่อนแรงของ ㅎ และการพ่นอากาศของ ㅎ + พยัญชนะแล้ว ข้อผิดพลาดที่ 6 เป็นเพียงสถานที่ในโลกจริงที่พบบ่อยที่สุดที่ผู้เริ่มต้นพบการอ่อนแรงของ ㅎ และทำผิด 좋아요 เป็นรูปแบบคำคุณศัพท์ที่ใช้มากที่สุดในภาษาเกาหลี — การออกเสียงถูกต้องมีความสำคัญทันที",
+      "ref_es": "Ya aprendiste el debilitamiento de ㅎ y la aspiración de ㅎ + consonante. El Error 6 es simplemente el lugar más común del mundo real donde los principiantes encuentran el debilitamiento de ㅎ y se equivocan. 좋아요 es posiblemente la forma de adjetivo más usada en coreano — acertar su pronunciación importa inmediatamente."
+    },
+    {
+      "id": "pronunciation::steps.64.prompt",
+      "path": "pronunciation/steps[64]/prompt",
+      "ko": null,
+      "en": "When pronouncing ㅡ, your lips should be…",
+      "current": "",
+      "ref_th": "เมื่อออกเสียง ㅡ ริมฝีปากควรเป็น…",
+      "ref_es": "Al pronunciar ㅡ, tus labios deben estar…"
+    },
+    {
+      "id": "pronunciation::steps.64.choices[0]",
+      "path": "pronunciation/steps[64]/choices[0]",
+      "ko": null,
+      "en": "Rounded like 'oo'",
+      "current": "",
+      "ref_th": "ห่อเหมือน อู",
+      "ref_es": "Redondeados como \"u\""
+    },
+    {
+      "id": "pronunciation::steps.64.choices[1]",
+      "path": "pronunciation/steps[64]/choices[1]",
+      "ko": null,
+      "en": "Flat and unrounded (spread)",
+      "current": "",
+      "ref_th": "แบนและไม่ห่อ (กาง)",
+      "ref_es": "Planos y no redondeados (extendidos)"
+    },
+    {
+      "id": "pronunciation::steps.64.choices[2]",
+      "path": "pronunciation/steps[64]/choices[2]",
+      "ko": null,
+      "en": "Slightly open like 'ah'",
+      "current": "",
+      "ref_th": "เปิดเล็กน้อยเหมือน อา",
+      "ref_es": "Ligeramente abiertos como \"a\""
+    },
+    {
+      "id": "pronunciation::steps.64.choices[3]",
+      "path": "pronunciation/steps[64]/choices[3]",
+      "ko": null,
+      "en": "Puckered like a kiss",
+      "current": "",
+      "ref_th": "ห่อปลิ้น",
+      "ref_es": "Fruncidos como un beso"
+    },
+    {
+      "id": "pronunciation::steps.65.prompt",
+      "path": "pronunciation/steps[65]/prompt",
+      "ko": null,
+      "en": "ㅅ before the vowel 이 sounds like…",
+      "current": "",
+      "ref_th": "ㅅ ก่อนสระ 이 ออกเสียงเหมือน…",
+      "ref_es": "ㅅ antes de la vocal 이 suena como…"
+    },
+    {
+      "id": "pronunciation::steps.65.choices[0]",
+      "path": "pronunciation/steps[65]/choices[0]",
+      "ko": null,
+      "en": "Plain 's' as in 'see'",
+      "current": "",
+      "ref_th": "ส ธรรมดา เหมือน see",
+      "ref_es": "\"s\" simple como en \"sala\""
+    },
+    {
+      "id": "pronunciation::steps.65.choices[1]",
+      "path": "pronunciation/steps[65]/choices[1]",
+      "ko": null,
+      "en": "'sh' as in 'she'",
+      "current": "",
+      "ref_th": "ช เหมือน she",
+      "ref_es": "\"sh\" como en \"she\" (inglés)"
+    },
+    {
+      "id": "pronunciation::steps.65.choices[2]",
+      "path": "pronunciation/steps[65]/choices[2]",
+      "ko": null,
+      "en": "'z' as in 'zero'",
+      "current": "",
+      "ref_th": "ซ เหมือน zero",
+      "ref_es": "\"z\" como en \"zero\""
+    },
+    {
+      "id": "pronunciation::steps.65.choices[3]",
+      "path": "pronunciation/steps[65]/choices[3]",
+      "ko": null,
+      "en": "'t' as in 'tea'",
+      "current": "",
+      "ref_th": "ต เหมือน tea",
+      "ref_es": "\"t\" como en \"tea\""
+    },
+    {
+      "id": "pronunciation::steps.66.prompt",
+      "path": "pronunciation/steps[66]/prompt",
+      "ko": null,
+      "en": "좋아요 (it is good / I like it) is actually pronounced as…",
+      "current": "",
+      "ref_th": "좋아요 (ดี / ฉันชอบ) ออกเสียงจริงๆ ว่า…",
+      "ref_es": "좋아요 (está bien / me gusta) se pronuncia realmente como…"
+    },
+    {
+      "id": "pronunciation::steps.66.choices[0]",
+      "path": "pronunciation/steps[66]/choices[0]",
+      "ko": null,
+      "en": "jo-ha-yo",
+      "current": "",
+      "ref_th": "jo-ha-yo",
+      "ref_es": "jo-ha-yo"
+    },
+    {
+      "id": "pronunciation::steps.66.choices[1]",
+      "path": "pronunciation/steps[66]/choices[1]",
+      "ko": null,
+      "en": "jo-a-yo",
+      "current": "",
+      "ref_th": "jo-a-yo",
+      "ref_es": "jo-a-yo"
+    },
+    {
+      "id": "pronunciation::steps.66.choices[2]",
+      "path": "pronunciation/steps[66]/choices[2]",
+      "ko": null,
+      "en": "joh-a-yo",
+      "current": "",
+      "ref_th": "joh-a-yo",
+      "ref_es": "joh-a-yo"
+    },
+    {
+      "id": "pronunciation::steps.66.choices[3]",
+      "path": "pronunciation/steps[66]/choices[3]",
+      "ko": null,
+      "en": "jo-ha",
+      "current": "",
+      "ref_th": "jo-ha",
+      "ref_es": "jo-ha"
+    },
+    {
+      "id": "pronunciation::steps.67.title",
+      "path": "pronunciation/steps[67]/title",
+      "ko": "발음 규칙 완료!",
+      "en": "Pronunciation Guide Complete!",
+      "current": "",
+      "ref_th": "เรียนจบกฎการออกเสียงแล้ว!",
+      "ref_es": "¡Guía de Pronunciación Completada!"
+    },
+    {
+      "id": "pronunciation::steps.67.message",
+      "path": "pronunciation/steps[67]/message",
+      "ko": null,
+      "en": "You have mastered all 8 Korean pronunciation rules: batchim reduction, liaison, nasal assimilation, tensification, ㅎ weakening, ㅎ aspiration, palatalization, and the ㄹ sound. Plus the 6 most common mistakes English speakers make — and how to avoid them. Your Korean pronunciation will now sound far more natural.",
+      "current": "",
+      "ref_th": "คุณเรียนรู้กฎการออกเสียงเกาหลีทั้ง 8 ข้อแล้ว: การลดเสียงบัดชิม การเชื่อมเสียง การดูดกลืนนาสิก การเกร็งเสียง การอ่อนแรงของ ㅎ การพ่นอากาศของ ㅎ การออกเสียงเพดานปาก และเสียง ㄹ รวมถึงข้อผิดพลาด 6 อย่างที่พบบ่อยที่สุดของผู้พูดภาษาอังกฤษ — และวิธีหลีกเลี่ยง การออกเสียงเกาหลีของคุณจะฟังดูเป็นธรรมชาติมากขึ้นแล้ว",
+      "ref_es": "Has dominado las 8 reglas de pronunciación coreana: reducción de batchim, enlace, asimilación nasal, tensificación, debilitamiento de ㅎ, aspiración de ㅎ, palatalización y el sonido ㄹ. Más los 6 errores más comunes que cometen los hispanohablantes — y cómo evitarlos. Tu pronunciación del coreano ahora sonará mucho más natural."
+    },
+    {
+      "id": "shopping::stages.0.name",
+      "path": "shopping/stages[0]/name",
+      "ko": "쇼핑 단어",
+      "en": "Shopping Vocabulary",
+      "current": "",
+      "ref_th": "คำศัพท์การช้อปปิ้ง",
+      "ref_es": "Vocabulario de Compras"
+    },
+    {
+      "id": "shopping::stages.1.name",
+      "path": "shopping/stages[1]/name",
+      "ko": "가게에서",
+      "en": "In the Store",
+      "current": "",
+      "ref_th": "ในร้านค้า",
+      "ref_es": "En la Tienda"
+    },
+    {
+      "id": "shopping::stages.2.name",
+      "path": "shopping/stages[2]/name",
+      "ko": "가격·숫자",
+      "en": "Prices & Numbers",
+      "current": "",
+      "ref_th": "ราคาและตัวเลข",
+      "ref_es": "Precios y Números"
+    },
+    {
+      "id": "shopping::stages.3.name",
+      "path": "shopping/stages[3]/name",
+      "ko": "거래·마무리",
+      "en": "Transactions",
+      "current": "",
+      "ref_th": "การชำระเงิน",
+      "ref_es": "Transacciones"
+    },
+    {
+      "id": "shopping::steps.0.title",
+      "path": "shopping/steps[0]/title",
+      "ko": "쇼핑",
+      "en": "Shopping in Korea (쇼핑)",
+      "current": "",
+      "ref_th": "การช้อปปิ้งในเกาหลี (쇼핑)",
+      "ref_es": "De Compras en Corea (쇼핑)"
+    },
+    {
+      "id": "shopping::steps.0.body",
+      "path": "shopping/steps[0]/body",
+      "ko": null,
+      "en": "Korea has a rich shopping culture — from traditional outdoor markets (시장) to high-end department stores (백화점) to 24-hour convenience stores (편의점) on every corner. Bargaining is normal at traditional markets but not at chain stores or malls. Learning to ask prices, compare items, and complete transactions in Korean will make your shopping experience much smoother and more personal. The key question you'll use constantly is 얼마예요? (How much is it?)",
+      "current": "",
+      "ref_th": "เกาหลีมีวัฒนธรรมการช้อปปิ้งที่หลากหลาย — ตั้งแต่ตลาดกลางแจ้งแบบดั้งเดิม (시장) ไปจนถึงห้างสรรพสินค้าหรูหรา (백화점) และร้านสะดวกซื้อที่เปิด 24 ชั่วโมง (편의점) ซึ่งมีอยู่ทุกมุมถนน การต่อรองราคาเป็นเรื่องปกติที่ตลาดดั้งเดิม แต่ไม่ใช่ที่ร้านค้าเครือหรือห้างสรรพสินค้า การเรียนรู้วิธีถามราคา เปรียบเทียบสินค้า และทำธุรกรรมเป็นภาษาเกาหลีจะทำให้ประสบการณ์ช้อปปิ้งของคุณราบรื่นและเป็นกันเองมากขึ้น คำถามสำคัญที่คุณจะใช้บ่อยที่สุดคือ 얼마예요? (ราคาเท่าไหร่?)",
+      "ref_es": "Corea tiene una rica cultura de compras — desde los mercados tradicionales al aire libre (시장) hasta los grandes almacenes de lujo (백화점) y las tiendas de conveniencia abiertas 24 horas (편의점) en cada esquina. El regateo es normal en los mercados tradicionales pero no en las cadenas o centros comerciales. Aprender a preguntar precios, comparar artículos y completar transacciones en coreano hará que tu experiencia de compras sea mucho más fluida y personal. La pregunta clave que usarás constantemente es 얼마예요? (¿Cuánto cuesta?)"
+    },
+    {
+      "id": "shopping::steps.0.tip.label",
+      "path": "shopping/steps[0]/tip.label",
+      "ko": null,
+      "en": "Gwangjang Market vs department store",
+      "current": "",
+      "ref_th": "ตลาด Gwangjang vs ห้างสรรพสินค้า",
+      "ref_es": "Mercado Gwangjang vs grandes almacenes"
+    },
+    {
+      "id": "shopping::steps.0.tip.text",
+      "path": "shopping/steps[0]/tip.text",
+      "ko": null,
+      "en": "At traditional markets like 광장시장 (Gwangjang Market) in Seoul, you can bargain — especially if buying multiple items. At 롯데백화점 (Lotte Department Store) or any chain, prices are fixed. Watch for 세일 (sale) signs and 할인 (discount) promotions.",
+      "current": "",
+      "ref_th": "ที่ตลาดดั้งเดิมอย่าง 광장시장 (ตลาด Gwangjang) ในกรุงโซล คุณสามารถต่อรองราคาได้ — โดยเฉพาะถ้าซื้อหลายชิ้น ที่ 롯데백화점 (ห้างสรรพสินค้า Lotte) หรือร้านค้าเครือใดๆ ราคาจะตายตัว คอยสังเกตป้าย 세일 (ลดราคา) และโปรโมชัน 할인 (ส่วนลด)",
+      "ref_es": "En mercados tradicionales como 광장시장 (Mercado Gwangjang) en Seúl, puedes regatear — especialmente si compras varios artículos. En 롯데백화점 (Lotte Department Store) o cualquier cadena, los precios son fijos. Busca señales de 세일 (rebajas) y promociones de 할인 (descuento)."
+    },
+    {
+      "id": "shopping::steps.1.meaning",
+      "path": "shopping/steps[1]/meaning",
+      "ko": null,
+      "en": "store / shop",
+      "current": "",
+      "ref_th": "ร้านค้า / ร้านขายของ",
+      "ref_es": "tienda / comercio"
+    },
+    {
+      "id": "shopping::steps.2.meaning",
+      "path": "shopping/steps[2]/meaning",
+      "ko": null,
+      "en": "market (traditional outdoor)",
+      "current": "",
+      "ref_th": "ตลาด (กลางแจ้งแบบดั้งเดิม)",
+      "ref_es": "mercado (mercado tradicional al aire libre)"
+    },
+    {
+      "id": "shopping::steps.3.meaning",
+      "path": "shopping/steps[3]/meaning",
+      "ko": null,
+      "en": "department store",
+      "current": "",
+      "ref_th": "ห้างสรรพสินค้า",
+      "ref_es": "grandes almacenes / tienda por departamentos"
+    },
+    {
+      "id": "shopping::steps.4.meaning",
+      "path": "shopping/steps[4]/meaning",
+      "ko": null,
+      "en": "convenience store",
+      "current": "",
+      "ref_th": "ร้านสะดวกซื้อ",
+      "ref_es": "tienda de conveniencia"
+    },
+    {
+      "id": "shopping::steps.5.prompt",
+      "path": "shopping/steps[5]/prompt",
+      "ko": null,
+      "en": "It is 2 a.m. and you need a drink. Which word is the 24-hour shop on the corner?",
+      "current": "",
+      "ref_th": "ตอนตีสองคุณอยากได้เครื่องดื่มสักแก้ว คำใดหมายถึงร้านที่เปิด 24 ชั่วโมงตรงหัวมุมถนน?",
+      "ref_es": "Son las 2 de la madrugada y quieres una bebida. ¿Qué palabra es la tienda de 24 horas de la esquina?"
+    },
+    {
+      "id": "shopping::steps.6.title",
+      "path": "shopping/steps[6]/title",
+      "ko": "쇼핑 물건",
+      "en": "Shopping Item Words (쇼핑 물건)",
+      "current": "",
+      "ref_th": "คำศัพท์สินค้า (쇼핑 물건)",
+      "ref_es": "Palabras de Artículos de Compra (쇼핑 물건)"
+    },
+    {
+      "id": "shopping::steps.6.body",
+      "path": "shopping/steps[6]/body",
+      "ko": null,
+      "en": "Korean uses many loanwords for modern products — 핸드폰 (cell phone), 노트북 (laptop), 티셔츠 (T-shirt). Native Korean and Sino-Korean words cover traditional items: 옷 (clothes), 신발 (shoes), 가방 (bag). When shopping, you'll often point to something and say 이거 (this one) — a simple and effective strategy. Korean has three of these pointing words: 이거 (this one, near you), 그거 (that one, near the person you are talking to) and 저거 (that one over there, away from you both). Sizes are often given in free-size (프리 사이즈), small (S), medium (M), and large (L/XL).",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีใช้คำยืมจำนวนมากสำหรับสินค้าสมัยใหม่ — 핸드폰 (โทรศัพท์มือถือ) 노트북 (แล็ปท็อป) 티셔츠 (เสื้อยืด) คำเกาหลีดั้งเดิมและคำจีน-เกาหลีใช้สำหรับสินค้าดั้งเดิม เช่น 옷 (เสื้อผ้า) 신발 (รองเท้า) 가방 (กระเป๋า) เวลาช้อปปิ้ง คุณมักจะชี้ไปที่สิ่งของแล้วพูดว่า 이거 (อันนี้) — วิธีง่ายๆ ที่ได้ผลดี ภาษาเกาหลีมีคำชี้สามคำ: 이거 (อันนี้ ใกล้ตัวคุณ) 그거 (อันนั้น ใกล้คู่สนทนา) และ 저거 (อันโน้น ไกลจากทั้งสองฝ่าย) ขนาดสินค้ามักระบุเป็นไซส์ฟรี (프리 사이즈) เล็ก (S) กลาง (M) และใหญ่ (L/XL)",
+      "ref_es": "El coreano usa muchos préstamos lingüísticos para productos modernos — 핸드폰 (móvil), 노트북 (portátil), 티셔츠 (camiseta). Las palabras nativas coreanas y sino-coreanas cubren los artículos tradicionales: 옷 (ropa), 신발 (zapatos), 가방 (bolso). Al comprar, a menudo señalarás algo y dirás 이거 (este) — una estrategia simple y eficaz. El coreano tiene tres palabras para señalar: 이거 (este, cerca de ti), 그거 (ese, cerca de tu interlocutor) y 저거 (aquel, lejos de ambos). Las tallas suelen darse en talla única (프리 사이즈), pequeña (S), mediana (M) y grande (L/XL)."
+    },
+    {
+      "id": "shopping::steps.6.tip.label",
+      "path": "shopping/steps[6]/tip.label",
+      "ko": null,
+      "en": "이거 주세요 — your shopping lifeline",
+      "current": "",
+      "ref_th": "이거 주세요 — ประโยคชีวิตรอดในการช้อปปิ้ง",
+      "ref_es": "이거 주세요 — tu salvavidas de compras"
+    },
+    {
+      "id": "shopping::steps.6.tip.text",
+      "path": "shopping/steps[6]/tip.text",
+      "ko": null,
+      "en": "이거 주세요 (I'll take this one, please) + 얼마예요? (How much?) will get you through most Korean shopping scenarios even if you know little else. Point, say these two phrases, and you're set.",
+      "current": "",
+      "ref_th": "이거 주세요 (ขอสิ่งนี้ด้วย) + 얼마예요? (ราคาเท่าไหร่?) จะพาคุณผ่านสถานการณ์การช้อปปิ้งส่วนใหญ่ได้ แม้คุณจะรู้ภาษาเกาหลีไม่มากนัก แค่ชี้แล้วพูดสองประโยคนี้ก็เพียงพอแล้ว",
+      "ref_es": "이거 주세요 (Por favor dame esto) + 얼마예요? (¿Cuánto cuesta?) te sacarán de la mayoría de situaciones de compra coreanas incluso si sabes poco más. Señala y di estas dos frases, y ya estás."
+    },
+    {
+      "id": "shopping::steps.7.meaning",
+      "path": "shopping/steps[7]/meaning",
+      "ko": null,
+      "en": "clothes / outfit",
+      "current": "",
+      "ref_th": "เสื้อผ้า / ชุด",
+      "ref_es": "ropa / atuendo"
+    },
+    {
+      "id": "shopping::steps.8.meaning",
+      "path": "shopping/steps[8]/meaning",
+      "ko": null,
+      "en": "shoes / footwear",
+      "current": "",
+      "ref_th": "รองเท้า / รองเท้าผ้าใบ",
+      "ref_es": "zapatos / calzado"
+    },
+    {
+      "id": "shopping::steps.9.title",
+      "path": "shopping/steps[9]/title",
+      "ko": "쇼핑 표현",
+      "en": "Key Shopping Phrases (쇼핑 표현)",
+      "current": "",
+      "ref_th": "สำนวนการช้อปปิ้งสำคัญ (쇼핑 표현)",
+      "ref_es": "Frases Clave de Compras (쇼핑 표현)"
+    },
+    {
+      "id": "shopping::steps.9.body",
+      "path": "shopping/steps[9]/body",
+      "ko": null,
+      "en": "A few essential phrases cover almost every shopping interaction. 얼마예요? (How much is it?) works for any price enquiry. 이거 주세요 (Please give me this) completes a purchase. 더 싸게 해 주세요 (Please make it cheaper) is used for bargaining at traditional markets. 있어요? (Do you have...?) + the item name asks if something is in stock. 없어요 means it's out of stock or unavailable.",
+      "current": "",
+      "ref_th": "สำนวนสำคัญไม่กี่ประโยคครอบคลุมสถานการณ์การช้อปปิ้งเกือบทุกอย่าง 얼마예요? (ราคาเท่าไหร่?) ใช้ถามราคาได้ทุกกรณี 이거 주세요 (ขอสิ่งนี้ด้วย) ใช้ปิดการซื้อ 더 싸게 해 주세요 (ช่วยลดราคาให้หน่อย) ใช้ต่อรองราคาในตลาดดั้งเดิม 있어요? (มี...ไหม?) บวกชื่อสินค้า ใช้ถามว่ามีสินค้านั้นหรือไม่ ส่วน 없어요 หมายถึงสินค้าหมดหรือไม่มี",
+      "ref_es": "Unas pocas frases esenciales cubren casi toda interacción de compras. 얼마예요? (¿Cuánto cuesta?) sirve para cualquier consulta de precio. 이거 주세요 (Por favor dame esto) completa una compra. 더 싸게 해 주세요 (Por favor ponlo más barato) se usa para regatear en los mercados tradicionales. 있어요? (¿Tienes...?) + el nombre del artículo pregunta si algo está disponible. 없어요 significa que está agotado o no disponible."
+    },
+    {
+      "id": "shopping::steps.9.tip.label",
+      "path": "shopping/steps[9]/tip.label",
+      "ko": null,
+      "en": "Polite shopping tone",
+      "current": "",
+      "ref_th": "น้ำเสียงสุภาพในร้านค้า",
+      "ref_es": "Tono educado de compras"
+    },
+    {
+      "id": "shopping::steps.9.tip.text",
+      "path": "shopping/steps[9]/tip.text",
+      "ko": null,
+      "en": "In Korean shops, staff will often greet you with 어서 오세요! (Welcome!). Respond with a nod or 안녕하세요. When you've finished shopping, 감사합니다 (thank you) is always appreciated. Shouting across the store is rare — get close before speaking.",
+      "current": "",
+      "ref_th": "ในร้านค้าเกาหลี พนักงานมักทักทายด้วย 어서 오세요! (ยินดีต้อนรับ!) ตอบรับด้วยการพยักหน้าหรือพูดว่า 안녕하세요 เมื่อช้อปปิ้งเสร็จแล้ว การพูด 감사합니다 (ขอบคุณ) จะได้รับการชื่นชมเสมอ การตะโกนข้ามร้านเป็นเรื่องที่พบได้น้อย — ควรเข้าไปใกล้ก่อนพูด",
+      "ref_es": "En las tiendas coreanas, el personal suele saludarte con ¡어서 오세요! (¡Bienvenido/a!). Responde con un gesto de cabeza o 안녕하세요. Cuando termines de comprar, 감사합니다 (gracias) siempre es apreciado. Gritar a través de la tienda es poco común — acércate antes de hablar."
+    },
+    {
+      "id": "shopping::steps.10.meaning",
+      "path": "shopping/steps[10]/meaning",
+      "ko": null,
+      "en": "How much is it?",
+      "current": "",
+      "ref_th": "ราคาเท่าไหร่?",
+      "ref_es": "¿Cuánto cuesta?"
+    },
+    {
+      "id": "shopping::steps.11.meaning",
+      "path": "shopping/steps[11]/meaning",
+      "ko": null,
+      "en": "Please give me this / I'll take this",
+      "current": "",
+      "ref_th": "ขอสิ่งนี้ด้วย / ฉันจะเอาสิ่งนี้",
+      "ref_es": "Por favor dame esto / Me llevo esto"
+    },
+    {
+      "id": "shopping::steps.12.meaning",
+      "path": "shopping/steps[12]/meaning",
+      "ko": null,
+      "en": "Please make it cheaper / Can you give me a discount?",
+      "current": "",
+      "ref_th": "ช่วยลดราคาได้ไหม? / ให้ส่วนลดหน่อยได้ไหม?",
+      "ref_es": "Por favor ponlo más barato / ¿Me puede hacer descuento?"
+    },
+    {
+      "id": "shopping::steps.13.prompt",
+      "path": "shopping/steps[13]/prompt",
+      "ko": null,
+      "en": "The item is already in your hand and you have decided to buy it. Which do you say?",
+      "current": "",
+      "ref_th": "สินค้าอยู่ในมือคุณแล้วและคุณตัดสินใจจะซื้อ คุณจะพูดว่าอย่างไร?",
+      "ref_es": "Ya tienes el artículo en la mano y has decidido comprarlo. ¿Qué dices?"
+    },
+    {
+      "id": "shopping::steps.14.title",
+      "path": "shopping/steps[14]/title",
+      "ko": "있어요? / 없어요",
+      "en": "Asking About Availability (있어요? / 없어요)",
+      "current": "",
+      "ref_th": "การถามสินค้าว่ามีหรือไม่ (있어요? / 없어요)",
+      "ref_es": "Preguntar sobre Disponibilidad (있어요? / 없어요)"
+    },
+    {
+      "id": "shopping::steps.14.body",
+      "path": "shopping/steps[14]/body",
+      "ko": null,
+      "en": "있어요? (Is there? / Do you have?) and 없어요 (There isn't / We don't have it) are two of the most useful words in Korean shopping. Attach an item before 있어요?: 이거 있어요? (Do you have this?), 더 큰 사이즈 있어요? (Do you have a bigger size?). 없어요 is the reply if it's sold out. You can also say 다 팔렸어요 (All sold out) in more detail.",
+      "current": "",
+      "ref_th": "있어요? (มีไหม? / คุณมีไหม?) และ 없어요 (ไม่มี / หมดแล้ว) เป็นสองคำที่มีประโยชน์ที่สุดในการช้อปปิ้งภาษาเกาหลี ให้ใส่ชื่อสินค้าไว้หน้า 있어요? เช่น 이거 있어요? (มีอันนี้ไหม?) 더 큰 사이즈 있어요? (มีไซส์ใหญ่กว่านี้ไหม?) หากสินค้าหมด คำตอบคือ 없어요 หรือจะพูดให้ชัดเจนขึ้นว่า 다 팔렸어요 (ขายหมดแล้ว) ก็ได้",
+      "ref_es": "있어요? (¿Hay? / ¿Tienes?) y 없어요 (No hay / No tenemos) son dos de las palabras más útiles al comprar en coreano. Coloca un artículo antes de 있어요?: 이거 있어요? (¿Tienes esto?), 더 큰 사이즈 있어요? (¿Tienes una talla más grande?). 없어요 es la respuesta si está agotado. También puedes decir 다 팔렸어요 (Todo vendido) con más detalle."
+    },
+    {
+      "id": "shopping::steps.14.tip.label",
+      "path": "shopping/steps[14]/tip.label",
+      "ko": null,
+      "en": "있다 vs 없다",
+      "current": "",
+      "ref_th": "있다 vs 없다",
+      "ref_es": "있다 vs 없다"
+    },
+    {
+      "id": "shopping::steps.14.tip.text",
+      "path": "shopping/steps[14]/tip.text",
+      "ko": null,
+      "en": "있다 = to exist / to have. 없다 = to not exist / to not have. 있어요? alone at the end of a sentence = Do you have...? 없어요. = We don't. These two words appear in almost every Korean sentence that discusses possessing, location, or availability.",
+      "current": "",
+      "ref_th": "있다 = มีอยู่ / มี 없다 = ไม่มี / ไม่มีอยู่ 있어요? เพียงคำเดียวท้ายประโยคก็แปลว่า มี...ไหม? ส่วน 없어요 เพียงคำเดียวก็แปลว่า ไม่มี คำสองคำนี้ปรากฏอยู่ในเกือบทุกประโยคภาษาเกาหลีที่พูดถึงการมี การอยู่ หรือความพร้อมของสิ่งของ",
+      "ref_es": "있다 = existir / tener. 없다 = no existir / no tener. 있어요? solo al final de una frase = ¿Tienes...? 없어요. = No tenemos. Estas dos palabras aparecen en casi todas las frases coreanas que tratan de posesión, ubicación o disponibilidad."
+    },
+    {
+      "id": "shopping::steps.15.meaning",
+      "path": "shopping/steps[15]/meaning",
+      "ko": null,
+      "en": "There is / I have / We have (polite)",
+      "current": "",
+      "ref_th": "มี / ฉันมี / เรามี (สุภาพ)",
+      "ref_es": "Hay / Tengo / Tenemos (educado)"
+    },
+    {
+      "id": "shopping::steps.16.meaning",
+      "path": "shopping/steps[16]/meaning",
+      "ko": null,
+      "en": "There isn't / We don't have it / Sold out",
+      "current": "",
+      "ref_th": "ไม่มี / เราไม่มี / หมดแล้ว",
+      "ref_es": "No hay / No tenemos / Agotado"
+    },
+    {
+      "id": "shopping::steps.17.prompt",
+      "path": "shopping/steps[17]/prompt",
+      "ko": null,
+      "en": "You ask for a bigger size. The clerk checks the back and comes back empty-handed. Which reply do you hear?",
+      "current": "",
+      "ref_th": "คุณถามหาไซซ์ที่ใหญ่ขึ้น พนักงานเข้าไปดูด้านหลังร้านแล้วกลับมามือเปล่า คุณจะได้ยินคำตอบใด?",
+      "ref_es": "Pides una talla más grande. El dependiente va al almacén y vuelve con las manos vacías. ¿Qué respuesta escuchas?"
+    },
+    {
+      "id": "shopping::steps.18.title",
+      "path": "shopping/steps[18]/title",
+      "ko": "원·가격",
+      "en": "Korean Money & Prices (원)",
+      "current": "",
+      "ref_th": "เงินและราคาเกาหลี (원)",
+      "ref_es": "Dinero y Precios Coreanos (원)"
+    },
+    {
+      "id": "shopping::steps.18.body",
+      "path": "shopping/steps[18]/body",
+      "ko": null,
+      "en": "The Korean currency is the 원 (won, ₩). Prices can look large because 1,000 won ≈ 0.75 USD. A coffee might be 4,500원, a meal 8,000~12,000원. 비싸다 (expensive) and 싸다 (cheap) are the key opinion words. When you receive change, the amount back is 거스름돈. Prices at traditional markets are often negotiable — 깎아 주세요 (Please give me a discount) or 더 싸게요? (Can it be cheaper?) opens bargaining.",
+      "current": "",
+      "ref_th": "สกุลเงินเกาหลีคือ 원 (วอน ₩) ราคาอาจดูสูงเพราะ 1,000 วอน ≈ 0.75 ดอลลาร์สหรัฐ กาแฟอาจราคา 4,500원 ส่วนอาหารมื้อหนึ่งราคา 8,000~12,000원 คำว่า 비싸다 (แพง) และ 싸다 (ถูก) เป็นคำแสดงความคิดเห็นหลักเกี่ยวกับราคา เมื่อได้รับเงินทอน เงินจำนวนนั้นเรียกว่า 거스름돈 ราคาสินค้าในตลาดดั้งเดิมมักต่อรองได้ — พูดว่า 깎아 주세요 (ช่วยลดราคาให้หน่อย) หรือ 더 싸게요? (ลดได้อีกไหม?) เพื่อเริ่มต่อรองราคา",
+      "ref_es": "La moneda coreana es el 원 (won, ₩). Los precios pueden parecer grandes porque 1.000 won ≈ 0,75 USD. Un café puede costar 4.500원, una comida 8.000~12.000원. 비싸다 (caro) y 싸다 (barato) son las palabras clave de opinión. Cuando recibes cambio, la cantidad devuelta es 거스름돈. Los precios en los mercados tradicionales a menudo son negociables — 깎아 주세요 (Por favor hazme un descuento) o 더 싸게요? (¿Puede ser más barato?) abre la negociación."
+    },
+    {
+      "id": "shopping::steps.18.tip.label",
+      "path": "shopping/steps[18]/tip.label",
+      "ko": null,
+      "en": "Reading Korean prices",
+      "current": "",
+      "ref_th": "อ่านราคาเกาหลี",
+      "ref_es": "Leer precios coreanos"
+    },
+    {
+      "id": "shopping::steps.18.tip.text",
+      "path": "shopping/steps[18]/tip.text",
+      "ko": null,
+      "en": "Korean uses Sino-Korean numbers for prices: 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10,000. So 삼만 오천 원 = 35,000 won. Cashiers often show you the amount on a calculator or screen to avoid confusion — pointing at numbers works perfectly well.",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีใช้ตัวเลขจีน-เกาหลีสำหรับราคา: 일(1) 이(2) 삼(3) 사(4) 오(5) 만 = 10,000 ดังนั้น 삼만 오천 원 = 35,000 วอน พนักงานเก็บเงินมักจะให้ดูจำนวนเงินบนเครื่องคิดเลขหรือหน้าจอเพื่อไม่ให้สับสน — การชี้ที่ตัวเลขก็ใช้ได้ผลดีเช่นกัน",
+      "ref_es": "El coreano usa números sino-coreanos para los precios: 일(1) 이(2) 삼(3) 사(4) 오(5). 만 = 10.000. Así que 삼만 오천 원 = 35.000 won. Los cajeros suelen mostrarte el importe en una calculadora o pantalla para evitar confusiones — señalar con el dedo funciona perfectamente."
+    },
+    {
+      "id": "shopping::steps.19.meaning",
+      "path": "shopping/steps[19]/meaning",
+      "ko": null,
+      "en": "won — Korean currency (₩)",
+      "current": "",
+      "ref_th": "วอน — สกุลเงินเกาหลี (₩)",
+      "ref_es": "won — moneda coreana (₩)"
+    },
+    {
+      "id": "shopping::steps.20.meaning",
+      "path": "shopping/steps[20]/meaning",
+      "ko": null,
+      "en": "to be expensive",
+      "current": "",
+      "ref_th": "แพง",
+      "ref_es": "ser caro"
+    },
+    {
+      "id": "shopping::steps.21.meaning",
+      "path": "shopping/steps[21]/meaning",
+      "ko": null,
+      "en": "to be cheap / inexpensive",
+      "current": "",
+      "ref_th": "ถูก / ราคาไม่แพง",
+      "ref_es": "ser barato / económico"
+    },
+    {
+      "id": "shopping::steps.22.meaning",
+      "path": "shopping/steps[22]/meaning",
+      "ko": null,
+      "en": "discount / sale",
+      "current": "",
+      "ref_th": "ส่วนลด / ลดราคา",
+      "ref_es": "descuento / rebaja"
+    },
+    {
+      "id": "shopping::steps.23.prompt",
+      "path": "shopping/steps[23]/prompt",
+      "ko": null,
+      "en": "You turn over the price tag and it is far more than you expected. Which word says that out loud?",
+      "current": "",
+      "ref_th": "คุณพลิกดูป้ายราคาแล้วพบว่าสูงกว่าที่คิดไว้มาก คุณจะพูดออกมาด้วยคำใด?",
+      "ref_es": "Le das la vuelta a la etiqueta y el precio es mucho más alto de lo que esperabas. ¿Con qué palabra lo dices en voz alta?"
+    },
+    {
+      "id": "shopping::steps.24.meaning",
+      "path": "shopping/steps[24]/meaning",
+      "ko": null,
+      "en": "change (money returned after paying)",
+      "current": "",
+      "ref_th": "เงินทอน (เงินที่ได้รับคืนหลังจ่าย)",
+      "ref_es": "cambio (dinero devuelto al pagar)"
+    },
+    {
+      "id": "shopping::steps.25.prompt",
+      "path": "shopping/steps[25]/prompt",
+      "ko": null,
+      "en": "You hand over 10,000원 for an item that costs 7,000원. What is the 3,000원 the cashier hands back called?",
+      "current": "",
+      "ref_th": "คุณจ่าย 10,000원 สำหรับสินค้าราคา 7,000원 เงิน 3,000원 ที่พนักงานคืนให้เรียกว่าอะไร?",
+      "ref_es": "Entregas 10.000원 por un artículo que cuesta 7.000원. ¿Cómo se llaman los 3.000원 que te devuelve el cajero?"
+    },
+    {
+      "id": "shopping::steps.26.title",
+      "path": "shopping/steps[26]/title",
+      "ko": "결제 방법",
+      "en": "Payment Methods (결제 방법)",
+      "current": "",
+      "ref_th": "วิธีชำระเงิน (결제 방법)",
+      "ref_es": "Métodos de Pago (결제 방법)"
+    },
+    {
+      "id": "shopping::steps.26.body",
+      "path": "shopping/steps[26]/body",
+      "ko": null,
+      "en": "Korea is a highly cashless society — most places accept credit cards (신용카드) or debit cards (체크카드), and mobile payment via apps like KakaoPay and Samsung Pay is extremely common. Cash (현금) is still accepted everywhere but is used less often. When paying, you may be asked 카드요, 현금이요? (Card or cash?). Requesting a receipt is 영수증 주세요. Tax refund signs (Tax Refund) at stores mean you can claim VAT back at the airport as a tourist.",
+      "current": "",
+      "ref_th": "เกาหลีเป็นสังคมไร้เงินสดอย่างมาก — ส่วนใหญ่รับบัตรเครดิต (신용카드) หรือบัตรเดบิต (체크카드) และการชำระผ่านมือถือ เช่น KakaoPay และ Samsung Pay ก็เป็นที่นิยมมาก เงินสด (현금) ยังใช้ได้ทุกที่แต่ใช้กันน้อยลง เวลาจ่ายเงิน คุณอาจถูกถามว่า 카드요, 현금이요? (บัตรหรือเงินสด?) หากต้องการใบเสร็จให้พูดว่า 영수증 주세요 ป้าย Tax Refund ตามร้านค้าหมายความว่านักท่องเที่ยวสามารถขอคืนภาษีมูลค่าเพิ่มได้ที่สนามบิน",
+      "ref_es": "Corea es una sociedad muy sin efectivo — la mayoría de los lugares aceptan tarjetas de crédito (신용카드) o débito (체크카드), y el pago móvil mediante aplicaciones como KakaoPay y Samsung Pay es muy común. El efectivo (현금) se acepta en todas partes pero se usa menos. Al pagar, pueden preguntarte 카드요, 현금이요? (¿Tarjeta o efectivo?). Pedir un recibo es 영수증 주세요. Los carteles Tax Refund en las tiendas significan que como turista puedes reclamar el IVA en el aeropuerto."
+    },
+    {
+      "id": "shopping::steps.26.tip.label",
+      "path": "shopping/steps[26]/tip.label",
+      "ko": null,
+      "en": "카카오페이 & 삼성페이",
+      "current": "",
+      "ref_th": "카카오페이 & 삼성페이",
+      "ref_es": "카카오페이 & 삼성페이"
+    },
+    {
+      "id": "shopping::steps.26.tip.text",
+      "path": "shopping/steps[26]/tip.text",
+      "ko": null,
+      "en": "KakaoPay (카카오페이) and Samsung Pay (삼성페이) are the dominant mobile payment apps in Korea. Tourists can use international credit cards almost everywhere. Look for the contactless payment symbol — Korea's adoption of contactless payment is among the highest in the world.",
+      "current": "",
+      "ref_th": "KakaoPay (카카오페이) และ Samsung Pay (삼성페이) เป็นแอปชำระเงินผ่านมือถือที่ได้รับความนิยมสูงสุดในเกาหลี นักท่องเที่ยวสามารถใช้บัตรเครดิตต่างประเทศได้เกือบทุกที่ ให้สังเกตสัญลักษณ์การชำระเงินแบบไร้สัมผัส — เกาหลีเป็นหนึ่งในประเทศที่ใช้ระบบชำระเงินไร้สัมผัสมากที่สุดในโลก",
+      "ref_es": "KakaoPay (카카오페이) y Samsung Pay (삼성페이) son las aplicaciones de pago móvil dominantes en Corea. Los turistas pueden usar tarjetas de crédito internacionales casi en todas partes. Busca el símbolo de pago sin contacto — la adopción de Corea del pago sin contacto está entre las más altas del mundo."
+    },
+    {
+      "id": "shopping::steps.27.meaning",
+      "path": "shopping/steps[27]/meaning",
+      "ko": null,
+      "en": "I'll pay by card",
+      "current": "",
+      "ref_th": "ฉันจะจ่ายด้วยบัตร",
+      "ref_es": "Pagaré con tarjeta"
+    },
+    {
+      "id": "shopping::steps.28.meaning",
+      "path": "shopping/steps[28]/meaning",
+      "ko": null,
+      "en": "I'll pay in cash (humble form)",
+      "current": "",
+      "ref_th": "ฉันจะจ่ายด้วยเงินสด (รูปถ่อมตัว)",
+      "ref_es": "Pagaré en efectivo (forma humilde)"
+    },
+    {
+      "id": "shopping::steps.29.meaning",
+      "path": "shopping/steps[29]/meaning",
+      "ko": null,
+      "en": "Please give me a receipt",
+      "current": "",
+      "ref_th": "ขอใบเสร็จด้วย",
+      "ref_es": "Por favor dame un recibo"
+    },
+    {
+      "id": "shopping::steps.30.prompt",
+      "path": "shopping/steps[30]/prompt",
+      "ko": null,
+      "en": "The cashier asks 카드요, 현금이요? You are reaching for your card. Which do you answer?",
+      "current": "",
+      "ref_th": "พนักงานถามว่า 카드요, 현금이요? คุณกำลังหยิบบัตรออกมา คุณจะตอบว่าอย่างไร?",
+      "ref_es": "El cajero pregunta 카드요, 현금이요? Estás sacando la tarjeta. ¿Qué respondes?"
+    },
+    {
+      "id": "shopping::steps.31.meaning",
+      "path": "shopping/steps[31]/meaning",
+      "ko": null,
+      "en": "Please give me a discount / Please reduce the price",
+      "current": "",
+      "ref_th": "ช่วยลดราคา / ลดให้หน่อยได้ไหม?",
+      "ref_es": "Por favor hazme un descuento / Por favor reduce el precio"
+    },
+    {
+      "id": "shopping::steps.32.title",
+      "path": "shopping/steps[32]/title",
+      "ko": "쇼핑 완료!",
+      "en": "Shopping Complete!",
+      "current": "",
+      "ref_th": "เรียนจบเรื่องการช้อปปิ้งแล้ว!",
+      "ref_es": "¡Compras Completadas!"
+    },
+    {
+      "id": "shopping::steps.32.message",
+      "path": "shopping/steps[32]/message",
+      "ko": null,
+      "en": "You're ready to shop in Korea! You know the key vocabulary, phrases for asking prices, bargaining, checking availability, and completing payment transactions.",
+      "current": "",
+      "ref_th": "คุณพร้อมช้อปปิ้งในเกาหลีแล้ว! คุณรู้คำศัพท์สำคัญ สำนวนถามราคา การต่อรอง การตรวจสอบสินค้า และขั้นตอนการชำระเงินครบแล้ว!",
+      "ref_es": "¡Estás listo/a para ir de compras en Corea! Conoces el vocabulario clave, las frases para preguntar precios, regatear, comprobar la disponibilidad y completar las transacciones de pago."
+    },
+    {
+      "id": "speech-levels::stages.0.name",
+      "path": "speech-levels/stages[0]/name",
+      "ko": "합쇼체",
+      "en": "합쇼체 (Formal)",
+      "current": "",
+      "ref_th": "합쇼체 (ทางการ)",
+      "ref_es": "합쇼체 (Formal)"
+    },
+    {
+      "id": "speech-levels::stages.1.name",
+      "path": "speech-levels/stages[1]/name",
+      "ko": "해요체",
+      "en": "해요체 (Polite)",
+      "current": "",
+      "ref_th": "해요체 (สุภาพ)",
+      "ref_es": "해요체 (Educado)"
+    },
+    {
+      "id": "speech-levels::stages.2.name",
+      "path": "speech-levels/stages[2]/name",
+      "ko": "반말",
+      "en": "반말 (Casual)",
+      "current": "",
+      "ref_th": "반말 (ไม่เป็นทางการ)",
+      "ref_es": "반말 (Informal)"
+    },
+    {
+      "id": "speech-levels::stages.3.name",
+      "path": "speech-levels/stages[3]/name",
+      "ko": "레벨 선택",
+      "en": "Choosing a Level",
+      "current": "",
+      "ref_th": "การเลือกระดับ",
+      "ref_es": "Elegir un Nivel"
+    },
+    {
+      "id": "speech-levels::steps.0.title",
+      "path": "speech-levels/steps[0]/title",
+      "ko": "높임말 개요",
+      "en": "Korean Speech Levels Overview",
+      "current": "",
+      "ref_th": "ภาพรวมระดับความสุภาพภาษาเกาหลี",
+      "ref_es": "Resumen de los Niveles de Habla del Coreano"
+    },
+    {
+      "id": "speech-levels::steps.0.body",
+      "path": "speech-levels/steps[0]/body",
+      "ko": null,
+      "en": "Korean has a system of speech levels (높임말) that determines how formal or polite your language is. The level you choose depends on the social relationship, age, rank, and context of the conversation. The three levels you'll encounter most are: 합쇼체 (formal polite, used in presentations, military, and customer service), 해요체 (everyday polite, the default for adults talking to non-close acquaintances), and 반말 (casual speech, used with close friends and younger people). Getting the level wrong can come across as rude, cold, or over-familiar.",
+      "current": "",
+      "ref_th": "ภาษาเกาหลีมีระบบระดับความสุภาพ (높임말) ที่กำหนดว่าภาษาของคุณเป็นทางการหรือสุภาพแค่ไหน ระดับหลักๆ ได้แก่ 합쇼체 (ทางการสูง) 해요체 (สุภาพทั่วไป) 반말 (ไม่เป็นทางการ/กันเอง) และ 문어체 (รูปแบบการเขียน) การเลือกระดับที่ถูกต้องเป็นสิ่งสำคัญมากในการสื่อสาร",
+      "ref_es": "El coreano tiene un sistema de niveles de habla (높임말) que determina cuán formal o educado es tu lenguaje. El nivel que eliges depende de la relación social, la edad, el rango y el contexto de la conversación. Los tres niveles que más encontrarás son: 합쇼체 (formal educado, utilizado en presentaciones, el ejército y el servicio al cliente), 해요체 (educado cotidiano, el predeterminado para adultos que hablan con conocidos no cercanos) y 반말 (habla informal, utilizado con amigos cercanos y personas más jóvenes). Usar el nivel incorrecto puede sonar grosero, frío o excesivamente familiar."
+    },
+    {
+      "id": "speech-levels::steps.0.tip.label",
+      "path": "speech-levels/steps[0]/tip.label",
+      "ko": null,
+      "en": "Why speech levels matter in Korea",
+      "current": "",
+      "ref_th": "ทำไมระดับความสุภาพถึงสำคัญในเกาหลี",
+      "ref_es": "Por qué importan los niveles de habla en Corea"
+    },
+    {
+      "id": "speech-levels::steps.0.tip.text",
+      "path": "speech-levels/steps[0]/tip.text",
+      "ko": null,
+      "en": "Korea is a hierarchical society shaped by Confucian values — age, rank, and relationship all determine how you speak. Using 반말 (casual speech) with a stranger or senior is rude. Using over-formal 합쇼체 with a friend can feel stiff and distant. Matching the right level is a key social skill.",
+      "current": "",
+      "ref_th": "เกาหลีเป็นสังคมที่มีลำดับชั้นตามค่านิยมขงจื้อ — อายุ ตำแหน่ง และความสัมพันธ์กำหนดวิธีการพูด การใช้ระดับที่ไม่เหมาะสมอาจฟังดูหยาบคายหรือแปลก",
+      "ref_es": "Corea es una sociedad jerárquica moldeada por los valores confucianos — la edad, el rango y la relación determinan cómo hablas. Usar 반말 (habla informal) con un extraño o un superior es una falta de respeto. Usar 합쇼체 excesivamente formal con un amigo puede parecer rígido y distante. Elegir el nivel correcto es una habilidad social clave."
+    },
+    {
+      "id": "speech-levels::steps.1.title",
+      "path": "speech-levels/steps[1]/title",
+      "ko": "합쇼체",
+      "en": "합쇼체 — The Formal Register",
+      "current": "",
+      "ref_th": "합쇼체 — ระดับทางการสูง",
+      "ref_es": "합쇼체 — El Registro Formal"
+    },
+    {
+      "id": "speech-levels::steps.1.body",
+      "path": "speech-levels/steps[1]/body",
+      "ko": null,
+      "en": "합쇼체 is the highest formal speech level in Korean. It is used in TV news broadcasts, military orders, formal presentations, hotel/airline staff speech, and customer service. Verb endings change to -ㅂ니다 / -습니다 for statements and -ㅂ니까? / -습니까? for questions. The vocabulary also shifts — 밥 (food) becomes 식사, 있어요 becomes 있습니다. This level signals maximum respect and professionalism.",
+      "current": "",
+      "ref_th": "합쇼체 เป็นระดับความสุภาพสูงสุดในภาษาเกาหลี ใช้ในรายการข่าวทีวี คำสั่งทหาร การประชุมธุรกิจอย่างเป็นทางการ และเมื่อพูดกับบุคคลสำคัญ รูปแบบ -ㅂ니다 / -습니다 เป็นเอกลักษณ์ของระดับนี้",
+      "ref_es": "합쇼체 es el nivel de habla formal más alto en coreano. Se usa en informativos de televisión, órdenes militares, presentaciones formales, el habla del personal de hoteles/aerolíneas y el servicio al cliente. Las terminaciones verbales cambian a -ㅂ니다/-습니다 para declaraciones y a -ㅂ니까?/-습니까? para preguntas. El vocabulario también cambia — 밥 (comida) se convierte en 식사, 있어요 se convierte en 있습니다. Este nivel señala el máximo respeto y profesionalismo."
+    },
+    {
+      "id": "speech-levels::steps.1.tip.label",
+      "path": "speech-levels/steps[1]/tip.label",
+      "ko": null,
+      "en": "Where to hear 합쇼체",
+      "current": "",
+      "ref_th": "ที่ไหนจะได้ยิน 합쇼체",
+      "ref_es": "Dónde escuchar 합쇼체"
+    },
+    {
+      "id": "speech-levels::steps.1.tip.text",
+      "path": "speech-levels/steps[1]/tip.text",
+      "ko": null,
+      "en": "Turn on Korean news (KBS, MBC, SBS) and you'll hear 합쇼체 throughout. Hotel staff, airline announcements, formal ceremonies, and military settings all use this level. It's also the level used in written formal documents, though pure written style (문어체) differs slightly.",
+      "current": "",
+      "ref_th": "เปิดข่าวเกาหลี (KBS MBC SBS) แล้วคุณจะได้ยิน 합쇼체 ตลอด พนักงานโรงแรม สายการบิน และที่ทำงานอาจใช้ระดับนี้ด้วย",
+      "ref_es": "Enciende las noticias coreanas (KBS, MBC, SBS) y escucharás 합쇼체 en todo momento. El personal de los hoteles, los anuncios de las aerolíneas, las ceremonias formales y los entornos militares utilizan este nivel. También es el nivel que se utiliza en documentos formales escritos, aunque el estilo puramente escrito (문어체) difiere ligeramente."
+    },
+    {
+      "id": "speech-levels::steps.2.meaning",
+      "path": "speech-levels/steps[2]/meaning",
+      "ko": null,
+      "en": "is / am / are — formal statement ending",
+      "current": "",
+      "ref_th": "เป็น / อยู่ — รูปลงท้ายประโยคบอกเล่าแบบทางการ",
+      "ref_es": "es / soy / son — terminación de declaración formal"
+    },
+    {
+      "id": "speech-levels::steps.3.meaning",
+      "path": "speech-levels/steps[3]/meaning",
+      "ko": null,
+      "en": "Thank you (formal)",
+      "current": "",
+      "ref_th": "ขอบคุณ (ทางการ)",
+      "ref_es": "Gracias (formal)"
+    },
+    {
+      "id": "speech-levels::steps.4.meaning",
+      "path": "speech-levels/steps[4]/meaning",
+      "ko": null,
+      "en": "Hello? / How do you do? (formal greeting, question form)",
+      "current": "",
+      "ref_th": "สวัสดีไหม? / ยินดีที่ได้รู้จัก? (ทักทายทางการ รูปคำถาม)",
+      "ref_es": "Hola / ¿Cómo está usted? (saludo formal, forma interrogativa)"
+    },
+    {
+      "id": "speech-levels::steps.5.prompt",
+      "path": "speech-levels/steps[5]/prompt",
+      "ko": null,
+      "en": "You are hotel staff making an announcement to guests. Which form of the verb 있다 do you use?",
+      "current": "",
+      "ref_th": "คุณเป็นพนักงานโรงแรมกำลังประกาศแจ้งแขก คุณใช้รูปใดของกริยา 있다?",
+      "ref_es": "Eres personal de un hotel y haces un anuncio a los huéspedes. ¿Qué forma del verbo 있다 usas?"
+    },
+    {
+      "id": "speech-levels::steps.6.title",
+      "path": "speech-levels/steps[6]/title",
+      "ko": "-ㅂ니다/-습니다",
+      "en": "합쇼체 Verb Endings (-ㅂ니다/-습니다)",
+      "current": "",
+      "ref_th": "คำลงท้ายกริยา 합쇼체 (-ㅂ니다/-습니다)",
+      "ref_es": "Terminaciones Verbales del 합쇼체 (-ㅂ니다/-습니다)"
+    },
+    {
+      "id": "speech-levels::steps.6.body",
+      "path": "speech-levels/steps[6]/body",
+      "ko": null,
+      "en": "The hallmark of 합쇼체 is the -ㅂ니다 / -습니다 ending. Use -ㅂ니다 after verb stems ending in a vowel: 가다 → 갑니다 (I go). Use -습니다 after stems ending in a consonant: 먹다 → 먹습니다 (I eat). For questions, the ending changes to -ㅂ니까? / -습니까?: 가다 → 갑니까? (Are you going?). The pronunciation note: 갑니다 is pronounced [감니다] due to nasal assimilation.",
+      "current": "",
+      "ref_th": "เอกลักษณ์ของ 합쇼체 คือรูปลงท้าย -ㅂ니다 / -습니다 ใช้ -ㅂ니다 หลังก้านกริยาที่ลงท้ายด้วยสระ: 가다 → 갑니다 (ไป) ใช้ -습니다 หลังก้านที่ลงท้ายด้วยพยัญชนะ: 먹다 → 먹습니다 (กิน) รูปคำถามใช้ -ㅂ니까? / -습니까?",
+      "ref_es": "El sello distintivo del 합쇼체 es la terminación -ㅂ니다/-습니다. Usa -ㅂ니다 después de raíces verbales que terminan en vocal: 가다 → 갑니다 (Voy). Usa -습니다 después de raíces que terminan en consonante: 먹다 → 먹습니다 (Como). Para preguntas, la terminación cambia a -ㅂ니까?/-습니까?: 가다 → 갑니까? (¿Vas?). Nota de pronunciación: 갑니다 se pronuncia [감니다] por asimilación nasal."
+    },
+    {
+      "id": "speech-levels::steps.6.tip.label",
+      "path": "speech-levels/steps[6]/tip.label",
+      "ko": null,
+      "en": "Pronunciation shift in -ㅂ니다",
+      "current": "",
+      "ref_th": "การออกเสียงที่เปลี่ยนใน -ㅂ니다",
+      "ref_es": "Cambio de pronunciación en -ㅂ니다"
+    },
+    {
+      "id": "speech-levels::steps.6.tip.text",
+      "path": "speech-levels/steps[6]/tip.text",
+      "ko": null,
+      "en": "갑니다 (I go) is spelled 갑니다 but pronounced 감니다. This is because ㅂ before ㄴ changes to ㅁ by nasal assimilation (same mouth position, nasal airflow). This pattern appears throughout 합쇼체 forms.",
+      "current": "",
+      "ref_th": "갑니다 (ฉันไป) เขียนว่า 갑니다 แต่ออกเสียง 감니다 เพราะ ㅂ ก่อน ㄴ เปลี่ยนเป็นเสียง ㅁ นี่เป็นการผสานเสียงที่พบบ่อยในภาษาเกาหลี",
+      "ref_es": "갑니다 (Voy) se escribe 갑니다 pero se pronuncia 감니다. Esto se debe a que ㅂ antes de ㄴ cambia a ㅁ por asimilación nasal (misma posición de la boca, flujo de aire nasal). Este patrón aparece en todas las formas del 합쇼체."
+    },
+    {
+      "id": "speech-levels::steps.7.meaning",
+      "path": "speech-levels/steps[7]/meaning",
+      "ko": null,
+      "en": "I eat / am eating (formal)",
+      "current": "",
+      "ref_th": "ฉันกิน / กำลังกิน (ทางการ)",
+      "ref_es": "Como / estoy comiendo (formal)"
+    },
+    {
+      "id": "speech-levels::steps.8.meaning",
+      "path": "speech-levels/steps[8]/meaning",
+      "ko": null,
+      "en": "I go / am going (formal) — pronounced 감니다",
+      "current": "",
+      "ref_th": "ฉันไป / กำลังไป (ทางการ) — ออกเสียง 감니다",
+      "ref_es": "Voy / estoy yendo (formal) — se pronuncia 감니다"
+    },
+    {
+      "id": "speech-levels::steps.9.title",
+      "path": "speech-levels/steps[9]/title",
+      "ko": "해요체",
+      "en": "해요체 — Everyday Polite Speech",
+      "current": "",
+      "ref_th": "해요체 — การพูดสุภาพทั่วไป",
+      "ref_es": "해요체 — Habla Educada Cotidiana"
+    },
+    {
+      "id": "speech-levels::steps.9.body",
+      "path": "speech-levels/steps[9]/body",
+      "ko": null,
+      "en": "해요체 is the speech level you will use most in daily Korean life. It is polite enough for strangers and acquaintances but warm enough to feel natural. The ending -아요 / -어요 / -해요 is added to the verb stem. 해요체 is used in shops, with coworkers you're not extremely close to, with adults you're meeting for the first time, and in most learner-to-native interactions. It is the 'default polite' of Korean.",
+      "current": "",
+      "ref_th": "해요체 เป็นระดับที่คุณจะใช้มากที่สุดในชีวิตประจำวันในเกาหลี สุภาพพอสำหรับคนแปลกหน้า เพื่อนร่วมงาน และสถานการณ์ทั่วไป แต่ไม่เป็นทางการเกินไป รูปลงท้าย -아요 / -어요 คือหัวใจของ 해요체",
+      "ref_es": "해요체 es el nivel de habla que usarás más en la vida cotidiana coreana. Es suficientemente educado para extraños y conocidos pero cálido para sentirse natural. La terminación -아요/-어요/-해요 se añade a la raíz verbal. El 해요체 se usa en las tiendas, con compañeros de trabajo con los que no tienes mucha confianza, con adultos que conoces por primera vez y en la mayoría de las interacciones de aprendiz con nativo. Es el \"educado predeterminado\" del coreano."
+    },
+    {
+      "id": "speech-levels::steps.9.tip.label",
+      "path": "speech-levels/steps[9]/tip.label",
+      "ko": null,
+      "en": "해요체 is your default setting",
+      "current": "",
+      "ref_th": "해요체 คือตัวเลือกเริ่มต้น",
+      "ref_es": "해요체 es tu configuración predeterminada"
+    },
+    {
+      "id": "speech-levels::steps.9.tip.text",
+      "path": "speech-levels/steps[9]/tip.text",
+      "ko": null,
+      "en": "When in doubt, use 해요체. It's the safest, most universally appropriate level in Korea. You can never go wrong being politely respectful. Switching to 합쇼체 or 반말 should only happen when the situation clearly calls for it.",
+      "current": "",
+      "ref_th": "เมื่อสงสัย ใช้ 해요체 เป็นระดับที่ปลอดภัยและเหมาะสมที่สุดในเกาหลี เกือบทุกสถานการณ์ทั่วไปยอมรับ 해요체 ได้",
+      "ref_es": "Cuando tengas dudas, usa 해요체. Es el nivel más seguro y universalmente apropiado en Corea. Nunca te equivocas siendo educado y respetuoso. Cambiar a 합쇼체 o 반말 solo debería ocurrir cuando la situación lo requiera claramente."
+    },
+    {
+      "id": "speech-levels::steps.10.meaning",
+      "path": "speech-levels/steps[10]/meaning",
+      "ko": null,
+      "en": "Hello / Good day (polite, everyday greeting)",
+      "current": "",
+      "ref_th": "สวัสดี / วันดี (ทักทายสุภาพ ประจำวัน)",
+      "ref_es": "Hola / Buenos días (educado, saludo cotidiano)"
+    },
+    {
+      "id": "speech-levels::steps.11.meaning",
+      "path": "speech-levels/steps[11]/meaning",
+      "ko": null,
+      "en": "Thank you (polite, less formal than 감사합니다)",
+      "current": "",
+      "ref_th": "ขอบคุณ (สุภาพ ไม่ทางการเท่า 감사합니다)",
+      "ref_es": "Gracias (educado, menos formal que 감사합니다)"
+    },
+    {
+      "id": "speech-levels::steps.12.meaning",
+      "path": "speech-levels/steps[12]/meaning",
+      "ko": null,
+      "en": "I eat / am eating (polite)",
+      "current": "",
+      "ref_th": "ฉันกิน / กำลังกิน (สุภาพ)",
+      "ref_es": "Como / estoy comiendo (educado)"
+    },
+    {
+      "id": "speech-levels::steps.13.meaning",
+      "path": "speech-levels/steps[13]/meaning",
+      "ko": null,
+      "en": "I go / am going (polite)",
+      "current": "",
+      "ref_th": "ฉันไป / กำลังไป (สุภาพ)",
+      "ref_es": "Voy / estoy yendo (educado)"
+    },
+    {
+      "id": "speech-levels::steps.14.prompt",
+      "path": "speech-levels/steps[14]/prompt",
+      "ko": null,
+      "en": "A coworker you are not close to asks what you are having for lunch. Which form of 먹다 do you use?",
+      "current": "",
+      "ref_th": "เพื่อนร่วมงานที่ไม่ได้สนิทถามว่าคุณกินอะไรเป็นมื้อกลางวัน คุณใช้รูปใดของ 먹다?",
+      "ref_es": "Un compañero de trabajo con el que no tienes confianza te pregunta qué vas a almorzar. ¿Qué forma de 먹다 usas?"
+    },
+    {
+      "id": "speech-levels::steps.15.title",
+      "path": "speech-levels/steps[15]/title",
+      "ko": "-아요/-어요 패턴",
+      "en": "-아요 / -어요 Pattern",
+      "current": "",
+      "ref_th": "รูปแบบ -아요 / -어요",
+      "ref_es": "Patrón -아요 / -어요"
+    },
+    {
+      "id": "speech-levels::steps.15.body",
+      "path": "speech-levels/steps[15]/body",
+      "ko": null,
+      "en": "The 해요체 ending rule: add -아요 if the last vowel of the stem is ㅏ or ㅗ (bright vowels), and add -어요 for all other vowels. 하다 verbs use -해요 instead. Examples: 가다 → 가 + 아요 = 가요 (contracted). 먹다 → 먹 + 어요 = 먹어요. 공부하다 → 공부해요. In practice, 아/어 often contract with the stem's final vowel: 가 + 아요 → 가요, 오 + 아요 → 와요.",
+      "current": "",
+      "ref_th": "กฎรูปลงท้าย 해요체: เพิ่ม -아요 ถ้าสระสุดท้ายของก้านคือ ㅏ หรือ ㅗ (สระสว่าง) และเพิ่ม -어요 สำหรับสระอื่นๆ กริยาและคำคุณศัพท์ที่ลงท้ายด้วย 하다 กลายเป็น 해요 เสมอ",
+      "ref_es": "La regla de terminación del 해요체: añade -아요 si la última vocal de la raíz es ㅏ o ㅗ (vocales brillantes), y añade -어요 para todas las demás vocales. Los verbos con 하다 usan -해요 en su lugar. Ejemplos: 가다 → 가 + 아요 = 가요 (contraído). 먹다 → 먹 + 어요 = 먹어요. 공부하다 → 공부해요. En la práctica, 아/어 a menudo se contrae con la vocal final de la raíz: 가 + 아요 → 가요, 오 + 아요 → 와요."
+    },
+    {
+      "id": "speech-levels::steps.15.tip.label",
+      "path": "speech-levels/steps[15]/tip.label",
+      "ko": null,
+      "en": "Quick chart",
+      "current": "",
+      "ref_th": "ตารางเร็ว",
+      "ref_es": "Tabla rápida"
+    },
+    {
+      "id": "speech-levels::steps.15.tip.text",
+      "path": "speech-levels/steps[15]/tip.text",
+      "ko": null,
+      "en": "가다 → 가요. 오다 → 와요. 먹다 → 먹어요. 마시다 → 마셔요. 하다 → 해요. 보다 → 봐요. 자다 → 자요. The endings follow a vowel harmony pattern — try to recognize the bright/dark vowel distinction in the stem.",
+      "current": "",
+      "ref_th": "가다 → 가요 오다 → 와요 먹다 → 먹어요 마시다 → 마셔요 하다 → 해요 보다 → 봐요 자다 → 자요 รูปลงท้ายเหมือนกันทั้งกริยาและคำคุณศัพท์",
+      "ref_es": "가다 → 가요. 오다 → 와요. 먹다 → 먹어요. 마시다 → 마셔요. 하다 → 해요. 보다 → 봐요. 자다 → 자요. Las terminaciones siguen un patrón de armonía vocálica — intenta reconocer la distinción entre vocal brillante/oscura en la raíz."
+    },
+    {
+      "id": "speech-levels::steps.16.meaning",
+      "path": "speech-levels/steps[16]/meaning",
+      "ko": null,
+      "en": "It's good / I like it (polite present)",
+      "current": "",
+      "ref_th": "ดีจัง / ชอบ (สุภาพปัจจุบัน)",
+      "ref_es": "Está bien / Me gusta (presente educado)"
+    },
+    {
+      "id": "speech-levels::steps.17.prompt",
+      "path": "speech-levels/steps[17]/prompt",
+      "ko": null,
+      "en": "오다 in 해요체 (everyday polite) is…",
+      "current": "",
+      "ref_th": "오다 ในรูป 해요체 (สุภาพทั่วไป) คือ…",
+      "ref_es": "오다 en 해요체 (educado cotidiano) es…"
+    },
+    {
+      "id": "speech-levels::steps.18.title",
+      "path": "speech-levels/steps[18]/title",
+      "ko": "반말",
+      "en": "반말 — Casual Speech",
+      "current": "",
+      "ref_th": "반말 — การพูดแบบกันเอง",
+      "ref_es": "반말 — Habla Informal"
+    },
+    {
+      "id": "speech-levels::steps.18.body",
+      "path": "speech-levels/steps[18]/body",
+      "ko": null,
+      "en": "반말 (ban-mal, literally 'half-speech') is the casual register used among close friends of similar age, with younger people, and within family. It drops the -요 from 해요체 endings: 가요 → 가, 먹어요 → 먹어, 좋아요 → 좋아. 반말 can sound rude if used with someone older or with a stranger — always start with 해요체 and switch to 반말 only if the other person initiates or explicitly suggests it. In K-dramas, characters switching from 해요체 to 반말 signals a big shift in closeness.",
+      "current": "",
+      "ref_th": "반말 (บันมัล แปลตรงๆ ว่า \"ครึ่งคำพูด\") เป็นรูปแบบไม่เป็นทางการที่ใช้ในหมู่เพื่อนสนิทอายุใกล้เคียงกัน น้องๆ หรือเด็ก การใช้ 반말 กับคนที่ไม่รู้จักหรือผู้ใหญ่กว่าถือว่าหยาบคายมาก",
+      "ref_es": "반말 (ban-mal, literalmente \"media palabra\") es el registro informal que se usa entre amigos cercanos de edad similar, con personas más jóvenes y dentro de la familia. Elimina el -요 de las terminaciones del 해요체: 가요 → 가, 먹어요 → 먹어, 좋아요 → 좋아. El 반말 puede sonar grosero si se usa con alguien mayor o con un extraño — siempre empieza con 해요체 y cambia a 반말 solo si la otra persona lo inicia o lo sugiere explícitamente. En los K-dramas, los personajes que cambian de 해요체 a 반말 señalan un gran cambio en la cercanía."
+    },
+    {
+      "id": "speech-levels::steps.18.tip.label",
+      "path": "speech-levels/steps[18]/tip.label",
+      "ko": null,
+      "en": "Getting permission to use 반말",
+      "current": "",
+      "ref_th": "ขอก่อนใช้ 반말",
+      "ref_es": "Pedir permiso para usar 반말"
+    },
+    {
+      "id": "speech-levels::steps.18.tip.text",
+      "path": "speech-levels/steps[18]/tip.text",
+      "ko": null,
+      "en": "A natural way to ask permission: '말 놓아도 돼요?' (Can I speak casually?) or '반말해도 돼요?' (Is it okay to use 반말?). You can also wait for the other person to naturally switch first — that's your invitation.",
+      "current": "",
+      "ref_th": "วิธีถามอนุญาตตามธรรมชาติ: \"말 놓아도 돼요?\" (ฉันพูดกันเองได้ไหม?) หรือ \"반말해도 돼요?\" ชาวเกาหลีมักรู้สึกดีเมื่อมีคนถาม",
+      "ref_es": "Una forma natural de pedir permiso: \"말 놓아도 돼요?\" (¿Puedo hablar informalmente?) o \"반말해도 돼요?\" (¿Está bien usar 반말?). También puedes esperar a que la otra persona cambie naturalmente primero — esa es tu invitación."
+    },
+    {
+      "id": "speech-levels::steps.19.meaning",
+      "path": "speech-levels/steps[19]/meaning",
+      "ko": null,
+      "en": "Hi / Bye (casual greeting and farewell)",
+      "current": "",
+      "ref_th": "สวัสดี / บ๊ายบาย (ทักทายและลาแบบกันเอง)",
+      "ref_es": "Hola / Adiós (saludo y despedida informal)"
+    },
+    {
+      "id": "speech-levels::steps.20.meaning",
+      "path": "speech-levels/steps[20]/meaning",
+      "ko": null,
+      "en": "Thanks (casual)",
+      "current": "",
+      "ref_th": "ขอบคุณ (แบบกันเอง)",
+      "ref_es": "Gracias (informal)"
+    },
+    {
+      "id": "speech-levels::steps.21.meaning",
+      "path": "speech-levels/steps[21]/meaning",
+      "ko": null,
+      "en": "eat / I eat (casual)",
+      "current": "",
+      "ref_th": "กิน / ฉันกิน (แบบกันเอง)",
+      "ref_es": "como / Voy a comer (informal)"
+    },
+    {
+      "id": "speech-levels::steps.22.meaning",
+      "path": "speech-levels/steps[22]/meaning",
+      "ko": null,
+      "en": "go / I go (casual)",
+      "current": "",
+      "ref_th": "ไป / ฉันไป (แบบกันเอง)",
+      "ref_es": "voy / Me voy (informal)"
+    },
+    {
+      "id": "speech-levels::steps.23.prompt",
+      "path": "speech-levels/steps[23]/prompt",
+      "ko": null,
+      "en": "You run into a close friend your own age. How do you greet them?",
+      "current": "",
+      "ref_th": "คุณบังเอิญเจอเพื่อนสนิทวัยเดียวกัน คุณจะทักทายอย่างไร?",
+      "ref_es": "Te encuentras con un amigo cercano de tu misma edad. ¿Cómo lo saludas?"
+    },
+    {
+      "id": "speech-levels::steps.24.title",
+      "path": "speech-levels/steps[24]/title",
+      "ko": "반말 사용 규칙",
+      "en": "When to Use 반말 (and When NOT to)",
+      "current": "",
+      "ref_th": "เมื่อใดใช้ 반말 (และเมื่อใดไม่ควรใช้)",
+      "ref_es": "Cuándo usar 반말 (y cuándo NO)"
+    },
+    {
+      "id": "speech-levels::steps.24.body",
+      "path": "speech-levels/steps[24]/body",
+      "ko": null,
+      "en": "Use 반말 with: close friends of similar age, younger siblings, younger students, or children. Do NOT use 반말 with: strangers, anyone older than you, your boss or teacher, service staff, or people you've just met (even if they seem similar in age). The mistake many Korean learners make is assuming that because someone is friendly, 반말 is appropriate. Friendliness and speech-level permission are separate — always wait for a signal.",
+      "current": "",
+      "ref_th": "ใช้ 반말 กับ: เพื่อนสนิทอายุใกล้เคียง น้องๆ นักเรียนรุ่นน้อง หรือเด็กๆ อย่าใช้กับ: คนแปลกหน้า ผู้ใหญ่กว่า เพื่อนร่วมงาน ครู หัวหน้า หรือใครก็ตามที่คุณยังไม่ได้รับอนุญาตให้ใช้ 반말",
+      "ref_es": "Usa 반말 con: amigos cercanos de edad similar, hermanos menores, estudiantes más jóvenes o niños. NO uses 반말 con: extraños, alguien mayor que tú, tu jefe o profesor, el personal de servicio o personas que acabas de conocer (aunque parezcan de edad similar). El error que cometen muchos estudiantes de coreano es suponer que porque alguien es amigable, el 반말 es apropiado. La amabilidad y el permiso para el nivel de habla son cosas separadas — siempre espera una señal."
+    },
+    {
+      "id": "speech-levels::steps.24.tip.label",
+      "path": "speech-levels/steps[24]/tip.label",
+      "ko": null,
+      "en": "One exception: self-talk",
+      "current": "",
+      "ref_th": "ข้อยกเว้น: การพูดคนเดียว",
+      "ref_es": "Una excepción: el monólogo interior"
+    },
+    {
+      "id": "speech-levels::steps.24.tip.text",
+      "path": "speech-levels/steps[24]/tip.text",
+      "ko": null,
+      "en": "When Koreans talk to themselves, mutter, or write diary entries, they use 반말 or even a neutral style without any endings. This is natural and not directed at anyone — so no politeness is needed. This is also why drama monologues and internal thoughts are in 반말.",
+      "current": "",
+      "ref_th": "เมื่อชาวเกาหลีพูดคนเดียว呢呢เบาๆ หรือเขียนไดอารี่ มักใช้ 반말 หรือรูปเปลือยๆ ของกริยา ดังนั้น 반말 ในบทบรรยาย V-log หรือบันทึกส่วนตัวจึงเป็นเรื่องปกติ",
+      "ref_es": "Cuando los coreanos hablan solos, murmuran o escriben entradas de diario, usan 반말 o incluso un estilo neutro sin terminaciones. Esto es natural y no está dirigido a nadie — por lo tanto no se necesita cortesía. También es por eso que los monólogos de los dramas y los pensamientos internos están en 반말."
+    },
+    {
+      "id": "speech-levels::steps.25.prompt",
+      "path": "speech-levels/steps[25]/prompt",
+      "ko": null,
+      "en": "You're talking to a stranger your same age on the street. Which level should you use?",
+      "current": "",
+      "ref_th": "คุณกำลังคุยกับคนแปลกหน้าอายุเดียวกันบนถนน ควรใช้ระดับไหน?",
+      "ref_es": "Estás hablando con un extraño de tu misma edad en la calle. ¿Qué nivel debes usar?"
+    },
+    {
+      "id": "speech-levels::steps.26.title",
+      "path": "speech-levels/steps[26]/title",
+      "ko": "문어체",
+      "en": "문어체 — Written/Formal Style",
+      "current": "",
+      "ref_th": "문어체 — รูปแบบการเขียน/ทางการ",
+      "ref_es": "문어체 — Estilo Escrito/Formal"
+    },
+    {
+      "id": "speech-levels::steps.26.body",
+      "path": "speech-levels/steps[26]/body",
+      "ko": null,
+      "en": "문어체 (mun-eo-che, 'written language style') is used in formal writing — academic papers, news articles, legal documents, and literature. The verb ending is -다 (the plain style: -ㄴ다/-는다 on verbs): 간다, 먹는다, 했다. It sounds unnatural in spoken conversation but appears everywhere in written Korean. Learners encounter this when reading Korean text and may wonder why it differs from what they've been taught — that's because textbooks teach spoken registers, while reading requires recognizing 문어체.",
+      "current": "",
+      "ref_th": "문어체 (มุนออเช \"รูปแบบภาษาเขียน\") ใช้ในงานเขียนทางการ — บทความวิชาการ บทความข่าว สัญญา และเอกสารราชการ รูปกริยาลงท้ายด้วย -다 (รูปธรรมดา: -ㄴ다/-는다 กับคำกริยา) มักพบในหนังสือพิมพ์และข้อความอย่างเป็นทางการ",
+      "ref_es": "문어체 (mun-eo-che, \"estilo de lengua escrita\") se usa en la escritura formal — trabajos académicos, artículos de noticias, documentos legales y literatura. La terminación verbal es -다 (el estilo llano: -ㄴ다/-는다 en los verbos): 간다, 먹는다, 했다. Suena antinatural en la conversación oral pero aparece en todas partes en el coreano escrito. Los estudiantes lo encuentran al leer textos coreanos y pueden preguntarse por qué difiere de lo que les han enseñado — eso es porque los libros de texto enseñan registros orales, mientras que la lectura requiere reconocer el 문어체."
+    },
+    {
+      "id": "speech-levels::steps.26.tip.label",
+      "path": "speech-levels/steps[26]/tip.label",
+      "ko": null,
+      "en": "문어체 vs 합쇼체",
+      "current": "",
+      "ref_th": "문어체 vs 합쇼체",
+      "ref_es": "문어체 vs 합쇼체"
+    },
+    {
+      "id": "speech-levels::steps.26.tip.text",
+      "path": "speech-levels/steps[26]/tip.text",
+      "ko": null,
+      "en": "Both are formal, but 합쇼체 is for speech (speaker to listener) and 문어체 is for writing (no specific listener). A news anchor speaks in 합쇼체. A newspaper article is in 문어체. In K-dramas, you'll hear 문어체 when characters read aloud from books or letters.",
+      "current": "",
+      "ref_th": "ทั้งสองแบบเป็นทางการ แต่ 합쇼체 ใช้ในการพูด (ผู้พูดถึงผู้ฟัง) และ 문어체 ใช้ในการเขียน (ผู้เขียนถึงผู้อ่าน) นักข่าวพูดด้วย 합쇼체 แต่เขียนด้วย 문어체",
+      "ref_es": "Ambos son formales, pero 합쇼체 es para el habla (hablante a oyente) y 문어체 es para la escritura (sin oyente específico). Un presentador de noticias habla en 합쇼체. Un artículo de periódico está en 문어체. En los K-dramas, escucharás 문어체 cuando los personajes leen en voz alta libros o cartas."
+    },
+    {
+      "id": "speech-levels::steps.27.meaning",
+      "path": "speech-levels/steps[27]/meaning",
+      "ko": null,
+      "en": "to be (copula, written/dictionary form)",
+      "current": "",
+      "ref_th": "เป็น (copula รูปเขียน/พจนานุกรม)",
+      "ref_es": "ser (cópula, forma escrita/diccionario)"
+    },
+    {
+      "id": "speech-levels::steps.28.title",
+      "path": "speech-levels/steps[28]/title",
+      "ko": "높임말 비교표",
+      "en": "Speech Level Comparison Chart",
+      "current": "",
+      "ref_th": "ตารางเปรียบเทียบระดับความสุภาพ",
+      "ref_es": "Tabla Comparativa de Niveles de Habla"
+    },
+    {
+      "id": "speech-levels::steps.28.body",
+      "path": "speech-levels/steps[28]/body",
+      "ko": null,
+      "en": "Here is how the same idea looks across speech levels. 'I eat': 먹습니다 (formal 합쇼체) → 먹어요 (polite 해요체) → 먹어 (casual 반말) → 먹는다 (written 문어체). 'Thank you': 감사합니다 (formal) → 감사해요 (polite) → 고마워 (casual). 'I go': 갑니다 (formal) → 가요 (polite) → 가 (casual) → 간다 (written). Noticing these patterns will help you identify which level a speaker is using when you watch Korean dramas or listen to native speech.",
+      "current": "",
+      "ref_th": "นี่คือวิธีที่ความคิดเดียวกันแสดงในระดับต่างๆ \"ฉันกิน\": 먹습니다 (ทางการ 합쇼체) → 먹어요 (สุภาพ 해요체) → 먹어 (กันเอง 반말) → 먹다 (เขียน 문어체) ลำดับชั้นสะท้อนถึงความสัมพันธ์ทางสังคม",
+      "ref_es": "Así se ve la misma idea en todos los niveles de habla. \"Como\": 먹습니다 (formal 합쇼체) → 먹어요 (educado 해요체) → 먹어 (informal 반말) → 먹는다 (escrito 문어체). \"Gracias\": 감사합니다 (formal) → 감사해요 (educado) → 고마워 (informal). \"Voy\": 갑니다 (formal) → 가요 (educado) → 가 (informal) → 간다 (escrito). Notar estos patrones te ayudará a identificar qué nivel usa un hablante cuando ves dramas coreanos o escuchas habla nativa."
+    },
+    {
+      "id": "speech-levels::steps.28.tip.label",
+      "path": "speech-levels/steps[28]/tip.label",
+      "ko": null,
+      "en": "Use K-dramas to train your ear",
+      "current": "",
+      "ref_th": "ใช้ K-Drama ฝึกหู",
+      "ref_es": "Usa los K-dramas para entrenar tu oído"
+    },
+    {
+      "id": "speech-levels::steps.28.tip.text",
+      "path": "speech-levels/steps[28]/tip.text",
+      "ko": null,
+      "en": "K-dramas are a gold mine for speech level practice. Bosses speak in 합쇼체 to their team. Friends switch to 반말 with each other. Scenes in hospitals or offices use 해요체. If you notice a sudden change in speech level between characters — that's a dramatic moment.",
+      "current": "",
+      "ref_th": "K-Drama เป็นแหล่งฝึกระดับความสุภาพที่ดีที่สุด หัวหน้าพูดกับลูกน้องด้วย 반말 ลูกน้องตอบด้วย 해요체 หรือ 합쇼체 สังเกตให้ดีในซีน HR และออฟฟิศ",
+      "ref_es": "Los K-dramas son una mina de oro para practicar los niveles de habla. Los jefes hablan en 합쇼체 a su equipo. Los amigos cambian a 반말 entre sí. Las escenas en hospitales u oficinas usan 해요체. Si notas un cambio repentino en el nivel de habla entre los personajes — ese es un momento dramático."
+    },
+    {
+      "id": "speech-levels::steps.29.prompt",
+      "path": "speech-levels/steps[29]/prompt",
+      "ko": null,
+      "en": "You are thanking your company's CEO at a formal dinner. Which form do you use?",
+      "current": "",
+      "ref_th": "คุณกล่าวขอบคุณซีอีโอของบริษัทในงานเลี้ยงอาหารค่ำอย่างเป็นทางการ คุณใช้รูปใด?",
+      "ref_es": "Le das las gracias al director general de tu empresa en una cena formal. ¿Qué forma usas?"
+    },
+    {
+      "id": "speech-levels::steps.30.prompt",
+      "path": "speech-levels/steps[30]/prompt",
+      "ko": null,
+      "en": "In a job interview in Korea, which speech level should you use?",
+      "current": "",
+      "ref_th": "ในการสัมภาษณ์งานในเกาหลี ควรใช้ระดับความสุภาพไหน?",
+      "ref_es": "En una entrevista de trabajo en Corea, ¿qué nivel de habla deberías usar?"
+    },
+    {
+      "id": "speech-levels::steps.31.title",
+      "path": "speech-levels/steps[31]/title",
+      "ko": "높임말 혼용 주의",
+      "en": "Mixing Speech Levels — A Common Mistake",
+      "current": "",
+      "ref_th": "การผสมระดับความสุภาพ — ข้อผิดพลาดที่พบบ่อย",
+      "ref_es": "Mezclar Niveles de Habla — Un Error Común"
+    },
+    {
+      "id": "speech-levels::steps.31.body",
+      "path": "speech-levels/steps[31]/body",
+      "ko": null,
+      "en": "One of the most common learner mistakes is mixing speech levels — using 먹어요 (해요체) in one sentence and 먹습니다 (합쇼체) in the next. Native speakers notice this immediately. It sounds like mixing formal and casual in the same breath. Choose one level for the conversation and stick to it. The only exception is intentional switching for rhetorical effect (like a business email that opens formally and ends warmly), but even this follows clear patterns.",
+      "current": "",
+      "ref_th": "ข้อผิดพลาดที่พบบ่อยที่สุดของผู้เรียนคือการผสมระดับความสุภาพ — ใช้ 먹어요 (해요체) ในประโยคหนึ่งและ 먹습니다 (합쇼체) ในอีกประโยค ให้เลือกระดับเดียวและใช้ให้สม่ำเสมอตลอดการสนทนา",
+      "ref_es": "Uno de los errores más comunes de los estudiantes es mezclar niveles de habla — usando 먹어요 (해요체) en una oración y 먹습니다 (합쇼체) en la siguiente. Los hablantes nativos lo notan de inmediato. Suena como mezclar formal e informal en el mismo aliento. Elige un nivel para la conversación y mantenlo. La única excepción es el cambio intencional por efecto retórico (como un correo electrónico de negocios que abre formalmente y termina cálidamente), pero incluso esto sigue patrones claros."
+    },
+    {
+      "id": "speech-levels::steps.31.tip.label",
+      "path": "speech-levels/steps[31]/tip.label",
+      "ko": null,
+      "en": "Don't mix endings mid-sentence",
+      "current": "",
+      "ref_th": "อย่าผสมรูปลงท้ายกลางประโยค",
+      "ref_es": "No mezcles terminaciones a mitad de oración"
+    }
+  ]
+}

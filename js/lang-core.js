@@ -6,14 +6,93 @@
 
 const _langCoreScript = document.currentScript;
 
-/* The nine locales this site ships.
+/* ── locale registry ──────────────────────────────────────────────────────
+   The block below is GENERATED from scripts/_locales.cjs, the single source
+   of truth for the locale list. Regenerate with:
+
+       node scripts/gen-locales-js.cjs          (verify: --check)
+
+   WHY IT IS INLINED rather than pulled from js/locales.js. The bootstrap at
+   the bottom of this file document.write()s the active language pack while
+   the <head> is still parsing. All ~420 pages load this file with a bare
+   <script src="…/lang-core.js"> and nothing else, so requiring js/locales.js
+   to load first would mean editing every one of those pages, adding a
+   blocking request to the critical path, and breaking the language pack
+   outright on any page that got missed. Inlining a marker-delimited
+   projection keeps lang-core self-contained and zero-extra-request; this is
+   the same idempotent marker-guarded injection fix-culture-travel-seo.cjs
+   uses. js/locales.js is still generated, for future consumers that CAN take
+   the extra tag. `gen-locales-js.cjs --check` fails if the two copies or the
+   registry ever drift apart. Do not hand-edit inside the markers. */
+/* ks:locales:start */
+  /* GENERATED FILE — do not edit; run node scripts/gen-locales-js.cjs */
+  /* Projection of scripts/_locales.cjs: code, native, flag, flagSvg,
+     status. Inlined rather than loaded from js/locales.js — see that
+     script's header for why. */
+  var KS_LOCALE_DATA = [
+    { code: "en", native: "English", status: "live",
+      flag: "🇺🇸",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#B22234\"/><g fill=\"#fff\"><rect y=\"3.1\" width=\"60\" height=\"3.1\"/><rect y=\"9.2\" width=\"60\" height=\"3.1\"/><rect y=\"15.4\" width=\"60\" height=\"3.1\"/><rect y=\"21.5\" width=\"60\" height=\"3.1\"/><rect y=\"27.7\" width=\"60\" height=\"3.1\"/><rect y=\"33.8\" width=\"60\" height=\"3.1\"/></g><rect width=\"24\" height=\"21.5\" fill=\"#3C3B6E\"/><g fill=\"#fff\"><circle cx=\"4\" cy=\"4\" r=\"1.1\"/><circle cx=\"12\" cy=\"4\" r=\"1.1\"/><circle cx=\"20\" cy=\"4\" r=\"1.1\"/><circle cx=\"8\" cy=\"8\" r=\"1.1\"/><circle cx=\"16\" cy=\"8\" r=\"1.1\"/><circle cx=\"4\" cy=\"12\" r=\"1.1\"/><circle cx=\"12\" cy=\"12\" r=\"1.1\"/><circle cx=\"20\" cy=\"12\" r=\"1.1\"/><circle cx=\"8\" cy=\"16\" r=\"1.1\"/><circle cx=\"16\" cy=\"16\" r=\"1.1\"/></g></svg>" },
+    { code: "zh-tw", native: "繁體中文", status: "live",
+      flag: "🇹🇼",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#FE0000\"/><rect width=\"30\" height=\"20\" fill=\"#000095\"/><polygon fill=\"#fff\" points=\"21,10 17.4,10.7 20.2,13 16.8,11.8 18,15.2 15.7,12.4 15,16 14.3,12.4 12,15.2 13.2,11.8 9.8,13 12.6,10.7 9,10 12.6,9.3 9.8,7 13.2,8.2 12,4.8 14.3,7.6 15,4 15.7,7.6 18,4.8 16.8,8.2 20.2,7 17.4,9.3\"/><circle cx=\"15\" cy=\"10\" r=\"2.9\" fill=\"#000095\"/><circle cx=\"15\" cy=\"10\" r=\"2.2\" fill=\"#fff\"/></svg>" },
+    { code: "ja", native: "日本語", status: "live",
+      flag: "🇯🇵",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#fff\"/><circle cx=\"30\" cy=\"20\" r=\"12\" fill=\"#BC002D\"/></svg>" },
+    { code: "es", native: "Español", status: "live",
+      flag: "🇪🇸",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#AA151B\"/><rect y=\"10\" width=\"60\" height=\"20\" fill=\"#F1BF00\"/></svg>" },
+    { code: "fr", native: "Français", status: "live",
+      flag: "🇫🇷",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#fff\"/><rect width=\"20\" height=\"40\" fill=\"#0055A4\"/><rect x=\"40\" width=\"20\" height=\"40\" fill=\"#EF4135\"/></svg>" },
+    { code: "de", native: "Deutsch", status: "live",
+      flag: "🇩🇪",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#FFCE00\"/><rect width=\"60\" height=\"13.3\" fill=\"#000\"/><rect y=\"13.3\" width=\"60\" height=\"13.4\" fill=\"#D00\"/></svg>" },
+    { code: "vi", native: "Tiếng Việt", status: "live",
+      flag: "🇻🇳",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#DA251D\"/><polygon fill=\"#FF0\" points=\"30,8 32.8,16.1 41.4,16.3 34.6,21.5 37.1,29.7 30,24.8 22.9,29.7 25.4,21.5 18.6,16.3 27.2,16.1\"/></svg>" },
+    { code: "th", native: "ไทย", status: "live",
+      flag: "🇹🇭",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#A51931\"/><rect y=\"6.7\" width=\"60\" height=\"26.6\" fill=\"#F4F5F8\"/><rect y=\"13.3\" width=\"60\" height=\"13.4\" fill=\"#2D2A4A\"/></svg>" },
+    { code: "id", native: "Bahasa Indonesia", status: "live",
+      flag: "🇮🇩",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#fff\"/><rect width=\"60\" height=\"20\" fill=\"#E70011\"/></svg>" },
+    { code: "pt-br", native: "Português (Brasil)", status: "planned",
+      flag: "🇧🇷",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#009B3A\"/><polygon fill=\"#FEDF00\" points=\"30,4 55,20 30,36 5,20\"/><circle cx=\"30\" cy=\"20\" r=\"9\" fill=\"#002776\"/><g fill=\"#fff\"><circle cx=\"26\" cy=\"16\" r=\"0.8\"/><circle cx=\"32\" cy=\"15.5\" r=\"0.8\"/><circle cx=\"34.8\" cy=\"23.4\" r=\"0.8\"/><circle cx=\"27\" cy=\"25\" r=\"0.8\"/><rect x=\"21.3\" y=\"19\" width=\"17.4\" height=\"3\"/></g></svg>" },
+    { code: "ru", native: "Русский", status: "planned",
+      flag: "🇷🇺",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#fff\"/><rect y=\"13.3\" width=\"60\" height=\"13.4\" fill=\"#0039A6\"/><rect y=\"26.7\" width=\"60\" height=\"13.3\" fill=\"#D52B1E\"/></svg>" },
+    { code: "tr", native: "Türkçe", status: "planned",
+      flag: "🇹🇷",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#E30A17\"/><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"#fff\"/><circle cx=\"27.3\" cy=\"20\" r=\"7.3\" fill=\"#E30A17\"/><polygon fill=\"#fff\" points=\"41.2,20 38.38,21 38.3,23.99 36.47,21.62 33.6,22.47 35.3,20 33.6,17.53 36.47,18.38 38.3,16.01 38.38,19\"/></svg>" },
+    { code: "zh-hk", native: "繁體中文（香港）", status: "planned",
+      flag: "🇭🇰",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#BA0C2F\"/><g fill=\"#fff\"><circle cx=\"30\" cy=\"15.4\" r=\"3.4\"/><circle cx=\"34.38\" cy=\"18.58\" r=\"3.4\"/><circle cx=\"32.7\" cy=\"23.72\" r=\"3.4\"/><circle cx=\"27.3\" cy=\"23.72\" r=\"3.4\"/><circle cx=\"25.62\" cy=\"18.58\" r=\"3.4\"/><circle cx=\"30\" cy=\"20\" r=\"2.8\"/></g></svg>" },
+    { code: "zh-cn", native: "简体中文", status: "planned",
+      flag: "🇨🇳",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#DE2910\"/><polygon fill=\"#FFDE00\" points=\"10,4 11.4,8.1 15.7,8.2 12.3,10.7 13.5,14.9 10,12.4 6.5,14.9 7.7,10.7 4.3,8.2 8.6,8.1\"/><circle cx=\"20\" cy=\"4\" r=\"1.5\" fill=\"#FFDE00\"/><circle cx=\"23\" cy=\"8\" r=\"1.5\" fill=\"#FFDE00\"/><circle cx=\"23\" cy=\"13\" r=\"1.5\" fill=\"#FFDE00\"/><circle cx=\"20\" cy=\"17\" r=\"1.5\" fill=\"#FFDE00\"/></svg>" },
+    { code: "ar", native: "العربية", status: "planned",
+      flag: "🇸🇦",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#006C35\"/><g fill=\"#fff\"><rect x=\"12\" y=\"12.5\" width=\"36\" height=\"4.4\"/><rect x=\"14\" y=\"24\" width=\"28\" height=\"2.6\"/><rect x=\"11\" y=\"23.4\" width=\"3\" height=\"3.8\"/><polygon points=\"42,22.7 48,25.3 42,27.9\"/></g></svg>" },
+    { code: "ms", native: "Bahasa Melayu", status: "planned",
+      flag: "🇲🇾",
+      flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#CC0001\"/><g fill=\"#fff\"><rect y=\"2.86\" width=\"60\" height=\"2.86\"/><rect y=\"8.57\" width=\"60\" height=\"2.86\"/><rect y=\"14.29\" width=\"60\" height=\"2.86\"/><rect y=\"20\" width=\"60\" height=\"2.86\"/><rect y=\"25.71\" width=\"60\" height=\"2.86\"/><rect y=\"31.43\" width=\"60\" height=\"2.86\"/><rect y=\"37.14\" width=\"60\" height=\"2.86\"/></g><rect width=\"30\" height=\"22.86\" fill=\"#010066\"/><circle cx=\"13\" cy=\"11.4\" r=\"6\" fill=\"#FC0\"/><circle cx=\"15.6\" cy=\"11.4\" r=\"4.9\" fill=\"#010066\"/><polygon fill=\"#FC0\" points=\"22.4,7.8 22.89,9.26 23.96,8.16 23.77,9.68 25.21,9.16 24.38,10.45 25.91,10.6 24.6,11.4 25.91,12.2 24.38,12.35 25.21,13.64 23.77,13.12 23.96,14.64 22.89,13.54 22.4,15 21.91,13.54 20.84,14.64 21.03,13.12 19.59,13.64 20.42,12.35 18.89,12.2 20.2,11.4 18.89,10.6 20.42,10.45 19.59,9.16 21.03,9.68 20.84,8.16 21.91,9.26\"/></svg>" }
+  ];
+/* ks:locales:end */
+
+/* The locales this site ships — derived from the registry, `live` only.
+   'planned' records exist in the registry so tooling can be built ahead of a
+   rollout; they must never reach a reader, so they are filtered out here.
+
    `<html lang>` is the SINGLE SOURCE OF TRUTH for what language a page is —
    see docs/i18n-locale-leak.md. localStorage remembers the reader's *choice*
    for setLang() navigation; it must never translate a page in place. An
    explicit lang="en" means the page IS English, not "unknown, use the stored
    preference" — reading it the second way is what produced the Thai/English
    hybrid on every English URL a non-English reader arrived at. */
-const KS_LANGS = ['en', 'zh-tw', 'ja', 'es', 'fr', 'de', 'vi', 'th', 'id'];
+const KS_LIVE = KS_LOCALE_DATA.filter(l => l.status === 'live');
+const KS_LANGS = KS_LIVE.map(l => l.code);
 
 const LangManager = (() => {
   const LS_KEY = 'ks-lang';
@@ -70,8 +149,11 @@ const LangManager = (() => {
       }
     }
 
-    // Fallback: navigate to language root
-    const roots = { en: '/', 'zh-tw': '/zh-tw/', ja: '/ja/', es: '/es/', fr: '/fr/', de: '/de/', vi: '/vi/', th: '/th/', id: '/id/' };
+    // Fallback: navigate to language root. Every locale's root is
+    // '/<code>/' by construction (en is the site root) — see the mirror-path
+    // rule in docs/i18n-locale-leak.md.
+    const roots = {};
+    KS_LIVE.forEach(l => { roots[l.code] = l.code === 'en' ? '/' : '/' + l.code + '/'; });
     window.location.href = roots[lang] || '/';
   }
 
@@ -116,21 +198,20 @@ const LangManager = (() => {
   /* ── Flag emoji → inline SVG ─────────────────────────────
      Windows has no flag emoji font: regional-indicator pairs render
      as letters (e.g. "KR"). Replace known flag emoji in text nodes
-     with inline SVG so PC and mobile both show real flags. */
+     with inline SVG so PC and mobile both show real flags.
+
+     Locale flags come from the registry (KS_LOCALE_DATA) — including
+     'planned' ones, because this map is a plain emoji→SVG substitution and
+     an unused entry costs nothing, whereas a flag typed into prose before
+     its locale ships would otherwise render as bare letters. The two entries
+     below are NOT locales and stay hardcoded here: 🇰🇷 is the subject matter
+     of the site, and 🇲🇳 is prose decoration. Never add a locale flag here —
+     add it to scripts/_locales.cjs and rerun gen-locales-js.cjs. */
   const _FLAG_SVG = {
     '🇰🇷': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><circle cx="30" cy="20" r="10" fill="#0047A0"/><path transform="rotate(45 30 20)" d="M20 20a10 10 0 0 1 20 0 5 5 0 0 0-10 0 5 5 0 0 1-10 0z" fill="#CD2E3A"/><g fill="#000"><g transform="translate(15.44 10.29) rotate(-56.31)"><rect x="-6" y="-5.4" width="12" height="2.7"/><rect x="-6" y="-1.35" width="12" height="2.7"/><rect x="-6" y="2.7" width="12" height="2.7"/></g><g transform="translate(44.56 10.29) rotate(56.31)"><rect x="-6" y="-5.4" width="5.3" height="2.7"/><rect x="0.7" y="-5.4" width="5.3" height="2.7"/><rect x="-6" y="-1.35" width="12" height="2.7"/><rect x="-6" y="2.7" width="5.3" height="2.7"/><rect x="0.7" y="2.7" width="5.3" height="2.7"/></g><g transform="translate(15.44 29.71) rotate(56.31)"><rect x="-6" y="-5.4" width="12" height="2.7"/><rect x="-6" y="-1.35" width="5.3" height="2.7"/><rect x="0.7" y="-1.35" width="5.3" height="2.7"/><rect x="-6" y="2.7" width="12" height="2.7"/></g><g transform="translate(44.56 29.71) rotate(-56.31)"><rect x="-6" y="-5.4" width="5.3" height="2.7"/><rect x="0.7" y="-5.4" width="5.3" height="2.7"/><rect x="-6" y="-1.35" width="5.3" height="2.7"/><rect x="0.7" y="-1.35" width="5.3" height="2.7"/><rect x="-6" y="2.7" width="5.3" height="2.7"/><rect x="0.7" y="2.7" width="5.3" height="2.7"/></g></g></svg>',
-    '🇺🇸': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#B22234"/><g fill="#fff"><rect y="3.1" width="60" height="3.1"/><rect y="9.2" width="60" height="3.1"/><rect y="15.4" width="60" height="3.1"/><rect y="21.5" width="60" height="3.1"/><rect y="27.7" width="60" height="3.1"/><rect y="33.8" width="60" height="3.1"/></g><rect width="24" height="21.5" fill="#3C3B6E"/><g fill="#fff"><circle cx="4" cy="4" r="1.1"/><circle cx="12" cy="4" r="1.1"/><circle cx="20" cy="4" r="1.1"/><circle cx="8" cy="8" r="1.1"/><circle cx="16" cy="8" r="1.1"/><circle cx="4" cy="12" r="1.1"/><circle cx="12" cy="12" r="1.1"/><circle cx="20" cy="12" r="1.1"/><circle cx="8" cy="16" r="1.1"/><circle cx="16" cy="16" r="1.1"/></g></svg>',
-    '🇹🇼': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#FE0000"/><rect width="30" height="20" fill="#000095"/><polygon fill="#fff" points="21,10 17.4,10.7 20.2,13 16.8,11.8 18,15.2 15.7,12.4 15,16 14.3,12.4 12,15.2 13.2,11.8 9.8,13 12.6,10.7 9,10 12.6,9.3 9.8,7 13.2,8.2 12,4.8 14.3,7.6 15,4 15.7,7.6 18,4.8 16.8,8.2 20.2,7 17.4,9.3"/><circle cx="15" cy="10" r="2.9" fill="#000095"/><circle cx="15" cy="10" r="2.2" fill="#fff"/></svg>',
-    '🇯🇵': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><circle cx="30" cy="20" r="12" fill="#BC002D"/></svg>',
-    '🇪🇸': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/></svg>',
-    '🇫🇷': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><rect width="20" height="40" fill="#0055A4"/><rect x="40" width="20" height="40" fill="#EF4135"/></svg>',
-    '🇩🇪': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#FFCE00"/><rect width="60" height="13.3" fill="#000"/><rect y="13.3" width="60" height="13.4" fill="#D00"/></svg>',
-    '🇻🇳': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#DA251D"/><polygon fill="#FF0" points="30,8 32.8,16.1 41.4,16.3 34.6,21.5 37.1,29.7 30,24.8 22.9,29.7 25.4,21.5 18.6,16.3 27.2,16.1"/></svg>',
-    '🇮🇩': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><rect width="60" height="20" fill="#E70011"/></svg>',
-    '🇹🇭': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#A51931"/><rect y="6.7" width="60" height="26.6" fill="#F4F5F8"/><rect y="13.3" width="60" height="13.4" fill="#2D2A4A"/></svg>',
-    '🇨🇳': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#DE2910"/><polygon fill="#FFDE00" points="10,4 11.4,8.1 15.7,8.2 12.3,10.7 13.5,14.9 10,12.4 6.5,14.9 7.7,10.7 4.3,8.2 8.6,8.1"/><circle cx="20" cy="4" r="1.5" fill="#FFDE00"/><circle cx="23" cy="8" r="1.5" fill="#FFDE00"/><circle cx="23" cy="13" r="1.5" fill="#FFDE00"/><circle cx="20" cy="17" r="1.5" fill="#FFDE00"/></svg>',
     '🇲🇳': '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#C4272F"/><rect x="20" width="20" height="40" fill="#015197"/><g fill="#F9CF02"><circle cx="10" cy="11" r="2.5"/><rect x="6" y="15" width="8" height="2"/><rect x="6" y="19" width="2" height="11"/><rect x="12" y="19" width="2" height="11"/><rect x="9" y="19" width="2" height="7"/><rect x="6" y="28" width="8" height="2"/></g></svg>'
   };
+  KS_LOCALE_DATA.forEach(l => { if (l.flag && l.flagSvg) _FLAG_SVG[l.flag] = l.flagSvg; });
   const _FLAG_KEYS = Object.keys(_FLAG_SVG);
   const _FLAG_RE = new RegExp(_FLAG_KEYS.join('|'), 'g');
 
@@ -175,18 +256,15 @@ const LangManager = (() => {
     if (!target) return;
     const picker = document.createElement('div');
     picker.className = 'lang-hero-picker';
+    // One button per LIVE locale, registry order (en first). Byte-identical
+    // to the nine hand-written buttons this replaced.
+    const btns = KS_LIVE.map(l =>
+      `        <button class="lang-hero-btn${_lang === l.code ? ' active' : ''}" onclick="LangManager.setLang('${l.code}')">${l.flag} ${l.native}</button>`
+    ).join('\n');
     picker.innerHTML = `
       <span class="lang-hero-label">Choose your language / 언어 선택 / 選擇語言</span>
       <div class="lang-hero-btns">
-        <button class="lang-hero-btn${_lang === 'en' ? ' active' : ''}" onclick="LangManager.setLang('en')">🇺🇸 English</button>
-        <button class="lang-hero-btn${_lang === 'zh-tw' ? ' active' : ''}" onclick="LangManager.setLang('zh-tw')">🇹🇼 繁體中文</button>
-        <button class="lang-hero-btn${_lang === 'ja' ? ' active' : ''}" onclick="LangManager.setLang('ja')">🇯🇵 日本語</button>
-        <button class="lang-hero-btn${_lang === 'es' ? ' active' : ''}" onclick="LangManager.setLang('es')">🇪🇸 Español</button>
-        <button class="lang-hero-btn${_lang === 'fr' ? ' active' : ''}" onclick="LangManager.setLang('fr')">🇫🇷 Français</button>
-        <button class="lang-hero-btn${_lang === 'de' ? ' active' : ''}" onclick="LangManager.setLang('de')">🇩🇪 Deutsch</button>
-        <button class="lang-hero-btn${_lang === 'vi' ? ' active' : ''}" onclick="LangManager.setLang('vi')">🇻🇳 Tiếng Việt</button>
-        <button class="lang-hero-btn${_lang === 'th' ? ' active' : ''}" onclick="LangManager.setLang('th')">🇹🇭 ไทย</button>
-        <button class="lang-hero-btn${_lang === 'id' ? ' active' : ''}" onclick="LangManager.setLang('id')">🇮🇩 Bahasa Indonesia</button>
+${btns}
       </div>`;
     target.prepend(picker);
   }
@@ -207,17 +285,9 @@ const LangManager = (() => {
     const overlay = document.createElement('div');
     overlay.id = 'lang-modal-overlay';
     overlay.className = 'lang-modal-overlay';
-    const langs = [
-      { code: 'en',    flag: '🇺🇸', name: 'English' },
-      { code: 'zh-tw', flag: '🇹🇼', name: '繁體中文' },
-      { code: 'ja',    flag: '🇯🇵', name: '日本語' },
-      { code: 'es',    flag: '🇪🇸', name: 'Español' },
-      { code: 'fr',    flag: '🇫🇷', name: 'Français' },
-      { code: 'de',    flag: '🇩🇪', name: 'Deutsch' },
-      { code: 'vi',    flag: '🇻🇳', name: 'Tiếng Việt' },
-      { code: 'th',    flag: '🇹🇭', name: 'ไทย' },
-      { code: 'id',    flag: '🇮🇩', name: 'Bahasa Indonesia' }
-    ];
+    // LIVE locales only, registry order (en first) — 'planned' locales must
+    // never appear in the picker.
+    const langs = KS_LIVE.map(l => ({ code: l.code, flag: l.flag, name: l.native }));
     overlay.innerHTML = `
       <div class="lang-modal" role="dialog" aria-modal="true" aria-label="Select language">
         <p class="lang-modal-title">Select Language</p>

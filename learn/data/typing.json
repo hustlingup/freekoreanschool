@@ -16,7 +16,8 @@
       "name_de": "Die Tastatur kennenlernen",
       "name_vi": "Làm quen với bàn phím",
       "name_th": "รู้จักแป้นพิมพ์",
-      "name_id": "Mengenal Papan Ketik"
+      "name_id": "Mengenal Papan Ketik",
+      "name_pt_br": "Conheça o Teclado"
     },
     {
       "id": 2,
@@ -32,7 +33,8 @@
       "name_de": "Konsonantentasten",
       "name_vi": "Phím phụ âm",
       "name_th": "ปุ่มพยัญชนะ",
-      "name_id": "Tombol Konsonan"
+      "name_id": "Tombol Konsonan",
+      "name_pt_br": "Teclas de Consoantes"
     },
     {
       "id": 3,
@@ -48,7 +50,8 @@
       "name_de": "Vokaltasten",
       "name_vi": "Phím nguyên âm",
       "name_th": "ปุ่มสระ",
-      "name_id": "Tombol Vokal"
+      "name_id": "Tombol Vokal",
+      "name_pt_br": "Teclas de Vogais"
     },
     {
       "id": 4,
@@ -64,7 +67,8 @@
       "name_de": "Umschalttasten (Shift)",
       "name_vi": "Phím Shift",
       "name_th": "ปุ่ม Shift",
-      "name_id": "Tombol Shift"
+      "name_id": "Tombol Shift",
+      "name_pt_br": "Teclas Shift"
     },
     {
       "id": 5,
@@ -80,7 +84,8 @@
       "name_de": "Silben tippen",
       "name_vi": "Gõ âm tiết",
       "name_th": "พิมพ์พยางค์",
-      "name_id": "Mengetik Suku Kata"
+      "name_id": "Mengetik Suku Kata",
+      "name_pt_br": "Digitar Sílabas"
     },
     {
       "id": 6,
@@ -96,7 +101,8 @@
       "name_de": "Wörter tippen",
       "name_vi": "Gõ từ",
       "name_th": "พิมพ์คำ",
-      "name_id": "Mengetik Kata"
+      "name_id": "Mengetik Kata",
+      "name_pt_br": "Digitar Palavras"
     }
   ],
   "steps": [
@@ -221,6 +227,19 @@
         "icon": "⌨️",
         "label": "Tangan kiri, tangan kanan",
         "text": "Karena konsonan selalu di kiri dan vokal selalu di kanan, mengetik bahasa Korea menjadi irama kiri-kanan-kiri-kanan yang tetap. Suku kata Korea disusun dengan cara yang sama — konsonan lalu vokal — sehingga tanganmu akhirnya meniru bentuk bahasanya."
+      },
+      "title_pt_br": "O Teclado de 2 Conjuntos (두벌식, Dubeolsik)",
+      "body_pt_br": "Quase todo mundo na Coreia digita no mesmo layout: o teclado de 2 conjuntos, chamado 두벌식 (dubeolsik). Ele é o padrão nacional desde 1985. “2 conjuntos” significa que as letras vêm em exatamente dois grupos — consoantes e vogais — e cada grupo fica em um lado do teclado. Você nunca digita um bloco silábico inteiro de uma só vez. Você digita as letras uma de cada vez, na ordem em que as pronunciaria, e o computador monta o bloco para você.",
+      "rules_pt_br": [
+        "As consoantes ficam sob a sua mão ESQUERDA — ㅂ ㅈ ㄷ ㄱ ㅅ na fileira superior, ㅁ ㄴ ㅇ ㄹ ㅎ na fileira base, ㅋ ㅌ ㅊ ㅍ na fileira inferior.",
+        "As vogais ficam sob a sua mão DIREITA — ㅛ ㅕ ㅑ ㅐ ㅔ na fileira superior, ㅗ ㅓ ㅏ ㅣ na fileira base, ㅠ ㅜ ㅡ na fileira inferior.",
+        "O Shift dá acesso às dobradas — segure Shift e as cinco consoantes tensas ㅃ ㅉ ㄸ ㄲ ㅆ aparecem em ㅂ ㅈ ㄷ ㄱ ㅅ, além das duas vogais largas ㅒ ㅖ em ㅐ ㅔ.",
+        "Esse é o layout completo: 26 teclas simples e 7 com Shift. Aprenda 33 teclas e você conseguirá escrever qualquer palavra coreana que existir."
+      ],
+      "tip_pt_br": {
+        "icon": "⌨️",
+        "label": "Mão esquerda, mão direita",
+        "text": "Como as consoantes ficam sempre à esquerda e as vogais sempre à direita, digitar em coreano vira um ritmo constante de esquerda-direita-esquerda-direita. As sílabas coreanas são construídas da mesma forma — consoante, depois vogal — então suas mãos acabam copiando a forma do idioma."
       }
     },
     {
@@ -344,6 +363,19 @@
         "icon": "💡",
         "label": "Tak perlu memasang apa pun",
         "text": "Kamu tidak perlu papan ketik Korea di komputer atau ponsel untuk mengerjakan pelajaran ini. Papan ketik di halaman ini mengerjakan semuanya — tekan tombol pada papan ketikmu sendiri, atau ketuk tombol di layar. Langkah 28 menunjukkan cara menambahkan papan ketik Korea sungguhan ke perangkatmu untuk dipakai di tempat lain."
+      },
+      "title_pt_br": "Como as Sílabas se Formam",
+      "body_pt_br": "A escrita coreana empilha letras em blocos quadrados, mas você não precisa desenhar esses blocos. Basta digitar as letras em ordem e elas se encaixam sozinhas. Digite ㅎ, depois ㅏ, depois ㄴ, e 한 aparece uma parte de cada vez: ㅎ → 하 → 한. Nada mais para pressionar, sem menu, sem tecla de confirmação.",
+      "rules_pt_br": [
+        "Digite as letras na ordem de fala: a consoante inicial, depois a vogal e, se a sílaba tiver, a consoante final (받침).",
+        "Um bloco se fecha sozinho assim que a próxima letra não couber mais nele. Digite ㄱ ㅏ ㅁ ㅏ e você obtém 가마, não 감아 — a segunda ㅏ precisa de uma consoante na frente, então o ㅁ pula para a frente para começar um novo bloco.",
+        "Esse salto é chamado de roubo de 받침, e é exatamente nisso que os digitadores coreanos confiam. Digite ㄱ ㅏ ㄱ ㅅ ㅏ e você obtém 각사: 가 → 각 → 갃 → 각사, com o ㅅ sendo puxado do 받침 duplo no instante em que o ㅏ chega.",
+        "O Backspace remove uma letra, não um bloco inteiro. De 각 vai para 가, depois para ㄱ, depois para nada."
+      ],
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Nada para instalar",
+        "text": "Você não precisa de um teclado coreano no seu computador ou celular para fazer esta lição. O teclado desta página faz todo o trabalho — pressione as teclas do seu próprio teclado ou toque nas teclas na tela. A etapa 28 mostra como adicionar um teclado coreano de verdade aos seus dispositivos para usar em qualquer outro lugar."
       }
     },
     {
@@ -381,7 +413,10 @@
       "instruction_de": "Drücke ㅁ und dann ㄴ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅁ rồi ㄴ, mỗi phím ba lần.",
       "instruction_th": "กด ㅁ แล้วตามด้วย ㄴ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅁ lalu ㄴ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅁ lalu ㄴ, masing-masing tiga kali.",
+      "title_pt_br": "ㅁ e ㄴ — a fileira base esquerda",
+      "instruction_pt_br": "Pressione ㅁ e depois ㄴ, três vezes cada.",
+      "tip_pt_br": "Apoie sua mão esquerda na fileira base: A S D F. O ㅁ fica em A, sob o dedo mindinho, e o ㄴ fica em S, sob o dedo anelar. Você nunca precisa mover a mão para essas duas."
     },
     {
       "id": 4,
@@ -418,7 +453,10 @@
       "instruction_de": "Drücke ㅇ und dann ㄹ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅇ rồi ㄹ, mỗi phím ba lần.",
       "instruction_th": "กด ㅇ แล้วตามด้วย ㄹ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅇ lalu ㄹ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅇ lalu ㄹ, masing-masing tiga kali.",
+      "title_pt_br": "ㅇ e ㄹ — ainda na fileira base",
+      "instruction_pt_br": "Pressione ㅇ e depois ㄹ, três vezes cada.",
+      "tip_pt_br": "Mantenha a mesma posição da mão. O ㅇ fica em D, sob o dedo médio, e o ㄹ fica em F, sob o dedo indicador — F é a tecla com uma pequena saliência, então você sempre consegue encontrá-la sem olhar."
     },
     {
       "id": 5,
@@ -455,7 +493,10 @@
       "instruction_de": "Drücke ㅎ und dann ㄱ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅎ rồi ㄱ, mỗi phím ba lần.",
       "instruction_th": "กด ㅎ แล้วตามด้วย ㄱ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅎ lalu ㄱ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅎ lalu ㄱ, masing-masing tiga kali.",
+      "title_pt_br": "ㅎ e ㄱ — alcances do dedo indicador",
+      "instruction_pt_br": "Pressione ㅎ e depois ㄱ, três vezes cada.",
+      "tip_pt_br": "As duas são teclas do dedo indicador. O ㅎ fica em G — permaneça na fileira base e alcance uma tecla à direita de F. O ㄱ fica em R, uma fileira acima de F. O ㄱ é a consoante mais comum do coreano, então vale a pena se sentir confortável com ela."
     },
     {
       "id": 6,
@@ -492,7 +533,10 @@
       "instruction_de": "Drücke ㅂ und dann ㅈ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅂ rồi ㅈ, mỗi phím ba lần.",
       "instruction_th": "กด ㅂ แล้วตามด้วย ㅈ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅂ lalu ㅈ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅂ lalu ㅈ, masing-masing tiga kali.",
+      "title_pt_br": "ㅂ e ㅈ — fileira superior, dedos externos",
+      "instruction_pt_br": "Pressione ㅂ e depois ㅈ, três vezes cada.",
+      "tip_pt_br": "Suba sua mão esquerda uma fileira. O ㅂ fica em Q, bem acima de A, sob o dedo mindinho. O ㅈ fica em W, bem acima de S, sob o dedo anelar. Os mesmos dedos de ㅁ e ㄴ — só que uma fileira acima."
     },
     {
       "id": 7,
@@ -529,7 +573,10 @@
       "instruction_de": "Drücke ㄷ und dann ㅅ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㄷ rồi ㅅ, mỗi phím ba lần.",
       "instruction_th": "กด ㄷ แล้วตามด้วย ㅅ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㄷ lalu ㅅ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㄷ lalu ㅅ, masing-masing tiga kali.",
+      "title_pt_br": "ㄷ e ㅅ — fileira superior, dedos internos",
+      "instruction_pt_br": "Pressione ㄷ e depois ㅅ, três vezes cada.",
+      "tip_pt_br": "Ainda na fileira superior. O ㄷ fica em E, acima de D, sob o dedo médio. O ㅅ fica em T — um alcance do dedo indicador para cima e para a direita, acima de G. O ㅅ é muito comum como 받침, então vai aparecer bastante."
     },
     {
       "id": 8,
@@ -566,7 +613,10 @@
       "instruction_de": "Drücke ㅋ und dann ㅌ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅋ rồi ㅌ, mỗi phím ba lần.",
       "instruction_th": "กด ㅋ แล้วตามด้วย ㅌ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅋ lalu ㅌ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅋ lalu ㅌ, masing-masing tiga kali.",
+      "title_pt_br": "ㅋ e ㅌ — fileira inferior, dedos externos",
+      "instruction_pt_br": "Pressione ㅋ e depois ㅌ, três vezes cada.",
+      "tip_pt_br": "Desça sua mão esquerda uma fileira abaixo da base. O ㅋ fica em Z, sob o dedo mindinho, e o ㅌ fica em X, sob o dedo anelar. Esses são o par aspirado de ㄱ e ㄷ, e ficam no canto menos usado porque o coreano os usa com menos frequência."
     },
     {
       "id": 9,
@@ -603,7 +653,10 @@
       "instruction_de": "Drücke ㅊ und dann ㅍ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅊ rồi ㅍ, mỗi phím ba lần.",
       "instruction_th": "กด ㅊ แล้วตามด้วย ㅍ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅊ lalu ㅍ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅊ lalu ㅍ, masing-masing tiga kali.",
+      "title_pt_br": "ㅊ e ㅍ — fileira inferior, dedos internos",
+      "instruction_pt_br": "Pressione ㅊ e depois ㅍ, três vezes cada.",
+      "tip_pt_br": "Mesma fileira inferior. O ㅊ fica em C, sob o dedo médio, e o ㅍ fica em V, sob o dedo indicador. Essas são as 14 consoantes básicas: três fileiras, só com a mão esquerda."
     },
     {
       "id": 10,
@@ -640,7 +693,10 @@
       "instruction_de": "Drücke ㅗ und dann ㅓ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅗ rồi ㅓ, mỗi phím ba lần.",
       "instruction_th": "กด ㅗ แล้วตามด้วย ㅓ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅗ lalu ㅓ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅗ lalu ㅓ, masing-masing tiga kali.",
+      "title_pt_br": "ㅗ e ㅓ — a fileira base direita",
+      "instruction_pt_br": "Pressione ㅗ e depois ㅓ, três vezes cada.",
+      "tip_pt_br": "Agora a mão direita. Apoie-a em J K L e alcance. O ㅗ fica em H, um alcance do dedo indicador para a esquerda. O ㅓ fica em J, a tecla base bem sob o dedo indicador — J também tem uma saliência."
     },
     {
       "id": 11,
@@ -677,7 +733,10 @@
       "instruction_de": "Drücke ㅏ und dann ㅣ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅏ rồi ㅣ, mỗi phím ba lần.",
       "instruction_th": "กด ㅏ แล้วตามด้วย ㅣ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅏ lalu ㅣ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅏ lalu ㅣ, masing-masing tiga kali.",
+      "title_pt_br": "ㅏ e ㅣ — nenhum movimento",
+      "instruction_pt_br": "Pressione ㅏ e depois ㅣ, três vezes cada.",
+      "tip_pt_br": "Essas duas nunca se movem. O ㅏ fica em K, sob o dedo médio, e o ㅣ fica em L, sob o dedo anelar. O ㅏ é a vogal mais comum do coreano, e já está bem sob um dedo em repouso."
     },
     {
       "id": 12,
@@ -714,7 +773,10 @@
       "instruction_de": "Drücke ㅛ und dann ㅕ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅛ rồi ㅕ, mỗi phím ba lần.",
       "instruction_th": "กด ㅛ แล้วตามด้วย ㅕ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅛ lalu ㅕ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅛ lalu ㅕ, masing-masing tiga kali.",
+      "title_pt_br": "ㅛ e ㅕ — fileira superior, dedo indicador",
+      "instruction_pt_br": "Pressione ㅛ e depois ㅕ, três vezes cada.",
+      "tip_pt_br": "Suba sua mão direita uma fileira. As duas são teclas do dedo indicador: o ㅛ fica em Y, um alcance para cima e para a esquerda, e o ㅕ fica em U, bem acima de J. Note o padrão — as vogais com y ㅛ ㅕ ficam uma fileira acima de suas parceiras simples ㅗ ㅓ."
     },
     {
       "id": 13,
@@ -751,7 +813,10 @@
       "instruction_de": "Drücke ㅑ und dann ㅐ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅑ rồi ㅐ, mỗi phím ba lần.",
       "instruction_th": "กด ㅑ แล้วตามด้วย ㅐ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅑ lalu ㅐ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅑ lalu ㅐ, masing-masing tiga kali.",
+      "title_pt_br": "ㅑ e ㅐ — fileira superior, médio e anelar",
+      "instruction_pt_br": "Pressione ㅑ e depois ㅐ, três vezes cada.",
+      "tip_pt_br": "Ainda na fileira superior. O ㅑ fica em I, bem acima de K, sob o dedo médio — mais uma vez, uma fileira acima da sua parceira simples ㅏ. O ㅐ fica em O, sob o dedo anelar."
     },
     {
       "id": 14,
@@ -787,7 +852,10 @@
       "instruction_de": "Drücke ㅔ dreimal.",
       "instruction_vi": "Nhấn ㅔ ba lần.",
       "instruction_th": "กด ㅔ สามครั้ง",
-      "instruction_id": "Tekan ㅔ tiga kali."
+      "instruction_id": "Tekan ㅔ tiga kali.",
+      "title_pt_br": "ㅔ — o canto mais distante",
+      "instruction_pt_br": "Pressione ㅔ três vezes.",
+      "tip_pt_br": "O ㅔ fica em P, a tecla da fileira superior sob o dedo mindinho direito — a vogal mais distante da fileira base. ㅐ e ㅔ soam quase iguais no coreano moderno, e ficam lado a lado em O e P, então aprenda as duas como um par."
     },
     {
       "id": 15,
@@ -825,7 +893,10 @@
       "instruction_de": "Drücke ㅠ, dann ㅜ, dann ㅡ, jeweils dreimal.",
       "instruction_vi": "Nhấn ㅠ, rồi ㅜ, rồi ㅡ, mỗi phím ba lần.",
       "instruction_th": "กด ㅠ แล้ว ㅜ แล้ว ㅡ อย่างละสามครั้ง",
-      "instruction_id": "Tekan ㅠ, lalu ㅜ, lalu ㅡ, masing-masing tiga kali."
+      "instruction_id": "Tekan ㅠ, lalu ㅜ, lalu ㅡ, masing-masing tiga kali.",
+      "title_pt_br": "ㅠ, ㅜ e ㅡ — vogais da fileira inferior",
+      "instruction_pt_br": "Pressione ㅠ, depois ㅜ, depois ㅡ, três vezes cada.",
+      "tip_pt_br": "Três teclas seguidas na fileira inferior: ㅠ em B, ㅜ em N, ㅡ em M. B é um alcance para o dedo indicador ESQUERDO, enquanto N e M ficam sob o indicador direito. O ㅡ em M importa mais do que parece — é a vogal presente em 은, 는, 를 e na maioria das outras terminações gramaticais."
     },
     {
       "id": 16,
@@ -863,7 +934,10 @@
       "instruction_de": "Halte Shift und drücke ㅃ, dann ㅉ, jeweils dreimal.",
       "instruction_vi": "Giữ Shift và nhấn ㅃ, rồi ㅉ, mỗi phím ba lần.",
       "instruction_th": "กด Shift ค้างไว้ แล้วกด ㅃ ตามด้วย ㅉ อย่างละสามครั้ง",
-      "instruction_id": "Tahan Shift lalu tekan ㅃ, kemudian ㅉ, masing-masing tiga kali."
+      "instruction_id": "Tahan Shift lalu tekan ㅃ, kemudian ㅉ, masing-masing tiga kali.",
+      "title_pt_br": "ㅃ e ㅉ — segure o Shift",
+      "instruction_pt_br": "Segure o Shift e pressione ㅃ, depois ㅉ, três vezes cada.",
+      "tip_pt_br": "As cinco consoantes tensas são as teclas simples com o Shift pressionado. O ㅃ é Shift + Q (onde fica o ㅂ) e o ㅉ é Shift + W (onde fica o ㅈ). Como as duas são teclas da mão esquerda, segure o Shift da DIREITA com o dedo mindinho direito enquanto a mão esquerda digita — o teclado destaca qual Shift usar. Em uma tela sensível ao toque, toque em ⇧ primeiro — ele fica pressionado por exatamente uma tecla."
     },
     {
       "id": 17,
@@ -902,7 +976,10 @@
       "instruction_de": "Halte Shift und drücke ㄸ, dann ㄲ, dann ㅆ, jeweils dreimal.",
       "instruction_vi": "Giữ Shift và nhấn ㄸ, rồi ㄲ, rồi ㅆ, mỗi phím ba lần.",
       "instruction_th": "กด Shift ค้างไว้ แล้วกด ㄸ ตามด้วย ㄲ แล้ว ㅆ อย่างละสามครั้ง",
-      "instruction_id": "Tahan Shift lalu tekan ㄸ, kemudian ㄲ, lalu ㅆ, masing-masing tiga kali."
+      "instruction_id": "Tahan Shift lalu tekan ㄸ, kemudian ㄲ, lalu ㅆ, masing-masing tiga kali.",
+      "title_pt_br": "ㄸ, ㄲ e ㅆ — as outras três dobradas",
+      "instruction_pt_br": "Segure o Shift e pressione ㄸ, depois ㄲ, depois ㅆ, três vezes cada.",
+      "tip_pt_br": "Mesma regra, mais três teclas: ㄸ é Shift + E, ㄲ é Shift + R, ㅆ é Shift + T — todas teclas da mão esquerda, então de novo segure o Shift DIREITO com o dedo mindinho direito. Essas três aparecem o tempo todo — 진짜, 꼭, 있어요 — então vale a pena treinar esse reflexo do Shift agora."
     },
     {
       "id": 18,
@@ -940,7 +1017,10 @@
       "instruction_de": "Halte Shift und drücke ㅒ, dann ㅖ, jeweils dreimal.",
       "instruction_vi": "Giữ Shift và nhấn ㅒ, rồi ㅖ, mỗi phím ba lần.",
       "instruction_th": "กด Shift ค้างไว้ แล้วกด ㅒ ตามด้วย ㅖ อย่างละสามครั้ง",
-      "instruction_id": "Tahan Shift lalu tekan ㅒ, kemudian ㅖ, masing-masing tiga kali."
+      "instruction_id": "Tahan Shift lalu tekan ㅒ, kemudian ㅖ, masing-masing tiga kali.",
+      "title_pt_br": "ㅒ e ㅖ — vogais com Shift",
+      "instruction_pt_br": "Segure o Shift e pressione ㅒ, depois ㅖ, três vezes cada.",
+      "tip_pt_br": "O Shift também funciona no lado das vogais, mas só em duas teclas: ㅒ é Shift + O (acima de ㅐ) e ㅖ é Shift + P (acima de ㅔ). São teclas da mão direita, então desta vez use o Shift ESQUERDO com o dedo mindinho esquerdo — sempre a mão oposta à letra. Qualquer outra vogal que você precisar é uma tecla simples ou duas teclas simples digitadas uma depois da outra."
     },
     {
       "id": 19,
@@ -1020,7 +1100,10 @@
       "instruction_de": "Ein Konsonant erscheint — drücke seine Taste. 20 Buchstaben am Stück.",
       "instruction_vi": "Một phụ âm xuất hiện — nhấn phím của nó. 20 chữ liên tiếp.",
       "instruction_th": "พยัญชนะจะปรากฏขึ้น — กดปุ่มของตัวนั้น 20 ตัวติดต่อกัน",
-      "instruction_id": "Sebuah konsonan muncul — tekan tombolnya. 20 huruf berturut-turut."
+      "instruction_id": "Sebuah konsonan muncul — tekan tombolnya. 20 huruf berturut-turut.",
+      "title_pt_br": "Exercício de Consoantes",
+      "instruction_pt_br": "Uma consoante aparece — pressione a tecla dela. 20 letras seguidas.",
+      "tip_pt_br": "Busque precisão, não velocidade. Devagar e correto cria o hábito certo; rápido e errado cria um hábito que você vai ter que desaprender depois. A velocidade vem sozinha assim que seus dedos param de procurar as teclas."
     },
     {
       "id": 20,
@@ -1088,7 +1171,10 @@
       "instruction_de": "Ein Vokal erscheint — drücke seine Taste. 15 Buchstaben am Stück.",
       "instruction_vi": "Một nguyên âm xuất hiện — nhấn phím của nó. 15 chữ liên tiếp.",
       "instruction_th": "สระจะปรากฏขึ้น — กดปุ่มของตัวนั้น 15 ตัวติดต่อกัน",
-      "instruction_id": "Sebuah vokal muncul — tekan tombolnya. 15 huruf berturut-turut."
+      "instruction_id": "Sebuah vokal muncul — tekan tombolnya. 15 huruf berturut-turut.",
+      "title_pt_br": "Exercício de Vogais",
+      "instruction_pt_br": "Uma vogal aparece — pressione a tecla dela. 15 letras seguidas.",
+      "tip_pt_br": "Todas essas ficam sob a sua mão direita. Se você perceber que está olhando para baixo, tente nomear o dedo antes de pressionar — indicador, médio, anelar, mindinho."
     },
     {
       "id": 21,
@@ -1146,7 +1232,10 @@
       "instruction_de": "Tippe jede Silbe: erst ein Konsonant, dann ein Vokal. Sie setzt sich von selbst zusammen.",
       "instruction_vi": "Gõ từng âm tiết: một phụ âm rồi một nguyên âm. Âm tiết tự hoàn chỉnh.",
       "instruction_th": "พิมพ์แต่ละพยางค์: พยัญชนะหนึ่งตัว แล้วตามด้วยสระหนึ่งตัว พยางค์จะประกอบเองอัตโนมัติ",
-      "instruction_id": "Ketik setiap suku kata: satu konsonan, lalu satu vokal. Suku kata terbentuk sendiri."
+      "instruction_id": "Ketik setiap suku kata: satu konsonan, lalu satu vokal. Suku kata terbentuk sendiri.",
+      "title_pt_br": "Sílabas Simples",
+      "instruction_pt_br": "Digite cada sílaba: uma consoante, depois uma vogal. Ela se completa sozinha.",
+      "tip_pt_br": "Duas teclas cada, e sempre mão esquerda seguida de mão direita. Não existe uma tecla para “finalizar” o bloco — no momento em que a vogal cai no lugar, a sílaba está pronta e o exercício avança."
     },
     {
       "id": 22,
@@ -1204,7 +1293,10 @@
       "instruction_de": "Tippe jede Silbe: Konsonant, Vokal, dann der Schlusskonsonant darunter.",
       "instruction_vi": "Gõ từng âm tiết: phụ âm, nguyên âm, rồi phụ âm cuối nằm bên dưới.",
       "instruction_th": "พิมพ์แต่ละพยางค์: พยัญชนะ สระ แล้วตามด้วยตัวสะกดที่อยู่ด้านล่าง",
-      "instruction_id": "Ketik setiap suku kata: konsonan, vokal, lalu konsonan akhir di bawahnya."
+      "instruction_id": "Ketik setiap suku kata: konsonan, vokal, lalu konsonan akhir di bawahnya.",
+      "title_pt_br": "Sílabas Com 받침",
+      "instruction_pt_br": "Digite cada sílaba: consoante, vogal e, depois, a consoante final embaixo.",
+      "tip_pt_br": "Três teclas cada: esquerda, direita, esquerda. Observe o bloco mudar de forma quando a terceira letra cai no lugar — 하 vira 한 no instante em que você pressiona ㄴ."
     },
     {
       "id": 23,
@@ -1262,7 +1354,10 @@
       "instruction_de": "Diese Vokale bestehen aus zwei Tasten, nacheinander getippt.",
       "instruction_vi": "Những nguyên âm này gồm hai phím, gõ lần lượt.",
       "instruction_th": "สระเหล่านี้ใช้สองปุ่ม กดต่อกันทีละปุ่ม",
-      "instruction_id": "Vokal-vokal ini terdiri dari dua tombol, ditekan berurutan."
+      "instruction_id": "Vokal-vokal ini terdiri dari dua tombol, ditekan berurutan.",
+      "title_pt_br": "Vogais Combinadas",
+      "instruction_pt_br": "Essas vogais são duas teclas, digitadas uma depois da outra.",
+      "tip_pt_br": "O ㅘ não tem tecla própria — você digita ㅗ e depois ㅏ, e as duas se combinam. Mesma ideia para ㅝ (ㅜ + ㅓ), ㅢ (ㅡ + ㅣ), ㅙ (ㅗ + ㅐ) e ㅟ (ㅜ + ㅣ). Só ㅐ ㅔ ㅒ ㅖ têm tecla própria."
     },
     {
       "id": 24,
@@ -1283,7 +1378,8 @@
           "meaning_de": "Wasser",
           "meaning_vi": "nước",
           "meaning_th": "น้ำ",
-          "meaning_id": "air"
+          "meaning_id": "air",
+          "meaning_pt_br": "água"
         },
         {
           "ko": "밥",
@@ -1296,7 +1392,8 @@
           "meaning_de": "Reis / Mahlzeit",
           "meaning_vi": "cơm / bữa ăn",
           "meaning_th": "ข้าว / อาหาร",
-          "meaning_id": "nasi / makanan"
+          "meaning_id": "nasi / makanan",
+          "meaning_pt_br": "arroz, uma refeição"
         },
         {
           "ko": "집",
@@ -1309,7 +1406,8 @@
           "meaning_de": "Haus",
           "meaning_vi": "nhà",
           "meaning_th": "บ้าน",
-          "meaning_id": "rumah"
+          "meaning_id": "rumah",
+          "meaning_pt_br": "casa"
         },
         {
           "ko": "코",
@@ -1322,7 +1420,8 @@
           "meaning_de": "Nase",
           "meaning_vi": "mũi",
           "meaning_th": "จมูก",
-          "meaning_id": "hidung"
+          "meaning_id": "hidung",
+          "meaning_pt_br": "nariz"
         },
         {
           "ko": "손",
@@ -1335,7 +1434,8 @@
           "meaning_de": "Hand",
           "meaning_vi": "bàn tay",
           "meaning_th": "มือ",
-          "meaning_id": "tangan"
+          "meaning_id": "tangan",
+          "meaning_pt_br": "mão"
         },
         {
           "ko": "눈",
@@ -1348,7 +1448,8 @@
           "meaning_de": "Auge / Schnee",
           "meaning_vi": "mắt / tuyết",
           "meaning_th": "ตา / หิมะ",
-          "meaning_id": "mata / salju"
+          "meaning_id": "mata / salju",
+          "meaning_pt_br": "olho, neve"
         },
         {
           "ko": "돈",
@@ -1361,7 +1462,8 @@
           "meaning_de": "Geld",
           "meaning_vi": "tiền",
           "meaning_th": "เงิน",
-          "meaning_id": "uang"
+          "meaning_id": "uang",
+          "meaning_pt_br": "dinheiro"
         },
         {
           "ko": "책",
@@ -1374,7 +1476,8 @@
           "meaning_de": "Buch",
           "meaning_vi": "sách",
           "meaning_th": "หนังสือ",
-          "meaning_id": "buku"
+          "meaning_id": "buku",
+          "meaning_pt_br": "livro"
         },
         {
           "ko": "발",
@@ -1387,7 +1490,8 @@
           "meaning_de": "Fuß",
           "meaning_vi": "bàn chân",
           "meaning_th": "เท้า",
-          "meaning_id": "telapak kaki"
+          "meaning_id": "telapak kaki",
+          "meaning_pt_br": "pé"
         }
       ],
       "target": {
@@ -1417,7 +1521,10 @@
       "instruction_de": "Tippe das Wort und drücke dann die Leertaste, um es abzuschicken.",
       "instruction_vi": "Gõ từ, rồi nhấn phím cách để gửi.",
       "instruction_th": "พิมพ์คำ แล้วกด Space เพื่อส่ง",
-      "instruction_id": "Ketik katanya, lalu tekan Spasi untuk mengirim."
+      "instruction_id": "Ketik katanya, lalu tekan Spasi untuk mengirim.",
+      "title_pt_br": "Palavras de Uma Sílaba",
+      "instruction_pt_br": "Digite a palavra e pressione Espaço para enviá-la.",
+      "tip_pt_br": "O modo de palavra é diferente do exercício de sílabas: nada avança até você pressionar Espaço. Essa é a sua tecla de envio. Se você errar ao digitar, o Backspace remove uma letra de cada vez, para que você possa corrigir antes de enviar."
     },
     {
       "id": 25,
@@ -1438,7 +1545,8 @@
           "meaning_de": "Korea",
           "meaning_vi": "Hàn Quốc",
           "meaning_th": "เกาหลี",
-          "meaning_id": "Korea"
+          "meaning_id": "Korea",
+          "meaning_pt_br": "Coreia"
         },
         {
           "ko": "사랑",
@@ -1451,7 +1559,8 @@
           "meaning_de": "Liebe",
           "meaning_vi": "tình yêu",
           "meaning_th": "ความรัก",
-          "meaning_id": "cinta"
+          "meaning_id": "cinta",
+          "meaning_pt_br": "amor"
         },
         {
           "ko": "친구",
@@ -1464,7 +1573,8 @@
           "meaning_de": "Freund/in",
           "meaning_vi": "bạn bè",
           "meaning_th": "เพื่อน",
-          "meaning_id": "teman"
+          "meaning_id": "teman",
+          "meaning_pt_br": "amigo(a)"
         },
         {
           "ko": "김치",
@@ -1477,7 +1587,8 @@
           "meaning_de": "Kimchi",
           "meaning_vi": "kimchi",
           "meaning_th": "กิมจิ",
-          "meaning_id": "kimchi"
+          "meaning_id": "kimchi",
+          "meaning_pt_br": "kimchi"
         },
         {
           "ko": "가족",
@@ -1490,7 +1601,8 @@
           "meaning_de": "Familie",
           "meaning_vi": "gia đình",
           "meaning_th": "ครอบครัว",
-          "meaning_id": "keluarga"
+          "meaning_id": "keluarga",
+          "meaning_pt_br": "família"
         },
         {
           "ko": "사람",
@@ -1503,7 +1615,8 @@
           "meaning_de": "Person",
           "meaning_vi": "người",
           "meaning_th": "คน",
-          "meaning_id": "orang"
+          "meaning_id": "orang",
+          "meaning_pt_br": "pessoa"
         },
         {
           "ko": "학교",
@@ -1516,7 +1629,8 @@
           "meaning_de": "Schule",
           "meaning_vi": "trường học",
           "meaning_th": "โรงเรียน",
-          "meaning_id": "sekolah"
+          "meaning_id": "sekolah",
+          "meaning_pt_br": "escola"
         },
         {
           "ko": "커피",
@@ -1529,7 +1643,8 @@
           "meaning_de": "Kaffee",
           "meaning_vi": "cà phê",
           "meaning_th": "กาแฟ",
-          "meaning_id": "kopi"
+          "meaning_id": "kopi",
+          "meaning_pt_br": "café"
         }
       ],
       "target": {
@@ -1559,7 +1674,10 @@
       "instruction_de": "Tippe das ganze Wort und drücke dann die Leertaste.",
       "instruction_vi": "Gõ trọn từ, rồi nhấn phím cách.",
       "instruction_th": "พิมพ์คำให้ครบ แล้วกด Space",
-      "instruction_id": "Ketik seluruh katanya, lalu tekan Spasi."
+      "instruction_id": "Ketik seluruh katanya, lalu tekan Spasi.",
+      "title_pt_br": "Palavras de Duas Sílabas",
+      "instruction_pt_br": "Digite a palavra inteira e depois pressione Espaço.",
+      "tip_pt_br": "Continue digitando a palavra inteira sem parar — não faça pausas entre as sílabas. 한국 são seis teclas seguidas de uma vez: ㅎ ㅏ ㄴ ㄱ ㅜ ㄱ. Os blocos se dividem sozinhos."
     },
     {
       "id": 26,
@@ -1580,7 +1698,8 @@
           "meaning_de": "Hallo",
           "meaning_vi": "xin chào",
           "meaning_th": "สวัสดี",
-          "meaning_id": "halo"
+          "meaning_id": "halo",
+          "meaning_pt_br": "olá"
         },
         {
           "ko": "감사합니다",
@@ -1593,7 +1712,8 @@
           "meaning_de": "Danke",
           "meaning_vi": "cảm ơn",
           "meaning_th": "ขอบคุณ",
-          "meaning_id": "terima kasih"
+          "meaning_id": "terima kasih",
+          "meaning_pt_br": "obrigado(a)"
         },
         {
           "ko": "괜찮아요",
@@ -1606,7 +1726,8 @@
           "meaning_de": "alles in Ordnung",
           "meaning_vi": "không sao",
           "meaning_th": "ไม่เป็นไร",
-          "meaning_id": "tidak apa-apa"
+          "meaning_id": "tidak apa-apa",
+          "meaning_pt_br": "tudo bem"
         },
         {
           "ko": "반갑습니다",
@@ -1619,7 +1740,8 @@
           "meaning_de": "freut mich",
           "meaning_vi": "rất vui được gặp bạn",
           "meaning_th": "ยินดีที่ได้รู้จัก",
-          "meaning_id": "senang bertemu"
+          "meaning_id": "senang bertemu",
+          "meaning_pt_br": "prazer em conhecer você"
         }
       ],
       "target": {
@@ -1649,7 +1771,10 @@
       "instruction_de": "Tippe die ganze Wendung und drücke dann die Leertaste.",
       "instruction_vi": "Gõ trọn cụm từ, rồi nhấn phím cách.",
       "instruction_th": "พิมพ์วลีให้ครบ แล้วกด Space",
-      "instruction_id": "Ketik seluruh frasanya, lalu tekan Spasi."
+      "instruction_id": "Ketik seluruh frasanya, lalu tekan Spasi.",
+      "title_pt_br": "Frases do Dia a Dia",
+      "instruction_pt_br": "Digite a frase inteira e depois pressione Espaço.",
+      "tip_pt_br": "Essas são as frases educadas que você mais vai digitar em coreano, então vale a pena transformá-las em memória muscular. Vá sílaba por sílaba e deixe os blocos se formarem; não há prêmio por se apressar."
     },
     {
       "id": 27,
@@ -1670,7 +1795,8 @@
           "meaning_de": "Wasser",
           "meaning_vi": "nước",
           "meaning_th": "น้ำ",
-          "meaning_id": "air"
+          "meaning_id": "air",
+          "meaning_pt_br": "água"
         },
         {
           "ko": "학교",
@@ -1683,7 +1809,8 @@
           "meaning_de": "Schule",
           "meaning_vi": "trường học",
           "meaning_th": "โรงเรียน",
-          "meaning_id": "sekolah"
+          "meaning_id": "sekolah",
+          "meaning_pt_br": "escola"
         },
         {
           "ko": "밥",
@@ -1696,7 +1823,8 @@
           "meaning_de": "Reis / Mahlzeit",
           "meaning_vi": "cơm / bữa ăn",
           "meaning_th": "ข้าว / อาหาร",
-          "meaning_id": "nasi / makanan"
+          "meaning_id": "nasi / makanan",
+          "meaning_pt_br": "arroz, uma refeição"
         },
         {
           "ko": "사랑",
@@ -1709,7 +1837,8 @@
           "meaning_de": "Liebe",
           "meaning_vi": "tình yêu",
           "meaning_th": "ความรัก",
-          "meaning_id": "cinta"
+          "meaning_id": "cinta",
+          "meaning_pt_br": "amor"
         },
         {
           "ko": "집",
@@ -1722,7 +1851,8 @@
           "meaning_de": "Haus",
           "meaning_vi": "nhà",
           "meaning_th": "บ้าน",
-          "meaning_id": "rumah"
+          "meaning_id": "rumah",
+          "meaning_pt_br": "casa"
         },
         {
           "ko": "친구",
@@ -1735,7 +1865,8 @@
           "meaning_de": "Freund/in",
           "meaning_vi": "bạn bè",
           "meaning_th": "เพื่อน",
-          "meaning_id": "teman"
+          "meaning_id": "teman",
+          "meaning_pt_br": "amigo(a)"
         },
         {
           "ko": "코",
@@ -1748,7 +1879,8 @@
           "meaning_de": "Nase",
           "meaning_vi": "mũi",
           "meaning_th": "จมูก",
-          "meaning_id": "hidung"
+          "meaning_id": "hidung",
+          "meaning_pt_br": "nariz"
         },
         {
           "ko": "김치",
@@ -1761,7 +1893,8 @@
           "meaning_de": "Kimchi",
           "meaning_vi": "kimchi",
           "meaning_th": "กิมจิ",
-          "meaning_id": "kimchi"
+          "meaning_id": "kimchi",
+          "meaning_pt_br": "kimchi"
         },
         {
           "ko": "한국",
@@ -1774,7 +1907,8 @@
           "meaning_de": "Korea",
           "meaning_vi": "Hàn Quốc",
           "meaning_th": "เกาหลี",
-          "meaning_id": "Korea"
+          "meaning_id": "Korea",
+          "meaning_pt_br": "Coreia"
         },
         {
           "ko": "손",
@@ -1787,7 +1921,8 @@
           "meaning_de": "Hand",
           "meaning_vi": "bàn tay",
           "meaning_th": "มือ",
-          "meaning_id": "tangan"
+          "meaning_id": "tangan",
+          "meaning_pt_br": "mão"
         },
         {
           "ko": "가족",
@@ -1800,7 +1935,8 @@
           "meaning_de": "Familie",
           "meaning_vi": "gia đình",
           "meaning_th": "ครอบครัว",
-          "meaning_id": "keluarga"
+          "meaning_id": "keluarga",
+          "meaning_pt_br": "família"
         },
         {
           "ko": "바다",
@@ -1813,7 +1949,8 @@
           "meaning_de": "Meer / Ozean",
           "meaning_vi": "biển",
           "meaning_th": "ทะเล",
-          "meaning_id": "laut / samudra"
+          "meaning_id": "laut / samudra",
+          "meaning_pt_br": "mar"
         },
         {
           "ko": "돈",
@@ -1826,7 +1963,8 @@
           "meaning_de": "Geld",
           "meaning_vi": "tiền",
           "meaning_th": "เงิน",
-          "meaning_id": "uang"
+          "meaning_id": "uang",
+          "meaning_pt_br": "dinheiro"
         },
         {
           "ko": "오늘",
@@ -1839,7 +1977,8 @@
           "meaning_de": "heute",
           "meaning_vi": "hôm nay",
           "meaning_th": "วันนี้",
-          "meaning_id": "hari ini"
+          "meaning_id": "hari ini",
+          "meaning_pt_br": "hoje"
         },
         {
           "ko": "사람",
@@ -1852,7 +1991,8 @@
           "meaning_de": "Person",
           "meaning_vi": "người",
           "meaning_th": "คน",
-          "meaning_id": "orang"
+          "meaning_id": "orang",
+          "meaning_pt_br": "pessoa"
         },
         {
           "ko": "책",
@@ -1865,7 +2005,8 @@
           "meaning_de": "Buch",
           "meaning_vi": "sách",
           "meaning_th": "หนังสือ",
-          "meaning_id": "buku"
+          "meaning_id": "buku",
+          "meaning_pt_br": "livro"
         },
         {
           "ko": "커피",
@@ -1878,7 +2019,8 @@
           "meaning_de": "Kaffee",
           "meaning_vi": "cà phê",
           "meaning_th": "กาแฟ",
-          "meaning_id": "kopi"
+          "meaning_id": "kopi",
+          "meaning_pt_br": "café"
         },
         {
           "ko": "하늘",
@@ -1891,7 +2033,8 @@
           "meaning_de": "Himmel",
           "meaning_vi": "bầu trời",
           "meaning_th": "ท้องฟ้า",
-          "meaning_id": "langit"
+          "meaning_id": "langit",
+          "meaning_pt_br": "céu"
         },
         {
           "ko": "눈",
@@ -1904,7 +2047,8 @@
           "meaning_de": "Auge / Schnee",
           "meaning_vi": "mắt / tuyết",
           "meaning_th": "ตา / หิมะ",
-          "meaning_id": "mata / salju"
+          "meaning_id": "mata / salju",
+          "meaning_pt_br": "olho, neve"
         },
         {
           "ko": "가방",
@@ -1917,7 +2061,8 @@
           "meaning_de": "Tasche / Rucksack",
           "meaning_vi": "túi",
           "meaning_th": "กระเป๋า",
-          "meaning_id": "tas / ransel"
+          "meaning_id": "tas / ransel",
+          "meaning_pt_br": "bolsa / mochila"
         },
         {
           "ko": "여자",
@@ -1930,7 +2075,8 @@
           "meaning_de": "Frau",
           "meaning_vi": "phụ nữ",
           "meaning_th": "ผู้หญิง",
-          "meaning_id": "wanita"
+          "meaning_id": "wanita",
+          "meaning_pt_br": "mulher"
         },
         {
           "ko": "남자",
@@ -1943,7 +2089,8 @@
           "meaning_de": "Mann",
           "meaning_vi": "đàn ông",
           "meaning_th": "ผู้ชาย",
-          "meaning_id": "pria"
+          "meaning_id": "pria",
+          "meaning_pt_br": "homem"
         },
         {
           "ko": "시장",
@@ -1956,7 +2103,8 @@
           "meaning_de": "Markt",
           "meaning_vi": "chợ",
           "meaning_th": "ตลาด",
-          "meaning_id": "pasar"
+          "meaning_id": "pasar",
+          "meaning_pt_br": "mercado"
         },
         {
           "ko": "발",
@@ -1969,7 +2117,8 @@
           "meaning_de": "Fuß",
           "meaning_vi": "bàn chân",
           "meaning_th": "เท้า",
-          "meaning_id": "telapak kaki"
+          "meaning_id": "telapak kaki",
+          "meaning_pt_br": "pé"
         },
         {
           "ko": "엄마",
@@ -1982,7 +2131,8 @@
           "meaning_de": "Mama",
           "meaning_vi": "mẹ",
           "meaning_th": "แม่",
-          "meaning_id": "mama"
+          "meaning_id": "mama",
+          "meaning_pt_br": "mãe"
         },
         {
           "ko": "아빠",
@@ -1995,7 +2145,8 @@
           "meaning_de": "Papa",
           "meaning_vi": "bố",
           "meaning_th": "พ่อ",
-          "meaning_id": "papa"
+          "meaning_id": "papa",
+          "meaning_pt_br": "pai"
         },
         {
           "ko": "학생",
@@ -2008,7 +2159,8 @@
           "meaning_de": "Schüler/in",
           "meaning_vi": "học sinh",
           "meaning_th": "นักเรียน",
-          "meaning_id": "pelajar"
+          "meaning_id": "pelajar",
+          "meaning_pt_br": "estudante"
         },
         {
           "ko": "머리",
@@ -2021,7 +2173,8 @@
           "meaning_de": "Kopf / Haar",
           "meaning_vi": "đầu",
           "meaning_th": "หัว",
-          "meaning_id": "kepala / rambut"
+          "meaning_id": "kepala / rambut",
+          "meaning_pt_br": "cabeça / cabelo"
         },
         {
           "ko": "여행",
@@ -2034,7 +2187,8 @@
           "meaning_de": "Reise",
           "meaning_vi": "du lịch",
           "meaning_th": "การเดินทาง",
-          "meaning_id": "perjalanan"
+          "meaning_id": "perjalanan",
+          "meaning_pt_br": "viagem"
         },
         {
           "ko": "비",
@@ -2047,7 +2201,8 @@
           "meaning_de": "Regen",
           "meaning_vi": "mưa",
           "meaning_th": "ฝน",
-          "meaning_id": "hujan"
+          "meaning_id": "hujan",
+          "meaning_pt_br": "chuva"
         },
         {
           "ko": "얼굴",
@@ -2060,7 +2215,8 @@
           "meaning_de": "Gesicht",
           "meaning_vi": "khuôn mặt",
           "meaning_th": "ใบหน้า",
-          "meaning_id": "wajah"
+          "meaning_id": "wajah",
+          "meaning_pt_br": "rosto"
         },
         {
           "ko": "다리",
@@ -2073,7 +2229,8 @@
           "meaning_de": "Bein",
           "meaning_vi": "chân",
           "meaning_th": "ขา",
-          "meaning_id": "kaki"
+          "meaning_id": "kaki",
+          "meaning_pt_br": "perna"
         },
         {
           "ko": "지도",
@@ -2086,7 +2243,8 @@
           "meaning_de": "Landkarte",
           "meaning_vi": "bản đồ",
           "meaning_th": "แผนที่",
-          "meaning_id": "peta"
+          "meaning_id": "peta",
+          "meaning_pt_br": "mapa"
         },
         {
           "ko": "바지",
@@ -2099,7 +2257,8 @@
           "meaning_de": "Hose",
           "meaning_vi": "quần dài",
           "meaning_th": "กางเกง",
-          "meaning_id": "celana panjang"
+          "meaning_id": "celana panjang",
+          "meaning_pt_br": "calça"
         },
         {
           "ko": "봄",
@@ -2112,7 +2271,8 @@
           "meaning_de": "Frühling",
           "meaning_vi": "mùa xuân",
           "meaning_th": "ฤดูใบไม้ผลิ",
-          "meaning_id": "musim semi"
+          "meaning_id": "musim semi",
+          "meaning_pt_br": "primavera"
         },
         {
           "ko": "여름",
@@ -2125,7 +2285,8 @@
           "meaning_de": "Sommer",
           "meaning_vi": "mùa hè",
           "meaning_th": "ฤดูร้อน",
-          "meaning_id": "musim panas"
+          "meaning_id": "musim panas",
+          "meaning_pt_br": "verão"
         },
         {
           "ko": "겨울",
@@ -2138,7 +2299,8 @@
           "meaning_de": "Winter",
           "meaning_vi": "mùa đông",
           "meaning_th": "ฤดูหนาว",
-          "meaning_id": "musim dingin"
+          "meaning_id": "musim dingin",
+          "meaning_pt_br": "inverno"
         },
         {
           "ko": "회사",
@@ -2151,7 +2313,8 @@
           "meaning_de": "Firma",
           "meaning_vi": "công ty",
           "meaning_th": "บริษัท",
-          "meaning_id": "perusahaan"
+          "meaning_id": "perusahaan",
+          "meaning_pt_br": "empresa"
         },
         {
           "ko": "지금",
@@ -2164,7 +2327,8 @@
           "meaning_de": "jetzt",
           "meaning_vi": "bây giờ",
           "meaning_th": "ตอนนี้",
-          "meaning_id": "sekarang"
+          "meaning_id": "sekarang",
+          "meaning_pt_br": "agora"
         },
         {
           "ko": "내일",
@@ -2177,7 +2341,8 @@
           "meaning_de": "morgen",
           "meaning_vi": "ngày mai",
           "meaning_th": "พรุ่งนี้",
-          "meaning_id": "besok"
+          "meaning_id": "besok",
+          "meaning_pt_br": "amanhã"
         },
         {
           "ko": "어제",
@@ -2190,7 +2355,8 @@
           "meaning_de": "gestern",
           "meaning_vi": "hôm qua",
           "meaning_th": "เมื่อวาน",
-          "meaning_id": "kemarin"
+          "meaning_id": "kemarin",
+          "meaning_pt_br": "ontem"
         },
         {
           "ko": "길",
@@ -2203,7 +2369,8 @@
           "meaning_de": "Weg / Straße",
           "meaning_vi": "đường",
           "meaning_th": "ถนน / ทาง",
-          "meaning_id": "jalan"
+          "meaning_id": "jalan",
+          "meaning_pt_br": "estrada, caminho"
         }
       ],
       "target": {
@@ -2233,7 +2400,10 @@
       "instruction_de": "Tippe in 60 Sekunden so viele Wörter wie möglich. Die Leertaste schickt jedes ab.",
       "instruction_vi": "Gõ càng nhiều từ càng tốt trong 60 giây. Phím cách gửi từng từ.",
       "instruction_th": "พิมพ์คำให้ได้มากที่สุดใน 60 วินาที กด Space เพื่อส่งแต่ละคำ",
-      "instruction_id": "Ketik sebanyak mungkin kata dalam 60 detik. Spasi mengirim tiap kata."
+      "instruction_id": "Ketik sebanyak mungkin kata dalam 60 detik. Spasi mengirim tiap kata.",
+      "title_pt_br": "Sprint de 60 Segundos",
+      "instruction_pt_br": "Digite o máximo de palavras que conseguir em 60 segundos. O Espaço envia cada uma.",
+      "tip_pt_br": "A velocidade de digitação em coreano é medida em 타/분 — teclas por minuto, não palavras por minuto. Um adulto coreano médio digita algo em torno de 300–400 타/분. Se você, como iniciante, passar de 200, já está indo bem; profissionais coreanos ultrapassam 600."
     },
     {
       "id": 28,
@@ -2356,6 +2526,19 @@
         "icon": "🌏",
         "label": "Latihanmu terbawa",
         "text": "Semuanya adalah tata letak 두벌식 yang sama yang telah kamu latih: konsonan di kiri, vokal di kanan, Shift untuk huruf ganda. Tidak ada yang perlu dipelajari ulang — memori otot yang kamu bangun di halaman ini langsung bekerja begitu kamu mengalihkan ponsel atau laptopmu."
+      },
+      "title_pt_br": "Digite em Coreano nos Seus Próprios Dispositivos",
+      "body_pt_br": "Primeiro, a parte honesta: você não precisa instalar nada para praticar aqui. Todo exercício desta lição funciona sem nenhum teclado coreano no seu dispositivo — a página identifica qual tecla física você pressionou, e no celular você só toca nas teclas na tela. Mas quando você quiser mandar mensagem para um amigo coreano, pesquisar em coreano ou preencher um formulário, vai precisar de um teclado coreano de verdade no seu dispositivo. Veja como adicionar um. Em todos os casos abaixo, escolha o layout simples de 2 conjuntos / 두벌식 — é o mesmo que você acabou de aprender.",
+      "rules_pt_br": [
+        "iPhone / iPad — Settings → General → Keyboard → Keyboards → Add New Keyboard… → Korean. Em seguida, ele pergunta qual layout: escolha Standard (que é o 두벌식; “10 Key” é o layout pequeno estilo teclado de celular). Troque de teclado segurando a tecla do globo 🌐 na parte inferior do teclado.",
+        "Android — o jeito mais fácil é pelo próprio teclado: abra qualquer app onde você possa digitar, toque no ícone de configurações ⚙ na barra superior do teclado → Languages → Add keyboard → Korean → 2벌식 (2 conjuntos) → Done. Pelo app de Configurações, o caminho é Settings → System → Keyboard → On-screen keyboard → Gboard → Languages → Add keyboard. Para trocar enquanto digita, toque e segure a barra de espaço.",
+        "Windows 11 — Settings → Time & language → Language & region → Add a language → pesquise 한국어 (Korean) → Next → Install. Troque a entrada com Win + Espaço. Com o coreano selecionado, a tecla Alt direita alterna entre hangul e inglês — em um teclado coreano essa tecla vem marcada como 한/영.",
+        "macOS — System Settings → Keyboard → Text Input → Edit… → clique em + → Korean → 2-Set Korean → Add. Troque as fontes de entrada com Ctrl + Espaço; com o coreano ativo, o Caps Lock alterna entre hangul e inglês."
+      ],
+      "tip_pt_br": {
+        "icon": "🌏",
+        "label": "Sua prática se transfere",
+        "text": "Todos esses são o mesmo layout 두벌식 que você vem treinando: consoantes à esquerda, vogais à direita, Shift para as dobradas. Nada para reaprender — a memória muscular que você construiu nesta página funciona assim que você configurar seu celular ou notebook."
       }
     },
     {
@@ -2381,7 +2564,9 @@
       "message_de": "Ausgezeichnete Arbeit – du hast alle 33 Tasten der 두벌식-Tastatur gelernt, Silben mit und ohne 받침 getippt, die zusammengesetzten Vokale gemeistert und einen kompletten 60-Sekunden-Sprint absolviert. Halte das Tempo mit dem freien Tippfeld direkt unter dieser Lektion: Tippe ein beliebiges koreanisches Wort und sieh zu, wie sich die Blöcke von selbst zusammenfügen. 화이팅!",
       "message_vi": "Xuất sắc — bạn đã học hết 33 phím của bàn phím 두벌식, gõ các âm tiết có và không có 받침, xử lý được các nguyên âm ghép, và hoàn thành trọn một lượt chạy nước rút 60 giây. Hãy giữ đà tốc độ với bảng gõ tự do ngay bên dưới bài học này: gõ bất kỳ từ tiếng Hàn nào bạn thích và ngắm các khối tự dựng lên. 화이팅!",
       "message_th": "ทำได้ยอดเยี่ยม — คุณได้เรียนครบทั้ง 33 ปุ่มของแป้นพิมพ์ 두벌식 พิมพ์พยางค์ทั้งที่มีและไม่มี 받침 จัดการสระประสมได้ และวิ่งสปรินต์ครบ 60 วินาที รักษาความเร็วไว้กับแป้นพิมพ์อิสระที่อยู่ใต้บทเรียนนี้: พิมพ์คำภาษาเกาหลีคำไหนก็ได้ที่คุณชอบ แล้วดูบล็อกประกอบตัวเอง 화이팅!",
-      "message_id": "Kerja bagus sekali — kamu sudah mempelajari seluruh 33 tombol papan ketik 두벌식, mengetik suku kata dengan dan tanpa 받침, menangani vokal gabungan, dan menuntaskan sprint penuh 60 detik. Pertahankan kecepatannya dengan papan ketik bebas tepat di bawah pelajaran ini: ketik kata Korea apa pun yang kamu suka dan saksikan bloknya menyusun diri. 화이팅!"
+      "message_id": "Kerja bagus sekali — kamu sudah mempelajari seluruh 33 tombol papan ketik 두벌식, mengetik suku kata dengan dan tanpa 받침, menangani vokal gabungan, dan menuntaskan sprint penuh 60 detik. Pertahankan kecepatannya dengan papan ketik bebas tepat di bawah pelajaran ini: ketik kata Korea apa pun yang kamu suka dan saksikan bloknya menyusun diri. 화이팅!",
+      "title_pt_br": "Você consegue digitar em coreano!",
+      "message_pt_br": "Excelente trabalho — você aprendeu as 33 teclas do teclado 두벌식, digitou sílabas com e sem 받침, lidou com as vogais combinadas e completou um sprint inteiro de 60 segundos. Continue pegando velocidade no teclado livre logo abaixo desta lição: digite qualquer palavra coreana que quiser e veja os blocos se formarem sozinhos. 화이팅!"
     }
   ]
 }

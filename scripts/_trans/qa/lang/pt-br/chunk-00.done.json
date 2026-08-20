@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "emotions::stages.0.name",
+    "value": "Emoções Básicas"
+  },
+  {
+    "id": "emotions::stages.1.name",
+    "value": "Expressar Sentimentos"
+  },
+  {
+    "id": "emotions::stages.2.name",
+    "value": "Emoções Complexas"
+  },
+  {
+    "id": "emotions::stages.3.name",
+    "value": "Frases Emocionais"
+  },
+  {
+    "id": "emotions::steps.0.title",
+    "value": "Emoções em Coreano (감정)"
+  },
+  {
+    "id": "emotions::steps.0.body",
+    "value": "As palavras de emoção em coreano são, em sua maioria, adjetivos na forma base. Diferentemente do inglês ('I am happy'), os adjetivos coreanos funcionam como verbos e se conjugam diretamente: 행복해요 (Estou feliz) sem precisar de um verbo 'estar' separado. A forma de dicionário termina em -다: 행복하다, 슬프다, 무섭다. Remova -다 e adicione -아요/-어요 para o presente educado. O vocabulário de emoções é especialmente útil para falar sobre K-dramas, o dia a dia e sentimentos pessoais."
+  },
+  {
+    "id": "emotions::steps.0.tip.label",
+    "value": "Adjetivos se conjugam como verbos"
+  },
+  {
+    "id": "emotions::steps.0.tip.text",
+    "value": "행복하다 → 행복해요 (Estou feliz). 슬프다 → 슬퍼요 (Estou triste). 피곤하다 → 피곤해요 (Estou cansado/a). A terminação -아요/-어요 torna o adjetivo educado e no tempo presente simultaneamente."
+  },
+  {
+    "id": "emotions::steps.1.meaning",
+    "value": "ser feliz (forma de dicionário)"
+  },
+  {
+    "id": "emotions::steps.2.meaning",
+    "value": "estar triste (forma de dicionário)"
+  },
+  {
+    "id": "emotions::steps.3.meaning",
+    "value": "estar com raiva (literalmente: a raiva sai)"
+  },
+  {
+    "id": "emotions::steps.4.meaning",
+    "value": "ter medo / dar medo"
+  },
+  {
+    "id": "emotions::steps.5.prompt",
+    "value": "Qual palavra significa 'ser feliz'?"
+  },
+  {
+    "id": "emotions::steps.6.title",
+    "value": "Conjugando Adjetivos de Emoção"
+  },
+  {
+    "id": "emotions::steps.6.body",
+    "value": "Para usar adjetivos de emoção em uma conversa educada, remova -다 da forma de dicionário e adicione a terminação educada do presente. Para radicais terminados em 하: 하다 → 해요 (행복하다 → 행복해요). Para radicais com vogal 'clara' (ㅏ, ㅗ): adicione -아요. Para todos os outros: adicione -어요, geralmente com uma mudança vocálica — 슬프다 perde o ㅡ: 슬프 + 어요 → 슬퍼요. Radicais terminados em ㅂ são irregulares: o ㅂ se transforma em 우, então 무섭다 → 무서우 + 어요 → 무서워요 (da mesma forma 외롭다 → 외로워요, 부끄럽다 → 부끄러워요). O mesmo padrão se aplica à maioria dos verbos descritivos coreanos (adjetivos)."
+  },
+  {
+    "id": "emotions::steps.6.tip.label",
+    "value": "Tabela rápida de conjugação"
+  },
+  {
+    "id": "emotions::steps.6.tip.text",
+    "value": "행복하다 → 행복해요. 슬프다 → 슬퍼요. 화나다 → 화나요. 무섭다 → 무서워요. 피곤하다 → 피곤해요. 기쁘다 → 기뻐요. Observe que 슬프다 perde o 으 antes de -어요."
+  },
+  {
+    "id": "emotions::steps.7.meaning",
+    "value": "Estou feliz / É feliz (presente educado)"
+  },
+  {
+    "id": "emotions::steps.8.meaning",
+    "value": "Estou triste (presente educado)"
+  },
+  {
+    "id": "emotions::steps.9.title",
+    "value": "Mais Palavras de Sentimentos (감정 어휘)"
+  },
+  {
+    "id": "emotions::steps.9.body",
+    "value": "O coreano tem um rico conjunto de palavras de emoção além do básico. 기쁘다 (estar contente/alegre) é uma felicidade um pouco mais forte ou específica do que 행복하다. 걱정되다 (estar preocupado) significa literalmente 'a preocupação se torna/acontece'. 신나다 (estar animado/empolgado) é comumente usado em situações cheias de energia — shows, esportes, celebrações. 피곤하다 (estar cansado) é essencial para o dia a dia, especialmente quando você explica que não pode fazer algo."
+  },
+  {
+    "id": "emotions::steps.9.tip.label",
+    "value": "신나다 na cultura pop"
+  },
+  {
+    "id": "emotions::steps.9.tip.text",
+    "value": "신나다 e 신나요 estão em toda parte na cultura pop coreana. As músicas de K-pop costumam usar 신나 para descrever um ritmo ou clima animado. Você também vai ouvir 신난다! como exclamação (Que empolgante!) em eventos e festas."
+  },
+  {
+    "id": "emotions::steps.10.meaning",
+    "value": "estar contente / alegre"
+  },
+  {
+    "id": "emotions::steps.11.meaning",
+    "value": "estar preocupado/a"
+  },
+  {
+    "id": "emotions::steps.12.meaning",
+    "value": "estar cansado/a / exausto/a"
+  },
+  {
+    "id": "emotions::steps.13.meaning",
+    "value": "estar animado/a / empolgado/a"
+  },
+  {
+    "id": "emotions::steps.14.prompt",
+    "value": "Qual palavra significa 'estar cansado'?"
+  },
+  {
+    "id": "emotions::steps.15.title",
+    "value": "기분 — Humor e Sentimento"
+  },
+  {
+    "id": "emotions::steps.15.body",
+    "value": "기분 (gibun) é a palavra-chave para descrever seu humor ou estado geral de sentimento. 기분이 좋다 (gibuni jota) = sentir-se bem / estar de bom humor. 기분이 나쁘다 = sentir-se mal / estar de mau humor. 기분 pode descrever o tom emocional de forma mais ampla do que palavras de emoção específicas — é sobre o seu estado geral. Você vai ouvir 기분이 어때요? (Como você está se sentindo?) na conversa do dia a dia."
+  },
+  {
+    "id": "emotions::steps.15.tip.label",
+    "value": "기분 vs 감정"
+  },
+  {
+    "id": "emotions::steps.15.tip.text",
+    "value": "기분 = humor, estado geral de sentimento (contextual, pode mudar). 감정 = emoção (sentimento mais específico como raiva, alegria, medo). 기분이 좋아요 = Eu me sinto bem agora. 감정을 표현하다 = expressar emoção."
+  },
+  {
+    "id": "emotions::steps.16.meaning",
+    "value": "Eu me sinto bem / Estou de bom humor"
+  },
+  {
+    "id": "emotions::steps.17.prompt",
+    "value": "기분이 좋아요 significa…"
+  },
+  {
+    "id": "emotions::steps.17.choices[0]",
+    "value": "Eu me sinto mal"
+  },
+  {
+    "id": "emotions::steps.17.choices[1]",
+    "value": "Eu me sinto bem"
+  },
+  {
+    "id": "emotions::steps.17.choices[2]",
+    "value": "Estou com fome"
+  },
+  {
+    "id": "emotions::steps.17.choices[3]",
+    "value": "Estou cansado/a"
+  },
+  {
+    "id": "emotions::steps.18.title",
+    "value": "Emoções Mais Profundas (깊은 감정)"
+  },
+  {
+    "id": "emotions::steps.18.body",
+    "value": "O coreano tem várias palavras de emoção sem equivalente direto em uma única palavra em português. 그립다 (geuripda) descreve sentir falta de alguém ou de algo — a saudade de uma pessoa ou lugar amado que está ausente. 외롭다 (oeropda) é solidão, mas com uma profundidade cultural de isolamento. 부끄럽다 (bukkeureupda) é vergonha ou timidez. 뿌듯하다 (ppudeuthada) é o orgulho ou satisfação calorosa de uma conquista — a sensação que você tem ao terminar algo difícil ou ao ver alguém que você ama ter sucesso."
+  },
+  {
+    "id": "emotions::steps.18.tip.label",
+    "value": "한 (Han) — a tristeza coreana intraduzível"
+  },
+  {
+    "id": "emotions::steps.18.tip.text",
+    "value": "한 (han) é uma emoção culturalmente específica: uma tristeza profunda misturada com resiliência, enraizada no sofrimento histórico, mas transformada em energia criativa. É ouvida no pansori (ópera folclórica coreana), descrita na poesia e mencionada em discussões sobre a identidade coreana. Não é uma palavra para usar casualmente, mas é essencial para a compreensão cultural."
+  },
+  {
+    "id": "emotions::steps.19.meaning",
+    "value": "sentir falta de alguém/algo (saudade)"
+  },
+  {
+    "id": "emotions::steps.20.meaning",
+    "value": "estar solitário/a"
+  },
+  {
+    "id": "emotions::steps.21.meaning",
+    "value": "estar envergonhado/a / ser tímido/a"
+  },
+  {
+    "id": "emotions::steps.22.meaning",
+    "value": "sentir-se orgulhoso/a / realizado/a (sensação calorosa de realização)"
+  },
+  {
+    "id": "emotions::steps.23.prompt",
+    "value": "그립다 significa…"
+  },
+  {
+    "id": "emotions::steps.23.choices[0]",
+    "value": "estar contente"
+  },
+  {
+    "id": "emotions::steps.23.choices[1]",
+    "value": "sentir falta de alguém (saudade)"
+  },
+  {
+    "id": "emotions::steps.23.choices[2]",
+    "value": "estar cansado/a"
+  },
+  {
+    "id": "emotions::steps.23.choices[3]",
+    "value": "estar solitário/a"
+  },
+  {
+    "id": "emotions::steps.24.meaning",
+    "value": "sentir o coração disparar de emoção (expectativa romântica)"
+  },
+  {
+    "id": "emotions::steps.25.prompt",
+    "value": "뿌듯하다 significa…"
+  },
+  {
+    "id": "emotions::steps.25.choices[0]",
+    "value": "estar envergonhado/a"
+  },
+  {
+    "id": "emotions::steps.25.choices[1]",
+    "value": "sentir-se orgulhoso/realizado"
+  },
+  {
+    "id": "emotions::steps.25.choices[2]",
+    "value": "estar solitário/a"
+  },
+  {
+    "id": "emotions::steps.25.choices[3]",
+    "value": "sentir falta de alguém"
+  },
+  {
+    "id": "emotions::steps.26.title",
+    "value": "Padrões Comuns de Frases Emocionais"
+  },
+  {
+    "id": "emotions::steps.26.body",
+    "value": "Vários padrões de frase são especialmente úteis para expressar emoções em coreano. '보고 싶어요' (Sinto sua falta / Quero te ver) usa 보다 (ver) + -고 싶다 (querer). '감동받았어요' (Fiquei emocionado/comovido) usa 감동 (emoção profunda) + 받다 (receber). '괜찮아요' (Estou bem / Tudo bem) é uma das frases mais versáteis — usada para 'estou bem', 'tudo bem', 'sem problema' e 'deixa pra lá'."
+  },
+  {
+    "id": "emotions::steps.26.tip.label",
+    "value": "괜찮아요 — a frase multiuso"
+  },
+  {
+    "id": "emotions::steps.26.tip.text",
+    "value": "괜찮아요 significa literalmente 'está tudo bem/ok'. Use para tranquilizar alguém de que você está bem (depois de um tropeço), para aceitar uma oferta que você recusou antes, para dizer 'não, obrigado', ou para expressar 'isso é aceitável'. Dominar seu tom é essencial — mesmas palavras, mensagens bem diferentes."
+  },
+  {
+    "id": "emotions::steps.27.meaning",
+    "value": "Sinto sua falta / Quero te ver"
+  },
+  {
+    "id": "emotions::steps.28.meaning",
+    "value": "Fiquei emocionado/a / comovido/a"
+  },
+  {
+    "id": "emotions::steps.29.meaning",
+    "value": "Estou bem / Tudo bem / Sem problema"
+  },
+  {
+    "id": "emotions::steps.30.prompt",
+    "value": "보고 싶어요 significa…"
+  },
+  {
+    "id": "emotions::steps.30.choices[0]",
+    "value": "Estou bem"
+  },
+  {
+    "id": "emotions::steps.30.choices[1]",
+    "value": "Estou emocionado/a"
+  },
+  {
+    "id": "emotions::steps.30.choices[2]",
+    "value": "Sinto sua falta / Quero te ver"
+  },
+  {
+    "id": "emotions::steps.30.choices[3]",
+    "value": "Estou solitário/a"
+  },
+  {
+    "id": "emotions::steps.31.meaning",
+    "value": "Força! / Aguente firme! (literalmente: solte a força)"
+  },
+  {
+    "id": "emotions::steps.32.title",
+    "value": "Emoções Concluídas!"
+  },
+  {
+    "id": "emotions::steps.32.message",
+    "value": "Você explorou o vocabulário de emoções em coreano — de sentimentos básicos a palavras culturalmente ricas como 그립다, 뿌듯하다 e 설레다. Seu coreano emocional está crescendo!"
+  },
+  {
+    "id": "grammar::stages.0.name",
+    "value": "Frase"
+  },
+  {
+    "id": "grammar::stages.1.name",
+    "value": "Partículas"
+  },
+  {
+    "id": "grammar::stages.2.name",
+    "value": "Conjugação"
+  },
+  {
+    "id": "grammar::stages.3.name",
+    "value": "Negação"
+  },
+  {
+    "id": "grammar::stages.4.name",
+    "value": "Perguntas"
+  },
+  {
+    "id": "grammar::stages.5.name",
+    "value": "Padrões"
+  },
+  {
+    "id": "grammar::stages.6.name",
+    "value": "Conectores"
+  },
+  {
+    "id": "grammar::stages.7.name",
+    "value": "E / Com"
+  },
+  {
+    "id": "grammar::stages.8.name",
+    "value": "Para / De"
+  },
+  {
+    "id": "grammar::stages.9.name",
+    "value": "Tempo"
+  },
+  {
+    "id": "grammar::stages.10.name",
+    "value": "Contadores"
+  },
+  {
+    "id": "grammar::stages.11.name",
+    "value": "Progressivo"
+  },
+  {
+    "id": "grammar::stages.12.name",
+    "value": "Apresentação"
+  },
+  {
+    "id": "grammar::stages.13.name",
+    "value": "Datas"
+  },
+  {
+    "id": "grammar::stages.14.name",
+    "value": "Advérbios"
+  },
+  {
+    "id": "grammar::stages.15.name",
+    "value": "Nominalizador"
+  },
+  {
+    "id": "grammar::stages.16.name",
+    "value": "Comparativos"
+  },
+  {
+    "id": "grammar::stages.17.name",
+    "value": "Gostar"
+  },
+  {
+    "id": "grammar::stages.18.name",
+    "value": "Ainda/Já"
+  },
+  {
+    "id": "grammar::stages.19.name",
+    "value": "Indefinido"
+  },
+  {
+    "id": "grammar::stages.20.name",
+    "value": "Imperativo"
+  },
+  {
+    "id": "grammar::stages.21.name",
+    "value": "Proibição"
+  },
+  {
+    "id": "grammar::stages.22.name",
+    "value": "Método"
+  },
+  {
+    "id": "grammar::stages.23.name",
+    "value": "Bem/Mal"
+  },
+  {
+    "id": "grammar::stages.24.name",
+    "value": "Tudo/Mais"
+  },
+  {
+    "id": "grammar::stages.25.name",
+    "value": "-도 Avançado"
+  },
+  {
+    "id": "grammar::steps.0.title",
+    "value": "Ordem das Palavras — SOV"
+  },
+  {
+    "id": "grammar::steps.0.body",
+    "value": "O coreano segue a ordem Sujeito → Objeto → Verbo (SOV). O verbo sempre vem POR ÚLTIMO."
+  },
+  {
+    "id": "grammar::steps.0.rules[0]",
+    "value": "Português (SVO): Eu como arroz."
+  },
+  {
+    "id": "grammar::steps.0.rules[1]",
+    "value": "Coreano (SOV): 나는 밥을 먹어요. (Eu arroz como.)"
+  },
+  {
+    "id": "grammar::steps.0.rules[2]",
+    "value": "Dica: Preste atenção na última palavra — esse é o verbo, a ação!"
+  },
+  {
+    "id": "grammar::steps.0.tip.label",
+    "value": "Dica de Gramática"
+  },
+  {
+    "id": "grammar::steps.0.tip.text",
+    "value": "Assim que você sabe que o verbo vem por último, tudo faz sentido. O resto da frase pode ser reorganizado — os falantes de coreano usam partículas para manter tudo claro."
+  },
+  {
+    "id": "grammar::steps.1.meaning",
+    "value": "Eu como arroz. (Sujeito + Objeto + Verbo)"
+  },
+  {
+    "id": "grammar::steps.2.prompt",
+    "value": "Qual frase é o coreano correto para 'Eu como arroz'?"
+  },
+  {
+    "id": "grammar::steps.3.title",
+    "value": "Partículas Coreanas"
+  },
+  {
+    "id": "grammar::steps.3.body",
+    "value": "As partículas se unem aos substantivos para mostrar sua função: tópico, sujeito, objeto, localização. Elas substituem a ordem fixa das palavras."
+  },
+  {
+    "id": "grammar::steps.3.rules[0]",
+    "value": "은/는 → Marcador de tópico (은 depois de consoante, 는 depois de vogal)"
+  },
+  {
+    "id": "grammar::steps.3.rules[1]",
+    "value": "이/가 → Marcador de sujeito (이 depois de consoante, 가 depois de vogal)"
+  },
+  {
+    "id": "grammar::steps.3.rules[2]",
+    "value": "을/를 → Marcador de objeto (을 depois de consoante, 를 depois de vogal)"
+  },
+  {
+    "id": "grammar::steps.3.rules[3]",
+    "value": "에 → Local / Direção"
+  },
+  {
+    "id": "grammar::steps.3.rules[4]",
+    "value": "에서 → Local da ação"
+  },
+  {
+    "id": "grammar::steps.3.rules[5]",
+    "value": "의 → Possessivo (de)"
+  },
+  {
+    "id": "grammar::steps.4.meaning",
+    "value": "Eu sou estudante. (는 = marcador de tópico)"
+  },
+  {
+    "id": "grammar::steps.5.prompt",
+    "value": "은/는 marca o ___"
+  },
+  {
+    "id": "grammar::steps.5.choices[0]",
+    "value": "Tópico"
+  },
+  {
+    "id": "grammar::steps.5.choices[1]",
+    "value": "Sujeito"
+  },
+  {
+    "id": "grammar::steps.5.choices[2]",
+    "value": "Objeto"
+  },
+  {
+    "id": "grammar::steps.5.choices[3]",
+    "value": "Local"
+  },
+  {
+    "id": "grammar::steps.6.meaning",
+    "value": "A chuva vem. / Está chovendo. (가 = marcador de sujeito)"
+  },
+  {
+    "id": "grammar::steps.7.prompt",
+    "value": "Para marcar 밥 (arroz) como OBJETO: 밥___ 먹어요"
+  },
+  {
+    "id": "grammar::steps.8.meaning",
+    "value": "Eu tomo café no café. (에서 = local da ação)"
+  },
+  {
+    "id": "grammar::steps.9.prompt",
+    "value": "'Eu estudo na escola': 학교___ 공부해요"
+  },
+  {
+    "id": "grammar::steps.10.prompt",
+    "value": "Para marcar 이름 (nome) como TÓPICO: 제 이름___ 민수예요"
+  },
+  {
+    "id": "grammar::steps.11.title",
+    "value": "Verbos — Forma de Dicionário"
+  },
+  {
+    "id": "grammar::steps.11.body",
+    "value": "Todos os verbos coreanos na forma de dicionário terminam em 다 (da). Remova 다 para obter o radical do verbo, depois adicione uma terminação."
+  },
+  {
+    "id": "grammar::steps.11.rules[0]",
+    "value": "가다 (ir) → radical: 가-"
+  },
+  {
+    "id": "grammar::steps.11.rules[1]",
+    "value": "먹다 (comer) → radical: 먹-"
+  },
+  {
+    "id": "grammar::steps.11.rules[2]",
+    "value": "공부하다 (estudar) → radical: 공부하-"
+  },
+  {
+    "id": "grammar::steps.11.rules[3]",
+    "value": "하다 (fazer) → radical: 하-"
+  },
+  {
+    "id": "grammar::steps.12.title",
+    "value": "Presente: -아요 / -어요"
+  },
+  {
+    "id": "grammar::steps.12.body",
+    "value": "Adicione -아요 depois de radicais com ㅏ ou ㅗ. Adicione -어요 para todos os outros. Verbos com 하다 usam -해요."
+  },
+  {
+    "id": "grammar::steps.12.rules[0]",
+    "value": "가다 → 가요 (ir · radical ㅏ)"
+  },
+  {
+    "id": "grammar::steps.12.rules[1]",
+    "value": "오다 → 와요 (vir · radical ㅗ)"
+  },
+  {
+    "id": "grammar::steps.12.rules[2]",
+    "value": "먹다 → 먹어요 (comer · outro)"
+  },
+  {
+    "id": "grammar::steps.12.rules[3]",
+    "value": "마시다 → 마셔요 (beber · outro)"
+  },
+  {
+    "id": "grammar::steps.12.rules[4]",
+    "value": "공부하다 → 공부해요 (estudar · 하다)"
+  },
+  {
+    "id": "grammar::steps.12.tip.label",
+    "value": "Regra da Vogal"
+  },
+  {
+    "id": "grammar::steps.12.tip.text",
+    "value": "ㅏ e ㅗ são vogais 'claras' → -아요. Todas as outras vogais são 'escuras' → -어요. Assim que você sabe a vogal do radical, a conjugação é automática."
+  },
+  {
+    "id": "grammar::steps.13.meaning",
+    "value": "Eu vou / Vamos. (가다 → 가요, presente educado)"
+  },
+  {
+    "id": "grammar::steps.14.meaning",
+    "value": "Eu como / comendo. (먹다 → 먹어요, presente educado)"
+  },
+  {
+    "id": "grammar::steps.15.prompt",
+    "value": "하다 (fazer) → forma educada do presente?"
+  },
+  {
+    "id": "grammar::steps.16.title",
+    "value": "Passado: -았어요 / -었어요"
+  },
+  {
+    "id": "grammar::steps.16.body",
+    "value": "Adicione -았어요 depois de radicais com ㅏ/ㅗ e -었어요 para os demais. 하다 → 했어요."
+  },
+  {
+    "id": "grammar::steps.16.rules[0]",
+    "value": "가다 → 갔어요 (fui)"
+  },
+  {
+    "id": "grammar::steps.16.rules[1]",
+    "value": "오다 → 왔어요 (vim)"
+  },
+  {
+    "id": "grammar::steps.16.rules[2]",
+    "value": "먹다 → 먹었어요 (comi)"
+  },
+  {
+    "id": "grammar::steps.16.rules[3]",
+    "value": "마시다 → 마셨어요 (bebi)"
+  },
+  {
+    "id": "grammar::steps.16.rules[4]",
+    "value": "공부하다 → 공부했어요 (estudei)"
+  },
+  {
+    "id": "grammar::steps.17.meaning",
+    "value": "Eu fui a Seul."
+  },
+  {
+    "id": "grammar::steps.18.prompt",
+    "value": "Passado de 먹다 (comer)?"
+  },
+  {
+    "id": "grammar::steps.19.title",
+    "value": "Futuro: -(으)ㄹ 거예요"
+  },
+  {
+    "id": "grammar::steps.19.body",
+    "value": "Adicione -(으)ㄹ 거예요 ao radical do verbo para falar sobre planos futuros ou previsões."
+  },
+  {
+    "id": "grammar::steps.19.rules[0]",
+    "value": "가다 → 갈 거예요 (vou ir)"
+  },
+  {
+    "id": "grammar::steps.19.rules[1]",
+    "value": "먹다 → 먹을 거예요 (vou comer)"
+  },
+  {
+    "id": "grammar::steps.19.rules[2]",
+    "value": "공부하다 → 공부할 거예요 (vou estudar)"
+  },
+  {
+    "id": "grammar::steps.20.prompt",
+    "value": "가다 (ir) → futuro?"
+  },
+  {
+    "id": "grammar::steps.21.title",
+    "value": "Criando Frases Negativas"
+  },
+  {
+    "id": "grammar::steps.21.body",
+    "value": "Negação curta: 안 + verbo. Negação longa: radical do verbo + 지 않아요. Não poder: 못 + verbo."
+  },
+  {
+    "id": "grammar::steps.21.rules[0]",
+    "value": "안 먹어요 (não como — forma curta)"
+  },
+  {
+    "id": "grammar::steps.21.rules[1]",
+    "value": "먹지 않아요 (não como — forma longa)"
+  },
+  {
+    "id": "grammar::steps.21.rules[2]",
+    "value": "못 가요 (não consigo ir — incapaz)"
+  },
+  {
+    "id": "grammar::steps.22.prompt",
+    "value": "'Eu não como' — forma de negação curta"
+  },
+  {
+    "id": "grammar::steps.23.title",
+    "value": "Formando Perguntas"
+  },
+  {
+    "id": "grammar::steps.23.body",
+    "value": "As perguntas em coreano usam a MESMA ordem de palavras das afirmações — basta adicionar entonação ascendente (↑) ou um ponto de interrogação."
+  },
+  {
+    "id": "grammar::steps.23.rules[0]",
+    "value": "뭐 / 무엇 — O quê"
+  },
+  {
+    "id": "grammar::steps.23.rules[1]",
+    "value": "누구 — Quem"
+  },
+  {
+    "id": "grammar::steps.23.rules[2]",
+    "value": "어디 — Onde"
+  },
+  {
+    "id": "grammar::steps.23.rules[3]",
+    "value": "언제 — Quando"
+  },
+  {
+    "id": "grammar::steps.23.rules[4]",
+    "value": "왜 — Por quê"
+  },
+  {
+    "id": "grammar::steps.23.rules[5]",
+    "value": "어떻게 — Como"
+  },
+  {
+    "id": "grammar::steps.23.rules[6]",
+    "value": "얼마 — Quanto"
+  },
+  {
+    "id": "grammar::steps.23.rules[7]",
+    "value": "몇 — Quantos"
+  },
+  {
+    "id": "grammar::steps.23.tip.label",
+    "value": "Dica de Gramática"
+  },
+  {
+    "id": "grammar::steps.23.tip.text",
+    "value": "밥을 먹어요 = Eu como arroz. 밥을 먹어요? = Você come arroz? As mesmas palavras — só um tom ascendente no final. Sem inversão de palavras como no inglês!"
+  },
+  {
+    "id": "grammar::steps.24.meaning",
+    "value": "Qual é o seu nome?"
+  },
+  {
+    "id": "grammar::steps.25.prompt",
+    "value": "'Onde' em coreano?"
+  },
+  {
+    "id": "grammar::steps.26.title",
+    "value": "Padrões de Frases Essenciais"
+  },
+  {
+    "id": "grammar::steps.26.body",
+    "value": "Domine esses 6 padrões para expressar as ideias mais comuns nas conversas em coreano."
+  },
+  {
+    "id": "grammar::steps.26.rules[0]",
+    "value": "~이에요/예요 — é/sou/são (substantivo): 학생이에요 (Sou estudante)"
+  },
+  {
+    "id": "grammar::steps.26.rules[1]",
+    "value": "~고 싶어요 — querer: 한국에 가고 싶어요 (Quero ir à Coreia)"
+  },
+  {
+    "id": "grammar::steps.26.rules[2]",
+    "value": "~ㄹ/을 수 있어요 — poder: 한국어를 할 수 있어요 (Eu posso falar coreano)"
+  },
+  {
+    "id": "grammar::steps.26.rules[3]",
+    "value": "~아/어야 해요 — dever: 공부해야 해요 (Eu preciso estudar)"
+  },
+  {
+    "id": "grammar::steps.26.rules[4]",
+    "value": "~(으)면 — se/quando: 비가 오면 집에 있어요 (Se chover, eu fico em casa)"
+  },
+  {
+    "id": "grammar::steps.26.rules[5]",
+    "value": "~때문에 — por causa de: 비 때문에 못 가요 (Não posso ir por causa da chuva)"
+  },
+  {
+    "id": "grammar::steps.27.prompt",
+    "value": "Padrão para 'Quero ir à Coreia': 한국에 ___"
+  },
+  {
+    "id": "grammar::steps.28.title",
+    "value": "Conectores"
+  },
+  {
+    "id": "grammar::steps.28.body",
+    "value": "Essas 4 conjunções conectam frases. Coloque-as no INÍCIO da segunda frase."
+  },
+  {
+    "id": "grammar::steps.28.rules[0]",
+    "value": "그리고 — E / E então (adiciona informação ou sequência)"
+  },
+  {
+    "id": "grammar::steps.28.rules[1]",
+    "value": "그래서 — Então / Por isso (causa → resultado)"
+  },
+  {
+    "id": "grammar::steps.28.rules[2]",
+    "value": "그렇지만 — Mas / Porém (contraste forte, formal)"
+  },
+  {
+    "id": "grammar::steps.28.rules[3]",
+    "value": "그런데 — Mas / A propósito (contraste suave, informal — o mais comum!)"
+  },
+  {
+    "id": "grammar::steps.28.tip.label",
+    "value": "Dica de Uso"
+  },
+  {
+    "id": "grammar::steps.28.tip.text",
+    "value": "그런데 é uma das palavras mais comuns no coreano falado — ela suaviza o contraste e muda de assunto de forma natural. 그렇지만 é mais forte e mais formal."
+  },
+  {
+    "id": "grammar::steps.29.meaning",
+    "value": "Choveu. Então eu fiquei em casa."
+  },
+  {
+    "id": "grammar::steps.30.prompt",
+    "value": "Contraste suave ou mudança de assunto — o mais comum no coreano falado?"
+  },
+  {
+    "id": "grammar::steps.31.title",
+    "value": "E, Com"
+  },
+  {
+    "id": "grammar::steps.31.body",
+    "value": "Use essas partículas entre substantivos (não entre frases) para significar 'e' ou 'com'."
+  },
+  {
+    "id": "grammar::steps.31.rules[0]",
+    "value": "-하고 — depois de qualquer substantivo, neutro/informal: 친구하고 갔어요 (fui com um amigo)"
+  },
+  {
+    "id": "grammar::steps.31.rules[1]",
+    "value": "-(이)랑 — 이랑 (consoante) / 랑 (vogal), muito informal: 오빠랑 놀았어요 (brinquei com o irmão mais velho)"
+  },
+  {
+    "id": "grammar::steps.31.rules[2]",
+    "value": "-와/과 — 와 (vogal) / 과 (consoante), formal/escrito: 선생님과 상담했어요 (consultei com o professor)"
+  },
+  {
+    "id": "grammar::steps.32.title",
+    "value": "Para/De Alguém"
+  },
+  {
+    "id": "grammar::steps.32.body",
+    "value": "Use partículas direcionais de pessoa quando der algo a alguém ou receber de alguém, não de lugares."
+  },
+  {
+    "id": "grammar::steps.32.rules[0]",
+    "value": "-한테 — para (uma pessoa): 친구한테 전화했어요 (liguei para meu amigo)"
+  },
+  {
+    "id": "grammar::steps.32.rules[1]",
+    "value": "-한테서 — de (uma pessoa): 선생님한테서 배웠어요 (aprendi com o professor)"
+  },
+  {
+    "id": "grammar::steps.32.rules[2]",
+    "value": "-에게 / -에게서 — equivalentes formais"
+  },
+  {
+    "id": "grammar::steps.32.rules[3]",
+    "value": "-께 — para (honorífico, para mais velhos): 선생님께 드렸어요"
+  },
+  {
+    "id": "grammar::steps.33.title",
+    "value": "Dizendo as Horas"
+  },
+  {
+    "id": "grammar::steps.33.body",
+    "value": "Use números coreanos NATIVOS para as horas (시) e números SINO-COREANOS para os minutos (분). AM = 오전, PM = 오후."
+  },
+  {
+    "id": "grammar::steps.33.rules[0]",
+    "value": "Horas (시): 한(1), 두(2), 세(3), 네(4), 다섯(5)... + 시"
+  },
+  {
+    "id": "grammar::steps.33.rules[1]",
+    "value": "Minutos (분): 일(1), 이(2), 삼(3), 사(4), 오(5)... + 분"
+  },
+  {
+    "id": "grammar::steps.33.rules[2]",
+    "value": "Meia hora: 반 — 세 시 반 = 3:30"
+  },
+  {
+    "id": "grammar::steps.33.rules[3]",
+    "value": "Exemplo: 오후 두 시 삼십 분 = 2:30 PM"
+  },
+  {
+    "id": "grammar::steps.33.tip.label",
+    "value": "Padrão-Chave"
+  },
+  {
+    "id": "grammar::steps.33.tip.text",
+    "value": "As horas usam números coreanos nativos (한, 두, 세...). Os minutos usam números sino-coreanos (일, 이, 삼...). Meia hora = 반. AM = 오전, PM = 오후."
+  },
+  {
+    "id": "grammar::steps.34.meaning",
+    "value": "Que horas são agora?"
+  },
+  {
+    "id": "grammar::steps.35.prompt",
+    "value": "'3:30' é lido em coreano como..."
+  },
+  {
+    "id": "grammar::steps.36.title",
+    "value": "Contadores"
+  },
+  {
+    "id": "grammar::steps.36.body",
+    "value": "O coreano usa contadores específicos depois de [Substantivo] + [Número]. Números coreanos nativos (한, 두, 세...) são usados com a maioria dos contadores."
+  },
+  {
+    "id": "grammar::steps.36.rules[0]",
+    "value": "개 — objetos em geral: 사과 세 개 (3 maçãs)"
+  },
+  {
+    "id": "grammar::steps.36.rules[1]",
+    "value": "명 — pessoas (neutro): 학생 두 명 (2 estudantes)"
+  },
+  {
+    "id": "grammar::steps.36.rules[2]",
+    "value": "분 — pessoas (honorífico): 손님 두 분 (2 convidados)"
+  },
+  {
+    "id": "grammar::steps.36.rules[3]",
+    "value": "마리 — animais: 고양이 한 마리 (1 gato)"
+  },
+  {
+    "id": "grammar::steps.36.rules[4]",
+    "value": "권 — livros: 책 세 권 (3 livros)"
+  },
+  {
+    "id": "grammar::steps.36.rules[5]",
+    "value": "잔 — xícaras/bebidas: 커피 두 잔 (2 cafés)"
+  },
+  {
+    "id": "grammar::steps.36.rules[6]",
+    "value": "번 — vezes: 세 번 (3 vezes)"
+  },
+  {
+    "id": "grammar::steps.37.meaning",
+    "value": "Por favor, me dê três maçãs."
+  },
+  {
+    "id": "grammar::steps.38.prompt",
+    "value": "Contador para pessoas (neutro)?"
+  },
+  {
+    "id": "grammar::steps.39.title",
+    "value": "Presente Progressivo"
+  },
+  {
+    "id": "grammar::steps.39.body",
+    "value": "Adicione -고 있어요 ao radical do verbo para dizer que alguém ESTÁ atualmente fazendo algo (a forma '-ndo' do coreano)."
+  },
+  {
+    "id": "grammar::steps.39.rules[0]",
+    "value": "먹다 → 먹고 있어요 (está comendo)"
+  },
+  {
+    "id": "grammar::steps.39.rules[1]",
+    "value": "가다 → 가고 있어요 (está indo)"
+  },
+  {
+    "id": "grammar::steps.39.rules[2]",
+    "value": "공부하다 → 공부하고 있어요 (está estudando)"
+  },
+  {
+    "id": "grammar::steps.39.rules[3]",
+    "value": "읽다 → 읽고 있어요 (está lendo)"
+  },
+  {
+    "id": "grammar::steps.39.tip.label",
+    "value": "Progressivo vs Simples"
+  },
+  {
+    "id": "grammar::steps.39.tip.text",
+    "value": "먹어요 = Eu como (geral ou agora, depende do contexto). 먹고 있어요 = Eu estou comendo (especificamente em andamento neste momento). O progressivo adiciona a ideia de 'em ação no momento'."
+  },
+  {
+    "id": "grammar::steps.40.meaning",
+    "value": "Eu estou comendo agora."
+  },
+  {
+    "id": "grammar::steps.41.prompt",
+    "value": "'está estudando' → 공부하다 + -고 있어요 ="
+  },
+  {
+    "id": "grammar::steps.42.title",
+    "value": "Apresentação Pessoal"
+  },
+  {
+    "id": "grammar::steps.42.body",
+    "value": "Vocabulário-chave: 이름 (nome), 나이 (idade), 나라 (país), 직업 (profissão), 취미 (hobby), 고향 (cidade natal)."
+  },
+  {
+    "id": "grammar::steps.42.rules[0]",
+    "value": "안녕하세요! 저는 [nome]이에요/예요."
+  },
+  {
+    "id": "grammar::steps.42.rules[1]",
+    "value": "저는 [나라]에서 왔어요. (Eu sou de [país].)"
+  },
+  {
+    "id": "grammar::steps.42.rules[2]",
+    "value": "저는 [직업]이에요. (Eu sou [profissão].)"
+  },
+  {
+    "id": "grammar::steps.42.rules[3]",
+    "value": "제 취미는 [hobby]예요. (Meu hobby é [hobby].)"
+  },
+  {
+    "id": "grammar::steps.42.rules[4]",
+    "value": "잘 부탁드려요! (Prazer em conhecê-lo/la!)"
+  },
+  {
+    "id": "grammar::steps.42.tip.label",
+    "value": "Modelo"
+  },
+  {
+    "id": "grammar::steps.42.tip.text",
+    "value": "Use 안녕하세요 + 잘 부탁드려요 em situações formais. Com amigos ou colegas: 안녕! + 잘 부탁해! Sempre faça uma leve reverência ao se apresentar pessoalmente."
+  },
+  {
+    "id": "grammar::steps.43.title",
+    "value": "Datas e Meses"
+  },
+  {
+    "id": "grammar::steps.43.body",
+    "value": "As datas em coreano usam números sino-coreanos na ordem Ano → Mês → Dia. Junho = 유월, Outubro = 시월 (exceções)."
+  },
+  {
+    "id": "grammar::steps.43.rules[0]",
+    "value": "일월(1월), 이월(2월), 삼월(3월), 사월(4월), 오월(5월), 유월(6월)"
+  },
+  {
+    "id": "grammar::steps.43.rules[1]",
+    "value": "칠월(7월), 팔월(8월), 구월(9월), 시월(10월), 십일월(11월), 십이월(12월)"
+  },
+  {
+    "id": "grammar::steps.43.rules[2]",
+    "value": "Formato de data: 2026년 6월 16일 (16 de junho de 2026)"
+  },
+  {
+    "id": "grammar::steps.43.rules[3]",
+    "value": "오늘이 며칠이에요? — Qual é a data de hoje?"
+  },
+  {
+    "id": "grammar::steps.44.title",
+    "value": "Advérbios de Grau"
+  },
+  {
+    "id": "grammar::steps.44.body",
+    "value": "Advérbios de grau vêm diretamente antes da palavra que modificam: 조금 (um pouco), 정말 (de verdade), 아주 (muito), 많이 (bastante)."
+  },
+  {
+    "id": "grammar::steps.44.rules[0]",
+    "value": "조금 / 좀 — um pouco (좀 é mais suave/informal)"
+  },
+  {
+    "id": "grammar::steps.44.rules[1]",
+    "value": "정말 — de verdade / realmente (neutro)"
+  },
+  {
+    "id": "grammar::steps.44.rules[2]",
+    "value": "진짜 — de verdade (informal, sensação mais forte)"
+  },
+  {
+    "id": "grammar::steps.44.rules[3]",
+    "value": "아주 — muito"
+  },
+  {
+    "id": "grammar::steps.44.rules[4]",
+    "value": "많이 — bastante / muito"
+  },
+  {
+    "id": "grammar::steps.44.rules[5]",
+    "value": "별로 + negativo — não muito (별로 안 좋아요 = Eu não gosto muito)"
+  },
+  {
+    "id": "grammar::steps.44.rules[6]",
+    "value": "전혀 + negativo — de jeito nenhum (전혀 모르겠어요 = Eu não tenho a menor ideia)"
+  },
+  {
+    "id": "grammar::steps.44.tip.label",
+    "value": "Advérbios Negativos"
+  },
+  {
+    "id": "grammar::steps.44.tip.text",
+    "value": "별로 e 전혀 DEVEM ser usados com um verbo negativo (안, 못, 없다, 모르다). Dizer 별로 좋아요 (sem negação) é gramaticalmente incorreto. Pense neles como 'não muito' e 'de jeito nenhum'."
+  },
+  {
+    "id": "grammar::steps.45.meaning",
+    "value": "Está muito gostoso!"
+  },
+  {
+    "id": "grammar::steps.46.prompt",
+    "value": "'Eu não gosto muito' — 별로 ___"
+  },
+  {
+    "id": "grammar::steps.47.title",
+    "value": "Nominalizador: -는 것"
+  },
+  {
+    "id": "grammar::steps.47.body",
+    "value": "Adicionar -는 것 ao radical de um verbo cria uma frase nominal — 'o ato de fazer ~'. Isso faz os verbos funcionarem como substantivos."
+  },
+  {
+    "id": "grammar::steps.47.rules[0]",
+    "value": "먹는 것 — o ato de comer"
+  },
+  {
+    "id": "grammar::steps.47.rules[1]",
+    "value": "배우는 것 — o ato de aprender"
+  },
+  {
+    "id": "grammar::steps.47.rules[2]",
+    "value": "한국어를 배우는 것이 재미있어요 — Aprender coreano é interessante"
+  },
+  {
+    "id": "grammar::steps.47.rules[3]",
+    "value": "요리하는 것을 좋아해요 — Eu gosto de cozinhar (o ato de cozinhar)"
+  },
+  {
+    "id": "grammar::steps.47.tip.label",
+    "value": "Formas de Tempo Verbal"
+  },
+  {
+    "id": "grammar::steps.47.tip.text",
+    "value": "-는 것 (presente/habitual) · -(으)ㄴ 것 (passado/concluído) · -(으)ㄹ 것 (futuro/planejado). A forma presente é a mais comum na fala do dia a dia."
+  },
+  {
+    "id": "grammar::steps.48.meaning",
+    "value": "Aprender coreano é interessante."
+  },
+  {
+    "id": "grammar::steps.49.prompt",
+    "value": "'Aprender coreano é interessante' — 한국어를 ___ 재미있어요"
+  },
+  {
+    "id": "grammar::steps.50.title",
+    "value": "Comparativos"
+  },
+  {
+    "id": "grammar::steps.50.body",
+    "value": "Estrutura: [A]이/가 [B]보다 더 [adjetivo]. 보다 significa 'que' e 더 significa 'mais'."
+  },
+  {
+    "id": "grammar::steps.50.rules[0]",
+    "value": "한국어가 영어보다 더 어려워요 — O coreano é mais difícil que o inglês"
+  },
+  {
+    "id": "grammar::steps.50.rules[1]",
+    "value": "오늘이 어제보다 더 더워요 — Hoje está mais quente que ontem"
+  },
+  {
+    "id": "grammar::steps.50.rules[2]",
+    "value": "더 pode ser omitido na fala informal: 한국어가 영어보다 어려워요"
+  },
+  {
+    "id": "grammar::steps.51.meaning",
+    "value": "O coreano é mais difícil que o japonês."
+  },
+  {
+    "id": "grammar::steps.52.prompt",
+    "value": "Como se diz 'mais' em uma comparação em coreano?"
+  },
+  {
+    "id": "grammar::steps.53.title",
+    "value": "좋다 vs 좋아하다"
+  },
+  {
+    "id": "grammar::steps.53.body",
+    "value": "좋다 usa a partícula de sujeito (이/가): 한국어가 좋아요. 좋아하다 usa a partícula de objeto (을/를): 한국어를 좋아해요."
+  },
+  {
+    "id": "grammar::steps.53.rules[0]",
+    "value": "좋다 — ser bom / sentir-se bem (estado): 커피가 좋아요 (Eu gosto de café / O café é bom)"
+  },
+  {
+    "id": "grammar::steps.53.rules[1]",
+    "value": "좋아하다 — gostar (preferência ativa): 커피를 좋아해요 (Eu gosto de café)"
+  },
+  {
+    "id": "grammar::steps.53.rules[2]",
+    "value": "Ambos se traduzem como 'eu gosto', mas 좋다 foca no sentimento, e 좋아하다, na preferência"
+  },
+  {
+    "id": "grammar::steps.53.tip.label",
+    "value": "Diferença Principal"
+  },
+  {
+    "id": "grammar::steps.53.tip.text",
+    "value": "좋아요 → é precedido pela partícula de sujeito (이/가). 좋아해요 → é precedido pela partícula de objeto (을/를). Na dúvida, 좋아해요 soa mais natural para expressar preferências."
+  },
+  {
+    "id": "grammar::steps.54.prompt",
+    "value": "'Eu gosto de café' usando 좋아하다 — 커피___ 좋아해요"
+  },
+  {
+    "id": "grammar::steps.55.title",
+    "value": "Ainda e Já"
+  },
+  {
+    "id": "grammar::steps.55.body",
+    "value": "아직 + verbo negativo = ainda não. 벌써 = já (mais cedo do que o esperado). 이미 = já (neutro, formal)."
+  },
+  {
+    "id": "grammar::steps.55.rules[0]",
+    "value": "아직 안 먹었어요 — Ainda não comi (ainda não)"
+  },
+  {
+    "id": "grammar::steps.55.rules[1]",
+    "value": "아직 여기 있어요 — Ainda aqui (em andamento)"
+  },
+  {
+    "id": "grammar::steps.55.rules[2]",
+    "value": "벌써 도착했어요? — Já chegou? (surpresa)"
+  },
+  {
+    "id": "grammar::steps.55.rules[3]",
+    "value": "이미 알아요 — Eu já sei (neutro)"
+  },
+  {
+    "id": "grammar::steps.56.prompt",
+    "value": "'아직' significa?"
+  },
+  {
+    "id": "grammar::steps.56.choices[0]",
+    "value": "Ainda / Ainda não"
+  },
+  {
+    "id": "grammar::steps.56.choices[1]",
+    "value": "Já"
+  },
+  {
+    "id": "grammar::steps.56.choices[2]",
+    "value": "Até mesmo"
+  },
+  {
+    "id": "grammar::steps.56.choices[3]",
+    "value": "Mais"
+  },
+  {
+    "id": "grammar::steps.57.title",
+    "value": "Alguém, Algo"
+  },
+  {
+    "id": "grammar::steps.57.body",
+    "value": "Combine palavras interrogativas com o contexto para expressar ideias indefinidas como 'alguém' ou 'nada'."
+  },
+  {
+    "id": "grammar::steps.57.rules[0]",
+    "value": "누군가 — alguém: 누군가 왔어요 (Alguém veio)"
+  },
+  {
+    "id": "grammar::steps.57.rules[1]",
+    "value": "무언가 / 뭔가 — algo: 뭔가 이상해요 (Algo está estranho)"
+  },
+  {
+    "id": "grammar::steps.57.rules[2]",
+    "value": "어딘가 — em algum lugar: 어딘가에 있어요 (Está em algum lugar)"
+  },
+  {
+    "id": "grammar::steps.57.rules[3]",
+    "value": "아무도 + negativo — ninguém: 아무도 없어요 (Não tem ninguém aqui)"
+  },
+  {
+    "id": "grammar::steps.57.rules[4]",
+    "value": "아무것도 + negativo — nada: 아무것도 몰라요 (Eu não sei nada)"
+  },
+  {
+    "id": "grammar::steps.58.prompt",
+    "value": "'Não tem ninguém aqui' — 아무도 ___"
+  },
+  {
+    "id": "grammar::steps.59.title",
+    "value": "Imperativo: -(으)세요"
+  },
+  {
+    "id": "grammar::steps.59.body",
+    "value": "Adicione -(으)세요 ao radical de um verbo para fazer um pedido ou comando educado."
+  },
+  {
+    "id": "grammar::steps.59.rules[0]",
+    "value": "가다 → 가세요 (por favor, vá)"
+  },
+  {
+    "id": "grammar::steps.59.rules[1]",
+    "value": "앉다 → 앉으세요 (por favor, sente-se)"
+  },
+  {
+    "id": "grammar::steps.59.rules[2]",
+    "value": "먹다 → 드세요 (por favor, coma — honorífico)"
+  },
+  {
+    "id": "grammar::steps.60.prompt",
+    "value": "앉다 (sentar) → forma de pedido educado?"
+  },
+  {
+    "id": "grammar::steps.61.title",
+    "value": "Proibição: -지 마세요"
+  },
+  {
+    "id": "grammar::steps.61.body",
+    "value": "Adicione -지 마세요 ao radical de um verbo para dizer educadamente a alguém para NÃO fazer algo."
+  },
+  {
+    "id": "grammar::steps.61.rules[0]",
+    "value": "말하다 → 말하지 마세요 (por favor, não fale)"
+  },
+  {
+    "id": "grammar::steps.61.rules[1]",
+    "value": "가다 → 가지 마세요 (por favor, não vá)"
+  },
+  {
+    "id": "grammar::steps.61.rules[2]",
+    "value": "먹다 → 먹지 마세요 (por favor, não coma)"
+  },
+  {
+    "id": "grammar::steps.62.meaning",
+    "value": "Por favor, fale devagar."
+  },
+  {
+    "id": "grammar::steps.63.prompt",
+    "value": "'Por favor, não fale' em coreano?"
+  },
+  {
+    "id": "grammar::steps.64.title",
+    "value": "Método: -(으)로"
+  },
+  {
+    "id": "grammar::steps.64.body",
+    "value": "-(으)로 marca o método ou meio — 'por' ou 'com' uma ferramenta/forma de fazer algo."
+  },
+  {
+    "id": "grammar::steps.64.rules[0]",
+    "value": "-으로 depois de consoante, -로 depois de vogal ou ㄹ: 버스로 가요 (vou de ônibus)"
+  },
+  {
+    "id": "grammar::steps.64.rules[1]",
+    "value": "지하철로 와요 (venho de metrô)"
+  },
+  {
+    "id": "grammar::steps.64.rules[2]",
+    "value": "한국어로 말해요 (falo em coreano)"
+  },
+  {
+    "id": "grammar::steps.65.prompt",
+    "value": "'Eu vou de ônibus' — 버스___ 가요"
+  },
+  {
+    "id": "grammar::steps.66.title",
+    "value": "Bom/Ruim Em"
+  },
+  {
+    "id": "grammar::steps.66.body",
+    "value": "잘하다 = ser bom em. 못하다 = ser ruim em. Ambos vêm depois da partícula de objeto 을/를."
+  },
+  {
+    "id": "grammar::steps.66.rules[0]",
+    "value": "한국어를 잘해요 (sou bom em coreano)"
+  },
+  {
+    "id": "grammar::steps.66.rules[1]",
+    "value": "수학을 못해요 (sou ruim em matemática)"
+  },
+  {
+    "id": "grammar::steps.66.rules[2]",
+    "value": "수영을 잘 못해요 (não sou muito bom em natação)"
+  },
+  {
+    "id": "grammar::steps.67.prompt",
+    "value": "'sou bom em coreano' — 한국어를 ___"
+  },
+  {
+    "id": "grammar::steps.68.title",
+    "value": "Tudo, Mais: 다, 더"
+  },
+  {
+    "id": "grammar::steps.68.body",
+    "value": "다 = tudo. 더 = mais. Ambos são advérbios simples colocados antes do verbo."
+  },
+  {
+    "id": "grammar::steps.68.rules[0]",
+    "value": "다 먹었어요 — comi tudo"
+  },
+  {
+    "id": "grammar::steps.68.rules[1]",
+    "value": "더 주세요 — por favor, me dê mais"
+  },
+  {
+    "id": "grammar::steps.68.rules[2]",
+    "value": "다 e 더 são usados de formas bem diferentes dependendo do contexto"
+  },
+  {
+    "id": "grammar::steps.69.prompt",
+    "value": "'Eu comi tudo' — ___ 먹었어요"
+  },
+  {
+    "id": "grammar::steps.70.title",
+    "value": "Tudo, Mais e -도"
+  },
+  {
+    "id": "grammar::steps.70.body",
+    "value": "-도 tem 4 usos avançados além do simples 'também': ênfase, negação enfática e 'tanto...quanto'."
+  }
+]

@@ -16,7 +16,8 @@
       "name_ja": "数字",
       "name_th": "ตัวเลข",
       "name_vi": "Số đếm",
-      "name_zh_tw": "數字"
+      "name_zh_tw": "數字",
+      "name_pt_br": "Números"
     }
   ],
   "steps": [
@@ -129,6 +130,18 @@
         "icon": "🔢",
         "label": "Trik mengingat cepat",
         "text": "Ingat: Asli (native) = ritme alami tubuh (detak jantung, usia, menghitung dengan jari). Sino-Korea = konteks sistematis/resmi (jam, uang, kalender)."
+      },
+      "title_pt_br": "Dois Sistemas de Números",
+      "body_pt_br": "O coreano usa dois sistemas numéricos distintos: números nativos coreanos (고유어) e números sino-coreanos (한자어). Você precisa conhecer os dois — eles são usados em situações diferentes.",
+      "rules_pt_br": [
+        "Coreano nativo: usado para contar itens (개), idade (살) e horas (시) — ex.: 하나, 둘, 셋",
+        "Sino-coreano: usado para dinheiro (원), minutos (분), datas, números de telefone e endereços — ex.: 일, 이, 삼",
+        "Números grandes sempre usam sino-coreano — 백 (100), 천 (1.000), 만 (10.000)"
+      ],
+      "tip_pt_br": {
+        "icon": "🔢",
+        "label": "Truque rápido de memorização",
+        "text": "Pense assim: Nativo = ritmos naturais do corpo (batimento cardíaco, idade, contar nos dedos). Sino-coreano = contextos sistemáticos/oficiais (relógios, dinheiro, calendários)."
       }
     },
     {
@@ -151,7 +164,8 @@
       "meaning_fr": "Un (coréen natif) — utilisé pour l'âge et pour compter des objets",
       "meaning_id": "Satu (asli Korea) — dipakai untuk usia dan menghitung benda",
       "meaning_th": "หนึ่ง (เลขเกาหลีแท้) — ใช้บอกอายุและนับสิ่งของ",
-      "meaning_vi": "Một (thuần Hàn) — dùng cho tuổi tác, đếm đồ vật"
+      "meaning_vi": "Một (thuần Hàn) — dùng cho tuổi tác, đếm đồ vật",
+      "meaning_pt_br": "Um (coreano nativo) — usado para idade e para contar objetos"
     },
     {
       "id": 3,
@@ -172,7 +186,8 @@
       "meaning_fr": "Deux (coréen natif) — devient 두 devant un classificateur",
       "meaning_id": "Dua (asli Korea) — berubah menjadi 두 sebelum kata bantu bilangan",
       "meaning_th": "สอง (เลขเกาหลีแท้) — เปลี่ยนเป็น 두 เมื่ออยู่หน้าลักษณนาม",
-      "meaning_vi": "Hai (thuần Hàn) — biến thành 두 khi đứng trước đơn vị đếm"
+      "meaning_vi": "Hai (thuần Hàn) — biến thành 두 khi đứng trước đơn vị đếm",
+      "meaning_pt_br": "Dois (coreano nativo) — vira 두 antes de um contador"
     },
     {
       "id": 4,
@@ -193,7 +208,8 @@
       "meaning_fr": "Trois (coréen natif) — devient 세 devant un classificateur",
       "meaning_id": "Tiga (asli Korea) — berubah menjadi 세 sebelum kata bantu bilangan",
       "meaning_th": "สาม (เลขเกาหลีแท้) — เปลี่ยนเป็น 세 เมื่ออยู่หน้าลักษณนาม",
-      "meaning_vi": "Ba (thuần Hàn) — biến thành 세 khi đứng trước đơn vị đếm"
+      "meaning_vi": "Ba (thuần Hàn) — biến thành 세 khi đứng trước đơn vị đếm",
+      "meaning_pt_br": "Três (coreano nativo) — vira 세 antes de um contador"
     },
     {
       "id": 5,
@@ -214,7 +230,8 @@
       "meaning_fr": "Quatre (coréen natif) — devient 네 devant un classificateur",
       "meaning_id": "Empat (asli Korea) — berubah menjadi 네 sebelum kata bantu bilangan",
       "meaning_th": "สี่ (เลขเกาหลีแท้) — เปลี่ยนเป็น 네 เมื่ออยู่หน้าลักษณนาม",
-      "meaning_vi": "Bốn (thuần Hàn) — biến thành 네 khi đứng trước đơn vị đếm"
+      "meaning_vi": "Bốn (thuần Hàn) — biến thành 네 khi đứng trước đơn vị đếm",
+      "meaning_pt_br": "Quatro (coreano nativo) — vira 네 antes de um contador"
     },
     {
       "id": 6,
@@ -236,7 +253,8 @@
       "meaning_fr": "Cinq (coréen natif)",
       "meaning_id": "Lima (asli Korea)",
       "meaning_th": "ห้า (เลขเกาหลีแท้)",
-      "meaning_vi": "Năm (thuần Hàn)"
+      "meaning_vi": "Năm (thuần Hàn)",
+      "meaning_pt_br": "Cinco (coreano nativo)"
     },
     {
       "id": 7,
@@ -258,7 +276,8 @@
       "meaning_fr": "Six (coréen natif)",
       "meaning_id": "Enam (asli Korea)",
       "meaning_th": "หก (เลขเกาหลีแท้)",
-      "meaning_vi": "Sáu (thuần Hàn)"
+      "meaning_vi": "Sáu (thuần Hàn)",
+      "meaning_pt_br": "Seis (coreano nativo)"
     },
     {
       "id": 8,
@@ -280,7 +299,8 @@
       "meaning_fr": "Sept (coréen natif)",
       "meaning_id": "Tujuh (asli Korea)",
       "meaning_th": "เจ็ด (เลขเกาหลีแท้)",
-      "meaning_vi": "Bảy (thuần Hàn)"
+      "meaning_vi": "Bảy (thuần Hàn)",
+      "meaning_pt_br": "Sete (coreano nativo)"
     },
     {
       "id": 9,
@@ -302,7 +322,8 @@
       "meaning_fr": "Huit (coréen natif)",
       "meaning_id": "Delapan (asli Korea)",
       "meaning_th": "แปด (เลขเกาหลีแท้)",
-      "meaning_vi": "Tám (thuần Hàn)"
+      "meaning_vi": "Tám (thuần Hàn)",
+      "meaning_pt_br": "Oito (coreano nativo)"
     },
     {
       "id": 10,
@@ -324,7 +345,8 @@
       "meaning_fr": "Neuf (coréen natif)",
       "meaning_id": "Sembilan (asli Korea)",
       "meaning_th": "เก้า (เลขเกาหลีแท้)",
-      "meaning_vi": "Chín (thuần Hàn)"
+      "meaning_vi": "Chín (thuần Hàn)",
+      "meaning_pt_br": "Nove (coreano nativo)"
     },
     {
       "id": 11,
@@ -345,7 +367,8 @@
       "meaning_fr": "Dix (coréen natif) — utilisé pour 10 heures (열 시)",
       "meaning_id": "Sepuluh (asli Korea) — dipakai untuk pukul 10 (열 시)",
       "meaning_th": "สิบ (เลขเกาหลีแท้) — ใช้บอกเวลา 10 นาฬิกา (열 시)",
-      "meaning_vi": "Mười (thuần Hàn) — dùng cho 10 giờ (열 시)"
+      "meaning_vi": "Mười (thuần Hàn) — dùng cho 10 giờ (열 시)",
+      "meaning_pt_br": "Dez (coreano nativo) — usado para 10 horas (열 시)"
     },
     {
       "id": 12,
@@ -414,6 +437,13 @@
         "Số thuần Hàn (하나, 둘, 셋)",
         "Số Hán-Hàn cho con số, số thuần Hàn cho đơn vị đếm 살",
         "Dưới 20 dùng số thuần Hàn, từ 20 trở lên dùng số Hán-Hàn"
+      ],
+      "prompt_pt_br": "Você está dizendo sua idade em coreano para alguém. Qual sistema numérico você usa?",
+      "choices_pt_br": [
+        "Sino-coreano (일, 이, 삼)",
+        "Coreano nativo (하나, 둘, 셋)",
+        "Sino-coreano para o número e coreano nativo para o contador 살",
+        "Coreano nativo abaixo de 20, sino-coreano a partir de 20"
       ]
     },
     {
@@ -483,6 +513,13 @@
         "일(1), 이(2), 삼(3), 사(4), 오(5), 육(6), 칠(7), 팔(8), 구(9), 십(10)",
         "백 (100), 천 (1.000), 만 (10.000)",
         "Giá tiền: 오천 원 (5.000 won), 이만 원 (20.000 won)"
+      ],
+      "title_pt_br": "Números Sino-coreanos",
+      "body_pt_br": "Os números sino-coreanos vêm do chinês (한자, hanja). São usados para dinheiro, minutos, datas, números de telefone, andares de prédios e grandes quantidades.",
+      "rules_pt_br": [
+        "일(1), 이(2), 삼(3), 사(4), 오(5), 육(6), 칠(7), 팔(8), 구(9), 십(10)",
+        "백 (100), 천 (1.000), 만 (10.000)",
+        "Preço: 오천 원 (5.000 won), 이만 원 (20.000 won)"
       ]
     },
     {
@@ -504,7 +541,8 @@
       "meaning_fr": "Un (sino-coréen) — dates, numéros de téléphone, argent",
       "meaning_id": "Satu (Sino-Korea) — tanggal, nomor telepon, uang",
       "meaning_th": "หนึ่ง (จีน-เกาหลี) — วันที่ เบอร์โทรศัพท์ เงิน",
-      "meaning_vi": "Một (Hán Hàn) — ngày tháng, số điện thoại, tiền bạc"
+      "meaning_vi": "Một (Hán Hàn) — ngày tháng, số điện thoại, tiền bạc",
+      "meaning_pt_br": "Um (sino-coreano) — datas, números de telefone, dinheiro"
     },
     {
       "id": 15,
@@ -525,7 +563,8 @@
       "meaning_fr": "Cinq (sino-coréen) — 오 분 = cinq minutes",
       "meaning_id": "Lima (Sino-Korea) — 오 분 = lima menit",
       "meaning_th": "ห้า (จีน-เกาหลี) — 오 분 = ห้านาที",
-      "meaning_vi": "Năm (Hán Hàn) — 오 분 = năm phút"
+      "meaning_vi": "Năm (Hán Hàn) — 오 분 = năm phút",
+      "meaning_pt_br": "Cinco (sino-coreano) — 오 분 = cinco minutos"
     },
     {
       "id": 16,
@@ -546,7 +585,8 @@
       "meaning_fr": "Dix (sino-coréen) — 십 분 = dix minutes",
       "meaning_id": "Sepuluh (Sino-Korea) — 십 분 = sepuluh menit",
       "meaning_th": "สิบ (จีน-เกาหลี) — 십 분 = สิบนาที",
-      "meaning_vi": "Mười (Hán Hàn) — 십 분 = mười phút"
+      "meaning_vi": "Mười (Hán Hàn) — 십 분 = mười phút",
+      "meaning_pt_br": "Dez (sino-coreano) — 십 분 = dez minutos"
     },
     {
       "id": 17,
@@ -567,7 +607,8 @@
       "meaning_fr": "Cent (sino-coréen) — 백 원 = 100 wons",
       "meaning_id": "Seratus (Sino-Korea) — 백 원 = 100 won",
       "meaning_th": "หนึ่งร้อย (จีน-เกาหลี) — 백 원 = 100 วอน",
-      "meaning_vi": "Một trăm (Hán Hàn) — 백 원 = 100 won"
+      "meaning_vi": "Một trăm (Hán Hàn) — 백 원 = 100 won",
+      "meaning_pt_br": "Cem (sino-coreano) — 백 원 = 100 won"
     },
     {
       "id": 18,
@@ -588,7 +629,8 @@
       "meaning_fr": "Mille (sino-coréen) — 천 원 = 1 000 wons",
       "meaning_id": "Seribu (Sino-Korea) — 천 원 = 1.000 won",
       "meaning_th": "หนึ่งพัน (จีน-เกาหลี) — 천 원 = 1,000 วอน",
-      "meaning_vi": "Một nghìn (Hán Hàn) — 천 원 = 1.000 won"
+      "meaning_vi": "Một nghìn (Hán Hàn) — 천 원 = 1.000 won",
+      "meaning_pt_br": "Mil (sino-coreano) — 천 원 = 1.000 won"
     },
     {
       "id": 19,
@@ -609,7 +651,8 @@
       "meaning_fr": "Dix mille (sino-coréen) — unité clé dans les prix coréens",
       "meaning_id": "Sepuluh ribu (Sino-Korea) — satuan utama dalam harga di Korea",
       "meaning_th": "หนึ่งหมื่น (จีน-เกาหลี) — หน่วยสำคัญในการบอกราคาของเกาหลี",
-      "meaning_vi": "Mười nghìn (Hán Hàn) — đơn vị then chốt trong giá cả ở Hàn Quốc"
+      "meaning_vi": "Mười nghìn (Hán Hàn) — đơn vị then chốt trong giá cả ở Hàn Quốc",
+      "meaning_pt_br": "Dez mil (sino-coreano) — unidade fundamental nos preços coreanos"
     },
     {
       "id": 20,
@@ -705,6 +748,16 @@
         "권 (gwon) — sách: 책 한 권 (một quyển sách)",
         "잔 (jan) — cốc / ly: 커피 한 잔 (một cốc cà phê)",
         "번 (beon) — thứ tự / số lần: 두 번 (hai lần)"
+      ],
+      "title_pt_br": "Contadores Coreanos",
+      "body_pt_br": "Os números coreanos devem ser combinados com contadores (단위명사) — palavras especiais que indicam que tipo de coisa está sendo contada. O contador vem depois do número.",
+      "rules_pt_br": [
+        "개 (gae) — objetos em geral: 사과 두 개 (duas maçãs)",
+        "명 (myeong) — pessoas (formal): 학생 세 명 (três estudantes)",
+        "살 (sal) — idade: 스물다섯 살 (25 anos)",
+        "권 (gwon) — livros: 책 한 권 (um livro)",
+        "잔 (jan) — xícaras/copos: 커피 한 잔 (uma xícara de café)",
+        "번 (beon) — ordem numérica/vezes: 두 번 (duas vezes)"
       ]
     },
     {
@@ -726,7 +779,8 @@
       "meaning_fr": "Classificateur pour les objets en général — 사탕 세 개 (trois bonbons)",
       "meaning_id": "Kata bantu bilangan untuk benda umum — 사탕 세 개 (tiga permen)",
       "meaning_th": "ลักษณนามสำหรับสิ่งของทั่วไป — 사탕 세 개 (ลูกอมสามเม็ด)",
-      "meaning_vi": "Đơn vị đếm đồ vật nói chung — 사탕 세 개 (ba viên kẹo)"
+      "meaning_vi": "Đơn vị đếm đồ vật nói chung — 사탕 세 개 (ba viên kẹo)",
+      "meaning_pt_br": "Contador para objetos em geral — 사탕 세 개 (três balas)"
     },
     {
       "id": 22,
@@ -747,7 +801,8 @@
       "meaning_fr": "Classificateur pour les personnes (formel) — 친구 두 명 (deux amis)",
       "meaning_id": "Kata bantu bilangan untuk orang (formal) — 친구 두 명 (dua orang teman)",
       "meaning_th": "ลักษณนามสำหรับคน (ทางการ) — 친구 두 명 (เพื่อนสองคน)",
-      "meaning_vi": "Đơn vị đếm người (trang trọng) — 친구 두 명 (hai người bạn)"
+      "meaning_vi": "Đơn vị đếm người (trang trọng) — 친구 두 명 (hai người bạn)",
+      "meaning_pt_br": "Contador para pessoas (formal) — 친구 두 명 (dois amigos)"
     },
     {
       "id": 23,
@@ -768,7 +823,8 @@
       "meaning_fr": "Classificateur pour les fois / l'ordre — 한 번 더 (une fois de plus)",
       "meaning_id": "Kata bantu bilangan untuk kali / urutan — 한 번 더 (sekali lagi)",
       "meaning_th": "ลักษณนามบอกจำนวนครั้ง / ลำดับ — 한 번 더 (อีกครั้งหนึ่ง)",
-      "meaning_vi": "Đơn vị đếm số lần / thứ tự — 한 번 더 (một lần nữa)"
+      "meaning_vi": "Đơn vị đếm số lần / thứ tự — 한 번 더 (một lần nữa)",
+      "meaning_pt_br": "Contador para vezes/ordem — 한 번 더 (mais uma vez)"
     },
     {
       "id": 24,
@@ -789,7 +845,8 @@
       "prompt_fr": "Quel classificateur utilise-t-on pour les livres (책) ?",
       "prompt_id": "Kata bantu bilangan mana yang dipakai untuk buku (책)?",
       "prompt_th": "ใช้ลักษณนามใดกับหนังสือ (책)",
-      "prompt_vi": "Đếm sách (책) thì dùng đơn vị đếm nào?"
+      "prompt_vi": "Đếm sách (책) thì dùng đơn vị đếm nào?",
+      "prompt_pt_br": "Qual contador você usa para livros (책)?"
     },
     {
       "id": 25,
@@ -814,7 +871,9 @@
       "message_fr": "Vous maîtrisez désormais les deux systèmes de numération coréens ainsi que les classificateurs essentiels. Les nombres ouvrent une grande partie de la vie quotidienne — dire l'heure, faire des achats, donner son âge, et bien plus encore.",
       "message_id": "Kamu sudah menguasai kedua sistem bilangan Korea dan kata-kata penggolong yang utama. Bilangan membuka sebagian besar kehidupan sehari-hari — menyebutkan waktu, berbelanja, menyampaikan usia, dan masih banyak lagi.",
       "message_th": "คุณเชี่ยวชาญระบบตัวเลขภาษาเกาหลีทั้งสองระบบและลักษณนามสำคัญแล้ว ตัวเลขเปิดประตูสู่ชีวิตประจำวันได้อีกมาก — ทั้งการบอกเวลา การซื้อของ การบอกอายุ และอื่น ๆ อีกมากมาย",
-      "message_vi": "Bạn đã nắm vững cả hai hệ thống số của tiếng Hàn cùng các danh từ đơn vị quan trọng. Số mở ra một phần rất lớn của đời sống hằng ngày — xem giờ, mua sắm, nói tuổi và nhiều hơn nữa."
+      "message_vi": "Bạn đã nắm vững cả hai hệ thống số của tiếng Hàn cùng các danh từ đơn vị quan trọng. Số mở ra một phần rất lớn của đời sống hằng ngày — xem giờ, mua sắm, nói tuổi và nhiều hơn nữa.",
+      "title_pt_br": "Números Concluídos!",
+      "message_pt_br": "Você dominou os dois sistemas numéricos coreanos e os principais contadores. Os números abrem uma parte enorme da vida cotidiana — dizer as horas, fazer compras, dar sua idade e muito mais."
     }
   ]
 }

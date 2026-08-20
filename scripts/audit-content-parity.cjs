@@ -26,11 +26,24 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
+const REG = require('./_locales.cjs');
 const argLang = process.argv[2];
 const only = process.argv[3]; // optional "section/page"
 
-const LANGS = argLang ? [argLang] : ['es', 'ja', 'zh-tw', 'de', 'fr', 'vi', 'th', 'id'];
-const SECTIONS = ['culture', 'travel', 'news'];
+if (argLang && (!REG.get(argLang) || argLang === 'en')) {
+  throw new Error(`unknown locale "${argLang}" — not in scripts/_locales.cjs`);
+}
+// LANGS comes from the registry so a locale added there is audited here
+// automatically. Default scope is the live 8; pass a code explicitly
+// (including a 'planned' one) to audit a single locale on its own — this is
+// the fresh-locale path, and it must report honestly rather than pretend a
+// locale with zero pages is "in sync" (see the pages===0 branch below).
+const LANGS = argLang ? [argLang] : REG.liveDirs();
+// 'news' was the deleted news/ section (removed 2026-07-21, see CLAUDE.md) —
+// there is no news/ directory on disk any more. Do not reintroduce it. This
+// is unrelated to the "News & Society" VOCABULARY topic
+// (learn/data/vocabulary-news.json), which is real content and untouched.
+const SECTIONS = ['culture', 'travel'];
 
 const DEC = { '&amp;': '&', '&#39;': "'", '&quot;': '"', '&lt;': '<', '&gt;': '>', '&nbsp;': ' ' };
 const decode = s => s.replace(/&amp;|&#39;|&quot;|&lt;|&gt;|&nbsp;/g, m => DEC[m]);
@@ -71,7 +84,7 @@ function perAnchorDivs(m) {
 
 for (const lang of LANGS) {
   const ref = lang === 'ja' ? 'zh-tw' : 'ja'; // kept-terms reference for prose check
-  let flagged = 0, pages = 0;
+  let flagged = 0, pages = 0, enPagesSeen = 0;
   const rows = [];
   for (const section of SECTIONS) {
     const srcDir = path.join(ROOT, section);
@@ -82,6 +95,7 @@ for (const lang of LANGS) {
       if (only && only !== `${section}/${page}`) continue;
 
       const en = mainRegion(path.join(srcDir, file));
+      if (en) enPagesSeen++;
       const tgt = mainRegion(path.join(srcDir, lang, file));
       if (!en || !tgt) continue;
       pages++;
@@ -124,6 +138,14 @@ for (const lang of LANGS) {
       const pend = r.pending ? `  en-prose:${r.pending}` : '';
       console.log(`${r.verdict.padEnd(10)} ${r.key.padEnd(34)} div ${String(r.tgtDiv).padStart(4)}/${String(r.enDiv).padStart(4)}${miss}${pend}`);
     }
-    console.log(`${lang}: ${pages - flagged}/${pages} pages fully in sync & translated`);
+    // A locale directory that does not exist yet produces pages===0 for every
+    // section, which used to print "0/0 pages fully in sync & translated" —
+    // read at a glance, that looks like a vacuous PASS. It is the opposite:
+    // nothing was compared because there is nothing on disk to compare.
+    if (pages === 0 && enPagesSeen > 0) {
+      console.log(`${lang}: NOT PRESENT — 0 of ${enPagesSeen} English page(s) have a ${lang}/ counterpart on disk. 0% covered, not a pass.`);
+    } else {
+      console.log(`${lang}: ${pages - flagged}/${pages} pages fully in sync & translated`);
+    }
   }
 }

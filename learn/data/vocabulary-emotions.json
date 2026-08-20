@@ -16,7 +16,8 @@
       "name_ja": "感情",
       "name_th": "อารมณ์ความรู้สึก",
       "name_vi": "Cảm xúc",
-      "name_zh_tw": "情感"
+      "name_zh_tw": "情感",
+      "name_pt_br": "Emoções"
     }
   ],
   "steps": [
@@ -84,6 +85,13 @@
         "icon": "💬",
         "label": "왜 그래요? (Ada apa?)",
         "text": "Jika seseorang bertanya 왜 그래요? (Kenapa/Ada apa?), kamu bisa menjawab dengan kata emosi apa pun + 아요/어요. Contoh: 슬퍼요 (Aku sedih), 피곤해요 (Aku lelah)."
+      },
+      "title_pt_br": "Emoções em Coreano",
+      "body_pt_br": "As emoções em coreano costumam ser expressas com verbos na forma 해요, em vez de adjetivos. Muitos estados emocionais terminam em -워요 por causa da irregularidade ㅂ: adjetivos cujo radical termina em ㅂ (무섭다, 부럽다, 즐겁다) trocam esse ㅂ por 우, resultando em 무서워요, 부러워요, 즐거워요. Os coreanos também usam o conceito de 눈치 (nunchi) — perceber as emoções dos outros sem que precisem ser expressas.",
+      "tip_pt_br": {
+        "icon": "💬",
+        "label": "왜 그래요? (O que houve?)",
+        "text": "Se alguém perguntar 왜 그래요? (Por que/O que houve?), você pode responder com qualquer palavra de emoção + 아요/어요. Ex.: 슬퍼요 (Estou triste), 피곤해요 (Estou cansado/a)."
       }
     },
     {
@@ -108,7 +116,8 @@
       "meaning_fr": "Je suis heureux/heureuse — 행복 (bonheur) est le nom d'origine",
       "meaning_id": "Saya bahagia — 행복 (kebahagiaan) adalah kata dasarnya",
       "meaning_th": "ฉันมีความสุข — 행복 (ความสุข) เป็นคำนามต้นราก",
-      "meaning_vi": "Tôi hạnh phúc — 행복 (hạnh phúc) là danh từ gốc"
+      "meaning_vi": "Tôi hạnh phúc — 행복 (hạnh phúc) là danh từ gốc",
+      "meaning_pt_br": "Estou feliz — 행복 (felicidade) é o substantivo raiz"
     },
     {
       "id": 3,
@@ -131,7 +140,8 @@
       "meaning_fr": "Je suis triste — de 슬프다 (être triste)",
       "meaning_id": "Saya sedih — dari 슬프다 (bersedih)",
       "meaning_th": "ฉันเศร้า — มาจาก 슬프다 (เศร้า)",
-      "meaning_vi": "Tôi buồn — từ 슬프다 (buồn bã)"
+      "meaning_vi": "Tôi buồn — từ 슬프다 (buồn bã)",
+      "meaning_pt_br": "Estou triste — de 슬프다 (estar triste)"
     },
     {
       "id": 4,
@@ -154,7 +164,8 @@
       "meaning_fr": "Je suis en colère — 화 signifie « colère / feu » ; 화가 나다 = la colère monte",
       "meaning_id": "Saya marah — 화 berarti \"amarah/api\"; 화가 나다 = amarah muncul",
       "meaning_th": "ฉันโกรธ — 화 แปลว่า \"ความโกรธ/ไฟ\"; 화가 나다 = ความโกรธพลุ่งขึ้น",
-      "meaning_vi": "Tôi tức giận — 화 nghĩa là \"cơn giận/lửa giận\"; 화가 나다 = cơn giận bốc lên"
+      "meaning_vi": "Tôi tức giận — 화 nghĩa là \"cơn giận/lửa giận\"; 화가 나다 = cơn giận bốc lên",
+      "meaning_pt_br": "Estou com raiva — 화 significa \"raiva/fogo\"; 화가 나다 = a raiva sobe"
     },
     {
       "id": 5,
@@ -178,7 +189,8 @@
       "meaning_fr": "J'ai peur / ça fait peur",
       "meaning_id": "Saya takut / menakutkan",
       "meaning_th": "ฉันกลัว / น่ากลัว",
-      "meaning_vi": "Tôi sợ / thật đáng sợ"
+      "meaning_vi": "Tôi sợ / thật đáng sợ",
+      "meaning_pt_br": "Estou com medo / é assustador"
     },
     {
       "id": 6,
@@ -201,7 +213,8 @@
       "meaning_fr": "Je suis ravi(e) / je me réjouis — joie plus vive que 행복해요",
       "meaning_id": "Saya gembira / girang — lebih kuat daripada 행복해요",
       "meaning_th": "ฉันดีใจ / ปลื้มใจ — รู้สึกแรงกว่า 행복해요",
-      "meaning_vi": "Tôi vui mừng / hân hoan — mạnh hơn 행복해요"
+      "meaning_vi": "Tôi vui mừng / hân hoan — mạnh hơn 행복해요",
+      "meaning_pt_br": "Estou contente / encantado(a) — mais forte que 행복해요"
     },
     {
       "id": 7,
@@ -225,7 +238,8 @@
       "meaning_fr": "Je suis inquiet/inquiète — 걱정 (inquiétude) est un nom très courant en coréen",
       "meaning_id": "Saya khawatir — 걱정 (kekhawatiran) adalah kata benda yang sangat umum dalam bahasa Korea",
       "meaning_th": "ฉันเป็นห่วง / กังวล — 걱정 (ความกังวล) เป็นคำนามที่ใช้บ่อยมากในภาษาเกาหลี",
-      "meaning_vi": "Tôi lo lắng — 걱정 (nỗi lo) là danh từ rất thông dụng trong tiếng Hàn"
+      "meaning_vi": "Tôi lo lắng — 걱정 (nỗi lo) là danh từ rất thông dụng trong tiếng Hàn",
+      "meaning_pt_br": "Estou preocupado(a) — 걱정 (preocupação) é um substantivo muito comum em coreano"
     },
     {
       "id": 8,
@@ -250,7 +264,8 @@
       "meaning_fr": "Je suis gêné(e) / j'ai honte",
       "meaning_id": "Saya malu / tersipu",
       "meaning_th": "ฉันเขินอาย / ละอายใจ",
-      "meaning_vi": "Tôi ngượng ngùng / xấu hổ"
+      "meaning_vi": "Tôi ngượng ngùng / xấu hổ",
+      "meaning_pt_br": "Estou envergonhado(a)"
     },
     {
       "id": 9,
@@ -274,7 +289,8 @@
       "meaning_fr": "J'ai été surpris(e) — c'est ce qu'on dit après un 깜짝이야 ! (« Tu m'as fait peur ! »)",
       "meaning_id": "Saya terkejut — 깜짝이야! (Kaget!) memancing ucapan ini",
       "meaning_th": "ฉันตกใจ — 깜짝이야! (ตกใจหมดเลย!) คือคำที่ทำให้ต้องพูดประโยคนี้",
-      "meaning_vi": "Tôi đã giật mình — câu thốt ra sau 깜짝이야! (Hết hồn!)"
+      "meaning_vi": "Tôi đã giật mình — câu thốt ra sau 깜짝이야! (Hết hồn!)",
+      "meaning_pt_br": "Fiquei surpreso(a) — 깜짝이야! (Que susto!) é o que faz você dizer isso"
     },
     {
       "id": 10,
@@ -298,7 +314,8 @@
       "meaning_fr": "Je me sens seul(e) — thème récurrent dans les chansons de K-dramas",
       "meaning_id": "Saya kesepian — tema yang sering muncul dalam lirik K-drama",
       "meaning_th": "ฉันเหงา — เป็นแก่นเรื่องที่พบบ่อยในเนื้อเพลงประกอบซีรีส์เกาหลี",
-      "meaning_vi": "Tôi cô đơn — chủ đề thường gặp trong lời bài hát của phim Hàn"
+      "meaning_vi": "Tôi cô đơn — chủ đề thường gặp trong lời bài hát của phim Hàn",
+      "meaning_pt_br": "Estou solitário(a) — tema comum nas letras de K-drama"
     },
     {
       "id": 11,
@@ -322,7 +339,8 @@
       "meaning_fr": "Je suis fatigué(e) / épuisé(e)",
       "meaning_id": "Saya lelah / kelelahan",
       "meaning_th": "ฉันเหนื่อย / อ่อนเพลีย",
-      "meaning_vi": "Tôi mệt / kiệt sức"
+      "meaning_vi": "Tôi mệt / kiệt sức",
+      "meaning_pt_br": "Estou cansado(a) / exausto(a)"
     },
     {
       "id": 12,
@@ -345,7 +363,8 @@
       "meaning_fr": "Mon cœur s'emballe / je suis tout(e) émoustillé(e) — s'emploie pour l'émoi amoureux",
       "meaning_id": "Saya berdebar-debar / hati berbunga-bunga — dipakai untuk debaran romantis",
       "meaning_th": "ฉันใจเต้นตึกตัก / ตื่นเต้นหวิว ๆ — ใช้กับความตื่นเต้นแบบโรแมนติก",
-      "meaning_vi": "Tôi xao xuyến / tim đập rộn ràng — dùng cho cảm giác rung động khi yêu"
+      "meaning_vi": "Tôi xao xuyến / tim đập rộn ràng — dùng cho cảm giác rung động khi yêu",
+      "meaning_pt_br": "Estou animado(a) / meu coração está acelerado — usado para empolgação romântica"
     },
     {
       "id": 13,
@@ -369,7 +388,8 @@
       "meaning_fr": "Cela me manque, il/elle me manque — 보고 싶어요 est aussi très employé",
       "meaning_id": "Saya rindu (seseorang/sesuatu) — 보고 싶어요 juga banyak dipakai",
       "meaning_th": "ฉันคิดถึง (ใครบางคน/บางสิ่ง) — 보고 싶어요 ก็ใช้กันแพร่หลาย",
-      "meaning_vi": "Tôi nhớ (ai đó/điều gì đó) — 보고 싶어요 cũng được dùng rộng rãi"
+      "meaning_vi": "Tôi nhớ (ai đó/điều gì đó) — 보고 싶어요 cũng được dùng rộng rãi",
+      "meaning_pt_br": "Sinto falta (de alguém/algo) — 보고 싶어요 também é muito usado"
     },
     {
       "id": 14,
@@ -395,7 +415,8 @@
       "meaning_fr": "J'ai été ému(e) / touché(e) — 감동 désigne un « bouleversement émotionnel profond »",
       "meaning_id": "Saya terharu — 감동 adalah \"getaran emosi yang mendalam\"",
       "meaning_th": "ฉันรู้สึกซาบซึ้ง / ประทับใจ — 감동 คือ \"ความสะเทือนใจอย่างลึกซึ้ง\"",
-      "meaning_vi": "Tôi đã xúc động — 감동 là \"sự rung động sâu sắc trong lòng\""
+      "meaning_vi": "Tôi đã xúc động — 감동 là \"sự rung động sâu sắc trong lòng\"",
+      "meaning_pt_br": "Fiquei emocionado(a) / comovido(a) — 감동 é um \"impacto emocional profundo\""
     },
     {
       "id": 15,
@@ -419,7 +440,8 @@
       "meaning_fr": "Stress — 스트레스 받아요 = je suis stressé(e)",
       "meaning_id": "Stres — 스트레스 받아요 = Saya sedang stres",
       "meaning_th": "ความเครียด — 스트레스 받아요 = ฉันรู้สึกเครียด",
-      "meaning_vi": "Căng thẳng (stress) — 스트레스 받아요 = Tôi đang bị căng thẳng"
+      "meaning_vi": "Căng thẳng (stress) — 스트레스 받아요 = Tôi đang bị căng thẳng",
+      "meaning_pt_br": "Estresse — 스트레스 받아요 = Estou estressado(a)"
     },
     {
       "id": 16,
@@ -441,7 +463,8 @@
       "meaning_fr": "Humeur / état d'esprit — 기분이 어때요? = Comment te sens-tu ?",
       "meaning_id": "Perasaan / suasana hati — 기분이 어때요? = Bagaimana perasaanmu?",
       "meaning_th": "ความรู้สึก / อารมณ์ — 기분이 어때요? = คุณรู้สึกอย่างไร?",
-      "meaning_vi": "Tâm trạng / cảm giác — 기분이 어때요? = Tâm trạng thế nào?"
+      "meaning_vi": "Tâm trạng / cảm giác — 기분이 어때요? = Tâm trạng thế nào?",
+      "meaning_pt_br": "Sentimento / humor — 기분이 어때요? = Como você está se sentindo?"
     },
     {
       "id": 17,
@@ -510,6 +533,13 @@
         "Tim tôi đang rung động, xao xuyến vì hồi hộp",
         "Tôi ngượng ngùng",
         "Tôi tức giận"
+      ],
+      "prompt_pt_br": "설레요 é melhor descrito como...",
+      "choices_pt_br": [
+        "Estou cansado(a)",
+        "Meu coração está acelerado de tanta empolgação",
+        "Estou envergonhado(a)",
+        "Estou com raiva"
       ]
     },
     {
@@ -579,6 +609,13 @@
         "Bạn đang cảm thấy thế nào?",
         "Bạn đang đi đâu vậy?",
         "Bạn đã ăn gì?"
+      ],
+      "prompt_pt_br": "기분이 어때요? significa...",
+      "choices_pt_br": [
+        "O que você está fazendo?",
+        "Como você está se sentindo?",
+        "Para onde você está indo?",
+        "O que você comeu?"
       ]
     },
     {
@@ -600,7 +637,8 @@
       "prompt_fr": "Quel mot signifie « Je suis en colère » ?",
       "prompt_id": "Kata mana yang berarti \"Saya marah\"?",
       "prompt_th": "คำใดแปลว่า “ฉันโกรธ”?",
-      "prompt_vi": "Từ nào có nghĩa là \"Tôi tức giận\"?"
+      "prompt_vi": "Từ nào có nghĩa là \"Tôi tức giận\"?",
+      "prompt_pt_br": "Qual palavra significa \"Estou com raiva\"?"
     },
     {
       "id": 20,
@@ -625,7 +663,9 @@
       "message_fr": "감동이에요 ! (Je suis ému !) Vous avez maintenant les mots pour exprimer votre monde intérieur en coréen. La musique, les dramas et les conversations coréennes regorgent de ces émotions — vous les repérerez désormais partout.",
       "message_id": "감동이에요! (Saya terharu!) Kini kamu punya bahasa untuk mengungkapkan dunia batinmu dalam bahasa Korea. Musik, drama, dan percakapan Korea penuh dengan emosi-emosi ini — sekarang kamu akan menemukannya di mana-mana.",
       "message_th": "감동이에요! (ซาบซึ้งจัง!) ตอนนี้คุณมีภาษาที่ใช้ถ่ายทอดโลกภายในของตัวเองเป็นภาษาเกาหลีได้แล้ว เพลง ซีรีส์ และบทสนทนาภาษาเกาหลีเต็มไปด้วยอารมณ์เหล่านี้ — ต่อจากนี้คุณจะสังเกตเห็นมันได้ทุกที่",
-      "message_vi": "감동이에요! (Tôi thật cảm động!) Giờ bạn đã có ngôn ngữ để diễn đạt thế giới nội tâm của mình bằng tiếng Hàn. Âm nhạc, phim truyền hình và các cuộc trò chuyện Hàn Quốc tràn ngập những cảm xúc này — từ giờ bạn sẽ nhận ra chúng ở khắp nơi."
+      "message_vi": "감동이에요! (Tôi thật cảm động!) Giờ bạn đã có ngôn ngữ để diễn đạt thế giới nội tâm của mình bằng tiếng Hàn. Âm nhạc, phim truyền hình và các cuộc trò chuyện Hàn Quốc tràn ngập những cảm xúc này — từ giờ bạn sẽ nhận ra chúng ở khắp nơi.",
+      "title_pt_br": "Emoções Completas!",
+      "message_pt_br": "감동이에요! (Estou emocionado!) Agora você tem o vocabulário para expressar seu mundo interior em coreano. A música, os dramas e as conversas coreanas estão cheios dessas emoções — a partir de agora, você vai notá-las em todo lugar."
     }
   ]
 }

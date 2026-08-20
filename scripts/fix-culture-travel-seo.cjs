@@ -64,19 +64,46 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const registry = require('./_locales.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const CHECK_ONLY = process.argv.includes('--check');
 const ORIGIN = 'https://freekoreanschool.com';
 
+/* ── Locales, from the registry (scripts/_locales.cjs) ─────────────────────
+   Only `status: 'live'` locales get an hreflang tag. A 'planned' locale may
+   already have generated-but-untranslated pages on disk during its rollout;
+   those pages are skipped wholesale (see listPages) so this script neither
+   crashes on an unknown directory nor advertises an unfinished locale to
+   Google.
+
+   ⚠️ EMISSION ORDER. The registry orders locales en, zh-tw, ja, es, fr, de,
+   vi, th, id; this script has written en, ja, zh-tw, es, de, fr, vi, th, id
+   into ~380 committed pages since 2026-07. Link order inside an hreflang
+   cluster carries no meaning for Google, so the legacy order is pinned here
+   rather than rewriting every page for a no-op diff. New locales append after
+   it in registry order. The SET comes from the registry; only the sequence is
+   frozen. The reciprocity check below depends on the order being STABLE, not
+   on it being any particular order. */
+const LEGACY_ORDER = ['en', 'ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
+const LIVE = registry.live()
+  .map((l, i) => ({ l, i }))
+  .sort((a, b) => {
+    const ra = LEGACY_ORDER.indexOf(a.l.code), rb = LEGACY_ORDER.indexOf(b.l.code);
+    return (ra < 0 ? LEGACY_ORDER.length : ra) - (rb < 0 ? LEGACY_ORDER.length : rb) || a.i - b.i;
+  })
+  .map(x => x.l);
+
 /* Locale directory name -> hreflang code. `en` lives at the section root. */
-const LOCALES = {
-  ja: 'ja', 'zh-tw': 'zh-TW', es: 'es', de: 'de',
-  fr: 'fr', vi: 'vi', th: 'th', id: 'id',
-};
-const LOC_DIRS = Object.keys(LOCALES);
-/* Emission order: en first, then the 8 locale dirs, then x-default. */
-const HREFLANG_ORDER = ['en', ...LOC_DIRS];
+const LOCALES = Object.fromEntries(LIVE.map(l => [l.code, l.hreflang]));
+const LOC_DIRS = LIVE.filter(l => l.code !== 'en').map(l => l.code);
+/* Emission order: en first, then the live locale dirs, then x-default. */
+const HREFLANG_ORDER = LIVE.map(l => l.code);
+/* Every registry directory, live or planned — used only to recognize a
+   directory as a locale so an in-rollout locale is skipped rather than
+   throwing "unknown locale dir". */
+const KNOWN_DIRS = new Set(registry.all().filter(l => l.code !== 'en').map(l => l.code));
+const LIVE_DIRS = new Set(LOC_DIRS);
 
 /* Pages that are interactive tools, not articles. Thin in EVERY locale
    (99-336 words, h2=0, p=2), so they stay noindex and get no byline. */
@@ -98,22 +125,19 @@ const PUBLISHER = {
 /* ── Visible byline, localized ─────────────────────────────────────────────
    `by` and `updated` are joined around a <time> element. The author name is
    left in its original Korean+romanization form in every locale — it is a
-   proper noun and the about page uses exactly this rendering. */
-const BYLINE = {
-  en:      { by: 'By',      upd: 'Last updated',    fmt: 'en-GB' },
-  ja:      { by: '執筆',    upd: '最終更新',        fmt: 'ja-JP' },
-  'zh-tw': { by: '作者',    upd: '最後更新',        fmt: 'zh-TW' },
-  es:      { by: 'Por',     upd: 'Última actualización', fmt: 'es-ES' },
-  de:      { by: 'Von',     upd: 'Zuletzt aktualisiert', fmt: 'de-DE' },
-  fr:      { by: 'Par',     upd: 'Dernière mise à jour', fmt: 'fr-FR' },
-  vi:      { by: 'Bởi',     upd: 'Cập nhật lần cuối',    fmt: 'vi-VN' },
-  /* force the Gregorian calendar — ICU defaults `th` to the Buddhist era,
-     which would render 2026 as 2569 and read as a typo. */
-  th:      { by: 'โดย',     upd: 'อัปเดตล่าสุด',    fmt: 'th-TH-u-ca-gregory' },
-  id:      { by: 'Oleh',    upd: 'Terakhir diperbarui',  fmt: 'id-ID' },
-};
-/* ja/zh-tw use a full-width interpunct and a colon after the label. */
-const CJK = new Set(['ja', 'zh-tw']);
+   proper noun and the about page uses exactly this rendering.
+
+   Both the labels and the Intl.DateTimeFormat locale come from the registry's
+   `byline: { by, upd, fmt }` field. Notable per-locale detail preserved there:
+   `th` forces the Gregorian calendar, because ICU defaults `th` to the
+   Buddhist era and would render 2026 as 2569, reading as a typo. */
+const BYLINE = Object.fromEntries(LIVE.map(l => [l.code, l.byline]));
+/* CJK locales use a full-width interpunct and a colon after the label. */
+const CJK = new Set(LIVE.filter(l => l.cjk).map(l => l.code));
+/* Right-to-left locales need dir="rtl" on <html>. Registry-driven and
+   currently EMPTY — `ar` is the only rtl record and it is still 'planned', so
+   the rtl step below is a proven no-op for all 9 shipped locales. */
+const RTL = new Set(LIVE.filter(l => l.writing === 'rtl').map(l => l.code));
 
 /* ── Real git-derived dates (see header). ─────────────────────────────────── */
 const DATES = require('./culture-travel-dates.json');
@@ -169,7 +193,15 @@ function listPages() {
       }
     })(path.join(ROOT, section));
   }
-  return out.sort();
+  /* Skip pages that belong to a registry locale that is not live yet. During
+     a rollout the generators create that locale's shells before its prose
+     exists; giving them canonical/hreflang/JSON-LD here would invite Google
+     to index untranslated pages. They are picked up automatically when the
+     locale flips to 'live'. */
+  return out.filter(rel => {
+    const dir = rel.split('/')[1];
+    return !(KNOWN_DIRS.has(dir) && !LIVE_DIRS.has(dir));
+  }).sort();
 }
 const PAGES = listPages();
 const PAGE_SET = new Set(PAGES);
@@ -274,6 +306,21 @@ function patch(rel) {
   const isTool = TOOL_PAGES.test(rel);
   const canon = urlFor(rel);
 
+  /* 0 ── writing direction. Registry `writing: 'rtl'` locales get dir="rtl"
+         on <html>; every other locale must NOT carry one. RTL is empty for
+         all 9 live locales (only the planned `ar` is rtl), so this is a
+         verified no-op today and the correct behaviour the day `ar` ships.
+         Only the dir attribute is touched — lang= is left to the generators. */
+  {
+    const { loc } = parse(rel);
+    const wantRtl = RTL.has(loc);
+    src = src.replace(/<html\b([^>]*)>/i, (m, attrs) => {
+      const stripped = attrs.replace(/\s+dir="[^"]*"/gi, '');
+      return wantRtl ? `<html${stripped} dir="rtl">` : `<html${stripped}>`;
+    });
+    if (src !== orig) msgs.push(wantRtl ? 'dir-rtl' : 'dir-removed');
+  }
+
   /* 1 ── robots. Lift the stale translation gate; keep/apply noindex only on
          the interactive tool pages, which are thin in every locale. */
   const robotsRe = /^[ \t]*<meta\s+name="robots"[^>]*>[ \t]*\n/gim;
@@ -374,6 +421,11 @@ function verify() {
     const p = [];
     const isTool = TOOL_PAGES.test(rel);
     const want = urlFor(rel);
+
+    /* writing direction — rtl locales only (none are live today) */
+    const htmlTag = (s.match(/<html\b[^>]*>/i) || [''])[0];
+    const hasDir = /\sdir="rtl"/i.test(htmlTag);
+    if (RTL.has(parse(rel).loc) !== hasDir) p.push(hasDir ? 'UNEXPECTED-RTL' : 'MISSING-RTL');
 
     /* robots */
     const noindex = /<meta[^>]+name="robots"[^>]*noindex/i.test(s);

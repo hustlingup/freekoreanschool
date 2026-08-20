@@ -46,7 +46,20 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SECTIONS = ['culture', 'travel'];
-const LOCALES = ['ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
+const REG = require('./_locales.cjs');
+// LOCALES was a hardcoded array; now registry-driven. `--locales` overrides
+// the default live-8 scope, including with a 'planned' code — see the
+// missingLocales reporting near the bottom for how that degrades honestly.
+const argLocales = (() => {
+  const i = process.argv.indexOf('--locales');
+  return i !== -1 && process.argv[i + 1]
+    ? process.argv[i + 1].split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
+    : null;
+})();
+if (argLocales) argLocales.forEach(c => {
+  if (!REG.get(c) || c === 'en') throw new Error(`unknown locale "${c}" — not in scripts/_locales.cjs`);
+});
+const LOCALES = argLocales || REG.liveDirs();
 const { HANGUL, SENTENCE_MIN, proseNodes } = require('./_locale-prose.cjs');
 
 function score(localeHtml, enHtml) {
@@ -72,10 +85,13 @@ function score(localeHtml, enHtml) {
 }
 
 const rows = [];
+const missingLocales = new Set();
+const seenLocales = new Set();
 for (const section of SECTIONS) {
   for (const loc of LOCALES) {
     const dir = path.join(ROOT, section, loc);
-    if (!fs.existsSync(dir)) continue;
+    if (!fs.existsSync(dir)) { missingLocales.add(loc); continue; }
+    seenLocales.add(loc);
     for (const f of fs.readdirSync(dir).filter(x => x.endsWith('.html'))) {
       const src = path.join(ROOT, section, f);
       if (!fs.existsSync(src)) continue;
@@ -83,6 +99,15 @@ for (const section of SECTIONS) {
       rows.push({ page: `${section}/${loc}/${f}`, section, locale: loc, file: f, ...r });
     }
   }
+}
+
+// A locale never found in EITHER section produces zero rows and used to
+// vanish from every mode below — indistinguishable from "fully translated".
+// Printed on stderr so it never corrupts --json's stdout contract: check 5
+// of audit-i18n.cjs JSON.parses that output as a bare array of rows.
+const trulyMissing = [...missingLocales].filter(l => !seenLocales.has(l));
+if (trulyMissing.length) {
+  console.error(`${trulyMissing.length} locale(s) NOT PRESENT on disk in either section — 0% scanned, not "0% English": ${trulyMissing.join(', ')}`);
 }
 
 const showIdx = process.argv.indexOf('--show');
@@ -106,4 +131,7 @@ if (showIdx !== -1) {
   const warn = rows.filter(r => r.sentenceRatio >= 0.2 && r.sentenceRatio < 0.5);
   console.log(`\n${bad.length} of ${rows.length} pages have >=50% of their sentence-length prose still verbatim English.`);
   console.log(`${warn.length} more are between 20% and 50%.`);
+  if (trulyMissing.length) {
+    console.log(`${trulyMissing.length} locale(s) NOT PRESENT on disk (not counted above, not a pass): ${trulyMissing.join(', ')}`);
+  }
 }

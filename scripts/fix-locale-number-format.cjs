@@ -16,11 +16,13 @@
        en, ja, th, zh-tw → comma   1,000   (already correct — untouched)
 
    The fr separator is a PLAIN space (U+0020), not a no-break space, because
-   that is what every pre-existing fr number on these pages already uses
-   ("30 000", "60 000", "5 000" — zero U+00A0 anywhere). French typography
-   would prefer a narrow no-break space so prices cannot wrap mid-number, but
-   mixing two space characters across the corpus is worse than matching what
-   is there. Converting the whole fr corpus to U+202F is a separate change.
+   that is what the fr numbers on these pages overwhelmingly use — 96 U+0020
+   groupings against 17 U+00A0 (measured 2026-08-12; the "zero U+00A0 anywhere"
+   this comment used to claim was never true, and the constant below silently
+   wrote U+00A0 for fr while the comment said U+0020). French typography would
+   prefer a narrow no-break space so prices cannot wrap mid-number, but mixing
+   space characters across the corpus is worse than matching what is there.
+   Converting the whole fr corpus to U+202F is a separate change.
 
    ⚠️ THE HANGUL GUARD IS THE WHOLE TRICK. Most comma-thousands on these
    pages sit inside KOREAN text — "3,000만 개 이상 판매", "최대 1,000배" — which
@@ -47,8 +49,33 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const SEP = { de: '.', es: '.', id: '.', vi: '.', fr: ' ' };   // fr: plain space (U+0020) — see header
-const LOCALES = Object.keys(SEP);
+/* ── Separators, from the registry (scripts/_locales.cjs) ──────────────────
+   `numberSep` is the registry's per-locale thousands separator, and it is now
+   the only place the convention is written down. de/es/id/vi period, fr space,
+   en/ja/th/zh-tw comma — the same values this script used to hardcode, with ONE
+   correction: the hardcoded fr separator was a NO-BREAK space (U+00A0) even
+   though this file's own header states, twice, that fr uses a PLAIN space
+   (U+0020) to match the ~96 pre-existing fr numbers on these pages. The
+   registry says U+0020, which is what the header always intended. The 17
+   U+00A0 groupings already sitting in culture/fr/{kbeauty,koreanthing,ramyeon}
+   and travel/fr/cities are a pre-existing inconsistency in the PAGES, out of
+   this script's reach (it only ever rewrites comma-grouped numbers).
+
+   The default sweep covers LIVE locales whose separator is not the comma: a
+   comma locale's pages are already in that format, so the rewrite is a
+   guaranteed no-op there. `--locale <code>` accepts any registry code,
+   including a 'planned' locale being staged, since normalizing numbers is not
+   a public emission.
+
+   ⚠️ `ms` groups with a COMMA and `id` with a PERIOD. They are not
+   interchangeable — which is precisely why the value belongs in the registry
+   instead of being copy-pasted between locales here. */
+const registry = require('./_locales.cjs');
+const SEP = Object.fromEntries(
+  registry.all().filter(l => l.code !== 'en').map(l => [l.code, l.numberSep]));
+const LOCALES = registry.live()
+  .filter(l => l.code !== 'en' && l.numberSep !== ',')
+  .map(l => l.code);
 const DIRS = ['culture', 'travel'];
 
 const CHECK = process.argv.includes('--check');
@@ -117,7 +144,8 @@ let totalChanged = 0, filesChanged = 0, drift = 0;
 
 (only ? [only] : LOCALES).forEach(loc => {
   const sep = SEP[loc];
-  if (!sep) { console.error(`no convention for locale ${loc}`); return; }
+  if (sep === undefined) { console.error(`no such locale in the registry: ${loc}`); return; }
+  if (sep === ',') { console.log(`${loc} groups with a comma — already correct, nothing to do`); return; }
   pagesFor(loc).forEach(rel => {
     const abs = path.join(ROOT, rel);
     const src = fs.readFileSync(abs, 'utf8');

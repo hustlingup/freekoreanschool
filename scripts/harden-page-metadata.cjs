@@ -95,14 +95,39 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;')
 const unesc = s => String(s).replace(/&quot;/g, '"').replace(/&lt;/g, '<')
   .replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 
-/* ── Inventory ─────────────────────────────────────────────────────────── */
-const LANGS = ['ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
-const ALL = ['en', ...LANGS];
+/* ── Inventory ─────────────────────────────────────────────────────────────
+   Locales come from the registry (scripts/_locales.cjs). Only `status:'live'`
+   locales are inventoried: a 'planned' locale's shells may exist on disk mid
+   rollout, and giving them a canonical + a self-referential hreflang would
+   invite Google to index untranslated pages. They join automatically when the
+   locale flips to 'live'.
+
+   ⚠️ EMISSION ORDER. The registry orders locales en, zh-tw, ja, es, fr, de,
+   vi, th, id; this script has written en, ja, zh-tw, es, de, fr, vi, th, id
+   into 207 committed pages. Order inside an hreflang cluster means nothing to
+   Google, so the legacy sequence is pinned rather than rewriting every page
+   for a no-op diff; NEW locales append after it in registry order. The SET is
+   the registry's — only the sequence is frozen. */
+const registry = require('./_locales.cjs');
+const LEGACY_ORDER = ['en', 'ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
+const LIVE = registry.live()
+  .map((l, i) => ({ l, i }))
+  .sort((a, b) => {
+    const ra = LEGACY_ORDER.indexOf(a.l.code), rb = LEGACY_ORDER.indexOf(b.l.code);
+    return (ra < 0 ? LEGACY_ORDER.length : ra) - (rb < 0 ? LEGACY_ORDER.length : rb) || a.i - b.i;
+  })
+  .map(x => x.l);
+const ALL = LIVE.map(l => l.code);
+const LANGS = ALL.filter(c => c !== 'en');
 const ROOTPAGES = ['index', 'about', 'contact', 'privacy', 'terms', 'search', 'quiz'];
 // hreflang code per directory. zh-tw ships as the region-qualified zh-TW.
-const HREF = { en: 'en', ja: 'ja', 'zh-tw': 'zh-TW', es: 'es', de: 'de', fr: 'fr', vi: 'vi', th: 'th', id: 'id' };
+const HREF = Object.fromEntries(LIVE.map(l => [l.code, l.hreflang]));
 // BCP-47 for schema.org inLanguage — the language the PAGE is written in.
 const BCP = HREF;
+// Right-to-left locales get dir="rtl" on <html>. Empty today: `ar` is the only
+// rtl record in the registry and it is still 'planned', so the step below is a
+// verified no-op across all 9 shipped locales.
+const RTL = new Set(LIVE.filter(l => l.writing === 'rtl').map(l => l.code));
 
 const LEARN_SLUGS = fs.readdirSync(path.join(ROOT, 'learn'))
   .filter(f => f.endsWith('.html')).map(f => f.replace(/\.html$/, '')).sort();
@@ -353,6 +378,21 @@ function auditNoindex() {
   return { unexpected, missing };
 }
 
+/* ══ PART 1b — writing direction ══════════════════════════════════════════
+   `<html dir="rtl">` for registry `writing: 'rtl'` locales, and no dir
+   attribute for anyone else. RTL is empty while `ar` is 'planned', so this is
+   provably inert for the 9 live locales; it is here so the day `ar` flips the
+   attribute lands without another 200-file hand pass. lang= is deliberately
+   untouched — that belongs to the mirror generators. */
+function patchDir(f, src) {
+  const want = RTL.has(f.lang);
+  const out = src.replace(/<html\b([^>]*)>/i, (m, attrs) => {
+    const stripped = attrs.replace(/\s+dir="[^"]*"/gi, '');
+    return want ? `<html${stripped} dir="rtl">` : `<html${stripped}>`;
+  });
+  return { out, msgs: out === src ? [] : [want ? 'dir-rtl' : 'dir-removed'] };
+}
+
 /* ══ PART 2/3 — canonical + hreflang ══════════════════════════════════════ */
 function hreflangBlock(kind, slug) {
   const sibs = siblings(kind, slug);
@@ -586,7 +626,7 @@ function apply() {
     let src = orig;
     const msgs = [];
     // Copy first: schema reads the final title/description.
-    for (const step of [patchCopy, patchLinks, patchSchema]) {
+    for (const step of [patchDir, patchCopy, patchLinks, patchSchema]) {
       const r = step(f, src);
       src = r.out; msgs.push(...r.msgs);
     }
@@ -620,6 +660,10 @@ function verify() {
     const self = urlFor(f.lang, f.kind, f.slug);
     const p = [];
 
+    // writing direction (rtl locales only — none are live today)
+    const hasDir = /\sdir="rtl"/i.test((h.match(/<html\b[^>]*>/i) || [''])[0]);
+    if (RTL.has(f.lang) !== hasDir) p.push(hasDir ? 'UNEXPECTED dir=rtl' : 'MISSING dir=rtl');
+
     // canonical
     const canon = [...h.matchAll(/<link rel="canonical" href="([^"]*)"/g)].map(m => m[1]);
     if (canon.length !== 1) p.push(`CANON x${canon.length}`);
@@ -650,7 +694,11 @@ function verify() {
     // Length floors are script-aware: ja/zh-TW/th pack far more meaning per
     // character, so a 32-character Japanese description is a full sentence, not
     // a stub. Judging them on a Latin-script floor would flag good copy.
-    const dense = ['ja', 'zh-tw', 'th'].includes(f.lang);
+    // Registry-driven: every CJK locale, plus Thai, which is unspaced and
+    // equally dense without being CJK. This is the same set as the previous
+    // hardcoded ['ja','zh-tw','th'] and extends correctly to zh-hk/zh-cn.
+    const denseCode = c => { const l = registry.get(c); return !!l && (l.cjk || c === 'th'); };
+    const dense = denseCode(f.lang);
     const minD = dense ? 20 : 50;
     if (d && (d.length < minD || d.length > 320)) p.push(`DESC ${d.length}c`);
     if (t) (seenTitle[t] = seenTitle[t] || []).push(f.rel);

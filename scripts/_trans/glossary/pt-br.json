@@ -1,0 +1,109 @@
+{
+  "locale": "pt-br",
+  "language": "Português do Brasil",
+  "authored": "2026-08-13",
+  "purpose": "Binding terminology + register decisions for every pt-BR translation agent. Parallel agents cannot see each other's work; this file is what keeps 631 UI keys, 2065 lesson units and ~107k words of prose consistent. Every translator reads it before starting; every QA reviewer audits against it.",
+
+  "register": {
+    "address": "você — informal, warm, direct. Never tu. Never o senhor / a senhora except inside a Korean service-desk roleplay where the Korean itself is formal.",
+    "imperatives": "Use the você imperative ('Comece', 'Escolha', 'Ouça'), not the tu imperative ('Começa', 'Escolhe').",
+    "tone": "Friendly teacher explaining to an adult beginner. Not academic, not childish, not marketing-hype.",
+    "gender": "Prefer gender-neutral phrasing for the learner where natural ('quem aprende', 'estudantes'). Do NOT use @ or x endings — they read as web-forum style and break screen readers.",
+    "variety": "Brazilian, not European. Concretely: 'usuário' not 'utilizador', 'tela' not 'ecrã', 'time' not 'equipa', 'celular' not 'telemóvel', 'ônibus' not 'autocarro', 'trem' not 'comboio', 'café da manhã' not 'pequeno-almoço', gerund ('está aprendendo') not 'está a aprender'."
+  },
+
+  "never_translate": {
+    "korean": "All Hangul (한글, 한복, 삼겹살 …) stays exactly as written. Never transliterate it into Latin, never translate it away.",
+    "kr_trans_blocks": "Any <div class=\"kr-trans\">…</div> is a Korean gloss — leave the whole block untouched.",
+    "romanization": "Revised Romanization in parentheses or in .rom-line / .rom-text / .rom-cell / .phrase-rom / .food-card-rom / .bap-rom nodes — identical in every locale by design.",
+    "brands": ["K-Pop", "K-Drama", "K-Beauty", "K-BBQ", "K-Food", "K-Fashion", "K-Gaming", "K-Sports", "K-Culture", "Hangul", "TOPIK", "KTX", "Netflix", "BTS", "BLACKPINK", "MBTI", "Konglish", "UNESCO", "Korean School", "한국어 학교"],
+    "note_on_brands": "Band, drama, film, agency, chef, restaurant and product names stay in their established Latin or Korean form. When unsure whether a term is a kept brand, check what culture/es/kbeauty.html did — if Spanish kept it in English, keep it."
+  },
+
+  "place_names": {
+    "rule": "Use the established Portuguese exonym where one genuinely exists; otherwise keep the Latin transliteration unchanged.",
+    "translate": { "South Korea": "Coreia do Sul", "North Korea": "Coreia do Norte", "Korea": "Coreia", "Seoul": "Seul", "Han River": "Rio Han", "Yellow Sea": "Mar Amarelo" },
+    "keep": ["Busan", "Jeju", "Incheon", "Daegu", "Gwangju", "Daejeon", "Ulsan", "Gyeongju", "Jeonju", "Sokcho", "Gangnam", "Hongdae", "Myeongdong", "Itaewon", "Bukchon", "Insadong"]
+  },
+
+  "domain_terms": {
+    "lesson": "lição",
+    "step": "etapa",
+    "stage": "estágio",
+    "vocabulary": "vocabulário",
+    "word bank": "banco de palavras",
+    "flashcard": "cartão de memorização",
+    "quiz": "quiz",
+    "syllable block": "bloco silábico",
+    "syllable": "sílaba",
+    "letter": "letra",
+    "consonant": "consoante",
+    "vowel": "vogal",
+    "batchim": "batchim (consoante final)",
+    "stroke order": "ordem dos traços",
+    "stroke": "traço",
+    "romanization": "romanização",
+    "pronunciation": "pronúncia",
+    "speech level": "nível de formalidade",
+    "honorific": "forma honorífica",
+    "particle": "partícula",
+    "verb conjugation": "conjugação verbal",
+    "sentence structure": "estrutura da frase",
+    "streak": "sequência",
+    "progress": "progresso",
+    "beginner": "iniciante",
+    "intermediate": "intermediário",
+    "advanced": "avançado",
+    "learning path": "trilha de aprendizado",
+    "Word of the Day": "Palavra do Dia",
+    "Mark as Complete": "Marcar como concluída",
+    "Hear it": "Ouvir",
+    "Replay": "Repetir",
+    "Continue": "Continuar",
+    "Try Again": "Tentar de novo",
+    "Start Learning": "Começar a aprender",
+    "Search...": "Buscar...",
+    "Last updated": "Última atualização",
+    "By": "Por",
+
+    "_note": "Added 2026-08-13 after the learn-shell pass — terms the translators had to choose because they were not here. Recurring across pages, so they must be fixed.",
+    "card": "cartão",
+    "deck": "baralho",
+    "Getting Started": "Primeiros Passos",
+    "Study Tool": "Ferramenta de Estudo",
+    "Shuffle": "Embaralhar",
+    "Practice": "Praticar",
+    "Free-Play Syllable Builder": "Construtor de Sílabas Livre",
+
+    "_kept_english": "Tool names kept as English loanwords — verified es and de do the same: Flashcards, Browser, Quiz, min (abbreviation)."
+  },
+
+  "numbers_and_dates": {
+    "thousands_separator": ". (ponto) — R$ 1.000, ₩80.000",
+    "decimal_separator": ", (vírgula)",
+    "date_locale": "pt-BR",
+    "currency_note": "Korean won stays ₩ with the Brazilian separator (₩80.000). Do NOT convert prices to reais — they are facts about Korea, not offers to the reader.",
+    "hangul_guard": "⚠️ Numbers sitting inside Korean text ('3,000만 개 이상') use the KOREAN comma convention and must NOT be reformatted. scripts/fix-locale-number-format.cjs enforces this; do not hand-edit those."
+  },
+
+  "typography": {
+    "quotes": "Use “ ” for quoted speech. Do not use straight ASCII quotes in prose.",
+    "ellipsis": "Keep the source's … character rather than three periods.",
+    "no_space_before_colon": "Unlike French, Portuguese takes NO space before : ; ! ?",
+    "entities": "Leave &amp; &#39; &quot; intact — never decode them into raw characters."
+  },
+
+  "hard_rules": [
+    "Only ever ADD _pt_br fields to learn/data/*.json. Never modify the base/English field or another locale's field.",
+    "choices / rules arrays are ORDER-LOAD-BEARING — the quiz answer is matched by index. Preserve length and order exactly.",
+    "An all-Korean choices array must have NO choices_pt_br copy at all. Hangul is Hangul in every locale; a per-locale copy both drifts and leaks the answer.",
+    "Keep {placeholders}, \\n breaks and emoji exactly as in the source.",
+    "Never translate a lesson's Korean example into Portuguese in place of the Korean — translate only the surrounding explanation.",
+    "Do not weaken a grammar explanation to make it read more smoothly. A mistranslated grammar point is a worse defect than an untranslated one."
+  ],
+
+  "pronunciation_aid": {
+    "decision": "NONE. pt-BR is Latin-script and uses the shared Revised-Romanization line already present on every page. Do not invent a reading_pt_br field.",
+    "registry": "scripts/_locales.cjs pt-br.pronField === null — keep it that way."
+  }
+}

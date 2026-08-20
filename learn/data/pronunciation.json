@@ -16,7 +16,8 @@
       "name_vi": "Batchim (받침)",
       "name_th": "บัดชิม",
       "name_id": "Batchim (받침)",
-      "name_ja": "パッチム"
+      "name_ja": "パッチム",
+      "name_pt_br": "Batchim (받침)"
     },
     {
       "id": 2,
@@ -32,7 +33,8 @@
       "name_vi": "Nối âm (연음화)",
       "name_th": "การเชื่อมเสียง",
       "name_id": "Liaison (연음화)",
-      "name_ja": "連音化"
+      "name_ja": "連音化",
+      "name_pt_br": "Ligação (연음화)"
     },
     {
       "id": 3,
@@ -48,7 +50,8 @@
       "name_vi": "Đồng hóa mũi",
       "name_th": "การดูดกลืนเสียง",
       "name_id": "Asimilasi Nasal (비음화)",
-      "name_ja": "鼻音化"
+      "name_ja": "鼻音化",
+      "name_pt_br": "Assimilação Nasal"
     },
     {
       "id": 4,
@@ -64,7 +67,8 @@
       "name_vi": "Biến âm căng",
       "name_th": "การเกร็งเสียง",
       "name_id": "Tensifikasi (경음화)",
-      "name_ja": "濃音化"
+      "name_ja": "濃音化",
+      "name_pt_br": "Tensificação"
     },
     {
       "id": 5,
@@ -80,7 +84,8 @@
       "name_vi": "Ngạc hóa & ㄹ",
       "name_th": "เพดานปากและ ㄹ",
       "name_id": "Palatalisasi & ㄹ (구개음화)",
-      "name_ja": "口蓋音化とㄹ"
+      "name_ja": "口蓋音化とㄹ",
+      "name_pt_br": "Palatalização e ㄹ"
     },
     {
       "id": 6,
@@ -96,7 +101,8 @@
       "name_vi": "Lỗi thường gặp",
       "name_th": "ข้อผิดพลาดทั่วไป",
       "name_id": "Kesalahan Umum (흔한 실수)",
-      "name_ja": "よくある間違い"
+      "name_ja": "よくある間違い",
+      "name_pt_br": "Erros Comuns"
     }
   ],
   "steps": [
@@ -159,7 +165,14 @@
         "label": "Âm tiết nào có batchim?",
         "text": "Hãy nhìn vào bất kỳ khối âm tiết tiếng Hàn nào. Nếu có một ký tự bên dưới nguyên âm, đó là batchim. 가 không có batchim. 간 có batchim ㄴ. 닭 có batchim đôi ㄺ (đọc thành một âm)."
       },
-      "title_ja": "パッチムとは？"
+      "title_ja": "パッチムとは？",
+      "title_pt_br": "O Que é o Batchim?",
+      "body_pt_br": "Um batchim (받침, literalmente \"suporte\") é uma consoante colocada na parte inferior de um bloco de sílaba coreano. Por exemplo, na sílaba 강, o ㅇ na parte inferior é o batchim. Nem toda sílaba tem batchim — muitas terminam apenas com a vogal. O batchim é o motivo pelo qual palavras coreanas como 산, 달 e 밥 terminam com um som consonantal distinto em vez de uma vogal aberta.",
+      "tip_pt_br": {
+        "icon": "🔷",
+        "label": "Quais sílabas têm batchim?",
+        "text": "Olhe para qualquer bloco de sílaba coreano. Se houver um caractere abaixo da vogal, esse é o batchim. 가 não tem batchim. 간 tem batchim ㄴ. 닭 tem batchim duplo ㄺ (lido como um único som)."
+      }
     },
     {
       "id": 2,
@@ -301,7 +314,23 @@
         "label": "Âm tắc không bật hơi — nghĩa là gì?",
         "text": "Các âm batchim k, t và p là âm không bật hơi: miệng bạn tạo thành vị trí phát âm nhưng không nhả ra luồng hơi. Hãy nghĩ đến việc giữ âm p cuối trong 'cup' — cup_ — mà không cho hơi thoát ra. Batchim ㄱ/ㄷ/ㅂ của tiếng Hàn hoạt động theo cách tương tự."
       },
-      "title_ja": "パッチムの7つの音グループ"
+      "title_ja": "パッチムの7つの音グループ",
+      "title_pt_br": "Os 7 Grupos de Sons do Batchim",
+      "body_pt_br": "Embora muitas consoantes diferentes possam aparecer como batchim na escrita, todas se reduzem a apenas 7 sons possíveis na pronúncia. Isso é conhecido como as 7 regras do batchim (받침 7종성). Aprender esses 7 grupos é essencial — explica por que 닭 (frango) e 국 (sopa) terminam com o mesmo som k.",
+      "rules_pt_br": [
+        "Grupo ㄱ: ㄱ, ㄲ, ㅋ, ㄳ, ㄺ → pronunciado k (sem explosão) — exemplo: 국 (sopa), 닭 (frango)",
+        "Grupo ㄴ: ㄴ, ㄵ, ㄶ → pronunciado n — exemplo: 산 (montanha), 앉다 (sentar)",
+        "Grupo ㄷ: ㄷ, ㅅ, ㅆ, ㅈ, ㅊ, ㅌ, ㅎ → pronunciado t (sem explosão) — exemplo: 옷 (roupa), 꽃 (flor)",
+        "Grupo ㄹ: ㄹ, ㄼ, ㄽ, ㄾ, ㅀ → pronunciado l — exemplo: 달 (lua), 말 (cavalo)",
+        "Grupo ㅁ: ㅁ, ㄻ → pronunciado m — exemplo: 밤 (noite), 삶 (vida)",
+        "Grupo ㅂ: ㅂ, ㅍ, ㄿ, ㄼ → pronunciado p (sem explosão) — exemplo: 입 (boca), 앞 (frente)",
+        "Grupo ㅇ: ㅇ → pronunciado ng — exemplo: 강 (rio), 방 (quarto)"
+      ],
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Oclusivas sem explosão — o que isso significa?",
+        "text": "Os sons de batchim k, t e p são sem explosão: sua boca forma a posição, mas não libera uma rajada de ar. Pense em segurar o p final de \"cup\" (em inglês) — cup_ — sem deixar o ar sair. O batchim coreano ㄱ/ㄷ/ㅂ funciona da mesma forma."
+      }
     },
     {
       "id": 3,
@@ -321,7 +350,8 @@
       "meaning_de": "Suppe — ㄱ-Gruppe Batchim, ausgesprochen k (nicht freigegeben)",
       "meaning_vi": "canh — nhóm batchim ㄱ, phát âm k (không bật hơi)",
       "meaning_th": "ซุป — บัดชิมกลุ่ม ㄱ ออกเสียง ก (ไม่ระเบิด)",
-      "meaning_id": "sup — batchim kelompok ㄱ, dilafalkan k (tidak dilepas)"
+      "meaning_id": "sup — batchim kelompok ㄱ, dilafalkan k (tidak dilepas)",
+      "meaning_pt_br": "sopa — batchim do grupo ㄱ, pronunciado k (sem explosão)"
     },
     {
       "id": 4,
@@ -341,7 +371,8 @@
       "meaning_de": "Berg — ㄴ-Gruppe Batchim, ausgesprochen n",
       "meaning_vi": "núi — nhóm batchim ㄴ, phát âm n",
       "meaning_th": "ภูเขา — บัดชิมกลุ่ม ㄴ ออกเสียง น",
-      "meaning_id": "gunung — batchim kelompok ㄴ, dilafalkan n"
+      "meaning_id": "gunung — batchim kelompok ㄴ, dilafalkan n",
+      "meaning_pt_br": "montanha — batchim do grupo ㄴ, pronunciado n"
     },
     {
       "id": 5,
@@ -361,7 +392,8 @@
       "meaning_de": "Kleidung — ㄷ-Gruppe Batchim (ㅅ→t), ausgesprochen t (nicht freigegeben)",
       "meaning_vi": "quần áo — nhóm batchim ㄷ (ㅅ→t), phát âm t (không bật hơi)",
       "meaning_th": "เสื้อผ้า — บัดชิมกลุ่ม ㄷ (ㅅ→ต) ออกเสียง ต (ไม่ระเบิด)",
-      "meaning_id": "pakaian — batchim kelompok ㄷ (ㅅ→t), dilafalkan t (tidak dilepas)"
+      "meaning_id": "pakaian — batchim kelompok ㄷ (ㅅ→t), dilafalkan t (tidak dilepas)",
+      "meaning_pt_br": "roupa — batchim do grupo ㄷ (ㅅ→t), pronunciado t (sem explosão)"
     },
     {
       "id": 6,
@@ -381,7 +413,8 @@
       "meaning_de": "Mond — ㄹ-Gruppe Batchim, ausgesprochen l",
       "meaning_vi": "trăng — nhóm batchim ㄹ, phát âm l",
       "meaning_th": "ดวงจันทร์ — บัดชิมกลุ่ม ㄹ ออกเสียง ล",
-      "meaning_id": "bulan — batchim kelompok ㄹ, dilafalkan l"
+      "meaning_id": "bulan — batchim kelompok ㄹ, dilafalkan l",
+      "meaning_pt_br": "lua — batchim do grupo ㄹ, pronunciado l"
     },
     {
       "id": 7,
@@ -401,7 +434,8 @@
       "meaning_de": "Nacht / Kastanie — ㅁ-Gruppe Batchim, ausgesprochen m",
       "meaning_vi": "đêm / hạt dẻ — nhóm batchim ㅁ, phát âm m",
       "meaning_th": "กลางคืน / เกาลัด — บัดชิมกลุ่ม ㅁ ออกเสียง ม",
-      "meaning_id": "malam / kastanye — batchim kelompok ㅁ, dilafalkan m"
+      "meaning_id": "malam / kastanye — batchim kelompok ㅁ, dilafalkan m",
+      "meaning_pt_br": "noite / castanha — batchim do grupo ㅁ, pronunciado m"
     },
     {
       "id": 8,
@@ -421,7 +455,8 @@
       "meaning_de": "Mund — ㅂ-Gruppe Batchim, ausgesprochen p (nicht freigegeben)",
       "meaning_vi": "miệng — nhóm batchim ㅂ, phát âm p (không bật hơi)",
       "meaning_th": "ปาก — บัดชิมกลุ่ม ㅂ ออกเสียง ป (ไม่ระเบิด)",
-      "meaning_id": "mulut — batchim kelompok ㅂ, dilafalkan p (tidak dilepas)"
+      "meaning_id": "mulut — batchim kelompok ㅂ, dilafalkan p (tidak dilepas)",
+      "meaning_pt_br": "boca — batchim do grupo ㅂ, pronunciado p (sem explosão)"
     },
     {
       "id": 9,
@@ -441,7 +476,8 @@
       "meaning_de": "Fluss — ㅇ-Gruppe Batchim, ausgesprochen ng",
       "meaning_vi": "sông — nhóm batchim ㅇ, phát âm ng",
       "meaning_th": "แม่น้ำ — บัดชิมกลุ่ม ㅇ ออกเสียง ง",
-      "meaning_id": "sungai — batchim kelompok ㅇ, dilafalkan ng"
+      "meaning_id": "sungai — batchim kelompok ㅇ, dilafalkan ng",
+      "meaning_pt_br": "rio — batchim do grupo ㅇ, pronunciado ng"
     },
     {
       "id": 10,
@@ -461,7 +497,8 @@
       "meaning_de": "Huhn — Doppel-Batchim ㄺ (ㄹ+ㄱ) → ㄱ-Gruppe → k-Laut",
       "meaning_vi": "gà — batchim kép ㄺ (ㄹ+ㄱ) → nhóm ㄱ → âm k",
       "meaning_th": "ไก่ — บัดชิมคู่ ㄺ (ㄹ+ㄱ) → กลุ่ม ㄱ → เสียง ก",
-      "meaning_id": "ayam — batchim ganda ㄺ (ㄹ+ㄱ) → kelompok ㄱ → bunyi k"
+      "meaning_id": "ayam — batchim ganda ㄺ (ㄹ+ㄱ) → kelompok ㄱ → bunyi k",
+      "meaning_pt_br": "frango — batchim duplo ㄺ (ㄹ+ㄱ) → grupo ㄱ → som k"
     },
     {
       "id": 11,
@@ -481,7 +518,8 @@
       "meaning_de": "Blume — Batchim ㅊ gehört zur ㄷ-Gruppe → t-Laut",
       "meaning_vi": "hoa — batchim ㅊ thuộc nhóm ㄷ → âm t",
       "meaning_th": "ดอกไม้ — บัดชิม ㅊ อยู่กลุ่ม ㄷ → เสียง ต",
-      "meaning_id": "bunga — batchim ㅊ termasuk kelompok ㄷ → bunyi t"
+      "meaning_id": "bunga — batchim ㅊ termasuk kelompok ㄷ → bunyi t",
+      "meaning_pt_br": "flor — o batchim ㅊ pertence ao grupo ㄷ → som t"
     },
     {
       "id": 12,
@@ -550,6 +588,13 @@
         "ㄱ グループ（k）",
         "ㅂ グループ（p）",
         "ㄷ グループ（t）"
+      ],
+      "prompt_pt_br": "ㅋ, ㄲ e ㄳ são todos batchim do mesmo grupo. A qual grupo de som eles pertencem?",
+      "choices_pt_br": [
+        "Grupo ㄴ (n)",
+        "Grupo ㄱ (k)",
+        "Grupo ㅂ (p)",
+        "Grupo ㄷ (t)"
       ]
     },
     {
@@ -619,6 +664,13 @@
         "ng（「sing」のような音）",
         "n",
         "m"
+      ],
+      "prompt_pt_br": "방 (quarto) termina com o batchim ㅇ. Que som isso produz?",
+      "choices_pt_br": [
+        "Nenhum som — ㅇ é sempre mudo",
+        "ng (como em \"sing\", em inglês)",
+        "n",
+        "m"
       ]
     },
     {
@@ -680,7 +732,14 @@
         "label": "Nhận diện quy luật",
         "text": "Hãy tìm: phụ âm batchim + âm tiết tiếp theo bắt đầu bằng ㅇ (ký tự giữ chỗ câm). Kết quả: batchim nghe như thể nó mở đầu âm tiết tiếp theo. 먹어요 → 머거요. 한국어 → 한구거. Dạng viết không bao giờ thay đổi — chỉ cách phát âm của bạn thay đổi."
       },
-      "title_ja": "連音化——つながる音"
+      "title_ja": "連音化——つながる音",
+      "title_pt_br": "Ligação — Som de Conexão",
+      "body_pt_br": "Quando uma sílaba terminada em batchim é imediatamente seguida por uma sílaba que começa com o ㅇ mudo, a consoante do batchim avança e se torna a consoante inicial da sílaba seguinte. A escrita permanece igual — apenas a pronúncia muda. Isso é chamado de ligação (연음화) e é um dos fenômenos de pronúncia mais frequentes do coreano.",
+      "tip_pt_br": {
+        "icon": "🔗",
+        "label": "Identifique o padrão",
+        "text": "Procure por: consoante batchim + sílaba seguinte começando com ㅇ (marcador mudo). Resultado: o batchim soa como se abrisse a sílaba seguinte. 먹어요 → 머거요. 한국어 → 한구거. A forma escrita nunca muda — só a sua pronúncia."
+      }
     },
     {
       "id": 15,
@@ -702,7 +761,8 @@
       "meaning_de": "Ich esse / esse gerade — ㄱ-Batchim von 먹 verbindet sich mit 어, klingt wie 머거요",
       "meaning_vi": "Tôi ăn / đang ăn — batchim ㄱ của 먹 liên âm với 어, nghe như 머거요",
       "meaning_th": "ฉันกิน / กินอยู่ — บัดชิม ㄱ ของ 먹 เชื่อมเข้า 어 ออกเสียงเหมือน 머거요",
-      "meaning_id": "Saya makan / sedang makan — batchim ㄱ dari 먹 menyambung ke 어, terdengar seperti 머거요"
+      "meaning_id": "Saya makan / sedang makan — batchim ㄱ dari 먹 menyambung ke 어, terdengar seperti 머거요",
+      "meaning_pt_br": "Eu como / estou comendo — o batchim ㄱ de 먹 se liga a 어, soa como 머거요"
     },
     {
       "id": 16,
@@ -723,7 +783,8 @@
       "meaning_de": "Reis (Objektform) — ㅂ-Batchim von 밥 verbindet sich mit 을, klingt wie 바블",
       "meaning_vi": "cơm (dạng tân ngữ) — batchim ㅂ của 밥 liên âm với 을, nghe như 바블",
       "meaning_th": "ข้าว (รูปกรรม) — บัดชิม ㅂ ของ 밥 เชื่อมเข้า 을 ออกเสียงเหมือน 바블",
-      "meaning_id": "nasi (bentuk objek) — batchim ㅂ dari 밥 menyambung ke 을, terdengar seperti 바블"
+      "meaning_id": "nasi (bentuk objek) — batchim ㅂ dari 밥 menyambung ke 을, terdengar seperti 바블",
+      "meaning_pt_br": "arroz (forma de objeto) — o batchim ㅂ de 밥 se liga a 을, soa como 바블"
     },
     {
       "id": 17,
@@ -745,7 +806,8 @@
       "meaning_de": "Es ist gut / Ich mag es — ㅎ-Batchim schwächt sich ab und verbindet sich (siehe Stufe 4 für ㅎ-Regeln)",
       "meaning_vi": "Tốt / Tôi thích — batchim ㅎ yếu đi và liên âm (xem giai đoạn 4 về quy tắc ㅎ)",
       "meaning_th": "มันดี / ฉันชอบ — บัดชิม ㅎ อ่อนแรงและเชื่อม (ดูขั้นตอน 4 สำหรับกฎ ㅎ)",
-      "meaning_id": "Itu bagus / Saya suka — batchim ㅎ melemah dan menyambung (lihat Tahap 4 untuk aturan ㅎ)"
+      "meaning_id": "Itu bagus / Saya suka — batchim ㅎ melemah dan menyambung (lihat Tahap 4 untuk aturan ㅎ)",
+      "meaning_pt_br": "Está bom / Eu gosto — o batchim ㅎ se enfraquece e se liga (veja a Etapa 4 para as regras do ㅎ)"
     },
     {
       "id": 18,
@@ -767,7 +829,8 @@
       "meaning_de": "Koreanische Sprache — ㄱ-Batchim von 국 verbindet sich mit 어, klingt wie 한구거",
       "meaning_vi": "tiếng Hàn — batchim ㄱ của 국 liên âm với 어, nghe như 한구거",
       "meaning_th": "ภาษาเกาหลี — บัดชิม ㄱ ของ 국 เชื่อมเข้า 어 ออกเสียงเหมือน 한구거",
-      "meaning_id": "bahasa Korea — batchim ㄱ dari 국 menyambung ke 어, terdengar seperti 한구거"
+      "meaning_id": "bahasa Korea — batchim ㄱ dari 국 menyambung ke 어, terdengar seperti 한구거",
+      "meaning_pt_br": "idioma coreano — o batchim ㄱ de 국 se liga a 어, soa como 한구거"
     },
     {
       "id": 19,
@@ -828,7 +891,14 @@
         "label": "Nối âm và chính tả",
         "text": "Tiếng Hàn viết vẫn giữ phụ âm gốc ở vị trí chính tả của nó ngay cả khi nó được phát âm ở âm tiết tiếp theo. Đây là lý do lúc đầu học đọc tiếng Hàn và học phát âm tiếng Hàn là hai kỹ năng riêng biệt — chữ viết ghi lại hình vị, không phải âm thanh chính xác."
       },
-      "title_ja": "なぜ連音化が起こるのか？"
+      "title_ja": "なぜ連音化が起こるのか？",
+      "title_pt_br": "Por Que a Ligação Acontece?",
+      "body_pt_br": "A estrutura silábica do coreano prefere fortemente o padrão consoante + vogal. Quando uma sílaba com vogal inicial segue um batchim, é foneticamente mais fácil para a consoante se ligar a esse espaço aberto da vogal. O resultado é um fluxo de fala mais natural e conectado. Isso não é gíria nem pronúncia relaxada — é o coreano padrão e será ouvido tanto em noticiários quanto em discursos formais e conversas cotidianas.",
+      "tip_pt_br": {
+        "icon": "ℹ️",
+        "label": "Ligação vs ortografia",
+        "text": "O coreano escrito preserva a consoante original em sua posição ortográfica mesmo quando ela é pronunciada na sílaba seguinte. É por isso que aprender a ler coreano e aprender a pronunciar coreano são, a princípio, duas habilidades separadas — a escrita registra morfemas, não sons exatos."
+      }
     },
     {
       "id": 20,
@@ -897,6 +967,13 @@
         "無音の ㅇ（母音で始まる音節）",
         "ㄴ か ㅁ のみ",
         "激音"
+      ],
+      "prompt_pt_br": "A ligação (연음화) ocorre quando um batchim é seguido por uma sílaba que começa com…",
+      "choices_pt_br": [
+        "Qualquer consoante",
+        "O ㅇ mudo (sílaba com vogal inicial)",
+        "Apenas ㄴ ou ㅁ",
+        "Uma consoante aspirada"
       ]
     },
     {
@@ -918,7 +995,8 @@
       "prompt_th": "한국어 (ภาษาเกาหลี) — ออกเสียงอย่างไรจริงๆ?",
       "prompt_id": "한국어 (bahasa Korea) — bagaimana sebenarnya cara melafalkannya?",
       "prompt_vi": "한국어 (tiếng Hàn) — thực tế được phát âm như thế nào?",
-      "prompt_ja": "한국어（韓国語）は実際にはどのように発音しますか。"
+      "prompt_ja": "한국어（韓国語）は実際にはどのように発音しますか。",
+      "prompt_pt_br": "한국어 (a língua coreana) — como ela é realmente pronunciada?"
     },
     {
       "id": 22,
@@ -1024,7 +1102,19 @@
         "label": "Vì sao cùng vị trí cấu âm?",
         "text": "Mỗi cặp (ㅂ↔ㅁ, ㄱ↔ㅇ, ㄷ↔ㄴ) có chung chính xác cùng một vị trí cấu âm trong miệng — lần lượt là môi, phía sau họng và gờ lợi. Chỉ luồng hơi qua mũi thay đổi. Phụ âm mũi 'lây' sang âm tắc đứng trước, kéo nó thành âm mũi trong khi giữ nguyên vị trí miệng."
       },
-      "title_ja": "鼻音化"
+      "title_ja": "鼻音化",
+      "title_pt_br": "Assimilação Nasal",
+      "body_pt_br": "Quando um batchim de consoante oclusiva dos grupos ㄱ, ㄷ ou ㅂ é seguido pelas consoantes nasais ㄴ ou ㅁ, a oclusiva se assimila e muda para o som nasal correspondente. Isso é puramente articulatório: as consoantes nasais exigem que o véu palatino abaixe, o que arrasta as oclusivas adjacentes para o território nasal. A escrita permanece igual; só a pronúncia muda.",
+      "rules_pt_br": [
+        "ㅂ + ㄴ/ㅁ → ㅁ: a oclusiva labial se torna uma nasal labial — 입니다 → 임니다",
+        "ㄱ + ㄴ/ㅁ → ㅇ: a oclusiva velar se torna uma nasal velar — 국물 → 궁물",
+        "ㄷ + ㄴ/ㅁ → ㄴ: a oclusiva alveolar se torna uma nasal alveolar — 걷는다 → 건는다"
+      ],
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Por que o mesmo ponto de articulação?",
+        "text": "Cada par (ㅂ↔ㅁ, ㄱ↔ㅇ, ㄷ↔ㄴ) compartilha exatamente o mesmo ponto de articulação na boca — lábios, fundo da garganta e região alveolar, respectivamente. Só o fluxo de ar nasal muda. A consoante nasal \"contamina\" a oclusiva anterior, tornando-a nasal enquanto mantém a posição da boca."
+      }
     },
     {
       "id": 23,
@@ -1046,7 +1136,8 @@
       "meaning_de": "ist / bin / bist (formal) — ㅂ + ㄴ → ㅁ: geschrieben 입니다, klingt wie 임니다",
       "meaning_vi": "là/thì (trang trọng) — ㅂ + ㄴ → ㅁ: viết 입니다, nghe như 임니다",
       "meaning_th": "เป็น/คือ/อยู่ (ทางการ) — ㅂ + ㄴ → ㅁ: สะกด 입니다 ออกเสียงเหมือน 임니다",
-      "meaning_id": "adalah (formal) — ㅂ + ㄴ → ㅁ: dieja 입니다, terdengar seperti 임니다"
+      "meaning_id": "adalah (formal) — ㅂ + ㄴ → ㅁ: dieja 입니다, terdengar seperti 임니다",
+      "meaning_pt_br": "é / sou / são (formal) — ㅂ + ㄴ → ㅁ: escrito 입니다, soa como 임니다"
     },
     {
       "id": 24,
@@ -1067,7 +1158,8 @@
       "meaning_de": "Brühe — ㄱ + ㅁ → ㅇ: geschrieben 국물, klingt wie 궁물",
       "meaning_vi": "nước dùng — ㄱ + ㅁ → ㅇ: viết 국물, nghe như 궁물",
       "meaning_th": "น้ำซุป — ㄱ + ㅁ → ㅇ: สะกด 국물 ออกเสียงเหมือน 궁물",
-      "meaning_id": "kuah — ㄱ + ㅁ → ㅇ: dieja 국물, terdengar seperti 궁물"
+      "meaning_id": "kuah — ㄱ + ㅁ → ㅇ: dieja 국물, terdengar seperti 궁물",
+      "meaning_pt_br": "caldo — ㄱ + ㅁ → ㅇ: escrito 국물, soa como 궁물"
     },
     {
       "id": 25,
@@ -1088,7 +1180,8 @@
       "meaning_de": "Schuljahr / Klasse — ㄱ + ㄴ → ㅇ: geschrieben 학년, klingt wie 항년",
       "meaning_vi": "năm học / lớp — ㄱ + ㄴ → ㅇ: viết 학년, nghe như 항년",
       "meaning_th": "ชั้นปีโรงเรียน — ㄱ + ㄴ → ㅇ: สะกด 학년 ออกเสียงเหมือน 항년",
-      "meaning_id": "tahun ajaran / tingkat kelas — ㄱ + ㄴ → ㅇ: dieja 학년, terdengar seperti 항년"
+      "meaning_id": "tahun ajaran / tingkat kelas — ㄱ + ㄴ → ㅇ: dieja 학년, terdengar seperti 항년",
+      "meaning_pt_br": "ano escolar / série — ㄱ + ㄴ → ㅇ: escrito 학년, soa como 항년"
     },
     {
       "id": 26,
@@ -1110,7 +1203,8 @@
       "meaning_de": "geht spazieren / gehen — ㄷ + ㄴ → ㄴ: geschrieben 걷는다, klingt wie 건는다",
       "meaning_vi": "đi bộ / đi dạo — ㄷ + ㄴ → ㄴ: viết 걷는다, nghe như 건는다",
       "meaning_th": "เดิน — ㄷ + ㄴ → ㄴ: สะกด 걷는다 ออกเสียงเหมือน 건는다",
-      "meaning_id": "berjalan / jalan kaki — ㄷ + ㄴ → ㄴ: dieja 걷는다, terdengar seperti 건는다"
+      "meaning_id": "berjalan / jalan kaki — ㄷ + ㄴ → ㄴ: dieja 걷는다, terdengar seperti 건는다",
+      "meaning_pt_br": "caminha / caminhar — ㄷ + ㄴ → ㄴ: escrito 걷는다, soa como 건는다"
     },
     {
       "id": 27,
@@ -1132,7 +1226,8 @@
       "meaning_de": "Vorgarten — ㅂ + ㅁ → ㅁ: geschrieben 앞마당, klingt wie 암마당",
       "meaning_vi": "sân trước — ㅂ + ㅁ → ㅁ: viết 앞마당, nghe như 암마당",
       "meaning_th": "ลานหน้าบ้าน — ㅂ + ㅁ → ㅁ: สะกด 앞마당 ออกเสียงเหมือน 암마당",
-      "meaning_id": "halaman depan — ㅂ + ㅁ → ㅁ: dieja 앞마당, terdengar seperti 암마당"
+      "meaning_id": "halaman depan — ㅂ + ㅁ → ㅁ: dieja 앞마당, terdengar seperti 암마당",
+      "meaning_pt_br": "quintal da frente — ㅂ + ㅁ → ㅁ: escrito 앞마당, soa como 암마당"
     },
     {
       "id": 28,
@@ -1153,7 +1248,8 @@
       "prompt_th": "밥만 (ข้าวเท่านั้น) — ออกเสียงอย่างไรจริงๆ?",
       "prompt_id": "밥만 (hanya nasi) — bagaimana sebenarnya cara melafalkannya?",
       "prompt_vi": "밥만 (chỉ cơm) — thực tế được phát âm như thế nào?",
-      "prompt_ja": "밥만（ご飯だけ）は実際にはどのように発音しますか。"
+      "prompt_ja": "밥만（ご飯だけ）は実際にはどのように発音しますか。",
+      "prompt_pt_br": "밥만 (só arroz) — como é realmente pronunciado?"
     },
     {
       "id": 29,
@@ -1174,7 +1270,8 @@
       "prompt_th": "บัดชิม ㄱ ตามด้วย ㄴ หรือ ㅁ เปลี่ยนเป็นเสียงใด?",
       "prompt_id": "Batchim ㄱ yang diikuti ㄴ atau ㅁ berubah menjadi bunyi apa?",
       "prompt_vi": "Batchim ㄱ theo sau bởi ㄴ hoặc ㅁ chuyển thành âm nào?",
-      "prompt_ja": "ㄱ のパッチムの後に ㄴ や ㅁ が続くと、どの音に変わりますか。"
+      "prompt_ja": "ㄱ のパッチムの後に ㄴ や ㅁ が続くと、どの音に変わりますか。",
+      "prompt_pt_br": "O batchim ㄱ seguido de ㄴ ou ㅁ muda para qual som?"
     },
     {
       "id": 30,
@@ -1243,6 +1340,13 @@
         "im-ni-da",
         "ib-ni-da",
         "ip-mi-da"
+      ],
+      "prompt_pt_br": "입니다 (é / sou / são) — como é realmente pronunciado?",
+      "choices_pt_br": [
+        "ip-ni-da",
+        "im-ni-da",
+        "ib-ni-da",
+        "ip-mi-da"
       ]
     },
     {
@@ -1304,7 +1408,14 @@
         "label": "Mẹo ghi nhớ",
         "text": "Hãy nghĩ về mỗi cặp như chia sẻ một vị trí trong miệng bạn. Môi: ㅂ (tắc) ↔ ㅁ (mũi). Họng: ㄱ (tắc) ↔ ㅇ (mũi). Gờ lợi: ㄷ (tắc) ↔ ㄴ (mũi). Vị trí giữ nguyên; chỉ van mũi mở ra."
       },
-      "title_ja": "同化の方向はいつも一方向"
+      "title_ja": "同化の方向はいつも一方向",
+      "title_pt_br": "O Padrão de Assimilação Sempre Vai em Uma Única Direção",
+      "body_pt_br": "A assimilação nasal sempre segue a mesma direção: a oclusiva se torna nasal, nunca o contrário. A consoante nasal \"contamina\" o som anterior. Assim que você identificar o padrão ㅂ→ㅁ, ㄷ→ㄴ, ㄱ→ㅇ, você vai começar a ouvir e prever essas mudanças automaticamente na fala coreana real.",
+      "tip_pt_br": {
+        "icon": "🧠",
+        "label": "Truque para memorizar",
+        "text": "Pense em cada par como se compartilhasse um local na sua boca. Lábios: ㅂ (oclusiva) ↔ ㅁ (nasal). Garganta: ㄱ (oclusiva) ↔ ㅇ (nasal). Região alveolar: ㄷ (oclusiva) ↔ ㄴ (nasal). O local permanece; só a válvula nasal se abre."
+      }
     },
     {
       "id": 32,
@@ -1365,7 +1476,14 @@
         "label": "Vì sao xảy ra căng âm",
         "text": "Sau một âm tắc không bật hơi, đường phát âm đã ở tư thế căng, khép kín. Khi bạn bắt đầu phụ âm tiếp theo từ trạng thái này, sức căng cơ dư thừa được chuyển tiếp, tự động tạo ra âm căng. Căng âm không phải cố ý — nó là hệ quả cấu âm tự nhiên. Một khi nghe thấy nó trong lời nói thực, bạn không thể không nghe ra nữa."
       },
-      "title_ja": "濃音化"
+      "title_ja": "濃音化",
+      "title_pt_br": "Tensificação",
+      "body_pt_br": "Depois de certas consoantes batchim — especificamente os sons de batchim de oclusiva sem explosão dos grupos ㄱ, ㄷ e ㅂ — a consoante seguinte se torna tensa (dobrada). A forma escrita não muda; só a pronúncia varia. A tensificação é o motivo pelo qual 학교 (escola) soa como 학꾜 em vez de 학교.",
+      "tip_pt_br": {
+        "icon": "ℹ️",
+        "label": "Por que a tensificação acontece",
+        "text": "Depois de uma oclusiva sem explosão, o trato vocal já está em uma posição tensa e fechada. Quando você começa a próxima consoante a partir desse estado, a tensão muscular extra se transfere, criando o som tenso automaticamente. A tensificação não é proposital — é uma consequência articulatória natural. Depois que você a percebe na fala real, não consegue mais deixar de notá-la."
+      }
     },
     {
       "id": 33,
@@ -1386,7 +1504,8 @@
       "meaning_de": "Schule — ㄱ-Batchim löst Verschärfung aus: ㄱ→ㄲ, klingt wie 학꾜",
       "meaning_vi": "trường học — batchim ㄱ gây biến âm căng: ㄱ→ㄲ, nghe như 학꾜",
       "meaning_th": "โรงเรียน — บัดชิม ㄱ ทำให้เกร็งเสียง: ㄱ→ㄲ ออกเสียงเหมือน 학꾜",
-      "meaning_id": "sekolah — batchim ㄱ memicu tensifikasi: ㄱ→ㄲ, terdengar seperti 학꾜"
+      "meaning_id": "sekolah — batchim ㄱ memicu tensifikasi: ㄱ→ㄲ, terdengar seperti 학꾜",
+      "meaning_pt_br": "escola — o batchim ㄱ provoca tensificação: ㄱ→ㄲ, soa como 학꾜"
     },
     {
       "id": 34,
@@ -1407,7 +1526,8 @@
       "meaning_de": "Restaurant — ㄱ-Batchim löst Verschärfung aus: ㄷ→ㄸ, klingt wie 식땅",
       "meaning_vi": "nhà hàng — batchim ㄱ gây biến âm căng: ㄷ→ㄸ, nghe như 식땅",
       "meaning_th": "ร้านอาหาร — บัดชิม ㄱ ทำให้เกร็งเสียง: ㄷ→ㄸ ออกเสียงเหมือน 식땅",
-      "meaning_id": "restoran — batchim ㄱ memicu tensifikasi: ㄷ→ㄸ, terdengar seperti 식땅"
+      "meaning_id": "restoran — batchim ㄱ memicu tensifikasi: ㄷ→ㄸ, terdengar seperti 식땅",
+      "meaning_pt_br": "restaurante — o batchim ㄱ provoca tensificação: ㄷ→ㄸ, soa como 식땅"
     },
     {
       "id": 35,
@@ -1428,7 +1548,8 @@
       "meaning_de": "schließen — ㄷ-Batchim löst Verschärfung aus: ㄷ→ㄸ, klingt wie 닫따",
       "meaning_vi": "đóng — batchim ㄷ gây biến âm căng: ㄷ→ㄸ, nghe như 닫따",
       "meaning_th": "ปิด — บัดชิม ㄷ ทำให้เกร็งเสียง: ㄷ→ㄸ ออกเสียงเหมือน 닫따",
-      "meaning_id": "menutup — batchim ㄷ memicu tensifikasi: ㄷ→ㄸ, terdengar seperti 닫따"
+      "meaning_id": "menutup — batchim ㄷ memicu tensifikasi: ㄷ→ㄸ, terdengar seperti 닫따",
+      "meaning_pt_br": "fechar — o batchim ㄷ provoca tensificação: ㄷ→ㄸ, soa como 닫따"
     },
     {
       "id": 36,
@@ -1449,7 +1570,8 @@
       "meaning_de": "Eingang — ㅂ-Batchim löst Verschärfung aus: ㄱ→ㄲ, klingt wie 입꾸",
       "meaning_vi": "lối vào — batchim ㅂ gây biến âm căng: ㄱ→ㄲ, nghe như 입꾸",
       "meaning_th": "ทางเข้า — บัดชิม ㅂ ทำให้เกร็งเสียง: ㄱ→ㄲ ออกเสียงเหมือน 입꾸",
-      "meaning_id": "pintu masuk — batchim ㅂ memicu tensifikasi: ㄱ→ㄲ, terdengar seperti 입꾸"
+      "meaning_id": "pintu masuk — batchim ㅂ memicu tensifikasi: ㄱ→ㄲ, terdengar seperti 입꾸",
+      "meaning_pt_br": "entrada — o batchim ㅂ provoca tensificação: ㄱ→ㄲ, soa como 입꾸"
     },
     {
       "id": 37,
@@ -1518,6 +1640,13 @@
         "内破する閉鎖音のパッチム（ㄱ・ㄷ・ㅂ グループ）",
         "ㄹ のパッチムのみ",
         "どのパッチム子音でも"
+      ],
+      "prompt_pt_br": "A tensificação (경음화) ocorre de forma mais previsível depois de qual tipo de batchim?",
+      "choices_pt_br": [
+        "Batchim nasal (ㄴ, ㅁ, ㅇ)",
+        "Batchim de oclusiva sem explosão (grupos ㄱ, ㄷ, ㅂ)",
+        "Apenas o batchim ㄹ",
+        "Qualquer consoante batchim"
       ]
     },
     {
@@ -1587,6 +1716,13 @@
         "hak-kyo（激音）",
         "hak-kkyo（濃音）",
         "ha-gyo"
+      ],
+      "prompt_pt_br": "학교 (escola) — como é realmente pronunciado?",
+      "choices_pt_br": [
+        "hak-gyo",
+        "hak-kyo (aspirado)",
+        "hak-kkyo (tenso)",
+        "ha-gyo"
       ]
     },
     {
@@ -1648,7 +1784,14 @@
         "label": "Lỗi thường gặp của người mới học",
         "text": "Nhiều người mới học đọc 조하요 cho 좋아요, giữ lại âm h. Trong tiếng Hàn thực tế điều này nghe thiếu tự nhiên và quá gượng ép. Cách phát âm chuẩn là 조아요 — âm ㅎ lặng lẽ biến mất giữa hai nguyên âm. Hãy tin vào quy tắc: ㅎ giữa các nguyên âm gần như biến mất."
       },
-      "title_ja": "ㅎの弱化"
+      "title_ja": "ㅎの弱化",
+      "title_pt_br": "Enfraquecimento do ㅎ",
+      "body_pt_br": "A consoante ㅎ é um dos sons mais instáveis do coreano. Entre vogais — seja o ㅎ um batchim ou uma consoante inicial — ele se enfraquece significativamente e muitas vezes quase desaparece por completo. É por isso que 좋아요 (é bom / eu gosto) soa como 조아요 e não como 조하요. O ㅎ continua escrito, mas o som quase some.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Erro comum de iniciante",
+        "text": "Muitos iniciantes dizem 조하요 no lugar de 좋아요, preservando o som do h. Na fala coreana real isso soa artificial e excessivamente deliberado. A pronúncia padrão é 조아요 — o ㅎ desaparece silenciosamente entre as duas vogais. Confie na regra: o ㅎ entre vogais quase some."
+      }
     },
     {
       "id": 40,
@@ -1670,7 +1813,8 @@
       "meaning_de": "Es ist gut / Ich mag es — ㅎ-Batchim schwächt sich ab: klingt wie 조아요 (nicht 조하요)",
       "meaning_vi": "Tốt / Tôi thích — batchim ㅎ yếu đi: nghe như 조아요 (không phải 조하요)",
       "meaning_th": "มันดี / ฉันชอบ — บัดชิม ㅎ อ่อนแรง: ออกเสียงเหมือน 조아요 (ไม่ใช่ 조하요)",
-      "meaning_id": "Itu bagus / Saya suka — batchim ㅎ melemah: terdengar seperti 조아요 (bukan 조하요)"
+      "meaning_id": "Itu bagus / Saya suka — batchim ㅎ melemah: terdengar seperti 조아요 (bukan 조하요)",
+      "meaning_pt_br": "Está bom / Eu gosto — o batchim ㅎ se enfraquece: soa como 조아요 (não 조하요)"
     },
     {
       "id": 41,
@@ -1692,7 +1836,8 @@
       "meaning_de": "Es gibt viel — ㅎ in ㄶ-Batchim schwächt sich ab: klingt wie 마나요",
       "meaning_vi": "Có rất nhiều — ㅎ trong batchim ㄶ yếu đi: nghe như 마나요",
       "meaning_th": "มีมาก — ㅎ ใน ㄶ บัดชิมอ่อนแรง: ออกเสียงเหมือน 마나요",
-      "meaning_id": "Ada banyak — ㅎ dalam batchim ㄶ melemah: terdengar seperti 마나요"
+      "meaning_id": "Ada banyak — ㅎ dalam batchim ㄶ melemah: terdengar seperti 마나요",
+      "meaning_pt_br": "Há muito — o ㅎ no batchim ㄶ se enfraquece: soa como 마나요"
     },
     {
       "id": 42,
@@ -1714,7 +1859,8 @@
       "meaning_de": "Ich tue es hinein — ㅎ-Batchim schwächt sich zwischen Vokalen ab: klingt wie 너어요",
       "meaning_vi": "Tôi bỏ vào — batchim ㅎ yếu đi giữa các nguyên âm: nghe như 너어요",
       "meaning_th": "ฉันใส่มัน — บัดชิม ㅎ อ่อนแรงระหว่างสระ: ออกเสียงเหมือน 너어요",
-      "meaning_id": "Saya memasukkannya — batchim ㅎ melemah di antara vokal: terdengar seperti 너어요"
+      "meaning_id": "Saya memasukkannya — batchim ㅎ melemah di antara vokal: terdengar seperti 너어요",
+      "meaning_pt_br": "Eu coloco dentro — o batchim ㅎ se enfraquece entre vogais: soa como 너어요"
     },
     {
       "id": 43,
@@ -1792,7 +1938,15 @@
         "ㅂ + ㅎ → ㅍ: 입학 (nhập học) → 이팍",
         "ㄷ + ㅎ → ㅌ: 못해요 (không thể làm) → 모태요"
       ],
-      "title_ja": "ㅎ + 子音 = 激音化"
+      "title_ja": "ㅎ + 子音 = 激音化",
+      "title_pt_br": "ㅎ + Consoante = Aspiração",
+      "body_pt_br": "Quando o batchim ㅎ encontra a consoante inicial da sílaba seguinte (ou vice-versa), as duas se fundem em uma única consoante aspirada. ㅎ + ㄷ vira ㅌ. ㄱ + ㅎ vira ㅋ. ㅂ + ㅎ vira ㅍ. ㄷ + ㅎ (ou ㅎ + ㄷ) vira ㅌ. Pense no ㅎ como se ele adicionasse uma rajada de ar à consoante vizinha.",
+      "rules_pt_br": [
+        "ㅎ + ㄷ → ㅌ: 놓다 (colocar) → 노타",
+        "ㄱ + ㅎ → ㅋ: 착하다 (gentil) → 차카다",
+        "ㅂ + ㅎ → ㅍ: 입학 (matrícula) → 이팍",
+        "ㄷ + ㅎ → ㅌ: 못해요 (não consigo fazer) → 모태요"
+      ]
     },
     {
       "id": 44,
@@ -1813,7 +1967,8 @@
       "meaning_de": "loslassen / legen — ㅎ-Batchim + ㄷ → ㅌ: geschrieben 놓다, klingt wie 노타",
       "meaning_vi": "thả ra / đặt — batchim ㅎ + ㄷ → ㅌ: viết 놓다, nghe như 노타",
       "meaning_th": "ปล่อย / วาง — บัดชิม ㅎ + ㄷ → ㅌ: สะกด 놓다 ออกเสียงเหมือน 노타",
-      "meaning_id": "melepaskan / meletakkan — batchim ㅎ + ㄷ → ㅌ: dieja 놓다, terdengar seperti 노타"
+      "meaning_id": "melepaskan / meletakkan — batchim ㅎ + ㄷ → ㅌ: dieja 놓다, terdengar seperti 노타",
+      "meaning_pt_br": "soltar / colocar — batchim ㅎ + ㄷ → ㅌ: escrito 놓다, soa como 노타"
     },
     {
       "id": 45,
@@ -1882,6 +2037,13 @@
         "ㅌ（激音の t）",
         "ㄸ（濃音）",
         "ㅎ（h のまま）"
+      ],
+      "prompt_pt_br": "Que som ㅎ + ㄷ (ou ㄷ + ㅎ) produz?",
+      "choices_pt_br": [
+        "ㄷ (comum)",
+        "ㅌ (t aspirado)",
+        "ㄸ (tenso)",
+        "ㅎ (continua h)"
       ]
     },
     {
@@ -1979,7 +2141,18 @@
         "label": "Chỉ trong nội bộ hình vị",
         "text": "Ngạc hóa chỉ áp dụng trong cùng một từ hoặc khi một hậu tố bắt đầu bằng 이 gắn vào gốc từ. Nó không áp dụng qua ranh giới từ. 같이 kích hoạt ngạc hóa vì 이 là một phần của từ. Trong một cụm như 옷 입어요 (mặc quần áo), 이 bắt đầu một từ riêng — quy tắc khác áp dụng."
       },
-      "title_ja": "口蓋音化"
+      "title_ja": "口蓋音化",
+      "title_pt_br": "Palatalização",
+      "body_pt_br": "Quando as consoantes ㄷ ou ㅌ aparecem como batchim e são seguidas pela vogal 이 (i), elas avançam na boca e mudam para ㅈ e ㅊ, respectivamente. Essa mudança se chama palatalização — a consoante se move da região alveolar para o palato, antecipando a vogal anterior 이.",
+      "rules_pt_br": [
+        "ㄷ + 이 → ㅈ이 → 지: 굳이 (deliberadamente) → 구지",
+        "ㅌ + 이 → ㅊ이 → 치: 같이 (juntos) → 가치"
+      ],
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Somente dentro do morfema",
+        "text": "A palatalização se aplica apenas dentro da mesma palavra ou quando um sufixo que começa com 이 se une ao radical. Não se aplica entre limites de palavras. 같이 provoca palatalização porque 이 faz parte da palavra. Em uma frase como 옷 입어요 (vestindo roupa), 이 inicia uma palavra separada — outras regras se aplicam."
+      }
     },
     {
       "id": 47,
@@ -2000,7 +2173,8 @@
       "meaning_de": "zusammen — ㅌ + 이 → ㅊ: geschrieben 같이, klingt wie 가치",
       "meaning_vi": "cùng nhau — ㅌ + 이 → ㅊ: viết 같이, nghe như 가치",
       "meaning_th": "ด้วยกัน — ㅌ + 이 → ㅊ: สะกด 같이 ออกเสียงเหมือน 가치",
-      "meaning_id": "bersama — ㅌ + 이 → ㅊ: dieja 같이, terdengar seperti 가치"
+      "meaning_id": "bersama — ㅌ + 이 → ㅊ: dieja 같이, terdengar seperti 가치",
+      "meaning_pt_br": "juntos — ㅌ + 이 → ㅊ: escrito 같이, soa como 가치"
     },
     {
       "id": 48,
@@ -2021,7 +2195,8 @@
       "meaning_de": "absichtlich / hartnäckig — ㄷ + 이 → ㅈ: geschrieben 굳이, klingt wie 구지",
       "meaning_vi": "cố tình / cứng đầu — ㄷ + 이 → ㅈ: viết 굳이, nghe như 구지",
       "meaning_th": "จงใจ / ดื้อรั้น — ㄷ + 이 → ㅈ: สะกด 굳이 ออกเสียงเหมือน 구지",
-      "meaning_id": "dengan sengaja / dengan keras kepala — ㄷ + 이 → ㅈ: dieja 굳이, terdengar seperti 구지"
+      "meaning_id": "dengan sengaja / dengan keras kepala — ㄷ + 이 → ㅈ: dieja 굳이, terdengar seperti 구지",
+      "meaning_pt_br": "deliberadamente / teimosamente — ㄷ + 이 → ㅈ: escrito 굳이, soa como 구지"
     },
     {
       "id": 49,
@@ -2042,7 +2217,8 @@
       "prompt_th": "เมื่อบัดชิม ㄷ ตามด้วยสระ 이 มันเปลี่ยนเป็น…",
       "prompt_id": "Ketika batchim ㄷ diikuti oleh vokal 이, ia berubah menjadi…",
       "prompt_vi": "Khi batchim ㄷ được theo sau bởi nguyên âm 이, nó chuyển thành…",
-      "prompt_ja": "ㄷ のパッチムの後に母音 이 が続くと、どの音に変わりますか。"
+      "prompt_ja": "ㄷ のパッチムの後に母音 이 が続くと、どの音に変わりますか。",
+      "prompt_pt_br": "Quando o batchim ㄷ é seguido pela vogal 이, ele muda para…"
     },
     {
       "id": 50,
@@ -2063,7 +2239,8 @@
       "prompt_th": "เมื่อบัดชิม ㅌ ตามด้วยสระ 이 มันเปลี่ยนเป็น…",
       "prompt_id": "Ketika batchim ㅌ diikuti oleh vokal 이, ia berubah menjadi…",
       "prompt_vi": "Khi batchim ㅌ được theo sau bởi nguyên âm 이, nó chuyển thành…",
-      "prompt_ja": "ㅌ のパッチムの後に母音 이 が続くと、どの音に変わりますか。"
+      "prompt_ja": "ㅌ のパッチムの後に母音 이 が続くと、どの音に変わりますか。",
+      "prompt_pt_br": "Quando o batchim ㅌ é seguido pela vogal 이, ele muda para…"
     },
     {
       "id": 51,
@@ -2124,7 +2301,14 @@
         "label": "Kỹ thuật gõ lưỡi",
         "text": "Đừng rung ㄹ (không rung như tiếng Tây Ban Nha) và đừng dùng khẩu hình l kiểu tiếng Anh ở vị trí nguyên âm. Trong 라면, ㄹ là một cú gõ nhanh — hãy thử nói 'la' trong khi nghĩ 'ra'. Trong 달 (mặt trăng), ㄹ là âm l được giữ. Trong 빨리 (nhanh chóng) bạn có cả hai: một âm l giữ rồi một cú gõ."
       },
-      "title_ja": "ㄹの音"
+      "title_ja": "ㄹの音",
+      "title_pt_br": "O Som do ㄹ",
+      "body_pt_br": "A consoante coreana ㄹ costuma ser descrita como algo entre r e l — e isso é exatamente correto. Sua realização exata depende da posição dentro da sílaba. Entre duas vogais, o ㄹ é um único toque rápido da ponta da língua contra a região logo atrás dos dentes superiores — o mesmo movimento do r fraco do português, como em \"caro\" ou \"para\". No fim de uma sílaba ou antes de uma consoante, mantenha a língua levemente nessa mesma região para um som de l suave.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Técnica do toque de língua",
+        "text": "Não vibre o ㄹ (nada do \"r\" forte de \"carro\" ou \"rato\") e não use o formato de l do português em posição de vogal. Em 라면 o ㄹ é um toque rápido — tente dizer \"la\" pensando em \"ra\". Em 달 (lua) o ㄹ é um l sustentado. Em 빨리 (rápido) você tem os dois: um l sustentado seguido de um toque."
+      }
     },
     {
       "id": 52,
@@ -2145,7 +2329,8 @@
       "meaning_de": "Instant-Nudeln — ㄹ in Anfangsposition (vor Vokal): schneller r-Flap",
       "meaning_vi": "mì ăn liền — ㄹ ở đầu (trước nguyên âm): âm r nhanh",
       "meaning_th": "บะหมี่กึ่งสำเร็จรูป — ㄹ ในตำแหน่งต้น (ก่อนสระ): แตะเร็ว r",
-      "meaning_id": "mi instan — ㄹ di posisi awal (sebelum vokal): ketukan r cepat"
+      "meaning_id": "mi instan — ㄹ di posisi awal (sebelum vokal): ketukan r cepat",
+      "meaning_pt_br": "macarrão instantâneo — ㄹ em posição inicial (antes da vogal): toque rápido de r"
     },
     {
       "id": 53,
@@ -2165,7 +2350,8 @@
       "meaning_de": "Mond — ㄹ als finales Batchim: gehaltenes l",
       "meaning_vi": "trăng — ㄹ là batchim cuối: âm l kéo dài",
       "meaning_th": "ดวงจันทร์ — ㄹ เป็นบัดชิมสุดท้าย: ค้างเสียง ล",
-      "meaning_id": "bulan — ㄹ sebagai batchim akhir: bunyi l yang ditahan"
+      "meaning_id": "bulan — ㄹ sebagai batchim akhir: bunyi l yang ditahan",
+      "meaning_pt_br": "lua — ㄹ como batchim final: som de l sustentado"
     },
     {
       "id": 54,
@@ -2186,7 +2372,8 @@
       "meaning_de": "schnell, rasch — verdoppeltes ㄹㄹ: gehaltenes l, dann r-Flap",
       "meaning_vi": "nhanh chóng — ㄹㄹ kép: âm l kéo dài rồi r nhanh",
       "meaning_th": "เร็ว ไว — ㄹㄹ คู่: ล ค้างแล้วแตะ r",
-      "meaning_id": "cepat, segera — ㄹㄹ ganda: l ditahan lalu ketukan r"
+      "meaning_id": "cepat, segera — ㄹㄹ ganda: l ditahan lalu ketukan r",
+      "meaning_pt_br": "rápido, veloz — ㄹㄹ duplo: l sustentado seguido de toque de r"
     },
     {
       "id": 55,
@@ -2209,7 +2396,8 @@
       "meaning_de": "Ich liebe dich — ㄹ zwischen Vokalen (랑→해): r-Flap-Laut",
       "meaning_vi": "Tôi yêu bạn — ㄹ giữa các nguyên âm (랑→해): âm r nhanh",
       "meaning_th": "ฉันรักคุณ — ㄹ ระหว่างสระ (랑→해): เสียงแตะ r",
-      "meaning_id": "Aku mencintaimu — ㄹ di antara vokal (랑→해): bunyi ketukan r"
+      "meaning_id": "Aku mencintaimu — ㄹ di antara vokal (랑→해): bunyi ketukan r",
+      "meaning_pt_br": "Eu te amo — ㄹ entre vogais (랑→해): som de toque de r"
     },
     {
       "id": 56,
@@ -2270,7 +2458,14 @@
         "label": "Vì sao có biên âm hóa?",
         "text": "ㄹ và ㄴ có vị trí lưỡi rất giống nhau — cả hai đều là âm lợi phát ở gờ răng. Khi chúng đứng cạnh nhau, âm ㄹ (âm bên) mạnh hơn kéo ㄴ vào vùng của nó. Đây là một trong những thay đổi âm gây bất ngờ nhất vì chính tả không cho thấy gợi ý trực quan nào rằng điều đó đang xảy ra."
       },
-      "title_ja": "ㄹ + ㄴ、または ㄴ + ㄹ → ㄹㄹ"
+      "title_ja": "ㄹ + ㄴ、または ㄴ + ㄹ → ㄹㄹ",
+      "title_pt_br": "ㄹ + ㄴ ou ㄴ + ㄹ → ㄹㄹ (Lateralização)",
+      "body_pt_br": "Quando ㄹ e ㄴ aparecem lado a lado entre sílabas, ambos se tornam ㄹ — isso se chama lateralização (유음화). Exemplo: 신라 (dinastia Silla) é pronunciado 실라 (silla), não sin-ra. Da mesma forma, 연락 (contato) é pronunciado 열락 (yeollak). O ㄴ se converte totalmente em ㄹ quando adjacente ao ㄹ.",
+      "tip_pt_br": {
+        "icon": "ℹ️",
+        "label": "Por que a lateralização?",
+        "text": "ㄹ e ㄴ compartilham posições de língua muito parecidas — ambos são sons alveolares produzidos na região dos dentes. Quando ficam lado a lado, o ㄹ mais forte (lateral) arrasta o ㄴ para o seu território. Essa é uma das mudanças de som mais marcantes porque a escrita não dá nenhuma pista visual de que ela está acontecendo."
+      }
     },
     {
       "id": 57,
@@ -2339,6 +2534,13 @@
         "sin-la",
         "sil-la",
         "shi-ra"
+      ],
+      "prompt_pt_br": "신라 (Silla — um reino histórico coreano) é pronunciado como…",
+      "choices_pt_br": [
+        "sin-ra",
+        "sin-la",
+        "sil-la",
+        "shi-ra"
       ]
     },
     {
@@ -2400,7 +2602,14 @@
         "label": "Vì sao những lỗi này lại phổ biến đến vậy?",
         "text": "Người nói tiếng Anh tự động áp dụng âm vị học tiếng Anh cho các âm mới. Tiếng Hàn có những nguyên âm, sự đối lập phụ âm và ngữ điệu đơn giản là không tồn tại trong tiếng Anh. Mỗi lỗi này xuất phát từ việc ánh xạ một âm tiếng Hàn sang âm tiếng Anh gần nhất — điều gần như luôn sai."
       },
-      "title_ja": "英語話者によくある6つの発音ミス"
+      "title_ja": "英語話者によくある6つの発音ミス",
+      "title_pt_br": "6 Erros Comuns para Falantes de Português",
+      "body_pt_br": "O coreano e o português têm sistemas fonológicos muito diferentes. As próximas seis etapas abordam, cada uma, um erro de pronúncia comum cometido por falantes de português — com explicações claras de como corrigi-lo. Reconhecer esses padrões cedo evita meses de maus hábitos.",
+      "tip_pt_br": {
+        "icon": "🎯",
+        "label": "Por que esses erros são tão comuns?",
+        "text": "Falantes de português aplicam automaticamente a fonologia do português aos novos sons. O coreano tem vogais, contrastes de consoantes e padrões de entonação que simplesmente não existem no português. Cada um desses erros vem de mapear um som coreano para o equivalente mais próximo em português — o que quase sempre está errado."
+      }
     },
     {
       "id": 59,
@@ -2461,7 +2670,14 @@
         "label": "Cách luyện ㅡ",
         "text": "Nói 'oo' như trong 'too'. Giờ giữ lưỡi ở đúng tư thế đó nhưng dẹt môi phẳng ra như thể đang mỉm cười nhẹ. Âm phát ra — cứng, không tròn môi, hơi lùi về sau — chính là ㅡ. Đừng thả lỏng lưỡi thành 'uh' hay âm mờ; hãy giữ nó cao và lùi sau."
       },
-      "title_ja": "ミス1——ㅡを「ウー」のように発音してしまう"
+      "title_ja": "ミス1——ㅡを「ウー」のように発音してしまう",
+      "title_pt_br": "Erro 1 — Pronunciar ㅡ como \"u\"",
+      "body_pt_br": "O ㅡ não tem equivalente em português. É uma vogal posterior não arredondada — sua língua fica na posição de \"u\", mas seus lábios ficam completamente retos e sem arredondamento, como se você dissesse um som neutro tipo \"é\" com a boca esticada e rígida. Palavras como 으, 크다, 든지 usam esse som. No momento em que seus lábios se arredondam, você está produzindo a vogal errada.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Como praticar o ㅡ",
+        "text": "Diga \"u\" como em \"tudo\". Agora mantenha a língua exatamente nessa posição, mas estique os lábios, como se estivesse sorrindo um pouco. O som que sai — rígido, sem arredondamento, ligeiramente posterior — é o ㅡ. Não relaxe a língua para um som neutro e reduzido; mantenha-a alta e posterior."
+      }
     },
     {
       "id": 60,
@@ -2522,7 +2738,14 @@
         "label": "Kiểm tra nhanh",
         "text": "Nói cụm 'Uh-oh'. Âm tiết đầu 'Uh' — dẹt, hàng sau trung bình, không có r và không tròn môi — rất gần với ㅓ. Đừng căng nó, đừng tròn môi, đừng thêm r. Chỉ là một âm 'uh' mở đơn giản. Các từ để luyện: 어, 어머니, 뭐."
       },
-      "title_ja": "ミス2——ㅓを英語の「アー」のように発音してしまう"
+      "title_ja": "ミス2——ㅓを英語の「アー」のように発音してしまう",
+      "title_pt_br": "Erro 2 — Confundir ㅓ com o \"é\" do português",
+      "body_pt_br": "O ㅓ costuma ser transcrito como \"eo\" ou \"uh\" em inglês, mas não é exatamente o \"é\" aberto do português. O ㅓ coreano é uma vogal média posterior não arredondada, um pouco mais atrás e mais aberta do que o \"é\" do português. Pense em um \"é\" relaxado, com a boca um pouco mais aberta, sem tensão. Adicionar tensão ou arredondar os lábios faz a vogal soar estrangeira.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Teste rápido",
+        "text": "Diga o \"é\" de \"pé\" de forma relaxada e abra um pouco mais a boca. Isso chega bem perto do ㅓ. Não tensione, não arredonde os lábios, não adicione som de r. Apenas um \"é\" aberto e neutro. Palavras para praticar: 어, 어머니, 뭐."
+      }
     },
     {
       "id": 61,
@@ -2583,7 +2806,14 @@
         "label": "Bài kiểm tra tờ giấy",
         "text": "Phụ âm bật hơi (ㅋ, ㅌ, ㅍ, ㅊ) làm tờ giấy rung mạnh. Phụ âm thường (ㄱ, ㄷ, ㅂ, ㅈ) làm nó động nhẹ. Phụ âm căng (ㄲ, ㄸ, ㅃ, ㅉ) hầu như không được làm tờ giấy động chút nào — cơ căng cao, không nhả hơi."
       },
-      "title_ja": "ミス3——濃音で息を出しすぎてしまう"
+      "title_ja": "ミス3——濃音で息を出しすぎてしまう",
+      "title_pt_br": "Erro 3 — Aspirar as Consoantes Dobradas",
+      "body_pt_br": "Falantes de português às vezes adicionam aspiração às consoantes oclusivas. As consoantes tensas (dobradas) do coreano ㄲ, ㄸ, ㅃ, ㅆ, ㅉ nunca são aspiradas. Elas são produzidas com os músculos tensos e sem nenhuma rajada de ar para fora. Segure um pedaço de papel na frente da boca — ele não deve se mover quando você diz 까, 따, 빠, 싸, 짜. O contraste é entre tenso-e-contido versus ar expelido.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "O teste do papel",
+        "text": "As consoantes aspiradas (ㅋ, ㅌ, ㅍ, ㅊ) fazem o papel tremer bastante. As consoantes simples (ㄱ, ㄷ, ㅂ, ㅈ) o movem um pouco. As consoantes tensas (ㄲ, ㄸ, ㅃ, ㅉ) quase não devem mover o papel — tensão muscular máxima, liberação de ar zero."
+      }
     },
     {
       "id": 62,
@@ -2644,7 +2874,14 @@
         "label": "Quy luật cần nhớ",
         "text": "Câu hỏi có/không: lên giọng nhẹ ở cuối. Ví dụ: 갔어요? (Bạn đã đi chưa?) — kết thúc lên. Câu hỏi có từ để hỏi: trung tính hoặc xuống. Ví dụ: 어디 갔어요? (Bạn đã đi đâu?) — kết thúc phẳng hoặc xuống. Từ để hỏi đã mang đủ thông tin; không cần giai điệu lên."
       },
-      "title_ja": "ミス4——すべての疑問文で語尾を上げてしまう"
+      "title_ja": "ミス4——すべての疑問文で語尾を上げてしまう",
+      "title_pt_br": "Erro 4 — Entonação Ascendente em Todas as Perguntas",
+      "body_pt_br": "Em português, a entonação ascendente no final de uma frase sinaliza uma pergunta. Em coreano, as regras de entonação são diferentes: as perguntas de sim/não realmente usam uma leve subida no final, mas as perguntas com pronome interrogativo (quem, o quê, onde, quando, por quê, como) costumam usar entonação descendente ou neutra — não ascendente. Usar em excesso a entonação ascendente ao estilo do português em todas as perguntas coreanas soa artificial e, às vezes, inseguro ou suplicante.",
+      "tip_pt_br": {
+        "icon": "ℹ️",
+        "label": "O padrão para lembrar",
+        "text": "Pergunta de sim/não: leve subida no final. Exemplo: 갔어요? (Você foi?) — termina subindo. Pergunta com interrogativo: neutra ou descendente. Exemplo: 어디 갔어요? (Onde você foi?) — termina plana ou descendente. A palavra interrogativa já carrega informação suficiente; não é preciso a melodia ascendente."
+      }
     },
     {
       "id": 63,
@@ -2705,7 +2942,14 @@
         "label": "Nguyên âm nào kích hoạt điều này?",
         "text": "ㅅ được ngạc hóa (âm 'sh') xuất hiện trước các nguyên âm hàng i: 이 (i), 야 (ya), 여 (yeo), 요 (yo), 유 (yu). Trước tất cả các nguyên âm khác — 아, 어, 오, 우, 으, và các nguyên âm ghép của chúng — ㅅ vẫn là âm s thường. 사 là 'sa', nhưng 시 là 'shi'."
       },
-      "title_ja": "ミス5——이系の母音の前でㅅを単なる「s」のように発音してしまう"
+      "title_ja": "ミス5——이系の母音の前でㅅを単なる「s」のように発音してしまう",
+      "title_pt_br": "Erro 5 — ㅅ como \"s\" Simples Antes de Vogais 이",
+      "body_pt_br": "Antes das vogais 이, 야, 여, 요, 유, a consoante ㅅ é pronunciada de forma parecida com \"ch\" (como em \"chuva\"). Então 시 é \"chi\" e não \"si\", e 셔츠 (camisa) começa com esse som. Isso também vale para o ㅆ tenso antes de 이. Falantes de português que aprenderam a romanização primeiro costumam dizer \"si\" quando os falantes nativos dizem \"chi\", o que chama atenção imediatamente.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Quais vogais provocam essa mudança?",
+        "text": "O ㅅ palatalizado (som de \"ch\") ocorre antes das vogais do tipo 이: 이 (i), 야 (ya), 여 (yeo), 요 (yo), 유 (yu). Antes de todas as outras vogais — 아, 어, 오, 우, 으 e seus compostos — o ㅅ permanece como um som de s simples. 사 é \"sa\", mas 시 é \"chi\"."
+      }
     },
     {
       "id": 64,
@@ -2766,7 +3010,14 @@
         "label": "Kết nối lại với Chặng 4",
         "text": "Bạn đã học sự yếu đi của ㅎ và sự bật hơi ㅎ + phụ âm. Lỗi 6 chỉ là nơi thực tế phổ biến nhất mà người mới học gặp sự yếu đi của ㅎ và làm sai. 좋아요 có lẽ là dạng tính từ được dùng nhiều nhất trong tiếng Hàn — phát âm đúng nó có ý nghĩa ngay lập tức."
       },
-      "title_ja": "ミス6——좋아요のㅎを発音してしまう"
+      "title_ja": "ミス6——좋아요のㅎを発音してしまう",
+      "title_pt_br": "Erro 6 — Pronunciar o ㅎ em 좋아요",
+      "body_pt_br": "Iniciantes costumam dizer \"jo-ha-yo\" para 좋아요, tratando o ㅎ como um som de h claramente pronunciado. Mas, devido ao enfraquecimento do ㅎ entre vogais (que você aprendeu na Etapa 4), a pronúncia real é 조아요 (jo-a-yo) — o ㅎ quase desaparece. Isso vale de forma ampla: 많아요 → 마나요, 낳아요 → 나아요. Sempre que o ㅎ fica entre vogais em um contexto de fala natural, ele se desvanece.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Conectando de volta à Etapa 4",
+        "text": "Você já aprendeu o enfraquecimento do ㅎ e a aspiração de ㅎ + consoante. O Erro 6 é apenas o lugar mais comum do mundo real em que iniciantes encontram o enfraquecimento do ㅎ e erram. 좋아요 é possivelmente a forma de adjetivo mais usada no coreano — acertar sua pronúncia importa imediatamente."
+      }
     },
     {
       "id": 65,
@@ -2835,6 +3086,13 @@
         "平らで丸めない（横に引く）",
         "「ah」のように少し開く",
         "キスのようにすぼめる"
+      ],
+      "prompt_pt_br": "Ao pronunciar ㅡ, seus lábios devem estar…",
+      "choices_pt_br": [
+        "Arredondados como \"u\"",
+        "Retos e sem arredondamento (esticados)",
+        "Levemente abertos como \"a\"",
+        "Franzidos como um beijo"
       ]
     },
     {
@@ -2904,6 +3162,13 @@
         "「she」のような sh",
         "「zero」のような z",
         "「tea」のような t"
+      ],
+      "prompt_pt_br": "ㅅ antes da vogal 이 soa como…",
+      "choices_pt_br": [
+        "\"s\" simples como em \"sala\"",
+        "\"ch\" como em \"chuva\"",
+        "\"z\" como em \"zero\"",
+        "\"t\" como em \"tea\" (chá, em inglês)"
       ]
     },
     {
@@ -2973,6 +3238,13 @@
         "jo-a-yo",
         "joh-a-yo",
         "jo-ha"
+      ],
+      "prompt_pt_br": "좋아요 (está bom / eu gosto) é realmente pronunciado como…",
+      "choices_pt_br": [
+        "jo-ha-yo",
+        "jo-a-yo",
+        "joh-a-yo",
+        "jo-ha"
       ]
     },
     {
@@ -2998,7 +3270,9 @@
       "title_ja": "発音ガイド完了です！",
       "title_zh_tw": "發音規則學習完成！",
       "title_vi": "Hoàn thành Hướng dẫn phát âm!",
-      "title_th": "เรียนจบกฎการออกเสียงแล้ว!"
+      "title_th": "เรียนจบกฎการออกเสียงแล้ว!",
+      "title_pt_br": "Guia de Pronúncia Concluído!",
+      "message_pt_br": "Você dominou as 8 regras de pronúncia coreana: redução do batchim, ligação, assimilação nasal, tensificação, enfraquecimento do ㅎ, aspiração do ㅎ, palatalização e o som do ㄹ. Além dos 6 erros mais comuns cometidos por falantes de português — e como evitá-los. Sua pronúncia do coreano agora vai soar muito mais natural."
     }
   ]
 }

@@ -16,7 +16,8 @@
       "name_vi": "Người & Gia đình",
       "name_th": "ผู้คนและครอบครัว",
       "name_id": "Orang & Keluarga",
-      "name_ja": "人・家族"
+      "name_ja": "人・家族",
+      "name_pt_br": "Pessoas e Família"
     },
     {
       "id": 2,
@@ -32,7 +33,8 @@
       "name_vi": "Địa điểm & Thời gian",
       "name_th": "สถานที่และเวลา",
       "name_id": "Tempat & Waktu",
-      "name_ja": "場所・時間"
+      "name_ja": "場所・時間",
+      "name_pt_br": "Lugares e Tempo"
     },
     {
       "id": 3,
@@ -48,7 +50,8 @@
       "name_vi": "Đồ vật & Từ đếm",
       "name_th": "สิ่งของและตัวนับ",
       "name_id": "Benda & Kata Bantu Bilangan",
-      "name_ja": "物・助数詞"
+      "name_ja": "物・助数詞",
+      "name_pt_br": "Objetos e Contadores"
     },
     {
       "id": 4,
@@ -64,7 +67,8 @@
       "name_vi": "Sở hữu",
       "name_th": "คำแสดงความเป็นเจ้าของ",
       "name_id": "Kepemilikan",
-      "name_ja": "所有格"
+      "name_ja": "所有格",
+      "name_pt_br": "Possessivos"
     }
   ],
   "steps": [
@@ -127,7 +131,14 @@
         "label": "Hậu tố số nhiều 들",
         "text": "들 nhẹ nhàng thêm ý số nhiều: 친구들 (bạn bè), 학생들 (học sinh). Bạn có thể gắn 들 vào người hoặc động vật, nhưng nó là tùy chọn và thường được bỏ khi ngữ cảnh đã rõ."
       },
-      "title_ja": "韓国語の名詞（명사）"
+      "title_ja": "韓国語の名詞（명사）",
+      "title_pt_br": "Substantivos Coreanos (명사)",
+      "body_pt_br": "Os substantivos coreanos (명사) não mudam de acordo com gênero ou número. A mesma palavra 사람 significa \"pessoa\", \"pessoas\", \"uma pessoa\" e \"a pessoa\". O plural é entendido pelo contexto ou adicionado separadamente com palavras como 들 (들 é um sufixo de plural, ex.: 사람들 = pessoas). Não existem artigos como \"um/uma\" ou \"o/a\". Isso torna os substantivos coreanos muito fáceis de aprender — você só precisa saber a palavra em si.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Sufixo de plural 들",
+        "text": "들 adiciona a ideia de plural de forma suave: 친구들 (amigos), 학생들 (estudantes). Você pode acrescentar 들 a pessoas ou animais, mas é opcional e geralmente omitido quando o contexto é claro."
+      }
     },
     {
       "id": 2,
@@ -148,7 +159,8 @@
       "meaning_de": "Person / Mensch",
       "meaning_vi": "người / con người",
       "meaning_th": "คน / มนุษย์",
-      "meaning_id": "orang / manusia"
+      "meaning_id": "orang / manusia",
+      "meaning_pt_br": "pessoa / ser humano"
     },
     {
       "id": 3,
@@ -169,7 +181,8 @@
       "meaning_de": "Mann / Junge",
       "meaning_vi": "đàn ông / con trai",
       "meaning_th": "ผู้ชาย / เด็กผู้ชาย",
-      "meaning_id": "pria / anak laki-laki"
+      "meaning_id": "pria / anak laki-laki",
+      "meaning_pt_br": "homem / menino"
     },
     {
       "id": 4,
@@ -190,7 +203,8 @@
       "meaning_de": "Frau / Mädchen",
       "meaning_vi": "phụ nữ / con gái",
       "meaning_th": "ผู้หญิง / เด็กผู้หญิง",
-      "meaning_id": "wanita / anak perempuan"
+      "meaning_id": "wanita / anak perempuan",
+      "meaning_pt_br": "mulher / menina"
     },
     {
       "id": 5,
@@ -211,7 +225,8 @@
       "meaning_de": "Kind",
       "meaning_vi": "trẻ em / đứa bé",
       "meaning_th": "เด็ก",
-      "meaning_id": "anak / anak kecil"
+      "meaning_id": "anak / anak kecil",
+      "meaning_pt_br": "criança"
     },
     {
       "id": 6,
@@ -232,7 +247,8 @@
       "meaning_de": "Freund/in",
       "meaning_vi": "bạn bè",
       "meaning_th": "เพื่อน",
-      "meaning_id": "teman"
+      "meaning_id": "teman",
+      "meaning_pt_br": "amigo/a"
     },
     {
       "id": 7,
@@ -253,7 +269,8 @@
       "prompt_th": "คำใดหมายความว่า \"เพื่อน\"?",
       "prompt_id": "Kata mana yang berarti 'teman'?",
       "prompt_vi": "Từ nào có nghĩa là 'bạn bè'?",
-      "prompt_ja": "「友達」を意味する語はどれでしょう。"
+      "prompt_ja": "「友達」を意味する語はどれでしょう。",
+      "prompt_pt_br": "Qual palavra significa \"amigo/a\"?"
     },
     {
       "id": 8,
@@ -314,7 +331,14 @@
         "label": "Cách xưng hô theo giới tính",
         "text": "Khác với tiếng Anh, tiếng Hàn không có một từ đơn 'anh chị em'. Việc bạn nói 오빠/형 hay 언니/누나 phụ thuộc hoàn toàn vào giới tính của chính bạn và độ tuổi tương đối của người anh chị em đó. Đây là điều cốt lõi trong từ vựng gia đình tiếng Hàn."
       },
-      "title_ja": "家族の名詞（가족 명사）"
+      "title_ja": "家族の名詞（가족 명사）",
+      "title_pt_br": "Substantivos de Família (가족 명사)",
+      "body_pt_br": "Os termos de família em coreano costumam variar de acordo com o gênero de quem fala. 오빠 (oppa) é como uma mulher chama o irmão mais velho, enquanto 형 (hyung) é como um homem chama o irmão mais velho. Da mesma forma, 언니 (unni) = irmã mais velha (quando quem fala é mulher) e 누나 (nuna) = irmã mais velha (quando quem fala é homem). Para os pais, 아버지 / 어머니 são os termos formais, enquanto 아빠 / 엄마 são os equivalentes informais.",
+      "tip_pt_br": {
+        "icon": "👨‍👩‍👧",
+        "label": "Formas de tratamento específicas por gênero",
+        "text": "Diferente do português, o coreano não tem uma única palavra para \"irmão/irmã\" no sentido genérico. Usar 오빠/형 ou 언니/누나 depende inteiramente do seu próprio gênero e da idade relativa do irmão ou irmã. Isso é fundamental no vocabulário de família coreano."
+      }
     },
     {
       "id": 9,
@@ -336,7 +360,8 @@
       "meaning_de": "Vater (formell)",
       "meaning_vi": "cha (trang trọng)",
       "meaning_th": "พ่อ (ทางการ)",
-      "meaning_id": "ayah (formal)"
+      "meaning_id": "ayah (formal)",
+      "meaning_pt_br": "pai (formal)"
     },
     {
       "id": 10,
@@ -358,7 +383,8 @@
       "meaning_de": "Mutter (formell)",
       "meaning_vi": "mẹ (trang trọng)",
       "meaning_th": "แม่ (ทางการ)",
-      "meaning_id": "ibu (formal)"
+      "meaning_id": "ibu (formal)",
+      "meaning_pt_br": "mãe (formal)"
     },
     {
       "id": 11,
@@ -419,7 +445,14 @@
         "label": "Trợ từ vị trí 에",
         "text": "Gắn 에 vào một danh từ nơi chốn để mang nghĩa 'tại', 'ở' hoặc 'đến': 집에 (ở nhà), 학교에 (đến trường), 식당에 (tại nhà hàng). 에서 có nghĩa là 'từ' hoặc 'tại (khi làm gì đó)': 학교에서 공부해요 (Tôi học ở trường)."
       },
-      "title_ja": "場所の名詞（장소 명사）"
+      "title_ja": "場所の名詞（장소 명사）",
+      "title_pt_br": "Substantivos de Lugar (장소 명사)",
+      "body_pt_br": "Os substantivos de lugar em coreano seguem a mesma regra de não ter artigo que todos os outros substantivos. 학교 significa \"escola\", \"uma escola\" ou \"a escola\" — o contexto diz qual. Ao dar direções ou indicar localização, o coreano acrescenta a partícula 에 (em/para) depois do substantivo de lugar: 학교에 가요 (Eu vou para a escola). Os substantivos de lugar estão entre as palavras mais práticas para aprender logo no início.",
+      "tip_pt_br": {
+        "icon": "📍",
+        "label": "Partícula de local 에",
+        "text": "Acrescente 에 a um substantivo de lugar para significar \"em\", \"no/na\" ou \"para\": 집에 (em casa), 학교에 (para a escola), 식당에 (no restaurante). 에서 significa \"de\" ou \"em (fazendo algo)\": 학교에서 공부해요 (Eu estudo na escola)."
+      }
     },
     {
       "id": 12,
@@ -439,7 +472,8 @@
       "meaning_de": "Haus / Zuhause",
       "meaning_vi": "nhà / nhà ở",
       "meaning_th": "บ้าน",
-      "meaning_id": "rumah"
+      "meaning_id": "rumah",
+      "meaning_pt_br": "casa / lar"
     },
     {
       "id": 13,
@@ -460,7 +494,8 @@
       "meaning_de": "Schule",
       "meaning_vi": "trường học",
       "meaning_th": "โรงเรียน",
-      "meaning_id": "sekolah"
+      "meaning_id": "sekolah",
+      "meaning_pt_br": "escola"
     },
     {
       "id": 14,
@@ -481,7 +516,8 @@
       "meaning_de": "Restaurant / Kantine",
       "meaning_vi": "nhà hàng / căng tin",
       "meaning_th": "ร้านอาหาร / โรงอาหาร",
-      "meaning_id": "restoran / kantin"
+      "meaning_id": "restoran / kantin",
+      "meaning_pt_br": "restaurante / refeitório"
     },
     {
       "id": 15,
@@ -502,7 +538,8 @@
       "meaning_de": "Krankenhaus / Klinik",
       "meaning_vi": "bệnh viện / phòng khám",
       "meaning_th": "โรงพยาบาล / คลินิก",
-      "meaning_id": "rumah sakit / klinik"
+      "meaning_id": "rumah sakit / klinik",
+      "meaning_pt_br": "hospital / clínica"
     },
     {
       "id": 16,
@@ -523,7 +560,8 @@
       "prompt_th": "คำใดหมายความว่า \"โรงเรียน\"?",
       "prompt_id": "Kata mana yang berarti 'sekolah'?",
       "prompt_vi": "Từ nào có nghĩa là 'trường học'?",
-      "prompt_ja": "「学校」を意味する語はどれでしょう。"
+      "prompt_ja": "「学校」を意味する語はどれでしょう。",
+      "prompt_pt_br": "Qual palavra significa \"escola\"?"
     },
     {
       "id": 17,
@@ -584,7 +622,14 @@
         "label": "Từ chỉ thời gian mở đầu câu",
         "text": "Tiếng Hàn rất linh hoạt về trật tự từ, nhưng cách diễn đạt thời gian thường đứng ở đầu câu — trước chủ ngữ hoặc ngay sau nó. '오늘 학교에 가요' và '학교에 오늘 가요' đều đúng, dù câu đầu tự nhiên hơn."
       },
-      "title_ja": "時間の名詞（시간 명사）"
+      "title_ja": "時間の名詞（시간 명사）",
+      "title_pt_br": "Substantivos de Tempo (시간 명사)",
+      "body_pt_br": "Os substantivos de tempo em coreano funcionam de forma independente — não precisam de conjugação. Basta dizer a palavra de tempo no início da frase: 오늘 가요 (Eu vou hoje), 내일 만나요 (Vamos nos encontrar amanhã). As expressões de tempo em coreano usam números sino-coreanos para as horas e números coreanos nativos para os minutos. As palavras de tempo mais essenciais são 오늘 (hoje), 내일 (amanhã), 어제 (ontem) e 지금 (agora).",
+      "tip_pt_br": {
+        "icon": "🕐",
+        "label": "Palavras de tempo no início da frase",
+        "text": "O coreano é bem flexível quanto à ordem das palavras, mas as expressões de tempo geralmente vêm no início da frase — antes do sujeito ou logo depois dele. \"오늘 학교에 가요\" e \"학교에 오늘 가요\" estão ambas corretas, embora a primeira seja mais natural."
+      }
     },
     {
       "id": 18,
@@ -605,7 +650,8 @@
       "meaning_de": "heute",
       "meaning_vi": "hôm nay",
       "meaning_th": "วันนี้",
-      "meaning_id": "hari ini"
+      "meaning_id": "hari ini",
+      "meaning_pt_br": "hoje"
     },
     {
       "id": 19,
@@ -626,7 +672,8 @@
       "prompt_th": "คำใดหมายความว่า \"วันนี้\"?",
       "prompt_id": "Kata mana yang berarti 'hari ini'?",
       "prompt_vi": "Từ nào có nghĩa là 'hôm nay'?",
-      "prompt_ja": "「今日」を意味する語はどれでしょう。"
+      "prompt_ja": "「今日」を意味する語はどれでしょう。",
+      "prompt_pt_br": "Qual palavra significa \"hoje\"?"
     },
     {
       "id": 20,
@@ -687,7 +734,14 @@
         "label": "Trợ từ tân ngữ 을/를",
         "text": "Dùng 을 sau danh từ kết thúc bằng phụ âm: 책을. Dùng 를 sau danh từ kết thúc bằng nguyên âm: 가방을. Trong lời nói thân mật, trợ từ này thường bị bỏ hoàn toàn."
       },
-      "title_ja": "物の名詞（사물 명사）"
+      "title_ja": "物の名詞（사물 명사）",
+      "title_pt_br": "Substantivos de Objetos (사물 명사)",
+      "body_pt_br": "Objetos do dia a dia estão entre as palavras coreanas mais úteis desde o início. O coreano tem tanto palavras coreanas nativas quanto palavras sino-coreanas (de origem chinesa) para objetos, e em muitos casos se usa o Konglish (empréstimos do inglês): 커피 (café), 핸드폰 (celular). Quando o objeto é o receptor direto de um verbo, acrescente 을/를 depois do substantivo: 책을 읽어요 (Eu leio um livro). Essa é a partícula que marca o objeto.",
+      "tip_pt_br": {
+        "icon": "📱",
+        "label": "Partícula de objeto 을/를",
+        "text": "Use 을 depois de um substantivo terminado em consoante: 책을. Use 를 depois de um substantivo terminado em vogal: 가방을. Na fala informal, essa partícula costuma ser omitida completamente."
+      }
     },
     {
       "id": 21,
@@ -707,7 +761,8 @@
       "meaning_de": "Buch",
       "meaning_vi": "sách",
       "meaning_th": "หนังสือ",
-      "meaning_id": "buku"
+      "meaning_id": "buku",
+      "meaning_pt_br": "livro"
     },
     {
       "id": 22,
@@ -728,7 +783,8 @@
       "meaning_de": "Tasche / Rucksack",
       "meaning_vi": "túi xách / ba lô",
       "meaning_th": "กระเป๋า / เป้สะพาย",
-      "meaning_id": "tas / ransel"
+      "meaning_id": "tas / ransel",
+      "meaning_pt_br": "bolsa / mochila"
     },
     {
       "id": 23,
@@ -748,7 +804,8 @@
       "meaning_de": "Geld",
       "meaning_vi": "tiền",
       "meaning_th": "เงิน",
-      "meaning_id": "uang"
+      "meaning_id": "uang",
+      "meaning_pt_br": "dinheiro"
     },
     {
       "id": 24,
@@ -769,7 +826,8 @@
       "prompt_th": "คำใดหมายความว่า \"เงิน\"?",
       "prompt_id": "Kata mana yang berarti 'uang'?",
       "prompt_vi": "Từ nào có nghĩa là 'tiền'?",
-      "prompt_ja": "「お金」を意味する語はどれでしょう。"
+      "prompt_ja": "「お金」を意味する語はどれでしょう。",
+      "prompt_pt_br": "Qual palavra significa \"dinheiro\"?"
     },
     {
       "id": 25,
@@ -830,7 +888,14 @@
         "label": "Số thuần Hàn với loại từ",
         "text": "Khi kết hợp số thuần Hàn với loại từ, con số thay đổi một chút: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네. Vậy nên là 한 개 (không phải 하나 개), 두 명 (không phải 둘 명)."
       },
-      "title_ja": "韓国語の助数詞（수사）"
+      "title_ja": "韓国語の助数詞（수사）",
+      "title_pt_br": "Contadores Coreanos (수사)",
+      "body_pt_br": "O coreano usa palavras de contagem chamadas contadores (수사) que se juntam aos números ao contar coisas específicas. O contador 개 é usado para objetos em geral: 한 개 (uma coisa), 세 개 (três coisas). 명 é usado para contar pessoas: 두 명 (duas pessoas). 잔 é usado para xícaras/copos: 한 잔 (uma xícara). O padrão é: número + contador, colocado logo antes ou depois do substantivo. Os números coreanos usados com contadores são do conjunto nativo coreano: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5).",
+      "tip_pt_br": {
+        "icon": "🔢",
+        "label": "Números nativos com contadores",
+        "text": "Ao combinar números coreanos nativos com contadores, o número muda ligeiramente: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네. Por isso se diz 한 개 (e não 하나 개), 두 명 (e não 둘 명)."
+      }
     },
     {
       "id": 26,
@@ -855,7 +920,8 @@
       "meaning_de": "drei Personen (명 = Personenzählwort)",
       "meaning_vi": "ba người (명 = đơn vị đếm người)",
       "meaning_th": "สามคน (명 = ลักษณนามคน)",
-      "meaning_id": "tiga orang (명 = kata bantu bilangan orang)"
+      "meaning_id": "tiga orang (명 = kata bantu bilangan orang)",
+      "meaning_pt_br": "três pessoas (명 = contador de pessoas)"
     },
     {
       "id": 27,
@@ -876,7 +942,8 @@
       "prompt_th": "จะพูดว่า \"สี่คน\" เป็นภาษาเกาหลีได้อย่างไร?",
       "prompt_id": "Bagaimana cara mengatakan 'empat orang' dalam bahasa Korea?",
       "prompt_vi": "Nói 'bốn người' bằng tiếng Hàn như thế nào?",
-      "prompt_ja": "「4人」は韓国語でどう言いますか。"
+      "prompt_ja": "「4人」は韓国語でどう言いますか。",
+      "prompt_pt_br": "Como se diz \"quatro pessoas\" em coreano?"
     },
     {
       "id": 28,
@@ -937,7 +1004,14 @@
         "label": "제 và 내",
         "text": "제 là dạng sở hữu lịch sự/khiêm nhường 'của tôi' (từ 저 = tôi, lịch sự). 내 là dạng sở hữu thân mật 'của tôi' (từ 나 = tôi, thân mật). Dùng 제 với người lạ hoặc người lớn tuổi, 내 với bạn thân."
       },
-      "title_ja": "所有格助詞 의"
+      "title_ja": "所有格助詞 의",
+      "title_pt_br": "Marcador Possessivo 의",
+      "body_pt_br": "O marcador possessivo 의 (ui, geralmente pronunciado \"에\") se junta a um substantivo para indicar posse, como o \"de\" possessivo do português. 저의 가방 = minha bolsa, 친구의 집 = a casa do amigo. Na fala do dia a dia, 의 costuma ser omitido: 제 가방 (minha bolsa, polido) ou 내 가방 (minha bolsa, informal). Os pronomes 저 e 나 têm formas possessivas especiais: 제 (polido, \"meu/minha\") e 내 (informal, \"meu/minha\").",
+      "tip_pt_br": {
+        "icon": "🔑",
+        "label": "제 vs 내",
+        "text": "제 é o possessivo \"meu/minha\" polido/humilde (de 저 = eu, polido). 내 é o possessivo \"meu/minha\" informal (de 나 = eu, informal). Use 제 com desconhecidos ou pessoas mais velhas, e 내 com amigos próximos."
+      }
     },
     {
       "id": 29,
@@ -960,7 +1034,8 @@
       "meaning_de": "meine Tasche (höflich)",
       "meaning_vi": "túi của tôi (lịch sự)",
       "meaning_th": "กระเป๋าของฉัน (สุภาพ)",
-      "meaning_id": "tas saya (sopan)"
+      "meaning_id": "tas saya (sopan)",
+      "meaning_pt_br": "minha bolsa (polido)"
     },
     {
       "id": 30,
@@ -983,7 +1058,8 @@
       "meaning_de": "mein Freund / meine Freundin (informell)",
       "meaning_vi": "bạn của tôi (thân mật)",
       "meaning_th": "เพื่อนของฉัน (ไม่เป็นทางการ)",
-      "meaning_id": "teman saya (santai)"
+      "meaning_id": "teman saya (santai)",
+      "meaning_pt_br": "meu amigo / minha amiga (informal)"
     },
     {
       "id": 31,
@@ -1004,7 +1080,8 @@
       "prompt_th": "จะพูดว่า \"บ้านของฉัน\" แบบสุภาพเป็นภาษาเกาหลีได้อย่างไร?",
       "prompt_id": "Bagaimana cara mengatakan 'rumah saya' dalam bahasa Korea yang sopan?",
       "prompt_vi": "Nói 'nhà của tôi' bằng tiếng Hàn lịch sự như thế nào?",
-      "prompt_ja": "丁寧な韓国語で「私の家」はどう言いますか。"
+      "prompt_ja": "丁寧な韓国語で「私の家」はどう言いますか。",
+      "prompt_pt_br": "Como se diz \"minha casa\" no coreano polido?"
     },
     {
       "id": 32,
@@ -1028,7 +1105,8 @@
       "meaning_de": "das Haus des Freundes / der Freundin",
       "meaning_vi": "nhà của bạn",
       "meaning_th": "บ้านของเพื่อน",
-      "meaning_id": "rumah teman"
+      "meaning_id": "rumah teman",
+      "meaning_pt_br": "casa do amigo / da amiga"
     },
     {
       "id": 33,
@@ -1049,7 +1127,8 @@
       "prompt_th": "วลีใดกล่าวว่า \"หนังสือของเด็ก\" ได้ถูกต้อง?",
       "prompt_id": "Frasa mana yang dengan benar mengatakan 'buku anak itu'?",
       "prompt_vi": "Cụm từ nào diễn đạt đúng 'quyển sách của đứa trẻ'?",
-      "prompt_ja": "「子どもの本」を正しく表しているのはどれでしょう。"
+      "prompt_ja": "「子どもの本」を正しく表しているのはどれでしょう。",
+      "prompt_pt_br": "Qual frase diz corretamente \"o livro da criança\"?"
     },
     {
       "id": 34,
@@ -1074,7 +1153,9 @@
       "message_ja": "韓国語の基本的な名詞——人・場所・物・時間を表す語・助数詞・所有表現——をひととおり学びました。次は代名詞に進みましょう。",
       "title_zh_tw": "名詞學習完成！",
       "title_vi": "Hoàn thành bài Danh từ!",
-      "title_th": "เรียนจบคำนามแล้ว!"
+      "title_th": "เรียนจบคำนามแล้ว!",
+      "title_pt_br": "Substantivos Completos!",
+      "message_pt_br": "Você viu os substantivos essenciais do coreano — pessoas, lugares, objetos, palavras de tempo, contadores e possessivos. Continue agora para Pronomes."
     }
   ]
 }

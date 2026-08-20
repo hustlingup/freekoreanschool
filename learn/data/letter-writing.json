@@ -16,7 +16,8 @@
       "name_de": "Wie Striche funktionieren",
       "name_vi": "Cách các nét hoạt động",
       "name_th": "ลำดับขีดทำงานอย่างไร",
-      "name_id": "Cara Kerja Goresan"
+      "name_id": "Cara Kerja Goresan",
+      "name_pt_br": "Como Funcionam os Traços"
     },
     {
       "id": 2,
@@ -32,7 +33,8 @@
       "name_de": "Konsonanten",
       "name_vi": "Phụ âm",
       "name_th": "พยัญชนะ",
-      "name_id": "Konsonan"
+      "name_id": "Konsonan",
+      "name_pt_br": "Consoantes"
     },
     {
       "id": 3,
@@ -48,7 +50,8 @@
       "name_de": "Vokale",
       "name_vi": "Nguyên âm",
       "name_th": "สระ",
-      "name_id": "Vokal"
+      "name_id": "Vokal",
+      "name_pt_br": "Vogais"
     },
     {
       "id": 4,
@@ -64,7 +67,8 @@
       "name_de": "Silbenblöcke",
       "name_vi": "Khối âm tiết",
       "name_th": "บล็อกพยางค์",
-      "name_id": "Blok Suku Kata"
+      "name_id": "Blok Suku Kata",
+      "name_pt_br": "Blocos Silábicos"
     },
     {
       "id": 5,
@@ -80,7 +84,8 @@
       "name_de": "Herausforderung",
       "name_vi": "Thử thách",
       "name_th": "ความท้าทาย",
-      "name_id": "Tantangan"
+      "name_id": "Tantangan",
+      "name_pt_br": "Desafio"
     }
   ],
   "steps": [
@@ -196,6 +201,18 @@
         "icon": "✍️",
         "label": "Mengapa ini penting",
         "text": "Setiap huruf hangul mengikuti tiga aturan ini. Kuasai 24 bentuk dasar dan Anda bisa menulis seluruh 11.172 suku kata Korea."
+      },
+      "title_pt_br": "As Três Regras da Ordem dos Traços",
+      "body_pt_br": "Cada letra do hangul é formada por alguns traços simples, e esses traços sempre seguem a mesma ordem. Três regras cobrem todos eles.",
+      "rules_pt_br": [
+        "De cima para baixo — o traço mais alto é escrito primeiro.",
+        "Da esquerda para a direita — quando os traços ficam lado a lado, comece pelo da esquerda.",
+        "Horizontal antes da vertical que a cruza — desenhe primeiro a barra que atravessa, depois a linha que a corta."
+      ],
+      "tip_pt_br": {
+        "icon": "✍️",
+        "label": "Por que isso importa",
+        "text": "Cada letra do hangul segue essas três regras. Aprenda as 24 formas básicas e você conseguirá escrever todas as 11.172 sílabas coreanas."
       }
     },
     {
@@ -310,6 +327,18 @@
         "icon": "💡",
         "label": "Tanda kecil di atas ㅎ dan ㅊ",
         "text": "Tanda kecil di atas ㅎ dan ㅊ boleh ditulis mendatar, miring, atau tegak lurus — bahasa Korea tidak punya aturan resmi, dan Anda akan menjumpai ketiganya. Kami menulisnya miring, seperti yang dicetak kebanyakan font Korea, agar huruf yang Anda latih terlihat seperti tulisan Korea yang benar-benar akan Anda baca."
+      },
+      "title_pt_br": "Uma Letra, Um Ritmo",
+      "body_pt_br": "Cada letra tem um número fixo de traços, e cada traço tem uma direção fixa. ㅈ é escrito em 2 traços e ㅊ em 3 — essa é a convenção de escrita à mão usada em toda esta lição. Dentro de um bloco silábico, a ordem também é fixa: primeiro a consoante inicial, depois a vogal e, por fim, a consoante final embaixo.",
+      "rules_pt_br": [
+        "Consoante inicial primeiro (초성) — a posição superior esquerda.",
+        "Depois a vogal (중성) — à direita dela, ou embaixo.",
+        "Depois a consoante final (종성) na parte de baixo, se a sílaba tiver uma."
+      ],
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "A marca no topo de ㅎ e ㅊ",
+        "text": "A pequena marca no topo de ㅎ e ㅊ pode ser escrita reta, inclinada ou na vertical — o coreano não tem uma regra oficial, e você verá as três formas. Nós a desenhamos inclinada, do jeito que a maioria das fontes coreanas imprime, para que a letra que você pratica se pareça com o coreano que você realmente vai ler."
       }
     },
     {
@@ -340,7 +369,9 @@
       "example_meaning_th": "ไป",
       "example_meaning_id": "pergi",
       "katakana": "カダ",
-      "zhuyin": "ㄍ"
+      "zhuyin": "ㄍ",
+      "hint_pt_br": "Um único traço: para a direita e depois vira e desce reto.",
+      "example_meaning_pt_br": "ir"
     },
     {
       "id": 4,
@@ -356,7 +387,8 @@
       "hint_de": "Beginne oben links. Ein Strich: nach rechts, dann nach unten, ohne abzusetzen.",
       "hint_vi": "Bắt đầu từ góc trên bên trái. Một nét: sang ngang rồi xuống, không nhấc bút.",
       "hint_th": "เริ่มที่มุมบนซ้าย เส้นเดียว: ลากขวาแล้วลงล่างโดยไม่ยกปากกา",
-      "hint_id": "Mulai dari kiri atas. Satu goresan: ke samping, lalu ke bawah tanpa mengangkat pena."
+      "hint_id": "Mulai dari kiri atas. Satu goresan: ke samping, lalu ke bawah tanpa mengangkat pena.",
+      "hint_pt_br": "Comece no canto superior esquerdo. Um traço: para o lado e depois para baixo, sem levantar a caneta."
     },
     {
       "id": 5,
@@ -386,7 +418,9 @@
       "example_meaning_th": "ฉัน / ผม",
       "example_meaning_id": "saya / aku",
       "katakana": "ナ",
-      "zhuyin": "ㄋ"
+      "zhuyin": "ㄋ",
+      "hint_pt_br": "Um único traço: desce pelo lado esquerdo, depois vira e segue pela parte de baixo.",
+      "example_meaning_pt_br": "eu / mim"
     },
     {
       "id": 6,
@@ -402,7 +436,8 @@
       "hint_de": "Beginne oben links. Zuerst nach unten, dann nach rechts — ein durchgehender Strich.",
       "hint_vi": "Bắt đầu từ góc trên bên trái. Xuống trước, rồi sang phải — một nét liền không ngắt.",
       "hint_th": "เริ่มที่มุมบนซ้าย ลงก่อน แล้วไปทางขวา — เส้นเดียวไม่ขาดตอน",
-      "hint_id": "Mulai dari kiri atas. Turun dulu, lalu ke kanan — satu goresan tanpa putus."
+      "hint_id": "Mulai dari kiri atas. Turun dulu, lalu ke kanan — satu goresan tanpa putus.",
+      "hint_pt_br": "Comece no canto superior esquerdo. Primeiro para baixo, depois para a direita — um único traço contínuo."
     },
     {
       "id": 7,
@@ -432,7 +467,9 @@
       "example_meaning_th": "ทั้งหมด / ทุก",
       "example_meaning_id": "semua / setiap",
       "katakana": "タ",
-      "zhuyin": "ㄉ"
+      "zhuyin": "ㄉ",
+      "hint_pt_br": "Dois traços: a barra de cima e depois um traço que desce pelo lado esquerdo e segue pela base.",
+      "example_meaning_pt_br": "tudo / cada"
     },
     {
       "id": 8,
@@ -448,7 +485,8 @@
       "hint_de": "Zeichne den oberen Balken von links nach rechts. Setze dann oben links neu an: nach unten, dann nach rechts.",
       "hint_vi": "Vẽ thanh ngang trên từ trái sang phải. Rồi bắt đầu lại từ góc trên bên trái: xuống, rồi sang phải.",
       "hint_th": "ลากเส้นบนจากซ้ายไปขวา แล้วเริ่มใหม่ที่มุมบนซ้าย: ลงล่าง แล้วไปขวา",
-      "hint_id": "Tarik palang atas dari kiri ke kanan. Lalu mulai lagi dari sudut kiri atas: ke bawah, lalu ke kanan."
+      "hint_id": "Tarik palang atas dari kiri ke kanan. Lalu mulai lagi dari sudut kiri atas: ke bawah, lalu ke kanan.",
+      "hint_pt_br": "Desenhe a barra de cima da esquerda para a direita. Depois comece de novo no canto superior esquerdo: para baixo e depois para a direita."
     },
     {
       "id": 9,
@@ -478,7 +516,9 @@
       "example_meaning_th": "เหตุผล (คำนำหน้า)",
       "example_meaning_id": "alasan (awalan)",
       "katakana": "リ",
-      "zhuyin": "ㄌ"
+      "zhuyin": "ㄌ",
+      "hint_pt_br": "Três traços: o movimento de ㄱ, a barra do meio e depois o movimento de ㄴ.",
+      "example_meaning_pt_br": "razão (prefixo)"
     },
     {
       "id": 10,
@@ -494,7 +534,8 @@
       "hint_de": "Zuerst das obere ㄱ. Dann der mittlere Balken von links nach rechts. Dann das untere ㄴ.",
       "hint_vi": "ㄱ ở trên trước. Rồi thanh ngang giữa từ trái sang phải. Rồi ㄴ ở dưới.",
       "hint_th": "ㄱ ด้านบนก่อน แล้วเส้นกลางจากซ้ายไปขวา จากนั้น ㄴ ด้านล่าง",
-      "hint_id": "ㄱ atas dulu. Lalu palang tengah dari kiri ke kanan. Kemudian ㄴ bawah."
+      "hint_id": "ㄱ atas dulu. Lalu palang tengah dari kiri ke kanan. Kemudian ㄴ bawah.",
+      "hint_pt_br": "Primeiro o ㄱ de cima. Depois a barra do meio, da esquerda para a direita. Por fim o ㄴ de baixo."
     },
     {
       "id": 11,
@@ -524,7 +565,9 @@
       "example_meaning_th": "หัวใจ / จิตใจ",
       "example_meaning_id": "hati / pikiran",
       "katakana": "マウム",
-      "zhuyin": "ㄇ"
+      "zhuyin": "ㄇ",
+      "hint_pt_br": "Três traços: o lado esquerdo para baixo, depois a parte de cima e o lado direito em um só movimento, e depois a barra de baixo.",
+      "example_meaning_pt_br": "coração / mente"
     },
     {
       "id": 12,
@@ -540,7 +583,8 @@
       "hint_de": "Beginne oben links und gehe nach unten. Dann über die Oberseite und rechts hinunter. Schließe das Kästchen mit dem unteren Balken.",
       "hint_vi": "Bắt đầu từ góc trên bên trái và kéo xuống. Rồi băng qua đỉnh và xuống bên phải. Đóng ô vuông bằng thanh ngang đáy.",
       "hint_th": "เริ่มมุมบนซ้ายแล้วลงล่าง จากนั้นข้ามด้านบนและลงด้านขวา ปิดกล่องด้วยเส้นล่าง",
-      "hint_id": "Mulai dari kiri atas dan turun. Lalu menyeberang di atas dan turun di kanan. Tutup kotak dengan palang bawah."
+      "hint_id": "Mulai dari kiri atas dan turun. Lalu menyeberang di atas dan turun di kanan. Tutup kotak dengan palang bawah.",
+      "hint_pt_br": "Comece no canto superior esquerdo e desça. Depois atravesse a parte de cima e desça pelo lado direito. Feche a caixa com a barra de baixo."
     },
     {
       "id": 13,
@@ -570,7 +614,9 @@
       "example_meaning_th": "ข้าว / อาหาร",
       "example_meaning_id": "nasi / makanan",
       "katakana": "バプ",
-      "zhuyin": "ㄅ"
+      "zhuyin": "ㄅ",
+      "hint_pt_br": "Quatro traços: o poste esquerdo para baixo, o poste direito para baixo, depois a barra do meio e depois a barra de baixo.",
+      "example_meaning_pt_br": "arroz / refeição"
     },
     {
       "id": 14,
@@ -586,7 +632,8 @@
       "hint_de": "Zuerst beide Senkrechten, links vor rechts. Dann der mittlere Balken, dann der untere Balken.",
       "hint_vi": "Hai nét dọc trước, trái trước phải. Rồi thanh ngang giữa, rồi thanh ngang đáy.",
       "hint_th": "เส้นตั้งสองเส้นก่อน ซ้ายก่อนขวา แล้วเส้นกลาง จากนั้นเส้นล่าง",
-      "hint_id": "Kedua garis tegak dulu, kiri sebelum kanan. Lalu palang tengah, kemudian palang bawah."
+      "hint_id": "Kedua garis tegak dulu, kiri sebelum kanan. Lalu palang tengah, kemudian palang bawah.",
+      "hint_pt_br": "Primeiro as duas verticais, esquerda antes da direita. Depois a barra do meio e depois a barra de baixo."
     },
     {
       "id": 15,
@@ -616,7 +663,9 @@
       "example_meaning_th": "คน",
       "example_meaning_id": "orang",
       "katakana": "サラム",
-      "zhuyin": "ㄙ"
+      "zhuyin": "ㄙ",
+      "hint_pt_br": "Dois traços: primeiro a perna esquerda longa, depois a perna direita mais curta.",
+      "example_meaning_pt_br": "pessoa"
     },
     {
       "id": 16,
@@ -632,7 +681,8 @@
       "hint_de": "Beginne am oberen Punkt und ziehe schräg nach links unten. Setze dann an diesem Strich an und ziehe schräg nach rechts unten.",
       "hint_vi": "Bắt đầu từ đỉnh và hất chéo xuống bên trái. Rồi bắt đầu trên nét đó và hất chéo xuống bên phải.",
       "hint_th": "เริ่มที่จุดยอดแล้วสะบัดลงไปทางซ้าย จากนั้นเริ่มบนเส้นนั้นแล้วสะบัดลงไปทางขวา",
-      "hint_id": "Mulai dari titik atas dan sapukan ke bawah kiri. Lalu mulai pada goresan itu dan sapukan ke bawah kanan."
+      "hint_id": "Mulai dari titik atas dan sapukan ke bawah kiri. Lalu mulai pada goresan itu dan sapukan ke bawah kanan.",
+      "hint_pt_br": "Comece no ponto de cima e desça em diagonal para a esquerda. Depois comece nesse traço e desça em diagonal para a direita."
     },
     {
       "id": 17,
@@ -662,7 +712,9 @@
       "example_meaning_th": "เด็ก",
       "example_meaning_id": "anak",
       "katakana": "アイ",
-      "zhuyin": "∅/ㄫ"
+      "zhuyin": "∅/ㄫ",
+      "hint_pt_br": "Um único traço: um círculo fechado, começando em cima e voltando ao mesmo ponto.",
+      "example_meaning_pt_br": "criança"
     },
     {
       "id": 18,
@@ -678,7 +730,8 @@
       "hint_de": "Beginne oben und gehe einmal ganz herum, bis du deinen Ausgangspunkt wieder erreichst.",
       "hint_vi": "Bắt đầu từ đỉnh và đi trọn một vòng cho đến khi gặp lại điểm xuất phát.",
       "hint_th": "เริ่มที่ด้านบน แล้ววนรอบจนกลับมาบรรจบที่จุดเริ่มต้น",
-      "hint_id": "Mulai dari atas dan berputar penuh hingga bertemu titik awal Anda."
+      "hint_id": "Mulai dari atas dan berputar penuh hingga bertemu titik awal Anda.",
+      "hint_pt_br": "Comece em cima e dê a volta completa até encontrar o ponto de partida."
     },
     {
       "id": 19,
@@ -708,7 +761,9 @@
       "example_meaning_th": "ตอนนี้",
       "example_meaning_id": "sekarang",
       "katakana": "チグム",
-      "zhuyin": "ㄐ"
+      "zhuyin": "ㄐ",
+      "hint_pt_br": "Dois traços: a barra de cima e a perna esquerda em um só movimento, depois a perna direita. Dois, não três.",
+      "example_meaning_pt_br": "agora"
     },
     {
       "id": 20,
@@ -724,7 +779,8 @@
       "hint_de": "Beginne oben links: waagerecht, dann in einem Strich schräg nach links unten. Dann der rechte Schenkel.",
       "hint_vi": "Bắt đầu từ góc trên bên trái: sang ngang, rồi hất xuống bên trái trong một nét. Rồi nét chân phải.",
       "hint_th": "เริ่มที่มุมบนซ้าย: ลากขวาแล้วสะบัดลงซ้ายในเส้นเดียวกัน จากนั้นขาขวา",
-      "hint_id": "Mulai dari kiri atas: ke samping, lalu turun ke kiri dalam satu goresan. Lalu kaki kanan."
+      "hint_id": "Mulai dari kiri atas: ke samping, lalu turun ke kiri dalam satu goresan. Lalu kaki kanan.",
+      "hint_pt_br": "Comece no canto superior esquerdo: para o lado e depois para baixo à esquerda, em um só traço. Depois a perna direita."
     },
     {
       "id": 21,
@@ -754,7 +810,9 @@
       "example_meaning_th": "ชา / รถ",
       "example_meaning_id": "teh / mobil",
       "katakana": "チャ",
-      "zhuyin": "ㄑ"
+      "zhuyin": "ㄑ",
+      "hint_pt_br": "Três traços: a pequena marca inclinada em cima, depois a barra com a perna esquerda, depois a perna direita.",
+      "example_meaning_pt_br": "chá / carro"
     },
     {
       "id": 22,
@@ -770,7 +828,8 @@
       "hint_de": "Zuerst der Strich oben. Dann der Balken und der linke Schenkel in einem Strich. Dann der rechte Schenkel.",
       "hint_vi": "Dấu nhỏ trên đỉnh trước. Rồi thanh ngang và nét chân trái trong một nét. Rồi nét chân phải.",
       "hint_th": "ขีดด้านบนก่อน แล้วเส้นขวางกับขาซ้ายในเส้นเดียว จากนั้นขาขวา",
-      "hint_id": "Tanda di atas dulu. Lalu palang dan kaki kiri dalam satu goresan. Kemudian kaki kanan."
+      "hint_id": "Tanda di atas dulu. Lalu palang dan kaki kiri dalam satu goresan. Kemudian kaki kanan.",
+      "hint_pt_br": "Primeiro a marca em cima. Depois a barra e a perna esquerda em um só traço. Depois a perna direita."
     },
     {
       "id": 23,
@@ -800,7 +859,9 @@
       "example_meaning_th": "กาแฟ",
       "example_meaning_id": "kopi",
       "katakana": "コピ",
-      "zhuyin": "ㄎ"
+      "zhuyin": "ㄎ",
+      "hint_pt_br": "Dois traços: primeiro a forma de ㄱ, depois a barra curta atravessando o meio.",
+      "example_meaning_pt_br": "café"
     },
     {
       "id": 24,
@@ -816,7 +877,8 @@
       "hint_de": "Zeichne ㄱ — nach rechts, dann nach unten. Füge dann den mittleren Balken hinzu, von links nach rechts.",
       "hint_vi": "Vẽ ㄱ — sang ngang, rồi xuống. Rồi thêm thanh ngang giữa, từ trái sang phải.",
       "hint_th": "เขียน ㄱ — ลากขวาแล้วลงล่าง จากนั้นเติมเส้นกลางจากซ้ายไปขวา",
-      "hint_id": "Gambar ㄱ — ke samping, lalu ke bawah. Lalu tambahkan palang tengah, dari kiri ke kanan."
+      "hint_id": "Gambar ㄱ — ke samping, lalu ke bawah. Lalu tambahkan palang tengah, dari kiri ke kanan.",
+      "hint_pt_br": "Desenhe ㄱ — para o lado e depois para baixo. Depois adicione a barra do meio, da esquerda para a direita."
     },
     {
       "id": 25,
@@ -846,7 +908,9 @@
       "example_meaning_th": "ขี่ / โดยสาร",
       "example_meaning_id": "menaiki / naik",
       "katakana": "タダ",
-      "zhuyin": "ㄊ"
+      "zhuyin": "ㄊ",
+      "hint_pt_br": "Três traços: a barra de cima, a barra do meio e depois o lado esquerdo e a base em um só movimento.",
+      "example_meaning_pt_br": "andar de / montar"
     },
     {
       "id": 26,
@@ -862,7 +926,8 @@
       "hint_de": "Oberer Balken, dann mittlerer Balken. Schließe mit dem Strich an der linken Seite hinunter und am Boden entlang ab.",
       "hint_vi": "Thanh ngang trên, rồi thanh ngang giữa. Kết thúc bằng nét kéo xuống bên trái và chạy dọc đáy.",
       "hint_th": "เส้นบน แล้วเส้นกลาง ปิดท้ายด้วยเส้นที่ลากลงด้านซ้ายและไปตามด้านล่าง",
-      "hint_id": "Palang atas, lalu palang tengah. Akhiri dengan goresan turun di sisi kiri dan menyusuri bagian bawah."
+      "hint_id": "Palang atas, lalu palang tengah. Akhiri dengan goresan turun di sisi kiri dan menyusuri bagian bawah.",
+      "hint_pt_br": "Barra de cima, depois barra do meio. Termine com o traço que desce pelo lado esquerdo e segue pela base."
     },
     {
       "id": 27,
@@ -892,7 +957,9 @@
       "example_meaning_th": "ต้นหอม",
       "example_meaning_id": "daun bawang",
       "katakana": "パ",
-      "zhuyin": "ㄆ"
+      "zhuyin": "ㄆ",
+      "hint_pt_br": "Quatro traços: a barra de cima, o poste esquerdo, o poste direito e depois a barra de baixo.",
+      "example_meaning_pt_br": "cebolinha"
     },
     {
       "id": 28,
@@ -908,7 +975,8 @@
       "hint_de": "Zuerst der obere Balken. Dann die zwei kurzen Pfosten, links vor rechts. Der untere Balken zuletzt.",
       "hint_vi": "Thanh ngang trên trước. Rồi hai cột ngắn, trái trước phải. Thanh ngang đáy sau cùng.",
       "hint_th": "เส้นบนก่อน แล้วเสาสั้นสองต้น ซ้ายก่อนขวา เส้นล่างสุดท้าย",
-      "hint_id": "Palang atas dulu. Lalu dua tiang pendek, kiri sebelum kanan. Palang bawah terakhir."
+      "hint_id": "Palang atas dulu. Lalu dua tiang pendek, kiri sebelum kanan. Palang bawah terakhir.",
+      "hint_pt_br": "Primeiro a barra de cima. Depois os dois postes curtos, esquerda antes da direita. Por último a barra de baixo."
     },
     {
       "id": 29,
@@ -938,7 +1006,9 @@
       "example_meaning_th": "ท้องฟ้า",
       "example_meaning_id": "langit",
       "katakana": "ハヌル",
-      "zhuyin": "ㄏ"
+      "zhuyin": "ㄏ",
+      "hint_pt_br": "Três traços: a pequena marca inclinada, a barra embaixo dela e depois o círculo.",
+      "example_meaning_pt_br": "céu"
     },
     {
       "id": 30,
@@ -954,7 +1024,8 @@
       "hint_de": "Zuerst der Strich, dann der Balken von links nach rechts, dann der Kreis darunter.",
       "hint_vi": "Dấu nhỏ trước, rồi thanh ngang từ trái sang phải, rồi vòng tròn bên dưới.",
       "hint_th": "ขีดก่อน แล้วเส้นขวางจากซ้ายไปขวา จากนั้นวงกลมด้านล่าง",
-      "hint_id": "Tanda dulu, lalu palang dari kiri ke kanan, kemudian lingkaran di bawahnya."
+      "hint_id": "Tanda dulu, lalu palang dari kiri ke kanan, kemudian lingkaran di bawahnya.",
+      "hint_pt_br": "Primeiro a marca, depois a barra da esquerda para a direita, depois o círculo embaixo."
     },
     {
       "id": 31,
@@ -984,7 +1055,9 @@
       "example_meaning_th": "คน",
       "example_meaning_id": "orang",
       "katakana": "サラム",
-      "zhuyin": "ㄚ"
+      "zhuyin": "ㄚ",
+      "hint_pt_br": "Dois traços: primeiro a linha vertical longa, depois a marca curta para a direita.",
+      "example_meaning_pt_br": "pessoa"
     },
     {
       "id": 32,
@@ -1000,7 +1073,8 @@
       "hint_de": "Zeichne die Senkrechte von oben nach unten. Dann den kurzen Strich, von der Linie nach rechts außen.",
       "hint_vi": "Vẽ nét dọc từ trên xuống dưới. Rồi nét ngắn, từ đường thẳng chìa ra bên phải.",
       "hint_th": "ลากเส้นตั้งจากบนลงล่าง แล้วขีดสั้นจากเส้นออกไปทางขวา",
-      "hint_id": "Tarik garis vertikal dari atas ke bawah. Lalu goresan pendek, dari garis ke arah luar kanan."
+      "hint_id": "Tarik garis vertikal dari atas ke bawah. Lalu goresan pendek, dari garis ke arah luar kanan.",
+      "hint_pt_br": "Desenhe a vertical de cima para baixo. Depois a marca, saindo da linha para a direita."
     },
     {
       "id": 33,
@@ -1030,7 +1104,9 @@
       "example_meaning_th": "ยา",
       "example_meaning_id": "obat",
       "katakana": "ヤク",
-      "zhuyin": "ㄧㄚ"
+      "zhuyin": "ㄧㄚ",
+      "hint_pt_br": "Três traços: primeiro a vertical longa, depois a marca de cima, depois a marca de baixo.",
+      "example_meaning_pt_br": "remédio"
     },
     {
       "id": 34,
@@ -1046,7 +1122,8 @@
       "hint_de": "Zuerst die Senkrechte nach unten. Dann zwei Striche nach rechts — der obere vor dem unteren.",
       "hint_vi": "Nét dọc xuống trước. Rồi hai nét ngắn sang phải — nét trên trước nét dưới.",
       "hint_th": "เส้นตั้งลงก่อน แล้วขีดสั้นสองขีดไปทางขวา — ขีดบนก่อนขีดล่าง",
-      "hint_id": "Garis vertikal ke bawah dulu. Lalu dua goresan pendek ke kanan — yang atas sebelum yang bawah."
+      "hint_id": "Garis vertikal ke bawah dulu. Lalu dua goresan pendek ke kanan — yang atas sebelum yang bawah.",
+      "hint_pt_br": "Primeiro a vertical para baixo. Depois duas marcas para a direita — a de cima antes da de baixo."
     },
     {
       "id": 35,
@@ -1076,7 +1153,9 @@
       "example_meaning_th": "อะไร",
       "example_meaning_id": "apa",
       "katakana": "ムオッ",
-      "zhuyin": "ㄛ"
+      "zhuyin": "ㄛ",
+      "hint_pt_br": "Dois traços: primeiro a marca, depois a vertical. A marca curta fica à esquerda, então vem primeiro.",
+      "example_meaning_pt_br": "o quê"
     },
     {
       "id": 36,
@@ -1092,7 +1171,8 @@
       "hint_de": "Zeichne den kurzen Strich von links nach rechts, dann die lange Senkrechte von oben nach unten.",
       "hint_vi": "Vẽ nét ngắn từ trái sang phải, rồi nét dọc dài từ trên xuống dưới.",
       "hint_th": "ลากขีดสั้นจากซ้ายไปขวา แล้วเส้นตั้งยาวจากบนลงล่าง",
-      "hint_id": "Tarik goresan pendek dari kiri ke kanan, lalu garis vertikal panjang dari atas ke bawah."
+      "hint_id": "Tarik goresan pendek dari kiri ke kanan, lalu garis vertikal panjang dari atas ke bawah.",
+      "hint_pt_br": "Desenhe a marca curta da esquerda para a direita, depois a vertical longa de cima para baixo."
     },
     {
       "id": 37,
@@ -1122,7 +1202,9 @@
       "example_meaning_th": "ผู้หญิง",
       "example_meaning_id": "perempuan / wanita",
       "katakana": "ヨジャ",
-      "zhuyin": "ㄧㄛ"
+      "zhuyin": "ㄧㄛ",
+      "hint_pt_br": "Três traços: a marca de cima, a marca de baixo e depois a vertical longa à direita.",
+      "example_meaning_pt_br": "mulher / garota"
     },
     {
       "id": 38,
@@ -1138,7 +1220,8 @@
       "hint_de": "Zuerst beide Striche, oben vor unten. Dann die Senkrechte an der rechten Seite hinunter.",
       "hint_vi": "Hai nét ngắn trước, trên trước dưới. Rồi nét dọc xuống dọc theo bên phải.",
       "hint_th": "ขีดสั้นสองขีดก่อน บนก่อนล่าง แล้วเส้นตั้งลงตามด้านขวา",
-      "hint_id": "Kedua goresan pendek dulu, atas sebelum bawah. Lalu garis vertikal turun di sisi kanan."
+      "hint_id": "Kedua goresan pendek dulu, atas sebelum bawah. Lalu garis vertikal turun di sisi kanan.",
+      "hint_pt_br": "Primeiro as duas marcas, de cima antes da de baixo. Depois a vertical no lado direito."
     },
     {
       "id": 39,
@@ -1168,7 +1251,9 @@
       "example_meaning_th": "ขอบคุณ",
       "example_meaning_id": "terima kasih (tidak resmi)",
       "katakana": "コマウォ",
-      "zhuyin": "ㄛ"
+      "zhuyin": "ㄛ",
+      "hint_pt_br": "Dois traços: primeiro a vertical curta, depois a base longa embaixo dela.",
+      "example_meaning_pt_br": "obrigado/a"
     },
     {
       "id": 40,
@@ -1184,7 +1269,8 @@
       "hint_de": "Beginne oben am kurzen Stiel und gehe nach unten. Dann der Grundbalken, von links nach rechts.",
       "hint_vi": "Bắt đầu từ đỉnh nét dọc ngắn và kéo xuống. Rồi thanh ngang đáy, từ trái sang phải.",
       "hint_th": "เริ่มที่ยอดของเส้นตั้งสั้นแล้วลงล่าง จากนั้นเส้นฐานจากซ้ายไปขวา",
-      "hint_id": "Mulai dari puncak batang pendek dan turun. Lalu garis dasar, dari kiri ke kanan."
+      "hint_id": "Mulai dari puncak batang pendek dan turun. Lalu garis dasar, dari kiri ke kanan.",
+      "hint_pt_br": "Comece no topo do traço curto e desça. Depois a barra da base, da esquerda para a direita."
     },
     {
       "id": 41,
@@ -1214,7 +1300,9 @@
       "example_meaning_th": "โรงเรียน",
       "example_meaning_id": "sekolah",
       "katakana": "ハッキョ",
-      "zhuyin": "ㄧㄛ"
+      "zhuyin": "ㄧㄛ",
+      "hint_pt_br": "Três traços: o traço esquerdo, o traço direito e depois a barra da base longa.",
+      "example_meaning_pt_br": "escola"
     },
     {
       "id": 42,
@@ -1230,7 +1318,8 @@
       "hint_de": "Zwei kurze Stiele, links vor rechts. Dann der Grundbalken darunter, von links nach rechts.",
       "hint_vi": "Hai nét dọc ngắn, trái trước phải. Rồi thanh ngang đáy bên dưới, từ trái sang phải.",
       "hint_th": "เส้นตั้งสั้นสองเส้น ซ้ายก่อนขวา แล้วเส้นฐานด้านล่างจากซ้ายไปขวา",
-      "hint_id": "Dua batang pendek, kiri sebelum kanan. Lalu garis dasar di bawahnya, dari kiri ke kanan."
+      "hint_id": "Dua batang pendek, kiri sebelum kanan. Lalu garis dasar di bawahnya, dari kiri ke kanan.",
+      "hint_pt_br": "Dois traços curtos, esquerda antes da direita. Depois a barra da base embaixo, da esquerda para a direita."
     },
     {
       "id": 43,
@@ -1260,7 +1349,9 @@
       "example_meaning_th": "น้ำ",
       "example_meaning_id": "air",
       "katakana": "ムル",
-      "zhuyin": "ㄨ"
+      "zhuyin": "ㄨ",
+      "hint_pt_br": "Dois traços: primeiro a barra, depois a vertical pendurada embaixo dela.",
+      "example_meaning_pt_br": "água"
     },
     {
       "id": 44,
@@ -1276,7 +1367,8 @@
       "hint_de": "Zeichne den langen Balken von links nach rechts, dann die Senkrechte, die von seiner Mitte herabhängt.",
       "hint_vi": "Vẽ thanh ngang dài từ trái sang phải, rồi nét dọc buông xuống từ giữa nó.",
       "hint_th": "ลากเส้นขวางยาวจากซ้ายไปขวา แล้วเส้นตั้งที่ห้อยลงจากตรงกลาง",
-      "hint_id": "Tarik palang panjang dari kiri ke kanan, lalu garis vertikal yang menggantung dari tengahnya."
+      "hint_id": "Tarik palang panjang dari kiri ke kanan, lalu garis vertikal yang menggantung dari tengahnya.",
+      "hint_pt_br": "Desenhe a barra longa da esquerda para a direita, depois a vertical descendo do meio dela."
     },
     {
       "id": 45,
@@ -1306,7 +1398,9 @@
       "example_meaning_th": "ยูทูบ",
       "example_meaning_id": "YouTube",
       "katakana": "ユテュブ",
-      "zhuyin": "ㄩ"
+      "zhuyin": "ㄩ",
+      "hint_pt_br": "Três traços: primeiro a barra longa, depois os dois traços pendurados nela, esquerda antes da direita.",
+      "example_meaning_pt_br": "YouTube"
     },
     {
       "id": 46,
@@ -1322,7 +1416,8 @@
       "hint_de": "Zuerst der Balken, von links nach rechts. Dann der linke Stiel nach unten, dann der rechte Stiel nach unten.",
       "hint_vi": "Thanh ngang trước, từ trái sang phải. Rồi nét dọc trái xuống, rồi nét dọc phải xuống.",
       "hint_th": "เส้นขวางก่อนจากซ้ายไปขวา แล้วเส้นตั้งซ้ายลง จากนั้นเส้นตั้งขวาลง",
-      "hint_id": "Palang dulu, dari kiri ke kanan. Lalu batang kiri ke bawah, kemudian batang kanan ke bawah."
+      "hint_id": "Palang dulu, dari kiri ke kanan. Lalu batang kiri ke bawah, kemudian batang kanan ke bawah.",
+      "hint_pt_br": "Primeiro a barra, da esquerda para a direita. Depois o traço esquerdo para baixo, depois o traço direito para baixo."
     },
     {
       "id": 47,
@@ -1352,7 +1447,9 @@
       "example_meaning_th": "ท้องฟ้า",
       "example_meaning_id": "langit",
       "katakana": "ハヌル",
-      "zhuyin": "ㄜ"
+      "zhuyin": "ㄜ",
+      "hint_pt_br": "Um único traço: uma linha horizontal, da esquerda para a direita.",
+      "example_meaning_pt_br": "céu"
     },
     {
       "id": 48,
@@ -1368,7 +1465,8 @@
       "hint_de": "Beginne am linken Ende und ziehe gerade nach rechts.",
       "hint_vi": "Bắt đầu từ đầu bên trái và kéo thẳng sang phải.",
       "hint_th": "เริ่มที่ปลายด้านซ้ายแล้วลากตรงไปทางขวา",
-      "hint_id": "Mulai dari ujung kiri dan tarik lurus ke kanan."
+      "hint_id": "Mulai dari ujung kiri dan tarik lurus ke kanan.",
+      "hint_pt_br": "Comece na ponta esquerda e desenhe reto até a direita."
     },
     {
       "id": 49,
@@ -1398,7 +1496,9 @@
       "example_meaning_th": "เพื่อน",
       "example_meaning_id": "teman",
       "katakana": "チング",
-      "zhuyin": "ㄧ"
+      "zhuyin": "ㄧ",
+      "hint_pt_br": "Um único traço: uma linha vertical, de cima para baixo.",
+      "example_meaning_pt_br": "amigo/a"
     },
     {
       "id": 50,
@@ -1414,7 +1514,8 @@
       "hint_de": "Beginne oben und ziehe gerade nach unten.",
       "hint_vi": "Bắt đầu từ trên và kéo thẳng xuống.",
       "hint_th": "เริ่มที่ด้านบนแล้วลากตรงลงล่าง",
-      "hint_id": "Mulai dari atas dan tarik lurus ke bawah."
+      "hint_id": "Mulai dari atas dan tarik lurus ke bawah.",
+      "hint_pt_br": "Comece em cima e desenhe reto para baixo."
     },
     {
       "id": 51,
@@ -1444,7 +1545,9 @@
       "example_meaning_th": "ไป",
       "example_meaning_id": "pergi",
       "katakana": "カダ",
-      "zhuyin": "ㄍㄚ"
+      "zhuyin": "ㄍㄚ",
+      "hint_pt_br": "A vogal fica à direita, então escreva ㄱ primeiro, depois ㅏ ao lado.",
+      "example_meaning_pt_br": "ir"
     },
     {
       "id": 52,
@@ -1460,7 +1563,8 @@
       "hint_de": "ㄱ in der linken Hälfte. Dann ㅏ an der rechten Seite hinunter — die Senkrechte vor dem kurzen Strich.",
       "hint_vi": "ㄱ ở nửa bên trái. Rồi ㅏ dọc bên phải — nét dọc trước nét ngắn.",
       "hint_th": "ㄱ อยู่ครึ่งซ้าย แล้ว ㅏ ทางด้านขวา — เส้นตั้งก่อนขีดสั้น",
-      "hint_id": "ㄱ di bagian kiri. Lalu ㅏ di sisi kanan — garis vertikal sebelum goresan pendek."
+      "hint_id": "ㄱ di bagian kiri. Lalu ㅏ di sisi kanan — garis vertikal sebelum goresan pendek.",
+      "hint_pt_br": "ㄱ na metade esquerda. Depois ㅏ no lado direito — a vertical antes da marca."
     },
     {
       "id": 53,
@@ -1490,7 +1594,9 @@
       "example_meaning_th": "ขอบคุณ",
       "example_meaning_id": "terima kasih (tidak resmi)",
       "katakana": "コマウォ",
-      "zhuyin": "ㄍㄛ"
+      "zhuyin": "ㄍㄛ",
+      "hint_pt_br": "ㅗ fica embaixo, então escreva ㄱ em cima primeiro, depois ㅗ embaixo.",
+      "example_meaning_pt_br": "obrigado/a"
     },
     {
       "id": 54,
@@ -1506,7 +1612,8 @@
       "hint_de": "ㄱ in der oberen Hälfte. Dann ㅗ darunter: der kurze Stiel, dann der Grundbalken.",
       "hint_vi": "ㄱ ở nửa trên. Rồi ㅗ bên dưới: nét dọc ngắn, rồi thanh ngang đáy.",
       "hint_th": "ㄱ อยู่ครึ่งบน แล้ว ㅗ ด้านล่าง: เส้นตั้งสั้น แล้วเส้นฐาน",
-      "hint_id": "ㄱ di bagian atas. Lalu ㅗ di bawah: batang pendek, lalu garis dasar."
+      "hint_id": "ㄱ di bagian atas. Lalu ㅗ di bawah: batang pendek, lalu garis dasar.",
+      "hint_pt_br": "ㄱ na metade de cima. Depois ㅗ embaixo: primeiro o traço curto, depois a barra da base."
     },
     {
       "id": 55,
@@ -1536,7 +1643,9 @@
       "example_meaning_th": "ผลไม้",
       "example_meaning_id": "buah",
       "katakana": "クァイル",
-      "zhuyin": "ㄍㄨㄚ"
+      "zhuyin": "ㄍㄨㄚ",
+      "hint_pt_br": "Uma vogal de duas partes. Escreva ㄱ, depois ㅗ embaixo, depois ㅏ à direita.",
+      "example_meaning_pt_br": "fruta"
     },
     {
       "id": 56,
@@ -1552,7 +1661,8 @@
       "hint_de": "ㄱ oben links, ㅗ darunter, dann ㅏ an der rechten Seite hinunter.",
       "hint_vi": "ㄱ ở góc trên bên trái, ㅗ bên dưới, rồi ㅏ dọc bên phải.",
       "hint_th": "ㄱ มุมบนซ้าย ㅗ อยู่ด้านล่าง แล้ว ㅏ ทางด้านขวา",
-      "hint_id": "ㄱ di kiri atas, ㅗ di bawahnya, lalu ㅏ di sisi kanan."
+      "hint_id": "ㄱ di kiri atas, ㅗ di bawahnya, lalu ㅏ di sisi kanan.",
+      "hint_pt_br": "ㄱ no canto superior esquerdo, ㅗ embaixo dele, depois ㅏ no lado direito."
     },
     {
       "id": 57,
@@ -1582,7 +1692,9 @@
       "example_meaning_th": "เกาหลี",
       "example_meaning_id": "Korea",
       "katakana": "ハングク",
-      "zhuyin": "ㄏㄢ"
+      "zhuyin": "ㄏㄢ",
+      "hint_pt_br": "Escreva ㅎ primeiro, depois ㅏ, depois ㄴ embaixo.",
+      "example_meaning_pt_br": "Coreia"
     },
     {
       "id": 58,
@@ -1598,7 +1710,8 @@
       "hint_de": "ㅎ oben links, ㅏ rechts davon, dann ㄴ unten entlang.",
       "hint_vi": "ㅎ ở góc trên bên trái, ㅏ bên phải nó, rồi ㄴ nằm ngang ở phía dưới.",
       "hint_th": "ㅎ มุมบนซ้าย ㅏ ทางขวา แล้ว ㄴ ที่ด้านล่าง",
-      "hint_id": "ㅎ di kiri atas, ㅏ di kanannya, lalu ㄴ di sepanjang bawah."
+      "hint_id": "ㅎ di kiri atas, ㅏ di kanannya, lalu ㄴ di sepanjang bawah.",
+      "hint_pt_br": "ㅎ no canto superior esquerdo, ㅏ à direita dele, depois ㄴ na parte de baixo."
     },
     {
       "id": 59,
@@ -1628,7 +1741,9 @@
       "example_meaning_th": "หมี",
       "example_meaning_id": "beruang",
       "katakana": "コム",
-      "zhuyin": "ㄍㄛㄇ"
+      "zhuyin": "ㄍㄛㄇ",
+      "hint_pt_br": "Direto de cima para baixo no bloco: ㄱ, depois ㅗ, depois ㅁ como consoante final.",
+      "example_meaning_pt_br": "urso"
     },
     {
       "id": 60,
@@ -1644,7 +1759,8 @@
       "hint_de": "Zuerst ㄱ, ㅗ darunter, dann ㅁ unten — die linke Seite, oben und rechts, dann der Boden.",
       "hint_vi": "ㄱ trước, ㅗ bên dưới, rồi ㅁ ở đáy — cạnh trái, cạnh trên và phải, rồi đáy.",
       "hint_th": "ㄱ ก่อน ㅗ อยู่ด้านล่าง แล้ว ㅁ ที่ด้านล่างสุด — ด้านซ้าย ด้านบนและขวา จากนั้นด้านล่าง",
-      "hint_id": "ㄱ dulu, ㅗ di bawahnya, lalu ㅁ di bagian bawah — sisi kiri, atas dan kanan, kemudian dasarnya."
+      "hint_id": "ㄱ dulu, ㅗ di bawahnya, lalu ㅁ di bagian bawah — sisi kiri, atas dan kanan, kemudian dasarnya.",
+      "hint_pt_br": "ㄱ primeiro, ㅗ embaixo dele, depois ㅁ na base — lado esquerdo, cima e direita, depois a base."
     },
     {
       "id": 61,
@@ -1674,7 +1790,9 @@
       "example_meaning_th": "วอน (สกุลเงินเกาหลี)",
       "example_meaning_id": "won (mata uang Korea)",
       "katakana": "ウォン",
-      "zhuyin": "ㄨㄛㄣ"
+      "zhuyin": "ㄨㄛㄣ",
+      "hint_pt_br": "Primeiro o círculo, depois a vogal de duas partes ㅜ e ㅓ, depois ㄴ na base.",
+      "example_meaning_pt_br": "won (moeda coreana)"
     },
     {
       "id": 62,
@@ -1690,7 +1808,8 @@
       "hint_de": "ㅇ oben links. Dann ㅜ, dann ㅓ rechts davon, dann ㄴ darunter.",
       "hint_vi": "ㅇ ở góc trên bên trái. Rồi ㅜ, rồi ㅓ bên phải nó, rồi ㄴ bên dưới.",
       "hint_th": "ㅇ มุมบนซ้าย แล้ว ㅜ จากนั้น ㅓ ทางขวา แล้ว ㄴ ด้านล่าง",
-      "hint_id": "ㅇ di kiri atas. Lalu ㅜ, kemudian ㅓ di kanannya, lalu ㄴ di bawahnya."
+      "hint_id": "ㅇ di kiri atas. Lalu ㅜ, kemudian ㅓ di kanannya, lalu ㄴ di bawahnya.",
+      "hint_pt_br": "ㅇ no canto superior esquerdo. Depois ㅜ, depois ㅓ à direita dele, depois ㄴ embaixo."
     },
     {
       "id": 63,
@@ -1720,7 +1839,9 @@
       "example_meaning_th": "แสง",
       "example_meaning_id": "cahaya",
       "katakana": "ビッ",
-      "zhuyin": "ㄅㄧㄊ"
+      "zhuyin": "ㄅㄧㄊ",
+      "hint_pt_br": "ㅂ leva 4 traços, ㅣ leva 1 e o ㅊ final leva 3 — vá do canto superior esquerdo, depois para a direita, depois para baixo.",
+      "example_meaning_pt_br": "luz"
     },
     {
       "id": 64,
@@ -1736,7 +1857,8 @@
       "hint_de": "ㅂ oben links, ㅣ rechts hinunter, dann ㅊ unten entlang.",
       "hint_vi": "ㅂ ở góc trên bên trái, ㅣ dọc bên phải, rồi ㅊ nằm ngang ở phía dưới.",
       "hint_th": "ㅂ มุมบนซ้าย ㅣ ทางด้านขวา แล้ว ㅊ ที่ด้านล่าง",
-      "hint_id": "ㅂ di kiri atas, ㅣ di sisi kanan, lalu ㅊ di sepanjang bawah."
+      "hint_id": "ㅂ di kiri atas, ㅣ di sisi kanan, lalu ㅊ di sepanjang bawah.",
+      "hint_pt_br": "ㅂ no canto superior esquerdo, ㅣ à direita, depois ㅊ na parte de baixo."
     },
     {
       "id": 65,
@@ -1766,7 +1888,9 @@
       "example_meaning_th": "ไก่",
       "example_meaning_id": "ayam",
       "katakana": "タク",
-      "zhuyin": "ㄉㄚㄍ"
+      "zhuyin": "ㄉㄚㄍ",
+      "hint_pt_br": "A consoante final é um par: escreva ㄷ, depois ㅏ, depois ㄹ e ㄱ lado a lado na base.",
+      "example_meaning_pt_br": "frango / galinha"
     },
     {
       "id": 66,
@@ -1782,7 +1906,8 @@
       "hint_de": "Zuerst ㄷ, ㅏ rechts davon, dann das untere Paar — ㄹ links, ㄱ rechts.",
       "hint_vi": "ㄷ trước, ㅏ bên phải nó, rồi cặp ở đáy — ㄹ bên trái, ㄱ bên phải.",
       "hint_th": "ㄷ ก่อน ㅏ ทางขวา แล้วคู่ด้านล่าง — ㄹ ทางซ้าย ㄱ ทางขวา",
-      "hint_id": "ㄷ dulu, ㅏ di kanannya, lalu pasangan bawah — ㄹ di kiri, ㄱ di kanan."
+      "hint_id": "ㄷ dulu, ㅏ di kanannya, lalu pasangan bawah — ㄹ di kiri, ㄱ di kanan.",
+      "hint_pt_br": "ㄷ primeiro, ㅏ à direita dele, depois o par de baixo — ㄹ à esquerda, ㄱ à direita."
     },
     {
       "id": 67,
@@ -1812,7 +1937,9 @@
       "example_meaning_th": "ราคา",
       "example_meaning_id": "harga",
       "katakana": "カプ",
-      "zhuyin": "ㄍㄚㄅ"
+      "zhuyin": "ㄍㄚㄅ",
+      "hint_pt_br": "ㄱ, depois ㅏ, depois a final dupla ㅂ e ㅅ, esquerda antes da direita.",
+      "example_meaning_pt_br": "preço"
     },
     {
       "id": 68,
@@ -1828,7 +1955,8 @@
       "hint_de": "ㄱ oben links, ㅏ rechts davon, dann ㅂ und ㅅ nebeneinander unten entlang.",
       "hint_vi": "ㄱ ở góc trên bên trái, ㅏ bên phải nó, rồi ㅂ và ㅅ cạnh nhau ở phía dưới.",
       "hint_th": "ㄱ มุมบนซ้าย ㅏ ทางขวา แล้ว ㅂ และ ㅅ เรียงข้างกันตามด้านล่าง",
-      "hint_id": "ㄱ di kiri atas, ㅏ di kanannya, lalu ㅂ dan ㅅ berdampingan di sepanjang bawah."
+      "hint_id": "ㄱ di kiri atas, ㅏ di kanannya, lalu ㅂ dan ㅅ berdampingan di sepanjang bawah.",
+      "hint_pt_br": "ㄱ no canto superior esquerdo, ㅏ à direita dele, depois ㅂ e ㅅ lado a lado na parte de baixo."
     },
     {
       "id": 69,
@@ -1858,7 +1986,9 @@
       "example_meaning_th": "พยางค์ที่พบได้ยาก — พิสูจน์ว่าบล็อกอักษรเกาหลีทุกตัวเขียนด้วยวิธีเดียวกัน",
       "example_meaning_id": "sebuah suku kata langka — bukti bahwa blok Korea mana pun ditulis dengan cara yang sama",
       "katakana": "ヒャル",
-      "zhuyin": "ㄏㄧㄚㄌ"
+      "zhuyin": "ㄏㄧㄚㄌ",
+      "hint_pt_br": "O bloco mais longo desta lição: ㅎ, depois ㅑ, depois ㄹ e ㅎ juntas na base.",
+      "example_meaning_pt_br": "uma sílaba rara — prova de que qualquer bloco coreano pode ser escrito da mesma forma"
     },
     {
       "id": 70,
@@ -1874,7 +2004,8 @@
       "hint_de": "ㅎ oben links, ㅑ rechts hinunter, dann ㄹ und ㅎ nebeneinander unten.",
       "hint_vi": "ㅎ ở góc trên bên trái, ㅑ dọc bên phải, rồi ㄹ và ㅎ cạnh nhau ở đáy.",
       "hint_th": "ㅎ มุมบนซ้าย ㅑ ทางด้านขวา แล้ว ㄹ และ ㅎ เรียงข้างกันที่ด้านล่าง",
-      "hint_id": "ㅎ di kiri atas, ㅑ di sisi kanan, lalu ㄹ dan ㅎ berdampingan di bagian bawah."
+      "hint_id": "ㅎ di kiri atas, ㅑ di sisi kanan, lalu ㄹ dan ㅎ berdampingan di bagian bawah.",
+      "hint_pt_br": "ㅎ no canto superior esquerdo, ㅑ à direita, depois ㄹ e ㅎ lado a lado na base."
     },
     {
       "id": 71,
@@ -1939,6 +2070,13 @@
         "5"
       ],
       "choices_id": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "prompt_pt_br": "Quantos traços tem ㅊ?",
+      "choices_pt_br": [
         "2",
         "3",
         "4",
@@ -2012,6 +2150,13 @@
         "Goresan pendek",
         "Yang mana saja",
         "Garis bawah"
+      ],
+      "prompt_pt_br": "Qual traço vem PRIMEIRO em ㅏ?",
+      "choices_pt_br": [
+        "A linha vertical",
+        "A marca curta",
+        "Qualquer um dos dois",
+        "A barra de baixo"
       ]
     },
     {
@@ -2081,6 +2226,13 @@
         "6",
         "7",
         "8"
+      ],
+      "prompt_pt_br": "Quantos traços tem 한?",
+      "choices_pt_br": [
+        "5",
+        "6",
+        "7",
+        "8"
       ]
     },
     {
@@ -2106,7 +2258,9 @@
       "message_de": "Großartige Arbeit — du hast alle 24 Grundbuchstaben nachgezeichnet und dich bis zu vollständigen Silbenblöcken hochgearbeitet, bis hin zu 햟. Übe weiter mit dem freien Übungswerkzeug direkt unter dieser Lektion: Gib ein beliebiges koreanisches Wort ein und sieh zu, wie es Strich für Strich geschrieben wird, oder zeichne es selbst nach. 화이팅!",
       "message_vi": "Xuất sắc — bạn đã tô hết cả 24 chữ cái cơ bản và tiến tới những khối âm tiết hoàn chỉnh, cho đến tận 햟. Hãy luyện tập tiếp với công cụ luyện tự do ngay bên dưới bài học này: gõ bất kỳ từ tiếng Hàn nào và xem nó được viết từng nét, hoặc tự mình tô lại. 화이팅!",
       "message_th": "เยี่ยมมาก — คุณได้ลากเส้นครบทั้ง 24 ตัวอักษรพื้นฐาน และต่อยอดไปจนถึงบล็อกพยางค์เต็มรูปแบบ ไปจนถึง 햟 ฝึกต่อได้ด้วยเครื่องมือฝึกอิสระด้านล่างบทเรียนนี้: พิมพ์คำภาษาเกาหลีคำใดก็ได้แล้วดูมันถูกเขียนทีละเส้น หรือจะลากเส้นเองก็ได้ 화이팅!",
-      "message_id": "Kerja bagus — Anda telah menelusuri seluruh 24 huruf dasar dan naik hingga ke blok suku kata lengkap, sampai ke 햟. Teruslah berlatih dengan alat latihan bebas tepat di bawah pelajaran ini: ketik kata Korea apa pun dan saksikan huruf ditulis goresan demi goresan, atau telusuri sendiri. 화이팅!"
+      "message_id": "Kerja bagus — Anda telah menelusuri seluruh 24 huruf dasar dan naik hingga ke blok suku kata lengkap, sampai ke 햟. Teruslah berlatih dengan alat latihan bebas tepat di bawah pelajaran ini: ketik kata Korea apa pun dan saksikan huruf ditulis goresan demi goresan, atau telusuri sendiri. 화이팅!",
+      "title_pt_br": "Você já sabe escrever Hangul!",
+      "message_pt_br": "Trabalho brilhante — você traçou todas as 24 letras básicas e avançou até blocos silábicos completos, chegando até 햟. Continue praticando com a ferramenta de prática livre logo abaixo desta lição: digite qualquer palavra coreana e veja-a sendo escrita traço a traço, ou trace você mesmo. 화이팅!"
     }
   ]
 }

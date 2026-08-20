@@ -16,7 +16,8 @@
       "name_ja": "色",
       "name_th": "สี",
       "name_vi": "Màu sắc",
-      "name_zh_tw": "顏色"
+      "name_zh_tw": "顏色",
+      "name_pt_br": "Cores"
     }
   ],
   "steps": [
@@ -84,6 +85,13 @@
         "icon": "🎨",
         "label": "-색 vs. bentuk kata sifat",
         "text": "빨간색 (warna merah) vs. 빨개요 (berwarna merah). Untuk menyebutkan nama warna secara langsung, gunakan bentuk -색. Untuk mendeskripsikan sesuatu, gunakan bentuk kata sifat: 이 셔츠는 빨개요 (Kemeja ini berwarna merah)."
+      },
+      "title_pt_br": "Cores em Coreano",
+      "body_pt_br": "O coreano tem duas formas de expressar cores. Os adjetivos descritivos terminam em -다 (ex.: 빨갛다 = ser vermelho) e são usados em frases. Os substantivos de cor terminam em -색 (cor) e são usados para nomear a cor em si. Ambas as formas são amplamente usadas.",
+      "tip_pt_br": {
+        "icon": "🎨",
+        "label": "-색 vs. forma adjetiva",
+        "text": "빨간색 (a cor vermelha) vs. 빨개요 (é vermelho). Para nomear uma cor diretamente, use a forma -색. Para descrever algo, use a forma adjetiva: 이 셔츠는 빨개요 (Esta camisa é vermelha)."
       }
     },
     {
@@ -107,7 +115,8 @@
       "meaning_fr": "Rouge — 빨강 est la forme abrégée",
       "meaning_id": "Merah — 빨강 adalah bentuk pendeknya",
       "meaning_th": "สีแดง — 빨강 เป็นรูปย่อ",
-      "meaning_vi": "Màu đỏ — 빨강 là dạng rút gọn"
+      "meaning_vi": "Màu đỏ — 빨강 là dạng rút gọn",
+      "meaning_pt_br": "Vermelho — 빨강 é a forma curta"
     },
     {
       "id": 3,
@@ -130,7 +139,8 @@
       "meaning_fr": "Bleu — dans la langue courante, sert aussi à désigner le feu « vert » de circulation",
       "meaning_id": "Biru — dalam percakapan sehari-hari juga dipakai untuk lampu lalu lintas \"hijau\"",
       "meaning_th": "สีน้ำเงิน — ในภาษาพูดประจำวันยังใช้เรียกไฟจราจร \"สีเขียว\" ด้วย",
-      "meaning_vi": "Màu xanh dương — trong khẩu ngữ hằng ngày cũng dùng để chỉ đèn giao thông \"xanh lá\""
+      "meaning_vi": "Màu xanh dương — trong khẩu ngữ hằng ngày cũng dùng để chỉ đèn giao thông \"xanh lá\"",
+      "meaning_pt_br": "Azul — também usado para semáforos \"verdes\" na fala cotidiana"
     },
     {
       "id": 4,
@@ -153,7 +163,8 @@
       "meaning_fr": "Jaune",
       "meaning_id": "Kuning",
       "meaning_th": "สีเหลือง",
-      "meaning_vi": "Màu vàng"
+      "meaning_vi": "Màu vàng",
+      "meaning_pt_br": "Amarelo"
     },
     {
       "id": 5,
@@ -176,7 +187,8 @@
       "meaning_fr": "Vert — de 초록 (vert végétal, verdoyant)",
       "meaning_id": "Hijau — dari 초록 (hijau pekat)",
       "meaning_th": "สีเขียว — มาจาก 초록 (เขียวสด)",
-      "meaning_vi": "Màu xanh lá — từ 초록 (xanh lục đậm)"
+      "meaning_vi": "Màu xanh lá — từ 초록 (xanh lục đậm)",
+      "meaning_pt_br": "Verde — de 초록 (verde intenso)"
     },
     {
       "id": 6,
@@ -198,7 +210,8 @@
       "meaning_fr": "Blanc — 하얀색 est une variante tout aussi courante",
       "meaning_id": "Putih — 하얀색 adalah alternatif yang sama umumnya",
       "meaning_th": "สีขาว — 하얀색 เป็นอีกคำที่ใช้บ่อยพอ ๆ กัน",
-      "meaning_vi": "Màu trắng — 하얀색 là cách nói thay thế cũng phổ biến không kém"
+      "meaning_vi": "Màu trắng — 하얀색 là cách nói thay thế cũng phổ biến không kém",
+      "meaning_pt_br": "Branco — 하얀색 é uma alternativa igualmente comum"
     },
     {
       "id": 7,
@@ -221,7 +234,8 @@
       "meaning_fr": "Noir — 까만색 est également très répandu",
       "meaning_id": "Hitam — 까만색 juga banyak dipakai",
       "meaning_th": "สีดำ — 까만색 ก็ใช้กันแพร่หลายเช่นกัน",
-      "meaning_vi": "Màu đen — 까만색 cũng được dùng rộng rãi"
+      "meaning_vi": "Màu đen — 까만색 cũng được dùng rộng rãi",
+      "meaning_pt_br": "Preto — 까만색 também é muito usado"
     },
     {
       "id": 8,
@@ -244,7 +258,8 @@
       "meaning_fr": "Violet / mauve",
       "meaning_id": "Ungu",
       "meaning_th": "สีม่วง",
-      "meaning_vi": "Màu tím"
+      "meaning_vi": "Màu tím",
+      "meaning_pt_br": "Roxo / violeta"
     },
     {
       "id": 9,
@@ -267,7 +282,8 @@
       "meaning_fr": "Orange",
       "meaning_id": "Oranye",
       "meaning_th": "สีส้ม",
-      "meaning_vi": "Màu cam"
+      "meaning_vi": "Màu cam",
+      "meaning_pt_br": "Laranja"
     },
     {
       "id": 10,
@@ -290,7 +306,8 @@
       "meaning_fr": "Rose — 핑크색 (pinkeu saek) en est la variante konglish",
       "meaning_id": "Merah muda — 핑크색 (pinkeu saek) adalah alternatif serapan dari bahasa Inggris",
       "meaning_th": "สีชมพู — 핑크색 (pinkeu saek) เป็นคำทับศัพท์ที่ใช้แทนกันได้",
-      "meaning_vi": "Màu hồng — 핑크색 (pinkeu saek) là cách nói mượn từ tiếng Anh"
+      "meaning_vi": "Màu hồng — 핑크색 (pinkeu saek) là cách nói mượn từ tiếng Anh",
+      "meaning_pt_br": "Rosa — 핑크색 (pinkeu saek) é a alternativa em konglish"
     },
     {
       "id": 11,
@@ -312,7 +329,8 @@
       "meaning_fr": "Marron / brun",
       "meaning_id": "Cokelat",
       "meaning_th": "สีน้ำตาล",
-      "meaning_vi": "Màu nâu"
+      "meaning_vi": "Màu nâu",
+      "meaning_pt_br": "Marrom"
     },
     {
       "id": 12,
@@ -335,7 +353,8 @@
       "meaning_fr": "Bleu ciel — littéralement « couleur du ciel » (하늘 = ciel)",
       "meaning_id": "Biru langit — harfiah \"warna langit\" (하늘 = langit)",
       "meaning_th": "สีฟ้า — ตามตัวอักษรแปลว่า \"สีของท้องฟ้า\" (하늘 = ท้องฟ้า)",
-      "meaning_vi": "Màu xanh da trời — nghĩa đen là \"màu của bầu trời\" (하늘 = bầu trời)"
+      "meaning_vi": "Màu xanh da trời — nghĩa đen là \"màu của bầu trời\" (하늘 = bầu trời)",
+      "meaning_pt_br": "Azul-celeste — literalmente \"cor do céu\" (하늘 = céu)"
     },
     {
       "id": 13,
@@ -357,7 +376,8 @@
       "meaning_fr": "Gris",
       "meaning_id": "Abu-abu",
       "meaning_th": "สีเทา",
-      "meaning_vi": "Màu xám"
+      "meaning_vi": "Màu xám",
+      "meaning_pt_br": "Cinza"
     },
     {
       "id": 14,
@@ -379,7 +399,8 @@
       "meaning_fr": "Doré — 금 (geum) signifie « or » ou « argent (monnaie) »",
       "meaning_id": "Emas — 금 (geum) berarti \"emas\" atau \"uang\"",
       "meaning_th": "สีทอง — 금 (geum) แปลว่า \"ทอง\" หรือ \"เงินตรา\"",
-      "meaning_vi": "Màu vàng kim — 금 (geum) nghĩa là \"vàng\" hoặc \"tiền bạc\""
+      "meaning_vi": "Màu vàng kim — 금 (geum) nghĩa là \"vàng\" hoặc \"tiền bạc\"",
+      "meaning_pt_br": "Dourado — 금 (geum) significa \"ouro\" ou \"dinheiro\""
     },
     {
       "id": 15,
@@ -401,7 +422,8 @@
       "meaning_fr": "Argenté — 은 (eun) signifie « argent » (le métal)",
       "meaning_id": "Perak — 은 (eun) berarti \"perak\"",
       "meaning_th": "สีเงิน — 은 (eun) แปลว่า \"แร่เงิน\"",
-      "meaning_vi": "Màu bạc — 은 (eun) nghĩa là \"bạc\""
+      "meaning_vi": "Màu bạc — 은 (eun) nghĩa là \"bạc\"",
+      "meaning_pt_br": "Prateado — 은 (eun) significa \"prata\""
     },
     {
       "id": 16,
@@ -423,7 +445,8 @@
       "meaning_fr": "Couleur — le mot général pour désigner la couleur",
       "meaning_id": "Warna — kata umum untuk warna",
       "meaning_th": "สี — คำทั่วไปที่ใช้เรียกสี",
-      "meaning_vi": "Màu sắc — từ chung để chỉ màu"
+      "meaning_vi": "Màu sắc — từ chung để chỉ màu",
+      "meaning_pt_br": "Cor — a palavra geral para cor"
     },
     {
       "id": 17,
@@ -444,7 +467,8 @@
       "prompt_fr": "빨갛다 → la forme nominale de la couleur est...",
       "prompt_id": "빨갛다 → bentuk kata benda warnanya adalah...",
       "prompt_th": "빨갛다 → รูปคำนามบอกสีคือ...",
-      "prompt_vi": "빨갛다 → dạng danh từ chỉ màu là..."
+      "prompt_vi": "빨갛다 → dạng danh từ chỉ màu là...",
+      "prompt_pt_br": "빨갛다 → a forma substantiva da cor é..."
     },
     {
       "id": 18,
@@ -465,7 +489,8 @@
       "prompt_fr": "하늘 signifie « ciel ». Quel mot de couleur en est formé ?",
       "prompt_id": "하늘 berarti 'langit.' Kata warna mana yang dibentuk darinya?",
       "prompt_th": "하늘 แปลว่า “ท้องฟ้า” คำเรียกสีใดสร้างขึ้นจากคำนี้?",
-      "prompt_vi": "하늘 có nghĩa là \"bầu trời\". Từ chỉ màu nào được tạo từ nó?"
+      "prompt_vi": "하늘 có nghĩa là \"bầu trời\". Từ chỉ màu nào được tạo từ nó?",
+      "prompt_pt_br": "하늘 significa \"céu\". Qual palavra de cor é formada a partir dela?"
     },
     {
       "id": 19,
@@ -486,7 +511,8 @@
       "prompt_fr": "En coréen, « rose » se dit...",
       "prompt_id": "Merah muda dalam bahasa Korea adalah...",
       "prompt_th": "สีชมพูในภาษาเกาหลีคือ...",
-      "prompt_vi": "Màu hồng trong tiếng Hàn là..."
+      "prompt_vi": "Màu hồng trong tiếng Hàn là...",
+      "prompt_pt_br": "Rosa em coreano é..."
     },
     {
       "id": 20,
@@ -511,7 +537,9 @@
       "message_fr": "훌륭해요 ! Vous connaissez maintenant la palette des couleurs en coréen. Les couleurs reviennent sans cesse dans les achats, la description d'objets et les conversations mode des K-dramas. Essayez d'en employer une aujourd'hui : 무슨 색 좋아해요? (Quelle couleur aimez-vous ?)",
       "message_id": "훌륭해요! Sekarang kamu mengenal palet warna bahasa Korea. Warna muncul saat berbelanja, mendeskripsikan benda, dan dalam obrolan fesyen K-drama. Coba pakai satu hari ini: 무슨 색 좋아해요? (Kamu suka warna apa?)",
       "message_th": "훌륭해요! ตอนนี้คุณรู้จักคำเรียกสีในภาษาเกาหลีครบชุดแล้ว สีปรากฏอยู่ในการช้อปปิ้ง การบรรยายสิ่งของ และบทสนทนาเรื่องแฟชั่นในซีรีส์เกาหลี ลองใช้สักคำวันนี้: 무슨 색 좋아해요? (คุณชอบสีอะไร?)",
-      "message_vi": "훌륭해요! Giờ bạn đã biết bảng màu tiếng Hàn. Màu sắc xuất hiện khi mua sắm, khi miêu tả đồ vật và trong các cuộc trò chuyện về thời trang K-drama. Hãy thử dùng một màu hôm nay: 무슨 색 좋아해요? (Bạn thích màu gì?)"
+      "message_vi": "훌륭해요! Giờ bạn đã biết bảng màu tiếng Hàn. Màu sắc xuất hiện khi mua sắm, khi miêu tả đồ vật và trong các cuộc trò chuyện về thời trang K-drama. Hãy thử dùng một màu hôm nay: 무슨 색 좋아해요? (Bạn thích màu gì?)",
+      "title_pt_br": "Cores Completas!",
+      "message_pt_br": "훌륭해요! Agora você conhece a paleta de cores coreana. As cores aparecem nas compras, ao descrever objetos e em conversas sobre moda de K-drama. Experimente usar uma hoje: 무슨 색 좋아해요? (Que cor você gosta?)"
     }
   ]
 }

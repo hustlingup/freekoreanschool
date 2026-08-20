@@ -56,6 +56,14 @@ if (!map.size) { console.log('no usable corrections'); process.exit(0); }
 let filesChanged = 0, totalHits = 0;
 const unmatched = new Set(map.keys());
 
+// A locale with no directory in EITHER section means every correction below
+// is guaranteed to end up in `unmatched` for a reason that has nothing to do
+// with matching quality — say so up front rather than letting it surface
+// only as an opaque "N correction(s) matched nothing" at the end.
+if (!SECTIONS.some(s => fs.existsSync(path.join(ROOT, s, lang)))) {
+  console.log(`NOT PRESENT: neither culture/${lang}/ nor travel/${lang}/ exists on disk — 0% of this locale has been scaffolded yet, nothing to patch.`);
+}
+
 for (const section of SECTIONS) {
   const dir = path.join(ROOT, section, lang);
   if (!fs.existsSync(dir)) continue;

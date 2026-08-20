@@ -17,7 +17,22 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const LEARN = path.join(ROOT, 'learn');
-const LOCALES = ['en', 'ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
+const REG = require('./_locales.cjs');
+// LOCALES was a hardcoded array; now sourced from the registry so a locale
+// added there is measured here without a second hand-edit. `--locales`
+// overrides the default scope (live 8 + en) — pass a 'planned' code to see
+// its honest 0-pages state instead of it silently vanishing from the table
+// (see the missingLocales reporting below).
+const argLocales = (() => {
+  const i = process.argv.indexOf('--locales');
+  return i !== -1 && process.argv[i + 1]
+    ? process.argv[i + 1].split(',').map(s => s.trim().toLowerCase()).filter(Boolean)
+    : null;
+})();
+if (argLocales) argLocales.forEach(c => {
+  if (c !== 'en' && !REG.get(c)) throw new Error(`unknown locale "${c}" — not in scripts/_locales.cjs`);
+});
+const LOCALES = argLocales || ['en', ...REG.liveDirs()];
 const THRESHOLD = 300;
 
 // Characters that are meaning-dense enough that one char ≈ one word.
@@ -64,9 +79,10 @@ function localeDir(loc) {
 }
 
 const rows = [];
+const missingLocales = [];
 for (const loc of LOCALES) {
   const dir = localeDir(loc);
-  if (!fs.existsSync(dir)) continue;
+  if (!fs.existsSync(dir)) { missingLocales.push(loc); continue; }
   for (const f of fs.readdirSync(dir).sort()) {
     if (!f.endsWith('.html')) continue;
     const html = fs.readFileSync(path.join(dir, f), 'utf8');
@@ -120,6 +136,12 @@ for (const [loc, ws] of Object.entries(byLocale)) {
   console.log(
     `  ${loc.padEnd(6)} n=${String(s.length).padStart(2)}  min=${String(s[0]).padStart(5)}  median=${String(med).padStart(5)}  max=${String(s[s.length - 1]).padStart(6)}  under=${under}`
   );
+}
+// A locale with no directory at all produces zero rows and used to vanish
+// from the table above with no trace — indistinguishable from "0 thin
+// pages", i.e. a silent pass on a locale that was never scanned. Name it.
+if (missingLocales.length) {
+  console.log(`\n${missingLocales.length} locale(s) NOT PRESENT on disk — 0% scanned, not "0 thin pages": ${missingLocales.join(', ')}`);
 }
 
 const all = rows.map(r => r.words).sort((a, b) => a - b);

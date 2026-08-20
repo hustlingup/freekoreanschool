@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "grammar::steps.70.rules[0]",
+    "value": "아이도 알아요 — até crianças sabem (ênfase: inclusão inesperada)"
+  },
+  {
+    "id": "grammar::steps.70.rules[1]",
+    "value": "하나도 없어요 — nem um sequer (negação enfática: 하나도 + negativo)"
+  },
+  {
+    "id": "grammar::steps.70.rules[2]",
+    "value": "먹기도 해요 — às vezes come / também come (-기도 하다)"
+  },
+  {
+    "id": "grammar::steps.70.rules[3]",
+    "value": "좋기도 하고 나쁘기도 해요 — tanto bom quanto ruim"
+  },
+  {
+    "id": "grammar::steps.71.meaning",
+    "value": "O coreano é ao mesmo tempo difícil e interessante."
+  },
+  {
+    "id": "grammar::steps.72.prompt",
+    "value": "Qual frase significa \"Até as crianças sabem\"?"
+  },
+  {
+    "id": "grammar::steps.73.title",
+    "value": "Gramática Completa!"
+  },
+  {
+    "id": "grammar::steps.73.message",
+    "value": "Você dominou todos os 26 estágios de gramática — desde a ordem das palavras SOV e as partículas até os padrões avançados de -도. Comece a aplicá-los em conversas reais!"
+  },
+  {
+    "id": "hangul::stages.0.name",
+    "value": "Consoantes"
+  },
+  {
+    "id": "hangul::stages.1.name",
+    "value": "Vogais"
+  },
+  {
+    "id": "hangul::stages.2.name",
+    "value": "Sílabas"
+  },
+  {
+    "id": "hangul::stages.3.name",
+    "value": "Especiais"
+  },
+  {
+    "id": "hangul::stages.4.name",
+    "value": "Vogais Compostas"
+  },
+  {
+    "id": "hangul::stages.5.name",
+    "value": "Ler Palavras"
+  },
+  {
+    "id": "hangul::steps.0.example_meaning",
+    "value": "ir"
+  },
+  {
+    "id": "hangul::steps.0.hint",
+    "value": "Tem a forma do fundo da garganta bloqueando o fluxo de ar."
+  },
+  {
+    "id": "hangul::steps.1.example_meaning",
+    "value": "eu / mim"
+  },
+  {
+    "id": "hangul::steps.1.hint",
+    "value": "Tem a forma da ponta da língua tocando o céu da boca."
+  },
+  {
+    "id": "hangul::steps.2.example_meaning",
+    "value": "tudo / cada"
+  },
+  {
+    "id": "hangul::steps.2.hint",
+    "value": "Como ㄴ com um teto — a língua bloqueia completamente o palato."
+  },
+  {
+    "id": "hangul::steps.3.example_meaning",
+    "value": "razão (prefixo)"
+  },
+  {
+    "id": "hangul::steps.3.hint",
+    "value": "Um som breve (flap) — entre o \"r\" e o \"l\". A língua toca rapidamente no palato."
+  },
+  {
+    "id": "hangul::steps.4.example_meaning",
+    "value": "coração / mente"
+  },
+  {
+    "id": "hangul::steps.4.hint",
+    "value": "Tem a forma dos lábios fechados se pressionando para fazer o som \"m\"."
+  },
+  {
+    "id": "hangul::steps.5.example_meaning",
+    "value": "arroz / refeição"
+  },
+  {
+    "id": "hangul::steps.5.hint",
+    "value": "Tem a forma dos lábios se abrindo para soltar o som \"b\" ou \"p\"."
+  },
+  {
+    "id": "hangul::steps.6.example_meaning",
+    "value": "pessoa"
+  },
+  {
+    "id": "hangul::steps.6.hint",
+    "value": "Tem a forma de dois dentes — o ar assobia para produzir o som \"s\"."
+  },
+  {
+    "id": "hangul::steps.7.example_meaning",
+    "value": "criança"
+  },
+  {
+    "id": "hangul::steps.7.hint",
+    "value": "Silenciosa no início de uma sílaba. Soa como \"ng\" no final."
+  },
+  {
+    "id": "hangul::steps.8.example_meaning",
+    "value": "agora"
+  },
+  {
+    "id": "hangul::steps.8.hint",
+    "value": "Como o \"j\" em inglês \"juice\" ou o \"tch\" em \"tchau\". A língua pressiona atrás dos dentes superiores."
+  },
+  {
+    "id": "hangul::steps.9.example_meaning",
+    "value": "chá / carro"
+  },
+  {
+    "id": "hangul::steps.9.hint",
+    "value": "\"Ch\" aspirado — sai um sopro de ar. Como o \"tch\" em \"tchau\"."
+  },
+  {
+    "id": "hangul::steps.10.example_meaning",
+    "value": "café"
+  },
+  {
+    "id": "hangul::steps.10.hint",
+    "value": "\"K\" aspirado — sopro de ar forte. Segure um lenço de papel e ele vai tremular."
+  },
+  {
+    "id": "hangul::steps.11.example_meaning",
+    "value": "andar de / montar"
+  },
+  {
+    "id": "hangul::steps.11.hint",
+    "value": "\"T\" aspirado — como o \"t\" em inglês \"ten\" (no início da palavra). Explosão forte de ar."
+  },
+  {
+    "id": "hangul::steps.12.example_meaning",
+    "value": "cebolinha"
+  },
+  {
+    "id": "hangul::steps.12.hint",
+    "value": "\"P\" aspirado — como o \"p\" em \"pote\". Os lábios se abrem com ar."
+  },
+  {
+    "id": "hangul::steps.13.example_meaning",
+    "value": "céu"
+  },
+  {
+    "id": "hangul::steps.13.hint",
+    "value": "Um \"h\" soprado — como exalar ar quente na mão."
+  },
+  {
+    "id": "hangul::steps.14.prompt",
+    "value": "ㄱ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.15.prompt",
+    "value": "Qual consoante é SILENCIOSA no início de uma sílaba?"
+  },
+  {
+    "id": "hangul::steps.16.prompt",
+    "value": "ㄴ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.17.prompt",
+    "value": "Qual consoante soa como o \"j\" em inglês \"juice\"?"
+  },
+  {
+    "id": "hangul::steps.18.prompt",
+    "value": "ㅁ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.19.prompt",
+    "value": "ㄹ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.20.prompt",
+    "value": "밥 (arroz) começa com qual consoante?"
+  },
+  {
+    "id": "hangul::steps.21.hint",
+    "value": "Abra bem a boca, como ao dizer \"ah\" no consultório médico."
+  },
+  {
+    "id": "hangul::steps.22.hint",
+    "value": "Como \"ya\" em \"yard\". O traço extra indica que um \"y\" é adicionado."
+  },
+  {
+    "id": "hangul::steps.23.hint",
+    "value": "Parecido com o som \"ó\" (mais fechado). Lábios levemente arredondados."
+  },
+  {
+    "id": "hangul::steps.24.hint",
+    "value": "Como \"iô\" com lábios arredondados. Dois traços = prefixo \"y\"."
+  },
+  {
+    "id": "hangul::steps.25.hint",
+    "value": "Como o \"ô\" em \"avô\". Arredonde os lábios como se fosse soprar uma vela."
+  },
+  {
+    "id": "hangul::steps.26.hint",
+    "value": "Como \"iô!\" — dois traços adicionam o \"y\". Muito usado na fala."
+  },
+  {
+    "id": "hangul::steps.27.hint",
+    "value": "Como o \"u\" em \"lua\". A linha aponta PARA BAIXO — a boca se abre para baixo."
+  },
+  {
+    "id": "hangul::steps.28.hint",
+    "value": "Como \"iu\". Dois traços voltados para baixo indicam o prefixo \"y\"."
+  },
+  {
+    "id": "hangul::steps.29.hint",
+    "value": "Como o som que você faz quando está insatisfeito: \"éé...\". Lábios retos, sem arredondar."
+  },
+  {
+    "id": "hangul::steps.30.hint",
+    "value": "Como o \"i\" em \"sim\". Um simples traço vertical — vogal alta anterior pura."
+  },
+  {
+    "id": "hangul::steps.31.prompt",
+    "value": "Qual vogal soa como o \"a\" (como em \"pai\")?"
+  },
+  {
+    "id": "hangul::steps.32.prompt",
+    "value": "Qual vogal soa como o \"ô\" (como em \"avô\")?"
+  },
+  {
+    "id": "hangul::steps.33.prompt",
+    "value": "Qual vogal soa como o \"i\" (como em \"sim\")?"
+  },
+  {
+    "id": "hangul::steps.34.prompt",
+    "value": "ㅠ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.35.prompt",
+    "value": "ㅡ soa como…"
+  },
+  {
+    "id": "hangul::steps.36.meaning",
+    "value": "ba — como em 바나나 (banana)"
+  },
+  {
+    "id": "hangul::steps.37.meaning",
+    "value": "na — como em 나 (eu)"
+  },
+  {
+    "id": "hangul::steps.38.meaning",
+    "value": "sa — como em 사랑 (amor)"
+  },
+  {
+    "id": "hangul::steps.39.meaning",
+    "value": "go — como em 고마워 (obrigado/a)"
+  },
+  {
+    "id": "hangul::steps.40.meaning",
+    "value": "ha — como em 하늘 (céu)"
+  },
+  {
+    "id": "hangul::steps.41.meaning",
+    "value": "mu — como em 무엇 (o quê)"
+  },
+  {
+    "id": "hangul::steps.42.hint",
+    "value": "\"K\" tenso — segure a respiração e depois solte. Sem sopro de ar."
+  },
+  {
+    "id": "hangul::steps.43.hint",
+    "value": "\"T\" tenso — a garganta se contrai antes de soltar o som. Diferente de ㄷ e ㅌ."
+  },
+  {
+    "id": "hangul::steps.44.hint",
+    "value": "\"P\" tenso — os lábios pressionam com força antes de se abrirem. Nenhum ar escapa."
+  },
+  {
+    "id": "hangul::steps.45.hint",
+    "value": "\"S\" tenso — um assobio agudo e contido. Usado em 있다 (existir / ter)."
+  },
+  {
+    "id": "hangul::steps.46.hint",
+    "value": "\"J\" tenso — mais agudo e abrupto que ㅈ. Sem explosão de ar."
+  },
+  {
+    "id": "hangul::steps.47.hint",
+    "value": "Aspirada — um forte sopro de ar acompanha a consoante."
+  },
+  {
+    "id": "hangul::steps.48.hint",
+    "value": "Aspirada — a língua se solta do palato com um sopro de ar."
+  },
+  {
+    "id": "hangul::steps.49.hint",
+    "value": "Aspirada — os lábios se abrem de repente com um sopro de ar. Como em \"pote\"."
+  },
+  {
+    "id": "hangul::steps.50.hint",
+    "value": "\"Ch\" aspirado — como no início de \"tchau\". Sai ar."
+  },
+  {
+    "id": "hangul::steps.51.hint",
+    "value": "Uma consoante bem aspirada. A que produz mais ar entre todas as consoantes coreanas."
+  },
+  {
+    "id": "hangul::steps.52.prompt",
+    "value": "ㄲ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.53.prompt",
+    "value": "Qual é uma consoante TENSA (쌍자음)?"
+  },
+  {
+    "id": "hangul::steps.54.prompt",
+    "value": "ㅃ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.55.prompt",
+    "value": "As consoantes aspiradas são produzidas com…"
+  },
+  {
+    "id": "hangul::steps.55.choices[0]",
+    "value": "Sem ar"
+  },
+  {
+    "id": "hangul::steps.55.choices[1]",
+    "value": "Um forte sopro de ar"
+  },
+  {
+    "id": "hangul::steps.55.choices[2]",
+    "value": "Uma garganta tensa"
+  },
+  {
+    "id": "hangul::steps.55.choices[3]",
+    "value": "Um som nasal"
+  },
+  {
+    "id": "hangul::steps.56.prompt",
+    "value": "ㅉ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.57.hint",
+    "value": "ㅏ + ㅣ combinadas. Como o \"é\" em \"pé\". No coreano moderno, soa igual a 에."
+  },
+  {
+    "id": "hangul::steps.58.hint",
+    "value": "ㅓ + ㅣ combinadas. Como o \"é\" em \"pé\". Hoje soa igual a 애."
+  },
+  {
+    "id": "hangul::steps.59.hint",
+    "value": "ㅑ + ㅣ. Rara — aparece em 얘 (esta criança, coloquial)."
+  },
+  {
+    "id": "hangul::steps.60.hint",
+    "value": "ㅕ + ㅣ. Como \"iê\". 예쁘다 = bonito/a."
+  },
+  {
+    "id": "hangul::steps.61.hint",
+    "value": "ㅗ + ㅏ. Como \"ua\" em \"quatro\". 와! = Uau!"
+  },
+  {
+    "id": "hangul::steps.62.hint",
+    "value": "ㅗ + ㅐ. Soa como \"uê\". 왜 = por quê."
+  },
+  {
+    "id": "hangul::steps.63.hint",
+    "value": "ㅗ + ㅣ. Como \"uê\". 외국인 = estrangeiro/a."
+  },
+  {
+    "id": "hangul::steps.64.hint",
+    "value": "ㅜ + ㅓ. Como \"uó\". 뭐 = o quê (coloquial)."
+  },
+  {
+    "id": "hangul::steps.65.hint",
+    "value": "ㅜ + ㅔ. Como \"uê\". Muito rara em coreano."
+  },
+  {
+    "id": "hangul::steps.66.hint",
+    "value": "ㅜ + ㅣ. Como \"ui\". 위 = em cima / estômago."
+  },
+  {
+    "id": "hangul::steps.67.hint",
+    "value": "ㅡ + ㅣ. Um ditongo único. 의사 = médico/a. Também é usada como partícula possessiva 의."
+  },
+  {
+    "id": "hangul::steps.68.prompt",
+    "value": "ㅘ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.69.prompt",
+    "value": "왜 significa…"
+  },
+  {
+    "id": "hangul::steps.69.choices[0]",
+    "value": "o quê"
+  },
+  {
+    "id": "hangul::steps.69.choices[1]",
+    "value": "quem"
+  },
+  {
+    "id": "hangul::steps.69.choices[2]",
+    "value": "por quê"
+  },
+  {
+    "id": "hangul::steps.69.choices[3]",
+    "value": "onde"
+  },
+  {
+    "id": "hangul::steps.70.prompt",
+    "value": "ㅢ se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.71.prompt",
+    "value": "Qual vogal composta usa ㅗ + ㅣ?"
+  },
+  {
+    "id": "hangul::steps.72.prompt",
+    "value": "예 se romaniza como…"
+  },
+  {
+    "id": "hangul::steps.73.meaning",
+    "value": "oi / tchau (informal)"
+  },
+  {
+    "id": "hangul::steps.74.meaning",
+    "value": "escola"
+  },
+  {
+    "id": "hangul::steps.75.meaning",
+    "value": "Coreia"
+  },
+  {
+    "id": "hangul::steps.76.meaning",
+    "value": "amor"
+  },
+  {
+    "id": "hangul::steps.77.meaning",
+    "value": "água"
+  },
+  {
+    "id": "hangul::steps.78.meaning",
+    "value": "arroz / refeição"
+  },
+  {
+    "id": "hangul::steps.79.meaning",
+    "value": "pessoa"
+  },
+  {
+    "id": "hangul::steps.80.meaning",
+    "value": "amigo/a"
+  },
+  {
+    "id": "hangul::steps.81.meaning",
+    "value": "céu"
+  },
+  {
+    "id": "hangul::steps.82.meaning",
+    "value": "obrigado/a (informal)"
+  },
+  {
+    "id": "hangul::steps.83.title",
+    "value": "Você já consegue ler coreano!"
+  },
+  {
+    "id": "hangul::steps.83.message",
+    "value": "Trabalho incrível — você completou todos os 6 estágios do Hangul. Agora você consegue ler e escrever todos os caracteres do alfabeto coreano. 화이팅!"
+  },
+  {
+    "id": "letter-writing::stages.0.name",
+    "value": "Como Funcionam os Traços"
+  },
+  {
+    "id": "letter-writing::stages.1.name",
+    "value": "Consoantes"
+  },
+  {
+    "id": "letter-writing::stages.2.name",
+    "value": "Vogais"
+  },
+  {
+    "id": "letter-writing::stages.3.name",
+    "value": "Blocos Silábicos"
+  },
+  {
+    "id": "letter-writing::stages.4.name",
+    "value": "Desafio"
+  },
+  {
+    "id": "letter-writing::steps.0.title",
+    "value": "As Três Regras da Ordem dos Traços"
+  },
+  {
+    "id": "letter-writing::steps.0.body",
+    "value": "Cada letra do hangul é formada por alguns traços simples, e esses traços sempre seguem a mesma ordem. Três regras cobrem todos eles."
+  },
+  {
+    "id": "letter-writing::steps.0.rules[0]",
+    "value": "De cima para baixo — o traço mais alto é escrito primeiro."
+  },
+  {
+    "id": "letter-writing::steps.0.rules[1]",
+    "value": "Da esquerda para a direita — quando os traços ficam lado a lado, comece pelo da esquerda."
+  },
+  {
+    "id": "letter-writing::steps.0.rules[2]",
+    "value": "Horizontal antes da vertical que a cruza — desenhe primeiro a barra que atravessa, depois a linha que a corta."
+  },
+  {
+    "id": "letter-writing::steps.0.tip.label",
+    "value": "Por que isso importa"
+  },
+  {
+    "id": "letter-writing::steps.0.tip.text",
+    "value": "Cada letra do hangul segue essas três regras. Aprenda as 24 formas básicas e você conseguirá escrever todas as 11.172 sílabas coreanas."
+  },
+  {
+    "id": "letter-writing::steps.1.title",
+    "value": "Uma Letra, Um Ritmo"
+  },
+  {
+    "id": "letter-writing::steps.1.body",
+    "value": "Cada letra tem um número fixo de traços, e cada traço tem uma direção fixa. ㅈ é escrito em 2 traços e ㅊ em 3 — essa é a convenção de escrita à mão usada em toda esta lição. Dentro de um bloco silábico, a ordem também é fixa: primeiro a consoante inicial, depois a vogal e, por fim, a consoante final embaixo."
+  },
+  {
+    "id": "letter-writing::steps.1.rules[0]",
+    "value": "Consoante inicial primeiro (초성) — a posição superior esquerda."
+  },
+  {
+    "id": "letter-writing::steps.1.rules[1]",
+    "value": "Depois a vogal (중성) — à direita dela, ou embaixo."
+  },
+  {
+    "id": "letter-writing::steps.1.rules[2]",
+    "value": "Depois a consoante final (종성) na parte de baixo, se a sílaba tiver uma."
+  },
+  {
+    "id": "letter-writing::steps.1.tip.label",
+    "value": "A marca no topo de ㅎ e ㅊ"
+  },
+  {
+    "id": "letter-writing::steps.1.tip.text",
+    "value": "A pequena marca no topo de ㅎ e ㅊ pode ser escrita reta, inclinada ou na vertical — o coreano não tem uma regra oficial, e você verá as três formas. Nós a desenhamos inclinada, do jeito que a maioria das fontes coreanas imprime, para que a letra que você pratica se pareça com o coreano que você realmente vai ler."
+  },
+  {
+    "id": "letter-writing::steps.2.hint",
+    "value": "Um único traço: para a direita e depois vira e desce reto."
+  },
+  {
+    "id": "letter-writing::steps.2.example_meaning",
+    "value": "ir"
+  },
+  {
+    "id": "letter-writing::steps.3.hint",
+    "value": "Comece no canto superior esquerdo. Um traço: para o lado e depois para baixo, sem levantar a caneta."
+  },
+  {
+    "id": "letter-writing::steps.4.hint",
+    "value": "Um único traço: desce pelo lado esquerdo, depois vira e segue pela parte de baixo."
+  },
+  {
+    "id": "letter-writing::steps.4.example_meaning",
+    "value": "eu / mim"
+  },
+  {
+    "id": "letter-writing::steps.5.hint",
+    "value": "Comece no canto superior esquerdo. Primeiro para baixo, depois para a direita — um único traço contínuo."
+  },
+  {
+    "id": "letter-writing::steps.6.hint",
+    "value": "Dois traços: a barra de cima e depois um traço que desce pelo lado esquerdo e segue pela base."
+  },
+  {
+    "id": "letter-writing::steps.6.example_meaning",
+    "value": "tudo / cada"
+  },
+  {
+    "id": "letter-writing::steps.7.hint",
+    "value": "Desenhe a barra de cima da esquerda para a direita. Depois comece de novo no canto superior esquerdo: para baixo e depois para a direita."
+  },
+  {
+    "id": "letter-writing::steps.8.hint",
+    "value": "Três traços: o movimento de ㄱ, a barra do meio e depois o movimento de ㄴ."
+  },
+  {
+    "id": "letter-writing::steps.8.example_meaning",
+    "value": "razão (prefixo)"
+  },
+  {
+    "id": "letter-writing::steps.9.hint",
+    "value": "Primeiro o ㄱ de cima. Depois a barra do meio, da esquerda para a direita. Por fim o ㄴ de baixo."
+  },
+  {
+    "id": "letter-writing::steps.10.hint",
+    "value": "Três traços: o lado esquerdo para baixo, depois a parte de cima e o lado direito em um só movimento, e depois a barra de baixo."
+  },
+  {
+    "id": "letter-writing::steps.10.example_meaning",
+    "value": "coração / mente"
+  },
+  {
+    "id": "letter-writing::steps.11.hint",
+    "value": "Comece no canto superior esquerdo e desça. Depois atravesse a parte de cima e desça pelo lado direito. Feche a caixa com a barra de baixo."
+  },
+  {
+    "id": "letter-writing::steps.12.hint",
+    "value": "Quatro traços: o poste esquerdo para baixo, o poste direito para baixo, depois a barra do meio e depois a barra de baixo."
+  },
+  {
+    "id": "letter-writing::steps.12.example_meaning",
+    "value": "arroz / refeição"
+  },
+  {
+    "id": "letter-writing::steps.13.hint",
+    "value": "Primeiro as duas verticais, esquerda antes da direita. Depois a barra do meio e depois a barra de baixo."
+  },
+  {
+    "id": "letter-writing::steps.14.hint",
+    "value": "Dois traços: primeiro a perna esquerda longa, depois a perna direita mais curta."
+  },
+  {
+    "id": "letter-writing::steps.14.example_meaning",
+    "value": "pessoa"
+  },
+  {
+    "id": "letter-writing::steps.15.hint",
+    "value": "Comece no ponto de cima e desça em diagonal para a esquerda. Depois comece nesse traço e desça em diagonal para a direita."
+  },
+  {
+    "id": "letter-writing::steps.16.hint",
+    "value": "Um único traço: um círculo fechado, começando em cima e voltando ao mesmo ponto."
+  },
+  {
+    "id": "letter-writing::steps.16.example_meaning",
+    "value": "criança"
+  },
+  {
+    "id": "letter-writing::steps.17.hint",
+    "value": "Comece em cima e dê a volta completa até encontrar o ponto de partida."
+  },
+  {
+    "id": "letter-writing::steps.18.hint",
+    "value": "Dois traços: a barra de cima e a perna esquerda em um só movimento, depois a perna direita. Dois, não três."
+  },
+  {
+    "id": "letter-writing::steps.18.example_meaning",
+    "value": "agora"
+  },
+  {
+    "id": "letter-writing::steps.19.hint",
+    "value": "Comece no canto superior esquerdo: para o lado e depois para baixo à esquerda, em um só traço. Depois a perna direita."
+  },
+  {
+    "id": "letter-writing::steps.20.hint",
+    "value": "Três traços: a pequena marca inclinada em cima, depois a barra com a perna esquerda, depois a perna direita."
+  },
+  {
+    "id": "letter-writing::steps.20.example_meaning",
+    "value": "chá / carro"
+  },
+  {
+    "id": "letter-writing::steps.21.hint",
+    "value": "Primeiro a marca em cima. Depois a barra e a perna esquerda em um só traço. Depois a perna direita."
+  },
+  {
+    "id": "letter-writing::steps.22.hint",
+    "value": "Dois traços: primeiro a forma de ㄱ, depois a barra curta atravessando o meio."
+  },
+  {
+    "id": "letter-writing::steps.22.example_meaning",
+    "value": "café"
+  },
+  {
+    "id": "letter-writing::steps.23.hint",
+    "value": "Desenhe ㄱ — para o lado e depois para baixo. Depois adicione a barra do meio, da esquerda para a direita."
+  },
+  {
+    "id": "letter-writing::steps.24.hint",
+    "value": "Três traços: a barra de cima, a barra do meio e depois o lado esquerdo e a base em um só movimento."
+  },
+  {
+    "id": "letter-writing::steps.24.example_meaning",
+    "value": "andar de / montar"
+  },
+  {
+    "id": "letter-writing::steps.25.hint",
+    "value": "Barra de cima, depois barra do meio. Termine com o traço que desce pelo lado esquerdo e segue pela base."
+  },
+  {
+    "id": "letter-writing::steps.26.hint",
+    "value": "Quatro traços: a barra de cima, o poste esquerdo, o poste direito e depois a barra de baixo."
+  },
+  {
+    "id": "letter-writing::steps.26.example_meaning",
+    "value": "cebolinha"
+  },
+  {
+    "id": "letter-writing::steps.27.hint",
+    "value": "Primeiro a barra de cima. Depois os dois postes curtos, esquerda antes da direita. Por último a barra de baixo."
+  },
+  {
+    "id": "letter-writing::steps.28.hint",
+    "value": "Três traços: a pequena marca inclinada, a barra embaixo dela e depois o círculo."
+  },
+  {
+    "id": "letter-writing::steps.28.example_meaning",
+    "value": "céu"
+  },
+  {
+    "id": "letter-writing::steps.29.hint",
+    "value": "Primeiro a marca, depois a barra da esquerda para a direita, depois o círculo embaixo."
+  },
+  {
+    "id": "letter-writing::steps.30.hint",
+    "value": "Dois traços: primeiro a linha vertical longa, depois a marca curta para a direita."
+  },
+  {
+    "id": "letter-writing::steps.30.example_meaning",
+    "value": "pessoa"
+  },
+  {
+    "id": "letter-writing::steps.31.hint",
+    "value": "Desenhe a vertical de cima para baixo. Depois a marca, saindo da linha para a direita."
+  },
+  {
+    "id": "letter-writing::steps.32.hint",
+    "value": "Três traços: primeiro a vertical longa, depois a marca de cima, depois a marca de baixo."
+  },
+  {
+    "id": "letter-writing::steps.32.example_meaning",
+    "value": "remédio"
+  },
+  {
+    "id": "letter-writing::steps.33.hint",
+    "value": "Primeiro a vertical para baixo. Depois duas marcas para a direita — a de cima antes da de baixo."
+  },
+  {
+    "id": "letter-writing::steps.34.hint",
+    "value": "Dois traços: primeiro a marca, depois a vertical. A marca curta fica à esquerda, então vem primeiro."
+  },
+  {
+    "id": "letter-writing::steps.34.example_meaning",
+    "value": "o quê"
+  },
+  {
+    "id": "letter-writing::steps.35.hint",
+    "value": "Desenhe a marca curta da esquerda para a direita, depois a vertical longa de cima para baixo."
+  },
+  {
+    "id": "letter-writing::steps.36.hint",
+    "value": "Três traços: a marca de cima, a marca de baixo e depois a vertical longa à direita."
+  },
+  {
+    "id": "letter-writing::steps.36.example_meaning",
+    "value": "mulher / garota"
+  },
+  {
+    "id": "letter-writing::steps.37.hint",
+    "value": "Primeiro as duas marcas, de cima antes da de baixo. Depois a vertical no lado direito."
+  },
+  {
+    "id": "letter-writing::steps.38.hint",
+    "value": "Dois traços: primeiro a vertical curta, depois a base longa embaixo dela."
+  },
+  {
+    "id": "letter-writing::steps.38.example_meaning",
+    "value": "obrigado/a"
+  },
+  {
+    "id": "letter-writing::steps.39.hint",
+    "value": "Comece no topo do traço curto e desça. Depois a barra da base, da esquerda para a direita."
+  },
+  {
+    "id": "letter-writing::steps.40.hint",
+    "value": "Três traços: o traço esquerdo, o traço direito e depois a barra da base longa."
+  },
+  {
+    "id": "letter-writing::steps.40.example_meaning",
+    "value": "escola"
+  },
+  {
+    "id": "letter-writing::steps.41.hint",
+    "value": "Dois traços curtos, esquerda antes da direita. Depois a barra da base embaixo, da esquerda para a direita."
+  },
+  {
+    "id": "letter-writing::steps.42.hint",
+    "value": "Dois traços: primeiro a barra, depois a vertical pendurada embaixo dela."
+  },
+  {
+    "id": "letter-writing::steps.42.example_meaning",
+    "value": "água"
+  },
+  {
+    "id": "letter-writing::steps.43.hint",
+    "value": "Desenhe a barra longa da esquerda para a direita, depois a vertical descendo do meio dela."
+  },
+  {
+    "id": "letter-writing::steps.44.hint",
+    "value": "Três traços: primeiro a barra longa, depois os dois traços pendurados nela, esquerda antes da direita."
+  },
+  {
+    "id": "letter-writing::steps.44.example_meaning",
+    "value": "YouTube"
+  },
+  {
+    "id": "letter-writing::steps.45.hint",
+    "value": "Primeiro a barra, da esquerda para a direita. Depois o traço esquerdo para baixo, depois o traço direito para baixo."
+  },
+  {
+    "id": "letter-writing::steps.46.hint",
+    "value": "Um único traço: uma linha horizontal, da esquerda para a direita."
+  },
+  {
+    "id": "letter-writing::steps.46.example_meaning",
+    "value": "céu"
+  },
+  {
+    "id": "letter-writing::steps.47.hint",
+    "value": "Comece na ponta esquerda e desenhe reto até a direita."
+  },
+  {
+    "id": "letter-writing::steps.48.hint",
+    "value": "Um único traço: uma linha vertical, de cima para baixo."
+  },
+  {
+    "id": "letter-writing::steps.48.example_meaning",
+    "value": "amigo/a"
+  },
+  {
+    "id": "letter-writing::steps.49.hint",
+    "value": "Comece em cima e desenhe reto para baixo."
+  },
+  {
+    "id": "letter-writing::steps.50.hint",
+    "value": "A vogal fica à direita, então escreva ㄱ primeiro, depois ㅏ ao lado."
+  },
+  {
+    "id": "letter-writing::steps.50.example_meaning",
+    "value": "ir"
+  },
+  {
+    "id": "letter-writing::steps.51.hint",
+    "value": "ㄱ na metade esquerda. Depois ㅏ no lado direito — a vertical antes da marca."
+  },
+  {
+    "id": "letter-writing::steps.52.hint",
+    "value": "ㅗ fica embaixo, então escreva ㄱ em cima primeiro, depois ㅗ embaixo."
+  },
+  {
+    "id": "letter-writing::steps.52.example_meaning",
+    "value": "obrigado/a"
+  },
+  {
+    "id": "letter-writing::steps.53.hint",
+    "value": "ㄱ na metade de cima. Depois ㅗ embaixo: primeiro o traço curto, depois a barra da base."
+  },
+  {
+    "id": "letter-writing::steps.54.hint",
+    "value": "Uma vogal de duas partes. Escreva ㄱ, depois ㅗ embaixo, depois ㅏ à direita."
+  },
+  {
+    "id": "letter-writing::steps.54.example_meaning",
+    "value": "fruta"
+  },
+  {
+    "id": "letter-writing::steps.55.hint",
+    "value": "ㄱ no canto superior esquerdo, ㅗ embaixo dele, depois ㅏ no lado direito."
+  },
+  {
+    "id": "letter-writing::steps.56.hint",
+    "value": "Escreva ㅎ primeiro, depois ㅏ, depois ㄴ embaixo."
+  },
+  {
+    "id": "letter-writing::steps.56.example_meaning",
+    "value": "Coreia"
+  },
+  {
+    "id": "letter-writing::steps.57.hint",
+    "value": "ㅎ no canto superior esquerdo, ㅏ à direita dele, depois ㄴ na parte de baixo."
+  },
+  {
+    "id": "letter-writing::steps.58.hint",
+    "value": "Direto de cima para baixo no bloco: ㄱ, depois ㅗ, depois ㅁ como consoante final."
+  },
+  {
+    "id": "letter-writing::steps.58.example_meaning",
+    "value": "urso"
+  },
+  {
+    "id": "letter-writing::steps.59.hint",
+    "value": "ㄱ primeiro, ㅗ embaixo dele, depois ㅁ na base — lado esquerdo, cima e direita, depois a base."
+  },
+  {
+    "id": "letter-writing::steps.60.hint",
+    "value": "Primeiro o círculo, depois a vogal de duas partes ㅜ e ㅓ, depois ㄴ na base."
+  },
+  {
+    "id": "letter-writing::steps.60.example_meaning",
+    "value": "won (moeda coreana)"
+  },
+  {
+    "id": "letter-writing::steps.61.hint",
+    "value": "ㅇ no canto superior esquerdo. Depois ㅜ, depois ㅓ à direita dele, depois ㄴ embaixo."
+  },
+  {
+    "id": "letter-writing::steps.62.hint",
+    "value": "ㅂ leva 4 traços, ㅣ leva 1 e o ㅊ final leva 3 — vá do canto superior esquerdo, depois para a direita, depois para baixo."
+  },
+  {
+    "id": "letter-writing::steps.62.example_meaning",
+    "value": "luz"
+  },
+  {
+    "id": "letter-writing::steps.63.hint",
+    "value": "ㅂ no canto superior esquerdo, ㅣ à direita, depois ㅊ na parte de baixo."
+  },
+  {
+    "id": "letter-writing::steps.64.hint",
+    "value": "A consoante final é um par: escreva ㄷ, depois ㅏ, depois ㄹ e ㄱ lado a lado na base."
+  },
+  {
+    "id": "letter-writing::steps.64.example_meaning",
+    "value": "frango / galinha"
+  },
+  {
+    "id": "letter-writing::steps.65.hint",
+    "value": "ㄷ primeiro, ㅏ à direita dele, depois o par de baixo — ㄹ à esquerda, ㄱ à direita."
+  },
+  {
+    "id": "letter-writing::steps.66.hint",
+    "value": "ㄱ, depois ㅏ, depois a final dupla ㅂ e ㅅ, esquerda antes da direita."
+  },
+  {
+    "id": "letter-writing::steps.66.example_meaning",
+    "value": "preço"
+  },
+  {
+    "id": "letter-writing::steps.67.hint",
+    "value": "ㄱ no canto superior esquerdo, ㅏ à direita dele, depois ㅂ e ㅅ lado a lado na parte de baixo."
+  },
+  {
+    "id": "letter-writing::steps.68.hint",
+    "value": "O bloco mais longo desta lição: ㅎ, depois ㅑ, depois ㄹ e ㅎ juntas na base."
+  },
+  {
+    "id": "letter-writing::steps.68.example_meaning",
+    "value": "uma sílaba rara — prova de que qualquer bloco coreano pode ser escrito da mesma forma"
+  },
+  {
+    "id": "letter-writing::steps.69.hint",
+    "value": "ㅎ no canto superior esquerdo, ㅑ à direita, depois ㄹ e ㅎ lado a lado na base."
+  },
+  {
+    "id": "letter-writing::steps.70.prompt",
+    "value": "Quantos traços tem ㅊ?"
+  },
+  {
+    "id": "letter-writing::steps.70.choices[0]",
+    "value": "2"
+  },
+  {
+    "id": "letter-writing::steps.70.choices[1]",
+    "value": "3"
+  },
+  {
+    "id": "letter-writing::steps.70.choices[2]",
+    "value": "4"
+  },
+  {
+    "id": "letter-writing::steps.70.choices[3]",
+    "value": "5"
+  },
+  {
+    "id": "letter-writing::steps.71.prompt",
+    "value": "Qual traço vem PRIMEIRO em ㅏ?"
+  },
+  {
+    "id": "letter-writing::steps.71.choices[0]",
+    "value": "A linha vertical"
+  },
+  {
+    "id": "letter-writing::steps.71.choices[1]",
+    "value": "A marca curta"
+  },
+  {
+    "id": "letter-writing::steps.71.choices[2]",
+    "value": "Qualquer um dos dois"
+  },
+  {
+    "id": "letter-writing::steps.71.choices[3]",
+    "value": "A barra de baixo"
+  },
+  {
+    "id": "letter-writing::steps.72.prompt",
+    "value": "Quantos traços tem 한?"
+  },
+  {
+    "id": "letter-writing::steps.72.choices[0]",
+    "value": "5"
+  },
+  {
+    "id": "letter-writing::steps.72.choices[1]",
+    "value": "6"
+  },
+  {
+    "id": "letter-writing::steps.72.choices[2]",
+    "value": "7"
+  },
+  {
+    "id": "letter-writing::steps.72.choices[3]",
+    "value": "8"
+  },
+  {
+    "id": "letter-writing::steps.73.title",
+    "value": "Você já sabe escrever Hangul!"
+  },
+  {
+    "id": "letter-writing::steps.73.message",
+    "value": "Trabalho brilhante — você traçou todas as 24 letras básicas e avançou até blocos silábicos completos, chegando até 햟. Continue praticando com a ferramenta de prática livre logo abaixo desta lição: digite qualquer palavra coreana e veja-a sendo escrita traço a traço, ou trace você mesmo. 화이팅!"
+  },
+  {
+    "id": "nouns::stages.0.name",
+    "value": "Pessoas e Família"
+  },
+  {
+    "id": "nouns::stages.1.name",
+    "value": "Lugares e Tempo"
+  },
+  {
+    "id": "nouns::stages.2.name",
+    "value": "Objetos e Contadores"
+  },
+  {
+    "id": "nouns::stages.3.name",
+    "value": "Possessivos"
+  },
+  {
+    "id": "nouns::steps.0.title",
+    "value": "Substantivos Coreanos (명사)"
+  },
+  {
+    "id": "nouns::steps.0.body",
+    "value": "Os substantivos coreanos (명사) não mudam de acordo com gênero ou número. A mesma palavra 사람 significa \"pessoa\", \"pessoas\", \"uma pessoa\" e \"a pessoa\". O plural é entendido pelo contexto ou adicionado separadamente com palavras como 들 (들 é um sufixo de plural, ex.: 사람들 = pessoas). Não existem artigos como \"um/uma\" ou \"o/a\". Isso torna os substantivos coreanos muito fáceis de aprender — você só precisa saber a palavra em si."
+  },
+  {
+    "id": "nouns::steps.0.tip.label",
+    "value": "Sufixo de plural 들"
+  },
+  {
+    "id": "nouns::steps.0.tip.text",
+    "value": "들 adiciona a ideia de plural de forma suave: 친구들 (amigos), 학생들 (estudantes). Você pode acrescentar 들 a pessoas ou animais, mas é opcional e geralmente omitido quando o contexto é claro."
+  },
+  {
+    "id": "nouns::steps.1.meaning",
+    "value": "pessoa / ser humano"
+  },
+  {
+    "id": "nouns::steps.2.meaning",
+    "value": "homem / menino"
+  },
+  {
+    "id": "nouns::steps.3.meaning",
+    "value": "mulher / menina"
+  },
+  {
+    "id": "nouns::steps.4.meaning",
+    "value": "criança"
+  },
+  {
+    "id": "nouns::steps.5.meaning",
+    "value": "amigo/a"
+  },
+  {
+    "id": "nouns::steps.6.prompt",
+    "value": "Qual palavra significa \"amigo/a\"?"
+  },
+  {
+    "id": "nouns::steps.7.title",
+    "value": "Substantivos de Família (가족 명사)"
+  },
+  {
+    "id": "nouns::steps.7.body",
+    "value": "Os termos de família em coreano costumam variar de acordo com o gênero de quem fala. 오빠 (oppa) é como uma mulher chama o irmão mais velho, enquanto 형 (hyung) é como um homem chama o irmão mais velho. Da mesma forma, 언니 (unni) = irmã mais velha (quando quem fala é mulher) e 누나 (nuna) = irmã mais velha (quando quem fala é homem). Para os pais, 아버지 / 어머니 são os termos formais, enquanto 아빠 / 엄마 são os equivalentes informais."
+  },
+  {
+    "id": "nouns::steps.7.tip.label",
+    "value": "Formas de tratamento específicas por gênero"
+  },
+  {
+    "id": "nouns::steps.7.tip.text",
+    "value": "Diferente do português, o coreano não tem uma única palavra para \"irmão/irmã\" no sentido genérico. Usar 오빠/형 ou 언니/누나 depende inteiramente do seu próprio gênero e da idade relativa do irmão ou irmã. Isso é fundamental no vocabulário de família coreano."
+  },
+  {
+    "id": "nouns::steps.8.meaning",
+    "value": "pai (formal)"
+  },
+  {
+    "id": "nouns::steps.9.meaning",
+    "value": "mãe (formal)"
+  },
+  {
+    "id": "nouns::steps.10.title",
+    "value": "Substantivos de Lugar (장소 명사)"
+  },
+  {
+    "id": "nouns::steps.10.body",
+    "value": "Os substantivos de lugar em coreano seguem a mesma regra de não ter artigo que todos os outros substantivos. 학교 significa \"escola\", \"uma escola\" ou \"a escola\" — o contexto diz qual. Ao dar direções ou indicar localização, o coreano acrescenta a partícula 에 (em/para) depois do substantivo de lugar: 학교에 가요 (Eu vou para a escola). Os substantivos de lugar estão entre as palavras mais práticas para aprender logo no início."
+  },
+  {
+    "id": "nouns::steps.10.tip.label",
+    "value": "Partícula de local 에"
+  },
+  {
+    "id": "nouns::steps.10.tip.text",
+    "value": "Acrescente 에 a um substantivo de lugar para significar \"em\", \"no/na\" ou \"para\": 집에 (em casa), 학교에 (para a escola), 식당에 (no restaurante). 에서 significa \"de\" ou \"em (fazendo algo)\": 학교에서 공부해요 (Eu estudo na escola)."
+  },
+  {
+    "id": "nouns::steps.11.meaning",
+    "value": "casa / lar"
+  },
+  {
+    "id": "nouns::steps.12.meaning",
+    "value": "escola"
+  },
+  {
+    "id": "nouns::steps.13.meaning",
+    "value": "restaurante / refeitório"
+  },
+  {
+    "id": "nouns::steps.14.meaning",
+    "value": "hospital / clínica"
+  },
+  {
+    "id": "nouns::steps.15.prompt",
+    "value": "Qual palavra significa \"escola\"?"
+  },
+  {
+    "id": "nouns::steps.16.title",
+    "value": "Substantivos de Tempo (시간 명사)"
+  },
+  {
+    "id": "nouns::steps.16.body",
+    "value": "Os substantivos de tempo em coreano funcionam de forma independente — não precisam de conjugação. Basta dizer a palavra de tempo no início da frase: 오늘 가요 (Eu vou hoje), 내일 만나요 (Vamos nos encontrar amanhã). As expressões de tempo em coreano usam números sino-coreanos para as horas e números coreanos nativos para os minutos. As palavras de tempo mais essenciais são 오늘 (hoje), 내일 (amanhã), 어제 (ontem) e 지금 (agora)."
+  },
+  {
+    "id": "nouns::steps.16.tip.label",
+    "value": "Palavras de tempo no início da frase"
+  },
+  {
+    "id": "nouns::steps.16.tip.text",
+    "value": "O coreano é bem flexível quanto à ordem das palavras, mas as expressões de tempo geralmente vêm no início da frase — antes do sujeito ou logo depois dele. \"오늘 학교에 가요\" e \"학교에 오늘 가요\" estão ambas corretas, embora a primeira seja mais natural."
+  },
+  {
+    "id": "nouns::steps.17.meaning",
+    "value": "hoje"
+  },
+  {
+    "id": "nouns::steps.18.prompt",
+    "value": "Qual palavra significa \"hoje\"?"
+  },
+  {
+    "id": "nouns::steps.19.title",
+    "value": "Substantivos de Objetos (사물 명사)"
+  },
+  {
+    "id": "nouns::steps.19.body",
+    "value": "Objetos do dia a dia estão entre as palavras coreanas mais úteis desde o início. O coreano tem tanto palavras coreanas nativas quanto palavras sino-coreanas (de origem chinesa) para objetos, e em muitos casos se usa o Konglish (empréstimos do inglês): 커피 (café), 핸드폰 (celular). Quando o objeto é o receptor direto de um verbo, acrescente 을/를 depois do substantivo: 책을 읽어요 (Eu leio um livro). Essa é a partícula que marca o objeto."
+  },
+  {
+    "id": "nouns::steps.19.tip.label",
+    "value": "Partícula de objeto 을/를"
+  },
+  {
+    "id": "nouns::steps.19.tip.text",
+    "value": "Use 을 depois de um substantivo terminado em consoante: 책을. Use 를 depois de um substantivo terminado em vogal: 가방을. Na fala informal, essa partícula costuma ser omitida completamente."
+  },
+  {
+    "id": "nouns::steps.20.meaning",
+    "value": "livro"
+  },
+  {
+    "id": "nouns::steps.21.meaning",
+    "value": "bolsa / mochila"
+  },
+  {
+    "id": "nouns::steps.22.meaning",
+    "value": "dinheiro"
+  },
+  {
+    "id": "nouns::steps.23.prompt",
+    "value": "Qual palavra significa \"dinheiro\"?"
+  },
+  {
+    "id": "nouns::steps.24.title",
+    "value": "Contadores Coreanos (수사)"
+  },
+  {
+    "id": "nouns::steps.24.body",
+    "value": "O coreano usa palavras de contagem chamadas contadores (수사) que se juntam aos números ao contar coisas específicas. O contador 개 é usado para objetos em geral: 한 개 (uma coisa), 세 개 (três coisas). 명 é usado para contar pessoas: 두 명 (duas pessoas). 잔 é usado para xícaras/copos: 한 잔 (uma xícara). O padrão é: número + contador, colocado logo antes ou depois do substantivo. Os números coreanos usados com contadores são do conjunto nativo coreano: 하나(1), 둘(2), 셋(3), 넷(4), 다섯(5)."
+  },
+  {
+    "id": "nouns::steps.24.tip.label",
+    "value": "Números nativos com contadores"
+  },
+  {
+    "id": "nouns::steps.24.tip.text",
+    "value": "Ao combinar números coreanos nativos com contadores, o número muda ligeiramente: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네. Por isso se diz 한 개 (e não 하나 개), 두 명 (e não 둘 명)."
+  },
+  {
+    "id": "nouns::steps.25.meaning",
+    "value": "três pessoas (명 = contador de pessoas)"
+  },
+  {
+    "id": "nouns::steps.26.prompt",
+    "value": "Como se diz \"quatro pessoas\" em coreano?"
+  },
+  {
+    "id": "nouns::steps.27.title",
+    "value": "Marcador Possessivo 의"
+  },
+  {
+    "id": "nouns::steps.27.body",
+    "value": "O marcador possessivo 의 (ui, geralmente pronunciado \"에\") se junta a um substantivo para indicar posse, como o \"de\" possessivo do português. 저의 가방 = minha bolsa, 친구의 집 = a casa do amigo. Na fala do dia a dia, 의 costuma ser omitido: 제 가방 (minha bolsa, polido) ou 내 가방 (minha bolsa, informal). Os pronomes 저 e 나 têm formas possessivas especiais: 제 (polido, \"meu/minha\") e 내 (informal, \"meu/minha\")."
+  },
+  {
+    "id": "nouns::steps.27.tip.label",
+    "value": "제 vs 내"
+  },
+  {
+    "id": "nouns::steps.27.tip.text",
+    "value": "제 é o possessivo \"meu/minha\" polido/humilde (de 저 = eu, polido). 내 é o possessivo \"meu/minha\" informal (de 나 = eu, informal). Use 제 com desconhecidos ou pessoas mais velhas, e 내 com amigos próximos."
+  },
+  {
+    "id": "nouns::steps.28.meaning",
+    "value": "minha bolsa (polido)"
+  },
+  {
+    "id": "nouns::steps.29.meaning",
+    "value": "meu amigo / minha amiga (informal)"
+  },
+  {
+    "id": "nouns::steps.30.prompt",
+    "value": "Como se diz \"minha casa\" no coreano polido?"
+  },
+  {
+    "id": "nouns::steps.31.meaning",
+    "value": "casa do amigo / da amiga"
+  },
+  {
+    "id": "nouns::steps.32.prompt",
+    "value": "Qual frase diz corretamente \"o livro da criança\"?"
+  },
+  {
+    "id": "nouns::steps.33.title",
+    "value": "Substantivos Completos!"
+  },
+  {
+    "id": "nouns::steps.33.message",
+    "value": "Você viu os substantivos essenciais do coreano — pessoas, lugares, objetos, palavras de tempo, contadores e possessivos. Continue agora para Pronomes."
+  },
+  {
+    "id": "pronouns::stages.0.name",
+    "value": "Primeira e Segunda Pessoa"
+  },
+  {
+    "id": "pronouns::stages.1.name",
+    "value": "Terceira Pessoa e \"Nós\""
+  },
+  {
+    "id": "pronouns::stages.2.name",
+    "value": "Demonstrativos"
+  },
+  {
+    "id": "pronouns::stages.3.name",
+    "value": "Pronomes Interrogativos"
+  },
+  {
+    "id": "pronouns::steps.0.title",
+    "value": "Visão Geral dos Pronomes Coreanos"
+  },
+  {
+    "id": "pronouns::steps.0.body",
+    "value": "O coreano tem dois registros para os pronomes de primeira pessoa: polido e informal. 저 (jeo) é o \"eu\" polido, usado com desconhecidos, pessoas mais velhas e em contextos formais. 나 (na) é o \"eu\" informal, usado com amigos próximos e pessoas mais novas. É fundamental notar que o coreano frequentemente omite o pronome sujeito por completo quando o contexto é claro — 어디 가요? pode significar \"Para onde você está indo?\" sem nenhum pronome. Dominar quando NÃO usar um pronome é tão importante quanto conhecer os pronomes em si."
+  },
+  {
+    "id": "pronouns::steps.0.tip.label",
+    "value": "Língua que omite o sujeito (pro-drop)"
+  },
+  {
+    "id": "pronouns::steps.0.tip.text",
+    "value": "O coreano é uma língua pro-drop — quando o sujeito é óbvio pelo contexto ou foi mencionado recentemente, o pronome é omitido. Deixá-lo pode soar artificial ou até um pouco rude (direto demais). 저 괜찮아요 e 괜찮아요 significam ambos \"Estou bem\", mas a forma mais curta é mais natural."
+  },
+  {
+    "id": "pronouns::steps.1.meaning",
+    "value": "eu / mim (polido)"
+  },
+  {
+    "id": "pronouns::steps.2.meaning",
+    "value": "eu / mim (informal)"
+  },
+  {
+    "id": "pronouns::steps.3.meaning",
+    "value": "eu (sujeito, polido) — 저 + marcador de sujeito 가 → 제가"
+  },
+  {
+    "id": "pronouns::steps.4.meaning",
+    "value": "você (informal) — raramente usado com adultos"
+  },
+  {
+    "id": "pronouns::steps.5.prompt",
+    "value": "Você está conhecendo seu novo chefe pela primeira vez. Qual palavra para \"eu\" você usa?"
+  },
+  {
+    "id": "pronouns::steps.6.title",
+    "value": "Como Dizer \"Você\" em Coreano"
+  },
+  {
+    "id": "pronouns::steps.6.body",
+    "value": "O coreano evita o pronome direto \"você\" (당신) na maior parte da fala cotidiana — pode soar frio, confrontador ou formal demais, dependendo do contexto. Em vez disso, os coreanos usam o nome da pessoa, um título ou um termo de relação. Um professor seria chamado de 선생님 (professor), não de 당신. Um amigo seria chamado pelo nome. O pronome 당신 aparece em músicas, poesia e textos formais, mas é incomum na conversa do dia a dia."
+  },
+  {
+    "id": "pronouns::steps.6.tip.label",
+    "value": "Como se dirigir às pessoas sem usar 당신"
+  },
+  {
+    "id": "pronouns::steps.6.tip.text",
+    "value": "Use o nome da pessoa + 씨 para adultos que você não conhece bem: 김민준씨. Use o cargo dela: 사장님 (chefe), 과장님 (gerente). Use termos de relação: 언니, 오빠, 아저씨. Essas formas soam muito mais naturais do que 당신."
+  },
+  {
+    "id": "pronouns::steps.7.meaning",
+    "value": "eu (tópico, polido) — 저 + marcador de tópico 는 → 저는"
+  },
+  {
+    "id": "pronouns::steps.8.prompt",
+    "value": "Por que os coreanos raramente dizem 당신 na conversa?"
+  },
+  {
+    "id": "pronouns::steps.8.choices[0]",
+    "value": "É gramaticalmente incorreto"
+  },
+  {
+    "id": "pronouns::steps.8.choices[1]",
+    "value": "Pode soar frio ou confrontador"
+  },
+  {
+    "id": "pronouns::steps.8.choices[2]",
+    "value": "É reservado para falar com crianças"
+  },
+  {
+    "id": "pronouns::steps.8.choices[3]",
+    "value": "É uma gíria recente entre os jovens"
+  },
+  {
+    "id": "pronouns::steps.9.title",
+    "value": "Terceira Pessoa e \"Nós\" (그·그녀·우리)"
+  },
+  {
+    "id": "pronouns::steps.9.body",
+    "value": "O coreano raramente usa pronomes de terceira pessoa (ele/ela) na fala. Em vez disso, os coreanos dizem o nome da pessoa ou usam demonstrativos: 그 사람 (aquela pessoa), 이 사람 (esta pessoa). 그 (geu) e 그녀 (geunyeo) existem — ele/ela — mas aparecem principalmente na escrita e na tradução. 우리 (uri) significa \"nós\" ou \"nosso\". Curiosamente, os coreanos usam 우리 onde o português usa \"meu\": 우리 엄마 (minha mãe, literalmente \"nossa mãe\") — isso reflete um senso cultural coletivista de família compartilhada."
+  },
+  {
+    "id": "pronouns::steps.9.tip.label",
+    "value": "우리 = \"meu\" (para família e país)"
+  }
+]

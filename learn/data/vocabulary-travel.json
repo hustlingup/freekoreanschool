@@ -16,7 +16,8 @@
       "name_ja": "旅行",
       "name_th": "การเดินทาง",
       "name_vi": "Du lịch",
-      "name_zh_tw": "旅遊"
+      "name_zh_tw": "旅遊",
+      "name_pt_br": "Viagem"
     }
   ],
   "steps": [
@@ -84,6 +85,13 @@
         "icon": "✈️",
         "label": "Frasa perjalanan terpenting",
         "text": "어디예요? (Di mana itu?) + nama tempat apa pun adalah frasa perjalanan yang paling sering kamu pakai. Tambahkan 가주세요 (tolong antar saya ke sana) saat naik taksi untuk navigasi instan."
+      },
+      "title_pt_br": "Coreano para Viagem",
+      "body_pt_br": "Seja navegando pelo metrô de Seul, fazendo check-in em um hotel ou pedindo informações, essas palavras de viagem vão te acompanhar em toda a sua viagem pela Coreia. A Coreia é um país incrivelmente receptivo com visitantes — um pouco de coreano já faz muita diferença.",
+      "tip_pt_br": {
+        "icon": "✈️",
+        "label": "Frase de viagem essencial",
+        "text": "어디예요? (Onde fica?) + qualquer nome de lugar é a frase de viagem que você mais vai usar. Adicione 가주세요 (me leve até lá, por favor) em um táxi para se locomover na hora."
       }
     },
     {
@@ -106,7 +114,8 @@
       "meaning_fr": "Voyage",
       "meaning_id": "Perjalanan / wisata",
       "meaning_th": "การเดินทาง / การท่องเที่ยว",
-      "meaning_vi": "Du lịch / chuyến đi"
+      "meaning_vi": "Du lịch / chuyến đi",
+      "meaning_pt_br": "Viagem / passeio"
     },
     {
       "id": 3,
@@ -129,7 +138,8 @@
       "meaning_fr": "Avion — 비행 (vol) + 기 (machine)",
       "meaning_id": "Pesawat terbang — 비행 (penerbangan) + 기 (mesin)",
       "meaning_th": "เครื่องบิน — 비행 (การบิน) + 기 (เครื่อง)",
-      "meaning_vi": "Máy bay — 비행 (phi hành) + 기 (máy)"
+      "meaning_vi": "Máy bay — 비행 (phi hành) + 기 (máy)",
+      "meaning_pt_br": "Avião — 비행 (voo) + 기 (máquina)"
     },
     {
       "id": 4,
@@ -151,7 +161,8 @@
       "meaning_fr": "Hôtel",
       "meaning_id": "Hotel",
       "meaning_th": "โรงแรม",
-      "meaning_vi": "Khách sạn"
+      "meaning_vi": "Khách sạn",
+      "meaning_pt_br": "Hotel"
     },
     {
       "id": 5,
@@ -173,7 +184,8 @@
       "meaning_fr": "Passeport — le même 여 que dans 여행 (voyage) + 권 (titre/certificat)",
       "meaning_id": "Paspor — 여 yang sama seperti dalam 여행 (perjalanan) + 권 (surat/sertifikat)",
       "meaning_th": "หนังสือเดินทาง — 여 ตัวเดียวกับใน 여행 (การเดินทาง) + 권 (ใบ/เอกสารสิทธิ์)",
-      "meaning_vi": "Hộ chiếu — 여 giống như trong 여행 (du lịch) + 권 (giấy/chứng từ)"
+      "meaning_vi": "Hộ chiếu — 여 giống như trong 여행 (du lịch) + 권 (giấy/chứng từ)",
+      "meaning_pt_br": "Passaporte — o mesmo 여 de 여행 (viagem) + 권 (certificado/documento)"
     },
     {
       "id": 6,
@@ -194,7 +206,8 @@
       "meaning_fr": "Bagages / valises",
       "meaning_id": "Barang bawaan / koper",
       "meaning_th": "สัมภาระ / กระเป๋าเดินทาง",
-      "meaning_vi": "Hành lý"
+      "meaning_vi": "Hành lý",
+      "meaning_pt_br": "Bagagem / malas"
     },
     {
       "id": 7,
@@ -216,7 +229,8 @@
       "meaning_fr": "Réservation — 예약했어요 = j'ai une réservation",
       "meaning_id": "Reservasi / pemesanan — 예약했어요 = Saya sudah memesan",
       "meaning_th": "การจอง — 예약했어요 = ฉันจองไว้แล้ว",
-      "meaning_vi": "Đặt chỗ / đặt trước — 예약했어요 = Tôi đã đặt trước"
+      "meaning_vi": "Đặt chỗ / đặt trước — 예약했어요 = Tôi đã đặt trước",
+      "meaning_pt_br": "Reserva — 예약했어요 = Tenho uma reserva"
     },
     {
       "id": 8,
@@ -238,7 +252,8 @@
       "meaning_fr": "Entrée sur le territoire / immigration — 입국 심사 = contrôle d'immigration",
       "meaning_id": "Masuk negara / imigrasi — 입국 심사 = pemeriksaan imigrasi",
       "meaning_th": "การเข้าประเทศ — 입국 심사 = การตรวจคนเข้าเมือง",
-      "meaning_vi": "Nhập cảnh — 입국 심사 = kiểm tra nhập cảnh"
+      "meaning_vi": "Nhập cảnh — 입국 심사 = kiểm tra nhập cảnh",
+      "meaning_pt_br": "Entrada / imigração — 입국 심사 = controle de imigração"
     },
     {
       "id": 9,
@@ -260,7 +275,8 @@
       "meaning_fr": "Change de devises — 환전 어디서 해요? = Où puis-je changer de l'argent ?",
       "meaning_id": "Penukaran mata uang — 환전 어디서 해요? = Di mana saya bisa menukar uang?",
       "meaning_th": "การแลกเปลี่ยนเงินตรา — 환전 어디서 해요? = แลกเงินได้ที่ไหน?",
-      "meaning_vi": "Đổi tiền — 환전 어디서 해요? = Tôi có thể đổi tiền ở đâu?"
+      "meaning_vi": "Đổi tiền — 환전 어디서 해요? = Tôi có thể đổi tiền ở đâu?",
+      "meaning_pt_br": "Câmbio de moeda — 환전 어디서 해요? = Onde posso trocar dinheiro?"
     },
     {
       "id": 10,
@@ -282,7 +298,8 @@
       "meaning_fr": "Tourisme / visite touristique",
       "meaning_id": "Wisata / tamasya",
       "meaning_th": "การชมสถานที่ / การท่องเที่ยว",
-      "meaning_vi": "Tham quan / du lịch"
+      "meaning_vi": "Tham quan / du lịch",
+      "meaning_pt_br": "Passeio turístico / turismo"
     },
     {
       "id": 11,
@@ -304,7 +321,8 @@
       "meaning_fr": "Carte / plan",
       "meaning_id": "Peta",
       "meaning_th": "แผนที่",
-      "meaning_vi": "Bản đồ"
+      "meaning_vi": "Bản đồ",
+      "meaning_pt_br": "Mapa"
     },
     {
       "id": 12,
@@ -325,7 +343,8 @@
       "meaning_fr": "Chemin / route / rue — 길을 잃었어요 = je me suis perdu(e)",
       "meaning_id": "Jalan / rute — 길을 잃었어요 = Saya tersesat",
       "meaning_th": "ถนน / เส้นทาง / ทาง — 길을 잃었어요 = ฉันหลงทาง",
-      "meaning_vi": "Đường / lối đi — 길을 잃었어요 = Tôi bị lạc đường"
+      "meaning_vi": "Đường / lối đi — 길을 잃었어요 = Tôi bị lạc đường",
+      "meaning_pt_br": "Estrada / caminho / via — 길을 잃었어요 = Estou perdido(a)"
     },
     {
       "id": 13,
@@ -348,7 +367,8 @@
       "meaning_fr": "Droite / côté droit",
       "meaning_id": "Sebelah kanan / arah kanan",
       "meaning_th": "ด้านขวา / ทางขวา",
-      "meaning_vi": "Bên phải / hướng bên phải"
+      "meaning_vi": "Bên phải / hướng bên phải",
+      "meaning_pt_br": "Lado direito / direção direita"
     },
     {
       "id": 14,
@@ -370,7 +390,8 @@
       "meaning_fr": "Gauche / côté gauche",
       "meaning_id": "Sebelah kiri / arah kiri",
       "meaning_th": "ด้านซ้าย / ทางซ้าย",
-      "meaning_vi": "Bên trái / hướng bên trái"
+      "meaning_vi": "Bên trái / hướng bên trái",
+      "meaning_pt_br": "Lado esquerdo / direção esquerda"
     },
     {
       "id": 15,
@@ -392,7 +413,8 @@
       "meaning_fr": "Aller tout droit",
       "meaning_id": "Jalan lurus ke depan",
       "meaning_th": "ตรงไป / ไปตรง ๆ",
-      "meaning_vi": "Đi thẳng"
+      "meaning_vi": "Đi thẳng",
+      "meaning_pt_br": "Siga em frente"
     },
     {
       "id": 16,
@@ -415,7 +437,8 @@
       "meaning_fr": "Site touristique / lieu de visite",
       "meaning_id": "Objek wisata / tempat tamasya",
       "meaning_th": "สถานที่ท่องเที่ยว / แหล่งท่องเที่ยว",
-      "meaning_vi": "Điểm du lịch / địa điểm tham quan"
+      "meaning_vi": "Điểm du lịch / địa điểm tham quan",
+      "meaning_pt_br": "Atração turística / ponto turístico"
     },
     {
       "id": 17,
@@ -436,7 +459,8 @@
       "prompt_fr": "Quel mot signifie « passeport » ?",
       "prompt_id": "Kata mana yang berarti 'paspor'?",
       "prompt_th": "คำใดหมายความว่า \"หนังสือเดินทาง\"?",
-      "prompt_vi": "Từ nào có nghĩa là 'hộ chiếu'?"
+      "prompt_vi": "Từ nào có nghĩa là 'hộ chiếu'?",
+      "prompt_pt_br": "Qual palavra significa \"passaporte\"?"
     },
     {
       "id": 18,
@@ -457,7 +481,8 @@
       "prompt_fr": "Vous êtes perdu. Quelle phrase dites-vous ?",
       "prompt_id": "Kamu tersesat. Kalimat mana yang kamu ucapkan?",
       "prompt_th": "คุณหลงทาง ควรพูดประโยคใด?",
-      "prompt_vi": "Bạn bị lạc đường. Bạn nói câu nào?"
+      "prompt_vi": "Bạn bị lạc đường. Bạn nói câu nào?",
+      "prompt_pt_br": "Você está perdido(a). Qual frase você diz?"
     },
     {
       "id": 19,
@@ -478,7 +503,8 @@
       "prompt_fr": "Le chauffeur de taxi doit tourner à droite. Quel mot dites-vous ?",
       "prompt_id": "Sopir taksi harus belok kanan. Kata mana yang kamu ucapkan?",
       "prompt_th": "คนขับแท็กซี่ต้องเลี้ยวขวา คุณจะพูดคำใด?",
-      "prompt_vi": "Tài xế taxi cần rẽ phải. Bạn nói từ nào?"
+      "prompt_vi": "Tài xế taxi cần rẽ phải. Bạn nói từ nào?",
+      "prompt_pt_br": "O taxista precisa virar à direita. Qual palavra você diz?"
     },
     {
       "id": 20,
@@ -503,7 +529,9 @@
       "message_fr": "Faites vos valises ! Avec ces mots de voyage, vous êtes prêt à explorer la Corée. N'oubliez pas : souriez, utilisez ce que vous savez, et les Coréens feront bien plus que la moitié du chemin vers vous.",
       "message_id": "Siapkan tasmu! Dengan kosakata perjalanan ini, kamu siap menjelajahi Korea. Ingat: tersenyumlah, gunakan apa yang sudah kamu kuasai, dan orang Korea pasti akan menyambutmu dengan hangat.",
       "message_th": "เตรียมกระเป๋าได้เลย! ด้วยคำศัพท์การเดินทางเหล่านี้ คุณพร้อมออกไปสำรวจเกาหลีแล้ว จำไว้ว่า ยิ้มเข้าไว้ ใช้คำที่คุณรู้ แล้วคนเกาหลีจะเข้ามาพบคุณครึ่งทางและมากกว่านั้นแน่นอน",
-      "message_vi": "Xếp hành lý thôi! Với những từ vựng du lịch này, bạn đã sẵn sàng khám phá Hàn Quốc. Hãy nhớ: mỉm cười, dùng những gì bạn đã học, và người Hàn Quốc sẽ nhiệt tình đáp lại bạn hơn cả mong đợi."
+      "message_vi": "Xếp hành lý thôi! Với những từ vựng du lịch này, bạn đã sẵn sàng khám phá Hàn Quốc. Hãy nhớ: mỉm cười, dùng những gì bạn đã học, và người Hàn Quốc sẽ nhiệt tình đáp lại bạn hơn cả mong đợi.",
+      "title_pt_br": "Viagem Concluída!",
+      "message_pt_br": "Arrume as malas! Com essas palavras de viagem, você está pronto(a) para explorar a Coreia. Lembre-se: sorria, use o que você sabe, e os coreanos vão fazer questão de te ajudar."
     }
   ]
 }

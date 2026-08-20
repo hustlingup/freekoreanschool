@@ -16,7 +16,8 @@
       "name_ja": "買い物",
       "name_th": "การช้อปปิ้ง",
       "name_vi": "Mua sắm",
-      "name_zh_tw": "購物"
+      "name_zh_tw": "購物",
+      "name_pt_br": "Compras"
     }
   ],
   "steps": [
@@ -84,6 +85,13 @@
         "icon": "🛍️",
         "label": "Frasa belanja penting",
         "text": "얼마예요? (Berapa harganya?) — pertanyaan belanja paling berguna. 깎아 주세요 (Tolong berikan diskon) — berhasil di pasar tradisional!"
+      },
+      "title_pt_br": "Compras na Coreia",
+      "body_pt_br": "A Coreia é um paraíso das compras — de mercados tradicionais enormes a shoppings de última geração. Seja você estiver caçando produtos de skincare, moda ou eletrônicos, essas palavras vão te dar suporte em toda interação de compra.",
+      "tip_pt_br": {
+        "icon": "🛍️",
+        "label": "Frases-chave para compras",
+        "text": "얼마예요? (Quanto custa?) — a pergunta mais útil na hora de comprar. 깎아 주세요 (Me dê um desconto, por favor) — funciona nos mercados tradicionais!"
       }
     },
     {
@@ -106,7 +114,8 @@
       "meaning_fr": "Shopping — de l'anglais « shopping »",
       "meaning_id": "Belanja — dari bahasa Inggris \"shopping\"",
       "meaning_th": "การช้อปปิ้ง — มาจากภาษาอังกฤษ \"shopping\"",
-      "meaning_vi": "Mua sắm — từ tiếng Anh \"shopping\""
+      "meaning_vi": "Mua sắm — từ tiếng Anh \"shopping\"",
+      "meaning_pt_br": "Compras — do inglês \"shopping\""
     },
     {
       "id": 3,
@@ -128,7 +137,8 @@
       "meaning_fr": "Prix — 가격이 얼마예요? = Quel est le prix ?",
       "meaning_id": "Harga — 가격이 얼마예요? = Berapa harganya?",
       "meaning_th": "ราคา — 가격이 얼마예요? = ราคาเท่าไหร่?",
-      "meaning_vi": "Giá cả — 가격이 얼마예요? = Giá bao nhiêu?"
+      "meaning_vi": "Giá cả — 가격이 얼마예요? = Giá bao nhiêu?",
+      "meaning_pt_br": "Preço — 가격이 얼마예요? = Qual é o preço?"
     },
     {
       "id": 4,
@@ -150,7 +160,8 @@
       "meaning_fr": "Réduction — 할인 있어요? = Y a-t-il une réduction ?",
       "meaning_id": "Diskon — 할인 있어요? = Apakah ada diskon?",
       "meaning_th": "ส่วนลด — 할인 있어요? = มีส่วนลดไหม?",
-      "meaning_vi": "Giảm giá — 할인 있어요? = Có giảm giá không?"
+      "meaning_vi": "Giảm giá — 할인 있어요? = Có giảm giá không?",
+      "meaning_pt_br": "Desconto — 할인 있어요? = Tem desconto?"
     },
     {
       "id": 5,
@@ -173,7 +184,8 @@
       "meaning_fr": "Reçu / ticket de caisse",
       "meaning_id": "Struk / bukti pembayaran",
       "meaning_th": "ใบเสร็จรับเงิน",
-      "meaning_vi": "Hóa đơn / biên lai"
+      "meaning_vi": "Hóa đơn / biên lai",
+      "meaning_pt_br": "Recibo / comprovante"
     },
     {
       "id": 6,
@@ -195,7 +207,8 @@
       "meaning_fr": "Carte — carte de crédit ou de débit ; la Corée est un pays où l'on paie très facilement par carte",
       "meaning_id": "Kartu — kartu kredit/debit; Korea sangat ramah terhadap pembayaran kartu",
       "meaning_th": "บัตร — บัตรเครดิต/บัตรเดบิต; เกาหลีเป็นสังคมที่ใช้บัตรได้สะดวกมาก",
-      "meaning_vi": "Thẻ — thẻ tín dụng/thẻ ghi nợ; Hàn Quốc rất thuận tiện cho việc thanh toán bằng thẻ"
+      "meaning_vi": "Thẻ — thẻ tín dụng/thẻ ghi nợ; Hàn Quốc rất thuận tiện cho việc thanh toán bằng thẻ",
+      "meaning_pt_br": "Cartão — cartão de crédito/débito; a Coreia é extremamente amigável ao uso de cartão"
     },
     {
       "id": 7,
@@ -217,7 +230,8 @@
       "meaning_fr": "Espèces — 현금으로 낼게요 = je paierai en espèces",
       "meaning_id": "Uang tunai — 현금으로 낼게요 = Saya akan bayar tunai",
       "meaning_th": "เงินสด — 현금으로 낼게요 = ฉันจะจ่ายเป็นเงินสด",
-      "meaning_vi": "Tiền mặt — 현금으로 낼게요 = Tôi sẽ trả bằng tiền mặt"
+      "meaning_vi": "Tiền mặt — 현금으로 낼게요 = Tôi sẽ trả bằng tiền mặt",
+      "meaning_pt_br": "Dinheiro — 현금으로 낼게요 = Vou pagar em dinheiro"
     },
     {
       "id": 8,
@@ -239,7 +253,8 @@
       "meaning_fr": "Remboursement — 환불 돼요? = Puis-je être remboursé ?",
       "meaning_id": "Pengembalian uang — 환불 돼요? = Apakah uangnya bisa dikembalikan?",
       "meaning_th": "การคืนเงิน — 환불 돼요? = ขอคืนเงินได้ไหม?",
-      "meaning_vi": "Hoàn tiền — 환불 돼요? = Tôi có được hoàn tiền không?"
+      "meaning_vi": "Hoàn tiền — 환불 돼요? = Tôi có được hoàn tiền không?",
+      "meaning_pt_br": "Reembolso — 환불 돼요? = Posso pedir reembolso?"
     },
     {
       "id": 9,
@@ -261,7 +276,8 @@
       "meaning_fr": "Échange (d'un article) — 교환 돼요? = Puis-je l'échanger ?",
       "meaning_id": "Penukaran (barang) — 교환 돼요? = Apakah ini bisa ditukar?",
       "meaning_th": "การเปลี่ยนสินค้า — 교환 돼요? = เปลี่ยนสินค้าได้ไหม?",
-      "meaning_vi": "Đổi hàng — 교환 돼요? = Tôi đổi cái này được không?"
+      "meaning_vi": "Đổi hàng — 교환 돼요? = Tôi đổi cái này được không?",
+      "meaning_pt_br": "Troca (de produtos) — 교환 돼요? = Posso trocar isso?"
     },
     {
       "id": 10,
@@ -284,7 +300,8 @@
       "meaning_fr": "Taille — de l'anglais « size »",
       "meaning_id": "Ukuran — dari bahasa Inggris \"size\"",
       "meaning_th": "ไซซ์ / ขนาด — มาจากภาษาอังกฤษ \"size\"",
-      "meaning_vi": "Cỡ / kích cỡ — từ tiếng Anh \"size\""
+      "meaning_vi": "Cỡ / kích cỡ — từ tiếng Anh \"size\"",
+      "meaning_pt_br": "Tamanho — do inglês \"size\""
     },
     {
       "id": 11,
@@ -306,7 +323,8 @@
       "meaning_fr": "Marché traditionnel — Namdaemun et Dongdaemun en sont des exemples célèbres",
       "meaning_id": "Pasar tradisional — Namdaemun dan Dongdaemun adalah contoh yang terkenal",
       "meaning_th": "ตลาดแบบดั้งเดิม — ตลาดนัมแดมุนและทงแดมุนเป็นตัวอย่างที่มีชื่อเสียง",
-      "meaning_vi": "Chợ truyền thống — Namdaemun và Dongdaemun là những ví dụ nổi tiếng"
+      "meaning_vi": "Chợ truyền thống — Namdaemun và Dongdaemun là những ví dụ nổi tiếng",
+      "meaning_pt_br": "Mercado tradicional — Namdaemun e Dongdaemun são exemplos famosos"
     },
     {
       "id": 12,
@@ -329,7 +347,8 @@
       "meaning_fr": "Grand magasin — littéralement « magasin aux cent marchandises »",
       "meaning_id": "Pusat perbelanjaan — secara harfiah \"toko seratus barang\"",
       "meaning_th": "ห้างสรรพสินค้า — ตามตัวอักษรแปลว่า \"ร้านสินค้าร้อยอย่าง\"",
-      "meaning_vi": "Cửa hàng bách hóa — nghĩa đen là \"cửa hàng trăm loại hàng\""
+      "meaning_vi": "Cửa hàng bách hóa — nghĩa đen là \"cửa hàng trăm loại hàng\"",
+      "meaning_pt_br": "Loja de departamentos — literalmente \"loja de cem produtos\""
     },
     {
       "id": 13,
@@ -352,7 +371,8 @@
       "meaning_fr": "Boutique hors taxes — très répandue dans les aéroports et les zones touristiques de Corée",
       "meaning_id": "Toko bebas bea — banyak terdapat di bandara dan kawasan wisata Korea",
       "meaning_th": "ร้านค้าปลอดภาษี — มีอยู่มากมายในสนามบินและย่านท่องเที่ยวของเกาหลี",
-      "meaning_vi": "Cửa hàng miễn thuế — rất phổ biến ở sân bay và các khu du lịch Hàn Quốc"
+      "meaning_vi": "Cửa hàng miễn thuế — rất phổ biến ở sân bay và các khu du lịch Hàn Quốc",
+      "meaning_pt_br": "Loja duty-free — muito comum em aeroportos e áreas turísticas da Coreia"
     },
     {
       "id": 14,
@@ -374,7 +394,8 @@
       "meaning_fr": "Article / produit / chose",
       "meaning_id": "Barang / produk / benda",
       "meaning_th": "สิ่งของ / สินค้า / ข้าวของ",
-      "meaning_vi": "Đồ vật / hàng hóa / món đồ"
+      "meaning_vi": "Đồ vật / hàng hóa / món đồ",
+      "meaning_pt_br": "Item / produto / coisa"
     },
     {
       "id": 15,
@@ -396,7 +417,8 @@
       "meaning_fr": "Emballage / paquet-cadeau — 포장해 주세요 = Emballez-le pour offrir, s'il vous plaît",
       "meaning_id": "Pembungkusan / bungkus kado — 포장해 주세요 = Tolong bungkuskan sebagai kado",
       "meaning_th": "การห่อ / การห่อของขวัญ — 포장해 주세요 = ช่วยห่อให้ด้วย",
-      "meaning_vi": "Đóng gói / gói quà — 포장해 주세요 = Xin hãy gói quà giúp tôi"
+      "meaning_vi": "Đóng gói / gói quà — 포장해 주세요 = Xin hãy gói quà giúp tôi",
+      "meaning_pt_br": "Embalagem / embrulho para presente — 포장해 주세요 = Por favor, embrulhe para presente"
     },
     {
       "id": 16,
@@ -418,7 +440,8 @@
       "meaning_fr": "Soldes / promotion — de l'anglais « sale » ; on dit aussi 할인 행사",
       "meaning_id": "Obral — dari bahasa Inggris \"sale\"; juga disebut 할인 행사",
       "meaning_th": "การลดราคา — มาจากภาษาอังกฤษ \"sale\"; เรียกอีกอย่างว่า 할인 행사",
-      "meaning_vi": "Khuyến mãi / giảm giá — từ tiếng Anh \"sale\"; cũng nói 할인 행사"
+      "meaning_vi": "Khuyến mãi / giảm giá — từ tiếng Anh \"sale\"; cũng nói 할인 행사",
+      "meaning_pt_br": "Promoção — do inglês \"sale\"; também 할인 행사"
     },
     {
       "id": 17,
@@ -439,7 +462,8 @@
       "prompt_fr": "Vous voulez connaître le prix. Que dites-vous ?",
       "prompt_id": "Kamu ingin tahu harganya. Apa yang kamu katakan?",
       "prompt_th": "คุณต้องการทราบราคา ต้องพูดว่าอย่างไร?",
-      "prompt_vi": "Bạn muốn biết giá. Bạn nói gì?"
+      "prompt_vi": "Bạn muốn biết giá. Bạn nói gì?",
+      "prompt_pt_br": "Você quer saber o preço. O que você diz?"
     },
     {
       "id": 18,
@@ -508,6 +532,13 @@
         "Cửa hàng trăm loại hàng hóa",
         "Cửa hàng trăm câu chuyện",
         "Cửa hàng tiện lợi"
+      ],
+      "prompt_pt_br": "백화점 significa literalmente...",
+      "choices_pt_br": [
+        "Loja de flores brancas",
+        "Loja de cem produtos",
+        "Loja de cem histórias",
+        "Loja de conveniência"
       ]
     },
     {
@@ -529,7 +560,8 @@
       "prompt_fr": "Vous voulez être remboursé. Que dites-vous ?",
       "prompt_id": "Kamu ingin uangmu dikembalikan. Apa yang kamu katakan?",
       "prompt_th": "คุณต้องการขอคืนเงิน ต้องพูดว่าอย่างไร?",
-      "prompt_vi": "Bạn muốn hoàn tiền. Bạn nói gì?"
+      "prompt_vi": "Bạn muốn hoàn tiền. Bạn nói gì?",
+      "prompt_pt_br": "Você quer um reembolso. O que você diz?"
     },
     {
       "id": 20,
@@ -550,7 +582,8 @@
       "prompt_fr": "Lequel de ces lieux est un marché traditionnel coréen ?",
       "prompt_id": "Manakah di antara berikut ini yang merupakan pasar tradisional Korea?",
       "prompt_th": "ข้อใดคือตลาดดั้งเดิมของเกาหลี?",
-      "prompt_vi": "Cái nào sau đây là chợ truyền thống của Hàn Quốc?"
+      "prompt_vi": "Cái nào sau đây là chợ truyền thống của Hàn Quốc?",
+      "prompt_pt_br": "Qual destes é um mercado tradicional coreano?"
     },
     {
       "id": 21,
@@ -575,7 +608,9 @@
       "message_fr": "쇼핑 실력이 늘었어요 ! (Vos talents d'acheteur se sont améliorés !) Vous voilà armé pour toute aventure shopping en Corée — du marché animé de Namdaemun au rutilant Lotte World Mall.",
       "message_id": "쇼핑 실력이 늘었어요! (Kemampuan belanjamu meningkat!) Kini kamu siap menghadapi petualangan belanja apa pun di Korea — dari Pasar Namdaemun yang ramai hingga Lotte World Mall yang gemerlap.",
       "message_th": "쇼핑 실력이 늘었어요! (ทักษะการช้อปปิ้งของคุณพัฒนาขึ้นแล้ว!) ตอนนี้คุณพร้อมสำหรับการผจญภัยช้อปปิ้งในเกาหลีทุกรูปแบบ — ตั้งแต่ตลาดนัมแดมุนที่คึกคัก ไปจนถึงล็อตเต้เวิลด์มอลล์อันหรูหรา",
-      "message_vi": "쇼핑 실력이 늘었어요! (Kỹ năng mua sắm của bạn đã tiến bộ!) Giờ bạn đã sẵn sàng cho mọi chuyến mua sắm ở Hàn Quốc — từ chợ Namdaemun nhộn nhịp đến Lotte World Mall lộng lẫy."
+      "message_vi": "쇼핑 실력이 늘었어요! (Kỹ năng mua sắm của bạn đã tiến bộ!) Giờ bạn đã sẵn sàng cho mọi chuyến mua sắm ở Hàn Quốc — từ chợ Namdaemun nhộn nhịp đến Lotte World Mall lộng lẫy.",
+      "title_pt_br": "Compras Concluídas!",
+      "message_pt_br": "쇼핑 실력이 늘었어요! (Suas habilidades de compra melhoraram!) Agora você está preparado para qualquer aventura de compras na Coreia — do agitado Mercado Namdaemun ao luxuoso Lotte World Mall."
     }
   ]
 }

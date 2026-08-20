@@ -16,7 +16,8 @@
       "name_ja": "動詞",
       "name_th": "คำกริยา",
       "name_vi": "Động từ",
-      "name_zh_tw": "動詞"
+      "name_zh_tw": "動詞",
+      "name_pt_br": "Verbos"
     }
   ],
   "steps": [
@@ -84,6 +85,13 @@
         "icon": "🔤",
         "label": "Aturan konjugasi kata kerja",
         "text": "Jika suku kata terakhir bervokal ㅏ atau ㅗ → gunakan -아요 (mis. 가다 → 가요). Vokal lainnya → gunakan -어요 (mis. 먹다 → 먹어요). Kata kerja berakhiran 하다 → 해요 (mis. 공부하다 → 공부해요)."
+      },
+      "title_pt_br": "Verbos Coreanos",
+      "body_pt_br": "Os verbos coreanos (동사) sempre vêm no final da frase. A forma de dicionário termina em -다. Para formar o presente educado, troque -다 por -아요 ou -어요 dependendo da vogal da última sílaba. Exemplo: 먹다 (comer) → 먹어요 (eu como / come).",
+      "tip_pt_br": {
+        "icon": "🔤",
+        "label": "Regra de conjugação verbal",
+        "text": "Se a última sílaba tiver a vogal ㅏ ou ㅗ → use -아요 (ex.: 가다 → 가요). Todas as outras vogais → use -어요 (ex.: 먹다 → 먹어요). Verbos terminados em 하다 → 해요 (ex.: 공부하다 → 공부해요)."
       }
     },
     {
@@ -106,7 +114,8 @@
       "meaning_fr": "Aller — 가요 (présent de politesse)",
       "meaning_id": "Pergi — 가요 (bentuk sopan kala kini)",
       "meaning_th": "ไป — 가요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Đi — 가요 (hiện tại, lịch sự)"
+      "meaning_vi": "Đi — 가요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Ir — 가요 (presente educado)"
     },
     {
       "id": 3,
@@ -128,7 +137,8 @@
       "meaning_fr": "Venir — 와요 (présent de politesse)",
       "meaning_id": "Datang — 와요 (bentuk sopan kala kini)",
       "meaning_th": "มา — 와요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Đến — 와요 (hiện tại, lịch sự)"
+      "meaning_vi": "Đến — 와요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Vir — 와요 (presente educado)"
     },
     {
       "id": 4,
@@ -150,7 +160,8 @@
       "meaning_fr": "Manger — 먹어요 (présent de politesse)",
       "meaning_id": "Makan — 먹어요 (bentuk sopan kala kini)",
       "meaning_th": "กิน — 먹어요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Ăn — 먹어요 (hiện tại, lịch sự)"
+      "meaning_vi": "Ăn — 먹어요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Comer — 먹어요 (presente educado)"
     },
     {
       "id": 5,
@@ -173,7 +184,8 @@
       "meaning_fr": "Boire — 마셔요 (présent de politesse)",
       "meaning_id": "Minum — 마셔요 (bentuk sopan kala kini)",
       "meaning_th": "ดื่ม — 마셔요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Uống — 마셔요 (hiện tại, lịch sự)"
+      "meaning_vi": "Uống — 마셔요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Beber — 마셔요 (presente educado)"
     },
     {
       "id": 6,
@@ -195,7 +207,8 @@
       "meaning_fr": "Voir / regarder — 봐요 (présent de politesse)",
       "meaning_id": "Melihat / menonton — 봐요 (bentuk sopan kala kini)",
       "meaning_th": "ดู / มอง — 봐요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Nhìn / xem — 봐요 (hiện tại, lịch sự)"
+      "meaning_vi": "Nhìn / xem — 봐요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Ver / assistir — 봐요 (presente educado)"
     },
     {
       "id": 7,
@@ -217,7 +230,8 @@
       "meaning_fr": "Écouter / entendre — 들어요 (présent de politesse, verbe irrégulier)",
       "meaning_id": "Mendengar / mendengarkan — 들어요 (bentuk sopan kala kini, tidak beraturan)",
       "meaning_th": "ฟัง / ได้ยิน — 들어요 (รูปสุภาพปัจจุบัน, ผันแบบไม่ปกติ)",
-      "meaning_vi": "Nghe — 들어요 (hiện tại, lịch sự, biến đổi bất quy tắc)"
+      "meaning_vi": "Nghe — 들어요 (hiện tại, lịch sự, biến đổi bất quy tắc)",
+      "meaning_pt_br": "Ouvir / escutar — 들어요 (presente educado, irregular)"
     },
     {
       "id": 8,
@@ -240,7 +254,8 @@
       "meaning_fr": "Parler / dire — 말해요 (présent de politesse)",
       "meaning_id": "Berbicara / mengatakan — 말해요 (bentuk sopan kala kini)",
       "meaning_th": "พูด / บอก — 말해요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Nói / phát biểu — 말해요 (hiện tại, lịch sự)"
+      "meaning_vi": "Nói / phát biểu — 말해요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Falar / dizer — 말해요 (presente educado)"
     },
     {
       "id": 9,
@@ -262,7 +277,8 @@
       "meaning_fr": "Lire — 읽어요 (présent de politesse)",
       "meaning_id": "Membaca — 읽어요 (bentuk sopan kala kini)",
       "meaning_th": "อ่าน — 읽어요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Đọc — 읽어요 (hiện tại, lịch sự)"
+      "meaning_vi": "Đọc — 읽어요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Ler — 읽어요 (presente educado)"
     },
     {
       "id": 10,
@@ -284,7 +300,8 @@
       "meaning_fr": "Écrire / utiliser — 써요 (présent de politesse)",
       "meaning_id": "Menulis / memakai — 써요 (bentuk sopan kala kini)",
       "meaning_th": "เขียน / ใช้ — 써요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Viết / dùng — 써요 (hiện tại, lịch sự)"
+      "meaning_vi": "Viết / dùng — 써요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Escrever / usar — 써요 (presente educado)"
     },
     {
       "id": 11,
@@ -306,7 +323,8 @@
       "meaning_fr": "Acheter — 사요 (présent de politesse)",
       "meaning_id": "Membeli — 사요 (bentuk sopan kala kini)",
       "meaning_th": "ซื้อ — 사요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Mua — 사요 (hiện tại, lịch sự)"
+      "meaning_vi": "Mua — 사요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Comprar — 사요 (presente educado)"
     },
     {
       "id": 12,
@@ -328,7 +346,8 @@
       "meaning_fr": "Vendre — 팔아요 (présent de politesse)",
       "meaning_id": "Menjual — 팔아요 (bentuk sopan kala kini)",
       "meaning_th": "ขาย — 팔아요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Bán — 팔아요 (hiện tại, lịch sự)"
+      "meaning_vi": "Bán — 팔아요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Vender — 팔아요 (presente educado)"
     },
     {
       "id": 13,
@@ -352,7 +371,8 @@
       "meaning_fr": "Étudier — 공부해요 (présent de politesse)",
       "meaning_id": "Belajar — 공부해요 (bentuk sopan kala kini)",
       "meaning_th": "เรียน / ศึกษา — 공부해요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Học tập — 공부해요 (hiện tại, lịch sự)"
+      "meaning_vi": "Học tập — 공부해요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Estudar — 공부해요 (presente educado)"
     },
     {
       "id": 14,
@@ -375,7 +395,8 @@
       "meaning_fr": "Travailler — 일해요 (présent de politesse)",
       "meaning_id": "Bekerja — 일해요 (bentuk sopan kala kini)",
       "meaning_th": "ทำงาน — 일해요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Làm việc — 일해요 (hiện tại, lịch sự)"
+      "meaning_vi": "Làm việc — 일해요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Trabalhar — 일해요 (presente educado)"
     },
     {
       "id": 15,
@@ -397,7 +418,8 @@
       "meaning_fr": "Dormir — 자요 (présent de politesse)",
       "meaning_id": "Tidur — 자요 (bentuk sopan kala kini)",
       "meaning_th": "นอนหลับ — 자요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Ngủ — 자요 (hiện tại, lịch sự)"
+      "meaning_vi": "Ngủ — 자요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Dormir — 자요 (presente educado)"
     },
     {
       "id": 16,
@@ -420,7 +442,8 @@
       "meaning_fr": "Rencontrer / retrouver — 만나요 (présent de politesse)",
       "meaning_id": "Bertemu — 만나요 (bentuk sopan kala kini)",
       "meaning_th": "พบ / เจอ — 만나요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Gặp / gặp gỡ — 만나요 (hiện tại, lịch sự)"
+      "meaning_vi": "Gặp / gặp gỡ — 만나요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Encontrar / conhecer — 만나요 (presente educado)"
     },
     {
       "id": 17,
@@ -444,7 +467,8 @@
       "meaning_fr": "Aimer, apprécier — 좋아해요 (présent de politesse)",
       "meaning_id": "Menyukai — 좋아해요 (bentuk sopan kala kini)",
       "meaning_th": "ชอบ — 좋아해요 (รูปสุภาพปัจจุบัน)",
-      "meaning_vi": "Thích — 좋아해요 (hiện tại, lịch sự)"
+      "meaning_vi": "Thích — 좋아해요 (hiện tại, lịch sự)",
+      "meaning_pt_br": "Gostar — 좋아해요 (presente educado)"
     },
     {
       "id": 18,
@@ -465,7 +489,8 @@
       "prompt_fr": "먹다 → le présent poli est...",
       "prompt_id": "먹다 → kala kini sopannya adalah...",
       "prompt_th": "먹다 → รูปปัจจุบันแบบสุภาพคือ...",
-      "prompt_vi": "먹다 → dạng hiện tại lịch sự là..."
+      "prompt_vi": "먹다 → dạng hiện tại lịch sự là...",
+      "prompt_pt_br": "먹다 → o presente educado é..."
     },
     {
       "id": 19,
@@ -486,7 +511,8 @@
       "prompt_fr": "Quel verbe signifie « étudier » ?",
       "prompt_id": "Kata kerja mana yang berarti 'belajar'?",
       "prompt_th": "คำกริยาใดแปลว่า “เรียน”?",
-      "prompt_vi": "Động từ nào có nghĩa là \"học\"?"
+      "prompt_vi": "Động từ nào có nghĩa là \"học\"?",
+      "prompt_pt_br": "Qual verbo significa \"estudar\"?"
     },
     {
       "id": 20,
@@ -507,7 +533,8 @@
       "prompt_fr": "일하다 → le présent poli est...",
       "prompt_id": "일하다 → kala kini sopannya adalah...",
       "prompt_th": "일하다 → รูปปัจจุบันแบบสุภาพคือ...",
-      "prompt_vi": "일하다 → dạng hiện tại lịch sự là..."
+      "prompt_vi": "일하다 → dạng hiện tại lịch sự là...",
+      "prompt_pt_br": "일하다 → o presente educado é..."
     },
     {
       "id": 21,
@@ -528,7 +555,8 @@
       "prompt_fr": "가다 → le présent poli est...",
       "prompt_id": "가다 → kala kini sopannya adalah...",
       "prompt_th": "가다 → รูปปัจจุบันแบบสุภาพคือ...",
-      "prompt_vi": "가다 → dạng hiện tại lịch sự là..."
+      "prompt_vi": "가다 → dạng hiện tại lịch sự là...",
+      "prompt_pt_br": "가다 → o presente educado é..."
     },
     {
       "id": 22,
@@ -553,7 +581,9 @@
       "message_fr": "완벽해요 ! Vous maîtrisez les verbes coréens essentiels ainsi que le schéma de conjugaison. Les verbes sont le moteur de chaque phrase — maintenant que vous connaissez la règle, chaque nouveau verbe que vous apprenez est immédiatement utilisable !",
       "message_id": "완벽해요! Kamu sudah menguasai kata kerja penting bahasa Korea dan pola konjugasinya. Kata kerja adalah mesin penggerak setiap kalimat — setelah kamu tahu aturannya, setiap kata kerja baru yang kamu pelajari langsung bisa dipakai!",
       "message_th": "완벽해요! คุณเชี่ยวชาญคำกริยาพื้นฐานของภาษาเกาหลีและรูปแบบการผันแล้ว คำกริยาคือเครื่องยนต์ของทุกประโยค — เมื่อรู้กฎแล้ว คำกริยาใหม่ทุกคำที่คุณเรียนก็นำไปใช้ได้ทันที!",
-      "message_vi": "완벽해요! Bạn đã nắm vững các động từ tiếng Hàn thiết yếu và quy tắc chia động từ. Động từ là động cơ của mọi câu — giờ khi đã biết quy tắc, mỗi động từ mới bạn học đều dùng được ngay lập tức!"
+      "message_vi": "완벽해요! Bạn đã nắm vững các động từ tiếng Hàn thiết yếu và quy tắc chia động từ. Động từ là động cơ của mọi câu — giờ khi đã biết quy tắc, mỗi động từ mới bạn học đều dùng được ngay lập tức!",
+      "title_pt_br": "Verbos Concluídos!",
+      "message_pt_br": "완벽해요! Você dominou os verbos essenciais do coreano e o padrão de conjugação. Os verbos são o motor de toda frase — agora que você conhece a regra, cada novo verbo que aprender já pode ser usado na hora!"
     }
   ]
 }

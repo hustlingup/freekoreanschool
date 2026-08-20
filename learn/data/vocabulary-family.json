@@ -16,7 +16,8 @@
       "name_ja": "家族",
       "name_th": "ครอบครัว",
       "name_vi": "Gia đình",
-      "name_zh_tw": "家庭"
+      "name_zh_tw": "家庭",
+      "name_pt_br": "Família"
     }
   ],
   "steps": [
@@ -84,6 +85,13 @@
         "icon": "👨‍👩‍👧",
         "label": "Gender berpengaruh di sini",
         "text": "Penutur laki-laki menggunakan 형 (kakak laki-laki) dan 누나 (kakak perempuan). Penutur perempuan menggunakan 오빠 (kakak laki-laki) dan 언니 (kakak perempuan). Ini adalah salah satu ciri paling khas dalam bahasa Korea."
+      },
+      "title_pt_br": "A Família em Coreano",
+      "body_pt_br": "O vocabulário familiar em coreano é mais detalhado do que em português — ele distingue não só a relação, mas também se você é mais velho ou mais novo, e se é homem ou mulher. Por exemplo, \"irmão mais velho\" tem palavras diferentes dependendo se quem fala é homem (형) ou mulher (오빠).",
+      "tip_pt_br": {
+        "icon": "👨‍👩‍👧",
+        "label": "O gênero importa aqui",
+        "text": "Falantes homens usam 형 (irmão mais velho) e 누나 (irmã mais velha). Falantes mulheres usam 오빠 (irmão mais velho) e 언니 (irmã mais velha). Essa é uma das características mais marcantes do coreano."
       }
     },
     {
@@ -107,7 +115,8 @@
       "meaning_fr": "Père — terme formel / poli",
       "meaning_id": "Ayah — istilah formal/sopan",
       "meaning_th": "บิดา / พ่อ — คำที่เป็นทางการและสุภาพ",
-      "meaning_vi": "Cha, bố — cách gọi trang trọng, lễ phép"
+      "meaning_vi": "Cha, bố — cách gọi trang trọng, lễ phép",
+      "meaning_pt_br": "Pai — termo formal/cortês"
     },
     {
       "id": 3,
@@ -130,7 +139,8 @@
       "meaning_fr": "Mère — terme formel / poli",
       "meaning_id": "Ibu — istilah formal/sopan",
       "meaning_th": "มารดา / แม่ — คำที่เป็นทางการและสุภาพ",
-      "meaning_vi": "Mẹ — cách gọi trang trọng, lễ phép"
+      "meaning_vi": "Mẹ — cách gọi trang trọng, lễ phép",
+      "meaning_pt_br": "Mãe — termo formal/cortês"
     },
     {
       "id": 4,
@@ -152,7 +162,8 @@
       "meaning_fr": "Papa — familier, utilisé par les enfants et les jeunes",
       "meaning_id": "Papa — santai, dipakai anak-anak dan anak muda",
       "meaning_th": "พ่อ (ป๊า) — คำไม่เป็นทางการ ใช้โดยเด็กและคนหนุ่มสาว",
-      "meaning_vi": "Bố ơi, ba — cách gọi thân mật, trẻ em và người trẻ hay dùng"
+      "meaning_vi": "Bố ơi, ba — cách gọi thân mật, trẻ em và người trẻ hay dùng",
+      "meaning_pt_br": "Papai — informal, usado por crianças e jovens"
     },
     {
       "id": 5,
@@ -174,7 +185,8 @@
       "meaning_fr": "Maman — familier, utilisé par les enfants et les jeunes",
       "meaning_id": "Mama — santai, dipakai anak-anak dan anak muda",
       "meaning_th": "แม่ (ม๊า) — คำไม่เป็นทางการ ใช้โดยเด็กและคนหนุ่มสาว",
-      "meaning_vi": "Mẹ ơi, má — cách gọi thân mật, trẻ em và người trẻ hay dùng"
+      "meaning_vi": "Mẹ ơi, má — cách gọi thân mật, trẻ em và người trẻ hay dùng",
+      "meaning_pt_br": "Mamãe — informal, usado por crianças e jovens"
     },
     {
       "id": 6,
@@ -195,7 +207,8 @@
       "meaning_fr": "Grand frère — dit par un homme",
       "meaning_id": "Kakak laki-laki — diucapkan oleh penutur laki-laki",
       "meaning_th": "พี่ชาย — ใช้เมื่อผู้พูดเป็นผู้ชาย",
-      "meaning_vi": "Anh trai — do người nói là nam giới dùng"
+      "meaning_vi": "Anh trai — do người nói là nam giới dùng",
+      "meaning_pt_br": "Irmão mais velho — dito por um falante homem"
     },
     {
       "id": 7,
@@ -217,7 +230,8 @@
       "meaning_fr": "Grand frère — dit par une femme",
       "meaning_id": "Kakak laki-laki — diucapkan oleh penutur perempuan",
       "meaning_th": "พี่ชาย — ใช้เมื่อผู้พูดเป็นผู้หญิง",
-      "meaning_vi": "Anh trai — do người nói là nữ giới dùng"
+      "meaning_vi": "Anh trai — do người nói là nữ giới dùng",
+      "meaning_pt_br": "Irmão mais velho — dito por uma falante mulher"
     },
     {
       "id": 8,
@@ -239,7 +253,8 @@
       "meaning_fr": "Grande sœur — dite par un homme",
       "meaning_id": "Kakak perempuan — diucapkan oleh penutur laki-laki",
       "meaning_th": "พี่สาว — ใช้เมื่อผู้พูดเป็นผู้ชาย",
-      "meaning_vi": "Chị gái — do người nói là nam giới dùng"
+      "meaning_vi": "Chị gái — do người nói là nam giới dùng",
+      "meaning_pt_br": "Irmã mais velha — dita por um falante homem"
     },
     {
       "id": 9,
@@ -261,7 +276,8 @@
       "meaning_fr": "Grande sœur — dite par une femme",
       "meaning_id": "Kakak perempuan — diucapkan oleh penutur perempuan",
       "meaning_th": "พี่สาว — ใช้เมื่อผู้พูดเป็นผู้หญิง",
-      "meaning_vi": "Chị gái — do người nói là nữ giới dùng"
+      "meaning_vi": "Chị gái — do người nói là nữ giới dùng",
+      "meaning_pt_br": "Irmã mais velha — dita por uma falante mulher"
     },
     {
       "id": 10,
@@ -284,7 +300,8 @@
       "meaning_fr": "Petit frère — nam (남) = masculin",
       "meaning_id": "Adik laki-laki — nam (남) = laki-laki",
       "meaning_th": "น้องชาย — nam (남) = เพศชาย",
-      "meaning_vi": "Em trai — nam (남) = nam giới"
+      "meaning_vi": "Em trai — nam (남) = nam giới",
+      "meaning_pt_br": "Irmão mais novo — nam (남) = masculino"
     },
     {
       "id": 11,
@@ -307,7 +324,8 @@
       "meaning_fr": "Petite sœur — yeo (여) = féminin",
       "meaning_id": "Adik perempuan — yeo (여) = perempuan",
       "meaning_th": "น้องสาว — yeo (여) = เพศหญิง",
-      "meaning_vi": "Em gái — yeo (여) = nữ giới"
+      "meaning_vi": "Em gái — yeo (여) = nữ giới",
+      "meaning_pt_br": "Irmã mais nova — yeo (여) = feminino"
     },
     {
       "id": 12,
@@ -331,7 +349,8 @@
       "meaning_fr": "Grand-père",
       "meaning_id": "Kakek",
       "meaning_th": "ปู่ / ตา",
-      "meaning_vi": "Ông (ông nội hoặc ông ngoại)"
+      "meaning_vi": "Ông (ông nội hoặc ông ngoại)",
+      "meaning_pt_br": "Avô"
     },
     {
       "id": 13,
@@ -354,7 +373,8 @@
       "meaning_fr": "Grand-mère",
       "meaning_id": "Nenek",
       "meaning_th": "ย่า / ยาย",
-      "meaning_vi": "Bà (bà nội hoặc bà ngoại)"
+      "meaning_vi": "Bà (bà nội hoặc bà ngoại)",
+      "meaning_pt_br": "Avó"
     },
     {
       "id": 14,
@@ -376,7 +396,8 @@
       "meaning_fr": "Mari / époux",
       "meaning_id": "Suami",
       "meaning_th": "สามี",
-      "meaning_vi": "Chồng"
+      "meaning_vi": "Chồng",
+      "meaning_pt_br": "Marido"
     },
     {
       "id": 15,
@@ -398,7 +419,8 @@
       "meaning_fr": "Femme / épouse",
       "meaning_id": "Istri",
       "meaning_th": "ภรรยา",
-      "meaning_vi": "Vợ"
+      "meaning_vi": "Vợ",
+      "meaning_pt_br": "Esposa"
     },
     {
       "id": 16,
@@ -420,7 +442,8 @@
       "meaning_fr": "Fils",
       "meaning_id": "Anak laki-laki",
       "meaning_th": "ลูกชาย",
-      "meaning_vi": "Con trai"
+      "meaning_vi": "Con trai",
+      "meaning_pt_br": "Filho"
     },
     {
       "id": 17,
@@ -441,7 +464,8 @@
       "meaning_fr": "Fille",
       "meaning_id": "Anak perempuan",
       "meaning_th": "ลูกสาว",
-      "meaning_vi": "Con gái"
+      "meaning_vi": "Con gái",
+      "meaning_pt_br": "Filha"
     },
     {
       "id": 18,
@@ -462,7 +486,8 @@
       "prompt_fr": "Une locutrice appelle son grand frère...",
       "prompt_id": "Penutur perempuan memanggil kakak laki-lakinya dengan sebutan...",
       "prompt_th": "ผู้พูดที่เป็นผู้หญิงเรียกพี่ชายของตนว่า...",
-      "prompt_vi": "Người nói là nữ gọi anh trai của mình là..."
+      "prompt_vi": "Người nói là nữ gọi anh trai của mình là...",
+      "prompt_pt_br": "Uma falante mulher chama seu irmão mais velho de..."
     },
     {
       "id": 19,
@@ -483,7 +508,8 @@
       "prompt_fr": "Comment dit-on « grand-mère » en coréen ?",
       "prompt_id": "Bagaimana cara mengatakan \"nenek\" dalam bahasa Korea?",
       "prompt_th": "คำว่า \"คุณย่า/คุณยาย\" ในภาษาเกาหลีพูดว่าอย่างไร?",
-      "prompt_vi": "\"Bà\" trong tiếng Hàn nói thế nào?"
+      "prompt_vi": "\"Bà\" trong tiếng Hàn nói thế nào?",
+      "prompt_pt_br": "Como se diz \"avó\" em coreano?"
     },
     {
       "id": 20,
@@ -508,7 +534,9 @@
       "message_fr": "Vous avez appris le vocabulaire familial coréen — l'un des aspects les plus typiquement coréens de la langue. Dans la culture coréenne, les distinctions de genre pour les frères et sœurs s'emploient même entre amis proches !",
       "message_id": "Anda telah mempelajari kosakata keluarga dalam bahasa Korea — salah satu aspek paling khas Korea dalam bahasa ini. Pembedaan berdasarkan jenis kelamin untuk panggilan kakak-adik bahkan dipakai di antara teman dekat dalam budaya Korea!",
       "message_th": "คุณได้เรียนคำศัพท์เกี่ยวกับครอบครัวในภาษาเกาหลีแล้ว — หนึ่งในแง่มุมที่เป็นเอกลักษณ์ที่สุดของภาษานี้ การแยกคำเรียกพี่น้องตามเพศของผู้พูดยังใช้กับเพื่อนสนิทในวัฒนธรรมเกาหลีอีกด้วย!",
-      "message_vi": "Bạn đã học xong từ vựng gia đình tiếng Hàn — một trong những khía cạnh mang đậm bản sắc Hàn Quốc nhất của ngôn ngữ này. Cách xưng hô phân biệt theo giới tính dành cho anh chị em thậm chí còn được dùng giữa những người bạn thân trong văn hóa Hàn Quốc!"
+      "message_vi": "Bạn đã học xong từ vựng gia đình tiếng Hàn — một trong những khía cạnh mang đậm bản sắc Hàn Quốc nhất của ngôn ngữ này. Cách xưng hô phân biệt theo giới tính dành cho anh chị em thậm chí còn được dùng giữa những người bạn thân trong văn hóa Hàn Quốc!",
+      "title_pt_br": "Família Completa!",
+      "message_pt_br": "Você aprendeu o vocabulário familiar coreano — um dos aspectos mais singulares do idioma. As distinções baseadas em gênero para irmãos até são usadas entre amigos próximos na cultura coreana!"
     }
   ]
 }

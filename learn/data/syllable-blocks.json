@@ -16,7 +16,8 @@
       "name_vi": "Cơ bản về khối âm tiết",
       "name_th": "พื้นฐานบล็อก",
       "name_id": "Dasar-dasar Blok",
-      "name_ja": "ブロックの基礎"
+      "name_ja": "ブロックの基礎",
+      "name_pt_br": "Fundamentos do Bloco"
     },
     {
       "id": 2,
@@ -32,7 +33,8 @@
       "name_vi": "Hình dạng nguyên âm",
       "name_th": "รูปทรงสระ",
       "name_id": "Bentuk Vokal",
-      "name_ja": "母音の形"
+      "name_ja": "母音の形",
+      "name_pt_br": "Formas das Vogais"
     },
     {
       "id": 3,
@@ -48,7 +50,8 @@
       "name_vi": "Tự xây dựng",
       "name_th": "สร้างพยางค์",
       "name_id": "Membangunnya",
-      "name_ja": "作ってみよう"
+      "name_ja": "作ってみよう",
+      "name_pt_br": "Construir"
     },
     {
       "id": 4,
@@ -64,7 +67,8 @@
       "name_vi": "Batchim",
       "name_th": "บัดชิม",
       "name_id": "Batchim",
-      "name_ja": "パッチム"
+      "name_ja": "パッチム",
+      "name_pt_br": "Batchim"
     },
     {
       "id": 5,
@@ -80,7 +84,8 @@
       "name_vi": "Đọc từ",
       "name_th": "อ่านคำ",
       "name_id": "Membaca Kata",
-      "name_ja": "単語を読む"
+      "name_ja": "単語を読む",
+      "name_pt_br": "Ler Palavras"
     }
   ],
   "steps": [
@@ -143,7 +148,14 @@
         "label": "Bạn có biết?",
         "text": "Mỗi khối âm tiết luôn có đúng một nguyên âm. Nó có thể có 0, 1 hoặc 2 phụ âm — nhưng không bao giờ có quá một nguyên âm."
       },
-      "title_ja": "音節ブロックとは？"
+      "title_ja": "音節ブロックとは？",
+      "title_pt_br": "O Que É um Bloco Silábico?",
+      "body_pt_br": "Cada sílaba coreana é escrita dentro de um bloco quadrado invisível. Diferente do português, em que as letras vão da esquerda para a direita, em uma linha, o coreano empilha consoantes e vogais juntas em blocos compactos e visualmente equilibrados. Cada bloco representa exatamente uma sílaba — uma unidade de som.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Você sabia?",
+        "text": "Cada bloco silábico sempre tem exatamente uma vogal. Ele pode ter 0, 1 ou 2 consoantes — mas nunca mais de uma vogal."
+      }
     },
     {
       "id": 2,
@@ -204,7 +216,14 @@
         "label": "Mẹo",
         "text": "Với các nguyên âm dọc như ㅏ, ㅓ và ㅣ: phụ âm đầu nằm bên trái, nguyên âm bên phải. Với các nguyên âm ngang như ㅗ, ㅜ và ㅡ: phụ âm đầu nằm trên, nguyên âm ở dưới."
       },
-      "title_ja": "三つの位置"
+      "title_ja": "三つの位置",
+      "title_pt_br": "As Três Posições",
+      "body_pt_br": "Cada bloco silábico coreano tem três posições com nome. Duas são obrigatórias (consoante inicial e vogal medial) e uma é opcional (a consoante final). Aprender essas posições pelo nome é essencial — a gramática coreana faz referência a elas o tempo todo.",
+      "tip_pt_br": {
+        "icon": "📐",
+        "label": "Dica",
+        "text": "Para vogais verticais como ㅏ, ㅓ e ㅣ: a consoante inicial fica à esquerda, a vogal à direita. Para vogais horizontais como ㅗ, ㅜ e ㅡ: a consoante inicial fica em cima, a vogal embaixo."
+      }
     },
     {
       "id": 3,
@@ -339,7 +358,14 @@
         "ㅇ ไม่ออกเสียง + สระ",
         "พยัญชนะต้น + สระ + 받침",
         "ㅇ ไม่ออกเสียง + สระ + 받침"
-      ]
+      ],
+      "title_pt_br": "Quatro Padrões de Blocos Silábicos",
+      "body_pt_br": "As sílabas coreanas seguem quatro padrões estruturais básicos, dependendo da presença de uma consoante final (받침) e de a sílaba começar com vogal ou consoante.",
+      "tip_pt_br": {
+        "icon": "🔵",
+        "label": "A Regra do ㅇ Marcador de Posição",
+        "text": "Quando uma sílaba começa com som de vogal, você precisa escrever ㅇ como marcador de posição na posição inicial. O ㅇ é completamente mudo no início de uma sílaba — ele apenas indica que o bloco começa com uma vogal. Exemplos: 아 = ㅇ+ㅏ   이 = ㅇ+ㅣ   우 = ㅇ+ㅜ"
+      }
     },
     {
       "id": 4,
@@ -369,7 +395,9 @@
       "example_meaning_th": "เกาหลี",
       "example_meaning_id": "Korea",
       "hint_id": "Setiap suku kata adalah blok persegi — konsonan awal, vokal, dan batchim (받침) opsional.",
-      "hint_vi": "Mỗi âm tiết là một khối vuông — phụ âm đầu, nguyên âm và phụ âm cuối tùy chọn."
+      "hint_vi": "Mỗi âm tiết là một khối vuông — phụ âm đầu, nguyên âm và phụ âm cuối tùy chọn.",
+      "example_meaning_pt_br": "Coreia",
+      "hint_pt_br": "Cada sílaba é um bloco quadrado — consoante inicial, vogal e consoante final opcional."
     },
     {
       "id": 5,
@@ -399,7 +427,9 @@
       "example_meaning_th": "เกาหลี",
       "example_meaning_id": "Korea",
       "hint_id": "Blok ini memiliki ketiga posisi: 초성 (ㄱ) + 중성 (ㅜ) + 받침 (ㄱ).",
-      "hint_vi": "Khối này có cả ba vị trí: 초성 (ㄱ) + 중성 (ㅜ) + 받침 (ㄱ)."
+      "hint_vi": "Khối này có cả ba vị trí: 초성 (ㄱ) + 중성 (ㅜ) + 받침 (ㄱ).",
+      "example_meaning_pt_br": "Coreia",
+      "hint_pt_br": "Este bloco tem as três posições: 초성 (ㄱ) + 중성 (ㅜ) + 받침 (ㄱ)."
     },
     {
       "id": 6,
@@ -429,7 +459,9 @@
       "example_meaning_th": "ภาษาเกาหลี",
       "example_meaning_id": "bahasa Korea",
       "hint_id": "Suku kata yang diawali vokal menggunakan ㅇ diam sebagai penanda tempat. ㅇ di sini tidak berbunyi.",
-      "hint_vi": "Âm tiết bắt đầu bằng nguyên âm dùng ㅇ câm làm ký tự giữ chỗ. ㅇ ở đây không phát ra âm nào."
+      "hint_vi": "Âm tiết bắt đầu bằng nguyên âm dùng ㅇ câm làm ký tự giữ chỗ. ㅇ ở đây không phát ra âm nào.",
+      "example_meaning_pt_br": "idioma coreano",
+      "hint_pt_br": "Sílabas que começam com vogal usam o ㅇ mudo como marcador de posição. Aqui, o ㅇ não tem som."
     },
     {
       "id": 7,
@@ -498,6 +530,13 @@
         "ちょうど一つ",
         "一つか二つ",
         "必要なだけ"
+      ],
+      "prompt_pt_br": "Quantas vogais um único bloco silábico coreano contém?",
+      "choices_pt_br": [
+        "Zero",
+        "Exatamente uma",
+        "Uma ou duas",
+        "Quantas forem necessárias"
       ]
     },
     {
@@ -519,7 +558,8 @@
       "prompt_th": "ตำแหน่งพยัญชนะต้น (พยัญชนะตัวแรก) เรียกว่า…",
       "prompt_id": "Posisi konsonan AWAL (konsonan pertama) disebut…",
       "prompt_vi": "Vị trí phụ âm ĐẦU (phụ âm thứ nhất) được gọi là…",
-      "prompt_ja": "音節ブロックの最初の子音が入る位置は何と呼ばれますか。"
+      "prompt_ja": "音節ブロックの最初の子音が入る位置は何と呼ばれますか。",
+      "prompt_pt_br": "A posição da consoante INICIAL (primeira consoante) é chamada de…"
     },
     {
       "id": 9,
@@ -540,7 +580,8 @@
       "prompt_th": "เมื่อพยางค์เริ่มต้นด้วยเสียงสระ ให้เขียน __ เป็นตัวแทนพยัญชนะต้น",
       "prompt_id": "Ketika suku kata dimulai dengan bunyi VOKAL, Anda menulis __ sebagai konsonan awal penanda tempat.",
       "prompt_vi": "Khi một âm tiết bắt đầu bằng âm NGUYÊN ÂM, bạn viết __ làm phụ âm đầu giữ chỗ.",
-      "prompt_ja": "音節が母音の音で始まるとき、初声の位置にはプレースホルダーとして __ を書きます。"
+      "prompt_ja": "音節が母音の音で始まるとき、初声の位置にはプレースホルダーとして __ を書きます。",
+      "prompt_pt_br": "Quando uma sílaba começa com som de VOGAL, você escreve __ como consoante inicial de marcador de posição."
     },
     {
       "id": 10,
@@ -570,7 +611,9 @@
       "example_meaning_th": "ไป",
       "example_meaning_id": "pergi",
       "hint_id": "Pola CV — jenis blok paling sederhana. Hanya konsonan awal dan vokal.",
-      "hint_vi": "Kiểu CV — kiểu khối đơn giản nhất. Chỉ gồm một phụ âm đầu và một nguyên âm."
+      "hint_vi": "Kiểu CV — kiểu khối đơn giản nhất. Chỉ gồm một phụ âm đầu và một nguyên âm.",
+      "example_meaning_pt_br": "ir",
+      "hint_pt_br": "Padrão CV — o tipo de bloco mais simples. Apenas uma consoante inicial e uma vogal."
     },
     {
       "id": 11,
@@ -600,7 +643,9 @@
       "example_meaning_th": "ทารก",
       "example_meaning_id": "bayi",
       "hint_id": "Pola V-saja — ㅇ diam di posisi awal, hanya vokal yang berbunyi.",
-      "hint_vi": "Kiểu chỉ có V — ㅇ câm ở vị trí đầu, chỉ phát âm nguyên âm."
+      "hint_vi": "Kiểu chỉ có V — ㅇ câm ở vị trí đầu, chỉ phát âm nguyên âm.",
+      "example_meaning_pt_br": "bebê",
+      "hint_pt_br": "Padrão somente-V — ㅇ mudo na posição inicial, soa apenas a vogal."
     },
     {
       "id": 12,
@@ -630,7 +675,9 @@
       "example_meaning_th": "ตับ / ไปแล้ว",
       "example_meaning_id": "hati / pergi (bentuk lampau)",
       "hint_id": "Pola CVC — konsonan awal + vokal + konsonan akhir (받침). Tiga bagian.",
-      "hint_vi": "Kiểu CVC — phụ âm đầu + nguyên âm + phụ âm cuối (받침). Ba phần."
+      "hint_vi": "Kiểu CVC — phụ âm đầu + nguyên âm + phụ âm cuối (받침). Ba phần.",
+      "example_meaning_pt_br": "fígado / foi",
+      "hint_pt_br": "Padrão CVC — consoante inicial + vogal + consoante final (받침). Três partes."
     },
     {
       "id": 13,
@@ -699,6 +746,13 @@
         "CVC",
         "VC（無音の ㅇ ＋ 母音 ＋ 終声）",
         "母音のみ"
+      ],
+      "prompt_pt_br": "안 (dentro / não) — qual é o padrão estrutural desta sílaba?",
+      "choices_pt_br": [
+        "CV",
+        "CVC",
+        "VC (ㅇ mudo + vogal + final)",
+        "Somente V"
       ]
     },
     {
@@ -760,7 +814,14 @@
         "label": "Mẹo hình dung nhanh",
         "text": "Khi bạn thấy một nguyên âm cao (ㅏ, ㅓ, ㅣ và các biến thể), phụ âm đầu nằm bên trái nó. Khi bạn thấy một nguyên âm rộng (ㅗ, ㅜ, ㅡ và các biến thể), phụ âm đầu nằm phía trên nó. Nguyên âm ghép như ㅘ, ㅝ, ㅚ hoạt động như nguyên âm dọc — phụ âm nằm bên trái."
       },
-      "title_ja": "縦母音と横母音"
+      "title_ja": "縦母音と横母音",
+      "title_pt_br": "Vogais Verticais vs Horizontais",
+      "body_pt_br": "A forma da vogal determina onde a consoante inicial fica dentro do bloco. Vogais altas e verticais empurram a consoante para a esquerda; vogais largas e horizontais a empurram para cima. É isso que dá ao coreano sua aparência quadrada característica.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Truque Visual Rápido",
+        "text": "Quando você vê uma vogal alta (ㅏ, ㅓ, ㅣ e suas variantes), a consoante inicial fica à sua esquerda. Quando você vê uma vogal larga (ㅗ, ㅜ, ㅡ e suas variantes), a consoante inicial fica acima dela. Vogais compostas como ㅘ, ㅝ, ㅚ se comportam como vogais verticais — a consoante vai para a esquerda."
+      }
     },
     {
       "id": 15,
@@ -781,7 +842,8 @@
       "hint_vi": "ㅏ là nguyên âm DỌC. Phụ âm đầu đứng ở bên TRÁI nó.",
       "hint_th": "ㅏ เป็นสระแนวตั้งสูง พยัญชนะต้นอยู่ทางซ้าย",
       "example_meaning_th": "ไป (ตัวอย่าง CV: ㄱ + ㅏ)",
-      "hint_id": "ㅏ adalah vokal TINGGI vertikal. Konsonan awal berada di KIRInya."
+      "hint_id": "ㅏ adalah vokal TINGGI vertikal. Konsonan awal berada di KIRInya.",
+      "hint_pt_br": "ㅏ é uma vogal vertical ALTA. A consoante inicial fica à sua ESQUERDA."
     },
     {
       "id": 16,
@@ -812,7 +874,9 @@
       "example_meaning_id": "kamu (santai)",
       "hint_id": "ㅓ juga vokal tinggi vertikal — konsonan di KIRI, vokal di KANAN.",
       "example_meaning_vi": "bạn (thân mật)",
-      "hint_vi": "ㅓ cũng là một nguyên âm dọc cao — phụ âm bên TRÁI, nguyên âm bên PHẢI."
+      "hint_vi": "ㅓ cũng là một nguyên âm dọc cao — phụ âm bên TRÁI, nguyên âm bên PHẢI.",
+      "example_meaning_pt_br": "você (informal)",
+      "hint_pt_br": "ㅓ também é uma vogal vertical alta — consoante à ESQUERDA, vogal à DIREITA."
     },
     {
       "id": 17,
@@ -843,7 +907,9 @@
       "example_meaning_id": "waktu",
       "hint_id": "ㅣ adalah vokal tertinggi. Konsonan selalu berada di kirinya.",
       "example_meaning_vi": "thời gian",
-      "hint_vi": "ㅣ là nguyên âm cao nhất. Phụ âm luôn nằm bên trái nó."
+      "hint_vi": "ㅣ là nguyên âm cao nhất. Phụ âm luôn nằm bên trái nó.",
+      "example_meaning_pt_br": "tempo / hora",
+      "hint_pt_br": "ㅣ é a vogal mais alta. A consoante sempre vai à esquerda dela."
     },
     {
       "id": 18,
@@ -874,7 +940,9 @@
       "example_meaning_id": "terima kasih",
       "hint_id": "ㅗ adalah vokal LEBAR horizontal. Konsonan awal berada DI ATAS vokal.",
       "example_meaning_vi": "cảm ơn",
-      "hint_vi": "ㅗ là một nguyên âm ngang RỘNG. Phụ âm đầu nằm PHÍA TRÊN nguyên âm."
+      "hint_vi": "ㅗ là một nguyên âm ngang RỘNG. Phụ âm đầu nằm PHÍA TRÊN nguyên âm.",
+      "example_meaning_pt_br": "obrigado(a)",
+      "hint_pt_br": "ㅗ é uma vogal horizontal LARGA. A consoante inicial fica EM CIMA da vogal."
     },
     {
       "id": 19,
@@ -905,7 +973,9 @@
       "example_meaning_id": "siapa",
       "hint_id": "ㅜ adalah vokal lebar horizontal — konsonan di atas, vokal di bawah. Garis mengarah ke BAWAH.",
       "example_meaning_vi": "ai",
-      "hint_vi": "ㅜ là một nguyên âm ngang rộng — phụ âm ở trên, nguyên âm ở dưới. Vạch chỉ XUỐNG."
+      "hint_vi": "ㅜ là một nguyên âm ngang rộng — phụ âm ở trên, nguyên âm ở dưới. Vạch chỉ XUỐNG.",
+      "example_meaning_pt_br": "quem",
+      "hint_pt_br": "ㅜ é uma vogal horizontal larga — consoante em cima, vogal embaixo. A linha aponta PARA BAIXO."
     },
     {
       "id": 20,
@@ -936,7 +1006,9 @@
       "example_meaning_id": "dan",
       "hint_id": "ㅡ adalah vokal horizontal datar — konsonan berada di atasnya.",
       "example_meaning_vi": "và",
-      "hint_vi": "ㅡ là một nguyên âm ngang phẳng — phụ âm nằm phía trên nó."
+      "hint_vi": "ㅡ là một nguyên âm ngang phẳng — phụ âm nằm phía trên nó.",
+      "example_meaning_pt_br": "e",
+      "hint_pt_br": "ㅡ é uma vogal horizontal reta — a consoante fica acima dela."
     },
     {
       "id": 21,
@@ -1005,6 +1077,13 @@
         "左",
         "右",
         "下"
+      ],
+      "prompt_pt_br": "Com uma vogal ALTA como ㅏ, ㅓ ou ㅣ — onde fica a consoante inicial?",
+      "choices_pt_br": [
+        "Em cima",
+        "À esquerda",
+        "À direita",
+        "Embaixo"
       ]
     },
     {
@@ -1074,6 +1153,13 @@
         "右",
         "上",
         "下"
+      ],
+      "prompt_pt_br": "Com uma vogal LARGA como ㅗ, ㅜ ou ㅡ — onde fica a consoante inicial?",
+      "choices_pt_br": [
+        "À esquerda",
+        "À direita",
+        "Em cima",
+        "Embaixo"
       ]
     },
     {
@@ -1143,6 +1229,13 @@
         "縦長",
         "合成の横長",
         "無音"
+      ],
+      "prompt_pt_br": "배 (estômago / navio) contém ㅐ — que tipo de vogal é ㅐ?",
+      "choices_pt_br": [
+        "Horizontal larga",
+        "Vertical alta",
+        "Composta larga",
+        "Muda"
       ]
     },
     {
@@ -1164,7 +1257,8 @@
       "prompt_th": "ตัวใดต่อไปนี้เป็นสระแนวนอนกว้าง?",
       "prompt_id": "Manakah dari berikut ini yang merupakan vokal LEBAR (horizontal)?",
       "prompt_vi": "Đâu là một nguyên âm RỘNG (ngang)?",
-      "prompt_ja": "次のうち横長（水平）の母音はどれでしょう。"
+      "prompt_ja": "次のうち横長（水平）の母音はどれでしょう。",
+      "prompt_pt_br": "Qual destas é uma vogal LARGA (horizontal)?"
     },
     {
       "id": 25,
@@ -1188,7 +1282,9 @@
       "body_id": "Sekarang mari berlatih membangun suku kata CV sederhana — konsonan + vokal, tanpa batchim. Ini adalah blok yang paling mudah dibaca dan ditulis. Dengarkan masing-masing dan coba hasilkan sendiri bunyinya.",
       "title_vi": "Xây dựng những âm tiết đầu tiên của bạn",
       "body_vi": "Bây giờ hãy cùng luyện tập xây dựng các âm tiết CV đơn giản — phụ âm + nguyên âm, không có batchim. Đây là những khối dễ đọc và dễ viết nhất. Hãy nghe từng khối và tự mình thử phát ra âm thanh.",
-      "title_ja": "初めての音節を作る"
+      "title_ja": "初めての音節を作る",
+      "title_pt_br": "Construindo Suas Primeiras Sílabas",
+      "body_pt_br": "Agora vamos praticar a construção de sílabas CV simples — consoante + vogal, sem batchim. Esses são os blocos mais fáceis de ler e escrever. Ouça cada um e tente produzir o som você mesmo."
     },
     {
       "id": 26,
@@ -1206,7 +1302,8 @@
       "meaning_de": "ba — 바나나 (Banane)",
       "meaning_vi": "ba — 바나나 (chuối)",
       "meaning_th": "บา — 바나나 (กล้วย)",
-      "meaning_id": "ba — 바나나 (pisang)"
+      "meaning_id": "ba — 바나나 (pisang)",
+      "meaning_pt_br": "ba — 바나나 (banana)"
     },
     {
       "id": 27,
@@ -1224,7 +1321,8 @@
       "meaning_de": "na — 나 (ich)",
       "meaning_vi": "na — 나 (tôi)",
       "meaning_th": "นา — 나 (ฉัน)",
-      "meaning_id": "na — 나 (aku)"
+      "meaning_id": "na — 나 (aku)",
+      "meaning_pt_br": "na — 나 (eu)"
     },
     {
       "id": 28,
@@ -1242,7 +1340,8 @@
       "meaning_de": "sa — 사랑 (Liebe)",
       "meaning_vi": "sa — 사랑 (tình yêu)",
       "meaning_th": "ซา — 사랑 (ความรัก)",
-      "meaning_id": "sa — 사랑 (cinta)"
+      "meaning_id": "sa — 사랑 (cinta)",
+      "meaning_pt_br": "sa — 사랑 (amor)"
     },
     {
       "id": 29,
@@ -1260,7 +1359,8 @@
       "meaning_de": "ha — 하늘 (Himmel)",
       "meaning_vi": "ha — 하늘 (bầu trời)",
       "meaning_th": "ฮา — 하늘 (ท้องฟ้า)",
-      "meaning_id": "ha — 하늘 (langit)"
+      "meaning_id": "ha — 하늘 (langit)",
+      "meaning_pt_br": "ha — 하늘 (céu)"
     },
     {
       "id": 30,
@@ -1278,7 +1378,8 @@
       "meaning_de": "go — 고마워 (danke, informell)",
       "meaning_vi": "go — 고마워 (cảm ơn, thân mật)",
       "meaning_th": "โก — 고마워 (ขอบคุณ ไม่เป็นทางการ)",
-      "meaning_id": "go — 고마워 (terima kasih, tidak resmi)"
+      "meaning_id": "go — 고마워 (terima kasih, tidak resmi)",
+      "meaning_pt_br": "go — 고마워 (obrigado, informal)"
     },
     {
       "id": 31,
@@ -1296,7 +1397,8 @@
       "meaning_de": "nu — 누구 (wer)",
       "meaning_vi": "nu — 누구 (ai)",
       "meaning_th": "นู — 누구 (ใคร)",
-      "meaning_id": "nu — 누구 (siapa)"
+      "meaning_id": "nu — 누구 (siapa)",
+      "meaning_pt_br": "nu — 누구 (quem)"
     },
     {
       "id": 32,
@@ -1314,7 +1416,8 @@
       "meaning_de": "mi — 미래 (Zukunft)",
       "meaning_vi": "mi — 미래 (tương lai)",
       "meaning_th": "มี — 미래 (อนาคต)",
-      "meaning_id": "mi — 미래 (masa depan)"
+      "meaning_id": "mi — 미래 (masa depan)",
+      "meaning_pt_br": "mi — 미래 (futuro)"
     },
     {
       "id": 33,
@@ -1332,7 +1435,8 @@
       "meaning_de": "gi — 기다리다 (warten)",
       "meaning_vi": "gi — 기다리다 (chờ đợi)",
       "meaning_th": "กี — 기다리다 (รอ)",
-      "meaning_id": "gi — 기다리다 (menunggu)"
+      "meaning_id": "gi — 기다리다 (menunggu)",
+      "meaning_pt_br": "gi — 기다리다 (esperar)"
     },
     {
       "id": 34,
@@ -1393,7 +1497,14 @@
         "label": "Mẹo",
         "text": "Khối âm tiết có batchim được nén lại theo chiều dọc một chút để chừa chỗ ở dưới. Phụ âm batchim nằm bên dưới cả phụ âm đầu và nguyên âm, hoàn thiện hình vuông của khối."
       },
-      "title_ja": "パッチムを加える —— 最後の子音"
+      "title_ja": "パッチムを加える —— 最後の子音",
+      "title_pt_br": "Adicionando o Batchim — A Consoante Final",
+      "body_pt_br": "Quando você adiciona uma consoante na parte inferior de um bloco, essa consoante se torna o 받침 (batchim) — a consoante final. É o batchim que dá a muitas palavras coreanas seus finais ricos e ressonantes. Veja como adicionar o batchim transforma sílabas simples em palavras reais.",
+      "tip_pt_br": {
+        "icon": "💡",
+        "label": "Dica",
+        "text": "Blocos silábicos com batchim são ligeiramente comprimidos na vertical para abrir espaço na parte de baixo. A consoante do batchim fica abaixo tanto da consoante inicial quanto da vogal, completando a forma quadrada do bloco."
+      }
     },
     {
       "id": 35,
@@ -1423,7 +1534,9 @@
       "example_meaning_th": "ภูเขา",
       "example_meaning_id": "gunung",
       "hint_id": "ㄴ adalah 받침 di sini — berada di bagian bawah blok, di bawah ㅅ dan ㅏ.",
-      "hint_vi": "ㄴ là 받침 ở đây — nó nằm ở đáy khối, bên dưới ㅅ và ㅏ."
+      "hint_vi": "ㄴ là 받침 ở đây — nó nằm ở đáy khối, bên dưới ㅅ và ㅏ.",
+      "example_meaning_pt_br": "montanha",
+      "hint_pt_br": "ㄴ é o 받침 aqui — fica na parte de baixo do bloco, abaixo de ㅅ e ㅏ."
     },
     {
       "id": 36,
@@ -1453,7 +1566,9 @@
       "example_meaning_th": "ดวงจันทร์ / เดือน",
       "example_meaning_id": "bulan / bulan (kalender)",
       "hint_id": "받침 ㄹ — lidah mengetuk ringan langit-langit mulut untuk menghasilkan akhiran.",
-      "hint_vi": "ㄹ 받침 — lưỡi chạm nhẹ vào vòm miệng để tạo phần kết thúc."
+      "hint_vi": "ㄹ 받침 — lưỡi chạm nhẹ vào vòm miệng để tạo phần kết thúc.",
+      "example_meaning_pt_br": "lua / mês",
+      "hint_pt_br": "받침 ㄹ — a língua toca levemente o céu da boca para produzir o final."
     },
     {
       "id": 37,
@@ -1483,7 +1598,9 @@
       "example_meaning_th": "ข้าว / อาหาร",
       "example_meaning_id": "nasi / makanan",
       "hint_id": "받침 ㅂ — bibir menutup di akhir tanpa terbuka. Bunyi 'p' tidak dilepaskan.",
-      "hint_vi": "ㅂ받침 — môi khép lại ở cuối mà không bật ra. Âm 'p' không được bật hơi."
+      "hint_vi": "ㅂ받침 — môi khép lại ở cuối mà không bật ra. Âm 'p' không được bật hơi.",
+      "example_meaning_pt_br": "arroz / refeição",
+      "hint_pt_br": "받침 ㅂ — os lábios se fecham no final sem se abrir. O som de 'p' não é solto."
     },
     {
       "id": 38,
@@ -1513,7 +1630,9 @@
       "example_meaning_th": "ฤดูใบไม้ผลิ",
       "example_meaning_id": "musim semi",
       "hint_id": "받침 ㅁ — bibir menutup lembut di akhir. Akhiran sengau yang beresonansi.",
-      "hint_vi": "ㅁ 받침 — môi khép nhẹ ở cuối. Một phần kết thúc vang âm mũi."
+      "hint_vi": "ㅁ 받침 — môi khép nhẹ ở cuối. Một phần kết thúc vang âm mũi.",
+      "example_meaning_pt_br": "primavera (estação)",
+      "hint_pt_br": "받침 ㅁ — os lábios se fecham suavemente no final. Um final nasal ressonante."
     },
     {
       "id": 39,
@@ -1543,7 +1662,9 @@
       "example_meaning_th": "ถนน / ทาง",
       "example_meaning_id": "jalan / cara",
       "hint_id": "받침 ㄹ lagi — lidah tertahan di langit-langit mulut. Terdengar seperti 'l' yang lembut.",
-      "hint_vi": "ㄹ 받침 lần nữa — lưỡi nán lại ở vòm miệng. Nghe giống âm 'l' nhẹ."
+      "hint_vi": "ㄹ 받침 lần nữa — lưỡi nán lại ở vòm miệng. Nghe giống âm 'l' nhẹ.",
+      "example_meaning_pt_br": "estrada / caminho",
+      "hint_pt_br": "받침 ㄹ de novo — a língua permanece contra o céu da boca. Soa como um 'l' suave."
     },
     {
       "id": 40,
@@ -1564,7 +1685,8 @@
       "prompt_th": "밥 (ข้าว) — 받침 (บัดชิม) คืออะไร?",
       "prompt_id": "밥 (nasi) — apa 받침 (batchim)-nya?",
       "prompt_vi": "밥 (cơm) — 받침 (batchim) của nó là gì?",
-      "prompt_ja": "밥（ご飯）——この語の 받침（パッチム）は何ですか。"
+      "prompt_ja": "밥（ご飯）——この語の 받침（パッチム）は何ですか。",
+      "prompt_pt_br": "밥 (arroz) — qual é o seu 받침 (batchim)?"
     },
     {
       "id": 41,
@@ -1585,7 +1707,8 @@
       "prompt_th": "บล็อกใดต่อไปนี้รวม ㅎ + ㅜ ได้ถูกต้อง โดยไม่เพิ่มและไม่ขาดอะไร?",
       "prompt_id": "Blok manakah yang menggabungkan ㅎ + ㅜ dengan benar, tanpa menambah atau menghilangkan apa pun?",
       "prompt_vi": "Khối nào kết hợp đúng ㅎ + ㅜ, không thêm cũng không thiếu thành phần nào?",
-      "prompt_ja": "ㅎ + ㅜ を過不足なく正しく組み合わせたブロックはどれですか。"
+      "prompt_ja": "ㅎ + ㅜ を過不足なく正しく組み合わせたブロックはどれですか。",
+      "prompt_pt_br": "Qual bloco combina corretamente ㅎ + ㅜ, sem nada adicionado ou removido?"
     },
     {
       "id": 42,
@@ -1654,6 +1777,13 @@
         "母音の右",
         "一番下、すべての下",
         "初声の横"
+      ],
+      "prompt_pt_br": "Em um bloco silábico CVC, onde fica o 받침 (batchim)?",
+      "choices_pt_br": [
+        "Acima da vogal",
+        "À direita da vogal",
+        "Na parte de baixo, abaixo de tudo",
+        "Ao lado da consoante inicial"
       ]
     },
     {
@@ -1675,7 +1805,8 @@
       "prompt_th": "คำใดต่อไปนี้ไม่มี 받침?",
       "prompt_id": "Manakah dari kata-kata berikut yang TIDAK memiliki 받침?",
       "prompt_vi": "Từ nào sau đây KHÔNG có 받침?",
-      "prompt_ja": "次のうち받침がない語はどれですか。"
+      "prompt_ja": "次のうち받침がない語はどれですか。",
+      "prompt_pt_br": "Qual destas palavras NÃO tem 받침?"
     },
     {
       "id": 44,
@@ -1696,7 +1827,8 @@
       "prompt_th": "봄 (ฤดูใบไม้ผลิ) = ㅂ + ㅗ + ? — บัดชิมคืออะไร?",
       "prompt_id": "봄 (musim semi) = ㅂ + ㅗ + ? — apa batchim-nya?",
       "prompt_vi": "봄 (mùa xuân) = ㅂ + ㅗ + ? — batchim là gì?",
-      "prompt_ja": "봄（春）＝ ㅂ + ㅗ + ? ——받침は何ですか。"
+      "prompt_ja": "봄（春）＝ ㅂ + ㅗ + ? ——받침は何ですか。",
+      "prompt_pt_br": "봄 (primavera) = ㅂ + ㅗ + ? — qual é o batchim?"
     },
     {
       "id": 45,
@@ -1720,7 +1852,9 @@
       "body_id": "Sekarang Anda memiliki semua yang dibutuhkan untuk menguraikan kata-kata Korea yang sesungguhnya. Mari kita bedah 10 kata penting suku kata demi suku kata, mengidentifikasi setiap komponennya. Ketuk tombol speaker untuk mendengar kata-kata tersebut diucapkan.",
       "title_vi": "Đọc những từ tiếng Hàn thực sự",
       "body_vi": "Giờ bạn đã có mọi thứ cần thiết để giải mã những từ tiếng Hàn thực sự. Hãy cùng phân tích 10 từ thiết yếu theo từng âm tiết, xác định từng thành phần. Nhấn nút loa để nghe các từ được đọc thành tiếng.",
-      "title_ja": "実際の韓国語の単語を読む"
+      "title_ja": "実際の韓国語の単語を読む",
+      "title_pt_br": "Lendo Palavras Coreanas de Verdade",
+      "body_pt_br": "Agora você tem tudo o que precisa para decifrar palavras coreanas de verdade. Vamos analisar 10 palavras essenciais sílaba por sílaba, identificando cada componente. Toque nos botões de alto-falante para ouvir as palavras faladas em voz alta."
     },
     {
       "id": 46,
@@ -1743,7 +1877,8 @@
       "meaning_th": "เกาหลี",
       "meaning_id": "Korea",
       "meaning_vi": "Hàn Quốc",
-      "meaning_ja": "韓国"
+      "meaning_ja": "韓国",
+      "meaning_pt_br": "Coreia"
     },
     {
       "id": 47,
@@ -1766,7 +1901,8 @@
       "meaning_th": "คน",
       "meaning_id": "orang",
       "meaning_vi": "người",
-      "meaning_ja": "人"
+      "meaning_ja": "人",
+      "meaning_pt_br": "pessoa"
     },
     {
       "id": 48,
@@ -1789,7 +1925,8 @@
       "meaning_th": "โรงเรียน",
       "meaning_id": "sekolah",
       "meaning_vi": "trường học",
-      "meaning_ja": "学校"
+      "meaning_ja": "学校",
+      "meaning_pt_br": "escola"
     },
     {
       "id": 49,
@@ -1812,7 +1949,8 @@
       "meaning_th": "สวัสดี / สันติ",
       "meaning_id": "halo / damai",
       "meaning_vi": "xin chào / bình an",
-      "meaning_ja": "こんにちは／平和"
+      "meaning_ja": "こんにちは／平和",
+      "meaning_pt_br": "olá / paz"
     },
     {
       "id": 50,
@@ -1835,7 +1973,8 @@
       "meaning_th": "ความกตัญญู / ขอบคุณ",
       "meaning_id": "rasa syukur",
       "meaning_vi": "lòng biết ơn",
-      "meaning_ja": "感謝"
+      "meaning_ja": "感謝",
+      "meaning_pt_br": "gratidão"
     },
     {
       "id": 51,
@@ -1858,7 +1997,8 @@
       "meaning_th": "ความรัก",
       "meaning_id": "cinta",
       "meaning_vi": "tình yêu",
-      "meaning_ja": "愛"
+      "meaning_ja": "愛",
+      "meaning_pt_br": "amor"
     },
     {
       "id": 52,
@@ -1881,7 +2021,8 @@
       "meaning_th": "ดนตรี",
       "meaning_id": "musik",
       "meaning_vi": "âm nhạc",
-      "meaning_ja": "音楽"
+      "meaning_ja": "音楽",
+      "meaning_pt_br": "música"
     },
     {
       "id": 53,
@@ -1904,7 +2045,8 @@
       "meaning_th": "เพื่อน",
       "meaning_id": "teman",
       "meaning_vi": "bạn bè",
-      "meaning_ja": "友達"
+      "meaning_ja": "友達",
+      "meaning_pt_br": "amigo(a)"
     },
     {
       "id": 54,
@@ -1927,7 +2069,8 @@
       "meaning_th": "ครอบครัว",
       "meaning_id": "keluarga",
       "meaning_vi": "gia đình",
-      "meaning_ja": "家族"
+      "meaning_ja": "家族",
+      "meaning_pt_br": "família"
     },
     {
       "id": 55,
@@ -1950,7 +2093,8 @@
       "meaning_th": "ทะเล / มหาสมุทร",
       "meaning_id": "laut / samudra",
       "meaning_vi": "biển / đại dương",
-      "meaning_ja": "海／大洋"
+      "meaning_ja": "海／大洋",
+      "meaning_pt_br": "mar / oceano"
     },
     {
       "id": 56,
@@ -1972,7 +2116,8 @@
       "meaning_th": "ความฝัน",
       "meaning_id": "mimpi",
       "meaning_vi": "giấc mơ",
-      "meaning_ja": "夢"
+      "meaning_ja": "夢",
+      "meaning_pt_br": "sonho"
     },
     {
       "id": 57,
@@ -2096,7 +2241,21 @@
         "label": "Sắp có bài tự kiểm tra!",
         "text": "Ba câu hỏi nhanh dưới đây để xác nhận bạn đã nắm được. Hãy xác định các thành phần của mỗi âm tiết."
       },
-      "title_ja": "練習とまとめ"
+      "title_ja": "練習とまとめ",
+      "title_pt_br": "Prática e Resumo",
+      "body_pt_br": "Parabéns — você aprendeu a estrutura central dos blocos silábicos coreanos! Aqui está um resumo rápido das cinco regras que regem cada sílaba no sistema de escrita coreano.",
+      "rules_pt_br": [
+        "Cada bloco tem exatamente uma vogal (중성 / Jungseong)",
+        "Sílabas iniciadas por vogal usam o ㅇ mudo como consoante inicial de marcador de posição",
+        "Vogais altas (ㅏ, ㅓ, ㅣ) — a consoante inicial fica à esquerda, a vogal à direita",
+        "Vogais largas (ㅗ, ㅜ, ㅡ) — a consoante inicial fica em cima, a vogal embaixo",
+        "O 받침 (batchim) opcional fica na parte de baixo do bloco, abaixo de tudo"
+      ],
+      "tip_pt_br": {
+        "icon": "📝",
+        "label": "Vem aí o autoteste!",
+        "text": "Três perguntas rápidas abaixo para confirmar que você entendeu. Identifique os componentes de cada sílaba."
+      }
     },
     {
       "id": 58,
@@ -2117,7 +2276,8 @@
       "prompt_th": "남 (ใต้) — 초성 (พยัญชนะต้น) คืออะไร?",
       "prompt_id": "남 (selatan) — apa 초성 (konsonan awal)-nya?",
       "prompt_vi": "남 (nam / phương nam) — 초성 (phụ âm đầu) của nó là gì?",
-      "prompt_ja": "남（南）——この語の 초성（初声）は何ですか。"
+      "prompt_ja": "남（南）——この語の 초성（初声）は何ですか。",
+      "prompt_pt_br": "남 (sul) — qual é a sua 초성 (consoante inicial)?"
     },
     {
       "id": 59,
@@ -2138,7 +2298,8 @@
       "prompt_th": "달 (ดวงจันทร์) — ระบุ 받침 (บัดชิม / พยัญชนะสุดท้าย)",
       "prompt_id": "달 (bulan) — identifikasi 받침 (batchim / konsonan akhir).",
       "prompt_vi": "달 (mặt trăng) — xác định 받침 (batchim / phụ âm cuối).",
-      "prompt_ja": "달（月）——받침（終声）を選んでください。"
+      "prompt_ja": "달（月）——받침（終声）を選んでください。",
+      "prompt_pt_br": "달 (lua) — identifique o 받침 (batchim / consoante final)."
     },
     {
       "id": 60,
@@ -2159,7 +2320,8 @@
       "prompt_th": "봄 (ฤดูใบไม้ผลิ) — ส่วนประกอบทั้งสามตามลำดับคืออะไร?",
       "prompt_id": "봄 (musim semi) — apa ketiga komponennya secara berurutan?",
       "prompt_vi": "봄 (mùa xuân) — ba thành phần theo thứ tự là gì?",
-      "prompt_ja": "봄（春）——三つの構成要素を順番に並べたものはどれですか。"
+      "prompt_ja": "봄（春）——三つの構成要素を順番に並べたものはどれですか。",
+      "prompt_pt_br": "봄 (primavera) — quais são os três componentes, em ordem?"
     },
     {
       "id": 61,
@@ -2184,7 +2346,9 @@
       "title_ja": "韓国語の音節ブロックが読めるようになりました！",
       "title_zh_tw": "你已經會讀韓文音節組合了！",
       "title_vi": "Bạn đã đọc được các khối âm tiết tiếng Hàn rồi!",
-      "title_th": "ตอนนี้คุณอ่านตัวสะกดพยางค์ภาษาเกาหลีได้แล้ว!"
+      "title_th": "ตอนนี้คุณอ่านตัวสะกดพยางค์ภาษาเกาหลีได้แล้ว!",
+      "title_pt_br": "Você consegue ler blocos silábicos coreanos!",
+      "message_pt_br": "Você dominou os blocos fundamentais de toda a escrita coreana — 5 estágios, 61 etapas. Toda palavra coreana é feita exatamente com esses blocos. 화이팅!"
     }
   ]
 }

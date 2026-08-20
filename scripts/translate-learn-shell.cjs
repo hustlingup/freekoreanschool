@@ -42,6 +42,12 @@ const TRANS = path.join(__dirname, '_trans', 'learn');
 const LOCALES = ['es', 'de', 'fr', 'vi', 'th', 'id', 'ja', 'zh-tw'];
 
 const HANGUL = /[가-힣ᄀ-ᇿ]/;
+const HANGUL_G = /[가-힣ᄀ-ᇿ]/g;
+/* English function words. Revised Romanization of Korean never contains any of
+   them, which is what makes this a safe discriminator between "English prose
+   quoting Korean" (translate) and "Korean plus its romanization" (never). */
+const EN_FUNCTION_WORD = /\b(the|and|you|your|are|with|for|that|this|from|when|what|have|will|they|their|which|about|into|than|then|these|those|been|being|would|should|could|means|use[ds]?|between|before|after|each|every|both|more|most|other|same|such|only|also|even|just|like|makes?|made|says?|said|but|not|its|it'?s|was|were|has|had|can|may|must|there|here|while|where|who|whom|whose|why|how)\b/i;
+let INCLUDE_MIXED = process.argv.includes('--include-mixed');
 /* `.ja-block` is a Japanese gloss that every page carries but only shows when
  * body.lang-ja is set (`.ja-block{display:none}` in the page's own <style>).
  * It is already Japanese, so it is never a translation target. */
@@ -104,7 +110,18 @@ function mapTextNodes(html, fn) {
     const raw = m[2];
     const trimmed = decodeEnt(raw).replace(/\s+/g, ' ').trim();
     if (!trimmed) continue;
-    if (HANGUL.test(trimmed)) continue;
+    /* Hangul nodes are skipped because the Korean IS the lesson. But that
+       blanket rule also hid MIXED nodes — English prose carrying an inline
+       Korean gloss, e.g. "Formal Speech in Business (격식체)" or a paragraph
+       that quotes 감사합니다 mid-sentence. Those need translating, and no tool
+       in the repo could see them: measured 2026-08-13, ~430 such nodes were
+       still English across all 9 locales (pt-br 89, de 61, vi 56, th/id/es/fr
+       ~51 each) on pages every audit reported as fully translated.
+       A node counts as mixed only when it carries an English FUNCTION word —
+       Revised Romanization of Korean never does, so "가다 (gada)" stays
+       protected. --apply always allows mixed nodes through, because the
+       callback acts only on exact table keys. */
+    if (HANGUL.test(trimmed) && !(INCLUDE_MIXED && EN_FUNCTION_WORD.test(trimmed))) continue;
     if (TRANSCRIPTION_CLASS.test(m[1])) continue;
     if (trimmed.replace(/[^\p{L}]/gu, '').length < 2) continue;
 
@@ -159,17 +176,41 @@ for (const loc of targets) {
   const table = JSON.parse(fs.readFileSync(tp, 'utf8'));
   const { text, crlf } = readLF(fp);
 
+  /* Reach mixed nodes on apply regardless of the flag: the callback below acts
+     ONLY on exact table keys, so nothing outside the authored table can be
+     touched. Without this, a table containing a mixed key silently applies 0
+     of those entries. */
+  INCLUDE_MIXED = true;
+
   let hits = 0;
   const missing = new Set();
+  const hangulLoss = [];
   const out = mapTextNodes(text, (t) => {
     if (!Object.prototype.hasOwnProperty.call(table, t)) return null;
     const v = table[t];
     if (!v) { missing.add(t); return null; }
+    /* GUARD. A mixed node's Korean must survive verbatim into the
+       translation — that Korean is the lesson content, and this is the one
+       write path that can now touch it. Compare the multiset of Hangul
+       characters so reordering and respacing are allowed but loss is not.
+       Refuse the whole entry rather than write a lossy one. */
+    const need = (t.match(HANGUL_G) || []).slice().sort().join('');
+    const got = (v.match(HANGUL_G) || []).slice().sort().join('');
+    if (need && need !== got) { hangulLoss.push({ t, v }); return null; }
     hits++;
     return v;
   });
 
   if (missing.size) console.error(`  ${loc}: ${missing.size} table entries still empty`);
+  if (hangulLoss.length) {
+    console.error(`  ${loc}: ✗ REFUSED ${hangulLoss.length} entr(y/ies) — the translation drops or alters Korean present in the source:`);
+    for (const { t, v } of hangulLoss.slice(0, 5)) {
+      console.error(`      EN : ${t.slice(0, 90)}`);
+      console.error(`      ${loc.toUpperCase()}: ${v.slice(0, 90)}`);
+    }
+    if (hangulLoss.length > 5) console.error(`      … and ${hangulLoss.length - 5} more`);
+    console.error('      Fix the table: keep every Hangul character exactly as in the key.');
+  }
   if (out !== text) writeLF(fp, out, crlf);
   grandTotal += hits;
   console.log(`${lesson} ${loc}: ${hits} nodes translated`);
