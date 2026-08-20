@@ -7,6 +7,307 @@
 'use strict';
 
 const StepRunner = (() => {
+  /* ── Locale UI strings ─────────────────────────────────────────────────
+     Every learner-facing string this engine builds itself (i.e. not read out
+     of learn/data/*.json via loc()) lives here, keyed by locale then by key.
+     Replaced 92 inline `lang === 'ja' ? … : lang === 'zh-tw' ? …` chains on
+     2026-08-12 (docs/i18n-expansion/00-plan.md §0.2): adding a locale used to
+     mean ~92 hand edits scattered through the renderers, each one able to
+     silently fall through to English. Now it is one object literal.
+
+     English is the fallback for any key a locale has not filled — which is
+     exactly what the old chains did, since every chain ended in the English
+     value.
+
+     Values containing {placeholders} are format strings expanded by fmt().
+     Do NOT put layout/behaviour decisions in here; those go in SR_CAP.      */
+  const SR_UI = {
+    en: {
+      stageNav:   'Lesson stages',
+      prev:       'Prev',
+      next:       'Next',
+      prevAria:   'Previous step',
+      nextAria:   'Next step',
+      stageAria:  'Stage {id}: {name}',
+      pattern:    'Pattern',
+      hear:       'Hear it',
+      listen:     'Listen',
+      saidIt:     'I said it — Next',
+      replay:     'Replay',
+      continue:   'Continue',
+      sylPrompt:  'Combine these pieces into a syllable block:',
+      sylReveal:  'Reveal Syllable',
+      tracePrompt: 'Write it yourself — draw each stroke in the numbered order.',
+      keysTitle:  'New keys',
+      /* Fullwidth in CJK, ASCII + a space everywhere else. */
+      keysColon:  ': ',
+      keysInstruction: 'Press each highlighted key until it feels automatic — your keyboard or the on-screen keys both work.',
+      drillJamo:     'Jamo drill',
+      drillSyllable: 'Syllable drill',
+      drillWord:     'Word drill',
+      drillInstruction: 'Type what you see. Accuracy first — speed follows.',
+      progressMeta:  'Stage {stage} of {total} · ~{min} min remaining',
+    },
+    ja: {
+      stageNav:   'レッスンステージ',
+      prev:       '前へ',
+      next:       '次へ',
+      prevAria:   '前のステップ',
+      nextAria:   '次のステップ',
+      stageAria:  'ステージ {id}: {name}',
+      pattern:    'パターン',
+      hear:       '聴く',
+      listen:     '聴く',
+      saidIt:     '言えた — 次へ',
+      replay:     'もう一度',
+      continue:   '次へ',
+      sylPrompt:  'これらのピースを音節ブロックに組み合わせてください：',
+      sylReveal:  '音節を表示',
+      tracePrompt: '自分で書いてみましょう — 番号の順に一画ずつ書いてください。',
+      keysTitle:  '新しいキー',
+      keysColon:  '：',
+      keysInstruction: 'ハイライトされたキーを、指が覚えるまで押してみましょう。物理キーボードでも画面のキーでも構いません。',
+      drillJamo:     '字母ドリル',
+      drillSyllable: '音節ドリル',
+      drillWord:     '単語ドリル',
+      drillInstruction: '表示されたものを入力しましょう。まずは正確さ、スピードは後からついてきます。',
+      progressMeta:  'ステージ {stage}／{total} · 残り約{min}分',
+    },
+    'zh-tw': {
+      stageNav:   '課程階段',
+      prev:       '上一步',
+      next:       '下一步',
+      prevAria:   '上一步',
+      nextAria:   '下一步',
+      stageAria:  '第 {id} 階段: {name}',
+      pattern:    '結構',
+      hear:       '聽',
+      listen:     '聽',
+      saidIt:     '我說了 — 下一個',
+      replay:     '重播',
+      continue:   '下一步',
+      sylPrompt:  '將這些積木組合成音節：',
+      sylReveal:  '顯示音節',
+      tracePrompt: '親手寫寫看 — 依照編號順序逐筆書寫。',
+      keysTitle:  '新按鍵',
+      keysColon:  '：',
+      keysInstruction: '按下每個highlight的按鍵，直到手指記住為止。實體鍵盤或螢幕鍵盤都可以。',
+      drillJamo:     '字母練習',
+      drillSyllable: '音節練習',
+      drillWord:     '單字練習',
+      drillInstruction: '照著畫面上的內容輸入。先求正確，速度自然會跟上。',
+      progressMeta:  '第 {stage} 階段（共 {total} 個）· 約剩 {min} 分鐘',
+    },
+    'pt-br': {
+      stageNav:   'Estágios da lição',
+      prev:       'Anterior',
+      next:       'Próximo',
+      prevAria:   'Etapa anterior',
+      nextAria:   'Próxima etapa',
+      stageAria:  'Estágio {id}: {name}',
+      pattern:    'Padrão',
+      hear:       'Ouvir',
+      listen:     'Ouvir',
+      saidIt:     'Eu falei — Próximo',
+      replay:     'Repetir',
+      continue:   'Continuar',
+      sylPrompt:  'Combine estas peças em um bloco silábico:',
+      sylReveal:  'Mostrar sílaba',
+      tracePrompt: 'Escreva você mesmo: desenhe cada traço na ordem numerada.',
+      keysTitle:  'Teclas novas',
+      keysInstruction: 'Pressione cada tecla destacada até o dedo memorizar. Vale o teclado físico ou o da tela.',
+      drillJamo:     'Prática de jamo',
+      drillSyllable: 'Prática de sílabas',
+      drillWord:     'Prática de palavras',
+      drillInstruction: 'Digite o que você vê. Primeiro a precisão; a velocidade vem sozinha.',
+      progressMeta:  'Estágio {stage} de {total} · ~{min} min restantes',
+    },
+    es: {
+      stageNav:   'Etapas de la lección',
+      prev:       'Anterior',
+      next:       'Siguiente',
+      prevAria:   'Paso anterior',
+      nextAria:   'Siguiente paso',
+      stageAria:  'Etapa {id}: {name}',
+      pattern:    'Patrón',
+      hear:       'Escuchar',
+      listen:     'Escuchar',
+      saidIt:     'Lo dije — Siguiente',
+      replay:     'Repetir',
+      continue:   'Continuar',
+      sylPrompt:  'Combina estas piezas en un bloque de sílaba:',
+      sylReveal:  'Mostrar sílaba',
+      tracePrompt: 'Escríbelo tú mismo: dibuja cada trazo en el orden numerado.',
+      keysTitle:  'Teclas nuevas',
+      keysInstruction: 'Pulsa cada tecla resaltada hasta que te salga sola: sirve tu teclado o las teclas en pantalla.',
+      drillJamo:     'Práctica de jamo',
+      drillSyllable: 'Práctica de sílabas',
+      drillWord:     'Práctica de palabras',
+      drillInstruction: 'Escribe lo que ves. Primero la precisión; la velocidad llega sola.',
+      progressMeta:  'Etapa {stage} de {total} · ~{min} min restantes',
+    },
+    fr: {
+      stageNav:   'Étapes de la leçon',
+      prev:       'Précédent',
+      next:       'Suivant',
+      prevAria:   'Étape précédente',
+      nextAria:   'Étape suivante',
+      /* French spaces before the colon — deliberate, not a typo. */
+      stageAria:  'Étape {id} : {name}',
+      pattern:    'Modèle',
+      hear:       'Écouter',
+      listen:     'Écouter',
+      saidIt:     'Je l\'ai dit — Suivant',
+      replay:     'Rejouer',
+      continue:   'Continuer',
+      sylPrompt:  'Assemblez ces pièces en un bloc syllabique :',
+      sylReveal:  'Révéler la syllabe',
+      tracePrompt: 'Écrivez-le vous-même : dessinez chaque trait dans l\'ordre numéroté.',
+      keysTitle:  'Nouvelles touches',
+      keysInstruction: 'Appuyez sur chaque touche mise en évidence jusqu\'à ce que le geste devienne automatique : clavier physique ou touches à l\'écran.',
+      drillJamo:     'Exercice de jamo',
+      drillSyllable: 'Exercice de syllabes',
+      drillWord:     'Exercice de mots',
+      drillInstruction: 'Tapez ce que vous voyez. La précision d\'abord, la vitesse suivra.',
+      progressMeta:  'Étape {stage} sur {total} · ~{min} min restantes',
+    },
+    de: {
+      stageNav:   'Lektionsphasen',
+      prev:       'Zurück',
+      next:       'Weiter',
+      prevAria:   'Vorheriger Schritt',
+      nextAria:   'Nächster Schritt',
+      stageAria:  'Phase {id}: {name}',
+      pattern:    'Muster',
+      hear:       'Anhören',
+      listen:     'Anhören',
+      saidIt:     'Gesagt — Weiter',
+      replay:     'Nochmal',
+      continue:   'Weiter',
+      sylPrompt:  'Kombiniere diese Teile zu einem Silbenblock:',
+      sylReveal:  'Silbe anzeigen',
+      tracePrompt: 'Schreibe es selbst — zeichne jeden Strich in der nummerierten Reihenfolge.',
+      keysTitle:  'Neue Tasten',
+      keysInstruction: 'Drücke jede hervorgehobene Taste, bis sie sitzt — Tastatur oder Bildschirmtasten funktionieren beide.',
+      drillJamo:     'Jamo-Übung',
+      drillSyllable: 'Silben-Übung',
+      drillWord:     'Wort-Übung',
+      drillInstruction: 'Tippe, was du siehst. Erst die Genauigkeit — das Tempo kommt von selbst.',
+      progressMeta:  'Phase {stage} von {total} · ~{min} Min. verbleibend',
+    },
+    vi: {
+      stageNav:   'Các giai đoạn bài học',
+      prev:       'Trước',
+      next:       'Tiếp',
+      prevAria:   'Bước trước',
+      nextAria:   'Bước tiếp theo',
+      stageAria:  'Giai đoạn {id}: {name}',
+      pattern:    'Mẫu',
+      hear:       'Nghe',
+      listen:     'Nghe',
+      saidIt:     'Đã nói — Tiếp',
+      replay:     'Xem lại',
+      continue:   'Tiếp tục',
+      sylPrompt:  'Kết hợp các mảnh này thành một khối âm tiết:',
+      sylReveal:  'Hiện âm tiết',
+      tracePrompt: 'Tự viết nhé — vẽ từng nét theo đúng thứ tự đánh số.',
+      keysTitle:  'Phím mới',
+      keysInstruction: 'Nhấn từng phím được làm nổi bật cho đến khi thành phản xạ — bàn phím thật hoặc bàn phím trên màn hình đều được.',
+      drillJamo:     'Luyện jamo',
+      drillSyllable: 'Luyện âm tiết',
+      drillWord:     'Luyện từ',
+      drillInstruction: 'Gõ đúng những gì bạn thấy. Chính xác trước, tốc độ theo sau.',
+      progressMeta:  'Giai đoạn {stage} / {total} · ~{min} phút còn lại',
+    },
+    th: {
+      stageNav:   'ขั้นตอนบทเรียน',
+      prev:       'ก่อนหน้า',
+      next:       'ถัดไป',
+      prevAria:   'ขั้นตอนก่อนหน้า',
+      nextAria:   'ขั้นตอนถัดไป',
+      stageAria:  'ขั้นตอนที่ {id}: {name}',
+      pattern:    'รูปแบบ',
+      hear:       'ฟัง',
+      listen:     'ฟัง',
+      saidIt:     'พูดแล้ว — ถัดไป',
+      replay:     'เล่นซ้ำ',
+      continue:   'ต่อไป',
+      sylPrompt:  'รวมชิ้นส่วนเหล่านี้เป็นบล็อกพยางค์:',
+      sylReveal:  'แสดงพยางค์',
+      tracePrompt: 'เขียนด้วยตัวเอง — ลากทีละเส้นตามลำดับหมายเลข',
+      keysTitle:  'ปุ่มใหม่',
+      keysInstruction: 'กดปุ่มที่ไฮไลต์แต่ละปุ่มจนคุ้นมือ ใช้คีย์บอร์ดจริงหรือแป้นบนหน้าจอก็ได้',
+      drillJamo:     'ฝึกพยัญชนะและสระ',
+      drillSyllable: 'ฝึกพยางค์',
+      drillWord:     'ฝึกคำศัพท์',
+      drillInstruction: 'พิมพ์ตามที่เห็น เน้นความแม่นยำก่อน แล้วความเร็วจะตามมาเอง',
+      progressMeta:  'ขั้นตอนที่ {stage} จาก {total} · ~{min} นาทีที่เหลือ',
+    },
+    id: {
+      stageNav:   'Tahapan pelajaran',
+      prev:       'Sebelumnya',
+      next:       'Selanjutnya',
+      prevAria:   'Langkah sebelumnya',
+      nextAria:   'Langkah selanjutnya',
+      stageAria:  'Tahap {id}: {name}',
+      pattern:    'Pola',
+      hear:       'Dengarkan',
+      listen:     'Dengarkan',
+      saidIt:     'Sudah saya ucapkan — Lanjut',
+      replay:     'Putar ulang',
+      continue:   'Lanjutkan',
+      sylPrompt:  'Gabungkan bagian-bagian ini menjadi blok suku kata:',
+      sylReveal:  'Tampilkan Suku Kata',
+      tracePrompt: 'Tulis sendiri — gambar setiap goresan sesuai urutan nomor.',
+      keysTitle:  'Tombol baru',
+      keysInstruction: 'Tekan setiap tombol yang disorot sampai terasa otomatis — keyboard fisik maupun tombol di layar sama-sama bisa.',
+      drillJamo:     'Latihan jamo',
+      drillSyllable: 'Latihan suku kata',
+      drillWord:     'Latihan kata',
+      drillInstruction: 'Ketik apa yang kamu lihat. Utamakan akurasi — kecepatan menyusul.',
+      progressMeta:  'Tahap {stage} dari {total} · ~{min} menit tersisa',
+    },
+  };
+
+  /* ── Locale capabilities ───────────────────────────────────────────────
+     LAYOUT and FIELD decisions, not UI copy — deliberately a separate table
+     so nobody is tempted to answer "does this locale replace the
+     romanization line?" with a translated string.
+
+       pronField      which step field carries this locale's pronunciation aid,
+                      falling back to `reading_<lang>` then `romanization`.
+       pronInRomSlot  the aid REPLACES the Revised-Romanization line rather
+                      than sitting beside it (Zhuyin does; zh-cn will want the
+                      same for pinyin — add `{ pronField: 'pinyin',
+                      pronInRomSlot: true }` when that locale lands).
+       pronAidRow     the aid gets its own row under the character (ja only —
+                      the row keeps the historical `.kata` class name).
+
+     A locale absent from this table gets every flag falsy, which is the
+     behaviour of all six non-CJK locales today.                            */
+  const SR_CAP = {
+    ja:      { pronField: 'katakana', pronAidRow: true },
+    'zh-tw': { pronField: 'zhuyin',   pronInRomSlot: true },
+  };
+
+  /* Locale string lookup. English backfills any key a locale omits. */
+  function ui(key) {
+    const d = SR_UI[_detectLang()] || SR_UI.en;
+    return d[key] !== undefined ? d[key] : SR_UI.en[key];
+  }
+
+  /* Capability lookup; undefined (falsy) for locales with no record. */
+  function cap(key) {
+    const c = SR_CAP[_detectLang()];
+    return c ? c[key] : undefined;
+  }
+
+  /* Minimal {name} interpolator for the format-string entries in SR_UI.
+     An unknown placeholder is left verbatim so a typo is visible, not silent. */
+  function fmt(str, vars) {
+    return String(str).replace(/\{(\w+)\}/g, (m, k) => (vars[k] !== undefined ? vars[k] : m));
+  }
+
   /* ── State ─────────────────────────────────────────── */
   let lessonData = null;
   let currentIndex = 0;
@@ -74,31 +375,26 @@ const StepRunner = (() => {
     });
 
     renderStep(currentIndex);
-    hydrateStaticReference();
   }
 
-  /* ── Static lesson reference (progressive enhancement) ───────────────
+  /* ── Static lesson reference — deliberately NOT collapsed ──────────────
      learn/*.html ship a <details id="lesson-static" open> block holding the
      ENTIRE lesson as semantic HTML (generated by scripts/gen-lesson-static.cjs).
-     That block is the page for crawlers and for visitors without JS.
 
-     Once the interactive runner has successfully hydrated we collapse the
-     <details> so the step UI is the primary experience — the content stays in
-     the DOM, stays reachable in one click, and is never hidden with
-     display:none. It is the same material the interactive lesson teaches, so
-     this is progressive enhancement, not cloaking.
+     This runner used to strip the `open` attribute after a successful
+     renderStep(), on the theory that the step UI should be the primary
+     experience and the prose stayed "one click away". Do not restore that.
 
-     Called only after renderStep() succeeds: if the runner fails, the block
-     stays expanded, which is the correct fallback.                          */
-  function hydrateStaticReference() {
-    const ref = document.getElementById('lesson-static');
-    if (!ref || ref.dataset.hydrated) return;
-    ref.dataset.hydrated = '1';
-    // Respect a deep link into the reference (e.g. #lesson-static) and leave
-    // it open if the visitor arrived there on purpose.
-    if (location.hash === '#lesson-static') return;
-    ref.removeAttribute('open');
-  }
+     A crawler reads the DOM and saw ~2,500 words either way, which is why
+     every word-count audit passed. A HUMAN reviewer sees the rendered default
+     state, and that state was: a breadcrumb, four stat badges, "Loading
+     lesson…", one interactive step, and a closed accordion — roughly 55 words
+     of prose across 162 pages, 40% of the site. That is the shape an AdSense
+     reviewer judges, and it is the most likely cause of the third
+     "Low value content" rejection (2026-08-12).
+
+     The block now stays open. The visitor can still collapse it themselves;
+     nothing collapses it for them.                                          */
 
   function restoreState() {
     const stepParam = new URLSearchParams(location.search).get('step');
@@ -131,11 +427,13 @@ const StepRunner = (() => {
     return map[lang] || '';
   }
 
+  /* Which JSON field carries this locale's pronunciation aid. ja → katakana,
+     zh-tw → zhuyin (SR_CAP.pronField); everything else uses the generic
+     `reading_<lang>` field. Revised Romanization is the universal fallback. */
   function getPronunciationAid(step) {
     const lang = _detectLang();
-    if (lang === 'ja')    return step.katakana   || step.romanization;
-    if (lang === 'zh-tw') return step.zhuyin     || step.romanization;
-    return step['reading_' + lang.replace('-', '_')] || step.romanization;
+    const field = cap('pronField') || ('reading_' + lang.replace('-', '_'));
+    return step[field] || step.romanization;
   }
 
   function loc(obj, base) {
@@ -147,21 +445,12 @@ const StepRunner = (() => {
   function buildShell() {
     const wrap = document.getElementById('step-shell');
     if (!wrap) return;
-    const lang = _detectLang();
-    const isJa = lang === 'ja';
-    const isZhTw = lang === 'zh-tw';
-    const isEs = lang === 'es';
-    const isFr = lang === 'fr';
-    const isDe = lang === 'de';
-    const isVi = lang === 'vi';
-    const isTh = lang === 'th';
-    const isId = lang === 'id';
 
-    const stageLabel = isJa ? 'レッスンステージ' : isZhTw ? '課程階段' : isEs ? 'Etapas de la lección' : isFr ? 'Étapes de la leçon' : isDe ? 'Lektionsphasen' : isVi ? 'Các giai đoạn bài học' : isTh ? 'ขั้นตอนบทเรียน' : isId ? 'Tahapan pelajaran' : 'Lesson stages';
-    const prevLabel  = isJa ? '前へ' : isZhTw ? '上一步' : isEs ? 'Anterior' : isFr ? 'Précédent' : isDe ? 'Zurück' : isVi ? 'Trước' : isTh ? 'ก่อนหน้า' : isId ? 'Sebelumnya' : 'Prev';
-    const nextLabel  = isJa ? '次へ' : isZhTw ? '下一步' : isEs ? 'Siguiente' : isFr ? 'Suivant' : isDe ? 'Weiter' : isVi ? 'Tiếp' : isTh ? 'ถัดไป' : isId ? 'Selanjutnya' : 'Next';
-    const prevAria   = isJa ? '前のステップ' : isZhTw ? '上一步' : isEs ? 'Paso anterior' : isFr ? 'Étape précédente' : isDe ? 'Vorheriger Schritt' : isVi ? 'Bước trước' : isTh ? 'ขั้นตอนก่อนหน้า' : isId ? 'Langkah sebelumnya' : 'Previous step';
-    const nextAria   = isJa ? '次のステップ' : isZhTw ? '下一步' : isEs ? 'Siguiente paso' : isFr ? 'Étape suivante' : isDe ? 'Nächster Schritt' : isVi ? 'Bước tiếp theo' : isTh ? 'ขั้นตอนถัดไป' : isId ? 'Langkah selanjutnya' : 'Next step';
+    const stageLabel = ui('stageNav');
+    const prevLabel  = ui('prev');
+    const nextLabel  = ui('next');
+    const prevAria   = ui('prevAria');
+    const nextAria   = ui('nextAria');
 
     wrap.innerHTML = `
       <div class="hangul-progress" id="hangul-progress">
@@ -190,26 +479,14 @@ const StepRunner = (() => {
   function buildStageNav() {
     const nav = document.getElementById('stage-nav');
     if (!nav || !lessonData) return;
-    const lang = _detectLang();
     nav.innerHTML = lessonData.stages.map(s => {
-      const stageName = lang === 'ja' ? (s.name_ja || s.name)
-        : lang === 'zh-tw' ? (s.name_zh_tw || s.name)
-        : lang === 'es' ? (s.name_es || s.name)
-        : lang === 'fr' ? (s.name_fr || s.name)
-        : lang === 'de' ? (s.name_de || s.name)
-        : lang === 'vi' ? (s.name_vi || s.name)
-        : lang === 'th' ? (s.name_th || s.name)
-        : lang === 'id' ? (s.name_id || s.name)
-        : s.name;
-      const ariaLabel = lang === 'ja' ? `ステージ ${s.id}: ${stageName}`
-        : lang === 'zh-tw' ? `第 ${s.id} 階段: ${stageName}`
-        : lang === 'es' ? `Etapa ${s.id}: ${stageName}`
-        : lang === 'fr' ? `Étape ${s.id} : ${stageName}`
-        : lang === 'de' ? `Phase ${s.id}: ${stageName}`
-        : lang === 'vi' ? `Giai đoạn ${s.id}: ${stageName}`
-        : lang === 'th' ? `ขั้นตอนที่ ${s.id}: ${stageName}`
-        : lang === 'id' ? `Tahap ${s.id}: ${stageName}`
-        : `Stage ${s.id}: ${stageName}`;
+      /* Stage names are JSON content, not chrome — resolved through the same
+         `_<suffix>` mechanism as every other localized field. `||` (not loc()'s
+         `!= null`) is deliberate: an empty localized name falls back to
+         English, which is what the eight ternaries here always did.          */
+      const suffix = _locSuffix();
+      const stageName = (suffix && s['name' + suffix]) || s.name;
+      const ariaLabel = fmt(ui('stageAria'), { id: s.id, name: stageName });
       return `
       <button class="stage-tab" data-stage="${s.id}" role="tab"
         aria-label="${ariaLabel}">
@@ -349,8 +626,7 @@ const StepRunner = (() => {
 
   /* reading_card */
   function renderReadingCard(step) {
-    const lang = _detectLang();
-    const patternWord = lang === 'zh-tw' ? '結構' : lang === 'ja' ? 'パターン' : lang === 'es' ? 'Patrón' : lang === 'fr' ? 'Modèle' : lang === 'de' ? 'Muster' : lang === 'vi' ? 'Mẫu' : lang === 'th' ? 'รูปแบบ' : lang === 'id' ? 'Pola' : 'Pattern';
+    const patternWord = ui('pattern');
     const patternsHtml = step.patterns ? `
       <div class="sr-pattern-grid">
         ${step.patterns.map((p, i) => `
@@ -400,7 +676,6 @@ const StepRunner = (() => {
 
   /* card_reveal */
   function renderCardReveal(step) {
-    const lang = _detectLang();
     const audioFn = window.AudioCache
       ? `AudioCache.play('${esc(step.audio)}')`
       : `speakKorean('${esc(step.audio)}')`;
@@ -408,10 +683,10 @@ const StepRunner = (() => {
       ? `AudioCache.play('${esc(step.audio)}', this)`
       : `speakKorean('${esc(step.audio)}', this)`;
     const pronAid = getPronunciationAid(step);
-    const showPronInRomSlot = lang === 'zh-tw'; // Zhuyin replaces romanization slot
+    const showPronInRomSlot = !!cap('pronInRomSlot'); // Zhuyin replaces romanization slot
     const exMeaning = loc(step, 'example_meaning');
     const hint      = loc(step, 'hint');
-    const hearBtn   = lang === 'ja' ? '聴く' : lang === 'zh-tw' ? '聽' : lang === 'es' ? 'Escuchar' : lang === 'fr' ? 'Écouter' : lang === 'de' ? 'Anhören' : lang === 'vi' ? 'Nghe' : lang === 'th' ? 'ฟัง' : lang === 'id' ? 'Dengarkan' : 'Hear it';
+    const hearBtn   = ui('hear');
     return `
       <div class="sr-card-reveal">
         <div class="sr-card" id="flip-card" role="button" tabindex="0"
@@ -422,7 +697,7 @@ const StepRunner = (() => {
             <span class="sr-divider">·</span>
             <span class="sr-rom">${esc(showPronInRomSlot && pronAid ? pronAid : step.romanization)}</span>
           </div>
-          ${pronAid && !showPronInRomSlot && lang === 'ja' ? `<div class="kata">${esc(pronAid)}</div>` : ''}
+          ${pronAid && !showPronInRomSlot && cap('pronAidRow') ? `<div class="kata">${esc(pronAid)}</div>` : ''}
           ${step.example_word ? `<div class="sr-example">${esc(step.example_word)} · ${esc(exMeaning)}</div>` : ''}
         </div>
         ${hint ? `<div class="sr-hint">💡 ${esc(hint)}</div>` : ''}
@@ -456,25 +731,8 @@ const StepRunner = (() => {
 
   /* syllable_builder */
   function renderSyllableBuilder(step) {
-    const lang = _detectLang();
-    const isJa = lang === 'ja';
-    const isZhTw = lang === 'zh-tw';
-    const isEs = lang === 'es';
-    const isFr = lang === 'fr';
-    const isDe = lang === 'de';
-    const isVi = lang === 'vi';
-    const isTh = lang === 'th';
-    const isId = lang === 'id';
-    const prompt = isJa ? 'これらのピースを音節ブロックに組み合わせてください：'
-      : isZhTw ? '將這些積木組合成音節：'
-      : isEs ? 'Combina estas piezas en un bloque de sílaba:'
-      : isFr ? 'Assemblez ces pièces en un bloc syllabique :'
-      : isDe ? 'Kombiniere diese Teile zu einem Silbenblock:'
-      : isVi ? 'Kết hợp các mảnh này thành một khối âm tiết:'
-      : isTh ? 'รวมชิ้นส่วนเหล่านี้เป็นบล็อกพยางค์:'
-      : isId ? 'Gabungkan bagian-bagian ini menjadi blok suku kata:'
-      : 'Combine these pieces into a syllable block:';
-    const revealLabel = isJa ? '音節を表示' : isZhTw ? '顯示音節' : isEs ? 'Mostrar sílaba' : isFr ? 'Révéler la syllabe' : isDe ? 'Silbe anzeigen' : isVi ? 'Hiện âm tiết' : isTh ? 'แสดงพยางค์' : isId ? 'Tampilkan Suku Kata' : 'Reveal Syllable';
+    const prompt = ui('sylPrompt');
+    const revealLabel = ui('sylReveal');
     const meaning = loc(step, 'meaning');
     return `
       <div class="sr-syllable-builder" data-consonant="${esc(step.consonant)}"
@@ -540,15 +798,6 @@ const StepRunner = (() => {
 
   /* listen_repeat */
   function renderListenRepeat(step) {
-    const lang = _detectLang();
-    const isJa = lang === 'ja';
-    const isZhTw = lang === 'zh-tw';
-    const isEs = lang === 'es';
-    const isFr = lang === 'fr';
-    const isDe = lang === 'de';
-    const isVi = lang === 'vi';
-    const isTh = lang === 'th';
-    const isId = lang === 'id';
     const syllableHtml = step.syllables.map(s =>
       `<span class="lr-syllable">${esc(s)}</span>`
     ).join('');
@@ -556,9 +805,9 @@ const StepRunner = (() => {
       ? `AudioCache.play('${esc(step.audio)}', this)`
       : `speakKorean('${esc(step.audio)}', this)`;
     const pronAid = getPronunciationAid(step);
-    const showPronInRomSlot = isZhTw;
-    const listenBtn = isJa ? '聴く' : isZhTw ? '聽' : isEs ? 'Escuchar' : isFr ? 'Écouter' : isDe ? 'Anhören' : isVi ? 'Nghe' : isTh ? 'ฟัง' : isId ? 'Dengarkan' : 'Listen';
-    const saidBtn   = isJa ? '言えた — 次へ' : isZhTw ? '我說了 — 下一個' : isEs ? 'Lo dije — Siguiente' : isFr ? 'Je l\'ai dit — Suivant' : isDe ? 'Gesagt — Weiter' : isVi ? 'Đã nói — Tiếp' : isTh ? 'พูดแล้ว — ถัดไป' : isId ? 'Sudah saya ucapkan — Lanjut' : 'I said it — Next';
+    const showPronInRomSlot = !!cap('pronInRomSlot');
+    const listenBtn = ui('listen');
+    const saidBtn   = ui('saidIt');
     const meaningEs = step.meaning_es;
     const meaningVi = step.meaning_vi;
     const meaningId = step.meaning_id;
@@ -566,7 +815,7 @@ const StepRunner = (() => {
       <div class="sr-listen-repeat">
         <div class="lr-word" data-count="${step.syllables.length}">${syllableHtml}</div>
         <div class="lr-rom">${esc(showPronInRomSlot && pronAid ? pronAid : step.romanization)}</div>
-        ${pronAid && isJa ? `<div class="kata">${esc(pronAid)}</div>` : ''}
+        ${pronAid && cap('pronAidRow') ? `<div class="kata">${esc(pronAid)}</div>` : ''}
         <div class="lr-meaning lr-meaning-en">${esc(step.meaning)}</div>
         ${step.meaning_ja ? `<div class="lr-meaning lr-meaning-ja">${esc(step.meaning_ja)}</div>` : ''}
         ${step.meaning_zh_tw ? `<div class="lr-meaning lr-meaning-zh-tw">${esc(step.meaning_zh_tw)}</div>` : ''}
@@ -631,23 +880,21 @@ const StepRunner = (() => {
      on `window.StrokeWriter`, which only learn/letter-writing.html loads.       */
 
   function renderStrokeDemo(step) {
-    const lang = _detectLang();
-    const isJa = lang === 'ja';
     const pronAid = getPronunciationAid(step);
-    const showPronInRomSlot = lang === 'zh-tw'; // Zhuyin replaces romanization slot
+    const showPronInRomSlot = !!cap('pronInRomSlot'); // Zhuyin replaces romanization slot
     const hint = loc(step, 'hint');
     const exMeaning = loc(step, 'example_meaning');
     // Same markup + handler pattern as the card_reveal audio button.
     const audioFnBtn = window.AudioCache
       ? `AudioCache.play('${esc(step.audio)}', this)`
       : `speakKorean('${esc(step.audio)}', this)`;
-    const hearBtn   = isJa ? '聴く' : lang === 'zh-tw' ? '聽' : lang === 'es' ? 'Escuchar' : lang === 'fr' ? 'Écouter' : lang === 'de' ? 'Anhören' : lang === 'vi' ? 'Nghe' : lang === 'th' ? 'ฟัง' : lang === 'id' ? 'Dengarkan' : 'Hear it';
-    const replayBtn = isJa ? 'もう一度' : lang === 'zh-tw' ? '重播' : lang === 'es' ? 'Repetir' : lang === 'fr' ? 'Rejouer' : lang === 'de' ? 'Nochmal' : lang === 'vi' ? 'Xem lại' : lang === 'th' ? 'เล่นซ้ำ' : lang === 'id' ? 'Putar ulang' : 'Replay';
+    const hearBtn   = ui('hear');
+    const replayBtn = ui('replay');
     return `
       <div class="sr-stroke-step">
         <div class="sr-char">${esc(step.char)}</div>
         <div class="sr-rom">${esc(showPronInRomSlot && pronAid ? pronAid : step.romanization)}</div>
-        ${pronAid && !showPronInRomSlot && isJa ? `<div class="kata">${esc(pronAid)}</div>` : ''}
+        ${pronAid && !showPronInRomSlot && cap('pronAidRow') ? `<div class="kata">${esc(pronAid)}</div>` : ''}
         <div class="sr-stroke-mount" id="sw-step-mount"></div>
         <div class="sr-stroke-actions">
           <button class="btn btn-secondary" onclick="StepRunner.strokeReplay()">↻ ${replayBtn}</button>
@@ -659,27 +906,10 @@ const StepRunner = (() => {
   }
 
   function renderStrokeTrace(step) {
-    const lang = _detectLang();
-    const isJa = lang === 'ja';
-    const isZhTw = lang === 'zh-tw';
-    const isEs = lang === 'es';
-    const isFr = lang === 'fr';
-    const isDe = lang === 'de';
-    const isVi = lang === 'vi';
-    const isTh = lang === 'th';
-    const isId = lang === 'id';
     const hint = loc(step, 'hint');
     // Wording tracks the widget's own "Write it yourself" mode label — the
     // engine tells the learner to DRAW, so this line must not say "trace".
-    const instruction = isJa ? '自分で書いてみましょう — 番号の順に一画ずつ書いてください。'
-      : isZhTw ? '親手寫寫看 — 依照編號順序逐筆書寫。'
-      : isEs ? 'Escríbelo tú mismo: dibuja cada trazo en el orden numerado.'
-      : isFr ? 'Écrivez-le vous-même : dessinez chaque trait dans l\'ordre numéroté.'
-      : isDe ? 'Schreibe es selbst — zeichne jeden Strich in der nummerierten Reihenfolge.'
-      : isVi ? 'Tự viết nhé — vẽ từng nét theo đúng thứ tự đánh số.'
-      : isTh ? 'เขียนด้วยตัวเอง — ลากทีละเส้นตามลำดับหมายเลข'
-      : isId ? 'Tulis sendiri — gambar setiap goresan sesuai urutan nomor.'
-      : 'Write it yourself — draw each stroke in the numbered order.';
+    const instruction = ui('tracePrompt');
     return `
       <div class="sr-stroke-step">
         <p class="sr-quiz-prompt">${instruction}</p>
@@ -687,7 +917,7 @@ const StepRunner = (() => {
         ${hint ? `<div class="sr-hint">💡 ${esc(hint)}</div>` : ''}
         <div class="sr-stroke-actions">
           <button class="btn btn-primary" id="sw-continue" style="display:none"
-            onclick="StepRunner.stepContinue()">${continueLabel(lang)} →</button>
+            onclick="StepRunner.stepContinue()">${continueLabel()} →</button>
         </div>
       </div>`;
   }
@@ -753,8 +983,8 @@ const StepRunner = (() => {
      TypingGame.mountStep; keep these renderers thin.                         */
 
   /* The Continue label is identical for stroke_trace and both typing steps. */
-  function continueLabel(lang) {
-    return lang === 'ja' ? '次へ' : lang === 'zh-tw' ? '下一步' : lang === 'es' ? 'Continuar' : lang === 'fr' ? 'Continuer' : lang === 'de' ? 'Weiter' : lang === 'vi' ? 'Tiếp tục' : lang === 'th' ? 'ต่อไป' : lang === 'id' ? 'Lanjutkan' : 'Continue';
+  function continueLabel() {
+    return ui('continue');
   }
 
   /* key_intro / typing_drill author `tip` as a plain STRING, unlike
@@ -768,43 +998,27 @@ const StepRunner = (() => {
   }
 
   /* Mount + hidden continue button, shared by both typing renderers. */
-  function typingMountHtml(lang) {
+  function typingMountHtml() {
     return `
         <div class="sr-typing-mount" id="kb-step-mount"></div>
         <div class="sr-stroke-actions">
           <button class="btn btn-primary" id="kb-continue" style="display:none"
-            onclick="StepRunner.stepContinue()">${continueLabel(lang)} →</button>
+            onclick="StepRunner.stepContinue()">${continueLabel()} →</button>
         </div>`;
   }
 
   function renderKeyIntro(step) {
-    const lang = _detectLang();
     // step.jamo is an array of 1–3 chars in the JSON, but tolerate a bare
     // string so a malformed step degrades to a bare title instead of "undefined".
     const jamo = Array.isArray(step.jamo) ? step.jamo.join(' ') : (step.jamo || '');
-    const titleWord = lang === 'ja' ? '新しいキー'
-      : lang === 'zh-tw' ? '新按鍵'
-      : lang === 'es' ? 'Teclas nuevas'
-      : lang === 'fr' ? 'Nouvelles touches'
-      : lang === 'de' ? 'Neue Tasten'
-      : lang === 'vi' ? 'Phím mới'
-      : lang === 'th' ? 'ปุ่มใหม่'
-      : lang === 'id' ? 'Tombol baru'
-      : 'New keys';
+    const titleWord = ui('keysTitle');
     // A JSON-authored title always wins; the generated one is the fallback so
     // stage 2–4 steps need no title field at all.
-    // CJK copy takes the fullwidth colon; every other locale the ASCII one.
-    const colon = (lang === 'ja' || lang === 'zh-tw') ? '：' : ': ';
+    // CJK copy takes the fullwidth colon; every other locale the ASCII one —
+    // hence `keysColon` is a per-locale SR_UI value, not a hardcoded branch.
+    const colon = ui('keysColon');
     const title = loc(step, 'title') || (jamo ? `${titleWord}${colon}${jamo}` : titleWord);
-    const instruction = lang === 'ja' ? 'ハイライトされたキーを、指が覚えるまで押してみましょう。物理キーボードでも画面のキーでも構いません。'
-      : lang === 'zh-tw' ? '按下每個highlight的按鍵，直到手指記住為止。實體鍵盤或螢幕鍵盤都可以。'
-      : lang === 'es' ? 'Pulsa cada tecla resaltada hasta que te salga sola: sirve tu teclado o las teclas en pantalla.'
-      : lang === 'fr' ? 'Appuyez sur chaque touche mise en évidence jusqu\'à ce que le geste devienne automatique : clavier physique ou touches à l\'écran.'
-      : lang === 'de' ? 'Drücke jede hervorgehobene Taste, bis sie sitzt — Tastatur oder Bildschirmtasten funktionieren beide.'
-      : lang === 'vi' ? 'Nhấn từng phím được làm nổi bật cho đến khi thành phản xạ — bàn phím thật hoặc bàn phím trên màn hình đều được.'
-      : lang === 'th' ? 'กดปุ่มที่ไฮไลต์แต่ละปุ่มจนคุ้นมือ ใช้คีย์บอร์ดจริงหรือแป้นบนหน้าจอก็ได้'
-      : lang === 'id' ? 'Tekan setiap tombol yang disorot sampai terasa otomatis — keyboard fisik maupun tombol di layar sama-sama bisa.'
-      : 'Press each highlighted key until it feels automatic — your keyboard or the on-screen keys both work.';
+    const instruction = ui('keysInstruction');
     // The --intro modifier is the shared contract with css/style.css: it lets
     // the stylesheet widen the key_intro step and kill its stranded height
     // WITHOUT touching typing_drill, which keeps the bare .sr-typing-step.
@@ -812,40 +1026,22 @@ const StepRunner = (() => {
       <div class="sr-typing-step sr-typing-step--intro">
         <h2 class="sr-reading-title">${esc(title)}</h2>
         <p class="sr-quiz-prompt">${esc(loc(step, 'instruction') || instruction)}</p>
-        ${typingMountHtml(lang)}
+        ${typingMountHtml()}
         ${typingTipHtml(step)}
       </div>`;
   }
 
   function renderTypingDrill(step) {
-    const lang = _detectLang();
+    // step.mode is content, not locale — it stays a conditional.
     const mode = step.mode === 'syllable' ? 'syllable' : step.mode === 'word' ? 'word' : 'jamo';
-    const titles = {
-      ja:      { jamo: '字母ドリル',            syllable: '音節ドリル',        word: '単語ドリル' },
-      'zh-tw': { jamo: '字母練習',              syllable: '音節練習',          word: '單字練習' },
-      es:      { jamo: 'Práctica de jamo',      syllable: 'Práctica de sílabas', word: 'Práctica de palabras' },
-      fr:      { jamo: 'Exercice de jamo',      syllable: 'Exercice de syllabes', word: 'Exercice de mots' },
-      de:      { jamo: 'Jamo-Übung',            syllable: 'Silben-Übung',      word: 'Wort-Übung' },
-      vi:      { jamo: 'Luyện jamo',            syllable: 'Luyện âm tiết',     word: 'Luyện từ' },
-      th:      { jamo: 'ฝึกพยัญชนะและสระ',        syllable: 'ฝึกพยางค์',          word: 'ฝึกคำศัพท์' },
-      id:      { jamo: 'Latihan jamo',          syllable: 'Latihan suku kata', word: 'Latihan kata' },
-      en:      { jamo: 'Jamo drill',            syllable: 'Syllable drill',    word: 'Word drill' },
-    };
-    const title = loc(step, 'title') || (titles[lang] || titles.en)[mode];
-    const instruction = lang === 'ja' ? '表示されたものを入力しましょう。まずは正確さ、スピードは後からついてきます。'
-      : lang === 'zh-tw' ? '照著畫面上的內容輸入。先求正確，速度自然會跟上。'
-      : lang === 'es' ? 'Escribe lo que ves. Primero la precisión; la velocidad llega sola.'
-      : lang === 'fr' ? 'Tapez ce que vous voyez. La précision d\'abord, la vitesse suivra.'
-      : lang === 'de' ? 'Tippe, was du siehst. Erst die Genauigkeit — das Tempo kommt von selbst.'
-      : lang === 'vi' ? 'Gõ đúng những gì bạn thấy. Chính xác trước, tốc độ theo sau.'
-      : lang === 'th' ? 'พิมพ์ตามที่เห็น เน้นความแม่นยำก่อน แล้วความเร็วจะตามมาเอง'
-      : lang === 'id' ? 'Ketik apa yang kamu lihat. Utamakan akurasi — kecepatan menyusul.'
-      : 'Type what you see. Accuracy first — speed follows.';
+    const titleKeys = { jamo: 'drillJamo', syllable: 'drillSyllable', word: 'drillWord' };
+    const title = loc(step, 'title') || ui(titleKeys[mode]);
+    const instruction = ui('drillInstruction');
     return `
       <div class="sr-typing-step">
         <h2 class="sr-reading-title">${esc(title)}</h2>
         <p class="sr-quiz-prompt">${esc(loc(step, 'instruction') || instruction)}</p>
-        ${typingMountHtml(lang)}
+        ${typingMountHtml()}
         ${typingTipHtml(step)}
       </div>`;
   }
@@ -991,26 +1187,11 @@ const StepRunner = (() => {
       const completed = index + 1;
       const remaining = total - completed;
       const timeLeft = Math.round((remaining * 60) / 60);
-      const lang = _detectLang();
-      if (lang === 'ja') {
-        meta.textContent = `ステージ ${stageId}／${lessonData.stages.length} · 残り約${timeLeft}分`;
-      } else if (lang === 'zh-tw') {
-        meta.textContent = `第 ${stageId} 階段（共 ${lessonData.stages.length} 個）· 約剩 ${timeLeft} 分鐘`;
-      } else if (lang === 'es') {
-        meta.textContent = `Etapa ${stageId} de ${lessonData.stages.length} · ~${timeLeft} min restantes`;
-      } else if (lang === 'fr') {
-        meta.textContent = `Étape ${stageId} sur ${lessonData.stages.length} · ~${timeLeft} min restantes`;
-      } else if (lang === 'de') {
-        meta.textContent = `Phase ${stageId} von ${lessonData.stages.length} · ~${timeLeft} Min. verbleibend`;
-      } else if (lang === 'vi') {
-        meta.textContent = `Giai đoạn ${stageId} / ${lessonData.stages.length} · ~${timeLeft} phút còn lại`;
-      } else if (lang === 'th') {
-        meta.textContent = `ขั้นตอนที่ ${stageId} จาก ${lessonData.stages.length} · ~${timeLeft} นาทีที่เหลือ`;
-      } else if (lang === 'id') {
-        meta.textContent = `Tahap ${stageId} dari ${lessonData.stages.length} · ~${timeLeft} menit tersisa`;
-      } else {
-        meta.textContent = `Stage ${stageId} of ${lessonData.stages.length} · ~${timeLeft} min remaining`;
-      }
+      meta.textContent = fmt(ui('progressMeta'), {
+        stage: stageId,
+        total: lessonData.stages.length,
+        min: timeLeft,
+      });
     }
   }
 

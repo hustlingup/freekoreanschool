@@ -1,4 +1,31 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/culture/traditions",
+      "destination": "/culture/koreanthing",
+      "permanent": true
+    },
+    {
+      "source": "/culture/:locale(ja|zh-tw|es|de|fr|vi|th|id)/traditions",
+      "destination": "/culture/:locale/koreanthing",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(ja|zh-tw|es|de|fr|vi|th|id)/culture",
+      "destination": "/culture/:locale",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(ja|zh-tw|es|de|fr|vi|th|id)/travel",
+      "destination": "/travel/:locale",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(ja|zh-tw|es|de|fr|vi|th|id)/learn",
+      "destination": "/learn/:locale/hangul",
+      "permanent": true
+    }
+  ]
 }

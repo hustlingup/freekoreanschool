@@ -15,7 +15,7 @@ node dev.js        # serves on http://localhost:3000
 
 ## Scripts
 
-All automation lives in `scripts/`. Dependencies: `@anthropic-ai/sdk`, `@supabase/supabase-js`, `dotenv`. Install with `npm install` from the root (package.json is at root).
+All automation lives in `scripts/`. Dependencies: `@anthropic-ai/sdk`, `@supabase/supabase-js`, `dotenv`. Install with `npm install` from **`scripts/`** — the only package.json is `scripts/package.json`. There is **no root package.json**, and `.vercelignore` excludes both it and `scripts/` from deploys. Consequence: root-level code that ships to production (`middleware.js`, `api/*.js`) can have **no npm dependencies at all**, and cannot rely on a root `"type": "module"` declaration.
 
 ```bash
 # Translation coverage auditing
@@ -63,6 +63,18 @@ node scripts/apply-content-translations.cjs <lang> <corrections.json> [--dry]
 # only text nodes; never touches markup, <head>, or the #lesson-static block.
 node scripts/translate-learn-shell.cjs --extract <lesson> <locale>   # dump TODO
 node scripts/translate-learn-shell.cjs --apply   <lesson> <locale|all>
+
+# ⚠️ --include-mixed surfaces text nodes that contain BOTH Hangul and English
+# prose ("Formal Speech in Business (격식체)"). The default skip-anything-with-
+# Hangul rule protects the Korean being taught but also HID this class: 432
+# such nodes were still English across all 9 locales as of 2026-08-13 (pt-br 89,
+# de 61, vi 56, es/fr/th/id ~51 each, ja 13, zh-tw 7) on pages every audit
+# reported as fully translated. A node counts as mixed only if it carries an
+# English function word, so romanization ("가다 (gada)") stays protected.
+# --apply REFUSES any entry whose value drops or alters Hangul present in the
+# key, comparing the character multiset — so this write path cannot corrupt
+# the Korean. Only pt-br has been cleared; the other ~343 are open.
+node scripts/translate-learn-shell.cjs --extract <lesson> <locale> --include-mixed
 
 # Locale-field backfill for learn/data/*.json (idempotent, never overwrites).
 # Rerun gen-lesson-static.cjs after either.
@@ -113,6 +125,15 @@ node scripts/fix-es-proverbs-hangul.cjs [--check]
 # tags nothing. Kept for the case coverage ever regresses.
 node scripts/noindex-untranslated-vocab.cjs [--check|--lift <locale>]
 
+# Keep learn/vocabulary-browser + learn/flashcard out of the index (18 pages).
+# They embed the SAME word bank as learn/vocabulary, so their main-content text
+# is 97.9-98.3% identical to it (Jaccard) at ~9,200 words each — the site's
+# largest block of internal duplicate content, and the three longest pages under
+# learn/, which is why they flattered every median-word-count audit.
+# `vocabulary` is the lesson and stays indexable; these two are tools.
+# Rerun gen-sitemap.cjs afterwards (drops 18 URLs).
+node scripts/noindex-vocab-tools.cjs [--check|--lift]
+
 # News-section removal (2026-07-21) — idempotent, marker-guarded. Kept as the
 # record of what was stripped; rerun only to re-clean if a generator script
 # reintroduces a news nav link.
@@ -161,7 +182,20 @@ Each learn page (`learn/hangul.html`, etc.) is a static HTML shell with an empty
 **Step types**: `reading_card`, `card_reveal`, `listen_repeat`, `match_quiz`, `syllable_builder`, `lesson_complete`. These six are the complete set — every other type this file used to list (`conjugation_practice`, `choose_syllables`, `copy_phrase`, `write_answer`, `group_by_type`, `drag_reorder`) appears in no lesson JSON and has no renderer.
 
 #### Static lesson content (`#lesson-static`) — SEO-critical
-A lesson renders only ONE step per `?step=N` URL, so the shell alone was ~62 crawler-visible words. That was the primary cause of the 2026-07 AdSense "Low value content" rejection. `scripts/gen-lesson-static.cjs` now pre-renders the *entire* lesson from the JSON as semantic HTML into `<details id="lesson-static">`, taking each page to a median 2,468 words. `step-runner.js` calls `hydrateStaticReference()` after the first successful `renderStep()`, which only removes the `open` attribute — the content stays in the DOM and stays reachable. This is progressive enhancement, not cloaking; do not change it to `display:none`.
+A lesson renders only ONE step per `?step=N` URL, so the shell alone was ~62 crawler-visible words. That was the primary cause of the 2026-07 AdSense "Low value content" rejection. `scripts/gen-lesson-static.cjs` pre-renders the *entire* lesson from the JSON as semantic HTML into `<section id="lesson-static">`, taking each page to a median 2,735 words.
+
+⚠️ **It is a `<section>`, not a `<details>`, and nothing collapses it. Do not
+reintroduce the accordion.** Until 2026-08-12 the block shipped as
+`<details open>` and `step-runner.js` stripped the `open` attribute after the
+first successful `renderStep()` (`hydrateStaticReference()`, now deleted);
+`vocabulary-browser.html` shipped its own inline MutationObserver doing the
+same. A crawler reads the DOM and saw the full word count either way — which
+is why every word-count audit passed — but a **human** AdSense reviewer sees
+the rendered default state, and that state was a breadcrumb, four stat badges,
+"Loading lesson…", one interactive step and a closed accordion: roughly 55
+words of prose, on 126 pages. That is the most likely cause of the third
+"Low value content" rejection (2026-08-12). Never hide it with `display:none`
+either.
 
 ⚠️ `#lesson-static` MUST be a sibling **after** `#step-shell`, never inside it. `buildShell()` does `innerHTML =` on `#step-shell`, so a nested block is destroyed on hydration.
 

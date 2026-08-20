@@ -12,14 +12,69 @@
 
 const fs = require('fs');
 const path = require('path');
+const { live } = require('./_locales.cjs');
 
 const ROOT = path.join(__dirname, '..');
 const BASE = 'https://freekoreanschool.com';
 const TODAY = new Date().toISOString().slice(0, 10);
 
-// Languages beyond English. Each maps to its own URL segment.
-const LANGS = ['ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
-const ALL_LOCALES = ['en', ...LANGS];
+/* ── Per-file <lastmod>, from real git history ────────────────────────────
+   Every URL used to be stamped with TODAY, so all 378 entries carried an
+   identical date that advanced on every regeneration. A sitemap whose every
+   lastmod moves in lockstep tells Google nothing, and Google stops reading
+   the field for the whole site once it notices.
+
+   One `git log` pass, newest commit first, listing the files each commit
+   touched: the first date a path appears under is its true last-modified
+   date. Files git has never seen (untracked, or a checkout with no history)
+   fall back to TODAY, which is the honest answer for a brand-new page.      */
+const gitDates = (() => {
+  const map = new Map();
+  try {
+    const raw = require('child_process').execSync(
+      'git log --pretty=format:%x00%cs --name-only --no-renames',
+      { cwd: ROOT, encoding: 'utf8', maxBuffer: 256 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }
+    );
+    let date = null;
+    for (const line of raw.split('\n')) {
+      if (line.startsWith('\0')) { date = line.slice(1).trim(); continue; }
+      const p = line.trim();
+      // First sighting wins — the log is newest-first.
+      if (p && date && !map.has(p)) map.set(p, date);
+    }
+  } catch {
+    // No git, or not a repo. Everything falls back to TODAY below.
+  }
+  return map;
+})();
+
+function lastmodFor(file) {
+  return gitDates.get(file.split(path.sep).join('/')) || TODAY;
+}
+
+/* ── Locales, from the registry (scripts/_locales.cjs) ─────────────────────
+   Only `status: 'live'` locales are emitted: a 'planned' locale has no pages
+   on disk, and listing one would put 404s in the sitemap.
+
+   ⚠️ EMISSION ORDER. The registry's own order is en, zh-tw, ja, es, fr, de,
+   vi, th, id. This script has emitted en, ja, zh-tw, es, de, fr, vi, th, id
+   into the committed sitemap.xml since it was written. hreflang order and
+   <url> order are both semantically irrelevant to Google, but reordering
+   would rewrite all 378 <url> blocks for no benefit and bury any real future
+   change in the noise. So the legacy order is preserved explicitly here and
+   NEW locales append after it in registry order. The SET is the registry's;
+   only the sequence is pinned. */
+const LEGACY_ORDER = ['en', 'ja', 'zh-tw', 'es', 'de', 'fr', 'vi', 'th', 'id'];
+const LOCALES = live()
+  .map((l, i) => ({ l, i }))
+  .sort((a, b) => {
+    const ra = LEGACY_ORDER.indexOf(a.l.code), rb = LEGACY_ORDER.indexOf(b.l.code);
+    return (ra < 0 ? LEGACY_ORDER.length : ra) - (rb < 0 ? LEGACY_ORDER.length : rb) || a.i - b.i;
+  })
+  .map(x => x.l);
+const ALL_LOCALES = LOCALES.map(l => l.code);
+/* directory segment -> BCP-47 hreflang code (`zh-tw` ships as `zh-TW`) */
+const HREFLANG = Object.fromEntries(LOCALES.map(l => [l.code, l.hreflang]));
 
 // Root-level pages are enumerated explicitly because the root directory also
 // holds non-page HTML. Everything else is discovered from the filesystem so a
@@ -143,7 +198,7 @@ function renderUrlBlock(page, cluster) {
   const alternates = cluster
     .slice()
     .sort((a, b) => ALL_LOCALES.indexOf(a.locale) - ALL_LOCALES.indexOf(b.locale))
-    .map(c => `    <xhtml:link rel="alternate" hreflang="${c.locale === 'zh-tw' ? 'zh-TW' : c.locale}" href="${c.url}"/>`);
+    .map(c => `    <xhtml:link rel="alternate" hreflang="${HREFLANG[c.locale]}" href="${c.url}"/>`);
 
   const enEntry = cluster.find(c => c.locale === 'en');
   const xDefault = enEntry
@@ -153,7 +208,7 @@ function renderUrlBlock(page, cluster) {
   return [
     '  <url>',
     `    <loc>${page.url}</loc>`,
-    `    <lastmod>${TODAY}</lastmod>`,
+    `    <lastmod>${lastmodFor(page.file)}</lastmod>`,
     `    <changefreq>${page.changefreq}</changefreq>`,
     `    <priority>${page.priority}</priority>`,
     ...alternates,
