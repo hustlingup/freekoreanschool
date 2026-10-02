@@ -36,6 +36,8 @@
 const fs = require('fs');
 const path = require('path');
 const REG = require('./_locales.cjs');
+const COURSE = require('./_course-labels.cjs');
+let quizGroup = 0;
 
 const ROOT = path.join(__dirname, '..');
 const LEARN = path.join(ROOT, 'learn');
@@ -438,18 +440,22 @@ function renderBuilderTable(steps, lang, t) {
 
 /** match_quiz run → a Q&A list with the answers shown (reference, not a test). */
 function renderQuizList(steps, lang, t) {
-  const out = [`<h3 class="ls-h3">${esc(t.sQuiz)}</h3>`, '<dl class="ls-qa">'];
+  const c=COURSE[lang] || COURSE.en;
+  const group=++quizGroup;
+  const out = [`<h3 class="ls-h3">${esc(t.sQuiz)}</h3>`, `<form class="study-practice" data-practice="lesson-${group}">`];
   for (const s of steps) {
     const prompt = loc(s, 'prompt', lang) || s.prompt;
     const choices = loc(s, 'choices', lang) || s.choices || [];
     const srcChoices = s.choices || [];
     const ci = srcChoices.indexOf(s.correct);
     const answer = (ci !== -1 && choices[ci] != null) ? choices[ci] : s.correct;
-    out.push(`<dt>${esc(prompt)}</dt>`);
-    const opts = choices.length ? ` <span class="ls-aid">(${choices.map(c => esc(c)).join(' · ')})</span>` : '';
-    out.push(`<dd><strong>${esc(t.answer)}:</strong> ${esc(answer)}${opts}</dd>`);
+    if (ci >= 0 && choices.length) {
+      out.push(`<fieldset class="study-question" data-correct="${ci}"><legend>${esc(prompt)}</legend>`);
+      choices.forEach((choice,i)=>out.push(`<label><input type="radio" name="lesson-${group}-${s.id}" value="${i}"><span>${esc(choice)}</span></label>`));
+      out.push(`<p class="study-feedback" aria-live="polite"></p><details class="study-answer"><summary>${esc(c.answer)}</summary><p>${esc(answer)}</p></details></fieldset>`);
+    } else out.push(`<p>${esc(prompt)}</p><p><strong>${esc(c.answer)}:</strong> ${esc(answer)}</p>`);
   }
-  out.push('</dl>');
+  out.push(`<button class="btn btn-primary" type="submit">${esc(c.check)}</button> <button class="btn btn-outline" type="reset">${esc(c.reset)}</button><p class="study-score" role="status"></p></form>`);
   return out.join('\n');
 }
 
@@ -595,11 +601,10 @@ function renderLesson(data, lang, t, opts = {}) {
     const steps = byStage.get(stage.id) || [];
     if (!steps.length) continue;
     const name = loc(stage, 'name', lang) || stage.name;
-    const heading = opts.headingPrefix
-      ? `${opts.headingPrefix}${name ? ' — ' : ''}${esc(name)}`
-      : `${esc(stageWord)} ${stage.id}${name ? ' · ' + esc(name) : ''}`;
-    out.push('<section class="ls-stage">');
-    out.push(`<h2 class="ls-h2">${heading}${stage.name_kr ? ` <span class="ls-kr">${ko(stage.name_kr)}</span>` : ''}</h2>`);
+    const heading = esc(name || stageWord);
+    const id=String(data.lesson || 'lesson').replace(/[^a-z0-9-]/gi,'-')+'-section-'+stage.id;
+    out.push(`<section class="ls-stage" id="${id}" data-first-step="${stage.first_step || 1}" data-last-step="${stage.last_step || data.steps.length}">`);
+    out.push(`<h2 class="ls-h2">${heading}${stage.name_kr && !String(name).includes(stage.name_kr) ? ` <span class="ls-kr">${ko(stage.name_kr)}</span>` : ''}</h2>`);
 
     // Walk the stage, batching contiguous runs of the same grouped type.
     let i = 0;
@@ -624,7 +629,7 @@ function renderLesson(data, lang, t, opts = {}) {
         out.push(renderReadingCard(steps[i], lang, t));
         i++;
       } else if (type === 'lesson_complete') {
-        out.push(renderComplete(steps[i], lang, t));
+        // Completion celebrations belong to recorded progress, not an unread article.
         i++;
       } else {
         unhandled.add(type);
@@ -662,6 +667,7 @@ const STYLE = `<style>
 
 /* ── Block assembly ──────────────────────────────────────────────────────── */
 function buildBlock(lang, lessons, opts = {}) {
+  quizGroup = 0;
   /* A locale with no entry in L used to crash here with a bare
      "Cannot read properties of undefined (reading 'intro')" — 100 lines of
      stack and no clue that the fix is "add a block to L". Fall back to
@@ -682,9 +688,7 @@ function buildBlock(lang, lessons, opts = {}) {
     ? lessons.length
     : lessons.reduce((n, l) => n + (l.data.stages ? l.data.stages.length : 1), 0);
 
-  const intro = fill(opts.isVocab ? t.vocabIntro : t.intro, {
-    steps: totalSteps, stages: totalStages,
-  });
+  const intro = (COURSE[lang] || COURSE.en).intro;
 
   const body = lessons.map((l, idx) => {
     if (opts.isVocab) {
@@ -759,7 +763,7 @@ function lesson(name) {
 let written = 0, skipped = 0;
 const missing = [];
 
-for (const lang of LOCALES) {
+if (require.main === module) for (const lang of LOCALES) {
   const dir = lang === 'en' ? LEARN : path.join(LEARN, lang);
   if (!fs.existsSync(dir)) { missing.push(dir); continue; }
 
@@ -777,6 +781,8 @@ for (const lang of LOCALES) {
     const block = buildBlock(lang, lessons, { isVocab });
 
     const html = fs.readFileSync(file, 'utf8');
+    // Reading pages own their layout; do not re-add word banks to practice tools.
+    if ((page===BROWSER_PAGE || page===FLASHCARD_PAGE) && html.includes('course-page')) { skipped++; continue; }
     const anchor = ANCHORS[page] || DEFAULT_ANCHOR;
     let out = splice(html, block, anchor);
 
@@ -802,7 +808,10 @@ for (const lang of LOCALES) {
   console.log(`✓ ${lang}`);
 }
 
+if (require.main === module) {
 console.log(`\n${DRY ? '[dry run] ' : ''}${written} pages updated, ${skipped} unchanged/skipped.`);
 if (missing.length) console.log(`Missing files: ${missing.length}\n  ` + missing.slice(0, 10).join('\n  '));
 if (unhandled.size) console.log(`\n⚠ step types with no static representation: ${[...unhandled].join(', ')}`);
 else console.log('\nAll step types represented statically.');
+}
+module.exports={buildBlock,PAGES,START,END};

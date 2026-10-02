@@ -1,0 +1,152 @@
+/* Shared browsing and study experience. Content remains available without JS. */
+.experience-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.course-page [hidden]{display:none!important}
+body.course-page{--experience-ink:#193c32;--experience-warm:#a9472c;--accent:#89552f}
+.course-header{max-width:1280px;padding:22px 40px}
+.course-header .nav-links{gap:28px}
+.course-header .nav-links a{position:relative;color:#526057;padding:12px 0;text-decoration:none}
+.course-header .nav-links a[aria-current=page]{color:#164e40;font-weight:750}
+.course-header .nav-links a[aria-current=page]::after{content:"";height:3px;background:#186554;position:absolute;bottom:0;left:0;right:0;border-radius:4px}
+.course-layout{max-width:1280px;gap:48px;padding:40px 40px 72px}
+.course-toc{border-top:2px solid #244e40;padding-top:20px}
+.course-page-index a{display:block;color:#526057;text-decoration:none;padding:5px 8px;border-radius:5px}
+.course-page-index a:hover,.course-page-index a[aria-current=location]{background:#e7ece3;color:#164e40}
+.course-page-index a[aria-current=location]{font-weight:700;box-shadow:inset 3px 0 #186554}
+.course-page-index li{padding:0}
+.course-page-index>ol{padding-left:24px}
+.course-page .course-title-block{padding-bottom:28px;margin-bottom:36px}
+.course-page .course-content h1{font-size:clamp(2.2rem,4.3vw,3.7rem);letter-spacing:-.055em;line-height:1.1}
+.course-page .course-content p{line-height:1.8}
+.course-page .course-content .ls-stage{padding-top:8px}
+.course-page .course-table-wrap{box-shadow:0 3px 0 #e9ece4;border-radius:10px}
+.course-page .course-table-wrap tbody tr:hover{background:#f4f7f1}
+.course-page .course-audio{min-width:40px;min-height:40px}
+.course-page .study-question label{min-height:48px;transition:background .15s,border-color .15s}
+.course-page .study-question label:hover{background:#f4f7f1;border-color:#8da496}
+.course-page .study-question label:has(input:checked){background:#eaf2ea;border-color:#186554;box-shadow:inset 3px 0 #186554}
+.course-page .study-question[data-result=retry] label:has(input:checked){background:#fff0e9;border-color:#ae4b30;box-shadow:inset 3px 0 #ae4b30}
+.experience-eyebrow{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;font-weight:750;color:#546258;margin:0 0 12px!important}
+.experience-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:24px}
+.experience-toolbar button,.experience-small-button{font:inherit;font-size:.78rem;font-weight:650;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:9px 13px;color:#315648;background:#fff;border:1px solid #cbd6cb;border-radius:7px;cursor:pointer}
+.experience-toolbar button[aria-pressed=true]{background:#e4eee4;border-color:#739181}
+.experience-toolbar svg{width:16px;height:16px}
+.experience-storage-note{font-size:.73rem;color:#626c63;flex-basis:100%;margin:0!important}
+.experience-reading-line{height:3px;background:#186554;position:fixed;top:0;left:0;width:100%;transform:scaleX(0);transform-origin:left;z-index:1000;pointer-events:none}
+.experience-next{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px;margin:48px 0 0;border:1px solid #cad6c9;background:#eaf0e6;border-radius:12px}
+.experience-next>div>a{font-size:1.2rem;line-height:1.4;font-weight:700;text-decoration:none}
+.experience-next .btn{flex-shrink:0}
+.experience-hub .course-layout{display:block}
+.experience-hub .course-toc{display:none}
+.experience-hub .course-content{max-width:none}
+.experience-hub .course-content>.travel-section,.experience-hub .course-content>.travel-section-alt{padding:48px 0;background:none}
+.experience-hub .course-content>.travel-section>.container,.experience-hub .course-content>.travel-section-alt>.container{padding:0;max-width:none!important}
+.experience-hub .course-content>.travel-section>.container>.animate-on-scroll>p{max-width:80ch}
+.experience-hub .course-content .text-center{text-align:left}
+.experience-hub .course-content .section-desc{margin:0!important;max-width:72ch}
+.experience-hub .hub-hero{grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);padding:48px;gap:56px;border:0;border-radius:16px;background:#e9eee3;overflow:hidden;margin-bottom:24px}
+.experience-hub .hub-hero .hub-hero-title{font-size:clamp(2.6rem,5vw,4.6rem);max-width:12ch;letter-spacing:-.055em;line-height:1.04;margin:0 0 24px}
+.experience-hub .hub-hero .hub-hero-eyebrow{font-size:.69rem;letter-spacing:.12em}
+.experience-hub .hub-hero .hub-hero-lead{max-width:50ch;font-size:1rem}
+.experience-hub .hub-hero-routes{background:#f9faf6;border:0;padding:26px;border-radius:10px;align-self:center;box-shadow:0 6px 24px #183b3210}
+.experience-hub .hub-hero-route-list{display:grid;grid-template-columns:1fr}
+.experience-hub .hub-hero--travel{background:#ecebe1}
+.experience-hub .hub-hero--culture{background:#efe6dc}
+.experience-hub .hub-hero .hub-hero-meta{border-color:#cccfc3;font-size:.7rem}
+.experience-jumps{display:flex;flex-wrap:wrap;gap:8px 18px;padding:14px 0 22px;border-bottom:1px solid #d5dbd1}
+.experience-jumps a{font-size:.76rem;color:#475b4e;text-decoration:none;padding:5px 0}
+.experience-jumps a:hover{text-decoration:underline}
+.course-page .travel-promo-grid{gap:18px}
+.experience-hub .travel-promo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.experience-hub .travel-promo-card{display:flex;align-items:flex-start;position:relative;gap:0;flex-direction:column;padding:26px;background:#fff;border:1px solid #d4dbd3;border-radius:10px;text-decoration:none;box-shadow:none;transition:transform .18s,border-color .18s}
+.experience-hub .travel-promo-card:hover{transform:translateY(-3px);border-color:#6e917b;background:#fff;box-shadow:0 8px 24px #14342609}
+.experience-hub .experience-card-number{font-size:.75rem;font-weight:700;color:#907967;margin-bottom:22px}
+.experience-hub .travel-promo-label{font-size:.67rem;letter-spacing:.04em;color:#656d61}
+.experience-hub .travel-promo-title{font-size:1.35rem;line-height:1.35;letter-spacing:-.025em;color:#243c30;margin:6px 0 12px}
+.experience-hub .travel-promo-desc{font-size:.83rem;line-height:1.7;color:#546157}
+.experience-hub .travel-promo-card .kr-trans{font-size:.75rem;line-height:1.75;margin-top:16px;padding-top:14px;border-top:1px solid #e7ebe3;color:#697167}
+.experience-hub .travel-promo-arrow{position:absolute;right:24px;top:22px;font-size:1.4rem;color:#607b68}
+.experience-hub .destinations-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.experience-hub .place-card{border:1px solid #d4dbd3;border-radius:12px;background:#fff;box-shadow:none;overflow:hidden}
+.experience-hub .place-image{height:210px}
+.experience-hub .place-body{padding:22px}
+.experience-hub .place-name{font-size:1.25rem!important;margin-top:0!important}
+.learn-hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);align-items:center;gap:48px;padding:32px 0 56px}
+.course-page .learn-hero h1{font-size:clamp(3rem,5.6vw,5.1rem);max-width:12ch;margin:18px 0 24px;line-height:1.02;color:#183e32}
+.experience-lead{max-width:49ch;color:#546157;font-size:1.03rem}
+.experience-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.course-page .experience-actions .btn{padding:12px 20px;border-radius:7px;gap:16px;font-size:.84rem}
+.hangul-art{background:#e8eee1;min-height:310px;border-radius:100px 12px 12px 12px;padding:32px;text-align:center;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hangul-art-label{font-size:.9rem;color:#486347;letter-spacing:.2em;margin-bottom:20px}
+.hangul-art>div{display:flex;align-items:center;justify-content:center;gap:14px}
+.hangul-art>div>span{font-family:var(--font-korean);font-size:5.3rem;font-weight:700;line-height:1.4;display:grid;place-items:center;width:130px;height:140px;background:#fffdf6;border:1px solid #d3dccd;border-radius:14px;color:#214b3d;transform:rotate(-7deg);box-shadow:0 6px 0 #ced7c5}
+.hangul-art>div>span+span{transform:rotate(7deg);background:#c87956;color:#fffaf3;border-color:#ba6848;box-shadow:0 6px 0 #b46546}
+.hangul-art-note{font-size:1.1rem;color:#486347;letter-spacing:.15em;margin-top:28px}
+.learning-path{display:grid;grid-template-columns:240px 1fr;gap:36px;padding:30px 0;border-top:1px solid #d4dbd3;border-bottom:1px solid #d4dbd3;margin-bottom:54px}
+.learning-path h2{font-size:1.25rem!important;margin:0!important}
+.learning-path ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;list-style:none;margin:0;padding:0}
+.learning-path li a{display:flex;gap:12px;align-items:center;font-size:.83rem;line-height:1.5;text-decoration:none;height:100%}
+.learning-path li a>span:first-child{font-size:.75rem;color:#805c3e}
+.learning-path li a>span:last-child{margin-left:auto}
+.experience-section-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:24px}
+.experience-section-heading h2{margin:0!important;font-size:2rem!important}
+.experience-count{font-size:.9rem;color:#566750;padding:8px 15px;border:1px solid #cbd6c9;border-radius:30px}
+.explore-filter{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin:24px 0}
+.explore-search{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #cbd6c9;border-radius:8px;min-width:0;flex:1 1 240px;padding:0 14px;min-height:48px}
+.explore-search svg{width:18px;height:18px;color:#697768;flex-shrink:0}
+.explore-search input{font:inherit;font-size:.85rem;background:transparent;border:0;outline:0;min-width:0;width:100%;color:#233e31;padding:12px 0}
+.explore-search:focus-within{outline:3px solid #a44b21;outline-offset:3px}
+.explore-search input:focus-visible{outline:0}
+.explore-chips{display:flex;flex-wrap:wrap;gap:6px}
+.explore-chips button{min-height:44px;padding:10px 14px;border:1px solid #cbd6c9;border-radius:7px;background:transparent;color:#465b4c;font:inherit;font-size:.76rem;font-weight:600;cursor:pointer}
+.explore-chips button[aria-pressed=true]{background:#204f3d;border-color:#204f3d;color:#fff}
+.explore-filter-status{display:flex;justify-content:space-between;align-items:center;width:100%;font-size:.75rem;color:#58685b}
+.explore-filter-status p{margin:0}
+.explore-filter-status button{font:inherit;color:#315b47;border:0;background:none;cursor:pointer;min-height:36px;text-decoration:underline;text-underline-offset:3px}
+.explore-empty{padding:30px;background:#eaf0e5;border-radius:10px}
+.learn-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.course-page .learn-card{display:flex;flex-direction:column;border:1px solid #d4dbd3;border-radius:10px;background:#fff;padding:26px;text-decoration:none;transition:transform .18s,border-color .18s;color:#213e30;min-width:0}
+.learn-card:hover{transform:translateY(-3px);border-color:#6e917b}
+.learn-card-top{display:flex;justify-content:space-between;gap:12px;font-size:.69rem;font-weight:650;color:#65725f}
+.learn-card-number{color:#805c3e}
+.course-page .learn-card h3{font-size:1.14rem;letter-spacing:-.02em;margin:22px 0 12px}
+.course-page .learn-card p{font-size:.8rem;line-height:1.7;color:#59675b;margin:0 0 24px}
+.learn-card-bottom{margin-top:auto;border-top:1px solid #e4e9df;padding-top:16px;font-size:.75rem;display:flex;justify-content:space-between;font-weight:650}
+.learn-card[data-studied=true]{border-color:#62947a}
+.experience-resume{background:#e9eee3;border-left:3px solid #186554;padding:18px 24px;margin:0 0 32px;border-radius:0 8px 8px 0}
+.experience-resume a{font-weight:650}
+.experience-resume p{margin:0 0 8px;font-size:.78rem}
+.experience-quiz .course-layout{display:block;max-width:1100px}
+.experience-quiz .course-toc{display:none}
+.experience-quiz .quiz-hero{position:relative;padding:36px;border:0;border-radius:12px;background:#e9eee3;margin-bottom:32px}
+.experience-quiz .quiz-hero h1{font-size:clamp(2.2rem,4vw,3.5rem);max-width:16ch;margin:12px 0 18px}
+.experience-quiz .quiz-hero>p{max-width:56ch;color:#52624f;font-size:.95rem;margin:0}
+.quiz-overview{display:flex;flex-wrap:wrap;gap:20px;margin-top:22px;font-size:.72rem;color:#55654e}
+.quiz-overview strong{font-size:1rem;color:#254f3d;margin-right:5px}
+.quiz-picker{margin:0 0 36px}
+.quiz-map{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
+.course-page .quiz-map a{display:flex;align-items:center;gap:14px;min-height:72px;padding:16px;border:1px solid #d2dbcc;border-radius:8px;text-decoration:none;color:#344b38;background:#fff;font-size:.82rem;line-height:1.5;font-weight:600}
+.quiz-map a:hover,.quiz-map a[aria-current=true]{border-color:#186554;background:#eaf0e4}
+.quiz-map-number{font-size:.74rem;color:#805c3e;font-weight:500}
+.quiz-map-status{margin-left:auto;color:#46633d;white-space:nowrap;font-size:.7rem}
+.experience-saved{padding:24px;margin:24px 0;background:#eaf0e5;border-radius:10px}
+.experience-saved h2{font-size:1.1rem;margin:0 0 12px}
+.experience-saved nav{display:flex;flex-wrap:wrap;gap:12px 24px;margin-bottom:16px}
+.experience-saved a{font-size:.85rem;font-weight:600}
+@media(min-width:1000px){.quiz-map{grid-template-columns:repeat(5,minmax(0,1fr))}.course-page .quiz-map a{display:grid;grid-template-columns:1fr auto;gap:8px;padding:16px;font-size:.78rem}.quiz-map-number{grid-column:1}.quiz-map a>span:nth-child(2){grid-column:1/-1;grid-row:2}.quiz-map-status{grid-column:2;grid-row:1}}
+.quiz-set-tools{display:flex;justify-content:space-between;gap:20px;font-size:.8rem;margin:-4px 0 20px}
+.quiz-answer-lesson{display:inline-block;margin-top:12px;font-size:.8rem}
+.quiz-progress{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 0;margin-bottom:16px;border-bottom:1px solid #d7dfd1}
+.quiz-progress label{font-size:.8rem;font-weight:600;margin:0!important;padding:0!important;border:0!important}
+.quiz-progress progress{width:150px;height:7px;border:0;border-radius:5px;overflow:hidden;accent-color:#186554;background:#e4e9df}
+.quiz-progress progress::-webkit-progress-bar{background:#e4e9df}
+.quiz-progress progress::-webkit-progress-value{background:#186554}
+.quiz-review-tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.course-page .study-score:empty{display:none}
+.course-page .study-score:not(:empty){background:#edf2e8;padding:18px;border-radius:8px}
+.course-footer{max-width:1280px;border-top:1px solid #d4dbd3;padding:36px 40px}
+@media(min-width:1000px){.experience-quiz .study-question{display:grid;grid-template-columns:1fr 1fr;column-gap:12px}.experience-quiz .study-question legend{float:left;width:100%;grid-column:1/-1;margin-bottom:8px}.experience-quiz .study-question .study-feedback,.experience-quiz .study-question details{grid-column:1/-1}.experience-quiz .study-question label{margin:5px 0}}
+@media(max-width:1050px){.course-header .header-inner{gap:16px}.course-header .nav-links{gap:18px}.course-header .search-bar{width:170px}.experience-hub .hub-hero{gap:30px;padding:36px}.learn-grid,.experience-hub .travel-promo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.learning-path{grid-template-columns:1fr;gap:20px}.learn-hero{gap:24px}.hangul-art{padding:24px}.hangul-art>div>span{font-size:4rem;width:100px;height:120px}}
+@media(max-width:800px){.course-header{padding:18px 24px}.course-header .header-inner{gap:12px}.course-header .logo-text{font-size:1rem}.course-header .course-nav{overflow-x:auto}.course-header .nav-links{flex-wrap:nowrap;gap:26px;width:max-content}.course-header .nav-links a{font-size:.83rem}.course-layout,.experience-quiz .course-layout{display:block;padding:28px 24px 48px}.course-toc{padding:14px 18px;border:1px solid #d4dbd3;border-radius:8px;background:#eef1e9;margin-bottom:24px}.course-toc ol{columns:1}.course-directory{margin-top:12px;padding-top:12px}.experience-hub .hub-hero{grid-template-columns:minmax(0,1fr) minmax(220px,.8fr);padding:28px;gap:24px}.experience-hub .hub-hero .hub-hero-title{font-size:2.8rem}.experience-hub .hub-hero-routes{padding:18px}.experience-hub .destinations-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.learn-hero{grid-template-columns:1fr .65fr;padding-top:12px}.course-page .learn-hero h1{font-size:3.2rem}.hangul-art{min-height:270px;border-top-left-radius:65px;padding:18px}.hangul-art>div{gap:6px}.hangul-art>div>span{width:78px;height:100px;font-size:3.3rem}.experience-actions .btn{flex:1}.experience-next{padding:24px}.course-footer{padding:28px 24px}}
+@media(max-width:600px){.course-header{padding:16px 20px}.course-layout,.experience-quiz .course-layout{padding:24px 20px 44px}.experience-hub .hub-hero{display:block;padding:28px 24px}.experience-hub .hub-hero .hub-hero-title{font-size:2.75rem;max-width:15ch}.experience-hub .hub-hero-routes{margin-top:28px}.experience-hub .hub-hero-route-list{grid-template-columns:1fr 1fr;gap:0 20px}.experience-hub .hub-hero-route{padding-right:18px}.experience-hub .hub-hero-route-title{font-size:.84rem}.experience-hub .hub-hero-route-label{font-size:.65rem}.experience-hub .hub-hero-meta{margin-top:20px}.experience-jumps{gap:4px 18px}.experience-jumps a{font-size:.73rem}.learn-hero{grid-template-columns:1fr;gap:30px;padding:12px 0 32px}.course-page .learn-hero h1{font-size:3.5rem;max-width:12ch}.hangul-art{min-height:200px;border-radius:60px 12px 12px 12px;flex-direction:row;align-items:center;gap:20px}.hangul-art-label{writing-mode:vertical-rl;margin:0;font-size:.7rem}.hangul-art-note{writing-mode:vertical-rl;margin:0;font-size:.85rem;letter-spacing:.08em}.hangul-art>div>span{width:88px;height:105px;font-size:3.8rem}.learning-path{margin-bottom:36px;padding:24px 0}.learning-path ol{grid-template-columns:1fr;gap:0}.learning-path li{padding:14px 0;border-top:1px solid #e0e5da}.learning-path li:last-child{padding-bottom:0}.learning-path li a{font-size:.9rem}.learn-grid,.experience-hub .travel-promo-grid,.experience-hub .destinations-grid{grid-template-columns:1fr}.learn-card,.experience-hub .travel-promo-card{padding:22px}.explore-chips{gap:6px}.explore-chips button{font-size:.71rem;padding:9px 11px}.explore-filter{gap:12px}.explore-search{flex-basis:100%}.experience-quiz .quiz-hero{padding:26px 22px}.quiz-map{grid-template-columns:1fr}.course-page .quiz-map a{min-height:60px}.experience-next{display:block;padding:22px}.experience-next .btn{margin-top:20px}.experience-hub .course-content>.travel-section,.experience-hub .course-content>.travel-section-alt{padding:32px 0}.quiz-progress{gap:12px}.quiz-progress progress{flex:1;min-width:60px}.course-page .study-practice{padding:18px}.course-footer{padding:28px 20px}}
+@media(prefers-reduced-motion:reduce){.course-page *{scroll-behavior:auto!important;transition:none!important;animation:none!important}.learn-card:hover,.experience-hub .travel-promo-card:hover{transform:none}}
+@media print{.experience-toolbar,.experience-reading-line,.explore-filter,.experience-jumps,.experience-next,.quiz-picker,.quiz-set-tools,.quiz-progress,.quiz-review-tools,.hangul-art{display:none!important}.course-page .course-quiz-set[hidden],.course-page .study-question[hidden]{display:block!important}.learn-grid{grid-template-columns:1fr 1fr}.learn-card{break-inside:avoid}.course-page .study-practice{break-inside:auto}.course-page .study-question{break-inside:avoid}}

@@ -1,0 +1,26 @@
+/* Instructional images keep their full composition and reserve their layout space. */
+.learning-visual { display:block; width:100%; height:auto; aspect-ratio:4/3; object-fit:contain; background:#faf9f5; border-radius:10px; }
+.visual-word-table { display:block !important; min-width:0 !important; width:100%; border:0 !important; background:transparent !important; }
+.visual-word-table > thead { position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.visual-word-table > tbody { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; width:100%; }
+.visual-word-table > tbody > tr { display:flex; flex-direction:column; min-width:0; padding:12px; border:1px solid var(--border-color,#d7d7d7) !important; border-radius:14px; background:var(--bg-card,var(--bg-secondary,#fff)); }
+.visual-word-table > tbody > tr > td { display:block; width:auto !important; min-width:0; padding:5px 0 !important; border:0 !important; white-space:normal !important; overflow-wrap:anywhere; text-align:start; }
+.visual-word-table .learning-visual { margin:0 0 12px; }
+.visual-word-table td:first-child [lang=ko] { font-size:1.25rem; line-height:1.4; }
+.visual-word-table td:nth-child(2) { color:var(--text-secondary); font-size:.82rem; }
+.visual-word-table td:last-child { font-size:.9rem; line-height:1.6; }
+.visual-word-table tr:hover { transform:none; }
+.course-table-wrap:has(> .visual-word-table) { overflow:visible; border:0; background:transparent; }
+.visual-attraction-card { padding:14px !important; overflow:hidden; }
+.visual-attraction-card .learning-visual { margin-bottom:12px; }
+.visual-credit { display:block; margin:5px 0 10px; color:var(--text-secondary); font-size:.7rem; line-height:1.4; font-weight:400; }
+.visual-scene { margin:22px 0; max-width:640px; }
+.visual-scene figcaption { margin-top:8px; color:var(--text-secondary); font-size:.82rem; line-height:1.5; }
+.visual-scene .learning-visual { border:1px solid var(--border-color,#ddd); }
+.transport-card:has(.learning-visual) { display:flex; flex-direction:column; align-items:stretch; }
+.transport-card .learning-visual { margin-bottom:14px; }
+.visual-hub-image { margin-bottom:16px; max-height:200px; }
+.visual-disclosure { margin:16px 0; color:var(--text-secondary); font-size:.8rem; line-height:1.6; }
+@media(max-width:1100px) { .visual-word-table > tbody { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; } }
+@media(max-width:380px) { .visual-word-table > tbody { grid-template-columns:1fr; } }
+@media print { .visual-word-table > tbody { grid-template-columns:repeat(3,minmax(0,1fr)); } .visual-word-table tr,.visual-scene,.visual-attraction-card { break-inside:avoid; } }

@@ -1,6 +1,6 @@
 # AdSense Readiness Guide — ad zones + "Low value content" remediation
 
-**Read this file in full before doing any AdSense work. It is the source of truth for the task.**
+> Historical plan. The current source of truth is the [2 October 2026 Google self-audit](../docs/google-publisher-self-audit-2026-10-02.md), which separates local, production, and account evidence. Ad/Analytics loaders are paused in the current source; verification tags and ads.txt are retained. Old counts, ad-zone instructions, and approval claims below are not current implementation requirements.
 The paste-in prompts in [`PROMPTS.md`](PROMPTS.md) each tell a fresh session to read this guide first.
 
 ---
@@ -293,7 +293,7 @@ is safe and lets Google review the site exactly as it will run with ads.
   - **3.1 translation gate**: audited vi/de/fr/th/id — ALL five incomplete (vi 1436 / de 1630 / fr 1564 / th 1267 / id 1579 untranslated nodes). Added `noindex,follow` to all 110 unfinished culture/travel/news pages (5 admin pages already had it). Fully-done pages kept indexable: vi (culture index/kchicken/mandu, travel planner), th (culture index/kchicken/mandu, travel cities/planner, news index). Preferred end state: finish via `translation/PROMPTS.md`, then remove the noindex + re-add to sitemap.
   - **3.2 dev files**: deleted `lesson-header-mobile-options.html`, `culture_travel_news_extract.txt`, `learn_extract.txt`; moved working `.md` files (`SUPABASE_SETUP`, `ja-translation-guide`, `culture/deep-dives-ja-guide`, `culture/japanese-version-guide`, `adsense-audit`, `learn-updates`, `article-vocabulary-*`) into `docs/`; `scripts/build-vocab-ja-sql.mjs` output path updated. `robots.txt`/`ads.txt`/`sitemap.xml`/`site.webmanifest` untouched (ads.txt staged for commit — see blocker below).
   - **3.3 thin shells**: added `noindex,follow` to all 9 `search.html` (en + 8 langs) and en/es/ja/zh-tw `news/article.html` + `news/board.html` (other langs got it via 3.1).
-  - **3.4 placeholder images**: ⏳ OWNER — scan of 44 English sitemap pages found **98 broken Supabase images (HTTP 400)**: index.html 7 (article-0..3, place-0..2), culture/kpop 16 (agency-0..5, gen-0..3, film-0..5), culture/kfood 35 (dish-0..14, street-0..7, dining-0..4, mens-0..2, chef-7..10), culture/kbbq 40 (food/beef-0..12, pork-0..10, chicken-0..5, duck-0..4, offal-0..4). Plus culture/kmovie has 6 emoji-only `photo-frame` boxes (📽️🎞️🏆🎭💰🎥) with no images. Most broken imgs have `onerror` hide, so pages don't look broken, but frames/sections are empty.
+- **3.4 placeholder images**: ✅ RESOLVED — the initial 98 broken Supabase image references were addressed in the earlier food-image pass and this pass. Replaced the remaining 27 image references (home 7, K-Pop 16, K-Food chef cards 4) and six emoji-only K-Movie frames with 33 generated local photos in `assets/images/site-photos/`, shared by English and localized pages.
   - **sitemap sanity**: removed all 30 noindexed URLs from `sitemap.xml` (21 id culture/travel/news + 9 search/article/board shells) incl. their hreflang alternate lines; 125 → 95 `<loc>`; every remaining loc resolves to an existing file; XML validated.
 - 🚨 **DEPLOY BLOCKER found 2026-07-07**: `ads.txt` and ALL language-mirror directories (`es/`, `id/`, `de/`, `fr/`, `vi/`, `th/`, `zh-tw/`, `ja/index|quiz|search`, `culture/<lang>/`, `learn/<lang>/`, `travel/<lang>/`, `news/<lang>/`, `learn/vocabulary-browser.html`) were **never committed to git** → Vercel never deployed them → live site 404s. Confirmed live: `https://www.freekoreanschool.com/ads.txt` = 404 (AdSense hard blocker), 42 of 95 sitemap URLs 404 (es + id roots, culture/es/*, travel/es/*, learn mirrors, /ja/). `ads.txt` is staged; owner must `git add` the mirror dirs + all pending changes, commit, push, then verify ads.txt + sitemap URLs return 200 before requesting review.
 - **2026-07-09 pre-deploy remediation pass** (full-policy audit + fixes):
@@ -305,7 +305,7 @@ is safe and lets Google review the site exactly as it will run with ads.
   - Ad label CSS → "Advertisements" (policy-exact wording); planner's empty dashed "AD" placeholder box hidden pre-approval (`.planner-layout` single column).
   - `noindex,nofollow` added to `admin/upload-*.html` ×3.
   - Sitemap 95→109: added 14 zh-tw locs (root ×6, travel ×5, learn ×3 — pages that pass the translation gate). culture/ja + culture/zh-tw + news index ja/zh-tw NOT added — audit shows ja 278 / zh-tw 125 untranslated nodes remain; finish via translation/PROMPTS.md before adding.
-  - Placeholder images (3.4): RESOLVED — Supabase images re-checked 200 (uploaded 2026-07-07); only kmovie's 6 stylized emoji frames remain (intentional design, low risk).
+  - Placeholder images (3.4): RESOLVED — 33 generated local photos replace the remaining broken home/K-Pop/K-Food references and K-Movie emoji frames across all language mirrors.
 - Final verification + review requested: ⏳ (Prompt 5) — blocked on: commit+deploy, enable Google CMP (AdSense → Privacy & messaging) for EEA consent, Search Console coverage (3.6)
 - Rail / post-approval density pass: 🔒 blocked until approval (Prompt 6)
 

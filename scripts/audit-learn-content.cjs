@@ -14,6 +14,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const cheerio = require('cheerio');
 
 const ROOT = path.join(__dirname, '..');
 const LEARN = path.join(ROOT, 'learn');
@@ -64,14 +65,8 @@ function mainText(html) {
 }
 
 function staticBlockWords(html) {
-  const s = html.indexOf('<details id="lesson-static"');
-  if (s === -1) return 0;
-  const e = html.indexOf('</details>', html.lastIndexOf('<!-- /lesson-static -->') - 1);
-  const end = html.indexOf('<!-- /lesson-static -->');
-  const block = end === -1 ? html.slice(s) : html.slice(s, end);
-  return countWords(
-    block.replace(/<[^>]+>/g, ' ').replace(/&[a-zA-Z#0-9]+;/g, '').replace(/\s+/g, ' ')
-  );
+  const $=cheerio.load(html);
+  return countWords($('#lesson-static').text());
 }
 
 function localeDir(loc) {

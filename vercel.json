@@ -8,23 +8,23 @@
       "permanent": true
     },
     {
-      "source": "/culture/:locale(ja|zh-tw|es|de|fr|vi|th|id)/traditions",
+      "source": "/culture/:locale(zh-tw|ja|es|fr|de|vi|th|id|pt-br)/traditions",
       "destination": "/culture/:locale/koreanthing",
       "permanent": true
     },
     {
-      "source": "/:locale(ja|zh-tw|es|de|fr|vi|th|id)/culture",
+      "source": "/:locale(zh-tw|ja|es|fr|de|vi|th|id|pt-br)/culture",
       "destination": "/culture/:locale",
       "permanent": true
     },
     {
-      "source": "/:locale(ja|zh-tw|es|de|fr|vi|th|id)/travel",
+      "source": "/:locale(zh-tw|ja|es|fr|de|vi|th|id|pt-br)/travel",
       "destination": "/travel/:locale",
       "permanent": true
     },
     {
-      "source": "/:locale(ja|zh-tw|es|de|fr|vi|th|id)/learn",
-      "destination": "/learn/:locale/hangul",
+      "source": "/:locale(zh-tw|ja|es|fr|de|vi|th|id|pt-br)/learn",
+      "destination": "/learn/:locale",
       "permanent": true
     }
   ]

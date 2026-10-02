@@ -1,0 +1,6 @@
+.editorial-empty { display:none!important; }
+.editorial-icon { display:inline-block;vertical-align:middle;flex-shrink:0;pointer-events:none; }
+.course-page-index > ol { list-style:decimal; }
+.course-page-index ul { list-style:none;padding-left:12px;margin:4px 0 8px;border-left:1px solid #d4dbd3; }
+.course-page-index li { overflow-wrap:anywhere; }
+.course-page-index ul li { font-size:.78rem;padding:3px 0 3px 6px; }

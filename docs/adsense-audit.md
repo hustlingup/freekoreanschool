@@ -1,8 +1,10 @@
-# Google AdSense Approval Audit — 한국어 학교
+# Historical AdSense Audit — 한국어 학교
+
+> Superseded by [the current Google publisher self-audit](google-publisher-self-audit-2026-10-02.md). This June snapshot contains outdated counts and unsupported approval predictions. It is retained as history, not a current eligibility verdict.
 
 **Date:** 2026-06-21  
 **Pages Audited:** 64 HTML files  
-**Overall Verdict:** ✅ READY FOR SUBMISSION (Confidence: 95%)
+**Status:** Historical snapshot; no approval confidence is established.
 
 ---
 
@@ -236,8 +238,8 @@ Once approved, place ads conservatively to maintain user trust and comply with A
 
 ## Final Verdict
 
-**✅ APPROVED FOR SUBMISSION**
+**Historical assessment, superseded**
 
 The site meets or exceeds Google AdSense content and policy standards. It has a clear educational purpose, original content, complete policy pages, professional design, and no prohibited content. The minor technical gaps (robots.txt, sitemap, canonical tags) are SEO improvements that do not affect policy approval.
 
-**Expected approval timeline:** 3–14 days after submission (Google's standard review window).
+Approval and review timing are determined by Google; this audit cannot predict them.

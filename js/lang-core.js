@@ -57,7 +57,7 @@ const _langCoreScript = document.currentScript;
     { code: "id", native: "Bahasa Indonesia", status: "live",
       flag: "🇮🇩",
       flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#fff\"/><rect width=\"60\" height=\"20\" fill=\"#E70011\"/></svg>" },
-    { code: "pt-br", native: "Português (Brasil)", status: "planned",
+    { code: "pt-br", native: "Português (Brasil)", status: "live",
       flag: "🇧🇷",
       flagSvg: "<svg viewBox=\"0 0 60 40\"><rect width=\"60\" height=\"40\" fill=\"#009B3A\"/><polygon fill=\"#FEDF00\" points=\"30,4 55,20 30,36 5,20\"/><circle cx=\"30\" cy=\"20\" r=\"9\" fill=\"#002776\"/><g fill=\"#fff\"><circle cx=\"26\" cy=\"16\" r=\"0.8\"/><circle cx=\"32\" cy=\"15.5\" r=\"0.8\"/><circle cx=\"34.8\" cy=\"23.4\" r=\"0.8\"/><circle cx=\"27\" cy=\"25\" r=\"0.8\"/><rect x=\"21.3\" y=\"19\" width=\"17.4\" height=\"3\"/></g></svg>" },
     { code: "ru", native: "Русский", status: "planned",
@@ -129,16 +129,7 @@ const LangManager = (() => {
   }
 
   function setLang(lang) {
-    localStorage.setItem(LS_KEY, lang);
-
-    // Learn pages: always start at Hangul in the target language
-    if (/\/learn\//i.test(window.location.pathname)) {
-      const base = window.location.pathname.replace(/\/learn\/.*$/, '');
-      window.location.href = lang === 'en'
-        ? base + '/learn/hangul.html'
-        : base + '/learn/' + lang + '/hangul.html';
-      return;
-    }
+      try { localStorage.setItem(LS_KEY, lang); } catch { /* Navigation works without storage. */ }
 
     // All other pages: navigate to the same page in the target language via hreflang
     const links = document.querySelectorAll('link[rel="alternate"][hreflang]');
