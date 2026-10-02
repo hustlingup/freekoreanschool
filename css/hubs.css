@@ -1,0 +1,38 @@
+/* Culture/travel entrances: solid surfaces and the guide's editorial palette. */
+.course-page .hub-hero {
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,.68fr);gap:32px;
+  padding:36px;margin-bottom:40px;background:#edf1eb;border:1px solid #d4dbd3;border-radius:20px;
+  position:relative;isolation:isolate;min-width:0;
+}
+.hub-hero::before,.hub-hero::after,.hub-hero .btn::before,.hub-hero .btn::after { content:none;background:none; }
+.hub-hero-copy { min-width:0;align-self:center; }
+.course-page .hub-hero .hub-hero-eyebrow { margin:0 0 18px;color:#186554;font-size:.75rem;font-weight:700;letter-spacing:.075em;line-height:1.6; }
+.course-page .hub-hero .hub-hero-title { font-family:var(--font-sans);font-size:clamp(2.2rem,3.7vw,3.15rem);font-weight:750;line-height:1.12;letter-spacing:-.045em;margin:0 0 22px;color:#202c26;overflow-wrap:anywhere; }
+.course-page .hub-hero .hub-hero-lead { margin:0;color:#46544d;font-size:1rem;line-height:1.8;max-width:58ch; }
+.hub-hero-actions { margin:26px 0 0; }
+.course-page .hub-hero-actions .btn { background:#186554;color:#fff;border:1px solid #186554;border-radius:8px;box-shadow:none;padding:12px 18px;display:inline-flex;align-items:center;gap:18px;font-weight:600;font-size:.87rem; }
+.course-page .hub-hero-actions .btn:hover { background:#104c3e;border-color:#104c3e; }
+.course-page .hub-hero .hub-hero-meta { margin:24px 0 0;padding-top:18px;border-top:1px solid #d4dbd3;font-size:.75rem;line-height:1.65;color:#58645e;overflow-wrap:anywhere; }
+.hub-hero-routes { background:#fff;border:1px solid #d4dbd3;border-radius:12px;padding:22px;min-width:0;align-self:stretch; }
+.course-page .hub-hero-routes-label { margin:0 0 14px;font-size:.7rem;line-height:1.5;letter-spacing:.065em;font-weight:700;color:#53665c; }
+.hub-hero-route-list { display:grid; }
+.course-page .hub-hero-route { display:grid;position:relative;gap:4px;padding:15px 24px 15px 0;border-top:1px solid #e4e9e1;text-decoration:none;color:#232c35;min-width:0; }
+.hub-hero-route-label { font-size:.71rem;line-height:1.5;color:#58645e; }
+.hub-hero-route-title { font-size:.98rem;line-height:1.4;font-weight:650;overflow-wrap:anywhere; }
+.hub-hero-route-arrow { position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:1.1rem;color:#186554; }
+.course-page .hub-hero-route:hover .hub-hero-route-title { color:#186554;text-decoration:underline;text-underline-offset:3px; }
+.hub-hero + .travel-section { padding-top:32px; }
+@media(max-width:1100px) {
+  .course-page .hub-hero { grid-template-columns:minmax(0,1fr);gap:28px;padding:30px; }
+  .hub-hero-route-list { grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px; }
+  .course-page .hub-hero .hub-hero-title { font-size:2.8rem; }
+}
+@media(max-width:520px) {
+  .course-page .hub-hero { padding:24px 20px;border-radius:14px;gap:24px;margin-bottom:28px; }
+  .course-page .hub-hero .hub-hero-title { font-size:2.15rem;line-height:1.17; }
+  .course-page .hub-hero .hub-hero-lead { font-size:.94rem; }
+  .hub-hero-routes { padding:18px; }
+  .hub-hero-route-list { grid-template-columns:minmax(0,1fr); }
+  .hub-hero-actions .btn { width:100%;justify-content:space-between; }
+}
+@media print { .course-page .hub-hero { display:block;padding:0;border:0;background:#fff; }.hub-hero-routes,.hub-hero-actions{display:none} }

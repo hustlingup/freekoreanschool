@@ -16,7 +16,12 @@ const { live } = require('./_locales.cjs');
 
 const ROOT = path.join(__dirname, '..');
 const BASE = 'https://freekoreanschool.com';
-const TODAY = new Date().toISOString().slice(0, 10);
+const TODAY = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit'
+}).format(new Date());
+// Explicit substantial content revisions take precedence over committed dates.
+// Footer-only edits do not advance every page's lastmod.
+const contentRevisions = JSON.parse(fs.readFileSync(path.join(__dirname, 'content-revisions.json'), 'utf8'));
 
 /* ── Per-file <lastmod>, from real git history ────────────────────────────
    Every URL used to be stamped with TODAY, so all 378 entries carried an
@@ -49,7 +54,9 @@ const gitDates = (() => {
 })();
 
 function lastmodFor(file) {
-  return gitDates.get(file.split(path.sep).join('/')) || TODAY;
+  const key = file.split(path.sep).join('/');
+  const dates = [contentRevisions[key], gitDates.get(key)].filter(Boolean).sort();
+  return dates.at(-1) || TODAY;
 }
 
 /* ── Locales, from the registry (scripts/_locales.cjs) ─────────────────────
@@ -92,7 +99,7 @@ const ROOT_PAGES = [
 // Sections whose slugs are discovered by scanning the English directory.
 // The union across every locale is used, so a page that exists only in a
 // translated locale is still emitted.
-const SECTIONS = ['learn', 'culture', 'travel'];
+const SECTIONS = ['learn', 'culture', 'travel', 'guides'];
 
 // Never emit these regardless of what is on disk: admin tooling.
 const SLUG_DENYLIST = new Set(['admin']);

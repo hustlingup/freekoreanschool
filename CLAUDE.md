@@ -173,16 +173,22 @@ The entire frontend is **vanilla HTML + CSS + JS**. There is no bundler, transpi
 1. `js/lang-core.js` — `LangManager` singleton; reads `<html lang>` attribute, exposes `t(key)` translation function, handles language switching via hreflang navigation
 2. Language pack IIFE — registers translations via `LangManager.register(langCode, dict)`. Root pages load `js/lang-ja.js` etc.; language-subdirectory pages load `js/langs/lang-<code>.js`
 3. `js/app.js` — UI modules: `ThemeManager`, `FloatingChars`, `MobileSidebar`, `SearchManager`, etc.
-4. `js/step-runner.js` (learn pages only) — fetches `learn/data/<lesson>.json`, renders interactive lesson steps into `<div id="step-shell">`
-5. `js/syllable-builder.js` (hangul/syllable pages) — standalone Hangul composer widget
+4. Existing standalone practice widgets (syllable builder, handwriting, typing) load on their relevant pages.
+5. `js/course-labels.js`, `js/study.js`, `js/course.js` — localized inline exercise feedback, audio, saved vocabulary, responsive TOC, and legacy lesson URL anchors.
 
-### Learn page engine (step-runner.js)
-Each learn page (`learn/hangul.html`, etc.) is a static HTML shell with an empty `<div id="step-shell">`. `step-runner.js` fetches the corresponding JSON from `/learn/data/<lesson>.json` and renders the step at the URL's `?step=N` param.
+### Full reading layout (2 October 2026)
+
+All 390 public learn/culture/travel/quiz pages use `css/study.css` + `css/course.css`, matching the guide editorial layout. Existing images and translated data remain intact. There are no StepRunner mounts or loaders on these pages. Lessons and questions are server-rendered together; the 10 quiz sets contain the original 200 questions. The vocabulary lesson owns the full word list; browser and flashcard tools link to it without copying it.
+
+After updating lesson JSON or rebuilding mirrors, run `node scripts/redesign-course-pages.cjs` LAST. This rebuilds full localized lesson HTML, applies the layout, and preserves free-play widgets. Do not restore the bite-size player, its progress chrome, or the duplicated vocabulary reference on tool pages. `node scripts/check-guide-redesign.cjs` checks preservation, interactions, and all 390 mobile layouts; supply `KS_QA_MODULE_PATH` if Playwright is installed outside this repo. Brand assets live in `assets/brand/`.
+
+### Archived learn page engine (step-runner.js)
+The file remains for historical reference, but public pages no longer load it. The lesson JSON's step types are retained as source data for the full-page static generator. Old `?step=N` URLs scroll to the corresponding reading section through `course.js`.
 
 **Step types**: `reading_card`, `card_reveal`, `listen_repeat`, `match_quiz`, `syllable_builder`, `lesson_complete`. These six are the complete set — every other type this file used to list (`conjugation_practice`, `choose_syllables`, `copy_phrase`, `write_answer`, `group_by_type`, `drag_reorder`) appears in no lesson JSON and has no renderer.
 
 #### Static lesson content (`#lesson-static`) — SEO-critical
-A lesson renders only ONE step per `?step=N` URL, so the shell alone was ~62 crawler-visible words. That was the primary cause of the 2026-07 AdSense "Low value content" rejection. `scripts/gen-lesson-static.cjs` pre-renders the *entire* lesson from the JSON as semantic HTML into `<section id="lesson-static">`, taking each page to a median 2,735 words.
+`scripts/gen-lesson-static.cjs` pre-renders the entire lesson from JSON as semantic HTML into `<section id="lesson-static">`. This is now the sole reading view, with complete examples and inline practice. Word counts are an audit aid, not evidence of AdSense eligibility or the cause of a rejection.
 
 ⚠️ **It is a `<section>`, not a `<details>`, and nothing collapses it. Do not
 reintroduce the accordion.** Until 2026-08-12 the block shipped as
@@ -197,9 +203,9 @@ words of prose, on 126 pages. That is the most likely cause of the third
 "Low value content" rejection (2026-08-12). Never hide it with `display:none`
 either.
 
-⚠️ `#lesson-static` MUST be a sibling **after** `#step-shell`, never inside it. `buildShell()` does `innerHTML =` on `#step-shell`, so a nested block is destroyed on hydration.
+⚠️ Keep `#lesson-static` in the main reading content. Do not add a `#step-shell` or run `buildShell()` on public pages.
 
-Rerun `node scripts/gen-lesson-static.cjs` (idempotent) after editing any `learn/data/*.json`; verify with `node scripts/audit-learn-content.cjs`.
+Rerun `node scripts/redesign-course-pages.cjs` after editing any `learn/data/*.json`; verify with `node scripts/audit-learn-content.cjs` and the redesign checks. The 20 noindex vocabulary tools intentionally have no duplicate static word bank.
 
 ⚠️ The word table renders the **localised meaning only**. It used to append the
 English meaning as a secondary `<span class="ls-aid">` in every locale, as a

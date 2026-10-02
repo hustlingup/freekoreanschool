@@ -706,13 +706,15 @@ locales and the English source, compound across every locale added later.
 | Phase 0.8 SEO/sitemap/nav scripts | ✅ all 7; sitemap `<loc>` set verified identical (378/378); `inject-seo.mjs` → 0 HTML files touched | 2026-08-12 |
 | Phase 0.9 audit harness extension | ✅ 12 files; `audit-i18n.cjs` **13 → 16 invariants** (page-count parity, per-locale coverage table, rtl+font correctness); `--locales` override everywhere; fresh locales report NOT PRESENT, never a silent pass | 2026-08-12 |
 | **PHASE 0 GATE** | ✅ **16/16 invariants hold, exit 0. Zero HTML files modified.** Two debts owed before `ar` ships — see below | 2026-08-12 |
-| Language 1 `pt-BR` | 🔄 Stage 1–4 ✅ · Stage 5 in progress | 2026-08-13 |
+| Language 1 `pt-BR` | ✅ **COMPLETE — stages 1–7 all pass.** `status: 'live'`, 9 live locales, 400 sitemap URLs, `audit-i18n` 16/16 | 2026-08-20 |
 | ↳ Stage 1 scaffold + glossary | ✅ `js/langs/lang-pt-br.js`, 4 dirs, `scripts/_trans/glossary/pt-br.json` | 2026-08-13 |
 | ↳ Stage 2 UI pack | ✅ **631/631**, 0 missing; `qa-ui-pack.cjs` all hard checks pass | 2026-08-13 |
 | ↳ Stage 3 page scaffold | ✅ **45 pages**; dry-run diffed first; scope confirmed by mtime | 2026-08-13 |
 | ↳ Stage 4 lesson JSON | ✅ **2065/2065**; static blocks regenerated (median 399 w vs en 360 / de 354 / es 384) | 2026-08-13 |
 | ↳ Stage 5a learn shells | ✅ **complete** — all 18 pages, 760 strings, **plus all 74 mixed EN+Hangul nodes** (bug 7). Hangul integrity verified: 18/18 pages within 3% of the English source's Hangul count, 0 with loss | 2026-08-14 |
-| ↳ Stage 5b culture/travel | 🔄 **8 of 20 complete.** Exact state below | 2026-08-14 |
+| ↳ Stage 5b culture/travel | ✅ **20 of 20.** Every page: sentenceRatio ≤0.030 AND `qa-mixed-nodes` 0 | 2026-08-20 |
+| ↳ Stage 6 QA | ✅ leak / coverage / SEO all clean — no foreign-locale bleed (every CJK count matches the English source), no thin indexable page, ad markup at parity with English | 2026-08-20 |
+| ↳ Stage 7 wire-up + gate | ✅ flipped to `live`; seo / nav / sitemap / number-format all converged; **16/16 invariants**, exit 0 | 2026-08-20 |
 
 **Stage 5b resume table** — `sentenceRatio` from `node scripts/audit-content-locale-dup.cjs
 --locales pt-br`. That number is the fraction of sentence-length prose still byte-identical to
@@ -725,42 +727,35 @@ culture pages are done. **A page counts as done only when BOTH `sentenceRatio` i
 
 | page | sent | raw | mixed | state |
 |---|---|---|---|---|
+| `culture/pt-br/koreanthing.html` | 0.000 | 0.007 | 0 | ✅ |
 | `culture/pt-br/kbeauty.html` | 0.000 | 0.016 | 0 | ✅ |
+| `culture/pt-br/index.html` | 0.000 | 0.026 | 0 | ✅ |
 | `culture/pt-br/kimchi.html` | 0.000 | 0.027 | 0 | ✅ |
-| `culture/pt-br/index.html` | 0.000 | 0.028 | 0 | ✅ |
-| `culture/pt-br/kbbq.html` | 0.000 | 0.029 | 0 | ✅ |
-| `travel/pt-br/index.html` | 0.000 | 0.030 | 0 | ✅ |
+| `travel/pt-br/index.html` | 0.000 | 0.027 | 0 | ✅ |
+| `culture/pt-br/kbbq.html` | 0.000 | 0.027 | 0 | ✅ |
 | `culture/pt-br/kdrama.html` | 0.000 | 0.033 | 0 | ✅ |
 | `culture/pt-br/mandu.html` | 0.000 | 0.034 | 0 | ✅ |
-| `culture/pt-br/ramyeon.html` | 0.000 | 0.038 | 0 | ✅ |
+| `culture/pt-br/ramyeon.html` | 0.000 | 0.037 | 0 | ✅ |
 | `travel/pt-br/planner.html` | 0.000 | 0.045 | 0 | ✅ |
 | `travel/pt-br/cities.html` | 0.000 | 0.045 | 0 | ✅ |
 | `culture/pt-br/kmovie.html` | 0.000 | 0.046 | 0 | ✅ |
-| `culture/pt-br/kchicken.html` | 0.000 | 0.055 | 0 | ✅ |
+| `culture/pt-br/kchicken.html` | 0.000 | 0.053 | 0 | ✅ |
 | `culture/pt-br/kfashion.html` | 0.000 | 0.059 | 0 | ✅ |
+| `culture/pt-br/kfood.html` | 0.003 | 0.031 | 0 | ✅ |
 | `travel/pt-br/itineraries.html` | 0.005 | 0.015 | 0 | ✅ |
-| `travel/pt-br/themes.html` | 0.006 | 0.022 | 0 | ✅ |
+| `travel/pt-br/themes.html` | 0.006 | 0.020 | 0 | ✅ |
+| `culture/pt-br/kpop.html` | 0.017 | 0.049 | 0 | ✅ |
 | `culture/pt-br/ksports.html` | 0.028 | 0.065 | 0 | ✅ |
 | `culture/pt-br/kgaming.html` | 0.030 | 0.098 | 0 | ✅ |
-| `culture/pt-br/kfood.html` | 0.181 | 0.208 | 37 | ⏳ |
-| `culture/pt-br/koreanthing.html` | 0.210 | 0.202 | 1 | ⏳ |
-| `culture/pt-br/kpop.html` | 0.979 | 0.906 | 55 | ⏳ |
 
-**Do NOT hand-fix these — Stage 7 regenerates them, and only after the status flip.**
-Three cosmetic defects were spotted across the finished pt-BR pages. All three are owned by
-`fix-culture-travel-seo.cjs`, which strips and rewrites them from the registry, so hand-editing
-them now is wasted work that the script will overwrite anyway:
-- **Byline drift.** 11 pages read `21 July 2026`, 8 read `21 de julho de 2026`; 6 read
-  `Last updated`, 13 `Última atualização`. Agents localized it ad hoc. The script deletes the
-  whole `<p class="page-byline">` and reinserts one from `byline: { by:'Por',
-  upd:'Última atualização', fmt:'pt-BR' }`.
-- **Schema.org `inLanguage`.** 18 of 20 pages still say `"inLanguage": "en"`. The script sets it
-  from `LOCALES[loc]` and its `--check` mode flags the mismatch as `LD-INLANG-WRONG`.
-- **JSON-LD `headline`/`description`** still English on most pages; regenerated from the page's
-  own (now translated) `<title>`.
-
-⚠️ All three are gated behind `registry.live()`. Running the script before the flip fixes
-none of them and still exits 0.
+**Stage 7 resolved all three deferred cosmetic defects automatically, as predicted.**
+Byline drift (11 pages `21 July 2026` vs 8 localized; 6 `Last updated` vs 13
+`Última atualização`), Schema.org `"inLanguage": "en"` on 18 of 20 pages, and English
+JSON-LD `headline`/`description` were all regenerated by `fix-culture-travel-seo.cjs`
+from the registry. Verified after: hreflang **11 tags per page** (10 locales + `x-default`)
+with `pt-BR` present in every cluster — including the English and Japanese pages —
+`inLanguage` 20/20 `pt-BR`, byline 19/20 (`planner` is a tool page and correctly
+gets none). Nothing needed hand-editing.
 
 **Two cheap lessons from this session, both worth reusing on `ru`:**
 - The *vocabulary table* at the foot of each culture page and the *tag chips* on every food
@@ -988,6 +983,55 @@ that passes its own audits still has not been exercised by a locale that does no
 
    Note also that invariant 5 CANNOT see the bug-8 mixed-node class, and its comment now says
    so. `qa-mixed-nodes.cjs` is not subsumed by it — both must be run.
+
+10. 🔴 **`fix-culture-travel-seo.cjs` hard-crashes on a fresh locale — after partially
+    writing.** Found 2026-08-20, the first time Stage 7 was ever run for a new locale.
+
+        Error: missing git date for culture/pt-br/index.html
+            at jsonLd (scripts/fix-culture-travel-seo.cjs:278)
+
+    `DATES = require('./culture-travel-dates.json')` supplies `datePublished`/`dateModified`
+    for the Article JSON-LD, and line 278 throws if either is absent. A brand-new locale has
+    no entry, so the script dies — **but it writes each page as it goes**, so it had already
+    patched 92 files (culture/de, es, fr, id, ja, the 15 English pages, and 3 pt-br) before
+    throwing. The tree was left mid-migration: some pages listed `pt-BR` in their hreflang
+    cluster, others did not. Not corrupting — the script is idempotent and marker-guarded, so
+    re-running after the fix converged all 200 pages — but an operator who did not re-run
+    would ship a half-updated hreflang graph, which is worse than not having run it at all.
+
+    Fix is data, not code: add the locale's 20 pages to `scripts/culture-travel-dates.json`
+    **derived from git**, per CLAUDE.md's standing rule that this file is never hand-written:
+
+        git log --reverse --diff-filter=A --format='COMMIT|%aI' --name-only             -- culture/<dir> travel/<dir>      # first commit that ADDED each page
+        git log -1 --format=%aI -- <rel>       # last commit that touched it
+
+    ⚠️ **This means a fresh locale's pages must be COMMITTED before Stage 7 runs**, or there is
+    no git date to derive and the crash is unavoidable. Sequence for every remaining locale:
+    finish stage 5 → commit → flip status to live → run Stage 7. Worth considering a code fix
+    too (fall back to the commit date of the locale's directory, or exit cleanly listing the
+    missing entries instead of throwing mid-write).
+
+11. 🟠 **A localizable field with NO base English key is invisible to `qa-lang.cjs`.**
+    `audit-i18n` invariant 13 caught what every coverage number missed:
+
+        FAIL  lesson fields measurable at all
+              syllable-blocks.json:reading_card.patterns_label [missing pt_br]
+
+    while `qa-lang.cjs --status` reported **2065/2065, zero gaps**, and the per-locale coverage
+    table showed `pt-br[lesson:2065/2065 ui:631/631]`. The object holds only suffixed variants
+    — `patterns_label_zh_tw`, `_ja`, `_es`, `_fr`, `_de`, `_id`, `_vi`, `_th` — and no bare
+    `patterns_label`. `qa-lang` enumerates units from base keys, so a field that exists **only**
+    in locale-suffixed form is not a unit and can never be counted as a gap.
+
+    This is a THIRD variant of the family already recorded here: `qa-translations.cjs` anchors
+    on a `_th` sibling (documented blind spot), `qa-lang.cjs` anchors on a base key, and both
+    miss the case the other catches. **`audit-i18n` invariant 13 is the only check that sees
+    this class — treat its FAIL as authoritative over any coverage percentage.**
+
+    Fixed for pt-BR by adding `patterns_label_pt_br` (glossary-bound: vowel→vogal,
+    consonant→consoante, 받침 kept inline exactly as the other eight locales do).
+    ⏳ Every remaining locale will hit this same field, and possibly others — run
+    `audit-i18n.cjs --check` and read invariant 13 rather than trusting `--status`.
 
 ### Corrections to prior records found while writing and executing this plan
 - **`CLAUDE.md` is wrong about `package.json`.** Its Scripts section says "package.json is at

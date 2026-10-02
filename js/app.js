@@ -10,6 +10,7 @@ const ThemeManager = (() => {
   const STORAGE_KEY = 'ks-theme';
 
   function init() {
+    if (document.body.classList.contains('course-page')) { document.documentElement.setAttribute('data-theme','light'); return; }
     const saved = localStorage.getItem(STORAGE_KEY) || 'light';
     apply(saved);
   }
@@ -648,10 +649,19 @@ const AgentChat = (() => {
 
 /* ── Search Index ───────────────────────────────────── */
 window.SEARCH_INDEX = [
+  { title: 'Understand your first Korean restaurant visit (English)', url: 'guides/restaurant-confidence.html', category: 'culture', icon: '', tags: ['restaurant', 'dining', 'self-service', 'banchan', '반찬', '셀프'], desc: 'Read the setting, make clear requests, and practise with explained answers.' },
+  { title: 'Your first Seoul subway journey (English)', url: 'guides/subway-first-journey.html', category: 'travel', icon: '', tags: ['subway', 'seoul', 'transfer', 'exit', 'card', '환승', '출구'], desc: 'Distinguish directions, transfers, and exits with a checking routine and practice.' },
+  // English-only companions deliberately live outside mirrored sections.
+  { title: 'Your first week of Korean (English)', url: 'guides/start-here.html', category: 'learn', icon: '📚', tags: ['beginner', 'start', 'plan', 'week', 'learning path', 'schedule'], desc: 'A seven-day plan with tasks, readiness checks, and a local checklist.' },
+  { title: 'Your first Korean conversation (English)', url: 'guides/first-conversation.html', category: 'learn', icon: '💬', tags: ['conversation', 'introduction', 'hello', 'goodbye', '안녕하세요', '이에요', '예요'], desc: 'Introduce yourself politely and recover when you do not understand a reply.' },
+  { title: 'Particles in context (English)', url: 'guides/particles.html', category: 'learn', icon: '📝', tags: ['particles', 'topic', 'subject', 'object', '은', '는', '이', '가', '을', '를'], desc: 'Worked examples and contextual practice for topic, subject, and object markers.' },
+  { title: 'Korean numbers you can actually use (English)', url: 'guides/korean-numbers.html', category: 'learn', icon: '🔢', tags: ['numbers', 'counter', 'time', 'price', 'native', 'sino', '잔', '원'], desc: 'Choose the right number system for quantities, prices, and clock time.' },
+  { title: 'Order at a café (English)', url: 'guides/order-at-a-cafe.html', category: 'learn', icon: '☕', tags: ['cafe', 'coffee', 'order', 'takeaway', '주세요', '포장'], desc: 'Practise both sides of a café order with explained answers.' },
   // HOME
   { title: 'Korean School 한국어 학교', url: 'index.html', category: 'home', icon: '🏠', tags: ['home', 'korean', 'learn', 'start', 'welcome', 'free', 'language', 'hangul'], desc: 'Free Korean language learning — lessons, culture, and travel.' },
 
   // ── LEARN ──────────────────────────────────────────
+  { title: 'Korean Learning Library', url: 'learn/index.html', category: 'learn', icon: '', tags: ['library', 'lessons', 'topics', 'beginner', 'start', 'learning path', 'browse'], desc: 'Browse 18 lessons and practice tools, from Hangul to everyday Korean.' },
   { title: 'Hangul Alphabet (한글)', url: 'learn/hangul.html', category: 'learn', icon: '📚', tags: ['hangul', 'alphabet', 'consonants', 'vowels', 'beginner', '한글', 'writing', 'korean letters', 'king sejong', '세종대왕', 'hall of worthies', '집현전', 'hangul day', '한글날'], desc: 'Learn the Korean alphabet created by King Sejong — consonants, vowels, and syllable blocks.' },
   { title: 'Basic Consonants (자음)', url: 'learn/hangul.html#consonants', category: 'learn', icon: '📚', tags: ['consonants', 'hangul', 'ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ', 'alphabet', 'beginner', '자음', '14 consonants', 'jaeum'], desc: 'The 14 basic Korean consonants with pronunciation and stroke order.' },
   { title: 'Basic Vowels (모음)', url: 'learn/hangul.html#vowels', category: 'learn', icon: '📚', tags: ['vowels', 'hangul', 'ㅏ', 'ㅓ', 'ㅗ', 'ㅜ', 'ㅡ', 'ㅣ', 'ㅑ', 'ㅕ', 'ㅛ', 'ㅠ', 'alphabet', 'beginner', '모음', '10 vowels', 'moeum', 'vowel mnemonic', 'shape'], desc: 'The 10 basic Korean vowels and vowel shape mnemonics.' },
@@ -690,7 +700,7 @@ window.SEARCH_INDEX = [
   { title: 'Expressing Emotions (감정 표현)', url: 'learn/emotions.html', category: 'learn', icon: '❤️', tags: ['emotions', 'feelings', '감정', 'express', '너무 좋아요', '슬퍼요', '화났어요', 'happy', 'sad', 'angry', 'excited', 'love', '사랑해요'], desc: 'How to express emotions and feelings naturally in Korean.' },
   { title: 'Shopping Phrases (쇼핑 표현)', url: 'learn/shopping.html', category: 'learn', icon: '🛍️', tags: ['shopping', 'store', 'price', '얼마예요', '좀 싸게', 'discount', 'buying', 'market', '쇼핑', 'bargain', '신용카드', '영수증', 'receipt'], desc: 'Korean shopping phrases — asking prices, getting discounts, and store vocabulary.' },
   { title: 'Dialogues (대화 연습)', url: 'learn/dialogues.html', category: 'learn', icon: '💬', tags: ['dialogue', 'conversation', 'speaking', 'practice', 'real-world', '대화', 'listening', 'skit', 'restaurant', 'taxi', 'introduction'], desc: 'Real-world Korean dialogues — restaurant, transport, shopping, and social situations.' },
-  { title: 'Flashcards (플래시카드)', url: 'learn/flashcard.html', category: 'learn', icon: '🃏', tags: ['flashcards', 'practice', 'quiz', 'study', 'memory', 'review', '암기', 'spaced repetition', 'drill', 'test yourself'], desc: 'Interactive Korean flashcard tool for vocabulary and hangul practice.' },
+  { title: 'Flashcards (플래시카드)', url: 'learn/flashcard.html', category: 'learn', icon: '🃏', tags: ['flashcards', 'practice', 'quiz', 'study', 'memory', 'review', '암기', 'recall practice', 'drill', 'test yourself'], desc: 'Interactive Korean flashcard tool for vocabulary and hangul practice.' },
   { title: 'Business Korean (비즈니스)', url: 'learn/business-korean.html', category: 'learn', icon: '💼', tags: ['business', 'office', '비즈니스', 'formal', 'workplace', 'professional', 'email', 'meeting', '회의', '이메일', '직장', 'company', '회사', 'colleague', '동료'], desc: 'Professional Korean for the workplace — meetings, emails, and office culture.' },
   { title: 'Classical Korean (고전 한국어)', url: 'learn/classical-korean.html', category: 'learn', icon: '📜', tags: ['classical', 'hanja', '고전', 'traditional', 'literary', 'advanced', '한자', 'old korean', 'history', 'archaic', 'literary korean'], desc: 'Classical Korean — hanja roots, literary forms, and historical texts.' },
   { title: 'Writing Essays (에세이)', url: 'learn/writing-essays.html', category: 'learn', icon: '✍️', tags: ['writing', 'essays', 'advanced', 'composition', 'formal writing', '에세이', 'structure', 'connectors', '논리적', 'essay format'], desc: 'Advanced Korean essay writing — structure, connectives, and formal composition.' },
@@ -1039,7 +1049,7 @@ function searchDocLang() {
    all 111 index urls resolve in all 8 locales, so this is insurance, not a
    workaround. Do NOT read localStorage here: `<html lang>` is the only source
    of truth for what language a page is. */
-const SEARCH_LOCALES = ['zh-tw', 'ja', 'es', 'fr', 'de', 'vi', 'th', 'id'];
+const SEARCH_LOCALES = typeof KS_LANGS === 'undefined' ? [] : KS_LANGS.filter(code => code !== 'en');
 const SEARCH_MIRRORED_SECTIONS = ['learn', 'culture', 'travel'];
 const SEARCH_MIRROR_MISSING = {};   // e.g. 'travel/planner.html': ['th']
 
@@ -1940,6 +1950,7 @@ function initSidebarScrollSpy() {
 
 /* ── Lesson Header: mobile nav row (back · tag · xp) ──── */
 function initLessonNavRow() {
+  if (document.body.classList.contains('course-page')) return;
   const header  = document.querySelector('.lesson-header');
   if (!header) return;
 
@@ -1987,6 +1998,7 @@ function initLessonNavRow() {
 
 /* ── Lesson Header: mobile progressive-reveal accordion ── */
 function initLessonHeaderAccordion() {
+  if (document.body.classList.contains('course-page')) return;
   const header = document.querySelector('.lesson-header');
   if (!header) return;
 
@@ -2114,6 +2126,7 @@ const ContentRail = (() => {
 
   function init() {
     const wrap = document.querySelector('.main-content .lesson-wrap');
+    if (document.body.classList.contains('course-page')) return;
     if (!wrap || document.querySelector('.content-rail')) return;
 
     const shell = document.createElement('div');
@@ -2427,7 +2440,7 @@ function initVocabBrowser() {
           romanization: s.romanization,
           kana: s.katakana || '',
           zhuyin: s.zhuyin || '',
-          english: s.meaning,
+          english: s['meaning_' + document.documentElement.lang.toLowerCase().replace(/-/g,'_')] || s.meaning,
           theme: cat,
         }));
     } catch {
@@ -3430,6 +3443,7 @@ const QuizPage = (() => {
 
   function init() {
     const c = document.getElementById('quiz-container');
+    if (c?.querySelector('.study-practice')) return;
     if (c) _showSelect(c);
   }
 

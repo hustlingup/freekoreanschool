@@ -1,0 +1,17 @@
+{
+  "entranceLayouts": 120,
+  "failures": [],
+  "errors": [],
+  "checks": [
+    "filters and empty states",
+    "study state survives navigation",
+    "same-page language switching",
+    "quiz selection and deep links",
+    "wrong/missing/correct answers",
+    "review and reset",
+    "quiz drafts survive reload",
+    "print all questions",
+    "no-JavaScript reading",
+    "storage-denied fallback"
+  ]
+}

@@ -293,12 +293,16 @@ runScript('es proverbs keep Hangul', 'fix-es-proverbs-hangul.cjs', ['--check']);
    so a locale added to scripts/_locales.cjs is covered without a second
    hand-edit in this file. */
 const mirrorPath = (p, loc) =>
-  p.includes('/') ? p.replace(/^([^/]+)\//, '$1/' + loc + '/') : loc + '/' + p;
+  p.includes('/')
+    ? (MIRROR_SECTIONS.includes(p.split('/')[0]) ? p.replace(/^([^/]+)\//, '$1/' + loc + '/') : p)
+    : loc + '/' + p;
 const MIRROR_SECTIONS = ['learn', 'culture', 'travel'];
 const enPageList = (() => {
   const htmlIn = d => fs.readdirSync(d, { withFileTypes: true })
     .filter(e => e.isFile() && e.name.endsWith('.html')).map(e => e.name);
-  const pages = htmlIn(ROOT);
+  // Vercel's noindex error document is shared recovery infrastructure, not a
+  // language-picker article. Every normal root/section page still needs mirrors.
+  const pages = htmlIn(ROOT).filter(name => name !== '404.html');
   MIRROR_SECTIONS.forEach(sec => htmlIn(path.join(ROOT, sec)).forEach(n => pages.push(sec + '/' + n)));
   return pages;
 })();
@@ -351,7 +355,9 @@ const enPageList = (() => {
     rows.map(r => `${r.loc}:${r.present}/${enCount}`).join(' '));
 }
 
-/* 10. every static SEARCH_INDEX url resolves in English AND in all 8 locales.
+/* 10. every static SEARCH_INDEX url resolves in English AND in scoped locales.
+      Only learn/culture/travel are mirrored. English-only study guides retain
+      their English URL, matching searchResolveUrl()'s unmirrored-section guard.
       Sees: an index entry pointing at a file that does not exist, in any
       locale. searchResolveUrl() rewrites every result url into the reader's
       locale (docs/i18n-locale-leak.md, step 2), so an index entry whose

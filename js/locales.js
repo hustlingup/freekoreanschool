@@ -225,7 +225,7 @@
       "font": null,
       "pronField": null,
       "adsense": true,
-      "status": "planned"
+      "status": "live"
     },
     {
       "code": "ru",

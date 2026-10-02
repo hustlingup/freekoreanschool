@@ -158,7 +158,7 @@ const LOCALES = [
     flagSvg: '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#009B3A"/><polygon fill="#FEDF00" points="30,4 55,20 30,36 5,20"/><circle cx="30" cy="20" r="9" fill="#002776"/><g fill="#fff"><circle cx="26" cy="16" r="0.8"/><circle cx="32" cy="15.5" r="0.8"/><circle cx="34.8" cy="23.4" r="0.8"/><circle cx="27" cy="25" r="0.8"/><rect x="21.3" y="19" width="17.4" height="3"/></g></svg>',
     writing: 'ltr', numberSep: '.',
     byline: { by: 'Por', upd: 'Última atualização', fmt: 'pt-BR' },
-    cjk: false, font: null, pronField: null, adsense: true, status: 'planned',
+    cjk: false, font: null, pronField: null, adsense: true, status: 'live',
   },
   {
     code: 'ru', htmlLang: 'ru', hreflang: 'ru', suffix: '_ru',
